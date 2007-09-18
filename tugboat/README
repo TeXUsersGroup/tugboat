@@ -1,0 +1,65 @@
+LaTeX macros for use in TUGboat
+===============================
+
+The files in this directory will generate both a TUGboat articles
+class and a TUG conference proceedings class.
+
+These macros *are* supported; please do *not* bother the TUGboat
+editor with queries about the macros (or the TUGboat proceedings
+editor, if you're preparing an article for submission to a TUG
+conference).  Bother me, instead (the editors do, in any case, so you
+might as well short-circuit them ;-)
+
+See the TUGboat web pages at http://tug.org/TUGboat for back issues,
+guidelines for authors, etc.  We greatly appreciate new article
+submissions!
+
+
+Robin Fairbairns
+robin.fairbairns@cl.cam.ac.uk
+
+
+Installation and use:
+=====================
+
+The directory contains three files containing TeX code:
+
+  tugboat.dtx  -- the source for the macros
+  tugboat.ins  -- the docstrip instructions
+  ltubguid.ltx -- documentation for the macros (published in TUGboat
+                  52, but revised since)
+
+other files are
+  ltugbib.bst  -- a BibTeX style to match ltugboat.cls's default
+                  biblio capabilities
+  ltubguid.pdf -- browsable user documentation
+  tugboat.pdf  -- browsable implementation documentation
+
+Processing the .ins file produces:
+
+  ltugboat.cls -- For preparing articles for regular issues of TUGboat
+  ltugproc.cls -- For preparing articles for conference proceedings
+  ltugboat.sty -- The usual `obsolete file' warning
+  ltugproc.sty -- The usual `obsolete file' warning
+  ltugcomn.sty -- Used when processing tugboat.dtx for its
+                  documentation content
+
+The procedure for using the macros should therefore be:
+
+  process the .ins file
+  move the .sty and .cls to "somewhere LaTeX will search"
+  move the .bib to "somewhere BibTeX will search"
+  move the browsable documentation to "somewhere texdoc will search"
+
+On a TDS installation, common search locations are:
+
+  $TEXMF/tex/latex/tugboat (for .sty, .cls)
+  $TEXMF/bibtex/bst/misc   (for .bst)
+  $TEXMF/doc/latex/tugboat (for .pdf)
+
+($TEXMF being a pointer to the root of a TDS tree, preferably a local
+one, to avoid tangling with future releases of your TeX distribution.)
+
+`User-level' documentation is provided in file ltubguid.pdf, which is
+ a revised version of a TUGboat paper.  The documented source of the
+ macros is also provided in readily readable form, as tugboat.pdf.

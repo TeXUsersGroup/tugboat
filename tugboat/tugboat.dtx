@@ -1,0 +1,3768 @@
+%^^A This (the production version of the macros) started life as xpt3
+%^^A and no need has arisen to perform other experiments...
+% tugboat.dtx - main source for LaTeX TUGboat classes.
+% 
+% \iffalse (this is a meta-comment (so they say))
+%% Copyright 1994,1995,1996,1997,1998,2000,2001,2004,2005,2006,2007
+%% TeX Users Group. 
+%% 
+%% This file is part of the tugboat package.
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%   http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%
+%% This work has the LPPL maintenance status "maintained".
+%% 
+%% The Current Maintainer of this work is the TeX Users Group
+%% (http://tug.org/TUGboat).
+%%
+%% The list of all files belonging to the distribution is
+%% given in the file `manifest.txt'. 
+%%
+%% The list of derived (unpacked) files belonging to the distribution 
+%% and covered by LPPL is defined by the unpacking scripts (with 
+%% extension .ins) which are part of the distribution.
+% \fi
+%
+% \section{Document preambles}
+%
+%    \begin{macrocode}
+%<ltugboatcls|ltugproccls|ltugcomn>\NeedsTeXFormat{LaTeX2e}[1994/12/01]
+%<*dtx>
+\ProvidesFile                 {tugboat.dtx}
+%</dtx>
+%<ltugboatcls>\ProvidesClass  {ltugboat}
+%<ltugproccls>\ProvidesClass  {ltugproc}
+%<ltugboatsty>\ProvidesPackage{ltugboat}
+%<ltugprocsty>\ProvidesPackage{ltugproc}
+%<ltugcomn>   \ProvidesPackage{ltugcomn}
+                   [2007/08/27 v2.3
+%<ltugboatcls>                       TUGboat journal class%
+%<ltugproccls>                       TUG conference proceedings class%
+%<ltugboatsty|ltugprocsty>           TUG compatibility package%
+%<ltugcomn>                          TUGboat `common macros' package%
+%<*dtx>
+                                     TUG macros source file%
+%</dtx>
+                   ]
+%    \end{macrocode}
+%
+% ^^A behold, a horrible hack...
+%    \begin{macrocode}
+%<*dtx>
+\newif\ifoldlongtable
+%</dtx>
+%    \end{macrocode}
+%
+% \iffalse
+%
+% RCS identification of this file (lest I fail to update the above ;-)
+%
+% $Id: tugboat.dtx,v 1.6 2007/09/13 16:07:48 rf10 Exp rf10 $
+%
+% Note that the RCS version relates to the number of times the file
+% has been checked-in, which relates to a development process taking
+% place on several machines, rather than the incidence of significant
+% change; the definitive version number is that in the \Provides*
+% things, while the RCS Id may provide a clue as to the latest date
+% the documentation was worked on
+%
+% Code to compile the thing using LaTeX2e
+%
+%    \begin{macrocode}
+%<*driver>
+\documentclass{ltxdoc}
+%
+\usepackage{ltugcomn} % generated using the .ins file
+%
+\usepackage{array,longtable}
+%
+% if longtable.sty is the most recent, then it doesn't need
+% \cs{setlongtables}, so we avoid the setlong.tab game
+\GetFileInfo{longtable.sty}
+\def\extractdate#1/#2/#3\relax{\def\fileyear{#1}%
+  \def\filemonth{#2}%
+  \def\fileday{#3}}
+\expandafter\extractdate\filedate\relax
+\expandafter\ifnum\fileyear>1996\relax
+  \oldlongtablefalse
+\else
+  \oldlongtabletrue
+  \expandafter\ifnum\fileyear=1996\relax
+    \expandafter\ifnum\filemonth>5\relax
+      \oldlongtablefalse
+    \else
+      \expandafter\ifnum\filemonth=5\relax
+        \expandafter\ifnum\fileday>23\relax
+          \oldlongtablefalse
+        \fi
+      \fi
+    \fi
+  \fi
+\fi
+\ifoldlongtable
+  \InputIfFileExists{setlong.tab}{}% if this file exists, it should
+%                                  % contain (only) \setlongtables
+    {\typeout{*** create a file `setlong.tab' containing only}
+     \typeout{***\space\space\space\string\setlongtables}
+     \typeout{*** to get the tables of commands, etc., lined up}}
+\fi
+%
+\begin{document}
+ \GetFileInfo{tugboat.dtx}
+ \title{The \textsf{tugboat} package\thanks{This file
+        has version number \fileversion, last
+        revised \filedate}}
+    \author{The \TUB{} team\\
+            \small(Distributed by Robin Fairbairns)}
+ \date{\filedate}
+ \maketitle
+ \tableofcontents
+ \DocInput{tugboat.dtx}
+\end{document}
+%</driver>
+%    \end{macrocode}
+%
+% \fi
+% \CheckSum{4488}
+%
+% \section{Introduction}
+%
+% This file contains all the macros for typesetting \TUB{} with
+% both plain \TeX\ and \LaTeXe.
+% \subsection{Summary of control sequences}
+% 
+% Abbreviations.  Just a listing with indications of expansion where
+% that may not be obvious.  For full definitions, see real code below
+% (Section~\ref{abbr-logo}).
+% 
+% \begin{longtable}{lp{3in}}
+% |\AllTeX|&        (\La)\TeX\\
+% |\AMS|&           American Mathematical Society\\
+% |\AmSTeX|&\\
+% |\aw|&            \aw\ (abbreviation for Addison-Wesley)\\
+% |\AW|&            Addison-Wesley\\
+% |\BibTeX|&\\
+% |\CandT|&         Computers \& Typesetting\\
+% |\ConTeXt|&       \ConTeXt\\
+% |\Cplusplus|&     C++\\
+% |\DTD|&\\
+% |\DVI|&\\
+% |\DVD|&\\
+% |\DVIPDFMx|&      \DVIPDFMx\\
+% |\DVItoVDU|&      DVItoVDU\\
+% |\eTeX|&          \eTeX\\
+% |\Ghostscript|&\\
+% |\Hawaii|&        \Hawaii\\
+% |\HTML|&\\
+% |\ISBN|&          ISBN\\
+% |\ISO|&\\
+% |\ISSN|&          ISSN\\
+% |\JTeX|&\\
+% |\JoT|&           The Joy of \TeX\\
+% |\LaTeX|&\\
+% |\MacOSX|&        Mac OS X\\
+% |\MathML|&\\
+% |\Mc|&            M with raised c\\
+% |\MF|&            \MF\\
+% |\mf|&            \textsc{Metafont}\\
+% |\MFB|&           The Metafont book\\
+% |\MP|&            \MP\\
+% |\mp|&            MetaPost (in text only: remains `\ensuremath{\mp}'
+%                   in maths)\\
+% |\OMEGA|&         Omega `logo' (\ensuremath{\Omega})\\
+% |\OCP|&           Omega compiled process\\
+% |\OTP|&           Omega translation process\\
+% |\mtex|&          multilingual \TeX\\
+% |\NTS|&           New Typesetting System\\
+% |\pcMF|&          pcMF\\
+% |\PCTeX|&\\
+% |\pcTeX|&\\
+% |\Pas|&           Pascal\\
+% |\PiCTeX|&\\
+% |\plain|&         plain (in typewriter font)\\
+% |\POBox|&         P. O. Box\\
+% |\PS|&            PostScript (with hyphenation)\\
+% |\SC|&            Steering Committee\\
+% |\SGML|&          SGML\\
+% |\SliTeX|&\\
+% |\slMF|&          Metafont (slanted)\Dash deprecated: use
+%                   \cs{textsl} instead \\
+% |\stTeX|&         \TeX{} for the Atari ST\\
+% |\SVG|&\\
+% |\TANGLE|&\\
+% |\TB|&            The \TeX book\\
+% |\TeX|&           (Although nearly every package defines this,
+%                   most\Dash including plain\Dash are missing the
+%                   spacefactor adjustment)\\
+% |\TeXhax|&\\
+% |\TeXMaG|&        (defunct)\\
+% |\TeXtures|&\\
+% |\TeXXeT|&\\
+% |\Thanh|&\\
+% |\TFM|&           \TFM\\
+% |\TUB|&           \TUB\\
+% |\TUG|&           \TeX{} Users Group\\
+% |\UNIX|&\\
+% |\UTF|&\\
+% |\VAX|&\\
+% |\VorTeX|&\\
+% |\XeT|&\\
+% |\XeTeX|&         reflected and lowered first `E'\\
+% |\XML|&\\
+% |\WEB|&\\
+% |\WEAVE|&\\
+% \end{longtable}
+%
+% Macros for things that are slightly more significant.
+%
+% \begin{longtable}{lp{.6\textwidth}}
+% |\NoBlackBoxes|&   turns off marginal rules marking overfull boxes\\
+% |\BlackBoxes|&  turns them back on\\
+% |\newline|&    horizontal glue plus a break\\
+% |\ifundefined#1|&   checks argument with |\csname| against |\relax|\\
+% |\topsmash|&   smashes above baseline (from AMSTeX)\\
+% |\botsmash|&   smashes below baseline (from AMSTeX)\\
+% |\smash|&   smashes both  (from plain)\\
+% |\ulap|&   lap upwards\\
+% |\dlap|&   lap downwards\\
+% |\xlap|&   reference point at center horizontally; 0 width\\
+% |\ylap|&   reference point at center vertically; 0 height, depth\\
+% |\zlap|&   combination |\xlap| and |\ylap|\\
+% |\basezero|&   to avoid insertion of baselineskip and lineskip glue\\
+% |\nullhrule|&   empty |\hrule|\\
+% |\nullvrule|&   empty |\vrule|\\
+% |\makestrut[#1;#2]|& ad hoc struts; |#1|=height, |#2|=depth\\
+% |\today|&   today's date\\
+% |\SetTime|&    converts |\time| to hours, minutes\\
+% |\now|&    displays time in hours and minutes\\
+% |\Now|&    shows current date and time\\
+% |\ifPrelimDraft|&   flag to indicate status as preliminary draft\\
+% |\rtitlex|&    \TUB{} volume and number info for running head\\
+% |\midrtitle|&   information for center of running head\\
+% |\HorzR@gisterRule|& pieces of registration marks (`trimmarks')\\
+% |\DownShortR@gisterRule|&\\
+% |\UpShortR@gisterRule|&\\
+% |\ttopregister|&   top registration line with `T' in center\\
+% |\tbotregister|&   bottom registration line with inverted `T' in center\\
+% |\topregister|&  register actually used\\
+% |\botregister|&\\
+% |\raggedskip|&  parameters used for ragged settings\\
+% |\raggedstretch|&\\
+% |\raggedparfill|&\\
+% |\raggedspaces|&\\
+% |\raggedright|&\\
+% |\raggedleft|&\\
+% |\raggedcenter|&\\
+% |\normalspaces|&\\
+% |\raggedbottom|&\\
+% |\bull|&       square bullet\\
+% |\cents|&      `cents' sign\\
+% |\Dag|&        superscripted dagger\\
+% |\careof|&     c/o\\
+% |\sfrac|&      slashed fraction (arguments optionally\\
+% &              separated by a slash)\\
+% |\cs|&         control seqence name\\
+%      &         |\cs{name}|$\rightarrow$\cs{name}\\
+% |\env|&        environment name \\
+%       &        |\env{name}|$\rightarrow$\env{name}\\
+% |\meta|&       meta-argument name\\
+%        &       |\meta{name}|$\rightarrow$\meta{name}\\
+% |\dash|&       en-dash surrounded by thinspaces; only breakable AFTER\\
+% |\Dash|&       em-dash, as above\\
+% |\hyph|&       permit automatic hyphenation after an actual hyphen\\
+% |\slash|&      `breakable' slash\\
+% |\nth|&        for obtaining `1\textsuperscript{st}',
+%                `2\textsuperscript{nd}', 3\textsuperscript{rd},
+%                etc.\\
+% |\tubissue|&   gets |\TUB| followed by volume and issue numbers\\
+% |\xEdNote|&    Editor's Note:\\
+% |\Review:|&    Review: (for title of book review article)\\
+% |\reviewitem|& begin data for item being reviewed\\
+% |\revauth|&    with one argument, author(s) of item being reviewed\\
+% |\revtitle|&   with one argument, title of \ldots \\
+% |\revpubinfo|& with one argument, other info pertaining to \ldots \\
+% |\endreviewitem|& end data for item being reviewed\\
+% |\booktitle|&  with one argument, format book title in text\\
+% |\Input|&      |\input| with some other bookkeeping for 
+%                case where multiple articles are put together\\
+% |\TBremark|&   reminder to \TUB{} editorial staff\\
+% |\TBEnableRemarks|& enable \cs{TBremark}s (normally suppressed)\\
+% |\pagexref|&   used to write out page numbers to screen and\\
+% |\pagexrefON|& external files\\
+% |\pagexrefOFF|&\\
+% |\xrefto|&     used for symbolic cross-reference to other pages\\
+% |\xreftoON|&   in \TUB{}\\
+% |\xreftoOFF|&\\
+% |\TBdriver|&   marks code which only takes effect when articles
+%               are run together in a driver file\\
+% \iffalse % these two were defined but never used! -- remove them
+%          % from the documentation, at least (further research needed)
+% |\signatureat|&  \\
+% |\signaturepercent|&\\
+% \fi
+% |\signaturemark|& items for signatures\\
+% |\signaturewidth|&\\
+% \end{longtable}
+%
+% \StopEventually{}
+%
+% \section{\LaTeXe{} \TUB{} class file}
+%
+% \subsection{Setup and options}
+%
+% Check for reloading.  Hmmm\dots  Does this happen with \LaTeXe
+% classes?  Probably, in fact, as well that it doesn't, since the
+% \cs{tugstyinit} referenced here doesn't exist; however, it's
+% possible that we might need a similar mechanism in the future, so we
+% retain its skeleton, without fleshing out the \cs{tugstyinit} bones.
+%
+%    \begin{macrocode}
+%<*ltugboatcls>
+\csname tugstyloaded@\endcsname
+\def\tugstyloaded@{\tugstyinit\endinput}
+%    \end{macrocode}
+%
+% Acquire a name for this class if we don't already have one (by
+% virtue of having been loaded by |tugproc.cls|).  This name will be
+% used in error messages and the like.
+%
+%    \begin{macrocode}
+\providecommand{\@tugclass}{ltugboat}
+%    \end{macrocode}
+%
+% Warnings/error messages/information messages~--- if we're using
+% \LaTeXe{} we can use the \cs{Class*} commands:
+%
+%    \begin{macrocode}
+\def\TBInfo{\ClassInfo{\@tugclass}}
+\def\TBError{\ClassError{\@tugclass}}
+\def\TBWarning{\ClassWarning{\@tugclass}}
+\def\TBWarningNL{\ClassWarningNoLine{\@tugclass}}
+%    \end{macrocode}
+%
+% Some trivial options, just flicking switches, etc.
+%
+%    \begin{macrocode}
+\newif\ifpreprint
+\def\preprint{\preprinttrue}
+\DeclareOption{draft}{%
+  \AtEndOfClass{%
+    \setcounter{page}{1001}%
+    \BlackBoxes
+    \def\MakeRegistrationMarks{}%
+    \PrelimDrafttrue
+    }%
+}
+\DeclareOption{preprint}{%
+   \preprinttrue
+}
+\DeclareOption{final}{%
+  \AtEndOfClass{%
+    \NoBlackBoxes
+    \PrelimDraftfalse
+    }%
+}
+%    \end{macrocode}
+%
+% The rules dictate that the output should be set using a 10pt base
+% font.
+%
+%    \begin{macrocode}
+\DeclareOption{11pt}{%
+  \TBWarning{The \@tugclass\space class only supports 10pt fonts:
+    \MessageBreak option \CurrentOption\space ignored}%
+}
+\DeclareOption{12pt}{\csname ds@11pt\endcsname}
+%    \end{macrocode}
+%
+% Similarly, ignore one/two-side/column
+%
+%    \begin{macrocode}
+\DeclareOption{oneside}{\TBWarning{Option \CurrentOption\space ignored}}
+\DeclareOption{twoside}{\ds@oneside}
+\DeclareOption{onecolumn}{\ds@oneside}
+\DeclareOption{twocolumn}{\ds@oneside}
+%    \end{macrocode}
+%
+% There are these people who seem to think |tugproc| is an option rather
+% than a class\dots{}  (Note that it's already been filtered out if we
+% were calling from |ltugproc|.)
+%
+%    \begin{macrocode}
+\DeclareOption{tugproc}{%
+  \TBWarning{Option \CurrentOption\space ignored: use class ltugproc
+    instead of \@tugclass}%
+}
+%    \end{macrocode}
+%
+% Option |rawcite| (the default) specifies the default citation
+% mechanism (as built-in to \LaTeX); option |harvardcite| specifies
+% the author-date citation mechanism defined in
+% section~\ref{sec:citations} below.
+%
+%    \begin{macrocode}
+\DeclareOption{rawcite}{\let\if@Harvardcite\iffalse}
+\DeclareOption{harvardcite}{\let\if@Harvardcite\iftrue}
+%    \end{macrocode}
+%
+% Option |extralabel| (the default) specifies that the publication
+% years of two successive references with otherwise identical labels
+% will be tagged with distinguishing letters; option |noextralabel|
+% causes those letters to be suppressed.  Note that (a) no two
+% references will in any case have the same labels in the default
+% (plain) |rawcite| setup, and that (b) the distinguishing letters
+% appear in the labels themselves~--- the even remotely intelligent
+% reader should be able to work out the correspondence one with the
+% other\dots
+%
+%    \begin{macrocode}
+\DeclareOption{extralabel}{\let\UseExtraLabel\@firstofone}
+\DeclareOption{noextralabel}{\let\UseExtraLabel\@gobble}
+%    \end{macrocode}
+%
+% The section-numbering style, so that we can allow the same heading
+% layout as in the plain macros.
+% \changes{v1.4a}{1996/09/14}{Added nonumber and numbersec (default)
+% options}
+%
+%    \begin{macrocode}
+\DeclareOption{numbersec}{\let\if@numbersec\iftrue}
+\DeclareOption{nonumber}{\let\if@numbersec\iffalse}
+%    \end{macrocode}
+%
+% Any other options, we pass on to |article.cls| before we load it:
+%
+%    \begin{macrocode}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+%    \end{macrocode}
+%
+% Request default options (draft mode, standard citation, double-sided
+% printing), process all options, and then get the base document class
+% on top of which we reside.
+%
+%    \begin{macrocode}
+\ExecuteOptions{draft,extralabel,numbersec,rawcite}
+\ProcessOptions
+\LoadClass[twoside]{article}
+%    \end{macrocode}
+%
+% Various fonts used throughout.  Some effort has been made to
+% suppress these things with explicit sizes in the macro name
+% (\cs{tensl} is an example below), but keeping in step with the
+% documentation is one thing that restricts such a move.
+%
+%    \begin{macrocode}
+\def\sectitlefont{\fontfamily\sfdefault\fontseries{bx}\fontshape{n}%
+         \fontsize\@xviipt\stbaselineskip\selectfont}
+\def\tensl{\fontseries{m}\fontshape{sl}\fontsize\@xpt\@xiipt
+          \selectfont}
+%    \end{macrocode}
+%
+% This font selection command is used \emph{only} for the `Editor's
+% Note' introduction to notes; sadly it makes explicit reference to
+% \textsc{cmr}, and Barbara Beeton has agreed that the reference may be
+% constructed to use the current family such that, if no upright
+% italic is defined, ordinary italics are used.  A project for
+% later\dots
+%
+%    \begin{macrocode}
+\def\EdNoteFont{\fontfamily{cmr}\fontseries{m}\fontshape{ui}%
+          \selectfont}
+%</ltugboatcls>
+%    \end{macrocode}
+%
+%
+% If Ulrik Vieth's |mflogo.sty| is around, we'll use it.  Otherwise
+% (pro tem, at least) we'll warn the user and define the absolute
+% minimum of machinery that \TUB{} requires (that which was used
+% prior to the invention of \LaTeXe).
+%    \begin{macrocode}
+%<*common>
+\IfFileExists{mflogo.sty}%
+  {\RequirePackage{mflogo}}%
+%<!ltugcomn> {\TBWarning
+%<ltugcomn>  {\PackageWarning{ltugcomn}
+     {Package mflogo.sty not available --\MessageBreak
+       Proceeding to emulate mflogo.sty}
+   \DeclareRobustCommand\logofamily{%
+     \not@math@alphabet\logofamily\relax
+     \fontencoding{U}\fontfamily{logo}\selectfont}
+   \DeclareTextFontCommand{\textlogo}{\logofamily}
+   \def\MF{\textlogo{META}\-\textlogo{FONT}\@}
+   \def\MP{\textlogo{META}\-\textlogo{POST}\@}
+   \DeclareFontFamily{U}{logo}{}
+   \DeclareFontShape{U}{logo}{m}{n}{%
+     <8><9>gen*logo%
+     <10><10.95><12><14.4><17.28><20.74><24.88>logo10%
+   }{}
+   \DeclareFontShape{U}{logo}{m}{sl}{%
+     <8><9>gen*logosl%
+     <10><10.95><12><14.4><17.28><20.74><24.88>logosl10%
+   }{}
+   \DeclareFontShape{U}{logo}{m}{it}{%
+     <->ssub*logo/m/sl%
+   }{}%
+  }
+%    \end{macrocode}
+%
+% \subsection{Resetting at start of paper}
+%
+% \begin{macro}{\ResetCommands}
+% \begin{macro}{\AddToResetCommands}
+% \begin{macro}{\StartNewPaper}
+% We store a set of commands that should be executed at the start of
+% each paper, before any paper-specific customisation.  These commands
+% (stored in the token register \cs{ResetCommands}) include things
+% suc as resetting section and footnote numbers, re-establishing
+% default settings of typesetting parameters, and so on.  The user (or
+% more typically, editor) may execute the commands by using the
+% command \cs{StartNewPaper}.  Things I've not yet thought of may be
+% added to the list of commands, by 
+%    \begin{macrocode}
+\newtoks\ResetCommands
+\ResetCommands{%
+  \setcounter{part}{0}%
+  \setcounter{section}{0}%
+  \setcounter{footnote}{0}%
+  \authornumber\z@
+}
+\newcommand{\AddToResetCommands}[1]{%
+  \AddToResetCommands\expandafter{\AddToResetCommands#1}%
+}
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% 
+% \subsection{Helpful shorthand (common code with Plain styles)}
+%
+% \cs{makeescape}, \dots, \cs{makecomment} allow users to change the
+% category code of a single character a little more easily.  These
+% require that the character be addressed as a control sequence:
+% e.g., |\makeescape\/| will make `|/|' an escape character.
+%
+%    \begin{macrocode}
+%<*!latex>
+\def\makeescape#1{\catcode`#1=0 }
+\def\makebgroup#1{\catcode`#1=1 }
+\def\makeegroup#1{\catcode`#1=2 }
+\def\makemath  #1{\catcode`#1=3 }
+%</!latex>
+%<*latex>
+\def\makeescape#1{\catcode`#1=\z@}
+\def\makebgroup#1{\catcode`#1=\@ne}
+\def\makeegroup#1{\catcode`#1=\tw@}
+\def\makemath  #1{\catcode`#1=\thr@@}
+%</latex>
+\def\makealign #1{\catcode`#1=4 }
+\def\makeeol   #1{\catcode`#1=5 }
+\def\makeparm  #1{\catcode`#1=6 }
+\def\makesup   #1{\catcode`#1=7 }
+\def\makesub   #1{\catcode`#1=8 }
+\def\makeignore#1{\catcode`#1=9 }
+\def\makespace #1{\catcode`#1=10 }
+\def\makeletter#1{\catcode`#1=11 }
+\chardef\other=12
+\let\makeother\@makeother
+\def\makeactive#1{\catcode`#1=13 }
+\def\makecomment#1{\catcode`#1=14 }
+%    \end{macrocode}
+% |\savecat#1| and |\restorecat#1| will save and restore the category
+% of a given character.  These are useful in cases where one doesn't
+% wish to localize the settings and therefore be required to globally
+% define or set things.
+%    \begin{macrocode}
+\def\savecat#1{%
+  \expandafter\xdef\csname\string#1savedcat\endcsname{\the\catcode`#1}}
+\def\restorecat#1{\catcode`#1=\csname\string#1savedcat\endcsname}
+%<!latex>\savecat\@
+%<!latex>\makeletter\@
+%    \end{macrocode}
+%
+% |\SaveCS#1| and |\RestoreCS#1| save and restore `meanings' of control
+% sequences.  Again this is useful in cases where one doesn't want to
+% localize or where global definitions clobber a control sequence which
+% is needed later with its `old' definition.
+%
+%    \begin{macrocode}
+\def\SaveCS#1{\expandafter\let\csname saved@@#1\expandafter\endcsname
+  \csname#1\endcsname}
+\def\RestoreCS#1{\expandafter\let\csname#1\expandafter\endcsname
+  \csname saved@@#1\endcsname}
+%    \end{macrocode}
+% To distinguish between macro files loaded
+%    \begin{macrocode}
+\def\plaintubstyle{plain}
+\def\latextubstyle{latex}
+%    \end{macrocode}
+%
+% Control sequences that were first defined in \LaTeXe{} of
+% 1995/06/01 (or later), but which we merrily use.  Only define if
+% necessary:
+%
+%    \begin{macrocode}
+\providecommand\hb@xt@{\hbox to}
+\providecommand\textsuperscript[1]{\ensuremath{\m@th
+                                     ^{\mbox{\fontsize\sf@size\z@
+                                         \selectfont #1}}}}
+%    \end{macrocode}
+% (Note that that definition of \cs{textsuperscript} isn't robust, but
+% probably doesn't need to be\dots  What's more, it doesn't appear in
+% the mythical 2.09 version of the package.)
+%
+% \subsection{Abbreviations and logos}
+% \label{abbr-logo}
+%
+% Font used for the METAFONT logo, etc.
+%    \begin{macrocode}
+\def\AllTeX{(\La\kern-.075em)\kern-.075em\TeX}
+\def\AMS{American Mathematical Society}
+\def\AmS{$\mathcal{A}$\kern-.1667em\lower.5ex\hbox
+    {$\mathcal{M}$}\kern-.125em$\mathcal{S}$}
+\def\AmSLaTeX{\AmS-\LaTeX}
+\def\AmSTeX{\AmS-\TeX}
+\def\ANSI{\acro{ANSI}}
+\def\ASCII{\acro{ASCII}}
+\def\aw{A\kern.1em-W}
+\def\AW{Addison\kern.1em-\penalty\z@\hskip\z@skip Wesley}
+%
+% make \BibTeX work in slanted contexts too; it's common in titles, and
+% especially burdensome to hack in .bib files.
+\def\BibTeX{%
+  \ifdim \fontdimen1\font>0pt
+     B{\SMC\SMC IB}%
+  \else
+     \textsc{Bib}\kern-.08em
+  \fi
+  \TeX}
+%
+\def\CandT{\textsl{Computers \& Typesetting}}
+%    \end{macrocode}
+% We place our \cs{kern} after \cs{-} so that it disappears if the
+% hyphenation is taken:
+%    \begin{macrocode}
+\newcommand\ConTeXt{C\kern-.0333emon\-\kern-.0667em\TeX\kern-.0333emt}
+\newcommand\Cplusplus{C\raisebox{.7ex}{$_{++}$}}
+\def\CSS{\acro{CSS}}
+\def\CTAN{\acro{CTAN}}
+\def\DTD{\acro{DTD}}
+\def\DVD{\acro{DVD}}
+\def\DVI{\acro{DVI}}
+\def\DVIPDFMx{\acro{DVIPDFM}$x$}
+\def\DVItoVDU{DVIto\kern-.12em VDU}
+\DeclareRobustCommand\eTeX{\ensuremath{\varepsilon}-\kern-.125em\TeX}
+\def\FAQ{\acro{FAQ}}
+\def\FTP{\acro{FTP}}
+\def\Ghostscript{Ghost\-script}
+\def\GNU{\acro{GNU}}
+\def\GUI{\acro{GUI}}
+\def\Hawaii{Hawai`i}
+\def\HTML{\acro{HTML}}
+\def\HTTP{\acro{HTTP}}
+\def\IEEE{\acro{IEEE}}
+\def\ISBN{\acro{ISBN}}
+\def\ISO{\acro{ISO}}
+\def\ISSN{\acro{ISSN}}
+\def\JPEG{\acro{JPEG}}
+\def\JTeX{\leavevmode\hbox{\lower.5ex\hbox{J}\kern-.18em\TeX}}
+\def\JoT{\textsl{The Joy of \TeX}}
+\def\LAMSTeX{L\raise.42ex\hbox{\kern-.3em
+                   $\m@th$\fontsize\sf@size\z@\selectfont
+                   $\m@th\mathcal{A}$}%
+    \kern-.2em\lower.376ex\hbox{$\m@th\mathcal{M}$}\kern-.125em
+    {$\m@th\mathcal{S}$}-\TeX}
+% This code
+% is hacked from its definition of \cs{LaTeX}; it allows slants (for
+% example) to propagate into the raised (small) `A':
+%    \begin{macrocode}
+\newcommand{\La}%
+   {L\kern-.36em
+        {\setbox0\hbox{T}%
+         \vbox to\ht0{\hbox{$\m@th$%
+                            \csname S@\f@size\endcsname
+                            \fontsize\sf@size\z@
+                            \math@fontsfalse\selectfont
+                            A}%
+                      \vss}%
+        }}
+%    \end{macrocode}
+%
+% We started with the intention that we wouldn't redefine \cs{LaTeX}
+% when we're running under it, so as not to trample on an existing
+% definition.  However, this proves less than satisfactory; a single
+% logo may be OK for the run of documents, but for \TUB{}, we find
+% that something noticeably better is necessary; see section
+% \ref{sec:latex-logo}.
+%
+%    \begin{macrocode}
+%<!latex>\def\LaTeX{\La\kern-.15em\TeX}
+\def\MacOSX{Mac\,\acro{OS\,X}}
+\def\MathML{Math\acro{ML}}
+\def\Mc{\setbox\TestBox=\hbox{M}M\vbox
+   to\ht\TestBox{\hbox{c}\vfil}} %  for Robert McGaffey
+%    \end{macrocode}
+%
+% If we're running under \LaTeXe, we're using (at least pro tem) Ulrik
+% Vieth's |mflogo.sty| if it's present.  Otherwise, we're using a
+% short extract of Vieth's stuff.  Either way, we don't need to
+% specify \cs{MF} or \cs{MP}
+%    \begin{macrocode}
+\def\mf{\textsc{Metafont}}
+\def\MFB{\textsl{The \MF book}}
+\let\TB@@mp\mp
+\DeclareRobustCommand\mp{\ifmmode\TB@@mp\else MetaPost\fi}
+%
+% In order that the \cs{OMEGA} command will switch to using the TS1
+% variant of the capital Omega character if \texttt{textcomp.sty} is
+% loaded, we define it in terms of the \cs{textohm} command.  Note
+% that this requires us to interpose a level of indirection, rather
+% than to use \cs{let}\dots
+%
+%    \begin{macrocode}
+\DeclareTextSymbol{\textohm}{OT1}{'012}
+\DeclareTextSymbolDefault{\textohm}{OT1}
+\newcommand\OMEGA{\textohm}
+\DeclareRobustCommand{\OCP}{\OMEGA\acro{CP}}
+\DeclareRobustCommand{\OTP}{\OMEGA\acro{TP}}
+\def\mtex{T\kern-.1667em\lower.424ex\hbox{\^E}\kern-.125emX\@}
+%    \end{macrocode}
+% Revised definition of \cs{NTS} based on that used by Phil Taylor.
+%    \begin{macrocode}
+\DeclareRobustCommand\NTS{\ensuremath{\mathcal{N}\mkern-4mu
+  \raisebox{-0.5ex}{$\mathcal{T}$}\mkern-2mu \mathcal{S}}}
+\def\Pas{Pascal}
+\def\pcMF{\leavevmode\raise.5ex\hbox{p\kern-.3\p@ c}MF\@}
+\def\PCTeX{PC\thinspace\TeX}
+\def\pcTeX{\leavevmode\raise.5ex\hbox{p\kern-.3\p@ c}\TeX}
+\def\PDF{\acro{PDF}}
+\def\PiC{P\kern-.12em\lower.5ex\hbox{I}\kern-.075emC\@}
+\def\PiCTeX{\PiC\kern-.11em\TeX}
+\def\PGF{\acro{PGF}}
+\def\plain{\texttt{plain}}
+\def\PNG{\acro{PNG}}
+\def\POBox{P.\thinspace O.~Box }
+\def\PS{{Post\-Script}}
+\def\PSTricks{\acro{PST}ricks}
+\def\RTF{\acro{RTF}}
+\def\SC{Steering Committee}
+\def\SGML{\acro{SGML}}
+\def\SliTeX{\textrm{S\kern-.06em\textsc{l\kern-.035emi}%
+                     \kern-.06em\TeX}}
+\def\slMF{\textsl{\MF}} % should never be used
+\def\stTeX{\textsc{st}\kern-0.13em\TeX}
+\def\STIX{\acro{STIX}}
+\def\SVG{\acro{SVG}}
+\def\TANGLE{\texttt{TANGLE}\@}
+\def\TB{\textsl{The \TeX book}}
+\def\TIFF{\acro{TIFF}}
+\def\TP{\textsl{\TeX}: \textsl{The Program}}
+\DeclareRobustCommand\TeX{T\kern-.1667em\lower.424ex\hbox{E}\kern-.125emX\@}
+\def\TeXhax{\TeX hax}
+\def\TeXMaG{\TeX M\kern-.1667em\lower.5ex\hbox{A}%
+   \kern-.2267emG\@}
+\def\TeXtures{\textit{Textures}}
+\let\Textures=\TeXtures
+\def\TeXXeT{\TeX-{}-\XeT}
+\def\TFM{\acro{TFM}}
+\def\Thanh{H\`an~Th\^e\llap{\raise 0.5ex\hbox{\'{}}}~Th\`anh}
+\def\TikZ{Ti{\em k}Z}
+\def\ttn{\textsl{TTN}\@}
+\def\TTN{\textsl{\TeX{} and TUG News}}
+\let\texttub\textsl              % redefined in other situations
+\def\TUB{\texttub{TUGboat}}
+\def\TUG{\TeX\ \UG}
+\def\tug{\acro{TUG}}
+\def\UG{Users Group}
+\def\UNIX{\acro{UNIX}}
+\def\UTF{\acro{UTF}}
+\def\VAX{V\kern-.12em A\kern-.1em X\@}
+\def\VorTeX{V\kern-2.7\p@\lower.5ex\hbox{O\kern-1.4\p@ R}\kern-2.6\p@\TeX}
+\def\XeT{X\kern-.125em\lower.424ex\hbox{E}\kern-.1667emT\@}
+\def\XML{\acro{XML}}
+\def\WEB{\texttt{WEB}\@}
+\def\WEAVE{\texttt{WEAVE}\@}
+%    \end{macrocode}
+% 
+% Xe\TeX{} requires reflecting the first E, hence we complain if the
+% graphics package is not present.  (For plain documents, this can be
+% loaded via Eplain.)  Also, at Barbara's suggestion, if the current
+% font is slanted, we rotate by 180 instead of reflecting so there is at
+% least a chance to look ok.  (The magic values here seem more or less
+% ok for \texttt{cmsl} and \texttt{cmti}.)
+% 
+%    \begin{macrocode}
+\def\tubreflect#1{%
+  \@ifundefined{reflectbox}{%
+    \TBerror{A graphics package must be loaded for \string\XeTeX}%
+  }{%
+    \ifdim \fontdimen1\font>0pt
+      \raise 1.75ex \hbox{\kern.1em\rotatebox{180}{#1}}\kern-.1em
+    \else
+      \reflectbox{#1}%
+    \fi
+  }%
+}
+\def\tubhideheight#1{\setbox0=\hbox{#1}\ht0=0pt \dp0=0pt \box0 }
+\def\XeTeX{\leavevmode
+  \tubhideheight{\hbox{X%
+    \setbox0=\hbox{\TeX}\setbox1=\hbox{E}%
+    \lower\dp0\hbox{\raise\dp1\hbox{\kern-.125em\tubreflect{E}}}%
+    \kern-.1667em \TeX}}}
+%
+\def\XHTML{\acro{XHTML}}
+\def\XSLT{\acro{XSLT}}
+%    \end{macrocode}
+%
+% \subsection{General typesetting rules}
+%
+%    \begin{macrocode}
+\newlinechar=`\^^J
+\normallineskiplimit=\p@
+\clubpenalty=10000
+\widowpenalty=10000
+\def\NoParIndent{\parindent=\z@}
+\newdimen\normalparindent
+\normalparindent=20\p@
+\def\NormalParIndent{\global\parindent=\normalparindent}
+\NormalParIndent
+\def\BlackBoxes{\overfullrule=5\p@}
+\def\NoBlackBoxes{\overfullrule=\z@}
+\def\newline{\hskip\z@\@plus\pagewd\break}
+%    \end{macrocode}
+%
+% Hyphen control: first, we save the hyphenpenalties in
+% \cs{allowhyphens}.  This allows us to permit hyphens temporarily in
+% things like \cs{netaddress}es, which typically occur when
+% \cs{raggedright} is set,  but which need to be allowed to break at
+% their artificial discretionaries.
+%
+%    \begin{macrocode}
+\edef\allowhyphens{\noexpand\hyphenpenalty\the\hyphenpenalty\relax
+  \noexpand\exhyphenpenalty\the\exhyphenpenalty\relax}
+\def\nohyphens{\hyphenpenalty\@M\exhyphenpenalty\@M}
+%    \end{macrocode}
+%
+% \subsection{Utility registers and definitions}
+%
+% We define a few scratch registers (and the like) for transient use;
+% they're all paired: an internal one (\cs{T@st*}) and an external one
+% (\cs{Test*}).
+%
+% \begin{description}
+% \item[\emph{Comment:}] Exercise for an idle day: find whether all
+%   these are necessary, or whether we can use the \LaTeX{} temporaries
+%   for some (or all) of the \cs{T@st*} ones.
+% \item[\emph{Comment:}] (bb) All these registers are used in the
+%   plain version, |tugboat.sty|.
+% \end{description}
+%
+%    \begin{macrocode}
+\newbox\T@stBox                 \newbox\TestBox
+\newcount\T@stCount             \newcount\TestCount
+\newdimen\T@stDimen             \newdimen\TestDimen
+\newif\ifT@stIf                 \newif\ifTestIf
+%    \end{macrocode}
+%
+% Control sequence existence test, stolen from \TeX book exercise 7.7
+% (note that this provides functionality that in some sense duplicates
+% something within \LaTeX).
+%
+%    \begin{macrocode}
+\def\ifundefined#1{\expandafter\ifx\csname#1\endcsname\relax }
+%    \end{macrocode}
+%
+% \LaTeX\ conventions which are also useful here.
+%
+%    \begin{macrocode}
+%<*!latex>
+  \let\@@input\input
+  \def\iinput#1{\@@input#1 }
+  \def\@inputcheck{\if\@nextchar\bgroup
+    \expandafter\iinput\else\expandafter\@@input\fi}
+  \def\input{\futurelet\@nextchar\@inputcheck}
+%</!latex>
+%    \end{macrocode}
+%
+% Smashes repeated from AMS-\TeX; plain \TeX{} implements only full
+% |\smash|.
+%
+%    \begin{macrocode}
+\newif\iftop@           \newif\ifbot@
+\def\topsmash{\top@true\bot@false\smash@}
+\def\botsmash{\top@false\bot@true\smash@}
+\def\smash{\top@true\bot@true\smash@}
+\def\smash@{\relax\ifmmode\def\next{\mathpalette\mathsm@sh}%
+        \else\let\next\makesm@sh\fi \next }
+\def\finsm@sh{\iftop@\ht\z@\z@\fi\ifbot@\dp\z@\z@\fi\box\z@}
+%    \end{macrocode}
+%
+%       Vertical `laps'; cf.\ |\llap| and |\rlap|
+%
+%    \begin{macrocode}
+\long\def\ulap#1{\vbox to \z@{\vss#1}}
+\long\def\dlap#1{\vbox to \z@{#1\vss}}
+%    \end{macrocode}
+%       And centered horizontal and vertical `laps'
+%    \begin{macrocode}
+\def\xlap#1{\hb@xt@\z@{\hss#1\hss}}
+\long\def\ylap#1{\vbox to \z@{\vss#1\vss}}
+\long\def\zlap#1{\ylap{\xlap{#1}}}
+%    \end{macrocode}
+%       Avoid unwanted vertical glue when making up pages.
+%    \begin{macrocode}
+\def\basezero{\baselineskip\z@skip \lineskip\z@skip}
+%    \end{macrocode}
+%  Empty rules for special occasions
+%    \begin{macrocode}
+\def\nullhrule{\hrule \@height\z@ \@depth\z@ \@width\z@ }
+\def\nullvrule{\vrule \@height\z@ \@depth\z@ \@width\z@ }
+%    \end{macrocode}
+%       Support ad-hoc strut construction.
+%    \begin{macrocode}
+\def\makestrut[#1;#2]{\vrule \@height#1 \@depth#2 \@width\z@ }
+%    \end{macrocode}
+%       Construct box for figure pasteup, etc.;
+%       height = \#1, width = \#2, rule thickness = \#3
+%    \begin{macrocode}
+\def\drawoutlinebox[#1;#2;#3]{\T@stDimen=#3
+        \vbox to#1{\hrule \@height\T@stDimen \@depth\z@
+            \vss\hb@xt@#2{\vrule \@width\T@stDimen
+                \hfil\makestrut[#1;\z@]%
+                \vrule \@width\T@stDimen}\vss
+            \hrule \@height\T@stDimen \@depth\z@}}
+%    \end{macrocode}
+%       Today's date, to be printed on drafts.  Based on \TeX book, p.406.
+%    \begin{macrocode}
+%<*!latex>
+\def\today{\number\day\space \ifcase\month\or
+        Jan \or Feb \or Mar \or Apr \or May \or Jun \or
+        Jul \or Aug \or Sep \or Oct \or Nov \or Dec \fi
+        \number\year}
+%</!latex>
+%    \end{macrocode}
+%       Current time; this may be system dependent!
+%    \begin{macrocode}
+\newcount\hours
+\newcount\minutes
+\def\SetTime{\hours=\time
+        \global\divide\hours by 60
+        \minutes=\hours
+        \multiply\minutes by 60
+        \advance\minutes by-\time
+        \global\multiply\minutes by-1 }
+\SetTime
+\def\now{\number\hours:\ifnum\minutes<10 0\fi\number\minutes}
+\def\Now{\today\ \now}
+\newif\ifPrelimDraft
+\def\midrtitle{\ifPrelimDraft {\textsl{preliminary draft, \Now}}\fi}
+%    \end{macrocode}
+%
+% \subsection{Ragged right and friends}
+%
+% \begin{macro}{\raggedskip}
+% \begin{macro}{\raggedstretch}
+% \begin{macro}{\raggedparfill}
+% \begin{macro}{\raggedspaces}
+% Plain \TeX{}'s definition of |\raggedright| doesn't permit any
+% stretch, and results in too many overfull boxes.  We also turn off
+% hyphenation.  This code lies somewhere between that of Plain \TeX{}
+% and of \LaTeX{}.
+%    \begin{macrocode}
+\newdimen\raggedskip    \raggedskip=\z@
+\newdimen\raggedstretch \raggedstretch=5em    % ems of font set now (10pt)
+\newskip\raggedparfill  \raggedparfill=\z@\@plus 1fil
+\def\raggedspaces{\spaceskip=.3333em \relax \xspaceskip=.5em \relax }
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+%
+% \begin{macro}{\raggedright}
+% \begin{macro}{\raggedleft}
+% \begin{macro}{\raggedcenter}
+% \begin{macro}{\normalspaces}
+% Some applications may have to add stretch, in order to avoid
+% all overfull boxes.  We define the following uses of the above
+% skips, etc.
+%    \begin{macrocode}
+\def\raggedright{%
+  \nohyphens
+  \rightskip=\raggedskip\@plus\raggedstretch \raggedspaces
+  \parfillskip=\raggedparfill
+}
+\def\raggedleft{%
+  \nohyphens
+  \leftskip=\raggedskip\@plus\raggedstretch \raggedspaces
+  \parfillskip=\z@skip
+}
+\def\raggedcenter{%
+  \nohyphens
+  \leftskip=\raggedskip\@plus\raggedstretch
+  \rightskip=\leftskip \raggedspaces
+  \parindent=\z@ \parfillskip=\z@skip
+}
+\def\normalspaces{\spaceskip\z@skip \xspaceskip\z@skip}
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+%
+% Miscellaneous useful stuff.  Note that \LaTeXe{} defines a robust
+% \cs{,}, but that we provide a new definition of |~| by redefining
+% its robust underpinnings\footnote{\cs{DeclareRobustCommand} doesn't
+%   mind redefinition, fortunately} (based on the version in
+% AMS-\TeX~--- the \LaTeXe{} version has \cs{leavevmode} and doesn't
+% care about surrounding space).
+%    \begin{macrocode}
+\DeclareRobustCommand{\nobreakspace}{%
+  \unskip\nobreak\ \ignorespaces}
+%    \end{macrocode}
+%
+% Plain \TeX{} defines \cs{newbox} as \cs{outer}.  We solemnly
+% preserve the following, which removes the \cs{outer}ness; of course,
+% we carefully exclude it from what we generate\dots{}  (\cs{outer}ness is a
+% spawn of the devil, is it not?  Barbara Beeton responded to the
+% previous sentence ``\cs{outer}ness has its place: it avoids register
+% buildup, hence running out of memory''.  In another context, David
+% Carlisle remarked that an error control mechanism that causes more
+% confusing errors than it prevents is rather a poor one.  This is
+% perhaps not the place to conduct a serious debate\dots)
+%
+%    \begin{macrocode}
+\def\boxcs#1{\box\csname#1\endcsname}
+\def\setboxcs#1{\setbox\csname#1\endcsname}
+\def\newboxcs#1{\expandafter\newbox\csname#1\endcsname}
+\let\gobble\@gobble
+\def\vellipsis{%
+  \leavevmode\kern0.5em
+  \raise\p@\vbox{\baselineskip6\p@\vskip7\p@\hbox{.}\hbox{.}\hbox{.}}
+  }
+\def\bull{\vrule \@height 1ex \@width .8ex \@depth -.2ex }
+\def\cents{{\rm\raise.2ex\rlap{\kern.05em$\scriptstyle/$}c}}
+\def\Dag{\raise .6ex\hbox{$\scriptstyle\dagger$}}
+\def\careof{\leavevmode\hbox{\raise.75ex\hbox{c}\kern-.15em
+                /\kern-.125em\smash{\lower.3ex\hbox{o}}} \ignorespaces}
+\DeclareRobustCommand\sfrac[1]{\@ifnextchar/{\@sfrac{#1}}%
+                                            {\@sfrac{#1}/}}
+\def\@sfrac#1/#2{\leavevmode\kern.1em\raise.5ex
+         \hbox{$\m@th\mbox{\fontsize\sf@size\z@
+                           \selectfont#1}$}\kern-.1em
+         /\kern-.15em\lower.25ex
+          \hbox{$\m@th\mbox{\fontsize\sf@size\z@
+                            \selectfont#2}$}}
+\DeclareRobustCommand\cs[1]{\texttt{\char`\\#1}}
+\DeclareRobustCommand\meta[1]{%
+  \ensuremath{\langle}\emph{#1}\ensuremath{\rangle}}
+\DeclareRobustCommand\env[1]{%
+  \cs{begin}\texttt{\char`\{#1\char`\}}}
+\def\thinskip{\hskip 0.16667em\relax}
+%    \end{macrocode}
+%
+% We play a merry game with dashes, providing all conceivable options
+% of breakability before and after.
+%
+%    \begin{macrocode}
+\def\endash{--}
+\def\emdash{\endash-}
+\def\d@sh#1#2{\unskip#1\thinskip#2\thinskip\ignorespaces}
+\def\dash{\d@sh\nobreak\endash}
+\def\Dash{\d@sh\nobreak\emdash}
+\def\ldash{\d@sh\empty{\hbox{\endash}\nobreak}}
+\def\rdash{\d@sh\nobreak\endash}
+\def\Ldash{\d@sh\empty{\hbox{\emdash}\nobreak}}
+\def\Rdash{\d@sh\nobreak\emdash}
+%    \end{macrocode}
+%
+% Hacks to permit automatic hyphenation after an actual hyphen, or
+% after a slash.
+%
+%    \begin{macrocode}
+\def\hyph{-\penalty\z@\hskip\z@skip }
+\def\slash{/\penalty\z@\hskip\z@skip }
+%    \end{macrocode}
+%
+% Adapted from |comp.text.tex| posting by Donald Arseneau, 26 May 93.
+% \LaTeXe-isation added by Robin Fairbairns.  Destroys both the
+% |TestCount|s.
+%
+%    \begin{macrocode}
+\def\nth#1{%
+    \def\reserved@a##1##2\@nil{\ifcat##1n%
+           0%
+          \let\reserved@b\ensuremath
+      \else##1##2%
+          \let\reserved@b\relax
+      \fi}%
+    \TestCount=\reserved@a#1\@nil\relax
+    \ifnum\TestCount <0 \multiply\TestCount by\m@ne \fi % subdue negatives
+    \T@stCount=\TestCount
+    \divide\T@stCount by 100 \multiply\T@stCount by 100
+    \advance\TestCount by-\T@stCount     % n mod 100
+    \ifnum\TestCount >20 \T@stCount=\TestCount
+      \divide\T@stCount by 10 \multiply\T@stCount by 10
+      \advance\TestCount by-\T@stCount   % n mod 10
+    \fi
+     \reserved@b{#1}%
+       \textsuperscript{\ifcase\TestCount th%    0th
+                        \or   st%                1st
+                        \or   nd%                2nd
+                        \or   rd%                3rd
+                        \else th%                nth
+                        \fi}%
+}
+%    \end{macrocode}
+%
+% \subsection{Reviews}
+%
+% Format information on reviewed items for book review articles.
+% For the \LaTeXe{} version, we follow Fairbairns' maxim, and define
+% something that can even look like a \LaTeX{} macro\dots
+%
+%    \begin{macrocode}
+\def\Review{\@ifnextchar:{\@Review}{\@Review:}}
+\def\@Review:{\@ifnextchar[%]
+  {\@Rev}%
+  {\@Rev[Book review]}}
+\def\@Rev[#1]#2{{\ignorespaces#1\unskip:\enspace\ignorespaces
+                                        \slshape\mdseries#2}}
+\def\reviewitem{\addvspace{\BelowTitleSkip}%
+  \def\revauth##1{\def\therevauth{##1, }\ignorespaces}%
+  \def\revtitle##1{\def\therevtitle{{\slshape##1}. }\ignorespaces}%
+  \def\revpubinfo##1{\def\therevpubinfo{##1.}\ignorespaces}%
+}
+\def\endreviewitem{{\noindent\interlinepenalty=10000
+  \therevauth\therevtitle\therevpubinfo\endgraf}%
+  \vskip\medskipamount
+}
+\def\booktitle#1{{\slshape#1\/}}
+%    \end{macrocode}
+%
+%  \subsection{Dates, volume and issue numbers, etc.}
+%
+% Dates and other items which identify the volume and issue.
+% \cs{issueseqno} is a sequential issue number starting from the
+% first issue published; volume 15,4 has \cs{issueseqno=45}.
+%
+% To use: \begin{tabular}{l}
+%              |\vol 19, 1.|\\
+%              |\issdate March 1998.|\\
+%              |\issueseqno=58|\\
+%         \end{tabular}
+%
+% Starting with volume 23 (nominal 2002), we have \cs{issyear} instead
+% of \cs{issdate}, because issues don't have months any more.
+% 
+% For production, these are set in a separate file,
+% |tugboat.dates|, which is issue-specific.
+%
+% \begin{description}
+% \item[\emph{Comment:}] I would like to make the code read a file
+%   |tugboat.dates| in the current directory or its parent.
+%   This is easy except under `odd' operating systems ({\small VMS} is
+%   an example that springs to mind, {\small RISC}os may be even
+%   worse) whose syntax is out of the ordinary.
+% \end{description}
+%
+%    \begin{macrocode}
+\newcount\issueseqno            \issueseqno=-1
+\def\v@lx{\gdef\volx{Volume~\volno~(\volyr), No.~\issno}}
+\def\volyr{}
+\def\volno{}
+\def\vol #1,#2.{\gdef\volno{#1\unskip}%
+        \gdef\issno{\ignorespaces#2\unskip}%
+        \setbox\TestBox=\hbox{\volyr}%
+        \ifdim \wd\TestBox > .2em \v@lx \fi }
+\def\issyear #1.{\gdef\issdt{#1}\gdef\volyr{#1}%
+        \gdef\bigissdt{#1}%
+        \setbox\TestBox=\hbox{\volno}%
+        \ifdim \wd\TestBox > .2em \v@lx \fi }
+\def\issdate #1#2 #3.{\gdef\issdt{#1#2 #3}\gdef\volyr{#3}%
+        \gdef\bigissdt{#1{\smc\uppercase{#2}} #3}%
+        \setbox\TestBox=\hbox{\volno}%
+        \ifdim \wd\TestBox > .2em \v@lx \fi }
+\vol 0, 0.
+\issdate Thermidor, 2060.
+%    \end{macrocode}
+%
+% (The curious should know that \emph{Thermidor} was one of the French
+% revolutionary month names\dots)
+%
+% For \LaTeX{} use, define a version of the issue declaration that can
+% take or leave the old plain syntax
+%
+%    \begin{macrocode}
+%<!latex>\def\tubissue#1(#2)%
+%<*latex>
+\def\tubissue#1{\@ifnextchar(%)
+  {\@tubissue@b{#1}}
+  {\@tubissue@a{#1}}}
+\def\@tubissue@b#1(#2){\@tubissue@a{#1}{#2}}
+\def\@tubissue@a#1#2%
+%</latex>
+  {\TUB~#1, no.~#2}
+%    \end{macrocode}
+%
+%  \TUB{} conventions include the sequential issue number in the file name.
+%  Permit this to be incorporated into file names automatically.
+%  If \(\mbox{issue number} = 11\), \cs{Input filnam} will read
+%  |tb11filnam.tex|
+%
+%    \begin{macrocode}
+\def\infil@{\jobname}
+\def\Input #1 {\ifnum\issueseqno<0
+    \def\infil@{#1}%
+  \else
+    \def\infil@{tb\number\issueseqno#1}
+  \fi
+  \edef\jobname{\infil@}\@readFLN
+  \@@input \infil@\relax
+  \if@RMKopen
+    \immediate\closeout\@TBremarkfile\@RMKopenfalse
+  \fi
+}
+%    \end{macrocode}
+%
+% \cs{TBremark}s are things that need to be drawn to the attention of
+% the editors; the conscientious author will include such things in
+% the article file.  By default, remarks are suppressed, but their
+% appearance may be enabled by the \cs{TBEnableRemarks} command, which
+% can be included in the configuration file |ltugboat.cfg| (or
+% |ltugproc.cfg|, if that's what we're at).
+%
+%    \begin{macrocode}
+\newif\if@RMKopen        \@RMKopenfalse
+\newwrite\@TBremarkfile
+\def\@TBremark#1{%
+  \if@RMKopen
+  \else
+    \@RMKopentrue\immediate\openout\@TBremarkfile=\infil@.rmk
+  \fi
+  \toks@={#1}%
+  \immediate\write\@TBremarkfile{^^J\the\toks@}%
+  \immediate\write16{^^JTBremark:: \the\toks@^^J}%
+}
+%    \end{macrocode}
+%
+% We initialise \cs{TBremark} to ignore its argument (this used to
+% involve a \cs{TBremarkOFF} which was cunningly defined exactly the
+% same as \cs{gobble})
+%
+%    \begin{macrocode}
+\let\TBremark=\gobble
+%    \end{macrocode}
+%
+% \cs{TBEnableRemarks} simply involves setting \cs{TBremark} to use
+% the functional \cs{@TBremark} defined above.
+%
+%    \begin{macrocode}
+\def\TBEnableRemarks{\let\TBremark\@TBremark}
+%    \end{macrocode}
+%
+% For marking locations in articles that pertain to remarks
+% in another file of editorial comments
+%
+%    \begin{macrocode}
+\def\TUBedit#1{}
+%    \end{macrocode}
+%
+% For using different filenames in the production process than those
+% supplied by authors
+%
+%    \begin{macrocode}
+\def\TUBfilename#1#2{\expandafter\def\csname file@@#1\endcsname{#2}}
+\newread\@altfilenames
+\def\@readFLN{\immediate\openin\@altfilenames=\jobname.fln
+  \ifeof\@altfilenames\let\@result\relax\else
+  \def\@result{\@@input\jobname.fln }\fi
+  \immediate\closein\@altfilenames
+  \@result}
+\@readFLN
+\everyjob=\expandafter{\the\everyjob\@readFLN}
+\InputIfFileExists{\jobname.fln}%
+     {\TBInfo{Reading alternative file file \jobname.fln}}{}
+%    \end{macrocode}
+%
+% The following needs to work entirely in \TeX's mouth
+%    \begin{macrocode}
+\def\@tubfilename#1{\expandafter\ifx\csname file@@#1\endcsname\relax
+  #1\else\csname file@@#1\endcsname\fi}
+\def\fileinput#1{\@@input\@tubfilename{#1} }
+%    \end{macrocode}
+%
+% Write out (both to a file and to the log) the starting page number
+% of an article, to be used for cross references and in contents.
+% |\pagexref|  is used for articles fully processed in the \TUB{}
+% run.  |\PageXref|  is used for `extra' pages, where an item is
+% submitted as camera copy, and only running heads (at most) are run.
+%
+%    \begin{macrocode}
+%<*!latex>
+\def\pagexrefON#1{%
+        \write-1{\def\expandafter\noexpand\csname#1\endcsname{\number\pageno}}%
+        \write\ppoutfile{%
+                \def\expandafter\noexpand\csname#1\endcsname{\number\pageno}}%
+        }
+\def\PageXrefON#1{%
+        \immediate\write-1{\def\expandafter
+                        \noexpand\csname#1\endcsname{\number\pageno}}%
+        \immediate\write\ppoutfile{\def\expandafter
+                        \noexpand\csname#1\endcsname{\number\pageno}}}
+%</!latex>
+%<*latex>
+\def\pagexrefON#1{%
+        \write-1{\def\expandafter\noexpand\csname#1\endcsname{\number\c@page}}%
+        \write\ppoutfile{%
+                \def\expandafter\noexpand\csname#1\endcsname{\number\c@page}}%
+        }
+\def\PageXrefON#1{%
+        \immediate\write-1{\def\expandafter
+                        \noexpand\csname#1\endcsname{\number\c@page}}%
+        \immediate\write\ppoutfile{\def\expandafter
+                        \noexpand\csname#1\endcsname{\number\c@page}}}
+%</latex>
+\def\pagexrefOFF#1{}
+\let\pagexref=\pagexrefOFF
+\def\PageXrefOFF#1{}
+\let\PageXref=\PageXrefOFF
+\def\xreftoON#1{%
+  \ifundefined{#1}%
+    ???\TBremark{Need cross reference for #1.}%
+  \else\csname#1\endcsname\fi}
+\def\xreftoOFF#1{???}
+\let\xrefto=\xreftoOFF
+%    \end{macrocode}
+%
+% \cs{TBdriver} `marks code for use when articles are run together in
+% a driver file'.  Since we don't yet have a definition of that
+% arrangement, we don't have a definition of \cs{TBdriver}.  Its
+% argument (which one presumes was intended as the code for this
+% unusual state) is just gobbled.
+%
+%    \begin{macrocode}
+\let\TBdriver\gobble
+%    \end{macrocode}
+%
+% Some hyphenation exceptions:
+%
+%    \begin{macrocode}
+\hyphenation{Del-a-ware Dijk-stra Duane Eijk-hout
+  Flor-i-da Free-BSD Ghost-script Ghost-view
+  Hara-lam-bous Jac-kow-ski Karls-ruhe
+  Mac-OS Math-Sci-Net
+  Net-BSD Open-BSD Open-Office
+  Pfa-Edit Post-Script Rich-ard Skoup South-all
+  VM-ware Win-Edt 
+  acro-nym ap-pen-dix asyn-chro-nous
+  bit-map bit-mapped bit-maps buf-fer buf-fers bool-ean
+  col-umns cus-tom-iz-able
+  data-base data-bases
+   de-riv-a-tive de-riv-a-tives de-riv-a-ble der-i-va-tion
+  fall-ing
+  half-way
+  key-note 
+  long-est
+  ma-gyar man-u-script man-u-scripts mne-mon-ic mne-mon-ics
+  off-line over-view
+  pal-ettes par-a-digm par-a-dig-mat-ic par-a-digms
+   pipe-line pipe-lines
+   plug-in plug-ins pro-gram-mable
+  se-vere-ly spell-ing spell-ings stand-alone strong-est
+   sub-ex-pres-sion syn-chro-ni-city syn-chro-nous
+  time-stamp time-stamped
+  vis-ual vis-ual-ly 
+  which-ever white-space white-spaces wide-spread wrap-around
+}
+%<!latex>\restorecat\@
+%</common>
+%<*classtail>
+\PrelimDrafttrue
+%    \end{macrocode}
+% \subsection{Page dimensions, glue, penalties etc}
+%    \begin{macrocode}
+\textheight 54pc
+\textwidth 39pc
+\columnsep 1.5pc
+\columnwidth 18.75pc
+\parindent \normalparindent
+\parskip \z@ % \@plus\p@
+\leftmargini 2em
+\leftmarginv .5em
+\leftmarginvi .5em
+\oddsidemargin \z@
+\evensidemargin \z@
+\topmargin -2.5pc
+\headheight 12\p@
+\headsep 20\p@
+\marginparwidth 48\p@
+\marginparsep 10\p@
+\partopsep=\z@
+\topsep=3\p@\@plus\p@\@minus\p@
+\parsep=3\p@\@plus\p@\@minus\p@
+\itemsep=\parsep
+\twocolumn
+\newdimen\pagewd        \pagewd=39pc
+\newdimen\trimwd        \trimwd=\pagewd
+\newdimen\trimlgt       \trimlgt=11in
+\newdimen\headmargin    \headmargin=3.5pc
+%    \end{macrocode}
+%
+% In \LaTeXe, |twoside| option is forced on when
+% |article.cls| is loaded.
+%
+% \subsection{Messing about with the \LaTeX{} logo}
+% \label{sec:latex-logo}
+%
+% Barbara Beeton's pleas for \LaTeX{} logos that look right in any
+% font shape provoked me to generate the following stuff that is
+% configurable.
+%
+% Here's the command for the user to define hir own new version.  The
+% arguments are font family, series and shape, and then the two kern
+% values used in placing the raised `A' of \LaTeX.
+%
+%    \begin{macrocode}
+\newcommand\DeclareLaTeXLogo[5]{\expandafter\def
+  \csname @LaTeX@#1/#2/#3\endcsname{{#4}{#5}}}
+%    \end{macrocode}
+%
+% The default values are as used in the source of \LaTeX{} itself:
+%
+%    \begin{macrocode}
+\def\@LaTeX@default{{.36}{.15}}
+%    \end{macrocode}
+%
+% More are defined in the initial version, for bold CM sans (which is
+% used as \cs{SecTitleFont}), and CM italic medium and bold, and
+% Bitstream Charter (which Nelson Beebe likes to use):
+%
+%    \begin{macrocode}
+\DeclareLaTeXLogo{cmss}{bx}n{.3}{.15}
+\DeclareLaTeXLogo{cmr}m{it}{.3}{.27}
+\DeclareLaTeXLogo{cmr}{bx}{it}{.3}{.27}
+\DeclareLaTeXLogo{bch}{m}{n}{.2}{.08}
+\DeclareLaTeXLogo{bch}{m}{it}{.2}{.08}
+%    \end{macrocode}
+%
+% Redefine \cs{LaTeX} to choose the parameters for the current font,
+% or to use the default value otherwise:
+%
+%    \begin{macrocode}
+\DeclareRobustCommand\LaTeX{\expandafter\let\expandafter\reserved@a
+  \csname @LaTeX@\f@family/\f@series/\f@shape\endcsname
+  \ifx\reserved@a\relax\let\reserved@a\@LaTeX@default\fi
+  \expandafter\@LaTeX\reserved@a}
+%    \end{macrocode}
+%
+% Here's the body of what was originally \cs{LaTeX}, pulled out with its
+% roots dripping onto the smoking ruin of original \LaTeX, and then
+% bits stuck in on the side.
+%
+% \cs{@LaTeX@default} provides parameters as one finds in the
+% original; other versions are added as needed.
+%
+%    \begin{macrocode}
+\newcommand\@LaTeX[2]{L\kern-#1em
+        {\sbox\z@ T%
+         \vbox to\ht0{\hbox{$\m@th$%
+                            \csname S@\f@size\endcsname
+                            \fontsize\sf@size\z@
+                            \math@fontsfalse\selectfont
+                            A}%
+                      \vss}%
+        }%
+        \kern-#2em%
+        \TeX}
+%    \end{macrocode}
+%
+% \subsection{Authors, contributors, addresses, signatures}
+%
+% Each article may have several authors (of course), so we permit an
+% \cs{author} command for each of them.  The names are then stored in
+% a set of \cs{csname}s called \cs{author1}, \cs{author2}, \dots
+% Similarly, there are several \cs{address<n>} and \cs{netaddress<n>}
+% and \cs{PersonalURL<n>} commands set up for each article.
+%
+% \begin{description}
+% \item[\emph{Comment:}] I would like to make provision for several
+%   authors at the same address, but (short of preempting the |*|
+%   marker, which it would be nice to retain so as to preserve
+%   compatibility with the |plain| style) I'm not sure how one would
+%   signal it.
+% \end{description}
+%    \begin{macrocode}
+\def\theauthor#1{\csname theauthor#1\endcsname}
+\def\theaddress#1{\csname theaddress#1\endcsname}
+\def\thenetaddress#1{\csname thenetaddress#1\endcsname}
+\def\thePersonalURL#1{\csname thePersonalURL#1\endcsname}
+%    \end{macrocode}
+%
+% The standard way of listing authors is to iterate from 1 to
+% \cs{count@} and to pick the author names as we go.
+%
+%    \begin{macrocode}
+%<!latex>\newcount\@tempcnta
+\def\@defaultauthorlist{%
+  \@getauthorlist\@firstofone
+}
+%    \end{macrocode}
+%
+% \cs{@getauthorlist} processes the author list, passing every bit of
+% stuff that needs to be typeset to its argument.
+%    \begin{macrocode}
+\def\@getauthorlist#1{%
+  \count@\authornumber
+  \advance\count@ by -2
+  \@tempcnta0
+%    \end{macrocode}
+%
+% Loop to output the first \ensuremath{n-2} of the \ensuremath{n}
+% authors (the loop does nothing if there are two or fewer authors)
+%
+%    \begin{macrocode}
+  \loop
+    \ifnum\count@>0
+      \advance\@tempcnta by \@ne
+      #1{\ignorespaces\theauthor{\number\@tempcnta}\unskip, }%
+      \advance\count@ by \m@ne
+  \repeat
+  \count@\authornumber
+  \advance\count@ by -\@tempcnta
+  \ifnum\authornumber>0
+%    \end{macrocode}
+%
+% If there are two or more authors, we output the penultimate author's
+% name here, followed by `and'
+%
+%    \begin{macrocode}
+    \ifnum\count@>1
+      \count@\authornumber
+      \advance\count@ by \m@ne
+      #1{\ignorespaces\theauthor{\number\count@}\unskip\ and }%
+    \fi
+%    \end{macrocode}
+%
+% Finally (if there were any authors at all) output the last author's
+% name:
+%
+%    \begin{macrocode}
+    #1{\ignorespaces\theauthor{\number\authornumber}\unskip}
+  \fi
+}
+%    \end{macrocode}
+%
+% Signature blocks.  The author can (in principle) define a different
+% sort of signature block using \cs{signature}, though this could well
+% cause the editorial group to have collective kittens (unless it had
+% been discussed in advance\dots)
+%
+%    \begin{macrocode}
+\def\signature#1{\def\@signature{#1}}
+\def\@signature{\@defaultsignature}
+%    \end{macrocode}
+%
+% \cs{@defaultsignature} loops through all the authors, outputting the
+% details we have about that author, or (if we're in a sub-article)
+% outputs the contributor's name and closes the group opened by
+% \cs{contributor}.  It is (as its name implies) the default body for
+% \cs{makesignature}
+%
+%    \begin{macrocode}
+\def\@defaultsignature{{%
+    \let\thanks\@gobble
+    \ifnum\authornumber<0
+%    \end{macrocode}
+% if \cs{authornumber}$<0$, we are in a contributor's section
+%    \begin{macrocode}
+      \medskip
+      \frenchspacing
+      \signaturemark
+      \theauthor{\number\authornumber}\\
+      \theaddress{\number\authornumber}\\
+      \allowhyphens
+      \thenetaddress{\number\authornumber}\\
+      \thePersonalURL{\number\authornumber}\\
+    \else
+%    \end{macrocode}
+% \cs{authornumber}$\ge0$, so we are in the body of an ordinary
+% article
+%    \begin{macrocode}
+      \count@=0
+      \loop
+        \ifnum\count@<\authornumber
+          \medskip
+          \advance\count@ by \@ne
+          \signaturemark
+          \theauthor{\number\count@}\\
+          \theaddress{\number\count@}\\
+          {%
+            \allowhyphens
+            \thenetaddress{\number\count@}\\
+            \thePersonalURL{\number\count@}\\
+          }%
+      \repeat
+    \fi
+  }%
+}
+\newdimen\signaturewidth   \signaturewidth=12pc
+%    \end{macrocode}
+% The optional argument to \cs{makesignature} is useful in some
+% circumstances (e.g., multi-contributor articles)
+%    \begin{macrocode}
+\newcommand\makesignature[1][\medskipamount]{%
+%    \end{macrocode}
+%
+% check the value the user has put in \cs{signaturewidth}: it may be
+% at most \verb|1.5pc| short of \cs{columnwidth}
+%    \begin{macrocode}
+  \@tempdima\signaturewidth
+  \advance\@tempdima 1.5pc
+  \ifdim \@tempdima>\columnwidth
+    \signaturewidth \columnwidth
+    \advance\signaturewidth -1.5pc
+  \fi
+  \par
+  \penalty9000
+  \vspace{#1}%
+  \rightline{%
+    \vbox{\hsize\signaturewidth \ninepoint \raggedright
+      \parindent \z@ \everypar={\hangindent 1pc }
+      \parskip \z@skip
+      \def\|{\unskip\hfil\break}%
+      \def\\{\endgraf}%
+      \def\phone{\rm Phone: }
+      \rm\@signature}%
+  }%
+  \ifnum\authornumber<0 \endgroup\fi
+}
+\def\signaturemark{\leavevmode\llap{$\diamond$\enspace}}
+%    \end{macrocode}
+%
+% The code used to define the following:
+%
+% {\small\begin{verbatim}
+%   {\makeactive\@
+%    \gdef\signatureat{\makeactive\@\def@{\char"40\discretionary{}{}{}}}
+%    \makeactive\%
+%    \gdef\signaturepercent{\makeactive\%\def%{\char"25\discretionary{}{}{}}}
+%   }
+% \end{verbatim}}
+%
+% However, they were never used within the class (or within
+% |ltugproc.cls|).  They have therefore been deleted; the identically
+% defined \cs{netaddrat} and \cs{netaddrpercent} may be used in the
+% unlikely event that they're needed elsewhere.
+%
+% Now all the awful machinery of author definitions.
+% \cs{authornumber} records the number of authors we have recorded to
+% date.
+%
+%    \begin{macrocode}
+\newcount\authornumber
+\authornumber=0
+%    \end{macrocode}
+%
+% \cs{author} `allocates' another author name (by bumping
+% \cs{authornumber}) and also sets up the address and netaddress for
+% this author to produce a warning and to prevent oddities if they're
+% invoked.  This last assumes that invocation will be in the context
+% of \cs{signature} (|ltugboat.cls|) or \cs{maketitle}
+% (|ltugproc.cls|); in both cases, invocation is followed by a line
+% break (tabular line break |\\| in |ltugproc|, \cs{endgraf} in
+% \cs{makesignature} in |ltugboat|).
+%
+%    \begin{macrocode}
+\def\author{%
+  \global\advance\authornumber\@ne
+  \TB@author
+}
+%    \end{macrocode}
+% \cs{contributor} is for a small part of a multiple-part article; it
+% begins a group that will be ended in \cs{makesignature}
+%    \begin{macrocode}
+\def\contributor{%
+  \begingroup
+  \authornumber\m@ne
+  \TB@author
+}
+%    \end{macrocode}
+%
+% Both `types' of author fall through here to set up the author name
+% and to initialise author-related things.  \cs{EDITORno*} commands
+% allow the editor to record that there's good reason for an
+% \emph{address} or \emph{netaddress} not to be there (the
+% \emph{personalURL} is optional anyway).
+%    \begin{macrocode}
+\def\TB@author#1{%
+  \expandafter\def\csname theauthor\number\authornumber\endcsname
+      {\ignorespaces#1\unskip}%
+  \expandafter\def\csname theaddress\number\authornumber\endcsname
+    {\TBWarningNL{Address for #1\space missing}\@gobble}%
+  \expandafter\def\csname thenetaddress\number\authornumber\endcsname
+    {\TBWarningNL{Net address for #1\space missing}\@gobble}%
+  \expandafter\let\csname thePersonalURL\number\authornumber\endcsname
+    \@gobble
+  }
+\def\EDITORnoaddress{%
+  \expandafter\let\csname theaddress\number\authornumber\endcsname
+    \@gobble
+}
+\def\EDITORnonetaddress{%
+  \expandafter\let\csname thenetaddress\number\authornumber\endcsname
+    \@gobble
+}
+%    \end{macrocode}
+%
+% \cs{address} simply copies its argument into the \cs{theaddress<n>}
+% for this author.
+%
+%    \begin{macrocode}
+\def\address#1{%
+  \expandafter\def\csname theaddress\number\authornumber\endcsname
+      {\leavevmode\ignorespaces#1\unskip}}
+%    \end{macrocode}
+%
+% \cs{network} is for use within the optional argument of
+% \cs{netaddress}; it defines the \emph{name} of the network the user
+% is on.
+%
+% \begin{description}
+% \item[\emph{Comment:}] I think this is a fantasy, since everyone (in
+%   practice, nowadays) quotes an internet address.  In principle, there
+%   are people who will quote |X.400| addresses (but they're few and far
+%   between) and I have (during 1995!) seen an address with an |UUCP|
+%   bang-path component on |comp.text.tex|, but \emph{really}!
+% \end{description}
+%
+%    \begin{macrocode}
+\def\network#1{\def\@network{#1: }}
+%    \end{macrocode}
+%
+% \cs{netaddress} begins a group, executes an optional argument (which
+% should not, presumably, contain global commands) and then relays to
+% \cs{@relay@netaddress} with both |@| and |%| made active (so that
+% they can be discretionary points in the address).  If we're using
+% \LaTeXe, we use the default-argument form of \cs{newcommand};
+% otherwise we write it out in all its horribleness.
+%
+%    \begin{macrocode}
+\newcommand\netaddress[1][\relax]{%
+  \begingroup
+  \def\@network{}%
+%    \end{macrocode}
+%
+% Unfortunately, because of the catcode hackery, we have still to do
+% one stage of relaying within our own code, even if we're using
+% \LaTeXe.
+%
+%    \begin{macrocode}
+  #1\@sanitize\makespace\ \makeactive\@
+  \makeactive\.\makeactive\%\@relay@netaddress}%
+%    \end{macrocode}
+%
+% \cs{@relay@netaddress} finishes the job. It sets \cs{thenetaddress}
+% for this author to contain the network name followed by the address.
+% As a result of our kerfuffle above, |@| and |%| are active at the
+% point we're entered.  We ensure they're active when
+% \cs{thenetaddress} gets expanded, too. (\textbf{\emph{WOT}?!})
+%
+%    \begin{macrocode}
+\def\@relay@netaddress#1{%
+  \ProtectNetChars
+  \expandafter\protected@xdef
+      \csname thenetaddress\number\authornumber\endcsname
+    {\protect\leavevmode\textrm{\@network}%
+     {\protect\NetAddrChars\net
+      \ignorespaces#1\unskip}}%
+  \endgroup
+  }
+%    \end{macrocode}
+%
+% \cs{personalURL} is in essence the same as \cs{netaddress}, apart
+% from (1) the lack of the eccentric optional argument, and (2) the
+% activation of `|/|'.
+%
+% We could imagine needing an \cs{URL} command in general.  If so, we
+% must remember that the code here would naturally permit a break
+% between the last two characters of |http://|, and some sort of
+% special action must be taken to ensure that it doesn't happen.
+%
+%    \begin{macrocode}
+\def\personalURL{\begingroup
+  \@sanitize\makespace\ \makeactive\@
+  \makeactive\.\makeactive\%\makeactive\/\@personalURL}%
+\def\@personalURL#1{%
+  \ProtectNetChars
+  \expandafter\protected@xdef
+    \csname thePersonalURL\number\authornumber\endcsname{%
+      \protect\leavevmode
+      {%
+        \protect\URLchars\net
+        \ignorespaces#1\unskip
+      }%
+    }%
+  \endgroup
+  }
+%    \end{macrocode}
+%
+% Define the activation mechanism for `|@|', `|%|', `|.|'  and `|/|', for use
+% in the above.  Note that, since the code has `|%|' active, we have
+% `|*|' as a comment character, which has a tendency to make things
+% look peculiar\dots
+%
+%    \begin{macrocode}
+{%
+  \makecomment\*
+  \makeactive\@
+  \gdef\netaddrat{\makeactive\@*
+    \def@{\discretionary{\char"40}{}{\char"40}}}
+  \makeactive\%
+  \gdef\netaddrpercent{\makeactive\%*
+    \def%{\discretionary{\char"25}{}{\char"25}}}
+  \makeactive\.
+  \gdef\netaddrdot{\makeactive\.*
+    \def.{\discretionary{\char"2E}{}{\char"2E}}}
+%    \end{macrocode}
+%
+% \cs{NetAddrChars} is what \emph{we} use (we're constrained to retain
+% the old interface to this stuff, but it \emph{is} clunky\dots).
+% Since {\small URL}s are a new idea, we are at liberty not to define
+% a separate \cs{netaddrslash} command, and we only have
+% \cs{URLchars}.
+%
+%    \begin{macrocode}
+  \gdef\NetAddrChars{\netaddrat \netaddrpercent \netaddrdot}
+  \makeactive\/
+  \gdef\URLchars{*
+    \NetAddrChars
+    \makeactive\/*
+    \def/{\discretionary{\char"2F}{}{\char"2F}}}
+%    \end{macrocode}
+%
+% \cs{ProtectNetChars} includes protecting `|/|', since this does no
+% harm in the case of net addresses (where it's not going to be
+% active) and we thereby gain by not having yet another csname.
+%
+%    \begin{macrocode}
+  \gdef\ProtectNetChars{*
+    \def@{\protect@}*
+    \def%{\protect%}*
+    \def.{\protect.}*
+    \def/{\protect/}*
+    }
+}
+%    \end{macrocode}
+%
+%  \LaTeXe{} (in its wisdom) suppresses
+%  \cs{DeclareOldFontCommand} when in compatibility mode, so that in
+%  that circumstance we need to use a declaration copied from
+%  |latex209.def| rather than the way we would normally do the thing
+%  (using the command \LaTeXe{} defines for the job).
+% 
+%    \begin{macrocode}
+\if@compatibility
+  \DeclareRobustCommand\net{\normalfont\ttfamily\mathgroup\symtypewriter}
+\else
+  \DeclareOldFontCommand{\net}{\ttfamily\upshape\mdseries}{\mathtt}
+\fi
+\def\authorlist#1{\def\@author{#1}}
+\def\@author{\@defaultauthorlist}
+%    \end{macrocode}
+%
+% \begin{macro}{\if@articletitle}
+% \begin{macro}{\maketitle}
+% \begin{macro}{\@r@maketitle}
+% \cs{maketitle} takes an optional ``*''; if present, the operation is
+% not defining the title of a paper, merely that of a ``business''
+% section (such as the participants at a meeting) that has no credited
+% author or other title.  In this case, the command flushes out the
+% latest \cs{sectitle} (or whatever) but does nothing else.
+%
+% Provide machinery to skip extra space, even one or more full columns,
+% above the top of an article to leave space to paste up a previous
+% article that has finished on the same page.  This is a fall back to
+% accommodate the fact that multiple articles cannot yet be run together
+% easily with \LaTeXe.
+%    \begin{macrocode}
+\newif\if@articletitle
+\def\maketitle{\@ifstar
+  {\@articletitlefalse\@r@maketitle}%
+  {\@articletitletrue\@r@maketitle}%
+}
+\def\@r@maketitle{\par
+ \ifdim\PreTitleDrop > \z@
+   \loop
+   \ifdim \PreTitleDrop > \textheight
+     \vbox{}\vfil\eject
+     \advance\PreTitleDrop by -\textheight
+   \repeat
+   \vbox to \PreTitleDrop{}
+   \global\PreTitleDrop=\z@
+ \fi
+ \begingroup
+ \setcounter{footnote}{0}
+ \def\thefootnote{\fnsymbol{footnote}}
+ \@maketitle
+ \@thanks
+ \endgroup
+ \setcounter{footnote}{0}
+ \gdef\@thanks{}
+ }
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+%
+% \subsection{Section titles}
+%
+%  The following macros are used to set the large \TUB{} section heads
+%  (e.g.\ ``General Delivery'', ``Fonts'', etc.)
+%
+%  Define the distance between articles which are run together:
+%
+%    \begin{macrocode}
+\def\secsep{\vskip 5\baselineskip}
+%    \end{macrocode}
+%
+% Note that \cs{stbaselineskip} is used in the definition of
+% \cs{sectitlefont}, in \LaTeXe, so that it has (at least) to be
+% defined before \cs{sectitlefont} is used (we do the whole job).
+%
+%    \begin{macrocode}
+\newdimen\stbaselineskip        \stbaselineskip=18\p@
+\newdimen\stfontheight
+\settoheight{\stfontheight}{\sectitlefont O}
+%    \end{macrocode}
+%
+% Declaring section titles; the conditional \cs{ifSecTitle} records
+% the occurence of a \cs{sectitle} command.  If (when) a subsequent
+% \cs{maketitle} occurs, the section title box will get flushed out;
+% as a result of this, one could in principle have a set of
+% \cs{sectitle} commands in a semi-fixed steering file, and inclusions
+% of files inserted only as and when papers have appeared.  Only the
+% last \cs{sectitle} will actually be executed.
+%
+%    \begin{macrocode}
+\newif\ifSecTitle
+\SecTitlefalse
+\newif\ifWideSecTitle
+\newcommand\sectitle{%
+  \SecTitletrue
+  \@ifstar
+    {\WideSecTitletrue\def\s@ctitle}%
+    {\WideSecTitlefalse\def\s@ctitle}%
+}
+%    \end{macrocode}
+%
+% \cs{PreTitleDrop} records the amount of column-space we need to
+% eject before we start any given paper.  It gets zeroed after that
+% ejection has happened.
+%
+%    \begin{macrocode}
+\newdimen\PreTitleDrop   \PreTitleDrop=\z@
+%    \end{macrocode}
+%
+% The other parameters used in \cs{@sectitle}; I don't think there's
+% the slightest requirement for them to be registers (since they're
+% constant values, AFAIK), but converting them to macros would remove
+% the essentially useless functionality of being able to change them
+% using assignment, which I'm not about to struggle with just now...
+%
+% \cs{AboveTitleSkip} and \cs{BelowTitleSkip} are what you'ld expect;
+% \cs{strulethickness} is the value to use for \cs{fboxrule} when
+% setting the title.
+%
+%    \begin{macrocode}
+\newskip\AboveTitleSkip  \AboveTitleSkip=12\p@
+\newskip\BelowTitleSkip  \BelowTitleSkip=8\p@
+\newdimen\strulethickness       \strulethickness=.6\p@
+%    \end{macrocode}
+%
+% \cs{@sectitle} actually generates the section title (in a rather
+% generous box).  It gets called from \cs{maketitle} under conditional
+% \cs{ifSecTitle}; by the time \cs{@sectitle} takes control, we
+% already have \cs{SecTitlefalse}.  This implementation uses \LaTeX's
+% \cs{framebox} command, on the grounds that one doesn't keep a dog
+% and bark for oneself\dots
+%
+%    \begin{macrocode}
+\def\@sectitle #1{%
+  \par
+  \penalty-1000
+%    \end{macrocode}
+%
+% If we're setting a wide title, the stuff will be at the top of a
+% page (let alone a column) but inside a box, so that the separator
+% won't be discardable: so don't create the separator in this case.
+%
+%    \begin{macrocode}
+  \ifWideSecTitle\else\secsep\fi
+  {%
+    \fboxrule\strulethickness
+    \fboxsep\z@
+    \noindent\framebox[\hsize]{%
+      \vbox{%
+        \raggedcenter
+        \let\\\@sectitle@newline
+        \sectitlefont
+        \makestrut[2\stfontheight;\z@]%
+        #1%
+        \makestrut[\z@;\stfontheight]\endgraf
+      }%
+    }%
+  }%
+  \nobreak
+  \vskip\baselineskip
+}
+%    \end{macrocode}
+%
+% \begin{macro}{\@sectitle@newline}
+% For use inside \cs{sectitle} as |\\|.  Works similarly to |\\| in
+% the ``real world''~--- uses an optional argument
+%    \begin{macrocode}
+\newcommand{\@sectitle@newline}[1][\z@]{%
+  \ifdim#1>\z@
+    \makestrut[\z@;#1]%
+  \fi
+  \unskip\break
+}
+%    \end{macrocode}
+% \end{macro}
+%
+% We need to trigger the making of a section title in some cases where
+% we don't have a section title proper (for example, in material taken
+% over from
+%^^A \acro
+% {TTN}).
+%    \begin{macrocode}
+\def\@makesectitle{\ifSecTitle
+    \global\SecTitlefalse
+    \ifWideSecTitle
+      \twocolumn[\@sectitle{\s@ctitle}]%
+      \global\WideSecTitlefalse
+    \else
+      \@sectitle{\s@ctitle}%
+    \fi
+  \else
+    \vskip\AboveTitleSkip
+    \kern\topskip
+    \hrule \@height\z@ \@depth\z@ \@width 10\p@
+    \kern-\topskip
+    \kern-\strulethickness
+    \hrule \@height\strulethickness \@depth\z@
+    \kern\medskipamount
+    \nobreak
+  \fi
+}
+%    \end{macrocode}
+%
+% \begin{macro}{\@maketitle}
+% Finally, the body of \cs{maketitle} itself.
+%    \begin{macrocode}
+\def\@maketitle{%
+  \@makesectitle
+  \if@articletitle{%
+    \nohyphens \interlinepenalty\@M
+    \setbox0=\hbox{%
+      \let\thanks\@gobble
+      \let\\=\quad
+      \let\and=\quad
+      \ignorespaces\@author}%
+    {%
+      \noindent\bf\raggedright\ignorespaces\@title\endgraf
+    }%
+    \ifdim \wd0 < 5\p@               % omit if author is null
+    \else
+%    \end{macrocode}
+% Since we have \(\mathtt{\cs{BelowTitleSkip}} + \mathtt{4pt} =
+% \mathtt{\cs{baselineskip}}\), we say:
+%    \begin{macrocode}
+      \nobreak \vskip 4\p@
+      {%
+        \leftskip=\normalparindent
+        \raggedright
+        \def\and{\unskip\\}%
+        \noindent\@author\endgraf
+      }%
+    \fi
+    \nobreak
+    \vskip\BelowTitleSkip
+  }\fi%
+  \global\@afterindentfalse
+  \aftergroup\@afterheading
+}
+%    \end{macrocode}
+% \end{macro}
+%
+% Dedications are ragged right, in italics.
+%
+%    \begin{macrocode}
+\newenvironment{dedication}%
+  {\raggedright\noindent\itshape\ignorespaces}%
+  {\endgraf\medskip}
+%    \end{macrocode}
+%
+% The |abstract| and |longabstract| environments both use
+% \cs{section*}.
+% ^^A [the following is no longer true]
+% ^^A They therefore hack at our subversion of
+% ^^A \cs{@startsection}, to avoid a confusing warning.
+%
+%    \begin{macrocode}
+\renewenvironment{abstract}%
+  {%
+    \begin{SafeSection}%
+    \section*{Abstract}%
+  }%
+  {\end{SafeSection}}
+\newenvironment{longabstract}%
+  {%
+    \begin{SafeSection}%
+    \section*{Abstract}%
+    \bgroup\small
+  }%
+  {%
+    \endgraf\egroup
+    \end{SafeSection}%
+  \vspace{.25\baselineskip}
+  \begin{center}
+    {$--*--$}
+  \end{center}
+  \vspace{.5\baselineskip}}
+%    \end{macrocode}
+%
+% \subsection{Headings}
+%
+%  Redefine style of section headings to match plain \TUB.
+%  Negative beforeskip suppresses following parindent.  (So
+%  negate the stretch and shrink too).
+%
+%  These macros are called \cs{*head} in the plain styles.
+%
+%  Relaying via \cs{TB@startsection} detects inappropriate use of
+%  \cs{section*}.  Of course, if (when) \emph{we} use it, we need to
+%  avoid that relaying; this can be done by \cs{let}ting
+%  \cs{TB@startsection} to \cs{TB@safe@startsection}, within a group.
+%
+% First the version for use in the default case, when class option
+% \textsc{numbersec} is in effect.
+%
+%    \begin{macrocode}
+\if@numbersec
+  \def\section{\TB@startsection{{section}%
+                                1%
+                                \z@
+                                {-8\p@}%
+                                {4\p@}%
+          {\normalsize\bf\raggedright\hyphenpenalty=\@M}}}
+  \def\subsection{\TB@startsection{{subsection}%
+                                   2%
+                                   \z@
+                                   {-8\p@}%
+                                   {4\p@}%
+          {\normalsize\bf\raggedright\hyphenpenalty=\@M}}}
+  \def\subsubsection{\TB@startsection{{subsubsection}%
+                                      3%
+                                      \z@
+                                      {-8\p@}%
+                                      {4\p@}%
+          {\normalsize\bf\raggedright\hyphenpenalty=\@M}}}
+  \def\paragraph{\TB@startsection{{paragraph}%
+                                  4%
+                                  \z@
+                                  {2.5ex\@plus 1ex}%
+                                  {-1em}%
+                                  {\normalsize\bf}}}
+%    \end{macrocode}
+%
+% Now the version if class option \textsc{nonumber} is in effect,
+% i.e., if \cs{if@numbersec} is false.
+%
+%    \begin{macrocode}
+\else
+  \setcounter{secnumdepth}{0}
+  \def\section{\TB@nolimelabel
+               \TB@startsection{{section}%
+                                1%
+                                \z@
+                                {-8\p@}%
+                                {4\p@}%
+          {\normalsize\bf\raggedright\hyphenpenalty=\@M}}}
+  \def\subsection{\TB@nolimelabel
+                  \TB@startsection{{subsection}%
+                                   2%
+                                   \z@
+                                   {-8\p@}%
+                                   {-0.5em\@plus-\fontdimen3\font}%
+          {\normalsize\bf\raggedright\hyphenpenalty=\@M}}}
+  \def\subsubsection{\TB@nolimelabel
+                     \TB@startsection{{subsubsection}%
+                                      3%
+                                      \parindent
+                                      {-8\p@}%
+                                      {-0.5em\@plus-\fontdimen3\font}%
+          {\normalsize\bf\raggedright\hyphenpenalty=\@M}}}
+\fi
+%    \end{macrocode}
+%
+% \cs{TB@startsection} traps \verb"*" versions of sectioning
+% commands, if numbering isn't in effect.  Its argument is the
+% complete set of \cs{@startsection} arguments.
+%
+%    \begin{macrocode}
+\if@numbersec
+  \def\TB@startsection#1{\@startsection#1}%
+\else
+  \def\TB@startsection#1{%
+    \@ifstar
+      {\TBWarning{*-form of \expandafter\string\csname\@firstofsix#1%
+                  \endcsname\space
+                  \MessageBreak
+                  conflicts with nonumber class option}%
+       \@startsection#1}%
+      {\@startsection#1}%
+  }
+\fi
+\def\@firstofsix#1#2#3#4#5#6{#1}
+%    \end{macrocode}
+%
+% \cs{TB@safe@startsection} is to be used where \cs{section*} (etc.)\
+% appear in places where the request is OK (because it's built in to
+% some macro we don't fiddle with).
+%
+%    \begin{macrocode}
+\def\TB@safe@startsection#1{\@startsection#1}
+%    \end{macrocode}
+%
+% The \texttt{SafeSection} environment allows use of \texttt{*}-forms
+% of sectioning environments.  It's not documented for the general
+% public: it's intended as an editor's facility.
+%
+%    \begin{macrocode}
+\newenvironment{SafeSection}%
+  {\let\TB@startsection\TB@safe@startsection}%
+  {}
+%    \end{macrocode}
+%
+% And now for the exciting sectioning commands that \LaTeX{} defines
+% but we don't have a definition for (whatever else, we don't want
+% Lamport's originals, which come out `like the blare of a bugle in a
+% lullaby'\footnote{Thurber, \emph{The Wonderful O}}).
+%
+% The three inappropriate ones are subparagraph (indistinguishable
+% from paragraph), and chapter and part.  The last seemed almost to be
+% defined in an early version of these macros, since there was a
+% definition of \cs{l@part}.  I've not got down to where that came
+% from (or why).  If class option \textsc{nonumber} is in effect, we
+% also suppress \cs{paragraph}, since it has no parallel in the plain
+% style.
+%
+%    \begin{macrocode}
+\if@numbersec
+  \def\subparagraph{\TB@nosection\subparagraph\paragraph}
+\else
+  \def\paragraph{\TB@nosection\paragraph\subsubsection}
+  \def\subparagraph{\TB@nosection\subparagraph\subsubsection}
+\fi
+\def\chapter{\TB@nosection\chapter\section}
+\def\part{\TB@nosection\part\section}
+\def\TB@nosection#1#2{\TBWarning{class does not support \string#1,
+    \string#2\space used instead}#2}
+%    \end{macrocode}
+%
+% \cs{l@<sectioning-name>} is for table of contents (of an article).
+% 
+% We define new macros to allow easily changing the font used for toc
+% entries (for \TUB, we usually want roman, not bold), and the space
+% between entries.  Nelson Beebe's articles are almost the only ones
+% that ever have toc's.
+% 
+%    \begin{macrocode}
+\def\TBtocsectionfont{\normalfont}
+\newskip\TBtocsectionspace  \TBtocsectionspace=1.0em\@plus\p@
+%    \end{macrocode}
+%
+% Don't ask me (RF) why \cs{l@part} is there; I commented it out
+% because I couldn't understand why it had been left there for me.  To
+% be finally deleted in a future release of these macros\dots
+%    \begin{macrocode}
+%\def\l@part#1#2{\addpenalty{\@secpenalty}%
+%  \addvspace{2.25em\@plus\p@}%
+%  \begingroup
+%    \@tempdima 3em \parindent\z@ \rightskip\z@ \parfillskip\z@
+%    {\large \bf \leavevmode #1\hfil \hbox to\@pnumwidth{\hss #2}}\par
+%    \nobreak
+%  \endgroup}
+%
+\def\l@section#1#2{\addpenalty{\@secpenalty}%
+  \addvspace{\TBtocsectionspace}%
+  \@tempdima 1.5em
+  \begingroup
+    \parindent\z@ \rightskip\z@  % article style makes \rightskip > 0 
+    \parfillskip\z@
+    \TBtocsectionfont
+    \leavevmode\advance\leftskip\@tempdima\hskip-\leftskip#1\nobreak\hfil
+    \nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+  \endgroup}
+%    \end{macrocode}
+%
+% \subsection{Appendices}
+%
+% Appendices (which are really just another sort of section heading)
+% raise a problem: if the sections are unnumbered, we plainly need to
+% restore the section numbering, which in turn allows labelling of
+% section numbers again (\cs{TBnolimelabel} happens before the
+% \cs{refstepcounter}, so its effects get lost \dots~what a clever
+% piece of design that was).  So here we go:
+%
+%    \begin{macrocode}
+\renewcommand\appendix{\par
+  \renewcommand\thesection{\@Alph\c@section}%
+  \setcounter{section}{0}%
+  \if@numbersec
+  \else
+    \setcounter{secnumdepth}{1}%
+  \fi
+%    \end{macrocode}
+%
+% Now: is this the start of an appendix environment?  This can be
+% detected by looking at \cs{@currenvir}; if we are, we need to relay
+% to \cs{@appendix@env} to pick up the optional argument.
+%
+%    \begin{macrocode}
+  \def\@tempa{appendix}
+  \ifx\@tempa\@currenvir
+    \expandafter\@appendix@env
+  \fi
+}
+%    \end{macrocode}
+%
+% Here we deal with \cs{begin}|{appendix}|\oarg{app-name}
+%
+%    \begin{macrocode}
+\newcommand\app@prefix@section{}
+\newcommand\@appendix@env[1][Appendix]{%
+  \renewcommand\@seccntformat[1]{\csname app@prefix@##1\endcsname
+    \csname the##1\endcsname\quad}%
+  \renewcommand\app@prefix@section{#1 }%
+}
+%    \end{macrocode}
+%
+% Ending an appendix environment is pretty trivial\dots
+%
+%    \begin{macrocode}
+\let\endappendix\relax
+%    \end{macrocode}
+%
+%
+% \subsection{References}
+%
+% If the sections aren't numbered, the natural tendency of the
+% author to cross-reference (which, after all, is one of the things
+% \LaTeX{} is for ever being advertised as being good at) can cause
+% headaches for the editor.  (Yes it can; believe me~\dots\ there's
+% always one.)
+%
+% The following command is used by each of the sectioning commands to
+% make a following \cs{ref} command bloop at the author.  Even if the
+% author then ignores the complaint, the poor old editor may find the
+% offending \cs{label} rather more easily.
+%
+% (Note that macro name is to be read as ``\emph{noli me} label'' (I
+% don't know the medi\ae val Latin for `label').
+%
+% \begin{description}
+% \item[\emph{Comment}] To come (perhaps): detection of the act of
+%   labelling, and an analogue of \cs{ifG@refundefined} for this sort of
+%   label
+% \end{description}
+%
+%    \begin{macrocode}
+\def\TB@nolimelabel{%
+  \def\@currentlabel{%
+    \protect\TBWarning{%
+      Invalid reference to numbered label on page \thepage
+      \MessageBreak made%
+    }%
+    \textbf{?!?}%
+  }%
+}
+%    \end{macrocode}
+%
+% \subsection{Title references}
+%
+% This is a first cut at a mecahnism for referencing by the title of a
+% section; it employs the delightfully simple idea Sebastian Rahtz has
+% in the \texttt{nameref} package (which is part of
+% \texttt{hyperref}).  As it stands, it lacks some of the bells and
+% whistles of the original, but they could be added; this is merely
+% proof-of-concept.
+%
+% The name label comes from the moveable bit of the section argument;
+% we subvert the \cs{@sect} and \cs{@ssect} commands (the latter
+% deals with starred section commands) to grab the relevant argument.
+%    \begin{macrocode}
+\let\TB@@sect\@sect
+\let\TB@@ssect\@ssect
+\def\@sect#1#2#3#4#5#6[#7]#8{%
+  \def\@currentlabelname{#7}%
+  \TB@@sect{#1}{#2}{#3}{#4}{#5}{#6}[{#7}]{#8}%
+}
+\def\@ssect#1#2#3#4#5{%
+ \def\@currentlabelname{#5}%
+ \TB@@ssect{#1}{#2}{#3}{#4}{#5}%
+}
+%    \end{macrocode}
+%
+% The \cs{newlabel} command that gets written to the \texttt{.aux}
+% file needs to be redefined to have three components to its argument:
+%    \begin{macrocode}
+\def\label#1{{%
+    \@bsphack
+    \let\label\@gobble
+    \let\index\@gobble
+    \if@filesw
+      \protected@write\@auxout{}%
+        {\string\newlabel{#1}{%
+            {\@currentlabel}{\thepage}{\@currentlabelname}}%
+        }%
+    \fi
+    \@esphack
+  }%
+}
+%    \end{macrocode}
+%
+% Of course, in the case of a sufficiently mad author, there will be
+% no sectioning commands, so we need to
+%    \begin{macrocode}
+\let\@currentlabelname\@empty
+%    \end{macrocode}
+%
+% References are pretty straightforward, but need three extra utility
+% commands (analagous to the \cs{@firstof...}, etc., defined in the
+% kernel).
+%    \begin{macrocode}
+\DeclareRobustCommand\ref[1]{\expandafter\@setref
+  \csname r@#1\endcsname\@firstofthree{#1}}
+\DeclareRobustCommand\pageref[1]{\expandafter\@setref
+  \csname r@#1\endcsname\@secondofthree{#1}}
+\DeclareRobustCommand\nameref[1]{\expandafter\@setref
+  \csname r@#1\endcsname\@thirdofthree{#1}}
+\long\def\@firstofthree#1#2#3{#1}
+\long\def\@secondofthree#1#2#3{#2}
+\long\def\@thirdofthree#1#2#3{#3}
+%    \end{macrocode}
+%
+% \subsection{Float captions}
+%
+% By analogy with what we've just done to section titles and the like,
+% we now do our best to discourage hyphenation within captions.  We also
+% typeset them in \cs{small}.
+%
+%    \begin{macrocode}
+\long\def\@makecaption#1#2{%
+  \vskip\abovecaptionskip
+  \sbox\@tempboxa{\small #1: #2}%
+  \ifdim \wd\@tempboxa >\hsize
+    \raggedright\hyphenpenalty=\@M \parindent=1em 
+    {\small \noindent #1: #2\par}%
+  \else
+    \global \@minipagefalse
+    \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
+  \fi
+  \vskip\belowcaptionskip}
+%    \end{macrocode}
+%
+% Also use \cs{small} for the caption labels, and put the label itself
+% (Figure xx) in bold.
+% 
+%    \begin{macrocode}
+\def\fnum@figure{{\small \bf \figurename\nobreakspace\thefigure}}
+\def\fnum@table{{\small \bf \tablename\nobreakspace\thetable}}
+%    \end{macrocode}
+%
+% \subsection{Size changing commands}
+%
+% Apart from their `normal' effects, these commands change the glue
+% around displays.
+%    \begin{macrocode}
+\renewcommand\normalsize{%
+   \@setfontsize\normalsize\@xpt\@xiipt
+   \abovedisplayskip=3\p@\@plus 3\p@\@minus\p@
+   \belowdisplayskip=\abovedisplayskip
+   \abovedisplayshortskip=\z@\@plus 3\p@
+   \belowdisplayshortskip=\p@\@plus 3\p@\@minus\p@
+}
+
+\renewcommand\small{%
+   \@setfontsize\small\@ixpt{11}%
+   \abovedisplayskip=2.5\p@\@plus 2.5\p@\@minus\p@
+   \belowdisplayskip=\abovedisplayskip
+   \abovedisplayshortskip=\z@\@plus 2\p@
+   \belowdisplayshortskip=\p@\@plus 2\p@\@minus\p@
+}
+\renewcommand\footnotesize{%
+    \@setfontsize\footnotesize\@viiipt{9.5}%
+    \abovedisplayskip=3\p@\@plus 3\p@\@minus\p@
+    \belowdisplayskip=\abovedisplayskip
+    \abovedisplayshortskip=\z@\@plus 3\p@
+    \belowdisplayshortskip=\p@\@plus 3\p@\@minus\p@
+}
+%    \end{macrocode}
+%
+% \subsection{Lists and other text inclusions}
+%
+%    \begin{macrocode}
+\def\@listi{%
+  \leftmargin\leftmargini\parsep=\p@\@plus\p@\@minus\p@
+  \itemsep=\parsep
+  \listparindent=1em
+  }
+
+\def\@listii{%
+  \leftmargin\leftmarginii
+  \labelwidth=\leftmarginii \advance\labelwidth-\labelsep
+  \topsep=2\p@\@plus\p@\@minus\p@
+  \parsep=\p@\@plus\p@\@minus\p@
+  \itemsep=\parsep
+  \listparindent=1em
+  }
+
+\def\@listiii{%
+  \leftmargin=\leftmarginiii
+  \labelwidth=\leftmarginiii \advance\labelwidth-\labelsep
+  \topsep=\p@\@plus\p@\@minus\p@
+  \parsep=\z@
+  \itemsep=\topsep
+  \listparindent=1em
+  }
+\def\quote{\list{}{\rightmargin.5\leftmargin}\item[]}
+%    \end{macrocode}
+% From Dominik Wujastyk's font article.  First paragraph of a quotation
+% will not be indented, and right margin is decreased for narrow columns.
+%    \begin{macrocode}
+\renewcommand{\quotation}{\list{}{\listparindent 1.5em
+     \rightmargin.5\leftmargin\parsep \z@\@plus\p@}\item[]}
+%    \end{macrocode}
+%
+% \subsection{Some fun with \texttt{verbatim}}
+%
+% The |plain| \TUB{} style allows \verb|[optional]| arguments to its
+% \cs{verbatim} command.  This will allow the author (or editor) to
+% specify a range of exciting features; we would definitely like the
+% numbered verbatim style for code (that facility is reserved for a
+% future version of this package), and the present little bit of code
+% imposes the \cs{ruled} option on the built-in \textsf{verbatim}
+% environment.  (Note that we don't yet deal with
+% \textsf{verbatim}$*$, which is in itself an option to the |plain|
+% original.)
+%
+% We start by saving various bits and bobs whose operation we're going
+% to subvert.
+%
+%    \begin{macrocode}
+%\let\@TB@verbatim\@verbatim
+\let\@TBverbatim\verbatim
+\let\@TBendverbatim\endverbatim
+%    \end{macrocode}
+%
+% Impose an optional argument on the environment.
+% 
+% We start the macro with \cs{par} to avoid a common error: if the
+% optional argument is \cs{small}, and the document has no blank line
+% before the verbatim block, we don't want that preceding paragraph to
+% be set with \cs{small}'s line spacing.
+%
+% (\cs{obeylines} added to prevent the \cs{futurelet} from propagating
+% into the body of the verbatim, thus causing lines that start with
+% odd characters (like |#| or even |\|) to behave peculiarly.)
+%    \begin{macrocode}
+\def\verbatim{\par\obeylines
+  \futurelet\reserved@a\@switch@sqbverbatim}
+\def\@switch@sqbverbatim{\ifx\reserved@a[%]
+  \expandafter\@sqbverbatim\else
+  \def\reserved@b{\@sqbverbatim[]}\expandafter\reserved@b\fi}
+\def\@sqbverbatim[#1]{%
+%    \end{macrocode}
+%
+% The optional argument consists entirely of functions that modify the
+% appearance of the environment.  Following the |plain| style, we
+% define the functions we can execute in the optional argument here.
+%
+% The command \cs{ruled} tells us that there should be rules above and
+% below the verbatim block.
+%
+%    \begin{macrocode}
+  \def\ruled{\let\if@ruled\iftrue}%
+%    \end{macrocode}
+%
+% Then we just execute the ones we've got, and relay to a (hacked)
+% copy of the built-in environment.
+%
+%    \begin{macrocode}
+  #1\@TBverbatim}
+%    \end{macrocode}
+%
+% The built-in environment itself relays to \cs{@verbatim}, which
+% we've subverted to impose our views on appearance.
+%
+%    \begin{macrocode}
+\def\@verbatim{%
+%    \end{macrocode}
+%
+% First, we deal with \cs{ruled}:
+%
+%    \begin{macrocode}
+    \if@ruled\trivlist\item\hrule\kern5\p@\nobreak\fi
+%    \end{macrocode}
+%
+% Now, the code out of the original \textsf{verbatim} environment:
+%
+%    \begin{macrocode}
+  \trivlist \item\relax
+  \if@minipage\else\vskip\parskip\fi
+  \leftskip\@totalleftmargin\rightskip\z@skip
+  \parindent\z@\parfillskip\@flushglue\parskip\z@skip
+  \@@par
+  \@tempswafalse
+  \def\par{%
+    \if@tempswa
+      \leavevmode \null \@@par\penalty\interlinepenalty
+    \else
+      \@tempswatrue
+      \ifhmode\@@par\penalty\interlinepenalty\fi
+    \fi}%
+  \obeylines \verbatim@font \@noligs
+  \let\do\@makeother \dospecials
+  \everypar \expandafter{\the\everypar \unpenalty}%
+}%
+%    \end{macrocode}
+%
+% To end the environment, we do everything in reverse order: relay via
+% the copy we made of \cs{endverbatim}, and then finish off the option
+% changes (again \cs{ruled} only, so far).
+%
+%    \begin{macrocode}
+\def\endverbatim{\@TBendverbatim
+  \if@ruled\kern5\p@\hrule\endtrivlist\fi}
+%    \end{macrocode}
+%
+% \cs{enablemetacode} simply typesets\footnote{Or will simply typeset,
+%   when we get around to implementation proper} something that looks
+% (verbatim) like:
+%
+% \verb|   <meta-text>|
+%
+% \noindent as:
+%
+% \verb|   |\ensuremath{\langle}\textit{meta-text}\ensuremath{\rangle}
+%
+%    \begin{macrocode}
+{\makeactive<
+  \gdef<#1>{{\reset@font\ensuremath{\langle}%
+    \textit{#1}%
+    \ensuremath{\rangle}}}
+}
+%    \end{macrocode}
+%
+% Finally, we define the \cs{if} used by the \cs{ruled} option
+%
+%    \begin{macrocode}
+\let\if@ruled\iffalse
+%    \end{macrocode}
+%
+% \subsection{Bibliography}
+% \label{sec:citations}
+% This is more or less copied verbatim from Glenn Paulley's 
+% \emph{chicago.sty} (\texttt{gnpaulle@\penalty0 bluebox.\penalty0
+% uwaterloo.\penalty0 ca}).
+% It produces an author-year citation style bibliography, using
+% output from the \BibTeX\ style file based on that by
+% Patrick Daly. It needs extra macros beyond those in standard
+% \LaTeX\ to function properly.
+% The form of the bibitem entries is:
+% \begin{verbatim}
+%   \bibitem[\protect\citeauthoryear{Jones, Baker, and Smith}
+%        {Jones et al.}{1990}{key}...
+% \end{verbatim}
+% The available citation commands are:
+%
+% \begin{tabular}{ll}
+%    \verb|\cite{key}| & $\rightarrow$     (Jones, Baker, and Smith 1990)\\
+%    \verb|\citeA{key}| & $\rightarrow$    (Jones, Baker, and Smith)\\
+%    \verb|\citeNP{key}| & $\rightarrow$   Jones, Baker, and Smith 1990\\
+%    \verb|\citeANP{key}| & $\rightarrow$  Jones, Baker, and Smith\\
+%    \verb|\citeN{key}| & $\rightarrow$    Jones, Baker, and Smith (1990)\\
+%    \verb|\shortcite| & $\rightarrow$    (Jones et al.~1990)\\
+%    \verb|\citeyear| & $\rightarrow$      (1990)\\
+%    \verb|\citeyearNP| & $\rightarrow$    1990\\
+% \end{tabular}
+%
+% First of all (after checking that we're to use Harvard citation at
+% all), make a copy of \LaTeX's default citation mechanism.
+%
+%    \begin{macrocode}
+\if@Harvardcite
+\let\@internalcite\cite
+%    \end{macrocode}
+% Normal forms.
+%    \begin{macrocode}
+\def\cite{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{(##1\if@tempswa , ##2\fi)}%
+    \def\citeauthoryear##1##2##3{##1, ##3}\@internalcite}
+\def\citeNP{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{##1\if@tempswa , ##2\fi}%
+    \def\citeauthoryear##1##2##3{##1, ##3}\@internalcite}
+\def\citeN{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{##1\if@tempswa , ##2)\else{)}\fi}%
+    \def\citeauthoryear##1##2##3{##1 (##3}\@citedata}
+\def\citeA{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{(##1\if@tempswa , ##2\fi)}%
+    \def\citeauthoryear##1##2##3{##1}\@internalcite}
+\def\citeANP{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{##1\if@tempswa , ##2\fi}%
+    \def\citeauthoryear##1##2##3{##1}\@internalcite}
+%    \end{macrocode}
+% Abbreviated forms (using \emph{et al.})
+%    \begin{macrocode}
+\def\shortcite{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{(##1\if@tempswa , ##2\fi)}%
+    \def\citeauthoryear##1##2##3{##2, ##3}\@internalcite}
+\def\shortciteNP{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{##1\if@tempswa , ##2\fi}%
+    \def\citeauthoryear##1##2##3{##2, ##3}\@internalcite}
+\def\shortciteN{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{##1\if@tempswa , ##2)\else{)}\fi}%
+    \def\citeauthoryear##1##2##3{##2 (##3}\@citedata}
+\def\shortciteA{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{(##1\if@tempswa , ##2\fi)}%
+    \def\citeauthoryear##1##2##3{##2}\@internalcite}
+\def\shortciteANP{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{##1\if@tempswa , ##2\fi}%
+    \def\citeauthoryear##1##2##3{##2}\@internalcite}
+%    \end{macrocode}
+% When just the  year is needed:
+%    \begin{macrocode}
+\def\citeyear{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{(##1\if@tempswa , ##2\fi)}%
+    \def\citeauthoryear##1##2##3{##3}\@citedata}
+\def\citeyearNP{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{##1\if@tempswa , ##2\fi}%
+    \def\citeauthoryear##1##2##3{##3}\@citedata}
+%    \end{macrocode}
+% Place commas in-between citations in the same |\citeyear|, |\citeyearNP|,
+% |\citeN|, or |\shortciteN| command.
+% Use something like |\citeN{ref1,ref2,ref3}| and |\citeN{ref4}| for a list.
+%
+%    \begin{macrocode}
+\def\@citedata{%
+        \@ifnextchar [{\@tempswatrue\@citedatax}%
+                                  {\@tempswafalse\@citedatax[]}%
+}
+
+\def\@citedatax[#1]#2{%
+\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi%
+  \def\@citea{}\@cite{\@for\@citeb:=#2\do%
+    {\@citea\def\@citea{, }\@ifundefined% by Young
+       {b@\@citeb}{{\bf ?}%
+       \@warning{Citation `\@citeb' on page \thepage \space undefined}}%
+{\csname b@\@citeb\endcsname}}}{#1}}%
+%    \end{macrocode}
+% Don't box citations, separate with ; and a space;
+% Make the penalty between citations negative: a good place to break.
+%    \begin{macrocode}
+\def\@citex[#1]#2{%
+\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi%
+  \def\@citea{}\@cite{\@for\@citeb:=#2\do%
+    {\@citea\def\@citea{; }\@ifundefined% by Young
+       {b@\@citeb}{{\bf ?}%
+       \@warning{Citation `\@citeb' on page \thepage \space undefined}}%
+{\csname b@\@citeb\endcsname}}}{#1}}%
+%    \end{macrocode}
+% No labels in the bibliography.
+%    \begin{macrocode}
+\def\@biblabel#1{}
+%    \end{macrocode}
+% Set length of hanging indentation for bibliography entries.
+%    \begin{macrocode}
+\newlength{\bibhang}
+\setlength{\bibhang}{2em}
+%    \end{macrocode}
+% Indent second and subsequent lines of bibliographic entries. Stolen
+% from openbib.sty: |\newblock| is set to |{}|.
+%    \begin{macrocode}
+\newdimen\bibindent
+\bibindent=1.5em
+\@ifundefined{refname}%
+   {\newcommand{\refname}{References}}%
+   {}%
+%    \end{macrocode}
+%
+% For safety's sake, suppress the \cs{TB@startsection} warnings
+% here\dots
+%
+%    \begin{macrocode}
+\def\thebibliography#1{%
+  \let\TB@startsection\TB@safe@startsection
+  \section*{\refname
+    \@mkboth{\uppercase{\refname}}{\uppercase{\refname}}}%
+  \list{[\arabic{enumi}]}{%
+    \labelwidth\z@ \labelsep\z@
+    \leftmargin\bibindent
+    \itemindent -\bibindent
+    \listparindent \itemindent
+    \parsep \z@
+    \usecounter{enumi}}
+  \def\newblock{}
+  \BibJustification
+  \sfcode`\.=1000\relax
+}
+%    \end{macrocode}
+%
+% \begin{macro}{etal}
+% \begin{macro}{\bibentry}
+% Other bibliography odds and ends.
+%    \begin{macrocode}
+\def\etal{et\,al.\@}
+\def\bibentry{%
+  \smallskip
+  \hangindent=\parindent
+  \hangafter=1
+  \noindent
+  \sloppy
+  \clubpenalty500 \widowpenalty500
+  \frenchspacing
+}
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+%
+% \begin{macro}{\bibliography}
+% \begin{macro}{\bibliographystyle}
+% Changes made to accommodate TUB file naming conventions
+%    \begin{macrocode}
+\def\bibliography#1{%
+  \if@filesw
+    \immediate\write\@auxout{\string\bibdata{\@tubfilename{#1}}}%
+  \fi
+  \@input{\jobname.bbl}%
+}
+\def\bibliographystyle#1{%
+  \if@filesw
+    \immediate\write\@auxout{\string\bibstyle{\@tubfilename{#1}}}%
+  \fi
+}
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+%
+% \begin{macro}{\thebibliography}
+% \begin{macro}{\TB@@thebibliography}
+% If the user's asked to use \LaTeX's default citation mechanism
+% (using the |rawcite| option), we still need to play with
+% \cs{TB@startsection}: this is a boring fact of life\dots
+%
+% We also patch \cs{sloppy} in case there's a need for alternative
+% justification of the body of the bibliography.
+%    \begin{macrocode}
+\else
+\let\TB@@thebibliography\thebibliography
+\def\thebibliography{%
+  \let\TB@startsection\TB@safe@startsection
+  \let\sloppy\BibJustification
+  \TB@@thebibliography}
+\fi
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+%
+% \begin{macro}{\BibJustification}
+% \begin{macro}{\SetBibJustification}
+% \begin{macro}{\TB@@sloppy}
+% \cs{BibJustification} defines how the bibliography is to be
+% justified.  The Lamport default is simply ``\cs{sloppy}'', but we
+% regularly find some sort of ragged right setting is appropriate.
+% (\cs{BibJustification} is nevertheless reset to its default value at
+% the start of a paper.)
+%    \begin{macrocode}
+\let\TB@@sloppy\sloppy
+\let\BibJustification\TB@@sloppy
+\newcommand{\SetBibJustification}[1]{%
+  \renewcommand{\BibJustification}{#1}%
+}
+\ResetCommands\expandafter{\the\ResetCommands
+  \let\BibJustification\TB@@sloppy
+}
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+%
+% \subsection{Registration marks}
+%
+%    \begin{macrocode}
+\def\HorzR@gisterRule{\vrule \@height 0.2\p@ \@depth\z@ \@width 0.5in }
+\def\DownShortR@gisterRule{\vrule \@height 0.2\p@ \@depth 1pc \@width 0.2\p@ }
+\def\UpShortR@gisterRule{\vrule \@height 1pc \@depth\z@ \@width 0.2\p@ }
+%    \end{macrocode}
+%
+% ``T'' marks centered on top and bottom edges of paper
+%
+%    \begin{macrocode}
+\def\ttopregister{\dlap{%
+        \hb@xt@\trimwd{\HorzR@gisterRule \hfil \HorzR@gisterRule
+                        \HorzR@gisterRule \hfil \HorzR@gisterRule}%
+        \hb@xt@\trimwd{\hfil \DownShortR@gisterRule \hfil}}}
+\def\tbotregister{\ulap{%
+        \hb@xt@\trimwd{\hfil \UpShortR@gisterRule \hfil}%
+        \hb@xt@\trimwd{\HorzR@gisterRule \hfil \HorzR@gisterRule
+                        \HorzR@gisterRule \hfil \HorzR@gisterRule}}}
+\def\topregister{\ttopregister}
+\def\botregister{\tbotregister}
+%    \end{macrocode}
+%
+% \subsection{Running heads}
+%
+%    \begin{macrocode}
+\def \rtitlex{\def\texttub##1{{\normalsize\textrm{##1}}}\TUB, \volx }
+\def\PrelimDraftfooter{%
+  \dlap{\kern\textheight\kern3pc
+        \rlap{\hb@xt@\pagewd{\midrtitle\hfil\midrtitle}}
+  }}
+
+%    \end{macrocode}
+% registration marks; these are temporarily inserted in the running head
+%    \begin{macrocode}
+\def\MakeRegistrationMarks{}
+\def\UseTrimMarks{%
+  \def\MakeRegistrationMarks{%
+    \ulap{\rlap{%
+       \vbox{\dlap{\vbox to\trimlgt{\vfil\botregister}}%
+             \topregister\vskip \headmargin \vskip 10\p@}}}}%
+  }
+
+\def\@oddhead{\MakeRegistrationMarks\PrelimDraftfooter
+  \normalsize\csname normalshape\endcsname\rm
+  \rtitlex\qquad\midrtitle \hfil \thepage}
+\def\@evenhead{\MakeRegistrationMarks\PrelimDraftfooter
+  \normalsize\csname normalshape\endcsname\rm
+  \thepage\hfil\midrtitle\qquad\rtitlex}
+\def\@oddfoot{}
+\def\@evenfoot{}
+\def\ps@headings{}
+\pagestyle{headings}
+%    \end{macrocode}
+% \subsection{Output routine}
+% Modified to alter |\brokenpenalty| across columns
+%
+% \begin{description}
+% \item[\emph{Comment}] We're playing with fire here: for example,
+%   \cs{@outputdblcol} has changed in \LaTeXe{} for 1995/06/01 (with the
+%   use of \cs{hb@xt@}).  \emph{This} time there's no semantic change,
+%   but\dots
+% \end{description}
+%    \begin{macrocode}
+\def\@outputdblcol{\if@firstcolumn \global\@firstcolumnfalse
+    \global\setbox\@leftcolumn\box\@outputbox
+    \global\brokenpenalty10000
+  \else \global\@firstcolumntrue
+    \global\brokenpenalty100
+    \setbox\@outputbox\vbox{\hb@xt@\textwidth{\hb@xt@\columnwidth
+      {\box\@leftcolumn \hss}\hfil \vrule \@width\columnseprule\hfil
+       \hb@xt@\columnwidth{\box\@outputbox \hss}}}\@combinedblfloats
+       \@outputpage \begingroup \@dblfloatplacement \@startdblcolumn
+       \@whilesw\if@fcolmade \fi{\@outputpage\@startdblcolumn}\endgroup
+    \fi}
+%    \end{macrocode}
+% 
+% \subsection{Font-related definitions and machinery}
+% These are mostly for compatibility with plain |tugboat.sty|
+%    \begin{macrocode}
+\newif\ifFirstPar       \FirstParfalse
+\def\smc{\sc}
+\def\ninepoint{\small}
+%</classtail>
+%    \end{macrocode}
+%
+% \cs{SMC} \emph{isn't} small caps~--- Barbara Beeton says she thinks
+% of it as ``big small caps''.  She says (modulo capitalisation of
+% things\dots):
+% \begin{quote}
+%   For the things it's used for, regular small caps are not
+%   appropriate~--- they're too small.  Real small caps are
+%   appropriate for author names (and are so used in continental
+%   bibliographies), section headings, running heads, and, on
+%   occasion, words to which some emphasis is to be given.  \cs{SMC}
+%   was designed to be used for acronyms and all-caps abbreviations,
+%   which look terrible in small caps, but nearly as bad in all caps
+%   in the regular text size.  The principle of using ``one size
+%   smaller'' than the text size is similar to the design of caps in
+%   German~--- where they are smaller relative to lowercase than are
+%   caps in fonts intended for English, to improve the appearance of
+%   regular text in which caps are used at the heads of all nouns, not
+%   just at the beginnings of sentences.
+% \end{quote}
+%
+% We define this in terms of the memory of the size currently selected
+% that's maintained in \cs{@currsize}: if the user does something
+% silly re.~selecting fonts, we'll get the wrong results.  The
+% following code is adapted from an old version of |relsize.sty| by
+% Donald Arseneau and Matt Swift.   (Note that the
+% order of examination of \cs{@currsize} is to get the commonest cases
+% out of the way first.)
+%    \begin{macrocode}
+%<*common>
+\DeclareRobustCommand\SMC{%
+  \ifx\@currsize\normalsize\small\else
+   \ifx\@currsize\small\footnotesize\else
+    \ifx\@currsize\footnotesize\scriptsize\else
+     \ifx\@currsize\large\normalsize\else
+      \ifx\@currsize\Large\large\else
+       \ifx\@currsize\LARGE\Large\else
+        \ifx\@currsize\scriptsize\tiny\else
+         \ifx\@currsize\tiny\tiny\else
+          \ifx\@currsize\huge\LARGE\else
+           \ifx\@currsize\Huge\huge\else
+            \small\SMC@unknown@warning
+ \fi\fi\fi\fi\fi\fi\fi\fi\fi\fi
+}
+\newcommand\SMC@unknown@warning{\TBWarning{\string\SMC: nonstandard
+    text font size command -- using \string\small}}
+\newcommand\textSMC[1]{{\SMC #1}}
+%    \end{macrocode}
+%
+% The \cs{acro} command uses \cs{SMC} as it was originally intended.
+% Note that, since most of these things are uppercase-only names, it
+% fiddles with the spacefactor after inserting its text.
+%
+%    \begin{macrocode}
+\newcommand\acro[1]{\textSMC{#1}\@}
+%</common>
+%    \end{macrocode}
+%
+% \subsection{Miscellaneous definitions}
+%
+% \cs{EdNote} allows the editor to enter notes in the text of a paper.
+% If the command is given something that appears like an optional
+% argument, the entire text of the note is placed in square brackets.
+% (Yes, it really is!)
+%
+%    \begin{macrocode}
+%<*classtail>
+\def\xEdNote{{\EdNoteFont Editor's note:\enspace }}
+\def \EdNote{\@ifnextchar[%]
+  {%
+    \ifvmode
+      \smallskip\noindent\let\@EdNote@\@EdNote@v
+    \else
+      \unskip\quad\def\@EdNote@{\unskip\quad}%
+    \fi
+    \@EdNote
+  }%
+  \xEdNote
+}
+\long\def\@EdNote[#1]{%
+  [\thinspace\xEdNote\ignorespaces
+   #1%
+   \unskip\thinspace]%
+  \@EdNote@
+}
+\def\@EdNote@v{\par\smallskip}
+%    \end{macrocode}
+%  Macros for Mittelbach's self-documenting style
+%    \begin{macrocode}
+\def\SelfDocumenting{%
+  \setlength\textwidth{31pc}
+  \onecolumn
+  \parindent \z@
+  \parskip 2\p@\@plus\p@\@minus\p@
+  \oddsidemargin 8pc
+  \evensidemargin 8pc
+  \marginparwidth 8pc
+  \toks@\expandafter{\@oddhead}%
+  \xdef\@oddhead{\hss\hb@xt@\pagewd{\the\toks@}}%
+  \toks@\expandafter{\@evenhead}%
+  \xdef\@evenhead{\hss\hb@xt@\pagewd{\the\toks@}}%
+  \def\ps@titlepage{}%
+}
+\def\ps@titlepage{}
+
+\long\def\@makefntext#1{\parindent 1em\noindent\hb@xt@2em{}%
+  \llap{\@makefnmark}\null$\mskip5mu$#1}
+
+%% \long\def\@makefntext#1{\parindent 1em
+%%   \noindent
+%%   \hb@xt@2em{\hss\@makefnmark}%
+%%   \hskip0.27778\fontdimen6\textfont\z@\relax
+%%   #1%
+%% }
+%    \end{macrocode}
+%
+% \begin{macro}{\creditfootnote}
+% \begin{macro}{\supportfootnote}
+% Sometimes we want the label ``Editor's Note:'', sometimes not.
+% 
+%    \begin{macrocode}
+\def\creditfootnote{\nomarkfootnote\xEdNote}
+\def\supportfootnote{\nomarkfootnote\relax}
+%    \end{macrocode}
+%
+% General macro \cs{nomarkfootnote} to make a footnote without a
+% reference mark, etc.  |#1| is an extra command to insert, |#2| the
+% user's text.
+%    \begin{macrocode}
+\gdef\nomarkfootnote#1#2{\begingroup
+  \def\thefootnote{}%
+  % no period, please, also no fnmark.
+  \def\@makefntext##1{##1}%
+  \footnotetext{\noindent #1#2}%
+  \endgroup
+}
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+%
+%
+% \subsection{Initialization}
+%
+% If we're going to use Harvard-style bibliographies, we set up the
+% bibliography style: the user doesn't get any choice.
+%
+%    \begin{macrocode}
+\if@Harvardcite
+  \AtBeginDocument{%
+    \bibliographystyle{ltugbib}%
+  }
+\fi
+\authornumber\z@
+\let\@signature\@defaultsignature
+\InputIfFileExists{ltugboat.cfg}{\TBInfo{Loading ltugboat
+                                           configuration information}}{}
+%</classtail>
+%    \end{macrocode}
+%
+% \section{\protect\LaTeXe\ Proceedings class}
+%
+% \begin{macro}{\@tugclass}
+% Make the code of |ltugboat.cls| (when we load it) say it's really
+% us:
+%
+%    \begin{macrocode}
+%<*ltugproccls>
+\def\@tugclass{ltugproc}
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\if@proctw@column}
+% For the case where we're preparing the preprints, we may not have
+% been able to prepare submissions for typesetting in two columns.  In
+% this case, therefore, we may need the option |onecolumn|, that will
+% suppress the use of twocolumn setting within the article.
+%
+%    \begin{macrocode}
+\newif\if@proctw@column  \@proctw@columntrue
+\DeclareOption{onecolumn}{\@proctw@columnfalse}
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\if@proc@sober}
+% \begin{macro}{\if@proc@numerable}
+% ^^A\acro
+% {TUG}'96 proceedings switched to more sober headings still; so
+% the \textsf{tug95} option establishes the original state.  In the
+% absence of any other guidance, we use the '96 for
+% ^^A\acro
+% {TUG}'97 proceedings, but also allow numbering of sections.
+%
+%    \begin{macrocode}
+\newif\if@proc@sober
+\newif\if@proc@numerable
+\DeclareOption{tug95}{%
+  \@proc@soberfalse
+  \@proc@numerablefalse
+}
+\DeclareOption{tug96}{%
+  \@proc@sobertrue
+  \@proc@numerablefalse
+}
+\DeclareOption{tug97}{%
+  \@proc@sobertrue
+  \@proc@numerabletrue
+}
+\DeclareOption{tug2002}{%
+  \@proc@sobertrue
+  \@proc@numerabletrue
+  \let\if@proc@numbersec\iftrue
+  \PassOptionsToClass{numbersec}{ltugboat}%
+}
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+%
+% \begin{macro}{\if@proc@numbersec}
+% If we're in a class that allows section numbering (the actual check
+% occurs after \cs{ProcessOptions}, we can have the
+% following:
+%    \begin{macrocode}
+\DeclareOption{numbersec}{\let\if@proc@numbersec\iftrue
+  \PassOptionsToClass{numbersec}{ltugboat}%
+}
+\DeclareOption{nonumber}{\let\if@proc@numbersec\iffalse
+  \PassOptionsToClass{nonumber}{ltugboat}%
+}
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\ifTB@title}
+% If we have a paper for which we want to create a detached title,
+% with an editor's note, and then set the paper separately, we use
+% option notitle.
+%    \begin{macrocode}
+\newif\ifTB@title
+\DeclareOption{title}{\TB@titletrue}
+\DeclareOption{notitle}{\TB@titlefalse
+  \AtBeginDocument{\stepcounter{page}}}
+%    \end{macrocode}
+% \end{macro}
+%
+% There are these people who seem to think |tugproc| is an option as
+% well as a class\dots
+%
+%    \begin{macrocode}
+\DeclareOption{tugproc}{%
+  \ClassWarning{\@tugclass}{Option \CurrentOption\space ignored}%
+}
+%    \end{macrocode}
+%
+% All other options are simply passed to |ltugboat|\dots
+%
+%    \begin{macrocode}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{ltugboat}}
+%    \end{macrocode}
+%
+% If there's a \textsf{tugproc} defaults file, input it now: it may
+% tell us which year we're to perform for\dots  (Note: this code
+% \emph{is} millenium-proof.  It's not terribly classy for years
+% beyond 2069, but then I'm not going to be around then---this will be
+% an interesting task for a future \TeX{}ie\dots)
+%
+%    \begin{macrocode}
+\InputIfFileExists{\@tugclass.cfg}{\ClassInfo{ltugproc}%
+           {Loading ltugproc configuration information}}{}
+\@ifundefined{TUGprocExtraOptions}%
+   {\let\TUGprocExtraOptions\@empty}%
+   {\edef\TUGprocExtraOptions{,\TUGprocExtraOptions}}
+%    \end{macrocode}
+%
+% \begin{macro}{\tugProcYear}
+% Now work out what year it is
+%    \begin{macrocode}
+\@tempcnta\year
+\ifnum\@tempcnta<2000
+  \divide\@tempcnta by100
+  \multiply\@tempcnta by100
+  \advance\@tempcnta-\year
+  \@tempcnta-\@tempcnta
+\fi
+%    \end{macrocode}
+%
+% And use that for calculating a year for us to use.
+%
+%    \begin{macrocode}
+\edef\@tempa{\noexpand\providecommand\noexpand\tugProcYear
+                {\ifnum10>\@tempcnta0\fi\the\@tempcnta}}
+\@tempa
+\ClassInfo{ltugproc}{Class believes year is
+  \expandafter\ifnum\tugProcYear<2000 19\fi\tugProcYear
+    \@gobble}
+%    \end{macrocode}
+%
+% Check that this is a ``sensible year'' (one for which we have a
+% class option defined).  If not, make it a `suitable' year, in
+% particular, one that allows numbering sections.
+%    \begin{macrocode}
+\expandafter\ifx\csname ds@tug\tugProcYear\endcsname\relax
+  \def\tugProcYear{2002}\fi
+%    \end{macrocode}
+% \end{macro}
+% 
+% Now execute the default `year' option and get on with processing.
+% Note that this command gets ignored if the configuration file
+% specifies a silly year. 
+%
+%    \begin{macrocode}
+\ExecuteOptions{tug\tugProcYear,title\TUGprocExtraOptions}
+\ProcessOptions
+\if@proc@numbersec
+  \if@proc@numerable
+  \else
+    \ClassWarning{\@tugclass}{This year's proceedings may not have
+      numbered sections}%
+  \fi
+\fi
+%    \end{macrocode}
+%
+% Call \textsf{ltugboat}, adding whichever section numbering option is
+% appropriate
+%    \begin{macrocode}
+\LoadClass[\if@proc@numbersec numbersec\else nonumber\fi]{ltugboat}
+%    \end{macrocode}
+%
+% \subsection{Proceedings titles}
+%
+% \begin{macro}{\maketitle}
+% \begin{macro}{\ifTB@madetitle}
+% There's no provision for `section titles' in proceedings issues, as
+% there are in \TUB{} proper.  Note the tedious \LaTeX{} bug-avoidance
+% in the \cs{@TB@test@document} macro.
+%
+%    \begin{macrocode}
+\def\maketitle{%
+  \begingroup
+%    \end{macrocode}
+%
+% first, a bit of flim-flam to generate an initial value for
+% \cs{rhAuthor} (unless the user's already given one with a
+% \cs{shortAuthor} comand).
+%    \begin{macrocode}
+    \ifshortAuthor\else
+      \global\let\rhAuthor\@empty
+      \def\g@addto@rhAuthor##1{%
+        \begingroup
+          \toks@\expandafter{\rhAuthor}%
+          \let\thanks\@gobble
+          \protected@xdef\rhAuthor{\the\toks@##1}%
+        \endgroup
+      }%
+      \@getauthorlist\g@addto@rhAuthor
+    \fi
+%    \end{macrocode}
+%
+% now, the real business of setting the title
+%    \begin{macrocode}
+    \ifTB@title
+      \setcounter{footnote}{0}%
+      \renewcommand\thefootnote{\@fnsymbol\c@footnote}%
+      \if@proctw@column
+        \twocolumn[\@maketitle]%
+      \else
+        \onecolumn
+        \global\@topnum\z@
+        \@maketitle
+      \fi
+      \@thanks
+      \thispagestyle{TBproctitle}
+    \fi
+  \endgroup
+  \TB@madetitletrue
+}
+\newif\ifTB@madetitle  \TB@madetitlefalse
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+%
+% \begin{macro}{\@TB@test@document}
+% \cs{@TB@test@document} checks to see, at entry to \cs{maketitle}, if
+% we've had \verb:\begin{document}:.  See \LaTeX{} bug report latex/2212,
+% submitted by Robin Fairbairns, for details.
+%    \begin{macrocode}
+\def\@TB@test@document{%
+  \edef\@tempa{\the\everypar}
+  \def \@tempb{\@nodocument}
+  \ifx \@tempa\@tempb
+    \@nodocument
+  \fi
+}
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\AUTHORfont}
+% \begin{macro}{\TITLEfont}
+% \begin{macro}{\addressfont}
+% \begin{macro}{\netaddrfont}
+% Define the fonts for titles and things
+%    \begin{macrocode}
+\def\AUTHORfont {\large\rmfamily\mdseries\upshape}
+\def\TITLEfont  {\Large\rmfamily\mdseries\upshape}
+\def\addressfont{\small\rmfamily\mdseries\upshape}
+\def\netaddrfont{\small\ttfamily\mdseries\upshape}
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+%
+% \begin{macro}{\aboveauthorskip}
+% \begin{macro}{\belowauthorskip}
+% \begin{macro}{\belowabstractskip}
+% Some stretchable stuff to permit variability in page layout.
+%    \begin{macrocode}
+\newskip\aboveauthorskip   \aboveauthorskip=18\p@ \@plus4\p@
+\newskip\belowauthorskip   \belowauthorskip=\aboveauthorskip
+\newskip\belowabstractskip \belowabstractskip=14\p@ \@plus3\p@ \@minus2\p@
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+%
+% \begin{macro}{\@maketitle}
+% The body of \cs{maketitle}
+%    \begin{macrocode}
+\def\@maketitle{%
+   {\parskip\z@
+    \frenchspacing
+    \TITLEfont\raggedright\noindent\@title\par
+      \count@=0
+      \loop
+      \ifnum\count@<\authornumber
+        \vskip\aboveauthorskip
+        \advance\count@\@ne
+        {\AUTHORfont\theauthor{\number\count@}\endgraf}%
+        \addressfont\theaddress{\number\count@}\endgraf
+        {%
+          \allowhyphens
+          \hangindent1.5pc
+          \netaddrfont\thenetaddress{\number\count@}\endgraf
+          \hangindent1.5pc
+          \thePersonalURL{\number\count@}\endgraf
+        }%
+      \repeat
+   \vskip\belowauthorskip}%
+   \if@abstract
+      \centerline{\bfseries Abstract}%
+      \vskip.5\baselineskip\rmfamily
+      \list{}{\listparindent20\p@
+         \itemindent\z@ \leftmargin4.875pc
+         \rightmargin\leftmargin \parsep \z@}\item[]\ignorespaces
+            \the\abstract@toks
+      \endlist\global\@ignoretrue
+   \fi
+   \vskip\belowabstractskip
+   \global\@afterindentfalse\aftergroup\@afterheading
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{description}
+% \item[\emph{Comment}] This is all very weird\dots why we (of all
+%   people) don't allow \cs{thanks} currently escapes me.
+% \end{description}
+%
+% This restriction simply removed 1998/01/09
+%
+%    \begin{macrocode}
+%\def\thanks#1{\@bsphack\TBWarning{\string\thanks\space
+%              is not supported}\@esphack}
+%    \end{macrocode}
+%
+% \begin{environment}{abstract}
+% \begin{macro}{\if@abstract}
+% \begin{macro}{\abstract@toks}
+% Save the contents of the abstract environment in the token register
+% \cs{abstract@toks}.  We need to do this, as otherwise it may get
+% `typeset' (previously, it got put in a box) before
+% |\begin{document}|, and experiments prove that this means our shiny
+% new \cs{SMC} doesn't work in this situation.
+%
+% If you need to understand the ins and outs of this code, look at the
+% place I lifted it from: |tabularx.dtx| (in the tools
+% bundle).  The whole thing pivots on having stored the name of the
+% `abstract' environment in \cs{@abstract@}
+%
+%    \begin{macrocode}
+\newtoks\abstract@toks  \abstract@toks{}
+\let\if@abstract\iffalse
+\def\abstract{%
+%    \end{macrocode}
+%
+% we now warn unsuspecting users who provide an \texttt{abstract}
+% environment \emph{after} the \cs{maketitle} that would typeset it\dots
+%    \begin{macrocode}
+  \ifTB@madetitle
+    \TBWarning{abstract environment after \string\maketitle}
+  \fi
+  \def\@abstract@{abstract}%
+  \ifx\@currenvir\@abstract@
+  \else
+    \TBError{\string\abstract\space is illegal:%
+      \MessageBreak
+      use \string\begin{\@abstract@} instead}%
+      {\@abstract@\space may only be used as an environment}
+  \fi
+  \global\let\if@abstract\iftrue
+  {\ifnum0=`}\fi
+  \@abstract@getbody}
+\let\endabstract\relax
+%    \end{macrocode}
+%
+% \cs{@abstract@getbody} gets chunks of the body (up to the next
+% occurrence of \cs{end}) and appends them to \cs{abstract@toks}.  It
+% then uses \cs{@abstract@findend} to detect whether this \cs{end} is
+% followed by \verb|{abstract}|
+%
+%    \begin{macrocode}
+\long\def\@abstract@getbody#1\end{%
+  \global\abstract@toks\expandafter{\the\abstract@toks#1}%
+  \@abstract@findend}
+%    \end{macrocode}
+%
+% Here we've got to \cs{end} in the body of the abstract.
+% \cs{@abstract@findend} takes the `argument' of the \cs{end} do its
+% argument.
+%
+%    \begin{macrocode}
+\def\@abstract@findend#1{%
+  \def\@tempa{#1}%
+%    \end{macrocode}
+%
+% If we've found an `end' to match the `begin' that we started with,
+% we're done with gathering the abstract up; otherwise we stuff the
+% end itself into the token register and carry on.
+%
+%    \begin{macrocode}
+  \ifx\@tempa\@abstract@
+    \expandafter\@abstract@end
+  \else
+%    \end{macrocode}
+%
+% It's not \cs{end}|{abstract}| --- check that it's not
+% \cs{end}|{document}| either (which signifies that the author's
+% forgotten about ending the abstract)
+%    \begin{macrocode}
+    \def\@tempb{document}%
+    \ifx\@tempa\@tempb
+      \TBError{\string\begin{\@abstract@}
+          ended by \string\end{\@tempb}}%
+        {You've forgotten \string\end{\@abstract@}}
+    \else
+       \global\abstract@toks\expandafter{\the\abstract@toks\end{#1}}%
+       \expandafter\expandafter\expandafter\@abstract@getbody
+    \fi
+  \fi}
+%    \end{macrocode}
+%
+% In our case, the action at the `proper' \cs{end} is a lot simpler
+% than what appears in |tabularx.dtx| \dots{} don't be surprised!
+%
+%    \begin{macrocode}
+\def\@abstract@end{\ifnum0=`{\fi}%
+  \expandafter\end\expandafter{\@abstract@}}
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% \end{environment}
+%
+% \begin{macro}{\makesignature}
+% \cs{makesignature} is improper in proceedings, so we replace it with a
+% warning (and a no-op otherwise)
+%    \begin{macrocode}
+\renewcommand{\makesignature}{\TBWarning
+         {\string\makesignature\space is invalid in proceedings issues}}
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\title}
+% \begin{macro}{\TB@title}
+% We redefine the \cs{title} command, so as to set the \cs{rhTitle}
+% command at the same time.  While we're at it, we redefine it to have
+% optional arguments for use as `short' versions, thus obviating the
+% need for users to use the \cs{shortTitle} command.
+%    \begin{macrocode}
+\renewcommand\title{\@dblarg\TB@title}
+\def\TB@title[#1]#2{\gdef\@title{#2}%
+  \bgroup
+    \let\thanks\@gobble
+    \let\\\ %
+    \protected@xdef\rhTitle{#1}%
+  \egroup
+}
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+%
+% \begin{macro}{\shortTitle}
+% \begin{macro}{\ifshortAuthor}
+% \begin{macro}{\shortAuthor}
+% The \cs{rh*} commands are versions to be used in the running head of
+% the article.  Normally, they are the same things as the author and 
+% title of the article, but in the case that there are confusions
+% therein, the text should provide substitutes, using the \cs{short*}
+% commands.
+%    \begin{macrocode}
+\def\shortTitle #1{\def\rhTitle{#1}}
+\newif\ifshortAuthor
+\def\shortAuthor #1{\def\rhAuthor{#1}\shortAuthortrue}
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+%
+% \begin{macro}{\ps@TBproctitle}
+% \begin{macro}{\ps@TBproc}
+% \begin{macro}{\dopagecommands}
+% \begin{macro}{\setpagecommands}
+% \begin{macro}{\TB@definefeet}
+% \begin{macro}{\pfoottext}
+% \begin{macro}{\rfoottext}
+% Now we define the running heads in terms of the \cs{rh*} commands.
+%    \begin{macrocode}
+\def\ps@TBproctitle{\let\@oddhead\MakeRegistrationMarks
+  \let\@evenhead\MakeRegistrationMarks
+  \TB@definefeet
+}
+\def\ps@TBproc{%
+  \def\@oddhead{\MakeRegistrationMarks
+    {%
+      \hfil
+      \def\\{\unskip\ \ignorespaces}%
+      \rmfamily\rhTitle
+    }%
+  }%
+  \def\@evenhead{\MakeRegistrationMarks
+    {%
+      \def\\{\unskip\ \ignorespaces}%
+      \rmfamily\rhAuthor
+      \hfil
+    }%
+  }%
+  \TB@definefeet
+}
+
+\advance\footskip8\p@    % for deeper running feet
+
+\def\dopagecommands{\csname @@pagecommands\number\c@page\endcsname}
+\def\setpagecommands#1#2{\expandafter\def\csname @@pagecommands#1\endcsname
+  {#2}}
+\def\TB@definefeet{%
+  \def\@oddfoot{\ifpreprint\pfoottext\hfil\Now\hfil\thepage
+    \else\rfoottext\hfil\thepage\fi\dopagecommands}%
+  \def\@evenfoot{\ifpreprint\thepage\hfil\Now\hfil\pfoottext
+    \else\thepage\hfil\rfoottext\fi\dopagecommands}%
+}
+
+\def\pfoottext{{\smc Preprint}: Proceedings of the \volyr{} Annual Meeting}
+\def\rfoottext{\normalfont\TUB, \volx\Dash 
+   {Proceedings of the \volyr{} Annual Meeting}}
+
+\pagestyle{TBproc}
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+% \end{macro}
+%
+% \subsection{Section divisions}
+%
+% Neither sections nor subsections are numbered by default in the
+% proceedings style: note that this puts a degree of stress on authors'
+% natural tendency to reference sections, which is a matter that needs
+% attention.  The class option \textsc{numbersec} once again numbers the
+% sections (and noticeably changes the layout).
+% 
+%    \begin{macrocode}
+\if@proc@numbersec
+\else
+  \setcounter{secnumdepth}{0}
+\fi
+%    \end{macrocode}
+%
+% Otherwise, the \cs{section} command is pretty straightforward.
+% However, the \cs{subsection} and \cs{subsubsection} are run-in, and
+% we have to remember to have negative stretch (and shrink if we
+% should in future choose to have one) on the \meta{afterskip}
+% parameter of \cs{@startsection}, since the whole skip is going to
+% end up getting negated.  We use \cs{TB@startsection} to detect
+% inappropriate forms.
+%
+%    \begin{macrocode}
+\if@proc@numbersec
+\else
+  \if@proc@sober
+    \def\section
+           {\TB@nolimelabel
+            \TB@startsection{{section}%
+                             1%
+                             \z@%
+                             {-8\p@\@plus-2\p@\@minus-2\p@}%
+                             {6\p@}%
+                             {\normalsize\bfseries\raggedright}}}
+  \else
+    \def\section
+           {\TB@nolimelabel
+            \TB@startsection{{section}%
+                             1%
+                             \z@%
+                             {-8\p@\@plus-2\p@\@minus-2\p@}%
+                             {6\p@}%
+                             {\large\bfseries\raggedright}}}
+  \fi
+  \def\subsection
+           {\TB@nolimelabel
+            \TB@startsection{{subsection}%
+                             2%
+                             \z@%
+                             {6\p@\@plus 2\p@\@minus2\p@}%
+                             {-5\p@\@plus -\fontdimen3\the\font}%
+                             {\normalsize\bfseries}}}
+  \def\subsubsection
+           {\TB@nolimelabel
+            \TB@startsection{{subsubsection}%
+                             3%
+                             \parindent%
+                             \z@%
+                             {-5\p@\@plus -\fontdimen3\the\font}%
+                             {\normalsize\bfseries}}}
+\fi
+%</ltugproccls>
+%    \end{macrocode}
+%
+% \section{Plain \TeX\ styles}
+%    \begin{macrocode}
+%<*tugboatsty>
+% err...
+%</tugboatsty>
+%<*tugprocsty>
+% err...
+%</tugprocsty>
+%    \end{macrocode}
+% \section{The \LaTeXe\ compatibility-mode style files}
+%    \begin{macrocode}
+%<*ltugboatsty>
+\@obsoletefile{ltugboat.cls}{ltugboat.sty}
+\LoadClass{ltugboat}
+%</ltugboatsty>
+%<*ltugprocsty>
+\@obsoletefile{ltugproc.cls}{ltugproc.sty}
+\LoadClass{ltugproc}
+%</ltugprocsty>
+%    \end{macrocode}
+%
+% \Finale
+%
+\endinput
+%
+%% \CharacterTable
+%%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%%   Digits        \0\1\2\3\4\5\6\7\8\9
+%%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%%   Dollar        \$     Percent       \%     Ampersand     \&
+%%   Acute accent  \'     Left paren    \(     Right paren   \)
+%%   Asterisk      \*     Plus          \+     Comma         \,
+%%   Minus         \-     Point         \.     Solidus       \/
+%%   Colon         \:     Semicolon     \;     Less than     \<
+%%   Equals        \=     Greater than  \>     Question mark \?
+%%   Commercial at \@     Left bracket  \[     Backslash     \\
+%%   Right bracket \]     Circumflex    \^     Underscore    \_
+%%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%%   Right brace   \}     Tilde         \~}

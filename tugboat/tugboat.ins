@@ -1,0 +1,91 @@
+% tugboat.ins
+%% This file will generate fast loadable files and documentation
+%% driver files from the doc files in this package when run through
+%% LaTeX or TeX.
+%%
+%% Copyright 1994,1995,1996,2001,2005,2006 TeX Users Group.
+%% 
+%% This file is part of the tugboat package.
+%% 
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%   http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%
+%% This work has the LPPL maintenance status "maintained".
+%% 
+%% The Current Maintainer of this work is the TeX Users Group
+%% (http://tug.org/TUGboat).
+%%
+%% The list of all files belonging to the distribution is
+%% given in the file `manifest.txt'. 
+%%
+%% The list of derived (unpacked) files belonging to the distribution 
+%% and covered by LPPL is defined by the unpacking scripts (with 
+%% extension .ins) which are part of the distribution.
+
+\def\batchfile{tugboat.ins}
+\input docstrip.tex
+
+\keepsilent
+\askforoverwritefalse
+
+\preamble
+
+This is a generated file.
+
+Copyright 1994,1995,1996,2001,2005,2006 TeX Users Group.
+
+It may be distributed and/or modified under the
+conditions of the LaTeX Project Public License, either version 1.3
+of this license or (at your option) any later version.
+The latest version of this license is in
+   http://www.latex-project.org/lppl.txt
+and version 1.3 or later is part of all distributions of LaTeX 
+version 2003/12/01 or later.
+
+This file has the LPPL maintenance status "maintained".
+
+The Current Maintainer of this work is the TeX Users Group
+(http://tug.org/TUGboat).
+
+The list of all files belonging to the distribution is given in the file
+`manifest.txt'.
+
+The list of derived (unpacked) files belonging to the distribution 
+and covered by LPPL is defined by the unpacking scripts (with 
+extension .ins) which are part of the distribution.
+
+\endpreamble
+
+\askforoverwritefalse
+
+\generate{\file{ltugboat.cls}{%
+ \from{tugboat.dtx}{latex,classtop,common,classtail,latex2e,ltugboatcls}}
+          \file{ltugproc.cls}{%
+                                         \from{tugboat.dtx}{ltugproccls}}
+          \file{ltugboat.sty}{%
+                                         \from{tugboat.dtx}{ltugboatsty}}
+          \file{ltugproc.sty}{%
+                                         \from{tugboat.dtx}{ltugprocsty}}
+          \file{ltugcomn.sty}{%
+                       \from{tugboat.dtx}{common,latex,latex2e,ltugcomn}}}
+
+\Msg{***********************************************************}
+\Msg{*}
+\Msg{* To finish the installation you have to move the following}
+\Msg{* files into a directory searched by TeX:}
+\Msg{* \space\space All *.sty and all *.cls}
+\Msg{*}
+\Msg{* Then move ltugbib.bst to a directory searched by BibTeX}
+\Msg{*}
+\Msg{* Preferred TDS locations:}
+\Msg{*    tex/latex/tugboat (for *.sty, *.cls)}
+\Msg{*    bibtex/bst/misc   (for ltugbib.bst)}
+\Msg{*}
+\Msg{***********************************************************}
+
+\endinput
