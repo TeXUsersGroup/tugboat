@@ -41,7 +41,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2007/08/27 v2.3
+                   [2007/09/19 v2.4
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -129,7 +129,7 @@
 %    \end{macrocode}
 %
 % \fi
-% \CheckSum{4488}
+% \CheckSum{4489}
 %
 % \section{Introduction}
 %
@@ -1059,8 +1059,8 @@
           \hbox{$\m@th\mbox{\fontsize\sf@size\z@
                             \selectfont#2}$}}
 \DeclareRobustCommand\cs[1]{\texttt{\char`\\#1}}
-\DeclareRobustCommand\meta[1]{%
-  \ensuremath{\langle}\emph{#1}\ensuremath{\rangle}}
+\DeclareRobustCommand\meta[1]{% don't stay bold in description items
+  \ensuremath{\langle}{\mdseries\emph{#1}}\ensuremath{\rangle}}
 \DeclareRobustCommand\env[1]{%
   \cs{begin}\texttt{\char`\{#1\char`\}}}
 \def\thinskip{\hskip 0.16667em\relax}
@@ -1377,7 +1377,7 @@
   se-vere-ly spell-ing spell-ings stand-alone strong-est
    sub-ex-pres-sion syn-chro-ni-city syn-chro-nous
   time-stamp time-stamped
-  vis-ual vis-ual-ly 
+  Vieth vis-ual vis-ual-ly 
   which-ever white-space white-spaces wide-spread wrap-around
 }
 %<!latex>\restorecat\@
