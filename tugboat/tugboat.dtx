@@ -3,7 +3,7 @@
 % tugboat.dtx - main source for LaTeX TUGboat classes.
 % 
 % \iffalse (this is a meta-comment (so they say))
-%% Copyright 1994,1995,1996,1997,1998,2000,2001,2004,2005,2006,2007
+%% Copyright 1994,1995,1996,1997,1998,2000,2001,2004,2005,2006,2007,2008
 %% TeX Users Group. 
 %% 
 %% This file is part of the tugboat package.
@@ -129,7 +129,7 @@
 %    \end{macrocode}
 %
 % \fi
-% \CheckSum{4492}
+% \CheckSum{4500}
 %
 % \section{Introduction}
 %
@@ -214,6 +214,7 @@
 % |\VorTeX|&\\
 % |\XeT|&\\
 % |\XeTeX|&         reflected and lowered first `E'\\
+% |\XeLaTeX|&       with extra space before `L'\\
 % |\XML|&\\
 % |\WEB|&\\
 % |\WEAVE|&\\
@@ -810,11 +811,13 @@
   }%
 }
 \def\tubhideheight#1{\setbox0=\hbox{#1}\ht0=0pt \dp0=0pt \box0 }
-\def\XeTeX{\leavevmode
+\def\Xe#1{\leavevmode
   \tubhideheight{\hbox{X%
     \setbox0=\hbox{\TeX}\setbox1=\hbox{E}%
     \lower\dp0\hbox{\raise\dp1\hbox{\kern-.125em\tubreflect{E}}}%
-    \kern-.1667em \TeX}}}
+    \kern-.1667em #1}}}
+\def\XeTeX{\Xe\TeX}
+\def\XeLaTeX{\Xe{\,\LaTeX}}
 %
 \def\XHTML{\acro{XHTML}}
 \def\XSLT{\acro{XSLT}}
