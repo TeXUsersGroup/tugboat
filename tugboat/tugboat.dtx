@@ -41,7 +41,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2007/09/19 v2.4b
+                   [2008/09/14 v2.5
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -129,7 +129,7 @@
 %    \end{macrocode}
 %
 % \fi
-% \CheckSum{4500}
+% \CheckSum{4524}
 %
 % \section{Introduction}
 %
@@ -146,6 +146,7 @@
 % |\AMS|&           American Mathematical Society\\
 % |\AmSTeX|&\\
 % |\aw|&            \aw\ (abbreviation for Addison-Wesley)\\
+% |\API|&\\
 % |\AW|&            Addison-Wesley\\
 % |\BibTeX|&\\
 % |\CandT|&         Computers \& Typesetting\\
@@ -156,7 +157,10 @@
 % |\DVD|&\\
 % |\DVIPDFMx|&      \DVIPDFMx\\
 % |\DVItoVDU|&      DVItoVDU\\
+% |\ECMA|&\\
+% |\EPS|&\\
 % |\eTeX|&          \eTeX\\
+% |\ExTeX|&         \ExTeX\\
 % |\Ghostscript|&\\
 % |\Hawaii|&        \Hawaii\\
 % |\HTML|&\\
@@ -177,6 +181,7 @@
 %                   in maths)\\
 % |\OMEGA|&         Omega `logo' (\ensuremath{\Omega})\\
 % |\OCP|&           Omega compiled process\\
+% |\OOXML|&\\
 % |\OTP|&           Omega translation process\\
 % |\mtex|&          multilingual \TeX\\
 % |\NTS|&           New Typesetting System\\
@@ -218,6 +223,7 @@
 % |\XML|&\\
 % |\WEB|&\\
 % |\WEAVE|&\\
+% |\WYSIWYG|&\\
 % \end{longtable}
 %
 % Macros for things that are slightly more significant.
@@ -629,6 +635,7 @@
 \def\AmSLaTeX{\AmS-\LaTeX}
 \def\AmSTeX{\AmS-\TeX}
 \def\ANSI{\acro{ANSI}}
+\def\API{\acro{API}}
 \def\ASCII{\acro{ASCII}}
 \def\aw{A\kern.1em-W}
 \def\AW{Addison\kern.1em-\penalty\z@\hskip\z@skip Wesley}
@@ -658,7 +665,11 @@
 \def\DVI{\acro{DVI}}
 \def\DVIPDFMx{\acro{DVIPDFM}$x$}
 \def\DVItoVDU{DVIto\kern-.12em VDU}
+\def\ECMA{\acro{ECMA}}
+\def\EPS{\acro{EPS}}
 \DeclareRobustCommand\eTeX{\ensuremath{\varepsilon}-\kern-.125em\TeX}
+\DeclareRobustCommand\ExTeX{%
+  \ensuremath{\textstyle\varepsilon_{\kern-0.15em\cal{X}}}\kern-.2em\TeX}
 \def\FAQ{\acro{FAQ}}
 \def\FTP{\acro{FTP}}
 \def\Ghostscript{Ghost\-script}
@@ -731,6 +742,7 @@
 \DeclareTextSymbolDefault{\textohm}{OT1}
 \newcommand\OMEGA{\textohm}
 \DeclareRobustCommand{\OCP}{\OMEGA\acro{CP}}
+\def\OOXML{\acro{OOXML}}
 \DeclareRobustCommand{\OTP}{\OMEGA\acro{TP}}
 \def\mtex{T\kern-.1667em\lower.424ex\hbox{\^E}\kern-.125emX\@}
 %    \end{macrocode}
@@ -789,6 +801,7 @@
 \def\XML{\acro{XML}}
 \def\WEB{\texttt{WEB}\@}
 \def\WEAVE{\texttt{WEAVE}\@}
+\def\WYSIWYG{\acro{WYSIWYG}}
 %    \end{macrocode}
 % 
 % Xe\TeX{} requires reflecting the first E, hence we complain if the
@@ -811,7 +824,7 @@
   }%
 }
 \def\tubhideheight#1{\setbox0=\hbox{#1}\ht0=0pt \dp0=0pt \box0 }
-\def\Xe#1{\leavevmode
+\DeclareRobustCommand\Xe[1]{\leavevmode
   \tubhideheight{\hbox{X%
     \setbox0=\hbox{\TeX}\setbox1=\hbox{E}%
     \lower\dp0\hbox{\raise\dp1\hbox{\kern-.125em\tubreflect{E}}}%
