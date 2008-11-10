@@ -12,3 +12,6 @@ tugboat.pdf: ltugcomn.sty tugboat.dtx
 ltugcomn.sty ltugboat.sty: tugboat.dtx
 	$(latex) tugboat.ins
 
+check: ltugboat.sty
+	$(pdflatex) tubptest.tex
+	$(pdflatex) tubatest.tex

@@ -129,7 +129,7 @@
 %    \end{macrocode}
 %
 % \fi
-% \CheckSum{4524}
+% \CheckSum{4554}
 %
 % \section{Introduction}
 %
@@ -2183,25 +2183,25 @@
   \def\section{\TB@startsection{{section}%
                                 1%
                                 \z@
-                                {-8\p@}%
+                                {-8\p@ \@plus-2\p@ \@minus-2\p@}%
                                 {4\p@}%
           {\normalsize\bf\raggedright\hyphenpenalty=\@M}}}
   \def\subsection{\TB@startsection{{subsection}%
                                    2%
                                    \z@
-                                   {-8\p@}%
+                                   {-8\p@ \@plus-2\p@ \@minus-2\p@}%
                                    {4\p@}%
           {\normalsize\bf\raggedright\hyphenpenalty=\@M}}}
   \def\subsubsection{\TB@startsection{{subsubsection}%
                                       3%
                                       \z@
-                                      {-8\p@}%
+                                      {-8\p@ \@plus-2\p@ \@minus-2\p@}%
                                       {4\p@}%
           {\normalsize\bf\raggedright\hyphenpenalty=\@M}}}
   \def\paragraph{\TB@startsection{{paragraph}%
                                   4%
                                   \z@
-                                  {2.5ex\@plus 1ex}%
+                                  {4\p@ \@plus1\p@ \@minus1\p@}%
                                   {-1em}%
                                   {\normalsize\bf}}}
 %    \end{macrocode}
@@ -2216,21 +2216,21 @@
                \TB@startsection{{section}%
                                 1%
                                 \z@
-                                {-8\p@}%
+                                {-8\p@ \@plus-2\p@ \@minus-2\p@}%
                                 {4\p@}%
           {\normalsize\bf\raggedright\hyphenpenalty=\@M}}}
   \def\subsection{\TB@nolimelabel
                   \TB@startsection{{subsection}%
                                    2%
                                    \z@
-                                   {-8\p@}%
+                                   {-8\p@ \@plus-2\p@ \@minus-2\p@}%
                                    {-0.5em\@plus-\fontdimen3\font}%
           {\normalsize\bf\raggedright\hyphenpenalty=\@M}}}
   \def\subsubsection{\TB@nolimelabel
                      \TB@startsection{{subsubsection}%
                                       3%
                                       \parindent
-                                      {-8\p@}%
+                                      {-8\p@ \@plus-2\p@ \@minus-2\p@}%
                                       {-0.5em\@plus-\fontdimen3\font}%
           {\normalsize\bf\raggedright\hyphenpenalty=\@M}}}
 \fi
@@ -3599,6 +3599,7 @@
 % optional arguments for use as `short' versions, thus obviating the
 % need for users to use the \cs{shortTitle} command.
 %    \begin{macrocode}
+\def\rhTitle{}% avoid error if no author or title
 \renewcommand\title{\@dblarg\TB@title}
 \def\TB@title[#1]#2{\gdef\@title{#2}%
   \bgroup
