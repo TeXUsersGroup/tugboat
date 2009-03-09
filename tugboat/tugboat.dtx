@@ -129,7 +129,7 @@
 %    \end{macrocode}
 %
 % \fi
-% \CheckSum{4554}
+% \CheckSum{4560}
 %
 % \section{Introduction}
 %
@@ -1064,9 +1064,10 @@
   }
 \def\bull{\vrule \@height 1ex \@width .8ex \@depth -.2ex }
 \def\cents{{\rm\raise.2ex\rlap{\kern.05em$\scriptstyle/$}c}}
-\def\Dag{\raise .6ex\hbox{$\scriptstyle\dagger$}}
 \def\careof{\leavevmode\hbox{\raise.75ex\hbox{c}\kern-.15em
                 /\kern-.125em\smash{\lower.3ex\hbox{o}}} \ignorespaces}
+\def\Dag{\raise .6ex\hbox{$\scriptstyle\dagger$}}
+%
 \DeclareRobustCommand\sfrac[1]{\@ifnextchar/{\@sfrac{#1}}%
                                             {\@sfrac{#1}/}}
 \def\@sfrac#1/#2{\leavevmode\kern.1em\raise.5ex
@@ -1075,11 +1076,21 @@
          /\kern-.15em\lower.25ex
           \hbox{$\m@th\mbox{\fontsize\sf@size\z@
                             \selectfont#2}$}}
+%
+% don't stay bold in description items, bold italic is too weird.
+\DeclareRobustCommand\meta[1]{%
+  \ensuremath{\langle}%
+  \ifmmode \mbox{\mdseries\emph{#1}}% if in math
+  \else {\mdseries\emph{#1}}%
+  \fi
+  \ensuremath{\rangle}%
+}
+%
 \DeclareRobustCommand\cs[1]{\texttt{\char`\\#1}}
-\DeclareRobustCommand\meta[1]{% don't stay bold in description items
-  \ensuremath{\langle}{\mdseries\emph{#1}}\ensuremath{\rangle}}
+%
 \DeclareRobustCommand\env[1]{%
   \cs{begin}\texttt{\char`\{#1\char`\}}}
+%
 \def\thinskip{\hskip 0.16667em\relax}
 %    \end{macrocode}
 %
