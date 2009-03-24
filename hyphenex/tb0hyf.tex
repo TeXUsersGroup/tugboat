@@ -1,0 +1,1188 @@
+% tb0hyf.tex - version of 5jun08
+%
+% Copyright 2008 TeX Users Group.
+% You may freely use, modify and/or distribute this file.
+%
+%       This item last appeared in full in TUGboat 16:1, March 1995.
+%       A stripped-down version, containing only new material, appeared
+%       in TUGboat 22:1/2, March/June 2001, with additional updates in
+%       TUGboat 23:3/4 (2002), 26:1 (2005), and 29:2 (2008).
+%       This file contains the full exception list compounded from all
+%       previous iterations.  It can be used as input to the hyphenex
+%       scripts at http://mirror.ctan.org/info/digests/tugboat/hyphenex.
+%
+\input tugboat.sty
+
+%%%	Note -- With the addition of Skoup\'y, a note should be added
+%%%		that the solution is different for OT1/T1/ConTeXt.
+
+%%%	Note -- Consider the following in rewriting text for next edition:
+%%%		TeX 3.0 hyphenation parameters
+%%%		hyphenation patterns other than the Plain set
+%%%		hyphenation exceptions corresponding to those patterns
+
+\pretolerance=500
+\tolerance=1000 
+\hbadness=3000
+\vbadness=3000
+\hyphenpenalty=400
+
+%% restore the default hyphenations of words that are in
+%% the tugboat.cmn hyphenation list or any issue list.
+\hyphenation{Delaware Di-jk-stra Ei-jkhout
+  Florida FreeBSD Ghostscript Ghostview
+  Har-alam-bous Jack-owski Karl-sruhe
+  Ma-cOS Malay-alam Math-SciNet
+  NetBSD OpenBSD OpenOf-fice
+  PfaEdit PostScript Richard Sk-oup Southall
+  Vi-eth VMware WinEdt
+  acronym ap-pendix asyn-chronous
+  bitmap bitmapped bitmaps buffer buffers boolean
+  columns com-putable com-putabil-ity cus-tomiz-able
+  database databases
+   deal-lo-cate deal-lo-cates deal-lo-cated deal-lo-ca-tion
+   deriva-tive deriva-tives deriv-able deriva-tion
+  essence
+  falling
+  halfway
+  in-fras-truc-ture
+  keynote
+  longest
+  mag-yar manuscript manuscripts mnemonic mnemon-ics
+  names-pace names-paces
+  of-fline overview
+  paradigm paradig-matic paradigms
+   pipeline pipelines
+   plu-gin plu-gins presently pro-grammable
+  re-al-lo-cate re-al-lo-cates re-al-lo-cated
+  se-tups severely spelling spellings stan-dalone strongest
+   subex-pres-sion synch-non-ic-ity syn-chronous
+  tex-theight textlength tex-twidth
+   times-tamp times-tamped times-tamps
+  vi-sual vi-su-ally
+  whichever whites-pace whites-paces widespread wraparound
+}
+
+\title * Hyphenation Exception Log *
+\author * Barbara Beeton *
+\netaddress* bnb@ams.org *
+
+\pagexref{hyphenlog}
+
+\article
+
+This is the periodic update of the list of words that \TeX\ fails to
+hyphenate properly.  The full list last appeared in \tubissue 16(1),
+starting on page~12, with updates in \tubissue 22(1/2), pages~31--32,
+\tubissue 23(3/4), pages~247--248, and \tubissue 26(1), pages~5-6.
+%% update reference
+The full list is included here.
+Owing to the length of the list, it has been subdivided into two parts:
+English words, and names and non-English words (including transliterations
+from Cyrillic and other non-Latin scripts) that occur in English texts.
+
+This list is specific to the hyphenation patterns that appear in
+the original |hyphen.tex|, that is, the patterns for U.S. English.
+If such information for other patterns becomes available, consideration
+will be given to listing that too.  (See below, ``Hyphenation for
+languages other than English''.)
+
+% As expected, there are more instances of missed than of incorrect hyphens.
+In the list below, the first column gives results from \TeX's
+|\showhyphens{...}|; entries in the second column are suitable for
+inclusion in a |\hyphenation{...}| list.
+
+In most instances, inflected forms are not shown for nouns and verbs;
+note that all forms must be specified in a |\hyphenation{...}| list
+if they occur in your document.  See the section below, Converting this
+list into a list of hyphenation exceptions.
+
+Thanks to all who have submitted entries to the list.  Since some
+suggestions have demonstrated a lack of familiarity with the rules of
+the hyphenation algorithm, here is a short reminder of the relevant
+idiosyncrasies.  Hyphens will not be inserted before the number of
+letters specified by |\lefthyphenmin|, nor after the number of letters
+specified by |\righthyphenmin|.  For U.S. English, |\lefthyphenmin=2|
+and |\righthyphenmin=3|; thus no word shorter than five
+letters will be hyphenated.  (For the details, see \TB, page~454.  For a
+digression on other views of hyphenation rules, see below under ``English
+hyphenation''.)  This particular rule is violated in some of the words
+listed; however, if a word is hyphenated correctly by \TeX\ except for
+``missing'' hyphens at the beginning or end, it has not been included here.
+
+Some other permissible hyphens have been omitted
+% from the right-hand entries in this list 
+for reasons of style or clarity.  While this is at
+least partly a matter of personal taste, an author should think of the
+reader when deciding whether or not to permit just one more break-point
+in some obscure or confusing word.  There really are times when a bit of
+rewriting is preferable.
+
+One other warning: Some words can be more than one part of speech,
+depending on context, and have different hyphenations; for example,
+`analyses' can be either a verb or a plural noun.  If such a word appears
+in this list, hyphens are shown only for the portions of the word that
+would be hyphenated the same regardless of usage.  These words are marked
+with a `*'; additional hyphenation points, if needed in your document,
+should be inserted with discretionary hyphens.
+
+Words added since the last appearance of the list are preceded by `${}^+$'.
+
+The reference used to check these hyphenations is {\sl Webster's
+Third New International Dictionary}, Unabridged.
+
+\head * English hyphenation *
+
+It has been pointed out to me that the hyphenation rules of British English
+are based on the etymology of the words being hyphenated as opposed to
+the ``syllabic'' principles used in the U.S\null.  Furthermore, in the
+U.K., it is considered bad style to hyphenate a word after only two letters.
+In order to make \TeX\ defer hyphenation until after three initial letters,
+set |\lefthyphenmin=3|.
+
+Of course, British hyphenation patterns should be used as well.
+A set of patterns for UK English has been created by Dominik Wujastyk and
+Graham Toal, using Frank Liang's |PATGEN| and based on a file of 114925
+British-hyphenated words generously made available to Dominik by Oxford
+University Press.  (This list of words and the hyphenation break points
+in the words are copyright to the \acro{OUP} and may not be redistributed.)
+The file of hyphenation patterns may be freely distributed; it is
+posted on {\CTAN} in the file
+%||tex-archive/language/hyphenation/ukhyph.tex||
+$$\hbox{\tt tex-archive/language/hyphenation/ukhyph.tex}$$
+and can be retrieved by anonymous \acro{FTP} or using a Web browser.
+
+%  see uktex92.017 for details
+
+%some new patterns can be added, as communicated to me my Donald Knuth:
+%
+%\smallskip
+%\begingroup
+%\leftskip=\parindent
+%%	from message of 03 Oct 88, DEK@Sail to BB@Sail
+%\noindent
+%To suppress hyphenation after two letters, you need new patterns
+%of the form |.ab6| for all pairs of letters |ab| that begin words of English.
+%I think the number of such pairs is well under 200.
+%\endgraf
+%\endgroup
+
+%\head * Hyphenation for languages \\ other than English *
+\head * Hyphenation for languages \break other than English *
+
+Patterns now exist for many languages other than English, including
+languages using accented alphabets.
+{\CTAN} holds an extensive collection of patterns in
+%||tex-archive/language/hyphenation||
+|tex-archive/language/hyphenation|
+and its subdirectories.
+
+\head * Converting this list into \break a list of hyphenation exceptions *
+
+Werner Lemberg has created a script that will convert this article into
+a real |\hyphenation| block that can be incorporated into a document
+either directly or by inputting a file.  His work has necessitated
+some changes to the macros used to format the list, but the appearance
+of the list will not change.  Many inflected forms will be included
+automatically, some evident in the printed version, but many included
+silently.
+
+The script, |hyphenex.sh|, runs under Unix and is posted on \CTAN, in
+%||tex-archive/info/digests/tugboat/hyphenex.sh||
+$$\hbox{\tt tex-archive/info/digests/tugboat/hyphenex.sh}$$
+The output of the script is posted in the same area, as |ushyphex.tex|.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%	Macro to insert hyphens into single word argument
+%	based on one by Oliver Schoett, 18 June 87, TeXhax 87#51
+\def\printhyphens#1{%
+ \setbox0\vbox{%
+  \pretolerance-1\hyphenpenalty-10000%
+  \hsize0pt\leftskip0pt\rightskip0pt\parfillskip0pt%
+  \hbadness100\hfuzz\maxdimen
+  \offinterlineskip
+  \interlinepenalty0\clubpenalty0\widowpenalty0\brokenpenalty0%
+  \noindent\hskip0pt #1\par
+  % now the current vertical list contains the word fragments,
+  % separated by \lineskip glue
+  \setbox0\lastbox \global\setbox1\hbox{\hbox{\unhbox0}}%
+  \loop \unskip \setbox0\lastbox \ifhbox0%
+   \global\setbox1\hbox{\hbox{\unhbox0}\discretionary{}{}{}\unhbox1}%
+  \repeat}%	% macro same to here; the rest is modified  % { to match
+% \unhbox1 }
+}
+
+% To make an automatic conversion from this document to a
+% \hyphenation{...} command possible (using hyphenex.sh), please follow
+% the syntax strictly while adding new exceptions.
+%
+% Valid entry examples:
+%
+%   \1 accusative ac-cu-sa-tive
+%   \2 analyse(d) an-a-lyse d                % a comment
+%   \3 anomaly(ies) anom-al y ies
+%   \4 archives ar-chives                    % not appearing in print
+%   \5 agronomist agron-o-mist s             % plural not appearing in print
+%   \6 chemotherapy chemo-ther-a py -pies    % ditto
+%   \tabalign {\tt manuscript} & man-u-script \cr
+%   \1 baselineskip {\tt\bs base-line-skip}
+%   \1 Petrovski\u\i{} Pe-trov-ski\u\i{}     % `\u\i{}' is ignored
+%
+% \1-\6 and \tabalign (which contains an exception entry) must
+% start a line.
+%
+% \tabalign entries with only spaces and/or `{}' before the `&' are
+% ignored.
+%
+% The conversion script ignores all macros (with and without parameters)
+% in exceptions.  Only \llap{foo} is handled (it is converted to `foo').
+
+\setbox\TestBox=\hbox{{\tt elec-trome-chan-i-cal}}
+\settabs\+\unhcopy\TestBox\kern.5em& \cr
+%		Note -- \tabalign is non-outer version of \+
+\newif\ifNewWord	\NewWordfalse
+\def\testNewWord{\ifNewWord \leavevmode\llap{${}^+$\,}\global\NewWordfalse \fi}
+\def\1 #1 #2 {\printhyphens{\tt #1}%
+       \ifdim\wd1>\wd\TestBox \noindent\testNewWord{\unhbox1}\par \TestIftrue
+       \else \TestIffalse \fi
+       \tabalign \ifTestIf \else \testNewWord\unhbox1\fi &#2\cr }
+%	for entries with a suffix
+\def\2 #1 #2 #3 {\1 #1 #2(#3) }
+%	for entries with multiple suffixes
+\def\3 #1 #2 #3 #4 {\1 #1 #2#3(#4) }
+%	for entries not appearing in print
+\def\4 #1 #2 {\relax}
+%	same as \2 but the suffix doesn't appear in print
+\def\5 #1 #2 #3 {\1 #1 #2 }
+%	same as \3 but the suffix doesn't appear in print
+\def\6 #1 #2 #3 #4 {\1 #1 #2#3 }
+
+
+%	Note special treatment of the following entries:
+%
+%	idiosyncrasy		hyphenation exception in effect for TUGboat
+%	manuscript		hyphenation exception in effect for TUGboat
+%	preloaded		hyphenation exception in effect for TB 8#3
+%	Yingyong Shuxue Jisuan	\printhyphens can't handle phrases (spaces)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\head * The List\Dash English words *
+
+\begingroup
+%\ninepoint
+\eightpoint
+\3 academy(ies)		acad-e-m y ies
+\1 accusative		ac-cu-sa-tive		% 2000/10, Scott Horne, 1993
+\1 acronym		acro-nym		% 2005/08, kb list
+\5 acrylamide		acryl-amide s		% 2002/07, bnb, Science News
+\1 acrylaldehyde	acryl-alde-hyde		% 2002/07, bnb, Science News
+\NewWordtrue
+\3 acupuncture(ist)	acu-punc-tur e -ist	% 2005/09; Scott Horne, 1993
+\1 addable		add-a-ble
+\1 addible		add-i-ble
+\1 adrenaline		adren-a-line
+\1 aerospace		aero-space
+\5 afterthought 	af-ter-thought s
+\5 agronomist		agron-o-mist s
+\1 algebraically	al-ge-bra-i-cal-ly	% 2001/01; S. Levy, 1993/09
+\5 amphetamine		am-phet-a-mine s
+\2 analyse(d)		an-a-lyse d
+\1 analyses		analy-ses\thinspace*
+\NewWordtrue
+\5 aneurysm		an-eu-rysm s		% 2007/11, Fred Nugen
+\NewWordtrue
+\1 aneurysmal		an-eu-rys-mal		% 2007/11, Fred Nugen
+\1 anisotropic		an-iso-trop-ic		% 2001/01; S. Radford, 1993/02
+\1 anisotropically	an-iso-trop-i-cal-ly	% 2001/01; S. Radford, 1993/02
+\1 anisotropism		an-isot-ro-pism 	% 2001/01; S. Radford, 1993/02
+\1 anisotropy		an-isot-ropy		% 2001/01; S. Radford, 1993/02
+\3 anomaly(ies)		anom-al y ies
+\5 antiderivative	anti-deriv-a-tive s
+\1 antiholomorphic	anti-holo-mor-phic	% 2003/08; bnb, GSM/Landsberg
+\3 antinomy(ies)	an-tin-o-m y ies
+\1 antinuclear		anti-nu-clear
+\1 antinucleon		anti-nu-cle-on
+\1 antirevolutionary	anti-rev-o-lu-tion-ary
+\1 apotheoses		apoth-e-o-ses
+\1 apotheosis		apoth-e-o-sis
+\1 appendix		ap-pen-dix
+\1 archimedean		ar-chi-me-dean		% 2001/01; S. Levy, 1993/09
+\1 archipelago		ar-chi-pel-ago       % changed 1999/09/15 from arch-i-
+\1 archipelago		ar-chi-pel-a-gos
+\5 archive		ar-chive s              % 1999/03
+\1 archiving		ar-chiv-ing             % 1999/03
+\5 archivist		ar-chiv-ist s           % 1999/03
+\1 archetypal		ar-che-typ-al
+\1 archetypical		ar-che-typ-i-cal
+\5 arctangent		arc-tan-gent s
+\tabalign		&\null\quad (better: arc\,tangent)\cr
+\1 assignable		as-sign-a-ble
+\5 assignor		as-sign-or s
+\3 assistant(ce)	as-sist-an t ce		% 2008/05, bnb
+\5 assistantship	as-sist-ant-ship s
+\1 asymptomatic		asymp-to-matic
+\1 asymptotic		as-ymp-tot-ic
+\1 asynchronous		asyn-chro-nous
+\1 atherosclerosis	ath-er-o-scle-ro-sis
+\5 atmosphere		at-mos-phere s
+\1 attribute		at-tri-bute		% 2008/05, bnb
+\1 attributed		at-trib-uted
+\1 attributable		at-trib-ut-able
+\1 automation		au-to-ma-tion           % 1999/03
+\3 automaton(a)		au-tom-a-t on a         % 1999/03
+\1 autonumbering	auto-num-ber-ing	% 2005/03, Yannis
+\1 autonomous		au-ton-o-mous		% 2005/03, bnb
+\1 autorounding		auto-round-ing		% 2003/12, bnb
+\1 avoirdupois		av-oir-du-pois
+%\1 awoken		awok-en
+\5 bandleader		band-leader s
+\2 bankrupt(cy,-cies)	bank-rupt -cy,-cies
+\1 baronies		bar-onies
+\1 baselineskip 	{\tt\bs base-line-skip}
+\1 bathymetry		ba-thym-e-try
+\1 bathyscaphe		bathy-scaphe
+\1 beanies		bean-ies
+\5 behaviour		be-hav-iour s
+\1 bevies		bevies
+\1 bibliographystyle	{\tt\bs bib-li-og-ra-phy-style}
+\1 bidifferential	bi-dif-fer-en-tial
+\1 biggest		big-gest
+\1 billable		bill-able
+\1 biomathematics	bio-math-e-mat-ics
+\1 biomedical		bio-med-i-cal		% 2003/09, bnb, a&gf
+\1 biomedicine		bio-med-i-cine
+\1 biorhythms		bio-rhythms
+\5 bitmap		bit-map s
+\1 blander		bland-er
+\1 blandest		bland-est
+\1 blinder		blind-er
+\1 blondes		blondes
+\5 blueprint		blue-print s
+\1 bolometer		bo-lom-e-ter
+\5 bookseller		book-sell-er s		% 2003/06, bnb
+\5 boolean		bool-ean s		% 2005/08, kb list
+\1 bornological 	bor-no-log-i-cal
+\1 botulism		bot-u-lism
+\1 brusquer		brusquer
+\5 buffer		buf-fer s		% 2005/08, kb list
+\1 busier		busier
+\1 busiest		busiest
+\1 bussing		bussing
+\1 butted		butted
+\5 buzzword		buzz-word s
+\3 cacophony(ies)	ca-coph-o-n y ies
+\5 caller		call-er s		% 2003/06, bnb
+\1 cameramen		cam-era-men
+\5 cartwheel		cart-wheel s
+\1 catarrhs		ca-tarrhs
+\1 catastrophic		cat-a-stroph-ic
+\1 catastrophically	cat-a-stroph-i-cally
+\5 catenoid		cat-e-noid s		% 2001/01; S. Levy, 1993/09
+\1 cauliflower		cau-li-flow-er
+\1 chaparral		chap-ar-ral
+\1 chartreuse		char-treuse
+\6 chemotherapy 	chemo-ther-a py -pies   % 2001/01
+\5 chloromethane	chloro-meth-ane s	% 2005/01, Donald Arseneau
+\1 cholesteric		cho-les-teric
+\5 cigarette		cig-a-rette s
+\1 cinquefoil		cinque-foil
+\1 coassociative	co-asso-cia-tive	% 2003/08; bnb, GSM/Landsberg
+\1 cognac		co-gnac
+\1 cognacs		co-gnacs
+\5 cokernel		co-ker-nel s		% 2001/11; R. Sizer
+\1 collineation 	col-lin-ea-tion		% 2001/01; S. Levy, 1993/09
+\1 columns              col-umns             % 1999/03
+%%  comparand not in webster's 3rd; split by analogy to "operand"
+\1 comparand		com-par-and
+\1 comparands		com-par-ands
+\1 compendium		com-pen-dium         % 1999/03
+\1 componentwise	com-po-nent-wise     % 2001/06; G. Gratzer
+\5 comptroller		comp-trol-ler s
+\NewWordtrue
+\1 computable		com-put-able		% 2006/03; bnb, AMS Notices
+\1 computability	com-put-abil-ity	% 2006/03; bnb, AMS Notices
+\1 conformable		con-form-able
+\5 conformist		con-form-ist s
+\1 conformity		con-form-ity
+\5 congress		con-gress es
+\2 contribute(s,d)	con-trib-ute s,d
+\NewWordtrue
+\1 copyrightable	copy-right-able		% 2007/03, John Harper
+\2 corelation(s)	co-re-la-tion s		% 2004/04; bnb
+\2 coreligionist(s)	co-re-li-gion-ist s	% 2004/04; bnb
+\1 coreopsis		co-re-op-sis		% 2004/04; bnb
+\2 corespondent(s)	co-re-spon-dent s	% 2004/04; bnb
+\1 cosecant		co-se-cant
+\1 cotangent		co-tan-gent
+\1 courses		cour-ses
+\5 coworker		co-work-er s		% 2005/06, bnb
+\1 crankcase		crank-case		% 2005/02, Flynn list
+\1 crankshaft		crank-shaft
+\5 crocodile		croc-o-dile s
+\2 crosshatch(ed,ing)	cross-hatch ed -ing
+\1 crossover		cross-over		% 2000/10, Michael Doob
+\2 cryptogram(s)	cryp-to-gram s		% 2000/10, Scott Horne, 1993
+\2 cufflink(s)		cuff-link s		% 2004/05; John Harper
+\1 cuneiform		cu-nei-form		% 2000/09
+\1 customizable		cus-tom-iz-a-ble	% 2005/06, bnb
+\2 customize(s,d)	cus-tom-ize s,d		% 2005/06, bnb
+\1 dachshund		dachs-hund
+\3 damselfly(ies)	dam-sel-fl y ies	% 2003/06, bnb, Natl Geographic
+\3 dactylogram(aph)	dactyl-o-gr am aph	% 2002/07, bnb, Science News
+\5 database		data-base s
+\5 datapath		data-path s
+\5 datestamp		date-stamp s            % 1999/03
+\NewWordtrue
+\2 deallocate(s,d)	de-allo-cate s,d	% 2007/04, John Harper
+\NewWordtrue
+\5 deallocation		de-allo-ca-tion s	% 2008/05, bnb
+\1 declarable		de-clar-able
+\1 definitive		de-fin-i-tive
+\1 delectable		de-lec-ta-ble
+\5 demisemiquaver	demi-semi-qua-ver s	% 2000/09
+\1 democratism		de-moc-ra-tism
+\1 demos		demos	
+\NewWordtrue
+\5 derivation		der-i-va-tion s		% 2007/11, Fred Nugen
+\NewWordtrue
+\1 derivational		der-i-va-tion-al	% 2007/11, Fred Nugen
+\5 derivative		de-riv-a-tive s
+\5 dialectic		dia-lec-tic s		% 2001/01
+\5 dialectician		dia-lec-ti-cian s	% 2001/01
+\1 dichloromethane	di-chloro-meth-ane	% 2005/01, Donald Arseneau
+\5 diffract		dif-fract s
+\5 diffraction		dif-frac-tion s		% 2003/04
+\1 direr		direr
+\1 direness		dire-ness
+%%  disparand not in webster's 3rd; split by analogy to "operand"
+\5 disparand		dis-par-and s
+\1 distraughtly		dis-traught-ly
+\2 distribute(s,d)	dis-trib-ute s,d
+\3 doublespace(ing)	dou-ble-spac e -ing
+\1 dollish		doll-ish
+\1 driftage		drift-age
+\1 drivers		driv-ers             % 1999/03
+\3 dromedary(ies)	drom-e-dar y ies
+\5 duopolist		du-op-o-list s
+\1 duopoly		du-op-oly
+\1 dyslexia		dys-lexia		% 2000/10, Scott Horne, 1993
+\1 dyslectic		dys-lec-tic		% 2001/01
+\1 eastenders		east-end-ers
+\1 economics		eco-nom-ics
+\5 economist		econ-o-mist s
+\2 eigenclass(es)	ei-gen-class es		% 2001/01; S. Levy, 1993/09
+\2 eigenvalue(s)	ei-gen-val-ue s		% 2001/01; S. Levy, 1993/09
+\1 electromechanical	electro-mechan-i-cal
+\1 electromechanoacoustic  electro-mechano-acoustic
+\5 elitist		elit-ist s
+\2 entrepreneur(ial)	en-tre-pre-neur -ial
+\1 epinephrine		ep-i-neph-rine
+\3 equivariant(ce)	equi-vari-an t ce
+\NewWordtrue
+\5 essence		es-sence s		% 2007/09, bnb; stml/iosevich
+\1 ethane		eth-ane			% 2005/01, Donald Arseneau
+\1 ethylene		eth-yl-ene
+\1 eversible		ever-si-ble
+\2 evert(s,ed,ing)	evert s,-ed,-ing
+\1 exquisite		ex-quis-ite
+\1 extraordinary	ex-tra-or-di-nary
+\1 falling		fall-ing		% 2003/06, bnb
+\1 fermions		fermi-ons
+\NewWordtrue
+\5 figurine		figu-rine s		% 2007/05, Nelson Beebe
+\1 finitely		fi-nite-ly		% 2001/01; S. Levy, 1993/09
+\3 flagellum(la)	fla-gel -lum -la
+\1 flammables		flam-ma-bles
+\1 fledgling		fledg-ling
+\5 flowchart		flow-chart s
+\1 fluorocarbon		fluoro-car-bon		% 2005/01, Donald Arseneau
+%\1 folksinger		folk-singer
+\3 formidable(y)	for-mi-da-bl e y
+\1 forsythia		for-syth-ia
+\1 forthright		forth-right
+\5 freeloader		free-loader s
+\1 friendlier		friend-lier
+\6 frivolity		fri-vol-i ty -ties
+\1 frivolous		friv-o-lous
+\1 galactic		ga-lac-tic
+\3 galaxy(ies)		gal-ax y -ies
+\1 gasometer		gas-om-e-ter
+\1 geodesic		ge-o-des-ic
+\1 geodetic		ge-o-det-ic
+\5 geometric		geo-met-ric s
+\1 geostrophic          ge-o-strophic		% 2003/04
+\1 geothermal		geo-ther-mal		% 2005/03, bnb
+\1 geotropism		ge-ot-ro-pism
+\5 gnomon		gno-mon s
+\5 granduncle		grand-uncle s		% 2004/03, bnb
+\5 grievance		griev-ance s
+\2 grievous(ly) 	griev-ous -ly
+\5 hairstyle		hair-style s
+\5 hairstylist		hair-styl-ist s
+\5 halfspace		half-space s            % 1999/03
+\1 halfway		half-way		% 2002/09, A. Perlis
+\5 harbinger		har-bin-ger s
+\5 harlequin		har-le-quin s
+\1 hatcheries		hatch-eries
+\5 hemidemisemiquaver	hemi-demi-semi-qua-ver s	% 2000/09
+\1 hemoglobin		he-mo-glo-bin
+\1 hemophilia		he-mo-phil-ia
+\5 hemophiliac		he-mo-phil-iac s	% 2003/04
+\1 hemorheology 	hemo-rhe-ol-ogy
+\1 hepatic		he-pat-ic
+\NewWordtrue
+\1 hepatica		he-pat-ica		% 2008/05, bnb
+\3 hermaphrodite(ic)	her-maph-ro-dit e -ic
+\1 heroes		he-roes
+\1 hexadecimal		hexa-dec-i-mal
+\1 holonomy		ho-lo-no-my
+\3 homeomorphic(sm)	ho-meo-mor-phi c sm	% 2001/01; S. Levy, 1993/09
+\NewWordtrue
+\5 homeostatic		ho-meo-stat-ic s	% 2007/11, Fred Nugen
+\NewWordtrue
+\1 homeostasis		ho-meo-sta-sis		% 2007/11, Fred Nugen
+\1 homothetic		ho-mo-thetic
+\1 horseradish		horse-rad-ish
+\5 hotbed		hot-bed s		% 2003/04, bnb
+\1 hydrothermal		hy-dro-ther-mal		% 2005/03, bnb
+\1 hypothalamus 	hy-po-thal-a-mus 
+\1 ideals		ideals
+\1 ideographs		ideo-graphs
+%%% bb -- check this one
+\6 idiosyncrasy 	idio-syn-cra sy -sies
+\3 idiosyncratic(ally)	idio-syn-crat ic -i-cal-ly
+\5 igniter		ig-nit-er s
+\1 ignitor		ig-ni-tor
+\1 ignorespaces 	{\tt\bs ignore-spaces}
+\5 impedance		im-ped-ance s
+\1 indubitable		in-du-bi-ta-ble		% 2002/08, bnb
+\1 infinitely		in-fin-ite-ly
+\1 infinitesimal	in-fin-i-tes-i-mal
+\5 infrastructure	in-fra-struc-ture s
+\5 installers		in-stall-er s		% 2003/06, bnb
+\1 integrity		in-teg-rity		% 2005/11, bnb
+\1 interdisciplinary	in-ter-dis-ci-pli-nary
+\1 intergalactic	in-ter-ga-lac-tic
+\1 inutile		in-utile
+\1 inutility		in-util-i-ty
+%\1 irreducible          ir-re-duc-ible          % 1999/10, G. Gratzer
+\3 irreducible(y)       ir-re-duc-ibl e y       % 1999/10, G. Gratzer
+\1 irrevocable		ir-rev-o-ca-ble
+\NewWordtrue
+\5 isogeometric		iso-geo-met-ric s	% 2007/11; Fred Nugen
+\NewWordtrue
+\1 isothermal		iso-ther-mal		% 2008/05, bnb
+\1 isotropy		isot-ropy		% 2001/01; S. Radford, 1993/02
+\1 isotropic		iso-trop-ic		% 2001/01; S. Radford, 1993/02
+\3 itinerary(ies)	itin-er-ar y -ies
+\1 jeremiads		je-re-mi-ads
+\5 keynote		key-note s		% 2005/04; kb list
+\5 keystroke		key-stroke s
+\1 kilning		kiln-ing
+\1 laciest		lac-i-est
+\1 lamentable		lam-en-ta-ble
+\5 landscaper		land-scap-er s
+\3 larceny(ist) 	lar-ce-n y -ist
+\5 leafhopper		leaf-hop-per s	% 2001/01, bnb, "life in amber"
+\1 letterspacing	let-ter-spac-ing
+\5 lifespan		life-span s
+\5 lifestyle		life-style s            % 1999/03
+\1 lightweight		light-weight
+\1 limousines		lim-ou-sines
+\1 linebacker		line-backer
+\1 linespacing		{\tt\bs line-spacing}
+\1 lioness		li-on-ess            % 1999/03
+\1 lithographed		lith-o-graphed
+\1 lithographs		lith-o-graphs
+\3 lobotomy(ize)	lo-bot-om y -ize
+\1 loges		loges
+\1 longest		long-est
+\1 loquacity		lo-quac-ity          % 1999/03
+\1 lovestruck           love-struck          % 2003/04, R.A.Reese
+\5 macroeconomic	macro-eco-nomic s
+\NewWordtrue
+\1 makeindex		make-in-dex		% 2007/10, bnb
+\5 malapropism		mal-a-prop-ism s
+\1 manslaughter		man-slaugh-ter		% 2005/06, bnb
+\tabalign {\tt manuscript} & man-u-script \cr
+\1 marginal		mar-gin-al
+\5 mathematician	math-e-ma-ti-cian s
+\1 mattes		mattes
+\1 medicaid		med-ic-aid
+\1 mediocre		medi-ocre
+\1 mediocrities		medi-oc-ri-ties
+\5 megalith		mega-lith s
+\1 metabolic		meta-bol-ic
+\5 metabolism		me-tab-o-lism s
+\5 metabolite		me-tab-o-lite s
+\5 metalanguage		meta-lan-guage s
+\1 metaphoric		meta-phor-ic		% 1999/03
+\1 methane		meth-ane		% 2005/01, Donald Arseneau
+\2 metropolis(es)	me-trop-o-lis es
+\5 metropolitan		met-ro-pol-i-tan s
+\5 microeconomic	micro-eco-nomic s
+\5 microfiche		mi-cro-fiche s
+\5 microorganism	micro-organ-ism s	% 2001/01
+\1 millage		mill-age
+\1 milliliter		mil-li-liter
+\1 mimeographed 	mimeo-graphed
+\1 mimeographs		mimeo-graphs
+\1 mimicries		mim-ic-ries
+\1 minis		min-is
+\3 minisymposium(a)	mini-sym-po-si um a
+\3 minuter(est)		mi-nut -er -est
+\1 mischievously	mis-chie-vous-ly
+\1 misers		mi-sers
+\1 misogamy		mi-sog-a-my
+\NewWordtrue
+\5 mnemonic		mne-mon-ic s		% 2007/08, Karl Berry
+\1 modelling		mod-el-ling
+\5 molecule		mol-e-cule s
+\1 monarchs		mon-archs
+\5 moneylender		money-len-der s
+\1 monochrome		mono-chrome
+\1 monoenergetic	mono-en-er-getic
+\1 monoid		mon-oid
+\NewWordtrue
+\5 monophthong		mon-oph-thong s		% 2006/05, John Harper
+\5 monopole		mono-pole s
+\1 monopoly		mo-nop-oly
+\NewWordtrue
+\5 monospace		mono-space d		% 2007/10, bnb, EuroTeX '07
+\5 monospline		mono-spline s
+\1 monostrofic		mono-strofic
+\1 monotonies		mo-not-o-nies
+\1 monotonous		mo-not-o-nous
+\1 moronism		mo-ron-ism
+\5 mosquito		mos-qui-to s,es
+\5 mudroom		mud-room s
+\1 multifaceted 	mul-ti-fac-eted
+\3 multiplicable(y)	mul-ti-plic-abl e y
+\1 multiuser		multi-user\quad (better
+\tabalign		&\null\quad with explicit hyphen)\cr
+\NewWordtrue
+\5 namespace		name-space s		% 2007/09, K. Berry
+\1 neofields		neo-fields
+\5 neonazi		neo-nazi s
+\1 nephews		neph-ews		% 2003/12, bnb
+\3 nephrite(ic)		neph-rit e ic		% 2003/12, bnb
+\1 newest		new-est 		% 2001/12, bnb, 21#4
+\5 newsletter		news-let-ter s
+\1 nilpotent            nil-po-tent             % 2007/03, bnb
+\1 nitromethane		nitro-meth-ane		% 2005/01, Donald Arseneau
+\1 noname		no-name
+\1 nonarithmetic	non-ar-ith-met-ic	% 2001/01; S. Levy, 1993/09
+\1 nonemergency 	non-emer-gency
+\1 nonequivariance	non-equi-vari-ance
+\1 nonetheless		none-the-less        % 1999/03
+\1 noneuclidean 	non-euclid-ean
+\1 nonisomorphic	non-iso-mor-phic
+\1 nonpseudocompact	non-pseudo-com-pact
+\1 nonsmooth		non-smooth
+\2 nonuniform(ly)	non-uni-form -ly
+\1 norepinephrine	nor-ep-i-neph-rine
+\1 notwithstanding	not-with-stand-ing   % 1999/03
+\5 nucleotide		nu-cleo-tide s		% 2002/08; treasure chest
+\5 nutcracker		nut-crack-er s
+\1 oersteds		oer-steds
+\1 offline		off-line		% 2005/04; kb list
+\2 offload(s,ed)	off-load s,ed		% 2005/08, bnb
+\5 oligopolist		oli-gop-o-list s
+\3 oligopoly(ies)	oli-gop-ol y -ies
+\NewWordtrue
+\3 omnipresent(ce)	om-ni-pres-en t ce	% 2007/06, bnb, Zapf in tb89
+\2 operand(s)		op-er-and s
+\5 orangutan		orang-utan s
+\5 orthodontist 	or-tho-don-tist s
+\1 orthokeratology	or-tho-ker-a-tol-ogy
+\1 orthonitrotoluene	ortho-nitro-toluene
+\tabalign		&\null\quad (or-tho-ni-tro-tol-u-ene)\cr
+\5 overview		over-view s
+\1 oxidic		ox-id-ic
+\1 padding		pad-ding
+\1 painlessly		pain-less-ly
+\5 palette		pal-ette s		% 2005/06, bnb
+%\1 palmate		palmate
+\1 parabola		pa-rab-ola
+\1 parabolic		par-a-bol-ic
+\1 paraboloid		pa-rab-o-loid
+\5 paradigm		par-a-digm s
+\5 parachute		para-chute s
+\1 paradimethylbenzene	para-di-methyl-benzene
+\tabalign		&\null\quad (para-di-meth-yl-ben-zene)\cr
+\1 parafluorotoluene	para-fluoro-toluene
+\tabalign		&\null\quad (para-flu-o-ro-tol-u-ene)\cr
+\1 paragrapher		para-graph-er
+\1 paralegal		para-le-gal
+\1 parallelism		par-al-lel-ism
+\1 paramagnetism	para-mag-net-ism
+\1 paramedic		para-medic
+\1 paramethylanisole	para-methyl-anisole
+\tabalign		&\null\quad (para-meth-yl-an-is-ole)\cr
+\1 parametrize		pa-ram-e-trize
+\1 paramilitary 	para-mil-i-tary
+\1 paramount		para-mount
+\1 pathogenic		path-o-gen-ic
+\2 peevish(ness)	peev-ish -ness
+\5 pentagon		pen-ta-gon s
+\1 petroleum		pe-tro-le-um
+\NewWordtrue
+\1 phenolphthalein	phe-nol-phthalein	% 2006/05, John Harper
+\1 phenomenon		phe-nom-e-non
+\1 phenylalanine 	phenyl-ala-nine		% 2002/07, bnb, Science News
+\5 philatelist		phi-lat-e-list s
+\5 phoneme		pho-neme s              % 1999/03
+\1 phonemic		pho-ne-mic
+\1 phosphoric		phos-phor-ic
+\1 photographs		pho-to-graphs        % 1999/03
+\1 photooffset		pho-to-off-set  	% 2002/09, M. Brady, typo-l
+\NewWordtrue
+\1 phthalamic		phtha-lam-ic		% 2006/05, John Harper
+\NewWordtrue
+\1 phthalate		phthal-ate		% 2006/05, John Harper
+\NewWordtrue
+\1 phthisis		phthi-sis		% 2006/05, John Harper
+\5 picador		pic-a-dor s
+\2 pipeline(s)		pipe-line s	% 2001/01, from N. Beebe, 1993/01
+\1 pipelining		pipe-lin-ing		% 2005/04; kb list
+\1 piranhas		pi-ra-nhas
+\1 placable		placa-ble
+\5 planthopper		plant-hop-per s	% 2001/01, bnb, "life in amber"
+\1 pleasance		pleas-ance
+\5 plugin		plug-in s	% 2001/06, M. Vulis paper, 21#3
+\1 poltergeist		pol-ter-geist
+\NewWordtrue
+\2 polyandr(y,ous)	poly-an-dr y ous	% 2007/10, bnb
+\NewWordtrue
+\2 polydactyl(lic)	poly-dac-tyl -lic	% 2007/10, bnb
+\1 polyene		poly-ene
+\1 polyethylene		poly-eth-yl-ene
+\5 polygamist		po-lyg-a-mist s
+\1 polygonization	polyg-on-i-za-tion
+\NewWordtrue
+\2 polygyn(y,ous)	po-lyg-y-n y ous	% 2007/10, bnb
+\NewWordtrue
+\5 polyp		pol-yp s
+\2 polyphon(y,ous)	po-lyph-o-n y ous
+\NewWordtrue
+\1 polyphonic		poly-phon-ic		% 2007/10, bnb
+\1 polystyrene		poly-styrene
+\1 pomegranate		pome-gran-ate
+\1 poroelastic		poro-elas-tic
+\1 porous		por-ous
+\1 portable		por-ta-ble		% 2002/07, A. Lewenberg, 22#1
+\5 postamble		post-am-ble s
+\1 posthumous		post-hu-mous	% 2001/09, bnb
+\5 postscript		post-script s
+\1 postural		pos-tur-al
+\5 preamble		pre-am-ble s
+\tabalign {\tt preloaded} & pre-loaded \cr
+\1 preparing		pre-par-ing
+\2 preprint(s)		pre-print s
+\5 preprocessor		pre-proces-sor s
+\NewWordtrue
+\1 presently		pres-ent-ly		% 2007/06, bnb
+\1 presplitting 	{\tt\bs pre-split-ting}
+\2 prewrap(ped)		pre-wrap ped		% 2004/04, bnb (TUG 2004)
+\1 priestesses		priest-esses
+\3 prettyprinter(ing)	pret-ty-prin-t er ing
+\1 procedural		pro-ce-dur-al
+\1 process		process\thinspace*
+\1 procurance		pro-cur-ance
+\1 progenies		prog-e-nies
+\1 progeny		prog-e-ny
+\1 programmable		pro-gram-mable		% 2005/08, kb list
+\1 prominent		prom-i-nent		% 2005/06, bnb
+\1 promiscuous		pro-mis-cu-ous		% 2005/06, bnb
+\1 promissory		prom-is-sory		% 2005/06, bnb
+\5 promise		prom-ise s		% 2005/06, bnb
+\5 propeller		pro-pel-ler s		% 2003/06, bnb
+\1 propelling		pro-pel-ling		% 2003/06, bnb
+\2 prohibitive(ly)	pro-hib-i-tive -ly
+\1 prosciutto		pro-sciut-to
+\2 protester(s)		pro-test-er s
+\2 protestor(s)		pro-tes-tor s
+\1 protolanguage	pro-to-lan-guage     % 1999/03
+\1 prototypal		pro-to-typ-al
+\2 province(s)		prov-ince s		% 2000/10, Scott Horne, 1993
+\1 provincial		pro-vin-cial		% 2000/10, Scott Horne, 1993
+\1 prowess		prow-ess		% 2005/08, bnb, The Economist
+\1 pseudodifferential	pseu-do-dif-fer-en-tial
+\tabalign {}		&\null\quad (or \ pseudo-{}) \cr
+\1 pseudofinite 	pseu-do-fi-nite
+\1 pseudofinitely	pseu-do-fi-nite-ly
+\1 pseudoforces 	pseu-do-forces
+\1 pseudographer	pseu-dog-ra-pher	% 2001/01
+\5 pseudogroup		pseu-do-group s		% 2001/01; S. Levy, 1993/09
+\5 pseudonym		pseu-do-nym s
+\5 pseudoword		pseu-do-word s
+\1 psychedelic		psy-che-del-ic
+\1 psychs		psychs
+\1 pubescence		pu-bes-cence
+\1 quadding		quad-ding
+\2 quadratic(s)		qua-drat-ic s
+\1 quadrature		quad-ra-ture
+\1 quadriplegic		quad-ri-pleg-ic
+\3 quainter(est)	quaint -er -est
+\5 quasiequivalence	qua-si-equiv-a-lence s
+\tabalign {}		&\null\quad (or \ quasi-{}) \cr
+\1 quasiequivalent	qua-si-equiv-a-lent	% 2003/04, bnb
+\1 quasihyponormal	qua-si-hy-po-nor-mal
+\1 quasiradical 	qua-si-rad-i-cal
+\1 quasiresidual	qua-si-resid-ual
+\1 quasismooth		qua-si-smooth
+\1 quasistationary	qua-si-sta-tion-ary
+\1 quasitopos		qua-si-topos
+\1 quasitriangular	qua-si-tri-an-gu-lar
+\1 quasitrivial		qua-si-triv-ial		% 2004/07, bnb
+\5 quintessence		quin-tes-sence s
+\1 quintessential	quin-tes-sen-tial
+\1 rabbitry		rab-bit-ry
+\1 radiography		ra-di-og-ra-phy
+\2 raffish(ly)		raff-ish -ly
+\1 ramshackle		ram-shackle
+\1 ravenous		rav-en-ous
+\NewWordtrue
+\2 reallocate(s,d)	re-allo-cate s,d	% 2007/04, John Harper
+\NewWordtrue
+\2 rearrange(s,d)	re-arrange s,d		% 2007/10, dek
+\5 rearrangement	re-arrange-ment s
+\1 reciprocities	rec-i-proc-i-ties
+\1 reciprocity		rec-i-proc-i-ty
+\5 rectangle		rec-tan-gle s
+\1 rectangular		rec-tan-gu-lar
+\2 redirect(ion)	re-di-rect -ion		% 2002/08, bnb
+%\NewWordtrue				% okay per Webster's III
+%\1 reducible            re-du-cible	% 1999/10, G. Gratzer, re-duc-ible
+\1 reecho		re-echo
+\2 rephrase(s,d)	re-phrase s,d		% 2005/02, Flynn list
+\5 reposition		re-po-si-tion s		% 2002/08, bnb
+\2 reprint(s)		re-print s
+\1 restorable		re-stor-able
+%\1 retributions 	ret-ri-bu-tions
+\2 retrofit(ted)	retro-fit -ted
+\1 reusable		re-us-able		% 2000/10, Gostanza, TUG 2000
+\1 reuse		re-use			% 2000/10
+\1 rewire		re-wire 		% 2002/08, bnb
+\2 rewrap(ped)		re-wrap ped		% 2004/04, bnb (TUG 2004)
+\1 rewrite		re-write		% 2002/08, bnb (Walden)
+\1 rhinoceros		rhi-noc-er-os
+\2 righteous(ness)	right-eous -ness
+\5 ringleader		ring-leader s
+\5 robot		ro-bot s
+\6 robotic		ro-bot ic -ics
+\5 roundtable		round-table s
+\1 salesclerk		sales-clerk
+\1 salesclerks		sales-clerks
+\3 saleswoman(en)	sales-wom an en
+\1 salmonella		sal-mo-nel-la
+\1 saltation		sal-ta-tion		% 2000/10
+\1 sarsaparilla		sar-sa-par-il-la
+\1 sauerkraut		sauer-kraut
+\1 scatological		scat-o-log-i-cal
+\1 scheduling		sched-ul-ing
+\1 schizophrenic	schiz-o-phrenic
+\1 schnauzer		schnau-zer
+\2 schoolchild(ren)	school-child -ren
+\6 schoolteacher	school-teach er -ers
+\1 scrutiny		scru-ti-ny		% 2001/01; S. Levy, 1993/09
+\1 scything		scyth-ing
+\5 seller		sell-er s		% 2003/06, bnb
+\5 secretariat		sec-re-tar-iat s
+\5 semaphore		sem-a-phore s
+\1 semester		se-mes-ter
+\1 semidefinite 	semi-def-i-nite
+\1 semidirect		semi-di-rect		% 2000/09
+\1 semihomothetic	semi-ho-mo-thet-ic
+\5 semiring		semi-ring s
+\1 semisimple		semi-sim-ple		% 2000/09, M. Doob
+\1 semiskilled		semi-skilled
+\1 semitic		sem-itic		% 2005/09, Ron Whitney, 1990
+\NewWordtrue
+\5 sergeant		ser-geant s		% 2005/09, Scott Horne, 1993
+\1 seroepidemiological	sero-epi-de-mi-o-log-i-cal
+\NewWordtrue
+\1 servomechanical	ser-vo-me-chan-i-cal	% 2005/09
+\5 servomechanism	ser-vo-mech-a-nism s
+\1 sesquipedalian	ses-qui-pe-da-lian	% 2000/09
+\1 setup		set-up
+\1 setups		set-ups
+\1 severely		se-vere-ly
+\1 shapeable		shape-able
+\5 shoestring		shoe-string s
+\5 sidestep		side-step s
+\1 sideswipe		side-swipe
+\5 skyscraper		sky-scraper s
+\5 smokestack		smoke-stack s
+\1 snorkeling		snor-kel-ing
+\5 solenoid		so-le-noid s
+\2 solute(s)		solute s
+\5 sovereign		sov-er-eign s
+\1 spaces		spa-ces
+\1 specious		spe-cious
+\5 speller		spell-er s		% 2003/06, bnb
+\1 spelling		spell-ing		% 2003/06, bnb
+\1 spelunker		spe-lunk-er
+\1 spendthrift		spend-thrift
+\5 spheroid		spher-oid s
+\1 spheroidal		spher-oid-al
+\1 sphinges		sphin-ges
+\1 spicily		spic-i-ly
+\5 spinors		spin-or s
+\3 spokeswoman(en)	spokes-wom an en
+\2 sportscast(er)	sports-cast -er
+\1 sportively		spor-tive-ly
+\1 sportswear		sports-wear
+\5 sportswriter		sports-writer s
+\1 sprightlier		spright-lier
+\1 squeamish		squea-mish
+\1 standalone		stand-alone
+\2 startling(ly)	star-tling -ly
+\1 statistics		sta-tis-tics
+\1 stealthily		stealth-ily
+\1 steeplechase		steeple-chase
+\1 stereographic	stereo-graph-ic		% 2001/01; S. Levy, 1993/09
+\1 stochastic		sto-chas-tic
+\1 strangeness		strange-ness
+\1 straphanger		strap-hanger		% 2000/10
+\5 stratagem		strat-a-gem s
+\1 stretchier		stretch-i-er
+\1 striptease		strip-tease		% 2005/02, Flynn list
+\1 strongest		strong-est
+\1 stronghold		strong-hold
+\3 stupider(est)	stu-pid -er -est
+\1 subdifferential	sub-dif-fer-en-tial	% 2000/02, M. Doob
+\5 subexpression	sub-ex-pres-sion s	% 2005/08, kb list
+\5 subscriber 		sub-scrib-er s
+\1 summable		sum-ma-ble
+\1 superego		super-ego
+\1 superegos		super-egos
+\5 supremacist		su-prem-a-cist s
+\1 surveillance		sur-veil-lance
+\1 swimmingly		swim-ming-ly
+\1 symptomatic		symp-to-matic
+\1 synchromesh		syn-chro-mesh
+\1 synchronous		syn-chro-nous
+\1 synchrotron		syn-chro-tron
+\1 taffrail		taff-rail		% 2004/05; bnb
+\1 talkative		talk-a-tive
+\3 tapestry(ies)	ta-pes-tr y ies
+\5 tarpaulin		tar-pau-lin s
+\5 telegrapher		te-leg-ra-pher s
+\5 telekinetic		tele-ki-net-ic s
+\1 telerobotics		tele-ro-bot-ics
+\5 teller		tell-er s		% 2003/06, bnb
+\1 temporarily		tem-po-rar-ily		% 1999/03
+\1 tenure		ten-ure
+\1 testbed		test-bed
+\NewWordtrue
+\1 textheight		{\tt\bs text-height}	% 2008/05, bnb
+\NewWordtrue
+\1 textlength		{\tt\bs text-length}	% 2007/05, bnb
+\1 textwidth		{\tt\bs text-width}
+\1 thalamus		thal-a-mus
+\1 thermoelastic	ther-mo-elas-tic
+\5 timestamp		time-stamp s
+\5 toolkit		tool-kit s
+\1 topographical	topo-graph-i-cal
+\1 toques		toques
+\1 traitorous		trai-tor-ous
+\5 transceiver		trans-ceiver s
+\1 transgress		trans-gress
+\2 transversal(s)	trans-ver-sal s
+\5 transvestite		trans-ves-tite s
+\1 traversable		tra-vers-a-ble
+\2 traversal(s)		tra-ver-sal s
+\1 triethylamine	tri-ethyl-amine		% 2005/01, Donald Arseneau
+\1 treacheries		treach-eries
+\NewWordtrue
+\1 tribesman		tribes-man		% 2005/09, Scott Horne, 1993
+\1 troubadour		trou-ba-dour
+\5 turkey		tur-key s
+\5 turnaround		turn-around s
+\1 typal		typ-al
+\1 unattached		un-at-tached
+\1 unerringly		un-err-ing-ly
+\3 unfriendly(ier)	un-friend-l y i-er
+\1 vaguer		vaguer
+\1 vaudeville		vaude-ville
+\1 vicars		vic-ars
+\1 villainess		vil-lain-ess
+\2 visual(ly)		vis-ual -ly		% 2005/08, kb list
+\1 viviparous		vi-vip-a-rous
+\1 voiceprint		voice-print
+\1 vspace 		{\tt\bs vspace}
+\1 wadding		wad-ding
+\6 wallflower		wall-flow er -ers
+\1 warmest		warm-est	% 2001/12, bnb, 21#4
+\1 wastewater		waste-water
+\5 waveguide		wave-guide s
+\2 wavelet(s)		wave-let s
+\1 weblike		web-like
+\5 weeknight		week-night s
+\5 wheelchair		wheel-chair s
+\1 whichever		which-ever
+\1 whitesided		white-sided
+\5 whitespace		white-space s
+\1 widespread		wide-spread
+\5 wingspan		wing-span s	% 2003/04, bnb
+\1 wingspread		wing-spread
+\1 witchcraft		witch-craft
+\1 wordspacing		word-spac-ing
+\5 workaround		work-around s		% 2002/07, K. Skoupy, 23#1
+\5 workhorse		work-horse s
+\1 wraparound		wrap-around
+\2 wretched(ly)		wretch-ed -ly
+\1 yesteryear		yes-ter-year
+\endgraf
+\endgroup
+
+%\head * Names and non-English words \\ used in English text *
+\head * Names and non-English words \break used in English text *
+
+\begingroup
+%\ninepoint
+\eightpoint
+\1 algebraische 	al-ge-brai-sche
+\1 Allegheny		Al-le-ghe-ny
+\1 Arkansas		Ar-kan-sas
+\5 ATPase		ATP-ase s		% 2005/02; Engelbert Buxbaum
+\1 Australasian 	Aus-tral-asian
+\1 automatisierter	auto-ma-ti-sier-ter
+\1 Bedienung		Be-die-nung
+\1 Bembo                Bembo			% 1999/09/09
+\1 bibliographische	bi-blio-gra-phi-sche
+\1 Boston		Bos-ton
+\1 Brownian		Brown-ian
+\1 Brunswick		Bruns-wick
+\1 Budapest		Bu-da-pest
+\1 Caribbean		Car-ib-bean
+\1 Charleston		Charles-ton
+\1 Charlottesville	Char-lottes-ville
+\1 Columbia		Co-lum-bia
+\1 Czechoslovakia	Czecho-slo-va-kia
+\1 Delaware		Del-a-ware		% 2005/04; kb list
+\1 Dijkstra		Dijk-stra
+\1 Duane		Duane			% 2005/04; kb list
+\1 dynamische		dy-na-mi-sche
+\1 English		Eng-lish
+\1 Eulerian		Euler-ian
+\1 Evanston		Evan-ston
+\1 February		Feb-ru-ary
+\1 Festschrift		Fest-schrift
+\1 Florida		Flor-i-da
+\1 Floridian		Flor-i-d-ian
+\1 Forschungsinstitut	For-schungs-in-sti-tut
+\1 FreeBSD		Free-BSD		% 2005/06, bnb
+\1 funktsional		funk-tsional
+\1 Gaussian		Gauss-ian
+\1 Ghostscript		Ghost-script		% 2003/09; bnb, tb75becc
+\1 GhostView		Ghost-View		% 2003/09; bnb, tb75becc
+\1 Grassmannian		Grass-mann-ian		% 2003/08; bnb, GSM/Landsberg
+\1 Greifswald		Greifs-wald
+\1 Grothendieck		Grothen-dieck
+\1 Grundlehren		Grund-leh-ren
+\1 Hadamard		Ha-da-mard		% 2004/04; bnb, conm/Vogelius
+\1 Haifa		Hai-fa
+\1 Hamiltonian		Hamil-ton-ian
+\1 Helsinki		Hel-sinki
+\1 Hermitian		Her-mit-ian
+\1 Hibbs		Hibbs
+\1 Hokkaido		Hok-kai-do
+\1 Jackowski		Jac-kow-ski		% 2004/05; TUG 2003 proceedings
+\1 January		Jan-u-ary
+\1 Japanese		Ja-pa-nese
+\1 Kadomtsev		Kad-om-tsev
+\1 Kansas		Kan-sas
+\1 Karlsruhe		Karls-ruhe
+\1 Korteweg		Kor-te-weg
+\1 Krishna		Krishna
+\1 Krishnaism		Krish-na-ism
+\1 Krishnan		Krish-nan	% 2002/02, tran2986el
+\1 Lancaster		Lan-cas-ter
+\1 Legendre		Le-gendre
+\1 Leicester		Leices-ter
+\2 Lipschitz(ian)	Lip-schitz -ian
+\1 Lojban		Loj-ban		% 2003/04, W. Lemberg (TB 23:1, p 46)
+\1 Louisiana		Lou-i-si-ana
+\1 MacOS		Mac-OS			% 2005/06, bnb
+\NewWordtrue
+\1 Malayalam		Ma-la-ya-lam		% 2006/08, Alex A.J. (TB 27:1)
+\1 Manchester		Man-ches-ter
+\1 Markovian		Mar-kov-ian
+\1 Marktoberdorf	Markt-ober-dorf  % 2001/02, W. Lemberg (TB 21:2, p 106)
+\1 Massachusetts	Mass-a-chu-setts
+\1 Maxwell		Max-well		% 2003/11; bnb (TB78, Lawrence)
+\1 Microsoft		Mi-cro-soft		% 2003/08; bnb (TUG 2003, Gray)
+\1 Minneapolis		Min-ne-ap-o-lis
+\1 Minnesota		Min-ne-sota
+\NewWordtrue
+\1 Montreal		Mont-real		% 2005/09; Scott Horne, 1993
+\1 Moscow		Mos-cow
+\1 Nachrichten          Nach-rich-ten
+\1 Nashville		Nash-ville
+\1 NetBSD		Net-BSD 		% 2005/06, bnb
+\1 Netscape		Net-scape		% 2003/03; bnb
+\1 Nijmegen		Nij-me-gen
+\1 Noetherian		Noe-ther-ian
+\1 Noordwijkerhout	Noord-wijker-hout
+\1 November		No-vem-ber
+\1 OpenBSD		Open-BSD		% 2005/06, bnb
+\1 OpenOffice		Open-Office		% 2005/06, bnb
+\1 Palatino		Pala-tino		% 2003/09; bnb, tb75becc
+\1 Palermo		Pa-ler-mo
+\1 Petrovski\u\i{}	Pe-trov-ski\u\i{}	% 2002/07; R. Sizer
+\1 Pfaffian		Pfaff-ian		% 2003/08; bnb, GSM/Landsberg
+\1 Philadelphia		Phil-a-del-phia
+\1 philosophische       phi-lo-so-phi-sche	% 2003/03; bnb; update, 2005/09
+\1 Poincare		Poin-care
+\1 Potentialgleichung	Po-ten-tial-glei-chung
+\NewWordtrue
+\5 Presbyterian		Pres-by-terian s	% 2006/06; dek
+\1 Radhakrishnan	Ra-dha-krish-nan   % 2003/04; W. Lemberg (TB 23:1, p 2)
+\1 rathskeller		raths-kel-ler
+\1 Riemannian		Rie-mann-ian
+\1 Rydberg		Ryd-berg
+\1 schottische		schot-ti-sche
+\1 Schrodinger		Schro-din-ger
+\1 Schwabacher		Schwa-ba-cher
+\1 Schwarzschild	Schwarz-schild
+\1 September		Sep-tem-ber
+\1 Skoup\'y		Skoup\'y		% 2004/11; Karl Berry
+\1 Stokessche		Stokes-sche
+\1 Stuttgart		Stutt-gart
+\1 Susquehanna		Sus-que-han-na
+\1 Tauberian		Tau-ber-ian          % 1999/03
+\1 technische		tech-ni-sche
+\1 Tennessee		Ten-nes-see
+\1 Tomaszewski		To-ma-szew-ski		% 2004/05; TUG 2003 proceedings
+\1 typographique	ty-po-graphique      % 1999/03
+\1 Ukrainian		Ukrain-ian
+\1 verallgemeinerte	ver-all-ge-mei-nerte
+\1 Vereinigung		Ver-ei-ni-gung
+\1 Verteilungen 	Ver-tei-lun-gen
+\NewWordtrue
+\1 Vieth		Vieth			% 2007/08; bnb (TB 28:2, p.191)
+\1 viiith		viiith			% 2001/11; R. Sizer
+\1 viith		viith			% 2001/11; R. Sizer
+\1 Wahrscheinlichkeitstheorie  \llap{Wa}hr-schein-lich-keits-theo-rie
+\1 Werner		Wer-ner		% 2004/09; W. Lemberg (TB 24:1, p 75)
+\1 Wertherian		Wer-ther-ian
+\1 Winchester		Win-ches-ter
+\1 Wirtschaft		Wirt-schaft		% 2000/10
+\1 wissenschaftlich	wis-sen-schaft-lich
+\1 xviiith		xviiith			% 2001/11; R. Sizer
+\1 xviith		xviith			% 2001/11; R. Sizer
+\1 xxiiird		xxiiird			% 2001/11; R. Sizer
+\1 xxiind		xxiind			% 2001/11; R. Sizer
+\tabalign \rlap{\tt Yingy-ong Shuxue Jisuan}&Ying-yong Shu-xue Ji-suan\cr
+\1 Zealand		Zea-land
+\1 Zeitschrift		Zeit-schrift
+\endgraf
+\endgroup
+
+\makesignature
+\endarticle

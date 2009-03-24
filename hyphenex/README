@@ -1,0 +1,12 @@
+This is http://mirror.ctan.org/info/digests/tugboat/hyphenex.
+
+This directory contains scripts to generate hyphenation exceptions,
+hyphenex.pl and hyphenex.sh, written by Werner Lemberg.  The two scripts
+(shell and Perl) do exactly the same thing, namely convert the TUGboat
+master list (available as tb0hyf.tex) to a TeX-readable file (available
+as ushyphex.tex).
+
+If questions, problems, or suggestions for additional exceptions, please
+email tugboat@tug.org.
+
+This material is either public domain or under an all-permissive license.
