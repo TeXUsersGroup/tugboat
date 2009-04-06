@@ -129,7 +129,7 @@
 %    \end{macrocode}
 %
 % \fi
-% \CheckSum{4560}
+% \CheckSum{4564}
 %
 % \section{Introduction}
 %
@@ -2501,22 +2501,37 @@
 % we now do our best to discourage hyphenation within captions.  We also
 % typeset them in \cs{small}.
 %
+% First, let's define a dimension by which we will indent full-page
+% captions.  We'll also use this to indent abstracts in proceedings style.
+% \begin{macro}{\tubfullpageindent}
+%    \begin{macrocode}
+\newdimen\tubfullpageindent  \tubfullpageindent=4.875pc
+%    \end{macrocode}
+% \end{macro}
+% 
+% Ok, here is the \cs{@makecaption}.
 %    \begin{macrocode}
 \long\def\@makecaption#1#2{%
   \vskip\abovecaptionskip
-  \sbox\@tempboxa{\small #1: #2}%
-  \ifdim \wd\@tempboxa >\hsize
-    \raggedright\hyphenpenalty=\@M \parindent=1em 
-    {\small \noindent #1: #2\par}%
+  \sbox\@tempboxa{\small #1: #2}% try in an hbox
+  \ifdim \wd\@tempboxa > \hsize
+    {% caption doesn't fit on one line; set as a paragraph.
+     \small \raggedright \hyphenpenalty=\@M \parindent=1em 
+     % indent full-width captions {figure*}, but not single-column {figure}.
+     \ifdim\hsize = \textwidth
+       \leftskip=\tubfullpageindent \rightskip=\leftskip
+     \fi
+     \noindent #1: #2\par}%
   \else
-    \global \@minipagefalse
+    % fits on one line; use the hbox, centered.  Do not reset its glue.
+    \global\@minipagefalse
     \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
   \fi
   \vskip\belowcaptionskip}
 %    \end{macrocode}
 %
 % Also use \cs{small} for the caption labels, and put the label itself
-% (Figure xx) in bold.
+% (e.g., ``Figure 1'') in bold.
 % 
 %    \begin{macrocode}
 \def\fnum@figure{{\small \bf \figurename\nobreakspace\thefigure}}
@@ -3049,9 +3064,8 @@
 % that's maintained in \cs{@currsize}: if the user does something
 % silly re.~selecting fonts, we'll get the wrong results.  The
 % following code is adapted from an old version of |relsize.sty| by
-% Donald Arseneau and Matt Swift.   (Note that the
-% order of examination of \cs{@currsize} is to get the commonest cases
-% out of the way first.)
+% Donald Arseneau and Matt Swift.  (The order of examination of
+% \cs{@currsize} is to get the commonest cases out of the way first.)
 %    \begin{macrocode}
 %<*common>
 \DeclareRobustCommand\SMC{%
@@ -3437,7 +3451,8 @@
 % \begin{macro}{\aboveauthorskip}
 % \begin{macro}{\belowauthorskip}
 % \begin{macro}{\belowabstractskip}
-% Some stretchable stuff to permit variability in page layout.
+% Some changeable skips to permit variability in page layout depending
+% on the particular paper's page breaks.
 %    \begin{macrocode}
 \newskip\aboveauthorskip   \aboveauthorskip=18\p@ \@plus4\p@
 \newskip\belowauthorskip   \belowauthorskip=\aboveauthorskip
@@ -3474,7 +3489,7 @@
       \centerline{\bfseries Abstract}%
       \vskip.5\baselineskip\rmfamily
       \list{}{\listparindent20\p@
-         \itemindent\z@ \leftmargin4.875pc
+         \itemindent\z@ \leftmargin\tubfullpageindent
          \rightmargin\leftmargin \parsep \z@}\item[]\ignorespaces
             \the\abstract@toks
       \endlist\global\@ignoretrue
@@ -3484,18 +3499,6 @@
   }
 %    \end{macrocode}
 % \end{macro}
-%
-% \begin{description}
-% \item[\emph{Comment}] This is all very weird\dots why we (of all
-%   people) don't allow \cs{thanks} currently escapes me.
-% \end{description}
-%
-% This restriction simply removed 1998/01/09
-%
-%    \begin{macrocode}
-%\def\thanks#1{\@bsphack\TBWarning{\string\thanks\space
-%              is not supported}\@esphack}
-%    \end{macrocode}
 %
 % \begin{environment}{abstract}
 % \begin{macro}{\if@abstract}
