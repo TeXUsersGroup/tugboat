@@ -1,36 +1,36 @@
-%% This is the file `ltugbib.bst', used by the harvardcite option
-%% to the ltug* LaTeX classes.
-%%
-%% \iffalse (this is a meta-comment (so they say))
-%% Copyright (C) 1995,1996,1997,1998,2000,2004,2006,2007 TeX Users Group.
-%% 
-%% It may be distributed and/or modified under the
-%% conditions of the LaTeX Project Public License, either version 1.3
-%% of this license or (at your option) any later version.
-%% The latest version of this license is in
-%%    http://www.latex-project.org/lppl.txt
-%% and version 1.3 or later is part of all distributions of LaTeX
-%% version 2003/12/01 or later.
-%% 
-%% This file has the LPPL maintenance status "maintained".
-%% 
-%% The Current Maintainer of this work is the TeX Users Group
-%% (http://tug.org/TUGboat).
-%% 
-%% The list of all files belonging to this package is given in the file
-%% `manifest.txt'.
-%% 
-%% The list of derived (unpacked) files belonging to the distribution
-%% and covered by LPPL is defined by the unpacking scripts (with
-%% extension .ins) which are part of the distribution.
-%% \fi
-%%
-%% 7-Jun-04: (all related code marked OP) handle a title ending in, e.g., a
-%% question-mark; otherwise the same as the (CTAN-time) 9-Apr-02 version:
-%%
-%% This file used to be generated from tugboat.dtx, but is now distributed
-%% as a stand-alone file.
-%% 
+% This is the file `ltugbib.bst', used by the harvardcite option
+% to the ltug* LaTeX classes.
+%
+% \iffalse (this is a meta-comment (so they say))
+% Copyright 1995,1996,1997,1998,2000,2004,2006,2007,2009 TeX Users Group.
+% 
+% It may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%    http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2003/12/01 or later.
+% 
+% This file has the LPPL maintenance status "maintained".
+% 
+% The Current Maintainer of this work is the TeX Users Group
+% (http://tug.org/TUGboat).
+% 
+% The list of all files belonging to this package is given in the file
+% `manifest.txt'.
+% 
+% The list of derived (unpacked) files belonging to the distribution
+% and covered by LPPL is defined by the unpacking scripts (with
+% extension .ins) which are part of the distribution.
+% \fi
+%
+% 7-Jun-04: (all related code marked OP) handle a title ending in, e.g., a
+% question-mark; otherwise the same as the (CTAN-time) 9-Apr-02 version:
+%
+% This file used to be generated from tugboat.dtx, but is now distributed
+% as a stand-alone file.
+% 
 ENTRY
   { address
     author

@@ -1,19 +1,17 @@
+Copyright 2006, 2009 TeX Users Group.
+You may freely use, modify and/or distribute this file.
+
 LaTeX macros for use in TUGboat
 ===============================
+
+See the TUGboat web pages at http://tug.org/TUGboat for tips on writing
+articles, access to online issues, etc.  We greatly appreciate new
+article submissions!
 
 The files in this directory will generate both a TUGboat articles
 class and a TUG conference proceedings class.
 
-These macros *are* supported; please do *not* bother the TUGboat
-editor with queries about the macros (or the TUGboat proceedings
-editor, if you're preparing an article for submission to a TUG
-conference).  Bother me, instead (the editors do, in any case, so you
-might as well short-circuit them ;-)
-
-See the TUGboat web pages at http://tug.org/TUGboat for back issues,
-guidelines for authors, etc.  We greatly appreciate new article
-submissions!
-
+These macros are supported.
 
 Robin Fairbairns
 robin.fairbairns@cl.cam.ac.uk
@@ -53,13 +51,13 @@ The procedure for using the macros should therefore be:
 
 On a TDS installation, common search locations are:
 
-  $TEXMF/tex/latex/tugboat (for .sty, .cls)
-  $TEXMF/bibtex/bst/misc   (for .bst)
-  $TEXMF/doc/latex/tugboat (for .pdf)
+  $TEXMF/tex/latex/tugboat   (for .sty, .cls)
+  $TEXMF/bibtex/bst/tugboat  (for .bst)
+  $TEXMF/doc/latex/tugboat   (for .pdf)
 
 ($TEXMF being a pointer to the root of a TDS tree, preferably a local
 one, to avoid tangling with future releases of your TeX distribution.)
 
 `User-level' documentation is provided in file ltubguid.pdf, which is
- a revised version of a TUGboat paper.  The documented source of the
- macros is also provided in readily readable form, as tugboat.pdf.
+a revised version of a TUGboat paper.  The documented source of the
+macros is also provided in readily readable form, as tugboat.pdf.
