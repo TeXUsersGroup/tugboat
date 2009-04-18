@@ -1,13 +1,13 @@
 %^^A This (the production version of the macros) started life as xpt3
 %^^A and no need has arisen to perform other experiments...
 % tugboat.dtx - main source for LaTeX TUGboat classes.
-% 
+%
 % \iffalse (this is a meta-comment (so they say))
 % Copyright 1994,1995,1996,1997,1998,2000,2001,2004,2005,2006,2007,2008,2009
-% TeX Users Group. 
-% 
+% TeX Users Group.
+%
 % This file is part of the tugboat package.
-% 
+%
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either version 1.3
 % of this license or (at your option) any later version.
@@ -118,18 +118,18 @@
 %    \end{macrocode}
 %
 % \fi
-% \CheckSum{4564}
+% CheckSum{4568}
 %
 % \section{Introduction}
 %
 % This file contains all the macros for typesetting \TUB{} with
 % both plain \TeX\ and \LaTeXe.
 % \subsection{Summary of control sequences}
-% 
+%
 % Abbreviations.  Just a listing with indications of expansion where
 % that may not be obvious.  For full definitions, see real code below
 % (Section~\ref{abbr-logo}).
-% 
+%
 % \begin{longtable}{lp{3in}}
 % |\AllTeX|&        (\La)\TeX\\
 % |\AMS|&           American Mathematical Society\\
@@ -285,7 +285,7 @@
 % |\revpubinfo|& with one argument, other info pertaining to \ldots \\
 % |\endreviewitem|& end data for item being reviewed\\
 % |\booktitle|&  with one argument, format book title in text\\
-% |\Input|&      |\input| with some other bookkeeping for 
+% |\Input|&      |\input| with some other bookkeeping for
 %                case where multiple articles are put together\\
 % |\TBremark|&   reminder to \TUB{} editorial staff\\
 % |\TBEnableRemarks|& enable \cs{TBremark}s (normally suppressed)\\
@@ -432,6 +432,15 @@
 \DeclareOption{nonumber}{\let\if@numbersec\iffalse}
 %    \end{macrocode}
 %
+% Minimal running headers/footers contain just the TUGboat volume/issue
+% identification and page number.  `fullrunning' is the default, and
+% includes title and author.
+%
+%    \begin{macrocode}
+\DeclareOption{minimalrunning}{\AtEndOfClass{\@tubminimalrunning}}
+\DeclareOption{fullrunning}{\AtEndOfClass{\@tubfullrunning}}
+%    \end{macrocode}
+%
 % Any other options, we pass on to |article.cls| before we load it:
 %
 %    \begin{macrocode}
@@ -439,11 +448,11 @@
 %    \end{macrocode}
 %
 % Request default options (draft mode, standard citation, double-sided
-% printing), process all options, and then get the base document class
-% on top of which we reside.
+% printing, etc.), process all options, and then get the base document
+% class on top of which we reside.
 %
 %    \begin{macrocode}
-\ExecuteOptions{draft,extralabel,numbersec,rawcite}
+\ExecuteOptions{draft,extralabel,numbersec,rawcite,fullrunning}
 \ProcessOptions
 \LoadClass[twoside]{article}
 %    \end{macrocode}
@@ -519,7 +528,7 @@
 % default settings of typesetting parameters, and so on.  The user (or
 % more typically, editor) may execute the commands by using the
 % command \cs{StartNewPaper}.  Things I've not yet thought of may be
-% added to the list of commands, by 
+% added to the list of commands, by
 %    \begin{macrocode}
 \newtoks\ResetCommands
 \ResetCommands{%
@@ -535,7 +544,7 @@
 % \end{macro}
 % \end{macro}
 % \end{macro}
-% 
+%
 % \subsection{Helpful shorthand (common code with Plain styles)}
 %
 % \cs{makeescape}, \dots, \cs{makecomment} allow users to change the
@@ -792,14 +801,14 @@
 \def\WEAVE{\texttt{WEAVE}\@}
 \def\WYSIWYG{\acro{WYSIWYG}}
 %    \end{macrocode}
-% 
+%
 % Xe\TeX{} requires reflecting the first E, hence we complain if the
 % graphics package is not present.  (For plain documents, this can be
 % loaded via Eplain.)  Also, at Barbara's suggestion, if the current
 % font is slanted, we rotate by 180 instead of reflecting so there is at
 % least a chance to look ok.  (The magic values here seem more or less
 % ok for \texttt{cmsl} and \texttt{cmti}.)
-% 
+%
 %    \begin{macrocode}
 \def\tubreflect#1{%
   \@ifundefined{reflectbox}{%
@@ -1176,7 +1185,7 @@
 %
 % Starting with volume 23 (nominal 2002), we have \cs{issyear} instead
 % of \cs{issdate}, because issues don't have months any more.
-% 
+%
 % For production, these are set in a separate file,
 % |tugboat.dates|, which is issue-specific.
 %
@@ -1376,7 +1385,7 @@
   Mac-OS Ma-la-ya-lam Math-Sci-Net
   Net-BSD Open-BSD Open-Office
   Pfa-Edit Post-Script Rich-ard Skoup South-all
-  Vieth VM-ware Win-Edt 
+  Vieth VM-ware Win-Edt
   acro-nym ap-pen-dix asyn-chro-nous
   bit-map bit-mapped bit-maps buf-fer buf-fers bool-ean
   col-umns com-put-able com-put-abil-ity cus-tom-iz-able
@@ -1387,7 +1396,7 @@
   fall-ing
   half-way
   in-fra-struc-ture
-  key-note 
+  key-note
   long-est
   ma-gyar man-u-script man-u-scripts mne-mon-ic mne-mon-ics
    mono-space mono-spaced
@@ -1401,7 +1410,7 @@
    sub-ex-pres-sion syn-chro-ni-city syn-chro-nous
   text-height text-length text-width
    time-stamp time-stamped
-  vis-ual vis-ual-ly 
+  vis-ual vis-ual-ly
   which-ever white-space white-spaces wide-spread wrap-around
 }
 %<!latex>\restorecat\@
@@ -1889,7 +1898,7 @@
 %  that circumstance we need to use a declaration copied from
 %  |latex209.def| rather than the way we would normally do the thing
 %  (using the command \LaTeXe{} defines for the job).
-% 
+%
 %    \begin{macrocode}
 \if@compatibility
   \DeclareRobustCommand\net{\normalfont\ttfamily\mathgroup\symtypewriter}
@@ -2302,12 +2311,12 @@
 %    \end{macrocode}
 %
 % \cs{l@<sectioning-name>} is for table of contents (of an article).
-% 
+%
 % We define new macros to allow easily changing the font used for toc
 % entries (for \TUB, we usually want roman, not bold), and the space
 % between entries.  Nelson Beebe's articles are almost the only ones
 % that ever have toc's.
-% 
+%
 %    \begin{macrocode}
 \def\TBtocsectionfont{\normalfont}
 \newskip\TBtocsectionspace  \TBtocsectionspace=1.0em\@plus\p@
@@ -2329,7 +2338,7 @@
   \addvspace{\TBtocsectionspace}%
   \@tempdima 1.5em
   \begingroup
-    \parindent\z@ \rightskip\z@  % article style makes \rightskip > 0 
+    \parindent\z@ \rightskip\z@  % article style makes \rightskip > 0
     \parfillskip\z@
     \TBtocsectionfont
     \leavevmode\advance\leftskip\@tempdima\hskip-\leftskip#1\nobreak\hfil
@@ -2497,7 +2506,7 @@
 \newdimen\tubfullpageindent  \tubfullpageindent=4.875pc
 %    \end{macrocode}
 % \end{macro}
-% 
+%
 % Ok, here is the \cs{@makecaption}.
 %    \begin{macrocode}
 \long\def\@makecaption#1#2{%
@@ -2505,7 +2514,7 @@
   \sbox\@tempboxa{\small #1: #2}% try in an hbox
   \ifdim \wd\@tempboxa > \hsize
     {% caption doesn't fit on one line; set as a paragraph.
-     \small \raggedright \hyphenpenalty=\@M \parindent=1em 
+     \small \raggedright \hyphenpenalty=\@M \parindent=1em
      % indent full-width captions {figure*}, but not single-column {figure}.
      \ifdim\hsize = \textwidth
        \leftskip=\tubfullpageindent \rightskip=\leftskip
@@ -2521,7 +2530,7 @@
 %
 % Also use \cs{small} for the caption labels, and put the label itself
 % (e.g., ``Figure 1'') in bold.
-% 
+%
 %    \begin{macrocode}
 \def\fnum@figure{{\small \bf \figurename\nobreakspace\thefigure}}
 \def\fnum@table{{\small \bf \tablename\nobreakspace\thetable}}
@@ -2613,7 +2622,7 @@
 %    \end{macrocode}
 %
 % Impose an optional argument on the environment.
-% 
+%
 % We start the macro with \cs{par} to avoid a common error: if the
 % optional argument is \cs{small}, and the document has no blank line
 % before the verbatim block, we don't want that preceding paragraph to
@@ -2719,7 +2728,7 @@
 %
 % \subsection{Bibliography}
 % \label{sec:citations}
-% This is more or less copied verbatim from Glenn Paulley's 
+% This is more or less copied verbatim from Glenn Paulley's
 % \emph{chicago.sty} (\texttt{gnpaulle@\penalty0 bluebox.\penalty0
 % uwaterloo.\penalty0 ca}).
 % It produces an author-year citation style bibliography, using
@@ -2946,6 +2955,7 @@
 %
 % \subsection{Registration marks}
 %
+% We no longer use these since Cadmus does not want them.
 %    \begin{macrocode}
 \def\HorzR@gisterRule{\vrule \@height 0.2\p@ \@depth\z@ \@width 0.5in }
 \def\DownShortR@gisterRule{\vrule \@height 0.2\p@ \@depth 1pc \@width 0.2\p@ }
@@ -2975,7 +2985,6 @@
   \dlap{\kern\textheight\kern3pc
         \rlap{\hb@xt@\pagewd{\midrtitle\hfil\midrtitle}}
   }}
-
 %    \end{macrocode}
 % registration marks; these are temporarily inserted in the running head
 %    \begin{macrocode}
@@ -2986,18 +2995,30 @@
        \vbox{\dlap{\vbox to\trimlgt{\vfil\botregister}}%
              \topregister\vskip \headmargin \vskip 10\p@}}}}%
   }
-
+% put issue identification and page number in header.
 \def\@oddhead{\MakeRegistrationMarks\PrelimDraftfooter
   \normalsize\csname normalshape\endcsname\rm
   \rtitlex\qquad\midrtitle \hfil \thepage}
 \def\@evenhead{\MakeRegistrationMarks\PrelimDraftfooter
   \normalsize\csname normalshape\endcsname\rm
   \thepage\hfil\midrtitle\qquad\rtitlex}
-\def\@oddfoot{}
-\def\@evenfoot{}
+
+% put title and author in footer.
+\def\@tubfullrunning{%
+  \def\@oddfoot{\hfil\@title}
+  \def\@evenfoot{\@getauthorlist\g@addto@rhAuthor\hfil}
+}
+
+% empty footer.
+\def\@tubminimalrunning{%
+  \def\@oddfoot{\hfil}
+  \def\@evenfoot{\hfil}
+}
+
 \def\ps@headings{}
 \pagestyle{headings}
 %    \end{macrocode}
+%
 % \subsection{Output routine}
 % Modified to alter |\brokenpenalty| across columns
 %
@@ -3020,7 +3041,7 @@
        \@whilesw\if@fcolmade \fi{\@outputpage\@startdblcolumn}\endgroup
     \fi}
 %    \end{macrocode}
-% 
+%
 % \subsection{Font-related definitions and machinery}
 % These are mostly for compatibility with plain |tugboat.sty|
 %    \begin{macrocode}
@@ -3146,7 +3167,7 @@
 % \begin{macro}{\creditfootnote}
 % \begin{macro}{\supportfootnote}
 % Sometimes we want the label ``Editor's Note:'', sometimes not.
-% 
+%
 %    \begin{macrocode}
 \def\creditfootnote{\nomarkfootnote\xEdNote}
 \def\supportfootnote{\nomarkfootnote\relax}
@@ -3330,10 +3351,10 @@
   \def\tugProcYear{2002}\fi
 %    \end{macrocode}
 % \end{macro}
-% 
+%
 % Now execute the default `year' option and get on with processing.
 % Note that this command gets ignored if the configuration file
-% specifies a silly year. 
+% specifies a silly year.
 %
 %    \begin{macrocode}
 \ExecuteOptions{tug\tugProcYear,title\TUGprocExtraOptions}
@@ -3619,7 +3640,7 @@
 % \begin{macro}{\ifshortAuthor}
 % \begin{macro}{\shortAuthor}
 % The \cs{rh*} commands are versions to be used in the running head of
-% the article.  Normally, they are the same things as the author and 
+% the article.  Normally, they are the same things as the author and
 % title of the article, but in the case that there are confusions
 % therein, the text should provide substitutes, using the \cs{short*}
 % commands.
@@ -3676,7 +3697,7 @@
 }
 
 \def\pfoottext{{\smc Preprint}: Proceedings of the \volyr{} Annual Meeting}
-\def\rfoottext{\normalfont\TUB, \volx\Dash 
+\def\rfoottext{\normalfont\TUB, \volx\Dash
    {Proceedings of the \volyr{} Annual Meeting}}
 
 \pagestyle{TBproc}
@@ -3696,7 +3717,7 @@
 % natural tendency to reference sections, which is a matter that needs
 % attention.  The class option \textsc{numbersec} once again numbers the
 % sections (and noticeably changes the layout).
-% 
+%
 %    \begin{macrocode}
 \if@proc@numbersec
 \else
