@@ -433,12 +433,12 @@
 %    \end{macrocode}
 %
 % Minimal running headers/footers contain just the TUGboat volume/issue
-% identification and page number.  `fullrunning' is the default, and
+% identification and page number.  `runningfull' is the default, and
 % includes title and author.
 %
 %    \begin{macrocode}
-\DeclareOption{minimalrunning}{\AtEndOfClass{\@tubminimalrunning}}
-\DeclareOption{fullrunning}{\AtEndOfClass{\@tubfullrunning}}
+\DeclareOption{runningminimal}{\AtEndOfClass{\@tubrunningminimal}}
+\DeclareOption{runningfull}{\AtEndOfClass{\@tubrunningfull}}
 %    \end{macrocode}
 %
 % Any other options, we pass on to |article.cls| before we load it:
@@ -452,7 +452,7 @@
 % class on top of which we reside.
 %
 %    \begin{macrocode}
-\ExecuteOptions{draft,extralabel,numbersec,rawcite,fullrunning}
+\ExecuteOptions{draft,extralabel,numbersec,rawcite,runningfull}
 \ProcessOptions
 \LoadClass[twoside]{article}
 %    \end{macrocode}
@@ -1078,9 +1078,9 @@
 % don't stay bold in description items, bold italic is too weird.
 \DeclareRobustCommand\meta[1]{%
   \ensuremath{\langle}%
-  \ifmmode \mbox{\mdseries\emph{#1}}% if in math
-  \else {\mdseries\emph{#1}}%
-  \fi
+  \ifmmode \mbox\bgroup \fi % if in math
+  {\it #1}% no typewriter italics, please
+  \ifmmode \egroup \fi
   \ensuremath{\rangle}%
 }
 %
@@ -1548,7 +1548,7 @@
 %    \end{macrocode}
 %
 % \cs{@getauthorlist} processes the author list, passing every bit of
-% stuff that needs to be typeset to its argument.
+% stuff that needs to be typeset to the macro specified as its argument.
 %    \begin{macrocode}
 \def\@getauthorlist#1{%
   \count@\authornumber
@@ -3004,13 +3004,20 @@
   \thepage\hfil\midrtitle\qquad\rtitlex}
 
 % put title and author in footer.
-\def\@tubfullrunning{%
+\def\@tubrunningfull{%
   \def\@oddfoot{\hfil\@title}
-  \def\@evenfoot{\@getauthorlist\g@addto@rhAuthor\hfil}
+  \def\@evenfoot{\@author\hfil}
 }
 
+\def\@tubrunninggetauthor#1{#1
+  \begingroup
+    \let\thanks\@gobble
+    \protected@xdef\rhAuthor{\the\toks@##1}%
+  \endgroup
+}%
+
 % empty footer.
-\def\@tubminimalrunning{%
+\def\@tubrunningminimal{%
   \def\@oddfoot{\hfil}
   \def\@evenfoot{\hfil}
 }
