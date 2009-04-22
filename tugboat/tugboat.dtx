@@ -1,8 +1,9 @@
 %^^A This (the production version of the macros) started life as xpt3
 %^^A and no need has arisen to perform other experiments...
-% tugboat.dtx - main source for LaTeX TUGboat classes.
 %
 % \iffalse (this is a meta-comment (so they say))
+% tugboat.dtx - main source for LaTeX TUGboat classes.
+%
 % Copyright 1994,1995,1996,1997,1998,2000,2001,2004,2005,2006,2007,2008,2009
 % TeX Users Group.
 %
@@ -1517,7 +1518,7 @@
 %
 % \subsection{Authors, contributors, addresses, signatures}
 %
-% Each article may have several authors (of course), so we permit an
+% An article may have several authors (of course), so we permit an
 % \cs{author} command for each of them.  The names are then stored in
 % a set of \cs{csname}s called \cs{author1}, \cs{author2}, \dots
 % Similarly, there are several \cs{address<n>} and \cs{netaddress<n>}
@@ -1770,7 +1771,7 @@
 % \item[\emph{Comment:}] I think this is a fantasy, since everyone (in
 %   practice, nowadays) quotes an internet address.  In principle, there
 %   are people who will quote |X.400| addresses (but they're few and far
-%   between) and I have (during 1995!) seen an address with an |UUCP|
+%   between) and I have (during 1995!)\ seen an address with an |UUCP|
 %   bang-path component on |comp.text.tex|, but \emph{really}!
 % \end{description}
 %
@@ -1822,10 +1823,8 @@
 % from (1) the lack of the eccentric optional argument, and (2) the
 % activation of `|/|'.
 %
-% We could imagine needing an \cs{URL} command in general.  If so, we
-% must remember that the code here would naturally permit a break
-% between the last two characters of |http://|, and some sort of
-% special action must be taken to ensure that it doesn't happen.
+% For general URLs, \texttt{url.sty} (with or without hyperref) suffices
+% and is recommended.
 %
 %    \begin{macrocode}
 \def\personalURL{\begingroup
@@ -1951,6 +1950,19 @@
 %    \end{macrocode}
 % \end{macro}
 % \end{macro}
+% \end{macro}
+%
+% For the online re-publication with Mathematical Sciences Publishers
+% |http://mathscipub.org|), lots and lots of metadata is needed, much of
+% it redundant with things we already do.  They are flexible enough to
+% allow us to specify it in any reasonable way, so let's make one
+% command \cs{mspmetavar} which takes two arguments.  Example:
+% |\mspmetavar{volumenumber}{30}|.  For our purposes, it is just a no-op.
+%
+% \begin{macro}{\mspmetavar}
+%    \begin{macrocode}
+\def\mspmetavar#1#2{}
+%    \end{macrocode}
 % \end{macro}
 %
 % \subsection{Section titles}
@@ -2171,7 +2183,7 @@
   \vspace{.5\baselineskip}}
 %    \end{macrocode}
 %
-% \subsection{Headings}
+% \subsection{Section headings}
 %
 %  Redefine style of section headings to match plain \TUB.
 %  Negative beforeskip suppresses following parindent.  (So
