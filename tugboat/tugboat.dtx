@@ -313,7 +313,7 @@
 %
 % \subsection{Setup and options}
 %
-% Check for reloading.  Hmmm\dots  Does this happen with \LaTeXe
+% Check for reloading.  Hmmm\dots  Does this happen with \LaTeXe\
 % classes?  Probably, in fact, as well that it doesn't, since the
 % \cs{tugstyinit} referenced here doesn't exist; however, it's
 % possible that we might need a similar mechanism in the future, so we
@@ -1679,7 +1679,7 @@
 \def\signaturemark{\leavevmode\llap{$\diamond$\enspace}}
 %    \end{macrocode}
 %
-% The code used to define the following:
+% The code previously defined the following:
 %
 % {\small\begin{verbatim}
 %   {\makeactive\@
@@ -1908,6 +1908,22 @@
 \def\@author{\@defaultauthorlist}
 %    \end{macrocode}
 %
+% For the online re-publication (as of 2009) by Mathematical Sciences
+% Publishers |http://mathscipub.org|), lots and lots of metadata is
+% needed, much of it redundant with things we already do.  They are
+% flexible enough to allow us to specify it in any reasonable way, so
+% let's make one command \cs{mspmetavar} which takes two arguments.
+% Example: |\mspmetavar{volumenumber}{30}|.  For our purposes, it is
+% just a no-op.
+%
+% \begin{macro}{\mspmetavar}
+%    \begin{macrocode}
+\def\mspmetavar#1#2{}
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsection{Article title}
+%
 % \begin{macro}{\if@articletitle}
 % \begin{macro}{\maketitle}
 % \begin{macro}{\@r@maketitle}
@@ -1952,17 +1968,41 @@
 % \end{macro}
 % \end{macro}
 %
-% For the online re-publication with Mathematical Sciences Publishers
-% |http://mathscipub.org|), lots and lots of metadata is needed, much of
-% it redundant with things we already do.  They are flexible enough to
-% allow us to specify it in any reasonable way, so let's make one
-% command \cs{mspmetavar} which takes two arguments.  Example:
-% |\mspmetavar{volumenumber}{30}|.  For our purposes, it is just a no-op.
-%
-% \begin{macro}{\mspmetavar}
+% \begin{macro}{\title}
+% \begin{macro}{\TB@title}
+% We redefine the \cs{title} command, so as to set the \cs{rhTitle}
+% command at the same time.  While we're at it, we redefine it to have
+% optional arguments for use as `short' versions, thus obviating the
+% need for users to use the \cs{shortTitle} command.
 %    \begin{macrocode}
-\def\mspmetavar#1#2{}
+\def\rhTitle{}% avoid error if no author or title
+\renewcommand\title{\@dblarg\TB@title}
+\def\TB@title[#1]#2{\gdef\@title{#2}%
+  \bgroup
+    \let\thanks\@gobble
+    \def\\{\unskip\space\ignorespaces}%
+    \protected@xdef\rhTitle{#1}%
+  \egroup
+}
 %    \end{macrocode}
+% \end{macro}
+% \end{macro}
+%
+% \begin{macro}{\shortTitle}
+% \begin{macro}{\ifshortAuthor}
+% \begin{macro}{\shortAuthor}
+% The \cs{rh*} commands are versions to be used in the running head of
+% the article.  Normally, they are the same things as the author and
+% title of the article, but in the case that there are confusions
+% therein, the text should provide substitutes, using the \cs{short*}
+% commands.
+%    \begin{macrocode}
+\def\shortTitle #1{\def\rhTitle{#1}}
+\newif\ifshortAuthor
+\def\shortAuthor #1{\def\rhAuthor{#1}\shortAuthortrue}
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
 % \end{macro}
 %
 % \subsection{Section titles}
@@ -3017,7 +3057,7 @@
 
 % put title and author in footer.
 \def\@tubrunningfull{%
-  \def\@oddfoot{\hfil\@title}
+  \def\@oddfoot{\hfil\rhTitle}
   \def\@evenfoot{\@author\hfil}
 }
 
@@ -3633,43 +3673,6 @@
 \renewcommand{\makesignature}{\TBWarning
          {\string\makesignature\space is invalid in proceedings issues}}
 %    \end{macrocode}
-% \end{macro}
-%
-% \begin{macro}{\title}
-% \begin{macro}{\TB@title}
-% We redefine the \cs{title} command, so as to set the \cs{rhTitle}
-% command at the same time.  While we're at it, we redefine it to have
-% optional arguments for use as `short' versions, thus obviating the
-% need for users to use the \cs{shortTitle} command.
-%    \begin{macrocode}
-\def\rhTitle{}% avoid error if no author or title
-\renewcommand\title{\@dblarg\TB@title}
-\def\TB@title[#1]#2{\gdef\@title{#2}%
-  \bgroup
-    \let\thanks\@gobble
-    \let\\\ %
-    \protected@xdef\rhTitle{#1}%
-  \egroup
-}
-%    \end{macrocode}
-% \end{macro}
-% \end{macro}
-%
-% \begin{macro}{\shortTitle}
-% \begin{macro}{\ifshortAuthor}
-% \begin{macro}{\shortAuthor}
-% The \cs{rh*} commands are versions to be used in the running head of
-% the article.  Normally, they are the same things as the author and
-% title of the article, but in the case that there are confusions
-% therein, the text should provide substitutes, using the \cs{short*}
-% commands.
-%    \begin{macrocode}
-\def\shortTitle #1{\def\rhTitle{#1}}
-\newif\ifshortAuthor
-\def\shortAuthor #1{\def\rhAuthor{#1}\shortAuthortrue}
-%    \end{macrocode}
-% \end{macro}
-% \end{macro}
 % \end{macro}
 %
 % \begin{macro}{\ps@TBproctitle}
