@@ -2588,6 +2588,12 @@
 \def\fnum@table{{\small \bf \tablename\nobreakspace\thetable}}
 %    \end{macrocode}
 %
+% Let's reduce the default space above captions a bit, and give it some
+% flexibility.  The default is |10pt|, which seems too much.
+%    \begin{macrocode}
+\setlength\abovecaptionskip{6pt plus1pt minus1pt}
+%    \end{macrocode}
+%
 % \subsection{Size changing commands}
 %
 % Apart from their `normal' effects, these commands change the glue
