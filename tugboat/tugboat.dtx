@@ -160,6 +160,7 @@
 % |\JTeX|&\\
 % |\JoT|&           The Joy of \TeX\\
 % |\LaTeX|&\\
+% |\LyX|&\\
 % |\MacOSX|&        Mac OS X\\
 % |\MathML|&\\
 % |\Mc|&            M with raised c\\
@@ -206,6 +207,7 @@
 % |\UNIX|&\\
 % |\UTF|&\\
 % |\VAX|&\\
+% |\VnTeX|&\\
 % |\VorTeX|&\\
 % |\XeT|&\\
 % |\XeTeX|&         reflected and lowered first `E'\\
@@ -714,6 +716,7 @@
 %
 %    \begin{macrocode}
 %<!latex>\def\LaTeX{\La\kern-.15em\TeX}
+\def\LyX{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX}
 \def\MacOSX{Mac\,\acro{OS\,X}}
 \def\MathML{Math\acro{ML}}
 \def\Mc{\setbox\TestBox=\hbox{M}M\vbox
@@ -795,6 +798,7 @@
 \def\UNIX{\acro{UNIX}}
 \def\UTF{\acro{UTF}}
 \def\VAX{V\kern-.12em A\kern-.1em X\@}
+\def\VnTeX{V\kern-.03em n\kern-.02em \TeX}
 \def\VorTeX{V\kern-2.7\p@\lower.5ex\hbox{O\kern-1.4\p@ R}\kern-2.6\p@\TeX}
 \def\XeT{X\kern-.125em\lower.424ex\hbox{E}\kern-.1667emT\@}
 \def\XML{\acro{XML}}
@@ -1145,6 +1149,12 @@
                         \else th%                nth
                         \fi}%
 }
+%    \end{macrocode}
+%
+% One more accent.
+%
+%    \begin{macrocode}
+\def\r#1{\accent"17 #1}
 %    \end{macrocode}
 %
 % \subsection{Reviews}
@@ -2651,11 +2661,24 @@
   }
 \def\quote{\list{}{\rightmargin.5\leftmargin}\item[]}
 %    \end{macrocode}
+%
 % From Dominik Wujastyk's font article.  First paragraph of a quotation
 % will not be indented, and right margin is decreased for narrow columns.
 %    \begin{macrocode}
 \renewcommand{\quotation}{\list{}{\listparindent 1.5em
      \rightmargin.5\leftmargin\parsep \z@\@plus\p@}\item[]}
+%    \end{macrocode}
+%
+% The |compactitemize| environment, without space between the items.
+%
+%    \begin{macrocode}
+\newenvironment{compactitemize}%
+   {\begin{itemize}%
+     \setlength{\itemsep}{0pt}%
+     \setlength{\parskip}{0pt}%
+     \setlength{\parsep} {0pt}%
+   }%
+   {\end{itemize}}
 %    \end{macrocode}
 %
 % \subsection{Some fun with \texttt{verbatim}}
