@@ -3,7 +3,7 @@
 %
 % \iffalse (this is a meta-comment (so they say))
 % Copyright 1995,1996,1997,1998,2000,2004,2006,2007,2009 TeX Users Group.
-% 
+%
 % It may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either version 1.3
 % of this license or (at your option) any later version.
@@ -11,15 +11,15 @@
 %    http://www.latex-project.org/lppl.txt
 % and version 1.3 or later is part of all distributions of LaTeX
 % version 2003/12/01 or later.
-% 
+%
 % This file has the LPPL maintenance status "maintained".
-% 
+%
 % The Current Maintainer of this work is the TeX Users Group
 % (http://tug.org/TUGboat).
-% 
+%
 % The list of all files belonging to this package is given in the file
 % `manifest.txt'.
-% 
+%
 % The list of derived (unpacked) files belonging to the distribution
 % and covered by LPPL is defined by the unpacking scripts (with
 % extension .ins) which are part of the distribution.
@@ -30,7 +30,7 @@
 %
 % This file used to be generated from tugboat.dtx, but is now distributed
 % as a stand-alone file.
-% 
+%
 ENTRY
   { address
     author
@@ -309,7 +309,7 @@ FUNCTION {format.in.editors}
 }
 
 FUNCTION {quote.period.spacing}         % OP: reduce space between quotes and
-{ "\kern -.15em"                        % period; remove negative kern by
+{ "\kern -.08em"                        % period; remove negative kern by
 }                                       % replacing this simply with ""
 
 FUNCTION {format.title}                 % OP: a period follows the
@@ -1193,6 +1193,6 @@ FUNCTION {end.bib}
 }
 
 EXECUTE {end.bib}
-%% 
+%%
 %%
 %% End of file `ltugbib.bst'.
