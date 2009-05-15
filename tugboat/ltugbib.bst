@@ -309,7 +309,7 @@ FUNCTION {format.in.editors}
 }
 
 FUNCTION {quote.period.spacing}         % OP: reduce space between quotes and
-{ "\kern -.08em"                        % period; remove negative kern by
+{ ""                                    % period; remove negative kern by
 }                                       % replacing this simply with ""
 
 FUNCTION {format.title}                 % OP: a period follows the
