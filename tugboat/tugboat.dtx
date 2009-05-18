@@ -2580,6 +2580,7 @@
      % indent full-width captions {figure*}, but not single-column {figure}.
      \ifdim\hsize = \textwidth
        \leftskip=\tubfullpageindent \rightskip=\leftskip
+       \advance\rightskip by 0pt plus2em  % increase acceptable raggedness
      \fi
      \noindent #1: #2\par}%
   \else
