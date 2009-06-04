@@ -643,13 +643,14 @@
 %
 % make \BibTeX work in slanted contexts too; it's common in titles, and
 % especially burdensome to hack in .bib files.
-\def\BibTeX{%
+\def\Bib{%
   \ifdim \fontdimen1\font>0pt
      B{\SMC\SMC IB}%
   \else
-     \textsc{Bib}\kern-.08em
+     \textsc{Bib}%
   \fi
-  \TeX}
+}
+\def\BibTeX{\Bib\kern-.08em \TeX}
 %
 \def\CandT{\textsl{Computers \& Typesetting}}
 \def\CJK{\acro{CJK}}
@@ -761,6 +762,7 @@
 \def\PiC{P\kern-.12em\lower.5ex\hbox{I}\kern-.075emC\@}
 \def\PiCTeX{\PiC\kern-.11em\TeX}
 \def\PGF{\acro{PGF}}
+\def\PHP{\acro{PHP}}
 \def\plain{\texttt{plain}}
 \def\PNG{\acro{PNG}}
 \def\POBox{P.\thinspace O.~Box }
@@ -772,6 +774,7 @@
 \def\SliTeX{\textrm{S\kern-.06em\textsc{l\kern-.035emi}%
                      \kern-.06em\TeX}}
 \def\slMF{\textsl{\MF}} % should never be used
+\def\SQL{\acro{SQL}}
 \def\stTeX{\textsc{st}\kern-0.13em\TeX}
 \def\STIX{\acro{STIX}}
 \def\SVG{\acro{SVG}}
