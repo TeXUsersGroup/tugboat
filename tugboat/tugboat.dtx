@@ -31,7 +31,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2009/06/21 v2.6
+                   [2009/09/07 v2.6
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -2806,12 +2806,21 @@
 }
 %    \end{macrocode}
 %
-% Finally, we define the \cs{if} used by the \cs{ruled} option
+% Define the \cs{if} used by the \cs{ruled} option:
 %
 %    \begin{macrocode}
 \let\if@ruled\iffalse
 %    \end{macrocode}
 %
+% Finally, if |microtype| is loaded, we want it to be deactivated in
+% verbatim blocks.  It often manipulates a leading |\| rather too much.
+%    \begin{macrocode}
+\AtBeginDocument{%
+   \@ifpackageloaded{microtype}
+     {\g@addto@macro\@verbatim{\microtypesetup{activate=false}}}{}
+}
+%    \end{macrocode}
+
 % \subsection{Bibliography}
 % \label{sec:citations}
 % This is more or less copied verbatim from Glenn Paulley's
@@ -3752,7 +3761,8 @@
     \else\thepage\hfil\rfoottext\fi\dopagecommands}%
 }
 
-\def\pfoottext{{\smc Preprint}: Proceedings of the \volyr{} Annual Meeting}
+\def\pfoottext{{\smc Preprint}:
+   Proceedings of the \volyr{} Annual Meeting}
 \def\rfoottext{\normalfont\TUB, \volx\Dash
    {Proceedings of the \volyr{} Annual Meeting}}
 
