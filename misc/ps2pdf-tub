@@ -1,0 +1,36 @@
+#!/bin/sh
+# Copyright 2009, 2010 TeX Users Group.
+# You may freely use, modify and/or distribute this file.
+# 
+# ps2pdf (or pdf2pdf), but always embedding fonts, and optionally with
+# Jacko's distillation parameters to prevent gs from reducing resolution
+# of embedded bitmaps, and allow just one filename arg, meaning overwrite.
+
+: ${gs=gs}
+: ${zdistill=""} #-f ../zdistill.rip"}
+
+if test $# -eq 1; then
+  set - "$1" "$1.tmppdf"
+fi
+
+$gs \
+   -q -dNOPAUSE -dBATCH \
+   -dEmbedAllFonts -dPDFX=true \
+   -sDEVICE=pdfwrite \
+   -sOutputFile="$2" $zdistill -c .setpdfwrite \
+   -f "$1" quit.ps
+
+if test x"$2" = "x$1.tmppdf"; then
+  mv "$2" "$1"
+fi
+
+# unfortunately it is not possible to tell gs to leave bitmaps alone,
+# and all other options are inferior to the default.
+# http://groups.google.com/group/comp.text.tex/browse_thread/thread/86cfc756bf120b17?hl=en
+# -dDownsampleColorImages=false \
+# -dDownsampleGrayImages=false \
+# -dDownsampleMonoImages=false \
+# -dColorImageFilter=/FlateEncode \
+# -dGrayImageFilter=/FlageEncode \
+# -dMonoImageFilter=/CCITTFaxEncode
+

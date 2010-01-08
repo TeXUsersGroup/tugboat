@@ -1,0 +1,142 @@
+% $Id$
+% Copyright 1999, 2006, 2008, 2009, 2010 TeX Users Group.
+% You may freely use, modify and/or distribute this file.
+%
+% "fake" ConTeXt in LaTeX, for simple-enough documents.
+% Does not even pretend to be exhaustive, but still goes some way to
+% minimizing diffs from the original sources.
+% Frontmatter has to be done by hand.
+
+\def\subject{\section}
+\def\subsubject{\subsection}
+%
+\def\startAbstract{\begin{abstract}}
+\let\StartAbstract=\startAbstract
+%
+\def\stopAbstract{\end{abstract}}
+\let\StopAbstract=\stopAbstract
+%
+\def\stopArticle{\end{document}}
+\let\StopArticle=\stopArticle
+
+\def\startitemize{\begin{itemize}}
+\def\stopitemize{\end{itemize}}
+\def\head{\item}
+\def\startitem{\item}
+\let\stopitem=\relax
+\let\stop=\relax
+
+\def\AFM       {\acro{AFM}}
+\def\ALEPH     {Aleph}
+\def\CCODE     {C code}
+\def\CONTEXT   {\ConTeXt}
+\def\CFF       {\acro{CFF}}
+\def\CTXTOOLS  {{\tt ctxtools}}
+\def\CWEB      {\acro{CWEB}}
+\def\DVITOMP   {{\tt dvitomp}}
+\def\DVIPDFMX  {\DVIPDFMx}
+\def\ENC       {\acro{ENC}}
+\def\EPS       {\acro{EPS}}
+\def\ETEX      {\eTeX}
+\def\EXAMPLE   {\textsf{Example}}
+\def\FONTINST  {fontinst}
+\def\FONTFORGE {FontForge}
+\def\HZ        {Hz}
+\def\INI       {\acro{INI}}
+\def\IO        {\acro{I/O}}
+\def\KPSE      {{\tt kpse}}
+\def\KPSEWHICH {{\tt kpsewhich}}
+\def\LATEX     {\LaTeX}
+\def\LINUX     {Linux}
+\def\LUA       {Lua}
+\def\LUATEX    {\LUA\-\TeX}
+\def\LUATOOLS  {{\tt luatools}}
+\def\MAKEMPX   {{\tt makempx}}
+\def\MAP       {\acro{MAP}}
+\def\MATHML    {\MathML}
+\def\METAFONT  {\MF}
+\def\METAPOST  {MetaPost}
+\def\METATEX   {Meta\TeX}
+\def\MIKTEX    {MiK\-\TeX}
+\def\MKII      {Mk\acro{II}}
+\def\MKIV      {Mk\acro{IV}}
+\def\MKTEXLSR  {{\tt mktexlsr}}
+\def\MODULA    {Modula}
+\def\MPLIB     {\acro{MP}lib}
+\def\MPTO      {{\tt mpto}}
+\def\MPTOPDF   {{\tt mptopdf}}
+\def\MTXRUN    {{\tt mtxrun}}
+\def\NOWEB     {\acro{NOWEB}}
+\def\OFM       {\acro{OFM}}
+\def\OMEGA     {Omega}
+\def\OPENTYPE  {Open\-Type}
+\def\PASCAL    {Pascal}
+\def\PDFTEX    {pdf\-\/\TeX}
+\def\PERL      {Perl}
+\def\PLAIN     {{\tt plain}}
+\def\POSTSCRIPT{\PS}
+\def\RUBY      {Ruby}
+\def\SCITE     {Scite}
+\def\TDS       {\acro{TDS}}
+\def\TEX       {\TeX}
+\def\TEXEXEC   {{\tt texexec}}
+\def\TEXLIVE   {\TeX\ Live}
+\def\TEXMFSTART{{\tt texmfstart}}
+% \def\TFM already in tub
+\def\TODO      {\acro{TODO}}
+\def\TRUETYPE  {TrueType}
+\def\TUG       {\tug}
+\def\TYPEONE   {Type~1}
+\def\UCS       {\acro{UCS}}
+\def\UNICODE   {Unicode}
+\def\URL       {url}
+\def\VF        {\acro{VF}}
+\def\WEBTOC    {Web2C}
+\def\WEB       {\acro{WEB}}
+\def\WIKI      {Wiki}
+\def\WINDOWS   {Windows}
+\def\XETEX     {\XeTeX}
+\def\ZIP       {{\tt zip}}
+
+\def\crlf{\newline}
+\def\high{\textsuperscript}
+\def\hyphenatedurl{\url}
+\def\quote#1{`#1'}
+\def\tex{\cs}
+\def\unknown{\ldots}
+
+\def\type{\bgroup \catcode`_=12 \catcode`\\=12 \finishtype}
+\def\finishtype#1{\texttt{#1}\egroup}
+
+\def\starttyping{\begin{verbatim}[\small]}
+% \end{verbatim} has to be literal.
+
+\def\starttabulate{\begin{tabular}}
+\def\stoptabulate{\end{tabular}}
+\def\NR{\\}
+\def\NC{&}
+\def\HL{\hline}
+
+{\obeylines %
+ \gdef\startcomponent{\bgroup \obeylines \ignoretoeol}%
+ \gdef\ignoretoeol#1^^M{\egroup}%
+ \global\let\environment=\startcomponent %
+ \global\let\start=\startcomponent %
+}
+\def\stopcomponent{}
+\def\blank{}
+\def\page{}
+
+\catcode`|=13
+\def|{\futurelet\next\finishbar}
+\def\finishbar{\begingroup %\show\next
+  \ifx\next|%
+    -%
+  \else\ifx\next/%
+    \slash
+  \else
+    \next
+  \fi\fi
+  \endgroup
+  \gobble
+}

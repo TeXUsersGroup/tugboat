@@ -1,0 +1,107 @@
+% $Id$
+% Copyright 1999, 2006, 2008, 2009, 2010 TeX Users Group.
+% You may freely use, modify and/or distribute this file.
+%
+% This is a LaTeX2e package for TUGboat abstract summaries,
+% originally just for cahiers.
+%
+\def\filedate{2010/01/07}
+\ProvidesPackage{cahiers}[\filedate TUGboat abstract summaries]
+%
+% uses production LaTeX2e commands
+\NeedsTeXFormat{LaTeX2e}[1994/12/01]
+%
+% KB  2009/06/02  load other packages, have \credit do a \vspace.
+% KB  2008/02/22  \addvspace wins.
+% KB  2006/01/30  many fixes since :).
+% MB  1999/08/03  macros taken from tb61cahi.ltx
+
+% we always need these packages, no point in making all the abstracts
+% load them explicitly.
+\usepackage{graphicx}
+\usepackage{url}
+
+% used to rlap pageno in tb92mitt
+\ifx\undefined\cgprepagenohook \let\cgprepagenohook=\relax \fi
+\ifx\undefined\cgpostpagenohook \let\cgpostpagenohook=\relax \fi
+
+\def\killhyph#1-<{#1}
+\def\cgpgno#1-#2<{\def\testpg{#2}%
+     \penalty-5 \enskip \cgprepagenohook \ifx \testpg\empty p.\,#1\else
+     pp.\,#1--\killhyph#2<\fi \cgpostpagenohook }
+\renewcommand{\and}{\textup{and }}
+\newif\iffrtitle \frtitletrue
+\newcommand{\cgart}[4]{\ifvmode \addvspace{\medskipamount}\fi
+     {\raggedright \noindent
+      \setbox0\hbox{#2}%        % check for presence of author
+      \ifdim\wd0>.2em
+        {\def\fn##1{\textrm{##1\unskip}}%
+         \scshape{#2\unskip}},
+      \fi
+      \setbox0\vbox{\noindent #3}%        % check for presence of French title
+      \ifdim\wd0>.2em #3\unskip
+      \else \frtitlefalse
+      \fi
+      \setbox0\hbox{#4}%        % check for presence of English title
+      \ifdim\wd0>.2em
+        \penalty-2\enskip
+        \iffrtitle[\fi\ignorespaces#4\unskip\iffrtitle]\fi
+      \fi
+      \unskip
+      \def\testpg{#1}%
+      \ifx\testpg\empty \else
+        ;%
+        \cgpgno #1-<%
+      \fi
+      \endgraf
+     }\nobreak }
+\def\cgad#1#2{\ifvmode \medskip \fi
+     {\raggedright \noindent #2\unskip \cgpgno #1-<\endgraf }\nobreak
+     }
+
+\newcommand{\keywords}{\textit{Keywords}: }
+
+\newenvironment{urlblock}{%
+  \begingroup
+    \leftskip=\normalparindent
+    \parindent=-\leftskip
+    \raggedright
+}{%
+  \endgroup
+}
+
+\newcommand{\credit}[1]%
+  {\begingroup
+   \ifvmode
+     \nobreak\par
+     \nobreak\vskip 1pc plus.5pc minus.5pc
+     \nobreak
+     \raggedleft
+   \else
+     \unskip\nobreak\hfil\null\quad\penalty0\hskip0pt\quad\null\hfil
+   \fi
+   \parfillskip=0pt
+   [#1]\par
+   \endgroup}
+
+\newenvironment{compnote}{%
+    \addvspace{.5pc}%% to put some space after \credit
+    \noindent\small\ignorespaces
+}{\par}
+\newcommand{\SummaryNote}[1]{%
+    \addvspace{\smallskipamount}%
+    \noindent{\EdNoteFont #1}\,:\par
+    \hangindent.5\normalparindent \hangafter=0 \noindent \ignorespaces}
+\newcommand{\newpar}{\unskip\hfil\break\indent
+    \hangindent.5\normalparindent}
+
+\newcommand{\pubdesc}[1]{%
+%\centerline{\vrule width6pc height.4pt depth0pt}
+%\medskip
+\noindent \xEdNote{#1}\vskip-\medskipamount
+}
+
+\def\TeXemplares{\textit{\TeX\kern-.06em emplares}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\endinput
