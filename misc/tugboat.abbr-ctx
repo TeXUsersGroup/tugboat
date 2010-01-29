@@ -19,7 +19,7 @@
 \def\stopArticle{\end{document}}
 \let\StopArticle=\stopArticle
 
-\def\startitemize{\begin{itemize}}
+\def\startitemize[packed]{\begin{itemize}}
 \def\stopitemize{\end{itemize}}
 \def\head{\item}
 \def\startitem{\item}
@@ -122,10 +122,15 @@
  \gdef\ignoretoeol#1^^M{\egroup}%
  \global\let\environment=\startcomponent %
  \global\let\start=\startcomponent %
+ \global\let\startchapter=\startcomponent %
 }
-\def\stopcomponent{}
+\def\stopcomponent{\makesignature \end{document}}
 \def\blank{}
 \def\page{}
+
+\def\startsection[title=#1]{\section{#1}}
+\def\stopsection{}
+\def\stopchapter{}
 
 \catcode`|=13
 \def|{\futurelet\next\finishbar}
