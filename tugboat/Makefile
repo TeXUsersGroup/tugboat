@@ -15,3 +15,9 @@ ltugcomn.sty ltugboat.sty: tugboat.ins tugboat.dtx
 check: ltugboat.sty
 	$(pdflatex) tubptest.tex
 	$(pdflatex) tubatest.tex
+
+dist: tugboat.zip
+tugboat.zip: README ltubguid.pdf manifest.txt tugboat.ins \
+		ltubguid.ltx ltugbib.bst tugboat.dtx tugboat.pdf
+	chmod a+rw $^
+	zip $@ $^

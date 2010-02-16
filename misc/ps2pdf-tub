@@ -13,9 +13,12 @@ if test $# -eq 1; then
   set - "$1" "$1.tmppdf"
 fi
 
+# -dDEVICEWIDTHPOINTS=679 -dDEVICEHEIGHTPOINTS=1598
+# -sPAPERSIZE=a4
+
 $gs \
    -q -dNOPAUSE -dBATCH \
-   -dEmbedAllFonts -dPDFX=true \
+   -dEmbedAllFonts -dPDFX=true -dAutoRotatePages=/None \
    -sDEVICE=pdfwrite \
    -sOutputFile="$2" $zdistill -c .setpdfwrite \
    -f "$1" quit.ps
