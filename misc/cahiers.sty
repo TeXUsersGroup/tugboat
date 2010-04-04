@@ -11,6 +11,7 @@
 % uses production LaTeX2e commands
 \NeedsTeXFormat{LaTeX2e}[1994/12/01]
 %
+% KB  2010/04/04  no "Editor's note:" in \pubdesc.
 % KB  2009/06/02  load other packages, have \credit do a \vspace.
 % KB  2008/02/22  \addvspace wins.
 % KB  2006/01/30  many fixes since :).
@@ -98,7 +99,7 @@
 \newcommand{\pubdesc}[1]{%
 %\centerline{\vrule width6pc height.4pt depth0pt}
 %\medskip
-\noindent \xEdNote{#1}\vskip-\medskipamount
+\noindent {#1}\vskip-\medskipamount
 }
 
 \def\TeXemplares{\textit{\TeX\kern-.06em emplares}}
