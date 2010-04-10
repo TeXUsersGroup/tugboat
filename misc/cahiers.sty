@@ -5,12 +5,13 @@
 % This is a LaTeX2e package for TUGboat abstract summaries,
 % originally just for cahiers.
 %
-\def\filedate{2010/01/07}
+\def\filedate{2010/04/10}
 \ProvidesPackage{cahiers}[\filedate TUGboat abstract summaries]
 %
 % uses production LaTeX2e commands
 \NeedsTeXFormat{LaTeX2e}[1994/12/01]
 %
+% KB  2010/04/10  minor new macros.
 % KB  2010/04/04  no "Editor's note:" in \pubdesc.
 % KB  2009/06/02  load other packages, have \credit do a \vspace.
 % KB  2008/02/22  \addvspace wins.
@@ -30,8 +31,17 @@
 \def\cgpgno#1-#2<{\def\testpg{#2}%
      \penalty-5 \enskip \cgprepagenohook \ifx \testpg\empty p.\,#1\else
      pp.\,#1--\killhyph#2<\fi \cgpostpagenohook }
+
 \renewcommand{\and}{\textup{and }}
+
 \newif\iffrtitle \frtitletrue
+
+% #1 - page numbers
+% #2 - author(s)
+% #3 - original-language title (if present)
+% #4 - English title (#3 if no original title)
+% Then a \par, then the English abstract.
+% 
 \newcommand{\cgart}[4]{\ifvmode \addvspace{\medskipamount}\fi
      {\raggedright \noindent
       \setbox0\hbox{#2}%        % check for presence of author
@@ -97,16 +107,14 @@
     \hangindent.5\normalparindent}
 
 \newcommand{\pubdesc}[1]{%
-%\centerline{\vrule width6pc height.4pt depth0pt}
-%\medskip
 \noindent {#1}\vskip-\medskipamount
 }
+
+\def\code{\url}
+\def\pkg#1{\mbox{\texttt{#1}}}
 
 \def\TeXemplares{\textit{\TeX\kern-.06em emplares}}
 
 % for zpravodaj
 \DeclareRobustCommand\CS{\leavevmode{$\cal C$}\kern-.3em \lower
         .67ex\hbox{$\cal S$}\kern-.145em }
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\endinput
