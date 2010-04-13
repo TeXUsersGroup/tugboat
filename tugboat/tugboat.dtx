@@ -1627,12 +1627,13 @@
 %    \begin{macrocode}
 \def\@defaultsignature{{%
     \let\thanks\@gobble
+    \frenchspacing
+    %
     \ifnum\authornumber<0
 %    \end{macrocode}
 % if \cs{authornumber}$<0$, we are in a contributor's section
 %    \begin{macrocode}
       \medskip
-      \frenchspacing
       \signaturemark
       \theauthor{\number\authornumber}\\
       \theaddress{\number\authornumber}\\
