@@ -60,6 +60,13 @@
 
 \setupbodyfont [10pt]
 
+% Italic rather than slanted for emphasis.
+\setupbodyfontenvironment[default][em=italic]
+
+% Break after / and . in urls, not before.
+\sethyphenatedurlafter /
+\sethyphenatedurlafter .
+
 %D \section Layout Setup %<<<1
 %D
 %D The original layout used in the \LATEX\ style for \TUGBOAT\ is a bit
