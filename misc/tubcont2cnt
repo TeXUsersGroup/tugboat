@@ -1,0 +1,100 @@
+#!/usr/bin/env perl
+# $Id$
+# convert \getpage{papername} to page range for barbara's .cnt files
+# and capsule.  See ~www/README for usage.
+# When an item is contained on a single page, Barbara wants 100-100.
+# Public domain.
+
+$ERROR_COUNT = 0;
+exit (&main ());
+
+sub main
+{
+  if (@ARGV > 0) {
+    chomp (my $dir = `dirname $ARGV[0]`);
+    chdir ("$dir/..") || die "chdir($dir/..) failed: $!";
+    while (<>) { # assume absolute path
+      print &substitute_pages ($_);
+    }
+    return 0;
+  }
+  
+  my $tubdir = "$ENV{tp}";
+  chdir ($tubdir) || die "chdir($tubdir) failed: $!";
+  
+  $CONT = glob ("covers/tb[0-9]*cont.tex");
+  open (CONT) || die "open($CONT) failed: $!";
+  while (<CONT>) {
+    print &substitute_pages ($_);
+  }
+  close (CONT) || warn "close($CONT) failed: $!";
+
+  return $ERROR_COUNT;
+}
+
+# return LINE with any \getpage or \getlastpage substituted with the
+# actual page numbers, usually a range.
+# 
+sub substitute_pages
+{
+  my ($line) = @_;
+
+  # handle \getpage and \getfirstpage identically.
+  if ($line =~ /^[^%].*\\get(?:first)?page\{(.*?)\}/) { # uncommented page line
+    my $item_name = $1;
+
+    my $firstpage = &get_page ("$item_name/firstpage.tex");
+    my $lastpage = &get_page ("$item_name/lastpage.tex");
+
+    # what gets written to lastpage.tex is actually one more than the
+    # final page number.
+    $lastpage-- if $lastpage > 0;
+
+    $line =~ s/\\get(first)?page\{(.*?)\}/$firstpage-$lastpage/;
+
+  # for \getlastpage, force the range to be on one page
+  # (although it's not clear to me that this special case is really needed).
+  } elsif ($line =~ /^[^%].*\\getlastpage\{(.*?)\}/) {
+    my $item_name = $1;
+
+    # sometimes we do merges, so the last page of item x has item y.
+    # in this case, item y is always contained on one page.
+    my $lastpage = &get_page ("$item_name/lastpage.tex");
+    $lastpage-- if $lastpage > 0;
+    $firstpage = $lastpage;
+    
+    $line =~ s/\\getlastpage\{(.*?)\}/$firstpage-$lastpage/;
+  }  
+
+  return $line;
+}
+
+
+# read per-paper file to get either starting or ending page number.
+# increment global $ERROR_COUNT if problems.
+# 
+sub get_page
+{
+  my ($pagefile) = @_;
+  
+  my $page = "OOPS";
+
+  my @page = `cat $pagefile`;
+  if (! @page) {
+    warn "*** no $pagefile?\n";
+    $ERROR_COUNT++;
+
+  } else {
+    # firstpage.tex example: \startpage = 269
+    my (undef,undef,$try) = split (" ", $page[0]);
+    if ($try <= 0) {
+      warn "*** page number in $pagefile not positive?\n";
+      $ERROR_COUNT++;
+
+    } else {  # all is well.
+      $page = $try;
+    }
+  }
+
+  return $page;
+}
