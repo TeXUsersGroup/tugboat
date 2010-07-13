@@ -19,8 +19,10 @@
 \def\stopArticle{\end{document}}
 \let\StopArticle=\stopArticle
 
-\def\startitemize[packed]{\begin{itemize}}
+\def\startitemize{\begin{itemize}}
 \def\stopitemize{\end{itemize}}
+\def\startitemizepacked]{\begin{compactitemize}}
+\def\stopitemizepacked{\end{compactitemize}}
 \def\head{\item}
 \def\startitem{\item}
 \let\stopitem=\relax
@@ -30,6 +32,7 @@
 \def\ALEPH     {Aleph}
 \def\CCODE     {C code}
 \def\CONTEXT   {\ConTeXt}
+\def\C         {C}
 \def\CFF       {\acro{CFF}}
 \def\CTXTOOLS  {{\tt ctxtools}}
 \def\CWEB      {\acro{CWEB}}
@@ -41,6 +44,7 @@
 \def\EXAMPLE   {\textsf{Example}}
 \def\FONTINST  {fontinst}
 \def\FONTFORGE {FontForge}
+% \def\GUI already in tub
 \def\HZ        {Hz}
 \def\INI       {\acro{INI}}
 \def\IO        {\acro{I/O}}
@@ -49,10 +53,12 @@
 \def\LATEX     {\LaTeX}
 \def\LINUX     {Linux}
 \def\LUA       {Lua}
+\def\LUALATEX  {Lua\LATEX}
 \def\LUATEX    {\LUA\-\TeX}
 \def\LUATOOLS  {{\tt luatools}}
 \def\MAKEMPX   {{\tt makempx}}
 \def\MAP       {\acro{MAP}}
+\def\MATH      {\acro{MATH}}
 \def\MATHML    {\MathML}
 \def\METAFONT  {\MF}
 \def\METAPOST  {MetaPost}
@@ -73,6 +79,7 @@
 \def\PASCAL    {Pascal}
 \def\PDFTEX    {pdf\-\/\TeX}
 \def\PERL      {Perl}
+\def\PK        {\acro{PK}}
 \def\PLAIN     {{\tt plain}}
 \def\POSTSCRIPT{\PS}
 \def\RUBY      {Ruby}
@@ -83,6 +90,7 @@
 \def\TEXLIVE   {\TeX\ Live}
 \def\TEXMFSTART{{\tt texmfstart}}
 % \def\TFM already in tub
+\def\THANH     {\Thanh}
 \def\TODO      {\acro{TODO}}
 \def\TRUETYPE  {TrueType}
 \def\TUG       {\tug}
@@ -102,14 +110,17 @@
 \def\high{\textsuperscript}
 \def\hyphenatedurl{\url}
 \def\quote#1{`#1'}
+\def\sym{\item}
 \def\tex{\cs}
 \def\unknown{\ldots}
 
-\def\type{\bgroup \catcode`_=12 \catcode`\\=12 \finishtype}
+\def\type{\bgroup
+   \catcode`_=12 \catcode`\\=12 \catcode`##=12 \catcode`&=12
+   \finishtype}
 \def\finishtype#1{\texttt{#1}\egroup}
 
 \def\starttyping{\begin{verbatim}[\small]}
-% \end{verbatim} has to be literal.
+% \end{verbatim} has to be literal, so no \stoptyping.
 
 \def\starttabulate{\begin{tabular}}
 \def\stoptabulate{\end{tabular}}
