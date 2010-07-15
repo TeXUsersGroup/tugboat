@@ -117,7 +117,7 @@
 \def\type{\bgroup
    \catcode`_=12 \catcode`\\=12 \catcode`##=12 \catcode`&=12
    \finishtype}
-\def\finishtype#1{\texttt{#1}\egroup}
+\def\finishtype#1{\texttt{#1}\egroup\spacefactor=1000 }
 
 \def\starttyping{\begin{verbatim}[\small]}
 % \end{verbatim} has to be literal, so no \stoptyping.
