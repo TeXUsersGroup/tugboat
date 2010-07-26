@@ -119,7 +119,7 @@
 %    \end{macrocode}
 %
 % \fi
-% \CheckSum{4650}
+% \CheckSum{4659}
 %
 % \section{Introduction}
 %
@@ -2677,7 +2677,8 @@
      \rightmargin.5\leftmargin\parsep \z@\@plus\p@}\item[]}
 %    \end{macrocode}
 %
-% The |compactitemize| environment, without space between the items.
+% The |compactitemize| and |compactenumerate| environments, without
+% space between the items.
 %
 %    \begin{macrocode}
 \newenvironment{compactitemize}%
@@ -2687,6 +2688,14 @@
      \setlength{\parsep} {0pt}%
    }%
    {\end{itemize}}
+%
+\newenvironment{compactenumerate}%
+   {\begin{enumerate}%
+     \setlength{\itemsep}{0pt}%
+     \setlength{\parskip}{0pt}%
+     \setlength{\parsep} {0pt}%
+   }%
+   {\end{enumerate}}
 %    \end{macrocode}
 %
 % \subsection{Some fun with \texttt{verbatim}}
