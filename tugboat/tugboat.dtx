@@ -119,7 +119,6 @@
 %    \end{macrocode}
 %
 % \fi
-% \CheckSum{4659}
 %
 % \section{Introduction}
 %
@@ -3104,11 +3103,14 @@
   }
 % put issue identification and page number in header.
 \def\@oddhead{\MakeRegistrationMarks\PrelimDraftfooter
-  \normalsize\csname normalshape\endcsname\rm
+  \normalsize\csname normalshape\endcsname\rm \tubheadhook
   \rtitlex\qquad\midrtitle \hfil \thepage}
 \def\@evenhead{\MakeRegistrationMarks\PrelimDraftfooter
-  \normalsize\csname normalshape\endcsname\rm
+  \normalsize\csname normalshape\endcsname\rm \tubheadhook
   \thepage\hfil\midrtitle\qquad\rtitlex}
+
+% can be used to reset the font, e.g., tb98kuester.
+\def\tubheadhook{}
 
 % put title and author in footer.
 \def\@tubrunningfull{%
