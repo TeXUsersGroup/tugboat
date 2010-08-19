@@ -82,6 +82,7 @@
 \def\PK        {\acro{PK}}
 \def\PLAIN     {{\tt plain}}
 \def\POSTSCRIPT{\PS}
+\def\RTL       {\acro{RTL}}
 \def\RUBY      {Ruby}
 \def\SCITE     {Scite}
 \def\TDS       {\acro{TDS}}
@@ -109,7 +110,9 @@
 \def\crlf{\newline}
 \def\high{\textsuperscript}
 \def\hyphenatedurl{\url}
+\def\in[#1]{\ref{#1}}
 \def\quote#1{`#1'}
+\def\quotation#1{``#1''}
 \def\sym{\item}
 \def\tex{\cs}
 \def\unknown{\ldots}
