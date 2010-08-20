@@ -48,6 +48,8 @@
 \def\HZ        {Hz}
 \def\INI       {\acro{INI}}
 \def\IO        {\acro{I/O}}
+\def\JAVA      {Java}
+\def\JAVASCRIPT{Java\-Script}
 \def\KPSE      {{\tt kpse}}
 \def\KPSEWHICH {{\tt kpsewhich}}
 \def\LATEX     {\LaTeX}
@@ -153,9 +155,11 @@
     -%
   \else\ifx\next/%
     \slash
+  \else\ifx\next-%
+    --%
   \else
     \next
-  \fi\fi
+  \fi\fi\fi
   \endgroup
   \gobble
 }
