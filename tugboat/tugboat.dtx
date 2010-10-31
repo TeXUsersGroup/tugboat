@@ -433,12 +433,14 @@
 \DeclareOption{numbersec}{\let\if@numbersec\iftrue}
 \DeclareOption{nonumber}{\let\if@numbersec\iffalse}
 %    \end{macrocode}
-%
+% 
 % Minimal running headers/footers contain just the TUGboat volume/issue
-% identification and page number.  `runningfull' is the default, and
-% includes title and author.
+% identification and page numbers.  `runningfull' is the default, and
+% includes title and author.  `runningoff' makes both headers and
+% footers empty.
 %
 %    \begin{macrocode}
+\DeclareOption{runningoff}{\AtEndOfClass{\@tubrunningoff}}
 \DeclareOption{runningminimal}{\AtEndOfClass{\@tubrunningminimal}}
 \DeclareOption{runningfull}{\AtEndOfClass{\@tubrunningfull}}
 %    \end{macrocode}
@@ -3131,8 +3133,16 @@
 
 % empty footer.
 \def\@tubrunningminimal{%
-  \def\@oddfoot{\hfil}
-  \def\@evenfoot{\hfil}
+  \def\@oddfoot{\hfil}%
+  \def\@evenfoot{\hfil}%
+}
+
+% empty footer and header.
+\def\@tubrunningoff{%
+  \def\@oddfoot{\hfil}%
+  \def\@evenfoot{\hfil}%
+  \def\@oddhead{\hfil}%
+  \def\@evenhead{\hfil}%
 }
 
 \def\ps@headings{}
