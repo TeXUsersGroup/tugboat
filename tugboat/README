@@ -1,4 +1,4 @@
-Copyright 2006, 2009 TeX Users Group.
+Copyright 2006, 2009-2010 TeX Users Group.
 You may freely use, modify and/or distribute this file.
 
 LaTeX macros for use in TUGboat
@@ -24,8 +24,9 @@ The directory contains three files containing TeX code:
 
   tugboat.dtx  -- the source for the macros
   tugboat.ins  -- the docstrip instructions
-  ltubguid.ltx -- documentation for the macros (published in TUGboat
-                  52, but revised since)
+  ltubguid.ltx -- documentation for the macros (published in
+                  http://tug.org/TUGboat/tb17-3/tb52guid.pdf,
+                  but much updated since)
 
 other files are
   ltugbib.bst  -- a BibTeX style to match ltugboat.cls's default

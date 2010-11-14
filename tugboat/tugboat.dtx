@@ -4,8 +4,7 @@
 % \iffalse (this is a meta-comment (so they say))
 % tugboat.dtx - main source for LaTeX TUGboat classes.
 %
-% Copyright 1994,1995,1996,1997,1998,2000,2001,2004,2005,2006,2007,2008,2009
-% TeX Users Group.
+% Copyright 1994-1998, 2000-2001, 2004-2010 TeX Users Group.
 %
 % This file is part of the tugboat package.
 %
@@ -31,7 +30,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2009/09/29 v2.7
+                   [2010/11/13 v2.8
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -142,8 +141,8 @@
 % |\ConTeXt|&       \ConTeXt\\
 % |\Cplusplus|&     C++\\
 % |\DTD|&\\
-% |\DVI|&\\
 % |\DVD|&\\
+% |\DVI|&\\
 % |\DVIPDFMx|&      \DVIPDFMx\\
 % |\DVItoVDU|&      DVItoVDU\\
 % |\ECMA|&\\
@@ -660,9 +659,10 @@
 % We place our \cs{kern} after \cs{-} so that it disappears if the
 % hyphenation is taken:
 %    \begin{macrocode}
-\newcommand\ConTeXt{C\kern-.0333emon\-\kern-.0667em\TeX\kern-.0333emt}
-\newcommand\Cplusplus{C\plusplus}
-\newcommand\plusplus{\raisebox{.7ex}{$_{++}$}}
+\def\ConTeXt{C\kern-.0333emon\-\kern-.0667em\TeX\kern-.0333emt}
+\def\CMkIV{\ConTeXt\ \MkIV}
+\def\Cplusplus{C\plusplus}
+\def\plusplus{\raisebox{.7ex}{$_{++}$}}
 \def\CSS{\acro{CSS}}
 \def\CSV{\acro{CSV}}
 \def\CTAN{\acro{CTAN}}
@@ -736,6 +736,7 @@
 %    \begin{macrocode}
 \def\mf{\textsc{Metafont}}
 \def\MFB{\textsl{The \MF book}}
+\def\MkIV{Mk\acro{IV}}
 \let\TB@@mp\mp
 \DeclareRobustCommand\mp{\ifmmode\TB@@mp\else MetaPost\fi}
 %
@@ -764,10 +765,10 @@
 \def\PCTeX{PC\thinspace\TeX}
 \def\pcTeX{\leavevmode\raise.5ex\hbox{p\kern-.3\p@ c}\TeX}
 \def\PDF{\acro{PDF}}
-\def\PiC{P\kern-.12em\lower.5ex\hbox{I}\kern-.075emC\@}
-\def\PiCTeX{\PiC\kern-.11em\TeX}
 \def\PGF{\acro{PGF}}
 \def\PHP{\acro{PHP}}
+\def\PiC{P\kern-.12em\lower.5ex\hbox{I}\kern-.075emC\@}
+\def\PiCTeX{\PiC\kern-.11em\TeX}
 \def\plain{\texttt{plain}}
 \def\PNG{\acro{PNG}}
 \def\POBox{P.\thinspace O.~Box }
@@ -1160,12 +1161,6 @@
                         \else th%                nth
                         \fi}%
 }
-%    \end{macrocode}
-%
-% One more accent.
-%
-%    \begin{macrocode}
-\def\r#1{\accent"17 #1}
 %    \end{macrocode}
 %
 % \subsection{Reviews}
@@ -2528,21 +2523,23 @@
 }
 %    \end{macrocode}
 %
-% The \cs{newlabel} command that gets written to the \texttt{.aux}
-% file needs to be redefined to have three components to its argument:
+% We output the name label as a second \cs{newlabel} command 
+% in the \texttt{.aux} file.  That way, packages such as |varioref|
+% which also read the \texttt{.aux} information can still work.
+% So we redefine \cs{label} to first call the standard \LaTeX\
+% \cs{label} and then write our named label as |nr<label>|.
+% 
 %    \begin{macrocode}
-\def\label#1{{%
-    \@bsphack
-    \let\label\@gobble
-    \let\index\@gobble
-    \if@filesw
-      \protected@write\@auxout{}%
-        {\string\newlabel{#1}{%
-            {\@currentlabel}{\thepage}{\@currentlabelname}}%
-        }%
-    \fi
-    \@esphack
-  }%
+\let\@savelatexlabel=\label  % so save original LaTeX command
+%
+\def\label#1{% de
+  \@savelatexlabel{#1}%
+  \@bsphack
+  \if@filesw
+    \protected@write\@auxout{}%
+      {\string\newlabel{nr@#1}{{\@currentlabel}{\@currentlabelname}}}%
+  \fi
+  \@esphack
 }
 %    \end{macrocode}
 %
@@ -2552,19 +2549,12 @@
 \let\@currentlabelname\@empty
 %    \end{macrocode}
 %
-% References are pretty straightforward, but need three extra utility
-% commands (analagous to the \cs{@firstof...}, etc., defined in the
-% kernel).
+% Getting named references is then just like getting page references in
+% the \LaTeX\ kernel (see |ltxref.dtx|).
+%
 %    \begin{macrocode}
-\DeclareRobustCommand\ref[1]{\expandafter\@setref
-  \csname r@#1\endcsname\@firstofthree{#1}}
-\DeclareRobustCommand\pageref[1]{\expandafter\@setref
-  \csname r@#1\endcsname\@secondofthree{#1}}
 \DeclareRobustCommand\nameref[1]{\expandafter\@setref
-  \csname r@#1\endcsname\@thirdofthree{#1}}
-\long\def\@firstofthree#1#2#3{#1}
-\long\def\@secondofthree#1#2#3{#2}
-\long\def\@thirdofthree#1#2#3{#3}
+  \csname r@nr@#1\endcsname\@secondoftwo{#1}}
 %    \end{macrocode}
 %
 % \subsection{Float captions}

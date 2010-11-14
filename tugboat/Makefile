@@ -1,4 +1,4 @@
-# Copyright 2007, 2008, 2009 TeX Users Group.
+# Copyright 2007-2010 TeX Users Group.
 # You may freely use, modify and/or distribute this file.
 # 
 opt = -interaction=nonstopmode
