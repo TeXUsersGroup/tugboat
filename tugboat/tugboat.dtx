@@ -30,7 +30,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2010/11/13 v2.8
+                   [2010/11/15 v2.8
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -354,7 +354,8 @@
     \BlackBoxes
     \def\MakeRegistrationMarks{}%
     \PrelimDrafttrue
-    }%
+    \@tubrunningminimal
+  }%
 }
 \DeclareOption{preprint}{%
    \preprinttrue
@@ -1232,7 +1233,7 @@
         \setbox\TestBox=\hbox{\volno}%
         \ifdim \wd\TestBox > .2em \v@lx \fi }
 \vol 0, 0.
-\issdate Thermidor, 2060.
+\issdate Thermidor, 9999.
 %    \end{macrocode}
 %
 % (The curious should know that \emph{Thermidor} was one of the French

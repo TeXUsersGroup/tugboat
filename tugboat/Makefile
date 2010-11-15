@@ -13,6 +13,7 @@ ltugcomn.sty ltugboat.sty: tugboat.ins tugboat.dtx
 	$(latex) $<
 
 check: ltugboat.sty
+	$(pdflatex) tubvtest.tex
 	$(pdflatex) tubptest.tex
 	$(pdflatex) tubatest.tex
 
