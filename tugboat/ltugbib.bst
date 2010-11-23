@@ -1,3 +1,4 @@
+% $Id$
 % This is the file `ltugbib.bst', used by the harvardcite option
 % to the ltug* LaTeX classes.
 %
