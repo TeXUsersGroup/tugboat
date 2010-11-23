@@ -1,18 +1,10 @@
-%		tb0hyf.tex - version of 25sep10
-%		tb99hyf.tex		% 2010/09/25, 31(3)
+%		tb0hyf.tex - version of 21nov10
 %
 % Copyright 2008, 2010 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
-%	This item last appeared in full in TUGboat 16:1, March 1995.
-%	A stripped-down version, containing only new material, appeared
-%       in TUGboat 22:1/2, March/June 2001, with additional updates in
-%       TUGboat 23:3/4 (2002), 26:1 (2005), and 29:2 (2008).
-%       This file contains the full exception list compounded from all
-%       previous iterations.  It can be used as input to the hyphenex
-%       scripts at http://mirror.ctan.org/info/digests/tugboat/hyphenex.
-%
 \input tugboat.sty
+\issdate Thermidor, 9999.
 
 %%%	Note -- With the addition of Skoup\'y, a note should be added
 %%%		that the solution is different for OT1/T1/ConTeXt.
@@ -68,6 +60,7 @@
 
 \title * Hyphenation Exception Log *
 \author * Barbara Beeton *
+\address * {\sl TUGboat} *
 \netaddress* bnb (at) ams dot org *
 
 \pagexref{hyphenlog}
@@ -76,9 +69,9 @@
 
 This is the periodic update of the list of words that \TeX\ fails to
 hyphenate properly.  The full list last appeared in \TUB\ 16:1,
-starting on page~12, with updates in \TUB\ 22:1/2, pages~31--32;
-23:3/4, pages~247--248; 26:1, pages~5--6; 29:2, page~239, and 31:3,
-page~160.
+starting on page~12, with updates in \TUB\ 22:1/2, pp.~31--32;
+23:3/4, pp.~247--248; 26:1, pp.~5--6; 29:2, p.~239, and 31:3,
+p.~160.
 %% update reference
 The full list is included here.
 Owing to the length of the list, it has been subdivided into two parts:
@@ -144,22 +137,22 @@ In order to make \TeX\ defer hyphenation until after three initial letters,
 set |\lefthyphenmin=3|.
 
 Of course, British hyphenation patterns should be used as well.
-A set of patterns for UK English has been created by Dominik Wujastyk and
+A set of patterns for \acro{U.K.} English has been created by Dominik
+Wujastyk and
 Graham Toal, using Frank Liang's |PATGEN| and based on a file of 114925
 British-hyphenated words generously made available to Dominik by Oxford
 University Press.  (This list of words and the hyphenation break points
 in the words are copyright to the \acro{OUP} and may not be redistributed.)
 The file of hyphenation patterns may be freely distributed; it is
 posted on {\CTAN} in the file
-$$\hbox{\tt tex-archive/language/hyphenation/ukhyphen.tex}$$
+$$\hbox{\ninepoint \tt tex-archive/language/hyphenation/ukhyphen.tex}$$
 and can be retrieved by anonymous \acro{FTP} or using a Web browser.
-%%It is also present in the \TeX\,Live collection, distributed annually
-%%by most \TeX\ user groups to their members.
-%% check regarding tex live
+It is also present in the \TeX\ Live distribution, distributed annually
+by most \TeX\ user groups to their members.
 
 %  see uktex92.017 for details
 
-%some new patterns can be added, as communicated to me my Donald Knuth:
+%some new patterns can be added, as communicated to me by Donald Knuth:
 %
 %\smallskip
 %\begingroup
@@ -177,14 +170,14 @@ and can be retrieved by anonymous \acro{FTP} or using a Web browser.
 Patterns now exist for many languages other than English, including
 languages using accented alphabets.
 {\CTAN} holds an extensive collection of patterns: see
-|http://mirror.ctan.org/language/| |hyphenation|
+|language/hyphenation|
 and its subdirectories.
 
 A group of volunteers led by Mojca Miklavec and Arthur Reutenauer
 have created a comprehensive package of hyphenation patterns, called
-hyph-utf8; see |http://tug.org/tex-hyphen|.
+|hyph-utf8|; see |http://tug.org/tex-hyphen|.
 
-\head * Converting this list into \break a list of hyphenation exceptions *
+\head * Converting this list into machine-usable \break hyphenation exceptions *
 
 Werner Lemberg has created a script that will convert this article into
 a real |\hyphenation| block that can be incorporated into a document
@@ -194,8 +187,9 @@ of the list will not change.  Many inflected forms will be included
 automatically, some evident in the printed version, but many included
 silently.
 
-The script, |hyphenex.sh|, runs under Unix and is posted on \CTAN, in
-$$\hbox{\tt tex-archive/info/digests/tugboat/hyphenex.sh}$$
+The script, |hyphenex.sh|, is a straightforward shell script and is
+posted on \CTAN, in
+$$\hbox{\tt tex-archive/info/digests/tugboat/hyphenex/}$$
 The output of the script is posted in the same area, as |ushyphex.tex|.
 
 
