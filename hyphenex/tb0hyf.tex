@@ -1,10 +1,13 @@
-%		tb0hyf.tex - version of 21nov10
+%		tb0hyf.tex
 %
 % Copyright 2008, 2010 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 \input tugboat.sty
 \issdate Thermidor, 9999.
+
+\def\midrtitle{As of 30 November 2010}
+\def\rfoot{}
 
 %%%	Note -- With the addition of Skoup\'y, a note should be added
 %%%		that the solution is different for OT1/T1/ConTeXt.
@@ -80,9 +83,10 @@ from Cyrillic and other non-Latin scripts) that occur in English texts.
 
 This list is specific to the hyphenation patterns that appear in
 the original |hyphen.tex|, that is, the patterns for \acro{U.S.} English.
-If such information for other patterns becomes available, consideration
-will be given to listing that too.  (See below, ``Hyphenation for
-languages other than English''.)
+%If such information for other patterns becomes available, consideration
+%will be given to listing that too.
+Regarding patterns for other languages, see below, ``Hyphenation for
+languages other than \acro{U.S.} English''.
 
 % As expected, there are more instances of missed than of incorrect hyphens.
 In the list below, the first column gives results from \TeX's
@@ -91,8 +95,8 @@ inclusion in a |\hyphenation{...}| list.
 
 In most instances, inflected forms are not shown for nouns and verbs;
 note that all forms must be specified in a |\hyphenation{...}| list
-if they occur in your document.  See the section below, Converting this
-list into a list of hyphenation exceptions.
+if they occur in your document.  See the section below on making this
+list machine-usable.
 
 Thanks to all who have submitted entries to the list.  Since some
 suggestions have demonstrated a lack of familiarity with the rules of
@@ -101,9 +105,10 @@ idiosyncrasies.  Hyphens will not be inserted before the number of
 letters specified by |\lefthyphenmin|, nor after the number of letters
 specified by |\righthyphenmin|.  For \acro{U.S.} English, |\lefthyphenmin=2|
 and |\righthyphenmin=3|; thus no word shorter than five
-letters will be hyphenated.  (For the details, see \TB, page~454.  For a
-digression on other views of hyphenation rules, see below under ``English
-hyphenation''.)  This particular rule is violated in some of the words
+letters will be hyphenated.  (For details, see \TB, page~454.)
+% For a digression on other views of hyphenation rules, see below under
+% ``English hyphenation''.)
+This particular rule is violated in some of the words
 listed; however, if a word is hyphenated correctly by \TeX\ except for
 ``missing'' hyphens at the beginning or end, it has not been included here.
 
@@ -127,31 +132,6 @@ Words added since the last appearance of the list are preceded by `${}^+$'.
 The reference used to check these hyphenations is\enspace {\sl Webster's
 Third New International Dictionary}, Unabridged.
 
-\head * English hyphenation *
-
-It has been pointed out to me that the hyphenation rules of British English
-are based on the etymology of the words being hyphenated as opposed to
-the ``syllabic'' principles used in the \acro{U.S.}  Furthermore, in the
-\acro{U.K.}, it is considered bad style to hyphenate a word after only two letters.
-In order to make \TeX\ defer hyphenation until after three initial letters,
-set |\lefthyphenmin=3|.
-
-Of course, British hyphenation patterns should be used as well.
-A set of patterns for \acro{U.K.} English has been created by Dominik
-Wujastyk and
-Graham Toal, using Frank Liang's |PATGEN| and based on a file of 114925
-British-hyphenated words generously made available to Dominik by Oxford
-University Press.  (This list of words and the hyphenation break points
-in the words are copyright to the \acro{OUP} and may not be redistributed.)
-The file of hyphenation patterns may be freely distributed; it is
-posted on {\CTAN} in the file
-$$\hbox{\ninepoint \tt tex-archive/language/hyphenation/ukhyphen.tex}$$
-and can be retrieved by anonymous \acro{FTP} or using a Web browser.
-It is also present in the \TeX\ Live distribution, distributed annually
-by most \TeX\ user groups to their members.
-
-%  see uktex92.017 for details
-
 %some new patterns can be added, as communicated to me by Donald Knuth:
 %
 %\smallskip
@@ -165,13 +145,12 @@ by most \TeX\ user groups to their members.
 %\endgraf
 %\endgroup
 
-\head * Hyphenation for languages \break other than English *
+\head * Hyphenation for languages \break other than U.S. English *
 
-Patterns now exist for many languages other than English, including
-languages using accented alphabets.
+Patterns now exist for many languages other than \acro{U.S.} English,
+including languages using accented and non-Latin alphabets.
 {\CTAN} holds an extensive collection of patterns: see
-|language/hyphenation|
-and its subdirectories.
+|language/hyphenation| and its subdirectories.
 
 A group of volunteers led by Mojca Miklavec and Arthur Reutenauer
 have created a comprehensive package of hyphenation patterns, called
@@ -190,7 +169,7 @@ silently.
 The script, |hyphenex.sh|, is a straightforward shell script and is
 posted on \CTAN, in
 $$\hbox{\tt tex-archive/info/digests/tugboat/hyphenex/}$$
-The output of the script is posted in the same area, as |ushyphex.tex|.
+The output of the script is posted in the same area as |ushyphex.tex|.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
