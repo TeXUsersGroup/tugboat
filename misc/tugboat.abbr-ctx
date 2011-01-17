@@ -1,5 +1,5 @@
 % $Id$
-% Copyright 1999, 2006, 2008, 2009, 2010 TeX Users Group.
+% Copyright 1999, 2006, 2008-2011 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 % "fake" ConTeXt in LaTeX, for simple-enough documents.
@@ -16,6 +16,9 @@
 \def\stopAbstract{\end{abstract}}
 \let\StopAbstract=\stopAbstract
 %
+\def\startKeywords{\smallskip \noindent \begingroup \raggedright {\bf Keywords: }}
+\def\stopKeywords{\par\endgroup}
+%
 \def\stopArticle{\end{document}}
 \let\StopArticle=\stopArticle
 
@@ -24,9 +27,14 @@
 \def\startitemizepacked]{\begin{compactitemize}}
 \def\stopitemizepacked{\end{compactitemize}}
 \def\head{\item}
+\def\sym{\item}
 \def\startitem{\item}
 \let\stopitem=\relax
 \let\stop=\relax
+
+\def\startquotation{\begingroup \origquotation}
+\def\stopquotation{\par\endgroup}
+\let\noindentation = \relax
 
 \def\AFM       {\acro{AFM}}
 \def\ALEPH     {Aleph}
@@ -45,6 +53,7 @@
 \def\FONTINST  {fontinst}
 \def\FONTFORGE {FontForge}
 % \def\GUI already in tub
+\def\FSF       {\acro{FSF}}
 \def\HZ        {Hz}
 \def\INI       {\acro{INI}}
 \def\IO        {\acro{I/O}}
@@ -58,6 +67,7 @@
 \def\LUALATEX  {Lua\LATEX}
 \def\LUATEX    {\LUA\-\TeX}
 \def\LUATOOLS  {{\tt luatools}}
+\def\MACOSX    {\MacOSX}
 \def\MAKEMPX   {{\tt makempx}}
 \def\MAP       {\acro{MAP}}
 \def\MATH      {\acro{MATH}}
@@ -113,14 +123,15 @@
 \def\high{\textsuperscript}
 \def\hyphenatedurl{\url}
 \def\in[#1]{\ref{#1}}
-\def\quote#1{`#1'}
-\def\quotation#1{``#1''}
+\def\quote#1{{`#1'}}
+\let\origquotation = \quotation
+\def\quotation#1{{``#1''}}
 \def\sym{\item}
 \def\tex{\cs}
 \def\unknown{\ldots}
 
 \def\type{\bgroup
-   \catcode`_=12 \catcode`\\=12 \catcode`##=12 \catcode`&=12
+   \catcode`_=12 \catcode`\\=12 \catcode`##=12 \catcode`&=12 \catcode`$=12
    \finishtype}
 \def\finishtype#1{\texttt{#1}\egroup\spacefactor=1000 }
 
