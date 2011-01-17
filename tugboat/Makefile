@@ -1,16 +1,16 @@
 # $Id$
-# Copyright 2007-2010 TeX Users Group.
+# Copyright 2007-2011 TeX Users Group.
 # You may freely use, modify and/or distribute this file.
 # 
 opt = -interaction=nonstopmode
 latex = latex $(opt)
 pdflatex = pdflatex $(opt)
 
-tugboat.pdf: ltugcomn.sty tugboat.dtx
+tugboat.pdf: ltugboat.cls tugboat.dtx
 	$(pdflatex) tugboat.dtx
 	$(pdflatex) tugboat.dtx
 
-ltugcomn.sty ltugboat.sty: tugboat.ins tugboat.dtx
+ltugcomn.sty ltugboat.sty ltugboat.cls: tugboat.ins tugboat.dtx
 	$(latex) $<
 
 check: ltugboat.sty
