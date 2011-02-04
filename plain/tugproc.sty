@@ -1,0 +1,366 @@
+%% @texfile{
+%%     filename="tugproc.sty",
+%%     version="1.11",
+%%     date="26-Jan-1994",
+%%     filetype="TeX macros for TUG Proceedings",
+%%     copyright="Copyright (C) TeX Users Group.
+%%            Copying of this file is authorized only if either:
+%%            (1) you make absolutely no changes to your copy, OR
+%%            (2) if you do make changes, you first rename it to some
+%%                other name.",
+%%     author="TeX Users Group",
+%%     address="TeX Users Group",
+%%            P. O. Box 869,
+%%            Santa Barbara, CA 93102-0869,
+%%            USA",
+%%     telephone="805-963-8358",
+%%     email="Internet: tug@tug.org or TUGboat@Math.AMS.org",
+%%     codetable="ISO/ASCII",
+%%     checksumtype="line count",
+%%     checksum="366",
+%%     keywords="tex users group, tugboat, proceedings, plain tex",
+%%     abstract="This file contains the plain-based macros
+%%            for Proceedings issues of TUGboat, the
+%%            Communications of the TeX Users Group."
+%%     }
+%% *********************************************************
+%%
+%%  Use of this file also requires the following files:
+%%      TUGBOAT.STY (version 1.09+)
+%%      TUGBOAT.CMN (version 1.08+) (loaded by TUGBOAT.STY)
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\fileversion{v1.11}
+\def\filedate{26 Jan 94}
+
+\message{File `TUGPROC.STY' \fileversion \space\space <\filedate>}
+
+% initialize year/issue-specific elements for standalone use
+\def\mtgyear{1994}
+\def\volyr{1994}
+\def\volno{15}
+\def\issno{3}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input tugboat.sty
+
+\savecat\@ \makeletter\@
+\ifx\tugprocloaded@\undefined \let\tugprocloaded@\end
+\else \restorecat\@ \xdef\startingpage{\number\pageno}\endinput \fi
+
+\newdimen\tubpagelgt
+\tubpagelgt=\pagelgt \advance\tubpagelgt 1pc  % for running feet
+
+% fonts
+
+\font\twelverm=cmr10 scaled 1200
+\font\twelvebf=cmbx10 scaled 1200	
+\font\fourteenrm=cmr10 scaled 1440
+\font\fourteenit=cmti10 scaled 1440
+\font\fourteensl=cmsl10 scaled 1440
+
+\def\twelvepoint{%
+  \normalbaselineskip=14pt
+  \def\rm{\fam\z@\twelverm}%
+  \textfont\z@=\twelverm
+  \def\bf{\fam\bffam\twelvebf}%
+  \textfont\bffam=\twelvebf 
+  \normalbaselines \rm}
+
+\def\fourteenpoint{%
+  \normalbaselineskip=18pt
+  \def\rm{\fam\z@\fourteenrm}%
+  \textfont\z@=\fourteenrm
+  \def\it{\fam\itfam\fourteenit}%
+  \textfont\itfam=\fourteenit
+  \def\sl{\fam\slfam\fourteensl}%
+  \textfont\slfam=\fourteensl
+  \normalbaselines \rm}
+
+\def\AUTHORfont{\twelvepoint\rm}
+\def\HEADfont{\twelvepoint\bf}
+\def\TITLEfont{\fourteenpoint\rm}
+\def\addressfont{\ninepoint\rm}
+\def\netaddrfont{\ninepoint\tt}
+
+\def\br{\unskip\hfil\break}		% version for titles
+\def\degrade{\def\br{\unskip\space\ignorespaces}%
+             \let\\\br} % in running heads.
+
+% running heads & feet
+%\newcount\startingpage % Number of first page of article
+\newif\ifpreprint  \preprinttrue
+\def\preprint{\preprinttrue
+   \ifExtrAbs\breaklines\fi}       % (*)
+\newif\ifproof \prooffalse \let\filename\relax
+\def\Proof{\prooftrue\immediate\write16{File name?}
+   \immediate\read16 to\filename}
+\def\stamp{\ifproof{\tt \filename}\quad\Now\else\space\fi}
+\let\midrtitle=\null
+\def\rtitlex{%
+   \ifodd\pageno\degrade\rhtitle\else\rhauthor\fi}
+\def\rtitle{%
+   \hbox to \pagewd{%
+      \tenpoint
+      \makestrut[10pt;\z@]%
+      \ifnum\the\pageno=\startingpage\hfill\stamp\else
+      \ifodd\pageno
+         \stamp\hfill\rtitlex
+      \else
+         \rtitlex\hfill\stamp
+      \fi\fi
+      }%
+   }      
+
+\ifx\startingpage\undefined \def\startingpage{1001}\fi
+\pageno=\startingpage
+\def\rfoot{%
+   \hbox to \pagewd{%
+      \tenpoint
+      \makestrut[\z@;0.5pc]%
+      \ifpreprint
+         \ifodd\pageno
+            \pfoottext\hfil\Now\hfil$^.$\number\pageno
+         \else
+            \number\pageno$^.$\hfil\Now\hfil\pfoottext
+         \fi
+      \else
+         \ifodd\pageno
+            \rfoottext\hfil\number\pageno
+         \else
+            \number\pageno\hfil\rfoottext
+         \fi
+      \fi
+      }%
+   }
+
+\v@lx				% normalize publication info for footer
+\def\pfoottext{{\smc Preprint}: \mtgyear{} \TUG{} Annual Meeting}
+\def\rfoottext{\tenrm\TUB, \volx\Dash 
+   {Proceedings of the \volyr{} Annual Meeting}}
+
+% midpage redone to align running feet.
+\def\midpage#1{%
+  \vbox{
+    \basezero
+    \hrule height\z@ depth\z@ width\p@
+    \ifTrimmarks
+      \vskip-1in                % default offset for laser printers
+                                % this puts top trim at edge of paper
+      \vbox to \trimlgt \bgroup
+      \topregister
+      \vskip \headmargin
+    \else
+      \vskip-\rheadlgt           % this puts runhead above default offset
+    \fi
+    \dlap{\vbox to\tubpagelgt{\vfil
+        \ifnum\xcol=\numcols \runfoot \else \vbox to \rfootlgt{}\fi}}
+    \vbox to \pagelgt{
+      \ifnum\xcol=\numcols \runhead \else \vbox to \rheadlgt{}\fi
+      \ifThisIsFirstPage \firsthead \fi
+      \hbox to \pagewd{#1}       % \vsize applied in \pagebody
+      \ifThisIsFirstPage \firstfoot \fi
+      \vfil                      % if no depth, avoid underfull box
+%      \ifnum\xcol=\numcols \runfoot \else \vbox to \rfootlgt{}\fi
+      }
+    \ifTrimmarks \vfill \botregister \egroup \fi
+    }}
+
+% ***************************************************
+% Bibliography
+\def\Hang{1em} 
+\def\entry #1{\noindent\frenchspacing\hangindent\Hang #1}
+
+% Appendix
+\def\appendix #1\endappendix{\newpage\onecol\centerline{\HEADfont #1}}
+
+% Box for deadlines:
+\newbox\textbox		% \twocolcolwd=18.75pc [cf. tugboat.sty]
+\long\def\boxit #1{\vbox{\hrule\hbox{\vrule\kern3pt
+   \vbox{\kern3pt\vskip 4pt#1\vskip 4pt\kern3pt}\kern3pt\vrule}\hrule}}
+\long\def\boxedlist #1{$$\boxit{\setbox\textbox=\vbox{\hsize 18pc
+   \strut{#1}\strut}\box\textbox}$$}  % TeXbook, 94 & 223 (exer 21.3)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% top matter
+\def\endtitle{%
+  \global\toks@=\expandafter{\the\@argument}%
+  \endgroup
+  \edef\thetitle{\ignorespaces\the\toks@\unskip}%
+  \let\rhtitle\thetitle
+  }
+	% If your title is too long for the running head,
+	% use this to construct a shorter version:
+\def\shorttitle{%
+  \begingroup
+  \def\CurrentTag{shorttitle}%
+  \@defaultoptions
+  \@savingargumenttrue
+  \@checkoptions}
+
+\def\endshorttitle{%
+  \global\toks@=\expandafter{\the\@argument}%
+  \endgroup
+  \edef\rhtitle{\ignorespaces\the\toks@\unskip}%
+  }
+
+\def\rhauthor{\@defaultauthorlist}
+	% Use the following for running heads if more than
+	% one author or author's name is too long to fit:
+\def\shortauthor{%
+  \begingroup
+  \def\CurrentTag{shortauthor}%
+  \@defaultoptions
+  \@savingargumenttrue
+  \@checkoptions}
+
+\def\endshortauthor{%
+  \global\toks@=\expandafter{\the\@argument}%
+  \endgroup
+  \edef\rhauthor{\ignorespaces\the\toks@\unskip}%
+  }
+
+%\long\def\Abstract #1\endAbstract{\long\def\@abstract{#1}}
+\def\abstract{\@abstract[\longargument]}
+\def\@abstract{%
+  \begingroup
+  \def\CurrentTag{abstract}%
+  \@defaultoptions
+  \@savingargumenttrue
+  \@checkoptions}
+
+\def\endabstract{%
+  \global\toks@=\expandafter{\the\@argument}%
+  \endgroup
+  \edef\theabstract{\ignorespaces\the\toks@\unskip}%
+  }
+
+\newif\ifExtrAbs \ExtrAbsfalse % Extract abstract from paper
+\def\breaklines{\begingroup\catcode`\^^M=\active\newlinechar=`\^^M}
+\def\endbreaklines{\endgroup}
+
+\def\prefnote{\@prefnote[\longargument]}
+\def\@prefnote{%
+  \begingroup
+  \def\CurrentTag{prefnote}%
+  \@defaultoptions
+  \@savingargumenttrue
+  \@checkoptions}
+
+\def\endprefnote{%
+  \global\toks@=\expandafter{\the\@argument}%
+  \endgroup
+  \edef\theprefnote{\ignorespaces\the\toks@\unskip}%
+  }
+
+\let\theprefnote\relax
+
+\def\@defaultsignature{%
+  \count@=0
+  \loop
+  \ifnum\count@<\authornumber
+    \vskip20pt
+    \advance\count@ by \@ne
+    \noindent{\AUTHORfont\theauthor{\number\count@}}\endgraf
+    \noindent{\addressfont\theaddress{\number\count@}}\endgraf
+    \noindent{\netaddrfont\thenetaddress{\number\count@}}\endgraf
+  \repeat
+  }
+
+\newbox\startbox % \newdimen\startheight
+\def\article{% \ifExtrAbs\endbreaklines\fi   % (*)
+   \setbox\startbox=\hbox to\colwd
+   {\hbox to\pagewd{\vbox{
+      \hsize\pagewd\raggedright\advance\rightskip0pt plus 1fil\tenpoint\rm
+   \let\\\break
+   \noindent{\TITLEfont\thetitle\endgraf}%
+   \@defaultsignature
+   \ifx\theprefnote\relax\else
+     \vskip 20pt
+     \hbox to \pagewd{\hfil\vbox{\hsize 0.6\pagewd
+       \rightskip\z@skip \parfillskip0pt plus 1fil \spaceskip\z@skip
+       \noindent{\bf Author's Note: }\ignorespaces\theprefnote\par}\hfil}
+     \fi
+   \vskip 20pt
+   \hbox to \pagewd{\hfil\vbox{\hsize 0.75\pagewd
+     \rightskip\z@skip \parfillskip0pt plus 1fil \spaceskip\z@skip
+     \centerline{\bf Abstract}\vskip 5pt
+     \noindent\theabstract\par}\hfil}
+     \vskip 1pc}}\hss}
+   \twocolfigure\box\startbox\endfigure
+   \ifExtrAbs                                    % (*)
+      \immediate\write\titleabs{\string\TITLE\string\bf\space
+          \rhauthor:\ \string\rm \rhtitle;;}
+      \immediate\write\titleabs{\space}
+      \immediate\write\titleabs{\string\ABS\string\bf\space 
+            Abstract.\ \theabstract;;}
+      \immediate\write\titleabs{\space}
+      \immediate\write\titleabs{\string\endinput}
+      \immediate\closeout\titleabs  \endbreaklines
+   \fi                                           % (*)
+}
+
+% \head  (This writes over a definition in tugboat.sty)
+\def\@domainhead{%		
+  \if@removeprewhite\else\vskip\baselineskip\fi
+  \noindent{\HEADfont\baselineskip15pt % larger type than usual
+    \raggedright\bf\ignorespaces\the\@argument\unskip\endgraf}%
+  \if@removepostwhite          %  usually we want the white space
+  \else\kern0.5\baselineskip\fi
+  \nobreak
+  \gdef\@next{%
+    \if@allowindent\def\@next{}%  usually we don't want to indent here
+    \else\def\@next{\DeleteOptionalSpacesandPars{\noindent\ignorespaces}}\fi
+    \@next
+    }%
+  }
+
+\restorecat\@
+
+% \Trimmarkstrue		% for final copy
+% \overfullrule=0pt
+
+\endinput
+
+%% *********************************************************
+
+Change History
+--------------
+1.11   changed TUG address in header to Santa Barbara
+       parameterized dates, etc., in running footers
+       initialized them at top of file instead of in footer text
+
+1.10   changed \tenrm to \tenpoint in definitions of \rtitle and \rfoot
+         so that \sl will be properly defined if used in that context
+
+1.09   removed \smallcode definition; it is now in tugboat.sty
+       increased width of abstract from 60-75% of text width
+       added standard headers, prepared for archive installation
+
+1.08   changed \start to \startingpage
+       added definition of \startingpage at top of file so running heads
+         will be empty on first page of article
+
+1.07   removed \Pageno
+       added check for previous input
+       altered \\ in running heads
+
+Previous:
+
+%%% TUGPROC.sty 11-mar-90 (*) 15-mar-90 30-mar-90 10-apr-90
+%%%   26-jun-90 [changed running feet, page numbers, \start]
+%%%   28-jun-90 [added \stamp, \ifproof] 29-jun-90 [\Proof]
+%%% TUGPROC.sty  03-feb-90 (renamed 13-feb-90) 20-feb-90
+%%%                          
+%%% Supplementary header file for TUG Proceedings volume
+%%% for use with plain.tex  (under revision still)
+%%%
+%%% (*) This version writes the title and abstract into
+%%% a file, for use in preparing the Title-Abstract-Bio
+%%% section in the program. Author-Title and Abstract are
+%%% written into a file as one-liners; if these lines are
+%%% too long, they should be reformatted manually before
+%%% the file is \input.

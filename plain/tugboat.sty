@@ -1,24 +1,25 @@
 %% @texfile{
 %%     filename   = "tugboat.sty",
-%%     version    = "1.14c",
-%%     date       = "14 October 1996",
-%%     time       = "14:26:08",
+%%     version    = "1.17",
+%%     date       = "2006/06/03",
+%%     time       = "16:34:03 EDT",
+%%     checksum   = "28581 2245 6313 69379",
 %%     filetype   = "Plain TeX macros for TUGboat",
-%%     copyright  = "Copyright (C) TeX Users Group.
-%%                   Copying of this file is authorized only if either:
-%%                   (1) you make absolutely no changes to your copy, OR
-%%                   (2) if you do make changes, you first rename it to some
-%%                       other name.",
+%%     copyright  = "Copyright 1993, 1999, 2003, 2006 TeX Users Group.
+%%                   Unlimited copying and redistribution of this file
+%%                   are permitted as long as this file is not
+%%                   modified.  Modifications (and redistribution of
+%%                   modified versions) are also permitted, but only if
+%%                   the resulting file is renamed."
 %%     author     = "TeX Users Group",
 %%     address    = "TeX Users Group,
-%%                   1850 Union Street, \#1637,
-%%                   San Francisco, CA 94123,
+%%                   P.O.Box 2311,
+%%                   Portland, OR 97208-2311,
 %%                   USA",
-%%     telephone  = "415-982-8449",
-%%     FAX        = "415-982-8559",
-%%     email      = "Internet: TUGboat@ams.org",
+%%     telephone  = "+1 503 223-9994",
+%%     FAX        = "+1 206 203-3960",
+%%     email      = "TUGboat@tug.org",
 %%     codetable  = "ISO/ASCII",
-%%     checksum   = "2238    6284   69130",
 %%     keywords   = "tex users group, tugboat, plain tex",
 %%     supported  = "yes",
 %%     abstract   = "This file contains the plain-based macros
@@ -41,8 +42,8 @@
 % TUGBOAT.STY
 
 \def\thistubstyle{plain}
-\def\fileversion{v1.14c}
-\def\filedate{14 October 1996}
+\def\fileversion{v1.17}
+\def\filedate{2006/06/03}
 
 % general items
 
@@ -1207,7 +1208,9 @@
 %
 %  addresses
 
+\newif\if@address \@addressfalse
 \def\address{%
+  \@addresstrue
   \begingroup
   \def\CurrentTag{address}%
   \@defaultoptions
@@ -2162,6 +2165,10 @@
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+1.16       2 Jan 06   updated TUG address and phone in header
+
+1.15      15 Aug 05   added switch \if@address to avoid skip in signature
+
 1.14c     14 Oct 96   lowered footnoterule by 3pt
 
 1.14b     14 Apr 94   added \interlinepenalty=10000 to avoid page breaks
