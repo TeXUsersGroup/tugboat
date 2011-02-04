@@ -1,0 +1,2238 @@
+%% @texfile{
+%%     filename   = "tugboat.sty",
+%%     version    = "1.14c",
+%%     date       = "14 October 1996",
+%%     time       = "14:26:08",
+%%     filetype   = "Plain TeX macros for TUGboat",
+%%     copyright  = "Copyright (C) TeX Users Group.
+%%                   Copying of this file is authorized only if either:
+%%                   (1) you make absolutely no changes to your copy, OR
+%%                   (2) if you do make changes, you first rename it to some
+%%                       other name.",
+%%     author     = "TeX Users Group",
+%%     address    = "TeX Users Group,
+%%                   1850 Union Street, \#1637,
+%%                   San Francisco, CA 94123,
+%%                   USA",
+%%     telephone  = "415-982-8449",
+%%     FAX        = "415-982-8559",
+%%     email      = "Internet: TUGboat@ams.org",
+%%     codetable  = "ISO/ASCII",
+%%     checksum   = "2238    6284   69130",
+%%     keywords   = "tex users group, tugboat, plain tex",
+%%     supported  = "yes",
+%%     abstract   = "This file contains the plain-based macros
+%%                   for preparation of TUGboat, the Communications
+%%                   of the TeX Users Group.",
+%%     docstring  = "The checksum field above contains a CRC-16
+%%                   checksum as the first value, followed by the
+%%                   equivalent of the standard UNIX wc (word
+%%                   count) utility output of lines, words, and
+%%                   characters.  This is produced by Robert
+%%                   Solovay's checksum utility.",
+%%     }
+%% *********************************************************
+%%
+%%  TeXing with this file also requires the following files:
+%%      TUGBOAT.CMN (version 1.08+)
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% TUGBOAT.STY
+
+\def\thistubstyle{plain}
+\def\fileversion{v1.14c}
+\def\filedate{14 October 1996}
+
+% general items
+
+\def\makeatletter{\catcode`\@=11 }
+\makeatletter           % used, as in PLAIN, in protected control sequences
+
+%  stop reading this file if it's been loaded already
+\ifx\tugstyloaded@\thistubstyle\makeatother\initializearticle
+ \endinput\else\let\tugstyloaded@\thistubstyle\fi
+
+\message{File `TUGBOAT.STY' \fileversion \space\space <\filedate>}
+
+\input tugboat.cmn      % macros common to tugboat.sty and
+                        % ltugboat.sty (latex style file)
+
+
+%  some things with the same names as in, or reiterated from, AMS-TeX
+
+\def\document{}                % override an AMS-TeX convention
+
+\output{\output@}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  Directory.
+%
+%  **  fonts
+%  **  page dimensions
+%  **  headers/footers
+%  **  page adjustment
+%  **  output
+%  **  general mechanism for tags
+%  **  titles, authors, addresses
+%  **  heads
+%  **  text and subtext
+%  **  lists
+%  **  verbatim
+%  **  figures
+%  **  utilities
+%  **  initialization
+
+
+
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     *****  fonts  *****
+%
+
+
+%  Struts give ascenders and descenders to assist in baseline alignment
+%  (e.g. of adjoining vertical boxes); useful only with text fonts.
+%
+%  \strut is defined in PLAIN .  The structure of \strutt is equivalent.
+
+\newbox\struttbox
+\def\strutt{\relax\ifmmode\copy\struttbox\else\unhcopy\struttbox\fi}
+
+%  Struts are given the following dimensions for use in TUGboat:
+%
+%  \strut = height/depth of parenthesis in current font
+%           (not the same as PLAIN)
+%  \strutt height + depth = \normalbaselineskip,
+%           height = same as \strut
+%           (equivalent to PLAIN \strut )
+
+
+%  The fonts below are sufficient for most ordinary TUGboat production.
+%  Additional titling fonts are defined elsewhere, and occasionally an
+%  extra font will be needed for a particular item (e.g. the device
+%  charts) and defined in that file.
+
+%  All PLAIN CM fonts.
+
+\font\tenrm=cmr10
+\font\ninerm=cmr9
+\font\eightrm=cmr8
+\font\sevenrm=cmr7
+\font\sixrm=cmr6
+\font\fiverm=cmr5
+
+\font\teni=cmmi10 \skewchar\teni='177
+\font\ninei=cmmi9 \skewchar\ninei='177
+\font\eighti=cmmi8 \skewchar\eighti='177
+\font\seveni=cmmi7 \skewchar\seveni='177
+\font\sixi=cmmi6 \skewchar\sixi='177
+\font\fivei=cmmi5 \skewchar\fivei='177
+
+\font\tensy=cmsy10 \skewchar\tensy='60
+\font\ninesy=cmsy9 \skewchar\ninesy='60
+\font\eightsy=cmsy8 \skewchar\eightsy='60
+\font\sevensy=cmsy7 \skewchar\sevensy='60
+\font\sixsy=cmsy6 \skewchar\sixsy='60
+\font\fivesy=cmsy5 \skewchar\fivesy='60
+
+\font\tenex=cmex10
+
+\font\tenbf=cmbx10
+\font\ninebf=cmbx9
+\font\eightbf=cmbx8
+\font\sevenbf=cmbx7
+\font\sixbf=cmbx6
+\font\fivebf=cmbx5
+
+\font\tentt=cmtt10
+\font\ninett=cmtt9
+\font\eighttt=cmtt8
+
+\font\tensl=cmsl10
+\font\ninesl=cmsl9
+\font\eightsl=cmsl8
+\font\sevensl=cmti7             %  Would use cmsl7 if it were standard.
+                                %  Currently needed only for \def of \LaTeX
+
+\font\tenit=cmti10
+\font\nineit=cmti9
+\font\eightit=cmti8
+\font\sevenit=cmti7
+
+\font\tenuit=cmu10
+\font\tenbfsl=cmbxsl10
+
+\font\tensmc=cmcsc10
+\font\ninesmc=cmcsc10           % redefine if cmcsc9 and/or cmcsc8 exist
+\font\eightsmc=cmcsc10
+
+\font\tentex=cmtex10            % for ASCII character set
+
+\def\mit{\fam\@ne}              % from plain
+\def\cal{\fam\tw@}              % from plain
+\def\sy{\cal}
+
+%  cmss fonts are not needed all the time.  Permit as-needed access.
+\def\LoadSansFonts{%
+  \global\font\twelvess=cmss10 scaled \magstep1
+  \global\font\tenss=cmss10
+  \global\font\niness=cmss9
+  \global\font\eightss=cmss8
+  \addto\tenpoint{\def\ssf{\tenss}}
+  \addto\ninepoint{\def\ssf{\niness}}
+  \addto\eightpoint{\def\ssf{\eightss}}
+  \gdef\LoadSansFonts{}}
+
+%  TUGboat section heads
+\font \seventeenssb=cmssbx10 scaled \magstep3
+\font \twelvessb=cmssbx10 scaled \magstep1
+
+\newfam\sectitlefam
+\textfont\sectitlefam=\seventeenssb \scriptfont\sectitlefam=\twelvessb
+
+%  \stbaselineskip set in tugboat.com
+\def\sectitlefont{%
+  \fam\sectitlefam \seventeenssb \baselineskip=\stbaselineskip }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     *****  Definitions of \tenpoint, \ninepoint, etc.  *****
+%
+
+%  Following is a facility for adding commands to \tenpoint, \ninepoint
+%  and \eightpoint.  \LoadSansFonts uses this technique above.
+%  Also used to add math families, as with:
+%       \addto\tenpoint{\textfont\frakfam...}
+%  to add a Fraktur family.
+%
+\def\addto#1#2{%
+  \csname @addsto\string#1\endcsname=
+  \expandafter{\the\csname @addsto\string#1\endcsname#2}}
+\def\@additionsto#1{\expandafter\the\csname @addsto\string#1\endcsname}
+\expandafter\newtoks\csname @addsto\string\tenpoint\endcsname
+\expandafter\newtoks\csname @addsto\string\ninepoint\endcsname
+\expandafter\newtoks\csname @addsto\string\eightpoint\endcsname
+
+
+\newskip\ttglue
+\def\setttglue{%
+  \edef\@thefont{\the\font}%  to restore this font after the setting
+  \tt \ttglue=.5em plus .25em minus .15em
+  \@thefont}
+
+%  We assume that \scriptscriptfonts remain the same throughout
+\scriptscriptfont\z@=\fiverm
+\scriptscriptfont\@ne=\fivei
+\scriptscriptfont\tw@=\fivesy
+\scriptscriptfont\thr@@=\tenex
+\scriptscriptfont\bffam=\sixbf
+
+\newdimen\normaltenpointstretch    \normaltenpointstretch=1.6667pt
+\def\NormalTenPointSpacing{\AdjustNormalSpacing\tenpoint{}}
+\def\StretchyTenPointSpacing{\AdjustNormalSpacing\tenpoint{2.4}}
+
+\def\tenpoint{%
+  \normalbaselineskip=12pt
+  \abovedisplayskip=3pt plus 3pt minus 1pt
+  \belowdisplayskip=3pt plus 3pt minus 1pt
+  \abovedisplayshortskip=0pt plus 3pt
+  \belowdisplayshortskip=1pt plus 3pt minus 1pt
+  \def\rm{\fam\z@\tenrm}%
+  \textfont\z@=\tenrm \scriptfont\z@=\sevenrm
+  \def\oldstyle{\fam\@ne\teni}%
+  \textfont\@ne=\teni \scriptfont\@ne=\seveni
+  \textfont\tw@=\tensy \scriptfont\tw@=\sevensy
+  \textfont\thr@@=\tenex \scriptfont\thr@@=\tenex
+  \def\it{\fam\itfam\tenit}%
+  \textfont\itfam=\tenit \scriptfont\itfam=\sevenit
+  \def\sl{\fam\slfam\tensl}%
+  \textfont\slfam=\tensl \scriptfont\slfam=\sevensl
+  \def\bf{\def\sl{\tenbfsl}\fam\bffam\tenbf}%
+  \textfont\bffam=\tenbf \scriptfont\bffam=\eightbf
+  \def\smc{\tensmc}%
+  \def\SMC{\ninerm}%
+  \def\tt{\tentt}%
+  \setttglue
+  \def\upright{\tenuit}%
+  \setbox\strutbox=\hbox{\vrule height7.5pt depth2.5pt width\z@}%
+  \setbox\struttbox=\hbox{\vrule height8.5pt depth3.5pt width\z@}%
+  \normalbaselines \rm
+  \@additionsto\tenpoint}
+
+\tenpoint                       % initialize -- default font
+
+
+\newdimen\normalninepointstretch   \normalninepointstretch=1.5pt
+\def\NormalNinePointSpacing{\AdjustNormalSpacing\ninepoint{}}
+\def\StretchyNinePointSpacing{\AdjustNormalSpacing\ninepoint{2.4}}
+
+\def\ninepoint{\normalbaselineskip=11pt
+  \abovedisplayskip=2.5pt plus 2.5pt minus 1pt
+  \belowdisplayskip=2.5pt plus 2.5pt minus 1pt
+  \abovedisplayshortskip=0pt plus 2.5pt
+  \belowdisplayshortskip=1pt plus 2.5pt minus 1pt
+  \def\rm{\fam\z@\ninerm}%
+  \textfont\z@=\ninerm \scriptfont\z@=\sevenrm
+  \def\oldstyle{\fam\@ne\ninei}%
+  \textfont\@ne=\ninei \scriptfont\@ne=\seveni
+  \textfont\tw@=\ninesy \scriptfont\tw@=\sevensy
+  \def\it{\fam\itfam\nineit}%
+  \textfont\itfam=\nineit
+  \def\sl{\fam\slfam\ninesl}%
+  \textfont\slfam=\ninesl
+  \def\bf{\fam\bffam\ninebf}%
+  \textfont\bffam=\ninebf \scriptfont\bffam=\sevenbf
+  \def\smc{\ninesmc}%
+  \def\SMC{\eightrm}%
+  \def\tt{\ninett}%
+        \setttglue
+  \setbox\strutbox=\hbox{\vrule height 6.75pt depth 2.25pt width\z@}%
+  \setbox\struttbox=\hbox{\vrule height 7.75pt depth 3.25pt width\z@}%
+  \normalbaselines \rm
+  \@additionsto\ninepoint }
+
+%  The following setting can be used when baselineskip = 10pt
+%  \setbox\struttbox=\hbox{\vrule height 7.25pt depth 2.75pt width\z@}%
+
+
+\newdimen\normaleightpointstretch  \normaleightpointstretch=1.333pt
+\def\NormalEightPointSpacing{\AdjustNormalSpacing\eightpoint{}}
+\def\StretchyEightPointSpacing{\AdjustNormalSpacing\eightpoint{2.25}}
+
+\def\eightpoint{\normalbaselineskip=10pt
+  \abovedisplayskip=2pt plus 2pt minus 1pt
+  \belowdisplayskip=2pt plus 2pt minus 1pt
+  \abovedisplayshortskip=0pt plus 2pt
+  \belowdisplayshortskip=1pt plus 2pt minus 1pt
+  \def\rm{\fam\z@\eightrm}%
+  \textfont\z@=\eightrm \scriptfont\z@=\sixrm
+  \def\oldstyle{\fam\@ne\eighti}%
+  \textfont\@ne=\eighti \scriptfont\@ne=\sixi
+  \textfont\tw@=\eightsy \scriptfont\tw@=\sixsy
+% \textfont\thr@@=\eightex \scriptfont\thr@@=\eightex
+  \def\it{\fam\itfam\eightit}%
+  \textfont\itfam=\eightit
+  \def\sl{\fam\slfam\eightsl}%
+  \textfont\slfam=\eightsl
+  \def\bf{\fam\bffam\eightbf}%
+  \textfont\bffam=\eightbf \scriptfont\bffam=\sixbf
+  \def\smc{\eightsmc}%
+  \def\tt{\eighttt}%
+  \setttglue
+  \setbox\strutbox=\hbox{\vrule height 6pt depth 2pt width\z@}%
+  \setbox\struttbox=\hbox{\vrule height 7pt depth 3pt width\z@}%
+  \normalbaselines \rm
+  \@additionsto\eightpoint }
+
+%  The 8pt cap/small cap font is not loaded.  See a corresponding remark
+%  above for the 9pt csc font.
+
+%  this is equivalent to baselineskip = 9pt
+%  \setbox\struttbox=\hbox{\vrule height 6.5pt depth 2.5pt width\z@}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%  Following will allow text to be a bit stretchier than the built-in
+%  setting; TeXbook, page 433, 355
+
+\def\@setstretch{\fontdimen3\the\font=}
+\def\AdjustNormalSpacing#1#2{%  #1=pointsize, #2=adjustment factor
+  {\T@stDimen=#2\csname normal\expandafter\gobble\string#1stretch\endcsname
+  #1%
+  \rm\@setstretch\T@stDimen
+  \it\@setstretch\T@stDimen
+  \bf\@setstretch\T@stDimen
+  }}
+
+
+
+%  Anticipated changes to this font handling scheme:
+%
+%  Dynamic loading of fonts, probably in groups according to size
+%  Removal of \rm, \bf, etc., from \*point expansions, replacement
+%    by generic \rm, \bf, etc. definitions
+%  Mechanism for switching neatly between serif and sans-serif
+
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     *****  page dimensions  *****
+%
+
+
+%  vertical dimensions
+
+\newdimen\trimlgt       \trimlgt=11in           % 10.5in (vols 7-9)
+\newdimen\headmargin    \headmargin=3.5pc       % 2.5pc  (vols 7-9)
+\newdimen\pagelgt
+\newdimen\rheadlgt      \rheadlgt=2.5pc         % + headmargin = 6pc = 1in
+\newdimen\toplgt        \toplgt=\z@
+\newdimen\normalcollgt  \normalcollgt=54pc      % 52pc for 5#2
+\newdimen\collgt        \collgt=\normalcollgt
+\newdimen\Collgt
+\maxdepth=2pt
+\newdimen\botlgt        \botlgt=\z@
+\newdimen\rfootlgt      \rfootlgt=2pc
+
+\newif\ifThisIsFirstPage        \ThisIsFirstPagefalse
+
+\def\resetpagelgt{%
+  \pagelgt=\collgt \Collgt=\collgt
+  \advance\pagelgt by \rheadlgt
+  \ifThisIsFirstPage \advance\Collgt by-\toplgt
+                     \advance\Collgt by-\botlgt \fi
+  \advance\pagelgt by \maxdepth
+  \global\advance\pagelgt by \rfootlgt
+  \global\vsize=\Collgt }
+
+\def\resetfpagelgt{%
+  \global\ThisIsFirstPagetrue
+  \resetpagelgt }                 % exclude special first page material
+
+\resetpagelgt
+\raggedbottom
+
+%  horizontal dimensions
+
+\newdimen\colwd
+\newdimen\intercolwd    \intercolwd=\z@
+\newdimen\pagewd        \pagewd=39pc
+\newdimen\trimwd        \trimwd=\pagewd
+\newdimen\oddleftindent \oddleftindent\z@
+\newdimen\evenleftindent \evenleftindent\z@
+
+\def\onecol{\colwd=\pagewd            \OneCol }
+
+\newdimen\onenarrowcolwd        \onenarrowcolwd=30pc
+\def\onenarrow{\colwd=\onenarrowcolwd \OneCol }
+
+%       before 5#2, `narrow' was 34pc
+\newdimen\onemediumcolwd        \onemediumcolwd=34pc
+\def\onemedium{\colwd=\onemediumcolwd  \OneCol }
+
+\newdimen\twocolcolwd           \twocolcolwd=18.75pc
+\def\twocol{\colwd=\twocolcolwd \intercolwd=1.5pc \TwoCol }
+
+\newdimen\threecolcolwd         \threecolcolwd=12pc
+\def\threecol{\colwd=\threecolcolwd \intercolwd=1.5pc \ThreeCol }
+
+\def\CenterOneCol{%
+  \oddleftindent\pagewd
+  \advance\oddleftindent -\colwd
+  \divide\oddleftindent\tw@
+  \evenleftindent\oddleftindent
+  \coloffset\ifodd\pageno\oddleftindent\else\evenleftindent\fi
+  }
+
+\def\OneCol{\hsize=\colwd \CenterOneCol \numcols=1 \resetmaxcols}
+\def\ZeroLeftIndents{\oddleftindent\z@ \evenleftindent\z@ \coloffset\z@ }
+\def\TwoCol{\hsize=\colwd \numcols=2 \resetmaxcols \ZeroLeftIndents}
+\def\ThreeCol{\hsize=\colwd \numcols=3 \resetmaxcols \ZeroLeftIndents}
+
+\def\resetmaxcols{%
+  \ifnum\numcols>\maxcols
+    \ifOverlaysinTeX \maxcols=\numcols
+    \else \immediate\write\sixt@@n{%
+      The new setting of \string\numcols is greater than \string\maxcols.^^J
+      Either allow overlays in TeX or increase \string\maxcols.}\fi
+  \fi}
+
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     *****  headers/footers  *****
+%
+
+
+\def\pagenoprefix{}
+
+\def\rtitlex{\def\tubfont{\tenpoint\rm}\TUB, \volx }
+\def\rtitle{%
+  \hbox to \pagewd{%
+    \tenrm
+    \makestrut[10pt;\z@]%
+    \ifodd\pageno \rtitlex\qquad\midrtitle\hfil\pagenoprefix\number\pageno
+    \else \pagenoprefix\number\pageno\hfil\midrtitle\qquad\rtitlex \fi
+    }%
+  }
+
+\def\runhead{\vbox to \rheadlgt{\rtitle \vfil }}
+
+\def\rfoot{%
+  \hbox to \pagewd{%
+    \tenrm
+    \makestrut[\z@;0.5pc]%
+    \midrtitle\hfil\midrtitle
+    }%
+  }
+
+\def\runfoot{\vbox to \rfootlgt{\vfil \rfoot }}
+
+%  Macros to produce extra running heads for stripping onto pages
+%  received as camera copy.  Format must be preset to \OneCol, and
+%  start on a new page.
+
+%  Generate 5 (4 + normal running head) per page.
+
+\def\DrawT@pLines{%
+  \vskip\topskip
+  \ulap{%
+    \line{%
+      \raise 1ex\rlap{\leaders\hrule\hskip\pagewd}%
+      \leaders\hrule\hfill
+      }}
+  \medskip}
+
+\def\r@nhead{%
+  \vbox to .23\vsize{%
+    \basezero \hsize=\pagewd \vfil
+    \topregister \vskip\headmargin \runhead \DrawT@pLines }
+  \medskip
+  \advancepageno }
+
+\def\nextrunner{%
+  \ifnum\T@stCount>0
+    \ifnum\T@stCount>5 \TestCount=5 \else\TestCount=\T@stCount \fi
+    \advance\T@stCount by-\TestCount
+    \DrawT@pLines           % always one at top of page
+    \loop\ifnum\TestCount>1 \r@nhead \advance\TestCount by\m@ne \repeat
+    \newpage
+    \def\@next{\nextrunner}%
+  \else \def\@next{}%
+  \fi
+  \@next }
+
+%  Use \ExtraRunheads to generate running heads for stripping (e.g. for
+%  author-supplied camera-ready copy).  E.g., ``\ExtraRunheads 12, {}.'' will
+%  generate 12 TUGboat running heads, up to 5 per page, starting with
+%  the current page number.
+
+\def\ExtraRunheads #1, #2.{%
+  \T@stCount=#1
+  \gdef\pageprefix{#2}%   % as in A-10 for appendices; not used just now
+  \nextrunner }
+
+
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     *****  insertions  *****
+%
+
+
+\newif\if@floatable     \@floatabletrue         % sometimes we don't want
+\def\nofloat{\@floatablefalse}                  % midinsertions to float
+
+% redefine \@ins to avoid the \par of PLAIN
+\def\@ins{\begingroup\setbox\z@\vbox\bgroup}
+
+\newinsert\botins
+\newif\ifp@ge \newif\if@mid \newif\if@bot
+\def\topinsert{\@midfalse\p@gefalse\@botfalse\@ins}
+\def\botinsert{\@midfalse\p@gefalse\@bottrue\@ins}
+\def\midinsert{\@midtrue\@botfalse\@ins}
+\def\pageinsert{\@midfalse\@botfalse\p@getrue\@ins}
+\skip\botins=\z@skip
+\count\botins=1000
+\dimen\botins=\maxdimen
+\def\endinsert{\egroup % finish the \vbox
+  \gdef\@next{}%
+  \if@mid \dimen@\ht\z@ \advance\dimen@\dp\z@
+    \advance\dimen@12\p@ \advance\dimen@\pagetotal
+    \if@floatable
+      \ifdim\dimen@>\pagegoal\@midfalse\@botfalse\p@gefalse\fi\fi
+  \fi
+  \if@mid
+    \vskip\abovedisplayskip
+    \box\z@
+    \vskip\belowdisplayskip
+    \gdef\@next{\@asifbelowdisplay}%
+  \else\insert\if@bot\botins\else\topins\fi
+   {\penalty100 % floating insertion
+    \if@bot\medskip\nobreak\fi
+    \splittopskip\z@skip
+    \splitmaxdepth\maxdimen \floatingpenalty\z@
+    \ifp@ge \dimen@\dp\z@
+      \vbox to\vsize{\unvbox\z@\kern-\dimen@}% depth is zero
+    \else \box\z@\fi
+    \if@bot\else\medskip\fi
+   }%
+  \fi\endgroup\@next}
+
+%  Footnotes are mainly supported by PLAIN format, with these
+%  exceptions.
+
+\skip\footins=10pt
+\def\footnoterule{\kern-5pt
+        \hrule width 5pc \kern 4.6pt } % the \hrule is .4pt high
+
+\newif\ifDelayFirstPar          \DelayFirstParfalse
+\def\vfootnote#1{\ifFirstPar \DelayFirstPartrue \fi
+  \insert\footins\bgroup
+  \interlinepenalty\interfootnotelinepenalty
+  \splittopskip\ht\strutbox % top baseline for broken footnotes
+  \splitmaxdepth\dp\strutbox \floatingpenalty\@MM
+  \leftskip\z@skip \rightskip\z@skip \spaceskip\z@skip \xspaceskip\z@skip
+  \rm \parindent=\normalparindent % always indent footnotes; added for TUGboat
+  \textindent{#1}\makestrut[10pt;\z@]\futurelet\next\fo@t}
+\def\@foot{\strut\egroup
+        \ifDelayFirstPar \SetupFirstPar \global\DelayFirstParfalse \fi }
+\newif\ifFirstPar       \FirstParfalse
+\def\SetupFirstPar{\global\parindent=\z@ \global\FirstPartrue }
+
+
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     *****  output  *****
+%
+
+
+%       Reorganize \pagecontents from PLAIN to put footnotes at very
+%       bottom of page, even if \raggedbottom.  Also add bottom insertions.
+
+\def\pagecontents{%
+  \ifvoid\topins\else\unvbox\topins\fi
+  \dimen@=\dp\@cclv \unvbox\@cclv % open up \box255
+  \ifr@ggedbottom \kern-\dimen@ \vfil \fi
+  \ifvoid\footins\else % footnote info is present
+    \vskip\skip\footins
+    \footnoterule
+    \unvbox\footins\fi
+  \ifvoid\botins\else
+    \vskip\skip\botins
+    \unvbox\botins\fi }
+
+
+%  Trim (registration) marks may or may not be placed around the pages;
+%  Overlaying may or may not be done within TeX (as opposed
+%  to the device driver).
+
+\newif\ifTrimmarks              \Trimmarksfalse
+\newif\ifOverlaysinTeX          \OverlaysinTeXtrue
+
+
+%  All columns containing data are formatted by \midpage.  Trim marks
+%  are put on all columns, but running heads only on the last column
+%  (i.e. column number = \numcols)
+
+\def\midpage#1{%
+  \vbox{
+    \basezero
+    \hrule height\z@ depth\z@ width\p@
+    \ifTrimmarks
+      \vskip-1in                % default offset for laser printers
+                                % this puts top trim at edge of paper
+      \vbox to \trimlgt \bgroup
+      \topregister
+      \vskip \headmargin
+    \else
+      \vskip-\rheadlgt           % this puts runhead above default offset
+    \fi
+    \vbox to \pagelgt{
+      \ifnum\xcol=\numcols \runhead \else \vbox to \rheadlgt{}\fi
+      \ifThisIsFirstPage \firsthead \fi
+      \hbox to \pagewd{#1}       % \vsize applied in \pagebody
+      \ifThisIsFirstPage \firstfoot \fi
+      \vfil                      % if no depth, avoid underfull box
+      \ifnum\xcol=\numcols \runfoot \else \vbox to \rfootlgt{}\fi
+      }
+    \ifTrimmarks \vfill \botregister \egroup \fi
+    }}
+
+%  The production version includes trim marks, which are required
+%  on photographic paper, but are unsuitable for laser printer output
+%  (because they land at the edges of the page).  For multiple
+%  column output, allowance is made for column overlays either
+%  within TeX or by the driver.  The default is to have all
+%  overlays done within TeX, but large pages or matters of efficiency
+%  may dictate that driver-overlay is more appropriate.
+
+%  When the overlaying is done within TeX, the .dvi contains just
+%  one page for each page to be printed.  However, in the case
+%  that a driver is to do the overlaying we must anticipate that
+%  it will not be smart enough to properly overlay different numbers
+%  of .dvi pages for different printed pages (e.g. in the case that
+%  one job has both single- and double-column layout).  Thus, for
+%  each printed page, TeX constructs a constant number (=\maxcols)
+%  of .dvi pages.  Columns 1 through and including \numcols will
+%  be usual .dvi pages containing information for the typeset columns.
+%  Upon reaching column number \numcols, TeX will `fill out' the
+%  printed page with empty columns to \maxcols.
+
+
+%  set up auxiliary `page numbers'
+%  \pageno = \count0  as used in PLAIN
+
+%  \xcol is the column number within a page; ranges from 1 to \maxcols
+\countdef\xcol=1        \xcol=1
+
+%  \spoolno is the ordinal number of `.dvi' pages (i.e. the number
+%  of \shipouts performed)
+\countdef\spoolno=2     \spoolno=0
+
+\def\newcol{\endgraf\vfill\eject}
+
+\def\newpage{%
+  \vfill\eject
+  \loop
+  \ifnum\xcol>1
+    {\leavevmode\endgraf\vfill\eject} % \xcol is advanced in the output routine
+  \repeat
+  }
+
+\newcount\numcols               % `real' number of columns
+
+\newcount\@maxcolsofar          % internal counter for box allocation
+\@maxcolsofar=0
+
+\newcount\maxcols               % job-wide maximum number of columns
+\maxcols=2
+
+
+                                % save the column or ship it out
+\def\@saveorship{%
+  \ifOverlaysinTeX
+    \ifnum\xcol>\@maxcolsofar   % if we need another column box allocated
+      \global\advance\@maxcolsofar\@ne
+      \newboxcs{column\number\xcol}%
+    \fi
+    \global\setboxcs{column\number\xcol}%
+  \else
+    \global\advance\spoolno\@ne
+    \shipout
+  \fi
+  }
+
+%  horizontal offset of column from left edge of page
+\newdimen\coloffset             \coloffset\z@
+\def\incrcoloffset{%
+  \global\advance\coloffset\colwd
+  \global\advance\coloffset\intercolwd
+  }
+
+\def\output@{%
+  \@saveorship\midpage{\kern\coloffset\pagebody\hfil}
+  \incrcoloffset
+  \ifnum\xcol=\numcols   % if at `real' last column, fill out page with
+    \loop                % empty columns
+    \ifnum\xcol<\maxcols
+      \global\advance\xcol\@ne
+      \@saveorship\midpage{\vbox to \collgt{}\hfil}
+    \repeat
+  \fi
+  \ifnum\xcol=\maxcols   % put page together if TeX is overlaying
+    \ifOverlaysinTeX
+      \global\advance\spoolno\@ne
+      \shipout\hbox{%
+        \xcol=1
+        \loop \rlap{\boxcs{column\number\xcol}}%
+        \ifnum\xcol<\maxcols
+          \global\advance\xcol\@ne
+        \repeat
+        \hbox to \pagewd{}%
+        }%
+    \fi
+    \D@EndPage          % possible shortening of next page
+    \global\coloffset\ifodd\pageno\oddleftindent\else\evenleftindent\fi
+    \global\xcol=1
+  \else
+    \global\advance\xcol\@ne
+  \fi
+  \ExecuteNextDC         % possible `Delayed Command'
+  }
+
+
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     *****  page adjustment  *****
+%
+
+
+%  In the absence of automatic column-balancing, provide a mechanism
+%  for manually shortening a specified page.
+
+\newif\ifSh@rtPage              \Sh@rtPagefalse
+\newif\ifSh@rtPagePending       \Sh@rtPagePendingfalse
+\newcount\Sh@rtPageNo
+\newdimen\Sh@rtPageLgt
+
+\def\@to{to}                    \def\@by{by}
+%       #1 = to/by; #2 = \dimen; #3 = <dimen>; #4 = * of Shorten*Page
+\def\@toby#1#2#3#4{%
+  \def\@tb{#1}%
+  \ifx \@tb\@to \global #2=#3
+  \else \ifx \@tb\@by \T@stDimen=#3         % accommodate negative #3
+             #2=\normalcollgt \global\advance #2 by -\T@stDimen
+        \else \errmessage{#1 is invalid syntax; \string\Shorten#4Page
+                          requires "to" or "by"}\fi
+  \fi }
+
+\def\@plusno#1#2;{%
+  \if +#1\T@stCount=\pageno \advance\T@stCount by #2
+  \else \T@stCount=#1#2 \fi }
+
+\def\ShortenPage #1 #2 #3. {%
+  \global\Sh@rtPagePendingtrue
+  \@plusno#1;\global\Sh@rtPageNo=\T@stCount
+  \@toby{#2}{\Sh@rtPageLgt}{#3}{}}
+\def\ShortenThisPage #1 #2. {%
+  \global\Sh@rtPagetrue
+  \@toby{#1}{\vsize}{#2}{This}}
+
+%  Two cases: 0 = last page was nonstandard; reset \vsize
+%             1 = do not reset \vsize: okay or length already reset
+\def\D@EndPage{%
+  \global\advancepageno
+  \T@stCount=1
+  \ifThisIsFirstPage \T@stCount=0 \global\ThisIsFirstPagefalse
+                     \resetfirsthead \resetfirstfoot
+                     \global\collgt=\normalcollgt \fi
+  \ifSh@rtPage \T@stCount=0 \global\Sh@rtPagefalse \fi
+  \ifSh@rtPagePending
+    \ifnum\pageno = \Sh@rtPageNo \T@stCount=1
+      \global\vsize=\Sh@rtPageLgt
+      \global\Sh@rtPagePendingfalse
+      \global\Sh@rtPagetrue \fi
+  \fi
+  \ifcase \T@stCount \resetpagelgt \fi }
+
+%  Add more powerful means of adjusting pages by keeping a list of
+%  commands to be executed prior to making up the next page.  This
+%  technique will be expanded in the next version of the output
+%  routine.
+
+%  "\DelayedCommand <page number> <column number> <command>\endCommand"
+%  places the token list <command> at the end of a list of "things to do".
+%  At the end of every column, the output routine checks this list to
+%  see whether the head of the list should be "executed" prior to
+%  building the next column.  If so, the execution is performed.
+%  Right now, items must be placed in the execution list in order,
+%  and all items for a given column must be combined into a single
+%  token list.
+
+%  Natural applications are double column figures and column size
+%  adjustments.  E.g.
+%  \DelayedCommand +5 1 \global\advance\vsize by 2\baselineskip\endCommand
+%  will increase the \vsize of the first column of the page 5 pages from
+%  "now" by 2 baselines.  To pull the \vsize back to normal would require
+%  another use of \DelayedCommand.  Double column figures can be achieved
+%  with insertions called by \DelayedCommand.
+
+%  Right now the technique is messy, but it can be used by those who know
+%  how it's implemented and know its limitations.
+
+\newtoks\@DelayedCommandList
+
+\def\DelayedCommand #1 #2 #3\endCommand{%
+  \@plusno#1;%
+  \edef\@temp{\the\@DelayedCommandList<\number\T@stCount>}%
+  \global\@DelayedCommandList=\expandafter{\@temp<#2>#3\endCommand}%
+  }
+
+\def\@FindNextDCPoint <#1><#2>#3\endList{%
+  \def\DCpage{#1}\def\DCcolumn{#2}}
+
+\def\FindNextDCPoint{%
+  \edef\@temp{\the\@DelayedCommandList}%
+  \ifx\@temp\empty \def\DCpage{\@M}\def\DCcolumn{0}%
+  \else
+    \edef\@form{%
+      \noexpand\@FindNextDCPoint\the\@DelayedCommandList\noexpand\endList}%
+    \@form
+  \fi}
+
+\def\@ExecuteNextDC <#1><#2>#3\endCommand#4\endList{%
+  \global\@DelayedCommandList={#4}%
+  #3}
+
+\def\ExecuteNextDC{%
+  \FindNextDCPoint
+  \ifnum \pageno=\DCpage \ifnum\xcol=\DCcolumn
+    \edef\@form{%
+      \noexpand\@ExecuteNextDC\the\@DelayedCommandList\noexpand\endList}%
+    \@form
+  \fi \fi}
+
+
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     *****  general mechanism for tags  *****
+%
+
+%  Upon sensing an opening tag (call it `\foo' here), the following process
+%  is set in motion:
+%    1. \begingroup (so definitions and settings are localized);
+%    2. the default situation for \foo is set up;
+%    3. if appropriate, an \everyfoo list is read (this allows one
+%       to override the TUGboat.sty factory defaults);
+%    4. optional commands are read.  This involves looking ahead for
+%       a `[' and `normalizing' the optional environment so that
+%       backslashes and braces are interpreted as their standard selves.
+%       After the options are read, the `\',`{', and `}' are restored
+%       to their status appropriate to \foo;
+%    5. the \@beginfoo macro is executed.  This
+%       may involve branching dependent upon flags set by options.  It may
+%       also be a place where spaces and carriage-returns are activated.
+%    6. the `argument' to \foo is read and stored or processed on
+%       the fly (the method employed is generally fixed for each tag).
+%       The argument may be delimited by *...* (called the `short-form'
+%       here), or up to ...\endfoo (called the `long-form').
+%    7. a cleanup macro is executed which also ends the current group.
+%       This may do all the work if an argument has been read and stored.
+
+%  Checking ahead.
+%  Often we check ahead to determine the next course of action.
+%  \@checknexttoken is used to check for optional commands, to check for the
+%  short-form argument-delimiter, and to ignore characters in certain
+%  situations.  The macro is just a check; applications must do whatever
+%  is appropriate with the ensuing token.
+
+%  \@checknexttoken checks the next token against argument #1.  If the
+%  two are the same, #2 is executed, otherwise #3.  The comparison is
+%  done with \ifx.  Since we check ahead with \futurelet, the first
+%  argument is stored with \let as well.  To include the case
+%  where #1 may be a space, we have to go through a small contortion
+%  to \let\@basetoken= that space.
+
+%  At times, the \@nexttoken will be \outer and this will prevent its
+%  being incorporated in the definition of \@next below.  For this reason,
+%  we store `\ifx\@basetoken\@nexttoken' away in a definition at a time
+%  when \@nexttoken is undefined and won't cause a problem.
+
+\def\if@baseis@next{\ifx\@basetoken\@nexttoken}
+
+\long\def\@checknexttoken #1#2#3{%
+  \futurelet\@basetoken\iffalse#1\fi
+  \long\def\@next{%
+%    \ifx \@basetoken\@nexttoken
+    \if@baseis@next
+      \long\def\@@next{#2}%
+    \else\long\def\@@next{#3}\fi
+    \@@next}%
+  \futurelet\@nexttoken\@next}
+
+%  Eliminating characters from input.
+%  The following macros check ahead to see whether the next token is a
+%  token to be parsed from the input stream.  \@ignoreall keeps
+%  checking to eliminate all such characters, whereas \@ignoreone drops
+%  at most one.  Argument #2 is executed after characters are eliminated.
+
+%  The token is removed by defining a control sequence whose
+%  contextual form includes the token.
+
+        % execute #2 after ignoring (possibly) one occurrence of #1
+\long\def\@ignoreone#1#2{%
+  \def\@ignoreform#1{#2}%
+  \@checknexttoken{#1}{\@ignoreform}{#2}%
+  }
+
+        % execute #2 after ignoring all occurrences of #1
+\long\def\@ignoreall#1#2{%
+  \def\@ignoreform#1{\@ignoretest}%
+  \def\@ignoretest{\@checknexttoken{#1}{\@ignoreform}{#2}}%
+  \@ignoretest
+  }
+
+%  Particularly useful ignorances.
+
+        % execute #1 after ignoring spaces
+\def\DeleteOptionalSpaces#1{%
+  \@ignoreall{ }{#1}%
+  }
+        % execute #1 after ignoring spaces and \pars
+\def\DeleteOptionalSpacesandPars#1{%
+  \@ignoreall{ }{\@ignoreall{\par}{#1}}%
+  }
+
+
+%  Checking and reading options.
+%  To check for the next optional argument, the macros must look
+%  ahead to the next character.  If the next character is a `[',
+%  the option-reading mechanism is invoked.  This check may be suppressed if
+%  the user has executed the \lastoption option.  If \@lastoption is
+%  "true" or if the [ is NOT next, the macro goes on to reading any
+%  arguments and executing appropriately.
+
+\def\@checkoptions{%
+  \if@lastoption
+    \def\@next{\@executetoend}%
+  \else
+    \def\@next{\@checknexttoken {[}{\@readoptions}{\@executetoend}}%
+  \fi
+  \@next
+  }
+
+%  Default "options" on start-up.  Unless over-ridden, the situation
+%  will be:
+%    1. there may be another option to check (i.e. \@lastoptionfalse);
+%    2. it will be necessary to read the input file to determine the
+%       method of marking arguments (i.e. \@longformfalse);
+%    3. arguments will be handled on the fly (i.e. \@savingargumentfalse);
+%    4. the long-form ending delimiter will be \end... (where ... is
+%       the tag with which we're currently operating.
+
+\newif\if@lastoption            \@lastoptionfalse
+\def\lastoption{\@lastoptiontrue}
+
+\newif\if@longform              \@longformfalse
+\def\longform{\@longformtrue}
+
+\newif\if@savingargument        \@savingargumentfalse
+
+\newtoks\enddelim
+
+\def\@defaultoptions{%
+  \@lastoptionfalse
+  \@longformfalse
+  \@savingargumentfalse
+  \enddelim=\expandafter{\csname end\CurrentTag\endcsname}%
+  \let\@long\empty
+  }
+
+%  To read an optional command, \catcodes of \ { } are restored to their plain
+%  values, and the [...] form is parsed out by \@@readoptions.  The argument
+%  to \@@readoptions is then executed, the 3 specials are restored and
+%  the we check again for [ after deleting spaces.  One might, alternatively,
+%  parse out the initial `[' and activate the `]' to end options, but
+%  this would make it awkward to place options within other macros (since
+%  the `]' would have to be \catcoded properly for the definition).
+
+\def\@readoptions{%
+  \savecat\\\makeescape\\%
+  \savecat\{\makebgroup\{%
+  \savecat\}\makeegroup\}%
+  \@@readoptions}
+
+\def\@@readoptions[#1]{%
+  #1%
+  \restorecat\\\restorecat\{\restorecat\}%
+  \DeleteOptionalSpaces{\@checkoptions}%
+  }
+
+
+%  Short Form Tagging.
+%  We specify a character (*) to be used as a begin/end delimiter
+%  for the argument to most tags.  This code could be copied and
+%  altered a bit to use another character.
+
+%  The character will be encountered as either type `other' or as
+%  an `active' character.
+
+\newtoks\@otherSFD
+\@otherSFD={*}
+\let\@SFD=*                     % used in \@checknexttoken
+
+\newtoks\@activeSFD
+{\makeactive\*
+  \global\@activeSFD={*}%
+}
+
+\let\@plainast=\ast
+\def\ast{\ifmmode\@plainast\else *\fi}
+
+
+%  Reading to the end-tag.
+%  Macros may just do their business after options have been
+%  read.  In this case, there is no end-tag to worry about.
+%  Otherwise, the macros either read to the "long-form" of end-tag
+%  (e.g. \endtitle or \endauthor) or to the short-form (assumed to
+%  be * here).  Unless an option has specified
+%  that the long-form is to be used, the macros look ahead to
+%  see whether the short-form delimiter occurs next.  If so,
+%  it is assumed that the short-form is being used.  In any case,
+%  the appropriate \@begin... macro is executed before the argument is
+%  handled.
+
+\newcount\@numarguments         \@numarguments=1
+
+\def\@executetoend{%
+  \ifnum\@numarguments>0
+    \if@longform \def\@afterbegintag{\@longparse}%
+    \else
+      \def\@afterbegintag{\@checknexttoken
+                  {\@SFD}{\@shortparse}{\@longparse}}%
+    \fi
+  \else
+    \def\@afterbegintag{}%
+  \fi
+  \csname @begin\CurrentTag\endcsname
+  \@afterbegintag
+  }
+
+%  If the short-form is being used and an argument is to be saved,
+%  we must define a "form" which TeX may follow to pull out the
+%  tag's argument.  The argument is stored away in the token register
+%  \@argument, and the appropriate end-operation is performed.
+%  Otherwise (the `argument' is processed on-the-fly), we parse out
+%  the initial short-form delimiter and activate the ending one.
+
+\newtoks\@argument
+
+\def\@shortparse{%
+  \if@savingargument
+    \edef\@form{%
+      \def\noexpand\@@shortparse\the\@otherSFD####1\the\@otherSFD}%
+    \@long\@form{\@argument{##1}\csname end\CurrentTag\endcsname}%
+  \else
+    \expandafter\makeactive\csname\the\@otherSFD\endcsname
+    \expandafter\def\the\@activeSFD
+      {\csname end\CurrentTag\endcsname
+       \expandafter\makeother\csname\the\@otherSFD\endcsname}%
+    \def\@@shortparse{%
+      \expandafter\@ignoreone\expandafter{\the\@otherSFD}%
+        {}%
+      }%
+  \fi
+  \@@shortparse}
+
+%  On the other hand, if the long form is used, TeX must parse to
+%  the long-form ending tag.  Ordinarily we know the ending-tag
+%  because it is just the \end... which corresponds to the tag
+%  which initiated the process.  We do allow for the possibility,
+%  however, that we may want to switch this for some reason. E.g.
+%  the different \verbatim styles allow for \verbatim...\endverbatim
+%  and ||...||.  The easiest way to implement the || style is
+%  to have the first || call \verbatim and have \verbatim know
+%  to look for || as the end-tag instead of \endverbatim.  This may
+%  be accomplished by allowing for the possibility of different
+%  end-tags as below.
+
+\def\@longparse{%
+  \if@savingargument
+    \edef\@form{\def\noexpand\@@longparse####1\the\enddelim}%
+    \@long\@form{\@argument{##1}\csname end\CurrentTag\endcsname}%
+  \else \def\@@longparse{}\fi
+  \@@longparse
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Macros generally available to tags.
+
+\def\longargument{\def\@long{\long}}
+
+\def\@authorstyle{\@@@a}
+\def\@inlinestyle{\@@@i}
+\def\@displaystyle{\@@@d}
+\def\@altinlinestyle{}
+\def\@altdisplaystyle{}
+
+\newif\if@removeprewhite        \@removeprewhitefalse
+\newif\if@removepostwhite       \@removepostwhitefalse
+\def\removeprewhite{\@removeprewhitetrue}
+\def\removepostwhite{\@removepostwhitetrue}
+
+%  Allow for line numbers on a listing as well as rules above and below.
+\newif\if@ruled         \@ruledfalse
+\newif\if@numbered      \@numberedfalse
+\newcount\linenumber
+\newcount\globallinenumber      \globallinenumber = 0
+\newif\if@continuingnumbers \@continuingnumbersfalse
+\def\continuenumbers{\numbered\@continuingnumberstrue}
+
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     *****  title, section title, authors, addresses  *****
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  title
+
+\def\title{%
+  \begingroup
+  \def\CurrentTag{title}%
+  \@defaultoptions
+  \@savingargumenttrue
+  \@checkoptions}
+
+\def\endtitle{%
+  \global\toks@=\expandafter{\the\@argument}%
+  \endgroup
+  \edef\thetitle{\ignorespaces\the\toks@\unskip}%
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  section titles
+
+%  Material mostly in tugboat.com now
+
+\setbox\T@stBox=\hbox{\sectitlefont O}
+\newdimen\stfontheight          \stfontheight=\ht\T@stBox
+
+\def\sectitle{%
+  \begingroup
+  \def\CurrentTag{sectitle}%
+  \@defaultoptions
+  \@savingargumenttrue
+  \global\SecTitletrue
+  \@checkoptions}
+
+\def\endsectitle{%
+  \@sectitle{\the\@argument}%
+  \endgroup
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  authors
+
+\newcount\authornumber
+
+\def\author{%
+  \begingroup
+  \def\CurrentTag{author}%
+  \global\advance\authornumber by 1
+  \@defaultoptions
+  \@savingargumenttrue
+  \@checkoptions}
+
+\def\endauthor{%
+  \global\toks@=\expandafter{\the\@argument}%
+  \endgroup
+  \expandafter\edef\csname theauthor\number\authornumber\endcsname
+      {\ignorespaces\the\toks@\unskip}%
+  \expandafter\let\csname theaddress\number\authornumber\endcsname\relax
+  \expandafter\let\csname thenetaddress\number\authornumber\endcsname\relax
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  addresses
+
+\def\address{%
+  \begingroup
+  \def\CurrentTag{address}%
+  \@defaultoptions
+  \@savingargumenttrue
+  \let\@addressstyle=\@authorstyle
+  \def\inline{\let\@addressstyle=\@inlinestyle}%
+  \def\display{\let\@addressstyle=\@displaystyle}%
+  \@checkoptions}
+
+\def\endaddress{%
+  \ifx\@addressstyle\@inlinestyle
+    \def\\{, }\the\@argument
+    \endgroup
+    \def\@next{}%
+  \else\ifx\@addressstyle\@displaystyle
+    \endgraf\raggedright
+    \everypar={\hangindent 1.5\parindent}%
+    \def\\{\endgraf}%
+    \def\|{\unskip\hfil\break}%
+    \vskip\abovedisplayskip
+    \the\@argument\endgraf
+    \vskip\belowdisplayskip
+    \@asifbelowdisplay
+    \endgroup
+    \def\@next{\ignorespaces}%
+  \else
+    \global\toks@=\expandafter{\the\@argument}%
+    \endgroup
+    \expandafter\edef\csname theaddress\number\authornumber\endcsname
+      {\ignorespaces\the\toks@\unskip}%
+    \def\@next{}%
+  \fi \fi
+  \@next
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  network addresses
+
+\def\netaddress{%
+  \begingroup
+  \def\CurrentTag{netaddress}%
+  \@defaultoptions
+  \@savingargumenttrue
+  \let\@network\relax
+  \def\network##1{\def\@network{##1: }}%
+  \@SpecialsGetOther
+  \makeescape\\%
+  \netaddrat
+  \netaddrpercent
+  \@checkoptions}
+
+{\makeactive\@
+ \gdef\netaddrat{\makeactive\@\def@{\char"40\discretionary{}{}{}}}
+ \makeactive\%
+ \gdef\netaddrpercent{\makeactive\%\def%{\char"25\discretionary{}{}{}}}
+}
+
+%  We want the definition of \thenetaddress... to land at the right
+%  nesting level, so we have to first pull it to the top, then
+%  drop back to where we are.
+
+\def\endnetaddress{%
+  \global\toks@=\expandafter{\the\@argument}%
+  \ifx\@network\relax
+    \gdef\@@network{}%
+  \else
+    \xdef\@@network{\@network}%
+  \fi
+  \endgroup
+  \expandafter\edef\csname thenetaddress\number\authornumber\endcsname
+    {{\noexpand\rm\@@network}%
+     {\noexpand\netaddrat\noexpand\netaddrpercent\noexpand\net
+      \ignorespaces\the\toks@\unskip}}%
+  }
+
+\def\net{\tt}
+
+%  Overrides to default author and signature formats
+
+\def\authorlist#1{\def\@authorlist{#1}}
+
+%  Except for the first article in a section, beginnings of articles
+%  are announced by a horizontal rule the width of the column.
+%  In the case that this rule happens to fall at the top of a column,
+%  we have to make sure that it appears at the VERY top of the column
+%  and not just on the first baseline.  To accomplish this, we insert
+%  an empty rule first and then jump back over it to place the rule that
+%  readers will see.
+
+\def\article{%
+  \@allowspanningfigsfalse
+  \ifSecTitle \global\SecTitlefalse
+  \else \vskip\AboveTitleSkip
+    \kern\topskip
+    \nullhrule
+    \kern-\topskip
+    \kern-\strulethickness
+    \hrule height\strulethickness depth\z@
+    \nobreak
+    \kern\medskipamount
+  \fi
+  \ifx\thetitle\relax
+  \else
+    \nobreak
+    {\parskip\z@\interlinepenalty\@M
+      \noindent\def\\{\unskip\break}\raggedstretch=.3\colwd\raggedright\bf
+      \ignorespaces\thetitle\unskip\endgraf}%
+  \fi
+  \ifnum\authornumber>0
+    \nobreak
+    \vskip4pt
+    {\parskip\z@\interlinepenalty\@M
+     \def\\{\unskip\hfil\break}\hangindent\parindent\raggedright
+     \@authorlist\endgraf}
+  \fi
+  \nobreak
+  \vskip \BelowTitleSkip
+  \vskip -\parskip
+  \tenpoint
+  \DeleteOptionalSpacesandPars{\noindent\ignorespaces}%
+  }
+
+
+\def\endarticle{\vfil\end}              % redefined in drivers
+
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     *****  heads  *****
+%
+
+%  Heads are set by first saving the text of the head in \@argument
+%  and then operating appropriately depending upon the \headlevel.
+%  Selection among the different heads is made by an \ifcase.
+
+%  To remove extra \par tokens between heads and ensuing text in the
+%  input file, we call \DeleteOptionalSpacesandPars.  To do this outside
+%  the `head' group and just before TeX returns to the normal input stream
+%  following a call to \head, we must define (globally) a control sequence
+%  (\@next) and call it at the very end.
+
+\newcount\headlevel     \headlevel=1
+
+\def\head{%
+  \begingroup
+  \def\CurrentTag{head}%
+  \@allowindentfalse
+  \@defaultoptions
+  \@savingargumenttrue
+  \def\\{\break}%
+  \@checkoptions}
+
+\def\endhead{%
+  \endgraf
+  \ifcase\headlevel\or\@domainhead\or\@dosubhead\or\@dosubsubhead\fi
+  \endgroup
+  \@next
+  }
+
+\def\@domainhead{%
+  \if@removeprewhite\else\vskip\baselineskip\fi
+  \noindent{\raggedright\bf\ignorespaces\the\@argument\unskip\endgraf}%
+  \if@removepostwhite          %  usually we want the white space
+  \else\kern0.5\baselineskip\fi
+  \nobreak
+  \gdef\@next{%
+    \if@allowindent\def\@next{}%  usually we don't want to indent here
+    \else\def\@next{\DeleteOptionalSpacesandPars{\noindent\ignorespaces}}\fi
+    \@next
+    }%
+  }
+
+\def\@dosubhead{%
+  \if@removeprewhite\else\medskip\fi
+  \noindent{\frenchspacing\bf\ignorespaces\the\@argument
+    \unskip\if@headpunctuation.\fi}%
+    \hskip 0.5em plus \fontdimen3\the\font
+  \gdef\@next{\DeleteOptionalSpacesandPars{}}%
+  }
+
+\def\@dosubsubhead{%
+  {\frenchspacing\bf\ignorespaces\the\@argument\unskip}%
+    \hskip 0.5em plus \fontdimen3\the\font
+  \gdef\@next{\DeleteOptionalSpacesandPars{}}%
+  }
+
+\def\subhead{\head[\headlevel=2]}
+\def\subsubhead{\head[\headlevel=3]}
+
+\newif\if@headpunctuation  \@headpunctuationtrue
+\def\nopunctuation{\@headpunctuationfalse}
+
+\newif\if@allowindent
+\def\allowindent{\global\@allowindenttrue}
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     *****  text and subtext  *****
+%
+
+%  The code here exists primarily to implement \subtext.  The treatment
+%  is similar to that for \head in that an \ifcase statement is called
+%  to choose between the various text levels.  Here, however, we handle
+%  the `text' on the fly instead of saving it as an argument.
+
+\newcount\textlevel     \textlevel=1
+
+\def\text{%
+  \begingroup
+  \def\CurrentTag{text}%
+  \@defaultoptions
+  \@savingargumentfalse
+  \@checkoptions}
+
+\def\@begintext{%
+  \endgraf
+  \ifcase\textlevel\or\or\@setupsubtext\fi
+  }
+
+\def\@setupsubtext{%
+  \vskip\abovedisplayskip
+  \advance\leftskip by 0.5\parindent
+  \advance\rightskip by 0.5\parindent
+  \ninepoint\rm
+  }
+
+\def\endtext{%
+  \gdef\@next{}%
+  \ifcase\textlevel\or\or\@dosubtext\fi
+  \endgroup
+  \@next
+  }
+
+\def\@dosubtext{%
+  \endgraf
+  \vskip\belowdisplayskip
+  \gdef\@next{\@asifbelowdisplay}%
+  }
+
+\def\subtext{\text[\textlevel=2]}
+
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     *****  lists  *****
+%
+
+\newcount\listlevel     \listlevel=1
+\newif\if@itemized
+\newcount\itemnumber
+\newtoks\@itemtag
+\newcount\@cols                 % number of columns in list
+\newdimen\colsepwidth
+\newdimen\@listindent
+\newdimen\@listhangindent
+\newif\if@firstitem             % when first item is handled differently
+\newtoks\everylist
+
+\def\list{%
+  \begingroup
+  \def\CurrentTag{list}%
+  \let\@liststyle=\@displaystyle
+  \def\inline{\let\@liststyle=\@inlinestyle}%
+  \def\display{\let\@liststyle=\@displaystyle}%
+  \def\displaystyle##1{\def\@altdisplaystyle{##1}}%
+  \def\inlinestyle##1{\def\@altinlinestyle{##1}}%
+  \def\item{%
+    \begingroup
+    \def\CurrentTag{item}%
+    \@numarguments=0
+    \@checkoptions}%
+  \@itemtag={$\bullet$}%
+  \def\tag##1{\@itemtag{##1}}%
+  \def\tagform##1{\llap{##1\strutt\enspace}}%
+  \@itemizedtrue
+  \def\unitemized{\@itemizedfalse}%
+  \itemnumber=0
+  \def\numbered{\@itemtag={\number\itemnumber.}}%
+  \def\romannumeraled{\@itemtag={\romannumeral\itemnumber.}}%
+  \def\Romannumeraled{\@itemtag=
+    {\uppercase\expandafter{\romannumeral\itemnumber.}}}%
+  \def\lettered{\itemnumber="60 \@itemtag={\char\itemnumber.}}%
+  \def\Lettered{\itemnumber="40 \@itemtag={\char\itemnumber.}}%
+  \def\ruled{\@ruledtrue}%
+  \@ruledfalse
+  \@cols=1
+  \def\cols{\@cols}%
+  \@firstitemtrue
+  \def\@itemseparator{, }%
+  \def\itemseparator##1{\def\@itemseparator{##1}}%
+  \@defaultoptions
+  \@savingargumentfalse
+  \the\everylist
+  \@checkoptions}
+
+\def\@beginlist{%
+  \ifx\@liststyle\@displaystyle
+    \endgraf
+    \ifnum\listlevel=1
+      \if@ruled \if@removeprewhite\else\medskip\fi \hrule\kern5pt \nobreak
+      \else \if@removeprewhite\else\vskip\abovedisplayskip \fi\fi
+    \fi
+    \advance\leftskip\parindent
+    \@listindent=\parindent
+    \@listhangindent=\@listindent
+    \parindent\@listindent
+    \lineskip\z@
+    \if@itemized
+    \else
+      \parskip\z@skip
+      \parindent\z@
+      \raggedright
+      \everypar={\advance\itemnumber\@ne
+                 \tagform{\the\@itemtag}}%
+      \makeCtrlMendgraf
+    \fi
+    \def\colsep{%
+      \global\count@\itemnumber
+      \egroup\kern\colsepwidth
+      \vtop\bgroup
+      \@altdisplaystyle
+      \itemnumber=\count@\ignoreendline}%
+    \ifnum\@cols>1
+      \dimen@\colsepwidth
+      \multiply\dimen@\@cols
+      \advance\dimen@-\colsepwidth
+      \advance\hsize-\dimen@
+      \divide\hsize by\@cols
+      \hbox\bgroup\vtop\bgroup
+    \fi
+    \@altdisplaystyle
+  \else
+    \def\tagform##1{##1\strutt\ }%
+    \if@itemized
+    \else
+       \makeCtrlMseparator
+       \advance\itemnumber by \@ne
+       \tagform{\the\@itemtag}%
+    \fi
+    \def\colsep{}%
+    \@altinlinestyle
+  \fi
+  }
+
+
+\def\endlist{%
+  \ifx\@liststyle\@displaystyle
+    \if@itemized\endgraf\fi
+    \ifnum\@cols>1
+      \egroup   % vtop
+      \egroup   % hbox
+    \fi
+    \ifnum\listlevel=1
+      \if@ruled \kern5pt\hrule\nobreak\vskip2\medskipamount
+      \else %\nobreak
+        \if@removepostwhite\else\vskip\belowdisplayskip\fi
+      \fi
+      \gdef\@next{\@asifbelowdisplay}%
+    \fi
+  \else \gdef\@next{}%
+  \fi
+  \endgroup     % list
+  \@next
+  }
+
+\def\sublist{\list[\listlevel=2]}
+
+
+\newtoks\everyitem      \everyitem{}
+
+
+\def\@beginitem{%
+  \ifx\@liststyle\@displaystyle
+    \endgraf
+    \if@firstitem\@firstitemfalse\else\vskip\smallskipamount\fi
+    \advance\itemnumber by \@ne
+    \noindent\leavevmode
+    \the\everyitem
+    \tagform{\the\@itemtag}%
+  \else
+    \def\item{\if@firstitem\@firstitemfalse\else\unskip\@itemseparator\fi
+              \advance\itemnumber by \@ne\the\@itemtag\enspace}%
+  \fi
+  \global\count@\itemnumber
+  \global\dimen@\hangindent
+  \endgroup
+  \itemnumber\count@
+  \hangindent\dimen@
+  }
+
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     *****  verbatim  *****
+%
+
+%  Operation here is very similar to that for the other tags.
+%  The opening tag sets up the situation and looks for optional
+%  commands and the short-form delimiters.  Since initial setup
+%  involves changing the special characters to characters of
+%  type other, some juggling must be done when optional commands
+%  are read.  In addition, to allow for implementation of the
+%  |...| style using the more verbose \verbatim...\endverbatim,
+%  we parameterize the ending-delimiter.
+
+        % sets default to display style
+\def\verbatim{\@verbatim[\display]}
+
+\def\@verbatim{%
+  \begingroup
+  \setupverbatim
+  \@checkoptions
+  }
+
+\def\setupverbatim{%
+  \def\CurrentTag{verbatim}%
+  \@defaultoptions
+  \def\inline{\let\@verbstyle\@inlinestyle}%
+  \def\display{\let\@verbstyle\@displaystyle}%
+  \def\displaystyle##1{\def\@altdisplaystyle{##1}}%
+  \def\inlinestyle##1{\def\@altinlinestyle{##1}}%
+  \def\numbered{\@numberedtrue}%
+  \def\ruled{\@ruledtrue}%
+  \def\smallcode{\ninepoint\tt\baselineskip=10pt}%
+  \let\@verbinputvar\relax
+  \let\@verbinputfile\relax
+  \@SpecialsGetOther
+  \enddelim=\expandafter{\endverbdelimiter}%
+  \normalspaces\frenchspacing
+  \obeylines
+  \@savingargumenttrue
+  \the\everyverbatim
+  }
+
+\def\@SpecialsGetOther{%
+  \catcode`\\=\other
+  \catcode`\{=\other \catcode`\}=\other \catcode`\$=\other
+  \catcode`\&=\other \catcode`\#=\other \catcode`\%=\other
+  \catcode`\~=\other \catcode`\_=\other \catcode`\^=\other
+  \the\@AdditionsToSpecialsGetOther}
+
+%  The \@Additions... register above should be used whenever another
+%  character is declared to be special for some purpose.  E.g.,
+%  we will use the | for the short-form |...| verbatim notation.
+%  Since the | is generally active for this purpose, it's category
+%  won't get changed to \other for use in \verbatim...\endverbatim
+%  unless we add it via this mechanism.
+
+\newtoks\@AdditionsToSpecialsGetOther
+
+\def\AddToSpecialsGetOther#1{%
+  \@AdditionsToSpecialsGetOther=
+   \expandafter{\the\@AdditionsToSpecialsGetOther#1}}
+
+%  Altering the verbatim setup.
+%  Users can alter the setup to their purpose by
+%  putting tokens in the register \everyverbatim.
+
+\newtoks\everyverbatim
+
+%  Ordinarily the end-tag would be the single token `\endverbatim'.
+%  The following allows us to `see' the tag when `\' is of type `other'.
+{\catcode`\|=0 \catcode`\\=\other
+|gdef|endverbdelimiter{\endverbatim}}
+
+%  Input from an external variable or file
+
+\def\inputfromvar#1{\def\@verbinputvar{#1}}%
+\def\inputfromfile#1{\def\@verbinputfile{#1}}%
+\let\@verbinputvar\relax
+\let\@verbinputfile\relax
+
+%  Outputs
+
+\newif\if@outputtotype  \@outputtotypetrue
+\def\notype{\@outputtotypefalse}
+\def\outputtovar#1{\def\@verboutputvar{#1}}
+\def\outputtofile#1{\def\@verboutputfile{#1}}
+\let\@verboutputvar\relax
+\let\@verboutputfile\relax
+\newwrite\verboutfile
+
+\def\@beginverbatim{\obeyspaces}%\obeylines}
+
+\def\endverbatim{%
+ \ifx\@verboutputvar\relax\else         % output to `variable'
+   \expandafter\xdef\csname\@verboutputvar\endcsname{\the\@argument}%
+ \fi
+ \ifx\@verboutputfile\relax\else        % output to file
+   \immediate\openout\verboutfile=\@verboutputfile
+   \makeCtrlMnewlinechar
+   \iffalse{\fi\expandafter\@setupverbwrite\the\@argument}% use \@setupwrite to
+   \immediate\closeout\verboutfile              % get rid of initial ^^M
+ \fi
+ \gdef\@next{}%                         % in case following clause is false
+ \if@outputtotype                       % output typeset on page
+  \tt
+  \ifx\@verbstyle\@inlinestyle
+    \@beforeverbinline
+    \@altinlinestyle
+  \else
+    \@beforeverbdisplay
+    \@altdisplaystyle
+  \fi
+  \ifx\@verbinputvar\relax\else         % input from `variable'
+    \csname\@verbinputvar\endcsname
+  \fi
+  \ifx\@verbinputfile\relax\else        % input from file
+    \fileinput{\@verbinputfile}%
+    \@endverbatim
+  \fi
+  \expandafter\@ignoreCtrlMverbendline\the\@argument\@endverbatim
+  \ifx\@verbstyle\@inlinestyle
+    \@afterverbinline
+  \else
+    \@afterverbdisplay\gdef\@next{\@asifbelowdisplay}%
+  \fi
+ \fi
+ \endgroup
+ \@next
+ }
+
+
+\def\@beforeverbinline{%
+    \makeCtrlMverbspace
+    \let\@endverbatim=\empty
+  }
+
+\def\@beforeverbdisplay{%
+  \def\@endverbatim{\verbendline}%
+  \if@ruled \medskip \hrule\kern5pt \nobreak
+  \else \vskip\abovedisplayskip
+  \fi
+  \makespaceverbspace
+  \makeCtrlMverbendline
+  \parskip=\z@skip
+  \if@numbered \parindent=\z@
+    \if@continuingnumbers
+    \else \global\globallinenumber = \z@ \fi
+    \linenumber=\z@ \fi
+  \everypar={\global\advance\globallinenumber by\@ne
+          \advance\linenumber by\@ne
+          \ifnum\linenumber<3 \vadjust{\nobreak}\fi
+          \if@numbered \leavevmode
+              \hbox to\normalparindent{\hss\sevenrm\the\globallinenumber.\ }%
+          \fi}%
+  \frenchspacing\rightskip=-\ttrightskip \hyphenpenalty\@M
+  }
+
+%  \ttrightskip is the permissible overhang beyond right margin;
+%  in MANMAC, this is 5pc, which is fine for the TeXbook, but too much here.
+
+\newdimen\ttrightskip   \ttrightskip=1pc
+
+\def\@afterverbinline{}
+
+\def\@afterverbdisplay{%
+  \if@ruled \kern5pt\hrule\fi
+  \ifnum\linenumber<3 \penalty\z@ \fi
+  \if@removepostwhite\else
+    \if@ruled \vskip2\medskipamount \else \vskip\belowdisplayskip\fi
+  \fi
+ }
+
+\def\@asifbelowdisplay{%
+  \toks@=\expandafter{\the\everypar}%
+  \noindent
+  \everypar=\expandafter{\the\toks@}%
+  \ignorespaces}
+
+
+%  Definitions of spaces and ^^M
+%  \@ignoreCtrlMverbendline is used to lop off an initial ^^M in
+%  verbatim text and to remove an \@endverbatim (the latter in case the
+%  verbatim text is actually empty)
+
+\def\@ignoreendverbatim{\@ignoreone{\@endverbatim}{}}
+\def\verbendline{\leavevmode\null\endgraf}
+\def\makeCtrlMactive{\catcode`\^^M=\active}
+{\makeCtrlMactive
+\gdef\makeCtrlMverbendline{\makeCtrlMactive%
+ \def^^M{\@ignoreone{\@endverbatim}{\verbendline}}}%
+\makeCtrlMverbendline%
+\gdef\@ignoreCtrlMverbendline{\@ignoreone{
+}{\@ignoreendverbatim}}%
+\gdef\@setupverbwrite{\@ignoreone{
+}{\immediate\write\verboutfile\bgroup}}%
+\gdef\makeCtrlMverbspace{\makeCtrlMactive\def^^M{\verbatimspace}}%
+\gdef\makeCtrlMnewlinechar{\newlinechar=`\^^M}%
+\gdef\makeCtrlMendgraf{\makeCtrlMactive\def^^M{\strutt\endgraf}}%
+\gdef\makeCtrlMseparator{\makeCtrlMactive%
+  \def^^M{%
+    \@checknexttoken {\endlist}{}{%
+      \@itemseparator\advance\itemnumber by \@ne \tagform{\the\@itemtag}%
+      \ignorespaces}}}%
+}
+
+%  to read a variable or file name properly, we must interpret
+%  spaces and ^^M as nothing or as spaces
+
+{\makeCtrlMactive\obeyspaces%
+\gdef\makeCtrlMempty{\def^^M{}}%
+\gdef\makespaceempty{\def {}}%
+}
+{\makeCtrlMactive\obeyspaces%
+\gdef\makeCtrlMspace{\def^^M{\space}}%
+\gdef\makespacespace{\def {\space}}%
+}
+
+{\makeCtrlMactive%
+\gdef\@ignoreCtrlM#1{\@ignoreone{^^M}{#1}}%
+\gdef\ignoreendline{\@ignoreCtrlM{}}%
+}
+
+%  From David Eppstein's ``Trees'' paper (6#1), preserve initial spaces.
+\def\verbatimspace{\ifvmode\indent\fi\space}
+{\obeyspaces\gdef\makespaceverbspace{\def {\verbatimspace}}}
+
+
+
+%  Options and variants.
+
+\def\verbinline{\verbatim[\inline]}
+\def\verbdisplay{\verbatim[\display]}
+\def\verbfile#1{\verbatim[\inputfromfile{#1}]}
+
+
+%  Verbatim with the other characters (e.g. |...|).
+%  Procedures are parameterized so that it is easy to allow
+%  different characters to perform this function.  Any character
+%  that's chosen could cause problems if it occurs unexpectedly
+%  in the middle of what is supposed to be verbatim text.  We call
+%  the current special character for this purpose the "verbchar"
+%  and store it in active form in the token register \@verbchar.
+
+\newtoks\@verbchar
+
+%  On hitting a "verbchar" in the middle of text, TeX must look ahead
+%  to see whether the verbchar occurs again.  Since this
+%  look-ahead fixes the category of the token examined, we must change
+%  the categories of all characters appropriately before looking
+%  (and we read \everyverbatim in case it contains a category change).
+%  We must also "gobble" the second verbchar if we hit one.
+%  Depending upon whether 1 or 2 verbchars are found, we call
+%  \verbatim with the appropriate style command.  We also use an
+%  optional command to change the delimiter which ends this \verbatim
+%  block.  We naturally localize the changes to category codes made on
+%  startup.  It's easier to end this group here at the beginning and to
+%  restart everything in a standard \verbatim than it is to add an extra
+%  \endgroup after the verbatim text.
+
+\def\@firstverbchar{%
+  \begingroup
+  \setupverbatim
+%  \@SpecialsGetOther
+  \makeverbcharactive
+  \expandafter\@checknexttoken\expandafter{\the\@verbchar}%
+    {\expandafter\@ignoreone\expandafter{\the\@verbchar}%
+      {\endgroup\verbatim[\longform\maketwoendverb]}}%
+    {\endgroup\verbatim[\inline\longform\makeoneendverb]}%
+  }
+
+\def\setupverbchar{%
+ \def\makeoneendverb{\catcode\expandafter`\csname\expandafter
+        \string\the\@verbchar\endcsname=
+    \active\edef\endverbdelimiter{\the\@verbchar}%
+    \enddelim=\expandafter{\endverbdelimiter}}%
+  \def\maketwoendverb{\catcode\expandafter`\csname\expandafter
+        \string\the\@verbchar\endcsname=
+    \active\edef\endverbdelimiter{\the\@verbchar\the\@verbchar}%
+    \enddelim=\expandafter{\endverbdelimiter}}%
+  \expandafter\let\the\@verbchar\@firstverbchar
+  \makeverbcharactive
+  \AddToSpecialsGetOther{%
+    \catcode\expandafter`\csname
+        \expandafter\string\the\@verbchar\endcsname=\other}%
+  }
+
+\def\makeverbcharactive{%
+  \catcode\expandafter`\csname
+        \expandafter\string\the\@verbchar\endcsname=\active}
+
+{\makeother\| \gdef\VertChar{|}}
+{\makeactive\|
+\gdef\makevertverbchar{%
+  \@verbchar={|}%
+  \setupverbchar
+  }
+}
+
+{\makeother\! \gdef\WowChar{!}}
+{\makeactive\!
+\gdef\makewowverbchar{%
+  \@verbchar={!}%
+  \setupverbchar
+  }
+}
+
+
+\def\MTH{$}
+\def\sb{_}
+\def\sp{^}
+\def\SP{{\tt\char"20 }}         % "visible" space
+\chardef\bs=`\\
+\def\vrt{{\tt\char`\|}}
+\def\brokenvert{\hbox to 5.24998pt{\hfill
+  \lower 1.5pt\vbox to 8.5pt{\hrule width .9pt height 3.25pt
+  \vfill\hrule width .9pt height 3.25pt}\hfill}}
+
+
+
+\def\@lt{$<$}
+\def\@gt{$>$}
+{\makeactive\<
+\gdef\enablemetacode{%
+  \AddToSpecialsGetOther{\catcode`\<=\other}%
+  \makeactive\<%
+  \def<##1>{$\langle${\it\makeCtrlMspace\makespacespace##1\/}$\rangle$}%
+  }
+}
+
+
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     *****  figures  *****
+%
+
+
+\newif\if@@mid  \@@midfalse
+\newif\if@@bot  \@@botfalse
+\def\@caption{}
+\newif\if@fixed \@fixedfalse
+
+        % items for top and bottom ``banners'' on first page
+\def\resetfirsthead{\global\toplgt=\z@ \gdef\firsthead{}}
+\resetfirsthead
+\newbox\firsth@@d       \newbox\firsth@ad
+
+\def\resetfirstfoot{\global\botlgt=\z@ \gdef\firstfoot{}}
+\resetfirstfoot
+\newbox\firstf@@t       \newbox\firstf@ot
+
+\newif\if@allowspanningfigs
+
+\newcount\@figurepage
+\newcount\@figurescol
+\newcount\@figureecol
+
+
+\def\figure{%
+  \begingroup
+  \def\CurrentTag{figure}%
+  \@defaultoptions
+  \@savingargumentfalse
+  \def\top{}%
+  \def\bot{\@@bottrue}%
+  \def\mid{\@@midtrue}%
+  \def\caption##1{\def\@caption{\ulap{\bigskip##1\smallskip}}}%
+  \def\fixed{\@fixedtrue}%
+  \def\scol{\@figurescol}%
+  \def\ecol{\@figureecol}%
+  \@figurepage=\pageno
+  \@figurescol=1
+  \@figureecol=\numcols
+  \def\page{%
+    \@ignoreall{\space}%
+      {\@ignoreone{=}%
+         {\@ignoreall{\space}%
+            {\@checknexttoken{+}{\@ignoreone{+}{\advance\@figurepage by}}%
+                 {\@figurepage=}%
+            }%
+         }%
+      }%
+    }%
+  \@checkoptions}
+
+\def\@beginfigure{%
+  \if@fixed
+    \global\ThisIsFirstPagetrue
+    \setbox\T@stBox=\vbox\bgroup \hsize\pagewd
+  \else
+    \if@@mid\midinsert\else\if@@bot\botinsert\else\topinsert\fi\fi
+  \fi
+  }
+
+\def\endfigure{%
+  \@caption
+  \if@fixed
+    \egroup
+    \if@allowspanningfigs
+      \ifnum\@figurepage>\pageno
+        \immediate\write\sixt@@n{^^J
+           Setting multiple column figures currently not allowed on pages^^J
+           other than the first of each article.  Check your source file.^^J}%
+      \else
+        \if@@bot
+          \ifdim \botlgt=\z@ \global\botlgt=\ht\T@stBox \resetpagelgt \fi
+          \global\setbox\firstf@ot=\vbox to \botlgt{\box\T@stBox \vfil}%
+          \global\setbox\firstf@@t=\vbox to \botlgt{\vfil}%
+          \gdef\firstfoot{\ifnum \xcol=2 \copy\firstf@ot
+                                  \else \copy\firstf@@t \fi }%
+        \else
+          \ifdim \toplgt=\z@ \global\toplgt=\ht\T@stBox \resetpagelgt \fi
+%                       assume that \firsth@ad ends with glue, hence no \dp
+          \global\setbox\firsth@ad=\vbox to \toplgt{\box\T@stBox \vfil}%
+          \global\setbox\firsth@@d=\vbox to \toplgt{\vfil}%
+          \gdef\firsthead{\ifnum \xcol=2 \box\firsth@ad
+                                  \else \copy\firsth@@d \fi }%
+        \fi
+      \fi
+    \else
+      \immediate\write\sixt@@n{^^J
+         Setting multiple column figures currently not allowed after^^J
+         article has begun.^^J}%
+    \fi
+  \else \endinsert
+  \fi
+  \endgroup
+  }
+
+\def\twocolfigure{%
+  \figure[\fixed]}
+
+
+
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     *****  utilities  *****
+%
+
+
+
+\def\linebreak{\unskip\break}           % conflicts with LaTeX definition
+
+%  Define a structure that will permit a list (using \obeylines)
+%  to be made into 2 columns, split by \vsplit, indented the
+%  normal \parindent
+
+\def\NormalizeBlockHeight{%
+  \TestCount=1                         % \@ne
+  \TestDimen=\dimen0 \advance\TestDimen by-\topskip
+  \CutOneLine }
+\def\CutOneLine{%
+  \advance\TestCount by 1 \advance\TestDimen by-\baselineskip
+  \ifdim\TestDimen < \baselineskip                        % \@ne
+     \def\result{%
+       \TestDimen=\baselineskip
+       \multiply\TestDimen by \TestCount
+       \advance\TestDimen by \topskip
+       \global\dimen0=\TestDimen }%
+  \else \def\result{\CutOneLine }\fi
+  \result }
+
+\def\twosplit{%
+  {\topskip=\baselineskip \splittopskip=\topskip
+   \setbox0=\copy\TestBox
+   \dimen0=\ht\TestBox
+   \NormalizeBlockHeight
+   \divide\dimen0 by 2
+   \setbox\LeftHalf=\vsplit\TestBox to \dimen0
+   \ifdim\ht\TestBox > \ht\LeftHalf
+     \advance\dimen0 by \baselineskip
+     \setbox\TestBox=\copy0
+     \setbox\LeftHalf=\vsplit\TestBox to \dimen0
+   \fi
+   \line{\kern\parindent\valign{##\vfil\cr
+         \unvbox\LeftHalf\cr\noalign{\hfil}\unvbox\TestBox\cr}}%
+   }%
+  \global\setbox0=\null}
+
+\newbox\LeftHalf
+\newdimen\HalfWd
+\HalfWd=\twocolcolwd
+\advance\HalfWd by-\normalparindent
+\divide\HalfWd by 2
+
+{\obeylines
+\gdef\twouplist #1{%
+  \topskip=\baselineskip \splittopskip=\topskip
+  \begingroup \parindent=\z@ \obeylines
+%                       next line ends with intentional <cr>
+  \def\endtwouplist{
+    \egroup %               % end of \vbox
+    \endgroup %             % end of \obeylines group
+    \twosplit }%
+  \global\setbox\TestBox=\vbox\bgroup\hsize=\HalfWd %
+    \indent\vrule height\topskip width \z@ #1}%
+}
+
+%  Tags for special formatting of editor's notes  (See also TUGBOAT.COM)
+
+\def\Editor{\noindent To the Editor:\par}
+\def\EdNote #1{%
+  \if #1[%
+    \ifvmode \smallskip\noindent \else \unskip\hskip1em \fi
+    [\thinspace\xEdNote\ignorespaces
+  \else \ifFirstPar \else \medskip\noindent \fi
+  \xEdNote #1\fi }
+
+
+
+%       Draw a box around a whole page, e.g. announcements page;
+%       format must be \onenarrow or \onemedium, and start on a new page.
+
+\def\bigbox{\hrule \hbox\bgroup \vrule\kern 1pc
+        \vbox\bgroup \vskip 1pc }
+\def\endbox{\endgraf \vskip 1pc \egroup \kern 1pc\vrule \egroup \hrule }
+
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     *****  initialization  *****
+%
+
+
+\def\initializearticle{%
+  \let\thetitle=\relax
+  \authornumber=0
+  \def\@signature{\@defaultsignature}%
+  \def\@authorlist{\@defaultauthorlist}%
+  \@allowspanningfigstrue
+  }
+
+
+\makeother\@
+
+%               @ is prohibited in AMS-TeX, but should not be in TUGboat
+
+
+\twocol
+\maxcols=2
+\OverlaysinTeXtrue
+\Trimmarksfalse
+\PrelimDrafttrue
+\initializearticle
+\pageno=1001                    % number of title page
+
+\StretchyTenPointSpacing
+\StretchyNinePointSpacing
+\StretchyEightPointSpacing
+
+\makevertverbchar
+
+\endinput
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  History of changes
+
+Version   Date        Changes
+-------   ---------   ---------------------------------------------------
+1.14c     14 Oct 96   lowered footnoterule by 3pt
+
+1.14b     14 Apr 94   added \interlinepenalty=10000 to avoid page breaks
+                        in very long titles and author lists
+
+1.14a      8 Nov 93   removed extraneous " from header
+
+1.14      19 Feb 93   installed new TUG address and phone number in header
+
+1.13      13 Oct 92   Added \SMC in \ninepoint
+
+1.12       4 Jun 92   Added stretchability to \rightskip in ragged title
+
+1.11       8 Mar 92   Changed name of tugboat.com to tugboat.cmn to avoid
+                        conflict with special meaning of .com with some
+                        operating systems
+                      Within verbatim, added \smallcode (from tugproc)
+                      Added standard headers, prepared for archive installation
+
+1.10      21 Oct 91   Corrected font for \SMC in \tenpoint to \ninerm
+                        (\ninesmc was used, but set to cmcsc10)
+                      Changed \EdNote to detect \ifvmode when tag followed
+                        by [ and to \smallskip and \noindent in that case
+                        rather than performing \hskip1em
+
+1.09      11 Mar 91   Made \ an escape character in network addresses.
+                      Added mechanism for saving \long arguments of
+                        TUGboat macros (see uses of \@long).
+
+1.08      18 Oct 90   Incorporated redefinition of \sl within \bf
+                      Changed an \input within \verbatim to \fileinput.
+                      Added means of turning off punctuation after subheads.
+                      Removed \nobreak after lists
+1.07       8 Jun 90   Corrected definition of \newpage
+
+1.06      13 May 90   Added \@setupverbwrite to eliminate initial ^^M
+                      as \verbatim writes to a file.
+
+                      Made strut on first line of footnote slightly taller
+                      so as to separate footnotes.
+
+                      Reset \@verbinputfile and \@verbinputvar to \relax
+                      to allow nesting
+
+                      Removed some \global assignments to \@argument and
+                      2 verbatim flags to allow nesting.
+
+1.05      23 Apr 90   Added "\setupverbatim" to \@firstverbchar so
+                      that category switches are accomodated properly.
+
+1.04       7 Mar 90   Added \colsepwidth to allow for separation between
+                      columns of lists
+
+1.03       1 Mar 90   Modified \@dosubhead and \@dosubsubhead to allow
+                      stretchable space afterward
+
+1.02      25 Feb 90   Added \resetmaxcols to allow for automatic adjustment
+                      of \maxcols; if overlays are done by the driver,
+                      \maxcols needs to be set to an overall job maximum
+                      at the start of the job.
+
+                      Added setting of \SecTitletrue to definition
+                      of \sectitle.
+
+                      Added indicator of style file loaded (\tubstyle).
+
+1.01      17 Jan 90   Modified \@executetoend so that \@next would not
+                      be clobbered by \csname @begin\CurrentTag\endcsname;
+                      \@next changed to \@afterbegintag
+
+                      Added `\the' before \@otherSFD within definition of
+                      \@shortparse
+
+                      added \@altdisplaystyle to definition of \colsep
