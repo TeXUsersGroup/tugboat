@@ -1,11 +1,9 @@
 %% @texfile{
 %%     filename   = "tugboat.sty",
-%%     version    = "1.17",
-%%     date       = "2006/06/03",
-%%     time       = "16:34:03 EDT",
-%%     checksum   = "28581 2245 6313 69379",
+%%     version    = "1.18",
+%%     date       = "2011/02/04",
 %%     filetype   = "Plain TeX macros for TUGboat",
-%%     copyright  = "Copyright 1993, 1999, 2003, 2006 TeX Users Group.
+%%     copyright  = "Copyright 1993, 1999, 2003, 2006, 2011 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -23,14 +21,8 @@
 %%     keywords   = "tex users group, tugboat, plain tex",
 %%     supported  = "yes",
 %%     abstract   = "This file contains the plain-based macros
-%%                   for preparation of TUGboat, the Communications
-%%                   of the TeX Users Group.",
-%%     docstring  = "The checksum field above contains a CRC-16
-%%                   checksum as the first value, followed by the
-%%                   equivalent of the standard UNIX wc (word
-%%                   count) utility output of lines, words, and
-%%                   characters.  This is produced by Robert
-%%                   Solovay's checksum utility.",
+%%                   for preparation of items in TUGboat, the
+%%                   Communications of the TeX Users Group.",
 %%     }
 %% *********************************************************
 %%
@@ -42,8 +34,8 @@
 % TUGBOAT.STY
 
 \def\thistubstyle{plain}
-\def\fileversion{v1.17}
-\def\filedate{2006/06/03}
+\def\fileversion{v1.18}
+\def\filedate{2011/02/04}
 
 % general items
 
@@ -466,9 +458,37 @@
   \hbox to \pagewd{%
     \tenrm
     \makestrut[\z@;0.5pc]%
-    \midrtitle\hfil\midrtitle
+    \ifPrelimDraft
+      \midrtitle\hfil\midrtitle
+    \else
+      \ifodd\pageno
+        \hfil\thetitle
+      \else
+        \footauthors\hfil
+      \fi
+    \fi
     }%
   }
+
+\def\footauthors{%
+  \bgroup
+    \count1=1
+    \authorloop
+  \egroup}
+
+\def\authorloop{%
+  \ifnum\count1>1
+    \ifnum\count1<\authornumber
+      ,      % Wanted space.
+    \else
+      {} and % Idem.
+    \fi
+  \fi
+  \theauthor{\the\count1}%
+  \ifnum\count1<\authornumber
+    \advance\count1 by 1
+    \authorloop
+  \fi}
 
 \def\runfoot{\vbox to \rfootlgt{\vfil \rfoot }}
 
