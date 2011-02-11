@@ -348,7 +348,6 @@
     \BlackBoxes
     \def\MakeRegistrationMarks{}%
     \PrelimDrafttrue
-    \@tubrunningminimal
   }%
 }
 \DeclareOption{preprint}{%
@@ -358,6 +357,7 @@
   \AtEndOfClass{%
     \NoBlackBoxes
     \PrelimDraftfalse
+    \@tubrunningfull
     }%
 }
 %    \end{macrocode}
@@ -450,7 +450,7 @@
 % class on top of which we reside.
 %
 %    \begin{macrocode}
-\ExecuteOptions{draft,extralabel,numbersec,rawcite,runningfull}
+\ExecuteOptions{draft,extralabel,numbersec,rawcite,runningminimal}
 \ProcessOptions
 \LoadClass[twoside]{article}
 %    \end{macrocode}
