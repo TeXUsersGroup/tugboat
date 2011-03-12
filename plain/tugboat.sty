@@ -1,7 +1,7 @@
 %% @texfile{
 %%     filename   = "tugboat.sty",
-%%     version    = "1.18",
-%%     date       = "2011/02/04",
+%%     version    = "1.19",
+%%     date       = "2011/03/11",
 %%     filetype   = "Plain TeX macros for TUGboat",
 %%     copyright  = "Copyright 1993, 1999, 2003, 2006, 2011 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
@@ -9,14 +9,8 @@
 %%                   modified.  Modifications (and redistribution of
 %%                   modified versions) are also permitted, but only if
 %%                   the resulting file is renamed."
-%%     author     = "TeX Users Group",
-%%     address    = "TeX Users Group,
-%%                   P.O.Box 2311,
-%%                   Portland, OR 97208-2311,
-%%                   USA",
-%%     telephone  = "+1 503 223-9994",
-%%     FAX        = "+1 206 203-3960",
 %%     email      = "TUGboat@tug.org",
+%%     url        = "http://tug.org/TUGboat",
 %%     codetable  = "ISO/ASCII",
 %%     keywords   = "tex users group, tugboat, plain tex",
 %%     supported  = "yes",
@@ -34,8 +28,8 @@
 % TUGBOAT.STY
 
 \def\thistubstyle{plain}
-\def\fileversion{v1.18}
-\def\filedate{2011/02/04}
+\def\fileversion{v1.19}
+\def\filedate{2011/03/04}
 
 % general items
 
@@ -340,7 +334,8 @@
   \bf\@setstretch\T@stDimen
   }}
 
-
+% ring accent, which plain.tex defines no macro for.  \r is the LaTeX name.
+\def\r#1{\accent"17 #1}
 
 %  Anticipated changes to this font handling scheme:
 %
@@ -2185,6 +2180,12 @@
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+1.19       4 Mar 11   added \r
+
+1.18       4 Feb 11   changed \rfoot to give same results as LaTeX class
+
+1.17       3 Jun 06   clarified copyright.
+
 1.16       2 Jan 06   updated TUG address and phone in header
 
 1.15      15 Aug 05   added switch \if@address to avoid skip in signature
