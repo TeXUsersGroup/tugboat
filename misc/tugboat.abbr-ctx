@@ -159,6 +159,9 @@
 \def\stopsection{}
 \def\stopchapter{}
 
+\def\startformula{\begin{displaymath}}
+\def\stopformula{\end{displaymath}}
+
 \catcode`|=13
 \def|{\futurelet\next\finishbar}
 \def\finishbar{\begingroup %\show\next
