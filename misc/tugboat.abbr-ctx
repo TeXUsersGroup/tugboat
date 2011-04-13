@@ -42,10 +42,14 @@
 \def\CONTEXT   {\ConTeXt}
 \def\C         {C}
 \def\CFF       {\acro{CFF}}
+\def\CSS       {\acro{CSS}}
 \def\CTXTOOLS  {{\tt ctxtools}}
 \def\CWEB      {\acro{CWEB}}
+\def\DOM       {\acro{DOM}}
 \def\DVITOMP   {{\tt dvitomp}}
 \def\DVIPDFMX  {\DVIPDFMx}
+\def\DVIPSONE  {\acro{DVIPS\-ONE}}
+\def\EMTEX     {em\TeX}
 \def\ENC       {\acro{ENC}}
 \def\EPS       {\acro{EPS}}
 \def\ETEX      {\eTeX}
@@ -56,13 +60,16 @@
 \def\FSF       {\acro{FSF}}
 \def\HZ        {Hz}
 \def\INI       {\acro{INI}}
+\def\INRSTEX   {\acro{INRS}\TeX}
 \def\IO        {\acro{I/O}}
 \def\JAVA      {Java}
 \def\JAVASCRIPT{Java\-Script}
 \def\KPSE      {{\tt kpse}}
 \def\KPSEWHICH {{\tt kpsewhich}}
+\def\LAMSTEX   {\LAMSTeX}
 \def\LATEX     {\LaTeX}
 \def\LINUX     {Linux}
+\def\LISP      {Lisp}
 \def\LUA       {Lua}
 \def\LUALATEX  {Lua\LATEX}
 \def\LUATEX    {\LUA\-\TeX}
@@ -70,6 +77,7 @@
 \def\MACOSX    {\MacOSX}
 \def\MAKEMPX   {{\tt makempx}}
 \def\MAP       {\acro{MAP}}
+\def\MAPS      {\acro{MAPS}}
 \def\MATH      {\acro{MATH}}
 \def\MATHML    {\MathML}
 \def\METAFONT  {\MF}
@@ -78,6 +86,7 @@
 \def\MIKTEX    {MiK\-\TeX}
 \def\MKII      {Mk\acro{II}}
 \def\MKIV      {Mk\acro{IV}}
+\def\MKVI      {Mk\acro{VI}}
 \def\MKTEXLSR  {{\tt mktexlsr}}
 \def\MODULA    {Modula}
 \def\MPLIB     {\acro{MP}lib}
@@ -85,18 +94,22 @@
 \def\MPTOPDF   {{\tt mptopdf}}
 \def\MTXRUN    {{\tt mtxrun}}
 \def\NOWEB     {\acro{NOWEB}}
+\def\OCE       {\acro{OCE}}
 \def\OFM       {\acro{OFM}}
 \def\OMEGA     {Omega}
 \def\OPENTYPE  {Open\-Type}
 \def\PASCAL    {Pascal}
 \def\PDFTEX    {pdf\-\/\TeX}
 \def\PERL      {Perl}
+\def\PERLTK    {Perl/\acro{TK}}
 \def\PK        {\acro{PK}}
 \def\PLAIN     {{\tt plain}}
 \def\POSTSCRIPT{\PS}
 \def\RTL       {\acro{RTL}}
 \def\RUBY      {Ruby}
-\def\SCITE     {Scite}
+\def\SCITE     {Sci\acro{TE}}
+\def\TABLE     {T\kern-.27em\lower.5ex\hbox{A}\kern-.18em B\kern-.1em
+                 \lower.5ex\hbox{L}\kern-.075em E}
 \def\TDS       {\acro{TDS}}
 \def\TEX       {\TeX}
 \def\TEXEXEC   {{\tt texexec}}
@@ -104,9 +117,11 @@
 \def\TEXMFSTART{{\tt texmfstart}}
 % \def\TFM already in tub
 \def\THANH     {\Thanh}
+\def\THETEXBOOK{\TB}
 \def\TODO      {\acro{TODO}}
 \def\TRUETYPE  {TrueType}
 \def\TUG       {\tug}
+\def\TUGBOAT   {\TUB}
 \def\TYPEONE   {Type~1}
 \def\UCS       {\acro{UCS}}
 \def\UNICODE   {Unicode}
@@ -117,6 +132,7 @@
 \def\WIKI      {Wiki}
 \def\WINDOWS   {Windows}
 \def\XETEX     {\XeTeX}
+\def\YANDY     {\acro{Y\&Y}}
 \def\ZIP       {{\tt zip}}
 
 \def\crlf{\newline}
@@ -161,6 +177,9 @@
 
 \def\startformula{\begin{displaymath}}
 \def\stopformula{\end{displaymath}}
+
+\let\origfootnote=\footnote
+\def\footnote{\unskip\origfootnote}
 
 \catcode`|=13
 \def|{\futurelet\next\finishbar}
