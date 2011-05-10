@@ -1,5 +1,5 @@
 % $Id$
-% Copyright 1999, 2006, 2008-2011 TeX Users Group.
+% Copyright 1999, 2006, 2008, 2009, 2010, 2011 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 % "fake" ConTeXt in LaTeX, for simple-enough documents.
@@ -38,24 +38,30 @@
 
 \def\AFM       {\acro{AFM}}
 \def\ALEPH     {Aleph}
-\def\CCODE     {C code}
-\def\CONTEXT   {\ConTeXt}
 \def\C         {C}
+\def\CCODE     {C code}
+\def\CD        {\acro{CD}}
 \def\CFF       {\acro{CFF}}
+\def\CLD       {\acro{CLD}}
+\def\CMYK      {\acro{CMYK}}
+\def\CONTEXT   {\ConTeXt}
 \def\CSS       {\acro{CSS}}
 \def\CTXTOOLS  {{\tt ctxtools}}
 \def\CWEB      {\acro{CWEB}}
 \def\DOM       {\acro{DOM}}
-\def\DVITOMP   {{\tt dvitomp}}
 \def\DVIPDFMX  {\DVIPDFMx}
 \def\DVIPSONE  {\acro{DVIPS\-ONE}}
+\def\DVITOMP   {{\tt dvitomp}}
 \def\EMTEX     {em\TeX}
 \def\ENC       {\acro{ENC}}
 \def\EPS       {\acro{EPS}}
+\def\EPUB      {ePub}
 \def\ETEX      {\eTeX}
+\def\EUROTEX   {Euro\-\TeX}
 \def\EXAMPLE   {\textsf{Example}}
-\def\FONTINST  {fontinst}
+\def\FLAC      {\acro{FLAC}}
 \def\FONTFORGE {FontForge}
+\def\FONTINST  {fontinst}
 % \def\GUI already in tub
 \def\FSF       {\acro{FSF}}
 \def\HZ        {Hz}
@@ -68,6 +74,7 @@
 \def\KPSEWHICH {{\tt kpsewhich}}
 \def\LAMSTEX   {\LAMSTeX}
 \def\LATEX     {\LaTeX}
+\def\LCD       {\acro{LCD}}
 \def\LINUX     {Linux}
 \def\LISP      {Lisp}
 \def\LUA       {Lua}
@@ -81,13 +88,15 @@
 \def\MATH      {\acro{MATH}}
 \def\MATHML    {\MathML}
 \def\METAFONT  {\MF}
+\def\METAFUN   {Metafun}
 \def\METAPOST  {MetaPost}
 \def\METATEX   {Meta\TeX}
+\def\MICROSOFT {Micro\-soft}
 \def\MIKTEX    {MiK\-\TeX}
 \def\MKII      {Mk\acro{II}}
 \def\MKIV      {Mk\acro{IV}}
-\def\MKVI      {Mk\acro{VI}}
 \def\MKTEXLSR  {{\tt mktexlsr}}
+\def\MKVI      {Mk\acro{VI}}
 \def\MODULA    {Modula}
 \def\MPLIB     {\acro{MP}lib}
 \def\MPTO      {{\tt mpto}}
@@ -126,19 +135,21 @@
 \def\UCS       {\acro{UCS}}
 \def\UNICODE   {Unicode}
 \def\URL       {url}
+\def\USB       {\acro{USB}}
 \def\VF        {\acro{VF}}
-\def\WEBTOC    {Web2C}
 \def\WEB       {\acro{WEB}}
+\def\WEBTOC    {Web2C}
 \def\WIKI      {Wiki}
 \def\WINDOWS   {Windows}
 \def\XETEX     {\XeTeX}
 \def\YANDY     {\acro{Y\&Y}}
 \def\ZIP       {{\tt zip}}
 
+\def\citetitle{\textsl}
 \def\crlf{\newline}
 \def\high{\textsuperscript}
 \def\hyphenatedurl{\url}
-\def\in[#1]{\ref{#1}}
+\def\in#1[#2]{#1~\ref{#2}}
 \def\quote#1{{`#1'}}
 \let\origquotation = \quotation
 \def\quotation#1{{``#1''}}
@@ -189,7 +200,7 @@
   \else\ifx\next/%
     \slash
   \else\ifx\next-%
-    --%
+    -%
   \else
     \next
   \fi\fi\fi
