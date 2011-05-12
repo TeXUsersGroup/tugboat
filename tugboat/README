@@ -1,5 +1,5 @@
 $Id$
-Copyright 2006, 2009-2010 TeX Users Group.
+Copyright 2006, 2009-2011 TeX Users Group.
 You may freely use, modify and/or distribute this file.
 
 LaTeX macros for use in TUGboat
@@ -64,3 +64,7 @@ one, to avoid tangling with future releases of your TeX distribution.)
 `User-level' documentation is provided in file ltubguid.pdf, which is
 a revised version of a TUGboat paper.  The documented source of the
 macros is also provided in readily readable form, as tugboat.pdf.
+
+By the way, tugboat.sty, tugproc.sty, and tugboat.cmn are the plain TeX
+files for TUGboat and not included here (see the separate tugboat-plain
+package).
