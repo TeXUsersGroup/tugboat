@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2010/11/15 v2.8
+                   [2011/05/12 v2.9
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -3107,7 +3107,10 @@
 
 % put title and author in footer.
 \def\@tubrunningfull{%
-  \def\@oddfoot{\hfil\rhTitle}
+  \def\@oddfoot{% make line break commands produce a normal space
+    \def\\{\unskip\ \ignorespaces}%
+    \let\newline=\\%
+    \hfil\rhTitle}
   \def\@evenfoot{\@author\hfil}
 }
 
