@@ -65,6 +65,8 @@
 % \def\GUI already in tub
 \def\FSF       {\acro{FSF}}
 \def\HZ        {Hz}
+\def\IBM       {\acro{IBM}}
+\def\IEEE      {\acro{IEEE}}
 \def\INI       {\acro{INI}}
 \def\INRSTEX   {\acro{INRS}\TeX}
 \def\IO        {\acro{I/O}}
@@ -98,6 +100,7 @@
 \def\MKTEXLSR  {{\tt mktexlsr}}
 \def\MKVI      {Mk\acro{VI}}
 \def\MODULA    {Modula}
+\def\MPFR      {\acro{MPFR}}
 \def\MPLIB     {\acro{MP}lib}
 \def\MPTO      {{\tt mpto}}
 \def\MPTOPDF   {{\tt mptopdf}}
@@ -114,6 +117,7 @@
 \def\PK        {\acro{PK}}
 \def\PLAIN     {{\tt plain}}
 \def\POSTSCRIPT{\PS}
+\def\RAM       {\acro{RAM}}
 \def\RTL       {\acro{RTL}}
 \def\RUBY      {Ruby}
 \def\SCITE     {Sci\acro{TE}}
@@ -150,6 +154,7 @@
 \def\high{\textsuperscript}
 \def\hyphenatedurl{\url}
 \def\in#1[#2]{#1~\ref{#2}}
+\let\origquote = \quote
 \def\quote#1{{`#1'}}
 \let\origquotation = \quotation
 \def\quotation#1{{``#1''}}
@@ -158,14 +163,14 @@
 \def\unknown{\ldots}
 
 \def\type{\bgroup
-   \catcode`_=12 \catcode`\\=12 \catcode`##=12 \catcode`&=12 \catcode`$=12
+   \catcode`_=12 \catcode`\\=12 \catcode`##=12 \catcode`\&=12 \catcode`$=12
    \finishtype}
 \def\finishtype#1{\texttt{#1}\egroup\spacefactor=1000 }
 
-\def\starttyping{\begin{verbatim}[\small]}
+\def\starttyping{\begin{verbatim}[\small\catcode`\|=12 ]}
 % \end{verbatim} has to be literal, so no \stoptyping.
 
-\def\starttabulate{\begin{tabular}}
+\def\starttabulate{\noindent\begin{tabular}}
 \def\stoptabulate{\end{tabular}}
 \def\NR{\\}
 \def\NC{&}
@@ -181,6 +186,7 @@
 \def\stopcomponent{\makesignature \end{document}}
 \def\blank{}
 \def\page{}
+\def\ss{}
 
 \def\startsection[title=#1]{\section{#1}}
 \def\stopsection{}
@@ -188,6 +194,9 @@
 
 \def\startformula{\begin{displaymath}}
 \def\stopformula{\end{displaymath}}
+
+\def\startnarrower{\startquotation}
+\def\stopnarrower{\stopquotation}
 
 \let\origfootnote=\footnote
 \def\footnote{\unskip\origfootnote}
