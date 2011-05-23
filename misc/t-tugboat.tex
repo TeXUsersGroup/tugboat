@@ -11,7 +11,7 @@
 %D and Steve Grathwohl. Karl Berry asked me for some changes in the
 %D \TUGBOAT\ style files. The original file had an option of typesetting
 %D on a grid. That was too clever for me to understand, and hence to
-%D modify. Since \TUGBOAT\ usually does not typeset on grid, I redid the
+%D modify. Since \TUGBOAT\ usually does not typeset on a grid, I redid the
 %D style, borrowing parts from \filename{s-tug-02} and redoing some
 %D parts from scratch.
 
@@ -424,8 +424,8 @@
 
     \let\\=\par
     \setups[tugboat:abstract:setup]
-    \subject{Abstract}
-    \getbuffer[abstract]
+%    \subject{Abstract}
+%    \getbuffer[abstract]
   \egroup
 \stopsetups
 
@@ -544,8 +544,9 @@
 \def\MF{{\mflogo META\-FONT}}
 
 \def\ALEPH{Aleph}
-\def\CCODE{C}
 \def\API{\acro{API}}
+\def\CCODE{C}
+\def\CD{\acro{CD}}
 \def\CMYK{\acro{CMYK}}
 \def\CONTEXT{C\kern-.0333emon\-\kern-.0667em\TeX\kern-.0333emt}
 \def\CPU{\acro{CPU}}
@@ -556,6 +557,7 @@
 \def\FTP{\acro{FTP}}
 \def\HTTP{\acro{HTTP}}
 \def\IO{\acro{I/O}}
+\def\ISO{\acro{ISO}}
 \def\KPSEWHICH{kpsewhich}
 \def\KPSE{\acro{KPSE}}
 \newcount\TestCount
