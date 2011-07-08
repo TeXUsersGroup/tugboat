@@ -1,45 +1,29 @@
 %% @texfile{
 %%     filename   = "tugboat.cmn",
-%%     version    = "1.19",
-%%     date       = "2008/05/20",
-%%     time       = "10:14:37 EDT",
-%%     checksum   = "01850 1112 3202 36735",
+%%     version    = "see below \fileversion"
+%%     date       = "see below \filedate",
 %%     filetype   = "common macros for TUGboat",
-%%     copyright  = "Copyright 1993-1996, 2006 TeX Users Group.
+%%     copyright  = "Copyright 1993-1996, 2006, 2008, 2011 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
 %%                   modified versions) are also permitted, but only if
 %%                   the resulting file is renamed."
-%%     author     = "TeX Users Group",
-%%     address    = "TeX Users Group,
-%%                   P.O.Box 2311,
-%%                   Portland, OR 97208-2311,
-%%                   USA",
-%%     telephone  = "+1 503 223-9994",
-%%     FAX        = "+1 206 203-3960",
 %%     email      = "TUGboat@tug.org",
 %%     codetable  = "ISO/ASCII",
-%%     keywords   = "tex users group, tugboat, common macros",
+%%     keywords   = "tex users group, tugboat, common macros, plain tex",
 %%     supported  = "yes",
-%%     abstract   = "This file contains macros common to both
-%%                   the PLAIN and LaTeX style files for TUGboat,
-%%                   the Communications of the TeX Users Group.
+%%     abstract   = "This file contains macros potentially common to
+%%                   the various style files for TUGboat,
 %%                   Among other things, it contains supplementary
 %%                   definitions for abbreviations and logos that
-%%                   appear in TUGboat.",
-%%     docstring  = "The checksum field above contains a CRC-16
-%%                   checksum as the first value, followed by the
-%%                   equivalent of the standard UNIX wc (word
-%%                   count) utility output of lines, words, and
-%%                   characters.  This is produced by Robert
-%%                   Solovay's checksum utility.",
+%%                   appear in TUGboat."
 %%     }
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \def\fileversion{v1.19}
-\def\filedate{2008/05/20}
+\def\filedate{2011/07/08}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -119,8 +103,9 @@
 \def\AmSLaTeX{\AmS-\LaTeX}
 \def\AmSTeX{\AmS-\TeX}
 \def\ANSI{\acro{ANSI}}
+\def\API{\acro{API}}
 \def\ASCII{\acro{ASCII}}
-\def\aw{A\kern.1em-W}
+\def\aw{\acro{A\kern.04em\raise.115ex\hbox{-}W}}
 \def\AW{Addison\kern.1em-\penalty\z@\hskip\z@skip Wesley}
 \def\BibTeX{{\rm B\kern-.05em{\smc i\kern-.025emb}\kern-.08em\TeX}}
 \def\CandT{{\sl Computers \& Typesetting}}
@@ -184,6 +169,7 @@
 \def\PCTeX{PC\thinspace\TeX}
 \def\pcTeX{\leavevmode\raise.5ex\hbox{p\kern-.3ptc}\TeX}
 \def\PDF{\acro{PDF}}
+\def\PGF{\acro{PGF}}
 \def\PiC{P\kern-.12em\lower.5ex\hbox{I}\kern-.075emC\spacefactor1000 }
 \def\PiCTeX{\PiC\kern-.11em\TeX}
 \def\plain{{\tt plain}}
@@ -191,6 +177,8 @@
 \def\POBox{P.\thinspace O.~Box }
 %\def\POBoxTUG{\POBox\unskip~9506, Providence, RI~02940}
 \def\PS{{Post\-Script}}
+\def\PSTricks{\acro{PST}ricks}
+\def\RGB{\acro{RGB}}
 \def\RTF{\acro{RTF}}
 \def\SC{Steering Committee}
 \def\SGML{\acro{SGML}}
@@ -217,6 +205,7 @@
 \def\TFM{\acro{TFM}}
 \def\Thanh{H\`an~Th\^e\llap{\raise.5ex\hbox{\'{}}}~Th\`anh}
 \def\TIFF{\acro{TIFF}}
+\def\TikZ{Ti{\it k}Z}
 \def\ttn{{\sl TTN}\spacefactor1000 }
 \def\TTN{{\sl \TeX{} and TUG NEWS}\spacefactor1000 }
 \def\tubfont{\sl}               % redefined in other situations
@@ -756,8 +745,8 @@
   in-fra-struc-ture
   key-note
   long-est
-  ma-gyar man-u-script man-u-scripts mne-mon-ic mne-mon-ics
-   mono-space mono-spaced
+  ma-gyar man-u-script man-u-scripts meta-table meta-tables
+   mne-mon-ic mne-mon-ics mono-space mono-spaced
   name-space name-spaces
   off-line over-view
   pal-ettes par-a-digm par-a-dig-mat-ic par-a-digms
@@ -765,7 +754,7 @@
    plug-in plug-ins pres-ent-ly pro-gram-mable
   re-allo-cate re-allo-cates re-allo-cated
   set-ups se-vere-ly spell-ing spell-ings stand-alone strong-est
-   sub-ex-pres-sion syn-chro-ni-city syn-chro-nous
+   sub-ex-pres-sion sub-tables syn-chro-ni-city syn-chro-nous
   text-height text-length text-width
    time-stamp time-stamped time-stamps
   vis-ual vis-ual-ly

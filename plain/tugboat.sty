@@ -1,7 +1,7 @@
 %% @texfile{
 %%     filename   = "tugboat.sty",
-%%     version    = "1.19",
-%%     date       = "2011/03/11",
+%%     version    = "see below \fileversion"
+%%     date       = "see below \filedate",
 %%     filetype   = "Plain TeX macros for TUGboat",
 %%     copyright  = "Copyright 1993, 1999, 2003, 2006, 2011 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
@@ -28,7 +28,7 @@
 
 \def\thistubstyle{plain}
 \def\fileversion{v1.19}
-\def\filedate{2011/03/04}
+\def\filedate{2011/07/08}
 
 % general items
 
@@ -2165,9 +2165,11 @@
 \initializearticle
 \pageno=1001                    % number of title page
 
-\StretchyTenPointSpacing
-\StretchyNinePointSpacing
-\StretchyEightPointSpacing
+% Stretchy spacing was the default for many years, but in summer 2011 it
+% looked too stretchy. Comment out.
+%\StretchyTenPointSpacing
+%\StretchyNinePointSpacing
+%\StretchyEightPointSpacing
 
 \makevertverbchar
 
