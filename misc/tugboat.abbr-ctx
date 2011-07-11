@@ -201,6 +201,8 @@
 \let\origfootnote=\footnote
 \def\footnote{\unskip\origfootnote}
 
+% ||   en-dash in ConTeXt
+% |-|  normal hyphen with line break allowed
 \catcode`|=13
 \def|{\futurelet\next\finishbar}
 \def\finishbar{\begingroup %\show\next

@@ -126,6 +126,7 @@
 \def\Hawaii{Hawai`i}
 \def\HTML{\acro{HTML}}
 \def\HTTP{\acro{HTTP}}
+\def\IDE{\acro{IDE}}
 \def\ISBN{\acro{ISBN}}
 \def\ISO{\acro{ISO}}
 \def\ISSN{\acro{ISSN}}
@@ -201,6 +202,7 @@
 %       \TeX\-\hbox{$\fam\TestCount\scriptstyle TURES$}}
 \def\TeXtures{{\it Textures}}
 \let\Textures=\TeXtures
+\def\TeXworks{\TeX\kern-.07em works}
 \def\TeXXeT{\TeX-{}-\XeT}
 \def\TFM{\acro{TFM}}
 \def\Thanh{H\`an~Th\^e\llap{\raise.5ex\hbox{\'{}}}~Th\`anh}
