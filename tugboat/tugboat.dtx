@@ -2575,7 +2575,7 @@
 %    \begin{macrocode}
 \long\def\@makecaption#1#2{%
   \vskip\abovecaptionskip
-  \sbox\@tempboxa{\small #1: #2}% try in an hbox
+  \sbox\@tempboxa{\small \tubmakecaptionbox{#1}{#2}}% try in an hbox
   \ifdim \wd\@tempboxa > \hsize
     {% caption doesn't fit on one line; set as a paragraph.
      \small \raggedright \hyphenpenalty=\@M \parindent=1em
@@ -2584,13 +2584,15 @@
        \leftskip=\tubfullpageindent \rightskip=\leftskip
        \advance\rightskip by 0pt plus2em  % increase acceptable raggedness
      \fi
-     \noindent #1: #2\par}%
+     \noindent \tubmakecaptionbox{#1}{#2}\par}%
   \else
     % fits on one line; use the hbox, centered.  Do not reset its glue.
     \global\@minipagefalse
     \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
   \fi
   \vskip\belowcaptionskip}
+% 
+\def\tubmakecaptionbox#1#2{#1: #2}% allow overriding for a paper
 %    \end{macrocode}
 %
 % Also use \cs{small} for the caption labels, and put the label itself
