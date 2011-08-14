@@ -28,7 +28,7 @@
 
 \def\thistubstyle{plain}
 \def\fileversion{v1.19}
-\def\filedate{2011/07/08}
+\def\filedate{2011/08/14}
 
 % general items
 
@@ -592,12 +592,15 @@
   \splitmaxdepth\dp\strutbox \floatingpenalty\@MM
   \leftskip\z@skip \rightskip\z@skip \spaceskip\z@skip \xspaceskip\z@skip
   \rm \parindent=\normalparindent % always indent footnotes; added for TUGboat
+  \TUBstartfootnotehook
   \textindent{#1}\makestrut[10pt;\z@]\futurelet\next\fo@t}
-\def\@foot{\strut\egroup
+\def\@foot{\strut\egroup\TUBendfootnotehook
         \ifDelayFirstPar \SetupFirstPar \global\DelayFirstParfalse \fi }
 \newif\ifFirstPar       \FirstParfalse
 \def\SetupFirstPar{\global\parindent=\z@ \global\FirstPartrue }
 
+\def\TUBstartfootnotehook{}
+\def\TUBendfootnotehook{}
 
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2181,6 +2184,8 @@
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+1.20      14 Aug 11   (pending/tentative) add footnote hooks.
+
 1.19       4 Mar 11   added \r
 
 1.18       4 Feb 11   changed \rfoot to give same results as LaTeX class
