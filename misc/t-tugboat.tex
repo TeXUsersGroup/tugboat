@@ -422,10 +422,11 @@
 
     \blank[line]
 
-    \let\\=\par
-    \setups[tugboat:abstract:setup]
-%    \subject{Abstract}
-%    \getbuffer[abstract]
+    \doiftext{\getbuffer[abstract]}
+    {\let\\=\endgraf
+     \setups[tugboat:abstract:setup]
+     \subject{Abstract}
+     \getbuffer[abstract]}
   \egroup
 \stopsetups
 
