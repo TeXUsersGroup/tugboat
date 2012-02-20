@@ -795,7 +795,11 @@
 \def\TeXworks{\TeX\kern-.07em works}
 \def\TeXXeT{\TeX-{}-\XeT}
 \def\TFM{\acro{TFM}}
-\def\Thanh{H\`an~Th\^e\llap{\raise 0.5ex\hbox{\'{}}}~Th\`anh}
+\expandafter\ifx\csname XeTeXrevision\endcsname\relax
+\def\Thanh{H\`an~Th\textcircumacute{e}~Th\`anh}% xunicode drops the acute else
+\else
+\def\Thanh{H\`an~Th\^e\llap{\raise 0.5ex\hbox{\'{}}}~Th\`anh}% non-XeTeX
+\fi
 \def\TikZ{Ti{\em k}Z}
 \def\ttn{\textsl{TTN}\@}
 \def\TTN{\textsl{\TeX{} and TUG News}}
