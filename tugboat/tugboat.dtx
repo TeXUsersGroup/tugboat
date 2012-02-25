@@ -796,9 +796,9 @@
 \def\TeXXeT{\TeX-{}-\XeT}
 \def\TFM{\acro{TFM}}
 \expandafter\ifx\csname XeTeXrevision\endcsname\relax
-\def\Thanh{H\`an~Th\textcircumacute{e}~Th\`anh}% xunicode drops the acute else
-\else
 \def\Thanh{H\`an~Th\^e\llap{\raise 0.5ex\hbox{\'{}}}~Th\`anh}% non-XeTeX
+\else
+\def\Thanh{H\`an~Th\textcircumacute{e}~Th\`anh}% xunicode drops the acute else
 \fi
 \def\TikZ{Ti{\em k}Z}
 \def\ttn{\textsl{TTN}\@}
