@@ -38,6 +38,8 @@
 
 \def\AFM       {\acro{AFM}}
 \def\ALEPH     {Aleph}
+\def\AMS       {\acro{AMS}}
+\def\BIBTEX    {\BibTeX}
 \def\C         {C}
 \def\CCODE     {C code}
 \def\CD        {\acro{CD}}
@@ -79,6 +81,7 @@
 \def\LCD       {\acro{LCD}}
 \def\LINUX     {Linux}
 \def\LISP      {Lisp}
+\def\LPEG      {\acro{LPEG}}
 \def\LUA       {Lua}
 \def\LUALATEX  {Lua\LATEX}
 \def\LUATEX    {\LUA\-\TeX}
@@ -117,6 +120,7 @@
 \def\PK        {\acro{PK}}
 \def\PLAIN     {{\tt plain}}
 \def\POSTSCRIPT{\PS}
+\def\PRAGMA    {Pragma}
 \def\RAM       {\acro{RAM}}
 \def\RTL       {\acro{RTL}}
 \def\RUBY      {Ruby}
@@ -168,10 +172,11 @@
 \def\finishtype#1{\texttt{#1}\egroup\spacefactor=1000 }
 
 \def\starttyping{\begin{verbatim}[\small\catcode`\|=12 ]}
-% \end{verbatim} has to be literal, so no \stoptyping.
+% \end{verbatim} has to be literal.
+\def\stoptyping{\errmessage{must literally end verbatim}}
 
-\def\starttabulate{\noindent\begin{tabular}}
-\def\stoptabulate{\end{tabular}}
+\def\starttabulate{\noindent\begingroup \catcode`|=12 \begin{tabular}}
+\def\stoptabulate{\end{tabular}\endgroup}
 \def\NR{\\}
 \def\NC{&}
 \def\HL{\hline}
@@ -191,6 +196,9 @@
 \def\startsection[title=#1]{\section{#1}}
 \def\stopsection{}
 \def\stopchapter{}
+
+\def\startsubsubject[title=#1]{\subsection{#1}}
+\def\stopsubsubject{}
 
 \def\startformula{\begin{displaymath}}
 \def\stopformula{\end{displaymath}}
