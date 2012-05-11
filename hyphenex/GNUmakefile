@@ -18,7 +18,7 @@ sh-ushyphex.tex: hyphenex.sh tb0hyf.tex
 	sh $< <tb0hyf.tex >$@ || rm -f $@
 
 tb0hyf.pdf: tb0hyf.tex
-	pdftex '\nonstopmode\input $<'
+	TEXINPUTS=../plain: pdftex '\nonstopmode\input $<'
 
 dist: all check
 	rm -f dist.zip

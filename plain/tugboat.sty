@@ -3,7 +3,7 @@
 %%     version    = "see below \fileversion"
 %%     date       = "see below \filedate",
 %%     filetype   = "Plain TeX macros for TUGboat",
-%%     copyright  = "Copyright 1993, 1999, 2003, 2006, 2011 TeX Users Group.
+%%     copyright  = "Copyright 1993,1999,2003,2006,2011,2012 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -27,8 +27,8 @@
 % TUGBOAT.STY
 
 \def\thistubstyle{plain}
-\def\fileversion{v1.19}
-\def\filedate{2011/08/14}
+\def\fileversion{v1.20}
+\def\filedate{2012/05/11}
 
 % general items
 
@@ -136,6 +136,14 @@
 \font\tentt=cmtt10
 \font\ninett=cmtt9
 \font\eighttt=cmtt8
+
+\ifx\tubhyphenatett\@thisisundefined
+  % do not hyphenate typewriter unless explicitly requested (as
+  % tb0hyf.tex does).
+  \hyphenchar\tentt=-1
+  \hyphenchar\ninett=-1
+  \hyphenchar\eighttt=-1
+\fi
 
 \font\tensl=cmsl10
 \font\ninesl=cmsl9
@@ -1647,7 +1655,7 @@
   \def\CurrentTag{verbatim}%
   \@defaultoptions
   \def\inline{\let\@verbstyle\@inlinestyle}%
-  \def\display{\let\@verbstyle\@displaystyle}%
+  \def\display{\smallcode\let\@verbstyle\@displaystyle}% 9pt tt by default
   \def\displaystyle##1{\def\@altdisplaystyle{##1}}%
   \def\inlinestyle##1{\def\@altinlinestyle{##1}}%
   \def\numbered{\@numberedtrue}%
@@ -1851,8 +1859,8 @@
 
 %  Options and variants.
 
-\def\verbinline{\verbatim[\inline]}
-\def\verbdisplay{\verbatim[\display]}
+\def\verbinline{\@verbatim[\inline]}  % \@verbatim to avoid \display
+\def\verbdisplay{\verbatim[\display]} % already the default, but what the heck
 \def\verbfile#1{\verbatim[\inputfromfile{#1}]}
 
 
@@ -1888,7 +1896,7 @@
   \expandafter\@checknexttoken\expandafter{\the\@verbchar}%
     {\expandafter\@ignoreone\expandafter{\the\@verbchar}%
       {\endgroup\verbatim[\longform\maketwoendverb]}}%
-    {\endgroup\verbatim[\inline\longform\makeoneendverb]}%
+    {\endgroup\@verbatim[\inline\longform\makeoneendverb]}%
   }
 
 \def\setupverbchar{%
@@ -2184,7 +2192,9 @@
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
-1.20      14 Aug 11   (pending/tentative) add footnote hooks.
+1.20      11 May 12   do not hyphenate in typewriter.
+		      \smallcode for displays but not inline.
+                      add footnote hooks.
 
 1.19       4 Mar 11   added \r
 

@@ -3,6 +3,8 @@
 % Copyright 2008, 2010, 2012 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
+\let\tubomithyphenations = 1  % do not make tub hyphenation exceptions
+\let\tubhyphenatett = 1       % and we do want to hyphenate typewriter
 \input tugboat.sty
 \issdate Thermidor, 9999.
 
@@ -22,44 +24,6 @@
 \hbadness=3000
 \vbadness=3000
 \hyphenpenalty=400
-
-%% restore the default hyphenations of words that are in
-%% the tugboat.cmn hyphenation list or any issue list.
-\hyphenation{Delaware Di-jk-stra Ei-jkhout
-  Florida FreeBSD Ghostscript Ghostview
-  Har-alam-bous Hoek-wa-ter Im-ageMag-ick
-  Jack-owski JavaScript Karl-sruhe
-  Ma-cOS Malay-alam Math-SciNet
-  NetBSD OpenBSD OpenOf-fice
-  PfaEdit PostScript Pythago-ras Pythagorean
-  Richard Sk-oup Southall
-  Vi-eth VMware WinEdt
-  acronym ap-pendix asyn-chronous
-  bitmap bitmapped bitmaps buffer buffers boolean
-  columns com-putable com-putabil-ity cus-tomiz-able
-  database databases
-   deal-lo-cate deal-lo-cates deal-lo-cated deal-lo-ca-tion
-   deriva-tive deriva-tives deriv-able deriva-tion
-  ep-stopdf essence
-  falling fron-tend
-  halfway
-  in-fras-truc-ture in-pu-tenc in-ter-vie-wee in-ter-vie-wees
-  keynote
-  longest
-  mag-yar manuscript manuscripts mnemonic mnemon-ics
-  names-pace names-paces nodelist nonzero
-  of-fline overview
-  paradigm paradig-matic paradigms parametriza-tion
-   pipeline pipelines
-   plu-gin plu-gins presently pro-grammable
-  re-al-lo-cate re-al-lo-cates re-al-lo-cated
-  se-tups severely spelling spellings stan-dalone strongest
-   subex-pres-sion synch-non-ic-ity syn-chronous
-  tex-theight textlength tex-twidth
-   times-tamp times-tamped times-tamps trans-parency
-  vi-sual vi-su-ally
-  whichever whites-pace whites-paces widespread wraparound
-}
 
 \title * Hyphenation exception log *
 \author * Barbara Beeton *
@@ -101,16 +65,18 @@ list machine-usable.
 Thanks to all who have submitted entries to the list.  Since some
 suggestions have demonstrated a lack of familiarity with the rules of
 the hyphenation algorithm, here is a short reminder of the relevant
-idiosyncrasies.  Hyphens will not be inserted before the number of
-letters specified by |\lefthyphenmin|, nor after the number of letters
-specified by |\righthyphenmin|.  For \acro{U.S.} English, |\lefthyphenmin=2|
-and |\righthyphenmin=3|; thus no word shorter than five
-letters will be hyphenated.  (For the details, see \TB, page~454.)
+idio\-syn\-cras\-ies.  \TeX\ will not insert hyphens before the number
+of letters specified by \hbox{|\lefthyphenmin|}, nor after the number of
+letters specified by \hbox{|\righthyphenmin|}.  For \acro{U.S.} English,
+\hbox{|\lefthyphenmin=2|} and \hbox{|\righthyphenmin=3|}; thus no word
+shorter than five letters will be hyphenated.  (For the details, see
+\TB, page~454.)
 % For a digression on other views of hyphenation rules, see below under
 % ``English hyphenation''.)
 This particular rule is violated in some of the words listed; however,
 if a word is hyphenated correctly by \TeX\ except for ``missing''
 hyphens at the beginning or end, it has not been included here.
+{\emergencystretch=5pt\par}
 
 Some other permissible hyphens have been omitted
 for reasons of style or clarity.  While this is at
