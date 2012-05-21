@@ -8,18 +8,18 @@
 $ERROR_COUNT = 0;
 exit (&main ());
 
-sub main
-{
-  if (@ARGV > 0) {
+sub main {
+  if (@ARGV > 0) { # explicit args
     chomp (my $dir = `dirname $ARGV[0]`);
     chdir ("$dir/..") || die "chdir($dir/..) failed: $!";
     while (<>) { # assume absolute path
       print &substitute_pages ($_);
     }
-    return 0;
+    return $ERROR_COUNT;
   }
   
-  my $tubdir = "$ENV{tp}";
+  # no explicit args
+  my $tubdir = "$ENV{tp}"; # karl's envvar pointing to latest tugboat dir
   chdir ($tubdir) || die "chdir($tubdir) failed: $!";
   
   $CONT = glob ("covers/tb[0-9]*cont.tex");
@@ -32,11 +32,11 @@ sub main
   return $ERROR_COUNT;
 }
 
+
 # return LINE with any \getpage or \getlastpage substituted with the
 # actual page numbers, usually a range.
 # 
-sub substitute_pages
-{
+sub substitute_pages {
   my ($line) = @_;
 
   # handle \getpage and \getfirstpage identically.
@@ -73,8 +73,7 @@ sub substitute_pages
 # read per-paper file to get either starting or ending page number.
 # increment global $ERROR_COUNT if problems.
 # 
-sub get_page
-{
+sub get_page {
   my ($pagefile) = @_;
   
   my $page = "OOPS";
