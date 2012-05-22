@@ -1,37 +1,23 @@
 %% @texfile{
 %%     filename   = "tubguide.tex",
-%%     version    = "1.03",
-%%     date       = "2006/05/24",
-%%     time       = "09:48:56 EDT",
-%%     checksum   = "12752 869 4993 34296",
+%%     version    = "1.04",
+%%     date       = "2012/05/22",
 %%     filetype   = "TUGboat Authors' Guide",
-%%     copyright  = "Copyright 1989, 1992, 2006 TeX Users Group.
+%%     copyright  = "Copyright 1989, 1992, 2006, 2012 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
 %%                   modified versions) are also permitted, but only if
 %%                   the resulting file is renamed."
-%%     author     = "TeX Users Group",
-%%     address    = "TeX Users Group,
-%%                   P.O.Box 2311,
-%%                   Portland, OR 97208-2311,
-%%                   USA",
-%%     telephone  = "+1 503 223-9994",
-%%     FAX        = "+1 206 203-3960",
 %%     email      = "TUGboat@tug.org",
 %%     codetable  = "ISO/ASCII",
-%%     keywords   = "tex users group, tugboat, authors' guide",
+%%     keywords   = "tex users group, tugboat, plain authors' guide",
 %%     supported  = "yes",
 %%     abstract   = "This file is an updated version of the file
 %%                   that produced the original Authors' Guide in
 %%                   TUGboat 10, no. 3, November 1989.",
-%%     docstring  = "The checksum field above contains a CRC-16
-%%                   checksum as the first value, followed by the
-%%                   equivalent of the standard UNIX wc (word
-%%                   count) utility output of lines, words, and
-%%                   characters.  This is produced by Robert
-%%                   Solovay's checksum utility.",
 %%     }
+%% $Id$
 %% *********************************************************
 %%
 %%  TeXing this file requires the following files:
@@ -42,6 +28,12 @@
 
 \input tugboat.sty
 
+% tugboat.sty used to default to this, and no point in changing lots of
+% text to fix overfull boxes.
+\StretchyTenPointSpacing
+\StretchyNinePointSpacing
+\StretchyEightPointSpacing
+
 \enablemetacode
 \everyverbatim{\enablemetacode}
 \def\halfline{\vskip 0.5\baselineskip \ignoreendline}
@@ -49,16 +41,10 @@
 % ****************************************************************
 
 \pageno=1
-\def\rtitlex{\def\tubfont{\tenpoint\rm}\TUB{} Authors' Guide, May 2006}
+\def\rtitlex{\def\tubfont{\tenpoint\rm}\TUB{} Authors' Guide, May 2012}
 \def\midrtitle{}
 
-\title *\TUB\/ Authors' Guide*
-
-\author * Ron Whitney *
-\address * \TUG\\
-	   \POBox 9506\\
-	   Providence, RI 02940-9506 *
-%\netaddress * TUGboat@Math.AMS.com *
+\title *\TUB\/ authors' guide*
 
 \author  * Barbara Beeton *
 \address * American Mathematical Society\\
@@ -66,8 +52,12 @@
 	   Providence, RI 02904-2294 *
 \netaddress * TUGboat@tug.org *
 
+\author * Ron Whitney *
+%\address * \TUG *
+%\netaddress * TUGboat@Math.AMS.com *
 
-\vfootnote{}{Revised March 1992, May 2006; the original appeared in
+
+\vfootnote{}{Revised March 1992, May 2006, May 2012; the original appeared in
 \tubissue 10(3), November 1989.}
 
 \article
@@ -276,7 +266,7 @@ produces
 assemble streams of articles in \TUB.
 
 
-\subhead * Section Heads *
+\subhead * Section heads *
 Heads of sections, subsections, etc.\ are introduced with |\head|,
 |\subhead|, etc., respectively.  The underlying macros all use
 |\head|, so |\endhead| is the long-form ending for all these tags.
@@ -355,7 +345,7 @@ rather than giving an option to each list.
 
 Implementation of sublists is under construction.
 
-\subhead * Verbatim Modes *
+\subhead * Verbatim modes *
 
 There are several variations on this theme.  In each case, text is
 printed in a typewriter font and (almost) all input characters
@@ -379,8 +369,14 @@ for longer items the
 form (although \verbinline||...||\endverbatim is a good way to
 display a single line of code).
 
-In addition to formatting text between |\verbatim| and
-|\endverbatim|, |\verbatim| may read and write data from and to
+The display verbatim output is in nine-point typewriter by default, as
+shown in this document.  We've found the extra characters of width
+gained as a result are very useful.  If |\smallverbdisplay| is defined
+to be a no-op, it will be in the usual ten-point.  (This change was
+introduced in 2012.)
+
+As well as formatting verbatim text between |\verbatim| and
+|\endverbatim|, |\verbatim| can read and write data from and to
 files.  We find this variant useful in ({\it almost\/}) guaranteeing
 consonance between macros in use and their published listings.
 ||[\makeescape\!]
@@ -545,7 +541,7 @@ text may or may not start a new paragraph depending on whether an
 intervening blank line (or |\par|) is or is not present.
 
 
-\subhead * Figures and Page Layout *
+\subhead * Figures and page layout *
 Figures are keyed as
 \verbatim[\makeescape\|]
 \figure
@@ -625,7 +621,7 @@ switching between one- and two-column format within a year.
 |\newpage| in each format is defined to fill and eject enough columns
 to get to the next page.  |\newcol| is just |\par\vfill\eject|.
 
-\subhead * Command List Summary *
+\subhead * Command list summary *
 Tags are listed in the order discussed.  Options are
 listed under tags.
 ||
@@ -716,7 +712,7 @@ direction.
 
 
 
-\head * Common Abbreviations and Utilities *
+\head * Common abbreviations and utilities *
 
 Definitions of a number of commonly used abbreviations such as |\MF|
 and |\BibTeX| are contained in |tugboat.cmn|.  Please use these whenever
@@ -759,7 +755,7 @@ this article.  Readers may look at the end of |tugboat.cmn| after the
 |\endinput| statement to see further documentation on the contents of the file.
 
 
-\subhead * Issue Makeup *
+\subhead * Issue makeup *
 Constructing an entire issue of \TUB\/ requires use of a few features
 that authors may notice when articles are returned for proofing.
 |\xrefto| allows for symbolic cross-referencing, but is enabled only
@@ -772,7 +768,7 @@ remember, and these appear as |\TBremark{...}|.  Authors can look for
 such things, if they are interested.
 
 
-\head * General Coding Suggestions *
+\head * General coding suggestions *
 
 Probably 90\% of the code we receive is easily handled, and for this
 we are most appreciative.  We do have suggestions of a general nature
@@ -801,7 +797,7 @@ case, until the last minute.  We also use floating insertions for
 figure and table placement when we first receive an article.  It is
 easier for us to work with a clean file containing some bad breaks,
 overfull boxes or other unsightliness, than it is to handle a document
-containing {\it ad hoc\/} code dedicated to a beauteous (albeit
+containing {\it ad hoc\/} code dedicated to a beauteous (but
 narrowly specific) result.
 
 
@@ -821,7 +817,7 @@ other reasonable formats of their texts are made.  In the case of
 the two-column format.  Since these types of items are not generally
 susceptible to automatic line-breaking, we give thanks to stuffings
 made by authors ahead of time.  In this context, we recommend the use
-of |\verbfile{...}| (see the section {\bf Verbatim Modes}) to maintain
+of |\verbfile{...}| (see the section `{Verbatim modes}') to maintain
 consistency between documentation and reality.
 
 Specifically in the domain of \TeX\ macros, we find that many authors
@@ -849,11 +845,13 @@ appreciated.
 \TBremark{Anything about formatting macros?}
 
 
-\head * Electronic Documentation and Submission Procedure *
+\head * Electronic documentation and submissions *
 
 In addition to |tugboat.sty|, |ltugboat.sty|, and |tugboat.cmn|,
-a copy of this article, |tubguide.tex|, will be available at
-most \TeX{} archives, in particular \CTAN.
+a copy of this article, |tubguide.tex|, will be available in
+most \TeX{} distributions and on \CTAN:
+||http://ctan.org/pkg/tugboat
+http://ctan.org/pkg/tugboat-plain||
 
 Please address all electronic correspondence to the \TUB{} maildrop:
 ||TUGboat@tug.org||
@@ -863,6 +861,8 @@ an abstract of any expository article.  This will be used as the
 basis for translation of abstracts to languages other than that
 in which the article is published.
 
+\smallskip
+The \TUB\ home page on the web is |http://tug.org/TUGboat|.
 
 \makesignature
 

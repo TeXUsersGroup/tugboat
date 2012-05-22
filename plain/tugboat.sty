@@ -17,6 +17,8 @@
 %%                   for preparation of items in TUGboat, the
 %%                   Communications of the TeX Users Group.",
 %%     }
+%% $Id$
+%%
 %% *********************************************************
 %%
 %%  TeXing with this file also requires the following files:
@@ -28,7 +30,7 @@
 
 \def\thistubstyle{plain}
 \def\fileversion{v1.20}
-\def\filedate{2012/05/11}
+\def\filedate{2012/05/22}
 
 % general items
 
@@ -1655,12 +1657,12 @@
   \def\CurrentTag{verbatim}%
   \@defaultoptions
   \def\inline{\let\@verbstyle\@inlinestyle}%
-  \def\display{\smallcode\let\@verbstyle\@displaystyle}% 9pt tt by default
+  \def\display{\par\smallverbdisplay\let\@verbstyle\@displaystyle}%
   \def\displaystyle##1{\def\@altdisplaystyle{##1}}%
   \def\inlinestyle##1{\def\@altinlinestyle{##1}}%
   \def\numbered{\@numberedtrue}%
   \def\ruled{\@ruledtrue}%
-  \def\smallcode{\ninepoint\tt\baselineskip=10pt}%
+  \def\smallcode{\ninepoint\tt\baselineskip=10pt }%
   \let\@verbinputvar\relax
   \let\@verbinputfile\relax
   \@SpecialsGetOther
@@ -1670,6 +1672,9 @@
   \@savingargumenttrue
   \the\everyverbatim
   }
+
+% By default, switch to 9pt tt for verbatim displays.
+\def\smallverbdisplay{\smallcode}
 
 \def\@SpecialsGetOther{%
   \catcode`\\=\other
@@ -2192,9 +2197,11 @@
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
-1.20      11 May 12   do not hyphenate in typewriter.
-		      \smallcode for displays but not inline.
-                      add footnote hooks.
+1.20      22 May 12   Do not hyphenate in typewriter.
+                      Add footnote hooks.
+                      No \Stretchy*Spacing by default.
+                      \smallcode for verbatim displays (not inline)
+                        via \smallverbdisplay.
 
 1.19       4 Mar 11   added \r
 
