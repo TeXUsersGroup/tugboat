@@ -50,7 +50,11 @@ sub substitute_pages {
     # final page number.
     $lastpage-- if $lastpage > 0;
 
-    $line =~ s/\\get(first)?page\{(.*?)\}/$firstpage-$lastpage/;
+    # include -lastpage unless it's the same as firstpage.
+    my $repl = $firstpage;
+    $repl .= "-$lastpage" if $lastpage ne $firstpage;
+    
+    $line =~ s/\\get(first)?page\{(.*?)\}/$repl/;
 
   # for \getlastpage, force the range to be on one page
   # (although it's not clear to me that this special case is really needed).
