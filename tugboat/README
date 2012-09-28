@@ -1,17 +1,17 @@
 $Id$
-Copyright 2006, 2009-2011 TeX Users Group.
+Copyright 2006, 2009-2012 TeX Users Group.
 You may freely use, modify and/or distribute this file.
 
 LaTeX macros for use in TUGboat
 ===============================
 
-See the TUGboat web pages at http://tug.org/TUGboat for tips on writing
-articles, access to online issues, etc.  We greatly appreciate new
-article submissions!
+See the TUGboat web pages at http://tug.org/TUGboat for upcoming
+deadlines, tips on writing articles, access to online issues, etc.  We
+greatly appreciate new article submissions!
 
-The files in this directory will generate both a TUGboat article class
-(ltugboat) and a TUG conference proceedings class (ltugproc).  However,
-these days, only ltugboat is used.
+The files in this directory generate the TUGboat article class
+ltugboat.cls which should be used for all articles nowadays -- both
+proceedings and regular issues.
 
 These macros are supported.
 
@@ -38,8 +38,8 @@ other files are
 
 Processing the .ins file produces:
 
-  ltugboat.cls -- For preparing articles for regular issues of TUGboat
-  ltugproc.cls -- For preparing articles for conference proceedings
+  ltugboat.cls -- for preparing any TUGboat article
+  ltugproc.cls -- (obsolete)
   ltugboat.sty -- The usual `obsolete file' warning
   ltugproc.sty -- The usual `obsolete file' warning
   ltugcomn.sty -- Used when processing tugboat.dtx for its
