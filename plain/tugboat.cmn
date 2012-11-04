@@ -22,8 +22,8 @@
 %% $Id$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\def\fileversion{v1.20}
-\def\filedate{2012/05/22}
+\def\fileversion{v1.20+dev}
+\def\filedate{2012/11/04}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -148,6 +148,7 @@
         \kern-.5\wd\TestBox\raise.42ex\box\TestBox}
 \def\LaTeX{\La\kern-.15em\TeX}
 \def\LaTeXe{\LaTeX{}\kern.05em2$_{\textstyle\varepsilon}$}
+\def\LyX{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX}
 \def\MacOSX{Mac\,\acro{OS\,X}}
 \def\MathML{Math\acro{ML}}
 %       for Robert McGaffey
