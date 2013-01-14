@@ -1,40 +1,11 @@
 % $Id$
-% Copyright 1999, 2006, 2008, 2009, 2010, 2011 TeX Users Group.
+% Copyright 1999, 2006, 2008, 2009, 2010, 2011, 2012, 2013 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 % "fake" ConTeXt in LaTeX, for simple-enough documents.
 % Does not even pretend to be exhaustive, but still goes some way to
 % minimizing diffs from the original sources.
 % Frontmatter has to be done by hand.
-
-\def\subject{\section}
-\def\subsubject{\subsection}
-%
-\def\startAbstract{\begin{abstract}}
-\let\StartAbstract=\startAbstract
-%
-\def\stopAbstract{\end{abstract}}
-\let\StopAbstract=\stopAbstract
-%
-\def\startKeywords{\smallskip \noindent \begingroup \raggedright {\bf Keywords: }}
-\def\stopKeywords{\par\endgroup}
-%
-\def\stopArticle{\end{document}}
-\let\StopArticle=\stopArticle
-
-\def\startitemize{\begin{itemize}}
-\def\stopitemize{\end{itemize}}
-\def\startitemizepacked]{\begin{compactitemize}}
-\def\stopitemizepacked{\end{compactitemize}}
-\def\head{\item}
-\def\sym{\item}
-\def\startitem{\item}
-\let\stopitem=\relax
-\let\stop=\relax
-
-\def\startquotation{\begingroup \origquotation}
-\def\stopquotation{\par\endgroup}
-\let\noindentation = \relax
 
 \def\AFM       {\acro{AFM}}
 \def\ALEPH     {Aleph}
@@ -47,6 +18,7 @@
 \def\CLD       {\acro{CLD}}
 \def\CMYK      {\acro{CMYK}}
 \def\CONTEXT   {\ConTeXt}
+\def\CPU       {\acro{CPU}}
 \def\CSS       {\acro{CSS}}
 \def\CTXTOOLS  {{\tt ctxtools}}
 \def\CWEB      {\acro{CWEB}}
@@ -74,7 +46,9 @@
 \def\IO        {\acro{I/O}}
 \def\JAVA      {Java}
 \def\JAVASCRIPT{Java\-Script}
+\def\JIT       {jit}
 \def\KPSE      {{\tt kpse}}
+\def\KVM       {\acro{KVM}}
 \def\KPSEWHICH {{\tt kpsewhich}}
 \def\LAMSTEX   {\LAMSTeX}
 \def\LATEX     {\LaTeX}
@@ -83,6 +57,8 @@
 \def\LISP      {Lisp}
 \def\LPEG      {\acro{LPEG}}
 \def\LUA       {Lua}
+\def\LUAJIT    {Lua\acro{JIT}}
+\def\LUAJITTEX {Lua\acro{JIT\TeX}}
 \def\LUALATEX  {Lua\LATEX}
 \def\LUATEX    {\LUA\-\TeX}
 \def\LUATOOLS  {{\tt luatools}}
@@ -107,6 +83,7 @@
 \def\MPLIB     {\acro{MP}lib}
 \def\MPTO      {{\tt mpto}}
 \def\MPTOPDF   {{\tt mptopdf}}
+\def\MSWINDOWS {Windows}
 \def\MTXRUN    {{\tt mtxrun}}
 \def\NOWEB     {\acro{NOWEB}}
 \def\OCE       {\acro{OCE}}
@@ -125,6 +102,8 @@
 \def\RTL       {\acro{RTL}}
 \def\RUBY      {Ruby}
 \def\SCITE     {Sci\acro{TE}}
+\def\SSD       {\acro{SSD}}
+\def\SWIGLIB   {SwigLib}
 \def\TABLE     {T\kern-.27em\lower.5ex\hbox{A}\kern-.18em B\kern-.1em
                  \lower.5ex\hbox{L}\kern-.075em E}
 \def\TDS       {\acro{TDS}}
@@ -132,7 +111,6 @@
 \def\TEXEXEC   {{\tt texexec}}
 \def\TEXLIVE   {\TeX\ Live}
 \def\TEXMFSTART{{\tt texmfstart}}
-% \def\TFM already in tub
 \def\THANH     {\Thanh}
 \def\THETEXBOOK{\TB}
 \def\TODO      {\acro{TODO}}
@@ -145,6 +123,7 @@
 \def\URL       {url}
 \def\USB       {\acro{USB}}
 \def\VF        {\acro{VF}}
+\def\VMWARE    {\acro{VM}ware}
 \def\WEB       {\acro{WEB}}
 \def\WEBTOC    {Web2C}
 \def\WIKI      {Wiki}
@@ -153,36 +132,71 @@
 \def\YANDY     {\acro{Y\&Y}}
 \def\ZIP       {{\tt zip}}
 
+% 
+\def\subject{\section}
+\def\subsubject{\subsection}
+%
+\def\startAbstract{\begin{abstract}}
+\let\StartAbstract=\startAbstract
+%
+\def\stopAbstract{\end{abstract}}
+\let\StopAbstract=\stopAbstract
+%
+\def\startKeywords{\smallskip \noindent \begingroup \raggedright {\bf Keywords: }}
+\def\stopKeywords{\par\endgroup}
+%
+\def\stopArticle{\end{document}}
+\let\StopArticle=\stopArticle
+
 \def\citetitle{\textsl}
 \def\crlf{\newline}
+\def\head{\item}
 \def\high{\textsuperscript}
 \def\hyphenatedurl{\url}
 \def\in#1[#2]{#1~\ref{#2}}
+\def\low#1{\ensuremath{_{\,\textrm{\footnotesize #1}}}}
+\let\noindentation = \relax
 \let\origquote = \quote
 \def\quote#1{{`#1'}}
 \let\origquotation = \quotation
 \def\quotation#1{{``#1''}}
+\let\stop=\relax
 \def\sym{\item}
 \def\tex{\cs}
 \def\unknown{\ldots}
+
+\let\origfootnote=\footnote
+\def\footnote{\unskip\origfootnote}
 
 \def\type{\bgroup
    \catcode`_=12 \catcode`\\=12 \catcode`##=12 \catcode`\&=12 \catcode`$=12
    \finishtype}
 \def\finishtype#1{\texttt{#1}\egroup\spacefactor=1000 }
 
+\def\startitemize{\begin{itemize}}
+\def\stopitemize{\end{itemize}}
+%
+\def\startitemizepacked]{\begin{compactitemize}}
+\def\stopitemizepacked{\end{compactitemize}}
+%
+\def\startitem{\item}
+\let\stopitem=\relax
+
+\def\startquotation{\begingroup \origquotation}
+\def\stopquotation{\par\endgroup\smallskip}
+
 \def\starttyping{\begin{verbatim}[\small\catcode`\|=12 ]}
 % \end{verbatim} has to be literal.
 \def\stoptyping{\errmessage{must literally end verbatim}}
 
-\def\starttabulate{\noindent\begingroup \catcode`|=12 \begin{tabular}}
-\def\stoptabulate{\end{tabular}\endgroup}
+\def\starttabulate{\par\smallskip
+  \noindent\begingroup \catcode`|=12 \begin{tabular}}
+\def\stoptabulate{\end{tabular}\endgroup\smallskip}
 \def\NR{\\}
 \def\NC{&}
 \def\HL{\hline}
 
-{\obeylines %
- \gdef\startcomponent{\bgroup \obeylines \ignoretoeol}%
+{\obeylines \gdef\startcomponent{\bgroup \obeylines \ignoretoeol}%
  \gdef\ignoretoeol#1^^M{\egroup}%
  \global\let\environment=\startcomponent %
  \global\let\start=\startcomponent %
@@ -193,6 +207,12 @@
 \def\page{}
 \def\ss{}
 
+\def\startformula{\begin{displaymath}}
+\def\stopformula{\end{displaymath}}
+
+\def\startnarrower{\startquotation}
+\def\stopnarrower{\stopquotation}
+
 \def\startsection[title=#1]{\section{#1}}
 \def\stopsection{}
 \def\stopchapter{}
@@ -200,22 +220,13 @@
 \def\startsubsubject[title=#1]{\subsection{#1}}
 \def\stopsubsubject{}
 
-\def\startformula{\begin{displaymath}}
-\def\stopformula{\end{displaymath}}
-
-\def\startnarrower{\startquotation}
-\def\stopnarrower{\stopquotation}
-
-\let\origfootnote=\footnote
-\def\footnote{\unskip\origfootnote}
-
 % ||   en-dash in ConTeXt
 % |-|  normal hyphen with line break allowed
 \catcode`|=13
 \def|{\futurelet\next\finishbar}
 \def\finishbar{\begingroup %\show\next
   \ifx\next|%
-    -%
+    --%
   \else\ifx\next/%
     \slash
   \else\ifx\next-%
