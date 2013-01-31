@@ -1,7 +1,7 @@
 % $Id$
 % ltubguid.ltx - documentation for ltugboat classes.
 % 
-% Copyright 1994,1995,1996,2001,2005,2006 TeX Users Group.
+% Copyright 1994,1995,1996,2001,2005,2006,2010,2013 TeX Users Group.
 % 
 % This file is part of the tugboat package.
 % 
@@ -62,7 +62,7 @@
 }
 
 @Misc{Rahtz:hyperref:1997,
-  author = {Sebastian Rahtz},
+  author = {Sebastian Rahtz and Heiko Oberdiek},
   title = {The {\textsf{hyperref}} system},
   year = 1997,
   howpublished = {Available from {\CTAN}, {\CTANref{hyperref}}}
@@ -70,7 +70,7 @@
 
 @Book{Lamport:1994,
   author = {Leslie Lamport},
-  title = {{\LaTeX}, a Document Preparation System},
+  title = {{\LaTeX}: A Document Preparation System},
   edition = {\nth{2}},
   year = {1994},
   publisher = {Addison-Wesley}
@@ -173,16 +173,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\listfiles
-\setcounter{errorcontextlines}{999}
 \documentclass[harvardcite,final]{ltugboat}
+\usepackage{microtype}
 \usepackage{ctandir}
 \IfFileExists{booktabs.sty}%
   {\usepackage{booktabs}}%
   {\let\midrule\hline}
 %
-% only tell me important overfulls, please
-\hfuzz=2pt
+% imperfectly broken pages are ok.
+\vbadness=10000
 %
 % define CTAN addresses using the commands of the |ctandir| package
 \CTANdirectory{bibextract}{biblio/bibtex/utils/bibextract}
@@ -200,9 +199,6 @@
 % commands that would be defined by changebar if we were using it:
 \providecommand\cbstart{}
 \providecommand\cbend{}
-%
-% this isn't really all that much of a `proof' copy
-\NoBlackBoxes
 %
 % ***** Commands provided by this paper *****
 %
@@ -257,101 +253,73 @@
 %%%%%%%%%%%%%%%%
 %
 \title{The \LaTeXe\ \TUB{} Macros}
-\author{Robin Fairbairns}
-\address{University of Cambridge Computer Laboratory\\
-  William Gates Building\\
-  J J Thomson Avenue,\\
-  Cambridge CB3 0FD,\\
-  UK}
-\netaddress{rf@cl.cam.ac.uk}
-\personalURL{http://www.cl.cam.ac.uk/users/rf/robin.html}
+\author{Robin Fairbairns \& TUGboat editors}
+\EDITORnoaddress
+\netaddress{tugboat@tug.org}
+\personalURL{http://tug.org/TUGboat}
 \maketitle
 
 \section{Introduction}
 
-This note reports on a new set of macros for use by \TUB{} authors.
-The macros represent a development of the earlier \clsname{ltugboat} and
-\clsname{ltugproc} styles that were written for use with \LaTeX~2.09.  The
-development was started by others than I, notably Sebastian Rahtz,
-Michel Goossens, Nico Poppelier and Johannes Braams; I have been
-assisted in my work both directly and indirectly by many others,
-including Barbara Beeton, Mimi Burbank and (of course) the \LaTeX3
-team.
-
-The ultimate aim of the work is to provide a single production
-environment for the whole of \TUB{}.  That aim has not (yet) been
-achieved, though it is still believed to be achievable for a
-significant proportion of papers.\footnote{\TUB{} will continue to
-accept papers written using the `plain' macros; it's probably
-fanciful to hope that \emph{every} paper can be moulded into use
-within \LaTeX.}
+This is the documentation for the \LaTeXe\ macros to be used by \TUB{}
+authors.  The macros represent a development of the earlier
+\clsname{ltugboat} and \clsname{ltugproc} styles that were written for
+use with \LaTeX~2.09; major contributors have been Robin Fairbairns,
+Sebastian Rahtz, Michel Goossens, Nico Poppelier and Johannes Braams.
+Many others have been involved, including Barbara Beeton, Mimi Burbank
+and the \LaTeX3 team.
 
 \section{Availability}
 
-\begin{sloppypar}
-  The macros are released for general use, and are distributed via
-  \CTAN{}\footnote{\raggedfoot From directory \CTANref{tub-latex}} in the usual
-  \LaTeX{} way as files \path|tugboat.dtx| and \path|tugboat.ins|.
-  When the\,\verb|.ins| file is processed by \LaTeX{}, the files
-  \path|ltugboat.cls|, \path|ltugproc.cls| and \path|ltugbib.bst| (for
-  ordinary production work) and \path|ltugcomn.sty| (a cooking pot of
-  useful macros, for documentation, etc.)\ are produced.  The\,\verb|.dtx|
-  file may itself be processed by \LaTeX{} to produce a formatted
-  (somewhat `literate') source listing for those who feel they need
-  more detailed description of the macros than is offered in the
-  present note.
-\end{sloppypar}
+\TUB's web pages are at:\\\centerline{\url{http://tug.org/TUGboat}} They
+include an article template, information for authors and reviewers, all
+the back issues, and more.
 
-The \TUB\ web site is at \url{http://tug.org/TUGboat}.  It contains much
-information for authors and reviewers, all the back issues, and plenty
-more.  In particular, sample documents for both regular articles and
-proceedings articles are available from \url{http://tug.org/TUGboat}.
+The macros are released for general use, and are distributed via \CTAN{}
+(directory \CTANref{tub-latex}) in the usual \LaTeX{} way as files
+\path|tugboat.dtx| and \path|tugboat.ins|.  When the\,\verb|.ins| file
+is processed by \LaTeX{}, the files \path|ltugboat.cls|,
+\path|ltugproc.cls| and \path|ltugbib.bst| (for ordinary production
+work) and \path|ltugcomn.sty| (a cooking pot of useful macros, for
+documentation, etc.)\ are produced.  The\,\verb|.dtx| file may itself be
+processed by \LaTeX{} to produce a formatted (somewhat `literate')
+source listing for those who would like more detailed descriptions of
+the \TUB\ macros.
 
 \section{The general structure of a paper}
 
-The author need not understand the details of the production of
-\TUB{}\Dash her business is to produce the text that the editor is to
-mould into the body of an issue.
-
-However, any modern author wants to be able to view the progress of
-her efforts; for this, she needs to use the \TUB{} class
-\path|ltugboat.cls|\Dash it defines the way an article in a normal issue of
-\TUB{} will appear, and is therefore a useful aid.
-
-Similarly, one submitting a paper for presentation at an annual \tug{}
-conference may use the \path|ltugproc.cls|, which will set the paper as it
-should appear in a proceedings issue of \TUB{}.
+The basic idea is to start your \LaTeX\ document with
+\path|\documentclass{ltugboat}|, which defines the appearance of \TUB\
+articles.  This uses the file \path|ltugboat.cls| as usual.
 
 Each paper, therefore, is written as a document that may stand on its
 own.  It starts with a \cs{documentclass} command, and its body is
-enclosed in a \envname{document} environment.  Each of the document
-classes specifies a set of options, described in the next two
-subsections (\ref{sec:boat-opts} and~\ref{sec:proc-opts}).  In the
-ordinary course of events the author needn't bother with any of these
-options, since the defaults are designed for creating proof copies of
-papers.
+enclosed in a \envname{document} environment.  There are some options to
+the document class, described in the next section, but ordinarily the
+author needn't bother with them.  The defaults are
+designed for creating proof copies of papers.
 
-Since the author typesets her paper in a `proof mode', the paper's
-published appearance will differ from its appearance at the time of
-submission.  The changes required in this process are the
-responsibility of the \TUB{} production team, and the author need not
-be concerned with them.
+The proof output differs from the final production output with respect
+to page numbers and other material.  The changes required for final
+production are the responsibility of the \TUB{} editors, and the author
+need not be concerned with them.
 
-\subsection{Class options: the \clsname{ltugboat} class}
+\section{Class options: The \clsname{ltugboat} class}
 \label{sec:boat-opts}
 
-The \clsname{ltugboat} class accepts all the options of the
-\clsname{article} class (though it suppresses the font-size selection,
+The \clsname{ltugboat} class accepts many of the options of the
+\clsname{article} class (it suppresses the font-size selection,
 one/two-side and one/two-column options).
 \begin{optlist}
 \item[draft] Set up for a draft copy of a paper (this is the default
   setting\Dash the author need not explicitly set it): page numbering
-  to start at 1001, black marks for overfull boxes.
+  starts at a high number, black marks for overfull boxes.
 \item[extralabel] Use the extra label-distinguishing mark in the body
   of the reference; see section~\ref{sec:biblio}.
 \item[final] Set up for the final copy of a paper: page numbering to
   come from elsewhere, no black marks.
-\item[harvardcite] Specify Harvard-style citation; see
+\item[harvardcite] Specify Harvard-style citation (not especially
+  recommended in general, though they are used in the present document); see
   section~\ref{sec:biblio}.
 \item[noextralabel] Don't use the extra label-distinguishing mark in
   the body of the reference; see section~\ref{sec:biblio}.
@@ -361,48 +329,11 @@ one/two-side and one/two-column options).
   numbered (this is the default setting\Dash the author need not
   explicitly set it).
 \item[preprint] Set up for a preprint.
-
 \item[rawcite] Specify default (unnumbered) citation; see
   section~\ref{sec:biblio}.
 \end{optlist}
 
-\subsection{Class options: the \clsname{ltugproc} class}
-\label{sec:proc-opts}
-
-The \clsname{ltugproc} class accepts all of the options allowed with
-\clsname{ltugboat}.  In addition, it accepts an option that specifies
-the year of the conference for which the paper is submitted.  For
-example, the conference for \number\year\ would be specified by option
-%
-%% % although this paper will be published in 1996, it may be reprinted
-%% % again in the future, so let's calculate `this year' on the fly
-%% \newcount\y
-%% \y\year
-%% \divide\y100
-%% \multiply\y100
-%% \advance\y-\year
-%% \y-\y
-%
-% from 2000 on, the option is just the year
-\optname{tug\number\year}.  Such an option may be necessary if the
-(detailed) type design of papers for the year's proceedings issue is
-changed by the year's editor.  Unless ``instructions to authors''
-say otherwise, authors should not specify such an option, and
-\clsname{ltugproc} will choose an appropriate default.
-
-The class reads a configuration file
-\path|ltugproc.cfg|, in which you may specify the year by a command of
-the form:
-\begin{verbatim}[\small]
-  \newcommand{\tugProcYear}{97}
-\end{verbatim}
-
-The class deals with two-digit year selections for conferences up to
-2069 (which date was chosen entirely at random, uninfluenced, of
-course, by the Unix\texttrademark Epoch\dots); however, the user
-should not feel constrained to write such confusing dates since
-\clsname{ltugproc} will cope with the full year number (4 digits, for
-quite a while yet).
+\noindent Again, normally there is no need to use any document options.
 
 \section{Command syntax}
 \label{sec:syntax}
@@ -455,14 +386,6 @@ inadvertently) uses one of these forms.  (The author who wishes to use
 un-numbered sections throughout her paper may use the
 \optname{nonumber} class option (see~\ref{sec:boat-opts}).
 
-By contrast, whether or not sections are numbered in a conference
-proceedings issues of \TUB{} is a matter of that year's editor's
-choice (in collaboration with the \TUB{} team).  If sections are not
-to be numbered, the use of `\texttt{*}' forms is inappropriate, and the
-class equally warns the author.  Since the sections don't have
-numbers, references to section numbers don't work; they therefore
-(once they're resolved) warn the author of potential problems.
-
 Reference may, however, be made to the `title' of divisions of the
 paper, whether they are numbered or not.  The \cs{nameref} command
 (which uses the technique developed for the \textsf{hyperref} package
@@ -487,13 +410,6 @@ typesets its body as an un-numbered section whose title is
 small text, and separates the abstract from the rest of the paper with
 a decorative line.
 
-The \clsname{ltugproc} class typesets abstracts as part of the title
-of the paper, below the names and addresses of the authors, but before
-the main body of the paper.  Therefore, for proceedings articles, the
-\envname{abstract} environment must appear in the source of the paper
-\emph{before} the \cs{maketitle} command (it may even appear before
-\verb"\begin{document}", if the author so chooses).
-
 \subsection{Appendices}
 
 A paper may have appendices, which are expressed in exactly the same
@@ -511,8 +427,8 @@ Which will produce `section' headings similar to:
 \end{quote}
 
 \TUB{} articles may have a small extension to this format: this
-extension was originally developed for proceedings issues, but is also
-available in normal issues:
+extension was originally developed for proceedings of past years, but is
+also available in normal issues:
 
 \begin{verbatim}[\small]
 \begin{appendix}
@@ -526,8 +442,7 @@ Which will produce `section' headings similar to:
 \end{quote}
 
 In both cases, the subsections are numbered as normal (i.e., as
-`A.\ensuremath{n}' in normal \TUB{} papers, and not at all in
-proceedings classes).
+`A.\ensuremath{n}' in normal \TUB{} papers):
 
 \section{Titles, addresses and so on}
 
@@ -545,30 +460,16 @@ author may advertise a `home' Web page, using a \cs{personalURL} command.
 For example, the present paper has at its start:
 
 \begin{verbatim}[\small]
-\title{The New (\LaTeXe) \TUB{} Macros}
-\author{Robin Fairbairns}
-\address{University of Cambridge
-    Computer Laboratory\\
-  Pembroke Street,\\
-  Cambridge, CB2 3QG,\\
-  UK}
-\netaddress{rf@cl.cam.ac.uk}
-\personalURL{http://www.cl.cam.ac.uk/...}
+\title{The \LaTeXe\ \TUB{} Macros}
+\author{TUGboat editors}
+\EDITORnoaddress
+\netaddress{tugboat@tug.org}
+\personalURL{http://tug.org/TUGboat}
 \maketitle
 \end{verbatim}
 
-Since this paper is prepared for a normal issue of \TUB{} and
-therefore uses the \clsname{ltugboat} class, the \cs{maketitle} merely
-typesets the title of the paper and the author's name.  The
-address(es) are typeset at the end of the paper where the author gives
-a \cs{makesignature} command.
-
-The \clsname{ltugproc} class typesets all the information about the
-author at the head of the paper, when the \cs{maketitle} is given;
-this class disallows the \cs{makesignature} command.
-
-Note that the author had a problem typesetting the above example
-verbatim: the lines are too long.  If the information being given is
+Lines in the title information can get quite long.
+If the information being given is
 to be typeset as ordinary text (as in the case of the \cs{address}
 line above), it can be `wrapped' perfectly happily, as in normal text.
 If one of the verbatim items (\cs{netaddress} or \cs{personalURL}
@@ -580,13 +481,12 @@ sign is an entirely acceptable element of both email addresses and
 Therefore, the classes typeset these electronic addresses in an
 environment where some of the characters (notably `\verb|.|' and
 `\verb|/|') are treated as word-divisions for the purposes of laying
-out the line.  This is visible in the case of my personal \acro{URL},
-in the signature block at the end of the present paper.
+out the line.
 
 If the paper is the result of more than one author's labours, a sequence of
 \cs{author}, \cs{address}, \cs{netaddress} and \cs{personalURL}
 commands may be given, as in the following, which comes from a paper
-given at \tug'95 (slightly edited):
+given at \tug'95 (abbreviated):
 
 \begin{verbatim}[\small]
 \author{Michel Goossens}
@@ -822,9 +722,7 @@ delay.  (Remember that the editorial team is a group of volunteers,
 each working in his or her spare time.)
 
 In general, packages currently on \CTAN, and known to work with
-\emph{current} \LaTeX{},\footnote{The team's version of \LaTeX{} is
-  regularly updated, though not during the course of a production
-  run.} are unlikely to give problems.
+\emph{current} \LaTeX{} are unlikely to give problems.
 
 In particular, the team is happy to accept papers using packages
 that are supported by members of the \LaTeX3 team,\footnote{%\raggedfoot
@@ -881,6 +779,20 @@ used in the present paper (not least in the bibliography).
 \section{Bibliography}
 \label{sec:biblio}
 
+Short form: our recommendation for handling bibliographies is to use the
+\BibTeX\ and \pkgname{plain} bibliography style.  No document options
+are needed or recommended.  All that is required in the article source
+(as shown in the sample available from \url{http://tug.org/TUGboat}) is
+the following:
+
+\begin{verbatim}[\small]
+\bibliographystyle{plain}
+\bibliography{yourbibfile}
+\end{verbatim}
+
+The rest of this section is about cases where, for whatever reason, you
+don't want to do that.
+
 Bibliographic citations give much grief to the editorial team.  Good
 publishing practice requires that there be editorial control of the
 way citations in a journal are presented yet, all too often, authors
@@ -898,14 +810,16 @@ paper.\footnote{The program \progname{bibextract}, available from
 packages, the \envname{filecontents} environment is a convenient way to
 deliver the bibliography file.
 
-A special case is made of the accumulated bibliography of \TUB{}
+A special case is the accumulated bibliography of \TUB{}
 itself;\footnote{\raggedfoot Available on \CTAN{} as
   \CTANref{tub-biblio}} it is always available to the production team,
 so that authors may make reference to items from that \verb|.bib| file
 without further ado.
 
-Two citation styles are supported within \TUB{} articles, `\emph{raw}'
-and `\emph{harvard}' (the present article is employing \emph{harvard}
+Notwithstanding the general recommendation for the \pkgname{plain}
+\BibTeX\ style,
+two citation styles are supported within \TUB{} articles, `\texttt{raw}'
+and `\texttt{harvard}' (the present article is employing \emph{harvard}
 citation).  The raw citation style uses the `standard'
 \BibTeX{} `\pkgname{plain}' (numeric) citation style; its modification
 by use of Donald Arseneau's \pkgname{cite}
@@ -915,7 +829,7 @@ class option \optname{rawcite}).
 
 Harvard citation may be selected by specifying \optname{harvardcite} as an
 option of the \cs{documentclass} command.  The macros used derive
-pretty directly from the \textsl{\pkgname{harvard}} styles written by Glenn
+pretty directly from the `harvard' styles written by Glenn
 Paulley and now maintained by Peter Williams; the \BibTeX{} style
 derives from one developed by Patrick Daly.
 

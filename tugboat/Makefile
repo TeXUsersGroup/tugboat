@@ -6,9 +6,15 @@ opt = -interaction=nonstopmode
 latex = latex $(opt)
 pdflatex = pdflatex $(opt)
 
-tugboat.pdf: ltugboat.cls tugboat.dtx
-	$(pdflatex) tugboat.dtx
-	$(pdflatex) tugboat.dtx
+ltubguid.pdf: ltubguid.ltx ltugboat.cls
+	rm -f tubguide.bib ctandir.sty
+	$(pdflatex) $<
+	bibtex ltubguid
+	$(pdflatex) $<
+
+tugboat.pdf: tugboat.dtx ltugboat.cls
+	$(pdflatex) $<
+	$(pdflatex) $<
 
 ltugcomn.sty ltugboat.sty ltugboat.cls: tugboat.ins tugboat.dtx
 	$(latex) $<
