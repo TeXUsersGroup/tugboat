@@ -31,7 +31,7 @@
   [year=1900,
    volume=0,
    number=0,
-   page=1001]
+   page=900]
 
 \setvariables
   [tugboat]
@@ -165,8 +165,8 @@
 %D We define a logical skip. This is equal to the \tex{topsep} in latex,
 %D and most environments should have this skip.
 
-\defineblank[tugblank][3pt plus 1pt minus 1pt]
-\setupblank[3pt plus 1pt minus 1pt]
+\defineblank[tugblank][3pt]
+\setupblank[3pt]
 
 
 \setupitemize[1][before={\blank[tugblank]},after={\blank[tugblank]},
@@ -181,7 +181,9 @@
 
 \setuptyping
   [option=none,
-   before={\blank[tugblank]\switchtobodyfont[small]},
+   % mkiv arbitrarily scales lm somehow randomly; 10pt gets 9pt back,
+   % we make it a little smaller.
+   before={\blank[tugblank]\switchtobodyfont[9.8pt]},
    after={\blank[tugblank]}]
 
 %D \section Footnotes %<<<1
@@ -189,11 +191,11 @@
 %D Not entirely a la \TUGBOAT:
 
 \setupfootnotes
-  [bodyfont=8pt,
+  [bodyfont=9pt,
    location=columns,
    rule={\hrule width 5pc height .4pt depth 0pt\relax \kern \strutdepth}]
 
-\setupfootnotedefinition
+\setupnotation[footnote]
   [location=joinedup,
    width=fit,
    headstyle=normal,
@@ -283,7 +285,7 @@
 
 \startsetups tugboat:banner:text:proceedings
 
-  \setups[tugboat:banner:text:article]
+  \setups{tugboat:banner:text:article}
   \thinspace---\thinspace
   \postissno
 
@@ -293,7 +295,7 @@
 
   \setupheadertexts
     [\setups{tugboat:banner:text:article}]
-    [pagenumber]
+    [\pagenumber]
 
 % no footer in regular articles
 %  \setupfootertexts
@@ -310,13 +312,13 @@
 
   \setupfootertexts
     [\setups{tugboat:banner:text:proceedings}]
-    [pagenumber]
+    [\pagenumber]
 
 \stopsetups
 
 %D article is default so,
 
-\setups[tugboat:banner:setup:article]
+\setups{tugboat:banner:setup:article}
 
 %D It all starts here:
 
@@ -387,23 +389,25 @@
   \setups{tugboat:columns:\getvariable{tugboat}{columns}}
   \setups{tugboat:banner:setup:\getvariable{tugboat}{type}}
 
-    \doif{\getvariable{tugboat}{columns}}{yes}{\startcolumns}
+  \doif{\getvariable{tugboat}{columns}}{yes}{\startcolumns}
 
 
-  \setupheader
-    [\setups{tugboat:banner:text:article}]
-    [pagenumber]
+  % AM: Why set these again?
+  % \setupheadertexts
+  %   [\setups{tugboat:banner:text:article}]
+  %   [pagenumber]
 
-  \setuppagenumber
-    [number=\getvariable{tugboat}{page}]
+  % \setuppagenumber
+  %   [number=\getvariable{tugboat}{page}]
+  \setcounter[userpage][\getvariable{tugboat}{page}]
 
-  \setuplayout
-    [grid=\getvariable{tugboat}{grid}]
+  % \setuplayout
+  %   [grid=\getvariable{tugboat}{grid}]
 
-  % instead of \startmode   [*grid] ... \stopmode
-  % instead of \startnotmode[*grid] ... \stopnotmode
+  % % instead of \startmode   [*grid] ... \stopmode
+  % % instead of \startnotmode[*grid] ... \stopnotmode
 
-  \setups{tugboat:grid:setup:\systemmodevalue{grid}{yes}{no}}
+  \setups{tugboat:grid:setup:\getvariable{tugboat}{grid}}
 
   \snaptogrid \vbox \bgroup
 
@@ -424,7 +428,7 @@
 
     \doiftext{\getbuffer[abstract]}
     {\let\\=\endgraf
-     \setups[tugboat:abstract:setup]
+     \setups{tugboat:abstract:setup}
      \subject{Abstract}
      \getbuffer[abstract]}
   \egroup
@@ -467,7 +471,7 @@
     \blank[9pt plus3pt minus3pt]
 
     \let\\=\par
-    \setups[tugboat:abstract:setup]
+    \setups{tugboat:abstract:setup}
     \midaligned{\bf Abstract}
 
     \startnarrower[middle]
@@ -504,6 +508,9 @@
   \egroup
 
 \stopsetups
+
+\font\tubsigcmsy = cmsy10
+\def\mydiamond{{\tubsigcmsy \char5 }}
 
 \startsetups tugboat:affiliation:proceedings
 
