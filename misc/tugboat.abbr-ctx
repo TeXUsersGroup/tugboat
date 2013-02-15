@@ -171,7 +171,9 @@
 \def\type{\bgroup
    \catcode`_=12 \catcode`\\=12 \catcode`##=12 \catcode`\&=12 \catcode`$=12
    \finishtype}
-\def\finishtype#1{\texttt{#1}\egroup\spacefactor=1000 }
+\def\finishtype#1{\texttt{%
+  \spaceskip = .3333em \xspaceskip = \spaceskip
+  #1}\egroup\spacefactor=1000 }
 
 \def\startitemize{\begin{itemize}}
 \def\stopitemize{\end{itemize}}
