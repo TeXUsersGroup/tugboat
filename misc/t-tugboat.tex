@@ -54,6 +54,7 @@
 \definebodyfontenvironment   [10pt] [interlinespace=12pt, big=12pt,  small=9pt]
 \definebodyfontenvironment   [12pt] [interlinespace=14pt,big=14.4pt,small=10pt]
 \definebodyfontenvironment [14.4pt] [interlinespace=18pt,big=14.4pt,small=12pt]
+\definebodyfontenvironment [9.8pt]  % Because 9.8pt is used in typing environments
 
 %D \TUGBOAT\ uses Computer Modern fonts, and \CONTEXT\ uses Latin Modern
 %D by default. So, we just specify the font size.
@@ -183,8 +184,9 @@
   [option=none,
    % mkiv arbitrarily scales lm somehow randomly; 10pt gets 9pt back,
    % we make it a little smaller.
-   before={\blank[tugblank]\switchtobodyfont[9.8pt]},
-   after={\blank[tugblank]}]
+   bodyfont=9.8pt,
+   before={\blank[nowhite]}, % AM: If this is too small, use \blank[nowhite,tugblank]}
+   after={\blank[back,nowhite,tugblank]}]
 
 %D \section Footnotes %<<<1
 %D
@@ -488,6 +490,9 @@
 
 \def\signaturewidth{13pc}
 
+\definefontsynonym[LMSY][lmsy10]
+\def\mydiamond{\getglyph{LMSY}{\char5}}
+
 \startsetups tugboat:affiliation:article
 
   \blank[line]
@@ -499,7 +504,7 @@
      \leftskip=\textwidth \advance\leftskip by -\signaturewidth
 
      \let\\=\par
-     \leavevmode\llap{$\diamond$\enspace}\getvariable{tugboat}{author}
+     \leavevmode\llap{\mydiamond\enspace}\getvariable{tugboat}{author}
      \par
      \getvariable{tugboat}{address}
      \par
@@ -508,9 +513,6 @@
   \egroup
 
 \stopsetups
-
-\font\tubsigcmsy = cmsy10
-\def\mydiamond{{\tubsigcmsy \char5 }}
 
 \startsetups tugboat:affiliation:proceedings
 
