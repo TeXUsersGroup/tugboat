@@ -2566,7 +2566,7 @@
 %
 % By analogy with what we've just done to section titles and the like,
 % we now do our best to discourage hyphenation within captions.  We also
-% typeset them in \cs{small}.
+% typeset them in \cs{small} (actually \cs{tubcaptionfonts}).
 %
 % First, let's define a dimension by which we will indent full-page
 % captions.  We'll also use this to indent abstracts in proceedings style.
@@ -2578,12 +2578,13 @@
 %
 % Ok, here is the \cs{@makecaption}.
 %    \begin{macrocode}
+\def\tubcaptionfonts{\small}%
 \long\def\@makecaption#1#2{%
   \vskip\abovecaptionskip
-  \sbox\@tempboxa{\small \tubmakecaptionbox{#1}{#2}}% try in an hbox
+  \sbox\@tempboxa{\tubcaptionfonts \tubmakecaptionbox{#1}{#2}}% try in an hbox
   \ifdim \wd\@tempboxa > \hsize
     {% caption doesn't fit on one line; set as a paragraph.
-     \small \raggedright \hyphenpenalty=\@M \parindent=1em
+     \tubcaptionfonts \raggedright \hyphenpenalty=\@M \parindent=1em
      % indent full-width captions {figure*}, but not single-column {figure}.
      \ifdim\hsize = \textwidth
        \leftskip=\tubfullpageindent \rightskip=\leftskip
@@ -2600,12 +2601,12 @@
 \def\tubmakecaptionbox#1#2{#1: #2}% allow overriding for a paper
 %    \end{macrocode}
 %
-% Also use \cs{small} for the caption labels, and put the label itself
-% (e.g., ``Figure 1'') in bold.
+% Also use \cs{tubcaptionfonts} for the caption
+% labels, and put the label itself (e.g., ``Figure 1'') in bold.
 %
 %    \begin{macrocode}
-\def\fnum@figure{{\small \bf \figurename\nobreakspace\thefigure}}
-\def\fnum@table{{\small \bf \tablename\nobreakspace\thetable}}
+\def\fnum@figure{{\tubcaptionfonts \bf \figurename\nobreakspace\thefigure}}
+\def\fnum@table{{\tubcaptionfonts \bf \tablename\nobreakspace\thetable}}
 %    \end{macrocode}
 %
 % Let's reduce the default space above captions a bit, and give it some
