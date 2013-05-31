@@ -68,7 +68,8 @@ sub substitute_pages {
     $firstpage = $lastpage;
     
     $line =~ s/\\getlastpage\{(.*?)\}/$firstpage-$lastpage/;
-  }  
+    s/$firstpage-$lastpage/$firstpage/ if $firstpage eq $lastpage;
+  }
 
   return $line;
 }
