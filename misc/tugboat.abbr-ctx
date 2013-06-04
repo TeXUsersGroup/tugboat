@@ -98,6 +98,7 @@
 \def\PLAIN     {{\tt plain}}
 \def\POSTSCRIPT{\PS}
 \def\PRAGMA    {Pragma}
+\def\QA        {\acro{QA}}
 \def\RAM       {\acro{RAM}}
 \def\RTL       {\acro{RTL}}
 \def\RUBY      {Ruby}
@@ -212,6 +213,9 @@
 \def\startformula{\begin{displaymath}}
 \def\stopformula{\end{displaymath}}
 
+\def\startlinecorrection{}
+\def\stoplinecorrection{}
+
 \def\startnarrower{\startquotation}
 \def\stopnarrower{\stopquotation}
 
@@ -224,6 +228,8 @@
 
 % ||   en-dash in ConTeXt
 % |-|  normal hyphen with line break allowed
+% |<|  \Dash
+% |>|  \Dash
 \catcode`|=13
 \def|{\futurelet\next\finishbar}
 \def\finishbar{\begingroup %\show\next
@@ -233,9 +239,13 @@
     \slash
   \else\ifx\next-%
     -%
+  \else\ifx\next<%
+    \Dash
+  \else\ifx\next>%
+    \Dash
   \else
     \next
-  \fi\fi\fi
+  \fi\fi\fi\fi\fi
   \endgroup
-  \gobble
+  \gobble % the closing |
 }
