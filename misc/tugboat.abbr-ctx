@@ -188,7 +188,9 @@
 \def\startquotation{\begingroup \origquotation}
 \def\stopquotation{\par\endgroup\smallskip}
 
-\def\starttyping{\begin{verbatim}[\small\catcode`\|=12 ]}
+\def\tubextratyping{}
+\def\starttyping{\begin{verbatim}[\small \catcode`\|=12
+                                  \hfuzz=2pt \tubextratyping]}
 % \end{verbatim} has to be literal.
 \def\stoptyping{\errmessage{must literally end verbatim}}
 
