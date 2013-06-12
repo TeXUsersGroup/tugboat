@@ -840,11 +840,13 @@
   }%
 }
 \def\tubhideheight#1{\setbox0=\hbox{#1}\ht0=0pt \dp0=0pt \box0 }
-\DeclareRobustCommand\Xe[1]{\leavevmode
+\def\XekernbeforeE{-.125em}
+\def\XekernafterE{-.1667em}
+\DeclareRobustCommand\Xe{\leavevmode
   \tubhideheight{\hbox{X%
     \setbox0=\hbox{\TeX}\setbox1=\hbox{E}%
-    \lower\dp0\hbox{\raise\dp1\hbox{\kern-.125em\tubreflect{E}}}%
-    \kern-.1667em #1}}}
+    \lower\dp0\hbox{\raise\dp1\hbox{\kern\XekernbeforeE\tubreflect{E}}}%
+    \kern\XekernafterE}}}
 \def\XeTeX{\Xe\TeX}
 \def\XeLaTeX{\Xe{\kern.11em \LaTeX}}
 %
