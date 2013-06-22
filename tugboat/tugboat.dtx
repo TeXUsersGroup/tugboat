@@ -2,7 +2,7 @@
 % $Id$
 % tugboat.dtx - main source for LaTeX TUGboat classes.
 %
-% Copyright 1994-1998, 2000-2001, 2004-2012, 2013 TeX Users Group.
+% Copyright 1994-1998, 2000-2001, 2004-2013 TeX Users Group.
 %
 % This file is part of the tugboat package.
 %
@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2013/01/31 v2.12
+                   [2013/06/22 v2.12
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -373,13 +373,11 @@
 \DeclareOption{12pt}{\csname ds@11pt\endcsname}
 %    \end{macrocode}
 %
-% Similarly, ignore one/two-side/column
+% Similarly, ignore one/two-side options.
 %
 %    \begin{macrocode}
 \DeclareOption{oneside}{\TBWarning{Option \CurrentOption\space ignored}}
 \DeclareOption{twoside}{\ds@oneside}
-\DeclareOption{onecolumn}{\ds@oneside}
-\DeclareOption{twocolumn}{\ds@oneside}
 %    \end{macrocode}
 %
 % There are these people who seem to think |tugproc| is an option rather
@@ -438,6 +436,17 @@
 \DeclareOption{runningminimal}{\AtEndOfClass{\@tubrunningminimal}}
 \DeclareOption{runningfull}{\AtEndOfClass{\@tubrunningfull}}
 %    \end{macrocode}
+%
+% \begin{macro}{\if@tubtwocolumn}
+% Occasionally (|tb107jackowski|, and past conference preprints), we 
+% need the option |onecolumn|.  For alternative approaches, see
+% |tb92hagen-euler| and |tb78milo|.
+%
+%    \begin{macrocode}
+\newif\if@tubtwocolumn  \@tubtwocolumntrue
+\DeclareOption{onecolumn}{\@tubtwocolumnfalse}
+%    \end{macrocode}
+% \end{macro}
 %
 % Any other options, we pass on to |article.cls| before we load it:
 %
@@ -659,6 +668,7 @@
 \def\CMkIV{\ConTeXt\ \MkIV}
 \def\Cplusplus{C\plusplus}
 \def\plusplus{\raisebox{.7ex}{$_{++}$}}
+\def\CPU{\acro{CPU}}
 \def\CSS{\acro{CSS}}
 \def\CSV{\acro{CSV}}
 \def\CTAN{\acro{CTAN}}
@@ -1464,8 +1474,11 @@
 \topsep=3\p@\@plus\p@\@minus\p@
 \parsep=3\p@\@plus\p@\@minus\p@
 \itemsep=\parsep
-\twocolumn
-\newdimen\pagewd        \pagewd=39pc
+%
+% Ordinarily we typeset in two columns.  But if option is given, revert to one.
+\if@tubtwocolumn \twocolumn \else \onecolumn \textwidth=34pc \fi
+%
+\newdimen\pagewd        \pagewd=\textwidth
 \newdimen\trimwd        \trimwd=\pagewd
 \newdimen\trimlgt       \trimlgt=11in
 \newdimen\headmargin    \headmargin=3.5pc
@@ -2218,27 +2231,35 @@
   {\endgraf\medskip}
 %    \end{macrocode}
 %
-% The |abstract| and |longabstract| environments both use
-% \cs{section*}.
-% ^^A [the following is no longer true]
-% ^^A They therefore hack at our subversion of
-% ^^A \cs{@startsection}, to avoid a confusing warning.
+% The |abstract| and |longabstract| environments both use \cs{section*}.
+% For one-column articles (or in |ltugproc| class), indent the
+% abstract.  This is done in the usual bizarre \LaTeX\ way, by treating
+% it as a one-item list with an empty item marker.
 %
 %    \begin{macrocode}
+\def\@tubonecolumnabstractstart{%
+      \list{}{\listparindent\normalparindent
+         \itemindent\z@ \leftmargin\@tubfullpageindent
+         \rightmargin\leftmargin \parsep \z@}\item[]\ignorespaces
+}
+\def\@tubonecolumnabstractfinish{%
+      \endlist
+}
 \renewenvironment{abstract}%
-  {%
-    \begin{SafeSection}%
-    \section*{Abstract}%
+  {\begin{SafeSection}%
+    \section*{%
+        \if@tubtwocolumn\else \hspace*{\@tubfullpageindent}\fi
+        Abstract}%
+    \if@tubtwocolumn\else \@tubonecolumnabstractstart \fi
   }%
-  {\end{SafeSection}}
+  {\if@tubtwocolumn\else \@tubonecolumnabstractfinish \fi
+   \end{SafeSection}}
 \newenvironment{longabstract}%
-  {%
-    \begin{SafeSection}%
+  {\begin{SafeSection}%
     \section*{Abstract}%
     \bgroup\small
   }%
-  {%
-    \endgraf\egroup
+  {\endgraf\egroup
     \end{SafeSection}%
   \vspace{.25\baselineskip}
   \begin{center}
@@ -2572,9 +2593,10 @@
 %
 % First, let's define a dimension by which we will indent full-page
 % captions.  We'll also use this to indent abstracts in proceedings style.
-% \begin{macro}{\tubfullpageindent}
+% \begin{macro}{\@tubfullpageindent}
 %    \begin{macrocode}
-\newdimen\tubfullpageindent  \tubfullpageindent=4.875pc
+\newdimen\@tubfullpageindent
+\@tubfullpageindent = \if@tubtwocolumn 4.875pc \else 3.875pc \fi
 %    \end{macrocode}
 % \end{macro}
 %
@@ -2589,7 +2611,7 @@
      \tubcaptionfonts \raggedright \hyphenpenalty=\@M \parindent=1em
      % indent full-width captions {figure*}, but not single-column {figure}.
      \ifdim\hsize = \textwidth
-       \leftskip=\tubfullpageindent \rightskip=\leftskip
+       \leftskip=\@tubfullpageindent \rightskip=\leftskip
        \advance\rightskip by 0pt plus2em  % increase acceptable raggedness
      \fi
      \noindent \tubmakecaptionbox{#1}{#2}\par}%
@@ -3352,18 +3374,6 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\if@proctw@column}
-% For the case where we're preparing the preprints, we may not have
-% been able to prepare submissions for typesetting in two columns.  In
-% this case, therefore, we may need the option |onecolumn|, that will
-% suppress the use of twocolumn setting within the article.
-%
-%    \begin{macrocode}
-\newif\if@proctw@column  \@proctw@columntrue
-\DeclareOption{onecolumn}{\@proctw@columnfalse}
-%    \end{macrocode}
-% \end{macro}
-%
 % \begin{macro}{\if@proc@sober}
 % \begin{macro}{\if@proc@numerable}
 % ^^A\acro
@@ -3542,7 +3552,7 @@
     \ifTB@title
       \setcounter{footnote}{0}%
       \renewcommand\thefootnote{\@fnsymbol\c@footnote}%
-      \if@proctw@column
+      \if@tubtwocolumn
         \twocolumn[\@maketitle]%
       \else
         \onecolumn
@@ -3631,11 +3641,10 @@
    \if@abstract
       \centerline{\bfseries Abstract}%
       \vskip.5\baselineskip\rmfamily
-      \list{}{\listparindent20\p@
-         \itemindent\z@ \leftmargin\tubfullpageindent
-         \rightmargin\leftmargin \parsep \z@}\item[]\ignorespaces
+      \@tubonecolumnabstractstart
             \the\abstract@toks
-      \endlist\global\@ignoretrue
+      \@tubonecolumnabstractfinish
+      \global\@ignoretrue
    \fi
    \vskip\belowabstractskip
    \global\@afterindentfalse\aftergroup\@afterheading
@@ -3713,7 +3722,7 @@
   \else
 %    \end{macrocode}
 %
-% It's not \cs{end}|{abstract}| --- check that it's not
+% It's not \cs{end}|{abstract}|---check that it's not
 % \cs{end}|{document}| either (which signifies that the author's
 % forgotten about ending the abstract)
 %    \begin{macrocode}
