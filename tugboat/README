@@ -13,20 +13,18 @@ The files in this directory generate the TUGboat article class
 ltugboat.cls, which should be used for all articles nowadays -- both
 proceedings and regular issues.
 
-These macros are supported.
+These macros are supported.  Feel free to write to us.
 
-Robin Fairbairns and the rest of the TUGboat staff,
-tugboat@tug.org
+The TUGboat staff <tugboat@tug.org>
 
 
 Installation and use:
 =====================
 
-Of course, normally you would get the tugboat packages through your
-distribution.
+Usually you can get the tugboat packages through your distribution.
 
-But if you want to install it by hand from CTAN, this directory contains
-three files containing TeX code:
+But if you want to install it by hand from CTAN, its directory there
+(see http://ctan.org/pkg/tugboat) has three files containing TeX code:
 
   tugboat.dtx  -- the source for the macros
   tugboat.ins  -- the docstrip instructions
@@ -35,8 +33,7 @@ three files containing TeX code:
                   but much updated since)
 
 other files are
-  ltugbib.bst  -- a BibTeX style to match ltugboat.cls's default
-                  biblio capabilities
+  ltugbib.bst  -- a BibTeX style for ltugboat.cls's Harvard-cite capabilities
   ltubguid.pdf -- browsable user documentation
   tugboat.pdf  -- browsable implementation documentation
 

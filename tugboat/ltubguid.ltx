@@ -266,8 +266,8 @@ authors.  The macros represent a development of the earlier
 \clsname{ltugboat} and \clsname{ltugproc} styles that were written for
 use with \LaTeX~2.09; major contributors have been Robin Fairbairns,
 Sebastian Rahtz, Michel Goossens, Nico Poppelier and Johannes Braams.
-Many others have been involved, including Barbara Beeton, Mimi Burbank
-and the \LaTeX3 team.
+Many others have been involved, including Barbara Beeton, Karl Berry,
+Mimi Burbank, and the \LaTeX3 team.
 
 \section{Availability}
 
@@ -278,13 +278,15 @@ the back issues, and more.
 The macros are released for general use, and are distributed via \CTAN{}
 (directory \CTANref{tub-latex}) in the usual \LaTeX{} way as files
 \path|tugboat.dtx| and \path|tugboat.ins|.  When the\,\verb|.ins| file
-is processed by \LaTeX{}, the files \path|ltugboat.cls|,
-\path|ltugproc.cls| and \path|ltugbib.bst| (for ordinary production
-work) and \path|ltugcomn.sty| (a cooking pot of useful macros, for
-documentation, etc.)\ are produced.  The\,\verb|.dtx| file may itself be
-processed by \LaTeX{} to produce a formatted (somewhat `literate')
-source listing for those who would like more detailed descriptions of
-the \TUB\ macros.
+is processed by \LaTeX{}, the files \path|ltugboat.cls| and
+\path|ltugbib.bst| (for use with articles) and \path|ltugcomn.sty| (a
+cooking pot of perhaps-useful macros, for documentation, etc.)\ are
+produced.  (\path|ltugproc.cls| is also produced for compatibility, but
+no longer used for proceedings or anything else.)
+
+The\,\verb|.dtx| file may itself be processed by \LaTeX{} to
+produce a formatted (somewhat `literate') source listing for those who
+would like more detailed descriptions of the \TUB\ macros.
 
 \section{The general structure of a paper}
 
@@ -449,8 +451,8 @@ In both cases, the subsections are numbered as normal (i.e., as
 The title and author(s) of a paper are quoted using commands that are
 familiar (in syntax, at least) to most \LaTeX{} users; the \cs{title}
 command is exactly that used in the standard \LaTeX{} classes.  There is
-also \cs{shortTitle\{\meta{your-short-title}\}} to define the form
-used in running heads or footers.
+also \cs{shortTitle\char`{\meta{your-short-title}\char`}} to define the form
+used in running heads or footers; similarly \cs{shortAuthor}.
 
 The \cs{author} command is used once for each co-author of the paper,
 and for each \cs{author} there should be a \cs{address} command that
