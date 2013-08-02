@@ -3,7 +3,7 @@
 %%     version    = "see below \fileversion"
 %%     date       = "see below \filedate",
 %%     filetype   = "common macros for TUGboat",
-%%     copyright  = "Copyright 1993-1996,2006,2008,2011,2012 TeX Users Group.
+%%     copyright  = "Copyright 1993-1996,2006,2008,2011-2013 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -22,8 +22,8 @@
 %% $Id$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\def\fileversion{v1.20+dev}
-\def\filedate{2012/11/04}
+\def\fileversion{v1.21}
+\def\filedate{2013/08/02}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -1001,6 +1001,8 @@ that may not be obvious.  For full definitions, see real code above.
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+1.21       2 Aug 13   define \LyX
+
 1.20       4 Apr 12   allow omission of hyphenation list
 
 1.19      20 May 08   additions to hyphenation list
