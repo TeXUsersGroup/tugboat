@@ -633,7 +633,7 @@
 %
 % Font used for the METAFONT logo, etc.
 %    \begin{macrocode}
-\def\AllTeX{(\La\kern-.075em)\kern-.075em\TeX}
+\DeclareRobustCommand{\AllTeX}{(\La\kern-.075em)\kern-.075em\TeX}
 \def\AMS{American Mathematical Society}
 \def\AmS{$\mathcal{A}$\kern-.1667em\lower.5ex\hbox
     {$\mathcal{M}$}\kern-.125em$\mathcal{S}$}
@@ -707,7 +707,7 @@
 % is hacked from its definition of \cs{LaTeX}; it allows slants (for
 % example) to propagate into the raised (small) `A':
 %    \begin{macrocode}
-\newcommand{\La}%
+\DeclareRobustCommand{\La}%
    {L\kern-.36em
         {\setbox0\hbox{T}%
          \vbox to\ht0{\hbox{$\m@th$%
@@ -754,7 +754,7 @@
 %
 %    \begin{macrocode}
 \DeclareRobustCommand{\NTG}{\acro{NTG}}
-\DeclareRobustCommand\NTS{\ensuremath{\mathcal{N}\mkern-4mu
+\DeclareRobustCommand{\NTS}{\ensuremath{\mathcal{N}\mkern-4mu
   \raisebox{-0.5ex}{$\mathcal{T}$}\mkern-2mu \mathcal{S}}}
 \DeclareTextSymbol{\textohm}{OT1}{'012}
 \DeclareTextSymbolDefault{\textohm}{OT1}
@@ -818,7 +818,7 @@
 \def\tug{\acro{TUG}}
 \def\UG{Users Group}
 \def\UNIX{\acro{UNIX}}
-\def\UTF{\acro{UTF}}
+% let's not do \UTF, since other packages use it for Unicode character access.
 \def\VAX{V\kern-.12em A\kern-.1em X\@}
 \def\VnTeX{V\kern-.03em n\kern-.02em \TeX}
 \def\VorTeX{V\kern-2.7\p@\lower.5ex\hbox{O\kern-1.4\p@ R}\kern-2.6\p@\TeX}
