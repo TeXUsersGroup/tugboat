@@ -1,5 +1,5 @@
 # $Id$
-# Copyright 2007-2011 TeX Users Group.
+# Copyright 2007-2013 TeX Users Group.
 # You may freely use, modify and/or distribute this file.
 # 
 opt = -interaction=nonstopmode
@@ -28,4 +28,7 @@ dist: tugboat.zip
 tugboat.zip: README ltubguid.pdf manifest.txt tugboat.ins \
 		ltubguid.ltx ltugbib.bst tugboat.dtx tugboat.pdf
 	chmod a+rw $^
-	zip $@ $^
+	rm -rf tugboat; mkdir tugboat
+	cp $^ tugboat
+	zip -r $@ tugboat
+	rm -rf tugboat

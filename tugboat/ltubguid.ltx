@@ -282,7 +282,7 @@ is processed by \LaTeX{}, the files \path|ltugboat.cls| and
 \path|ltugbib.bst| (for use with articles) and \path|ltugcomn.sty| (a
 cooking pot of perhaps-useful macros, for documentation, etc.)\ are
 produced.  (\path|ltugproc.cls| is also produced for compatibility, but
-no longer used for proceedings or anything else.)
+is no longer used for proceedings or anything else.)
 
 The\,\verb|.dtx| file may itself be processed by \LaTeX{} to
 produce a formatted (somewhat `literate') source listing for those who
@@ -310,8 +310,8 @@ need not be concerned with them.
 \label{sec:boat-opts}
 
 The \clsname{ltugboat} class accepts many of the options of the
-\clsname{article} class (it suppresses the font-size selection,
-one/two-side and one/two-column options).
+\clsname{article} class (it suppresses the font-size selection
+and one/two-side options).
 \begin{optlist}
 \item[draft] Set up for a draft copy of a paper (this is the default
   setting\Dash the author need not explicitly set it): page numbering
@@ -319,7 +319,7 @@ one/two-side and one/two-column options).
 \item[extralabel] Use the extra label-distinguishing mark in the body
   of the reference; see section~\ref{sec:biblio}.
 \item[final] Set up for the final copy of a paper: page numbering to
-  come from elsewhere, no black marks.
+  come from elsewhere, no cropmarks.
 \item[harvardcite] Specify Harvard-style citation (not especially
   recommended in general, though they are used in the present document); see
   section~\ref{sec:biblio}.
@@ -330,12 +330,17 @@ one/two-side and one/two-column options).
 \item[numbersec] Sections, subsections and subsubsections are to be
   numbered (this is the default setting\Dash the author need not
   explicitly set it).
+\item[onecolumn] Typeset article in one column.
 \item[preprint] Set up for a preprint.
 \item[rawcite] Specify default (unnumbered) citation; see
   section~\ref{sec:biblio}.
+\item[runningfull] Information in both header and footer (default).
+\item[runningminimal] Information in header only.
+\item[runningoff] Information in neither header nor footer.
 \end{optlist}
 
 \noindent Again, normally there is no need to use any document options.
+They are listed here for completeness.
 
 \section{Command syntax}
 \label{sec:syntax}
@@ -346,7 +351,7 @@ available with any widely-available set of macros (though see, for
 example, the discussions in \citeNP{Ogawa:TB15-3-325},
 \citeNP{Baxter:TB15-3-331}, and \citeNP{Swift:TB16-3-269}).  In the
 circumstances, we have sought simply to keep to the spirit of
-Lamport's \citeyear{Lamport:1994}, as modified\footnote{The cited
+Lamport's \citeyear{Lamport:1994}, as modified\footnote{\raggedfoot The cited
   edition of Lamport's book documents the modified version of \LaTeX{},
   but it's worth emphasising that we use the modified version as the
   reference.} by the \LaTeXe{} work (see, for example,
@@ -384,8 +389,8 @@ relies on the section numbers to indicate where the divisions lie in
 the hierarchy.  As a result, the un-numbered `\verb|*|' forms of the
 \cs{section}, etc., commands, are inappropriate.  The
 \clsname{ltugboat} class therefore warns the author who (possibly
-inadvertently) uses one of these forms.  (The author who wishes to use
-un-numbered sections throughout her paper may use the
+inadvertently) uses one of these forms.  (An author who wishes to use
+un-numbered sections throughout the paper may use the
 \optname{nonumber} class option (see~\ref{sec:boat-opts}).
 
 Reference may, however, be made to the `title' of divisions of the
@@ -661,14 +666,13 @@ and of course the class sources are the ultimate reference.
       \verb|\FAQ|    & \FAQ \\
       \verb|\HTML|   & \HTML \\
       \verb|\ISBN|   & \ISBN \\
-      \verb|\ISSN|   & \ISSN \\
+      \verb|\LaTeXe| & \LaTeXe \\
       \verb|\MacOSX| & \MacOSX \\
       \verb|\MathML| & \MathML \\
       \verb|\MF|     & \MF \\
       \verb|\MP|     & \MP \\
       \verb|\NTS|    & \NTS \\
       \verb|\OMEGA|  & \OMEGA \\
-      \verb|\OTP|    & \OTP \\
       \verb|\PDF|    & \PDF \\
       \verb|\SGML|   & \SGML \\
       \verb|\TUB|    & \TUB \\
@@ -720,20 +724,16 @@ In general, the \TUB{} team will be sympathetic to authors who wish to
 use non-standard packages in their papers; indeed, in a journal
 devoted to the usage of \TeX{}, the editor would be churlish indeed to
 refuse such usage.  However, the team does need to be able to process
-the paper on the \TUB{} production computers, and the author who is
-slapdash about the way she submits her paper will cause confusion and
-delay.  (Remember that the editorial team is a group of volunteers,
-each working in his or her spare time.)
+the paper on the \TUB{} production computers.
 
 In general, packages currently on \CTAN, and known to work with
 \emph{current} \LaTeX{} are unlikely to give problems.
 
 In particular, the team is happy to accept papers using packages
 that are supported by members of the \LaTeX3 team,\footnote{%\raggedfoot
-  Those in the \LaTeX{} base distribution, or one of those on the
+  Those in the \LaTeX{} base distribution, or one of those in the
   \CTANref{packages} sub-tree on \CTAN.} subject to the two provisos:
 \begin{itemize}
-\itemsep=0.2\itemsep
 \item Use of the \pkgname{verbatim} package has implications for the
   \envname{verbatim} facilities provided by the classes\Dash see
   section~\ref{sec:verbatim}.
@@ -783,11 +783,11 @@ used in the present paper (not least in the bibliography).
 \section{Bibliography}
 \label{sec:biblio}
 
-Short form: our recommendation for handling bibliographies is to use the
-\BibTeX\ and \pkgname{plain} bibliography style.  No document options
-are needed or recommended.  All that is required in the article source
-(as shown in the sample available from \url{http://tug.org/TUGboat}) is
-the following:
+In short: our recommendation for handling bibliographies is to use
+\BibTeX\ and the \pkgname{plain} bibliography style.  No document
+options are needed or recommended.  All that is required in the article
+source (as shown in the sample available from
+\url{http://tug.org/TUGboat}) is the following:
 
 \begin{verbatim}[\small]
 \bibliographystyle{plain}
@@ -809,7 +809,7 @@ paper.\footnote{The program \progname{bibextract}, available from
   \CTAN{} in directory \CTANref{bibextract}, provides a convenient
   mechanism for extracting just the relevant portions of your
   bibliography database for submitting your paper; many of the common
-  \BibTeX{}-database management packages, such as \textsc{BibDB} or
+  \BibTeX{}-database management packages, such as \textsc{Bib}\acro{DB} or
   \textsc{Bib}Tools offer similar facilities.} As with uncommon
 packages, the \envname{filecontents} environment is a convenient way to
 deliver the bibliography file.
@@ -817,8 +817,8 @@ deliver the bibliography file.
 A special case is the accumulated bibliography of \TUB{}
 itself;\footnote{\raggedfoot Available on \CTAN{} as
   \CTANref{tub-biblio}} it is always available to the production team,
-so that authors may make reference to items from that \verb|.bib| file
-without further ado.
+so that authors may make reference to items from the \verb|tugboat.bib|
+file without further ado.
 
 Notwithstanding the general recommendation for the \pkgname{plain}
 \BibTeX\ style,
