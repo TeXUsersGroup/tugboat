@@ -1,5 +1,6 @@
 % $Id$
-% Copyright 1999, 2006, 2008, 2009, 2010, 2011, 2012, 2013 TeX Users Group.
+% Copyright 1999, 2006, 2008, 2009, 2010, 2011, 2012, 2013, 2014
+% TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 % "fake" ConTeXt in LaTeX, for simple-enough documents.
@@ -110,6 +111,7 @@
 \def\TDS       {\acro{TDS}}
 \def\TEX       {\TeX}
 \def\TEXEXEC   {{\tt texexec}}
+\def\TEXLUA    {{\tt texlua}}
 \def\TEXLIVE   {\TeX\ Live}
 \def\TEXMFSTART{{\tt texmfstart}}
 \def\THANH     {\Thanh}
