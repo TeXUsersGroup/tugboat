@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2013/12/23 v2.14
+                   [2013/12/23 v2.14+dev
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -2767,9 +2767,11 @@
 %    \begin{macrocode}
 \def\verbatim{\par\obeylines
   \futurelet\reserved@a\@switch@sqbverbatim}
+%
 \def\@switch@sqbverbatim{\ifx\reserved@a[%]
   \expandafter\@sqbverbatim\else
   \def\reserved@b{\@sqbverbatim[]}\expandafter\reserved@b\fi}
+%
 \def\@sqbverbatim[#1]{%
 %    \end{macrocode}
 %
@@ -2833,24 +2835,6 @@
 %    \begin{macrocode}
 \def\endverbatim{\@TBendverbatim
   \if@ruled\kern5\p@\hrule\endtrivlist\fi}
-%    \end{macrocode}
-%
-% \cs{enablemetacode} simply typesets\footnote{Or will simply typeset,
-%   when we get around to implementation proper} something that looks
-% (verbatim) like:
-%
-% \verb|   <meta-text>|
-%
-% \noindent as:
-%
-% \verb|   |\ensuremath{\langle}\textit{meta-text}\ensuremath{\rangle}
-%
-%    \begin{macrocode}
-{\makeactive<
-  \gdef<#1>{{\reset@font\ensuremath{\langle}%
-    \textit{#1}%
-    \ensuremath{\rangle}}}
-}
 %    \end{macrocode}
 %
 % Define the \cs{if} used by the \cs{ruled} option:
@@ -3325,6 +3309,12 @@
 %%   \hskip0.27778\fontdimen6\textfont\z@\relax
 %%   #1%
 %% }
+%    \end{macrocode}
+%
+% \begin{macro}{\tubraggedfoot}
+% To get a ragged-right footnote.
+%    \begin{macrocode}
+\newcommand\tubraggedfoot{\rightskip=\raggedskip plus\raggedstretch\relax}
 %    \end{macrocode}
 %
 % \begin{macro}{\creditfootnote}

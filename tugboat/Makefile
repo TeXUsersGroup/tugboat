@@ -1,5 +1,5 @@
 # $Id$
-# Copyright 2007-2013 TeX Users Group.
+# Copyright 2007-2014 TeX Users Group.
 # You may freely use, modify and/or distribute this file.
 # 
 opt = -interaction=nonstopmode
@@ -20,9 +20,9 @@ ltugcomn.sty ltugboat.sty ltugboat.cls: tugboat.ins tugboat.dtx
 	$(latex) $<
 
 check: ltugboat.sty
-	$(pdflatex) tubvtest.tex
 	$(pdflatex) tubptest.tex
 	$(pdflatex) tubatest.tex
+	$(pdflatex) tubrfootest.tex
 
 dist: tugboat.zip
 tugboat.zip: README ltubguid.pdf manifest.txt tugboat.ins \

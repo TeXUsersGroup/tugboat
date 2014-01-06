@@ -241,9 +241,6 @@
 }
 \makeatother
 %
-% for raggedy-footnotes (necessary for CTAN references, I find)
-\newcommand\raggedfoot{\rightskip=\raggedskip plus\raggedstretch\relax}
-%
 % To use umlauts in a bibliography entry in BibTeX 0.99, we have to
 % use a certain amount of subterfuge...
 \let\umlaut\"
@@ -345,13 +342,13 @@ They are listed here for completeness.
 \section{Command syntax}
 \label{sec:syntax}
 
-We would have liked to offer perfectly uniform syntax for people to
-use when preparing their papers.  Unfortunately, uniform syntax is not
+We would have liked to offer perfectly uniform syntax for people to use
+when preparing their papers.  Unfortunately, uniform syntax is not
 available with any widely-available set of macros (though see, for
 example, the discussions in \citeNP{Ogawa:TB15-3-325},
 \citeNP{Baxter:TB15-3-331}, and \citeNP{Swift:TB16-3-269}).  In the
-circumstances, we have sought simply to keep to the spirit of
-Lamport's \citeyear{Lamport:1994}, as modified\footnote{\raggedfoot The cited
+circumstances, we have sought simply to keep to the spirit of Lamport's
+\citeyear{Lamport:1994}, as modified\footnote{\tubraggedfoot The cited
   edition of Lamport's book documents the modified version of \LaTeX{},
   but it's worth emphasising that we use the modified version as the
   reference.} by the \LaTeXe{} work (see, for example,
@@ -730,7 +727,7 @@ In general, packages currently on \CTAN, and known to work with
 \emph{current} \LaTeX{} are unlikely to give problems.
 
 In particular, the team is happy to accept papers using packages
-that are supported by members of the \LaTeX3 team,\footnote{%\raggedfoot
+that are supported by members of the \LaTeX3 team,\footnote{%
   Those in the \LaTeX{} base distribution, or one of those in the
   \CTANref{packages} sub-tree on \CTAN.} subject to the two provisos:
 \begin{itemize}
@@ -815,7 +812,7 @@ packages, the \envname{filecontents} environment is a convenient way to
 deliver the bibliography file.
 
 A special case is the accumulated bibliography of \TUB{}
-itself;\footnote{\raggedfoot Available on \CTAN{} as
+itself;\footnote{\tubraggedfoot Available on \CTAN{} as
   \CTANref{tub-biblio}} it is always available to the production team,
 so that authors may make reference to items from the \verb|tugboat.bib|
 file without further ado.
@@ -827,7 +824,7 @@ and `\texttt{harvard}' (the present article is employing \emph{harvard}
 citation).  The raw citation style uses the `standard'
 \BibTeX{} `\pkgname{plain}' (numeric) citation style; its modification
 by use of Donald Arseneau's \pkgname{cite}
-package\footnote{\raggedfoot Available on \CTAN{} as \CTANref{cite}}
+package\footnote{\tubraggedfoot Available on \CTAN{} as \CTANref{cite}}
 is acceptable.  Raw citation is selected by default (by execution of
 class option \optname{rawcite}).
 
