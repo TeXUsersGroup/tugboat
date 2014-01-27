@@ -8,6 +8,7 @@
 % minimizing diffs from the original sources.
 % Frontmatter has to be done by hand.
 
+\def\ACROBAT   {Acrobat}
 \def\AFM       {\acro{AFM}}
 \def\ALEPH     {Aleph}
 \def\AMS       {\acro{AMS}}
@@ -105,6 +106,7 @@
 \def\RUBY      {Ruby}
 \def\SCITE     {Sci\acro{TE}}
 \def\SSD       {\acro{SSD}}
+\def\SUMATRA   {Sumatra\acro{PDF}}
 \def\SWIGLIB   {SwigLib}
 \def\TABLE     {T\kern-.27em\lower.5ex\hbox{A}\kern-.18em B\kern-.1em
                  \lower.5ex\hbox{L}\kern-.075em E}
@@ -199,6 +201,7 @@
 \def\starttabulate{\par\smallskip
   \noindent\begingroup \catcode`|=12 \begin{tabular}}
 \def\stoptabulate{\end{tabular}\endgroup\smallskip}
+\def\stopplacetable{\end{table}}
 \def\NR{\\}
 \def\NC{&}
 \def\HL{\hline}
