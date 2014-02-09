@@ -2,7 +2,7 @@
 % $Id$
 % tugboat.dtx - main source for LaTeX TUGboat classes.
 %
-% Copyright 1994-1998, 2000-2001, 2004-2013 TeX Users Group.
+% Copyright 1994-1998, 2000-2001, 2004-2014 TeX Users Group.
 %
 % This file is part of the tugboat package.
 %
@@ -2416,18 +2416,6 @@
 \def\TBtocsectionfont{\normalfont}
 \newskip\TBtocsectionspace  \TBtocsectionspace=1.0em\@plus\p@
 %    \end{macrocode}
-%
-% Don't ask me (RF) why \cs{l@part} is there; I commented it out
-% because I couldn't understand why it had been left there for me.  To
-% be finally deleted in a future release of these macros\dots
-%    \begin{macrocode}
-%\def\l@part#1#2{\addpenalty{\@secpenalty}%
-%  \addvspace{2.25em\@plus\p@}%
-%  \begingroup
-%    \@tempdima 3em \parindent\z@ \rightskip\z@ \parfillskip\z@
-%    {\large \bf \leavevmode #1\hfil \hbox to\@pnumwidth{\hss #2}}\par
-%    \nobreak
-%  \endgroup}
 %
 \def\l@section#1#2{\addpenalty{\@secpenalty}%
   \addvspace{\TBtocsectionspace}%
