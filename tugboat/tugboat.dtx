@@ -1114,7 +1114,9 @@
   \ensuremath{\rangle}%
 }
 %
-\DeclareRobustCommand\cs[1]{\texttt{\char`\\#1}}
+% Use \tt rather than \texttt because italic typewriter is just too ugly,
+% and upright works well enough in both italic and bold contexts.
+\DeclareRobustCommand{\cs}[1]{{\tt \char`\\#1}}
 %
 \DeclareRobustCommand\env[1]{%
   \cs{begin}\texttt{\char`\{#1\char`\}}}
@@ -1492,7 +1494,7 @@
 % font shape provoked me to generate the following stuff that is
 % configurable.
 %
-% Here's the command for the user to define hir own new version.  The
+% Here's the command for the user to define a new version.  The
 % arguments are font family, series and shape, and then the two kern
 % values used in placing the raised `A' of \LaTeX.
 %
@@ -1509,12 +1511,25 @@
 %
 % More are defined in the initial version, for bold CM sans (which is
 % used as \cs{SecTitleFont}), and CM italic medium and bold, and
-% Bitstream Charter (which Nelson Beebe likes to use):
+% Bitstream Charter (which Nelson Beebe likes to use).  Duplicate for
+% Latin Modern.
 %
 %    \begin{macrocode}
-\DeclareLaTeXLogo{cmss}{bx}n{.3}{.15}
-\DeclareLaTeXLogo{cmr}m{it}{.3}{.27}
-\DeclareLaTeXLogo{cmr}{bx}{it}{.3}{.27}
+\DeclareLaTeXLogo{cmss}{bx}{n}{.3}{.15}
+\DeclareLaTeXLogo{lmss}{bx}{n}{.3}{.15}
+%
+\DeclareLaTeXLogo{cmr}{m}{it}{.29}{.2}
+\DeclareLaTeXLogo{lmr}{m}{it}{.29}{.2}
+%
+\DeclareLaTeXLogo{cmr}{m}{sl}{.29}{.15}
+\DeclareLaTeXLogo{lmr}{m}{sl}{.29}{.15}
+%
+\DeclareLaTeXLogo{cmr}{bx}{it}{.29}{.2}
+\DeclareLaTeXLogo{lmr}{bx}{it}{.29}{.2}
+%
+\DeclareLaTeXLogo{cmr}{bx}{sl}{.29}{.2}
+\DeclareLaTeXLogo{lmr}{bx}{sl}{.29}{.2}
+%
 \DeclareLaTeXLogo{bch}{m}{n}{.2}{.08}
 \DeclareLaTeXLogo{bch}{m}{it}{.2}{.08}
 %    \end{macrocode}
@@ -1523,7 +1538,7 @@
 % or to use the default value otherwise:
 %
 %    \begin{macrocode}
-\DeclareRobustCommand\LaTeX{\expandafter\let\expandafter\reserved@a
+\DeclareRobustCommand{\LaTeX}{\expandafter\let\expandafter\reserved@a
   \csname @LaTeX@\f@family/\f@series/\f@shape\endcsname
   \ifx\reserved@a\relax\let\reserved@a\@LaTeX@default\fi
   \expandafter\@LaTeX\reserved@a}
@@ -1537,17 +1552,19 @@
 % original; other versions are added as needed.
 %
 %    \begin{macrocode}
-\newcommand\@LaTeX[2]{L\kern-#1em
-        {\sbox\z@ T%
-         \vbox to\ht0{\hbox{$\m@th$%
-                            \csname S@\f@size\endcsname
-                            \fontsize\sf@size\z@
-                            \math@fontsfalse\selectfont
-                            A}%
-                      \vss}%
-        }%
-        \kern-#2em%
-        \TeX}
+\newcommand\@LaTeX[2]{%
+  %\wlog{latex logo family=\f@family/\f@series/\f@shape -> #1, #2.}%
+  L\kern-#1em
+  {\sbox\z@ T%
+   \vbox to\ht0{\hbox{$\m@th$%
+                      \csname S@\f@size\endcsname
+                      \fontsize\sf@size\z@
+                      \math@fontsfalse\selectfont
+                      A}%
+                \vss}%
+  }%
+  \kern-#2em%
+  \TeX}
 %    \end{macrocode}
 %
 % \subsection{Authors, contributors, addresses, signatures}
@@ -1713,21 +1730,6 @@
 }
 \def\signaturemark{\leavevmode\llap{$\diamond$\enspace}}
 %    \end{macrocode}
-%
-% The code previously defined the following:
-%
-% {\small\begin{verbatim}
-%   {\makeactive\@
-%    \gdef\signatureat{\makeactive\@\def@{\char"40\discretionary{}{}{}}}
-%    \makeactive\%
-%    \gdef\signaturepercent{\makeactive\%\def%{\char"25\discretionary{}{}{}}}
-%   }
-% \end{verbatim}}
-%
-% However, they were never used within the class (or within
-% |ltugproc.cls|).  They have therefore been deleted; the identically
-% defined \cs{netaddrat} and \cs{netaddrpercent} may be used in the
-% unlikely event that they're needed elsewhere.
 %
 % Now all the awful machinery of author definitions.
 % \cs{authornumber} records the number of authors we have recorded to
