@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright 2009, 2010 TeX Users Group.
+# Copyright 2009, 2010, 2014 TeX Users Group.
 # You may freely use, modify and/or distribute this file.
 # 
 # ps2pdf (or pdf2pdf), but always embedding fonts, and optionally with
@@ -15,17 +15,19 @@ fi
 
 # -dDEVICEWIDTHPOINTS=679 -dDEVICEHEIGHTPOINTS=1598
 # -sPAPERSIZE=a4
-# -dPDFSETTINGS=/prepress seems to make no particular difference.
-# or -r1200.
 
+# with gs 9.14 (tb109reviews-xie), -dPDFX=true fails with annotations,
+# -dEmbedAllFonts doesn't, but -dPDFSETTINGS=/prepress does the job.
+#set -x
 $gs \
    -q -dNOPAUSE -dBATCH \
-   -dEmbedAllFonts -dPDFX=true -dAutoRotatePages=/None \
+   -dEmbedAllFonts -dPDFSETTINGS=/prepress -dAutoRotatePages=/None \
    -sDEVICE=pdfwrite \
    -sOutputFile="$2" $zdistill -c .setpdfwrite \
    -f "$1" quit.ps
 
 if test x"$2" = "x$1.tmppdf"; then
+  cp "$1" ${TMPDIR-/tmp}/ps2pdf-`basename "$1"`
   mv "$2" "$1"
 fi
 
