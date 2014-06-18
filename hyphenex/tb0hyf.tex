@@ -1,14 +1,23 @@
-%		tb0hyf.tex
+%		tb0hyf.tex - version of 2013/07/20
 %
-% Copyright 2008, 2010, 2012 TeX Users Group.
+% Copyright 2008, 2010, 2012, 2013, 2014 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
+%	This item last appeared in full in TUGboat 16:1, March 1995.
+%	A stripped-down version, containing only new material, appeared
+%       in various TUGboat issues as enumerated in the text below.
+%       This file contains the full exception list compounded from all
+%       previous iterations.  It can be used as input to the hyphenex
+%       scripts at http://mirror.ctan.org/info/digests/tugboat/hyphenex.
+
 \let\tubomithyphenations = 1  % do not make tub hyphenation exceptions
 \let\tubhyphenatett = 1       % and we do want to hyphenate typewriter
+
 \input tugboat.sty
 \issdate Thermidor, 9999.
 
-\def\midrtitle{As of 31 March 2012}
+%% reset for 34(2)
+\def\midrtitle{As of 20 July 2013}
 \def\rfoot{}
 
 %%%	Note -- With the addition of Skoup\'y, a note should be added
@@ -27,18 +36,16 @@
 
 \title * Hyphenation exception log *
 \author * Barbara Beeton *
-\address * {\sl TUGboat} *
-\netaddress* bnb (at) ams dot org *
-
-\pagexref{hyphenlog}
+\address * {\tt http://ctan.org/pkg/hyphenex} *
+\netaddress* tugboat (at) tug dot org *
 
 \article
 
 This is the periodic update of the list of words that \TeX\ fails to
 hyphenate properly.  The full list last appeared in \TUB\ 16:1,
-starting on page~12, with updates in \TUB\ 22:1/2, pp.~31--32;
-23:3/4, pp.~247--248; 26:1, pp.~5--6; 29:2, p.~239, 31:3, p.~160,
-and 33:1, pp.~5--6.
+starting on page~12, with updates in \TUB\ 22:1/2, pp.\,31--32;
+23:3/4, pp.\,247--248; 26:1, pp.\,5--6; 29:2, p.\,239, 31:3, p.\,160,
+33:1, pp.\,5--6, and 34:2, pp.\,113-114.
 %% update reference
 The full list is included here.
 Owing to the length of the list, it has been subdivided into two parts:
@@ -59,29 +66,30 @@ inclusion in a \hbox{|\hyphenation{...}|} list.
 
 In most instances, inflected forms are not shown for nouns and verbs;
 note that all forms must be specified in a |\hyphenation{...}| list
-if they occur in your document.  See the section below on making this
-list machine-usable.
+if they occur in your document.  The full list of exceptions, as a
+\TeX-readable file, appears in
+|http://mirror.ctan| |.org/info/digests/tugboat/hyphenex|.
+(It's created automatically; see below.)
+%See the section below on making this list machine-usable.
 
 Thanks to all who have submitted entries to the list.  Since some
 suggestions have demonstrated a lack of familiarity with the rules of
 the hyphenation algorithm, here is a short reminder of the relevant
-idio\-syn\-cras\-ies.  \TeX\ will not insert hyphens before the number
-of letters specified by \hbox{|\lefthyphenmin|}, nor after the number of
-letters specified by \hbox{|\righthyphenmin|}.  For \acro{U.S.} English,
-\hbox{|\lefthyphenmin=2|} and \hbox{|\righthyphenmin=3|}; thus no word
-shorter than five letters will be hyphenated.  (For the details, see
-\TB, page~454.)
+idiosyncrasies.  Hyphens will not be inserted before the number of
+letters specified by |\lefthyphenmin|, nor after the number of letters
+specified by |\righthyphenmin|.  For \acro{U.S.} English, |\lefthyphenmin=2|
+and |\righthyphenmin=3|; thus no word shorter than five
+letters will be hyphenated.  (For the details, see \TB, page~454.)
 % For a digression on other views of hyphenation rules, see below under
 % ``English hyphenation''.)
 This particular rule is violated in some of the words listed; however,
 if a word is hyphenated correctly by \TeX\ except for ``missing''
 hyphens at the beginning or end, it has not been included here.
-{\emergencystretch=5pt\par}
 
 Some other permissible hyphens have been omitted
 for reasons of style or clarity.  While this is at
 least partly a matter of personal taste, an author should think of the
-reader when deciding whether or not to permit just one more break-point
+reader when deciding whether or not to permit just one more breakpoint
 in some obscure or confusing word.  There really are times when a bit of
 rewriting is preferable.
 {\hfuzz=2.2pt\par}
@@ -98,6 +106,31 @@ Words added since the last appearance of the list are preceded by `${}^+$'.
 
 The reference used to check these hyphenations is\enspace {\sl Webster's
 Third New International Dictionary}, unabridged.
+
+%\head * English hyphenation *
+%
+%It has been pointed out to me that the hyphenation rules of British English
+%are based on the etymology of the words being hyphenated as opposed to
+%the ``syllabic'' principles used in the \acro{U.S.}  Furthermore, in the
+%\acro{U.K.}, it is considered bad style to hyphenate a word after only two letters.
+%In order to make \TeX\ defer hyphenation until after three initial letters,
+%set |\lefthyphenmin=3|.
+%
+%Of course, British hyphenation patterns should be used as well.
+%A set of patterns for \acro{U.K.} English has been created by Dominik
+%Wujastyk and
+%Graham Toal, using Frank Liang's |PATGEN| and based on a file of 114925
+%British-hyphenated words generously made available to Dominik by Oxford
+%University Press.  (This list of words and the hyphenation break points
+%in the words are copyright to the \acro{OUP} and may not be redistributed.)
+%The file of hyphenation patterns may be freely distributed; it is
+%posted on {\CTAN} in the file
+%$$\hbox{\ninepoint \tt tex-archive/language/hyphenation/ukhyphen.tex}$$
+%and can be retrieved by anonymous \acro{FTP} or using a Web browser.
+%It is also present in the \TeX\,Live distribution, distributed annually
+%by most \TeX\ user groups to their members.
+
+%  see uktex92.017 for details
 
 %some new patterns can be added, as communicated to me by Donald Knuth:
 %
@@ -119,25 +152,21 @@ including languages using accented and non-Latin alphabets.
 {\CTAN} holds an extensive collection of patterns: see
 |language/hyphenation| and its subdirectories.
 
-A group of volunteers led by Mojca Miklavec have created a comprehensive
-package of hyphenation patterns, called |hyph-utf8|; see\newline
+A group of volunteers led by Mojca Miklavec
+% and Arthur Reutenauer
+% Manuel P\'egouri\'e-Gonnard
+have created a comprehensive package of hyphenation patterns, called
+|hyph-utf8|; see\newline
 |http://tug.org/tex-hyphen|.
 
 \head * Converting this list into machine-usable \break hyphenation exceptions *
 
-Werner Lemberg has created a script that will convert this article into
-a real |\hyphenation| block that can be incorporated into a document
-either directly or by inputting a file.  His work has necessitated
-some changes to the macros used to format the list, but the appearance
-of the list will not change.  Many inflected forms will be included
-automatically, some evident in the printed version, but many included
-silently.
-
-The script, |hyphenex.sh|, is a straightforward shell script and is
-posted on \CTAN, in
-$$\hbox{\tt tex-archive/info/digests/tugboat/hyphenex/}$$
-The output of the script is posted in the same area as |ushyphex.tex|.
-
+Werner Lemberg has created scripts to convert this article into a
+machine-readable |\hyphenation| block that can be incorporated into a
+document either directly or by inputting a file.  Many inflected forms
+will be included automatically, some evident in the printed version, but
+many included silently.  Both shell and Perl scripts are
+available (for no particular reason), with identical behavior.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -195,7 +224,6 @@ The output of the script is posted in the same area as |ushyphex.tex|.
        \else \TestIffalse \fi
        \tabalign \ifTestIf \else \testNewWord\unhbox1\fi &#2\cr }
 %	for entries with a suffix
-%\def\2 #1 #2 #3 {\1 #1 #2(#3) }
 \def\2 #1 #2 #3 {\1 #1 #2(#3) }
 %	for entries with multiple suffixes
 \def\3 #1 #2 #3 #4 {\1 #1 #2#3(#4) }
@@ -216,7 +244,7 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\head * The List\Dash English words *
+\head * The list\Dash English words *
 
 %\NewWordtrue
 
@@ -225,7 +253,6 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \eightpoint
 \3 academy(ies)		acad-e-m y ies
 \1 accusative		ac-cu-sa-tive		% 2000/10, Scott Horne, 1993
-\NewWordtrue
 \5 acronym		acro-nym s		% 2005/08, kb list; 2011/11 pl.
 \5 acrylamide		acryl-amide s		% 2002/07, bnb, Science News
 \1 acrylaldehyde	acryl-alde-hyde		% 2002/07, bnb, Science News
@@ -238,11 +265,9 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \5 agronomist		agron-o-mist s
 \1 algebraically	al-ge-bra-i-cal-ly	% 2001/01; S. Levy, 1993/09
 \5 amphetamine		am-phet-a-mine s
-\NewWordtrue
 \3 anachronism(tic)	anach-ro-nis m -tic	% 2012/03, bnb, SciAm
 \2 analyse(d)		an-a-lyse d
 \1 analyses		analy-ses\thinspace*
-\NewWordtrue
 \1 analysis		analy-sis		% 2012/03, bnb
 \5 aneurysm		an-eu-rysm s		% 2007/11, Fred Nugen
 \1 aneurysmal		an-eu-rys-mal		% 2007/11, Fred Nugen
@@ -250,18 +275,18 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 anisotropically	an-iso-trop-i-cal-ly	% 2001/01; S. Radford, 1993/02
 \1 anisotropism		an-isot-ro-pism 	% 2001/01; S. Radford, 1993/02
 \1 anisotropy		an-isot-ropy		% 2001/01; S. Radford, 1993/02
-\3 anomaly(ies)		anom-al y ies
+\3 anniversary{ies}	an-ni-ver-sar y ies	% 2012/10, bnb
+\3 anomaly(ies)		anom-a-l y ies
 \5 antiderivative	anti-deriv-a-tive s
 \1 antiholomorphic	anti-holo-mor-phic	% 2003/08; bnb, GSM/Landsberg
 \3 antinomy(ies)	an-tin-o-m y ies
 \1 antinuclear		anti-nu-clear
 \1 antinucleon		anti-nu-cle-on
 \1 antirevolutionary	anti-rev-o-lu-tion-ary
+\1 aperiodic		a-peri-odic		% 2013/06, bnb, Gleick, "Info"
 \1 apotheoses		apoth-e-o-ses
 \1 apotheosis		apoth-e-o-sis
-\NewWordtrue
 \1 appendices		ap-pen-di-ces		% 2011/10, M. Loretan
-\NewWordtrue
 \5 appendix		ap-pen-dix es		% 2011/10, M. Loretan (pl.)
 \1 archimedean		ar-chi-me-dean		% 2001/01; S. Levy, 1993/09
 \1 archipelago		ar-chi-pel-ago       % changed 1999/09/15 from arch-i-
@@ -274,6 +299,8 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 archetypical		ar-che-typ-i-cal
 \5 arctangent		arc-tan-gent s
 \tabalign		&\null\quad (better: arc\,tangent)\cr
+\1 aspheric		a-spher-ic		% 2013/07, bnb
+\1 aspherical		a-spher-i-cal		% 2013/07, A. O'Sean, jams776
 \1 assignable		as-sign-a-ble
 \5 assignor		as-sign-or s
 \3 assistant(ce)	as-sist-an t ce		% 2008/05, bnb
@@ -290,41 +317,36 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \3 automaton(a)		au-tom-a-t on a         % 1999/03
 \1 autonumbering	auto-num-ber-ing	% 2005/03, Yannis
 \1 autonomous		au-ton-o-mous		% 2005/03, bnb
-\NewWordtrue
 \1 autoregression	auto-re-gres-sion	% 2012/02, Mico Loretan
-\NewWordtrue
 \1 autoregressive	auto-re-gres-sive	% 2012/02, Mico Loretan
 \1 autorounding		auto-round-ing		% 2003/12, bnb
 \1 avoirdupois		av-oir-du-pois
 %\1 awoken		awok-en
+\3 backscratch(er,ing)	back-scratch er -ing	% 2013/07, Mico Loretan
 \5 bandleader		band-lead-er s
-\2 bankrupt(s,cy,-cies)	bank-rupt s,-cy,-cies
+\2 bankrupt(s,cy,cies)	bank-rupt s,-cy,-cies
 \1 baronies		bar-onies
 \1 baselineskip 	{\tt\bs base-line-skip}
 \1 bathymetry		ba-thym-e-try
 \1 bathyscaphe		bathy-scaphe
 \1 beanies		bean-ies
-\NewWordtrue
 \5 bedraggle		be-drag-gle d		% 2011/12, bnb
-\NewWordtrue
+\1 bedridden		bed-rid-den		% 2012/05, bnb
 \1 bedrock		bed-rock		% 2011/12, bnb
-\NewWordtrue
 \5 bedwarf		be-dwarf s		% 2011/12, Mico Loretan
 \5 behaviour		be-hav-iour s
 \1 bevies		bevies
-\NewWordtrue
 \1 bibliographical	bib-lio-graph-i-cal	% 2012/02, Mico Loretan
 \1 bibliographystyle	{\tt\bs bib-li-og-ra-phy-style}
-\NewWordtrue
 \1 bibunits		bib-units       	% 2011/11, tb102hufflen
 \1 bidifferential	bi-dif-fer-en-tial
 \1 biggest		big-gest
+\5 bigshot		big-shot s		% 2013/07, Mico Loretan
 \1 billable		bill-able
 \1 biomathematics	bio-math-e-mat-ics
 \1 biomedical		bio-med-i-cal		% 2003/09, bnb, a&gf
 \1 biomedicine		bio-med-i-cine
 \1 biorhythms		bio-rhythms
-\NewWordtrue
 \3 bioweapon(s,ry)	bio-weap-on s -ry	% 2012/03, bnb, SciAm
 \5 bitmap		bit-map s
 \3 blander(est)		bland -er -est
@@ -338,12 +360,13 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 botulism		bot-u-lism
 \1 brusquer		brusquer
 \5 buffer		buf-fer s		% 2005/08, kb list
-\NewWordtrue
 \5 bungee		bun-gee s		% 2012/03, kb/bnb
 \3 busier(est)		busi er -est
 \1 bussing		bussing
 \1 butted		butted
 \5 buzzword		buzz-word s
+\1 cacheability 	cache-abil-ity		% 2012/09, srking, TeX.sx
+\1 cacheable	 	cache-able		% 2012/09, srking, TeX.sx
 \3 cacophony(ies)	ca-coph-o-n y ies
 \5 caller		call-er s		% 2003/06, bnb
 \1 cameramen		cam-era-men
@@ -353,17 +376,18 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 catastrophically	cat-a-stroph-i-cally
 \5 catenoid		cat-e-noid s		% 2001/01; S. Levy, 1993/09
 \1 cauliflower		cau-li-flow-er
+\1 chancery		chan-cery		% 2013/03, tb107bigelow
 \1 chaparral		chap-ar-ral
 \1 chartreuse		char-treuse
+\NewWordtrue
+\5 chemokine		chemo-kine s		% 2013/09, TeX.sx #131754
 \6 chemotherapy 	chemo-ther-a py -pies   % 2001/01
 \5 chloromethane	chloro-meth-ane s	% 2005/01, Donald Arseneau
 \1 cholesteric		cho-les-teric
 \5 cigarette		cig-a-rette s
 \1 cinquefoil		cinque-foil
 \1 coassociative	co-asso-cia-tive	% 2003/08; bnb, GSM/Landsberg
-\NewWordtrue
 \3 cochlea(s,r)		coch-lea s r		% 2012/03, bnb, SciAm
-\NewWordtrue
 \5 codesigner		co-designer s		% 2011/08; dek
 \1 cognac		co-gnac
 \1 cognacs		co-gnacs
@@ -381,7 +405,6 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 conformable		con-form-able
 \5 conformist		con-form-ist s
 \1 conformity		con-form-ity
-\NewWordtrue
 \1 congeries		con-ge-ries		% 2012/03, kb/bnb
 \5 congress		con-gress es
 \1 constructible	con-struc-ti-ble	% 2008/07; bnb, GSM/Rotman
@@ -393,7 +416,6 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 coreopsis		co-re-op-sis		% 2004/04; bnb
 \2 corespondent(s)	co-re-spon-dent s	% 2004/04; bnb
 \1 cosecant		co-se-cant
-\NewWordtrue
 \1 cosemisimple		co-semi-sim-ple		% 2011/04, bnb, memo649
 \1 cotangent		co-tan-gent
 \1 courses		cour-ses
@@ -408,10 +430,10 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 cuneiform		cu-nei-form		% 2000/09
 \1 customizable		cus-tom-iz-a-ble	% 2005/06, bnb
 \2 customize(s,d)	cus-tom-ize s,d		% 2005/06, bnb
-\NewWordtrue
 \2 cybervirus(es)	cy-ber-virus es		% 2012/03, bnb, SciAm
-\NewWordtrue
 \5 cyberweapon		cy-ber-wea-pon s	% 2012/03, bnb, SciAm
+\NewWordtrue
+\5 cytokine		cy-to-kine s		% 2013/09, TeX.sx #131754
 \1 dachshund		dachs-hund
 \3 damselfly(ies)	dam-sel-fl y ies	% 2003/06, bnb, Natl Geographic
 \3 dactylogram(aph)	dactyl-o-gr am aph	% 2002/07, bnb, Science News
@@ -439,37 +461,35 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 %%  disparand not in webster's 3rd; split by analogy to "operand"
 \5 disparand		dis-par-and s
 \1 distraughtly		dis-traught-ly
-\NewWordtrue
 \1 distributable	dis-trib-ut-able	% 2011/01, Karl Berry
 \2 distribute(s,d)	dis-trib-ute s,d
-\NewWordtrue
 \1 distributive 	dis-trib-u-tive 	% 2011/01, Karl Berry
 \2 doublespace(d)	dou-ble-space d
 \1 doublespacing	dou-ble-spac-ing
+\1 doubletalk		dou-ble-talk		% 2013/05, bnb
 \1 dollish		doll-ish
 \1 driftage		drift-age
-\1 drivers		driv-ers             % 1999/03
+\1 drivers		driv-ers		% 1999/03
 \3 dromedary(ies)	drom-e-dar y ies
+\5 droplet		drop-let s		% 2013/07, Mico Loretan
 \5 duopolist		du-op-o-list s
-\1 duopoly		du-op-oly
+\3 duopoly(ies)		du-op-o-l y ies
 \1 dyslexia		dys-lexia		% 2000/10, Scott Horne, 1993
 \1 dyslectic		dys-lec-tic		% 2001/01
+\1 dystopia		dys-topia		% 2013/05, bnb
 \1 eastenders		east-end-ers
-\NewWordtrue
 \5 ecosystem		eco-sys-tem s		% 2012/03, bnb, SciAm
 \1 economics		eco-nom-ics
-\NewWordtrue
 \1 economies		econ-o-mies		% 2012/02, Mico Loretan
 \5 economist		econ-o-mist s
 \2 eigenclass(es)	ei-gen-class es		% 2001/01; S. Levy, 1993/09
 \2 eigenvalue(s)	ei-gen-val-ue s		% 2001/01; S. Levy, 1993/09
 \1 electromechanical	electro-mechan-i-cal
 \1 electromechanoacoustic  electro-mechano-acoustic
+\1 electrophoresis	elec-tro-pho-re-sis	% 2012/09, John Harper
+\1 electrophoretic	elec-tro-pho-ret-ic	% 2012/09, John Harper
 \5 elitist		elit-ist s
-\NewWordtrue
-\1 endoscopies		en-dos-copies		% 2012/01, bnb
-\NewWordtrue
-\1 endoscopy		en-dos-copy		% 2012/01, bnb
+\3 endoscopy(ies)	en-dos-cop y ies	% 2012/01, bnb
 \2 entrepreneur(s,ial)	en-tre-pre-neur s,-ial
 \1 epinephrine		ep-i-neph-rine
 \1 epstopdf		{\tt eps-to-pdf}	% 2009/09, bnb, tb95
@@ -483,12 +503,13 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 ethylene		eth-yl-ene
 \1 ethynyl		ethy-nyl		% 2009/10, cf. John Harper
 \1 ethynylation		ethy-nyl-a-tion		% 2009/10, cf. John Harper
-\NewWordtrue
 \1 eustachian		eu-sta-chian		% 2012/03, bnb, SciAm
 \1 eversible		ever-si-ble
 \2 evert(s,ed,ing)	evert s,-ed,-ing
+\1 explanatory		ex-plan-a-tory		% 2012/05, TeX.sx/55412
 \1 exquisite		ex-quis-ite
 \1 extraordinary	ex-tra-or-di-nary
+\3 facelift(s,ing)	face-lift s -ing	% 2013/07, Mico Loretan
 \1 falling		fall-ing		% 2003/06, bnb
 \1 fermions		fermi-ons
 \5 figurine		figu-rine s		% 2007/05, Nelson Beebe
@@ -498,9 +519,7 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 fledgling		fledg-ling
 \5 flowchart		flow-chart s
 \1 fluorocarbon		fluoro-car-bon		% 2005/01, Donald Arseneau
-\NewWordtrue
 \1 fluoroscopies	fluor-os-copies 	% 2012/01, bnb
-\NewWordtrue
 \1 fluoroscopy		fluor-os-copy	 	% 2012/01, bnb
 %\1 folksinger		folk-singer
 \3 formidable(y)	for-mi-da-bl e y
@@ -510,36 +529,35 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \3 friendlier(est)	friend-li er -est
 \6 frivolity		fri-vol-i ty -ties
 \1 frivolous		friv-o-lous
-%\NewWordtrue
 \5 frontend		front-end s		% 2009/03, bnb, interviews
 \1 galactic		ga-lac-tic
 \3 galaxy(ies)		gal-ax y -ies
+\5 gazetteer		gaz-et-teer s		% 2013/02, bnb
 \1 gasometer		gas-om-e-ter
 \1 geodesic		ge-o-des-ic
-\NewWordtrue
 \1 geodetic		ge-o-det-ic		% 2011/04, bnb, memo649
+\5 geometer		ge-om-eter s		% 2012/09, bnb, ulect/meeks
 \5 geometric		geo-met-ric s
 \1 geostrophic          ge-o-strophic		% 2003/04
 \1 geothermal		geo-ther-mal		% 2005/03, bnb
 \1 geotropism		ge-ot-ro-pism
 \5 gnomon		gno-mon s
+\1 grandiose		gran-di-ose		% 2013/01, bnb
 \5 granduncle		grand-uncle s		% 2004/03, bnb
 \5 grievance		griev-ance s
 \2 grievous(ly) 	griev-ous -ly
-\NewWordtrue
 \1 grouplike		group-like
 \5 hairstyle		hair-style s
 \5 hairstylist		hair-styl-ist s
-\NewWordtrue
 \3 halflife(ves)	half-li fe ves		% 2012/02, Mico Loretan
 \5 halfspace		half-space s            % 1999/03
+\5 halftone		half-tone s		% 2013/07, Mico Loretan
 \1 halfway		half-way		% 2002/09, A. Perlis
 \5 harbinger		har-bin-ger s
 \5 harlequin		har-le-quin s
 \1 hatcheries		hatch-eries
-\NewWordtrue
+\1 heinous		hei-nous		% 2013/07, Mico Loretan
 \1 heliopause		he-lio-pause		% 2012/01, bnb
-\NewWordtrue
 \1 heliotrope		he-lio-trope		% 2012/01, bnb
 \5 hemidemisemiquaver	hemi-demi-semi-qua-ver s	% 2000/09
 \1 hemoglobin		he-mo-glo-bin
@@ -551,7 +569,6 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \3 hermaphrodite(ic)	her-maph-ro-dit e -ic
 \1 heroes		he-roes
 \1 hexadecimal		hexa-dec-i-mal
-\NewWordtrue
 \5 holodeck		holo-deck s		% 2012/13. bnb
 \1 holonomy		ho-lo-no-my
 \3 homeomorphic(sm)	ho-meo-mor-phi c sm	% 2001/01; S. Levy, 1993/09
@@ -560,14 +577,11 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 homothetic		ho-mo-thetic
 \1 horseradish		horse-rad-ish
 \5 hotbed		hot-bed s		% 2003/04, bnb
-\NewWordtrue
 \1 houndsteeth		hounds-teeth		% 2012/02, Mico Loretan
-\NewWordtrue
 \1 houndstooth		hounds-tooth		% 2012/02, Mico Loretan
 \1 hydrothermal		hy-dro-ther-mal		% 2005/03, bnb
-\NewWordtrue
 \1 hyperelasticity	hy-per-elas-tic-ity	% 2011/07, bnb, GSM/Rauch
-\NewWordtrue
+\5 hyphenation		hy-phen-a-tion s		% 2012/06, Mico Loretan
 \1 hypoelasticity	hy-po-elas-tic-ity	% 2011/07, bnb, GSM/Rauch
 \1 hypothalamus 	hy-po-thal-a-mus 
 \1 ideals		ideals
@@ -578,8 +592,11 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \5 igniter		ig-nit-er s
 \1 ignitor		ig-ni-tor
 \1 ignorespaces 	{\tt\bs ignore-spaces}
-\NewWordtrue
 \2 illiquid(ity)	il-li-quid -ity		% 2012/02, Mico Loretan
+\NewWordtrue
+\1 immunization 	im-mu-ni-za-tion	% 2013/09, TeX.sx #131754
+\NewWordtrue
+\1 immunomodulatory	im-mu-no-mod-u-la-to-ry	% 2013/09, TeX.sx #131754
 \5 impedance		im-ped-ance s
 \1 indubitable		in-du-bi-ta-ble		% 2002/08, bnb
 \1 infinitely		in-fin-ite-ly
@@ -593,6 +610,7 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \5 interviewee		in-ter-view-ee s	% 2009/09, bnb, tb95
 \1 inutile		in-utile
 \1 inutility		in-util-i-ty
+\1 irrational		ir-ra-tio-nal		% 2012/07, bnb; surv/zemmour
 \3 irreducible(y)       ir-re-duc-ibl e y       % 1999/10, G. Gratzer
 \1 irrevocable		ir-rev-o-ca-ble
 \5 isogeometric		iso-geo-met-ric s	% 2007/11; Fred Nugen
@@ -609,30 +627,30 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \5 landscaper		land-scap-er s
 \2 larceny(ies,ist) 	lar-ce-n y,ies,ist
 \5 leafhopper		leaf-hop-per s	% 2001/01, bnb, "life in amber"
-\NewWordtrue
+\5 leaflet		leaf-let s		% 2013/07, Mico Loretan
 \3 letterspace(s,d)	let-ter-space s d	% 2012/02, Mico Loretan
 \1 letterspacing	let-ter-spac-ing
 \5 leukocyte	 	leu-ko-cyte s 		% 2010/08, tb98verna, 31#2
+\NewWordtrue
+\5 leukotriene		leu-ko-triene s		% 2013/09, TeX.sx #131754
 \5 lifespan		life-span s
 \5 lifestyle		life-style s            % 1999/03
+\1 liftoff		lift-off		% 2013/07, Mico Loretan
 \1 lightweight		light-weight
 \1 limousines		lim-ou-sines
 \1 linebacker		line-backer
 \1 linespacing		{\tt\bs line-spacing}
 \1 lioness		li-on-ess		% 1999/03
-\NewWordtrue
 \1 liquidity		li-quid-ity		% 2012/02, Mico Loretan
 \1 lithographed		lith-o-graphed
 \1 lithographs		lith-o-graphs
 \3 lobotomy(ize)	lo-bot-om y -ize
 \1 loges		loges
 \1 longest		long-est
-\NewWordtrue
 \1 lookahead		look-ahead		% 2012/03, tb103isambert, 33#1
 \1 loquacity		lo-quac-ity          % 1999/03
 \1 lovestruck           love-struck		% 2003/04, R.A.Reese
 \5 macroeconomic	macro-eco-nomic s
-\NewWordtrue
 \1 macroeconomy		macro-econ-omy		% 2012/02, Mico Loretan
 \1 makeindex		make-in-dex		% 2007/10, bnb
 \5 malapropism		mal-a-prop-ism s
@@ -644,7 +662,6 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 medicaid		med-ic-aid
 \1 mediocre		medi-ocre
 \1 mediocrities		medi-oc-ri-ties
-\NewWordtrue
 \2 megafauna(l)		mega-fau-na l		% 2012/03, bnb, SciAm
 \5 megalith		mega-lith s
 \1 metabolic		meta-bol-ic
@@ -652,18 +669,16 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \5 metabolite		me-tab-o-lite s
 \5 metaform		meta-form s		% 2009/09, S.J. Sarman, tb96
 \5 metalanguage		meta-lan-guage s
-\1 metaphoric		meta-phor-ic		% 1999/03
-\NewWordtrue
+\5 metaphor		meta-phor s		% 2012/10, kb
+%\1 metaphoric		meta-phor-ic		% 1999/03
+\2 metaphorical(ly)	meta-phor-i-cal -ly	% 2012/10, bb after kb
 \1 metastability	meta-sta-bil-ity	% 2011/07, bb after kb
-\NewWordtrue
 \1 metastable		meta-stable		% 2011/07, bb after kb
-\NewWordtrue
 \1 metatable		meta-table		% 2011/07, kb
-\NewWordtrue
 \1 metatables		meta-tables		% 2011/07, kb
+\1 metempsychosis	metem-psy-cho-sis	% 2012/10, bb
 \1 methamphetamine	meth-am-phet-a-mine	% 2009/10, cf. John Harper
 \1 methane		meth-ane		% 2005/01, Donald Arseneau
-\NewWordtrue
 \1 method		meth-od			% 2011/11, Herbert Voss
 \1 methylammonium	meth-yl-am-mo-nium	% 2009/10, John Harper
 \5 methylate		meth-yl-ate d		% 2009/10, John Harper
@@ -672,14 +687,12 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \2 metropolis(es)	me-trop-o-lis es
 \5 metropolitan		met-ro-pol-i-tan s
 \5 microeconomic	micro-eco-nomic s
-\NewWordtrue
 \1 microeconomy		micro-econ-omy		% 2012/02, Mico Loretan
-\NewWordtrue
 \5 microenterprise	micro-en-ter-prise s	% 2012/02, Mico Loretan
 \5 microfiche		mi-cro-fiche s
 \5 microorganism	micro-organ-ism s	% 2001/01
-\NewWordtrue
 \1 microstructure	mi-cro-struc-ture	% 2012/02, Mico Loretan
+\1 midafternoon 	mid-after-noon		% 2013/07, Mico Loretan
 \1 millage		mill-age
 \1 milliliter		mil-li-liter
 \1 mimeographed 	mimeo-graphed
@@ -694,6 +707,8 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 misogamy		mi-sog-a-my
 \5 mnemonic		mne-mon-ic s		% 2007/08, Karl Berry
 \1 modelling		mod-el-ling
+\NewWordtrue
+\1 molecular		mo-lec-u-lar		% 2013/09, TeX.sx #131754
 \5 molecule		mol-e-cule s
 \1 monarchs		mon-archs
 \5 moneylender		money-len-der s
@@ -704,7 +719,6 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \5 monopole		mono-pole s
 \1 monopoly		mo-nop-oly
 \5 monospace		mono-space d		% 2007/10, bnb, EuroTeX '07
-\NewWordtrue
 \1 monospacing		mono-spacing		% 2012/02, Mico Loretan
 \5 monospline		mono-spline s
 \1 monostrofic		mono-strofic
@@ -759,7 +773,6 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \5 overview		over-view s
 \1 oxidic		ox-id-ic
 \1 padding		pad-ding
-\NewWordtrue
 \1 pagerank		page-rank		% 2010/12, dek
 \1 painlessly		pain-less-ly
 \5 palette		pal-ette s		% 2005/06, bnb
@@ -806,7 +819,6 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 piranhas		pi-ra-nhas
 \1 placable		placa-ble
 \5 planthopper		plant-hop-per s	% 2001/01, bnb, "life in amber"
-\NewWordtrue
 \5 plateau		pla-teau s		% 2012/01, bnb
 \1 pleasance		pleas-ance
 \5 plugin		plug-in s	% 2001/06, M. Vulis paper, 21#3
@@ -856,6 +868,8 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 propelling		pro-pel-ling		% 2003/06, bnb
 \2 prohibitive(ly)	pro-hib-i-tive -ly
 \1 prosciutto		pro-sciut-to
+\NewWordtrue
+\5 prostaglandin	pros-ta-glan-din s 	% 2013/09, TeX.sx #131754
 \5 prostyle		pro-style s		% 2010/08, tb98verna, 31#2
 \2 protester(s)		pro-test-er s
 \2 protestor(s)		pro-tes-tor s
@@ -877,12 +891,14 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 psychedelic		psy-che-del-ic
 \1 psychs		psychs
 \1 pubescence		pu-bes-cence
-\NewWordtrue
 \1 purges		pur-ges			% 2012/03, kb/bnb
 \1 quadding		quad-ding
 \2 quadratic(s)		qua-drat-ic s
 \1 quadrature		quad-ra-ture
+\5 quadrilateral	quad-ri-lat-er-al s	% 2013/05, bnb
 \1 quadriplegic		quad-ri-pleg-ic
+\5 quadruped		quad-ru-ped s		% 2013/05, bnb
+\5 quadrupole		quad-ru-pole s		% 2013/05, Zunbeltz Izaola
 \3 quainter(est)	quaint -er -est
 \5 quasiequivalence	qua-si-equiv-a-lence s
 \tabalign {}		&\null\quad (or \ quasi-{}) \cr
@@ -912,10 +928,11 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \2 redirect(ion)	re-di-rect -ion		% 2002/08, bnb
 \1 reducible            re-duc-ible	% 1999/10, G. Gratzer
 \1 reecho		re-echo
-\NewWordtrue
 \1 reeducate		re-edu-cate		% 2011/02, dek
-\NewWordtrue
 \5 refugee		ref-u-gee s		% 2012/03, kb/bnb
+\2 reimplement(s,ed)	re-imple-ment s,ed	% 2012/09, tb105thurnherr
+\1 reimplementation	re-imple-men-ta-tion	% 2012/09, tb105thurnherr
+\1 renaissance		ren-ais-sance		% 2013/03, tb107bigelow
 \2 rephrase(s,d)	re-phrase s,d		% 2005/02, Flynn list
 \5 reposition		re-po-si-tion s		% 2002/08, bnb
 \2 reprint(s,ed)	re-print s,-ed
@@ -932,16 +949,17 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \5 ringleader		ring-leader s
 \5 robot		ro-bot s
 \6 robotic		ro-bot ic -ics
+\5 rooftop		roof-top s		% 2013/07, Mico Loretan
 \5 roundtable		round-table s
 \5 salesclerk		sales-clerk s
 \3 saleswoman(en)	sales-wom an en
 \1 salmonella		sal-mo-nel-la
 \1 saltation		sal-ta-tion		% 2000/10
 \1 sarsaparilla		sar-sa-par-il-la
-\NewWordtrue
 \5 satellite		sat-el-lite s		% 2011/01, Stephan Pleines
 \1 sauerkraut		sauer-kraut
 \1 scatological		scat-o-log-i-cal
+\3 sceneshift(er,ing)	scene-shift -er -ing	% 2013/07, Mico Loretan
 \1 scheduling		sched-ul-ing
 \1 schizophrenic	schiz-o-phrenic
 \1 schnauzer		schnau-zer
@@ -968,19 +986,17 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 setup		set-up
 \1 setups		set-ups
 \1 severely		se-vere-ly
-\NewWordtrue
 \1 shapable		shap-able		% 2012/02, Mico Loretan
 \1 shapeable		shape-able
 \5 shoestring		shoe-string s
+\3 shoplift(er,-ing)	shop-lift -er -ing	% 2013/07, Mico Loretan
 \1 showhyphens		{\tt\bs show-hy-phens}	% 2008/07; bnb
 \5 sidestep		side-step s
 \1 sideswipe		side-swipe
-\NewWordtrue
+\1 signage		sign-age		% 2013/05, bnb
 \2 singlespace(d)	single-space d		% 2012/02, Mico Loretan
-\NewWordtrue
 \1 singlespacing	single-spacing		% 2012/02, Mico Loretan
 \5 skyscraper		sky-scraper s
-\NewWordtrue
 \1 slnunicode		{\tt sln-uni-code}	% 2011/06, tb100, p.68 (LuaTeX)
 \5 smokestack		smoke-stack s
 \1 snorkeling		snor-kel-ing
@@ -998,9 +1014,7 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 sphinges		sphin-ges
 \1 spicily		spic-i-ly
 \5 spinors		spin-or s
-\NewWordtrue
 \1 spokesman		spokes-man		% 2012/02, Mico Loretan
-\NewWordtrue
 \5 spokesperson		spokes-per-son s	% 2012/02, Mico Loretan
 \3 spokeswoman(en)	spokes-wom an en
 \2 sportscast(er)	sports-cast -er
@@ -1026,20 +1040,16 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \3 stupider(est)	stu-pid -er -est
 \1 subdifferential	sub-dif-fer-en-tial	% 2000/02, M. Doob
 \5 subexpression	sub-ex-pres-sion s	% 2005/08, kb list
+\2 subnode(s)		sub-node s		% 2013/05, Stephan Stiller
 \5 subscriber 		sub-scrib-er s
-\NewWordtrue
 \1 subtables		sub-tables		% 2011/07, kb
 \1 summable		sum-ma-ble
-\NewWordtrue
 \5 superderivation	super-deri-va-tion s	% 2011/08, bnb, GSM/Musson2
 \1 superego		super-ego
 \1 superegos		super-egos
 \5 supremacist		su-prem-a-cist s
-\NewWordtrue
 \1 surgery		sur-gery		% 2012/03, kb
-\NewWordtrue
 \1 surgeries		sur-ge-ries		% 2012/03, kb; cf. con-ge-ries
-\NewWordtrue
 \1 surges		sur-ges 		% 2012/03, kb/bnb
 \1 surveillance		sur-veil-lance
 \1 swimmingly		swim-ming-ly
@@ -1048,7 +1058,6 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 synchronous		syn-chro-nous
 \1 synchrotron		syn-chro-tron
 \1 taffrail		taff-rail		% 2004/05; bnb
-\NewWordtrue
 \5 takeover		take-over s		% 2012/02, Mico Loretan
 \1 talkative		talk-a-tive
 \3 tapestry(ies)	ta-pes-tr y ies
@@ -1069,7 +1078,6 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \5 timestamp		time-stamp s
 \5 toolkit		tool-kit s
 \1 topographical	topo-graph-i-cal
-\NewWordtrue
 \5 topoisomerase	topo-iso-mer-ase s	% 2011/04, bnb, PSAPM 66
 \1 toques		toques
 \1 traitorous		trai-tor-ous
@@ -1083,6 +1091,11 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 triethylamine	tri-ethyl-amine		% 2005/01, Donald Arseneau
 \1 treacheries		treach-eries
 \1 tribesman		tribes-man		% 2005/09, Scott Horne, 1993
+%\5 triple		tri-ple s		% 2013/05, bnb
+%% omitting triple and tripling because dictionary hyphens don't make sense
+\5 triplet		trip-let s		% 2013/05, bnb
+%\NewWordtrue
+%\1 tripling		tri-pling		% 2013/05, bnb
 \1 troubadour		trou-ba-dour
 \5 turkey		tur-key s
 \5 turnaround		turn-around s
@@ -1104,10 +1117,11 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 wastewater		waste-water
 \5 waveguide		wave-guide s
 \2 wavelet(s)		wave-let s
-\NewWordtrue
 \3 weapon(s,ry)		weap-on s -ry		% 2012/03, bnb, SciAm
 \1 weblike		web-like
+\2 weblog(s)		web-log s		% 2012/11, Stephan Stiller
 \5 weeknight		week-night s
+\3 weightlift(er,ing)	weight-lift -er -ing	% 2013/07, Mico Loretan
 \5 wheelchair		wheel-chair s
 \1 whichever		which-ever
 \1 whitesided		white-sided
@@ -1125,21 +1139,21 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \endgraf
 \endgroup
 
-%\head * Names and non-English words \\ used in English text *
 \head * Names and non-English words \break used in English text *
 
 \begingroup
 %\ninepoint
 \eightpoint
 \1 algebraische 	al-ge-brai-sche
+\1 Algonquian		Al-gon-quian		% 2012/10, bnb, tb105thiele
+\1 Algonquin		Al-gon-quin		% 2012/10, bnb
 \1 Allegheny		Al-le-ghe-ny
-\NewWordtrue
 \1 Apollodorus		Apol-lo-dorus		% 2012/03, Pablo Rodriguez
 \1 Arkansas		Ar-kan-sas
 \5 ATPase		ATP-ase s		% 2005/02; Engelbert Buxbaum
+\1 Auflage		Auf-lage		% 2013/04, TeX.sx #108026
 \1 Australasian 	Aus-tral-asian
 \1 automatisierter	auto-ma-ti-sier-ter
-\NewWordtrue
 \1 Bebchuk		Beb-chuk		% 2012/02, Mico Loretan
 \1 Bedienung		Be-die-nung
 \1 Bembo                Bembo			% 1999/09/09
@@ -1148,35 +1162,25 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 Brownian		Brown-ian
 \1 Brunswick		Bruns-wick
 \1 Budapest		Bu-da-pest
-\NewWordtrue
 \1 Burckhardt		Burck-hardt		% 2012/02, Mico Loretan
 \1 Caribbean		Car-ib-bean
 \1 Charleston		Charles-ton
 \1 Charlottesville	Char-lottes-ville
-\NewWordtrue
 \1 Chester		Ches-ter		% 2012/02, Mico Loretan
-\NewWordtrue
 \1 Chiang		Chiang			% 2012/02, Mico Loretan
-\NewWordtrue
 \1 Chichester		Chich-es-ter		% 2012/02, Mico Loretan
-\NewWordtrue
 \1 Cohen		Cohen			% 2012/02, Mico Loretan
 \1 Columbia		Co-lum-bia
 \1 Czechoslovakia	Czecho-slo-va-kia
 \1 Delaware		Del-a-ware		% 2005/04; kb list
 \1 Dijkstra		Dijk-stra
 \1 Dorchester		Dor-ches-ter		% 2009/10, bnb
-\NewWordtrue
 \1 Dorfleitner		Dorf-leit-ner		% 2012/02, Mico Loretan
-\NewWordtrue
 \1 Drechsler		Drechs-ler		% 2012/02, Mico Loretan
 \1 Duane		Duane			% 2005/04; kb list
 \1 dynamische		dy-na-mi-sche
-\NewWordtrue
 \1 Eijkhout		Eijk-hout		% 2011/10, bnb
-\NewWordtrue
 \1 Engle		Engle			% 2012/02, Mico Loretan
-\NewWordtrue
 \1 Engel		Engel			% 2012/02, Mico Loretan
 \1 English		Eng-lish
 \1 Eulerian		Euler-ian
@@ -1189,11 +1193,10 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 FreeBSD		Free-BSD		% 2005/06, bnb
 \1 funktsional		funk-tsional
 \1 Gaussian		Gauss-ian
-\NewWordtrue
 \1 Gesellschaft 	Ge-sell-schaft		% 2010/12; bnb, GSM/Bottazzini
 \1 Ghostscript		Ghost-script		% 2003/09; bnb, tb75becc
 \1 GhostView		Ghost-View		% 2003/09; bnb, tb75becc
-\NewWordtrue
+\1 Gottfried		Gott-fried		% 2013/06, bnb, tex.sx
 \1 Gottlieb		Gott-lieb		% 2012/02, Mico Loretan
 \1 Grassmannian		Grass-mann-ian		% 2003/08; bnb, GSM/Landsberg
 \1 Greifswald		Greifs-wald
@@ -1205,27 +1208,24 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 Helsinki		Hel-sinki
 \1 Hermitian		Her-mit-ian
 \1 Hibbs		Hibbs
+\1 Hoefler		Hoef-ler		% 2013/05; bnb, tb107bigelow
 \1 Hoekwater		Hoek-water		% 2010/09; Karl
 \1 Hokkaido		Hok-kai-do
-\NewWordtrue
 \1 Huber		Huber			% 2012/02, Mico Loretan
 \1 ImageMagick		Image-Magick		% 2010/08; bnb (TB98, Voss)
 \1 Jackowski		Jac-kow-ski		% 2004/05; TUG 2003 proceedings
 \1 January		Jan-u-ary
 \1 Japanese		Ja-pa-nese
 \1 JavaScript		Java-Script		% 2010/08; kb
-\NewWordtrue
 \1 Jungian		Jung-ian		% 2012/02, Mico Loretan
 \1 Kadomtsev		Kad-om-tsev
 \1 Kansas		Kan-sas
 \1 Karlsruhe		Karls-ruhe
-\NewWordtrue
 \1 Keynesian		Keynes-ian		% 2012/02, Mico Loretan
 \1 Korteweg		Kor-te-weg
 \1 Krishna		Krishna
 \1 Krishnaism		Krish-na-ism
 \1 Krishnan		Krish-nan		% 2002/02, tran2986el
-\NewWordtrue
 \1 Kronecker		Kron-ecker		% 2012/02, Mico Loretan
 \1 Lancaster		Lan-cas-ter
 \1 Legendre		Le-gendre
@@ -1233,12 +1233,9 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \2 Lipschitz(ian)	Lip-schitz -ian
 \1 Lojban		Loj-ban		% 2003/04, W. Lemberg (TB 23:1, p 46)
 \1 Louisiana		Lou-i-si-ana
-\NewWordtrue
 \1 Lucas		Lucas			% 2012/02, Mico Loretan
-\NewWordtrue
 \1 MacBeth		MacBeth			% 2012/02, Mico Loretan
 \1 MacOS		Mac-OS			% 2005/06, bnb
-\NewWordtrue
 \1 Magellan		Ma-gel-lan		% 2012/02, Mico Loretan
 \1 Malayalam		Ma-la-ya-lam		% 2006/08, Alex A.J. (TB 27:1)
 \1 Manchester		Man-ches-ter
@@ -1246,9 +1243,7 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 Marktoberdorf	Markt-ober-dorf  % 2001/02, W. Lemberg (TB 21:2, p 106)
 \1 Massachusetts	Mass-a-chu-setts
 \1 Maxwell		Max-well		% 2003/11; bnb (TB78, Lawrence)
-\NewWordtrue
 \1 Methodist		Meth-od-ist		% 2011/11, cf. Herbert Voss
-\NewWordtrue
 \1 Methodism		Meth-od-ism		% 2011/11, cf. Herbert Voss
 \1 Microsoft		Mi-cro-soft		% 2003/08; bnb (TUG 2003, Gray)
 \1 Minkowski		Min-kow-ski		% 2009/03; bnb, MBK/Borovik3
@@ -1260,17 +1255,15 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 Nashville		Nash-ville
 \1 NetBSD		Net-BSD 		% 2005/06, bnb
 \1 Netscape		Net-scape		% 2003/03; bnb
+\1 Nietzsche		Nietz-sche		% 2012/16, Pablo Rodriguez
 \1 Nijmegen		Nij-me-gen
 \1 Noetherian		Noe-ther-ian
 \1 Noordwijkerhout	Noord-wijker-hout
-\NewWordtrue
 \1 Notowidigdo		Noto-wi-digdo		% 2012/02, Mico Loretan
 \1 November		No-vem-ber
-\NewWordtrue
 \1 Obstfeld		Obst-feld		% 2012/02, Mico Loretan
 \1 OpenBSD		Open-BSD		% 2005/06, bnb
 \1 OpenOffice		Open-Office		% 2005/06, bnb
-\NewWordtrue
 \1 Oreopoulos		Oreo-pou-los		% 2012/02, Mico Loretan
 \1 Palatino		Pala-tino		% 2003/09; bnb, tb75becc
 \1 Palermo		Pa-ler-mo
@@ -1281,24 +1274,21 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 Poincare		Poin-care
 \1 Potentialgleichung	Po-ten-tial-glei-chung
 \5 Presbyterian		Pres-by-terian s	% 2006/06; dek
+\1 Pyongyang		Pyong-yang		% 2013/07, bnb
 \1 Pythagoras		Py-thag-o-ras		% 2009/07; bnb, GSM/Rotman
 \1 Pythagorean		Py-thag-o-re-an		% 2009/07; bnb, GSM/Rotman
 \1 Radhakrishnan	Ra-dha-krish-nan   % 2003/04; W. Lemberg (TB 23:1, p 2)
 \1 rathskeller		raths-kel-ler
-\NewWordtrue
 \1 Ravikumar		Ravi-kumar		% 2012/02, Mico Loretan
-\NewWordtrue
 \1 Reichlin		Reich-lin		% 2012/02, Mico Loretan
 \1 Riemannian		Rie-mann-ian
 \1 Rydberg		Ryd-berg
-\NewWordtrue
 \1 Schimmelpfennig	Schim-mel-pfen-nig	% 2012/02, Mico Loretan
 \1 schottische		schot-ti-sche
 \1 Schrodinger		Schro-din-ger
 \1 Schwabacher		Schwa-ba-cher
 \1 Schwarzschild	Schwarz-schild
 \1 Schweidnitz		Schweid-nitz		% 2008/08; bnb (Notices, p.927)
-\NewWordtrue
 \1 Schwert		Schwert			% 2012/02, Mico Loretan
 \1 September		Sep-tem-ber
 \1 Shoreditch		Shore-ditch		% 2009/10; bnb (MOP poster)
@@ -1309,11 +1299,9 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 Tauberian		Tau-ber-ian          % 1999/03
 \1 technische		tech-ni-sche
 \1 Tennessee		Ten-nes-see
-\NewWordtrue
 \1 Thiruvanandapuram	Thiruv-ananda-puram	% 2011/10, bnb, Kaveh Bazargan
 \1 Tolchester		Tol-ches-ter		% 2009/10, bnb
 \1 Tomaszewski		To-ma-szew-ski		% 2004/05; TUG 2003 proceedings
-\NewWordtrue
 \1 Toyota		Toyo-ta			% 2012/02, Mico Loretan
 \1 typographique	ty-po-graphique      % 1999/03
 \1 Ukrainian		Ukrain-ian
@@ -1325,16 +1313,14 @@ The output of the script is posted in the same area as |ushyphex.tex|.
 \1 viiith		viiith			% 2001/11; R. Sizer
 \1 viith		viith			% 2001/11; R. Sizer
 \1 Wahrscheinlichkeitstheorie  \llap{Wa}hr-schein-lich-keits-theo-rie
-\NewWordtrue
 \1 Weinstein		Wein-stein		% 2012/02, Mico Loretan
+\1 Werkzeuge		Werk-zeuge		% 2013/06, bnb, tex.sx
 \1 Werner		Wer-ner		% 2004/09; W. Lemberg (TB 24:1, p 75)
 \1 Wertherian		Wer-ther-ian
-\NewWordtrue
 \2 William		Will-iam s		% 2012/03, kb
 \1 Winchester		Win-ches-ter
 \1 Wirtschaft		Wirt-schaft		% 2000/10
 \1 wissenschaftlich	wis-sen-schaft-lich
-\NewWordtrue
 \1 Wolffian		Wolff-ian		% 2012/02, Mico Loretan
 \1 xviiith		xviiith			% 2001/11; R. Sizer
 \1 xviith		xviith			% 2001/11; R. Sizer

@@ -20,7 +20,9 @@ sh-ushyphex.tex: hyphenex.sh tb0hyf.tex
 tb0hyf.pdf: tb0hyf.tex
 	TEXINPUTS=../plain: pdftex '\nonstopmode\input $<'
 
+h = hyphenex
 dist: all check
 	rm -f dist.zip
-	zip dist.zip README GNUmakefile hyphenex.?? tb0hyf.tex tb0hyf.pdf \
-	             test.tex ushyphex.tex
+	cd .. && zip $h/dist.zip $h/README $h/GNUmakefile $h/hyphenex.?? \
+	             $h/tb0hyf.tex $h/tb0hyf.pdf $h/test.tex $h/ushyphex.tex
+# CTAN wants upload to be within a directory.
