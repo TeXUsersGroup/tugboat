@@ -2,7 +2,7 @@
 # Copyright 2007-2014 TeX Users Group.
 # You may freely use, modify and/or distribute this file.
 # 
-opt = -interaction=nonstopmode
+opt = --interaction=nonstopmode --file-line-error
 latex = latex $(opt)
 pdflatex = pdflatex $(opt)
 

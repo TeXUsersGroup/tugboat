@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2013/12/23 v2.14+dev
+                   [2014/06/27 v2.15
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -344,7 +344,7 @@
 \def\preprint{\preprinttrue}
 \DeclareOption{draft}{%
   \AtEndOfClass{%
-    \setcounter{page}{1001}%
+    \setcounter{page}{901}%
     \BlackBoxes
     \def\MakeRegistrationMarks{}%
     \PrelimDrafttrue
@@ -2408,17 +2408,18 @@
 %    \end{macrocode}
 %
 % \cs{l@<sectioning-name>} is for table of contents (of an article).
-%
 % We define new macros to allow easily changing the font used for toc
 % entries (for \TUB, we usually want roman, not bold), and the space
-% between entries.  Nelson Beebe's articles are almost the only ones
-% that ever have toc's.
+% between entries.  Nelson Beebe and Frank Mittelbach's articles 
+% often have toc's (and few others).  Also turn off microtype
+% protrusion after \tableofcontents or leaders get messed up.
 %
 %    \begin{macrocode}
 \def\TBtocsectionfont{\normalfont}
 \newskip\TBtocsectionspace  \TBtocsectionspace=1.0em\@plus\p@
 %    \end{macrocode}
 %
+%    \begin{macrocode}
 \def\l@section#1#2{\addpenalty{\@secpenalty}%
   \addvspace{\TBtocsectionspace}%
   \@tempdima 1.5em
@@ -3305,6 +3306,7 @@
 %    \begin{macrocode}
 \newcommand\tubraggedfoot{\rightskip=\raggedskip plus\raggedstretch\relax}
 %    \end{macrocode}
+% \end{macro}
 %
 % \begin{macro}{\creditfootnote}
 % \begin{macro}{\supportfootnote}
