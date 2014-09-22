@@ -175,6 +175,7 @@
 
 \def\type{\bgroup
    \catcode`_=12 \catcode`\\=12 \catcode`##=12 \catcode`\&=12 \catcode`$=12
+   \catcode`\%=12
    \finishtype}
 \def\finishtype#1{\texttt{%
   \spaceskip = .3333em \xspaceskip = \spaceskip
