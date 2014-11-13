@@ -1,7 +1,7 @@
 % $Id$
 % ltubguid.ltx - documentation for ltugboat classes.
 % 
-% Copyright 1994,1995,1996,2001,2005,2006,2010,2013 TeX Users Group.
+% Copyright 1994,1995,1996,2001,2005,2006,2010,2013,2014 TeX Users Group.
 % 
 % This file is part of the tugboat package.
 % 
@@ -760,12 +760,12 @@ authors are urged to make this fact clear when first submitting an
 article to the editor.
 \cbend
 
-Some facilities are considered inappropriate to delivery by the
+Some facilities are considered inappropriate for delivery by the
 \TUB{} classes, and as a result, the \TUB{} team recommend certain
 packages to authors.
 
-At present, the list of recommended packages consists of only two,
-\path|mflogo.sty| \cite{Vieth:mflogo:1995} and \path|url.sty|
+At present, the list of canonically recommended packages consists of
+only two, \path|mflogo.sty| \cite{Vieth:mflogo:1995} and \path|url.sty|
 \cite{Arseneau:url:1996}.
 
 Both classes will load the \pkgname{mflogo} package if it is present on the
@@ -776,6 +776,13 @@ emulate its more important features; the package defines \MF{} and
 The \pkgname{url} package is useful when one is typesetting significant
 numbers of file names, network addresses or \acro{URL}s; it is being
 used in the present paper (not least in the bibliography).
+
+Although not necessarily recommended in all cases, many additional
+packages are commonly used: \texttt{microtype} can help reduce overfull
+boxes, sometimes it may be preferable to use the Latin Modern fonts via
+\texttt{lmodern}, \texttt{hyperref} allows for many internal links and
+other features, and of course individual papers may need to load
+particular packages for the subject at hand.
 
 \section{Bibliography}
 \label{sec:biblio}

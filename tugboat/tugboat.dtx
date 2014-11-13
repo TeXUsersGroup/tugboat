@@ -2,7 +2,7 @@
 % $Id$
 % tugboat.dtx - main source for LaTeX TUGboat classes.
 %
-% Copyright 1994-1998, 2000-2001, 2004-2014 TeX Users Group.
+% Copyright 1994-2014 TeX Users Group.
 %
 % This file is part of the tugboat package.
 %
@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2014/06/27 v2.15
+                   [2014/11/12 v2.15
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -502,7 +502,7 @@
 %<ltugcomn>  {\PackageWarning{ltugcomn}
      {Package mflogo.sty not available --\MessageBreak
        Proceeding to emulate mflogo.sty}
-   \DeclareRobustCommand\logofamily{%
+   \DeclareRobustCommand{\logofamily}{%
      \not@math@alphabet\logofamily\relax
      \fontencoding{U}\fontfamily{logo}\selectfont}
    \DeclareTextFontCommand{\textlogo}{\logofamily}
@@ -678,8 +678,8 @@
 \def\DVItoVDU{DVIto\kern-.12em VDU}
 \def\ECMA{\acro{ECMA}}
 \def\EPS{\acro{EPS}}
-\DeclareRobustCommand\eTeX{\ensuremath{\varepsilon}-\kern-.125em\TeX}
-\DeclareRobustCommand\ExTeX{%
+\DeclareRobustCommand{\eTeX}{\ensuremath{\varepsilon}-\kern-.125em\TeX}
+\DeclareRobustCommand{\ExTeX}{%
   \ensuremath{\textstyle\varepsilon_{\kern-0.15em\cal{X}}}\kern-.2em\TeX}
 \def\FAQ{\acro{FAQ}}
 \def\FTP{\acro{FTP}}
@@ -743,7 +743,7 @@
 \def\MFB{\textsl{The \MF book}}
 \def\MkIV{Mk\acro{IV}}
 \let\TB@@mp\mp
-\DeclareRobustCommand\mp{\ifmmode\TB@@mp\else MetaPost\fi}
+\DeclareRobustCommand{\mp}{\ifmmode\TB@@mp\else MetaPost\fi}
 %
 % In order that the \cs{OMEGA} command will switch to using the TS1
 % variant of the capital Omega character if \texttt{textcomp.sty} is
@@ -757,7 +757,7 @@
   \raisebox{-0.5ex}{$\mathcal{T}$}\mkern-2mu \mathcal{S}}}
 \DeclareTextSymbol{\textohm}{OT1}{'012}
 \DeclareTextSymbolDefault{\textohm}{OT1}
-\newcommand\OMEGA{\textohm}
+\newcommand{\OMEGA}{\textohm}
 \DeclareRobustCommand{\OCP}{\OMEGA\acro{CP}}
 \DeclareRobustCommand{\OOXML}{\acro{OOXML}}
 \DeclareRobustCommand{\OTF}{\acro{OTF}}
@@ -794,7 +794,7 @@
 \def\TB{\textsl{The \TeX book}}
 \def\TIFF{\acro{TIFF}}
 \def\TP{\textsl{\TeX}: \textsl{The Program}}
-\DeclareRobustCommand\TeX{T\kern-.1667em\lower.424ex\hbox{E}\kern-.125emX\@}
+\DeclareRobustCommand{\TeX}{T\kern-.1667em\lower.424ex\hbox{E}\kern-.125emX\@}
 \def\TeXhax{\TeX hax}
 \def\TeXMaG{\TeX M\kern-.1667em\lower.5ex\hbox{A}%
    \kern-.2267emG\@}
@@ -850,7 +850,7 @@
 \def\tubhideheight#1{\setbox0=\hbox{#1}\ht0=0pt \dp0=0pt \box0 }
 \def\XekernbeforeE{-.125em}
 \def\XekernafterE{-.1667em}
-\DeclareRobustCommand\Xe{\leavevmode
+\DeclareRobustCommand{\Xe}{\leavevmode
   \tubhideheight{\hbox{X%
     \setbox0=\hbox{\TeX}\setbox1=\hbox{E}%
     \lower\dp0\hbox{\raise\dp1\hbox{\kern\XekernbeforeE\tubreflect{E}}}%
@@ -1096,7 +1096,7 @@
                 /\kern-.125em\smash{\lower.3ex\hbox{o}}} \ignorespaces}
 \def\Dag{\raise .6ex\hbox{$\scriptstyle\dagger$}}
 %
-\DeclareRobustCommand\sfrac[1]{\@ifnextchar/{\@sfrac{#1}}%
+\DeclareRobustCommand{\sfrac}[1]{\@ifnextchar/{\@sfrac{#1}}%
                                             {\@sfrac{#1}/}}
 \def\@sfrac#1/#2{\leavevmode\kern.1em\raise.5ex
          \hbox{$\m@th\mbox{\fontsize\sf@size\z@
@@ -1118,10 +1118,18 @@
 % and upright works well enough in both italic and bold contexts.
 \DeclareRobustCommand{\cs}[1]{{\tt \char`\\#1}}
 %
-\DeclareRobustCommand\env[1]{%
-  \cs{begin}\texttt{\char`\{#1\char`\}}}
+% This command was defined much later than the other, so let's not
+% conflict with any existing definitions that might be out there.
+% Don't allow hyphenations or other line breaks.
+\DeclareRobustCommand{\tubbraced}[1]{\mbox{\texttt{\char`\{#1\char`\}}}}
 %
-\def\thinskip{\hskip 0.16667em\relax}
+% Well, just the \begin part.  Never seen it used.
+\DeclareRobustCommand{\env}[1]{\cs{begin}\tubbraced{#1}}
+%
+% Not sure why we ever want this instead of LaTeX's \, (using \kern),
+% but fine, just keeping it.
+\DeclareRobustCommand{\thinskip}{\hskip 0.16667em\relax}
+%
 %    \end{macrocode}
 %
 % We play a merry game with dashes, providing all conceivable options
@@ -1499,7 +1507,7 @@
 % values used in placing the raised `A' of \LaTeX.
 %
 %    \begin{macrocode}
-\newcommand\DeclareLaTeXLogo[5]{\expandafter\def
+\newcommand{\DeclareLaTeXLogo}[5]{\expandafter\def
   \csname @LaTeX@#1/#2/#3\endcsname{{#4}{#5}}}
 %    \end{macrocode}
 %
@@ -1552,7 +1560,7 @@
 % original; other versions are added as needed.
 %
 %    \begin{macrocode}
-\newcommand\@LaTeX[2]{%
+\newcommand{\@LaTeX}[2]{%
   %\wlog{latex logo family=\f@family/\f@series/\f@shape -> #1, #2.}%
   L\kern-#1em
   {\sbox\z@ T%
@@ -1702,7 +1710,7 @@
 % The optional argument to \cs{makesignature} is useful in some
 % circumstances (e.g., multi-contributor articles)
 %    \begin{macrocode}
-\newcommand\makesignature[1][\medskipamount]{%
+\newcommand{\makesignature}[1][\medskipamount]{%
 %    \end{macrocode}
 %
 % check the value the user has put in \cs{signaturewidth}: it may be
@@ -1824,7 +1832,7 @@
 % otherwise we write it out in all its horribleness.
 %
 %    \begin{macrocode}
-\newcommand\netaddress[1][\relax]{%
+\newcommand{\netaddress}[1][\relax]{%
   \begingroup
   \def\@network{}%
 %    \end{macrocode}
@@ -1937,7 +1945,7 @@
 %
 %    \begin{macrocode}
 \if@compatibility
-  \DeclareRobustCommand\net{\normalfont\ttfamily\mathgroup\symtypewriter}
+  \DeclareRobustCommand{\net}{\normalfont\ttfamily\mathgroup\symtypewriter}
 \else
   \DeclareOldFontCommand{\net}{\ttfamily\upshape\mdseries}{\mathtt}
 \fi
@@ -1946,12 +1954,13 @@
 %    \end{macrocode}
 %
 % For the online re-publication (as of 2009) by Mathematical Sciences
-% Publishers |http://mathscipub.org|), lots and lots of metadata is
+% Publishers |http://mathscipub.org|, lots and lots of metadata is
 % needed, much of it redundant with things we already do.  They are
 % flexible enough to allow us to specify it in any reasonable way, so
 % let's make one command \cs{mspmetavar} which takes two arguments.
 % Example: |\mspmetavar{volumenumber}{30}|.  For our purposes, it is
-% just a no-op.
+% just a no-op.  And this initiative never came to anything, so it is
+% not used at all.
 %
 % \begin{macro}{\mspmetavar}
 %    \begin{macrocode}
@@ -2013,7 +2022,7 @@
 % need for users to use the \cs{shortTitle} command.
 %    \begin{macrocode}
 \def\rhTitle{}% avoid error if no author or title
-\renewcommand\title{\@dblarg\TB@title}
+\renewcommand{\title}{\@dblarg\TB@title}
 \def\TB@title[#1]#2{\gdef\@title{#2}%
   \bgroup
     \let\thanks\@gobble
@@ -2075,7 +2084,7 @@
 \newif\ifSecTitle
 \SecTitlefalse
 \newif\ifWideSecTitle
-\newcommand\sectitle{%
+\newcommand{\sectitle}{%
   \SecTitletrue
   \@ifstar
     {\WideSecTitletrue\def\s@ctitle}%
@@ -2442,8 +2451,8 @@
 % piece of design that was).  So here we go:
 %
 %    \begin{macrocode}
-\renewcommand\appendix{\par
-  \renewcommand\thesection{\@Alph\c@section}%
+\renewcommand{\appendix}{\par
+  \renewcommand{\thesection}{\@Alph\c@section}%
   \setcounter{section}{0}%
   \if@numbersec
   \else
@@ -2466,11 +2475,11 @@
 % Here we deal with \cs{begin}|{appendix}|\oarg{app-name}
 %
 %    \begin{macrocode}
-\newcommand\app@prefix@section{}
-\newcommand\@appendix@env[1][Appendix]{%
-  \renewcommand\@seccntformat[1]{\csname app@prefix@##1\endcsname
+\newcommand{\app@prefix@section}{}
+\newcommand{\@appendix@env}[1][Appendix]{%
+  \renewcommand{\@seccntformat}[1]{\csname app@prefix@##1\endcsname
     \csname the##1\endcsname\quad}%
-  \renewcommand\app@prefix@section{#1 }%
+  \renewcommand{\app@prefix@section}{#1 }%
 }
 %    \end{macrocode}
 %
@@ -2570,7 +2579,7 @@
 % the \LaTeX\ kernel (see |ltxref.dtx|).
 %
 %    \begin{macrocode}
-\DeclareRobustCommand\nameref[1]{\expandafter\@setref
+\DeclareRobustCommand{\nameref}[1]{\expandafter\@setref
   \csname r@nr@#1\endcsname\@secondoftwo{#1}}
 %    \end{macrocode}
 %
@@ -2633,7 +2642,7 @@
 % Apart from their `normal' effects, these commands change the glue
 % around displays.
 %    \begin{macrocode}
-\renewcommand\normalsize{%
+\renewcommand{\normalsize}{%
    \@setfontsize\normalsize\@xpt\@xiipt
    \abovedisplayskip=3\p@\@plus 3\p@\@minus\p@
    \belowdisplayskip=\abovedisplayskip
@@ -2641,14 +2650,15 @@
    \belowdisplayshortskip=\p@\@plus 3\p@\@minus\p@
 }
 
-\renewcommand\small{%
+\renewcommand{\small}{%
    \@setfontsize\small\@ixpt{11}%
    \abovedisplayskip=2.5\p@\@plus 2.5\p@\@minus\p@
    \belowdisplayskip=\abovedisplayskip
    \abovedisplayshortskip=\z@\@plus 2\p@
    \belowdisplayshortskip=\p@\@plus 2\p@\@minus\p@
 }
-\renewcommand\footnotesize{%
+
+\renewcommand{\footnotesize}{%
     \@setfontsize\footnotesize\@viiipt{9.5}%
     \abovedisplayskip=3\p@\@plus 3\p@\@minus\p@
     \belowdisplayskip=\abovedisplayskip
@@ -3215,7 +3225,7 @@
 % \cs{@currsize} is to get the commonest cases out of the way first.)
 %    \begin{macrocode}
 %<*common>
-\DeclareRobustCommand\SMC{%
+\DeclareRobustCommand{\SMC}{%
   \ifx\@currsize\normalsize\small\else
    \ifx\@currsize\small\footnotesize\else
     \ifx\@currsize\footnotesize\scriptsize\else
@@ -3229,9 +3239,9 @@
             \small\SMC@unknown@warning
  \fi\fi\fi\fi\fi\fi\fi\fi\fi\fi
 }
-\newcommand\SMC@unknown@warning{\TBWarning{\string\SMC: nonstandard
+\newcommand{\SMC@unknown@warning}{\TBWarning{\string\SMC: nonstandard
     text font size command -- using \string\small}}
-\newcommand\textSMC[1]{{\SMC #1}}
+\newcommand{\textSMC}[1]{{\SMC #1}}
 %    \end{macrocode}
 %
 % The \cs{acro} command uses \cs{SMC} as it was originally intended.
@@ -3239,7 +3249,7 @@
 % fiddles with the spacefactor after inserting its text.
 %
 %    \begin{macrocode}
-\newcommand\acro[1]{\textSMC{#1}\@}
+\newcommand{\acro}[1]{\textSMC{#1}\@}
 %</common>
 %    \end{macrocode}
 %
@@ -3304,7 +3314,7 @@
 % \begin{macro}{\tubraggedfoot}
 % To get a ragged-right footnote.
 %    \begin{macrocode}
-\newcommand\tubraggedfoot{\rightskip=\raggedskip plus\raggedstretch\relax}
+\newcommand{\tubraggedfoot}{\rightskip=\raggedskip plus\raggedstretch\relax}
 %    \end{macrocode}
 % \end{macro}
 %
@@ -3540,7 +3550,7 @@
 %    \begin{macrocode}
     \ifTB@title
       \setcounter{footnote}{0}%
-      \renewcommand\thefootnote{\@fnsymbol\c@footnote}%
+      \renewcommand{\thefootnote}{\@fnsymbol\c@footnote}%
       \if@tubtwocolumn
         \twocolumn[\@maketitle]%
       \else
