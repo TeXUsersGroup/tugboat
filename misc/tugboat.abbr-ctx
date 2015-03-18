@@ -1,5 +1,5 @@
 % $Id$
-% Copyright 1999, 2006, 2008, 2009, 2010, 2011, 2012, 2013, 2014
+% Copyright 1999, 2006, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015
 % TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
@@ -152,6 +152,9 @@
 %
 \def\stopArticle{\end{document}}
 \let\StopArticle=\stopArticle
+%
+\let\starttext = \relax
+\let\stoptext = \relax
 
 \def\citetitle{\textsl}
 \def\crlf{\newline}
@@ -197,11 +200,19 @@
 \def\starttyping{\begin{verbatim}[\small \catcode`\|=12
                                   \hfuzz=2pt \tubextratyping]}
 % \end{verbatim} has to be literal.
-\def\stoptyping{\errmessage{must literally end verbatim}}
+\def\stoptyping{\errmessage{must literally end verbatim typing}}
+
+\let\startbuffer=\starttyping % not really, but all we can do.
+\def\stopbuffer{\errmessage{must literally end verbatim buffer}}
+\def\typebuffer{}
+\def\getbuffer{}
+
+\def\startlinecorrection{}
+\def\stoplinecorrection{}
 
 \def\starttabulate{\par\smallskip
   \noindent\begingroup \catcode`|=12 \begin{tabular}}
-\def\stoptabulate{\end{tabular}\endgroup\smallskip}
+\def\stoptabulate{\end{tabular}\par\endgroup\smallskip}
 \def\stopplacetable{\end{table}}
 \def\NR{\\}
 \def\NC{&}

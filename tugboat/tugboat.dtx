@@ -2,7 +2,7 @@
 % $Id$
 % tugboat.dtx - main source for LaTeX TUGboat classes.
 %
-% Copyright 1994-2014 TeX Users Group.
+% Copyright 1994-2015 TeX Users Group.
 %
 % This file is part of the tugboat package.
 %
@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2014/11/12 v2.16
+                   [2015/03/18 v2.15
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -160,8 +160,7 @@
 % |\mf|&            \textsc{Metafont}\\
 % |\MFB|&           The Metafont book\\
 % |\MP|&            \MP\\
-% |\mp|&            MetaPost (in text only: remains `\ensuremath{\mp}'
-%                   in maths)\\
+% |\mp|&            MetaPost (in text only: still `\ensuremath{\mp}' in math)\\
 % |\OMEGA|&         Omega `logo' (\ensuremath{\Omega})\\
 % |\OCP|&           Omega compiled process\\
 % |\OOXML|&\\
@@ -337,7 +336,7 @@
 \def\TBWarningNL{\ClassWarningNoLine{\@tugclass}}
 %    \end{macrocode}
 %
-% Some trivial options, just flicking switches, etc.
+% |draft| vs.\ |preprint| vs.\ |final|.
 %
 %    \begin{macrocode}
 \newif\ifpreprint
@@ -345,6 +344,16 @@
 \DeclareOption{draft}{%
   \AtEndOfClass{%
     \setcounter{page}{901}%
+    %
+    % Put a question mark into the page number in draft mode.
+    \let\tuborigthepage = \thepage
+    \def\thepage{%
+      \ifnum\value{page}>900
+        \textsl{?\,\@arabic{\numexpr\the\c@page-900\relax}}%
+      \else
+        \arabic{page}%
+      \fi}%
+    %
     \BlackBoxes
     \def\MakeRegistrationMarks{}%
     \PrelimDrafttrue
@@ -355,6 +364,7 @@
 }
 \DeclareOption{final}{%
   \AtEndOfClass{%
+    \let\thepage=\tuborigthepage
     \NoBlackBoxes
     \PrelimDraftfalse
     \@tubrunningfull
