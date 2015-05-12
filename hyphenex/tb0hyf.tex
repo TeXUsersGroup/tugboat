@@ -1,6 +1,6 @@
-%		tb0hyf.tex - version of 2013/07/20
+%		tb0hyf.tex - version of 2015/03/20
 %
-% Copyright 2008, 2010, 2012, 2013, 2014 TeX Users Group.
+% Copyright 2008, 2010, 2012, 2013, 2015 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 %	This item last appeared in full in TUGboat 16:1, March 1995.
@@ -16,8 +16,8 @@
 \input tugboat.sty
 \issdate Thermidor, 9999.
 
-%% reset for 34(2)
-\def\midrtitle{As of 20 July 2013}
+%% reset for 36(1)
+\def\midrtitle{As of 20 March 2015}
 \def\rfoot{}
 
 %%%	Note -- With the addition of Skoup\'y, a note should be added
@@ -44,8 +44,8 @@
 This is the periodic update of the list of words that \TeX\ fails to
 hyphenate properly.  The full list last appeared in \TUB\ 16:1,
 starting on page~12, with updates in \TUB\ 22:1/2, pp.\,31--32;
-23:3/4, pp.\,247--248; 26:1, pp.\,5--6; 29:2, p.\,239, 31:3, p.\,160,
-33:1, pp.\,5--6, and 34:2, pp.\,113-114.
+23:3/4, pp.\,247--248; 26:1, pp.\,5--6; 29:2, p.\,239; 31:3, p.\,160;
+33:1, pp.\,5--6; 34:2, pp.\,113-114; and 36:1, p.\,5.
 %% update reference
 The full list is included here.
 Owing to the length of the list, it has been subdivided into two parts:
@@ -68,8 +68,9 @@ In most instances, inflected forms are not shown for nouns and verbs;
 note that all forms must be specified in a |\hyphenation{...}| list
 if they occur in your document.  The full list of exceptions, as a
 \TeX-readable file, appears in
-|http://mirror.ctan| |.org/info/digests/tugboat/hyphenex|.
-(It's created automatically; see below.)
+|http://mirror.ctan| |.org/info/digests/tugboat|.
+(It's created automatically, and is available in the
+|hyphenex| subdirectory; see below.)
 %See the section below on making this list machine-usable.
 
 Thanks to all who have submitted entries to the list.  Since some
@@ -165,8 +166,14 @@ Werner Lemberg has created scripts to convert this article into a
 machine-readable |\hyphenation| block that can be incorporated into a
 document either directly or by inputting a file.  Many inflected forms
 will be included automatically, some evident in the printed version, but
-many included silently.  Both shell and Perl scripts are
+many included silently.  Both shell and Perl versions of the script are
 available (for no particular reason), with identical behavior.
+Everything is available through \CTAN\ at
+|http://| |mirror.ctan.org/info/digests/tugboat|.
+
+The \TeX-usable output of the script is posted in the same area as
+|ushyphex.tex|.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -305,6 +312,10 @@ available (for no particular reason), with identical behavior.
 \5 assignor		as-sign-or s
 \3 assistant(ce)	as-sist-an t ce		% 2008/05, bnb
 \5 assistantship	as-sist-ant-ship s
+\NewWordtrue
+\5 astrologer		as-trol-o-ger s		% 2014/09, Karl Berry
+\NewWordtrue
+\5 astronomer		as-tron-o-mer s		% 2014/09, Karl Berry
 \1 asymptomatic		asymp-to-matic
 \1 asymptotic		as-ymp-tot-ic
 \1 asynchronous		asyn-chro-nous
@@ -371,9 +382,13 @@ available (for no particular reason), with identical behavior.
 \5 caller		call-er s		% 2003/06, bnb
 \1 cameramen		cam-era-men
 \5 cartwheel		cart-wheel s
-\1 catarrhs		ca-tarrhs
+\5 catarrh		ca-tarrh s
+\NewWordtrue
+\5 catastrophe		ca-tas-tro-phe s	% 2014/01, bnb, tex-hyphen
 \1 catastrophic		cat-a-stroph-ic
 \1 catastrophically	cat-a-stroph-i-cally
+\NewWordtrue
+\1 catastrophism	ca-tas-tro-phism	% 2014/01, bnb, tex-hyphen
 \5 catenoid		cat-e-noid s		% 2001/01; S. Levy, 1993/09
 \1 cauliflower		cau-li-flow-er
 \1 chancery		chan-cery		% 2013/03, tb107bigelow
@@ -407,6 +422,8 @@ available (for no particular reason), with identical behavior.
 \1 conformity		con-form-ity
 \1 congeries		con-ge-ries		% 2012/03, kb/bnb
 \5 congress		con-gress es
+\NewWordtrue
+\1 constructed		con-struc-ted		% 2014/09; F. Mittelbach
 \1 constructible	con-struc-ti-ble	% 2008/07; bnb, GSM/Rotman
 \1 constructibility	con-struc-ti-bil-ity	% 2012/03, bnb
 \2 contribute(s,d)	con-trib-ute s,d
@@ -541,6 +558,8 @@ available (for no particular reason), with identical behavior.
 \1 geostrophic          ge-o-strophic		% 2003/04
 \1 geothermal		geo-ther-mal		% 2005/03, bnb
 \1 geotropism		ge-ot-ro-pism
+\NewWordtrue
+\1 giganodes		giga-nodes		% 2014/10; dek
 \5 gnomon		gno-mon s
 \1 grandiose		gran-di-ose		% 2013/01, bnb
 \5 granduncle		grand-uncle s		% 2004/03, bnb
@@ -569,6 +588,8 @@ available (for no particular reason), with identical behavior.
 \3 hermaphrodite(ic)	her-maph-ro-dit e -ic
 \1 heroes		he-roes
 \1 hexadecimal		hexa-dec-i-mal
+\NewWordtrue
+\1 hippopotamus 	hip-po-po-ta-mus	% 2014/01, from tex.sx 66528
 \5 holodeck		holo-deck s		% 2012/13. bnb
 \1 holonomy		ho-lo-no-my
 \3 homeomorphic(sm)	ho-meo-mor-phi c sm	% 2001/01; S. Levy, 1993/09
@@ -584,6 +605,12 @@ available (for no particular reason), with identical behavior.
 \5 hyphenation		hy-phen-a-tion s		% 2012/06, Mico Loretan
 \1 hypoelasticity	hy-po-elas-tic-ity	% 2011/07, bnb, GSM/Rauch
 \1 hypothalamus 	hy-po-thal-a-mus 
+\NewWordtrue
+\5 iconographer		ico-nog-ra-pher s	% 2014/01, bnb, tex-hyphwn
+\NewWordtrue
+\1 iconographic		icon-o-graph-ic		% 2014/01, bnb, tex-hyphwn
+\NewWordtrue
+\1 iconography		ico-nog-ra-phy		% 2014/01, bnb, tex-hyphwn
 \1 ideals		ideals
 \1 ideographs		ideo-graphs
 %%% bb -- check this one
@@ -621,6 +648,8 @@ available (for no particular reason), with identical behavior.
 \1 jeremiads		je-re-mi-ads
 \5 keynote		key-note s		% 2005/04; kb list
 \5 keystroke		key-stroke s
+\NewWordtrue
+\1 kilonodes		kilo-nodes		% 2014/10; dek
 \1 kilning		kiln-ing
 \1 laciest		lac-i-est
 \1 lamentable		lam-en-ta-ble
@@ -664,6 +693,8 @@ available (for no particular reason), with identical behavior.
 \1 mediocrities		medi-oc-ri-ties
 \2 megafauna(l)		mega-fau-na l		% 2012/03, bnb, SciAm
 \5 megalith		mega-lith s
+\NewWordtrue
+\1 meganodes		mega-nodes		% 2014/10; dek
 \1 metabolic		meta-bol-ic
 \5 metabolism		me-tab-o-lism s
 \5 metabolite		me-tab-o-lite s
@@ -799,6 +830,8 @@ available (for no particular reason), with identical behavior.
 \1 paramount		para-mount
 \1 pathogenic		path-o-gen-ic
 \2 peevish(ness)	peev-ish -ness
+\NewWordtrue
+\3 penalty(ies)		pen-al-t y ies		% 2014/09, F. Mittelbach
 \5 pentagon		pen-ta-gon s
 \1 petroleum		pe-tro-le-um
 \1 phenolphthalein	phe-nol-phthalein	% 2006/05, John Harper
@@ -843,6 +876,10 @@ available (for no particular reason), with identical behavior.
 \5 postscript		post-script s
 \1 postural		pos-tur-al
 \5 preamble		pre-am-ble s
+\NewWordtrue
+\1 predictable		pre-dict-able		% 2015/03, bnb, 36#1
+\NewWordtrue
+\1 prefers		pre-fers		% 2014/08, Karl Berry
 \tabalign {\tt preloaded} & pre-loaded \cr
 \1 preparing		pre-par-ing
 \2 preprint(s)		pre-print s
@@ -953,6 +990,8 @@ available (for no particular reason), with identical behavior.
 \5 roundtable		round-table s
 \5 salesclerk		sales-clerk s
 \3 saleswoman(en)	sales-wom an en
+\NewWordtrue
+\1 salient		sa-lient		% 2014/01, Karl Berry
 \1 salmonella		sal-mo-nel-la
 \1 saltation		sal-ta-tion		% 2000/10
 \1 sarsaparilla		sar-sa-par-il-la
@@ -1069,6 +1108,8 @@ available (for no particular reason), with identical behavior.
 \1 temporarily		tem-po-rar-ily		% 1999/03
 \1 tenure		ten-ure
 \1 testbed		test-bed
+\NewWordtrue
+\1 teranodes		tera-nodes		% 2014/10; dek
 \1 tetrabutylammonium	tetra-butyl-ammo-nium	% 2009/10, John Harper
 \1 textheight		{\tt\bs text-height}	% 2008/05, bnb
 \1 textlength		{\tt\bs text-length}	% 2007/05, bnb
@@ -1094,6 +1135,8 @@ available (for no particular reason), with identical behavior.
 %\5 triple		tri-ple s		% 2013/05, bnb
 %% omitting triple and tripling because dictionary hyphens don't make sense
 \5 triplet		trip-let s		% 2013/05, bnb
+\NewWordtrue
+\2 triplex(es)		tri-plex -es		% 2014/02, bnb
 %\NewWordtrue
 %\1 tripling		tri-pling		% 2013/05, bnb
 \1 troubadour		trou-ba-dour
@@ -1103,6 +1146,8 @@ available (for no particular reason), with identical behavior.
 \1 unattached		un-at-tached
 \1 unerringly		un-err-ing-ly
 \3 unfriendly(ier)	un-friend-l y i-er
+\NewWordtrue
+\1 uninstantiated	un-in-stan-ti-at-ed	% 2014/05, Stephan Stiller
 \1 vaguer		vaguer
 \1 vaudeville		vaude-ville
 \1 vicars		vic-ars
@@ -1144,6 +1189,10 @@ available (for no particular reason), with identical behavior.
 \begingroup
 %\ninepoint
 \eightpoint
+\NewWordtrue
+\1 Alexander		Alex-an-der		% 2015/05, J. Wright
+\NewWordtrue
+\1 Alexandrine		Alex-an-drine		% 2015/05, J. Wright
 \1 algebraische 	al-ge-brai-sche
 \1 Algonquian		Al-gon-quian		% 2012/10, bnb, tb105thiele
 \1 Algonquin		Al-gon-quin		% 2012/10, bnb
@@ -1163,6 +1212,8 @@ available (for no particular reason), with identical behavior.
 \1 Brunswick		Bruns-wick
 \1 Budapest		Bu-da-pest
 \1 Burckhardt		Burck-hardt		% 2012/02, Mico Loretan
+\NewWordtrue
+\1 Caratheodory 	Cara-theo-dory		% 2014/09, bnb, AMS Transactions
 \1 Caribbean		Car-ib-bean
 \1 Charleston		Charles-ton
 \1 Charlottesville	Char-lottes-ville
@@ -1273,6 +1324,7 @@ available (for no particular reason), with identical behavior.
 \1 philosophische       phi-lo-so-phi-sche	% 2003/03; bnb; update, 2005/09
 \1 Poincare		Poin-care
 \1 Potentialgleichung	Po-ten-tial-glei-chung
+\1 Potomac		Po-to-mac		% 2014/01, from tex.sx 66528
 \5 Presbyterian		Pres-by-terian s	% 2006/06; dek
 \1 Pyongyang		Pyong-yang		% 2013/07, bnb
 \1 Pythagoras		Py-thag-o-ras		% 2009/07; bnb, GSM/Rotman
@@ -1332,5 +1384,6 @@ available (for no particular reason), with identical behavior.
 \endgraf
 \endgroup
 
+\bigskip
 \makesignature
 \endarticle
