@@ -1,3 +1,4 @@
+# $Id$
 # Public domain.  Originally written by Karl Berry, 2008.
 
 all: tb0hyf.pdf ushyphex.tex
@@ -23,6 +24,6 @@ tb0hyf.pdf: tb0hyf.tex
 h = hyphenex
 dist: all check
 	rm -f dist.zip
-	cd .. && zip $h/dist.zip $h/README $h/GNUmakefile $h/hyphenex.?? \
+	cd .. && zip $h/$h.zip $h/README $h/GNUmakefile $h/hyphenex.?? \
 	             $h/tb0hyf.tex $h/tb0hyf.pdf $h/test.tex $h/ushyphex.tex
 # CTAN wants upload to be within a directory.
