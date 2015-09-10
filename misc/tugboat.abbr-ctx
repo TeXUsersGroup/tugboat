@@ -12,6 +12,7 @@
 \def\AFM       {\acro{AFM}}
 \def\ALEPH     {Aleph}
 \def\AMS       {\acro{AMS}}
+\def\ASCIIMATH {\acro{ASCIIMATH}}
 \def\BIBTEX    {\BibTeX}
 \def\C         {C}
 \def\CCODE     {C code}
@@ -91,6 +92,7 @@
 \def\OCE       {\acro{OCE}}
 \def\OFM       {\acro{OFM}}
 \def\OMEGA     {Omega}
+\def\OPENMATH  {Open\-Math}
 \def\OPENTYPE  {Open\-Type}
 \def\PASCAL    {Pascal}
 \def\PDFTEX    {pdf\-\/\TeX}
@@ -158,6 +160,8 @@
 
 \def\citetitle{\textsl}
 \def\crlf{\newline}
+\def\enabledirectives[#1]{}
+\def\externalfigure[#1][#2]{\includegraphics{#1-crop.pdf}}
 \def\head{\item}
 \def\high{\textsuperscript}
 \def\hyphenatedurl{\url}
@@ -176,9 +180,19 @@
 \let\origfootnote=\footnote
 \def\footnote{\unskip\origfootnote}
 
+\def\placefigure[here][#1]#2#3{%
+ \begin{figure}[t]
+  \centering #3%
+  \caption{#2}%
+  \label{#1}%
+ \end{figure}
+}
+\def\startplacefigure#1\stopplacefigure{} % too complicated
+
+
 \def\type{\bgroup
    \catcode`_=12 \catcode`\\=12 \catcode`##=12 \catcode`\&=12 \catcode`$=12
-   \catcode`\%=12
+   \catcode`\%=12 \def\\{\char`\\ }%
    \finishtype}
 \def\finishtype#1{\texttt{%
   \spaceskip = .3333em \xspaceskip = \spaceskip
@@ -207,8 +221,21 @@
 \def\typebuffer{}
 \def\getbuffer{}
 
+% sometimes we want to ignore buffers instead of printing them.
+\def\tubignorebuffers{\long\def\startbuffer##1\stopbuffer{}}
+
+\def\startMPdefinitions#1\stopMPdefinitions{}
+
+\def\starttexdefinition#1\stoptexdefinition{}
+\def\texdefinition#1#2{}
+
 \def\startlinecorrection{}
 \def\stoplinecorrection{}
+
+\def\startlines{\begingroup}
+\def\stoplines{\endgroup}
+
+\def\stopluacode{}
 
 \def\starttabulate{\par\smallskip
   \noindent\begingroup \catcode`|=12 \begin{tabular}}
