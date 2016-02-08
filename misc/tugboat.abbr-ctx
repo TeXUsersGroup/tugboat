@@ -6,7 +6,8 @@
 % "fake" ConTeXt in LaTeX, for simple-enough documents.
 % Does not even pretend to be exhaustive, but still goes some way to
 % minimizing diffs from the original sources.
-% Frontmatter has to be done by hand.
+% Frontmatter has to be done by hand,
+% and \stoptyping and \stopbuffer replaced with \end{verbatim}.
 
 \def\ACROBAT   {Acrobat}
 \def\AFM       {\acro{AFM}}
@@ -128,6 +129,7 @@
 \def\UCS       {\acro{UCS}}
 \def\UNICODE   {Unicode}
 \def\URL       {url}
+\def\UTF       {\acro{UTF}}
 \def\USB       {\acro{USB}}
 \def\VF        {\acro{VF}}
 \def\VMWARE    {\acro{VM}ware}
@@ -156,10 +158,11 @@
 \let\StopArticle=\stopArticle
 %
 \let\starttext = \relax
-\let\stoptext = \relax
+\let\stoptext = \stopArticle
 
 \def\citetitle{\textsl}
 \def\crlf{\newline}
+\def\dontcomplain{}
 \def\enabledirectives[#1]{}
 \def\externalfigure[#1][#2]{\includegraphics{#1-crop.pdf}}
 \def\head{\item}
@@ -180,11 +183,12 @@
 \let\origfootnote=\footnote
 \def\footnote{\unskip\origfootnote}
 
-\def\placefigure[here][#1]#2#3{%
+% #1 is just optional whitespace
+\def\placefigure[here]#1[#2]#3#4{%
  \begin{figure}[t]
-  \centering #3%
-  \caption{#2}%
-  \label{#1}%
+  \centering #4%
+  \caption{#3}%
+  \label{#2}%
  \end{figure}
 }
 \def\startplacefigure#1\stopplacefigure{} % too complicated
@@ -220,6 +224,9 @@
 \def\stopbuffer{\errmessage{must literally end verbatim buffer}}
 \def\typebuffer{}
 \def\getbuffer{}
+
+% can't do better
+\long\def\startcombination#1\stopcombination{[ignored combination!]}
 
 % sometimes we want to ignore buffers instead of printing them.
 \def\tubignorebuffers{\long\def\startbuffer##1\stopbuffer{}}
