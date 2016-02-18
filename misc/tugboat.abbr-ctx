@@ -179,6 +179,7 @@
 \def\sym{\item}
 \def\tex{\cs}
 \def\unknown{\ldots}
+\def\usemodule[#1]{}
 
 \let\origfootnote=\footnote
 \def\footnote{\unskip\origfootnote}
