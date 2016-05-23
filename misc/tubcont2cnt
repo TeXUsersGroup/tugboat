@@ -1,9 +1,9 @@
 #!/usr/bin/env perl
 # $Id$
-# convert \getpage{papername} to page range for barbara's .cnt files
+# Public domain.
+# Convert \getpage{papername} to page range for barbara's .cnt files
 # and capsule.  See ~www/office/README.karl for usage.
 # When an item is contained on a single page, Barbara wants 100-100.
-# Public domain.
 
 $ERROR_COUNT = 0;
 exit (&main ());
