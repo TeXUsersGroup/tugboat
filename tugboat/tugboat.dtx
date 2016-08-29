@@ -196,7 +196,6 @@
 % |\TUB|&           \TUB\\
 % |\TUG|&           \TeX{} Users Group\\
 % |\UNIX|&\\
-% |\UTF|&\\
 % |\VAX|&\\
 % |\VnTeX|&\\
 % |\VorTeX|&\\
@@ -829,7 +828,7 @@
 \def\tug{\acro{TUG}}
 \def\UG{Users Group}
 \def\UNIX{\acro{UNIX}}
-% let's not do \UTF, since other packages use it for Unicode character access.
+% omit \UTF, since other packages use it for Unicode character access.
 \def\VAX{V\kern-.12em A\kern-.1em X\@}
 \def\VnTeX{V\kern-.03em n\kern-.02em \TeX}
 \def\VorTeX{V\kern-2.7\p@\lower.5ex\hbox{O\kern-1.4\p@ R}\kern-2.6\p@\TeX}
@@ -2372,25 +2371,14 @@
 \fi
 %    \end{macrocode}
 %
-% \cs{TB@startsection} traps \verb"*" versions of sectioning
-% commands, if numbering isn't in effect.  Its argument is the
-% complete set of \cs{@startsection} arguments.
+% \cs{TB@startsection} used to trap \verb"*" versions of sectioning
+% commands when numbering wasn't in effect.  But that eventually seemed
+% a useless complaint, since being able to switch back and forth between
+% numbered and unnumbered can be useful during article development.
+% So now \cs{TB@startsection} is just a synonym for \cs{@startsection}.
 %
 %    \begin{macrocode}
-\if@numbersec
-  \def\TB@startsection#1{\@startsection#1}%
-\else
-  \def\TB@startsection#1{%
-    \@ifstar
-      {\TBWarning{*-form of \expandafter\string\csname\@firstofsix#1%
-                  \endcsname\space
-                  \MessageBreak
-                  conflicts with nonumber class option}%
-       \@startsection#1}%
-      {\@startsection#1}%
-  }
-\fi
-\def\@firstofsix#1#2#3#4#5#6{#1}
+\def\TB@startsection#1{\@startsection#1}%
 %    \end{macrocode}
 %
 % \cs{TB@safe@startsection} is to be used where \cs{section*} (etc.)\
@@ -3004,7 +2992,7 @@
 % here\dots
 %
 %    \begin{macrocode}
-\def\thebibliography#1{%
+\def\thebibliography#1{% for harvardcite
   \let\TB@startsection\TB@safe@startsection
   \section*{\refname
     \@mkboth{\uppercase{\refname}}{\uppercase{\refname}}}%
@@ -3014,10 +3002,10 @@
     \itemindent -\bibindent
     \listparindent \itemindent
     \parsep \z@
-    \usecounter{enumi}}
-  \def\newblock{}
+    \usecounter{enumi}}%
+  \def\newblock{}%
   \BibJustification
-  \sfcode`\.=1000\relax
+  \frenchspacing % more than just period
 }
 %    \end{macrocode}
 %
@@ -3162,7 +3150,7 @@
   \def\@evenfoot{\@author\hfil}
 }
 
-\def\@tubrunninggetauthor#1{#1
+\def\@tubrunninggetauthor#1{#1%
   \begingroup
     \let\thanks\@gobble
     \protected@xdef\rhAuthor{\the\toks@##1}%
@@ -3266,8 +3254,8 @@
 %    \end{macrocode}
 %
 % The \cs{acro} command uses \cs{SMC} as it was originally intended.
-% Note that, since most of these things are uppercase-only names, it
-% fiddles with the spacefactor after inserting its text.
+% Since these things are uppercase-only, it fiddles with the
+% spacefactor after inserting its text.
 %
 %    \begin{macrocode}
 \newcommand{\acro}[1]{\textSMC{#1}\@}
