@@ -2,7 +2,7 @@
 % $Id$
 % tugboat.dtx - main source for LaTeX TUGboat classes.
 %
-% Copyright 1994-2015 TeX Users Group.
+% Copyright 1994-2016 TeX Users Group.
 %
 % This file is part of the tugboat package.
 %
@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2015/03/24 v2.17
+                   [2016/08/29 v2.17
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -3005,7 +3005,7 @@
     \usecounter{enumi}}%
   \def\newblock{}%
   \BibJustification
-  \frenchspacing % more than just period
+  \frenchspacing % more than just period, see comments below
 }
 %    \end{macrocode}
 %
@@ -3049,19 +3049,29 @@
 % \begin{macro}{\thebibliography}
 % \begin{macro}{\TB@@thebibliography}
 % If the user's asked to use \LaTeX's default citation mechanism
-% (using the |rawcite| option), we still need to play with
-% \cs{TB@startsection}: this is a boring fact of life\dots
-%
-% We also patch \cs{sloppy} in case there's a need for alternative
-% justification of the body of the bibliography.
+% (using the |rawcite| option), we still need to 
+% patch \cs{sloppy} to support justification of the body of the
+% bibliography.  We kludge in a call to \cs{frenchspacing} too,
+% since there is no reason to change only period's \cs{sfcode}, as
+% \LaTeX's original |thebibliography| (in |classes.dtx|) does.
+% 
+% By the way, |amsgen.sty| changes \cs{frenchspacing} to set the
+% \cs{sfcode} of punctuation character to successively decreasing
+% integers ending at 1001 for comma.  Thus its 1006 for period is
+% overwritten to 1000 for |thebibliography|, making |amsgen|'s
+% \cs{@addpunct} ineffective.  Don't know what that means in practice,
+% if anything.
+% 
+% Back here, we also play with \TB@startsection since we always have,
+% though that is no longer needed.
 %    \begin{macrocode}
-\else
-\let\TB@@thebibliography\thebibliography
+\else % not harvardcite
+\let\TB@origthebibliography\thebibliography
 \def\thebibliography{%
   \let\TB@startsection\TB@safe@startsection
-  \let\sloppy\BibJustification
-  \TB@@thebibliography}
-\fi
+  \def\sloppy{\frenchspacing\BibJustification}%
+  \TB@origthebibliography} % latex's thebibliography now reads args.
+\fi  % not harvardcite
 %    \end{macrocode}
 % \end{macro}
 % \end{macro}
