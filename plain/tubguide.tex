@@ -1,9 +1,9 @@
 %% @texfile{
 %%     filename   = "tubguide.tex",
-%%     version    = "1.04",
-%%     date       = "2012/05/22",
+%%     version    = "1.22",
+%%     date       = "2016/09/26",
 %%     filetype   = "TUGboat Authors' Guide",
-%%     copyright  = "Copyright 1989, 1992, 2006, 2012 TeX Users Group.
+%%     copyright  = "Copyright 1989, 1992, 2006, 2012-2016 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -48,8 +48,8 @@
 
 \author  * Barbara Beeton *
 \address * American Mathematical Society\\
-	   201 Charles Street\\
-	   Providence, RI 02904-2294 *
+           201 Charles Street\\
+           Providence, RI 02904-2294 *
 \netaddress * TUGboat@tug.org *
 
 \author * Ron Whitney *
@@ -57,12 +57,13 @@
 %\netaddress * TUGboat@Math.AMS.com *
 
 
-\vfootnote{}{Revised March 1992, May 2006, May 2012; the original appeared in
+\vfootnote{}{Revised March 1992, May 2006, May 2012, September 2016; the
+original appeared in
 \tubissue 10(3), November 1989.}
 
 \article
 
-With this article we hope to fill a lacuna (some might say ``void'')
+With this report we hope to fill a lacuna (some might say ``void'')
 whose existence we have been attributing to the usual factors: tight
 schedules, alternative priorities and warty \TeX\ code.  We now feel
 the macros in use for \TUB\/ have stabilized to the extent that
@@ -74,38 +75,40 @@ for the style files).  Suggestions and comments are quite welcome at
 the addresses listed below.
 
 \TUB\/ was originally typeset with a package based only on \plain.
-Later, as demand for style files follows wherever
-\LaTeX-devotees wander, a \TUB\/ variant of the \LaTeX\ {\tt article}
-style was also created.  The two macro sets yield
-much the same output, differing in certain ways for input.  Below we
-make comment on various aspects of the \TUB\/ package, first for the
-\plain-based macros, then for \LaTeX.  The macro sets share
-the file |tugboat.cmn|,\footnote{$^1$}{This file used to be named
-{\tt tugboat.com}, but that notation was in conflict with conventions
-of \acro{MS-DOS} and other operating systems; no conflicts are known to
-exist for the new name.} and users of either style should read the
-section entitled ``Common Abbreviations and Utilities''.  We conclude
-with some general suggestions to help make the lives of those on the
-receiving end of (any kind of) electronic copy a little easier.
+Later, as demand for style files follows wherever \LaTeX-devotees
+wander, a \TUB\/ variant of the \LaTeX\ {\tt article} class was also
+created\Dash see |ltugboat.cls| and its documentation in the separate
+package |tugboat| (|http://ctan.org/pkg/tugboat|) .  The two macro sets
+yield much the same output, and many input conventions are identical,
+with differences where they seemed natural.
+
+Below we describe various aspects of the \TUB\/ package for the
+\plain-based macros. We conclude with some general suggestions to help
+make the lives of those on the receiving end of (any kind of) electronic
+copy a little easier.
 
 
 \head * The \plain-based macros: {\tt tugboat.sty} *
 
-The macros are contained in two files, |tugboat.sty| and |tugboat.cmn|.$^1$
+The macros are contained in two files, |tugboat.sty| and
+|tugboat.cmn|.\footnote{$^1$}{1) A file |tugproc.sty| is also
+distributed, but no longer used. 2) |tugboat.cmn| used to be named {\tt
+tugboat.com}, but that notation was in conflict with conventions of
+\acro{MS-DOS} and other operating systems; no conflicts are known to
+exist for the new name.}
 
-\subhead * General description of tags *
-We attempt wherever possible to tag the various elements of \TUB\/
-articles in a ``generic'' way, modified in some respects by
-convenience.  Authors and editors, of course, need tools to shape
-their articles to the form they desire, but we also wish to encourage
-a tagging style which is appropriate for electronic interchange.  It
-seems unfair to expect much thought from authors concerning the
-markup of their information if we only provide a bag of widgets and
-do-hickies to hack and pound an article together.  The tags whose use
-we encourage are the higher-level tags that mark the logical
-document structure.  Below these are formatting macros that we
-recognize may be essential for certain applications.  Both sorts of
-tags are described in the following article.
+\subhead * General description of tags * We attempt wherever possible to
+tag the various elements of \TUB\/ articles in a ``generic'' way,
+modified in some respects by convenience.  Authors and editors need
+tools to shape their articles to the form they desire, but we also wish
+to encourage a tagging style which is appropriate for electronic
+interchange.  It seems unfair to expect much thought from authors
+concerning the markup of their information if we only provide a bag of
+widgets and do-hickies to hack and pound an article together.  The tags
+whose use we encourage are the higher-level tags that mark the logical
+document structure.  Below these are formatting macros that we recognize
+may be essential for certain applications.  Both sorts of tags are
+described in the following article.
 
 Generally, to ``mark up'' the data <foo>, a tag |\xxx| will precede
 <foo> and |\endxxx| will follow (thus: |\xxx <foo>\endxxx|).  We use
@@ -216,7 +219,7 @@ of
 \thenetaddress {<author number>}
 ||
 to get the desired result.  For example, for an article with%
-\footnote{$^2$}{\xEdNote The \TUB{} address shown in examples
+\footnote{$^2$}{\xEdNote The \TUB{} email address shown in examples
 was current when this article first appeared, but is now obsolete;
 it has been left intact to avoid other problems.  The correct address
 is now {\tt TUGboat@tug.org}.}
@@ -294,7 +297,7 @@ which {\it appear\/} innocuous, may not be so.
 
 
 \subhead * Lists *
-Lists are everywhere, of course, and a simple list hierarchy can
+Lists are everywhere, and a simple list hierarchy can
 transform a one-dimensional typesetting problem into something
 nasty.  All of which is to say, we are certainly not done with
 this area of tagging, but here are the available macros.
@@ -660,56 +663,7 @@ listed under tags.
    \caption{...}
 \twocolfigure
 ||
-and, of course, \verbinline|\endverbatim and \verbinline||\endverbatim.
-
-\head * The \LaTeX\ macros: {\tt ltugboat.sty}%
-\footnote{$^3$}{This discussion of {\tt ltugboat.sty} is now of
-historical interest only; it has been superseded by a \LaTeXe{}
-documentclass, {\tt ltugboat.cls}, available from \CTAN.} *
-
-|ltugboat.sty| is the primary macro file, and is based on the \LaTeX{}
-|article.sty|.  |tugboat.cmn|, a collection of items common to both
-\LaTeX\ and \plain\ input, is also required.  Articles will have
-the form:\footnote{$^4$}{{\tt ltugboat} used to be a substyle; it now
-stands on its own, by automatically inputting {\tt article.sty}.}
-\verbatim[\makeescape\|]
-\documentstyle{ltugboat}
-|halfline
-<perhaps additional macros for article>
-|halfline
-\title {<title>}
-\author{<author>}
-\address{<address>}
-\netaddress{<netaddress>}
-
-\begin{document}
-\maketitle
-|vellipsis
-<body of article>
-|vellipsis
-\makesignature
-\end{document}
-\endverbatim
-This is the usual form for \LaTeX\ documents, of course, except
-that now each author will have his/her own
-\verbatim
-\author{...}
-\address{...}
-\netaddress{...}
-\endverbatim
-block.  As with the \plain{} style, the author and address
-macros will store their information for later display.
-See the discussion of |\address|, |\netaddress| and |\makesignature|
-on the second page of this article to understand more.  Linebreaks
-within |\title|, |\author|, and |\...address| are specified with |\\|.
-
-We refer the user to the \LaTeX\ manual for description of section
-heads, verbatim mode, insertions, and movement between one- and
-two-column format.  The style of printed output has, of course, been
-somewhat modified to fit \TUB\/ style.  |ltugboat.sty| might be of some
-use to others wishing to modify the |article| option in this
-direction.
-
+and \verbinline|\endverbatim and \verbinline||\endverbatim input syntax.
 
 
 \head * Common abbreviations and utilities *
@@ -722,14 +676,18 @@ necessary.
 A nicety for the sake of appearance is the command |\acro|, which
 sets an acronym in caps one size smaller than the surrounding text.
 Compare CTAN (full size), \CTAN{} (|\acro{CTAN}|) and {\smc ctan}
-(small caps).  Acronyms in |tugboat.cmn| use |\acro| consistently.
+(small caps).  Acronyms in |tugboat.cmn| use |\acro| consistently,
+except in (some) bibliographies.
 
 Several other constructions that we have found useful for both
 \plain- and \LaTeX-style input have been incorporated in
 |tugboat.cmn|.  Various |\*lap|\,s (|\ulap|, |\dlap|, |\xlap|,
 |\ylap|, |\zlap|) and |\*smash|\,es provide means of setting type
-which ``laps'' into neighboring regions.  |\dash| and |\Dash| are en-
-and em-dashes that break properly.  |\slash| is a breakable slash.
+which ``laps'' into neighboring regions.
+|\Dash| is an em-dash with surrounding thinspaces, our preferred style.
+|\slash| is a breakable slash.
+|\cs{foo}| typesets |\foo|, just like \verbinline|\foo|\endverbatim (but
+since |\cs| is the usual \TUB\ \LaTeX\ convention, we support it here too).
 The macro
 \verbatim
 \makestrut [<ascender dimen>;
@@ -760,7 +718,7 @@ Constructing an entire issue of \TUB\/ requires use of a few features
 that authors may notice when articles are returned for proofing.
 |\xrefto| allows for symbolic cross-referencing, but is enabled only
 late in the production process.  The distribution version of
-|tugboat.cmn| defines |\xrefto| so that ``???'' is typeset whenever it
+|tugboat.cmn| defines |\xrefto| so that ``???''\ is typeset whenever it
 is called.  Not to worry.
 
 We also put notes into the file since there are many things to
@@ -804,21 +762,19 @@ narrowly specific) result.
 When authors proof their articles in formats other than that of \TUB\/
 (for example), they should expect that \TUB's changes in pagewidth and
 pagedepth may drastically alter text layout.  Paragraphs are rebroken
-automatically when |\hsize| and |\vsize| change, but |\centerline|
-does not break, and we often see tables and math displays which are
-rigidly laid out.  When possible, authors might use paragraphing
-techniques instead of calls to, say, |\centerline| (Beeton will be
-writing up her lectures on paragraphing techniques for a future issue
-of \TUB\/), and they should try to code tables in such a way that
-widths of columns can be changed easily.  Generally, authors should
-attempt to anticipate the work that might be necessary if requests for
-other reasonable formats of their texts are made.  In the case of
-\TUB, we make a strong effort to stuff macro listings and tables into
-the two-column format.  Since these types of items are not generally
-susceptible to automatic line-breaking, we give thanks to stuffings
-made by authors ahead of time.  In this context, we recommend the use
-of |\verbfile{...}| (see the section `{Verbatim modes}') to maintain
-consistency between documentation and reality.
+automatically when |\hsize| and |\vsize| change, but |\centerline| does
+not break, and we often see tables and math displays which are rigidly
+laid out.  When possible, authors might use paragraphing techniques
+instead of calls to, say, |\centerline|, and they should try to code
+tables in such a way that widths of columns can be changed easily.
+Generally, authors should attempt to anticipate the work that might be
+necessary if requests for other reasonable formats of their texts are
+made.  In the case of \TUB, we make a strong effort to stuff macro
+listings and tables into the two-column format.  Since these types of
+items are not generally susceptible to automatic line-breaking, we give
+thanks to stuffings made by authors ahead of time.  In this context, we
+recommend the use of |\verbfile{...}| (see the section `{Verbatim
+modes}') to maintain consistency between documentation and reality.
 
 Specifically in the domain of \TeX\ macros, we find that many authors
 throw in unnecessary |%| characters to end code lines.  Except in
@@ -842,14 +798,12 @@ little extra effort in making these macros consistent with the macros
 in wide distribution and in making them robust will be much
 appreciated.
 
-\TBremark{Anything about formatting macros?}
-
 
 \head * Electronic documentation and submissions *
 
-In addition to |tugboat.sty|, |ltugboat.sty|, and |tugboat.cmn|,
-a copy of this article, |tubguide.tex|, will be available in
-most \TeX{} distributions and on \CTAN:
+The TUGboat styles for both \LaTeX\ and plain \TeX\ are available on
+\CTAN\ and already included in most \TeX\ distributions:
+
 ||http://ctan.org/pkg/tugboat
 http://ctan.org/pkg/tugboat-plain||
 
