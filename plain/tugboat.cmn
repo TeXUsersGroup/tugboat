@@ -3,7 +3,7 @@
 %%     version    = "see below \fileversion"
 %%     date       = "see below \filedate",
 %%     filetype   = "common macros for TUGboat",
-%%     copyright  = "Copyright 1993-1996,2006,2008,2011-2013 TeX Users Group.
+%%     copyright  = "Copyright 1993-1996,2006,2008,2011-2016 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -22,8 +22,8 @@
 %% $Id$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\def\fileversion{v1.21}
-\def\filedate{2013/08/02}
+\def\fileversion{v1.22}
+\def\filedate{2016/09/26}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -112,6 +112,8 @@
 \def\ConTeXt{C\kern-.0333emon\-\kern-.0667em\TeX\kern-.0333emt}
 \def\Cplusplus{C\raise.7ex\hbox{$_{++}$}}
 \def\CSS{\acro{CSS}}
+\def\CSabbr{$\cal C$\kern-.1667em\lower.5ex\hbox{$\cal S$}} % from opmac.tex
+\def\CSTUG{\CSabbr\acro{TUG}}
 \def\CTAN{\acro{CTAN}}
 \def\DTD{\acro{DTD}}
 \def\DVD{\acro{DVD}}
@@ -455,6 +457,7 @@
 
 \def\bull{\vrule height 1ex width .8ex depth -.2ex } % square bullet
 \def\cents{{\rm\raise.2ex\rlap{\kern.05em$\scriptstyle/$}c}}
+\def\cs#1{{\tt \char`\\#1}}
 \def\Dag{\raise .6ex\hbox{$\scriptstyle\dagger$}}
 
 \def\careof{\leavevmode\hbox{\raise.75ex\hbox{c}\kern-.15em
@@ -871,12 +874,12 @@ that may not be obvious.  For full definitions, see real code above.
 \TFM
 \Thanh          Han The Thanh
 \TIFF
-\ttn		TTN
-\TTN		\TeX and TUG News
+\ttn            TTN
+\TTN            \TeX and TUG News
 \TUB            TUGboat
 \TUG            TeX Users Group
 \tug
-\UG		Users Group
+\UG             Users Group
 \UNIX
 \UTF
 \VAX
@@ -1001,6 +1004,7 @@ that may not be obvious.  For full definitions, see real code above.
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+1.22      26 Sep 16   define \CSabbr, \CSTUG, \cs.
 1.21       2 Aug 13   define \LyX
 
 1.20       4 Apr 12   allow omission of hyphenation list
