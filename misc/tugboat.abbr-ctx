@@ -1,6 +1,5 @@
 % $Id$
-% Copyright 1999, 2006, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015
-% TeX Users Group.
+% Copyright 1999-2016 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 % "fake" ConTeXt in LaTeX, for simple-enough documents.
@@ -9,6 +8,7 @@
 % Frontmatter has to be done by hand,
 % and \stoptyping and \stopbuffer replaced with \end{verbatim}.
 
+% \def\GUI already in tub
 \def\ACROBAT   {Acrobat}
 \def\AFM       {\acro{AFM}}
 \def\ALEPH     {Aleph}
@@ -40,7 +40,6 @@
 \def\FLAC      {\acro{FLAC}}
 \def\FONTFORGE {FontForge}
 \def\FONTINST  {fontinst}
-% \def\GUI already in tub
 \def\FSF       {\acro{FSF}}
 \def\HZ        {Hz}
 \def\IBM       {\acro{IBM}}
@@ -52,8 +51,8 @@
 \def\JAVASCRIPT{Java\-Script}
 \def\JIT       {jit}
 \def\KPSE      {{\tt kpse}}
-\def\KVM       {\acro{KVM}}
 \def\KPSEWHICH {{\tt kpsewhich}}
+\def\KVM       {\acro{KVM}}
 \def\LAMSTEX   {\LAMSTeX}
 \def\LATEX     {\LaTeX}
 \def\LCD       {\acro{LCD}}
@@ -66,6 +65,8 @@
 \def\LUALATEX  {Lua\LATEX}
 \def\LUATEX    {\LUA\-\TeX}
 \def\LUATOOLS  {{\tt luatools}}
+\def\Lua       {Lua}
+\def\LuaTeX    {\LUA\-\TeX}
 \def\MACOSX    {\MacOSX}
 \def\MAKEMPX   {{\tt makempx}}
 \def\MAP       {\acro{MAP}}
@@ -75,6 +76,7 @@
 \def\METAFONT  {\MF}
 \def\METAFUN   {Metafun}
 \def\METAPOST  {MetaPost}
+\def\MetaPost  {MetaPost}
 \def\METATEX   {Meta\TeX}
 \def\MICROSOFT {Micro\-soft}
 \def\MIKTEX    {MiK\-\TeX}
@@ -111,13 +113,12 @@
 \def\SSD       {\acro{SSD}}
 \def\SUMATRA   {Sumatra\-\acro{PDF}}
 \def\SWIGLIB   {SwigLib}
-\def\TABLE     {T\kern-.27em\lower.5ex\hbox{A}\kern-.18em B\kern-.1em
-                 \lower.5ex\hbox{L}\kern-.075em E}
+\def\TABLE     {T\kern-.27em\lower.5ex\hbox{A}\kern-.18em B\kern-.1em \lower.5ex\hbox{L}\kern-.075em E}
 \def\TDS       {\acro{TDS}}
 \def\TEX       {\TeX}
 \def\TEXEXEC   {{\tt texexec}}
-\def\TEXLUA    {{\tt texlua}}
 \def\TEXLIVE   {\TeX\ Live}
+\def\TEXLUA    {{\tt texlua}}
 \def\TEXMFSTART{{\tt texmfstart}}
 \def\THANH     {\Thanh}
 \def\THETEXBOOK{\TB}
@@ -129,8 +130,8 @@
 \def\UCS       {\acro{UCS}}
 \def\UNICODE   {Unicode}
 \def\URL       {url}
-\def\UTF       {\acro{UTF}}
 \def\USB       {\acro{USB}}
+\def\UTF       {\acro{UTF}}
 \def\VF        {\acro{VF}}
 \def\VMWARE    {\acro{VM}ware}
 \def\WEB       {\acro{WEB}}
@@ -140,31 +141,15 @@
 \def\XETEX     {\XeTeX}
 \def\YANDY     {\acro{Y\&Y}}
 \def\ZIP       {{\tt zip}}
+\def\pdfTeX    {pdf\-\/\TeX}
 
 % 
-\def\subject{\section}
-\def\subsubject{\subsection}
-%
-\def\startAbstract{\begin{abstract}}
-\let\StartAbstract=\startAbstract
-%
-\def\stopAbstract{\end{abstract}}
-\let\StopAbstract=\stopAbstract
-%
-\def\startKeywords{\smallskip \noindent \begingroup \raggedright {\bf Keywords: }}
-\def\stopKeywords{\par\endgroup}
-%
-\def\stopArticle{\end{document}}
-\let\StopArticle=\stopArticle
-%
-\let\starttext = \relax
-\let\stoptext = \stopArticle
-
+\def\blank{}
 \def\citetitle{\textsl}
 \def\crlf{\newline}
 \def\dontcomplain{}
 \def\enabledirectives[#1]{}
-\def\externalfigure[#1][#2]{\includegraphics{#1-crop.pdf}}
+\def\externalfigure[#1] [#2]{\centerline{\includegraphics[width=.95\hsize]{#1-crop}}}
 \def\head{\item}
 \def\high{\textsuperscript}
 \def\hyphenatedurl{\url}
@@ -172,10 +157,14 @@
 \def\low#1{\ensuremath{_{\,\textrm{\footnotesize #1}}}}
 \let\noindentation = \relax
 \let\origquote = \quote
+\def\page{}
 \def\quote#1{{`#1'}}
 \let\origquotation = \quotation
 \def\quotation#1{{``#1''}}
+\def\ss{}
 \let\stop=\relax
+\def\subject{\section}
+\def\subsubject{\subsection}
 \def\sym{\item}
 \def\tex{\cs}
 \def\unknown{\ldots}
@@ -192,8 +181,6 @@
   \label{#2}%
  \end{figure}
 }
-\def\startplacefigure#1\stopplacefigure{} % too complicated
-
 
 \def\type{\bgroup
    \catcode`_=12 \catcode`\\=12 \catcode`##=12 \catcode`\&=12 \catcode`$=12
@@ -202,6 +189,40 @@
 \def\finishtype#1{\texttt{%
   \spaceskip = .3333em \xspaceskip = \spaceskip
   #1}\egroup\spacefactor=1000 }
+
+
+%  start .. stop
+
+\def\startAbstract{\begin{abstract}}
+\let\StartAbstract=\startAbstract
+%
+\def\stopAbstract{\end{abstract}}
+\let\StopAbstract=\stopAbstract
+
+\def\stopArticle{\end{document}}
+\let\StopArticle=\stopArticle
+
+\let\startbuffer=\starttyping % not really, but all we can do.
+\def\stopbuffer{\errmessage{must literally end verbatim buffer}}
+\def\typebuffer{}
+\def\getbuffer{}
+
+% sometimes we want to ignore buffers instead of printing them.
+\def\tubignorebuffers{\long\def\startbuffer##1\stopbuffer{}}
+
+% can't do better
+\long\def\startcombination#1\stopcombination{[ignored combination!]}
+
+{\obeylines \gdef\startcomponent{\bgroup \obeylines \ignoretoeol}%
+ \gdef\ignoretoeol#1^^M{\egroup}%
+ \global\let\environment=\startcomponent %
+ \global\let\start=\startcomponent %
+ \global\let\startchapter=\startcomponent %
+}
+\def\stopcomponent{\makesignature \end{document}}
+
+\def\startformula{\begin{displaymath}}
+\def\stopformula{\end{displaymath}}
 
 \def\startitemize{\begin{itemize}}
 \def\stopitemize{\end{itemize}}
@@ -212,6 +233,24 @@
 \def\startitem{\item}
 \let\stopitem=\relax
 
+\def\startKeywords{\smallskip \noindent \begingroup \raggedright {\bf Keywords: }}
+\def\stopKeywords{\par\endgroup}
+
+\def\startlinecorrection{\par\smallskip}
+\def\stoplinecorrection{\par\smallskip}
+
+\def\startlines{\begingroup\obeylines\parindent=0pt}
+\def\stoplines{\endgroup}
+
+\def\stopluacode{}
+
+\def\startMPdefinitions#1\stopMPdefinitions{}
+
+\def\startnarrower{\startquotation}
+\def\stopnarrower{\stopquotation}
+
+\def\startplacefigure#1\stopplacefigure{} % too complicated
+
 \def\startquotation{\begingroup \origquotation}
 \def\stopquotation{\par\endgroup\smallskip}
 
@@ -221,29 +260,15 @@
 % \end{verbatim} has to be literal.
 \def\stoptyping{\errmessage{must literally end verbatim typing}}
 
-\let\startbuffer=\starttyping % not really, but all we can do.
-\def\stopbuffer{\errmessage{must literally end verbatim buffer}}
-\def\typebuffer{}
-\def\getbuffer{}
+\def\startsection[title=#1]{\section{#1}}
+\def\stopsection{}
+\def\stopchapter{}
 
-% can't do better
-\long\def\startcombination#1\stopcombination{[ignored combination!]}
+\def\startsubject[title=#1]{\section{#1}}
+\def\stopsubject{}
 
-% sometimes we want to ignore buffers instead of printing them.
-\def\tubignorebuffers{\long\def\startbuffer##1\stopbuffer{}}
-
-\def\startMPdefinitions#1\stopMPdefinitions{}
-
-\def\starttexdefinition#1\stoptexdefinition{}
-\def\texdefinition#1#2{}
-
-\def\startlinecorrection{}
-\def\stoplinecorrection{}
-
-\def\startlines{\begingroup}
-\def\stoplines{\endgroup}
-
-\def\stopluacode{}
+\def\startsubsubject[title=#1]{\subsection{#1}}
+\def\stopsubject{}
 
 \def\starttabulate{\par\smallskip
   \noindent\begingroup \catcode`|=12 \begin{tabular}}
@@ -253,32 +278,11 @@
 \def\NC{&}
 \def\HL{\hline}
 
-{\obeylines \gdef\startcomponent{\bgroup \obeylines \ignoretoeol}%
- \gdef\ignoretoeol#1^^M{\egroup}%
- \global\let\environment=\startcomponent %
- \global\let\start=\startcomponent %
- \global\let\startchapter=\startcomponent %
-}
-\def\stopcomponent{\makesignature \end{document}}
-\def\blank{}
-\def\page{}
-\def\ss{}
+\def\starttexdefinition#1\stoptexdefinition{}
+\def\texdefinition#1#2{}
 
-\def\startformula{\begin{displaymath}}
-\def\stopformula{\end{displaymath}}
-
-\def\startlinecorrection{}
-\def\stoplinecorrection{}
-
-\def\startnarrower{\startquotation}
-\def\stopnarrower{\stopquotation}
-
-\def\startsection[title=#1]{\section{#1}}
-\def\stopsection{}
-\def\stopchapter{}
-
-\def\startsubsubject[title=#1]{\subsection{#1}}
-\def\stopsubsubject{}
+\let\starttext = \relax
+\let\stoptext = \stopArticle
 
 % ||   en-dash in ConTeXt
 % |-|  normal hyphen with line break allowed
