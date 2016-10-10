@@ -147,13 +147,17 @@
 \def\blank{}
 \def\citetitle{\textsl}
 \def\crlf{\newline}
+\def\definefontsynonym[#1] [#2]{}
 \def\dontcomplain{}
 \def\enabledirectives[#1]{}
-\def\externalfigure[#1] [#2]{\centerline{\includegraphics[width=.95\hsize]{#1-crop}}}
+% width=.95\hsize
+\def\externalfigure[#1]#2[#3]{\centerline{\includegraphics[#3]{#1}}}
+\def\getnamedglyphdirect{}
 \def\head{\item}
 \def\high{\textsuperscript}
 \def\hyphenatedurl{\url}
 \def\in#1[#2]{#1~\ref{#2}}
+\def\loadtypescriptfile[#1]{}
 \def\low#1{\ensuremath{_{\,\textrm{\footnotesize #1}}}}
 \let\noindentation = \relax
 \let\origquote = \quote
@@ -161,6 +165,7 @@
 \def\quote#1{{`#1'}}
 \let\origquotation = \quotation
 \def\quotation#1{{``#1''}}
+\def\setvariables[#1]#2[#3]{}
 \def\ss{}
 \let\stop=\relax
 \def\subject{\section}
@@ -171,14 +176,14 @@
 \def\usemodule[#1]{}
 
 \let\origfootnote=\footnote
-\def\footnote{\unskip\origfootnote}
+\def\footnote{\unskip\protect\origfootnote}
 
-% #1 is just optional whitespace
-\def\placefigure[here]#1[#2]#3#4{%
+% #2 is usually "here"; #2 is optional whitespace.
+\def\placefigure[#1]#2[#3]#4#5{%
  \begin{figure}[t]
-  \centering #4%
-  \caption{#3}%
-  \label{#2}%
+  \centering #5%
+  \caption{#4 (label=#3)}%
+  \label{#3}%
  \end{figure}
 }
 
@@ -199,16 +204,11 @@
 \def\stopAbstract{\end{abstract}}
 \let\StopAbstract=\stopAbstract
 
-\def\stopArticle{\end{document}}
+\def\startArticle[#1]{\begin{document}\maketitle}
+\let\startArticle=\startArticle
+%
+\def\stopArticle{\makesignature \end{document}}
 \let\StopArticle=\stopArticle
-
-\let\startbuffer=\starttyping % not really, but all we can do.
-\def\stopbuffer{\errmessage{must literally end verbatim buffer}}
-\def\typebuffer{}
-\def\getbuffer{}
-
-% sometimes we want to ignore buffers instead of printing them.
-\def\tubignorebuffers{\long\def\startbuffer##1\stopbuffer{}}
 
 % can't do better
 \long\def\startcombination#1\stopcombination{[ignored combination!]}
@@ -219,7 +219,7 @@
  \global\let\start=\startcomponent %
  \global\let\startchapter=\startcomponent %
 }
-\def\stopcomponent{\makesignature \end{document}}
+\def\stopcomponent{\stopArticle}
 
 \def\startformula{\begin{displaymath}}
 \def\stopformula{\end{displaymath}}
@@ -260,12 +260,23 @@
 % \end{verbatim} has to be literal.
 \def\stoptyping{\errmessage{must literally end verbatim typing}}
 
+\let\startbuffer=\starttyping % not really, but all we can do.
+\def\stopbuffer{\errmessage{must literally end verbatim buffer}}
+\def\typebuffer{}
+\def\getbuffer{}
+
+% sometimes we want to ignore buffers instead of printing them.
+\def\tubignorebuffers{\long\def\startbuffer##1\stopbuffer{}}
+
 \def\startsection[title=#1]{\section{#1}}
 \def\stopsection{}
 \def\stopchapter{}
 
 \def\startsubject[title=#1]{\section{#1}}
 \def\stopsubject{}
+
+\def\startsubsection[title=#1]{\subsection{#1}}
+\def\stopsubsection{}
 
 \def\startsubsubject[title=#1]{\subsection{#1}}
 \def\stopsubject{}
