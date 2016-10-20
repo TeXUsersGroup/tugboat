@@ -10,6 +10,7 @@
 
 % \def\GUI already in tub
 \def\ACROBAT   {Acrobat}
+\def\ADE       {\acro{ADE}}
 \def\AFM       {\acro{AFM}}
 \def\ALEPH     {Aleph}
 \def\AMS       {\acro{AMS}}
@@ -182,10 +183,12 @@
 \def\placefigure[#1]#2[#3]#4#5{%
  \begin{figure}[t]
   \centering #5%
-  \caption{#4 (label=#3)}%
+  \caption{#4}% %debug (label=#3)}%
   \label{#3}%
  \end{figure}
 }
+
+\def\scale[#1]#2#3{}
 
 \def\type{\bgroup
    \catcode`_=12 \catcode`\\=12 \catcode`##=12 \catcode`\&=12 \catcode`$=12
@@ -211,7 +214,7 @@
 \let\StopArticle=\stopArticle
 
 % can't do better
-\long\def\startcombination#1\stopcombination{[ignored combination!]}
+\long\def\startcombination#1\stopcombination{[ignored combination, fix!!]}
 
 {\obeylines \gdef\startcomponent{\bgroup \obeylines \ignoretoeol}%
  \gdef\ignoretoeol#1^^M{\egroup}%
@@ -223,6 +226,8 @@
 
 \def\startformula{\begin{displaymath}}
 \def\stopformula{\end{displaymath}}
+
+\long\def\startframedtext#1\stopframedtext{[ignored framedtext, fix!!]}
 
 \def\startitemize{\begin{itemize}}
 \def\stopitemize{\end{itemize}}
