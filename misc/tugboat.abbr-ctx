@@ -180,12 +180,14 @@
 \def\footnote{\unskip\protect\origfootnote}
 
 % #2 is usually "here"; #2 is optional whitespace.
+\def\myfigureenv{figure}% allow for figure* override
 \def\placefigure[#1]#2[#3]#4#5{%
- \begin{figure}[t]
+ \begin{\myfigureenv}[t]
   \centering #5%
   \caption{#4}% %debug (label=#3)}%
   \label{#3}%
- \end{figure}
+ \end{\myfigureenv}
+\def\myfigureenv{figure}
 }
 
 \def\scale[#1]#2#3{}
@@ -241,8 +243,8 @@
 \def\startKeywords{\smallskip \noindent \begingroup \raggedright {\bf Keywords: }}
 \def\stopKeywords{\par\endgroup}
 
-\def\startlinecorrection{\par\smallskip}
-\def\stoplinecorrection{\par\smallskip}
+\def\startlinecorrection{\par}
+\def\stoplinecorrection{\par}
 
 \def\startlines{\begingroup\obeylines\parindent=0pt}
 \def\stoplines{\endgroup}
@@ -265,13 +267,13 @@
 % \end{verbatim} has to be literal.
 \def\stoptyping{\errmessage{must literally end verbatim typing}}
 
-\let\startbuffer=\starttyping % not really, but all we can do.
-\def\stopbuffer{\errmessage{must literally end verbatim buffer}}
-\def\typebuffer{}
-\def\getbuffer{}
-
-% sometimes we want to ignore buffers instead of printing them.
+% sometimes we want to ignore buffers, sometimes print them.
 \def\tubignorebuffers{\long\def\startbuffer##1\stopbuffer{}}
+\def\tubverbatimbuffers{\let\startbuffer=\starttyping}
+\tubverbatimbuffers % default
+\def\stopbuffer{\errmessage{must literally end verbatim buffer}}
+\def\getbuffer{}
+\def\typebuffer{}
 
 \def\startsection[title=#1]{\section{#1}}
 \def\stopsection{}
