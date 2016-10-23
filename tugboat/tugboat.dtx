@@ -2607,10 +2607,19 @@
 %    \begin{macrocode}
 \newdimen\@tubfullpageindent
 \@tubfullpageindent = \if@tubtwocolumn 4.875pc \else 3.875pc \fi
+\let\tubcaptionleftglue=\hfil
 %    \end{macrocode}
 % \end{macro}
 %
-% Ok, here is the \cs{@makecaption}.
+% One-line captions are normally centered, but sometimes we want to set
+% them flush-left for consistency with other nearby figures.
+% \begin{macro}{\tubcaptionleftglue}
+%    \begin{macrocode}
+\let\tubcaptionleftglue=\hfil
+%    \end{macrocode}
+% \end{macro}
+%
+% Ok, here is \cs{@makecaption}.
 %    \begin{macrocode}
 \def\tubcaptionfonts{\small}%
 \long\def\@makecaption#1#2{%
@@ -2628,7 +2637,7 @@
   \else
     % fits on one line; use the hbox, centered.  Do not reset its glue.
     \global\@minipagefalse
-    \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
+    \hb@xt@\hsize{\tubcaptionleftglue\box\@tempboxa\hfil}%
   \fi
   \vskip\belowcaptionskip}
 % 

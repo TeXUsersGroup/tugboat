@@ -148,7 +148,8 @@
 \def\blank{}
 \def\citetitle{\textsl}
 \def\crlf{\newline}
-\def\definefontsynonym[#1] [#2]{}
+\def\definefont[#1]#2[#3]{}
+\def\definefontsynonym[#1]#2[#3]{}
 \def\dontcomplain{}
 \def\enabledirectives[#1]{}
 % width=.95\hsize
@@ -166,6 +167,7 @@
 \def\quote#1{{`#1'}}
 \let\origquotation = \quotation
 \def\quotation#1{{``#1''}}
+\def\scale[#1]#2#3{}
 \def\setvariables[#1]#2[#3]{}
 \def\ss{}
 \let\stop=\relax
@@ -189,8 +191,6 @@
  \end{\myfigureenv}
 \def\myfigureenv{figure}
 }
-
-\def\scale[#1]#2#3{}
 
 \def\type{\bgroup
    \catcode`_=12 \catcode`\\=12 \catcode`##=12 \catcode`\&=12 \catcode`$=12
