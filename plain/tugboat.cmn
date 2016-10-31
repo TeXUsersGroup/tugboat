@@ -22,8 +22,8 @@
 %% $Id$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\def\fileversion{v1.22}
-\def\filedate{2016/09/26}
+\def\fileversion{v1.21}
+\def\filedate{2016/10/31}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -157,6 +157,7 @@
 \def\Mc{\setbox\TestBox=\hbox{M}M\vbox to\ht\TestBox{\hbox{c}\vfil}}
 %  Additional sizes of the manual font may be needed.
 \font\manual=logo10 % font used for the METAFONT logo, etc.
+\font\manualsl=logosl10
 \def\MF{{\manual META}\-{\manual FONT}\spacefactor1000 }
 \def\MP{{\manual META}\-{\manual POST}\spacefactor1000 }
 \def\mf{{\smc Metafont}}
@@ -187,9 +188,7 @@
 \def\SC{Steering Committee}
 \def\SGML{\acro{SGML}}
 \def\SliTeX{{\rm S\kern-.06em{\smc l\kern-.035emi}\kern-.06em\TeX}}
-%       for \def\slMF{{\manualsl META}\-{\manualsl FONT}\spacefactor1000 }
-%       Use \font\manualsl=logosl10 instead, if it's available,
-\def\slMF{\MF}
+\def\slMF{{\manualsl META}\-{\manualsl FONT}\spacefactor1000 }
 %       Atari ST (Klaus Guntermann)
 \def\stTeX{{\smc st\rm\kern-0.13em\TeX}}
 \def\SVG{\acro{SVG}}
@@ -1004,8 +1003,8 @@ that may not be obvious.  For full definitions, see real code above.
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
-1.22      26 Sep 16   define \CSabbr, \CSTUG, \cs.
-1.21       2 Aug 13   define \LyX
+1.21      31 Oct 16   define \CSabbr, \CSTUG, \cs.  define \LyX.
+                      Use logosl10 (\manualsl) for \slMF.
 
 1.20       4 Apr 12   allow omission of hyphenation list
 
