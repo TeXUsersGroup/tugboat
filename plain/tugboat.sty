@@ -28,7 +28,7 @@
 
 \def\thistubstyle{plain}
 \def\fileversion{v1.22}
-\def\filedate{2016/09/26}
+\def\filedate{2016/10/31}
 
 % general items
 
@@ -1972,6 +1972,8 @@
 \newif\if@@mid  \@@midfalse
 \newif\if@@bot  \@@botfalse
 \def\@caption{}
+\def\abovecaptionskip{\bigskip}
+
 \newif\if@fixed \@fixedfalse
 
         % items for top and bottom ``banners'' on first page
@@ -1998,7 +2000,7 @@
   \def\top{}%
   \def\bot{\@@bottrue}%
   \def\mid{\@@midtrue}%
-  \def\caption##1{\def\@caption{\ulap{\bigskip##1\smallskip}}}%
+  \def\caption##1{\def\@caption{\ulap{\abovecaptionskip##1\smallskip}}}%
   \def\fixed{\@fixedtrue}%
   \def\scol{\@figurescol}%
   \def\ecol{\@figureecol}%
@@ -2195,7 +2197,9 @@
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
-1.22      26 Sep 16   \smallcode: do not reduce baselineskip.
+1.22      31 Oct 16   \smallcode: do not reduce baselineskip.
+                      \abovecaptionskip: generalize \bigskip; no change
+                      in default.
 
 1.21 <skipped this version number>
 
