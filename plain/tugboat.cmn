@@ -22,8 +22,8 @@
 %% $Id$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\def\fileversion{v1.21}
-\def\filedate{2016/10/31}
+\def\fileversion{v1.22}
+\def\filedate{2016/11/01}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -161,7 +161,7 @@
 \def\MF{{\manual META}\-{\manual FONT}\spacefactor1000 }
 \def\MP{{\manual META}\-{\manual POST}\spacefactor1000 }
 \def\mf{{\smc Metafont}}
-\def\MFB{{\sl The \slMF book}}
+\def\MFB{{\sl The \slMF\kern1pt book}}
 %       multilingual (INRS) TeX
 \def\mtex{T\kern-.1667em\lower.5ex\hbox{\^E}\kern-.125emX\spacefactor1000 }
 \def\NTStext{N\mkern-4mu \lower.5ex\hbox{$\cal T$}\mkern-2mu S}
@@ -1003,8 +1003,10 @@ that may not be obvious.  For full definitions, see real code above.
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
-1.21      31 Oct 16   define \CSabbr, \CSTUG, \cs.  define \LyX.
-                      Use logosl10 (\manualsl) for \slMF.
+1.21      31 Oct 16   define \CSabbr, \CSTUG;
+                      use logosl10 (\manualsl) for \slMF.
+
+1.21       2 Aug 13   define \LyX
 
 1.20       4 Apr 12   allow omission of hyphenation list
 
