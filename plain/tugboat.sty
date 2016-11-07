@@ -28,7 +28,7 @@
 
 \def\thistubstyle{plain}
 \def\fileversion{v1.22}
-\def\filedate{2016/10/31}
+\def\filedate{2016/11/07}
 
 % general items
 
@@ -41,7 +41,7 @@
 
 \message{File `TUGBOAT.STY' \fileversion \space\space <\filedate>}
 
-\input tugboat.cmn      % macros common to tugboat.sty and
+\input tugboat.cmn      % macros intended to be common to tugboat.sty and
                         % ltugboat.sty (latex style file)
 
 
@@ -2175,13 +2175,14 @@
 
 \twocol
 \maxcols=2
+\hfuzz=1pt                     % don't worry about small overfulls
 \OverlaysinTeXtrue
 \Trimmarksfalse
 \PrelimDrafttrue
 \initializearticle
-\pageno=1001                    % number of title page
+\pageno=901                    % number of title page
 
-% Stretchy spacing was the default for many years, but in summer 2011 it
+% Stretchy spacing was the default for many years, but in 2012 it
 % looked too stretchy. Comment out.
 %\StretchyTenPointSpacing
 %\StretchyNinePointSpacing
@@ -2197,9 +2198,11 @@
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
-1.22      31 Oct 16   \smallcode: do not reduce baselineskip.
+1.22       7 Nov 16   \smallcode: do not reduce baselineskip.
                       \abovecaptionskip: generalize \bigskip; no change
-                      in default.
+                      to default.
+                      \pageno: start at 901 to make LaTeX.
+                      \hfuzz: initialize to 1pt to match existing practice.
 
 1.21 <skipped this version number>
 
