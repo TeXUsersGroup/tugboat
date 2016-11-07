@@ -1,5 +1,5 @@
 # $Id$
-# Copyright 2007-2014 TeX Users Group.
+# Copyright 2007-2016 TeX Users Group.
 # You may freely use, modify and/or distribute this file.
 # 
 opt = --interaction=nonstopmode --file-line-error
@@ -24,11 +24,17 @@ check: ltugboat.sty
 	$(pdflatex) tubatest.tex
 	$(pdflatex) tubrfootest.tex
 
-dist: tugboat.zip
-tugboat.zip: README ltubguid.pdf manifest.txt tugboat.ins \
+tub_rel = /usr/local/texlive-rel/texmf-dist/tex/latex/tugboat
+diff:
+	-diff -u0 $(tub_rel)/ltugboat.cls ltugboat.cls
+
+dist = tugboat
+dist: $(dist).zip
+$(dist).zip: README ltubguid.pdf manifest.txt tugboat.ins \
 		ltubguid.ltx ltugbib.bst tugboat.dtx tugboat.pdf
 	chmod a+rw $^
-	rm -rf tugboat; mkdir tugboat
-	cp $^ tugboat
-	zip -r $@ tugboat
-	rm -rf tugboat
+	rm -rf $(dist); mkdir $(dist)
+	cp $^ $(dist)
+	zip -qr $@ $(dist)
+	rm -rf $(dist)
+	zipinfo -1 $@ | sort

@@ -1,0 +1,11 @@
+2016-11-07  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx: release 2016/11/07 v2.18.
+
+	* Makefile (diff): new target.
+
+        * tugboat.dtx (\hfuzz): set to 1pt to match existing practice.
+
+	* tugboat.dtx (\MFB): \kern1pt before book, to match Knuth.
+	
+(This ChangeLog file public domain.)
