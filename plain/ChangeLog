@@ -1,0 +1,39 @@
+2016-11-07  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.sty: \hfuzz=1pt, \pageno=901, to match existing
+	practice.
+	v1.22 2016/11/07
+
+2016-11-01  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.cmn (\MFB): \kern1pt between \slMF and book, per Knuth.
+
+2016-10-31  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.sty (\abovecaptionskip): generalize the \bigskip, but
+	don't change the default.
+
+	* tugboat.cmn (\manualsl); define as logosl10.
+	(\slMF): use it.
+
+2016-09-26  Karl Berry  <karl@freefriends.org>
+
+	* tubguide.tex: remove mention of obsolete ltugboat.sty;
+	mention \cs; other small modernizations.
+	v1.22 2016/09/26
+
+	* tugproc.sty: update header info, including copyright.
+	Untabify.
+	v1.22 2016/09/26
+
+	* tugboat.sty (\smallcode): do not reduce \baselineskip
+	to 10pt, leave at default 11pt (for 9pt type).
+	v1.22 2016/09/26
+
+	* tugboat.cmn (\CSabbr, \CSTUG, \cs): new definitions.
+	Untabify.
+	v1.22 2016/09/26
+
+	* Makefile (diff): new target.
+
+(This ChangeLog file public domain.)
