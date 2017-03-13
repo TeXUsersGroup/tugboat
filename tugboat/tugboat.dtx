@@ -2,7 +2,7 @@
 % $Id$
 % tugboat.dtx - main source for LaTeX TUGboat classes.
 %
-% Copyright 1994-2016 TeX Users Group.
+% Copyright 1994-2017 TeX Users Group.
 %
 % This file is part of the tugboat package.
 %
@@ -256,7 +256,7 @@
 % |\careof|&     c/o\\
 % |\sfrac|&      slashed fraction (arguments optionally\\
 % &              separated by a slash)\\
-% |\cs|&         control seqence name\\
+% |\cs|&         control sequence name\\
 %      &         |\cs{name}|$\rightarrow$\cs{name}\\
 % |\env|&        environment name \\
 %       &        |\env{name}|$\rightarrow$\env{name}\\
@@ -3164,21 +3164,18 @@
 % can be used to reset the font, e.g., tb98kuester.
 \def\tubheadhook{}
 
+% in case the official \author is too verbose for the footline.
+\def\tubrunningauthor{\@author}
+
 % put title and author in footer.
 \def\@tubrunningfull{%
   \def\@oddfoot{% make line break commands produce a normal space
     \def\\{\unskip\ \ignorespaces}%
     \let\newline=\\%
+    \frenchspacing
     \hfil\rhTitle}
-  \def\@evenfoot{\@author\hfil}
+  \def\@evenfoot{\tubrunningauthor\hfil}
 }
-
-\def\@tubrunninggetauthor#1{#1%
-  \begingroup
-    \let\thanks\@gobble
-    \protected@xdef\rhAuthor{\the\toks@##1}%
-  \endgroup
-}%
 
 % empty footer.
 \def\@tubrunningminimal{%
