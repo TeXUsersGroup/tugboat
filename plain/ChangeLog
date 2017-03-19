@@ -1,3 +1,11 @@
+2017-03-19  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.cmn (\manual, \manualsl): remove from here.
+	* tugboat.sty (\manual, \manualsl): define in each of \tenpoint,
+	\ninepoint, \eightpoint.
+	(\eightpoint): define \SMC for \acro.
+	v1.23 2017/03/19 (for both)
+
 2016-11-07  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.sty: \hfuzz=1pt, \pageno=901, to match existing

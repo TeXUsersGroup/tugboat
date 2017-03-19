@@ -27,8 +27,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \def\thistubstyle{plain}
-\def\fileversion{v1.22+dev}
-\def\filedate{2016/11/07}
+\def\fileversion{v1.23}
+\def\filedate{2017/03/19}
 
 % general items
 
@@ -248,6 +248,8 @@
   \textfont\bffam=\tenbf \scriptfont\bffam=\eightbf
   \def\smc{\tensmc}%
   \def\SMC{\ninerm}%
+  \font\manual=logo10
+  \font\manualsl=logosl10
   \def\tt{\tentt}%
   \setttglue
   \def\upright{\tenuit}%
@@ -281,6 +283,8 @@
   \textfont\bffam=\ninebf \scriptfont\bffam=\sevenbf
   \def\smc{\ninesmc}%
   \def\SMC{\eightrm}%
+  \font\manual=logo9
+  \font\manualsl=logosl10 at 9pt
   \def\tt{\ninett}%
         \setttglue
   \setbox\strutbox=\hbox{\vrule height 6.75pt depth 2.25pt width\z@}%
@@ -314,6 +318,9 @@
   \def\bf{\fam\bffam\eightbf}%
   \textfont\bffam=\eightbf \scriptfont\bffam=\sixbf
   \def\smc{\eightsmc}%
+  \def\SMC{\sevenrm}%
+  \font\manual=logo8
+  \font\manualsl=logosl10 at 8pt
   \def\tt{\eighttt}%
   \setttglue
   \setbox\strutbox=\hbox{\vrule height 6pt depth 2pt width\z@}%
@@ -2192,12 +2199,16 @@
 
 \endinput
 
+%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %  History of changes
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+1.23      19 Mar 17   define \manual and \manualsl in each of \tenpoint,
+                      \ninepoint, \eightpoint; define \SMC in \eightpoint.
+                      
 1.22       7 Nov 16   \smallcode: do not reduce baselineskip.
                       \abovecaptionskip: generalize \bigskip; no change
                       to default.

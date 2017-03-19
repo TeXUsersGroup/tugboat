@@ -22,8 +22,8 @@
 %% $Id$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\def\fileversion{v1.22}
-\def\filedate{2016/11/01}
+\def\fileversion{v1.23}
+\def\filedate{2017/03/19}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -155,9 +155,6 @@
 \def\MathML{Math\acro{ML}}
 %       for Robert McGaffey
 \def\Mc{\setbox\TestBox=\hbox{M}M\vbox to\ht\TestBox{\hbox{c}\vfil}}
-%  Additional sizes of the manual font may be needed.
-\font\manual=logo10 % font used for the METAFONT logo, etc.
-\font\manualsl=logosl10
 \def\MF{{\manual META}\-{\manual FONT}\spacefactor1000 }
 \def\MP{{\manual META}\-{\manual POST}\spacefactor1000 }
 \def\mf{{\smc Metafont}}
@@ -1000,10 +997,13 @@ that may not be obvious.  For full definitions, see real code above.
 % *************************************************************************
 
 % Change history
+------------------
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
-1.21      31 Oct 16   define \CSabbr, \CSTUG;
+1.23      19 Mar 17   move \manual and \manualsl to tugboat.sty.
+
+1.22      31 Oct 16   define \CSabbr, \CSTUG;
                       use logosl10 (\manualsl) for \slMF.
 
 1.21       2 Aug 13   define \LyX
