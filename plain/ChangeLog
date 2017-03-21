@@ -1,3 +1,9 @@
+2017-03-21  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.sty,
+	* tugboat.cmn: copyright 2017, other header updates.
+	* Makefile (dist): chmod o-w to placate CTAN.
+
 2017-03-19  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.cmn (\manual, \manualsl): remove from here.

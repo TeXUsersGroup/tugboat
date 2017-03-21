@@ -17,6 +17,7 @@ dist: README tubguide.pdf tubguide.tex tugboat.cmn tugboat.sty tugproc.sty
 	chmod a+rw $^
 	rm -rf $(dist); mkdir $(dist)
 	cp -p $^ $(dist)
+	chmod -R o-w $(dist)
 	rm -f $(dist).zip
 	zip -qr $(dist).zip $(dist)
 	rm -rf $(dist)
