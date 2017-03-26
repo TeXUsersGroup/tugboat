@@ -1,3 +1,12 @@
+2017-03-13  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx: clarify support for author name in footline
+
+	* tugboat.dtx (\@oddfoot): \frenchspacing.
+	(\@tubrunninggetauthor): remove, unused.
+	(\tubrunningauthor): new macro, defaults to \@author.
+	(\@evenfoot): use it.
+
 2016-11-07  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx: release 2016/11/07 v2.18.

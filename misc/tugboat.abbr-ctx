@@ -1,5 +1,5 @@
 % $Id$
-% Copyright 1999-2016 TeX Users Group.
+% Copyright 1999-2017 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 % "fake" ConTeXt in LaTeX, for simple-enough documents.
@@ -8,7 +8,6 @@
 % Frontmatter has to be done by hand,
 % and \stoptyping and \stopbuffer replaced with \end{verbatim}.
 
-% \def\GUI already in tub
 \def\ACROBAT   {Acrobat}
 \def\ADE       {\acro{ADE}}
 \def\AFM       {\acro{AFM}}
@@ -175,6 +174,7 @@
 \def\subsubject{\subsection}
 \def\sym{\item}
 \def\tex{\cs}
+\def\unexpanded{}
 \def\unknown{\ldots}
 \def\usemodule[#1]{}
 
@@ -245,6 +245,8 @@
 
 \def\startlinecorrection{\par}
 \def\stoplinecorrection{\par}
+
+\def\startMPcode#1\stopMPcode{\par}
 
 \def\startlines{\begingroup\obeylines\parindent=0pt}
 \def\stoplines{\endgroup}
