@@ -144,7 +144,7 @@
 \def\pdfTeX    {pdf\-\/\TeX}
 
 % 
-\def\blank{}
+\def\blank{\par}
 \def\citetitle{\textsl}
 \def\crlf{\newline}
 \def\definefont[#1]#2[#3]{}
@@ -175,6 +175,7 @@
 \def\sym{\item}
 \def\tex{\cs}
 \def\unexpanded{}
+\def\unit{}
 \def\unknown{\ldots}
 \def\usemodule[#1]{}
 
