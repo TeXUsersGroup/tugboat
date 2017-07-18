@@ -1,5 +1,5 @@
 # $Id$
-# Copyright 2007-2016 TeX Users Group.
+# Copyright 2007-2017 TeX Users Group.
 # You may freely use, modify and/or distribute this file.
 # 
 opt = --interaction=nonstopmode --file-line-error
@@ -20,6 +20,7 @@ ltugcomn.sty ltugboat.sty ltugboat.cls: tugboat.ins tugboat.dtx
 	$(latex) $<
 
 check: ltugboat.sty
+	$(pdflatex) tubmetatest.tex
 	$(pdflatex) tubptest.tex
 	$(pdflatex) tubatest.tex
 	$(pdflatex) tubrfootest.tex

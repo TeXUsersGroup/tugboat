@@ -665,6 +665,7 @@
      B\textsc{ib}%
   \fi
 }
+\def\BibLaTeX{\Bib\kern.02em \LaTeX}
 \def\BibTeX{\Bib\kern-.08em \TeX}
 %
 \def\BSD{\acro{BSD}}
@@ -1121,9 +1122,8 @@
 % don't stay bold in description items, bold italic is too weird.
 \DeclareRobustCommand\meta[1]{%
   \ensuremath{\langle}%
-  \ifmmode \mbox\bgroup \fi % if in math
+  \ifmmode \expandafter\mbox \fi % if in math
   {\it #1\/}% no typewriter italics, please
-  \ifmmode \egroup \fi
   \ensuremath{\rangle}%
 }
 %
