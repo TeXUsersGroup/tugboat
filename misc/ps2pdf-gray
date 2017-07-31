@@ -8,7 +8,7 @@
 # http://handyfloss.net/2008.09/making-a-pdf-grayscale-with-ghostscript/
 # --isilanes 
 
-execgs -q -sOutputFile="$2" \
+exec gs -q -sOutputFile="$2" \
       -sDEVICE=pdfwrite \
       -sColorConversionStrategy=Gray \
       -dProcessColorModel=/DeviceGray \
