@@ -1,0 +1,16 @@
+#!/bin/sh
+# $Id$
+# Public domain.
+# 
+# Convert input $1 to output $2, converting color to grayscale.
+# 
+# See also:
+# http://handyfloss.net/2008.09/making-a-pdf-grayscale-with-ghostscript/
+# --isilanes 
+
+execgs -q -sOutputFile="$2" \
+      -sDEVICE=pdfwrite \
+      -sColorConversionStrategy=Gray \
+      -dProcessColorModel=/DeviceGray \
+      -dNOPAUSE -dBATCH "$1"
+
