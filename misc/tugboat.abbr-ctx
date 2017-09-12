@@ -160,11 +160,13 @@
 \def\in#1[#2]{#1~\ref{#2}}
 \def\loadtypescriptfile[#1]{}
 \def\low#1{\ensuremath{_{\,\textrm{\footnotesize #1}}}}
+\def\mathitalicsmode{}
 \let\noindentation = \relax
 \let\origquote = \quote
 \def\page{}
 \def\quote#1{{`#1'}}
 \let\origquotation = \quotation
+\def\plusone{}
 \def\quotation#1{{``#1''}}
 \def\scale[#1]#2#3{}
 \def\setvariables[#1]#2[#3]{}
@@ -178,6 +180,8 @@
 \def\unit{}
 \def\unknown{\ldots}
 \def\usemodule[#1]{}
+\def\UseMode#1{}
+\def\zerocount{}
 
 \let\origfootnote=\footnote
 \def\footnote{\unskip\protect\origfootnote}
@@ -200,7 +204,7 @@
 \def\finishtype#1{\texttt{%
   \spaceskip = .3333em \xspaceskip = \spaceskip
   #1}\egroup\spacefactor=1000 }
-
+\let\typ=\type
 
 %  start .. stop
 
@@ -235,7 +239,7 @@
 \def\startitemize{\begin{itemize}}
 \def\stopitemize{\end{itemize}}
 %
-\def\startitemizepacked]{\begin{compactitemize}}
+\def\startitemizepacked{\begin{compactitemize}}
 \def\stopitemizepacked{\end{compactitemize}}
 %
 \def\startitem{\item}
@@ -277,6 +281,7 @@
 \def\stopbuffer{\errmessage{must literally end verbatim buffer}}
 \def\getbuffer{}
 \def\typebuffer{}
+\def\inlinebuffer{}
 
 \def\startsection[title=#1]{\section{#1}}
 \def\stopsection{}
@@ -304,6 +309,8 @@
 
 \let\starttext = \relax
 \let\stoptext = \stopArticle
+
+\def\switchtobodyfont[#1]{}
 
 % ||   en-dash in ConTeXt
 % |-|  normal hyphen with line break allowed
