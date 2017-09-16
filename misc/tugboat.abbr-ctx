@@ -41,6 +41,7 @@
 \def\FONTFORGE {FontForge}
 \def\FONTINST  {fontinst}
 \def\FSF       {\acro{FSF}}
+\def\GHOSTSCRIPT{Ghost\-script}
 \def\HZ        {Hz}
 \def\IBM       {\acro{IBM}}
 \def\IEEE      {\acro{IEEE}}
@@ -50,6 +51,7 @@
 \def\JAVA      {Java}
 \def\JAVASCRIPT{Java\-Script}
 \def\JIT       {jit}
+\def\JPG       {\acro{JPEG}}
 \def\KPSE      {{\tt kpse}}
 \def\KPSEWHICH {{\tt kpsewhich}}
 \def\KVM       {\acro{KVM}}
@@ -144,6 +146,8 @@
 \def\pdfTeX    {pdf\-\/\TeX}
 
 % 
+\def\at{}
+\def\bfc{}
 \def\blank{\par}
 \def\citetitle{\textsl}
 \def\crlf{\newline}
@@ -158,19 +162,23 @@
 \def\high{\textsuperscript}
 \def\hyphenatedurl{\url}
 \def\in#1[#2]{#1~\ref{#2}}
+\def\inrightmargin{\marginpar}
 \def\loadtypescriptfile[#1]{}
 \def\low#1{\ensuremath{_{\,\textrm{\footnotesize #1}}}}
 \def\mathitalicsmode{}
 \let\noindentation = \relax
 \let\origquote = \quote
 \def\page{}
+\def\placelayer[#1]{}
 \def\quote#1{{`#1'}}
 \let\origquotation = \quotation
 \def\plusone{}
 \def\quotation#1{{``#1''}}
 \def\scale[#1]#2#3{}
+\def\setlayer[#1] [#2]#3{}
 \def\setvariables[#1]#2[#3]{}
 \def\ss{}
+\def\showframe{}
 \let\stop=\relax
 \def\subject{\section}
 \def\subsubject{\subsection}
@@ -197,6 +205,8 @@
 \def\myfigureenv{figure}
 }
 
+\def\setuplayout[#1]{}
+
 \def\type{\bgroup
    \catcode`_=12 \catcode`\\=12 \catcode`##=12 \catcode`\&=12 \catcode`$=12
    \catcode`\%=12 \def\\{\char`\\ }%
@@ -215,7 +225,7 @@
 \let\StopAbstract=\stopAbstract
 
 \def\startArticle[#1]{\begin{document}\maketitle}
-\let\startArticle=\startArticle
+\let\StartArticle=\startArticle
 %
 \def\stopArticle{\makesignature \end{document}}
 \let\StopArticle=\stopArticle
@@ -245,7 +255,7 @@
 \def\startitem{\item}
 \let\stopitem=\relax
 
-\def\startKeywords{\smallskip \noindent \begingroup \raggedright {\bf Keywords: }}
+\def\startKeywords{\smallskip\noindent\begingroup\raggedright{\bf Keywords:\ }}
 \def\stopKeywords{\par\endgroup}
 
 \def\startlinecorrection{\par}
@@ -296,10 +306,14 @@
 \def\startsubsubject[title=#1]{\subsection{#1}}
 \def\stopsubject{}
 
+\def\startsubsubsection[title=#1]{\subsubsection{#1}}
+\def\stopsubsubsection{}
+
 \def\starttabulate{\par\smallskip
   \noindent\begingroup \catcode`|=12 \begin{tabular}}
 \def\stoptabulate{\end{tabular}\par\endgroup\smallskip}
 \def\stopplacetable{\end{table}}
+\def\EQ{}
 \def\NR{\\}
 \def\NC{&}
 \def\HL{\hline}
