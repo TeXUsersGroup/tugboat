@@ -4,20 +4,21 @@
 # 
 opt = --interaction=nonstopmode --file-line-error
 latex = latex $(opt)
-pdflatex = pdflatex $(opt)
+pdflatex = texfot pdflatex $(opt)
+texfot = texfot
 
 ltubguid.pdf: ltubguid.ltx ltugboat.cls
 	rm -f tubguide.bib ctandir.sty
-	texfot $(pdflatex) $<
+	$(pdflatex) $<
 	bibtex ltubguid
-	texfot $(pdflatex) $<
+	$(pdflatex) $<
 
 tugboat.pdf: tugboat.dtx ltugboat.cls
 	$(pdflatex) $<
 	$(pdflatex) $<
 
 ltugcomn.sty ltugboat.sty ltugboat.cls: tugboat.ins tugboat.dtx
-	texfot $(latex) $<
+	$(latex) $<
 
 check: ltugboat.sty
 	$(pdflatex) tubmetatest.tex
