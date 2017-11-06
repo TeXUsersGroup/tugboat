@@ -8,16 +8,16 @@ pdflatex = pdflatex $(opt)
 
 ltubguid.pdf: ltubguid.ltx ltugboat.cls
 	rm -f tubguide.bib ctandir.sty
-	$(pdflatex) $<
+	texfot $(pdflatex) $<
 	bibtex ltubguid
-	$(pdflatex) $<
+	texfot $(pdflatex) $<
 
 tugboat.pdf: tugboat.dtx ltugboat.cls
 	$(pdflatex) $<
 	$(pdflatex) $<
 
 ltugcomn.sty ltugboat.sty ltugboat.cls: tugboat.ins tugboat.dtx
-	$(latex) $<
+	texfot $(latex) $<
 
 check: ltugboat.sty
 	$(pdflatex) tubmetatest.tex

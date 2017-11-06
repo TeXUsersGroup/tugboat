@@ -1,3 +1,12 @@
+2017-11-06  Karl Berry  <karl@freefriends.org>
+
+	* Version 2.19.
+
+	* tugboat.dtx (\KOMAScript): add per koma author.
+	(\makevmeta, etc.): new option for TUB verbatim.
+	* ltubguid.ltx: document these; remove advice about and references
+	to ancient packages. Switch from harvardcite to plain.
+
 2017-07-18  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\meta): fix for math mode from Lars Hellstrom.

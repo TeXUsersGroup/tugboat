@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2016/11/07 v2.18+dev
+                   [2017/11/06 v2.19
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -101,8 +101,7 @@
  \title{The \textsf{tugboat} package\thanks{This file
         has version number \fileversion, last
         revised \filedate}}
-    \author{The \TUB{} team\\
-            \small(Distributed by Robin Fairbairns)}
+    \author{The \TUB{} team}
  \date{\filedate}
  \maketitle
  \tableofcontents
@@ -711,6 +710,8 @@
 \def\JPEG{\acro{JPEG}}
 \def\JTeX{\leavevmode\hbox{\lower.5ex\hbox{J}\kern-.18em\TeX}}
 \def\JoT{\textsl{The Joy of \TeX}}
+\DeclareRobustCommand{\KOMAScript}{\textsf{K\kern.05em O\kern.05em%
+     M\kern.05em A\kern.1em-\kern.1em Script}}
 \def\LAMSTeX{L\raise.42ex\hbox{\kern-.3em
                    $\m@th$\fontsize\sf@size\z@\selectfont
                    $\m@th\mathcal{A}$}%
@@ -2808,8 +2809,24 @@
   \def\ruled{\let\if@ruled\iftrue}%
 %    \end{macrocode}
 %
-% Then we just execute the ones we've got, and relay to a (hacked)
-% copy of the built-in environment.
+% The command \cs{makevmeta} says to make !<...> do \meta{...}.
+%
+%    \begin{macrocode}
+  \def\makevmeta{\makeescape\! \let\<\tubverb@meta \tubverb@clearliglist}
+  \def\tubverb@meta##1>{\meta{##1}}
+%    \end{macrocode}
+%
+% The default verbatim defines `'<>,- as active characters to do
+% stop ligatures; remove <> from the list so we get normal characters.
+% Just hope that the CM <> ligatures aren't used.
+%    \begin{macrocode}
+  \def\tubverb@clearliglist{%
+    \def\verbatim@nolig@list{\do\`\do\,\do\'\do\-}%
+  }
+%    \end{macrocode}
+%
+% Then we execute the arguments we've got, and relay to a (hacked)
+% copy of the \LaTeX\ verbatim environment.
 %
 %    \begin{macrocode}
   #1\@TBverbatim}
@@ -2847,7 +2864,7 @@
   \obeylines \verbatim@font \@noligs
   \let\do\@makeother \dospecials
   \everypar \expandafter{\the\everypar \unpenalty}%
-}%
+}% end |\@sqbverbatim|
 %    \end{macrocode}
 %
 % To end the environment, we do everything in reverse order: relay via
