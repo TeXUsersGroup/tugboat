@@ -124,6 +124,7 @@
 \def\TEXMFSTART{{\tt texmfstart}}
 \def\THANH     {\Thanh}
 \def\THETEXBOOK{\TB}
+\def\TIKZ      {\TikZ}
 \def\TODO      {\acro{TODO}}
 \def\TRUETYPE  {TrueType}
 \def\TUG       {\tug}
@@ -149,8 +150,11 @@
 \def\at{}
 \def\bfc{}
 \def\blank{\par}
+\let\citationORIG=\citation
+\def\citation[#1]{\cite{#1}}
 \def\citetitle{\textsl}
 \def\crlf{\newline}
+\def\ctxluabuffer[#1]{}
 \def\definefont[#1]#2[#3]{}
 \def\definefontsynonym[#1]#2[#3]{}
 \def\dontcomplain{}
@@ -194,7 +198,7 @@
 \let\origfootnote=\footnote
 \def\footnote{\unskip\protect\origfootnote}
 
-% #2 is usually "here"; #2 is optional whitespace.
+% #1 is usually "here"; #2 is optional whitespace.
 \def\myfigureenv{figure}% allow for figure* override
 \def\placefigure[#1]#2[#3]#4#5{%
  \begin{\myfigureenv}[t]
@@ -224,7 +228,7 @@
 \def\stopAbstract{\end{abstract}}
 \let\StopAbstract=\stopAbstract
 
-\def\startArticle[#1]{\begin{document}\maketitle}
+\def\startArticle{}%\begin{document}\maketitle}
 \let\StartArticle=\startArticle
 %
 \def\stopArticle{\makesignature \end{document}}
@@ -241,8 +245,9 @@
 }
 \def\stopcomponent{\stopArticle}
 
-\def\startformula{\begin{displaymath}}
-\def\stopformula{\end{displaymath}}
+\def\placeformula[#1]{\label{#1}}
+\def\startformula{\begin{equation}}% displaymath for no eqno
+\def\stopformula{\end{equation}}
 
 \long\def\startframedtext#1\stopframedtext{[ignored framedtext, fix!!]}
 
@@ -261,12 +266,12 @@
 \def\startlinecorrection{\par}
 \def\stoplinecorrection{\par}
 
-\def\startMPcode#1\stopMPcode{\par}
-
 \def\startlines{\begingroup\obeylines\parindent=0pt}
 \def\stoplines{\endgroup}
 
-\def\stopluacode{}
+\def\startluacode#1\stopluacode{}
+
+\def\startMPcode#1\stopMPcode{\par}
 
 \def\startMPdefinitions#1\stopMPdefinitions{}
 
@@ -286,11 +291,12 @@
 
 % sometimes we want to ignore buffers, sometimes print them.
 \def\tubignorebuffers{\long\def\startbuffer##1\stopbuffer{}}
-\def\tubverbatimbuffers{\let\startbuffer=\starttyping}
+%\def\tubverbatimbuffers{\let\startbuffer=\starttyping}
+\def\tubverbatimbuffers{\def\startbuffer[##1]{\starttyping}}
 \tubverbatimbuffers % default
 \def\stopbuffer{\errmessage{must literally end verbatim buffer}}
 \def\getbuffer{}
-\def\typebuffer{}
+\def\typebuffer[#1][#2]{}
 \def\inlinebuffer{}
 
 \def\startsection[title=#1]{\section{#1}}
