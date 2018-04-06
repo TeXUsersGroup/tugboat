@@ -9,6 +9,7 @@
 
 : ${gs=gs}
 : ${zdistill=""} #-f ../zdistill.rip"}
+: ${zres=""}     #-r150 to reduce image resolutions, or options below.
 
 if test $# -eq 1; then
   set - "$1" "$1.tmppdf"
@@ -18,14 +19,23 @@ fi
 # -sPAPERSIZE=a4
 
 # with gs 9.14 (tb109reviews-xie), -dPDFX=true fails with annotations,
-# -dEmbedAllFonts doesn't, but -dPDFSETTINGS=/prepress does the job.
+# -dEmbedAllFonts doesn't, but -dPDFSETTINGS=/prepress does the job so
+# far -- except that when downscaling images with zres, have to override.
+# 
+# -dCompressFonts seems not to hurt, and can save notable space.
 #set -x
 $gs \
    -q -dNOPAUSE -dBATCH \
-   -dEmbedAllFonts -dPDFSETTINGS=/prepress -dAutoRotatePages=/None \
    -sDEVICE=pdfwrite \
-   -sOutputFile="$2" $zdistill -c .setpdfwrite \
-   -f "$1" quit.ps
+   -dEmbedAllFonts -dPDFSETTINGS=/prepress -dAutoRotatePages=/None \
+   -dCompressFonts=true \
+   -dDetectDuplicateImages \
+   $zdistill $zres \
+   -sOutputFile="$2" \
+   -f "$1" 
+
+# -c .setpdfwrite used to be necessary, but no longer is?
+# quit.ps disappeared in gs 9.22.
 
 if test x"$2" = "x$1.tmppdf"; then
   cp "$1" ${TMPDIR-/tmp}/ps2pdf-`basename "$1"`
