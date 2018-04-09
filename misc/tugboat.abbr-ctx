@@ -189,6 +189,7 @@
 \def\subsubject{\subsection}
 \def\sym{\item}
 \def\tex{\cs}
+\def\tttf{\tt}
 \def\tx{\tt}
 \def\unexpanded{}
 \def\unit{}
