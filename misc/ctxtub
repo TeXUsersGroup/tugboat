@@ -1,0 +1,7 @@
+#!/bin/sh
+# $Id$
+# http://wiki.contextgarden.net/ConTeXt_Standalone#Single_user_installation
+#. /opt/context/tex/setuptex # can't take args
+PATH=/opt/context/tex/texmf-linux-64/bin:$PATH
+# --batchmode --noconsole
+exec context "$@"
