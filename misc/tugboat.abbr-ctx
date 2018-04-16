@@ -1,5 +1,5 @@
 % $Id$
-% Copyright 1999-2017 TeX Users Group.
+% Copyright 1999-2018 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 % "fake" ConTeXt in LaTeX, for simple-enough documents.
@@ -191,7 +191,7 @@
 \def\tex{\cs}
 \def\tttf{\tt}
 \def\tx{\tt}
-\def\unexpanded{}
+%\def\unexpanded{}% etex primitive, microtype et al. need it
 \def\unit{}
 \def\unknown{\ldots}
 \def\usemodule[#1]{}
