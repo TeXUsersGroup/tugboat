@@ -796,7 +796,7 @@ selected by default (by execution of class option \optname{rawcite}).
 
 Harvard citation may be selected by specifying \optname{harvardcite} as an
 option of the \cs{documentclass} command.  The macros used derive
-pretty directly from the `harvard' styles written by Glenn
+rather directly from the `harvard' styles written by Glenn
 Paulley and now maintained by Peter Williams; the \BibTeX{} style
 derives from one developed by Patrick Daly.
 
@@ -841,15 +841,20 @@ extra characters.
 
 Bibliographies provide further problems because they're notoriously
 difficult to typeset at the best of times.  \LaTeX{} sets \cs{sloppy}
-when typesetting the bibliography, but this can often lead to pretty
-unpleasant output in the narrow columns typical of \TUB{}.  The author
-may control the typesetting using the command
-\cs{SetBibJustification}.  The classes set \cs{sloppy}, by default
-(just like \LaTeX{}), but the author may (for example) say:
+when typesetting the bibliography, but this often leads to unpleasant
+output in the narrow columns typical of \TUB{}.  The author can control
+the typesetting using the command \cs{SetBibJustification}.  The classes
+set \cs{sloppy}, by default (just like \LaTeX{}), but the author may
+(for example) say:
 \begin{verbatim}
   \SetBibJustification{\raggedright}
 \end{verbatim}
 as the present article does, to achieve somewhat better results.
+
+A final note for citations: for references to other issues of \TUB,
+please use the format \textsl{volno:issno}, e.g., ``\TUB\ 32:1'' for
+volume~32, number~1.
+
 
 \section{Equivalences between the `plain' and \LaTeX{} \TUB\ packages}
 \label{sec:equiv}

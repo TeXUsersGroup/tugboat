@@ -21,6 +21,14 @@
 %%     }
 %% $Id$
 
+% do nothing when reading this file a second time.
+\ifx\tugboatcmn\undefined
+  \let\next\relax
+\else
+  \expandafter\let\expandafter\next\csname endinput\endcsname
+\fi
+\next
+
 \def\fileversion{v1.23+dev}
 \def\filedate{2017/03/21}
 
@@ -766,6 +774,8 @@
 \fi
 
 \restorecat\@
+
+\let\tugboatcmn = t % so we can avoid being read twice.
 
 \endinput
 
