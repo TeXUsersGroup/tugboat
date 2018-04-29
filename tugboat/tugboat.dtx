@@ -2106,9 +2106,9 @@
 % last \cs{sectitle} will actually be executed.
 %
 %    \begin{macrocode}
-\newif\ifSecTitle
-\SecTitlefalse
 \newif\ifWideSecTitle
+\newif\iftubtitlerulefullwidth
+\newif\ifSecTitle \SecTitlefalse
 \newcommand{\sectitle}{%
   \SecTitletrue
   \@ifstar
@@ -2212,7 +2212,11 @@
     \hrule \@height\z@ \@depth\z@ \@width 10\p@
     \kern-\topskip
     \kern-\strulethickness
-    \hrule \@height\strulethickness \@depth\z@
+    \iftubtitlerulefullwidth
+      \hrule \@height\strulethickness \@depth\z@ width\textwidth
+    \else
+      \hrule \@height\strulethickness \@depth\z@
+    \fi
     \kern\medskipamount
     \nobreak
   \fi

@@ -1,3 +1,9 @@
+2018-04-29  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\iftubtitlerulefullwidth): new conditional.
+	(\maketitle): do \hrule width\textwidth if true.
+	Made for tb121prod, previous hack in tb120xii-lat.
+
 2017-11-06  Karl Berry  <karl@freefriends.org>
 
 	* Version 2.19.
