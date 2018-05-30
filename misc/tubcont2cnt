@@ -1,8 +1,11 @@
 #!/usr/bin/env perl
 # $Id$
-# Public domain.
-# Convert \getpage{papername} to page range for barbara's .cnt files
-# and capsule.  See ~www/office/README.karl for usage.
+# Public domain. Originally written by Karl Berry, 2015.
+#
+# Convert \getpage{papername}, \getfirstpage{...}, \getlastpage{...} to
+# page range for barbara's .cnt files -> Nelson's bib files, and our
+# capsule. See ~www/office/README.karl for usage.
+# 
 # When an item is contained on a single page, Barbara wants 100-100.
 
 $ERROR_COUNT = 0;
@@ -50,9 +53,8 @@ sub substitute_pages {
     # final page number.
     $lastpage-- if $lastpage > 0;
 
-    # include -lastpage unless it's the same as firstpage.
+    # include -lastpage since Nelson's scripts want duplicates.
     my $repl = $firstpage;
-    $repl .= "-$lastpage" if $lastpage ne $firstpage;
     
     $line =~ s/\\get(first)?page\{(.*?)\}/$repl/;
 
@@ -68,7 +70,6 @@ sub substitute_pages {
     $firstpage = $lastpage;
     
     $line =~ s/\\getlastpage\{(.*?)\}/$firstpage-$lastpage/;
-    s/$firstpage-$lastpage/$firstpage/ if $firstpage eq $lastpage;
   }
 
   return $line;
