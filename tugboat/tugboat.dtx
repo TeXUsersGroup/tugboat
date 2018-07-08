@@ -1751,16 +1751,30 @@
   \vspace{#1}%
   \rightline{%
     \vbox{\hsize\signaturewidth \ninepoint \raggedright
-      \parindent \z@ \everypar={\hangindent 1pc }
+      \parindent \z@ \everypar={\hangindent 1pc }%
       \parskip \z@skip
       \def\|{\unskip\hfil\break}%
       \def\\{\endgraf}%
-      \def\phone{\rm Phone: }
+      \def\phone{\rm Phone: }%
+      \def\tubmultipleaffilauthor{\\}%
       \rm\@signature}%
   }%
   \ifnum\authornumber<0 \endgroup\fi
 }
 \def\signaturemark{\leavevmode\llap{$\diamond$\enspace}}
+%    \end{macrocode}
+%
+% The idea here is that if multiple authors share affiliation
+% information, we can typeset the affiliation only once. We separate by
+% commas for the \cs{maketitle}, and put on separate lines in the
+% \cs{makesignature}. Similarly, within \cs{netaddress},
+% |!tubmultipleaffilnet| separates with a space before and after the
+% comma. (All this per bb.) See |tb122childs-trotter.ltx| for an
+% example.
+% 
+%    \begin{macrocode}
+\def\tubmultipleaffilauthor{\unskip, \ignorespaces}%
+\def\tubmultipleaffilnet{\textrm{\unskip\ ,\ \ignorespaces}}
 %    \end{macrocode}
 %
 % Now all the awful machinery of author definitions.
@@ -1866,7 +1880,8 @@
 % \LaTeXe.
 %
 %    \begin{macrocode}
-  #1\@sanitize\makespace\ \makeactive\@
+  #1\@sanitize\makespace\ \makeactive\@%
+  \makeescape! \makebgroup[ \makeegroup]% seems more useful than literals
   \makeactive\.\makeactive\%\@relay@netaddress}%
 %    \end{macrocode}
 %

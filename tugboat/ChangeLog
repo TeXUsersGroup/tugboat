@@ -1,3 +1,10 @@
+2018-07-08  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\tubmultipleaffil{author,net}): new commands
+	to try to avoid repeating affiliation information.
+	First simple example: tb122childs-trotter.ltx.
+	(\netaddress): make ! escape, [] group chars.
+
 2018-04-29  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\iftubtitlerulefullwidth): new conditional.
