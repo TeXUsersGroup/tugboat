@@ -1662,7 +1662,7 @@
     \ifnum\count@>1
       \count@\authornumber
       \advance\count@ by \m@ne
-      #1{\ignorespaces\theauthor{\number\count@}\unskip\ and }%
+      #1{\ignorespaces\theauthor{\number\count@}\unskip\@tubauthorlastsep}%
     \fi
 %    \end{macrocode}
 %
@@ -1673,6 +1673,8 @@
     #1{\ignorespaces\theauthor{\number\authornumber}\unskip}
   \fi
 }
+%
+\def\@tubauthorlastsep{, }% until 2018, was: "\ and "
 %    \end{macrocode}
 %
 % Signature blocks.  The author can (in principle) define a different
@@ -1756,7 +1758,7 @@
       \def\|{\unskip\hfil\break}%
       \def\\{\endgraf}%
       \def\phone{\rm Phone: }%
-      \def\tubmultipleaffilauthor{\\}%
+      \def\tubmultipleaffilauthor{\\\hspace*{1em}}%
       \rm\@signature}%
   }%
   \ifnum\authornumber<0 \endgroup\fi
@@ -1765,16 +1767,16 @@
 %    \end{macrocode}
 %
 % The idea here is that if multiple authors share affiliation
-% information, we can typeset the affiliation only once. We separate by
+% information, we need only typeset the affiliation once. We separate by
 % commas for the \cs{maketitle}, and put on separate lines in the
 % \cs{makesignature}. Similarly, within \cs{netaddress},
 % |!tubmultipleaffilnet| separates with a space before and after the
-% comma. (All this per bb.) See |tb122childs-trotter.ltx| for an
+% comma, while . (All this per bb.) See |tb122childs-trotter.ltx| for an
 % example.
 % 
 %    \begin{macrocode}
 \def\tubmultipleaffilauthor{\unskip, \ignorespaces}%
-\def\tubmultipleaffilnet{\textrm{\unskip\ ,\ \ignorespaces}}
+\def\tubmultipleaffilnet{\textrm{\unskip~,\ \ignorespaces}}
 %    \end{macrocode}
 %
 % Now all the awful machinery of author definitions.

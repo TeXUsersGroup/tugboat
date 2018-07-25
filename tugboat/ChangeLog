@@ -1,3 +1,13 @@
+2018-07-25  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\@tubautholastsep): macro for text before last
+	author in list; was hardwired "\ and ", now just ", ".
+	(\@getauthorlist): change call.
+	(\tubmultipleaffilauthor): try indenting subsequent authors by \quad,
+	in \makesignature.
+	(\tubmultipleaffilauthornet): tie before comma, not space.
+	These changes from processing tb123schubotz-mathtext.
+
 2018-07-08  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\tubmultipleaffil{author,net}): new commands

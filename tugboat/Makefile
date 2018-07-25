@@ -1,10 +1,10 @@
 # $Id$
-# Copyright 2007-2017 TeX Users Group.
+# Copyright 2007-2018 TeX Users Group.
 # You may freely use, modify and/or distribute this file.
 # 
 opt = --interaction=nonstopmode --file-line-error
-latex = latex $(opt)
-pdflatex = texfot pdflatex $(opt)
+latex = $(texfot) latex $(opt)
+pdflatex = $(texfot) texfot pdflatex $(opt)
 texfot = texfot
 
 ltubguid.pdf: ltubguid.ltx ltugboat.cls
