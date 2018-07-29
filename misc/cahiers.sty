@@ -1,16 +1,17 @@
 % $Id$
-% Copyright 1999, 2006, 2008, 2009, 2010, 2015 TeX Users Group.
+% Copyright 1999, 2006, 2008, 2009, 2010, 2015, 2018 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 % This is a LaTeX2e package for TUGboat abstract summaries,
 % originally just for cahiers.
 %
-\def\filedate{2010/04/10}
+\def\filedate{2018/07/29}
 \ProvidesPackage{cahiers}[\filedate TUGboat abstract summaries]
 %
 % uses production LaTeX2e commands
 \NeedsTeXFormat{LaTeX2e}[1994/12/01]
 %
+% KB  2018/07/29  \hfuzz\maxdimen for test setting.
 % KB  2010/04/10  minor new macros.
 % KB  2010/04/04  no "Editor's note:" in \pubdesc.
 % KB  2009/06/02  load other packages, have \credit do a \vspace.
@@ -49,7 +50,7 @@
         {\def\fn##1{\textrm{##1\unskip}}%
          \scshape{#2\unskip}},
       \fi
-      \setbox0\vbox{\noindent #3}%        % check for presence of French title
+      \setbox0\vbox{\hfuzz=\maxdimen\noindent #3}% check for presence of French title
       \ifdim\wd0>.2em #3\unskip
       \else \frtitlefalse
       \fi
