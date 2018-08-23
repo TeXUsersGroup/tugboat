@@ -1,0 +1,7 @@
+$Id$
+(Public domain.)
+
+These files are used in the covers/ subdirectory for each TUGboat issue,
+and don't have to be routinely changed, so are checked in here.
+The cover*.tex and tbNNNc*.tex files mostly do need to be changed.
+See the copynext target in covers/Makefile to set up the next issue.

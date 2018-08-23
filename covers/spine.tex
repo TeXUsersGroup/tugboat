@@ -1,0 +1,48 @@
+% $Id$
+% spine.tex (run with standalone pdftex).
+
+\input ../tugboat.sty
+\input ../tugboat.dates
+
+% but then throw away the TUGboat output routine.
+\count0 = 1
+\output = {\shipout\box255}
+
+% we're trying to control position precisely.
+\hoffset = -1in
+\voffset = -1in
+\topskip = 0pt
+\nointerlineskip
+
+% width of spine: computed by cadmus based on #pages, paper, etc.
+% so we will typeset in a vbox that is this high,
+% with text centered,
+% with width of the whole page.
+\vsize=.28125in \pdfpageheight=\vsize
+\hsize=11in     \pdfpagewidth =\hsize
+
+% Tell pdftex to insert this PDF instruction at \output time to rotate
+% the page, since Cadmus wants it vertical (as will be printed).
+% 
+\pdfpagesattr { /Rotate 90 }
+
+\font\tenssb=cmssbx10
+\font\sevenssb=cmssbx10 scaled 700
+
+\vbox to \vsize{%
+  \vfil
+  % optically, since we generally have no real descenders,
+  % the text appears too high -- the comma doesn't visually count.
+  % so give ourselves a little extra space above the text.
+  \vskip .09\vsize
+  \hbox to \hsize{\kern1in
+    \tenssb TUG{\sevenssb BOAT}\qquad 
+    Volume \volno, Number \issno
+    \ifx\postissno\empty \else \Dash \postissno \fi
+    \hfil
+    \issdt\kern1in}%
+  \vfil
+}
+
+%\loggingall
+\end

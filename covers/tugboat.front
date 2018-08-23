@@ -1,0 +1,262 @@
+% $Id$
+% Public domain.
+% 
+%		*****	TUGBOAT.FRONT	*****			22 Feb 89, bb
+%							revised 27 Jun 90, bb
+%							updated 18 Jul 92, bb
+%							updated 13 Oct 93, bb
+%							updated 15 Jan 95, bb
+%							to match TBCONT.DEF
+%							updated  7 Dec 96, bb
+%							updated 22 May 97, bb
+%							updated 16 Dec 99, bb
+%							updated 22 Dec 01, bb
+%							updated  6 Jul 02, bb
+%  ... more changes in following years.
+%  
+%  This file contains the definitions necessary to produce the
+%  TUG steering committee list, the inside title page, and cover 3
+%
+%  This version is for TeX82, and presupposes PLAIN.
+
+
+\input tugboat.sty
+
+%  Make @ signs act like letters, for use in internal control sequences.
+\makeatletter
+
+%  This first needed for 13#1 contents; no other sizes available; 11 Apr 92
+\font\tensltt=cmsltt10
+\let\sltt=\tensltt
+
+%  Define additional titling fonts.
+\font\twelverm=cmr12  %0 scaled \magstep1
+\font\twelvebf=cmbx12 %0 scaled \magstep1
+\font\twelvesl=cmsl12 %0 scaled \magstep1
+\font\twelveit=cmti12 %0 scaled \magstep1
+%  \twelvei must be math italic for correct \dots in quotes
+%  this differs from TBCONT.DEF [bnb; 7 Dec 96]
+%\let\twelvei=\twelveit
+\font\twelvei=cmmi12  %0 scaled \magstep1
+\font\twelvesy=cmsy10 scaled \magstep1
+\font\twelvett=cmtt12 %0 scaled \magstep1
+
+\def\twelvepoint{\baselineskip 14pt
+    \def\rm{\fam0\twelverm}%
+    \textfont0=\twelverm \scriptfont0=\eightrm \scriptscriptfont0=\sixrm
+    \textfont1=\twelvei  \scriptfont1=\eighti  \scriptscriptfont1=\sixi
+    \textfont2=\twelvesy \scriptfont2=\eightsy \scriptscriptfont2=\sixsy
+    \textfont3=\tenex \scriptfont3=\tenex \scriptscriptfont3=\tenex
+    \def\it{\fam\itfam\twelveit}%
+    \textfont\itfam=\twelveit
+    \def\sl{\fam\slfam\twelvesl}%
+    \textfont\slfam=\twelvesl
+    \def\bf{\fam\bffam\twelvebf}%
+    \textfont\bffam=\twelvebf \scriptfont\bffam=\eightbf
+       \scriptscriptfont\bffam=\sixbf
+    \def\smc{\tenrm}%
+    \def\SMC{\elevenrm}%  % added 22 May 97; bb
+    \def\tt{\twelvett}%
+    \rm }
+
+%
+\font\elevenrm=cmr10 scaled \magstephalf
+\let\eleveni=\teni
+\let\elevensy=\tensy
+\font\fourteenrm=cmr12 scaled\magstep 1  %0 scaled \magstep2
+\font\fourteenit=cmti12 scaled\magstep 1 %0 scaled \magstep2
+\let\fourteeni=\fourteenit
+\let\fourteensy=\tensy
+
+\def\fourteenpoint{\baselineskip 16pt
+    \def\rm{\fam0\fourteenrm}%
+    \textfont0=\fourteenrm \scriptfont0=\elevenrm \scriptscriptfont0=\sevenrm
+    \textfont1=\fourteenit \scriptfont1=\eleveni  \scriptscriptfont1=\seveni
+    \textfont2=\fourteensy \scriptfont2=\elevensy \scriptscriptfont2=\sevensy
+    \textfont3=\tenex \scriptfont3=\tenex \scriptscriptfont3=\tenex
+    \def\smc{\elevenrm}%
+    \rm }
+
+\font\sixteenrm=cmr17 %0 scaled \magstep3
+\font\sixteenbf=cmbx12 scaled \magstep2 %0 scaled \magstep3
+\def\bigfont{\def\rm{\sixteenrm}\def\smc{\twelverm}%
+    \def\bf{\sixteenbf \def\smc{\twelvebf}}\rm }
+
+%
+%  Save normal values for headers and footers, to permit additional
+%  files to be run following the cover et al.  Provide an empty
+%  variation and start with it.
+\newdimen\normalheadmargin  \normalheadmargin=\headmargin
+\newdimen\normalrheadlgt    \normalrheadlgt=\rheadlgt
+\newdimen\normalrfootlgt    \normalrfootlgt=\rfootlgt
+\let\normalrunhead=\runhead
+\def\emptyrunhead{\vbox to \rheadlgt{\vfil }}
+\let\normalrunfoot=\runfoot
+
+\let\runhead=\emptyrunhead
+
+
+\onecol
+
+%  control sequences for title page quotation
+
+\newdimen\topquoteauthindent \topquoteauthindent=7pc  % normally 10
+{\obeylines
+\gdef \topquote #1\ref {\moveright 15pc \hbox\bgroup %
+  \vbox\bgroup \hsize=24pc % normally 26
+    \hyphenpenalty=10000 \raggedright %
+    \noindent #1\endgraf %
+    \smallskip %
+    \bgroup \leftskip=\topquoteauthindent \parindent=0pt \frenchspacing %
+      \raggedstretch=.5\hsize \raggedright %
+      \everypar{\hangindent 2pc \everypar{\hangindent 2pc}}%
+      \obeylines
+      \ShowStatus }%
+}
+\def \endquote {\par\null\egroup\egroup\egroup }
+%  For debugging:
+\def \ShowStatus{\immediate\write-1{status checkpoint}}
+
+\def \smbullet{\raise .2ex\hbox{$\scriptstyle\bullet$}}
+
+\def \USA{U\kern-.12em.\kern.04em S\kern-.06em.\kern.06em A.}
+
+%
+%  control sequences for contents page
+
+\newskip\secskipa \newskip\secskipb
+\secskipa=5pt plus .5pt			% 3pt -- vary depending on
+\secskipb=1pt				% 1.5pt -- available space
+\newdimen\secht \newdimen\secwd
+\newif\ifnewsec
+\newif\ifFirstR@nin	\FirstR@nintrue
+\newbox\SecBox
+
+\def\sec #1<{\def\\{\unskip\cr}%
+    \setbox\SecBox=\vbox to \secht
+        {\bf\halign{\hfil ##\cr\strut#1\cr}\vss}%
+    \newsectrue \FirstR@nintrue }
+\def\secsec #1\\#2<{\sec #1<%
+    \subsecnn {}\\#2<}
+%  \@secwd has varied from 1.25in to 2in; \hangindif must be reset accordingly
+\newdimen\@secwd	\@secwd=1.5in
+\newdimen\@hangindwd
+\newdimen\hangindif	\hangindif=.3in
+\@hangindwd=\@secwd \advance\@hangindwd by 2\hangindif
+\newdimen\digitwidth
+
+\def\setdigitwidth #1{\setbox\TestBox=\hbox{#1}%
+    \global\digitwidth=\wd\TestBox }
+\setdigitwidth{999}
+
+%  Permit page ranges separated by hyphen (to support Nelson Beebe's
+%  citation builder), but print only the starting page number.
+\def\strippageno#1-#2<{#1\unskip}
+
+\iffalse
+    \ifnewsec \vskip\secskipa \newsecfalse \else \vskip\secskipb \fi
+    \noindent \hangindent=\@hangindwd
+    \leavevmode \hbox to \@secwd{\hss\box\SecBox \quad
+                \hbox to \digitwidth{\hss\strippageno#1-<}\quad}%
+    {\ignorespaces #2\unskip}}
+\fi
+
+% overridden in cover4.tex; probably the defn here can be replaced.
+\def\newsubs@c#1#2{%
+    \ifnewsec \vskip\secskipa \newsecfalse \else \vskip\secskipb \fi
+    \noindent \hangindent=\@hangindwd
+    \leavevmode
+    \hbox to \@secwd{\hss
+      \box\SecBox
+      \quad
+      \hbox to \digitwidth{\hss
+        \strippageno#1-<%
+      }%
+      \quad
+    }%
+    {\ignorespaces #2\unskip}%
+}
+
+%  For acronyms in titles, need slanted \SMC, just two sizes.
+%  [added 1999/12/10, for tb64, 1999 Proceedings issue]
+\addto\tenpoint{\def\slSMC{\ninesl}}
+\addto\ninepoint{\def\slSMC{\eightsl}}
+%  If either author or title absent, omit / separator.
+%  If this is a proceedings issue, reverse order of author / title.
+\def\subsec #1\\#2\\#3<{\par
+    \TestCount=0					% case to set /
+    \setbox\TestBox=\hbox{#1\unskip}%
+    \ifdim\wd\TestBox < .2em \TestCount=1		% case to omit /
+    \else \setbox\TestBox=\hbox{#2\unskip}%
+        \ifdim\wd\TestBox < .2em \TestCount=1 \fi \fi
+    \newsubs@c{\ignorespaces#3}{\ifprocissue#1\else\ignorespaces#2\fi}%
+    \ifcase\TestCount
+        \hskip.5em\raise.3ex\hbox{\sevenrm/}\penalty-10\hskip.4em\fi
+    {\sl \let\SMC=\slSMC \ifprocissue\ignorespaces#2\else#1\fi\unskip}\endgraf}
+
+\def\subseca #1\\#2<{\subsec #1\\#2\\ <}
+\def\subsecnn #1\\#2<{\subsec \ifprocissue#1\fi\\%
+    \ifprocissue\else#1\fi\\#2<}
+\def\subseci #1\\#2<{\subsecnn \hbox to \hangindif{}#1\\#2<}
+\def\subsecii #1\\#2<{\subsecnn \hbox to 2\hangindif{}#1\\#2<}
+
+\newdimen\subsecchang
+\subsecchang=\@hangindwd
+\advance\subsecchang by-\hangindif
+\def\subsecc #1<{\noindent \kern\subsecchang
+    \hangindent=\subsecchang #1\unskip\endgraf }
+
+\def\subsite #1<{\ifdim\wd\SecBox > .2em \subsec {}\\ \\ <%
+    \else \setbox\SecBox=\hbox{\eightrm$\cdot$\kern.25em#1}\fi }
+
+\def\subsub #1<{\subsecnn #1\\ <}
+
+\def\subquery #1\\#2\\#3<{%
+    \ifFirstR@nin \FirstR@ninfalse \newsubs@c{#3}{#2}%
+        \hangindent=\@secwd
+    \else \unskip ;\penalty-50\hskip.6em \ignorespaces #2\unskip
+    \fi
+    \setbox\TestBox=\hbox{#1\unskip}%
+        \ifdim\wd\TestBox > .2em \penalty-10\ ({\sl #1\/})\fi }
+
+\def\and{\unskip{\rm\penalty 20\hskip.4em and\kern.06em}~}
+
+%
+%  page size is reset in tb*cover.tex
+\def\SetupContents{\onecol
+    \raggedstretch=.5\colwd
+    \raggedright
+    \hyphenpenalty=10000		%   no hyphenation, none at all
+    \exhyphenpenalty=10000
+    \frenchspacing
+    \uchyph=0 }
+
+%  To support cumulative contents, initialize size-specific
+%  features after type size has been chosen.
+
+%  allow additional information for special issues
+\newif\ifprocissue
+
+%% 2002/07/05 added "date slashes" to handle double issues
+\def\dateslash{/}
+\def\TUBheaddateslash{\raise.25ex\hbox{\ninebf/}}
+\def\TUBhead #1, #2, #3<{\setbox\TestBox=\hbox{()}\secht=\ht\TestBox
+    \sec \null <\newsecfalse 	% initialize section box
+    \procissuefalse
+    \subsub{\bigfont\bf TUG{\smc BOAT}}<%
+    \vskip 10pt
+    \subsub
+%	\llap{(ISSN 0896-3207)\quad\kern\digitwidth\quad}%
+	{\let\dateslash=\TUBheaddateslash
+	 \twelverm\baselineskip=14pt Volume #1, Number #2%
+        \hskip.5em\raise.25ex\hbox{\ninebf/}\hskip.4em #3}<%
+    \ifx\postissno\empty \global\procissuefalse
+    \else \vskip2pt \subsub {\twelverm\baselineskip15pt \postissno}<%
+        \global\procissuetrue
+    \fi
+    \vskip 20pt }
+
+%% think about adding issn later, using postscript, vertical at the
+%% bottom right corner of cover 4, just off the spine
+
+\endinput

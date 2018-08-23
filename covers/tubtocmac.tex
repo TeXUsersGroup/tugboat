@@ -1,0 +1,159 @@
+% $Id$
+% Public domain. Originally created by Karl Berry, 2017.
+% Some common macros for cover4 and cover3.
+% 
+% These are not included in tugboat.front because
+% cover3 does not need (or want) tugboat.front and tugboat.sty.
+
+% do nothing if reading this file a second time.
+\ifx\tubprimitiveinput\undefined
+  \let\next\relax
+\else
+  \expandafter\let\expandafter\next\csname endinput\endcsname
+\fi
+\next
+
+% Start by loading graphics so we can define \XeTeX.
+% miniltx redefines \input, as does tugboat.sty, so save and restore.
+\let\tubprimitiveinput = \input
+\input miniltx
+\input graphicx
+\input url.sty
+\let\input = \tubprimitiveinput
+
+% make page numbers in toc be links? define for complete, undefined else.
+%\let\tublinktoc=t % done in tbNNNcomplete.tex.
+
+% Typeset page number #1, and make it a pdf link to the appropriate page
+% \iftublinktoc is true. The argument is not just an integer, but rather
+% something using \getfirstpage or \getlastpage (from tugboat.dates).
+% Those macros in turn use \input, etc.
+% 
+% So the whole thing is complicated, but necessary, because we don't
+% want to ever write any hardwired page numbers -- they will inevitably
+% become out of date at the last second, and it would be hard to notice.
+% 
+\newcount\tublinkdestpage
+%
+\def\tubmaybelinkpageno#1{%
+  \ifx\tublinktoc\undefined \else
+    {%
+     % The \getfirstpage defined in tugboat.dates is fine for
+     % typesetting, but for linking we need to get the number, not
+     % typeset it. So redefine it. Similarly \getlastpage.
+     %
+      \tublinkdestpage = -1
+      %
+      \def\getfirstpage##1{\begingroup\globaldefs=1
+        \def\tubfirstpage{\tublinkdestpage}%
+        \input ../##1/firstpage.tex
+      \endgroup}%
+      %
+      \def\getlastpage##1{\begingroup\globaldefs=1
+        \def\tublastpageplus{\tublinkdestpage}%
+        \input ../##1/lastpage.tex
+        \advance\tublastpageplus by -1 % don't want "plus"
+      \endgroup}%
+      %
+      % execute code to store the page number in \tublinkdestpage.
+      \setbox0=\hbox{#1}%
+      %
+      \global\advance\tublinkdestpage by -\TBtitlepage % from tugboat.dates
+      \global\advance\tublinkdestpage by 3 % cover4,cover2,titlepage
+    }%
+    % do not make link if page number is nonexistent, in cover4 head.
+    \ifnum\tublinkdestpage > 0
+      %\message{linking to \the\tublinkdestpage}%
+      \pdfstartlink
+        attr{/Border [0 0 0]}    % boxes around links are too ugly
+        goto page \tublinkdestpage{/XYZ}\relax  % destination page
+    \fi
+  \fi
+  #1%typeset page number as usual
+  \ifx\tublinktoc\undefined\else \ifnum\tublinkdestpage > 0 \pdfendlink \fi \fi
+}
+
+% all for xetex.
+\def\tubreflect#1{%
+  \ifx\reflectbox\undefined
+    \errmessage{graphics package must be loaded}%
+  \else
+    \ifdim \fontdimen1\font>0pt
+      \raise 1.75ex \hbox{\kern.1em\rotatebox{180}{#1}}\kern-.1em
+    \else
+      \reflectbox{#1}%
+    \fi
+  \fi
+}
+\def\tubhideheight#1{\setbox0=\hbox{#1}\ht0=0pt \dp0=0pt \box0 }
+\def\XekernbeforeE{-.125em}
+\def\XekernafterE{-.1667em}
+\DeclareRobustCommand\Xe{\leavevmode
+  \tubhideheight{\hbox{X%
+    \setbox0=\hbox{\TeX}\setbox1=\hbox{E}%
+    \lower\dp0\hbox{\raise\dp1\hbox{\kern\XekernbeforeE\tubreflect{E}}}%
+    \kern\XekernafterE}}}
+\def\XeTeX{\Xe\TeX}
+\def\XeLaTeX{\Xe{\kern.11em \LaTeX}}
+
+% from gm, improves \AllTeX spacing:
+\def\La{\TestCount=\the\fam \leavevmode L%
+        \setbox\TestBox=\hbox{$\fam\TestCount\scriptstyle A$}%
+        \kern
+          -.57 %\ifdim \fontdimen1\font>0pt -.4 \else -.57 \fi
+          \wd\TestBox
+        \raise
+          \ifdim \fontdimen1\font>0pt .45ex \else .42ex \fi
+          \copy\TestBox
+        \kern
+          \ifnum \TestCount=\itfam -.29 \else -.2 \fi
+          \wd\TestBox
+        }
+\def\LaTeX{\La\TeX}
+
+\def\XyM{X\kern-.30em\smash{%
+\raise.50ex\hbox to0.8em{\hss
+{%\expandafter\csname OT1/cmr/\f@series/\f@shape/\f@size\endcsname
+ \char'7 }%
+\hss}}\kern-.30em{M}}
+\def\XyMTeX{\XyM\kern-.1em\TeX}
+
+% prefer rm "and" with sl names.
+\def\aand{\unskip{\rm\ and\ }\ignorespaces} % matches tub, can be too long
+
+% usual backslash prefix
+\def\cs#1{{\tt \char`\\#1}}
+
+\def\code#1{\hbox{\tt #1}}
+\let\pkg=\code
+
+% improve \Thanh
+\def\Thanh{H\`an Th{\thanhfont \char'270} Th\`anh}
+
+% improve Lslash/lslash
+\def\L{{\lslashfont \char'212 }}
+\def\l{{\lslashfont \char'252 }}
+%
+\def\Lrm{{\lslashrmfont \char'212 }}
+\def\lrm{{\lslashrmfont \char'252 }}
+
+% make \ldots work in text mode.
+\let\plainldots=\ldots
+\def\ldots{\relax\ifmmode\plainldots\else$\plainldots\,$\fi}
+\let\dots=\ldots
+
+% some fake LaTeX
+\def\emph#1{{\it #1}}
+\def\textit#1{{\it \def\&{\sl\char`& }#1}}
+\def\textrm#1{{\rm #1}}
+\def\textsf#1{{\sf #1}}
+\def\textsl#1{{\sl #1}}
+\def\texttt#1{{\tt #1}}
+
+% slant \BibTeX and \MF:
+\def\slBibTeX{{\sl B{\slc IB}\kern-.08em\TeX}}
+\def\BibTeX{\slBibTeX}
+\def\Bib{B\kern-.05em{\smc i\kern-.025em b}}
+
+\frenchspacing
+\hyphenpenalty = 10000
