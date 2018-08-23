@@ -1,6 +1,6 @@
 %% @texfile{
 %%     filename   = "tugboat.cmn",
-%%     copyright  = "Copyright 1993-1996,2006,2008,2011-2017 TeX Users Group.
+%%     copyright  = "Copyright 1993-1996,2006,2008,2011-2018 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -30,7 +30,7 @@
 \next
 
 \def\fileversion{v1.23+dev}
-\def\filedate{2017/03/21}
+\def\filedate{2018/08/22}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -117,7 +117,8 @@
 \def\BibTeX{{\rm B\kern-.05em{\smc i\kern-.025emb}\kern-.08em\TeX}}
 \def\CandT{{\sl Computers \& Typesetting}}
 \def\ConTeXt{C\kern-.0333emon\-\kern-.0667em\TeX\kern-.0333emt}
-\def\Cplusplus{C\raise.7ex\hbox{$_{++}$}}
+\def\Cplusplus{C\plusplus}
+\def\plusplus{\raise.7ex\hbox{$_{++}$}}
 \def\CSS{\acro{CSS}}
 \def\CSabbr{$\cal C$\kern-.1667em\lower.5ex\hbox{$\cal S$}} % from opmac.tex
 \def\CSTUG{\CSabbr\acro{TUG}}

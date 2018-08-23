@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2017/11/06 v2.19
+                   [2018/08/22 v2.19+dev
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -669,6 +669,7 @@
 %
 \def\BSD{\acro{BSD}}
 \def\CandT{\textsl{Computers \& Typesetting}}
+% must not define \CJK, because the CJK package does.
 %    \end{macrocode}
 % We place our \cs{kern} after \cs{-} so that it disappears if the
 % hyphenation is taken:
@@ -2647,7 +2648,7 @@
 \def\tubcaptionfonts{\small}%
 \long\def\@makecaption#1#2{%
   \vskip\abovecaptionskip
-  \sbox\@tempboxa{\tubcaptionfonts \tubmakecaptionbox{#1}{#2}}% try in an hbox
+  \sbox\@tempboxa{\tubcaptionfonts \frenchspacing \tubmakecaptionbox{#1}{#2}}% try in an hbox
   \ifdim \wd\@tempboxa > \hsize
     {% caption doesn't fit on one line; set as a paragraph.
      \tubcaptionfonts \raggedright \hyphenpenalty=\@M \parindent=1em
@@ -2664,7 +2665,7 @@
   \fi
   \vskip\belowcaptionskip}
 % 
-\def\tubmakecaptionbox#1#2{#1: #2}% allow overriding for a paper
+\def\tubmakecaptionbox#1#2{#1:\ #2}% allow overriding for a paper
 %    \end{macrocode}
 %
 % Also use \cs{tubcaptionfonts} for the caption

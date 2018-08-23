@@ -1,6 +1,9 @@
 # $Id$
 # Public domain.  Originally written by Karl Berry, 2008.
 
+input_tex = tb0hyf.tex       # normally
+#input_tex = hyfex-test.tex  # one-off test file
+
 all: tb0hyf.pdf ushyphex.tex
 
 ushyphex.tex: compare
@@ -12,13 +15,13 @@ check: compare test.tex
 compare: pl-ushyphex.tex sh-ushyphex.tex
 	diff $^
 
-pl-ushyphex.tex: hyphenex.pl tb0hyf.tex 
+pl-ushyphex.tex: hyphenex.pl $(input_tex)
 	perl $^ >$@ || rm -f $@
 
-sh-ushyphex.tex: hyphenex.sh tb0hyf.tex 
-	sh $< <tb0hyf.tex >$@ || rm -f $@
+sh-ushyphex.tex: hyphenex.sh $(input_tex)
+	sh $< <$(input_tex) >$@ || rm -f $@
 
-tb0hyf.pdf: tb0hyf.tex
+tb0hyf.pdf: $(input_tex)
 	TEXINPUTS=../plain: pdftex '\nonstopmode\input $<'
 
 h = hyphenex

@@ -52,3 +52,6 @@ fi
 # -dGrayImageFilter=/FlageEncode \
 # -dMonoImageFilter=/CCITTFaxEncode
 
+# See also https://github.com/pts/pdfsizeopt
+# (tug.org/TUGboat/tb30-3/tb96szabo.pdf)
+# but dependencies are heavy.
