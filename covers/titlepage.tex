@@ -1,0 +1,194 @@
+% $Id$
+% titlepage.tex (standalone)
+
+\input tugboat.sty
+\input tugboat.front
+
+\Trimmarkstrue
+\PrelimDraftfalse
+\let\xrefto=\xreftoON
+
+\input ../tugboat.dates
+
+\onecol
+
+\headmargin=.75in               % 1in
+\rheadlgt=0pt           \def\runhead{}
+
+% (was separate file tugboat.cover98)
+\basezero
+
+\font\fourteenbf=cmbx10 scaled \magstep2
+\let\commfont=\fourteenbf
+\let\volfont=\fourteenrm
+
+\bigfont
+\baselineskip=18pt
+\parindent=0pt
+
+\collgt=55pc
+\resetpagelgt
+\normalbottom
+
+\catcode`@ = 11
+
+\newif\ifprocissue
+
+%  \postissue determines whether this is Proceedings issue or not
+\ifx\postissno\empty \def\PostIssno{}\procissuefalse
+\else \def\PostIssno{\Dash \postissno}\procissuetrue
+\fi
+
+\newdimen\boxrulethickness  \boxrulethickness=1pt
+\def\boxit #1/#2, #3<{\vbox{%
+  \hrule height\boxrulethickness depth0pt\kern-\boxrulethickness
+  \hbox{\vrule height#1 depth#2 width\boxrulethickness
+    \kern-\boxrulethickness\kern.5pc
+    #3\kern.5pc \vrule width\boxrulethickness}
+  \hrule height\boxrulethickness depth0pt\kern-\boxrulethickness}}
+
+\headmargin=.75in
+\collgt=9.25in
+\resetpagelgt
+\raggedbottom
+
+\twelvepoint
+\rightskip=0pt
+
+%	Multiple proceedings editors must be input with spaces around \\ :
+%	\proceditor{First Name \\ Second Name}
+\newtoks\TestToks
+\newtoks\SMCToks
+\newtoks\ProcEditorToks  \ProcEditorToks={\ignorespaces}
+\newtoks\AuxEditorToks   \AuxEditorToks={\ignorespaces}
+\newtoks\AuxEditorLabelToks  \AuxEditorLabelToks={\ignorespaces}
+\def\MakeSMC#1#2 #3<{\setbox\T@stBox=\hbox{#3}%
+  \ifdim\wd\T@stBox>.2em \global\TestIftrue \global\TestToks={#3}%
+  \else \global\TestIffalse
+  \fi
+  \setbox\T@stBox=\hbox{#1#2}% check whether material is text
+  \ifdim\wd\T@stBox>.2em
+    \global\SMCToks=
+           \expandafter{\the\SMCToks\space #1{\smc#2}}%
+  \else
+    \global\SMCToks=
+           \expandafter{\the\SMCToks #1#2}%
+  \fi
+  }
+\def\SMCloop#1{%
+  \uppercase\expandafter{\foo}%
+  \expandafter\TestToks\expandafter{#1}%
+  \SMCToks={\ignorespaces}
+  \loop
+    \expandafter\MakeSMC \the\TestToks <
+  \ifTestIf
+  \repeat
+  }
+\expandafter\ifx\csname ifguestissue\endcsname\relax
+    \newif\ifguestissue \guestissuefalse
+\fi
+\newif\ifspecialeditor
+\ifguestissue
+    \specialeditortrue
+\fi
+%	Proceedings issues can have an additional editor; this
+%	editor's title may vary, so allow it to be input.
+\ifprocissue
+  \ifx\proceditor\null
+  \else \specialeditortrue
+    \ifx\auxeditor\null
+    \else
+      \edef\foo{\def\noexpand\AuxEditorLabel{\auxeditorlabel\space}}
+      \SMCloop{\AuxEditorLabel}
+      \AuxEditorLabelToks=\SMCToks
+      \edef\foo{\def\noexpand\AuxEditor{\auxeditor\space}}
+      \SMCloop{\AuxEditor}
+      \AuxEditorToks=\SMCToks
+    \fi
+  \fi
+\fi
+\ifspecialeditor
+  \let\@bslash\\%
+  \let\\\relax
+  \ifguestissue
+    \edef\foo{\def\noexpand\ProcEditor{\guesteditor\space}}
+  \else\ifprocissue
+    \edef\foo{\def\noexpand\ProcEditor{\proceditor\space}}
+  \fi\fi
+  \SMCloop{\ProcEditor}
+  \ProcEditorToks=\SMCToks
+  \let\\\@bslash
+\fi
+
+%  If there's no quote yet, don't lose glue at top of page.
+\hrule height 0pt depth 0pt width 1pt
+\Input quote                        % issue specific
+
+\vfill
+\setbox\TestBox=\hbox to 412pt{% width for 38:1 and earlier
+  \bigfont COMMUNICATIONS OF THE \TeX\ USERS GROUP\hfil}
+\TestDimen=\wd\TestBox
+
+\leftline{%
+  \kern 7pt
+  \immediate\pdfximage{word-nobox.pdf}\pdfrefximage\pdflastximage
+}%
+\vskip 56.5pt
+
+\nointerlineskip
+\dlap{\centerline{\box\TestBox}
+  \vskip 8pt
+  \ifspecialeditor                % version for Proceedings or guest issue
+    \setbox\TestBox=\hbox{%
+      \global\count\TestCount\z@
+      \def\\{\global\advance\count\TestCount\@ne}%
+      \the\ProcEditorToks}
+    \setbox\TestBox=\hbox{%
+      \bigfont
+      \ifguestissue G{\smc UEST}
+      \else \ifprocissue
+        P{\smc ROCEEDINGS}
+      \fi\fi
+      E{\smc DITOR\ifnum\count\TestCount>\z@ S\fi}%
+      \ifguestissue\kern2.5em
+      \else \quad
+      \fi}
+    \centerline{\hbox to \TestDimen{\bigfont
+                \hbox to\wd\TestBox{TUG{\smc BOAT} E{\smc DITOR}\hfil}%
+                B{\smc ARBARA} B{\smc EETON}\hfil}}
+    \vskip 8pt
+    \vbox{\raggedcenter\parindent\z@\bigfont
+          \def\\{\hfil\egroup\vskip4pt
+                 \leavevmode\hbox to \TestDimen\bgroup
+                 \kern\wd\TestBox\ignorespaces}%
+          \leavevmode\hbox to \TestDimen\bgroup
+            \copy\TestBox
+            \the\ProcEditorToks \hfil\egroup}
+    \ifx\auxeditor\null
+    \else
+      \vskip 8pt
+      \centerline{\hbox to \TestDimen{\bigfont
+                \hbox to\wd\TestBox{\the\AuxEditorLabelToks\hfil}%
+                \the\AuxEditorToks\hfil}}
+    \fi
+  \else                        % version for ordinary issue
+    \centerline{\hbox to \TestDimen{\bigfont
+                E{\smc DITOR}\quad B{\smc ARBARA} B{\smc EETON}\hfil}}
+  \fi
+}
+
+%\def\spacer{\hfil\quad\smbullet\quad\hfil}
+\def\spacer{, }
+
+\vskip 3in                % was 2.5in; suitable for smaller trim
+\centerline{\hbox to \TestDimen{\bigfont
+        V{\smc OLUME} \volno, N{\smc UMBER} \issno \spacer \bigissdt\,\hfil}}
+\vskip 6pt
+\centerline{\hbox to \TestDimen{\bigfont
+        P{\smc ORTLAND}\spacer O{\smc REGON}\spacer
+        U\kern-1pt.S\kern-1pt.A.\hfil}}
+
+\eject
+\end
+
+\end
