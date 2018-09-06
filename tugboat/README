@@ -1,5 +1,5 @@
 $Id$
-Copyright 2006, 2009-2013 TeX Users Group.
+Copyright 2006, 2009-2018 TeX Users Group.
 You may freely use, modify and/or distribute this file.
 
 LaTeX macros for use in TUGboat
@@ -33,9 +33,10 @@ But if you want to install it by hand from CTAN, its directory there
                   but much updated since)
 
 other files are
-  ltugbib.bst  -- a BibTeX style for ltugboat.cls's Harvard-cite capabilities
-  ltubguid.pdf -- browsable user documentation
-  tugboat.pdf  -- browsable implementation documentation
+  ltubguid.pdf -- user documentation
+  tugboat.bst  -- recommended BibTeX style for TUGboat
+                  (approximately abbrvurl plus yet more abbreviations)
+  ltugbib.bst  -- BibTeX style for ltugboat.cls's Harvard-cite capabilities
 
 Processing the .ins file produces:
 

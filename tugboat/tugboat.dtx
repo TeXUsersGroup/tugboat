@@ -2,7 +2,7 @@
 % $Id$
 % tugboat.dtx - main source for LaTeX TUGboat classes.
 %
-% Copyright 1994-2017 TeX Users Group.
+% Copyright 1994-2018 TeX Users Group.
 %
 % This file is part of the tugboat package.
 %
@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2018/08/22 v2.19+dev
+                   [2018-09-06 v2.20
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -177,14 +177,14 @@
 % |\SC|&            Steering Committee\\
 % |\SGML|&          SGML\\
 % |\SliTeX|&\\
-% |\slMF|&          Metafont (slanted)\Dash deprecated: use
+% |\slMF|&          Metafont, slanted: deprecated: use
 %                   \cs{textsl} instead \\
 % |\stTeX|&         \TeX{} for the Atari ST\\
 % |\SVG|&\\
 % |\TANGLE|&\\
 % |\TB|&            The \TeX book\\
 % |\TeX|&           (Although nearly every package defines this,
-%                   most\Dash including plain\Dash are missing the
+%                   most, including plain, are missing the
 %                   spacefactor adjustment)\\
 % |\TeXhax|&\\
 % |\TeXMaG|&        (defunct)\\
@@ -324,7 +324,7 @@
 \providecommand{\@tugclass}{ltugboat}
 %    \end{macrocode}
 %
-% Warnings/error messages/information messages~--- if we're using
+% Warnings/error messages/information messages\Dash if we're using
 % \LaTeXe{} we can use the \cs{Class*} commands:
 %
 %    \begin{macrocode}
@@ -415,9 +415,8 @@
 % causes those letters to be suppressed.  Note that (a) no two
 % references will in any case have the same labels in the default
 % (plain) |rawcite| setup, and that (b) the distinguishing letters
-% appear in the labels themselves~--- the even remotely intelligent
-% reader should be able to work out the correspondence one with the
-% other\dots
+% appear in the labels themselves; the reader can work out the
+% correspondence one with the other\dots
 %
 %    \begin{macrocode}
 \DeclareOption{extralabel}{\let\UseExtraLabel\@firstofone}
@@ -1080,7 +1079,7 @@
 % \cs{,}, but that we provide a new definition of |~| by redefining
 % its robust underpinnings\footnote{\cs{DeclareRobustCommand} doesn't
 %   mind redefinition, fortunately} (based on the version in
-% AMS-\TeX~--- the \LaTeXe{} version has \cs{leavevmode} and doesn't
+% AMS-\TeX---the \LaTeXe{} version has \cs{leavevmode} and doesn't
 % care about surrounding space).
 %    \begin{macrocode}
 \DeclareRobustCommand{\nobreakspace}{%
@@ -1805,7 +1804,7 @@
 }
 %    \end{macrocode}
 % \cs{contributor} is for a small part of a multiple-part article; it
-% begins a group that will be ended in \cs{makesignature}
+% begins a group that will be ended in \cs{makesignature}.
 %    \begin{macrocode}
 \def\contributor{%
   \begingroup
@@ -2199,7 +2198,7 @@
 %
 % \begin{macro}{\@sectitle@newline}
 % For use inside \cs{sectitle} as |\\|.  Works similarly to |\\| in
-% the ``real world''~--- uses an optional argument
+% the ``real world''---uses an optional argument
 %    \begin{macrocode}
 \newcommand{\@sectitle@newline}[1][\z@]{%
   \ifdim#1>\z@
@@ -2398,9 +2397,9 @@
 \fi
 %    \end{macrocode}
 %
-% \cs{TB@startsection} used to trap \verb"*" versions of sectioning
+% \cs{TB@startsection} used to warn about \verb"*" versions of sectioning
 % commands when numbering wasn't in effect.  But that eventually seemed
-% a useless complaint, since being able to switch back and forth between
+% a useless complaint, since it can be usefule to switch back and forth between
 % numbered and unnumbered can be useful during article development.
 % So now \cs{TB@startsection} is just a synonym for \cs{@startsection}.
 %
@@ -3266,12 +3265,12 @@
 %</classtail>
 %    \end{macrocode}
 %
-% \cs{SMC} \emph{isn't} small caps~--- Barbara Beeton says she thinks
+% \cs{SMC} \emph{isn't} small caps---Barbara Beeton says she thinks
 % of it as ``big small caps''.  She says (modulo capitalisation of
 % things\dots):
 % \begin{quote}
 %   For the things it's used for, regular small caps are not
-%   appropriate~--- they're too small.  Real small caps are
+%   appropriate---they're too small.  Real small caps are
 %   appropriate for author names (and are so used in continental
 %   bibliographies), section headings, running heads, and, on
 %   occasion, words to which some emphasis is to be given.  \cs{SMC}
@@ -3279,7 +3278,7 @@
 %   which look terrible in small caps, but nearly as bad in all caps
 %   in the regular text size.  The principle of using ``one size
 %   smaller'' than the text size is similar to the design of caps in
-%   German~--- where they are smaller relative to lowercase than are
+%   German---where they are smaller relative to lowercase than are
 %   caps in fonts intended for English, to improve the appearance of
 %   regular text in which caps are used at the heads of all nouns, not
 %   just at the beginnings of sentences.

@@ -1,7 +1,8 @@
 % $Id$
 % ltubguid.ltx - documentation for ltugboat classes.
 % 
-% Copyright 1994,1995,1996,2001,2005,2006,2010,2013,2014,2017 TeX Users Group.
+% Copyright 1994,1995,1996,2001,2005,2006,2010,2013,2014,2017,2018
+% TeX Users Group.
 % 
 % This file is part of the tugboat package.
 % 
@@ -39,28 +40,28 @@
   author = {Timothy Van Zandt and others},
   title = {The {\textsf{fancyvrb}} package},
   year = {2015},
-  howpublished = {\url{https://ctan.org/pkg/fancyvrb}},
+  howpublished = {\url{ctan.org/pkg/fancyvrb}},
 }
 
 @Misc{pkg:listings,
   author = {Carsten Heinz and others},
   title = {The {\textsf{listings}} package},
   year = {2015},
-  howpublished = {\url{https://ctan.org/pkg/listings}},
+  howpublished = {\url{ctan.org/pkg/listings}},
 }
 
 @Misc{Arseneau:url:1996,
   author = {Donald Arseneau},
   title = {The {\textsf{url}} package},
   year = {2013},
-  howpublished = {\url{https://ctan.org/pkg/url}},
+  howpublished = {\url{ctan.org/pkg/url}},
 }
 
 @Misc{Rahtz:hyperref:1997,
   author = {Sebastian Rahtz and Heiko Oberdiek and others},
   title = {The {\textsf{hyperref}} package},
   year = 2017,
-  howpublished = {\url{https://ctan.org/pkg/hyperref}},
+  howpublished = {\url{ctan.org/pkg/hyperref}},
 }
 
 @Book{Lamport:1994,
@@ -76,14 +77,14 @@
   title = {The {\textsf{verbatim}} package},
   year = {1996},
   month = {June},
-  howpublished = {\url{https://ctan.org/pkg/mflogo}},
+  howpublished = {\url{ctan.org/pkg/mflogo}},
 }
 
 @Misc{Vieth:mflogo:1995,
   author = {Ulrik Vieth},
   title = {The {\textsf{mflogo}} package},
   year = {1999},
-  howpublished = {\url{https://ctan.org/pkg/mflogo}},
+  howpublished = {\url{ctan.org/pkg/mflogo}},
 }
 
 @Article{Whitney:TB10-3-378,
@@ -95,7 +96,7 @@
   volume = {10},
   number = {3},
   pages = {378--385},
-  note = {\url{https://ctan.org/pkg/tugboat-plain}},
+  note = {\url{ctan.org/pkg/tugboat-plain}},
 }
 
 \end{filecontents}
@@ -103,8 +104,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % ctandir.sty -- an experimental style file to go with Donald
-% Arseneau's url.sty to perform some of the functions that we use the
-% \FAQverb stuff in the UK TUG FAQ for
+% Arseneau's url.sty. Not recommended these days, better to use
+% https://ctan.org/pkg/..., but don't feel like rewriting.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -114,7 +115,7 @@
 % Arseneau's |url.sty|
 %
 % we need url.sty; we can rely on it to demand anything it needs of
-% LaTeX
+% LaTeX. Not 
 \IfFileExists{url.sty}%
   {\RequirePackage{url}}%
   {\PackageWarning{ctandir}{You should acquire a copy of url.sty}%
@@ -157,10 +158,6 @@
 \CTANfile{cite}{macros/latex/contrib/cite/cite.sty}
 \CTANfile{tub-biblio}{digests/tugboat/biblio/tugboat.bib}
 \CTANfile{url}{macros/latex/contrib/misc/url.sty}
-%
-% commands that would be defined by changebar if we were using it:
-\providecommand\cbstart{}
-\providecommand\cbend{}
 %
 % ***** Commands provided by this paper *****
 %
@@ -215,7 +212,7 @@
 \author{Robin Fairbairns \& TUGboat editors}
 \EDITORnoaddress
 \netaddress{tugboat@tug.org}
-\personalURL{https://tug.org/TUGboat}
+\personalURL{tug.org/TUGboat}
 \maketitle
 
 \section{Introduction}
@@ -230,9 +227,10 @@ Mimi Burbank, and the \LaTeX3 team.
 
 \section{Availability}
 
-The \TUB\ web pages are at:\\\centerline{\url{https://tug.org/TUGboat}} They
-include an article template, information for authors and reviewers, all
-the back issues, and more.
+The \TUB\ web pages are at:\\\centerline{\url{https://tug.org/TUGboat}}
+They provide \textbf{an article template}, information for authors and
+reviewers, and the complete run of all published \TUB\ issues, among
+other things.
 
 The macros are released for general use, and are distributed via \CTAN{}
 (directory \CTANref{tub-latex}) in the usual \LaTeX{} way as files
@@ -279,20 +277,20 @@ and one/two-side options).
   of the reference; see section~\ref{sec:biblio}.
 \item[final] Set up for the final copy of a paper: page numbering to
   come from elsewhere, no cropmarks.
-\item[harvardcite] Specify Harvard-style citation (not especially
-  recommended in general, though they are used in the present document); see
+\item[harvardcite] Specify Harvard-style citation (not 
+  recommended in general; see section~\ref{sec:biblio}); see
   section~\ref{sec:biblio}.
 \item[noextralabel] Don't use the extra label-distinguishing mark in
   the body of the reference; see section~\ref{sec:biblio}.
-\item[nonumber] Sections are not to be numbered; section heading
+\item[nonumber] Sections are not numbered; section heading
   layout is to be as in the `plain' \pkgname{tugboat} styles.
 \item[numbersec] Sections, subsections and subsubsections are to be
   numbered (this is the default setting\Dash the author need not
   explicitly set it).
 \item[onecolumn] Typeset article in one column.
 \item[preprint] Set up for a preprint.
-\item[rawcite] Specify default (unnumbered) citation; see
-  section~\ref{sec:biblio}.
+\item[rawcite] Explicitly specify the standard \LaTeX\ citation method,
+  which is the default; see section~\ref{sec:biblio}.
 \item[runningfull] Information in both header and footer (default).
 \item[runningminimal] Information in header only.
 \item[runningoff] Information in neither header nor footer.
@@ -316,12 +314,6 @@ environments, or modify the definitions of \LaTeX{} `standard'
 commands.  Section~\ref{sec:equiv} lists equivalences between macros
 defined by the `plain' package and those defined by the new package.
 
-The `down' side of this decision is, of course, the `welter of
-\LaTeX{} braces' that Barbara Beeton has been heard to complain of in
-production team discussions.  One has to hope that the (near)
-uniformity of syntax offers those who think like Barbara some small
-recompense!
-
 \section{Divisions of the paper}
 \label{sec:divs-paper}
 
@@ -333,15 +325,10 @@ article (the classes are defined in terms of \LaTeX{}'s
 \cs{chapter}, which doesn't even appear in the parent class, receives
 the same treatment).
 
-Authors should note that the style of ordinary issues of \TUB{} makes
+Authors may note that the style of ordinary issues of \TUB{} makes
 no distinction between the titles of the divisions; the visual style
 relies on the section numbers to indicate where the divisions lie in
-the hierarchy.  As a result, the un-numbered `\verb|*|' forms of the
-\cs{section}, etc., commands, are inappropriate.  The
-\clsname{ltugboat} class therefore warns the author who (possibly
-inadvertently) uses one of these forms.  (An author who wishes to use
-un-numbered sections throughout the paper may use the
-\optname{nonumber} class option (see~\ref{sec:boat-opts}).
+the hierarchy.
 
 Reference may, however, be made to the `title' of divisions of the
 paper, whether they are numbered or not.  The \cs{nameref} command
@@ -357,20 +344,18 @@ and the command \verb|\nameref{sec:divs-paper}| produces
 
 \subsection{Abstracts}
 
-The classes make provision for abstracts, but the provision is
-different for the two classes.
-
-The \clsname{ltugboat} class provides two environments, \envname{abstract}
-and \envname{longabstract}.  The \envname{abstract} environment simply
-typesets its body as an un-numbered section whose title is
-`Abstract'.  The \envname{longabstract} environment typesets its body in
-small text, and separates the abstract from the rest of the paper with
-a decorative line.
+The \clsname{ltugboat} class provides two environments for abstracts,
+\envname{abstract} and \envname{longabstract}. The \envname{abstract}
+environment simply typesets its body as an un-numbered section whose
+title is `Abstract'. The \envname{longabstract} environment typesets its
+body in small text, and separates the abstract from the rest of the
+paper with a decorative line; this is rarely used.
 
 \subsection{Appendices}
 
-A paper may have appendices, which are expressed in exactly the same
-way as they would be in the \LaTeX{} article class:
+A paper may have appendices, which can be expressed in exactly the same
+way as they would be in the \LaTeX{} article class (confusing as that
+may be):
 
 \begin{verbatim}[\small]
 \appendix
@@ -383,9 +368,8 @@ Which will produce `section' headings similar to:
 \textbf{A\quad This is appendix A}
 \end{quote}
 
-\TUB{} articles may have a small extension to this format: this
-extension was originally developed for proceedings of past years, but is
-also available in normal issues:
+\TUB{} articles may have a small extension to this format using an
+\texttt{appendix} environment:
 
 \begin{verbatim}[\small]
 \begin{appendix}
@@ -393,7 +377,7 @@ also available in normal issues:
 ...
 \end{appendix}
 \end{verbatim}
-Which will produce `section' headings similar to:
+which will produce `section' headings similar to:
 \begin{quote}
 \textbf{Appendix A\quad This is the first one}
 \end{quote}
@@ -414,7 +398,7 @@ and for each \cs{author} there should be a \cs{address} command that
 gives a (postal) correspondence address.  In addition (wherever
 possible), \TUB{} likes to quote an email address for authors: for
 this, the \cs{netaddress} command is used.  Finally, each
-author may advertise a `home' Web page, using a \cs{personalURL} command.
+author may mention a web page, using a \cs{personalURL} command.
 
 For example, the present paper has at its start:
 
@@ -457,13 +441,7 @@ given at \tug'95 (abbreviated):
 \address{Elsevier Science Ltd\\
   ...}
 \netaddress{...}
-
-\author{Robin Fairbairns}
-\address{University of Cambridge
-    Computer Laboratory\\
-  ...}
-\netaddress{...}
-\personalURL{...}
+...
 \end{verbatim}
 
 The class files will take care of arranging author names and addresses
@@ -471,22 +449,16 @@ between the \cs{maketitle} and (possibly) \cs{makesignature} commands.
 
 \subsection{Compilation articles}
 
-\begin{sloppypar}
-  Compilation articles are built from a set of contributed parts, and
-  are under the general (sub-)\penalty0\relax\hskip0pt plus0pt minus0pt\relax
-  editorship of the author\footnote{Or authors: there's no reason in
-    particular that compilation articles should not be put together
-    by more than one person.} of the article.  The author of the article
-  is presented (using \cs{author} and suchlike commands) in the usual
-  way, and writes the introductory text.  Each contributors' part then
-  follows.  The contributor's name is quoted in the \cs{contributor}
-  command, which is an analogue of the \cs{author} command;
-  contributors' \cs{address}, \cs{netaddress} or \cs{personalURL}.
-  The \cs{contributor} command opens a group in which the contribution
-  appears, and the contributor's signature (produced with a
-  \cs{makesignature} command) closes the group.  The general scheme
-  looks like:
-\end{sloppypar}
+Compilation articles are written as a set of contributed parts under the
+general editorship of the author(s) of the article. The author of the
+article is presented (using \cs{author}, etc.)\ in the
+usual way, and writes the introductory text. Each contributors' part
+then follows. The contributor's name is quoted in the \cs{contributor}
+command, which is an analogue of the \cs{author} command; contributors'
+\cs{address}, \cs{netaddress} or \cs{personalURL}. The \cs{contributor}
+command opens a group in which the contribution appears, and the
+contributor's signature (produced with a \cs{makesignature} command)
+closes the group. The general scheme looks like:
 \begin{verbatim}[\small\makeescape\|\makebgroup\[\makeegroup\]]
 \title{Example compilation article}
 \author{Robin Fairbairns}
@@ -505,24 +477,18 @@ between the \cs{maketitle} and (possibly) \cs{makesignature} commands.
 \section{Verbatim text}
 \label{sec:verbatim}
 
-The classes do not at present provide the same wide range of
-facilities as the `plain' \pkgname{tugboat} style
-\cite{Whitney:TB10-3-378}; the author had hoped to `borrow' facilities
-from a package which is believed to be in development, but in the
-event that package has not materialised.
-
-For in-line verbatim text, authors should ordinarily employ the
-facilities of \LaTeX{} itself (the \cs{verb} macro).  This macro, of
-course, is highly restricted as to its usage (primarily, that it may
+For inline verbatim text, authors should ordinarily employ the
+facilities of \LaTeX{} itself, that is, the \cs{verb} macro.  This macro, of
+course, is highly restricted as to its usage\Dash primarily, it may
 not appear in the argument of \emph{any} other macro, even
-\cs{footnote}).
+\cs{footnote}.
 
 For displayed verbatim text, the classes add a small increment to
 the functionality of \LaTeX{}'s \envname{verbatim} environment, by
 introducing an optional argument.  The optional argument may contain
 commands to be executed before starting the verbatim text; the set of
 commands which have useful effect is strictly limited, but the
-following are commonly used:
+following are common:
 \begin{itemize}
 \item Font size selection commands: for example, all the display
   verbatim in the present paper starts with
@@ -545,6 +511,8 @@ produces:
 \begin{verbatim}[\small\makevmeta]
 The !<duration> is long ...
 \end{verbatim}
+  The \verb|!| character is made a general escape character by
+  \cs{makevmeta}, but \verb|<>| are not made grouping characters.
 
 \item More generally, one of the \cs{make*} commands,\footnote{\cs{makeescape},
   \cs{makebgroup}, \dots, \cs{makecomment}; used, for example, as
@@ -560,8 +528,8 @@ Two caveats about these optional arguments:
   verbatim.  An author who wishes to start verbatim text with a
   \verb|[| character should provide an empty optional argument (i.e.,
   `\verb|[]|') to the \envname{verbatim} environment.
-\item The \TUB\ facility is lost when anything is loaded that also defines the
-  \verb|verbatim| environment, as discussed next.
+\item The \TUB\ facility is lost when any package is loaded that also
+  defines the \verb|verbatim| environment, as discussed next.
 \end{itemize}
 
 Authors may wish to use a more featureful verbatim package, such as such
@@ -619,7 +587,7 @@ set of the macros.
 The classes provide macros that produce `correct' representations of a
 large number of acronyms and logos; a small representative selection is
 shown in figure~\ref{fig:acro-logo}.  The sample documents at
-\url{https://tug.org/TUGboat/location.html} have a more complete list,
+\url{tug.org/TUGboat/location.html} have a more complete list,
 and of course the class sources are the ultimate reference.
 \begin{figure}[htbp!]
   \begin{center}
@@ -653,14 +621,14 @@ and of course the class sources are the ultimate reference.
 \end{figure}
 
 Authors are especially urged to note the \cs{acro} command, which is
-defined in the classes.  The visual appearance of (mostly) lower-case
-English text, with interpolated acronyms in the same point size, is
-generally unpleasing in Computer Modern.  Therefore, the \cs{acro}
-command typesets its argument slightly smaller than it would otherwise
-appear: compare `\acro{DANTE}' (\verb|\acro{DANTE}|) with `DANTE'\@.
-Many of the provided macros merely generate calls to \cs{acro}; two
-examples, \cs{CTAN} and \cs{tug} of the list in
-figure~\ref{fig:acro-logo} have already been used in the present paper.
+defined in the classes. The visual appearance of all-caps sequences
+among normal text is rather unpleasing in Computer Modern,
+unfortunately. Therefore, the \cs{acro} command typesets its argument
+one point size smaller than the surrounding text: compare `\acro{DANTE}'
+(\verb|\acro{DANTE}|) with `DANTE'\@. Many of the provided macros merely
+generate calls to \cs{acro}; two examples, \cs{CTAN} and \cs{tug} of the
+list in figure~\ref{fig:acro-logo} have already been used in the present
+paper.
 
 \subsection{Other special typesetting}
 
@@ -687,33 +655,22 @@ the `everyday' ones.
 
 \section{Use of packages}
 
-In general, the \TUB{} team will be sympathetic to authors who wish to
-use non-standard packages in their papers; indeed, in a journal
-devoted to the usage of \TeX{}, the editor would be churlish indeed to
-refuse such usage.  However, the team does need to be able to process
-the paper on the \TUB{} production computers.
+In general, authors can use non-standard packages in their papers.
+However, the paper does need to be processable on the \TUB{} production
+computers (running current \TeX\ Live). A sensible mechanism for
+submitting out-of-the-ordinary packages (as for paper-specific
+bibliographies) is by use of the \envname{filecontents} environment.
 
 In general, packages currently on \CTAN, and known to work with
-\emph{current} \LaTeX{} are unlikely to give problems.
-
-In particular, the team is happy to accept papers using packages
-that are supported by members of the \LaTeX3 team,\footnote{%
+\emph{current} \LaTeX{} are unlikely to give problems. In particular,
+the team is happy to accept papers using packages that are supported by
+members of the \LaTeX3 team,\footnote{%
   Those in the \LaTeX{} base distribution, or one of those in the
-  \CTANref{packages} sub-tree on \CTAN.} subject to the warning:
-\begin{itemize}
-\item Use of the \pkgname{verbatim} package has implications for the
-  \envname{verbatim} facilities provided by the classes\Dash see
-  section~\ref{sec:verbatim}.
-\end{itemize}
+  \CTANref{packages} sub-tree on \CTAN.} subject to the warning already
+mentioned (section~\ref{sec:verbatim}): that use of the standard
+\pkgname{verbatim} package eliminates the special \envname{verbatim}
+facilities provided by the \TUB\ classes.
 
-Usage of other packages should always be subject to negotiation with
-the team.  If the team does not have access to a copy of the package,
-life is going to be very difficult; authors need to be sensible
-in this regard.  A sensible mechanism for submitting
-out-of-the-ordinary packages (as for paper-specific bibliographies) is
-by use of the \envname{filecontents} environment.
-
-\cbstart
 \tug{} has a policy that macro packages described in \TUB{} should be
 available for readers to use.  Since typing macros from printed
 sources is such an error-prone undertaking, authors of publicly
@@ -721,11 +678,6 @@ available packages are urged to submit their macros to the \CTAN{}
 archives.  If a package is only available under restricted terms,
 authors are urged to make this fact clear when first submitting an
 article to the editor.
-\cbend
-
-Some facilities are considered inappropriate for delivery by the
-\TUB{} classes, and as a result, the \TUB{} team recommend certain
-packages to authors.
 
 At present, the list of canonically recommended packages consists of
 only two, \path|mflogo.sty| \cite{Vieth:mflogo:1995} and \path|url.sty|
@@ -738,74 +690,102 @@ emulate its more important features; the package defines \MF{} and
 
 The \pkgname{url} package is useful when one is typesetting significant
 numbers of file names, network addresses or \acro{URL}s; it is being
-used in the present paper (not least in the bibliography).
+used in the present paper (not least in the bibliography). Speaking of
+urls, nowadays we generally omit a leading \texttt{http://} or
+\texttt{https://}.
 
 Although not necessarily recommended in all cases, many additional
-packages are commonly used: \texttt{microtype} can help reduce overfull
-boxes, sometimes it may be preferable to use the Latin Modern fonts via
-\texttt{lmodern}, \texttt{hyperref} allows for many internal links and
-other features, and of course individual papers may need to load
-particular packages for the subject at hand.
+packages are commonly used. To mention a few: \texttt{microtype} can
+help reduce overfull boxes; sometimes it may be preferable to use the
+Latin Modern fonts via \texttt{lmodern}; and \texttt{hyperref} allows
+for many internal links and other features.
 
 \section{Bibliography}
 \label{sec:biblio}
 
 In short: our basic recommendation for handling bibliographies is to use
-\BibTeX\ and the \pkgname{plain} bibliography style.  No document
-options are needed or recommended.  All that is required in the article
+\BibTeX\ and the \pkgname{tugboat} bibliography style. No document
+options are needed or recommended. All that is required in the article
 source (as shown in the template available from
-\url{https://tug.org/TUGboat}) is the following:
+\url{tug.org/TUGboat}) is the following:
 
 \begin{verbatim}[\small]
-\bibliographystyle{plain}
+\bibliographystyle{tugboat}
 \bibliography{yourbibfile}
 \end{verbatim}
 
-The rest of this section is about cases where, for whatever reason, you
-don't want to do that.
+If you don't have \verb|tugboat.bst|, which was released in 2018, it's
+fine to use \pkgname{plain} or \pkgname{abbrv}. If you do have it,
+though, you may enjoy the following small but useful features:
 
-Bibliographic citations give much grief to the editorial team.  Good
-publishing practice requires that there be editorial control of the
-way citations in a journal are presented yet, all too often, authors
-submit articles whose bibliography is formatted according to their
-preference.  The important rules for authors, then, are that they
-\emph{shouldn't} supply a \verb|.bbl| file (\BibTeX{} processed output),
-and that they \emph{shouldn't} write out a \envname{thebibliography}
-environment, but should rather submit a working \verb|.bib| file with their
-paper.\footnote{The program \progname{bibextract}, available from
-  \CTAN{} in directory \CTANref{bibextract}, provides a convenient
-  mechanism for extracting just the relevant portions of your
-  bibliography database for submitting your paper; many of the common
-  \BibTeX{}-database management packages, such as \textsc{Bib}\acro{DB} or
-  \textsc{Bib}Tools offer similar facilities.} As with uncommon
-packages, the \envname{filecontents} environment is a convenient way to
-deliver the bibliography file.
+\begin{itemize}
+\item It is based on \pkgname{abbrvurl.bst} (see \url{ctan.org/pkg/urlbst}),
 
-A special case is the accumulated bibliography of \TUB{}
-itself;\footnote{\tubraggedfoot Available on \CTAN{} as
-  \CTANref{tub-biblio}} it is always available to the production team,
-so authors may reference items from the \verb|tugboat.bib|
-file without further ado.
+\item thus supports \textsf{url} and \textsf{doi} fields, among others.
 
-Notwithstanding the general recommendation for the \pkgname{plain}
-\BibTeX\ style,
-two citation styles are supported within \TUB{} articles, `\texttt{raw}'
-and `\texttt{harvard}'. The raw citation style uses the `standard'
-\BibTeX{} `\pkgname{plain}' (numeric) citation style. Raw citation is
-selected by default (by execution of class option \optname{rawcite}).
+\item The \textsf{url} field is ignored if either the \textsf{doi} or
+\textsf{howpublished} field is present, since in practice we observe
+that people put the same information in all those fields, and we don't
+want to use up space typesetting redundant information.
 
-Harvard citation may be selected by specifying \optname{harvardcite} as an
-option of the \cs{documentclass} command.  The macros used derive
-rather directly from the `harvard' styles written by Glenn
-Paulley and now maintained by Peter Williams; the \BibTeX{} style
-derives from one developed by Patrick Daly.
+\item Has even more abbreviations than \textsf{abbrv}, including
+printing only two author names (plus ``et~al\@.'') if there are more
+than four authors (thanks to Mico Loretan).
 
-The basic citation format is `author-year', but the macros are capable
-of many variations: this in turn places somewhat of a load on the
-author to use the correct citation macro.  The macros available are
+\item Defines an \textsf{@online} entry type as an alias for \textsf{@misc}.
+
+\item For completeness only: \verb|tugboat.bst| provides ``secret''
+fields \textsf{newpage} to force a page break after the current item,
+and \textsf{urlnewline} to force a line break before the \textsf{url}
+value. We've found that these presentation tweaks are often necessary
+for the final typeset output. Authors need not worry about them.
+
+\end{itemize}
+
+If you use \BibTeX, feel free to take advantage of the accumulated
+bibliography of \TUB{} itself (\url{info/tugboat.bib} on \CTAN), and the
+various compilations by Nelson Beebe in that same directory.
+
+Bibliographies provide further problems because they're notoriously
+difficult to typeset at the best of times.  \LaTeX{} sets \cs{sloppy}
+when typesetting the bibliography, but this often leads to unpleasant
+output in the narrow columns typical of \TUB{}.  The author can control
+the typesetting using the command \cs{SetBibJustification}.  The classes
+set \cs{sloppy}, by default (just like \LaTeX{}), but the author may
+(for example) say:
+\begin{verbatim}
+  \SetBibJustification{\raggedright}
+\end{verbatim}
+as the present article does, to achieve somewhat better results.
+
+A last note for bibliographies: for references to other issues of \TUB,
+please use the format \textsl{volno:issno}, e.g., ``\TUB\ 32:1'' for
+volume~32, number~1.
+
+\section{Non-recommended bibliography facilities}
+
+The preceding gives the bibliography recommendations for current \TUB\
+article. If, for whatever reason, you cannot follow the recommendation,
+this section is about some of the myriad historical and other
+possibilities.
+
+Notwithstanding the general recommendation for the \pkgname{tugboat}
+(falling back to \pkgname{plain}) \BibTeX\ style, \TUB's Harvard
+citation support may be selected by specifying \optname{harvardcite} as
+an option of the \cs{documentclass} command.\footnote{%
+  The macros used derive rather directly from the `harvard' styles
+  written by Glenn Paulley and now maintained by Peter Williams; the
+  \BibTeX{} style derives from one developed by Patrick Daly.}
+If your article demands Harvard-style citations, you may prefer to load
+\pkgname{natbib} or similar instead of using \TUB's facilities; that's
+ok.
+
+The basic citation format is `author(s), year', but the macros are
+capable of many variations: this in turn places somewhat of a load on
+the author to use the correct citation macro. The macros available are
 shown in figure~\ref{fig:citation-macros}; the figure assumes an entry
-in the bibliography with authors Tom, Dick, and~Harry, and with a
-1990 date.
+in the bibliography with authors Tom, Dick, and~Harry, and with a 1990
+date.
 
 \begin{figure}[htbp!]
   \begin{center}
@@ -839,21 +819,11 @@ controlled by the \optname{extralabel} and \optname{noextralabel} class
 options.  The default state (option \optname{extralabel}) attaches the
 extra characters.
 
-Bibliographies provide further problems because they're notoriously
-difficult to typeset at the best of times.  \LaTeX{} sets \cs{sloppy}
-when typesetting the bibliography, but this often leads to unpleasant
-output in the narrow columns typical of \TUB{}.  The author can control
-the typesetting using the command \cs{SetBibJustification}.  The classes
-set \cs{sloppy}, by default (just like \LaTeX{}), but the author may
-(for example) say:
-\begin{verbatim}
-  \SetBibJustification{\raggedright}
-\end{verbatim}
-as the present article does, to achieve somewhat better results.
+As for \BibLaTeX, we don't recommend it for \TUB. If you feel you must
+use it, that is ok, but we may still change it to using the default
+\LaTeX\ and \BibTeX\ facilities in processing for publication if the
+output from \BibLaTeX\ is problematic, as we have often seen it to be.
 
-A final note for citations: for references to other issues of \TUB,
-please use the format \textsl{volno:issno}, e.g., ``\TUB\ 32:1'' for
-volume~32, number~1.
 
 
 \section{Equivalences between the `plain' and \LaTeX{} \TUB\ packages}
@@ -903,7 +873,7 @@ argument provision promulgated by the `plain' macros
 classes.
 
 \SetBibJustification{\raggedright}
-\bibliographystyle{plain}
+\bibliographystyle{tugboat}
 \bibliography{tubguide}
 
 \makesignature

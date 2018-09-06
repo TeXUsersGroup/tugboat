@@ -1,6 +1,23 @@
+2018-09-06  Karl Berry  <karl@freefriends.org>
+
+	* Version 2.20.
+	* tugboat.dtx: 2018-09-05 v2.20.
+	
+	* tugboat.bst: new file.
+	* manifest.txt,
+	* Makefile ($(dist).zip),
+	* README: mention it.
+	
+2018-08-22  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\tubmakecaptionbox): "\ " after :,
+	not stretchable " ", for multiline captions.
+	(\@makecaption): \frenchspacing for test box, in case we typeset it.
+	(Act)
+
 2018-07-25  Karl Berry  <karl@freefriends.org>
 
-	* tugboat.dtx (\@tubautholastsep): macro for text before last
+	* tugboat.dtx (\@tubauthorlastsep): macro for text before last
 	author in list; was hardwired "\ and ", now just ", ".
 	(\@getauthorlist): change call.
 	(\tubmultipleaffilauthor): try indenting subsequent authors by \quad,
@@ -13,7 +30,7 @@
 	* tugboat.dtx (\tubmultipleaffil{author,net}): new commands
 	to try to avoid repeating affiliation information.
 	First simple example: tb122childs-trotter.ltx.
-	(\netaddress): make ! escape, [] group chars.
+	(\netaddress): \makeescape ! and \make[be]group [].
 
 2018-04-29  Karl Berry  <karl@freefriends.org>
 
