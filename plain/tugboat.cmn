@@ -29,8 +29,8 @@
 \fi
 \next
 
-\def\fileversion{v1.23+dev}
-\def\filedate{2018/08/22}
+\def\fileversion{v1.24}
+\def\filedate{2019-09-05}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -1011,6 +1011,8 @@ that may not be obvious.  For full definitions, see real code above.
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+1.24       5 Sep 18   \tugboatcmn sentinent, \plusplus separated out.
+
 1.23      19 Mar 17   move \manual and \manualsl to tugboat.sty.
 
 1.22      31 Oct 16   define \CSabbr, \CSTUG;
