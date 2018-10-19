@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2018-09-06 v2.20
+                   [2018-10-19 v2.20
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -1605,7 +1605,7 @@
 % \cs{author} command for each of them.  The names are then stored in
 % a set of \cs{csname}s called \cs{author1}, \cs{author2}, \dots
 % Similarly, there are several \cs{address<n>} and \cs{netaddress<n>}
-% and \cs{PersonalURL<n>} commands set up for each article.
+% and \cs{PersonalURL<n>} and \cs{ORCID<n>} commands set up for each article.
 %
 % \begin{description}
 % \item[\emph{Comment:}] I would like to make provision for several
@@ -1619,6 +1619,7 @@
 \def\theaddress#1{\csname theaddress#1\endcsname}
 \def\thenetaddress#1{\csname thenetaddress#1\endcsname}
 \def\thePersonalURL#1{\csname thePersonalURL#1\endcsname}
+\def\theORCID#1{\csname theORCID#1\endcsname}
 %    \end{macrocode}
 %
 % The standard way of listing authors is to iterate from 1 to
@@ -1709,6 +1710,7 @@
       \allowhyphens
       \thenetaddress{\number\authornumber}\\
       \thePersonalURL{\number\authornumber}\\
+      \theORCID{\number\authornumber}\\
     \else
 %    \end{macrocode}
 % \cs{authornumber}$\ge0$, so we are in the body of an ordinary
@@ -1726,6 +1728,7 @@
             \allowhyphens
             \thenetaddress{\number\count@}\\
             \thePersonalURL{\number\count@}\\
+            \theORCID{\number\count@}\\
           }%
       \repeat
     \fi
@@ -1817,7 +1820,7 @@
 % and to initialise author-related things.  \cs{EDITORno*} commands
 % allow the editor to record that there's good reason for an
 % \emph{address} or \emph{netaddress} not to be there (the
-% \emph{personalURL} is optional anyway).
+% \emph{personalURL} and \emph{ORCID} are optional anyway).
 %    \begin{macrocode}
 \def\TB@author#1{%
   \expandafter\def\csname theauthor\number\authornumber\endcsname
@@ -1827,6 +1830,8 @@
   \expandafter\def\csname thenetaddress\number\authornumber\endcsname
     {\TBWarningNL{Net address for #1\space missing}\@gobble}%
   \expandafter\let\csname thePersonalURL\number\authornumber\endcsname
+    \@gobble
+  \expandafter\let\csname theORCID\number\authornumber\endcsname
     \@gobble
   }
 \def\EDITORnoaddress{%
@@ -1839,7 +1844,7 @@
 }
 %    \end{macrocode}
 %
-% \cs{address} simply copies its argument into the \cs{theaddress<n>}
+% \cs{address} copies its argument into the \cs{theaddress<n>}
 % for this author.
 %
 %    \begin{macrocode}
@@ -1992,6 +1997,15 @@
 \fi
 \def\authorlist#1{\def\@author{#1}}
 \def\@author{\@defaultauthorlist}
+%    \end{macrocode}
+%
+% \cs{ORCID} inserts `ORCID' and then argument into the \cs{theORCID<n>}
+% for this author. Also, we want \cs{small} for this.
+%
+%    \begin{macrocode}
+\def\ORCID#1{%
+  \expandafter\def\csname theORCID\number\authornumber\endcsname
+      {\leavevmode \ignorespaces {\SMC ORCID} #1\unskip}}
 %    \end{macrocode}
 %
 % For the online re-publication (as of 2009) by Mathematical Sciences

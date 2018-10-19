@@ -395,17 +395,18 @@ used in running heads or footers; similarly \cs{shortAuthor}.
 
 The \cs{author} command is used once for each co-author of the paper,
 and for each \cs{author} there should be a \cs{address} command that
-gives a (postal) correspondence address.  In addition (wherever
-possible), \TUB{} likes to quote an email address for authors: for
-this, the \cs{netaddress} command is used.  Finally, each
-author may mention a web page, using a \cs{personalURL} command.
+gives a (postal) correspondence address. In addition (wherever
+possible), \TUB{} likes to quote an email address for authors: for this,
+the \cs{netaddress} command is used. Each author may also mention a web
+page, using a \cs{personalURL} command, and an \acro{ORCID} (from
+\url{orcid.org}), using \cs{ORCID}.
 
-For example, the present paper has at its start:
+For example, the present paper has (approximately) this at its start:
 
 \begin{verbatim}[\small]
 \title{The \LaTeXe\ \TUB{} Macros}
 \author{TUGboat editors}
-\EDITORnoaddress
+\address{\TeX\ Users Group}
 \netaddress{tugboat@tug.org}
 \personalURL{https://tug.org/TUGboat}
 \maketitle
@@ -876,6 +877,7 @@ classes.
 \bibliographystyle{tugboat}
 \bibliography{tubguide}
 
+\advance\signaturewidth by 8pt
 \makesignature
 
 \end{document}

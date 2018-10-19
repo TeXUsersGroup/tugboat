@@ -1,3 +1,11 @@
+2018-10-19  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx: (\ORCID): support for new author macro.
+	* ltubguid.ltx: document.
+	
+	* tugboat.bst (format.in.ed.booktitle): better with a tie
+	between "In" and booktitle?
+
 2018-09-06  Karl Berry  <karl@freefriends.org>
 
 	* Version 2.20.
