@@ -9,11 +9,19 @@
 # When an item is contained on a single page, Barbara wants 100-100.
 
 $ERROR_COUNT = 0;
+$OPT_CNT = 0;
 exit (&main ());
 
 sub main {
-  if (@ARGV > 0) { # explicit args
+  if ($ARGV[0] eq "--cnt") {
+    shift @ARGV;
+    $OPT_CNT = 1;
+  }
+
+  if (@ARGV > 0) { # explicit args, process files.
     chomp (my $dir = `dirname $ARGV[0]`);
+    # we have to run from the tugboat issue dir so we can read the
+    # *stpage.tex files.
     chdir ("$dir/..") || die "chdir($dir/..) failed: $!";
     while (<>) { # assume absolute path
       print &substitute_pages ($_);
@@ -53,8 +61,11 @@ sub substitute_pages {
     # final page number.
     $lastpage-- if $lastpage > 0;
 
-    # include -lastpage since Nelson's scripts want duplicates.
+    # include -lastpage for .cnt files since Nelson's scripts want duplicates.
+    # But for capsule files, we only want the -lastpage if it is
+    # different than firstpage.
     my $repl = $firstpage;
+    $repl .= "-$lastpage" if $OPT_CNT || $lastpage ne $firstpage;
     
     $line =~ s/\\get(first)?page\{(.*?)\}/$repl/;
 

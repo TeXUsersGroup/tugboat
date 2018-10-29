@@ -1,11 +1,15 @@
 %%% $Id$
-%%% Modified for TUGboat from abbrurl.bst:
+%%% TUGboat changes are public domain.
+%%% 
+%%% Modified for TUGboat from abbrvurl.bst:
 %%%   abbreviate "page(s)" to "p(p).",
 %%%     "volume" to "vol.",
 %%%     "editor(s)" to "ed(s)".
 %%%   urlintro=""
 %%%   reduce long author lists in format.names per Mico.
-%%% TUGboat changes public domain.
+%%%   new fields for editors:
+%%%     "newpage" - force page break after entry
+%%%     "urlnewline" - force line break before url value.
 %%% --karl, originally created 24jul18.
 %%% 
 %%% Modification of BibTeX style file /usr/local/texlive/2009/texmf-dist/bibtex/bst/base/abbrv.bst

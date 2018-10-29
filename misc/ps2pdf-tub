@@ -49,7 +49,7 @@ fi
 # -dDownsampleGrayImages=false \
 # -dDownsampleMonoImages=false \
 # -dColorImageFilter=/FlateEncode \
-# -dGrayImageFilter=/FlageEncode \
+# -dGrayImageFilter=/FlateEncode \
 # -dMonoImageFilter=/CCITTFaxEncode
 
 # See also https://github.com/pts/pdfsizeopt
