@@ -1,3 +1,8 @@
+2018-10-30  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\nobreakspace): more doc, following
+	github.com/latex3/latex2e/issues/75. Other small doc tweaks.
+
 2018-10-29  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.ins: copyright through 2018.

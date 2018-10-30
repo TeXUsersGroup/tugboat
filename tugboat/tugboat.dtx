@@ -821,7 +821,7 @@
 \expandafter\ifx\csname XeTeXrevision\endcsname\relax
 \def\Thanh{H\`an~Th\^e\llap{\raise 0.5ex\hbox{\'{}}}~Th\`anh}% non-XeTeX
 \else
-\def\Thanh{H\`an~Th\textcircumacute{e}~Th\`anh}% xunicode drops the acute else
+\def\Thanh{H\`an~Th\textcircumacute{e}~Th\`anh}% else xunicode drops the acute
 \fi
 \def\TikZ{Ti{\em k}Z}
 \def\ttn{\textsl{TTN}\@}
@@ -1077,13 +1077,15 @@
 %
 % Miscellaneous useful stuff.  Note that \LaTeXe{} defines a robust
 % \cs{,}, but that we provide a new definition of |~| by redefining
-% its robust underpinnings\footnote{\cs{DeclareRobustCommand} doesn't
-%   mind redefinition, fortunately} (based on the version in
-% AMS-\TeX---the \LaTeXe{} version has \cs{leavevmode} and doesn't
-% care about surrounding space).
+% \cs{\nobreakspace} (\cs{DeclareRobustCommand} doesn't
+% mind redefinition, fortunately). This is based on the version in
+% AMS-\TeX---the \LaTeXe{} version (|ltspace.dtx|) has \cs{leavevmode}
+% and does not do anything with the surrounding space(s). Our version
+% messes up with the \cs{pfill} used in |doc|-generated indexes
+% (\url{github.com/latex3/latex2e/issues/75}), but later (2018++)
+% versions of |doc| should be protected against our redefinition.
 %    \begin{macrocode}
-\DeclareRobustCommand{\nobreakspace}{%
-  \unskip\nobreak\ \ignorespaces}
+\DeclareRobustCommand{\nobreakspace}{\unskip\nobreak\ \ignorespaces}
 %    \end{macrocode}
 %
 % Plain \TeX{} defines \cs{newbox} as \cs{outer}.  We solemnly
@@ -1779,7 +1781,7 @@
 % 
 %    \begin{macrocode}
 \def\tubmultipleaffilauthor{\unskip, \ignorespaces}%
-\def\tubmultipleaffilnet{\textrm{\unskip~,\ \ignorespaces}}
+\def\tubmultipleaffilnet{\textrm{\nobreakspace,\ \ignorespaces}}
 %    \end{macrocode}
 %
 % Now all the awful machinery of author definitions.
@@ -2544,8 +2546,7 @@
 % If the sections aren't numbered, the natural tendency of the
 % author to cross-reference (which, after all, is one of the things
 % \LaTeX{} is for ever being advertised as being good at) can cause
-% headaches for the editor.  (Yes it can; believe me~\dots\ there's
-% always one.)
+% headaches.
 %
 % The following command is used by each of the sectioning commands to
 % make a following \cs{ref} command bloop at the author.  Even if the
