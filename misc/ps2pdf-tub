@@ -42,16 +42,23 @@ if test x"$2" = "x$1.tmppdf"; then
   mv "$2" "$1"
 fi
 
-# unfortunately it is not possible to tell gs to leave bitmaps alone,
-# and all other options are inferior to the default.
-# http://groups.google.com/group/comp.text.tex/browse_thread/thread/86cfc756bf120b17?hl=en
+# the default seems good enough for us, since we usually do want some
+# sort of compression. explanation of many options, including the way to
+# get all default settings for pdfwrite:
+# https://superuser.com/questions/360216/use-ghostscript-but-tell-it-to-not-reprocess-images
+# namely:
+# gs -sDEVICE=pdfwrite -o /dev/null \
+#    -c "currentpagedevice { exch ==only ( ) print == } forall"
+#
+# but if we ever did want to leave images alone, maybe (from that same page):
+# -dColorConversionStrategy=/LeaveColorUnchanged \
 # -dDownsampleColorImages=false \
 # -dDownsampleGrayImages=false \
 # -dDownsampleMonoImages=false \
+# -dAutoFilterColorImages=false \
+# -dAutoFilterGrayImages=false \
 # -dColorImageFilter=/FlateEncode \
 # -dGrayImageFilter=/FlateEncode \
 # -dMonoImageFilter=/CCITTFaxEncode
 
-# See also https://github.com/pts/pdfsizeopt
-# (tug.org/TUGboat/tb30-3/tb96szabo.pdf)
-# but dependencies are heavy.
+# See also https://github.com/pts/pdfsizeopt and sam2p, maybe.

@@ -7,10 +7,14 @@
 # See also:
 # http://handyfloss.net/2008.09/making-a-pdf-grayscale-with-ghostscript/
 # --isilanes 
+# https://stackoverflow.com/questions/20128656/how-to-convert-a-pdf-to-grayscale-from-command-line-avoiding-to-be-rasterized
+# https://superuser.com/questions/200378/converting-a-pdf-to-black-white-with-ghostscript
+# https://stackoverflow.com/a/23553427
+# https://unix.stackexchange.com/questions/93959/how-to-convert-a-color-pdf-to-black-white
+# https://ghostscript.com/doc/9.16/Use.htm
 
 exec gs -q -sOutputFile="$2" \
-      -sDEVICE=pdfwrite \
-      -sColorConversionStrategy=Gray \
-      -dProcessColorModel=/DeviceGray \
-      -dNOPAUSE -dBATCH "$1"
-
+  -sDEVICE=pdfwrite \
+  -sColorConversionStrategy=Gray \
+  -dProcessColorModel=/DeviceGray \
+  -dNOPAUSE -dBATCH "$1"
