@@ -1,3 +1,13 @@
+2018-12-13  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (final optiona) <\AtEndOfClass>: if page >900, set
+	\PrelimDrafttrue.
+	(\midrtitle) [\PrelimDrafttrue]: do not define.
+	(\ritlenexttopage): define this (new macro) instead.
+	(\@oddhead, \@evenhead): use it.
+
+	(\latexnobreakspace): \let just in case.
+
 2018-11-05  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\tubmultipleaffilnet): thinspace before comma per bb.

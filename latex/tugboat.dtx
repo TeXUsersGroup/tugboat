@@ -233,6 +233,7 @@
 % |\ifPrelimDraft|&   flag to indicate status as preliminary draft\\
 % |\rtitlex|&    \TUB{} volume and number info for running head\\
 % |\midrtitle|&   information for center of running head\\
+% |\rtitlenexttopage|&   next to page number in running head\\
 % |\HorzR@gisterRule|& pieces of registration marks (`trimmarks')\\
 % |\DownShortR@gisterRule|&\\
 % |\UpShortR@gisterRule|&\\
@@ -364,7 +365,12 @@
   \AtEndOfClass{%
     \let\thepage=\tuborigthepage
     \NoBlackBoxes
-    \PrelimDraftfalse
+    % Insert draft date into the header even with [final], if we are not
+    % doing a production run. (tugboat.dates sets up page numbers
+    % above 900 in such pseudo-draft mode.) We use [final] in the first
+    % place for this case because draft can change page layout, wrt
+    % registration marks, etc.
+    \ifnum\value{page}>900 \PrelimDrafttrue \else \PrelimDraftfalse \fi
     \@tubrunningfull
     }%
 }
@@ -1020,7 +1026,8 @@
 \def\now{\number\hours:\ifnum\minutes<10 0\fi\number\minutes}
 \def\Now{\today\ \now}
 \newif\ifPrelimDraft
-\def\midrtitle{\ifPrelimDraft {\textsl{preliminary draft, \Now}}\fi}
+\def\midrtitle{} % center of running heads
+\def\rtitlenexttopage{\ifPrelimDraft \textsl{\small draft: \Now}\fi}
 %    \end{macrocode}
 %
 % \subsection{Ragged right and friends}
@@ -1085,6 +1092,7 @@
 % (\url{github.com/latex3/latex2e/issues/75}), but later (2018++)
 % versions of |doc| should be protected against our redefinition.
 %    \begin{macrocode}
+\let\latexnobreakspace=\nobreakspace
 \DeclareRobustCommand{\nobreakspace}{\unskip\nobreak\ \ignorespaces}
 %    \end{macrocode}
 %
@@ -3191,11 +3199,7 @@
 % \subsection{Running heads}
 %
 %    \begin{macrocode}
-\def \rtitlex{\def\texttub##1{{\normalsize\textrm{##1}}}\TUB, \volx }
-\def\PrelimDraftfooter{%
-  \dlap{\kern\textheight\kern3pc
-        \rlap{\hb@xt@\pagewd{\midrtitle\hfil\midrtitle}}
-  }}
+\def\rtitlex{\def\texttub##1{{\normalsize\textrm{##1}}}\TUB, \volx}
 %    \end{macrocode}
 % registration marks; these are temporarily inserted in the running head
 %    \begin{macrocode}
@@ -3207,12 +3211,12 @@
              \topregister\vskip \headmargin \vskip 10\p@}}}}%
   }
 % put issue identification and page number in header.
-\def\@oddhead{\MakeRegistrationMarks\PrelimDraftfooter
+\def\@oddhead{\MakeRegistrationMarks
   \normalsize\csname normalshape\endcsname\rm \tubheadhook
-  \rtitlex\qquad\midrtitle \hfil \thepage}
-\def\@evenhead{\MakeRegistrationMarks\PrelimDraftfooter
+  \rtitlex\qquad \midrtitle\hfil \rtitlenexttopage\quad \thepage}
+\def\@evenhead{\MakeRegistrationMarks
   \normalsize\csname normalshape\endcsname\rm \tubheadhook
-  \thepage\hfil\midrtitle\qquad\rtitlex}
+  \thepage \quad\rtitlenexttopage \hfil\midrtitle \qquad\rtitlex}
 
 % can be used to reset the font, e.g., tb98kuester.
 \def\tubheadhook{}
@@ -3345,7 +3349,7 @@
 %    \begin{macrocode}
 %<*classtail>
 \def\xEdNote{{\EdNoteFont Editor's note:\enspace }}
-\def \EdNote{\@ifnextchar[%]
+\def\EdNote{\@ifnextchar[%]
   {%
     \ifvmode
       \smallskip\noindent\let\@EdNote@\@EdNote@v
