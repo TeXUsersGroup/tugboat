@@ -26,9 +26,11 @@ check: ltugboat.sty
 	$(pdflatex) tubatest.tex
 	$(pdflatex) tubrfootest.tex
 
-tub_rel = /usr/local/texlive-rel/texmf-dist/tex/latex/tugboat
+tub_rel = /usr/local/texlive/dev/texmf-dist/
 diff:
-	-diff -u0 $(tub_rel)/ltugboat.cls ltugboat.cls
+	-diff -u0 $(tub_rel)/bibtex/bst/tugboat/tugboat.bst .
+	-diff -u0 $(tub_rel)/tex/latex/tugboat/ltugboat.cls .
+	-diff -u0 $(tub_rel)/doc/latex/tugboat/ltubguid.ltx .
 
 dist = tugboat
 dist: $(dist).zip
