@@ -1,0 +1,315 @@
+% $Id$
+
+\issue{19}{3}{60}{September 1998}{/tug1998/}{TUG 1998 Proceedings (Torun)}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 19:3 as one pdf (3.8mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb19-3/tb60complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1}
+        {/TUGboat/tb19-3/cover1.pdf}
+
+\capsule{}%subsec
+        {}%replace|TUG Business
+        {Barbara~Beeton}
+        {{\acro{TUG} Election Notice}}
+        {}
+        {234-234}
+        {/TUGboat/tb19-3/tb60elec.pdf}
+
+
+\capsule{}%subsec
+        {}%replace|Conference Notes
+        {Barbara~Beeton}
+        {{Editorial Comments\Dash A TUG\,'98 trip report}}
+        {}
+        {235-236}
+        {/TUGboat/tb19-3/tb60beet.pdf}
+
+
+\capsule{}%subsecnn
+        {}%replace|Conference Notes
+        {}
+        {\acro{TUG}'98 Attendees}
+        {}
+        {237-238}
+        {/TUGboat/tb19-3/tub60pl1.pdf}
+
+
+%THEcategory{Real World}
+
+
+\capsule{}%subsec
+        {Real World}%replace|Software \& Tools
+        {R.W.D.~Nickalls}
+        {{\TeX\ in the Operating Theatre:  An anaesthesia application}}
+        {}
+        {239-241}
+        {/TUGboat/tb19-3/tb60nick.pdf}
+
+
+%THEcategory{Languages\\and Fonts}
+
+
+\capsule{}%subsec
+        {Languages and Fonts}
+        {Janusz~M.~Nowacki and Bogus{\l}aw Jackowski}
+        {Antykwa Toru\'nska:  An electronic replica of a~Polish traditional type}
+        {}
+        {242-243}
+        {/TUGboat/tb19-3/tb60antyk.pdf}
+
+
+\capsule{}%subsec
+        {Languages and Fonts}
+        {Richard~J.~Kinch}
+        {{Belleek: A call for \MF{} revival}}
+        {}
+        {244-249}
+        {/TUGboat/tb19-3/tb60kinch.pdf}
+
+
+\capsule{}%subsec
+        {Languages and Fonts}
+        {Karel~P\'\i\v{s}ka}
+        {{Georgian scripts}}
+        {}
+        {250-255}
+        {/TUGboat/tb19-3/tb60pisk.pdf}
+
+
+\capsule{}%subsec
+        {Languages and Fonts}
+        {Taco~Hoekwater}
+        {{Generating Type 1 fonts from   \MF{} sources}}
+        {}
+        {256-266}
+        {/TUGboat/tb19-3/hoek1.pdf}
+
+
+%THEcategory{PostScript\\Topics}
+
+
+\capsule{}%subsec
+        {PostScript\\Topics}
+        {Bogus\l{}aw~Jackowski, Piotr~Pianowski, \and   Piotr~Strzelczyk}
+        {{Threshing \acro{EPS} files}}
+        {}
+        {267-271}
+        {/TUGboat/tb19-3/tb60jack.pdf}
+
+
+\capsule{}%subsec
+        {PostScript\\Topics}
+        {Bogus\l{}aw~Jackowski, Piotr~Pianowski, \and   Piotr~Strzelczyk}
+        {{More~\TeX-PostScript links}}
+        {}
+        {272-275}
+        {/TUGboat/tb19-3/tb60jps.pdf}
+
+
+\capsule{}%subsec
+        {PostScript\\Topics}%add|Graphics
+        {Piotr~Bolek}
+        {{\MP{} and patterns}}
+        {}
+        {276-283}
+        {/TUGboat/tb19-3/tb60bolek.pdf}
+
+
+%THEcategory{Tools}
+
+
+\capsule{}%subsec
+        {Tools}
+        {\Thanh}
+        {{Improving \TeX's Typeset Layout}}
+        {}
+        {284-288}
+        {/TUGboat/tb19-3/tb60than.pdf}
+
+
+\capsule{}%subsec
+        {Tools}
+        {Daniel~Taupin}
+        {{\tt ltx2rtf}: {Exporting {\LaTeX} documents to Word addicts}}
+        {}
+        {289-292}
+        {/TUGboat/tb19-3/tb60taup.pdf}
+
+
+\capsule{}%subsec
+        {Tools}
+        {W\l{}odek~Bzyl}
+        {{Adding native language support to the  \acro{CWEB} package and the~{\TeX} program}}
+        {}
+        {293-297}
+        {/TUGboat/tb19-3/tb60bzyl.pdf}
+
+
+\capsule{}%subsec
+        {Tools}
+        {Marcin~Woli\'nski}
+        {{{\sf Pretprin}\Dash a {\LaTeXe}} package   for pretty-printing texts in~formal languages}
+        {}
+        {298-303}
+        {/TUGboat/tb19-3/tb60wolin.pdf}
+
+
+\capsule{}%subsec
+        {Tools}
+        {Hans~Hagen}
+        {{The Calculator Demo}, {Integrating \TeX,  \MP, JavaScript and~\acro{PDF}}}
+        {}
+        {304-310}
+        {/TUGboat/tb19-3/hagen1.pdf}
+
+
+\capsule{}%subsec
+        {Tools}
+        {Hans~Hagen}
+        {{Visual Debugging in \TeX,  Part 1: The Story}}
+        {}
+        {311-317}
+        {/TUGboat/tb19-3/hagen2.pdf}
+
+
+\capsule{}%subsec
+        {Tools}
+        {Hans~Hagen}
+        {{Visual Debugging in \TeX,  Part 2: The Macros}}
+        {}
+        {317-317}
+        {/TUGboat/tb19-3/hagen3.pdf}
+
+
+%THEcategory{Futures}
+
+
+\capsule{}%subsec
+        {Futures}
+        {Karel~Skoup\'y}
+        {{NTS: A New Typesetting System}}
+        {}
+        {318-322}
+        {/TUGboat/tb19-3/tb60nts.pdf}
+
+
+\capsule{}%subsec
+        {Futures}
+        {The NTG\CONNECT{}TeX\CONNECT{}future\CONNECT{}working\CONNECT{}group}
+        {\TeX\ in 2003,   Part~I: Introduction and views~on~current work}
+        {}
+        {323-329}
+        {/TUGboat/tb19-3/tb60hoekI.pdf}
+
+
+\capsule{}%subsec
+        {Futures}
+        {The NTG\CONNECT{}TeX\CONNECT{}future\CONNECT{}working\CONNECT{}group}
+        {\TeX\ in 2003, Part~II: Proposal for a~\cs{special}~standard}
+        {}
+        {330-337}
+        {/TUGboat/tb19-3/tb60hoekII.pdf}
+
+
+%THEcategory{News \& \\ Announcements}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {Calendar}
+        {}
+        {338-338}
+        {/TUGboat/tb19-3/tb60prod.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {\acro{TUG}'99 {Announcement}}
+        {}
+        {340-340}
+        {/TUGboat/tb19-3/Tug99.pdf}
+
+
+%THEcategory{Production Notes}
+
+
+\capsule{}%subsec
+        {Production Notes}%replace|Late-Breaking News
+        {Mimi~Burbank}
+        {Production notes}
+        {}
+        {339}
+        {/TUGboat/tb19-3/tb60prod.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {341-341}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {TUG membership application}
+        {}
+        {342-342}
+        {URL}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {343-343}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Hug The Lion!}}
+        {}
+        {339\offset{.5}}
+        {/TUGboat/tb19-3/tb60lion.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Y\&Y Inc.}}
+        {}
+        {344-344}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Blue Sky Research}}
+        {}
+        {c3}
+        {URL}

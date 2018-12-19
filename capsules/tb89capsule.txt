@@ -1,0 +1,587 @@
+% $Id$
+\let\primitiveinput=\input
+\input eplain
+\beginpackages
+  \usepackage{graphics}
+\endpackages
+\let\input=\primitiveinput
+
+\input tugboat.cmn  % tugboat.dates macros
+\input tugboat.dates
+
+\newcount\startpage
+
+\nopagenumbers
+\hyphenpenalty = 10000
+\advance\rightskip by 0pt plus 9pt
+\hoffset = .25in
+\voffset = -.5in
+\vsize = 10in
+
+% fonts - 9pt for this lengthy issue
+\font\tenrm=cmr9  \font\tensl=cmsl9  \font\tentt=cmtt9  \font\manual=logo9
+\font\tenit=cmti9
+\baselineskip=10.6pt
+
+% adjust everything else down
+\font\sf = cmss9
+\def\pkgname#1{{\sf #1}}
+
+\font\smallsl = cmsl8  \font\smallrm = cmr8
+\def\acrofont{% if slanted font, use slanted acro font
+   \ifdim \fontdimen1\font>0pt \smallsl \else \smallrm\fi
+}
+\def\acro#1{{\acrofont #1}}
+
+% for \BibTeX
+\font\smc=cmcsc10 at 9pt
+
+% slant \BibTeX and \MF
+\font\ninesl = cmsl8
+\font\slc = cmsl8 at 6pt
+\def\slBibTeX{{\ninesl B{\slc IB}\TeX}}  % cmcscsl10 not available as type1
+
+\font\manualsl = logosl10 at 9pt
+\def\slMF{{\manualsl META}\-{\manualsl FONT}\spacefactor1000 }
+\def\slMP{{\manualsl META}\-{\manualsl POST}\spacefactor1000 }
+
+% for \LaTeX, etc.
+\font\sevenrm=cmr6
+\font\sevensl=cmti7 at 6pt
+\scriptfont\slfam=\sevensl
+
+\def\reflect#1{%
+  \ifx\reflectbox\undefined
+    \errmessage{graphics package must be loaded}%
+  \else
+    \ifdim \fontdimen1\font>0pt
+      \raise 1.75ex \hbox{\kern.1em\rotatebox{180}{#1}}\kern-.1em
+    \else
+      \reflectbox{#1}%
+    \fi
+  \fi
+}
+\def\hideheight#1{\setbox0=\hbox{#1}\ht0=0pt \dp0=0pt \box0 }
+\def\XeTeX{\leavevmode\hideheight{\hbox{X\lower.5ex
+  \hbox{\kern-.125em\reflect{E}}\kern-.1667em \TeX}}}
+
+%\def\XeTeX{Xe\TeX}
+
+% abbreviations
+\def\\{\hfil\break}
+%\def\aand{\unskip,\space} %
+\def\aand{{\rm and\space}} % matches tub, but might be too long
+\def\cand{\unskip,\space\ignorespaces}
+\def\cs#1{{\tt \char`\\#1}}
+\def\emph#1{{\it #1}}
+\def\smallbullet{\raise .4ex \hbox{$\scriptscriptstyle \bullet$}}
+\def\t#1{{\tt #1}}
+\def\TUB{{\sl TUGboat}}
+
+% from tugboat.front
+\def\titleslash{\raise.3ex\hbox{\sevenrm/}}
+
+\let\offset=\gobble          % ignore manual sorting offset
+\long\def\begin#1#2\end#3{}  % ignore blurb
+\def\issue#1#2#3#4#5#6{}     % ignore issue info
+
+% formatting
+\newdimen\pagenowidth % space for just
+\setbox0=\hbox{000}
+\pagenowidth=\wd0  % aka 1.5em
+\newdimen\pagenospace  \pagenospace = 2.5em
+
+\def\category#1{%
+  \vskip 1.5\smallskipamount
+  \noindent{\bf #1}
+  \vskip .75\smallskipamount}
+
+% #1 is difficulty category -- follows \capsule on first line
+% #2 is TB category -- arg 2 is alone on its line, possibly with replace or add comment
+% #3 is author -- args 3-7 are alone on their lines
+% #4 is title
+% #5 is for statement
+% #6 is page number
+% #7 is URL of paper PDF
+% #8 is subtitles -- arg 8 can be alone on its line or multiple lines long
+% #9 is for notes added at html time -- arg 9 can be alone on its line or multiple lines long
+
+% args 2 to 7 must be alo
+\def\capsule#1#2#3#4#5#6#7#8#9{%
+    \vskip .9pt plus1pt
+    \noindent
+    \hangindent = \pagenospace
+      \advance\hangindent by 3em
+    \hbox to \pagenospace{%
+      \hbox to \pagenowidth{\hfil #6}%
+      \hfil}%
+     %
+     \def\author{#3}%
+     \def\title{#4}%
+     {\sl \author}%
+     %
+     % / only if both parts are present.
+     \ifx\author\empty\else \ifx\title\empty\else\ \titleslash\ \fi\fi
+     %
+     {\rm \title}%
+     %
+     \def\blurb{#5}%
+     \ifx\blurb\empty\else \hfil\break\hglue-2em\smallbullet\ \blurb\fi
+     \par
+}
+
+
+% typeset the actual title text.
+\font\titlebf = cmbx10 scaled \magstephalf
+\leftline{{\titlebf TUG}BOAT \kern1.5pc \volx\
+}
+\medskip
+\leftline{{\titlebf Table of Contents}\kern1pc (ordered by difficulty)}
+\smallskip
+
+\rm  % print above in 10pt, below in 9pt
+
+% begin-items
+% 
+
+\begin{blurb}
+<p>If you're not already a member, we hope you'll consider <a
+href="/join.html">joining TUG</a> to support TUGboat and other TeX
+projects.  <a href="/memberaccess.html">More information on TUG member
+access</a>.
+
+<p>
+\end{blurb}
+
+\issue{28}{2}{89}{2007}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 28:2 as one pdf (7.2mb)}
+        {}
+        {\offset{.05}}
+        {/TUGboat/tb28-2/tb89complete.pdf}
+        {}
+        {}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1\offset{.1}}
+        {/TUGboat/tb28-2/cover1.pdf}
+        {}
+        {}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2\offset{.2}}
+        {/TUGboat/tb28-2/cover2.pdf}
+        {}
+        {}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Contents ordered by difficulty}
+        {}
+        {c3\offset{.3}}
+        {/TUGboat/tb28-2/cover3.pdf}
+        {}
+        {}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {149}
+        {/TUGboat/tb28-2/titlepage.pdf}
+        {}
+        {}
+
+\category{Introductory}
+
+\capsule{Introductory}
+  {General Delivery}
+  {Barbara Beeton}
+  {Editorial comments}
+  {typography and {\sl TUGboat} news}
+  {152}
+  {/TUGboat/tb28-2/tb89beet.pdf}
+  {{A pledge of support}\\
+{Helvetica\Dash 50th anniversary}\\
+{Another font anniversary\Dash Souvenir, 93~years}\\
+{Another honorary doctorate for Don Knuth}\\
+{How to shrink a box as much as possible}\\
+{How to use a book}\\
+{Save the signs!}\\
+{Practical \TeX\ 2006 recordings}}
+  {}
+
+\capsule{Introductory}
+  {General Delivery}
+  {Karl Berry}
+  {From the President}
+  {\TeX\ development grants; {\tt http://mirror.ctan.org}; interviews; \acro{TUG}'07}
+  {151}
+  {/TUGboat/tb28-2/tb89pres.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Typography}
+  {Peter Flynn}
+  {Typographers' Inn}
+  {web vs.\ paper, punctuation oddities, {\it Helvetica}, \acro{TUG}'08 in Cork}
+  {172\offset{.2}}
+  {/TUGboat/tb28-2/tb89inn.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {General Delivery}
+  {Stephen Moye}
+  {A wayward wayfarer's way to \TeX}
+  {recollections of one humanities \TeX\ user's adventures in \TeX{}Land}
+  {153}
+  {/TUGboat/tb28-2/tb89moye.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Book Reviews}
+  {Hans Hagen \aand Taco Hoekwater}%person|Hans Hagen and Taco Hoekwater and Hermann Zapf
+  {Alphabetgeschichten by Hermann Zapf}
+  {review of Zapf's memoir, with several illustrations}
+  {174}
+  {/TUGboat/tb28-2/tb89hagen.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Fonts}
+  {Aditya Mahajan}
+  {\ConTeXt\ basics for users: Font styles}
+  {introduction to the different ways of changing font styles in \ConTeXt}
+  {198}
+  {/TUGboat/tb28-2/tb89mahajan.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Fonts}
+  {Will Robertson}
+  {An exploration of the Latin Modern fonts}
+  {Latin Modern includes some novel font families as well as the designs from Computer Modern}
+  {177}
+  {/TUGboat/tb28-2/tb89robertson.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {\LaTeX}
+  {Walter Schmidt}
+  {Font selection in \LaTeX: The most frequently asked questions}
+  {basics of font selection and the three top questions}
+  {241}
+  {/TUGboat/tb28-2/tb89schmidt.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {\LaTeX}
+  {Peter Wilson}
+  {The memoir class}
+  {introduction to the memoir class for customizable document creation}
+  {243}
+  {/TUGboat/tb28-2/tb89wilson.pdf}
+  {}
+  {}
+
+
+% 
+\category{Intermediate}
+
+\capsule{Intermediate}
+  {Hints \& Tricks}
+  {Karl Berry}
+  {The treasure chest}
+  {selected new \CTAN\ packages from January through June 2007}
+  {233}
+  {/TUGboat/tb28-2/tb89chest.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {\LaTeX}
+  {Federico Garcia}
+  {\LaTeX\ and the different bibliography styles}
+  {bracketed, author-year, and footnote citation styles and \LaTeX\ packages}
+  {235}
+  {/TUGboat/tb28-2/tb89garcia.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Fonts}
+  {Klaus H\"oppner}
+  {Creation of a PostScript Type 1 logo font with MetaType1}
+  {tutorial for implementing a font with MetaType1}
+  {181}
+  {/TUGboat/tb28-2/tb89hoeppner.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Multilingual Document Processing}
+  {Enrico Gregorio}
+  {Enjoying babel}
+  {introductions, usage, and extensions to babel}
+  {247}
+  {/TUGboat/tb28-2/tb89gregorio.pdf}
+  {}
+  {}
+
+
+% 
+\category{Intermediate Plus}
+
+\capsule{Intermediate Plus}
+  {Software \& Tools}
+  {Jin-Hwan Cho}
+  {Hacking \acro{DVI}\ files: Birth of \acro{DVI}{}asm}
+  {creating \acro{DVI} files from a simple text format; discussion of specials}
+  {210}
+  {/TUGboat/tb28-2/tb89cho.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {Fonts}
+  {Lars Hellstr\"om}
+  {Writing \acro{ETX} format font encoding specifications}
+  {writing font encoding specifications for \LaTeX, and a suggested ratification procedure}
+  {186}
+  {/TUGboat/tb28-2/tb89hellstrom.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {Macros}
+  {Edward M. Reingold}
+  {Writing numbers in words in \TeX}
+  {writing integers, including very large ones, in words}
+  {256}
+  {/TUGboat/tb28-2/tb89reingold.pdf}
+  {}
+  {}
+
+
+% 
+\category{Advanced}
+
+%\capsule{Advanced}
+%  {Hints \& Tricks}
+%  {Timothy Hall}
+%  {The exact placement of superscripts and subscripts}
+%  {optimizing superscript/subscript locations by manipulating font dimensions}
+%  {\getfirstpage{hall}}
+%  {/TUGboat/tb28-2/tb89hall.pdf}
+%  {}
+%  {}
+
+\capsule{Advanced}
+  {Fonts}
+  {Idris Samawi Hamid}
+  {Installing \ConTeXt\ expert fonts: Minion Pro}
+  {preparing, installing, and configuring Minion Pro for \ConTeXt}
+  {200}
+  {/TUGboat/tb28-2/tb89hamid.pdf}
+  {}
+  {}
+
+\capsule{Advanced}
+  {Graphics}
+  {Denis Roegel}
+  {A complex drawing in descriptive geometry}
+  {rendering a classic gear drawing in MetaPost}
+  {218}
+  {/TUGboat/tb28-2/tb89roegel.pdf}
+  {}
+  {}
+
+\capsule{Advanced}
+  {Hints \& Tricks}
+  {Peter Wilson}
+  {Glisterings}
+  {Paragraphs regular; paragraphs particular; paragraphs Russian}
+  {229}
+  {/TUGboat/tb28-2/tb89glister.pdf}
+  {}
+  {}
+
+
+
+\category{Contents of other \TeX\ journals}
+
+\capsule{}
+  {Abstracts}
+  {}
+  {{\sl Ars\TeX{}nica\/}: Contents of issues 2--3 (2006--2007)}
+  {}
+  {260}
+  {/TUGboat/tb28-2/tb89abs-arscahi.pdf}
+  {}
+  {}
+
+%\capsule{}
+%  {Abstracts}
+%  {}
+%  {{\sl Zpravodaj\/}: Contents of issues 14(3-4), 15(1), 15(2) (2004--05)}
+%  {}
+%  {\getpage{zprav}}
+%  {/TUGboat/tb26-3/tb84zprav.pdf}
+%  {}
+%  {}
+
+\capsule{}
+  {Abstracts}
+  {}
+  {{\sl Les Cahiers GUTenberg\/}: Contents of double issue 46--47 (April 2006)}
+  {}
+  {261}
+  {/TUGboat/tb28-2/tb89abs-arscahi.pdf}
+  {}
+  {}
+
+%\capsule{}
+%  {Abstracts}
+%  {}
+%  {{\sl MAPS\/}: Contents of issue 32 (2005)}
+%  {}
+%  {\getfirstpage{maps}}
+%  {/TUGboat/tb26-3/tb84maps.pdf}
+%  {}
+%  {}
+
+\capsule{}
+  {Abstracts}
+  {}
+  {{\sl Die \TeX{}nische Kom\"odie\/}: Contents of issues 2006/1--2007/1}
+  {}
+  {262}
+  {/TUGboat/tb28-2/tb89komo.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Abstracts}
+  {}
+  {{\sl The Prac\TeX\ Journal\/}: Contents of issues 2006-1--2007-2}
+  {}
+  {263}
+  {/TUGboat/tb28-2/tb89pracjourn.pdf}
+  {}
+  {}
+
+
+% 
+\category{Reports and notices}
+
+\capsule{}
+  {General Delivery}
+  {Michael Guravage}
+  {EuroBacho\TeX\ 2007}
+  {report and photos from the 2007 European \TeX\ conference}
+  {164}
+  {/TUGboat/tb28-2/tb89guravage.pdf}
+  {}
+  {}
+
+\capsule{}
+  {General Delivery}
+  {Kihwang Lee}
+  {New \TeX\ activities in Korea}
+  {notice of the founding of the Korean \TeX\ Society}
+  {172\offset{.1}}
+  {/TUGboat/tb28-2/tb89lee.pdf}
+  {}
+  {}
+
+\capsule{}
+  {General Delivery}
+  {Mojca Miklavec}
+  {\ConTeXt\ user meeting 2007: Epen, March 23--25}
+  {report and photos from the first \ConTeXt{} conference}
+  {159}
+  {/TUGboat/tb28-2/tb89miklavec.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {News}
+  {}
+  {Calendar}
+  {}
+  {269}
+  {/TUGboat/tb28-2/tb89calendar.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {TUG Business}
+  {}
+  {Institutional members}
+  {}
+  {268}
+  {/instmem.html}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {News}
+  {}
+  {\acro{TUG} 2007 announcement}
+  {}
+  {270}
+  {/tug2007/}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {News}
+  {}
+  {\acro{TUG} 2008 announcement}
+  {}
+  {271}
+  {/tug2008}
+  {}
+  {}
+
+%\capsule{Reports and notices}
+%  {TUG Business}
+%  {}
+%  {\acro{TUG} membership form}
+%  {}
+%  {\TBmemberapp}
+%  {/join.html}
+%  {}
+%  {}
+
+\capsule{}
+  {Advertisements}
+  {}
+  {\TeX\ consulting and production services}
+  {}
+  {272}
+  {/consultants.html}
+  {}
+  {}
+
+\bye

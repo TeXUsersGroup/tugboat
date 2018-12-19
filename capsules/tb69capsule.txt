@@ -1,0 +1,114 @@
+% $Id$
+
+\issue{21}{4}{69}{December 2000}{}{}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 21:4 as one pdf (3.7mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb21-4/tb69complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Cover, epigram, and table of contents}
+        {}
+        {c1}
+        {/TUGboat/tb21-4/cover96.pdf}
+
+
+\capsule{}%subsec
+        {}%replace|General Delivery
+        {Barbara~Beeton}
+        {{Editorial Comments}}
+        {}
+        {315}
+        {/TUGboat/tb21-4/tb69beet.pdf}
+        {pdf\TeX;\\
+Digression;\\
+The dissertation;\\
+Production of this issue, and acknowledgments}
+        {}
+
+
+\capsule{}%subsec
+        {}%replace|Software \& Tools
+        {\Thanh}
+        {{Micro-typographic extensions to the \TeX\ typesetting system}}
+        {}
+        {317}
+        {/TUGboat/tb21-4/tb69thanh.pdf}
+
+
+%THEcategory{News \& \\ Announcements}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {{\acro{TUG}\,2001 Announcement}}
+        {}
+        {435}
+        {/TUGboat/tb21-4/tugboat2001gray.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {Calendar}
+        {}
+        {436}
+        {/calendar.html}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {437}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {{TUG} membership application}
+        {}
+        {438}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {439}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {IBM techexplorer}
+        {}
+        {440}
+        {/TUGboat/tb21-4/ibm2000.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Blue Sky Research}}
+        {}
+        {c3}
+        {URL}

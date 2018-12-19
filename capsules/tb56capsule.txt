@@ -1,0 +1,244 @@
+% $Id$
+
+\issue{18}{3}{56}{September 1997}{/tug1997/}{TUG 1997 Proceedings (San Francisco, California)}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 18:3 as one pdf (2mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb18-3/tb56complete.pdf}
+
+%THEcategory{{\acro{TUG}'98}}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1}
+        {/TUGboat/tb18-3/proccover.pdf}
+
+\capsule{}%subsecnn
+        {TUG'98}
+        {}
+        {Call for {Papers}}
+        {}
+        {146-146}
+        {/TUGboat/tb18-3/tug98.pdf}
+
+
+%THEcategory{Opening Address}
+
+
+\capsule{}%subsec
+        {Opening Address}
+        {Mimi~Jett}
+        {Opening {Words} by the {President}}
+        {}
+        {147-148}
+        {/TUGboat/Pres/tb56pres.html}
+
+\capsule{}
+        {}%replace|Conference Notes
+        {}
+        {\acro{TUG}'97 program}
+        {}
+        {149-150}
+        {/TUGboat/tb18-3/tug97prog.pdf}
+
+%THEcategory{Pictures and {\TeX}}
+
+
+\capsule{}%subsec
+        {Pictures and {\TeX}}
+        {Kristoffer~H\o{}gsbro~Rose}
+        {{V}ery high level 2-dimensional graphics with {\TeX} and~{Xy-pic}}
+        {}
+        {151-158}
+        {/TUGboat/tb18-3/tb56rose.pdf}
+
+
+\capsule{}%subsec
+        {Pictures and {\TeX}}
+        {Ross~Moore}
+        {High quality labels on included  graphics, using {Xy-pic}}
+        {}
+        {159-163}
+        {/TUGboat/tb18-3/tb56moore.pdf}
+
+\capsule{}
+        {Pictures and {\TeX}}
+        {Sebastian Tannert}
+        {CIRC --- A Package to Typeset Block Schematics}
+        {}
+        {164-165}
+        {/TUGboat/tb18-3/tb56circ.pdf}
+
+
+
+%THEcategory{{\TeX} and\\ Scientific Publishing\\ on the Internet}
+
+
+\capsule{}%subsec
+        {{\TeX} and\\ Scientific Publishing\\ on the Internet}
+        {Sergey~Lesenko}
+        {{\acro{DVIPDF}} and {Graphics}}
+        {}
+        {166-169}
+        {/TUGboat/tb18-3/tb56lese.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} and\\ Scientific Publishing\\ on the Internet}
+        {Christopher~B.~Hamlin}
+        {From {\acro{SGML}} to {\acro{HTML}} with help from {\TeX}}
+        {}
+        {170-174}
+        {/TUGboat/tb18-3/tb56haml.pdf}
+
+
+
+%THEcategory{Publishing and {\TeX}}
+
+
+\capsule{}%subsec
+        {Publishing and {\TeX}}
+        {Douglas~Lovell}
+        {Custom legal documents for the {IBM}  {AutoLoan} {Exchange}}
+        {}
+        {175-181}
+        {/TUGboat/tb18-3/tb56love.pdf}
+
+
+\capsule{}%subsec
+        {Publishing and {\TeX}}
+        {Michael~Downes}
+        {Breaking equations}
+        {}
+        {182-194}
+        {/TUGboat/tb18-3/tb56down.pdf}
+
+
+%THEcategory{{\LaTeX}\Dash state of the art}
+
+
+\capsule{}%subsec
+        {{\LaTeX}\Dash state of the art}
+        {Frank~Mittelbach~and~Chris~Rowley}
+        {The {\LaTeX3} {Project}}
+        {}
+        {195-198}
+        {/TUGboat/tb18-3/l3project.pdf}
+
+
+%THEcategory{Multilingual\\ Typography\\ Without\\ Boundaries}
+
+
+\capsule{}%subsec
+        {Multilingual\\ Typography\\ Without\\ Boundaries}
+        {Frank~Mittelbach~and~Chris~Rowley}
+        {Language information in structured documents: {A} model for mark-up and   rendering}
+        {}
+        {199-205}
+        {/TUGboat/tb18-3/tb56lang.pdf}
+
+
+\capsule{}%subsec
+        {Multilingual\\ Typography\\ Without\\ Boundaries}
+        {Werner~Lemberg}
+        {New font tools for {\TeX}}
+        {}
+        {206-213}
+        {/TUGboat/tb18-3/fonttool600.pdf}
+
+
+\capsule{}%subsec
+        {Multilingual\\ Typography\\ Without\\ Boundaries}
+        {Werner~Lemberg}
+        {The {\acro{CJK}} package: {Multilingual} support  beyond {Babel}}
+        {}
+        {214-224}
+        {/TUGboat/tb18-3/cjkintro600.pdf}
+
+
+%THEcategory{News \&\\Announcements}
+
+
+\capsule{}%subsecnn
+        {News \&\\Announcements}
+        {}
+        {Calendar}
+        {}
+        {225-225}
+        {/calendar.html}
+
+
+\capsule{}%subsec
+        {News \&\\Announcements}
+        {Mimi~Burbank}
+        {Production notes}
+        {}
+        {148-148}
+        {/TUGboat/tb18-3/tb56prod.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {{\acro{TUG}'97} list of attendees}
+        {}
+        {226-228}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {229-229}
+        {/instmem.html}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {{\acro{TUG}} membership form}
+        {}
+        {230-230}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {231-231}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Y\&Y Inc.}}
+        {}
+        {232-232}
+        {/twg/yy/}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Blue Sky Research}}
+        {}
+        {c3}
+        {URL}

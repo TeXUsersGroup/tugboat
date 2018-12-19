@@ -1,0 +1,605 @@
+% $Id$
+
+\issue{11}{4}{30}{December 1990}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 11:4 as one pdf (18mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb11-4/tb30complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {481}
+        {/TUGboat/tb11-4/tb30titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {482}
+        {/TUGboat/tb11-4/tb30edit.pdf}
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {483-484}
+        {URL}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Nelson~H.~F.~Beebe}
+        {From the President}
+        {}
+        {485-487}
+        {/TUGboat/tb11-4/tb30beebe-pres.pdf}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {The future of {\TeX}}
+        {}
+        {488-488}
+        {/TUGboat/tb11-4/tb30futuretex.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Donald~E.~Knuth}
+        {The future of {\TeX} and {\MF}}
+        {}
+        {489-489}
+        {/TUGboat/tb11-4/tb30knut.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Nelson~H.~F.~Beebe}
+        {Comments on the future of {\TeX} and {\MF}}
+        {}
+        {490-494}
+        {/TUGboat/tb11-4/tb30beebe-future.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {494-496}
+        {/TUGboat/tb11-4/tb30beet.pdf}
+        {This year's ``meeting season''\\
+\TUB\ News\\
+The dues increase and number of issues}
+	{}
+
+
+\capsule{}%subsec
+        {General Delivery}%add|Obituaries
+        {Donald~Knuth}%person|Donald Knuth and Arthur Lee Samuel
+        {Arthur Lee Samuel, 1901--1990}
+        {}
+        {497-498}
+        {/TUGboat/tb11-4/tb30knut-samuel.pdf}
+
+
+%THEcategory{Software}
+
+
+\capsule{}%subsec
+        {Software}
+        {Donald~Knuth}
+        {Answers to  Exercises for {\it \TeX: The Program}}
+        {}
+        {499-511}
+        {/TUGboat/tb11-4/tb30knut-exercises.pdf}
+
+
+\capsule{}%subsec
+        {Software}%add|Literate Programming
+        {Jim~Fox}
+        {Webless literate programming}
+        {}
+        {511-513}
+        {/TUGboat/tb11-4/tb30fox.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {Harold~T.~Stokes}
+        {A {\TeX} previewer for ``slow'' terminals}
+        {}
+        {513-514}
+        {/TUGboat/tb11-4/tb30stokes.pdf}
+
+
+%THEcategory{Philology}
+
+\capsule{}
+        {Philology}
+        {}
+        {}
+        {}
+        {514-516}
+        {/TUGboat/tb11-4/tb30ferguson.pdf}
+
+\capsule{}%subsec
+        {Philology}
+        {Michael~Ferguson}
+        {Report on multilingual activities}
+        {}
+        {514-515}
+        {/TUGboat/tb11-4/tb30ferguson.pdf}
+
+
+\capsule{}%subsecnn
+        {Philology}
+        {}
+        {Extended \TeX{} font encoding scheme\Dash Latin, Cork,        September 12, 1990}
+        {}
+        {516-516}
+        {/TUGboat/tb11-4/tb30ferguson.pdf}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Karl~Berry}
+        {Filenames for fonts}
+        {}
+        {517-520}
+        {/TUGboat/tb11-4/tb30berry.pdf}
+        {(Subsequently <a href="/fontname/">maintained online</a>.)}
+        {}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Yannis~Haralambous}
+        {Arabic, Persian and Ottoman {\TeX} for Mac and PC}
+        {}
+        {520-524}
+        {/TUGboat/tb11-4/tb30hara.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Shimon~Yanai \and Daniel~M.~Berry}
+        {Environment for translating {\MF} to {\PS}}
+        {}
+        {525-541}
+        {/TUGboat/tb11-4/tb30yanai.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {David~Tofsted}
+        {An improved chess font}
+        {}
+        {542-544}
+        {/TUGboat/tb11-4/tb30tofsted.pdf}
+
+
+%THEcategory{Output Devices}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Don~Hosek}
+        {{\TeX} output devices (with charts)}
+        {}
+        {545-569}
+        {/TUGboat/tb11-4/tb30hosek.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Don~Hosek}
+        {Report from the {\tt DVI} Driver Standards Committee}
+        {}
+        {570-570}
+        {/TUGboat/tb11-4/tb30resources.pdf}
+
+
+%THEcategory{Resources}
+
+\capsule{}
+        {Resources}
+        {}
+        {}
+        {}
+        {570-578}
+        {/TUGboat/tb11-4/tb30resources.pdf}
+
+\capsule{}%subsec
+        {Resources}
+        {Barbara~Beeton}
+        {Updates from all over}
+        {}
+        {570-571}
+        {/TUGboat/tb11-4/tb30resources.pdf}
+
+
+\capsule{}%subsec
+        {Resources}%replace|Macros
+        {Karl~Berry}
+        {{\tt eplain}}
+        {}
+        {571-572}
+        {/TUGboat/tb11-4/tb30resources.pdf}
+
+
+\capsule{}%subsec
+        {Resources}%replace|Book Reviews
+        {Victor~Eijkhout}
+        {New Books on {\TeX}}
+        {}
+        {572-573}
+        {/TUGboat/tb11-4/tb30resources.pdf}
+
+
+\capsule{}%subsec
+        {Resources}
+        {Barbara~Beeton}
+        {A proto-TUG bibliography: Installment three}
+        {}
+        {573-576}
+        {/TUGboat/tb11-4/tb30resources.pdf}
+
+
+%THEsite{\VAX/VMS}
+
+
+\capsule{}%subsec
+        {Resources}
+        {Ted~Nieland}
+        {The 1990 DECUS {\TeX} collection}
+        {}
+        {576-577}
+        {/TUGboat/tb11-4/tb30resources.pdf}
+
+
+\capsule{}%subsec
+        {Resources}
+        {Don~Hosek}
+        {The {\tt IVRITEX} Mailing List}
+        {}
+        {578-578}
+        {/TUGboat/tb11-4/tb30resources.pdf}
+
+
+%THEsite{IBM VM/CMS}
+
+
+\capsule{}%subsec
+        {Resources}
+        {Joachim~Lammarsch}
+        {IBM VM/CMS site report}
+        {}
+        {578-578\offset{.5}}
+        {/TUGboat/tb11-4/tb30resources.pdf}
+
+
+%THEcategory{Typesetting on PCs}
+
+
+\capsule{}%subsec
+        {Typesetting on PCs}
+        {Erich~Neuwirth}
+        {{\TeX} implementations for IBM~PCs: Comparative timings}
+        {}
+        {578-580}
+        {/TUGboat/tb11-4/tb30neuwirth.pdf}
+
+
+%THEcategory{Tutorials}
+
+
+\capsule{}%subsec
+        {Tutorials}
+        {Lincoln~Durst}
+        {Long-winded endnotes and exercises with hints or solutions}
+        {}
+        {580-588}
+        {/TUGboat/tb11-4/tb30durst.pdf}
+
+
+\capsule{}%subsec
+        {Tutorials}
+        {David~Salomon}
+        {Output routines: Examples and techniques. Part~III: Insertions}
+        {}
+        {588-605}
+        {/TUGboat/tb11-4/tb30salomon.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Victor~Eijkhout}
+        {A new editor}
+        {}
+        {605-605}
+        {/TUGboat/tb11-4/tb30downes.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Michael~Downes}
+        {Line breaking in {\tt\bs unhbox}ed text}
+        {}
+        {605-612}
+        {/TUGboat/tb11-4/tb30downes.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Sonja~Maus}
+        {Looking ahead for a \<box>}
+        {}
+        {612-613}
+        {/TUGboat/tb11-4/tb30maus.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Victor~Eijkhout}
+        {An indentation scheme}
+        {}
+        {613-616}
+        {/TUGboat/tb11-4/tb30eijkhout-indent.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Victor~Eijkhout}
+        {A {\tt\bs parskip} scheme}
+        {}
+        {616-619}
+        {/TUGboat/tb11-4/tb30eijkhout-parskip.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Ron~Whitney}
+        {Sanitizing control sequences under {\tt\bs write}}
+        {}
+        {620-622}
+        {/TUGboat/tb11-4/tb30whitney.pdf}
+
+
+\capsule{}%subsec
+        {Macros}%add|Humanities
+        {John~Lavagnino \and Dominik~Wujastyk}
+        {An Overview of {\tt EDMAC:} A {\tt plain} {\TeX} format for critical editions}
+        {}
+        {623-643}
+        {/TUGboat/tb11-4/tb30lava.pdf}
+
+
+%THEcategory{\LaTeX}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Jackie~Damrau}
+        {The {\LaTeX} column}
+        {}
+        {644-644}
+        {/TUGboat/tb11-4/tb30damrau.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Andreas~Geyer-Schulz, Josef~Matulka and Gustaf~Neumann}
+        {A {\LaTeX} document style option for typesetting APL}
+        {}
+        {644-651}
+        {/TUGboat/tb11-4/tb30geyer.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {David~Love}
+        {Experiments in {\TeX}nicolour\Dash A SliTeX sub-style for Colour Printers}
+        {}
+        {652-656}
+        {/TUGboat/tb11-4/tb30love.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Frank~Mittelbach}
+        {Footnotes in a multi-column layout}
+        {}
+        {657-662}
+        {/TUGboat/tb11-4/tb30mitt.pdf}
+
+
+%THEcategory{Abstracts}
+
+
+\capsule{}%subsec
+        {Abstracts}
+        {Luzia~Dietsche}
+        {Deutsche Kurzfassungen der {\TUB}-Artikel}
+        {}
+        {663-665}
+        {/TUGboat/tb11-4/tb30abstracts.pdf}
+
+
+%THEcategory{Letters}
+
+
+\capsule{}%subsec
+        {Letters}
+        {Peter~C.~Akwai}
+        {{\TeX} drug bug}
+        {}
+        {665-665}
+        {/TUGboat/tb11-4/tb30letters.pdf}
+
+
+%THEcategory{News \& Announcements}
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {}
+        {}
+        {666-668}
+        {/TUGboat/tb11-4/tb30calendar.pdf}
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {666-666}
+        {/TUGboat/tb11-4/tb30calendar.pdf}
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Call for papers: Tenth meeting, DANTE, Vienna,                20--22 February 1991}
+        {}
+        {667-667}
+        {/TUGboat/tb11-4/tb30calendar.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {{\TeX}91/Congres GUTenberg'91, Paris, 23--26 September 1991}
+        {}
+        {667\offset{.5}}
+        {/TUGboat/tb11-4/tb30calendar.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Call for papers: RIDT 91 (raster imaging/digital typography), Boston, {15--16 October 1991}}
+        {}
+        {668-668}
+        {/TUGboat/tb11-4/tb30calendar.pdf}
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Call for papers: {\bf TUG Twelfth Annual Meeting},                suburban~Boston, 15--18~July~1991}
+        {}
+        {c3}
+        {URL}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {TUG Bylaws}
+        {}
+        {669-676}
+        {/TUGboat/tb11-4/tb30bylaws.pdf}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {676-678}
+        {/TUGboat/tb11-4/tb30instmem.pdf}
+
+
+%THEcategory{Late-Breaking News}
+
+
+\capsule{}%subsec
+        {Late-Breaking News}
+        {Barbara~Beeton}
+        {Production notes}
+        {}
+        {679-679}
+        {/TUGboat/tb11-4/tb30notes.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking News}
+        {}
+        {Coming next issue}
+        {}
+        {679\offset{.5}}
+        {/TUGboat/tb11-4/tb30notes.pdf}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {TUG membership application}
+        {}
+        {681-681}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+\capsule{}
+        {Advertisements}
+        {}
+        {}
+        {}
+        {680-694}
+        {/TUGboat/tb11-4/tb30ads.pdf}
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {693}
+        {/TUGboat/tb11-4/tb30ads.pdf}
+
+
+%THEcategory{Supplements}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {{\sl Computers \& Typesetting\/}: Errata, Supplement}
+        {}
+        {991}
+        {/TUGboat/tb11-4/tb30bugs.pdf}
+
+
+\capsule{}%subsecnn
+        {Supplements}
+        {}
+        {TUG Membership List Supplement}
+        {}
+        {1--14\offset{992}}
+        {URL}

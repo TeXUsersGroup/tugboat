@@ -1,0 +1,513 @@
+% $Id$
+
+\begin{blurb}
+<p>If you're not already a member, we hope you'll consider <a
+href="/join.html">joining TUG</a> or <a href="/usergroups.html">another
+TeX user group</a>, to support these publications, conferences, and
+other TeX projects.
+
+<p>
+\end{blurb}
+
+% was http://omega.enstb.org/eurotex2003/, now gone
+\issue{24}{3}{78}{2003}{}{EuroTeX 2003 Proceedings (Brest, France)}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 24:3 as one pdf (28mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb24-3/tb78complete.pdf}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Front cover}
+  {}
+  {c1\offset{.1}}
+  {/TUGboat/tb24-3/cover1.pdf}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Inside front cover}
+  {}
+  {c2\offset{.2}}
+  {/TUGboat/tb24-3/cover2.pdf}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Contents ordered by difficulty}
+  {}
+  {c3\offset{.3}}
+  {/TUGboat/tb24-3/cover3.pdf}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Title page}
+  {}
+  {121}
+  {/TUGboat/tb24-3/titlepage.pdf}
+
+\capsule{}
+        {}%replace|Conference Notes
+        {Yannis Haralambous}
+        {The EuroTeX 2003 conference}
+        {}
+        {302}
+        {/TUGboat/tb24-3/edit.pdf}
+
+
+
+\capsule{}
+        {}%replace|Conference Notes
+        {}
+        {Conference program and delegates}
+        {}
+        {306}
+        {/TUGboat/tb24-3/confinfo.pdf}
+
+
+
+\capsule{}
+        {Typography}
+        {Christian Paput}
+        {French typographic patrimony, conservation and teaching}
+        {}
+        {311}
+        {/TUGboat/tb24-3/paput.pdf}
+
+
+\capsule{}
+        {Typography}
+        {Jacques Andre}
+        {The Cassetin project---Towards an inventory of ancient types and the related standardised encoding}
+        {}
+        {314}
+        {/TUGboat/tb24-3/andre.pdf}
+
+
+\capsule{}
+        {Typography}
+        {Apostolos Syropoulos}
+        {Replicating archaic documents: A typographic challenge}
+        {}
+        {319}
+        {/TUGboat/tb24-3/syropoulos.pdf}
+
+
+\capsule{}
+        {Typography}
+        {Azzeddine Lazrek}
+        {CurExt, typesetting variable-sized curved symbols}
+        {}
+        {323}
+        {/TUGboat/tb24-3/lazrek.pdf}
+
+
+\capsule{}
+        {Typography}
+        {Vlad Atanasiu}
+        {Allographic biometrics and behavior synthesis}
+        {}
+        {328}
+        {/TUGboat/tb24-3/atanasiu.pdf}
+
+
+\capsule{}
+        {Typography}
+        {Ghassan Mourad}
+        {La virgule viendrait-elle de l'ecriture arabe ?}
+        {}
+        {334}
+        {/TUGboat/tb24-3/mourad2.pdf}
+
+\capsule{}
+        {Typography}
+        {Emmanuel Souchier}
+        {Quelques remarques sur le sens et la servitude de la typographie}
+        {}
+        {339}
+        {}
+
+\capsule{}
+        {Typography}
+        {Yves Maniette}
+        {Systeme automatise de co-redaction de livres}
+        {}
+        {351}
+        {/TUGboat/tb24-3/maniette.pdf}
+
+\capsule{}
+        {Typography}
+        {Isabelle Turcan, Viviane Berthelier}
+        {Ethique et edition scientifique d'ouvrages anciens sur support electronique}
+        {}
+        {357}
+        {}
+
+\capsule{}
+        {Electronic Documents}
+        {Yannis Haralambous, John Plaice}
+        {XLaTeX, a DTD/schema which is very close to LaTeX}
+        {}
+        {369}
+        {/TUGboat/tb24-3/haralambous.pdf}
+
+\capsule{}
+        {Electronic Documents}
+        {Jose Grimm}
+        {Tralics, a LaTeX to XML translator}
+        {}
+        {377}
+        {/TUGboat/tb24-3/grimm.pdf}
+
+
+\capsule{}
+        {Electronic Documents}
+        {Simon Pepping}
+        {Docbook In ConTeXt, a ConTeXt XML mapping for Docbook documents}
+        {}
+        {389}
+        {/TUGboat/tb24-3/pepping.pdf}
+
+
+\capsule{}
+        {Electronic Documents}
+        {Ioannis Kanellos}
+        {Intertextualite et typographie numerique---considerations semantiques sur le livre electronique}
+        {}
+        {402}
+        {/TUGboat/tb24-3/kanellos.pdf}
+
+
+\capsule{}
+        {Electronic Documents}
+        {Ghassan Mourad}
+        {Nouveaux signes de lecture et d'ecriture poules documents electroniques}
+        {}
+        {411}
+        {/TUGboat/tb24-3/mourad1.pdf}
+
+
+
+\capsule{}
+        {Software \& Tools}
+        {Marie-Louise Chaix, Fabrice Popineau}
+        {The XEmTeX project}
+        {}
+        {415}
+        {/TUGboat/tb24-3/popineau.pdf}
+
+
+\capsule{}
+        {Software \& Tools}
+        {Jer\^ome Laurens}
+        {iTeXMac, an integrated TeX environment for Mac OSX}
+        {}
+        {420}
+        {/TUGboat/tb24-3/laurens.pdf}
+        
+
+\capsule{}
+        {Software \& Tools}
+        {Balazs Vecsei}
+        {Description of knowledge of mathematical programs with TeX and XML}
+        {}
+        {427}
+        {/TUGboat/tb24-3/balazs.pdf}
+
+
+\capsule{}
+        {Software \& Tools}
+        {David Turner, Werner Lemberg}
+        {Real-time grid fitting of typographic outlines}
+        {}
+        {430}
+        {/TUGboat/tb24-3/lemberg.pdf}
+
+
+\capsule{}
+        {Software \& Tools}
+        {Jean-Pierre Sutto, Pier Daniele Napolitani}
+        {L'utilisation du Mauro-TeX pour l'edition critique de Francesco Maurolico}
+        {}
+        {435}
+        {/TUGboat/tb24-3/napolitani.pdf}
+
+
+
+\capsule{}
+        {Graphics}
+        {P\'eter Szab\'o}
+        {Inserting external figures with GraphicP}
+        {}
+        {441}
+        {/TUGboat/tb24-3/szabo.pdf}
+
+
+\capsule{}
+        {Graphics}
+        {Karel Hor\'ak}
+        {Geometric diversions with TeX, MF and MP}
+        {}
+        {449}
+        {/TUGboat/tb24-3/horak.pdf}
+
+
+\capsule{}
+        {Graphics}
+        {Frederic Boulanger}
+        {Printing digital photographs with LaTeX}
+        {}
+        {453}
+        {/TUGboat/tb24-3/boulanger.pdf}
+
+
+
+\capsule{}
+        {Macros}
+        {David Kastrup}
+        {Output routine requirements for advanced typesetting tasks}
+        {}
+        {462}
+        {/TUGboat/tb24-3/kastrup.pdf}
+
+\capsule{}
+        {Bibliographies}
+        {Thomas Widmann}
+        {Bibulus---a Perl/XML replacement for BibTeX}
+        {}
+        {468}
+        {/TUGboat/tb24-3/widmann.pdf}
+
+\capsule{}
+        {Bibliographies}
+        {Fabien Dagnat, Ronan Keryell, Laura Barrero Sastre, Emmanuel Donin de Rosiere, Nicolas Torneri}
+        {BibTeX++: Toward higher-order BibTeXing}
+        {}
+        {472}
+        {/TUGboat/tb24-3/keryell.pdf}
+
+\capsule{}
+        {Bibliographies}
+        {Jean-Michel Hufflen}
+        {European bibliography styles and MlBibTeX}
+        {}
+        {489}
+        {/TUGboat/tb24-3/hufflen.pdf}
+
+
+
+\capsule{}
+        {Multilingual Document Processing}
+        {Petr Ol\v{s}\'ak}
+        {Second version of encTeX: UTF-8 support}
+        {}
+        {499}
+        {/TUGboat/tb24-3/olsak.pdf}
+
+
+\capsule{}
+        {Multilingual Document Processing}
+        {Thomas Milo}
+        {ALI-BABA and the 40 Unicode characters---Towards the ideal Arabic working environment}
+        {}
+        {502}
+        {/TUGboat/tb24-3/milo.pdf}
+
+
+\capsule{}
+        {Multilingual Document Processing}
+        {John Plaice, Yannis Haralambous}
+        {Generating multiple outputs from Omega}
+        {}
+        {512}
+        {/TUGboat/tb24-3/plaice.pdf}
+
+
+\capsule{}
+        {Multilingual Document Processing}
+        {B.V. Venkata Krishna Sastry}
+        {Enhanced font features for future multilingual digital typography with sound-script-language attribute integration}
+        {}
+        {519}
+        {/TUGboat/tb24-3/sastry.pdf}
+
+
+
+\capsule{}
+        {Fonts}
+        {Gyongyi Bujdoso}
+        {Contemporary Hungarian types and designers}
+        {}
+        {527}
+        {/TUGboat/tb24-3/bujdoso.pdf}
+
+
+\capsule{}
+        {Fonts}
+        {George Williams}
+        {Font creation with FontForge}
+        {}
+        {531}
+        {/TUGboat/tb24-3/williams.pdf}
+
+
+\capsule{}
+        {Fonts}
+        {Primoz Peterlin}
+        {The free UCS outline fonts project---An attempt to create a global font}
+        {}
+        {545}
+        {/TUGboat/tb24-3/peterlin.pdf}
+
+
+\capsule{}
+        {Fonts}
+        {Anish Mehta, Gabor Bella, Yannis Haralambous}
+        {Adapting Omega to OpenType fonts}
+        {}
+        {550}
+        {/TUGboat/tb24-3/bella.pdf}
+
+
+\capsule{}
+        {Fonts}
+        {Sivan Toledo, Zvika Rosenberg}
+        {Experience with OpenType Font Production}
+        {}
+        {557}
+        {/TUGboat/tb24-3/toledo.pdf}
+
+
+\capsule{}
+        {Fonts}
+        {Serge Vakulenko}
+        {The METATYPE project: Creating TrueType fonts based on \MF}
+        {}
+        {569}
+        {/TUGboat/tb24-3/vakulenko.pdf}
+
+
+\capsule{}
+        {Fonts}
+        {Bogus\l{}aw Jackowski, Janusz Nowacki, Piotr Strzelczyk}
+        {Programming PostScript Type~1 fonts using MetaType1:  Auditing, enhancing, creating}
+        {}
+        {575}
+        {/TUGboat/tb24-3/jackowski.pdf}
+
+
+\capsule{}
+        {Fonts}
+        {Wai Wong, Candy L.K. Yiu, Kelvin C.F. Ng}
+        {Typesetting rare Chinese characters in LaTeX}
+        {}
+        {582}
+        {/TUGboat/tb24-3/wong.pdf}
+
+
+\capsule{}
+        {Fonts}
+        {Luc Devroye}
+        {Formatting font formats}
+        {}
+        {588}
+        {/TUGboat/tb24-3/devroye.pdf}
+
+
+\capsule{}
+        {Fonts}
+        {Jef Tombeur}
+        {Polices d'apprentissage de l'ecriture}
+        {}
+        {597}
+        {/TUGboat/tb24-3/tombeur1.pdf}
+
+
+\capsule{}
+        {Fonts}
+        {Jef Tombeur}
+        {Alphabets artificiels et synthetiques}
+        {}
+        {605}
+        {/TUGboat/tb24-3/tombeur2.pdf}
+
+
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {TUG Calendar}
+        {}
+        {619}
+        {/calendar.html}
+
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {TUG 2005, 23-25 August 2005, Wuhan, China}
+        {}
+        {621}
+        {/tug2005/}
+
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {Practical TeX 2005, 14-17 June 2005 Chapel Hill, North Carolina }
+        {}
+        {622}
+        {/practicaltex2005/}
+
+
+
+\capsule{}
+        {TUG Business}
+        {}
+        {TUG 2005 election report}
+        {}
+        {621\offset{.5}}
+        {/TUGboat/tb24-3/tb78elec.pdf}
+
+
+\capsule{}
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {623}
+        {/TUGboat/tb24-3/instcons.pdf}
+
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {TeX consulting and production services}
+        {}
+        {623\offset{.5}}
+        {/consultants.html}
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {Easy Table, Khanh Ha}
+        {}
+        {624}
+        {/TUGboat/tb24-3/ezad.pdf}
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {H.W. Caslon \& Co. Ltd}
+        {}
+        {c3}
+        {/TUGboat/tb24-3/caslonad.pdf}

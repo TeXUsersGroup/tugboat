@@ -1,0 +1,717 @@
+\mag = 1000
+\let\primitiveinput=\input
+\input eplain
+\beginpackages
+  \usepackage{graphics}
+\endpackages
+\let\input=\primitiveinput
+
+\input tugboat.cmn  % tugboat.dates macros
+\input tugboat.dates
+
+\nopagenumbers
+\hyphenpenalty = 10000
+\advance\rightskip by 0pt plus 3pc
+\hoffset = 0pt
+\voffset = -.6in
+\vsize = 12in
+
+% fonts - 9pt.
+\font\tenrm=cmr9  \font\tensl=cmsl9  \font\tentt=cmtt9  \font\manual=logo9
+\font\tenit=cmti9
+\baselineskip=10.1pt
+
+% adjust everything else down
+\font\sf = cmss9
+\def\pkgname#1{\mbox{\tt #1}}
+
+\font\smallsl = cmsl8  \font\smallrm = cmr8
+\def\acrofont{% if slanted font, use slanted acro font
+   \ifdim \fontdimen1\font>0pt \smallsl \else \smallrm\fi
+}
+\def\acro#1{{\acrofont #1}}
+
+% for \BibTeX
+\font\smc=cmcsc10 at 9pt
+
+% slant \BibTeX and \MF
+\font\ninesl = cmsl8
+\font\slc = cmsl8 at 6pt
+\def\slBibTeX{{\ninesl B{\slc IB}\TeX}}  % cmcscsl10 not available as type1
+
+\font\manualsl = logosl10 at 9pt
+\def\slMF{{\manualsl META}\-{\manualsl FONT}\spacefactor1000 }
+\def\slMP{{\manualsl META}\-{\manualsl POST}\spacefactor1000 }
+
+% improve Lslash/lslash
+\font\lslashfont = ec-lmro9
+\def\L{{\lslashfont \char'212 }}
+\def\l{{\lslashfont \char'252 }}
+
+% improve \Thanh
+\font\thanhfont = t5-lmr10
+\def\Thanh{H\`an Th{\thanhfont \char'270} Th\`anh}
+
+% from gm, improves \AllTeX spacing:
+\def\La{\TestCount=\the\fam \leavevmode L%
+        \setbox\TestBox=\hbox{$\fam\TestCount\scriptstyle A$}%
+        \kern-.57\wd\TestBox
+        \raise.42ex\copy\TestBox
+        \kern-.2\wd\TestBox
+        }
+\def\LaTeX{\La\TeX}
+
+% for \LaTeX, etc.
+\font\sevenrm=cmr6
+\font\sevensl=cmti7 at 6pt
+\scriptfont\slfam=\sevensl
+
+\def\textsf#1{{\sf #1}}
+\def\texttt#1{{\tt #1}}
+\def\textsl#1{{\sl #1}}
+\def\textrm#1{{\rm #1}}
+\def\emph#1{{\it #1}}
+
+\def\reflect#1{%
+  \ifx\reflectbox\undefined
+    \errmessage{graphics package must be loaded}%
+  \else
+    \ifdim \fontdimen1\font>0pt
+      \raise 1.75ex \hbox{\kern.1em\rotatebox{180}{#1}}\kern-.1em
+    \else
+      \reflectbox{#1}%
+    \fi
+  \fi
+}
+\def\hideheight#1{\setbox0=\hbox{#1}\ht0=0pt \dp0=0pt \box0 }
+\def\XeTeX{\leavevmode\hideheight{\hbox{X\lower.5ex
+  \hbox{\kern-.125em\reflect{E}}\kern-.1667em \TeX}}}
+
+% abbreviations
+\def\\{\hfil\break}
+\def\aand{{\rm and\space}} % matches tub, but might be too long
+\def\cand{\unskip,\space\ignorespaces}
+\def\cs#1{{\tt \char`\\#1}}
+\def\smallbullet{\raise .4ex \hbox{$\scriptscriptstyle \bullet$}}
+
+% from tugboat.front
+\def\titleslash{\raise.3ex\hbox{\sevenrm/}}
+
+\let\offset=\gobble          % ignore manual sorting offset
+\long\def\begin#1#2\end#3{}  % ignore blurb
+\def\issue#1#2#3#4#5#6{}     % ignore issue info
+
+% formatting
+\newdimen\pagenowidth % space for just
+\setbox0=\hbox{000}
+\pagenowidth=\wd0  % aka 1.5em
+\newdimen\pagenospace  \pagenospace = 2.5em
+
+\def\category#1{%
+  \vskip.8\medskipamount
+  \noindent{\bf #1}%
+  \vskip.3\smallskipamount
+}
+
+% #1 is difficulty category -- follows \capsule on first line
+% #2 is TB category -- arg 2 alone on its line, maybe with replace|add comment
+% #3 is author -- args 3-7 are alone on their lines
+% #4 is title
+% #5 is for statement
+% #6 is page number
+% #7 is URL of paper PDF
+% #8 is subtitles -- arg 8 can be alone on its line or multiple lines long
+% #9 is for notes added at html time -- arg 9 can be alone on its line or multiple lines long
+
+% args 2 to 7 must be on one line.
+\def\capsule#1#2#3#4#5#6#7#8#9{%
+    \vskip 1pt plus1pt
+    \noindent
+    \hangindent = \pagenospace
+      \advance\hangindent by 3em
+    \hbox to \pagenospace{%
+      \hbox to \pagenowidth{\hfil #6}%
+      \hfil}%
+     %
+     \def\author{#3}%
+     \def\title{#4}%
+     {\sl \author}%
+     %
+     % / only if both parts are present.
+     \ifx\author\empty\else \ifx\title\empty\else\ \titleslash\ \fi\fi
+     %
+     {\rm \title}%
+     %
+     \def\blurb{#5}%
+     \ifx\blurb\empty\else \hfil\break\hglue-2em\smallbullet\ \blurb\fi
+     \par
+}
+
+\def\capsulenoprint#1#2#3#4#5#6#7#8#9{}
+
+% typeset the actual title text.
+\font\titlebf = cmbx10 scaled \magstephalf
+\leftline{{\titlebf TUG}BOAT \kern1.5pc \volx\
+}
+\bigskip
+%\leftline{{\titlebf Table of Contents}\kern1pc (ordered by difficulty)}
+%\smallskip
+
+\rm  % print above in 10pt, below in 9pt
+
+% begin-items
+% 
+
+\begin{blurb}
+<p>If you're not already a member, we hope you'll consider <a
+href="/join.html">joining TUG</a> to support TUGboat and other TeX
+projects.  <a href="/memberaccess.html">More information on TUG member
+access</a>.
+
+<p>
+\end{blurb}
+
+\issue{32}{1}{100}{2011}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 32:1 as one pdf (7.6mb)}
+        {}
+        {\offset{.1}}
+        {/TUGboat/!TBIDENT!complete.pdf}
+        {}
+        {}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1\offset{.2}}
+        {/TUGboat/tb32-1/cover1.pdf}
+        {}
+        {}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2\offset{.3}}
+        {/TUGboat/tb32-1/cover2.pdf}
+        {}
+        {}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Contents ordered by difficulty}
+        {}
+        {c3\offset{.4}}
+        {/TUGboat/tb32-1/cover3.pdf}
+        {}
+        {}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {1}
+        {/TUGboat/tb32-1/titlepage.pdf}
+        {}
+        {}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {2}
+        {/TUGboat/!TBIDENT!edit.pdf}
+        {}
+        {}
+
+% 
+\category{Introductory}
+
+\capsule{Introductory}
+  {General Delivery}
+  {Barbara Beeton}
+  {Editorial comments}
+  {typography and {\sl TUGboat} news}
+  {4}
+  {/TUGboat/!TBIDENT!beet.pdf}
+  {{Opus 100}\\
+{\acro{BBVA} award for Don Knuth}\\
+{Short takes}\\
+{Mimi}}
+  {}
+
+\capsule{Introductory}
+  {General Delivery}
+  {Karl Berry}
+  {From the President}
+  {conferences; interviews; software}
+  {3}
+  {/TUGboat/!TBIDENT!pres.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {General Delivery}
+  {Karl Berry \aand David Walden}
+  {\TUB\ online}
+  {retrospective history and implementation of making \TUB\ available online}
+  {23}
+  {/TUGboat/!TBIDENT!berry.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {General Delivery}
+  {Jackie Damrau}
+  {Mimi Burbank}
+  {a remembrance}
+  {6}
+  {/TUGboat/!TBIDENT!damrau.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Fonts}
+  {Pavel Far\'a\v{r}}
+  {Introducing the \acro{PT} Sans and \acro{PT} Serif typefaces}
+  {high-quality sans and serif typefaces supporting Latin and Cyrillic}
+  {39}
+  {/TUGboat/!TBIDENT!farar.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Letters}
+  {Jonathan Fine}
+  {Is \TeX\ obsolete?}
+  {note on \TeX's (lack of) use as a web service}
+  {120}
+  {/TUGboat/!TBIDENT!fine.pdf}
+  {}
+  {}
+
+\capsule{}
+  {General Delivery}
+  {Hans Hagen}
+  {16 years of \ConTeXt}
+  {\ConTeXt's evolution and milestones in its history}
+  {9}
+  {/TUGboat/!TBIDENT!hagen-16.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Resources}
+  {Jim Hef{}feron}
+  {Which way to the forum?}
+  {review of the major online help forums}
+  {30}
+  {/TUGboat/!TBIDENT!heff.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Electronic Documents}
+  {Andrew Hwang}
+  {\LaTeX\ at Distributed Proofreaders and the electronic preservation of mathematical literature at Project Gutenberg}
+  {processing flow and coding of mathematical books at Project Gutenberg}
+  {32}
+  {/TUGboat/!TBIDENT!hwang.pdf}
+  {}
+  {}
+
+%%%x\capsule{Introductory}
+%%%x   {Typography}
+%%%x   {Peter Flynn}
+%%%x   {Typographers' Inn}
+%%%x   {indenting; where have all the flowers gone?}
+%%%x   {\getfirstpage{inn}}
+%%%x   {/TUGboat/!TBIDENT!inn.pdf}
+%%%x   {}
+%%%x   {}
+
+\capsule{Introductory}
+  {\LaTeX}
+  {\LaTeX\ Project Team}
+  {\LaTeX3 news, issue 5}
+  {\acro{LPPL} now \acro{OSI}-approved; reflections on 2010; current progress; plans for 2011}
+  {108}
+  {/TUGboat/!TBIDENT!l3news.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {General Delivery}%add|Obituaries
+  {Christina Thiele}
+  {Missing Mimi}
+  {In memoriam: Mimi Burbank}
+  {7}
+  {/TUGboat/!TBIDENT!thiele.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {General Delivery}
+  {Boris Veytsman}
+  {\TeX\ consulting for fun and profit}
+  {technical, business, and personal experiences as a \TeX\ consultant}
+  {27}
+  {/TUGboat/!TBIDENT!veytsman.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Book Reviews}
+  {Boris Veytsman}
+  {Book review: \textsl{Typesetting tables with \LaTeX}, by Herbert Vo\ss}
+  {}
+  {109}
+  {/TUGboat/!TBIDENT!reviews.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {General Delivery}
+  {David Walden \aand Karl Berry}
+  {\TUB's 100 issues\Dash{}Basic statistics and random gleanings}
+  {sampled survey of issues throughout \TUB's run}
+  {17}
+  {/TUGboat/!TBIDENT!walden.pdf}
+  {}
+  {}
+
+% 
+\category{Intermediate}
+
+\capsule{Intermediate}
+  {Hints \& Tricks}
+  {Karl Berry}
+  {The treasure chest}
+  {new \CTAN\ packages from October 2010 through March 2011}
+  {110}
+  {/TUGboat/!TBIDENT!chest.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Software \& Tools}
+  {Enrico Gregorio}
+  {Installing \TeX~Live 2010 on Ubuntu}
+  {why and how to install the original \TeX\ Live on \GNU/Linux distributions}
+  {56}
+  {/TUGboat/!TBIDENT!gregorio.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Software \& Tools}
+  {Taco Hoekwater}
+  {tlcontrib.metatex.org: A complement to \TeX\ Live}
+  {a distribution and associated web site hosting supplementary packages for \TeX\ Live}
+  {62}
+  {/TUGboat/!TBIDENT!hoekwater.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {\LaTeX}
+  {Luca Merciadri}
+  {Some misunderstood or unknown \LaTeXe{}~tricks~III}
+  {monochrome; rightmost braces; watermarks; plagiarism}
+  {104}
+  {/TUGboat/!TBIDENT!merciadri.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {\LaTeX}
+  {Frank Mittelbach}
+  {Reflections on the history of the \LaTeX{} Project Public License (\acro{LPPL})\Dash A software license for \LaTeX{} and more}
+  {creation and evolution of the \LaTeX\ world's predominant license}
+  {83}
+  {/TUGboat/!TBIDENT!mitt.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Typography}
+  {Andrew West}
+  {The rules for long s}
+  {rules for using long s in English, French, Italian, and Spanish}
+  {47}
+  {/TUGboat/!TBIDENT!west.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Publishing}
+  {Peter Wilson}
+  {Glisterings}
+  {framing; new frames}
+  {99}
+  {/TUGboat/!TBIDENT!glister.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Hints \& Tricks}
+  {Joseph Wright}
+  {`Magic' comments in \TeX{}works 0.4}
+  {specify the encoding, spell checking language, engine and more}
+  {113}
+  {/TUGboat/!TBIDENT!wright-texworks.pdf}
+  {}
+  {}
+
+
+\capsule{Intermediate}
+  {\LaTeX}
+  {Joseph Wright}
+  {{\sf siunitx}: A comprehensive (\acro{SI}) units package}
+  {overview of a powerful package for printing units, with or without numbers}
+  {95}
+  {/TUGboat/!TBIDENT!wright-siunitx.pdf}
+  {}
+  {}
+
+
+% 
+%%\category{Intermediate Plus}
+
+%%\capsule{Intermediate Plus}
+%%  {Electronic Documents}
+%%  {Oleg Parashchenko}
+%%  {Generate \TeX{} documents using {\tt pdfscript}}
+%%  {Python library for conveniently generating correct \TeX\ documents}
+%%  {\getfirstpage{parashchenko}}
+%%  {/TUGboat/!TBIDENT!parashchenko.pdf}
+%%  {}
+%%  {}
+%%
+
+
+\category{Advanced}
+
+\capsule{Advanced}
+  {Fonts}
+  {Hans Hagen}
+  {Handling math: A retrospective}
+  {the influence of plain \TeX\ math in \ConTeXt, Unicode, and beyond}
+  {43}
+  {/TUGboat/!TBIDENT!hagen-math.pdf}
+  {}
+  {}
+
+\capsule{Advanced}
+  {Software \& Tools}
+  {Paul Isambert}
+  {Lua\TeX: What it takes to make a paragraph}
+  {influencing ligatures, kerning, line breaking, etc., through callbacks}
+  {68}
+  {/TUGboat/!TBIDENT!isambert.pdf}
+  {}
+  {Example code for the idea in the last section can be found, along
+with other useful information, on the
+<a href="http://wiki.luatex.org">LuaTeX wiki</a>.} 
+
+\capsule{Advanced}
+  {Software \& Tools}
+  {Pawe\l{} Jackowski}
+  {Luna\Dash my side of the moon}
+  {clean handling of graphics made possible by Lua(\TeX)}
+  {77}
+  {/TUGboat/!TBIDENT!jackowski.pdf}
+  {}
+  {}
+
+
+%%\category{Contents of publications from other \TeX\ groups}
+\category{Contents of other \TeX\ journals}
+%
+%\capsule{foo}
+%  {foo}
+%  {}
+%  {
+%%% {{\sl Asian Journal of \TeX\/}: Volume 3 (2009)};
+%%% {{\sl Les Cahiers \acro{GUT}enberg\/}: Issues 48--53 (2006--2009)};
+%  {{\sl Eutypon\/}: Issue 24--25 (October 2010)};
+%%% {{\sl Baskerville\/}: Issue 10.2 (2009)};
+%%% {{\sl \TeX{}emplares\/}: Issue 8 (2006)};
+%  {{\sl \acro{MAPS}\/}: Issue 41 (2010)};
+%  {{\sl The Prac\kern-.02em\TeX\ Journal\/}: Issue 2010-2};\\
+%%%  {{\sl Zpravodaj\/}: Issues 20(1--2), 20(3) (2010)};
+%  {{\sl Die \TeX nische Kom\"odie\/}: Issues 4/2010--1/2011};
+%  {{\sl Ars\TeX{}nica\/}: Issue 10 (October 2010)}%;
+%   }
+%   {}
+%   {118}%
+%   {url}
+%   {}
+%   {}
+ 
+
+%%web \capsule{Contents of publications from other \TeX\ groups}
+%%web   {Abstracts}
+%%web   {}
+%%web   {{\sl Asian Journal of \TeX\/}: Contents of Volume 3 (2009)}
+%%web   {}
+%%web   {\getfirstpage{ajt}}
+%%web   {/TUGboat/!TBIDENT!ajt.pdf}
+%%web   {}
+%%web   {}
+%%web 
+%%web \capsule{Contents of publications from other \TeX\ groups}
+%%web   {Abstracts}
+%%web   {}
+%%web   {{\sl Les Cahiers \acro{GUT}enberg\/}: Contents of issues 48--53 (2006--2009)}
+%%web   {}
+%%web   {\getfirstpage{ajt}}
+%%web   {/TUGboat/!TBIDENT!ajt.pdf}
+%%web   {}
+%%web   {}
+
+\capsule{}
+  {Abstracts}
+  {}
+  {{\sl Eutypon\/}: Contents of issue 24--25 (October 2010)}
+  {}
+  {114}
+  {/TUGboat/!TBIDENT!eutypon.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Abstracts}
+  {}
+  {{\sl \acro{MAPS}\/}: Contents of issue 41 (2010)}
+  {}
+  {115}
+  {/TUGboat/!TBIDENT!maps.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Abstracts}
+  {}
+  {{\sl The Prac\TeX\ Journal\/}: Contents of issue 2010-2}
+  {}
+  {116}
+  {/TUGboat/!TBIDENT!pracjourn.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Abstracts}
+  {}
+  {{\sl Die \TeX nische Kom\"odie\/}: Contents of issues 4/2010--1/2011}
+  {}
+  {117}
+  {/TUGboat/!TBIDENT!komo.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Abstracts}
+  {}
+  {{\sl Ars\TeX{}nica\/}: Contents of issue 10 (October 2010)}
+  {}
+  {118}
+  {/TUGboat/!TBIDENT!arstexnica.pdf}
+  {}
+  {}
+
+
+% 
+\category{Reports and notices}
+
+\capsule{Reports and notices}
+  {Advertisements}
+  {}
+  {\TeX\ consulting and production services}
+  {}
+  {119}
+  {/consultants.html}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {TUG Business}
+  {}
+  {Institutional members}
+  {}
+  {121}
+  {/instmem.html}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {TUG Business}
+  {David Walden}
+  {\tug\ financial statements for 2010}
+  {}
+  {121\offset{.2}}
+  {/TUGboat/!TBIDENT!treas.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {TUG Business}
+  {Jim Hef{}feron}
+  {\TUG\ 2011 election}
+  {}
+  {123}
+  {/TUGboat/!TBIDENT!elec.pdf}
+  {}
+  {}
+
+%%%x %\capsule{Reports and notices}
+%%%x %  {TUG Business}
+%%%x %  {\TeX\ Development Fund committee}
+%%%x %  {\TeX\ Development Fund 2009 report}
+%%%x %  {}
+%%%x %  {\getfirstpage{devfund}}
+%%%x %  {/TUGboat/!TBIDENT!devfund.pdf}
+%%%x %  {}
+%%%x %  {}
+%%%x 
+%%%x %%\capsule{Reports and notices}
+%%%x %%  {TUG Business}
+%%%x %%  {}
+%%%x %%  {\acro{TUG} membership form}
+%%%x %%  {}
+%%%x %%  {\TBmemberapp}
+%%%x %%  {/join.html}
+%%%x %%  {}
+%%%x %%  {}
+
+\capsule{Reports and notices}
+  {News}
+  {}
+  {Calendar}
+  {}
+  {127}
+  {/TUGboat/!TBIDENT!calendar.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {News}
+  {}
+  {\acro{TUG} 2011 announcement}
+  {}
+  {128}
+  {/TUGboat/!TBIDENT!tug11.pdf}
+  {}
+  {}
+
+\vfilneg
+\end

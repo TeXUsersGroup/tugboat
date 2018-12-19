@@ -1,0 +1,111 @@
+% $Id$
+
+\begin{blurb}
+<p>If you're not already a member, we hope you'll consider <a
+href="/join.html">joining TUG</a> or <a href="/usergroups.html">another
+TeX user group</a>, to support these publications, conferences, and
+other TeX projects.
+
+<p>
+\end{blurb}
+
+\issue{23}{2}{74}{2002}{}{<i>Formatting Information</i> by Peter Flynn}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 23:2 as one pdf (2.3mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb23-2/tb74complete.pdf}
+  {}
+  {}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1}
+        {/TUGboat/tb23-2/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb23-2/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {113}
+        {/TUGboat/tb23-2/titlepage.pdf}
+
+\capsule{}%subsec
+        {Formatting information}
+        {Barbara~Beeton}
+        {{Editorial Comments}}
+        {}
+        {114}
+        {/TUGboat/tb23-2/tb74beet.pdf}
+
+
+\capsule{}%subsec
+        {Formatting information}
+        {Peter~Flynn}
+        {Formatting information: A~beginner's introduction to typesetting with \LaTeX~}
+        {}
+        {115-237}
+        {https://ctan.org/pkg/beginlatex/}
+        {(<a href="/TUGboat/tb23-2/tb74flynn.pdf">as printed in this TUGboat</a>)}
+        {}
+
+
+%THEcategory{News \& \\ Announcements}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {Calendar}
+        {}
+        {238-239}
+        {/calendar.html}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {{\acro{TUG}\,2004 Announcement}}
+        {}
+        {c3}
+        {/TUGboat/tb23-2/cover3.pdf}
+        {(see also <a href="/tug2004/">TUG2004 page</a>)}
+        {}
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {239-239}
+        {}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {240-240}
+        {/consultants.html}

@@ -1,0 +1,270 @@
+% $Id$
+
+\issue{16}{1}{46}{March 1995}{}{}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 16:1 as one pdf (2.9mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb16-1/tb46complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1}
+        {/TUGboat/tb16-1/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb16-1/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {1}
+        {/TUGboat/tb16-1/titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {2}
+        {/TUGboat/tb16-1/tb46edit.pdf}
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {3-4}
+        {URL}
+
+\capsule{}%subsec
+        {}%replace|Conference Notes
+        {Barbara Beeton}
+        {Euro{\TeX}94 Contest Answers}
+        {}
+        {4-4}
+        {/TUGboat/tb16-1/tb46beet-contest.pdf}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Christina~Thiele \and Michel~Goossens}
+        {Opening words}
+        {}
+        {5-7}
+        {/TUGboat/tb16-1/tb46pres.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {8-8}
+        {/TUGboat/tb16-1/tb46beet.pdf}
+        {Apology to our readers\\
+Old faces, new faces\\
+{MetaPost} goes public}
+	{}
+
+
+%THEcategory{Software \& Tools}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Michael~Jaegermann}
+        {Making {\tt MakeTeXPK} safer for {Unix} installations}
+        {}
+        {9-12}
+        {/TUGboat/tb16-1/tb46jaeg.pdf}
+
+
+\capsule{}%subsec
+        {Software \& Tools}%replace|Hyphenation
+        {Barbara~Beeton}
+        {Hyphenation exception log}
+        {}
+        {12-17}
+        {/TUGboat/tb16-1/tb46hyf.pdf}
+
+
+%THEcategory{Philology}
+
+
+\capsule{}%subsec
+        {Philology}
+        {Claudio~Beccari}
+        {Configuring {\TeX} or {\LaTeX} for typesetting in several languages}
+        {}
+        {18-30}
+        {/TUGboat/tb16-1/tb46bec1.pdf}
+
+
+\capsule{}%subsec
+        {Philology}
+        {Claudio~Beccari, Radu~Oprea \and Elena Tulei}
+        {How to make a  foreign language pattern file: {Romanian}}
+        {}
+        {30-41}
+        {/TUGboat/tb16-1/tb46bec2.pdf}
+
+
+\capsule{}%subsec
+        {Philology}
+        {Christina~Thiele}
+        {{\TeX} and {Linguistics}}
+        {}
+        {42-44}
+        {/TUGboat/tb16-1/tb46ling.pdf}
+
+
+%THEcategory{Font Forum}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Alan~Hoenig}
+        {Introducing {\MP}}
+        {}
+        {45-45}
+        {/TUGboat/tb16-1/tb46hoen.pdf}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Yannis~Haralambous}
+        {Some {\MF} techniques}
+        {}
+        {46-53}
+        {/TUGboat/tb16-1/tb46harm.pdf}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Petr~Ol\v{s}\'ak}
+        {The program {\tt a2ac}\Dash {Font} handling on the {\PS} level}
+        {}
+        {54-59}
+        {/TUGboat/tb16-1/tb46olsa.pdf}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Basil~Malyshev}
+        {Problems of the conversion of  {\MF} fonts to {\PS} {Type}~1}
+        {}
+        {60-68}
+        {/TUGboat/tb16-1/tb46malyPT.pdf}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Basil~Malyshev \and Michel~Goossens}
+        {Partial font embedding utilities for {\PS} {Type}-1 fonts}
+        {}
+        {69-77}
+        {/TUGboat/tb16-1/tb46malyFL.pdf}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Alan~Jeffrey}
+        {Tight setting with {\TeX}}
+        {}
+        {78-80}
+        {/TUGboat/tb16-1/tb46jeff.pdf}
+
+
+%THEcategory{\LaTeX}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Shinsaku~Fujita}
+        {XYMTeX for drawing chemical structural  formulas}
+        {}
+        {80-88}
+        {/TUGboat/tb16-1/tb46fuji.pdf}
+
+
+%THEcategory{News \&\\Announcements}
+
+
+\capsule{}%subsecnn
+        {News \&\\Announcements}
+        {}
+        {Calendar}
+        {}
+        {89-90}
+        {/calendar.html}
+
+
+\capsule{}%subsec
+        {News \&\\Announcements}
+        {Mimi~Burbank}
+        {Production notes}
+        {}
+        {90-91}
+        {/TUGboat/tb16-1/tb46prod-coming.pdf}
+
+
+\capsule{}%subsecnn
+        {News \&\\Announcements}
+        {}
+        {Coming next issue}
+        {}
+        {91-91}
+        {/TUGboat/tb16-1/tb46prod-coming.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {92-92}
+        {/instmem.html}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {{TUG} membership application}
+        {}
+        {93-93}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {94-94}
+        {/consultants.html}

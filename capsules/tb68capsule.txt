@@ -1,0 +1,326 @@
+% $Id$
+
+\issue{21}{3}{68}{September 2000}{/tug2000/}{TUG 2000 Proceedings (Oxford)}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 21:3 as one pdf (5.2mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb21-3/tb68complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Cover}
+        {}
+        {c1}
+        {/TUGboat/tb21-3/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb21-3/cover2.pdf}
+
+\capsule{}%subsec
+        {}%replace|Conference Notes
+        {Robin~Fairbairns}
+        {{Editorial Comments\Dash  TUG 2000}}
+        {}
+        {155-156}
+        {/TUGboat/tb21-3/tb68fair.pdf}
+
+
+\capsule{}%subsecnn
+        {}%replace|Conference Notes
+        {}
+        {{TUG 2000 Program}}
+        {}
+        {157-158}
+        {/TUGboat/tb21-3/tb68prog.pdf}
+
+
+%THEcategory{Talks}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Software \& Tools
+        {Benjamin~Bayart}
+        {The description language chosen  for {FDNTeX}}
+        {}
+        {159-175}
+        {/TUGboat/tb21-3/tb68bay.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Electronic Documents
+        {Barbara~Beeton}
+        {{Unicode and math, a combination whose time has come\Dash Finally!}}
+        {}
+        {176-185}
+        {/TUGboat/tb21-3/tb68beet.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Abstracts
+        {Alexander~Berdnikov, Yury~Yarmola, Olga~Lapko,  \and Andrew~Janishewsky}
+        {{Some experience in converting LH Fonts from {\MF} to Type~1 format [Abstract]}}
+        {}
+        {186-186}
+        {/TUGboat/tb21-3/tb68berd2.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Methods
+        {W\l{}odek~Bzyl}
+        {Typesetting {\TeX} documents containing  computer code}
+        {}
+        {187-192}
+        {/TUGboat/tb21-3/tb68bzyl.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Electronic Documents
+        {David~Carlisle}
+        {xmltex: A non validating (and not 100\% conforming) namespace aware XML parser implemented in TeX}
+        {}
+        {193-199}
+        {/TUGboat/tb21-3/tb68carl.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Abstracts
+        {Donald~DeLand}
+        {{Developing interactive, Web-based  courseware [Abstract]}}
+        {}
+        {200-200}
+        {/TUGboat/tb21-3/tb68dela.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Bibliographies
+        {Michael~Downes}
+        {The {\tt amsrefs} {\LaTeX} package and  the {\tt amsxport} {BibTeX} style}
+        {}
+        {201-209}
+        {/TUGboat/tb21-3/tb68down.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Methods
+        {Jonathan~Fine}
+        {Line breaking and page breaking}
+        {}
+        {210-221}
+        {/TUGboat/tb21-3/tb68fine.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Electronic Documents
+        {Michel~Goossens \and Sebastian~Rahtz}
+        {{Passive\TeX}:  from {XML} to {PDF}}
+        {}
+        {222-234}
+        {/TUGboat/tb21-3/tb68goos.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Software \& Tools
+        {Pedro~Palao~Gostanza}
+        {Fast scanners and self-parsing  in {\TeX}}
+        {}
+        {235-242}
+        {/TUGboat/tb21-3/tb68gost.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Output Devices
+        {Hirotsugu~Kakugawa}
+        {{A device-independent \acro{DVI} interpreter library for various~output devices}}
+        {}
+        {243-249}
+        {/TUGboat/tb21-3/tb68kaku.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Abstracts
+        {M.~Y.~Kolodin, O.~V.~Eterevksy, O.~G.~Lapko, \and I.~A.~Makhovaya}
+        {``Russian style'' with {\LaTeX} and  {\ssf babel}: What does it look like and~how~does it work        [Abstract]}
+        {}
+        {250-250}
+        {/TUGboat/tb21-3/tb68kolo.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Graphics
+        {Alex~Kostin and Michael~Vulis}
+        {{Mixing {\TeX} \& PostScript:  The {GeX} model}}
+        {}
+        {251-264}
+        {/TUGboat/tb21-3/tb68kost.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Abstracts
+        {Michel~Lavaud}
+        {{The {As\TeX} Assistant and Navigator [Abstract]}}
+        {}
+        {265-265}
+        {/TUGboat/tb21-3/tb68lava.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|\LaTeX
+        {Bernice~Sacks~Lipkin}
+        {{\LaTeX} and the personal database}
+        {}
+        {266-277}
+        {/TUGboat/tb21-3/tb68lipk.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|\LaTeX
+        {Frank~Mittelbach}
+        {{Formatting documents with floats:  A new algorithm for~{\LaTeXe}}}
+        {}
+        {278-290}
+        {/TUGboat/tb21-3/tb68mittel.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Abstracts
+        {Timothy~Murphy}
+        {{The Penrose notation:  a {\LaTeX} challenge [Abstract]}}
+        {}
+        {291-291}
+        {/TUGboat/tb21-3/tb68murp.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Software \& Tools
+        {Apostolos~Syropoulos \and Richard W.~D.~Nickalls}
+        {{A Perl port of the mathsPIC~graphics package}}
+        {}
+        {292-297}
+        {/TUGboat/tb21-3/tb68syro.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Macros
+        {Marina~Yu.~Nikulina \and Alexander~S.~Berdnikov}
+        {Chess macros  for chess~games and puzzles}
+        {}
+        {298-302}
+        {/TUGboat/tb21-3/tb68niku.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Abstracts
+        {John~Plaice}
+        {Omega version 2 [Abstract]}
+        {}
+        {303-303}
+        {/TUGboat/tb21-3/tb68plai.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Abstracts
+        {Philip~Taylor \and Ji\v{r}\'\i{}~Zlatu\v{s}ka}
+        {The {NTS} project: From conception to~birth~[Abstract]}
+        {}
+        {304-304}
+        {/TUGboat/tb21-3/tb68tayl.pdf}
+
+
+%THEcategory{News \& \\ Announcements}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {Calendar}
+        {}
+        {306-307}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {\acro{TUG} 2001 {Announcement}}
+        {}
+        {154-154}
+        {/tug2001/announcement.html}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {Miscellaneous photos}
+        {}
+        {305-305}
+        {/TUGboat/tb21-3/page305.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {\acro{TUG} 2000 {Attendees}}
+        {}
+        {308-309}
+        {/TUGboat/tb21-3/tb68part.pdf}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {307-307}
+        {/TUGboat/tb21-3/tb68part.pdf}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {TUG membership application}
+        {}
+        {310-310}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {311-311}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{IBM techexplorer}}
+        {}
+        {312-312}
+        {/TUGboat/tb21-3/ibm2000.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Blue Sky Research}}
+        {}
+        {c3}
+        {URL}

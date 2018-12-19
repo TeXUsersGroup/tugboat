@@ -1,0 +1,369 @@
+% $Id$
+
+\issue{20}{4}{65}{December 1999}{}{}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 20:4 as one pdf (2.1mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb20-4/tb65complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Cover}
+        {}
+        {c1}
+        {/TUGboat/tb20-4/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb20-4/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {337}
+        {/TUGboat/tb20-4/titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {338}
+        {/TUGboat/tb20-4/tb65edit.pdf}
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {339-340}
+        {URL}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Mimi~Jett}
+        {{From the President}}
+        {}
+        {341-341}
+        {/TUGboat/tb20-4/tb65jett.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {342-343}
+        {/TUGboat/tb20-4/tb65beet.pdf}
+        {On being a fossil\\
+{Erratum: Mimi~Jett's term of office}\\
+{Gutenberg: The man of the millennium}\\
+{Sebastian Rahtz leaves the {\TUB} production team}\\
+{International news: Greek, Russian and Vietnamese groups}\\
+{Clarification of the \acro{CTAN} ``nonfree'' classification}\\
+{The origin of the @~sign}\\
+{Communication~by flags}}
+        {}
+
+
+\capsule{}
+        {Typography}
+        {Peter~Flynn}
+        {Typographers' Inn}
+        {}
+        {344-347}
+        {/TUGboat/tb20-4/tb65flyn.pdf}
+
+
+%THEcategory{Font Forum}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Vladim\'\i r~Koutn\'y}
+        {{TrueType fonts in \TeX}}
+        {}
+        {347-348}
+        {/TUGboat/tb20-4/tb65kout.pdf}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {V\'{\i}t Z\'yka}
+        {The semaphore alphabet}
+        {}
+        {348-350}
+        {/TUGboat/tb20-4/tb65zyka.pdf}
+
+
+%THEcategory{Software \& Tools}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Brian~E.~Travis}
+        {{The Paper Path: \acro{XML} to paper using \TeX\acro{ML}}}
+        {}
+        {350-356}
+        {/TUGboat/tb20-4/tb65trav.pdf}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Igor~I.~Strokov}
+        {{A \acro{WYSIWYG} {\TeX} implementation}}
+        {}
+        {356-359}
+        {/TUGboat/tb20-4/tb65strok.pdf}
+
+
+%THEcategory{Book Reviews}
+
+\capsule{}%subsec
+        {Book Reviews}
+        {Bill~Casselman}
+        {{{\it The {\LaTeX} Graphics Companion\/} and {\it {\TeX} Unbound}\Dash A review of two books}}
+        {}
+        {359-364\offset{.5}}
+        {/TUGboat/tb20-4/tb65reviews.pdf}
+        {{\it The {\LaTeX} Graphics Companion}, by Michel~Goossens, Sebastian~Rahtz, and Frank~Mittelbach\\
+{\it {\TeX}~Unbound: {\LaTeX} \& {\TeX} Strategies for Fonts, Graphics, \& More}, by Alan Hoenig}
+        {}
+
+
+\capsule{}%subsec
+        {Book Reviews}
+        {Peter~Flynn}
+        {{{\it Digital Typography}, by Donald Knuth}}
+        {}
+        {364-366}
+        {/TUGboat/tb20-4/tb65reviews.pdf}
+
+
+%THEcategory{Errata}
+
+
+\capsule{}%subsec
+        {Errata}%replace|General Delivery
+        {Jonathan~Fine}
+        {{The good name of {\TeX} (\tubissue 20(2), p.~93)}}
+        {}
+        {366-366}
+        {/TUGboat/tb20-4/tb65errat.pdf}
+
+
+\capsule{}%subsec
+        {Errata}%replace|General Delivery
+        {Christina~Thiele}
+        {{\acro{TUG}\,99 (\tubissue 20(3))}}
+        {}
+        {366-366\offset{.5}}
+        {/TUGboat/tb20-4/tb65errat.pdf}
+
+
+%THEcategory{Resources}
+
+
+\capsule{}%subsec
+        {Resources}
+        {{Jim~Hef{}feron}}
+        {{A {CTAN} search page}}
+        {}
+        {367-367}
+        {/TUGboat/tb20-4/tb65heff.pdf}
+
+
+%THEcategory{Hints \& Tricks}
+
+
+\capsule{}%subsec
+        {Hints \& Tricks}
+        {Jeremy~Gibbons}
+        {"Hey\Dash it works!"}
+        {}
+        {367-370\offset{.5}}
+        {/TUGboat/tb20-4/tb65gibb.pdf}
+        {Ornamental boxes\\
+Knotwork}
+	{}
+
+\capsule{}%subsec
+        {Hints \& Tricks}
+        {Christina~Thiele}
+        {The treasure chest}
+        {}
+        {370-374}
+        {/TUGboat/tb20-4/tb65chest.pdf}
+
+
+%THEcategory{{\LaTeX}}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {{\LaTeX}\CONNECT{}project\CONNECT{}team}
+        {{{\LaTeX} News, Issue 12,  December 1999}}
+        {}
+        {375-375}
+        {/TUGboat/tb20-4/ltnews12.pdf}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {Bruce~Shawyer}
+        {{Scaled pictures in \LaTeX}}
+        {}
+        {376-377}
+        {/TUGboat/tb20-4/tb65shaw.pdf}
+
+
+%THEcategory{Tutorial}
+
+
+\capsule{}%subsec
+        {Tutorial}
+        {Philip~Taylor}
+        {{Book design for {\TeX} users:          Part 2: Practice}}
+        {}
+        {378-389}
+        {/TUGboat/tb20-4/tb65tay2.pdf}
+
+
+%THEcategory{Report}
+
+
+\capsule{}%subsec
+        {Report}%replace|Methods
+        {Ross~Moore}
+        {{Preparation of documents for multiple          modes of delivery\Dash Notes from TUG'99}}
+        {}
+        {389-394}
+        {/TUGboat/tb20-4/tb65moore.pdf}
+
+
+%THEcategory{Abstracts}
+
+
+\capsule{}%subsecnn
+        {Abstracts}
+        {}
+        {{{\sl Les Cahiers GUTenberg}, Contents of double issue~33/34  (November~1999)}}
+        {}
+        {394-395}
+        {/TUGboat/tb20-4/tb65summ.pdf}
+
+
+\capsule{}%subsecnn
+        {Abstracts}
+        {}
+        {{Euro\TeX\,'99 Proceedings\Dash Paperless \TeX}}
+        {}
+        {395-398}
+        {/TUGboat/tb20-4/tb65summ.pdf}
+
+
+%THEcategory{News \& \\ Announcements}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {Calendar}
+        {}
+        {399-400}
+        {/calendar.html}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {{TUG\,2000\Dash The 21st Annual Conference}}
+        {}
+        {401-401}
+        {/TUGboat/tb20-4/tug2000.pdf}
+
+
+%THEcategory{Late-Breaking\\News}
+
+\capsule{}%subsec
+        {Late-Breaking\\News}
+        {Mimi~Burbank}
+        {Production notes}
+        {}
+        {400-400}
+        {/TUGboat/tb20-4/tb65calendar.pdf}
+
+%THEcategory{Cartoon}
+
+\capsule{}%subsec
+        {Cartoon}
+        {Roy~Preston}
+        {Download free fonts!}
+        {}
+        {340-340}
+        {/TUGboat/tb20-4/freefonts.pdf}
+
+%THEcategory{TUG Business}
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {402-402}
+        {/instmem.html}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Statement of ownership}
+        {}
+        {403-403}
+        {URL}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {403-403\offset{.5}}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Y\&Y Inc.}}
+        {}
+        {404-404}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Blue Sky Research}}
+        {}
+        {c3}
+        {URL}

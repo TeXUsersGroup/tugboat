@@ -1,0 +1,511 @@
+% $Id$
+
+\issue{2}{1}{2}{February 1981}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 2:1 as one pdf (6.1mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb02-1/tb02complete.pdf}
+        {}
+        {}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {1}
+        {/TUGboat/tb02-1/tb02titlepage.pdf}
+        {}
+        {}
+
+
+\capsulenoprint{}%subsecnn
+        {}
+        {}
+        {Addresses of TUGboat authors}
+        {}
+        {2-2}
+        {/TUGboat/tb02-1/tb02titlepage.pdf}
+        {}
+        {}
+
+
+%THEcategory{General Delivery}
+
+\capsule{}
+        {General Delivery}
+        {}
+        {}
+        {}
+        {3-10}
+        {/TUGboat/tb02-1/tb02gendel.pdf}
+        {}
+        {}
+
+\capsule{}%subsec
+        {General Delivery}
+        {Robert~Welland}
+        {{Site Coordinators}}
+        {}
+        {3-3}
+        {/TUGboat/tb02-1/tb02gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Richard~Palais}
+        {Chairman's report}
+        {}
+        {3-5}
+        {/TUGboat/tb02-1/tb02gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Robert~Morris}
+        {{Report on the January 1981    TUG Steering Committee meeting}}
+        {}
+        {5-6}
+        {/TUGboat/tb02-1/tb02gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Samuel~B.~Whidden}
+        {{1980 TUG Treasurer's report}}
+        {}
+        {6-6}
+        {/TUGboat/tb02-1/tb02gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Robert~Morris}
+        {{Informal TUG session}}
+        {}
+        {6-7}
+        {/TUGboat/tb02-1/tb02gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Robert~Morris}
+        {A position on {\TeX} maintenance}
+        {}
+        {7-8}
+        {/TUGboat/tb02-1/tb02gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Samuel~B.~Whidden}
+        {{\TeX} support}
+        {}
+        {9-10}
+        {/TUGboat/tb02-1/tb02treas.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Scott~Kim}
+        {{Update on Pascal \MF}}
+        {}
+        {10-10}
+        {/TUGboat/tb02-1/tb02kim.pdf}
+        {}
+        {}
+
+
+%THEcategory{Interface Software}
+
+
+\capsule{}%subsec
+        {Interface Software}%replace|Output Devices
+        {David~Fuchs}
+        {Erratum: {The format of {\TeX}'s DVI files}}
+        {}
+        {11-11}
+        {/TUGboat/tb02-1/tb02fuchszab.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Interface Software}%replace|Software \& Tools
+        {Ignacio~Zabala}
+        {{\TeX-Pascal and Pascal compilers    (a status report)}}
+        {}
+        {11-12}
+        {/TUGboat/tb02-1/tb02fuchszab.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Interface Software}%replace|Fonts
+        {David~Fuchs}
+        {{{\TeX} Font Metric files}}
+        {}
+        {12-16}
+        {/TUGboat/tb02-1/tb02fuchstfm.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Interface Software}%replace|Software \& Tools
+        {Phil~Sherrod \and Alan~Wright}
+        {{\TeX} support programs}
+        {}
+        {17-19}
+        {/TUGboat/tb02-1/tb02sherrod.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Interface Software}%replace|Software \& Tools
+        {C.\thinspace L.~Lawson, I.~Zabala \and M.~D\'\i az}
+        {Brief functional characterization of the procedures in the {\TeX}/Pascal compilation~unit, {\tt SYSDEP}}
+        {}
+        {20-31}
+        {/TUGboat/tb02-1/tb02lawbrief.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Interface Software}%replace|Software \& Tools
+        {C.\thinspace L.~Lawson, I.~Zabala \and M.~D\'\i az}
+        {{Detailed specifications of procedures in the {\TeX}/Pascal compilation unit, {\tt SYSDEP}}}
+        {}
+        {32-47}
+        {/TUGboat/tb02-1/tb02lawdetail.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Interface Software}%replace|Output Devices
+        {Barry~Doherty}
+        {Output devices: {A new column}}
+        {}
+        {48-48}
+        {/TUGboat/tb02-1/tb02site.pdf}
+        {}
+        {}
+
+
+%THEcategory{Site Reports}
+
+
+\capsule{}%subsecnn
+        {Site Reports}
+        {}
+        {}
+        {}
+        {48-52}
+        {/TUGboat/tb02-1/tb02site.pdf}
+        {}
+        {}
+
+
+%THEsite{IBM Group}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Eagle~Berns}
+        {{Status of {\TeX} on the Stanford 370/3033 systems}}
+        {}
+        {48-48\offset{.5}}
+        {/TUGboat/tb02-1/tb02site.pdf}
+        {}
+        {}
+
+
+%THEsite{DEC 20}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Barry~Doherty \and Barbara~Beeton}
+        {{AMS site report}}
+        {}
+        {48-49}
+        {/TUGboat/tb02-1/tb02site.pdf}
+        {}
+        {}
+
+
+%THEsite{VAX/UNIX}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Janet~Incerpi}
+        {{The status of {\VAX}/{\TeX} at Brown}}
+        {}
+        {49-50}
+        {/TUGboat/tb02-1/tb02site.pdf}
+        {}
+        {}
+
+
+%THEsite{CDC Cyber}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {T.\thinspace D.~Hodge}
+        {{Report from the North Star, or, {\TeX} at the University of Minnesota}}
+        {}
+        {51-51}
+        {/TUGboat/tb02-1/tb02site.pdf}
+        {}
+        {}
+
+
+%THEsite{Univac 1100}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Ralph~Stromquist}
+        {{{\TeX} is available for Univac 1100 systems}}
+        {}
+        {51-51\offset{.5}}
+        {/TUGboat/tb02-1/tb02site.pdf}
+        {}
+        {}
+
+
+%THEsite{Nord 100}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Helge~Totland}
+        {{Report on the use of {\TeX} at Computas A/S, Norway; Nord 100 computer: 16 bit ``big mini''}}
+        {}
+        {51-52}
+        {/TUGboat/tb02-1/tb02site.pdf}
+        {}
+        {}
+
+
+%THEcategory{Warnings \& Limitations}
+
+
+\capsule{}%subsec
+        {Warnings \& Limitations}
+        {Barbara~Beeton}
+        {Disappearing digits; {Undisciplined uppercase}}
+        {}
+        {53-53}
+        {/TUGboat/tb02-1/tb02beet.pdf}
+        {}
+        {}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Barbara~Beeton}
+        {How to prepare a file for publication in {\TUB}}
+        {}
+        {53-54}
+        {/TUGboat/tb02-1/tb02beet.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Max~D\'\i az}
+        {{\TeX} macro package}
+        {}
+        {55-55}
+        {/TUGboat/tb02-1/tb02diaz.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Arthur~M.~Keller}
+        {Anatomy of a {\TeX} macro package}
+        {}
+        {56-86}
+        {/TUGboat/tb02-1/tb02kell.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Lynne~A.~Price \and Patrick~Milligan}
+        {{{\tt NOFILL} program with Pascal source}}
+        {}
+        {87--97}
+        {/TUGboat/tb02-1/tb02pricenofill.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Lynne~A.~Price}
+        {List macros}
+        {}
+        {98-110}
+        {/TUGboat/tb02-1/tb02pricelist.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Lynne~A.~Price}
+        {Table of contents macros}
+        {}
+        {111-118}
+        {/TUGboat/tb02-1/tb02pricetoc.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Patrick~Milligan \and Lynne~A.~Price}
+        {Utility macros}
+        {}
+        {119-121}
+        {/TUGboat/tb02-1/tb02mill.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Lynne~A.~Price}
+        {Hebrew letter (with source)}
+        {}
+        {122-124}
+        {/TUGboat/tb02-1/tb02pricehebrew.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Lynne~A.~Price}
+        {Two slides}
+        {}
+        {125-126}
+        {/TUGboat/tb02-1/tb02priceslides.pdf}
+        {}
+        {}
+
+
+%THEcategory{Letters}
+
+\capsule{}%subsec
+        {Letters}
+        {}
+        {}
+        {}
+        {127}
+        {/TUGboat/tb02-1/tb02letters.pdf}
+        {}
+        {}
+
+\capsule{}%subsec
+        {Letters}
+        {David~Eck}
+        {Report from an early {\AmSTeX} user}
+        {}
+        {127\offset{.5}}
+        {/TUGboat/tb02-1/tb02letters.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Letters}
+        {Graeme Hirst}
+        {Untitled}
+        {}
+        {127\offset{.8}}
+        {/TUGboat/tb02-1/tb02letters.pdf}
+        {}
+        {}
+
+
+%THEcategory{Miscellaneous}
+
+
+\capsule{}%subsecnn
+        {Miscellaneous}
+        {}
+        {Appendix A.\ \ {Output samples from a paper by David Eck}}
+        {}
+        {128-135}
+        {/TUGboat/tb02-1/tb02eck.pdf}
+        {}
+        {}
+
+\capsule{}%subsecnn
+        {Miscellaneous}
+        {}
+        {TeX Workshop Announcement}
+        {}
+        {\offset{136}}
+        {/TUGboat/tb02-1/tb02workshop.pdf}
+        {}
+        {}
+
+
+%THEcategory{Supplements}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {{\TeX} Errata}
+        {}
+        {991\offset{.5}}
+        {URL}
+        {}
+        {}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {TUG membership list}
+        {}
+        {\offset{992.5}}
+        {URL}
+        {}
+        {}

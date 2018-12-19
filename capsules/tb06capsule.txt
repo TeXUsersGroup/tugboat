@@ -1,0 +1,434 @@
+% $Id$
+
+\issue{3}{2}{6}{October 1982}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue as one pdf (2.7mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb03-2/tb06complete.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses of officers, authors and others}
+        {}
+        {2-2}
+        {URL}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {}%replace|News \& Announcements
+        {}
+        {Official announcements}
+        {}
+        {3-3}
+        {/TUGboat/tb03-2/tb06announce.pdf}
+        {}
+        {}
+
+
+%THEcategory{General Delivery}{/TUGboat/tb03-2/tb06gendel.pdf}
+
+\capsule{}
+        {General Delivery}
+        {}
+        {}
+        {}
+        {4-7}
+        {/TUGboat/tb03-2/tb06gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {{The {\TeX} logo: An important note}}
+        {}
+        {4-4}
+        {/TUGboat/tb03-2/tb06gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Susan~Plass}
+        {{Report on business meetings, TUG Summer meeting,\newline Stanford University, July 25--27, 1982}}
+        {}
+        {4-5}
+        {/TUGboat/tb03-2/tb06gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {{TUG Summer meeting and {\TeX}82 short course,\newline Stanford University, July 25--30, 1982 --- Program and Attendees}}
+        {}
+        {5-7}
+        {/TUGboat/tb03-2/tb06gendel.pdf}
+        {}
+        {}
+
+
+%THEsubheadi{ Program\\5-5}
+
+
+%THEsubheadi{ Attendees\\5-7}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Pierre~A.~MacKay}
+        {An informal interchange format for {\TeX} files}
+        {}
+        {7-8}
+        {/TUGboat/tb03-2/tb06mackay.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Ron~Whitney}
+        {{Introduction to {\TeX} and TUG for new users}}
+        {}
+        {9-12}
+        {/TUGboat/tb03-2/tb06whitney.pdf}
+        {}
+        {}
+
+
+%THEcategory{Software}{/TUGboat/tb03-2/tb06software.pdf}
+
+
+\capsule{}
+        {Software}
+        {}
+        {}
+        {}
+        {13-19}
+        {/TUGboat/tb03-2/tb06software.pdf}
+        {}
+        {}
+
+\capsule{}%subsecnn
+        {Software}
+        {}
+        {{\TeX}82 memory structure}
+        {}
+        {13}
+        {/TUGboat/tb03-2/tb06software.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Software}
+        {David~Fuchs}
+        {{The format of {\TeX}'s DVI files}}
+        {}
+        {13-19\offset{.5}}
+        {/TUGboat/tb03-2/tb06software.pdf}
+        {}
+        {}
+
+
+%THEcategory{Output Devices}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Rilla~J.~Thedford}
+        {Output devices}
+        {}
+        {20-20}
+        {/TUGboat/tb03-2/tb06site.pdf}
+        {}
+        {}
+
+
+%THEcategory{Site Reports}{/TUGboat/tb03-2/tb06site.pdf}
+
+\capsule{}
+        {Site Reports}
+        {}
+        {}
+        {}
+        {20-23}
+        {/TUGboat/tb03-2/tb06site.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {David~Fuchs}
+        {{News from Stanford}}
+        {}
+        {20-21}
+        {/TUGboat/tb03-2/tb06site.pdf}
+        {}
+        {}
+
+
+%THEsite{IBM Group}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Susan~Plass}
+        {Fixes to known bugs in {\TeX}370}
+        {}
+        {21-22}
+        {/TUGboat/tb03-2/tb06site.pdf}
+        {}
+        {}
+
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Paul~Grosso}
+        {{{\TeX} installation at the University of  Michigan}}
+        {}
+        {22-23}
+        {/TUGboat/tb03-2/tb06site.pdf}
+        {}
+        {}
+
+
+%THEsite{VAX/VMS}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Monte~C.~Nichols \and David~Kellerman}
+        {{{\VAX}/VMS site report}}
+        {}
+        {23-23}
+        {/TUGboat/tb03-2/tb06site.pdf}
+        {}
+        {}
+
+
+%THEcategory{``{\sixbf small}'' \TeX}
+
+
+\capsule{}%subsec
+        {``small'' \TeX}
+        {Lance~Carnes}
+        {Editor's introduction}
+        {}
+        {24-24}
+        {/TUGboat/tb03-2/tb06carnes.pdf}
+        {}
+        {}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Sao~Khai~Mong}
+        {{A Fortran version of {\MF}}}
+        {}
+        {25-25}
+        {/TUGboat/tb03-2/tb06mbj.pdf}
+        {}
+        {}
+
+
+%THEcategory{Warnings \& Limitations}
+
+
+\capsule{}%subsec
+        {Warnings \& Limitations}
+        {Barbara~Beeton}
+        {Charting the generation gulf}
+        {}
+        {25-26}
+        {/TUGboat/tb03-2/tb06mbj.pdf}
+        {}
+        {}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Calvin~Jackson}
+        {Font codes in popular use}
+        {}
+        {26-26}
+        {/TUGboat/tb03-2/tb06mbj.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Lynne~Price}
+        {Editor's introduction}
+        {}
+        {27-27}
+        {/TUGboat/tb03-2/tb06pricemac.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Macros}
+        {}
+        {{\TUB} macro index}
+        {}
+        {27-28}
+        {/TUGboat/tb03-2/tb06pricemac.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Barbara~Beeton}
+        {Multi-column output format}
+        {}
+        {28-33}
+        {/TUGboat/tb03-2/tb06beet.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Leslie~Lamport}
+        {Some {\TeX} programming hacks}
+        {}
+        {34-36}
+        {/TUGboat/tb03-2/tb06lamport.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Barbara~Beeton}
+        {Unblocking an {\AmSTeX} tape}
+        {}
+        {36-37}
+        {/TUGboat/tb03-2/tb06beetape.pdf}
+        {}
+        {}
+
+
+%THEcategory{Problems}
+
+
+\capsule{}%subsec
+        {Problems}
+        {Mark~Blanford}
+        {Paragraphs in tables}
+        {}
+        {38-38}
+        {/TUGboat/tb03-2/tb06prob.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Problems}
+        {}
+        {Hanging punctuation}
+        {}
+        {38-38\offset{.5}}
+        {/TUGboat/tb03-2/tb06prob.pdf}
+        {}
+        {}
+
+
+%THEcategory{Late-Breaking News}
+
+
+\capsule{}%subsec
+        {Late-Breaking News}
+        {Samuel~B.~Whidden}
+        {{TUG financial reports}}
+        {}
+        {39-41}
+        {/TUGboat/tb03-2/tb06treas.pdf}
+        {}
+        {}
+
+\capsule{}
+        {Late-Breaking News}
+        {}
+        {TUG 1982 Treasurer's Report}
+        {}
+        {39-40}
+        {/TUGboat/tb03-2/tb06treas.pdf}
+        {}
+        {}
+
+%THEsubheadi{ {TUG Treasurer's report}\\39-40}
+
+%THEsubheadi{ {1983 TUG Budget}\\40-41}
+
+\capsule{}
+        {Late-Breaking News}
+        {}
+        {TUG 1983 Budget}
+        {}
+        {40-41}
+        {/TUGboat/tb03-2/tb06treas.pdf}
+        {}
+        {}
+
+%THEcategory{Miscellaneous}
+
+
+\capsule{}%subsecnn
+        {Miscellaneous}
+        {}
+        {Membership application and order form}
+        {}
+        {\offset{991}}
+        {/join.html}
+        {}
+        {}
+
+
+%THEcategory{Supplements}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {{{\TeX} and {\MF} Errata}}
+        {}
+        {\offset{992}}
+        {URL}
+        {}
+        {}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {{TUG membership list}}
+        {}
+        {\offset{992.5}}
+        {URL}
+        {}
+        {}

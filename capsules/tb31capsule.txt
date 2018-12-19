@@ -1,0 +1,415 @@
+% $Id$
+
+\issue{12}{1}{31}{March 1991}{/tug1996/}{TUG 1990 Proceedings (Cork)}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 12:1 as one pdf (16mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb12-1/tb31complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1}
+        {/TUGboat/tb12-1/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb12-1/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {1}
+        {/TUGboat/tb12-1/tb31titlepage.pdf}
+
+
+%THEcategory{Introduction}
+
+
+\capsule{}%subsec
+        {Introduction}
+        {Barbara~Beeton}
+        {Introduction}
+        {}
+        {3-4}
+        {/TUGboat/tb12-1/tb31beet.pdf}
+
+
+%THEcategory{Databases and Hypertext\\ and their Relationship\\ with {\TeX}}
+
+
+\capsule{}%subsec
+        {Databases and Hypertext\\ and their Relationship\\ with {\TeX}}%replace|Software \& Tools
+        {Erich~Neuwirth}
+        {Quick and dirty databases with nice output:  AWK and {\TeX}}
+        {}
+        {5-7}
+        {/TUGboat/tb12-1/tb31eneuwirth.pdf}
+
+
+\capsule{}%subsec
+        {Databases and Hypertext\\ and their Relationship\\ with {\TeX}}%replace|Electronic Documents
+        {Christine Detig}
+        {{\TeX} \& hypertext\Dash  The future of electronic publishing?}
+        {}
+        {8-12}
+        {/TUGboat/tb12-1/tb31detig.pdf}
+
+
+\capsule{}%subsec
+        {Databases and Hypertext\\ and their Relationship\\ with {\TeX}}%replace|Electronic Documents
+        {Les~Carr, Sebastian~Rahtz \and Wendy~Hall}
+        {Experiments with {\TeX} and hyperactivity}
+        {}
+        {13-20}
+        {/TUGboat/tb12-1/tb31carr.pdf}
+
+
+%THEcategory{User Groups and\\ Dissemination\\ of Information}
+
+
+\capsule{}%subsec
+        {User Groups and\\ Dissemination\\ of Information}%replace|Resources
+        {Johannes~Braams, Victor~Eijkhout \and Nico~Poppelier}
+        {The Dutch national {\LaTeX}~effort}
+        {}
+        {21-24}
+        {/TUGboat/tb12-1/tb31braams.pdf}
+
+
+\capsule{}%subsec
+        {User Groups and\\ Dissemination\\ of Information}%replace|Resources
+        {Adrian~Clark}
+        {Documenting a {\TeX} archive}
+        {}
+        {25-27}
+        {/TUGboat/tb12-1/tb31aclark-archive.pdf}
+
+
+%THEcategory{Typographics:\\ {\AE}sthetics and\\ Practicalities}
+
+
+\capsule{}%subsec
+        {Typographics:\\ {\AE}sthetics and\\ Practicalities}
+        {Thomas~Kneser}
+        {{\LaTeX}-paragraphs floating around figures}
+        {}
+        {28-30}
+        {/TUGboat/tb12-1/tb31kneser.pdf}
+
+
+\capsule{}%subsec
+        {Typographics:\\ {\AE}sthetics and\\ Practicalities}
+        {Victor~Eijkhout}
+        {The document style designer as a separate entity}
+        {}
+        {31-34}
+        {/TUGboat/tb12-1/tb31eijkhout.pdf}
+
+
+\capsule{}%subsec
+        {Typographics:\\ {\AE}sthetics and\\ Practicalities}
+        {Philip Taylor}
+        {Improving the {\ae}sthetics of mixed-font documents}
+        {}
+        {35-44}
+        {/TUGboat/tb12-1/tb31taylor.pdf}
+
+
+\capsule{}%subsec
+        {Typographics:\\ {\AE}sthetics and\\ Practicalities}
+        {Alan~Wittbecker}
+        {ArchiTeX, a preliminary international page pattern maker}
+        {}
+        {45-57}
+        {/TUGboat/tb12-1/tb31wittbecker.pdf}
+
+
+\capsule{}%subsec
+        {Typographics:\\ {\AE}sthetics and\\ Practicalities}
+        {Friedhelm~Sowa}
+        {Integration of graphics into {\TeX}}
+        {}
+        {58-63}
+        {/TUGboat/tb12-1/tb31sowa.pdf}
+
+
+%THEcategory{Expanding Horizons}
+
+
+\capsule{}%subsec
+        {Expanding Horizons}
+        {Timothy~Murphy}
+        {PostScript, QuickDraw, {\TeX}}
+        {}
+        {64-65}
+        {/TUGboat/tb12-1/tb31murphy.pdf}
+
+
+\capsule{}%subsec
+        {Expanding Horizons}
+        {M.P.~Maclenan \and G.M.~Burns}
+        {An approach to drawing circuit diagrams for text books}
+        {}
+        {66-69}
+        {/TUGboat/tb12-1/tb31maclenan.pdf}
+
+
+\capsule{}%subsec
+        {Expanding Horizons}
+        {Olivier~Nicole}
+        {A graphic driver to interface statistical software S and PiCTeX}
+        {}
+        {70-73}
+        {/TUGboat/tb12-1/tb31nicole.pdf}
+
+
+%THEcategory{Late Breaking News}
+
+
+\capsule{}%subsec
+        {Late Breaking News}
+        {Frank~Mittelbach \and Rainer~Sch\"opf}
+        {Towards {\LaTeX}~3.0}
+        {}
+        {74-79}
+        {/TUGboat/tb12-1/tb31mitt.pdf}
+
+
+%THEcategory{Public Domain {\TeX}}
+
+
+\capsule{}%subsec
+        {Public Domain {\TeX}}
+        {Brian~Hamilton~Kelly}
+        {Public-domain,  documented implementations of {\TeX} and {\MF} for VAX/VMS}
+        {}
+        {80-83}
+        {/TUGboat/tb12-1/tb31hamiltonkelly.pdf}
+
+
+%THEcategory{Documentation,\\ Origination,\\ Editing and Markup}
+
+
+\capsule{}%subsec
+        {Documentation,\\ Origination,\\ Editing and Markup}%replace|Electronic Documents
+        {Malcolm~Clark}
+        {Post congress tristesse}
+        {}
+        {84-89}
+        {/TUGboat/tb12-1/tb31mclark.pdf}
+
+
+\capsule{}%subsec
+        {Documentation,\\ Origination,\\ Editing and Markup}%replace|Electronic Documents
+        {Kees~van~der~Laan}
+        {SGML (, {\TeX} and \dots)}
+        {}
+        {90-104}
+        {/TUGboat/tb12-1/tb31laan.pdf}
+
+
+\capsule{}%subsec
+        {Documentation,\\ Origination,\\ Editing and Markup}%replace|Electronic Documents
+        {N.A.F.M.~Poppelier}
+        {SGML and {\TeX} in scientific publishing}
+        {}
+        {105-109}
+        {/TUGboat/tb12-1/tb31poppelier.pdf}
+
+
+\capsule{}%subsec
+        {Documentation,\\ Origination,\\ Editing and Markup}%replace|Macros
+        {Amy~Hendrickson}
+        {Getting {\TeX}nical:  Insights into {\TeX} macro writing techniques}
+        {}
+        {110-110}
+        {/TUGboat/tb12-1/tb31hendrickson.pdf}
+
+
+\capsule{}%subsec
+        {Documentation,\\ Origination,\\ Editing and Markup}%replace|Bibliographies
+        {Reinhard~Wonneberger \and Frank~Mittelbach}
+        {BibTeX reconsidered}
+        {}
+        {111-124}
+        {/TUGboat/tb12-1/tb31wonn.pdf}
+
+
+%THEcategory{Font Design and\\ New Fonts}
+
+
+\capsule{}%subsec
+        {Font Design and\\ New Fonts}
+        {Alan~Hoenig}
+        {Labelling figures in {\TeX} documents}
+        {}
+        {125-128}
+        {/TUGboat/tb12-1/tb31hoenig.pdf}
+
+
+\capsule{}%subsec
+        {Font Design and\\ New Fonts}
+        {Yannis~Haralambous}
+        {Typesetting old german:  Fraktur, Schwabacher, Gotisch~and~initials}
+        {}
+        {129-138}
+        {/TUGboat/tb12-1/tb31hara.pdf}
+
+
+\capsule{}%subsec
+        {Font Design and\\ New Fonts}
+        {M/iche/al /O Searc/oid}
+        {The Irish alphabet}
+        {}
+        {139-148}
+        {/TUGboat/tb12-1/tb31searcoid.pdf}
+
+
+\capsule{}%subsec
+        {Font Design and\\ New Fonts}
+        {Dean~Guenther \and Janene~Winter}
+        {An international phonetic alphabet}
+        {}
+        {149-156}
+        {/TUGboat/tb12-1/tb31guenther.pdf}
+
+
+\capsule{}%subsec
+        {Font Design and\\ New Fonts}
+        {Adrian~F.~Clark}
+        {Practical halftoning with {\TeX}}
+        {}
+        {157-165}
+        {/TUGboat/tb12-1/tb31clark.pdf}
+
+
+%THEcategory{{\TeX} Training and\\ Education: The New User}
+
+
+\capsule{}%subsec
+        {{\TeX} Training and\\ Education: The New User}
+        {Angela Barden}
+        {Some {\TeX} manuals}
+        {}
+        {166-170}
+        {/TUGboat/tb12-1/tb31barden.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Training and\\ Education: The New User}
+        {Konrad Neuwirth}
+        {{\TeX} in schools: Just say no}
+        {}
+        {171-174}
+        {/TUGboat/tb12-1/tb31kneuwirth.pdf}
+
+
+%THEcategory{Announcements}
+
+\capsule{}
+        {Announcements}
+        {}
+        {}
+        {}
+        {175-177}
+        {/TUGboat/tb12-1/tb31announce.pdf}
+
+\capsule{}%subsecnn
+        {Announcements}
+        {}
+        {Calendar}
+        {}
+        {175-175}
+        {/TUGboat/tb12-1/tb31calendar.pdf}
+
+
+\capsule{}%subsecnn
+        {Announcements}
+        {}
+        {Nominations}
+        {}
+        {176-176}
+        {/TUGboat/tb12-1/tb31announce.pdf}
+
+
+\capsule{}%subsec
+        {Announcements}
+        {Ji\v{r}\'\i{} Vesel\'y}
+        {{\TeX} in Czechoslovakia}
+        {}
+        {176-177}
+        {/TUGboat/tb12-1/tb31announce.pdf}
+
+
+\capsule{}%subsec
+        {Announcements}%replace|Software \& Tools
+        {Wayne~Sullivan}
+        {sb{\TeX} and sbMF}
+        {}
+        {177-177}
+        {/TUGboat/tb12-1/tb31announce.pdf}
+
+
+\capsule{}%subsec
+        {Announcements}%replace|Accessibility
+        {T.V.~Raman}
+        {{\TeX} TALK}
+        {}
+        {178-178}
+        {/TUGboat/tb12-1/tb31announce.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {179-181}
+        {/TUGboat/tb12-1/tb31instmem.pdf}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {TUG membership applications}
+        {}
+        {182-183}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+\capsule{}
+        {Advertisements}
+        {}
+        {}
+        {}
+        {184-200}
+        {/TUGboat/tb12-1/tb31ads.pdf}
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {200}
+        {/TUGboat/tb12-1/tb31ads.pdf}

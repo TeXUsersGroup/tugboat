@@ -1,0 +1,555 @@
+% $Id$
+
+\issue{12}{3-4}{33}{December 1991}{/tug1991/}{TUG 1991 Conference Proceedings (Dedham)}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 12:3-4, part 1 as one pdf (9.7mb)}
+        {}
+        {\offset{.03}}
+        {/TUGboat/tb12-3-4/tb33acomplete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 12:3-4, part 2 as one pdf (8.3mb)}
+        {}
+        {\offset{.06}}
+        {/TUGboat/tb12-3-4/tb33bcomplete.pdf}
+
+%THEcategory{{\tenbf Part 1}}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1}
+        {/TUGboat/tb12-3-4/tb33bcover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb12-3-4/tb33bcover2.pdf}
+
+\capsulenoprint{}%subsecnn
+        {TUG 1991 Conference Proceedings Part 1}
+        {}
+        {Title page}
+        {}
+        {349}
+        {/TUGboat/tb12-3-4/tb33atitlepage.pdf}
+
+
+%THEcategory{Introduction}
+
+
+\capsule{}%subsec
+        {Introduction}
+        {Nelson~H.~F.~Beebe}
+        {President's introduction}
+        {}
+        {351-352}
+        {/TUGboat/tb12-3-4/tb33beebe.pdf}
+        {}
+        {}
+
+
+%THEcategory{Keynote Address}
+
+
+\capsule{}%subsec
+        {Keynote Address}%add|Publishing
+        {Nico A.F.M.~Poppelier}
+        {Two sides of the fence}
+        {}
+        {353-358}
+        {/TUGboat/tb12-3-4/tb33poppelier.pdf}
+        {}
+        {}
+
+
+%THEcategory{Publishing}
+
+
+\capsule{}%subsec
+        {Publishing}
+        {Laurie J.~Petrycki}
+        {Comparing {\TeX} and traditional typesetting  for the composition of a textbook}
+        {}
+        {359-366}
+        {/TUGboat/tb12-3-4/tb33petrycki.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Publishing}
+        {Frederick H.~Bartlett}
+        {Contra-{\LaTeX},  or what really works in the publishing world}
+        {}
+        {367-371}
+        {/TUGboat/tb12-3-4/tb33bartlett.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Publishing}
+        {Howard~Ratner \and Kenneth~Dreyhaupt}
+        {{\TeX} in a book production department}
+        {}
+        {372-376}
+        {/TUGboat/tb12-3-4/tb33ratner.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Publishing}
+        {Berthold K.P.~Horn}
+        {{\tt dvi} and eps: The ideal author-to-publisher interface?}
+        {}
+        {377-381}
+        {/TUGboat/tb12-3-4/tb33horn.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Publishing}
+        {Neil A.~Weiss}
+        {Producing a book using {\TeX}: How the process works}
+        {}
+        {382-386}
+        {/TUGboat/tb12-3-4/tb33weiss.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Publishing}
+        {Samuel E. Rhoads}
+        {Authors new to {\TeX}  publish a textbook with a publisher new to {\TeX}}
+        {}
+        {387-392}
+        {/TUGboat/tb12-3-4/tb33rhoads.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Publishing}
+        {Colleen Brosnan}
+        {The ``Five Cs'': A guide to successful publication using {\TeX}}
+        {}
+        {393-396}
+        {/TUGboat/tb12-3-4/tb33brosnan.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Publishing}
+        {Anita Z. Hoover}
+        {{\LaTeX}/{\TeX} user: A typist, or typesetter?}
+        {}
+        {397-400}
+        {/TUGboat/tb12-3-4/tb33hoover.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Publishing}
+        {John Lavagnino}
+        {Simultaneous electronic and paper publication}
+        {}
+        {401-405}
+        {/TUGboat/tb12-3-4/tb33lavagnino.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Publishing}
+        {Robert W. McGaffey}
+        {SGML versus/and {\TeX}}
+        {}
+        {406-408}
+        {/TUGboat/tb12-3-4/tb33mcgaffey.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Publishing}
+        {Andrew E. Dobrowolski}
+        {Typesetting SGML documents using {\TeX}}
+        {}
+        {409-414}
+        {/TUGboat/tb12-3-4/tb33dobrowolski.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Publishing}
+        {C. M. Sperberg-McQueen}
+        {Specifying document structure: Differences in {\LaTeX} and TEI markup}
+        {}
+        {415-421}
+        {/TUGboat/tb12-3-4/tb33sperberg.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Publishing}
+        {Takashi Kakiuchi, Yuki Kusumi, Yoshiyuki Miyabe, and Kazu Tsuga}
+        {A structured document preparation system\Dash  {\sl Autolayouter~version~2.0}\Dash an enhancement for handling  multiple document types}
+        {}
+        {422-429}
+        {/TUGboat/tb12-3-4/tb33kakiuchi.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Publishing}
+        {Linda Williams}
+        {Refining a process}
+        {}
+        {430-433}
+        {/TUGboat/tb12-3-4/tb33williams.pdf}
+        {}
+        {}
+
+
+%THEcategory{Future Issues}
+
+
+\capsule{}%subsec
+        {Future Issues}
+        {Luigi Semenzato and Edward Wang}
+        {A text processing language should be first a programming language}
+        {}
+        {434-441}
+        {/TUGboat/tb12-3-4/tb33semenzato.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Future Issues}
+        {Michael Vulis}
+        {Should {\TeX} be extended?}
+        {}
+        {442-447}
+        {/TUGboat/tb12-3-4/tb33vulis.pdf}
+        {}
+        {}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {TUG 1992 annual meeting, Portland, Oregon}
+        {}
+        {448-448}
+        {/TUGboat/tb12-3-4/tb33tug92.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {449-450}
+        {/TUGboat/tb12-3-4/tb33instmem.pdf}
+        {}
+        {}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {TUG membership applications}
+        {}
+        {451-452}
+        {/join.html}
+        {}
+        {}
+
+
+%THEcategory{Advertisements}
+
+\capsule{}
+        {Advertisements}
+        {}
+        {}
+        {}
+        {454-468}
+        {/TUGboat/tb12-3-4/tb33ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consultants}
+        {}
+        {453-453}
+        {}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {468-468}
+        {/TUGboat/tb12-3-4/tb33ads.pdf}
+        {}
+        {}
+
+
+
+%THEcategory{Applications}
+
+\capsulenoprint{}%subsecnn
+        {TUG 1991 Conference Proceedings Part 2}
+        {}
+        {Title page}
+        {}
+        {469}
+        {/TUGboat/tb12-3-4/tb33btitlepage.pdf}
+
+
+\capsule{}%subsec
+        {Applications}%replace|Software \& Tools
+        {Cay S. Horstmann}
+        {Automatic conversion from a scientific word processor to {\TeX}}
+        {}
+        {471-478}
+        {/TUGboat/tb12-3-4/tb33horstman.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Applications}%replace|Software \& Tools
+        {Dennis S. Arnon and Sandra A. Mamrak}
+        {On the logical structure of mathematical notation}
+        {}
+        {479-484}
+        {/TUGboat/tb12-3-4/tb33arnon.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Applications}%replace|Survey
+        {Kees van der Laan}
+        {Math into BLUes}
+        {}
+        {485-501}
+        {/TUGboat/tb12-3-4/tb33laan.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Applications}%replace|Methods
+        {Michael J. Downes}
+        {Dialog with {\TeX}}
+        {}
+        {502-509}
+        {/TUGboat/tb12-3-4/tb33downes.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Applications}%replace|Software \& Tools
+        {Jackie Damrau and Michael Wester}
+        {Form letters with 3-across labels capability}
+        {}
+        {510-516}
+        {/TUGboat/tb12-3-4/tb33damrau.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Applications}%replace|Software \& Tools
+        {Mark A. Roth}
+        {Typesetting forms with {\LaTeX}}
+        {}
+        {517-522}
+        {/TUGboat/tb12-3-4/tb33roth.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Applications}%replace|Software \& Tools
+        {Peter Flynn}
+        {Developing a pop-up help facility for {\TeX} on PCs}
+        {}
+        {523-527}
+        {/TUGboat/tb12-3-4/tb33flynn.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Applications}%replace|Software \& Tools
+        {Malcolm Clark, Brian Hamilton Kelly, and Niel Kempson}
+        {7 bits good, 8 bits bad {\sl or\/} ``The eight-bit blight''}
+        {}
+        {528-533}
+        {/TUGboat/tb12-3-4/tb33clark.pdf}
+        {}
+        {}
+
+
+%THEcategory{Graphics and Fonts}
+
+
+\capsule{}%subsec
+        {Graphics and Fonts}
+        {Friedhelm Sowa}
+        {Bitmaps and halftones with {\ssf BM2FONT}}
+        {}
+        {534-538}
+        {/TUGboat/tb12-3-4/tb33sowa.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Graphics and Fonts}
+        {Yannis Haralambous}
+        {{\TeX} and those other languages}
+        {}
+        {539-548}
+        {/TUGboat/tb12-3-4/tb33hara.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Graphics and Fonts}
+        {Don Hosek}
+        {Siamese {\TeX}: Joining dvi files at the hip and  other novel applications of vf files}
+        {}
+        {549-553}
+        {/TUGboat/tb12-3-4/tb33hosek.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Graphics and Fonts}
+        {Alan Hoenig}
+        {When {\TeX} and {\MF} talk: Typesetting on curved paths and other special effects}
+        {}
+        {554-557}
+        {/TUGboat/tb12-3-4/tb33hoenig.pdf}
+        {}
+        {}
+
+
+%THEcategory{Announcements}
+
+
+\capsule{}%subsecnn
+        {Announcements}
+        {}
+        {Participants at TUG'91}
+        {}
+        {558-561}
+        {/TUGboat/tb12-3-4/tb33names.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Announcements}
+        {}
+        {Calendar}
+        {}
+        {562-563}
+        {/TUGboat/tb12-3-4/tb33calendar.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Announcements}
+        {}
+        {The Donald E. Knuth Scholarship for 1992}
+        {}
+        {563-564}
+        {/TUGboat/tb12-3-4/tb33announce.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Announcements}
+        {}
+        {GUTenberg'92, Les Diablarets, Switzerland}
+        {}
+        {564-565}
+        {/TUGboat/tb12-3-4/tb33announce.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Announcements}
+        {}
+        {TUG 1992 annual meeting, Portland, Oregon}
+        {}
+        {570-570}
+        {/TUGboat/tb12-3-4/tb33announce.pdf}
+        {}
+        {}
+
+
+%THEcategory{Advertisements}
+
+\capsule{}
+        {Advertisements}
+        {}
+        {}
+        {}
+        {568-588}
+        {/TUGboat/tb12-3-4/tb33bads.pdf}
+
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {588-588}
+        {/TUGboat/tb12-3-4/tb33bads.pdf}
+        {}
+        {}

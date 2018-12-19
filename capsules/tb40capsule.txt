@@ -1,0 +1,447 @@
+% $Id$
+
+\issue{14}{3}{40}{October 1993}{}{TUG 1993 Proceedings (Aston, UK)}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 14:3 as one pdf (16mb)}
+        {}
+        {\offset{.05}}
+        {/TUGboat/tb14-3/tb40complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb14-3/tb40cover2.pdf}
+
+\capsulenoprint{}%subsecnn
+        {}
+        {}
+        {Title page}
+        {}
+        {157}
+        {/TUGboat/tb14-3/tb40titlepage.pdf}
+
+\capsule{}
+        {}%replace|Conference Notes
+        {Sebastian Rahtz and Mimi Burbank}
+        {Editorial and Production Note}
+        {}
+        {158}
+        {/TUGboat/tb14-3/tb40edit.pdf}
+
+\capsule{}
+        {}%replace|Obituaries
+        {Malcolm Clark}%person|Malcolm Clark and Yuri Melnichuk
+        {Obituary --- Yuri Melnichuk}
+        {}
+        {158\offset{.5}}
+        {/TUGboat/tb14-3/tb40edit.pdf}
+
+\capsulenoprint{}
+        {}%replace|Conference Notes
+        {Christina Thiele}
+        {Opening Words}
+        {}
+        {159}
+        {/TUGboat/tb14-3/tb40thiele-intro.pdf}
+
+\capsulenoprint{}
+        {}%replace|Conference Notes
+        {}
+        {Conference Program}
+        {}
+        {160-161}
+        {/TUGboat/tb14-3/tb40program.pdf}
+
+%THEcategory{Keynote Addresses}
+
+
+\capsule{}%subsec
+        {Keynote Addresses}%add|Dreamboat
+        {Christina A.L.\ Thiele}
+        {The future of {\TeX} and TUG}
+        {}
+        {162-166}
+        {/TUGboat/tb14-3/tb40thiele-future.pdf}
+
+
+\capsule{}%subsec
+        {Keynote Addresses}%add|Dreamboat
+        {Joachim Lammarsch}
+        {A new typesetting system: Is it really necessary?}
+        {}
+        {167-170}
+        {/TUGboat/tb14-3/tb40lammarsch.pdf}
+
+
+\capsule{}%subsec
+        {Keynote Addresses}%add|Methods
+        {Marek Ry\'cko \and Bogus{\l}aw Jackowski}
+        {{\TeX} from {\tt\bs indent} to {\tt\bs par}}
+        {}
+        {171-176}
+        {/TUGboat/tb14-3/tb40rycko.pdf}
+
+%THEcategory{Futures}
+
+
+\capsule{}%subsec
+        {Futures}
+        {Philip Taylor}
+        {NTS: The future of {\TeX}? }
+        {}
+        {177-182}
+        {/TUGboat/tb14-3/tb40taylor.pdf}
+
+
+\capsule{}%subsec
+        {Futures}
+        {Roger Hunter}
+        {A future for {\TeX}}
+        {}
+        {183-186}
+        {/TUGboat/tb14-3/tb40hunter.pdf}
+
+
+%THEcategory{Macro Packages}
+
+
+\capsule{}%subsec
+        {Macro Packages}
+        {Frank G. Bennett,\CONNECT{}Jr.}
+        {LexiTeX: Context-sensitive legal citations for {\LaTeX}}
+        {}
+        {187-195}
+        {/TUGboat/tb14-3/tb40bennett.pdf}
+
+
+\capsule{}%subsec
+        {Macro Packages}
+        {Daniel Taupin}
+        {Using {\TeX} and METAFONT to build complicated maps}
+        {}
+        {196-202}
+        {/TUGboat/tb14-3/tb40taupin-maps.pdf}
+
+
+\capsule{}%subsec
+        {Macro Packages}
+        {Daniel Taupin}
+        {Music{\TeX}: Using {\TeX} to write polyphonic or instrumental~music}
+        {}
+        {203-211}
+        {/TUGboat/tb14-3/tb40musictex.pdf}
+
+
+\capsule{}%subsec
+        {Macro Packages}
+        {Laurent Siebenmann}
+        {A format compilation framework for European languages}
+        {}
+        {212-221}
+        {/TUGboat/tb14-3/tb40siebenmann.pdf}
+
+
+%THEcategory{Working with {\TeX}}
+
+
+\capsule{}%subsec
+        {Working with {\TeX}}%replace|Bibliographies
+        {Nelson Beebe}
+        {Bibliography prettyprinting and syntax checking}
+        {}
+        {222-222}
+        {/TUGboat/tb14-3/tb40beebe.pdf}
+
+
+\capsule{}%subsec
+        {Working with {\TeX}}%replace|Electronic Documents
+        {Martin Bryan}
+        {A {\TeX} user's guide to ISO's Document Style Semantics    and Specification Language (DSSSL)}
+        {}
+        {223-226}
+        {/TUGboat/tb14-3/tb40bryan.pdf}
+
+
+\capsule{}%subsec
+        {Working with {\TeX}}%replace|Electronic Documents
+        {Peter Flynn}
+        {{\TeX} and SGML: A recipe for disaster?}
+        {}
+        {227-230}
+        {/TUGboat/tb14-3/tb40flynn.pdf}
+
+
+\capsule{}%subsec
+        {Working with {\TeX}}%replace|Methods
+        {Xinxin Wang \and Derick Wood}
+        {An abstract model for tables}
+        {}
+        {231-237}
+        {/TUGboat/tb14-3/tb40wang.pdf}
+
+
+\capsule{}%subsec
+        {Working with {\TeX}}%replace|Software \& Tools
+        {Michel Lavaud}
+        {Developing a multi-windowing environment for research based~on~\TeX}
+        {}
+        {238-244}
+        {/TUGboat/tb14-3/tb40lavaud.pdf}
+
+
+%THEcategory{Drivers}
+
+
+\capsule{}%subsec
+        {Drivers}%replace|Software \& Tools
+        {Minato Kawaguti}
+        {A versatile {\TeX} device driver}
+        {}
+        {245-251}
+        {/TUGboat/tb14-3/tb40kawaguti.pdf}
+
+%THEcategory{Language Issues}
+
+
+\capsule{}%subsec
+        {Language Issues}
+        {Gabriel Valiente Feruglio \and Robert Fuster}
+        {Typesetting Catalan texts with~{\TeX}}
+        {}
+        {252-259}
+        {/TUGboat/tb14-3/tb40valiente.pdf}
+
+
+\capsule{}%subsec
+        {Language Issues}
+        {Yannis Haralambous}
+        {The Khmer script tamed by the Lion (of {\TeX})}
+        {}
+        {260-270}
+        {/TUGboat/tb14-3/tb40hara.pdf}
+
+
+\capsule{}%subsec
+        {Language Issues}
+        {John Plaice}
+        {Language-dependent ligatures}
+        {}
+        {271-274}
+        {/TUGboat/tb14-3/tb40plaice.pdf}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Michael Doob \and Craig Platt}
+        {Virtual fonts in a production environment}
+        {}
+        {275-281}
+        {/TUGboat/tb14-3/tb40doob.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Berthold K.P. Horn}
+        {Where are the math fonts?}
+        {}
+        {282-284}
+        {/TUGboat/tb14-3/tb40horn.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Alan Jeffrey}
+        {A {\PS} font installation package written in {\TeX}}
+        {}
+        {285-292}
+        {/TUGboat/tb14-3/tb40jeffrey.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Alan Jeffrey\CONNECT{}(Editor)}
+        {Math font encodings: A workshop summary}
+        {}
+        {293-295}
+        {/TUGboat/tb14-3/tb40mathenc.pdf}
+
+
+%THEcategory{Macro Writing}
+
+
+\capsule{}%subsec
+        {Macro Writing}%add|Literate Programming
+        {W{\l}odek Bzyl \and Tomasz Przechlewski}
+        {An application of literate programming: Creating a format for the    Bulletin of the Polish TUG}
+        {}
+        {296-299}
+        {/TUGboat/tb14-3/tb40bzyl.pdf}
+
+
+\capsule{}%subsec
+        {Macro Writing}
+        {Jonathan Fine}
+        {Galleys, space, and automata}
+        {}
+        {300-309}
+        {/TUGboat/tb14-3/tb40fine.pdf}
+
+
+\capsule{}%subsec
+        {Macro Writing}
+        {Kees van der Laan}
+        {Syntactic sugar}
+        {}
+        {310-318}
+        {/TUGboat/tb14-3/tb40laan-sugar.pdf}
+
+
+\capsule{}%subsec
+        {Macro Writing}
+        {Kees van der Laan}
+        {Sorting within {\TeX}}
+        {}
+        {319-328}
+        {/TUGboat/tb14-3/tb40laan-sort.pdf}
+
+
+%THEcategory{Education and Archives}
+
+
+\capsule{}%subsec
+        {Education and Archives}
+        {Mary Dyson}
+        {Teaching digital typography\Dash the Didot Project}
+        {}
+        {329-332}
+        {/TUGboat/tb14-3/tb40dyson.pdf}
+
+
+\capsule{}%subsec
+        {Education and Archives}
+        {Irina V. Gorbunova}
+        {Russian-speaking user: From Chi-Writer and    Ventura~Publisher to {\TeX}; learning difficulties}
+        {}
+        {333-334}
+        {/TUGboat/tb14-3/tb40gorbunova.pdf}
+
+
+\capsule{}%subsec
+        {Education and Archives}
+        {R. Allan Reese}
+        {How to set up and maintain a {\TeX} system}
+        {}
+        {335-341}
+        {/TUGboat/tb14-3/tb40reese.pdf}
+
+
+\capsule{}%subsec
+        {Education and Archives}
+        {George D. Greenwade}
+        {The Comprehensive {\TeX} Archive Network (CTAN)}
+        {}
+        {342-351}
+        {/TUGboat/tb14-3/tb40green.pdf}
+
+
+%THEcategory{Delegates}
+
+
+\capsule{}%subsecnn
+        {Delegates}
+        {}
+        {Participants at the 1993 TUG meeting}
+        {}
+        {352-355}
+        {URL}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {356-357}
+        {/TUGboat/tb14-3/tb40instmem.pdf}
+
+
+%THEcategory{Announcements}
+
+
+\capsule{}%subsecnn
+        {Announcements}
+        {}
+        {Calendar}
+        {}
+        {358-359}
+        {/TUGboat/tb14-3/tb40calendar.pdf}
+
+
+\capsule{}%subsecnn
+        {Announcements}
+        {}
+        {TUG 1994 annual meeting, Santa Barbara, USA}
+        {}
+        {360-360}
+        {URL}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {TUG individual membership application}
+        {}
+        {361-361}
+        {/join.html}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {TUG institutional membership application}
+        {}
+        {362-362}
+        {URL}
+
+
+%THEcategory{Advertisements}
+
+\capsule{}
+        {Advertisements}
+        {}
+        {}
+        {}
+        {361-368}
+        {/TUGboat/tb14-3/tb40ads.pdf}
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {359-359}
+        {/TUGboat/tb14-3/tb40calendar.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Consultants}
+        {}
+        {363-363}
+        {/consultants.html}

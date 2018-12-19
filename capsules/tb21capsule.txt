@@ -1,0 +1,444 @@
+% $Id$
+
+\issue{9}{2}{21}{August 1988}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 9:2 as one pdf (10mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb09-2/tb21complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {113}
+        {/TUGboat/tb09-2/tb21titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {114}
+        {/TUGboat/tb09-2/tb21edit.pdf}
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {115-116}
+        {URL}
+
+
+%THEcategory{General Delivery}
+
+\capsule{}
+        {General Delivery}
+        {}
+        {}
+        {}
+        {117-121}
+        {/TUGboat/tb09-2/tb21gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Bart~Childs}
+        {{From the President}}
+        {}
+        {117-117}
+        {/TUGboat/tb09-2/tb21gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Ray~Goucher}
+        {{Los Alamos sets new membership record}}
+        {}
+        {117-117\offset{.3}}
+        {/TUGboat/tb09-2/tb21gendel.pdf}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {{Donald Knuth awarded Franklin Medal}}
+        {}
+        {117-117\offset{.6}}
+        {/TUGboat/tb09-2/tb21gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Elizabeth~Barnhart}
+        {{\TeX} in the publishing environment:        {A~survey of production/commercial users}}
+        {}
+        {118-120}
+        {/TUGboat/tb09-2/tb21gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {121-121}
+        {/TUGboat/tb09-2/tb21beet-new.pdf}
+
+
+%THEcategory{Software}
+
+
+\capsule{}%subsec
+        {Software}
+        {Barbara~Beeton}
+        {New version(s) of {\TeX} and {\MF}}
+        {}
+        {121-122}
+        {/TUGboat/tb09-2/tb21beet-new.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {Bart~Childs}
+        {64-bit {\TeX}}
+        {}
+        {122-122}
+        {/TUGboat/tb09-2/tb21childs-64.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {Klaus~Lichtenwalder}
+        {{Porting {\TeX} to C}}
+        {}
+        {123-124}
+        {/TUGboat/tb09-2/tb21lichtenwalder.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {David~Kennedy}
+        {{{\TeX} adapted to CWEB}}
+        {}
+        {124-125}
+        {/TUGboat/tb09-2/tb21kennedy.pdf}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Glenn~Vanderburg}
+        {Some useful variations of standard fonts}
+        {}
+        {125-125}
+        {/TUGboat/tb09-2/tb21vanderburg.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Georgia~K.M.~Tobin}
+        {Designing for low-res devices}
+        {}
+        {126-128}
+        {/TUGboat/tb09-2/tb21tobin.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Bart~Childs}
+        {{\TeX} fonts and suggested magnifications}
+        {}
+        {129-131}
+        {/TUGboat/tb09-2/tb21childs-fonts.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Dominik~Wujastyk}
+        {The many faces of \TeX: A~survey of digital METAfonts}
+        {}
+        {131-151}
+        {/TUGboat/tb09-2/tb21wujastyk.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Donald~E.~Knuth}
+        {{A Punk Meta-Font}}
+        {}
+        {152-168}
+        {/TUGboat/tb09-2/tb21knut.pdf}
+
+
+%THEcategory{Output Devices}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Don~Hosek}
+        {{\TeX} output devices (with charts)}
+        {}
+        {169-177}
+        {/TUGboat/tb09-2/tb21output.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Shane~Dunne}
+        {{Why {\TeX} should  NOT output {\PS}\Dash yet: Addendum}}
+        {}
+        {178-178}
+        {/TUGboat/tb09-2/tb21dunne.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Warren~Wolfe}
+        {{ASCII Preview with vu\TeX}}
+        {}
+        {178-180}
+        {/TUGboat/tb09-2/tb21wolfe.pdf}
+
+
+\capsule{}%subsecnn
+        {Output Devices}
+        {}
+        {Index to sample output from various devices}
+        {}
+        {151-151}
+        {}
+
+
+%THEcategory{Site Reports}
+
+\capsule{}
+        {Site Reports}
+        {}
+        {}
+        {}
+        {181-181}
+        {/TUGboat/tb09-2/tb21site.pdf}
+
+%THEsite{Cray}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Bart~Childs}
+        {{{\TeX} on the Cray}}
+        {}
+        {181-181\offset{.2}}
+        {/TUGboat/tb09-2/tb21site.pdf}
+
+
+%THEsite{Data General}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Bart~Childs}
+        {{Data General site report}}
+        {}
+        {181-181\offset{.5}}
+        {/TUGboat/tb09-2/tb21site.pdf}
+
+
+%THEsite{Macintosh}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Barry~Smith}
+        {Macintosh site report}
+        {}
+        {181-181\offset{.8}}
+        {/TUGboat/tb09-2/tb21site.pdf}
+
+
+%THEcategory{Warnings \& Limitations}
+
+
+\capsule{}%subsec
+        {Warnings \& Limitations}
+        {Barbara Beeton}
+        {{Controlling {\tt<ctrl-M>}; Ruling the depths}}
+        {}
+        {182-183}
+        {/TUGboat/tb09-2/tb21beet-warn.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Peter~Breitenlohner}
+        {German {\TeX}, a next step}
+        {}
+        {183-185}
+        {/TUGboat/tb09-2/tb21breitenlohner.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Michael~J.~Wichura}
+        {{Some problems with the INRS{\TeX} table making macros}}
+        {}
+        {186-188}
+        {/TUGboat/tb09-2/tb21wichura-inrstex.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {A.~J.~Van~Haagen}
+        {Box plots and scatter plots with {\TeX} macros}
+        {}
+        {189-192}
+        {/TUGboat/tb09-2/tb21haagen.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Michael~J.~Wichura}
+        {{PiCTeX: Macros for drawing \PiC tures}}
+        {}
+        {193-197}
+        {/TUGboat/tb09-2/tb21wichura-pictex.pdf}
+
+
+%THEcategory{\LaTeX}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Jackie~Damrau}
+        {The {\LaTeX} user's column}
+        {}
+        {198-199}
+        {/TUGboat/tb09-2/tb21damrau.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Ken Yap}
+        {{Contents of {\LaTeX} style collection as of 19th June 1988}}
+        {}
+        {200-203}
+        {/TUGboat/tb09-2/tb21yap.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Stephan~v.~Bechtolsheim}
+        {A note on processing parts with {\LaTeX}}
+        {}
+        {203-204}
+        {/TUGboat/tb09-2/tb21bechtolsheim.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Kent~McPherson}
+        {Page layout in {\LaTeX}: {Erratum}}
+        {}
+        {204-204}
+        {/TUGboat/tb09-2/tb21mcpherson.pdf}
+
+
+%THEcategory{News &Announcements}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {205-205}
+        {/TUGboat/tb09-2/tb21calendar.pdf}
+
+
+\capsule{}%subsec
+        {News \& Announcements}
+        {Bernard~Gaulle}
+        {GUTenberg meeting report}
+        {}
+        {206-207}
+        {/TUGboat/tb09-2/tb21guten.pdf}
+
+
+%THEcategory{Late-Breaking News}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking News}
+        {}
+        {{Knuth Scholarship winner}}
+        {}
+        {207-207}
+        {/TUGboat/tb09-2/tb21guten.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {208-210}
+        {/TUGboat/tb09-2/tb21instmem.pdf}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {{TUG membership application}}
+        {}
+        {211-212}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {226-226}
+        {URL}
+
+
+%THEcategory{Supplements}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {{\sl Computers \& Typesetting\/}: {Errata and Changes, Supplement}}
+        {}
+        {\offset{992}}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {Supplements}
+        {}
+        {{TUG Membership List Supplement}}
+        {}
+        {1-14\offset{992}}
+        {URL}

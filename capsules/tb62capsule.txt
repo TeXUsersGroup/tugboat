@@ -1,0 +1,321 @@
+% $Id$
+
+\issue{20}{1}{62}{March 1999}{}{}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 20:1 as one pdf (2mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb20-1/tb62complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Cover}
+        {}
+        {c1}
+        {/TUGboat/tb20-1/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb20-1/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {1}
+        {/TUGboat/tb20-1/titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {2}
+        {/TUGboat/tb20-1/tb62edit.pdf}
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {3-3}
+        {URL}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Kristoffer~Rose}
+        {{From the Vice-President}}
+        {}
+        {5-5}
+        {/TUGboat/tb20-1/tb62rose.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {6-7}
+        {/TUGboat/tb20-1/tb62beet.pdf}
+        {New book by Don Knuth\\
+{{eTeX} news}\\
+{Patent for style sheets in  electronic~publishing for Microsoft}\\
+{New {\LaTeX} Project Public License}\\
+{New~goodies on CTAN}\\
+{Welcome to {Cervan\TeX}}\\
+{Electronic {\TUB}}}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Jacques~Andr\'e \and Denis~Girou}
+        {{Father Truchet, the typographic point, the {\it Romain du roi}, and tilings}}
+        {}
+        {8-14}
+        {/TUGboat/tb20-1/tb62andr.pdf}
+
+
+%THEcategory{Language Support}
+
+
+\capsule{}%subsec
+        {Language Support}
+        {Sivan~Toledo}
+        {{A simple technique for typesetting  Hebrew with vowel points}}
+        {}
+        {15-19}
+        {/TUGboat/tb20-1/tb62tole.pdf}
+
+
+%THEcategory{{\TeX Live CD-ROM}}
+
+
+\capsule{}%subsec
+        {{\TeX\ Live CD-ROM}}
+        {Sebastian~Rahtz}
+        {{The \TeX\ Live Guide, 4th edition}}
+        {}
+        {20-44}
+        {/TUGboat/tb20-1/tb62cddoc.pdf}
+        {}
+        {<a href="ftp://tug.org/historic/systems/texlive/1999/tldoc/live.pdf">TL'99 doc as distributed</a>}
+
+
+%THEcategory{Software \& Tools}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Barbara~Beeton}
+        {{{\TeX} and the Year 2000}}
+        {}
+        {45-50}
+        {/TUGboat/tb20-1/tb62y2k.pdf}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Barbara~Beeton}
+        {{Hyphenation Exception Log\Dash Update}}
+        {}
+        {50-51}
+        {/TUGboat/tb20-1/Hyphen/}
+
+
+%THEcategory{{\LaTeX}}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {LaTeX\CONNECT{}project\CONNECT{}team}
+        {{{\LaTeX} News,  Issue~10, December~1998}}
+        {}
+        {52-52}
+        {/TUGboat/tb20-1/tb62news.pdf}
+
+
+%THEcategory{Hints \& Tricks}
+
+
+\capsule{}%subsec
+        {Hints \& Tricks}
+        {Christina~Thiele}
+        {{The Treasure Chest:  Package tours from \acro{CTAN}}}
+        {}
+        {53-58}
+        {/TUGboat/tb20-1/tb62chest.pdf}
+        {paralist; acronym; epigraph; hanging}
+        {}
+
+
+%THEcategory{Abstracts}
+
+
+\capsule{}%subsecnn
+        {Abstracts}
+        {}
+        {{\sl Die {\TeX}nische Kom\"odie} {\bf9}, 1997, Heft 1--4}
+        {}
+        {59-64}
+        {/TUGboat/tb20-1/tb20-1komoedie.pdf}
+
+
+%THEcategory{News \& \\ Announcements}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {Calendar}
+        {}
+        {65-66}
+        {/calendar.html}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {{\acro{TUG}'99 Announcement}}
+        {}
+        {67-69}
+        {/TUGboat/tb20-1/tb62sched.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {{\acro{TUG}'99 Poetry Contest}}
+        {}
+        {4-4}
+        {/TUGboat/tb20-1/tb62poet.pdf}
+
+
+%THEcategory{Late-Breaking\\News}
+
+
+\capsule{}%subsec
+        {Late-Breaking\\News}
+        {Mimi~Burbank}
+        {Production notes}
+        {}
+        {70-70}
+        {/TUGboat/tb20-1/tb62prod.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking\\News}
+        {}
+        {{\TUB{} web pages}}
+        {}
+        {70-70\offset{.3}}
+        {/TUGboat/tb20-1/tb62prod.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking\\News}
+        {}
+        {Future issues}
+        {}
+        {70-70\offset{.6}}
+        {/TUGboat/tb20-1/tb62prod.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsec
+        {TUG Business}
+        {Christina~Thiele \and Arthur~Ogawa}
+        {{Report: TUG 1999 Election}}
+        {}
+        {71-71}
+        {/TUGboat/tb20-1/tb62boar.pdf}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {{Members of the TUG Board with terms ending in 2003}}
+        {}
+        {71-76\offset{.5}}
+        {/TUGboat/tb20-1/tb62boar.pdf}
+        {{Barbara~Beeton}; {Karl~Berry}; {Kaja~Christiansen};\\
+{Donald~DeLand}; {Susan~DeMeritt}; {Stephanie~Hogue};\\
+{Judy~Johnson}; {Ross~Moore}; {Cheryl~Ponchin};\\
+{Kristoffer~H.~Rose}; {Philip~Taylor}}
+        {}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {{Position of President}}
+        {}
+        {76-76}
+        {URL}
+
+
+%THEsubheads{ {Mimi Jett}}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {77-77}
+        {/instmem.html}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {TUG membership application}
+        {}
+        {78-78}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {79-79}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Y\&Y Inc.}}
+        {}
+        {80-80}
+        {/TUGboat/tb20-1/yandy.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Blue Sky Research}}
+        {}
+        {c3}
+        {/TUGboat/tb20-1/bluesky.pdf}

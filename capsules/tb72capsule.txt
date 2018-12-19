@@ -1,0 +1,369 @@
+% $Id$
+
+\issue{22}{4}{72}{December 2001}{}{}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 22:4 as one pdf (5mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb22-4/tb72complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Cover}
+        {}
+        {c1}
+        {/TUGboat/tb22-4/tubcover.pdf}
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {259-260}
+        {URL}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Arthur~Ogawa}
+        {{From the Board of Directors}}
+        {}
+        {261-263}
+        {/TUGboat/tb22-4/tb72ogawa.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {263-265}
+        {/TUGboat/tb22-4/tb72ogawa.pdf}
+        {The status of \TUB\\
+{Glitches in \TUB{} {\bf22}:1/2}\\
+{Zapfest~exhibition,~honoring Hermann~Zapf}\\
+{Mordecai Richler~font}\\
+{References~for~{\TeX}~and~Friends}\\
+{Institut d'Histoire du Livre}\\
+{More~historic~books online at the British~Library}\\
+Web document analysis; The little tugboat that could}
+        {}
+
+%THEcategory{Electronic \\ Documents}
+
+
+\capsule{}%subsec
+        {Electronic \\ Documents}
+        {D.\,P.~Story}
+        {{{\tt execJS}: A new technique for introducing discardable JavaScript into a~\acro{PDF}~file from a~{\LaTeX}~source}}
+        {}
+        {265-268}
+        {/TUGboat/tb22-4/tb72story.pdf}
+
+
+\capsule{}%subsec
+        {Electronic \\ Documents}
+        {Michel~Goossens \and Vesa~Sivunen}
+        {{\LaTeX, \acro{SVG}, fonts}}
+        {}
+        {269-280}
+        {/TUGboat/tb22-4/tb72goos.pdf}
+
+
+\capsule{}%subsec
+        {Electronic \\ Documents}
+        {John~Forkosh}
+        {{\sf mimeTex} announcement}
+        {}
+        {280-281}
+        {/TUGboat/tb22-4/tb72forkosh.pdf}
+
+
+%THEcategory{Font Forum}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Karl~Berry}
+        {Making outline fonts from bitmap images}
+        {}
+        {281-285}
+        {/TUGboat/tb22-4/tb72berry.pdf}
+
+
+%THEcategory{Software \& Tools}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Shinsaku~Fujita \and Nobuya~Tanaka}
+        {{Size reduction of chemical structural~formulas in \XyMTeX~(Version~3.00)}}
+        {}
+        {285-289}
+        {/TUGboat/tb22-4/tb72fuji.pdf}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Rolf~Niepraschk \and Herbert~Vo\ss}
+        { {The package {\tt ps4pdf}: From \PS\ to \acro{PDF}}}
+        {}
+        {290-292}
+        {/TUGboat/tb22-4/tb72voss4pdf.pdf}
+        {(<a href="http://www.ctan.org/tex-archive/macros/latex/contrib/ps4pdf/">ps4pdf updates available on CTAN</a>)}
+        {}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Jonathan~Fine}
+        {{Instant Preview and the {\TeX} daemon}}
+        {}
+        {292-298}
+        {/TUGboat/tb22-4/tb72fine.pdf}
+
+
+%THEcategory{Graphics \\ Applications}
+
+
+\capsule{}%subsec
+        {Graphics \\ Applications}
+        {Denis~Roegel}
+        {Space geometry with {\MP}}
+        {}
+        {298-314}
+        {/TUGboat/tb22-4/tb72roeg.pdf}
+
+
+\capsule{}%subsec
+        {Graphics \\ Applications}
+        {Jana~Vo\ss{} \and Herbert~Vo\ss}
+        {The plot functions of {\tt pst-plot}}
+        {}
+        {314-319}
+        {/TUGboat/tb22-4/tb72vossplot.pdf}
+
+
+\capsule{}%subsec
+        {Graphics \\ Applications}
+        {Herbert~Vo\ss}
+        {Three dimensional plots with {\tt pst-3dplot}}
+        {}
+        {319-329}
+        {/TUGboat/tb22-4/tb72voss3d.pdf}
+        {(<a href="http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-3dplot/">pst-3dplot updates available on CTAN</a>)}
+        {}
+
+
+\capsule{}%subsec
+        {Graphics \\ Applications}
+        {Alexander~R.~Perlis}
+        {Axis alignment in {Xypic} diagrams}
+        {}
+        {330-334}
+        {/TUGboat/tb22-4/tb72perlax.pdf}
+
+
+\capsule{}%subsec
+        {Graphics \\ Applications}
+        {Christian~Obrecht}
+        {{Eukleides: A geometry drawing language}}
+        {}
+        {334-337}
+        {/TUGboat/tb22-4/tb72obre.pdf}
+
+
+%THEcategory{Book Review}
+
+
+\capsule{}%subsec
+        {Book Review}
+        {Stephen~Moye}
+        {{{\it \TeX\ Reference Manual}, by~David~Bausum}}
+        {}
+        {338-339}
+        {/TUGboat/tb22-4/tb72moye.pdf}
+
+
+%THEcategory{Hints \& Tricks}
+
+
+\capsule{}%subsec
+        {Hints \& Tricks}
+        {Peter~Wilson}
+        {Glisterings}
+        {}
+        {339-341}
+        {/TUGboat/tb22-4/tb72wilson.pdf}
+
+
+\capsule{}%subsec
+        {Hints \& Tricks}
+        {William~Adams}
+        {{The treasure chest}}
+        {}
+        {341-348}
+        {/TUGboat/tb22-4/tb72chest.pdf}
+
+
+\capsule{}%subsec
+        {Hints \& Tricks}
+        {David~M.~Tulett}
+        {Highlighting in the {\LaTeX} picture~environment}
+        {}
+        {349-349}
+        {/TUGboat/tb22-4/tb72tulett.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Alexander~R.~Perlis}
+        {A complement to \cs{smash}, \cs{llap}, and \cs{rlap}}
+        {}
+        {350-352}
+        {/TUGboat/tb22-4/tb72perlS.pdf}
+
+
+%THEcategory{{\LaTeX}}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}%add|Humanities
+        {John~Burt}
+        {Typesetting critical editions of poetry}
+        {}
+        {353-360}
+        {/TUGboat/tb22-4/tb72burt.pdf}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {Didier~Verna}
+        {{CV formatting with \curve}}
+        {}
+        {361-364}
+        {/TUGboat/tb22-4/tb72verna.pdf}
+
+
+%THEcategory{Abstracts}
+
+
+\capsule{}%subsecnn
+        {Abstracts}
+        {}
+        {{{\sl Les Cahiers GUTenberg}, Contents of double issue 39/40   (May~2001)}}
+        {}
+        {365-367}
+        {/TUGboat/tb22-4/tb72cahi.pdf}
+
+
+%THEcategory{News \& \\ Announcements}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {{\acro{TUG} 2002 Announcement}}
+        {}
+        {368-368}
+        {/TUGboat/tb22-4/tug2002flyer.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {Calendar}
+        {}
+        {369-370}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {{\acro{TUG}\,2003 Announcement}}
+        {}
+        {371-371}
+        {/TUGboat/tb22-4/TUG2003flyer_m8.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {{Euro\TeX\,2003\Dash The 14th European {\TeX} Conference}}
+        {}
+        {372-372}
+        {/TUGboat/tb22-4/eurotex2003-a4.pdf}
+
+
+%THEcategory{Cartoon}
+
+
+\capsule{}%subsec
+        {Cartoon}
+        {Roy~Preston}
+        {Ya can't touch us!}
+        {}
+        {260-260}
+        {/TUGboat/tb22-4/m-stop.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {373-373}
+        {/instmem.html}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {TUG membership application}
+        {}
+        {374-374}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {375-375}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Just Published: \TeX\ Reference Manual by David Bausum}}
+        {}
+        {376}
+        {/TUGboat/tb22-4/Kluwerad.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Blue Sky Research}}
+        {}
+        {c3}
+        {}

@@ -1,0 +1,69 @@
+% This article is public domain.
+\documentclass{ltugboat}
+
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{ifpdf}
+\usepackage[breaklinks,hidelinks,pdfa]{hyperref}
+
+%%% Start of metadata %%%
+
+\title{Example \TUB\ article}
+
+% repeat info for each author.
+\author{Karl Berry}
+\EDITORnoaddress
+\netaddress{https://tug.org/TUGboat}
+
+%%% End of metadata %%%
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We discuss the data and code for creating the online \TUB\ \HTML\ files
+which are automatically generated, both the per-issue tables of contents
+and the accumulated lists across all issues of authors, categories, and
+titles. All the source files are available from
+\url{https://tug.org/TUGboat}.
+\end{abstract}
+
+\section{Introduction}
+
+\TUB\ has had web pages generated for the per-issue tables of contents
+and the accumulated lists across all issues of authors, categories, and
+titles since approximately 2005. David Walden and I worked on the
+process together and wrote an article about it~\cite{Berry:TB32-1-23};
+Dave wrote all of the code. More recently, we wanted to add some
+features to the final output which necessitated writing a new
+implementation. This short note describes that new work.
+
+
+
+%\bibliographystyle{tugboat}% or plain if you don't have tugboat.bst
+%\nocite{book-minimal}      % just making the bibliography non-empty
+%\bibliography{xampl}       % xampl.bib comes with BibTeX
+
+\makesignature
+\end{document}
+
+article:
+- script not module.
+- html toc reflects toc as printed (categories, ordering), plus covers
+  and typo fixes etc.; lists*.html, otoh, have many unifications.
+- basic brace-parsing via Text::Balanced.
+- (much) cleanup of capsule files, enhancement of parsing.
+- more unifications, add lists-regexps.txt to existing lists-*.
+- page numbers key, much adding of \offset.
+- lists-* not index-* because of bb.
+- nytprof per line.
+- weird perl /ee so can have regexps from file (thus "&$1acute;" with quotes).
+- debug lines enough to see general flow, likely to have to cut down
+  input (xtb09) and add much more to see.
+- input files are tex; first translations, then regexps, then unifications.
+- consistency check across all issues for difficulties, categories, no
+   lists-* left unused; existing item.pdf; xxx and more?
+- sort by [title/]volume/issue/page for stability and newest first.
+- &ouml; in anchor name, even though allowed, simpler to omit; ditto t_ prefix.
+- utility fns.

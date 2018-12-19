@@ -1,0 +1,547 @@
+% $Id$
+
+\issue{10}{1}{23}{April 1989}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 10:1 as one pdf (11mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb10-1/tb23complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {1}
+        {/TUGboat/tb10-1/tb23titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {3}
+        {/TUGboat/tb10-1/tb23edit.pdf}
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {3-4}
+        {URL}
+
+
+%THEcategory{General Delivery}
+
+\capsule{}
+        {General Delivery}
+        {}
+        {}
+        {}
+        {5-10}
+        {/TUGboat/tb10-1/tb23gendel.pdf}
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {Donald E. Knuth Scholarship}
+        {}
+        {5-5}
+        {/TUGboat/tb10-1/tb23gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Bart~Childs}
+        {From the President}
+        {}
+        {5-5\offset{.5}}
+        {/TUGboat/tb10-1/tb23gendel.pdf}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {Announcing a TUG dingbat competition}
+        {}
+        {5-6}
+        {/TUGboat/tb10-1/tb23gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {6-7}
+        {/TUGboat/tb10-1/tb23gendel.pdf}
+        {\TeX news\\
+\TUB\ selections on-line\\
+More honors for Knuth}
+	{}
+
+\capsule{}%subsec
+        {General Delivery}
+        {Donald~Knuth}
+        {{\TeX} would find it difficult {\dots}}
+        {}
+        {8-8}
+        {/TUGboat/tb10-1/tb23gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {A {\TeX} encounter in Japan}
+        {}
+        {8-10}
+        {/TUGboat/tb10-1/tb23gendel.pdf}
+
+
+%THEcategory{Software}
+
+
+\capsule{}%subsec
+        {Software}
+        {Michael~Harrison}
+        {News from the {VorTeX} project}
+        {}
+        {11-14}
+        {/TUGboat/tb10-1/tb23harrison.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {Adrian~Clark}
+        {An enhanced {\TeX}-editor interface for VMS}
+        {}
+        {14-15}
+        {/TUGboat/tb10-1/tb23clark.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {Klaus~Thull}
+        {The virtual memory management of PubliC {\TeX}}
+        {}
+        {15-22}
+        {/TUGboat/tb10-1/tb23thull.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {Richard~Kinch}
+        {Turbo{\MF}: A new port in C for {UNIX} and MS-DOS}
+        {}
+        {23-24}
+        {/TUGboat/tb10-1/tb23kinch.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {Stephan~v.~Bechtolsheim}
+        {The {\TeX} {PS} software package}
+        {}
+        {25-27}
+        {/TUGboat/tb10-1/tb23bechtolsheim.pdf}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Georgia~K.M.~Tobin}
+        {A handy little font}
+        {}
+        {28-30}
+        {/TUGboat/tb10-1/tb23tobin.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Donald~Knuth}
+        {Typesetting {\sl Concrete Mathematics\/}}
+        {}
+        {31-36}
+        {/TUGboat/tb10-1/tb23knut.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Doug~Henderson}
+        {Outline fonts with {\MF}}
+        {}
+        {36-38}
+        {/TUGboat/tb10-1/tb23henderson.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Dominik~Wujastyk}
+        {Font news}
+        {}
+        {39-39}
+        {/TUGboat/tb10-1/tb23wujastyk.pdf}
+
+
+%THEcategory{Graphics}
+
+
+\capsule{}%subsec
+        {Graphics}
+        {David~F.~Rogers}
+        {Computer graphics and {\TeX}\Dash a challenge}
+        {}
+        {39-44}
+        {/TUGboat/tb10-1/tb23rogers.pdf}
+
+
+\capsule{}%subsec
+        {Graphics}
+        {Bart~Childs, Alan~Stolleis \and Don~Berryman}
+        {A portable graphics inclusion}
+        {}
+        {44-46}
+        {/TUGboat/tb10-1/tb23childs.pdf}
+
+
+%THEcategory{Output Devices}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Don~Hosek}
+        {{\TeX} output devices (with charts)}
+        {}
+        {46-55}
+        {/TUGboat/tb10-1/tb23output.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Don~Hosek}
+        {Report from the {\tt DVI} driver standards committee}
+        {}
+        {56-56}
+        {/TUGboat/tb10-1/tb23hosek.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Marius~Broeren \and Jan~van~Knippenberg}
+        {High quality printing of {\TeX} DVI output files in the {VAX/VMS} environment}
+        {}
+        {56-58}
+        {/TUGboat/tb10-1/tb23broeren.pdf}
+
+
+%THEcategory{Query}
+
+
+\capsule{}%subsec
+        {Query}
+        {Arturo~Puente}
+        {Output driver for Xerox 4045 on IBM 3090}
+        {}
+        {58-58}
+        {/TUGboat/tb10-1/tb23query.pdf}
+
+
+%THEcategory{Site Reports}
+
+\capsule{}
+        {Site Reports}
+        {}
+        {}
+        {}
+        {59-62}
+        {/TUGboat/tb10-1/tb23site.pdf}
+
+\capsule{}%subsec
+        {Site Reports}
+        {Peter~Abbott}
+        {{UK\TeX} and the Aston archive}
+        {}
+        {59-60}
+        {/TUGboat/tb10-1/tb23site.pdf}
+
+
+%THEsite{Data General}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Bart~Childs}
+        {DG site report}
+        {}
+        {60-60}
+        {/TUGboat/tb10-1/tb23site.pdf}
+
+
+%THEsite{UNIX}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Pierre~MacKay}
+        {Unix{\TeX} site report}
+        {}
+        {60-61}
+        {/TUGboat/tb10-1/tb23site.pdf}
+
+
+%THEsite{\VAX/VMS}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {David~Kellerman}
+        {{VAX/VMS} site report}
+        {}
+        {62-62}
+        {/TUGboat/tb10-1/tb23site.pdf}
+
+
+%THEcategory{Typesetting on PCs}
+
+
+\capsule{}%subsec
+        {Typesetting on PCs}
+        {Alan~Hoenig}
+        {The land of the free and the near free}
+        {}
+        {62-64}
+        {/TUGboat/tb10-1/tb23hoenig.pdf}
+
+
+\capsule{}%subsec
+        {Typesetting on PCs}
+        {Kim~Kubik}
+        {Amiga{\TeX}\dots or How envy was resisted and knowledge found on the road to \"O\"o\c c}
+        {}
+        {65-67}
+        {/TUGboat/tb10-1/tb23kubik.pdf}
+
+
+\capsule{}%subsec
+        {Typesetting on PCs}
+        {Michael~Modest}
+        {Using {\TeX} and {\LaTeX} with WordPerfect 5.0}
+        {}
+        {67-72}
+        {/TUGboat/tb10-1/tb23modest.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Joost~Zalmstra \and David~F.~Rogers}
+        {A page make-up macro}
+        {}
+        {73-81}
+        {/TUGboat/tb10-1/tb23zalmstra.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {James~Nearing}
+        {Extended equation numbering in Plain {\TeX}}
+        {}
+        {82-88}
+        {/TUGboat/tb10-1/tb23nearing.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Sriram~Sankar}
+        {APE\Dash A set of {\TeX} macros to format Ada programs}
+        {}
+        {89-97}
+        {/TUGboat/tb10-1/tb23sankar.pdf}
+
+
+%THEcategory{\LaTeX}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Michael~DeCorte}
+        {Contents of {\LaTeX} style collection as of 16 January 1989}
+        {}
+        {97-102}
+        {/TUGboat/tb10-1/tb23decorte.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Frank~Mittelbach}
+        {``A new implementation of the array---and tabular---environments of {\LaTeX}'' ({\TUB}~9\#3)\Dash addenda}
+        {}
+        {103-104}
+        {/TUGboat/tb10-1/tb23mitt.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Rainer~Sch\"opf}
+        {Drawing histogram bars inside the {\LaTeX} picture--environment}
+        {}
+        {105-107}
+        {/TUGboat/tb10-1/tb23schopf.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Dezs\H o~Nagy}
+        {Vertical centering for transparencies}
+        {}
+        {108-112}
+        {/TUGboat/tb10-1/tb23nagy.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {C.~G.~van~der~Laan}
+        {Typesetting bridge via {\LaTeX}}
+        {}
+        {113-116}
+        {/TUGboat/tb10-1/tb23laan.pdf}
+
+
+%THEcategory{News \&\\Announcements}
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {}
+        {}
+        {116-120}
+        {/TUGboat/tb10-1/tb23news.pdf}
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {WOODMAN '89: Workshop on Object Oriented Document Manipulation, Rennes,~France, 29--31 May 1989}
+        {}
+        {116-116}
+        {/TUGboat/tb10-1/tb23news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {117-117}
+        {/TUGboat/tb10-1/tb23news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {GUTenberg Congr\`es:\ {\TeX} et les graphiques, Paris, 16--17 May 1989}
+        {}
+        {118-118}
+        {/TUGboat/tb10-1/tb23news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {\TeX89: Karlsruhe University, 11--13~September~1989}
+        {}
+        {118-118\offset{.5}}
+        {/TUGboat/tb10-1/tb23news.pdf}
+
+
+\capsule{}%subsec
+        {News \& Announcements}
+        {David~Osborne}
+        {A UK {\TeX} users' group\Dash Report of a preliminary meeting}
+        {}
+        {119-120}
+        {/TUGboat/tb10-1/tb23news.pdf}
+
+
+%THEcategory{Late-Breaking News}
+
+\capsule{}
+        {Late-Breaking News}
+        {}
+        {}
+        {}
+        {120-121}
+        {/TUGboat/tb10-1/tb23late.pdf}
+
+\capsule{}%subsec
+        {Late-Breaking News}
+        {Barbara~Beeton}
+        {Production notes}
+        {}
+        {120-121\offset{.5}}
+        {/TUGboat/tb10-1/tb23late.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking News}
+        {}
+        {Coming next issue}
+        {}
+        {121-121}
+        {/TUGboat/tb10-1/tb23late.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {122-124}
+        {/TUGboat/tb10-1/tb23instmem.pdf}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {TUG membership application}
+        {}
+        {125-125}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {142-142}
+        {URL}
+
+
+%THEcategory{Supplements}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {\CandT\/: Errata and Changes}
+        {}
+        {\offset{992}}
+        {URL}

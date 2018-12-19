@@ -1,0 +1,265 @@
+% $Id$
+
+\issue{18}{1}{54}{March 1997}{}{}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 18:1 as one pdf (1.9mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb18-1/tb54complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1}
+        {/TUGboat/tb18-1/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb18-1/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {1}
+        {/TUGboat/tb18-1/titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {2}
+        {/TUGboat/tb18-1/tb54edit.pdf}
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {3-3}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {}%replace|TUG Business
+        {}
+        {Notice regarding 1997 {\TeX} {Users} {Group} election}
+        {}
+        {4-4}
+        {/TUGboat/tb18-1/tb54beet.pdf}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Michel~Goossens}
+        {From the {President}}
+        {}
+        {5-5}
+        {/TUGboat/Pres/tb54pres.html}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {5-6\offset{.5}}
+        {/TUGboat/tb18-1/tb54beet.pdf}
+        {Update to PSTricks\\
+Quote out of context\Dash Colophon}
+        {}
+
+\capsule{}
+        {General Delivery}
+        {}
+        {Erratum: Amsterdam, 13 March 1996 --- Knuth meets NTG members, TUGboat 17(4), pp. 342--355}
+        {}
+        {6}
+        {/TUGboat/tb18-1/tb54beet.pdf}
+
+
+
+%THEsubheads{ Update to {PSTricks};        {Quote} out of context\Dash {{\it Colophon}}<  \subsecnn Erratum: {Amsterdam}, 13 {March} 1996\Dash         {Knuth} meets \acro{NTG} members,        \tubissue 17(4), pp.~342--355\\6-6}
+
+
+%THEcategory{Dreamboat}
+
+
+\capsule{}%subsec
+        {Dreamboat}
+        {Philip~Taylor}
+        {{NTS} \& {\eTeX}: A status report}
+        {}
+        {6-12\offset{.5}}
+        {/TUGboat/tb18-1/tb54tayl.pdf}
+
+
+%THEcategory{Software \& Tools}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Ulrik~Vieth}
+        {A {GNU} {Emacs} editing mode for {\MF} and {\MP}        sources}
+        {}
+        {12-16}
+        {/TUGboat/tb18-1/tb54viet.pdf}
+
+
+%THEcategory{Philology}
+
+
+\capsule{}%subsec
+        {Philology}
+        {Yannis~Haralambous}
+        {The {Traditional} {Arabic}  {Typecase}, {Unicode}, {\TeX} and {\MF}}
+        {}
+        {17-29}
+        {/TUGboat/tb18-1/tb54arab.pdf}
+
+
+\capsule{}%subsec
+        {Philology}
+        {Andrea~de~Leeuw~van~Weenen}
+        {A {Medieval} {Icelandic} manuscript:        {The} making of a diplomatic edition}
+        {}
+        {30-36}
+        {/TUGboat/tb18-1/tb54leew.pdf}
+
+
+%THEcategory{Book Reviews}
+
+
+\capsule{}%subsec
+        {Book Reviews}%add|Literate Programming
+        {Michael~D.~Sofka}
+        {{\it Writing with \TeX{}}, and  {\it \TeX\ \& \LaTeX: Drawing \& Literate Programming}, by~{Eitan~M.~Gurari}}
+        {}
+        {37-38}
+        {/TUGboat/tb18-1/tb54revg.pdf}
+
+
+%THEcategory{Tutorial / Surveys}
+
+
+\capsule{}%subsec
+        {Tutorial / Surveys}%replace|Methods
+        {Claudio~Beccari}
+        {Typesetting mathematics for science         and technology according to {ISO\,31/XI}}
+        {}
+        {39-48}
+        {/TUGboat/tb18-1/tb54becc.pdf}
+
+
+%THEcategory{{\LaTeX}}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {David~Carlisle}
+        {A {\LaTeX} {Tour}, part~3:  {\ssf mfnfss}, {\ssf psnfss} and {\ssf babel}}
+        {}
+        {48-55}
+        {/TUGboat/tb18-1/tb54carl.pdf}
+
+
+%THEcategory{News \& Announcements< \subsecnn Calendar\\56-67}
+
+
+%THEcategory{Late-Breaking\\News}
+
+
+\capsule{}%subsec
+        {Late-Breaking\\News}
+        {Mimi~Burbank}
+        {Production notes}
+        {}
+        {57-57}
+        {/TUGboat/tb18-1/tb54prod.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking\\News}
+        {}
+        {Future issues}
+        {}
+        {57\offset{.3}}
+        {/TUGboat/tb18-1/tb54prod.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking\\News}
+        {}
+        {\acro{TUG}'97 {Update}}
+        {}
+        {58-58}
+        {/TUGboat/tb18-1/tug97-update.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {New members of the {TUG} {Board}}
+        {}
+        {59-60}
+        {/TUGboat/tb18-1/tb54boar.pdf}
+
+
+%THEsubheads{ {Donna Burnette}; {Mimi Jett}; {Patricia Monohon}; {Arthur~Ogawa};        {Petr~Sojka}}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {61-61}
+        {/instmem.html}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {TUG membership application}
+        {}
+        {62-62}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {\TeX{} consulting and production services}
+        {}
+        {63-63}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {57-57\offset{.6}}
+        {URL}

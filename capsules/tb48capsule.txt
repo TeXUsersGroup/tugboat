@@ -1,0 +1,260 @@
+% $Id$
+
+\issue{16}{3}{48}{September 1995}{/tug1995/}{TUG 1995 Proceedings (St. Petersburg, Florida)}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 16:3 as one pdf (2.6mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb16-3/tb48complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1}
+        {/TUGboat/tb16-3/cover-color.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb16-3/cover2.pdf}
+
+\capsule{}%subsec
+        {}%replace|Late-Breaking News
+        {Robin~Fairbairns}
+        {Production notes}
+        {}
+        {222-222}
+        {/TUGboat/tb16-3/tb48prod.pdf}
+
+
+%THEcategory{Opening Address}
+
+
+\capsule{}%subsec
+        {Opening Address}
+        {Michel~Goossens}
+        {President's words}
+        {}
+        {223-226}
+        {/TUGboat/Pres/tb48pres.html}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Ji\v{r}\'{\i}~Zlatu\v{s}ka}
+        {When {\MF} does it alone}
+        {}
+        {227-232}
+        {/TUGboat/tb16-3/tb48zlat.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Richard J.~Kinch}
+        {{MetaFog}: Converting {\MF} shapes to contours}
+        {}
+        {233-243}
+        {/TUGboat/tb16-3/tb48kinc.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Alan~Hoenig}
+        {The {Poetica} family: Fancy fonts with {\TeX} and {\LaTeX}}
+        {}
+        {244-252}
+        {/TUGboat/tb16-3/tb48hoen.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Michel~Goossens, Sebastian~Rahtz \and Robin~Fairbairns}
+        {Using {Adobe} {Type}~1 {Multiple} {Master} fonts with {\TeX}}
+        {}
+        {253-258}
+        {/TUGboat/tb16-3/tb48goos.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Jeremy~Gibbons}
+        {Dotted and dashed lines in {\MF}}
+        {}
+        {259-264}
+        {/TUGboat/tb16-3/tb48gibb.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Sergey~Lesenko}
+        {Printing {\TeX} documents with partial {Type}~1 fonts}
+        {}
+        {265-268}
+        {/TUGboat/tb16-3/tb48lese.pdf}
+
+
+%THEcategory{{\LaTeX}}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {Matthew~Swift}
+        {Modularity in {\LaTeX}}
+        {}
+        {269-275}
+        {/TUGboat/tb16-3/tb48swif.pdf}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {Dennis~Kletzing}
+        {A multienumerate package}
+        {}
+        {276-279}
+        {/TUGboat/tb16-3/tb48klet.pdf}
+
+
+%THEcategory{Hyphenation}
+
+
+\capsule{}%subsec
+        {Hyphenation}
+        {Petr~Sojka and Pavel~\v{S}eve\v{c}ek}
+        {Hyphenation in {\TeX} --- {Quo} {Vadis}?}
+        {}
+        {280-289}
+        {/TUGboat/tb16-3/tb48soj1.pdf}
+
+
+\capsule{}%subsec
+        {Hyphenation}
+        {Petr~Sojka}
+        {Notes on compound word hyphenation in {\TeX}}
+        {}
+        {290-296}
+        {/TUGboat/tb16-3/tb48soj2.pdf}
+
+
+%THEcategory{Literate programming}
+
+
+\capsule{}%subsec
+        {Literate programming}
+        {W{\l}odek Bzyl}
+        {Literate {Plain} source is available!}
+        {}
+        {297-299}
+        {/TUGboat/tb16-3/tb48bzyl.pdf}
+
+
+\capsule{}%subsec
+        {Literate programming}
+        {Bart~Childs, Deborah~Dunn \and William~Lively}
+        {Teaching {CS}/1 courses in~a~literate manner}
+        {}
+        {300-309}
+        {/TUGboat/tb16-3/tb48chil.pdf}
+
+
+%THEcategory{Methods}
+
+
+\capsule{}%subsec
+        {Methods}%replace|Accessibility
+        {T.V.~Raman}
+        {An audio view of LaTeX documents --- part {II}}
+        {}
+        {310-314}
+        {/TUGboat/tb16-3/tb48rama.pdf}
+
+
+\capsule{}%subsec
+        {Methods}%replace|Electronic Documents
+        {Sebastian~Rahtz}
+        {Another look at {\LaTeX} to SGML conversion}
+        {}
+        {315-324}
+        {/TUGboat/tb16-3/tb48raht.pdf}
+
+
+\capsule{}%subsec
+        {Methods}%replace|Multilingual Document Processing
+        {Robin Fairbairns}
+        {Omega --- {Why} bother with {Unicode}?}
+        {}
+        {325-328}
+        {/TUGboat/tb16-3/tb48fair.pdf}
+
+
+\capsule{}%subsec
+        {Methods}%replace|Philology
+        {Gabriel~Valiente~Feruglio}
+        {Modern {Catalan} typographical conventions}
+        {}
+        {329-338}
+        {/TUGboat/tb16-3/tb48vali.pdf}
+
+
+%THEcategory{News \&\\Announcements}
+
+
+\capsule{}%subsecnn
+        {News \&\\Announcements}
+        {}
+        {{TUG}'96 Announcement}
+        {}
+        {339-339}
+        {/TUGboat/tb16-3/dubna.pdf}
+
+
+\capsule{}%subsecnn
+        {News \&\\Announcements}
+        {}
+        {Calendar}
+        {}
+        {340-341}
+        {/calendar.html}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {{TUG}'95\Dash {List} of attendees}
+        {}
+        {341-343}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {344-344}
+        {/instmem.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {345-345}
+        {/consultants.html}

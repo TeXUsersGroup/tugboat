@@ -1,0 +1,467 @@
+% $Id$
+
+\begin{blurb}
+<p>If you're not already a member, we hope you'll consider <a
+href="/join.html">joining TUG</a> or <a href="/usergroups.html">another
+TeX user group</a>, to support these publications, conferences, and
+other TeX projects.
+
+<p>
+\end{blurb}
+
+\issue{23}{3/4}{75}{2002}{}{}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 23:3/4 as one pdf (5.8mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb23-3-4/tb75complete.pdf}
+  {}
+  {}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Front cover}
+  {}
+  {c1\offset{.1}}
+  {/TUGboat/tb23-3-4/cover1.pdf}
+  {}
+  {}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Inside front cover}
+  {}
+  {c2\offset{.2}}
+  {/TUGboat/tb23-3-4/cover2.pdf}
+  {}
+  {}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Inside back cover: TUG 2004}
+  {}
+  {c3\offset{.3}}
+  {/TUGboat/tb23-3-4/cover3.pdf}
+  {}
+  {}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Title page}
+  {}
+  {1}
+  {/TUGboat/tb23-3-4/titlepage.pdf}
+  {}
+  {}
+
+\capsule{}
+        {}
+        {}
+        {Addresses}
+        {}
+        {243}
+        {}
+        {}
+        {}
+
+\capsule{}
+        {General Delivery}
+        {Karl Berry}
+        {From the Board of Directors}
+        {}
+        {245}
+        {/TUGboat/tb23-3-4/tb75gendel.pdf}
+        {}
+        {}
+
+\capsule{}
+        {General Delivery}
+        {Barbara Beeton}
+        {Editorial comments}
+        {}
+        {245\offset{.5}}
+        {/TUGboat/tb23-3-4/tb75beet.pdf}
+        {TeX 3.141592, Metafont 2.71828\\
+Glitch in TUGboat 22:4\\
+Farewell, Michael Downes\\
+Last cartoon by Roy Preston\\
+A web site for Arabic typography\\
+Recognition for the Plantin Museum\\
+An alphabet game for children of all ages\\
+Making TeX Work on CTAN\\
+TeX for the Impatient}
+        {}
+
+\capsule{}
+        {General Delivery}%replace|Hyphenation
+        {}
+        {Hyphenation exception log}
+        {}
+        {247}
+        {/TUGboat/tb23-3-4/tb75hyf.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {General Delivery}%replace|Knuth Sessions
+        {}%person|Donald Knuth
+        {Donald Knuth:  All questions answered (University of Oslo, 30 August 2002)}
+        {}
+        {249}
+        {/TUGboat/tb23-3-4/tb75knuth.pdf}
+        {}
+        {}
+
+
+
+\capsule{}
+        {Dreamboat}
+        {Claudio Beccari}
+        {Floating point numbers and Metafont, MetaPost, TeX, and PostScript Type~1 fonts}
+        {}
+        {261}
+        {/TUGboat/tb23-3-4/tb75beccreal.pdf}
+        {}
+        {}
+
+
+
+\capsule{}
+        {Typography}
+        {Stefan A. Revets}
+        {The Octavo package}
+        {}
+        {269}
+        {/TUGboat/tb23-3-4/tb75revets.pdf}
+        {}
+        {(<a href="https://ctan.org/pkg/octavo/">octavo updates available on CTAN</a>)}
+
+\capsule{}
+        {Philology}
+        {Claudio Beccari}
+        {The teubner LaTeX package: Typesetting classical Greek philology}
+        {}
+        {276}
+        {/TUGboat/tb23-3-4/tb75beccteub.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Philology}
+        {Palash B. Pal}
+        {Typesetting in Bengali script using TeX}
+        {}
+        {282}
+        {/TUGboat/tb23-3-4/tb75pal.pdf}
+        {}
+        {}
+
+
+
+\capsule{}
+        {Electronic Documents}
+        {Jonathan Kuhn}
+        {interactiveworkbook: LaTeX-based interactive PDF on the Web}
+        {}
+        {288}
+        {/TUGboat/tb23-3-4/tb75kuhn.pdf}
+        {}
+        {}
+
+
+
+\capsule{}
+        {Font Forum}
+        {D. Men'shikov, A. Kostin, and M. Vulis}
+        {Multiple Master math extension fonts}
+        {}
+        {291}
+        {/TUGboat/tb23-3-4/tb75vulis.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Font Forum}
+        {Thomas H. Barton}
+        {TrueType fonts in PostScript}
+        {}
+        {294}
+        {/TUGboat/tb23-3-4/tb75bart.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Font Forum}
+        {Antonis Tsolomitis}
+        {The Kerkis font family}
+        {}
+        {296}
+        {/TUGboat/tb23-3-4/tb75tsol.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Font Forum}
+        {Walter Schmidt}
+        {Euler-VM: Generic math fonts for use with LaTeX}
+        {}
+        {301}
+        {/TUGboat/tb23-3-4/tb75schmidt.pdf}
+        {}
+        {}
+
+
+
+
+\capsule{}
+        {Software \& Tools}%add|Literate Programming
+        {Prasenjit Saha}
+        {Rambutan: Literate programming in Java}
+        {}
+        {304}
+        {/TUGboat/tb23-3-4/tb75saha.pdf}
+        {}
+        {}
+
+
+
+\capsule{}
+        {Graphics Applications}
+        {Christian Obrecht}
+        {Eukleides: A geometry drawing language}
+        {}
+        {309}
+        {/TUGboat/tb23-3-4/tb75obre.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Graphics Applications}
+        {Ramon Casares}
+        {MetaTeX}
+        {}
+        {313}
+        {/TUGboat/tb23-3-4/tb75casa.pdf}
+        {}
+        {}
+
+
+
+
+\capsule{}
+        {Hints \& Tricks}
+        {Mark LaPlante and William F. Adams}
+        {The treasure chest}
+        {}
+        {319}
+        {/TUGboat/tb23-3-4/tb75chest.pdf}
+        {}
+        {}
+
+
+
+\capsule{}
+        {Tutorials}
+        {Thomas Feuerstack}
+        {Introduction to pdfTeX}
+        {}
+        {329}
+        {/TUGboat/tb23-3-4/tb75feu.pdf}
+        {}
+        {}
+
+
+
+
+\capsule{}
+        {LaTeX}
+        {Herbert Vo\ss}
+        {Constructing circuit diagrams with pst-circ}
+        {}
+        {335}
+        {/TUGboat/tb23-3-4/tb75voss.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {LaTeX}
+        {Norman Gray}
+        {Absolute positioning with textpos}
+        {}
+        {341}
+        {/TUGboat/tb23-3-4/tb75gray.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {LaTeX}
+        {Harald Harders}
+        {Multilingual bibliographies: Using and extending the babelbib package}
+        {}
+        {344}
+        {/TUGboat/tb23-3-4/tb75harders.pdf}
+        {}
+        {}
+
+
+
+\capsule{}
+        {Abstracts}
+        {}
+        {{\sl Les Cahiers GUTenberg}: Contents of Thematic Issue 41 (November 2001)}
+        {}
+        {354}
+        {/TUGboat/tb23-3-4/tb75cahi.pdf}
+        {}
+        {}
+
+
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {355}
+        {/calendar.html}
+        {}
+        {}
+
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {Practical TeX 2004: Training and techniques}
+        {}
+        {358}
+        {/practicaltex2004}
+        {}
+        {}
+
+\capsule{}
+        {Late-Breaking News}
+        {Mimi Burbank}
+        {Production notes}
+        {}
+        {360}
+        {/TUGboat/tb23-3-4/tb75prod.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Late-Breaking News}
+        {}
+        {Future issues}
+        {}
+        {360\offset{.3}}
+        {}
+        {}
+        {}
+
+
+
+\capsule{}
+        {Cartoon}
+        {Roy Preston}
+        {Type Design as Art}
+        {}
+        {244}
+        {/TUGboat/tb23-3-4/grot.pdf}
+        {}
+        {}
+
+
+
+\capsule{}
+        {TUG Business}
+        {Arthur Ogawa}
+        {Report of TUG election}
+        {}
+        {360\offset{.6}}
+        {/TUGboat/tb23-3-4/tb75boar.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {TUG Business}
+        {Robin Laakso}
+        {Financial statements for 2001 and 2002}
+        {}
+        {365}
+        {/TUGboat/tb23-3-4/tb75treas.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {357}
+        {/TUGboat/tb23-3-4/instmem-list.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {TUG Business}
+        {}
+        {TUG membership application}
+        {}
+        {375}
+        {/forms/2004/memberapp.html}
+        {}
+        {}
+
+
+
+\capsule{}
+        {Supplement}
+        {}
+        {Bugs in Computers \& Typesetting, 6 July 2003}
+        {}
+        {367}
+        {/TUGboat/tb23-3-4/tb75errata.pdf}
+        {}
+        {}
+
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {TeX consulting and production services}
+        {}
+        {376}
+        {/consultants.html}
+        {}
+        {}
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {TeX Live, 2003 Edition}
+        {}
+        {359}
+        {/TUGboat/tb23-3-4/texlive.pdf}
+        {}
+        {}

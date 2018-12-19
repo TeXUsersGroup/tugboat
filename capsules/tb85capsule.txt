@@ -1,0 +1,516 @@
+% $Id$
+\let\primitiveinput=\input
+\input eplain
+\beginpackages
+  \usepackage{graphics}
+\endpackages
+\let\input=\primitiveinput
+
+\input tugboat.cmn  % tugboat.dates macros
+\input tugboat.dates
+\input tb84pages
+
+\nopagenumbers
+\hyphenpenalty = 10000
+\advance\rightskip by 0pt plus 9pt
+\hoffset = .25in
+\voffset = -.5in
+\vsize = 10in
+
+% fonts - 9pt for this lengthy issue
+\font\tenrm=cmr9  \font\tensl=cmsl9  \font\tentt=cmtt9  \font\manual=logo9
+\font\tenit=cmti9
+\baselineskip=10.6pt
+
+% adjust everything else down
+\font\sf = cmss9
+\def\pkgname#1{{\sf #1}}
+
+\font\smallsl = cmsl8  \font\smallrm = cmr8
+\def\acrofont{% if slanted font, use slanted acro font
+   \ifdim \fontdimen1\font>0pt \smallsl \else \smallrm\fi
+}
+\def\acro#1{{\acrofont #1}}
+
+% for \BibTeX
+\font\smc=cmcsc10 at 9pt
+
+% slant \BibTeX and \MF
+\font\ninesl = cmsl8
+\font\slc = cmsl8 at 6pt
+\def\slBibTeX{{\ninesl B{\slc IB}\TeX}}  % cmcscsl10 not available as type1
+
+\font\manualsl = logosl10 at 9pt
+\def\slMF{{\manualsl META}\-{\manualsl FONT}\spacefactor1000 }
+\def\slMP{{\manualsl META}\-{\manualsl POST}\spacefactor1000 }
+
+% for \LaTeX, etc.
+\font\sevensl=cmti7 at 6pt
+\scriptfont\slfam=\sevensl
+
+\def\reflect#1{%
+  \ifx\reflectbox\undefined
+    \errmessage{graphics package must be loaded}%
+  \else
+    \ifdim \fontdimen1\font>0pt
+      \raise 1.75ex \hbox{\kern.1em\rotatebox{180}{#1}}\kern-.1em
+    \else
+      \reflectbox{#1}%
+    \fi
+  \fi
+}
+\def\hideheight#1{\setbox0=\hbox{#1}\ht0=0pt \dp0=0pt \box0 }
+\def\XeTeX{\leavevmode\hideheight{\hbox{X\lower.5ex
+  \hbox{\kern-.125em\reflect{E}}\kern-.1667em \TeX}}}
+
+%\def\XeTeX{Xe\TeX}
+
+% abbreviations
+\def\\{\hfil\break}
+%\def\aand{\unskip,\space} %
+\def\aand{{\rm and\space}} % matches tub, but might be too long
+\def\cs#1{{\tt \char`\\#1}}
+\def\emph#1{{\it #1}}
+\def\smallbullet{\raise .4ex \hbox{$\scriptscriptstyle \bullet$}}
+\def\t#1{{\tt #1}}
+\def\TUB{{\sl TUGboat}}
+
+% from tugboat.front
+\def\titleslash{\raise.3ex\hbox{\sevenrm/}}
+
+\newcount\startpage
+\def\getpage#1{%
+  \input ../#1/firstpage.tex
+  \number\startpage
+}
+
+\let\offset=\gobble          % ignore manual sorting offset
+\long\def\begin#1#2\end#3{}  % ignore blurb
+\def\issue#1#2#3#4#5#6{}     % ignore issue info
+
+% formatting
+\newdimen\pagenowidth % space for just
+\setbox0=\hbox{000}
+\pagenowidth=\wd0  % aka 1.5em
+\newdimen\pagenospace  \pagenospace = 2.5em
+
+\def\category#1{\smallskip\noindent{\bf #1}\vskip .1\smallskipamount}
+
+% #1 is difficulty category -- follows \capsule on first line
+% #2 is TB category -- arg 2 is alone on its line, possibly with replace or add comment
+% #3 is author -- args 3-7 are alone on their lines
+% #4 is title
+% #5 is for statement
+% #6 is page number
+% #7 is URL of paper PDF
+% #8 is subtitles -- arg 8 can be alone on its line or multiple lines long
+% #9 is for notes added at html time -- arg 9 can be alone on its line or multiple lines long
+
+\def\capsule#1#2#3#4#5#6#7#8#9{%
+    \vskip .5pt plus1pt
+    \noindent
+    \hangindent = \pagenospace
+      \advance\hangindent by 3em
+    \hbox to \pagenospace{%
+      \hbox to \pagenowidth{\hfil #6}%
+      \hfil}%
+     %
+     \def\author{#3}%
+     \def\title{#4}%
+     {\sl \author}%
+     %
+     % / only if both parts are present.
+     \ifx\author\empty\else \ifx\title\empty\else\ \titleslash\ \fi\fi
+     %
+     {\rm \title}%
+     %
+     \def\blurb{#5}%
+     \ifx\blurb\empty\else \hfil\break\hglue-2em\smallbullet\ \blurb\fi
+     \par
+}
+
+
+% typeset the actual title text.
+\font\titlebf = cmbx10 scaled \magstephalf
+\leftline{{\titlebf TUG}BOAT \kern1.5pc \volx\
+% \kern1.5pc
+% TUG 2005 Conference Proceedings
+}
+\bigskip
+\leftline{{\titlebf Table of Contents}\kern1pc (ordered by difficulty)}
+\medskip
+
+\rm  % print above in 10pt, below in 9pt
+
+% begin-items
+% 
+
+\begin{blurb}
+<p>This proceedings of the <a
+href="http://www.gutenberg.eu.org/eurotex2005/">EuroTeX 2005
+conference</a> at Pont-&agrave;-Mousson, France, was produced by DANTE
+e.V. and is a joint publication of many TeX user groups: DANTE,
+CervanTeX, GUST, GUT, NTG, TUG, and UKTUG.  It is one of the three TUG
+publications for 2006, although it's not a numbered TUGboat issue.
+
+<p>If you're not already a member, please consider <a
+href="/join.html">joining TUG</a> or <a href="/usergroups.html">another
+TeX user group</a>, to support these publications, conferences, and
+other TeX projects.
+
+<p><a
+href="/TUGboat/tb27-0/tb85complete.pdf">Complete
+issue as one pdf</a> (18mb).
+
+<p>
+\end{blurb}
+
+
+\notissue{27}{0}{85}{2006}{http://www.gutenberg.eu.org/eurotex2005/en/157-intro.html}{EuroTeX 2005 Proceedings (Pont-&agrave;-Mousson, France)}
+
+\category{Introductory}
+
+\capsule{Introductory}
+  {Preface}%replace|General Delivery
+  {Klaus H\"oppner \aand Fabrice Popineau}
+  {Let's \TeX{} together\Dash{}Euro\TeX\ 2005 proceedings}
+  {}
+  {iv\offset{0.4}}
+  {/TUGboat/tb27-0/hoeppner.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Preface}%replace|General Delivery
+  {Volker R.W. Schaa}
+  {Let's publish together\Dash{}Euro\TeX\ 2005 proceedings}
+  {}
+  {v\offset{0.5}}
+  {/TUGboat/tb27-0/schaa.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Preface}%replace|General Delivery
+  {}
+  {Schedule}
+  {}
+  {vi\offset{0.6}}
+  {/TUGboat/tb27-0/schedule.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Preface}%replace|General Delivery
+  {}
+  {Pictures}
+  {photos from the conference}
+  {ix\offset{0.9}}
+  {/TUGboat/tb27-0/photos.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Talks}%replace|Resources
+  {Jim Hef{}feron}
+  {\acro{CTAN} progress report}
+  {}
+  {117}
+  {/TUGboat/tb27-0/hefferon.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Talks}%replace|General Delivery
+  {Taco Hoekwater}%person|Taco Hoekwater and Hermann Zapf and Donald Knuth
+  {Panel discussion with Hermann Zapf and Donald Knuth}
+  {}
+  {76}
+  {/TUGboat/tb27-0/knuthzapf.pdf}
+  {}
+  {}
+
+
+% 
+\category{Intermediate}
+
+\capsule{Intermediate}
+  {Talks}%replace|Software \& Tools
+  {Jonathan Fine}
+  {\TeX\ forever!}
+  {}
+  {140}
+  {/TUGboat/tb27-0/fine.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Talks}%replace|ConTeXt
+  {Patrick Gundlach}
+  {contextgarden.net}
+  {}
+  {71}
+  {/TUGboat/tb27-0/gundlach.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Talks}%replace|Software \& Tools
+  {\Thanh}
+  {Experiences with micro-typographic extensions of pdf\TeX\ in practice}
+  {}
+  {159}
+  {/TUGboat/tb27-0/thanh.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Talks}%replace|Software \& Tools
+  {Taco Hoekwater \aand MetaPost Team}
+  {MetaPost developments\Dash Spring 2005}
+  {}
+  {25}
+  {/TUGboat/tb27-0/hoekwater.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Talks}%replace|Fonts
+  {Bogus\l{}aw Jackowski \aand Janusz M. Nowacki}
+  {Latin Modern fonts: How less means more}
+  {}
+  {172}
+  {/TUGboat/tb27-0/jackowski.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Talks}%replace|Fonts
+  {Johannes K\"uster}
+  {Newmath and Unicode}
+  {}
+  {165}
+  {/TUGboat/tb27-0/kuster.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Talks}%replace|Software \& Tools
+  {J\'er\^ome Laurens}
+  {The \TeX\ wrapper structure: A basic \TeX\ document model implemented in i\TeX{}mac}
+  {}
+  {193}
+  {/TUGboat/tb27-0/laurens.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Talks}%replace|LaTeX
+  {Antoine Lejay}
+  {``La machine \`a formulaires'' (the forms' machine), or \TeX\ for a Kafkaian world}
+  {}
+  {81}
+  {/TUGboat/tb27-0/lejay.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Talks}%replace|LaTeX
+  {P\'eter Szab\'o}
+  {Verbatim phrases and listings in \LaTeX}
+  {}
+  {120}
+  {/TUGboat/tb27-0/szabo.pdf}
+  {}
+  {}
+
+
+% 
+\category{Intermediate Plus}
+
+\capsule{Intermediate Plus}
+  {Talks}%replace|Multilingual Document Processing
+  {Javier Bezos}
+  {Mem: A multilingual package for \LaTeX\ with Aleph}
+  {}
+  {92}
+  {/TUGboat/tb27-0/bezos.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {Talks}%replace|Electronic Documents
+  {Andre Dierker \aand Arne Jans \aand Stephan Lehmke}
+  {From \acro{RTF} to \acro{XML} to \LaTeX}
+  {}
+  {33}
+  {/TUGboat/tb27-0/dierker.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {Talks}%replace|Bibliographies
+  {Jean-Michel Hufflen}
+  {Bibliography styles easier with Ml\slBibTeX}
+  {}
+  {179}
+  {/TUGboat/tb27-0/hufflen.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {Talks}%replace|Humanities
+  {David Kastrup}
+  {The \t{bigfoot} bundle for critical editions}
+  {}
+  {199}
+  {/TUGboat/tb27-0/kastrup-bigfoot.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {Talks}%replace|Software \& Tools
+  {David Kastrup}
+  {Designing an implementation language for a \TeX\ successor}
+  {}
+  {111}
+  {/TUGboat/tb27-0/kastrup-lang.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {Talks}%replace|Software \& Tools
+  {Gerd Neugebauer}
+  {Namespaces for \exTeX}
+  {}
+  {67}
+  {/TUGboat/tb27-0/neugebauer.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {Talks}%replace|Graphics
+  {Denis Roegel}
+  {MP2GL: Prototyping 3D objects with MetaPost and Open\acro{GL}}
+  {}
+  {5}
+  {/TUGboat/tb27-0/roegel.pdf}
+  {}
+  {}
+
+
+% 
+\category{Advanced}
+
+\capsule{Advanced}
+  {Talks}%replace|Multilingual Document Processing
+  {Yannis Haralambous and G\'abor Bella}
+  {Omega becomes a sign processor}
+  {}
+  {99}
+  {/TUGboat/tb27-0/haralambous.pdf}
+  {}
+  {}
+
+
+% 
+% These are all slides, but that's not a good difficulty.
+% And these are the only ones, so let's not make a category just for them,
+% but pretend they are abstracts. Close enough.
+\category{Intermediate}
+
+\capsule{}
+  {Talks}%replace|Abstracts
+  {Hans Hagen}
+  {The 16 faces of a Dutch math journal}
+  {}
+  {150}
+  {/TUGboat/tb27-0/hagen.pdf}
+  {}
+  {[Slides]}
+
+\capsule{}
+  {Talks}%replace|Abstracts
+  {Thomas Feuerstack \aand Klaus H\"oppner}
+  {Pro\TeX{}t, a new \TeX-collection for beginners}
+  {}
+  {78}
+  {/TUGboat/tb27-0/feuerstack.pdf}
+  {}
+  {[Slides]}
+
+\capsule{}
+  {Talks}%replace|Abstracts
+  {Frank Mittelbach \aand Chris Rowley}
+  {\LaTeX3 news}
+  {}
+  {50}
+  {/TUGboat/tb27-0/mittelbach.pdf}
+  {}
+  {[Slides]}
+
+\capsule{}
+  {Talks}%replace|Abstracts
+  {Sebastian Rahtz}
+  {The \acro{TEI}/\TeX\ interface}
+  {}
+  {38}
+  {/TUGboat/tb27-0/rahtz.pdf}
+  {}
+  {[Slides]}
+
+\capsule{}
+  {Talks}%replace|Abstracts
+  {Frank-Rene Schaefer}
+  {\c{S}\"afer\TeX: Source code esthetics for automated typesetters}
+  {}
+  {86}
+  {/TUGboat/tb27-0/schaefer.pdf}
+  {}
+  {[Slides]}
+
+\capsule{}
+  {Talks}%replace|Abstracts
+  {Joachim Schrod \aand Chris Rowley \aand Christine Detig}
+  {A taxonomy of automated typesetting systems}
+  {}
+  {1}
+  {/TUGboat/tb27-0/schrod.pdf}
+  {}
+  {[Slides]}
+
+\capsule{}
+  {Talks}%replace|Abstracts
+  {Adam Twardoch}
+  {Typographic perfection with OpenType?}
+  {}
+  {55}
+  {/TUGboat/tb27-0/twardoch.pdf}
+  {}
+  {[Slides]}
+
+
+% 
+\category{Reports and notices}
+
+\capsule{Reports and notices}
+  {News}
+  {}
+  {Euro\TeX\ 2006 invitation}
+  {}
+  {212}
+  {/TUGboat/tb27-0/eurotex06.pdf}
+  {}
+  {}
+
+\capsule{}
+  {List of authors and participants}%replace|Conference Notes
+  {}
+  {Names}
+  {}
+  {206}
+  {/TUGboat/tb27-0/names.pdf}
+  {}
+  {}
+
+\bye

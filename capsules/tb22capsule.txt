@@ -1,0 +1,516 @@
+% $Id$
+
+\issue{9}{3}{22}{December 1988}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 9:3 as one pdf (8mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb09-3/tb22complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {227}
+        {/TUGboat/tb09-3/tb22titlepage.pdf}
+
+\capsule{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {229}
+        {/TUGboat/tb09-3/tb22edit.pdf}
+
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {229-230}
+        {URL}
+
+
+%THEcategory{General Delivery}
+
+\capsule{}
+        {General Delivery}
+        {}
+        {}
+        {}
+        {231-238}
+        {/TUGboat/tb09-3/tb22gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Bart~Childs}
+        {{From the President}}
+        {}
+        {231-232}
+        {/TUGboat/tb09-3/tb22gendel.pdf}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {{Extra! Extra! {\TUB} becomes a quarterly}}
+        {}
+        {232-232}
+        {/TUGboat/tb09-3/tb22gendel.pdf}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {{Donald Knuth awarded Oxford degree}}
+        {}
+        {232-233}
+        {/TUGboat/tb09-3/tb22gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {{{\TeX} and TUG go international\Dash A trip report}}
+        {}
+        {233-235}
+        {/TUGboat/tb09-3/tb22gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Graeme~McKinstry}
+        {Some typesetting conventions}
+        {}
+        {236-238}
+        {/TUGboat/tb09-3/tb22mckinstry.pdf}
+
+
+%THEcategory{Software}
+
+
+\capsule{}%subsec
+        {Software}
+        {Klaus~Heidrich}
+        {{Software-ergonomics on the Atari ST}}
+        {}
+        {238-238}
+        {/TUGboat/tb09-3/tb22heidrich.pdf}
+
+
+\capsule{}%subsecnn
+        {Software}%replace|Hyphenation
+        {}
+        {Hyphenation exception log}
+        {}
+        {239-241}
+        {/TUGboat/tb09-3/tb22hyf.pdf}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Joachim~Schrod}
+        {{\LaTeX} fonts and suggested magnifications}
+        {}
+        {241-243}
+        {/TUGboat/tb09-3/tb22schrod.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Doug~Henderson}
+        {{Mode\_def's please}}
+        {}
+        {244-245}
+        {/TUGboat/tb09-3/tb22henderson.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Dominik~Wujastyk}
+        {Further faces}
+        {}
+        {246-251}
+        {/TUGboat/tb09-3/tb22wujastyk.pdf}
+
+
+%THEcategory{Output Devices}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Don~Hosek}
+        {{\TeX} output devices (with charts)}
+        {}
+        {251-260}
+        {/TUGboat/tb09-3/tb22output.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Peter~Abbott \and Andrew~Trevorrow}
+        {{DVItoVDU{} 3.0 and PSPRINT 3.0}}
+        {}
+        {261-262}
+        {/TUGboat/tb09-3/tb22abbott.pdf}
+
+
+%THEcategory{Site Reports}
+
+\capsule{}
+        {Site Reports}
+        {}
+        {}
+        {}
+        {263-269}
+        {/TUGboat/tb09-3/tb22site.pdf}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Peter~Abbott}
+        {{A UK-based \TeX{} mail archive server}}
+        {}
+        {263-264}
+        {/TUGboat/tb09-3/tb22site.pdf}
+
+
+%THEsite{Atari ST}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Klaus~Guntermann}
+        {{Atari ST site report}}
+        {}
+        {264-265}
+        {/TUGboat/tb09-3/tb22site.pdf}
+
+
+%THEsite{Data General}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Bart~Childs}
+        {{Data General site report}}
+        {}
+        {265-265}
+        {/TUGboat/tb09-3/tb22site.pdf}
+
+
+%THEsite{IBM VM/CMS}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Dean~Guenther}
+        {{IBM VM/CMS site report}}
+        {}
+        {265-265\offset{.5}}
+        {/TUGboat/tb09-3/tb22site.pdf}
+
+
+%THEsite{IBM MVS}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Craig~Platt}
+        {{MVS site report}}
+        {}
+        {266-267}
+        {/TUGboat/tb09-3/tb22site.pdf}
+
+
+%THEsite{UNIX}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Pierre~MacKay}
+        {Unix {\TeX} site report}
+        {}
+        {267-269}
+        {/TUGboat/tb09-3/tb22site.pdf}
+
+
+%THEcategory{Typesetting on PCs}
+
+
+\capsule{}%subsec
+        {Typesetting on PCs}
+        {Mitch~Pfeffer \and Alan~Hoenig}
+        {Recovering from a hard-disk failure}
+        {}
+        {269-271}
+        {/TUGboat/tb09-3/tb22pfeffer.pdf}
+
+
+\capsule{}%subsec
+        {Typesetting on PCs}
+        {C.G.~van~der~Laan \and J.R.~Luyten}
+        {{Evaluation of K-talk}}
+        {}
+        {271-272}
+        {/TUGboat/tb09-3/tb22laan.pdf}
+
+
+%THEcategory{Training}
+
+
+\capsule{}%subsec
+        {Training}
+        {Alan~Wittbecker}
+        {Making paragraphs}
+        {}
+        {272-276}
+        {/TUGboat/tb09-3/tb22wittbecker.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Stephan~v.~Bechtolsheim}
+        {A tutorial on {\tt\bs futurelet}}
+        {}
+        {276-278}
+        {/TUGboat/tb09-3/tb22bechtolsheim.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Thomas~Kneser}
+        {Compact matrix display}
+        {}
+        {279-284}
+        {/TUGboat/tb09-3/tb22kneser.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Wolfgang~Appelt}
+        {Typesetting chess}
+        {}
+        {284-287}
+        {/TUGboat/tb09-3/tb22appelt.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {J.~E.~Pittman}
+        {Equation numbering in plain {\TeX}}
+        {}
+        {287-288}
+        {/TUGboat/tb09-3/tb22pittman-eq.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {J.~E.~Pittman}
+        {{\tt Loopy.TeX}}
+        {}
+        {289-291}
+        {/TUGboat/tb09-3/tb22pittman-loop.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {David~F.~Rogers}
+        {A page make-up challenge}
+        {}
+        {292-293}
+        {/TUGboat/tb09-3/tb22rogers.pdf}
+
+
+%THEcategory{\LaTeX}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Michael~DeCorte}
+        {{Contents of {\LaTeX} style collection as of 24 September 1988}}
+        {}
+        {294-297}
+        {/TUGboat/tb09-3/tb22decorte.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Jackie~Damrau}
+        {The {\LaTeX} column}
+        {}
+        {297-297}
+        {/TUGboat/tb09-3/tb22damrau.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Frank~Mittelbach}
+        {A new implementation of the array---and tabular---environments}
+        {}
+        {298-314}
+        {/TUGboat/tb09-3/tb22mitt.pdf}
+
+
+%THEcategory{News \& Announcements}
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {}
+        {}
+        {315-317}
+        {/TUGboat/tb09-3/tb22news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {315-315}
+        {/TUGboat/tb09-3/tb22news.pdf}
+
+
+\capsule{}%subsec
+        {News \& Announcements}
+        {C.~G.~van~der~Laan}
+        {{Dutch {\TeX} Users Group}}
+        {}
+        {316-316}
+        {/TUGboat/tb09-3/tb22news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {{Call for papers: {\bf TUG Tenth Annual Meeting}, Stanford University, 21--23~August~1989}}
+        {}
+        {c3}
+        {/TUGboat/tb09-3/tb22news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {{Call for papers: RIDT'89\Dash International Workshop on Raster Imagining and Digital Typography, Lausanne,~Switzerland,    12--13~October~1989}}
+        {}
+        {316-317}
+        {/TUGboat/tb09-3/tb22news.pdf}
+
+
+%THEcategory{Late-Breaking News}
+
+\capsule{}
+        {Late-Breaking News}
+        {}
+        {}
+        {}
+        {317-318}
+        {/TUGboat/tb09-3/tb22late.pdf}
+
+
+\capsule{}%subsec
+        {Late-Breaking News}
+        {Pierre~MacKay}
+        {{\TeX}hax moves north}
+        {}
+        {317-317\offset{.1}}
+        {/TUGboat/tb09-3/tb22late.pdf}
+
+
+\capsule{}%subsec
+        {Late-Breaking News}
+        {Barbara~Beeton}
+        {Production notes}
+        {}
+        {317-318\offset{.5}}
+        {/TUGboat/tb09-3/tb22late.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking News}
+        {}
+        {A thank you note}
+        {}
+        {318-318}
+        {/TUGboat/tb09-3/tb22late.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking News}
+        {}
+        {{TUG's Tenth}}
+        {}
+        {324-324}
+        {/TUGboat/tb09-3/tb22tenth.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {{Accountant's review of TUG financial records, years ended December 31, 1987 and 1986}}
+        {}
+        {318-321}
+        {/TUGboat/tb09-3/tb22treas.pdf}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {322-324}
+        {/TUGboat/tb09-3/tb22instmem.pdf}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {{TUG membership application}}
+        {}
+        {325-325}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {342-342}
+        {URL}
+
+
+%THEcategory{Supplements}
+
+
+\capsule{}%subsecnn
+        {Supplements}
+        {}
+        {{TUG Membership List Supplement}}
+        {}
+        {1-12\offset{992}}
+        {/TUGboat/tb09-3/tb22mem.pdf}

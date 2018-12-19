@@ -1,0 +1,285 @@
+% $Id$
+
+\issue{17}{4}{53}{December 1996}{}{}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 17:4 as one pdf (1.7mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb17-4/tb53complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1}
+        {/TUGboat/tb17-4/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb17-4/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {333}
+        {/TUGboat/tb17-4/titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {334}
+        {/TUGboat/tb17-4/tb53edit.pdf}
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {335-335}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {}%replace|Conference Notes
+        {}
+        {{\acro{TUG}'97 Update}}
+        {}
+        {336-336}
+        {/TUGboat/tb17-4/tug97update.pdf}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Michel~Goossens}
+        {{The state of \acro{TUG}}}
+        {}
+        {337-340}
+        {/TUGboat/Pres/tb53pres.html}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {340-342}
+        {/TUGboat/tb17-4/tb53beet.pdf}
+        {A historical perspective\\
+The Kyoto Prize for Knuth\\
+Recommended reading:  Why things bite back\\
+Why does a lion represent TeX?}
+        {}
+
+
+\capsule{}%subsecnn
+        {General Delivery}%replace|Knuth Sessions
+        {}%person|Donald Knuth
+        {{Amsterdam, 13 March 1996\Dash Knuth meets \acro{NTG} members}}
+        {}
+        {342-355}
+        {/TUGboat/tb17-4/tb53knun.pdf}
+
+
+\capsule{}%subsecnn
+        {General Delivery}%replace|Knuth Sessions
+        {}%person|Donald Knuth
+        {{{CSTUG}, Charles University, Prague, March 1996\Dash  Questions and answers with        Prof.~Donald~E. Knuth}}
+        {}
+        {355-367}
+        {/TUGboat/tb17-4/tb53knuc.pdf}
+
+
+%THEcategory{Survey}
+
+
+\capsule{}%subsec
+        {Survey}
+        {Philip~Taylor}
+        {{Computer typesetting or electronic publishing?        New trends in scientific publication}}
+        {}
+        {367-381}
+        {/TUGboat/tb17-4/tb53tayl.pdf}
+
+
+%THEcategory{Software \& Tools}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {S.A.~Strelkov and G.R.~Epshtein}
+        {{Making indices for \acro{VINITI}'s        ``Mathematics'' abstract journal}}
+        {}
+        {382-385}
+        {/TUGboat/tb17-4/tb53stre.pdf}
+
+
+%THEcategory{Philology}
+
+
+\capsule{}%subsec
+        {Philology}
+        {Mikhail~Ivanovich~Grinchuk}
+        {{{\TeX} and Russian traditions of typesetting}}
+        {}
+        {385-388}
+        {/TUGboat/tb17-4/tb53grin.pdf}
+
+
+%THEcategory{Humanities}
+
+
+\capsule{}%subsec
+        {Humanities}
+        {Christina~Thiele}
+        {{{\TeX} and the Humanities}}
+        {}
+        {388-393}
+        {/TUGboat/tb17-4/tb53thie.pdf}
+
+
+%THEcategory{Book Review}
+
+
+\capsule{}%subsec
+        {Book Review}
+        {Jonathan~Fine}
+        {{\it The Printing Revolution in Early Modern        Europe}, by {Elizabeth L. Eisenstein}}
+        {}
+        {393-396}
+        {/TUGboat/tb17-4/tb53fine.pdf}
+
+
+%THEcategory{Queries}
+
+
+\capsule{}%subsec
+        {Queries}
+        {George Gr\"atzer}
+        {Suggestions wanted for new edition of        {\it Math into \LaTeX}}
+        {}
+        {396-396}
+        {/TUGboat/tb17-4/tb53query.pdf}
+
+
+\capsule{}%subsec
+        {Queries}
+        {Dirk~Kuypers}
+        {\acro{PPCHTEX} molecule templates}
+        {}
+        {396\offset{.5}}
+        {/TUGboat/tb17-4/tb53query.pdf}
+
+
+%THEcategory{Abstracts}
+
+
+\capsule{}%subsecnn
+        {Abstracts}
+        {}
+        {{\sl Les Cahiers GUTenberg}, Nos.~21--24}
+        {}
+        {397-403}
+        {/TUGboat/tb17-4/tb53cahi.pdf}
+
+
+%THEcategory{News \& Announcements}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {403-405}
+        {/calendar.html}
+
+
+%THEcategory{Late-Breaking\\News}
+
+
+\capsule{}%subsec
+        {Late-Breaking\\News}
+        {Mimi~Burbank}
+        {Production notes}
+        {}
+        {405-405}
+        {/TUGboat/tb17-4/tb53prod.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking\\News}
+        {}
+        {Future issues}
+        {}
+        {405\offset{.5}}
+        {/TUGboat/tb17-4/tb53prod.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsec
+        {TUG Business}
+        {Mimi Burbank}
+        {{Facts and Figures}}
+        {}
+        {405-408\offset{.7}}
+        {/TUGboat/tb17-4/tb53treas.pdf}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {409-409}
+        {/instmem.html}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {{TUG} membership application}
+        {}
+        {410-410}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {411-411}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {411\offset{.5}}
+        {URL}

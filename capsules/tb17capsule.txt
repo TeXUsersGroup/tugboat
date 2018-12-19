@@ -1,0 +1,616 @@
+% $Id$
+
+\issue{8}{1}{17}{April 1987}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 8:1 as one pdf (6.9mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb08-1/tb17complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {1}
+        {/TUGboat/tb08-1/tb17titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {2-2}
+        {/TUGboat/tb08-1/tb17edit.pdf}
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {3-4}
+        {URL}
+
+
+%THEcategory{General Delivery}
+
+\capsule{}
+        {General Delivery}
+        {}
+        {}
+        {}
+        {5-7}
+        {/TUGboat/tb08-1/tb17gendel.pdf}
+
+
+\capsule{}%subquery
+        {General Delivery}
+        {Bart Childs}
+        {President's message}
+        {}
+        {5-5}
+        {/TUGboat/tb08-1/tb17gendel.pdf}
+
+
+\capsule{}%subquery
+        {General Delivery}
+        {Samuel B. Whidden}
+        {Acknowledgement of contributions}
+        {}
+        {5-5\offset{.5}}
+        {/TUGboat/tb08-1/tb17gendel.pdf}
+
+
+\capsule{}%subquery
+        {General Delivery}
+        {Jackie Damrau}
+        {Donald E. Knuth Scholarship}
+        {}
+        {6-6}
+        {/TUGboat/tb08-1/tb17gendel.pdf}
+
+
+\capsule{}%subquery
+        {General Delivery}
+        {Donald Knuth}
+        {It happened: Announcement of \TeX\ 2.1}
+        {}
+        {6-6\offset{.5}}
+        {/TUGboat/tb08-1/tb17gendel.pdf}
+
+
+\capsule{}%subquery
+        {General Delivery}
+        {Kurt Bernardo Wolf}
+        {News of \TeX\ users in Mexico}
+        {}
+        {7-7}
+        {/TUGboat/tb08-1/tb17gendel.pdf}
+
+
+\capsule{}%subquery
+        {General Delivery}
+        {Linda Krick}
+        {Attention, Australian TUG members}
+        {}
+        {7-7\offset{.5}}
+        {/TUGboat/tb08-1/tb17gendel.pdf}
+
+\capsule{}%subsec
+        {General Delivery}
+        {Tony~Siegman}
+        {Book publishing using \TeX}
+        {}
+        {8-11}
+        {/TUGboat/tb08-1/tb17siegman.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Leslie~Lamport}
+        {\TeX\ Output for the Future}
+        {}
+        {12-12}
+        {/TUGboat/tb08-1/tb17lamp.pdf}
+% that is the first page of levy
+
+%THEcategory{Software}
+
+
+\capsule{}%subsec
+        {Software}%add|Literate Programming
+        {Silvio~Levy}
+        {{\tt WEB} adapted to C, another approach}
+        {}
+        {12-13}
+        {/TUGboat/tb08-1/tb17levy.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {Donald~Knuth \and Pierre~MacKay}
+        {Mixing right-to-left texts with left-to-right texts}
+        {}
+        {14-25}
+        {/TUGboat/tb08-1/tb17knutmix.pdf}
+
+
+%THEcategory{Font Forum}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Georgia~K.M.~Tobin}
+        {Some empirical observations on \MF\ design}
+        {}
+        {26-28}
+        {/TUGboat/tb08-1/tb17tobin.pdf}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Neenie~Billawala}
+        {Write-white printing engines and tuning fonts with \MF}
+        {}
+        {29-32}
+        {/TUGboat/tb08-1/tb17billawala.pdf}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Barbara~Beeton}
+        {\MF\ mode\_def\/ settings for various \TeX\ output devices}
+        {}
+        {33-33}
+        {/TUGboat/tb08-1/tb17beet.pdf}
+
+
+%THEcategory{Typesetting on PCs}
+
+
+\capsule{}%subsecnn
+        {Typesetting on PCs}
+        {}
+        {A new \TeX-based book typesetting package for the Macintosh}
+        {}
+        {34-34}
+        {/TUGboat/tb08-1/tb17pc.pdf}
+
+
+%THEcategory{Output Devices}
+
+
+\capsule{}%subsecnn
+        {Output Devices}
+        {}
+        {Charts: \TeX\ output devices}
+        {}
+        {34-40}
+        {/TUGboat/tb08-1/tb17output.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Nelson~H.\thinspace F.~Beebe}
+        {Public domain \TeX\ DVI driver family}
+        {}
+        {41-42}
+        {/TUGboat/tb08-1/tb17beebe.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Andrew~Trevorrow}
+        {DVItoVDU 1.7 and PSPRINT 1.1}
+        {}
+        {42-45}
+        {/TUGboat/tb08-1/tb17trevorrow.pdf}
+
+
+\capsule{}%subsecnn
+        {Output Devices}
+        {George M. Ogilvie}
+        {Benson-Varian 9211 looking for a home}
+        {}
+        {45-45}
+        {/TUGboat/tb08-1/tb17trevorrow.pdf}
+
+
+%THEcategory{Site Reports}
+
+\capsule{}
+        {Site Reports}
+        {}
+        {}
+        {}
+        {46-48}
+        {/TUGboat/tb08-1/tb17site.pdf}
+
+\capsule{}%subsec
+        {Site Reports}
+        {Malcolm~Brown}
+        {Notes from \TeX{}hax}
+        {}
+        {46-46}
+        {/TUGboat/tb08-1/tb17site.pdf}
+
+
+%THEsite{Atari}
+
+\capsule{}
+        {Site Reports}
+        {Edgar Fu\ss{}}
+        {TeX \& Co. on the ST, Part 2}
+        {}
+        {46-47}
+        {/TUGboat/tb08-1/tb17site.pdf}
+
+
+%THEsite{Data General}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Bart Childs}
+        {Data General distribution news}
+        {}
+        {47-47}
+        {/TUGboat/tb08-1/tb17site.pdf}
+
+
+%THEsite{HP 1000}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Tor~Lillqvist}
+        {TeX82 and \MF84 for the HP1000 A-series}
+        {}
+        {47-48}
+        {/TUGboat/tb08-1/tb17site.pdf}
+
+
+%THEsite{Prime}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {John~Crawford}
+        {Prime 50 series site report}
+        {}
+        {48}
+        {/TUGboat/tb08-1/tb17site.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Jim~Fox}
+        {Multiple, independent marks}
+        {}
+        {49-53}
+        {/TUGboat/tb08-1/tb17fox.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {John~S.~Garavelli}
+        {Form letter macros}
+        {}
+        {53-53}
+        {/TUGboat/tb08-1/tb17garavelli.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Edwin V. Bell,\CONNECT{}II}
+        {AutoLetter: A \TeX\ form letter procedure}
+        {}
+        {54-57}
+        {/TUGboat/tb08-1/tb17bell.pdf}
+
+
+%THEcategory{\LaTeX}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Ken Yap}
+        {Contents of \LaTeX\ style collection  as of 15th February 1987}
+        {}
+        {58-59}
+        {/TUGboat/tb08-1/tb17yap.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Graeme~McKinstry}
+        {Form letters}
+        {}
+        {60-61}
+        {/TUGboat/tb08-1/tb17mckinstry.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}%add|Indexing
+        {Maurizio~Zocchi}
+        {\LaTeX's Index Processing}
+        {}
+        {62-62}
+        {/TUGboat/tb08-1/tb17zocchi.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Reinhard~Wonneberger}
+        {Typesetting `Normaltext'}
+        {}
+        {63-72}
+        {/TUGboat/tb08-1/tb17wonneberger.pdf}
+
+
+%THEcategory{Problems}
+
+
+\capsule{}%subquery
+        {Problems}
+        {Alan Hoenig}
+        {TeX\ does windows: A progress report}
+        {}
+        {73-73}
+        {/TUGboat/tb08-1/tb17knutsat.pdf}
+
+
+\capsule{}%subquery
+        {Problems}
+        {Donald E. Knuth}
+        {Problem for a Saturday afternoon}
+        {}
+        {73-73\offset{.5}}
+        {/TUGboat/tb08-1/tb17knutsat.pdf}
+
+
+%THEcategory{Queries}
+
+\capsule{}
+        {Queries}
+        {}
+        {}
+        {}
+        {74-75}
+        {/TUGboat/tb08-1/tb17queries.pdf}
+
+
+\capsule{}%subquery
+        {Queries}
+        {Jennifer Dyck}
+        {APA style in \LaTeX}
+        {}
+        {74-74}
+        {/TUGboat/tb08-1/tb17queries.pdf}
+
+
+\capsule{}%subquery
+        {Queries}
+        {Judy Hawkins}
+        {Chemical formulae}
+        {}
+        {74-74\offset{.3}}
+        {/TUGboat/tb08-1/tb17queries.pdf}
+
+
+\capsule{}%subquery
+        {Queries}
+        {James R. Celoni}
+        {Ancient non-Roman languages}
+        {}
+        {74-74\offset{.6}}
+        {/TUGboat/tb08-1/tb17queries.pdf}
+
+
+\capsule{}%subquery
+        {Queries}
+        {Boyd Michailovsky}
+        {International Phonetic Alphabet}
+        {}
+        {74-74\offset{.7}}
+        {/TUGboat/tb08-1/tb17queries.pdf}
+
+
+\capsule{}%subquery
+        {Queries}
+        {Lawrence D. Cutter}
+        {Line numbering}
+        {}
+        {74-74\offset{.8}}
+        {/TUGboat/tb08-1/tb17queries.pdf}
+
+
+\capsule{}%subquery
+        {Queries}
+        {David Nash}
+        {Dictionary formatting}
+        {}
+        {75-75}
+        {/TUGboat/tb08-1/tb17queries.pdf}
+
+
+\capsule{}%subquery
+        {Queries}
+        {Helen S. Horstman}
+        {Printing out selected pages}
+        {}
+        {75-75\offset{.5}}
+        {/TUGboat/tb08-1/tb17queries.pdf}
+
+
+%THEcategory{Letters}
+
+\capsule{}
+        {Letters}
+        {}
+        {}
+        {}
+        {75-77}
+        {/TUGboat/tb08-1/tb17letters.pdf}
+
+
+\capsule{}%subsec
+        {Letters}
+        {Raymond~A.~Ryan}
+        {Wanted: Help for beginners}
+        {}
+        {75-75\offset{.8}}
+        {/TUGboat/tb08-1/tb17letters.pdf}
+
+
+\capsule{}%subsec
+        {Letters}
+        {Anders~Thulin}
+        {More hyphenation exceptions}
+        {}
+        {76-76}
+        {/TUGboat/tb08-1/tb17letters.pdf}
+
+
+\capsule{}%subsec
+        {Letters}
+        {William~A.~McWorter}
+        {New fonts for mathematics?}
+        {}
+        {76-77}
+        {/TUGboat/tb08-1/tb17letters.pdf}
+
+
+%THEcategory{News \& Announcements}
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {}
+        {}
+        {77-78}
+        {/TUGboat/tb08-1/tb17news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Workshop on Font Design Systems (Sophia-Antipolis, France, 18--19 May 1987)}
+        {}
+        {77-77}
+        {/TUGboat/tb08-1/tb17news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Special Spring Quarter course (Stanford, Donald Knuth):  \TeX: The Program: A case study in software design}
+        {}
+        {77-77\offset{.5}}
+        {/TUGboat/tb08-1/tb17news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Call for Papers: Electronic Publishing, Document Manipulation and Typography inde(Nice, France, 20--22 April 1988)}
+        {}
+        {78-87}
+        {/TUGboat/tb08-1/tb17news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {79-80}
+        {/TUGboat/tb08-1/tb17calendar.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Institutional members}
+        {}
+        {81-82}
+        {/TUGboat/tb08-1/tb17instmem.pdf}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {TUG membership application}
+        {}
+        {83-84}
+        {/join.html}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {\TeX\ order form}
+        {}
+        {85-86}
+        {}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsub
+        {Advertisements}
+        {}
+        {}
+        {}
+        {87-96}
+        {/TUGboat/tb08-1/tb17ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {c2}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {TUG\Dash Job opening, Technical assistant}
+        {}
+        {c3}
+        {URL}
+
+
+%THEcategory{Supplements}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {{\sl Computers \& Typesetting\/}: Errata and Changes}
+        {}
+        {\offset{992}}
+        {URL}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {TUG Membership List}
+        {}
+        {\offset{992.5}}
+        {URL}

@@ -1,0 +1,432 @@
+% $Id$
+
+\issue{6}{2}{12}{July 1985}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 6:2 as one pdf (3.8mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb06-2/tb12complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {53}
+        {/TUGboat/tb06-2/tb12titlepage.pdf}
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses of Officers, Authors and Others}
+        {}
+        {54-54}
+        {}
+
+
+\capsule{}%subsecnn
+        {}%replace|News \& Announcements
+        {}
+        {Official Announcements}
+        {}
+        {55-55}
+        {/TUGboat/tb06-2/tb12ann.pdf}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {TUG 1985 Annual Meeting, Stanford University, August 12--14, 1985}
+        {}
+        {56-56}
+        {/TUGboat/tb06-2/tb12gendel.pdf}
+
+
+%THEcategory{Software}
+
+
+\capsule{}%subsec
+        {Software}
+        {Helmut~J\"urgensen}
+        {Editor's message}
+        {}
+        {56-56\offset{.5}}
+        {/TUGboat/tb06-2/tb12gendel.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {Michael~J.~Ferguson}
+        {A multilingual TeX}
+        {}
+        {57-58}
+        {/TUGboat/tb06-2/tb12ferguson.pdf}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Barbara~Beeton}
+        {Mathematical symbols and Cyrillic fonts ready for distribution}
+        {}
+        {59-63}
+        {/TUGboat/tb06-2/tb12beet.pdf}
+
+
+%THEcategory{Output Devices}
+
+\capsule{}
+        {Output Devices}
+        {}
+        {}
+        {}
+        {64-66}
+        {/TUGboat/tb06-2/tb12output.pdf}
+
+\capsule{}%subsecnn
+        {Output Devices}
+        {}
+        {Chart: Output devices and computers}
+        {}
+        {64-66\offset{.5}}
+        {/TUGboat/tb06-2/tb12output.pdf}
+
+
+\capsule{}%subsecnn
+        {Output Devices}
+        {}
+        {Index to sample output from various devices}
+        {}
+        {66-66}
+        {/TUGboat/tb06-2/tb12output.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Alan~Spragens}
+        {Graphics commands for {\TeX}\Dash Discussion in {\TeX}hax conference}
+        {}
+        {66-68}
+        {/TUGboat/tb06-2/tb12spragens.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Norman~W.~Naugle \and Tomas~G.~Rokicki}
+        {Miscellaneous activity at Texas A\&M}
+        {}
+        {69-72}
+        {/TUGboat/tb06-2/tb12naugle.pdf}
+
+
+%THEcategory{Site Reports}
+
+\capsule{}
+        {Site Reports}
+        {}
+        {}
+        {}
+        {73-81}
+        {/TUGboat/tb06-2/tb12site.pdf}
+
+
+\capsule{}%subsecnn
+        {Site Reports}
+        {}
+        {{\TeX}hax activity at Spring DECUS}
+        {}
+        {73-73}
+        {/TUGboat/tb06-2/tb12site.pdf}
+
+
+%THEsite{IBM Group}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Alan~Spragens}
+        {CMS {\TeX} site report}
+        {}
+        {73-75}
+        {/TUGboat/tb06-2/tb12site.pdf}
+
+
+%THEsite{DEC 20}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Hans~Riesel}
+        {Report on experience with {\TeX}80}
+        {}
+        {76-79}
+        {/TUGboat/tb06-2/tb12site.pdf}
+
+
+%THEsite{HP 9000 ser.~500}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Gregory~Marriott}
+        {A {\TeX}82 implementation on the HP9000 series 500}
+        {}
+        {80-80}
+        {/TUGboat/tb06-2/tb12site.pdf}
+
+
+%THEsite{UNIX}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Richard Furuta}
+        {Unix {\TeX} site report}
+        {}
+        {81-81}
+        {/TUGboat/tb06-2/tb12site.pdf}
+
+
+%THEsite{\VAX/VMS}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Barry~Smith}
+        {{\VAX}/VMS site report}
+        {}
+        {81-81\offset{.5}}
+        {/TUGboat/tb06-2/tb12site.pdf}
+
+
+%THEcategory{``small'' \TeX}
+
+
+\capsule{}%subsec
+        {``small'' \TeX}
+        {Lance~Carnes}
+        {Table of ``small'' {\TeX} implementations}
+        {}
+        {82-82}
+        {/TUGboat/tb06-2/tb12small.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Amy~Hendrickson}
+        {Some diagonal line hacks}
+        {}
+        {83-86}
+        {/TUGboat/tb06-2/tb12hendiag.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Amy~Hendrickson}
+        {A (possibly) totally useless macro}
+        {}
+        {86-86}
+        {/TUGboat/tb06-2/tb12henduseless.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {August~Mohr}
+        {Multi-column layout in {\TeX}80}
+        {}
+        {87-95}
+        {/TUGboat/tb06-2/tb12mohr.pdf}
+
+
+%THEcategory{Letters}
+
+\capsule{}
+        {Letters}
+        {}
+        {}
+        {}
+        {96-96}
+        {/TUGboat/tb06-2/tb12lett.pdf}
+
+\capsule{}%subsec
+        {Letters}
+        {Jean-Luc~Bonnetain}
+        {Author vs.\ proofreader}
+        {}
+        {96-96\offset{.3}}
+        {/TUGboat/tb06-2/tb12lett.pdf}
+
+
+\capsule{}%subsec
+        {Letters}
+        {John~Greene}
+        {Transatlantic {\TeX}}
+        {}
+        {96-96\offset{.6}}
+        {/TUGboat/tb06-2/tb12lett.pdf}
+
+
+%THEcategory{News \& Announcements}
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {}
+        {}
+        {97-98}
+        {/TUGboat/tb06-2/tb12news.pdf}
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {97-97}
+        {/TUGboat/tb06-2/tb12news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {International Conference on Text Processing and Document~Manipulation, Nottingham, England, April~14--16,~1986}
+        {}
+        {98-98}
+        {/TUGboat/tb06-2/tb12news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {PROTEXT II, Dublin, Ireland, October~21--25,~1985}
+        {}
+        {98-98\offset{.5}}
+        {/TUGboat/tb06-2/tb12news.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsec
+        {TUG Business}
+        {Samuel~B.~Whidden}
+        {TUG 1984 financial report with comparisons}
+        {}
+        {99-100}
+        {/TUGboat/tb06-2/tb12treas.pdf}
+
+
+%THEcategory{Advertisements}
+
+\capsule{}
+        {Advertisements}
+        {}
+        {}
+        {}
+        {100-104}
+        {/TUGboat/tb06-2/tb12ads.pdf}
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {The Metafoundry\Dash Introducing MF Medley}
+        {}
+        {100-100}
+        {/TUGboat/tb06-2/tb12ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} and {\MF} reports available from the\break Stanford Computer Science Department}
+        {}
+        {101-101}
+        {/TUGboat/tb06-2/tb12ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Addison-Wesley\Dash Micro{\TeX}}
+        {}
+        {102-102}
+        {/TUGboat/tb06-2/tb12ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Textset, Inc.}
+        {}
+        {103-103}
+        {/TUGboat/tb06-2/tb12ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Personal {\TeX}, Inc.\Dash PC\thinspace{\TeX} is here}
+        {}
+        {104-104}
+        {/TUGboat/tb06-2/tb12ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} lectures on tape}
+        {}
+        {c3}
+        {/TUGboat/tb06-2/tb12ads.pdf}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {Membership application and order form}
+        {}
+        {105-106}
+        {/join.html}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {{\TeX}82 order form}
+        {}
+        {107-108}
+        {URL}
+
+
+%THEcategory{Supplements}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {The {\TeX}book: Errata and Changes}
+        {}
+        {\offset{992}}
+        {URL}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {TUG Membership List, including Profile of {\TeX} installations}
+        {}
+        {\offset{992.5}}
+        {URL}

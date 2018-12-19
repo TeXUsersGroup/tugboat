@@ -1,0 +1,347 @@
+% $Id$
+
+\issue{17}{1}{50}{March 1996}{}{}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 17:1 as one pdf (2.2mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb17-1/tb50complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1}
+        {/TUGboat/tb17-1/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb17-1/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {1}
+        {/TUGboat/tb17-1/titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {2}
+        {/TUGboat/tb17-1/tb50edit.pdf}
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {3-4}
+        {/TUGboat/tb17-1/tug97.pdf}
+
+\capsule{}%subsecnn
+        {}%replace|News \& Announcements
+        {}
+        {Soliciting Bids for \acro{TUG}\,'97}
+        {}
+        {4-4}
+        {/TUGboat/tb17-1/tug97.pdf}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Michel~Goossens}
+        {From the president}
+        {}
+        {5-6}
+        {/TUGboat/Pres/tb50pres.html}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {6-7}
+        {/TUGboat/tb17-1/tb50beet.pdf}
+        {DEK on tour\\
+TUGboat: the year ahead}
+	{}
+
+
+%THEsubheads{ {DEK on tour}; {\TUB}: The year ahead}
+
+
+\capsule{}%subsecnn
+        {General Delivery}%replace|Knuth Sessions
+        {}%person|Donald Knuth
+        {{TUG\,'95: Questions and answers with Prof.~Donald~E. Knuth}}
+        {}
+        {7-22}
+        {/TUGboat/tb17-1/tb50knut.pdf}
+
+
+%THEcategory{Software \& Tools}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Frank G. Bennett,\CONNECT{}Jr.}
+        {Camel: Kicking over the bibliographic traces in BibTeX}
+        {}
+        {22-28}
+        {/TUGboat/tb17-1/tb50benn.pdf}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Filip~Machi, Jerrold~E.~Marsden \and Wendy~G.~McKay}
+        {{Corrigendum:  Introduction to {Fas\TeX}: A system of keyboard shortcuts        for the fast keying of~{\TeX}        (\tubissue 16(4), pp.~358--363)}}
+        {}
+        {28-28}
+        {/TUGboat/tb17-1/tb50mars.pdf}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Donald~E.~Knuth}
+        {{Important message regarding CM fonts}}
+        {}
+        {29-29}
+        {/TUGboat/tb17-1/tb50cmup.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Darko~\v{Z}ubrini\'c}
+        {Croatian fonts}
+        {}
+        {29-33\offset{.5}}
+        {/TUGboat/tb17-1/tb50zubr.pdf}
+
+
+%THEcategory{Book Reviews}
+
+
+\capsule{}%subsec
+        {Book Reviews}
+        {J.~Vesel\'y}
+        {Two new books on {\TeX} in the {Czech Republic}}
+        {}
+        {34-34}
+        {/TUGboat/tb17-1/tb50revc.pdf}
+        {Petr Ol\v{s}\'ak, {\it Typografick\'y syst\'em {\TeX} ({\TeX} typesetting system)\/}\\
+Ji\v{r}\'{\i} Rybi\v{c}ka, {\it \LaTeX\ pro za\v{c}\'ate\v{c}n\'{\i}ky (\LaTeX\ for beginners)}}
+        {}
+
+
+\capsule{}%subsec
+        {Book Reviews}
+        {Lynne~A.~Price}
+        {{Ronald C. Turner}, {Timothy A. Douglass}, and  {Audrey J. Turner}, {{\it\acro{README.1ST}: \acro{SGML} for        Writers and Editors}}}
+        {}
+        {35-37}
+        {/TUGboat/tb17-1/tb50revs.pdf}
+
+
+%THEcategory{Letters}
+
+
+\capsule{}%subsec
+        {Letters}
+        {Rama~Porrat}
+        {There's still something missing{\dots}}
+        {}
+        {37-37}
+        {/TUGboat/tb17-1/tb50porr.pdf}
+
+
+%THEcategory{Resources}
+
+
+\capsule{}%subsec
+        {Resources}
+        {Mimi~Burbank \and Michel~Goossens}
+        {Electronic news from the family}
+        {}
+        {37-42\offset{.5}}
+        {/TUGboat/tb17-1/tb50lugs.pdf}
+
+
+%THEcategory{Tutorials}
+
+
+\capsule{}%subsec
+        {Tutorials}
+        {Keith~Reckdahl}
+        {{Using \acro{EPS} graphics in {\LaTeXe} documents,  Part~1: The graphics and graphicx packages}}
+        {}
+        {43-53}
+        {/TUGboat/tb17-1/tb50reck.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Don~Hosek}
+        {That ol' devil \cs{expandafter}}
+        {}
+        {53-54}
+        {/TUGboat/tb17-1/tb50hose.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {J.~Hagen \and A.~F.~Otten}
+        {{\acro{PPCH\TeX}}: Typesetting chemical formulas in {\TeX}}
+        {}
+        {54-66}
+        {/TUGboat/tb17-1/tb50hage.pdf}
+
+
+%THEcategory{\LaTeX}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {David~Carlisle}
+        {{A {\LaTeX} tour, Part 1: The basic distribution}}
+        {}
+        {67-73}
+        {/TUGboat/tb17-1/tb50carl.pdf}
+
+
+%THEcategory{Abstracts}
+
+
+\capsule{}%subsecnn
+        {Abstracts}
+        {}
+        {{\sl Les Cahiers GUTenberg}, No.~20}
+        {}
+        {73-74}
+        {/TUGboat/tb17-1/tb50cahi.pdf}
+
+
+%THEcategory{News \&\\Announcements}
+
+
+\capsule{}%subsecnn
+        {News \&\\Announcements}
+        {}
+        {Calendar}
+        {}
+        {74-75}
+        {/calendar.html}
+
+
+\capsule{}%subsecnn
+        {News \&\\Announcements}
+        {}
+        {{TUG\,'96 Preliminary schedule}}
+        {}
+        {76-77}
+        {/TUGboat/tb17-1/tug96.pdf}
+
+
+%THEcategory{Late-Breaking\\News}
+
+
+\capsule{}%subsec
+        {Late-Breaking\\News}
+        {Mimi~Burbank}
+        {Production notes}
+        {}
+        {78-78}
+        {/TUGboat/tb17-1/tb50prod.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking\\News}
+        {}
+        {Future issues}
+        {}
+        {78\offset{.5}}
+        {/TUGboat/tb17-1/tb50prod.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {{TUG Bylaws}}
+        {}
+        {79-83}
+        {/bylaws/}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {1996 \acro{TUG} election cancelled}
+        {}
+        {84-84}
+        {/TUGboat/tb17-1/board.pdf}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {85-85}
+        {/instmem.html}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {TUG membership application}
+        {}
+        {86-86}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {87-87}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {87\offset{.5}}
+        {URL}

@@ -1,0 +1,367 @@
+% $Id$
+
+\issue{13}{3}{36}{October 1992}{}{TUG 1992 Proceedings (Portland, Oregon)}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 13:3 as one pdf (13mb)}
+        {}
+        {\offset{.05}}
+        {/TUGboat/tb13-3/tb36complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb13-3/tb36cover2.pdf}
+
+\capsulenoprint{}%subsecnn
+        {}
+        {}
+        {Title page}
+        {}
+        {249}
+        {/TUGboat/tb13-3/tb36titlepage.pdf}
+
+
+\capsulenoprint{}%subsecnn
+        {}
+        {}
+        {Editorial information}
+        {}
+        {250}
+        {/TUGboat/tb13-3/tb36edit.pdf}
+
+%THEcategory{Introduction}
+
+
+\capsule{}%subsec
+        {Introduction}
+        {Malcolm~Clark}
+        {President's introduction}
+        {}
+        {251-252}
+        {/TUGboat/tb13-3/intro.pdf}
+
+
+%THEcategory{Keynote Address}
+
+
+\capsule{}%subsec
+        {Keynote Address}%add|Graphics
+        {Malcolm~Clark}
+        {Portable graphics in {\TeX}}
+        {}
+        {253-260}
+        {/TUGboat/tb13-3/clark-keynote.pdf}
+
+
+%THEcategory{Software}
+
+
+\capsule{}%subsec
+        {Software}%add|Literate Programming
+        {Bart~Childs}
+        {Literate programming, a practitioner's view}
+        {}
+        {261-268}
+        {/TUGboat/tb13-3/childs.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {Steve~Hampson \and Barry~Smith}
+        {A high performance {\TeX} for the Motorola~68000 processor family}
+        {}
+        {269-271}
+        {/TUGboat/tb13-3/smith.pdf}
+
+
+%THEcategory{Front Ends}
+
+
+\capsule{}%subsec
+        {Front Ends}
+        {Harry L. Baldwin,\CONNECT{}Jr.}
+        {Using a high-level language as an aid in writing {\TeX} documents}
+        {}
+        {272-280}
+        {/TUGboat/tb13-3/baldwin.pdf}
+
+
+\capsule{}%subsec
+        {Front Ends}
+        {Larry~F.~Bennett}
+        {T-EDIT, a collection of editing macros for {\TeX}}
+        {}
+        {281-290}
+        {/TUGboat/tb13-3/bennett.pdf}
+
+
+\capsule{}%subsec
+        {Front Ends}
+        {Robert~McGaffey}
+        {Automatic tables using {\SMC SGML}, {\SMC C}, and {\TeX}}
+        {}
+        {291-294}
+        {/TUGboat/tb13-3/mcgaffey.pdf}
+
+
+\capsule{}%subsec
+        {Front Ends}
+        {Anthony~J.~Starks}
+        {Dotex\Dash integrating {\TeX} into the X-window system}
+        {}
+        {295-303}
+        {/TUGboat/tb13-3/starks.pdf}
+
+
+\capsule{}%subsec
+        {Front Ends}
+        {Kresten~Krab~Thorup}
+        {GNU emacs as a front end to {\LaTeX}}
+        {}
+        {304-308}
+        {/TUGboat/tb13-3/thorup.pdf}
+
+
+\capsule{}%subsec
+        {Front Ends}
+        {Walter~van~der~Laan \and Johannes~Braams}
+        {Writing reports with more than a hundred people}
+        {}
+        {309-314}
+        {/TUGboat/tb13-3/braams.pdf}
+
+
+%THEcategory{Graphics}
+
+
+\capsule{}%subsec
+        {Graphics}
+        {Jackie~Damrau}
+        {Discovering graphics in {\LaTeX} documents}
+        {}
+        {315-321}
+        {/TUGboat/tb13-3/damrau.pdf}
+
+
+\capsule{}%subsec
+        {Graphics}
+        {Robert~L.~Harris}
+        {Preparing halftones for use in {\TeX}}
+        {}
+        {322-326}
+        {/TUGboat/tb13-3/harris.pdf}
+
+
+\capsule{}%subsec
+        {Graphics}
+        {David~Salomon}
+        {Creating shaded rectangles with {\PS}}
+        {}
+        {327-329}
+        {/TUGboat/tb13-3/salomon.pdf}
+
+
+\capsule{}%subsec
+        {Graphics}
+        {Neil~A.~Weiss}
+        {Creation and incorporation of {\PS} graphics        with {\TeX}-formatted labels into~{\TeX} documents}
+        {}
+        {330-334}
+        {/TUGboat/tb13-3/weiss.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Timo~Knuutila}
+        {How to combine multiple languages, {\PS}, and {\LaTeX}}
+        {}
+        {335-340}
+        {/TUGboat/tb13-3/knuutila.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Victor~Eijkhout}
+        {Just give me a lollipop (it makes my heart go giddy-up)}
+        {}
+        {341-346}
+        {/TUGboat/tb13-3/eijkhout.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {James~L.~Hafner}
+        {Foil{\TeX}, a {\LaTeX}-like system for typesetting foils}
+        {}
+        {347-356}
+        {/TUGboat/tb13-3/hafner.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Peter~Abbott}
+        {Typesetting a magazine the easy way}
+        {}
+        {357-361}
+        {/TUGboat/tb13-3/abbott.pdf}
+
+
+%THEcategory{File Management}
+
+
+\capsule{}%subsec
+        {File Management}%replace|Methods
+        {Mimi~Burbank \and Donna~Burnette}
+        {Using {\TeX} for a publications database}
+        {}
+        {362-371}
+        {/TUGboat/tb13-3/burbank.pdf}
+
+
+%THEcategory{Future Issues}
+
+
+\capsule{}%subsec
+        {Future Issues}%replace|Accessibility
+        {T.~V.~Raman}
+        {An audio view of ({\La}){\TeX} documents}
+        {}
+        {372-379}
+        {/TUGboat/tb13-3/raman.pdf}
+
+
+\capsule{}%subsec
+        {Future Issues}%replace|Electronic Documents
+        {Dennis~S.~Arnon, Isabelle~Attali \and Paul~Franchi-Zannettacci}
+        {Model-based conversions of {\LaTeX} documents}
+        {}
+        {380-389}
+        {/TUGboat/tb13-3/arnon.pdf}
+
+
+%THEcategory{Reports}
+
+
+\capsule{}%subsec
+        {Reports}%replace|\LaTeX
+        {Chris~Rowley}
+        {{\LaTeX}3 update}
+        {}
+        {390-391}
+        {/TUGboat/tb13-3/tb36rowley.pdf}
+
+
+\capsule{}%subsecnn
+        {Reports}%replace|Abstracts
+        {}
+        {Workshops}
+        {}
+        {391-392}
+        {/TUGboat/tb13-3/workshop-summary.pdf}
+
+
+%THEcategory{Participants}
+
+
+\capsule{}%subsecnn
+        {Participants}
+        {}
+        {Participants at the 1992 TUG Meeting}
+        {}
+        {393-394}
+        {/TUGboat/tb13-3/tb36names.pdf}
+
+
+%THEcategory{Announcements}
+
+\capsule{}
+        {Announcements}
+        {}
+        {}
+        {}
+        {395-399}
+        {/TUGboat/tb13-3/tb36announce.pdf}
+
+\capsule{}%subsecnn
+        {Announcements}
+        {}
+        {The Donald E. Knuth Scholarship for 1992 and 1993}
+        {}
+        {395-396}
+        {/TUGboat/tb13-3/tb36announce.pdf}
+
+
+\capsule{}%subsecnn
+        {Announcements}
+        {}
+        {Calendar}
+        {}
+        {396-397}
+        {/TUGboat/tb13-3/tb36announce.pdf}
+
+
+\capsule{}%subsecnn
+        {Announcements}
+        {}
+        {TUG 1993 annual meeting, Aston University, UK}
+        {}
+        {398-398}
+        {/TUGboat/tb13-3/tb36announce.pdf}
+
+
+\capsule{}%subsecnn
+        {Announcements}
+        {}
+        {TUG 1993 course schedule}
+        {}
+        {399-399}
+        {/TUGboat/tb13-3/tb36announce.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {400-401}
+        {/TUGboat/tb13-3/tb36instmem.pdf}
+
+
+%THEcategory{Advertisements}
+
+\capsule{}
+        {Advertisements}
+        {}
+        {}
+        {}
+        {403-412}
+        {/TUGboat/tb13-3/tb36ads.pdf}
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Consultants}
+        {}
+        {402-402}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {411-411}
+        {/TUGboat/tb13-3/tb36ads.pdf}

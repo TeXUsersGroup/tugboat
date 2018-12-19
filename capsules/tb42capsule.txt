@@ -1,0 +1,335 @@
+% $Id$
+
+\issue{15}{1}{42}{March 1994}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 15:1 as one pdf (8.2mb)}
+        {}
+        {\offset{.05}}
+        {/TUGboat/tb15-1/tb42complete.pdf}
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {3-4}
+        {/TUGboat/tb15-1/tb42addresses.pdf}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Christina~Thiele}
+        {Opening words}
+        {}
+        {5-6}
+        {/TUGboat/tb15-1/tb42thiele.pdf}
+
+
+%THEsubheads{ Board news; {The} annual meeting; {\TeX} in new places;        {Announcing} {Euro\TeX}'94; {Office} updates}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {6-7}
+        {/TUGboat/tb15-1/tb42beet.pdf}
+	{{\TUB} wish list;\\
+{Another} award for {DEK};\\
+{New} magazine on type and typography;\\
+{Hyphenation} and exceptions}
+	{}
+
+\capsule{}%subsec
+        {General Delivery}
+        {Donald~Arseneau, Raymond~Chen \and Victor~Eijkhout}
+        {The {\TeX} hierarchy}
+        {}
+        {7-9}
+        {/TUGboat/tb15-1/tb42arseneau.pdf}
+
+
+%THEcategory{Philology}
+
+
+\capsule{}%subsec
+        {Philology}
+        {Claudio~Beccari}
+        {Typesetting of ancient languages}
+        {}
+        {9-16}
+        {/TUGboat/tb15-1/tb42becc-ancient.pdf}
+
+
+\capsule{}%subsec
+        {Philology}
+        {Claudio~Beccari}
+        {Comments on the paper ``{Typesetting} {Catalan}        texts with {\TeX}'' ({\tubissue 14(3)}, pp.~252--259)}
+        {}
+        {17-17}
+        {/TUGboat/tb15-1/tb42becc-catalan.pdf}
+
+
+\capsule{}%subsec
+        {Philology}
+        {Gabriel~Valiente~Feruglio \and Robert~Fuster}
+        {Comments on the comments: {Typesetting} {Catalan} texts with {\TeX}}
+        {}
+        {17-18}
+        {/TUGboat/tb15-1/tb42valiente.pdf}
+
+
+%THEcategory{Book Reviews}
+
+
+\capsule{}%subsec
+        {Book Reviews}
+        {Nico~Poppelier}
+        {{George Gr\"atzer}, {\it Math into {\TeX}}}
+        {}
+        {18-19}
+        {/TUGboat/tb15-1/tb42poppelier-gratzer.pdf}
+
+
+\capsule{}%subsec
+        {Book Reviews}
+        {T.~L.~(Frank)~Pappas}
+        {{Stephan von Bechtolsheim}, {\it {\TeX} in Practice}}
+        {}
+        {19-21}
+        {/TUGboat/tb15-1/tb42pappas.pdf}
+
+
+\capsule{}%subsec
+        {Book Reviews}
+        {Claudio~Beccari}
+        {{Gianni Gilardi}, {\it Il {\TeX}\Dash {Introduzione} al linguaggio e complementi avanzati}}
+        {}
+        {21-22}
+        {/TUGboat/tb15-1/tb42becc-gilardi.pdf}
+
+
+\capsule{}%subsec
+        {Book Reviews}
+        {Merry~Obrecht~Sawdey}
+        {{Erik Spiekermann} \& {E.~M. Ginger}, {\it Stop Stealing Sheep}}
+        {}
+        {22-24}
+        {/TUGboat/tb15-1/tb42sawdey.pdf}
+
+
+\capsule{}%subsec
+        {Book Reviews}
+        {Nico~Poppelier}
+        {{Eric van Herwijnen}, {\it Practical SGML}}
+        {}
+        {24-25}
+        {/TUGboat/tb15-1/tb42poppelier-herwijnen.pdf}
+
+
+\capsule{}%subsec
+        {Book Reviews}%add|Literate Programming
+        {Christine~Detig \and Joachim Schrod}
+        {{Donald E. Knuth}, {\it Literate Programming}}
+        {}
+        {25-27}
+        {/TUGboat/tb15-1/tb42detig.pdf}
+
+
+%THEcategory{Tutorials}
+
+
+\capsule{}%subsec
+        {Tutorials}
+        {David~Salomon}
+        {Output routines: {Examples} and techniques,        {Part~IV}: {Horizontal} techniques}
+        {}
+        {28-40}
+        {/TUGboat/tb15-1/tb42salomon-output.pdf}
+
+
+\capsule{}%subsec
+        {Tutorials}
+        {David~Salomon}
+        {Verbatim copying and listing}
+        {}
+        {40-54}
+        {/TUGboat/tb15-1/tb42salomon-verbatim.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Victor~Eijkhout}
+        {The bag of tricks}
+        {}
+        {55-57}
+        {/TUGboat/tb15-1/tb42eijkhout.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Hans~van~der~Meer}
+        {Random bit generator in {\TeX}}
+        {}
+        {57-58}
+        {/TUGboat/tb15-1/tb42meer.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {David~Salomon \and Matthew~N.~Hendryx}
+        {Slanted lines with controlled thickness}
+        {}
+        {59-62}
+        {/TUGboat/tb15-1/tb42salomon-slant.pdf}
+
+
+%THEcategory{Letters}
+
+
+\capsule{}%subsec
+        {Letters}%add|Indexing
+        {Jonathan~Fine}
+        {On indexing and errors}
+        {}
+        {62-62}
+        {/TUGboat/tb15-1/tb42finl.pdf}
+
+
+%THEcategory{\LaTeX}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Chris~Rowley}
+        {{\LaTeXe} update, dateline: 31 {January} 1994}
+        {}
+        {63}
+        {/TUGboat/tb15-1/tb42rowley.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {David~Rhead}
+        {Addenda: {A} suggested ``operational requirement'' for        {\LaTeX}3's treatment of bibliographic references (\tubissue 14(4), pp.\ 425-433)}
+        {}
+        {64-65}
+        {/TUGboat/tb15-1/tb42rhead.pdf}
+
+
+%THEcategory{News \&\\Announcements}
+
+
+\capsule{}%subsecnn
+        {News \&\\Announcements}
+        {}
+        {Calendar}
+        {}
+        {66-67}
+        {/TUGboat/tb15-1/tb42calendar.pdf}
+
+
+\capsule{}%subsecnn
+        {News \&\\Announcements}
+        {}
+        {{TUG}\,'94\Dash {Announcement} and preliminary program (Santa Barbara, California, 31 July--4 August 1994)}
+        {}
+        {68-69}
+        {/TUGboat/tb15-1/tb42ann.pdf}
+
+
+\capsule{}%subsecnn
+        {News \&\\Announcements}
+        {}
+        {Call for papers, {Euro\TeX}\,'94  (Gdansk, Poland, 26--30 September 1994)}
+        {}
+        {69-70}
+        {/TUGboat/tb15-1/tb42ann.pdf}
+
+
+%THEcategory{Late-Breaking News}
+
+
+\capsule{}%subsec
+        {Late-Breaking News}
+        {Barbara~Beeton}
+        {Production notes}
+        {}
+        {74-74}
+        {/TUGboat/tb15-1/tb42news.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking News}
+        {}
+        {Coming next issue}
+        {}
+        {75-75}
+        {/TUGboat/tb15-1/tb42news.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Meet the {Board}, {Part} {I}}
+        {}
+        {70-73}
+        {/TUGboat/tb15-1/tb42board.pdf}
+
+
+%THEsubheads{ {Barbara Beeton}; {Mimi Burbank}; {Jackie Damrau}; {Luzia Dietsche};        {Michael~Doob}; {Michel~Goossens}; {Tom~Rokicki}}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {75-76}
+        {/TUGboat/tb15-1/tb42instmem.pdf}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {TUG membership application}
+        {}
+        {77-78}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {79-79}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {81-81}
+        {/TUGboat/tb15-1/tb42ads.pdf}

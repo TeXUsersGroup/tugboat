@@ -1,0 +1,368 @@
+% $Id$
+
+\issue{10}{4}{26}{December 1989}{}{TUG 1989 Conference Proceedings (Stanford, California)}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 10:4 as one pdf (19mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb10-4/tb26complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {463}
+        {/TUGboat/tb10-3/tb25titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {464}
+        {/TUGboat/tb10-3/tb25edit.pdf}
+
+%THEcategory{Introduction}
+
+
+\capsule{}%subsec
+        {Introduction}
+        {Christina Thiele}
+        {Editor's introduction}
+        {}
+        {465-465}
+        {/TUGboat/tb10-4/tb26thiele.pdf}
+
+
+%THEcategory{Font Forum}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Doug Henderson}
+        {Introduction to {\MF}}
+        {}
+        {467-479}
+        {/TUGboat/tb10-4/tb26henderson.pdf}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Neenie Billawala}
+        {Opening Pandora's box}
+        {}
+        {481-489}
+        {/TUGboat/tb10-4/tb26billawala.pdf}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Alan Hoenig}
+        {Fractal images with {\TeX}}
+        {}
+        {491-498}
+        {/TUGboat/tb10-4/tb26hoenig.pdf}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Don Hosek}
+        {Design of Oriental characters with {\MF}}
+        {}
+        {499-502}
+        {/TUGboat/tb10-4/tb26hosek.pdf}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Bob Batzinger}
+        {Thai languages and {\MF}}
+        {}
+        {503-503}
+        {/TUGboat/tb10-4/tb26batzinger.pdf}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {John D.~Hobby}
+        {A {\MF}-like system with {\PS} output}
+        {}
+        {505-512}
+        {/TUGboat/tb10-4/tb26hobby.pdf}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {R.E.~Youngen, W.B.~Woolf \and D.C.~Latterner}
+        {Migration from Computer Modern fonts to Times fonts}
+        {}
+        {513-519}
+        {/TUGboat/tb10-4/tb26youngen.pdf}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Arvin C.~Conrad}
+        {Fine typesetting with {\TeX} using native Autologic fonts}
+        {}
+        {521-528}
+        {/TUGboat/tb10-4/tb26conrad.pdf}
+
+
+%THEcategory{KEYNOTE ADDRESS}
+
+
+\capsule{}%subsec
+        {KEYNOTE ADDRESS}%add|Software \& Tools
+        {Donald E.~Knuth}
+        {Notes on the errors of {\TeX}}
+        {}
+        {529-531}
+        {/TUGboat/tb10-4/tb26knut.pdf}
+
+
+%THEcategory{{\TeX} Training}
+
+
+\capsule{}%subsec
+        {{\TeX} Training}
+        {Michael Doob}
+        {Of the computer scientist, by the computer scientist, for the computer scientist}
+        {}
+        {533-539}
+        {/TUGboat/tb10-4/tb26doob.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Training}
+        {Hope Hamilton}
+        {Mastering {\TeX} with templates}
+        {}
+        {541-548}
+        {/TUGboat/tb10-4/tb26hamilton.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Training}
+        {Anita Z.~Hoover}
+        {Using WordPerfect 5.0 to create {\TeX} and {\LaTeX} documents}
+        {}
+        {549-559}
+        {/TUGboat/tb10-4/tb26hoover.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Training}
+        {Robin L.~Kubek}
+        {{\TeX} for the word processing operator}
+        {}
+        {561-566}
+        {/TUGboat/tb10-4/tb26kubek.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Training}
+        {Jo Ann Rattey-Hicks}
+        {{\TeX} and its versatility in office production}
+        {}
+        {567-577}
+        {/TUGboat/tb10-4/tb26rattey.pdf}
+
+
+%THEcategory{General Applications}
+
+
+\capsule{}%subsec
+        {General Applications}%replace|Site Reports
+        {Max D\'\i az}
+        {{\TeX} in M\'exico}
+        {}
+        {579-593}
+        {/TUGboat/tb10-4/tb26diaz.pdf}
+
+
+\capsule{}%subsec
+        {General Applications}%replace|Software \& Tools
+        {James Haskell, Wally Deschene \and Alan Stolleis}
+        {{\TeX} for        30,000}
+        {}
+        {595-602}
+        {/TUGboat/tb10-4/tb26haskell.pdf}
+
+
+\capsule{}%subsec
+        {General Applications}%replace|Software \& Tools
+        {Alan E.~Wittbecker}
+        {{\TeX} enslaved}
+        {}
+        {603-606}
+        {/TUGboat/tb10-4/tb26wittbecker.pdf}
+
+
+%THEcategory{Graphics Applications}
+
+
+\capsule{}%subsec
+        {Graphics Applications}
+        {J.T.~Renfrow}
+        {Methodologies for preparing and integrating  {\PS} graphics}
+        {}
+        {607-626}
+        {/TUGboat/tb10-4/tb26renfrow.pdf}
+
+
+\capsule{}%subsec
+        {Graphics Applications}
+        {Rolf Olejniczak-Burkert}
+        {{\it texpic\/}\Dash Design and implementation of a picture graphics language in {\TeX}\        \`a~la~{\it pic\/}}
+        {}
+        {627-637}
+        {/TUGboat/tb10-4/tb26olejniczak.pdf}
+
+
+%THEcategory{Database Applications}
+
+
+\capsule{}%subsec
+        {Database Applications}%replace|Software \& Tools
+        {D.C.~Latterner \and W.B.~Woolf}
+        {{\TeX} at {\it Mathematical Reviews\/}}
+        {}
+        {639-654}
+        {/TUGboat/tb10-4/tb26latterner.pdf}
+
+
+\capsule{}%subsec
+        {Database Applications}%replace|Philology
+        {J\"orgen L.~Pind}
+        {Lexicography with {\TeX}}
+        {}
+        {655-665}
+        {/TUGboat/tb10-4/tb26pind.pdf}
+
+
+%THEcategory{General Information}
+
+
+\capsule{}%subsec
+        {General Information}%replace|General Delivery
+        {Malcolm Clark}
+        {Olde worlde {\TeX}}
+        {}
+        {667-674}
+        {/TUGboat/tb10-4/tb26clark.pdf}
+
+
+\capsule{}%subsec
+        {General Information}%replace|General Delivery
+        {Peter Abbott}
+        {The {UK\TeX} archive at the University of  Aston}
+        {}
+        {675-680}
+        {/TUGboat/tb10-4/tb26abbott.pdf}
+
+
+%THEcategory{{\TeX} Tools}
+
+
+\capsule{}%subsec
+        {{\TeX} Tools}
+        {Frank Mittelbach \and Rainer Sch\"opf}
+        {With {\LaTeX} into the nineties}
+        {}
+        {681-690}
+        {/TUGboat/tb10-4/tb26mitt.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Tools}
+        {Andrew Marc Greene}
+        {{\TeX}reation\Dash playing games with {\TeX}'s mind}
+        {}
+        {691-705}
+        {/TUGboat/tb10-4/tb26greene.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Tools}
+        {Bill Cheswick}
+        {A permuted index for {\TeX} and {\LaTeX}}
+        {}
+        {707-713}
+        {/TUGboat/tb10-4/tb26cheswick.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Tools}
+        {Steve Sydoriak}
+        {{\LaTeX} memos and letters}
+        {}
+        {715-726}
+        {/TUGboat/tb10-4/tb26sydoriak.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Tools}
+        {Gary Benson, Debi~Erpenbeck \and Janet~Holmes}
+        {Inserts in a multiple-column format}
+        {}
+        {727-742}
+        {/TUGboat/tb10-4/tb26benson.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Tools}
+        {Mary McClure}
+        {{\TeX} Macros for COBOL syntax diagrams}
+        {}
+        {743-750}
+        {/TUGboat/tb10-4/tb26mcclure.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Tools}
+        {Don L.~Riley \and Brad~L.~Halverson}
+        {Creating an efficient and workable PC interface for {\TeX}}
+        {}
+        {751-759}
+        {/TUGboat/tb10-4/tb26riley.pdf}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {TUG membership application}
+        {}
+        {760-760}
+        {/join.html}
+
+
+%THEcategory{Participants}
+
+
+\capsule{}%subsecnn
+        {Participants}
+        {}
+        {List of participants at the Stanford meeting (August 20--23, 1989)}
+        {}
+        {761-765}
+        {URL}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {765-765}
+        {/TUGboat/tb10-4/tb26ads.pdf}

@@ -1,0 +1,421 @@
+% $Id$
+
+\issue{13}{1}{34}{April 1992}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 13:1 as one pdf (11mb)}
+        {}
+        {\offset{.05}}
+        {/TUGboat/tb13-1/tb34complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1}
+        {/TUGboat/tb13-1/tb34cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb13-1/tb34cover2.pdf}
+
+\capsulenoprint{}%subsecnn
+        {}
+        {}
+        {Title page}
+        {}
+        {1}
+        {/TUGboat/tb13-1/tb34titlepage.pdf}
+
+
+\capsulenoprint{}%subsecnn
+        {}
+        {}
+        {Editorial information}
+        {}
+        {2}
+        {/TUGboat/tb13-1/tb34edit.pdf}
+
+\capsule{}
+        {}
+        {}
+        {Addresses}
+        {}
+        {3-4}
+        {}
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Malcolm~Clark}
+        {Prez says}
+        {}
+        {5-5}
+        {/TUGboat/tb13-1/tb34clark.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Nelson~H.~F.~Beebe}
+        {President's introduction}
+        {}
+        {6-10}
+        {/TUGboat/tb13-1/tb34beebe.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}%person|Barbara Beeton and Cathy Booth
+        {Editorial comments}
+        {}
+        {10-11}
+        {/TUGboat/tb13-1/tb34beet.pdf}
+        {Cathy Booth, a remembrance\\
+Sam Whidden, a remembrance\\
+Trip report: Euro\TeX, GUTenberg'91\\
+256-character math fonts}
+	{}
+
+
+\capsule{}%subsecnn
+        {General Delivery}%add|Obituaries
+        {Barbara Beeton}%person|Barbara Beeton and Samuel B. Whidden
+        {Samuel B. Whidden, 1930--1991}
+        {}
+        {11-12}
+        {/TUGboat/tb13-1/tb34beet.pdf}
+
+%THEcategory{Software}
+
+
+\capsule{}%subsec
+        {Software}
+        {Graham~Asher}
+        {Inside Type \& Set}
+        {}
+        {13-22}
+        {/TUGboat/tb13-1/tb34asher.pdf}
+
+
+%THEcategory{Philology}
+
+
+\capsule{}%subsec
+        {Philology}
+        {Claudio~Beccari}
+        {Computer Aided Hyphenation for Italian and Modern Latin}
+        {}
+        {23-33}
+        {/TUGboat/tb13-1/tb34becc.pdf}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Sebastian~Rahtz}
+        {Invisibility using virtual fonts}
+        {}
+        {34-36}
+        {/TUGboat/tb13-1/tb34rahtz.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Toby~Thain}
+        {Packing {\MF}s into {\PS}}
+        {}
+        {36-38}
+        {/TUGboat/tb13-1/tb34thain.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {C.~Mylonas \and R.~Whitney}
+        {Modern Greek with adjunct fonts}
+        {}
+        {39-50}
+        {/TUGboat/tb13-1/tb34mylonas.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Frank~Mittelbach}
+        {Comments on ``Filenames for Fonts'' ({\TUB} 11\#4)}
+        {}
+        {51-53}
+        {/TUGboat/tb13-1/tb34mittfont.pdf}
+
+
+%THEcategory{Output Devices}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {The TUG\CONNECT{}DVI\CONNECT{}Driver\CONNECT{}Standards\CONNECT{}Committee}
+        {{\tt DVI} driver standard, level 0}
+        {}
+        {54-57}
+        {/TUGboat/tb13-1/tb34dvistd.pdf}
+
+
+%THEcategory{Resources}
+
+\capsule{}
+        {Resources}
+        {}
+        {}
+        {}
+        {57-59}
+        {/TUGboat/tb13-1/tb34resources.pdf}
+
+\capsule{}%subsec
+        {Resources}%replace|Book Reviews
+        {Victor~Eijkhout}
+        {New books on {\TeX}}
+        {}
+        {57-58}
+        {/TUGboat/tb13-1/tb34resources.pdf}
+
+
+\capsule{}%subsec
+        {Resources}%replace|Book Reviews
+        {Nico~Poppelier}
+        {New books on {\LaTeX}}
+        {}
+        {58-59}
+        {/TUGboat/tb13-1/tb34resources.pdf}
+
+
+%THEcategory{Questions}
+
+
+\capsule{}%subsec
+        {Questions}
+        {Alan~Hoenig}
+        {{\tt Just plain} Q\&A: Of partitioned matrices and doublespacing}
+        {}
+        {60-62}
+        {/TUGboat/tb13-1/tb34hoenig.pdf}
+
+
+%THEcategory{Tutorials}
+
+
+\capsule{}%subsec
+        {Tutorials}
+        {L.~Siebenmann}
+        {Elementary text processing and parsing in {\TeX}--- the appreciation of tokens ---}
+        {}
+        {62-73}
+        {/TUGboat/tb13-1/tb34siebenmann.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Victor~Eijkhout}
+        {The bag of tricks}
+        {}
+        {74-74}
+        {/TUGboat/tb13-1/tb34eijkhout-tricks.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Victor~Eijkhout}
+        {Erratum: Oral {\TeX}, {\it TUGboat} 12(2), pp.\ 272--276}
+        {}
+        {75-75}
+        {/TUGboat/tb13-1/tb34fine.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Jonathan~Fine}
+        {Some basic control macros for {\TeX}}
+        {}
+        {75-83}
+        {/TUGboat/tb13-1/tb34fine.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Victor~Eijkhout \and Ron~Sommeling}
+        {Self-replicating macros}
+        {}
+        {84-84}
+        {/TUGboat/tb13-1/tb34eijkhout-selfrepl.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Piet~Tutelaers}
+        {A font and a style for typesetting chess using {\LaTeX} or {\TeX}}
+        {}
+        {85-90}
+        {/TUGboat/tb13-1/tb34tutelaers.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Kees~van~der~Laan}
+        {Tower of Hanoi, revisited}
+        {}
+        {91-94}
+        {/TUGboat/tb13-1/tb34laan.pdf}
+
+
+%THEcategory{{\LaTeX}}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {Jackie~Damrau}
+        {The {\LaTeX} column}
+        {}
+        {94-95}
+        {/TUGboat/tb13-1/tb34damrau.pdf}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}%add|Indexing
+        {Harold~Thimbleby}
+        {Erratum: ``See also'' indexing with Makeindex, \tubissue 12(2), p.\ 290}
+        {}
+        {95-95}
+        {/TUGboat/tb13-1/tb34thim.pdf}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {Frank~Mittelbach \and Chris Rowley}
+        {{\LaTeX} 2.09 $\hookrightarrow$ {\LaTeX}3}
+        {}
+        {96-101}
+        {/TUGboat/tb13-1/tb34mittl3.pdf}
+
+
+%THEcategory{Abstracts}
+
+
+\capsule{}%subsecnn
+        {Abstracts}
+        {}
+        {{\sl Cahiers GUTenberg} \#9 and \#10--11}
+        {}
+        {101-105}
+        {/TUGboat/tb13-1/tb34abstracts.pdf}
+
+
+%THEcategory{News \&\\Announcements}
+
+\capsule{}
+        {News \&\\Announcements}
+        {}
+        {}
+        {}
+        {106-108}
+        {/TUGboat/tb13-1/tb34calendar.pdf}
+
+\capsule{}%subsecnn
+        {News \&\\Announcements}
+        {}
+        {Calendar}
+        {}
+        {106-107}
+        {/TUGboat/tb13-1/tb34calendar.pdf}
+
+
+\capsule{}%subsecnn
+        {News \&\\Announcements}
+        {}
+        {Euro{\TeX}\,92, Prague, 14--18 September 1992}
+        {}
+        {107-108}
+        {/TUGboat/tb13-1/tb34calendar.pdf}
+
+
+%THEcategory{Late-Breaking News}
+
+
+\capsule{}%subsec
+        {Late-Breaking News}
+        {Barbara~Beeton}
+        {Production notes}
+        {}
+        {108-109}
+        {/TUGboat/tb13-1/tb34notes.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking News}
+        {}
+        {Coming next issue}
+        {}
+        {109-109}
+        {/TUGboat/tb13-1/tb34notes.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {110-111}
+        {/TUGboat/tb13-1/tb34instmem.pdf}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {TUG membership application}
+        {}
+        {112-112}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+\capsule{}
+        {Advertisements}
+        {}
+        {}
+        {}
+        {113-128}
+        {/TUGboat/tb13-1/tb34ads.pdf}
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {126-126}
+        {/TUGboat/tb13-1/tb34ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {127-127}
+        {/TUGboat/tb13-1/tb34ads.pdf}

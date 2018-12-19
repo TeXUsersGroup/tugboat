@@ -1,0 +1,394 @@
+% $Id$
+
+\begin{blurb}
+<p>If you're not already a member, we hope you'll consider <a
+href="/join.html">joining TUG</a> or <a href="/usergroups.html">another
+TeX user group</a>, to support these publications, conferences, and
+other TeX projects.
+
+<p>
+\end{blurb}
+
+\issue{24}{1}{76}{2003}{/tug2003/}{TUG 2003 Proceedings}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 24:1 as one pdf (7.7mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb24-1/tb76complete.pdf}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Front cover}
+  {}
+  {c1\offset{.1}}
+  {/TUGboat/tb24-1/cover1.pdf}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Inside front cover}
+  {}
+  {c2\offset{.2}}
+  {/TUGboat/tb24-1/cover2.pdf}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Inside back cover: TUG 2004}
+  {}
+  {c3\offset{.3}}
+  {/TUGboat/tb24-1/cover3.pdf}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Title page}
+  {}
+  {1}
+  {/TUGboat/tb24-1/titlepage.pdf}
+
+
+\capsule{}
+        {}%replace|Conference Notes
+        {William Adams}
+        {Editorial remarks}
+        {}
+        {2}
+        {/TUGboat/tb24-1/adams.pdf}
+
+
+\capsule{}
+        {}%replace|Conference Notes
+        {Karl Berry}
+        {Welcome to TUG 2003}
+        {}
+        {3}
+        {/TUGboat/tb24-1/berry.pdf}
+
+
+
+\capsule{}
+        {}%replace|Conference Notes
+        {}
+        {Conference program and delegates}
+        {}
+        {5}
+        {/TUGboat/tb24-1/confinfo.pdf}
+
+
+
+\capsule{}
+        {Publishing}
+        {Pablo Rosell-Gonz\'alez}
+        {Return to the classics}
+        {}
+        {10}
+        {/TUGboat/tb24-1/gonzalez.pdf}
+
+
+\capsule{}
+        {Publishing}
+        {Alun Moon}
+        {Digital illumination}
+        {}
+        {18}
+        {/TUGboat/tb24-1/moon-celtic.pdf}
+
+
+\capsule{}
+        {Publishing}
+        {Daly \& Richter, Hagen, Janc, Moore}
+        {TUG 2003 abstracts: Publishing}
+        {}
+        {23}
+        {/TUGboat/tb24-1/abs-publish.pdf}
+
+
+
+
+\capsule{}
+        {Bibliographies}
+        {Oren Patashnik}
+        {BibTeX yesterday, today, and tomorrow}
+        {}
+        {25}
+        {/TUGboat/tb24-1/patashnik.pdf}
+
+
+\capsule{}
+        {Bibliographies}
+        {Daly, Hufflen}
+        {TUG 2003 abstracts: Bibliographies}
+        {}
+        {31}
+        {/TUGboat/tb24-1/abs-biblio.pdf}
+
+
+
+\capsule{}
+        {Interfaces}%replace|Software \& Tools
+        {Richard Koch}
+        {TeXShop in 2003}
+        {}
+        {32}
+        {/TUGboat/tb24-1/koch.pdf}
+
+
+\capsule{}
+        {Interfaces}%replace|Graphics
+        {Francesco Costanzo and Gary Gray}
+        {Creating labeled stand-alone figures in LaTeX  using WARMreader and Adobe Illustrator under Mac OS X }
+        {}
+        {39}
+        {/TUGboat/tb24-1/gray-warm.pdf}
+
+
+\capsule{}
+        {Interfaces}%replace|Electronic Documents
+        {Kalle Saastamoinen, Jaakko Ketola, Tuukka Kurppa and Liisa Torikka}
+        {Enabling Web access to a database of calculus problems using LaTeX, PHP and LaTeX2HTML}
+        {}
+        {50}
+        {/TUGboat/tb24-1/saast.pdf}
+
+
+\capsule{}
+        {Interfaces}%replace|Electronic Documents
+        {Luca Padovani}
+        {MathML formatting with TeX rules and TeX fonts}
+        {}
+        {53}
+        {/TUGboat/tb24-1/padovani.pdf}
+
+
+\capsule{}
+        {Interfaces}%replace|Abstracts
+        {Gurari, Quirk, Hagen, Hefferon, Lehmke}
+        {TUG 2003 abstracts: Interfaces}
+        {}
+        {62}
+        {/TUGboat/tb24-1/abs-inter.pdf}
+
+
+
+\capsule{}
+        {Fonts}
+        {Bogus\l{}aw Jackowski and Janusz M. Nowacki}
+        {Latin Modern: Enhancing Computer Modern with accents, accents, accents}
+        {}
+        {64}
+        {/TUGboat/tb24-1/jackowski.pdf}
+
+
+\capsule{}
+        {Fonts}
+        {Vladimir Volovich}
+        {CM-Super: Automatic creation of efficient Type 1 fonts from MF fonts }
+        {}
+        {75}
+        {/TUGboat/tb24-1/volovich.pdf}
+
+
+\capsule{}
+        {Fonts}
+        {\Thanh}
+        {Making Type 1 fonts for Vietnamese}
+        {}
+        {79}
+        {/TUGboat/tb24-1/thanh.pdf}
+
+
+\capsule{}
+        {Fonts}
+        {Candy L. K. Yiu and Wai Wong}
+        {Chinese character synthesis using MetaPost}
+        {}
+        {85}
+        {/TUGboat/tb24-1/yiu.pdf}
+
+
+\capsule{}
+        {Fonts}
+        {Adams}
+        {TUG 2003 abstracts: Fonts}
+        {}
+        {94}
+        {/TUGboat/tb24-1/abs-fonts.pdf}
+
+
+
+\capsule{}
+        {Multilingual Document Processing}
+        {Giuseppe Bilotta}
+        {eOmega: A step towards the future with a look at the past }
+        {}
+        {95}
+        {/TUGboat/tb24-1/bilotta-eomega.pdf}
+
+
+\capsule{}
+        {Multilingual Document Processing}
+        {Alan Hoenig}
+        {Makor: Typesetting Hebrew with Omega}
+        {}
+        {97}
+        {/TUGboat/tb24-1/hoenig.pdf}
+
+
+\capsule{}
+        {Multilingual Document Processing}
+        {John Plaice, Paul Swoboda, Yannis Haralambous and Chris Rowley}
+        {A multidimensional approach to typesetting}
+        {}
+        {105}
+        {/TUGboat/tb24-1/plaice.pdf}
+
+
+\capsule{}
+        {Multilingual Document Processing}
+        {Cho}
+        {TUG 2003 abstracts: Multilingual document processing}
+        {}
+        {115}
+        {/TUGboat/tb24-1/abs-multi.pdf}
+
+
+
+\capsule{}
+        {Tools}%add|Literate Programming
+        {Alun Moon}
+        {Literate programming meets UML}
+        {}
+        {116}
+        {/TUGboat/tb24-1/moon-uml.pdf}
+
+
+\capsule{}
+        {Tools}
+        {Giuseppe Bilotta}
+        {Math in ConTeXt: Bridging the gap with AMSLaTeX}
+        {}
+        {120}
+        {/TUGboat/tb24-1/bilotta-context.pdf}
+
+
+\capsule{}
+        {Tools}
+        {Bazargan et al., Esser, Lehmke, Popineau, Wierda}
+        {TUG 2003 abstracts: Tools}
+        {}
+        {122}
+        {/TUGboat/tb24-1/abs-tools.pdf}
+
+
+
+\capsule{}
+        {Sociology}%replace|Education
+        {Gary Gray and Francesco Costanzo}
+        {Experiences and lessons learned teaching LaTeX to university students }
+        {}
+        {124}
+        {/TUGboat/tb24-1/gray-class.pdf}
+
+
+\capsule{}
+        {Sociology}%replace|Resources
+        {Alexandre Gaudeul}
+        {The LaTeX project: A case study of open source software}
+        {}
+        {132}
+        {/TUGboat/tb24-1/gaudeul.pdf}
+
+
+\capsule{}
+        {Sociology}%replace|Multilingual Document Processing
+        {Andrzej Odyniec}
+        {A Polished TeX story}
+        {}
+        {146}
+        {/TUGboat/tb24-1/odyniec.pdf}
+
+\capsule{}
+        {Sociology}%replace|Abstracts
+        {Bibby, Ranade}
+        {TUG 2003 abstracts: Sociology}
+        {}
+        {151}
+        {/TUGboat/tb24-1/abs-socio.pdf}
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {152}
+        {/calendar.html}
+
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {TUG 2004 conference, Xanthi, Greece, August 30-September 3, 2004}
+        {}
+        {c3}
+        {/tug2004/}
+
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {TUG 2005 conference, Wuhan, China, August 23-25, 2005}
+        {}
+        {154}
+        {/TUGboat/tb24-1/tug2005.pdf}
+
+
+
+\capsule{}
+        {TUG Business}
+        {}
+        {Recognition of support from Apple}
+        {}
+        {155}
+        {/TUGboat/tb24-1/appleinst.pdf}
+
+
+\capsule{}
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {155\offset{.5}}
+        {/TUGboat/tb24-1/appleinst.pdf}
+
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {TeX consulting and production services }
+        {}
+        {156}
+        {/consultants.html}
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {\textit{The LaTeX Companion}, 2nd edition, by Frank Mittelbach et al.}
+        {}
+        {153}
+        {/books/#companion}
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {\textit{Guide to LaTeX}, 4th edition, by Helmut Kopka and Patrick W. Daly}
+        {}
+        {154\offset{.5}}
+        {/books/#guidelatex}

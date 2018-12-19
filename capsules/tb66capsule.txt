@@ -1,0 +1,230 @@
+% $Id$
+
+\issue{21}{1}{66}{March 2000}{}{}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 21:1 as one pdf (1.5mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb21-1/tb66complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Cover}
+        {}
+        {c1}
+        {/TUGboat/tb21-1/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb21-1/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {97}
+        {/TUGboat/tb21-1/titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {98}
+        {/TUGboat/tb21-1/tb66edit.pdf}
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {3-3}
+        {URL}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Mimi~Jett}
+        {{From the President}}
+        {}
+        {5-5}
+        {/TUGboat/tb21-1/tb66jett.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {6-6}
+        {/TUGboat/tb21-1/tb66beet.pdf}
+        {Erratum: Address for {Cyr\TeX} mail\\
+{History of~\TeX}\\
+{{\sl Computers~\&~Typesetting\/} remains in print}\\
+{A new printing museum near Boston}\\
+{Evolution of alphabets}}
+        {}
+
+
+%THEcategory{Software \& Tools}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Shinsaku~Fujita \and~Nobuya~Tanaka}
+        {{XyMTeX~(Version 2.00) as implementation of the XyM{} notation and the~XyM{}~markup language}}
+        {}
+        {7-14}
+        {/TUGboat/tb21-1/tb66fuji.pdf}
+
+
+%THEcategory{Resources}
+
+
+\capsule{}%subsec
+        {Resources}
+        {{Jim~Hef{}feron}}
+        {{The {\TUG} {CTAN} site  makes a move}}
+        {}
+        {15-15}
+        {/TUGboat/tb21-1/tb66heff.pdf}
+
+
+\capsule{}%subsec
+        {Resources}
+        {{\TUB{}\CONNECT{}Team}}
+        {{\TeXLive{} 5 and the \TeX{} Catalogue}}
+        {}
+        {16-16}
+        {/TUGboat/tb21-1/tb66cd.pdf}
+        {}
+        {The <a href="https://ctan.org/">TeX Catalogue</a> is now maintained on CTAN.}
+
+
+\capsule{}%subsecnn
+        {Resources}
+        {}
+        {{Graham~Williams' \TeX{} Catalogue}}
+        {}
+        {17-90}
+        {/TUGboat/tb21-1/tb66catal.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Victor~Eijkhout}
+        {{The bag of tricks}}
+        {}
+        {91-91}
+        {/TUGboat/tb21-1/tb66eijk.pdf}
+
+
+%THEcategory{News \& \\ Announcements}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {Calendar}
+        {}
+        {92-92}
+        {/calendar.html}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {{TUG2000\Dash The 21st Annual Conference}}
+        {}
+        {4-4}
+        {/TUGboat/tb21-1/tug2000.pdf}
+
+
+%THEcategory{Late-Breaking\\News}
+
+
+\capsule{}%subsec
+        {Late-Breaking\\News}
+        {Mimi~Burbank}
+        {Production notes}
+        {}
+        {93}
+        {/TUGboat/tb21-1/tb66prod.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking\\News}
+        {}
+        {Future issues}
+        {}
+        {93\offset{.5}}
+        {/TUGboat/tb21-1/tb66prod.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {94-94}
+        {/instmem.html}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {TUG membership application}
+        {}
+        {95-95}
+        {/join.html}
+
+
+%THEcategory{Cartoon}
+
+
+\capsule{}%subsec
+        {Cartoon}
+        {David~Farley}
+        {{Don Knuth finally sells out}}
+        {}
+        {15\offset{.5}}
+        {/TUGboat/tb21-1/knuth-cartoon.pdf}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {96-96}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Blue Sky Research}}
+        {}
+        {c3}
+        {/TUGboat/tb21-1/bluesky.pdf}

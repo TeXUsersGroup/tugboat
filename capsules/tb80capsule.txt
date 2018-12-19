@@ -1,0 +1,322 @@
+% $Id$
+% begin-items
+% 
+\begin{blurb}
+<p>If you're not already a member, we hope you'll consider <a
+href="/join.html">joining TUG</a> or <a href="/usergroups.html">another
+TeX user group</a>, to support these publications, conferences, and
+other TeX projects.
+
+<p>
+\end{blurb}
+
+\issue{25}{1}{80}{2004}{/practicaltex2004/}{Practical TeX 2004 Proceedings (San Francisco, California)}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 25:1 as one pdf (7mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb25-1/tb80complete.pdf}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Front cover}
+  {}
+  {c1\offset{.1}}
+  {/TUGboat/tb25-1/cover1.pdf}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Inside front cover}
+  {}
+  {c2\offset{.2}}
+  {/TUGboat/tb25-1/cover2.pdf}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Contents ordered by difficulty}
+  {}
+  {c3\offset{.3}}
+  {/TUGboat/tb25-1/cover3.pdf}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Title page}
+  {}
+  {1}
+  {/TUGboat/tb25-1/titlepage.pdf}
+
+\capsule{}
+        {Practical TeX 2004}
+        {Lance Carnes}
+        {Highlights of the Practical TeX 2004 conference}
+        {}
+        {2}
+        {/TUGboat/tb25-1/carnes.pdf}
+
+
+\capsule{}
+        {Practical TeX 2004}
+        {}
+        {Conference program, delegates, and sponsors}
+        {}
+        {4}
+        {/TUGboat/tb25-1/confinfo.pdf}
+
+
+\capsule{}
+        {Practical TeX 2004}
+        {Karl Berry}
+        {Welcome to Practical TeX 2004}
+        {}
+        {6}
+        {/TUGboat/tb25-1/berry.pdf}
+
+
+\capsule{}
+        {Keynotes}%add|Surveys
+        {Nelson Beebe}
+        {25 Years of TeX and Metafont: Looking back and looking forward --- TUG 2003 keynote address}
+        {}
+        {7}
+        {/TUGboat/tb25-1/beebe-2003keynote.pdf}
+
+
+\capsule{}
+        {Keynotes}%add|Publishing
+        {Peter Flynn}
+        {TeX and the interfaces --- Practical TeX 2004 keynote address}
+        {}
+        {31}
+        {/TUGboat/tb25-1/flynn.pdf}
+
+\capsule{}
+        {Talks}%replace|Software \& Tools
+        {\Thanh}
+        {Micro-typographic extensions of pdfTeX in practice}
+        {}
+        {35}
+        {/TUGboat/tb25-1/thanh.pdf}
+
+\capsule{}
+        {Talks}%replace|Electronic Documents
+        {Eitan Gurari}
+        {TeX4ht: HTML production}
+        {}
+        {39}
+        {/TUGboat/tb25-1/gurari.pdf}
+
+\capsule{}
+        {Talks}%replace|\ConTeXt
+        {Hans Hagen}
+        {The state of ConTeXt}
+        {}
+        {48}
+        {/TUGboat/tb25-1/hagen-context.pdf}
+
+
+\capsule{}
+        {Talks}%replace|\ConTeXt
+        {Steve Grathwohl}
+        {A simple book design in ConTeXt}
+        {}
+        {52}
+        {/TUGboat/tb25-1/grathwohl.pdf}
+
+
+\capsule{}
+        {Talks}%replace|Humanities
+        {Steve Peter}
+        {TeX and linguistics}
+        {}
+        {58}
+        {/TUGboat/tb25-1/peter.pdf}
+
+
+\capsule{}
+        {Talks}%replace|Graphics
+        {Brooks Moses}
+        {MetaPlot, MetaContour, and other collaborations with MetaPost}
+        {}
+        {63}
+        {/TUGboat/tb25-1/moses.pdf}
+
+
+\capsule{}
+        {Talks}%replace|Software \& Tools
+        {William Richter}
+        {TeX and scripting languages}
+        {}
+        {71}
+        {/TUGboat/tb25-1/richter.pdf}
+
+
+\capsule{}
+        {Talks}%replace|Bibliographies
+        {Nelson Beebe}
+        {A bibliographer's toolbox}
+        {}
+        {89}
+        {/TUGboat/tb25-1/beebe-bib.pdf}
+
+\capsule{}
+        {Reports}%replace|Software \& Tools
+        {Taco Hoekwater}
+        {MetaPost developments}
+        {}
+        {105}
+        {/TUGboat/tb25-1/hoekwater.pdf}
+
+
+\capsule{}
+        {Reports}%replace|Software \& Tools
+        {Giuseppe Bilotta}
+        {The Aleph project}
+        {}
+        {105\offset{.5}}
+        {/TUGboat/tb25-1/bilotta.pdf}
+
+
+\capsule{}
+        {Reports}%replace|Software \& Tools
+        {Hans Hagen}
+        {The TeX Live 2004 collection}
+        {}
+        {108}
+        {/TUGboat/tb25-1/hagen-tl.pdf}
+
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {112}
+        {/calendar.html}
+
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {TUG 2005, 23--25 August 2005, Wuhan, China}
+        {}
+        {114}
+        {/tug2005/}
+
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {Practical TeX 2005, 14--17 June 2005, Chapel Hill, North Carolina}
+        {}
+        {c3}
+        {/practicaltex2005/}
+
+
+
+
+\capsule{}
+        {TUG Business}
+        {}
+        {Recognition of support from Apple}
+        {}
+        {120}
+        {/TUGboat/tb25-1/pctexapple.pdf}
+
+
+\capsule{}
+        {TUG Business}
+        {}
+        {TUG membership application}
+        {}
+        {115}
+        {/join.html}
+
+
+\capsule{}
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {116}
+        {/TUGboat/tb25-1/instmem-list.pdf}
+
+
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {TeX consulting and production services}
+        {}
+        {116\offset{.5}}
+        {/consultants.html}
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {The LaTeX Companion, 2nd edition, by Frank Mittelbach et al.}
+        {}
+        {114\offset{.5}}
+        {/TUGboat/tb25-1/tlctug05.pdf}
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {Easy Table, Khanh Ha}
+        {}
+        {117}
+        {/TUGboat/tb25-1/ezad.pdf}
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {River Valley Technologies}
+        {}
+        {118}
+        {/TUGboat/tb25-1/riversword.pdf}
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {MacKichan Software, Inc.}
+        {}
+        {118\offset{.5}}
+        {/TUGboat/tb25-1/riversword.pdf}
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {Carleton Production Centre}
+        {}
+        {119}
+        {/TUGboat/tb25-1/chch.pdf}
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {Cheryl Ponchin Training}
+        {}
+        {119\offset{.5}}
+        {/TUGboat/tb25-1/chch.pdf}
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {Personal TeX, Inc.}
+        {}
+        {120\offset{.5}}
+        {/TUGboat/tb25-1/pctexapple.pdf}

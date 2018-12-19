@@ -1,0 +1,407 @@
+% $Id$
+
+\issue{13}{2}{35}{July 1992}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 13:2 as one pdf (8.1mb)}
+        {}
+        {\offset{.05}}
+        {/TUGboat/tb13-2/tb35complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb13-2/tb35cover2.pdf}
+
+\capsulenoprint{}%subsecnn
+        {}
+        {}
+        {Title page}
+        {}
+        {129}
+        {/TUGboat/tb13-2/tb35titlepage.pdf}
+
+
+\capsulenoprint{}%subsecnn
+        {}
+        {}
+        {Editorial information}
+        {}
+        {130}
+        {/TUGboat/tb13-2/tb35edit.pdf}
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {131-132}
+        {URL}
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Malcolm~Clark}
+        {Changing {\TeX}?}
+        {}
+        {133-134}
+        {/TUGboat/tb13-2/tb35clark.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {134-137}
+        {/TUGboat/tb13-2/tb35beet.pdf}
+        {Another honor for Donald Knuth\\
+Journals accepting \TeX\ input\\
+The new membership list\\
+\TUB\ production notes}
+	{}
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {TUG seeks Executive Director}
+        {}
+        {137-137}
+        {/TUGboat/tb13-2/tb35beet.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Philip~Taylor}
+        {{\TeX}: The next generation}
+        {}
+        {138-138}
+        {/TUGboat/tb13-2/tb35taylor.pdf}
+
+
+%THEcategory{Software}
+
+
+\capsule{}%subsec
+        {Software}
+        {R.M.~Damerell}
+        {Knuth's profiler adapted to the VMS operating system}
+        {}
+        {139-145}
+        {/TUGboat/tb13-2/tb35damerell.pdf}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {David~Salomon}
+        {Arrows for Technical Drawings}
+        {}
+        {146-149}
+        {/TUGboat/tb13-2/tb35salomon.pdf}
+
+
+%THEcategory{Graphics}
+
+
+\capsule{}%subsec
+        {Graphics}
+        {Daniel~Levin}
+        {A solution to the color separation problem}
+        {}
+        {150-155}
+        {/TUGboat/tb13-2/tb35levin.pdf}
+
+
+\capsule{}%subsec
+        {Graphics}
+        {Sebastian~Rahtz \and Leonor~Barroca}
+        {A style option for rotated objects in {\TeX}}
+        {}
+        {156-180}
+        {/TUGboat/tb13-2/tb35rahtz.pdf}
+
+
+%THEcategory{Resources}
+
+\capsule{}
+        {Resources}
+        {}
+        {}
+        {}
+        {181-190}
+        {/TUGboat/tb13-2/tb35resources.pdf}
+
+\capsule{}%subsec
+        {Resources}%replace|Book Reviews
+        {Marisa~Luvisetto \and Massimo~Calvani}
+        {Book review: An Italian guide to {\LaTeX}, by Claudio Beccari}
+        {}
+        {181-182}
+        {/TUGboat/tb13-2/tb35resources.pdf}
+
+
+\capsule{}%subsec
+        {Resources}%replace|Book Reviews
+        {Nico~Poppelier}
+        {Book reviews: {\it {\LaTeX} for Everyone}, by Jane Hahn; {\it Practical~SGML}, by Eric van Herwijnen}
+        {}
+        {182-185}
+        {/TUGboat/tb13-2/tb35resources.pdf}
+
+
+\capsule{}%subsec
+        {Resources}%replace|Book Review
+        {Philip~Taylor}
+        {Book review: {\it {\TeX} by Topic}, by Victor Eijkhout}
+        {}
+        {185-188}
+        {/TUGboat/tb13-2/tb35resources.pdf}
+
+
+\capsule{}%subsec
+        {Resources}
+        {David~M.~Jones}
+        {A {\TeX} macro index}
+        {}
+        {188-189}
+        {/TUGboat/tb13-2/tb35resources.pdf}
+
+
+%THEcategory{Tutorial}
+
+
+\capsule{}%subsec
+        {Tutorial}
+        {Victor~Eijkhout}
+        {Names of control sequences}
+        {}
+        {189-190}
+        {/TUGboat/tb13-2/tb35eijkhout-names.pdf}
+
+
+%THEcategory{Puzzle}
+
+
+\capsule{}%subsec
+        {Puzzle}%replace|Hints \& Tricks
+        {Frank~Mittelbach}
+        {Where does this character come from?}
+        {}
+        {190-190}
+        {/TUGboat/tb13-2/tb35eijkhout-names.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Victor~Eijkhout}
+        {The bag of tricks}
+        {}
+        {191-191}
+        {/TUGboat/tb13-2/tb35eijkhout-tricks.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {P\'eter~Husz\'ar}
+        {Over the multi-column}
+        {}
+        {192-200}
+        {/TUGboat/tb13-2/tb35huszar.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Michel~Goossens \and Eric~van~Herwijnen}
+        {The elementary Particle Entity Notation (PEN) scheme}
+        {}
+        {201-207}
+        {/TUGboat/tb13-2/tb35goossens.pdf}
+
+
+%THEcategory{{\LaTeX}}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {Maria~Luisa~Luvisetto \and Enzo~Ugolini}
+        {From {\TeX} to {\LaTeX}}
+        {}
+        {208-214}
+        {/TUGboat/tb13-2/tb35luvisetto.pdf}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {Peter~J.~Cameron}
+        {Geometric diagrams in {\LaTeX}}
+        {}
+        {215-216}
+        {/TUGboat/tb13-2/tb35cameron.pdf}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {Hubert~Partl}
+        {How to change the layout with {\LaTeX} 2.09}
+        {}
+        {217-220}
+        {/TUGboat/tb13-2/tb35partl.pdf}
+
+
+%THEcategory{SGML}
+
+
+\capsule{}%subsec
+        {SGML}%replace|Electronic Documents
+        {Reinhard~Wonneberger \and Frank~Mittelbach}
+        {SGML\Dash Questions and answers}
+        {}
+        {221-223}
+        {/TUGboat/tb13-2/tb35wonneberger-sgmlqa.pdf}
+
+
+%THEcategory{Dreamboat}
+
+
+\capsule{}%subsec
+        {Dreamboat}
+        {Michael~Barr}
+        {{\TeX} wish list}
+        {}
+        {223-226}
+        {/TUGboat/tb13-2/tb35barr.pdf}
+
+
+\capsule{}%subsec
+        {Dreamboat}
+        {Reinhard~Wonneberger}
+        {Approaching SGML from {\TeX}}
+        {}
+        {226-227}
+        {/TUGboat/tb13-2/tb35wonneberger-sgmltex.pdf}
+
+
+%THEcategory{Abstracts}
+
+
+\capsule{}%subsecnn
+        {Abstracts}
+        {}
+        {{\sl Cahiers GUTenberg} \#12}
+        {}
+        {227-228}
+        {/TUGboat/tb13-2/tb35abstracts.pdf}
+
+
+\capsule{}%subsecnn
+        {Abstracts}
+        {}
+        {\textsl{Baskerville}, Volume 2, Number 1, March 1992}
+        {}
+        {228-229}
+        {/TUGboat/tb13-2/tb35abstracts.pdf}
+
+
+%THEcategory{Late-Breaking News}
+
+
+\capsule{}%subsec
+        {Late-Breaking News}
+        {Barbara~Beeton}
+        {Production notes}
+        {}
+        {229-230}
+        {/TUGboat/tb13-2/tb35notes.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking News}
+        {}
+        {Coming next issue}
+        {}
+        {230-230}
+        {/TUGboat/tb13-2/tb35notes.pdf}
+
+
+%THEcategory{News \&\\Announcements}
+
+\capsule{}
+        {News \&\\Announcements}
+        {}
+        {}
+        {}
+        {231-233}
+        {/TUGboat/tb13-2/tb35calendar.pdf}
+
+\capsule{}%subsecnn
+        {News \&\\Announcements}
+        {}
+        {Calendar}
+        {}
+        {231-232}
+        {/calendar.html}
+
+
+\capsule{}%subsecnn
+        {News \&\\Announcements}
+        {}
+        {Euro{\TeX}\,92, Prague, 14--18 September 1992}
+        {}
+        {232-233}
+        {/TUGboat/tb13-2/tb35calendar.pdf}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {TUG membership application}
+        {}
+        {235-236}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+\capsule{}
+        {Advertisements}
+        {}
+        {}
+        {}
+        {237-248}
+        {/TUGboat/tb13-2/tb35ads.pdf}
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {247-247}
+        {/TUGboat/tb13-2/tb35ads.pdf}
+
+
+%THEcategory{Supplements}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {TUG Membership List}
+        {}
+        {\offset{999}}
+        {URL}

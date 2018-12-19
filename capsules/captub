@@ -1,0 +1,158 @@
+#!/usr/bin/env perl
+# $Id$
+# TUGboat capsule processing. Public domain.
+#
+# Our general goal is for the tb*capsule.html output files to reflect
+# the various names and ordering from the printed table of contents (the
+# back cover). We also generate lists*.html file aggregating information
+# across all issues, where we unify different forms of author names, add
+# or replace categories, etc.
+# 
+# capsulefile ::= <intro> <issueline> <difficulty>*
+# <intro>     ::= (arbitrary ignored text)
+# issueline   ::= [\issue|\notissue] ({...})*
+# difficulty  ::= <difficultyline> <capsule>*
+# difficultyline ::= \difficulty{...}
+# capsule     ::= [\capsule|\capsulenoprint] ({...}[%...])*
+# 
+# Interspersed between (but not within) capsules can be blank lines,
+# % comment lines, and random TeX \commands.
+# 
+# There are nine arguments to \capsule(noprint); they are in TeX syntax
+# except for the last.
+# 
+# #1 is difficulty -- follows \capsule on first line,
+#                     or, if empty, inherited from preceding \difficulty line
+# #2 category  -- TUGboat class, can have %replace,add| directive (for lists)
+# #3 author    -- can have %person| directive (for lists)
+# #4 title     -- in TeX
+# #5 shortdesc -- capsule description, just one line of text
+# #6 pageno    -- can have \offset{<float>} to manipulate ordering
+# #7 url       -- usually article pdf
+# #8 subtitles -- arg 8 can be alone on its line or multiple lines long;
+#                 ;?\\<newline> becomes <br> before normal tex2html
+# #9 htmlnotes -- arg 9 can also be alone on its line or multiple lines long.
+# 
+# Our general strategy is to read the whole input file and split() the
+# resulting string at \difficulty and then at \capsule, parsing each
+# capsule with Text::Balanced. We can't get useful line numbers into
+# error messages this way, but it's so much simpler than writing a full
+# token-based parser, it seems worth that trade-off.
+# 
+# \difficulty was originally (and confusingly) named \category;
+# both are accepted, until we bother to change all the sources (unlikely).
+#
+# In general, when there are errors (e.g., two identical page numbers),
+# we die right away instead of trying to recover. Any such error needs
+# to be fixed in the capsule sources.
+#
+# http://stackoverflow.com/questions/35731060/why-doesnt-textbalancedextract-bracketed-extract-the-text-inside-a-latex-ta?rq=1
+# http://stackoverflow.com/questions/2700613/how-can-i-extract-a-string-between-matching-braces-in-perl
+# regexp http://www.perlmonks.org/bare/?node_id=42655
+# marpa http://savage.net.au/Ron/html/Fancy.Matching.of.Delimited.Text.html
+
+use strict; use warnings;
+
+use Getopt::Long qw(:config no_ignore_case);
+use Text::Balanced;
+
+BEGIN {
+  $^W = 1;
+  ($::SCRIPTDIR = $0) =~ s,/[^/]*$,,;
+  $::SCRIPTDIR = "." if $::SCRIPTDIR eq $0;
+  unshift (@INC, $::SCRIPTDIR);
+}
+
+$| = 1; # flush both stdout and stderr immediately
+select ((select (STDERR), $| = 1)[0]);
+
+our %OPT;              # global for command-line options
+require "caputil.pl";  # must come before conv
+#
+require "capaccum.pl";
+require "capconv.pl";
+require "capdata-rx.pl";
+require "capdata-unify.pl";
+require "capdata-xlate.pl";
+require "capin.pl";
+require "capout.pl";
+
+exit (&main ());
+
+
+sub main {
+  &init ();
+  
+  my %accum; # save all info from across issues.
+  for my $file (@ARGV) {
+    my %issue_html = &read_issue ($file);	# capin.pl
+    &write_issue (%issue_html)			# capout.pl
+      unless $OPT{"authors"};
+    $accum{$issue_html{"seqno"}} = \%issue_html;
+  }
+
+  &accumulation (%accum);			# capaccum.pl
+  
+  return 0;
+}
+
+
+# Option parsing, etc.
+# 
+sub init {
+  umask (002); # tugboat group write permission is useful
+  %OPT = ();
+  $OPT{"debug"} = 0;
+  $OPT{"prevnext"} = 1;
+  $OPT{"stdout"} = 0;
+  $OPT{"webroot"} = "/home/httpd/html";
+
+  exit 2 unless Getopt::Long::GetOptions (\%OPT,
+    "authors|A",
+    "debug|D+",
+    "prevnext!",
+    "stdout!",
+    "webroot=s",
+    #
+    "help",
+    "version",
+  );
+
+  if ($OPT{"help"}) {
+    print "Usage: $0 [OPTION]... CAPSULE...
+
+Generate TUGboat HTML contents files from input CAPSULE files.
+
+If multiple input files are given, output is to corresponding files named
+contentsVV-I.html, where VV is the volume number and I is the issue
+number.
+
+--authors, -A    output author list and exit.
+--debug, -D      output voluminous debugging information; repeat once for max.
+--no-prevnext    do not read prev/next capsules, only those specified;
+                   default if only one CAPSULE is given.
+--stdout         output to stdout instead of contentsVV-N.html;
+                   default if only one CAPSULE is given.
+--webroot=DIR    check under DIR that urls resolve [/home/httpd/html]
+
+--help           print this message and exit.
+--version        print version information and exit.
+
+Email questions or problems to tugboat\@tug.org.
+";
+    exit 0;
+  }
+
+  # if only doing one capsule file, it is for testing.
+  if (@ARGV == 1) {
+    $OPT{"prevnext"} = 0;
+    $OPT{"stdout"} = 1;
+    #$OPT{"debug"} = 1 if $OPT{"debug"} == 0;
+  }
+  
+  if ($OPT{"version"}) {
+    print '$Id$' . "\n";
+    print "Public domain.\n";
+    exit 0;
+  }
+}

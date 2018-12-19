@@ -1,0 +1,392 @@
+% $Id$
+
+\issue{3}{1}{5}{March 1982}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue as one pdf (2.4mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb03-1/tb05complete.pdf}
+        {}
+        {}
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses of officers, authors and others}
+        {}
+        {2-2}
+        {URL}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {}%replace|News \& Announcements
+        {}
+        {Official announcements}
+        {}
+        {3-3}
+        {/TUGboat/tb03-1/tb05gendel.pdf}
+        {}
+        {}
+
+
+%THEcategory{General Delivery}{/TUGboat/tb03-1/tb05gendel.pdf}
+
+\capsule{}
+        {General Delivery}
+        {}
+        {}
+        {}
+        {3-6}
+        {/TUGboat/tb03-1/tb05gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Statement of editorial policy}
+        {}
+        {3-4}
+        {/TUGboat/tb03-1/tb05gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Robert~Morris}
+        {{Report on the January 1982 TUG Steering Committee meeting}}
+        {}
+        {4-5}
+        {/TUGboat/tb03-1/tb05gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {{Program, TUG Winter meeting, January 11--12, 1982, Cincinnati, Ohio}}
+        {}
+        {5}
+        {/TUGboat/tb03-1/tb05gendel.pdf}
+        {}
+        {}
+
+
+%THEsubheadi{ Program\\5-5}
+
+
+%THEsubheadi{ Attendees\\6-6}
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {{Attendees, TUG Winter meeting, January 11--12, 1982, Cincinnati, Ohio}}
+        {}
+        {6}
+        {/TUGboat/tb03-1/tb05gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Robert~McGaffey \and Keith~Penny}
+        {{Open letter to TUG}}
+        {}
+        {7-9}
+        {/TUGboat/tb03-1/tb05mcgaffey.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Lynne~A.~Price}
+        {{Report on the ANSI X3J6 meeting}}
+        {}
+        {10-10}
+        {/TUGboat/tb03-1/tb05pricex3j6.pdf}
+        {}
+        {}
+
+
+%THEcategory{Software}
+
+
+\capsule{}%subsec
+        {Software}%add|Literate Programming
+        {Donald~Knuth}
+        {{Fixed-point glue setting\Dash an example of {\tt WEB}}}
+        {}
+        {10-27}
+        {/TUGboat/tb03-1/tb05knuth.pdf}
+        {}
+        {}
+
+
+%THEcategory{Site Reports}{/TUGboat/tb03-1/tb05site.pdf}
+
+
+\capsule{}%subsecnn
+        {Site Reports}
+        {}
+        {}
+        {}
+        {28-32}
+        {/TUGboat/tb03-1/tb05site.pdf}
+        {}
+        {}
+
+
+%THEsite{CDC Cyber}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Michael~J.~Frisch}
+        {{CDC {\TeX}}}
+        {}
+        {28-28}
+        {/TUGboat/tb03-1/tb05site.pdf}
+        {}
+        {}
+
+
+%THEsite{HP 3000}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Lance~Carnes}
+        {{HP3000 site report}}
+        {}
+        {28-29}
+        {/TUGboat/tb03-1/tb05site.pdf}
+        {}
+        {}
+
+
+%THEsite{IBM Group}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {G.~Canzii, D.~Lucarella \and A.~Pilenga}
+        {{\TeX} at the University of Milan}
+        {}
+        {29-29}
+        {/TUGboat/tb03-1/tb05site.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {L.~Aiello \and S.~Pavan}
+        {{{\TeX} news from Pisa}}
+        {}
+        {30-31}
+        {/TUGboat/tb03-1/tb05site.pdf}
+        {}
+        {}
+
+
+%THEsite{VAX/VMS}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Monte~C.~Nichols}
+        {{\VAX}/VMS site report}
+        {}
+        {32-32}
+        {/TUGboat/tb03-1/tb05site.pdf}
+        {}
+        {}
+
+
+%THEcategory{``{\sixbf small}'' {\TeX}}
+
+
+\capsule{}%subsec
+        {``small'' {\TeX}}
+        {Lance~Carnes}
+        {Editor's introduction}
+        {}
+        {32-32\offset{.5}}
+        {/TUGboat/tb03-1/tb05site.pdf}
+        {}
+        {}
+
+
+%THEcategory{Warnings \& Limitations}
+
+
+\capsule{}%subsec
+        {Warnings \& Limitations}
+        {Barbara~Beeton}
+        {Another hangup}
+        {}
+        {33-33}
+        {/TUGboat/tb03-1/tb05beet.pdf}
+        {}
+        {}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Lynne~Price}
+        {Editor's introduction}
+        {}
+        {33-33\offset{.5}}
+        {/TUGboat/tb03-1/tb05pricemac.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Macros}
+        {}
+        {{\TUB} macro index}
+        {}
+        {33-35}
+        {/TUGboat/tb03-1/tb05pricemac.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Roger~L.~Beeman}
+        {Display of a font in table form}
+        {}
+        {35-38}
+        {/TUGboat/tb03-1/tb05beemanfont.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Roger~L.~Beeman}
+        {Seating charts}
+        {}
+        {39-42}
+        {/TUGboat/tb03-1/tb05beemanseat.pdf}
+        {}
+        {}
+
+
+%THEcategory{Problems}
+
+
+\capsule{}%subsecnn
+        {Problems}
+        {}
+        {{Problems from the {\TeX}arcana class: Answer to the challenge problem}}
+        {}
+        {43-44}
+        {/TUGboat/tb03-1/tb05prob.pdf}
+        {}
+        {}
+
+
+%THEcategory{Late-Breaking News}
+
+
+\capsule{}%subsec
+        {Late-Breaking News}
+        {Samuel~B.~Whidden}
+        {{TUG financial reports}}
+        {}
+        {45-47}
+        {/TUGboat/tb03-1/tb05treas.pdf}
+        {}
+        {}
+
+\capsule{}
+        {Late-Breaking News}
+        {}
+        {TUG 1981 Treasurer's report}
+        {}
+        {45-46}
+        {/TUGboat/tb03-1/tb05treas.pdf}
+        {}
+        {}
+
+
+%THEsubheadi{ {TUG 1981 Treasurer's report}\\45-46}
+
+
+%THEsubheadi{ {TUG 1982 Budget}\\46-47}
+
+\capsule{}
+        {Late-Breaking News}
+        {}
+        {TUG 1982 Budget}
+        {}
+        {46-47}
+        {/TUGboat/tb03-1/tb05treas.pdf}
+        {}
+        {}
+
+
+%THEcategory{Miscellaneous}
+
+
+\capsule{}%subsecnn
+        {Miscellaneous}
+        {}
+        {Instructions for submitting {\TUB} articles on magnetic tape}
+        {}
+        {\offset{990}}
+        {URL}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Miscellaneous}
+        {}
+        {Membership application and order form}
+        {}
+        {\offset{991}}
+        {/join.html}
+        {}
+        {}
+
+
+%THEcategory{Supplements}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {{{\TeX} and {\MF} Errata}}
+        {}
+        {\offset{992}}
+        {URL}
+        {}
+        {}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {{TUG membership list}}
+        {}
+        {\offset{992.5}}
+        {URL}
+        {}
+        {}

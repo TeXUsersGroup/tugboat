@@ -1,0 +1,395 @@
+% $Id$
+
+\issue{19}{2}{59}{June 1998}{}{TeX Northeast proceedings}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 19:2 as one pdf (5.4mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb19-2/tb59complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1}
+        {/TUGboat/tb19-2/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb19-2/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {345}
+        {/TUGboat/tb19-2/titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {346}
+        {/TUGboat/tb19-2/tb59edit.pdf}
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {91-91}
+        {}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Mimi~Jett}
+        {{From} the {President}}
+        {}
+        {93-93}
+        {/TUGboat/Pres/tb59pres.html}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {94-94}
+        {/TUGboat/tb19-2/tb59beet.pdf}
+        {Copyright protection for typefaces\\
+{More} on {PS}~fonts;\\
+{CyrTUG} membership now free of charge\\
+{\acro{IBM}'s {\sf techexplorer}}\\
+{New Omega for Mac}\\
+{Euro\TeX\,98}\Dash {The Tenth European \TeX{} Conference}}
+        {}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {{April} {Fool's} {Hoax}}
+        {}
+        {95-96}
+        {/TUGboat/tb19-2/tb59hoax.pdf}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {{CTAN} \acro{CDROM} series, compliments of \acro{DANTE}}
+        {}
+        {97-98}
+        {/TUGboat/tb19-2/tb59dant.pdf}
+
+
+%THEcategory{Typography}
+
+
+\capsule{}%subsec
+        {Typography}
+        {Peter~Flynn}
+        {Typographers' inn}
+        {}
+        {98-100}
+        {/TUGboat/tb19-2/tb59inn.pdf}
+
+
+%THEcategory{Graphics Applications}
+
+
+\capsule{}%subsec
+        {Graphics Applications}
+        {Denis~Girou}
+        {{\sf pst-fill}\Dash a {PSTricks} package for        filling and tiling areas}
+        {}
+        {101-113}
+        {/TUGboat/tb19-2/tb59girou.pdf}
+
+
+%THEcategory{Book Review}
+
+
+\capsule{}%subsec
+        {Book Review}
+        {Michael~Doob}
+        {{\it \TeX{} Unbound}, by~Alan~Hoenig}
+        {}
+        {113-114}
+        {/TUGboat/tb19-2/tb59revh.pdf}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Anshuman~Pandey}
+        {An overview of {Indic} fonts  for {\TeX}}
+        {}
+        {115-120}
+        {/TUGboat/tb19-2/tb59pand.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Thierry~Bouche}
+        {Diversity in math fonts}
+        {}
+        {120-134}
+        {/TUGboat/tb19-2/tb59bouc.pdf}
+
+
+%THEcategory{Hints \& Tricks}
+
+
+\capsule{}%subsec
+        {Hints \& Tricks}
+        {Jeremy~Gibbons}
+        {"Hey\Dash it works!"}
+        {}
+        {135-136}
+        {/TUGboat/tb19-2/tb59gibb.pdf}
+        {Smart spaced macros everywhere ({Robert Tolksdorf})\\
+{Dashed lines} ({Pedro~J.~Aphalo})\\
+{Double-headed arrows} ({Jeremy Gibbons})}
+        {}
+
+
+%THEcategory{{\LaTeX}}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {LaTeX\CONNECT{}project\CONNECT{}team}
+        {{D}efault docstrip headers}
+        {}
+        {137-138}
+        {/TUGboat/tb19-2/tb59ltdocstrip.pdf}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {LaTeX\CONNECT{}project\CONNECT{}team}
+        {{\LaTeX} {News}, {Issue} 9, {June} 1998}
+        {}
+        {139-139}
+        {/TUGboat/tb19-2/tb59news.pdf}
+
+
+%THEcategory{{\TeX Northeast}}
+
+
+\capsule{}%subsecnn
+        {{\TeX Northeast}}%replace|Conference Notes
+        {}
+        {{Conference}~{Program}}
+        {}
+        {140-141}
+        {URL}
+
+
+\capsule{}%subsec
+        {{\TeX Northeast}}%replace|Conference Notes
+        {Stephanie~Hogue}
+        {Final report: {\TeX Northeast}}
+        {}
+        {142-143}
+        {/TUGboat/tb19-2/tb59hogue.pdf}
+
+
+\capsule{}%subsecnn
+        {{\TeX Northeast}}%replace|Abstracts
+        {}
+        {{\TeX Northeast}: {Workshops} and additional papers}
+        {}
+        {144-146}
+        {/TUGboat/tb19-2/tb59abs.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX Northeast}}%replace|Software \& Tools
+        {Michael~P.~Barnett}
+        {{\sf mathscape}\Dash {Combining}           {Mathematica} and {\TeX}}
+        {}
+        {147-156}
+        {/TUGboat/tb19-2/tb59barn.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX Northeast}}%replace|Electronic Documents
+        {Robert~S.~Sutor and Samuel~S.~Dooley}
+        {{\TeX} and  {\LaTeX} on the {Web} via {IBM}~{\sf techexplorer}}
+        {}
+        {157-161}
+        {/TUGboat/tb19-2/tb59dool.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX Northeast}}%replace|General Delivery
+        {Amy~Hendrickson}
+        {Real {Life} {\LaTeX}: {Adventures}           of a {\TeX} consultant}
+        {}
+        {162-167}
+        {/TUGboat/tb19-2/tb59amy.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX Northeast}}%replace|Methods
+        {Alan~J.~Hoenig}
+        {Typesetting with {\TeX} and {\LaTeX}}
+        {}
+        {168-175}
+        {/TUGboat/tb19-2/tb59hintro.pdf}
+
+\capsule{}%subsec
+        {{\TeX Northeast}}%replace|Fonts
+        {Alan~J.~Hoenig}
+        {Alternatives to Computer Modern Mathematics}
+        {}
+        {176-187}
+        {/TUGboat/tb19-2/tb59hmath.pdf}
+
+\capsule{}
+        {\TeX Northeast}%replace|Software \& Tools
+        {Jeffrey McArthur}
+        {Developing database publishing systems using TeX}
+        {}
+        {188}
+        {/TUGboat/tb19-2/tb59mcar.pdf}
+
+\capsule{}
+        {\TeX Northeast}%replace|Electronic Documents
+        {Ross Moore}
+        {Presenting mathematics and languages in Web-pages using LaTeX2HTML}
+        {}
+        {195}
+        {/TUGboat/tb19-2/tb59moore.pdf}
+
+\capsule{}
+        {\TeX Northeast}%replace|Bibliographies
+        {Oren Patashnik}
+        {BibTeX 101}
+        {}
+        {204}
+        {/TUGboat/tb19-2/tb59patash.pdf}
+
+\capsule{}
+        {\TeX Northeast}%replace|Electronic Documents
+        {Peter Signell}
+        {One-document scientific publishing for print and Web/CD}
+        {}
+        {208}
+        {/TUGboat/tb19-2/tb59sign.pdf}
+
+\capsule{}
+        {\TeX Northeast}%replace|Electronic Documents
+        {Michael D. Sofka}
+        {TeX to HTML translation via tagged DVI files}
+        {}
+        {214}
+        {/TUGboat/tb19-2/tb59sofka.pdf}
+
+\capsule{}
+        {Abstracts}
+        {}
+        {{\sl Les Cahiers GUTenberg}, Contents of issue 28--29}
+        {}
+        {227}
+        {/TUGboat/tb19-2/tb59cahi.pdf}
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {227\offset{.5}}
+        {/calendar.html}
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {TUG 98\Dash{}Torun, Poland, 17-21 August 1998, Preliminary program}
+        {}
+        {92}
+        {/TUGboat/tb19-2/tug98prog.pdf}
+
+\capsule{}
+        {News \& Announcements}
+        {Wilfred Hennings}
+        {Volunteers needed for LaTeX2rtf coordination and development}
+        {}
+        {231}
+        {/TUGboat/tb19-2/tb59henn.pdf}
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {TUG'99 Announcement}
+        {}
+        {229}
+        {/TUGboat/tb19-2/tug99.pdf}
+
+\capsule{}
+        {Late-Breaking News}
+        {Mimi Burbank}
+        {Production notes}
+        {}
+        {228}
+        {/TUGboat/tb19-2/tb59prod.pdf}
+
+\capsule{}
+        {Late-Breaking News}
+        {}
+        {Future issues}
+        {}
+        {228\offset{.5}}
+        {/TUGboat/tb19-2/tb59prod.pdf}
+
+\capsule{}
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {230}
+        {/instmem.html}
+
+\capsule{}
+        {Advertisements}
+        {}
+        {TeX consulting and production services}
+        {}
+        {231\offset{.5}}
+        {/consultants.html}
+%                                               230
+
+\capsule{}
+        {Advertisements}
+        {}
+        {Y\&Y Inc.}
+        {}
+        {232}
+        {/TUGboat/tb19-2/yandycolor.pdf}
+
+\capsule{}
+        {Advertisements}
+        {}
+        {Blue Sky Research}
+        {}
+        {c3}
+        {/TUGboat/tb19-2/bluesky98.pdf}

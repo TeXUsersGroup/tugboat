@@ -1,0 +1,286 @@
+% $Id$
+
+\issue{19}{1}{58}{March 1998}{}{}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 19:1 as one pdf (1.3mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb19-1/tb58complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1}
+        {/TUGboat/tb19-1/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb19-1/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {345}
+        {/TUGboat/tb19-1/titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {346}
+        {/TUGboat/tb19-1/tb58edit.pdf}
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {3-3}
+        {URL}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Mimi~Jett}
+        {{From} the {President}}
+        {}
+        {4-4}
+        {/TUGboat/Pres/tb58pres.html}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {5-5}
+        {/TUGboat/tb19-1/tb58beet.pdf}
+        {Fonts are ruled copyrightable in the~U.S.\\
+MathML becomes a W3C Proposed Recommendation\\
+``{\tt whois}'' service for TUG members\\
+The origin of italics\Dash An exhibit~catalog\\
+The improbability of typographical~errors}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {C.\,V.~Radhakrishnan}
+        {A case for {\TeX} in {India}\Dash {The Indian {\TeX} Users Group}}
+        {}
+        {6-9}
+        {/TUGboat/tb19-1/tb58radh.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Sebastian~Rahtz}
+        {The inaugural meeting of {TUG India}}
+        {}
+        {9-11}
+        {/TUGboat/tb19-1/tb58raht.pdf}
+
+
+%THEcategory{Software \& Tools}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Andreas Scherer}
+        {The future of {AmiWeb2c}}
+        {}
+        {11-12}
+        {/TUGboat/tb19-1/tb58sche.pdf}
+
+
+\capsule{}%subsec
+        {Software \& Tools}%add|Indexing
+        {Nelson~H.F.~Beebe}
+        {\acro{AUTHIDX}: {An} author/editor        indexing package}
+        {}
+        {12-18}
+        {/TUGboat/tb19-1/tb58beeb.pdf}
+
+
+%THEcategory{{\TeX\ Live CD-ROM}}
+
+\capsule{}%subsec
+        {{\TeX\ Live CD-ROM}}
+        {Sebastian~Rahtz and Michel~Goossens}
+        {The {\TeX{} Live} guide, 3rd edition}
+        {}
+        {19-60}
+        {ftp://tug.org/historic/systems/texlive/1998/TeXLive3/doc/live.pdf}
+
+
+%THEcategory{Graphics Applications}
+
+\capsule{}%subsec
+        {Graphics Applications}
+        {Ross~Moore}
+        {Erratum: {High} quality labels on included graphics,  using {Xy-pic}, {\tubissue 18(3)}, pp.~151--158}
+        {}
+        {61-61}
+        {/TUGboat/tb19-1/tb58moore.pdf}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Berthold~K.P.~Horn}
+        {The {European Modern} fonts}
+        {}
+        {62-63}
+        {/TUGboat/tb19-1/tb58horn.pdf}
+
+
+%THEcategory{Hints \& Tricks}
+
+
+\capsule{}%subsec
+        {Hints \& Tricks}
+        {Jeremy~Gibbons}
+        {"Hey\Dash it works!"}
+        {}
+        {63-65}
+        {/TUGboat/tb19-1/tb58works.pdf}
+        {{Determining} the page range of a document ({Paul~Hafner})\\
+{Text}~italics in maths~mode ({Jeremy~Gibbons})\\
+{Anti-appending}~rule ({Ram\'on~Casares})\\
+{Closed}~surface~integral ({Donald~Arseneau})}
+        {}
+
+
+%THEcategory{Tutorial}
+
+
+\capsule{}%subsec
+        {Tutorial}
+        {Philip~Taylor}
+        {Book design for {\TeX} users, {Part} 1: {Theory}}
+        {}
+        {65-74}
+        {/TUGboat/tb19-1/tb58tay1.pdf}
+
+
+%THEcategory{Abstracts}
+
+
+\capsule{}%subsecnn
+        {Abstracts}
+        {}
+        {{\sl Die {\TeX}nische {Kom\"odie}} {\bf8}, 1996, {Heft} 1--4}
+        {}
+        {75-80}
+        {/TUGboat/tb19-1/tb58komo.pdf}
+
+
+%THEcategory{News \& \\ Announcements}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {Calendar}
+        {}
+        {81-82}
+        {/calendar.html}
+
+
+\capsule{}%subsec
+        {News \& \\ Announcements}
+        {Martin~Schr\"oder}
+        {{\TeX} {Merchandising}\Dash an announcement}
+        {}
+        {83-83}
+        {/TUGboat/tb19-1/tb58schroder.pdf}
+
+
+%THEcategory{Late-Breaking\\News}
+
+
+\capsule{}%subsec
+        {Late-Breaking\\News}
+        {Mimi~Burbank}
+        {Production notes}
+        {}
+        {82}
+        {/TUGboat/tb19-1/tb58prod.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking\\News}
+        {Mimi~Burbank}
+        {Future issues}
+        {}
+        {82\offset{.5}}
+        {/TUGboat/tb19-1/tb58prod.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {New members of the {TUG} {Board}}
+        {}
+        {84-85}
+        {/TUGboat/tb19-1/tb58elec.pdf}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {86-86}
+        {/instmem.html}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {{TUG} membership application}
+        {}
+        {87-87}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {88-88}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {82\offset{.8}}
+        {URL}

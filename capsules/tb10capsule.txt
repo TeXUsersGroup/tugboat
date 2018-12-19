@@ -1,0 +1,454 @@
+% $Id$
+
+\issue{5}{2}{10}{November 1984}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue as one pdf (6.8mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb05-2/tb10complete.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses of officers, authors and others}
+        {}
+        {74-74}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {}%replace|News \& Announcements
+        {}
+        {Official announcements}
+        {}
+        {75-75}
+        {URL}
+
+
+\capsule{}
+        {General Delivery}
+        {}
+        {}
+        {}
+        {76-78}
+        {/TUGboat/tb05-2/tb10gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Pierre~MacKay}
+        {Message from the {President}}
+        {}
+        {76-76}
+        {/TUGboat/tb05-2/tb10gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Robert~Welland}
+        {Report of the {Publications} {Committee}}
+        {}
+        {77-77}
+        {/TUGboat/tb05-2/tb10gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Arthur~Keller}
+        {Report of the {Special} {Projects} {Committee}}
+        {}
+        {77-78}
+        {/TUGboat/tb05-2/tb10gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Submitting items to {\TUB}}
+        {}
+        {78-78}
+        {/TUGboat/tb05-2/tb10gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Richard~Southall}
+        {First principles of typographic design for document production}
+        {}
+        {79-90}
+        {/TUGboat/tb05-2/tb10south.pdf}
+
+
+%THEcategory{Software}
+
+
+\capsule{}%subsec
+        {Software}
+        {Helmut~J\"urgensen}
+        {Editor's introduction}
+        {}
+        {91-91}
+        {/TUGboat/tb05-2/tb10jurg.pdf}
+
+
+%THEcategory{\TeX{}tensions}
+
+
+\capsule{}%subsec
+        {\TeX{}tensions}
+        {Jacques~D\'esarm\'enien}
+        {How to run {\TeX} in a {French} environment: {Hyphenation}, fonts, typography}
+        {}
+        {91-102}
+        {/TUGboat/tb05-2/tb10desarm.pdf}
+
+
+\capsule{}%subsec
+        {\TeX{}tensions}
+        {Bernd~Schulze}
+        {German hyphenation and {\it Umlaut\/}s in {\TeX}}
+        {}
+        {103-104}
+        {/TUGboat/tb05-2/tb10schulze.pdf}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Donald~E.~Knuth}
+        {A course on {\MF} programming}
+        {}
+        {105-118}
+        {/TUGboat/tb05-2/tb10knut.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {John~D.~Hobby \and Gu~Guoan}
+        {A {Chinese} meta-font}
+        {}
+        {119-136}
+        {/TUGboat/tb05-2/tb10hobby.pdf}
+
+
+\capsule{}
+        {Output Devices}
+        {}
+        {}
+        {}
+        {137-140}
+        {/TUGboat/tb05-2/tb10output.pdf}
+
+
+\capsule{}%subsecnn
+        {Output Devices}
+        {}
+        {Chart: {Output} devices and computers}
+        {}
+        {137-137}
+        {/TUGboat/tb05-2/tb10output.pdf}
+
+
+\capsule{}%subsecnn
+        {Output Devices}
+        {}
+        {Index to sample output from various devices}
+        {}
+        {138-138}
+        {/TUGboat/tb05-2/tb10output.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Tom~Rokicki}
+        {{\tt Dvi\_QMS}: An example of a driver}
+        {}
+        {138-139}
+        {/TUGboat/tb05-2/tb10output.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Tom~Rokicki}
+        {{\tt \special}}
+        {}
+        {139-140}
+        {/TUGboat/tb05-2/tb10output.pdf}
+
+
+\capsule{}
+        {Site Reports}
+        {}
+        {}
+        {}
+        {141-144}
+        {/TUGboat/tb05-2/tb10site.pdf}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {David Fuchs}
+        {News from the {\TeX} {Project}}
+        {}
+        {141-141}
+        {/TUGboat/tb05-2/tb10site.pdf}
+
+
+\capsule{}%subsecnn
+        {Site Reports}
+        {}
+        {{\TeX} users' activity in {Germany}}
+        {}
+        {141-141\offset{.5}}
+        {/TUGboat/tb05-2/tb10site.pdf}
+
+
+%THEsite{Prime}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {John~Crawford}
+        {Prime site report}
+        {}
+        {141-141\offset{.8}}
+        {/TUGboat/tb05-2/tb10site.pdf}
+
+
+%THEsite{UNIX}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Richard Furuta}
+        {Unix {\TeX} site report}
+        {}
+        {142-142}
+        {/TUGboat/tb05-2/tb10site.pdf}
+
+
+%THEsite{\VAX/VMS}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Barry~Smith}
+        {{\VAX}/{VMS} site report}
+        {}
+        {142-142\offset{.5}}
+        {/TUGboat/tb05-2/tb10site.pdf}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Carlos~A.~Felippa}
+        {Feedback from {\TeX} users at {Lockheed}}
+        {}
+        {143-144}
+        {/TUGboat/tb05-2/tb10site.pdf}
+
+
+%THEcategory{``{\sixbf small}'' \TeX}
+
+
+\capsule{}%subsec
+        {``small'' \TeX}
+        {Lance~Carnes}
+        {Table of ``small'' {\TeX} implementations}
+        {}
+        {145-145}
+        {/TUGboat/tb05-2/tb10carnes.pdf}
+
+
+%THEcategory{Letters}
+
+
+\capsule{}%subsec
+        {Letters}%add|Accessibility
+        {Malcolm~Clark}
+        {Mathematical communication with a deaf and blind student using {\TeX}}
+        {}
+        {146-146}
+        {/TUGboat/tb05-2/tb10lettnews.pdf}
+
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {}
+        {}
+        {146-147}
+        {/TUGboat/tb05-2/tb10lettnews.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {146-146\offset{.5}}
+        {/TUGboat/tb05-2/tb10lettnews.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Call for papers: {\TeX} for scientific documentation, {Varenna}, {Italy}, {May}~16--17,~1985}
+        {}
+        {147-147}
+        {/TUGboat/tb05-2/tb10lettnews.pdf}
+
+
+\capsule{}
+        {TUG Business}
+        {}
+        {}
+        {}
+        {148-152}
+        {/TUGboat/tb05-2/tb10tugbus.pdf}
+
+
+\capsule{}%subsec
+        {TUG Business}
+        {Samuel~B.~Whidden}
+        {{\TUG} 1984 financial report with comparisons}
+        {}
+        {148-149}
+        {/TUGboat/tb05-2/tb10tugbus.pdf}
+
+
+\capsule{}%subsec
+        {TUG Business}
+        {Chuck~Dupree}
+        {Report of the {August} 1984 SC meeting}
+        {}
+        {149-152}
+        {/TUGboat/tb05-2/tb10tugbus.pdf}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Profile of {\TeX} installations available to {TUG} members}
+        {}
+        {153-155}
+        {/TUGboat/tb05-2/tb10instprof.pdf}
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {}
+        {}
+        {156-160}
+        {/TUGboat/tb05-2/tb10ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Talaris talks {\TeX}}
+        {}
+        {156-157}
+        {/TUGboat/tb05-2/tb10ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Quality {Micro} {Systems}, {Inc.}}
+        {}
+        {158-158}
+        {/TUGboat/tb05-2/tb10ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Textset, {Inc.}}
+        {}
+        {159-159}
+        {/TUGboat/tb05-2/tb10ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {The {Metafoundry}}
+        {}
+        {160-160}
+        {/TUGboat/tb05-2/tb10ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Instructors wanted for {TUG} courses}
+        {}
+        {160-160\offset{.5}}
+        {/TUGboat/tb05-2/tb10ads.pdf}
+
+
+\capsule{}
+        {Miscellaneous}
+        {}
+        {}
+        {}
+        {161-168}
+        {/TUGboat/tb05-2/tb10backm.pdf}
+
+
+\capsule{}%subsecnn
+        {Miscellaneous}
+        {}
+        {Membership application and order form}
+        {}
+        {161-164}
+        {/TUGboat/tb05-2/tb10backm.pdf}
+
+
+\capsule{}%subsecnn
+        {Miscellaneous}
+        {}
+        {Order form for {\AMS} publications}
+        {}
+        {165-166}
+        {/TUGboat/tb05-2/tb10backm.pdf}
+
+
+\capsule{}%subsecnn
+        {Miscellaneous}
+        {}
+        {{\TeX}82 order form}
+        {}
+        {167-168}
+        {/TUGboat/tb05-2/tb10backm.pdf}
+
+
+%THEcategory{Supplements}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {The \TeX{}book: Errata and changes}
+        {}
+        {\offset{992}}
+        {URL}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {\TUG\ Membership list}
+        {}
+        {\offset{992.5}}
+        {URL}

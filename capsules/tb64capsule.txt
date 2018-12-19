@@ -1,0 +1,486 @@
+% $Id$
+
+\issue{20}{3}{64}{September 1999}{/tug1999/}{TUG 1999 Proceedings (Vancouver)}
+
+%THEcategory{Editorial Overview}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 20:3 as one pdf (2.1mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb20-3/tb64complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1}
+        {/TUGboat/tb20-3/cover1.pdf}
+
+\capsule{}%subsec
+        {Editorial Overview}
+        {Christina~Thiele}
+        {{Vancouver in August}}
+        {}
+        {155-159}
+        {/TUGboat/tb20-3/tb64edch.pdf}
+
+
+\capsule{}%subsecnn
+        {Editorial Overview}
+        {}
+        {TUG\,'99 Program}
+        {}
+        {160-161}
+        {/TUGboat/tb20-3/tug99sched.pdf}
+
+
+%THEcategory{{\TeX} and Math \\ on the Web}
+
+
+\capsule{}%subsec
+        {{\TeX} and Math \\ on the Web}%add|Keynotes
+        {Stephen~A.~Fulling}
+        {Keynote:  {\TeX\ and the Web in the higher education  of~the~future: Dreams and difficulties}}
+        {}
+        {162-166}
+        {/TUGboat/tb20-3/tb64full.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} and Math \\ on the Web}
+        {Patrick~D.F.~Ion}
+        {{Math\acro{ML}: A key to math on the Web}}
+        {}
+        {167-175}
+        {/TUGboat/tb20-3/tb64ion.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} and Math \\ on the Web}
+        {Douglas~Lovell}
+        {{\TeXML: Typesetting {\XML} with \TeX}}
+        {}
+        {176-183}
+        {/TUGboat/tb20-3/tb64love.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} and Math \\ on the Web}
+        {Paul~Topping}
+        {{Using {\ssf MathType} to create {\TeX} and  Math\acro{ML} equations}}
+        {}
+        {184-188}
+        {/TUGboat/tb20-3/tb64topp.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} and Math \\ on the Web}
+        {Chris~Rowley}
+        {{Models and languages for formatted documents}}
+        {}
+        {189-195}
+        {/TUGboat/tb20-3/tb64rowl.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} and Math \\ on the Web}
+        {D.P.~Story}
+        {{Acro\TeX: Acrobat and {\TeX} team up}}
+        {}
+        {196-201}
+        {/TUGboat/tb20-3/tb64story.pdf}
+
+
+%THEcategory{Customizing \\ Document Layout}
+
+
+\capsule{}%subsec
+        {Customizing \\ Document Layout}%replace|Typography
+        {Jean-luc~Doumont}
+        {{Doing it my way: A lone {\TeX}er in  the real world}}
+        {}
+        {202-207}
+        {/TUGboat/tb20-3/tb64douma.pdf}
+
+
+\capsule{}%subsec
+        {Customizing \\ Document Layout}%replace|\LaTeX
+        {Peter~Flynn}
+        {{The {\ssf vulcan} package:  A repair patch for \LaTeX}}
+        {}
+        {208-213}
+        {/TUGboat/tb20-3/tb64flynn.pdf}
+
+
+\capsule{}%subsec
+        {Customizing \\ Document Layout}%replace|\LaTeX
+        {David~Carlisle, Frank~Mittelbach, and~Chris~Rowley}
+        {{New interfaces  for {\LaTeX} class~design, Parts~I and~II}}
+        {}
+        {214-216}
+        {/TUGboat/tb20-3/tb64carl.pdf}
+
+
+%THEcategory{{\TeX} in Publishing}
+
+
+\capsule{}%subsec
+        {{\TeX} in Publishing}
+        {Kaveh~Bazargan}
+        {{Multi-use documents: The role of the publisher}}
+        {}
+        {217-220}
+        {/TUGboat/tb20-3/tb64kaveh.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} in Publishing}
+        {Frederick H. Bartlett}
+        {{Very like a nail:  Typesetting \acro{SGML} with \TeX}}
+        {}
+        {221-221}
+        {/TUGboat/tb20-3/tb64bart.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} in Publishing}
+        {Harry~Payne}
+        {{Making a book from contributed papers: Print  and Web versions}}
+        {}
+        {222-226}
+        {/TUGboat/tb20-3/tb64payne.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} in Publishing}
+        {Robert~L.~Kruse}
+        {{Managing large projects with PreTeX:   A preprocessor for \TeX}}
+        {}
+        {227-230}
+        {/TUGboat/tb20-3/tb64kruse.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} in Publishing}
+        {Arthur~Ogawa}
+        {{Database publishing with {Java}  and \TeX}}
+        {}
+        {231-231}
+        {/TUGboat/tb20-3/tb64ogawa.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} in Publishing}
+        {Paul~A.~Mailhot}
+        {{Implementing dynamic cross-referencing  and \acro{PDF} with PreTeX}}
+        {}
+        {232-236}
+        {/TUGboat/tb20-3/tb64mail.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} in Publishing}
+        {Hu~Wang}
+        {{A Web-based submission system for  meeting abstracts}}
+        {}
+        {237-240}
+        {/TUGboat/tb20-3/tb64wang.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} in Publishing}
+        {Petr~Sojka}
+        {{Hyphenation on demand}}
+        {}
+        {241-247}
+        {/TUGboat/tb20-3/tb64sojka.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} in Publishing}
+        {Jonathan~Fine}
+        {{Active {\TeX} and the \acro{DOT}   input syntax}}
+        {}
+        {248-254}
+        {/TUGboat/tb20-3/tb64fine.pdf}
+
+
+%THEcategory{Fonts, Graphics, and\\ New Developments}
+
+
+\capsule{}%subsec
+        {Fonts, Graphics, and\\ New Developments}
+        {Jean-luc~Doumont}
+        {{Drawing effective (and beautiful)    graphs with \TeX}}
+        {}
+        {255-261}
+        {/TUGboat/tb20-3/tb64doumB.ps}
+
+
+\capsule{}%subsec
+        {Fonts, Graphics, and\\ New Developments}
+        {Wendy~McKay~and~Ross~Moore}
+        {{Convenient labelling of graphics,  the~{WARMreader}~way}}
+        {}
+        {262-271}
+        {/TUGboat/tb20-3/tb64ross.pdf}
+
+
+\capsule{}%subsec
+        {Fonts, Graphics, and\\ New Developments}
+        {Sergey~Lesenko~and~ Laurent~Siebenmann}
+        {{Viewing \acro{DVI} files with Acrobat Reader: \acro{DVIPDF} gives birth  to Acro\acro{DVI}}}
+        {}
+        {272-281}
+        {/TUGboat/tb20-3/tb64lesen.pdf}
+
+
+\capsule{}%subsec
+        {Fonts, Graphics, and\\ New Developments}
+        {Alan~Hoenig}
+        {{{\it MathKit\/}: Alternatives to Computer  Modern Mathematics} }
+        {}
+        {282-289}
+        {/TUGboat/tb20-3/tb64hoenig.pdf}
+
+
+\capsule{}%subsec
+        {Fonts, Graphics, and\\ New Developments}
+        {Fabrice~Popineau}
+        {{fp\TeX{}: A te\TeX-based distribution  for Windows}}
+        {}
+        {290-297}
+        {/TUGboat/tb20-3/tb64popin.pdf}
+
+
+\capsule{}%subsec
+        {Fonts, Graphics, and\\ New Developments}
+        {Jeffrey~McArthur}
+        {{Managing {\TeX} software  development projects}}
+        {}
+        {298-306}
+        {/TUGboat/tb20-3/tb64mcar.pdf}
+
+
+\capsule{}%subsec
+        {Fonts, Graphics, and\\ New Developments}
+        {Timothy~Murphy}
+        {{{Java} and \TeX}}
+        {}
+        {307-312}
+        {/TUGboat/tb20-3/tb64murph.pdf}
+
+
+%THEcategory{Recognition}
+
+
+\capsule{}%subsec
+        {Recognition}%replace|General Delivery
+        {Christina~Thiele}
+        {{Barbara~N.~Beeton: \acro{TUG} Board member   for~20~years}}
+        {}
+        {313-315}
+        {/TUGboat/tb20-3/tb64bb20.pdf}
+
+
+%THEcategory{Poster Exhibition<   \subsec Christina~Thiele\\{Text of \,{\rm The Apocalypse\/} as graphics,          by Prof.~Alban Grimm}\\316-316}
+
+
+\capsule{}%subsec
+        {Poster Exhibition}
+        {Christina~Thiele}
+        {Text of "The Apocalypse" as graphics, by Prof.~Alban Grimm}
+        {}
+        {316-316}
+        {/TUGboat/tb20-3/tb64exhib.pdf}
+
+\capsule{}%subsec
+        {Poster Exhibition}
+        {Prof.~Alban~Grimm}
+        {{Text of "The Apocalypse" as graphics}}
+        {}
+        {317-319}
+        {/TUGboat/tb20-3/tb64grimm.pdf}
+
+
+%THEcategory{Workshops<   \subsec Eitan~Gurari~and~Sebastian~Rahtz\\\LaTeX{} to {XML}/Math\acro{ML}}\\320-320}
+
+
+\capsule{}%subsec
+        {Workshops}%replace|Abstracts
+        {Eitan~Gurari~and~Sebastian~Rahtz}
+        {\LaTeX{} to {XML}/Math\acro{ML}}
+        {}
+        {320-320}
+        {/TUGboat/tb20-3/tb64worka.pdf}
+
+\capsule{}%subsec
+        {Workshops}%replace|Abstracts
+        {D.P.~Story}
+        {{How to create quality interactive \acro{PDF}  documents for the \acro{WWW} using~\LaTeX}}
+        {}
+        {321-321}
+        {/TUGboat/tb20-3/tb64workb.pdf}
+
+
+\capsule{}%subsec
+        {Workshops}%replace|Abstracts
+        {Michael~Doob}
+        {{Writing class files: First steps}}
+        {}
+        {322-322}
+        {/TUGboat/tb20-3/tb64workc.pdf}
+
+
+\capsule{}%subsec
+        {Workshops}%replace|Abstracts
+        {Anita~Hoover}
+        {{Converting a {\LaTeX} 2.09 style  to a {\LaTeXe} class}}
+        {}
+        {323-323}
+        {/TUGboat/tb20-3/tb64workd.pdf}
+
+
+%THEcategory{Panels}
+
+
+\capsule{}%subsec
+        {Panels}
+        {Stephen~A.~Fulling,\CONNECT{}Moderator}
+        {{{\TeX} and math  on the Web}}
+        {}
+        {324-324}
+        {/TUGboat/tb20-3/tb64panla.pdf}
+
+
+\capsule{}%subsec
+        {Panels}
+        {Kaveh~Bazargan,\CONNECT{}Moderator}
+        {{{\TeX} in publishing}}
+        {}
+        {325-325}
+        {/TUGboat/tb20-3/tb64panlb.pdf}
+
+
+\capsule{}%subsec
+        {Panels}
+        {Arthur~Ogawa,\CONNECT{}Moderator}
+        {{The Future of \LaTeX}}
+        {}
+        {326-326}
+        {/TUGboat/tb20-3/tb64panlc.pdf}
+
+
+%THEcategory{News \& \\ Announcements}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {Calendar}
+        {}
+        {329-330}
+        {/calendar.html}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {TUG2000\Dash The 21st Annual Conference}
+        {}
+        {154-154}
+        {/TUGboat/tb20-3/flier.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {{\acro{GUT}enberg\,2000\Dash{\LaTeX} and {\XML}:            Cooperating with the Internet}}
+        {}
+        {331-331}
+        {/TUGboat/tb20-3/tb64gut00.pdf}
+
+
+%THEcategory{Cartoon}
+
+
+\capsule{}%subsec
+        {Cartoon}
+        {Roy~Preston}
+        {{An Analogy with  Web Sites}}
+        {}
+        {330-330}
+        {/TUGboat/tb20-3/web2.gif}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {{\acro{TUG}\,'99 Attendees}}
+        {}
+        {327-328}
+        {/TUGboat/tb20-3/participants.pdf}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {332-332}
+        {/instmem.html}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {{TUG membership application}}
+        {}
+        {333-333}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {334-334}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Cambridge University Press}}
+        {}
+        {335-335}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Y\&Y Inc.}}
+        {}
+        {336-336}
+        {/TUGboat/tb20-3/yandy.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Blue Sky Research}}
+        {}
+        {c3}
+        {/TUGboat/tb20-3/bluesky.pdf}

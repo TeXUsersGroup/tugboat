@@ -1,0 +1,325 @@
+% $Id$
+
+\issue{21}{2}{67}{June 2000}{}{}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 21:2 as one pdf (2mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb21-2/tb67complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Cover}
+        {}
+        {c1}
+        {/TUGboat/tb21-2/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb21-2/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {97}
+        {/TUGboat/tb21-2/titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {98}
+        {/TUGboat/tb21-2/tb67edit.pdf}
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {99-100}
+        {URL}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Mimi~Jett}
+        {{From the President}}
+        {}
+        {101-101}
+        {/TUGboat/tb21-2/tb67jett.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {102-103}
+        {/TUGboat/tb21-2/tb67beet.pdf}
+        {XyMTeX posted to CTAN\\
+{Protection for font names in Germany}\\
+{CTAN\Dash\acro{CD}s and catalogue entries}\\
+\acro{TUG} Web site moves to Denmark\\
+{Hermann Zapf honored by \acro{DANTE}}\\
+{\acro{GUT}enberg publications on the Web}\\
+{The Romans didn't know about~zero}\\
+{Incunabula on-line at the Bavarian~State Library}}
+        {}
+
+\capsule{}%subsec
+        {General Delivery}%replace|Knuth Sessions
+        {Advogato\CONNECT{}(Raph\CONNECT{}Levien)}%person|Donald Knuth and Raph Levien and Advogato
+        {{Interview: Donald E. Knuth}}
+        {}
+        {103-110}
+        {/TUGboat/tb21-2/tb67advo.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {G.~Gr\"atzer}
+        {Turbulent transition}
+        {}
+        {111-113}
+        {/TUGboat/tb21-2/tb67grat.pdf}
+
+
+%THEcategory{Font Forum}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Werner~Lemberg}
+        {Thai fonts}
+        {}
+        {113-120}
+        {/TUGboat/tb21-2/tb67lemb.pdf}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Sivan~Toledo}
+        {Exploiting rich fonts}
+        {}
+        {121-129}
+        {/TUGboat/tb21-2/tb67tole.pdf}
+
+
+%THEcategory{Software \& Tools}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Alexander~Berdnikov, Hans~Hagen, Taco~Hoekwater \and Bogus{\l}aw~Jackowski}
+        {{Even more MetaFun with \MP: A request for permission}}
+        {}
+        {129-130}
+        {/TUGboat/tb21-2/tb67metafun.pdf}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {John~D.~Hobby}
+        {{Extending \MP:   Response to ``Even more MetaFun''}}
+        {}
+        {131-132}
+        {/TUGboat/tb21-2/tb67metafun.pdf}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Barbara~Beeton}
+        {Hyphenation exception log}
+        {}
+        {132-133}
+        {/TUGboat/tb21-2/tb67hyph.pdf}
+
+
+%THEcategory{Resources}
+
+
+%THEcategory{Hints \& Tricks}
+
+
+\capsule{}%subsec
+        {Hints \& Tricks}
+        {Jeremy~Gibbons}
+        {"Hey\Dash it works!"}
+        {}
+        {133-135}
+        {/TUGboat/tb21-2/tb67gibb.pdf}
+        {Decimal comma\\
+Two~decimal~digits\\
+Number~of~parameter tokens (Pedro~Palao~Gostanza)}
+        {}
+
+
+\capsule{}%subsec
+        {Hints \& Tricks}
+        {Christina~Thiele}
+        {{The treasure chest}}
+        {}
+        {136-142}
+        {/TUGboat/tb21-2/tb67chest.pdf}
+
+
+%THEcategory{\LaTeX}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {LaTeX\CONNECT{}project\CONNECT{}team}
+        {{{\LaTeX} News, Issue~13, June~2000}}
+        {}
+        {143-143}
+        {/TUGboat/tb21-2/tb67news.pdf}
+
+
+%THEcategory{News \& \\ Announcements}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {Calendar}
+        {}
+        {144-145}
+        {/TUGboat/tb21-2/tb67calendar.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {{TUG2000\Dash The 21st Annual Conference}}
+        {}
+        {148-148}
+        {/TUGboat/tb21-2/tug2000.pdf}
+
+
+%THEcategory{Late-Breaking\\News}
+
+
+\capsule{}%subsec
+        {Late-Breaking\\News}
+        {Mimi~Burbank}
+        {{Production notes}}
+        {}
+        {146}
+        {/TUGboat/tb21-2/tb67prod.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking\\News}
+        {}
+        {Future issues}
+        {}
+        {146\offset{.5}}
+        {/TUGboat/tb21-2/tb67prod.pdf}
+
+
+%THEcategory{Cartoon}
+
+
+\capsule{}%subsec
+        {Cartoon}
+        {Roy~Preston}
+        {Font identification}
+        {}
+        {100-100}
+        {/TUGboat/tb21-2/cartoon.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsec
+        {TUG Business}
+        {Donald~DeLand}
+        {{Report from the TUG Treasurer}}
+        {}
+        {145-146}
+        {/TUGboat/tb21-2/tb67treas.pdf}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {{2001 {\TeX} Users Group election}}
+        {}
+        {147-147}
+        {/TUGboat/tb21-2/tb67elec.pdf}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {149-149}
+        {/instmem.html}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {TUG membership application}
+        {}
+        {150-150}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {151-151}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{IBM {\sf techexplorer}}}
+        {}
+        {152-152}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Blue Sky Research}}
+        {}
+        {c3}
+        {URL}
+
+
+%THEcategory{Supplement}
+
+
+\capsule{}%subsecnn
+        {Supplement}
+        {}
+        {{\CTAN\ \acro{CD}s: A 3-disk collection}}
+        {}
+        {\offset{999}}
+        {https://ctan.org/}

@@ -1,0 +1,527 @@
+\let\primitiveinput=\input
+\input eplain
+\beginpackages
+  \usepackage{graphics}
+\endpackages
+\let\input=\primitiveinput
+
+\input tugboat.cmn  % tugboat.dates macros
+\input tugboat.dates
+\input tb90pages
+
+\newcount\startpage
+
+\nopagenumbers
+\hyphenpenalty = 10000
+\advance\rightskip by 0pt plus 9pt
+\hoffset = .25in
+\voffset = -.5in
+\vsize = 10in
+
+% fonts - 9pt.
+\font\tenrm=cmr9  \font\tensl=cmsl9  \font\tentt=cmtt9  \font\manual=logo9
+\font\tenit=cmti9
+\baselineskip=10.9pt
+
+% adjust everything else down
+\font\sf = cmss9
+\def\pkgname#1{{\sf #1}}
+
+\font\smallsl = cmsl8  \font\smallrm = cmr8
+\def\acrofont{% if slanted font, use slanted acro font
+   \ifdim \fontdimen1\font>0pt \smallsl \else \smallrm\fi
+}
+\def\acro#1{{\acrofont #1}}
+
+% for \BibTeX
+\font\smc=cmcsc10 at 9pt
+
+% slant \BibTeX and \MF
+\font\ninesl = cmsl8
+\font\slc = cmsl8 at 6pt
+\def\slBibTeX{{\ninesl B{\slc IB}\TeX}}  % cmcscsl10 not available as type1
+
+\font\manualsl = logosl10 at 9pt
+\def\slMF{{\manualsl META}\-{\manualsl FONT}\spacefactor1000 }
+\def\slMP{{\manualsl META}\-{\manualsl POST}\spacefactor1000 }
+
+% for \LaTeX, etc.
+\font\sevenrm=cmr6
+\font\sevensl=cmti7 at 6pt
+\scriptfont\slfam=\sevensl
+
+\def\reflect#1{%
+  \ifx\reflectbox\undefined
+    \errmessage{graphics package must be loaded}%
+  \else
+    \ifdim \fontdimen1\font>0pt
+      \raise 1.75ex \hbox{\kern.1em\rotatebox{180}{#1}}\kern-.1em
+    \else
+      \reflectbox{#1}%
+    \fi
+  \fi
+}
+\def\hideheight#1{\setbox0=\hbox{#1}\ht0=0pt \dp0=0pt \box0 }
+\def\XeTeX{\leavevmode\hideheight{\hbox{X\lower.5ex
+  \hbox{\kern-.125em\reflect{E}}\kern-.1667em \TeX}}}
+
+%\def\XeTeX{Xe\TeX}
+
+% abbreviations
+\def\\{\hfil\break}
+%\def\aand{\unskip,\space} %
+\def\aand{{\rm and\space}} % matches tub, but might be too long
+\def\cand{\unskip,\space\ignorespaces}
+\def\cs#1{{\tt \char`\\#1}}
+\def\emph#1{{\it #1}}
+\def\smallbullet{\raise .4ex \hbox{$\scriptscriptstyle \bullet$}}
+\def\t#1{{\tt #1}}
+\def\TUB{{\sl TUGboat}}
+
+% from tugboat.front
+\def\titleslash{\raise.3ex\hbox{\sevenrm/}}
+
+\let\offset=\gobble          % ignore manual sorting offset
+\long\def\begin#1#2\end#3{}  % ignore blurb
+\def\issue#1#2#3#4#5#6{}     % ignore issue info
+
+% formatting
+\newdimen\pagenowidth % space for just
+\setbox0=\hbox{000}
+\pagenowidth=\wd0  % aka 1.5em
+\newdimen\pagenospace  \pagenospace = 2.5em
+
+\def\category#1{\medskip\noindent{\bf #1}\vskip .5\smallskipamount}
+
+% #1 is difficulty category -- follows \capsule on first line
+% #2 is TB category -- arg 2 is alone on its line, possibly with replace or add comment
+% #3 is author -- args 3-7 are alone on their lines
+% #4 is title
+% #5 is for statement
+% #6 is page number
+% #7 is URL of paper PDF
+% #8 is subtitles -- arg 8 can be alone on its line or multiple lines long
+% #9 is for notes added at html time -- arg 9 can be alone on its line or multiple lines long
+
+% args 2 to 7 must be alo
+\def\capsule#1#2#3#4#5#6#7#8#9{%
+    \vskip 1.5pt plus1pt
+    \noindent
+    \hangindent = \pagenospace
+      \advance\hangindent by 3em
+    \hbox to \pagenospace{%
+      \hbox to \pagenowidth{\hfil #6}%
+      \hfil}%
+     %
+     \def\author{#3}%
+     \def\title{#4}%
+     {\sl \author}%
+     %
+     % / only if both parts are present.
+     \ifx\author\empty\else \ifx\title\empty\else\ \titleslash\ \fi\fi
+     %
+     {\rm \title}%
+     %
+     \def\blurb{#5}%
+     \ifx\blurb\empty\else \hfil\break\hglue-2em\smallbullet\ \blurb\fi
+     \par
+}
+
+
+% typeset the actual title text.
+\font\titlebf = cmbx10 scaled \magstephalf
+\leftline{{\titlebf TUG}BOAT \kern1.5pc \volx\
+ \kern1.5pc
+ TUG 2007 Conference Proceedings
+}
+\bigskip
+\leftline{{\titlebf Table of Contents}\kern1pc (ordered by difficulty)}
+\smallskip
+
+\rm  % print above in 10pt, below in 9pt
+
+% begin-items
+% 
+
+\begin{blurb}
+<p><a href="http://river-valley.zeeba.tv/conferences/tug-2007">Videos of many
+of the presentations are available</a>, thanks to Kaveh Bazargan and
+River Valley Technologies.
+
+<p>If you're not already a member, we hope you'll consider <a
+href="/join.html">joining TUG</a> to support TUGboat and other TeX
+projects.  <a href="/memberaccess.html">More information on TUG member
+access</a>.
+
+<p>
+\end{blurb}
+
+\issue{28}{3}{90}{2007}{/tug2007/}{TUG 2007 Proceedings (San Diego, California)}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 28:3 as one pdf (10mb)}
+        {}
+        {\offset{.1}}
+        {/TUGboat/tb28-3/tb90complete.pdf}
+        {}
+        {}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1\offset{.2}}
+        {/TUGboat/tb28-3/cover1.pdf}
+        {}
+        {}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2\offset{.3}}
+        {/TUGboat/tb28-3/cover2.pdf}
+        {}
+        {}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Contents ordered by difficulty}
+        {}
+        {c3\offset{.4}}
+        {/TUGboat/tb28-3/cover3.pdf}
+        {}
+        {}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {273}
+        {/TUGboat/tb28-3/titlepage.pdf}
+        {}
+        {}
+
+\category{Introductory}
+
+\capsule{Introductory}
+  {TUG 2007}%add|General Delivery
+  {Tim Arnold}
+  {\acro{TUG} 2007: A few words}
+  {informal report from \acro{TUG} 2007, with photos}
+  {276}
+  {/TUGboat/tb28-3/tb90arnold.pdf}
+  {}
+  {}
+
+
+\capsule{Introductory}
+  {\LaTeX}
+  {Klaus H\"oppner}
+  {Typesetting tables with \LaTeX}
+  {introduction to making tables in \LaTeX}
+  {350}
+  {/TUGboat/tb28-3/tb90hoeppner.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Fonts}
+  {Jonathan Kew}
+  {Fonts for every language: \acro{SIL}'s font projects and the Open Font License}  
+  {overview of \acro{SIL}'s font-related initiatives}
+  {305}
+  {/TUGboat/tb28-3/tb90kew.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {\ConTeXt}
+  {Aditya Mahajan}
+  {\ConTeXt\ basics for users: Table macros}
+  {introduction to making tables in \ConTeXt}
+  {372}
+  {/TUGboat/tb28-3/tb90mahajan.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Keynote}%add|Typography
+  {Peter Wilson}
+  {Between then and now\Dash A meandering memoir}
+  {review of typography and typesetting from Sumeria to the present}
+  {280}
+  {/TUGboat/tb28-3/tb90wilson.pdf}
+  {}
+  {}
+
+
+% 
+\category{Intermediate}
+
+\capsule{Intermediate}
+  {Fonts}
+  {Barbara Beeton}
+  {The \acro{STIX} Project\Dash From Unicode to fonts}
+  {supporting mathematics in Unicode, including creating the necessary fonts}
+  {299}
+  {/TUGboat/tb28-3/tb90beet.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Software \& Tools}
+  {Robert Burgess \aand Emin G\"un Sirer}
+  {Cross\TeX: A modern bibliography management tool}
+  {a new bibliography tool written in Python, upward-compatible with \BibTeX}
+  {342}
+  {/TUGboat/tb28-3/tb90burgess.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Software \& Tools}
+  {Hans Hagen}
+  {\ConTeXt\ Mk\acro{IV}: Going \acro{UTF}}
+  {development of Unicode support in Lua\TeX}
+  {314}
+  {/TUGboat/tb28-3/tb90hagen.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Software \& Tools}
+  {Taco Hoekwater}
+  {Lua\TeX}
+  {an overview of embedding the Lua scripting language into \TeX}
+  {312}
+  {/TUGboat/tb28-3/tb90hoekwater-luatex.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Software \& Tools}
+  {Taco Hoekwater \aand Hans Hagen}
+  {MPlib: MetaPost as a reusable component}
+  {an overview of recasting MetaPost as a shared library}
+  {317}
+  {/TUGboat/tb28-3/tb90hoekwater-mplib.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Software \& Tools}
+  {Richard Koch}
+  {Support for multiple \TeX\ distributions in i-Installer and Mac\TeX}
+  {a preference pane to switch between extant \MacOSX\ \TeX\ distributions}
+  {329}
+  {/TUGboat/tb28-3/tb90koch.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Software \& Tools}
+  {Barry MacKichan}
+  {Design decisions for a structured front end to \LaTeX}
+  {\XML, \XSLT, OpenType, and more as a basis for \TeX\ development}
+  {335}
+  {/TUGboat/tb28-3/tb90mackichan.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Software \& Tools}
+  {Paul Topping}
+  {MathType 6.0's \TeX\ input for \acro{MS} Word and Wikipedia}
+  {combining point-and-click with typed \TeX\ input in MathType}
+  {340}
+  {/TUGboat/tb28-3/tb90topping.pdf}
+  {}
+  {}
+
+
+% 
+\category{Intermediate Plus}
+
+\capsule{Intermediate Plus}
+  {\LaTeX}
+  {Eitan Gurari}
+  {\LaTeX\ conversion into normalized forms and speech}
+  {translating \LaTeX\ into speech forms such as jsMath, \acro{SSML}, \acro{ACSS}}
+  {363}
+  {/TUGboat/tb28-3/tb90gurari.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {Software \& Tools}
+  {William Hammond}
+  {Dual~presentation with~math from~one~source using~\acro{GELLMU}}
+  {\LaTeX-like markup that can produce high-quality printed and online output}
+  {306}
+  {/TUGboat/tb28-3/tb90hammond.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {\LaTeX}
+  {Andrew Mertz \aand William Slough}
+  {Programming with Perl\TeX}
+  {combining \LaTeX\ and Perl, described in a graduated series of examples}
+  {354}
+  {/TUGboat/tb28-3/tb90mertz.pdf}
+  {}
+  {}
+
+
+% 
+\category{Advanced}
+
+\capsule{Advanced}
+  {Software \& Tools}
+  {Nelson Beebe}
+  {Extending \TeX{} and \MF{} with floating-point arithmetic}
+  {floating-point history, problems, and futures}
+  {319}
+  {/TUGboat/tb28-3/tb90beebe.pdf}
+  {}
+  {}
+
+% 
+\category{Reports and notices}
+
+\capsule{Reports and notices}
+  {}%replace|Conference Notes
+  {}
+  {TUG 2007 conference information}
+  {}
+  {274}
+  {/TUGboat/tb28-3/tb90confinfo.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {Abstracts}
+  {Allen, DeLand, Hagen, Hamid, Hef{}feron, H\o{}gholm, Ierusalimschy, Kew, Rosenthol, Rowley, Stern}
+  {TUG 2007 abstracts}
+  {}
+  {369}
+  {/TUGboat/tb28-3/tb90abstracts.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {TUG Business}
+  {\TeX\CONNECT{}Development\CONNECT{}Fund\CONNECT{}committee}
+  {A roadmap for \TeX\ development}
+  {}
+  {375}
+  {/TUGboat/tb28-3/tb90devfund.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {TUG Business}
+  {\TUB\CONNECT{}Editors}
+  {Random comments}
+  {}
+  {377}
+  {/TUGboat/tb28-3/tb90random.pdf}
+  {{Errata: Lars~Hellstr\"om, ``Writing \acro{ETX} format font encoding specifications'', \TUB\ 28:2, pp.\,186--197}\\
+{\acro{DEK}'s periodic bug review}\\
+{``Off-site'' complement to \acro{TUG}\,2007 proceedings}\\
+{Other comments on the \acro{TUG}\,2007 proceedings}\\
+{\TeX\ Development Fund}\\
+{EuroBacho\TeX\ proceedings to be the first 2008 \TUB\ issue}\\
+  }
+  {}
+
+\capsule{Reports and notices}
+  {TUG Business}
+  {}
+  {Institutional members}
+  {}
+  {378}
+  {/instmem.html}
+  {}
+  {}
+
+%\capsule{Reports and notices}
+%  {TUG Business}
+%  {}
+%  {\acro{TUG} membership form}
+%  {}
+%  {\TBmemberapp}
+%  {/join.html}
+%  {}
+%  {}
+
+\capsule{Reports and notices}
+  {News}
+  {}
+  {Calendar}
+  {}
+  {379}
+  {/TUGboat/tb28-3/tb90calendar.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {News}
+  {}
+  {\acro{TUG} 2008 announcement}
+  {}
+  {380}
+  {/TUGboat/tb28-3/tb90tug08.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {Sponsors}%replace|Advertisements
+  {}
+  {Springer:\ {\sl More Math Into \LaTeX}; \ von Hoerner\,\&\,Sulger; \ O'Reilly}
+  {}
+  {381}
+  {/TUGboat/tb28-3/tb90ads.pdf}
+  {}
+  {}
+
+%\count255=\TBadpage \advance\count255 by 1 \def\adpage{\number\count255 }
+\capsule{Reports and notices}
+  {Sponsors}%replace|Advertisements
+  {}
+  {MacKichan:\ Scientific WorkPlace, Scientific Word; \ Addison-Wesley:\ {\sl The \LaTeX\ Graphics Companion}}
+  {}
+  {382}
+  {/TUGboat/tb28-3/tb90ads.pdf}
+  {}
+  {}
+
+%\advance\count255 by 1
+\capsule{Reports and notices}
+  {Sponsors}%replace|Advertisements
+  {}
+  {Cheryl Ponchin Training; \ Carleton Production Centre; \ Design Science: MathType\sp{6}}
+  {}
+  {383}
+  {/TUGboat/tb28-3/tb90ads.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {Advertisements}
+  {}
+  {\TeX\ consulting and production services}
+  {}
+  {384}
+  {/consultants.html}
+  {}
+  {}
+
+\bye

@@ -1,0 +1,458 @@
+% $Id$
+
+\issue{13}{4}{37}{December 1992}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 13:4 as one pdf (12mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb13-4/tb37complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb13-4/tb37cover2.pdf}
+
+\capsulenoprint{}%subsecnn
+        {}
+        {}
+        {Title page}
+        {}
+        {413}
+        {/TUGboat/tb13-4/tb37titlepage.pdf}
+
+
+\capsulenoprint{}%subsecnn
+        {}
+        {}
+        {Editorial information}
+        {}
+        {414}
+        {/TUGboat/tb13-4/tb37edit.pdf}
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {415-416}
+        {URL}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Malcolm~Clark}
+        {The back benches beckon}
+        {}
+        {417-418}
+        {/TUGboat/tb13-4/tb37clark.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {418-419}
+        {/TUGboat/tb13-4/tb37beet.pdf}
+        {\TeX: the past \dots\\
+\dots\ and the future\\
+TUG: the present\\
+New ideas in typography}
+	{}
+
+\capsule{}%subsecnn
+        {General Delivery}%replace|Knuth Sessions
+        {}%person|Donald Knuth
+        {An interview with Donald Knuth, November~1991}
+        {}
+        {419-425}
+        {/TUGboat/tb13-4/tb37knut.pdf}
+
+
+%THEcategory{Dreamboat}
+
+
+\capsule{}%subsec
+        {Dreamboat}
+        {Richard~Palais}
+        {Moving a fixed point}
+        {}
+        {425-432}
+        {/TUGboat/tb13-4/tb37palais.pdf}
+
+
+\capsule{}%subsec
+        {Dreamboat}
+        {Philip~Taylor}
+        {The future of {\TeX}}
+        {}
+        {433-442}
+        {/TUGboat/tb13-4/tb37taylor.pdf}
+
+
+%THEcategory{Software}
+
+
+\capsule{}%subsec
+        {Software}
+        {Nickolas~J.~Kelly \and Christian~H.~Bischof}
+        {XBib{\TeX} and friends}
+        {}
+        {443-446}
+        {/TUGboat/tb13-4/tb37kelly.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {Nigel~Chapman}
+        {Searching in a DVI file}
+        {}
+        {447-451}
+        {/TUGboat/tb13-4/tb37chapman.pdf}
+
+
+\capsule{}%subsecnn
+        {Software}%replace|Hyphenation
+        {}
+        {Hyphenation exception log}
+        {}
+        {452-457}
+        {/TUGboat/tb13-4/tb37hyf.pdf}
+
+
+%THEcategory{Literate programming}
+
+
+\capsule{}%subsec
+        {Literate programming}
+        {Bart~Childs}
+        {Errata: Literate Programming, A Practitioner's View, Issue 13(3), pp.\ 261--268}
+        {}
+        {457-457}
+        {/TUGboat/tb13-4/tb37hara-hyfgl.pdf}
+
+
+%THEcategory{Philology}
+
+
+\capsule{}%subsec
+        {Philology}%add|Hyphenation
+        {Yannis~Haralambous}
+        {Hyphenation patterns for ancient Greek and Latin}
+        {}
+        {457-469}
+        {/TUGboat/tb13-4/tb37hara-hyfgl.pdf}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Darko~\v{Z}ubrini\'c}
+        {The exotic Croatian Glagolitic alphabet}
+        {}
+        {470-471}
+        {/TUGboat/tb13-4/tb37zubrinic.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {John~Sauter}
+        {Postnet codes using {\MF}}
+        {}
+        {472-476}
+        {/TUGboat/tb13-4/tb37sauter.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Yannis~Haralambous}
+        {A {\tt typewriter} font for the Macintosh 8-bit font table}
+        {}
+        {476-477}
+        {/TUGboat/tb13-4/tb37hara-mactt.pdf}
+
+
+%THEcategory{Graphics}
+
+
+\capsule{}%subsec
+        {Graphics}
+        {Sebastian~Rahtz \and Leonor~Barroca}
+        {Addendum:  A style option for rotated objects in {\TeX} Issue 13(2), pp.~156--180}
+        {}
+        {477-477}
+        {/TUGboat/tb13-4/tb37hara-mactt.pdf}
+
+
+\capsule{}%subsec
+        {Graphics}
+        {Ray~Seyfarth}
+        {Diag: A drawing preprocessor for {\LaTeX}}
+        {}
+        {478-485}
+        {/TUGboat/tb13-4/tb37seyfarth.pdf}
+
+
+%THEcategory{Book Reviews}
+
+\capsule{}
+        {Book Reviews}
+        {}
+        {}
+        {}
+        {486-490}
+        {/TUGboat/tb13-4/tb37reviews.pdf}
+
+\capsule{}%subsec
+        {Book Reviews}
+        {Victor~Eijkhout}
+        {Wynter Snow, {\it {\TeX} for the Beginner}}
+        {}
+        {486-487}
+        {/TUGboat/tb13-4/tb37reviews.pdf}
+
+
+\capsule{}%subsec
+        {Book Reviews}
+        {George~Greenwade}
+        {Arvind Borde, {\it {\TeX} by Example}}
+        {}
+        {487-489}
+        {/TUGboat/tb13-4/tb37reviews.pdf}
+
+
+\capsule{}%subsec
+        {Book Reviews}
+        {A.G.W. Cameron}
+        {Andr\'e Heck, ed., {\it Desktop Publishing in Astronomy \& Space Sciences}}
+        {}
+        {489-490}
+        {/TUGboat/tb13-4/tb37reviews.pdf}
+
+
+%THEcategory{Typesetting on PCs}
+
+
+\capsule{}%subsec
+        {Typesetting on PCs}
+        {Erich~Neuwirth}
+        {{\TeX} implementations for IBM~PCs:  comparative timings}
+        {}
+        {490-492}
+        {/TUGboat/tb13-4/tb37neuwirth.pdf}
+
+
+%THEcategory{Warnings}
+
+
+\capsule{}%subsec
+        {Warnings}
+        {Frank~Mittelbach}
+        {Where does this character come from?  Solution to the puzzle, Issue 13(2), p.190}
+        {}
+        {493-493}
+        {/TUGboat/tb13-4/tb37mitt-puzzle.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Victor~Eijkhout}
+        {The bag of tricks}
+        {}
+        {494-495}
+        {/TUGboat/tb13-4/tb37eijkhout-tricks.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Jonathan~Fine}
+        {Too many errors}
+        {}
+        {495-496}
+        {/TUGboat/tb13-4/tb37fine.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Victor~Eijkhout}
+        {One error less}
+        {}
+        {496-497}
+        {/TUGboat/tb13-4/tb37eijkhout-error.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Paul~Anagnostopoulos}
+        {Zz{\TeX}:  A macro package for books}
+        {}
+        {497-505}
+        {/TUGboat/tb13-4/tb37anag.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Jonathan~Fine}
+        {The {\tt\bs noname} macros\Dash A technical report}
+        {}
+        {505-509}
+        {/TUGboat/tb13-4/tb37finn.pdf}
+
+
+%THEcategory{{\LaTeX}}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {Frank~Mittelbach, Chris~Rowley \and Michael~Downes}
+        {Volunteer work for the {\LaTeX}3 project}
+        {}
+        {510-515}
+        {/TUGboat/tb13-4/tb37mitt-l3.pdf}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {Mike~Piff}
+        {Correction sheets in {\LaTeX}}
+        {}
+        {516-518}
+        {/TUGboat/tb13-4/tb37piff-corr.pdf}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {Mike~Piff}
+        {Text merges in {\TeX} and {\LaTeX}}
+        {}
+        {518-523}
+        {/TUGboat/tb13-4/tb37piff-merge.pdf}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {Sebastian~Rahtz}
+        {A style file for printing sheets of labels}
+        {}
+        {524-528}
+        {/TUGboat/tb13-4/tb37rahtz.pdf}
+
+
+%THEcategory{Abstracts}
+
+
+\capsule{}%subsecnn
+        {Abstracts}
+        {}
+        {{\sl Cahiers GUTenberg} \#13}
+        {}
+        {528-529}
+        {/TUGboat/tb13-4/tb37abstracts.pdf}
+
+
+%THEcategory{News \&\\Announcements}
+
+\capsule{}%subsecnn
+        {News \&\\Announcements}
+        {}
+        {Calendar}
+        {}
+        {530-532}
+        {/TUGboat/tb13-4/tb37calendar.pdf}
+
+
+\capsule{}%subsecnn
+        {News \&\\Announcements}
+        {}
+        {Call for Papers: Special Issue of  {\it Electronic Publishing: Origination, Dissemination  and~Design\/} on~Active~Documents}
+        {}
+        {532-532}
+        {/TUGboat/tb13-4/tb37calendar.pdf}
+
+
+%THEcategory{Late-Breaking News}
+
+\capsule{}%subsec
+        {Late-Breaking News}
+        {Barbara~Beeton}
+        {Production notes}
+        {}
+        {533-533}
+        {/TUGboat/tb13-4/tb37notes.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking News}
+        {}
+        {Coming next issue}
+        {}
+        {534-534}
+        {/TUGboat/tb13-4/tb37notes.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {534-536}
+        {/TUGboat/tb13-4/tb37instmem.pdf}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {TUG membership application}
+        {}
+        {537-538}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+\capsule{}
+        {Advertisements}
+        {}
+        {}
+        {}
+        {537-544}
+        {/TUGboat/tb13-4/tb37ads.pdf}
+
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {536-536}
+        {/TUGboat/tb13-4/tb37ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {544-544}
+        {/TUGboat/tb13-4/tb37ads.pdf}

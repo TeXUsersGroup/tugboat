@@ -1,0 +1,299 @@
+$Id$
+
+xxxx ending page numbers not always present; synthesize?
+xxxx save, dump, compare all difficulty, category, etc.?, tex+html+txt strings
+ in file, do we want?xxxx after switch, delete title unifications
+xxxx including count #matches for the other lists-* and show zeros
+xxxx after switch, have %person add to authors instead of replace
+xxxx and then, %person for obits and book reviews
+xxxx after switch, use &amp; in capconv and capaccum for categories
+
+TUGboat capsules processing. Public domain.
+Originally written 2017 Karl Berry.
+David Walden did a completely different implementation years before;
+the present code was written from scratch.
+
+captub          main program.
+
+capaccum*       accumulated lists across all issues.
+capconv		within-capsule conversion from input TeX to output HTML or txt.
+capin		read tb*capsule.tex files, plus some whole-issue conversions.
+capout		output contents*.html files.
+caputil		debugging fns, etc.
+
+capdata-rx	handle data file lists-regexps.txt.
+capdata-unify	handle lists-unifications.txt.
+capdata-xlate	handle lists-translations.txt.
+
+lists-regexps       Perl substitutions.
+lists-translations  convert TeX fragments to HTML and sortable ASCII.
+lists-unifications  different category/author/title forms to be combined.
+
+
+18dec18 move to single directory in svn.
+
+17dec18 more subroutines for lists output.
+
+16dec18 han=thanh special case. little html cleanup. author review continues.
+
+14dec18 handle %person. start reviewing all authors, more unifications.
+
+12dec18 couple more translations/unifications.
+start setting up article.
+
+11dec18 more translations/unifications over the past few days.
+split author lists at \& also.
+need to get rid of all accentless->accented unifications.
+
+6dec18 finish (none) cleanup. more accent translations instead of whole names.
+
+6dec18 continue (none) cleanup. report untranslated author entities,
+begin translations.
+
+5dec18 continue (none) cleanup. start html2txt for authors, sort string
+and anchor can be the same here (in contrast to titles)?
+untranslated entity check is in Makefile, maybe should be in code?
+
+3dec18 continue (none) cleanup.
+report one-word authors, most likely un-unified.
+
+2dec18 continue (none) cleanup. more last name/et al. abstracts unifications.
+
+30nov18 split authors at \s+and\s+.
+continue (none) cleanup.
+
+28nov18 continue (none) cleanup, author_html hash needed as with titles
+or don't know what to print. author split in capconv not correct.
+
+27nov18 continue (none) cleanup, first output of author list.
+
+25nov18 first glimmerings of author list.
+
+24nov18 split capaccum-title into subroutines.
+
+23nov18 finish cahi sl.
+
+22nov18 cahi sl start. split lists generation into separate files.
+
+21nov18 dtk sl continues (brace parsing messed).
+split output_keyword_list into subroutines.
+
+20nov18 hiw subheads finished, more dtk sl.
+
+19nov18 beet subheads finished, start hiw, continue journals with komo.
+output title index sequence.
+
+18nov18 hex 327, not decimal, for the combining cedilla for \c{S} in schaefer.
+start italicizing journal names with maps.
+
+16nov18 %replace Interfaces.
+listkeyword S\u{N}\"aferTeX still wrong.
+
+14nov18 finish %add for Keynotes.
+
+12nov18 handle that &ouml (semicolon was removed) in dtk anchor name.
+
+11nov18 output visible #anchor as with keywords.
+title_unify_journals first cut, as deleting everything after a colon or
+  comma was too much, lots of regular titles would be wrongly merged.
+komodie still has &ouml in anchor.
+
+ 9nov18 been doing beet subheads and category consolidation, 25-0 public,
+while working on library stuff.
+listkeyword and S\u{N}\"aferTeX still wrong.
+
+ 4nov18 Print (pre)sort string for consolidated titles.
+Too many colons and commas in titles; have to do the journals,
+Addresses, anything else, as special cases.
+
+ 1nov18 include all subtitles except book reviews, not just beet.
+Beginning of handling consolidated titles.
+Survey should be Surveys for listkeywords for consistency.
+listkeyword shows S\u{N}\"aferTeX!
+
+31oct18 include beet subtitles in listtitle.html; maybe should do all?
+Random first element of consolidated titles still pending.
+
+30oct18 remove all punct except & and , instead of listing them.
+Handle \ss$ in lists-regexps for Herbert.
+
+29oct18 remove stray ^; remove accents from lists-regexps and add more
+to lists-translations.
+
+28oct18 translate more kerns out, unify on \Thanh.
+Have been consolidating small categories for a couple of weeks now, lots more.
+?remove stray &
+?don't need accents in regexps?
+?tugabstracts shows random first element.
+
+25oct18 more accent translations. convert from html, not tex.
+
+24oct18 remember empty txt translations, skip only undefined.
+reduce \l, \varepsilon translations.
+
+23oct18 html2txt attempt, no difference yet.
+need to distinguish empty txt arg from not present.
+maybe try removing all non-alphanumeric (except ,) instead of individual chars?
+reduce \"o translations.
+
+21oct18 factor out vol_iss_link used in the lists.
+
+19oct18 /TUGboat/Contents/ for contents*.html links.
+more title_sort cleanups. But going to need to do list-xlate and/or list-rx.
+
+18oct18 construct anchors from titles, more sorting refinements (SPC, nbsp).
+need to make intro link list.
+
+16oct18 display title html, not sort string. case-insensitive title search.
+need to handle leading number in anchor.
+
+14oct18 start dump of title list. was shifting off author_html by reference.
+still need to factor out issue ref at end, title anchor vs. sort.
+
+13oct18 small continuation of making title list.
+
+12oct18 start title list, factor out more. Have common text for
+title+author, maybe duplicate?
+
+11oct18 output visible #cattag.
+
+ 8oct18 factor out common code to accumulation().
+need to make #cattag.
+
+ 7oct18 special-case munging to sort of listkeyword entries.
+need to move common code out of list_category_output.
+
+ 5oct18 sorting of listkeyword entries; need sortable (no markup) title?
+also consistently italicize journal titles via lists-*?
+
+ 4oct18 output real html for each capsule in listkeyword.html.
+
+21sep18 continue cleanup of current categories. further on new output.
+
+20sep18 %replace and %add working I think, including transform_category
+so that unification works in a unified way.
+
+15sep18 first attempt at category directives %replace and %add.
+
+10sep18 more field name doc, etc., thinking about directives.
+
+ 9sep18 don't use &amp; for categories so we can compare to current output.
+
+ 7sep18 reminded that categories don't do full tex2html, no
+lists-translations; "\Dash " occurred in tb56. Pain with & (unified) vs. &amp;
+
+ 6sep18 further with category printing.
+
+ 4sep18 factor out common header/footer, use for contents and listkeyword.
+
+ 2sep18 save all issue hashes in %accum, begin keyword list.
+need to factor out header/footer.
+eventually check if passing % vs. $ makes a difference?
+
+26aug18 accumulation_check for all and only categories and difficulties.
+
+24aug18 more author split regex, was getting warnings from empty author
+strings. copy in @expected lists in preparation.
+
+23aug18 no capture groups in split regex, matched string gets returned.
+
+22aug18 \difficulty same as \category.
+
+21aug18 handle next/prev of first [0]9 issues.
+
+20aug18 handle subtitles, nicer html output.
+
+17aug18 tbNN and other small consistencies in HTML output.
+
+12aug18 handle subtitles, with \\$ to <br> before tex2html.
+
+10aug18 separate original category (for html) from unified category
+(for lists). Simplify category html transform.
+
+8aug18 first attempt at implementing category unification.
+
+7aug18 find more category unifications.
+
+6aug18 after removing most of the zeros, time is 3.5-3.9sec, about the same.
+but removing the tex2html on difficulty and redo on category in
+capsule_convert got us to 3.0sec.
+
+4aug18  about half the translations are only used once. many redundant
+or wrong accent translations? could also move author-only translations
+to a separate file, but maybe performance is good enough.
+
+1aug18  the s/$tex/$html/g in xlate_tex2html is by far the biggest consumer.
+I think all we can do is try to cut down the number of xlate entries.
+the eval/eeg in lists_regexps is the second biggest, but about 1/6 as
+much (2.4sec vs. 13.4)
+
+27jul18 ok, processing all issues in 3.5sec, no unparsed (added check
+for href=""), qr// is used, fixed some html in capsules.
+
+23jul18 accent replacements in lists-regexps should obviate many entries
+in lists-translations -- except we need them for txt, I guess.
+
+22jul18 discover href="", add to unparsed test.
+
+eval of our /eeg is not ideal since we don't have filename info
+available, but oh well, have to grep. Discover that a few capsules use
+HTML entities in authors and titles, due to:
+  Warning `Use of uninitialized value in substitution iterator at
+  /r/tug/home/httpd/html/TUGboat/tocs/k/capdata-rx.pl line 23.
+  ' while evaluating: s/(?^:\\c\{(.)\})/"$1&#x327;/eeg
+  for string: &auml;ferTeX: Source code esthetics for automated typesetters
+  (tb79 -> 25-0)
+But the actual error was a missing " on the lists-regexps line.
+
+After figuring out /eeg, put back qr's.
+
+19jul18 missed one @tex_strs -> @tex_exprs in capdata-unify.
+
+15jul18 first xlate, then regexps, then (for author) unify.
+
+5jul18 fix most remaining missing pdfs.
+
+4jul18 first attempt at url checking, found a couple of dozen.
+
+3jul18 3.90sec with prevnext (for all issues), 1.43 with --no-prevnext;
+wasn't passing right $control argument. Now same with and without.
+But nothing is actually working, lots of $1 in output, etc.
+
+2jul18  all issues in one run shows that regexps_apply is the only thing
+that might be improved; normalize_whitespace et al. becomes irrelevant.
+Total time is slightly longer, maybe because of prevnext.
+
+1jul18  tried combining some lists-regexps, did not decrease total time.
+guess we're out of easy things to try. commenting out all the entries
+did save ~10ms, but evidently more complex regexps take just as long or
+longer than more entries.
+
+29jun18 change lists-regexps.txt to || format also, precompile the lhs
+  with qr//. regexps_apply now about 15%, but _match_bracketed is the
+  top, about 25%. Total time for all issues down to 4-5sec (Dave's
+  "assembler" is 3.7sec). Could probably get faster by merging regexps
+  with the same target, removing some lists- items, etc.
+
+28jun18 moving quotemeta to compilation instead of xlate_tex2html makes
+  little difference (~2%).
+precompile regexps into qr// objects for lists-translations,
+  which brings CORE::regcomp down to 2% of time, regexps_apply is now ~30%.
+xlate_tex2html is still also about ~30%, but probably can't do much more
+  globally; could probably eliminate/simplify some of the translations.
+  maybe keep a count of how many times each has been applied?
+total time for all issues down to 12sec.
+
+19jun18 too slow to do them all routinely - 46sec to do 120 issues,
+which is too long.
+
+So install and run -d:NYTProf, processing one issue, to get profiling
+per line (standard -dDProf only yields data per subroutine). running nytprof
+-> file:///r/tug/home/httpd/html/TUGboat/tocs/capsule/nytprof/index.html
+shows ~1/4 total time spent in my regexps_apply (for lists-regexps)
+and 1/4 time spent in CORE::regcomp (for lists-translations).
+
+26apr18 basically working without indexes
+
+go through issues, finding unbalanced \{\}braces,
+typos in category names etc., but
+mostly adding \offset to avoid special case for early issues.

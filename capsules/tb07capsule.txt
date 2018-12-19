@@ -1,0 +1,516 @@
+% $Id$
+
+\issue{4}{1}{7}{April 1983}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue as one pdf (3.7mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb04-1/tb07complete.pdf}
+        {}
+        {}
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses of officers, authors and others}
+        {}
+        {2-2}
+        {URL}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {}%replace|News \& Announcements
+        {}
+        {Official announcements}
+        {}
+        {3-3}
+        {/TUGboat/tb04-1/tb07announce.pdf}
+        {}
+        {}
+
+
+%THEcategory{General Delivery}
+
+\capsule{}
+        {General Delivery}
+        {}
+        {}
+        {}
+        {4-6}
+        {/TUGboat/tb04-1/tb07gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {{Library subscriptions\Dash What are they?}}
+        {}
+        {4-4}
+        {/TUGboat/tb04-1/tb07gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Michael~Spivak}
+        {{Users' Course in {\AmSTeX}}}
+        {}
+        {4-4\offset{.5}}
+        {/TUGboat/tb04-1/tb07gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Samuel~B.~Whidden}
+        {{TUG financial reports: 1982 TUG Treasurer's Report; 1983 TUG Budget}}
+        {}
+        {4-6\offset{.5}}
+        {/TUGboat/tb04-1/tb07gendel.pdf}
+        {}
+        {}
+
+%THEsubheadi{ {TUG Treasurer's report}\\4-5}
+
+
+%THEsubheadi{ {1983 TUG budget}\\5-5}
+
+
+%THEcategory{Software}
+
+
+\capsule{}%subsec
+        {Software}
+        {David~Fuchs}
+        {{\TeX}hax summary}
+        {}
+        {6-9}
+        {/TUGboat/tb04-1/tb07fuchs.pdf}
+        {}
+        {}
+
+
+%THEcategory{Output Devices}
+
+\capsule{}
+        {Output Devices}
+        {}
+        {}
+        {}
+        {10-13}
+        {/TUGboat/tb04-1/tb07output.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Output Devices}
+        {}
+        {{Chart: Output devices and computers}}
+        {}
+        {10-10}
+        {/TUGboat/tb04-1/tb07output.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Output Devices}
+        {}
+        {Index to sample output from various devices}
+        {}
+        {10-10\offset{.5}}
+        {/TUGboat/tb04-1/tb07output.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Nelson~H.~F.~Beebe}
+        {Low-cost downloadable font devices}
+        {}
+        {11-12}
+        {/TUGboat/tb04-1/tb07output.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Patrick~Ion, Bill~Hall, Rilla~J.~Thedford}
+        {TeX on the OSP130}
+        {}
+        {12-12}
+        {/TUGboat/tb04-1/tb07output.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Output Devices}
+        {}
+        {{Sample output from Florida Data OSP 130}}
+        {}
+        {13-13}
+        {/TUGboat/tb04-1/tb07output.pdf}
+        {}
+        {}
+
+
+%THEcategory
+
+\capsule{}
+        {Site Reports}
+        {}
+        {}
+        {}
+        {14-23}
+        {/TUGboat/tb04-1/tb07site.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {David~Fuchs}
+        {News from all over}
+        {}
+        {14-15}
+        {/TUGboat/tb04-1/tb07site.pdf}
+        {}
+        {}
+
+
+%THEsite{HP 1000}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Irene~J.~Bunner \and John~D.~Johnson}
+        {{{\TeX} on the HP-1000}}
+        {}
+        {16-16}
+        {/TUGboat/tb04-1/tb07site.pdf}
+        {}
+        {}
+
+
+%THEsite{\VAX/\UNIX}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Richard~Furuta \and Pierre~MacKay}
+        {Unix {\TeX} site report}
+        {}
+        {17-18}
+        {/TUGboat/tb04-1/tb07site.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Pavel~Curtis \and Howard~Trickey}
+        {{Porting {\TeX} to {\VAX}/UNIX}}
+        {}
+        {18-20}
+        {/TUGboat/tb04-1/tb07site.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Pierre~MacKay \and Richard~Furuta}
+        {{{\TeX} at the University  of Washington: Tops-20, Unix, Versatec,\newline and the Monolithic}}
+        {}
+        {21-22}
+        {/TUGboat/tb04-1/tb07site.pdf}
+        {}
+        {}
+
+
+%THEsite{\VAX/VMS}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Monte~C.~Nichols}
+        {{{\VAX}/VMS site report}}
+        {}
+        {22-22}
+        {/TUGboat/tb04-1/tb07site.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {David~Krapp}
+        {{{\TeX} at Calma R\thinspace\&\thinspace D}}
+        {}
+        {23-23}
+        {/TUGboat/tb04-1/tb07site.pdf}
+        {}
+        {}
+
+
+%THEsite{DG MV8000}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Norman~Naugle \and Bart~Childs}
+        {{\TeX} at Texas A\thinspace\&\thinspace M University}
+        {}
+        {23-23\offset{.5}}
+        {/TUGboat/tb04-1/tb07site.pdf}
+        {}
+        {}
+
+
+%THEcategory{``small'' \TeX}
+
+
+\capsule{}%subsec
+        {``small'' \TeX}
+        {Lance~Carnes}
+        {Editor's introduction}
+        {}
+        {24-24}
+        {/TUGboat/tb04-1/tb07carnes.pdf}
+        {}
+        {}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Scott~Guthery}
+        {Pictures are just big letters}
+        {}
+        {25-25}
+        {/TUGboat/tb04-1/tb07guth.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Georgia~K.\thinspace M.~Tobin}
+        {Computer calligraphy}
+        {}
+        {26-32}
+        {/TUGboat/tb04-1/tb07tobin.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Fonts}
+        {}
+        {Announcement: Fifth ATypI Working Seminar,\newline {The computer and the hand in type design:\newline  The aesthetics and technology of digital letterforms}}
+        {}
+        {33-33}
+        {/TUGboat/tb04-1/tb07atypi.pdf}
+        {}
+        {}
+
+
+%THEcategory{Macros}{/TUGboat/tb04-1/tb07macros.pdf}
+
+
+\capsule{}%subsecnn
+        {Macros}
+        {Lynne A. Price}
+        {\TUB\ macro index}
+        {}
+        {33-35}
+        {/TUGboat/tb04-1/tb07macros.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Barbara~Beeton}
+        {How to build a {\tt\bs strut}}
+        {}
+        {35-36}
+        {/TUGboat/tb04-1/tb07beet.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Barbara~Beeton}
+        {Determining hashtable size and other quantities}
+        {}
+        {36-37}
+        {/TUGboat/tb04-1/tb07beet.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Macros}
+        {August~Mohr}
+        {Some layout macros}
+        {}
+        {37-38}
+        {/TUGboat/tb04-1/tb07mm.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Robert~M.~McClure}
+        {Testing the widths of a font}
+        {}
+        {38-38}
+        {/TUGboat/tb04-1/tb07mm.pdf}
+        {}
+        {}
+
+
+%THEcategory{Problems}
+
+
+\capsule{}%subsecnn
+        {Problems}
+        {}
+        {Hanging punctuation}
+        {}
+        {39-39}
+        {/TUGboat/tb04-1/tb07prob.pdf}
+        {}
+        {}
+
+
+%THEcategory{Letters et alia}
+
+
+\capsule{}%subsec
+        {Letters et alia}
+        {Maria~Code}
+        {How to obtain {\TeX}82 on tape}
+        {}
+        {40-40}
+        {/TUGboat/tb04-1/tb07lett.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Letters et alia}
+        {}
+        {Announcement: {\sl Manipulation de Documents\Dash Journ\'ees Francophones}}
+        {}
+        {40-40\offset{.5}}
+        {/TUGboat/tb04-1/tb07lett.pdf}
+        {}
+        {}
+
+
+%THEcategory{Dreamboat}
+
+
+\capsule{}%subsec
+        {Dreamboat}
+        {A.\thinspace E.~Siegman}
+        {{\TeX} as a programming language?}
+        {}
+        {41-42}
+        {/TUGboat/tb04-1/tb07sieg.pdf}
+        {}
+        {}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Textset, Inc.\Dash A service for {\TeX} users}}
+        {}
+        {43-43}
+        {/TUGboat/tb04-1/tb07ads.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Quality Micro Systems\Dash Lasergrafix 1200}}
+        {}
+        {44-44}
+        {/TUGboat/tb04-1/tb07ads.pdf}
+        {}
+        {}
+
+
+%THEcategory{Miscellaneous}
+
+
+\capsule{}%subsecnn
+        {Miscellaneous}
+        {}
+        {\TeX82 order form}
+        {}
+        {45-46}
+        {/TUGboat/tb04-1/tb07misc.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Miscellaneous}
+        {}
+        {Membership application and order form}
+        {}
+        {47-48}
+        {/join.html}
+        {}
+        {}
+
+
+%THEcategory{Supplements}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {{{\TeX} and {\MF}: Errata and changes}}
+        {}
+        {\offset{992}}
+        {URL}
+        {}
+        {}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {{TUG membership list}}
+        {}
+        {\offset{992.5}}
+        {URL}
+        {}
+        {}

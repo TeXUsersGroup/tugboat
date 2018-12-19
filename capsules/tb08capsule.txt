@@ -1,0 +1,525 @@
+% $Id$
+
+\issue{4}{2}{8}{September 1983}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue as one pdf (5.5mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb04-2/tb08complete.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses of officers, authors and others}
+        {}
+        {50-50}
+        {/TUGboat/tb04-2/tb08addresses.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {}%replace|News \& Announcements
+        {}
+        {Official announcements}
+        {}
+        {51}
+        {/TUGboat/tb04-2/tb08ann.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {General Delivery}
+        {}
+        {}
+        {}
+        {52-59}
+        {/TUGboat/tb04-2/tb08gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Pierre~MacKay}
+        {{Message from the President}}
+        {}
+        {52-53}
+        {/TUGboat/tb04-2/tb08gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsub
+        {General Delivery}
+        {Susan Plass}
+        {{Minutes of the July 1983 TUG Steering Committee meeting}}
+        {}
+        {53-54}
+        {/TUGboat/tb04-2/tb08gendel.pdf}
+        {}
+        {}
+
+
+%THEsubheadi{ {{\sl Susan Plass.} July 13--14}\\53-54}
+
+\capsule{}%subsub
+        {General Delivery}
+        {Chuck Dupree}
+        {{Outgoing Steering Committee meeting, July 15, 1983}}
+        {}
+        {53-54\offset{.5}}
+        {/TUGboat/tb04-2/tb08gendel.pdf}
+        {}
+        {}
+
+%THEsubheadi{ {{\sl Chuck Dupree.} July 15}\\54-55}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {Barbara Beeton}
+        {{Summary of the technical program, July 1983 TUG meeting}}
+        {}
+        {55-57}
+        {/TUGboat/tb04-2/tb08gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {Participants, TUG meeting and {\AmSTeX}82 short course}
+        {}
+        {57-69}
+        {/TUGboat/tb04-2/tb08gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Susan~Plass}
+        {{Final report of the Bylaws Committee}}
+        {}
+        {59-60}
+        {/TUGboat/tb04-2/tb08gendel.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {{\TUG}\Dash {TUG Operating Procedures}}
+        {}
+        {60-61}
+        {/TUGboat/tb04-2/tb08tugopproc.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Samuel~B.~Whidden}
+        {{TUG Treasurer's report}}
+        {}
+        {62-63}
+        {/TUGboat/tb04-2/tb08treas.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Lynne~Price}
+        {{Report on ANSI X3J6}}
+        {}
+        {63-64}
+        {/TUGboat/tb04-2/tb08price-ansi.pdf}
+        {}
+        {}
+
+
+%THEcategory{Software}
+
+
+\capsule{}%subsec
+        {Software}
+        {Donald~Knuth}
+        {A note on hyphenation}
+        {}
+        {64-65}
+        {/TUGboat/tb04-2/tb08knut.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Software}
+        {David~Fuchs}
+        {{{\TeX} vs.\ INI\TeX}}
+        {}
+        {65-66}
+        {/TUGboat/tb04-2/tb08fuchs.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Software}
+        {David~Fuchs}
+        {{\TeX}hax summary}
+        {}
+        {66-70}
+        {/TUGboat/tb04-2/tb08fuchs.pdf}
+        {}
+        {}
+
+
+%THEcategory{Output Devices}
+
+
+\capsule{}%subsecnn
+        {Output Devices}
+        {}
+        {{Chart: Output devices and computers}}
+        {}
+        {71-71}
+        {/TUGboat/tb04-2/tb08output.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Site Reports}
+        {}
+        {}
+        {}
+        {72-76}
+        {/TUGboat/tb04-2/tb08site.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {David~Fuchs}
+        {{News from the {\TeX} Project}}
+        {}
+        {72-73}
+        {/TUGboat/tb04-2/tb08site.pdf}
+        {}
+        {}
+
+
+%THEsite{Honeywell CP-6}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Rick~Mallett}
+        {{{\TeX}82 on Honeywell CP-6}}
+        {}
+        {73-74}
+        {/TUGboat/tb04-2/tb08site.pdf}
+        {}
+        {}
+
+
+%THEsite{IBM Group}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Susan~Plass}
+        {{IBM site report}}
+        {}
+        {74-74}
+        {/TUGboat/tb04-2/tb08site.pdf}
+        {}
+        {}
+
+
+%THEsite{UNIX}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Richard~Furuta}
+        {Unix {\TeX} site report}
+        {}
+        {74-75}
+        {/TUGboat/tb04-2/tb08site.pdf}
+        {}
+        {}
+
+
+%THEsite{\VAX/VMS}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Monte~C.~Nichols}
+        {{{\VAX}/VMS site report}}
+        {}
+        {75-76}
+        {/TUGboat/tb04-2/tb08site.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Jim~Mooney}
+        {{Revised Varian output driver in {\VAX}/VMS Fortran}}
+        {}
+        {76-76}
+        {/TUGboat/tb04-2/tb08site.pdf}
+        {}
+        {}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Pierre~MacKay}
+        {{{\TeX} for Arabic script}}
+        {}
+        {76-96}
+        {/TUGboat/tb04-2/tb08mackay.pdf}
+        {}
+        {}
+
+
+%THEcategory{``{\sixbf small}'' \TeX}
+
+
+\capsule{}%subsec
+        {``small'' \TeX}
+        {Lance~Carnes}
+        {Table of ``small'' {\TeX} implementations}
+        {}
+        {77-77}
+        {/TUGboat/tb04-2/tb08carnes.pdf}
+        {}
+        {}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Lynne~Price}
+        {{Problems from the TUG meeting:}\newline {Framed slides}; {Multiple marks}}
+        {}
+        {78-79}
+        {/TUGboat/tb04-2/tb08price.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Macros}
+        {}
+        {{\TUB} macro index}
+        {}
+        {79-80}
+        {/TUGboat/tb04-2/tb08tubmacidx.pdf}
+        {}
+        {}
+
+
+%THEcategory{Problems}
+
+
+\capsule{}%subsec
+        {Problems}
+        {Jim~Sterken}
+        {First line of paragraph}
+        {}
+        {80-81}
+        {/TUGboat/tb04-2/tb08sterken.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Letters et alia}
+        {}
+        {}
+        {}
+        {81-102}
+        {/TUGboat/tb04-2/tb08letters.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsub
+        {Letters et alia}
+        {Sam Whidden and J.R. Roesser}
+        {Observations on {\TeX} from a divergent viewpoint:   Introduction and Memo to STI staff}
+        {}
+        {81-89}
+        {/TUGboat/tb04-2/tb08letters.pdf}
+        {}
+        {}
+
+\capsule{}%subsub
+        {Letters et alia}
+        {Don Knuth, David Fuchs, Michael Spivak, Richard Palais, Barbara Beeton and J.R. Roesser}
+        {Observations on {\TeX} from a divergent viewpoint:   Comments, response, and reresponse}
+        {}
+        {90-102}
+        {/TUGboat/tb04-2/tb08letters.pdf}
+        {}
+        {}
+
+%THEsubheadi{ {\sl Sam Whidden.}\ \ Introduction\\81-81}
+
+
+%THEsubheadi{ {\sl J. R. Roesser.}\ \ {Memo to STI staff:}\newline        \qquad\qquad {{\TUG} meeting, July 1983}\\82-89}
+
+
+%THEsubheadi{ Comments and responses\\ }
+
+
+%THEsubheadi{ {\sl Don Knuth}\\90-90}
+
+
+%THEsubheadi{ {\sl David Fuchs}\\90-93}
+
+
+%THEsubheadi{ {\sl Michael Spivak}\\93-95}
+
+
+%THEsubheadi{ {\sl Richard Palais}\\96-97}
+
+
+%THEsubheadi{ {\sl Barbara Beeton}\\97-98}
+
+
+%THEsubheadi{ {\sl J. R. Roesser.}\ \ {Response to the responses}\\98-101}
+
+
+%THEsubheadi{ {\sl Barbara Beeton.}\ \ Wrapup\\102-102}
+
+
+%THEcategory{Late-Breaking News}
+
+
+\capsule{}%subsec
+        {Late-Breaking News}
+        {Michael~Spivak}
+        {Summary of {\AmSTeX}}
+        {}
+        {103-126}
+        {/TUGboat/tb04-2/tb08spivak.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {}
+        {}
+        {127-128}
+        {/TUGboat/tb04-2/tb08ads.pdf}
+        {}
+        {}
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Textset, Inc.}}
+        {}
+        {127-127}
+        {/TUGboat/tb04-2/tb08ads.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} lectures on tape}
+        {}
+        {127-127\offset{.5}}
+        {/TUGboat/tb04-2/tb08ads.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Imagen Corporation\Dash Intelligent page printer systems}}
+        {}
+        {128-128}
+        {/TUGboat/tb04-2/tb08ads.pdf}
+        {}
+        {}
+
+
+%THEcategory{Miscellaneous}
+
+
+\capsule{}%subsecnn
+        {Miscellaneous}
+        {}
+        {{{\TeX}82 Order Form}}
+        {}
+        {129-130}
+        {/join.html}
+        {}
+        {}
+
+
+\capsule{}%subsecnn
+        {Miscellaneous}
+        {}
+        {Membership application and order form}
+        {}
+        {131-132}
+        {/join.html}
+        {}
+        {}
+
+
+%THEcategory{Supplements}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {{{\TeX} and {\MF}: Errata and changes}}
+        {}
+        {\offset{992}}
+        {/TUGboat/tb04-2/texmferr-09sep1983.pdf}
+        {}
+        {Bonus online supplement: all errors in the September 1978 TeX
+user manual that were known on November 4, 1978:
+<a href="/TUGboat/tb04-2/texmferr-sail-10mar1983.pdf">pdf</a>,
+<a href="/TUGboat/tb04-2/texmferr-sail-10mar1983.txt">plain&nbsp;text</a>.}
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {{TUG membership list}}
+        {}
+        {\offset{992.5}}
+        {URL}
+        {}
+        {}

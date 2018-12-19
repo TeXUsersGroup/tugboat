@@ -1,0 +1,598 @@
+% $Id$
+
+\issue{8}{2}{18}{July 1987}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 8:2 as one pdf (12mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb08-2/tb18complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {97}
+        {/TUGboat/tb08-2/tb18titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {98-98}
+        {/TUGboat/tb08-2/tb18edit.pdf}
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {99-100}
+        {URL}
+
+
+%THEcategory{General Delivery}
+
+\capsule{}
+        {General Delivery}
+        {}
+        {}
+        {}
+        {101-102}
+        {/TUGboat/tb08-2/tb18gendel.pdf}
+
+\capsule{}%subsec
+        {General Delivery}
+        {Bart~Childs}
+        {From the President}
+        {}
+        {101-101}
+        {/TUGboat/tb08-2/tb18gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Gideon~Koren}
+        {How to improve the chances for acceptance of your scientific paper}
+        {}
+        {101-102\offset{.5}}
+        {/TUGboat/tb08-2/tb18gendel.pdf}
+
+
+%THEcategory{Software}
+
+\capsule{}
+        {Software}
+        {}
+        {}
+        {}
+        {102-128}
+        {/TUGboat/tb08-2/tb18software.pdf}
+
+\capsule{}%subquery
+        {Software}
+        {J. C. Alexander}
+        {Tib: A reference setting package, update}
+        {}
+        {102-102\offset{.3}}
+        {/TUGboat/tb08-2/tb18software.pdf}
+
+
+\capsule{}%subquery
+        {Software}
+        {Pedro J. de Rezende}
+        {Portuguese hyphenation table for \TeX}
+        {}
+        {102-102\offset{.6}}
+        {/TUGboat/tb08-2/tb18software.pdf}
+
+
+\capsule{}%subquery
+        {Software}
+        {Michael J. Ferguson}
+        {A (hopefully) final extension of multilingual \mtex}
+        {}
+        {102-103}
+        {/TUGboat/tb08-2/tb18software.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {Yasuki~Saito}
+        {Report on JTeX: A Japanese \TeX}
+        {}
+        {103-116}
+        {/TUGboat/tb08-2/tb18saito.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {E.~Wayne~Sewell}
+        {Multiple changefiles: The adventure continues}
+        {}
+        {117-118}
+        {/TUGboat/tb08-2/tb18sewellch.pdf}
+
+
+\capsule{}%subsec
+        {Software}%add|Literate Programming
+        {E.~Wayne~Sewell}
+        {How to {\tt MANGLE} your software: The WEB system for Modula-2}
+        {}
+        {118-122}
+        {/TUGboat/tb08-2/tb18sewellmangle.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {E.~Wayne~Sewell}
+        {The {\tt SCANTEX} processor}
+        {}
+        {123-128}
+        {/TUGboat/tb08-2/tb18sewellscantex.pdf}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {John~S.~Gourlay}
+        {Blacker Thoughts}
+        {}
+        {128-129}
+        {/TUGboat/tb08-2/tb18gourlay.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {John~Sauter}
+        {Updated Computer Modern fonts for the LN03}
+        {}
+        {129-130}
+        {/TUGboat/tb08-2/tb18sauter.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {John~Crawford}
+        {MFtool: A \MF\ script-driven processing facility}
+        {}
+        {131-131}
+        {/TUGboat/tb08-2/tb18crawford.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Barbara~Beeton}
+        {Update: \MF\ {\bf mode_def} settings for \TeX\ output devices}
+        {}
+        {132-134}
+        {/TUGboat/tb08-2/tb18beet.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Donald~E.~Knuth}
+        {Fonts for digital halftones}
+        {}
+        {135-160}
+        {/TUGboat/tb08-2/tb18knut.pdf}
+
+
+%THEcategory{Output Devices}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Robert~W.~McGaffey}
+        {The ideal \TeX\ driver}
+        {}
+        {161-163}
+        {/TUGboat/tb08-2/tb18mcgaffey.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Don~Hosek}
+        {\TeX\ output devices (with charts)}
+        {}
+        {163-170}
+        {/TUGboat/tb08-2/tb18hosek.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Alec~Dunn}
+        {Using PostScript with \TeX}
+        {}
+        {171-173}
+        {/TUGboat/tb08-2/tb18dunn.pdf}
+
+
+\capsule{}%subsecnn
+        {Output Devices}
+        {}
+        {Index to sample output from various devices}
+        {}
+        {237-237}
+        {/TUGboat/tb08-2/tb18indexoutput.pdf}
+
+
+%THEcategory{Site Reports}
+
+\capsule{}
+        {Site Reports}
+        {}
+        {}
+        {}
+        {174-181}
+        {/TUGboat/tb08-2/tb18site.pdf}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Glenn~L.~Vanderburg}
+        {TEX-L access for Bitnet users}
+        {}
+        {174-174}
+        {/TUGboat/tb08-2/tb18site.pdf}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Laurie~Mann}
+        {TeX\ and training: A case study}
+        {}
+        {174-176}
+        {/TUGboat/tb08-2/tb18site.pdf}
+
+
+%THEsite{Data General}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Bart~Childs}
+        {Data General site report}
+        {}
+        {176-177}
+        {/TUGboat/tb08-2/tb18site.pdf}
+
+
+%THEsite{IBM VM/CMS}
+
+
+\capsule{}%subquery
+        {Site Reports}
+        {}
+        {IBM VM/CMS site report}
+        {}
+        {178-178}
+        {/TUGboat/tb08-2/tb18site.pdf}
+
+
+\capsule{}%subquery
+        {Site Reports}
+        {}
+        {SAS merged with \TeX}
+        {}
+        {178-179}
+        {/TUGboat/tb08-2/tb18site.pdf}
+
+
+%THEsite{UNIX}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Pierre~MacKay}
+        {Unix \TeX\ site report}
+        {}
+        {179-181}
+        {/TUGboat/tb08-2/tb18site.pdf}
+
+
+%THEsite{\VAX/VMS}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Adrian~F.~Clark}
+        {Enhancements to \TeX\ on the \VAX}
+        {}
+        {177-177}
+        {/TUGboat/tb08-2/tb18site.pdf}
+
+
+%THEcategory{Typesetting on PCs}
+
+\capsule{}
+        {Typesetting on PCs}
+        {}
+        {}
+        {}
+        {181-182}
+        {/TUGboat/tb08-2/tb18site.pdf}
+
+\capsule{}%subsec
+        {Typesetting on PCs}
+        {Gerhard~F.~Kohlmayr}
+        {A bug in \TeXtures\ v0.95 prerelease}
+        {}
+        {181-181}
+        {/TUGboat/tb08-2/tb18site.pdf}
+
+
+\capsule{}%subsec
+        {Typesetting on PCs}
+        {Barry~Smith}
+        {Work-around for an ImageWriter problem affecting \TeXtures\ output}
+        {}
+        {181-181\offset{.5}}
+        {/TUGboat/tb08-2/tb18site.pdf}
+
+
+\capsule{}%subsec
+        {Typesetting on PCs}
+        {Alan~Hoenig \and Mitch~Pfeffer}
+        {Update: Real typesetting    from your PC}
+        {}
+        {182-182}
+        {/TUGboat/tb08-2/tb18site.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Wolfgang~Appelt}
+        {Macros with keyword parameters}
+        {}
+        {182-184}
+        {/TUGboat/tb08-2/tb18appelt.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Alois~Kabelschacht}
+        {{\tt\bs expandafter} in conditionals; a generalization of PLAIN's {\tt\bs loop}}
+        {}
+        {184-185}
+        {/TUGboat/tb08-2/tb18kabel.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Elizabeth~Barnhart}
+        {\TeX\ in the commercial environment\Dash multi-column output}
+        {}
+        {185-189}
+        {/TUGboat/tb08-2/tb18barnhart.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Charles~LeHardy}
+        {Diglot typesetting}
+        {}
+        {190-192}
+        {/TUGboat/tb08-2/tb18lehardy.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Anne~Br\"uggemann-Klein}
+        {First line special handling with \TeX}
+        {}
+        {193-197}
+        {/TUGboat/tb08-2/tb18bruggemann.pdf}
+
+
+%THEcategory{\LaTeX}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Ken Yap}
+        {Contents of \LaTeX\ style collection as of 15th May 1987}
+        {}
+        {198-200}
+        {/TUGboat/tb08-2/tb18yap.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}%add|Indexing
+        {Richard~Aurbach}
+        {Automated index generation for \LaTeX}
+        {}
+        {201-209}
+        {/TUGboat/tb08-2/tb18aurbach.pdf}
+
+
+%THEcategory{Problems}
+
+
+\capsule{}%subquery
+        {Problems}
+        {}
+        {Saturday morning problem\Dash solution}
+        {}
+        {210-210}
+        {/TUGboat/tb08-2/tb18knutsat.pdf}
+
+
+\capsule{}%subquery
+        {Problems}
+        {}
+        {TeX\ does windows\Dash conclusion}
+        {}
+        {211-215}
+        {/TUGboat/tb08-2/tb18hoenig.pdf}
+
+
+\capsule{}%subquery
+        {Problems}
+        {}
+        {Comment on ``\TeX\ does windows''}
+        {}
+        {216-216}
+        {/TUGboat/tb08-2/tb18fox.pdf}
+
+
+%THEcategory{Queries}
+
+\capsule{}
+        {Queries}
+        {}
+        {}
+        {}
+        {216-217}
+        {/TUGboat/tb08-2/tb18queries.pdf}
+
+\capsule{}%subquery
+        {Queries}
+        {James Alexander}
+        {Time line macro}
+        {}
+        {216-216\offset{.5}}
+        {/TUGboat/tb08-2/tb18queries.pdf}
+
+
+\capsule{}%subquery
+        {Queries}
+        {}
+        {Reply: Printing out selected pages}
+        {}
+        {217-217\offset{.3}}
+        {/TUGboat/tb08-2/tb18queries.pdf}
+
+
+\capsule{}%subquery
+        {Queries}
+        {}
+        {Using the Windows environment}
+        {}
+        {217-217\offset{.6}}
+        {/TUGboat/tb08-2/tb18queries.pdf}
+
+
+%THEcategory{News \& Announcements}
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {}
+        {}
+        {218-221}
+        {/TUGboat/tb08-2/tb18news.pdf}
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {TUG Annual Meeting, University of Washington, August~24--26,~1987}
+        {}
+        {218-218}
+        {/TUGboat/tb08-2/tb18news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {219-220}
+        {/TUGboat/tb08-2/tb18news.pdf}
+
+
+\capsule{}%subquery
+        {News \& Announcements}
+        {}
+        {PROTEXT~IV}
+        {}
+        {220-220}
+        {/TUGboat/tb08-2/tb18news.pdf}
+
+
+\capsule{}%subquery
+        {News \& Announcements}
+        {}
+        {6th German \TeX\ meeting}
+        {}
+        {221-221}
+        {/TUGboat/tb08-2/tb18news.pdf}
+
+
+%THEcategory{Late-Breaking News}
+
+
+\capsule{}%subsec
+        {Late-Breaking News}
+        {Lynne~A.~Price}
+        {SGML and \TeX}
+        {}
+        {221-225}
+        {/TUGboat/tb08-2/tb18price.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsec
+        {TUG Business}
+        {Samuel~B.~Whidden}
+        {Treasurer's report}
+        {}
+        {225-227}
+        {/TUGboat/tb08-2/tb18treas.pdf}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {228-230}
+        {/TUGboat/tb08-2/tb18instmem.pdf}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {TUG membership application; \TeX\ order form}
+        {}
+        {231-236}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {238-252}
+        {/TUGboat/tb08-2/tb18ads.pdf}
+
+
+%THEcategory{Supplements}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {{\sl Computers \& Typesetting\/}: Errata and Changes;    TUG Membership List Supplement}
+        {}
+        {\offset{992}}
+        {URL}

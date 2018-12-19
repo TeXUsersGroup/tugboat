@@ -1,0 +1,376 @@
+% $Id$
+
+\begin{blurb}
+<p>If you're not already a member, we hope you'll consider <a
+href="/join.html">joining TUG</a> or <a href="/usergroups.html">another
+TeX user group</a>, to support these publications, conferences, and
+other TeX projects.
+
+<p>Please see the
+<a href="/TUGboat/Pres/tb79pres.html">introduction</a>
+ for an explanation of this special non-TUGboat publication from TUG.
+
+<p>The published book is also available <a
+ href="http://www.springeronline.com/sgw/cda/frontpage/0,11855,4-164-22-33856338-0,00.html">available
+ from Springer Verlag</a> as a volume in the LNCS series, and
+ to Springer subscribers through <a
+ href="http://www.springerlink.com/openurl.asp?genre=issue&issn=0302-9743&volume=3130&issue=preprint">Springer's
+ online system</a>.
+\end{blurb}
+
+\notissue{25}{0}{79}{2004}{}{Preprints for the 2004 Annual Meeting (Xanthi, Greece)}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 25:0 as one pdf (13mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb25-0/tb79complete.pdf}
+
+\capsule{}
+        {}%replace|General Delivery
+        {Karl Berry}
+        {Editorial remarks}
+        {}
+        {2}
+        {/TUGboat/Pres/tb79pres.html}
+        {}
+        {}
+
+\capsule{}
+        {Electronic Documents}
+        {Christos KK Loverdos and Apostolos Syropoulos}
+        {Digital typography in the new millennium: Flexible documents by a flexible engine}
+        {}
+        {3}
+        {/TUGboat/tb25-0/loverdos.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Electronic Documents}
+        {Wlodzimierz Bzyl and  Tomasz Przechlewski}
+        {Migrating to XML: The case of the GUST Bulletin archive}
+        {}
+        {13}
+        {/TUGboat/tb25-0/bzyl.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Electronic Documents}
+        {Tomasz Przechlewski}
+        {Managing TeX resources with XML topic maps}
+        {}
+        {19}
+        {/TUGboat/tb25-0/przech.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Electronic Documents}
+        {Luca Padovani}
+        {Interactive editing of MathML markup using TeX syntax}
+        {}
+        {26}
+        {/TUGboat/tb25-0/padovani.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Electronic Documents}
+        {Jan Holecek and Petr Sojka}
+        {Animations in pdfTeX-generated PDF}
+        {}
+        {35}
+        {/TUGboat/tb25-0/holecek.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Electronic Documents}
+        {Mustapha Eddahibi, Azzeddine Lazrek, and Khalid Sami}
+        {Arabic mathematical e-documents}
+        {}
+        {42}
+        {/TUGboat/tb25-0/lazrek-doc.pdf}
+        {}
+        {}
+
+
+
+\capsule{}
+        {Fonts}
+        {Mostafa Banouni, Mohamed Elyaakoubi, and Azzeddine Lazrek}
+        {Dynamic Arabic mathematical fonts}
+        {}
+        {48}
+        {/TUGboat/tb25-0/lazrek-font.pdf}
+        {}
+        {}
+
+\capsule{}
+        {Fonts}
+        {Karel P\'{\i}\v{s}ka}
+        {Creating Type 1 fonts from MF sources: Comparison of tools, techniques and results}
+        {}
+        {54}
+        {}
+        {/TUGboat/tb25-0/piska.pdf}
+        {}
+
+
+
+\capsule{}
+        {Omega}
+        {Yannis Haralambous and Gabor Bella}
+        {OpenType and  OMEGA: Past, present and future}
+        {}
+        {66}
+        {/TUGboat/tb25-0/hara.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Omega}
+        {John Plaice and  Paul Swoboda}
+        {Moving OMEGA to a C++-based platform}
+        {}
+        {68}
+        {/TUGboat/tb25-0/plaice.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Omega}
+        {Jin-Hwan Cho and  Haruhiko Okumura}
+        {Typesetting CJK languages with OMEGA}
+        {}
+        {71}
+        {/TUGboat/tb25-0/cho.pdf}
+        {}
+        {}
+
+
+
+
+\capsule{}
+        {Software \& Tools}
+        {Jean-Michael Hufflen}
+        {MlBibTeX: Beyond LaTeX}
+        {}
+        {77}
+        {/TUGboat/tb25-0/hufflen.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Software \& Tools}
+        {Jer\^ome Laurens}
+        {iTeXMac: An integrated TeX environment for Mac OSX}
+        {}
+        {85}
+        {/TUGboat/tb25-0/laurens.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Software \& Tools}
+        {Frank-Rene Schaefer}
+        {\c{S}\"afer\TeX: Source code esthetics for automated typesetting}
+        {}
+        {92}
+        {/TUGboat/tb25-0/schaefer.pdf}
+        {}
+        {}
+
+
+
+\capsule{}
+        {Graphics}
+        {L.N. Goncalves}
+        {FEATPOST and a review of 3D METAPOST packages}
+        {}
+        {99}
+        {/TUGboat/tb25-0/nobre.pdf}
+        {}
+        {}
+
+
+
+\capsule{}
+        {Critical Editions}%replace|Humanities
+        {David Kastrup}
+        {The bigfoot bundle for critical editions}
+        {}
+        {105}
+        {/TUGboat/tb25-0/kastrup.pdf}
+        {}
+        {}
+
+
+
+\capsule{}
+        {Philology}
+        {Johannis Likos}
+        {monopoly: Java-based conversion of monotonic to polytonic Greek}
+        {}
+        {111}
+        {/TUGboat/tb25-0/likos.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Philology}%add|Hyphenation
+        {Dimitrios Filippou}
+        {Hyphenation patterns for ancient and modern Greek}
+        {}
+        {121}
+        {/TUGboat/tb25-0/filippou.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Philology}
+        {Pablo Rosell-Gonz\'alez}
+        {The mayan package and fonts}
+        {}
+        {127}
+        {/TUGboat/tb25-0/gonzalez.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Philology}
+        {Manasi Athale and Rahul Athale}
+        {Using LaTeX to typeset a Marathi-English dictionary}
+        {}
+        {131}
+        {/TUGboat/tb25-0/athale.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Philology}
+        {Jagoba Arias Perez, Jesus Lazaro and Juan M. Aguirregabiria}
+        {Basque: A case study in generalizing LaTeX language support}
+        {}
+        {135}
+        {/TUGboat/tb25-0/arias.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Philology}
+        {P\'eter Szab\'o}
+        {Implementation tricks in the Hungarian babel module}
+        {}
+        {140}
+        {/TUGboat/tb25-0/szabo.pdf}
+        {}
+        {}
+
+
+\capsule{}
+        {Philology}
+        {Kenneth R. Beesley}
+        {Typesetting the Deseret alphabet with LaTeX and METAFONT}
+        {}
+        {162}
+        {/TUGboat/tb25-0/beesley.pdf}
+        {}
+        {}
+
+
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {192}
+        {/calendar.html}
+        {}
+        {}
+
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {TUG 2005 conference announcement}
+        {}
+        {196}
+        {/tug2005/}
+        {}
+        {}
+
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {Practical TeX 2004 conference announcement}
+        {}
+        {c3\offset{.5}}
+        {/practicaltex2004/}
+        {}
+        {}
+
+
+\capsule{}
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {193}
+        {/instmem.html}
+        {}
+        {}
+
+
+\capsule{}
+        {TUG Business}
+        {}
+        {TUG membership application}
+        {}
+        {194}
+        {/join.html}
+        {}
+        {}
+
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {TeX consulting and production services}
+        {}
+        {195}
+        {/consultants.html}
+        {}
+        {}
+
+
+\capsule{}
+        {Advertisements}
+        {}
+        {Guide to LaTeX, 4th Edition, by Helmut Kopka and Patrick W. Daly}
+        {}
+        {196\offset{.5}}
+        {/books/}
+        {}
+        {}

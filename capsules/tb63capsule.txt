@@ -1,0 +1,340 @@
+% $Id$
+
+\issue{20}{2}{63}{June 1999}{}{}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 20:2 as one pdf (1.9mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb20-2/tb63complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {81}
+        {/TUGboat/tb20-2/titlepage.pdf}
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {83-84}
+        {URL}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Mimi~Jett}
+        {{From the President}}
+        {}
+        {85-86}
+        {/TUGboat/tb20-2/tb63gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {86-87}
+        {/TUGboat/tb20-2/tb63beet.pdf}
+        {Remembering Norman Naugle and Roswitha Graham\\
+{New home for the~\acro{UK~TUG~FAQ}}\\
+{\TUB{} authors' rights}\\
+{Home~site for~\ConTeXt}\\
+{Credit~where credit is~due}\\
+{The growing Russian \TeX{} library}\\
+{A~new feature: Cartoons by Roy Preston}}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Bart~Childs}
+        {{Norman W.~Naugle\Dash A Rememberance}}
+        {}
+        {87-88}
+        {/TUGboat/tb20-2/tb63naugle.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Dag~Langmyhr}%person|Dag Langmyhr and Roswitha Graham
+        {{Roswitha von den Schulenburg Graham}}
+        {}
+        {89-89}
+        {/TUGboat/tb20-2/tb63roswitha.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Mimi~Burbank}%person|Mimi Burbank and Everett Larguier
+        {{You meet the nicest people \dots\ Father~Everett~Larguier}}
+        {}
+        {89-90\offset{.5}}
+        {/TUGboat/tb20-2/tb63larg.pdf}
+
+
+%THEcategory{Views \&\\ Commentary}
+
+\capsule{}%subsec
+        {Views \&\ Commentary}
+        {Bernard~Gaulle}
+        {{The {\tt french} package on and~off CTAN}}
+        {}
+        {91-92\offset{.5}}
+        {/TUGboat/tb20-2/tb63gaul.pdf}
+
+
+\capsule{}%subsecnn
+        {Views \&\\ Commentary}
+        {}
+        {{Response from the {CTAN}~team}}
+        {}
+        {92-92}
+        {/TUGboat/tb20-2/tb63gaul.pdf}
+
+
+\capsule{}%subsec
+        {Views \&\\ Commentary}
+        {Barbara~Beeton}
+        {Editor's commentary}
+        {}
+        {92-92\offset{.5}}
+        {/TUGboat/tb20-2/tb63gaul.pdf}
+
+
+%THEcategory{Letters}
+
+
+\capsule{}%subsec
+        {Letters}
+        {Jonathan~Fine}
+        {{The good name of \TeX}}
+        {}
+        {93-93}
+        {/TUGboat/tb20-2/tb63lett.pdf}
+
+
+\capsule{}%subsec
+        {Letters}
+        {Petr~Ol\v{s}ak}
+        {Reply}
+        {}
+        {93-93\offset{.5}}
+        {/TUGboat/tb20-2/tb63lett.pdf}
+
+\capsule{}
+        {Typography}
+        {Peter Flynn}
+        {Typographer's Inn}
+        {}
+        {94-95}
+        {/TUGboat/tb20-2/tb63inn.pdf}
+
+%THEcategory{Typography<   \subsec Peter~Flynn\\{Typographers' Inn}\\94-95}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Maarten~Gelderman}
+        {A short introduction to font characteristics}
+        {}
+        {96-104}
+        {/TUGboat/tb20-2/tb63geld.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Bogus\l{}aw~Jackowski}
+        {{\MF: Practical and impractical           applications}}
+        {}
+        {104-119}
+        {/TUGboat/tb20-2/tb63jack.pdf}
+
+
+%THEcategory{Language Support}
+
+
+\capsule{}%subsec
+        {Language Support}
+        {Anshuman~Pandey}
+        {{Typesetting Bengali in \TeX}}
+        {}
+        {119-126}
+        {/TUGboat/tb20-2/tb63pand.pdf}
+
+
+%THEcategory{Software \& Tools}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Klaus~H\"oppner}
+        {The {\sl CTAN May 1999} \acro{CD ROM}  set by \acro{DANTE} e.V. and Lehmanns bookstore}
+        {}
+        {127-127}
+        {/TUGboat/tb20-2/tb63cd.pdf}
+
+\capsule{}
+        {Software \& Tools}
+        {Gilbert~van~den~Dobbelsteen}
+        {{Interacting  pdf\TeX{}, \acro{PERL} and \CONTEXT}}
+        {}
+        {128-133}
+        {/TUGboat/tb20-2/tb63dobb.pdf}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Robert~Tolksdorf}
+        {{NetBibTeX{}ing}}
+        {}
+        {134-140}
+        {/TUGboat/tb20-2/tb63tolk.pdf}
+
+
+%THEcategory{Hints \& Tricks}
+
+
+\capsule{}%subsec
+        {Hints \& Tricks}
+        {Jeremy~Gibbons}
+        {"Hey\Dash it works!"}
+        {}
+        {141-142}
+        {/TUGboat/tb20-2/tb63gibb.pdf}
+	{Switchable marginal notes ({Jeremy Gibbons});\\
+{Smoothing~augmented~paths in~\MP} ({Andreas~Scherer});\\
+{Every~point a period} ({Ram\'on~Casares})}
+	{}
+
+%THEcategory{Abstracts}
+
+
+\capsule{}%subsecnn
+        {Abstracts}
+        {}
+        {{{\sl Les Cahiers GUTenberg}, Contents of Issues~31          (December~1998) and~32~(May~1999)}}
+        {}
+        {143-145}
+        {/TUGboat/tb20-2/tb63cahi.pdf}
+
+
+%THEcategory{News \& \\ Announcements}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {Calendar}
+        {}
+        {146-147}
+        {/calendar.html}
+
+
+%THEsubheads{ {}}
+
+
+%THEcategory{Late-Breaking\\News}
+
+
+\capsule{}%subsec
+        {Late-Breaking\\News}
+        {Mimi~Burbank}
+        {Production notes}
+        {}
+        {147-147}
+        {/TUGboat/tb20-2/tb63prod.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking\\News}
+        {}
+        {Future issues}
+        {}
+        {147-147\offset{.5}}
+        {/TUGboat/tb20-2/tb63prod.pdf}
+
+
+%THEcategory{Cartoon}
+
+
+\capsule{}%subsec
+        {Cartoon}
+        {Roy~Preston}
+        {Monk-ey business}
+        {}
+        {140-140}
+        {/TUGboat/tb20-2/versal.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {148-148}
+        {/instmem.html}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {TUG membership application}
+        {}
+        {150-150}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Cambridge University Press}}
+        {}
+        {149-149}
+        {/TUGboat/tb20-2/tb63consult.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {151-151}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Y\&Y Inc.}}
+        {}
+        {152-152}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Blue Sky Research}}
+        {}
+        {c3}
+        {/TUGboat/tb20-2/bluesky.pdf}

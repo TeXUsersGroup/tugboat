@@ -1,0 +1,507 @@
+% $Id$
+\input tugboat.cmn  % tugboat.dates macros
+\input tugboat.dates
+\input tb81pages
+
+\nopagenumbers
+\hyphenpenalty = 10000
+\advance\rightskip by 0pt plus 9pt
+\voffset = -.5in
+\vsize = 10in
+
+% fonts
+\font\sans = cmss10
+\def\pkgname#1{{\sans #1}}
+
+\font\smallsl = cmsl9  \font\smallrm = cmr9
+\def\acrofont{% if slanted font, use slanted acro font
+   \ifdim \fontdimen1\font>0pt \smallsl \else \smallrm\fi
+}
+\def\acro#1{{\acrofont #1}}
+
+
+% abbreviations
+\def\,{\thinspace}
+\def\\{\hfil\break}
+\def\aand{\unskip,\space} %
+\def\aand{{\rm and\space}} % matches tub, but too long
+\def\bull{\vrule height 1ex width .8ex depth -.2ex } % square bullet
+\def\smallbullet{\raise .4ex \hbox{$\scriptscriptstyle \bullet$}}
+\def\Dash{\,---\,}
+\def\t#1{{\tt #1}}
+
+\def\ConTeXt{C\kern-.0333emon\-\kern-.0667em\TeX\kern-.0333emt}
+\def\LaTeX{%
+    L\kern-.36em
+    {\setbox0=\hbox{T}%
+     \vbox to \ht0{\hbox{\the\scriptfont0 A}\vss}}%
+    \kern-.15em
+    \TeX
+}
+
+% from tugboat.front
+\def\titleslash{\raise.3ex\hbox{\sevenrm/}}
+
+
+% formatting
+\newdimen\pagenowidth % space for just
+\setbox0=\hbox{000}
+\pagenowidth=\wd0  % aka 1.5em
+\newdimen\pagenospace  \pagenospace = 2.5em
+
+\def\category#1{\smallskip\noindent{\bf #1}\vskip .5\smallskipamount}
+
+% #1 is (redundant) difficulty category
+% #2 is TB category
+% #3 is author
+% #4 is title
+% #5 is for statement
+% #6 is page number
+% #7 is URL of paper PDF at Mimi's place, for when I want to look at it again
+\def\capsule#1#2#3#4#5#6#7{%
+    \noindent
+    \hangindent = \pagenospace
+      \advance\hangindent by 3em
+    \hbox to \pagenospace{%
+      \hbox to \pagenowidth{\hfil #6}%
+      \hfil}%
+     %
+     \def\author{#3}%
+     \ifx\author\empty\else {\sl \author} \titleslash\ \fi
+     %
+     {#4}%
+     %
+     \def\blurb{#5}%
+     \ifx\blurb\empty\else \hfil\break\hglue-2em\smallbullet\ \blurb\fi
+     \par
+}
+
+\font\titlebf = cmbx10 scaled \magstep1
+\leftline{{\titlebf TUG}BOAT \quad \volx\ / \volyr}
+\medskip
+
+% begin-items
+% 
+\begin{blurb}
+<p>If you're not already a member, we hope you'll consider <a
+href="/join.html">joining TUG</a> or <a href="/usergroups.html">another
+TeX user group</a>, to support these publications, conferences, and
+other TeX projects.
+
+<p>
+\end{blurb}
+
+\issue{25}{2}{81}{2004}{}{}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 25:2 as one pdf (4.6mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb25-2/tb81complete.pdf}
+  {}
+  {}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Front cover}
+  {}
+  {c1\offset{.1}}
+  {/TUGboat/tb25-2/cover1.pdf}
+  {}
+  {}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Inside front cover}
+  {}
+  {c2\offset{.2}}
+  {/TUGboat/tb25-2/cover2.pdf}
+  {}
+  {}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Contents ordered by difficulty}
+  {}
+  {c3\offset{.3}}
+  {/TUGboat/tb25-2/cover3.pdf}
+  {}
+  {}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Title page}
+  {}
+  {121}
+  {/TUGboat/tb25-2/titlepage.pdf}
+  {}
+  {}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Editorial page}
+  {}
+  {122}
+  {/TUGboat/tb25-2/tb81edit.pdf}
+  {}
+  {}
+
+\category{Introductory}
+
+\capsule{Introductory}
+  {General Delivery}%add|Obituaries
+  {Barbara Beeton}
+  {Editorial comments}
+  {typography and {\sl TUGboat} news}
+  {124}
+  {/TUGboat/tb25-2/tb81beet.pdf}
+  {New {\it TUGboat} submission and posting policies\\
+Justin Howes, 1963--2005\\
+John Seybold, 1916--2004\\
+Word Hy-phen-a-tion by Com-pu-ter\\
+Error in {\it TUGboat} 24:2 Zapfino article\\
+Historic \LaTeX\ distributions\\
+{\it The \LaTeX\ Companion}, 2nd edition\\
+{\sf techexplorer} available once again\\
+Central European diacritics: {\it TYPO Magazine}\\
+Extra time? Proofread for Project Gutenberg}
+  {}
+
+\capsule{Introductory}
+  {General Delivery}
+  {Karl Berry}
+  {From the president}
+  {\acro{TUG} activities and information for 2004}
+  {123}
+  {/TUGboat/tb25-2/tb81pres.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Typography}
+  {Peter Flynn}
+  {Typographers' Inn}
+  {common typographical pitfalls and recommendations}
+  {134}
+  {/TUGboat/tb25-2/tb81inn.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Tutorials}
+  {Jim Hef{}feron}
+  {\acro{CTAN} for starters}
+  {introduction to the \TeX\ software archives}
+  {126}
+  {/TUGboat/tb25-2/tb81heff.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Tutorials}
+  {Steve Peter}
+  {\cs{starttext}: Practical \ConTeXt}
+  {for new users of \ConTeXt}
+  {128}
+  {/TUGboat/tb25-2/tb81peter.pdf}
+  {}
+  {}
+
+
+% 
+\category{Intermediate}
+
+\capsule{Intermediate}
+  {Philology}
+  {Claudio Beccari \aand Christiano Pulone}
+  {Philological facilities for Coptic script}
+  {support for Coptic typesetting}
+  {136}
+  {/TUGboat/tb25-2/tb81becc.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {\LaTeX}
+  {Massimiliano Dominici}
+  {{\tt dramatist}:  Another package for typesetting drama with \LaTeX}
+  {for playwrights and dramatic publishing}
+  {188}
+  {/TUGboat/tb25-2/tb81dominici.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Graphics}
+  {Andrew D. Hwang}
+  {{\tt ePiX}: A utility for creating mathematically accurate figures}
+  {for users drawing math figures}
+  {172}
+  {/TUGboat/tb25-2/tb81hwang.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Hints \& Tricks}
+  {Mark LaPlante}
+  {The treasure chest}
+  {new and updated \CTAN\ packages in 2004}
+  {203}
+  {/TUGboat/tb25-2/tb81chest.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {\LaTeX}
+  {Simon Law}
+  {Variable width boxes in \LaTeX}
+  {for moving beyond box basics}
+  {193}
+  {/TUGboat/tb25-2/tb81law.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Tutorials}
+  {Thomas A. Schmitz}
+  {Virtual fonts\Dash{}a tutorial}
+  {for learning about font handling}
+  {131}
+  {/TUGboat/tb25-2/tb81schmitz.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Macros}
+  {David Walden}
+  {A non-expert looks at a small \TeX\ macro}
+  {developing and understanding basic macro definitions, an example}
+  {199}
+  {/TUGboat/tb25-2/tb81walden.pdf}
+  {}
+  {}
+
+
+% 
+\category{Intermediate Plus}
+
+\capsule{Intermediate Plus}
+  {Software \& Tools}
+  {Marcelo Castier \aand Vladimir F. Cabral}
+  {Automatic typesetting of formulas using computer algebra}
+  {about exporting math from Mathematica to \TeX}
+  {166}
+  {/TUGboat/tb25-2/tb81castier.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {Graphics}
+  {J.\,P. Hagon}
+  {\LaTeX\ in 3D: Annotations for Open\acro{DX}}
+  {about \LaTeX\ captions and labeling in visual programming}
+  {177}
+  {/TUGboat/tb25-2/tb81hagon.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {Hints \& Tricks}
+  {Siep Kroonenberg}
+  {\TeX\ and prepress}
+  {about preparing documents for physical printing}
+  {159}
+  {/TUGboat/tb25-2/tb81kroonenberg.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {Philology}
+  {Azzeddine Lazrek}
+  {\pkgname{RyDArab}\Dash{}Typesetting Arabic mathematical expressions}
+  {about a large system for Arabic math typesetting}
+  {141}
+  {/TUGboat/tb25-2/tb81lazrek.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {Hints \& Tricks}
+  {Peter Wilson}
+  {Glisterings: Package/package and class/package clashes}
+  {handling command name conflicts}
+  {201}
+  {/TUGboat/tb25-2/tb81glister.pdf}
+  {}
+  {}
+
+
+% 
+\category{Advanced}
+
+\capsule{Advanced}
+  {Macros}
+  {Hendri Adriaens \aand Uwe Kern}
+  {\pkgname{xkeyval}\Dash{}new developments and mechanisms in key processing}
+  {about key/value arguments, for package writers}
+  {194}
+  {/TUGboat/tb25-2/tb81adriaens.pdf}
+  {}
+  {}
+
+\capsule{Advanced}
+  {Software \& Tools}
+  {Scott Pakin}
+  {Perl\TeX: Defining \LaTeX\ macros using Perl}
+  {using the Perl language to create macro definitions}
+  {150}
+  {/TUGboat/tb25-2/tb81pakin.pdf}
+  {}
+  {}
+
+
+% 
+\category{Contents of publications from other \TeX\ groups}
+
+\capsule{Contents of publications from other \TeX\ groups}
+  {Abstracts}
+  {}
+  {{\it Biuletyn GUST\/}: Contents of issues 20--21 (2004)}
+  {}
+  {213}
+  {/TUGboat/tb25-2/tb81gust.pdf}
+  {}
+  {}
+
+\capsule{Contents of publications from other \TeX\ groups}
+  {Abstracts}
+  {}
+  {{\it Les Cahiers GUTenberg\/}: Contents of issue 43 (December 2003)}
+  {}
+  {215}
+  {/TUGboat/tb25-2/tb81gust.pdf}
+  {}
+  {}
+
+\capsule{Contents of publications from other \TeX\ groups}
+  {Abstracts}
+  {}
+  {{\it MAPS\/}: Contents of issues 29--31 (2003--04)}
+  {}
+  {216}
+  {/TUGboat/tb25-2/tb81maps.pdf}
+  {}
+  {}
+
+\capsule{Contents of publications from other \TeX\ groups}
+  {Abstracts}
+  {}
+  {{\it Die \TeX{}nische Kom\"odie\/}: Contents of issues 1--4/2003}
+  {}
+  {210}
+  {/TUGboat/tb25-2/tb81komo.pdf}
+  {}
+  {}
+
+\capsule{Contents of publications from other \TeX\ groups}
+  {Abstracts}
+  {}
+  {{\it Zpravodaj\/}: Contents of issues 13(1), 14(1), 14(2) (2003--04)}
+  {}
+  {209}
+  {/TUGboat/tb25-2/tb81zprav.pdf}
+  {}
+  {}
+
+
+% 
+\category{Reports and notices}
+
+\capsule{Reports and notices}
+  {News \& Announcements}
+  {Onofrio de Bari \aand Maurizio Himmelmann}
+  {A brief report on the first GuIT meeting}
+  {}
+  {223}
+  {/TUGboat/tb25-2/tb81guit.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {TUG Business}
+  {Barbara Beeton}
+  {\acro{TUG} 2005 election report}
+  {}
+  {228}
+  {/TUGboat/tb25-2/tb81elec.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {TUG Business}
+  {Karl Berry \aand Kaja Christiansen}
+  {\TeX\ Development Fund 2003--05 report}
+  {}
+  {224}
+  {/TUGboat/tb25-2/tb81devfund.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {TUG Business}
+  {Robin Laakso}
+  {Financial statements for 2004}
+  {}
+  {226}
+  {/TUGboat/tb25-2/tb81treas.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {News \& Announcements}
+  {}
+  {Calendar}
+  {}
+  {221}
+  {/TUGboat/tb25-2/tb81calendar.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {News \& Announcements}
+  {}
+  {TUG\,2005 announcement}
+  {}
+  {223\offset{.1}}
+  {/tug2005/}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {TUG Business}
+  {}
+  {Institutional members}
+  {}
+  {232}
+  {/TUGboat/tb25-2/instmem-list.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {Advertisements}
+  {}
+  {\TeX\ consulting and production services}
+  {}
+  {232\offset{.1}}
+  {/consultants.html}
+  {}
+  {}
+
+\bye

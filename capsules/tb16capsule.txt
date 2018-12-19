@@ -1,0 +1,522 @@
+% $Id$
+
+\issue{7}{3}{16}{October 1986}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 7:3 as one pdf (6.1mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb07-3/tb16complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {125}
+        {/TUGboat/tb07-3/tb16titlepage.pdf}
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {127-128}
+        {URL}
+
+
+%THEcategory{General Delivery}
+
+\capsule{}
+        {General Delivery}
+        {}
+        {}
+        {}
+        {129-133}
+        {/TUGboat/tb07-3/tb16gendel.pdf}
+
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Bart~Childs}
+        {Message from the President}
+        {}
+        {129-130}
+        {/TUGboat/tb07-3/tb16gendel.pdf}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {Donald E. Knuth Scholarship}
+        {}
+        {130-130}
+        {/TUGboat/tb07-3/tb16gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Pierre~MacKay}
+        {1987 Annual Meeting, Call for papers:      \TeX\ for the Humanities}
+        {}
+        {131-131}
+        {/TUGboat/tb07-3/tb16gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Lawrence~A.~Beck}
+        {Report from ANSI X3V1}
+        {}
+        {132-132}
+        {/TUGboat/tb07-3/tb16gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Reinhard~Wonneberger}
+        {Towards a \TeX\ philology group}
+        {}
+        {132-133}
+        {/TUGboat/tb07-3/tb16gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Laurie~Mann}
+        {An idea exchange on \TeX\ training}
+        {}
+        {133-133}
+        {/TUGboat/tb07-3/tb16gendel.pdf}
+
+
+%THEcategory{Software}
+
+
+\capsule{}%subsec
+        {Software}
+        {Klaus~Guntermann \and Wolfgang~R\"ulling}
+        {Another approach to multiple changefiles}
+        {}
+        {134-134}
+        {/TUGboat/tb07-3/tb16gunterchange.pdf}
+
+
+\capsule{}%subsec
+        {Software}%add|Literate Programming
+        {Klaus~Guntermann \and Joachim~Schrod}
+        {WEB\ adapted to C}
+        {}
+        {134-137}
+        {/TUGboat/tb07-3/tb16gunterweb.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {James~Alexander}
+        {Tib: A reference setting package for \TeX}
+        {}
+        {138-140}
+        {/TUGboat/tb07-3/tb16alexander.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {Tomas~Rokicki}
+        {Packed file format update}
+        {}
+        {140-144}
+        {/TUGboat/tb07-3/tb16pk.pdf}
+
+
+\capsule{}%subsecnn
+        {Software}%replace|Hyphenation
+        {}
+        {Hyphenation exception log}
+        {}
+        {145-145}
+        {/TUGboat/tb07-3/tb16hyf.pdf}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Charles~Bigelow}
+        {Notes on typeface protection}
+        {}
+        {146-151}
+        {/TUGboat/tb07-3/tb16bigelow.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {John~Sauter}
+        {Building Computer Modern Fonts}
+        {}
+        {151-152}
+        {/TUGboat/tb07-3/tb16sauter.pdf}
+
+
+%THEcategory{Output Devices}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Rick~Jansen}
+        {TeX\ and Macintosh\Dash new directions in Preview}
+        {}
+        {152-158}
+        {/TUGboat/tb07-3/tb16jansen.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {R.\thinspace M.~Damerell}
+        {{\tt Crudetype}: An adaptable device driver}
+        {}
+        {159-163}
+        {/TUGboat/tb07-3/tb16damerell.pdf}
+
+
+\capsule{}
+        {Site Reports}
+        {}
+        {}
+        {}
+        {164-167}
+        {/TUGboat/tb07-3/tb16site.pdf}
+
+%THEcategory{Site Reports}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Malcolm~Brown}
+        {TeX hax returns}
+        {}
+        {164-164}
+        {/TUGboat/tb07-3/tb16site.pdf}
+
+
+%THEsite{Atari}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Klaus~Guntermann}
+        {Porting \TeX\ to the Atari ST}
+        {}
+        {164-164\offset{.5}}
+        {/TUGboat/tb07-3/tb16site.pdf}
+
+
+%THEsite{CDC Cyber}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Jim~Fox}
+        {CDC Cyber site report}
+        {}
+        {164-165}
+        {/TUGboat/tb07-3/tb16site.pdf}
+
+
+%THEsite{IBM MVS}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Craig~Platt}
+        {MVS \TeX\ site report}
+        {}
+        {165-166}
+        {/TUGboat/tb07-3/tb16site.pdf}
+
+
+%THEsite{IBM VM/CMS}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Alan~Spragens}
+        {CMS \TeX\ site report}
+        {}
+        {167-167}
+        {/TUGboat/tb07-3/tb16site.pdf}
+
+
+%THEcategory{Typesetting on PCs}
+
+
+\capsule{}%subsec
+        {Typesetting on PCs}
+        {Alan~Hoenig \and Mitch~Pfeffer}
+        {Real typesetting   from your personal computer}
+        {}
+        {167-168}
+        {/TUGboat/tb07-3/tb16hoenig.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Klaus~Thull}
+        {Harnessing \TeX\ to compute third root of unity primes}
+        {}
+        {169-170}
+        {/TUGboat/tb07-3/tb16thull.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Hans~Ehrbar}
+        {Statistical graphics with \TeX}
+        {}
+        {171-175}
+        {/TUGboat/tb07-3/tb16ehrbar.pdf}
+
+
+%THEcategory{\LaTeX}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Jackie Damrau \and Ken Yap}
+        {Call for participation}
+        {}
+        {176-176}
+        {/TUGboat/tb07-3/tb16damrau.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Leslie~Lamport}
+        {LaTeX\ bugs}
+        {}
+        {176-176\offset{.5}}
+        {/TUGboat/tb07-3/tb16lamport.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Reinhard~Wonneberger}
+        {Chapter mottos and optional semi-parameters        }
+        {}
+        {177-185}
+        {/TUGboat/tb07-3/tb16wonneberger.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}%add|Indexing
+        {Thomas~Hofmann}
+        {A \LaTeX\ addition for formatting indexes}
+        {}
+        {186-186}
+        {/TUGboat/tb07-3/tb16hofmann.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}%add|Indexing
+        {Richard~L.~Aurbach}
+        {Idx\TeX\ and Glo\TeX\Dash indexes and glossaries}
+        {}
+        {187-187}
+        {/TUGboat/tb07-3/tb16queries.pdf}
+
+
+%THEcategory{Queries}
+
+\capsule{}
+        {Queries}
+        {}
+        {}
+        {}
+        {187-187\offset{.3}}
+        {/TUGboat/tb07-3/tb16queries.pdf}
+
+
+\capsule{}%subsec
+        {Queries}
+        {John~Lee}
+        {Form letters}
+        {}
+        {187-187\offset{.6}}
+        {/TUGboat/tb07-3/tb16queries.pdf}
+
+
+\capsule{}%subsec
+        {Queries}
+        {Jim~Fox}
+        {Change bars}
+        {}
+        {187-188}
+        {/TUGboat/tb07-3/tb16queries.pdf}
+
+
+%THEcategory{Letters}
+
+
+\capsule{}%subsec
+        {Letters}
+        {Wayne~Sewell}
+        {Bugs in \MF{}ware}
+        {}
+        {188-189}
+        {/TUGboat/tb07-3/tb16sewell.pdf}
+
+
+%THEcategory{News \& Announcements}
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {}
+        {}
+        {190-194}
+        {/TUGboat/tb07-3/tb16news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {190-190}
+        {/TUGboat/tb07-3/tb16news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {INRIA course: Structures for Documents, Aussois, France, January 19--23, 1987}
+        {}
+        {191-191}
+        {/TUGboat/tb07-3/tb16news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {\MF, \TeX\ and the Humanities, Rennes, France}
+        {}
+        {191-191\offset{.5}}
+        {/TUGboat/tb07-3/tb16news.pdf}
+
+
+\capsule{}%subsec
+        {News \& Announcements}
+        {Yoshio~Ohno}
+        {Japanese \TeX\ Users Group}
+        {}
+        {191-192}
+        {/TUGboat/tb07-3/tb16news.pdf}
+
+
+\capsule{}%subsec
+        {News \& Announcements}
+        {Barbara~Beeton}
+        {TeX\ in Europe, Summer 1986}
+        {}
+        {192-193}
+        {/TUGboat/tb07-3/tb16news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Contents: Proceedings of ``\TeX\ for Scientific Documentation'', Strasbourg, France, June 19--21, 1986}
+        {}
+        {193-194}
+        {/TUGboat/tb07-3/tb16news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Institutional members}
+        {}
+        {196-197}
+        {/TUGboat/tb07-3/tb16instmem.pdf}
+
+
+%THEcategory{Late-Breaking News}
+
+
+\capsule{}%subsec
+        {Late-Breaking News}
+        {Susanne~Lachmann}
+        {The Tiger-\TeX\ Workstation}
+        {}
+        {194-195}
+        {/TUGboat/tb07-3/tb16lach.pdf}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {TUG membership application}
+        {}
+        {199-200}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {\TeX\ order form}
+        {}
+        {201-202}
+        {/TUGboat/tb07-3/tb16news.pdf}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {198-198}
+        {/TUGboat/tb07-3/tb16ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {TUG\Dash Job opening, Technical assistant}
+        {}
+        {c3}
+        {URL}
+
+
+%THEcategory{Supplements}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {{\sl Computers \& Typesetting}: Errata and Changes}
+        {}
+        {\offset{992}}
+        {URL}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {TUG Membership List}
+        {}
+        {\offset{992.5}}
+        {URL}

@@ -1,0 +1,370 @@
+% $Id$
+
+\issue{22}{3}{71}{September 2001}{/tug2001/}{TUG 2001 Proceedings (Delaware)}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 22:3 as one pdf (11mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb22-3/tb71complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Cover}
+        {}
+        {c1}
+        {/TUGboat/tb22-3/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb22-3/tb71cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {113}
+        {/TUGboat/tb22-3/tb71titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial notes}
+        {}
+        {114}
+        {/TUGboat/tb22-3/tb71editpage.pdf}
+
+
+\capsule{}%subsecnn
+        {}%replace|Conference Notes
+        {}
+        {{TUG 2001 Program}}
+        {}
+        {115-116}
+        {/TUGboat/tb22-3/tb71program.pdf}
+
+
+\capsule{}%subsecnn
+        {}%replace|Conference Notes
+        {}
+        {{Participants at the 22nd Annual TUG Meeting}}
+        {}
+        {117-117}
+        {/TUGboat/tb22-3/tb71participants.pdf}
+
+
+%THEcategory{{A TeX Odyssey}}
+
+
+\capsule{}%subsec
+        {{A TeX Odyssey}}
+        {Hans~Hagen}
+        {{\TeX\,2001: Where will the odyssey bring us?}}
+        {}
+        {118-118}
+        {/TUGboat/tb22-3/tb71hagen-odyssey.pdf}
+
+
+\capsule{}%subsec
+        {{A TeX Odyssey}}
+        {Mimi~Jett}
+        {{The future of publishing, Part 2}}
+        {}
+        {119-119}
+        {/TUGboat/tb22-3/tb71jett.pdf}
+
+
+\capsule{}%subsec
+        {{A TeX Odyssey}}
+        {William~Richter}
+        {{Integrating {\TeX} into a document imaging system}}
+        {}
+        {120-130}
+        {/TUGboat/tb22-3/tb71richter.pdf}
+
+
+\capsule{}%subsec
+        {{A TeX Odyssey}}
+        {Arthur~Ogawa}
+        {{{REV\TeX} version 4.0, an authoring package by the American~Physical~Society}}
+        {}
+        {131-133}
+        {/TUGboat/tb22-3/tb71ogawa.pdf}
+
+
+\capsule{}%subsec
+        {{A TeX Odyssey}}
+        {Anita~Schwartz\CONNECT{}(Chair)}
+        {{The {\TeX} History Panel}}
+        {}
+        {134-135}
+        {/TUGboat/tb22-3/tb71schwartz.pdf}
+
+
+\capsule{}%subsec
+        {{A TeX Odyssey}}
+        {Hans~Hagen}
+        {{Using {\TeX} for high-end typesetting}}
+        {}
+        {136-136}
+        {/TUGboat/tb22-3/tb71hagen-highend.pdf}
+
+
+\capsule{}%subsec
+        {{A TeX Odyssey}}
+        {Peter~Flynn}
+        {{{\TeX}---a mass market product? Or just an image in need of a~makeover?}}
+        {}
+        {137-139}
+        {/TUGboat/tb22-3/tb71flynn.pdf}
+
+
+\capsule{}%subsec
+        {{A TeX Odyssey}}
+        {David~Tulett}
+        {{{\LaTeX} for Windows: A user's perspective}}
+        {}
+        {140-145}
+        {/TUGboat/tb22-3/tb71tulett.pdf}
+
+
+%THEcategory{{PDF and \TeX}}
+
+
+\capsule{}%subsec
+        {{PDF and \TeX}}%replace|Typography
+        {\Thanh}
+        {Margin kerning and font expansion with {pdf\TeX}}
+        {}
+        {146-148}
+        {/TUGboat/tb22-3/tb71thanh.pdf}
+
+
+\capsule{}%subsec
+        {{PDF and \TeX}}%replace|Software \& Tools
+        {Ross~Moore \and Wendy~McKay}
+        {{\acro{PDF} presentations using the Marslide package}}
+        {}
+        {149-159}
+        {/TUGboat/tb22-3/tb71moore-marslide.pdf}
+
+
+\capsule{}%subsec
+        {{PDF and \TeX}}%replace|Abstracts
+        {Hans~Hagen}
+        {{Using \TeX\ to enhance your presentations}}
+        {}
+        {160-160}
+        {/TUGboat/tb22-3/tb71hagen-presentations.pdf}
+
+
+\capsule{}%subsec
+        {{PDF and \TeX}}%replace|Software \& Tools
+        {Donald~P.~Story}
+        {{Techniques of introducing document-level JavaScript into a \acro{PDF} file from a~{\LaTeX} source}}
+        {}
+        {161-167}
+        {/TUGboat/tb22-3/tb71story.pdf}
+
+
+\capsule{}%subsec
+        {{PDF and \TeX}}%replace|Software \& Tools
+        {Ross~Moore \and Frances~Griffin}
+        {{MacQ\TeX: Online self-marking quizzes, using {pdf\TeX} and exerquiz}}
+        {}
+        {168-179}
+        {/TUGboat/tb22-3/tb71moore-quiz.pdf}
+
+
+\capsule{}%subsec
+        {{PDF and \TeX}}%replace|Abstracts
+        {Martin~Schr\"oder}
+        {{Using {pdf\TeX} in a \acro{PDF}-based imposition program}}
+        {}
+        {180-180}
+        {/TUGboat/tb22-3/tb71schroder.pdf}
+
+
+\capsule{}%subsec
+        {{PDF and \TeX}}%replace|Software \& Tools
+        {Nelson~Beebe}
+        {{The \acro{PDF} Panel}}
+        {}
+        {181-187}
+        {/TUGboat/tb22-3/tb71beebe-pdf.pdf}
+
+
+%THEcategory{{Graphics, \acro{XML}, \\ and MathML}}
+
+
+\capsule{}%subsec
+        {{Graphics, XML, \\ and MathML}}%replace|Software \& Tools
+        {Ross~Moore}
+        {{Adobe plugin for \acro{WARM}reader}}
+        {}
+        {188-196}
+        {/TUGboat/tb22-3/tb71moore-warm.pdf}
+
+
+\capsule{}%subsec
+        {{Graphics, XML, \\ and MathML}}%replace|Software \& Tools
+        {Stephen~Oliver}
+        {{The \TeX{}spec tool for computer-aided software engineering}}
+        {}
+        {197-203}
+        {/TUGboat/tb22-3/tb71oliver.pdf}
+
+
+\capsule{}%subsec
+        {{Graphics, XML, \\ and MathML}}%replace|Electronic Documents
+        {William~Hammond}
+        {{\acro{GELLMU}: A bridge for authors from {\LaTeX} to \acro{XML}}}
+        {}
+        {204-207}
+        {/TUGboat/tb22-3/tb71hammond.pdf}
+
+
+\capsule{}%subsec
+        {{Graphics, XML, \\ and MathML}}%replace|Electronic Documents
+        {Bob~Caviness}
+        {{Creating Math Web Documents  (Workshop)}}
+        {}
+        {208-208}
+        {/TUGboat/tb22-3/tb71caviness.pdf}
+
+
+%THEcategory{{Fonts and Tools}}
+
+
+\capsule{}%subsec
+        {{Fonts and Tools}}
+        {Alan~Hoenig}
+        {{Typesetting Hebrew with \TeX}}
+        {}
+        {209-215}
+        {/TUGboat/tb22-3/tb71hoenig-hebrew.pdf}
+
+
+\capsule{}%subsec
+        {{Fonts and Tools}}
+        {Alan~Hoenig}
+        {{Modernizing Computer Modern}}
+        {}
+        {216-219}
+        {/TUGboat/tb22-3/tb71hoenig-modern.pdf}
+
+
+\capsule{}%subsec
+        {{Fonts and Tools}}
+        {Nelson~Beebe}
+        {{The {\TeX} Font Panel}}
+        {}
+        {220-227}
+        {/TUGboat/tb22-3/tb71beebe-fonts.pdf}
+
+
+\capsule{}%subsec
+        {{Fonts and Tools}}
+        {Michael~Downes}
+        {{Managing multiple \acro{TDS} trees}}
+        {}
+        {228-237}
+        {/TUGboat/tb22-3/tb71downes.pdf}
+
+
+\capsule{}%subsec
+        {{Fonts and Tools}}
+        {Michael~Doob}
+        {{Mirroring \acro{CTAN}}}
+        {}
+        {238-239}
+        {/TUGboat/tb22-3/tb71doob.pdf}
+
+
+\capsule{}%subsec
+        {{Fonts and Tools}}
+        {Richard~Koch}
+        {{Installing TeXshop}}
+        {}
+        {240-246}
+        {/TUGboat/tb22-3/tb71koch.pdf}
+
+
+\capsule{}%subsec
+        {{Fonts and Tools}}
+        {William~Adams}
+        {{Font installation: Agfa/Eaglefeather to Linotype Zapfino}}
+        {}
+        {247-250}
+        {/TUGboat/tb22-3/tb71adams.pdf}
+
+
+%THEcategory{News \& \\ Announcements}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {Calendar}
+        {}
+        {251-252}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {{\acro{TUG}\,2003 Announcement}}
+        {}
+        {253-253}
+        {/tug2003/}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {254-254}
+        {/TUGboat/tb22-3/tb71inst.pdf}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {255-255}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Just Published: \TeX\ Reference Manual by David Bausum}}
+        {}
+        {256-256}
+        {/TUGboat/tb22-3/kluwer.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Blue Sky Research}}
+        {}
+        {c3}
+        {/TUGboat/tb22-3/bluesky.pdf}

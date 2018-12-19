@@ -1,0 +1,316 @@
+% $Id$
+
+\issue{18}{2}{55}{June 1997}{}{}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 18:2 as one pdf (1.6mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb18-2/tb55complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1}
+        {/TUGboat/tb18-2/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb18-2/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {65}
+        {/TUGboat/tb18-2/titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {66}
+        {/TUGboat/tb18-2/tb55edit.pdf}
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {67-67}
+        {URL}
+
+
+%THEcategory{Letter}
+
+
+\capsule{}%subsec
+        {Letter}
+        {Phil~Kopriva}
+        {Letter from a member}
+        {}
+        {68-68}
+        {/TUGboat/tb18-2/tb55kopr.pdf}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Michel~Goossens}
+        {From the {President}}
+        {}
+        {69-71}
+        {/TUGboat/Pres/tb55pres.html}
+
+
+%THEsubheads{ Response to Mr.~Kopriva}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {72-73}
+        {/TUGboat/tb18-2/tb55beet.pdf}
+        {TeX Live; A TTN revival\\
+New SGML extensions: MathML, XML\\
+Another kind of tugboat calendar\\
+Tools for TeX users: Textures reader, Computer Modern Type-1 fonts, EDMAC manual\\
+Imprint --- A new electronic newsletter\\
+Museums of printing and typography\\
+Thanks to DANTE}
+        {}
+
+
+%THEsubheads{ {\TeX} {Live\,}!\,; {A} \acro{TTN} revival;         {New} \acro{SGML} extensions: {MathML}, {\acro{XML}};         {Another} kind of tugboat calendar;         {Tools} for {\TeX} users: {Textures} reader,         {Computer}~{Modern} {Type}-1 fonts, \acro{EDMAC} manual;         {Imprint}\Dash {A} new electronic newsletter;         {Museums} of printing and typography;         {Thanks}~to~{\acro{DANTE}}}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Peter~Flynn}
+        {{\acro{TTN}} returns:  {Final} \acro{TTN} editorial}
+        {}
+        {74-74}
+        {/TUGboat/tb18-2/tb55flyn.pdf}
+
+
+%THEcategory{Hints \& Tricks}
+
+
+\capsule{}%subsec
+        {Hints \& Tricks}
+        {Jeremy~Gibbons}
+        {"Hey\Dash it works!"}
+        {}
+        {75-78}
+        {/TUGboat/tb18-2/tb55works.pdf}
+        {Long division ({Barbara~Beeton} and {Donald~Arseneau});\\
+{Side}-by-side figures ({Christina~Thiele});\\
+{Enumerated}~arrays ({Dennis~Kletzing})}
+	{}
+
+%THEcategory{Humanities}
+
+
+\capsule{}%subsec
+        {Humanities}
+        {Christina~Thiele}
+        {{\TeX} and the {Humanities}}
+        {}
+        {78-78}
+        {/TUGboat/tb18-2/tb55huma.pdf}
+
+
+%THEcategory{Queries}
+
+
+\capsule{}%subsec
+        {Queries}
+        {Michael~C.~Grant}
+        {Volunteers needed: {PSfrag} hackers}
+        {}
+        {79}
+        {/TUGboat/tb18-2/tb55query.pdf}
+
+
+\capsule{}%subsec
+        {Queries}
+        {Sidney~Chow}
+        {Features for a \acro{WYSIWYG} {\LaTeX} editor}
+        {}
+        {79\offset{.5}}
+        {/TUGboat/tb18-2/tb55query.pdf}
+
+
+%THEcategory{Publications}
+
+
+\capsule{}%subsecnn
+        {Publications}
+        {}
+        {New publications}
+        {}
+        {80-80}
+        {/TUGboat/tb18-2/tb55newpubs.pdf}
+
+
+%THEcategory{{\TeX} Live CD-ROM}
+
+\capsule{}%subsec
+        {{\TeX} Live CD-ROM}
+        {Sebastian~Rahtz \and Michel~Goossens}
+        {The {{\TeXLive}} {Guide}, version 2}
+        {}
+        {81-112}
+        {ftp://tug.org/historic/systems/texlive/1997/tb55tlguide2.pdf}
+
+
+%THEcategory{Fonts}
+
+\capsule{}%subsec
+        {Fonts}
+        {Alan~Hoenig}
+        {Virtual fonts, virtuous fonts}
+        {}
+        {113-121}
+        {/TUGboat/tb18-2/hoenig.html}
+
+
+%THEcategory{Abstracts}
+
+
+\capsule{}%subsecnn
+        {Abstracts}
+        {}
+        {{\sl Les Cahiers GUTenberg}, contents of {Issue} 25}
+        {}
+        {121-122}
+        {/TUGboat/tb18-2/tb55cahi.pdf}
+
+
+\capsule{}%subsecnn
+        {Abstracts}
+        {}
+        {{\sl Die {\TeX}nische {Kom\"odie}} {\bf7}, 1995}
+        {}
+        {122-126}
+        {/TUGboat/tb18-2/tb55komo.pdf}
+
+
+%THEcategory{{\LaTeX}}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {{\LaTeX3}\CONNECT{}Project\CONNECT{}Team}
+        {Modifying {\LaTeX}}
+        {}
+        {127-130}
+        {/TUGboat/tb18-2/tb55guid.pdf}
+
+
+\capsule{}%subsecnn
+        {{\LaTeX}}
+        {}
+        {News from the {\LaTeX\,3} {Project} {Team}}
+        {}
+        {130-137}
+        {/TUGboat/tb18-2/tb55news.pdf}
+
+
+%THEcategory{News \&\\ Announcements}
+
+
+\capsule{}%subsecnn
+        {News \&\\ Announcements}
+        {}
+        {Calendar}
+        {}
+        {138-138}
+        {/calendar.html}
+
+
+\capsule{}%subsecnn
+        {News \&\\ Announcements}
+        {}
+        {\acro{TUG}'97 preliminary program}
+        {}
+        {139-140}
+        {/TUGboat/tb18-2/tug97prog.pdf}
+
+
+%THEcategory{Late-Breaking\\News}
+
+
+\capsule{}%subsec
+        {Late-Breaking\\News}
+        {Mimi~Burbank}
+        {Production notes}
+        {}
+        {130\offset{.3}}
+        {/TUGboat/tb18-2/tb55prod.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking\\News}
+        {}
+        {Future issues}
+        {}
+        {130\offset{.6}}
+        {/TUGboat/tb18-2/tb55prod.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {141-141}
+        {/instmem.html}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {TUG membership application}
+        {}
+        {142-142}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {\TeX{} consulting and production services}
+        {}
+        {143-143}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {138\offset{.5}}
+        {URL}

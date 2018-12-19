@@ -1,0 +1,471 @@
+% $Id$
+
+\issue{6}{1}{11}{March 1985}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 6:1 as one pdf (3.5mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb06-1/tb11complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {1}
+        {/TUGboat/tb06-1/tb11titlepage.pdf}
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses of Officers, Authors and Others}
+        {}
+        {2-2}
+        {}
+
+\capsule{}%subsecnn
+        {}%replace|News \& Announcements
+        {}
+        {Official Announcements}
+        {}
+        {3-3}
+        {/TUGboat/tb06-1/tb11ann.pdf}
+
+%THEcategory{General Delivery}
+
+\capsule{}
+        {General Delivery}
+        {}
+        {}
+        {}
+        {4-6}
+        {/TUGboat/tb06-1/tb11gendel.pdf}
+
+\capsule{}%subsec
+        {General Delivery}
+        {Pierre~MacKay}
+        {Message from the President}
+        {}
+        {4-4}
+        {/TUGboat/tb06-1/tb11gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Lawrence~A.~Beck}
+        {ANSI X3V1.8 Liaison Report to the {\TUG}}
+        {}
+        {4-5}
+        {/TUGboat/tb06-1/tb11gendel.pdf}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {Acknowledgement of Contributions}
+        {}
+        {5-5}
+        {/TUGboat/tb06-1/tb11gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Richard~Southall}
+        {First principles of typographic design for document production: Corrigenda}
+        {}
+        {6-6}
+        {/TUGboat/tb06-1/tb11gendel.pdf}
+
+
+%THEcategory{Low \TeX}
+
+
+\capsule{}%subsec
+        {Low \TeX}
+        {Maureen~Eppstein}
+        {Editor's introduction}
+        {}
+        {7-7}
+        {/TUGboat/tb06-1/tb11meppstein.pdf}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsecnn
+        {Fonts}
+        {}
+        {Generic font file format}
+        {}
+        {8-12}
+        {/TUGboat/tb06-1/tb11gf.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {G.K.M.~Tobin}
+        {A bit of doggerel}
+        {}
+        {12-12}
+        {/TUGboat/tb06-1/tb11tobin.pdf}
+
+
+%THEcategory{Output Devices}
+
+\capsule{}
+        {Output Devices}
+        {}
+        {}
+        {}
+        {13-16}
+        {/TUGboat/tb06-1/tb11output.pdf}
+
+
+\capsule{}%subsecnn
+        {Output Devices}
+        {}
+        {Chart: Output devices and computers}
+        {}
+        {13-15}
+        {/TUGboat/tb06-1/tb11output.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Richard~Furuta}
+        {Device drivers included on the UNIX {\TeX} distribution tape}
+        {}
+        {15-15}
+        {/TUGboat/tb06-1/tb11output.pdf}
+
+
+\capsule{}%subsecnn
+        {Output Devices}
+        {}
+        {Index to sample output from various devices}
+        {}
+        {15-15\offset{.5}}
+        {/TUGboat/tb06-1/tb11output.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {M.~L.~Luvisetto \and E.~Ugolini}
+        {A {\TeX}82 spooler for VT and dot matrix printers}
+        {}
+        {15-16}
+        {/TUGboat/tb06-1/tb11output.pdf}
+
+
+%THEcategory{Site Reports}
+
+\capsule{}
+        {Site Reports}
+        {}
+        {}
+        {}
+        {16-25}
+        {/TUGboat/tb06-1/tb11site.pdf}
+
+\capsule{}%subsecnn
+        {Site Reports}
+        {}
+        {How to get the latest news via {\TeX}hax}
+        {}
+        {16-17}
+        {/TUGboat/tb06-1/tb11site.pdf}
+
+
+%THEsite{Prime}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {John~Crawford}
+        {Prime site report}
+        {}
+        {17-17}
+        {/TUGboat/tb06-1/tb11site.pdf}
+
+
+%THEsite{UNIX}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Richard Furuta}
+        {Unix {\TeX} site report}
+        {}
+        {18-20}
+        {/TUGboat/tb06-1/tb11site.pdf}
+
+
+%THEsite{\VAX/VMS}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Barry Smith}
+        {VAX/VMS site report}
+        {}
+        {20-20}
+        {/TUGboat/tb06-1/tb11site.pdf}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {James~A.~Cumiskey}
+        {{\TeX} for tourists}
+        {}
+        {21-25}
+        {/TUGboat/tb06-1/tb11site.pdf}
+
+
+%THEcategory{``small'' \TeX}
+
+\capsule{}
+        {``small'' \TeX}
+        {}
+        {}
+        {}
+        {26-29}
+        {/TUGboat/tb06-1/tb11small.pdf}
+
+
+\capsule{}%subsec
+        {``small'' \TeX}
+        {Lance~Carnes}
+        {Table of ``small'' {\TeX} implementations}
+        {}
+        {26-26}
+        {/TUGboat/tb06-1/tb11small.pdf}
+
+
+\capsule{}%subsec
+        {``small'' \TeX}
+        {Addison-Wesley\CONNECT{}Publishing\CONNECT{}Company}
+        {{\TeX} now on microcomputers}
+        {}
+        {27-28}
+        {/TUGboat/tb06-1/tb11small.pdf}
+
+
+\capsule{}%subsec
+        {``small'' \TeX}
+        {Lance~Carnes}
+        {PC\thinspace\TeX}
+        {}
+        {28-29}
+        {/TUGboat/tb06-1/tb11small.pdf}
+
+
+%THEcategory{Macros}
+
+\capsule{}%subsec
+        {Macros}
+        {Craig~Platt}
+        {Macros for two-column format}
+        {}
+        {29-30}
+        {/TUGboat/tb06-1/tb11platt.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {David~Eppstein}
+        {Trees in {\TeX}}
+        {}
+        {31-35}
+        {/TUGboat/tb06-1/tb11deppstein.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Donald~E.~Knuth}
+        {Recipes and fractions}
+        {}
+        {36-38}
+        {/TUGboat/tb06-1/tb11knut.pdf}
+
+
+%THEcategory{News \& Announcements}
+\capsule{}
+        {News \& Announcements}
+        {}
+        {}
+        {}
+        {38-40}
+        {/TUGboat/tb06-1/tb11news.pdf}
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {{\TeX}, the program}
+        {}
+        {38-38}
+        {/TUGboat/tb06-1/tb11news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {39-39}
+        {/TUGboat/tb06-1/tb11news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Conference: {\TeX} for scientific documentation,       Como, Italy, May~16--17,~1985}
+        {}
+        {39-39\offset{.3}}
+        {/TUGboat/tb06-1/tb11news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {TUG Annual Meeting, Stanford~University, August~14--16,~1985}
+        {}
+        {39-39\offset{.6}}
+        {/TUGboat/tb06-1/tb11news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {{\TeX} and {\MF} reports available from            Stanford Computer~Science~Department}
+        {}
+        {40-40}
+        {/TUGboat/tb06-1/tb11news.pdf}
+
+
+%THEcategory{Advertisements}
+
+\capsule{}
+        {Advertisements}
+        {}
+        {}
+        {}
+        {41-46}
+        {/TUGboat/tb06-1/tb11ads.pdf}
+
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Textset, Inc.\Dash {\TeX} and the IBM PC,  \TeX-to-PostScript}
+        {}
+        {41-41}
+        {/TUGboat/tb06-1/tb11ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Addison-Wesley\Dash Micro{\TeX}}
+        {}
+        {42-42}
+        {/TUGboat/tb06-1/tb11ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {TUG\Dash {\TeX} Lectures on Tape}
+        {}
+        {43-43}
+        {/TUGboat/tb06-1/tb11ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Textset, Inc.\Dash Professional {\TeX}ware}
+        {}
+        {44-44}
+        {/TUGboat/tb06-1/tb11ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Talaris}
+        {}
+        {45}
+        {/TUGboat/tb06-1/tb11ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Personal {\TeX}, Inc.\Dash PC\thinspace{\TeX}}
+        {}
+        {46}
+        {/TUGboat/tb06-1/tb11ads.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Intergraph Corporation}
+        {}
+        {c3}
+        {URL}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {Membership application and order form}
+        {}
+        {47-48}
+        {/join.html}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {Order form for {\AMS} publications}
+        {}
+        {49-50}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {{\TeX}82 order form}
+        {}
+        {51-52}
+        {URL}
+
+
+%THEcategory{Supplements}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {The {\TeX}book: Errata and Changes}
+        {}
+        {\offset{992}}
+        {URL}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {{\TUG} Membership List, including Profile of {\TeX} installations}
+        {}
+        {\offset{992.5}}
+        {URL}

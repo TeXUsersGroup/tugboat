@@ -1,0 +1,598 @@
+% $Id$
+\let\primitiveinput=\input
+\input eplain
+\beginpackages
+  \usepackage{graphics}
+\endpackages
+\let\input=\primitiveinput
+
+\input tugboat.cmn  % tugboat.dates macros
+\input tugboat.dates
+\input tb84pages
+
+\nopagenumbers
+\hyphenpenalty = 10000
+\advance\rightskip by 0pt plus 9pt
+\hoffset = .25in
+\voffset = -.5in
+\vsize = 10in
+
+% fonts - 9pt for this lengthy issue
+\font\tenrm=cmr9  \font\tensl=cmsl9  \font\tentt=cmtt9  \font\manual=logo9
+\font\tenit=cmti9
+\baselineskip=10.6pt
+
+% adjust everything else down
+\font\sf = cmss9
+\def\pkgname#1{{\sf #1}}
+
+\font\smallsl = cmsl8  \font\smallrm = cmr8
+\def\acrofont{% if slanted font, use slanted acro font
+   \ifdim \fontdimen1\font>0pt \smallsl \else \smallrm\fi
+}
+\def\acro#1{{\acrofont #1}}
+
+% for \BibTeX
+\font\smc=cmcsc10 at 9pt
+
+% slant \BibTeX and \MF
+\font\ninesl = cmsl8
+\font\slc = cmsl8 at 6pt
+\def\slBibTeX{{\ninesl B{\slc IB}\TeX}}  % cmcscsl10 not available as type1
+
+\font\manualsl = logosl10 at 9pt
+\def\slMF{{\manualsl META}\-{\manualsl FONT}\spacefactor1000 }
+\def\slMP{{\manualsl META}\-{\manualsl POST}\spacefactor1000 }
+
+% for \LaTeX, etc.
+\font\sevensl=cmti7 at 6pt
+\scriptfont\slfam=\sevensl
+
+\def\reflect#1{%
+  \ifx\reflectbox\undefined
+    \errmessage{graphics package must be loaded}%
+  \else
+    \ifdim \fontdimen1\font>0pt
+      \raise 1.75ex \hbox{\kern.1em\rotatebox{180}{#1}}\kern-.1em
+    \else
+      \reflectbox{#1}%
+    \fi
+  \fi
+}
+\def\hideheight#1{\setbox0=\hbox{#1}\ht0=0pt \dp0=0pt \box0 }
+\def\XeTeX{\leavevmode\hideheight{\hbox{X\lower.5ex
+  \hbox{\kern-.125em\reflect{E}}\kern-.1667em \TeX}}}
+
+%\def\XeTeX{Xe\TeX}
+
+% abbreviations
+\def\\{\hfil\break}
+%\def\aand{\unskip,\space} %
+\def\aand{{\rm and\space}} % matches tub, but might be too long
+\def\cs#1{{\tt \char`\\#1}}
+\def\emph#1{{\it #1}}
+\def\smallbullet{\raise .4ex \hbox{$\scriptscriptstyle \bullet$}}
+\def\t#1{{\tt #1}}
+\def\TUB{{\sl TUGboat}}
+
+% from tugboat.front
+\def\titleslash{\raise.3ex\hbox{\sevenrm/}}
+
+\newcount\startpage
+\def\getpage#1{%
+  \input ../#1/firstpage.tex
+  \number\startpage
+}
+
+\let\offset=\gobble          % ignore manual sorting offset
+\long\def\begin#1#2\end#3{}  % ignore blurb
+\def\issue#1#2#3#4#5#6{}     % ignore issue info
+
+% formatting
+\newdimen\pagenowidth % space for just
+\setbox0=\hbox{000}
+\pagenowidth=\wd0  % aka 1.5em
+\newdimen\pagenospace  \pagenospace = 2.5em
+
+\def\category#1{\smallskip\noindent{\bf #1}\vskip .1\smallskipamount}
+
+% #1 is difficulty category -- follows \capsule on first line
+% #2 is TB category -- arg 2 is alone on its line, possibly with replace or add comment
+% #3 is author -- args 3-7 are alone on their lines
+% #4 is title
+% #5 is for statement
+% #6 is page number
+% #7 is URL of paper PDF
+% #8 is subtitles -- arg 8 can be alone on its line or multiple lines long
+% #9 is for notes added at html time -- arg 9 can be alone on its line or multiple lines long
+
+% args 2 to 7 must be alo
+\def\capsule#1#2#3#4#5#6#7#8#9{%
+    \vskip .5pt plus1pt
+    \noindent
+    \hangindent = \pagenospace
+      \advance\hangindent by 3em
+    \hbox to \pagenospace{%
+      \hbox to \pagenowidth{\hfil #6}%
+      \hfil}%
+     %
+     \def\author{#3}%
+     \def\title{#4}%
+     {\sl \author}%
+     %
+     % / only if both parts are present.
+     \ifx\author\empty\else \ifx\title\empty\else\ \titleslash\ \fi\fi
+     %
+     {\rm \title}%
+     %
+     \def\blurb{#5}%
+     \ifx\blurb\empty\else \hfil\break\hglue-2em\smallbullet\ \blurb\fi
+     \par
+}
+
+
+% typeset the actual title text.
+\font\titlebf = cmbx10 scaled \magstephalf
+\leftline{{\titlebf TUG}BOAT \kern1.5pc \volx\
+% \kern1.5pc
+% TUG 2005 Conference Proceedings
+}
+\bigskip
+\leftline{{\titlebf Table of Contents}\kern1pc (ordered by difficulty)}
+\medskip
+
+\rm  % print above in 10pt, below in 9pt
+
+% begin-items
+% 
+
+\begin{blurb}
+<p>If you're not already a member, we hope you'll consider <a
+href="/join.html">joining TUG</a> or <a href="/usergroups.html">another
+TeX user group</a>, to support these publications, conferences, and
+other TeX projects.
+
+<p>
+\end{blurb}
+
+\issue{26}{3}{84}{2005}{}{}
+
+\capsule{}
+        {}
+        {}
+        {Complete issue 26:3 as one pdf (4.3mb)}
+        {}
+        {\offset{.1}}
+        {/TUGboat/tb26-3/tb84complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2\offset{.2}}
+        {/TUGboat/tb26-3/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Contents ordered by difficulty}
+        {}
+        {c3\offset{.3}}
+        {/TUGboat/tb26-3/cover3.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {105}
+        {/TUGboat/tb26-3/titlepage.pdf}
+
+\category{Introductory}
+
+\capsule{Introductory}
+  {General Delivery}%add|Obituaries
+  {Barbara Beeton}
+  {Editorial comments}
+  {typography and {\sl TUGboat} news}
+  {180}
+  {/TUGboat/tb26-3/tb84beet.pdf}
+  {Mimi Burbank retires\\
+Brian $\{$Hamilton Kelly$\}$, 1945--2005\\
+Erratum for \TUB\ 25:2\\
+E-mail addresses in \TUB\ on line\\
+The \TUB\ schedule\\
+Lucida Bright fonts now available from \acro{TUG}\\
+Knuth on \acro{NPR}\\
+Letters in stone}
+  {}
+
+\capsule{Introductory}
+  {General Delivery}
+  {Karl Berry}
+  {From the President}
+  {\acro{TUG} activities and information for 2005}
+  {179}
+  {/TUGboat/tb26-3/tb84pres.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Typography}
+  {Peter Flynn}
+  {Typographers' Inn}
+  {superscripted ordinals, e-books et al., report layouts}
+  {196}
+  {/TUGboat/tb26-3/tb84inn.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {\LaTeX}
+  {Enrico Gregorio}
+  {Horrors in \LaTeX: How to misuse \LaTeX\ and make a \emph{copy editor} unhappy}
+  {examples of some egregious \LaTeX\ errors, and corrections}
+  {273}
+  {/TUGboat/tb26-3/tb84gregorio.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Tutorials}%add|LaTeX
+  {Jim Hef{}feron}
+  {Minutes in less than hours: Using \LaTeX{} resources}
+  {using existing packages as building blocks for a new class}
+  {188}
+  {/TUGboat/tb26-3/tb84heff.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Tutorials}%add|ConTeXt
+  {Steve Peter}
+  {\cs{starttext}: Swelled rules and MetaPost}
+  {introduction to using MetaPost in \ConTeXt}
+  {193}
+  {/TUGboat/tb26-3/tb84peter.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {General Delivery}
+  {Gianluca Pignalberi}%person|Donald Knuth and Gianluca Pignalberi
+  {Interview with Donald E.~Knuth}
+  {reprinted from the {\sl Free Software Magazine}}
+  {183}
+  {/TUGboat/tb26-3/tb84knut.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Software \& Tools}
+  {Norbert Preining}
+  {\TeX\ Live for Debian}
+  {The \TeX\ Live software distribution is now available as Debian packages}
+  {241}
+  {/TUGboat/tb26-3/tb84preining.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Software \& Tools}
+  {Herbert Schulz}
+  {The Mac\TeX\ distribution}
+  {Overview of a new easy-to-install distribution for \MacOSX, based on gw\TeX}
+  {239}
+  {/TUGboat/tb26-3/tb84schulz.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {General Delivery}
+  {Andrzej Tomaszewski}
+  {Implementing editors' ideas\Dash lots of fun, sometimes even more trouble}
+  {communication problems in the world of printing; reprinted from Bacho\TeX\ 2005}
+  {186}
+  {/TUGboat/tb26-3/tb84tomaszewski.pdf}
+  {}
+  {}
+
+
+% 
+\category{Intermediate}
+
+\capsule{Intermediate}
+  {Graphics}
+  {Michael Barr}
+  {\pkgname{Diagxy}, a Lego-like diagram package}
+  {a generic package for building diagrams from combining blocks}
+  {246}
+  {/TUGboat/tb26-3/tb84barr.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Graphics}
+  {Troy Henderson}
+  {Embedding fonts in MetaPost output}
+  {making standalone eps files from MetaPost}
+  {250}
+  {/TUGboat/tb26-3/tb84henderson.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Macros}
+  {Karl Berry \aand Oleg Katsitadze}
+  {Eplain 3: Expanded plain \TeX}
+  {hyperlinks, graphics, color, and other user-level features for plain \TeX}
+  {280}
+  {/TUGboat/tb26-3/tb84katsi.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Hints \& Tricks}
+  {Mark LaPlante}
+  {The treasure chest}
+  {new and updated \CTAN\ packages in 2005}
+  {264}
+  {/TUGboat/tb26-3/tb84chest.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Fonts}
+  {Will Robertson}
+  {Advanced font features with \XeTeX\Dash the \pkgname{fontspec} package}
+  {accessing built-in \MacOSX\ fonts from \LaTeX}
+  {215}
+  {/TUGboat/tb26-3/tb84robertson.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Fonts}
+  {Ioannis Vamvakas \aand Panagiotis Kotopoulis}
+  {ByZ\LaTeX: A package for typesetting ``Byzantine'' music}
+  {\MF\ fonts, a \LaTeX\ package, and a historical introduction}
+  {224}
+  {/TUGboat/tb26-3/tb84vamvakas.pdf}
+  {}
+  {}
+
+
+\capsule{Intermediate}
+  {Software \& Tools}
+  {Gerben Wierda}
+  {i-Installer: The evolution of a \TeX\ install on \MacOSX}
+  {past, present, and future of i-Installer and the associated gw\TeX\ (re)distribution}
+  {233}
+  {/TUGboat/tb26-3/tb84wierda.pdf}
+  {}
+  {}
+
+
+\capsule{Intermediate}
+  {Philology}%add|Survey
+  {Peter Wilson}
+  {The alphabet tree}
+  {survey of writing systems from Sumeria to the present, profusely illustrated}
+  {199}
+  {/TUGboat/tb26-3/tb84wilson.pdf}
+  {}
+  {}
+
+
+% 
+\category{Intermediate Plus}
+
+\capsule{Intermediate Plus}
+  {\LaTeX}
+  {Hendri Adriaens \aand Chris Ellison}
+  {\pkgname{powerdot}\Dash making presentations with \LaTeX}
+  {introduction to and implementation of a new class for making slides}
+  {268}
+  {/TUGboat/tb26-3/tb84adriaens.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {Hints \& Tricks}
+  {Peter Wilson}
+  {Glisterings}
+  {empty arguments; clear to even page; capitalizing first characters}
+  {253}
+  {/TUGboat/tb26-3/tb84glister.pdf}
+  {}
+  {}
+
+
+% 
+\category{Advanced}
+
+\capsule{Advanced}
+  {Software \& Tools}%add|Hyphenation
+  {Hans Hagen}
+  {Hyphenation patterns in \ConTeXt}
+  {languages and hyphenation files, especially in \ConTeXt}
+  {243}
+  {/TUGboat/tb26-3/tb84hagen.pdf}
+  {}
+  {}
+
+\capsule{Advanced}
+  {Hints \& Tricks}
+  {}
+  {Pearls of \TeX\ programming}
+  {an array of short macros (some easy) with useful applications}
+  {256}
+  {/TUGboat/tb26-3/tb84pearls.pdf}
+  {Barbara Beeton: New symbols from old\\
+Karl Berry: Forcing page or column break in the midst of a paragraph\\
+David Carlisle: Guess what\\
+Taco Hoekwater: Die Hard\\
+Bogus\l{}aw Jackowski: Extra B\'eziers\\
+Bogus\l{}aw Jackowski: Locally change parameter values\\
+David Kastrup: Comparing two strings known to consist only of characters\\
+David Kastrup: Iterating with roman numerals\\
+David Kastrup: Sorting words by length\\
+Krzysztof Leszczy\'nski: \cs{csequence} stack\\
+Frank Mittelbach: \cs{looseness} not so loose\\
+Petr Ol\v{s}\'ak: \cs{expandafter}\cs{endcsname} trick\\
+Petr Ol\v{s}\'ak: Testing whether two characters form a ligature\\
+Martin Schr\"oder: Colour separation in pdf\TeX\\
+Bernd Raichle: Plain \TeX's accent macros revisited\\
+Philip Taylor: The Iterator.}
+  {}
+
+
+
+\category{Contents of other \TeX\ journals}
+
+\capsule{}
+  {Abstracts}
+  {}
+  {{\sl \TeX{}emplares\/}: Contents of issue 7 (2005)}
+  {}
+  {287}
+  {/TUGboat/tb26-3/tb84texemp.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Abstracts}
+  {}
+  {{\sl Zpravodaj\/}: Contents of issues 14(3-4), 15(1), 15(2) (2004--05)}
+  {}
+  {287\offset{.1}}
+  {/TUGboat/tb26-3/tb84zprav.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Abstracts}
+  {}
+  {{\sl Les Cahiers GUTenberg\/}: Contents of double issue 44--45 (November 2004)}
+  {}
+  {289}
+  {/TUGboat/tb26-3/tb84cahi.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Abstracts}
+  {}
+  {{\sl MAPS\/}: Contents of issue 32 (2005)}
+  {}
+  {290}
+  {/TUGboat/tb26-3/tb84maps.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Abstracts}
+  {}
+  {{\sl The Prac\TeX\ Journal\/}: Contents of issues 2005-1--2005-4}
+  {}
+  {292}
+  {/TUGboat/tb26-3/tb84pracjourn.pdf}
+  {}
+  {}
+
+
+% 
+\category{Reports and notices}
+
+\capsule{Reports and notices}
+  {TUG Business}
+  {Karl Berry \aand Kaja Christiansen}
+  {\TeX\ development fund 2005 report}
+  {}
+  {300\offset{-1.5}}
+  {/TUGboat/tb26-3/tb84devfund.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {TUG Business}
+  {Robin Laakso}
+  {Financial statements for 2005}
+  {}
+  {298}
+  {/TUGboat/tb26-3/tb84treas.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {News}
+  {}
+  {Calendar}
+  {}
+  {297}
+  {/TUGboat/tb26-3/tb84calendar.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {TUG Business}
+  {}
+  {Institutional members}
+  {}
+  {302\offset{-3.4}}
+  {/TUGboat/tb26-3/instmem-list.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Advertisements}
+  {}
+  {\TeX\ consulting and production services}
+  {}
+  {300}
+  {/TUGboat/tb26-3/consultants.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {TUG Business}
+  {}
+  {\acro{TUG} membership form}
+  {}
+  {301\offset{-2.3}}
+  {/join.html}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {News}
+  {}
+  {Euro\TeX\ 2006 announcement}
+  {}
+  {303\offset{-5.8}}
+  {/TUGboat/tb26-3/eurotex06.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {News}
+  {}
+  {Practical \TeX\ 2006 announcement}
+  {}
+  {302\offset{-4.9}}
+  {/TUGboat/tb26-3/practex06.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {News}
+  {}
+  {\acro{TUG} 2006 announcement}
+  {}
+  {304\offset{-6.7}}
+  {/TUGboat/tb26-3/tug06.pdf}
+  {}
+  {}
+
+\bye

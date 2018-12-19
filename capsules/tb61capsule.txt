@@ -1,0 +1,300 @@
+% $Id$
+
+\issue{19}{4}{61}{December 1998}{}{}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 19:4 as one pdf (2.5mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb19-4/tb61complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Cover}
+        {}
+        {c1}
+        {/TUGboat/tb19-4/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb19-4/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {345}
+        {/TUGboat/tb19-4/titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {346}
+        {/TUGboat/tb19-4/tb61edit.pdf}
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {347-348}
+        {URL}
+
+
+\capsule{}%subsec
+        {}%replace|Hints \& Tricks
+        {David~Carlisle}
+        {{A seasonal puzzle: XII}}
+        {}
+        {348-348}
+        {/TUGboat/tb19-4/tb61carl.pdf}
+        {}
+        {<a href="https://ctan.org/pkg/xii">xii on CTAN</a>}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Mimi~Jett}
+        {{From} the {President}}
+        {}
+        {349-350}
+        {/TUGboat/tb19-4/tb61jett.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {351-352}
+        {/TUGboat/tb19-4/tb61beet.pdf}
+        {\acro{TUG} election\\
+{\TeX\,'98}\\
+{The end of an era\Dash Phyllis Winkler retires}\\
+{Sans~Serif}\\
+{Sauter font distribution has a new maintainer}\\
+{Goodies on \acro{CTAN}}}
+        {}
+
+
+%THEcategory{Typography}
+
+
+\capsule{}%subsec
+        {Typography}
+        {Peter~Flynn}
+        {Typographers' inn}
+        {}
+        {353-355}
+        {/TUGboat/tb19-4/tb61flynn.pdf}
+
+\capsule{}%subsec
+        {Typography}
+        {Miroslava~Mis\'akov\'a}
+        {Typesetting with varying letter widths:  {New hope for your narrow columns}}
+        {}
+        {355-365}
+        {/TUGboat/tb19-4/tb61misa.pdf}
+
+%THEcategory{Software \& Tools}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Barbara~Beeton}
+        {Editorial: Enc\TeX{}, by Petr~Ol\v{s}\'ak}
+        {}
+        {366-366}
+        {/TUGboat/tb19-4/tb61olsa-pre.pdf}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Petr~Ol\v{s}\'ak}
+        {{Enc\TeX{}\Dash A little extension of \TeX{}}}
+        {}
+        {366-371\offset{.5}}
+        {/TUGboat/tb19-4/tb61olsa.pdf}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Laurence~Finston}
+        {{Conc{\TeX}: Generating a concordance from~{\TeX} input files}}
+        {}
+        {372-403}
+        {/TUGboat/tb19-4/tb61fins.pdf}
+
+
+%THEcategory{Language Support}
+
+
+\capsule{}%subsec
+        {Language Support}
+        {A.~Berdnikov, O.~Lapko, M.~Kolodin, A.~Janishevsky,  and~A.~Burykin}
+        {{Cyrillic encodings for \LaTeXe{} multi-language documents}}
+        {}
+        {403-416}
+        {/TUGboat/tb19-4/tb61berd.pdf}
+
+
+\capsule{}%subsec
+        {Language Support}
+        {Anshuman~Pandey}
+        {{Romanized Indic and \LaTeX{}}}
+        {}
+        {417-418}
+        {/TUGboat/tb19-4/tb61pand.pdf}
+
+
+\capsule{}%subsec
+        {Language Support}
+        {Claudio~Beccari and Apostolos~Syropoulos}
+        {{New Greek fonts and the {\tt greek} option of the {\sf babel} package}}
+        {}
+        {419-425}
+        {/TUGboat/tb19-4/tb61becc.pdf}
+
+
+%THEcategory{Hints \& Tricks}
+
+
+\capsule{}%subsec
+        {Hints \& Tricks}
+        {Jeremy~Gibbons}
+        {"Hey\Dash it works!"}
+        {}
+        {426-427}
+        {/TUGboat/tb19-4/tb61gibb.pdf}
+        {Controlling abbreviations in BibTeX ({Jeroen~H.~B.~Nijhof})\\
+{A small minus sign} ({Jeremy Gibbons})\\
+{Ornamental rules} ({Christina Thiele})}
+        {}
+
+
+\capsule{}%subsec
+        {Hints \& Tricks}
+        {Christina~Thiele}
+        {{The Treasure Chest: A package tour from  \acro{CTAN}\Dash {\tt soul.sty}}}
+        {}
+        {428-430}
+        {/TUGboat/tb19-4/tb61soul.pdf}
+
+
+%THEcategory{Abstracts}
+
+
+\capsule{}%subsecnn
+        {Abstracts}
+        {}
+        {{\sl Les Cahiers GUTenberg}, Contents of issue~30}
+        {}
+        {431-431}
+        {/TUGboat/tb19-4/tb61cahi.pdf}
+
+
+%THEcategory{News \& \\ Announcements}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {Calendar}
+        {}
+        {433-433}
+        {/calendar.html}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {\acro{TUG}'99 {Announcement}}
+        {}
+        {434-436}
+        {/tug99/tug99.html}
+
+
+%THEcategory{Late-Breaking\\News}
+
+
+\capsule{}%subsec
+        {Late-Breaking\\News}
+        {Mimi~Burbank}
+        {Production notes}
+        {}
+        {432-432}
+        {/TUGboat/tb19-4/tb61prod.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking\\News}
+        {}
+        {Future issues}
+        {}
+        {432-432\offset{.5}}
+        {/TUGboat/tb19-4/tb61prod.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {437-437}
+        {/instmem.html}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {TUG membership application}
+        {}
+        {438-438}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {439-439}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Y\&Y Inc.}}
+        {}
+        {440-440}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Blue Sky Research}}
+        {}
+        {c3}
+        {URL}

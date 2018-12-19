@@ -1,0 +1,309 @@
+% $Id$
+
+\issue{23}{1}{73}{March 2002}{/tug2002/}{TUG 2002 Proceedings (Trivandrum)}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 23:1 as one pdf (4.5mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb23-1/tb73complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Cover}
+        {}
+        {c1}
+        {/TUGboat/tb23-1/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb23-1/cover2.pdf}
+
+\capsule{}%subsec
+        {}%replace|Conference Notes
+        {Kaja~Christiansen}
+        {{Editorial Comments}}
+        {}
+        {2-2}
+        {/TUGboat/tb23-1/kaja.pdf}
+
+
+\capsule{}%subsecnn
+        {}%replace|Conference Notes
+        {}
+        {{TUG 2002, Thiruvananthapuram\Dash Report and travelogue}}
+        {}
+        {3-7}
+        {/TUGboat/tb23-1/keralaW.pdf}
+
+
+\capsule{}%subsecnn
+        {}%replace|Conference Notes
+        {}
+        {{TUG 2002 Program}}
+        {}
+        {8-9}
+        {/TUGboat/tb23-1/programme.pdf}
+
+
+\capsule{}%subsecnn
+        {}%replace|Conference Notes
+        {}
+        {{Participants at the 23rd Annual TUG Meeting}}
+        {}
+        {10-12}
+        {/TUGboat/tb23-1/participants.pdf}
+
+
+%THEcategory{Talks}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Software \& Tools
+        {K.~Anil~Kumar}
+        {{\TeX\ and databases\Dash\TeX{}DBI}}
+        {}
+        {13-16}
+        {/TUGboat/tb23-1/anilkumar.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Dreamboat
+        {Satish~Babu}
+        {{New horizons of free software: An Indian        perspective}}
+        {}
+        {17-20}
+        {/TUGboat/tb23-1/babu.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Multilingual Document Processing
+        {Gy\"ongyi~Bujdos\'o \and Ferenc~Wettl}
+        {{On the localization  of \TeX\ in Hungary}}
+        {}
+        {21-26}
+        {/TUGboat/tb23-1/bujdosowettl.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Fonts
+        {W\l{}odzimierz~Bzyl}
+        {{The Tao of fonts}}
+        {}
+        {27-40}
+        {/TUGboat/tb23-1/bzyl.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Multilingual Document Processing
+        {Behdad~Esfahbod \and Roozbeh~Pournader}
+        {{Farsi\TeX\ and the Iranian \TeX~community}}
+        {}
+        {41-45}
+        {/TUGboat/tb23-1/farsitex.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Multilingual Document Processing
+        {Hong~Feng}
+        {{The marriage of \TeX{} and Lojban}}
+        {}
+        {46-48}
+        {/TUGboat/tb23-1/feng.pdf}
+
+
+%THEcategory{Keynote}
+
+
+\capsule{}%subsec
+        {Keynote}%add|\ConTeXt
+        {Hans~Hagen}
+        {{\ConTeXt, \acro{XML} and \TeX: State of the art?}}
+        {}
+        {49-49}
+        {/TUGboat/tb23-1/hagen.pdf}
+
+
+%THEcategory{Talks}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Multilingual Document Processing
+        {Yannis~Haralambous \and John~Plaice}
+        {{Low-level Devan\=agar\=\i{} support for Omega\Dash Adapting {\tt devnag}}}
+        {}
+        {50-56}
+        {/TUGboat/tb23-1/haralambous.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|\LaTeX
+        {David Kastrup}
+        {{Revisiting \acro{WYSIWYG} paradigms for        authoring \LaTeX}}
+        {}
+        {57-64}
+        {/TUGboat/tb23-1/kastrup.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Electronic Documents
+        {Ross Moore}
+        {{serendi\acro{PDF} with searchable math-fields in \acro{PDF} documents}}
+        {}
+        {65-69}
+        {/TUGboat/tb23-1/moore.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Fonts
+        {Karel~P\'\i\v{s}ka}
+        {{A conversion of public Indic fonts from   {\MF} into Type~1~format with \TeXtrace}}
+        {}
+        {70-73}
+        {/TUGboat/tb23-1/piska.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Software \& Tools
+        {Fabrice~Popineau}
+        {{\TeX{}Live under Windows: What's new with  the 7th edition?}}
+        {}
+        {74-79}
+        {/TUGboat/tb23-1/popineau.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Multilingual Document Processing
+        {Roozbeh~Pournader}
+        {{Catching up to Unicode}}
+        {}
+        {80-85}
+        {/TUGboat/tb23-1/roozbeh.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Electronic Documents
+        {Sebastian~Rahtz}
+        {{Passive\TeX{}: An update}}
+        {}
+        {86-89}
+        {/TUGboat/tb23-1/rahtz.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Multilingual Document Processing
+        {S.~Rajkumar}
+        {{Indic typesetting\Dash Challenges and        opportunities}}
+        {}
+        {90-92}
+        {/TUGboat/tb23-1/rajkumar.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Graphics
+        {Denis~Roegel}
+        {METAOBJ: Very high-level objects in  \MP}
+        {}
+        {93-100}
+        {/TUGboat/tb23-1/roegel.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Multilingual Document Processing
+        {Wagish~Shukla \and Amitabh~Trehan}
+        {{Typesetting in Hindi, Sanskrit and Persian: A beginner's perspective}}
+        {}
+        {101-105}
+        {/TUGboat/tb23-1/trehan.pdf}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Software \& Tools
+        {Karel~Skoup\'y}
+        {{New typesetting language and system  architecture}}
+        {}
+        {106-106}
+        {/TUGboat/tb23-1/skoupyI.pdf}
+        {(<a href="/TUGboat/tb23-1/skoupyII-slides.pdf">slides</a>)}
+        {}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Software \& Tools
+        {Karel~Skoup\'y}
+        {{\TeX\ file server}}
+        {}
+        {107-107}
+        {/TUGboat/tb23-1/skoupyII.pdf}
+        {(<a href="/TUGboat/tb23-1/skoupyI-slides.pdf">slides</a>)}
+        {}
+
+
+\capsule{}%subsec
+        {Talks}%replace|Electronic Documents
+        {Stephen~M.~Watt}
+        {{Conserving implicit mathematical semantics in        conversion~between {\TeX} and MathML}}
+        {}
+        {108-108}
+        {/TUGboat/tb23-1/watt.pdf}
+
+
+%THEcategory{News \& \\ Announcements}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {Calendar}
+        {}
+        {109-110}
+        {URL}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {110-110}
+        {/TUGboat/tb23-1/inst.pdf}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {111-111}
+        {URL}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Just Published: {\TeX} Reference Manual by David                  Bausum}}
+        {}
+        {112-112}
+        {/TUGboat/tb23-1/kluwer.pdf}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Blue Sky Research}}
+        {}
+        {c3}
+        {/TUGboat/tb23-1/cover3.pdf}

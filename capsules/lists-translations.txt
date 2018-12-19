@@ -1,0 +1,233 @@
+# $Id$
+# TUGboat capsule string (not regexp) translations. Public domain.
+#
+# if the last character on a line is \ the next line is a continuation
+#     line and the leading spaces on the continuation line are ignored;
+#     if the last two characters on a line are \\, the next line is NOT
+#     a continuation line, and the \\ sequence is deleted -- this is to
+#     make sure trailing spaces remain (which my editor tends to delete);
+#     can't end with a trailing backslash (\) -- these have to go
+#     in the $str =~ s/ section
+
+# the argument delimiter is || (two chars)
+
+#the first-argument to second-argument translation is for TeX to HTML
+#     for the TOC; the second-argument to third-argument translation is
+#     for sorting the lists
+
+#the first-argument to second-argument table is completely independent
+#     of the second-argument to third-argument table; if there is no
+#     third argument, no entry is made in the latter table; there only
+#     needs to be (should be) one instance of a second-argument to third-
+#     argument pair even though there may be multiple first arguments
+#     mapping into a particular second argument
+
+#the first-argument to second-argument replacement is done so the same
+#     replacement rule can be used again from the same position; the
+#     second-argument to third-argument replacement is done from the
+#     next position after the beginning of the replacement string because
+#     this translation often replaces something with the same thing
+
+#names
+
+Benedict~L\o fstedt||Benedict L&oslash;fstedt||Benedict Lofstedt
+
+$\{$Hamilton Kelly$\}$||{Hamilton Kelly}
+
+\Thanh{}||H&agrave;n Th&#x1ebf; Th&agrave;nh||Han The Thanh
+\Thanh||H&agrave;n Th&#x1ebf; Th&agrave;nh||Han The Thanh
+
+Istv\'an Bencze \cand Bal\'azs Fark \cand L\'aszl\'o Hatala \aand P\'eter Jeszenszky\
+    ||Istv&aacute;n Bencze, Bal&aacute;zs Fark, L&aacute;szl&oacute; Hatala, and P&eacute;ter Jeszenszky
+
+\LaTeX\ Project Team||LaTeX&nbsp;Project&nbsp;Team||LaTeX Project Team
+
+R\r{u}\v{z}i\v{c}ka||R&#367;&#382;i&#269;ka||Ruzicka
+
+# this first is for \TeX{}\kern...works
+\TeX{}\kern-.07em ||TeX
+\TeX ||TeX
+\TeXLive||TeX Live
+\TUB{}\CONNECT{}Team||TUGboat Team
+
+\"a||&auml;||a
+\"O||&#214;||O
+\"o||&ouml;||o
+\"u||&uuml;||u
+#
+\'a||&aacute;||a
+\'c||&#x0107;||c
+\'e||&eacute;||e
+\'\i ||&iacute;||i
+\'{\i}||&iacute;||i
+\'\i||&iacute;||i
+\'n||&#x0144;||n
+\'{n}||&#x0144;||n
+\'O||&Oacute;||O
+\'o||&oacute;||o
+\'s||&sacute;||s
+\'y||&yacute;||y
+#
+\^o||&ocirc;||o
+#
+\=a||&#x0101;||a
+\=\i||&#x012b;||i
+\={u}||&#x016b;||u
+#
+\`a||&agrave;||a
+\`e||&egrave;||e
+\`\i ||&igrave;||i
+\`{\i}||&igrave;||i
+#
+\.e||&#x0117;||e
+\.Z||&#x017b;||Z
+\.z||&#x017c;||z
+#
+\c c||&#xe7;||c
+\c{c}||&#xe7;||c
+\c{S}||S&#x327;||S
+# \c{S} is for Schaefer's "SaferTeX in tb79 and tb85; combining cedilla.
+#
+\d{d}||&#x1e0d;||d
+#
+\H o||&#246;||o
+#
+\o{}||&oslash;||oe
+#
+\v{c}||&#x010d;||c
+\v{e}||&#x011b;||e
+\v{r}||&#x0159;||r
+\v{S}||&#x0160;||S
+\v{s}||&#x0161;||s
+\v{Z}||&#x017d;||Z
+#
+\L{}||&#321;||L
+\l{}||&#322;||l
+{\l}||&#322;||l
+#
+\textcircumacute{e}||&#x1ebf;||e
+
+# titles
+
+Looking ahead for a \<box>||Looking ahead for a &#60;box&#62;||Looking ahead for a box
+
+$\hookrightarrow$||&rarr;||
+$\Omega$||&Omega;||O
+$\Omega_2$||&Omega;2||O2
+''||&rdquo;
+\#||#
+\%||%
+\AE||&AElig;||AE
+\AMS||AMS
+\API||API
+\AcroFLeX||AcroFLeX
+\AllTeX||(La)TeX
+\AmSTeX||AmSTeX
+\aand||and
+\ae||&aelig;||ae
+\and||and
+\BibTeX||BibTeX
+\cand||, \\
+\CandT\/||<i>Computers and Typesetting</i>
+\/||
+\CONNECT{}||&nbsp;|| \\
+\CONTEXT||CONTEXT
+\ConTeXt||ConTeXt
+\CS{}plain||CSplain
+\CSS||CSS
+\CTAN||CTAN
+\curve||CurVe
+\DVD||DVD
+\DVI||DVI
+\eTeX||&epsilon;-TeX||eTeX
+\exTeX||exTeX
+\ExTeX||exTeX
+\FAQ||FAQ
+\GNU||GNU
+\GUI||GUI
+\HTML||HTML
+\JoT||<i>The Joy of TeX</i>
+\kern.05em||
+\kern1pt||
+\LaTeXe||LaTeX2e
+({\La}){\TeX}||(La)TeX
+{\LaTeX}||LaTeX
+\LaTeX\||LaTeX
+\LaTeX ||LaTeX
+\LaTeX||LaTeX
+\LyX||LyX
+\MacOSX||MacOSX
+\Mc||Mc
+\MF\||Metafont
+\MF||Metafont
+\MkIV||MkIV
+\MP||MetaPost
+\mtex||T&ecirc;X||TeX
+\NexTeX||NexTeX
+\OMEGA||Omega
+\PDF||PDF
+\PiC tures||PiCtures
+\PS||PS
+\SGML||SGML
+\rm||
+\ss{}||&szlig;||ss
+# following two should be removed with new incarnation and lists-regexps.
+\ssf ||
+\ss||&szlig;||ss
+\slash ||/
+\slBibTeX\||BibTeX
+\slBibTeX||BibTeX
+\slMF\||Metafont
+\slMF||Metafont
+\slMP||MetaPost
+{\TeX}||TeX
+\TeX{}||TeX
+\TeX\,||TeX
+\TeX\ ||TeX \\
+\TeX\||TeX
+\TeX||TeX
+\TikZ||TikZ
+\TUB||<i>TUGboat</i>||TUGboat
+\tubissue||<i>TUGboat </i>||TUGboat \\
+\tug||TUG
+\TUG\||TUG
+\TUG{}||TUG
+\UTF||UTF
+\WEB||WEB
+\XeLaTeX||XeLaTeX
+(\Xe)LaTeX||(Xe)LaTeX
+\XeTeX||XeTeX
+\XML||XML
+\XSLT||XSLT
+\XyMTeX||XyMTeX
+\&||&amp;
+\_||_
+``||&ldquo;
+{\SMC C}||C
+{\SMC SGML}||SGML
+{\TeX}||TeX
+{\TUG}||TUG
+{\VAX}||VAX
+\VAX||VAX
+\VnTeX||VnTeX
+---||&mdash;||\\
+--||&ndash;||\\
+\Dash ||&mdash;||\\
+\Dash||&mdash;||\\
+{\dots}||&hellip;||\\
+\dots||&hellip;\\
+\\ || \\
+\ || \\
+\newline || \\
+
+\,||
+\rlap||
+\thinspace||
+\break|| \\
+\hfil|| \\
+{}||
+\\|| \\
+  || \\
+# nice to move ~ to beginning and fix so other replacements use space.
+# perhaps should be nbsp, but mostly that seems excessive.
+~|| \\

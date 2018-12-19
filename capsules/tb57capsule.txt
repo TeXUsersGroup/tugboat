@@ -1,0 +1,357 @@
+% $Id$
+
+\issue{18}{4}{57}{December 1997}{}{}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 18:4 as one pdf (2.1mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb18-4/tb57complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1}
+        {/TUGboat/tb18-4/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb18-4/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {345}
+        {/TUGboat/tb18-4/titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {346}
+        {/TUGboat/tb18-4/tb57edit.pdf}
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {235-236}
+        {URL}
+
+
+%THEcategory{Queries}
+
+
+\capsule{}%subsec
+        {Queries}
+        {Daniel~Taupin}
+        {{MusiX\TeX}: {How} many fonts are  acceptable{?}}
+        {}
+        {236-236}
+        {/TUGboat/tb18-4/tb57query.pdf}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Mimi~Jett}
+        {From the {President}}
+        {}
+        {237-237}
+        {/TUGboat/Pres/tb57pres.html}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {238-238}
+        {/TUGboat/tb18-4/tb57beet.pdf}
+        {New {\TeX} groups: {\acro{TUG}India} and {\acro{TUG}-Philippines}\\
+\acro{TUG} {\CTAN} host and {Web} site\\
+\acro{SGML} extensions\Dash update}
+        {}
+
+
+%THEcategory{Dreamboat}
+
+
+\capsule{}%subsec
+        {Dreamboat}
+        {Phil~Taylor}
+        {eTeX {V2:} a peek into the future}
+        {}
+        {239-242}
+        {/TUGboat/tb18-4/tb57tayl.pdf}
+
+
+%THEcategory{Typography}
+
+
+\capsule{}%subsec
+        {Typography}
+        {Peter~Flynn}
+        {{Typographers Inn}}
+        {}
+        {242-245}
+        {/TUGboat/tb18-4/tb57flyn.pdf}
+
+
+%THEcategory{Book Reviews}
+
+
+\capsule{}%subsec
+        {Book Reviews}
+        {David~F.~Rogers}
+        {{\it The {\LaTeX} Graphics Companion},  by {Michel~Goossens}, {Sebastian~Rahtz} and        {Frank~Mittelbach}}
+        {}
+        {246\offset{0}}
+        {/TUGboat/tb18-4/tb57revl.pdf}
+
+
+%THEcategory{Hints \& Tricks}
+
+
+\capsule{}%subsec
+        {Hints \& Tricks}
+        {Jeremy~Gibbons}
+        {"Hey\Dash it works!"}
+        {}
+        {246-248\offset{.1}}
+        {/TUGboat/tb18-4/tb57work.pdf}
+        {Removing a counter from a~reset list ({Donald~Arseneau})\\
+{Default} rule thickness ({Ram\'on Casares})\\
+{Small} verbatim material ({Jeremy Gibbons})}
+        {}
+
+
+%THEcategory{Software \& Tools}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {\Thanh{} and Sebastian~Rahtz}
+        {The pdf{\TeX} user manual}
+        {}
+        {249-254}
+        {/TUGboat/tb18-4/tb57than.pdf}
+
+
+\capsule{}%subsec
+        {Software \& Tools}%add|Indexing
+        {Laurence~Finston}
+        {{Spindex}\Dash {Indexing} with special characters}
+        {}
+        {255-273}
+        {/TUGboat/tb18-4/tb57fins.pdf}
+
+
+%THEcategory{Graphics~Applications}
+
+
+\capsule{}%subsec
+        {Graphics Applications}
+        {Denis~Roegel}
+        {{Creating} {3D} animations with {\MP}}
+        {}
+        {274-283}
+        {/TUGboat/tb18-4/tb57roeg.pdf}
+
+
+%THEcategory{Font Forum}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Berthold~K.P.~Horn}
+        {{``Hinting''} of scalable outline fonts}
+        {}
+        {284-286}
+        {/TUGboat/tb18-4/tb57horn.pdf}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Peter~Willadt}
+        {Another approach to barcodes}
+        {}
+        {286-290}
+        {/TUGboat/tb18-4/tb57will.pdf}
+
+
+%THEcategory{Abstracts}
+
+
+\capsule{}%subsecnn
+        {Abstracts}
+        {}
+        {{\sl Die {\TeX}nische {Kom\"odie}} {\bf6}, 1994}
+        {}
+        {290-295}
+        {/TUGboat/tb18-4/tb57komo.pdf}
+
+
+\capsule{}%subsecnn
+        {Abstracts}
+        {}
+        {{\sl Les Cahiers GUTenberg}, {Contents} of {Issues} 26 and 27}
+        {}
+        {295-297}
+        {/TUGboat/tb18-4/tb57cahi.pdf}
+
+
+%THEcategory{{\LaTeX}}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {Pedro~J.~Aphalo}
+        {{A} proposal for citation commands in  {\LaTeX 3}}
+        {}
+        {297-302}
+        {/TUGboat/tb18-4/tb57apha.pdf}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {David~Carlisle, Chris~Rowley and~Frank~Mittelbach}
+        {{The} {\LaTeX3 Programming Language}\Dash a proposed system for {\TeX} macro  programming}
+        {}
+        {303-308}
+        {/TUGboat/tb18-4/tb57rowl.pdf}
+
+
+\capsule{}%subsec
+        {{\LaTeX}}
+        {Frank~Mittelbach}
+        {{A} regression test suite for {\LaTeXe}}
+        {}
+        {309-311}
+        {/TUGboat/tb18-4/tb57mitt.pdf}
+
+
+\capsule{}%subsecnn
+        {{\LaTeX}}
+        {}
+        {{News}~from~the~{\LaTeX3}~{Project}~{Team}}
+        {}
+        {312-312}
+        {/TUGboat/tb18-4/ltnews08.pdf}
+
+
+%THEcategory{News \& \\ Announcements}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {{A Week on Electronic Documents and Typography}}
+        {}
+        {313-313}
+        {/TUGboat/tb18-4/wept98.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {{TUG'98} {Call} for papers}
+        {}
+        {314-314}
+        {/TUGboat/tb18-4/tug98call.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& \\ Announcements}
+        {}
+        {Calendar}
+        {}
+        {315-316}
+        {/calendar.html}
+
+
+%THEcategory{Late-Breaking\\News}
+
+
+\capsule{}%subsec
+        {Late-Breaking\\News}
+        {Mimi~Burbank}
+        {Production notes}
+        {}
+        {316\offset{.1}}
+        {/TUGboat/tb18-4/tb57prod.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking\\News}
+        {}
+        {Future issues}
+        {}
+        {316\offset{.2}}
+        {/TUGboat/tb18-4/tb57prod.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {317-317}
+        {/instmem.html}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {TUG membership application}
+        {}
+        {318}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {319-319}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{Y\&Y} Inc.}
+        {}
+        {320-320}
+        {/twg/yy/}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Blue Sky Research}
+        {}
+        {c3}
+        {URL}

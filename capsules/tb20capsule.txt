@@ -1,0 +1,520 @@
+% $Id$
+
+\issue{9}{1}{20}{April 1988}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 9:1 as one pdf (11mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb09-1/tb20complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1}
+        {/TUGboat/tb09-1/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {1}
+        {/TUGboat/tb09-1/tb20titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {2}
+        {/TUGboat/tb09-1/tb20edit.pdf}
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {3-4}
+        {URL}
+
+
+%THEcategory{General Delivery}
+
+\capsule{}
+        {General Delivery}
+        {}
+        {}
+        {}
+        {5-11}
+        {/TUGboat/tb09-1/tb20gendel.pdf}
+
+\capsule{}%subsec
+        {General Delivery}
+        {Bart~Childs}
+        {{From the President}}
+        {}
+        {5-5}
+        {/TUGboat/tb09-1/tb20gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Alan~Wittbecker}
+        {{\TUB} docks at fire station}
+        {}
+        {5-5\offset{.5}}
+        {/TUGboat/tb09-1/tb20gendel.pdf}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {{Donald E. Knuth Scholarship}}
+        {}
+        {6-6}
+        {/TUGboat/tb09-1/tb20gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {{Notes from the Editor}}
+        {}
+        {6-7}
+        {/TUGboat/tb09-1/tb20gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Leslie~Lamport}
+        {Document Production: {Visual} or Logical?}
+        {}
+        {8-10}
+        {/TUGboat/tb09-1/tb20lamport.pdf}
+
+
+%THEcategory{Software}
+
+
+\capsule{}%subsec
+        {Software}
+        {Peter~Breitenlohner}
+        {Still another aspect of multiple change files: {The~PATCH~processor}}
+        {}
+        {11-12}
+        {/TUGboat/tb09-1/tb20breitenlohner.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {Pierre~A.~MacKay}
+        {Turkish hyphenations for {\TeX}}
+        {}
+        {12-14}
+        {/TUGboat/tb09-1/tb20mackay.pdf}
+
+
+%THEcategory{Font Forum}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Georgia~K.M.~Tobin}
+        {{The ABC's of special effects}}
+        {}
+        {15-18}
+        {/TUGboat/tb09-1/tb20tobin.pdf}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Robert~Messer}
+        {{Blackboard Bold}}
+        {}
+        {19-20}
+        {/TUGboat/tb09-1/tb20messer.pdf}
+
+
+\capsule{}%subsec
+        {Font Forum}
+        {Silvio~Levy}
+        {{Using Greek fonts with \TeX}}
+        {}
+        {20-24}
+        {/TUGboat/tb09-1/tb20levy.pdf}
+
+
+%THEcategory{Output Devices}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Don~Hosek}
+        {{\TeX} output devices (with charts)}
+        {}
+        {25-33}
+        {/TUGboat/tb09-1/tb20output.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Marcus~Brown}
+        {{An ASCII previewer for \TeX}}
+        {}
+        {34-36}
+        {/TUGboat/tb09-1/tb20brown.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Don~Hosek}
+        {A screen previewer for {VM/CMS}}
+        {}
+        {37-37}
+        {/TUGboat/tb09-1/tb20hosek.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Shane~Dunne}
+        {{Why {\TeX} should NOT output {\PS}\Dash yet}}
+        {}
+        {37-39}
+        {/TUGboat/tb09-1/tb20dunne.pdf}
+
+
+\capsule{}%subsecnn
+        {Output Devices}
+        {}
+        {Index to sample output from various devices}
+        {}
+        {39-39}
+        {/TUGboat/tb09-1/tb20devoutindex.pdf}
+
+
+%THEcategory{Site Reports}
+
+\capsule{}
+        {Site Reports}
+        {}
+        {}
+        {}
+        {40-45}
+        {/TUGboat/tb09-1/tb20site.pdf}
+
+
+%THEsite{Amiga}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Tom~Rokicki}
+        {{The Commodore Amiga: A magic {\TeX} machine}}
+        {}
+        {40-41}
+        {/TUGboat/tb09-1/tb20site.pdf}
+
+
+%THEsite{Data General}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Bart~Childs}
+        {{Data General site report}}
+        {}
+        {41-41}
+        {/TUGboat/tb09-1/tb20site.pdf}
+
+
+%THEsite{Fujitsu}
+
+
+\capsule{}%subsecnn
+        {Site Reports}
+        {}
+        {{Fujitsu ports {\TeX}~1.0 onto M-series}}
+        {}
+        {42-42}
+        {/TUGboat/tb09-1/tb20site.pdf}
+
+
+%THEsite{IBM VM/CMS}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Dean~Guenther}
+        {{IBM VM/CMS site report}}
+        {}
+        {42-42\offset{.5}}
+        {/TUGboat/tb09-1/tb20site.pdf}
+
+
+%THEsite{UNIX}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Pierre~MacKay}
+        {Unix {\TeX} site report}
+        {}
+        {42-44}
+        {/TUGboat/tb09-1/tb20site.pdf}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Tim~Morgan}
+        {{{\TeX} to C converter}}
+        {}
+        {44-45}
+        {/TUGboat/tb09-1/tb20site.pdf}
+
+
+%THEsite{\VAX/VMS}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {David~Kellerman}
+        {{VAX/VMS site report}}
+        {}
+        {45-45}
+        {/TUGboat/tb09-1/tb20site.pdf}
+
+
+%THEcategory{Typesetting on PCs}
+
+
+\capsule{}%subsec
+        {Typesetting on PCs}
+        {Alan~Hoenig \and Mitch~Pfeffer}
+        {{Writers' tools I: PC~spelling and grammar checkers}}
+        {}
+        {46-47}
+        {/TUGboat/tb09-1/tb20hoenig.pdf}
+
+
+\capsule{}%subsec
+        {Typesetting on PCs}
+        {Alan~Hoenig \and Mitch~Pfeffer}
+        {Grapevine reports of        inexpensive versions of {\TeX}}
+        {}
+        {47-48}
+        {/TUGboat/tb09-1/tb20hoenig.pdf}
+
+
+\capsule{}%subsec
+        {Typesetting on PCs}
+        {Richard~J.~Kinch \and Jennifer~L.~Vollbrecht}
+        {{Turbo\TeX:    A new port in C for Unix and MS-DOS}}
+        {}
+        {48-52}
+        {/TUGboat/tb09-1/tb20kinch.pdf}
+
+
+\capsule{}%subsec
+        {Typesetting on PCs}
+        {Ester~Crisanti, Alberto~Formigoni \and Paco~La~Bruna}
+        {easy{\TeX}}
+        {}
+        {52-56}
+        {/TUGboat/tb09-1/tb20crisanti.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Stephan~v.~Bechtolsheim}
+        {A tutorial on {\tt\bs expandafter}}
+        {}
+        {57-61}
+        {/TUGboat/tb09-1/tb20bechtolsheim.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {James~W.~Walker}
+        {Macros for outlining}
+        {}
+        {61-64}
+        {/TUGboat/tb09-1/tb20walker.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Amy~Hendrickson}
+        {A macro writing tool: {Generating new definitions}}
+        {}
+        {64-64}
+        {/TUGboat/tb09-1/tb20hendrickson.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Alonzo~Gariepy}
+        {French in {\TeX}}
+        {}
+        {65-69}
+        {/TUGboat/tb09-1/tb20gariepy.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Hubert~Partl}
+        {German {\TeX}}
+        {}
+        {70-72}
+        {/TUGboat/tb09-1/tb20partl.pdf}
+
+
+%THEcategory{\LaTeX}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Ken Yap}
+        {Contents of {\LaTeX} style collection as of {4th February 1988}}
+        {}
+        {73-75}
+        {/TUGboat/tb09-1/tb20yap.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Jackie~Damrau}
+        {The {\LaTeX} user's column}
+        {}
+        {76-77}
+        {/TUGboat/tb09-1/tb20damrau.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Kent~McPherson}
+        {Page layout in {\LaTeX}}
+        {}
+        {78-82}
+        {/TUGboat/tb09-1/tb20mcpherson.pdf}
+
+
+%THEcategory{Queries}
+
+
+\capsule{}%subsec
+        {Queries}
+        {Frederick~H.~Bartlett}
+        {Automatic page balancing macros wanted; {Replies: Inverted pyramidal titles}; {Logarithmic time scales}}
+        {}
+        {83-85}
+        {/TUGboat/tb09-1/tb20bartlett.pdf}
+
+
+%THEcategory{News \& Announcements}
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {}
+        {}
+        {86-87}
+        {/TUGboat/tb09-1/tb20news.pdf}
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {86-86}
+        {/TUGboat/tb09-1/tb20news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {{TUG 1988 Annual Meeting, Montr\'eal, August~22--24}}
+        {}
+        {87-87}
+        {/TUGboat/tb09-1/tb20news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {{Videotapes of Knuth's software course  based~on \TeX: The Program}}
+        {}
+        {87-87\offset{.5}}
+        {/TUGboat/tb09-1/tb20news.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {88-90}
+        {/TUGboat/tb09-1/tb20instmem.pdf}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {{TUG membership application}}
+        {}
+        {91-93}
+        {/join.html}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {{\TeX} order form}
+        {}
+        {95-96}
+        {URL}
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {112-112}
+        {URL}
+
+
+%THEcategory{Supplements}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {{\sl Computers \& Typesetting\/}: {Errata and Changes}}
+        {}
+        {\offset{992}}
+        {URL}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {{TUG Membership List}}
+        {}
+        {\offset{992.5}}
+        {URL}

@@ -1,0 +1,396 @@
+\let\primitiveinput=\input
+\input eplain
+\beginpackages
+  \usepackage{graphics}
+\endpackages
+\let\input=\primitiveinput
+
+\input tugboat.cmn  % tugboat.dates macros
+\input tugboat.dates
+\input tb83pages
+
+\nopagenumbers
+\hyphenpenalty = 10000
+\advance\rightskip by 0pt plus 9pt
+\hoffset = .25in
+\voffset = -.5in
+\vsize = 10in
+
+% fonts
+\font\sans = cmss10
+\def\pkgname#1{{\sans #1}}
+
+\font\smallsl = cmsl9  \font\smallrm = cmr9
+\def\acrofont{% if slanted font, use slanted acro font
+   \ifdim \fontdimen1\font>0pt \smallsl \else \smallrm\fi
+}
+\def\acro#1{{\acrofont #1}}
+
+% for \BibTeX
+\font\smc=cmcsc10
+
+% slant \BibTeX and \MF
+\font\ninesl = cmsl9
+\font\slc = cmsl8 at 7pt
+\def\slBibTeX{{\ninesl B{\slc IB}\TeX}}  % cmcscsl10 not available as type1
+
+\font\manualsl = logosl10
+\def\slMF{{\manualsl META}\-{\manualsl FONT}\spacefactor1000 }
+\def\slMP{{\manualsl META}\-{\manualsl POST}\spacefactor1000 }
+
+% for \LaTeX, etc.
+\font\sevensl=cmti7
+\scriptfont\slfam=\sevensl
+
+\def\reflect#1{%
+  \ifx\reflectbox\undefined
+    \errmessage{graphics package must be loaded}%
+  \else
+    \ifdim \fontdimen1\font>0pt
+      \raise 1.75ex \hbox{\kern.1em\rotatebox{180}{#1}}\kern-.1em
+    \else
+      \reflectbox{#1}%
+    \fi
+  \fi
+}
+\def\hideheight#1{\setbox0=\hbox{#1}\ht0=0pt \dp0=0pt \box0 }
+\def\XeTeX{\leavevmode\hideheight{\hbox{X\lower.5ex
+  \hbox{\kern-.125em\reflect{E}}\kern-.1667em \TeX}}}
+
+%\def\XeTeX{Xe\TeX}
+
+% abbreviations
+\def\\{\hfil\break}
+\def\aand{\unskip,\space} %
+\def\aand{{\rm and\space}} % matches tub, but might be too long
+\def\smallbullet{\raise .4ex \hbox{$\scriptscriptstyle \bullet$}}
+\def\t#1{{\tt #1}}
+
+% from tugboat.front
+\def\titleslash{\raise.3ex\hbox{\sevenrm/}}
+
+\newcount\startpage
+\def\getpage#1{%
+  \input ../#1/firstpage.tex
+  \number\startpage
+}
+
+\let\offset=\gobble          % ignore manual sorting offset
+\long\def\begin#1#2\end#3{}  % ignore blurb
+\def\issue#1#2#3#4#5#6{}     % ignore issue info
+
+% formatting
+\newdimen\pagenowidth % space for just
+\setbox0=\hbox{000}
+\pagenowidth=\wd0  % aka 1.5em
+\newdimen\pagenospace  \pagenospace = 2.5em
+
+\def\category#1{\bigskip\noindent{\bf #1}\vskip .1\smallskipamount}
+
+% #1 is difficulty category -- follows \capsule on first line
+% #2 is TB category -- arg 2 is alone on its line, possibly with replace or add comment
+% #3 is author -- args 3-7 are alone on their lines
+% #4 is title
+% #5 is for statement
+% #6 is page number
+% #7 is URL of paper PDF
+% #8 is subtitles -- arg 8 can be alone on its line or multiple lines long
+% #9 is for notes added at html time -- arg 9 can be alone on its line or multiple lines long
+
+% args 2 to 7 must be alo
+\def\capsule#1#2#3#4#5#6#7#8#9{%
+    \smallskip
+    \noindent
+    \hangindent = \pagenospace
+      \advance\hangindent by 3em
+    \hbox to \pagenospace{%
+      \hbox to \pagenowidth{\hfil #6}%
+      \hfil}%
+     %
+     \def\author{#3}%
+     \def\title{#4}%
+     {\rm \author}%
+     %
+     % / only if both parts are present.
+     \ifx\author\empty\else \ifx\title\empty\else\ \titleslash\ \fi\fi
+     %
+     {\sl \title}% title
+     %
+     \def\blurb{#5}%
+     \ifx\blurb\empty\else \hfil\break\hglue-2em\smallbullet\ \blurb\fi
+     \par
+}
+
+
+% typeset the actual title text.
+\font\titlebf = cmbx10 scaled \magstep1
+\vglue 1pc
+\leftline{{\titlebf TUG}BOAT \kern1.5pc \volx\
+%\smallskip
+ \kern1.5pc
+ TUG 2005 Conference Proceedings}
+\bigskip
+\leftline{\titlebf Table of Contents}
+\leftline{(ordered by difficulty)}
+\medskip
+
+% begin-items
+% 
+
+\begin{blurb}
+<p>If you're not already a member, we hope you'll consider <a
+href="/join.html">joining TUG</a> or <a href="/usergroups.html">another
+TeX user group</a>, to support these publications, conferences, and
+other TeX projects.
+
+<p>
+\end{blurb}
+
+\issue{26}{2}{83}{2005}{/tug2005/}{TUG 2005 Proceedings (Wuhan, China)}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 26:2 as one pdf (4.7mb)}
+        {}
+        {\offset{.1}}
+        {/TUGboat/tb26-2/tb83complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2\offset{.2}}
+        {/TUGboat/tb26-2/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Contents ordered by difficulty}
+        {}
+        {c3\offset{.3}}
+        {/TUGboat/tb26-2/cover3.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {105}
+        {/TUGboat/tb26-2/titlepage.pdf}
+
+\category{Introductory}
+
+\capsule{Introductory}
+  {Conference Notes}
+  {Robin Laakso}
+  {Highlights of \acro{TUG} 2005}
+  {conference report and comments from attendees}
+  {108}
+  {/TUGboat/tb26-2/laakso.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Keynote}%add|Philology
+  {Wai Wong}
+  {Typesetting Chinese: A personal perspective}
+  {survey of movable type printing in China, past and present}
+  {111}
+  {/TUGboat/tb26-2/wong.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Talks}%replace|Abstracts
+  {Nelson Beebe, Jin-Hwan Cho, Klaus H\"oppner, Hong Feng, Chris Rowley and Philip Taylor}
+  {TUG 2005 abstracts}
+  {}
+  {169}
+  {/TUGboat/tb26-2/abstracts.pdf}
+  {}
+  {}
+
+% 
+\category{Intermediate}
+
+\capsule{Intermediate}
+  {Talks}%replace|Software \& Tools
+  {Nandan Bagchee and Eitan Gurari}
+  {SwiExr: Spatial math exercises and worksheets, in Braille and print}
+  {producing elementary math exercises (addition, division, etc.)}
+  {135}
+  {/TUGboat/tb26-2/gurari.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Talks}%replace|Software \& Tools
+  {Jonathan Kew}
+  {\XeTeX, the Multilingual Lion: \TeX\ meets Unicode and smart font technologies}
+  {extending \TeX\ with Unicode and OpenType\slash \acro{AAT} support, currently for \MacOSX}
+  {115}
+  {/TUGboat/tb26-2/kew.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Talks}%replace|Language Support
+  {Javier Rodr\'{\i}guez Laguna}
+  {H\'ong-Z\kern.05em\`{\i}: A Chinese \slMF}
+  {composing \acro{CJKV} characters from reusable parts}
+  {125}
+  {/TUGboat/tb26-2/laguna.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Talks}%replace|Philology
+  {Philip Taylor}
+  {Typesetting the Byzantine {\it Cappelli}}
+  {complex sorting of \TeX\ text; maximum width analysis}
+  {142}
+  {/TUGboat/tb26-2/taylor.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Talks}%replace|Graphics
+  {Candy L.K. Yiu and Jim Binkley}
+  {Qin notation generator}
+  {composing notation for the Qin musical instrument with MetaPost}
+  {129}
+  {/TUGboat/tb26-2/yiu.pdf}
+  {}
+  {}
+
+
+% 
+\category{Advanced}
+
+\capsule{Advanced}
+  {Talks}%replace|Software \& Tools
+  {Hans Hagen}
+  {Lua\TeX{}: Howling to the moon}
+  {embedding the \acro{LUA} scripting language in \TeX}
+  {152}
+  {/TUGboat/tb26-2/hagen.pdf}
+  {}
+  {}
+
+\capsule{Advanced}
+  {Talks}%replace|Fonts
+  {Karel P\'\i\v{s}ka}
+  {Converting \slMF\ sources to outline fonts using \slMP}
+  {towards optimal Type~1 outlines from \MF\ fonts}
+  {158}
+  {/TUGboat/tb26-2/piska.pdf}
+  {}
+  {}
+
+\capsule{Advanced}
+  {Talks}%replace|Software \& Tools
+  {S.\,K. Venkatesan}
+  {Moving from bytes to words to semantics}
+  {Sense\TeX\ and Lojban: Working with unambiguous semantic words}
+  {165}
+  {/TUGboat/tb26-2/venkat.pdf}
+  {}
+  {}
+
+
+% 
+\category{Reports and notices}
+
+\capsule{Reports and notices}
+  {Conference Notes}
+  {}
+  {\acro{TUG} 2005 conference program, delegates, and sponsors}
+  {}
+  {106}
+  {/TUGboat/tb26-2/confinfo.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {Conference Notes}
+  {}
+  {\acro{TUG} 2005 conference photos}
+  {}
+  {110}
+  {/TUGboat/tb26-2/confphoto.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {News}
+  {}
+  {Calendar}
+  {}
+  {170}
+  {/TUGboat/tb26-2/tb83calendar.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {TUG Business}
+  {}
+  {TUG membership form}
+  {}
+  {172\offset{7}}
+  {/join.html}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {TUG Business}
+  {}
+  {Institutional members}
+  {}
+  {173\offset{7}}
+  {/TUGboat/tb26-2/instmem-list.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {News}
+  {}
+  {\TeX\ Collection 2005 \ (\TeX\ Live, pro\TeX{}t, Mac\TeX, \acro{CTAN})}
+  {}
+  {174}
+  {/TUGboat/tb26-2/texcollection05.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {News}
+  {}
+  {Euro\TeX\ 2006 announcement}
+  {}
+  {175}
+  {/TUGboat/tb26-2/eurotex06.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {News}
+  {}
+  {\acro{TUG} 2006 announcement}
+  {}
+  {176}
+  {/TUGboat/tb26-2/tug06.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Advertisements}
+  {}
+  {\TeX\ consulting and production services}
+  {}
+  {173\offset{8}}
+  {/TUGboat/tb26-2/consultants.pdf}
+  {}
+  {}
+
+\bye

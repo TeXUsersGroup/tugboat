@@ -1,0 +1,443 @@
+% $Id$
+
+\issue{11}{3}{29}{September 1990}{}{TUG 1990 Proceedings (Texas)}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 11:3 as one pdf (12mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb11-3/tb29complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {333}
+        {/TUGboat/tb11-3/tb29titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {334}
+        {/TUGboat/tb11-3/tb29edit.pdf}
+
+
+
+%THEcategory{Introduction}
+
+
+\capsule{}%subsec
+        {Introduction}
+        {Nelson~Beebe}
+        {President's introduction}
+        {}
+        {335-336}
+        {/TUGboat/tb11-3/tb29beebe.pdf}
+
+
+%THEcategory{{\TeX} \& {\TeX}-Based \\ Systems}
+
+
+\capsule{}%subsec
+        {{\TeX} \& {\TeX}-Based \\ Systems}%replace|Dreamboat
+        {Frank~Mittelbach}
+        {E-{\TeX}:~Guidelines for future {\TeX}}
+        {}
+        {337-345}
+        {/TUGboat/tb11-3/tb29mitt.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} \& {\TeX}-Based \\ Systems}
+        {Hisato~Hamano}
+        {Vertical typesetting with {\TeX}}
+        {}
+        {346-352}
+        {/TUGboat/tb11-3/tb29hamano.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} \& {\TeX}-Based \\ Systems}
+        {Yoshiyuki~Miyabe, H.~Ohta, K.~Tsuga}
+        {Structured document preparation system {\sl AutoLayouter}}
+        {}
+        {353-358}
+        {/TUGboat/tb11-3/tb29miyabe.pdf}
+
+
+%THEcategory{Macros \&\\Other Tools}
+
+
+\capsule{}%subsec
+        {Macros \&\\Other Tools}
+        {Amy~Hendrickson}
+        {Getting {\TeX}nical: Insights into {\TeX} macro  writing techniques}
+        {}
+        {359-370}
+        {/TUGboat/tb11-3/tb29hendrickson.pdf}
+
+
+\capsule{}%subsec
+        {Macros \&\\Other Tools}
+        {Stephen~Alex~Fulling}
+        {Where's the Greek shift key?}
+        {}
+        {371-372}
+        {/TUGboat/tb11-3/tb29fulling.pdf}
+
+
+\capsule{}%subsec
+        {Macros \&\\Other Tools}
+        {Micah~Beck \and A.~Siegel}
+        {TransFig:  Portable graphics for {\TeX}}
+        {}
+        {373-380}
+        {/TUGboat/tb11-3/tb29beck.pdf}
+
+
+\capsule{}%subsec
+        {Macros \&\\Other Tools}
+        {Andrew~Marc~Greene}
+        {BaSiX: An interpreter written in {\TeX}}
+        {}
+        {381-392}
+        {/TUGboat/tb11-3/tb29greene.pdf}
+
+
+%THEcategory{Book Production}
+
+
+\capsule{}%subsec
+        {Book Production}
+        {Helen~Gibson}
+        {A noddy's guide to high  quality {\TeX} production}
+        {}
+        {393-402}
+        {/TUGboat/tb11-3/tb29gibson.pdf}
+
+
+\capsule{}%subsec
+        {Book Production}
+        {Robert A.~Adams}
+        {Problems on the {\TeX}/{\PS}/graphics interface}
+        {}
+        {403-408}
+        {/TUGboat/tb11-3/tb29adams.pdf}
+
+
+\capsule{}%subsec
+        {Book Production}
+        {Stephan von~Bechtolsheim}
+        {{\TeX} in practice: Comments on a 4-volume, 1400-page series on {\TeX}}
+        {}
+        {409-412}
+        {/TUGboat/tb11-3/tb29bechtolsheim.pdf}
+
+
+\capsule{}%subsec
+        {Book Production}
+        {Mimi L.~LaFrenz}
+        {Textbook publishing\Dash 1990 and beyond}
+        {}
+        {413-416}
+        {/TUGboat/tb11-3/tb29lafrenz.pdf}
+
+
+%THEcategory{Preprocessors \&\\Editors}
+
+
+\capsule{}%subsec
+        {Preprocessors \&\\Editors}%replace|Software \& Tools
+        {David~Ness}
+        {Diagnosing {\TeX} errors with a preprocessor}
+        {}
+        {417-420}
+        {/TUGboat/tb11-3/tb29ness.pdf}
+
+
+\capsule{}%subsec
+        {Preprocessors \&\\Editors}%replace|Software \& Tools
+        {Linda~Williams \and Linda~Hall}
+        {Increased efficiency using advanced EDT        editing features}
+        {}
+        {421-424}
+        {/TUGboat/tb11-3/tb29williams.pdf}
+
+
+%THEcategory{Teaching \& Training}
+
+
+\capsule{}%subsec
+        {Teaching \& Training}
+        {Charles R.~Martin}
+        {{\TeX} for {\TeX}nical typists}
+        {}
+        {425-428}
+        {/TUGboat/tb11-3/tb29martin.pdf}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Michael~Vulis}
+        {V{\TeX} enhancements to the {\TeX} language}
+        {}
+        {429-434}
+        {/TUGboat/tb11-3/tb29vulis.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Alan~Hoenig}
+        {A constructed D\"urer alphabet}
+        {}
+        {435-438}
+        {/TUGboat/tb11-3/tb29hoenig.pdf}
+
+
+%THEcategory{Abstracts}
+
+
+\capsule{}%subsec
+        {Abstracts}
+        {Luzia~Dietsche}
+        {Deutsche Kurzfassungen der {\TUB}-Artikel}
+        {}
+        {439-442}
+        {/TUGboat/tb11-3/tb29dietsche.pdf}
+
+
+%THEcategory{Status Reports}
+
+\capsule{}
+        {Status Reports}%replace|Software \& Tools
+        {}
+        {}
+        {}
+        {442-444}
+        {/TUGboat/tb11-3/tb29status.pdf}
+
+\capsule{}%subsec
+        {Status Reports}%replace|Software \& Tools
+        {Nelson~Beebe}
+        {{\TeX} 3.0 and {\MF} 2.0}
+        {}
+        {442-443}
+        {/TUGboat/tb11-3/tb29status.pdf}
+
+
+\capsule{}%subsec
+        {Status Reports}%replace|\LaTeX
+        {Frank~Mittelbach}
+        {{\LaTeX} 2.10}
+        {}
+        {444-444}
+        {/TUGboat/tb11-3/tb29status.pdf}
+
+
+%THEcategory{International\\Reports}
+
+\capsule{}
+        {International\\Reports}%replace|News \& Announcements
+        {}
+        {}
+        {}
+        {444-451}
+        {/TUGboat/tb11-3/tb29reports.pdf}
+
+
+\capsule{}%subsec
+        {International\\Reports}%replace|News \& Announcements
+        {Joachim~Lammarsch}
+        {DANTE, Deutschsprachige Anwendervereinigung {\TeX} e.V.}
+        {}
+        {444-444\offset{.5}}
+        {/TUGboat/tb11-3/tb29reports.pdf}
+
+
+\capsule{}%subsec
+        {International\\Reports}%replace|News \& Announcements
+        {Bernard~Gaulle}
+        {News from and about GUTenberg}
+        {}
+        {445-445}
+        {/TUGboat/tb11-3/tb29reports.pdf}
+
+
+\capsule{}%subsec
+        {International\\Reports}%replace|News \& Announcements
+        {Kees van~der~Laan}
+        {NTG's second year}
+        {}
+        {446-447}
+        {/TUGboat/tb11-3/tb29reports.pdf}
+
+
+\capsule{}%subsec
+        {International\\Reports}%replace|News \& Announcements
+        {Roswitha~Graham \and Jan~Michael~Rynning}
+        {Report from the        Nordic {\TeX} Users Group}
+        {}
+        {447-448}
+        {/TUGboat/tb11-3/tb29reports.pdf}
+
+
+\capsule{}%subsec
+        {International\\Reports}%replace|News \& Announcements
+        {Malcolm~Clark}
+        {{\TeX} in the UK}
+        {}
+        {448-449}
+        {/TUGboat/tb11-3/tb29reports.pdf}
+
+
+\capsule{}%subsec
+        {International\\Reports}%replace|News \& Announcements
+        {Malcolm~Clark}
+        {{\TeX} in Europe}
+        {}
+        {450-451}
+        {/TUGboat/tb11-3/tb29reports.pdf}
+
+
+%THEcategory{Site Reports}
+
+\capsule{}
+        {Site Reports}
+        {}
+        {}
+        {}
+        {451-455}
+        {/TUGboat/tb11-3/tb29site.pdf}
+
+\capsule{}%subsec
+        {Site Reports}
+        {Craig~Platt}
+        {MVS site report}
+        {}
+        {451-451}
+        {/TUGboat/tb11-3/tb29site.pdf}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {David~Kellerman}
+        {VMS site report}
+        {}
+        {451-452}
+        {/TUGboat/tb11-3/tb29site.pdf}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Bart~Childs}
+        {Data General site report}
+        {}
+        {452-452}
+        {/TUGboat/tb11-3/tb29site.pdf}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {John~Crawford}
+        {Prime 50 series site report}
+        {}
+        {453-453}
+        {/TUGboat/tb11-3/tb29site.pdf}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Pierre A.~MacKay}
+        {UNIX{\TeX} site report}
+        {}
+        {453-454}
+        {/TUGboat/tb11-3/tb29site.pdf}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Joachim~Lammarsch}
+        {VM/CMS site report}
+        {}
+        {454-455}
+        {/TUGboat/tb11-3/tb29site.pdf}
+
+
+%THEcategory{Q \& A}
+
+
+\capsule{}%subsec
+        {Q \& A}
+        {Barbara~Beeton}
+        {Report from the question and answer session}
+        {}
+        {455-458}
+        {/TUGboat/tb11-3/tb29queries.pdf}
+
+
+%THEcategory{Participants}
+
+
+\capsule{}%subsecnn
+        {Participants}
+        {}
+        {List of participants at the Texas A\&M meeting (June~17--20, 1990)}
+        {}
+        {458-461}
+        {/TUGboat/tb11-3/tb29participants.pdf}
+
+
+%THEcategory{Announcements}
+
+
+\capsule{}%subsecnn
+        {Announcements}
+        {}
+        {Calendar}
+        {}
+        {462-462}
+        {/TUGboat/tb11-3/tb29calendar.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {463-465}
+        {/TUGboat/tb11-3/tb29instmem.pdf}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {TUG membership application}
+        {}
+        {466-466}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {479-479}
+        {/TUGboat/tb11-3/tb29ads.pdf}

@@ -1,0 +1,451 @@
+% $Id$
+
+\issue{15}{3}{44}{September 1994}{}{TUG 1994 Proceedings (Santa Barbara, California)}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 15:3 as one pdf (7mb)}
+        {}
+        {\offset{.05}}
+        {/TUGboat/tb15-3/tb44complete.pdf}
+
+\capsule{}%subsecnn
+        {}%replace|Conference Notes
+        {}
+        {Editorial and production notes}
+        {}
+        {166-166}
+        {/TUGboat/tb15-3/tb44edit.pdf}
+
+
+\capsule{}%subsecnn
+        {}%replace|Conference Notes
+        {}
+        {Acknowledgements and {Conference} {Program}: {Innovation}}
+        {}
+        {167-168}
+        {/TUGboat/tb15-3/tb44confinfo.pdf}
+
+
+%THEcategory{KeynotePublishing, Languages\\Literature and Fonts}
+
+
+\capsule{}%subsec
+        {Keynote: Publishing, Languages\\Literature and Fonts}%add|Abstracts
+        {Charles~Bigelow}
+        {Lucida and {\TeX}:  Lessons of logic and history}
+        {}
+        {169-169}
+        {/TUGboat/tb15-3/tb44bigelow.pdf}
+
+\capsule{}%subsec
+        {Keynote: Publishing, Languages\\Literature and Fonts}%add|Publishing
+        {Frank~Mittelbach \and Michel~Goossens}
+        {Real life book production\Dash lessons learned from   {\it The {\LaTeX} Companion}}
+        {}
+        {170-173}
+        {/TUGboat/tb15-3/tb44goossens.pdf}
+
+
+\capsule{}%subsec
+        {Keynote: Publishing, Languages\\Literature and Fonts}%add|Multilingual Document Processing
+        {Yannis~Haralambous}
+        {Typesetting the holy {Bible} in {Hebrew}, with {\TeX}}
+        {}
+        {174-191}
+        {/TUGboat/tb15-3/tb44haralambous-hebrew.pdf}
+
+
+\capsule{}%subsec
+        {Keynote: Publishing, Languages\\Literature and Fonts}%add|Typography
+        {Michael~Cohen}
+        {Adaptive character generation and spatial expressiveness}
+        {}
+        {192-198}
+        {/TUGboat/tb15-3/tb44cohen.pdf}
+
+\capsule{}%subsec
+        {Keynote: Publishing, Languages\\Literature and Fonts}%add|Abstracts
+        {Yannis~Haralambous}
+        {Humanist}
+        {}
+        {199-199}
+        {/TUGboat/tb15-3/tb44haralambous-humanist.pdf}
+
+\capsule{}%subsec
+        {Keynote: Publishing, Languages\\Literature and Fonts}%add|Abstracts
+        {Basil~Malyshev}
+        {Automatic conversion of {\MF} fonts to {Type}-1 {\PS}}
+        {}
+        {200-200}
+        {/TUGboat/tb15-3/tb44malyshev.pdf}
+
+
+%THEcategory{Colour, and {\LaTeX}}
+
+
+\capsule{}%subsec
+        {Colour, and {\LaTeX}}%replace|\LaTeX
+        {James~Hafner}
+        {The (pre)history of color in {Rokicki}'s {\tt dvips}}
+        {}
+        {201-204}
+        {/TUGboat/tb15-3/tb44hafner.pdf}
+
+
+\capsule{}%subsec
+        {Colour, and {\LaTeX}}%replace|Output Devices
+        {Tom~Rokicki}
+        {Advanced `special' support in a dvi driver}
+        {}
+        {205-212}
+        {/TUGboat/tb15-3/tb44rokicki.pdf}
+
+
+\capsule{}%subsec
+        {Colour, and {\LaTeX}}%replace|Graphics
+        {Angus~Duggan}
+        {Colour separation and {\PS}}
+        {}
+        {213-217}
+        {/TUGboat/tb15-3/tb44duggan.pdf}
+
+
+\capsule{}%subsec
+        {Colour, and {\LaTeX}}%replace|\LaTeX
+        {Sebastian~Rahtz \and Michel~Goossens}
+        {Simple colour design with {\LaTeXe}}
+        {}
+        {218-222}
+        {/TUGboat/tb15-3/tb44rahtz.pdf}
+
+
+\capsule{}%subsec
+        {Colour, and {\LaTeX}}%replace|Graphics
+        {Friedhelm~Sowa}
+        {Printing colour pictures}
+        {}
+        {223-227}
+        {/TUGboat/tb15-3/tb44sowa.pdf}
+
+
+\capsule{}%subsec
+        {Colour, and {\LaTeX}}%replace|Publishing
+        {Michael~Sofka}
+        {Color book production using {\TeX}}
+        {}
+        {228-238}
+        {/TUGboat/tb15-3/tb44sofka.pdf}
+
+
+\capsule{}%subsec
+        {Colour, and {\LaTeX}}%replace|Graphics
+        {Timothy~van~Zandt \and Denis~Girou}
+        {Inside {PSTricks}}
+        {}
+        {239-246}
+        {/TUGboat/tb15-3/tb44tvz.pdf}
+
+
+\capsule{}%subsec
+        {Colour, and {\LaTeX}}%replace|LaTeX
+        {Jon~Stenerson}
+        {A {\LaTeX} style file generator}
+        {}
+        {247-254}
+        {/TUGboat/tb15-3/tb44stenerson.pdf}
+
+
+\capsule{}%subsec
+        {Colour, and {\LaTeX}}%replace|LaTeX
+        {Johannes~Braams}
+        {Document classes and packages in {\LaTeXe}}
+        {}
+        {255-262}
+        {/TUGboat/tb15-3/tb44braams.pdf}
+
+
+\capsule{}%subsec
+        {Colour, and {\LaTeX}}%replace|LaTeX
+        {Alan~Jeffrey}
+        {{\PS} font support in {\LaTeXe}}
+        {}
+        {263-268}
+        {/TUGboat/tb15-3/tb44jeff.pdf}
+
+
+%THEcategory{{\TeX} Tools}
+
+
+\capsule{}%subsec
+        {{\TeX} Tools}%replace|Bibliographies
+        {Oren~Patashnik}
+        {BibTeX 1.0}
+        {}
+        {269-273}
+        {/TUGboat/tb15-3/tb44patashnik.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Tools}
+        {Pierre~MacKay}
+        {A typesetter's toolkit}
+        {}
+        {274-284}
+        {/TUGboat/tb15-3/tb44mackay.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Tools}
+        {Michael~P.~Barnett \and Kevin~R.~Perry}
+        {Symbolic computation for electronic publishing}
+        {}
+        {285-292}
+        {/TUGboat/tb15-3/tb44barnett.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Tools}
+        {Minato~Kawaguti \and Norio~Kitajima}
+        {Concurrent use of interactive        {\TeX} previewer with an {Emacs}-type editor}
+        {}
+        {293-300}
+        {/TUGboat/tb15-3/tb44kawaguti.pdf}
+
+\capsule{}%subsec
+        {{\TeX} Tools}
+        {Yannis~Haralambous}
+        {An Indic {\TeX} preprocessor\Dash {Sinhalese} {\TeX}}
+        {}
+        {301-301}
+        {/TUGboat/tb15-3/tb44haralambous-indic.pdf}
+
+\capsule{}%subsec
+        {{\TeX} Tools}
+        {Jean-Luc~Doumont}
+        {Pascal pretty-printing:  an example of ``preprocessing within {\TeX}''}
+        {}
+        {302-307}
+        {/TUGboat/tb15-3/tb44doumont.pdf}
+
+
+%THEcategory{Futures}
+
+
+\capsule{}%subsec
+        {Futures}
+        {Joachim~Schrod}
+        {Towards interactivity for {\TeX}}
+        {}
+        {309-317}
+        {/TUGboat/tb15-3/tb44schrod.pdf}
+
+
+\capsule{}%subsec
+        {Futures}
+        {Chris~Rowley \and Frank~Mittelbach}
+        {The floating world}
+        {}
+        {318-318}
+        {/TUGboat/tb15-3/tb44rowl.pdf}
+
+\capsule{}%subsec
+        {Futures}
+        {Don~Hosek}
+        {Sophisticated page layout with {\TeX}}
+        {}
+        {319-319}
+        {/TUGboat/tb15-3/tb44hosek.pdf}
+
+\capsule{}%subsec
+        {Futures}%add|Multilingual Document Processing
+        {John~Plaice}
+        {Progress in the {Omega} project}
+        {}
+        {320-324}
+        {/TUGboat/tb15-3/tb44plaice.pdf}
+
+
+\capsule{}%subsec
+        {Futures}
+        {Arthur~Ogawa}
+        {Object-oriented programming, descriptive markup, and {\TeX}}
+        {}
+        {325-330}
+        {/TUGboat/tb15-3/tb44ogawa.pdf}
+
+
+\capsule{}%subsec
+        {Futures}
+        {William~Erik~Baxter}
+        {An object-oriented programming system in {\TeX}}
+        {}
+        {331-338}
+        {/TUGboat/tb15-3/tb44baxter.pdf}
+
+
+\capsule{}%subsec
+        {Futures}
+        {Norm~Walsh}
+        {A {World} {Wide} {Web} interface to CTAN}
+        {}
+        {339-343}
+        {/TUGboat/tb15-3/tb44walsh.pdf}
+
+
+\capsule{}%subsec
+        {Futures}%add|Multilingual Document Processing
+        {Yannis~Haralambous \and John~Plaice}
+        {First applications of Omega: {Adobe} {Poetica}, {Arabic}, {Greek}, {Khmer}}
+        {}
+        {344-352}
+        {/TUGboat/tb15-3/tb44haralambous-omega.pdf}
+
+
+\capsule{}%subsec
+        {Futures}
+        {Philip~Taylor}
+        {{\eTeX} \& NTS: A progress report}
+        {}
+        {353-358}
+        {/TUGboat/tb15-3/tb44taylor.pdf}
+
+
+%THEcategory{Publishing and Design}
+
+\capsule{}%subsec
+        {Publishing and Design}
+        {Maurice~Laugier \and Yannis~Haralambous}
+        {{\TeX} innovations by the {Louis}-{Jean} {Printing} {House}}
+        {}
+        {359-359}
+        {/TUGboat/tb15-3/tb44laugier.pdf}
+
+\capsule{}%subsec
+        {Publishing and Design}
+        {Michael~Downes}
+        {Design by template in a production macro package}
+        {}
+        {360-368}
+        {/TUGboat/tb15-3/tb44downes.pdf}
+
+
+\capsule{}%subsec
+        {Publishing and Design}
+        {Alan~Hoenig}
+        {Less is {More}: {Restricting} {\TeX}'s scope        enables complex page layouts}
+        {}
+        {369-380}
+        {/TUGboat/tb15-3/tb44hoenig.pdf}
+
+
+\capsule{}%subsec
+        {Publishing and Design}
+        {Jonathan~Fine}
+        {Documents, compuscripts, programs and macros}
+        {}
+        {381-385}
+        {/TUGboat/tb15-3/tb44fine.pdf}
+
+
+\capsule{}%subsec
+        {Publishing and Design}
+        {Marko~Grobelnik, Dunja~Mladeni\'c, Darko~Zupani\v{c}  \and Borut~\v{Z}nidar}
+        {Integrated system for encyclopaedia typesetting based on {\TeX}}
+        {}
+        {386-387}
+        {/TUGboat/tb15-3/tb44grobelnik.pdf}
+
+
+\capsule{}%subsec
+        {Publishing and Design}
+        {Henry~Baragar \and Gail~E.~Harris}
+        {        An example of a special purpose input language to {\LaTeX}}
+        {}
+        {388-396}
+        {/TUGboat/tb15-3/tb44baragar.pdf}
+
+
+%THEcategory{Appendix}
+
+
+\capsule{}%subsecnn
+        {Appendix}
+        {}
+        {Color pages}
+        {}
+        {397-404}
+        {/TUGboat/tb15-3/tb44color.pdf}
+
+
+\capsule{}%subsecnn
+        {Appendix}
+        {}
+        {Participants at the {Annual} {Meeting}}
+        {}
+        {405-407}
+        {/TUGboat/tb15-3/tb44addresses.pdf}
+
+
+%THEcategory{News \&\\Announcements}
+
+
+\capsule{}%subsecnn
+        {News \&\\Announcements}
+        {}
+        {Calendar}
+        {}
+        {408-409}
+        {/TUGboat/tb15-3/tb44calendar.pdf}
+
+
+\capsule{}%subsecnn
+        {News \&\\Announcements}
+        {}
+        {1995 {Knuth} {Scholarship}}
+        {}
+        {409-410}
+        {/TUGboat/tb15-3/tb44knuthscholar.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {411-412}
+        {/TUGboat/tb15-3/tb44instmem.pdf}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {{TUG} membership application}
+        {}
+        {415-416}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {412-413}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {417-417}
+        {/TUGboat/tb15-3/tb44ads.pdf}

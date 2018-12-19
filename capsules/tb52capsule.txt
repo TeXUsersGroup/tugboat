@@ -1,0 +1,316 @@
+% $Id$
+
+\issue{17}{3}{52}{September 1996}{}{}
+
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 17:3 as one pdf (2mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb17-3/tb52complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1}
+        {/TUGboat/tb17-4/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb17-4/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {237}
+        {/TUGboat/tb17-4/titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {238}
+        {/TUGboat/tb17-4/tb53edit.pdf}
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {239-239}
+        {URL}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Michel~Goossens}
+        {From the president}
+        {}
+        {241-243}
+        {/TUGboat/Pres/tb52pres.html}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {Editorial comments}
+        {}
+        {243-244}
+        {/TUGboat/tb17-3/tb52beet.pdf}
+        {TeX Live: A CD-ROM for Unix\\
+CTAN update\\
+The new ltugboat.cls\\
+Frequently asked questions about TeX\\
+Books about TeX, books prepared in TeX, and other bibliographies\\
+TeX output from a Web browser\Dash Techexplorer}
+        {}
+
+%THEsubheads{ {{\TeX} Live: A \acro{CD-ROM} for Unix};        {\CTAN} update; {The new {\tt ltugboat.cls}};        {Frequently asked questions about {\TeX}}; {Books about {\TeX},        books prepared in {\TeX}, and other bibliographies};        {{\TeX} output from a {Web} browser\Dash Techexplorer}}
+
+
+%THEcategory{Software \& Tools}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Petr~Sojka, \Thanh \and Ji\v{r}\'\i~Zlatu\v{s}ka}
+        {{The joy of {\TeX}2\acro{PDF}\Dash Acrobatics with an alternative  to \acro{DVI} format}}
+        {}
+        {244-251}
+        {/TUGboat/tb17-3/tb52sojk.pdf}
+
+
+\capsule{}%subsec
+        {Software \& Tools}
+        {Sergey~Lesenko}
+        {{The \acro{DVIPDF} Program}}
+        {}
+        {252-254}
+        {/TUGboat/tb17-3/tb52lese.pdf}
+
+
+%THEcategory{\TeX tensions}
+
+
+\capsule{}%subsec
+        {\TeX{}tensions}
+        {Jonathan~Fine}
+        {{Editing {\tt .dvi} files, or Visual {\TeX}}}
+        {}
+        {255-259}
+        {/TUGboat/tb17-3/tb52finv.pdf}
+
+
+%THEcategory{Philology}
+
+
+\capsule{}%subsec
+        {Philology}
+        {Irina~A.~Makhovaya}
+        {{{\TeX} in Russia: Ab ovo, or, About  the {\TeX}nical evolution in Russia}}
+        {}
+        {259-264}
+        {/TUGboat/tb17-3/tb52makh.pdf}
+
+
+%THEcategory{Graphics}
+
+
+\capsule{}%subsec
+        {Graphics}
+        {Sebastian~Rahtz}
+        {{{\LaTeX}, {\it dvips}, \acro{EPS} and the Web \dots}}
+        {}
+        {264-268}
+        {/TUGboat/tb17-3/tb52rahtz.pdf}
+
+
+\capsule{}%subsec
+        {Graphics}
+        {Kees~van~der~Laan}
+        {{Graphics and {\TeX}\Dash A reappraisal of {\MF}/MetaPost/{\PS}}}
+        {}
+        {269-279}
+        {/TUGboat/tb17-3/tb52meta.pdf}
+
+
+%THEcategory{Book Reviews}
+
+
+\capsule{}%subsec
+        {Book Reviews}
+        {David~Thompson}
+        {{Stanley Sawyer and Steven Krantz}, {\it A {\TeX} Primer for Scientists}}
+        {}
+        {280-280}
+        {/TUGboat/tb17-3/tb52revt.pdf}
+
+
+\capsule{}%subsec
+        {Book Reviews}
+        {W{\l}odek Bzyl}
+        {{David Salomon}, {\it The Advanced {\TeX}book}}
+        {}
+        {281-282}
+        {/TUGboat/tb17-3/tb52revb.pdf}
+
+
+%THEcategory{Tutorials}
+
+
+\capsule{}%subsec
+        {Tutorials}
+        {Robin~Fairbairns}
+        {The new ({\LaTeXe}) {\TUB} macros}
+        {}
+        {282-288}
+        {/TUGboat/tb17-3/tb52guid.pdf}
+
+
+\capsule{}%subsec
+        {Tutorials}
+        {Keith~Reckdahl}
+        {{Using \acro{EPS} graphics in {\LaTeXe} documents,  Part 2: Floating figures, boxed~figures, captions, and math        in figures}}
+        {}
+        {288-310}
+        {/TUGboat/tb17-3/tb52reck.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Jordi~Saludes}
+        {Fast and secure multiple-option tests}
+        {}
+        {310-319}
+        {/TUGboat/tb17-3/tb52salu.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Peter~Schmitt}
+        {A puzzling {\TeX} macro}
+        {}
+        {319-320}
+        {/TUGboat/tb17-3/tb52schm.pdf}
+
+
+%THEcategory{\LaTeX}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {David~Carlisle}
+        {{A {\LaTeX} tour, Part~2: The {\ssf tools} and {\ssf graphics} distributions}}
+        {}
+        {321-326}
+        {/TUGboat/tb17-3/tb52carl.pdf}
+
+
+%THEcategory{News \& Announcements}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {326-327}
+        {/calendar.html}
+
+
+%THEcategory{Late-Breaking\\News}
+
+
+\capsule{}%subsec
+        {Late-Breaking\\News}
+        {Mimi~Burbank}
+        {Production notes}
+        {}
+        {327-327}
+        {/TUGboat/tb17-3/tb52prod.pdf}
+
+
+\capsule{}%subsecnn
+        {Late-Breaking\\News}
+        {}
+        {Future issues}
+        {}
+        {327\offset{.5}}
+        {/TUGboat/tb17-3/tb52prod.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {{\acro{TUG}'97 Call for Papers}}
+        {}
+        {328-328}
+        {/TUGboat/tb17-3/call97.pdf}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {{1997 \acro{TUG} Election}}
+        {}
+        {240-240}
+        {/TUGboat/tb17-3/tb52elec.pdf}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {329-329}
+        {/instmem.html}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {{TUG membership application}}
+        {}
+        {330-330}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {331-331}
+        {/consultants.html}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {331\offset{.5}}
+        {URL}

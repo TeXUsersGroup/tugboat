@@ -1,0 +1,898 @@
+# $Id$
+# TUGboat capsule unifications data file. Public domain.
+#
+#name as it should be (html)
+    #name as found
+    #name as found another way
+
+# category unifications first, then author unifications, but this
+# distinction is not known to the code; everything is applied everywhere.
+# The html unification target must match items in lists-translations.
+
+Book Reviews
+    Book Review
+    Publications
+    Reviews
+
+Cartoons
+    Cartoon
+
+Conference Notes
+    Appendix
+    Delegates
+    Editorial Overview
+    EuroTeX 2007
+    EuroTeX 2009
+    Panels
+    Participants
+    Practical TeX 2004
+    Practical TeX 2005
+    Practical TeX 2006
+    TUG 1991 Conference Proceedings Part 1
+    TUG 1991 Conference Proceedings Part 2
+    TUG 2006
+    TUG 2007
+    TUG 2008
+    TUG 2010
+    TUG 2011
+    TUG 2012
+    TUG 2013
+    TUG 2014
+    TUG 2015
+    TUG 2016
+    TUG 2017
+    TUG 2018
+    TUG'98
+
+Dreamboat
+    Expanding Horizons
+    Future Issues
+    Futures
+
+Education
+    Education and Archives
+    TeX Training
+    TeX Training and Education: The New User
+    Training
+    Teaching & Training
+
+Electronic Documents
+    Electronic documents
+    Electronic Publishing
+    TeX and Math on the Web
+    TeX and Scientific Publishing on the Internet
+
+Fonts
+    Font Forum
+    Font Design and New Fonts
+    Fonts and Tools
+
+General Delivery
+    Fiction
+    Introduction
+    Opening Address
+
+Graphics
+    Graphics Applications
+    Pictures and TeX
+    Graphics and Fonts
+    PostScript Topics
+    Poster Exhibition
+
+Keynotes
+    Keynote address
+    Keynote Address
+    KEYNOTE ADDRESS
+    Keynote Addresses
+    Keynote
+    Keynote: Publishing, Languages Literature and Fonts
+
+LaTeX
+    Formatting information
+    LaTeX&mdash;state of the art
+
+Letters
+     Letters et alia
+     Letter
+     Views & Commentary
+
+Literate Programming
+    Literate programming
+
+# amp case for new code
+Macros
+    Low TeX
+    Macro Packages
+    Macro Writing
+    Macros & Other Tools
+    Macros &amp; Other Tools
+    TeX tensions
+    TeXtensions
+
+Multilingual Document Processing
+    Encoding and Multilingual Support
+    Hyphenation
+    Language Issues
+    Language Support
+    Languages and Fonts
+    Multilingual document processing
+    Multilingual Typography Without Boundaries
+    Omega
+    Philology
+
+News & Announcements
+    Announcements
+    News
+    TUG News
+    Late-Breaking News
+    Late Breaking News
+
+Publishing
+    TeX in Publishing
+    A TeX Odyssey
+    Publishing and Design
+    Publishing and TeX
+    Q & A
+    Q &amp; A
+
+Queries
+    Problems
+    Query
+    Questions
+    Questions & Answers
+    Questions &amp; Answers
+
+Resources
+    TeX Notes
+
+Site Reports
+    Public Domain TeX
+    Short Reports
+    &ldquo;small&rdquo; TeX 
+    Typesetting on Personal Computers
+    Typesetting on PCs
+
+Software & Tools
+    Fonts, Graphics, and New Developments
+    Front Ends
+    Hardware/Systems
+    Software
+    Software & Tool
+    TeX Live CD-ROM
+    TeX Systems
+    TeX Tools
+    TeX & TeX-Based Systems
+    Tools
+
+Supplements
+    Supplement
+
+Surveys
+    Survey
+
+TUG Business
+    Forms
+    Miscellaneous
+
+Tutorials
+    Tutorial
+
+Typography
+    Book Production
+    Typographics: &AElig;sthetics and Practicalities
+
+Warnings & Limitations
+    Warnings
+
+
+#
+#some author unifications
+
+William Adams
+    William F. Adams
+    Adams
+    Will Adams
+
+Alex AJ
+    Alex A.J.
+
+Leyla Akhmadeeva
+    Leila Akhmadeeva
+    Akhmadeeva
+
+David Allen
+    Abstracts (Allen
+    Allen
+
+Jonathan Kew
+    Kew
+
+Johannes K&uuml;ster
+    Johannes Kuster
+    K&uuml;ster
+    Kuster
+
+Kaveh Bazargan
+    Kaveh Bazargan,&nbsp;Moderator
+    Bazargan
+    Bazargan et al.
+
+Richard Aurbach
+    Richard L. Aurbach
+
+Michael P. Barnett
+    Michael Barnett
+
+Nelson Beebe
+    Nelson H.F. Beebe
+    Nelson H. F. Beebe
+
+Barbara Beeton
+    B. Beeton
+    Beeton
+
+Doris Behrendt
+    Behrendt
+
+Alexander Berdnikov
+    Alexander S. Berdnikov
+    A. Berdnikov
+    A.S. Berdnikov
+    A. A. Berdnikov
+
+Karl Berry
+    Berry
+
+Duane Bibby
+    Bibby
+
+Charles Bigelow
+    Bigelow
+
+Robert Bringhurst
+    Bringhurst
+
+Gyongyi Bujdoso
+    Bujdoso
+    Bujdos&oacute;
+
+John Burt
+    Burt
+
+W&#322;odzimierz Bzyl
+    W&#322;odek Bzyl
+    
+A.G.W. Cameron
+    A. G. W. Cameron
+
+Lance Carnes
+    L. Carnes
+
+William Cheswick
+    Bill Cheswick
+    Cheswick
+
+William Cheswick
+    Bill Cheswick
+
+Jin-Hwan Cho
+    Cho
+
+Adrian Clark
+    Adrian F. Clark
+
+Jennifer Claudio
+    Claudio
+
+Michael Cohen
+    Michel Cohen
+
+Sandro Coriasco
+    Coriasco
+    Coriasco et al.
+
+David Crossland
+    Dave Crossland
+    Crossland
+
+Julien Cretel
+    Cretel
+
+Ward Cunningham
+    Cunningham
+
+Patrick Daly
+    Daly
+
+R.M. Damerell
+    R. M. Damerell
+
+Donald DeLand
+    Don DeLand
+    DeLand
+
+Max D&iacute;az
+    M. D&iacute;az
+
+Barry Doherty
+    Barry C. W. Doherty
+
+Michael Doob
+    Doob
+
+Jean-Luc Doumont
+    Jean-luc Doumont
+    Doumont
+
+Michael Downes
+    Michael J. Downes
+
+Olaf Dr&uuml;mmer
+    Dr&uuml;mmer
+
+Alec Dunn
+    A. Dunn
+
+Willi Egger
+    Egger
+
+Thomas Esser
+    Esser
+
+Hossam Fahmy
+    Fahmy
+
+David Farmer
+    Farmer
+
+Ron Fehd
+    Fehd
+
+Michael Ferguson
+    Michael J. Ferguson
+
+Thomas Feuerstack
+    Feuerstack
+
+Jonathan Fine
+    Abstracts (Fine
+    Fine
+
+Katalin Fried
+    Katalin Fried et al.
+
+Michael Frisch
+    Michael J. Frisch
+
+Stephen A. Fulling
+    Stephen Alex Fulling
+    Stephen A. Fulling,&nbsp;Moderator
+
+Federico Garcia
+    Garcia
+    Federico Garcia-De Castro
+
+Paul Gessler
+    Gessler
+
+Steve Grathwohl
+    Grathwohl
+
+George Gr&auml;tzer
+    G. Gr&auml;tzer
+
+George Greenwade
+    George D. Greenwade
+
+Paul Grosso
+     P. Grosso
+
+Eitan Gurari
+    Gurari
+
+James Hafner
+    James L. Hafner
+    
+Hans Hagen
+    Hagen
+    Abstracts (Hagen
+
+Shizuya Hakuta
+    Hakuta
+
+Idris Hamid
+    Idris Samawi Hamid
+    Hamid
+
+Kathryn Hargreaves
+    Kathy Hargreaves
+
+Jim Hefferon
+    Hefferon
+
+Joachim Heinze
+    Heinze
+
+Tom Hejda
+    Hejda
+
+Troy Henderson
+    Henderson
+
+Hartmut Henkel
+    Henkel
+
+John Hobby
+    Hobby
+
+Thea Hodge
+    T. D. Hodge
+
+Morten H&oslash;gholm
+    H&oslash;gholm
+
+Taco Hoekwater
+    Hoekwater
+
+Alan Hoenig
+    A. Hoenig
+    Alan J. Hoenig
+
+Klaus H&ouml;ppner
+    H&ouml;ppner
+    
+Anita Hoover
+    Anita Z. Hoover
+
+Jean-Michel Hufflen
+    Jean-Michael Hufflen
+    Hufflen
+
+Ned Hummel
+    Hummel
+
+Andrew Hwang
+    Andrew D. Hwang
+    
+Tim Inkster
+    Inkster
+
+Roberto Ierusalimschy
+    Ierusalimschy
+
+Patrick Ion
+    Patrick D.F. Ion
+
+Zunbeltz Izaola
+    Izaola
+
+Bogus&#322;aw Jackowski
+    Jackowski
+
+Calvin Jackson
+    Cal Jackson
+
+Mirko Janc
+    Janc
+
+Andrew Janishewsky
+    A. Janishevsky
+
+Alan Jeffrey
+    Alan Jeffrey&nbsp;(Editor)
+
+Mimi Jett
+    Mimi L. LaFrenz
+
+Masataka Kaneko
+    Kaneko
+
+David Kastrup
+    Kastrup
+
+Arthur M. Keller
+    Arthur Keller
+
+B. {Hamilton&nbsp;Kelly}
+    B. Hamilton Kelly
+    Brian Hamilton Kelly
+    B Hamilton Kelly
+    
+Richard Kinch
+    Richard J. Kinch
+
+Donald Knuth
+    D. Knuth
+    Donald E. Knuth
+    Don Knuth
+
+M. Y. Kolodin
+    M. Kolodin
+
+A. Kostin
+    Alex Kostin
+
+Stefan Kottwitz
+    Kottwitz
+
+Anna Beata Kwiatkowska
+    Kwiatkowska
+
+Kees van der Laan
+    C.G. van der Laan
+    C. G. van der Laan
+
+Olga Lapko
+    O. Lapko
+    Olga G. Lapko
+    O. G. Lapko
+
+Kevin Larson
+    Larson
+
+LaTeX&nbsp;Project&nbsp;Team
+    LaTeX&nbsp;project&nbsp;team
+    LaTeX3&nbsp;Project&nbsp;Team
+
+Stephan Lehmke
+    Lehmke
+
+Lucien Lemmens
+    Lemmens
+
+Mico Loretan
+    Loretan
+
+Manfred Lotz
+    Lotz
+
+Jerzy Ludwichowski
+    Ludwichowski
+    Jerzy B. Ludwichowski
+    
+M.L. Luvisetto
+    M. L. Luvisetto
+    Maria Luisa Luvisetto
+    Marisa Luvisetto
+
+Pierre MacKay
+    Pierre A. MacKay
+    P. MacKay
+
+Yoshifumi Maeda
+    Maeda
+
+I. A. Makhovaya
+    Irina Makhovaya
+    Irina A. Makhovaya
+
+Blanca Mancilla
+    Mancilla et al.
+
+Sherif Mansour
+    Mansour
+
+Robert McGaffey
+    Robert W. McGaffey
+
+Wendy McKay
+    Wendy G. McKay
+
+Doug McKenna
+    McKenna
+
+MetaPost&nbsp;Team
+    MetaPost Team
+
+Mojca Miklavec
+    Miklavec
+
+Yasuhide Minoda
+    Minoda
+
+Frank Mittelbach
+    Mittelbach
+
+Ross Moore
+    Moore
+
+Stephen Moye
+    Moye
+
+Norman Naugle
+    Norman W. Naugle
+
+Paulo Ney de Souza
+    Ney de Souza
+    de Souza
+    
+Monte Nichols
+    Monte C. Nichols
+
+Richard Nickalls
+    R.W.D. Nickalls
+    Richard W. D. Nickalls
+
+Ted Nieland
+    M. Edward Nieland
+
+Janusz Nowacki
+    Janusz M. Nowacki
+
+Eduardo Ochs
+    Ochs
+
+Arthur Ogawa
+    Arthur Ogawa,&nbsp;Moderator
+
+Steve Peter
+    Peter
+
+Mitch Pfeffer
+    Pfeffer, Mitch
+    M. Pfeffer
+
+Karel P&iacute;&#x0161;ka
+    P&iacute;&#x0161;ka
+    
+Fabrice Popineau
+    Popineau
+
+Nico Poppelier
+    Nico A.F.M. Poppelier
+    N.A.F.M. Poppelier
+
+Norbert Preining
+    Preining
+
+Lynne Price
+    Lynne A. Price
+
+James Quirk
+    Quirk
+
+CV Radhakrishnan
+    C.V. Radhakrishnan
+    Radhakrishnan
+
+Istv&aacute;n Rad&oacute;
+   Rad&oacute;
+
+Toby Rahilly
+    Rahilly et al.
+
+Dan Raies
+    Raies
+
+T.V. Raman
+    T. V. Raman
+
+Ajit Ranade
+    Ranade
+
+Marek Ry&#x0107;ko
+    Ry&#x0107;ko
+
+Thomas J. Reid
+    Tom Reid
+
+Arthur Reutenauer
+    Reutenauer
+
+Daniel Rhatigan
+    Rhatigan
+
+Arne Richter
+    Richter
+
+T. Rishi
+    Rishi
+    Rishi T.
+
+Will Robertson
+    Robertson
+
+David Rodgers
+    D.L. Rodgers
+
+Tomas Rokicki
+    Tomas G. Rokicki
+    Tom Rokicki
+
+Kristoffer H&oslash;gsbro Rose
+    Kristoffer Rose
+
+Leonard Rosenthol
+    Rosenthol
+
+Chris Rowley
+    Rowley
+
+David Ruddy
+    Ruddy
+
+Robert Rundell
+    Rundell
+
+Arthur Samuel
+    Arthur Lee Samuel
+
+Volker R.W. Schaa
+    Volker RW Schaa
+
+Anita Schwartz
+    Anita Schwartz&nbsp;(Chair)
+
+Martin Schr&ouml;der
+    Schr&ouml;der
+
+Przemys&#322;aw Scherwentke
+    Scherwentke
+
+M&iacute;che&aacute;l &Oacute; Searc&oacute;id
+    M/iche/al /O Searc/oid
+
+Keiichiro Shikano
+    Shikano
+
+Wayne Sewell
+    E. Wayne Sewell
+
+L. Siebenmann
+    Laurent Siebenmann
+
+Tony Siegman
+    A. E. Siegman
+
+Karel Skoup&yacute;
+    Skoup&yacute;
+
+Michael D. Sofka
+    Michael Sofka
+
+Petr Sojka
+    Sojka
+
+Michael Spivak
+    Mike Spivak
+
+Jim Sterken
+    J.J. Sterken
+    J.Sterken
+
+Ari Stern
+    Stern
+
+Donald Story
+    Donald P. Story
+    D.P. Story
+    D. P. Story
+
+P&eacute;ter Szab&oacute;
+    Szab&oacute;
+
+Yumi Takata
+    Takata
+
+Philip Taylor
+    Phil Taylor
+
+Yusuke Terada
+    Terada
+
+Etienne T&eacute;treault-Pinard
+    T&eacute;treault
+
+Christina Thiele
+    Christina A.L. Thiele
+    Thiele
+
+Damien Thiriet
+    Thiriet
+
+Georgia K.M. Tobin
+    Georgia K. M. Tobin
+    G.K.M. Tobin
+
+Andrzej Tomaszewski
+    Tomaszewski
+
+Adam Twardoch
+    Twardoch
+
+TWG-TeX&nbsp;Directory&nbsp;Structure
+    TUG&nbsp;Working&nbsp;Group&nbsp;on&nbsp;a&nbsp;TeX&nbsp;Directory&nbsp;Structure
+
+Kazu Tsuga
+    K. Tsuga
+
+David Tulett
+    David M. Tulett
+
+Rilla J. Thedford
+    Rilla Thedford
+
+Enzo Ugolini
+    E. Ugolini
+
+Glenn Vanderburg
+    Glenn L. Vanderburg
+
+S.K. Venkatesan
+    SK Venkatesan
+
+Didier Verna
+    Verna
+
+Jiri Vesely
+    J. Vesely
+
+Boris Veytsman
+    Veytsman
+    Veytsman)
+
+Ulrik Vieth
+    Vieth
+
+Stephan von Bechtolsheim
+    Stephan v. Bechtolsheim
+
+Michael Vulis
+    M. Vulis
+
+Zofia Walczak
+    Walczak
+
+David Walden
+    David Walden (moderator)
+
+Alan Wetmore
+    Wetmore
+    
+Samuel B. Whidden
+    Sam Whidden
+
+Ronald Whitney
+    R. Whitney
+
+Gerben Wierda
+    Wierda
+
+Alan Wittbecker
+    Alan E. Wittbecker
+
+Ronald Whitney
+    Ron Whitney
+
+Joseph Wright
+    Wright
+
+Dominik Wujastyk
+    Wujastyk
+
+Masafumi Yabe
+    Yabe
+
+Vyatcheslav Yatskovsky
+     Yatskovsky
+
+Candy L.K. Yiu
+    Candy L. K. Yiu
+
+Ignacio Zabala
+    I. Zabala
+
+Sergei V. Znamenskii
+    S. V. Znamenskii
+
+# 
+#some title unifications
+
+Editorial Comments
+    Editorial comments
+
+Editorial Information
+    Editorial information
+
+From the President
+    From the president

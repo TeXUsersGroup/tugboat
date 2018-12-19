@@ -1,0 +1,496 @@
+% $Id$
+\input tugboat.cmn  % tugboat.dates macros
+\input tugboat.dates
+\input tb82pages
+
+\nopagenumbers
+\hyphenpenalty = 10000
+\advance\rightskip by 0pt plus 9pt
+\hoffset = .25in
+\voffset = -.5in
+\vsize = 10in
+
+% fonts
+\font\sans = cmss10
+\def\pkgname#1{{\sans #1}}
+
+\font\smallsl = cmsl9  \font\smallrm = cmr9
+\def\acrofont{% if slanted font, use slanted acro font
+   \ifdim \fontdimen1\font>0pt \smallsl \else \smallrm\fi
+}
+\def\acro#1{{\acrofont #1}}
+
+% for \BibTeX
+\font\smc=cmcsc10
+
+% slant \BibTeX and \MF
+\font\ninesl = cmsl9
+\font\slc = cmsl8 at 7pt
+\def\slBibTeX{{\ninesl B{\slc IB}\TeX}}  % cmcscsl10 not available as type1
+
+\font\manualsl = logosl10
+\def\slMF{{\manualsl META}\-{\manualsl FONT}\spacefactor1000 }
+
+% for \LaTeX, etc.
+\font\sevensl=cmti7
+\scriptfont\slfam=\sevensl
+
+% abbreviations
+\def\\{\hfil\break}
+\def\aand{\unskip,\space} %
+\def\aand{{\rm and\space}} % matches tub, but might be too long
+\def\smallbullet{\raise .4ex \hbox{$\scriptscriptstyle \bullet$}}
+\def\t#1{{\tt #1}}
+
+% from tugboat.front
+\def\titleslash{\raise.3ex\hbox{\sevenrm/}}
+
+\newcount\startpage
+\def\getpage#1{%
+  \input ../#1/firstpage.tex
+  \number\startpage
+}
+
+% formatting
+\newdimen\pagenowidth % space for just
+\setbox0=\hbox{000}
+\pagenowidth=\wd0  % aka 1.5em
+\newdimen\pagenospace  \pagenospace = 2.5em
+
+\def\category#1{\smallskip\noindent{\bf #1}\vskip .5\smallskipamount}
+
+% #1 is difficulty category -- follows \capsule on first line
+% #2 is TB category -- arg 2 is alone on its line, possibly with replace or add comment
+% #3 is author -- args 3-7 are alone on their lines
+% #4 is title
+% #5 is for statement
+% #6 is page number
+% #7 is URL of paper PDF
+% #8 is subtitles -- arg 8 can be alone on its line or multiple lines long
+% #9 is for notes added at html time -- arg 9 can be alone on its line or multiple lines long
+
+% args 2 to 7 must be alo
+\def\capsule#1#2#3#4#5#6#7#8#9{%
+    \noindent
+    \hangindent = \pagenospace
+      \advance\hangindent by 3em
+    \hbox to \pagenospace{%
+      \hbox to \pagenowidth{\hfil #6}%
+      \hfil}%
+     %
+     \def\author{#3}%
+     \def\title{#4}%
+     {\rm \author}%
+     %
+     % / only if both parts are present.
+     \ifx\author\empty\else \ifx\title\empty\else\ \titleslash\ \fi\fi
+     %
+     {\sl \title}% title
+     %
+     \def\blurb{#5}%
+     \ifx\blurb\empty\else \hfil\break\hglue-2em\smallbullet\ \blurb\fi
+     \par
+}
+
+% actual title text.
+\font\titlebf = cmbx10 scaled \magstep1
+\leftline{{\titlebf TUG}BOAT \quad \volx\ / \volyr}
+\leftline{Practical \TeX\ 2005 Conference Proceedings}
+\medskip
+
+% begin-items
+% 
+
+\begin{blurb}
+<p>This issue combines regular articles and other material with the
+Practical TeX 2005 conference proceedings.
+
+<p>If you're not already a member, we hope you'll consider <a
+href="/join.html">joining TUG</a> or <a href="/usergroups.html">another
+TeX user group</a>, to support these publications, conferences, and
+other TeX projects.
+
+<p>
+\end{blurb}
+
+\issue{26}{1}{82}{2005}{/practicaltex2005/}{Practical TeX 2005 Proceedings (Chapel Hill, North Carolina)}
+
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 26:1 as one pdf (5mb)}
+        {}
+        {\offset{.1}}
+        {/TUGboat/tb26-1/tb82complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2\offset{.2}}
+        {/TUGboat/tb26-1/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Contents ordered by difficulty}
+        {}
+        {c3\offset{.3}}
+        {/TUGboat/tb26-1/cover3.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {1}
+        {/TUGboat/tb26-1/titlepage.pdf}
+
+\category{Introductory}
+
+\capsule{Introductory}
+  {General Delivery}
+  {Barbara Beeton}
+  {Editorial comments}
+  {typography and {\sl TUGboat} news}
+  {3\offset{.1}}
+  {/TUGboat/tb26-1/tb82beet.pdf}
+  {Old {\it TUGboat} issues go electronic\\
+CTAN announcement archives\\
+Another \LaTeX\ manual\Dash{}for word processor users\\
+Create your own alphabet\\
+Type design exhibition ``Letras Latinas''\\
+The cost of a bad proofreader\\
+Looking at the same text in different ways\\
+CSS on the web\\
+Some comments on mathematical typesetting}
+  {}
+
+\capsule{Introductory}
+  {General Delivery}%replace|Hyphenation
+  {Barbara Beeton}
+  {Hyphenation exception log}
+  {update to missed and incorrect U.S. English hyphenations}
+  {5}
+  {/TUGboat/tb26-1/tb82hyf.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {General Delivery}
+  {Karl Berry}
+  {From the president}
+  {\acro{TUG} activities and information for 2005}
+  {3}
+  {/TUGboat/tb26-1/tb82pres.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Talks}%replace|General Delivery
+  {Peter Flom}
+  {A \LaTeX{} fledgling struggles to take flight}
+  {incentives and barriers to learning \LaTeX}
+  {52}
+  {/TUGboat/tb26-1/flom.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Practical TeX 2005}%add|General Delivery
+  {Peter Flom \aand Tristan Miller}
+  {Impressions of Prac\TeX'05}
+  {comments on the conference from attendees}
+  {31}
+  {/TUGboat/tb26-1/impressions.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Talks}%replace|\LaTeX
+  {Peter Flynn}
+  {\LaTeX\ on the Web}
+  {review of \LaTeX\ interactions with the Web}
+  {66}
+  {/TUGboat/tb26-1/flynn.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Talks}%replace|Graphics
+  {Klaus H\"oppner}
+  {Strategies for including graphics in \LaTeX{} documents}
+  {introduction to common graphics formats and tools}
+  {59}
+  {/TUGboat/tb26-1/hoeppner.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Talks}%replace|\LaTeX
+  {Joseph Hogg}
+  {Making a booklet}
+  {notes on useful packages and processes for booklet production}
+  {63}
+  {/TUGboat/tb26-1/hogg.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Talks}%replace|\LaTeX
+  {Andrew Mertz \aand William Slough}
+  {Beamer by example}
+  {producing slide presentations via a series of examples}
+  {68}
+  {/TUGboat/tb26-1/mertz.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Talks}%replace|Resources
+  {Anita Schwartz}
+  {The art of \LaTeX{} problem solving}
+  {summary of strategies and resources for debugging \LaTeX}
+  {56}
+  {/TUGboat/tb26-1/schwartz.pdf}
+  {}
+  {}
+
+% 
+\category{Intermediate}
+
+\capsule{Intermediate}
+  {Talks}%replace|Software \& Tools
+  {Kaveh Bazargan}
+  {Batch Commander: A graphical user interface for \TeX{}}
+  {interactive parameter setting and instant feedback}
+  {74}
+  {/TUGboat/tb26-1/bazargan.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Talks}%replace|Software \& Tools
+  {David Ignat}
+  {Word to \LaTeX{} for a large, multi-author scientific paper}
+  {conversion from Word and Perl manipulation of references}
+  {81}
+  {/TUGboat/tb26-1/ignat.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Talks}%replace|Abstracts
+  {Allen, Burt, Fehd, Gurari, Janc, Kew, Peter}
+  {Prac'\TeX{} 2005 abstracts}
+  {}
+  {97}
+  {/TUGboat/tb26-1/abstracts.pdf}
+  {}
+  {}
+
+% 
+\category{Intermediate Plus}
+
+\capsule{Intermediate Plus}
+  {Talks}%replace|Bibliographies
+  {Tristan Miller}
+  {Biblet: A portable \slBibTeX\ bibliography style for generating highly customizable \acro{XHTML}}
+  {making Web pages from bibliographies in pure BibTeX}
+  {85}
+  {/TUGboat/tb26-1/miller-biblet.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {Software \& Tools}
+  {Tristan Miller}
+  {Using the \acro{RPM} package manager for \AllTeX\ packages}
+  {using and building \acro{RPM} packages for \TeX}
+  {17}
+  {/TUGboat/tb26-1/tb82miller-rpm.pdf}
+  {}
+  {}
+
+% 
+\category{Advanced}
+
+\capsule{Advanced}
+  {Keynote}%add|Software \& Tools
+  {Nelson Beebe}
+  {The design of \TeX{} and \slMF{}: A retrospective}
+  {historical review of the \TeX\ system software design and development}
+  {33}
+  {/TUGboat/tb26-1/beebe.pdf}
+  {}
+  {}
+
+\capsule{Advanced}
+  {\LaTeX}
+  {Pedro Quaresma}
+  {Stacks in \TeX}
+  {stacks, for package writers, and commutative diagrams}
+  {7}
+  {/TUGboat/tb26-1/tb82quar.pdf}
+  {}
+  {}
+
+\capsule{Advanced}
+  {Graphics}
+  {Denis Roegel}
+  {Kissing circles: A French romance in MetaPost}
+  {MetaPost construction of the ``Apollonian gasket'' of tangent circles}
+  {10}
+  {/TUGboat/tb26-1/tb82roegel.pdf}
+  {}
+  {}
+
+% 
+\category{Reports and notices}
+
+\capsule{}
+  {News}
+  {}
+  {Calendar}
+  {}
+  {99}
+  {/TUGboat/tb26-1/tb82calendar.pdf}
+  {}
+  {}
+
+\capsule{}
+  {TUG Business}
+  {}
+  {Institutional members}
+  {}
+  {104\offset{-4}}
+  {/TUGboat/tb26-1/instmem-list.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Practical \TeX\ 2005}
+  {}
+  {Conference program, delegates, and sponsors}
+  {}
+  {29}
+  {/TUGboat/tb26-1/confinfo.pdf}
+  {}
+  {}
+
+% 
+\category{Reports and notices}
+
+\capsule{}
+  {Advertisements}
+  {}
+  {Carleton Production Centre}
+  {}
+  {101\offset{.2}}
+  {/TUGboat/tb26-1/ad1.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Advertisements}
+  {}
+  {Design Science, Inc.}
+  {}
+  {102\offset{.2}}
+  {/TUGboat/tb26-1/ad2.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Advertisements}
+  {}
+  {Joe Hogg}
+  {}
+  {101\offset{.1}}
+  {/TUGboat/tb26-1/ad1.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Advertisements}
+  {}
+  {{\sl The \LaTeX\ Companion}, second edition, by Frank Mittelbach et al.}
+  {}
+  {102\offset{.3}}
+  {/TUGboat/tb26-1/ad2.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Advertisements}
+  {}
+  {MacKichan Software, Inc.}
+  {}
+  {103\offset{.2}}
+  {/TUGboat/tb26-1/ad3.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Advertisements}
+  {}
+  {Personal \TeX, Inc.}
+  {}
+  {102}
+  {/TUGboat/tb26-1/ad2.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Advertisements}
+  {}
+  {Steve Peter}
+  {}
+  {103}
+  {/TUGboat/tb26-1/ad3.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Advertisements}
+  {}
+  {Cheryl Ponchin Training}
+  {}
+  {103\offset{.1}}
+  {/TUGboat/tb26-1/ad3.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Advertisements}
+  {}
+  {River Valley Technologies}
+  {}
+  {102\offset{.1}}
+  {/TUGboat/tb26-1/ad2.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Advertisements}
+  {}
+  {Silmaril Consultants}
+  {}
+  {101}
+  {/TUGboat/tb26-1/ad1.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Advertisements}
+  {}
+  {\TeX\ consulting and production services}
+  {}
+  {104\offset{-3.9}}
+  {/TUGboat/tb26-1/consultants.pdf}
+  {}
+  {}
+
+\bye

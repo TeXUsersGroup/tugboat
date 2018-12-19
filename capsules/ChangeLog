@@ -1,0 +1,860 @@
+2018-12-17  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (lists_url_html, lists_author_html,
+	lists_entry_trailer): new fns.
+	(lists_vol_iss_link): add lists_ prefix.
+	* capaccum-keyword.pl,
+	* capaccum-title.pl,
+	* capaccum-author.pl: call those new subroutines.
+
+	* capaccum-author.pl: rm debug msg
+
+2018-12-16  Karl Berry  <karl@freefriends.org>
+
+	* capaccum-title.pl,
+	* capaccum-keyword.pl,
+	* capaccum-author.pl: newline after /small.
+	(find_authors): special case to make Han = Thanh.
+
+	* capaccum.pl (vol_iss_link): leave newline to caller (not wanted
+	in author).
+
+	* capaccum-keyword.pl: ?:
+
+2018-12-14  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl: Advogato another known one-word author
+	* capaccum-author.pl (find_authors): handle %person.
+	* capconv.pl (transform_author): check for et al. not unified.
+
+2018-12-13  Karl Berry  <karl@freefriends.org>
+
+	* capaccum-keyword.pl: write category list as table instead of
+	bullets.
+	* capaccum.pl: doc
+
+2018-12-11  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl (transform_author): split at \& and allow optional
+	comma before "and".
+	* capaccum-author.pl: sort_by_issue_page (no title).
+
+2018-12-07  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (accumulation): merge Editorial (note|page) into
+	standard title "Editorial information", ditto "Cover" into "Front
+	cover".
+
+	* capaccum-author.pl (find_authors): warn about untranslated
+	entities; remove all but alphanumeric,.&
+
+2018-12-05  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl,
+	* capaccum-title.pl: doc
+
+2018-12-03  Karl Berry  <karl@freefriends.org>
+
+	* capaccum-author.pl: space
+	* capconv.pl (transform_author): report if only one word, most
+	likely an un-unified last name from an abstracts.
+
+2018-12-01  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl: doc
+
+2018-11-30  Karl Berry  <karl@freefriends.org>
+
+	* capaccum-author.pl: case-insensitive comparison
+
+	* capconv.pl (transform_author): \s+and\s+ additional case for
+	author splitting.
+
+2018-11-28  Karl Berry  <karl@freefriends.org>
+
+	* capaccum-author.pl: need same %author_html hash as with titles.
+
+2018-11-27  Karl Berry  <karl@freefriends.org>
+
+	* capaccum-title.pl (title_unify_journals): also unify EuroTeX.
+
+	* capaccum-keyword.pl (print_all_by_category): explicit <small> for
+	vol_iss_link output.
+
+	* capaccum-title.pl: can reduce <small>s.
+	* capaccum.pl: enable author output.
+	(vol_iss_link): don't insert <small> here, leave
+	it to context.
+
+	* capaccum-title.pl: doc
+
+2018-11-26  Karl Berry  <karl@freefriends.org>
+
+	* capin.pl,
+	* tucap: overall doc, including \difficulty
+
+	* capaccum-title.pl: nearest
+	* capaccum-title.pl: item
+	* capaccum-title.pl: doc
+
+2018-11-25  Karl Berry  <karl@freefriends.org>
+
+	* capaccum-title.pl (output_title_list): localize decls for
+	initial index.
+
+2018-11-24  Karl Berry  <karl@freefriends.org>
+
+	* capaccum-keyword.pl: fmt
+	* capaccum-title.pl: subroutines
+
+2018-11-22  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl: split capaccum-{title,keyword} into separate files.
+	* capaccum-title.pl,
+	* capaccum-keyword.pl: new files.
+
+2018-11-21  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (category_anchors, print_all_by_category): finish
+	subroutines for output_keyword_list.
+
+2018-11-20  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (find_categories): split off into subroutine.
+
+2018-11-19  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (output_title_list): output index of links into the
+	list.
+
+2018-11-12  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl: handle &oml from dtk when making anchor
+
+2018-11-11  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (title_unify_journals): new fn.
+	(accumulation): call it, instead of deleting everything after :,
+	(output_title_list): output visible #anchor.
+
+2018-11-07  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl (transform_subtitles): remove semicolon before \\ if
+	present.
+
+2018-11-04  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (output_title_list): make title heading be
+		the(pre)sort string in common for ArsTeXnica, etc.
+
+2018-11-01  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (vol_iss_link): include preceding spaces here
+
+	* capaccum.pl (accumulation): remember whether we make a merged
+	title_sort.
+
+	* capaccum.pl (output_title_list): output all subtitles except
+	book reviews, not just beet, and do it at the end.
+
+2018-10-31  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (output_title_list): include beet subtitles.
+
+2018-10-30  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl: try removing all non-alphanumeric, except & and ,
+
+	* lists-regexps.txt (\\ss$): handle es-zet here for end of names
+	(Vo\ss)
+
+2018-10-29  Karl Berry  <karl@freefriends.org>
+
+	* lists-regexps.txt: let's handle all accents in
+	lists-translations.
+
+	* capaccum.pl (accumulation): remove & not followed by ;
+
+2018-10-25  Karl Berry  <karl@freefriends.org>
+
+	* capdata-xlate.pl (xlate_html2txt): from html_str, not tex_expr.
+
+	* capaccum.pl (accumulation): call xlate_html2txt; more char
+		removals.
+
+2018-10-24  Karl Berry  <karl@freefriends.org>
+
+	* capdata-xlate.pl (xlate_html2txt): skip txt only if undef, not false.
+	(read_translations): remember empty strings, but not undefined
+	third-values.
+
+	* capaccum.pl (accumulation): specify <img> sizes.
+
+2018-10-23  Karl Berry  <karl@freefriends.org>
+
+	* capdata-xlate.pl (xlate_html2txt): first attempt.
+	* capaccum.pl: doc
+
+2018-10-21  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl: doc fixes.
+	* capaccum.pl (vol_iss_link): factor out generation of HTML link
+	to the issue; change output_*_list to call.
+
+2018-10-19  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (output_title_list): more title_sort cleanups
+
+	* capout.pl (contents_link_from_seq): rename from
+	contents_filename_from_seq, prepend /TUGboat/Contents. Change
+	callers.
+	
+	(write_entries): do not shift author_html by reference.
+
+2018-10-18  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (output_title_list): construct anchors from titles.
+
+2018-10-16  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (accumulation): case-insensitive sort.
+	(output_title_list): output html for title.
+
+2018-10-15  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl: remove leading A(n)/The for title_sort.
+
+2018-10-14  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (output_title_list): first cut at dumping titles
+
+	* tucap: ff
+	* capconv.pl (transform_category): remove spaces before \Dash as
+	well as after.
+
+2018-10-13  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl: pluralize %categories, %titles, continue titles.
+
+2018-10-12  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (output_title_list): begin.
+	(output_keyword_list): rename.
+
+	* capaccum.pl: report sorting
+
+2018-10-11  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl: spacing
+	* capaccum.pl (list_keyword_output): output visible #cattag.
+
+2018-10-08  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (accumulation): move common text header, title_sort
+	string, etc., here.
+	(list_keyword_output): adjust, and output count.
+
+2018-10-07  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (list_category_output): more title_sort special
+	cases.
+
+2018-10-06  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (list_category_keyword): create title_sort from
+	title_sort.
+	(for_category): use it, and rename sort sub.
+
+2018-10-05  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (list_category_output): first cut at sorting.
+
+2018-10-04  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (list_category_output): output html for each capsule
+	entry.
+
+2018-10-02  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (list_category_output): need issue info in each
+	capsule
+
+	* caputil.pl (info_hash): only return if quiet.
+	* capin.pl: % doc
+
+2018-09-21  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (list_category_output): get cat tags.
+
+2018-09-20  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (list_category_output): call transform_category on
+	%replace and %add categories.
+
+	* capconv.pl: doc
+
+2018-09-15  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (accumulation): rename from accumulation_output.
+	(list_category_output): handle directives.
+	* tucap (main): just save each %issue_html in %accum, no
+	accumulate_issue.
+
+2018-09-12  Karl Berry  <karl@freefriends.org>
+
+	* capin.pl: doc
+
+2018-09-10  Karl Berry  <karl@freefriends.org>
+
+	* tucap: fieldname doc
+	* capin.pl: doc
+
+2018-09-09  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (list_category_output): unify, #tag generation,
+	prepare for actual $fh output.
+	* capconv.pl (transform_category): \& -> & for sake of comparison
+	with current output.
+
+2018-09-07  Karl Berry  <karl@freefriends.org>
+
+	* capdata-unify.pl: debug line to see all unifications
+	* capconv.pl (transform_category): \Dash might be followed by
+	space (tb56).
+
+2018-09-05  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl: begin html->text category name transform
+
+2018-09-04  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl (write_issue): call cap_html_{head,foot}er.
+	* caputil.pl: date and optional ident in footer
+	* capaccum.pl (list_category_output): call in util.
+	* caputil.pl (cap_html_{head,foot}er): factor out common routines.
+
+	* caputil.pl (info_hash): factor out yet another; doc.
+
+2018-09-03  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (list_category_output): more code trials,
+	rename from list_keyword_output.
+
+2018-09-02  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (accumulation_output): rename from
+	accumulation_dump.
+	(accumulate_issue): save each %issue_html.
+	(list_keyword_output): beginning.
+
+	* tucap: change call.
+
+2018-08-31  Karl Berry  <karl@freefriends.org>
+
+	* capdata-xlate.pl (xlate_dump_count): only dump zero entries.
+	* capaccum.pl: new file.
+	* tucap: move accum functions to capaccum.pl.
+
+2018-08-26  Karl Berry  <karl@freefriends.org>
+
+	* tucap (accumulation_check): new fn to check for all and
+	only expected difficulties and categories.
+	
+	(accumulation_dump): call it; and rename from dump_accumulation.
+
+2018-08-24  Karl Berry  <karl@freefriends.org>
+
+	* tucap: @expected
+
+	* capconv.pl: also handle , \and for tb68capsule Berdnikov et al.
+
+	* capconv.pl (transform_author): split at "\ \and" for tb72capsule
+	Vos\ss \and ...
+
+2018-08-23  Karl Berry  <karl@freefriends.org>
+
+	* capin.pl: no dump of split pieces
+	* capin.pl (read_issue): need non-capturing groups for split.
+
+2018-08-22  Karl Berry  <karl@freefriends.org>
+
+	* capin.pl: accept \difficulty same as \category
+
+	* capconv.pl (transform_author): split at \and as well as \aand
+	and \cand.
+	* tucap (dump_accumulation): --authors output here.
+	(main): don't write_issue if --authors.
+	* capout.pl (write_issue): move --authors handling.	
+
+2018-08-21  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl (contents_filename_from_seq): leading 0 when < 10.
+
+2018-08-20  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl (write_issue): html formatting, use subtitles as
+	converted.
+	* capconv.pl (transform_subtitles): insert &nbsp;s here for each \\.
+
+2018-08-19  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl: space before generated
+	* capout.pl (write_issue): four spaces for subtitles and notes.
+	* capout.pl: <small> instead of <font size=-1>, apparently not in
+	html5.
+
+2018-08-18  Karl Berry  <karl@freefriends.org>
+
+	* capin.pl: doc
+	* capin.pl (read_issue): drop constant string "url".
+
+2018-08-17  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl (write_issue): two-digit tbNN in <title>;
+	include tbNN even for non-issues;
+	"The" Communications;
+	add dimensions of press72.jpg.
+
+2018-08-15  Karl Berry  <karl@freefriends.org>
+
+	* lists-regexps.txt: bare braces after fonts
+
+2018-08-14  Karl Berry  <karl@freefriends.org>
+
+	* lists-regexps.txt: move fonts to end for non-greedy match of
+	braces, e.g.,
+	Ji\v{r}\'{\i} Rybi\v{c}ka, {\it LaTeX pro za\v{c}\'ate\v{c}n\'{\i}ky (LaTeX for beginners)}}
+
+2018-08-13  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl: doc
+
+	* capconv.pl (transform_category): also elide empty braces.
+	(transform_pageno): move pageno_print logic to
+	here for consistency.
+	(capsule_convert): from here.
+
+2018-08-12  Karl Berry  <karl@freefriends.org>
+
+	* tucap: doc
+
+	* capconv.pl (transform_subtitles): new fn.
+	(capsule_convert): call it.
+
+2018-08-10  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl (transform_category): just do a few s/// instead of
+	tex2html; separate original category from unified.
+
+	* caputil.pl (normalize_whitespace): oops, must reduce /g internal
+	space sequences, not just the first.
+
+2018-08-08  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl (transform_category): new fn.
+	(capsule_convert): call it.
+
+2018-08-07  Karl Berry  <karl@freefriends.org>
+
+	* tucap (accumulate_issue, dump_accumulation): new fns.
+	* capconv.pl: doc
+	* capout.pl (write_issue): only select prev_out if ! stdout.
+	* capin.pl: doc
+
+2018-08-06  Karl Berry  <karl@freefriends.org>
+
+	* tucap (init): if only one capsule file, set --stdout and
+	clear --prevnext.
+
+	* capconv.pl (capsule_convert): no tex2html on difficulty;
+	don't redo tex2html on category for title.
+
+	* capout.pl (write_issue): output subtitles_html if we have it.
+	* tucap: do not dump counts unless we did them all.
+	* tucap: .pdf existence check done.
+
+2018-08-05  Karl Berry  <karl@freefriends.org>
+
+	* capdata-xlate.pl (xlate_dump_count): dump unused xlations.
+	(read_translations): report lines with no || at all.
+
+2018-08-04  Karl Berry  <karl@freefriends.org>
+
+	* capdata-xlate.pl (xlate_tex2html): track translation usage.
+	(xlate_dump_count): new fn to write them.
+
+	* tucap (main): call xlate_dump_count.
+	* capout.pl (write_issue): restore prev stdout filehandle.
+
+2018-08-01  Karl Berry  <karl@freefriends.org>
+
+	* capin.pl: directive doc
+
+2018-07-30  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl (write_issue): handle \notissue.
+
+2018-07-28  Karl Berry  <karl@freefriends.org>
+
+	* lists-regexps.txt (\sp): handle superscript
+
+2018-07-27  Karl Berry  <karl@freefriends.org>
+
+	* capdata-rx.pl: die if eval /eeg fails.
+
+2018-07-23  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl (write_entries): don't make a link to nothing.
+
+2018-07-22  Karl Berry  <karl@freefriends.org>
+
+	* lists-regexps.txt: missed "
+
+	* capdata-rx.pl: eval our /eeg expr, and die if $@ or warning.
+	* capdata-rx.pl: try qr on $lhs
+
+	* tucap,
+	* caputil.pl,
+	* capdata-unify.pl,
+	* capdata-xlate.pl: use strict warnings
+
+2018-07-20  Karl Berry  <karl@freefriends.org>
+
+	* capin.pl: use strict warnings:
+	(url_validate): global $::OPT.
+
+	* capout.pl: use strict warnings:
+	(contents_filename): global $::OPT.
+
+	* capout.pl (write_entries): space before pageno_print.
+
+	* lists-regexps.txt: due to /ee must make rhs eval-able.
+
+2018-07-19  Karl Berry  <karl@freefriends.org>
+
+	* capdata-rx.pl (read_regexps): do not \Q, indeed.
+	* capconv.pl: use strict warnings
+	* capdata-xlate.pl (read_translations): missed rename to
+	@tex_exprs.
+
+	* capin.pl (read_issue): allow optional leading x when checking
+	seqno/filename consistency.
+
+2018-07-17  Karl Berry  <karl@freefriends.org>
+
+	* capin.pl (url_validate): new fn to check that (mostly pdf) files
+	exist to resolve urls.
+	(read_issue): call it after !TBIDENT! substitution.
+	* tucap (init): new option --webroot, default /home/httpd/html.
+
+2018-07-15  Karl Berry  <karl@freefriends.org>
+
+	* capdata-rx.pl (lists_regexps): rename regexps_apply, closer to
+	filename and lists_unify.
+	* capconv.pl (tex2html): change call.
+
+	* capdata-rx.pl (regexps_apply): need /ee plus quoting.
+	https://stackoverflow.com/questions/392643
+
+2018-07-04  Karl Berry  <karl@freefriends.org>
+
+	* tucap (BEGIN): handle case of no dir part in $0 (from "perl
+	tucap").
+
+	* capconv.pl: doc
+
+2018-07-03  Karl Berry  <karl@freefriends.org>
+
+	* capin.pl: doc
+	* capin.pl: die if unexpected $control arg.
+	* capout.pl (contents_filename_from_seq): pass "issueonly" as
+	read_issue expects.
+
+2018-06-29  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl: let's have no output by default.
+	* tucap,
+	* capdata-unify.pl,
+	* capdata-xlate.pl: doc.
+
+	* capdata-rx.pl: switch to lhs||rhs format.
+	* lists-regexps.txt: switch to lhs||rhs format.
+
+2018-06-28  Karl Berry  <karl@freefriends.org>
+
+	* capdata-xlate.pl (read_translations): qr/\Q$tex_arg/ to
+	precompile what we are going to s//; approximately 75% speedup.
+
+	* caputil.pl (assert_nonempty): die if nonempty, don't just warn.
+
+2018-06-20  Karl Berry  <karl@freefriends.org>
+
+	* capdata-unify.pl: lists-unifications format doc.
+
+2018-06-19  Karl Berry  <karl@freefriends.org>
+
+	* capin.pl (read_issue): optional leading 0 on seqno vs. filename
+	comparison.
+
+2018-04-26  Karl Berry  <karl@freefriends.org>
+
+	* capin.pl (read_issue): check {seqno} argument from \issue
+	against filename.
+
+2018-04-23  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl (contents_filename_from_seq): pass $control arg to
+	avoid parsing the whole issue.
+	* capin.pl (read_issue): accept $control argument.
+
+2018-04-22  Karl Berry  <karl@freefriends.org>
+
+	* tucap (main): output_issue -> write_issue name change.
+
+	* capout.pl (write_issue): rename from output_issue;
+	  write info line at start.
+	(contents_filename_from_seq): return just "disabled"; change calls.
+	(contents_filename_from_issue): factor out sprintf.
+	(write_entries): rename from output_entries.
+
+	* capin.pl (read_issue): make the start line debug instead of
+	info.
+
+2018-04-19  Karl Berry  <karl@freefriends.org>
+
+	* tucap (init): new option --stdout.
+	* capout.pl (output_issue): output to contentsVV-N.html by
+	default.
+
+2018-03-13  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl: report shortdesc with empty difficulty
+
+2018-02-12  Karl Berry  <karl@freefriends.org>
+
+	* capin.pl: doc
+
+2018-02-02  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl (capsule_convert): title_html can use category if no
+	explicit title.
+	* capout.pl: include pageno if empty title_html
+
+2018-02-01  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl: .00
+	* capconv.pl (transform_pageno): actually make a decimal.
+
+2018-01-31  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl (transform_pageno): consider end of range as decimal.
+
+2018-01-14  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl (transform_pageno): allow and ignore -- in page
+	range.
+
+2018-01-04  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl (capsule_convert) <pageno_print>: avoid 151-151
+	duplication.
+
+	* capconv.pl: doc fix
+	* capconv.pl (transform_pageno): ignore leading zeros, don't
+	change to .
+
+2017-12-14  Karl Berry  <karl@freefriends.org>
+
+	* capin.pl: don't require blurb, I guess.
+
+2017-12-13  Karl Berry  <karl@freefriends.org>
+
+	* capin.pl: no blurb check
+
+2017-12-03  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl: attempt c1 -> .1
+
+2017-11-21  Karl Berry  <karl@freefriends.org>
+
+	* lists-regexps.txt: rearrange fonts
+
+	* tucap (prevnext): default to on.
+	* capout.pl (contents_filename_from_seq): support disabling
+	looking if --no-prevnext.
+
+	* capconv.pl (transform_pageno): generalize \offset number.
+
+2017-11-19  Karl Berry  <karl@freefriends.org>
+
+	* capin.pl: error wording
+	* capconv.pl (transform_pageno): ignore leading roman numerals in
+	pageno.
+
+2017-11-18  Karl Berry  <karl@freefriends.org>
+
+	* capin.pl: recognize \notissue
+	* capconv.pl (transform_pageno): allow optional zero in \offset
+
+2017-11-14  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl: don't touch {.} here
+	* lists-regexps.txt: rm bare braces
+
+2017-11-13  Karl Berry  <karl@freefriends.org>
+
+	* lists-regexps.txt: alphabetize, remove dup \acro
+
+2017-11-05  Karl Berry  <karl@freefriends.org>
+
+	* lists-regexps.txt: handle \manual here
+
+2017-11-04  Karl Berry  <karl@freefriends.org>
+
+	* tucap: --version, --no-prevnext
+
+2017-11-03  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl (transform_pageno): strip second number in range for
+	sorting.
+
+2017-09-12  Karl Berry  <karl@freefriends.org>
+
+	* self-locate, more pageno checking.
+
+2017-09-10  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl: one line
+
+2017-08-28  Karl Berry  <karl@freefriends.org>
+
+	* tucap: rename to capdata-*
+
+	* lists-regexps.txt: handle \text{bf,it,sl}.
+	* capconv.pl (transform_author): use tex2html.
+	* capout.pl: footer tweak
+
+2017-08-27  Karl Berry  <karl@freefriends.org>
+
+	* capxlations.pl (xlate_tex2html): make s/$tex/$html/g(lobal).
+
+	* capdata-rx.pl,
+	* lists-regexps.txt: new files.
+	* tucap: require capdata-rx.pl.
+	* capconv.pl (tex2html): revive fn, now calling regexps_apply
+	after xlate_tex2html.
+	(capsule_convert): change calls.
+
+	* capout.pl: missed ] after shortdesc
+	* capxlations.pl: doc
+
+2017-08-21  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl: create category_html, shortdesc_html.
+	* capout.pl: print category_html, shortdesc_html.
+
+2017-08-20  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl (transform_title): new fn.
+	(capsule_convert): call it.
+	rename,doc.
+	* capout.pl (output_entries): use title_html.
+
+2017-08-19  Karl Berry  <karl@freefriends.org>
+
+	* tucap: add capxlations.pl.
+	* capxlations.pl: (de)references.
+	* capconv.pl (transform_author): call xlate_tex2html. also split
+	at ,\\
+
+2017-08-15  Karl Berry  <karl@freefriends.org>
+
+	* capxlations.pl: return three lists
+
+2017-08-13  Karl Berry  <karl@freefriends.org>
+
+	* capxlations.pl (read_translations): init.
+
+2017-08-10  Karl Berry  <karl@freefriends.org>
+
+	* caputil.pl (capsule_ident): author field now a string.
+
+2017-08-08  Karl Berry  <karl@freefriends.org>
+
+	* caputil.pl (info): new fn.
+	* capin.pl (read_issue): call info() on each new file,
+	instead of debug().
+
+	* capconv.pl (capsule_convert): save author_html separate from author.
+	new name for transform_capsule.
+	* capin.pl: change call to capsule_convert.
+	* capout.pl: use author_html.
+
+2017-08-06  Karl Berry  <karl@freefriends.org>
+
+	* tucap: capconv.pl: renamed.
+	* capxform.pl: rename to capconv.pl.
+	
+	* capin.pl: handle !TBIDENT!.
+
+2017-08-03  Karl Berry  <karl@freefriends.org>
+
+	* capxform.pl (tex2html): pull out to new fn.
+	(transform_author): call tex2html on each author individually.
+
+2017-07-31  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl: get date
+	* tucap: maybe name unify is better.
+
+2017-07-29  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl: footer
+
+2017-07-26  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl: output shortdesc if we have it, don't worry about
+	difficulty.
+
+2017-07-25  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl: output [difficulty - shortdesc] and htmlnotes
+	* capxform.pl: doc
+
+2017-07-24  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl: omit author if empty, author inside </td>.
+	* capout.pl: print category rows
+
+2017-07-23  Karl Berry  <karl@freefriends.org>
+
+	* capxform.pl (transform_author): save html author string.
+	* capout.pl (output_issue): discard/use html author string.
+
+2017-07-20  Karl Berry  <karl@freefriends.org>
+
+	* tucap: debug 0 by default now?
+	* capin.pl (parse_capsules): %c_html must be my.
+	* capxform.pl (pageno_print): also create printable page number.
+	* capout.pl (output_entries): begin.
+
+2017-07-17  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl (output_entries): begin.
+	* capin.pl: doc fix: conversion to HTML
+	* tucap: %issue_html
+
+2017-07-16  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl: output issue url if given.
+
+	* tucap (Getopt::Long): no_ignore_case.
+
+	* capxform.pl (transform_pageno): actually add \offset, don't
+	assume it's < 1.
+
+2017-07-02  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl (contents_file_seq): read_issue ($capsule_file).
+
+This ChangeLog file released to the public domain.

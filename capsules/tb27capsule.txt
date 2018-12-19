@@ -1,0 +1,432 @@
+% $Id$
+
+\issue{11}{1}{27}{April 1990}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 11:1 as one pdf (11mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb11-1/tb27complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {1}
+        {/TUGboat/tb11-1/tb27titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {2}
+        {/TUGboat/tb11-1/tb27edit.pdf}
+
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {3-4}
+        {/TUGboat/tb11-1/tb27addresses.pdf}
+
+
+%THEcategory{General Delivery}
+
+\capsule{}
+        {General Delivery}
+        {}
+        {}
+        {}
+        {5-12}
+        {/TUGboat/tb11-1/tb27gendel.pdf}
+
+\capsule{}%subsec
+        {General Delivery}
+        {Nelson~H.~F.~Beebe}
+        {From the President}
+        {}
+        {5-6}
+        {/TUGboat/tb11-1/tb27gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Bart~Childs}
+        {From the past President and Annual Meeting host}
+        {}
+        {6-7}
+        {/TUGboat/tb11-1/tb27gendel.pdf}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {Donald E. Knuth Scholarship}
+        {}
+        {7-8}
+        {/TUGboat/tb11-1/tb27gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Michael~Ferguson}
+        {Coordination of non-English use of {\TeX}}
+        {}
+        {8-9}
+        {/TUGboat/tb11-1/tb27gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Peter~Breitenlohner}
+        {Using {\TeX}~3 in a multilingual environment\Dash Some ideas}
+        {}
+        {9-12}
+        {/TUGboat/tb11-1/tb27gendel.pdf}
+
+
+\capsule{}%subsecnn
+        {General Delivery}
+        {}
+        {Solution to crossword of {\TUB}~vol.~10, no.~3}
+        {}
+        {56-56}
+        {/TUGboat/tb11-1/tb27cross.pdf}
+
+
+%THEcategory{Software}
+
+
+\capsule{}%subsecnn
+        {Software}
+        {}
+        {Erratum: The new versions of {\TeX} and {\MF},                {\TUB} vol.~10, no.~3}
+        {}
+        {12-12}
+        {/TUGboat/tb11-1/tb27erratum.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {Donald~Knuth}
+        {Virtual Fonts: More Fun for Grand Wizards}
+        {}
+        {13-23}
+        {/TUGboat/tb11-1/tb27knut.pdf}
+
+
+\capsule{}%subsec
+        {Software}%replace|Hyphenation
+        {Gerard Kuiken}
+        {Additional Hyphenation Patterns}
+        {}
+        {24-25}
+        {/TUGboat/tb11-1/tb27kuiken.pdf}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Yannis~Haralambous}
+        {Typesetting modern Greek\Dash An update}
+        {}
+        {26-26}
+        {/TUGboat/tb11-1/tb27hara.pdf}
+
+
+%THEcategory{Graphics}
+
+
+\capsule{}%subsec
+        {Graphics}
+        {Lee~S.~Pickrell}
+        {Combining graphics with {\TeX} on IBM PC-compatible systems and LaserJet printers}
+        {}
+        {26-31}
+        {/TUGboat/tb11-1/tb27pickrell.pdf}
+
+
+%THEcategory{Resources}
+
+
+\capsule{}%subsec
+        {Resources}
+        {Barbara~Beeton \and Ron~Whitney}
+        {Summary of resources available to {\TeX} users}
+        {}
+        {32-36}
+        {/TUGboat/tb11-1/tb27beet-res.pdf}
+
+
+\capsule{}%subsec
+        {Resources}
+        {Barbara~Beeton}
+        {A proto-TUG bibliography}
+        {}
+        {36-37}
+        {/TUGboat/tb11-1/tb27beet-bib.pdf}
+
+
+\capsule{}%subsec
+        {Resources}
+        {Michael~DeCorte}
+        {The Clarkson archive server\Dash Update as of 26 January 1990}
+        {}
+        {38-45}
+        {/TUGboat/tb11-1/tb27decorte.pdf}
+
+
+%THEsite{IBM VM/CMS}
+
+
+\capsule{}%subsec
+        {Resources}
+        {Dean~Guenther}
+        {IBM VM/CMS site report}
+        {}
+        {45-45}
+        {/TUGboat/tb11-1/tb27guenther-vmcms.pdf}
+
+
+%THEcategory{Typesetting on\\Personal Computers}
+
+
+\capsule{}%subsec
+        {Typesetting on Personal Computers}
+        {Nicolas~Brouard}
+        {Une version compl\`ete de {\TeX} du domaine public  pour compatibles PC: Les ``deux disquettes GUT''}
+        {}
+        {46-51}
+        {/TUGboat/tb11-1/tb27brouard.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Victor~Eijkhout}
+        {Unusual Paragraph Shapes}
+        {}
+        {51-53}
+        {/TUGboat/tb11-1/tb27eijkhout.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Dean~Guenther}
+        {{\sl{\TeX}T1} goes public domain}
+        {}
+        {54-56}
+        {/TUGboat/tb11-1/tb27guenther-text1.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Michael~J.~Wichura}
+        {Showing-off math macros}
+        {}
+        {57-61}
+        {/TUGboat/tb11-1/tb27wichura.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Peter~Breitenlohner}
+        {How to avoid writing long records                to {\TeX}'s {\tt\bs write} streams}
+        {}
+        {62-62}
+        {/TUGboat/tb11-1/tb27breitenlohner.pdf}
+
+
+%THEcategory{Tutorials}
+
+
+\capsule{}%subsec
+        {Tutorials}
+        {Lincoln~Durst}
+        {Forward references and the ultimate dirty trick}
+        {}
+        {62-68}
+        {/TUGboat/tb11-1/tb27durst.pdf}
+
+
+\capsule{}%subsec
+        {Tutorials}
+        {David~Salomon}
+        {Output routines: Examples and techniques.         Part I: Introduction and examples}
+        {}
+        {69-85}
+        {/TUGboat/tb11-1/tb27salomon.pdf}
+
+
+%THEcategory{\LaTeX}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Jackie~Damrau}
+        {The {\LaTeX} column}
+        {}
+        {85-86}
+        {/TUGboat/tb11-1/tb27damrau.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {C.~G.~van~der~Laan}
+        {Announcing two reports: SGML-{\LaTeX} and Journal style guidelines}
+        {}
+        {86-86}
+        {/TUGboat/tb11-1/tb27laan.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Joachim~Schrod}
+        {International {\LaTeX} is ready to use}
+        {}
+        {87-90}
+        {/TUGboat/tb11-1/tb27schrod.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Frank~Mittelbach \and Rainer~Sch\"opf}
+        {The new font family selection\Dash User interface to standard {\LaTeX}}
+        {}
+        {91-97}
+        {/TUGboat/tb11-1/tb27mitt.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Nico~Poppelier \and Johannes~Braams}
+        {A style option to adapt the standard {\LaTeX} document styles to A4 paper}
+        {}
+        {98-103}
+        {/TUGboat/tb11-1/tb27poppelier.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {B~Hamilton~Kelly}
+        {Some macros to draw crosswords}
+        {}
+        {103-119}
+        {/TUGboat/tb11-1/tb27kelly.pdf}
+
+
+%THEcategory{Abstracts}
+
+
+\capsule{}%subsec
+        {Abstracts}
+        {Luzia~Dietsche}
+        {Deutsche Kurzfassungen der {\TUB}-Artikel}
+        {}
+        {120-122}
+        {/TUGboat/tb11-1/tb27dietsche.pdf}
+
+
+%THEcategory{News \&\\Announcements}
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {}
+        {}
+        {122-126}
+        {/TUGboat/tb11-1/tb27news.pdf}
+
+
+\capsule{}%subsec
+        {News \& Announcements}
+        {Hubert~Partl}
+        {{\TeX}, TUG, and Eastern Europe}
+        {}
+        {122-123}
+        {/TUGboat/tb11-1/tb27news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {123-124}
+        {/TUGboat/tb11-1/tb27news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {GUTenberg'90, 15--17 May 1990, Toulouse, France}
+        {}
+        {125-126}
+        {/TUGboat/tb11-1/tb27news.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Call for papers: SGML \& {\TeX} conference,                31 August 1990, Groningen, The~Netherlands}
+        {}
+        {126-126}
+        {/TUGboat/tb11-1/tb27news.pdf}
+
+
+%THEcategory{Late-Breaking News}
+
+
+\capsule{}%subsec
+        {Late-Breaking News}
+        {Barbara~Beeton}
+        {Production notes}
+        {}
+        {127-127}
+        {/TUGboat/tb11-1/tb27late.pdf}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {128-130}
+        {/TUGboat/tb11-1/tb27instmem.pdf}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {TUG membership application}
+        {}
+        {131-131}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {148-148}
+        {/TUGboat/tb11-1/tb27ads.pdf}

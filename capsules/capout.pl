@@ -1,0 +1,226 @@
+# $Id$
+# TUGboat capsule output. Public domain.
+
+use strict; use warnings;
+
+# Output ISSUE representation (a hash) in HTML,
+# or just author list if $OPT{"authors"} is set.
+# 
+sub write_issue {
+  my (%issue) = @_;
+  &debug ("write_issue($issue{filename})");
+  &debug ("\n\f");
+  &debug_hash ("write_issue", %issue);
+  
+  my $issue_ident = "$issue{volno}:$issue{issno}, $issue{year}";
+  my $issue_seqno = $issue{"seqno"};
+  my $issue_seqno2 = sprintf "%02d", $issue{"seqno"}; # >=2 digits
+  my $prev_file = &contents_link_from_seq ($issue_seqno - 1);
+  my $next_file = &contents_link_from_seq ($issue_seqno + 1);
+  # e.g., if processing 32-3,
+  #   prev="/TUGboat/Contents/contents32-2.html" and
+  #   next="/TUGboat/Contents/contents33-1.html".
+  
+  my ($outfile, $outfilename, $prev_out);
+  if (! $::OPT{"stdout"}) {
+    $outfilename = &contents_filename_from_issue (%issue);
+    open ($outfile, ">", $outfilename) # three-arg open is safer
+    || die "$0: open(>$outfilename) failed: $!";
+    # change default output filehandle.
+    $prev_out = select ($outfile);
+  }
+
+  # Since --no-prevnext is only for debugging, output placeholder to
+  # make it clear that it shouldn't be deployed.
+  my $prev_issue_link = $prev_file eq "disabled" ? "[prev issue link disabled]"
+                        : "<a href=\"$prev_file\">previous issue</a> &nbsp;";
+  my $next_issue_link = $next_file eq "disabled" ? "[next issue link disabled]"
+                        : "<a href=\"$next_file\">next issue</a> &nbsp;";
+  
+  my $title = ($issue{"notissue"} ? $issue{"urllabel"}
+                                  : "TUGboat $issue_ident")
+              . " (tb$issue_seqno2)";
+  print &cap_html_header ($title);
+
+  my $tub_nav = <<END_NAV;
+    <div class="tubissuenav">
+    $prev_issue_link
+    $next_issue_link
+    <a href="/TUGboat/contents.html">all issues</a>
+    </div>
+END_NAV
+
+  if (! $issue{"notissue"}) {
+    # normal tub issue heading
+    print <<END_TOP_TUB;
+<table><tr>
+ <td><img align="bottom" alt="TUGboat" src="/TUGboat/noword.jpg"><br>
+  <h1>The Communications of the<br>TeX Users Group</h1>
+  <h2>TUGboat $issue_ident<br>
+$tub_nav
+  </h2></td>
+ <td><img alt="printing press" align="right" hspace=10 width=316 height=341
+         src="/TUGboat/press72.jpg"><br></td>
+</tr></table>
+END_TOP_TUB
+  } else {
+    # nonissue heading
+    print <<END_TOP_NONISSUE;
+<h2>$issue{"urllabel"}</h2>
+$tub_nav
+END_TOP_NONISSUE
+  }
+
+  if ($issue{"url"}) {
+    print qq!\n<h2><a href="$issue{url}">$issue{urllabel}</a></h2>\n\n!;
+    warn "issue urllabel empty, but url given: $issue{url}\n"
+      if ! $issue{"urllabel"};
+  }
+  
+  print qq!<div id="blurb">\n!;
+  print $issue{"blurb"};
+  print qq!</div>\n!;
+
+  print "<table>\n";
+  &write_entries (%issue);
+  print "</table>\n";
+  
+  print &cap_html_footer ("$issue_ident (issue $issue_seqno)");
+  
+  &debug_hash ("issue", %issue);
+  if (! $::OPT{"stdout"}) {
+    close ($outfile) || warn "$0: close($outfilename) failed: $!";
+    select ($prev_out);
+  }
+}
+
+
+# Return filename for the TUB contents file with sequence number SEQ.
+# For example, if SEQ is 101, return the string "contents32-2.html".
+# The information is gleaned from tbSEQcapsule.tex, assumed readable in
+# the current directory.
+# 
+# If SEQ is 0 (before the first issue),
+# or if tbSEQcapsule.tex does not exist (after the last),
+# return "contents.html". (The file existence test subsumes the 0
+# test, since there is no tb0capsule.tex.)
+# 
+# If looking for prev/next issues was disabled by the user, return "disabled".
+# 
+sub contents_link_from_seq {
+  my ($seq) = @_;
+  
+  return "disabled" if ! $::OPT{"prevnext"};
+
+  my $seq2 = sprintf "%02d", $seq; # we use tb0Ncapsule.tex when <= 9.
+  my $capsule_file = "tb${seq2}capsule.tex";
+  return "/TUGboat/contents.html" if ! -r $capsule_file; # includes seq=0
+
+  my %issue = &read_issue ($capsule_file, "issueonly");
+  my $contents_fname = &contents_filename_from_issue (%issue);
+  
+  # We want a link that is absolute from the root, since TUB contents
+  # pages appear in different places via symlinks.
+  return "/TUGboat/Contents/$contents_fname";
+}
+
+# Return contentsVV-N.html filename from %ISSUE information.
+# Replace / in $ISSUE{"issno"} with -. 
+# 
+sub contents_filename_from_issue {
+  my (%issue) = @_;
+  
+  (my $fname_issno = $issue{"issno"}) =~ s!/!-!;
+  return sprintf "contents%02d-%s.html", $issue{"volno"}, $fname_issno;
+}
+
+
+# The main thing: output all capsules in ISSUE to stdout, in page number
+# order, with TUGboat section names interspersed as necessary.
+# 
+sub write_entries {
+  my (%issue) = @_;
+  my %capsules = %{$issue{"capsules"}};
+  
+  my $last_category = "";
+  for my $pageno (sort { $a <=> $b } keys %capsules) {
+    my %cap = %{$capsules{$pageno}};
+    &debug_hash ("cap for $pageno", %cap);
+    
+    # print category if it is new.
+    my $category = $cap{"category_html"};
+    if ($category ne $last_category) {
+      print qq!<tr><td>&nbsp;</td></tr>\n!;
+      # but if category is empty (the first items), omit printing it.
+      print qq!<tr><td><b>$category</b></td></tr>\n! if $category;
+      print qq!\n!;
+      $last_category = $category;
+    }
+    
+    # item title, which should not be empty, since we (usually) make it a link.
+    &assert_nonempty ($cap{"title_html"},
+                      "write_entries ($pageno): capsule title");
+    # but if we have no url, don't make a link to nothing.
+    print qq!<tr><td>!;
+    print qq!<a href="$cap{url}">! if $cap{"url"};
+    print $cap{"title_html"} . "&nbsp;";
+    print qq!</a>! if $cap{"url"};
+    
+    # this is just about getting the output html to be nicely formatted:
+    # simple items with no author or anything else all on one line
+    # (hence no newline has been output yet after the title),
+    # else each post-title chunk on a line by itself,
+    # all indented to line up.
+    my $post_title_print = 0;
+    
+    # author(s).
+    my @author_html = @{$cap{"author_html"}}; # local copy
+    my $author_print = shift @author_html;    # html author string only
+    if ($author_print) { # omit if empty
+      print "\n" unless $post_title_print++;
+      print qq!        <br><small>&nbsp;&nbsp;$author_print&nbsp;</small>\n!;
+    }
+    
+    # [difficulty - shortdesc]
+    if ($cap{"shortdesc_html"}) {
+      print "\n" unless $post_title_print++;
+      # If we have a short description, print it. Usually we'll also
+      # have a difficulty, prepend that. We will often have a difficulty
+      # with no shortdesc (e.g., in Reports and Notices, Abstracts) --
+      # don't worry about that, the difficulty adds nothing there, so
+      # we'll just omit it.
+      &assert_nonempty ($cap{"difficulty"}, 
+                    "have shortdesc `$cap{shortdesc_html}' but difficulty is");
+      print qq!            &nbsp;&nbsp;&nbsp;&nbsp;<small>[!;
+      print qq!$cap{difficulty} &mdash; !  if $cap{"difficulty"};
+      print qq!$cap{shortdesc_html}]</small>\n!;
+    }
+    
+    # subtitles.
+    if ($cap{"subtitles_html"}) {
+      print "\n" unless $post_title_print++;
+      print qq!        <br><small>$cap{"subtitles_html"}</small>\n!
+    }
+
+    # htmlnotes.
+    if ($cap{"htmlnotes"}) {
+      print "\n" unless $post_title_print++;
+      print qq!        <br>&nbsp;&nbsp;&nbsp;&nbsp;!
+            . qq!<small>$cap{"htmlnotes"}</small>\n!
+    }
+
+    print "    " if $post_title_print;
+    print qq!</td>\n!;
+    
+    # the (printable/original) page number; almost always present,
+    # except for the complete.pdf link.
+    print qq!    <td align=right valign=top>&nbsp;!
+          . qq!$cap{pageno_print}&nbsp;</td>!
+      if $cap{"pageno_print"};
+
+    # end of this entry.
+    print qq!</tr>\n\n!;
+  }
+}
+
+1;

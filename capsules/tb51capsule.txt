@@ -1,0 +1,283 @@
+% $Id$
+
+\issue{17}{2}{51}{June 1996}{/tug1996/}{TUG 1996 Proceedings (Dubna, Russia)}
+
+\capsulenoprint{}
+  {}
+  {}
+  {Complete issue 17:2 as one pdf (5.4mb)}
+  {}
+  {\offset{.05}}
+  {/TUGboat/tb17-2/tb51complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1}
+        {/TUGboat/tb17-3/cover1.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2}
+        {/TUGboat/tb17-3/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {237}
+        {/TUGboat/tb17-3/titlepage.pdf}
+
+%THEcategory{Opening Address}
+
+
+\capsule{}%subsec
+        {Opening Address}
+        {Michel~Goossens}
+        {{Opening Words by the President}}
+        {}
+        {91}
+        {/TUGboat/Pres/tb51pres.html}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Karel P\'{\i}\v{s}ka}
+        {Cyrillic alphabets}
+        {}
+        {92-98}
+        {/TUGboat/tb17-2/tb51pisk.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {J{\"o}rg Knappen}
+        {{The {\ssf dc} fonts 1.3: Move  towards stability and completeness}}
+        {}
+        {99-101}
+        {/TUGboat/tb17-2/tb51knap.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Fukui Rei}
+        {{\ssf TIPA}: {A system for processing phonetic  symbols in {\LaTeX}}}
+        {}
+        {102-114}
+        {/TUGboat/tb17-2/tb51rei.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {A.S.~Berdnikov}
+        {{Computer Modern Typefaces as Multiple Master Fonts}}
+        {}
+        {115-119}
+        {/TUGboat/tb17-2/tb51mff.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {A.S.~Berdnikov}
+        {{\sl VFComb} 1.3\Dash the program which simplifies virtual font management}
+        {}
+        {120-125}
+        {/TUGboat/tb17-2/tb51vfc.pdf}
+
+
+%THEcategory{Encoding and \\{Multilingual}\\ {Support}}
+
+
+\capsule{}%subsec
+        {Encoding and \\{Multilingual}\\ {Support}}
+        {Yannis Haralambous}
+        {{$\Omega$Times and $\Omega$Helvetica fonts under  development: Step~One}}
+        {}
+        {126-146}
+        {/TUGboat/tb17-2/tb51omeg.pdf}
+
+
+\capsule{}%subsec
+        {Encoding and \\{Multilingual}\\ {Support}}
+        {Richard J.~Kinch}
+        {{Extending {\TeX} for Unicode}}
+        {}
+        {147-160}
+        {/TUGboat/tb17-2/tb51kin.pdf}
+
+
+\capsule{}%subsec
+        {Encoding and \\{Multilingual}\\ {Support}}
+        {L.~N.~Znamenskaya and S.~V.~Znamenskii}
+        {{Russian encoding  plurality problem and a new Cyrillic font set}}
+        {}
+        {161-165}
+        {/TUGboat/tb17-2/tb51mens.pdf}
+
+
+\capsule{}%subsec
+        {Encoding and \\{Multilingual}\\ {Support}}
+        {Peter~A.~Ovchenkov}
+        {Cyrillic {\TeX} files: Interplatform portability}
+        {}
+        {166-171}
+        {/TUGboat/tb17-2/tb51ovch.pdf}
+
+
+\capsule{}%subsec
+        {Encoding and \\{Multilingual}\\ {Support}}
+        {Michael~M.~Vinogradov}
+        {{A user-friendly multi-function {\TeX} interface based on Multi-Edit}}
+        {}
+        {172-174}
+        {/TUGboat/tb17-2/tb51vino.pdf}
+
+
+\capsule{}%subsec
+        {Encoding and \\{Multilingual}\\ {Support}}
+        {Olga~G.~Lapko}
+        {{Full Cyrillic: How many languages?}}
+        {}
+        {174-180}
+        {/TUGboat/tb17-2/tb51olga.pdf}
+
+
+%THEcategory{{\TeX} Systems}
+
+
+\capsule{}%subsec
+        {{\TeX} Systems}%replace|Multilingual Document Processing
+        {John~Plaice and Yannis~Haralambous}
+        {The latest developments in {$\Omega$}}
+        {}
+        {181-183}
+        {/TUGboat/tb17-2/tb51plaice.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Systems}
+        {Dag Langmyhr}
+        {{Star{\TeX}\Dash a {\TeX} for beginners}}
+        {}
+        {184-190}
+        {/TUGboat/tb17-2/tb51dag.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Systems}
+        {Gabriel~Valiente~Feruglio}
+        {Do journals honor {\LaTeX} submissions?}
+        {}
+        {191-199}
+        {/TUGboat/tb17-2/tb51vali.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Systems}
+        {Sergei~V.~Znamenskii and Denis~E.~Leinartas}
+        {{A new approach to the {\TeX}-related programs: A user-friendly interface}}
+        {}
+        {200-203}
+        {/TUGboat/tb17-2/tb51znam.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Systems}
+        {Ivan~G.~Vsesvetsky}
+        {The strait gate to {\TeX}}
+        {}
+        {204-205}
+        {/TUGboat/tb17-2/tb51ivan.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Systems}
+        {Laurent Siebenmann}
+        {{DVI-based electronic publication}}
+        {}
+        {206-214}
+        {/TUGboat/tb17-2/tb51sieb.pdf}
+
+
+\capsule{}%subsec
+        {{\TeX} Systems}
+        {Kees~van~der~Laan}
+        {{BLUe's format\Dash the off-off alternative}}
+        {}
+        {215-221}
+        {/TUGboat/tb17-2/tb51blue.pdf}
+
+
+%THEcategory{Graphics}
+
+
+\capsule{}%subsec
+        {Graphics}
+        {Kees~van~der~Laan}
+        {Turtle graphics and {\TeX}\Dash a child can do it}
+        {}
+        {222-228}
+        {/TUGboat/tb17-2/tb51turt.pdf}
+
+
+\capsule{}%subsec
+        {Graphics}
+        {A.S.~Berdnikov, O.A.~Grineva and S.B.~Turtia}
+        {Some useful macros which extend the {\LaTeX} {\tt picture} environment}
+        {}
+        {229-232}
+        {/TUGboat/tb17-2/tb51grf.pdf}
+
+
+%THEcategory{News \&\\{Announcements}}
+
+
+\capsule{}%subsec
+        {News \&\\{Announcements}}
+        {Mimi~Burbank}
+        {Production notes}
+        {}
+        {90-90}
+        {/TUGboat/tb17-2/tb51prod.pdf}
+
+
+\capsule{}%subsecnn
+        {News \&\\{Announcements}}
+        {}
+        {Calendar}
+        {}
+        {233-233}
+        {/calendar.html}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {234-234}
+        {/instmem.html}
+
+
+%THEcategory{Advertisements}
+
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {{\TeX} consulting and production services}
+        {}
+        {235-235}
+        {/consultants.html}

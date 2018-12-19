@@ -1,0 +1,236 @@
+% $Id$
+
+\issue{1}{1}{1}{October 1980}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 1:1 as one pdf (2.6mb)}
+        {}
+        {\offset{.001}}
+        {/TUGboat/tb01-1/tb01complete.pdf}
+        {}
+        {}
+
+\capsulenoprint{}
+        {}%replace|TUG Business
+        {}
+        {Steering Committee}
+        {}
+        {c2}
+        {/TUGboat/tb01-1/steering.pdf}
+        {}
+        {}
+        
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {1}
+        {/TUGboat/tb01-1/titlepage.pdf}
+        {}
+        {}
+
+\capsule{}%subsec
+        {}%replace|General Delivery
+        {Robert~Welland}
+        {Editor's Comments}
+        {}
+        {2-3}
+        {/TUGboat/tb01-1/tb01edit.pdf}
+        {}
+        {}
+
+
+%THEcategory{General Delivery}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Richard~Palais}
+        {{Message from the Chairman}}
+        {}
+        {3-7}
+        {/TUGboat/tb01-1/tb01pres.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Ellen~Swanson}
+        {{Publishing \& \TeX}}
+        {}
+        {7-9}
+        {/TUGboat/tb01-1/tb01swanson.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Michael~Spivak}
+        {{\AmSTeX\Dash``A very friendly product}''}
+        {}
+        {10-11}
+        {/TUGboat/tb01-1/tb01spivak.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Robert~Morris}
+        {{Minutes of the first TUG meeting, February 1980}}
+        {}
+        {12-16}
+        {/TUGboat/tb01-1/tb01morris.pdf}
+        {}
+        {}
+
+
+%THEcategory{Interface Software}
+
+
+\capsule{}%subsec
+        {Interface Software}%replace|Software \& Tools
+        {Ignacio~Zabala \and Luis~Trabb-Pardo}
+        {The status of the Pascal implementation of \TeX}
+        {}
+        {16-17}
+        {/TUGboat/tb01-1/tb01zabala.pdf}
+        {}
+        {}
+
+
+\capsule{}%subsec
+        {Interface Software}%replace|Output Devices
+        {David~Fuchs}
+        {The format of {\TeX}'s {DVI} files}
+        {}
+        {17-19}
+        {/TUGboat/tb01-1/tb01fuchs.pdf}
+        {}
+        {}
+
+
+
+%THEcategory{Site Reports}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Thea~Hodge}
+        {{University of Minnesota CDC Cyber site report}}
+        {}
+        {19-20}
+        {/TUGboat/tb01-1/tb01hodge.pdf}
+        {}
+        {}
+
+
+
+%THEcategory{Warnings \& Limitations}
+
+
+\capsule{}%subsec
+        {Warnings \& Limitations}
+        {Barbara~Beeton}
+        {Troubles with trace and other oddities}
+        {}
+        {20-20}
+        {/TUGboat/tb01-1/tb01beeton.pdf}
+        {}
+        {}
+
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}%add|Indexing
+        {Terry~Winograd \and Bill~Paxton}
+        {An indexing facility for \TeX}
+        {}
+        {\offset{950}}
+        {/TUGboat/tb01-1/winograd-paxton.pdf}
+        {Appendix A}
+        {}
+
+
+%THEcategory{Questions \& Answers}
+
+
+\capsule{}%subsecnn
+        {Questions \& Answers}
+        {}
+        {}
+        {}
+        {21-21}
+        {/TUGboat/tb01-1/tb01misc.pdf}
+        {}
+        {}
+
+
+%THEcategory{Letters}
+
+
+\capsule{}%subsec
+        {Letters}
+        {G\'erard~Emch \and Arnold~Pizer}
+        {}
+        {}
+        {22-23}
+        {/TUGboat/tb01-1/tb01emch.pdf}
+        {}
+        {}
+
+
+%THEcategory{Miscellaneous}
+
+
+\capsule{}%subsub
+        {}%replace|General Delivery
+        {}
+        {AMSTeX~Panel~Discussion}
+        {}
+        {c3}
+        {/TUGboat/tb01-1/tb01ams.pdf}
+        {}
+        {}
+
+\capsule{}%subsub
+        {Miscellaneous}
+        {}
+        {Order form for {\JoT}}
+        {}
+        {\offset{990}}
+        {}
+        {}
+        {}
+
+%THEcategory{Supplements}
+
+
+\capsule{}%subsub
+        {Miscellaneous}%replace|Supplements
+        {}
+        {\TeX\ Errata}
+        {}
+        {\offset{991}}
+        {URL}
+        {}
+        {}
+
+
+\capsule{}%subsub
+        {Miscellaneous}%replace|Supplements
+        {}
+        {TUG mailing list}
+        {}
+        {\offset{992}}
+        {URL}
+        {}
+        {}

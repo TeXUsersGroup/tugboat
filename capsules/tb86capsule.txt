@@ -1,0 +1,477 @@
+% $Id$
+\let\primitiveinput=\input
+\input eplain
+\beginpackages
+  \usepackage{graphics}
+\endpackages
+\let\input=\primitiveinput
+
+\input tugboat.cmn  % tugboat.dates macros
+\input tugboat.dates
+\input tb86pages
+
+\nopagenumbers
+\hyphenpenalty = 10000
+\advance\rightskip by 0pt plus 9pt
+\hoffset = .25in
+\voffset = -.5in
+\vsize = 10in
+
+% adjust everything else down
+\font\sf = cmss10
+\def\pkgname#1{{\sf #1}}
+
+\font\smallsl = cmsl9  \font\smallrm = cmr9
+\def\acrofont{% if slanted font, use slanted acro font
+   \ifdim \fontdimen1\font>0pt \smallsl \else \smallrm\fi
+}
+\def\acro#1{{\acrofont #1}}
+
+% for \BibTeX
+\font\smc=cmcsc10
+
+% slant \BibTeX and \MF
+\font\ninesl = cmsl9
+\font\slc = cmsl8 at 7pt
+\def\slBibTeX{{\ninesl B{\slc IB}\TeX}}  % cmcscsl10 not available as type1
+
+\font\manualsl = logosl10
+\def\slMF{{\manualsl META}\-{\manualsl FONT}\spacefactor1000 }
+\def\slMP{{\manualsl META}\-{\manualsl POST}\spacefactor1000 }
+
+% for \LaTeX, etc.
+\font\sevensl=cmti7
+\scriptfont\slfam=\sevensl
+
+\def\reflect#1{%
+  \ifx\reflectbox\undefined
+    \errmessage{graphics package must be loaded}%
+  \else
+    \ifdim \fontdimen1\font>0pt
+      \raise 1.75ex \hbox{\kern.1em\rotatebox{180}{#1}}\kern-.1em
+    \else
+      \reflectbox{#1}%
+    \fi
+  \fi
+}
+\def\hideheight#1{\setbox0=\hbox{#1}\ht0=0pt \dp0=0pt \box0 }
+\def\XeTeX{\leavevmode\hideheight{\hbox{X\lower.5ex
+  \hbox{\kern-.125em\reflect{E}}\kern-.1667em \TeX}}}
+
+%\def\XeTeX{Xe\TeX}
+
+% abbreviations
+\def\\{\hfil\break}
+\def\aand{{\rm and\space}} % matches tub, but might be too long
+\def\cand{\unskip,\space\ignorespaces}
+\def\cs#1{{\tt \char`\\#1}}
+\def\emph#1{{\it #1}}
+\def\smallbullet{\raise .4ex \hbox{$\scriptscriptstyle \bullet$}}
+\def\t#1{{\tt #1}}
+\def\TUB{{\sl TUGboat}}
+
+% from tugboat.front
+\def\titleslash{\raise.3ex\hbox{\sevenrm/}}
+
+\newcount\startpage
+\def\getpage#1{%
+  \input ../#1/firstpage.tex
+  \number\startpage
+}
+
+\let\offset=\gobble          % ignore manual sorting offset
+\long\def\begin#1#2\end#3{}  % ignore blurb
+\def\issue#1#2#3#4#5#6{}     % ignore issue info
+
+% formatting
+\newdimen\pagenowidth % space for just
+\setbox0=\hbox{000}
+\pagenowidth=\wd0  % aka 1.5em
+\newdimen\pagenospace  \pagenospace = 2.5em
+
+\def\category#1{\smallskip\noindent{\bf #1}\vskip .1\smallskipamount}
+
+% #1 is difficulty category -- follows \capsule on first line
+% #2 is TB category -- arg 2 is alone on its line, possibly with replace or add comment
+% #3 is author -- args 3-7 are alone on their lines
+% #4 is title
+% #5 is for statement
+% #6 is page number
+% #7 is URL of paper PDF
+% #8 is subtitles -- arg 8 can be alone on its line or multiple lines long
+% #9 is for notes added at html time -- arg 9 can be alone on its line or multiple lines long
+
+% args 2 to 7 must be alo
+\def\capsule#1#2#3#4#5#6#7#8#9{%
+    \vskip .3pt plus1pt
+    \noindent
+    \hangindent = \pagenospace
+      \advance\hangindent by 3em
+    \hbox to \pagenospace{%
+      \hbox to \pagenowidth{\hfil #6}%
+      \hfil}%
+     %
+     \def\author{#3}%
+     \def\title{#4}%
+     {\sl \author}%
+     %
+     % / only if both parts are present.
+     \ifx\author\empty\else \ifx\title\empty\else\ \titleslash\ \fi\fi
+     %
+     {\rm \title}%
+     %
+     \def\blurb{#5}%
+     \ifx\blurb\empty\else \hfil\break\hglue-2em\smallbullet\ \blurb\fi
+     \par
+}
+
+
+% typeset the actual title text.
+\font\titlebf = cmbx10 scaled \magstep1
+\leftline{{\titlebf TUG}BOAT \quad \volx\
+          \kern1.5pc Euro\TeX\ 2006 Conference Proceedings}
+\bigskip
+\leftline{{\titlebf Table of Contents}\kern1pc (ordered by difficulty)}
+\bigskip
+
+\rm
+
+% begin-items
+% 
+
+\begin{blurb}
+<p>If you're not already a member, we hope you'll consider <a
+href="/join.html">joining TUG</a> or <a href="/usergroups.html">another
+TeX user group</a>, to support these publications, conferences, and
+other TeX projects.  <a href="/memberaccess.html">More information on
+TUG member access</a>.
+
+<p>
+\end{blurb}
+
+\issue{27}{1}{86}{2006}{http://www.matexhu.org/eurotex2006/}{EuroTeX 2006 Proceedings (Debrecen, Hungary)}
+
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 27:1 as one pdf (7.1mb)}
+        {}
+        {\offset{.1}}
+        {/TUGboat/tb27-1/tb86complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c1\offset{.2}}
+        {/TUGboat/tb27-1/cover2.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Contents ordered by difficulty}
+        {}
+        {c3\offset{.3}}
+        {/TUGboat/tb27-1/cover3.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {1}
+        {/TUGboat/tb27-1/titlepage.pdf}
+
+\category{Introductory}
+
+\capsule{Introductory}
+  {General Delivery}
+  {G\'abor Bella}
+  {Impressions from Euro\TeX\ 2006}
+  {informal introduction to and review of Euro\TeX\ 2006, with photos}
+  {4}
+  {/TUGboat/tb27-1/tb86bella.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {General Delivery}
+  {Gy\"ongyi Bujdos\'o}
+  {The Hungarian \TeX\ Rhapsody\Dash Euro\TeX\ 2006}
+  {introduction to the Euro\TeX\ 2006 conference}
+  {3}
+  {/TUGboat/tb27-1/tb86bujdoso-intro.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Software \& Tools}
+  {Gy\"ongyi Bujdos\'o}
+  {Typography based on-line help on \TeX}
+  {towards an on-line \TeX\ help system including typographical assistance}
+  {28}
+  {/TUGboat/tb27-1/tb86bujdoso-help.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Macros}
+  {Katalin Fried et al.}
+  {The colourful side of {\TeX}}
+  {recollections of \TeX\ adventures through the years}
+  {13}
+  {/TUGboat/tb27-1/tb86fried.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Fonts}
+  {Taco Hoekwater \aand Hans Hagen}
+  {The making of a (\TeX) font}
+  {from cow (and a few sheep) drawings to digital letterforms}
+  {62}
+  {/TUGboat/tb27-1/tb86hoekwater-cows.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Software \& Tools}
+  {Ildik\'o Mikl\'os}
+  {K\"oMaL \acro{CD}\Dash The execution}
+  {making the archives of a century-old journal accessible online}
+  {43}
+  {/TUGboat/tb27-1/tb86miklos.pdf}
+  {}
+  {}
+
+\capsule{Introductory}
+  {Typography}
+  {Andr\'as Vir\'agv\"olgyi}
+  {Would Aldus Manutius have used \TeX{}?}
+  {beginnings of typography and the Aldine workshop}
+  {8}
+  {/TUGboat/tb27-1/tb86viragvolgyi.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Abstracts}
+  {Fahmy, Hagen, Henkel, Hufflen, Rad\'o, Schr\"oder, Szab\'o}
+  {Euro\TeX{} 2006 abstracts}
+  {}
+  {104}
+  {/TUGboat/tb27-1/tb86abstracts.pdf}
+  {}
+  {}
+
+
+
+% 
+\category{Intermediate}
+
+\capsule{Intermediate}
+  {Software \& Tools}
+  {Taco Hoekwater}
+  {Opening up the type}
+  {high-level plan for supporting OpenType in lua\TeX\ and pdf\TeX}
+  {16}
+  {/TUGboat/tb27-1/tb86hoekwater-luatex.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Software \& Tools}
+  {Taco Hoekwater}
+  {MetaPost developments\Dash autumn 2006}
+  {new features and fixes in the forthcoming MetaPost release}
+  {18}
+  {/TUGboat/tb27-1/tb86hoekwater-metapost.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Software \& Tools}
+  {Siep Kroonenberg}
+  {Managing a network \TeX{} installation under Windows}
+  {procedures and tips for a MiK\TeX-based site-wide installation}
+  {22}
+  {/TUGboat/tb27-1/tb86kroonenberg-miktex.pdf}
+  {}
+  {}
+
+\capsule{Intermediate}
+  {Fonts}
+  {Siep Kroonenberg}
+  {Font installation the shallow way}
+  {examples of simple font installation using afm2pl and afm2tfm}
+  {66}
+  {/TUGboat/tb27-1/tb86kroonenberg-fonts.pdf}
+  {}
+  {}
+
+
+% 
+\category{Intermediate Plus}
+
+\capsule{}
+  {Electronic documents}
+  {Istv\'an Bencze \cand Bal\'azs Fark \cand L\'aszl\'o Hatala \aand P\'eter Jeszenszky}
+  {Server side \acro{PDF} \\ generation based on \LaTeX\ templates}
+  {survey of free Java tools for \acro{PDF} generation and \LaTeX\ integration, with examples}
+  {51}
+  {/TUGboat/tb27-1/tb86bencze.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {Electronic documents}
+  {Thierry Bouche}
+  {A pdf\/\LaTeX-based automated journal production system}
+  {design of a generic system for production of many scientific journals}
+  {45}
+  {/TUGboat/tb27-1/tb86bouche.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {Software \& Tools}
+  {Hans Hagen}
+  {What tools do \ConTeXt\ users have?}
+  {review of tools for manipulating the \TeX\ environment, graphics, and more}
+  {38}
+  {/TUGboat/tb27-1/tb86hagen.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {Software \& Tools}
+  {L\'aszl\'o N\'emeth}
+  {Automatic non-standard hyphenation in OpenOffice.org}
+  {extending \TeX's hyphenation algorithm to handle spelling changes and more}
+  {32}
+  {/TUGboat/tb27-1/tb86nemeth.pdf}
+  {}
+  {}
+
+\capsule{Intermediate Plus}
+  {Software \& Tools}
+  {P\'eter Szab\'o and Andr\'as Hrask\'o}
+  {Managing a math exercise database with \LaTeX{}}
+  {using \LaTeX\ as source for a database with multiple output forms}
+  {57}
+  {/TUGboat/tb27-1/tb86szabo.pdf}
+  {}
+  {}
+
+
+% 
+\category{Advanced}
+
+\capsule{Advanced}
+  {Omega}
+  {Yannis Haralambous}
+  {New hyphenation techniques in $\Omega_2$}
+  {supporting generalized hyphenation routines}
+  {98}
+  {/TUGboat/tb27-1/tb86haralambous-hyph.pdf}
+  {}
+  {}
+
+\capsule{Advanced}
+  {Omega}
+  {Yannis Haralambous \cand G\'abor Bella \aand Atif Gulzar}
+  {Open-belly surgery in $\Omega_2$}
+  {radical reorganization of Omega to support general modularity and textemes}
+  {91}
+  {/TUGboat/tb27-1/tb86haralambous-o2.pdf}
+  {}
+  {}
+
+\capsule{Advanced}
+  {Bibliographies}
+  {Jean-Michel Hufflen}
+  {Ml\BibTeX\ meets \ConTeXt}
+  {adding support for \ConTeXt\ to Ml\BibTeX}
+  {76}
+  {/TUGboat/tb27-1/tb86hufflen.pdf}
+  {}
+  {}
+
+\capsule{Advanced}
+  {Tutorial}
+  {Bogus\l{}aw Jackowski}
+  {Appendix G illuminated}
+  {illustrations and explanations of fine points of \TeX's math typesetting}
+  {83}
+  {/TUGboat/tb27-1/tb86jackowski.pdf}
+  {}
+  {}
+
+\capsule{Advanced}
+  {Fonts}
+  {Karel P\'{\i}\v{s}ka}
+  {Font verification and comparison in examples}
+  {detailed examples and tools for exacting font comparisons}
+  {71}
+  {/TUGboat/tb27-1/tb86piska.pdf}
+  {}
+  {}
+
+
+
+% 
+\category{Reports and notices}
+
+\capsule{Reports and notices}
+  {}%replace|Conference Notes
+  {}
+  {Euro\TeX{} 2006 conference delegates, and sponsors}
+  {}
+  {2}
+  {/TUGboat/tb27-1/tb86confinfo.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {News}
+  {}
+  {Calendar}
+  {}
+  {106}
+  {/TUGboat/tb27-1/tb86calendar.pdf}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {TUG Business}
+  {}
+  {Institutional members}
+  {}
+  {107\offset{0.1}}
+  {/instmem.html}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {TUG Business}
+  {}
+  {\acro{TUG} 2007 election}
+  {}
+  {107\offset{0.2}}
+  {/election}
+  {}
+  {}
+
+\capsule{}
+  {Advertisements}
+  {}
+  {\TeX\ consulting and production services}
+  {}
+  {108}
+  {/consultants.html}
+  {}
+  {}
+
+\bye

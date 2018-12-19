@@ -1,0 +1,435 @@
+% $Id$
+
+\issue{8}{3}{19}{November 1987}{}{}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 8:3 as one pdf (7.7mb)}
+        {}
+        {\offset{.5}}
+        {/TUGboat/tb08-3/tb19complete.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {254}
+        {/TUGboat/tb08-3/tb19titlepage.pdf}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Editorial information}
+        {}
+        {255-255}
+        {/TUGboat/tb08-3/tb19edit.pdf}
+
+\capsule{}%subsecnn
+        {}
+        {}
+        {Addresses}
+        {}
+        {255-256}
+        {URL}
+
+
+%THEcategory{General Delivery}
+
+\capsule{}
+        {General Delivery}
+        {}
+        {}
+        {}
+        {257-262}
+        {/TUGboat/tb08-3/tb19gendel.pdf}
+
+\capsule{}%subsec
+        {General Delivery}
+        {Bart~Childs}
+        {From the President}
+        {}
+        {257-257}
+        {/TUGboat/tb08-3/tb19gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Rilla~Thedford}
+        {The Volunteer Tree}
+        {}
+        {258-258}
+        {/TUGboat/tb08-3/tb19gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Charles-Michel~Marle}
+        {Book publishing using \TeX}
+        {}
+        {259-260}
+        {/TUGboat/tb08-3/tb19gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Laurie~Mann}
+        {\TeX\ training, etc.\Dash A TUG meeting trip report}
+        {}
+        {260-262}
+        {/TUGboat/tb08-3/tb19gendel.pdf}
+
+
+\capsule{}%subsec
+        {General Delivery}
+        {Barbara~Beeton}
+        {From the Editor}
+        {}
+        {262-262}
+        {/TUGboat/tb08-3/tb19gendel.pdf}
+
+
+%THEcategory{Software}
+
+
+\capsule{}%subsec
+        {Software}
+        {Bart~Childs}
+        {Proposed minimum standards for \TeX\ distributions}
+        {}
+        {262-263}
+        {/TUGboat/tb08-3/tb19childs.pdf}
+
+
+\capsule{}%subsec
+        {Software}
+        {Thomas~J.~Reid}
+        {{\tt TANGLE} modification causes problems in \MF\ and PK files}
+        {}
+        {264-265}
+        {/TUGboat/tb08-3/tb19reid-tangle.pdf}
+
+
+\capsule{}%subsecnn
+        {Software}%replace|Hyphenation
+        {}
+        {Hyphenation exception log}
+        {}
+        {266-267}
+        {/TUGboat/tb08-3/tb19hyf.pdf}
+
+
+%THEcategory{Fonts}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Doug~Henderson}
+        {Update: \MF\ {\bf mode\_def\/} settings for \TeX\ output devices}
+        {}
+        {268-270}
+        {/TUGboat/tb08-3/tb19henderson.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Adrian~F.~Clark}
+        {Halftone output from \TeX}
+        {}
+        {270-274}
+        {/TUGboat/tb08-3/tb19clark.pdf}
+
+
+\capsule{}%subsec
+        {Fonts}
+        {Aarno~Hohti \and Okko~Kanerva}
+        {Generating an {\sl APL\/} font}
+        {}
+        {275-278}
+        {/TUGboat/tb08-3/tb19hohti.pdf}
+
+
+%THEcategory{Output Devices}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Don~Hosek}
+        {\TeX\ output devices (with charts)}
+        {}
+        {279-286}
+        {/TUGboat/tb08-3/tb19hosek.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Thomas~J.~Reid}
+        {DVI driver considerations for high-volume printing systems}
+        {}
+        {287-291}
+        {/TUGboat/tb08-3/tb19reid-dvi.pdf}
+
+
+\capsule{}%subsec
+        {Output Devices}
+        {Glenn~L.~Vanderburg \and Thomas~J.~Reid}
+        {{\tt\bs special} issues}
+        {}
+        {291-300}
+        {/TUGboat/tb08-3/tb19vanderburg.pdf}
+
+
+%THEcategory{Site Reports}
+
+\capsule{}
+        {Site Reports}
+        {}
+        {}
+        {}
+        {301-304}
+        {/TUGboat/tb08-3/tb19site.pdf}
+
+\capsule{}%subsec
+        {Site Reports}
+        {Graham~Toal}
+        {\TeX\ information for users in the U.K.}
+        {}
+        {301-301}
+        {/TUGboat/tb08-3/tb19site.pdf}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Malcolm~Brown}
+        {TeXhax Notes}
+        {}
+        {301-303}
+        {/TUGboat/tb08-3/tb19site.pdf}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Joachim~Lammarsch}
+        {6th Meeting of the ``\TeX-Interessenten'' in Germany}
+        {}
+        {304-304}
+        {/TUGboat/tb08-3/tb19site.pdf}
+
+
+%THEsite{Atari ST}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Klaus~Guntermann}
+        {Atari ST site report}
+        {}
+        {304-304\offset{.3}}
+        {/TUGboat/tb08-3/tb19site.pdf}
+
+
+%THEsite{Data General}
+
+
+\capsule{}%subsec
+        {Site Reports}
+        {Bart~Childs}
+        {Data General site report}
+        {}
+        {304-304\offset{.6}}
+        {/TUGboat/tb08-3/tb19site.pdf}
+
+
+%THEcategory{Typesetting on PCs}
+
+
+\capsule{}%subsec
+        {Typesetting on PCs}
+        {Mitch~Pfeffer \and Alan~Hoenig}
+        {Running \TeX\ on a 386-based computer: Twice as fast as an AT}
+        {}
+        {305-306}
+        {/TUGboat/tb08-3/tb19pfeffer.pdf}
+
+
+%THEcategory{Macros}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Christina~Thiele}
+        {What constitutes a well-documented macro?}
+        {}
+        {307-308}
+        {/TUGboat/tb08-3/tb19thiele.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Donald~E.~Knuth}
+        {Macros for Jill}
+        {}
+        {309-314}
+        {/TUGboat/tb08-3/tb19knut.pdf}
+
+
+\capsule{}%subsec
+        {Macros}
+        {Thomas~J.~Reid}
+        {Floating figures at the right, and        Some random text for testing}
+        {}
+        {315-320}
+        {/TUGboat/tb08-3/tb19reid-float.pdf}
+
+
+%THEcategory{\LaTeX}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Ken Yap}
+        {Contents of \LaTeX\ style collection        as of 15th September 1987}
+        {}
+        {320-323}
+        {/TUGboat/tb08-3/tb19yap.pdf}
+
+
+\capsule{}%subsec
+        {\LaTeX}
+        {Jackie~Damrau}
+        {The \LaTeX\ user's column}
+        {}
+        {323-326}
+        {/TUGboat/tb08-3/tb19damrau.pdf}
+
+
+%THEcategory{Queries}
+
+
+\capsule{}%subsec
+        {Queries}
+        {Peter~Flynn}
+        {Request for contributions to a new publication}
+        {}
+        {306-306}
+        {/TUGboat/tb08-3/tb19flynn.pdf}
+
+
+\capsule{}%subsec
+        {Queries}
+        {Jeffery~Boes}
+        {Reply: Printing out selected pages}
+        {}
+        {326-326}
+        {/TUGboat/tb08-3/tb19boes.pdf}
+
+
+\capsule{}%subsec
+        {Queries}
+        {Stephen~C.~Lipp}
+        {Title formatting macro wanted}
+        {}
+        {326-327}
+        {/TUGboat/tb08-3/tb19lipp.pdf}
+
+
+%THEcategory{News \& Announcements}
+
+\capsule{}
+        {News \& Announcements}
+        {}
+        {}
+        {}
+        {328-330}
+        {/TUGboat/tb08-3/tb19calendar.pdf}
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Calendar}
+        {}
+        {328-328}
+        {/TUGboat/tb08-3/tb19calendar.pdf}
+
+
+\capsule{}%subsecnn
+        {News  \& Announcements}
+        {}
+        {Exeter University: \TeX88, 18--20~July~1988}
+        {}
+        {329-330}
+        {/TUGboat/tb08-3/tb19calendar.pdf}
+
+
+\capsule{}%subsecnn
+        {News \& Announcements}
+        {}
+        {Call for papers: TUG Annual Meeting, Montr\'eal, 22--24~August~1988}
+        {}
+        {c3}
+        {URL}
+
+
+%THEcategory{TUG Business}
+
+
+\capsule{}%subsecnn
+        {TUG Business}
+        {}
+        {Institutional members}
+        {}
+        {331-332}
+        {/TUGboat/tb08-3/tb19instmem.pdf}
+
+
+%THEcategory{Forms}
+
+
+\capsule{}%subsecnn
+        {Forms}
+        {}
+        {TUG membership application}
+        {}
+        {333-334}
+        {/join.html}
+
+
+%THEcategory{Advertisements}
+
+\capsule{}
+        {Advertisements}
+        {}
+        {Advertisements}
+        {}
+        {335-352}
+        {/TUGboat/tb08-3/tb19ads.pdf}
+
+\capsule{}%subsecnn
+        {Advertisements}
+        {}
+        {Index of advertisers}
+        {}
+        {352-352}
+        {/TUGboat/tb08-3/tb19ads.pdf}
+
+
+%THEcategory{Supplements}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {{\sl Computers \& Typesetting\/}: Errata and Changes, Supplement}
+        {}
+        {\offset{992}}
+        {URL}
+
+
+\capsule{}%subsub
+        {Supplements}
+        {}
+        {TUG Membership List Supplement}
+        {}
+        {\offset{992.5}}
+        {/TUGboat/tb08-3/tb19members.pdf}
