@@ -1,3 +1,9 @@
+2018-12-25  Karl Berry  <karl@tug.org>
+
+	* capaccum-author.pl (find_authors): make %person augment
+	rather than replace the author value.
+	Change usage and documentation throughout.
+
 2018-12-24  Karl Berry  <karl@tug.org>
 
 	First deployment to production of *html files from this new code,

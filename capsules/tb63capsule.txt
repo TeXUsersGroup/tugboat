@@ -57,17 +57,17 @@
 
 
 \capsule{}%subsec
-        {General Delivery}
-        {Bart~Childs}
-        {{Norman W.~Naugle\Dash A Rememberance}}
+        {General Delivery}%add|Obituaries
+        {Bart~Childs}%person|Norman Naugle
+        {{Norman W.~Naugle\Dash A Remembrance}}
         {}
         {87-88}
         {/TUGboat/tb20-2/tb63naugle.pdf}
 
 
 \capsule{}%subsec
-        {General Delivery}
-        {Dag~Langmyhr}%person|Dag Langmyhr and Roswitha Graham
+        {General Delivery}%add|Obituaries
+        {Dag~Langmyhr}%person|Roswitha Graham
         {{Roswitha von den Schulenburg Graham}}
         {}
         {89-89}
@@ -76,7 +76,7 @@
 
 \capsule{}%subsec
         {General Delivery}
-        {Mimi~Burbank}%person|Mimi Burbank and Everett Larguier
+        {Mimi~Burbank}%person|Everett Larguier
         {{You meet the nicest people \dots\ Father~Everett~Larguier}}
         {}
         {89-90\offset{.5}}

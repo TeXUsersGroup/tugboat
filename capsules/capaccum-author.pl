@@ -76,14 +76,16 @@ sub find_authors {
     for my $pageno (sort { $a <=> $b } keys %{$iss{"capsules"}}) {
       my %cap = %{$iss{"capsules"}->{$pageno}};
       
-      my @author_html;
-      if ($cap{"author_person"}) { # %person directive is a string
-        my $author_html = &transform_author ($cap{"author_person"});
-        @author_html = @{$author_html};
-      } else {
-        @author_html = @{$cap{"author_html"}}; # local copy
-      }
+      my @author_html = @{$cap{"author_html"}};
       shift @author_html; # get rid of single-printable-html string
+      #
+      # if have %person directive (a string), augment list.
+      if ($cap{"author_person"}) {
+        my $person_html = &transform_author ($cap{"author_person"});
+        my @person_html = @{$person_html};
+        shift @person_html; # discard its single-printable-html string too
+        push (@author_html, @person_html); # order doesn't matter.
+      }
 
       for my $a (@author_html) {
         my $a_sort = &xlate_html2txt ($a);

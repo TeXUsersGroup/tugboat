@@ -4,7 +4,6 @@ xxxx ending page numbers not always present; synthesize?
 xxxx save, dump, compare all difficulty, category, etc.?, tex+html+txt strings
  in file, do we want?xxxx after switch, delete title unifications
 xxxx including count #matches for the other lists-* and show zeros
-xxxx after switch, have %person add to authors instead of replace
 xxxx and then, %person for obits and book reviews
 xxxx after switch, use &amp; in capconv and capaccum for categories
 
@@ -30,6 +29,10 @@ lists-translations  convert TeX fragments to HTML and sortable ASCII.
 lists-unifications  different category/author/title forms to be combined.
 
 
+25dec18 %person augment rather than replace.
+
+24dec18 deploy in production first time.
+
 18dec18 move to single directory in svn.
 
 17dec18 more subroutines for lists output.

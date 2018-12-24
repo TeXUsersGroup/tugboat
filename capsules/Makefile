@@ -1,5 +1,5 @@
 # $Id$
-# Public domain.
+# Public domain. See ./README.
 
 debug = #-D -D
 authors = #-A
@@ -15,7 +15,7 @@ perl = /usr/local/bin/perl $(profopt)
 captub = $(perl) captub $(options)
 time = time -f "time:%e"
 
-default check: per #all
+default check: one #all
 
 authors:
 	qqq
@@ -62,6 +62,7 @@ Contents = $(tubweb)/Contents
 install: # after make all and presumably install-test
 	cp -f contents*.html list*.html $(Contents)
 
+all-diff: all diff
 all-install: all install
 
 try:

@@ -288,7 +288,7 @@ sub parse_one_capsule {
 
 # Parse %DIRECTIVE|VALUE of type TYPE from STR. TYPE can be "category",
 # in which case STR can be %replace|... or %add|..., or "author", in
-# which case STR can be %person|... (which replaces the given author
+# which case STR can be %person|... (which augments the given author
 # string). Return a pair, the directive name ("replace", etc.) and the
 # value (no |). If STR is empty, or there are errors, return a pair of
 # empty strings.
