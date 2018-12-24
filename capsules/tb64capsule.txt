@@ -118,7 +118,7 @@
 
 \capsule{}%subsec
         {Customizing \\ Document Layout}%replace|\LaTeX
-        {David~Carlisle, Frank~Mittelbach, and~Chris~Rowley}
+        {David~Carlisle, Frank~Mittelbach, and Chris~Rowley}
         {{New interfaces  for {\LaTeX} class~design, Parts~I and~II}}
         {}
         {214-216}
@@ -223,7 +223,7 @@
 
 \capsule{}%subsec
         {Fonts, Graphics, and\\ New Developments}
-        {Wendy~McKay~and~Ross~Moore}
+        {Wendy~McKay and Ross~Moore}
         {{Convenient labelling of graphics,  the~{WARMreader}~way}}
         {}
         {262-271}
@@ -232,7 +232,7 @@
 
 \capsule{}%subsec
         {Fonts, Graphics, and\\ New Developments}
-        {Sergey~Lesenko~and~ Laurent~Siebenmann}
+        {Sergey~Lesenko and Laurent~Siebenmann}
         {{Viewing \acro{DVI} files with Acrobat Reader: \acro{DVIPDF} gives birth  to Acro\acro{DVI}}}
         {}
         {272-281}
@@ -307,12 +307,9 @@
         {/TUGboat/tb20-3/tb64grimm.pdf}
 
 
-%THEcategory{Workshops<   \subsec Eitan~Gurari~and~Sebastian~Rahtz\\\LaTeX{} to {XML}/Math\acro{ML}}\\320-320}
-
-
 \capsule{}%subsec
         {Workshops}%replace|Abstracts
-        {Eitan~Gurari~and~Sebastian~Rahtz}
+        {Eitan~Gurari and Sebastian~Rahtz}
         {\LaTeX{} to {XML}/Math\acro{ML}}
         {}
         {320-320}

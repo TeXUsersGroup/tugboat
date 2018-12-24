@@ -1,3 +1,4 @@
+% $Id$
 \vbox to \vsize{% for whole page, so we can see how overfull.
 
 \leftline{%
@@ -16,7 +17,8 @@
 available to TUG members only (so some of the links below require a TUG
 username and password).  General information items and articles already
 posted elsewhere are publicly available now.  All of the articles will
-become publicly available by May, 2019.
+become publicly available when the next issue is published (expected
+date: May&nbsp;2019).
 
 <p>If you're not already a member, we hope you'll consider <a
 href="/join.html">joining TUG</a> to support TUGboat and other TeX
@@ -31,7 +33,7 @@ access</a>.
 \capsulenoprint{}
         {}
         {}
-        {Complete issue 39:3 as one pdf (xxmb)}
+        {Complete issue 39:3 as one pdf (8.8mb)}
         {}
         {\offset{.1}}
         {https://www.tug.org/members/TUGboat/!TBIDENT!complete.pdf}
@@ -99,14 +101,19 @@ access</a>.
   {164-166}
   {/TUGboat/!TBIDENT!beet.pdf}
   {{Passings: Patricia Monohon (30 May 1941--6 April 2018),\\
-   Vytas Statulevicius ($dag$ July 2018)};\\
+   Vytas Statulevicius ($\dag$ July 2018)};\\
 {\TeX\ and the history of desktop publishing};\\
 {Open season for lectures on typography};\\
 {Daniel Berkeley Updike and the Janson font};\\
 {W. A. Dwiggins\Dash Making orders};\\
 {The Updike prize for student font designers};\\
 {A ``brand'' new font}}
-  {}
+  {<a href="https://www.computer.org/csdl/mags/an/2018/03/index.html"
+>Updated link for the IEEE Annals issue table of contents</a>.<br>
+Related material, including preprints for the TeX papers, is available
+from <a href="http://walden-family.com/ieee/texhistory.html"
+>Dave Walden's TeX history page</a>.
+  }
 
 \capsule{}
   {General Delivery}
@@ -257,7 +264,7 @@ access</a>.
   {Interview with Kris Holmes}
   {in-depth discussion of calligraphy, font design, and more, with many illustrations}
   {185-203}
-  {https://www.tug.org/members/TUGboat/!TBIDENT!holmes-bigelow.pdf}
+  {/TUGboat/!TBIDENT!holmes-walden.pdf}
   {}
   {}
 
@@ -316,7 +323,7 @@ access</a>.
 
 \capsule{}
   {Software \& Tools}
-  {Moritz Schubotz, Andr\'{e} Greiner-Petter, Philipp Scharpf, Norman Meuschke, Howard~S.~Cohl, Bela~Gipp}
+  {Moritz Schubotz, Andr\'e Greiner-Petter, Philipp Scharpf, Norman Meuschke, Howard~S.~Cohl, Bela~Gipp}
   {Improving the representation and conversion of mathematical formulae by considering the~textual~context}
   {gold standard benchmark and metrics to evaluate \AllTeX\ to \MathML\ tools}
   {228-240}
@@ -528,7 +535,7 @@ access</a>.
   {General Delivery}%add|Conference Notes
   {Norbert Preining}
   {\TeX{}Conf 2018 in Japan}
-  {}
+  {report on lively conference in Sapporo}
   {168-168}
   {/TUGboat/!TBIDENT!preining-jtexconf18.pdf}
   {}
@@ -612,7 +619,7 @@ access</a>.
   {}
   {\TeX\ consulting and production services}
   {}
-  {305\offset{.5}-306}
+  {305-306\offset{.5}}
   {/consultants.html}
   {}
   {}

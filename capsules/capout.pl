@@ -97,13 +97,13 @@ END_TOP_NONISSUE
 
 # Return filename for the TUB contents file with sequence number SEQ.
 # For example, if SEQ is 101, return the string "contents32-2.html".
-# The information is gleaned from tbSEQcapsule.tex, assumed readable in
+# The information is gleaned from tbSEQcapsule.txt, assumed readable in
 # the current directory.
 # 
 # If SEQ is 0 (before the first issue),
-# or if tbSEQcapsule.tex does not exist (after the last),
+# or if tbSEQcapsule.txt does not exist (after the last),
 # return "contents.html". (The file existence test subsumes the 0
-# test, since there is no tb0capsule.tex.)
+# test, since there is no tb0capsule.txt.)
 # 
 # If looking for prev/next issues was disabled by the user, return "disabled".
 # 
@@ -112,8 +112,8 @@ sub contents_link_from_seq {
   
   return "disabled" if ! $::OPT{"prevnext"};
 
-  my $seq2 = sprintf "%02d", $seq; # we use tb0Ncapsule.tex when <= 9.
-  my $capsule_file = "tb${seq2}capsule.tex";
+  my $seq2 = sprintf "%02d", $seq; # we use tb0Ncapsule.txt when <= 9.
+  my $capsule_file = "tb${seq2}capsule.txt";
   return "/TUGboat/contents.html" if ! -r $capsule_file; # includes seq=0
 
   my %issue = &read_issue ($capsule_file, "issueonly");
@@ -163,8 +163,9 @@ sub write_entries {
     # but if we have no url, don't make a link to nothing.
     print qq!<tr><td>!;
     print qq!<a href="$cap{url}">! if $cap{"url"};
-    print $cap{"title_html"} . "&nbsp;";
+    print $cap{"title_html"};
     print qq!</a>! if $cap{"url"};
+    print qq!&nbsp;!;
     
     # this is just about getting the output html to be nicely formatted:
     # simple items with no author or anything else all on one line
@@ -184,15 +185,23 @@ sub write_entries {
     # [difficulty - shortdesc]
     if ($cap{"shortdesc_html"}) {
       print "\n" unless $post_title_print++;
-      # If we have a short description, print it. Usually we'll also
-      # have a difficulty, prepend that. We will often have a difficulty
-      # with no shortdesc (e.g., in Reports and Notices, Abstracts) --
-      # don't worry about that, the difficulty adds nothing there, so
-      # we'll just omit it.
+
+      # If we have a short description, print it; in which case, we must
+      # also have a difficulty, prepend that, with space changed to nbsp
+      # for "Intermediate Plus". (We don't do that conversion in capconv
+      # because we haven't yet defaulted the empty difficulty arguments.
+      # So, seems simplest to do it here.)
+      # 
+      # On the other hand, we will often have a difficulty with no
+      # shortdesc (e.g., in Reports and Notices, Abstracts) -- don't
+      # worry about those, the difficulty adds nothing for the reader,
+      # so we'll just do nothing with it.
+      # 
       &assert_nonempty ($cap{"difficulty"}, 
                     "have shortdesc `$cap{shortdesc_html}' but difficulty is");
+      (my $dfi_html = $cap{"difficulty"}) =~ s/ /&nbsp;/g;
       print qq!            &nbsp;&nbsp;&nbsp;&nbsp;<small>[!;
-      print qq!$cap{difficulty} &mdash; !  if $cap{"difficulty"};
+      print qq!$dfi_html&nbsp;&mdash;&nbsp;! if $dfi_html;
       print qq!$cap{shortdesc_html}]</small>\n!;
     }
     

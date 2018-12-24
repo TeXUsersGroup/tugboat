@@ -1,3 +1,25 @@
+2018-12-24  Karl Berry  <karl@tug.org>
+
+	First deployment to production of *html files from this new code,
+	through tb123 == 39-3.
+	* Makefile (install-test, install, all-install, diff): new targets.
+	* capaccum-author.pl: one more space in table.
+	* capconv.pl: diagnostics, doc.
+	* capout.pl (contents_link_from_seq): tb*capsule.txt now,
+	no longer *.tex.
+	(write_entries): Output difficulty with nbsp (for Intermediate Plus).
+	* tb56capsule.txt,
+	* tb57capsule.txt,
+	* tb61capsule.txt,
+	* tb64capsule.txt: avoid ties around "and" in authors,
+	so as not to incur even more complication in splitting.
+	
+	* list-translations.txt ($\dag$, \ASCII, \MathML): tb123 abbrevs.
+	* lists-unifications.txt (Coriasco, Siebenmann): adjust.
+	
+	* tb123capsule.txt: new current issue.
+	* tb122capsule.txt: make public.
+
 2018-12-17  Karl Berry  <karl@freefriends.org>
 
 	* capaccum.pl (lists_url_html, lists_author_html,

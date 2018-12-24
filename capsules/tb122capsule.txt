@@ -14,12 +14,6 @@
 % 
 
 \begin{blurb}
-<p>Immediate online access to technical TUGboat articles will be
-available to TUG members only (so some of the links below require a TUG
-username and password).  General information items and articles already
-posted elsewhere are publicly available now.  All of the articles will
-become publicly available when the next issue is published.
-
 <p>If you're not already a member, we hope you'll consider <a
 href="/join.html">joining TUG</a> to support TUGboat and other TeX
 projects.  <a href="/memberaccess.html">More information on TUG member
@@ -36,7 +30,7 @@ access</a>.
         {Complete issue 39:2 as one pdf (5.8mb)}
         {}
         {\offset{.1}}
-        {https://www.tug.org/members/TUGboat/!TBIDENT!complete.pdf}
+        {/TUGboat/!TBIDENT!complete.pdf}
         {}
         {}
 
@@ -90,7 +84,7 @@ access</a>.
   {The {\tt tikzducks} package}
   {introduction, tutorials, and fun with these \TikZ\ graphics}
   {105-106}
-  {https://www.tug.org/members/TUGboat/!TBIDENT!raab-ducks.pdf}
+  {/TUGboat/!TBIDENT!raab-ducks.pdf}
   {}
   {}
 
@@ -113,7 +107,7 @@ access</a>.
   {Arara\Dash \TeX\ automation made easy}
   {\TeX\ build tool supporting \acro{MVEL} expressions and more}
   {122-125}
-  {https://www.tug.org/members/TUGboat/!TBIDENT!cereda-arara.pdf}
+  {/TUGboat/!TBIDENT!cereda-arara.pdf}
   {}
   {}
 
@@ -123,7 +117,7 @@ access</a>.
 %   {Typographers' Inn}
 %   {Fonts and faces and families; \XeLaTeX}
 %   {\getfirstpage{inn}}
-%   {https://www.tug.org/members/TUGboat/!TBIDENT!inn.pdf}
+%   {/TUGboat/!TBIDENT!inn.pdf}
 %   {}
 %   {}
 %
@@ -153,7 +147,7 @@ access</a>.
 %%%  {An introduction to the \LaTeX{} cross-referencing system}
 %%%  {built-in commands and useful packages: \pkg{cleveref}, \pkg{varioref}, \pkg{hyperref}, \pkg{xr{\rm[}-hyper{\rm]}}, \pkg{showlabels}}
 %%%  {\getfirstpage{thurnherr}}
-%%%  {https://www.tug.org/members/TUGboat/!TBIDENT!thurnherr.pdf}
+%%%  {/TUGboat/!TBIDENT!thurnherr.pdf}
 %%%  {}
 %%%  {}
 
@@ -163,7 +157,7 @@ access</a>.
   {Font loading in \LaTeX\ using the \pkg{fontspec} package: Recent updates}
   {usage summary, filename loading recommendation, futures}
   {113-116}
-  {https://www.tug.org/members/TUGboat/!TBIDENT!robertson-fontspec.pdf}
+  {/TUGboat/!TBIDENT!robertson-fontspec.pdf}
   {}
   {}
 
@@ -173,7 +167,7 @@ access</a>.
   {Supporting color and graphics in \pkg{expl3}}
   {\LaTeXe\ vs. \LaTeX3 drivers, color, comparison with \TikZ, examples}
   {117-118}
-  {https://www.tug.org/members/TUGboat/!TBIDENT!wright-l3graphics.pdf}
+  {/TUGboat/!TBIDENT!wright-l3graphics.pdf}
   {}
   {}
 
@@ -183,7 +177,7 @@ access</a>.
   {{\tt siunitx}: Past, present and future}
   {origination, concepts, \API, and enhancements}
   {119-121}
-  {https://www.tug.org/members/TUGboat/!TBIDENT!wright-siunitx.pdf}
+  {/TUGboat/!TBIDENT!wright-siunitx.pdf}
   {}
   {}
 
@@ -196,7 +190,7 @@ access</a>.
   {A rollback concept for packages and classes}
   {supporting rollback by date or version for packages, as well as the kernel}
   {107-112}
-  {https://www.tug.org/members/TUGboat/!TBIDENT!mitt-rollback.pdf}
+  {/TUGboat/!TBIDENT!mitt-rollback.pdf}
   {}
   {}
 
@@ -216,7 +210,7 @@ access</a>.
   {The Canvas learning management system and \LaTeX\acro{ML}}
   {connecting coursework documents in \LaTeX\ with web-based management}
   {126-130}
-  {https://www.tug.org/members/TUGboat/!TBIDENT!robertson-canvas.pdf}
+  {/TUGboat/!TBIDENT!robertson-canvas.pdf}
   {}
   {}
 
@@ -229,7 +223,7 @@ access</a>.
    {FreeType\_MF\_Module: A module for using\\\MF\ directly inside the FreeType rasterizer}
    {rendering \MF\ fonts on demand from within FreeType}
    {136-142}
-   {https://www.tug.org/members/TUGboat/!TBIDENT!choi-freetype.pdf}
+   {/TUGboat/!TBIDENT!choi-freetype.pdf}
    {}
    {}
 
@@ -239,7 +233,7 @@ access</a>.
 %  {\TeX.StackExchange cherry picking: \code{expl3}}
 %  {extended examples of \code{expl3} programming: lists, strings, macros, graphics}
 %  {\getfirstpage{gregorio-expl3}}
-%  {https://www.tug.org/members/TUGboat/!TBIDENT!gregorio-expl3.pdf}
+%  {/TUGboat/!TBIDENT!gregorio-expl3.pdf}
 %  {}
 %  {}
 %
@@ -259,7 +253,7 @@ access</a>.
 %  {Tutorial: Using external C libraries with the Lua\TeX\ \acro{FFI}}
 %  {step-by-step example linking the \GNU\ Scientific Library (\acro{GSL}) to Lua\TeX, and \pkg{pgfplots}}
 %  {\getfirstpage{menke-ffi}}
-%  {https://www.tug.org/members/TUGboat/!TBIDENT!menke-ffi.pdf}
+%  {/TUGboat/!TBIDENT!menke-ffi.pdf}
 %  {}
 %  {}
 %
@@ -269,7 +263,7 @@ access</a>.
 %%  {Testing indexes: {\tt testidx.sty}}
 %%  {test methodology and exhaustive comparisons of \code{makeindex}, \code{xindy}, \code{glossaries}, and more}
 %%  {\getfirstpage{talbot}}
-%%  {https://www.tug.org/members/TUGboat/!TBIDENT!talbot.pdf}
+%%  {/TUGboat/!TBIDENT!talbot.pdf}
 %%  {}
 %%  {}
 
@@ -279,7 +273,7 @@ access</a>.
   {We\TeX\ and Hegelian contradictions in classical mathematics}
   {attempted computability of math markup; hierarchy of infinities}
   {143-146}
-  {https://www.tug.org/members/TUGboat/!TBIDENT!venkatesan-wetex.pdf}
+  {/TUGboat/!TBIDENT!venkatesan-wetex.pdf}
   {}
   {}
 

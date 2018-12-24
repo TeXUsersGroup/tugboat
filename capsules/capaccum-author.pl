@@ -47,7 +47,7 @@ END_HEADER
       $index_count++; # number output in initial index of names
       my $a_anchor = $anchors->{$a_sort};
       my $a_html = $author_html->{$a_sort};
-      print $fh qq!<td><a href="#$a_anchor">$a_html</a>&nbsp;&nbsp;</td>\n!;
+      print $fh qq!<td><a href="#$a_anchor">$a_html</a>&nbsp;&nbsp;&nbsp;</td>\n!;
     }
     $item_count++; # all items
   }

@@ -17,19 +17,21 @@ sub tex2html {
 }
 
 # Return hash including html conversions from IN.
-# Everything in IN is copied to the return hash, *_html added,
+# Everything in IN is copied to the return hash,
+# a key with *_html added when modified,
 # pageno transformed to a unique number and pageno_print added.
 # 
 # Called from parse_capsules in capin.pl on each capsule after it has
 # been parsed from the input.
 # 
-# difficulty -> remains the same
+# difficulty -> unchanged here, but see capout.pl.
 #   (the only difficulty strings with TeX markup are
 #      "Contents of other \TeX\ journals" and
 #      "Contents of publications from other \TeX\ groups"
 #    and those should always end up in the html files as "Abstracts"
 #    anyway, due to unifications.)
 # category -> category_html (simple transformation only)
+#             and category_unified (including unifications)
 # author -> author_html
 # title || category -> title_html
 # shortdesc -> shortdesc_html
@@ -238,19 +240,23 @@ sub transform_pageno {
   
   # what remains should start with ., or a numeral, or \ (of \offset).
   if ($ret !~ /^[.0-9\\]/) {
-    die "pageno $p does not start with integer: $ret";
+    die "pageno $p: does not start with integer: $ret";
   }
   
   if ($ret =~ s/\\offset\{(-?[0-9]*\.?[0-9]*)\}//) {
+    my $offset = $1;
     $ret = 0 if length ($ret) == 0; # start with numeric if was empty
-    &ddebug ("   pageno: adding offset $1 to $ret");
-    $ret += $1;
+    if ($ret !~ /^[.0-9]+$/) {
+      die "pageno $p: after offset $offset, not numeric: $ret";
+    }
+    &ddebug ("   pageno $p: adding offset $offset to $ret");
+    $ret += $offset;
     $ret =~ s/^0+//; # again, leading zero can only cause problems
   }
   
   # should be no leading zero remaining.
   if (length ($ret) == 0 || $ret !~ /^([1-9]+[0-9]*)?(\.[0-9]+)?$/) {
-    die "pageno $p not real, would return: $ret";
+    die "pageno $p: not real, would return: $ret";
   }
 
   # Add second part of range, so that 140 and then 140-142 will sort as
