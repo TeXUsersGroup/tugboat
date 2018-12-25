@@ -97,8 +97,8 @@
 
 \capsule{}%subsec
         {Book Reviews}
-        {David~M.~Jones \and David~E.~Wald}
-        {Michel~Goossens, Frank~Mittelbach, and Alexander~Samarin,  {\it The LaTeX Companion}}
+        {David~M.~Jones \and David~E.~Wald}%person|Michel Goossens and Frank Mittelbach and Alexander Samarin
+        {Michel~Goossens, Frank~Mittelbach, and Alexander~Samarin, {\it The LaTeX Companion}}
         {}
         {103-106}
         {/TUGboat/tb15-2/tb43jones.pdf}
@@ -106,7 +106,7 @@
 
 \capsule{}%subsec
         {Book Reviews}
-        {Victor~Eijkhout}
+        {Victor~Eijkhout}%person|Norman Walsh
         {Norman~Walsh, {\it Making \TeX{} Work}}
         {}
         {106-107}
@@ -115,7 +115,7 @@
 
 \capsule{}%subsec
         {Book Reviews}
-        {Jacques~Andr\'e}
+        {Jacques~Andr\'e}%person|Christian Rolland
         {Christian Rolland, {\it \LaTeX\ guide pratique}}
         {}
         {107-107}

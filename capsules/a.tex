@@ -1,14 +1,16 @@
+% $Id$
 % This article is public domain.
-\documentclass{ltugboat}
+\documentclass[final]{ltugboat}
 
 \usepackage{microtype}
 \usepackage{graphicx}
 \usepackage{ifpdf}
 \usepackage[breaklinks,hidelinks,pdfa]{hyperref}
+\def\code#1{{\tt #1}}
 
 %%% Start of metadata %%%
 
-\title{Example \TUB\ article}
+\title{qqq}
 
 % repeat info for each author.
 \author{Karl Berry}
@@ -22,41 +24,126 @@
 \maketitle
 
 \begin{abstract}
-We discuss the data and code for creating the online \TUB\ \HTML\ files
-which are automatically generated, both the per-issue tables of contents
-and the accumulated lists across all issues of authors, categories, and
-titles. All the source files are available from
-\url{https://tug.org/TUGboat}.
+We discuss updates to the data and code for creating the online \TUB\
+\HTML\ files which are automatically generated: both the per-issue
+tables of contents and the accumulated lists across all issues of
+authors, categories, and titles. All source files are available from
+\url{https://tug.org/TUGboat}, released to the public domain.
 \end{abstract}
 
 \section{Introduction}
 
-\TUB\ has had web pages generated for the per-issue tables of contents
-and the accumulated lists across all issues of authors, categories, and
-titles since approximately 2005. David Walden and I worked on the
+Since approximately 2005, \TUB\ has had web pages generated for both
+per-issue tables of contents and accumulated lists across all issues of
+authors, categories, and titles. David Walden and I worked on the
 process together and wrote an article about it~\cite{Berry:TB32-1-23};
 Dave wrote all of the code. More recently, we wanted to add some
-features to the final output which necessitated writing a new
-implementation. This short note describes that new work.
+features which necessitated writing a new implementation. This short
+note describes that new work.
+
+The basic process remains unchanged. To briefly review from the earlier
+article:
+
+\begin{itemize}
+\item For each issue, a source file \code{tb\meta{n}capsule.txt},
+essentially written in \TeX, is converted to a file
+\code{contents\meta{vv-i}.html} (for issue number $i$ in volume
+\textit{vv}). These \code{contents*.html} files are intended to closely
+mimic the printed table of contents (on the back cover) with respect to
+ordering of items, variation in author's names, etc., with only typos
+being corrected.
+
+\item The translation from \TeX\ to \HTML\ is done directly by the code
+here, not using \TeX4ht or any other tool. The translation is directed
+by two data files (\code{lists-translations.txt} and
+\code{lists-regexps.txt}), which (simplistically) map \TeX\ input
+strings to \HTML\ output strings.
+
+\item Finally, three files are produced accumulating all items from
+across all issues: \code{listauthor.html}, \code{listkeyword.html}, and
+\code{listtitle.html}; each is grouped and sorted accordingly. (These
+cumulative lists are the primary reason we developed the program in the
+first place.) In these files, in contrast to the per-issue contents,
+many unifications are done, so that articles written under the names,
+say, ``Donald~E. Knuth'', ``Donald Knuth'', ``Don Knuth'', etc., all
+appear together.
+
+\end{itemize}
+
+\section{General implementation approach}
+
+Both the old implementation and the new are written in Perl, though they
+do not share any code. I chose Perl simply because it is the scripting
+language I am most comfortable writing in nowadays. There was no need to
+use a compiled language; the total amount of data is rather small by
+modern standards.
+
+I wrote the new implementation as a straightforward, if perhaps
+old-fashioned, program. I did not see the need to create any Perl
+modules, for example, since the program's job is a given, and the chance
+of any significant reuse outside the context of \TUB\ seems small
+indeed. All the code and data are released to the public domain, so any
+subroutines, fragments, or any other pieces useful elsewhere can be
+copied, modified, and redistributed at will.
+
+As mentioned above, the capsule source files are essentially \TeX. For
+example, here is the capsule entry from \code{tb123capsule.txt} for a
+recent interview of Kris Holmes, conducted by Dave Walden:
+
+\begin{verbatim}[\small]
+\capsule{Intermediate}
+  {Fonts}
+  {David Walden}%person|Kris Holmes
+  {Interview with Kris Holmes}
+  {in-depth discussion of calligraphy, font ...}
+  {185-203}
+  {/TUGboat/!TBIDENT!holmes-walden.pdf}
+\end{verbatim}
+
+\noindent The purpose of most of the fields is probably evident enough.
+For now, just observe the brace-delimited arguments and general \TeX\
+markup. Thus, the present program uses one non-core Perl module (and
+only this one): \code{Text::Balanced}
+(\url{metacpan.org/pod/Text::Balanced}, which does basic
+balanced-delimiter parsing. (The previous implementation did the parsing
+natively, more or less line-based.) Perl has several modules to do this
+job; I chose this one because (a)~it had a reasonably simple interface,
+and (b)~it could return the non-balanced text between arguments, which
+was crucial for our format, since we use formatted comments as
+directives with additional information for the \code{lists*} files\Dash
+seen here with the \code{\%person|...} comment.
+
+Perhaps it would have been a better general approach to completely
+reformat the \TeX\ source into a non-\TeX\ (\acro{YAML}, say) data file;
+maybe some future \TUB\ worker will feel inspired to do that. (It would
+not be especially hard to have the current implementation output such a
+conversion.) I just chose to keep the process more or less as it has
+been.
+
+\section{Regexp translations from a file: Perl \code{/ee}}
+
+In the 
+
+\section{Conclusion}
+
+The ad hoc conversion approach described is only viable because we have
+complete control over the input, and only desirable because we want
+complete control over the output. I did not want to struggle with any
+tool to get the kind of \HTML\ I wanted, which would be comprehensible
+on its own, reasonably formatted, and not making use of external
+resources.
 
 
-
-%\bibliographystyle{tugboat}% or plain if you don't have tugboat.bst
-%\nocite{book-minimal}      % just making the bibliography non-empty
-%\bibliography{xampl}       % xampl.bib comes with BibTeX
+\bibliographystyle{tugboat}
+\bibliography{tugboat}
 
 \makesignature
 \end{document}
 
 article:
-- script not module.
-- html toc reflects toc as printed (categories, ordering), plus covers
-  and typo fixes etc.; lists*.html, otoh, have many unifications.
-- basic brace-parsing via Text::Balanced.
 - (much) cleanup of capsule files, enhancement of parsing.
 - more unifications, add lists-regexps.txt to existing lists-*.
 - page numbers key, much adding of \offset.
-- lists-* not index-* because of bb.
 - nytprof per line.
 - weird perl /ee so can have regexps from file (thus "&$1acute;" with quotes).
 - debug lines enough to see general flow, likely to have to cut down

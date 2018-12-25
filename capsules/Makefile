@@ -20,10 +20,11 @@ default check: one #all
 authors:
 	qqq
 
-testiss = 122
+testiss = 102
 lastiss = 123
 
 outone = ~karl/public_html/x.html
+outone = /tmp/x.html
 one:
 	perl -cw captub && date
 	$(captub) tb$(testiss)capsule.txt >$(outone) || exit 1

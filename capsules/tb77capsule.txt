@@ -245,8 +245,8 @@ Hidden \TeX{} use in Germany}
 
 \capsule{}
         {Book Reviews}
-        {Claudio Beccari}
-        {The LaTeX Companion, Second Edition}
+        {Claudio Beccari}%person|Frank Mittelbach
+        {\textit{The LaTeX Companion}, Second Edition}
         {}
         {275}
         {/TUGboat/tb24-2/tb77becc.pdf}
@@ -254,7 +254,7 @@ Hidden \TeX{} use in Germany}
 
 \capsule{}
         {Book Reviews}
-        {Douglas Waud and Mimi Burbank}
+        {Douglas Waud and Mimi Burbank}%person|Helmut Kopka and Patrick Daly
         {Guide to LaTeX, 4th Edition}
         {}
         {278}

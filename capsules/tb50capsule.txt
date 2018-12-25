@@ -140,6 +140,7 @@ TUGboat: the year ahead}
 %THEcategory{Book Reviews}
 
 
+% xxxbraces mess up %person|Petr Ol\v{s}\'ak and Ji\v{r}\'{\i} Rybi\v{c}ka
 \capsule{}%subsec
         {Book Reviews}
         {J.~Vesel\'y}
@@ -154,7 +155,7 @@ Ji\v{r}\'{\i} Rybi\v{c}ka, {\it \LaTeX\ pro za\v{c}\'ate\v{c}n\'{\i}ky (\LaTeX\ 
 
 \capsule{}%subsec
         {Book Reviews}
-        {Lynne~A.~Price}
+        {Lynne~A.~Price}%person|Ronald C. Turner and Timothy A. Douglass and Audrey J. Turner
         {{Ronald C. Turner}, {Timothy A. Douglass}, and  {Audrey J. Turner}, {{\it\acro{README.1ST}: \acro{SGML} for        Writers and Editors}}}
         {}
         {35-37}

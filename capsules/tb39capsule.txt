@@ -142,14 +142,12 @@ Comment on font naming}
 
 \capsule{}%subsec
         {Book Reviews}
-        {Nico~Poppelier}
+        {Nico~Poppelier}%person|Helmut Kopka and Patrick Daly and Antoni Diller
         {Review of recent {\LaTeX} books}
         {}
         {127-128}
         {/TUGboat/tb14-2/tb39reviews.pdf}
-
-
-%THEsubheads{ Helmut Kopka and Patrick Daly, {\it A Guide to {\LaTeX}};\break   Antoni Diller, {\it {\LaTeX} Line By Line}}
+        {Helmut Kopka and Patrick Daly, {\it A Guide to \LaTeX}; Antoni Diller, {\it \LaTeX{} Line By Line}}
 
 
 %THEcategory{Typesetting on PCs}

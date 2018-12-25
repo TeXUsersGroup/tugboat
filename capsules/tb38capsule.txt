@@ -103,7 +103,7 @@ Erratum: British hyphenation}
 
 \capsule{}%subsec
         {Book Reviews}
-        {Jon~Radel}
+        {Jon~Radel}%person|Michael Vulis
         {Michael Vulis, {\it Modern {\TeX} and Its Applications}}
         {}
         {17-20}
@@ -111,8 +111,8 @@ Erratum: British hyphenation}
 
 \capsule{}%subsec
         {Book Reviews}
-        {Philip~Taylor}
-        {Arvind Borde,  {\it Mathematical {\TeX} by Example}}
+        {Philip~Taylor}%person|Arvind Borde
+        {Arvind Borde, {\it Mathematical {\TeX} by Example}}
         {}
         {20-23}
         {/TUGboat/tb14-1/tb38reviews.pdf}

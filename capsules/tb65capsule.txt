@@ -137,7 +137,7 @@
 
 \capsule{}%subsec
         {Book Reviews}
-        {Bill~Casselman}
+        {Bill~Casselman}%person|Michel Goossens and Sebastian Rahtz and Frank Mittelbach and Alan Hoenig
         {{{\it The {\LaTeX} Graphics Companion\/} and {\it {\TeX} Unbound}\Dash A review of two books}}
         {}
         {359-364\offset{.5}}
@@ -149,7 +149,7 @@
 
 \capsule{}%subsec
         {Book Reviews}
-        {Peter~Flynn}
+        {Peter~Flynn}%person|Donald Knuth
         {{{\it Digital Typography}, by Donald Knuth}}
         {}
         {364-366}

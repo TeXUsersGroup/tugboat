@@ -91,8 +91,8 @@
 
 \capsule{}%subsec
         {Book Reviews}
-        {Nico~Poppelier}
-        {{George Gr\"atzer}, {\it Math into {\TeX}}}
+        {Nico~Poppelier}%person|George Gr\"atzer
+        {George Gr\"atzer, {\it Math into {\TeX}}}
         {}
         {18-19}
         {/TUGboat/tb15-1/tb42poppelier-gratzer.pdf}
@@ -100,7 +100,7 @@
 
 \capsule{}%subsec
         {Book Reviews}
-        {T.~L.~(Frank)~Pappas}
+        {T.~L.~(Frank)~Pappas}%person|Stephan von Bechtolsheim
         {{Stephan von Bechtolsheim}, {\it {\TeX} in Practice}}
         {}
         {19-21}
@@ -109,7 +109,7 @@
 
 \capsule{}%subsec
         {Book Reviews}
-        {Claudio~Beccari}
+        {Claudio~Beccari}%person|Gianni Gilardi
         {{Gianni Gilardi}, {\it Il {\TeX}\Dash {Introduzione} al linguaggio e complementi avanzati}}
         {}
         {21-22}
@@ -118,7 +118,7 @@
 
 \capsule{}%subsec
         {Book Reviews}
-        {Merry~Obrecht~Sawdey}
+        {Merry~Obrecht~Sawdey}%person|Erik Spiekermann and E.M. Ginger
         {{Erik Spiekermann} \& {E.~M. Ginger}, {\it Stop Stealing Sheep}}
         {}
         {22-24}
@@ -127,7 +127,7 @@
 
 \capsule{}%subsec
         {Book Reviews}
-        {Nico~Poppelier}
+        {Nico~Poppelier}%person|Eric van Herwijnen
         {{Eric van Herwijnen}, {\it Practical SGML}}
         {}
         {24-25}
@@ -136,7 +136,7 @@
 
 \capsule{}%subsec
         {Book Reviews}%add|Literate Programming
-        {Christine~Detig \and Joachim Schrod}
+        {Christine~Detig \and Joachim Schrod}%person|Donald Knuth
         {{Donald E. Knuth}, {\it Literate Programming}}
         {}
         {25-27}
