@@ -70,18 +70,25 @@ END_TOP_TUB
 $tub_nav
 END_TOP_NONISSUE
   }
+  
+  print <<END_LISTS;
+<small>Accumulated lists across all of TUGboat:
+<a href="listauthor.html">by&nbsp;author</a>,
+<a href="listkeyword.html">by&nbsp;category/keyword</a>,
+<a href="listtitle.html">by&nbsp;title</a>.
+</small>
+END_LISTS
 
   if ($issue{"url"}) {
     print qq!\n<h2><a href="$issue{url}">$issue{urllabel}</a></h2>\n\n!;
     warn "issue urllabel empty, but url given: $issue{url}\n"
       if ! $issue{"urllabel"};
   }
-  
-  print qq!<div id="blurb">\n!;
-  print $issue{"blurb"};
-  print qq!</div>\n!;
 
-  print "<table>\n";
+  print qq!<p id="blurb">\n!;
+  print $issue{"blurb"};
+
+  print "<p><table>\n";
   &write_entries (%issue);
   print "</table>\n";
   

@@ -46,6 +46,7 @@ all:
 	          | egrep -v '<tt>\\\\|/~hammond'`; \
 	  test -z "$$unparsed" || { echo "$$unparsed" >&2; exit 1; }; \
 	test -z "$(profopt)" || $(profcmd)
+	@chmod a+r *.html
 
 tubweb = ~www/TUGboat
 instest = $(tubweb)/toctest
