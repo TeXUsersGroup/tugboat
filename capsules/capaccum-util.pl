@@ -85,7 +85,7 @@ sub lists_entry_trailer {
   # usually "See the tug books page", and we don't need to show that.
   # 
   if ($cap->{"subtitles_html"}
-      && $cap->{"category"} ne "Book Reviews") {
+      && $cap->{"category"} !~ /Reviews/) {
     $h .= qq!\n<br>$cap->{"subtitles_html"}\n!;
   }
 
