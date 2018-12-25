@@ -59,7 +59,7 @@
         {/TUGboat/tb22-1-2/tb70pres.pdf}
 
 \capsule{}
-        {General Delivery}
+        {General Delivery}%add|Obituaries
         {Barbara Beeton}
         {Editorial comments}
         {}
@@ -117,7 +117,7 @@ Legibility study online}
 
 \capsule{}
         {Font Forum}
-        {Hermann Zapf}
+        {Hermann Zapf}%person|Donald Knuth
         {My collaboration with Don Knuth and my font design work}
         {}
         {26}
@@ -133,7 +133,7 @@ Legibility study online}
 
 \capsule{}
         {Software \& Tools}
-        {Laura Elizabeth Jackson and Herbert Voss}
+        {Laura Elizabeth Jackson and Herbert Vo\ss}
         {LyX\Dash An Open Source document processor}
         {}
         {32}
