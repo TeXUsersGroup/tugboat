@@ -1,3 +1,15 @@
+2018-12-25  Karl Berry  <karl@freefriends.org>
+
+	* lists-unifications.txt (LaTeX Project Team): also unify "the".
+	* lists-translations.txt (\NMOlsak, \NM...): names needing {}
+	need abbreviations to use with %person.
+	Add %person for obituaries.	
+
+2018-12-25  Karl Berry  <karl@freefriends.org>
+
+	Add %person for book reviews.
+	* tb70capsule.txt: obit, vo\ss
+
 2018-12-25  Karl Berry  <karl@tug.org>
 
 	* capaccum-author.pl (find_authors): make %person augment

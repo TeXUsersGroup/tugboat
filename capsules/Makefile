@@ -56,7 +56,8 @@ install-test: all
 diff:
 	for f in contents*.html list*.html; do diff -u0 $(Contents)/$$f .; \
 	done | tee /tmp/u \
-	| egrep -v '^(@@|\+\+\+|.href.*TUGboat</a>;) |!-- ATC -->'
+	| egrep -v '^(@@|\+\+\+|.* \[generated 20|\^</ul>$$)'
+#	| egrep -v '^(@@|\+\+\+|.href.*TUGboat</a>;) |\^</ul>$'
 
 
 Contents = $(tubweb)/Contents

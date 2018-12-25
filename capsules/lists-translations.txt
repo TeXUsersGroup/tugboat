@@ -30,7 +30,10 @@
 
 #names
 
-Benedict~L\o fstedt||Benedict L&oslash;fstedt||Benedict Lofstedt
+# names after %person must not use braces, or misparsed as arguments.
+\NMHamiltonKelly||{Hamilton Kelly}
+\NMOlsak||Ol\v{s}\'ak
+\NMJiriRybicka||Ji\v{r}\'{\i} Rybi\v{c}ka
 
 $\{$Hamilton Kelly$\}$||{Hamilton Kelly}
 
@@ -92,7 +95,7 @@ R\r{u}\v{z}i\v{c}ka||R&#367;&#382;i&#269;ka||Ruzicka
 #
 \H o||&#246;||o
 #
-\o{}||&oslash;||oe
+\o{}||&oslash;||o
 #
 \v{c}||&#x010d;||c
 \v{e}||&#x011b;||e
@@ -174,9 +177,6 @@ $\Omega_2$||&Omega;2||O2
 \SGML||SGML
 \rm||
 \ss{}||&szlig;||ss
-# following two should be removed with new incarnation and lists-regexps.
-\ssf ||
-\ss||&szlig;||ss
 \slash ||/
 \slBibTeX\||BibTeX
 \slBibTeX||BibTeX
@@ -231,6 +231,7 @@ $\Omega_2$||&Omega;2||O2
 {}||
 \\|| \\
   || \\
-# nice to move ~ to beginning and fix so other replacements use space.
-# perhaps should be nbsp, but mostly that seems excessive.
+
+# maybe nice to move ~ to beginning (but after accents) and fix so other
+# replacements use space. using nbsp turns out to be excessive.
 ~|| \\
