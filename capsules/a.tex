@@ -1,18 +1,33 @@
 % $Id$
 % This article is public domain.
 \documentclass[final]{ltugboat}
+\overfullrule=4pt
+
+\makeatletter % double dangerous bend, just for fun.
+% code modified from manmac.tex.
+\def\hang{\hangindent\parindent}
+\font\manual=manfnt % font used for the METAFONT logo, etc.
+\def\dbend{{\manual\char127}} % dangerous bend sign
+\def\d@nger{\medbreak\begingroup\clubpenalty=10000
+  \def\par{\endgraf\endgroup\medbreak} \noindent\hang\hangafter=-2
+  \hbox to0pt{\hskip-\hangindent\dbend\hfill}}
+\outer\def\danger{\d@nger}
+\def\dd@nger{\begingroup\clubpenalty=10000
+  \def\par{\endgraf\endgroup\medbreak} \noindent\hang\hangafter=-2
+  \hbox to0pt{\hskip-\hangindent\dbend\kern1pt\dbend\hfill}}
+\outer\def\ddanger{\bgroup\parindent=36pt \dd@nger} % need the big \parindent
+\def\enddanger{\endgraf\endgroup\egroup} % omits the \medbreak
+\makeatother
 
 \usepackage{microtype}
 \usepackage{graphicx}
 \usepackage{ifpdf}
 \usepackage[breaklinks,hidelinks,pdfa]{hyperref}
 \def\code#1{{\tt #1}}
-
 %%% Start of metadata %%%
 
-\title{qqq}
+\title{\TUB\ online, reimplemented}
 
-% repeat info for each author.
 \author{Karl Berry}
 \EDITORnoaddress
 \netaddress{https://tug.org/TUGboat}
@@ -24,49 +39,57 @@
 \maketitle
 
 \begin{abstract}
-We discuss updates to the data and code for creating the online \TUB\
-\HTML\ files which are automatically generated: both the per-issue
-tables of contents and the accumulated lists across all issues of
-authors, categories, and titles. All source files are available from
-\url{https://tug.org/TUGboat}, released to the public domain.
+This article discusses updates to the data and code for creating the
+online \TUB\ \HTML\ files which are automatically generated: the
+per-issue tables of contents and the accumulated lists across all issues
+of authors, categories, and titles. All source files are available from
+\url{https://tug.org/TUGboat}, and are released to the public domain.
 \end{abstract}
 
 \section{Introduction}
 
-Since approximately 2005, \TUB\ has had web pages generated for both
-per-issue tables of contents and accumulated lists across all issues of
-authors, categories, and titles. David Walden and I worked on the
-process together and wrote an article about it~\cite{Berry:TB32-1-23};
+Since 2005, \TUB\ has had web pages generated for both per-issue tables
+of contents and accumulated lists across all issues of authors,
+categories, and titles. David Walden and I worked on the process
+together and wrote a detailed article about it~\cite{Berry:TB32-1-23};
 Dave wrote all of the code. More recently, we wanted to add some
 features which necessitated writing a new implementation. This short
-note describes that new work.
+note describes the new work.\looseness-1
 
 The basic process remains unchanged. To briefly review from the earlier
 article:
 
 \begin{itemize}
-\item For each issue, a source file \code{tb\meta{n}capsule.txt},
-essentially written in \TeX, is converted to a file
+\item For each issue, a source file \code{tb\meta{n}capsule.txt} ($n$
+being the \TUB\ issue sequence number), which is essentially written in
+\TeX\ (it is originally used to create the contents by difficulty on the
+inside back cover), is converted to a file
 \code{contents\meta{vv-i}.html} (for issue number $i$ in volume
 \textit{vv}). These \code{contents*.html} files are intended to closely
-mimic the printed table of contents (on the back cover) with respect to
-ordering of items, variation in author's names, etc., with only typos
-being corrected.
+mimic the printed table of contents (the back cover) with respect to
+ordering of items, variation in author's names, category names, etc.,
+with only typos being corrected.
 
-\item The translation from \TeX\ to \HTML\ is done directly by the code
-here, not using \TeX4ht or any other tool. The translation is directed
-by two data files (\code{lists-translations.txt} and
+\item The translation from \TeX\ to \HTML\ is done by the code
+here, not using \TeX4ht or any other tool; the overall \HTML\
+structure is written directly by the program. The translation is
+informed by two files (\code{lists-translations.txt} and
 \code{lists-regexps.txt}), which (simplistically) map \TeX\ input
 strings to \HTML\ output strings.
 
 \item Finally, three files are produced accumulating all items from
 across all issues: \code{listauthor.html}, \code{listkeyword.html}, and
 \code{listtitle.html}; each is grouped and sorted accordingly. (These
-cumulative lists are the primary reason we developed the program in the
-first place.) In these files, in contrast to the per-issue contents,
-many unifications are done, so that articles written under the names,
-say, ``Donald~E. Knuth'', ``Donald Knuth'', ``Don Knuth'', etc., all
-appear together.
+cumulative lists are the primary purpose for developing the program in
+the first place.) In these files, in contrast to the per-issue contents,
+many unifications are done (directed by a third external data file,
+\code{lists-unifications.txt}), so that articles written under the
+names, say, ``Donald~E. Knuth'', ``Donald Knuth'', ``Don Knuth'', etc.,
+all appear together. Similarly, many variations in category names, and
+related categories, are merged.
+
+\item The translations are applied first, then the regular expressions
+(regexps), and finally the unifications.
 
 \end{itemize}
 
@@ -74,83 +97,228 @@ appear together.
 
 Both the old implementation and the new are written in Perl, though they
 do not share any code. I chose Perl simply because it is the scripting
-language I am most comfortable writing in nowadays. There was no need to
-use a compiled language; the total amount of data is rather small by
-modern standards.
+language in which I am most comfortable writing nowadays. There was no
+need to use a compiled language; the total amount of data is small by
+modern standards. Readability of maintainability of the code was far
+more important than efficiency.
 
 I wrote the new implementation as a straightforward, if perhaps
-old-fashioned, program. I did not see the need to create any Perl
-modules, for example, since the program's job is a given, and the chance
-of any significant reuse outside the context of \TUB\ seems small
-indeed. All the code and data are released to the public domain, so any
-subroutines, fragments, or any other pieces useful elsewhere can be
-copied, modified, and redistributed at will.
+old-fashioned, program. I did not see the need to create Perl modules,
+for example, since the program's job is a given, and the chance of any
+significant reuse outside the context of \TUB\ seems small indeed. All
+the code and data are released to the public domain, so any subroutines,
+utility functions, fragments, or any other pieces of code or data useful
+elsewhere can be copied, modified, and redistributed at will.
 
 As mentioned above, the capsule source files are essentially \TeX. For
 example, here is the capsule entry from \code{tb123capsule.txt} for a
-recent interview of Kris Holmes, conducted by Dave Walden:
+recent article:
 
-\begin{verbatim}[\small]
-\capsule{Intermediate}
-  {Fonts}
-  {David Walden}%person|Kris Holmes
-  {Interview with Kris Holmes}
-  {in-depth discussion of calligraphy, font ...}
-  {185-203}
-  {/TUGboat/!TBIDENT!holmes-walden.pdf}
+\begin{verbatim}[\small\hfuzz=1.8pt]
+\capsule{}
+  {Electronic Documents}%add|Software \& Tools
+  {Martin Ruckert}
+  {\acro{HINT}: Reflowing \TeX\ output}
+  {postponing \TeX\ page rendering to ...}
+  {217-223}
+  {/TUGboat/!TBIDENT!ruckert-hint.pdf}
 \end{verbatim}
 
-\noindent The purpose of most of the fields is probably evident enough.
-For now, just observe the brace-delimited arguments and general \TeX\
-markup. Thus, the present program uses one non-core Perl module (and
-only this one): \code{Text::Balanced}
+\noindent The meaning of the fields is described in the previous
+article, but is probably evident enough just from the example. For our
+present purposes, let's just observe the brace-delimited arguments and
+general \TeX\ markup. To parse this, the present program uses one
+non-core Perl module (and only this one): \code{Text::Balanced}
 (\url{metacpan.org/pod/Text::Balanced}, which does basic
 balanced-delimiter parsing. (The previous implementation did the parsing
-natively, more or less line-based.) Perl has several modules to do this
-job; I chose this one because (a)~it had a reasonably simple interface,
-and (b)~it could return the non-balanced text between arguments, which
-was crucial for our format, since we use formatted comments as
-directives with additional information for the \code{lists*} files\Dash
-seen here with the \code{\%person|...} comment.
+natively, more or less line-based.)
 
-Perhaps it would have been a better general approach to completely
-reformat the \TeX\ source into a non-\TeX\ (\acro{YAML}, say) data file;
-maybe some future \TUB\ worker will feel inspired to do that. (It would
-not be especially hard to have the current implementation output such a
-conversion.) I just chose to keep the process more or less as it has
-been.
+Perl has several modules to do this job; I chose this one because (a)~it
+had a reasonably simple interface, and (b)~it could return the
+non-balanced text between arguments, which was crucial for our format,
+since we use formatted comments as directives with additional
+information for the \code{lists*} files\Dash as seen above with the
+\code{\%add|...} extra category. (Only three directives have been needed
+so far: to add and replace categories, and to add authors. They are
+crucial in making the accumulated lists include all the useful
+information.)
 
-\section{Regexp translations from a file: Perl \code{/ee}}
+Each of the capsules turns into a Perl hash (associative array), and
+each issue is another hash, including pointers to all its capsules, and
+so on. In general, the amount of data is so small that memory usage was
+a non-issue.
 
-In the 
+Perhaps it would be a better general approach to completely reformat the
+\TeX\ source into a non-\TeX\ (\acro{YAML}, for instance) data file and
+then parse that; and perhaps some future \TUB\ worker will feel inspired
+to do that. (It would not be especially hard to have the current
+implementation output such a conversion as a starting point.) I merely
+chose to keep the process more or less as it has been.
+
+\section{Cleaning up capsule sources and output}
+
+I did take the opportunity to clean up the capsule source files, e.g.,
+using more consistent macro abbreviations, adding missing accents to
+authors' names, correcting typos, etc. The balanced-brace parsing regime
+meant that unbalanced braces got found, of which there were several.
+
+I also added consistency checks in the code, so that, for example, a new
+category name that we happen to invent for a future issue will get
+reported; such cases should (probably) be unified with an existing
+category. Many unifications of existing categories and authors were also
+added.
+
+Another part of the cleanup was to ensure that the page number of each
+item is unique; when two items start on the same page, internally we use
+decimals (100 and 100.5, say) to order them. This is done with a macro
+\cs{offset}. Naturally such decimals are not shown in either the \TeX\
+or \HTML\ output. They are necessary in order to have a unique key in
+all our various hashes, and for sorting.
+
+Speaking of sorting, I wanted the new output for the accumulated lists
+to be stably sorted, so that the results of any code or data changes
+could be easily diffed against the previous output. So now the sorting
+for a given entry is reliably by volume, then issue, then page (and
+first by title for the title list); having unique internal page values
+was also a prerequisite for the stable sort.
+
+Another minor point about the \HTML\ output is the anchor names: we
+intentionally reduce all anchor identifiers (author names, titles,
+etc.)\ to 7-bit \ASCII\Dash indeed, only letters, numbers, periods, and
+commas. For example, Herbert Vo\ss's
+items in \TUB\ are available at
+\url{tug.org/TUGboat/Contents/listauthor.html#Voss,Herbert}. (Sorry,
+Herbert.) Similarly, if an anchor starts with a non-letter, it is
+prefixed by \code{t\char`\_}. Although \HTML\ permits general Unicode in
+anchor names nowadays, this has not always been the case, and
+regardless, for ease of copying, use in email, etc., this seemed the
+most useful approach.
+
+\section{Data files \code{lists-*.txt}}
+
+The external data files \code{lists-unifications.txt} and
+\code{lists-translations.txt} that play a part in all these conversions
+are described in the earlier article. The third file mentioned
+above, \code{lists-regexps.txt}, is new in this implementation. Here
+are some example entries from each.
+
+\subsection{lists-unifications.txt}
+
+Examples from \code{lists-unifications.txt}:
+\begin{verbatim}[\small]
+Dreamboat
+    Expanding Horizons
+    Future Issues
+...
+Max D&iacute;az
+    M. D&iacute;az
+\end{verbatim}
+The left-justified line shows the name as it should be shown, and
+following indented lines show alternate names as they are found. We
+unify categories, and names, as shown here.
+
+The D\'\i{}az example also shows that we do unifications after the
+translation to \HTML, so both the canonical name and the alternates are
+expressed that way, not in \TeX. Thus, the exact form of the translation
+matters (whether \'\i\ translates to \verb|&iacute;| or \verb|&#xed;| or
+\verb|&#x00ED;| or a literal \acro{UTF}-8 \code{\'\i} or \ldots)\ and
+has to match with the \code{lists-translations.txt} entries. Examples
+from there are next.
+
+\subsection{lists-translations.txt}
+
+Examples from \code{lists-translations.txt}:
+\begin{verbatim}[\small]
+\'{\i}||&iacute;||i
+\TUG{}||TUG
+\end{verbatim}
+Each line is two or three strings, separated by a \code{||} delimiter.
+The first element is what's in the  \TeX\ source; the second is the
+\HTML\ to output, and the third is the plain text conversion for sorting
+and anchors. If the third element is absent (as in the \cs{TUG} line
+above), the second element is used for both plain text and \HTML.
+
+\subsection{lists-regexps.txt}
+
+For \code{lists-regexps.txt}, the general form is similar to
+\code{lists-translations.txt}, with a left-hand side and right-side side
+separated by the same \code{||} delimiter. But here, the lhs is a
+regular expression, and the rhs is a replacement expression:
+
+\begin{verbatim}[\small]
+\\emph\{(.*?)\}||"<i>$1</i>"
+\{\\it\s*(.*?)\}||"<i>$1</i>"
+\end{verbatim}
+All that punctuation may look daunting, but if taken a bit at a time, it
+is mostly standard regular expression syntax. The above two entries
+handle the usual \LaTeX\ \verb|\emph{...}| and plain \verb|{\it ...}|
+italic font switching (with no attempt to handle nested \cs{emph}, as it
+is not needed). Both syntaxes for font switching are prevalent
+throughout the capsule sources.
+
+The \code{.*?} construct in the left hand side may be unfamiliar; this
+is merely a convenience meaning a ``non-greedy'' match\Dash any
+characters up until the first following right brace (the \verb|\}| means
+a literal right brace character). \code{.*} without the {?} would match
+until the \emph{last} following right brace.
+
+\ddanger On second glance, what also may seem unusual is the rhs being
+enclosed in double quotes, \code{"..."}, specifying a Perl string. Why?
+Because, ultimately, this is going to turn into a Perl substitution,
+\code{s/\meta{lhs}/\meta{rhs}/g} (all substitutions specified here are
+done globally), but initially the lhs and rhs have to be stored in
+variables\Dash in other words, string values. But we don't want to
+evaluate these strings when they are read from the \code{lists-regexps}
+file; the \code{\$1} in the rhs needs to refer to what is matched by the
+\code{(...)} group on the lhs when the substitution is executed. This
+turns out to be a programming exercise in layers of evaluation.
+\enddanger
+
+\ddanger The simplest way I found to do it was to use a Perl feature I
+had never before needed, or even heard of, in my 30-odd years of using
+Perl since it first appeared: including the \code{/ee} modifier on the
+substitution, as well as the \code{/g}. I won't try to explain it here;
+for the curious, there is a discussion at
+\url{stackoverflow.com/q/392644}, as well as the Perl manual itself.
+\enddanger
+
+\section{Performance and profiling}
+
+Although I said above that efficiency was not important, that is not
+quite true. Especially during development and debugging, doing a test
+run must not take too long, since it gets done over and over. My
+extremely naive initial version took over 45 seconds (on my development
+machine, which is plenty fast) to process the $\approx$120 \TUB\
+issues\Dash too frustrating to be borne.
+
+The Perl module \code{Devel::NYTProf} turned out to be by far the best
+profiling tool available. (By the way, \acro{NYT} stands for \textit{New
+York Times}; a programmer there did the initial development.) Unlike
+other Perl profiling tools, it shows timing data per individual source
+line, not just functions or blocks.
+
+It turned out that almost all the time was being consumed dealing with
+the substitutions from the \code{lists-*} files, since the strings were
+being read at runtime, instead of being literal in the source code. The
+easy step of ``precompiling'' the regular expressions after reading the
+iles, with \code{qr//}, resulted in the total runtime dropping an order
+of magnitude, to under 4~seconds. So development could proceed without
+any major surgery on the code or data structures.
 
 \section{Conclusion}
 
-The ad hoc conversion approach described is only viable because we have
-complete control over the input, and only desirable because we want
+The ad hoc conversion approach described here is only viable because we
+have complete control over the input, and only desirable because we want
 complete control over the output. I did not want to struggle with any
-tool to get the kind of \HTML\ I wanted, which would be comprehensible
-on its own, reasonably formatted, and not making use of external
-resources.
+tool to get the kind of \HTML\ I wanted, namely to be reasonably
+formatted and otherwise comprehensible, and not making significant use
+of external resources or JavaScript.
 
+Although changes and new needs are inevitable, I hope the program and
+data will be sufficiently robust for years to come.
 
 \bibliographystyle{tugboat}
 \bibliography{tugboat}
 
 \makesignature
 \end{document}
-
-article:
-- (much) cleanup of capsule files, enhancement of parsing.
-- more unifications, add lists-regexps.txt to existing lists-*.
-- page numbers key, much adding of \offset.
-- nytprof per line.
-- weird perl /ee so can have regexps from file (thus "&$1acute;" with quotes).
-- debug lines enough to see general flow, likely to have to cut down
-  input (xtb09) and add much more to see.
-- input files are tex; first translations, then regexps, then unifications.
-- consistency check across all issues for difficulties, categories, no
-   lists-* left unused; existing item.pdf; xxx and more?
-- sort by [title/]volume/issue/page for stability and newest first.
-- &ouml; in anchor name, even though allowed, simpler to omit; ditto t_ prefix.
-- utility fns.

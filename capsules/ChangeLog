@@ -1,3 +1,15 @@
+2019-01-07  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.tex: doc fix, we do need to remove &.
+	* lists-regexps.txt: doc fox, xr-hyper handled ok.
+	* tb78capsule.txt (Bujdoso), 
+	* lists-unifications.txt (Bujdoso): add accents.
+	(Cheswick): duplicated.
+	(Damerell): not needed.
+	* tb14capsule.txt,
+	* tb16capsule.txt, 
+	* tb35capsule.txt (R.M. Damerell): no space.
+	
 2018-12-25  Karl Berry  <karl@tug.org>
 
 	* capout.pl (write_issue): output lists links on every toc page.
@@ -904,4 +916,4 @@
 
 	* capout.pl (contents_file_seq): read_issue ($capsule_file).
 
-This ChangeLog file released to the public domain.
+This ChangeLog file is public domain.

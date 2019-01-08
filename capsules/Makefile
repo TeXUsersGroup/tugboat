@@ -71,5 +71,9 @@ all-install: all install
 try:
 	perl try.pl
 
+a:
+	texfot pdflatex '\nonstopmode\input a.tex'
+#	bibtex a
+
 clean:
 	rm -f contents*.html listauthor.html listkeyword.html listtitle.html

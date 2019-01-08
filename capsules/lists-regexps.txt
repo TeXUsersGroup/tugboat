@@ -55,6 +55,4 @@
 \{\\smc\s+(.*?)\}||$1
 
 # elide bare braces. do last since braces are part of matching above.
-# 
-# ( |^) -- xr{\rm[]}-hyper in tb118 counterexample
 \{(.*?)\}||$1

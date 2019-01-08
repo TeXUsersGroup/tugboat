@@ -90,7 +90,7 @@ sub category_anchors {
     # elide spaces, etc., and common entities.
     (my $tag = $cat) =~ s/[ ,-]//g;
     $tag =~ s/&(amp|nbsp);//g;
-    $tag =~ s/&//g; # xxx: not needed after switch, also in capconv?
+    $tag =~ s/&//g; # drop ampersand from Software & Tools, etc.
     $tag = "CatTAG$tag"; # prefix for anchor
     $category_tags{$cat} = $tag;
     (my $cat_nbsp = $cat) =~ s/ /&nbsp;/g; # for printing
