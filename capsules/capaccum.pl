@@ -36,6 +36,7 @@ sub accumulation {
   # Run through all the issues to prepare stuff common to more than one
   # of our lists.
   # 
+  my %check;
   for my $seqno (sort { $a <=> $b } keys %accum) {
     my %iss = %{$accum{$seqno}};
     for my $pageno (sort { $a <=> $b } keys %{$iss{"capsules"}}) {
@@ -94,6 +95,14 @@ sub accumulation {
       $title_sort =~ s![^a-zA-Z0-9&,]!!g; # remove punct at end, used above.
       $title_sort = lc ($title_sort);     # case-insensitive
       $cap->{"title_sort"} = $title_sort;
+
+      # save all difficulty and category strings for checking in
+      # accumulation_check(), below.
+      my $dfi = $cap->{"difficulty"};
+      $check{"difficulty"}->{$dfi}++;
+      #
+      my $category = $cap->{"category_html"};
+      $check{"category"}->{$category}++;
     }
   }
   
@@ -119,17 +128,19 @@ END_LIST_HDR_COMMON
   &output_keyword_list ("keyword", $list_hdr_common, %accum);
   &output_title_list ("title", $list_hdr_common, %accum);
   &output_author_list ("author", $list_hdr_common, %accum);
-  #&accumulation_more (%accum);
+  
+  # If we're doing prev/next links, we're doing the whole run.
+  &accumulation_check (%check) if $::OPT{"prevnext"};
 }
 
 
-# xxxlater
-sub accumulation_more {
-  my (%accum) = @_;
-  # we're done unless processed entire set of capsules.
-  return unless @ARGV > 150;  # xxxhardwired 120 wrong
+# Compare %CHECK difficulty and category strings against hardwired list
+# of what we expect (before unification).
+# 
+sub accumulation_check {
+  my (%check) = @_;
   
-  &xlate_dump_count ();
+  #&xxxlate_dump_count ();
 
   # check for all and only expected difficulties and categories.
   my @difficulty_expected
@@ -197,7 +208,7 @@ sub accumulation_more {
        'Graphics',
        'Graphics, XML, and MathML',
        'Hardware/Systems',
-       'Hints &amp; Tricks',
+       'Hints & Tricks',
        'Humanities',
        'Hyphenation',
        'Interface Software',
@@ -210,7 +221,7 @@ sub accumulation_more {
        'Keynote',
        'Keynote: Publishing, Languages Literature and Fonts',
        'Keynotes',
-       'LaTeX&mdash; state of the art',
+       'LaTeX&mdash;state of the art',
        'LaTeX',
        'Language Issues',
        'Language Support',
@@ -226,7 +237,7 @@ sub accumulation_more {
        'Low TeX',
        'Macro Packages',
        'Macro Writing',
-       'Macros &amp; Other Tools',
+       'Macros & Other Tools',
        'Macros',
        'Methods',
        'Miscellaneous',
@@ -234,7 +245,7 @@ sub accumulation_more {
        'Multilingual MetaPost',
        'Multilingual Typography Without Boundaries',
        'Multilingual document processing',
-       'News &amp; Announcements',
+       'News & Announcements',
        'News',
        'Omega',
        'Opening Address',
@@ -250,7 +261,7 @@ sub accumulation_more {
        'Practical TeX 2005',
        'Practical TeX 2006',
        'Preface',
-       'Preprocessors &amp; Editors',
+       'Preprocessors & Editors',
        'Problems',
        'Production Notes',
        'Public Domain TeX',
@@ -259,10 +270,10 @@ sub accumulation_more {
        'Publishing and TeX',
        'Publishing',
        'Puzzle',
-       'Q &amp; A',
+       'Q & A',
        'Queries',
        'Query',
-       'Questions &amp; Answers',
+       'Questions & Answers',
        'Questions',
        'Real World',
        'Recognition',
@@ -275,7 +286,7 @@ sub accumulation_more {
        'Short Reports',
        'Site Reports',
        'Sociology',
-       'Software &amp; Tools',
+       'Software & Tools',
        'Software',
        'Sponsors',
        'Status Reports',
@@ -295,10 +306,11 @@ sub accumulation_more {
        'TUG 2015',
        'TUG 2016',
        'TUG 2017',
+       'TUG 2018',
        'TUG Business',
        'TUG News',
        'Talks',
-       'TeX &amp; TeX-Based Systems',
+       'TeX & TeX-Based Systems',
        'TeX Live CD-ROM',
        'TeX Northeast',
        'TeX Notes',
@@ -310,7 +322,7 @@ sub accumulation_more {
        'TeX and Scientific Publishing on the Internet',
        'TeX in Publishing',
        'TeXtensions',
-       'Teaching &amp; Training',
+       'Teaching & Training',
        'Technical Working Group Reports',
        'Tools',
        'Training',
@@ -322,8 +334,8 @@ sub accumulation_more {
        'Typographics: &AElig;sthetics and Practicalities',
        'Typography',
        'User Groups and Dissemination of Information',
-       'Views &amp; Commentary',
-       'Warnings &amp; Limitations',
+       'Views & Commentary',
+       'Warnings & Limitations',
        'Warnings',
        'Working with TeX',
        'Workshops',
@@ -331,21 +343,24 @@ sub accumulation_more {
   my %category_expected;
   @category_expected{@category_expected} = ();  # hash slice
   
-  &accumulation_check("category",  \@category_expected,  $accum{"category"});
-  &accumulation_check("difficulty",\@difficulty_expected,$accum{"difficulty"});
+  &accumulation_check1 ("category",   \@category_expected,
+                        $check{"category"});
+  &accumulation_check1 ("difficulty", \@difficulty_expected,
+                        $check{"difficulty"});
 }
 
-# For string WHAT, check that array reference @$EXPECTED (hard-coded
-# above) contains all and only the keys in hash reference %$ACCUM
+
+# For string WHAT, check that array reference @$EXPECTED (hard-coded list
+# above) contains all and only the keys in hash reference %$CHEC
 # (accumulated as we processed all the issues).
 # 
-sub accumulation_check {
-  my ($what,$expected,$accum) = @_;
+sub accumulation_check1 {
+  my ($what,$expected,$check) = @_;
 
   my %expected;
   @expected{@$expected} = (); # hash slice
   
-  for my $k (sort keys %$accum) {
+  for my $k (sort keys %$check) {
     if (exists $expected{$k}) {
       $expected{$k}++;
     } else {
