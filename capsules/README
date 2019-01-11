@@ -1,7 +1,7 @@
 $Id$
 
 xxxx ending page numbers not always present; synthesize?
-xxxx save, dump, compare, count all difficulty, category, etc.?, tex+html+txt strings
+xxxx save, dump, compare, count  tex+html+txt strings
  in file, do we want?xxxx after switch, delete title unifications
  also count translations etc, no lists-* left unused
 xxxx including count #matches for the other lists-* and show zeros
@@ -28,7 +28,13 @@ lists-translations  convert TeX fragments to HTML and sortable ASCII.
 lists-unifications  different category/author/title forms to be combined.
 
 
-7jan19  finish first draft, assorted cleanups.
+10jan19 reenable xlate_dump_count, try reporting 1 hit. strange 0:
+0 (?^:\\textcircumacute\{e\})||&#x1ebf;
+but it is needed for Thanh abbrev?
+
+9jan19  reenable difficulty/category checking.
+
+7jan19  finish first draft of article, assorted cleanups.
 
 29dec18 let's just keep bare &, not switch to &amp; shorter.
 

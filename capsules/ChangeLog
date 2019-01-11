@@ -1,3 +1,17 @@
+2019-01-10  Karl Berry  <karl@freefriends.org>
+
+	* tb31capsule.txt: don't use \aand for review authors,
+	so we can drop the translations entry.
+	* lists-translations.txt (Bencze, \`\i , \aand, \and, \cand):
+	drop unused entries.
+	* capaccule.pl (accumulation_check): reenable xlate_dump_count.
+
+2019-01-09  Karl Berry  <karl@freefriends.org>
+
+	* capaccum.pl (accumulation): record all categories and difficulties.
+	(accumulation_check): rename from accumulation_more, reenable checks.
+	(accumulation_check1): rename from accumulation_check.
+
 2019-01-07  Karl Berry  <karl@freefriends.org>
 
 	* capaccum.tex: doc fix, we do need to remove &.
