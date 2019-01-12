@@ -1,0 +1,476 @@
+% $Id$
+% This article, originally published in TUGboat 32:1 (2011), is now
+% released to the public domain by the authors. PDF for the TUGboat
+% publication: https://tug.org/TUGboat/tb32-1/tb100walden.pdf.
+% 
+\documentclass[final]{ltugboat}
+\usepackage{url}
+\usepackage{comment}
+\usepackage{graphicx}
+\usepackage{microtype}
+\interlinepenalty = -250
+
+\def\URL{\acro{URL}}
+\def\TPJ{\textsl{The Prac\TeX\ Journal\/}}
+\def\LB#1{\smallskip\noindent\textbf{#1.}~}
+
+\title{\TUB\ online}
+\author{Karl Berry and David Walden}
+\EDITORnoaddress
+\netaddress{http://tug.org/TUGboat/Contents}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+\TUB\ has traditionally been, and remains, a print journal.  Its history
+was described and profusely illustrated in Barbara Beeton's 2006 paper
+(``How to Create a \TeX\ Journal: A Personal Journey'', \TUB\ 28:1,
+2007, pp.\ 29--49,
+\url{http://tug.org/TUGboat/tb28-1/tb88beet-keynote.pdf}).
+
+Since the web came into being, \TUB\ has also existed online.  This
+article sketches the evolution of the online version of \TUB.
+
+
+\section{First steps}\label{sec:prior}
+
+\TUB\ has been part of the \tug\ web site since the web site's
+beginning.  To a large extent, the original pages remain, with the basic
+description of the journal, editor's wish list, information for authors,
+and so on.
+
+It was apparent from the outset that it would be useful to publish back
+issues on the web.  Mimi Burbank began the process of scanning paper
+copies.  In a few cases articles were reprocessed, or \DVI\ converted to
+\PDF, but in the main, sources, figures, and\slash or fonts were lacking, so
+no systematic reprocessing could be attempted.  Scanning to \PDF\ was
+the only viable approach.
+
+As the work proceeded, Mimi created table of contents files in \HTML\ by
+hand.  The scanning took so much more time than writing the \HTML, and
+was proceeding so slowly, there was no need to think about any tools.
+
+As the years passed, additional volunteers came forward.  In particular,
+Brooks Moses (with the support of his department at Stanford) ended up
+doing the bulk of the scanning.  Robin Laakso in the \tug\ office also
+made significant contributions.  Most of the issues were scanned by
+2006, though the process was not completely finished until 2009, so the
+scanning overlapped with the other work we describe below.  (Even now,
+additional work remains\Dash some of the early issues were scanned at
+150\,dpi, some pages are crooked, a few pages are missing, etc.)
+
+Once enough back issues had become available, the question arose of how
+best to make the material accessible on the web.  Our attempts to answer
+that question are described in the rest of this article.
+
+
+\section{Two steps toward automating generation of \TUB\ tables of contents}
+
+\subsection{\TPJ}
+\label{sec:tpj}
+
+In 2004, \tug, at the suggestion of Lance Carnes, sponsored a \TeX\
+conference explicitly focused on practical use of \TeX.  Near the end of
+the conference, Tim Null and Robin Laakso discussed developing a section
+of the \tug\ web site that would contain introductory material on \TeX\
+organized by category.  In an exchange of emails between Tim Null and
+Karl Berry after the conference, Tim came up with the alternative idea
+of an online journal.  Lance Carnes became the editor of that journal,
+and other people volunteered or were recruited to join the new journal's
+editorial board.
+
+The Editorial Board's planning discussions naturally were centered on
+issues such as the target audience, look and feel, and frequency and
+schedule.  Meanwhile, Karl hand-crafted \HTML\ for a prototype web site
+for the new journal, and other members of the editorial board made many
+comments on it.  We then embarked on a collaboration to build a
+production program to generate a web site similar to the prototype.  The
+initial issue of \TPJ\ was published (posted at
+\url{http://tug.org/pracjourn}, which remains the journal's home) on
+January~15, 2005.  This web site includes a table of contents for each
+issue with links to the \PDF{}s of the papers, and author, title, and
+\BibTeX\ lists covering all issues.
+
+The relevance of the \textsl{Prac\TeX\ Journal\/} effort to \TUB\ online
+is that it forced us to think extensively about how a program to
+generate the web site for an online journal would work.  Dave wrote a
+lot of code, and we noted some things to be done better or differently
+if another journal web site generation program was ever written.
+
+\subsection{Contents, ordered by difficulty}
+\label{sec:difficulty}
+
+In early 2005 Dave and Karl began discussing the possibility of creating
+an additional table of contents for each issue of \TUB\ that would be
+organized by level of difficulty.  Karl took the issue to Barbara Beeton
+and the other members of the \TUB\ production group, who supported the
+idea.  \TUB\ Volume 25 (2005), No.~2 (\TUB\ issue 81) was the first
+issue that included this additional table of contents: see
+\url{http://tug.org/TUGboat/tb25-2/cover3.pdf}.  The design was
+discussed extensively in advance, and has had only minor refinements
+since that first appearance.
+
+From the beginning, we knew we would want this information to be
+available online (in \HTML) as well as in print (via \PDF).  So, we
+devised a format for the source file that both could be compiled by
+\TeX\ to produce \PDF, and would also be plausible to parse with a Perl
+program to generate \HTML\ for the online contents page.  We informally
+refer to these dual-purpose source files as ``capsule files''.
+
+The capsule files begin with some prologue definitions relevant only to
+\TeX, followed by the main material: a sequence of \verb|\capsule|
+commands, each one a capsule summary of an item in the table of
+contents.  The \verb|\capsule| entries are in the order they would
+appear in the printed level-of-difficulty table of contents (since Perl
+can do reordering more easily than \TeX).  The \verb|\capsule| command
+evolved over time, eventually having nine arguments:
+
+\begin{enumerate}
+\item The difficulty rating\Dash follows \cs{capsule} on
+     first line (example given below).
+\item The \TUB\ category,
+     possibly with a ``subargument'' \texttt{replace} or \texttt{add},
+     as described below.  Arguments 2--7 are always alone on their lines.
+\item The author(s).
+\item The title.
+\item A one-line description for the item.
+\item The page number, possibly with an \texttt{offset} subargument.
+\item The \URL\ of the item's \PDF.
+\item Optional subtitles. These can be multiple lines.
+\item Optional additional text for the \HTML.  This
+      can also be multiple lines.
+\end{enumerate}
+(Some of the subtleties of the \verb|\capsule| command's interpretation
+will be described in the next section.)
+
+For ease of parsing by the Perl program, the arguments to
+\verb|\capsule| are mostly on a single line (the exceptions are the last
+two, which can be multiple lines, as noted above).  Here's an example
+from the present issue:
+
+{\small\hfuzz=6.6pt \begin{verbatim}
+\capsule{Introductory}
+  {Resources}
+  {Jim Hef{}feron}
+  {Which way to the forum?}
+  {review of the major online help forums}
+  {\getfirstpage{heff}}
+  {/TUGboat/!TBIDENT!heff.pdf}
+  {}
+  {}
+\end{verbatim}}
+
+
+\section{Writing a program to generate \TUB~contents pages}
+
+Even given the prior experience with \TPJ\ (described in
+section~\ref{sec:tpj}), the program to generate the \TUB\ contents
+pages and lists of authors, titles, and categories/keywords evolved over
+a fairly long period.  As we handled more of \TUB's 100 issues, we
+continually learned of more variations with which we had to cope.
+
+\subsection{The series of steps}
+
+Our memory of the evolution is as follows.
+
+\LB{a}Dave first cobbled together a program to convert the capsule files
+(which only existed from issue 81 on) into tables of contents for new
+issues as they came out.  In this way, we began to understand the task
+at hand and had real examples to review as we decided what to do next.
+
+For this program, Dave reworked parts of the \textsl{Prac\TeX\ Journal}
+program.  In particular, for this and all additional evolutions of the
+project he used a pair of template routines he developed (originally to
+generate \HTML\ for the \textsl{Prac\TeX\ Journal} effort), in order to
+avoid learning about Perl's template capabilities; see
+\url{http://walden-family.com/public/texland/perl-common-code.pdf}.
+
+\LB{b}Then we started to process issues prior to \#81.  The material we
+had to work with was (a)~the online contents pages, which existed as
+hand-crafted \HTML\ (mentioned in section~\ref{sec:prior}); and
+(b)~the so-called ``\texttt{.cnt} files'' created by Barbara Beeton;
+these are \TeX\ files, covering (at the time) the tables of contents for
+all but the last few years prior to issue 81.
+
+(Aside: The \texttt{.cnt} files are also used by Nelson Beebe to produce
+his \TUB\ bibliography files.  Both are available on \CTAN\ at
+\url{http://mirror.ctan.org/info/digests/tugboat}.)
+
+\LB{c}Where only \HTML\ files existed, Dave converted the \HTML\ into
+capsule files using a combination of Perl programming, editor macros,
+and manual editing.  At this point, the \URL{}s for the \PDF{}s of the
+individual papers already existed in the \HTML\ for transfer to the
+capsule files.  (When posting the scans, Karl had updated the \HTML\
+contents files with these links to \PDF{}s for individual items.)
+
+\LB{d} For the years which had a \texttt{.cnt} file available, Dave
+wrote another Perl program for conversion into capsule files.  In this
+case, Dave then looked at the \HTML\ files for those issues and
+transferred the \URL{}s for the \PDF{}s into the capsule files.  Dave did
+this manually, looking at each \PDF\ file as he went along, spotting
+instances of multiple short or related papers in a single \PDF\ file
+such that the same \URL\ would be the argument to more than one
+\verb|\capsule| command.  (This happened because sometimes Karl had
+combined several items into one \PDF, according to his subjective idea
+of when splitting would be more hindrance than help to readers.)  In a
+few instances, we split \PDF\ files that had previously been combined.
+
+\LB{e}At this point, we had capsule files for all issues, and some
+insight into the special cases that needed to be handled.  Dave then did
+a major renovation and expansion of the main conversion program
+(paragraph~a).  In addition to generating the tables of contents for
+each issue, the new version of the program created author, title and
+keyword lists across all issues.
+
+\LB{f}Dave reran the new version of the program on the latest issues (see
+paragraph~a) to make sure those capsule files still converted correctly.
+
+\LB{g}Starting with the first issue, Dave then ran the new version of
+the program on successive issues, fairly often discovering new
+situations the program had to be augmented to handle and discussing
+possible solutions with Karl.  Some of these situations and solutions
+are described in the next sections.
+
+\LB{h}Karl and Barbara reviewed the results and suggested additional
+refinements.  Some of these just required fixes to the capsule files to
+the program.  Others required changes to the program.
+
+\LB{i}Finally, we felt ready to make the full set of computer-generated
+web pages publicly available.  They are all linked from
+\url{http://tug.org/TUGboat/contents.html}.
+
+Over time, as new \TUB\ issues have been produced a little additional
+program maintenance and improvement has been required.  Altogether there
+have been about 50 iterations of the program.
+
+%?? as indicated in the update log shown at \url{XXX-url}
+
+\subsection{Program structure}
+
+The program is driven by several plain text files:
+\begin{itemize}
+
+\item A file giving translations of words with diacritical marks,
+etc., both from \TeX\ into \HTML\ for web site display and from \TeX\
+into plain text for alphabetic sorting.
+
+\item A file for unifying both (a)~different versions of the same author's
+name, defining a single version of the name which is used for all when
+sorting items for the author list), and (b)~different versions of the
+same \TUB\ article category (e.g., `Fonts',
+    `Font Forum',
+    `Font Design and New Fonts', and
+    `Fonts and Tools'), again defining a single version which is used
+for the category/keyword list.
+
+\item A file listing the \TUB\ issues to be processed in this run.
+
+\item The capsule file for each issue.
+
+\end{itemize}
+Examples of all the files discussed here can be seen at
+\url{http://tug.org/TUGboat/tb32-1/tubonline}.
+
+The program reads the first two files to prime its data structures and
+then begins processing the third file, one issue number at a time, which
+in turn involves processing the capsule file for that issue.  As each
+capsule file is processed, the necessary information is saved for the
+title, author, and keyword\slash category lists.  The \HTML\ contents
+page for each individual issue is also output in turn.  After all the
+issues have been processed, the saved information for the three types of
+lists is sorted appropriately, and the web pages for these lists are
+created.
+
+Thus, the program is not unusual: parsing, processing, output.  It is
+inherently a bit messy because of different combinations of situations
+that must be handled in different ways, for example, the different
+combinations of the title, author, \TUB\ category, and \PDF\ \URL\ that
+may be present, resulting in different output formats.
+
+The web site generation program skips over the \TeX\ at the beginning of
+the file until it reaches the first of the few \TeX\ commands it
+understands, for instance, \verb|\issue{25}{2}{81}{2004}{}{}| which
+indicates the year, volume number and issue number within the volume,
+and overall issue sequence number, starting at 1 for the first issue of \TUB.
+
+\subsection{Program capabilities}
+
+Some of the capabilities of the program have already been mentioned,
+such as its conversion of the \TeX\ with diacritical marks for a
+person's name into \HTML\ with its equivalent diacritics for display on
+the web pages, and also into the strictly English A--Z and a--z alphabet
+for sorting.  Unifying different variations of author names and \TUB\
+categories has also been previously mentioned.
+
+The program must display slightly different table of contents pages for
+proceedings than for non-proceedings issues. Additionally, twice (to
+date) something that was not a normal \TUB\ issue was distributed by
+\tug\ such that we nevertheless wanted to handle it as if it were a
+\TUB\ issue: the preprints for the 2004 proceedings (which filled the
+role of \TUB\ issue \#79), and the Euro\TeX\ 2005 proceedings (which
+filled the role of \TUB\ issue \#85).  These instances require different
+formatting.
+
+Sometimes a capsule file has text to be included in the online table of
+contents that doesn't appear in the printed edition (argument \#9 to
+\cs{capsule}, see section~\ref{sec:difficulty}).  This is typically used
+for links to videos of conference presentations and supplementary
+information for an article.  Our program handles these commands by
+simply passing along the \HTML\ to the output; the \TeX\ macros
+for generating the printed cover ignore these commands.
+
+We want the items in the online contents to be ordered according to
+their appearance in the issue.  However, from issue 81 on, the items in
+the capsule file are in the correct order for generating the
+level-of-difficulty table of contents, so the program has to resort them
+by page number.  The items in capsule files before issue 81 are
+generally in page number order, but even then, sometimes the
+start-of-article page numbers are insufficient.  Multiple items can
+appear on the same page, some page numbers have a non-numeric format,
+e.g., c3 for cover page 3 (the inside back cover), and other occasional
+special cases.  Thus, an optional \verb|\offset{.1}|, (or \verb|{.2}|,
+etc.), parameter may follow a page number in the page-number argument to
+a \verb|\capsule| command, and these values are used to adjust the order
+of things in the page-number sort.  \cs{offset} is ignored by \TeX.
+
+Another feature eliminates a potential source of error.  In the example
+at the end of section~\ref{sec:difficulty}, the page number is not given
+directly: it's specified as \verb|\getfirstpage{heff}|.  Seeing that,
+the program looks for an auxiliary file \url{heff/firstpage.tex}, as our
+production directory is arranged.  \TeX\ itself creates that file
+automatically when an issue is run, thus avoiding manually entering page
+numbers.
+
+The example shows one more small feature: the \URL\ is given as
+\url{/TUGboat/!TBIDENT!heff.pdf} instead of
+\url{/TUGboat/tb32-1/tb100heff.pdf}.  The curious directive
+\verb|!TBIDENT!|\ came about after we had been creating capsule files
+for new issues for some time.  We realized that (naturally enough) new
+capsule entries were usually created by copying old ones, and it was
+regrettably easy to neglect updating the issue number (\verb|32-1|), the
+sequence number (\verb|100|), or both.  \verb|!TBIDENT!|\ simply expands
+to that sequence; the actual values needed for the program to do the
+expansion are given in the \cs{issue} command mentioned above.
+
+We also added some consistency checking to the program for more help
+in discovering typos, etc.:
+
+\begin{itemize}
+\item the \PDF\ files specified in the \URL{}s must actually exist (this
+assumes the program is being run on \texttt{tug.org} itself with full
+access to the archive of \PDF{}s of individual articles);
+
+\item everything in the capsule file must end up in the output, i.e., 
+no two items have identical page numbers (we manually differentiate with
+\verb|\offset| when that would otherwise be the case).
+
+\end{itemize}
+
+\section{Opportunities}
+
+Having the archives of \TUB\ available online made it possible for
+people to access articles in old issues without having to find a
+physical copy of the issue.  The attendant full lists of authors,
+titles, and keywords are particularly useful to researchers (ourselves
+included) trying to find things in the \TUB\ archive.  For example, we
+have used those lists in doing background research for the \tug\
+interview series
+{\parfillskip=0pt\par\newpage\noindent}%
+(\url{http://tug.org/interviews}), and in creating the
+book \textsl{\TeX's 2\/\raise .9ex \hbox{\scriptsize 5} Anniversary},
+which involved creating lists of papers from \TUB.  (A fuller
+description of how that latter book came about is at
+\url{http://tug.org/store/tug10/10paper.pdf}.)
+
+From the outset of \TUB\ online, issues more than a year old were made
+publicly available.  A year after the publication of each new issue, it
+was posted to the \TUB\ web site.  Following this precedent, we
+immediately put all older issues online in full as the material became
+available.
+
+Having so much more of \TUB\ available online brought home the question
+of the extent to which non-members of \tug\ would have access.
+Eventually, the \tug\ board of directors decided to put each issue
+online for members to access as soon as the paper copy was published,
+but to wait a year before making it available to non-members.  At about
+the same time, members were offered a membership option (with a discount
+from the regular cost of membership) where they were not sent paper
+copies of \TUB\ and only accessed it online.  About 15 percent of
+members choose this option.
+
+In general it seems that having \TUB\ online is good for both \tug\
+members and other people interested in \TeX, typography, and fonts.
+Having \TUB\ online is consistent with \tug's mission:
+
+\begin{quotation}\small
+\noindent{}TUG is a not-for-profit organization by, for, and of its
+members, representing the interests of TeX users worldwide and providing
+an organization for people who are interested in typography and font
+design.
+\end{quotation}
+
+%However, having \TUB\ available online to everyone has the downside
+%concern of being one less (substantial) reason to join \tug.
+%\Dash{}to subscribe to the journal.
+
+\begin{comment}
+Most recently, because the tables of contents for all \TUB\ issues
+already existed in an readily parsable machine readable form, it was not
+too difficult for TUG to make a deal with Mathematical Sciences
+Publishers, http://mathscipub.org, led by Paolo Ney de Souza such that
+they could include \TUB\ as part of their web site and sell subscriptions
+to \TUB\ on behalf of itself and TUG.
+\end{comment}
+
+As for the specifics that we've presented here, having the machine
+readable capsule files for all issues of \TUB\ allows easier reuse of
+\TUB\ data in other, perhaps as yet unforeseen, contexts.
+
+\medskip
+\section*{Acknowledgments}
+
+Barbara Beeton, Mimi Burbank, and Christina Thiele all searched their
+memories and archives to help us.
+{\hfuzz=.9pt\par}
+
+As described in the beginning of the article, Mimi initiated the process
+of getting \TUB\ issues online (among many other \TUB\ and \tug\ and
+\TeX\ efforts).  We'd like to dedicate this article to her memory;
+sadly, she passed away late last year (a full memorial appears elsewhere
+in this issue).
+
+\vskip1\baselineskip
+\advance\signaturewidth by 3pt
+\makesignature
+
+\end{document}
+
+
+\begin{comment}
+FROM Mimi
+
+The "production team" came into being in 1996 - because we were so far
+behind.  The files were on the computers at FSU - and everyone on the
+team had accounts on the machines there.  Barbara had always wanted to
+make the files available, and since she had access to them on the FSU
+computers, it was easy just to grab them and move them to their new
+home.
+
+The articles were run using pdfLaTeX - and PDF files were the final
+output I believe.  The only real problems were those files that used
+newly designed software - and we always had Sebastian around to install
+things for us so that we were able to run things on the machines at FSU.
+I believe that actual production of some of the articles was one of the
+real problems that Barbara had at the AMS - which was where all the
+previous issues were run.  At FSU, we had carte blanche to install
+whatever we wanted, and we maintained the system for a whole bunch of
+operating systems.
+
+I believe I actually made the index from the final 'run'    - raw HTML...
+
+
+But - you'll really need to get all of this confirmed by Barbara - she
+was the 'boss' we were just the day-laborers...
+\end{comment}

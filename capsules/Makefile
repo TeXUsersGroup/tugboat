@@ -72,8 +72,8 @@ try:
 	perl try.pl
 
 a:
-	texfot pdflatex '\nonstopmode\input a.tex'
-#	bibtex a
+	texfot pdflatex '\nonstopmode\input article-2019.ltx'
+	bibtex article-2019
 
 clean:
 	rm -f contents*.html listauthor.html listkeyword.html listtitle.html
