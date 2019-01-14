@@ -104,7 +104,7 @@
 \capsule{}%subsec
         {Front Ends}
         {Robert~McGaffey}
-        {Automatic tables using {\SMC SGML}, {\SMC C}, and {\TeX}}
+        {Automatic tables using \SGML, \acro{C}, and \TeX}
         {}
         {291-294}
         {/TUGboat/tb13-3/mcgaffey.pdf}
@@ -233,7 +233,7 @@
 \capsule{}%subsec
         {Future Issues}%replace|Accessibility
         {T.~V.~Raman}
-        {An audio view of ({\La}){\TeX} documents}
+        {An audio view of \AllTeX\ documents}
         {}
         {372-379}
         {/TUGboat/tb13-3/raman.pdf}

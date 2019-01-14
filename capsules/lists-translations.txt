@@ -46,9 +46,9 @@ R\r{u}\v{z}i\v{c}ka||R&#367;&#382;i&#269;ka||Ruzicka
 # this first is for \TeX{}\kern...works
 \TeX{}\kern-.07em ||TeX
 \TeX ||TeX
-\TeXLive||TeX Live
 \TUB{}\CONNECT{}Team||TUGboat Team
 
+# Various accents. todo: use hex consistently, not decimal.
 \"a||&auml;||a
 \"O||&#214;||O
 \"o||&ouml;||o
@@ -81,7 +81,6 @@ R\r{u}\v{z}i\v{c}ka||R&#367;&#382;i&#269;ka||Ruzicka
 \.Z||&#x017b;||Z
 \.z||&#x017c;||z
 #
-\c c||&#xe7;||c
 \c{c}||&#xe7;||c
 \c{S}||S&#x327;||S
 # \c{S} is for Schaefer's "SaferTeX in tb79 and tb85; combining cedilla.
@@ -118,9 +117,6 @@ $\Omega_2$||&Omega;2||O2
 \%||%
 \AE||&AElig;||AE
 \AMS||AMS
-\API||API
-\ASCII||ASCII
-\AcroFLeX||AcroFLeX
 \AllTeX||(La)TeX
 \AmSTeX||AmSTeX
 \ae||&aelig;||ae
@@ -128,7 +124,6 @@ $\Omega_2$||&Omega;2||O2
 \CandT\/||<i>Computers and Typesetting</i>
 \/||
 \CONNECT{}||&nbsp;|| \\
-\CONTEXT||CONTEXT
 \ConTeXt||ConTeXt
 \CS{}plain||CSplain
 \CSS||CSS
@@ -138,16 +133,11 @@ $\Omega_2$||&Omega;2||O2
 \DVI||DVI
 \eTeX||&epsilon;-TeX||eTeX
 \exTeX||exTeX
-\ExTeX||exTeX
-\FAQ||FAQ
 \GNU||GNU
-\GUI||GUI
 \HTML||HTML
-\JoT||<i>The Joy of TeX</i>
 \kern.05em||
 \kern1pt||
 \LaTeXe||LaTeX2e
-({\La}){\TeX}||(La)TeX
 {\LaTeX}||LaTeX
 \LaTeX\||LaTeX
 \LaTeX ||LaTeX
@@ -193,18 +183,13 @@ $\Omega_2$||&Omega;2||O2
 (\Xe)LaTeX||(Xe)LaTeX
 \XeTeX||XeTeX
 \XML||XML
-\XSLT||XSLT
 \XyMTeX||XyMTeX
 \&||&amp;
 \_||_
 ``||&ldquo;
-{\SMC C}||C
-{\SMC SGML}||SGML
 {\TeX}||TeX
 {\TUG}||TUG
 {\VAX}||VAX
-\VAX||VAX
-\VnTeX||VnTeX
 ---||&mdash;||\\
 --||&ndash;||\\
 \Dash ||&mdash;||\\

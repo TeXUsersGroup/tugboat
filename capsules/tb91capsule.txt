@@ -431,7 +431,7 @@ information on TUG member access</a>.
 \capsule{Intermediate}
   {Multilingual Document Processing}
   {\Thanh}
-  {Typesetting Vietnamese with \VnTeX\ (and with the \TeX\ Gyre fonts too)}
+  {Typesetting Vietnamese with Vn\TeX\ (and with the \TeX\ Gyre fonts too)}
   {introduction to typesetting Vietnamese in \TeX}
   {95}
   {/TUGboat/!TBIDENT!thanh-vntex.pdf}
@@ -693,8 +693,8 @@ Pawe\l{} Jackowski: Custom overfull text.\\
 \capsule{Advanced}
   {Software \& Tools}
   {Gerd Neugebauer}
-  {Conventional scoping of registers\Dash An experiment in \ExTeX}
-  {alternative localization of registers via the Java infrastructure of \ExTeX}
+  {Conventional scoping of registers\Dash An experiment in \exTeX}
+  {alternative localization of registers via the Java infrastructure of \exTeX}
   {151}
   {/TUGboat/!TBIDENT!neugebauer.pdf}
   {}

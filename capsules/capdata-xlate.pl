@@ -17,7 +17,7 @@ sub xlate_tex2html {
     my $tex = $tex_exprs->[$i];
     my $html = $html_strs->[$i];
     if ($str =~ s/$tex/$html/g) {     # need /g for, e.g., "\ " -> " ".
-      $xlate_count{"$tex||$html"}++;  # track translation usage
+      $xlate_count{"$tex|h|$html"}++;  # track translation usage
     }
   }
   return $str;
@@ -31,7 +31,7 @@ sub xlate_html2txt {
     my $html = $html_strs->[$i];
     if ($str =~ s/$html/$txt/g) {     # need /g for, e.g., "\ " -> " "
       #warn "did s/$html/$txt/ in $str\n";
-      $xlate_count{"$html||$txt"}++;  # track translation usage
+      $xlate_count{"$html|t|$txt"}++;  # track translation usage
     }
   }
   return $str;
@@ -45,15 +45,25 @@ sub xlate_dump_count {
   for (my $i = 0; $i < @$tex_exprs; $i++) {
     my $tex = $tex_exprs->[$i];
     my $html = $html_strs->[$i];
-    my $key = "$tex||$html";
-    if (! exists $xlate_count{$key}) {
-      print "0 $key\n";
-    }
+    my $hkey = "$tex|h|$html";
+    print "0 $hkey\n"
+      if ! exists $xlate_count{$hkey}
+         && $html !~ /&#x1ebf/; # we need the txt for \Thanh, tex never used.
+    
+    # We have lots of unused html->text translations, so skip showing them.
+    #my $txt = $txt_strs->[$i];
+    #if ($txt) {
+    #  my $tkey = "$html|h|$txt";
+    #  print "0 $tkey\n" if ! exists $xlate_count{$tkey};
+    #}
   }
-  # xxx also do $tex||$txt
   # 
-  # and then the rest, if requested.
-  if (0) { # xxx option for xlate dump all?
+  # and then the rest, if requested. maybe make an option.
+  # We could speed things up by merging more translations entries,
+  # especially those only used once, but not always simple.
+  # We never process these with TeX, but still, somehow seems wrong
+  # to give up the possibility of redoing.
+  if (0) { # todo: option for this, xlate dump all counts?
     for my $k (sort { $xlate_count{$a} <=> $xlate_count{$b} }
                keys %xlate_count) {
       printf "%4d %s\n", $xlate_count{$k}, $k;

@@ -1,3 +1,14 @@
+2019-01-13  Karl Berry  <karl@freefriends.org>
+
+	* capdata-xlate.pl (xlate_dump_count): try and reject showing
+	unused html->txt translations, since there are lots; distinguish
+	tex->html from html->txt.
+	* lists-regexps.txt (\smc),
+	* lists-translations.txt (\SMC, many more): remove
+	some of the translations used only once, for speedup (minor)
+	and cleanliness (also minor).
+	* tb<many>capsule.txt: adjust to use \acro and other commonalities.
+
 2019-01-11  Karl Berry  <karl@freefriends.org>
 
 	* article-2011.ltx,

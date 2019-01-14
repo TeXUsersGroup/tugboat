@@ -1,10 +1,8 @@
 $Id$
 
 xxxx ending page numbers not always present; synthesize?
-xxxx save, dump, compare, count  tex+html+txt strings
- in file, do we want?xxxx after switch, delete title unifications
- also count translations etc, no lists-* left unused
-xxxx including count #matches for the other lists-* and show zeros
+xxxx count unifications and regexps too, no lists-* left unused
+xxxx -> delete title unifications.
 
 TUGboat capsules processing. Public domain.
 Originally written 2017 Karl Berry.
@@ -27,7 +25,11 @@ lists-regexps       Perl substitutions.
 lists-translations  convert TeX fragments to HTML and sortable ASCII.
 lists-unifications  different category/author/title forms to be combined.
 
+Consider "todo:" items.
+
 
+13jan19 remove a few of translations used only once, adjust sources.
+
 10jan19 reenable xlate_dump_count, try reporting 1 hit. strange 0:
 0 (?^:\\textcircumacute\{e\})||&#x1ebf;
 but it is needed for Thanh abbrev?

@@ -356,10 +356,11 @@ TUG member access</a>.
   {}
   {}
 
+% dvi2svg was \smc, but not worth keeping.
 \capsule{Intermediate Plus}
   {Electronic documents}
   {Adrian Frischauf \aand Paul Libbrecht}
-  {{\smc dvi2svg}: Using {\LaTeX} layout on the Web}
+  {\textsf{dvi2svg}: Using {\LaTeX} layout on the Web}
   {math formulas on the Web via \acro{DVI} to \acro{SVG} conversion}
   {197}
   {/TUGboat/tb27-2/tb87frischauf.pdf}
