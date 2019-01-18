@@ -1,8 +1,7 @@
 $Id$
 
 xxxx ending page numbers not always present; synthesize?
-xxxx count unifications and regexps too, no lists-* left unused
-xxxx -> delete title unifications.
+xxxx count regexps too, no lists-* left unused
 
 TUGboat capsules processing. Public domain.
 Originally written 2017 Karl Berry.
@@ -28,6 +27,10 @@ lists-unifications  different category/author/title forms to be combined.
 Consider "todo:" items.
 
 
+17jan19 remove unused unifications.
+
+16jan19 count unifications.
+
 13jan19 remove a few of translations used only once, adjust sources.
 
 10jan19 reenable xlate_dump_count, try reporting 1 hit. strange 0:

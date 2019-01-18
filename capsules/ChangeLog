@@ -1,3 +1,10 @@
+2019-01-17  Karl Berry  <karl@freefriends.org>
+
+	* capdata-unify.pl (lists_unify): count unifications used.
+	(unify_dump_count): output unused unifications.
+	* capaccum.pl (accumulation_check): call it.
+	* lists-unifications.txt: remove unused unifications.
+
 2019-01-13  Karl Berry  <karl@freefriends.org>
 
 	* capdata-xlate.pl (xlate_dump_count): try and reject showing

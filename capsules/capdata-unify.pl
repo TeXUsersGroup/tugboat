@@ -6,14 +6,36 @@ use strict; use warnings;
 {
 my %unify = &read_unify ();
 #warn "uni ", join ("|", sort keys %unify), "\n";
+my %unify_count;
 
 sub lists_unify {
   my ($str) = @_;
   
   my $ret = $unify{$str} || $str;
+  $unify_count{$str}++ if $ret ne $str;
   return $ret;
 }
 
+
+# Output unification entry usage.
+# 
+sub unify_dump_count {
+  # unused entries.
+  for my $k (sort keys %unify) {
+    if (! exists $unify_count{$k}) {
+      print "0 $k\n";
+    }
+  }
+  
+  # could output the counts of those used, but not interesting, since there
+  # is no speed benefit to minimizing them, as there is with translations.
+  #for my $k (sort { $unify_count{$a} <=> $unify_count{$b} }
+  #           keys %unify_count) {
+  #  printf "%d %s\n", $unify_count{$k}, $k;
+  #}
+}
+
+
 # Return hash with the keys being "alias strings" and the values the
 # strings "as they should be", i.e., to which any of the aliases is unified.
 # 

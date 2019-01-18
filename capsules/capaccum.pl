@@ -140,6 +140,7 @@ END_LIST_HDR_COMMON
 sub accumulation_check {
   my (%check) = @_;
   
+  &unify_dump_count ();
   &xlate_dump_count ();
 
   # check for all and only expected difficulties and categories.

@@ -37,6 +37,7 @@ sub xlate_html2txt {
   return $str;
 }
 
+
 # Output translation entry usage.
 # 
 sub xlate_dump_count {
@@ -71,6 +72,7 @@ sub xlate_dump_count {
   }
 }
 
+
 # Internal function to read the file. Returns references to three lists
 # of equal length, of the TeX regexp objects, HTML strings, and
 # plain-text strings, respectively; these are the three args given on
