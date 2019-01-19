@@ -140,6 +140,7 @@ END_LIST_HDR_COMMON
 sub accumulation_check {
   my (%check) = @_;
   
+  &rx_dump_count ();
   &unify_dump_count ();
   &xlate_dump_count ();
 

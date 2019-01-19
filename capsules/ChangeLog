@@ -1,3 +1,11 @@
+2019-01-18  Karl Berry  <karl@freefriends.org>
+
+	* capdata-rx.pl (lists_regexps): count regexps used.
+	(rx_dump_count): output unused regexps.
+	* capaccum.pl (accumulation_check): call it.
+	* lists-regexps.txt: remove unused, and used only once.
+	* tb{85,105,119}capsule.txt: regularize usage.
+
 2019-01-17  Karl Berry  <karl@freefriends.org>
 
 	* capdata-unify.pl (lists_unify): count unifications used.

@@ -7,6 +7,7 @@ require "caputil.pl";
 
 {
 my ($lhs_exprs,$rhs) = &read_regexps ();
+my %rx_count;
 
 sub lists_regexps {
   my ($str) = @_;
@@ -16,6 +17,7 @@ sub lists_regexps {
     local $SIG{__WARN__} = sub { $warnstr = $_[0]; };
     #
     $first_str = $str;
+    my $prev_str = $str;
     for (my $i = 0; $i < @$lhs_exprs; $i++) {
       my $lhs = $lhs_exprs->[$i];
       my $rhs = $rhs->[$i];
@@ -26,12 +28,36 @@ sub lists_regexps {
       $@ && die "eval(s/$lhs/$rhs/eeg) failed: $@";
       $warnstr && die "Warning `$warnstr' while evaluating: "
         . "s/$lhs/$rhs/eeg\n  for string: $str\n";
+      if ($str ne $prev_str) {
+        $rx_count{"$lhs.$rhs"}++;
+        $prev_str = $str;
+      }
     }
   } while ($str ne $first_str);
   
   return $str;
 }
 
+# Output regexp usage.
+# 
+sub rx_dump_count {
+  # unused items.
+  for (my $i = 0; $i < @$lhs_exprs; $i++) {
+    my $lhs = $lhs_exprs->[$i];
+    my $rhs = $rhs->[$i];
+    if (! exists $rx_count{"$lhs.$rhs"}) {
+      print "0 $lhs/$rhs\n";
+    }
+  }
+  
+  # by count.
+  #for my $k (sort { $rx_count{$a} <=> $rx_count{$b} }
+  #           keys %rx_count) {
+  #  printf "%4d %s\n", $rx_count{$k}, $k;
+  #}
+}
+
+
 # Internal function to read the file. Returns references to two lists of
 # equal length, of the lhs and rhs of Perl s// expressions respectively
 # 

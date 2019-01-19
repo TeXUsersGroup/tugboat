@@ -22,9 +22,6 @@
 # superscript
 \\sp\{(.*?)\}||"<sup><font size=1>$1</font></sup>"
 
-# angle brackets
-\\<(.*?)>||"&lt;$1&gt;"
-
 # \ss at end of string; can't easily do in translations since there is
 # also \ssf. cleaner to do it here.
 \\ss$||"&szlig;"
@@ -37,21 +34,14 @@
 \\textsl\{\s*(.*?)\}||"<i>$1</i>"
 #
 \{\\bf\s*(.*?)\}||"<b>$1</b>"
-\\textbf\{\s*(.*?)\}||"<b>$1</b>"
-#
-\{\\rm\s*(.*?)\}||$1
-\\textrm\{\s*(.*?)\}||$1
 #
 \{\\ssf\s*(.*?)\}||$1
 \{\\sf\s*(.*?)\}||$1
 \\textsf\{(.*?)\}||$1
 #
-\\t\{(.*?)\}||$1
 \\texttt\{(.*?)\}||"<tt>$1</tt>"
 \{\\tt\\bs (.*?)\}||"<tt>\\$1</tt>"
 \{\\tt\s*(.*?)\}||"<tt>$1</tt>"
-#
-\{\\manual\s*(.*?)\}||$1
 
 # elide bare braces. do last since braces are part of matching above.
 \{(.*?)\}||$1
