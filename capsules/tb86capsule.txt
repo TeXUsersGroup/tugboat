@@ -181,7 +181,7 @@ TUG member access</a>.
         {}
         {Title page}
         {}
-        {1}
+        {1-1}
         {/TUGboat/tb27-1/titlepage.pdf}
 
 \category{Introductory}
@@ -191,7 +191,7 @@ TUG member access</a>.
   {G\'abor Bella}
   {Impressions from Euro\TeX\ 2006}
   {informal introduction to and review of Euro\TeX\ 2006, with photos}
-  {4}
+  {4-4}
   {/TUGboat/tb27-1/tb86bella.pdf}
   {}
   {}
@@ -201,7 +201,7 @@ TUG member access</a>.
   {Gy\"ongyi Bujdos\'o}
   {The Hungarian \TeX\ Rhapsody\Dash Euro\TeX\ 2006}
   {introduction to the Euro\TeX\ 2006 conference}
-  {3}
+  {3-3}
   {/TUGboat/tb27-1/tb86bujdoso-intro.pdf}
   {}
   {}
@@ -211,7 +211,7 @@ TUG member access</a>.
   {Gy\"ongyi Bujdos\'o}
   {Typography based on-line help on \TeX}
   {towards an on-line \TeX\ help system including typographical assistance}
-  {28}
+  {28-28}
   {/TUGboat/tb27-1/tb86bujdoso-help.pdf}
   {}
   {}
@@ -221,7 +221,7 @@ TUG member access</a>.
   {Katalin Fried et al.}
   {The colourful side of {\TeX}}
   {recollections of \TeX\ adventures through the years}
-  {13}
+  {13-13}
   {/TUGboat/tb27-1/tb86fried.pdf}
   {}
   {}
@@ -231,7 +231,7 @@ TUG member access</a>.
   {Taco Hoekwater \aand Hans Hagen}
   {The making of a (\TeX) font}
   {from cow (and a few sheep) drawings to digital letterforms}
-  {62}
+  {62-62}
   {/TUGboat/tb27-1/tb86hoekwater-cows.pdf}
   {}
   {}
@@ -241,7 +241,7 @@ TUG member access</a>.
   {Ildik\'o Mikl\'os}
   {K\"oMaL \acro{CD}\Dash The execution}
   {making the archives of a century-old journal accessible online}
-  {43}
+  {43-43}
   {/TUGboat/tb27-1/tb86miklos.pdf}
   {}
   {}
@@ -251,7 +251,7 @@ TUG member access</a>.
   {Andr\'as Vir\'agv\"olgyi}
   {Would Aldus Manutius have used \TeX{}?}
   {beginnings of typography and the Aldine workshop}
-  {8}
+  {8-8}
   {/TUGboat/tb27-1/tb86viragvolgyi.pdf}
   {}
   {}
@@ -261,7 +261,7 @@ TUG member access</a>.
   {Fahmy, Hagen, Henkel, Hufflen, Rad\'o, Schr\"oder, Szab\'o}
   {Euro\TeX{} 2006 abstracts}
   {}
-  {104}
+  {104-104}
   {/TUGboat/tb27-1/tb86abstracts.pdf}
   {}
   {}
@@ -276,7 +276,7 @@ TUG member access</a>.
   {Taco Hoekwater}
   {Opening up the type}
   {high-level plan for supporting OpenType in lua\TeX\ and pdf\TeX}
-  {16}
+  {16-16}
   {/TUGboat/tb27-1/tb86hoekwater-luatex.pdf}
   {}
   {}
@@ -286,7 +286,7 @@ TUG member access</a>.
   {Taco Hoekwater}
   {MetaPost developments\Dash autumn 2006}
   {new features and fixes in the forthcoming MetaPost release}
-  {18}
+  {18-18}
   {/TUGboat/tb27-1/tb86hoekwater-metapost.pdf}
   {}
   {}
@@ -296,7 +296,7 @@ TUG member access</a>.
   {Siep Kroonenberg}
   {Managing a network \TeX{} installation under Windows}
   {procedures and tips for a MiK\TeX-based site-wide installation}
-  {22}
+  {22-22}
   {/TUGboat/tb27-1/tb86kroonenberg-miktex.pdf}
   {}
   {}
@@ -306,7 +306,7 @@ TUG member access</a>.
   {Siep Kroonenberg}
   {Font installation the shallow way}
   {examples of simple font installation using afm2pl and afm2tfm}
-  {66}
+  {66-66}
   {/TUGboat/tb27-1/tb86kroonenberg-fonts.pdf}
   {}
   {}
@@ -320,7 +320,7 @@ TUG member access</a>.
   {Istv\'an Bencze \cand Bal\'azs Fark \cand L\'aszl\'o Hatala \aand P\'eter Jeszenszky}
   {Server side \acro{PDF} \\ generation based on \LaTeX\ templates}
   {survey of free Java tools for \acro{PDF} generation and \LaTeX\ integration, with examples}
-  {51}
+  {51-51}
   {/TUGboat/tb27-1/tb86bencze.pdf}
   {}
   {}
@@ -330,7 +330,7 @@ TUG member access</a>.
   {Thierry Bouche}
   {A pdf\/\LaTeX-based automated journal production system}
   {design of a generic system for production of many scientific journals}
-  {45}
+  {45-45}
   {/TUGboat/tb27-1/tb86bouche.pdf}
   {}
   {}
@@ -340,7 +340,7 @@ TUG member access</a>.
   {Hans Hagen}
   {What tools do \ConTeXt\ users have?}
   {review of tools for manipulating the \TeX\ environment, graphics, and more}
-  {38}
+  {38-38}
   {/TUGboat/tb27-1/tb86hagen.pdf}
   {}
   {}
@@ -350,7 +350,7 @@ TUG member access</a>.
   {L\'aszl\'o N\'emeth}
   {Automatic non-standard hyphenation in OpenOffice.org}
   {extending \TeX's hyphenation algorithm to handle spelling changes and more}
-  {32}
+  {32-32}
   {/TUGboat/tb27-1/tb86nemeth.pdf}
   {}
   {}
@@ -360,7 +360,7 @@ TUG member access</a>.
   {P\'eter Szab\'o and Andr\'as Hrask\'o}
   {Managing a math exercise database with \LaTeX{}}
   {using \LaTeX\ as source for a database with multiple output forms}
-  {57}
+  {57-57}
   {/TUGboat/tb27-1/tb86szabo.pdf}
   {}
   {}
@@ -374,7 +374,7 @@ TUG member access</a>.
   {Yannis Haralambous}
   {New hyphenation techniques in $\Omega_2$}
   {supporting generalized hyphenation routines}
-  {98}
+  {98-98}
   {/TUGboat/tb27-1/tb86haralambous-hyph.pdf}
   {}
   {}
@@ -384,7 +384,7 @@ TUG member access</a>.
   {Yannis Haralambous \cand G\'abor Bella \aand Atif Gulzar}
   {Open-belly surgery in $\Omega_2$}
   {radical reorganization of Omega to support general modularity and textemes}
-  {91}
+  {91-91}
   {/TUGboat/tb27-1/tb86haralambous-o2.pdf}
   {}
   {}
@@ -394,7 +394,7 @@ TUG member access</a>.
   {Jean-Michel Hufflen}
   {Ml\BibTeX\ meets \ConTeXt}
   {adding support for \ConTeXt\ to Ml\BibTeX}
-  {76}
+  {76-76}
   {/TUGboat/tb27-1/tb86hufflen.pdf}
   {}
   {}
@@ -404,7 +404,7 @@ TUG member access</a>.
   {Bogus\l{}aw Jackowski}
   {Appendix G illuminated}
   {illustrations and explanations of fine points of \TeX's math typesetting}
-  {83}
+  {83-83}
   {/TUGboat/tb27-1/tb86jackowski.pdf}
   {}
   {}
@@ -414,7 +414,7 @@ TUG member access</a>.
   {Karel P\'{\i}\v{s}ka}
   {Font verification and comparison in examples}
   {detailed examples and tools for exacting font comparisons}
-  {71}
+  {71-71}
   {/TUGboat/tb27-1/tb86piska.pdf}
   {}
   {}
@@ -429,7 +429,7 @@ TUG member access</a>.
   {}
   {Euro\TeX{} 2006 conference delegates, and sponsors}
   {}
-  {2}
+  {2-2}
   {/TUGboat/tb27-1/tb86confinfo.pdf}
   {}
   {}
@@ -439,7 +439,7 @@ TUG member access</a>.
   {}
   {Calendar}
   {}
-  {106}
+  {106-106}
   {/TUGboat/tb27-1/tb86calendar.pdf}
   {}
   {}
@@ -449,7 +449,7 @@ TUG member access</a>.
   {}
   {Institutional members}
   {}
-  {107\offset{0.1}}
+  {107-107\offset{0.1}}
   {/instmem.html}
   {}
   {}
@@ -459,7 +459,7 @@ TUG member access</a>.
   {}
   {\acro{TUG} 2007 election}
   {}
-  {107\offset{0.2}}
+  {107-107\offset{0.2}}
   {/election}
   {}
   {}
@@ -469,7 +469,7 @@ TUG member access</a>.
   {}
   {\TeX\ consulting and production services}
   {}
-  {108}
+  {108-108}
   {/consultants.html}
   {}
   {}

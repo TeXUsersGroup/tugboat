@@ -189,7 +189,7 @@ TUG member access</a>.
         {}
         {Title page}
         {}
-        {109}
+        {109-109}
         {/TUGboat/tb27-2/titlepage.pdf}
 
 \category{Introductory}
@@ -199,7 +199,7 @@ TUG member access</a>.
   {Barbara Beeton}
   {Editorial comments}
   {typography and {\sl TUGboat} news}
-  {111}
+  {111-111}
   {/TUGboat/tb27-2/tb87beet.pdf}
   {{TUG\,2006}\\
 {Chuck Bigelow goes to RIT}\\
@@ -213,7 +213,7 @@ TUG member access</a>.
   {Karl Berry}
   {From the President}
   {some \acro{TUG} activities and information for 2006}
-  {110}
+  {110-110}
   {/TUGboat/tb27-2/tb87pres.pdf}
   {}
   {}
@@ -223,7 +223,7 @@ TUG member access</a>.
   {Hans Hagen \cand Jerzy B. Ludwichowski \aand Volker \acro{RW} Schaa}
   {The New Font Project: \TeX\ Gyre}
   {enhancing the free fonts from \acro{URW} et al.\ to support more scripts, analogous to Latin Modern}
-  {230}
+  {230-230}
   {/TUGboat/tb27-2/tb87hagen-gyre.pdf}
   {}
   {}
@@ -233,7 +233,7 @@ TUG member access</a>.
   {Taco Hoekwater}
   {\acro{TUG} 2006 report}
   {informal introduction to and review of \acro{TUG} 2006, with photos}
-  {131}
+  {131-131}
   {/TUGboat/tb27-2/tb87hoekwater.pdf}
   {}
   {}
@@ -247,7 +247,7 @@ TUG member access</a>.
   {Claudio Beccari}
   {\LaTeXe, {\tt pict2e} and complex numbers}
   {extending the graphics of the {\tt pict2e} package via complex number manipulation}
-  {202}
+  {202-202}
   {/TUGboat/tb27-2/tb87becc.pdf}
   {}
   {}
@@ -257,7 +257,7 @@ TUG member access</a>.
   {Mohamed Jamal Eddine Benatia \cand Mohamed Elyaakoubi \aand Azzeddine Lazrek}
   {Arabic text justification}
   {survey of historical methods of Arabic text justification, and a recommended algorithm}
-  {137}
+  {137-137}
   {/TUGboat/tb27-2/tb87benatia.pdf}
   {}
   {}
@@ -267,7 +267,7 @@ TUG member access</a>.
   {Morten H\o{}gholm}
   {Page design in \LaTeX3}
   {using \LaTeX3 features to ease and generalize page layout definitions}
-  {213}
+  {213-213}
   {/TUGboat/tb27-2/tb87hoegholm.pdf}
   {}
   {}
@@ -277,7 +277,7 @@ TUG member access</a>.
   {Youssef Jabri}
   {The Arabi system\Dash \TeX{} writes in Arabic and Farsi}
   {an Arabic package for \TeX\ needing no preprocessor, integrated with Babel}
-  {147}
+  {147-147}
   {/TUGboat/tb27-2/tb87jabri.pdf}
   {}
   {}
@@ -287,7 +287,7 @@ TUG member access</a>.
   {Jonathan Kew}
   {Unicode and multilingual typesetting with \XeTeX}
   {extended abstract demonstrating Arabic typesetting with \XeTeX}
-  {228}
+  {228-228}
   {/TUGboat/tb27-2/tb87kew.pdf}
   {}
   {}
@@ -297,7 +297,7 @@ TUG member access</a>.
   {F. Mounayerji \aand M.\,A. Naal}
   {Arabic font building for \LaTeX}
   {outline of procedure for building Arabic fonts from scratch}
-  {238}
+  {238-238}
   {/TUGboat/tb27-2/tb87mounayerji.pdf}
   {}
   {}
@@ -307,7 +307,7 @@ TUG member access</a>.
   {John Owens}
   {The installation and use of OpenType fonts in~\LaTeX}
   {also discusses basics of accessing new fonts from \LaTeX}
-  {112}
+  {112-112}
   {/TUGboat/tb27-2/tb87owens.pdf}
   {}
   {}
@@ -317,7 +317,7 @@ TUG member access</a>.
   {Chris Rowley}
   {Everything we want to know about Font Resources}
   {brief discussion and open-ended questions on modern fonts and typesetting engines}
-  {241}
+  {241-241}
   {/TUGboat/tb27-2/tb87rowley.pdf}
   {}
   {}
@@ -327,7 +327,7 @@ TUG member access</a>.
   {Apostolos Syropoulos}
   {\LaTeX\ as a tool for the typographic reproduction of ancient texts}
   {}
-  {181}
+  {181-181}
   {/TUGboat/tb27-2/tb87syropoulos.pdf}
   {}
   {}
@@ -341,7 +341,7 @@ TUG member access</a>.
   {Alex A.J.}
   {Typesetting Malayalam using \OMEGA}
   {installation and use of a new Omega package to support Malayalam}
-  {125}
+  {125-125}
   {/TUGboat/tb27-2/tb87aj.pdf}
   {}
   {}
@@ -351,7 +351,7 @@ TUG member access</a>.
   {Mustapha Eddahibi \cand Azzeddine Lazrek \aand Khalid Sami}
   {Dad\TeX{}\Dash A full Arabic interface}
   {\TeX-based localization of documents to Arabic}
-  {154}
+  {154-154}
   {/TUGboat/tb27-2/tb87eddahibi.pdf}
   {}
   {}
@@ -362,7 +362,7 @@ TUG member access</a>.
   {Adrian Frischauf \aand Paul Libbrecht}
   {\textsf{dvi2svg}: Using {\LaTeX} layout on the Web}
   {math formulas on the Web via \acro{DVI} to \acro{SVG} conversion}
-  {197}
+  {197-197}
   {/TUGboat/tb27-2/tb87frischauf.pdf}
   {}
   {}
@@ -372,7 +372,7 @@ TUG member access</a>.
   {Hossam A.H. Fahmy}
   {AlQalam for typesetting traditional Arabic texts}
   {enhancements to Arab\TeX\ for Arabic, especially for typesetting the Qur'an}
-  {159}
+  {159-159}
   {/TUGboat/tb27-2/tb87fahmy.pdf}
   {}
   {}
@@ -382,7 +382,7 @@ TUG member access</a>.
   {Hans Hagen}
   {\acro{MKII}--\acro{MKIV}}
   {integration of Lua\TeX\ with \ConTeXt\ for graphics, \acro{I/O}, networking, and more}
-  {219}
+  {219-219}
   {/TUGboat/tb27-2/tb87hagen-context.pdf}
   {}
   {}
@@ -392,7 +392,7 @@ TUG member access</a>.
   {Timothy Hall}
   {Brackets around anything}
   {placing braces of any size and any angle for labeling within a figure}
-  {121}
+  {121-121}
   {/TUGboat/tb27-2/tb87hall.pdf}
   {}
   {}
@@ -402,7 +402,7 @@ TUG member access</a>.
   {Karel P\'{\i}\v{s}ka}
   {Outline font extensions for Arabic typesetting}
   {discussion of FontForge and MetaType1 for Arabic fonts}
-  {234}
+  {234-234}
   {/TUGboat/tb27-2/tb87piska.pdf}
   {}
   {}
@@ -412,7 +412,7 @@ TUG member access</a>.
   {Zden\v{e}k Wagner}
   {Babel speaks Hindi}
   {Hindi support in Babel via devnag, and Unicode vs.\ Velthuis transliteration}
-  {176}
+  {176-176}
   {/TUGboat/tb27-2/tb87wagner.pdf}
   {}
   {}
@@ -422,7 +422,7 @@ TUG member access</a>.
   {Peter Wilson}
   {Glisterings}
   {address lists; animated books and <a href="/TUGboat/tb27-2/running.mp">running.mp</a>}
-  {119}
+  {119-119}
   {/TUGboat/tb27-2/tb87glister.pdf}
   {}
   {}
@@ -436,7 +436,7 @@ TUG member access</a>.
   {Yannis Haralambous}
   {Infrastructure for high-quality Arabic typesetting}
   {Supporting Arabic with new features in $\Omega_2$}
-  {167}
+  {167-167}
   {/TUGboat/tb27-2/tb87haralambous.pdf}
   {}
   {}
@@ -446,7 +446,7 @@ TUG member access</a>.
   {Jean-Michel Hufflen}
   {Names in \BibTeX\ and Ml\BibTeX}
   {parsing names in bibliographies in a robust and extensible way}
-  {243}
+  {243-243}
   {/TUGboat/tb27-2/tb87hufflen.pdf}
   {}
   {}
@@ -466,7 +466,7 @@ TUG member access</a>.
   {Elena Smirnova \aand Stephen M. Watt}
   {Generating \TeX{} from mathematical content\\with respect to notational settings}
   {respecting users' wishes for \TeX\ output of mathematical notation}
-  {187}
+  {187-187}
   {/TUGboat/tb27-2/tb87smirnova.pdf}
   {}
   {}
@@ -491,7 +491,7 @@ TUG member access</a>.
   {}
   {{\sl MAPS\/}: Contents of issues 33--34 (2005--06)}
   {}
-  {256}
+  {256-256}
   {/TUGboat/tb27-2/tb87maps.pdf}
   {}
   {}
@@ -501,7 +501,7 @@ TUG member access</a>.
   {}
   {{\sl Ars\TeX{}nica\/}: Contents of issue 1 (2006)}
   {}
-  {258\offset{0.1}}
+  {258-258\offset{0.1}}
   {/TUGboat/tb27-2/tb87arstexnica.pdf}
   {}
   {}
@@ -511,7 +511,7 @@ TUG member access</a>.
   {}
   {{\sl Biuletyn GUST\/}: Contents of issues 22--23 (2005--06)}
   {}
-  {258\offset{0.2}}
+  {258-258\offset{0.2}}
   {/TUGboat/tb27-2/tb87gust.pdf}
   {}
   {}
@@ -565,7 +565,7 @@ TUG member access</a>.
   {}
   {TUG 2006 conference information}
   {}
-  {127}
+  {127-127}
   {/TUGboat/tb27-2/tb87confinfo.pdf}
   {}
   {}
@@ -575,7 +575,7 @@ TUG member access</a>.
   {Beeton, Bujdos\'o, Feuerstack, Hagen, Hoekwater, Ludwichowski, Wierda}
   {TUG 2006 abstracts}
   {}
-  {254}
+  {254-254}
   {/TUGboat/tb27-2/tb87abstracts.pdf}
   {}
   {}
@@ -605,7 +605,7 @@ TUG member access</a>.
   {}
   {Calendar}
   {}
-  {263}
+  {263-263}
   {/TUGboat/tb27-2/tb87calendar.pdf}
   {}
   {}
@@ -615,7 +615,7 @@ TUG member access</a>.
   {}
   {EuroBacho\TeX\ 2007 announcement}
   {}
-  {264}
+  {264-264}
   {/TUGboat/tb27-2/tb87eurotex07.pdf}
   {}
   {}
@@ -625,7 +625,7 @@ TUG member access</a>.
   {Onofrio de Bari}
   {The 3rd Annual GuIT Meeting}
   {}
-  {265}
+  {265-265}
   {/TUGboat/tb27-2/tb87guituktug.pdf}
   {}
   {}
@@ -636,7 +636,7 @@ TUG member access</a>.
   {Charles Goldie}
   {\acro{UKTUG} sponsors day of \LaTeX}
   {}
-  {266\offset{0.1}}
+  {266-266\offset{0.1}}
   {/TUGboat/tb27-2/tb87guituktug.pdf}
   {}
   {}
@@ -646,7 +646,7 @@ TUG member access</a>.
   {}
   {Institutional members}
   {}
-  {266\offset{0.2}}
+  {266-266\offset{0.2}}
   {/instmem.html}
   {}
   {}
@@ -656,7 +656,7 @@ TUG member access</a>.
   {}
   {\TeX\ consulting and production services}
   {}
-  {268}
+  {268-268}
   {/consultants.html}
   {}
   {}

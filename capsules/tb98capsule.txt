@@ -231,7 +231,7 @@ River Valley Technologies.
         {}
         {Title page}
         {}
-        {113}
+        {113-113}
         {/TUGboat/tb31-2/titlepage.pdf}
         {}
         {}
@@ -244,7 +244,7 @@ River Valley Technologies.
   {Barbara Beeton}
   {Thoughts on \acro{TUG} 2010}
   {reflections on the 2\sp{5} anniversary conference}
-  {138}
+  {138-138}
   {/TUGboat/!TBIDENT!beet.pdf}
   {}
   {}
@@ -254,7 +254,7 @@ River Valley Technologies.
   {Karl Berry}
   {{\TeX} Live 2010 news}
   {summary of notable changes in the \TeX\ Live 2010 software release}
-  {173}
+  {173-173}
   {/TUGboat/!TBIDENT!berry.pdf}
   {}
   {}
@@ -264,7 +264,7 @@ River Valley Technologies.
   {Jim Hef{}feron}
   {\CTAN\ packages get keywords}
   {keywords and topical characterizations of all \acro{CTAN} packages}
-  {143}
+  {143-143}
   {/TUGboat/!TBIDENT!heff.pdf}
   {}
   {}
@@ -274,7 +274,7 @@ River Valley Technologies.
   {Donald Knuth}
   {An Earthshaking Announcement}
   {i\TeX*}
-  {121}
+  {121-121}
   {/TUGboat/!TBIDENT!knut.pdf}
   {(The <a href="http://river-valley.zeeba.tv/tug-2010/an-earthshaking-announcement">video</a> has extra features.)}
   {}
@@ -284,7 +284,7 @@ River Valley Technologies.
   {David Walden}
   {\tug\ 2010 conference report}
   {notable events and a table showing the breadth of presentations}
-  {117}
+  {117-117}
   {/TUGboat/!TBIDENT!walden.pdf}
   {}
   {}
@@ -294,7 +294,7 @@ River Valley Technologies.
   {David Walden (moderator)}
   {\tug\ 2010 Panel: Don Knuth \& Stanford \TeX\ Project members}
   {edited transcript of the panel discussion}
-  {125}
+  {125-125}
   {/TUGboat/!TBIDENT!panel.pdf}
   {}
   {}
@@ -308,7 +308,7 @@ River Valley Technologies.
   {Pavneet Arora}
   {Using \LaTeX{} to generate dynamic mathematics worksheets for the web}
   {mathematical practice as a learning strategy for grade school mathematics}
-  {151}
+  {151-151}
   {/TUGboat/!TBIDENT!arora.pdf}
   {}
   {}
@@ -318,7 +318,7 @@ River Valley Technologies.
   {Bart Childs}
   {Thirty years of literate programming and~more?}
   {introduction to, experiences with, state of literate programming}
-  {183}
+  {183-183}
   {/TUGboat/!TBIDENT!childs.pdf}
   {}
   {}
@@ -328,7 +328,7 @@ River Valley Technologies.
   {Walter Gander}
   {Writing the first \LaTeX\ book}                    
   {first use of \LaTeX\ for a book, a numerical analysis textbook in German}
-  {154}
+  {154-154}
   {/TUGboat/!TBIDENT!gander.pdf}
   {}
   {}
@@ -338,7 +338,7 @@ River Valley Technologies.
   {Taco Hoekwater \aand Hartmut Henkel}
   {Lua\TeX\ 0.60: An overview of changes}
   {notable changes since Lua\TeX\ 0.40: \acro{CWEB}, \texttt{.ttc} support, more}
-  {174}
+  {174-174}
   {/TUGboat/!TBIDENT!hoekwater.pdf}
   {}
   {}
@@ -348,7 +348,7 @@ River Valley Technologies.
   {Alan Hoenig}
   {\TeX\ helps you learn Chinese character meanings}
   {design and production of {\tt ezchinesey.com} books}
-  {158}
+  {158-158}
   {/TUGboat/!TBIDENT!hoenig.pdf}
   {}
   {}
@@ -358,7 +358,7 @@ River Valley Technologies.
   {Johannes K\"uster}
   {Math never seen}
   {quality criteria for mathematical symbols, with many examples and a proposal for a new gcd symbol}
-  {221}
+  {221-221}
   {/TUGboat/!TBIDENT!kuester.pdf}
   {}
   {}
@@ -368,7 +368,7 @@ River Valley Technologies.
   {Boris Veytsman \aand Leila Akhmadeeva}
   {{\TeX} in the \acro{GLAMP} world: On-demand creation of documents online}
   {creation of medical pedigrees via the web, and initial educational use}
-  {236}
+  {236-236}
   {/TUGboat/!TBIDENT!veytsman-glamp.pdf}
   {}
   {}
@@ -378,7 +378,7 @@ River Valley Technologies.
   {Herbert Vo\ss}
   {From PostScript to \acro{PDF} with {\tt epstopdf}, {\tt pdftricks}, {\tt pst-pdf}, {\tt auto-pst-pdf}, {\tt pst2pdf}, and \rlap{more}}
   {using \acro{PST}ricks, \acro{EPS} images, et al., while creating \PDF\ output}
-  {145}
+  {145-145}
   {/TUGboat/!TBIDENT!voss.pdf}
   {}
   {}
@@ -392,7 +392,7 @@ River Valley Technologies.
   {Mathieu Bourgeois \aand Roger Villemaire}
   {Drawing structured diagrams with \acro{SDDL}}
   {producing diagrams for discrete mathematics and computer science}
-  {206}
+  {206-206}
   {/TUGboat/!TBIDENT!bourgeois.pdf}
   {}
   {}
@@ -402,7 +402,7 @@ River Valley Technologies.
   {John Bowman}
   {Asymptote: Interactive \TeX-aware \acro{3D} vector graphics}
   {advances in Asymptote's \acro{3D} processing and more}
-  {203}
+  {203-203}
   {/TUGboat/!TBIDENT!bowman.pdf}
   {}
   {}
@@ -412,7 +412,7 @@ River Valley Technologies.
   {Michael Doob}
   {A web-based {\TeX} previewer: The ecstasy and the agony}
   {constructing a security-conscious on-line \TeX\ previewer}
-  {193}
+  {193-193}
   {/TUGboat/!TBIDENT!doob.pdf}
   {<a href="/TUGboat/tb31-2/doob-texwebviewer.tex">texwebviewer.tex companion source</a>}
   {}
@@ -422,7 +422,7 @@ River Valley Technologies.
   {Hans Hagen}
   {Lua\TeX: \PDF\ merging}
   {merging \PDF\ images, with links and layers, in Lua\TeX\ and \ConTeXt}
-  {178}
+  {178-178}
   {/TUGboat/!TBIDENT!hagen-pdfmerge.pdf}
   {}
   {}
@@ -432,7 +432,7 @@ River Valley Technologies.
   {William Hammond}
   {{\LaTeX} profiles as objects in the category of markup languages}
   {reliable automatic translations between markup languages}
-  {240}
+  {240-240}
   {/TUGboat/!TBIDENT!hammond.pdf}
   {}
   {}
@@ -442,7 +442,7 @@ River Valley Technologies.
   {Will Robertson}
   {Unicode mathematics in \LaTeX: Advantages and challenges}
   {background, current fonts, and futures for Unicode math typesetting}
-  {211}
+  {211-211}
   {/TUGboat/!TBIDENT!robertson.pdf}
   {}
   {}
@@ -452,7 +452,7 @@ River Valley Technologies.
   {Didier Verna}
   {Classes, styles, conflicts: The biological realm of {\LaTeX}}
   {an extended analogy between \LaTeX\ and biological organisms and viruses}
-  {162}
+  {162-162}
   {/TUGboat/!TBIDENT!verna.pdf}
   {}
   {}
@@ -462,7 +462,7 @@ River Valley Technologies.
   {Uwe Ziegenhagen}
   {Dynamic reporting with R/Sweave and {\LaTeX}}
   {integration and literate programming of \LaTeX\ with the statistical programming language R}
-  {189}
+  {189-189}
   {/TUGboat/!TBIDENT!ziegenhagen.pdf}
   {}
   {}
@@ -476,7 +476,7 @@ River Valley Technologies.
   {Hans Hagen}
   {The {\TeX} paragraph builder in Lua}
   {reimplementing the \TeX\ line breaking algorithm in Lua}
-  {180}
+  {180-180}
   {/TUGboat/!TBIDENT!hagen-parbuilder.pdf}
   {}
   {}
@@ -486,7 +486,7 @@ River Valley Technologies.
   {Idris Samawi Hamid}
   {Qur'\=anic typography comes of age: {\AE{}sthetics}, layering, and paragraph optimization in \rlap{\ConTeXt}}
   {advanced Arabic typography in the Oriental \TeX\ project}
-  {197}
+  {197-197}
   {/TUGboat/!TBIDENT!hamid.pdf}
   {}
   {}
@@ -496,7 +496,7 @@ River Valley Technologies.
   {Stephen Hicks}
   {Improving margin paragraphs}
   {avoiding marginal notes off the bottom of the page, and more}
-  {148}
+  {148-148}
   {/TUGboat/!TBIDENT!hicks.pdf}
   {}
   {}
@@ -506,7 +506,7 @@ River Valley Technologies.
   {Boris Veytsman}
   {Are virtual fonts obsolete?}
   {modern uses for virtual fonts, with discussion of fonts in \XeTeX}
-  {230}
+  {230-230}
   {/TUGboat/!TBIDENT!veytsman-vf.pdf}
   {}
   {}
@@ -520,7 +520,7 @@ River Valley Technologies.
   {}
   {TUG 2010 conference information}
   {}
-  {114}
+  {114-114}
   {/TUGboat/!TBIDENT!confinfo.pdf}
   {}
   {participants, sponsors, thanks}
@@ -530,7 +530,7 @@ River Valley Technologies.
   {{B}azargan, {C}heswick, {D}oumont, {G}rathwohl \& {R}uddy, {H}agen \& {H}oekwater,\\ {H}obby, {K}ew, {M}ittelbach, {M}oore, {R}owley, {R}undell}
   {TUG 2010 abstracts}
   {}
-  {248}
+  {248-248}
   {/TUGboat/!TBIDENT!abstracts.pdf}
   {}
   {}
@@ -550,7 +550,7 @@ River Valley Technologies.
   {}
   {Addison-Wesley; von Hoerner\&Sulger; Cheryl Ponchin Training; River Valley Technologies; Principiae; University Science Books}
   {}
-  {250}
+  {250-250}
   {/TUGboat/!TBIDENT!sponsors.pdf}
   {}
   {}
@@ -560,7 +560,7 @@ River Valley Technologies.
   {}
   {Calendar}
   {}
-  {253}
+  {253-253}
   {/TUGboat/!TBIDENT!calendar.pdf}
   {}
   {}
@@ -570,7 +570,7 @@ River Valley Technologies.
   {}
   {\TeX\ consulting and production services}
   {}
-  {254}
+  {254-254}
   {/consultants.html}
   {}
   {}
@@ -580,7 +580,7 @@ River Valley Technologies.
   {}
   {Institutional members}
   {}
-  {255}
+  {255-255}
   {/instmem.html}
   {}
   {}
@@ -590,7 +590,7 @@ River Valley Technologies.
   {Jim Hef{}feron}
   {TUG 2011 election}
   {}
-  {256}
+  {256-256}
   {/TUGboat/!TBIDENT!elec.pdf}
   {}
   {}

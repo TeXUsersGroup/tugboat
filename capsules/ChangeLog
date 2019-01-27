@@ -1,3 +1,9 @@
+2019-01-26  Karl Berry  <karl@freefriends.org>
+
+	* capin.pl (parse_one_capsule): check for pageno not a range.
+	* many capsule files: add ranges, as with
+	perl -pi -e 's/\{1\}$/{1-1}/' tb01capsule.txt 
+
 2019-01-18  Karl Berry  <karl@freefriends.org>
 
 	* capdata-rx.pl (lists_regexps): count regexps used.

@@ -203,7 +203,7 @@ access</a>.
         {}
         {Title page}
         {}
-        {273}
+        {273-273}
         {/TUGboat/tb28-3/titlepage.pdf}
         {}
         {}
@@ -215,7 +215,7 @@ access</a>.
   {Tim Arnold}
   {\acro{TUG} 2007: A few words}
   {informal report from \acro{TUG} 2007, with photos}
-  {276}
+  {276-276}
   {/TUGboat/tb28-3/tb90arnold.pdf}
   {}
   {}
@@ -226,7 +226,7 @@ access</a>.
   {Klaus H\"oppner}
   {Typesetting tables with \LaTeX}
   {introduction to making tables in \LaTeX}
-  {350}
+  {350-350}
   {/TUGboat/tb28-3/tb90hoeppner.pdf}
   {}
   {}
@@ -236,7 +236,7 @@ access</a>.
   {Jonathan Kew}
   {Fonts for every language: \acro{SIL}'s font projects and the Open Font License}  
   {overview of \acro{SIL}'s font-related initiatives}
-  {305}
+  {305-305}
   {/TUGboat/tb28-3/tb90kew.pdf}
   {}
   {}
@@ -246,7 +246,7 @@ access</a>.
   {Aditya Mahajan}
   {\ConTeXt\ basics for users: Table macros}
   {introduction to making tables in \ConTeXt}
-  {372}
+  {372-372}
   {/TUGboat/tb28-3/tb90mahajan.pdf}
   {}
   {}
@@ -256,7 +256,7 @@ access</a>.
   {Peter Wilson}
   {Between then and now\Dash A meandering memoir}
   {review of typography and typesetting from Sumeria to the present}
-  {280}
+  {280-280}
   {/TUGboat/tb28-3/tb90wilson.pdf}
   {}
   {}
@@ -270,7 +270,7 @@ access</a>.
   {Barbara Beeton}
   {The \acro{STIX} Project\Dash From Unicode to fonts}
   {supporting mathematics in Unicode, including creating the necessary fonts}
-  {299}
+  {299-299}
   {/TUGboat/tb28-3/tb90beet.pdf}
   {}
   {}
@@ -280,7 +280,7 @@ access</a>.
   {Robert Burgess \aand Emin G\"un Sirer}
   {Cross\TeX: A modern bibliography management tool}
   {a new bibliography tool written in Python, upward-compatible with \BibTeX}
-  {342}
+  {342-342}
   {/TUGboat/tb28-3/tb90burgess.pdf}
   {}
   {}
@@ -290,7 +290,7 @@ access</a>.
   {Hans Hagen}
   {\ConTeXt\ Mk\acro{IV}: Going \acro{UTF}}
   {development of Unicode support in Lua\TeX}
-  {314}
+  {314-314}
   {/TUGboat/tb28-3/tb90hagen.pdf}
   {}
   {}
@@ -300,7 +300,7 @@ access</a>.
   {Taco Hoekwater}
   {Lua\TeX}
   {an overview of embedding the Lua scripting language into \TeX}
-  {312}
+  {312-312}
   {/TUGboat/tb28-3/tb90hoekwater-luatex.pdf}
   {}
   {}
@@ -310,7 +310,7 @@ access</a>.
   {Taco Hoekwater \aand Hans Hagen}
   {MPlib: MetaPost as a reusable component}
   {an overview of recasting MetaPost as a shared library}
-  {317}
+  {317-317}
   {/TUGboat/tb28-3/tb90hoekwater-mplib.pdf}
   {}
   {}
@@ -320,7 +320,7 @@ access</a>.
   {Richard Koch}
   {Support for multiple \TeX\ distributions in i-Installer and Mac\TeX}
   {a preference pane to switch between extant \MacOSX\ \TeX\ distributions}
-  {329}
+  {329-329}
   {/TUGboat/tb28-3/tb90koch.pdf}
   {}
   {}
@@ -330,7 +330,7 @@ access</a>.
   {Barry MacKichan}
   {Design decisions for a structured front end to \LaTeX}
   {\XML, \acro{XSLT}, OpenType, and more as a basis for \TeX\ development}
-  {335}
+  {335-335}
   {/TUGboat/tb28-3/tb90mackichan.pdf}
   {}
   {}
@@ -340,7 +340,7 @@ access</a>.
   {Paul Topping}
   {MathType 6.0's \TeX\ input for \acro{MS} Word and Wikipedia}
   {combining point-and-click with typed \TeX\ input in MathType}
-  {340}
+  {340-340}
   {/TUGboat/tb28-3/tb90topping.pdf}
   {}
   {}
@@ -354,7 +354,7 @@ access</a>.
   {Eitan Gurari}
   {\LaTeX\ conversion into normalized forms and speech}
   {translating \LaTeX\ into speech forms such as jsMath, \acro{SSML}, \acro{ACSS}}
-  {363}
+  {363-363}
   {/TUGboat/tb28-3/tb90gurari.pdf}
   {}
   {}
@@ -364,7 +364,7 @@ access</a>.
   {William Hammond}
   {Dual~presentation with~math from~one~source using~\acro{GELLMU}}
   {\LaTeX-like markup that can produce high-quality printed and online output}
-  {306}
+  {306-306}
   {/TUGboat/tb28-3/tb90hammond.pdf}
   {}
   {}
@@ -374,7 +374,7 @@ access</a>.
   {Andrew Mertz \aand William Slough}
   {Programming with Perl\TeX}
   {combining \LaTeX\ and Perl, described in a graduated series of examples}
-  {354}
+  {354-354}
   {/TUGboat/tb28-3/tb90mertz.pdf}
   {}
   {}
@@ -388,7 +388,7 @@ access</a>.
   {Nelson Beebe}
   {Extending \TeX{} and \MF{} with floating-point arithmetic}
   {floating-point history, problems, and futures}
-  {319}
+  {319-319}
   {/TUGboat/tb28-3/tb90beebe.pdf}
   {}
   {}
@@ -401,7 +401,7 @@ access</a>.
   {}
   {TUG 2007 conference information}
   {}
-  {274}
+  {274-274}
   {/TUGboat/tb28-3/tb90confinfo.pdf}
   {}
   {}
@@ -411,7 +411,7 @@ access</a>.
   {Allen, DeLand, Hagen, Hamid, Hef{}feron, H\o{}gholm, Ierusalimschy, Kew, Rosenthol, Rowley, Stern}
   {TUG 2007 abstracts}
   {}
-  {369}
+  {369-369}
   {/TUGboat/tb28-3/tb90abstracts.pdf}
   {}
   {}
@@ -421,7 +421,7 @@ access</a>.
   {\TeX\CONNECT{}Development\CONNECT{}Fund\CONNECT{}committee}
   {A roadmap for \TeX\ development}
   {}
-  {375}
+  {375-375}
   {/TUGboat/tb28-3/tb90devfund.pdf}
   {}
   {}
@@ -431,7 +431,7 @@ access</a>.
   {\TUB\CONNECT{}Editors}
   {Random comments}
   {}
-  {377}
+  {377-377}
   {/TUGboat/tb28-3/tb90random.pdf}
   {{Errata: Lars~Hellstr\"om, ``Writing \acro{ETX} format font encoding specifications'', \TUB\ 28:2, pp.\,186--197}\\
 {\acro{DEK}'s periodic bug review}\\
@@ -447,7 +447,7 @@ access</a>.
   {}
   {Institutional members}
   {}
-  {378}
+  {378-378}
   {/instmem.html}
   {}
   {}
@@ -467,7 +467,7 @@ access</a>.
   {}
   {Calendar}
   {}
-  {379}
+  {379-379}
   {/TUGboat/tb28-3/tb90calendar.pdf}
   {}
   {}
@@ -477,7 +477,7 @@ access</a>.
   {}
   {\acro{TUG} 2008 announcement}
   {}
-  {380}
+  {380-380}
   {/TUGboat/tb28-3/tb90tug08.pdf}
   {}
   {}
@@ -487,7 +487,7 @@ access</a>.
   {}
   {Springer:\ {\sl More Math Into \LaTeX}; \ von Hoerner\,\&\,Sulger; \ O'Reilly}
   {}
-  {381}
+  {381-381}
   {/TUGboat/tb28-3/tb90ads.pdf}
   {}
   {}
@@ -498,7 +498,7 @@ access</a>.
   {}
   {MacKichan:\ Scientific WorkPlace, Scientific Word; \ Addison-Wesley:\ {\sl The \LaTeX\ Graphics Companion}}
   {}
-  {382}
+  {382-382}
   {/TUGboat/tb28-3/tb90ads.pdf}
   {}
   {}
@@ -509,7 +509,7 @@ access</a>.
   {}
   {Cheryl Ponchin Training; \ Carleton Production Centre; \ Design Science: MathType\sp{6}}
   {}
-  {383}
+  {383-383}
   {/TUGboat/tb28-3/tb90ads.pdf}
   {}
   {}
@@ -519,7 +519,7 @@ access</a>.
   {}
   {\TeX\ consulting and production services}
   {}
-  {384}
+  {384-384}
   {/consultants.html}
   {}
   {}

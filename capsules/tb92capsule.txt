@@ -216,7 +216,7 @@ access</a>.
         {}
         {Title page}
         {}
-        {229}
+        {229-229}
         {/TUGboat/tb29-2/titlepage.pdf}
         {}
         {}
@@ -229,7 +229,7 @@ access</a>.
   {Edward Barrett}
   {Porting \TeX\ Live to Open\acro{BSD}}
   {history, process, and fruition of porting \TeX\ Live to a system distribution}
-  {303}
+  {303-303}
   {/TUGboat/!TBIDENT!barrett.pdf}
   {}
   {}
@@ -239,7 +239,7 @@ access</a>.
   {Barbara Beeton}
   {Editorial comments}
   {typography and {\sl TUGboat} news}
-  {232}
+  {232-232}
   {/TUGboat/!TBIDENT!beet.pdf}
   {{{\TeX} 3.1415926 is here, and other Knuthian~references}\\
 {Phyllis Winkler, \acro{RIP}}\\
@@ -256,7 +256,7 @@ access</a>.
   {Karl Berry}
   {From the President}
   {\acro{TUG} at the \acro{JMM}; Google Summer of Code; interviews; {\sl The Prac\TeX\ Journal}; conferences}
-  {231}
+  {231-231}
   {/TUGboat/!TBIDENT!pres.pdf}
   {}
   {}
@@ -266,7 +266,7 @@ access</a>.
   {Peter Flynn}
   {Typographers' Inn}
   {\MF\ fonts; Type 1 (PostScript) fonts; new forum, old forum; 2008 \acro{TUG} meeting in Cork}
-  {240}
+  {240-240}
   {/TUGboat/!TBIDENT!inn.pdf}
   {}
   {}
@@ -276,7 +276,7 @@ access</a>.
   {Hans Hagen \cand Taco Hoekwater \aand Volker RW Schaa}
   {Reshaping Euler: A collaboration with Hermann Zapf}
   {illustrated report of updating the Euler math font}
-  {283}
+  {283-283}
   {/TUGboat/!TBIDENT!hagen-euler.pdf}
   {}
   {}
@@ -286,7 +286,7 @@ access</a>.
   {Aditya Mahajan}
   {\ConTeXt\ basics for users: Indentation}
   {overview of controlling paragraph indentation in \ConTeXt}
-  {315}
+  {315-315}
   {/TUGboat/!TBIDENT!mahajan.pdf}
   {}
   {}
@@ -296,7 +296,7 @@ access</a>.
   {Bernd Schroeder}
   {Software review: \TeX\acro{CAD} for Windows}
   {review of this \acro{GUI} program for the \LaTeX\ \texttt{picture} environment}
-  {333}
+  {333-333}
   {/TUGboat/!TBIDENT!schroeder.pdf}
   {}
   {}
@@ -306,7 +306,7 @@ access</a>.
   {Vassilios Tsagkalos}%person|Georgios Matthiopoulos
   {The Greek Font Society}
   {background, goals, and accomplishments of the \acro{GFS}; interview with Georgios Matthiopoulos, type designer}
-  {242}
+  {242-242}
   {/TUGboat/!TBIDENT!tsagkalos.pdf}
   {}
   {}
@@ -316,7 +316,7 @@ access</a>.
   {Ulrik Vieth}%person|Yannis Haralambous
   {Book review: {\it Fonts \& Encodings} by Yannis Haralambous}
   {review of this multi-faceted book which is now available in English}
-  {331}
+  {331-331}
   {/TUGboat/!TBIDENT!vieth.pdf}
   {}
   {}
@@ -330,7 +330,7 @@ access</a>.
   {Claudio Beccari}
   {\textsf{lxfonts}: \LaTeX\ slide fonts revived}
   {a greatly revised and expanded sans serif font collection for presentations}
-  {278}
+  {278-278}
   {/TUGboat/!TBIDENT!becc-slidefonts.pdf}
   {}
   {}
@@ -340,7 +340,7 @@ access</a>.
   {Claudio Beccari \aand Andrea Guadagni}
   {Designing and producing a reference book with \LaTeX: {\sl The Engineer's Quick Reference Handbook}}
   {issues in designing a reference book for screen and print publication}
-  {246}
+  {246-246}
   {/TUGboat/!TBIDENT!becc-refdesign.pdf}
   {}
   {}
@@ -350,7 +350,7 @@ access</a>.
   {Karl Berry}
   {The treasure chest}
   {selected new \CTAN\ packages from July 2007 through May 2008}
-  {328}
+  {328-328}
   {/TUGboat/!TBIDENT!chest.pdf}
   {}
   {}
@@ -360,7 +360,7 @@ access</a>.
   {John Bowman \aand Andy Hammerlindl}
   {Asymptote: A vector graphics language}
   {discussion of this powerful graphics program, with extensive comparisons to MetaPost}
-  {288}
+  {288-288}
   {/TUGboat/!TBIDENT!bowman.pdf}
   {}
   {}
@@ -370,7 +370,7 @@ access</a>.
   {Victor Eijkhout}
   {Character encoding}
   {introduction to character encodings, emphasizing Unicode and \UTF-8}
-  {270}
+  {270-270}
   {/TUGboat/!TBIDENT!eijkhout.pdf}
   {}
   {}
@@ -380,7 +380,7 @@ access</a>.
   {Massimo Guiggiani \aand Lapo Mori}
   {Suggestions on how \emph{not} to mishandle mathematical formul\ae}
   {best practices for composing math, especially for non-mathematicians}
-  {255}
+  {255-255}
   {/TUGboat/!TBIDENT!guiggiani.pdf}
   {}
   {}
@@ -390,7 +390,7 @@ access</a>.
   {John Rankin}
   {Wikipublisher: A Web-based system to make online and print versions of the same content}
   {a free software system for creating high-quality printed documents from PmWiki markup}
-  {264}
+  {264-264}
   {/TUGboat/!TBIDENT!rankin.pdf}
   {}
   {}
@@ -400,7 +400,7 @@ access</a>.
   {Denis Roegel}
   {Kanji-Sudokus: Integrating Chinese and graphics}
   {using the \acro{CJK} package and MetaPost to produce Sudoku grids}
-  {317}
+  {317-317}
   {/TUGboat/!TBIDENT!roegel.pdf}
   {}
   {}
@@ -414,7 +414,7 @@ access</a>.
   {Hans Hagen}
   {The Luafication of \TeX\ and \ConTeXt}
   {progress report on the Lua\TeX\ implementation and its use in \ConTeXt}
-  {295}
+  {295-295}
   {/TUGboat/!TBIDENT!hagen-luatex.pdf}
   {}
   {}
@@ -424,7 +424,7 @@ access</a>.
   {Frank Mittelbach}
   {\cs{looseness} on the loose}
   {altered line breaks even when \cs{looseness} has no effect of its own}
-  {334}
+  {334-334}
   {/TUGboat/!TBIDENT!mitt.pdf}
   {}
   {}
@@ -434,7 +434,7 @@ access</a>.
   {Scott Pakin}
   {Good things come in little packages: An introduction to writing {\tt .ins} and {\tt .dtx} files}
   {a tutorial on creating \LaTeX\ package files}
-  {305}
+  {305-305}
   {/TUGboat/!TBIDENT!pakin.pdf}
   {}
   {}
@@ -444,7 +444,7 @@ access</a>.
   {Peter Wilson}
   {Glisterings}
   {}
-  {324}
+  {324-324}
   {/TUGboat/!TBIDENT!glister.pdf}
   {More on paragraphs regular;\\
 \LaTeX's defining triumvirate;\\
@@ -461,7 +461,7 @@ access</a>.
   {Donald Knuth}
   {The \TeX{} tuneup of 2008}
   {the 2008 updates to \TeX, \MF, Computer Modern, et al.}
-  {233}
+  {233-233}
   {/TUGboat/!TBIDENT!knut.pdf}
   {}
   {}
@@ -471,7 +471,7 @@ access</a>.
   {Pawe\l{} Jackowski}
   {Interesting loops and iterations\Dash second helping}
   {review of loop definitions from the original to fully expandable ones via \eTeX}
-  {320}
+  {320-320}
   {/TUGboat/!TBIDENT!jackowski.pdf}
   {}
   {}
@@ -485,7 +485,7 @@ access</a>.
   {}
   {{\sl Ars\TeX{}nica\/}: Contents of issue 4 (2007)}
   {}
-  {338}
+  {338-338}
   {/TUGboat/!TBIDENT!arstexnica.pdf}
   {}
   {}
@@ -495,7 +495,7 @@ access</a>.
   {}
   {{\sl Die \TeX{}nische Kom\"odie\/}: Contents of issues 2007/2--2008/1}
   {}
-  {336}
+  {336-336}
   {/TUGboat/!TBIDENT!komo.pdf}
   {}
   {}
@@ -505,7 +505,7 @@ access</a>.
   {}
   {{\sl Eutypon\/}: Contents of issues 16--20 (2007--2008)}
   {}
-  {337}
+  {337-337}
   {/TUGboat/!TBIDENT!eutypon.pdf}
   {}
   {}
@@ -515,7 +515,7 @@ access</a>.
   {}
   {{\sl MAPS\/}: Contents of issues 35 (2007)}
   {}
-  {335}
+  {335-335}
   {/TUGboat/!TBIDENT!maps.pdf}
   {}
   {}
@@ -525,7 +525,7 @@ access</a>.
   {}
   {{\sl The Prac\TeX\ Journal\/}: Contents of issues 2007-3--2008-1}
   {}
-  {339}
+  {339-339}
   {/TUGboat/!TBIDENT!pracjourn.pdf}
   {}
   {}
@@ -539,7 +539,7 @@ access</a>.
   {Barbara Beeton}
   {Hyphenation exception log}
   {}%update for missed and incorrect U.S. English hyphenations}
-  {239}
+  {239-239}
   {/TUGboat/!TBIDENT!hyf.pdf}
   {}
   {}
@@ -549,7 +549,7 @@ access</a>.
   {David Walden}
   {\tug\ financial statements for 2007}
   {}
-  {343}
+  {343-343}
   {/TUGboat/!TBIDENT!treas.pdf}
   {}
   {}
@@ -559,7 +559,7 @@ access</a>.
   {}
   {Institutional members}
   {}
-  {344}
+  {344-344}
   {/instmem.html}
   {}
   {}
@@ -569,7 +569,7 @@ access</a>.
   {}
   {\acro{TUG} membership form}
   {}
-  {345}
+  {345-345}
   {/join.html}
   {}
   {}
@@ -579,7 +579,7 @@ access</a>.
   {}
   {Calendar}
   {}
-  {346}
+  {346-346}
   {/TUGboat/!TBIDENT!calendar.pdf}
   {}
   {}
@@ -589,7 +589,7 @@ access</a>.
   {}
   {\acro{TUG} 2008 announcement}
   {}
-  {347}
+  {347-347}
   {/TUGboat/!TBIDENT!tug08.pdf}
   {}
   {}
@@ -599,7 +599,7 @@ access</a>.
   {}
   {\TeX\ consulting and production services}
   {}
-  {348}
+  {348-348}
   {/consultants.html}
   {}
   {}

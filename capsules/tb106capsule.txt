@@ -226,7 +226,7 @@ access</a>.
         {}
         {Title page}
         {}
-        {1}
+        {1-1}
         {/TUGboat/tb34-1/titlepage.pdf}
         {}
         {}
@@ -236,7 +236,7 @@ access</a>.
         {}
         {Editorial information}
         {}
-        {2}
+        {2-2}
         {/TUGboat/!TBIDENT!edit.pdf}
         {}
         {}
@@ -249,7 +249,7 @@ access</a>.
   {Barbara Beeton}
   {Editorial comments}
   {typography and {\sl TUGboat} news}
-  {4}
+  {4-4}
   {/TUGboat/!TBIDENT!beet.pdf}
   {{This is the year for \TeX\ bug reports};\\
 {Don Knuth in the news (again)};\\
@@ -264,7 +264,7 @@ access</a>.
   {Gerd Neugebauer}
   {\CTAN{}: Relaunch of the Web portal}
   {announcement and description of a new \url{www.ctan.org}}
-  {6}
+  {6-6}
   {/TUGboat/!TBIDENT!neugebauer.pdf}
   {}
   {}
@@ -274,7 +274,7 @@ access</a>.
   {Steve Peter}
   {Ab epistulis}
   {\CTAN; conferences; interviews and reviews}
-  {3}
+  {3-3}
   {/TUGboat/!TBIDENT!pres.pdf}
   {}
   {}
@@ -284,7 +284,7 @@ access</a>.
   {Bob Tennent}
   {Fonts!\ Fonts!\ Fonts!}
   {Quattrocentro, Cabin, \acro{EB} Garamond, Libertine/Biolinum; implementation notes}
-  {10}
+  {10-10}
   {/TUGboat/!TBIDENT!tennent.pdf}
   {}
   {}
@@ -294,7 +294,7 @@ access</a>.
   {Thomas Thurnherr}
   {Side-by-side figures in \LaTeX}
   {using \texttt{minipage}; \texttt{subfigure}; \texttt{subfig}; \texttt{subcaption}; \texttt{columns} in \texttt{beamer}}
-  {34}
+  {34-34}
   {/TUGboat/!TBIDENT!thurnherr.pdf}
   {}
   {}
@@ -305,7 +305,7 @@ access</a>.
   {Mari Voipio}
   {Entry-level MetaPost: On the grid}
   {building up a graphic step by step, with troubleshooting tips}
-  {17}
+  {17-17}
   {/TUGboat/!TBIDENT!voipio-grid.pdf}
   {}
   {}
@@ -329,7 +329,7 @@ access</a>.
   {Karl Berry}
   {The treasure chest}
   {new \CTAN\ packages, November 2012--March 2013}
-  {96}
+  {96-96}
   {/TUGboat/!TBIDENT!chest.pdf}
   {}
   {}
@@ -339,7 +339,7 @@ access</a>.
   {Peter Flynn}
   {Typographers' Inn}
   {Font installer; class and package creation; grids; business cards; running ragged}
-  {14}
+  {14-14}
   {/TUGboat/!TBIDENT!inn.pdf}
   {}
   {}
@@ -349,7 +349,7 @@ access</a>.
   {Aditya Mahajan}
   {\ConTeXt\ basics for users: Images}
   {local and remote image inclusion, scaling, rotation, debugging}
-  {79}
+  {79-79}
   {/TUGboat/!TBIDENT!mahajan.pdf}
   {}
   {}
@@ -359,7 +359,7 @@ access</a>.
   {Mari Voipio}
   {Recreating historical patterns with MetaPost}
   {Greek keys, Roman mosaics, Celtic knots and keys}
-  {21}
+  {21-21}
   {/TUGboat/!TBIDENT!voipio-patterns.pdf}
   {}
   {}
@@ -369,7 +369,7 @@ access</a>.
   {Peter Wilson}
   {Glisterings}
   {repetition; verbatims; small pages; prefixing section heads}
-  {37}
+  {37-37}
   {/TUGboat/!TBIDENT!glister.pdf}
   {}
   {}
@@ -384,7 +384,7 @@ access</a>.
   {Robert Fuster}
   {The {\tt xpicture} package}
   {extending \LaTeX's {\tt picture} environment and related packages}
-  {26}
+  {26-26}
   {/TUGboat/!TBIDENT!fuster.pdf}
   {}
   {}
@@ -394,7 +394,7 @@ access</a>.
   {Grazia Messineo \aand Salvatore Vassallo}
   {The {\tt esami} package for examinations}
   {creating tests, exercises, etc., supporting random choice of parameters}
-  {40}
+  {40-40}
   {/TUGboat/!TBIDENT!messineo.pdf}
   {}
   {}
@@ -404,7 +404,7 @@ access</a>.
   {Petr Ol\v{s}\'ak}
   {New \CS{}plain of 2012}
   {many new features in Czech/Slovak \TeX{}\Dash more languages, encodings, fonts, etc.}
-  {83}
+  {83-83}
   {/TUGboat/!TBIDENT!olsak-csplain.pdf}
   {}
   {}
@@ -414,7 +414,7 @@ access</a>.
   {Petr Ol\v{s}\'ak}
   {\acro{OP}mac: Macros for plain \TeX}
   {font selection, tables of contents, indexes, bibliographies, margins, etc.}
-  {88}
+  {88-88}
   {/TUGboat/!TBIDENT!olsak-opmac.pdf}
   {}
   {}
@@ -427,7 +427,7 @@ access</a>.
   {Hans Hagen}
   {\ConTeXt: Just-in-time Lua\TeX}
   {performance tests and analysis of \acro{JIT} and different Lua versions}
-  {72}
+  {72-72}
   {/TUGboat/!TBIDENT!hagen.pdf}
   {}
   {}
@@ -437,7 +437,7 @@ access</a>.
   {Frank Mittelbach}
   {E-\TeX: Guidelines for future \TeX{} extensions\Dash revisited}
   {in-depth analysis of open \TeX\ typesetting issues}
-  {47}
+  {47-47}
   {/TUGboat/!TBIDENT!mitt.pdf}
   {}
   {}
@@ -447,7 +447,7 @@ access</a>.
   {Luigi Scarso}
   {LuaJIT\TeX}
   {\TeX, Lua, and just-in-time compilation}
-  {64}
+  {64-64}
   {/TUGboat/!TBIDENT!scarso.pdf}
   {}
   {}
@@ -484,7 +484,7 @@ access</a>.
   {}
   {{\sl Die \TeX nische Kom\"odie\/}: Contents of issues 4/2012--1/2013}
   {}
-  {99}
+  {99-99}
   {/TUGboat/!TBIDENT!komo.pdf}
   {}
   {}
@@ -494,7 +494,7 @@ access</a>.
   {}
   {{\sl Eutypon\/}: Contents of issue 28--29 (October 2012)}
   {}
-  {100}
+  {100-100}
   {/TUGboat/!TBIDENT!eutypon.pdf}
   {}
   {}
@@ -590,7 +590,7 @@ access</a>.
   {}
   {Institutional members}
   {}
-  {2\offset{.5}}
+  {2-2\offset{.5}}
   {/instmem.html}
   {}
   {}
@@ -600,7 +600,7 @@ access</a>.
   {Karl Berry}
   {Production notes}
   {sketch of current \TUB\ printing; introduction to ``Colophon''}
-  {97}
+  {97-97}
   {/TUGboat/!TBIDENT!prod.pdf}
   {}
   {}
@@ -610,7 +610,7 @@ access</a>.
   {Boris Veytsman}%person|Victor Eijkhout
   {Book review: \textsl{The Computer Science of \TeX\ and \LaTeX}, by Victor Eijkhout}
   {}
-  {98}
+  {98-98}
   {/TUGboat/!TBIDENT!reviews-eijkhout.pdf}
   {See the <a href="/books/">TUG books page</a> for all book reviews and discounts.}
   {}
@@ -620,7 +620,7 @@ access</a>.
   {}
   {Calendar}
   {}
-  {101}
+  {101-101}
   {/TUGboat/!TBIDENT!calendar.pdf}
   {}
   {}
@@ -630,7 +630,7 @@ access</a>.
   {}
   {\acro{TUG} 2013 announcement}
   {}
-  {102}
+  {102-102}
   {/TUGboat/!TBIDENT!tug13.pdf}
   {}
   {}
@@ -640,7 +640,7 @@ access</a>.
   {}
   {\TeX\ consulting and production services}
   {}
-  {103}
+  {103-103}
   {/consultants.html}
   {}
   {}
@@ -650,7 +650,7 @@ access</a>.
   {}
   {\acro{TUG} membership form}
   {}
-  {105}
+  {105-105}
   {/join.html}
   {}
   {}
@@ -660,7 +660,7 @@ access</a>.
   {Karl Berry}
   {\tug\ financial statements for 2012}
   {}
-  {106}
+  {106-106}
   {/TUGboat/!TBIDENT!treas.pdf}
   {}
   {}
@@ -680,7 +680,7 @@ access</a>.
   {Barbara Beeton}
   {\acro{TUG} 2013 election}
   {}
-  {107}
+  {107-107}
   {/TUGboat/!TBIDENT!elec.pdf}
   {}
   {}
@@ -693,7 +693,7 @@ access</a>.
   {Daniel Quinn}
   {Colophon}
   {}
-  {108}
+  {108-108}
   {/TUGboat/!TBIDENT!quinn.pdf}
   {}
   {}

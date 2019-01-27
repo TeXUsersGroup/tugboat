@@ -145,7 +145,7 @@ other TeX projects.
         {}
         {Title page}
         {}
-        {1}
+        {1-1}
         {/TUGboat/tb26-1/titlepage.pdf}
 
 \category{Introductory}
@@ -155,7 +155,7 @@ other TeX projects.
   {Barbara Beeton}
   {Editorial comments}
   {typography and {\sl TUGboat} news}
-  {3\offset{.1}}
+  {3-3\offset{.1}}
   {/TUGboat/tb26-1/tb82beet.pdf}
   {Old {\it TUGboat} issues go electronic\\
 CTAN announcement archives\\
@@ -173,7 +173,7 @@ Some comments on mathematical typesetting}
   {Barbara Beeton}
   {Hyphenation exception log}
   {update to missed and incorrect U.S. English hyphenations}
-  {5}
+  {5-5}
   {/TUGboat/tb26-1/tb82hyf.pdf}
   {}
   {}
@@ -183,7 +183,7 @@ Some comments on mathematical typesetting}
   {Karl Berry}
   {From the president}
   {\acro{TUG} activities and information for 2005}
-  {3}
+  {3-3}
   {/TUGboat/tb26-1/tb82pres.pdf}
   {}
   {}
@@ -193,7 +193,7 @@ Some comments on mathematical typesetting}
   {Peter Flom}
   {A \LaTeX{} fledgling struggles to take flight}
   {incentives and barriers to learning \LaTeX}
-  {52}
+  {52-52}
   {/TUGboat/tb26-1/flom.pdf}
   {}
   {}
@@ -203,7 +203,7 @@ Some comments on mathematical typesetting}
   {Peter Flom \aand Tristan Miller}
   {Impressions of Prac\TeX'05}
   {comments on the conference from attendees}
-  {31}
+  {31-31}
   {/TUGboat/tb26-1/impressions.pdf}
   {}
   {}
@@ -213,7 +213,7 @@ Some comments on mathematical typesetting}
   {Peter Flynn}
   {\LaTeX\ on the Web}
   {review of \LaTeX\ interactions with the Web}
-  {66}
+  {66-66}
   {/TUGboat/tb26-1/flynn.pdf}
   {}
   {}
@@ -223,7 +223,7 @@ Some comments on mathematical typesetting}
   {Klaus H\"oppner}
   {Strategies for including graphics in \LaTeX{} documents}
   {introduction to common graphics formats and tools}
-  {59}
+  {59-59}
   {/TUGboat/tb26-1/hoeppner.pdf}
   {}
   {}
@@ -233,7 +233,7 @@ Some comments on mathematical typesetting}
   {Joseph Hogg}
   {Making a booklet}
   {notes on useful packages and processes for booklet production}
-  {63}
+  {63-63}
   {/TUGboat/tb26-1/hogg.pdf}
   {}
   {}
@@ -243,7 +243,7 @@ Some comments on mathematical typesetting}
   {Andrew Mertz \aand William Slough}
   {Beamer by example}
   {producing slide presentations via a series of examples}
-  {68}
+  {68-68}
   {/TUGboat/tb26-1/mertz.pdf}
   {}
   {}
@@ -253,7 +253,7 @@ Some comments on mathematical typesetting}
   {Anita Schwartz}
   {The art of \LaTeX{} problem solving}
   {summary of strategies and resources for debugging \LaTeX}
-  {56}
+  {56-56}
   {/TUGboat/tb26-1/schwartz.pdf}
   {}
   {}
@@ -266,7 +266,7 @@ Some comments on mathematical typesetting}
   {Kaveh Bazargan}
   {Batch Commander: A graphical user interface for \TeX{}}
   {interactive parameter setting and instant feedback}
-  {74}
+  {74-74}
   {/TUGboat/tb26-1/bazargan.pdf}
   {}
   {}
@@ -276,7 +276,7 @@ Some comments on mathematical typesetting}
   {David Ignat}
   {Word to \LaTeX{} for a large, multi-author scientific paper}
   {conversion from Word and Perl manipulation of references}
-  {81}
+  {81-81}
   {/TUGboat/tb26-1/ignat.pdf}
   {}
   {}
@@ -286,7 +286,7 @@ Some comments on mathematical typesetting}
   {Allen, Burt, Fehd, Gurari, Janc, Kew, Peter}
   {Prac'\TeX{} 2005 abstracts}
   {}
-  {97}
+  {97-97}
   {/TUGboat/tb26-1/abstracts.pdf}
   {}
   {}
@@ -299,7 +299,7 @@ Some comments on mathematical typesetting}
   {Tristan Miller}
   {Biblet: A portable \slBibTeX\ bibliography style for generating highly customizable \acro{XHTML}}
   {making Web pages from bibliographies in pure BibTeX}
-  {85}
+  {85-85}
   {/TUGboat/tb26-1/miller-biblet.pdf}
   {}
   {}
@@ -309,7 +309,7 @@ Some comments on mathematical typesetting}
   {Tristan Miller}
   {Using the \acro{RPM} package manager for \AllTeX\ packages}
   {using and building \acro{RPM} packages for \TeX}
-  {17}
+  {17-17}
   {/TUGboat/tb26-1/tb82miller-rpm.pdf}
   {}
   {}
@@ -322,7 +322,7 @@ Some comments on mathematical typesetting}
   {Nelson Beebe}
   {The design of \TeX{} and \slMF{}: A retrospective}
   {historical review of the \TeX\ system software design and development}
-  {33}
+  {33-33}
   {/TUGboat/tb26-1/beebe.pdf}
   {}
   {}
@@ -332,7 +332,7 @@ Some comments on mathematical typesetting}
   {Pedro Quaresma}
   {Stacks in \TeX}
   {stacks, for package writers, and commutative diagrams}
-  {7}
+  {7-7}
   {/TUGboat/tb26-1/tb82quar.pdf}
   {}
   {}
@@ -342,7 +342,7 @@ Some comments on mathematical typesetting}
   {Denis Roegel}
   {Kissing circles: A French romance in MetaPost}
   {MetaPost construction of the ``Apollonian gasket'' of tangent circles}
-  {10}
+  {10-10}
   {/TUGboat/tb26-1/tb82roegel.pdf}
   {}
   {}
@@ -355,7 +355,7 @@ Some comments on mathematical typesetting}
   {}
   {Calendar}
   {}
-  {99}
+  {99-99}
   {/TUGboat/tb26-1/tb82calendar.pdf}
   {}
   {}
@@ -375,7 +375,7 @@ Some comments on mathematical typesetting}
   {}
   {Conference program, delegates, and sponsors}
   {}
-  {29}
+  {29-29}
   {/TUGboat/tb26-1/confinfo.pdf}
   {}
   {}
@@ -388,7 +388,7 @@ Some comments on mathematical typesetting}
   {}
   {Carleton Production Centre}
   {}
-  {101\offset{.2}}
+  {101-101\offset{.2}}
   {/TUGboat/tb26-1/ad1.pdf}
   {}
   {}
@@ -398,7 +398,7 @@ Some comments on mathematical typesetting}
   {}
   {Design Science, Inc.}
   {}
-  {102\offset{.2}}
+  {102-102\offset{.2}}
   {/TUGboat/tb26-1/ad2.pdf}
   {}
   {}
@@ -408,7 +408,7 @@ Some comments on mathematical typesetting}
   {}
   {Joe Hogg}
   {}
-  {101\offset{.1}}
+  {101-101\offset{.1}}
   {/TUGboat/tb26-1/ad1.pdf}
   {}
   {}
@@ -418,7 +418,7 @@ Some comments on mathematical typesetting}
   {}
   {{\sl The \LaTeX\ Companion}, second edition, by Frank Mittelbach et al.}
   {}
-  {102\offset{.3}}
+  {102-102\offset{.3}}
   {/TUGboat/tb26-1/ad2.pdf}
   {}
   {}
@@ -428,7 +428,7 @@ Some comments on mathematical typesetting}
   {}
   {MacKichan Software, Inc.}
   {}
-  {103\offset{.2}}
+  {103-103\offset{.2}}
   {/TUGboat/tb26-1/ad3.pdf}
   {}
   {}
@@ -438,7 +438,7 @@ Some comments on mathematical typesetting}
   {}
   {Personal \TeX, Inc.}
   {}
-  {102}
+  {102-102}
   {/TUGboat/tb26-1/ad2.pdf}
   {}
   {}
@@ -448,7 +448,7 @@ Some comments on mathematical typesetting}
   {}
   {Steve Peter}
   {}
-  {103}
+  {103-103}
   {/TUGboat/tb26-1/ad3.pdf}
   {}
   {}
@@ -458,7 +458,7 @@ Some comments on mathematical typesetting}
   {}
   {Cheryl Ponchin Training}
   {}
-  {103\offset{.1}}
+  {103-103\offset{.1}}
   {/TUGboat/tb26-1/ad3.pdf}
   {}
   {}
@@ -468,7 +468,7 @@ Some comments on mathematical typesetting}
   {}
   {River Valley Technologies}
   {}
-  {102\offset{.1}}
+  {102-102\offset{.1}}
   {/TUGboat/tb26-1/ad2.pdf}
   {}
   {}
@@ -478,7 +478,7 @@ Some comments on mathematical typesetting}
   {}
   {Silmaril Consultants}
   {}
-  {101}
+  {101-101}
   {/TUGboat/tb26-1/ad1.pdf}
   {}
   {}

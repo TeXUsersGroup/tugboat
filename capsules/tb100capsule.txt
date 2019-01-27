@@ -218,7 +218,7 @@ access</a>.
         {}
         {Title page}
         {}
-        {1}
+        {1-1}
         {/TUGboat/tb32-1/titlepage.pdf}
         {}
         {}
@@ -228,7 +228,7 @@ access</a>.
         {}
         {Editorial information}
         {}
-        {2}
+        {2-2}
         {/TUGboat/!TBIDENT!edit.pdf}
         {}
         {}
@@ -241,7 +241,7 @@ access</a>.
   {Barbara Beeton}
   {Editorial comments}
   {typography and {\sl TUGboat} news}
-  {4}
+  {4-4}
   {/TUGboat/!TBIDENT!beet.pdf}
   {{Opus 100}\\
 {\acro{BBVA} award for Don Knuth}\\
@@ -254,7 +254,7 @@ access</a>.
   {Karl Berry}
   {From the President}
   {conferences; interviews; software}
-  {3}
+  {3-3}
   {/TUGboat/!TBIDENT!pres.pdf}
   {}
   {}
@@ -264,7 +264,7 @@ access</a>.
   {Karl Berry \aand David Walden}
   {\TUB\ online}
   {retrospective history and implementation of making \TUB\ available online}
-  {23}
+  {23-23}
   {/TUGboat/!TBIDENT!berry.pdf}
   {}
   {}
@@ -274,7 +274,7 @@ access</a>.
   {Jackie Damrau}
   {Mimi Burbank}
   {a remembrance}
-  {6}
+  {6-6}
   {/TUGboat/!TBIDENT!damrau.pdf}
   {}
   {}
@@ -284,7 +284,7 @@ access</a>.
   {Pavel Far\'a\v{r}}
   {Introducing the \acro{PT} Sans and \acro{PT} Serif typefaces}
   {high-quality sans and serif typefaces supporting Latin and Cyrillic}
-  {39}
+  {39-39}
   {/TUGboat/!TBIDENT!farar.pdf}
   {}
   {}
@@ -294,7 +294,7 @@ access</a>.
   {Jonathan Fine}
   {Is \TeX\ obsolete?}
   {note on \TeX's (lack of) use as a web service}
-  {120}
+  {120-120}
   {/TUGboat/!TBIDENT!fine.pdf}
   {}
   {}
@@ -304,7 +304,7 @@ access</a>.
   {Hans Hagen}
   {16 years of \ConTeXt}
   {\ConTeXt's evolution and milestones in its history}
-  {9}
+  {9-9}
   {/TUGboat/!TBIDENT!hagen-16.pdf}
   {}
   {}
@@ -314,7 +314,7 @@ access</a>.
   {Jim Hef{}feron}
   {Which way to the forum?}
   {review of the major online help forums}
-  {30}
+  {30-30}
   {/TUGboat/!TBIDENT!heff.pdf}
   {}
   {}
@@ -324,7 +324,7 @@ access</a>.
   {Andrew Hwang}
   {\LaTeX\ at Distributed Proofreaders and the electronic preservation of mathematical literature at Project Gutenberg}
   {processing flow and coding of mathematical books at Project Gutenberg}
-  {32}
+  {32-32}
   {/TUGboat/!TBIDENT!hwang.pdf}
   {}
   {}
@@ -344,7 +344,7 @@ access</a>.
   {\LaTeX\ Project Team}
   {\LaTeX3 news, issue 5}
   {\acro{LPPL} now \acro{OSI}-approved; reflections on 2010; current progress; plans for 2011}
-  {108}
+  {108-108}
   {/TUGboat/!TBIDENT!l3news.pdf}
   {}
   {}
@@ -354,7 +354,7 @@ access</a>.
   {Christina Thiele}%person|Mimi Burbank
   {Missing Mimi}
   {In memoriam: Mimi Burbank}
-  {7}
+  {7-7}
   {/TUGboat/!TBIDENT!thiele.pdf}
   {}
   {}
@@ -364,7 +364,7 @@ access</a>.
   {Boris Veytsman}
   {\TeX\ consulting for fun and profit}
   {technical, business, and personal experiences as a \TeX\ consultant}
-  {27}
+  {27-27}
   {/TUGboat/!TBIDENT!veytsman.pdf}
   {}
   {}
@@ -374,7 +374,7 @@ access</a>.
   {Boris Veytsman}%person|Herbert Vo\ss
   {Book review: \textsl{Typesetting tables with \LaTeX}, by Herbert Vo\ss}
   {}
-  {109}
+  {109-109}
   {/TUGboat/!TBIDENT!reviews.pdf}
   {}
   {}
@@ -384,7 +384,7 @@ access</a>.
   {David Walden \aand Karl Berry}
   {\TUB's 100 issues\Dash{}Basic statistics and random gleanings}
   {sampled survey of issues throughout \TUB's run}
-  {17}
+  {17-17}
   {/TUGboat/!TBIDENT!walden.pdf}
   {}
   {}
@@ -397,7 +397,7 @@ access</a>.
   {Karl Berry}
   {The treasure chest}
   {new \CTAN\ packages from October 2010 through March 2011}
-  {110}
+  {110-110}
   {/TUGboat/!TBIDENT!chest.pdf}
   {}
   {}
@@ -407,7 +407,7 @@ access</a>.
   {Enrico Gregorio}
   {Installing \TeX~Live 2010 on Ubuntu}
   {why and how to install the original \TeX\ Live on \GNU/Linux distributions}
-  {56}
+  {56-56}
   {/TUGboat/!TBIDENT!gregorio.pdf}
   {}
   {}
@@ -417,7 +417,7 @@ access</a>.
   {Taco Hoekwater}
   {tlcontrib.metatex.org: A complement to \TeX\ Live}
   {a distribution and associated web site hosting supplementary packages for \TeX\ Live}
-  {62}
+  {62-62}
   {/TUGboat/!TBIDENT!hoekwater.pdf}
   {}
   {}
@@ -427,7 +427,7 @@ access</a>.
   {Luca Merciadri}
   {Some misunderstood or unknown \LaTeXe{}~tricks~III}
   {monochrome; rightmost braces; watermarks; plagiarism}
-  {104}
+  {104-104}
   {/TUGboat/!TBIDENT!merciadri.pdf}
   {}
   {}
@@ -437,7 +437,7 @@ access</a>.
   {Frank Mittelbach}
   {Reflections on the history of the \LaTeX{} Project Public License (\acro{LPPL})\Dash A software license for \LaTeX{} and more}
   {creation and evolution of the \LaTeX\ world's predominant license}
-  {83}
+  {83-83}
   {/TUGboat/!TBIDENT!mitt.pdf}
   {}
   {}
@@ -447,7 +447,7 @@ access</a>.
   {Andrew West}
   {The rules for long s}
   {rules for using long s in English, French, Italian, and Spanish}
-  {47}
+  {47-47}
   {/TUGboat/!TBIDENT!west.pdf}
   {}
   {}
@@ -457,7 +457,7 @@ access</a>.
   {Peter Wilson}
   {Glisterings}
   {framing; new frames}
-  {99}
+  {99-99}
   {/TUGboat/!TBIDENT!glister.pdf}
   {}
   {}
@@ -467,7 +467,7 @@ access</a>.
   {Joseph Wright}
   {`Magic' comments in \TeX{}works 0.4}
   {specify the encoding, spell checking language, engine and more}
-  {113}
+  {113-113}
   {/TUGboat/!TBIDENT!wright-texworks.pdf}
   {}
   {}
@@ -478,7 +478,7 @@ access</a>.
   {Joseph Wright}
   {{\sf siunitx}: A comprehensive (\acro{SI}) units package}
   {overview of a powerful package for printing units, with or without numbers}
-  {95}
+  {95-95}
   {/TUGboat/!TBIDENT!wright-siunitx.pdf}
   {}
   {}
@@ -506,7 +506,7 @@ access</a>.
   {Hans Hagen}
   {Handling math: A retrospective}
   {the influence of plain \TeX\ math in \ConTeXt, Unicode, and beyond}
-  {43}
+  {43-43}
   {/TUGboat/!TBIDENT!hagen-math.pdf}
   {}
   {}
@@ -516,7 +516,7 @@ access</a>.
   {Paul Isambert}
   {Lua\TeX: What it takes to make a paragraph}
   {influencing ligatures, kerning, line breaking, etc., through callbacks}
-  {68}
+  {68-68}
   {/TUGboat/!TBIDENT!isambert.pdf}
   {}
   {Example code for the idea in the last section can be found, along
@@ -528,7 +528,7 @@ with other useful information, on the
   {Pawe\l{} Jackowski}
   {Luna\Dash my side of the moon}
   {clean handling of graphics made possible by Lua(\TeX)}
-  {77}
+  {77-77}
   {/TUGboat/!TBIDENT!jackowski.pdf}
   {}
   {}
@@ -584,7 +584,7 @@ with other useful information, on the
   {}
   {{\sl Eutypon\/}: Contents of issue 24--25 (October 2010)}
   {}
-  {114}
+  {114-114}
   {/TUGboat/!TBIDENT!eutypon.pdf}
   {}
   {}
@@ -594,7 +594,7 @@ with other useful information, on the
   {}
   {{\sl \acro{MAPS}\/}: Contents of issue 41 (2010)}
   {}
-  {115}
+  {115-115}
   {/TUGboat/!TBIDENT!maps.pdf}
   {}
   {}
@@ -604,7 +604,7 @@ with other useful information, on the
   {}
   {{\sl The Prac\TeX\ Journal\/}: Contents of issue 2010-2}
   {}
-  {116}
+  {116-116}
   {/TUGboat/!TBIDENT!pracjourn.pdf}
   {}
   {}
@@ -614,7 +614,7 @@ with other useful information, on the
   {}
   {{\sl Die \TeX nische Kom\"odie\/}: Contents of issues 4/2010--1/2011}
   {}
-  {117}
+  {117-117}
   {/TUGboat/!TBIDENT!komo.pdf}
   {}
   {}
@@ -624,7 +624,7 @@ with other useful information, on the
   {}
   {{\sl Ars\TeX{}nica\/}: Contents of issue 10 (October 2010)}
   {}
-  {118}
+  {118-118}
   {/TUGboat/!TBIDENT!arstexnica.pdf}
   {}
   {}
@@ -638,7 +638,7 @@ with other useful information, on the
   {}
   {\TeX\ consulting and production services}
   {}
-  {119}
+  {119-119}
   {/consultants.html}
   {}
   {}
@@ -648,7 +648,7 @@ with other useful information, on the
   {}
   {Institutional members}
   {}
-  {121}
+  {121-121}
   {/instmem.html}
   {}
   {}
@@ -658,7 +658,7 @@ with other useful information, on the
   {David Walden}
   {\tug\ financial statements for 2010}
   {}
-  {121\offset{.2}}
+  {121-121\offset{.2}}
   {/TUGboat/!TBIDENT!treas.pdf}
   {}
   {}
@@ -668,7 +668,7 @@ with other useful information, on the
   {Jim Hef{}feron}
   {\TUG\ 2011 election}
   {}
-  {123}
+  {123-123}
   {/TUGboat/!TBIDENT!elec.pdf}
   {}
   {}
@@ -698,7 +698,7 @@ with other useful information, on the
   {}
   {Calendar}
   {}
-  {127}
+  {127-127}
   {/TUGboat/!TBIDENT!calendar.pdf}
   {}
   {}
@@ -708,7 +708,7 @@ with other useful information, on the
   {}
   {\acro{TUG} 2011 announcement}
   {}
-  {128}
+  {128-128}
   {/TUGboat/!TBIDENT!tug11.pdf}
   {}
   {}

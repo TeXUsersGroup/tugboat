@@ -251,7 +251,7 @@ access</a>.
         {}
         {Title page}
         {}
-        {1}
+        {1-1}
         {/TUGboat/tb35-1/titlepage.pdf}
         {}
         {}
@@ -261,7 +261,7 @@ access</a>.
         {}
         {Editorial information}
         {}
-        {2}
+        {2-2}
         {/TUGboat/!TBIDENT!edit.pdf}
         {}
         {}
@@ -300,7 +300,7 @@ access</a>.
   {Jaime Gaspar}
   {Does not suffice to run \LaTeX\ a finite number of times to get cross-references right}
   {simple counterexample}
-  {16\offset{.2}}
+  {16-16\offset{.2}}
   {/TUGboat/!TBIDENT!gaspar.pdf}
   {}
   {}
@@ -330,7 +330,7 @@ access</a>.
   {Steve Peter}
   {Ab epistulis}
   {what publishers want}
-  {2\offset{.2}}
+  {2-2\offset{.2}}
   {/TUGboat/!TBIDENT!pres.pdf}
   {}
   {}
@@ -374,7 +374,7 @@ access</a>.
   {Karl Berry}
   {The treasure chest}
   {new \CTAN\ packages, December 2013--March 2014}
-  {112}
+  {112-112}
   {/TUGboat/!TBIDENT!chest.pdf}
   {}
   {}
@@ -498,7 +498,7 @@ access</a>.
   {Hans Hagen}
   {{\tt drawdot} in MetaPost: A bug, a fix}
   {bug report from Knuth: {\tt drawdot} should not draw an open dot}
-  {82}
+  {82-82}
   {/TUGboat/!TBIDENT!hagen-drawdot.pdf}
   {}
   {}
@@ -607,7 +607,7 @@ access</a>.
   {}
   {{\sl Eutypon\/}: Contents of issue 30--31 (October 2013)}
   {}
-  {111\offset{.1}}
+  {111-111\offset{.1}}
   {/TUGboat/!TBIDENT!eutypon.pdf}
   {}
   {}
@@ -617,7 +617,7 @@ access</a>.
   {}
   {{\sl Die \TeX nische Kom\"odie\/}: Contents of issue 1/2014}
   {}
-  {111\offset{.2}}
+  {111-111\offset{.2}}
   {/TUGboat/!TBIDENT!komo.pdf}
   {}
   {}
@@ -721,7 +721,7 @@ access</a>.
   {Jean-Michel Hufflen}%person|Jean-Pierre Drucbert
   {In memoriam Jean-Pierre Drucbert}
   {}
-  {16}
+  {16-16}
   {/TUGboat/!TBIDENT!drucbert.pdf}
   {}
   {}
@@ -771,7 +771,7 @@ access</a>.
   {Karl Berry}
   {\tug\ financial statements for 2013}
   {}
-  {120}
+  {120-120}
   {/TUGboat/!TBIDENT!treas.pdf}
   {}
   {}
@@ -781,7 +781,7 @@ access</a>.
   {}
   {Institutional members}
   {}
-  {121}
+  {121-121}
   {/instmem.html}
   {}
   {}
@@ -791,7 +791,7 @@ access</a>.
   {}
   {\TeX\ consulting and production services}
   {}
-  {121\offset{.2}}
+  {121-121\offset{.2}}
   {/consultants.html}
   {}
   {}
@@ -811,7 +811,7 @@ access</a>.
   {}
   {Calendar}
   {}
-  {123}
+  {123-123}
   {/TUGboat/!TBIDENT!calendar.pdf}
   {}
   {}
@@ -821,7 +821,7 @@ access</a>.
   {}
   {\acro{TUG} 2014 announcement}
   {}
-  {124}
+  {124-124}
   {/TUGboat/!TBIDENT!tug14.pdf}
   {}
   {}

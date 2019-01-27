@@ -218,7 +218,7 @@ access</a>.
         {}
         {Title page}
         {}
-        {1}
+        {1-1}
         {/TUGboat/tb30-1/titlepage.pdf}
         {}
         {}
@@ -231,7 +231,7 @@ access</a>.
   {Barbara Beeton}%person|Helmut Kopka and Eitan Gurari
   {Editorial comments}
   {typography and {\sl TUGboat} news}
-  {4\offset{.1}}
+  {4-4\offset{.1}}
   {/TUGboat/!TBIDENT!beet.pdf}
   {{{Helmut Kopka}, 1932--2009}\\
 {{Eitan Gurari}, 1947--2009}\\
@@ -243,7 +243,7 @@ access</a>.
   {Karl Berry}
   {From the President}
   {In memoriam; \TeX\ Collection 2009; book of TUG interviews; server hardware; conferences; joint memberships}
-  {3}
+  {3-3}
   {/TUGboat/!TBIDENT!pres.pdf}
   {}
   {}
@@ -253,7 +253,7 @@ access</a>.
   {David Crossland}
   {The Open Font Library}
   {announcement of a web site collecting redistributable and modifiable fonts}
-  {35}
+  {35-35}
   {/TUGboat/!TBIDENT!crossland.pdf}
   {}
   {}
@@ -263,7 +263,7 @@ access</a>.
   {Patrick Daly}%person|Helmut Kopka
   {Helmut Kopka, 1932--2009}
   {the first author of \textsl{A Guide to \LaTeX}, in memoriam}
-  {4\offset{.2}}
+  {4-4\offset{.2}}
   {/TUGboat/!TBIDENT!daly.pdf}
   {}
   {}
@@ -273,7 +273,7 @@ access</a>.
   {Peter Flynn}
   {Typographers' Inn}
   {The electronic book; Breaking the mold; \acro{RIOTING TYPOGRAPHERS}; Periodic table of typefaces}
-  {20}
+  {20-20}
   {/TUGboat/!TBIDENT!inn.pdf}
   {}
   {}
@@ -283,7 +283,7 @@ access</a>.
   {\LaTeX\ Project Team}
   {\LaTeX3 news, issues 1--2}
   {\LaTeX3 news installments: what exists, what's coming}
-  {105}
+  {105-105}
   {/TUGboat/!TBIDENT!l3news.pdf}
   {}
   {}
@@ -293,7 +293,7 @@ access</a>.
   {Lapo Mori}
   {Managing bibliographies with \LaTeX}
   {survey of bibliography support, including \texttt{natbib} and \texttt{biblatex}}
-  {36}
+  {36-36}
   {/TUGboat/!TBIDENT!mori.pdf}
   {}
   {}
@@ -303,7 +303,7 @@ access</a>.
   {David Perry}
   {Ancient \TeX: Using \XeTeX{} to support classical and medieval studies}
   {Unicode, OpenType, and \XeTeX{}, with a focus on usage in classics}
-  {12}
+  {12-12}
   {/TUGboat/!TBIDENT!perry.pdf}
   {}
   {}
@@ -313,7 +313,7 @@ access</a>.
   {Jan P\v{r}ichystal}
   {\TeX{}onWeb}
   {a customizable, secure web application for running \AllTeX}
-  {18}
+  {18-18}
   {/TUGboat/!TBIDENT!prichystal.pdf}
   {}
   {}
@@ -327,7 +327,7 @@ access</a>.
   {Karl Berry}
   {The treasure chest}
   {new \CTAN\ packages from June 2008 through June 2009}
-  {127}
+  {127-127}
   {/TUGboat/!TBIDENT!chest.pdf}
   {}
   {}
@@ -337,7 +337,7 @@ access</a>.
   {\Thanh}
   {A closer look at TrueType fonts and pdf\TeX}
   {using TrueType directly with pdf\TeX, with care for glyph names and encodings}
-  {32}
+  {32-32}
   {/TUGboat/!TBIDENT!thanh.pdf}
   {}
   {}
@@ -347,7 +347,7 @@ access</a>.
   {Joseph Wright}
   {\LaTeX3 programming: External perspectives}
   {summary of key ideas in the \LaTeX3 programming interface}
-  {107}
+  {107-107}
   {/TUGboat/!TBIDENT!wright-latex3.pdf}
   {}
   {}
@@ -357,7 +357,7 @@ access</a>.
   {Joseph Wright and Christian Feuers\"anger}
   {Implementing key--value input: An introduction}
   {tutorial on using \texttt{keyval}, \texttt{kvoptions}, \texttt{xkeyval}, \texttt{pgfkeys}, both \LaTeX\ and plain \TeX}
-  {110}
+  {110-110}
   {/TUGboat/!TBIDENT!wright-keyval.pdf}
   {}
   {}
@@ -367,7 +367,7 @@ access</a>.
   {Wentao Zheng}
   {Supporting layout routines in MetaPost}
   {approaches to (semi-)automatically laying out objects in MetaPost}
-  {64}
+  {64-64}
   {/TUGboat/!TBIDENT!zheng.pdf}
   {}
   {}
@@ -377,7 +377,7 @@ access</a>.
   {V\'{\i}t Z\'yka}
   {Current typesetting position in pdf\TeX{}}
   {description and example usage of pdf\TeX{} extensions for obtaining the current position on the page}
-  {123}
+  {123-123}
   {/TUGboat/!TBIDENT!zyka.pdf}
   {}
   {}
@@ -401,7 +401,7 @@ access</a>.
   {John Bowman and Orest Shardt}
   {Asymptote: Lifting \TeX\ to three dimensions}
   {generation of interactive three-dimensional output, embeddable in \PDF}
-  {58}
+  {58-58}
   {/TUGboat/!TBIDENT!bowman.pdf}
   {}
   {}
@@ -411,7 +411,7 @@ access</a>.
   {Jin-Hwan Cho}
   {\acro{DVI} specials for \acro{PDF} generation}
   {concise description of \acro{DVI} specials used in \DVIPDFMx}
-  {6}
+  {6-6}
   {/TUGboat/!TBIDENT!cho.pdf}
   {}
   {}
@@ -421,7 +421,7 @@ access</a>.
   {Denis Roegel}
   {MetaPost macros for drawing Chinese and Japanese abaci}
   {drawing abaci and illustrating their operation}
-  {74}
+  {74-74}
   {/TUGboat/!TBIDENT!roegel-abacus.pdf}
   {}
   {}
@@ -431,7 +431,7 @@ access</a>.
   {Peter Wilson}
   {Glisterings}
   {Reprise; pdf\LaTeX\ and MetaPost; Spidrons}
-  {69}
+  {69-69}
   {/TUGboat/!TBIDENT!glister.pdf}
   {Reprise;\\
 pdf\LaTeX\ and MetaPost;\\
@@ -448,7 +448,7 @@ Spidrons\\
   {Jean-Michel Hufflen}
   {Managing languages within Ml\BibTeX}
   {specifying natural languages in bibliographies to \ConTeXt\ and \LaTeX}
-  {49}
+  {49-49}
   {/TUGboat/!TBIDENT!hufflen.pdf}
   {}
   {}
@@ -458,7 +458,7 @@ Spidrons\\
   {Denis Roegel}
   {An introduction to nomography: Garrigues' nomogram for the computation of Easter}
   {background of Easter calculations and reproduction in MetaPost}
-  {88}
+  {88-88}
   {/TUGboat/!TBIDENT!roegel-garrigues.pdf}
   {}
   {}
@@ -468,7 +468,7 @@ Spidrons\\
   {Denis Roegel}
   {Spheres, great circles and parallels}
   {drawing correct spheres and their components with MetaPost}
-  {80}
+  {80-80}
   {/TUGboat/!TBIDENT!roegel-spheres.pdf}
   {}
   {}
@@ -478,7 +478,7 @@ Spidrons\\
   {Ulrik Vieth}
   {OpenType Math Illuminated}
   {detailed comparison of OpenType and \TeX\ math font parameters}
-  {22}
+  {22-22}
   {/TUGboat/!TBIDENT!vieth.pdf}
   {}
   {}
@@ -501,7 +501,7 @@ Spidrons\\
 %{{\sl Zpravodaj\/}: Issues 16(2)--18(4) (2006--2008)}
 %  }
 %  {}
-%  {131}
+%  {131-131}
 %  {url}
 %  {}
 %  {}
@@ -512,7 +512,7 @@ Spidrons\\
   {}
   {{\sl Ars\TeX{}nica\/}: Contents of issues 5--7 (2008--2009)}
   {}
-  {131}
+  {131-131}
   {/TUGboat/!TBIDENT!arstexnica.pdf}
   {}
   {}
@@ -522,7 +522,7 @@ Spidrons\\
   {}
   {{\sl Baskerville\/}: Contents of issue 10.1 (2009)}
   {}
-  {133\offset{.1}}
+  {133-133\offset{.1}}
   {/TUGboat/!TBIDENT!baskerville.pdf}
   {}
   {}
@@ -532,7 +532,7 @@ Spidrons\\
   {}
   {{\sl Eutypon\/}: Contents of issue 21 (October 2008)}
   {}
-  {133\offset{.2}}
+  {133-133\offset{.2}}
   {/TUGboat/!TBIDENT!eutypon.pdf}
   {}
   {}
@@ -542,7 +542,7 @@ Spidrons\\
   {}
   {{\sl Die \TeX{}nische Kom\"odie\/}: Contents of issues 2008/2--2009/2}
   {}
-  {134}
+  {134-134}
   {/TUGboat/!TBIDENT!komo.pdf}
   {}
   {}
@@ -552,7 +552,7 @@ Spidrons\\
   {}
   {{\sl \acro{MAPS}\/}: Contents of issues 36--37 (2008)}
   {}
-  {136}
+  {136-136}
   {/TUGboat/!TBIDENT!maps.pdf}
   {}
   {}
@@ -562,7 +562,7 @@ Spidrons\\
   {}
   {{\sl The Prac\TeX\ Journal\/}: Contents of issues 2008-2--2008-3}
   {}
-  {138}
+  {138-138}
   {/TUGboat/!TBIDENT!pracjourn.pdf}
   {}
   {}
@@ -572,7 +572,7 @@ Spidrons\\
   {}
   {{\sl \TeX{}emplares\/}: Contents of issue 8 (2006)}
   {}
-  {139}
+  {139-139}
   {/TUGboat/!TBIDENT!texemp.pdf}
   {}
   {}
@@ -582,7 +582,7 @@ Spidrons\\
   {}
   {{\sl Zpravodaj\/}: Contents of issues 16(2)--18(4) (2006--2008)}
   {}
-  {140}
+  {140-140}
   {/TUGboat/!TBIDENT!zprav.pdf}
   {}
   {}
@@ -596,7 +596,7 @@ Spidrons\\
   {Kaihsu Tai}
   {In response to ``mathematical formul\ae''}
   {}%emendations and additions to the article by Guiggiani \& Mori}
-  {125}
+  {125-125}
   {/TUGboat/!TBIDENT!tai.pdf}
   {}
   {}
@@ -606,7 +606,7 @@ Spidrons\\
   {Massimo Guiggiani and Lapo Mori}
   {In response to Kaihsu Tai}
   {}%authors' response to the letter}
-  {126}
+  {126-126}
   {/TUGboat/!TBIDENT!guiggiani.pdf}
   {}
   {}
@@ -616,7 +616,7 @@ Spidrons\\
   {}
   {Institutional members}
   {}
-  {144}
+  {144-144}
   {/instmem.html}
   {}
   {}
@@ -626,7 +626,7 @@ Spidrons\\
   {Barbara Beeton}
   {TUG 2009 election report}
   {}
-  {145}
+  {145-145}
   {/TUGboat/!TBIDENT!elec.pdf}
   {}
   {}
@@ -636,7 +636,7 @@ Spidrons\\
   {\TeX\CONNECT{}Development\CONNECT{}Fund\CONNECT{}committee}
   {\TeX\ Development Fund 2009 report}
   {}
-  {148}
+  {148-148}
   {/TUGboat/!TBIDENT!devfund.pdf}
   {}
   {}
@@ -646,7 +646,7 @@ Spidrons\\
   {David Walden}
   {\tug\ financial statements for 2008}
   {}
-  {149}
+  {149-149}
   {/TUGboat/!TBIDENT!treas.pdf}
   {}
   {}
@@ -666,7 +666,7 @@ Spidrons\\
   {}
   {Calendar}
   {}
-  {151}
+  {151-151}
   {/TUGboat/!TBIDENT!calendar.pdf}
   {}
   {}
@@ -686,7 +686,7 @@ Spidrons\\
   {}
   {\TeX\ consulting and production services}
   {}
-  {152}
+  {152-152}
   {/consultants.html}
   {}
   {}

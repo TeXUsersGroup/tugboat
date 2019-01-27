@@ -56,7 +56,7 @@ other TeX projects.
   {}
   {Title page}
   {}
-  {1}
+  {1-1}
   {/TUGboat/tb23-3-4/titlepage.pdf}
   {}
   {}
@@ -66,7 +66,7 @@ other TeX projects.
         {}
         {Addresses}
         {}
-        {243}
+        {243-243}
         {}
         {}
         {}
@@ -76,7 +76,7 @@ other TeX projects.
         {Karl Berry}
         {From the Board of Directors}
         {}
-        {245}
+        {245-245}
         {/TUGboat/tb23-3-4/tb75gendel.pdf}
         {}
         {}
@@ -86,7 +86,7 @@ other TeX projects.
         {Barbara Beeton}
         {Editorial comments}
         {}
-        {245\offset{.5}}
+        {245-245\offset{.5}}
         {/TUGboat/tb23-3-4/tb75beet.pdf}
         {TeX 3.141592, Metafont 2.71828\\
 Glitch in TUGboat 22:4\\
@@ -104,7 +104,7 @@ TeX for the Impatient}
         {}
         {Hyphenation exception log}
         {}
-        {247}
+        {247-247}
         {/TUGboat/tb23-3-4/tb75hyf.pdf}
         {}
         {}
@@ -115,7 +115,7 @@ TeX for the Impatient}
         {}%person|Donald Knuth
         {Donald Knuth:  All questions answered (University of Oslo, 30 August 2002)}
         {}
-        {249}
+        {249-249}
         {/TUGboat/tb23-3-4/tb75knuth.pdf}
         {}
         {}
@@ -127,7 +127,7 @@ TeX for the Impatient}
         {Claudio Beccari}
         {Floating point numbers and Metafont, MetaPost, TeX, and PostScript Type~1 fonts}
         {}
-        {261}
+        {261-261}
         {/TUGboat/tb23-3-4/tb75beccreal.pdf}
         {}
         {}
@@ -139,7 +139,7 @@ TeX for the Impatient}
         {Stefan A. Revets}
         {The Octavo package}
         {}
-        {269}
+        {269-269}
         {/TUGboat/tb23-3-4/tb75revets.pdf}
         {}
         {(<a href="https://ctan.org/pkg/octavo/">octavo updates available on CTAN</a>)}
@@ -149,7 +149,7 @@ TeX for the Impatient}
         {Claudio Beccari}
         {The teubner LaTeX package: Typesetting classical Greek philology}
         {}
-        {276}
+        {276-276}
         {/TUGboat/tb23-3-4/tb75beccteub.pdf}
         {}
         {}
@@ -160,7 +160,7 @@ TeX for the Impatient}
         {Palash B. Pal}
         {Typesetting in Bengali script using TeX}
         {}
-        {282}
+        {282-282}
         {/TUGboat/tb23-3-4/tb75pal.pdf}
         {}
         {}
@@ -172,7 +172,7 @@ TeX for the Impatient}
         {Jonathan Kuhn}
         {interactiveworkbook: LaTeX-based interactive PDF on the Web}
         {}
-        {288}
+        {288-288}
         {/TUGboat/tb23-3-4/tb75kuhn.pdf}
         {}
         {}
@@ -184,7 +184,7 @@ TeX for the Impatient}
         {D. Men'shikov, A. Kostin, and M. Vulis}
         {Multiple Master math extension fonts}
         {}
-        {291}
+        {291-291}
         {/TUGboat/tb23-3-4/tb75vulis.pdf}
         {}
         {}
@@ -195,7 +195,7 @@ TeX for the Impatient}
         {Thomas H. Barton}
         {TrueType fonts in PostScript}
         {}
-        {294}
+        {294-294}
         {/TUGboat/tb23-3-4/tb75bart.pdf}
         {}
         {}
@@ -206,7 +206,7 @@ TeX for the Impatient}
         {Antonis Tsolomitis}
         {The Kerkis font family}
         {}
-        {296}
+        {296-296}
         {/TUGboat/tb23-3-4/tb75tsol.pdf}
         {}
         {}
@@ -217,7 +217,7 @@ TeX for the Impatient}
         {Walter Schmidt}
         {Euler-VM: Generic math fonts for use with LaTeX}
         {}
-        {301}
+        {301-301}
         {/TUGboat/tb23-3-4/tb75schmidt.pdf}
         {}
         {}
@@ -230,7 +230,7 @@ TeX for the Impatient}
         {Prasenjit Saha}
         {Rambutan: Literate programming in Java}
         {}
-        {304}
+        {304-304}
         {/TUGboat/tb23-3-4/tb75saha.pdf}
         {}
         {}
@@ -242,7 +242,7 @@ TeX for the Impatient}
         {Christian Obrecht}
         {Eukleides: A geometry drawing language}
         {}
-        {309}
+        {309-309}
         {/TUGboat/tb23-3-4/tb75obre.pdf}
         {}
         {}
@@ -253,7 +253,7 @@ TeX for the Impatient}
         {Ramon Casares}
         {MetaTeX}
         {}
-        {313}
+        {313-313}
         {/TUGboat/tb23-3-4/tb75casa.pdf}
         {}
         {}
@@ -266,7 +266,7 @@ TeX for the Impatient}
         {Mark LaPlante and William F. Adams}
         {The treasure chest}
         {}
-        {319}
+        {319-319}
         {/TUGboat/tb23-3-4/tb75chest.pdf}
         {}
         {}
@@ -278,7 +278,7 @@ TeX for the Impatient}
         {Thomas Feuerstack}
         {Introduction to pdfTeX}
         {}
-        {329}
+        {329-329}
         {/TUGboat/tb23-3-4/tb75feu.pdf}
         {}
         {}
@@ -291,7 +291,7 @@ TeX for the Impatient}
         {Herbert Vo\ss}
         {Constructing circuit diagrams with pst-circ}
         {}
-        {335}
+        {335-335}
         {/TUGboat/tb23-3-4/tb75voss.pdf}
         {}
         {}
@@ -302,7 +302,7 @@ TeX for the Impatient}
         {Norman Gray}
         {Absolute positioning with textpos}
         {}
-        {341}
+        {341-341}
         {/TUGboat/tb23-3-4/tb75gray.pdf}
         {}
         {}
@@ -313,7 +313,7 @@ TeX for the Impatient}
         {Harald Harders}
         {Multilingual bibliographies: Using and extending the babelbib package}
         {}
-        {344}
+        {344-344}
         {/TUGboat/tb23-3-4/tb75harders.pdf}
         {}
         {}
@@ -325,7 +325,7 @@ TeX for the Impatient}
         {}
         {{\sl Les Cahiers GUTenberg}: Contents of Thematic Issue 41 (November 2001)}
         {}
-        {354}
+        {354-354}
         {/TUGboat/tb23-3-4/tb75cahi.pdf}
         {}
         {}
@@ -337,7 +337,7 @@ TeX for the Impatient}
         {}
         {Calendar}
         {}
-        {355}
+        {355-355}
         {/calendar.html}
         {}
         {}
@@ -348,7 +348,7 @@ TeX for the Impatient}
         {}
         {Practical TeX 2004: Training and techniques}
         {}
-        {358}
+        {358-358}
         {/practicaltex2004}
         {}
         {}
@@ -358,7 +358,7 @@ TeX for the Impatient}
         {Mimi Burbank}
         {Production notes}
         {}
-        {360}
+        {360-360}
         {/TUGboat/tb23-3-4/tb75prod.pdf}
         {}
         {}
@@ -369,7 +369,7 @@ TeX for the Impatient}
         {}
         {Future issues}
         {}
-        {360\offset{.3}}
+        {360-360\offset{.3}}
         {}
         {}
         {}
@@ -381,7 +381,7 @@ TeX for the Impatient}
         {Roy Preston}
         {Type Design as Art}
         {}
-        {244}
+        {244-244}
         {/TUGboat/tb23-3-4/grot.pdf}
         {}
         {}
@@ -393,7 +393,7 @@ TeX for the Impatient}
         {Arthur Ogawa}
         {Report of TUG election}
         {}
-        {360\offset{.6}}
+        {360-360\offset{.6}}
         {/TUGboat/tb23-3-4/tb75boar.pdf}
         {}
         {}
@@ -404,7 +404,7 @@ TeX for the Impatient}
         {Robin Laakso}
         {Financial statements for 2001 and 2002}
         {}
-        {365}
+        {365-365}
         {/TUGboat/tb23-3-4/tb75treas.pdf}
         {}
         {}
@@ -415,7 +415,7 @@ TeX for the Impatient}
         {}
         {Institutional members}
         {}
-        {357}
+        {357-357}
         {/TUGboat/tb23-3-4/instmem-list.pdf}
         {}
         {}
@@ -426,7 +426,7 @@ TeX for the Impatient}
         {}
         {TUG membership application}
         {}
-        {375}
+        {375-375}
         {/forms/2004/memberapp.html}
         {}
         {}
@@ -438,7 +438,7 @@ TeX for the Impatient}
         {}
         {Bugs in Computers \& Typesetting, 6 July 2003}
         {}
-        {367}
+        {367-367}
         {/TUGboat/tb23-3-4/tb75errata.pdf}
         {}
         {}
@@ -450,7 +450,7 @@ TeX for the Impatient}
         {}
         {TeX consulting and production services}
         {}
-        {376}
+        {376-376}
         {/consultants.html}
         {}
         {}
@@ -461,7 +461,7 @@ TeX for the Impatient}
         {}
         {TeX Live, 2003 Edition}
         {}
-        {359}
+        {359-359}
         {/TUGboat/tb23-3-4/texlive.pdf}
         {}
         {}

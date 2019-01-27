@@ -221,7 +221,7 @@ access</a>.
         {}
         {Title page}
         {}
-        {237}
+        {237-237}
         {/TUGboat/tb33-3/titlepage.pdf}
         {}
         {}
@@ -231,7 +231,7 @@ access</a>.
         {}
         {Editorial information}
         {}
-        {238\offset{.2}}
+        {238-238\offset{.2}}
         {/TUGboat/!TBIDENT!edit.pdf}
         {}
         {}
@@ -244,7 +244,7 @@ access</a>.
   {Barbara Beeton}
   {Editorial comments}
   {typography and {\sl TUGboat} news}
-  {240}
+  {240-240}
   {/TUGboat/!TBIDENT!beet.pdf}
   {{New printings of \textsl{Computers \& Typesetting}};\\
 {Three printing-related symposia};\\
@@ -267,7 +267,7 @@ access</a>.
   {Don Knuth}
   {\acro{PUB} and pre-\TeX\ history}
   {note about an early computer typesetting program by Larry Tesler}
-  {328\offset{.1}}
+  {328-328\offset{.1}}
   {/TUGboat/!TBIDENT!knut.pdf}
   {}
   {}
@@ -277,7 +277,7 @@ access</a>.
   {Markus Kohm}
   {\acro{KOMA-S}cript comes of age}
   {informal history of \acro{KOMA-S}cript's first eighteen years}
-  {241}
+  {241-241}
   {/TUGboat/!TBIDENT!kohm-maturity.pdf}
   {}
   {}
@@ -297,7 +297,7 @@ access</a>.
   {Steve Peter}%person|Dan Carr and Bill Hill
   {Ab epistulis}
   {Lucida OpenType; \DVD; new printings from Knuth; in memoriam: Dan Carr and Bill~Hill}
-  {239}
+  {239-239}
   {/TUGboat/!TBIDENT!pres.pdf}
   {}
   {}
@@ -307,7 +307,7 @@ access</a>.
   {Christina Thiele}
   {Almost 30 years of using \TeX}
   {reflections on the \TeX\ world through the years at a small typesetting house}
-  {245}
+  {245-245}
   {/TUGboat/!TBIDENT!thiele.pdf}
   {}
   {}
@@ -317,7 +317,7 @@ access</a>.
   {Thomas Thurnherr}
   {Changing the font size in \LaTeX}
   {document-wide and local methods for changing font size}
-  {263}
+  {263-263}
   {/TUGboat/!TBIDENT!thurnherr.pdf}
   {}
   {}
@@ -327,7 +327,7 @@ access</a>.
   {Boris Veytsman}
   {The fonts we choose}
   {essay on the importance of font choices}
-  {299}
+  {299-299}
   {/TUGboat/!TBIDENT!veytsman-fonts.pdf}
   {}
   {}
@@ -337,7 +337,7 @@ access</a>.
   {Mari Voipio}
   {Craf\TeX: Applying \TeX, MetaPost, and friends in~crafts}
   {scrapbooking, cardcraft, tablet weaving, historical (re)creation, and more}
-  {285}
+  {285-285}
   {/TUGboat/!TBIDENT!voipio.pdf}
   {}
   {}
@@ -351,7 +351,7 @@ access</a>.
   {Karl Berry}
   {The treasure chest}
   {new \CTAN\ packages, August--October 2012}
-  {319}
+  {319-319}
   {/TUGboat/!TBIDENT!chest.pdf}
   {}
   {}
@@ -361,7 +361,7 @@ access</a>.
   {Robert Fuster}
   {The \pkgname{calculator} and \pkgname{calculus} packages: Arithmetic and functional calculations inside \LaTeX}
   {extensive new packages for mathematical computations, including functions and derivatives}
-  {265}
+  {265-265}
   {/TUGboat/!TBIDENT!fuster.pdf}
   {}
   {}
@@ -371,7 +371,7 @@ access</a>.
   {Peter Pupalaikis}
   {A patent application design flow in \LaTeX\ and \LyX}
   {support for \acro{US} patent applications, especially the required drawings}
-  {276}
+  {276-276}
   {/TUGboat/!TBIDENT!pupalaikis.pdf}
   {}
   {}
@@ -381,7 +381,7 @@ access</a>.
   {Ulrik Vieth}
   {OpenType math font development: Progress and challenges}
   {survey of available OpenType math fonts and technology}
-  {302}
+  {302-302}
   {/TUGboat/!TBIDENT!vieth.pdf}
   {}
   {}
@@ -391,7 +391,7 @@ access</a>.
   {Herbert Vo\ss}
   {Using \TeX\ Gyre Pagella OpenType Math}
   {example of loading an OpenType math font in \XeTeX\ and Lua\TeX}
-  {301}
+  {301-301}
   {/TUGboat/!TBIDENT!voss.pdf}
   {}
   {}
@@ -425,7 +425,7 @@ access</a>.
   {Bruno Delprat \aand Stepan Orevkov}
   {Maya\acro{PS}: Maya hieroglyphics with~\AllTeX}
   {flexible PostScript-based system for typesetting Maya}
-  {289}
+  {289-289}
   {/TUGboat/!TBIDENT!delprat.pdf}
   {}
   {}
@@ -435,7 +435,7 @@ access</a>.
   {Markus Kohm}
   {Page style tricks with {\tt scrpage2}}
   {custom page styles for \LaTeX, with examples from \acro{KOMA-S}cript}
-  {282}
+  {282-282}
   {/TUGboat/!TBIDENT!kohm-scrpage2.pdf}
   {}
   {}
@@ -445,7 +445,7 @@ access</a>.
   {Sherif Mansour \aand Hossam Fahmy}
   {Experiences with Arabic font development}
   {development and debugging of the Metafont-based AlQalam Arabic script}
-  {295}
+  {295-295}
   {/TUGboat/!TBIDENT!mansour.pdf}
   {}
   {}
@@ -455,7 +455,7 @@ access</a>.
   {Clemens Niederberger}
   {The {\tt xtemplate} package: An example}
   {illustrating the concept of the \LaTeX3 {\tt xtemplate} with an example}
-  {272}
+  {272-272}
   {/TUGboat/!TBIDENT!niederberger.pdf}
   {}
   {}
@@ -465,7 +465,7 @@ access</a>.
   {Peter Wilson}
   {Glisterings}
   {cutout windows}
-  {313}
+  {313-313}
   {/TUGboat/!TBIDENT!glister.pdf}
   {}
   {}
@@ -489,7 +489,7 @@ access</a>.
   {Linus Romer}
   {From drawn to filled paths}
   {sequence of examples of `o' using all pen and outline methods}
-  {309}
+  {309-309}
   {/TUGboat/!TBIDENT!romer.pdf}
   {}
   {}
@@ -499,7 +499,7 @@ access</a>.
   {Boris Veytsman}
   {Stubborn leaders and juggling boxes: A slightly unusual table of contents}
   {methodology of a macro for leaders at the top of a box}
-  {316}
+  {316-316}
   {/TUGboat/!TBIDENT!veytsman-leaders.pdf}
   {}
   {}
@@ -536,7 +536,7 @@ access</a>.
   {}
   {{\sl The Prac\TeX\ Journal\/}: Contents of issue 2012-1}
   {}
-  {326}
+  {326-326}
   {/TUGboat/!TBIDENT!pracjourn.pdf}
   {}
   {}
@@ -546,7 +546,7 @@ access</a>.
   {}
   {{\sl Les Cahiers \acro{GUT}enberg\/}: Contents of issue 56 (2011) (simultaneously published as {\sl \acro{MAPS}\/} 42 (2011) and  {\sl Zpravodaj\/} 2--4/2011)}
   {}
-  {324}
+  {324-324}
   {/TUGboat/!TBIDENT!cahi.pdf}
   {}
   {}
@@ -556,7 +556,7 @@ access</a>.
   {}
   {{\sl Ars\TeX{}nica\/}: Contents of issue 14 (2012)}
   {}
-  {325}
+  {325-325}
   {/TUGboat/!TBIDENT!arstexnica.pdf}
   {}
   {}
@@ -640,7 +640,7 @@ access</a>.
   {}
   {\acro{TUG} 2013 announcement}
   {}
-  {328\offset{.2}}
+  {328-328\offset{.2}}
   {/TUGboat/!TBIDENT!tug13.pdf}
   {}
   {}
@@ -650,7 +650,7 @@ access</a>.
   {Boris Veytsman}%person|Herbert Vo\ss
   {Book review: \textsl{\PSTricks: Graphics and PostScript for \TeX\ and \LaTeX}, by Herbert Vo\ss}
   {review of this reference on \PSTricks, the principal maintainer}
-  {320}
+  {320-320}
   {/TUGboat/!TBIDENT!reviews-voss.pdf}
   {See the <a href="/books/">TUG books page</a> for all book reviews and discounts.}
   {}
@@ -660,7 +660,7 @@ access</a>.
   {David Walden}%person|Simon Garfield
   {Book review: \textsl{Just My Type: A book about~fonts}, by Simon Garfield}
   {review of this book of varied essays on fonts}
-  {322}
+  {322-322}
   {/TUGboat/!TBIDENT!reviews-garfield.pdf}
   {}
   {}
@@ -670,7 +670,7 @@ access</a>.
   {}
   {\TeX\ consulting and production services}
   {}
-  {330}
+  {330-330}
   {/consultants.html}
   {}
   {}
@@ -680,7 +680,7 @@ access</a>.
   {}
   {Institutional members}
   {}
-  {238\offset{.1}}
+  {238-238\offset{.1}}
   {/instmem.html}
   {}
   {}
@@ -720,7 +720,7 @@ access</a>.
   {}
   {Calendar}
   {}
-  {329}
+  {329-329}
   {/TUGboat/!TBIDENT!calendar.pdf}
   {}
   {}
@@ -730,7 +730,7 @@ access</a>.
   {Barbara Beeton}
   {\acro{TUG} 2013 election}
   {}
-  {332}
+  {332-332}
   {/election/2013/}
   {}
   {}

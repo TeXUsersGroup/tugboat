@@ -222,7 +222,7 @@ access</a>.
         {}
         {Title page}
         {}
-        {153}
+        {153-153}
         {/TUGboat/tb30-2/titlepage.pdf}
         {}
         {}
@@ -235,7 +235,7 @@ access</a>.
   {Tim Arnold}
   {Getting started with {plas\TeX}}
   {introduction to plas\TeX: converting \LaTeX\ to \HTML, DocBook, plain text, and more}
-  {180}
+  {180-180}
   {/TUGboat/!TBIDENT!arnold.pdf}
   {}
   {}
@@ -245,7 +245,7 @@ access</a>.
   {Kaveh Bazargan}
   {{\TeX} as an eBook reader}
   {report on using \TeX\ for better line breaking and mathematics support on the iPhone}
-  {272}
+  {272-272}
   {/TUGboat/!TBIDENT!bazargan.pdf}
   {}
   {}
@@ -255,7 +255,7 @@ access</a>.
   {Karl Berry}
   {{\TeX} Live 2009 news}
   {brief summary of notable changes in the \TeX\ Live 2009 software release}
-  {179}
+  {179-179}
   {/TUGboat/!TBIDENT!berry-tl.pdf}
   {}
   {}
@@ -265,7 +265,7 @@ access</a>.
   {Jim Hef{}feron}
   {A first look at the {\TeX} {G}yre fonts}
   {samples and recipes for using the Gyre font collection, especially for math}
-  {236}
+  {236-236}
   {/TUGboat/!TBIDENT!heff-gyre.pdf}
   {}
   {}
@@ -275,7 +275,7 @@ access</a>.
   {Klaus H\"oppner}
   {Introduction to \MP}
   {focusing on the unique features of \MP, such as solving linear equations}
-  {209}
+  {209-209}
   {/TUGboat/!TBIDENT!hoeppner.pdf}
   {}
   {}
@@ -285,7 +285,7 @@ access</a>.
   {Frank Quinn}
   {The Edu{\TeX\ TUG} working group}
   {clever new machines, clever new software, same old brains}
-  {176}
+  {176-176}
   {/TUGboat/!TBIDENT!quinn.pdf}
   {}
   {}
@@ -295,7 +295,7 @@ access</a>.
   {Will Robertson}
   {Peter {W}ilson's {H}erries {P}ress packages}
   {a new maintainer for most of Wilson's packages, and descriptions thereof}
-  {290}
+  {290-290}
   {/TUGboat/!TBIDENT!robertson.pdf}
   {}
   {}
@@ -305,7 +305,7 @@ access</a>.
   {David Walden}%person|Eitan Gurari
   {Profile of Eitan Gurari (1947--2009)}
   {the creator of \TeX4ht and other projects, in memoriam}
-  {159}
+  {159-159}
   {/TUGboat/!TBIDENT!gurari.pdf}
   {}
   {}
@@ -315,7 +315,7 @@ access</a>.
   {David Walden}
   {Self-publishing: {E}xperiences and opinions}
   {printing, distribution, economics, and other aspects of self-publishing}
-  {203}
+  {203-203}
   {/TUGboat/!TBIDENT!walden.pdf}
   {}
   {}
@@ -329,7 +329,7 @@ access</a>.
   {Karl Berry \aand David Walden}
   {{\TeX} People: The \tug\ interviews project and book}
   {the interviewing process, using m4 to create \HTML\ or \LaTeX, publication decisions}
-  {196}
+  {196-196}
   {/TUGboat/!TBIDENT!berry-interviews.pdf}
   {}
   {}
@@ -339,7 +339,7 @@ access</a>.
   {Hans Hagen}
   {Plain {\TeX} and {OpenType}}
   {introduction to facilities for accessing OpenType fonts from plain Lua\TeX}
-  {241}
+  {241-241}
   {/TUGboat/!TBIDENT!hagen-opentype.pdf}
   {}
   {}
@@ -349,7 +349,7 @@ access</a>.
   {Jim Hef{}feron}
   {Becoming a \CTAN\ mirror}
   {steps for helping the community by running a \CTAN\ mirror}
-  {177}
+  {177-177}
   {/TUGboat/!TBIDENT!heff-mirrors.pdf}
   {}
   {}
@@ -359,7 +359,7 @@ access</a>.
   {Aditya Mahajan}
   {Lua{\TeX}: {A} user's perspective}
   {using Lua to greatly simplify programming in \TeX}
-  {247}
+  {247-247}
   {/TUGboat/!TBIDENT!mahajan-luatex.pdf}
   {}
   {}
@@ -369,7 +369,7 @@ access</a>.
   {Christian Rossi}
   {From distribution to preservation of digital documents}
   {issues of conservation of (mostly textual) electronic documents}
-  {274}
+  {274-274}
   {/TUGboat/!TBIDENT!rossi.pdf}
   {}
   {}
@@ -379,7 +379,7 @@ access</a>.
   {Andrew Mertz \& William Slough}
   {A {Ti{\it k}Z} tutorial: {G}enerating graphics in the spirit of {\TeX}}
   {tutorial overview of this major graphics package}
-  {214}
+  {214-214}
   {/TUGboat/!TBIDENT!mertz.pdf}
   {}
   {}
@@ -389,7 +389,7 @@ access</a>.
   {Arthur Reutenauer}
   {Lua{\TeX} for the {\LaTeX} user: {A}n introduction}
   {brief note on some notable \LaTeX\ packages providing basic Lua\TeX\ support}
-  {169}
+  {169-169}
   {/TUGboat/!TBIDENT!reutenauer.pdf}
   {}
   {}
@@ -399,7 +399,7 @@ access</a>.
   {Boris Veytsman}
   {{\LaTeX} class writing for wizard apprentices}
   {compatibility, interfaces, tips, and experiences in writing \LaTeX\ classes}
-  {163}
+  {163-163}
   {/TUGboat/!TBIDENT!veytsman-classes.pdf}
   {}
   {}
@@ -409,7 +409,7 @@ access</a>.
   {Boris Veytsman \aand Leila Akhmadeeva}
   {Medical pedigrees: {T}ypography and interfaces}
   {historical and new typesetting of medical pedigrees}
-  {227}
+  {227-227}
   {/TUGboat/!TBIDENT!veytsman-pedigree.pdf}
   {}
   {}
@@ -423,7 +423,7 @@ access</a>.
   {Claudio Beccari}
   {Use of the \cs{write18} feature for composing indexes}
   {automatically keeping indexes up to date via external command execution}
-  {285}
+  {285-285}
   {/TUGboat/!TBIDENT!becc.pdf}
   {}
   {}
@@ -433,7 +433,7 @@ access</a>.
   {Nelson Beebe}
   {\BibTeX{} meets relational databases}
   {searching large bibliographic collections using \acro{SQL} databases}
-  {252}
+  {252-252}
   {/TUGboat/!TBIDENT!beebe.pdf}
   {}
   {}
@@ -443,7 +443,7 @@ access</a>.
   {Hans Hagen}
   {{Lua\TeX}: {H}alfway to version~1}
   {overview of past, present, and future of Lua\TeX}
-  {183}
+  {183-183}
   {/TUGboat/!TBIDENT!hagen-luatex.pdf}
   {}
   {}
@@ -453,7 +453,7 @@ access</a>.
   {Hans Hagen}
   {{Lua\TeX} and {\ConTeXt}: {W}here we stand}
   {taking stock of current Lua\TeX\ and \ConTeXt, with performance comparisons}
-  {187}
+  {187-187}
   {/TUGboat/!TBIDENT!hagen-stand.pdf}
   {}
   {}
@@ -463,7 +463,7 @@ access</a>.
   {Aditya Mahajan}
   {Integrating Unicode and OpenType math in {\ConTeXt}}
   {implementation in Lua\TeX\ of both OpenType and traditional math}
-  {243}
+  {243-243}
   {/TUGboat/!TBIDENT!mahajan-cmath.pdf}
   {}
   {}
@@ -473,7 +473,7 @@ access</a>.
   {D. P. Story}
   {Rich media annotations and Acro\acro{FL}eX}
   {multimedia support in \PDF\ via Acrobat and \LaTeX}
-  {281}
+  {281-281}
   {/TUGboat/!TBIDENT!story.pdf}
   {}
   {}
@@ -483,7 +483,7 @@ access</a>.
   {Peter Wilson}
   {Glisterings}
   {Reprise; Repetition; Rectangular text}
-  {287}
+  {287-287}
   {/TUGboat/!TBIDENT!glister.pdf}
   {}
   {}
@@ -500,7 +500,7 @@ access</a>.
   {Ross Moore}
   {Ongoing efforts to generate ``tagged {\PDF}'' using {pdf\TeX}}
   {extending pdf\TeX\ and \LaTeX\ to support accessible \PDF}
-  {170}
+  {170-170}
   {/TUGboat/!TBIDENT!moore.pdf}
   {}
   {}
@@ -510,7 +510,7 @@ access</a>.
   {Bob Neveln \aand Bob Alps}
   {ProofCheck: Writing and checking complete proofs in~{\LaTeX}}
   {a system for writing formal proofs in \AllTeX\ and automatically checking them}
-  {191}
+  {191-191}
   {/TUGboat/!TBIDENT!neveln.pdf}
   {}
   {}
@@ -528,7 +528,7 @@ access</a>.
 %print {{\sl Zpravodaj\/}: 19(1--2) (2009)}
 %print   }
 %print   {}
-%print   {293}
+%print   {293-293}
 %print   {url}
 %print   {}
 %print   {}
@@ -538,7 +538,7 @@ access</a>.
   {}
   {{\sl Biuletyn GUST\/}: {C}ontents of issues 25--26 (2008--2009)}
   {}
-  {293}
+  {293-293}
   {/TUGboat/!TBIDENT!gust.pdf}
   {}
   {}
@@ -548,7 +548,7 @@ access</a>.
   {}
   {{\sl Die \TeX{}nische Kom\"odie\/}: {C}ontents of issue 2009/3}
   {}
-  {296}
+  {296-296}
   {/TUGboat/!TBIDENT!komo.pdf}
   {}
   {}
@@ -558,7 +558,7 @@ access</a>.
   {}
   {{\sl Zpravodaj\/}: {C}ontents of issues 16(1) (2006) and 19(1--2) (2009)}
   {}
-  {296\offset{.297}}
+  {296-296\offset{.297}}
   {/TUGboat/!TBIDENT!zprav.pdf}
   {}
   {}
@@ -572,7 +572,7 @@ access</a>.
   {}
   {TUG 2009 conference information}
   {}
-  {154}
+  {154-154}
   {/TUGboat/!TBIDENT!confinfo.pdf}
   {}
   {thanks, participants, <a href="/TUGboat/tb30-2/tb95program.pdf">program</a>, <a href="/TUGboat/tb30-2/tb95sponsors.pdf">sponsors</a>, <a href="/TUGboat/tb30-2/tb95photos.pdf">photos</a>.}
@@ -582,7 +582,7 @@ access</a>.
   {Cho, de {S}ouza, {H}amid, {H\o{}gholm}, {R}owley}
   {TUG 2009 abstracts}
   {}
-  {298}
+  {298-298}
   {/TUGboat/!TBIDENT!abstracts.pdf}
   {}
   {}
@@ -592,7 +592,7 @@ access</a>.
   {}
   {Institutional members}
   {}
-  {299}
+  {299-299}
   {/instmem.html}
   {}
   {}
@@ -612,7 +612,7 @@ access</a>.
    {}
    {\acro{TUG} 2010 announcement}
    {}
-   {302}
+   {302-302}
    {/tug2010/}
    {}
    {}
@@ -622,7 +622,7 @@ access</a>.
   {}
   {Calendar}
   {}
-  {303}
+  {303-303}
   {/TUGboat/!TBIDENT!calendar.pdf}
   {}
   {}
@@ -632,7 +632,7 @@ access</a>.
   {}
   {\TeX\ consulting and production services}
   {}
-  {304}
+  {304-304}
   {/consultants.html}
   {}
   {}

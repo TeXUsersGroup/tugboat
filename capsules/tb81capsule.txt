@@ -138,7 +138,7 @@ other TeX projects.
   {}
   {Title page}
   {}
-  {121}
+  {121-121}
   {/TUGboat/tb25-2/titlepage.pdf}
   {}
   {}
@@ -148,7 +148,7 @@ other TeX projects.
   {}
   {Editorial page}
   {}
-  {122}
+  {122-122}
   {/TUGboat/tb25-2/tb81edit.pdf}
   {}
   {}
@@ -160,7 +160,7 @@ other TeX projects.
   {Barbara Beeton}%person|Justin Howes and John Seybold
   {Editorial comments}
   {typography and {\sl TUGboat} news}
-  {124}
+  {124-124}
   {/TUGboat/tb25-2/tb81beet.pdf}
   {New {\it TUGboat} submission and posting policies\\
 Justin Howes, 1963--2005\\
@@ -179,7 +179,7 @@ Extra time? Proofread for Project Gutenberg}
   {Karl Berry}
   {From the president}
   {\acro{TUG} activities and information for 2004}
-  {123}
+  {123-123}
   {/TUGboat/tb25-2/tb81pres.pdf}
   {}
   {}
@@ -189,7 +189,7 @@ Extra time? Proofread for Project Gutenberg}
   {Peter Flynn}
   {Typographers' Inn}
   {common typographical pitfalls and recommendations}
-  {134}
+  {134-134}
   {/TUGboat/tb25-2/tb81inn.pdf}
   {}
   {}
@@ -199,7 +199,7 @@ Extra time? Proofread for Project Gutenberg}
   {Jim Hef{}feron}
   {\acro{CTAN} for starters}
   {introduction to the \TeX\ software archives}
-  {126}
+  {126-126}
   {/TUGboat/tb25-2/tb81heff.pdf}
   {}
   {}
@@ -209,7 +209,7 @@ Extra time? Proofread for Project Gutenberg}
   {Steve Peter}
   {\cs{starttext}: Practical \ConTeXt}
   {for new users of \ConTeXt}
-  {128}
+  {128-128}
   {/TUGboat/tb25-2/tb81peter.pdf}
   {}
   {}
@@ -223,7 +223,7 @@ Extra time? Proofread for Project Gutenberg}
   {Claudio Beccari \aand Christiano Pulone}
   {Philological facilities for Coptic script}
   {support for Coptic typesetting}
-  {136}
+  {136-136}
   {/TUGboat/tb25-2/tb81becc.pdf}
   {}
   {}
@@ -233,7 +233,7 @@ Extra time? Proofread for Project Gutenberg}
   {Massimiliano Dominici}
   {{\tt dramatist}:  Another package for typesetting drama with \LaTeX}
   {for playwrights and dramatic publishing}
-  {188}
+  {188-188}
   {/TUGboat/tb25-2/tb81dominici.pdf}
   {}
   {}
@@ -243,7 +243,7 @@ Extra time? Proofread for Project Gutenberg}
   {Andrew D. Hwang}
   {{\tt ePiX}: A utility for creating mathematically accurate figures}
   {for users drawing math figures}
-  {172}
+  {172-172}
   {/TUGboat/tb25-2/tb81hwang.pdf}
   {}
   {}
@@ -253,7 +253,7 @@ Extra time? Proofread for Project Gutenberg}
   {Mark LaPlante}
   {The treasure chest}
   {new and updated \CTAN\ packages in 2004}
-  {203}
+  {203-203}
   {/TUGboat/tb25-2/tb81chest.pdf}
   {}
   {}
@@ -263,7 +263,7 @@ Extra time? Proofread for Project Gutenberg}
   {Simon Law}
   {Variable width boxes in \LaTeX}
   {for moving beyond box basics}
-  {193}
+  {193-193}
   {/TUGboat/tb25-2/tb81law.pdf}
   {}
   {}
@@ -273,7 +273,7 @@ Extra time? Proofread for Project Gutenberg}
   {Thomas A. Schmitz}
   {Virtual fonts\Dash{}a tutorial}
   {for learning about font handling}
-  {131}
+  {131-131}
   {/TUGboat/tb25-2/tb81schmitz.pdf}
   {}
   {}
@@ -283,7 +283,7 @@ Extra time? Proofread for Project Gutenberg}
   {David Walden}
   {A non-expert looks at a small \TeX\ macro}
   {developing and understanding basic macro definitions, an example}
-  {199}
+  {199-199}
   {/TUGboat/tb25-2/tb81walden.pdf}
   {}
   {}
@@ -297,7 +297,7 @@ Extra time? Proofread for Project Gutenberg}
   {Marcelo Castier \aand Vladimir F. Cabral}
   {Automatic typesetting of formulas using computer algebra}
   {about exporting math from Mathematica to \TeX}
-  {166}
+  {166-166}
   {/TUGboat/tb25-2/tb81castier.pdf}
   {}
   {}
@@ -307,7 +307,7 @@ Extra time? Proofread for Project Gutenberg}
   {J.\,P. Hagon}
   {\LaTeX\ in 3D: Annotations for Open\acro{DX}}
   {about \LaTeX\ captions and labeling in visual programming}
-  {177}
+  {177-177}
   {/TUGboat/tb25-2/tb81hagon.pdf}
   {}
   {}
@@ -317,7 +317,7 @@ Extra time? Proofread for Project Gutenberg}
   {Siep Kroonenberg}
   {\TeX\ and prepress}
   {about preparing documents for physical printing}
-  {159}
+  {159-159}
   {/TUGboat/tb25-2/tb81kroonenberg.pdf}
   {}
   {}
@@ -327,7 +327,7 @@ Extra time? Proofread for Project Gutenberg}
   {Azzeddine Lazrek}
   {\pkgname{RyDArab}\Dash{}Typesetting Arabic mathematical expressions}
   {about a large system for Arabic math typesetting}
-  {141}
+  {141-141}
   {/TUGboat/tb25-2/tb81lazrek.pdf}
   {}
   {}
@@ -337,7 +337,7 @@ Extra time? Proofread for Project Gutenberg}
   {Peter Wilson}
   {Glisterings: Package/package and class/package clashes}
   {handling command name conflicts}
-  {201}
+  {201-201}
   {/TUGboat/tb25-2/tb81glister.pdf}
   {}
   {}
@@ -351,7 +351,7 @@ Extra time? Proofread for Project Gutenberg}
   {Hendri Adriaens \aand Uwe Kern}
   {\pkgname{xkeyval}\Dash{}new developments and mechanisms in key processing}
   {about key/value arguments, for package writers}
-  {194}
+  {194-194}
   {/TUGboat/tb25-2/tb81adriaens.pdf}
   {}
   {}
@@ -361,7 +361,7 @@ Extra time? Proofread for Project Gutenberg}
   {Scott Pakin}
   {Perl\TeX: Defining \LaTeX\ macros using Perl}
   {using the Perl language to create macro definitions}
-  {150}
+  {150-150}
   {/TUGboat/tb25-2/tb81pakin.pdf}
   {}
   {}
@@ -375,7 +375,7 @@ Extra time? Proofread for Project Gutenberg}
   {}
   {{\it Biuletyn GUST\/}: Contents of issues 20--21 (2004)}
   {}
-  {213}
+  {213-213}
   {/TUGboat/tb25-2/tb81gust.pdf}
   {}
   {}
@@ -385,7 +385,7 @@ Extra time? Proofread for Project Gutenberg}
   {}
   {{\it Les Cahiers GUTenberg\/}: Contents of issue 43 (December 2003)}
   {}
-  {215}
+  {215-215}
   {/TUGboat/tb25-2/tb81gust.pdf}
   {}
   {}
@@ -395,7 +395,7 @@ Extra time? Proofread for Project Gutenberg}
   {}
   {{\it MAPS\/}: Contents of issues 29--31 (2003--04)}
   {}
-  {216}
+  {216-216}
   {/TUGboat/tb25-2/tb81maps.pdf}
   {}
   {}
@@ -405,7 +405,7 @@ Extra time? Proofread for Project Gutenberg}
   {}
   {{\it Die \TeX{}nische Kom\"odie\/}: Contents of issues 1--4/2003}
   {}
-  {210}
+  {210-210}
   {/TUGboat/tb25-2/tb81komo.pdf}
   {}
   {}
@@ -415,7 +415,7 @@ Extra time? Proofread for Project Gutenberg}
   {}
   {{\it Zpravodaj\/}: Contents of issues 13(1), 14(1), 14(2) (2003--04)}
   {}
-  {209}
+  {209-209}
   {/TUGboat/tb25-2/tb81zprav.pdf}
   {}
   {}
@@ -429,7 +429,7 @@ Extra time? Proofread for Project Gutenberg}
   {Onofrio de Bari \aand Maurizio Himmelmann}
   {A brief report on the first GuIT meeting}
   {}
-  {223}
+  {223-223}
   {/TUGboat/tb25-2/tb81guit.pdf}
   {}
   {}
@@ -439,7 +439,7 @@ Extra time? Proofread for Project Gutenberg}
   {Barbara Beeton}
   {\acro{TUG} 2005 election report}
   {}
-  {228}
+  {228-228}
   {/TUGboat/tb25-2/tb81elec.pdf}
   {}
   {}
@@ -449,7 +449,7 @@ Extra time? Proofread for Project Gutenberg}
   {Karl Berry \aand Kaja Christiansen}
   {\TeX\ Development Fund 2003--05 report}
   {}
-  {224}
+  {224-224}
   {/TUGboat/tb25-2/tb81devfund.pdf}
   {}
   {}
@@ -459,7 +459,7 @@ Extra time? Proofread for Project Gutenberg}
   {Robin Laakso}
   {Financial statements for 2004}
   {}
-  {226}
+  {226-226}
   {/TUGboat/tb25-2/tb81treas.pdf}
   {}
   {}
@@ -469,7 +469,7 @@ Extra time? Proofread for Project Gutenberg}
   {}
   {Calendar}
   {}
-  {221}
+  {221-221}
   {/TUGboat/tb25-2/tb81calendar.pdf}
   {}
   {}
@@ -479,7 +479,7 @@ Extra time? Proofread for Project Gutenberg}
   {}
   {TUG\,2005 announcement}
   {}
-  {223\offset{.1}}
+  {223-223\offset{.1}}
   {/tug2005/}
   {}
   {}
@@ -489,7 +489,7 @@ Extra time? Proofread for Project Gutenberg}
   {}
   {Institutional members}
   {}
-  {232}
+  {232-232}
   {/TUGboat/tb25-2/instmem-list.pdf}
   {}
   {}
@@ -499,7 +499,7 @@ Extra time? Proofread for Project Gutenberg}
   {}
   {\TeX\ consulting and production services}
   {}
-  {232\offset{.1}}
+  {232-232\offset{.1}}
   {/consultants.html}
   {}
   {}

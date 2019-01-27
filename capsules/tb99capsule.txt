@@ -218,7 +218,7 @@ access</a>.
         {}
         {Title page}
         {}
-        {157}
+        {157-157}
         {/TUGboat/tb31-3/titlepage.pdf}
         {}
         {}
@@ -231,7 +231,7 @@ access</a>.
   {Barbara Beeton}
   {Editorial comments}
   {typography and {\sl TUGboat} news}
-  {158\offset{.1}}
+  {158-158\offset{.1}}
   {/TUGboat/!TBIDENT!beet.pdf}
   {{Matthew Carter named MacArthur Fellow}\\
 {Indie Excellence Awards for self-published books}\\
@@ -246,7 +246,7 @@ access</a>.
   {Karl Berry}
   {From the President}
   {conferences; interviews; software}
-  {158}
+  {158-158}
   {/TUGboat/!TBIDENT!pres.pdf}
   {}
   {}
@@ -256,7 +256,7 @@ access</a>.
   {Jim Hef{}feron}
   {Giving it away}
   {writing and distributing a free (libre) linear algebra text}
-  {175}
+  {175-175}
   {/TUGboat/!TBIDENT!heff.pdf}
   {}
   {}
@@ -266,7 +266,7 @@ access</a>.
   {Luca Merciadri}
   {Some misunderstood or unknown \LaTeXe{}~tricks~II}
   {float references; spreadsheets; \acro{QED} symbols; counting pages and tables; messages on blank pages; dots in matrices; logic gates; circled-text enumerations}
-  {191}
+  {191-191}
   {/TUGboat/!TBIDENT!merciadri.pdf}
   {}
   {}
@@ -276,7 +276,7 @@ access</a>.
   {\LaTeX\ Project Team}
   {\LaTeX3 news, issue 4}
   {\pkgname{expl3} in practice; new \pkgname{xpackages}; developments with \pkgname{expl3}; \TUG\ 2010 reflections}
-  {194}
+  {194-194}
   {/TUGboat/!TBIDENT!l3news.pdf}
   {}
   {}
@@ -289,7 +289,7 @@ access</a>.
   {Karl Berry}
   {The treasure chest}
   {new \CTAN\ packages from April through October, 2010}
-  {227}
+  {227-227}
   {/TUGboat/!TBIDENT!chest.pdf}
   {}
   {}
@@ -299,7 +299,7 @@ access</a>.
   {Christophe Caignaert}
   {A story of {\it kpfonts\/}: Reaching the limits of \acro{NFSS}}
   {extensive article on an extensive font family}
-  {161}
+  {161-161}
   {/TUGboat/!TBIDENT!caignaert.pdf}
   {}
   {}
@@ -309,7 +309,7 @@ access</a>.
   {Jean-Michel Hufflen}
   {Managing printed and online versions of large educational documents}
   {adapting texts to distance vs.\ presentational education}
-  {219}
+  {219-219}
   {/TUGboat/!TBIDENT!hufflen.pdf}
   {}
   {}
@@ -319,7 +319,7 @@ access</a>.
   {Peter Wilson}
   {Glisterings}
   {meandering miniature books}
-  {177}
+  {177-177}
   {/TUGboat/!TBIDENT!glister.pdf}
   {}
   {}
@@ -329,7 +329,7 @@ access</a>.
   {Joseph Wright}
   {From {\cs{newcommand}} to \cs{DocumentNewCommand} with {\tt xparse}}
   {\LaTeX3 extensions to defining macros for users}
-  {195}
+  {195-195}
   {/TUGboat/!TBIDENT!wright.pdf}
   {}
   {}
@@ -343,7 +343,7 @@ access</a>.
   {Matteo Centonza \aand Vito Piserchia}
   {{\tt illumino}: An \XML\ document production system with a \TeX\ core}
   {an Apache {\tt ant} workflow for perfect \LaTeX\ to Docbook conversion}
-  {213}
+  {213-213}
   {/TUGboat/!TBIDENT!centonza.pdf}
   {}
   {}
@@ -353,7 +353,7 @@ access</a>.
   {Paul Isambert}
   {Three things you can do with Lua\TeX\ that would be extremely painful otherwise}
   {Lua\TeX\ introduction, and representing page color, underlining, margin notes}
-  {184}
+  {184-184}
   {/TUGboat/!TBIDENT!isambert.pdf}
   {}
   {}
@@ -363,7 +363,7 @@ access</a>.
   {Oleg Parashchenko}
   {Generate \TeX{} documents using {\tt pdfscript}}
   {Python library for conveniently generating correct \TeX\ documents}
-  {208}
+  {208-208}
   {/TUGboat/!TBIDENT!parashchenko.pdf}
   {}
   {}
@@ -377,7 +377,7 @@ access</a>.
   {Michael Barnett}
   {Aligning text in diagrams exported by Mathematica: A question about the \hfil\break PostScript infrastructure}
   {help requested in finding proper baseline alignments in \PDF\ output}
-  {223}
+  {223-223}
   {/TUGboat/!TBIDENT!barnett.pdf}
   {(<a href="/TUGboat/tb31-3/tb99barnett-supp.zip">Supplemental information</a> as described in the article.)}
   {}
@@ -387,7 +387,7 @@ access</a>.
   {Hans Hagen}
   {Tagged \PDF\ in \ConTeXt}
   {towards tagged \PDF\ support in \ConTeXt}
-  {197}
+  {197-197}
   {/TUGboat/!TBIDENT!hagen.pdf}
   {}
   {}
@@ -397,7 +397,7 @@ access</a>.
   {Luigi Scarso}
   {Introduction to colours in \ConTeXt\ \MkIV}
   {theoretical, practical, and \ConTeXt\ colors}
-  {203}
+  {203-203}
   {/TUGboat/!TBIDENT!scarso.pdf}
   {}
   {}
@@ -423,7 +423,7 @@ access</a>.
 %print   {{\sl Die \TeX nische Kom\"odie\/}: Issue 2010/3};
 %print    }
 %print    {}
-%print    {230}
+%print    {230-230}
 %print    {url}
 %print    {}
 %print    {}
@@ -434,7 +434,7 @@ access</a>.
   {}
   {{\sl Ars\TeX{}nica\/}: Contents of issue 9 (October 2010)}
   {}
-  {229}
+  {229-229}
   {/TUGboat/!TBIDENT!arstexnica.pdf}
   {}
   {}
@@ -444,7 +444,7 @@ access</a>.
   {}
   {{\sl \acro{MAPS}\/}: Contents of issue 40 (2010)}
   {}
-  {230}
+  {230-230}
   {/TUGboat/!TBIDENT!maps.pdf}
   {}
   {}
@@ -454,7 +454,7 @@ access</a>.
   {}
   {{\sl The Prac\TeX\ Journal\/}: Contents of issues 2010-1}
   {}
-  {231}
+  {231-231}
   {/TUGboat/!TBIDENT!pracjourn.pdf}
   {}
   {}
@@ -464,7 +464,7 @@ access</a>.
   {}
   {{\sl Zpravodaj\/}: Contents of issues 20(1--2), 20(3) (2010)}
   {}
-  {233}
+  {233-233}
   {/TUGboat/!TBIDENT!zprav.pdf}
   {}
   {}
@@ -474,7 +474,7 @@ access</a>.
   {}
   {{\sl Die \TeX{}nische Kom\"odie\/}: Contents of issue 2010/3}
   {}
-  {236}
+  {236-236}
   {/TUGboat/!TBIDENT!komo.pdf}
   {}
   {}
@@ -538,7 +538,7 @@ access</a>.
   {Barbara Beeton}
   {Hyphenation exception log}
   {update for missed and incorrect U.S. English hyphenations}
-  {160}
+  {160-160}
   {/TUGboat/!TBIDENT!hyf.pdf}
   {}
   {}
@@ -578,7 +578,7 @@ access</a>.
   {}
   {Calendar}
   {}
-  {237}
+  {237-237}
   {/TUGboat/!TBIDENT!calendar.pdf}
   {}
   {}
@@ -598,7 +598,7 @@ access</a>.
   {}
   {\TeX\ consulting and production services}
   {}
-  {238}
+  {238-238}
   {/consultants.html}
   {}
   {}
@@ -608,7 +608,7 @@ access</a>.
   {}
   {Institutional members}
   {}
-  {239}
+  {239-239}
   {/instmem.html}
   {}
   {}
@@ -618,7 +618,7 @@ access</a>.
   {Jim Hef{}feron}
   {\TUG\ 2011 election}
   {}
-  {240}
+  {240-240}
   {/TUGboat/!TBIDENT!elec.pdf}
   {}
   {}

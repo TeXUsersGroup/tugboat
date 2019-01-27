@@ -218,7 +218,7 @@ access</a>.
         {}
         {Title page}
         {}
-        {1}
+        {1-1}
         {/TUGboat/tb31-1/titlepage.pdf}
         {}
         {}
@@ -231,7 +231,7 @@ access</a>.
   {Barbara Beeton}
   {Editorial comments}
   {typography and {\sl TUGboat} news}
-  {4}
+  {4-4}
   {/TUGboat/!TBIDENT!beet.pdf}
   {{\TeX\ at 2\sp{5}}\\
 {Pi Day}\\
@@ -246,7 +246,7 @@ access</a>.
   {Karl Berry}
   {From the President}
   {conferences; interviews; \TeX\ Collection 2010; \TeX\ journals}
-  {3}
+  {3-3}
   {/TUGboat/!TBIDENT!pres.pdf}
   {}
   {}
@@ -256,7 +256,7 @@ access</a>.
   {Luca Merciadri}
   {Some misunderstood or unknown \LaTeXe{}~tricks}
   {matrix with borders; accolades in tables; envelopes; microtypography}
-  {76}
+  {76-76}
   {/TUGboat/!TBIDENT!merciadri.pdf}
   {}
   {}
@@ -266,7 +266,7 @@ access</a>.
   {Andr\'e{} Miede}
   {Theses and other beautiful documents with {\tt classicthesis}}
   {overview and examples of {\tt classicthesis}}
-  {18}
+  {18-18}
   {/TUGboat/!TBIDENT!miede.pdf}
   {}
   {}
@@ -276,7 +276,7 @@ access</a>.
   {Amit Raj Dhawan}
   {Mathematical typefaces in {\TeX} documents}
   {examples of existing typefaces with math support, and plain macros}
-  {27}
+  {27-27}
   {/TUGboat/!TBIDENT!dhawan.pdf}
   {}
   {}
@@ -286,7 +286,7 @@ access</a>.
   {Peter Flynn}
   {Typographers' Inn}
   {indenting; where have all the flowers gone?}
-  {21}
+  {21-21}
   {/TUGboat/!TBIDENT!inn.pdf}
   {}
   {}
@@ -296,7 +296,7 @@ access</a>.
   {\LaTeX\ Project Team}
   {\LaTeX\ news, issue 19}
   {2009 \LaTeX\ release; new code repository; Babel; the future}
-  {64}
+  {64-64}
   {/TUGboat/!TBIDENT!ltnews.pdf}
   {}
   {}
@@ -306,7 +306,7 @@ access</a>.
   {\LaTeX\ Project Team}
   {\LaTeX3 news, issue 3}
   {\pkgname{xparse}; \pkgname{xtemplate}; upcoming plans}
-  {79}
+  {79-79}
   {/TUGboat/!TBIDENT!l3news.pdf}
   {}
   {}
@@ -316,7 +316,7 @@ access</a>.
   {Evan Wessler}
   {An argument for learning \LaTeX: The benefits of typesetting and beyond}
   {benefits of \LaTeX\ apart from aesthetics}
-  {6}
+  {6-6}
   {/TUGboat/!TBIDENT!wessler.pdf}
   {}
   {}
@@ -330,7 +330,7 @@ access</a>.
   {Karl Berry}
   {The treasure chest}
   {new \CTAN\ packages from July 2009 through April 2010}
-  {96}
+  {96-96}
   {/TUGboat/!TBIDENT!chest.pdf}
   {}
   {}
@@ -340,7 +340,7 @@ access</a>.
   {Hans Hagen}
   {Lua\TeX: Microtypography for plain fonts}
   {font extension, slant, protrusion and expansion for Lua\TeX}
-  {26}
+  {26-26}
   {/TUGboat/!TBIDENT!hagen-fonts.pdf}
   {}
   {}
@@ -350,7 +350,7 @@ access</a>.
   {Mateusz Kmiecik}
   {From {Logo} to {MetaPost}}
   {comparison of graphics, both simple and complex, in Logo and MetaPost}
-  {59}
+  {59-59}
   {/TUGboat/!TBIDENT!kmiecik-logo.pdf}
   {}
   {}
@@ -360,7 +360,7 @@ access</a>.
   {Aditya Mahajan}
   {{\ConTeXt} basics for users: {C}onditional processing}
   {usage of \ConTeXt\ modes, with several examples}
-  {88}
+  {88-88}
   {/TUGboat/!TBIDENT!mahajan.pdf}
   {}
   {}
@@ -370,7 +370,7 @@ access</a>.
   {Nicolaas Mars}
   {A computer scientist self-publishing in the~humanities}
   {notes on layout, creating new glyphs, and self-publishing with CreateSpace}
-  {9}
+  {9-9}
   {/TUGboat/!TBIDENT!mars.pdf}
   {}
   {}
@@ -380,7 +380,7 @@ access</a>.
   {Oleg Parashchenko}
   {Minimal setup for a (Cyrillic) {TrueType} font}
   {concise step-by-step creation of support files for a new font}
-  {23}
+  {23-23}
   {/TUGboat/!TBIDENT!parashchenko.pdf}
   {}
   {}
@@ -390,7 +390,7 @@ access</a>.
   {Nicola Talbot}
   {Talbot packages: {A}n overview}
   {date and time, glossaries, spreadsheet-like manipulation, poster layout, graphics drawing, and more}
-  {65}
+  {65-65}
   {/TUGboat/!TBIDENT!talbot.pdf}
   {}
   {}
@@ -400,7 +400,7 @@ access</a>.
   {Herbert Vo\ss}
   {The current state of the \acro{PST}ricks project}
   {review of basic \acro{PST}ricks, generation of \PDF, a wealth of examples}
-  {36}
+  {36-36}
   {/TUGboat/!TBIDENT!voss.pdf}
   {}
   {}
@@ -413,7 +413,7 @@ access</a>.
   {Paul Isambert}
   {Strategies against widows}
   {}
-  {12}
+  {12-12}
   {/TUGboat/!TBIDENT!isambert.pdf}
   {}
   {}
@@ -423,7 +423,7 @@ access</a>.
   {Jacek Kmiecik}
   {Tuning \LaTeX\ to one's own needs}
   {customizing page layout, section titles, headings, figure placement, and more}
-  {68}
+  {68-68}
   {/TUGboat/!TBIDENT!kmiecik-latex.pdf}
   {}
   {}
@@ -433,7 +433,7 @@ access</a>.
   {Peter Wilson}
   {Glisterings}
   {counting; changing the layout}
-  {90}
+  {90-90}
   {/TUGboat/!TBIDENT!glister.pdf}
   {}
   {}
@@ -443,7 +443,7 @@ access</a>.
   {Joseph Wright}
   {Beyond {\cs{newcommand}} with {\tt xparse}}
   {\LaTeX3's extended facilities for defining macros}
-  {80}
+  {80-80}
   {/TUGboat/!TBIDENT!wright-xparse.pdf}
   {}
   {}
@@ -453,7 +453,7 @@ access</a>.
   {Joseph Wright}
   {Plotting experimental data using {\tt pgfplots}}
   {creating good-looking and scientifically accurate plots}
-  {50}
+  {50-50}
   {/TUGboat/!TBIDENT!wright-pgfplots.pdf}
   {}
   {}
@@ -464,7 +464,7 @@ access</a>.
   {Joseph Wright}
   {Programming key--value in {\tt expl3}}
   {a general key--value package for \LaTeX3}
-  {83}
+  {83-83}
   {/TUGboat/!TBIDENT!wright-l3keys.pdf}
   {}
   {}
@@ -478,7 +478,7 @@ access</a>.
   {Hans Hagen}
   {Lua\TeX: Deeply nested notes}
   {migrating nested footnotes and other insertions via Lua}
-  {32}
+  {32-32}
   {/TUGboat/!TBIDENT!hagen-nested.pdf}
   {}
   {}
@@ -488,7 +488,7 @@ access</a>.
   {Timothy Hall}
   {The exact placement of superscripts and subscripts}
   {adjusting font dimensions to improve superscript/subscript appearance}
-  {94}
+  {94-94}
   {/TUGboat/!TBIDENT!hall.pdf}
   {}
   {}
@@ -524,7 +524,7 @@ access</a>.
   {}
   {{\sl Ars\TeX{}nica\/}: Contents of issue 8 (October 2009)}
   {}
-  {99}
+  {99-99}
   {/TUGboat/!TBIDENT!arstexnica.pdf}
   {}
   {}
@@ -534,7 +534,7 @@ access</a>.
   {}
   {{\sl Die \TeX{}nische Kom\"odie\/}: Contents of issues 2009/4--2010/2}
   {}
-  {100}
+  {100-100}
   {/TUGboat/!TBIDENT!komo.pdf}
   {}
   {}
@@ -544,7 +544,7 @@ access</a>.
   {}
   {{\sl Asian Journal of \TeX\/}: Contents of Volume 3 (2009)}
   {}
-  {101}
+  {101-101}
   {/TUGboat/!TBIDENT!ajt.pdf}
   {}
   {}
@@ -554,7 +554,7 @@ access</a>.
   {}
   {{\sl Les Cahiers \acro{GUT}enberg\/}: Contents of issues 48--53 (2006--2009)}
   {}
-  {102}
+  {102-102}
   {/TUGboat/!TBIDENT!cahi.pdf}
   {}
   {}
@@ -564,7 +564,7 @@ access</a>.
   {}
   {{\sl Eutypon\/}: Contents of issue 22--23 (October 2009)}
   {}
-  {104}
+  {104-104}
   {/TUGboat/!TBIDENT!eutypon.pdf}
   {}
   {}
@@ -574,7 +574,7 @@ access</a>.
   {}
   {{\sl \acro{MAPS}\/}: Contents of issue 38 (2009)}
   {}
-  {105}
+  {105-105}
   {/TUGboat/!TBIDENT!maps.pdf}
   {}
   {}
@@ -584,7 +584,7 @@ access</a>.
   {}
   {{\sl Baskerville\/}: Contents of issue 10.2 (2009)}
   {}
-  {105\offset{.1}}
+  {105-105\offset{.1}}
   {/TUGboat/!TBIDENT!baskerville.pdf}
   {}
   {}
@@ -614,7 +614,7 @@ access</a>.
   {}
   {{\sl Zpravodaj\/}: Contents of issues 16(1), 19(3)--19(4) (2006, 2009)}
   {}
-  {106}
+  {106-106}
   {/TUGboat/!TBIDENT!zprav.pdf}
   {}
   {}
@@ -627,7 +627,7 @@ access</a>.
   {David Walden}
   {\tug\ financial statements for 2009}
   {}
-  {109}
+  {109-109}
   {/TUGboat/!TBIDENT!treas.pdf}
   {}
   {}
@@ -637,7 +637,7 @@ access</a>.
   {}
   {Institutional members}
   {}
-  {110}
+  {110-110}
   {/instmem.html}
   {}
   {}
@@ -677,7 +677,7 @@ access</a>.
   {}
   {Calendar}
   {}
-  {111}
+  {111-111}
   {/TUGboat/!TBIDENT!calendar.pdf}
   {}
   {}
@@ -697,7 +697,7 @@ access</a>.
   {}
   {\TeX\ consulting and production services}
   {}
-  {112}
+  {112-112}
   {/consultants.html}
   {}
   {}

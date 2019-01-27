@@ -219,7 +219,7 @@ access</a>.
         {}
         {Title page}
         {}
-        {1}
+        {1-1}
         {/TUGboat/tb33-1/titlepage.pdf}
         {}
         {}
@@ -229,7 +229,7 @@ access</a>.
 %        {}
 %        {Editorial information}
 %        {}
-%        {2}
+%        {2-2}
 %        {/TUGboat/!TBIDENT!edit.pdf}
 %        {}
 %        {}
@@ -242,7 +242,7 @@ access</a>.
   {Barbara Beeton}
   {Editorial comments}
   {typography and {\sl TUGboat} news}
-  {3\offset{.1}}
+  {3-3\offset{.1}}
   {/TUGboat/!TBIDENT!beet.pdf}
   {{Don Knuth, reprise};\\
 {An alternate view of \CTAN};\\
@@ -258,7 +258,7 @@ access</a>.
   {Barbara Beeton}
   {Hyphenation exception log}
   {update for missed and incorrect U.S. English hyphenations}
-  {5}
+  {5-5}
   {/TUGboat/!TBIDENT!hyf.pdf}
   {}
   {}
@@ -268,7 +268,7 @@ access</a>.
    {Peter Flynn}
    {Typographers' Inn}
    {titling and centering; beaten into submission; afterthought}
-   {8}
+   {8-8}
    {/TUGboat/!TBIDENT!inn.pdf}
    {}
    {}
@@ -278,7 +278,7 @@ access</a>.
   {Khaled Hosny}
   {The Amiri typeface}
   {development and status of this new Arabic typeface, a revival of the Bulaq Press design}
-  {12}
+  {12-12}
   {/TUGboat/!TBIDENT!hosny.pdf}
   {}
   {}
@@ -288,7 +288,7 @@ access</a>.
   {\LaTeX\ Project Team}
   {\LaTeX3 news, issues 6--7}
   {\LaTeX3 team expands; `big bang'; \LaTeX3 on GitHub; deforming boxes; \TeX-based regex engine;\\xparse improves; galley; relationships between document items}
-  {46}
+  {46-46}
   {/TUGboat/!TBIDENT!l3news.pdf}
   {}
   {}
@@ -298,7 +298,7 @@ access</a>.
   {Steve Peter}
   {Ab epistulis}
   {group membership category; software; conferences; book reviews}
-  {3}
+  {3-3}
   {/TUGboat/!TBIDENT!pres.pdf}
   {}
   {}
@@ -308,7 +308,7 @@ access</a>.
   {Joseph Wright}
   {\TeX{} on Windows: MiK\TeX{} or \TeX{} Live?}
   {quick comparison of the two biggest free \TeX\ distributions available for Windows}
-  {53}
+  {53-53}
   {/TUGboat/!TBIDENT!wright.pdf}
   {}
   {}
@@ -322,7 +322,7 @@ access</a>.
   {Claudio Beccari}
   {The unknown {\it picture} environment}
   {the original, powerful, and simple drawing environment for \LaTeX}
-  {26}
+  {26-26}
   {/TUGboat/!TBIDENT!becc-picture.pdf}
   {}
   {}
@@ -332,7 +332,7 @@ access</a>.
   {Troy Henderson}
   {User-friendly web utilities for generating \LaTeX{} output and MetaPost graphics}
   {online previewers for \LaTeX, MetaPost, and function graphing}
-  {48}
+  {48-48}
   {/TUGboat/!TBIDENT!henderson.pdf}
   {}
   {}
@@ -342,7 +342,7 @@ access</a>.
   {Philip Kime}
   {Biber\Dash{}the next generation backend processor for Bib\LaTeX}
   {advanced sorting, name processing, and much more for bibliographies}
-  {13}
+  {13-13}
   {/TUGboat/!TBIDENT!kime.pdf}
   {}
   {}
@@ -352,7 +352,7 @@ access</a>.
   {Lars Madsen}
   {Avoid \texttt{eqnarray}!}
   {reasons for avoiding and alternatives to the \texttt{eqnarray} environment}
-  {21}
+  {21-21}
   {/TUGboat/!TBIDENT!madsen.pdf}
   {}
   {}
@@ -362,7 +362,7 @@ access</a>.
   {Karl Berry}
   {The treasure chest}
   {new \CTAN\ packages, November 2011--March 2012}
-  {119}
+  {119-119}
   {/TUGboat/!TBIDENT!chest.pdf}
   {}
   {}
@@ -382,7 +382,7 @@ access</a>.
   {Luca Merciadri}
   {Some \LaTeXe\ tricks and tips (\acro{V})}
   {numbering paragraphs; \acro{MATLAB} graphics and code; customizing \texttt{makeindex}}
-  {43}
+  {43-43}
   {/TUGboat/!TBIDENT!merciadri.pdf}
   {}
   {}
@@ -395,7 +395,7 @@ access</a>.
   {Claudio Beccari}
   {\XeLaTeX\ and the \PDF\ archivable format}
   {generating \acro{PDF/A} with \XeLaTeX\ and Ghostscript}
-  {16}
+  {16-16}
   {/TUGboat/!TBIDENT!becc-pdfa.pdf}
   {}
   {}
@@ -405,7 +405,7 @@ access</a>.
   {Brian Beitzel}
   {The {\tt apa6} \LaTeX\ class: Challenges encountered updating to new requirements}
   {implementing the 6th Edition \acro{APA} formatting, especially citations}
-  {33}
+  {33-33}
   {/TUGboat/!TBIDENT!beitzel.pdf}
   {}
   {}
@@ -415,7 +415,7 @@ access</a>.
   {Patrick Gundlach}
   {Generating barcodes with Lua\TeX}
   {a worked-out example of Lua-to-\TeX\ communication}
-  {54}
+  {54-54}
   {/TUGboat/!TBIDENT!gundlach.pdf}
   {}
   {}
@@ -425,7 +425,7 @@ access</a>.
   {Peter Wilson}
   {Glisterings}
   {timelines; parsing a filename}
-  {39}
+  {39-39}
   {/TUGboat/!TBIDENT!glister.pdf}
   {}
   {}
@@ -439,7 +439,7 @@ access</a>.
   {Hans Hagen}
   {\ConTeXt: Updating the code base}
   {the further evolution of \ConTeXt, detailed module by module}
-  {86}
+  {86-86}
   {/TUGboat/!TBIDENT!hagen.pdf}
   {}
   {}
@@ -449,7 +449,7 @@ access</a>.
   {Paul Isambert}
   {OpenType fonts in Lua\TeX}
   {introduction to and exploration of OpenType internals}
-  {59}
+  {59-59}
   {/TUGboat/!TBIDENT!isambert.pdf}
   {<a href="/TUGboat/tb33-1/tb103isambert-supp.zip">Example font</a>.}
   {}
@@ -459,7 +459,7 @@ access</a>.
   {Bogus\l{}aw Jackowski}
   {Computing the area and winding number for a B\'ezier curve}
   {mathematical derivations and Metafont/MetaPost code for these operations}
-  {98}
+  {98-98}
   {/TUGboat/!TBIDENT!jackowski.pdf}
   {}
   {}
@@ -469,7 +469,7 @@ access</a>.
   {Keith Wolcott}
   {Three-dimensional graphics with \acro{PGF}/\TikZ}
   {mathematics and code examples for drawing surfaces of revolution, satellite orbits, sphere intersections}
-  {102}
+  {102-102}
   {/TUGboat/!TBIDENT!wolcott.pdf}
   {<a href="/TUGboat/tb33-1/tb103wolcott.ltx">Article source</a>.}
   {}
@@ -505,7 +505,7 @@ access</a>.
   {}
   {{\sl Die \TeX nische Kom\"odie\/}: Contents of issues 4/2011--1/2012}
   {}
-  {121\offset{.1}}
+  {121-121\offset{.1}}
   {/TUGboat/!TBIDENT!komo.pdf}
   {}
   {}
@@ -515,7 +515,7 @@ access</a>.
   {}
   {{\sl Asian Journal of \TeX\/}: Contents of volumes 4--5 (2010--2011)}
   {}
-  {122}
+  {122-122}
   {/TUGboat/!TBIDENT!ajt.pdf}
   {}
   {}
@@ -526,7 +526,7 @@ access</a>.
   {}
   {{\sl Eutypon\/}: Contents of issue 26--27 (October 2011)}
   {}
-  {121}
+  {121-121}
   {/TUGboat/!TBIDENT!eutypon.pdf}
   {}
   {}
@@ -608,7 +608,7 @@ access</a>.
   {}
   {\acro{TUG} 2012 announcement}
   {}
-  {2}
+  {2-2}
   {/TUGboat/!TBIDENT!tug12.pdf}
   {}
   {}
@@ -618,7 +618,7 @@ access</a>.
   {Bruce Armbruster \aand Jeannie~Howard~Siegman}%person|Tony Siegman
   {In memoriam: Tony Siegman, 1931--2011}
   {}
-  {7}
+  {7-7}
   {/TUGboat/!TBIDENT!siegman.pdf}
   {}
   {}
@@ -628,7 +628,7 @@ access</a>.
   {Karl Berry}
   {Lucida OpenType fonts available from \acro{TUG}}
   {announcement of the new Lucida OpenType font family, including math}
-  {11}
+  {11-11}
   {/TUGboat/!TBIDENT!lucida.pdf}
   {}
   {}
@@ -638,7 +638,7 @@ access</a>.
   {Pavneet Arora}%person|Jean-luc Doumont
   {Book review: \textsl{Trees, maps, and theorems}, by Jean-luc Doumont}
   {review of this book on effective communication}
-  {114}
+  {114-114}
   {/TUGboat/!TBIDENT!reviews-doumont.pdf}
   {}
   {}
@@ -648,7 +648,7 @@ access</a>.
   {Boris Veytsman}%person|David Kadavy
   {Book review: \textsl{Design for hackers}, by David Kadavy}
   {review of this modern introduction to design}
-  {116}
+  {116-116}
   {/TUGboat/!TBIDENT!reviews-kadavy.pdf}
   {}
   {}
@@ -658,7 +658,7 @@ access</a>.
   {David Walden}%person|Donald Knuth
   {Book review: \textsl{Companion to the Papers of~Donald Knuth}}
   {review of this ninth volume, completing the series of Knuth's papers}
-  {118}
+  {118-118}
   {/TUGboat/!TBIDENT!reviews-knuth9-walden.pdf}
   {}
   {}
@@ -668,7 +668,7 @@ access</a>.
   {}
   {\TeX\ consulting and production services}
   {}
-  {124}
+  {124-124}
   {/consultants.html}
   {}
   {}
@@ -678,7 +678,7 @@ access</a>.
   {}
   {Institutional members}
   {}
-  {126}
+  {126-126}
   {/instmem.html}
   {}
   {}
@@ -688,7 +688,7 @@ access</a>.
   {Karl Berry}
   {\tug\ financial statements for 2011}
   {}
-  {126\offset{.1}}
+  {126-126\offset{.1}}
   {/TUGboat/!TBIDENT!treas.pdf}
   {}
   {}
@@ -728,7 +728,7 @@ access</a>.
   {}
   {Calendar}
   {}
-  {128}
+  {128-128}
   {/TUGboat/!TBIDENT!calendar.pdf}
   {}
   {}

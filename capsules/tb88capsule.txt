@@ -198,7 +198,7 @@ member access</a>.
         {}
         {Title page}
         {}
-        {1}
+        {1-1}
         {/TUGboat/tb28-1/titlepage.pdf}
         {}
         {}
@@ -210,7 +210,7 @@ member access</a>.
   {Barbara Beeton}
   {Editorial comments}
   {typography and {\sl TUGboat} news}
-  {3\offset{.1}}
+  {3-3\offset{.1}}
   {/TUGboat/tb28-1/tb88beet.pdf}
   {{Erratum: {\TUB} {\bf 27}:1 ({Euro\TeX} proceedings)};\\
 {{A} new {Korean} {\TeX} {Society}};\\
@@ -223,7 +223,7 @@ member access</a>.
   {Barbara Beeton}
   {How to create a \TeX{} Journal: A personal journey}
   {a look back at \TUB\ experiences since its founding}
-  {29}
+  {29-29}
   {/TUGboat/tb28-1/tb88beet-keynote.pdf}
   {}
   {}
@@ -233,7 +233,7 @@ member access</a>.
   {Karl Berry}
   {From the President}
   {some \acro{TUG} activities and information for 2006}
-  {3}
+  {3-3}
   {/TUGboat/tb28-1/tb88pres.pdf}
   {}
   {}
@@ -243,7 +243,7 @@ member access</a>.
   {Jon Breitenbucher}
   {\LaTeX\ at a liberal arts college}
   {experiences introducing \LaTeX\ in an undergraduate liberal arts setting}
-  {65}
+  {65-65}
   {/TUGboat/tb28-1/tb88breitenbucher.pdf}
   {}
   {}
@@ -253,7 +253,7 @@ member access</a>.
   {Elizabeth Dearborn}
   {\TeX\ and medicine}
   {experiences in self-publishing a medical transcription dictionary with \TeX}
-  {61}
+  {61-61}
   {/TUGboat/tb28-1/tb88dearborn.pdf}
   {}
   {}
@@ -263,7 +263,7 @@ member access</a>.
   {Peter Flom}
   {\LaTeX{} for academics and researchers who (think they) don't need it}
   {advocating \LaTeX\ for scientists and dispelling myths}
-  {126}
+  {126-126}
   {/TUGboat/tb28-1/tb88flom.pdf}
   {}
   {}
@@ -273,7 +273,7 @@ member access</a>.
   {Jim Hef{}feron}
   {\LaTeX\ resources}
   {a sampling of useful documentation, web sites, programs, and packages}
-  {124}
+  {124-124}
   {/TUGboat/tb28-1/tb88heff.pdf}
   {}
   {}
@@ -283,7 +283,7 @@ member access</a>.
   {Troy Henderson}
   {A beginner's guide to MetaPost for creating high-quality graphics}
   {introduction to MetaPost}
-  {84}
+  {84-84}
   {/TUGboat/tb28-1/tb88henderson.pdf}
   {}
   {}
@@ -293,7 +293,7 @@ member access</a>.
   {\LaTeX\CONNECT{}Project\CONNECT{}Team}
   {\LaTeX\ news, issue 17}
   {latest \LaTeX\ release notes: font encodings, graphics drivers, more}
-  {24}
+  {24-24}
   {/TUGboat/tb28-1/tb88ltnews.pdf}
   {}
   {}
@@ -303,7 +303,7 @@ member access</a>.
   {Boris Veytsman}
   {Design of presentations: Notes on principles and \LaTeX{} implementation}
   {writing effective presentations and implementing them in \LaTeX}
-  {70}
+  {70-70}
   {/TUGboat/tb28-1/tb88veytsman-presentations.pdf}
   {}
   {}
@@ -313,7 +313,7 @@ member access</a>.
   {David Walden}
   {A lifetime as an amateur compositor}
   {productivity with \LaTeX\ and typesetting experiences along the way}
-  {49}
+  {49-49}
   {/TUGboat/tb28-1/tb88walden.pdf}
   {}
   {}
@@ -327,7 +327,7 @@ member access</a>.
   {Kaveh Bazargan and CV Radhakrishnan}
   {Removing vertical stretch\Dash mimicking traditional typesetting with \TeX}
   {a method for typesetting on a grid, including double columns and math}
-  {133}
+  {133-133}
   {/TUGboat/tb28-1/tb88bazargan.pdf}
   {}
   {}
@@ -337,7 +337,7 @@ member access</a>.
   {Federico Garcia}
   {Hypertext capabilities with pdf\/\LaTeX}
   {introduction to the hyperref package, links, bookmarks, and more}
-  {129}
+  {129-129}
   {/TUGboat/tb28-1/tb88garcia.pdf}
   {}
   {}
@@ -347,7 +347,7 @@ member access</a>.
   {Mark LaPlante}
   {The treasure chest}
   {selected new \CTAN\ packages in 2006}
-  {15}
+  {15-15}
   {/TUGboat/tb28-1/tb88chest.pdf}
   {}
   {}
@@ -357,7 +357,7 @@ member access</a>.
   {Andrew Mertz and William Slough}
   {Graphics with \acro{PGF} and Ti{\it k}Z}
   {graduated examples of graphics within \LaTeX\ using a MetaPost-like syntax}
-  {91}
+  {91-91}
   {/TUGboat/tb28-1/tb88mertz.pdf}
   {}
   {}
@@ -367,7 +367,7 @@ member access</a>.
   {Ignacio Llopis Tortosa and Mar{\'\i}a Jos{\'e} Castro~Bleda}
   {paper\TeX: Creating newspapers using \LaTeXe}
   {automatically generating a PDF newspaper from external sources}
-  {20}
+  {20-20}
   {/TUGboat/tb28-1/tb88tortosa.pdf}
   {}
   {}
@@ -377,7 +377,7 @@ member access</a>.
   {Boris Veytsman and Maria Shmilevich}
   {Automatic report generation with Web, \TeX{} and \acro{SQL}}
   {creating high-quality project reports while minimizing overhead}
-  {77}
+  {77-77}
   {/TUGboat/tb28-1/tb88veytsman-report.pdf}
   {}
   {}
@@ -391,7 +391,7 @@ member access</a>.
   {Peter Flynn}
   {Rolling your own Document Class: Using \LaTeX{} to keep away from the Dark Side}
   {}
-  {110}
+  {110-110}
   {/TUGboat/tb28-1/tb88flynn.pdf}
   {}
   {}
@@ -401,7 +401,7 @@ member access</a>.
   {Oleg Parashchenko}
   {\TeX{}\acro{ML}: Resurrecting \TeX{} in the \acro{XML} world}
   {transforming \acro{XML} input syntax through \TeX{} to \acro{PDF}}
-  {5}
+  {5-5}
   {/TUGboat/tb28-1/tb88parashchenko.pdf}
   {}
   {}
@@ -411,7 +411,7 @@ member access</a>.
   {Peter Wilson}
   {Glisterings}
   {stringing along; loops}
-  {12}
+  {12-12}
   {/TUGboat/tb28-1/tb88glister.pdf}
   {}
   {}
@@ -421,7 +421,7 @@ member access</a>.
   {Boris Veytsman and Leila Akhmadeeva}
   {Drawing medical pedigree trees with \TeX{} and PSTricks}
   {typesetting medical pedigrees graphically}
-  {100}
+  {100-100}
   {/TUGboat/tb28-1/tb88veytsman-pedigree.pdf}
   {}
   {}
@@ -445,7 +445,7 @@ member access</a>.
   {Donald Knuth}
   {\TeX's infinite glue is projective}
   {note about negative infinite glue}
-  {4}
+  {4-4}
   {/TUGboat/tb28-1/tb88knut.pdf}
   {}
   {}
@@ -455,7 +455,7 @@ member access</a>.
   {Bob Neveln and Bob Alps}
   {Writing and checking complete proofs in \TeX}
   {verifying formal mathematical proofs with \TeX\ and Python}
-  {80}
+  {80-80}
   {/TUGboat/tb28-1/tb88neveln.pdf}
   {}
   {}
@@ -469,7 +469,7 @@ member access</a>.
   {Barbara Beeton and Idris Hamid}
   {Oriental \TeX: A new direction in scholarly complex-script typesetting}
   {}
-  {11}
+  {11-11}
   {/TUGboat/tb28-1/tb88hamid.pdf}
   {}
   {}
@@ -479,7 +479,7 @@ member access</a>.
   {}
   {Conference information}
   {}
-  {26}
+  {26-26}
   {/TUGboat/tb28-1/tb88confinfo.pdf}
   {}
   {}
@@ -489,7 +489,7 @@ member access</a>.
   {Adams, Garcia, H\"oppner, Hummel, Moye, Peter, Wetmore}
   {Prac'\TeX{} 2006 abstracts}
   {}
-  {137}
+  {137-137}
   {/TUGboat/tb28-1/tb88abstracts.pdf}
   {}
   {}
@@ -499,7 +499,7 @@ member access</a>.
   {}
   {Calendar}
   {}
-  {138}
+  {138-138}
   {/TUGboat/tb28-1/tb88calendar.pdf}
   {}
   {}
@@ -509,7 +509,7 @@ member access</a>.
   {}
   {\acro{TUG} 2007 announcement}
   {}
-  {139}
+  {139-139}
   {/TUGboat/tb28-1/tb88tug07.pdf}
   {}
   {}
@@ -519,7 +519,7 @@ member access</a>.
   {}
   {EuroBacho\TeX\ 2007 announcement}
   {}
-  {140}
+  {140-140}
   {/TUGboat/tb28-1/tb88eurotex07.pdf}
   {}
   {}
@@ -529,7 +529,7 @@ member access</a>.
   {Steve Peter}
   {TUG 2007 election report}
   {}
-  {141}
+  {141-141}
   {/TUGboat/tb28-1/tb88elec.pdf}
   {}
   {}
@@ -539,7 +539,7 @@ member access</a>.
   {David Walden}
   {Financial statements for 2006}
   {}
-  {145}
+  {145-145}
   {/TUGboat/tb28-1/tb88treas.pdf}
   {}
   {}
@@ -549,7 +549,7 @@ member access</a>.
   {}
   {Institutional members}
   {}
-  {146}
+  {146-146}
   {/instmem.html}
   {}
   {}
@@ -559,7 +559,7 @@ member access</a>.
   {}
   {\acro{TUG} membership form}
   {}
-  {147}
+  {147-147}
   {/join.html}
   {}
   {}
@@ -569,7 +569,7 @@ member access</a>.
   {}
   {\TeX\ consulting and production services}
   {}
-  {148}
+  {148-148}
   {/consultants.html}
   {}
   {}

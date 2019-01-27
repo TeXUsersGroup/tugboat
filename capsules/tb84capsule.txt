@@ -186,7 +186,7 @@ other TeX projects.
         {}
         {Title page}
         {}
-        {105}
+        {105-105}
         {/TUGboat/tb26-3/titlepage.pdf}
 
 \category{Introductory}
@@ -196,7 +196,7 @@ other TeX projects.
   {Barbara Beeton}%person|Mimi Burbank and Brian \NMHamiltonKelly
   {Editorial comments}
   {typography and {\sl TUGboat} news}
-  {180}
+  {180-180}
   {/TUGboat/tb26-3/tb84beet.pdf}
   {Mimi Burbank retires\\
 Brian $\{$Hamilton Kelly$\}$, 1945--2005\\
@@ -213,7 +213,7 @@ Letters in stone}
   {Karl Berry}
   {From the President}
   {\acro{TUG} activities and information for 2005}
-  {179}
+  {179-179}
   {/TUGboat/tb26-3/tb84pres.pdf}
   {}
   {}
@@ -223,7 +223,7 @@ Letters in stone}
   {Peter Flynn}
   {Typographers' Inn}
   {superscripted ordinals, e-books et al., report layouts}
-  {196}
+  {196-196}
   {/TUGboat/tb26-3/tb84inn.pdf}
   {}
   {}
@@ -233,7 +233,7 @@ Letters in stone}
   {Enrico Gregorio}
   {Horrors in \LaTeX: How to misuse \LaTeX\ and make a \emph{copy editor} unhappy}
   {examples of some egregious \LaTeX\ errors, and corrections}
-  {273}
+  {273-273}
   {/TUGboat/tb26-3/tb84gregorio.pdf}
   {}
   {}
@@ -243,7 +243,7 @@ Letters in stone}
   {Jim Hef{}feron}
   {Minutes in less than hours: Using \LaTeX{} resources}
   {using existing packages as building blocks for a new class}
-  {188}
+  {188-188}
   {/TUGboat/tb26-3/tb84heff.pdf}
   {}
   {}
@@ -253,7 +253,7 @@ Letters in stone}
   {Steve Peter}
   {\cs{starttext}: Swelled rules and MetaPost}
   {introduction to using MetaPost in \ConTeXt}
-  {193}
+  {193-193}
   {/TUGboat/tb26-3/tb84peter.pdf}
   {}
   {}
@@ -263,7 +263,7 @@ Letters in stone}
   {Gianluca Pignalberi}%person|Donald Knuth
   {Interview with Donald E.~Knuth}
   {reprinted from the {\sl Free Software Magazine}}
-  {183}
+  {183-183}
   {/TUGboat/tb26-3/tb84knut.pdf}
   {}
   {}
@@ -273,7 +273,7 @@ Letters in stone}
   {Norbert Preining}
   {\TeX\ Live for Debian}
   {The \TeX\ Live software distribution is now available as Debian packages}
-  {241}
+  {241-241}
   {/TUGboat/tb26-3/tb84preining.pdf}
   {}
   {}
@@ -283,7 +283,7 @@ Letters in stone}
   {Herbert Schulz}
   {The Mac\TeX\ distribution}
   {Overview of a new easy-to-install distribution for \MacOSX, based on gw\TeX}
-  {239}
+  {239-239}
   {/TUGboat/tb26-3/tb84schulz.pdf}
   {}
   {}
@@ -293,7 +293,7 @@ Letters in stone}
   {Andrzej Tomaszewski}
   {Implementing editors' ideas\Dash lots of fun, sometimes even more trouble}
   {communication problems in the world of printing; reprinted from Bacho\TeX\ 2005}
-  {186}
+  {186-186}
   {/TUGboat/tb26-3/tb84tomaszewski.pdf}
   {}
   {}
@@ -307,7 +307,7 @@ Letters in stone}
   {Michael Barr}
   {\pkgname{Diagxy}, a Lego-like diagram package}
   {a generic package for building diagrams from combining blocks}
-  {246}
+  {246-246}
   {/TUGboat/tb26-3/tb84barr.pdf}
   {}
   {}
@@ -317,7 +317,7 @@ Letters in stone}
   {Troy Henderson}
   {Embedding fonts in MetaPost output}
   {making standalone eps files from MetaPost}
-  {250}
+  {250-250}
   {/TUGboat/tb26-3/tb84henderson.pdf}
   {}
   {}
@@ -327,7 +327,7 @@ Letters in stone}
   {Karl Berry \aand Oleg Katsitadze}
   {Eplain 3: Expanded plain \TeX}
   {hyperlinks, graphics, color, and other user-level features for plain \TeX}
-  {280}
+  {280-280}
   {/TUGboat/tb26-3/tb84katsi.pdf}
   {}
   {}
@@ -337,7 +337,7 @@ Letters in stone}
   {Mark LaPlante}
   {The treasure chest}
   {new and updated \CTAN\ packages in 2005}
-  {264}
+  {264-264}
   {/TUGboat/tb26-3/tb84chest.pdf}
   {}
   {}
@@ -347,7 +347,7 @@ Letters in stone}
   {Will Robertson}
   {Advanced font features with \XeTeX\Dash the \pkgname{fontspec} package}
   {accessing built-in \MacOSX\ fonts from \LaTeX}
-  {215}
+  {215-215}
   {/TUGboat/tb26-3/tb84robertson.pdf}
   {}
   {}
@@ -357,7 +357,7 @@ Letters in stone}
   {Ioannis Vamvakas \aand Panagiotis Kotopoulis}
   {ByZ\LaTeX: A package for typesetting ``Byzantine'' music}
   {\MF\ fonts, a \LaTeX\ package, and a historical introduction}
-  {224}
+  {224-224}
   {/TUGboat/tb26-3/tb84vamvakas.pdf}
   {}
   {}
@@ -368,7 +368,7 @@ Letters in stone}
   {Gerben Wierda}
   {i-Installer: The evolution of a \TeX\ install on \MacOSX}
   {past, present, and future of i-Installer and the associated gw\TeX\ (re)distribution}
-  {233}
+  {233-233}
   {/TUGboat/tb26-3/tb84wierda.pdf}
   {}
   {}
@@ -379,7 +379,7 @@ Letters in stone}
   {Peter Wilson}
   {The alphabet tree}
   {survey of writing systems from Sumeria to the present, profusely illustrated}
-  {199}
+  {199-199}
   {/TUGboat/tb26-3/tb84wilson.pdf}
   {}
   {}
@@ -393,7 +393,7 @@ Letters in stone}
   {Hendri Adriaens \aand Chris Ellison}
   {\pkgname{powerdot}\Dash making presentations with \LaTeX}
   {introduction to and implementation of a new class for making slides}
-  {268}
+  {268-268}
   {/TUGboat/tb26-3/tb84adriaens.pdf}
   {}
   {}
@@ -403,7 +403,7 @@ Letters in stone}
   {Peter Wilson}
   {Glisterings}
   {empty arguments; clear to even page; capitalizing first characters}
-  {253}
+  {253-253}
   {/TUGboat/tb26-3/tb84glister.pdf}
   {}
   {}
@@ -417,7 +417,7 @@ Letters in stone}
   {Hans Hagen}
   {Hyphenation patterns in \ConTeXt}
   {languages and hyphenation files, especially in \ConTeXt}
-  {243}
+  {243-243}
   {/TUGboat/tb26-3/tb84hagen.pdf}
   {}
   {}
@@ -427,7 +427,7 @@ Letters in stone}
   {}
   {Pearls of \TeX\ programming}
   {an array of short macros (some easy) with useful applications}
-  {256}
+  {256-256}
   {/TUGboat/tb26-3/tb84pearls.pdf}
   {Barbara Beeton: New symbols from old\\
 Karl Berry: Forcing page or column break in the midst of a paragraph\\
@@ -456,7 +456,7 @@ Philip Taylor: The Iterator.}
   {}
   {{\sl \TeX{}emplares\/}: Contents of issue 7 (2005)}
   {}
-  {287}
+  {287-287}
   {/TUGboat/tb26-3/tb84texemp.pdf}
   {}
   {}
@@ -466,7 +466,7 @@ Philip Taylor: The Iterator.}
   {}
   {{\sl Zpravodaj\/}: Contents of issues 14(3-4), 15(1), 15(2) (2004--05)}
   {}
-  {287\offset{.1}}
+  {287-287\offset{.1}}
   {/TUGboat/tb26-3/tb84zprav.pdf}
   {}
   {}
@@ -476,7 +476,7 @@ Philip Taylor: The Iterator.}
   {}
   {{\sl Les Cahiers GUTenberg\/}: Contents of double issue 44--45 (November 2004)}
   {}
-  {289}
+  {289-289}
   {/TUGboat/tb26-3/tb84cahi.pdf}
   {}
   {}
@@ -486,7 +486,7 @@ Philip Taylor: The Iterator.}
   {}
   {{\sl MAPS\/}: Contents of issue 32 (2005)}
   {}
-  {290}
+  {290-290}
   {/TUGboat/tb26-3/tb84maps.pdf}
   {}
   {}
@@ -496,7 +496,7 @@ Philip Taylor: The Iterator.}
   {}
   {{\sl The Prac\TeX\ Journal\/}: Contents of issues 2005-1--2005-4}
   {}
-  {292}
+  {292-292}
   {/TUGboat/tb26-3/tb84pracjourn.pdf}
   {}
   {}
@@ -520,7 +520,7 @@ Philip Taylor: The Iterator.}
   {Robin Laakso}
   {Financial statements for 2005}
   {}
-  {298}
+  {298-298}
   {/TUGboat/tb26-3/tb84treas.pdf}
   {}
   {}
@@ -530,7 +530,7 @@ Philip Taylor: The Iterator.}
   {}
   {Calendar}
   {}
-  {297}
+  {297-297}
   {/TUGboat/tb26-3/tb84calendar.pdf}
   {}
   {}
@@ -550,7 +550,7 @@ Philip Taylor: The Iterator.}
   {}
   {\TeX\ consulting and production services}
   {}
-  {300}
+  {300-300}
   {/TUGboat/tb26-3/consultants.pdf}
   {}
   {}

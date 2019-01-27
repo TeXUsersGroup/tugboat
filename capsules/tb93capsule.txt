@@ -219,7 +219,7 @@ access</a>.
         {}
         {Title page}
         {}
-        {349}
+        {349-349}
         {/TUGboat/tb29-3/titlepage.pdf}
         {}
         {}
@@ -232,7 +232,7 @@ access</a>.
   {Dave Crossland}
   {Why didn't \MF\ catch on?}
   {personality types, \MF's interface, and font vs.\ typeface design}
-  {418}
+  {418-418}
   {/TUGboat/!TBIDENT!crossland.pdf}
   {}
   {}
@@ -242,7 +242,7 @@ access</a>.
   {Peter Flynn}
   {TUG 2008: \TeX's 30th birthday}
   {general review of the TUG 2008 conference}
-  {352}
+  {352-352}
   {/TUGboat/!TBIDENT!flynn.pdf}
   {}
   {<a href="/TUGboat/tb29-3/tb93photos.pdf">A selection of photos.</a>}
@@ -252,7 +252,7 @@ access</a>.
   {Manjusha Joshi}
   {Smart ways of drawing \acro{PST}ricks\ figures}
   {using \acro{GUI} programs with \acro{PST}ricks for geometric figures}
-  {444}
+  {444-444}
   {/TUGboat/!TBIDENT!joshi-pstricks.pdf}
   {}
   {}
@@ -262,7 +262,7 @@ access</a>.
   {Jonathan Kew}
   {\TeX{}works: Lowering the barrier to entry}
   {report on a new \TeX\ front end focused on ease-of-use and simplicity}
-  {362}
+  {362-362}
   {/TUGboat/!TBIDENT!kew.pdf}
   {}
   {}
@@ -276,7 +276,7 @@ access</a>.
   {Taco Hoekwater}
   {MetaPost developments: \acro{MP}lib project report}
   {translation of MetaPost functionality to a re-usable library}
-  {380}
+  {380-380}
   {/TUGboat/!TBIDENT!hoekwater.pdf}
   {}
   {}
@@ -286,7 +286,7 @@ access</a>.
   {Manjusha Joshi}
   {Data mining: Role of \TeX\ files}
   {extracting feature words from \TeX\ files to improve searching}
-  {480}
+  {480-480}
   {/TUGboat/!TBIDENT!joshi-mining.pdf}
   {}
   {}
@@ -296,7 +296,7 @@ access</a>.
   {Niall Mansfield}
   {How to develop your own document class\Dash our experience}
   {practical techniques for creating custom classes and styles}
-  {356}
+  {356-356}
   {/TUGboat/!TBIDENT!mansfield.pdf}
   {}
   {}
@@ -306,7 +306,7 @@ access</a>.
   {Joe \Mc{}Cool}
   {A newbie's experiences with Lilypond, Lilypond-book, \LaTeX\ and Perl}
   {producing nicely typeset traditional Irish music}
-  {376}
+  {376-376}
   {/TUGboat/!TBIDENT!mccool.pdf}
   {}
   {}
@@ -316,7 +316,7 @@ access</a>.
   {Karel P\'{\i}\v{s}ka}
   {Creating cuneiform fonts with MetaType1 and FontForge}
   {development process and results for a cuneiform font collection}
-  {421}
+  {421-421}
   {/TUGboat/!TBIDENT!piska.pdf}
   {}
   {}
@@ -326,7 +326,7 @@ access</a>.
   {Chris Rowley}
   {Vistas for \TeX{}: Liberate the typography! (Part~I)}
   {extracting core \TeX\ typesetting functionality for reuse}
-  {413}
+  {413-413}
   {/TUGboat/!TBIDENT!rowley.pdf}
   {}
   {}
@@ -336,7 +336,7 @@ access</a>.
   {Joachim Schrod}
   {Xindy revisited: Multi-lingual index creation for the \UTF-8 age}
   {introduction to and rationale for Xindy's main features}
-  {372}
+  {372-372}
   {/TUGboat/!TBIDENT!schrod.pdf}
   {}
   {}
@@ -350,7 +350,7 @@ access</a>.
   {Hans Hagen}
   {The \TeX--Lua mix}
   {introduction to the combination of \TeX\ and the embedded scripting language Lua}
-  {383}
+  {383-383}
   {/TUGboat/!TBIDENT!hagen-mix.pdf}
   {}
   {}
@@ -360,7 +360,7 @@ access</a>.
   {J\'er\^ome Laurens}
   {Direct and reverse synchronization with Sync\TeX}
   {synchronizing between \TeX\ input and output via modifying the base engine}
-  {365}
+  {365-365}
   {/TUGboat/!TBIDENT!laurens.pdf}
   {}
   {}
@@ -370,7 +370,7 @@ access</a>.
   {Mojca Miklavec \aand Arthur Reutenauer}
   {Putting the Cork back in the bottle\Dash Improving Unicode support in \TeX{}}
   {recasting hyphenation patterns to support both \UTF-8 and 8-bit encodings}
-  {454}
+  {454-454}
   {/TUGboat/!TBIDENT!miklavec.pdf}
   {}
   {}
@@ -380,7 +380,7 @@ access</a>.
   {Ross Moore}
   {Advanced features for publishing mathematics, in \PDF\ and on the Web}
   {using \PDF\ and JavaScript to improve mathematics presentation and navigation}
-  {464}
+  {464-464}
   {/TUGboat/!TBIDENT!moore.pdf}
   {}
   {}
@@ -390,7 +390,7 @@ access</a>.
   {Kriszti\'an P\'ocza \cand Mih\'aly Bicz\'o \aand Zolt\'an Porkol\'ab}
   {docx2tex: Word 2007 to \TeX}
   {free \XML-based conversion software from Word 2007 (\acro{OOXML}) to \TeX}
-  {392}
+  {392-392}
   {/TUGboat/!TBIDENT!pocza.pdf}
   {}
   {}
@@ -400,7 +400,7 @@ access</a>.
   {Ameer Sherif \aand Hossam Fahmy}
   {Meta-designing parameterized Arabic fonts for AlQalam}
   {using \MF\ to render Arabic with calligrapher-level quality}
-  {435}
+  {435-435}
   {/TUGboat/!TBIDENT!sherif.pdf}
   {}
   {}
@@ -410,7 +410,7 @@ access</a>.
   {Ulrik Vieth}
   {Do we need a `Cork' math font encoding?}
   {review of OpenType and Unicode math features, subsuming 8-bit encodings}
-  {426}
+  {426-426}
   {/TUGboat/!TBIDENT!vieth.pdf}
   {}
   {}
@@ -424,7 +424,7 @@ access</a>.
   {Hans Hagen}
   {The Lua\TeX\ way: \cs{framed}}
   {generalizing paragraph manipulation in Lua\TeX}
-  {462}
+  {462-462}
   {/TUGboat/!TBIDENT!hagen-framed.pdf}
   {}
   {}
@@ -434,7 +434,7 @@ access</a>.
   {Hans Hagen}
   {The MetaPost library and Lua\TeX}
   {using the new standalone MetaPost library from Lua\TeX\ and \ConTeXt}
-  {446}
+  {446-446}
   {/TUGboat/!TBIDENT!hagen-mplib.pdf}
   {}
   {}
@@ -444,7 +444,7 @@ access</a>.
   {Jean-Michel Hufflen}
   {Languages for bibliography styles}
   {language comparison of bst, nbst, Perl, \acro{DSSSL}, \acro{XSLT}, etc.}
-  {401}
+  {401-401}
   {/TUGboat/!TBIDENT!hufflen.pdf}
   {}
   {}
@@ -454,7 +454,7 @@ access</a>.
   {John Plaice \cand Blanca Mancilla \aand Chris Rowley}
   {Multidimensional text}
   {a theoretical underpinning of documents as generalized tuples}
-  {474}
+  {474-474}
   {/TUGboat/!TBIDENT!plaice.pdf}
   {}
   {}
@@ -464,7 +464,7 @@ access</a>.
   {Stanislav Jan \v{S}arman}
   {Writing Gregg Shorthand with \MF{} and \LaTeX{}}
   {an online system converting English text to Gregg shorthand}
-  {458}
+  {458-458}
   {/TUGboat/!TBIDENT!sarman.pdf}
   {}
   {}
@@ -478,7 +478,7 @@ access</a>.
   {}
   {Conference information}
   {}
-  {350}
+  {350-350}
   {/TUGboat/!TBIDENT!confinfo.pdf}
   {}
   {participants, sponsors, thanks}
@@ -488,7 +488,7 @@ access</a>.
   {}
   {Conference program}
   {}
-  {351}
+  {351-351}
   {/TUGboat/!TBIDENT!program.pdf}
   {}
   {}
@@ -498,7 +498,7 @@ access</a>.
   {Fine, Hagen, Henkel, Hoekwater, H\o{}gholm, K\"uster, Mancilla et al., Mittelbach, Peter,\\Rahilly et al., Rhatigan, Veytsman \& Akhmadeeva, Veytsman}
   {TUG 2008 abstracts}
   {}
-  {482}
+  {482-482}
   {/TUGboat/!TBIDENT!abstracts.pdf}
   {}
   {<a href="http://river-valley.zeeba.tv/conferences/tug-2008/">Some presentations available as video.</a>}
@@ -518,7 +518,7 @@ access</a>.
   {}
   {Calendar}
   {}
-  {485}
+  {485-485}
   {/TUGboat/!TBIDENT!calendar.pdf}
   {}
   {}
@@ -528,7 +528,7 @@ access</a>.
   {}
   {\acro{TUG} 2009 announcement}
   {}
-  {486}
+  {486-486}
   {/TUGboat/!TBIDENT!tug09.pdf}
   {}
   {}
@@ -538,7 +538,7 @@ access</a>.
   {}
   {\TeX\ consulting and production services}
   {}
-  {487}
+  {487-487}
   {/consultants.html}
   {}
   {}
@@ -548,7 +548,7 @@ access</a>.
   {}
   {Institutional members}
   {}
-  {484}
+  {484-484}
   {/instmem.html}
   {}
   {}
@@ -558,7 +558,7 @@ access</a>.
   {}
   {\acro{TUG} 2009 election}
   {}
-  {488}
+  {488-488}
   {/election/}
   {}
   {}

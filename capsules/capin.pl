@@ -261,6 +261,12 @@ sub parse_one_capsule {
     $ret{$fieldname} = &normalize_whitespace ($f); 
     &ddebug ("   field $fieldname='$f'");
     
+    if ($fieldname eq "pageno" && $ret{"pageno"} !~ /^[civx]|^\\|-/) {
+      # don't worry about covers or roman numerals, but we want ranges
+      # for all nomal items.
+      warn "pageno not a range: $ret{pageno}\n"
+    }
+      
     # next value in returned list is the stuff between the } of
     # the braced arg we just did and the { of the arg to come. handle it.
     $i++; 

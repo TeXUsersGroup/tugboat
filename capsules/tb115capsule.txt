@@ -269,7 +269,7 @@ access</a>.
         {}
         {Title page}
         {}
-        {1}
+        {1-1}
         {/TUGboat/tb37-1/titlepage.pdf}
         {}
         {}
@@ -279,7 +279,7 @@ access</a>.
         {}
         {Editorial information}
         {}
-        {2}
+        {2-2}
         {/TUGboat/!TBIDENT!edit.pdf}
         {}
         {}
@@ -361,7 +361,7 @@ access</a>.
   {Karl Berry}
   {Production notes}
   {font support from Bob Tennent and Michael Sharpe, and the online font catalogue}
-  {98\offset{.1}}
+  {98-98\offset{.1}}
   {/TUGboat/!TBIDENT!prod.pdf}
   {}
   {}
@@ -381,7 +381,7 @@ access</a>.
   {Alan Braslau \aand Hans Hagen}
   {MetaPost arrowhead variants}
   {adding \code{ahvariant} and \code{ahdimple} for other arrowhead styles}
-  {66\offset{.1}}
+  {66-66\offset{.1}}
   {/TUGboat/!TBIDENT!braslau.pdf}
   {}
   {}
@@ -411,7 +411,7 @@ access</a>.
   {Khaled Hosny}
   {The libertine gets mathematical}
   {new OpenType font family Libertinus, including math, based on Linux Libertine}
-  {12}
+  {12-12}
   {/TUGboat/!TBIDENT!hosny.pdf}
   {}
   {}
@@ -441,7 +441,7 @@ access</a>.
   {\LaTeX\ Project Team}
   {\LaTeX\ news, issue 25, March 2016}
   {Lua\TeX; Documentation checksums; Updates to \code{inputenc}; Updates in Tools; \texttt{amsmath}; Related updates}
-  {15}
+  {15-15}
   {/TUGboat/!TBIDENT!ltnews25.pdf}
   {}
   {}
@@ -547,7 +547,7 @@ access</a>.
   {Hans Hagen}
   {Hyphenation languages in Lua\TeX\ 0.90}
   {generalizing \TeX82{} hyphenation discretionaries, \cs{lccode}, etc.}
-  {66\offset{.2}}
+  {66-66\offset{.2}}
   {/TUGboat/!TBIDENT!hagen-lang.pdf}
   {}
   {}
@@ -580,7 +580,7 @@ access</a>.
   {}
   {{\sl Die \TeX nische Kom\"odie\/}: Contents of issue 1/2016}
   {}
-  {98\offset{.2}}
+  {98-98\offset{.2}}
   {/TUGboat/!TBIDENT!komo.pdf}
   {}
   {}
@@ -590,7 +590,7 @@ access</a>.
   {}
   {{\sl \acro{MAPS}\/}: Contents of issue 46 (2015)}
   {}
-  {99}
+  {99-99}
   {/TUGboat/!TBIDENT!maps.pdf}
   {}
   {}
@@ -724,7 +724,7 @@ access</a>.
   {Joachim Lammarsch \aand Marion Lammarsch}
   {Peter Breitenlohner, 1940--2015}
   {}
-  {5}
+  {5-5}
   {/TUGboat/!TBIDENT!breitenlohner.pdf}
   {}
   {}
@@ -734,7 +734,7 @@ access</a>.
   {Jerzy Ludwichowski}
   {\acro{AT}yp\acro{I} 2016 with \acro{GUST} participating}
   {}
-  {9}
+  {9-9}
   {/TUGboat/!TBIDENT!ludwichowski.pdf}
   {}
   {}
@@ -764,7 +764,7 @@ access</a>.
   {Charles Thomas}%person|Vincent Lozano
   {\textsl{Tout ce que vous avez toujours voulu savoir sur \LaTeX\ {\dots}\ by Vincent Lozano}}
   {review of this introductory and intermediate book in French}
-  {93}
+  {93-93}
   {/TUGboat/!TBIDENT!reviews-lozano.pdf}
   {}
   {}
@@ -857,7 +857,7 @@ access</a>.
   {}
   {Institutional members}
   {}
-  {100}
+  {100-100}
   {/instmem.html}
   {}
   {}
@@ -867,7 +867,7 @@ access</a>.
   {Klaus H\"oppner}
   {\tug\ financial statements for 2015}
   {}
-  {101}
+  {101-101}
   {/TUGboat/!TBIDENT!treas.pdf}
   {}
   {}
@@ -887,7 +887,7 @@ access</a>.
   {}
   {\TeX\ consulting and production services}
   {}
-  {102}
+  {102-102}
   {/consultants.html}
   {}
   {}
@@ -907,7 +907,7 @@ access</a>.
   {}
   {Calendar}
   {}
-  {103}
+  {103-103}
   {/TUGboat/!TBIDENT!calendar.pdf}
   {}
   {}
@@ -917,7 +917,7 @@ access</a>.
   {}
   {CTAN}
   {}
-  {104}
+  {104-104}
   {/TUGboat/!TBIDENT!ctan.pdf}
   {}
   {}
