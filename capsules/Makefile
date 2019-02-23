@@ -18,7 +18,7 @@ time = time -f "time:%e"
 default check: one #all
 
 authors:
-	qqq
+	xxx
 
 testiss = 102
 lastiss = 123

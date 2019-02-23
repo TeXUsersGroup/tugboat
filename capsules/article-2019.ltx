@@ -42,8 +42,9 @@
 This article discusses updates to the data and code for creating the
 online \TUB\ \HTML\ files which are automatically generated: the
 per-issue tables of contents and the accumulated lists across all issues
-of authors, categories, and titles. All source files are available from
-\url{https://tug.org/TUGboat}, and are released to the public domain.
+of authors, categories, and titles. All source files, both data and
+code, are available from \url{https://tug.org/TUGboat}, and are released
+to the public domain.
 \end{abstract}
 
 \section{Introduction}
@@ -99,7 +100,7 @@ Both the old implementation and the new are written in Perl, though they
 do not share any code. I chose Perl simply because it is the scripting
 language in which I am most comfortable writing nowadays. There was no
 need to use a compiled language; the total amount of data is small by
-modern standards. Readability of maintainability of the code was far
+modern standards. Readability and maintainability of the code are far
 more important than efficiency.
 
 I wrote the new implementation as a straightforward, if perhaps
@@ -138,21 +139,21 @@ had a reasonably simple interface, and (b)~it could return the
 non-balanced text between arguments, which was crucial for our format,
 since we use formatted comments as directives with additional
 information for the \code{lists*} files\Dash as seen above with the
-\code{\%add|...} extra category. (Only three directives have been needed
+\code{\%add|...} extra category. Only three directives have been needed
 so far: to add and replace categories, and to add authors. They are
-crucial in making the accumulated lists include all the useful
-information.)
+crucial for making the accumulated lists include all the useful
+information.
 
-Each of the capsules turns into a Perl hash (associative array), and
-each issue is another hash, including pointers to all its capsules, and
-so on. In general, the amount of data is so small that memory usage was
-a non-issue.
+Each capsule turns into a Perl hash (associative array), and each issue
+is another hash, including pointers to all its capsules, and so on. In
+general, the amount of data is so small that memory usage was a
+non-issue.
 
 Perhaps it would be a better general approach to completely reformat the
-\TeX\ source into a non-\TeX\ (\acro{YAML}, for instance) data file and
+\TeX\ source into a non-\TeX\ format (\acro{YAML}, for instance) and
 then parse that; and perhaps some future \TUB\ worker will feel inspired
-to do that. (It would not be especially hard to have the current
-implementation output such a conversion as a starting point.) I merely
+to do that. It would not be especially hard to have the current
+implementation output such a conversion as a starting point. I merely
 chose to keep the process more or less as it has been.
 
 \section{Cleaning up capsule sources and output}
@@ -215,7 +216,7 @@ Max D&iacute;az
 \end{verbatim}
 The left-justified line shows the name as it should be shown, and
 following indented lines show alternate names as they are found. We
-unify categories, and names, as shown here.
+unify categories and names, as shown here.
 
 The D\'\i{}az example also shows that we do unifications after the
 translation to \HTML, so both the canonical name and the alternates are
@@ -241,7 +242,7 @@ above), the second element is used for both plain text and \HTML.
 \subsection{lists-regexps.txt}
 
 For \code{lists-regexps.txt}, the general form is similar to
-\code{lists-translations.txt}, with a left-hand side and right-side side
+\code{lists-translations.txt}, with a left-hand side and right-hand side
 separated by the same \code{||} delimiter. But here, the lhs is a
 regular expression, and the rhs is a replacement expression:
 
@@ -259,19 +260,20 @@ throughout the capsule sources.
 The \code{.*?} construct in the left hand side may be unfamiliar; this
 is merely a convenience meaning a ``non-greedy'' match\Dash any
 characters up until the first following right brace (the \verb|\}| means
-a literal right brace character). \code{.*} without the {?} would match
+a literal right brace character). A \code{.*} without the \code{?}\ would match
 until the \emph{last} following right brace.
 
 \ddanger On second glance, what also may seem unusual is the rhs being
-enclosed in double quotes, \code{"..."}, specifying a Perl string. Why?
-Because, ultimately, this is going to turn into a Perl substitution,
-\code{s/\meta{lhs}/\meta{rhs}/g} (all substitutions specified here are
-done globally), but initially the lhs and rhs have to be stored in
-variables\Dash in other words, string values. But we don't want to
-evaluate these strings when they are read from the \code{lists-regexps}
-file; the \code{\$1} in the rhs needs to refer to what is matched by the
-\code{(...)} group on the lhs when the substitution is executed. This
-turns out to be a programming exercise in layers of evaluation.
+enclosed in double quotes, \code{"..."}, specifying a Perl string
+constant. Why? Because, ultimately, this is going to turn into a Perl
+substitution, \code{s/\meta{lhs}/\meta{rhs}/g} (all substitutions
+specified here are done globally), but initially the lhs and rhs have to
+be read into variables\Dash in other words, string values. But we don't
+want to evaluate these strings when they are read from the
+\code{lists-regexps} file; the \code{\$1} in the rhs needs to refer to
+what is matched by the \code{(...)} group on the lhs when the
+substitution is executed. This turns out to be a programming exercise in
+layers of evaluation.
 \enddanger
 
 \ddanger The simplest way I found to do it was to use a Perl feature I
@@ -279,44 +281,47 @@ had never before needed, or even heard of, in my 30-odd years of using
 Perl since it first appeared: including the \code{/ee} modifier on the
 substitution, as well as the \code{/g}. I won't try to explain it here;
 for the curious, there is a discussion at
-\url{stackoverflow.com/q/392644}, as well as the Perl manual itself.
+\url{stackoverflow.com/q/392644}, in addition to the Perl manual itself
+(\code{perlre}).
 \enddanger
 
 \section{Performance and profiling}
 
-Although I said above that efficiency was not important, that is not
+Although I said above that efficiency was not an issue, that is not
 quite true. Especially during development and debugging, doing a test
 run must not take too long, since it gets done over and over. My
 extremely naive initial version took over 45 seconds (on my development
 machine, which is plenty fast) to process the $\approx$120 \TUB\
-issues\Dash too frustrating to be borne.
+issues\Dash much too frustrating to be borne.
 
+\newpage
 The Perl module \code{Devel::NYTProf} turned out to be by far the best
 profiling tool available. (By the way, \acro{NYT} stands for \textit{New
 York Times}; a programmer there did the initial development.) Unlike
 other Perl profiling tools, it shows timing data per individual source
 line, not just functions or blocks.
 
-It turned out that almost all the time was being consumed dealing with
-the substitutions from the \code{lists-*} files, since the strings were
-being read at runtime, instead of being literal in the source code. The
-easy step of ``precompiling'' the regular expressions after reading the
-iles, with \code{qr//}, resulted in the total runtime dropping an order
-of magnitude, to under 4~seconds. So development could proceed without
-any major surgery on the code or data structures.
+Using that, it turned out that almost all the time was being consumed
+dealing with the substitutions from the \code{lists-*} files, since the
+strings were being read at runtime, instead of being literal in the
+source code. The easy step of ``precompiling'' the regular expressions
+after reading the files, with \code{qr//}, resulted in the total runtime
+dropping an order of magnitude, to under 4~seconds. So development could
+proceed without any major surgery on the code or data structures.
 
 \section{Conclusion}
 
-The ad hoc conversion approach described here is only viable because we
-have complete control over the input, and only desirable because we want
-complete control over the output. I did not want to struggle with any
-tool to get the kind of \HTML\ I wanted, namely to be reasonably
-formatted and otherwise comprehensible, and not making significant use
-of external resources or JavaScript.
+The ad hoc conversion approach described here is viable only because we
+have complete control over the not-very-complicated input, and desirable
+mainly because we want complete control over the output. I did not
+want to struggle with any tool to get the \HTML\ I wanted, namely to be
+reasonably formatted and otherwise comprehensible, and not making
+significant use of external resources or JavaScript.
 
 Although changes and new needs are inevitable, I hope the program and
 data will be sufficiently robust for years to come.
 
+\SetBibJustification{\raggedright}
 \bibliographystyle{tugboat}
 \bibliography{tugboat}
 
