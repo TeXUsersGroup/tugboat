@@ -46,7 +46,7 @@ R\r{u}\v{z}i\v{c}ka||R&#367;&#382;i&#269;ka||Ruzicka
 # this first is for \TeX{}\kern...works
 \TeX{}\kern-.07em ||TeX
 \TeX ||TeX
-\TUB{}\CONNECT{}Team||TUGboat Team
+\TUB{}\CONNECT{}Team||TUGboat\CONNECT{}Team
 
 # Various accents. todo: use hex consistently, not decimal.
 \"a||&auml;||a
