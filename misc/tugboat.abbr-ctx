@@ -1,5 +1,5 @@
 % $Id$
-% Copyright 1999-2018 TeX Users Group.
+% Copyright 1999-2019 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 % "fake" ConTeXt in LaTeX, for simple-enough documents.
@@ -13,6 +13,7 @@
 \def\AFM       {\acro{AFM}}
 \def\ALEPH     {Aleph}
 \def\AMS       {\acro{AMS}}
+\def\ARM       {\acro{ARM}}
 \def\ASCIIMATH {\acro{ASCIIMATH}}
 \def\BIBTEX    {\BibTeX}
 \def\C         {C}
@@ -20,6 +21,7 @@
 \def\CD        {\acro{CD}}
 \def\CFF       {\acro{CFF}}
 \def\CLD       {\acro{CLD}}
+\def\CMAKE     {\acro{CM}ake}
 \def\CMYK      {\acro{CMYK}}
 \def\CONTEXT   {\ConTeXt}
 \def\CPU       {\acro{CPU}}
@@ -41,6 +43,7 @@
 \def\FONTFORGE {FontForge}
 \def\FONTINST  {fontinst}
 \def\FSF       {\acro{FSF}}
+\def\FREEBSD   {Free\-\acro{BSD}}
 \def\GCC       {\acro{GCC}}
 \def\GHOSTSCRIPT{Ghost\-script}
 \def\HZ        {Hz}
@@ -61,11 +64,13 @@
 \def\LCD       {\acro{LCD}}
 \def\LINUX     {Linux}
 \def\LISP      {Lisp}
+\def\LMTX      {\acro{LMTX}}
 \def\LPEG      {\acro{LPEG}}
 \def\LUA       {Lua}
 \def\LUAJIT    {Lua\acro{JIT}}
 \def\LUAJITTEX {Lua\acro{JIT\TeX}}
 \def\LUALATEX  {Lua\LATEX}
+\def\LUAMETATEX{Lua\METATEX}
 \def\LUATEX    {\LUA\-\TeX}
 \def\LUATOOLS  {{\tt luatools}}
 \def\Lua       {Lua}
@@ -76,6 +81,7 @@
 \def\MAPS      {\acro{MAPS}}
 \def\MATH      {\acro{MATH}}
 \def\MATHML    {\MathML}
+\def\MB        {\acro{MB}}
 \def\METAFONT  {\MF}
 \def\METAFUN   {Metafun}
 \def\METAPOST  {MetaPost}
@@ -87,6 +93,8 @@
 \def\MKIV      {Mk\acro{IV}}
 \def\MKTEXLSR  {{\tt mktexlsr}}
 \def\MKVI      {Mk\acro{VI}}
+\def\MKIX      {Mk\acro{IX}}
+\def\MKXI      {Mk\acro{XI}}
 \def\MODULA    {Modula}
 \def\MPFR      {\acro{MPFR}}
 \def\MPLIB     {\acro{MP}lib}
@@ -100,6 +108,7 @@
 \def\OMEGA     {Omega}
 \def\OPENMATH  {Open\-Math}
 \def\OPENTYPE  {Open\-Type}
+\def\OSX       {\acro{OSX}}
 \def\PASCAL    {Pascal}
 \def\PDFTEX    {pdf\-\/\TeX}
 \def\PERL      {Perl}
@@ -247,6 +256,7 @@
  \global\let\startchapter=\startcomponent %
 }
 \def\stopcomponent{\stopArticle}
+\def\stoptitle{\stopArticle}
 
 \def\placeformula[#1]{\label{#1}}
 \def\startformula{\begin{equation}}% displaymath for no eqno
