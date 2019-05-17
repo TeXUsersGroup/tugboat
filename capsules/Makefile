@@ -2,9 +2,8 @@
 # Public domain. See ./README.
 
 debug = #-D -D
-authors = #-A
 prevnext = #--no-prevnext
-options = $(debug) $(authors) $(prevnext) #--stdout
+options = $(debug) $(prevnext) #--stdout
 
 #profopt = -d:NYTProf
 profcmd = nytprofhtml
@@ -15,16 +14,13 @@ perl = /usr/local/bin/perl $(profopt)
 captub = $(perl) captub $(options)
 time = time -f "time:%e"
 
-default check: one #all
+default check: one #all-diff
 
-authors:
-	xxx
-
-testiss = 102
-lastiss = 123
+testiss = 124
+lastiss = 124
 
 outone = ~karl/public_html/x.html
-outone = /tmp/x.html
+#outone = /tmp/x.html
 one:
 	perl -cw captub && date
 	$(captub) tb$(testiss)capsule.txt >$(outone) || exit 1

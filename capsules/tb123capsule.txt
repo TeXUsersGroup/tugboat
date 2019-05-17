@@ -13,13 +13,6 @@
 % 
 
 \begin{blurb}
-<p>Immediate online access to technical TUGboat articles will be
-available to TUG members only (so some of the links below require a TUG
-username and password).  General information items and articles already
-posted elsewhere are publicly available now.  All of the articles will
-become publicly available when the next issue is published (expected
-date: May&nbsp;2019).
-
 <p>If you're not already a member, we hope you'll consider <a
 href="/join.html">joining TUG</a> to support TUGboat and other TeX
 projects.  <a href="/memberaccess.html">More information on TUG member
@@ -36,7 +29,7 @@ access</a>.
         {Complete issue 39:3 as one pdf (8.8mb)}
         {}
         {\offset{.1}}
-        {https://www.tug.org/members/TUGboat/!TBIDENT!complete.pdf}
+        {/TUGboat/!TBIDENT!complete.pdf}
         {}
         {}
 
@@ -131,7 +124,7 @@ from <a href="http://walden-family.com/ieee/texhistory.html"
    {Typographers' Inn}
    {Monospace that fits; Centering (reprise); Afterthought}
    {171-172}
-   {https://www.tug.org/members/TUGboat/!TBIDENT!inn.pdf}
+   {/TUGboat/!TBIDENT!inn.pdf}
    {}
    {}
 
@@ -184,7 +177,7 @@ from <a href="http://walden-family.com/ieee/texhistory.html"
   {Science and history behind the design of Lucida}
   {historical precedents, principles of reading, practical digital type design}
   {204-211}
-  {https://www.tug.org/members/TUGboat/!TBIDENT!bigelow-lucida.pdf}
+  {/TUGboat/!TBIDENT!bigelow-lucida.pdf}
   {}
   {}
 
@@ -194,7 +187,7 @@ from <a href="http://walden-family.com/ieee/texhistory.html"
   {Managing the paper trail of student projects: \texttt{datatool} and more}
   {step-by-step generation of typical student reports from \texttt{.csv} files}
   {182-184}
-  {https://www.tug.org/members/TUGboat/!TBIDENT!johansson-datatool.pdf}
+  {/TUGboat/!TBIDENT!johansson-datatool.pdf}
   {}
   {}
 
@@ -234,7 +227,7 @@ from <a href="http://walden-family.com/ieee/texhistory.html"
   {Managing forlorn paragraph lines (a.k.a.\ widows and orphans) in \LaTeX}
   {finding all widows and orphans, and discussion of possible fixes}
   {246-251}
-  {https://www.tug.org/members/TUGboat/!TBIDENT!mitt-widows.pdf}
+  {/TUGboat/!TBIDENT!mitt-widows.pdf}
   {}
   {}
 
@@ -244,7 +237,7 @@ from <a href="http://walden-family.com/ieee/texhistory.html"
   {A beginner's guide to file encoding and TeXShop}
   {introduction to file encodings, Unicode, and handling them in \TeX(Shop)}
   {173-176}
-  {https://www.tug.org/members/TUGboat/!TBIDENT!schulz-encoding.pdf}
+  {/TUGboat/!TBIDENT!schulz-encoding.pdf}
   {}
   {}
 
@@ -254,7 +247,7 @@ from <a href="http://walden-family.com/ieee/texhistory.html"
 %%%  {An introduction to the \LaTeX{} cross-referencing system}
 %%%  {built-in commands and useful packages: \pkg{cleveref}, \pkg{varioref}, \pkg{hyperref}, \pkg{xr{\rm[}-hyper{\rm]}}, \pkg{showlabels}}
 %%%  {\getfirstpage{thurnherr}}
-%%%  {https://www.tug.org/members/TUGboat/!TBIDENT!thurnherr.pdf}
+%%%  {/TUGboat/!TBIDENT!thurnherr.pdf}
 %%%  {}
 %%%  {}
 
@@ -277,7 +270,7 @@ from <a href="http://walden-family.com/ieee/texhistory.html"
   {\\Axessibility: Creating \acro{PDF} documents with accessible formulae}
   {automatically making readable math formulae}
   {224-227}
-  {https://www.tug.org/members/TUGboat/!TBIDENT!ahmetovic-axess.pdf}
+  {/TUGboat/!TBIDENT!ahmetovic-axess.pdf}
   {}
   {}
 
@@ -287,7 +280,7 @@ from <a href="http://walden-family.com/ieee/texhistory.html"
    {\TeX\ Gyre text fonts revisited}
    {incorporating math and symbol glyphs into text fonts, and OpenType accent positioning}
    {212-216}
-   {https://www.tug.org/members/TUGboat/!TBIDENT!jackowski-gyre.pdf}
+   {/TUGboat/!TBIDENT!jackowski-gyre.pdf}
    {}
    {}
 
@@ -307,7 +300,7 @@ from <a href="http://walden-family.com/ieee/texhistory.html"
   {Dednat6: An extensible (semi-)preprocessor for Lua\LaTeX\ that understands diagrams in~\acro{ASCII}~art}
   {a Forth-based language for \acro{2D} diagrams implemented in Lua}
   {241-245}
-  {https://www.tug.org/members/TUGboat/!TBIDENT!ochs-dednat.pdf}
+  {/TUGboat/!TBIDENT!ochs-dednat.pdf}
   {}
   {}
 
@@ -317,7 +310,7 @@ from <a href="http://walden-family.com/ieee/texhistory.html"
   {\acro{HINT}: Reflowing \TeX\ output}
   {postponing \TeX\ page rendering to a separate device, e.g., tablet}
   {217-223}
-  {https://www.tug.org/members/TUGboat/!TBIDENT!ruckert-hint.pdf}
+  {/TUGboat/!TBIDENT!ruckert-hint.pdf}
   {}
   {}
 
@@ -327,7 +320,7 @@ from <a href="http://walden-family.com/ieee/texhistory.html"
   {Improving the representation and conversion of mathematical formulae by considering the~textual~context}
   {gold standard benchmark and metrics to evaluate \AllTeX\ to \MathML\ tools}
   {228-240}
-  {https://www.tug.org/members/TUGboat/!TBIDENT!schubotz-mathtext.pdf}
+  {/TUGboat/!TBIDENT!schubotz-mathtext.pdf}
   {}
   {}
 
@@ -340,7 +333,7 @@ from <a href="http://walden-family.com/ieee/texhistory.html"
   {State secrets in bibliography-style hacking}
   {inserting a custom separator between fields in bibliography entries}
   {275-275}
-  {https://www.tug.org/members/TUGboat/!TBIDENT!berry-bst.pdf}
+  {/TUGboat/!TBIDENT!berry-bst.pdf}
   {}
   {The <a href="/TUGboat/tb39-3/ieeelike.zip">ieeelike.bst example</a>
 mentioned in the article.}
@@ -371,7 +364,7 @@ mentioned in the article.}
 %%  {Testing indexes: {\tt testidx.sty}}
 %%  {test methodology and exhaustive comparisons of \code{makeindex}, \code{xindy}, \code{glossaries}, and more}
 %%  {\getfirstpage{talbot}}
-%%  {https://www.tug.org/members/TUGboat/!TBIDENT!talbot.pdf}
+%%  {/TUGboat/!TBIDENT!talbot.pdf}
 %%  {}
 %%  {}
 
@@ -381,7 +374,7 @@ mentioned in the article.}
   {Experiments with \cs{parfillskip}}
   {analysis of \cs{parfillskip} settings, aiming to minimize too-short or too-long last lines}
   {276-303}
-  {https://www.tug.org/members/TUGboat/!TBIDENT!wermuth-parfillskip.pdf}
+  {/TUGboat/!TBIDENT!wermuth-parfillskip.pdf}
   {}
   {}
 
