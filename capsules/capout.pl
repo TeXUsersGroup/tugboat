@@ -73,9 +73,9 @@ END_TOP_NONISSUE
   
   print <<END_LISTS;
 <small>Accumulated lists across all of TUGboat:
-<a href="listauthor.html">by&nbsp;author</a>,
-<a href="listkeyword.html">by&nbsp;category/keyword</a>,
-<a href="listtitle.html">by&nbsp;title</a>.
+<a href="/TUGboat/Contents/listauthor.html">by&nbsp;author</a>,
+<a href="/TUGboat/Contents/listkeyword.html">by&nbsp;category/keyword</a>,
+<a href="/TUGboat/Contents/listtitle.html">by&nbsp;title</a>.
 </small>
 END_LISTS
 

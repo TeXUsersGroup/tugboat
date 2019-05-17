@@ -1,5 +1,9 @@
 2019-05-17  Karl Berry  <karl@tug.org>
 
+	* capout.pl (write_issue): list* links must be
+	absolute as /TUGboat/Contents/list*.html, else
+	accessing from, e.g., tug.org/TUGboat/40-1/ fails.
+
 	* tb124 released, tb123 public.
 
 2019-05-17  Karl Berry  <karl@freefriends.org>
