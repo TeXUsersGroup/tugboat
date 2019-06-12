@@ -1,6 +1,6 @@
 %% @texfile{
 %%     filename   = "tugboat.sty",
-%%     copyright  = "Copyright 1993,1999,2003,2006,2011-2017 TeX Users Group.
+%%     copyright  = "Copyright 1993,1999,2003,2006,2011-2019 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -21,8 +21,8 @@
 %% $Id$
 
 \def\thistubstyle{plain}
-\def\fileversion{v1.24}
-\def\filedate{2018-09-05}
+\def\fileversion{v1.25}
+\def\filedate{2019-06-10}
 
 % general items
 
@@ -228,7 +228,7 @@
   \belowdisplayskip=3pt plus 3pt minus 1pt
   \abovedisplayshortskip=0pt plus 3pt
   \belowdisplayshortskip=1pt plus 3pt minus 1pt
-  \def\rm{\fam\z@\tenrm}%
+  \def\rm{\def\sl{\fam\slfam\tensl}\fam\z@\tenrm}%
   \textfont\z@=\tenrm \scriptfont\z@=\sevenrm
   \def\oldstyle{\fam\@ne\teni}%
   \textfont\@ne=\teni \scriptfont\@ne=\seveni
@@ -2200,6 +2200,11 @@
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+1.25      12 Jun 19   \tenpoint \rm: reset \sl to \tensl,
+                      since the \tenpoint \bf changes it to \tenbfsl.
+
+1.24       5 Sep 18   only version number bump to match tugboat.cmn.
+
 1.23      19 Mar 17   define \manual and \manualsl in each of \tenpoint,
                       \ninepoint, \eightpoint; define \SMC in \eightpoint.
                       
