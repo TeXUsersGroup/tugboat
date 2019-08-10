@@ -580,8 +580,8 @@ FUNCTION {format.pages}
 { pages empty$
     { "" }
     { pages multi.page.check
-        { "pp." pages n.dashify tie.or.space.connect }
-        { "p." pages tie.or.space.connect }
+        { "pp.~" pages n.dashify * }
+        { "p.~" pages * }
       if$
     }
   if$

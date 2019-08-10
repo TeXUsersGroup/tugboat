@@ -2,7 +2,7 @@
 % $Id$
 % tugboat.dtx - main source for LaTeX TUGboat classes.
 %
-% Copyright 1994-2018 TeX Users Group.
+% Copyright 1994-2019 TeX Users Group.
 %
 % This file is part of the tugboat package.
 %
@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2018-12-14 v2.21
+                   [2019-08-10 v2.21
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -697,7 +697,8 @@
 \def\DVItoVDU{DVIto\kern-.12em VDU}
 \def\ECMA{\acro{ECMA}}
 \def\EPS{\acro{EPS}}
-\DeclareRobustCommand{\eTeX}{\ensuremath{\varepsilon}-\kern-.125em\TeX}
+% no line break at this hyphen please
+\DeclareRobustCommand{\eTeX}{\ensuremath{\varepsilon}\mbox{-}\kern-.125em\TeX}
 \DeclareRobustCommand{\ExTeX}{%
   \ensuremath{\textstyle\varepsilon_{\kern-0.15em\cal{X}}}\kern-.2em\TeX}
 \def\FAQ{\acro{FAQ}}
@@ -874,6 +875,7 @@
 \DeclareRobustCommand{\Xe}{\leavevmode
   \tubhideheight{\hbox{X%
     \setbox0=\hbox{\TeX}\setbox1=\hbox{E}%
+    \ifdim \fontdimen1\font>0pt \def\XekernbeforeE{0em}\fi
     \lower\dp0\hbox{\raise\dp1\hbox{\kern\XekernbeforeE\tubreflect{E}}}%
     \kern\XekernafterE}}}
 \def\XeTeX{\Xe\TeX}
@@ -1153,6 +1155,15 @@
 % Not sure why we ever want this instead of LaTeX's \, (using \kern),
 % but fine, just keeping it.
 \DeclareRobustCommand{\thinskip}{\hskip 0.16667em\relax}
+%
+% Make \! work in text mode.
+\DeclareRobustCommand{\!}{\ifmmode\mskip-\thinmuskip \else\kern-0.16667em \fi}
+%
+% Half a thinspace.
+\DeclareRobustCommand{\tubthinnerspace}
+  {\ifmmode\mskip.5\thinmuskip \else\kern0.08333em \fi}
+\DeclareRobustCommand{\tubthinnerspaceneg}
+  {\ifmmode\mskip-.5\thinmuskip \else\kern-0.08333em \fi}
 %
 %    \end{macrocode}
 %

@@ -1,0 +1,54 @@
+#!/bin/sh
+# $Id$
+# Extract names and addresses of authors from source files.
+# Run when an issue is done, send to office for inclusion on mailing list.
+
+origpwd=`pwd`
+for d in "$@"; do
+  #cd $d || exit 1
+  basef=`make --quiet --no-print-dir -C "$d" echo-source`
+  src=$d/$basef
+  if test ! -f "$src"; then
+    echo "$0: source not a file: $src" >&2
+    exit 1
+  fi
+  
+  # we don't need or expect info for these several items.
+  if    echo $d | egrep '^(edit|instmem|pres|ltnews)' >/dev/null \
+     || echo $d | egrep '^(komo|zprav|treas|elec|calendar)' >/dev/null; then
+    continue
+  fi
+  
+  # we know the author of duckboat, which has a fake address for fun. Etc.
+  if echo $d | grep '^duck-' >/dev/null; then
+    echo; echo $d:; echo "  Carla Maggi"
+    continue
+  elif echo $d | grep '^hagen-' >/dev/null; then
+    echo; echo $d:; echo "  Hans Hagen"
+    continue
+  elif echo $d | grep '^wright-' >/dev/null; then
+    echo; echo $d:; echo "  Joseph Wright"
+    continue
+  fi
+  
+  # we have a regular article, see if we have info.
+  metadata=`sed -n '/^%%% Start of meta/,/^%%% End of meta/p' "$src"`
+  if test -z "$metadata"; then
+    echo "$0: no %%%metadata: $src" >&2
+    continue
+  fi
+  
+  # we have info, eliminate various non-physical-address stuff.
+  iss=$(basename `dirname $PWD`) # e.g., 40-1
+  basepdf=`echo $basef | sed 's/\..*$/.pdf/'`
+  echo; echo https://tug.org/TUGboat/production/$iss/$basepdf
+  echo "$metadata" \
+  | egrep -v '^%%% |^% repeat|^$|^\\(title|netaddress|personalURL)' \
+  | sed 's/\\EDITORnoaddress *//' \
+  | sed 's/\\address{//' \
+  | sed 's/}$//g' \
+  | sed 's/\\\\$//' \
+  | sed 's/ *\\\\ */\n/g' \
+  | sed 's/^/  /'
+done  
+

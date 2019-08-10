@@ -74,10 +74,8 @@ sub cap_html_header {
   warn "cap_html_header: no title passed" if ! $title;
 
   my $head = <<END_LIST_CATEGORY_HEADER;
-<html><head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--#include virtual="/header.html"-->
 <title>$title - TeX Users Group</title>
-<link rel="stylesheet" href="/tugstyle.css"></head><body>
 END_LIST_CATEGORY_HEADER
   return $head;
 }
