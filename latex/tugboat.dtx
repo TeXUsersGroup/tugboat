@@ -671,6 +671,9 @@
 }
 \def\BibLaTeX{\Bib\kern.02em \LaTeX}
 \def\BibTeX{\Bib\kern-.08em \TeX}
+% no good way to determine bold font, and we want to lose the kern, too:
+% (we \let BibTeX to this in maketitle)
+\def\bfBibTeX{B{\SMC\SMC IB}\TeX}
 %
 \def\BSD{\acro{BSD}}
 \def\CandT{\textsl{Computers \& Typesetting}}
@@ -749,7 +752,10 @@
 %
 %    \begin{macrocode}
 %<!latex>\def\LaTeX{\La\kern-.15em\TeX}
+\def\LuaLaTeX{Lua\-\LaTeX}% dtk-logos defines it and people like to use it
+\def\LuaTeX{Lua\-\TeX}% ditto
 \def\LyX{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX}
+\def\macOS{mac\acro{OS}}
 \def\MacOSX{Mac\,\acro{OS\,X}}
 \def\MathML{Math\acro{ML}}
 \def\Mc{\setbox\TestBox=\hbox{M}M\vbox
@@ -792,6 +798,8 @@
 \def\pcMF{\leavevmode\raise.5ex\hbox{p\kern-.3\p@ c}MF\@}
 \def\PCTeX{PC\thinspace\TeX}
 \def\pcTeX{\leavevmode\raise.5ex\hbox{p\kern-.3\p@ c}\TeX}
+\def\pdflatex{pdf\-\LaTeX}% dtk-logos
+\def\pdftex{pdf\-\TeX}% dtk-logos
 \def\PDF{\acro{PDF}}
 \def\PGF{\acro{PGF}}
 \def\PHP{\acro{PHP}}
@@ -2288,7 +2296,10 @@
       \let\and=\quad
       \ignorespaces\@author}%
     {%
-      \noindent\bf\raggedright\ignorespaces\frenchspacing\@title\endgraf
+      \noindent\bf\raggedright\ignorespaces\frenchspacing
+      \let\BibTeX=\bfBibTeX % else LaTeX Font Warning: 
+                            %      Font shape `OT1/cmr/bx/sc' undefined
+      \@title\endgraf
     }%
     \ifdim \wd0 < 5\p@               % omit if author is null
     \else
@@ -2495,7 +2506,7 @@
 %
 %    \begin{macrocode}
 \def\TBtocsectionfont{\normalfont}
-\newskip\TBtocsectionspace  \TBtocsectionspace=1.0em\@plus\p@
+\newskip\TBtocsectionspace  \TBtocsectionspace=1.0ex\@plus\p@
 %    \end{macrocode}
 %
 %    \begin{macrocode}

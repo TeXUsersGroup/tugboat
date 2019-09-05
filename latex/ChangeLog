@@ -1,3 +1,13 @@
+2019-09-05  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\bfBibTeX): new macro for bold BibTeX (no \sc).
+	(\@maketitle): use it.
+	
+	(\LuaLaTeX, \LuaTeX, \pdflatex, \pdftex): new abbrevs per dtk-logos.
+	(\macOS): another.
+	
+	(\TUBtocsectionspace): 1ex, not 1em.
+
 2019-08-10  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\eTeX): don't allow line break at - in e-TeX.
