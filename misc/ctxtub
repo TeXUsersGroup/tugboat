@@ -1,7 +1,9 @@
 #!/bin/sh
 # $Id$
+# Run ConTeXt from our installation for TUGboat. Public domain.
 # http://wiki.contextgarden.net/ConTeXt_Standalone#Single_user_installation
+
 #. /opt/context/tex/setuptex # can't take args
 PATH=/opt/context/tex/texmf-linux-64/bin:$PATH
-# --batchmode --noconsole
-exec context "$@"
+# --noconsole omits logging to terminal, better to redirect?
+exec context --batchmode "$@"

@@ -87,12 +87,14 @@
    margindistance=1pc,
   ]
 
-%\enablemode [columnsets]
+% with pagecolumns, seemingly can't get single-column floats.
 \enablemode [pagecolumns]
 
-\startmode [columnsets]
- \usemodule [newcolumnsets]
-\stopmode
+% with columnsets, get unwanted gridsetting and blank last pages.
+%\enablemode [columnsets]
+%\startmode [columnsets]
+% \usemodule [newcolumnsets]
+%\stopmode
 
 \setuppagenumbering
   [location=,
@@ -171,7 +173,6 @@
 \setuplines[before={\blank[tugblank]},after={\blank[tugblank]}, 
             inbetween={\blank[tugblank]}]                       
 
-
 %D \section Typing %<<<1
 %D
 %D \TUGBOAT\ uses a smaller font size for verbatim typesetting.
@@ -182,15 +183,26 @@
    before={\blank[nowhite,tugblank]},
    after={\blank[back,nowhite,tugblank]}]
 
+% Do not colorize code.
+\setuptyping[LUA][option=]
+
+% tiny line numbers in numbered code (not text size)
+\setuplinenumbering[style=\tfxx]
 
 %D \section Figure captions %<<<1
 %D
-%D \TUGBOAT\ uses a smaller font size for captions, too.
+%D \TUGBOAT\ uses a smaller font size for captions, too. \small gives
+%D 8pt, and we want 9pt, so we have to manually fix the baselines.
+\setupcaptions [headstyle=\AcroFontBold,
+               style={\AcroFont\advance\baselineskip by -1pt},
+               align=right]
 
-\setupcaption [figure] [style=small]
+%D We like a colon after the caption label.
+\let\floatcaptionsuffix=:
 
-% And prefer floats in text.
+% Prefer floats in text.
 \setupfloat   [figure] [align=middle,default=here]
+\setupfloat   [table]  [align=middle,default=here]
 
 %D \section Footnotes %<<<1
 %D
@@ -268,14 +280,16 @@
 
 \startsetups tugboat:abstract:setup
 
-  \setuptolerance
-    [horizontal, tolerant]
+  %\setuptolerance
+  %  [horizontal, tolerant]
 
   \setupnarrower
     [before={\blank[.5\baselineskip]},
 %    after={\blank[10pt plus4pt minus4pt]},
     after={\blank[10pt]},
     middle=4.875pc]
+
+  \setupindenting[20pt,yes]
 
 \stopsetups
 
@@ -356,29 +370,6 @@
 
 \stopsetups
 
-\startsetups tugboat:introduction:proceedings
-
-  \blank[20pt]
-
-  \start
-    \switchtobodyfont[12pt]
-    \def\\{\unskip\space\&\space\ignorespaces}
-    \getvariable{tugboat}{author}
-    \par
-  \stop
-
-    \start
-    \switchtobodyfont[9pt]
-    \def\\{\unskip,\space\ignorespaces}
-    \getvariable{tugboat}{address}
-    \par
-    {\tt\getvariable{tugboat}{email}}
-    \par
-  \stop
-
-
-\stopsetups
-
 \startsetups tugboat:article:start
 
   \starttext
@@ -391,22 +382,7 @@
      \doifmodeelse{pagecolumns}{\startpagecolumns} {
                                 \startcolumns} } }
   
-
-
-  % AM: Why set these again?
-  % \setupheadertexts
-  %   [\setups{tugboat:banner:text:article}]
-  %   [pagenumber]
-
-  % \setuppagenumber
-  %   [number=\getvariable{tugboat}{page}]
   \setcounter[userpage][\getvariable{tugboat}{page}]
-
-  % \setuplayout
-  %   [grid=\getvariable{tugboat}{grid}]
-
-  % % instead of \startmode   [*grid] ... \stopmode
-  % % instead of \startnotmode[*grid] ... \stopnotmode
 
   \setups{tugboat:grid:setup:\getvariable{tugboat}{grid}}
 
@@ -423,8 +399,6 @@
       \hskip20pt\getvariable{tugboat}{author}
     \stop
 
-%     \setups{tugboat:introduction:\getvariable{tugboat}{type}}
-
     \blank[line]
 
     \doiftext{\getbuffer[abstract]}
@@ -433,61 +407,6 @@
      \subject{Abstract}
      \getbuffer[abstract]}
   \egroup
-\stopsetups
-
-\startsetups tugboat:proceedings:start
-
-  \starttext
-
-  \setups{tugboat:columns:\getvariable{tugboat}{columns}}
-  \setups{tugboat:banner:setup:\getvariable{tugboat}{type}}
-
-  \setupheader
-    [state=empty]
-
-  \setuppagenumber
-    [number=\getvariable{tugboat}{page}]
-
-  \setuplayout
-    [grid=\getvariable{tugboat}{grid}]
-
-  % instead of \startmode   [*grid] ... \stopmode
-  % instead of \startnotmode[*grid] ... \stopnotmode
-  \doifmodeelse{*grid}{\setups{tugboat:grid:setup:yes}}{\setups{tugboat:grid:setup:no}}
-%  \setups{tugboat:grid:setup:\systemmodevalue{grid}{yes}{no}}
-
-  \snaptogrid \vbox \bgroup
-
-    \forgetall
-
-    \start
-      \switchtobodyfont[14.4pt]
-      \let\\=\par
-      \getvariable{tugboat}{title}
-      \par
-    \stop
-
-    \setups{tugboat:introduction:\getvariable{tugboat}{type}}
-
-    \blank[9pt]% plus3pt minus3pt]
-
-    \let\\=\par
-    \setups{tugboat:abstract:setup}
-    \midaligned{\bf Abstract}
-
-    \startnarrower[middle]
-       \getbuffer[abstract]
-    \stopnarrower
-
-  %  \blank[10pt plus4pt minus4pt]
-
-  \egroup
-
-  \doif{\getvariable{tugboat}{columns}}{yes} {
-     \doifmodeelse{columnset}  {\startcolumnset} {
-     \doifmodeelse{pagecolumns}{\startpagecolumns} {
-                                \startcolumns} } }
-
 \stopsetups
 
 \startsetups tugboat:affiliation:article
@@ -506,22 +425,9 @@
    \endgroup
 \stopsetups
 
-\startsetups tugboat:affiliation:proceedings
-
-    % nothing fancy at the end
-
-\stopsetups
-
 \startsetups tugboat:article:stop
 
   \setups{tugboat:affiliation:\getvariable{tugboat}{type}}
-
-% creates spurious blank page at end. now the document ends inside a
-% group, but oh well.
-%  \doif{\getvariable{tugboat}{columns}}{yes} {
-%     \doifmodeelse{columnset}  {\stopcolumnset} {
-%     \doifmodeelse{pagecolumns}{\stoppagecolumns} {
-%                                \stopcolumns} } }
 
   % article joining in the issue.
   \ifx\writelastpage\undefined\else \begingroup
@@ -537,17 +443,22 @@
 \setuptolerance
   [strict]
 
-% Let's see any overfull boxes.
+%D hz is fine. hanging can hang quotes out too far.
+\setupalign[hz] %,hanging
+
+%D Let's see boxes overfull by >.5pt
 \overfullrule = 2pt % yes, I want to see
+\hfuzz = .5pt 
 
 %D One can use the following setups (in the article) to
 %D collect settings specific to normal and/or multi
 %D column typesetting.
 
 \startsetups tugboat:columns:yes
-  \doifmodeelse{columnset}  {\setuplayout [grid=yes]
+  \doifmodeelse{columnset}  {\setuplayout [grid=no]
                              \setupcolumnset} {
-  \doifmodeelse{pagecolumns}{\setuppagecolumns} {
+  \doifmodeelse{pagecolumns}{\setuplayout [grid=no]
+                             \setuppagecolumns} {
                              \setupcolumns} }
     [distance=1.5pc]
 
@@ -557,13 +468,15 @@
 
 \stopsetups
 
-% >>> Logos, abbreviations: TODO: Clean up <<<
+% >>> Logos, abbreviations: lots could be better here <<<
 \font\mflogo = logo10
 \def\MF{{\mflogo META\-FONT}}
 
 \def\ALEPH{Aleph}
 \def\API{\acro{API}}
 \def\CCODE{C}
+\def\Cplusplus{C\plusplus}
+\def\plusplus{\lower.45ex\hbox{$^{++}$}}
 \def\CD{\acro{CD}}
 \def\CMYK{\acro{CMYK}}
 \def\CONTEXT{C\kern-.0333emon\-\kern-.0667em\TeX\kern-.0333emt}
@@ -632,16 +545,24 @@
 \def\Dash{\unskip\nobreak\thinspace---\thinspace\ignorespaces}
 \def\slash{/\penalty0 \hskip0pt \relax}
 
+% \acro for one point size smaller. Don't know how to do this for real.
 \definefont[AcroFont][Serif sa .91]
 \def\acro#1{{\AcroFont #1}}
+%
+\definefont[AcroFontBold][SerifBold sa .91]
+\def\acrobf#1{{\AcroFontBold #1}}
+%
+\definefont[AcroFontSmall][Serif sa .8]
+\def\acrosmall#1{{\AcroFontSmall #1}}
 
-\lefthyphenmin=2 \righthyphenmin=3 % disallow x- or -xx breaks
+\lefthyphenmin=2 \righthyphenmin=3 % this is English; disallow x- or -xx breaks
 
 \hyphenation{Post-Script data-base data-bases}
 
 % hack to read tugboat.dates settings.
 \openin0 = ../tugboat.dates \ifeof0 \else
   \closein0
+  \newif\ifPrelimDraft
   \def\vol#1, #2.{\gdef\tubvol{#1}\def\tubnum{#2}}
   \def\issyear#1.{\gdef\tubyear{#1}}
   \newcount\issueseqno

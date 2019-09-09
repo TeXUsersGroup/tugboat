@@ -44,6 +44,7 @@ for d in "$@"; do
   echo; echo https://tug.org/TUGboat/production/$iss/$basepdf
   echo "$metadata" \
   | egrep -v '^%%% |^% repeat|^$|^\\(title|netaddress|personalURL)' \
+  | sed 's/\\author{//' \
   | sed 's/\\EDITORnoaddress *//' \
   | sed 's/\\address{//' \
   | sed 's/}$//g' \
