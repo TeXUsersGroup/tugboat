@@ -141,7 +141,7 @@
 %  \@secwd has varied from 1.25in to 2in; \hangindif must be reset accordingly
 \newdimen\@secwd	\@secwd=1.5in
 \newdimen\@hangindwd
-\newdimen\hangindif	\hangindif=.3in
+\newdimen\hangindif	\hangindif=10pt % since normalparindent=20pt; was .3in
 \@hangindwd=\@secwd \advance\@hangindwd by 2\hangindif
 \newdimen\digitwidth
 
