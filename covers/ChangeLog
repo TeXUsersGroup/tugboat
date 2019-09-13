@@ -1,4 +1,10 @@
+2019-09-13  Karl Berry  <karl@freefriends.org>
+
+	* tubtocmac.tex (\Xe): tinker with spacing when slanted.
+
 2019-09-12  Karl Berry  <karl@freefriends.org>
 
 	* (\hangindif): reduce to 10pt, so that \@hangindwd
 	matches the \normalparindent of 20pt to give more spaces for titles.
+
+This ChangeLog file is public domain.

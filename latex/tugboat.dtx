@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2019-08-10 v2.21
+                   [2019-09-13 v2.21
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -884,7 +884,12 @@
 \DeclareRobustCommand{\Xe}{\leavevmode
   \tubhideheight{\hbox{X%
     \setbox0=\hbox{\TeX}\setbox1=\hbox{E}%
-    \ifdim \fontdimen1\font>0pt \def\XekernbeforeE{0em}\fi
+    \ifdim \fontdimen1\font>0pt
+      % XeTeX logo needs tinkering when slanted/italic font.
+      \def\XekernbeforeE{-.11em}%
+      \def\XekernafterE{-.11em}%
+      \dp1=-.17ex
+    \fi
     \lower\dp0\hbox{\raise\dp1\hbox{\kern\XekernbeforeE\tubreflect{E}}}%
     \kern\XekernafterE}}}
 \def\XeTeX{\Xe\TeX}
@@ -3235,9 +3240,11 @@
   }
 % put issue identification and page number in header.
 \def\@oddhead{\MakeRegistrationMarks
+  \frenchspacing
   \normalsize\csname normalshape\endcsname\rm \tubheadhook
   \rtitlex\qquad \midrtitle\hfil \rtitlenexttopage\quad \thepage}
 \def\@evenhead{\MakeRegistrationMarks
+  \frenchspacing
   \normalsize\csname normalshape\endcsname\rm \tubheadhook
   \thepage \quad\rtitlenexttopage \hfil\midrtitle \qquad\rtitlex}
 
@@ -3254,7 +3261,7 @@
     \let\newline=\\%
     \frenchspacing
     \hfil\rhTitle}
-  \def\@evenfoot{\tubrunningauthor\hfil}
+  \def\@evenfoot{\frenchspacing\tubrunningauthor\hfil}
 }
 
 % empty footer.

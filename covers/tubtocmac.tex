@@ -91,6 +91,12 @@
 \DeclareRobustCommand\Xe{\leavevmode
   \tubhideheight{\hbox{X%
     \setbox0=\hbox{\TeX}\setbox1=\hbox{E}%
+    \ifdim \fontdimen1\font>0pt
+      % XeTeX logo needs tinkering when slanted/italic font.
+      \def\XekernbeforeE{-.11em}%
+      \def\XekernafterE{-.11em}%
+      \dp1=-.17ex
+    \fi
     \lower\dp0\hbox{\raise\dp1\hbox{\kern\XekernbeforeE\tubreflect{E}}}%
     \kern\XekernafterE}}}
 \def\XeTeX{\Xe\TeX}

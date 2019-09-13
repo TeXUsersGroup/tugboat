@@ -1,4 +1,15 @@
+2019-09-13  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\Xe): tinker with spacing when slanted.
+
+2019-09-11  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\iOS): abbrev
+
 2019-09-05  Karl Berry  <karl@freefriends.org>
+
+	* ltubguid.ltx: consider \paragraph label with period.
+	More on listings (keepspaces=true)
 
 	* tugboat.dtx (\bfBibTeX): new macro for bold BibTeX (no \sc).
 	(\@maketitle): use it.
