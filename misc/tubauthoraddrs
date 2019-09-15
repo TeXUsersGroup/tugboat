@@ -43,13 +43,16 @@ for d in "$@"; do
   basepdf=`echo $basef | sed 's/\..*$/.pdf/'`
   echo; echo https://tug.org/TUGboat/production/$iss/$basepdf
   echo "$metadata" \
-  | egrep -v '^%%% |^% repeat|^$|^\\(title|netaddress|personalURL)' \
-  | sed 's/\\author{//' \
-  | sed 's/\\EDITORnoaddress *//' \
-  | sed 's/\\address{//' \
+  | egrep -v '^%%% |^% repeat|^$|^%*\\(title|netaddress|personalURL)' \
+  | sed 's/\\author *{//' \
+  | sed 's/\\EDITORno\(net\)\?address *//' \
+  | sed 's/%*\\address *{\?//' \
   | sed 's/}$//g' \
   | sed 's/\\\\$//' \
   | sed 's/ *\\\\ */\n/g' \
+  | sed 's/  *\/  */\n/g' \
+  | sed 's/^ *//' \
+  | grep -v '^ *$' \
   | sed 's/^/  /'
 done  
 
