@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2019-09-13 v2.21
+                   [2019-09-21 v2.21
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -3252,6 +3252,7 @@
 \def\tubheadhook{}
 
 % in case the official \author is too verbose for the footline.
+% (the \shortauthor / \rhAuthor stuff is only enabled for proceedings, fix!)
 \def\tubrunningauthor{\@author}
 
 % put title and author in footer.
@@ -3261,7 +3262,7 @@
     \let\newline=\\%
     \frenchspacing
     \hfil\rhTitle}
-  \def\@evenfoot{\frenchspacing\tubrunningauthor\hfil}
+  \def\@evenfoot{\frenchspacing \let\thanks\@gobble \tubrunningauthor\hfil}
 }
 
 % empty footer.
