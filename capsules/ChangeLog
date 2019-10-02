@@ -1,3 +1,9 @@
+2019-10-02  Karl Berry  <karl@tug.org>
+
+	* tb14capsule.txt (c1): new item.
+	
+	* tb06capsule.txt (tb06software): describe memory chart.
+
 2019-08-10  Karl Berry  <karl@freefriends.org>
 
 	* caputil.pl (cap_html_header): #include /header.html.

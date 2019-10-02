@@ -58,7 +58,7 @@ diff:
 
 
 Contents = $(tubweb)/Contents
-install: # after make all and presumably install-test
+install: # after make all and (for major changes) install-test
 	cp -f contents*.html list*.html $(Contents)
 
 all-diff: all diff

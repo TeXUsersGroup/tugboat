@@ -130,7 +130,11 @@
         {13-13}
         {/TUGboat/tb03-2/tb06software.pdf}
         {}
-        {}
+        {Regarding the chart on page 13, the smaller blocks in the
+middle are scaled relative to their executable (code) size, while the
+larger blocks are scaled relative to the size used in the global data
+memory. An updated chart appears in TeX:&nbsp;The&nbsp;Program, and
+analogous remarks apply.}
 
 
 \capsule{}%subsec
