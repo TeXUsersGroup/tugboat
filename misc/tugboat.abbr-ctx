@@ -141,6 +141,7 @@
 \def\TUG       {\tug}
 \def\TUGBOAT   {\TUB}
 \def\TYPEONE   {Type~1}
+\def\TYPETHREE {Type~3}
 \def\UCS       {\acro{UCS}}
 \def\UNICODE   {Unicode}
 \def\URL       {url}
@@ -153,6 +154,7 @@
 \def\WIKI      {Wiki}
 \def\WINDOWS   {Windows}
 \def\XETEX     {\XeTeX}
+\def\XFORM     {\acro{XF}orm}
 \def\YANDY     {\acro{Y\&Y}}
 \def\ZIP       {{\tt zip}}
 \def\pdfTeX    {pdf\-\/\TeX}
@@ -167,8 +169,11 @@
 \def\crlf{\newline}
 \def\ctxluabuffer[#1]{}
 \def\definefont[#1]#2[#3]{}
+\def\definefontfeature[#1][#2][#3]{}
 \def\definefontsynonym[#1]#2[#3]{}
+\def\disabledirectives[#1]{}
 \def\dontcomplain{}
+\def\dontleavehmode{}
 \def\enabledirectives[#1]{}
 % width=.95\hsize
 \def\externalfigure[#1]#2[#3]{\centerline{\includegraphics[#3]{#1}}}
@@ -195,6 +200,8 @@
 \def\ss{}
 \def\showframe{}
 \let\stop=\relax
+\def\starthead#1{\item[#1]}
+\def\stophead{}
 \def\subject{\section}
 \def\subsubject{\subsection}
 \def\sym{\item}
@@ -231,7 +238,7 @@
 \def\finishtype#1{\texttt{%
   \spaceskip = .3333em \xspaceskip = \spaceskip
   #1}\egroup\spacefactor=1000 }
-\let\typ=\type
+\def\typ{\url}
 
 %  start .. stop
 

@@ -1,3 +1,12 @@
+2019-10-05  Karl Berry  <karl@freefriends.org>
+
+	* (\TYPETHREE, \XFORM, \definefontfeature, \disabledirectives,
+	\dontleavehmode, \starthead, \stophead): for tb126hagen-type3.
+
+2019-10-02  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr-ctx (\GB): add for tb126hagen-rpi.
+
 2019-09-15  Karl Berry  <karl@tug.org>
 
 	* tubauthoraddrs: more extraneous removal
