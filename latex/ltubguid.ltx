@@ -313,7 +313,8 @@ the same treatment).
 Authors may note that the style of ordinary issues of \TUB{} makes
 no distinction between the titles of the divisions; the visual style
 relies on the section numbers to indicate where the divisions lie in
-the hierarchy.
+the hierarchy.  If you use \cs{paragraph}, consider ending the paragraph
+label with a period; sometimes it is helpful, sometimes not.
 
 Reference may, however, be made to the `title' of divisions of the
 paper, whether they are numbered or not.  The \cs{nameref} command
@@ -525,18 +526,34 @@ as \pkgname{verbatim}~\cite{Schoepf:verbatim:1996},
 \TUB\ optional-argument feature is not available.
 
 If you use the \pkgname{listings} package, please specify:
-\begin{verbatim}
-\lstset{columns=flexible}
-\end{verbatim}
-The other values for the \verb|columns| option don't work well in
-\TUB. Also, if you use \cs{small} for displayed verbatim, please reset
-inline verbatim to the normal text size:
 \begin{verbatim}[\small]
-\lstset{columns=flexible,
+\lstset{columns=flexible, keepspaces=true,
+        commentstyle=\slshape,
         basicstyle=\ttfamily\small}
 \lstdefinestyle{inline}
-  {basicstyle=\ttfamily\normalsize}
+        {basicstyle=\ttfamily\normalsize}
 \end{verbatim}
+
+Explanations:
+\begin{itemize}
+\item \texttt{columns=flexible}:
+The other values for the \verb|columns| option don't work well in \TUB.
+
+\item \texttt{keepspaces=true}:
+However, having flexible columns makes spaces in the input not
+necessarily correspond to spaces in the output. That's usually desired,
+for alignment of the sources, hence \texttt{keepspaces}.
+
+\item \texttt{commentstyle=\cs{slshape}}:
+We prefer slanted to Computer Modern typewriter italic.
+Using regular upright typewriter for comments is fine too.
+
+\item \texttt{basicstyle=...}:
+We usually prefer \cs{small} for displayed verbatim; when using
+\texttt{listings}, it is necessary to reset inline verbatim to the
+normal text size.
+
+\end{itemize}
 
 \section{Floating inserts}
 
