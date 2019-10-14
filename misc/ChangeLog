@@ -1,3 +1,8 @@
+2019-10-14  Karl Berry  <karl@tug.org>
+
+	* ps2pdf-tub: add -dPrinted=false to preserve internal links
+	when making tb*complete.pdf.
+
 2019-10-05  Karl Berry  <karl@freefriends.org>
 
 	* (\TYPETHREE, \XFORM, \definefontfeature, \disabledirectives,

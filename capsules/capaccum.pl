@@ -309,6 +309,7 @@ sub accumulation_check {
        'TUG 2016',
        'TUG 2017',
        'TUG 2018',
+       'TUG 2019',
        'TUG Business',
        'TUG News',
        'Talks',

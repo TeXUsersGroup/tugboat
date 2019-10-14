@@ -1,3 +1,15 @@
+2019-10-14  Karl Berry  <karl@tug.org>
+
+	* Makefile (unparsed): look for Dash, accept ~ross.
+	* capaccum.pl (accumulation_check) <@category_expected>: add TUG 2019.
+	* lists-unifications.txt: add TUG 2019, Anana, Asakura, ... Rishi
+	for tb125.
+	* tb124capsule.txt: now public.
+	* tb125capsule.txt: new issue.
+	
+	* tb16capsule.txt: \TeX\Dash -> \TeX{}\Dash.
+	* capout.pl (write_issue): maybe better for "by" to be outside link.
+
 2019-10-02  Karl Berry  <karl@tug.org>
 
 	* tb14capsule.txt (c1): new item.

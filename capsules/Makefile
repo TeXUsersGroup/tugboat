@@ -17,15 +17,15 @@ time = time -f "time:%e"
 default check: one #all-diff
 
 testiss = 124
-lastiss = 124
+lastiss = 125
 
 outone = ~karl/public_html/x.html
 #outone = /tmp/x.html
 one:
 	perl -cw captub && date
 	$(captub) tb$(testiss)capsule.txt >$(outone) || exit 1
-	unparsed=`egrep '[{}~$$\]|href=""' $(outone) \
-	          | egrep -v '<tt>\\\\|/~hammond'`; \
+	unparsed=`egrep '[{}~$$\]|href=""|Dash' $(outone) \
+	          | egrep -v '<tt>\\\\|/~(hammond|ross)'`; \
 	  test -z "$$unparsed" || { echo "$$unparsed" >&2; exit 1; }; \
 	test -z "$(profopt)" || $(profcmd)
 
@@ -38,8 +38,8 @@ all:
 	! grep -o 'tubidxgroup.*\<and\>' listauthor.html
 	! grep -o 'id="[^">]*[^a-z0-9_,][^">]*"' listtitle.html
 	! grep -o 'id="[^">]*[^a-zA-Z0-9_,.][^">]*"' list[ak]*.html
-	unparsed=`egrep '[{}~$$\]|href=""' $(out) \
-	          | egrep -v '<tt>\\\\|/~hammond'`; \
+	unparsed=`egrep '[{}~$$\]|href=""|Dash\>' $(out) \
+	          | egrep -v '<tt>\\\\|/~(hammond|ross)'`; \
 	  test -z "$$unparsed" || { echo "$$unparsed" >&2; exit 1; }; \
 	test -z "$(profopt)" || $(profcmd)
 	@chmod a+r *.html

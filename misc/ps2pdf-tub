@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright 2009-2018 TeX Users Group.
+# Copyright 2009-2019 TeX Users Group.
 # $Id$
 # You may freely use, modify and/or distribute this file.
 # 
@@ -19,17 +19,25 @@ fi
 # -sPAPERSIZE=a4
 
 # with gs 9.14 (tb109reviews-xie), -dPDFX=true fails with annotations,
-# -dEmbedAllFonts doesn't, but -dPDFSETTINGS=/prepress does the job so
-# far -- except that when downscaling images with zres, have to override.
-# 
+# -dEmbedAllFonts doesn't (didn't) always,
+# -dPDFSETTINGS=/prepress works so far to ensure embedded fonts,
+#   except that if downscaling images with zres, have to override.
+# -dAutoRotatePages since of course we do not want pages randomly rotated,
 # -dCompressFonts seems not to hurt, and can save notable space.
+# -dDetectDuplicateImages similarly,
+# -dPrinted=false is to preserve internal links within the pdf,
+#   notably for the cover/cover3 in our tb*complete.pdf
+#   (https://tex.stackexchange.com/questions/456896).
 #set -x
 $gs \
    -q -dNOPAUSE -dBATCH \
    -sDEVICE=pdfwrite \
-   -dEmbedAllFonts -dPDFSETTINGS=/prepress -dAutoRotatePages=/None \
+   -dPDFSETTINGS=/prepress \
+   -dEmbedAllFonts \
+   -dAutoRotatePages=/None \
    -dCompressFonts=true \
    -dDetectDuplicateImages \
+   -dPrinted=false \
    $zdistill $zres \
    -sOutputFile="$2" \
    -f "$1" 

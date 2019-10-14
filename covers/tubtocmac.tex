@@ -69,7 +69,7 @@
         goto page \tublinkdestpage{/XYZ}\relax  % destination page
     \fi
   \fi
-  #1%typeset page number as usual
+  #1% Typeset page number as usual.
   \ifx\tublinktoc\undefined\else \ifnum\tublinkdestpage > 0 \pdfendlink \fi \fi
 }
 
