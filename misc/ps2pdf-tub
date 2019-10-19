@@ -13,13 +13,16 @@
 
 if test $# -eq 1; then
   set - "$1" "$1.tmppdf"
+elif test $# -ne 2; then
+  echo "Usage: $0 IN[OUT]FILE [OUTFILE]" >&2
+  exit 1
 fi
 
-# -dDEVICEWIDTHPOINTS=679 -dDEVICEHEIGHTPOINTS=1598
-# -sPAPERSIZE=a4
-
-# with gs 9.14 (tb109reviews-xie), -dPDFX=true fails with annotations,
-# -dEmbedAllFonts doesn't (didn't) always,
+# -r1200 is to avoid rendering on a tiny canvas, which can trip
+#   heuristics of complicated fonts, as (relating to a Hans font) in:
+#   https://bugs.ghostscript.com/show_bug.cgi?id=701753 
+# -dEmbedAllFonts doesn't (didn't) always work to embed fonts,
+# -dPDFX=true old failure with annotations in gs 9.14 (tb109reviews-xie), 
 # -dPDFSETTINGS=/prepress works so far to ensure embedded fonts,
 #   except that if downscaling images with zres, have to override.
 # -dAutoRotatePages since of course we do not want pages randomly rotated,
@@ -29,18 +32,18 @@ fi
 #   notably for the cover/cover3 in our tb*complete.pdf
 #   (https://tex.stackexchange.com/questions/456896).
 #set -x
-$gs \
-   -q -dNOPAUSE -dBATCH \
-   -sDEVICE=pdfwrite \
-   -dPDFSETTINGS=/prepress \
-   -dEmbedAllFonts \
-   -dAutoRotatePages=/None \
-   -dCompressFonts=true \
-   -dDetectDuplicateImages \
-   -dPrinted=false \
-   $zdistill $zres \
-   -sOutputFile="$2" \
-   -f "$1" 
+$gs -q -dNOPAUSE -dBATCH \
+  -sDEVICE=pdfwrite \
+  -sOutputFile="$2" \
+  -r1200 \
+  -dPDFSETTINGS=/prepress \
+  -dEmbedAllFonts \
+  -dAutoRotatePages=/None \
+  -dCompressFonts=true \
+  -dDetectDuplicateImages \
+  -dPrinted=false \
+  $zdistill $zres \
+  -f "$1" 
 
 # -c .setpdfwrite used to be necessary, but no longer is?
 # quit.ps disappeared in gs 9.22.
@@ -68,5 +71,9 @@ fi
 # -dColorImageFilter=/FlateEncode \
 # -dGrayImageFilter=/FlateEncode \
 # -dMonoImageFilter=/CCITTFaxEncode
+
+# other random options sometimes of interest:
+# -dDEVICEWIDTHPOINTS=679 -dDEVICEHEIGHTPOINTS=1598
+# -sPAPERSIZE=a4
 
 # See also https://github.com/pts/pdfsizeopt and sam2p, maybe.
