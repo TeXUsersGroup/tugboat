@@ -1,3 +1,9 @@
+2019-10-19  Karl Berry  <karl@freefriends.org>
+
+	* ps2pdf-tub: -r1200 to avoid heuristics of rendering on a tiny
+	canvas, https://bugs.ghostscript.com/show_bug.cgi?id=701753.
+	* ps2pdf-gray: likewise, also use other options from ps2pdf-tub.
+
 2019-10-14  Karl Berry  <karl@tug.org>
 
 	* ps2pdf-tub: add -dPrinted=false to preserve internal links

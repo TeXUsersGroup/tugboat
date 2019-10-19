@@ -12,9 +12,25 @@
 # https://stackoverflow.com/a/23553427
 # https://unix.stackexchange.com/questions/93959/how-to-convert-a-color-pdf-to-black-white
 # https://ghostscript.com/doc/9.16/Use.htm
+# 
+# See ps2pdf-tub for comments on other settings.
 
-exec gs -q -sOutputFile="$2" \
+if test $# -ne 2; then
+  echo "Usage: $0 INFILE OUTFILE" >&2
+  exit 1
+fi
+
+: ${gs=gs}
+exec $gs -q -dNOPAUSE -dBATCH \
+  -sOutputFile="$2" \
   -sDEVICE=pdfwrite \
+  -r1200 \
+  -dAutoRotatePages=/None \
+  -dCompressFonts=true \
+  -dDetectDuplicateImages \
+  -dEmbedAllFonts \
+  -dPrinted=false \
+  \
   -sColorConversionStrategy=Gray \
   -dProcessColorModel=/DeviceGray \
-  -dNOPAUSE -dBATCH "$1"
+  "$1"
