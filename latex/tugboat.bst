@@ -5,8 +5,8 @@
 %%%   abbreviate "page(s)" to "p(p).",
 %%%     "volume" to "vol.",
 %%%     "editor(s)" to "ed(s)".
-%%%   urlintro=""
-%%%   reduce long author lists in format.names per Mico.
+%%%   set urlintro="", output "Ph.D." rather than "PhD".
+%%%   reduce long author lists in format.names per Mico Loretan.
 %%%   new fields for editors:
 %%%     "newpage" - force page break after entry
 %%%     "urlnewline" - force line break before url value.
@@ -1183,7 +1183,7 @@ FUNCTION {phdthesis}
   title empty$ 'skip$ 'possibly.setup.inlinelink if$ % urlbst
   format.btitle "title" output.check
   new.block
-  "PhD thesis" format.thesis.type output.nonnull
+  "Ph.D. thesis" format.thesis.type output.nonnull
   school "school" output.check
   address output
   format.date "year" output.check
