@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2019-09-21 v2.21
+                   [2019-11-09 v2.22
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -65,8 +65,8 @@
 %
 \usepackage{array,longtable}
 %
-% if longtable.sty is the most recent, then it doesn't need
-% \cs{setlongtables}, so we avoid the setlong.tab game
+% If longtable.sty is not ancient, then it doesn't need
+% \cs{setlongtables}, so we avoid the setlong.tab game.
 \GetFileInfo{longtable.sty}
 \def\extractdate#1/#2/#3\relax{\def\fileyear{#1}%
   \def\filemonth{#2}%
@@ -754,6 +754,7 @@
 %    \begin{macrocode}
 %<!latex>\def\LaTeX{\La\kern-.15em\TeX}
 \def\LuaHBTeX{Lua\acro{HB}\-\TeX}%
+\def\LuaHBLaTeX{Lua\acro{HB}\-\LaTeX}%
 \def\LuaLaTeX{Lua\-\LaTeX}% dtk-logos defines it and people like to use it
 \def\LuaTeX{Lua\-\TeX}% ditto
 \def\LyX{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX}
@@ -764,10 +765,10 @@
    to\ht\TestBox{\hbox{c}\vfil}} %  for Robert McGaffey
 %    \end{macrocode}
 %
-% If we're running under \LaTeXe, we're using (at least pro tem) Ulrik
-% Vieth's |mflogo.sty| if it's present.  Otherwise, we're using a
-% short extract of Vieth's stuff.  Either way, we don't need to
-% specify \cs{MF} or \cs{MP}
+% If we're running under \LaTeXe, we use Ulrik Vieth's |mflogo.sty| if
+% it's present.  Otherwise, we're using a short extract of Vieth's
+% stuff.  Either way, we don't need to specify \cs{MF} or \cs{MP}.
+%
 %    \begin{macrocode}
 \def\mf{\textsc{Metafont}}
 \def\MFB{\textsl{The \MF\kern1pt book}}
@@ -835,7 +836,7 @@
 \def\TeXworks{\TeX\kern-.07em works}
 \def\TeXXeT{\TeX-{}-\XeT}
 \def\TFM{\acro{TFM}}
-\expandafter\ifx\csname XeTeXrevision\endcsname\relax
+\ifx\Umathchardef\@thisisundefined % xetex|luatex
 \def\Thanh{H\`an~Th\^e\llap{\raise 0.5ex\hbox{\'{}}}~Th\`anh}% non-XeTeX
 \else
 \def\Thanh{H\`an~Th\textcircumacute{e}~Th\`anh}% else xunicode drops the acute

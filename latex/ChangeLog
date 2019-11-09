@@ -1,6 +1,30 @@
+2019-11-09  Karl Berry  <karl@freefriends.org>
+
+	* version 2.22 (2019-11-09) uploaded to CTAN.
+
+	* tugboat.dtx (\Thanh): check \Umathchardef (either LuaTeX or
+	XeTeX) for being undefined, instead of using \csname
+	XeTeXrevision\endcsname, which leaves that cs defined as \relax.
+	Collaborating with new iftex.sty.
+	(\LuaHBLaTeX): define this too.
+	
+	* ltubguid.ltx: skip \MP examples, roman better; reword
+	text about other packages, mention iftex.
+	* tugboat.bst: doc.
+	
+	* README,
+	* tugboat.ins: copyright year 2019.
+
+2019-10-29  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst (phdthesis): output "Ph.D." rather than "PhD".
+
 2019-10-06  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\LuaHBTeX): another abbrev.
+
+	* ltubguid.ltx: consider \paragraph label with period.
+	More on listings, including keepspaces=true.
 
 2019-09-21  Karl Berry  <karl@freefriends.org>
 

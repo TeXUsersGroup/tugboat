@@ -1,8 +1,7 @@
 % $Id$
 % ltubguid.ltx - documentation for ltugboat classes.
 % 
-% Copyright 1994,1995,1996,2001,2005,2006,2010,2013,2014,2017,2018
-% TeX Users Group.
+% Copyright 1994-2019 TeX Users Group.
 % 
 % This file is part of the tugboat package.
 % 
@@ -609,7 +608,6 @@ and of course the class sources are the ultimate reference.
       \verb|\MacOSX| & \MacOSX \\
       \verb|\MathML| & \MathML \\
       \verb|\MF|     & \MF \\
-      \verb|\MP|     & \MP \\
       \verb|\OMEGA|  & \OMEGA \\
       \verb|\PDF|    & \PDF \\
       \verb|\SGML|   & \SGML \\
@@ -658,14 +656,16 @@ the `everyday' ones.
 
 \section{Use of packages}
 
-In general, authors can use non-standard packages in their papers.
-However, the paper does need to be processable on the \TUB{} production
-computers (running current \TeX\ Live). A sensible mechanism for
-submitting out-of-the-ordinary packages (as for paper-specific
-bibliographies) is by use of the \envname{filecontents} environment.
+Being a \TeX\ journal, authors may use both standard and non-standard
+external packages for their articles. The overriding criterion is that
+articles need to be processable on the \TUB{} production computers
+(running current \TeX\ Live). A sensible mechanism for submitting
+personal packages is by use of the \envname{filecontents} environment.
+It's also fine to submit manuscript source with additional packages in a
+zip or other archive.
 
 In general, packages currently on \CTAN, and known to work with
-\emph{current} \LaTeX{} are unlikely to give problems. In particular,
+\emph{current} \LaTeX{} are likely to be fine. In particular,
 the team is happy to accept papers using packages that are supported by
 members of the \LaTeX3 team,\footnote{%
   Those in the \LaTeX{} base distribution, or one of those in the
@@ -675,33 +675,29 @@ mentioned (section~\ref{sec:verbatim}): that use of the standard
 facilities provided by the \TUB\ classes.
 
 \tug{} has a policy that macro packages described in \TUB{} should be
-available for readers to use.  Since typing macros from printed
-sources is such an error-prone undertaking, authors of publicly
-available packages are urged to submit their macros to the \CTAN{}
-archives.  If a package is only available under restricted terms,
-authors are urged to make this fact clear when first submitting an
-article to the editor.
+available for readers to use. Since typing macros from printed sources
+is a tedious undertaking, authors of publicly available packages are
+urged to submit their macros to \CTAN{}. If a package is only available
+under restricted terms, authors are requested to make this fact clear
+when first submitting an article to the editor.
 
-At present, the list of canonically recommended packages consists of
-only two, \path|mflogo.sty| \cite{Vieth:mflogo:1995} and \path|url.sty|
-\cite{Arseneau:url:1996}.
+The \texttt{ltugboat} class loads the package \path|mflogo.sty|
+\cite{Vieth:mflogo:1995} for typesetting the \MF\ logo. (If this package
+is not present by some mischance, \texttt{ltugboat} will emulate its
+important feature.)
 
-Both classes will load the \pkgname{mflogo} package if it is present on the
-author's system; if the package is not present, the classes will
-emulate its more important features; the package defines \MF{} and
-\MP{} logos using recent versions of Knuth's \verb|logo10| font family.
-
-The \pkgname{url} package is useful when one is typesetting significant
-numbers of file names, network addresses or \acro{URL}s; it is being
-used in the present paper (not least in the bibliography). Speaking of
-urls, nowadays we generally omit a leading \texttt{http://} or
-\texttt{https://}.
+An additional canonically-recommended package is \path|url.sty|
+\cite{Arseneau:url:1996}, for typesetting filenames, email addresses,
+urls, etc.; it is being used throughout the present paper (not least in
+the bibliography). Speaking of urls, nowadays we generally omit a
+leading \texttt{http://} or \texttt{https://}.
 
 Although not necessarily recommended in all cases, many additional
 packages are commonly used. To mention a few: \texttt{microtype} can
 help reduce overfull boxes; sometimes it may be preferable to use the
-Latin Modern fonts via \texttt{lmodern}; and \texttt{hyperref} allows
-for many internal links and other features.
+Latin Modern fonts via \texttt{lmodern}; \texttt{iftex} provides tests
+for the \TeX\ engine being run; and \texttt{hyperref} supports live and
+internal hyperlinks, outlines, and many other features.
 
 \section{Bibliography}
 \label{sec:biblio}
@@ -729,7 +725,7 @@ though, you may enjoy the following small but useful features:
 \item The \textsf{url} field is ignored if either the \textsf{doi} or
 \textsf{howpublished} field is present, since in practice we observe
 that people put the same information in all those fields, and we don't
-want to use up space typesetting redundant information.
+typeset redundant information.
 
 \item Has even more abbreviations than \textsf{abbrv}, including
 printing only two author names (plus ``et~al\@.'') if there are more
@@ -740,8 +736,9 @@ than four authors (thanks to Mico Loretan).
 \item For completeness only: \verb|tugboat.bst| provides ``secret''
 fields \textsf{newpage} to force a page break after the current item,
 and \textsf{urlnewline} to force a line break before the \textsf{url}
-value. We've found that these presentation tweaks are often necessary
-for the final typeset output. Authors need not worry about them.
+value. As editors, we've found that these presentation tweaks are often
+necessary for the final typeset output. Authors need not worry about
+them.
 
 \end{itemize}
 
@@ -761,9 +758,8 @@ set \cs{sloppy}, by default (just like \LaTeX{}), but the author may
 \end{verbatim}
 as the present article does, to achieve somewhat better results.
 
-A last note for bibliographies: for references to other issues of \TUB,
-please use the format \textsl{volno:issno}, e.g., ``\TUB\ 32:1'' for
-volume~32, number~1.
+A last note for references: for \TUB\ issues, please use the format
+\textsl{volno\,:\,issno}, e.g., ``\TUB\ 32:1'' for volume~32, number~1.
 
 \section{Non-recommended bibliography facilities}
 

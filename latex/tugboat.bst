@@ -2,13 +2,14 @@
 %%% TUGboat changes are public domain.
 %%% 
 %%% Modified for TUGboat from abbrvurl.bst:
-%%%   abbreviate "page(s)" to "p(p).",
+%%%   Abbreviate "page(s)" to "p(p).",
 %%%     "volume" to "vol.",
 %%%     "editor(s)" to "ed(s)".
-%%%   set urlintro="", output "Ph.D." rather than "PhD".
-%%%   reduce long author lists in format.names per Mico Loretan.
-%%%   new fields for editors:
-%%%     "newpage" - force page break after entry
+%%%   Set urlintro="".
+%%%   Output "Ph.D." rather than "PhD".
+%%%   Reduce long author lists in format.names per Mico Loretan.
+%%%   New fields for editors:
+%%%     "newpage" - force page break after entry;
 %%%     "urlnewline" - force line break before url value.
 %%% --karl, originally created 24jul18.
 %%% 
@@ -22,7 +23,7 @@
 %%% Added hyperref support.
 %%% Original headers follow...
 
-% BibTeX standard bibliography style `abbrv'
+% [was] BibTeX standard bibliography style `abbrv'
         % version 0.99a for BibTeX versions 0.99a or later, LaTeX version 2.09.
         % Copyright (C) 1985, all rights reserved.
         % Copying of this file is authorized only if either
