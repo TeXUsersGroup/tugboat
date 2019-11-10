@@ -1,3 +1,9 @@
+2019-11-10  Karl Berry  <karl@tug.org>
+
+	* lists-translations.txt (\~a, \PNG, \SVG, \ldots): new for tb126.
+	* tb126capsule.txt: new.
+	* tb125capsule.txt: public.
+
 2019-10-14  Karl Berry  <karl@tug.org>
 
 	* Makefile (unparsed): look for Dash, accept ~ross.

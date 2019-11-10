@@ -13,12 +13,6 @@
 % 
 
 \begin{blurb}
-<p>Immediate online access to technical TUGboat articles will be
-available to TUG members only (so some of the links below require a TUG
-username and password).  General information items and articles already
-posted elsewhere are publicly available now.  All of the articles will
-become publicly available around May&nbsp;2020.
-
 <p>If you're not already a member, we hope you'll consider <a
 href="/join.html">joining TUG</a> to support TUGboat and other TeX
 projects.  <a href="/memberaccess.html">More information on TUG member
@@ -35,7 +29,7 @@ access</a>.
         {Complete issue 40:2 as one pdf (9.1mb)}
         {}
         {\offset{.1}}
-        {https://tug.org/members/TUGboat/!TBIDENT!complete.pdf}
+        {/TUGboat/!TBIDENT!complete.pdf}
         {}
         {}
 
@@ -113,7 +107,7 @@ access</a>.
 %%   {Typographers' Inn}
 %%   {Monospace that fits; Centering (reprise); Afterthought}
 %%   {\getfirstpage{inn}}
-%%   {https://tug.org/members/TUGboat/!TBIDENT!inn.pdf}
+%%   {/TUGboat/!TBIDENT!inn.pdf}
 %%   {}
 %%   {}
 %
@@ -176,7 +170,7 @@ access</a>.
   {Design into \acro{3D}: A system for customizable project designs}
   {computer-controlled manufacturing using MetaPost and \TeX}
   {136-142}
-  {https://tug.org/members/TUGboat/!TBIDENT!adams-3d.pdf}
+  {/TUGboat/!TBIDENT!adams-3d.pdf}
   {}
   {}
 
@@ -196,7 +190,7 @@ access</a>.
 %%  {Science and history behind the design of Lucida}
 %%  {historical precedents, principles of reading, practical digital type design}
 %%  {\getfirstpage{bigelow-lucida}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!bigelow-lucida.pdf}
+%%  {/TUGboat/!TBIDENT!bigelow-lucida.pdf}
 %%  {}
 %%  {}
 %%
@@ -206,7 +200,7 @@ access</a>.
 %%  {Managing the paper trail of student projects: \texttt{datatool} and more}
 %%  {step-by-step generation of typical student reports from \texttt{.csv} files}
 %%  {\getfirstpage{johansson-datatool}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!johansson-datatool.pdf}
+%%  {/TUGboat/!TBIDENT!johansson-datatool.pdf}
 %%  {}
 %%  {}
 %
@@ -226,7 +220,7 @@ access</a>.
 %  {New front ends for \TeX\ Live}
 %  {standalone Tcl/Tk-based \acro{GUI}s for the \acro{TL} installer and \code{tlshell} for \code{tlmgr}}
 %  {\getfirstpage{kroonenberg-gui}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!kroonenberg-gui.pdf}
+%  {/TUGboat/!TBIDENT!kroonenberg-gui.pdf}
 %  {}
 %  {}
 %
@@ -266,7 +260,7 @@ access</a>.
 %%  {Managing forlorn paragraph lines (a.k.a.\ widows and orphans) in \LaTeX}
 %%  {finding all widows and orphans, and discussion of possible fixes}
 %%  {\getfirstpage{mitt-widows}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!mitt-widows.pdf}
+%%  {/TUGboat/!TBIDENT!mitt-widows.pdf}
 %%  {}
 %%  {}
 
@@ -277,7 +271,7 @@ access</a>.
          the printing press, typewriting, and computerized word processing}
   {concise overview of Arabic/Persian typesetting, typewriting, and modern digital display}
   {179-186}
-  {https://tug.org/members/TUGboat/!TBIDENT!parhami-scripts.pdf}
+  {/TUGboat/!TBIDENT!parhami-scripts.pdf}
   {}
   {}
 
@@ -287,7 +281,7 @@ access</a>.
   {Improving Hangul to English translation for optical character recognition~\rlap{(\acro{OCR})}}
   {investigation of a gray ratio method to distinguish English syllables in Korean from true Korean}
   {194-195}
-  {https://tug.org/members/TUGboat/!TBIDENT!park-hangul.pdf}
+  {/TUGboat/!TBIDENT!park-hangul.pdf}
   {}
   {}
 
@@ -297,7 +291,7 @@ access</a>.
   {Neptune\Dash a proofing framework for \LaTeX{} authors}
   {features of this web-based proofing and editing program}
   {150-152}
-  {https://tug.org/members/TUGboat/!TBIDENT!rajendran-neptune.pdf}
+  {/TUGboat/!TBIDENT!rajendran-neptune.pdf}
   {}
   {}
 
@@ -307,7 +301,7 @@ access</a>.
   {\BibTeX-based dataset generation \\for training citation parsers}
   {improving citation structure recognition by training with large \BibTeX\ databases}
   {167-169}
-  {https://tug.org/members/TUGboat/!TBIDENT!ramesh-cite.pdf}
+  {/TUGboat/!TBIDENT!ramesh-cite.pdf}
   {}
   {}
 
@@ -327,7 +321,7 @@ access</a>.
   {\TeX Folio\Dash a framework to typeset \XML\ documents using~\rlap{\TeX}}
   {overview of workflow and features of the cloud-based \url{texfolio.org}}
   {147-149}
-  {https://tug.org/members/TUGboat/!TBIDENT!rishi-texfolio.pdf}
+  {/TUGboat/!TBIDENT!rishi-texfolio.pdf}
   {}
   {}
 
@@ -347,7 +341,7 @@ access</a>.
 %%%%%  {An introduction to the \LaTeX{} cross-referencing system}
 %%%%%  {built-in commands and useful packages: \pkg{cleveref}, \pkg{varioref}, \pkg{hyperref}, \pkg{xr{\rm[}-hyper{\rm]}}, \pkg{showlabels}}
 %%%%%  {\getfirstpage{thurnherr}}
-%%%%%  {https://tug.org/members/TUGboat/!TBIDENT!thurnherr.pdf}
+%%%%%  {/TUGboat/!TBIDENT!thurnherr.pdf}
 %%%%%  {}
 %%%%%  {}
 
@@ -357,7 +351,7 @@ access</a>.
   {Creating commented editions with \LaTeX{}\Dash the \texttt{commedit} package}
   {making teacher's and student's books from one source}
   {159-162}
-  {https://tug.org/members/TUGboat/!TBIDENT!veytsman-editions.pdf}
+  {/TUGboat/!TBIDENT!veytsman-editions.pdf}
   {}
   {}
 
@@ -367,7 +361,7 @@ access</a>.
   {Creating and automating exams with \LaTeX\ \& friends}
   {customized exams, grading, and variable question generation with Python}
   {163-166}
-  {https://tug.org/members/TUGboat/!TBIDENT!ziegenhagen-exam.pdf}
+  {/TUGboat/!TBIDENT!ziegenhagen-exam.pdf}
   {}
   {}
 
@@ -380,7 +374,7 @@ access</a>.
   {Mac\TeX-2019, notification, and hardened runtimes}
   {automated signing, notarization, entitlements for Mac\TeX-related packages}
   {115-118}
-  {https://tug.org/members/TUGboat/!TBIDENT!koch-harden.pdf}
+  {/TUGboat/!TBIDENT!koch-harden.pdf}
   {}
   {}
 
@@ -400,7 +394,7 @@ access</a>.
 %  {\TeX4ht: \LaTeX\ to Web publishing}
 %  {configuring \HTML, \XML, \dots\ generation with \TeX4ht and \code{make4ht}}
 %  {\getfirstpage{hoftich-make4ht}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!hoftich-make4ht.pdf}
+%  {/TUGboat/!TBIDENT!hoftich-make4ht.pdf}
 %  {}
 %  {}
 %
@@ -410,7 +404,7 @@ access</a>.
 %%   {\TeX\ Gyre text fonts revisited}
 %%   {incorporating math and symbol glyphs into text fonts, and OpenType accent positioning}
 %%   {\getfirstpage{jackowski-gyre}}
-%%   {https://tug.org/members/TUGboat/!TBIDENT!jackowski-gyre.pdf}
+%%   {/TUGboat/!TBIDENT!jackowski-gyre.pdf}
 %%   {}
 %%   {}
 
@@ -430,7 +424,7 @@ access</a>.
   {Type~3 fonts and \PDF\ search in {\tt dvips}}
   {encodings for Metafont fonts in {\tt dvips} output to enable \PDF\ search}
   {108-111}
-  {https://tug.org/members/TUGboat/!TBIDENT!rokicki-type3search.pdf}
+  {/TUGboat/!TBIDENT!rokicki-type3search.pdf}
   {}
   {}
 
@@ -440,7 +434,7 @@ access</a>.
   {The design of the \acro{HINT} file format}
   {a new \TeX\ output format intended for on-screen reading, including reflowing and repaging on demand}
   {143-146}
-  {https://tug.org/members/TUGboat/!TBIDENT!ruckert-hint.pdf}
+  {/TUGboat/!TBIDENT!ruckert-hint.pdf}
   {}
   {}
 
@@ -450,7 +444,7 @@ access</a>.
   {The unreasonable effectiveness of pattern generation}
   {developing a free word list and improved hyphenation patterns for the Czech language}
   {187-193}
-  {https://tug.org/members/TUGboat/!TBIDENT!sojka-patgen.pdf}
+  {/TUGboat/!TBIDENT!sojka-patgen.pdf}
   {}
   {}
 
@@ -460,7 +454,7 @@ access</a>.
   {Quickref: Common Lisp reference documentation as a stress test for Texinfo}
   {automated building of global documentation for the Common Lisp ecosystem}
   {119-125}
-  {https://tug.org/members/TUGboat/!TBIDENT!verna-quickref.pdf}
+  {/TUGboat/!TBIDENT!verna-quickref.pdf}
   {}
   {}
 
@@ -470,7 +464,7 @@ access</a>.
   {Combining \LaTeX\ with Python}
   {both writing \AllTeX\ from Python and running Python from \LaTeX}
   {126-128}
-  {https://tug.org/members/TUGboat/!TBIDENT!ziegenhagen-python.pdf}
+  {/TUGboat/!TBIDENT!ziegenhagen-python.pdf}
   {}
   {}
 
@@ -483,7 +477,7 @@ access</a>.
   {A glance at \acro{CJK} support with {\XeTeX} and {Lua\TeX}}
   {reasonable Chinese/Japanese/Korean typesetting with minimal code}
   {196-201}
-  {https://tug.org/members/TUGboat/!TBIDENT!bossard-cjk.pdf}
+  {/TUGboat/!TBIDENT!bossard-cjk.pdf}
   {}
   {}
 
@@ -493,7 +487,7 @@ access</a>.
    {FreeType\_\acro{MF}\_Module2: Integration~of \MF, \acro{GF}, and \acro{PK} inside FreeType}
    {rendering \MF, \acro{GF}, and \acro{PK} fonts on demand from within FreeType}
    {170-178}
-   {https://tug.org/members/TUGboat/!TBIDENT!choi-freetype2.pdf}
+   {/TUGboat/!TBIDENT!choi-freetype2.pdf}
    {}
    {}
 
@@ -503,7 +497,7 @@ access</a>.
 %  {\TeX.StackExchange cherry picking, part~2: Templating}
 %  {extended \code{expl3} programming examples: templating and double loops, \acro{ISBN}, catcode tables, and more}
 %  {\getfirstpage{gregorio-templating}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!gregorio-templating.pdf}
+%  {/TUGboat/!TBIDENT!gregorio-templating.pdf}
 %  {}
 %  {}
 %
@@ -526,26 +520,6 @@ access</a>.
   {/TUGboat/!TBIDENT!menke-lpeg.pdf}
   {}
   {}
-
-%%%%\capsule{}
-%%%%  {Macros}%add|Indexing
-%%%%  {Nicola Talbot}
-%%%%  {Testing indexes: {\tt testidx.sty}}
-%%%%  {test methodology and exhaustive comparisons of \code{makeindex}, \code{xindy}, \code{glossaries}, and more}
-%%%%  {\getfirstpage{talbot}}
-%%%%  {https://tug.org/members/TUGboat/!TBIDENT!talbot.pdf}
-%%%%  {}
-%%%%  {}
-%%
-%%\capsule{}
-%%  {Methods}
-%%  {Udo Wermuth}
-%%  {Experiments with \cs{parfillskip}}
-%%  {analysis of \cs{parfillskip} settings, aiming to minimize too-short or too-long last lines}
-%%  {\getfirstpage{wermuth-parfillskip}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!wermuth-parfillskip.pdf}
-%%  {}
-%%  {}
 
 
 \difficulty{Contents of other \TeX\ journals}

@@ -69,6 +69,8 @@ R\r{u}\v{z}i\v{c}ka||R&#367;&#382;i&#269;ka||Ruzicka
 #
 \^o||&ocirc;||o
 #
+\~a||&atilde;||a
+#
 \=a||&#x0101;||a
 \=\i||&#x012b;||i
 \={u}||&#x016b;||u
@@ -155,8 +157,8 @@ $\Omega_2$||&Omega;2||O2
 \OMEGA||Omega
 \PDF||PDF
 \PiC tures||PiCtures
+\PNG||PNG
 \PS||PS
-\SGML||SGML
 \rm||
 \ss{}||&szlig;||ss
 \slash ||/
@@ -165,6 +167,8 @@ $\Omega_2$||&Omega;2||O2
 \slMF\||Metafont
 \slMF||Metafont
 \slMP||MetaPost
+\SGML||SGML
+\SVG||SVG
 {\TeX}||TeX
 \TeX{}||TeX
 \TeX\,||TeX
@@ -196,6 +200,7 @@ $\Omega_2$||&Omega;2||O2
 \Dash||&mdash;||\\
 {\dots}||&hellip;||\\
 \dots||&hellip;\\
+\ldots||&hellip;\\
 \\ || \\
 \ || \\
 \newline || \\

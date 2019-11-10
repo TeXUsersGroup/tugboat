@@ -16,8 +16,8 @@ time = time -f "time:%e"
 
 default check: one #all-diff
 
-testiss = 124
-lastiss = 125
+testiss = 125
+lastiss = 126
 
 outone = ~karl/public_html/x.html
 #outone = /tmp/x.html
