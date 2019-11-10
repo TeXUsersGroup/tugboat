@@ -1,3 +1,8 @@
+2019-11-10  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst (format.names), (format.crossref.editor):
+	try ", " instead of " and ".
+
 2019-11-09  Karl Berry  <karl@freefriends.org>
 
 	* version 2.22 (2019-11-09) uploaded to CTAN.
