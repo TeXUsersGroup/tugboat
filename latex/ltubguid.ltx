@@ -226,8 +226,8 @@ produced.  (\path|ltugproc.cls| is also produced for compatibility, but
 is no longer used for proceedings or anything else.)
 
 The\,\verb|.dtx| file may itself be processed by \LaTeX{} to
-produce a formatted (somewhat `literate') source listing for those who
-would like more detailed descriptions of the \TUB\ macros.
+produce a formatted (somewhat `literate') source listing for those 
+interested in the implementation of the \TUB\ macros.
 
 \section{The general structure of a paper}
 
@@ -689,8 +689,7 @@ important feature.)
 An additional canonically-recommended package is \path|url.sty|
 \cite{Arseneau:url:1996}, for typesetting filenames, email addresses,
 urls, etc.; it is being used throughout the present paper (not least in
-the bibliography). Speaking of urls, nowadays we generally omit a
-leading \texttt{http://} or \texttt{https://}.
+the bibliography).
 
 Although not necessarily recommended in all cases, many additional
 packages are commonly used. To mention a few: \texttt{microtype} can
@@ -698,6 +697,15 @@ help reduce overfull boxes; sometimes it may be preferable to use the
 Latin Modern fonts via \texttt{lmodern}; \texttt{iftex} provides tests
 for the \TeX\ engine being run; and \texttt{hyperref} supports live and
 internal hyperlinks, outlines, and many other features.
+
+More about urls: (1)~nowadays we typically omit a leading
+\texttt{http://} or \texttt{https://}; (2)~\tug\ provides a shortcut url
+mechanism, \url{tug.org/l/}\meta{ident}, where \meta{ident} can be any
+tag, similar to \url{tinyurl.com} and similar. The idea is that
+\url{tug.org} shortcuts can be used in \TUB\ articles needing to link to
+excessively long and/or unstable web resources; then we update the
+shortcut if needed, and not worry that a commercial provider will
+disappear. The only way to create a \url{tug.org/l/} shortcut is by request.
 
 \section{Bibliography}
 \label{sec:biblio}
@@ -720,12 +728,12 @@ though, you may enjoy the following small but useful features:
 \begin{itemize}
 \item It is based on \pkgname{abbrvurl.bst} (see \url{ctan.org/pkg/urlbst}),
 
-\item thus supports \textsf{url} and \textsf{doi} fields, among others.
+\item and thus supports \textsf{url} and \textsf{doi} fields, among others.
 
-\item The \textsf{url} field is ignored if either the \textsf{doi} or
-\textsf{howpublished} field is present, since in practice we observe
-that people put the same information in all those fields, and we don't
-typeset redundant information.
+\item The \textsf{url} field is ignored if either the \textsf{howpublished} or
+\textsf{doi} field is present. In practice we observe that people put
+the same information in all those fields, and we don't typeset redundant
+information.
 
 \item Has even more abbreviations than \textsf{abbrv}, including
 printing only two author names (plus ``et~al\@.'') if there are more
@@ -737,7 +745,7 @@ than four authors (thanks to Mico Loretan).
 fields \textsf{newpage} to force a page break after the current item,
 and \textsf{urlnewline} to force a line break before the \textsf{url}
 value. As editors, we've found that these presentation tweaks are often
-necessary for the final typeset output. Authors need not worry about
+desirable for the final typeset output. Authors need not worry about
 them.
 
 \end{itemize}
@@ -764,23 +772,23 @@ A last note for references: for \TUB\ issues, please use the format
 \section{Non-recommended bibliography facilities}
 
 The preceding gives the bibliography recommendations for current \TUB\
-article. If, for whatever reason, you cannot follow the recommendation,
-this section is about some of the myriad historical and other
-possibilities.
+articles. If, for whatever reason, you do not wish to follow those
+recommendations, this section is about some of the myriad historical and
+other possibilities.
 
-Notwithstanding the general recommendation for the \pkgname{tugboat}
-(falling back to \pkgname{plain}) \BibTeX\ style, \TUB's Harvard
+Notwithstanding that general recommendation for the \pkgname{tugboat}
+(falling back to \pkgname{plain}) \BibTeX\ style, \TUB's Harvard-style
 citation support may be selected by specifying \optname{harvardcite} as
 an option of the \cs{documentclass} command.\footnote{%
   The macros used derive rather directly from the `harvard' styles
-  written by Glenn Paulley and now maintained by Peter Williams; the
+  written by Glenn Paulley and later maintained by Peter Williams; the
   \BibTeX{} style derives from one developed by Patrick Daly.}
 If your article demands Harvard-style citations, you may prefer to load
 \pkgname{natbib} or similar instead of using \TUB's facilities; that's
 ok.
 
-The basic citation format is `author(s), year', but the macros are
-capable of many variations: this in turn places somewhat of a load on
+This basic citation format is `author(s), year', but the macros are
+capable of many variations. This in turn places somewhat of a load on
 the author to use the correct citation macro. The macros available are
 shown in figure~\ref{fig:citation-macros}; the figure assumes an entry
 in the bibliography with authors Tom, Dick, and~Harry, and with a 1990
@@ -818,7 +826,7 @@ controlled by the \optname{extralabel} and \optname{noextralabel} class
 options.  The default state (option \optname{extralabel}) attaches the
 extra characters.
 
-As for \BibLaTeX, we don't recommend it for \TUB. If you feel you must
+As for \BibLaTeX: we don't recommend it for \TUB. If you feel you must
 use it, that is ok, but we may still change it to using the default
 \LaTeX\ and \BibTeX\ facilities in processing for publication if the
 output from \BibLaTeX\ is problematic, as we have often seen it to be.
@@ -865,11 +873,8 @@ section~\ref{sec:verbatim}).
 
 Of course, the syntax of commands given to the \LaTeX{} classes is
 different (as discussed in section~\ref{sec:syntax}); arguments are
-(almost always) enclosed in braces, and neither of the forms of
-argument provision promulgated by the `plain' macros
-(\cs{macro}\meta{argument}\linebreak[0]\cs{endmacro} and
-\cs{macro * }\meta{argument}\verb| *|) are provided by the \LaTeX{}
-classes.
+(almost always) enclosed in braces instead of the various
+forms provided by the `plain' macros.
 
 \SetBibJustification{\raggedright}
 \bibliographystyle{tugboat}
