@@ -1,3 +1,13 @@
+2019-11-27  Karl Berry  <karl@freefriends.org>
+
+	* capaccum-author.pl,
+	* capaccum-keyword.pl,
+	* capaccum-title.pl: expand the template string accordingly.
+	* capaccum.pl (accumulation): use template for <h2> string
+	instead of hardwired "Author/People". Report from Udo Wermuth.
+
+	* tb124.capsule.txt (Atkinson): note comic is on second page of pdf.
+
 2019-11-10  Karl Berry  <karl@tug.org>
 
 	* lists-translations.txt (\~a, \PNG, \SVG, \ldots): new for tb126.

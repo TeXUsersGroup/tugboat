@@ -106,14 +106,15 @@ sub accumulation {
     }
   }
   
-  # This boilerplate text needs to be at the top of each list.
+  # This boilerplate text needs to be at the top of each list,
+  # with one silly "template" for the <h2>.
   # 
   my $list_hdr_common = <<END_LIST_HDR_COMMON;
 <table><tr>
 <td><img alt="TUGboat" align="bottom"
          width=343 height=76 src="/TUGboat/noword.jpg"><br>
-  <b><h1> The Communications of <br>the TeX Users Group</h1></b><br>
-  <h2>Author/People List</h2></td>
+  <b><h1>The Communications of&nbsp;<br>the TeX Users Group</h1></b><br>
+  <h2>%h2text%&nbsp;</h2></td>
 <td><img alt="printing press" align="right" hspace=10
          width=316 height=341 src="/TUGboat/press72.jpg"><br>&nbsp;</td>
 </tr></table>

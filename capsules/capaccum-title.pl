@@ -11,8 +11,10 @@ sub output_title_list {
 
   my $listfile = ">list$what.html";
   open (my $fh, $listfile) || die "open($listfile.html) failed: $!";
-  print $fh &cap_html_header ("TUGboat Title list");
-  print $fh $list_hdr_common;
+  my $title = "TUGboat Title list";
+  print $fh &cap_html_header ($title);
+  (my $header = $list_hdr_common) =~ s/%h2text%/$title/;
+  print $fh $header;
   
   print $fh <<END_HEADER;
 <a href="listauthor.html">Author/People</a> or
