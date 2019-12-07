@@ -411,7 +411,7 @@ FUNCTION {format.names}
               if$
               t "others" =
                 { " et~al." * }
-                { " " * t * }
+                { " and " * t * }
               if$
             }
           if$
@@ -690,7 +690,7 @@ FUNCTION {format.crossref.editor}
         'skip$
         { editor #2 "{ff }{vv }{ll}{ jj}" format.name$ "others" =
             { " et~al." * }
-            { ", " * editor #2 "{vv~}{ll}" format.name$ * }
+            { " and " * editor #2 "{vv~}{ll}" format.name$ * }
           if$
         }
       if$
