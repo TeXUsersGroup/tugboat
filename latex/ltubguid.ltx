@@ -729,19 +729,22 @@ though, you may enjoy the following small but useful features:
 \item It is based on \pkgname{abbrvurl.bst} (see \url{ctan.org/pkg/urlbst}),
 
 \item and thus supports \textsf{url} and \textsf{doi} fields, among others.
+Please use \textsf{url} instead of putting urls in the
+\textsf{note} field, where possible. Also, please don't bother to
+include ``url access date'' information for \TUB; we find that extraneous.
 
 \item The \textsf{url} field is ignored if either the \textsf{howpublished} or
 \textsf{doi} field is present. In practice we observe that people put
-the same information in all those fields, and we don't typeset redundant
-information.
+the same information in all those fields, and we don't want to typeset
+redundant information.
 
-\item Has even more abbreviations than \textsf{abbrv}, including
-printing only two author names (plus ``et~al\@.'') if there are more
-than four authors (thanks to Mico Loretan).
+\item Has even more abbreviations than \textsf{abbrv}, such as
+printing only two author names (plus ``et~al.'')\ if there are more than
+four authors (thanks to Mico Loretan).
 
 \item Defines an \textsf{@online} entry type as an alias for \textsf{@misc}.
 
-\item For completeness only: \verb|tugboat.bst| provides ``secret''
+\item For completeness only: \verb|tugboat.bst| provides editor-intended
 fields \textsf{newpage} to force a page break after the current item,
 and \textsf{urlnewline} to force a line break before the \textsf{url}
 value. As editors, we've found that these presentation tweaks are often
@@ -752,7 +755,7 @@ them.
 
 If you use \BibTeX, feel free to take advantage of the accumulated
 bibliography of \TUB{} itself (\url{info/tugboat.bib} on \CTAN), and the
-various compilations by Nelson Beebe in that same directory.
+other compilations by Nelson Beebe in that same directory.
 
 Bibliographies provide further problems because they're notoriously
 difficult to typeset at the best of times.  \LaTeX{} sets \cs{sloppy}
@@ -764,7 +767,7 @@ set \cs{sloppy}, by default (just like \LaTeX{}), but the author may
 \begin{verbatim}
   \SetBibJustification{\raggedright}
 \end{verbatim}
-as the present article does, to achieve somewhat better results.
+as the present article does, to often achieve somewhat better results.
 
 A last note for references: for \TUB\ issues, please use the format
 \textsl{volno\,:\,issno}, e.g., ``\TUB\ 32:1'' for volume~32, number~1.

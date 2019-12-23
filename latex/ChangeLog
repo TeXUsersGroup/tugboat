@@ -1,3 +1,8 @@
+2019-12-22  Karl Berry  <karl@freefriends.org>
+
+	* ltubguid.ltx (Bibliography): request using url for urls instead
+	of note; and not bothering with url access dates.
+
 2019-12-07  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.bst (format.names): revert previous change, back to " and "
