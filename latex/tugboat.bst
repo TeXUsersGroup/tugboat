@@ -10,7 +10,8 @@
 %%%   Reduce long author lists in format.names per Mico Loretan.
 %%%   New fields for editors:
 %%%     "newpage" - force page break after entry;
-%%%     "urlnewline" - force line break before url value.
+%%%     "urlnewline" - force line break before url value;
+%%%     "journaltie" - ~ instead of space after journal name.
 %%% --karl, originally created 24jul18.
 %%% 
 %%% Modification of BibTeX style file /usr/local/texlive/2009/texmf-dist/bibtex/bst/base/abbrv.bst
@@ -61,8 +62,9 @@ ENTRY
     pubmed % urlbst
     url % urlbst
     lastchecked % urlbst
-    newpage % tub
+    newpage    % tub
     urlnewline % tub
+    journaltie % tub
   }
   {}
   { label }
@@ -150,15 +152,23 @@ STRINGS { s t last.output.check }
 
 % urlbst
 % arg on stack is what needs to be written.
+% 
 % If a journal, we want to omit the following comma, as in
 % "TUGboat 39(1)" instead of the default "TUGboat, 39(1)".
+% 
+% Furthermore, if field journaltie is non-empty, output a tie after the
+% journal name instad of a space.
 % 
 FUNCTION {output.nonnull.original}
 { 's :=
   output.state mid.sentence =
     { last.output.check "journal" = not
         { ", " * }
-        {  " " *}
+        { journaltie empty$ not
+          { "~" * }
+          { " " * }
+          if$
+        }
       if$
       write$
     }

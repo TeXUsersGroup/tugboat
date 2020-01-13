@@ -1,3 +1,10 @@
+2020-01-13  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst (journaltie): new field.
+	(output.nonnull.original): if set, output ~ instead of " "
+	after the journal name.
+	* ltubguid.ltx (Explanations): mention it.
+
 2019-12-22  Karl Berry  <karl@freefriends.org>
 
 	* ltubguid.ltx (Bibliography): request using url for urls instead

@@ -15,7 +15,8 @@ for d in "$@"; do
   
   # we don't need or expect info for these several items.
   if    echo $d | egrep '^(edit|instmem|pres|ltnews)' >/dev/null \
-     || echo $d | egrep '^(komo|zprav|treas|elec|calendar)' >/dev/null; then
+     || echo $d | egrep '^(komo|zprav|arstexnica)' >/dev/null \
+     || echo $d | egrep '^(treas|elec|calendar)' >/dev/null; then
     continue
   fi
   
