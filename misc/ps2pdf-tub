@@ -21,16 +21,15 @@ fi
 # -r1200 is to avoid rendering on a tiny canvas, which can trip
 #   heuristics of complicated fonts, as (relating to a Hans font) in:
 #   https://bugs.ghostscript.com/show_bug.cgi?id=701753 
-# -dEmbedAllFonts doesn't (didn't) always work to embed fonts,
-# -dPDFX=true old failure with annotations in gs 9.14 (tb109reviews-xie), 
-# -dPDFSETTINGS=/prepress works so far to ensure embedded fonts,
-#   except that if downscaling images with zres, have to override.
-# -dAutoRotatePages since of course we do not want pages randomly rotated,
+# -dPDFSETTINGS=/prepress works so far to ensure embedded fonts.
+# -dAutoRotatePages since no, we do not want pages randomly rotated.
 # -dCompressFonts seems not to hurt, and can save notable space.
-# -dDetectDuplicateImages similarly,
+# -dDetectDuplicateImages similarly.
+# -dEmbedAllFonts doesn't (didn't) always work to embed fonts,
+#   except that if downscaling images with zres, have to override.
 # -dPrinted=false is to preserve internal links within the pdf,
-#   notably for the cover/cover3 in our tb*complete.pdf
-#   (https://tex.stackexchange.com/questions/456896).
+#   notably for the cover/cover3 in our tb*complete.pdf:
+#   https://tex.stackexchange.com/questions/456896
 #set -x
 $gs -q -dNOPAUSE -dBATCH \
   -sDEVICE=pdfwrite \
@@ -45,17 +44,18 @@ $gs -q -dNOPAUSE -dBATCH \
   $zdistill $zres \
   -f "$1" 
 
-# -c .setpdfwrite used to be necessary, but no longer is?
-# quit.ps disappeared in gs 9.22.
+# old: -dPDFX=true failure with annotations in gs 9.14 (tb109reviews-xie), 
+# old: -c .setpdfwrite used to be necessary, but no longer is?
+# old: quit.ps disappeared in gs 9.22.
 
 if test x"$2" = "x$1.tmppdf"; then
   cp "$1" ${TMPDIR-/tmp}/ps2pdf-`basename "$1"`
   mv "$2" "$1"
 fi
 
-# the default seems good enough for us, since we usually do want some
-# sort of compression. explanation of many options, including the way to
-# get all default settings for pdfwrite:
+# Re image compression, the default seems good enough for us, since we
+# usually do want some sort of compression. explanation of many options,
+# including the way to get all default settings for pdfwrite:
 # https://superuser.com/questions/360216/use-ghostscript-but-tell-it-to-not-reprocess-images
 # namely:
 # gs -sDEVICE=pdfwrite -o /dev/null \
