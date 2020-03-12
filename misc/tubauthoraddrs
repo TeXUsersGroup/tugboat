@@ -14,7 +14,7 @@ for d in "$@"; do
   fi
   
   # we don't need or expect info for these several items.
-  if    echo $d | egrep '^(edit|instmem|pres|ltnews)' >/dev/null \
+  if    echo $d | egrep '^(edit|instmem|pres|l[t3]news)' >/dev/null \
      || echo $d | egrep '^(komo|zprav|arstexnica)' >/dev/null \
      || echo $d | egrep '^(treas|elec|calendar)' >/dev/null; then
     continue
@@ -27,14 +27,21 @@ for d in "$@"; do
   elif echo $d | grep '^hagen-' >/dev/null; then
     echo; echo $d:; echo "  Hans Hagen"
     continue
+  elif echo $d | grep '^mitt-' >/dev/null; then
+    echo; echo $d:; echo "  Frank Mittelbach"
+    continue
   elif echo $d | grep '^wright-' >/dev/null; then
     echo; echo $d:; echo "  Joseph Wright"
+    continue
+  elif echo $d | grep '^walden-' >/dev/null; then
+    echo; echo $d:; echo "  David Walden"
     continue
   fi
   
   # we have a regular article, see if we have info.
   metadata=`sed -n '/^%%% Start of meta/,/^%%% End of meta/p' "$src"`
   if test -z "$metadata"; then
+    echo >&2
     echo "$0: no %%%metadata: $src" >&2
     continue
   fi
@@ -49,6 +56,7 @@ for d in "$@"; do
   | sed 's/\\EDITORno\(net\)\?address *//' \
   | sed 's/%*\\address *{\?//' \
   | sed 's/}$//g' \
+  | sed 's/\\protect *//' \
   | sed 's/\\\\$//' \
   | sed 's/ *\\\\ */\n/g' \
   | sed 's/  *\/  */\n/g' \
