@@ -2,7 +2,7 @@
 % $Id$
 % tugboat.dtx - main source for LaTeX TUGboat classes.
 %
-% Copyright 1994-2019 TeX Users Group.
+% Copyright 1994-2020 TeX Users Group.
 %
 % This file is part of the tugboat package.
 %
@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2019-11-09 v2.22
+                   [2020-03-12 v2.23
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -277,7 +277,7 @@
 % |\revtitle|&   with one argument, title of \ldots \\
 % |\revpubinfo|& with one argument, other info pertaining to \ldots \\
 % |\endreviewitem|& end data for item being reviewed\\
-% |\booktitle|&  with one argument, format book title in text\\
+% |\booktitle|&  with one argument, format book title as straight text\\
 % |\Input|&      |\input| with some other bookkeeping for
 %                case where multiple articles are put together\\
 % |\TBremark|&   reminder to \TUB{} editorial staff\\
@@ -348,7 +348,7 @@
     \let\tuborigthepage = \thepage
     \def\thepage{%
       \ifnum\value{page}>900
-        \textsl{?\,\@arabic{\numexpr\the\c@page-900\relax}}%
+        \textsl{?\texorpdfstring{\,}{}\@arabic{\numexpr\the\c@page-900\relax}}%
       \else
         \arabic{page}%
       \fi}%
@@ -376,8 +376,18 @@
 }
 %    \end{macrocode}
 %
-% The rules dictate that the output should be set using a 10pt base
-% font.
+% We want to use \texttt{hyperref}'s \cs{texorpdfstring}, e.g., in the
+% \texttt{draft} option above. If \texttt{hyperref} is not loaded,
+% define our own trivial fallback to expand to the \TeX\ (first) argument.
+%    \begin{macrocode}
+\AtBeginDocument{%
+  \ifx\undefined\texorpdfstring
+    \DeclareRobustCommand{\texorpdfstring}[2]{#1}%
+  \fi
+}
+%    \end{macrocode}
+%
+% \TUB\ uses only 10pt for the main text.
 %
 %    \begin{macrocode}
 \DeclareOption{11pt}{%
@@ -546,7 +556,7 @@
 % We store a set of commands that should be executed at the start of
 % each paper, before any paper-specific customisation.  These commands
 % (stored in the token register \cs{ResetCommands}) include things
-% suc as resetting section and footnote numbers, re-establishing
+% such as resetting section and footnote numbers, re-establishing
 % default settings of typesetting parameters, and so on.  The user (or
 % more typically, editor) may execute the commands by using the
 % command \cs{StartNewPaper}.  Things I've not yet thought of may be
@@ -567,7 +577,7 @@
 % \end{macro}
 % \end{macro}
 %
-% \subsection{Helpful shorthand (common code with Plain styles)}
+% \subsection{Helpful shorthands (common code with Plain styles)}
 %
 % \cs{makeescape}, \dots, \cs{makecomment} allow users to change the
 % category code of a single character a little more easily.  These
@@ -1100,15 +1110,17 @@
 % \end{macro}
 % \end{macro}
 %
-% Miscellaneous useful stuff.  Note that \LaTeXe{} defines a robust
-% \cs{,}, but that we provide a new definition of |~| by redefining
-% \cs{\nobreakspace} (\cs{DeclareRobustCommand} doesn't
-% mind redefinition, fortunately). This is based on the version in
-% AMS-\TeX---the \LaTeXe{} version (|ltspace.dtx|) has \cs{leavevmode}
+% \subsection{Assorted user-level markup}
+%
+% \LaTeXe{} defines a robust \cs{,}, but that we provide a new definition
+% of |~| by redefining \cs{\nobreakspace} (\cs{DeclareRobustCommand}
+% doesn't mind redefinition, fortunately). This is based on the version
+% in AMS-\TeX---the \LaTeXe{} version (|ltspace.dtx|) has \cs{leavevmode}
 % and does not do anything with the surrounding space(s). Our version
 % messes up with the \cs{pfill} used in |doc|-generated indexes
 % (\url{github.com/latex3/latex2e/issues/75}), but later (2018++)
 % versions of |doc| should be protected against our redefinition.
+%
 %    \begin{macrocode}
 \let\latexnobreakspace=\nobreakspace
 \DeclareRobustCommand{\nobreakspace}{\unskip\nobreak\ \ignorespaces}
@@ -1160,8 +1172,8 @@
 % and upright works well enough in both italic and bold contexts.
 \DeclareRobustCommand{\cs}[1]{{\tt \char`\\#1}}
 %
-% This command was defined much later than the other, so let's not
-% conflict with any existing definitions that might be out there.
+% This command was defined much later than the others around here, so
+% let's not conflict with any existing definitions that might be out there.
 % Don't allow hyphenations or other line breaks.
 \DeclareRobustCommand{\tubbraced}[1]{\mbox{\texttt{\char`\{#1\char`\}}}}
 %
@@ -1171,6 +1183,28 @@
 % Not sure why we ever want this instead of LaTeX's \, (using \kern),
 % but fine, just keeping it.
 \DeclareRobustCommand{\thinskip}{\hskip 0.16667em\relax}
+%
+% Ah, urls. Nowadays, we like the visible url to not have any protocol,
+% if it is \texttt{http://} or \texttt{https://}. But we need to include
+% the protocol if we are making live links, since a string like
+% \texttt{tug.org/whatever} will be taken as a local filename by
+% browsers and PDF readers. Since we need to check for
+% \texttt{hyperref}, make the definition \cs{AtBeginDocument}. In the
+% end, \cs{tbsurl}\tubbraced{foo} produces \texttt{https://foo} and
+% \cs{tbhurl}\tubbraced{foo}  produces \texttt{http://foo}.
+\AtBeginDocument{%
+\ifx\hyper@normalise\undefined
+  \def\tbsurl{\url}% no hyperref, so just \url is fine.
+  \def\tbhurl{\url}%
+\else
+  % This hyperref hook-in is due to Ulrike Fischer.
+  % \url{https://github.com/latex3/hyperref/issues/125}.
+  \DeclareRobustCommand*{\tbsurl}{\hyper@normalise\tbsurl@}%
+    \def\tbsurl@#1{\hyper@linkurl{\Hurl{#1}}{https://#1}}%
+  \DeclareRobustCommand*{\tbhurl}{\hyper@normalise\tbhurl@}
+    \def\tbhurl@#1{\hyper@linkurl{\Hurl{#1}}{http://#1}}%
+\fi
+}
 %
 % Make \! work in text mode.
 \DeclareRobustCommand{\!}{\ifmmode\mskip-\thinmuskip \else\kern-0.16667em \fi}
@@ -1511,7 +1545,7 @@
 %<*classtail>
 \PrelimDrafttrue
 %    \end{macrocode}
-% \subsection{Page dimensions, glue, penalties etc}
+% \subsection{Page dimensions, glue, penalties, etc.}
 %    \begin{macrocode}
 \textheight 54pc
 \textwidth 39pc
@@ -2614,7 +2648,7 @@
 %
 % \subsection{Title references}
 %
-% This is a first cut at a mecahnism for referencing by the title of a
+% This is a first cut at a mechanism for referencing by the title of a
 % section; it employs the delightfully simple idea Sebastian Rahtz has
 % in the \texttt{nameref} package (which is part of
 % \texttt{hyperref}).  As it stands, it lacks some of the bells and
@@ -2957,14 +2991,15 @@
 %    \end{macrocode}
 %
 % Finally, if |microtype| is loaded, we want it to be deactivated in
-% verbatim blocks.  It often manipulates a leading |\| rather too much.
+% verbatim blocks.  It often manipulates a leading |\| rather too much,
+% and messes with the visible fixed-width alignment.
 %    \begin{macrocode}
 \AtBeginDocument{%
    \@ifpackageloaded{microtype}
      {\g@addto@macro\@verbatim{\microtypesetup{activate=false}}}{}
 }
 %    \end{macrocode}
-
+%
 % \subsection{Bibliography}
 % \label{sec:citations}
 % This is more or less copied verbatim from Glenn Paulley's

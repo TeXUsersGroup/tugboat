@@ -1,11 +1,11 @@
 $Id$
-Copyright 2006, 2009-2019 TeX Users Group.
+Copyright 2006, 2009-2020 TeX Users Group.
 You may freely use, modify and/or distribute this file.
 
 LaTeX macros for use in TUGboat
 ===============================
 
-See the TUGboat web pages at http://tug.org/TUGboat for upcoming
+See the TUGboat web pages at https://tug.org/TUGboat for upcoming
 deadlines, tips on writing articles, access to online issues, etc.
 We greatly appreciate new article submissions!
 
@@ -24,7 +24,7 @@ Installation and use:
 Usually you can get the tugboat packages through your distribution.
 
 But if you want to install it by hand from CTAN, its directory there
-(see http://ctan.org/pkg/tugboat) has three files containing TeX code:
+(see https://ctan.org/pkg/tugboat) has three files containing TeX code:
 
   tugboat.dtx  -- the source for the macros
   tugboat.ins  -- the docstrip instructions

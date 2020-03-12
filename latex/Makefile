@@ -1,5 +1,5 @@
 # $Id$
-# Copyright 2007-2018 TeX Users Group.
+# Copyright 2007-2020 TeX Users Group.
 # You may freely use, modify and/or distribute this file.
 # 
 opt = --interaction=nonstopmode --file-line-error
@@ -21,10 +21,16 @@ ltugcomn.sty ltugboat.sty ltugboat.cls: tugboat.ins tugboat.dtx
 	$(latex) $<
 
 check: ltugboat.sty
+	$(pdflatex) tuburltexttest.tex
+	$(pdflatex) tuburllivetest.tex
 	$(pdflatex) tubmetatest.tex
 	$(pdflatex) tubptest.tex
 	$(pdflatex) tubatest.tex
 	$(pdflatex) tubrfootest.tex
+
+spell:
+	aspell list --mode=tex --add-extra-dicts=`pwd`/.dict.pws <ltubguid.ltx\
+	| sort -f -u
 
 tub_rel = /usr/local/texlive/dev/texmf-dist/
 diff:

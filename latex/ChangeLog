@@ -1,3 +1,23 @@
+2020-03-12  Karl Berry  <karl@freefriends.org>
+
+	* version 2.23 (2020-03-12) uploaded to CTAN.
+
+	* tugboat.dtx (\tbsurl, \tbhurl): new commands for protocol-less urls,
+	providing the https:// and http:// respectively, if hyperref.
+	* ltubguid.ltx: document these; mention texosquery.
+	
+	* tugboat.dtx (\texorpdfstring): define \AtBeginDocument if undef.
+	(draft): use it for the \, to avoid hyperref warnings about \kern etc.
+
+	* README,
+	* tugboat.ins: use https.
+
+	* Makefile (spell): new target.
+	* .dict.pws: new aspell file with exceptions.
+	
+	* tuburl{tex,live}test.tex: new test files.
+	* Makefile (check): run them.
+	
 2020-01-13  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.bst (journaltie): new field.

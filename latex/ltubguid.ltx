@@ -207,7 +207,7 @@ authors.  The macros represent a development of the earlier
 use with \LaTeX~2.09; major contributors have been Robin Fairbairns,
 Sebastian Rahtz, Michel Goossens, Nico Poppelier and Johannes Braams.
 Many others have been involved, including Barbara Beeton, Karl Berry,
-Mimi Burbank, and the \LaTeX3 team.
+Mimi Burbank, and the \LaTeX\ team.
 
 \section{Availability}
 
@@ -631,7 +631,7 @@ generate calls to \cs{acro}; two examples, \cs{CTAN} and \cs{tug} of the
 list in figure~\ref{fig:acro-logo} have already been used in the present
 paper.
 
-\subsection{Other special typesetting}
+\subsection{Assorted other markup}
 
 A small list of special typesetting commands follows: a large set of
 such commands is defined in the classes, but the list covers most of
@@ -654,6 +654,8 @@ the `everyday' ones.
 %  for example \verb|\sfrac{3}{4}| is set as \sfrac{3}{4}\,.
 \end{cmdlist}
 
+For commands to typeset urls, see section~\ref{sec:urls}.
+
 \section{Use of packages}
 
 Being a \TeX\ journal, authors may use both standard and non-standard
@@ -667,7 +669,7 @@ zip or other archive.
 In general, packages currently on \CTAN, and known to work with
 \emph{current} \LaTeX{} are likely to be fine. In particular,
 the team is happy to accept papers using packages that are supported by
-members of the \LaTeX3 team,\footnote{%
+members of the \LaTeX\ team,\footnote{%
   Those in the \LaTeX{} base distribution, or one of those in the
   \CTANref{packages} sub-tree on \CTAN.} subject to the warning already
 mentioned (section~\ref{sec:verbatim}): that use of the standard
@@ -689,23 +691,64 @@ important feature.)
 An additional canonically-recommended package is \path|url.sty|
 \cite{Arseneau:url:1996}, for typesetting filenames, email addresses,
 urls, etc.; it is being used throughout the present paper (not least in
-the bibliography).
+the bibliography), either on its own or via \texttt{hyperref}.
 
 Although not necessarily recommended in all cases, many additional
 packages are commonly used. To mention a few: \texttt{microtype} can
-help reduce overfull boxes; sometimes it may be preferable to use the
-Latin Modern fonts via \texttt{lmodern}; \texttt{iftex} provides tests
-for the \TeX\ engine being run; and \texttt{hyperref} supports live and
-internal hyperlinks, outlines, and many other features.
+help reduce overfull boxes (and improve appearance); sometimes it may be
+preferable to use the Latin Modern fonts via \texttt{lmodern};
+\texttt{iftex} provides tests for the \TeX\ engine being run;
+\texttt{texosquery} provides operating system information; and
+\texttt{hyperref} supports live and internal hyperlinks, outlines, and
+many other features.
 
-More about urls: (1)~nowadays we typically omit a leading
-\texttt{http://} or \texttt{https://}; (2)~\tug\ provides a shortcut url
+\section{Typesetting urls}
+\label{sec:urls}
+
+As mentioned above, please load either \texttt{url} or (preferably)
+\texttt{hyperref} so that reasonable line breaking of urls can happen.
+
+Furthermore, for the printed (visible) \TUB\ page, nowadays we typically
+omit a leading \texttt{http://} or \texttt{https://}. But for the link
+to actually work in the output \PDF\ or \HTML, the protocol is required
+(or it appears to be a local filesystem path). Therefore the
+\texttt{ltugboat} class provides (as of version 2.23, released
+March~2020) commands \cs{tbsurl} for \texttt{https} and \cs{tbhurl} for
+\texttt{http}.\footnote{They are simple two-line wrapper around
+\cs{hyper@linkurl}, and are due to Ulrike Fischer.
+\url{https://github.com/latex3/hyperref/issues/125}\raggedright}
+
+For example, \verb|\tbsurl{tug.org}| typesets the text
+`\texttt{tug.org}' (with the usual url line breaks) as a link to
+\url{https://tug.org}.
+
+Similarly, \verb|\tbhurl{mirror.ctan.org}| typesets the text
+`\texttt{mirror.ctan.org}' as a link to \url{http://mirror.ctan.org}.
+
+\cs{tbsurl} and \cs{tbhurl} only add the protocol and make live links if
+\texttt{hyperref} is loaded. Without \texttt{hyperref}, they are merely
+synonyms for \cs{url}. This is ok, and we still request that the
+protocol not be included; if live links are not being produced in the
+output, the printed url without the protocol suffices. (When a user
+copies/pastes url text into a browser, it will normally work.)
+
+For \texttt{ftp}, \texttt{rsync}, and other protocols, it is best to
+include them explicitly and use \cs{url}:\\ \verb|\url{ftp://tug.org}|,\\
+\verb|\url{rsync://tug.org}|, etc.
+
+\subsection{Url shortcuts}
+\label{sec:urlshortcuts}
+
+Another aspect of urls: the \tug\ web server supports a shortcut url
 mechanism, \url{tug.org/l/}\meta{ident}, where \meta{ident} can be any
-tag, similar to \url{tinyurl.com} and similar. The idea is that
+tag, similar to \url{tinyurl.com} and similar sites. The idea is that
 \url{tug.org} shortcuts can be used in \TUB\ articles needing to link to
 excessively long and/or unstable web resources; then we update the
-shortcut if needed, and not worry that a commercial provider will
-disappear. The only way to create a \url{tug.org/l/} shortcut is by request.
+shortcut if needed, and not worry that a commercial shortcut provider
+will disappear.
+
+The only way to create a \url{tug.org/l/} shortcut is by request, which
+we are happy to receive.
 
 \section{Bibliography}
 \label{sec:biblio}
@@ -713,8 +756,8 @@ disappear. The only way to create a \url{tug.org/l/} shortcut is by request.
 In short: our basic recommendation for handling bibliographies is to use
 \BibTeX\ and the \pkgname{tugboat} bibliography style. No document
 options are needed or recommended. All that is required in the article
-source (as shown in the template available from
-\url{tug.org/TUGboat}) is the following:
+source (as in the template available from \url{tug.org/TUGboat}) is the
+following:
 
 \begin{verbatim}[\small]
 \bibliographystyle{tugboat}
@@ -749,8 +792,8 @@ fields \textsf{newpage} to force a page break after the current item,
 \textsf{urlnewline} to force a line break before the \textsf{url} value,
 and \textsf{journaltie} to output a tie instead of space after the
 \textsf{journal} value. As editors, we've found that these presentation
-tweaks are often desirable for the final typeset output. Authors need
-not worry about them.
+tweaks can be desirable for the final typeset output. Authors need not
+worry about them.
 
 \end{itemize}
 
@@ -789,7 +832,7 @@ an option of the \cs{documentclass} command.\footnote{%
   \BibTeX{} style derives from one developed by Patrick Daly.}
 If your article demands Harvard-style citations, you may prefer to load
 \pkgname{natbib} or similar instead of using \TUB's facilities; that's
-ok.
+fine.
 
 This basic citation format is `author(s), year', but the macros are
 capable of many variations. This in turn places somewhat of a load on
