@@ -526,7 +526,7 @@ as \pkgname{verbatim}~\cite{Schoepf:verbatim:1996},
 
 If you use the \pkgname{listings} package, please specify:
 \begin{verbatim}[\small]
-\lstset{columns=flexible, keepspaces=true,
+\lstset{columns=fullflexible, keepspaces=true,
         commentstyle=\slshape,
         basicstyle=\ttfamily\small}
 \lstdefinestyle{inline}
@@ -535,8 +535,10 @@ If you use the \pkgname{listings} package, please specify:
 
 Explanations:
 \begin{itemize}
-\item \texttt{columns=flexible}:
-The other values for the \verb|columns| option don't work well in \TUB.
+\item \texttt{columns=fullflexible}:
+The other values for the \verb|columns| option don't work well in \TUB;
+we want the program text to be typeset normally, not forcibly aligned
+into large character cells.
 
 \item \texttt{keepspaces=true}:
 However, having flexible columns makes spaces in the input not

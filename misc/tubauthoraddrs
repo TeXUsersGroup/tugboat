@@ -16,6 +16,7 @@ for d in "$@"; do
   # we don't need or expect info for these several items.
   if    echo $d | egrep '^(edit|instmem|pres|l[t3]news)' >/dev/null \
      || echo $d | egrep '^(komo|zprav|arstexnica)' >/dev/null \
+     || echo $d | egrep '^(chest|consultants)' >/dev/null \
      || echo $d | egrep '^(treas|elec|calendar)' >/dev/null; then
     continue
   fi
@@ -54,10 +55,14 @@ for d in "$@"; do
   | egrep -v '^%%% |^% repeat|^$|^%*\\(title|netaddress|personalURL)' \
   | sed 's/\\author *{//' \
   | sed 's/\\EDITORno\(net\)\?address *//' \
+  | sed 's/\\acro{\([^}]*\)}/\1/g' \
   | sed 's/%*\\address *{\?//' \
   | sed 's/}$//g' \
   | sed 's/\\protect *//' \
+  | sed 's/\\&/\&/' \
   | sed 's/\\\\$//' \
+  | sed 's/{}//g' \
+  | sed 's/~/ /g' \
   | sed 's/ *\\\\ */\n/g' \
   | sed 's/  *\/  */\n/g' \
   | sed 's/^ *//' \
