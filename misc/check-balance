@@ -1,0 +1,40 @@
+#!/usr/bin/env perl
+# $Id$
+# Check for balanced parens/braces/brackets/quotes within each paragraph.
+# Lots of false positives are likely, but still worth doing.
+
+exit (&main ());
+
+sub main {
+  $/ = "";  # check a paragraph at a time
+  while (<>) {
+    next if /^\\end(article|\{document\})/;
+    s/(^|[^\\])%.*$/\1/mg;  # remove % comments, common culprit
+    s/\$''\$//;             # common inch marks
+    &check_balance ('\(', '\)', $_);
+    &check_balance ('\{', '\}', $_);
+    &check_balance ('\[', '\]', $_);
+    &check_balance ("``", "''", $_);
+  }
+}
+
+sub check_balance {
+  my ($left,$right,$str) = @_;
+  
+  # The () forces list context, thus returning all the matches due to
+  # the /g, but we only want the number of matches.
+  # http://www.perlmonks.org/?node_id=527973
+  my $lcount = () = /$left/g;
+  my $rcount = () = /$right/g;
+  
+  # we're passed regexps, but just report the plain chars.
+  (my $lchar = $left) =~ s/\\//g;
+  (my $rchar = $right) =~ s/\\//g;
+  
+  if ($lcount != $rcount) {
+    my @matches = ($str =~ m/(.{0,2}$left.{0,2}|.{0,2}$right.{0,2})/g);
+    print "\f $ARGV:$.: mismatched $lchar $rchar ($lcount vs. $rcount)\n",
+          "  ", join (" ..", @matches), "\n";
+    print "$str\n";
+  }
+}
