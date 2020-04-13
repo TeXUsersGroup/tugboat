@@ -1,0 +1,67 @@
+#!/bin/sh
+# $Id$
+# Public domain. Originally written by Karl Berry, 2017.
+# Simplistic tex-to-html conversion. The idea is not to make a usable HTML
+# document, but to replace basic TeX constructs with nice HTML, just to
+# reduce the amount of onerous editing. In particular, there's no good
+# way to automatically insert the needed <p>s.
+# 
+# Good to look for \ in the output for things remaining to be fixed.
+#
+# langle: &#x2329;
+# rangle: &#x232a;
+
+# too dangerous to delete all %, but if starts a line, should be safe?
+# as for math and |...|, let's try italics.
+sed \
+    -e '/^ *%/d' \
+    \
+    -e 's!\$\$*\([^$]*\)\$*\$!<i>\1</i>!g' \
+    -e 's!|\([^|]*\)|!<i>\1</i>!g' \
+    \
+    -e 's/\\BibTeX{*}*/BibTeX/g' \
+    -e 's/\\DVD{*}*/DVD/g' \
+    -e 's/\\LaTeX{*}*/LaTeX/g' \
+    -e 's/\\MF{*}*/Metafont/g' \
+    -e 's/\\MFB{*}*/<i>The&nbsp;Metafontbook/g' \
+    -e 's/\\PASCAL{*}*/Pascal/g' \
+    -e 's/\\TeX{*}*/TeX/g' \
+    -e 's/\\TB{*}*/<i>The&nbsp;TeXbook/g' \
+    -e 's/\\TUB{*}*/TUGboat/g' \
+    -e 's/\\TUG{*}*/TUG/g' \
+    -e 's/\\WEB{*}*/WEB/g' \
+    -e 's/\\\(newpage\|noindent\|par\|\(small\|med\|big\)skip\)//g' \
+    \
+    -e 's!\\emph{\([^}]*\)}!<em>\1</em>!g' \
+    -e 's!\\cs{\([^}]*\)}!<tt>\\\1</tt>!g' \
+    -e 's!\\texttt{\([^}]*\)}!<tt>\1</tt>!g' \
+    \
+    -e 's!\\title{\([^}]*\)}!<h2>\1</h2>!g' \
+    -e 's!\\section{\([^}]*\)}!<h3>\1</h3>!g' \
+    -e 's!\\url{\([^}]*\)}!<a href="\1"></a>!g' \
+    -e 's!\\acro{\([^}]*\)}!\1!g' \
+    \
+    -e 's/\\item */<li>/' \
+    -e 's!\\begin{enumerate}!<ol>!' \
+    -e 's!\\end{enumerate}!</ol>!' \
+    -e 's!\\begin{itemize}!<ul>!' \
+    -e 's!\\end{itemize}!</ul>!' \
+    -e 's!\\begin{verbatim}\(\[.*\]\)\?!<pre>!' \
+    -e 's!\\end{verbatim}!</pre>!' \
+    \
+    -e 's/\\ / /g' \
+    -e 's/\\$//g' \
+    -e 's/\\&/\&amp;/g' \
+    -e 's/~/\&nbsp;/g' \
+    -e 's/\\Dash */\&mdash;/' \
+    -e 's/---/\&mdash;/g' \
+    -e 's/--/\&ndash;/g' \
+    -e 's/\.\.\./\&hellip;/g' \
+    -e 's/\\,//g' \
+    -e 's/``/\&ldquo;/g' \
+    -e "s/''/\&rdquo;/g" \
+    -e 's/ `/ \&lsquo;/g' \
+    -e "s/' /\&rsquo; /g" \
+    \
+    -e 's/Hef{}feron/Hefferon/g' \
+  "$@"

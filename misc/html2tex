@@ -1,0 +1,82 @@
+#!/bin/sh
+# $Id$
+# Public domain. Originally written by Karl Berry, 2017.
+# Simplistic html-to-tex conversion. The idea is not to make a usable TeX
+# document, but to replace basic HTML constructs with nice TeX, just to
+# reduce the amount of onerous editing (still plenty needed).
+
+# need to make options ...
+# for the TUG election ballots.
+#  -e 's/<h3 id="\(.*\)".*$/\\boardcandidate{\1}/' \
+#  -e '/^<img width=150/d' \
+
+# for conf listings:
+#    -e 's/, */}{/' \
+#    -e 's/$/}/' \
+#    -e 's/<li>/\\person{/' \
+
+sed \
+  -e 's/<h3>/\\section{/' \
+  -e 's,\(.*\)</h3>,{\1}{,' \
+  -e 's/<p>//' \
+  -e '/^(Candidate for TUG.*)$/d' \
+  \
+  -e 's/<ul>/\\begin{itemize}/g' \
+  -e 's,</ul>,\\end{itemize},g' \
+  -e 's/<ol>/\\begin{enumerate}/g' \
+  -e 's,</ol>,\\end{enumerate},g' \
+  -e 's/<li>/\\item /g' \
+  \
+  -e 's/<dl>/\\begin{description}/g' \
+  -e 's,</dl>,\\end{description},g' \
+  -e 's,<dt>\(<b>\)*,\\item[,g' \
+  -e 's,\(</b>\)*</dt>,],g' \
+  -e 's,<dd>,,g' \
+  -e 's,</dd>,,g' \
+  \
+  -e 's/<a href="\(.*\)">/\\url{\1}xxx/g' \
+  -e 's,</a>,,g' \
+  \
+  -e 's/<i>/\\textit{/g' \
+  -e 's,</i>,},g' \
+  -e 's/<b>/\\textbf{/g' \
+  -e 's,</b>,},g' \
+  -e 's/<tt>\\/\\cs{/g' \
+  -e 's/<tt>/\\texttt{/g' \
+  -e 's,</tt>,},g' \
+  -e 's,<\(font\|span\) [^>]*>,,g' \
+  -e 's,</\(font\|span\) *>,,g' \
+  \
+  -e 's,<br>,,g' \
+  -e 's,<hr>,,g' \
+  \
+  -e 's/Hefferon/Hef{}feron/g' \
+  -e 's/TeX/\\TeX{}/g' \
+  -e 's/(La)\\TeX/\\AllTeX/g' \
+  -e 's/La\\TeX/\\LaTeX/g' \
+  -e 's/Xe\\TeX/\\XeTeX/g' \
+  -e 's/Con\\TeX{}t/\\ConTeXt{}/g' \
+  \
+  -e 's/&ldquo;/``/g' \
+  -e "s/&rdquo;/''/g" \
+  -e "s/&quot;/''/g" \
+  -e 's/&lsquo;/`/g' \
+  -e "s/&rsquo;/'/g" \
+  -e 's/&hellip;/\\dots{}/g' \
+  -e 's/&nbsp;/~/g' \
+  -e 's/&amp;/\\\&/g' \
+  -e 's/&mdash;/\\Dash /g' \
+  -e 's/&ndash;/--/g' \
+  -e 's/\([0-9]\)-\([0-9]\)/\1--\2/g' \
+  \
+  -e 's/&Eacute;/\\'"'"'E/g' \
+  -e 's/&eacute;/\\'"'"'e/g' \
+  -e 's/&ocirc;/\\^o/g' \
+  -e 's/&ouml;/\\"o/g' \
+  -e 's/&#159;/\\v{r}/g' \
+  -e 's/&Scaron;/\\v{S}/g' \
+  -e 's/&szlig;/\\ss{}/g' \
+  \
+  -e '$s/<!--[^-]*-->//g' \
+  \
+  "$@"

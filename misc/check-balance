@@ -1,5 +1,6 @@
 #!/usr/bin/env perl
 # $Id$
+# Public domain. Originally written by Karl Berry, 2015.
 # Check for balanced parens/braces/brackets/quotes within each paragraph.
 # Lots of false positives are likely, but still worth doing.
 
