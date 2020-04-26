@@ -38,25 +38,26 @@
 @Misc{pkg:fancyvrb,
   author = {Timothy Van Zandt and others},
   title = {The {\textsf{fancyvrb}} package},
-  howpublished = {\url{ctan.org/pkg/fancyvrb}},
+  url = {ctan.org/pkg/fancyvrb},
 }
 
 @Misc{pkg:listings,
   author = {Carsten Heinz and others},
   title = {The {\textsf{listings}} package},
-  howpublished = {\url{ctan.org/pkg/listings}},
+  url = {ctan.org/pkg/listings},
 }
 
 @Misc{Arseneau:url:1996,
   author = {Donald Arseneau},
   title = {The {\textsf{url}} package},
-  howpublished = {\url{ctan.org/pkg/url}},
+  url = {ctan.org/pkg/url},
+  urlnewline = 1,
 }
 
 @Misc{Rahtz:hyperref:1997,
   author = {Sebastian Rahtz and Heiko Oberdiek and others},
   title = {The {\textsf{hyperref}} package},
-  howpublished = {\url{ctan.org/pkg/hyperref}},
+  url = {ctan.org/pkg/hyperref},
 }
 
 @Book{Lamport:1994,
@@ -68,15 +69,17 @@
 }
 
 @Misc{Schoepf:verbatim:1996,
-  author = {Rainer Sch{\umlaut{o}}pf},
+  author = {Rainer Sch{\"{o}}pf},
   title = {The {\textsf{verbatim}} package},
-  howpublished = {\url{ctan.org/pkg/verbatim}},
+  url = {ctan.org/pkg/verbatim},
+  urlnewline = 1,
 }
 
 @Misc{Vieth:mflogo:1995,
   author = {Ulrik Vieth},
   title = {The {\textsf{mflogo}} package},
-  howpublished = {\url{ctan.org/pkg/mflogo}},
+  url = {ctan.org/pkg/mflogo},
+  urlnewline = 1,
 }
 
 @Article{Whitney:TB10-3-378,
@@ -88,7 +91,7 @@
   volume = {10},
   number = {3},
   pages = {378--385},
-  note = {\url{ctan.org/pkg/tugboat-plain}},
+  url = {ctan.org/pkg/tugboat-plain},
 }
 
 \end{filecontents}
@@ -184,10 +187,6 @@
 }
 \makeatother
 %
-% To use umlauts in a bibliography entry in BibTeX 0.99, we have to
-% use a certain amount of subterfuge...
-\let\umlaut\"
-%
 %%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%
@@ -262,8 +261,7 @@ and one/two-side options).
 \item[final] Set up for the final copy of a paper: page numbering to
   come from elsewhere, no cropmarks.
 \item[harvardcite] Specify Harvard-style citation (not 
-  recommended in general; see section~\ref{sec:biblio}); see
-  section~\ref{sec:biblio}.
+  recommended in general; see section~\ref{sec:biblio}.
 \item[noextralabel] Don't use the extra label-distinguishing mark in
   the body of the reference; see section~\ref{sec:biblio}.
 \item[nonumber] Sections are not numbered; section heading
@@ -315,17 +313,26 @@ relies on the section numbers to indicate where the divisions lie in
 the hierarchy.  If you use \cs{paragraph}, consider ending the paragraph
 label with a period; sometimes it is helpful, sometimes not.
 
-Reference may, however, be made to the `title' of divisions of the
-paper, whether they are numbered or not.  The \cs{nameref} command
-(which uses the technique developed for the \textsf{hyperref} package
+For references to numbered sections, our style is to always use the word
+`Section' in the text, e.g.,\\
+\verb|Section~\ref{sec:whatever}|\\
+without worrying about whether it is technically a sub(sub)section.
+It's also ok to use the section sign~\S{}, if that suits the material
+better.
+
+Reference can also be made to the `title' of divisions of the paper,
+whether they are numbered or not. The \cs{nameref} command (which uses
+the technique developed for the \textsf{hyperref} package
 \cite{Rahtz:hyperref:1997}) permits such references; for example, the
 present section was introduced by:
 \begin{verbatim}[\small]
-  \section{Divisions of the paper}
-  \label{sec:divs-paper}
+\section{Divisions of the paper}
+\label{sec:divs-paper}
 \end{verbatim}
 and the command \verb|\nameref{sec:divs-paper}| produces
-`\nameref{sec:divs-paper}'.
+`\nameref{sec:divs-paper}'. However, as you can see here, reusing the
+literal text of section titles often results in awkward results. We
+recommend numbered references in general.
 
 \subsection{Abstracts}
 
@@ -335,6 +342,8 @@ environment simply typesets its body as an un-numbered section whose
 title is `Abstract'. The \envname{longabstract} environment typesets its
 body in small text, and separates the abstract from the rest of the
 paper with a decorative line; this is rarely used.
+
+Please write an abstract, however short.
 
 \subsection{Appendices}
 
@@ -696,13 +705,13 @@ urls, etc.; it is being used throughout the present paper (not least in
 the bibliography), either on its own or via \texttt{hyperref}.
 
 Although not necessarily recommended in all cases, many additional
-packages are commonly used. To mention a few: \texttt{microtype} can
-help reduce overfull boxes (and improve appearance); sometimes it may be
-preferable to use the Latin Modern fonts via \texttt{lmodern};
-\texttt{iftex} provides tests for the \TeX\ engine being run;
-\texttt{texosquery} provides operating system information; and
-\texttt{hyperref} supports live and internal hyperlinks, outlines, and
+packages are commonly used. To mention a few:
+\begin{description}
+\item[microtype] can help reduce overfull boxes and improve appearance;
+\item[lmodern] use the Latin Modern fonts, sometimes preferable;
+\item[hyperref] supports live and internal hyperlinks, outlines, and
 many other features.
+\end{description}
 
 \section{Typesetting urls}
 \label{sec:urls}
@@ -776,7 +785,7 @@ though, you may enjoy the following small but useful features:
 \item and thus supports \textsf{url} and \textsf{doi} fields, among others.
 Please use \textsf{url} instead of putting urls in the
 \textsf{note} field, where possible. Also, please don't bother to
-include ``url access date'' information for \TUB; we find that extraneous.
+include ``access date'' information for \TUB; we find that extraneous.
 
 \item The \textsf{url} field is ignored if either the \textsf{howpublished} or
 \textsf{doi} field is present. In practice we observe that people put
@@ -803,13 +812,17 @@ If you use \BibTeX, feel free to take advantage of the accumulated
 bibliography of \TUB{} itself (\url{info/tugboat.bib} on \CTAN), and the
 other compilations by Nelson Beebe in that same directory.
 
+By the way, we recommending using commas to terminate all fields in
+\texttt{.bib} files, including the last one in an entry. That makes it
+one less thing to worry about when changing fields around in the source.
+
 Bibliographies provide further problems because they're notoriously
-difficult to typeset at the best of times.  \LaTeX{} sets \cs{sloppy}
-when typesetting the bibliography, but this often leads to unpleasant
-output in the narrow columns typical of \TUB{}.  The author can control
-the typesetting using the command \cs{SetBibJustification}.  The classes
-set \cs{sloppy}, by default (just like \LaTeX{}), but the author may
-(for example) say:
+difficult to typeset at the best of times. \LaTeX{} sets \cs{sloppy}
+when typesetting the bibliography, but this typically leads to
+unpleasant output \TUB's narrow columns. The author can control the
+typesetting using the command \cs{SetBibJustification}. The classes set
+\cs{sloppy}, by default (just like \LaTeX{}), but the author may (for
+example) say:
 \begin{verbatim}
   \SetBibJustification{\raggedright}
 \end{verbatim}
@@ -925,6 +938,7 @@ different (as discussed in section~\ref{sec:syntax}); arguments are
 (almost always) enclosed in braces instead of the various
 forms provided by the `plain' macros.
 
+\newpage
 \SetBibJustification{\raggedright}
 \bibliographystyle{tugboat}
 \bibliography{tubguide}

@@ -2428,31 +2428,32 @@
 % \textsc{numbersec} is in effect.
 %
 %    \begin{macrocode}
+\def\tubsechook{}
 \if@numbersec
   \def\section{\TB@startsection{{section}%
                                 1%
                                 \z@
                                 {-8\p@ \@plus-2\p@ \@minus-2\p@}%
                                 {4\p@}%
-          {\normalsize\bf\raggedright\hyphenpenalty=\@M}}}
+          {\normalsize\bf\raggedright\hyphenpenalty\@M\tubsechook}}}
   \def\subsection{\TB@startsection{{subsection}%
                                    2%
                                    \z@
                                    {-8\p@ \@plus-2\p@ \@minus-2\p@}%
                                    {4\p@}%
-          {\normalsize\bf\raggedright\hyphenpenalty=\@M}}}
+          {\normalsize\bf\raggedright\hyphenpenalty\@M\tubsechook}}}
   \def\subsubsection{\TB@startsection{{subsubsection}%
                                       3%
                                       \z@
                                       {-8\p@ \@plus-2\p@ \@minus-2\p@}%
                                       {4\p@}%
-          {\normalsize\bf\raggedright\hyphenpenalty=\@M}}}
+          {\normalsize\bf\raggedright\hyphenpenalty\@M\tubsechook}}}
   \def\paragraph{\TB@startsection{{paragraph}%
                                   4%
                                   \z@
                                   {4\p@ \@plus1\p@ \@minus1\p@}%
                                   {-1em}%
-                                  {\normalsize\bf}}}
+                                  {\normalsize\bf\tubsechook}}}
 %    \end{macrocode}
 %
 % Now the version if class option \textsc{nonumber} is in effect,
@@ -2467,21 +2468,21 @@
                                 \z@
                                 {-8\p@ \@plus-2\p@ \@minus-2\p@}%
                                 {4\p@}%
-          {\normalsize\bf\raggedright\hyphenpenalty=\@M}}}
+          {\normalsize\bf\raggedright\hyphenpenalty\@M\tubsechook}}}
   \def\subsection{\TB@nolimelabel
                   \TB@startsection{{subsection}%
                                    2%
                                    \z@
                                    {-8\p@ \@plus-2\p@ \@minus-2\p@}%
                                    {-0.5em\@plus-\fontdimen3\font}%
-          {\normalsize\bf\raggedright\hyphenpenalty=\@M}}}
+          {\normalsize\bf\raggedright\hyphenpenalty\@M\tubsechook}}}
   \def\subsubsection{\TB@nolimelabel
                      \TB@startsection{{subsubsection}%
                                       3%
                                       \parindent
                                       {-8\p@ \@plus-2\p@ \@minus-2\p@}%
                                       {-0.5em\@plus-\fontdimen3\font}%
-          {\normalsize\bf\raggedright\hyphenpenalty=\@M}}}
+          {\normalsize\bf\raggedright\hyphenpenalty\@M\tubsechook}}}
 \fi
 %    \end{macrocode}
 %

@@ -1,3 +1,7 @@
+2020-04-26  Karl Berry  <karl@freefriends.org>
+
+	* tex2html: reorder \MF[B] for substitution; handle angle brackets.
+
 2020-04-06  Karl Berry  <karl@freefriends.org>
 
 	* tubauthoraddrs: more TeX removal, known cases.

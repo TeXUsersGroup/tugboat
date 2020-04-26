@@ -1,3 +1,12 @@
+2020-04-26  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\sechook): new macro.
+	Used in tb128bigelow-romer for \frenchspacing, which should maybe
+	be the default anyway.
+
+	* ltubguid.ltx: use url field in our own bib; recommend
+	numbered section references, label word "Section"; other wording.
+
 2020-04-06  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\booktitle): \frenchspacing.

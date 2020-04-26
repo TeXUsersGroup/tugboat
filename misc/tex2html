@@ -7,30 +7,39 @@
 # way to automatically insert the needed <p>s.
 # 
 # Good to look for \ in the output for things remaining to be fixed.
-#
-# langle: &#x2329;
-# rangle: &#x232a;
 
-# too dangerous to delete all %, but if starts a line, should be safe?
-# as for math and |...|, let's try italics.
+# about the first expressions here: it's too dangerous to delete all %,
+# but if starts a line, should be safe? as for math and |...|, let's try
+# italics and typewriter, respectively.
+# 
+# the next ones replace \< and \> with angle brackets (&#x2329; and
+# &#x232a;), then can replace < and > with &lt; and &gt;
+# 
 sed \
     -e '/^ *%/d' \
     \
     -e 's!\$\$*\([^$]*\)\$*\$!<i>\1</i>!g' \
     -e 's!|\([^|]*\)|!<i>\1</i>!g' \
     \
+    -e 's/\\</\&#x2329;/g' \
+    -e 's/\\>/\&#x232a;/g' \
+    -e 's/</\&lt;/g' \
+    -e 's/>/\&gt;/g' \
+    \
     -e 's/\\BibTeX{*}*/BibTeX/g' \
     -e 's/\\DVD{*}*/DVD/g' \
     -e 's/\\LaTeX{*}*/LaTeX/g' \
+    -e 's/\\MFB{*}*/<i>The\&nbsp;Metafontbook/g' \
     -e 's/\\MF{*}*/Metafont/g' \
-    -e 's/\\MFB{*}*/<i>The&nbsp;Metafontbook/g' \
     -e 's/\\PASCAL{*}*/Pascal/g' \
     -e 's/\\TeX{*}*/TeX/g' \
-    -e 's/\\TB{*}*/<i>The&nbsp;TeXbook/g' \
+    -e 's/\\TB{*}*/<i>The\&nbsp;TeXbook/g' \
     -e 's/\\TUB{*}*/TUGboat/g' \
     -e 's/\\TUG{*}*/TUG/g' \
     -e 's/\\WEB{*}*/WEB/g' \
+    \
     -e 's/\\\(newpage\|noindent\|par\|\(small\|med\|big\)skip\)//g' \
+    -e 's/\\\(looseness *= *-[0-9]*)//g' \
     \
     -e 's!\\emph{\([^}]*\)}!<em>\1</em>!g' \
     -e 's!\\cs{\([^}]*\)}!<tt>\\\1</tt>!g' \
