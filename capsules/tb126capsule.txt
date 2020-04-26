@@ -13,12 +13,6 @@
 % 
 
 \begin{blurb}
-<p>Immediate online access to technical TUGboat articles in the current
-issue are available to TUG members only (so some of the links below
-require a TUG username and password). General information items and
-articles already posted elsewhere are publicly available now. All of the
-articles will become publicly available around May, 2020.
-
 <p>If you're not already a member, we hope you'll consider <a
 href="/join.html">joining TUG</a> to support TUGboat and other TeX
 projects.  <a href="/memberaccess.html">More information on TUG member
@@ -35,7 +29,7 @@ access</a>.
         {Complete issue 40:3 as one pdf (9.1mb)}
         {}
         {\offset{.1}}
-        {https://tug.org/members/TUGboat/!TBIDENT!complete.pdf}
+        {/TUGboat/!TBIDENT!complete.pdf}
         {}
         {}
 
@@ -111,7 +105,7 @@ access</a>.
    {Typographers' Inn}
    {\acro{CV}/R\'esum\'e layouts; Reversed apostrophes (\acro{II}); Afterthought}
    {270-271}
-   {https://tug.org/members/TUGboat/!TBIDENT!inn.pdf}
+   {/TUGboat/!TBIDENT!inn.pdf}
    {}
    {}
 
@@ -151,7 +145,7 @@ access</a>.
    {An experience of trying to submit a paper in \LaTeX\ in an \XML-first world}
    {a report on a \LaTeX\ submission to \textit{\acro{IEEE} Annals}, and consequent expectations}
    {215-216}
-   {https://tug.org/members/TUGboat/!TBIDENT!walden-submit.pdf}
+   {/TUGboat/!TBIDENT!walden-submit.pdf}
    {}
    {}
 
@@ -174,7 +168,7 @@ access</a>.
 %%  {Science and history behind the design of Lucida}
 %%  {historical precedents, principles of reading, practical digital type design}
 %%  {\getfirstpage{bigelow-lucida}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!bigelow-lucida.pdf}
+%%  {/TUGboat/!TBIDENT!bigelow-lucida.pdf}
 %%  {}
 %%  {}
 
@@ -184,7 +178,7 @@ access</a>.
   {\TeX\ on the Raspberry Pi}
   {report of \TeX\ processing on all models of the \acro{RP}i}
   {232-233}
-  {https://tug.org/members/TUGboat/!TBIDENT!hagen-rpi.pdf}
+  {/TUGboat/!TBIDENT!hagen-rpi.pdf}
   {}
   {}
 
@@ -204,7 +198,7 @@ access</a>.
   {Mu\PDF\ tools}
   {summary of \code{mutool} commands to manipulate \PDF\ files: dump, extract, convert, create, \ldots}
   {234-235}
-  {https://tug.org/members/TUGboat/!TBIDENT!hoekwater-mupdf.pdf}
+  {/TUGboat/!TBIDENT!hoekwater-mupdf.pdf}
   {}
   {}
 
@@ -244,7 +238,7 @@ access</a>.
 %%  {Managing forlorn paragraph lines (a.k.a.\ widows and orphans) in \LaTeX}
 %%  {finding all widows and orphans, and discussion of possible fixes}
 %%  {\getfirstpage{mitt-widows}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!mitt-widows.pdf}
+%%  {/TUGboat/!TBIDENT!mitt-widows.pdf}
 %%  {}
 %%  {}
 
@@ -254,7 +248,7 @@ access</a>.
   {\LaTeX{} on the road}
   {\LaTeX\ and Git possibilities on mobile devices}
   {236-246}
-  {https://tug.org/members/TUGboat/!TBIDENT!oostrum-road.pdf}
+  {/TUGboat/!TBIDENT!oostrum-road.pdf}
   {}
   {}
 
@@ -274,7 +268,7 @@ access</a>.
 %%%%%  {An introduction to the \LaTeX{} cross-referencing system}
 %%%%%  {built-in commands and useful packages: \pkg{cleveref}, \pkg{varioref}, \pkg{hyperref}, \pkg{xr{\rm[}-hyper{\rm]}}, \pkg{showlabels}}
 %%%%%  {\getfirstpage{thurnherr}}
-%%%%%  {https://tug.org/members/TUGboat/!TBIDENT!thurnherr.pdf}
+%%%%%  {/TUGboat/!TBIDENT!thurnherr.pdf}
 %%%%%  {}
 %%%%%  {}
 
@@ -284,7 +278,7 @@ access</a>.
    {Studying the histories of computerizing publishing and desktop publishing, 2017--19}
    {transition to digital production in newspapers, trade publishing, and the creation of desktop publishing}
    {217-228}
-   {https://tug.org/members/TUGboat/!TBIDENT!walden-history.pdf}
+   {/TUGboat/!TBIDENT!walden-history.pdf}
    {}
    {}
 
@@ -294,7 +288,7 @@ access</a>.
 %  {Real number calculations in \LaTeX{}: Packages}
 %  {user-level comparison of floating point arithmetic packages, recommending \code{xfp}}
 %  {\getfirstpage{wright-fpkg}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!wright-fpkg.pdf}
+%  {/TUGboat/!TBIDENT!wright-fpkg.pdf}
 %  {}
 %  {}
 %
@@ -304,7 +298,7 @@ access</a>.
 %  {TinyTeX: A lightweight, cross-platform, and easy-to-maintain \LaTeX{} distribution\\ based on \TeX{} Live}
 %  {on-the-fly \TeX\ Live package installation for R users}
 %  {\getfirstpage{xie-tinytex}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!https://duckduckgo.com/?q=father+in+law&ia=web}
+%  {/TUGboat/!TBIDENT!https://duckduckgo.com/?q=father+in+law&ia=web}
 %  {}
 %  {}
 
@@ -317,7 +311,7 @@ access</a>.
   {A Brazilian Portuguese work on MetaPost, and how mathematics is embedded in it}
   {summary of thesis on the mathematics of MetaPost, with graphical examples}
   {247-250}
-  {https://tug.org/members/TUGboat/!TBIDENT!candia-mpost.pdf}
+  {/TUGboat/!TBIDENT!candia-mpost.pdf}
   {}
   {}
 
@@ -327,7 +321,7 @@ access</a>.
 %  {Both \TeX\ and \DVI{} viewers inside the web browser}
 %  {compiling Pascal to WebAssembly to run \eTeX\ in a browser, including \TikZ}
 %  {\getfirstpage{fowler-js}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!fowler-js.pdf}
+%  {/TUGboat/!TBIDENT!fowler-js.pdf}
 %  {}
 %  {}
 %
@@ -347,7 +341,7 @@ access</a>.
 %  {\TeX4ht: \LaTeX\ to Web publishing}
 %  {configuring \HTML, \XML, \dots\ generation with \TeX4ht and \code{make4ht}}
 %  {\getfirstpage{hoftich-make4ht}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!hoftich-make4ht.pdf}
+%  {/TUGboat/!TBIDENT!hoftich-make4ht.pdf}
 %  {}
 %  {}
 %
@@ -357,7 +351,7 @@ access</a>.
 %%   {\TeX\ Gyre text fonts revisited}
 %%   {incorporating math and symbol glyphs into text fonts, and OpenType accent positioning}
 %%   {\getfirstpage{jackowski-gyre}}
-%%   {https://tug.org/members/TUGboat/!TBIDENT!jackowski-gyre.pdf}
+%%   {/TUGboat/!TBIDENT!jackowski-gyre.pdf}
 %%   {}
 %%   {}
 %%
@@ -377,7 +371,7 @@ access</a>.
   {Typesetting the Bangla script in Unicode \TeX\ engines \Dash experiences and insights}
   {review of Bangla support and issues with achieving the finest quality typography}
   {263-269}
-  {https://tug.org/members/TUGboat/!TBIDENT!sajib-bangla.pdf}
+  {/TUGboat/!TBIDENT!sajib-bangla.pdf}
   {}
   {}
 
@@ -387,7 +381,7 @@ access</a>.
 %  {Markdown 2.7.0: Towards lightweight markup in \TeX{}}
 %  {a Lua command-line interface, \texttt{doc}, and content slicing support for \texttt{markdown}}
 %  {\getfirstpage{novotny-markdown}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!novotny-markdown.pdf}
+%  {/TUGboat/!TBIDENT!novotny-markdown.pdf}
 %  {}
 %  {}
 %
@@ -397,7 +391,7 @@ access</a>.
 %  {Glossaries with \texttt{bib2gls}}
 %  {indexing infrastructure with \texttt{glossaries-extra} and/or using \texttt{.bib} format}
 %  {\getfirstpage{talbot-bib2gls}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!talbot-bib2gls.pdf}
+%  {/TUGboat/!TBIDENT!talbot-bib2gls.pdf}
 %  {}
 %  {}
 %
@@ -407,7 +401,7 @@ access</a>.
 %  {Real number calculations in \TeX{}: Implementations and performance}
 %  {precision, accuracy, and performance comparison of existing floating point arithmetic packages}
 %  {\getfirstpage{wright-fperf}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!wright-fperf.pdf}
+%  {/TUGboat/!TBIDENT!wright-fperf.pdf}
 %  {}
 %  {}
 %
@@ -417,7 +411,7 @@ access</a>.
 %  {Extending primitive coverage across engines}
 %  {\cs{expanded} and other primitives available in pdf\TeX, \XeTeX, (u)p\TeX}
 %  {\getfirstpage{wright-primitives}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!wright-primitives.pdf}
+%  {/TUGboat/!TBIDENT!wright-primitives.pdf}
 %  {}
 %  {}
 
@@ -430,7 +424,7 @@ access</a>.
 %  {\TeX.StackExchange cherry picking, part~2: Templating}
 %  {extended \code{expl3} programming examples: templating and double loops, \acro{ISBN}, catcode tables, and more}
 %  {\getfirstpage{gregorio-templating}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!gregorio-templating.pdf}
+%  {/TUGboat/!TBIDENT!gregorio-templating.pdf}
 %  {}
 %  {}
 
@@ -440,7 +434,7 @@ access</a>.
   {Modern Type 3 fonts}
   {OpenType extensions with color, \SVG, \PNG, implemented as Type~3 fonts}
   {257-262}
-  {https://tug.org/members/TUGboat/!TBIDENT!hagen-type3.pdf}
+  {/TUGboat/!TBIDENT!hagen-type3.pdf}
   {}
   {}
 
@@ -450,7 +444,7 @@ access</a>.
   {Providing Docker images for \TeX\ Live and \ConTeXt}
   {supporting continuous integration with a variety of Docker images}
   {231-231}
-  {https://tug.org/members/TUGboat/!TBIDENT!island-docker.pdf}
+  {/TUGboat/!TBIDENT!island-docker.pdf}
   {}
   {}
 
@@ -470,7 +464,7 @@ access</a>.
 %%%%  {Testing indexes: {\tt testidx.sty}}
 %%%%  {test methodology and exhaustive comparisons of \code{makeindex}, \code{xindy}, \code{glossaries}, and more}
 %%%%  {\getfirstpage{talbot}}
-%%%%  {https://tug.org/members/TUGboat/!TBIDENT!talbot.pdf}
+%%%%  {/TUGboat/!TBIDENT!talbot.pdf}
 %%%%  {}
 %%%%  {}
 
@@ -480,7 +474,7 @@ access</a>.
   {Understanding scientific documents with synthetic analysis on mathematical expressions and natural language}
   {steps toward automated understanding of \acro{STEM} documents}
   {255-256}
-  {https://tug.org/members/TUGboat/!TBIDENT!asakura-meaning.pdf}
+  {/TUGboat/!TBIDENT!asakura-meaning.pdf}
   {}
   {}
 
