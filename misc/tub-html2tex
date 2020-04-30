@@ -16,6 +16,8 @@
 #    -e 's/<li>/\\person{/' \
 
 sed \
+  -e 's/<!--[^-]*-->//g' \
+  \
   -e 's/<h3>/\\section{/' \
   -e 's,\(.*\)</h3>,{\1}{,' \
   -e 's/<p>//' \
@@ -34,13 +36,19 @@ sed \
   -e 's,<dd>,,g' \
   -e 's,</dd>,,g' \
   \
-  -e 's/<a href="\(.*\)">/\\url{\1}xxx/g' \
+  -e 's/<a [^>]*href="\(.*\)">/\\url{\1}/g' \
   -e 's,</a>,,g' \
   \
-  -e 's/<i>/\\textit{/g' \
-  -e 's,</i>,},g' \
+  -e 's/<img [^>]*src="\(.*\)"[^>]*>/\\includegraphics{\1}/g' \
+  \
   -e 's/<b>/\\textbf{/g' \
   -e 's,</b>,},g' \
+  -e 's/<i>/\\textit{/g' \
+  -e 's,</i>,},g' \
+  -e 's/<strong>/\\emph{/g' \
+  -e 's,</strong>,},g' \
+  -e 's/<em>/\\emph{/g' \
+  -e 's,</em>,},g' \
   -e 's/<tt>\\/\\cs{/g' \
   -e 's/<tt>/\\texttt{/g' \
   -e 's,</tt>,},g' \
@@ -49,6 +57,18 @@ sed \
   \
   -e 's,<br>,,g' \
   -e 's,<hr>,,g' \
+  -e 's,<sup>,,g' \
+  \
+  -e 's,<p[^>]*>,\n\n,g' \
+  -e 's,</p>,\n,g' \
+  -e 's,<section[^>]*>,,g' \
+  -e 's,</section>,,g' \
+  -e 's,<div[^>]*>,,g' \
+  -e 's,</div>,,g' \
+  -e 's,<figure>,\\begin{figure},g' \
+  -e 's,</figure>,\\end{figure},g' \
+  -e 's,<figcaption[^>]*>,\\caption{,g' \
+  -e 's,</figcaption>,},g' \
   \
   -e 's/Hefferon/Hef{}feron/g' \
   -e 's/TeX/\\TeX{}/g' \
@@ -77,6 +97,8 @@ sed \
   -e 's/&Scaron;/\\v{S}/g' \
   -e 's/&szlig;/\\ss{}/g' \
   \
-  -e '$s/<!--[^-]*-->//g' \
+  -e 's/^  *//' \
+  -e 's/  *$//' \
   \
-  "$@"
+  "$@" \
+| uniq # remove blank lines
