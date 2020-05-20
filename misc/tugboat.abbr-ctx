@@ -1,5 +1,5 @@
 % $Id$
-% Copyright 1999-2019 TeX Users Group.
+% Copyright 1999-2020 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 % "fake" ConTeXt in LaTeX, for simple-enough documents.
@@ -186,6 +186,7 @@
 \def\loadtypescriptfile[#1]{}
 \def\low#1{\ensuremath{_{\,\textrm{\footnotesize #1}}}}
 \def\mathitalicsmode{}
+\def\noheaderandfooterlines{}
 \let\noindentation = \relax
 \let\origquote = \quote
 \def\page{}
@@ -199,8 +200,9 @@
 \def\setvariables[#1]#2[#3]{}
 \def\ss{}
 \def\showframe{}
-\let\stop=\relax
 \def\starthead#1{\item[#1]}
+\def\starttitle[#1]{}
+\let\stop=\relax
 \def\stophead{}
 \def\subject{\section}
 \def\subsubject{\subsection}

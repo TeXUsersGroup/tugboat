@@ -1,3 +1,8 @@
+2020-05-20  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr-ctx (\noheaderandfooterlines, \starttitle): more no-ops.
+	(from tb128hagen-type3)
+
 2020-04-26  Karl Berry  <karl@freefriends.org>
 
 	* tex2html: reorder \MF[B] for substitution; handle angle brackets.
