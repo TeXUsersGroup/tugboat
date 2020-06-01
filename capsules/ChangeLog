@@ -1,3 +1,31 @@
+2020-06-01  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (outone): define differently on different machines.
+
+	* tb72capsule.txt,
+	* tb77capsule.txt,
+	* tb84capsule.txt,
+	* tb87capsule.txt,
+	* tb88capsule.txt,
+	* tb92capsule.txt,
+	* tb94capsule.txt,
+	* tb95capsule.txt,
+	* tb97capsule.txt,
+	* tb99capsule.txt,
+	* tb100capsule.txt,
+	* tb101capsule.txt,
+	* tb102capsule.txt,
+	* tb103capsule.txt,
+	* tb104capsule.txt,
+	* tb105capsule.txt,
+	* tb106capsule.txt,
+	* tb107capsule.txt,
+	* tb108capsule.txt,
+	* tb109capsule.txt,
+	* tb113capsule.txt,
+	* tb116capsule.txt,
+	* tb119capsule.txt: glisterings subtitles.
+
 2020-04-26  Karl Berry  <karl@tug.org>
 
 	* lists-unifications.txt (Alban Grimm): no "Prof." in name list.

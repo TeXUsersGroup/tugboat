@@ -16,12 +16,19 @@ time = time -f "time:%e"
 
 default check: one #all-diff
 
-testiss = 126
+testiss = 72
 lastiss = 127
 
+# use different temp dir on different machines.
+mydir := $(shell ls ~karl/public_html 2>/dev/null)
+ifneq "$(mydir)" ""
 outone = ~karl/public_html/x.html
-#outone = /tmp/x.html
+else
+outone = ~karl/tmp/x.html
+endif
+
 one:
+	echo mydir=$(mydir)
 	perl -cw captub && date
 	$(captub) tb$(testiss)capsule.txt >$(outone) || exit 1
 	unparsed=`egrep '[{}~$$\]|href=""|Dash' $(outone) \
