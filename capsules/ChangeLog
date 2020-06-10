@@ -1,3 +1,20 @@
+2020-06-09  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl (transform_subtitles): take title and author arguments
+	in order to avoid one item per line for beet columns.
+	(capsule_convert): change call.
+	* capdata-xlate.pl (xlate_dump_count): more clues when reporting
+	an unused translation.
+	* capin.pl: doc fix.
+	* lists-unifications.txt,
+	* lists-translations.txt (\NMHamiltonKelly): use hex code points to
+	preserve {} in output. Use \CONNECT in other entry to match new
+	transform_subtitles convention.
+	* tb123capsule.txt: the ,\\ before Vytas is now one special case
+	too many; omit the \\.
+	* tb32capsule.txt: use "{} " instead of "\ " to simplify.
+	* tb72capsule.txt: ctan https, pst-pdf replaced ps4pdf.
+
 2020-06-01  Karl Berry  <karl@freefriends.org>
 
 	* Makefile (outone): define differently on different machines.

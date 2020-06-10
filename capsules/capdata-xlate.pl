@@ -47,7 +47,7 @@ sub xlate_dump_count {
     my $tex = $tex_exprs->[$i];
     my $html = $html_strs->[$i];
     my $hkey = "$tex|h|$html";
-    print "0 $hkey\n"
+    warn "0 $hkey [unused]"
       if ! exists $xlate_count{$hkey}
          && $html !~ /&#x1ebf/; # we need the txt for \Thanh, tex never used.
     

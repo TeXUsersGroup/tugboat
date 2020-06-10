@@ -91,7 +91,7 @@ sub read_issue {
   $str =~ s/^\s*%.*//gm;
   
   # Split whole file string at \difficulty, that is, the difficulty
-  # sections, then we will parse each group of capsules in term. We
+  # sections, then we will parse each group of capsules in turn. We
   # accept both \difficulty and \category equivalently, since older
   # tb*capsule.tex use \category and seems too much bother to change.
   # 

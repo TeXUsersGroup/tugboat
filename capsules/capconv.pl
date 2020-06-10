@@ -58,7 +58,8 @@ sub capsule_convert {
   ($out{"pageno"},
    $out{"pageno_print"}) = &transform_pageno ($in{"pageno"});
 
-  $out{"subtitles_html"} = &transform_subtitles ($in{"subtitles"})
+  $out{"subtitles_html"} = &transform_subtitles ($in{"subtitles"},
+                                                 $in{"title"}, $in{"author"})
     if $in{"subtitles"};
 
   &ddebug_hash ("   capsule_convert returns", %out);
@@ -273,14 +274,47 @@ sub transform_pageno {
 }
 
 
-# For subtitles, <optional semicolon>\\<newline> becomes <br> in the
-# output; then convert tex to html as usual.
+# For subtitle string S, <optional semicolon>\\<newline> becomes <br>
+# and manual indentation in the output; then convert tex to html as usual.
+# 
+# As a fun special case, if TITLE = "Editorial comments", this is
+# Barbara's column (tb*beet) and is handled completely differently per
+# her request. For these, we want to maximize the text on each line, vs.
+# having each subtitle on a separate line. (Since there are so many
+# installments, it gets tiresome to scroll through.) So we make each
+# space in the subtitles into &nbsp;, and insert a simple newline
+# instead of <br>, so that between subtitles will be the only valid
+# breakpoints. Although we could do all this by editing the input files,
+# it actually seems more maintainable to do it here in the code, since
+# there is so much text involved.
 # 
 sub transform_subtitles {
-  my ($s) = @_;
+  my ($s,$title,$author) = @_;
   my @subtitles = split (/;?\\\\\n/, $s);
-  $s = join ("<br>\n", map { "&nbsp;" x 5 . $_ } @subtitles);
-  return &tex2html ($s);
+
+  my ($between_subtitles, $subtitle_spaces, $pre_subtitle);
+  if ($title =~ /\{?Editorial comments\}?/i && $author =~ /Barbara.Beeton/) {
+    #warn "   starting subtitles: @subtitles\n";
+    # don't allow line breaks within Barbara's subtitles; that means
+    # replacing " " and "\ " and "~" with our \CONNECT{} string, which
+    # turns into &nbsp;.  (Ties are converted to spaces by default, not nbsp.)
+    @subtitles = map { s/\\? |~/\\CONNECT{}/g; $_; } @subtitles;
+    $between_subtitles = ";\n";
+    $subtitle_spaces = 2;
+    $pre_subtitle = "&nbsp;" x 3;
+  } else {
+    $between_subtitles = "<br>\n";
+    $subtitle_spaces = 5;
+    $pre_subtitle = "";
+  }
+
+  $s = join ($between_subtitles, map { "&nbsp;" x $subtitle_spaces . $_ }
+             @subtitles);
+  #warn "     before tex2html: $s\n";
+  my $ret = $pre_subtitle . &tex2html ($s);
+  #warn "     final subtitles: $ret\n";
+
+  return $ret;
 }
 
 1;

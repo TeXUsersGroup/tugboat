@@ -16,7 +16,7 @@ time = time -f "time:%e"
 
 default check: one #all-diff
 
-testiss = 72
+testiss = 69
 lastiss = 127
 
 # use different temp dir on different machines.
@@ -28,7 +28,6 @@ outone = ~karl/tmp/x.html
 endif
 
 one:
-	echo mydir=$(mydir)
 	perl -cw captub && date
 	$(captub) tb$(testiss)capsule.txt >$(outone) || exit 1
 	unparsed=`egrep '[{}~$$\]|href=""|Dash' $(outone) \

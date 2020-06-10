@@ -30,12 +30,17 @@
 
 #names
 
-# names after %person must not use braces, or misparsed as arguments.
-\NMHamiltonKelly||{Hamilton Kelly}
-\NMOlsak||Ol\v{s}\'ak
-\NMJiriRybicka||Ji\v{r}\'{\i} Rybi\v{c}ka
+# names after %person must not use braces, or they get misparsed as
+# arguments, hence we make up \NM* names.
 
-$\{$Hamilton Kelly$\}$||{Hamilton Kelly}
+# Brian {Hamilton Kelly} is an extra-special case, as befits his name,
+# since we elide bare braces (in lists-regexps).  So use the code
+# points for lbrace and rbrace.
+\NMHamiltonKelly||&#x7b;Hamilton&nbsp;Kelly&#x7d;||HamiltonKelly
+\NMJiriRybicka||Ji\v{r}\'{\i} Rybi\v{c}ka
+\NMOlsak||Ol\v{s}\'ak
+
+$\{$Hamilton\CONNECT{}Kelly$\}$||&#x7b;Hamilton&nbsp;Kelly&#x7d;||HamiltonKelly
 
 \Thanh||H&agrave;n Th&#x1ebf; Th&agrave;nh||Han The Thanh
 
@@ -48,9 +53,9 @@ R\r{u}\v{z}i\v{c}ka||R&#367;&#382;i&#269;ka||Ruzicka
 \TeX ||TeX
 \TUB{}\CONNECT{}Team||TUGboat\CONNECT{}Team
 
-# Various accents. todo: use hex consistently, not decimal.
+# Various accents, etc. todo: use hex or names, not decimal.
 \"a||&auml;||a
-\"O||&#214;||O
+\"O||&#xd6;||O
 \"o||&ouml;||o
 \"u||&uuml;||u
 #
