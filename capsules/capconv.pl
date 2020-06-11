@@ -299,6 +299,13 @@ sub transform_subtitles {
     # replacing " " and "\ " and "~" with our \CONNECT{} string, which
     # turns into &nbsp;.  (Ties are converted to spaces by default, not nbsp.)
     @subtitles = map { s/\\? |~/\\CONNECT{}/g; $_; } @subtitles;
+    #
+    # Additionally, for items that contain a - or "dash;", wrap in <nobr>
+    # to avoid breaking at the hyphens. Don't wrap everything just to
+    # reduce the amount of output. We are matching TeX here, not HTML,
+    # so looking for things like \Dash. No harm in matching more.
+    @subtitles = map { /-|[dD]ash/ ? "<nobr>$_</nobr>" : $_; } @subtitles;
+    #
     $between_subtitles = ";\n";
     $subtitle_spaces = 2;
     $pre_subtitle = "&nbsp;" x 3;

@@ -34,7 +34,7 @@ END_HEADER
   my $count = 0;
   print $fh "<ol>\n";
   for my $t_sort (sort { $a cmp $b } keys %titles) {
-    if ($count % 96 == 0) {
+    if ($count % 100 == 0) {
       my $t_html = $title_html{$t_sort};
       my $t_anchor = $anchors{$t_sort};
       print $fh qq!<li><a href="#$t_anchor">$t_html</a>\n!;
@@ -109,12 +109,12 @@ sub print_all_by_title {
     print $fh <<START_TITLE_GROUP;
 <p class="tubidxgroup" id="$t_anchor">$t_html
   <small>(<a href="#$t_anchor">#$t_anchor</a>)</small>
-<ul class="tubidxentry">
+<small><ul class="tubidxentry">
 START_TITLE_GROUP
 
     for my $cap (sort sort_by_title_issue_page @{$titles->{$t_sort}}) {
       #&info_hash ("t_sort $t_sort(anchor=$t_anchor html=$title_html)", $cap);
-      print $fh qq!<li><small>!;
+      print $fh qq!<li>!;
       print $fh &lists_url_html ($cap, "PDF", "&nbsp;" x 3);
       
       # See comments above in find_titles about this field.
@@ -124,10 +124,10 @@ START_TITLE_GROUP
       
       print $fh &lists_author_html ($cap->{"author_html"});
       print $fh &lists_entry_trailer ($cap);
-      print $fh qq!</small>\n!;
+      print $fh qq!\n!;
     }
     
-    print $fh "</ul>\n"; # end of this category
+    print $fh "</ul></small>\n"; # end of this category
   }
 }
 
