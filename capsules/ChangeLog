@@ -1,9 +1,19 @@
+2020-06-13  Karl Berry  <karl@freefriends.org>
+
+	* capaccum-author.pl (print_all_by_author): output links to all
+	names (usually authors) for a given item. Also do <small> per <ul>.
+	* capaccum-keyword.lp (print_all_by_category): <small> per <ul>.
+	* tb63capsule.txt,
+	* tb66capsule.txt,
+	* tb78capsule.txt,
+	* tb79capsule.txt: more name consistency wrt accents.
+
 2020-06-11  Karl Berry  <karl@freefriends.org>
 
 	* capconv.html (transform_subtitles): wrap beet entries containing
 	"-" or "dash" or "Dash" in <nobr>.
 	* capaccum-title.pl (output_title_list): let's use every 100 titles.
-	(print_all_by_title): wrap  entire <ul>..</ul> in <small>
+	(print_all_by_title): wrap entire <ul>..</ul> in <small>
 	instead of each individual <li>, for better line spacing.	
 
 2020-06-09  Karl Berry  <karl@freefriends.org>

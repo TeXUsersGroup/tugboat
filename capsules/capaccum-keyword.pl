@@ -131,21 +131,21 @@ sub print_all_by_category {
     print $fh <<START_CATEGORY;
 <p class="tubidxgroup" id="$category_tags{$cat}"><b>$cat</b>
   <small>(<a href="#$category_tags{$cat}">#$category_tags{$cat}</a>)</small>
+<small>
 <ul class="tubidxentry">
 START_CATEGORY
 
     for my $cap (sort sort_by_title_issue_page @{$categories{$cat}}) {
       #&info_hash ("cat $cat", $cap);
       #
-      print $fh qq!<li>!;
-      print $fh qq!<small>!;
+      print $fh "<li>";
       print $fh &lists_url_html ($cap, $cap->{"title_html"});
       print $fh &lists_author_html ($cap->{"author_html"});
       print $fh &lists_vol_iss_link ($cap->{issue});
-      print $fh qq!</small>\n!;
+      print $fh "\n";
     }
     
-    print $fh "</ul>\n"; # end of this category
+    print $fh "</ul></small>\n"; # end of this category
   }
 }
 

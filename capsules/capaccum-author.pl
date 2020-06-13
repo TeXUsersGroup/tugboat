@@ -11,7 +11,7 @@ sub sort_by_issue_page {
   || $a->{pageno} <=> $b->{pageno}
 }
 
-# Output the list of all authors (WHAT), starting with LIST_HDR_COMMON,
+# Output the list of all "authors" (WHAT), starting with LIST_HDR_COMMON,
 # from all issues in ACCUM.
 # 
 sub output_author_list {
@@ -79,13 +79,13 @@ sub find_authors {
       my %cap = %{$iss{"capsules"}->{$pageno}};
       
       my @author_html = @{$cap{"author_html"}};
-      shift @author_html; # get rid of single-printable-html string
+      shift @author_html;  # discard single-printable-html string
       #
       # if have %person directive (a string), augment list.
       if ($cap{"author_person"}) {
         my $person_html = &transform_author ($cap{"author_person"});
         my @person_html = @{$person_html};
-        shift @person_html; # discard its single-printable-html string too
+        shift @person_html;  # discard its single-printable-html string too
         push (@author_html, @person_html); # order doesn't matter.
       }
 
@@ -98,7 +98,7 @@ sub find_authors {
         push (@{$authors{$a_sort}}, \%cap);
         
         # if an & remains, that means some entity in the html did not get
-        # translated. to be fixed (probably) in lists-translations.
+        # translated. to be fixed (probably) in lists-translations.txt.
         warn "$cap{issue}->{filename}: author sort string has &: $a_sort\n"
           if $a_sort =~ /&/;
         
@@ -130,7 +130,9 @@ sub find_authors {
 # 
 sub print_all_by_author {
   my ($fh,$authors,$anchors,$author_html) = @_;
-  
+  # the mapping should be unique; we have some checks below in case it's not.
+  my %html_to_sortkey = reverse %$author_html;
+
   for my $a_sort (sort { lc($a) cmp lc($b) } keys %$authors) {
     my $a_anchor = $anchors->{$a_sort};
     my $a_html = $author_html->{$a_sort};
@@ -138,17 +140,49 @@ sub print_all_by_author {
     print $fh <<START_TITLE_GROUP;
 <p class="tubidxgroup" id="$a_anchor">$a_html
   <small>(<a href="#$a_anchor">#$a_anchor</a>)</small>
+<small>
 <ul class="tubidxentry">
 START_TITLE_GROUP
 
     for my $cap (sort sort_by_issue_page @{$authors->{$a_sort}}) {
-      print $fh qq!<li><small>!;
-      print $fh &lists_url_html ($cap, $cap->{"title_html"});
+      #print &info_hash("a_sort=$a_sort, cap", $cap), "\n";
+      my $title = $cap->{"title_html"};
+      print $fh "<li>";
+      print $fh &lists_url_html ($cap, $title);
       print $fh &lists_entry_trailer ($cap);
-      print $fh qq!</small>\n!;
+      #
+      # If there are multiple authors, output the others.
+      my @add_auth = ();
+      my @all_auth = @{$cap->{"author_html"}}; # local copy
+      shift @all_auth; # discard single-printable-html-string
+      for my $add_html (sort @all_auth) { # additional author?
+        #print " considering $add_html for $title\n";
+        next if $add_html eq $a_html; # skip the author we are doing.
+        #print " adding $add_html\n";
+        my $add_sortkey = $html_to_sortkey{$add_html};
+        if (! $add_sortkey) {
+          # happens when there are differing versions of the name.
+          warn "no sortkey for additional author $add_html (title $title)";
+          next;
+        }
+        #print " got sortkey $add_sortkey for $add_html\n";
+        if ($author_html->{$add_sortkey} ne $add_html) {
+          # if multiple authors resolved to the same sort key,
+          # which should not happen.
+          warn "collision for additional author (html)$add_html"
+               . " -> (sortkey)$add_sortkey"
+               . " -> (html)$author_html->{add_sortkey}\n";
+        }
+        my $add_anchor = $anchors->{$add_sortkey};
+        push (@add_auth, qq!<a href="#$add_anchor">$add_html</a>!);
+      }
+      print $fh "<nobr>&nbsp;(", join ("; ", @add_auth), ")</nobr>"
+        if @add_auth;
+      #
+      print $fh "\n";
     }
     
-    print $fh "</ul>\n"; # end of this category
+    print $fh "</ul></small>\n"; # end of this category
   }
 }
 
