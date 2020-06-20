@@ -391,7 +391,7 @@
 
 
 \capsule{}%subsec
-        {\LaTeX}
+        {\LaTeX}%add|Resources
         {Ken Yap}
         {Contents of \LaTeX\ style collection as of 15th May 1987}
         {}
@@ -413,7 +413,7 @@
 
 \capsule{}%subquery
         {Problems}
-        {}
+        {Donald E. Knuth}
         {Saturday morning problem\Dash solution}
         {}
         {210-210}
@@ -422,7 +422,7 @@
 
 \capsule{}%subquery
         {Problems}
-        {}
+        {Alan Hoenig}
         {TeX\ does windows\Dash conclusion}
         {}
         {211-215}
@@ -431,7 +431,7 @@
 
 \capsule{}%subquery
         {Problems}
-        {}
+        {Jim Fox}
         {Comment on ``\TeX\ does windows''}
         {}
         {216-216}
