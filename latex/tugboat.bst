@@ -7,7 +7,8 @@
 %%%     "editor(s)" to "ed(s)".
 %%%   Set urlintro="".
 %%%   Output "Ph.D." rather than "PhD".
-%%%   Reduce long author lists in format.names per Mico Loretan.
+%%%   Truncate long author lists in format.names (max.names, trunc.num)
+%%%     and omit "and" from author lists, per Oren P.
 %%%   New fields for editors:
 %%%     "newpage" - force page break after entry;
 %%%     "urlnewline" - force line break before url value;
@@ -392,44 +393,71 @@ FUNCTION {emphasize}
   if$
 }
 
-INTEGERS { nameptr namesleft numnames }
+%%% from trunc-auth.bst:
+%%% There are two constants that allow for the truncation of a list of author
+%%% (or editor) names -- max.names and trunc.num.  And here's how they work:
+%%% If there are max.names of fewer in the list, there is no truncation; but
+%%% if there are more than max.names, the list is truncated at the trunc.num
+%%% name, which is replaced by trunc.string (such as "et~al.", and names later
+%%% in the list are omitted).  There's also a sanity check, making sure that:
+%%%   2  <=  trunc.num  <=  max.names + 1
 
-FUNCTION {format.names}
+INTEGERS { max.names trunc.num }
+
+STRINGS { trunc.string sort.trunc.string } % the two truncation-string versions
+
+FUNCTION {init.and.check.trunc.consts}  % from trunc-auth.bst,
+{ #3 'max.names :=                      % the two relevant integer constants
+  #3 'trunc.num :=
+  "et~al." 'trunc.string :=             % and string constants for printing
+  "et al" 'sort.trunc.string :=         % and sorting
+  trunc.num #2 <
+    { "trunc.num=" trunc.num int.to.str$ * " but should be at least 2" *
+      warning$
+    }
+    'skip$
+  if$
+  trunc.num max.names #1 + >
+    { "trunc.num=" trunc.num int.to.str$ *
+      " should be at most max.names + 1 = " * max.names #1 + int.to.str$ *
+      warning$
+    }
+    'skip$
+  if$
+}
+
+INTEGERS { nameptr numnames }
+
+INTEGERS { finalnamenum }               % from trunc-auth.bst
+
+FUNCTION {format.names}                 % from trunc-auth.bst
 { 's :=
-  #1 'nameptr :=
+  #0 'nameptr :=
   s num.names$ 'numnames :=
-  numnames 'namesleft :=
-    { namesleft #0 > }
-    { s nameptr "{f.~}{vv~}{ll}{, jj}" format.name$ 't :=
-      nameptr #1 >
-        % following lines implement printing only 2 author names (+ "et al.")
-        % whenever there are more than 4 authors. Thanks Mico.
-        % https://tex.stackexchange.com/questions/26575
-        { nameptr #2
-          #1 + =
-          numnames #3
-          > and
-            { "others" 't :=
-              #1 'namesleft := }
-            'skip$
-          if$
-          namesleft #1 >
-            { ", " * t * }
-            { numnames #2 >
-                { "," * }
-                'skip$
-              if$
-              t "others" =
-                { " et~al." * }
-                { " and " * t * }
+  numnames max.names >                  % from trunc-auth.bst
+    { trunc.num 'finalnamenum := }      % truncate in this case
+    { numnames 'finalnamenum := }
+  if$
+    { nameptr finalnamenum < }
+    { nameptr #1 + 'nameptr :=
+      s nameptr "{f.~}{vv~}{ll}{, jj}" format.name$ 't :=
+      nameptr #1 =
+        't
+        { ", " *                        % comma but no "and" before final name
+          nameptr finalnamenum <
+            { t * }
+            { numnames max.names >
+                { trunc.string * }
+                { t "others" =
+                    { "et~al." * }
+                    { t * }
+                  if$
+                }
               if$
             }
           if$
         }
-        't
       if$
-      nameptr #1 + 'nameptr :=
-      namesleft #1 - 'namesleft :=
     }
   while$
 }
@@ -1336,6 +1364,8 @@ MACRO {tcs} {"Theoretical Comput. Sci."}
 
 READ
 
+EXECUTE {init.and.check.trunc.consts}   % from trunc-auth.bst
+
 FUNCTION {sortify}
 { purify$
   "l" change.case$
@@ -1352,24 +1382,34 @@ FUNCTION {chop.word}
   if$
 }
 
-FUNCTION {sort.format.names}
+FUNCTION {sort.format.names}            % from trunc-auth.bst
 { 's :=
-  #1 'nameptr :=
+  #0 'nameptr :=
   ""
   s num.names$ 'numnames :=
-  numnames 'namesleft :=
-    { namesleft #0 > }
-    { nameptr #1 >
+  numnames max.names >                  % from trunc-auth.bst
+    { trunc.num 'finalnamenum := }      % truncate in this case
+    { numnames 'finalnamenum := }
+  if$
+    { nameptr finalnamenum < }
+    { nameptr #1 + 'nameptr :=
+      nameptr #1 >
         { "   " * }
         'skip$
       if$
       s nameptr "{vv{ } }{ll{ }}{  f{ }}{  jj{ }}" format.name$ 't :=
-      nameptr numnames = t "others" = and
-        { "et al" * }
+      nameptr finalnamenum <
         { t sortify * }
+        { numnames max.names >
+            { sort.trunc.string * }
+            { t "others" =
+                { "et al" * }
+                { t sortify * }
+              if$
+            }
+          if$
+        }
       if$
-      nameptr #1 + 'nameptr :=
-      namesleft #1 - 'namesleft :=
     }
   while$
 }
