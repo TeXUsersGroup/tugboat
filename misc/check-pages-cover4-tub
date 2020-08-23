@@ -44,6 +44,11 @@ sub main {
         $ok++;
         $current_pageno = $this_pageno;
         #print "got $this_pageno for $item_name, was $current_pageno, ok.\n";
+      } elsif ($this_pageno >= 900) {
+        $bad++;
+        warn ("$ARGV:$.: draft pageno $this_pageno for $item_name, "
+              . " after $current_pageno.\n");
+        
       } else {
         $bad++;
         warn ("$ARGV:$.: disordered $this_pageno for $item_name, "
