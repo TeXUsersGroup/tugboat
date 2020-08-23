@@ -1,3 +1,17 @@
+2020-08-23  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\macOS): new abbrev.
+	(\tubreflect): use \TBError, not erroneous \TBerror.
+	(\now): insert leading 0 for hours and minutes.
+	(\tubsmallerskip): half a smallskip.
+
+2020-08-16  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst (format.names): new version from Oren which
+	generalizes truncation of author and editor name lists
+	using new integers max.names, trunc.num (both 3 for TUGboat).
+	Also, omit "and" from these name lists.
+
 2020-04-26  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\sechook): new macro.

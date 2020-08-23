@@ -1,0 +1,87 @@
+#!/usr/bin/env perl
+# $Id$
+# Input is assumed to be a tbNNNcont.tex input file (cover4 contents).
+# Our goal is to check that the page numbers are in ascending order,
+# with possible exceptions given on the command line.
+# 
+# The idea is to look for \getfirstpage{...} and \getlastpage{...}
+# invocations, get their numeric values, and do the check.
+
+use strict;
+use warnings;
+
+my $ERROR_COUNT = 0;
+
+exit (&main ());
+
+sub main {
+  my $ok = 0;
+  my $bad = 0;
+  my $current_pageno = 0;
+  
+  while (<>) {
+    s/(^|[^\\])%.*//; # simplistic comment removal, good enough.
+    if (/\\get(fir|la)stpage\{(.*?)\}/) { # uncommented page line
+      my $type = $1;       # "fir" or "la"
+      my $item_name = $2;  # the article ident
+
+      # the item directory.
+      my $item_dir;
+      if (-d $item_name)         { $item_dir = $item_name; }
+      elsif (-d "../$item_name") { $item_dir = "../$item_name"; }
+      else {
+        warn "$ARGV:$.: no directory for: $item_name\n";
+        next;
+      }
+      my $this_pageno;
+      if ($type eq "fir") {
+        $this_pageno = &get_page ("$item_name/firstpage.tex");
+      } elsif ($type eq "la") {
+        $this_pageno = &get_page ("$item_name/lastpage.tex");
+        $this_pageno--; # not the +1
+      }
+      if ($this_pageno >= $current_pageno) {
+        $ok++;
+        $current_pageno = $this_pageno;
+        #print "got $this_pageno for $item_name, was $current_pageno, ok.\n";
+      } else {
+        $bad++;
+        warn ("$ARGV:$.: disordered $this_pageno for $item_name, "
+              . " was $current_pageno.\n");
+      }
+    }
+  }
+  
+  print "$ARGV: $ok ok, $bad bad.\n";
+  return $bad > 0; # 1 if any failures
+}
+
+# QL
+# read per-paper file to get either starting or ending page number.
+# increment global $ERROR_COUNT if problems.
+# 
+sub get_page {
+  my ($pagefile) = @_;
+  
+  my $page = "OOPS";
+
+  my @page = `cat $pagefile`;
+  if (! @page) {
+    warn "*** no $pagefile?\n";
+    $ERROR_COUNT++;
+
+  } else {
+    # firstpage.tex example: \startpage = 269
+    # lastpage.tex example: \tublastpageplus = 93
+    my (undef,undef,$try) = split (" ", $page[0]);
+    if ($try <= 0) {
+      warn "***  $pagefile: page number not positive: $try\n";
+      $ERROR_COUNT++;
+
+    } else {  # all seems well.
+      $page = $try;
+    }
+  }
+
+  return $page;
+}

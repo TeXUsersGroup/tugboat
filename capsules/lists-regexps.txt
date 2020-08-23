@@ -43,5 +43,9 @@
 \{\\tt\\bs (.*?)\}||"<tt>\\$1</tt>"
 \{\\tt\s*(.*?)\}||"<tt>$1</tt>"
 
+# remove whitespace at beginning and end.
+#^\s+(.*)||$1
+#(.*)\s+$||$1
+
 # elide bare braces. do last since braces are part of matching above.
 \{(.*?)\}||$1

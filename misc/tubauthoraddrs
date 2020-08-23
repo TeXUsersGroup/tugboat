@@ -22,11 +22,17 @@ for d in "$@"; do
   fi
   
   # we know the author of duckboat, which has a fake address for fun. Etc.
-  if echo $d | grep '^duck-' >/dev/null; then
+  if echo $d | grep '^beet' >/dev/null; then
+    echo; echo $d:; echo "  Barbara Beeton"
+    continue
+  elif echo $d | grep '^duck-' >/dev/null; then
     echo; echo $d:; echo "  Carla Maggi"
     continue
   elif echo $d | grep '^hagen-' >/dev/null; then
     echo; echo $d:; echo "  Hans Hagen"
+    continue
+  elif echo $d | grep '^heff-' >/dev/null; then
+    echo; echo $d:; echo "  Jim Hefferon"
     continue
   elif echo $d | grep '^mitt-' >/dev/null; then
     echo; echo $d:; echo "  Frank Mittelbach"

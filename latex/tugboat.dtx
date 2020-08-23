@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2020-03-12 v2.23
+                   [2020-08-23 v2.23
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -152,6 +152,7 @@
 % |\JoT|&           The Joy of \TeX\\
 % |\LaTeX|&\\
 % |\LyX|&\\
+% |\macOS|&         mac OS\\
 % |\MacOSX|&        Mac OS X\\
 % |\MathML|&\\
 % |\Mc|&            M with raised c\\
@@ -881,7 +882,7 @@
 %    \begin{macrocode}
 \def\tubreflect#1{%
   \@ifundefined{reflectbox}{%
-    \TBerror{A graphics package must be loaded for \string\XeTeX}%
+    \TBError{A graphics package must be loaded for \string\XeTeX}%
   }{%
     \ifdim \fontdimen1\font>0pt
       \raise 1.75ex \hbox{\kern.1em\rotatebox{180}{#1}}\kern-.1em
@@ -1051,7 +1052,8 @@
         \advance\minutes by-\time
         \global\multiply\minutes by-1 }
 \SetTime
-\def\now{\number\hours:\ifnum\minutes<10 0\fi\number\minutes}
+\def\now{\ifnum\hours<10 0\fi\number\hours:%
+         \ifnum\minutes<10 0\fi\number\minutes}
 \def\Now{\today\ \now}
 \newif\ifPrelimDraft
 \def\midrtitle{} % center of running heads
@@ -1209,11 +1211,15 @@
 % Make \! work in text mode.
 \DeclareRobustCommand{\!}{\ifmmode\mskip-\thinmuskip \else\kern-0.16667em \fi}
 %
-% Half a thinspace.
+% Half a thinspace, positive and negative.
 \DeclareRobustCommand{\tubthinnerspace}
   {\ifmmode\mskip.5\thinmuskip \else\kern0.08333em \fi}
 \DeclareRobustCommand{\tubthinnerspaceneg}
   {\ifmmode\mskip-.5\thinmuskip \else\kern-0.08333em \fi}
+% 
+% Half a smallskip.
+\DeclareRobustCommand{\tubsmallerskip}
+  {\vskip 1.5pt plus .75pt minus .75pt\relax}
 %
 %    \end{macrocode}
 %
@@ -2488,7 +2494,7 @@
 %
 % \cs{TB@startsection} used to warn about \verb"*" versions of sectioning
 % commands when numbering wasn't in effect.  But that eventually seemed
-% a useless complaint, since it can be usefule to switch back and forth between
+% a useless complaint, since it can be useful to switch back and forth between
 % numbered and unnumbered can be useful during article development.
 % So now \cs{TB@startsection} is just a synonym for \cs{@startsection}.
 %
@@ -2723,7 +2729,7 @@
 % \end{macro}
 %
 % One-line captions are normally centered, but sometimes we want to set
-% them flush-left for consistency with other nearby figures.
+% them flush-left for consistency with other nearby figures. 
 % \begin{macro}{\tubcaptionleftglue}
 %    \begin{macrocode}
 \let\tubcaptionleftglue=\hfil
@@ -2746,7 +2752,7 @@
      \fi
      \noindent \tubmakecaptionbox{#1}{#2}\par}%
   \else
-    % fits on one line; use the hbox, centered.  Do not reset its glue.
+    % fits on one line; use the hbox, usually centered.  Do not reset its glue.
     \global\@minipagefalse
     \hb@xt@\hsize{\tubcaptionleftglue\box\@tempboxa\hfil}%
   \fi

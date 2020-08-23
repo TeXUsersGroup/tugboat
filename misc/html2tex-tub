@@ -71,6 +71,9 @@ sed \
   -e 's,</figcaption>,},g' \
   \
   -e 's/Hefferon/Hef{}feron/g' \
+  -e 's/\<HTML\>/\\HTML{}/g' \
+  -e 's/\<CSS\>/\\CSS{}/g' \
+  -e 's/\<PDF\>/\\PDF{}/g' \
   -e 's/TeX/\\TeX{}/g' \
   -e 's/(La)\\TeX/\\AllTeX/g' \
   -e 's/La\\TeX/\\LaTeX/g' \
