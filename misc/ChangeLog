@@ -1,3 +1,8 @@
+2020-08-24  Karl Berry  <karl@freefriends.org>
+
+	* make-issue-pages-tub: another new script, also invoked from
+	top-level issue Makefile.
+
 2020-08-23  Karl Berry  <karl@freefriends.org>
 
 	* check-pages-cover4-tub: new script, invoked from top-level issue

@@ -1,0 +1,172 @@
+#!/bin/sh
+# $Id$
+# Create files for Cadmus, per their ~tubprod/tb00/FileSpecs_2020.pdf doc.
+# One file per page, with names in a specific format.
+# Run from the top-level issue Makefile.
+# Required option: --pubmonth NN (used in the filenames).
+# Optional option: --colorpages "NNN NNN ..." (don't grayscale those pages).
+
+colorpages=
+pubmonth=
+
+while test $# -gt 0; do
+  if test "x$1" = x--pubmonth; then
+    shift || exit 1
+    if echo "$1" | grep -v '^[01][0-9]$' >/dev/null; then
+      echo "$0: publication month must be between 01..12, not: $1" >&2
+      exit 1
+    fi
+    if test "$1" -lt 1 || test "$1" -gt 12; then
+      echo "$0: publication month must be between 01..12, not: $1" >&2
+      exit 1
+    fi
+    pubmonth=$1
+    shift
+
+  elif test "x$1" = x--colorpages; then
+    # we'll let the test below sort out incorrect values here.
+    shift || exit 1
+    colorpages=$1
+    shift
+
+  else
+    echo "$0: unexpected argument: $1" >&2
+    cat <<USAGE >&2
+Usage: $0 --pubmonth NN [--colorpages "NNN NNN ..."]
+
+Generate split fileset for Cadmus, from file CADMUS/issue.pdf.
+
+Publication month must be exactly two digits.
+
+If color pages are specified, each must be exactly three digits, with
+leading zeros as necessary, and each must be present in issue.pdf.
+
+This is invoked from the top-level issue Makefile; see there for more.
+USAGE
+    exit 1
+  fi
+done
+
+if test -z "$pubmonth"; then
+  echo "$0: publication month (01..12) must be specified." >&2
+  exit 1
+fi
+
+# Little routine to return (expand to) the number of PDF pages in $1.
+# 
+# Here, and throughout the script, we intentionally do not quote the
+# variables, since if there are unexpected filenames or other strings,
+# an error from test or bash or whatever is desired.
+pdfpagecount () {
+  if test ! -r $1; then
+    echo "$0: pdfpagecount argument not readable: $1" >&2
+    exit 1
+  fi
+  
+  # without the -I, get permission error because of SAFER.
+  $gs -dNODISPLAY -I`dirname $1` \
+      -c "($1) (r) file runpdfbegin pdfpagecount = quit" || exit 1
+}
+
+# if page count of $1 (a pdf) != $2, abort.
+assert_pdfpagecount () {
+  pdfcount=`pdfpagecount $1`
+  if test $pdfcount -ne $2; then
+    echo "$0: $pdfcount pages in $1, expected $2, goodbye." >&2
+    exit 1
+  fi
+}
+
+gs="gs -q"
+cd $tb/CADMUS || exit 1
+test -d upload || mkdir upload
+rm -f upload/*
+cd upload || exit 1
+
+infile=../issue.pdf
+pubyear=`date +%y`
+pubdate=$pubmonth$pubyear
+
+# how cadmus wants the file names to look.
+filesuffix=_TUGboat$pubdate
+
+# 
+# split pdf into individual pages.
+echo "$0: splitting `pdfpagecount $infile` pages..."
+
+# We want to use %03d, but that causes unfortunate "pdfmark destination
+# page" diagnostics which we don't want to see. So use %d (no messages
+# for some reason) and rename by hand.
+$gs -o "%d$filesuffix.pdf" -sDEVICE=pdfwrite $infile
+#
+for f in *$filesuffix.pdf; do
+  pageno=`echo $f | sed 's/_.*//'`
+  # assume we'll never have a thousand pages.
+  zeros=
+  if test $pageno -lt 10; then
+    zeros=00
+  elif test $pageno -lt 100; then
+    zeros=0
+  fi
+  #echo "$f -> $pageno -> $zeros"
+  test -n "$zeros" && mv $f $zeros$f # -v
+done
+#ls -l
+
+# make sure we created the expected number of files
+# (so must check this before doing covers).
+filecount=`ls | wc -l`
+assert_pdfpagecount $infile $filecount
+
+# We have no easy way to know whether a given page contains color or
+# not, so just grayscale everything not requested to be color.
+echo "$0: grayscaling pages, this will take a while ..."
+date
+
+# for each page not listed in $colorpages, convert to grayscale.
+color_count=0
+gray_count=0
+set - $colorpages # now use word-split $colorpages as argv
+for page in `seq --format="%03.0f" 1 $filecount`; do
+  color=false
+  if test x$page = x$1; then
+    echo "$page: color, leaving alone."
+    test $# -gt 0 && shift
+    color_count=`expr $color_count + 1`
+  else
+    #echo "$page: not color, so grayscaling."
+    gray_count=`expr $gray_count + 1`
+    origfile=$page$filesuffix.pdf
+    grayfile=gray-$origfile
+    ps2pdf-gray-tub $origfile $grayfile || exit 1
+    mv $grayfile $origfile || exit 1
+  fi
+done
+date
+
+# should have found all color pages given.
+if test $# -ne 0; then
+  echo "$0: color pages specified but not found, goodbye: $*" >&1
+  exit 1
+fi
+
+echo "$0: $color_count color + $gray_count grayscale = $filecount pages."
+
+# 
+# Link the covers and the spine, we should not need any changes.
+echo "$0: linking covers ..."
+for c in 1 2 3 4; do
+  dest=c$c$filesuffix.pdf
+  ln -s ../cover$c.pdf $dest || exit 1
+  assert_pdfpagecount $dest 1
+done
+
+ln -s ../spine.pdf sp$filesuffix.pdf || exit 1
+assert_pdfpagecount sp$filesuffix.pdf 1
+
+# Finally, re-concatenate all the pages, so that we have a single file
+# we can look through and check that grayscale vs. color came out correctly.
+echo "$0: making issue-upload.pdf for manual check ..."
+pdfconcat issue-upload.pdf [^cs]*$filesuffix.pdf
+assert_pdfpagecount issue-upload.pdf $filecount
+ls -l issue-upload.pdf
