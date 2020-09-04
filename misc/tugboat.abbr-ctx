@@ -89,6 +89,7 @@
 \def\MetaPost  {MetaPost}
 \def\METATEX   {Meta\TeX}
 \def\MICROSOFT {Micro\-soft}
+\def\MINGW     {Min\acro{GW}}
 \def\MIKTEX    {MiK\-\TeX}
 \def\MKII      {Mk\acro{II}}
 \def\MKIV      {Mk\acro{IV}}
@@ -347,6 +348,7 @@
 \def\NC{&}
 \def\NR{\\}
 \def\HL{\hline}
+\def\ML{\hline\noalign{\smallskip}}
 \def\cc#1{\multicolumn{1}{c}{#1}}% center cell
 
 \def\starttexdefinition#1\stoptexdefinition{}

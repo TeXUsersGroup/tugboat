@@ -1,3 +1,7 @@
+2020-09-04  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr-ctx (\MINGW, \ML): define (from tb129hagen-keyword).
+
 2020-08-24  Karl Berry  <karl@freefriends.org>
 
 	* make-issue-pages-tub: another new script, also invoked from
@@ -13,7 +17,7 @@
 2020-05-20  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.abbr-ctx (\noheaderandfooterlines, \starttitle): more no-ops.
-	(from tb128hagen-type3)
+	(from tb129hagen-type3)
 
 2020-04-26  Karl Berry  <karl@freefriends.org>
 
