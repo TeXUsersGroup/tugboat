@@ -22,8 +22,8 @@ fi
 
 : ${gs=gs}
 exec $gs -q -dNOPAUSE -dBATCH \
-  -sOutputFile="$2" \
   -sDEVICE=pdfwrite \
+  -sOutputFile="$2" \
   -r1200 \
   -dAutoRotatePages=/None \
   -dCompressFonts=true \
