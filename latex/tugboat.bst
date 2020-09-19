@@ -9,6 +9,8 @@
 %%%   Output "Ph.D." rather than "PhD".
 %%%   Truncate long author lists in format.names (max.names, trunc.num)
 %%%     and omit "and" from author lists, per Oren P.
+%%%   Use https://doi.org/ for the doi url, and omit doi: line
+%%%     (incomplete: doi urls not linked correctly).
 %%%   New fields for editors:
 %%%     "newpage" - force page break after entry;
 %%%     "urlnewline" - force line break before url value;
@@ -98,7 +100,7 @@ FUNCTION {init.urlbst.variables}
   "[link]" 'linktextstring := % dummy link text; typically "[link]"
   "http://arxiv.org/abs/" 'eprinturl := % prefix to make URL from eprint ref
   "arXiv:" 'eprintprefix := % text prefix printed before eprint ref; typically "arXiv:"
-  "http://dx.doi.org/" 'doiurl := % prefix to make URL from DOI
+  "https://doi.org/" 'doiurl := % prefix to make URL from DOI
   "doi:" 'doiprefix :=      % text prefix printed before DOI ref; typically "doi:"
   "http://www.ncbi.nlm.nih.gov/pubmed/" 'pubmedurl := % prefix to make URL from PUBMED
   "PMID:" 'pubmedprefix :=      % text prefix printed before PUBMED ref; typically "PMID:"
@@ -805,7 +807,7 @@ FUNCTION {make.href.hypertex}
 % make hyperref specials
 FUNCTION {make.href.hyperref}
 { 
-  "\newline\href {" swap$ * "} {\path{" * swap$ * "}}" *
+  "\newline\href{" swap$ * "}{\path{" * swap$ * "}}" *
 }
 FUNCTION {make.href}
 { hrefform #2 =
@@ -848,7 +850,7 @@ FUNCTION {format.eprint}
 FUNCTION {format.doi}
 { doi empty$
     { "" }
-    { doiprefix doi * doiurl doi * make.href }
+    { doi doiurl make.href }
   if$
 }
 

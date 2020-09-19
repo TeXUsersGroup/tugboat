@@ -1,4 +1,8 @@
-2020-08-23  Karl Berry  <karl@freefriends.org>
+2020-09-19  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst: first (incomplete) cut at doi output.
+
+2020-08-23  karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\macOS): new abbrev.
 	(\tubreflect): use \TBError, not erroneous \TBerror.
