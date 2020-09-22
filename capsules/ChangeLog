@@ -1,3 +1,18 @@
+2020-09-22  Karl Berry  <karl@tug.org>
+
+	* capaccum.pl (@category_expected): add TUG 2020.
+	* capconv.pl (transform_author): samcarter is another
+	expected one-word author.
+	* lists-translations.txt (\API, \BibLaTeX, \HTTP): add.
+	(\LaTeX\, \TeX\): replace these with specific \LaTeX3, \TeX\acro, etc.
+	* lists-unifications.txt (Conference Notes): add TUG 2020.
+	(Cereda, Hugill-Fontanel, Ion, Kr&uuml;ger, MacFarlane,
+	Mc&nbsp;Sween, Price, Rhodes, Sharpe): new
+	* tb128capsule.txt (tb41-2): new.
+	* tb127capsule.txt (tb41-1): public.
+	* tb121capsule.txt (mitt-latexbug): missed \CONNECT{} after
+	 "the" \LaTeX\CONNECT{}Project...
+
 2020-08-09  Karl Berry  <karl@freefriends.org>
 
 	* tb59capsule.txt (cahi, et al.): correct page numbers.

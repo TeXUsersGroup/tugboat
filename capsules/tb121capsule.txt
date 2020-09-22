@@ -124,7 +124,7 @@ access</a>.
 
 \capsule{}
   {\LaTeX}
-  {Frank Mittelbach \aand the \LaTeX\ Project Team}
+  {Frank Mittelbach \aand the\CONNECT{}\LaTeX\CONNECT{}Project\CONNECT{}Team}
   {New rules for reporting bugs in the \LaTeX{} core software}
   {as~maintained by the \LaTeX{} Project: use the \code{latexbug} package and \url{github.com/latex3/latex2e}}
   {44-47}

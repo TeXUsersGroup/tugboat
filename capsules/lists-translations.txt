@@ -123,10 +123,12 @@ $\Omega_2$||&Omega;2||O2
 \#||#
 \%||%
 \AE||&AElig;||AE
-\AMS||AMS
-\AllTeX||(La)TeX
-\AmSTeX||AmSTeX
 \ae||&aelig;||ae
+\AllTeX||(La)TeX
+\AMS||AMS
+\AmSTeX||AmSTeX
+\API||API
+\BibLaTeX||BibLaTeX
 \BibTeX||BibTeX
 \CandT\/||<i>Computers and Typesetting</i>
 \/||
@@ -142,11 +144,13 @@ $\Omega_2$||&Omega;2||O2
 \exTeX||exTeX
 \GNU||GNU
 \HTML||HTML
+\HTTP||HTTP
 \kern.05em||
 \kern1pt||
 \LaTeXe||LaTeX2e
 {\LaTeX}||LaTeX
-\LaTeX\||LaTeX
+\LaTeX\Dash||LaTeX&mdash;
+\LaTeX3||LaTeX3
 \LaTeX ||LaTeX
 \LaTeX||LaTeX
 \LyX||LyX
@@ -178,7 +182,7 @@ $\Omega_2$||&Omega;2||O2
 \TeX{}||TeX
 \TeX\,||TeX
 \TeX\ ||TeX \\
-\TeX\||TeX
+\TeX\acro||TeX
 \TeX||TeX
 \TikZ||TikZ
 \TUB||<i>TUGboat</i>||TUGboat

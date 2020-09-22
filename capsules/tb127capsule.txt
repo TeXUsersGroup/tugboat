@@ -13,12 +13,6 @@
 % 
 
 \begin{blurb}
-<p>Immediate online access to technical TUGboat articles will be
-available to TUG members only (so some of the links below require a TUG
-username and password).  General information items and articles already
-posted elsewhere are publicly available now.  All of the articles will
-become publicly available around September 2020.
-
 <p>If you're not already a member, we hope you'll consider <a
 href="/join.html">joining TUG</a> to support TUGboat and other TeX
 projects.  <a href="/memberaccess.html">More information on TUG member
@@ -35,7 +29,7 @@ access</a>.
         {Complete issue 41:1 as one pdf (4.1mb)}
         {}
         {\offset{.1}}
-        {https://tug.org/members/TUGboat/!TBIDENT!complete.pdf}
+        {/TUGboat/!TBIDENT!complete.pdf}
         {}
         {}
 
@@ -121,7 +115,7 @@ access</a>.
    {Typographers' Inn}
    {No time for copyright; No time to learn; Proofing the unproofable}
    {71-72}
-   {https://tug.org/members/TUGboat/!TBIDENT!inn.pdf}
+   {/TUGboat/!TBIDENT!inn.pdf}
    {}
    {}
 
@@ -151,7 +145,7 @@ access</a>.
 %   {An experience of trying to submit a paper in \LaTeX\ in an \XML-first world}
 %   {a report on a \LaTeX\ submission to \textit{\acro{IEEE} Annals}, and consequent expectations}
 %   {\getfirstpage{walden-submit}}
-%   {https://tug.org/members/TUGboat/!TBIDENT!walden-submit.pdf}
+%   {/TUGboat/!TBIDENT!walden-submit.pdf}
 %   {}
 %   {}
 
@@ -174,7 +168,7 @@ access</a>.
 %%%  {Science and history behind the design of Lucida}
 %%%  {historical precedents, principles of reading, practical digital type design}
 %%%  {\getfirstpage{bigelow-lucida}}
-%%%  {https://tug.org/members/TUGboat/!TBIDENT!bigelow-lucida.pdf}
+%%%  {/TUGboat/!TBIDENT!bigelow-lucida.pdf}
 %%%  {}
 %%%  {}
 %
@@ -184,7 +178,7 @@ access</a>.
 %  {\TeX\ on the Raspberry Pi}
 %  {report of \TeX\ processing on all models of the \acro{RP}i}
 %  {\getfirstpage{hagen-rpi}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!hagen-rpi.pdf}
+%  {/TUGboat/!TBIDENT!hagen-rpi.pdf}
 %  {}
 %  {}
 
@@ -267,7 +261,7 @@ Primitive requirements; and more
    {Webnotes: Practical approaches}
    {putting an article's supplemental material on the web, with references}
    {95-96}
-   {https://tug.org/members/TUGboat/!TBIDENT!walden-webnotes.pdf}
+   {/TUGboat/!TBIDENT!walden-webnotes.pdf}
    {}
    {}
 
@@ -280,7 +274,7 @@ Primitive requirements; and more
   {Typesetting Bangla script with Lua\LaTeX{}}
   {using HarfBuzz and \code{luaotfload} to achieve better shaping and colorization}
   {69-70}
-  {https://tug.org/members/TUGboat/!TBIDENT!fischer-bangla.pdf}
+  {/TUGboat/!TBIDENT!fischer-bangla.pdf}
   {}
   {}
 
@@ -303,7 +297,7 @@ Primitive requirements; and more
   {aspects of mathematical typesetting: choice of symbols, abstraction,
    international standards, and more}
   {43-53}
-  {https://tug.org/members/TUGboat/!TBIDENT!gregorio-math.pdf}
+  {/TUGboat/!TBIDENT!gregorio-math.pdf}
   {}
   {}
 
@@ -323,7 +317,7 @@ Primitive requirements; and more
 %%%   {\TeX\ Gyre text fonts revisited}
 %%%   {incorporating math and symbol glyphs into text fonts, and OpenType accent positioning}
 %%%   {\getfirstpage{jackowski-gyre}}
-%%%   {https://tug.org/members/TUGboat/!TBIDENT!jackowski-gyre.pdf}
+%%%   {/TUGboat/!TBIDENT!jackowski-gyre.pdf}
 %%%   {}
 %%%   {}
 
@@ -343,7 +337,7 @@ Primitive requirements; and more
 %%  {Markdown 2.7.0: Towards lightweight markup in \TeX{}}
 %%  {a Lua command-line interface, \texttt{doc}, and content slicing support for \texttt{markdown}}
 %%  {\getfirstpage{novotny-markdown}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!novotny-markdown.pdf}
+%%  {/TUGboat/!TBIDENT!novotny-markdown.pdf}
 %%  {}
 %%  {}
 %%
@@ -353,7 +347,7 @@ Primitive requirements; and more
 %%  {Glossaries with \texttt{bib2gls}}
 %%  {indexing infrastructure with \texttt{glossaries-extra} and/or using \texttt{.bib} format}
 %%  {\getfirstpage{talbot-bib2gls}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!talbot-bib2gls.pdf}
+%%  {/TUGboat/!TBIDENT!talbot-bib2gls.pdf}
 %%  {}
 %%  {}
 
@@ -363,7 +357,7 @@ Primitive requirements; and more
   {Case changing: From \TeX{} primitives to the Unicode algorithm}
   {\LaTeX3 support for uppercasing, lowercasing, titlecasing, case-folding, all per Unicode}
   {39-42}
-  {https://tug.org/members/TUGboat/!TBIDENT!wright-case.pdf}
+  {/TUGboat/!TBIDENT!wright-case.pdf}
   {}
   {}
 
@@ -373,7 +367,7 @@ Primitive requirements; and more
 %%  {Extending primitive coverage across engines}
 %%  {\cs{expanded} and other primitives available in pdf\TeX, \XeTeX, (u)p\TeX}
 %%  {\getfirstpage{wright-primitives}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!wright-primitives.pdf}
+%%  {/TUGboat/!TBIDENT!wright-primitives.pdf}
 %%  {}
 %%  {}
 
@@ -386,7 +380,7 @@ Primitive requirements; and more
 %%  {\TeX.StackExchange cherry picking, part~2: Templating}
 %%  {extended \code{expl3} programming examples: templating and double loops, \acro{ISBN}, catcode tables, and more}
 %%  {\getfirstpage{gregorio-templating}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!gregorio-templating.pdf}
+%%  {/TUGboat/!TBIDENT!gregorio-templating.pdf}
 %%  {}
 %%  {}
 %
@@ -396,7 +390,7 @@ Primitive requirements; and more
 %  {Modern Type 3 fonts}
 %  {OpenType extensions with color, \SVG, \PNG, implemented as Type~3 fonts}
 %  {\getfirstpage{hagen-type3}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!hagen-type3.pdf}
+%  {/TUGboat/!TBIDENT!hagen-type3.pdf}
 %  {}
 %  {}
 %
@@ -406,7 +400,7 @@ Primitive requirements; and more
 %  {Providing Docker images for \TeX\ Live and \ConTeXt}
 %  {supporting continuous integration with a variety of Docker images}
 %  {\getfirstpage{island-docker}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!island-docker.pdf}
+%  {/TUGboat/!TBIDENT!island-docker.pdf}
 %  {}
 %  {}
 %
@@ -426,7 +420,7 @@ Primitive requirements; and more
 %%%%%  {Testing indexes: {\tt testidx.sty}}
 %%%%%  {test methodology and exhaustive comparisons of \code{makeindex}, \code{xindy}, \code{glossaries}, and more}
 %%%%%  {\getfirstpage{talbot}}
-%%%%%  {https://tug.org/members/TUGboat/!TBIDENT!talbot.pdf}
+%%%%%  {/TUGboat/!TBIDENT!talbot.pdf}
 %%%%%  {}
 %%%%%  {}
 
@@ -436,7 +430,7 @@ Primitive requirements; and more
   {An attempt at ragged-right typesetting}
   {esthetics and implementations of ragged right, especially for German text}
   {73-94}
-  {https://tug.org/members/TUGboat/!TBIDENT!wermuth-ragged.pdf}
+  {/TUGboat/!TBIDENT!wermuth-ragged.pdf}
   {}
   {}
 

@@ -179,9 +179,10 @@ sub transform_author {
     if (@parts > 1) {
       # if more than one word, append rest, after ", ".
       $lastfirst .= ", " . join (" ", @parts[0..($#parts-1)]);
-    } elsif ($parts[0] !~ /&nbsp;|LogoTeXnes|Advogato/) {
+    } elsif ($parts[0] !~ /&nbsp;|LogoTeXnes|Advogato|samcarter/) {
       # LogoTeXnes was a pseudonum for tb25crossword,
-      # Advogato was Raph's alias for tb67advo.pdf Knuth interview.
+      # Advogato was Raph Levien's alias for tb67advo.pdf Knuth interview.
+      # samcarter was alias used by tug'20 participant.
       warn "one-word author: $parts[0] (orig: $all_authors_tex)\n";
     }
     push (@ret, $lastfirst);
