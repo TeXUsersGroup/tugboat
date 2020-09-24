@@ -1,3 +1,23 @@
+2020-09-24  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (2020-09-24):
+	(\iftubfinaloption): new conditional, true iff [final] specified.
+	(\iftubsecondcolstart): new condition for new [secondcolstart] option.
+	(\AtEndOfClass): define \url if undefined.
+	(\vol): elide \unskip and \ignorespaces from \volno and \issno
+	definitions, so we can use them as numbers.
+	(\tubcolwidthandgutter): \newdimen for \columnwidth+\colsep (243pt).
+	(\maketitle): \iftubsecondcolstart, execute \null\newpage.
+	(\@oddfoot, \@evenfoot): call \tubtypesetdoi, in all cases.
+	(\tubtypesetdoi): new macro to typeset the doi under regular footer.
+	(\tubdoiprefix): new macro, for 10.47397, assigned by crossref.org.
+
+	(\hyphenation): include Ja-pa-nese and Pak-i-stan. (Independent of
+	rest.)
+	
+	* tubfinal-{odd,even}{,2}: new tiny test files.
+	* Makefile (check-oddeven): new target to test them.
+
 2020-09-19  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.bst: first (incomplete) cut at doi output.
@@ -146,7 +166,7 @@
 
 2018-12-13  Karl Berry  <karl@freefriends.org>
 
-	* tugboat.dtx (final optiona) <\AtEndOfClass>: if page >900, set
+	* tugboat.dtx (final option) <\AtEndOfClass>: if page >900, set
 	\PrelimDrafttrue.
 	(\midrtitle) [\PrelimDrafttrue]: do not define.
 	(\ritlenexttopage): define this (new macro) instead.

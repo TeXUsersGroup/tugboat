@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2020-08-23 v2.23
+                   [2020-09-24 v2.23
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -339,8 +339,6 @@
 % |draft| vs.\ |preprint| vs.\ |final|.
 %
 %    \begin{macrocode}
-\newif\ifpreprint
-\def\preprint{\preprinttrue}
 \DeclareOption{draft}{%
   \AtEndOfClass{%
     \setcounter{page}{901}%
@@ -359,10 +357,16 @@
     \PrelimDrafttrue
   }%
 }
+
+\newif\ifpreprint
+\def\preprint{\preprinttrue}
 \DeclareOption{preprint}{%
    \preprinttrue
 }
+
+\newif\iftubfinaloption % [final]
 \DeclareOption{final}{%
+  \tubfinaloptiontrue
   \AtEndOfClass{%
     \let\thepage=\tuborigthepage
     \NoBlackBoxes
@@ -373,7 +377,7 @@
     % registration marks, etc.
     \ifnum\value{page}>900 \PrelimDrafttrue \else \PrelimDraftfalse \fi
     \@tubrunningfull
-    }%
+  }%
 }
 %    \end{macrocode}
 %
@@ -469,6 +473,17 @@
 %    \begin{macrocode}
 \newif\if@tubtwocolumn  \@tubtwocolumntrue
 \DeclareOption{onecolumn}{\@tubtwocolumnfalse}
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\ifsecondcolstart}
+% Occasionally, we need to start an article in the second column of a
+% page, due to splicing with a previous article. Let's try declaring that.
+% Then, before |\maketitle|, we'll force the move to the second column.
+%
+%    \begin{macrocode}
+\newif\iftubsecondcolstart  
+\DeclareOption{secondcolstart}{\tubsecondcolstarttrue}
 %    \end{macrocode}
 % \end{macro}
 %
@@ -1055,7 +1070,7 @@
 \def\now{\ifnum\hours<10 0\fi\number\hours:%
          \ifnum\minutes<10 0\fi\number\minutes}
 \def\Now{\today\ \now}
-\newif\ifPrelimDraft
+\newif\ifPrelimDraft    % [draft] or [preprint] or pageno>900
 \def\midrtitle{} % center of running heads
 \def\rtitlenexttopage{\ifPrelimDraft \textsl{\small draft: \Now}\fi}
 %    \end{macrocode}
@@ -1198,6 +1213,7 @@
 \ifx\hyper@normalise\undefined
   \def\tbsurl{\url}% no hyperref, so just \url is fine.
   \def\tbhurl{\url}%
+  \ifx\url\undefined \let\url\texttt \fi % er, make sure \url is defined
 \else
   % This hyperref hook-in is due to Ulrike Fischer.
   % \url{https://github.com/latex3/hyperref/issues/125}.
@@ -1319,38 +1335,35 @@
 %
 % For production, these are set in a separate file,
 % |tugboat.dates|, which is issue-specific.
-%
-% \begin{description}
-% \item[\emph{Comment:}] I would like to make the code read a file
-%   |tugboat.dates| in the current directory or its parent.
-%   This is easy except under `odd' operating systems ({\small VMS} is
-%   an example that springs to mind, {\small RISC}os may be even
-%   worse) whose syntax is out of the ordinary.
-% \end{description}
-%
+% 
 %    \begin{macrocode}
-\newcount\issueseqno            \issueseqno=-1
+\newcount\issueseqno \issueseqno=-1
 \def\v@lx{\gdef\volx{Volume~\volno~(\volyr), No.~\issno}}
 \def\volyr{}
 \def\volno{}
-\def\vol #1,#2.{\gdef\volno{#1\unskip}%
-        \gdef\issno{\ignorespaces#2\unskip}%
+\def\vol#1, #2.{%
+        \gdef\volno{#1}%
+        \gdef\issno{#2}%
         \setbox\TestBox=\hbox{\volyr}%
         \ifdim \wd\TestBox > .2em \v@lx \fi }
-\def\issyear #1.{\gdef\issdt{#1}\gdef\volyr{#1}%
+\def\issyear#1.{%
+        \gdef\issdt{#1}\gdef\volyr{#1}%
         \gdef\bigissdt{#1}%
         \setbox\TestBox=\hbox{\volno}%
         \ifdim \wd\TestBox > .2em \v@lx \fi }
-\def\issdate #1#2 #3.{\gdef\issdt{#1#2 #3}\gdef\volyr{#3}%
+\def\issdate#1#2 #3.{%
+        \gdef\issdt{#1#2 #3}\gdef\volyr{#3}%
         \gdef\bigissdt{#1{\smc\uppercase{#2}} #3}%
         \setbox\TestBox=\hbox{\volno}%
         \ifdim \wd\TestBox > .2em \v@lx \fi }
+% The \vol command must be invoked precisely like this, including spaces.
+% Since we are the only ones who write it, we can be strict.
 \vol 0, 0.
 \issdate Thermidor, 9999.
 %    \end{macrocode}
 %
-% (The curious should know that \emph{Thermidor} was one of the French
-% revolutionary month names\dots)
+% (The curious may like to know that \emph{Thermidor} was one of the French
+% revolutionary month names.)
 %
 % For \LaTeX{} use, define a version of the issue declaration that can
 % take or leave the old plain syntax
@@ -1513,10 +1526,10 @@
 \ifx\tubomithyphenations\@thisisundefined
 \hyphenation{Del-a-ware Dijk-stra Duane Eijk-hout
   Flor-i-da Free-BSD Ghost-script Ghost-view
-  Hara-lam-bous Jac-kow-ski Karls-ruhe
+  Hara-lam-bous Jac-kow-ski Ja-pa-nese Karls-ruhe
   Mac-OS Ma-la-ya-lam Math-Sci-Net
   Net-BSD Open-BSD Open-Office
-  Pfa-Edit Post-Script Rich-ard Skoup South-all
+  Pak-i-stan Pfa-Edit Post-Script Rich-ard Skoup South-all
   Vieth VM-ware Win-Edt
   acro-nym acro-nyms analy-sis ap-pen-di-ces ap-pen-dix asyn-chro-nous
   bib-lio-graph-i-cal bit-map bit-mapped bit-maps buf-fer buf-fers bool-ean
@@ -1574,6 +1587,11 @@
 \topsep=3\p@\@plus\p@\@minus\p@
 \parsep=3\p@\@plus\p@\@minus\p@
 \itemsep=\parsep
+%
+% The width of one column plus gutter (=243pt) is useful sometimes.
+\newdimen\tubcolwidthandgutter
+  \tubcolwidthandgutter=\columnwidth
+  \advance\tubcolwidthandgutter by \columnsep
 %
 % Ordinarily we typeset in two columns, but the onecolumn option
 % goes to one.  In which case we want to center the text block on an
@@ -2111,11 +2129,17 @@
 % author or other title.  In this case, the command flushes out the
 % latest \cs{sectitle} (or whatever) but does nothing else.
 %
-% Provide machinery to skip extra space, even one or more full columns,
+% Provide machinery (|\PreTitleDrop| to skip extra space, even one or
+% more full columns, 
 % above the top of an article to leave space to paste up a previous
 % article that has finished on the same page.  This is a fall back to
 % accommodate the fact that multiple articles cannot yet be run together
 % easily with \LaTeXe.
+% 
+% In addition, if the |secondcolstart| option was specified, do
+% |\null\newpage| to move over. This is separate from |\PreTitleDrop|,
+% for no particular reason.
+% 
 %    \begin{macrocode}
 \newif\if@articletitle
 \def\maketitle{\@ifstar
@@ -2132,6 +2156,7 @@
    \vbox to \PreTitleDrop{}
    \global\PreTitleDrop=\z@
  \fi
+ \iftubsecondcolstart \null\newpage\fi
  \begingroup
  \setcounter{footnote}{0}
  \global\@topnum\z@ % disallow floats above the title
@@ -3268,7 +3293,7 @@
 \def\botregister{\tbotregister}
 %    \end{macrocode}
 %
-% \subsection{Running heads}
+% \subsection{Running headers and footers}
 %
 %    \begin{macrocode}
 \def\rtitlex{\def\texttub##1{{\normalsize\textrm{##1}}}\TUB, \volx}
@@ -3304,21 +3329,23 @@
   \def\@oddfoot{% make line break commands produce a normal space
     \def\\{\unskip\ \ignorespaces}%
     \let\newline=\\%
-    \frenchspacing
-    \hfil\rhTitle}
-  \def\@evenfoot{\frenchspacing \let\thanks\@gobble \tubrunningauthor\hfil}
+    \tubtypesetdoi
+    \frenchspacing\hfil\rhTitle}
+  \def\@evenfoot{%
+    \let\thanks\@gobble 
+    \tubtypesetdoi
+    \frenchspacing\tubrunningauthor\hfil}
 }
 
 % empty footer.
 \def\@tubrunningminimal{%
-  \def\@oddfoot{\hfil}%
-  \def\@evenfoot{\hfil}%
+  \def\@oddfoot{\tubtypesetdoi\hfil}%
+  \def\@evenfoot{\tubtypesetdoi\hfil}%
 }
 
 % empty footer and header.
 \def\@tubrunningoff{%
-  \def\@oddfoot{\hfil}%
-  \def\@evenfoot{\hfil}%
+  \@tubrunningminimal
   \def\@oddhead{\hfil}%
   \def\@evenhead{\hfil}%
 }
@@ -3326,6 +3353,38 @@
 \def\ps@headings{}
 \pagestyle{headings}
 %    \end{macrocode}
+%
+% Typeset the doi. The format we decided on looks like:
+% \texttt{https://doi.org/10.47397/tb/41-3/tb129mansour-nonlatin}
+% where the last element is (usually) the |\jobname|.
+% 
+% We put this below the footline. The footer definitions above specify
+% that it is always called, even if the regular footer is empty.
+%
+% If the article started in the second column (option [secondcolstart]),
+% have to manually move the doi over.
+% 
+% We do not check for validity of |\volno|, etc. For testing, etc.,
+% seems simpler to just typeset what we've got.
+% 
+%    \begin{macrocode}
+%
+\def\tubdoiprefix{10.47397} % the number crossref assigned us
+%
+\def\tubtypesetdoi{\iftubfinaloption % do this if [final], even if pageno>900
+  \vbox to 0pt{% don't impact normal layout
+    \edef\thedoi{\ifnum\value{page}>900 xnot\fi % but make url invalid if >900
+                 doi.org/\tubdoiprefix/tb/\volno-\issno/\jobname}%
+    \scriptsize
+    \vskip\baselineskip
+    \iftubsecondcolstart \moveright \tubcolwidthandgutter \fi
+    \rlap{\expandafter\tbsurl\expandafter{\thedoi}}%
+    \vss
+  }%
+  \global\let\tubtypesetdoi\@empty % only do it once, no matter what.
+\fi}
+%    \end{macrocode}
+%
 %
 % \subsection{Output routine}
 % Modified to alter |\brokenpenalty| across columns

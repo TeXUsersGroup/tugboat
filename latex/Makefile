@@ -28,6 +28,12 @@ check: ltugboat.sty
 	$(pdflatex) tubatest.tex
 	$(pdflatex) tubrfootest.tex
 
+check-oddeven: ltugboat.sty
+	$(pdflatex) tubfinal-odd.tex
+	$(pdflatex) tubfinal-even.tex
+	$(pdflatex) tubfinal-odd2.tex
+	$(pdflatex) tubfinal-even2.tex
+
 spell:
 	aspell list --mode=tex --add-extra-dicts=`pwd`/.dict.pws <ltubguid.ltx\
 	| sort -f -u
