@@ -1,6 +1,6 @@
 %% @texfile{
 %%     filename   = "tugboat.sty",
-%%     copyright  = "Copyright 1993,1999,2003,2006,2011-2019 TeX Users Group.
+%%     copyright  = "Copyright 1993,1999,2003,2006,2011-2020 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -22,7 +22,7 @@
 
 \def\thistubstyle{plain}
 \def\fileversion{v1.25}
-\def\filedate{2019-06-10}
+\def\filedate{2020-10-05}
 
 % general items
 
@@ -228,20 +228,19 @@
   \belowdisplayskip=3pt plus 3pt minus 1pt
   \abovedisplayshortskip=0pt plus 3pt
   \belowdisplayshortskip=1pt plus 3pt minus 1pt
-  \def\rm{\def\sl{\fam\slfam\tensl}\fam\z@\tenrm}%
+  \def\rm{\def\sl{\fam\slfam\tensl}\def\SMC{\ninerm}\fam\z@\tenrm}%
   \textfont\z@=\tenrm \scriptfont\z@=\sevenrm
   \def\oldstyle{\fam\@ne\teni}%
   \textfont\@ne=\teni \scriptfont\@ne=\seveni
   \textfont\tw@=\tensy \scriptfont\tw@=\sevensy
   \textfont\thr@@=\tenex \scriptfont\thr@@=\tenex
-  \def\it{\fam\itfam\tenit}%
+  \def\it{\def\SMC{\nineit}\fam\itfam\tenit}%
   \textfont\itfam=\tenit \scriptfont\itfam=\sevenit
-  \def\sl{\fam\slfam\tensl}%
+  \def\sl{\def\SMC{\ninesl}\fam\slfam\tensl}%
   \textfont\slfam=\tensl \scriptfont\slfam=\sevensl
-  \def\bf{\def\sl{\tenbfsl}\fam\bffam\tenbf}%
+  \def\bf{\def\sl{\tenbfsl}\def\SMC{\ninebf}\fam\bffam\tenbf}%
   \textfont\bffam=\tenbf \scriptfont\bffam=\eightbf
   \def\smc{\tensmc}%
-  \def\SMC{\ninerm}%
   \font\manual=logo10
   \font\manualsl=logosl10
   \def\tt{\tentt}%
@@ -264,19 +263,18 @@
   \belowdisplayskip=2.5pt plus 2.5pt minus 1pt
   \abovedisplayshortskip=0pt plus 2.5pt
   \belowdisplayshortskip=1pt plus 2.5pt minus 1pt
-  \def\rm{\fam\z@\ninerm}%
+  \def\rm{\def\SMC{\eightrm}\fam\z@\ninerm}%
   \textfont\z@=\ninerm \scriptfont\z@=\sevenrm
   \def\oldstyle{\fam\@ne\ninei}%
   \textfont\@ne=\ninei \scriptfont\@ne=\seveni
   \textfont\tw@=\ninesy \scriptfont\tw@=\sevensy
-  \def\it{\fam\itfam\nineit}%
+  \def\it{\def\SMC{\eightit}\fam\itfam\nineit}%
   \textfont\itfam=\nineit
-  \def\sl{\fam\slfam\ninesl}%
+  \def\sl{\def\SMC{\eightsl}\fam\slfam\ninesl}%
   \textfont\slfam=\ninesl
-  \def\bf{\fam\bffam\ninebf}%
+  \def\bf{\def\SMC{\eightbf}\fam\bffam\ninebf}%
   \textfont\bffam=\ninebf \scriptfont\bffam=\sevenbf
   \def\smc{\ninesmc}%
-  \def\SMC{\eightrm}%
   \font\manual=logo9
   \font\manualsl=logosl10 at 9pt
   \def\tt{\ninett}%
@@ -299,20 +297,19 @@
   \belowdisplayskip=2pt plus 2pt minus 1pt
   \abovedisplayshortskip=0pt plus 2pt
   \belowdisplayshortskip=1pt plus 2pt minus 1pt
-  \def\rm{\fam\z@\eightrm}%
+  \def\rm{\def\SMC{\sevenrm}\fam\z@\eightrm}%
   \textfont\z@=\eightrm \scriptfont\z@=\sixrm
   \def\oldstyle{\fam\@ne\eighti}%
   \textfont\@ne=\eighti \scriptfont\@ne=\sixi
   \textfont\tw@=\eightsy \scriptfont\tw@=\sixsy
 % \textfont\thr@@=\eightex \scriptfont\thr@@=\eightex
-  \def\it{\fam\itfam\eightit}%
+  \def\it{\def\SMC{\sevenit}\fam\itfam\eightit}%
   \textfont\itfam=\eightit
-  \def\sl{\fam\slfam\eightsl}%
+  \def\sl{\def\SMC{\sevensl}\fam\slfam\eightsl}%
   \textfont\slfam=\eightsl
-  \def\bf{\fam\bffam\eightbf}%
+  \def\bf{\def\SMC{\sevenbf}\fam\bffam\eightbf}%
   \textfont\bffam=\eightbf \scriptfont\bffam=\sixbf
   \def\smc{\eightsmc}%
-  \def\SMC{\sevenrm}%
   \font\manual=logo8
   \font\manualsl=logosl10 at 8pt
   \def\tt{\eighttt}%

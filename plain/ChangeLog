@@ -1,3 +1,9 @@
+2020-10-05  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.sty (\tenpoint, \ninepoint, \eightpoint) <\rm,\it,\sl,\bf>:
+	\def\SMC to the one-point-size down corresponding font. So that
+	\acro in titles comes out in bold.
+
 2019-06-12  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.sty (\tenpoint) <\rm>: reset \sl to \tensl,
