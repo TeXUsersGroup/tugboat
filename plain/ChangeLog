@@ -1,3 +1,11 @@
+2020-10-07  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.sty (\ttrightskip): reduce from 1pc to 2.9pt, so we will
+	accept one character overfull, but not more. Crashes into the margin.
+	
+	* tugboat.cmn (\hyphenation): include Ja-pa-nese; plain TeX
+	finds no hyphenations.
+
 2020-10-05  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.sty (\tenpoint, \ninepoint, \eightpoint) <\rm,\it,\sl,\bf>:

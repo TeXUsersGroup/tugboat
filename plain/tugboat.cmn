@@ -1,6 +1,6 @@
 %% @texfile{
 %%     filename   = "tugboat.cmn",
-%%     copyright  = "Copyright 1993-1996,2006,2008,2011-2018 TeX Users Group.
+%%     copyright  = "Copyright 1993-1996,2006,2008,2011-2020 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -30,7 +30,7 @@
 \next
 
 \def\fileversion{v1.24}
-\def\filedate{2018-09-05}
+\def\filedate{2018-10-07}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -740,7 +740,7 @@
 \ifx\tubomithyphenations\@thisisundefined
 \hyphenation{Del-a-ware Dijk-stra Duane Eijk-hout
   Flor-i-da Free-BSD Ghost-script Ghost-view
-  Hara-lam-bous Jac-kow-ski Karls-ruhe
+  Hara-lam-bous Jac-kow-ski Ja-pa-nese Karls-ruhe
   Mac-OS Ma-la-ya-lam Math-Sci-Net
   Net-BSD Open-BSD Open-Office
   Pfa-Edit Post-Script Rich-ard Skoup South-all

@@ -22,3 +22,6 @@ dist: README tubguide.pdf tubguide.tex tugboat.cmn tugboat.sty tugproc.sty
 	zip -qr $(dist).zip $(dist)
 	rm -rf $(dist)
 	zipinfo -1 $(dist).zip
+
+try:
+	pdftex overvrb.tex

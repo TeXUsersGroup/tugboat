@@ -22,7 +22,7 @@
 
 \def\thistubstyle{plain}
 \def\fileversion{v1.25}
-\def\filedate{2020-10-05}
+\def\filedate{2020-10-07}
 
 % general items
 
@@ -1787,10 +1787,16 @@
   \frenchspacing\rightskip=-\ttrightskip \hyphenpenalty\@M
   }
 
-%  \ttrightskip is the permissible overhang beyond right margin;
-%  in MANMAC, this is 5pc, which is fine for the TeXbook, but too much here.
+%  \ttrightskip is the permissible overhang beyond right margin for verbatim;
+%  in MANMAC, this is 5pc, which is fine for the TeXbook, but much too
+%  much here. Until 2020-10-07, this was 1pc, but that also looks to be
+%  too much (we don't allow any overrun by default in LaTeX). The 2.9pt
+%  value comes from a verbatim line in \ninett (the default), with the
+%  standard \parindent (resetting that to zero seems too big a change)
+%  that is 43 characters long; it's 2.89pt overfull, and doesn't look
+%  terrible, so accept it. BTW \hfuzz=1pt in tugboat.sty.
 
-\newdimen\ttrightskip   \ttrightskip=1pc
+\newdimen\ttrightskip \ttrightskip=2.9pt
 
 \def\@afterverbinline{}
 
