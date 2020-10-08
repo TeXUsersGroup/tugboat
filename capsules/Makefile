@@ -1,9 +1,8 @@
 # $Id$
 # Public domain. See ./README.
 
-debug = #-D -D
-prevnext = #--no-prevnext
-options = $(debug) $(prevnext) #--stdout
+debug = -D -D
+options = $(debug) #--stdout
 
 #profopt = -d:NYTProf
 profcmd = nytprofhtml
@@ -16,7 +15,7 @@ time = time -f "time:%e"
 
 default check: one #all-diff
 
-testiss = 127
+testiss = 02
 lastiss = 128
 
 # use different temp dir on different machines.

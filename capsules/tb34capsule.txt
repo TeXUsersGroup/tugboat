@@ -234,7 +234,7 @@ Trip report: Euro\TeX, GUTenberg'91\\
 
 
 \capsule{}%subsec
-        {Macros}
+        {Macros}%add|Errata
         {Victor~Eijkhout}
         {Erratum: Oral {\TeX}, {\it TUGboat} 12(2), pp.\ 272--276}
         {}
@@ -291,7 +291,7 @@ Trip report: Euro\TeX, GUTenberg'91\\
 
 
 \capsule{}%subsec
-        {{\LaTeX}}%add|Indexing
+        {{\LaTeX}}%add|Indexing|Errata
         {Harold~Thimbleby}
         {Erratum: ``See also'' indexing with Makeindex, \tubissue 12(2), p.\ 290}
         {}

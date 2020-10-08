@@ -65,7 +65,7 @@
 
 
 \capsule{}%subsec
-        {General Delivery}
+        {General Delivery}%add|Errata
         {Barbara~Beeton}
         {Editorial comments}
         {}
@@ -160,7 +160,7 @@
 
 
 \capsule{}%subsec
-        {Errata}%replace|General Delivery
+        {Errata}
         {Jonathan~Fine}
         {{The good name of {\TeX} (\tubissue 20(2), p.~93)}}
         {}
@@ -169,7 +169,7 @@
 
 
 \capsule{}%subsec
-        {Errata}%replace|General Delivery
+        {Errata}
         {Christina~Thiele}
         {{\acro{TUG}\,99 (\tubissue 20(3))}}
         {}

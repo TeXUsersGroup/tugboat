@@ -138,7 +138,7 @@
 
 
 \capsule{}%subsec
-        {Interface Software}%replace|Output Devices
+        {Interface Software}%replace|Output Devices|Errata
         {David~Fuchs}
         {Erratum: {The format of {\TeX}'s DVI files}}
         {}
@@ -490,7 +490,7 @@
 
 
 \capsule{}%subsub
-        {Supplements}
+        {Supplements}%add|Errata
         {}
         {{\TeX} Errata}
         {}

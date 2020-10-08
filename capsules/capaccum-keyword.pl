@@ -52,22 +52,34 @@ sub find_categories {
     for my $pageno (sort { $a <=> $b } keys %{$iss{"capsules"}}) {
       my %cap = %{$iss{"capsules"}->{$pageno}};
       
-      # use category from %replace directive if present, else normal html.
-      my $category = $cap{"category_replace"} ? $cap{"category_replace"}
-                                              : $cap{"category_html"};
-      my $category_prev = $category;
-      (undef,$category) = &transform_category ($category_prev);# includes unify
-      &ddebug ("transformed category $category_prev to $category")
-        if $category ne $category_prev;
-      #
-      $category = "none" if ! $category; # no empty string
-      push (@{$categories{$category}}, \%cap);
+      # Usually we use the category_html field already created from
+      # capsule_convert. In this case, we'll be calling
+      # transform_category on it a second time, but fortunately this
+      # doesn't hurt.
+      my $cat_all = $cap{"category_html"};
+      
+      # But if we have the %replace directive, use its value (TeX string).
+      if ($cap{"category_replace"}) {
+        &ddebug ("$seqno:$pageno: replacing category $cat_all "
+                 . "with $cap{category_replace}");
+        $cat_all = $cap{"category_replace"};
+      }
 
-      # additional category from directive if present (at most one).
+      # Include additional category/ies from %add directive if present.
       if ($cap{"category_add"}) {
-        my (undef,$category_add) = &transform_category ($cap{"category_add"});
-        &ddebug ("additional category $category_add, from $cap{category_add}");
-        push (@{$categories{$category_add}}, \%cap);
+        &ddebug ("$seqno:$pageno: additional categories $cap{category_add}");
+        $cat_all .= "|$cap{category_add}";
+      }
+      
+      # If we have more than one category, they will be separated by |.
+      # Split and transform each individually.
+      my @cat_all = split (/\|/, $cat_all);
+      @cat_all = ("none") if ! @cat_all; # no empty list/string
+      for my $cat_in (@cat_all) {
+        my (undef,$cat_out) = &transform_category ($cat_in); # includes unify
+        &ddebug ("$seqno:$pageno: transformed category $cat_in to: $cat_out");
+          #if $cat_out ne $cat_in;
+        push (@{$categories{$cat_out}}, \%cap);
       }
     }
   }

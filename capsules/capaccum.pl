@@ -19,7 +19,7 @@ sub accumulation {
   &debug ("accumulation(" . %accum . ")");
   
   # if just author list requested, print it and be done.
-  # Do not bother with the %person directive here.
+  # Do not bother with the %person directive for --authors [only].
   if ($::OPT{"authors"}) {
     &debug ("doing author list\n");
     my %authors = %{$accum{"author"}}; # xxx (r)edo

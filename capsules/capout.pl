@@ -138,7 +138,9 @@ sub contents_filename_from_issue {
   my (%issue) = @_;
   
   (my $fname_issno = $issue{"issno"}) =~ s!/!-!;
-  return sprintf "contents%02d-%s.html", $issue{"volno"}, $fname_issno;
+  my $ret = sprintf "contents%02d-%s.html", $issue{"volno"}, $fname_issno;
+  &ddebug ("c_f_f_issue($fname_issno)->$ret");
+  return $ret;
 }
 
 

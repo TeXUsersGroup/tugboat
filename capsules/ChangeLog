@@ -1,3 +1,12 @@
+2020-10-07  Karl Berry  <karl@freefriends.org>
+
+	* capaccum-keyword.pl (find_categories): support multiple
+	categories via %add or %replace, separated by |.
+	* Makefile,
+	* capaccum.pl,
+	* capaccum-author.pl: doc fix.
+	* tb*capsule.txt: specify new category Errata.
+
 2020-09-22  Karl Berry  <karl@tug.org>
 
 	* capaccum.pl (@category_expected): add TUG 2020.

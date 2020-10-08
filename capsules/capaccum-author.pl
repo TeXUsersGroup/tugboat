@@ -81,7 +81,8 @@ sub find_authors {
       my @author_html = @{$cap{"author_html"}};
       shift @author_html;  # discard single-printable-html string
       #
-      # if have %person directive (a string), augment list.
+      # if have %person directive (a string, can be multiple names
+      # separated by "and", etc., per transform_author), augment list.
       if ($cap{"author_person"}) {
         my $person_html = &transform_author ($cap{"author_person"});
         my @person_html = @{$person_html};
