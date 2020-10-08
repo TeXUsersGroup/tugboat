@@ -1,7 +1,7 @@
 # $Id$
 # Public domain. See ./README.
 
-debug = -D -D
+debug = #-D -D
 options = $(debug) #--stdout
 
 #profopt = -d:NYTProf
