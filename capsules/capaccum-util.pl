@@ -32,7 +32,7 @@ sub lists_vol_iss_link {
   my $iss_year = $issue_hash->{"year"};
   
   my $ret = qq!&nbsp;&nbsp;&nbsp;!;
-  $ret .= qq![<a href="contents$volno-$issno.html">!;
+  $ret .= sprintf qq![<a href="contents%02d-$issno.html">!, $volno;
   $ret .= qq!issue $volno:$issno, $iss_year</a>]!;
   
   return $ret;

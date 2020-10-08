@@ -1,4 +1,9 @@
-2020-10-07  Karl Berry  <karl@freefriends.org>
+2020-10-08  Karl Berry  <karl@freefriends.org>
+
+	* capaccum-util.pl (lists_vol_iss_link): %02d for volno,
+	to match contents_filename_from_issue.
+
+2020-10-08  Karl Berry  <karl@freefriends.org>
 
 	* capaccum-keyword.pl (find_categories): support multiple
 	categories via %add or %replace, separated by |.
