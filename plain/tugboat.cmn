@@ -30,7 +30,7 @@
 \next
 
 \def\fileversion{v1.24}
-\def\filedate{2018-10-07}
+\def\filedate{2018-10-11}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -275,6 +275,7 @@
   \def\tub@inputcheck{\if\@nextchar\bgroup
     \expandafter\iinput\else\expandafter\@@input\fi}
   \def\input{\futurelet\@nextchar\tub@inputcheck}
+  \def\@{\spacefactor=1000 }
 \fi
 
 %       Smashes repeated from AMS-TeX; PLAIN implements only full \smash .
