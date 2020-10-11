@@ -1,3 +1,8 @@
+2020-10-11  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.cmn (\@): define as in LaTeX, \spacefactor1000.
+	(\OpTeX): new abbrevation, with kern.
+
 2020-10-07  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.sty (\ttrightskip): reduce from 1pc to 2.9pt, so we will

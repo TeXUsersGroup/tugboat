@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2020-09-24 v2.23
+                   [2020-10-11 v2.23
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -801,12 +801,14 @@
 \def\MkIV{Mk\acro{IV}}
 \let\TB@@mp\mp
 \DeclareRobustCommand{\mp}{\ifmmode\TB@@mp\else MetaPost\fi}
+\def\mtex{T\kern-.1667em\lower.424ex\hbox{\^E}\kern-.125emX\@}
 %
 % In order that the \cs{OMEGA} command will switch to using the TS1
 % variant of the capital Omega character if \texttt{textcomp.sty} is
 % loaded, we define it in terms of the \cs{textohm} command.  Note
 % that this requires us to interpose a level of indirection, rather
 % than to use \cs{let}\dots
+% Revised definition of \cs{NTS} based on that used by Phil Taylor.
 %
 %    \begin{macrocode}
 \DeclareRobustCommand{\NTG}{\acro{NTG}}
@@ -819,9 +821,8 @@
 \DeclareRobustCommand{\OOXML}{\acro{OOXML}}
 \DeclareRobustCommand{\OTF}{\acro{OTF}}
 \DeclareRobustCommand{\OTP}{\OMEGA\acro{TP}}
-\def\mtex{T\kern-.1667em\lower.424ex\hbox{\^E}\kern-.125emX\@}
+\DeclareRobustCommand{\OpTeX}{Op\kern-.05em\TeX}
 %    \end{macrocode}
-% Revised definition of \cs{NTS} based on that used by Phil Taylor.
 %    \begin{macrocode}
 \def\Pas{Pascal}
 \def\pcMF{\leavevmode\raise.5ex\hbox{p\kern-.3\p@ c}MF\@}
@@ -870,8 +871,7 @@
 \def\TikZ{Ti{\em k}Z}
 \def\ttn{\textsl{TTN}\@}
 \def\TTN{\textsl{\TeX{} and TUG News}}
-\let\texttub\textsl              % redefined in other situations
-\def\TUB{\texttub{TUGboat}}
+\def\TUB{\texttub{TUGboat}}\def\texttub{\textsl} % redefined in some situations
 \def\TUG{\TeX\ \UG}
 \def\tug{\acro{TUG}}
 \def\UG{Users Group}
@@ -3369,7 +3369,7 @@
 % 
 %    \begin{macrocode}
 %
-\def\tubdoiprefix{10.47397} % the number crossref assigned us
+\def\tubdoiprefix{10.47397/tb} % the number crossref assigned us
 %
 \def\tubtypesetdoi{\iftubfinaloption % do this if [final], even if pageno>900
   \vbox to 0pt{% don't impact normal layout

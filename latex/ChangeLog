@@ -1,3 +1,12 @@
+2020-10-11  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx 2020-10-11 (\texttub): use \def instead of \let,
+	so \section{\TUB} works with hyperref. Noticed by bb.
+	(\OpTeX): new abbreviation, with kern.
+
+	* Makefile (check1): new test target.
+	* tubhytest.tex: new test file.
+
 2020-09-24  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (2020-09-24):
@@ -9,7 +18,8 @@
 	(\tubcolwidthandgutter): \newdimen for \columnwidth+\colsep (243pt).
 	(\maketitle): \iftubsecondcolstart, execute \null\newpage.
 	(\@oddfoot, \@evenfoot): call \tubtypesetdoi, in all cases.
-	(\tubtypesetdoi): new macro to typeset the doi under regular footer.
+	(\tubtypesetdoi): new macro to typeset the doi under regular footer
+	of first page of articles.
 	(\tubdoiprefix): new macro, for 10.47397, assigned by crossref.org.
 
 	(\hyphenation): include Ja-pa-nese and Pak-i-stan. (Independent of

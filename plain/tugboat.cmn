@@ -174,6 +174,7 @@
 \def\OMEGA{$\Omega$}
 \def\OCP{\OMEGA\acro{CP}}
 \def\OTP{\OMEGA\acro{TP}}
+\def\OpTeX{Op\kern-.05em\TeX}
 \def\Pas{Pascal}
 \def\pcMF{\leavevmode\raise.5ex\hbox{p\kern-.3ptc}MF\spacefactor1000 }
 \def\PCTeX{PC\thinspace\TeX}
