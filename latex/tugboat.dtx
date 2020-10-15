@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2020-10-11 v2.23
+                   [2020-10-14 v2.23
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -3374,7 +3374,7 @@
 \def\tubtypesetdoi{\iftubfinaloption % do this if [final], even if pageno>900
   \vbox to 0pt{% don't impact normal layout
     \edef\thedoi{\ifnum\value{page}>900 xnot\fi % but make url invalid if >900
-                 doi.org/\tubdoiprefix/tb/\volno-\issno/\jobname}%
+                 doi.org/\tubdoiprefix/\volno-\issno/\jobname}%
     \scriptsize
     \vskip\baselineskip
     \iftubsecondcolstart \moveright \tubcolwidthandgutter \fi
