@@ -1,3 +1,11 @@
+2020-10-16  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\tubtypesetdoi): disable until next issue.
+
+2020-10-14  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\tubtypesetdoi): no double /tb.
+
 2020-10-11  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx 2020-10-11 (\texttub): use \def instead of \let,

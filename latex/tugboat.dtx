@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2020-10-14 v2.23
+                   [2020-10-16 v2.23
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -3367,11 +3367,13 @@
 % We do not check for validity of |\volno|, etc. For testing, etc.,
 % seems simpler to just typeset what we've got.
 % 
+% But don't do any of this yet. Maybe for 42:1.
+% 
 %    \begin{macrocode}
 %
 \def\tubdoiprefix{10.47397/tb} % the number crossref assigned us
 %
-\def\tubtypesetdoi{\iftubfinaloption % do this if [final], even if pageno>900
+\def\notyettubtypesetdoi{\iftubfinaloption % do this if [final], even if pageno>900
   \vbox to 0pt{% don't impact normal layout
     \edef\thedoi{\ifnum\value{page}>900 xnot\fi % but make url invalid if >900
                  doi.org/\tubdoiprefix/\volno-\issno/\jobname}%
@@ -3383,6 +3385,9 @@
   }%
   \global\let\tubtypesetdoi\@empty % only do it once, no matter what.
 \fi}
+%
+\def\tubtypesetdoi{}
+%
 %    \end{macrocode}
 %
 %
