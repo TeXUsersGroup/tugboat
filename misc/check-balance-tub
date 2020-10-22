@@ -10,8 +10,10 @@ sub main {
   $/ = "";  # check a paragraph at a time
   while (<>) {
     next if /^\\end(article|\{document\})/;
-    s/(^|[^\\])%.*$/\1/mg;  # remove % comments, common culprit
     s/\$''\$//;             # common inch marks
+    # remove % comments, a common and ignorable culprit,
+    # but don't remove \% or "% (printf format strings).
+    s/(^|[^\\"])%.*$/\1/mg;
     &check_balance ('\(', '\)', $_);
     &check_balance ('\{', '\}', $_);
     &check_balance ('\[', '\]', $_);

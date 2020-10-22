@@ -33,12 +33,13 @@ sub main {
         warn "$ARGV:$.: no directory for: $item_name\n";
         next;
       }
+      next if $item_name =~ /^(edit|instmem)$/;
       my $this_pageno;
       if ($type eq "fir") {
         $this_pageno = &get_page ("$item_name/firstpage.tex");
       } elsif ($type eq "la") {
         $this_pageno = &get_page ("$item_name/lastpage.tex");
-        $this_pageno--; # not the +1
+        $this_pageno--; # reverse the +1
       }
       if ($this_pageno >= $current_pageno) {
         $ok++;

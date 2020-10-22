@@ -1,3 +1,10 @@
+2020-10-22  Karl Berry  <karl@freefriends.org>
+
+	* check-balance-tub: don't remove \% or "% non-comments.
+
+	* check-pages-cover4-tub: don't worry about edit and instmem
+	being out of the order, since they ordinarily are.
+
 2020-09-04  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.abbr-ctx (\MINGW, \ML): define (from tb129hagen-keyword).
