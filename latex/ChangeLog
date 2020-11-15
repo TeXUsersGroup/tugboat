@@ -5,6 +5,8 @@
 	* NEWS: new file.
 	* Makefile (dist): include it.
 
+	* manifest.txt (tugboat.bst): remove, it is not covered by the LPPL.
+
 	* tugboat.bst (bookauthor): new field for @incollection and
 	@inproceedings.
 	(format.editors.bookauthors): new function to handle it.
