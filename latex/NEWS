@@ -1,0 +1,14 @@
+$Id$
+This file records noteworthy changes.  This file is public domain.
+
+2.24 (2020-11-14):
+
+ltugboat.cls:
+- new hyphenation exceptions: Ja-pa-nese, Pak-i-stan.
+- new abbrevations: \macOS, \OpTeX.
+
+tugboat.bst:
+- new field bookauthor for @incollection and @inproceedings.
+- generalize truncation of author names with new code from
+  Oren Patashnik, using integers max.names and trunc.num
+  to control operation.

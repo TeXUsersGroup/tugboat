@@ -8,7 +8,7 @@
 %%%   Output "Ph.D." rather than "PhD".
 %%%   Output "No." and "no." for number field.
 %%%   Set urlintro="".
-%%%   Alwyas use https://doi.org/ for the doi url, and omit doi: prefix
+%%%   Always use https://doi.org/ for the doi url, and omit doi: prefix
 %%%     (incomplete: doi urls not linked correctly).
 %%%   Omit spaces between author initials, like "A.B. Smith".
 %%%   Truncate long author lists in format.names (max.names, trunc.num)

@@ -1,5 +1,10 @@
 2020-11-14  Karl Berry  <karl@freefriends.org>
 
+	* version 2.24 (2020-11-24) uploaded to CTAN.
+
+	* NEWS: new file.
+	* Makefile (dist): include it.
+
 	* tugboat.bst (bookauthor): new field for @incollection and
 	@inproceedings.
 	(format.editors.bookauthors): new function to handle it.

@@ -49,7 +49,7 @@ diff:
 
 dist = tugboat
 dist: $(dist).zip
-$(dist).zip: README ltubguid.pdf manifest.txt tugboat.ins \
+$(dist).zip: README NEWS ltubguid.pdf manifest.txt tugboat.ins \
 		ltubguid.ltx ltugbib.bst tugboat.bst tugboat.dtx tugboat.pdf
 	chmod a+rw $^
 	rm -rf $(dist); mkdir $(dist)
