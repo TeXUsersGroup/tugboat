@@ -13,12 +13,6 @@
 % 
 
 \begin{blurb}
-<p>Immediate online access to technical TUGboat articles will be
-available to TUG members only (so some of the links below require a TUG
-username and password).  General information items and articles already
-posted elsewhere are publicly available now.  All of the articles will
-become publicly available around April 2021.
-
 <p>If you're not already a member, we hope you'll consider <a
 href="/join.html">joining TUG</a> to support TUGboat and other TeX
 projects.  <a href="/memberaccess.html">More information on TUG member
@@ -35,7 +29,7 @@ access</a>.
         {Complete issue 41:2 as one pdf (22mb)}
         {}
         {\offset{.1}}
-        {https://tug.org/members/TUGboat/!TBIDENT!complete.pdf}
+        {/TUGboat/!TBIDENT!complete.pdf}
         {}
         {<a href="/l/tug2020-video">Videos for all talks</a>.}
 
@@ -111,7 +105,7 @@ access</a>.
   {Typographical explorations in two unicase alphabets}
   {consideration of written emotion in scripts that do not distinguish case}
   {155-156}
-  {https://tug.org/members/TUGboat/!TBIDENT!claudio-unicase.pdf}
+  {/TUGboat/!TBIDENT!claudio-unicase.pdf}
   {}
   {}
 
@@ -121,7 +115,7 @@ access</a>.
    {Presenting our \LaTeX\ workshop online}
    {preparation of videos and syllabus for the \tug\,2020 workshop}
    {196-196}
-   {https://tug.org/members/TUGboat/!TBIDENT!demeritt-workshop.pdf}
+   {/TUGboat/!TBIDENT!demeritt-workshop.pdf}
    {}
    {}
 
@@ -131,7 +125,7 @@ access</a>.
   {A first set of \LaTeX\ packages}
   {one recommended package per general area, covering most of what beginners need}
   {194-195}
-  {https://tug.org/members/TUGboat/!TBIDENT!heff-packages.pdf}
+  {/TUGboat/!TBIDENT!heff-packages.pdf}
   {}
   {}
 
@@ -142,7 +136,7 @@ access</a>.
   {four quick lessons for those interested in empowering new users,
    especially in the humanities}
   {171-172}
-  {https://tug.org/members/TUGboat/!TBIDENT!schmoelzer-empowerment.pdf}
+  {/TUGboat/!TBIDENT!schmoelzer-empowerment.pdf}
   {}
   {}
 
@@ -155,7 +149,7 @@ access</a>.
   {The design concept for {\tt llmk}\Dash Light {\LaTeX} Make}
   {simple, explicit workflow specification via \acro{TOML}}
   {185-187}
-  {https://tug.org/members/TUGboat/!TBIDENT!asakura-llmk.pdf}
+  {/TUGboat/!TBIDENT!asakura-llmk.pdf}
   {}
   {}
 
@@ -175,7 +169,7 @@ access</a>.
   {\texttt{learnlatex.org}:\newline Taking \LaTeX{} training fully~interactive}
   {new tutorial site, with \LaTeX\ running directly from the web pages}
   {197-199}
-  {https://tug.org/members/TUGboat/!TBIDENT!carlisle-learnlatex.pdf}
+  {/TUGboat/!TBIDENT!carlisle-learnlatex.pdf}
   {}
   {}
 
@@ -185,7 +179,7 @@ access</a>.
   {\TeX\ in church: A typographical adventure}
   {creating songsheets and booklets with LilyPond and Lua\TeX}
   {168-170}
-  {https://tug.org/members/TUGboat/!TBIDENT!cereda-church.pdf}
+  {/TUGboat/!TBIDENT!cereda-church.pdf}
   {}
   {}
 
@@ -205,7 +199,7 @@ access</a>.
   {Your personal \LaTeX{} bookshelf: Improving your background in a time of lockdown}
   {randomized sizes and colors for book spines from \BibTeX\ sources}
   {157-159}
-  {https://tug.org/members/TUGboat/!TBIDENT!flynn-bookshelf.pdf}
+  {/TUGboat/!TBIDENT!flynn-bookshelf.pdf}
   {}
   {}
 
@@ -215,7 +209,7 @@ access</a>.
   {The Island of \TeX: Developing abroad, your next destination}
   {overview of development projects at \url{https://gitlab.com/islandoftex}}
   {182-184}
-  {https://tug.org/members/TUGboat/!TBIDENT!island.pdf}
+  {/TUGboat/!TBIDENT!island.pdf}
   {}
   {}
 
@@ -225,7 +219,7 @@ access</a>.
   {Didactical reduction versus references: How~to better teach \LaTeX}
   {tech privilege, tacit knowledge, and working between beginner and mastery}
   {173-175}
-  {https://tug.org/members/TUGboat/!TBIDENT!lang-didactic.pdf}
+  {/TUGboat/!TBIDENT!lang-didactic.pdf}
   {}
   {}
 
@@ -268,7 +262,7 @@ access</a>.
   {The road to Noto}
   {from the Rosetta Stone, through polyglot bibles and Droid, to Noto}
   {145-154}
-  {https://tug.org/members/TUGboat/!TBIDENT!matteson-noto.pdf}
+  {/TUGboat/!TBIDENT!matteson-noto.pdf}
   {}
   {}
 
@@ -279,7 +273,7 @@ access</a>.
           and lessons learned}
   {using Overleaf and git together for metacomments and version control}
   {179-181}
-  {https://tug.org/members/TUGboat/!TBIDENT!veytsman-overleaf.pdf}
+  {/TUGboat/!TBIDENT!veytsman-overleaf.pdf}
   {}
   {}
 
@@ -289,7 +283,7 @@ access</a>.
    {Noticing history\Dash a personal view}
    {how practitioners can help preserve and document primary sources and other computing history}
    {160-167}
-   {https://tug.org/members/TUGboat/!TBIDENT!walden-noticing.pdf}
+   {/TUGboat/!TBIDENT!walden-noticing.pdf}
    {}
    {}
 
@@ -303,7 +297,7 @@ access</a>.
    \\the speedata Publisher}
   {flexible \XML-based publishing from Lua\TeX, without \TeX\ macros}
   {188-193}
-  {https://tug.org/members/TUGboat/!TBIDENT!gundlach-speedata.pdf}
+  {/TUGboat/!TBIDENT!gundlach-speedata.pdf}
   {}
   {}
 
@@ -314,7 +308,7 @@ access</a>.
   {benefits of using \SGML\ over \XML\ for \LaTeX\ processing; need for
    \SGML\ library maintenance}
   {215-218}
-  {https://tug.org/members/TUGboat/!TBIDENT!hammond-sgml.pdf}
+  {/TUGboat/!TBIDENT!hammond-sgml.pdf}
   {}
   {}
 
@@ -325,7 +319,7 @@ access</a>.
   {supporting the unusually large descender space needed for Malayalam,
    and the Rachana font design}
   {139-144}
-  {https://tug.org/members/TUGboat/!TBIDENT!hussain-beyond.pdf}
+  {/TUGboat/!TBIDENT!hussain-beyond.pdf}
   {}
   {}
 
@@ -335,7 +329,7 @@ access</a>.
   {Quo vadis \LaTeX(3) Team\Dash A look back and at the upcoming~\rlap{years}}
   {the last 30 years, and upcoming hook management, tagged \PDF, and more}
   {201-207}
-  {https://tug.org/members/TUGboat/!TBIDENT!mitt-quovadis.pdf}
+  {/TUGboat/!TBIDENT!mitt-quovadis.pdf}
   {}
   {}
 
@@ -347,7 +341,7 @@ access</a>.
           (\acro{XPC}) micro-service in~the cloud}
   {automated \PDF\ creation and quality control from \XML\ sources}
   {219-222}
-  {https://tug.org/members/TUGboat/!TBIDENT!rishi-xmlfly.pdf}
+  {/TUGboat/!TBIDENT!rishi-xmlfly.pdf}
   {}
   {}
 
@@ -358,7 +352,7 @@ access</a>.
   {mobile and tablet reading of \TeX\ output; soliciting information for
    future work}
   {208-211}
-  {https://tug.org/members/TUGboat/!TBIDENT!ruckert-hint.pdf}
+  {/TUGboat/!TBIDENT!ruckert-hint.pdf}
   {}
   {}
 
@@ -368,7 +362,7 @@ access</a>.
 %%%  {Glossaries with \texttt{bib2gls}}
 %%%  {indexing infrastructure with \texttt{glossaries-extra} and/or using \texttt{.bib} format}
 %%%  {\getfirstpage{talbot-bib2gls}}
-%%%  {https://tug.org/members/TUGboat/!TBIDENT!talbot-bib2gls.pdf}
+%%%  {/TUGboat/!TBIDENT!talbot-bib2gls.pdf}
 %%%  {}
 %%%  {}
 
@@ -378,7 +372,7 @@ access</a>.
 %%%  {Extending primitive coverage across engines}
 %%%  {\cs{expanded} and other primitives available in pdf\TeX, \XeTeX, (u)p\TeX}
 %%%  {\getfirstpage{wright-primitives}}
-%%%  {https://tug.org/members/TUGboat/!TBIDENT!wright-primitives.pdf}
+%%%  {/TUGboat/!TBIDENT!wright-primitives.pdf}
 %%%  {}
 %%%  {}
 
@@ -391,7 +385,7 @@ access</a>.
   {MiniLaTeX: A subset of \LaTeX\ for the Web}
   {no-setup \LaTeX{} rendered on the fly to \HTML\ in any browser}
   {212-214}
-  {https://tug.org/members/TUGboat/!TBIDENT!carlson-minilatex.pdf}
+  {/TUGboat/!TBIDENT!carlson-minilatex.pdf}
   {}
   {}
 
@@ -401,7 +395,7 @@ access</a>.
   {Tagging with \LaTeX\Dash Part 1: Author considerations}
   {real-world examples of \LaTeX\ source to archive accessible \PDF}
   {223-242}
-  {https://tug.org/members/TUGboat/!TBIDENT!moore-tagging1.pdf}
+  {/TUGboat/!TBIDENT!moore-tagging1.pdf}
   {}
   {}
 
@@ -411,7 +405,7 @@ access</a>.
   {LaTeX-on-\HTTP: \LaTeX\ as a commodity web service for application developers}
   {\acro{JSON}-based \HTTP\ \API\ for running \LaTeX\ over the web}
   {175-178}
-  {https://tug.org/members/TUGboat/!TBIDENT!tournade-http.pdf}
+  {/TUGboat/!TBIDENT!tournade-http.pdf}
   {}
   {}
 
@@ -421,7 +415,7 @@ access</a>.
 %%%%%%  {Testing indexes: {\tt testidx.sty}}
 %%%%%%  {test methodology and exhaustive comparisons of \code{makeindex}, \code{xindy}, \code{glossaries}, and more}
 %%%%%%  {\getfirstpage{talbot}}
-%%%%%%  {https://tug.org/members/TUGboat/!TBIDENT!talbot.pdf}
+%%%%%%  {/TUGboat/!TBIDENT!talbot.pdf}
 %%%%%%  {}
 %%%%%%  {}
 %
@@ -431,7 +425,7 @@ access</a>.
 %  {An attempt at ragged-right typesetting}
 %  {esthetics and implementations of ragged right, especially for German text}
 %  {\getfirstpage{wermuth-ragged}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!wermuth-ragged.pdf}
+%  {/TUGboat/!TBIDENT!wermuth-ragged.pdf}
 %  {}
 %  {}
 

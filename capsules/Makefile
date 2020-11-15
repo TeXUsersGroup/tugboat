@@ -15,8 +15,8 @@ time = time -f "time:%e"
 
 default check: one #all-diff
 
-testiss = 02
-lastiss = 128
+testiss = 128
+lastiss = 129
 
 # use different temp dir on different machines.
 mydir := $(shell ls ~karl/public_html 2>/dev/null)

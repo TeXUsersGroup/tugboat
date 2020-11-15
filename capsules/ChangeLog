@@ -1,3 +1,10 @@
+2020-11-16  Karl Berry  <karl@tug.org>
+
+	* lists-translations.txt (\kern-.1em): ignore.
+	(\OpTeX): OpTeX.
+	* tb128capsule.txt: 41:2 public.
+	* tb129capsule.txt: 41:3 new.
+
 2020-10-19  Karl Berry  <karl@freefriends.org>
 
 	* tb128capsule.txt: use tug.org/l/tug20-video for video links.
