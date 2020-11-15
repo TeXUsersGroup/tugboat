@@ -5,12 +5,15 @@
 %%%   Abbreviate "page(s)" to "p(p).",
 %%%     "volume" to "vol.",
 %%%     "editor(s)" to "ed(s)".
-%%%   Set urlintro="".
 %%%   Output "Ph.D." rather than "PhD".
+%%%   Output "No." and "no." for number field.
+%%%   Set urlintro="".
+%%%   Alwyas use https://doi.org/ for the doi url, and omit doi: prefix
+%%%     (incomplete: doi urls not linked correctly).
+%%%   Omit spaces between author initials, like "A.B. Smith".
 %%%   Truncate long author lists in format.names (max.names, trunc.num)
 %%%     and omit "and" from author lists, per Oren P.
-%%%   Use https://doi.org/ for the doi url, and omit doi: line
-%%%     (incomplete: doi urls not linked correctly).
+%%%   New field bookauthor for @incollection and @inproceedings.
 %%%   New fields for editors:
 %%%     "newpage" - force page break after entry;
 %%%     "urlnewline" - force line break before url value;
@@ -40,6 +43,7 @@
 ENTRY
   { address
     author
+    bookauthor
     booktitle
     chapter
     edition
@@ -225,7 +229,7 @@ FUNCTION {possibly.setup.inlinelink}
       hrefform #1 = % hypertex
         { "\special {html:<a href=" quote$ * swap$ * quote$ * "> }{" * 'openinlinelink :=
           "\special {html:</a>}" 'closeinlinelink := }
-        { "\newline\href {" swap$ * "} {" * 'openinlinelink := % hrefform=#2 -- hyperref
+        { "\href {" swap$ * "} {" * 'openinlinelink := % hrefform=#2 -- hyperref
           % the space between "} {" matters: a URL of just the right length can cause "\% newline em"
           "}" 'closeinlinelink := }
       if$
@@ -442,7 +446,24 @@ FUNCTION {format.names}                 % from trunc-auth.bst
   if$
     { nameptr finalnamenum < }
     { nameptr #1 + 'nameptr :=
-      s nameptr "{f.~}{vv~}{ll}{, jj}" format.name$ 't :=
+      % original line:
+      %s nameptr "{f{.}.~}{vv~}{ll}{, jj}" format.name$ 't :=
+      % 
+      % But we want to avoid the space that BibTeX usually inserts
+      % between the abbreviations of the tokens, so we get "A.B."
+      % instead of "A. B.".
+      % 
+      % So, the "f{.}.~~" here says that, for the first name part (say
+      % "Alex B.") output the abbreviation for the first token ("A"), a
+      % period ("."), the abbreviation for the second token ("B"), and
+      % another period ("."), omitting the normal intertoken space,
+      % as discussed at the very end of btxhak.
+      % 
+      % The final ~~ forces a tilde in the output, since we never want a
+      % line break between the initials and the last name.
+      % 
+      s nameptr "{f{.}.~~}{vv~}{ll}{, jj}" format.name$ 't :=
+      %
       nameptr #1 =
         't
         { ", " *                        % comma but no "and" before final name
@@ -480,6 +501,20 @@ FUNCTION {format.editors}
         { ", ed." * }
       if$
     }
+  if$
+}
+
+% if editor is non-empty, format it.
+% else if bookauthor is non-empty, format it.
+% else nothing.
+FUNCTION {format.editors.bookauthors}
+{ editor empty$
+    { bookauthor empty$
+      { "" }
+      { bookauthor format.names }
+      if$
+    }
+    { format.editors }
   if$
 }
 
@@ -569,8 +604,8 @@ FUNCTION {format.number.series}
     { number empty$
         { series field.or.null }
         { output.state mid.sentence =
-            { "number" }
-            { "Number" }
+            { "no." }
+            { "No." }
           if$
           number tie.or.space.connect
           series empty$
@@ -665,12 +700,17 @@ FUNCTION {format.chapter.pages}
   if$
 }
 
+% handle possible bookauthor.
+% original line: { "In " format.editors * ", " * booktitle emphasize * }
+
 FUNCTION {format.in.ed.booktitle}
 { booktitle empty$
     { "" }
     { editor empty$
+      bookauthor empty$
+      and
         { "In~" booktitle emphasize * }
-        { "In " format.editors * ", " * booktitle emphasize * }
+        { "In " booktitle emphasize *  ", " format.editors.bookauthors * * }
       if$
     }
   if$
@@ -807,7 +847,7 @@ FUNCTION {make.href.hypertex}
 % make hyperref specials
 FUNCTION {make.href.hyperref}
 { 
-  "\newline\href{" swap$ * "}{\path{" * swap$ * "}}" *
+  "\href{" swap$ * "}{\path{" * swap$ * "}}" *
 }
 FUNCTION {make.href}
 { hrefform #2 =

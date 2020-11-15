@@ -1,3 +1,19 @@
+2020-11-14  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst (bookauthor): new field for @incollection and
+	@inproceedings.
+	(format.editors.bookauthors): new function to handle it.
+	(format.in.ed.booktitle): call it.
+	
+	(format.names): omit spaces between author initials, and force a
+	tie after the initials, with "f{.}.~~".
+	(format.title): abbreviate "number" and "Number".
+
+	(possibly.setup.inlinelink,make.href.hyperref): Do not force
+	\newline before urls.
+
+	* ltubguid.ltx: document bookauthor field.
+
 2020-10-16  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\tubtypesetdoi): disable until next issue.

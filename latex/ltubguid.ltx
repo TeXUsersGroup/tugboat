@@ -792,9 +792,13 @@ include ``access date'' information for \TUB; we find that extraneous.
 the same information in all those fields, and we don't want to typeset
 redundant information.
 
-\item Has even more abbreviations than \textsf{abbrv}, such as
+\item Does even more abbreviating than \textsf{abbrv}, such as
 printing only two author names (plus ``et~al.'')\ if there are more than
-four authors (thanks to Mico Loretan).
+four authors (thanks to Mico Loretan and Oren Patashnik).
+
+\item New field \textsf{bookauthor} for the \textsf{@incollection} and
+\textsf{@inproceedings} allows for citing a part, written by author~X,
+of a publication written by author~Y, and not just edited by~Y.
 
 \item Defines an \textsf{@online} entry type as an alias for \textsf{@misc}.
 
@@ -816,13 +820,12 @@ By the way, we recommending using commas to terminate all fields in
 \texttt{.bib} files, including the last one in an entry. That makes it
 one less thing to worry about when changing fields around in the source.
 
-Bibliographies provide further problems because they're notoriously
-difficult to typeset at the best of times. \LaTeX{} sets \cs{sloppy}
-when typesetting the bibliography, but this typically leads to
-unpleasant output \TUB's narrow columns. The author can control the
-typesetting using the command \cs{SetBibJustification}. The classes set
-\cs{sloppy}, by default (just like \LaTeX{}), but the author may (for
-example) say:
+Bibliographies can be difficult to typeset at the best of times.
+\LaTeX{} sets \cs{sloppy} when typesetting the bibliography, but this
+typically leads to unpleasant output with \TUB's narrow columns. The
+author can specify typesetting parameters using the command
+\cs{SetBibJustification}. The classes remain \cs{sloppy} by default, but
+the author may (for example) say:
 \begin{verbatim}
   \SetBibJustification{\raggedright}
 \end{verbatim}
@@ -831,7 +834,7 @@ as the present article does, to often achieve somewhat better results.
 A last note for references: for \TUB\ issues, please use the format
 \textsl{volno\,:\,issno}, e.g., ``\TUB\ 32:1'' for volume~32, number~1.
 
-\section{Non-recommended bibliography facilities}
+\subsection{Non-recommended bibliography facilities}
 
 The preceding gives the bibliography recommendations for current \TUB\
 articles. If, for whatever reason, you do not wish to follow those
