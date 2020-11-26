@@ -1,3 +1,9 @@
+2020-11-26  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst: use \emph{...} instead of {\em ...}
+	so we get automatic italic correction. Remove manual italic
+	corrections.
+
 2020-11-14  Karl Berry  <karl@freefriends.org>
 
 	* version 2.24 (2020-11-24) uploaded to CTAN.

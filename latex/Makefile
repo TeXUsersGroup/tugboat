@@ -52,7 +52,7 @@ dist: $(dist).zip
 $(dist).zip: README NEWS ltubguid.pdf manifest.txt tugboat.ins \
 		ltubguid.ltx ltugbib.bst tugboat.bst tugboat.dtx tugboat.pdf
 	chmod a+rw $^
-	rm -rf $(dist); mkdir $(dist)
+	rm -rf $(dist) $@; mkdir $(dist)
 	cp $^ $(dist)
 	zip -qr $@ $(dist)
 	rm -rf $(dist)

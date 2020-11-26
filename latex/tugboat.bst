@@ -5,11 +5,12 @@
 %%%   Abbreviate "page(s)" to "p(p).",
 %%%     "volume" to "vol.",
 %%%     "editor(s)" to "ed(s)".
+%%%   Use \emph instead of \em so we get automatic italic corrections.
 %%%   Output "Ph.D." rather than "PhD".
 %%%   Output "No." and "no." for number field.
 %%%   Set urlintro="".
 %%%   Always use https://doi.org/ for the doi url, and omit doi: prefix
-%%%     (incomplete: doi urls not linked correctly).
+%%%     (todo: doi urls not linked correctly).
 %%%   Omit spaces between author initials, like "A.B. Smith".
 %%%   Truncate long author lists in format.names (max.names, trunc.num)
 %%%     and omit "and" from author lists, per Oren P.
@@ -395,7 +396,7 @@ FUNCTION {field.or.null}
 FUNCTION {emphasize}
 { duplicate$ empty$
     { pop$ "" }
-    { "{\em " swap$ * "}" * }
+    { "\emph{" swap$ * "}" * }
   if$
 }
 
@@ -753,7 +754,7 @@ FUNCTION {format.article.crossref}
           warning$
           ""
         }
-        { "In {\em " journal * "\/}" * }
+        { "In \emph{" journal * "}" * }
       if$
     }
     { "In " key * }
@@ -796,7 +797,7 @@ FUNCTION {format.book.crossref}
               crossref * warning$
               "" *
             }
-            { "{\em " * series * "\/}" * }
+            { "\emph{" * series * "}" * }
           if$
         }
         { key * }
@@ -817,7 +818,7 @@ FUNCTION {format.incoll.inproc.crossref}
               crossref * warning$
               ""
             }
-            { "In {\em " booktitle * "\/}" * }
+            { "In \emph{" booktitle * "}" * }
           if$
         }
         { "In " key * }
