@@ -4,6 +4,7 @@
 debug = #-D -D
 options = $(debug) #--stdout
 
+# profiling.
 #profopt = -d:NYTProf
 profcmd = nytprofhtml
 # https://stackoverflow.com/questions/4371714/how-do-i-profile-my-perl-programs
@@ -15,7 +16,9 @@ time = time -f "time:%e"
 
 default check: one #all-diff
 
-testiss = 128
+# These issue values, and most of the targets below, come into play with
+# publishing a TUGboat issue; see the README.karl file on tug.org.
+testiss = 129
 lastiss = 129
 
 # use different temp dir on different machines.

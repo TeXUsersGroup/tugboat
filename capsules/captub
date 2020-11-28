@@ -2,11 +2,23 @@
 # $Id$
 # TUGboat capsule processing. Public domain.
 #
-# Our general goal is for the tb*capsule.html output files to reflect
-# the various names and ordering from the printed table of contents (the
-# back cover). We also generate lists*.html file aggregating information
-# across all issues, where we unify different forms of author names, add
-# or replace categories, etc.
+# Our general goal is to read the tb*capsule.txt files and generate
+# several forms of output:
+#
+# 1) tb*capsule.html files corresponding to each tb*capsule.txt,
+# reflecting the various names and ordering from the printed table of
+# contents (the back cover).
+# 
+# 2) lists*.html files aggregating information across all issues, where
+# we unify different forms of author names, add or replace categories, etc.
+# 
+# 3) rpi/*.rpi files, one for each article (not each issue), which we
+# use as the basis for the DOI uploads and landing pages. See the
+# subdirectory crossref/* here for the processing of the .rpi files.
+# 
+# See the README and Makefile here for more.
+# 
+# Here is the overall syntax of the input tb*capsule.txt files:
 # 
 # capsulefile ::= <intro> <issueline> <difficulty>*
 # <intro>     ::= (arbitrary ignored text)
@@ -37,15 +49,17 @@
 # resulting string at \difficulty and then at \capsule, parsing each
 # capsule with Text::Balanced. We can't get useful line numbers into
 # error messages this way, but it's so much simpler than writing a full
-# token-based parser, it seems worth that trade-off.
+# token-based parser that it seems worth that trade-off.
 # 
+# In general, when there are errors (e.g., two identical page numbers),
+# we die right away instead of trying to recover. Any such error needs
+# to be fixed in the capsule sources before an update can be published.
+#
 # \difficulty was originally (and confusingly) named \category;
 # both are accepted, until we bother to change all the sources (unlikely).
 #
-# In general, when there are errors (e.g., two identical page numbers),
-# we die right away instead of trying to recover. Any such error needs
-# to be fixed in the capsule sources.
-#
+# Here are some references relating to parsing the balanced-brace pieces:
+# 
 # http://stackoverflow.com/questions/35731060/why-doesnt-textbalancedextract-bracketed-extract-the-text-inside-a-latex-ta?rq=1
 # http://stackoverflow.com/questions/2700613/how-can-i-extract-a-string-between-matching-braces-in-perl
 # regexp http://www.perlmonks.org/bare/?node_id=42655
@@ -67,7 +81,7 @@ $| = 1; # flush both stdout and stderr immediately
 select ((select (STDERR), $| = 1)[0]);
 
 our %OPT;              # global for command-line options
-require "caputil.pl";  # must come before conv
+require "caputil.pl";  # must come before conv, rest is alphabetical
 #
 require "capaccum.pl";
 require "capconv.pl";

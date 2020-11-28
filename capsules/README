@@ -5,7 +5,8 @@ Originally written 2017 Karl Berry.
 David Walden did a completely different implementation years before;
 the present code was written from scratch.
 
-captub          main program.
+captub          main program. See comments at top for the general
+                implementation strategy.
 
 capaccum*       accumulated lists across all issues.
 capconv		within-capsule conversion from input TeX to output HTML or txt.
@@ -21,9 +22,15 @@ lists-regexps       Perl substitutions.
 lists-translations  convert TeX fragments to HTML and sortable ASCII.
 lists-unifications  different category/author/title forms to be combined.
 
-Consider "todo:" items.
+This capsule processing is one part of publishing a TUGboat issue; see
+~www/office/private/README.karl on tug.org for the overall sequence of
+operations.
+
+Consider "todo:" items if you're looking for something to do.
 
 
+(later changes, and some early, in ChangeLog)
+
 26jan19 check for pagenos lacking a range, update many capsule files.
 
 18jan19 count regexps, remove unused and used only once.
