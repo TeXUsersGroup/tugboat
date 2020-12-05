@@ -9,6 +9,9 @@ require "caputil.pl";
 my ($lhs_exprs,$rhs) = &read_regexps ();
 my %rx_count;
 
+# Public access function to take input STR and return result of applying
+# all regexps to it.
+# 
 sub lists_regexps {
   my ($str) = @_;
   my $first_str;

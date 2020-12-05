@@ -85,6 +85,8 @@ require "caputil.pl";  # must come before conv, rest is alphabetical
 #
 require "capaccum.pl";
 require "capconv.pl";
+require "capcrossref.pl";
+require "capdata-authinfo.pl";
 require "capdata-rx.pl";
 require "capdata-unify.pl";
 require "capdata-xlate.pl";
@@ -116,6 +118,7 @@ sub main {
 sub init {
   umask (002); # tugboat group write permission is useful
   %OPT = ();
+  $OPT{"crossref"} = 0;
   $OPT{"debug"} = 0;
   $OPT{"prevnext"} = 1;
   $OPT{"stdout"} = 0;
@@ -123,6 +126,7 @@ sub init {
 
   exit 2 unless Getopt::Long::GetOptions (\%OPT,
     "authors|A",
+    "crossref!",
     "debug|D+",
     "prevnext!",
     "stdout!",
@@ -137,11 +141,20 @@ sub init {
 
 Generate TUGboat HTML contents files from input CAPSULE files.
 
-If multiple input files are given, output is to corresponding files named
-contentsVV-I.html, where VV is the volume number and I is the issue
-number.
+If multiple input files are given, the main output is to corresponding
+files named contentsVV-I.html, where VV is the volume number and I is
+the issue number.
+
+In addition, cumulative files lists*.html are output for combined
+author, keyword, and title lists.
+
+In addition, if --crossref is specified, and the issue number is new
+enough (specified in capout.pl), *.rpi files are generated in
+subdirectory crossref/rpi/ and so-called landing pages in
+crossref/landing for further processing; see crossref/README.
 
 --authors, -A    output author list and exit.
+--crossref       generate crossref/rpi/*.rpi files for doi registration.
 --debug, -D      output voluminous debugging information; repeat once for max.
 --no-prevnext    do not read prev/next capsules, only those specified;
                    default if only one CAPSULE is given.

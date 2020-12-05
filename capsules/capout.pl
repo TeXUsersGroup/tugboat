@@ -12,6 +12,7 @@ sub write_issue {
   &debug ("\n\f");
   &debug_hash ("write_issue", %issue);
   
+  # Write header for the page. annoyingly complicated.
   my $issue_ident = "$issue{volno}:$issue{issno}, $issue{year}";
   my $issue_seqno = $issue{"seqno"};
   my $issue_seqno2 = sprintf "%02d", $issue{"seqno"}; # >=2 digits
@@ -64,7 +65,7 @@ $tub_nav
 </tr></table>
 END_TOP_TUB
   } else {
-    # nonissue heading
+    # nonissue heading (25:0, 27:0)
     print <<END_TOP_NONISSUE;
 <h2>$issue{"urllabel"}</h2>
 $tub_nav
@@ -94,7 +95,13 @@ END_LISTS
   
   print &cap_html_footer ("$issue_ident (issue $issue_seqno)");
   
-  &debug_hash ("issue", %issue);
+  # Another whole set of output files for DOI creation and registration.
+  # But only if the issue is new enough.
+  if ($::OPT{"crossref"} && $issue{"seqno"} >= 129) {
+    &crossref_write_files (%issue);
+  }
+
+  &debug_hash ("issue written:", %issue);
   if (! $::OPT{"stdout"}) {
     close ($outfile) || warn "$0: close($outfilename) failed: $!";
     select ($prev_out);

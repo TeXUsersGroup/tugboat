@@ -1,15 +1,17 @@
 # $Id$
 # Public domain.
 # 
-# Series of Perl substitutions, one per line, to be applied in sequence
-# and repeated as long as there is any change. The LHS and RHS are
-# separated by ||, but other than that, these are Perl expressions, not
-# literal strings, so we can use backreferences. /g is always applied.
+# This file defines a series of Perl substitutions, one per line, to be
+# applied in sequence and repeated as long as there is any change.
+# 
+# The LHS and RHS are separated by ||, but other than that, these are
+# Perl expressions, not literal strings, so we can use backreferences.
+# /g is always applied.
 # 
 # Furthermore, /ee is applied, so the rhs must be evalable. Meaning that
 # when we concatenate we have to make it a Perl string.
 # 
-# Assume the lists-translations have already been applied.
+# Assume that the lists-translations have already been applied.
 
 \\acro\{(.*?)\}||$1
 \\code\{(.*?)\}||"<tt>$1</tt>"
@@ -23,7 +25,7 @@
 \\sp\{(.*?)\}||"<sup><font size=1>$1</font></sup>"
 
 # \ss at end of string; can't easily do in translations since there is
-# also \ssf. cleaner to do it here.
+# also \ssf; cleaner to do it here.
 \\ss$||"&szlig;"
 
 # fonts; do after accents so most braces have been removed.
@@ -43,9 +45,11 @@
 \{\\tt\\bs (.*?)\}||"<tt>\\$1</tt>"
 \{\\tt\s*(.*?)\}||"<tt>$1</tt>"
 
-# remove whitespace at beginning and end.
+# Remove whitespace at beginning and end; instead, we do this in the
+# code (caputil.pl::normalize_whitespace fn) for more control over when
+# and where it happens.
 #^\s+(.*)||$1
 #(.*)\s+$||$1
 
-# elide bare braces. do last since braces are part of matching above.
+# Elide bare braces; do last since braces are part of our matching above.
 \{(.*?)\}||$1

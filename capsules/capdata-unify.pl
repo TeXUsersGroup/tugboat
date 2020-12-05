@@ -4,10 +4,11 @@
 use strict; use warnings;
 
 {
-my %unify = &read_unify ();
+my %unify = &read_unify (); # static hash
 #warn "uni ", join ("|", sort keys %unify), "\n";
 my %unify_count;
 
+# Public access function.
 sub lists_unify {
   my ($str) = @_;
   
@@ -36,8 +37,9 @@ sub unify_dump_count {
 }
 
 
-# Return hash with the keys being "alias strings" and the values the
-# strings "as they should be", i.e., to which any of the aliases is unified.
+# Internal function to read the file and return hash with the keys being
+# "alias strings" and the values the strings "as they should be", i.e.,
+# to which any of the aliases is unified.
 # 
 # Comment lines starting with # and blank lines are ignored.
 # A non-empty line not starting with whitespace starts an as-should-be

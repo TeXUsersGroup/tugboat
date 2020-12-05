@@ -1,0 +1,21 @@
+# $Id$
+# Extra information about authors.
+# LHS is an author name, after unification and transformations.
+# Remaining entries are the information that can't be discerned automatically.
+# 
+# This is used in the doi process, so that we can properly record the
+# contributor information.
+#
+# The names here must be specified as they appear in the .rpi file.
+
+# These author names will end up as a Crossref <organization>
+# instead of a <person_name> in the <contributors> list.
+LaTeX Project Team||organization
+Island of TeX||organization
+TUG Elections committee||organization
+
+# We support \ORCID in the (La)TeX styles to typeset these numbers.
+# It would be nice to verify the values, or notice they're missing.
+# For the present, it's so rare that we just try to remember to do it by hand.
+Karl Berry||orcid=0000-0002-5325-6494
+Boris Veytsman||orcid=0000-0003-4674-8113

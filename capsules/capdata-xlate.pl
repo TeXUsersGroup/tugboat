@@ -10,7 +10,7 @@ my ($tex_exprs,$html_strs,$txt_strs) = &read_translations ();
 my %xlate_count;
 my %html2txt;
 
-# Two access functions: tex-to-html and html-to-txt.
+# Two public access functions: tex-to-html and html-to-txt.
 sub xlate_tex2html {
   my ($str) = @_;
   for (my $i = 0; $i < @$tex_exprs; $i++) {

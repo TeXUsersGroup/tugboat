@@ -111,7 +111,8 @@ sub transform_category {
 # The first element is for printing as-is in the tocs, the remainder are
 # for sorting and outputting in lists*.html.
 # 
-# Thus, if the input is the TeX "Donald~E. Knuth and H. Zapf", the return is
+# Thus, if the input is the TeX "Donald~E. Knuth and H. Zapf", the
+# return is the three-element list:
 # ("Donald&nbsp;E. Knuth, H. Zapf", "Knuth, Donald&nbsp;E.", "Zapf, H.").
 # 
 sub transform_author {

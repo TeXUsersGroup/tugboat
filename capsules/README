@@ -5,11 +5,12 @@ Originally written 2017 Karl Berry.
 David Walden did a completely different implementation years before;
 the present code was written from scratch.
 
-captub          main program. See comments at top for the general
+captub          main program; see comments at top for the general
                 implementation strategy.
 
 capaccum*       accumulated lists across all issues.
 capconv		within-capsule conversion from input TeX to output HTML or txt.
+capcrossref     doi support; see also ./crossref/README, etc.
 capin		read tb*capsule.tex files, plus some whole-issue conversions.
 capout		output contents*.html files.
 caputil		debugging fns, etc.
@@ -18,6 +19,7 @@ capdata-rx	handle data file lists-regexps.txt.
 capdata-unify	handle lists-unifications.txt.
 capdata-xlate	handle lists-translations.txt.
 
+lists-authinfo      decorations for authors in Crossref.
 lists-regexps       Perl substitutions.
 lists-translations  convert TeX fragments to HTML and sortable ASCII.
 lists-unifications  different category/author/title forms to be combined.

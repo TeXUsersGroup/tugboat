@@ -1,8 +1,9 @@
 # $Id$
 # Public domain. See ./README.
 
-debug = #-D -D
+debug = #-D #-D
 options = $(debug) #--stdout
+more_options =
 
 # profiling.
 #profopt = -d:NYTProf
@@ -11,7 +12,7 @@ profcmd = nytprofhtml
 # only does by subroutine: -d:DProf [dprofpp]
 
 perl = /usr/local/bin/perl $(profopt)
-captub = $(perl) captub $(options)
+captub = $(perl) captub $(options) $(more_options)
 time = time -f "time:%e"
 
 default check: one #all-diff
@@ -30,12 +31,19 @@ outone = ~karl/tmp/x.html
 endif
 
 one:
-	perl -cw captub && date
-	$(captub) tb$(testiss)capsule.txt >$(outone) || exit 1
+	@perl -cw captub && date
+	$(captub) tb$(testiss)capsule.txt >$(outone)
 	unparsed=`egrep '[{}~$$\]|href=""|Dash' $(outone) \
 	          | egrep -v '<tt>\\\\|/~(hammond|ross)'`; \
 	  test -z "$$unparsed" || { echo "$$unparsed" >&2; exit 1; }; \
 	test -z "$(profopt)" || $(profcmd)
+
+# Initial development of crossref doi support.
+cr:
+	rm -f crossref/rpi/*.rpi
+	$(MAKE) more_options=--crossref one
+	cp -pf crossref/rpi/*.rpi crossref/process/
+	$(MAKE) -C crossref
 
 out = contents*.html
 all:

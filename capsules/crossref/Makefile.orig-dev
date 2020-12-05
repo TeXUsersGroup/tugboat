@@ -1,0 +1,133 @@
+# $Id$
+# See the README here for the general story on our doi support.
+# 
+# This Makefile.orig-dev file was how the code was originally developed,
+# with several notes (below) about the process, so it seemed worth saving for
+# reference. For the production doi generation, see the current ./Makefile.
+
+tub_cfg = ltx2crossrefxml-tugboat.cfg
+
+# first test input, Boris's resphilosophica example.
+#rp_input = rpsample.rpi
+# second test input, handmade for tub with our prefix.
+#tub_input = tubsample.rpi
+# third test input, handmade for a real submission.
+#tub_input = tb129chest.rpi
+# fourth test input, first autogeneration from capsule.
+tub_input = ../rpi/tb129pres.rpi
+#
+rpi_input = $(tub_input)
+
+xml_output = $(patsubst %.rpi, %.xml, $(rpi_input))
+#
+# Add --input-is-xml for final TUGboat, Res.Phil. doesn't do that.
+$(xml_output): $(rpi_input) $(tub_cfg) force
+	ltx2crossrefxml -c $(tub_cfg) $(rpi_input) -o $@ || { rm -f $@; exit 1; }
+	cat $@
+
+# running both rpi's at once:
+#xml_output = multsample.xml
+#$(xml_output): $(rp_input) $(tub_input) $(tub_cfg) force
+#	ltx2crossrefxml -c $(tub_cfg) $(rp_input) $(tub_input) -o $@ || { rm -f $@; exit 1; }
+
+# Where the original example files are.
+TL = /usr/local/texlive/dev
+#
+ltx2crossrefxml-tugboat.cfg:
+	cp $(TL)/texmf-dist/tex/latex/crossrefware/ltx2crossrefxml.cfg .
+	chmod u+rw $@
+	# and edit the file.
+
+rpsample.rpi:
+	cp $(TL)/texmf-dist/doc/latex/resphilosophica/rpsample.{tex,bib} .
+	pdflatex rpsample.tex
+
+rpsample.bbl: rpsample.aux
+	bibtex $<
+
+force:
+
+# schema -
+#  https://www.crossref.org/schemas/crossref4.4.2.xsd
+# schema annotated doc -  
+#  https://data.crossref.org/reports/help/schema_doc/4.4.2/index.html  
+#
+# test doc:
+#  https://crossref.org/education/member-setup/direct-deposit-xml/testing-your-xml/
+# test upload in browser:
+#  https://crossref.org/02publishers/parser.html
+# test deposit:
+#   https://test.crossref.org
+#   -> https://test.crossref.org/servlet/deposit   
+# production deposit:
+#   https://doi.crossref.org
+#   
+# change business contact to generic so we can see reports.
+# obligations:
+#  https://www.crossref.org/membership/terms/
+#
+# changes between schema versions:
+#  https://www.crossref.org/education/content-registration/crossrefs-metadata-deposit-schema/schema-versions/
+#
+# 
+# get ltx2crossrefxml running with the journal data from our .cfg,
+# using the rpsample article data.
+# 
+# try uploading the generated xml to
+# https://www.crossref.org/02publishers/parser.html. Ok after fixing
+# depositor_name for 4.4.2.
+#
+# Explicitly request access to test system from general web contact form,
+# https://www.crossref.org/contact. They handled it quickly.
+# Then can log in (in browser) to test.crossref.org with username tugb/pw.
+#
+# Now let's try a test upload.
+# https://www.crossref.org/education/member-setup/direct-deposit-xml/testing-your-xml/
+# using their tool:
+# https://www.crossref.org/education/member-setup/direct-deposit-xml/https-post/
+#
+# don't do anything but run locally:
+chicken = #--dry-run
+#
+cut = java -jar crossref-upload-tool.jar
+crossread-upload-tool-help cut-help:
+	$(cut) --help
+#
+# upload to production or test server:
+crossref_real_host = doi.crossref.org
+crossref_test_host = test.crossref.org
+#
+upload-test:
+	$(cut) --user `cat crossref-user.txt` \
+	  --host $(crossref_test_host) \
+	  --metadata $(xml_output) $(chicken)
+#
+upload-real:
+	echo "checkme!"; false $(cut) --user `cat crossref-user.txt` \
+	  --host $(crossref_real_host) \
+	  --metadata $(xml_output) $(chicken)
+#
+# If syntax is ok, get back a SUCCESS html doc.
+# Then, log in to test.crossref.org -> Submission administration
+# -> Search (all fields can be left) blank
+# -> view erroneous result, as expected (we don't have permission for
+#    the res.phil. doi prefix.)
+#
+# It says area=L(ive), but that's misleading; this is the test area.
+# Logging into doi.crossref.org and looking for submissions shows none,
+# as expected.
+# 
+# Another test with invalid XML sent email back to tub-doi. But not the
+# prefix error.
+#
+# One article per rpi, but can input multiple rpis in one run.
+# 
+# Hand-create landing page https://tug.org/TUGboat/tb41-3/tb129chest.html
+# (validate HTML with validator.w3.org)
+# and input tb129chest.rpi. Process to make .xml.
+# Now let's try a real upload, with --dry-run above and then for real.
+# There is no deletion from the production site.
+# 
+# Yes, it worked.
+# https://doi.org/10.47397/tb/41-3/tb129chest
+# now goes to our file. Onward to creation from the capsules ...
