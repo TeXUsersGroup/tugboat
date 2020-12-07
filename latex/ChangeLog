@@ -1,3 +1,7 @@
+2020-12-07  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\UTFEIGHT): new macro to disallow breaking at the -.
+
 2020-11-26  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.bst: use \emph{...} instead of {\em ...}

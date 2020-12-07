@@ -877,6 +877,8 @@
 \def\UG{Users Group}
 \def\UNIX{\acro{UNIX}}
 % omit \UTF, since other packages use it for Unicode character access.
+% on the other hand, we want a macro for UTF-8 that doesn't break at the -.
+\def\UTFEIGHT{UTF\mbox{-}8}
 \def\VAX{V\kern-.12em A\kern-.1em X\@}
 \def\VnTeX{V\kern-.03em n\kern-.02em \TeX}
 \def\VorTeX{V\kern-2.7\p@\lower.5ex\hbox{O\kern-1.4\p@ R}\kern-2.6\p@\TeX}
@@ -3356,24 +3358,23 @@
 %
 % Typeset the doi. The format we decided on looks like:
 % \texttt{https://doi.org/10.47397/tb/41-3/tb129mansour-nonlatin}
-% where the last element is (usually) the |\jobname|.
+% where the last element is the |\jobname|.
 % 
 % We put this below the footline. The footer definitions above specify
 % that it is always called, even if the regular footer is empty.
 %
 % If the article started in the second column (option [secondcolstart]),
-% have to manually move the doi over.
+% we manually move the doi over.
 % 
-% We do not check for validity of |\volno|, etc. For testing, etc.,
-% seems simpler to just typeset what we've got.
-% 
-% But don't do any of this yet. Maybe for 42:1.
+% We do not check for validity of |\volno|, |\issno|, |\jobname|. For
+% testing, etc., seems simpler to just typeset what we've got. Other
+% scripts will verify consistency.
 % 
 %    \begin{macrocode}
 %
 \def\tubdoiprefix{10.47397/tb} % the number crossref assigned us
 %
-\def\notyettubtypesetdoi{\iftubfinaloption % do this if [final], even if pageno>900
+\def\tubtypesetdoi{\iftubfinaloption % do this if [final], even if pageno>900
   \vbox to 0pt{% don't impact normal layout
     \edef\thedoi{\ifnum\value{page}>900 xnot\fi % but make url invalid if >900
                  doi.org/\tubdoiprefix/\volno-\issno/\jobname}%
@@ -3386,7 +3387,6 @@
   \global\let\tubtypesetdoi\@empty % only do it once, no matter what.
 \fi}
 %
-\def\tubtypesetdoi{}
 %
 %    \end{macrocode}
 %
