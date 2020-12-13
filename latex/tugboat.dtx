@@ -840,6 +840,7 @@
 \def\POBox{P.\thinspace O.~Box }
 \def\PS{{Post\-Script}}
 \def\PSTricks{\acro{PST}ricks}
+\def\RIT{\acro{RIT}}
 \def\RTF{\acro{RTF}}
 \def\SC{Steering Committee}
 \def\SGML{\acro{SGML}}
@@ -863,7 +864,7 @@
 \def\TeXworks{\TeX\kern-.07em works}
 \def\TeXXeT{\TeX-{}-\XeT}
 \def\TFM{\acro{TFM}}
-\ifx\Umathchardef\@thisisundefined % xetex|luatex
+\ifx\Umathchardef\@thisisundefined % not (xetex|luatex)
 \def\Thanh{H\`an~Th\^e\llap{\raise 0.5ex\hbox{\'{}}}~Th\`anh}% non-XeTeX
 \else
 \def\Thanh{H\`an~Th\textcircumacute{e}~Th\`anh}% else xunicode drops the acute
@@ -876,9 +877,15 @@
 \def\tug{\acro{TUG}}
 \def\UG{Users Group}
 \def\UNIX{\acro{UNIX}}
-% omit \UTF, since other packages use it for Unicode character access.
-% on the other hand, we want a macro for UTF-8 that doesn't break at the -.
-\def\UTFEIGHT{UTF\mbox{-}8}
+% Don't define \UTF, since other packages use it for Unicode character access.
+% On the other hand, we want a macro for UTF-8 that doesn't break at the -.
+\def\tbUTF{\acro{UTF}\futurelet\@nextchar\@tbUTFcheck}
+  \def\@tbUTFcheck{\ifx\@nextchar-%
+                      \mbox{-}\let\next=\tbgobbledash
+                    \else
+                      \let\next=\empty
+                    \fi\next}
+  \def\tbgobbledash-{}
 \def\VAX{V\kern-.12em A\kern-.1em X\@}
 \def\VnTeX{V\kern-.03em n\kern-.02em \TeX}
 \def\VorTeX{V\kern-2.7\p@\lower.5ex\hbox{O\kern-1.4\p@ R}\kern-2.6\p@\TeX}
@@ -891,10 +898,10 @@
 %
 % Xe\TeX{} requires reflecting the first E, hence we complain if the
 % graphics package is not present.  (For plain documents, this can be
-% loaded via Eplain.)  Also, at Barbara's suggestion, if the current
-% font is slanted, we rotate by 180 instead of reflecting so there is at
-% least a chance to look ok.  (The magic values here seem more or less
-% ok for \texttt{cmsl} and \texttt{cmti}.)
+% loaded via \texttt{miniltx} or Eplain.)  Also, at Barbara's
+% suggestion, if the current font is slanted, we rotate by 180 instead
+% of reflecting so there is a better chance to look ok.  (The magic
+% values here seem more or less ok for \texttt{cmsl} and \texttt{cmti}.)
 %
 %    \begin{macrocode}
 \def\tubreflect#1{%

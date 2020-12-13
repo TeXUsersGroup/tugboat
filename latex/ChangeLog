@@ -1,3 +1,14 @@
+2020-12-13  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\tbUTF): following - optional, but if present,
+	don't break at it.
+	(\RIT): new abbreviation.
+	* tubutftest: new test file.
+
+2020-12-08  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\tbUTF): let's make that \tbUTF, without the 8.
+
 2020-12-07  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\UTFEIGHT): new macro to disallow breaking at the -.

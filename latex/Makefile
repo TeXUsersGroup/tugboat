@@ -27,9 +27,8 @@ check: ltugboat.sty
 	$(pdflatex) tubptest.tex
 	$(pdflatex) tubatest.tex
 	$(pdflatex) tubrfootest.tex
-
-check1: ltugboat.sty
 	$(pdflatex) tubhytest.tex
+	$(pdflatex) tubutftest.tex
 
 check-oddeven: ltugboat.sty
 	$(pdflatex) tubfinal-odd.tex
