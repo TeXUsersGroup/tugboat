@@ -5,7 +5,13 @@
 opt = --interaction=nonstopmode --file-line-error
 latex = $(texfot) latex $(opt)
 pdflatex = $(texfot) pdflatex $(opt)
-texfot = tldev texfot
+#
+ifdef bboat
+# for karl
+tldev = tldev
+endif
+#
+texfot = $(tldev) texfot
 
 ltubguid.pdf: ltubguid.ltx ltugboat.cls
 	rm -f tubguide.bib ctandir.sty
