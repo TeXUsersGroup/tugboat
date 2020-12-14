@@ -4,8 +4,8 @@
 # 
 opt = --interaction=nonstopmode --file-line-error
 latex = $(texfot) latex $(opt)
-pdflatex = $(texfot) texfot pdflatex $(opt)
-texfot = texfot
+pdflatex = $(texfot) pdflatex $(opt)
+texfot = tldev texfot
 
 ltubguid.pdf: ltubguid.ltx ltugboat.cls
 	rm -f tubguide.bib ctandir.sty
@@ -35,6 +35,12 @@ check-oddeven: ltugboat.sty
 	$(pdflatex) tubfinal-even.tex
 	$(pdflatex) tubfinal-odd2.tex
 	$(pdflatex) tubfinal-even2.tex
+
+# try conversion with tex4ht.
+checkht: ltugboat.sty
+	env TEXINPUTS=$(t3):$(tb): tldev texfot htlatex tub4htest.tex \
+	  "xhtml,html5,mathml,charset=utf-8,fn-in" " -cunihtf -utf8"
+
 
 spell:
 	aspell list --mode=tex --add-extra-dicts=`pwd`/.dict.pws <ltubguid.ltx\
