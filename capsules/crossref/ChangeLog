@@ -1,0 +1,9 @@
+2020-12-17  Karl Berry  <karl@freefriends.org>
+
+	* Makefile: run xmllint as one check. Dump citation extract.
+	(validate): failed attempts at local validation.
+	
+	* ltx2crossrefxml-tugboat.cfg (ltx2crossrefxml_local_ltx2unicode):
+	new subroutine for more or less TUGboat-specific conversions.
+
+This ChangeLog file is public domain.

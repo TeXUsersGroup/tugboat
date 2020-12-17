@@ -10,17 +10,32 @@ tub_cfg = ltx2crossrefxml-tugboat.cfg
 # which we run one issue at a time.
 rpi_input = process/*.rpi
 #
-# And the output file we will eventually upload.
+# The bbl files for those articles.
+bbl_input = process/*.bbl
+#
+# The output file we will eventually upload.
 xml_output = process/output.xml
 
 $(xml_output): $(rpi_input) $(tub_cfg) force
-	$(ltx2crossrefxml) -c $(tub_cfg) $(rpi_input) --input-is-xml -o $@ \
+	$(ltx2crossrefxml) -c $(tub_cfg) $(rpi_input) --rpi-is-xml -o $@ \
 	|| { rm -f $@; exit 1; }
+	xmllint --noout $@      # basic syntax check
 	#sed '1,/<titles>/d' $@ # omit top boilerplate
-	egrep '(name|title)>' $@
+	#egrep '(name|organization|title)>' $@
+	-egrep '\\|--' $@
+	grep -A1 '<citation' $@ | grep -v '^--$$' | cut -c 8-
+
+# https://www.crossref.org/schemas/crossref4.4.2.xsd
+# https://www.crossref.org/schemas/common4.4.2.xsd
+xsd = http://www.crossref.org/schema/deposit/crossref4.4.2.xsd
+# https://stackoverflow.com/questions/17002324/xmllint-validate-an-xml-file-against-two-xsd-schemas-envelope-payload
+# https://www.biglist.com/lists/lists.mulberrytech.com/jats-list/archives/201310/msg00018.html
+validate v: $(xml_output)
+	xmllint --noout --schema $(xsd) $<
 
 force:
 
+#  Uploading.
 # Crossref's upload tool seems to work fine. It comes from here:
 # https://www.crossref.org/education/member-setup/direct-deposit-xml/https-post
 # 
@@ -39,15 +54,15 @@ crossref_user = --user `cat crossref-user.txt`
 chicken = #--dry-run
 #
 upload-test:
-	$(cut) $(crossref_user) \
-	  --host $(crossref_test_host) --metadata \
-	  $(xml_output) $(chicken)
+	$(cut) $(chicken) $(crossref_user) \
+	  --host $(crossref_test_host) \
+	   --metadata $(xml_output)
 #
 # It costs money to deposit a doi. Don't do it until you're sure.
 upload-real:
-	echo "checkme!"; false $(cut) $(crossref_user) \
-	  --host $(crossref_real_host) --metadata \
-	  $(xml_output) $(chicken)
+	echo "checkme!"; false $(cut) $(chicken) $(crossref_user) \
+	  --host $(crossref_real_host) \
+	  --metadata $(xml_output)
 #
 # If syntax is ok, get back a SUCCESS html doc.
 # Then, log in to test.crossref.org resp. doi.crossref.org
