@@ -1,0 +1,64 @@
+#!/bin/sh
+# $Id$
+# Copy .bbl files for Crossref. Public domain.
+# 
+# As a first step toward preparing the <citation_list> elements for the
+# Crossref upload (see ltx2crossrefxml, crossref/README, etc.), we copy
+# any bbl files for a given issue $1 to the temporary holding directory $2.
+
+if test $# -ne 2; then
+  echo "Usage: $0 CAPSULE.txt OUTPUTDIR" >&2
+  exit 1
+fi
+
+if test ! -s "$1"; then
+  echo "$0: capsule file does not exist or is empty: $1" >&2
+  exit 1
+fi
+capsule=$1
+
+if test ! -d "$2"; then
+  echo "$0: output not a directory: $2" >&2
+  exit 1
+fi
+outdir=$2
+
+# Extract the volume, issue, and sequence number from the \issue line in
+# the capsule file. We don't use anything else.
+# \issue{41}{3}{129}{2020}{}{}
+set - `grep '^\\\\issue' "$capsule" | sed -n 's/[{}]/ /gp'`
+#
+volno=$2
+issno=$3
+seqno=$4
+
+# Our convention is that the issue sources are in ~tubprod/VV-N/*,
+# while this script is in ~tubprod/svn/capsules (an svn checkout).
+# Use a relative path instead of hardwiring ~tubprod, but assume
+# that layout.
+# 
+mydir=`cd \`dirname "$0"\` && pwd`  # .../svn/capsules
+issdir=`cd "$mydir/../../$volno-$issno" && pwd`
+
+if test ! -d "$issdir"; then
+  echo "$0: could not find issue directory: $issdir" >&2
+  echo "$0: (from volno=$volno, issno=$issno, seqno=$seqno)" >&2
+  exit 1
+fi
+
+bbl_count=`ls -1 $issdir/*/*.bbl 2>/dev/null | wc -l`
+if test $bbl_count -eq 0; then
+  echo "$0: no .bbl files found under: $issdir" >&2
+  exit 1
+fi
+
+# We intentionally do not erase existing *.bbl or move them aside;
+# let another level (the target in ./Makefile) do that.
+# 
+if cp -f "$issdir"/*/*.bbl $outdir/; then :; else
+  echo "$0: copy of bbl files failed, goodbye." >&2
+  exit 1
+fi
+
+echo "$0: $bbl_count bbl file(s) copied."
+exit 0

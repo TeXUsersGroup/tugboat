@@ -38,11 +38,18 @@ one:
 	  test -z "$$unparsed" || { echo "$$unparsed" >&2; exit 1; }; \
 	test -z "$(profopt)" || $(profcmd)
 
-# Initial development of crossref doi support.
-cr:
-	rm -f crossref/rpi/*.rpi
+# Prepare data for crossref.
+cr_work = crossref/rpi
+cr1:
+	rm -f $(cr_work)/*.rpi $(cr_work)/*.bbl
+	#
 	$(MAKE) more_options=--crossref one
-	cp -pf crossref/rpi/*.rpi crossref/process/
+	cp -pf $(cr_work)/*.rpi crossref/process/
+	#
+	cr-copy-bbl tb$(testiss)capsule.txt $(cr_work)/
+	# only copy the bbl's into process/ once, so we can hand-edit them.
+	yes n | cp -ip $(cr_work)/*.bbl crossref/process/
+	#
 	$(MAKE) -C crossref
 
 out = contents*.html

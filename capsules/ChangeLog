@@ -1,3 +1,36 @@
+2020-12-17  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (cr1): rename test target for crossref.
+	* cr-copy-bbl: new script to copy bbl files from issue directory.
+	
+	* lists-translations.txt: use &#x entities consistently;
+	Crossref XML does not support the named HTML entities, sadly.
+	* capconv.pl (transform_author): allow &#x00a0 as well as nbsp.
+	
+	* capcrossref.pl (crossref_write_files): also write
+	publicationType=omit, since not all our posts are full_text.
+
+2020-12-05  Karl Berry  <karl@freefriends.org>
+
+	* capcrossref.pl: new file for crossref.org doi support.
+	* capout.pl: call crossref_write_files to kick it off.
+	
+	* lists-authinfo.txt: new file for author decorations (orcid number,
+	organization boolean).
+	* capdata-author.pl: read/access it.
+	
+	* captub: require new .pl files.
+	
+	* Makefile (cr): test target.
+	* README,
+	* capconv.pl,
+	* capdata-rx.pl,
+	* capdata-unify.pl,
+	* capdata-xlate.pl,
+	* lists-regexps.txt: doc.
+	
+	* crossref/: new subdirectory for further crossref processing.
+	
 2020-11-22  Karl Berry  <karl@freefriends.org>
 
 	* tb128capsule.txt (veytsman-overleaf): Satish et al. (blind

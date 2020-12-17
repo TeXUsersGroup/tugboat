@@ -103,14 +103,9 @@ sub crossref_write_files {
     print $RPI join (' \and ', @rpi_authors);
     print $RPI "\n";
     
-    # We already laboriously constructed the title in html, can just write out.
-    # 
-    # qqq have to check for non-allowed html elements and entities
-    # https://data.crossref.org/reports/help/schema_doc/4.4.2/schema_4_4_2.html#title
-    # https://support.crossref.org/hc/en-us/articles/214532023
-    # 
-    # qqq must also construct landing pages,
-    # including abstracts and bibliographies.
+    # We already laboriously constructed the title in html, just write out.
+    # Let downstream scripts do the validation.
+    # qqq must also construct landing pages, including abstracts.
     print $RPI "%title=$cap{title_html}\n";
     
     # These values are already present in the issue hash, can also write out.
@@ -125,6 +120,14 @@ sub crossref_write_files {
     print $RPI "%startpage=$startpage\n";
     print $RPI "%endpage=$endpage\n";
     
+    # Although we have the information to know whether the full text of
+    # the article is available, outputting that here would mean having
+    # to switch from abstract_only to full_text and re-uploading the xml
+    # to Crossref when an issue goes public. Nothing else in the xml
+    # requires changing/reupload, so let's not invent that whole process
+    # just for one optional attribute. Instead, omit it.
+    print $RPI "%publicationType=omit\n";
+
     # We already calculated the doi.
     print $RPI "%doi=$doi\n";
 

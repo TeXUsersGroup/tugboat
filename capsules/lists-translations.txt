@@ -1,7 +1,7 @@
 # $Id$
 # TUGboat capsule string (not regexp) translations. Public domain.
 #
-# if the last character on a line is \ the next line is a continuation
+# If the last character on a line is \ the next line is a continuation
 #     line and the leading spaces on the continuation line are ignored;
 #     if the last two characters on a line are \\, the next line is NOT
 #     a continuation line, and the \\ sequence is deleted -- this is to
@@ -9,44 +9,47 @@
 #     can't end with a trailing backslash (\) -- these have to go
 #     in the $str =~ s/ section
 
-# the argument delimiter is || (two chars)
+# The argument delimiter is || (two chars).
 
-#the first-argument to second-argument translation is for TeX to HTML
+# The first-argument to second-argument translation is for TeX to HTML
 #     for the TOC; the second-argument to third-argument translation is
 #     for sorting the lists
 
-#the first-argument to second-argument table is completely independent
+# The first-argument to second-argument table is completely independent
 #     of the second-argument to third-argument table; if there is no
 #     third argument, no entry is made in the latter table; there only
 #     needs to be (should be) one instance of a second-argument to third-
 #     argument pair even though there may be multiple first arguments
 #     mapping into a particular second argument
 
-#the first-argument to second-argument replacement is done so the same
+# The first-argument to second-argument replacement is done so the same
 #     replacement rule can be used again from the same position; the
 #     second-argument to third-argument replacement is done from the
 #     next position after the beginning of the replacement string because
 #     this translation often replaces something with the same thing
 
-#names
+# Entities: for XML output (required for Crossref), we use numeric
+#   entities almost exclusively. The only entities supported by the
+#   Crossref schema (and bare XML in general) are: quot amp apos lt gt.
 
-# names after %person must not use braces, or they get misparsed as
-# arguments, hence we make up \NM* names.
+# names
 
+# Names after %person must not use braces, or they get misparsed as
+# arguments, hence we make up \NM* name identifiers.
+#
 # Brian {Hamilton Kelly} is an extra-special case, as befits his name,
 # since we elide bare braces (in lists-regexps).  So use the code
 # points for lbrace and rbrace.
-\NMHamiltonKelly||&#x7b;Hamilton&nbsp;Kelly&#x7d;||HamiltonKelly
+$\{$Hamilton\CONNECT{}Kelly$\}$||&#x7b;Hamilton&#xa0;Kelly&#x7d;||HamiltonKelly
+\NMHamiltonKelly||&#x7b;Hamilton&#xa0;Kelly&#x7d;||HamiltonKelly
 \NMJiriRybicka||Ji\v{r}\'{\i} Rybi\v{c}ka
 \NMOlsak||Ol\v{s}\'ak
 
-$\{$Hamilton\CONNECT{}Kelly$\}$||&#x7b;Hamilton&nbsp;Kelly&#x7d;||HamiltonKelly
+\Thanh||H&#xe0;n Th&#x1ebf; Th&#xe0;nh||Han The Thanh
 
-\Thanh||H&agrave;n Th&#x1ebf; Th&agrave;nh||Han The Thanh
+\LaTeX\ Project Team||LaTeX&#xa0;Project&#xa0;Team||LaTeX Project Team
 
-\LaTeX\ Project Team||LaTeX&nbsp;Project&nbsp;Team||LaTeX Project Team
-
-R\r{u}\v{z}i\v{c}ka||R&#367;&#382;i&#269;ka||Ruzicka
+R\r{u}\v{z}i\v{c}ka||R&#x016f;&#x017e;i&#x010d;ka||Ruzicka
 
 # this first is for \TeX{}\kern...works
 \TeX{}\kern-.07em ||TeX
@@ -54,49 +57,49 @@ R\r{u}\v{z}i\v{c}ka||R&#367;&#382;i&#269;ka||Ruzicka
 \TUB{}\CONNECT{}Team||TUGboat\CONNECT{}Team
 
 # Various accents, etc. todo: use hex or names, not decimal.
-\"a||&auml;||a
+\"a||&#xe4;||a
 \"O||&#xd6;||O
-\"o||&ouml;||o
-\"u||&uuml;||u
+\"o||&#xf6;||o
+\"u||&#xfc;||u
 #
-\'a||&aacute;||a
+\'a||&#xe1;||a
 \'c||&#x0107;||c
-\'e||&eacute;||e
-\'\i ||&iacute;||i
-\'{\i}||&iacute;||i
-\'\i||&iacute;||i
+\'e||&#xe9;||e
+\'\i ||&#xed;||i
+\'{\i}||&#xed;||i
+\'\i||&#xed;||i
 \'n||&#x0144;||n
 \'{n}||&#x0144;||n
-\'O||&Oacute;||O
-\'o||&oacute;||o
-\'s||&sacute;||s
-\'y||&yacute;||y
+\'O||&#xd3;||O
+\'o||&#xf3;||o
+\'s||&#x015B;||s
+\'y||&#xfd;||y
 #
-\^o||&ocirc;||o
+\^o||&#xf4;||o
 #
-\~a||&atilde;||a
+\~a||&#xe3;||a
 #
 \=a||&#x0101;||a
 \=\i||&#x012b;||i
 \={u}||&#x016b;||u
 #
-\`a||&agrave;||a
-\`e||&egrave;||e
-\`{\i}||&igrave;||i
+\`a||&#xe0;||a
+\`e||&#xe8;||e
+\`{\i}||&#xec;||i
 #
 \.e||&#x0117;||e
 \.Z||&#x017b;||Z
 \.z||&#x017c;||z
 #
 \c{c}||&#xe7;||c
-\c{S}||S&#x327;||S
-# \c{S} is for Schaefer's "SaferTeX in tb79 and tb85; combining cedilla.
+\c{S}||S&#x0327;||S
+# \c{S} is for Schaefer's "SaferTeX in tb79 and tb85; use combining cedilla.
 #
 \d{d}||&#x1e0d;||d
 #
-\H o||&#246;||o
+\H o||&#x0150;||o
 #
-\o{}||&oslash;||o
+\o{}||&#xf8;||o
 #
 \v{c}||&#x010d;||c
 \v{e}||&#x011b;||e
@@ -105,9 +108,9 @@ R\r{u}\v{z}i\v{c}ka||R&#367;&#382;i&#269;ka||Ruzicka
 \v{s}||&#x0161;||s
 \v{Z}||&#x017d;||Z
 #
-\L{}||&#321;||L
-\l{}||&#322;||l
-{\l}||&#322;||l
+\L{}||&#x141;||L
+\l{}||&#x142;||l
+{\l}||&#x142;||l
 #
 \textcircumacute{e}||&#x1ebf;||e
 
@@ -115,15 +118,15 @@ R\r{u}\v{z}i\v{c}ka||R&#367;&#382;i&#269;ka||Ruzicka
 
 Looking ahead for a \<box>||Looking ahead for a &#60;box&#62;||Looking ahead for a box
 
-$\dag$||&dagger;||
-$\hookrightarrow$||&rarr;||
-$\Omega$||&Omega;||O
-$\Omega_2$||&Omega;2||O2
-''||&rdquo;
+$\dag$||&#x2020;||
+$\hookrightarrow$||&#x2194;||
+$\Omega$||&#x03a9;||O
+$\Omega_2$||&#x03a9;2||O2
+''||&#x201d;
 \#||#
 \%||%
-\AE||&AElig;||AE
-\ae||&aelig;||ae
+\AE||&#xc6;||AE
+\ae||&#xe6;||ae
 \AllTeX||(La)TeX
 \AMS||AMS
 \AmSTeX||AmSTeX
@@ -132,7 +135,7 @@ $\Omega_2$||&Omega;2||O2
 \BibTeX||BibTeX
 \CandT\/||<i>Computers and Typesetting</i>
 \/||
-\CONNECT{}||&nbsp;|| \\
+\CONNECT{}||&#xa0;|| \\
 \ConTeXt||ConTeXt
 \CS{}plain||CSplain
 \CSS||CSS
@@ -140,7 +143,7 @@ $\Omega_2$||&Omega;2||O2
 \curve||CurVe
 \DVD||DVD
 \DVI||DVI
-\eTeX||&epsilon;-TeX||eTeX
+\eTeX||&#x03B5;-TeX||eTeX
 \exTeX||exTeX
 \GNU||GNU
 \HTML||HTML
@@ -150,7 +153,7 @@ $\Omega_2$||&Omega;2||O2
 \kern1pt||
 \LaTeXe||LaTeX2e
 {\LaTeX}||LaTeX
-\LaTeX\Dash||LaTeX&mdash;
+\LaTeX\Dash||LaTeX&#x2014;
 \LaTeX3||LaTeX3
 \LaTeX ||LaTeX
 \LaTeX||LaTeX
@@ -162,7 +165,7 @@ $\Omega_2$||&Omega;2||O2
 \MF||Metafont
 \MkIV||MkIV
 \MP||MetaPost
-\mtex||T&ecirc;X||TeX
+\mtex||T&#xea;X||TeX
 \NexTeX||NexTeX
 \OMEGA||Omega
 \OpTeX||OpTeX
@@ -171,7 +174,7 @@ $\Omega_2$||&Omega;2||O2
 \PNG||PNG
 \PS||PS
 \rm||
-\ss{}||&szlig;||ss
+\ss{}||&#xdf;||ss
 \slash ||/
 \slBibTeX\||BibTeX
 \slBibTeX||BibTeX
@@ -201,17 +204,17 @@ $\Omega_2$||&Omega;2||O2
 \XyMTeX||XyMTeX
 \&||&amp;
 \_||_
-``||&ldquo;
+``||&#x201c;
 {\TeX}||TeX
 {\TUG}||TUG
 {\VAX}||VAX
----||&mdash;||\\
---||&ndash;||\\
-\Dash ||&mdash;||\\
-\Dash||&mdash;||\\
-{\dots}||&hellip;||\\
-\dots||&hellip;\\
-\ldots||&hellip;\\
+---||&#x2014;||\\
+--||&#x2013;||\\
+\Dash ||&#x2014;||\\
+\Dash||&#x2014;||\\
+{\dots}||&#x2026;||\\
+\dots||&#x2026;\\
+\ldots||&#x2026;\\
 \\ || \\
 \ || \\
 \newline || \\
@@ -226,5 +229,5 @@ $\Omega_2$||&Omega;2||O2
   || \\
 
 # maybe nice to move ~ to beginning (but after accents) and fix so other
-# replacements use space. using nbsp turns out to be excessive.
+# replacements use space. using nbsp (= a0) turns out to be excessive.
 ~|| \\

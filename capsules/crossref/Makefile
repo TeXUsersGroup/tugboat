@@ -1,4 +1,5 @@
 # $Id$
+# Public domain.
 # See the README here for the general story on our doi support.
 
 # We require the development version of ltx2crossrefxml.
