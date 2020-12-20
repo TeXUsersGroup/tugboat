@@ -30,9 +30,9 @@ sub crossref_write_files {
     # becomes a doi of 10.47397/tb/41-3/tb129pres
     # (where 10.47397 is what was assigned to us by Crossref).
     # 
-    (my $url_basename = $cap{"url"}) =~ s,\.[^.]+$,,; # remove extension
-    $url_basename =~ s,^.*/TUGboat/,,;              # remove leading /TUGboat/
-    (my $doi = $url_basename) =~ s,^tb,tb/,;        # change tb/ to "dir"
+    (my $url_stem = $cap{"url"}) =~ s,\.[^.]+$,,;   # remove extension
+    $url_stem =~ s,^.*/TUGboat/,,;                  # remove leading /TUGboat/
+    (my $doi = $url_stem) =~ s,^tb,tb/,;            # change tb/ to "dir"
     $doi =~ s,^,10.47397/,;                         # our crossref prefix
 
     # &doi_verify ($doi); # qqq including correct tbNNN number

@@ -23,7 +23,7 @@ $(xml_output): $(rpi_input) $(tub_cfg) force
 	xmllint --noout $@      # basic syntax check
 	#sed '1,/<titles>/d' $@ # omit top boilerplate
 	#egrep '(name|organization|title)>' $@
-	-egrep '\\|--' $@
+	-egrep '\\|--' $@  # TeX left untranslated?
 	grep -A1 '<citation' $@ | grep -v '^--$$' | cut -c 8-
 
 # https://www.crossref.org/schemas/crossref4.4.2.xsd
