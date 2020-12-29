@@ -98,22 +98,25 @@ sub transform_category {
 
 
 # Take author string ALL_AUTHORS_TEX (in TeX) and return a reference to
-# a list with first element the entire author string in HTML with names
-# joined by ", "; and remaining elements the individual names in HTML,
-# regularized:
-# - split into individual authors (see below)
-# - unifications performed
-# - convert First [M.] Last to Last, First [M.]
+# a list:
+# - first element is the entire author string in HTML, with names
+#   linked to entries in listauthors.html and joined by ", ".
+# - remaining elements are the individual names in HTML, regularized:
+#   . split into individual authors (see below)
+#   . unifications performed
+#   . convert First [M.] Last to Last, First [M.]
 # 
 # We assume Last is a single whitespace-delimited word; unifications or
 # \CONNECT{} must be used in the input source as needed.
 # 
-# The first element is for printing as-is in the tocs, the remainder are
-# for sorting and outputting in lists*.html.
+# The first element is for printing as-is in the tocs and doi landing
+# pages; the remainder are for sorting and outputting in lists*.html.
 # 
 # Thus, if the input is the TeX "Donald~E. Knuth and H. Zapf", the
 # return is the three-element list:
-# ("Donald&nbsp;E. Knuth, H. Zapf", "Knuth, Donald&nbsp;E.", "Zapf, H.").
+# ('<a href="/TUGboat/Contents/listauthors.html#Knuth,Donald">Donald&nbsp;E. Knuth, <a href="/TUGboat/Contents/listsauthors.html#Zapf,Hermann">H. Zapf",
+#  "Knuth, Donald&0xa0;E.",
+#  "Zapf, H.").
 # 
 sub transform_author {
   my ($all_authors_tex) = @_;
