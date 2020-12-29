@@ -39,18 +39,33 @@ one:
 	test -z "$(profopt)" || $(profcmd)
 
 # Prepare data for crossref.
-cr_work = crossref/rpi
+# This directory is where we target all automated work.
+cr_temp = crossref/rpi
+#
+# This directory is for the files from which we make the crossref upload,
+# possibly after hand-editing:
+cr_process = crossref/process
 cr1:
-	rm -f $(cr_work)/*.rpi $(cr_work)/*.bbl
+	# therefore we should clean out everything in $(cr_temp) to start.
+	rm -f $(cr_temp)/*.rpi $(cr_temp)/*.bbl $(cr_temp)/*.html
 	#
-	$(MAKE) more_options=--crossref one
-	cp -pf $(cr_work)/*.rpi crossref/process/
+	# process the capsule file, generating .rpi.
+	$(MAKE) more_options=--crossref=$(cr_temp) one
 	#
-	cr-copy-bbl tb$(testiss)capsule.txt $(cr_work)/
-	# only copy the bbl's into process/ once, so we can hand-edit them.
-	yes n | cp -ip $(cr_work)/*.bbl crossref/process/
+	# the .rpi and .html files should never need to be hand-edited,
+	# so just overwrite:
+	cp -pf $(cr_temp)/*.rpi $(cr_temp)/*.html $(cr_process)/
 	#
+	./cr-copy-bbl-abs tb$(testiss)capsule.txt $(cr_temp)/
+	# but only copy the bbl's into process/ once,
+	# since we need to hand-edit them.
+	yes n | cp -ip $(cr_temp)/*.bbl $(cr_process)/
+	#
+	# make the crossref output.xml file.
 	$(MAKE) -C crossref
+	#
+	# from the crossref xml, fix up the landing pages.
+	#./cr-landing-bbl-abs $(cr_temp) $(cr_process)/output.xml
 
 out = contents*.html
 all:

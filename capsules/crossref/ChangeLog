@@ -1,3 +1,9 @@
+2020-12-27  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (xml_output): indentation decreased.
+	* ltx2crossrefxml-tugboat.cfg: \\x since we're outputting plain
+	strings now instead of binary characters.
+
 2020-12-20  Karl Berry  <karl@freefriends.org>
 
 	* ltx2crossrefxml-tugboat.cfg: handle a few plain TeX commands,

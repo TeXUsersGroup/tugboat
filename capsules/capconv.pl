@@ -84,10 +84,10 @@ sub transform_category {
   $cat =~ s/\\&/&/; # &amp; after switch, also in capaccum
   $cat =~ s/\\\\/ /g;
   $cat =~ s/\\ / /g;
-  $cat =~ s/``/&ldquo;/;
-  $cat =~ s/''/&rdquo;/;
-  $cat =~ s/\\AE/&AElig;/;
-  $cat =~ s/ *\\Dash */&mdash;/;
+  $cat =~ s/``/&#x201c;/;
+  $cat =~ s/''/&#x201d;/;
+  $cat =~ s/\\AE/&#xc6;/;
+  $cat =~ s/ *\\Dash */&#x2014;/;
   $cat =~ s/{(.*?)}/$1/g; # braces last
   $cat = &normalize_whitespace ($cat);
   
@@ -163,11 +163,6 @@ sub transform_author {
     my $a = &tex2html ($tex_author);
     &ddebug ("     converted author TeX '$tex_author' to: $a");
 
-    # save names in their original form (before unification, before
-    # first+last) for display.
-    $orig_author_html .= ", " if $orig_author_html;
-    $orig_author_html .= $a;
-    
     # the unifications file assumes html conversion has happened.
     $a = &lists_unify ($a);
     &ddebug ("     unified author to: $a");
@@ -190,6 +185,13 @@ sub transform_author {
     }
     push (@ret, $lastfirst);
     &ddebug ("     author: pushed: $lastfirst");
+
+    # save names in their original form (without unification)
+    # for display, with a link into listsauthors.
+    $orig_author_html .= ", " if $orig_author_html;
+    my $author_id = &author_to_id ($lastfirst);
+    $orig_author_html .= qq!<a href="/TUGboat/Contents/listauthor.html#$author_id">!;
+    $orig_author_html .= "$a</a>";
   }
   
   # put the original string at the beginning of what we return.
@@ -200,7 +202,7 @@ sub transform_author {
 }
 
 
-# Transform an input page number spec into a (possibly real) number for
+# Transform an input page number spec into a (usually real) number for
 # sorting.  Possible valid inputs:
 # c[1234]                -> .[1234]   (covers)
 # INT1--?INT2	         -> INT1.INT2 (consider end of range as decimal)

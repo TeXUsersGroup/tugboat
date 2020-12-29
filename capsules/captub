@@ -12,9 +12,9 @@
 # 2) lists*.html files aggregating information across all issues, where
 # we unify different forms of author names, add or replace categories, etc.
 # 
-# 3) rpi/*.rpi files, one for each article (not each issue), which we
+# 3) *.rpi/*.html files, one for each article (not each issue), which we
 # use as the basis for the DOI uploads and landing pages. See the
-# subdirectory crossref/* here for the processing of the .rpi files.
+# subdirectory ./crossref/* here for more about that.
 # 
 # See the README and Makefile here for more.
 # 
@@ -118,7 +118,7 @@ sub main {
 sub init {
   umask (002); # tugboat group write permission is useful
   %OPT = ();
-  $OPT{"crossref"} = 0;
+  $OPT{"crossref"} = "";
   $OPT{"debug"} = 0;
   $OPT{"prevnext"} = 1;
   $OPT{"stdout"} = 0;
@@ -126,7 +126,7 @@ sub init {
 
   exit 2 unless Getopt::Long::GetOptions (\%OPT,
     "authors|A",
-    "crossref!",
+    "crossref=s",
     "debug|D+",
     "prevnext!",
     "stdout!",
@@ -149,12 +149,12 @@ In addition, cumulative files lists*.html are output for combined
 author, keyword, and title lists.
 
 In addition, if --crossref is specified, and the issue number is new
-enough (specified in capout.pl), *.rpi files are generated in
-subdirectory crossref/rpi/ and so-called landing pages in
-crossref/landing for further processing; see crossref/README.
+enough (specified in capout.pl), *.rpi and *.html files are generated in
+the specified subdirectory for doi registration with Crossref;
+see crossref/README for details.
 
 --authors, -A    output author list and exit.
---crossref       generate crossref/rpi/*.rpi files for doi registration.
+--crossref=DIR   generate DIR/*.{rpi,html} files for doi registration.
 --debug, -D      output voluminous debugging information; repeat once for max.
 --no-prevnext    do not read prev/next capsules, only those specified;
                    default if only one CAPSULE is given.

@@ -26,7 +26,7 @@
 
 # \ss at end of string; can't easily do in translations since there is
 # also \ssf; cleaner to do it here.
-\\ss$||"&szlig;"
+\\ss$||"&#xdf;"
 
 # fonts; do after accents so most braces have been removed.
 \{\\it\s*(.*?)\}||"<i>$1</i>"

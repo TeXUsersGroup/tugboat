@@ -155,7 +155,7 @@ sub accumulation_check {
   my @category_expected = (
        '',
        "TUG'98",
-       '&ldquo;small&rdquo; TeX',
+       '&#x201c;small&#x201d; TeX',
        'A TeX Odyssey',
        'Abstracts',
        'Accessibility',
@@ -224,7 +224,7 @@ sub accumulation_check {
        'Keynote',
        'Keynote: Publishing, Languages Literature and Fonts',
        'Keynotes',
-       'LaTeX&mdash;state of the art',
+       'LaTeX&#x2014;state of the art',
        'LaTeX',
        'Language Issues',
        'Language Support',
@@ -336,7 +336,7 @@ sub accumulation_check {
        'Tutorials',
        'Typesetting on PCs',
        'Typesetting on Personal Computers',
-       'Typographics: &AElig;sthetics and Practicalities',
+       'Typographics: &#xc6;sthetics and Practicalities',
        'Typography',
        'User Groups and Dissemination of Information',
        'Views & Commentary',
@@ -355,8 +355,8 @@ sub accumulation_check {
 }
 
 
-# For string WHAT, check that array reference @$EXPECTED (hard-coded list
-# above) contains all and only the keys in hash reference %$CHEC
+# For string WHAT, check that array reference @$EXPECTED (hard-coded lists
+# above) contains all and only the keys in hash reference %$CHECK
 # (accumulated as we processed all the issues).
 # 
 sub accumulation_check1 {

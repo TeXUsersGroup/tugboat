@@ -91,18 +91,13 @@ sub find_authors {
       }
 
       for my $a (@author_html) {
-        my $a_sort = &xlate_html2txt ($a);
-        # keep only alphanumeric plus & (special case to detect
-        # untranslated entities -- should be none) and comma and period,
-        # which are useful for authors.
-        $a_sort =~ s![^a-zA-Z0-9&,.]!!g;
-        push (@{$authors{$a_sort}}, \%cap);
-        
+        my $a_sort = &author_to_id ($a);
+
         # if an & remains, that means some entity in the html did not get
         # translated. to be fixed (probably) in lists-translations.txt.
         warn "$cap{issue}->{filename}: author sort string has &: $a_sort\n"
           if $a_sort =~ /&/;
-        
+
         if (! exists $anchors{$a_sort}) {
           $anchors{$a_sort} = $a_sort;
           #
@@ -127,7 +122,7 @@ sub find_authors {
 
 # 
 # Print to $FH each author from AUTHORS hash reference and all items by
-# that author, also using ANCHORS hash ref.
+# that author, also using ANCHORS and AUTHOR_HTML hash refs.
 # 
 sub print_all_by_author {
   my ($fh,$authors,$anchors,$author_html) = @_;
@@ -187,4 +182,17 @@ START_TITLE_GROUP
   }
 }
 
+sub author_to_id {
+  my ($canonical_author) = @_;
+
+  # html to plain text.
+  my $a_id = &xlate_html2txt ($canonical_author);
+  
+  # remove all but alphanumeric, comma, period, and & (special case to
+  # detect untranslated entities -- should be none).
+  # which are useful for authors.
+  $a_id =~ s![^a-zA-Z0-9&,.]!!g;
+  
+  return $a_id;
+}
 1;

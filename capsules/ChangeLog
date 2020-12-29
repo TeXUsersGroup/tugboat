@@ -1,3 +1,35 @@
+2020-12-27  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (cr_temp, cr_process): variables for crossref processing.
+	(cr1): rework to avoid hardwiring directory names. Make landing pages.
+	* captub: have --crossref option take argument, the directory
+	in which to generate files.
+	
+	* cr-copy-bbl-abs: rename from cr-copy-bbl, will handle abstracts too.
+	
+	* capaccum-keyword.pl (categories_of_capsule, category_to_id):
+	extract out these as separate fns.
+	
+	* capaccum-author.pl (author_to_id): new fn.
+	(find_authors): call it.
+	
+	* capconv.pl (transform_author): make the returned original author
+	list in html (the first element in the return) include links into
+	listsauthors.html.
+	
+	* capcrossref.pl (crossref_create_landing_page): new fn.
+        (crossref_write_files): call it.
+        
+	* capaccum.pl (accumulation_check),
+	* capconv.pl (transform_category),
+	* lists-regexps.txt (\\ss),
+	* lists-translations.txt (\hookrightarrow, many more),
+	* lists-unifications.txt (LaTeX, many more): must use hex entities
+	instead of named. Might have been cleaner to keep named entities
+	in the source files and convert immediately upon reading.
+	
+	* tb129capsule.txt (reviews-vervliet): %add|Typography category.
+
 2020-12-20  Karl Berry  <karl@freefriends.org>
 
 	* capcrossref.pl: doc fixes.
