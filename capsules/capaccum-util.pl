@@ -86,7 +86,7 @@ sub lists_entry_trailer {
   # 
   if ($cap->{"subtitles_html"}
       && $cap->{"category"} !~ /Reviews/) {
-    $h .= qq!\n<br>$cap->{"subtitles_html"}\n!;
+    $h .= qq!\n<br>$cap->{"subtitles_html"}!;
   }
 
   return $h;

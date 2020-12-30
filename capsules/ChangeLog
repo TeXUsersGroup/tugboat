@@ -1,3 +1,11 @@
+2020-12-30  Karl Berry  <karl@freefriends.org>
+
+	* capaccum-author.pl (find_authors): forgot to push author name on
+	list.
+	* capaccum-util.pl (lists_entry_trailer): no final newline,
+	done in succeeding output.
+	* lists-unifications.txt (TUGboat editors): same as TUGboat Team.
+
 2020-12-29  Karl Berry  <karl@freefriends.org>
 
 	crossref: initial creation of landing pages.

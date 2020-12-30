@@ -92,6 +92,7 @@ sub find_authors {
 
       for my $a (@author_html) {
         my $a_sort = &author_to_id ($a);
+        push (@{$authors{$a_sort}}, \%cap);
 
         # if an & remains, that means some entity in the html did not get
         # translated. to be fixed (probably) in lists-translations.txt.
