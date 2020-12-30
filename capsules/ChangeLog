@@ -1,4 +1,6 @@
-2020-12-27  Karl Berry  <karl@freefriends.org>
+2020-12-29  Karl Berry  <karl@freefriends.org>
+
+	crossref: initial creation of landing pages.
 
 	* Makefile (cr_temp, cr_process): variables for crossref processing.
 	(cr1): rework to avoid hardwiring directory names. Make landing pages.
@@ -26,7 +28,12 @@
 	* lists-translations.txt (\hookrightarrow, many more),
 	* lists-unifications.txt (LaTeX, many more): must use hex entities
 	instead of named. Might have been cleaner to keep named entities
-	in the source files and convert immediately upon reading.
+	in the source files and convert immediately upon reading, but since
+	we already did all the work, let's try it this way.
+	
+	After the above changes, "make all" works again to generate all
+	the existing files, and "make cr1" works to generate crossref
+	stuff, including (not yet complete) landing pages.
 	
 	* tb129capsule.txt (reviews-vervliet): %add|Typography category.
 
