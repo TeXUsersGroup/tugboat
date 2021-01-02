@@ -41,11 +41,11 @@ one:
 #  Deal with crossref.
 # 
 # This directory is where we target all automated work.
-cr_temp = crossref/rpi
+cr_temp = crossref/dir1.auto
 #
 # This directory is for the files from which we make the crossref upload,
 # possibly after hand-editing:
-cr_process = crossref/process
+cr_process = crossref/dir2.process
 cr1:
 	# therefore we should clean out everything in $(cr_temp) to start.
 	rm -f $(cr_temp)/*.rpi $(cr_temp)/*.bbl $(cr_temp)/*.html

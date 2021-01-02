@@ -1,3 +1,10 @@
+2021-01-02  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (cr_temp, cr_process): change names to dir1.auto
+	and dir2.process, to hopefully clarify use and ordering.
+	* capcrossref.pl (crossref_write_files): use $::OPT{crossref},
+	not hardwiring crossref/rpi.
+
 2021-01-01  Karl Berry  <karl@freefriends.org>
 
 	Insert bibliographies into landing pages.

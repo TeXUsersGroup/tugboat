@@ -38,12 +38,12 @@ sub crossref_write_files {
     # &crossref_verify_doi ($doi); # qqq including correct tbNNN number
 
     # Open the .rpi file. We name it by the doi "basename" plus .rpi, in
-    # the crossref/rpi/ subdirectory. There are so many rpi files (one
+    # the $OPT{crossref} subdirectory. There are so many rpi files (one
     # per article), it's nicer not to have them cluttering this
     # capsules/ directory, which is already too cluttered anyway. We
     # assume the crossref/rpi/ subdir exists.
     # 
-    (my $rpi = $doi) =~ s,^.*/,>crossref/rpi/,;
+    (my $rpi = $doi) =~ s,^.*/,>$::OPT{"crossref"}/,;
     $rpi .= ".rpi";
     open (my $RPI, $rpi) || die "open($rpi) failed: $!";
     

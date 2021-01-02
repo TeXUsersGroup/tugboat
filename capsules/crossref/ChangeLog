@@ -1,3 +1,11 @@
+2021-01-02  Karl Berry  <karl@freefriends.org>
+
+	* dir1.auto/: rename from rpi/,
+	* dir2.process/: rename from process/,
+	* dir3.uploaded/: rename from uploaded/,
+	to hopefully clarify use and ordering.
+	* Makefile (rpi_input, bbl_input, xml_output): change accordingly.
+
 2020-12-27  Karl Berry  <karl@freefriends.org>
 
 	* Makefile (xml_output): indentation decreased.
