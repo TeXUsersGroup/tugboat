@@ -1,3 +1,13 @@
+2021-01-01  Karl Berry  <karl@freefriends.org>
+
+	Insert bibliographies into landing pages.
+	* Makefile (crbat): new target for testing landing page updates.
+	(cr1): further steps toward whole process.
+	* capcrossref.pl (crossref_create_landing_page): fiddle with
+	subtitles for beet, allow for empty summary (election).
+	* cr-landing-bbl-abs: initial code to replace bbl
+	placeholders with reference lists from the crossref xml.
+
 2020-12-30  Karl Berry  <karl@freefriends.org>
 
 	* capaccum-author.pl (find_authors): forgot to push author name on

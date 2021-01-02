@@ -1,0 +1,171 @@
+#!/usr/bin/env perl
+# $Id$
+# Replace bibliography and abstract placeholders in the landing pages
+# with their actual text.
+
+use strict; use warnings;
+
+exit (&main ());
+
+sub main {
+  if (@ARGV != 2) {
+    warn <<END_USAGE; # a hint as to what's happening ...
+Usage: $0 [CROSSREF.xml] [CROSSREF_WORKING_DIR]
+
+In CROSSREF_WORKING_DIR/*.html (Crossref landing) files,
+replace bibliography placeholders with the actual bbl text
+taken from CROSSREF.xml.
+END_USAGE
+    exit ($ARGV[0] ne "--help");
+  }
+  
+  my %citations = &read_crossref_xml ($ARGV[0]);
+  my $cnt = &update_landing_bbl ($ARGV[1], %citations);
+  
+  print "$0: $cnt landing page(s) updated.\n";
+  # we should never have no citations or abstracts in a whole journal issue?
+  exit ($cnt == 0);
+}
+
+
+# We're not going to actually parse the xml (yuck). Instead, assume the
+# reasonable output format which we generate.
+# 
+sub read_crossref_xml {
+  my ($xml_fname) = @_;
+  my %citations;
+  
+  open (my $xml_fh, $xml_fname) || die "$0: open($xml_fname) failed: $!\n";
+  
+  my $in_article = 0;
+  my $doi_base;
+  while (<$xml_fh>) {
+    next unless /<journal_article/ || $in_article;
+    
+    if (/<journal_article/) {
+      $in_article = 1;
+      next;
+    }
+    
+    if ($in_article) {
+      if (/<doi>/) {
+        # input: <doi>10.47397/tb/41-3/tb129flynn-tex3</doi>
+        # we want the "basename" part of the doi.
+        ($doi_base) = m!<doi>.*/(.*)</doi>!;
+        debug ("got $doi_base from $_");
+        
+      } elsif (/<citation /) {
+        die "citation before doi, should not happen: $_" if ! $doi_base;
+        #
+        # input: <citation key="gentle-1"><unstructured_citation>
+        # input:   M. Doob. A Gentle Introduction ...
+        # We don't need anything from the <citation> line, just the
+        # second line of plain text bbl info.
+        $_ = <$xml_fh>;
+        chomp;
+        debug (" got citation: $_\n");
+        push (@{$citations{$doi_base}}, $_);
+        
+      } elsif (m!</journal_article>!) {
+        debug (" end article.\n");
+        $in_article = 0;
+      }
+    }
+  }
+  
+  die "ended in middle of journal_article, should not happen: $xml_fname"
+    if $in_article;
+  close ($xml_fh) || warn "$0: close($xml_fname) failed: $!\n";
+  
+  return %citations;
+}
+
+
+# Update the LANDING_DIR/ARTICLE.html files, where each ARTICLE is a key
+# in the CITATIONS hash. Replace the bbl placeholder with the text that
+# is the value for that key.
+# 
+sub update_landing_bbl {
+  my ($landing_dir,%citations) = @_;
+  my $updated = 0;
+  
+  for my $article (sort keys %citations) { # sort just for debugging ease
+    my $landing_fname = "$landing_dir/$article.html";
+    open (my $landing_fh, $landing_fname)
+    || die "open($landing_fname) failed: $!";
+    
+    my $temp_fname = "$landing_dir/$article.temp";
+    open (my $temp_fh, ">$temp_fname") || die "open($temp_fname) failed: $!";
+
+    while (<$landing_fh>) {
+      if (/REPLACE-WITH-BIBLIOGRAPHY/) {
+        print $temp_fh "<p><b>References</b>:\n<ol>\n";
+        for my $cite (@{$citations{$article}}) {
+          $cite =~ s/^\s+//;
+          $cite =~ s/\s+$//;
+          
+          # build a new citation string, making urls into links.
+          my $newcite = "";
+          for my $word (split (" ", $cite)) {
+#warn "checking $word\n";
+            # try to detect http urls, with or without a protocol,
+            # possibly followed by a period or comma.
+            my ($prot,$urlbase) = "";
+            
+            # protocol is specified.
+            if ($word =~ m!^https?://!) {
+              ($prot,$urlbase) = ($word =~ m!^(https?)://(\S+)!);
+#warn " got explicit $prot, urlbase $urlbase\n";
+
+            # no protocol; domain name just alphanumeric and -,
+            # must be at least two chars. (Don't worry about x.org.)
+            # And, special case, foo.sty is not a url.
+            } elsif ($word =~ m!^[a-z0-9-]{2,}\.([a-z0-9-]{2,})[.,]?!i
+                     && $1 ne "sty") {
+              $prot = "https";
+              $urlbase = $word;
+#warn " got implicit urlbase $urlbase\n";
+            }
+            
+            if ($prot) {
+#warn " got prot $prot, urlbase $urlbase\n";
+              # just drop trailing period or comma, it won't be missed
+              $urlbase =~ s/[.,]$//;
+              my $url = "$prot://$urlbase";
+              $newcite .=  qq! <a href="$url">$urlbase</a>!;
+            } else {
+              $newcite .= " " if $newcite;
+              $newcite .= $word;
+            }
+          }
+          print $temp_fh "<li>$newcite\n";
+        }
+        print $temp_fh "</ol>\n";
+      } else {
+        print $temp_fh $_;
+      }
+    }
+    close ($landing_fh) || warn "close($landing_fname) failed: $!";
+    close ($temp_fh) || warn "close($temp_fname) failed: $!";
+    
+    # one of many ways to move the temp file back to real.
+    # we don't care that it's not atomic.
+    my $cmd = "mv $temp_fname $landing_fname";
+    my $ret = system ($cmd);
+    die "system($cmd) failed, status $ret: $!\n" if $ret;
+
+    $updated++;
+    delete $citations{$article};
+  }
+
+  die "$0: citations not incorporated into landing pages:",
+       join (" ", keys %citations), "\n"
+    if keys %citations > 0;
+
+  return $updated;
+}
+
+
+sub debug {
+  #print @_;
+}

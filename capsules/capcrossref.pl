@@ -233,17 +233,26 @@ sub crossref_create_landing_page {
 <h2>$cap{title_html}</h2>
 END_LANDING
 
-  # whether the article is public.
-  my $availability = $cap{url} =~ m,/members/, 
-    ? 'available now to <a href="/join.html">TUG members</a>'
-      . "\n(will be publicly available after the next issue is published)"
-    : "publicly available now";
-  my $subtitles = $cap{subtitles_html} ? "\n<br>$cap{subtitles_html}" : "";
+  my $shortdesc = $cap{shortdesc_html} ? "$cap{shortdesc_html}." : "";
+  my $subtitles = $cap{subtitles_html} ? "\n$cap{subtitles_html}" : "";
+  
+  # for beet, we want to uniformly have two spaces at the beginning
+  # of each subtitle, and each on a line by itself. seems to work out
+  # for others too.
+  $subtitles =~ s/(\&nbsp;){2,}/<br>&nbsp;&nbsp;/g;
   my $htmlnotes = $cap{htmlnotes} ? "\n<br>$cap{htmlnotes}" : "";
   print $LANDING <<END_LANDING;
 
 <p><b>Summary</b>:
-$cap{shortdesc_html}.$subtitles$htmlnotes</p>
+$shortdesc$subtitles$htmlnotes</p>
+END_LANDING
+
+  # whether the article is public.
+  my $availability = $cap{url} =~ m,/members/, 
+    ? 'now <a href="/join.html">available to TUG members</a>'
+      . "\n(will be publicly available after the next issue is published)"
+    : "publicly available now";
+  print $LANDING <<END_LANDING;
 
 <p><b><a href="$cap{url}"
 >Full text of article</a></b>: $availability.</p>

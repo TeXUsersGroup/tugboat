@@ -24,7 +24,7 @@ $(xml_output): $(rpi_input) $(tub_cfg) force
 	#sed '1,/<titles>/d' $@ # omit top boilerplate
 	#egrep '(name|organization|title)>' $@
 	-egrep '\\|--' $@  # TeX left untranslated?
-	grep -A1 '<citation' $@ | grep -v '^--$$' | cut -c 6-
+	#grep -A1 '<citation' $@ | grep -v '^--$$' | cut -c 6-
 
 # https://www.crossref.org/schemas/crossref4.4.2.xsd
 # https://www.crossref.org/schemas/common4.4.2.xsd
