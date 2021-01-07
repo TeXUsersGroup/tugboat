@@ -8,7 +8,8 @@
 %       in various TUGboat issues as enumerated in the text below.
 %       This file contains the full exception list compounded from all
 %       previous iterations.  It can be used as input to the hyphenex
-%       scripts at http://mirror.ctan.org/info/digests/tugboat/hyphenex.
+%       scripts at http://mirror.ctan.org/info/digests/tugboat/hyphenex,
+%       which in turn output the TeX-readable file ushyphex.tex.
 
 \let\tubomithyphenations = 1  % do not make tub hyphenation exceptions
 \let\tubhyphenatett = 1       % and we do want to hyphenate typewriter
@@ -17,6 +18,7 @@
 \issdate Thermidor, 9999.
 
 %% reset for 36(1)
+\def\rtitlex{Hyphenation exception list}
 \def\midrtitle{As of 6 January 2021}
 \def\rfoot{}
 
@@ -36,7 +38,7 @@
 
 \title * Hyphenation exception log *
 \author * Barbara Beeton *
-\address * {\tt http://ctan.org/pkg/hyphenex} *
+\address * {\tt https://ctan.org/pkg/hyphenex} *
 \netaddress* tugboat (at) tug dot org *
 
 \article
@@ -45,10 +47,10 @@ This is the periodic update of the list of words that \TeX\ fails to
 hyphenate properly.  The full list last appeared in \TUB\ 16:1,
 starting on page~12.\footnote{${}^1$}{\eightpoint %\raggedright
 \rightskip 0pt plus 15pt
-Updates appear in \TUB\ 22:1/2, pp.\,31--32;
-23:3/4, pp.\,247--248; 26:1, pp.\,5--6; 29:2, p.\,239; 31:3, p.\,160;
-33:1, pp.\,5--6; 34:2, pp.\,113--114; 36:1, p.\,5; 39:1, pp.\,5--6; and
-39:2, p.\,152.}
+Updates appear in \TUB\ 22:1/2, pp.\,31--32;\newline
+23:3/4, pp.\,247--248; 26:1, pp.\,5--6; 29:2, p.\,239; 31:3, p.\,160;\newline
+33:1, pp.\,5--6; 34:2, pp.\,113--114; 36:1, p.\,5; 39:1, pp.\,5--6; \newline
+and 39:2, p.\,152.\par}
 %% update reference
 The full list is presented here,
 including some later additions not yet published in \TUB.
@@ -72,15 +74,10 @@ languages other than \acro{U.S.} English''.
 In the list below, the first column gives results from plain \TeX's
 |\showhyphens{...}|. The entries in the second column are suitable for
 inclusion in a \hbox{|\hyphenation{...}|} list.
-
-In most instances, inflected forms are not shown for nouns and verbs;
-note that all forms must be specified in a |\hyphenation{...}| list
-if they occur in your document.  The full list of exceptions, as a
-\TeX-readable file, appears in
-|http://mirror.ctan| |.org/info/digests/tugboat|.
-(It's created automatically, and is available in the
-|hyphenex| subdirectory; see below.)
-%See the section below on making this list machine-usable.
+In most instances, inflected forms are not shown for nouns and verbs,
+though all forms must be specified in a |\hyphenation{...}| list
+if they occur in your document. The machine-usable file mentioned below
+includes all forms.
 
 Thanks to all who have submitted entries to the list.  Since some
 suggestions have demonstrated a lack of familiarity with the rules of
@@ -94,7 +91,7 @@ letters will be hyphenated.  (For the details, see \TB, page~454.)
 % ``English hyphenation''.)
 This particular rule is violated in some of the words listed; however,
 if a word is hyphenated correctly by \TeX\ except for ``missing''
-hyphens at the beginning or end, it has not been included here.
+hyphens at the beginning or end, it has generally not been included here.
 
 Some other permissible hyphens have been omitted
 for reasons of style or clarity.  While this is at
@@ -174,9 +171,9 @@ A group of volunteers led by Mojca Miklavec
 % Manuel P\'egouri\'e-Gonnard
 have created a comprehensive package of hyphenation patterns, called
 |hyph-utf8|; see\newline
-|http://tug.org/tex-hyphen|.
+|https://tug.org/tex-hyphen|.
 
-\head * Converting this list into machine-usable \break hyphenation exceptions *
+\head * Machine-usable exception list *
 
 Werner Lemberg has created scripts to convert this article into a
 machine-readable |\hyphenation| block that can be incorporated into a
@@ -184,11 +181,11 @@ document either directly or by inputting a file.  Many inflected forms
 will be included automatically, some evident in the printed version, but
 many included silently.  Both shell and Perl versions of the script are
 available (for no particular reason), with identical behavior.
-Everything is available through \CTAN\ at
-|http://| |mirror.ctan.org/info/digests/tugboat|.
 
-The \TeX-usable output of the script is posted in the same area as
-|ushyphex.tex|.
+Everything is available on \CTAN\ at
+\hbox{|ctan.org/|} |pkg/hyphenex|.
+The \TeX-usable output is in that directory as the file
+|ushyphex.tex|, and in the \TeX\ Live package |hyphenex|.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
