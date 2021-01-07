@@ -1,6 +1,6 @@
-%		tb0hyf.tex - version of 2015/03/20
+%		tb0hyf.tex - version of 2021/01/06
 %
-% Copyright 2008, 2010, 2012, 2013, 2015 TeX Users Group.
+% Copyright 2008, 2010, 2012, 2013, 2015, 2021 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 %	This item last appeared in full in TUGboat 16:1, March 1995.
@@ -17,7 +17,7 @@
 \issdate Thermidor, 9999.
 
 %% reset for 36(1)
-\def\midrtitle{As of 20 March 2015}
+\def\midrtitle{As of 6 January 2021}
 \def\rfoot{}
 
 %%%	Note -- With the addition of Skoup\'y, a note should be added
@@ -43,14 +43,23 @@
 
 This is the periodic update of the list of words that \TeX\ fails to
 hyphenate properly.  The full list last appeared in \TUB\ 16:1,
-starting on page~12, with updates in \TUB\ 22:1/2, pp.\,31--32;
+starting on page~12.\footnote{${}^1$}{\eightpoint %\raggedright
+\rightskip 0pt plus 15pt
+Updates appear in \TUB\ 22:1/2, pp.\,31--32;
 23:3/4, pp.\,247--248; 26:1, pp.\,5--6; 29:2, p.\,239; 31:3, p.\,160;
-33:1, pp.\,5--6; 34:2, pp.\,113-114; and 36:1, p.\,5.
+33:1, pp.\,5--6; 34:2, pp.\,113--114; 36:1, p.\,5; 39:1, pp.\,5--6; and
+39:2, p.\,152.}
 %% update reference
-The full list is included here.
-Owing to the length of the list, it has been subdivided into two parts:
-English words, and names and non-English words (including transliterations
-from Cyrillic and other non-Latin scripts) that occur in English texts.
+The full list is presented here,
+including some later additions not yet published in \TUB.
+Owing to the length of the list, it has been subdivided into three parts:
+English words, names and non-English words (including transliterations
+from Cyrillic and other non-Latin scripts) that occur in English texts,
+and words specific to chemistry and related disciplines.  The rationale
+for the last group is that this vocabulary is common internationally,
+and the hyphenation (since it is based on etymology) is likely to be the
+same or very similar regardless of language, allowing this material to
+be reused easily.
 
 This list is specific to the hyphenation patterns that appear in
 the original |hyphen.tex|, that is, the patterns for \acro{U.S.} English.
@@ -102,11 +111,18 @@ in this list, hyphens are shown only for the portions of the word that
 would be hyphenated in the same way regardless of usage.  These words
 are marked with a `*'; additional hyphenation points, if needed in your
 document, should be inserted with discretionary hyphens.
+%A few additional words, some of them trade names, are also marked with
+%a `*' if hyphenation at otherwise allowable points could be misleading
+%or confusing in context.
 
 Words added since the last appearance of the list are preceded by `${}^+$'.
 
 The reference used to check these hyphenations is\enspace {\sl Webster's
-Third New International Dictionary}, unabridged.
+Third New International Dictionary}, unabridged.  Boundless thanks to
+Win Treese, lover of dictionaries, and owner of the paper edition of
+the {\sl Third}, who has checked items since I lost access to the copy
+at \acro{AMS} on my retirement and those at libraries closed on account of
+the coronavirus.
 
 %\head * English hyphenation *
 %
@@ -261,9 +277,9 @@ The \TeX-usable output of the script is posted in the same area as
 \3 academy(ies)		acad-e-m y ies
 \1 accusative		ac-cu-sa-tive		% 2000/10, Scott Horne, 1993
 \5 acronym		acro-nym s		% 2005/08, kb list; 2011/11 pl.
-\5 acrylamide		acryl-amide s		% 2002/07, bnb, Science News
-\1 acrylaldehyde	acryl-alde-hyde		% 2002/07, bnb, Science News
 \3 acupuncture(ist)	acu-punc-tur e -ist	% 2005/09; Scott Horne, 1993
+\NewWordtrue
+\1 adamant		ad-a-mant		% 2015/06, bnb, Krantz size test
 \1 addable		add-a-ble
 \1 addible		add-i-ble
 \1 adrenaline		adren-a-line
@@ -271,8 +287,13 @@ The \TeX-usable output of the script is posted in the same area as
 \5 afterthought 	af-ter-thought s
 \5 agronomist		agron-o-mist s
 \1 algebraically	al-ge-bra-i-cal-ly	% 2001/01; S. Levy, 1993/09
-\5 amphetamine		am-phet-a-mine s
+\NewWordtrue
+\5 almanac		al-ma-nac s		% 2018/08, bmb, maatext
+\NewWordtrue
+\5 almanack		al-ma-nack s		% 2018/08, bmb, maatext
 \3 anachronism(tic)	anach-ro-nis m -tic	% 2012/03, bnb, SciAm
+\NewWordtrue
+\5 analect	 	an-a-lect s		% 2014/06
 \2 analyse(d)		an-a-lyse d
 \1 analyses		analy-ses\thinspace*
 \1 analysis		analy-sis		% 2012/03, bnb
@@ -282,13 +303,21 @@ The \TeX-usable output of the script is posted in the same area as
 \1 anisotropically	an-iso-trop-i-cal-ly	% 2001/01; S. Radford, 1993/02
 \1 anisotropism		an-isot-ro-pism 	% 2001/01; S. Radford, 1993/02
 \1 anisotropy		an-isot-ropy		% 2001/01; S. Radford, 1993/02
-\3 anniversary{ies}	an-ni-ver-sar y ies	% 2012/10, bnb
+\3 anniversary(ies)	an-ni-ver-sar y ies	% 2012/10, bnb
 \3 anomaly(ies)		anom-a-l y ies
+\NewWordtrue
+\1 anonymity		an-o-nym-i-ty		% 2017/07, bnb after kb
+\NewWordtrue
+\2 anonymous(ly)	anon-y-mous ly		% 2017/07, bnb after kb
+\NewWordtrue
+\5 antibiotic		anti-bi-ot-ic s		% 2017/04, bnb, Tom Hejda
 \5 antiderivative	anti-deriv-a-tive s
 \1 antiholomorphic	anti-holo-mor-phic	% 2003/08; bnb, GSM/Landsberg
 \3 antinomy(ies)	an-tin-o-m y ies
 \1 antinuclear		anti-nu-clear
 \1 antinucleon		anti-nu-cle-on
+\NewWordtrue
+\1 antipodes		an-tip-o-des		% 2017/04, bnb
 \1 antirevolutionary	anti-rev-o-lu-tion-ary
 \1 aperiodic		a-peri-odic		% 2013/06, bnb, Gleick, "Info"
 \1 apotheoses		apoth-e-o-ses
@@ -297,7 +326,7 @@ The \TeX-usable output of the script is posted in the same area as
 \5 appendix		ap-pen-dix es		% 2011/10, M. Loretan (pl.)
 \1 archimedean		ar-chi-me-dean		% 2001/01; S. Levy, 1993/09
 \1 archipelago		ar-chi-pel-ago       % changed 1999/09/15 from arch-i-
-\1 archipelago		ar-chi-pel-a-gos
+\1 archipelagos		ar-chi-pel-a-gos
 \5 archive		ar-chive s              % 1999/03
 \1 archiving		ar-chiv-ing             % 1999/03
 \5 archivist		ar-chiv-ist s           % 1999/03
@@ -306,21 +335,23 @@ The \TeX-usable output of the script is posted in the same area as
 \1 archetypical		ar-che-typ-i-cal
 \5 arctangent		arc-tan-gent s
 \tabalign		&\null\quad (better: arc\,tangent)\cr
+\NewWordtrue
+\1 areas		areas\thinspace*	% 2020/12, kb
 \1 aspheric		a-spher-ic		% 2013/07, bnb
 \1 aspherical		a-spher-i-cal		% 2013/07, A. O'Sean, jams776
 \1 assignable		as-sign-a-ble
 \5 assignor		as-sign-or s
 \3 assistant(ce)	as-sist-an t ce		% 2008/05, bnb
 \5 assistantship	as-sist-ant-ship s
-\NewWordtrue
 \5 astrologer		as-trol-o-ger s		% 2014/09, Karl Berry
-\NewWordtrue
 \5 astronomer		as-tron-o-mer s		% 2014/09, Karl Berry
 \1 asymptomatic		asymp-to-matic
 \1 asymptotic		as-ymp-tot-ic
 \1 asynchronous		asyn-chro-nous
 \1 atherosclerosis	ath-er-o-scle-ro-sis
 \5 atmosphere		at-mos-phere s
+%\NewWordtrue
+%\1 attenuation		at-ten-u-a-tion 	% 2020/12, tex.sx/q/416241
 \1 attribute		at-tri-bute		% 2008/05, bnb
 \1 attributed		at-trib-uted
 \1 attributable		at-trib-ut-able
@@ -332,9 +363,17 @@ The \TeX-usable output of the script is posted in the same area as
 \1 autoregressive	auto-re-gres-sive	% 2012/02, Mico Loretan
 \1 autorounding		auto-round-ing		% 2003/12, bnb
 \1 avoirdupois		av-oir-du-pois
+\NewWordtrue
+\1 awarded		awar-ded		% 2018/08, bmb, maatext
+\NewWordtrue
+\1 awestruck	 	awe-struck		% 2015/12, A. Siegel, GSM
 %\1 awoken		awok-en
+\NewWordtrue
+\2 backpedal(s,ing)	back-pedal s,-ing	% 2017/04, Werner Lemberg
 \3 backscratch(er,ing)	back-scratch er -ing	% 2013/07, Mico Loretan
 \5 bandleader		band-lead-er s
+\NewWordtrue
+\5 bankroll		bank-roll s		% 2018/08, bmb, maatext
 \2 bankrupt(s,cy,cies)	bank-rupt s,-cy,-cies
 \1 baronies		bar-onies
 \1 baselineskip 	{\tt\bs base-line-skip}
@@ -354,6 +393,10 @@ The \TeX-usable output of the script is posted in the same area as
 \1 biggest		big-gest
 \5 bigshot		big-shot s		% 2013/07, Mico Loretan
 \1 billable		bill-able
+\NewWordtrue
+\1 bioinformatics	bio-in-for-mat-ics	% 2017/05, tb119, Asakura
+\NewWordtrue
+\1 biomass		bio-mass		% 2017/04, Tom Hejda
 \1 biomathematics	bio-math-e-mat-ics
 \1 biomedical		bio-med-i-cal		% 2003/09, bnb, a&gf
 \1 biomedicine		bio-med-i-cine
@@ -383,18 +426,19 @@ The \TeX-usable output of the script is posted in the same area as
 \1 cameramen		cam-era-men
 \5 cartwheel		cart-wheel s
 \5 catarrh		ca-tarrh s
-\NewWordtrue
 \5 catastrophe		ca-tas-tro-phe s	% 2014/01, bnb, tex-hyphen
 \1 catastrophic		cat-a-stroph-ic
 \1 catastrophically	cat-a-stroph-i-cally
-\NewWordtrue
 \1 catastrophism	ca-tas-tro-phism	% 2014/01, bnb, tex-hyphen
 \5 catenoid		cat-e-noid s		% 2001/01; S. Levy, 1993/09
-\1 cauliflower		cau-li-flow-er
+\1 cauliflower		cau-li-flow-er		% 2020/12, tb127
+\NewWordtrue
+\5 chameleon		cha-me-leon s		% 2018/04, Tim Ruffing
 \1 chancery		chan-cery		% 2013/03, tb107bigelow
+\NewWordtrue
+\1 chaotic		cha-ot-ic		% 2017/04, bnb, tex.sx chat
 \1 chaparral		chap-ar-ral
 \1 chartreuse		char-treuse
-\NewWordtrue
 \5 chemokine		chemo-kine s		% 2013/09, TeX.sx #131754
 \6 chemotherapy 	chemo-ther-a py -pies   % 2001/01
 \5 chloromethane	chloro-meth-ane s	% 2005/01, Donald Arseneau
@@ -402,12 +446,20 @@ The \TeX-usable output of the script is posted in the same area as
 \5 cigarette		cig-a-rette s
 \1 cinquefoil		cinque-foil
 \1 coassociative	co-asso-cia-tive	% 2003/08; bnb, GSM/Landsberg
-\3 cochlea(s,r)		coch-lea s r		% 2012/03, bnb, SciAm
+\2 cochlea(s,r)		coch-lea s,r		% 2012/03, bnb, SciAm
 \5 codesigner		co-designer s		% 2011/08; dek
 \1 cognac		co-gnac
 \1 cognacs		co-gnacs
+\NewWordtrue
+\1 cognoscenti		co-gno-scen-ti		% 2016/07, tb117burnard
 \5 cokernel		co-ker-nel s		% 2001/11; R. Sizer
 \1 collineation 	col-lin-ea-tion		% 2001/01; S. Levy, 1993/09
+\NewWordtrue
+\5 colophon		col-o-phon s		% 2020/12, TUG 2020, tb128
+\NewWordtrue
+\5 columbine		col-um-bine s		% 2017/03, bnb
+\NewWordtrue
+\1 columnar		col-um-nar		% 2017/03, bnb
 \1 columns              col-umns             % 1999/03
 %%  comparand not in webster's 3rd; split by analogy to "operand"
 \1 comparand		com-par-and
@@ -422,10 +474,11 @@ The \TeX-usable output of the script is posted in the same area as
 \1 conformity		con-form-ity
 \1 congeries		con-ge-ries		% 2012/03, kb/bnb
 \5 congress		con-gress es
-\NewWordtrue
 \1 constructed		con-struc-ted		% 2014/09; F. Mittelbach
 \1 constructible	con-struc-ti-ble	% 2008/07; bnb, GSM/Rotman
 \1 constructibility	con-struc-ti-bil-ity	% 2012/03, bnb
+\NewWordtrue
+\1 contractable 	con-tract-able		% 2017/04, bnb, tex.sx chat
 \2 contribute(s,d)	con-trib-ute s,d
 \1 copyrightable	copy-right-able		% 2007/03, John Harper
 \2 corelation(s)	co-re-la-tion s		% 2004/04; bnb
@@ -435,27 +488,44 @@ The \TeX-usable output of the script is posted in the same area as
 \1 cosecant		co-se-cant
 \1 cosemisimple		co-semi-sim-ple		% 2011/04, bnb, memo649
 \1 cotangent		co-tan-gent
+\NewWordtrue
+\1 courage		cour-age		% 2018/07, bnb
+\NewWordtrue
+\2 courageous(ly)	cou-ra-geous -ly
 \1 courses		cour-ses
 \5 coworker		co-work-er s		% 2005/06, bnb
 \1 crankcase		crank-case		% 2005/02, Flynn list
 \1 crankshaft		crank-shaft
+\NewWordtrue
+\5 cricket		cric-ket s		% 2020/12, tex.sx/q/523488
 \5 crocodile		croc-o-dile s
 \2 crosshatch(ed,ing)	cross-hatch ed,-ing
 \1 crossover		cross-over		% 2000/10, Michael Doob
 \2 cryptogram(s)	cryp-to-gram s		% 2000/10, Scott Horne, 1993
 \2 cufflink(s)		cuff-link s		% 2004/05; John Harper
+\NewWordtrue
+\1 cuisines		cui-sines		% 2016/08; kb
 \1 cuneiform		cu-nei-form		% 2000/09
+\NewWordtrue
+\5 customer		cus-tom-er s		% 2015/10, bnb
 \1 customizable		cus-tom-iz-a-ble	% 2005/06, bnb
 \2 customize(s,d)	cus-tom-ize s,d		% 2005/06, bnb
 \2 cybervirus(es)	cy-ber-virus es		% 2012/03, bnb, SciAm
 \5 cyberweapon		cy-ber-wea-pon s	% 2012/03, bnb, SciAm
-\NewWordtrue
 \5 cytokine		cy-to-kine s		% 2013/09, TeX.sx #131754
 \1 dachshund		dachs-hund
 \3 damselfly(ies)	dam-sel-fl y ies	% 2003/06, bnb, Natl Geographic
 \3 dactylogram(aph)	dactyl-o-gr am aph	% 2002/07, bnb, Science News
 \5 database		data-base s
+\NewWordtrue
+\1 dataflow		data-flow		% 2018/07, kb
 \5 datapath		data-path s
+\NewWordtrue
+\5 datapoint		data-point s		% 2018/07, kb
+\NewWordtrue
+\5 dataset		data-set s		% 2018/07, kb
+\NewWordtrue
+\5 datatype		data-type s		% 2018/07, kb
 \5 datestamp		date-stamp s            % 1999/03
 \2 deallocate(s,d)	de-allo-cate s,d	% 2007/04, John Harper
 \5 deallocation		de-allo-ca-tion s	% 2008/05, bnb
@@ -463,16 +533,42 @@ The \TeX-usable output of the script is posted in the same area as
 \1 definitive		de-fin-i-tive
 \1 delectable		de-lec-ta-ble
 \5 demisemiquaver	demi-semi-qua-ver s	% 2000/09
+\NewWordtrue
+\1 democracy		de-moc-ra-cy		% 2017/06, tex-hyphen, kb
+\NewWordtrue
+\5 democrat		dem-o-crat s		% 2017/06, tex-hyphen, kb
+\NewWordtrue
+\1 democratic		dem-o-crat-ic		% 2017/06, tex-hyphen, kb
 \1 democratism		de-moc-ra-tism
+\NewWordtrue
+\3 demonstrable(y)	de-mon-stra-bl e y	% 2017/06, bnb
+\NewWordtrue
+\2 demonstrate(s,d)	dem-on-strate s,d	% 2017/06, bnb
+\NewWordtrue
+\1 demonstrating        dem-on-stra-ting	% 2017/06, bnb
+\NewWordtrue
+\5 demonstration	dem-on-stra-tion s	% 2017/06, bnb
 \1 demos		demos	
-\5 derivation		der-i-va-tion s		% 2007/11, Fred Nugen
-\1 derivational		der-i-va-tion-al	% 2007/11, Fred Nugen
+\2 derivation(s,al)	der-i-va-tion s,-al	% 2007/11, Fred Nugen
+%%\5 derivation		der-i-va-tion s		% 2007/11, Fred Nugen
+%%\1 derivational	der-i-va-tion-al	% 2007/11, Fred Nugen
 \5 derivative		de-riv-a-tive s
+\NewWordtrue
+\5 dialect		dia-lect s		% 2016/07, Nicola Talbot, tb117
+\NewWordtrue
+\1 dialectal	 	di-a-lec-tal		% 2014/06
 \5 dialectic		dia-lec-tic s		% 2001/01
+\NewWordtrue
+\1 dialectical	 	di-a-lec-ti-cal		% 2014/06
 \5 dialectician		dia-lec-ti-cian s	% 2001/01
-\1 dichloromethane	di-chloro-meth-ane	% 2005/01, Donald Arseneau
+\NewWordtrue
+\5 diatom		di-a-tom s		% 2014/06
+\NewWordtrue
+\1 diatomaceous 	di-a-to-ma-ceous	% 2014/06
 \5 diffract		dif-fract s
 \5 diffraction		dif-frac-tion s		% 2003/04
+\NewWordtrue
+\5 dilemma		di-lem-ma s		% 2017/09, kb (2014)
 \1 direr		direr
 \1 direness		dire-ness
 %%  disparand not in webster's 3rd; split by analogy to "operand"
@@ -480,7 +576,11 @@ The \TeX-usable output of the script is posted in the same area as
 \1 distraughtly		dis-traught-ly
 \1 distributable	dis-trib-ut-able	% 2011/01, Karl Berry
 \2 distribute(s,d)	dis-trib-ute s,d
+\NewWordtrue
+\1 distributing 	dis-trib-ut-ing		% 2017/02, kb
 \1 distributive 	dis-trib-u-tive 	% 2011/01, Karl Berry
+\NewWordtrue
+\1 disutility		dis-util-ity		% 2016/02, tex2002ans to tugboat
 \2 doublespace(d)	dou-ble-space d
 \1 doublespacing	dou-ble-spac-ing
 \1 doubletalk		dou-ble-talk		% 2013/05, bnb
@@ -489,6 +589,8 @@ The \TeX-usable output of the script is posted in the same area as
 \1 drivers		driv-ers		% 1999/03
 \3 dromedary(ies)	drom-e-dar y ies
 \5 droplet		drop-let s		% 2013/07, Mico Loretan
+\NewWordtrue
+\1 drosophila		dro-soph-i-la		% 2018/07, bnb
 \5 duopolist		du-op-o-list s
 \3 duopoly(ies)		du-op-o-l y ies
 \1 dyslexia		dys-lexia		% 2000/10, Scott Horne, 1993
@@ -499,50 +601,74 @@ The \TeX-usable output of the script is posted in the same area as
 \1 economics		eco-nom-ics
 \1 economies		econ-o-mies		% 2012/02, Mico Loretan
 \5 economist		econ-o-mist s
+\NewWordtrue
+\5 eggshell		egg-shell s		% 2020/12; tex.sx, @Plergux
 \2 eigenclass(es)	ei-gen-class es		% 2001/01; S. Levy, 1993/09
 \2 eigenvalue(s)	ei-gen-val-ue s		% 2001/01; S. Levy, 1993/09
+\NewWordtrue
+\1 electroencephalogram  elec-tro-en-cephalo-gram
+                                                % 2020/12, awad, Jerry Macks
 \1 electromechanical	electro-mechan-i-cal
 \1 electromechanoacoustic  electro-mechano-acoustic
 \1 electrophoresis	elec-tro-pho-re-sis	% 2012/09, John Harper
 \1 electrophoretic	elec-tro-pho-ret-ic	% 2012/09, John Harper
 \5 elitist		elit-ist s
+\NewWordtrue
+\1 endgame		end-game		% 2015/11, bnb, from c.t.t, 9/22
 \3 endoscopy(ies)	en-dos-cop y ies	% 2012/01, bnb
 \2 entrepreneur(s,ial)	en-tre-pre-neur s,-ial
+\NewWordtrue
+\1 ephemera		ephem-era		% 2018/08, bmb, maatext
+\NewWordtrue
+\3 ephemeris(ides)	ephem-er is -i-des	% 2018/08, bmb, maatext
+\NewWordtrue
+\1 epigraphs		epi-graphs		% 2020/09, kb
 \1 epinephrine		ep-i-neph-rine
 \1 epstopdf		{\tt eps-to-pdf}	% 2009/09, bnb, tb95
+\NewWordtrue
+\1 equated		equa-ted		% 2018/08, bmb, maatext
+\NewWordtrue
+\1 equidimensional	equi-di-men-sional	% 2018/06, bnb
 \3 equivariant(ce)	equi-vari-an t ce
 \5 ergonomic		er-go-nom-ic s		% 2008/06, bnb; Science News
 \1 ergonomically	er-go-nom-i-cally	% 2008/06, bnb; Science News
 \5 essence		es-sence s		% 2007/09, bnb; stml/iosevich
-\1 ethane		eth-ane			% 2005/01, Donald Arseneau
-\1 ethylamine		eth-yl-am-ine		% 2009/10, cf. John Harper
-\5 ethylate		eth-yl-ate d		% 2009/10, cf. John Harper
-\1 ethylene		eth-yl-ene
-\1 ethynyl		ethy-nyl		% 2009/10, cf. John Harper
-\1 ethynylation		ethy-nyl-a-tion		% 2009/10, cf. John Harper
 \1 eustachian		eu-sta-chian		% 2012/03, bnb, SciAm
 \1 eversible		ever-si-ble
 \2 evert(s,ed,ing)	evert s,-ed,-ing
+%%\NewWordtrue
+%%\1 everywhere		ev-ery-where		% 2020/12, tex.sx/q/182569
 \1 explanatory		ex-plan-a-tory		% 2012/05, TeX.sx/55412
+\NewWordtrue
+\1 explicit		ex-pli-cit		% 2016/11, tb117talbot
+\NewWordtrue
+\1 explicitly		ex-pli-cit-ly		% 2016/11, tb117talbot
 \1 exquisite		ex-quis-ite
 \1 extraordinary	ex-tra-or-di-nary
-\3 facelift(s,ing)	face-lift s -ing	% 2013/07, Mico Loretan
+\2 facelift(s,ing)	face-lift s,-ing	% 2013/07, Mico Loretan
 \1 falling		fall-ing		% 2003/06, bnb
 \1 fermions		fermi-ons
+\NewWordtrue
+\3 fiduciary(ies)	fi-du-ciar y -ies	% 2016/02, tex2002ans to tugboat
 \5 figurine		figu-rine s		% 2007/05, Nelson Beebe
 \1 finitely		fi-nite-ly		% 2001/01; S. Levy, 1993/09
 \3 flagellum(la)	fla-gel -lum -la
 \1 flammables		flam-ma-bles
 \1 fledgling		fledg-ling
 \5 flowchart		flow-chart s
-\1 fluorocarbon		fluoro-car-bon		% 2005/01, Donald Arseneau
 \1 fluoroscopies	fluor-os-copies 	% 2012/01, bnb
 \1 fluoroscopy		fluor-os-copy	 	% 2012/01, bnb
 %\1 folksinger		folk-singer
+\NewWordtrue
+\1 fontenc	 	{\tt font-enc}		% 2015/07, bnb, from tex.sx
 \3 formidable(y)	for-mi-da-bl e y
 \1 forsythia		for-syth-ia
 \1 forthright		forth-right
+\NewWordtrue
+\1 fragility		fra-gil-i-ty		% 2017/03, bnb
 \5 freeloader		free-loader s
+\NewWordtrue
+\5 freesia		free-sia s		% 2017/06, bnb
 \3 friendlier(est)	friend-li er -est
 \6 frivolity		fri-vol-i ty -ties
 \1 frivolous		friv-o-lous
@@ -558,11 +684,18 @@ The \TeX-usable output of the script is posted in the same area as
 \1 geostrophic          ge-o-strophic		% 2003/04
 \1 geothermal		geo-ther-mal		% 2005/03, bnb
 \1 geotropism		ge-ot-ro-pism
-\NewWordtrue
 \1 giganodes		giga-nodes		% 2014/10; dek
 \5 gnomon		gno-mon s
 \1 grandiose		gran-di-ose		% 2013/01, bnb
 \5 granduncle		grand-uncle s		% 2004/03, bnb
+\NewWordtrue
+\5 grapheme		graph-eme s		% 2020/02, kb, Yannis
+\NewWordtrue
+\5 graphemic		gra-phe-mic s		% 2020/02, kb, Yannis
+\NewWordtrue
+\5 graphetic		gra-phe-tic s		% 2020/02, kb, Yannis
+\NewWordtrue
+\5 grapholinguistic	grapho-lin-guis-tic s	% 2020/02, kb, Yannis
 \5 grievance		griev-ance s
 \2 grievous(ly) 	griev-ous -ly
 \1 grouplike		group-like
@@ -587,14 +720,34 @@ The \TeX-usable output of the script is posted in the same area as
 \1 hepatica		he-pat-ica		% 2008/05, bnb
 \3 hermaphrodite(ic)	her-maph-ro-dit e -ic
 \1 heroes		he-roes
-\1 hexadecimal		hexa-dec-i-mal
 \NewWordtrue
+\5 heterointerface	het-ero-in-ter-face s	% 2016/12, from tex.sx 342887
+\1 hexadecimal		hexa-dec-i-mal
 \1 hippopotamus 	hip-po-po-ta-mus	% 2014/01, from tex.sx 66528
 \5 holodeck		holo-deck s		% 2012/13. bnb
-\1 holonomy		ho-lo-no-my
+%\1 holonomy		ho-lo-no-my
+\2 holonomy(ies)	ho-lo-no-m y,ies
 \3 homeomorphic(sm)	ho-meo-mor-phi c sm	% 2001/01; S. Levy, 1993/09
 \5 homeostatic		ho-meo-stat-ic s	% 2007/11, Fred Nugen
 \1 homeostasis		ho-meo-sta-sis		% 2007/11, Fred Nugen
+\NewWordtrue
+\5 homonym		hom-o-nym s		% 2015/10, kb
+%% The unabridged has "homo-nym", but that doesn't seem right
+%% This hyphenation is from a 1958 Webster's Collegiate, seems better.
+\NewWordtrue
+\1 homonymic		hom-o-nym-ic		% 2017/07, kb
+\NewWordtrue
+\1 homonymous		ho-mon-y-mous		% 2015/10, kb
+\NewWordtrue
+\1 homonymy		ho-mon-y-my		% 2015/10, kb
+%%\NewWordtrue
+%%\5 homophone		ho-mo-phone s		% 2017/07, bnb after kb
+%%\NewWordtrue
+%%\1 homophonic		ho-mo-phonic		% 2017/07, bnb after kb
+\NewWordtrue
+\1 homophonous		ho-moph-o-nous		% 2017/07, bnb after kb
+\NewWordtrue
+\1 homophony		ho-moph-o-ny		% 2017/07, bnb after kb
 \1 homothetic		ho-mo-thetic
 \1 horseradish		horse-rad-ish
 \5 hotbed		hot-bed s		% 2003/04, bnb
@@ -602,27 +755,25 @@ The \TeX-usable output of the script is posted in the same area as
 \1 houndstooth		hounds-tooth		% 2012/02, Mico Loretan
 \1 hydrothermal		hy-dro-ther-mal		% 2005/03, bnb
 \1 hyperelasticity	hy-per-elas-tic-ity	% 2011/07, bnb, GSM/Rauch
-\5 hyphenation		hy-phen-a-tion s		% 2012/06, Mico Loretan
+\5 hyphenation		hy-phen-a-tion s	% 2012/06, Mico Loretan
 \1 hypoelasticity	hy-po-elas-tic-ity	% 2011/07, bnb, GSM/Rauch
 \1 hypothalamus 	hy-po-thal-a-mus 
-\NewWordtrue
 \5 iconographer		ico-nog-ra-pher s	% 2014/01, bnb, tex-hyphwn
-\NewWordtrue
 \1 iconographic		icon-o-graph-ic		% 2014/01, bnb, tex-hyphwn
-\NewWordtrue
 \1 iconography		ico-nog-ra-phy		% 2014/01, bnb, tex-hyphwn
 \1 ideals		ideals
 \1 ideographs		ideo-graphs
-%%% bb -- check this one
+%%\NewWordtrue
+%%\5 idiogram		id-io-gram s		% 2014/06
+\NewWordtrue
+\5 idiolect		id-i-o-lect s		% 2014/06
 \6 idiosyncrasy 	idio-syn-cra sy -sies
 \3 idiosyncratic(ally)	idio-syn-crat ic -i-cal-ly
 \5 igniter		ig-nit-er s
 \1 ignitor		ig-ni-tor
 \1 ignorespaces 	{\tt\bs ignore-spaces}
 \2 illiquid(ity)	il-li-quid -ity		% 2012/02, Mico Loretan
-\NewWordtrue
 \1 immunization 	im-mu-ni-za-tion	% 2013/09, TeX.sx #131754
-\NewWordtrue
 \1 immunomodulatory	im-mu-no-mod-u-la-to-ry	% 2013/09, TeX.sx #131754
 \5 impedance		im-ped-ance s
 \1 indubitable		in-du-bi-ta-ble		% 2002/08, bnb
@@ -630,11 +781,19 @@ The \TeX-usable output of the script is posted in the same area as
 \1 infinitesimal	in-fin-i-tes-i-mal
 \5 infrastructure	in-fra-struc-ture s
 \1 inputenc		{\tt input-enc}		% 2008/10, bnb; tb93schrod
-\5 installers		in-stall-er s		% 2003/06, bnb
+\NewWordtrue
+\1 insignificant	in-sig-nif-i-cant	% 2017/09, TeX.sx #392261
+\5 installer		in-stall-er s		% 2003/06, bnb
 \1 integrity		in-teg-rity		% 2005/11, bnb
 \1 interdisciplinary	in-ter-dis-ci-pli-nary
+\NewWordtrue
+\1 interelement		inter-ele-ment		% 2020/10, TeXbugs
 \1 intergalactic	in-ter-ga-lac-tic
 \5 interviewee		in-ter-view-ee s	% 2009/09, bnb, tb95
+\NewWordtrue
+\1 intractable	 	in-trac-ta-ble		% 2015/12, A. Siegel, GSM
+\NewWordtrue
+\1 intractability	in-trac-ta-bil-ity	% 2017/04, bnb, tex.sx chat
 \1 inutile		in-utile
 \1 inutility		in-util-i-ty
 \1 irrational		ir-ra-tio-nal		% 2012/07, bnb; surv/zemmour
@@ -642,26 +801,39 @@ The \TeX-usable output of the script is posted in the same area as
 \1 irrevocable		ir-rev-o-ca-ble
 \5 isogeometric		iso-geo-met-ric s	% 2007/11; Fred Nugen
 \1 isothermal		iso-ther-mal		% 2008/05, bnb
-\1 isotropy		isot-ropy		% 2001/01; S. Radford, 1993/02
 \1 isotropic		iso-trop-ic		% 2001/01; S. Radford, 1993/02
+\1 isotropy		isot-ropy		% 2001/01; S. Radford, 1993/02
 \3 itinerary(ies)	itin-er-ar y -ies
-\1 jeremiads		je-re-mi-ads
+\5 jeremiads		je-re-mi-ad s
+\NewWordtrue
+\1 junior		jun-ior 		% 2017/07, bnb, Vis Lang
 \5 keynote		key-note s		% 2005/04; kb list
 \5 keystroke		key-stroke s
-\NewWordtrue
 \1 kilonodes		kilo-nodes		% 2014/10; dek
 \1 kilning		kiln-ing
+\NewWordtrue
+\5 labyrinth		lab-y-rinth s		% 2017/04, bnb, tex.sx chat
+\NewWordtrue
+\1 labyrinthian		lab-y-rin-thi-an	% 2017/04, bnb, tex.sx chat
+\NewWordtrue
+\1 labyrinthine		lab-y-rin-thine		% 2017/04, bnb, tex.sx chat
 \1 laciest		lac-i-est
 \1 lamentable		lam-en-ta-ble
 \5 landscaper		land-scap-er s
-\2 larceny(ies,ist) 	lar-ce-n y,ies,ist
+\5 larcenist		lar-cen-ist s
+\3 larceny(ies) 	lar-ce-n y ies
 \5 leafhopper		leaf-hop-per s	% 2001/01, bnb, "life in amber"
 \5 leaflet		leaf-let s		% 2013/07, Mico Loretan
-\3 letterspace(s,d)	let-ter-space s d	% 2012/02, Mico Loretan
+\NewWordtrue
+\3 legacy(ies)		le-ga-c y ies		% 2020/04, kb
+\NewWordtrue
+\5 legate		leg-ate s		% 2020/04, kb
+\NewWordtrue
+\5 legation		le-ga-tion s		% 2020/04, kb
+\2 letterspace(s,d)	let-ter-space s,d	% 2012/02, Mico Loretan
 \1 letterspacing	let-ter-spac-ing
 \5 leukocyte	 	leu-ko-cyte s 		% 2010/08, tb98verna, 31#2
-\NewWordtrue
-\5 leukotriene		leu-ko-triene s		% 2013/09, TeX.sx #131754
+\5 leukotriene		leu-ko-tri-ene s	% 2013/09, TeX.sx #131754
 \5 lifespan		life-span s
 \5 lifestyle		life-style s            % 1999/03
 \1 liftoff		lift-off		% 2013/07, Mico Loretan
@@ -679,13 +851,25 @@ The \TeX-usable output of the script is posted in the same area as
 \1 lookahead		look-ahead		% 2012/03, tb103isambert, 33#1
 \1 loquacity		lo-quac-ity          % 1999/03
 \1 lovestruck           love-struck		% 2003/04, R.A.Reese
+\NewWordtrue
+\1 LuaTeX		Lua-TeX			% 2020/12, tex.sx/q/60435
+\NewWordtrue
+\1 LuaLaTeX		Lua-LaTeX		% 2020/12, tex.sx/q/60435
 \5 macroeconomic	macro-eco-nomic s
 \1 macroeconomy		macro-econ-omy		% 2012/02, Mico Loretan
-\1 makeindex		make-in-dex		% 2007/10, bnb
+\NewWordtrue
+\1 macros		mac-ros			% 2020/12, TUG 2020, tb128
+%\NewWordtrue
+\1 MakeIndex		Make-Index		% 2020/12, TUG 2020, tb128
+%\1 makeindex		make-in-dex		% 2007/10, bnb
+\NewWordtrue
+\5 malinvestment	mal-invest-ment s	% 2016/02, tex2002ans to tugboat
 \5 malapropism		mal-a-prop-ism s
 \1 manslaughter		man-slaugh-ter		% 2005/06, bnb
 \5 manuscript		man-u-script s
 \1 marginal		mar-gin-al
+\NewWordtrue
+\1 markup		mark-up			% 2020/12, TUG 2020, tb128
 \5 mathematician	math-e-ma-ti-cian s
 \1 mattes		mattes
 \1 medicaid		med-ic-aid
@@ -693,8 +877,9 @@ The \TeX-usable output of the script is posted in the same area as
 \1 mediocrities		medi-oc-ri-ties
 \2 megafauna(l)		mega-fau-na l		% 2012/03, bnb, SciAm
 \5 megalith		mega-lith s
-\NewWordtrue
 \1 meganodes		mega-nodes		% 2014/10; dek
+\NewWordtrue
+\1 mensch		mensch			% 2016/01; W. Lemberg, re tb114
 \1 metabolic		meta-bol-ic
 \5 metabolism		me-tab-o-lism s
 \5 metabolite		me-tab-o-lite s
@@ -708,14 +893,12 @@ The \TeX-usable output of the script is posted in the same area as
 \1 metatable		meta-table		% 2011/07, kb
 \1 metatables		meta-tables		% 2011/07, kb
 \1 metempsychosis	metem-psy-cho-sis	% 2012/10, bb
-\1 methamphetamine	meth-am-phet-a-mine	% 2009/10, cf. John Harper
-\1 methane		meth-ane		% 2005/01, Donald Arseneau
 \1 method		meth-od			% 2011/11, Herbert Voss
-\1 methylammonium	meth-yl-am-mo-nium	% 2009/10, John Harper
-\5 methylate		meth-yl-ate d		% 2009/10, John Harper
-\1 methylation		meth-yl-a-tion		% 2009/10, cf. John Harper
-\1 methylene		meth-yl-ene		% 2009/10, cf. John Harper
-\2 metropolis(es)	me-trop-o-lis es
+\NewWordtrue
+\3 methodology(ies)	meth-od-o-lo-g y ies	% 2018/06, Enrico Gregorio
+\NewWordtrue
+\2 methodological(ly)	meth-od-o-logical ly    % 2018/06, Enrico Gregorio
+\3 metropolis(es)	me-trop-o-l is es
 \5 metropolitan		met-ro-pol-i-tan s
 \5 microeconomic	micro-eco-nomic s
 \1 microeconomy		micro-econ-omy		% 2012/02, Mico Loretan
@@ -725,7 +908,7 @@ The \TeX-usable output of the script is posted in the same area as
 \1 microstructure	mi-cro-struc-ture	% 2012/02, Mico Loretan
 \1 midafternoon 	mid-after-noon		% 2013/07, Mico Loretan
 \1 millage		mill-age
-\1 milliliter		mil-li-liter
+\5 milliliter		mil-li-liter s
 \1 mimeographed 	mimeo-graphed
 \1 mimeographs		mimeo-graphs
 \1 mimicries		mim-ic-ries
@@ -738,7 +921,6 @@ The \TeX-usable output of the script is posted in the same area as
 \1 misogamy		mi-sog-a-my
 \5 mnemonic		mne-mon-ic s		% 2007/08, Karl Berry
 \1 modelling		mod-el-ling
-\NewWordtrue
 \1 molecular		mo-lec-u-lar		% 2013/09, TeX.sx #131754
 \5 molecule		mol-e-cule s
 \1 monarchs		mon-archs
@@ -763,16 +945,17 @@ The \TeX-usable output of the script is posted in the same area as
 \1 multiuser		multi-user\quad (better
 \tabalign		&\null\quad with explicit hyphen)\cr
 \5 namespace		name-space s		% 2007/09, K. Berry
-\1 neofields		neo-fields
+\5 neofield		neo-field s
 \5 neonazi		neo-nazi s
 \1 nephews		neph-ews		% 2003/12, bnb
 \3 nephrite(ic)		neph-rit e ic		% 2003/12, bnb
 \1 newest		new-est 		% 2001/12, bnb, 21#4
 \5 newsletter		news-let-ter s
 \1 nilpotent            nil-po-tent             % 2007/03, bnb
-\1 nitromethane		nitro-meth-ane		% 2005/01, Donald Arseneau
 \5 nodelist		node-list s		% 2008/08; bnb, tb93, Hagen
 \1 noname		no-name
+\NewWordtrue
+\1 nonarchimedean	non-ar-chi-me-dean	% 2018/07, bnb, tran
 \1 nonarithmetic	non-ar-ith-met-ic	% 2001/01; S. Levy, 1993/09
 \1 nonemergency 	non-emer-gency
 \1 nonequivariance	non-equi-vari-ance
@@ -783,15 +966,16 @@ The \TeX-usable output of the script is posted in the same area as
 \1 nonsmooth		non-smooth
 \2 nonuniform(ly)	non-uni-form -ly
 \1 nonzero		non-zero		% 2008/07; bnb, GSM/Rotman
-\1 norepinephrine	nor-ep-i-neph-rine
 \1 notwithstanding	not-with-stand-ing   % 1999/03
+\NewWordtrue
+\1 nucleosynthesis	nu-cleo-syn-the-sis	% 2017/02, Leonard Michlmayr
 \5 nucleotide		nu-cleo-tide s		% 2002/08; treasure chest
 \5 nutcracker		nut-crack-er s
 \1 oersteds		oer-steds
 \1 offline		off-line		% 2005/04; kb list
 \2 offload(s,ed)	off-load s,ed		% 2005/08, bnb
 \5 oligopolist		oli-gop-o-list s
-\3 oligopoly(ies)	oli-gop-ol y -ies
+\3 oligopoly(ies)	oli-gop-o-l y ies
 \3 omnipresent(ce)	om-ni-pres-en t ce	% 2007/06, bnb, Zapf in tb89
 \1 onomatopoeia		ono-mat-o-poe-ia	% 2008/07; bnb
 \1 onomatopoetic	ono-mat-o-po-et-ic	% 2008/07; bnb
@@ -799,8 +983,6 @@ The \TeX-usable output of the script is posted in the same area as
 \5 orangutan		orang-utan s
 \5 orthodontist 	or-tho-don-tist s
 \1 orthokeratology	or-tho-ker-a-tol-ogy
-\1 orthonitrotoluene	ortho-nitro-toluene
-\tabalign		&\null\quad (or-tho-ni-tro-tol-u-ene)\cr
 \5 overview		over-view s
 \1 oxidic		ox-id-ic
 \1 padding		pad-ding
@@ -808,66 +990,69 @@ The \TeX-usable output of the script is posted in the same area as
 \1 painlessly		pain-less-ly
 \5 palette		pal-ette s		% 2005/06, bnb
 %\1 palmate		palmate
-\1 parabola		pa-rab-ola
+\5 parabola		pa-rab-ola s
 \1 parabolic		par-a-bol-ic
 \1 paraboloid		pa-rab-o-loid
 \5 paradigm		par-a-digm s
 \5 parachute		para-chute s
-\1 paradimethylbenzene	para-di-methyl-benzene
-\tabalign		&\null\quad (para-di-meth-yl-ben-zene)\cr
-\1 parafluorotoluene	para-fluoro-toluene
-\tabalign		&\null\quad (para-flu-o-ro-tol-u-ene)\cr
 \1 paragrapher		para-graph-er
 \1 paralegal		para-le-gal
 \1 parallelism		par-al-lel-ism
 \1 paramagnetism	para-mag-net-ism
-\1 paramedic		para-medic
-\1 paramethylanisole	para-methyl-anisole
-\tabalign		&\null\quad (para-meth-yl-an-is-ole)\cr
+\5 paramedic		para-medic s
 \1 parametrization	pa-ram-e-tri-za-tion	% 2008/08, bnb, GSM/Montiel
 \1 parametrize		pa-ram-e-trize
 \1 paramilitary 	para-mil-i-tary
 \1 paramount		para-mount
+\NewWordtrue
+\1 passover		pass-over		% 2020.12, tex.sx/q/495669
 \1 pathogenic		path-o-gen-ic
 \2 peevish(ness)	peev-ish -ness
 \NewWordtrue
+\1 penalize		pen-al-ize		% 2016/03, F. Mittelbach
 \3 penalty(ies)		pen-al-t y ies		% 2014/09, F. Mittelbach
 \5 pentagon		pen-ta-gon s
+\NewWordtrue
+\3 perispomena(on)	peri-spome-n a on	% 2014/05
 \1 petroleum		pe-tro-le-um
-\1 phenolphthalein	phe-nol-phthalein	% 2006/05, John Harper
 \1 phenomenon		phe-nom-e-non
-\1 phenylalanine 	phenyl-ala-nine		% 2002/07, bnb, Science News
 \5 philatelist		phi-lat-e-list s
+\NewWordtrue
+\5 philosopher		phi-los-o-pher s	% 2018/08, bmb, maatext
+\NewWordtrue
+\1 philosophies 	phi-los-o-phies		% 2018/08, bmb, maatext
 \5 phoneme		pho-neme s              % 1999/03
 \1 phonemic		pho-ne-mic
 \1 phosphoric		phos-phor-ic
-\1 photographs		pho-to-graphs        % 1999/03
+\1 photographs		pho-to-graphs           % 1999/03
 \1 photooffset		pho-to-off-set  	% 2002/09, M. Brady, typo-l
-\1 phthalamic		phtha-lam-ic		% 2006/05, John Harper
-\1 phthalate		phthal-ate		% 2006/05, John Harper
-\1 phthisis		phthi-sis		% 2006/05, John Harper
+\NewWordtrue
+\1 physics		phys-ics		% 2017/07, bnb after kb
 \5 picador		pic-a-dor s
 \2 pipeline(s)		pipe-line s	% 2001/01, from N. Beebe, 1993/01
 \1 pipelining		pipe-lin-ing		% 2005/04; kb list
 \1 piranhas		pi-ra-nhas
 \1 placable		placa-ble
-\5 planthopper		plant-hop-per s	% 2001/01, bnb, "life in amber"
+\5 planthopper		plant-hop-per s		% 2001/01, bnb, "life in amber"
 \5 plateau		pla-teau s		% 2012/01, bnb
 \1 pleasance		pleas-ance
-\5 plugin		plug-in s	% 2001/06, M. Vulis paper, 21#3
+\5 plugin		plug-in s		% 2001/06, M. Vulis paper, 21#3
+\NewWordtrue
+\1 plurisubharmonic	pluri-sub-har-monic	% 2018/05, bnb
 \1 poltergeist		pol-ter-geist
-\2 polyandr(y,ous)	poly-an-dr y,ous	% 2007/10, bnb
+\3 polyandry(ous)	poly-an-dr y ous	% 2007/10, bnb
 \2 polydactyl(lic)	poly-dac-tyl -lic	% 2007/10, bnb
-\1 polyene		poly-ene
-\1 polyethylene		poly-eth-yl-ene
 \5 polygamist		po-lyg-a-mist s
 \1 polygonization	polyg-on-i-za-tion
-\2 polygyn(y,ous)	po-lyg-y-n y,ous	% 2007/10, bnb
+\3 polygyny(ous)	po-lyg-y-n y ous	% 2007/10, bnb
+\NewWordtrue
+\5 polynya		po-lyn-ya s		% 2018/07, bnb, Krill
 \5 polyp		pol-yp s
-\2 polyphon(y,ous)	po-lyph-o-n y,ous
+\3 polyphony(ous)	po-lyph-o-n y ous
 \1 polyphonic		poly-phon-ic		% 2007/10, bnb
-\1 polystyrene		poly-styrene
-\1 pomegranate		pome-gran-ate
+\NewWordtrue
+\1 polysemy		poly-se-my		% 2018/07, kb
+\5 pomegranate		pome-gran-ate s
 \1 poroelastic		poro-elas-tic
 \1 porous		por-ous
 \1 portable		por-ta-ble		% 2002/07, A. Lewenberg, 22#1
@@ -875,13 +1060,25 @@ The \TeX-usable output of the script is posted in the same area as
 \1 posthumous		post-hu-mous	% 2001/09, bnb
 \5 postscript		post-script s
 \1 postural		pos-tur-al
-\5 preamble		pre-am-ble s
 \NewWordtrue
+\1 potable		po-ta-ble		% 2018/07. bnb
+\NewWordtrue
+\5 potato		po-ta-to es		% 2020/09, bb, after kb
+\5 preamble		pre-am-ble s
 \1 predictable		pre-dict-able		% 2015/03, bnb, 36#1
 \NewWordtrue
+\5 predilection		predi-lec-tion s	% 2017/07, kb
 \1 prefers		pre-fers		% 2014/08, Karl Berry
 \tabalign {\tt preloaded} & pre-loaded \cr
+\NewWordtrue
+\5 premise		prem-ise s		% 2018/08, bmb, maatext
 \1 preparing		pre-par-ing
+\NewWordtrue
+\2 prepend(s,-ed,-ing)	pre-pend s,-ed,-ing 	% 2020/04, kb
+\NewWordtrue
+\5 preposition		prep-o-si-tion s 	% 2018/08, bmb, maatext
+\NewWordtrue
+\1 prepositional	prep-o-si-tional	% 2018/08, bmb, maatext
 \2 preprint(s)		pre-print s
 \5 preprocessor		pre-proces-sor s
 \1 presently		pres-ent-ly		% 2007/06, bnb
@@ -905,13 +1102,14 @@ The \TeX-usable output of the script is posted in the same area as
 \1 propelling		pro-pel-ling		% 2003/06, bnb
 \2 prohibitive(ly)	pro-hib-i-tive -ly
 \1 prosciutto		pro-sciut-to
-\NewWordtrue
 \5 prostaglandin	pros-ta-glan-din s 	% 2013/09, TeX.sx #131754
 \5 prostyle		pro-style s		% 2010/08, tb98verna, 31#2
 \2 protester(s)		pro-test-er s
 \2 protestor(s)		pro-tes-tor s
 \1 protolanguage	pro-to-lan-guage     % 1999/03
 \1 prototypal		pro-to-typ-al
+\NewWordtrue
+\5 provider		pro-vi-der s		% 2020/12, tex.sx/q/116872
 \2 province(s)		prov-ince s		% 2000/10, Scott Horne, 1993
 \1 provincial		pro-vin-cial		% 2000/10, Scott Horne, 1993
 \5 provirus		pro-virus es		% 2010/08, tb98verna, 31#2
@@ -923,6 +1121,8 @@ The \TeX-usable output of the script is posted in the same area as
 \1 pseudoforces 	pseu-do-forces
 \1 pseudographer	pseu-dog-ra-pher	% 2001/01
 \5 pseudogroup		pseu-do-group s		% 2001/01; S. Levy, 1993/09
+\NewWordtrue
+\5 pseudonumber 	pseu-do-num-ber s	% 2015/12, A. Siegel, GSM
 \5 pseudonym		pseu-do-nym s
 \5 pseudoword		pseu-do-word s
 \1 psychedelic		psy-che-del-ic
@@ -950,9 +1150,13 @@ The \TeX-usable output of the script is posted in the same area as
 \1 quasitrivial		qua-si-triv-ial		% 2004/07, bnb
 \5 quintessence		quin-tes-sence s
 \1 quintessential	quin-tes-sen-tial
+\NewWordtrue
+\1 QWERTY               QWERTY                  % 2017/06, tb119bigelow
 \1 rabbitry		rab-bit-ry
 \1 radiography		ra-di-og-ra-phy
 \2 raffish(ly)		raff-ish -ly
+\NewWordtrue
+\1 ragged		rag-ged			% 2017/06, kb
 \1 ramshackle		ram-shackle
 \1 ravenous		rav-en-ous
 \2 reallocate(s,d)	re-allo-cate s,d	% 2007/04, John Harper
@@ -963,7 +1167,7 @@ The \TeX-usable output of the script is posted in the same area as
 \5 rectangle		rec-tan-gle s
 \1 rectangular		rec-tan-gu-lar
 \2 redirect(ion)	re-di-rect -ion		% 2002/08, bnb
-\1 reducible            re-duc-ible	% 1999/10, G. Gratzer
+\1 reducible            re-duc-ible		% 1999/10, G. Gratzer
 \1 reecho		re-echo
 \1 reeducate		re-edu-cate		% 2011/02, dek
 \5 refugee		ref-u-gee s		% 2012/03, kb/bnb
@@ -987,16 +1191,23 @@ The \TeX-usable output of the script is posted in the same area as
 \5 robot		ro-bot s
 \6 robotic		ro-bot ic -ics
 \5 rooftop		roof-top s		% 2013/07, Mico Loretan
+\NewWordtrue
+\1 roundish		round-ish		% 2015/10, bnb, Chuck Bigelow
+\NewWordtrue
+\1 roundishness		round-ish-ness		% 2015/10, bnb, Chuck Bigelow
 \5 roundtable		round-table s
+\NewWordtrue
+\1 runnable		run-nable		% 2017/06, kb (run-na-ble)
 \5 salesclerk		sales-clerk s
 \3 saleswoman(en)	sales-wom an en
-\NewWordtrue
 \1 salient		sa-lient		% 2014/01, Karl Berry
 \1 salmonella		sal-mo-nel-la
 \1 saltation		sal-ta-tion		% 2000/10
 \1 sarsaparilla		sar-sa-par-il-la
 \5 satellite		sat-el-lite s		% 2011/01, Stephan Pleines
 \1 sauerkraut		sauer-kraut
+\NewWordtrue
+\5 scalar		sca-lar s		% 2017/03, bnb
 \1 scatological		scat-o-log-i-cal
 \3 sceneshift(er,ing)	scene-shift -er -ing	% 2013/07, Mico Loretan
 \1 scheduling		sched-ul-ing
@@ -1016,6 +1227,8 @@ The \TeX-usable output of the script is posted in the same area as
 \5 semiring		semi-ring s
 \1 semisimple		semi-sim-ple		% 2000/09, M. Doob
 \1 semiskilled		semi-skilled
+\NewWordtrue
+\1 semistable		semi-sta-ble		% 2018/7, bnb, from JAG
 \1 semitic		sem-itic		% 2005/09, Ron Whitney, 1990
 \5 sergeant		ser-geant s		% 2005/09, Scott Horne, 1993
 \1 seroepidemiological	sero-epi-de-mi-o-log-i-cal
@@ -1035,6 +1248,8 @@ The \TeX-usable output of the script is posted in the same area as
 \1 signage		sign-age		% 2013/05, bnb
 \2 singlespace(d)	single-space d		% 2012/02, Mico Loretan
 \1 singlespacing	single-spacing		% 2012/02, Mico Loretan
+\NewWordtrue
+\1 SIunits		SI-units		% 2017/01, tb118, Gratzer review
 \5 skyscraper		sky-scraper s
 \1 slnunicode		{\tt sln-uni-code}	% 2011/06, tb100, p.68 (LuaTeX)
 \5 smokestack		smoke-stack s
@@ -1044,6 +1259,8 @@ The \TeX-usable output of the script is posted in the same area as
 \5 sovereign		sov-er-eign s
 \1 spaces		spa-ces
 \1 specious		spe-cious
+\NewWordtrue
+\1 spectroscopy 	spec-tros-co-py		% 2015/09, kb, tb114
 \5 speller		spell-er s		% 2003/06, bnb
 \1 spelling		spell-ing		% 2003/06, bnb
 \1 spelunker		spe-lunk-er
@@ -1052,8 +1269,8 @@ The \TeX-usable output of the script is posted in the same area as
 \1 spheroidal		spher-oid-al
 \1 sphinges		sphin-ges
 \1 spicily		spic-i-ly
-\5 spinors		spin-or s
-\1 spokesman		spokes-man		% 2012/02, Mico Loretan
+\2 spinor(s)		spin-or s
+\3 spokesman(en)	spokes-m an en		% 2012/02, Mico Loretan
 \5 spokesperson		spokes-per-son s	% 2012/02, Mico Loretan
 \3 spokeswoman(en)	spokes-wom an en
 \2 sportscast(er)	sports-cast -er
@@ -1068,34 +1285,68 @@ The \TeX-usable output of the script is posted in the same area as
 \1 stealthily		stealth-ily
 \1 steeplechase		steeple-chase
 \1 stereographic	stereo-graph-ic		% 2001/01; S. Levy, 1993/09
+\NewWordtrue
+\1 sterility		ste-ril-i-ty		% 2020/12, TUG 2020, tb128
 \1 stochastic		sto-chas-tic
+\NewWordtrue
+\5 stoplist		stop-list s	% 2018/07, dek, "American Organist"
 \1 strangeness		strange-ness
 \1 straphanger		strap-hanger		% 2000/10
 \5 stratagem		strat-a-gem s
+\NewWordtrue
+\1 stretchability	stretch-abil-ity	% 2016/11, tb117wermuth
 \1 stretchier		stretch-i-er
 \1 striptease		strip-tease		% 2005/02, Flynn list
 \1 strongest		strong-est
 \1 stronghold		strong-hold
 \3 stupider(est)	stu-pid -er -est
+\NewWordtrue
+\5 stylesheet		style-sheet s		% 2020/12, TUG 2020, tb128
 \1 subdifferential	sub-dif-fer-en-tial	% 2000/02, M. Doob
 \5 subexpression	sub-ex-pres-sion s	% 2005/08, kb list
 \2 subnode(s)		sub-node s		% 2013/05, Stephan Stiller
 \5 subscriber 		sub-scrib-er s
+\NewWordtrue
+\5 subselect		sub-se-lect s		% 2017/09, Stephen Stiller (2013)
+\NewWordtrue
+\1 subselected  	sub-se-lected	 	% 2017/09, Stephen Stiller (2013)
+\NewWordtrue
+\5 subselection 	sub-se-lec-tion s 	% 2017/09, Stephen Stiller (2013)
 \1 subtables		sub-tables		% 2011/07, kb
 \1 summable		sum-ma-ble
 \5 superderivation	super-deri-va-tion s	% 2011/08, bnb, GSM/Musson2
 \1 superego		super-ego
 \1 superegos		super-egos
+\NewWordtrue
+\5 superellipse		super-el-lipse s	% 2015/10, bnb, Chuck Bigelow
+\NewWordtrue
+\1 superelliptical	super-ellip-ti-cal	% 2015/10, bnb, Chuck Bigelow
+\NewWordtrue
+\1 superelliptically	super-ellip-ti-cally	% 2015/10, bnb, Chuck Bigelow
+\NewWordtrue
+\1 superellipticalness	super-ellip-ti-cal-ness % 2015/10, bnb, Chuck Bigelow
+\NewWordtrue
+\1 supraordinate	su-pra-ordi-nate	% 2017/07, bnb, Vis Lang
 \5 supremacist		su-prem-a-cist s
 \1 surgery		sur-gery		% 2012/03, kb
-\1 surgeries		sur-ge-ries		% 2012/03, kb; cf. con-ge-ries
+\1 surgeries		sur-ger-ies		% 2012/03, kb; 2020/10, Win
 \1 surges		sur-ges 		% 2012/03, kb/bnb
 \1 surveillance		sur-veil-lance
 \1 swimmingly		swim-ming-ly
 \1 symptomatic		symp-to-matic
+\NewWordtrue
+\1 synchronicity	syn-chro-ni-city
 \1 synchromesh		syn-chro-mesh
 \1 synchronous		syn-chro-nous
 \1 synchrotron		syn-chro-tron
+\NewWordtrue
+\5 synonym		syn-o-nym s		% 2017/07, bnb after kb
+\NewWordtrue
+\1 synonymous		syn-on-y-mous		% 2017/07, bnb after kb
+\NewWordtrue
+\1 synonymy		syn-on-y-my		% 2017/07, bnb after kb
+\NewWordtrue
+\5 tableau		tab-leau x		% 2017/03, bnb
 \1 taffrail		taff-rail		% 2004/05; bnb
 \5 takeover		take-over s		% 2012/02, Mico Loretan
 \1 talkative		talk-a-tive
@@ -1108,34 +1359,70 @@ The \TeX-usable output of the script is posted in the same area as
 \1 temporarily		tem-po-rar-ily		% 1999/03
 \1 tenure		ten-ure
 \1 testbed		test-bed
-\NewWordtrue
 \1 teranodes		tera-nodes		% 2014/10; dek
-\1 tetrabutylammonium	tetra-butyl-ammo-nium	% 2009/10, John Harper
 \1 textheight		{\tt\bs text-height}	% 2008/05, bnb
 \1 textlength		{\tt\bs text-length}	% 2007/05, bnb
 \1 textwidth		{\tt\bs text-width}
 \1 thalamus		thal-a-mus
+\NewWordtrue
+\1 thermal		ther-mal		% 2020/12, tex.sx/q/358246
 \1 thermoelastic	ther-mo-elas-tic
+\NewWordtrue
+\1 thermoelasticity	ther-mo-elas-tic-ity	% 2017/02, bnb
+\NewWordtrue
+\5 thermometer		ther-mom-eter s 	% 2017/02, bnb
+\NewWordtrue
+\1 thermonuclear	ther-mo-nu-clear	% 2017/02, Leonard Michlmayr
+\NewWordtrue
+\3 thesis(es)		thes is es \thinspace*	% 2020/09; omit hyphen
+\NewWordtrue
+\5 tiger		ti-ger s		% 2020/12, tex.sx/q/523488
 \5 timestamp		time-stamp s
+\NewWordtrue
+\1 titanate		ti-ta-nate		% 2016/12, from tex.sx 342887
 \5 toolkit		tool-kit s
 \1 topographical	topo-graph-i-cal
 \5 topoisomerase	topo-iso-mer-ase s	% 2011/04, bnb, PSAPM 66
 \1 toques		toques
+\NewWordtrue
+\1 tractable	 	trac-ta-ble		% 2015/12, A. Siegel, GSM
 \1 traitorous		trai-tor-ous
+\NewWordtrue
+\1 transatlantic	trans-at-lan-tic	% 2018/07, bnb
 \5 transceiver		trans-ceiver s
-\3 transparency(ies)	trans-par-en-c y ies	% 2010/09, tb99scarso
+\NewWordtrue
+\5 transept		tran-sept s		% 2018/07, bnb
 \1 transgress		trans-gress
+\NewWordtrue
+\1 transpacific		trans-pacific		% 2018/07, bnb
+\3 transparency(ies)	trans-par-en-c y ies	% 2010/09, tb99scarso
+\NewWordtrue
+\2 transpile(s,d)	trans-pile s,d		% 2020/04, kb
+\NewWordtrue
+\5 transpiler		trans-pi-ler s		% 2020/04, kb
+\NewWordtrue
+\1 transpiling		trans-pil-ing		% 2020/04, kb
+%\NewWordtrue
+%\1 transseries		trans-series		% 2018/07, bnb, proc14204
 \2 transversal(s)	trans-ver-sal s
 \5 transvestite		trans-ves-tite s
+\NewWordtrue
+\1 trapezium		tra-pe-zium		% 2018/07, bnb
+\NewWordtrue
+\5 trapezoid		trap-e-zoid s		% 2018/07, bnb
+\NewWordtrue
+\1 trapezoidal		trap-e-zoi-dal		% 2018/07, bnb
 \1 traversable		tra-vers-a-ble
 \2 traversal(s)		tra-ver-sal s
-\1 triethylamine	tri-ethyl-amine		% 2005/01, Donald Arseneau
 \1 treacheries		treach-eries
 \1 tribesman		tribes-man		% 2005/09, Scott Horne, 1993
+\NewWordtrue
+\1 trigonometric	trig-o-no-met-ric	% 2018/08, bmb, maatext
+\NewWordtrue
+\1 trigonometry 	trig-o-nom-e-try	% 2018/08, bmb, maatext
 %\5 triple		tri-ple s		% 2013/05, bnb
 %% omitting triple and tripling because dictionary hyphens don't make sense
 \5 triplet		trip-let s		% 2013/05, bnb
-\NewWordtrue
 \2 triplex(es)		tri-plex -es		% 2014/02, bnb
 %\NewWordtrue
 %\1 tripling		tri-pling		% 2013/05, bnb
@@ -1143,11 +1430,14 @@ The \TeX-usable output of the script is posted in the same area as
 \5 turkey		tur-key s
 \5 turnaround		turn-around s
 \1 typal		typ-al
+\NewWordtrue
+\1 ubermensch		uber-mensch		% 2017/07; bnb after W. Lemberg
 \1 unattached		un-at-tached
 \1 unerringly		un-err-ing-ly
 \3 unfriendly(ier)	un-friend-l y i-er
-\NewWordtrue
 \1 uninstantiated	un-in-stan-ti-at-ed	% 2014/05, Stephan Stiller
+\NewWordtrue
+\3 unpredictable(y)	un-pre-dict-a-bl e y	% 2015/03, bnb, 36#1
 \1 vaguer		vaguer
 \1 vaudeville		vaude-ville
 \1 vicars		vic-ars
@@ -1172,7 +1462,7 @@ The \TeX-usable output of the script is posted in the same area as
 \1 whitesided		white-sided
 \5 whitespace		white-space s
 \1 widespread		wide-spread
-\5 wingspan		wing-span s	% 2003/04, bnb
+\5 wingspan		wing-span s		% 2003/04, bnb
 \1 wingspread		wing-spread
 \1 witchcraft		witch-craft
 \1 wordspacing		word-spac-ing
@@ -1189,17 +1479,24 @@ The \TeX-usable output of the script is posted in the same area as
 \begingroup
 %\ninepoint
 \eightpoint
-\NewWordtrue
 \1 Alexander		Alex-an-der		% 2015/05, J. Wright
 \NewWordtrue
+\1 Alexandria		Alex-an-dria		% 2018/08, bmb, maatext
 \1 Alexandrine		Alex-an-drine		% 2015/05, J. Wright
 \1 algebraische 	al-ge-brai-sche
 \1 Algonquian		Al-gon-quian		% 2012/10, bnb, tb105thiele
 \1 Algonquin		Al-gon-quin		% 2012/10, bnb
 \1 Allegheny		Al-le-ghe-ny
+\NewWordtrue
+\2 Andalucia(n) 	An-da-lu-cia n		% 2018/05, bnb
+\NewWordtrue
+\2 Andalusia(n) 	An-da-lu-sia n		% 2018/05, bnb
 \1 Apollodorus		Apol-lo-dorus		% 2012/03, Pablo Rodriguez
+\NewWordtrue
+\1 ArborText		Arbor-Text \thinspace*	% 2020/09, ChT, tb129flynn
 \1 Arkansas		Ar-kan-sas
-\5 ATPase		ATP-ase s		% 2005/02; Engelbert Buxbaum
+\NewWordtrue
+\1 Athens		Ath-ens			% 2020/09, kb
 \1 Auflage		Auf-lage		% 2013/04, TeX.sx #108026
 \1 Australasian 	Aus-tral-asian
 \1 automatisierter	auto-ma-ti-sier-ter
@@ -1207,21 +1504,40 @@ The \TeX-usable output of the script is posted in the same area as
 \1 Bedienung		Be-die-nung
 \1 Bembo                Bembo			% 1999/09/09
 \1 bibliographische	bi-blio-gra-phi-sche
+\NewWordtrue
+\1 Bigelow		Big-elow		% 2016/08, Karl
 \1 Boston		Bos-ton
+\NewWordtrue
+\1 Bowditch		Bow-ditch		% 2018/08, bmb, maatext
+\NewWordtrue
+\1 Bringhurst		Bring-hurst		% 2016/08, Karl
+\NewWordtrue
+\1 Brinkmann		Brink-mann		% 2018/08, bmb, maatext
 \1 Brownian		Brown-ian
 \1 Brunswick		Bruns-wick
 \1 Budapest		Bu-da-pest
 \1 Burckhardt		Burck-hardt		% 2012/02, Mico Loretan
 \NewWordtrue
+\1 Canada		Can-a-da 		% 2018/08, bmb, maatext
+\NewWordtrue
+\1 Canadian		Ca-na-di-an 		% 2018/08, bmb, maatext
 \1 Caratheodory 	Cara-theo-dory		% 2014/09, bnb, AMS Transactions
 \1 Caribbean		Car-ib-bean
+\NewWordtrue
+\1 Carnegie		Car-ne-gie		% 2017/09, kb
 \1 Charleston		Charles-ton
 \1 Charlottesville	Char-lottes-ville
 \1 Chester		Ches-ter		% 2012/02, Mico Loretan
 \1 Chiang		Chiang			% 2012/02, Mico Loretan
+\NewWordtrue
+\1 Chicago		Chi-ca-go 		% 2018/08, bmb, maatext
 \1 Chichester		Chich-es-ter		% 2012/02, Mico Loretan
 \1 Cohen		Cohen			% 2012/02, Mico Loretan
+\NewWordtrue
+\1 Columbian		Co-lum-bi-an		% 2017/03, bnb
 \1 Columbia		Co-lum-bia
+\NewWordtrue
+\1 comparaison		com-pa-rai-son		% 2016/09, tb116, C. Gagn\'e
 \1 Czechoslovakia	Czecho-slo-va-kia
 \1 Delaware		Del-a-ware		% 2005/04; kb list
 \1 Dijkstra		Dijk-stra
@@ -1241,24 +1557,44 @@ The \TeX-usable output of the script is posted in the same area as
 \1 Florida		Flor-i-da
 \1 Floridian		Flor-i-d-ian
 \1 Forschungsinstitut	For-schungs-in-sti-tut
+\NewWordtrue
+\1 Franklin		Frank-lin		% 2018/08, bmb, maatext
 \1 FreeBSD		Free-BSD		% 2005/06, bnb
 \1 funktsional		funk-tsional
 \1 Gaussian		Gauss-ian
+\NewWordtrue
+\1 Geoffrey		Geof-frey		% 2016/08, bnb, tb116 author
+\NewWordtrue
+\1 Geogebra		Geo-gebra		% 2018/07, bnb, tb121
 \1 Gesellschaft 	Ge-sell-schaft		% 2010/12; bnb, GSM/Bottazzini
 \1 Ghostscript		Ghost-script		% 2003/09; bnb, tb75becc
 \1 GhostView		Ghost-View		% 2003/09; bnb, tb75becc
 \1 Gottfried		Gott-fried		% 2013/06, bnb, tex.sx
 \1 Gottlieb		Gott-lieb		% 2012/02, Mico Loretan
+\NewWordtrue
+\1 Granjon	 	Gran-jon		% 2020/09, kb
 \1 Grassmannian		Grass-mann-ian		% 2003/08; bnb, GSM/Landsberg
 \1 Greifswald		Greifs-wald
 \1 Grothendieck		Grothen-dieck
 \1 Grundlehren		Grund-leh-ren
 \1 Hadamard		Ha-da-mard		% 2004/04; bnb, conm/Vogelius
 \1 Haifa		Hai-fa
-\1 Hamiltonian		Hamil-ton-ian
+\3 Hamilton(ian)	Ham-il-to n -nian	% 2018/08, bmb, maatext
+\NewWordtrue
+\1 Haralambous		Hara-lam-bous		% 2017/09, kb (2013)
+\NewWordtrue
+\1 Haskell		Has-kell		% 2018/08, bmb, maatext
+\NewWordtrue
+\1 Hedrick		Hed-rick		% 2018/08, bmb, maatext
+\NewWordtrue
+\1 Hegelian		Hegel-ian		% 2018/08, kb
 \1 Helsinki		Hel-sinki
 \1 Hermitian		Her-mit-ian
+\NewWordtrue
+\1 Hewlett 		Hew-lett		% 2019/06, Frank Romano
 \1 Hibbs		Hibbs
+\NewWordtrue
+\1 Hilbert		Hil-bert		% 2018/08, bmb, maatext
 \1 Hoefler		Hoef-ler		% 2013/05; bnb, tb107bigelow
 \1 Hoekwater		Hoek-water		% 2010/09; Karl
 \1 Hokkaido		Hok-kai-do
@@ -1268,19 +1604,31 @@ The \TeX-usable output of the script is posted in the same area as
 \1 January		Jan-u-ary
 \1 Japanese		Ja-pa-nese
 \1 JavaScript		Java-Script		% 2010/08; kb
+\NewWordtrue
+\1 Jeremiah		Je-re-miah		% 2018/08, bmb, maatext
+\NewWordtrue
+\1 Joseph		Jo-seph			% 2020/12, TUG 2020, tb128
 \1 Jungian		Jung-ian		% 2012/02, Mico Loretan
 \1 Kadomtsev		Kad-om-tsev
 \1 Kansas		Kan-sas
 \1 Karlsruhe		Karls-ruhe
 \1 Keynesian		Keynes-ian		% 2012/02, Mico Loretan
+\NewWordtrue
+\1 Knuthian		Knuth-ian		% 2015/10, bnb, Chuck Bigelow
 \1 Korteweg		Kor-te-weg
 \1 Krishna		Krishna
 \1 Krishnaism		Krish-na-ism
 \1 Krishnan		Krish-nan		% 2002/02, tran2986el
 \1 Kronecker		Kron-ecker		% 2012/02, Mico Loretan
+\NewWordtrue
+\1 Kunstakademie	Kunst-aka-de-mie	% 2017/10, bnb, Economist
 \1 Lancaster		Lan-cas-ter
+\NewWordtrue
+\1 Laplace		La-place		% 2018/08, bmb, maatext
 \1 Legendre		Le-gendre
 \1 Leicester		Leices-ter
+\NewWordtrue
+\1 Lester		Les-ter 		% 2018/08, bmb, maatext
 \2 Lipschitz(ian)	Lip-schitz -ian
 \1 Lojban		Loj-ban		% 2003/04, W. Lemberg (TB 23:1, p 46)
 \1 Louisiana		Lou-i-si-ana
@@ -1288,40 +1636,68 @@ The \TeX-usable output of the script is posted in the same area as
 \1 MacBeth		MacBeth			% 2012/02, Mico Loretan
 \1 MacOS		Mac-OS			% 2005/06, bnb
 \1 Magellan		Ma-gel-lan		% 2012/02, Mico Loretan
-\1 Malayalam		Ma-la-ya-lam		% 2006/08, Alex A.J. (TB 27:1)
+\1 Malayalam		Mal-a-ya-lam		% 2006/08, Alex A.J. (TB 27:1)
 \1 Manchester		Man-ches-ter
 \1 Markovian		Mar-kov-ian
 \1 Marktoberdorf	Markt-ober-dorf  % 2001/02, W. Lemberg (TB 21:2, p 106)
 \1 Massachusetts	Mass-a-chu-setts
+\1 Maximilian		Max-i-mil-ian		% 2020/12, Mike Dworski
 \1 Maxwell		Max-well		% 2003/11; bnb (TB78, Lawrence)
+\NewWordtrue
+\2 Mesopotamia(n) 	Mes-o-po-ta-mia n	% 2020/09, kb
 \1 Methodist		Meth-od-ist		% 2011/11, cf. Herbert Voss
 \1 Methodism		Meth-od-ism		% 2011/11, cf. Herbert Voss
 \1 Microsoft		Mi-cro-soft		% 2003/08; bnb (TUG 2003, Gray)
 \1 Minkowski		Min-kow-ski		% 2009/03; bnb, MBK/Borovik3
 \1 Minneapolis		Min-ne-ap-o-lis
 \1 Minnesota		Min-ne-sota
+\NewWordtrue
+\1 Mojca		Moj-ca			% 2017/07, kb (TUG 2017)
+\NewWordtrue
+\1 Monaco		Mon-aco 		% 2020/12, kb
+\5 Montagnard		Mon-ta-gnard s		% 2020/12, Mike Dworski
 \1 Montreal		Mont-real		% 2005/09; Scott Horne, 1993
+\NewWordtrue
+\1 Morawetz		Mora-wetz		% 2018/07, bnb, Bulletin
+\NewWordtrue
+\1 Mordell		Mor-dell		% 2018/08, bmb, maatext
 \1 Moscow		Mos-cow
 \1 Nachrichten          Nach-rich-ten
 \1 Nashville		Nash-ville
 \1 NetBSD		Net-BSD 		% 2005/06, bnb
 \1 Netscape		Net-scape		% 2003/03; bnb
+\NewWordtrue
+\1 Nicholas		Nich-o-las		% 2018/08, bmb, maatext
 \1 Nietzsche		Nietz-sche		% 2012/16, Pablo Rodriguez
 \1 Nijmegen		Nij-me-gen
 \1 Noetherian		Noe-ther-ian
 \1 Noordwijkerhout	Noord-wijker-hout
+\NewWordtrue
+\1 Northampton		North-amp-ton		% 2018/08, bmb, maatext
 \1 Notowidigdo		Noto-wi-digdo		% 2012/02, Mico Loretan
 \1 November		No-vem-ber
 \1 Obstfeld		Obst-feld		% 2012/02, Mico Loretan
 \1 OpenBSD		Open-BSD		% 2005/06, bnb
 \1 OpenOffice		Open-Office		% 2005/06, bnb
 \1 Oreopoulos		Oreo-pou-los		% 2012/02, Mico Loretan
+\NewWordtrue
+\1 Packard	 	Pack-ard		% 2019/06, Frank Romano
+\NewWordtrue
+\1 Pakistan		Paki-stan		% 2020/12, TUG 2020, tb128
 \1 Palatino		Pala-tino		% 2003/09; bnb, tb75becc
 \1 Palermo		Pa-ler-mo
+%\NewWordtrue
+%\1 Paschall		Paschall		% 2018/08, bmb, maatext
+%%\NewWordtrue
+%%\1 Petrograd		Pet-ro-grad		% 2020/12, Mike Dworski
 \1 Petrovski\u\i{}	Pe-trov-ski\u\i{}	% 2002/07; R. Sizer
+\NewWordtrue
+\1 Phineas		Phin-eas		% 2020/12
 \1 Pfaffian		Pfaff-ian		% 2003/08; bnb, GSM/Landsberg
 \1 Philadelphia		Phil-a-del-phia
 \1 philosophische       phi-lo-so-phi-sche	% 2003/03; bnb; update, 2005/09
+\NewWordtrue
+\1 Portuguese		Por-tu-guese		% 2018/08, bmb, maatext
 \1 Poincare		Poin-care
 \1 Potentialgleichung	Po-ten-tial-glei-chung
 \1 Potomac		Po-to-mac		% 2014/01, from tex.sx 66528
@@ -1333,9 +1709,16 @@ The \TeX-usable output of the script is posted in the same area as
 \1 rathskeller		raths-kel-ler
 \1 Ravikumar		Ravi-kumar		% 2012/02, Mico Loretan
 \1 Reichlin		Reich-lin		% 2012/02, Mico Loretan
+\NewWordtrue
+\1 Richard		Rich-ard 		% 2018/08, bmb, maatext
 \1 Riemannian		Rie-mann-ian
+\1 Robespierre		Robes-pierre		% 2020/12, Mike Dworski
+\NewWordtrue
+\1 Rochester		Ro-ches-ter		% 2017/02, bnb; see Dor-ches-ter
 \1 Rydberg		Ryd-berg
 \1 Schimmelpfennig	Schim-mel-pfen-nig	% 2012/02, Mico Loretan
+\NewWordtrue
+\1 ScholarTeX		Scholar-TeX \thinspace*	% 2020/09, ChT, tb129flynn
 \1 schottische		schot-ti-sche
 \1 Schrodinger		Schro-din-ger
 \1 Schwabacher		Schwa-ba-cher
@@ -1344,19 +1727,30 @@ The \TeX-usable output of the script is posted in the same area as
 \1 Schwert		Schwert			% 2012/02, Mico Loretan
 \1 September		Sep-tem-ber
 \1 Shoreditch		Shore-ditch		% 2009/10; bnb (MOP poster)
+\NewWordtrue
+\1 Singapore		Singa-pore		% 2017/08, bnb (GUT poster)
+\NewWordtrue
+\5 Singaporean		Singa-po-re-an s	% 2017/08, bnb (GUT poster)
 \1 Skoup\'y		Skoup\'y		% 2004/11; Karl Berry
+\NewWordtrue
+\1 Southampton		South-amp-ton		% 2018/08, bmb, maatext
 \1 Stokessche		Stokes-sche
 \1 Stuttgart		Stutt-gart
 \1 Susquehanna		Sus-que-han-na
-\1 Tauberian		Tau-ber-ian          % 1999/03
+\NewWordtrue
+\1 Sylvester		Syl-ves-ter		% 2018/08, bmb, maatext
+\1 Tauberian		Tau-ber-ian     	% 1999/03
 \1 technische		tech-ni-sche
 \1 Tennessee		Ten-nes-see
 \1 Thiruvanandapuram	Thiruv-ananda-puram	% 2011/10, bnb, Kaveh Bazargan
 \1 Tolchester		Tol-ches-ter		% 2009/10, bnb
 \1 Tomaszewski		To-ma-szew-ski		% 2004/05; TUG 2003 proceedings
+\NewWordtrue
+\1 ToUnicode		To-Unicode		% 2020/02, kb
 \1 Toyota		Toyo-ta			% 2012/02, Mico Loretan
-\1 typographique	ty-po-graphique      % 1999/03
+\1 typographique	ty-po-graphique 	% 1999/03
 \1 Ukrainian		Ukrain-ian
+\5 Venezuela		Ven-e-zu-e-la n		% 2020/12, Mike Dworski
 \1 verallgemeinerte	ver-all-ge-mei-nerte
 \1 Vereinigung		Ver-ei-ni-gung
 \1 Verteilungen 	Ver-tei-lun-gen
@@ -1369,11 +1763,24 @@ The \TeX-usable output of the script is posted in the same area as
 \1 Werkzeuge		Werk-zeuge		% 2013/06, bnb, tex.sx
 \1 Werner		Wer-ner		% 2004/09; W. Lemberg (TB 24:1, p 75)
 \1 Wertherian		Wer-ther-ian
+\NewWordtrue
+\1 Wikipedia		Wiki-pe-dia		% 2016/07, from tex.sx 320222
+\NewWordtrue
+\1 Wilczynski		Wil-czyn-ski		% 2018/08, bmb, maatext
 \2 William		Will-iam s		% 2012/03, kb
 \1 Winchester		Win-ches-ter
+\NewWordtrue
+\1 Wingdings		Wing-dings		% 2020/12, kb
 \1 Wirtschaft		Wirt-schaft		% 2000/10
 \1 wissenschaftlich	wis-sen-schaft-lich
 \1 Wolffian		Wolff-ian		% 2012/02, Mico Loretan
+\NewWordtrue
+\1 Wolfskehl		Wolfs-kehl		% 2018/08, bmb, maatext
+\NewWordtrue
+\1 Woodrow		Wood-row		% 2018/08, bmb, maatext
+\NewWordtrue
+\1 Xerox		Xerox\thinspace*	% 2020/04, kb
+\1 xiiith		xiiith			% 2001/11; R. Sizer
 \1 xviiith		xviiith			% 2001/11; R. Sizer
 \1 xviith		xviith			% 2001/11; R. Sizer
 \1 xxiiird		xxiiird			% 2001/11; R. Sizer
@@ -1381,6 +1788,61 @@ The \TeX-usable output of the script is posted in the same area as
 \tabalign \rlap{\tt Yingy-ong Shuxue Jisuan}&Ying-yong Shu-xue Ji-suan\cr
 \1 Zealand		Zea-land
 \1 Zeitschrift		Zeit-schrift
+\endgraf
+\endgroup
+
+\head * Words specific to chemistry and related texts *
+
+\begingroup
+%\ninepoint
+\eightpoint
+\5 acrylamide		acryl-amide s		% 2002/07, bnb, Science News
+\1 acrylaldehyde	acryl-alde-hyde		% 2002/07, bnb, Science News
+\5 amphetamine		am-phet-a-mine s
+\5 ATPase		ATP-ase s		% 2005/02; Engelbert Buxbaum
+\NewWordtrue
+\1 corticosteroid	cor-ti-co-steroid	% 2017/11; bnb
+\1 dichloromethane	di-chloro-meth-ane	% 2005/01, Donald Arseneau
+\1 ethane		eth-ane			% 2005/01, Donald Arseneau
+\1 ethylamine		eth-yl-am-ine		% 2009/10, cf. John Harper
+\5 ethylate		eth-yl-ate d		% 2009/10, cf. John Harper
+\1 ethylene		eth-yl-ene
+\1 ethynyl		ethy-nyl		% 2009/10, cf. John Harper
+\1 ethynylation		ethy-nyl-a-tion		% 2009/10, cf. John Harper
+\1 fluorocarbon		fluoro-car-bon		% 2005/01, Donald Arseneau
+\1 methamphetamine	meth-am-phet-a-mine	% 2009/10, cf. John Harper
+\1 methane		meth-ane		% 2005/01, Donald Arseneau
+\1 methylammonium	meth-yl-am-mo-nium	% 2009/10, John Harper
+\5 methylate		meth-yl-ate d		% 2009/10, John Harper
+\1 methylation		meth-yl-a-tion		% 2009/10, cf. John Harper
+\1 methylene		meth-yl-ene		% 2009/10, cf. John Harper
+\1 nitromethane		nitro-meth-ane		% 2005/01, Donald Arseneau
+\1 norepinephrine	nor-ep-i-neph-rine
+\1 orthonitrotoluene	ortho-nitro-toluene
+\tabalign		&\null\quad (or-tho-ni-tro-tol-u-ene)\cr
+\1 paradimethylbenzene	para-di-methyl-benzene
+\tabalign		&\null\quad (para-di-meth-yl-ben-zene)\cr
+\1 parafluorotoluene	para-fluoro-toluene
+\tabalign		&\null\quad (para-flu-o-ro-tol-u-ene)\cr
+\1 paramethylanisole	para-methyl-anisole
+\tabalign		&\null\quad (para-meth-yl-an-is-ole)\cr
+\1 phenolphthalein	phe-nol-phthalein	% 2006/05, John Harper
+\1 phenylalanine 	phenyl-ala-nine		% 2002/07, bnb, Science News
+\1 phthalamic		phtha-lam-ic		% 2006/05, John Harper
+\1 phthalate		phthal-ate		% 2006/05, John Harper
+\1 phthisis		phthi-sis		% 2006/05, John Harper
+\1 polyene		poly-ene
+\1 polyethylene		poly-ethy-lene
+\NewWordtrue
+\5 polypeptide		poly-pep-tide s		% 2016/06
+\1 polystyrene		poly-styrene
+%\NewWordtrue
+%\1 polyurethane 	polyurethane		% 2020/12, chat.tex.sx
+\NewWordtrue
+\1 polyvinyl		poly-vinyl		% 2020/12, chat.tex.sx
+\1 tetrabutylammonium	tetra-butyl-ammo-nium	% 2009/10, John Harper
+\1 triethylamine	tri-ethyl-amine		% 2005/01, Donald Arseneau
+
 \endgraf
 \endgroup
 
