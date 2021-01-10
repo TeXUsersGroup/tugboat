@@ -19,7 +19,7 @@
 print "% Hyphenation exceptions for US English,\n";
 print "% based on hyphenation exception log articles in TUGboat.\n";
 print "%\n";
-print "% Copyright 2008 TeX Users Group.\n";
+print "% Copyright 2021 TeX Users Group.\n";
 print "% You may freely use, modify and/or distribute this file.\n";
 print "%\n";
 print "% This is an automatically generated file.  Do not edit!\n";

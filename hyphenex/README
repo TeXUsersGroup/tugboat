@@ -1,12 +1,25 @@
-This is http://mirror.ctan.org/info/digests/tugboat/hyphenex.
+$Id$
+This is https://ctan.org/pkg/hyphenex.
 
-This directory contains scripts to generate hyphenation exceptions,
-hyphenex.pl and hyphenex.sh, written by Werner Lemberg.  The two scripts
-(shell and Perl) do exactly the same thing, namely convert the TUGboat
-master list (available as tb0hyf.tex) to a TeX-readable file (available
-as ushyphex.tex).
+This directory contains the TeX-readable file of hyphenation exceptions
+for U.S. English: ushyphex.tex. It is one long call to \hyphenation{...}.
 
-If questions, problems, or suggestions for additional exceptions, please
-email tugboat@tug.org.
+It is maintained by the TUGboat editors. If questions, problems, or
+suggestions for additional exceptions, please email tugboat@tug.org.
 
-This material is either public domain or under an all-permissive license.
+Also here is the master file for the exceptions, maintained as a TUGboat
+article: tb0hyf.tex. Updates are printed in TUGboat from the time to
+time; the exact list is given in the file.
+
+Also here are scripts to generate ushyphex.tex from tb0hyf.tex:
+hyphenex.pl and hyphenex.sh, written by Werner Lemberg. The two scripts
+(shell and Perl) do exactly the same thing.
+
+All of the material in hyphenex is either public domain or under an
+all-permissive license.
+
+P.S. There is another set of hyphenation patterns and exceptions for
+English, known as "usenglishmax", which defines many additional
+hyphenation points. It is included in the hyph-utf package:
+https://ctan.org/pkg/hyph-utf8. It was created by Gerard Kuiken and is
+unrelated to the material here.

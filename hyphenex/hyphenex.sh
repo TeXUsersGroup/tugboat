@@ -20,7 +20,7 @@ cat >/tmp/sed.$$ <<SED_EOF
 % Hyphenation exceptions for US English,\\
 % based on hyphenation exception log articles in TUGboat.\\
 %\\
-% Copyright 2008 TeX Users Group.\\
+% Copyright 2021 TeX Users Group.\\
 % You may freely use, modify and/or distribute this file.\\
 %\\
 % This is an automatically generated file.  Do not edit!\\
