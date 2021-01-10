@@ -22,7 +22,7 @@ sh-ushyphex.tex: hyphenex.sh $(input_tex)
 	sh $< <$(input_tex) >$@ || rm -f $@
 
 tb0hyf.pdf: $(input_tex)
-	TEXINPUTS=../plain: pdftex '\nonstopmode\input $<'
+	TEXINPUTS=../plain: texfot pdftex '\nonstopmode\input $<'
 
 h = hyphenex
 dist: all check
