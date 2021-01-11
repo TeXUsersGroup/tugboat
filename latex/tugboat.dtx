@@ -446,7 +446,6 @@
 %
 % The section-numbering style, so that we can allow the same heading
 % layout as in the plain macros.
-% \changes{v1.4a}{1996/09/14}{Added nonumber and numbersec (default)
 % options}
 %
 %    \begin{macrocode}
@@ -463,6 +462,17 @@
 \DeclareOption{runningoff}{\AtEndOfClass{\@tubrunningoff}}
 \DeclareOption{runningminimal}{\AtEndOfClass{\@tubrunningminimal}}
 \DeclareOption{runningfull}{\AtEndOfClass{\@tubrunningfull}}
+%    \end{macrocode}
+%
+% Usually we want to print the doi if [final], else not.
+% But sometimes we want to omit it even if [final], namely when we're
+% posting a review or other item early.
+% 
+%    \begin{macrocode}
+\newif\iftubomitdoioption
+\DeclareOption{omitdoi}{%
+   \tubomitdoioptiontrue
+}
 %    \end{macrocode}
 %
 % \begin{macro}{\if@tubtwocolumn}
@@ -3381,7 +3391,8 @@
 %
 \def\tubdoiprefix{10.47397/tb} % the number crossref assigned us
 %
-\def\tubtypesetdoi{\iftubfinaloption % do this if [final], even if pageno>900
+\def\tubtypesetdoi{\iftubomitdoioption\else % if not explicit omission ...
+ \iftubfinaloption % do this if [final], even if pageno>900
   \vbox to 0pt{% don't impact normal layout
     \edef\thedoi{\ifnum\value{page}>900 xnot\fi % but make url invalid if >900
                  doi.org/\tubdoiprefix/\volno-\issno/\jobname}%
@@ -3392,6 +3403,7 @@
     \vss
   }%
   \global\let\tubtypesetdoi\@empty % only do it once, no matter what.
+ \fi
 \fi}
 %
 %

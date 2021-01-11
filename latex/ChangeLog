@@ -1,3 +1,9 @@
+2021-01-10  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (omitdoi): new option.
+	(\iftubomitdoioption): conditional for it.
+	(\tubtypesetdoi): check it.
+
 2020-12-13  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\tbUTF): following - optional, but if present,
