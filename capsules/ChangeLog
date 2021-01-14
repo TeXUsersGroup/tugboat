@@ -9,7 +9,7 @@
 	* capcrossref.pl (crossref_create_landing_page): wording.
 	* cr-copy-bbl-abs: handle abstracts, better reporting.
 	* cr-landing-bbl-abs: better reporting.
-	(update_landing_abs): new fn, handle abstracts via ltx2unitext.
+	(update_landing_abs): new fn, handle abstracts via ltx2unitxt.
 	(system_mv): new fn to run mv.
 
 2021-01-02  Karl Berry  <karl@freefriends.org>

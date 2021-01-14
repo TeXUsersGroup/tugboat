@@ -6,7 +6,7 @@
 use strict; use warnings;
 
 # qqq --entities";
-my $ltx2unitext = "ltx2unitext -c crossref/ltx2crossrefxml-tugboat.cfg";
+my $ltx2unitxt = "ltx2unitxt -c crossref/ltx2crossrefxml-tugboat.cfg";
 
 exit (&main ());
 
@@ -193,7 +193,7 @@ sub update_landing_abs {
         print $temp_fh "<p><b>Abstract</b>:\n";
         
         # convert TeX abstract to text, and insert paragraph markers.
-        my $out = `$ltx2unitext $abs`;
+        my $out = `$ltx2unitxt $abs`;
         $out =~ s/^\s*//; # removing leading whitespace, especially newlines
         $out =~ s/\s*$//; # might as well do trailing too.
 #warn "got: $out---end start\n";
@@ -206,7 +206,7 @@ sub update_landing_abs {
         my $out_with_p = join ("</p>\n<p>", @out);  # html paragraph
         print $temp_fh $out_with_p;
         print $temp_fh "</p>\n"; # close open <p> from head
-        die "$ltx2unitext failed" if $?;
+        die "$ltx2unitxt failed" if $?;
       } else {
         print $temp_fh $_;
       }
