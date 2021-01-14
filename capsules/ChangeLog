@@ -1,3 +1,17 @@
+2021-01-13  Karl Berry  <karl@freefriends.org>
+
+	* cr-do-issue: new script to handle the overall crossref process
+	for both issue.xml and landing pages.
+	* Makefile (crossref_iss): separate from testiss and lastiss.
+	(cr_*): rename working directories to crossref/dirN.DESC.
+	(crl, cro): new convenience targets for running cr-do-issue.
+	Remove previous drafts of crossref processing.
+	* capcrossref.pl (crossref_create_landing_page): wording.
+	* cr-copy-bbl-abs: handle abstracts, better reporting.
+	* cr-landing-bbl-abs: better reporting.
+	(update_landing_abs): new fn, handle abstracts via ltx2unitext.
+	(system_mv): new fn to run mv.
+
 2021-01-02  Karl Berry  <karl@freefriends.org>
 
 	* Makefile (cr_temp, cr_process): change names to dir1.auto

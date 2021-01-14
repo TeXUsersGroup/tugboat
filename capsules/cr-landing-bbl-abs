@@ -5,11 +5,14 @@
 
 use strict; use warnings;
 
+# qqq --entities";
+my $ltx2unitext = "ltx2unitext -c crossref/ltx2crossrefxml-tugboat.cfg";
+
 exit (&main ());
 
 sub main {
   if (@ARGV != 2) {
-    warn <<END_USAGE; # a hint as to what's happening ...
+    warn <<END_USAGE; # just a hint as to what's happening.
 Usage: $0 [CROSSREF.xml] [CROSSREF_WORKING_DIR]
 
 In CROSSREF_WORKING_DIR/*.html (Crossref landing) files,
@@ -20,11 +23,12 @@ END_USAGE
   }
   
   my %citations = &read_crossref_xml ($ARGV[0]);
-  my $cnt = &update_landing_bbl ($ARGV[1], %citations);
+  my $bbl_cnt = &update_landing_bbl ($ARGV[1], %citations);
+  my $abs_cnt = &update_landing_abs ($ARGV[1]);
   
-  print "$0: $cnt landing page(s) updated.\n";
-  # we should never have no citations or abstracts in a whole journal issue?
-  exit ($cnt == 0);
+  print "$0: inserted $bbl_cnt bbl(s), $abs_cnt abstract(s): $ARGV[1]\n";
+  # should always have both citations and abstracts in a whole journal issue.
+  exit ($bbl_cnt == 0 || $abs_cnt == 0);
 }
 
 
@@ -99,7 +103,7 @@ sub update_landing_bbl {
 
     while (<$landing_fh>) {
       if (/REPLACE-WITH-BIBLIOGRAPHY/) {
-        print $temp_fh "<p><b>References</b>:\n<ol>\n";
+        print $temp_fh "<p><b>References</b>:</p>\n<ol>\n";
         for my $cite (@{$citations{$article}}) {
           $cite =~ s/^\s+//;
           $cite =~ s/\s+$//;
@@ -138,7 +142,7 @@ sub update_landing_bbl {
               $newcite .= $word;
             }
           }
-          print $temp_fh "<li>$newcite\n";
+          print $temp_fh "<li>$newcite</li>\n";
         }
         print $temp_fh "</ol>\n";
       } else {
@@ -148,12 +152,7 @@ sub update_landing_bbl {
     close ($landing_fh) || warn "close($landing_fname) failed: $!";
     close ($temp_fh) || warn "close($temp_fname) failed: $!";
     
-    # one of many ways to move the temp file back to real.
-    # we don't care that it's not atomic.
-    my $cmd = "mv $temp_fname $landing_fname";
-    my $ret = system ($cmd);
-    die "system($cmd) failed, status $ret: $!\n" if $ret;
-
+    &system_mv ($temp_fname, $landing_fname);
     $updated++;
     delete $citations{$article};
   }
@@ -166,6 +165,71 @@ sub update_landing_bbl {
 }
 
 
+# Update the LANDING_DIR/ARTICLE.html files with the abstracts from
+# LANDING_DIR/ARTICLE.abs. The .abs files are in TeX. We convert them on
+# the fly with the same LaTeX::ToUnicode code used by ltx2crossrefxml.pl.
+# 
+# Although the crossref schema supports including abstracts, it does not
+# seem worth the trouble. Conversion of this free form text is error-prone,
+# and we wouldn't want to upload problematic text and then have to fix
+# it later. Easier just to keep the abstracts on the landing pages,
+# which we can merely regenerate locally.
+# 
+sub update_landing_abs {
+  my ($landing_dir) = @_;
+  my $updated = 0;
+
+  for my $abs (glob ("$landing_dir/*.abs")) {
+    (my $landing_fname = $abs) =~ s/\.abs$/.html/;
+    open (my $landing_fh, $landing_fname)
+    || die "open($landing_fname) failed: $!";
+    
+    (my $article = $abs) =~ s,.*/,,;
+    my $temp_fname = "$landing_dir/$article.temp";
+    open (my $temp_fh, ">$temp_fname") || die "open($temp_fname) failed: $!";
+
+    while (<$landing_fh>) {
+      if (/REPLACE-WITH-ABSTRACT/) {
+        print $temp_fh "<p><b>Abstract</b>:\n";
+        
+        # convert TeX abstract to text, and insert paragraph markers.
+        my $out = `$ltx2unitext $abs`;
+        $out =~ s/^\s*//; # removing leading whitespace, especially newlines
+        $out =~ s/\s*$//; # might as well do trailing too.
+#warn "got: $out---end start\n";
+        # blank lines separate paragraphs; assume no stray other whitespace
+        my @out = split (/\n\n+/, $out);
+#for my $p (@out) {
+#  warn "para: $p---end para\n";
+#}
+#warn "---end all paras.\n";
+        my $out_with_p = join ("</p>\n<p>", @out);  # html paragraph
+        print $temp_fh $out_with_p;
+        print $temp_fh "</p>\n"; # close open <p> from head
+        die "$ltx2unitext failed" if $?;
+      } else {
+        print $temp_fh $_;
+      }
+    }
+    close ($landing_fh) || warn "close($landing_fname) failed: $!";
+    close ($temp_fh) || warn "close($temp_fname) failed: $!";
+
+    &system_mv ($temp_fname, $landing_fname);
+    $updated++;
+  }
+  return $updated;
+}
+
+
+# just call mv to move the temp file back to real.
+# doesn't matter that it's not atomic, etc.
+#
+sub system_mv {
+  my $cmd = "mv @_";
+  my $ret = system ($cmd);
+  die "system($cmd) failed, status $ret: $!\n" if $ret;
+}
+
 sub debug {
   #print @_;
 }

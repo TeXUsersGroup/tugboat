@@ -1,3 +1,15 @@
+2021-01-13  Karl Berry  <karl@freefriends.org>
+
+	* Makefile: rename directories.
+	* README-landing.txt: new doc.
+	* README: doc updates:
+	* dir0.capout,
+	* dir1.lndout,
+	* dir2.process,
+	* dir3.uploaded: new names for working directories.
+	* ltx2crossrefxml-tugboat.cfg: handle html output for \tbsurl and
+	\tbhurl, and terminate control words properly.
+
 2021-01-02  Karl Berry  <karl@freefriends.org>
 
 	* dir1.auto/: rename from rpi/,

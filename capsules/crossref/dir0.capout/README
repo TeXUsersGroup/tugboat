@@ -1,0 +1,14 @@
+$Id: README 321 2020-12-05 23:26:12Z karl $
+.rpi/.html files written by captub for TUB crossref processing. Public domain.
+Originally written 2020 Karl Berry.
+
+See ../README (i.e., the README in the crossref/ subdirectory) for the
+general story on our doi setup.
+
+This crossref/dir0.capout subdirectory is written into by the capsule
+processing script (captub), specifically by the function
+capcrossref.pl::crossref_write_files. It contains the rpi files
+describing each article and the initial version of the html landing pages.
+
+The files written here are temporary and intermediate, and are not
+committed to version control. They're cleaned on every run of cr-do-issue.

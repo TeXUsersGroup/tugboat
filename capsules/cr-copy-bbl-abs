@@ -4,7 +4,11 @@
 # 
 # As a first step toward preparing the <citation_list> elements for the
 # Crossref upload (see ltx2crossrefxml, crossref/README, etc.), we copy
-# any bbl files for a given issue $1 to the temporary holding directory $2.
+# any bbl and abstract files for a given issue $1 to the temporary
+# holding directory $2.
+# 
+# We're going to assume there are no spaces in filenames, etc.,
+# cp supports -p, etc.
 
 if test $# -ne 2; then
   echo "Usage: $0 CAPSULE.txt OUTPUTDIR" >&2
@@ -51,14 +55,29 @@ if test $bbl_count -eq 0; then
   echo "$0: no .bbl files found under: $issdir" >&2
   exit 1
 fi
+#
+abs_count=`ls -1 $issdir/*/abs.tex 2>/dev/null | wc -l`
+if test $abs_count -eq 0; then
+  echo "$0: no abs.tex files found under: $issdir" >&2
+  exit 1
+fi
 
-# We intentionally do not erase existing *.bbl or move them aside;
-# let another level (the target in ./Makefile) do that.
+# We intentionally do not erase existing files or move them aside;
+# let another level (the cr-do-issue script) do that. Which it does.
 # 
-if cp -f "$issdir"/*/*.bbl $outdir/; then :; else
+if cp -pf $issdir/*/*.bbl $outdir/; then :; else
   echo "$0: copy of bbl files failed, goodbye." >&2
   exit 1
 fi
 
-echo "$0: $bbl_count bbl file(s) copied."
+# For the abstracts, we want to add the tbNNNident prefix. We don't use
+# it with the source abs.tex files for the sake of completion (and simplicity).
+# 
+for a in $issdir/*/abs.tex; do
+  ident=`basename \`dirname "$a"\``
+  dest=$outdir/tb${seqno}${ident}.abs
+  cp -pf "$a" "$dest" || exit 1
+done  
+
+echo "$0: $bbl_count bbl(s) and $abs_count abstract(s) copied: $outdir"
 exit 0

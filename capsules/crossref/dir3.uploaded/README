@@ -1,11 +1,11 @@
 $Id$
-.rpi and .xml files saved for posterity. Public domain.
+crossref-related files saved for posterity. Public domain.
 Originally written 2020 Karl Berry.
 
 See ../README (i.e., the README in the crossref/ subdirectory) for the
-general story on our doi story and ../Makefile for the exact steps.
+general story on our doi setup.
 
 The files here are what has been uploaded to Crossref. They are saved
 here in the event that corrections are necessary, so that it's not
 necessary to go through all the regeneration steps. They shouldn't be
-changed otherwise.
+changed except to fix mistakes and re-upload, by hand.

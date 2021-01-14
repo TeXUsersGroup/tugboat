@@ -1,0 +1,157 @@
+#!/bin/sh
+# $Id$
+# Public domain.
+# 
+# Overall preparation of an issue for Crossref, including the XML to be
+# uploaded (but don't actually do the upload) and generation of lnding
+# pages (but don't install them).
+# 
+# The main complication is the additional files for the bibliographies
+# and abstracts. We copy them from the TUGboat issue source directory.
+# Because these can be quite free-form on the TeX side, we have to allow
+# for possible hand-editing for Crossref purposes, and thus avoid
+# overwriting.
+# 
+# That means that if the content on the TeX side substantively changes,
+# the new bbl/abs would have to be updated by hand, or the existing
+# files (in the cr_processdir below) removed. This script won't update
+# them once they exist. Since the idea is that we only do this for real
+# after the issue is completely done and at the printer, this shouldn't
+# be a problem in practice.
+
+verbose=: # or echo
+
+# bogus cmdline parsing, but all we need.
+if test "x$1" = x--landing-only; then
+  landing_only=true
+  shift
+else
+  landing_only=false
+fi
+
+if test $# -ne 4; then
+  echo "$0: expected 4 non-option arguments, got $#: $*" >&2
+  cat >&@ <<END_USAGE
+Usage: $0 [--landing-only] CAPSULEFILE CAP-OUTDIR LND-OUTDIR CROSSREFXMLFILE
+
+qqq
+END_USAGE
+  exit 1
+fi
+
+capsule=$1 # capsule source file
+if test ! -r "$capsule"; then
+  echo "$0: capsule source file not readable: $capsule" >&2
+  exit 1
+fi
+
+cap_outdir=$2 # destination for captub output (rpi, initial landing)
+if test ! -d "$cap_outdir"; then
+  echo "$0: capsule output not a directory: $cap_outdir" >&2
+  exit 1
+fi
+
+lnd_outdir=$3  # destination for landing files
+if test ! -d "$lnd_outdir"; then
+  echo "$0: landing output not a directory: $lnd_outdir" >&2
+  exit 1
+fi
+
+crossrefxml_file=$4 # file might not exist yet
+cr_processdir=`dirname "$crossrefxml_file"` # but its directory should
+if test ! -d "$cr_processdir"; then
+  echo "$0: crossref process area not a directory: $cr_processdir" >&2
+  exit 1
+fi
+
+#  Function to run command specified as args, verbosely; die on failure.
+# 
+run_cmd ()
+{
+  if "$@"; then
+    $verbose "$0: run succeeded: $@"
+  else
+    echo "$0: run failed: $@" >&2
+    exit 1
+  fi
+}
+
+#  start of main program.
+
+# copy all bbl and abs files from the tub issue source dir to the
+# landing generation dir.
+rm -f "$lnd_outdir"/tb* # clean destination directory
+run_cmd ./cr-copy-bbl-abs "$capsule" "$lnd_outdir"/
+
+# copy new (but not existing) bbl/abs from landing dir to xmlprocess dir,
+# 
+cnt_xmlprocess_preserved=0
+cnt_xmlprocess_copied=0
+#
+for lf in "$lnd_outdir"/*.abs "$lnd_outdir"/*.bbl; do
+  pf=`echo "$lf" | sed "s,$lnd_outdir,$cr_processdir,"`
+  base=`basename "$pf"`
+  if test -e "$pf"; then
+    $verbose "$0: exists in process, no copy: $base"
+    cnt_xmlprocess_preserved=`expr $cnt_xmlprocess_preserved + 1`
+  else
+    $verbose "$0: not in process, copying from landing: $base"
+    cp -pf "$lf" "$pf" || exit 1
+    cnt_xmlprocess_copied=`expr $cnt_xmlprocess_copied + 1`
+  fi
+done
+echo "$0: bbl/abs->$cr_processdir: $cnt_xmlprocess_preserved preserved, $cnt_xmlprocess_copied copied."
+
+# copy any previously-existing (that is, possibly hand-edited) bbl/abs
+# from xmlprocess back to landing.
+# 
+cnt_landing_unchanged=0
+cnt_landing_copied=0
+#
+for pf in "$cr_processdir"/*.abs "$cr_processdir"/*.bbl; do
+  lf=`echo "$pf" | sed "s,$cr_processdir,$lnd_outdir,"`
+  base=`basename "$pf"`
+  if cmp -s "$pf" "$lf"; then
+    $verbose "$0: same in process and landing, no copy: $base"
+    cnt_landing_unchanged=`expr $cnt_landing_unchanged + 1`
+  else
+    echo "$0: different in process, copying to landing: $base"
+    cp -pf "$pf" "$lf" || exit 1
+    cnt_landing_copied=`expr $cnt_landing_copied + 1`
+  fi
+done
+echo "$0: bbl/abs->$lnd_outdir: $cnt_landing_unchanged unchanged, $cnt_landing_copied copied."
+
+# often we need to make and remake the landing pages while working on
+# the content; no need to do the capsule and xml processing every time.
+if ! $landing_only; then
+
+  # For crossref purposes, when we run captub we don't care about the
+  # generated toc web page, we just want the rpi files and the initial
+  # landing pages (containing placeholders).
+  rm -f "$cap_outdir"/tb* # clean destination directory
+  run_cmd ./captub --crossref="$cap_outdir" $capsule >/dev/null
+
+  # the .rpi files should never need to be hand-edited,
+  # so can just overwrite in our processdir:
+  cp -pf "$cap_outdir"/*.rpi "$cr_processdir"/ || exit 1
+
+  # make the crossref issue.xml file; uses the rpi and bbl files.
+  run_cmd make -C crossref issue
+
+fi # ! landing_only
+
+# start with the initial landing pages written by captub.
+cp -pf "$cap_outdir/"*.html "$lnd_outdir"/ || exit 1
+
+# update the landing pages with the bbl text from the 
+# crossref xml file, and with the abstracts copied above.
+run_cmd ./cr-landing-bbl-abs "$crossrefxml_file" "$lnd_outdir"/
+
+# if the landing pages contain any literal backslashes, something went wrong.
+if fgrep '\' $lnd_outdir/*.html; then
+  echo "$0: backslashes in generated landing pages, goodbye." >&2
+  exit 1
+fi
+
+exit 0

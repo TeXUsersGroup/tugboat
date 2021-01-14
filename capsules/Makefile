@@ -21,6 +21,7 @@ default check: one #all-diff
 # publishing a TUGboat issue; see the README.karl file on tug.org.
 testiss = 129
 lastiss = 129
+crossref_iss = 129
 
 # use different temp dir on different machines.
 mydir := $(shell ls ~karl/public_html 2>/dev/null)
@@ -38,53 +39,34 @@ one:
 	  test -z "$$unparsed" || { echo "$$unparsed" >&2; exit 1; }; \
 	test -z "$(profopt)" || $(profcmd)
 
-#  Deal with crossref.
+#  Processing for crossref.
 # 
-# This directory is where we target all automated work.
-cr_temp = crossref/dir1.auto
+# This directory is where captub outputs the initial landing pages and .rpi.
+cr_capout = crossref/dir0.capout
 #
-# This directory is for the files from which we make the crossref upload,
-# possibly after hand-editing:
-cr_process = crossref/dir2.process
-cr1:
-	# therefore we should clean out everything in $(cr_temp) to start.
-	rm -f $(cr_temp)/*.rpi $(cr_temp)/*.bbl $(cr_temp)/*.html
-	#
-	# process the capsule file, generating .rpi files
-	# and intermediate landing pages.
-	$(MAKE) more_options=--crossref=$(cr_temp) one
-	#
-	# the .rpi files should never need to be hand-edited,
-	# so just overwrite:
-	cp -pf $(cr_temp)/*.rpi $(cr_process)/
-	#
-	# copy in the bbl and abs files from the tub issue source dir.
-	./cr-copy-bbl-abs tb$(testiss)capsule.txt $(cr_temp)/
-	#
-	# but only copy the bbl's into process/ once,
-	# since we may need to hand-edit those.
-	yes n | cp -ip $(cr_temp)/*.bbl $(cr_process)/
-	#
-	# make the crossref output.xml file; uses the rpi and bbl files.
-	$(MAKE) -C crossref
-	#
-	# update the landing pages with the bbl text from the crossref xml,
-	# and the abstracts from the files copied into temp.
-	./cr-landing-bbl-abs $(cr_process)/output.xml $(cr_temp)
-	#
-	# the landing pages should be final now, and not need any
-	# hand-editing, so copy into process dir.
-	cp -pf $(cr_temp)/*.html $(cr_process)/
-	#
-	# qqq upload to test crossref
-	# qqq install landing files on web site
-	# qqq upload to real crossref
-	# qqq archive uploaded files in crossref/uploaded
+# This directory is where we target the automated generation of landing pages.
+cr_lndout = crossref/dir1.lndout
+#
+# This directory is for the files from which we make the xml file to
+# crossref to upload. The possibly hand-edited bbl and abs are here.
+cr_xmlprocess = crossref/dir2.process
+#
+# What we pass to cr-do-issue.
+cr_args = tb$(crossref_iss)capsule.txt $(cr_capout) $(cr_lndout) \
+          $(cr_xmlprocess)/issue.xml
 
-crbat:
-	cp -pf $(cr_process)/tb*.html $(cr_temp)
-	./cr-landing-bbl-abs $(cr_process)/output.xml $(cr_temp)
-	tail -n 15 $(cr_temp)/tb129talbot*.html
+crl: # just landing pages
+	cr-do-issue --landing-only $(cr_args)
+cro: # full crossref run
+	cr-do-issue $(cr_args)
+#
+# qqq upload to test crossref
+# qqq install landing files on web site
+# qqq upload to real crossref
+# qqq archive uploaded files in crossref/uploaded
+
+crxml:
+	$(MAKE) -C crossref
 	
 # 
 out = contents*.html

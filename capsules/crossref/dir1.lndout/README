@@ -1,0 +1,14 @@
+$Id$
+.rpi files written by TUB capsule processing. Public domain.
+Originally written 2020 Karl Berry.
+
+See ../README (i.e., the README in the crossref/ subdirectory) for the
+general story on our doi setup.
+
+This crossref/dir1.lndout subdirectory is written into by the
+../../cr-do-issue script (in the capsules/ directory), and by the other
+scripts it calls. It contains the final version of the html landing
+pages, and the abs/bbl files which get included in them.
+
+The files written here are intended to be temporary, and are not
+committed to version control.
