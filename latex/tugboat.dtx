@@ -916,7 +916,8 @@
 %    \begin{macrocode}
 \def\tubreflect#1{%
   \@ifundefined{reflectbox}{%
-    \TBError{A graphics package must be loaded for \string\XeTeX}%
+    \TBError{A graphics package must be loaded to use \string\XeTeX}
+            {Load graphicx or graphics.}%
   }{%
     \ifdim \fontdimen1\font>0pt
       \raise 1.75ex \hbox{\kern.1em\rotatebox{180}{#1}}\kern-.1em
@@ -2975,7 +2976,7 @@
   \def\tubverb@meta##1>{\meta{##1}}
 %    \end{macrocode}
 %
-% The default verbatim defines `'<>,- as active characters to do
+% The default verbatim defines `'<>,- as active characters to
 % stop ligatures; remove <> from the list so we get normal characters.
 % Just hope that the CM <> ligatures aren't used.
 %    \begin{macrocode}
