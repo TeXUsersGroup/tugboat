@@ -59,14 +59,19 @@ crl: # just landing pages
 	cr-do-issue --landing-only $(cr_args)
 cro: # full crossref run
 	cr-do-issue $(cr_args)
+
+# kludge to replace doi urls with local urls, so we can easily click
+# through the list of "next doi" links before uploading.
+crw:
+	cd $(cr_lndout) && perl -pi.bak -e 's,"https://doi.org/10.47397/tb/41-3/(.*?)","$$1.html",g' *.html
+
+crxml:
+	$(MAKE) -C crossref
 #
 # qqq upload to test crossref
 # qqq install landing files on web site
 # qqq upload to real crossref
 # qqq archive uploaded files in crossref/uploaded
-
-crxml:
-	$(MAKE) -C crossref
 	
 # 
 out = contents*.html

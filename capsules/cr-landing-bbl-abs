@@ -5,8 +5,8 @@
 
 use strict; use warnings;
 
-# qqq --entities";
-my $ltx2unitxt = "ltx2unitxt -c crossref/ltx2crossrefxml-tugboat.cfg";
+my $ltx2unitxt = "ltx2unitxt -c crossref/ltx2crossrefxml-tugboat.cfg"
+                 . "  --html --entities";
 
 exit (&main ());
 
@@ -16,8 +16,10 @@ sub main {
 Usage: $0 [CROSSREF.xml] [CROSSREF_WORKING_DIR]
 
 In CROSSREF_WORKING_DIR/*.html (Crossref landing) files,
-replace bibliography placeholders with the actual bbl text
-taken from CROSSREF.xml.
+1) replace bibliography placeholders with the actual bbl text
+   taken from CROSSREF.xml, and also
+2) replace abstract placeholds with the abstract texts taken from
+   CROSSREF_WORKING_DIR/ARTICLE.abs.
 END_USAGE
     exit ($ARGV[0] ne "--help");
   }
@@ -77,7 +79,7 @@ sub read_crossref_xml {
     }
   }
   
-  die "ended in middle of journal_article, should not happen: $xml_fname"
+  die "xml ended in middle of journal_article, should not happen: $xml_fname"
     if $in_article;
   close ($xml_fh) || warn "$0: close($xml_fname) failed: $!\n";
   
@@ -103,7 +105,7 @@ sub update_landing_bbl {
 
     while (<$landing_fh>) {
       if (/REPLACE-WITH-BIBLIOGRAPHY/) {
-        print $temp_fh "<p><b>References</b>:</p>\n<ol>\n";
+        print $temp_fh "<p><b>References</b>:</p>\n<ol class=\"negskip\">\n";
         for my $cite (@{$citations{$article}}) {
           $cite =~ s/^\s+//;
           $cite =~ s/\s+$//;
@@ -111,15 +113,16 @@ sub update_landing_bbl {
           # build a new citation string, making urls into links.
           my $newcite = "";
           for my $word (split (" ", $cite)) {
-#warn "checking $word\n";
-            # try to detect http urls, with or without a protocol,
+            #warn "checking $word\n";
+
+            # try to detect http(s) urls, with or without a protocol,
             # possibly followed by a period or comma.
             my ($prot,$urlbase) = "";
             
             # protocol is specified.
             if ($word =~ m!^https?://!) {
               ($prot,$urlbase) = ($word =~ m!^(https?)://(\S+)!);
-#warn " got explicit $prot, urlbase $urlbase\n";
+              #warn " got explicit $prot, urlbase $urlbase\n";
 
             # no protocol; domain name just alphanumeric and -,
             # must be at least two chars. (Don't worry about x.org.)
@@ -128,17 +131,17 @@ sub update_landing_bbl {
                      && $1 ne "sty") {
               $prot = "https";
               $urlbase = $word;
-#warn " got implicit urlbase $urlbase\n";
+              #warn " got implicit urlbase $urlbase\n";
             }
             
+            $newcite .= " " if $newcite; # single spaces between words
             if ($prot) {
-#warn " got prot $prot, urlbase $urlbase\n";
-              # just drop trailing period or comma, it won't be missed
+              #warn " got prot $prot, urlbase $urlbase\n";
+              # just drop trailing period or comma, more confusion than help
               $urlbase =~ s/[.,]$//;
               my $url = "$prot://$urlbase";
-              $newcite .=  qq! <a href="$url">$urlbase</a>!;
+              $newcite .=  qq!<a href="$url">$urlbase</a>!;
             } else {
-              $newcite .= " " if $newcite;
               $newcite .= $word;
             }
           }
@@ -194,15 +197,11 @@ sub update_landing_abs {
         
         # convert TeX abstract to text, and insert paragraph markers.
         my $out = `$ltx2unitxt $abs`;
-        $out =~ s/^\s*//; # removing leading whitespace, especially newlines
-        $out =~ s/\s*$//; # might as well do trailing too.
-#warn "got: $out---end start\n";
+        $out =~ s/^\s+//; # removing leading whitespace, especially newlines
+        $out =~ s/\s+$//; # might as well do trailing too.
+
         # blank lines separate paragraphs; assume no stray other whitespace
         my @out = split (/\n\n+/, $out);
-#for my $p (@out) {
-#  warn "para: $p---end para\n";
-#}
-#warn "---end all paras.\n";
         my $out_with_p = join ("</p>\n<p>", @out);  # html paragraph
         print $temp_fh $out_with_p;
         print $temp_fh "</p>\n"; # close open <p> from head

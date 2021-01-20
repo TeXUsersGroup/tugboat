@@ -19,29 +19,16 @@ sub crossref_write_files {
     my %cap = %{$capsules{$pageno}};
     &debug_hash ("cap doi for $pageno", %cap);
     
-    # We will not create doi's for items that don't have an author --
-    # the covers, editorial page, other miscellany. We may eventually
-    # need a sharper test, but seems to suffice for now.
-    next if ! $cap{"author"};
-    
-    # Our doi pattern is almost the item url, but with tb/ a directory
-    # and the extension removed. For example,
-    # a url of /TUGboat/tb41-3/tb129pres.pdf
-    # becomes a doi of 10.47397/tb/41-3/tb129pres
-    # (where 10.47397 is the prefix assigned to us by Crossref).
-    # 
-    (my $url_stem = $cap{"url"}) =~ s,\.[^.]+$,,;   # remove extension
-    $url_stem =~ s,^.*/TUGboat/,,;                  # remove leading /TUGboat/
-    (my $doi = $url_stem) =~ s,^tb,tb/,;            # change tb/ to "dir"
-    $doi =~ s,^,10.47397/,;                         # our crossref prefix
-
-    # &crossref_verify_doi ($doi); # qqq including correct tbNNN number
+    # Compute doi, used as basis for the rpi file name, etc.
+    # If no doi, go on to next.
+    my $doi = &doi_of_capsule (\%cap);
+    next if ! $doi;
 
     # Open the .rpi file. We name it by the doi "basename" plus .rpi, in
     # the $OPT{crossref} subdirectory. There are so many rpi files (one
     # per article), it's nicer not to have them cluttering this
-    # capsules/ directory, which is already too cluttered anyway. We
-    # assume the crossref/rpi/ subdir exists.
+    # capsules/ directory, which is already too cluttered anyway.
+    # We assume the crossref output directory exists.
     # 
     (my $rpi = $doi) =~ s,^.*/,>$::OPT{"crossref"}/,;
     $rpi .= ".rpi";
@@ -250,8 +237,8 @@ END_LANDING
   # whether the article is public.
   my $availability = $cap{url} =~ m,/members/, 
     ? 'now available to TUG members (<a href="/join.html">join TUG</a>);'
-      . "\nwill be publicly available after the next issue is published."
-    : "publicly available now.";
+      . "\nwill be publicly available after the next issue is published"
+    : "publicly available now";
   print $LANDING <<END_LANDING;
 
 <p><b><a href="$cap{url}"
@@ -277,10 +264,21 @@ END_LANDING
 <p><b>Publication</b>: <a href="/TUGboat/tb$volno_0-$issno/"
 >TUGboat volume $volno, number $issno</a> ($issue{year}),
 $pages_label&nbsp;$cap{pageno_print}</p>
+END_LANDING
+
+  my $prev_item = &item_link ($cap{pageno}, -1, "previous",$issue{"capsules"});
+  my $next_item = &item_link ($cap{pageno}, +1, "next", $issue{"capsules"});
+  # either prev or next might be empty, but never both.
+  die "both prev next items empty?? for $cap{pageno}" 
+    if ! $prev_item && ! $next_item;
+  my $prev_next_items = $prev_item;
+  $prev_next_items .= "\n- " if $prev_item && $next_item;
+  $prev_next_items .= $next_item;
+  print $LANDING <<END_LANDING;
 
 <p><b>DOI</b>:
-<a href="https://doi.org/$supp{doi}"
->$supp{doi}</a></p>
+<a href="https://doi.org/$supp{doi}">$supp{doi}</a>
+<br><small>($prev_next_items)</small></p>
 END_LANDING
 
   # We perform the same unification and conversion steps as we
@@ -319,4 +317,67 @@ END_LANDING
   close ($LANDING) || warn "$0: close($landing_fname) failed: $!\n";
 }
 
+
+# return html string linking to the item at OFFSET (plus or minus,
+# described with LABEL in the link text) from PAGENO, in CAPSULES. If no
+# such item (i.e., PAGENO is first or last), return empty string. If
+# PAGENO is not found in CAPSULES, abort.
+# 
+# We silently skip over items which will not have a doi assigned.
+# 
+sub item_link {
+  my ($pageno,$offset,$label,$capsules) = @_;
+  #warn "looking for $label ($offset) item from $pageno\n";
+
+  my @pagenos = sort { $a <=> $b } keys %$capsules;
+  for (my $i = 0; $i < @pagenos; $i++) {
+    if ($pagenos[$i] == $pageno) {
+      my $offset_sgn = $offset < 0 ? -1 : 1;
+      my $wanted_doi = "";
+      my $wanted = $i + $offset;
+      while ($wanted > 0 && $wanted < @pagenos) { # within bounds
+        $wanted_doi = &doi_of_capsule ($capsules->{$pagenos[$wanted]});
+        #warn " checked item $wanted, got $wanted_doi\n";
+        last if $wanted_doi; # keep going if empty string
+        $wanted += $offset_sgn;
+      }
+      #warn " item_link: returning $wanted_doi (link)\n";
+      return $wanted_doi
+             ? qq!<a href="https://doi.org/$wanted_doi">$label doi</a>!
+             : "";
+    }
+  }
+    
+  die "wanted pageno $pageno (offset $offset), not found??";
+}
+
+
+# Return doi string for CAPSULE. No https://doi.org/ prefix.
+# If the item in CAP will not have a doi assigned, return the empty string.
+# 
+# Our doi pattern is almost the item url, but with tb/ made a "directory"
+# and the extension removed. For example,
+# a url of /TUGboat/tb41-3/tb129pres.pdf
+# becomes a doi of 10.47397/tb/41-3/tb129pres
+# (where 10.47397 is the prefix assigned to us by Crossref).
+# 
+sub doi_of_capsule {
+  my ($cap) = @_;
+  my $doi;
+  
+  # We will not create doi's for items that don't have an author --
+  # the covers, editorial page, other miscellany. We may eventually
+  # need a sharper test, but seems to suffice for now.
+  if ($cap->{"author"}) {
+    (my $url_stem = $cap->{"url"}) =~ s,\.[^.]+$,,; # remove extension
+    $url_stem =~ s,^.*/TUGboat/,,;                  # remove leading /TUGboat/
+    ($doi = $url_stem) =~ s,^tb,tb/,;               # change tb/ to "dir"
+    $doi =~ s,^,10.47397/,;                         # our crossref prefix
+  } else {
+    $doi = "";
+  }
+  
+  #warn "got $doi for page $cap->{pageno} ($cap->{url})\n";
+  return $doi;
+}
 1;

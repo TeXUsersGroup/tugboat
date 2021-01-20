@@ -19,7 +19,8 @@
 # after the issue is completely done and at the printer, this shouldn't
 # be a problem in practice.
 
-verbose=: # or echo
+verbose=:
+#verbose=echo
 
 # bogus cmdline parsing, but all we need.
 if test "x$1" = x--landing-only; then
@@ -115,7 +116,7 @@ for pf in "$cr_processdir"/*.abs "$cr_processdir"/*.bbl; do
     $verbose "$0: same in process and landing, no copy: $base"
     cnt_landing_unchanged=`expr $cnt_landing_unchanged + 1`
   else
-    echo "$0: different in process, copying to landing: $base"
+    $verbose "$0: different in process, copying to landing: $base"
     cp -pf "$pf" "$lf" || exit 1
     cnt_landing_copied=`expr $cnt_landing_copied + 1`
   fi

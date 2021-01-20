@@ -24,19 +24,19 @@ which is not uncommmon, the edits are done and those files saved.
 bbl/abs in dir2.process are never overwritten. This is the only place
 where hand editing is supported and won't be lost.
 
-Then, still done via cr-do-issue, the possibly-hand-edit bbl/abs in
+Then, still done via cr-do-issue, the possibly-hand-edited bbl/abs in
 dir2.process get copied back to dir1.lndout (no changes here), and
 incorporated into the final landing files in dir1.lndout.
 
-All of this takes several passes through the files. Run cr-do-issue,
+All this takes several passes. The overall process: run cr-do-issue,
 inspect the output dir2.process/issue.xml, inspect the output
-dir1.lndout/*.html, find problems. Make corrections to the capsule.txt
-file, or the bbl/abs, or the code to support what needs to be supported.
-Rerun cr-do-issue.
+dir1.lndout/*.html, find problems. Make corrections to the capsule.txt,
+or the bbl/abs, or the code to support what needs to be supported. Rerun
+cr-do-issue.
 
 This work can be done article by article as they are submitted, edited,
 and approved, or all at the end. In any case, there is lots of stuff
-that only happens at the end.
+that can only happen at the end.
 
 Ultimately, when an issue is final and gets published, we copy the
 landing files to the web-visible directory

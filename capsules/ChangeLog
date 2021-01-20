@@ -1,3 +1,14 @@
+2021-01-20  Karl Berry  <karl@freefriends.org>
+
+	* capcrossref.pl (crossref_write_files): call doi_of_capsule.
+	(crossref_create_landing_page): add prev/next doi links.
+	(item_link): new fn to make those links.
+	(doi_of_capsule): new fn to construct doi.
+	* cr-landing-bbl-abs: call ltx2unitxt with --html --entities.
+	(update_landing_bbl): <ol class="negskip"> for references. Ugly.
+	
+	* Makefile (crw): new target to make doi urls local, for testing.
+
 2021-01-13  Karl Berry  <karl@freefriends.org>
 
 	* cr-do-issue: new script to handle the overall crossref process
