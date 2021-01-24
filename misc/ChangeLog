@@ -1,3 +1,7 @@
+2021-01-23  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr-ctx (\MKXL,\star,\FL,\LL): define, for tb130hagen-prog.
+
 2020-10-22  Karl Berry  <karl@freefriends.org>
 
 	* check-balance-tub: don't remove \% or "% non-comments.
