@@ -1,3 +1,7 @@
+2021-01-25  Karl Berry  <karl@freefriends.org>
+
+	* ltx2crossrefxml-tugboat.cfg (\cs): read arg and output within <tt>.
+
 2021-01-20  Karl Berry  <karl@freefriends.org>
 
 	* ltx2crossrefxml-tugboat.cfg (\cs, \GNU, \OpTeX): handle.

@@ -214,10 +214,20 @@ sub crossref_create_landing_page {
   print $LANDING <<END_LANDING;
 <!--#include virtual="/header.html"-->
 <title>$cap{title_html}
-       - TUGboat $volno:$issno - TeX Users Group</title>
+       - TUGboat $volno:$issno ($issue{year}) - TeX Users Group</title>
 </head><body>
 
-<h2>$cap{title_html}</h2>
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+END_LANDING
+
+  my $issue_href = qq!<a href="/TUGboat/tb$volno_0-$issno/">!;
+  print $LANDING <<END_LANDING;
+<h1>${issue_href}TUGboat $volno:$issno</a> ($issue{year})
+<br><small>The Communications of the TeX Users Group</small></h1>
+
+<p><b>Title</b>: $cap{title_html}</p>
 END_LANDING
 
   my $shortdesc = $cap{shortdesc_html} ? "$cap{shortdesc_html}." : "";
@@ -261,8 +271,8 @@ END_LANDING
   my $pages_label = "page" . ($cap{pageno_print} =~ /-/ ? "s" : "");
   print $LANDING <<END_LANDING;
 
-<p><b>Publication</b>: <a href="/TUGboat/tb$volno_0-$issno/"
->TUGboat volume $volno, number $issno</a> ($issue{year}),
+<p><b>Publication</b>: ${issue_href}TUGboat
+volume $volno, number $issno</a> ($issue{year}),
 $pages_label&nbsp;$cap{pageno_print}</p>
 END_LANDING
 

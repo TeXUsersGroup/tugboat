@@ -112,7 +112,7 @@ all-install: all install
 try:
 	perl try.pl
 
-a:
+art19:
 	texfot pdflatex '\nonstopmode\input article-2019.ltx'
 	bibtex article-2019
 

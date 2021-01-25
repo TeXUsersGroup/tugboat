@@ -1,3 +1,14 @@
+2021-01-25  Karl Berry  <karl@freefriends.org>
+
+	* capcrossref.pl (crossref_create_landing_page): tub info in header.
+
+2021-01-23  Karl Berry  <karl@freefriends.org>
+
+	* tb18capsule.txt: Knuth and Mike Black authors of subparts
+	(from Yajie).
+	* tb109capsule.txt,
+	* tb92capsule.txt: %add|Software \& Tools for tuneup.
+
 2021-01-20  Karl Berry  <karl@freefriends.org>
 
 	* capcrossref.pl (crossref_write_files): call doi_of_capsule.
