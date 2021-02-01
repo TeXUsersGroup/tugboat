@@ -192,6 +192,7 @@
 \let\noindentation = \relax
 \let\origquote = \quote
 \def\page{}
+\def\percent{\char`\%}
 \def\placelayer[#1]{}
 \def\quote#1{{`#1'}}
 \let\origquotation = \quotation
@@ -310,20 +311,19 @@
 \def\stopquotation{\par\endgroup\smallskip}
 
 \def\tubextratyping{}
-\def\starttyping{\begin{verbatim}[\small \catcode`\|=12
+\def\starttyping{\par\begin{verbatim}[\small \catcode`\|=12
                                   \hfuzz=2pt \tubextratyping]}
 % \end{verbatim} has to be literal.
 \def\stoptyping{\errmessage{must literally end verbatim typing}}
 
 % sometimes we want to ignore buffers, sometimes print them.
 \def\tubignorebuffers{\long\def\startbuffer##1\stopbuffer{}}
-%\def\tubverbatimbuffers{\let\startbuffer=\starttyping}
-\def\tubverbatimbuffers{\def\startbuffer[##1]{\starttyping}}
+\def\tubverbatimbuffers{\let\startbuffer=\starttyping}
 \tubverbatimbuffers % default
-\def\stopbuffer{\errmessage{must literally end verbatim buffer}}
+\newcommand{\typebuffer}[1][]{}% ignore possible optional arg
 \def\getbuffer{}
-\def\typebuffer[#1][#2]{}
 \def\inlinebuffer{}
+\def\stopbuffer{\errmessage{must literally end verbatim buffer}}
 
 \def\startsection[title=#1]{\section{#1}}
 \def\stopsection{}

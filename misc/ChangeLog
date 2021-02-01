@@ -1,3 +1,8 @@
+2021-02-01  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr-ctx (\typebuffer): use \newcommand for optional arg.
+	(\percent): define, for tb130hagen-scaled.
+
 2021-01-23  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.abbr-ctx (\MKXL,\star,\FL,\LL): define, for tb130hagen-prog.
