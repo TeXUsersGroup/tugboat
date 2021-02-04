@@ -35,8 +35,10 @@ $(xml_output) issue: $(rpi_input) $(tub_cfg) force
 # https://www.crossref.org/schemas/crossref4.4.2.xsd
 # https://www.crossref.org/schemas/common4.4.2.xsd
 xsd = http://www.crossref.org/schema/deposit/crossref4.4.2.xsd
+#
 # https://stackoverflow.com/questions/17002324/xmllint-validate-an-xml-file-against-two-xsd-schemas-envelope-payload
 # https://www.biglist.com/lists/lists.mulberrytech.com/jats-list/archives/201310/msg00018.html
+# Crossref says it is necessary to download everything locally for xmllint.
 validate v: $(xml_output)
 	xmllint --noout --schema $(xsd) $<
 

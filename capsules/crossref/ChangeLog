@@ -1,3 +1,8 @@
+2021-02-02  Karl Berry  <karl@freefriends.org>
+
+	* ltx2crossrefxml-tugboat.cfg (\cs): doc use of entity &#x5c;.
+	* Makefile: doc.
+
 2021-01-25  Karl Berry  <karl@freefriends.org>
 
 	* ltx2crossrefxml-tugboat.cfg (\cs): read arg and output within <tt>.

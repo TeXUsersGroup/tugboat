@@ -224,8 +224,8 @@ END_LANDING
 
   my $issue_href = qq!<a href="/TUGboat/tb$volno_0-$issno/">!;
   print $LANDING <<END_LANDING;
-<h1>${issue_href}TUGboat $volno:$issno</a> ($issue{year})
-<br><small>The Communications of the TeX Users Group</small></h1>
+<h1>${issue_href}TUGboat $volno:$issno</a> ($issue{year})<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
 
 <p><b>Title</b>: $cap{title_html}</p>
 END_LANDING
@@ -246,13 +246,13 @@ END_LANDING
 
   # whether the article is public.
   my $availability = $cap{url} =~ m,/members/, 
-    ? 'now available to TUG members (<a href="/join.html">join TUG</a>);'
+    ? qq!<a href="$cap{url}">available to TUG members</a>!
+      . qq!(<a href="/join.html">join TUG</a>);!
       . "\nwill be publicly available after the next issue is published"
-    : "publicly available now";
+    : qq!<a href="$cap{url}">publicly available now</a>!;
   print $LANDING <<END_LANDING;
 
-<p><b><a href="$cap{url}"
->Full text of article</a></b>: $availability.</p>
+<p><b>Full text of article</b>: $availability.</p>
 END_LANDING
 
   # List of authors. We want to use the author names as specified for
@@ -322,7 +322,8 @@ END_LANDING
 END_LANDING
   
   my $issue_ident = "$issue{volno}:$issue{issno}, $issue{year}";
-  print $LANDING &cap_html_footer ("$issue_ident (issue $seqno)");
+  my $issue_link = "(${issue_href}issue $seqno</a>)";
+  print $LANDING &cap_html_footer ("$issue_ident $issue_link");
 
   close ($LANDING) || warn "$0: close($landing_fname) failed: $!\n";
 }
