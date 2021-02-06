@@ -1,5 +1,5 @@
 # $Id$
-# TUGboat capsule output. Public domain.
+# TUGboat capsule output of the toc for a given issue. Public domain.
 
 use strict; use warnings;
 
@@ -182,14 +182,23 @@ sub write_entries {
     print $cap{"title_html"};
     print qq!</a>! if $cap{"url"};
     print qq!&nbsp;!;
-    
-    # this is just about getting the output html to be nicely formatted:
-    # simple items with no author or anything else all on one line
-    # (hence no newline has been output yet after the title),
-    # else each post-title chunk on a line by itself,
+
+    # this is just about getting the generated html to be nicely
+    # formatted: simple items with no author or anything else all on one
+    # line, including the </td>; Hence no newline has been output yet
+    # after the title. Else each post-title chunk on a line by itself,
     # all indented to line up.
     my $post_title_print = 0;
-    
+
+    # output doi link after the title, if this item gets a doi.
+    my $doi = &doi_of_capsule (\%cap);
+    if ($doi) {
+      print "\n" unless $post_title_print++;
+      print qq!        &nbsp;!
+          . qq!<small>(<a href="https://doi.org/$doi">doi</a>)</small>!
+          . qq!&nbsp;\n!;
+    }
+        
     # author(s).
     my @author_html = @{$cap{"author_html"}}; # local copy
     my $author_print = shift @author_html;    # html author string only
