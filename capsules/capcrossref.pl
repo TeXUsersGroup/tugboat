@@ -247,7 +247,7 @@ END_LANDING
   # whether the article is public.
   my $availability = $cap{url} =~ m,/members/, 
     ? qq!<a href="$cap{url}">available to TUG members</a>!
-      . qq!(<a href="/join.html">join TUG</a>);!
+      . qq! (<a href="/join.html">join TUG</a>);!
       . "\nwill be publicly available after the next issue is published"
     : qq!<a href="$cap{url}">publicly available now</a>!;
   print $LANDING <<END_LANDING;

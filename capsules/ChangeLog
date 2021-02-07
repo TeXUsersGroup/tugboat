@@ -1,3 +1,7 @@
+2021-02-07  Karl Berry  <karl@freefriends.org>
+
+	* capcrossref.pl (crossref_create_landing_page): missing space.
+
 2021-02-06  Karl Berry  <karl@freefriends.org>
 
 	* capout.pl (write_entries): output doi when item has done.
