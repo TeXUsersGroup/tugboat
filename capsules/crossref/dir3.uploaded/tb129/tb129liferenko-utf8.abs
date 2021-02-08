@@ -1,0 +1,9 @@
+In its design \TeX\ has the concepts of ``internal
+encoding'' and ``external encoding''. This fact
+allows \TeX\ to work with any encoding.
+We use Unicode as \TeX's external encoding.
+Then we change the necessary parts of \TeX\ to
+use \hbox{\tbUTF-8} as the
+input/output encoding.
+The resulting implementation passes
+the {\tt trip} test.

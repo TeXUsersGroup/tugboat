@@ -1,0 +1,35 @@
+\begin{thebibliography}{1}
+
+\bibitem{gentle}
+M.~Doob.\\
+\newblock {A Gentle Introduction to \TeX{}}.
+\newblock Aston University, UK: UK \TeX{} Archive, Jan. 1990.
+\newblock \tbsurl{ctan.org/pkg/gentle}.
+
+\bibitem{texbook}
+D.~Knuth.
+\newblock {\em {The \TeX{}book}}.
+\newblock Addison-Wesley, Boston, MA, 18th edition, May 1990.
+
+\bibitem{latexbook}
+L.~Lamport.
+\newblock {\em {\LaTeX{}: A Document Preparation System}}.
+\newblock Addison-Wesley, Boston, MA, Jan. 1986.
+
+\bibitem{lamport}
+L.~Lamport.
+\newblock {Document Production: Visual or Logical?}
+\newblock {\em {\TUB{}}} 9(1):8, Jan. 1988.
+\newblock \newline \url{tug.org/TUGboat/tb09-1/tb20lamport.pdf}
+
+\bibitem{pctexman}
+M.~Spivak.
+\newblock {\em {The \acro{PC}-\TeX{} Manual}}.
+\newblock Personal \TeX{}, Inc., San Francisco, CA, 01 1985.
+
+\bibitem{vmsintro}
+J.~{St Sauver}.
+\newblock {Introduction to \TeX{} on VAX/VMS}.
+\newblock Claremont University, CA: YMIR \TeX{} Archive, Jan. 1991.
+
+\end{thebibliography}
