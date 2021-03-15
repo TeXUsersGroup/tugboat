@@ -1,11 +1,11 @@
 % $Id$
-% Copyright 1999, 2006, 2008, 2009, 2010, 2015, 2018 TeX Users Group.
+% Copyright 1999-2021 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 % This is a LaTeX2e package for TUGboat abstract summaries,
 % originally just for cahiers.
 %
-\def\filedate{2018/07/29}
+\def\filedate{2021/03/15}
 \ProvidesPackage{cahiers}[\filedate TUGboat abstract summaries]
 %
 % uses production LaTeX2e commands
@@ -92,7 +92,7 @@
    \else
      \unskip\nobreak\hfil\null\quad\penalty0\hskip0pt\quad\null\hfil
    \fi
-   \parfillskip=0pt
+   \parfillskip=0pt \hbadness=2300
    [#1]\par
    \endgroup}
 

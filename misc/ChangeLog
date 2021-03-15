@@ -1,3 +1,7 @@
+2021-03-15  Karl Berry  <karl@freefriends.org>
+
+	* cahiers.sty (\credit): \hbadness=2300 for tb130komo.
+
 2021-02-01  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.abbr-ctx (\typebuffer): use \newcommand for optional arg.
