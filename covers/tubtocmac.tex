@@ -159,10 +159,13 @@
 \def\textsl#1{{\sl #1}}
 \def\texttt#1{{\tt #1}}
 
-% slant \BibTeX and \MF:
+% slanted \BibTeX and \MF:
 \def\slBibTeX{{\sl B{\slc IB}\kern-.08em\TeX}}
 \def\BibTeX{\slBibTeX}
 \def\Bib{B\kern-.05em{\smc i\kern-.025em b}}
+% \manualsl is defined in cover?.tex, since might change in a given issue.
+\def\slMF{{\manualsl META}\-{\manualsl FONT}\spacefactor1000 }
+\def\slMP{{\manualsl META}\-{\manualsl POST}\spacefactor1000 }
 
 \frenchspacing
 \hyphenpenalty = 10000
