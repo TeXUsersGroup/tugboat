@@ -1,3 +1,10 @@
+2021-04-16  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.sty (\rfoot): do \tubtypesetdoi.
+	(\tubtypedoi): new macro, same as tugboat.dtx, with some support
+	to make the macro names the same.
+	(\authorloop): always comma as separator, no "and".
+
 2020-10-11  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.cmn (\@): define as in LaTeX, \spacefactor1000.
