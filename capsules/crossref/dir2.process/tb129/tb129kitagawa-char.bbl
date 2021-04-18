@@ -1,0 +1,68 @@
+\begin{thebibliography}{10}
+
+\bibitem{asciiptex}
+{ASCII Corporation}.
+\newblock {ASCII Japanese TeX (pTeX) (in Japanese)}.
+\newblock \\\url{asciidwango.github.io/ptex/index.html}.
+
+\bibitem{web2c}
+K.~Berry, O.~Weber.
+\newblock Web2c, for version 2019.
+\newblock \url{tug.org/texlive/Contents/live/texmf-dist/doc/web2c/web2c.pdf},
+  Feb.~\ignorespaces 2019.
+
+\bibitem{pkg-ptexman}
+{Japanese {\TeX} Development Community}.
+\newblock {Guide to {\pTeX}\ and friends}.
+\newblock \\\url{ctan.org/pkg/ptex-manual}.
+
+\bibitem{pl84}
+JulienPalard.
+\newblock Inconsistent error message.
+\newblock \url{github.com/texjporg/platex/issues/84}.
+
+\bibitem{tj81}
+H.~Kitagawa.
+\newblock Distinction between a byte sequence and a {Japanese} character token
+  {(in Japanese)}.
+\newblock \url{github.com/texjporg/tex-jp-build/issues/81}.
+
+\bibitem{tc19ptex}
+H.~Kitagawa.
+\newblock Distinction of {Latin} characters and {Japanese} characters in
+  stringization of {\pTeX} family {(in Japanese)}.
+\newblock \url{osdn.net/projects/eptex/docs/tc19ptex/ja/1/tc19ptex.pdf}.
+
+\bibitem{eptex}
+H.~Kitagawa.
+\newblock {\epTeX\ Wiki (in Japanese)}.
+\newblock \url{osdn.net/projects/eptex/wiki/FrontPage}.
+
+\bibitem{lt28}
+{{\LaTeX} Project Team}.
+\newblock {\LaTeX} news, issue~28, Apr.~\ignorespaces 2018.
+\newblock \url{www.latex-project.org/news/latex2e-news/ltnews28.pdf}
+
+\bibitem{okumura}
+H.~Okumura.
+\newblock {{\pTeX}\ and Japanese Typesetting}.
+\newblock {\em The Asian Journal of {\TeX}} 2(1):43--51, 2008.
+\newblock \url{ajt.ktug.org/2008/0201okumura.pdf}
+
+\bibitem{uptex}
+T.~Tanaka.
+\newblock {upTeX, upLaTeX{\Dash}unicode version of pTeX, pLaTeX}.
+\newblock \url{www.t-lab.opal.ne.jp/tex/uptex_en.html}.
+
+\bibitem{tb-uptex}
+T.~Tanaka.
+\newblock {\upTeX}{\Dash}{Unicode} version of {\pTeX} with cjk extensions.
+\newblock {\em {\TUB}} 34(3):285--288, 2013.
+\newblock \newline \url{tug.org/TUGboat/tb34-3/tb108tanaka.pdf}
+
+\bibitem{ptexenc}
+N.~Tutimura.
+\newblock {\acro{UTF-8}対応(4)~{\Dash}~ptetex Wiki (in Japanese)}.
+\newblock \url{tutimura.ath.cx/ptetex/?UTF-8%C2%D0%B1%FE%284%29}.
+
+\end{thebibliography}

@@ -1,0 +1,46 @@
+\begin{thebibliography}{1}
+
+\bibitem{xindy}
+R.~Kehr, J.~Schrod.
+\newblock \app{xindy}: a general-purpose index processor, 2018.
+\newblock \tbsurl{ctan.org/pkg/xindy}.
+
+\bibitem{makeidx}
+{{\LaTeX} Team}.
+\newblock The \sty{makeidx} package, 2014.
+\newblock \url{ctan.org/pkg/makeidx}.
+
+\bibitem{bib2gls}
+N.~Talbot.
+\newblock \sty{bib2gls}: Command line application to convert \texttt{.bib}
+  files to \texttt{glossaries-extra.sty} resource files, \gobble{Tbib2gls}2020.
+\newblock \tbsurl{ctan.org/pkg/bib2gls}.
+
+\bibitem{glossaries}
+N.~Talbot.
+\newblock The \sty{glossaries} package, \gobble{Tglossaries1}2020.
+\newblock \tbsurl{ctan.org/pkg/glossaries}.
+
+\bibitem{glossaries-extra}
+N.~Talbot.
+\newblock The \sty{glossaries-extra} package, \gobble{Tglossaries2}2020.
+\newblock \tbsurl{ctan.org/pkg/glossaries-extra}.
+
+\bibitem{tugboat2019}
+N.~Talbot.
+\newblock Indexing, glossaries and \app{bib2gls}.
+\newblock {\em {TUG}boat} 40(1), \gobble{Tindexing}2019.
+\newblock \url{tug.org/TUGboat/tb40-1/tb124talbot-bib2gls.pdf}
+
+\bibitem{logicaldivisions}
+N.~Talbot.
+\newblock Logical glossary divisions (\field{type} vs \field{group} vs
+  \field{parent}), \gobble{Tlogical}2020.
+\newblock \url{dickimaw-books.com/gallery/?label=logicaldivisions}.
+
+\bibitem{bib2gls-sorting}
+N.~Talbot.
+\newblock Sorting, \gobble{Tsorting}2019.
+\newblock \url{dickimaw-books.com/gallery/?label=bib2gls-sorting}.
+
+\end{thebibliography}

@@ -1,0 +1,9 @@
+\OpTeX\ [1] is a new format prepared for Lua\TeX{}. It keeps Plain \TeX{}'s
+simplicity, adds the power of the OPmac macros [2] and leaves behind the old
+obscurities with non-Unicode fonts and with various \TeX{} engines. 
+It provides a powerful font selection system, colors, graphics, references, 
+hyperlinks, syntax highlighting, preparing indexes and bibliography
+listings. All these features are implemented at \TeX{} macro level and they
+are ready to use without any external program.
+\OpTeX\ is a new Plain \TeX{} suitable for the present.
+
