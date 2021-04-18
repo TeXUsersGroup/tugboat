@@ -4,8 +4,8 @@ Originally written 2020 Karl Berry.
 
 The general idea is use the capsule file as the input source for a given
 issue. captub converts those to .rpi files (one per article). The .rpi
-files are read by the ltx2crossrefxml script, which outputs xml (one xml
-issue for the whole issue) to be uploaded to crossref.org.
+files are read by the ltx2crossrefxml script, which outputs one xml
+issue for the whole issue, which we then upload to crossref.org.
 
 In more detail: captub writes a separate .rpi file for each article for
 which we want to register a doi; it also constructs the (html) "landing
@@ -26,7 +26,8 @@ corrections, we don't have to go through all the regeneration steps.
 Along with the issue.xml for crossref, the scripts simultaneously
 prepare a set of html "landing" files, which are what the doi urls
 actually resolve to. That process is described in the sibling
-README-landing.txt file here.
+./README-landing.txt file here, and exact steps are given in
+./README-process.txt.
 
 To summarize:
 capsules/*.txt - the source text
@@ -52,3 +53,6 @@ schema that we target with the xml is well annotated.
 
 3) the .rpi extension name comes from Res Philosophica, the journal for
 which this support was originally created, by Boris Veytsman.
+
+4) The full process of publishing an issue is at the end of the
+README-tug-procedures.txt file elsewhere on tug.org.
