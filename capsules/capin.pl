@@ -158,6 +158,9 @@ sub read_issue {
 sub url_validate {
   my ($url,$tbident) = @_;
   
+  # when working on 
+  return if $::OPT{webroot} eq "/";
+  
   $url =~ s,^https?://(www\.)?tug\.org,,; # remove leading protocol+host
   $url =~ s,#[a-z]+$,,;    # remove trailing anchor
   return if $url !~ m,^/,; # can't check ctan, etc., only files.

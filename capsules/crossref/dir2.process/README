@@ -12,10 +12,12 @@ information going into it.
 
 This is the place where abs/bbl files which need to get hand-edited are
 preserved. Thus, new abs/bbl files get copied into here, but existing
-ones are never overwritten.
+ones are never overwritten, unless explicitly specified (by running
+"make cro-scratch" instead of cro, which simply removes all abs/bbl from
+here before doing the normal processing).
 
 The html landing pages here are not used and are merely copied in for
-convenience
+convenience.
 
 The files written here are temporary, and are not committed to version
 control. After successful upload, we copy them to ../dir3.uploaded for

@@ -230,9 +230,14 @@ END_LANDING
 <p><b>Title</b>: $cap{title_html}</p>
 END_LANDING
 
-  my $shortdesc = $cap{shortdesc_html} ? "$cap{shortdesc_html}." : "";
+  my $shortdesc = "";
+  if ($cap{"shortdesc_html"}) {
+    $shortdesc = $cap{"shortdesc_html"};
+    $shortdesc .= "." unless $cap{"shortdesc_html"} =~ /\.$/;
+  }
+
   my $subtitles = $cap{subtitles_html} ? "\n$cap{subtitles_html}" : "";
-  
+  #  
   # for beet, we want to uniformly have two spaces at the beginning
   # of each subtitle, and each on a line by itself. seems to work out
   # for others too.

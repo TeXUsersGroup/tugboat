@@ -20,15 +20,19 @@
 # be a problem in practice.
 
 verbose=:
-#verbose=echo
+landing_only=false
 
-# bogus cmdline parsing, but all we need.
-if test "x$1" = x--landing-only; then
-  landing_only=true
+while test $# -gt 0; do
+  case "$1" in
+  --landing-only) landing_only=true;;
+  --verbose) verbose=echo;;
+  --help)    break;; # fall through to usage msg, imperfect but oh well
+  --version) echo '$Id'; exit 0;;
+  --*) echo "$0: unknown option: $1; try --help for more." >&2; exit 1;;
+  *) break;;
+  esac
   shift
-else
-  landing_only=false
-fi
+done
 
 if test $# -ne 4; then
   echo "$0: expected 4 non-option arguments, got $#: $*" >&2
@@ -89,7 +93,7 @@ run_cmd ./cr-copy-bbl-abs "$capsule" "$lnd_outdir"/
 cnt_xmlprocess_preserved=0
 cnt_xmlprocess_copied=0
 #
-for lf in "$lnd_outdir"/*.abs "$lnd_outdir"/*.bbl; do
+for lf in "$lnd_outdir"/tb*.abs "$lnd_outdir"/tb*.bbl; do
   pf=`echo "$lf" | sed "s,$lnd_outdir,$cr_processdir,"`
   base=`basename "$pf"`
   if test -e "$pf"; then
@@ -109,7 +113,7 @@ echo "$0: bbl/abs->$cr_processdir: $cnt_xmlprocess_preserved preserved, $cnt_xml
 cnt_landing_unchanged=0
 cnt_landing_copied=0
 #
-for pf in "$cr_processdir"/*.abs "$cr_processdir"/*.bbl; do
+for pf in "$cr_processdir"/tb*.abs "$cr_processdir"/tb*.bbl; do
   lf=`echo "$pf" | sed "s,$cr_processdir,$lnd_outdir,"`
   base=`basename "$pf"`
   if cmp -s "$pf" "$lf"; then
@@ -130,8 +134,12 @@ if ! $landing_only; then
   # For crossref purposes, when we run captub we don't care about the
   # generated toc web page, we just want the rpi files and the initial
   # landing pages (containing placeholders).
+  # 
+  # Similarly, the --webroot=/ says not to bother checking that local
+  # urls resolve, since we're probably running this before the issue is
+  # in place. Those checks need to be done as part of publishing the issue.
   rm -f "$cap_outdir"/tb* # clean destination directory
-  run_cmd ./captub --crossref="$cap_outdir" $capsule >/dev/null
+  run_cmd ./captub --webroot=/ --crossref="$cap_outdir" $capsule >/dev/null
 
   # the .rpi files should never need to be hand-edited,
   # so can just overwrite in our processdir:
@@ -151,7 +159,7 @@ run_cmd ./cr-landing-bbl-abs "$crossrefxml_file" "$lnd_outdir"/
 
 # if the landing pages contain any literal backslashes, something went wrong.
 if fgrep '\' $lnd_outdir/*.html; then
-  echo "$0: backslashes in generated landing pages, goodbye." >&2
+  echo "$0: *** backslashes in generated landing pages, goodbye." >&2
   exit 1
 fi
 

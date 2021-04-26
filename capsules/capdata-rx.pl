@@ -24,13 +24,15 @@ sub lists_regexps {
     for (my $i = 0; $i < @$lhs_exprs; $i++) {
       my $lhs = $lhs_exprs->[$i];
       my $rhs = $rhs->[$i];
+      #
       # need /ee: https://stackoverflow.com/questions/392643
       eval { $str =~ s/$lhs/$rhs/eeg; };
+      #print STDERR "str=$str after lhs=$lhs -> rhs=$rhs\n";
       #
       # Which means we might end up with syntax errors.
       $@ && die "eval(s/$lhs/$rhs/eeg) failed: $@";
-      $warnstr && die "Warning `$warnstr' while evaluating: "
-        . "s/$lhs/$rhs/eeg\n  for string: $str\n";
+      $warnstr && die "Warning:\n    $warnstr  while evaluating:\n"
+        . "    s/$lhs/$rhs/eeg\n  for string:\n    $str\n";
       if ($str ne $prev_str) {
         $rx_count{"$lhs.$rhs"}++;
         $prev_str = $str;

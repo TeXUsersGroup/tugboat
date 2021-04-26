@@ -13,35 +13,38 @@
 # 
 # Assume that the lists-translations have already been applied.
 
-\\acro\{(.*?)\}||$1
-\\code\{(.*?)\}||"<tt>$1</tt>"
-\\cs\{(.*?)\}||"<tt>\\$1</tt>"
-\\emph\{(.*?)\}||"<i>$1</i>"
-\\pkg\{(.*?)\}||$1
-\\pkgname\{(.*?)\}||$1
-\\url\{(.*?)\}||"<tt>$1</tt>"
+# \s* to end a control sequence is not correct; see $endcw in
+# ToUnicode.pm. But how to use a variable reference here?
+\\acro\s*\{(.*?)\}||$1
+\\booktitle\s*\{(.*?)\}||"<i>$1</i>"
+\\code\s*\{(.*?)\}||"<tt>$1</tt>"
+\\cs\s*\{(.*?)\}||"<tt>\\$1</tt>"
+\\emph\s*\{(.*?)\}||"<i>$1</i>"
+\\pkg\s*\{(.*?)\}||$1
+\\pkgname\s*\{(.*?)\}||$1
+\\url\s*\{(.*?)\}||"<tt>$1</tt>"
 
 # superscript
-\\sp\{(.*?)\}||"<sup><font size=1>$1</font></sup>"
+\\sp\s*\{(.*?)\}||"<sup><font size=1>$1</font></sup>"
 
 # \ss at end of string; can't easily do in translations since there is
 # also \ssf; cleaner to do it here.
-\\ss$||"&#xdf;"
+\\ss\s*$||"&#xdf;"
 
 # fonts; do after accents so most braces have been removed.
 \{\\it\s*(.*?)\}||"<i>$1</i>"
-\\textit\{\s*(.*?)\}||"<i>$1</i>"
+\\textit\s*\{\s*(.*?)\}||"<i>$1</i>"
 #
 \{\\sl\s*(.*?)\}||"<i>$1</i>"
-\\textsl\{\s*(.*?)\}||"<i>$1</i>"
+\\textsl\s*\{\s*(.*?)\}||"<i>$1</i>"
 #
 \{\\bf\s*(.*?)\}||"<b>$1</b>"
 #
 \{\\ssf\s*(.*?)\}||$1
 \{\\sf\s*(.*?)\}||$1
-\\textsf\{(.*?)\}||$1
+\\textsf\s*\{(.*?)\}||$1
 #
-\\texttt\{(.*?)\}||"<tt>$1</tt>"
+\\texttt\s*\{(.*?)\}||"<tt>$1</tt>"
 \{\\tt\\bs (.*?)\}||"<tt>\\$1</tt>"
 \{\\tt\s*(.*?)\}||"<tt>$1</tt>"
 
@@ -50,6 +53,16 @@
 # and where it happens.
 #^\s+(.*)||$1
 #(.*)\s+$||$1
+
+# Remove kerns: an optional sign, a value, a two-character dimension,
+# optional whitespace following. The $endcw is a regexp for the end of a
+# TeX control word, defined in capdata-rx.pl.
+# Without the empty group at the end (could be anywhere) and the $1, get:
+#   Warning `Use of uninitialized value in substitution iterator at capdata-rx.pl line 28.
+# ' while evaluating: s/(?^:\\kern\s*[-+]?[0-9., ]+[a-z][a-z]\s*)//eeg
+#   for string: GUST e-foundry font projects, closing report 2019&#x2013;2020
+# (with \kern.06em before "-foundry"). Root cause unknown.
+\\kern\s*[-+]?[0-9., ]+[a-z][a-z]\s*()||$1
 
 # Elide bare braces; do last since braces are part of our matching above.
 \{(.*?)\}||$1

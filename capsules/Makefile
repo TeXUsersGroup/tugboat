@@ -19,9 +19,9 @@ default check: one #all-diff
 
 # These issue values, and most of the targets below, come into play with
 # publishing a TUGboat issue; see the README.karl file on tug.org.
-testiss = 129
+testiss = 130
 lastiss = 129
-crossref_iss = 129
+crossref_iss = 130
 
 # use different temp dir on different machines.
 mydir := $(shell ls ~karl/public_html 2>/dev/null)
@@ -51,19 +51,25 @@ cr_lndout = crossref/dir1.lndout
 # crossref to upload. The possibly hand-edited bbl and abs are here.
 cr_xmlprocess = crossref/dir2.process
 #
-# What we pass to cr-do-issue.
-cr_args = tb$(crossref_iss)capsule.txt $(cr_capout) $(cr_lndout) \
-          $(cr_xmlprocess)/issue.xml
+# Article-by-article report of what's copied.
+cr_verbose = #--verbose
+#
+# The arguments we pass to cr-do-issue.
+cr_args =  $(cr_verbose) tb$(crossref_iss)capsule.txt \
+           $(cr_capout) $(cr_lndout) $(cr_xmlprocess)/issue.xml
 
 crl: # just landing pages
 	cr-do-issue --landing-only $(cr_args)
 cro: # full crossref run
+	cr-do-issue $(cr_verbose) $(cr_args)
+cro-scratch: # full crossref run, assuming no hand-editing
+	rm -f $(cr_xmlprocess)/*.abs $(cr_xmlprocess)/*.bbl # assume no edits
 	cr-do-issue $(cr_args)
 
 # kludge to replace doi urls with local urls, so we can easily click
 # through the list of "next doi" links before uploading.
 crw:
-	cd $(cr_lndout) && perl -pi.bak -e 's,"https://doi.org/10.47397/tb/41-3/(.*?)","$$1.html",g' *.html
+	cd $(cr_lndout) && perl -pi.bak -e 's,"https://doi.org/10.47397/tb/..-./(.*?)","$$1.html",g' *.html
 
 crxml:
 	$(MAKE) -C crossref
@@ -73,7 +79,7 @@ crxml:
 # qqq upload to real crossref
 # qqq archive uploaded files in crossref/uploaded
 	
-# 
+#  Processing for main Contents html files.
 out = contents*.html
 all:
 	perl -cw captub && date

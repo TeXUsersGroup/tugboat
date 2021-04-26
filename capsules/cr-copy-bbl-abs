@@ -50,7 +50,7 @@ if test ! -d "$issdir"; then
   exit 1
 fi
 
-bbl_count=`ls -1 $issdir/*/*.bbl 2>/dev/null | wc -l`
+bbl_count=`ls -1 $issdir/*/tb*.bbl 2>/dev/null | wc -l`
 if test $bbl_count -eq 0; then
   echo "$0: no .bbl files found under: $issdir" >&2
   exit 1
@@ -65,7 +65,7 @@ fi
 # We intentionally do not erase existing files or move them aside;
 # let another level (the cr-do-issue script) do that. Which it does.
 # 
-if cp -pf $issdir/*/*.bbl $outdir/; then :; else
+if cp -pf $issdir/*/tb*.bbl $outdir/; then :; else
   echo "$0: copy of bbl files failed, goodbye." >&2
   exit 1
 fi

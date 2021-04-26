@@ -160,7 +160,8 @@ see crossref/README for details.
                    default if only one CAPSULE is given.
 --stdout         output to stdout instead of contentsVV-N.html;
                    default if only one CAPSULE is given.
---webroot=DIR    check under DIR that urls resolve [/home/httpd/html]
+--webroot=DIR    check under DIR that urls resolve [/home/httpd/html];
+                   if /, checks are omitted.
 
 --help           print this message and exit.
 --version        print version information and exit.

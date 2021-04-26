@@ -1,3 +1,11 @@
+2021-04-18  Karl Berry  <karl@freefriends.org>
+
+	* README-process.txt: new file.
+	* ltx2crossrefxml-tugboat.cfg (\{Bib,Lua,Xe}{La,}TeX): move
+	to bibtexperllibs Tables.pm.
+	(\ConTeXt, \ISBN, ...): new abbrevs.
+	(\noopsort): gobble this.
+
 2021-02-02  Karl Berry  <karl@freefriends.org>
 
 	* ltx2crossrefxml-tugboat.cfg (\cs): doc use of entity &#x5c;.

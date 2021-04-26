@@ -1,3 +1,35 @@
+2021-04-26  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (testiss, crossref_iss): start work on tb130.
+	(cro-scratch): new target to use before any hand-editing.
+	(cr_verbose): new variable for --verbose.
+	(cr_args): use it.
+	(crw): generalize tbVV-N pattern.
+
+	* cr-copy-bbl-abs: only copy tb*.bbl, not all *.bbl.
+	* cr-do-issue: likewise.
+	Also generalize cmdline parsing for $verbose.
+	
+	* capdata-rx.pl (lists_regexps): make warning more verbose.
+	* lists-regexps.pl: accept \s* after all \cs's.
+	Incomplete handling 
+	* lists-translations.txt (\MFB): handle this, arrange \MF.
+	
+	* capin.pl (url_validate): omit url resolution checks
+	if --webroot=/ since it's not useful before an issue is published.
+
+	* capcrossref.pl (crossref_create_landing_page): don't append
+	period to shortdesc if it already ends with one.
+
+	* captub (init) <help>: document that.
+	* cr-do-issue: pass --webroot=/ to captub.
+	Also, only copy tb*.{abs,bbl}, since others may exist
+	under stray (author-chosen) names.
+
+2021-04-18  Karl Berry  <karl@freefriends.org>
+
+	* lists-regexps.txt (\booktitle): translate this a la \emph.
+
 2021-02-07  Karl Berry  <karl@freefriends.org>
 
 	* capcrossref.pl (crossref_create_landing_page): missing space.

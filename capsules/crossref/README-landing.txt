@@ -25,8 +25,9 @@ bbl/abs in dir2.process are never overwritten. This is the only place
 where hand editing is supported and won't be lost.
 
 Then, still done via cr-do-issue, the possibly-hand-edited bbl/abs in
-dir2.process get copied back to dir1.lndout (no changes here), and
-incorporated into the final landing files in dir1.lndout.
+dir2.process get copied back to dir1.lndout (no changes here),
+overwriting what was there, and incorporated into the final landing
+files in dir1.lndout.
 
 All this takes several passes. The overall process: run cr-do-issue,
 inspect the output dir2.process/issue.xml, inspect the output
