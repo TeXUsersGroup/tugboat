@@ -4,7 +4,7 @@
 #
 # Convert \getpage{papername}, \getfirstpage{...}, \getlastpage{...} to
 # page range for barbara's .cnt files -> Nelson's bib files, and our
-# capsule. See ~www/office/README.karl for usage.
+# capsule. See ~www/office/README-tug-procedures for usage.
 # 
 # When an item is contained on a single page, Barbara wants 100-100.
 
