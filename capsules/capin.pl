@@ -126,7 +126,9 @@ sub read_issue {
             . &hash_as_string ($capsules{$pageno});
       }
       $capsules{$pageno} = $dfi{$pageno};
+      $capsules{$pageno}->{"issueref"} = \%issue;
       
+      # qqq todo: now that we have issueref, could move this to a better place.
       if ($capsules{$pageno}->{"url"} =~ m/^(URL)?$/) {
         # placeholder or empty text, just ignore it.
         $capsules{$pageno}->{"url"} = "";

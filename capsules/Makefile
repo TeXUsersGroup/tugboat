@@ -87,6 +87,7 @@ all:
 	  cap="$$cap tb$${iss}capsule.txt"; done; \
 	$(time) $(captub) $$cap | tee /tmp/x.html
 	! grep -o 'tubidxgroup.*\<and\>' listauthor.html
+# if gets messed up, check title_sort generation in capaccum.pl:
 	! grep -o 'id="[^">]*[^a-z0-9_,][^">]*"' listtitle.html
 	! grep -o 'id="[^">]*[^a-zA-Z0-9_,.][^">]*"' list[ak]*.html
 	unparsed=`egrep '[{}~$$\]|href=""|Dash\>' $(out) \

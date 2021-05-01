@@ -98,7 +98,6 @@ sub crossref_write_files {
     
     # We already laboriously constructed the title in html, just write out.
     # Let downstream scripts do the validation.
-    # qqq must also construct landing pages, including abstracts.
     print $RPI "%title=$cap{title_html}\n";
     
     # These values are already present in the issue hash, can also write out.
@@ -382,9 +381,18 @@ sub doi_of_capsule {
   my $doi;
   
   # We will not create doi's for items that don't have an author --
-  # the covers, editorial page, other miscellany. We may eventually
-  # need a sharper test, but seems to suffice for now.
-  if ($cap->{"author"}) {
+  # the covers, editorial page, other miscellany. And one more: let's
+  # not do doi's for comics (annoying to typeset the doi on the printed
+  # page), even though they do have authors.
+  # 
+  # Also, we don't want doi's for any issues earlier than
+  # the cutoff sequence number specified globally.
+  # 
+  # We may eventually need a sharper test, but this suffices so far.
+  #&info_hash ("doi_of_capsule", $cap);
+  if ($cap->{"author"}
+      && $cap->{"category"} ne "Cartoon"
+      && $cap->{"issueref"}->{"seqno"} >= $::OPT{"crossref-first-issue"}) {
     (my $url_stem = $cap->{"url"}) =~ s,\.[^.]+$,,; # remove extension
     $url_stem =~ s,^.*/TUGboat/,,;                  # remove leading /TUGboat/
     ($doi = $url_stem) =~ s,^tb,tb/,;               # change tb/ to "dir"
@@ -396,4 +404,5 @@ sub doi_of_capsule {
   #warn "got $doi for page $cap->{pageno} ($cap->{url})\n";
   return $doi;
 }
+
 1;

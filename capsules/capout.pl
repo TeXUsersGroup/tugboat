@@ -97,7 +97,8 @@ END_LISTS
   
   # Another whole set of output files for DOI creation and registration.
   # But only if the issue is new enough.
-  if ($::OPT{"crossref"} && $issue{"seqno"} >= 129) {
+  if ($::OPT{"crossref"}
+      && $issue{"seqno"} >= $::OPT{"crossref-first-issue"}) {
     &crossref_write_files (%issue);
   }
 

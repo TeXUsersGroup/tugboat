@@ -1,3 +1,25 @@
+2021-05-01  Karl Berry  <karl@freefriends.org>
+
+	* lists-regexps.txt (\cs): use &#x5c; instead of \ for sake
+	of being able to search for literal \ chars.
+	(\tbsurl): handle.
+	* capaccum.pl (accumulation): also remove hex entities.
+	
+	* lists-translations.txt (\MFB): handle first, then \MF;
+	too many other cases. Use lowercase hex consistently.
+	* lists-unifications.txt (\TUGboat&#xa0;Editors): recognize
+	<i>TUGboat</i>.
+
+	* capin.pl (read_issue): new back pointer "issueref" in capsule hash
+	(and new todo to move !TBIDENT! translation in a better place).
+	* captab (init): new non-option global "crossref-first-issue".
+	* capout.pl (write_issue),
+	* capcrossref.pl (doi_of_capsule): use it.
+	* Makefile: doc.
+	* cr-do-issue: doc.
+
+	* capdata-rx.pl (@lhs): no need for verbose identifier lhs_exprs.
+	
 2021-04-26  Karl Berry  <karl@freefriends.org>
 
 	* Makefile (testiss, crossref_iss): start work on tb130.

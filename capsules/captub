@@ -183,4 +183,9 @@ Email questions or problems to tugboat\@tug.org.
     print "Public domain.\n";
     exit 0;
   }
+  
+  # This is not an option, but it's convenient to use the same global to
+  # specify it, since we need the value in different files.
+  # qqq todo: work backwards in issue list adding doi's to older issues.
+  $OPT{"crossref-first-issue"} = 129;
 }

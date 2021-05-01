@@ -36,10 +36,34 @@ done
 
 if test $# -ne 4; then
   echo "$0: expected 4 non-option arguments, got $#: $*" >&2
-  cat >&@ <<END_USAGE
-Usage: $0 [--landing-only] CAPSULEFILE CAP-OUTDIR LND-OUTDIR CROSSREFXMLFILE
+  cat >&2 <<END_USAGE
+Usage: $0 [--landing-only] [--verbose] 
+          CAPSULEFILE CAP-OUTDIR LND-OUTDIR CROSSREFXMLFILE
 
-qqq
+First, run ./cr-copy-bbl-abs on CAPSULEFILE to also copy the bbl/abs
+files from the TUGboat source directory to LND-OUTDIR.
+
+Then, copy any new bbl/abs to the directory of CROSSREFXMLFILE, but do
+not overwrite existing bbl/abs there. That is, bbl/abs in the
+CROSSREFXMLFILE might be hand-edited.
+
+Then, copy differing bbl/abs from CROSSREFXMLFILE directory back to
+LND-OUTDIR (i.e., any hand-edited files).
+
+Then (unless --landing-only), run captub on CAPSULEFILE to generate
+initial landing pages and .rpi files in CAP-OUTDIR.  Then run "make issue"
+in the crossref/ subdirectory to make issue.xml, etc.
+
+Then, run ./cr-landing-bbls to update the landing pages in LND-OUTDIR
+with the final bbl/abs text.
+
+Finally, if the landing pages contain any literal backslash characters
+(\\), complain.
+
+Use --verbose to see which bbl/abs files are copied.
+
+This is invoked from capsules/Makefile. See that,
+and the crossref/README* files, for more information on all this.
 END_USAGE
   exit 1
 fi

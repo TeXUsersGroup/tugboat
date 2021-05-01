@@ -6,7 +6,7 @@ use strict; use warnings;
 require "caputil.pl";
 
 {
-my ($lhs_exprs,$rhs) = &read_regexps ();
+my ($lhs,$rhs) = &read_regexps ();
 my %rx_count;
 
 # Public access function to take input STR and return result of applying
@@ -21,8 +21,8 @@ sub lists_regexps {
     #
     $first_str = $str;
     my $prev_str = $str;
-    for (my $i = 0; $i < @$lhs_exprs; $i++) {
-      my $lhs = $lhs_exprs->[$i];
+    for (my $i = 0; $i < @$lhs; $i++) {
+      my $lhs = $lhs->[$i];
       my $rhs = $rhs->[$i];
       #
       # need /ee: https://stackoverflow.com/questions/392643
@@ -47,8 +47,8 @@ sub lists_regexps {
 # 
 sub rx_dump_count {
   # unused items.
-  for (my $i = 0; $i < @$lhs_exprs; $i++) {
-    my $lhs = $lhs_exprs->[$i];
+  for (my $i = 0; $i < @$lhs; $i++) {
+    my $lhs = $lhs->[$i];
     my $rhs = $rhs->[$i];
     if (! exists $rx_count{"$lhs.$rhs"}) {
       print "0 $lhs/$rhs\n";
