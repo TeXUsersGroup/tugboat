@@ -36,6 +36,7 @@ END_HEADER
   my ($authors,$anchors,$author_html) = &find_authors (%accum);
 
   # print the sort-of index of authors at the beginning.
+  # qqq todo: force dek to be entry #14 (13 before, 18 after).
   my $item_count = 0;
   my $index_count = 0;
   print $fh "<p><table>\n";

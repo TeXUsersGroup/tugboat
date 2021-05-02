@@ -37,6 +37,7 @@ done
 if test $# -ne 4; then
   echo "$0: expected 4 non-option arguments, got $#: $*" >&2
   cat >&2 <<END_USAGE
+$Id$
 Usage: $0 [--landing-only] [--verbose] 
           CAPSULEFILE CAP-OUTDIR LND-OUTDIR CROSSREFXMLFILE
 

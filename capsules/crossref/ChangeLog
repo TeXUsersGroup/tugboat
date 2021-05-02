@@ -1,3 +1,8 @@
+2021-05-02  Karl Berry  <karl@freefriends.org>
+
+	* ltx2crossrefxml-tugboat.cfg (\MFB): no html markup here,
+	messes up in abstracts, e.g., tb130knuth-tuneup21.
+
 2021-05-01  Karl Berry  <karl@freefriends.org>
 
 	* ltx2crossrefxml-tugboat.cfg (\slash): handle.

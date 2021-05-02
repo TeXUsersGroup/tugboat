@@ -11,6 +11,12 @@ my %xlate_count;
 my %html2txt;
 
 # Two public access functions: tex-to-html and html-to-txt.
+# These do not really translate between the formats; all they do is
+# apply the translations given in the lists-translations.txt file.
+# More is needed, such as removing entities, but this is left for the
+# caller, since different contexts need different processing.
+# It's confusing. Sorry.
+# 
 sub xlate_tex2html {
   my ($str) = @_;
   for (my $i = 0; $i < @$tex_exprs; $i++) {

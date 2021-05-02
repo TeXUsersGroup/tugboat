@@ -148,7 +148,7 @@ sub crossref_write_files {
     
     close ($RPI) || die "close($rpi) failed: $!";
     
-    &crossref_create_landing_page (\%cap, \%issue,
+    &crossref_create_landing_page (\%cap,
       { landing_url => $landing_url,
         doi         => $doi,
       }
@@ -180,21 +180,22 @@ sub crossref_add_author_info {
 }
 
 
-# Write the landing page for capsule CAP of issue ISSUE using
-# supplemental information SUPP hashes, into the directory specified
-# with the --crossref option. SUPP contains the Crossref-specific
-# information computed above, namely the doi and landing_url.
+# Write the landing page for capsule CAP, using supplemental information
+# SUPP, into the directory specified with the --crossref option. SUPP
+# contains the Crossref-specific information computed above, namely the
+# doi and landing_url.
 # 
 # We output placeholders here for the bibliography and abstract; they
 # get replaced by a separate script that runs later, namely
 # ./cr-landing-bbl-abs.
 # 
 sub crossref_create_landing_page {
-  my ($cap_ref,$issue_ref,$supp_ref) = @_;
+  my ($cap_ref,$supp_ref) = @_;
   
   my %cap = %$cap_ref;
-  my %issue = %$issue_ref;
   my %supp = %$supp_ref;
+  # we have a back pointer to the issue information.
+  my %issue = %{$cap{"issueref"}};
 
   &debug_hash ("cap   for landing", %cap);
   &debug_hash ("issue for landing", %issue);
@@ -210,9 +211,12 @@ sub crossref_create_landing_page {
   my $issno = $issue{"issno"};
   my $seqno = $issue{"seqno"};
 
+  my $title_string = &xlate_html2txt ($cap{"title_html"});
+  $title_string =~ s!<.*?>!!g; # remove html markup
+
   print $LANDING <<END_LANDING;
 <!--#include virtual="/header.html"-->
-<title>$cap{title_html}
+<title>$title_string
        - TUGboat $volno:$issno ($issue{year}) - TeX Users Group</title>
 </head><body>
 
@@ -299,12 +303,14 @@ END_LANDING
   # do for the accumulated keyword list.
   my @categories = &categories_of_capsule ($seqno, %cap);
   my $categories_label = "Categor" . (@categories > 1 ? "ies" : "y");
-  my $cat_print = "";
+  my @cat_print = ();
   for my $cat (@categories) {
     my $tag = &category_to_id ($cat);
     (my $cat_nbsp = $cat) =~ s/ /&#xa0;/g; # for printing
-    $cat_print .= qq!\n<a href="/TUGboat/Contents/listkeyword.html#$tag">$cat_nbsp</a>!;
+    push (@cat_print,
+        qq!\n<a href="/TUGboat/Contents/listkeyword.html#$tag">$cat_nbsp</a>!);
   }
+  my $cat_print = join (" - ", @cat_print);
   print $LANDING <<END_LANDING;
 
 <p><b>$categories_label</b>:$cat_print</p>
