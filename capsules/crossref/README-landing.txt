@@ -20,7 +20,7 @@ crossref/dir1.lndout ("landing output") directory.
 
 From there, they are copied again into the crossref/dir2.process
 directory. In this directory, if the bbl/abs text needs hand editing,
-which is not uncommmon, the edits are done and those files saved.
+which is not uncommmon, the edits are done there and those files saved.
 bbl/abs in dir2.process are never overwritten. This is the only place
 where hand editing is supported and won't be lost.
 
@@ -38,6 +38,10 @@ cr-do-issue.
 This work can be done article by article as they are submitted, edited,
 and approved, or all at the end. In any case, there is lots of stuff
 that can only happen at the end. See ./README-process.txt for exact steps.
+
+Alternatively, if the edits can be made in the TUGboat source dir,
+instead of changing the files here, so much the better. See
+README-process.txt.
 
 Ultimately, when an issue is final and gets published, we copy the
 landing files to the web-visible directory

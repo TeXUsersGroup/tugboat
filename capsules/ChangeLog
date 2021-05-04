@@ -1,3 +1,16 @@
+2021-05-04  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (cro-preserve): better name for cro target,
+	since it seems usually we can use cro-scratch.
+
+	* capcrossref.pl (crossref_create_landing_page): keep entities
+	in the <title> string, but remove markup.
+
+2021-05-03  Karl Berry  <karl@freefriends.org>
+
+	* capcrossref.pl (crossref_create_landing_page): don't
+	output "Summary:" label if there's no text.
+
 2021-05-02  Karl Berry  <karl@freefriends.org>
 
 	* capcrossref.pl (crossref_create_landing_page): no need to

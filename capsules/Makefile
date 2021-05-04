@@ -60,7 +60,7 @@ cr_args =  $(cr_verbose) tb$(crossref_iss)capsule.txt \
 
 crl: # just landing pages
 	cr-do-issue --landing-only $(cr_args)
-cro: # full crossref run
+cro-preserve: # full crossref run, keeping hand-edits
 	cr-do-issue $(cr_verbose) $(cr_args)
 cro-scratch: # full crossref run, assuming no hand-editing
 	rm -f $(cr_xmlprocess)/*.abs $(cr_xmlprocess)/*.bbl # assume no edits

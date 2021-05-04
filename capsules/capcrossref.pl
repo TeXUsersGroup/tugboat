@@ -211,8 +211,9 @@ sub crossref_create_landing_page {
   my $issno = $issue{"issno"};
   my $seqno = $issue{"seqno"};
 
-  my $title_string = &xlate_html2txt ($cap{"title_html"});
-  $title_string =~ s!<.*?>!!g; # remove html markup
+  # we need to keep entities (dashes, quotes) for the <title>,
+  # but remove markup (<i>).
+  (my $title_string = $cap{"title_html"}) =~ s!<.*?>!!g;
 
   print $LANDING <<END_LANDING;
 <!--#include virtual="/header.html"-->
@@ -246,11 +247,13 @@ END_LANDING
   # for others too.
   $subtitles =~ s/(\&nbsp;){2,}/<br>&nbsp;&nbsp;/g;
   my $htmlnotes = $cap{htmlnotes} ? "\n<br>$cap{htmlnotes}" : "";
-  print $LANDING <<END_LANDING;
+  if ($shortdesc || $subtitles || $htmlnotes) {
+    print $LANDING <<END_LANDING;
 
 <p><b>Summary</b>:
 $shortdesc$subtitles$htmlnotes</p>
 END_LANDING
+  }
 
   # whether the article is public.
   my $availability = $cap{url} =~ m,/members/, 
