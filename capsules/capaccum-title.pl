@@ -42,6 +42,7 @@ END_HEADER
     $count++;
   }
   print $fh "</ol>\n";
+  print $fh "<hr>\n";
   
   &print_all_by_title ($fh, $titles, $anchors, $title_html);
 

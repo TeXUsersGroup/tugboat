@@ -1,3 +1,10 @@
+2021-05-09  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (diff-land): new test target.
+	* capaccum-author.pl,
+	* capaccum-keyword.pl,
+	* capaccum-title.pl: formatting.
+
 2021-05-04  Karl Berry  <karl@freefriends.org>
 
 	* Makefile (cro-preserve): better name for cro target,

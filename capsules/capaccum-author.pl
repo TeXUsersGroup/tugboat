@@ -36,7 +36,7 @@ END_HEADER
   my ($authors,$anchors,$author_html) = &find_authors (%accum);
 
   # print the sort-of index of authors at the beginning.
-  # qqq todo: force dek to be entry #14 (13 before, 18 after).
+  # qqq todo: force dek to be entry #15 (14 before, 17 after).
   my $item_count = 0;
   my $index_count = 0;
   print $fh "<p><table>\n";
@@ -55,6 +55,7 @@ END_HEADER
     $item_count++; # all items
   }
   print $fh "</table>\n";
+  print $fh "<hr>\n";
   
   &print_all_by_author ($fh, $authors, $anchors, $author_html);
 
@@ -136,6 +137,7 @@ sub print_all_by_author {
     my $a_html = $author_html->{$a_sort};
     
     print $fh <<START_TITLE_GROUP;
+
 <p class="tubidxgroup" id="$a_anchor">$a_html
   <small>(<a href="#$a_anchor">#$a_anchor</a>)</small>
 <small>

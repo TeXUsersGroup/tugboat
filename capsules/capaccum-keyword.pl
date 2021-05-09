@@ -158,6 +158,7 @@ sub print_all_by_category {
   # print each category and all items in that category.
   for my $cat (sort { $a cmp $b } keys %categories) {
     print $fh <<START_CATEGORY;
+
 <p class="tubidxgroup" id="$category_tags{$cat}"><b>$cat</b>
   <small>(<a href="#$category_tags{$cat}">#$category_tags{$cat}</a>)</small>
 <small>
