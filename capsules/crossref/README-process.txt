@@ -55,7 +55,7 @@ hand edits will be lost. If possible, it is simpler to do all editing in
 the TUGboat source dir (and thus cro-scratch).
 
 These initial runs only include the files for which there happened to be
-.bbl or .abs files present in the TUB source directory. To see which
+{bbl,abs}.tex files present in the TUB source directory. To see which
 those were, run
   make cr_verbose=--verbose cro-scratch
 Then we want to easily review them to make sure the transformations are
@@ -66,13 +66,10 @@ Then can check the relevant files at:
 
 When those first set of files are ok, must systematically go through all
 items in the issue, creating (by hand) abs.tex files for the abstracts
-and *.bbl files for the bibliographies out of whatever the article
+and bbl.tex files for the bibliographies out of whatever the article
 provides, translating as necessary to standard TUGboat and LaTeX
 formatting, e.g., using \bibitem. Best to do it one article at a time,
 rerunning the process above after each and making sure it comes out ok.
-
-If you edit .bbl files after the issue has gone to the printer, preserve
-the version used for printing with cp foo.bbl foo.bbl.printed.
 
 Reminder: besides checking the .html landing files, it is also necessary
 to check the generated issue.xml, especially the bibliography, title,

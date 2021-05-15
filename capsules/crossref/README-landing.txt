@@ -15,7 +15,7 @@ bibliography and abstract texts, which cannot be determined at that time.
 
 Then, via the ../cr-do-issue script and the other ../cr-* scripts that
 it calls, the bbl/abs files are unconditionally copied from the TUGboat
-issue source dir (../../../VV-N/ARTICLE/{*.bbl,abs.tex) into the
+issue source dir (../../../VV-N/ARTICLE/{bbl,abs}.tex) into the
 crossref/dir1.lndout ("landing output") directory.
 
 From there, they are copied again into the crossref/dir2.process
@@ -41,7 +41,8 @@ that can only happen at the end. See ./README-process.txt for exact steps.
 
 Alternatively, if the edits can be made in the TUGboat source dir,
 instead of changing the files here, so much the better. See
-README-process.txt.
+README-process.txt. Then the bbl/abs in dir2.process are removed first,
+so the source dir versions will get copied in.
 
 Ultimately, when an issue is final and gets published, we copy the
 landing files to the web-visible directory

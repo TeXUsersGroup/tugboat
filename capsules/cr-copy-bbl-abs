@@ -7,8 +7,8 @@
 # any bbl and abstract files for a given issue $1 to the temporary
 # holding directory $2.
 # 
-# We're going to assume there are no spaces in filenames, etc.,
-# cp supports -p, etc.
+# We're going to assume there are no spaces in filenames,
+# cp supports -p, and other such non-portabilities.
 
 if test $# -ne 2; then
   echo "Usage: $0 CAPSULE.txt OUTPUTDIR" >&2
@@ -50,9 +50,9 @@ if test ! -d "$issdir"; then
   exit 1
 fi
 
-bbl_count=`ls -1 $issdir/*/tb*.bbl 2>/dev/null | wc -l`
+bbl_count=`ls -1 $issdir/*/bbl.tex 2>/dev/null | wc -l`
 if test $bbl_count -eq 0; then
-  echo "$0: no .bbl files found under: $issdir" >&2
+  echo "$0: no bbl.tex files found under: $issdir" >&2
   exit 1
 fi
 #
@@ -64,14 +64,19 @@ fi
 
 # We intentionally do not erase existing files or move them aside;
 # let another level (the cr-do-issue script) do that. Which it does.
-# 
-if cp -pf $issdir/*/tb*.bbl $outdir/; then :; else
-  echo "$0: copy of bbl files failed, goodbye." >&2
-  exit 1
-fi
 
-# For the abstracts, we want to add the tbNNNident prefix. We don't use
-# it with the source abs.tex files for the sake of completion (and simplicity).
+# Separate the bbl used for the doi stuff from the one used by TeX; that
+# is, we manually copy or create bbl.tex in each item directory, and
+# then save it as tbNNNIDENT.bbl when copying into our output directory.
+# ltx2crossrefxml looks for it with that name.
+#
+for b in $issdir/*/bbl.tex; do
+  ident=`basename \`dirname "$b"\``
+  dest=$outdir/tb${seqno}${ident}.bbl
+  cp -pf "$b" "$dest" || exit 1
+done  
+
+# Similarly for abstracts.
 # 
 for a in $issdir/*/abs.tex; do
   ident=`basename \`dirname "$a"\``
@@ -79,5 +84,5 @@ for a in $issdir/*/abs.tex; do
   cp -pf "$a" "$dest" || exit 1
 done  
 
-echo "$0: $bbl_count bbl(s) and $abs_count abstract(s) copied: $outdir"
+echo "$0: $bbl_count bbl(s) and $abs_count abs(s) copied: $outdir"
 exit 0
