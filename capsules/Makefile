@@ -19,8 +19,8 @@ default check: one #all-diff
 
 # These issue values, and most of the targets below, come into play with
 # publishing a TUGboat issue; see the README.karl file on tug.org.
-testiss = 130
-lastiss = 129
+testiss = 129
+lastiss = 130
 crossref_iss = 130
 
 # use different temp dir on different machines.

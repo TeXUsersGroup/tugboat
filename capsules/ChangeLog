@@ -1,3 +1,13 @@
+2021-05-19  Karl Berry  <karl@tug.org>
+
+	* Makefile (lastiss): now 130.
+	* tb130capsule.txt: published.
+	* tb129capsule.txt: fully public.
+	* tb66capsule.txt: better CTAN link for Catalogue.
+	* lists-translations.txt (TUGboat Editors): txt transliteration.
+	* lists-unifications.txt (James Alexander): aka J. C. Alexander.
+	(TUGboat&#xa0;Editors): not needed.
+
 2021-05-19  Karl Berry  <karl@freefriends.org>
 
 	* tb128capsule.txt: /l/tug20-video, not tug2020.

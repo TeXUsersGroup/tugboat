@@ -13,12 +13,6 @@
 % 
 
 \begin{blurb}
-<p>Immediate online access to technical TUGboat articles will be
-available to TUG members only (so some of the links below require a TUG
-username and password).  General information items and articles already
-posted elsewhere are publicly available now.  All of the articles will
-become publicly available around April 2021.
-
 <p>If you're not already a member, we hope you'll consider <a
 href="/join.html">joining TUG</a> to support TUGboat and other TeX
 projects.  <a href="/memberaccess.html">More information on TUG member
@@ -35,7 +29,7 @@ access</a>.
         {Complete issue 41:3 as one pdf (17mb)}
         {}
         {\offset{.1}}
-        {https://tug.org/members/TUGboat/!TBIDENT!complete.pdf}
+        {/TUGboat/!TBIDENT!complete.pdf}
         {}
         {}
 
@@ -98,7 +92,7 @@ access</a>.
   {How \TeX\ changed my life}
   {math writing, typing, and typesetting}
   {263-264}
-  {https://tug.org/members/TUGboat/!TBIDENT!barr-changed.pdf}
+  {/TUGboat/!TBIDENT!barr-changed.pdf}
   {}
   {}
 
@@ -127,7 +121,7 @@ access</a>.
    {To print or not to print; Centering (again);
     New device driver for old format; What's in a~name}
    {265-268}
-   {https://tug.org/members/TUGboat/!TBIDENT!inn.pdf}
+   {/TUGboat/!TBIDENT!inn.pdf}
    {}
    {}
 
@@ -137,7 +131,7 @@ access</a>.
   {Historical review of \TeX{}3}
   {a 1991 review of \TeX, written for those experienced in other typesetting systems}
   {360-367}
-  {https://tug.org/members/TUGboat/!TBIDENT!flynn-tex3.pdf}
+  {/TUGboat/!TBIDENT!flynn-tex3.pdf}
   {}
   {}
 
@@ -157,7 +151,7 @@ access</a>.
 %%   {An experience of trying to submit a paper in \LaTeX\ in an \XML-first world}
 %%   {a report on a \LaTeX\ submission to \textit{\acro{IEEE} Annals}, and consequent expectations}
 %%   {\getfirstpage{walden-submit}}
-%%   {https://tug.org/members/TUGboat/!TBIDENT!walden-submit.pdf}
+%%   {/TUGboat/!TBIDENT!walden-submit.pdf}
 %%   {}
 %%   {}
 
@@ -190,7 +184,7 @@ access</a>.
   {Eye charts in focus: The magic of optotypes}
   {history and design of the optotypes used on eye charts}
   {269-274}
-  {https://tug.org/members/TUGboat/!TBIDENT!frear-optotype.pdf}
+  {/TUGboat/!TBIDENT!frear-optotype.pdf}
   {}
   {}
 
@@ -231,7 +225,7 @@ access</a>.
   {Using DocStrip for multiple document variants}
   {step-by-step example of homework assignments with questions, solutions, and more}
   {281-285}
-  {https://tug.org/members/TUGboat/!TBIDENT!leingang-docstrip.pdf}
+  {/TUGboat/!TBIDENT!leingang-docstrip.pdf}
   {}
   {}
 
@@ -241,7 +235,7 @@ access</a>.
   {The Non-Latin scripts \& typography}
   {examples of the wide range of typesetting and font requirements beyond Latin}
   {275-280}
-  {https://tug.org/members/TUGboat/!TBIDENT!mansour-nonlatin.pdf}
+  {/TUGboat/!TBIDENT!mansour-nonlatin.pdf}
   {}
   {}
 
@@ -262,7 +256,7 @@ access</a>.
   {development status and comparison of Lua\TeX\ and its relatives:
    Lua\acro{HB}\TeX, Lua\acro{JIT}\TeX\ and Lua\acro{JITHB}\TeX}
   {327-328}
-  {https://tug.org/members/TUGboat/!TBIDENT!scarso-luatex.pdf}
+  {/TUGboat/!TBIDENT!scarso-luatex.pdf}
   {}
   {}
 
@@ -272,7 +266,7 @@ access</a>.
 %   {Webnotes: Practical approaches}
 %   {putting an article's supplemental material on the web, with references}
 %   {\getfirstpage{walden-webnotes}}
-%   {https://tug.org/members/TUGboat/!TBIDENT!walden-webnotes.pdf}
+%   {/TUGboat/!TBIDENT!walden-webnotes.pdf}
 %   {}
 %   {}
 
@@ -282,7 +276,7 @@ access</a>.
   {Data display, plots and graphs}
   {simple example of using tables, scatter plots, line graphs, histograms}
   {324-326}
-  {https://tug.org/members/TUGboat/!TBIDENT!wilson-plotgraph.pdf}
+  {/TUGboat/!TBIDENT!wilson-plotgraph.pdf}
   {}
   {}
 
@@ -295,7 +289,7 @@ access</a>.
 %  {Typesetting Bangla script with Lua\LaTeX{}}
 %  {using HarfBuzz and \code{luaotfload} to achieve better shaping and colorization}
 %  {\getfirstpage{fischer-bangla}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!fischer-bangla.pdf}
+%  {/TUGboat/!TBIDENT!fischer-bangla.pdf}
 %  {}
 %  {}
 
@@ -305,7 +299,7 @@ access</a>.
   {\TeX doc online\Dash a web interface for serving \TeX\ documentation}
   {\HTTP\ \kern-.1em\API\ for \code{texdoc} and \CTAN\ topics}
   {341-342}
-  {https://tug.org/members/TUGboat/!TBIDENT!island-texdoc.pdf}
+  {/TUGboat/!TBIDENT!island-texdoc.pdf}
   {}
   {}
 
@@ -315,7 +309,7 @@ access</a>.
 %%%%   {\TeX\ Gyre text fonts revisited}
 %%%%   {incorporating math and symbol glyphs into text fonts, and OpenType accent positioning}
 %%%%   {\getfirstpage{jackowski-gyre}}
-%%%%   {https://tug.org/members/TUGboat/!TBIDENT!jackowski-gyre.pdf}
+%%%%   {/TUGboat/!TBIDENT!jackowski-gyre.pdf}
 %%%%   {}
 %%%%   {}
 
@@ -336,7 +330,7 @@ access</a>.
   {Making Markdown into a microwave meal}
   {freezing Markdown, Minted, and \BibLaTeX\ output for single-run processing}
   {318-320}
-  {https://tug.org/members/TUGboat/!TBIDENT!novotny-frozen.pdf}
+  {/TUGboat/!TBIDENT!novotny-frozen.pdf}
   {}
   {}
 
@@ -346,7 +340,7 @@ access</a>.
   {{\tt bib2gls}: selection, cross-references and locations}
   {selecting, grouping, referencing glossary items with \LaTeX's index facilities}
   {308-317}
-  {https://tug.org/members/TUGboat/!TBIDENT!talbot-bib2gls-more.pdf}
+  {/TUGboat/!TBIDENT!talbot-bib2gls-more.pdf}
   {}
   {}
 
@@ -356,7 +350,7 @@ access</a>.
   {\OpTeX\Dash A new generation of Plain \TeX}
   {modern Lua\TeX\ format with full Unicode support}
   {348-354}
-  {https://tug.org/members/TUGboat/!TBIDENT!olsak-optex.pdf}
+  {/TUGboat/!TBIDENT!olsak-optex.pdf}
   {}
   {}
 
@@ -367,7 +361,7 @@ access</a>.
           for \acro{GNU}/Linux}
   {a small \TeX\ distribution with Lua\TeX\ and \OpTeX\ that integrates easily on modern systems}
   {343-345}
-  {https://tug.org/members/TUGboat/!TBIDENT!vlasak-mmtex.pdf}
+  {/TUGboat/!TBIDENT!vlasak-mmtex.pdf}
   {}
   {}
 
@@ -377,7 +371,7 @@ access</a>.
 %%%  {Extending primitive coverage across engines}
 %%%  {\cs{expanded} and other primitives available in pdf\TeX, \XeTeX, (u)p\TeX}
 %%%  {\getfirstpage{wright-primitives}}
-%%%  {https://tug.org/members/TUGboat/!TBIDENT!wright-primitives.pdf}
+%%%  {/TUGboat/!TBIDENT!wright-primitives.pdf}
 %%%  {}
 %%%  {}
 
@@ -390,7 +384,7 @@ access</a>.
   {Functions and \texttt{expl3}}
   {an introduction to \LaTeX3 programming with functions and variables}
   {299-307}
-  {https://tug.org/members/TUGboat/!TBIDENT!gregorio-l3functions.pdf}
+  {/TUGboat/!TBIDENT!gregorio-l3functions.pdf}
   {}
   {}
 
@@ -400,7 +394,7 @@ access</a>.
   {Keyword scanning}
   {peculiarities of parsing keywords, catcodes, and performance}
   {335-337}
-  {https://tug.org/members/TUGboat/!TBIDENT!hagen-keyword.pdf}
+  {/TUGboat/!TBIDENT!hagen-keyword.pdf}
   {}
   {}
 
@@ -410,7 +404,7 @@ access</a>.
   {Representation of macro parameters}
   {considers making unused arguments more efficient and tracing output more consistent}
   {337-340}
-  {https://tug.org/members/TUGboat/!TBIDENT!hagen-param.pdf}
+  {/TUGboat/!TBIDENT!hagen-param.pdf}
   {}
   {}
 
@@ -420,7 +414,7 @@ access</a>.
   {User-defined Type~3 fonts in Lua\TeX}
   {constructing a font on the fly that can reference images, other fonts, graphics}
   {320-323}
-  {https://tug.org/members/TUGboat/!TBIDENT!hagen-type3.pdf}
+  {/TUGboat/!TBIDENT!hagen-type3.pdf}
   {}
   {}
 
@@ -430,7 +424,7 @@ access</a>.
   {Distinguishing 8-bit characters and Japanese characters in (u)p\TeX}
   {analysis and solutions for differing interpretations of byte sequences}
   {329-334}
-  {https://tug.org/members/TUGboat/!TBIDENT!kitagawa-char.pdf}
+  {/TUGboat/!TBIDENT!kitagawa-char.pdf}
   {}
   {}
 
@@ -440,7 +434,7 @@ access</a>.
   {\acro{UTF}-8 installations of \TeX}
   {changing \TeX's encoding to support reading/writing Unicode}
   {346-347}
-  {https://tug.org/members/TUGboat/!TBIDENT!liferenko-utf8.pdf}
+  {/TUGboat/!TBIDENT!liferenko-utf8.pdf}
   {}
   {}
 
@@ -460,7 +454,7 @@ access</a>.
 %%%%%%  {Testing indexes: {\tt testidx.sty}}
 %%%%%%  {test methodology and exhaustive comparisons of \code{makeindex}, \code{xindy}, \code{glossaries}, and more}
 %%%%%%  {\getfirstpage{talbot}}
-%%%%%%  {https://tug.org/members/TUGboat/!TBIDENT!talbot.pdf}
+%%%%%%  {/TUGboat/!TBIDENT!talbot.pdf}
 %%%%%%  {}
 %%%%%%  {}
 
@@ -470,7 +464,7 @@ access</a>.
 %  {An attempt at ragged-right typesetting}
 %  {esthetics and implementations of ragged right, especially for German text}
 %  {\getfirstpage{wermuth-ragged}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!wermuth-ragged.pdf}
+%  {/TUGboat/!TBIDENT!wermuth-ragged.pdf}
 %  {}
 %  {}
 %

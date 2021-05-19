@@ -54,7 +54,7 @@ R\r{u}\v{z}i\v{c}ka||R&#x016f;&#x017e;i&#x010d;ka||Ruzicka
 # this first is for \TeX{}\kern...works
 \TeX{}\kern-.07em ||TeX
 \TeX ||TeX
-\TUB{}\CONNECT{}Team||TUGboat\CONNECT{}Team
+\TUB{}\CONNECT{}Team||<i>TUGboat</i>&#xa0;Editors||TUGboat Editors
 
 # Various accents, etc. todo: use hex or names, not decimal.
 \"a||&#xe4;||a
