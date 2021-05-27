@@ -51,13 +51,13 @@
          \scshape{#2\unskip}},
       \fi
       \setbox0\vbox{\hfuzz=\maxdimen\noindent #3}% check for presence of French title
-      \ifdim\wd0>.2em #3\unskip
+      \ifdim\wd0>.2em \frenchspacing #3\unskip
       \else \frtitlefalse
       \fi
       \setbox0\hbox{#4}%        % check for presence of English title
       \ifdim\wd0>.2em
         \penalty-2\enskip
-        \iffrtitle[\fi\ignorespaces#4\unskip\iffrtitle]\fi
+        \iffrtitle[\fi\ignorespaces\frenchspacing #4\unskip\iffrtitle]\fi
       \fi
       \unskip
       \def\testpg{#1}%
