@@ -1,3 +1,9 @@
+2021-05-29  Karl Berry  <karl@freefriends.org>
+
+	* cahiers.sty (\cgpgno): \ifnum#1=#2, treat like only one number
+	was given.
+	(\cgstriphyph): rename from \killhyph.
+
 2021-05-27  Karl Berry  <karl@freefriends.org>
 
 	* cahiers.sty: (\cgart): \frenchspacing for titles.

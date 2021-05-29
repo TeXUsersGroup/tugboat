@@ -28,10 +28,30 @@
 \ifx\undefined\cgprepagenohook \let\cgprepagenohook=\relax \fi
 \ifx\undefined\cgpostpagenohook \let\cgpostpagenohook=\relax \fi
 
-\def\killhyph#1-<{#1}
-\def\cgpgno#1-#2<{\def\testpg{#2}%
-     \penalty-5 \enskip \cgprepagenohook \ifx \testpg\empty p.\,#1\else
-     pp.\,#1--\killhyph#2<\fi \cgpostpagenohook }
+% When the first arg to \cgart is a single number (\cgart{1}),
+% #1 is the number and #2 is empty.
+% 
+% When the first arg is a range (\cgart{2-3}),
+% #1 is the first number (2), and #2 is the second number with a - (3-).
+% 
+% So we have to strip off that trailing dash when we want just the
+% number, which we do with this macro, appending a < to the call:
+% 
+\def\cgstriphyph#1-<{#1}% remove trailing hyphen
+%
+\def\cgpgno#1-#2<{%
+  %\message{*** cgpgno1=#1, cgpgno2=#2}%
+  \def\testpg{#2}%
+  \penalty-5\enskip
+  \cgprepagenohook
+  \ifx\testpg\empty
+    p.\,#1%
+  \else
+    \ifnum #1=\cgstriphyph#2<\relax p.\,#1%
+    \else pp.\,#1--\cgstriphyph#2<\fi
+  \fi
+  \cgpostpagenohook
+}
 
 \renewcommand{\and}{\textup{and }}
 
