@@ -2,7 +2,7 @@
 % $Id$
 % tugboat.dtx - main source for LaTeX TUGboat classes.
 %
-% Copyright 1994-2020 TeX Users Group.
+% Copyright 1994-2021 TeX Users Group.
 %
 % This file is part of the tugboat package.
 %
@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2020-11-14 v2.24
+                   [2021-01-30 v2.24
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -725,7 +725,7 @@
 \def\CPU{\acro{CPU}}
 \def\CSczabbr{\ensuremath{\cal C}\kern-.1667em\lower.5ex\hbox{$\cal S$}}
 \def\CSS{\acro{CSS}}
-\def\CSTUG{\CSczabbr\acro{TUG}}
+\def\CSTUG{\CSczabbr\kern.05em\acro{TUG}}
 \def\CSV{\acro{CSV}}
 \def\CTAN{\acro{CTAN}}
 \def\DTD{\acro{DTD}}
@@ -807,7 +807,7 @@
 %
 %    \begin{macrocode}
 \def\mf{\textsc{Metafont}}
-\def\MFB{\textsl{The \MF\kern1pt book}}
+\def\MFB{\textsl{The \MF\kern.1em\-book}}
 \def\MkIV{Mk\acro{IV}}
 \let\TB@@mp\mp
 \DeclareRobustCommand{\mp}{\ifmmode\TB@@mp\else MetaPost\fi}
@@ -862,9 +862,9 @@
 \def\STIX{\acro{STIX}}
 \def\SVG{\acro{SVG}}
 \def\TANGLE{\texttt{TANGLE}\@}
-\def\TB{\textsl{The \TeX book}}
+\def\TB{\textsl{The \TeX\-book}}
 \def\TIFF{\acro{TIFF}}
-\def\TP{\textsl{\TeX}: \textsl{The Program}}
+\def\TP{\textsl{\TeX}:\ \textsl{The Program}}
 \DeclareRobustCommand{\TeX}{T\kern-.1667em\lower.424ex\hbox{E}\kern-.125emX\@}
 \def\TeXhax{\TeX hax}
 \def\TeXMaG{\TeX M\kern-.1667em\lower.5ex\hbox{A}%
@@ -2769,24 +2769,28 @@
 %    \begin{macrocode}
 \newdimen\@tubfullpageindent
 \@tubfullpageindent = \if@tubtwocolumn 4.875pc \else 3.875pc \fi
-\let\tubcaptionleftglue=\hfil
 %    \end{macrocode}
 % \end{macro}
 %
 % One-line captions are normally centered, but sometimes we want to set
-% them flush-left for consistency with other nearby figures. 
+% them flush left for consistency with other nearby figures. 
 % \begin{macro}{\tubcaptionleftglue}
 %    \begin{macrocode}
 \let\tubcaptionleftglue=\hfil
 %    \end{macrocode}
 % \end{macro}
 %
-% Ok, here is \cs{@makecaption}.
+% For \TUB, we like 9pt captions to help differentiate from the main text.
 %    \begin{macrocode}
 \def\tubcaptionfonts{\small}%
+%    \end{macrocode}
+%
+% Ok, here is \cs{@makecaption}.
+%    \begin{macrocode}
 \long\def\@makecaption#1#2{%
   \vskip\abovecaptionskip
-  \sbox\@tempboxa{\tubcaptionfonts \frenchspacing \tubmakecaptionbox{#1}{#2}}% try in an hbox
+  % try in an hbox:
+  \sbox\@tempboxa{\tubcaptionfonts \frenchspacing \tubmakecaptionbox{#1}{#2}}%
   \ifdim \wd\@tempboxa > \hsize
     {% caption doesn't fit on one line; set as a paragraph.
      \tubcaptionfonts \raggedright \hyphenpenalty=\@M \parindent=1em
@@ -3395,7 +3399,7 @@
 \def\tubtypesetdoi{\iftubomitdoioption\else % if not explicit omission ...
  \iftubfinaloption % do this if [final], even if pageno>900
   \vbox to 0pt{% don't impact normal layout
-    \edef\thedoi{\ifnum\value{page}>900 xnot\fi % but make url invalid if >900
+    \edef\thedoi{\ifnum\count0>900 xnot\fi % but make url invalid if >900
                  doi.org/\tubdoiprefix/\volno-\issno/\jobname}%
     \scriptsize
     \vskip\baselineskip

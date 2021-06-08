@@ -16,9 +16,11 @@
 %%%     and omit "and" from author lists, per Oren P.
 %%%   New field bookauthor for @incollection and @inproceedings.
 %%%   New fields for editors:
-%%%     "newpage" - force page break after entry;
-%%%     "urlnewline" - force line break before url value;
 %%%     "journaltie" - ~ instead of space after journal name.
+%%%     "newpage" - force page break after entry;
+%%%     "prebibitem" - material output before \bibitem, with newline appended.
+%%%     "urlnewline" - force line break before url value;
+%%%     
 %%% --karl, originally created 24jul18.
 %%% 
 %%% Modification of BibTeX style file /usr/local/texlive/2009/texmf-dist/bibtex/bst/base/abbrv.bst
@@ -70,9 +72,10 @@ ENTRY
     pubmed % urlbst
     url % urlbst
     lastchecked % urlbst
-    newpage    % tub
-    urlnewline % tub
     journaltie % tub
+    newpage    % tub
+    prebibitem % tub
+    urlnewline % tub
   }
   {}
   { label }
@@ -316,8 +319,10 @@ FUNCTION {output.check}
   if$
 }
 
+% tub: if prebibitem is nonempty, output it, plus a newline.
 FUNCTION {output.bibitem.original} % urlbst (renamed from output.bibitem, so it can be wrapped below)
 { newline$
+  prebibitem empty$ { skip$ } { prebibitem write$ newline$ } if$
   "\bibitem{" write$
   cite$ write$
   "}" write$
@@ -393,6 +398,7 @@ FUNCTION {field.or.null}
   if$
 }
 
+% italic correction should not be added before period or comma, so use \emph.
 FUNCTION {emphasize}
 { duplicate$ empty$
     { pop$ "" }

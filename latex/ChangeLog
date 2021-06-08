@@ -1,3 +1,19 @@
+2021-06-08  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst (prebibitem): new field.
+	(output.bibitem.original): output it if non-empty, with newline.
+	
+	* tugboat.dtx (\CSTUG): kern.
+	(\MFB): \kern.1em instead of 1pt.
+	(\TB): allow hyphenation after TeX-.
+	(\TP): no extra space after :.
+	(\tubcaptionleftglue, \tubcaptionfonts): use {macrocode} env.
+	(\tubtypesetdoi): use \count0 instead of \value{page},
+	to keep code the same as in plain.
+
+	* tubvariotest.tex,
+	* tubverbtest.tex: minimal tests for verbatim and varioref.
+
 2021-01-18  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\tubreflect): \TBError requires a help argument #3.
