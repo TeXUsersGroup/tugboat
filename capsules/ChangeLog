@@ -1,3 +1,16 @@
+2021-06-20  Karl Berry  <karl@freefriends.org>
+
+	* tb55capsule.txt,
+	* tb58capsule.txt,
+	* tb62capsule.txt: use http(s) links for TL guides per bb request.
+
+	* Makefile (diff-land): diff in more natural direction.
+	(upload-test): new redirecting target.
+
+2021-05-21  Karl Berry  <karl@freefriends.org>
+
+	* tb128capsule.txt: zprav is a knuth session.
+
 2021-05-19  Karl Berry  <karl@tug.org>
 
 	* Makefile (lastiss): now 130.

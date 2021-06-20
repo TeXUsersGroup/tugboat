@@ -126,7 +126,12 @@ The improbability of typographical~errors}
         {The {\TeX{} Live} guide, 3rd edition}
         {}
         {19-60}
-        {ftp://tug.org/historic/systems/texlive/1998/TeXLive3/doc/live.pdf}
+        {/TUGboat/tb19-1/tb58tlguide3.pdf}
+        {}
+        {<a href="/historic/systems/texlive/">TeX Live historic archive</a>}
+
+% ftp too often forbidden
+%{ftp://tug.org/historic/systems/texlive/1998/TeXLive3/doc/live.pdf}
 
 
 %THEcategory{Graphics Applications}

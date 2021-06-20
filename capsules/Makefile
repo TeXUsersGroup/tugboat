@@ -76,8 +76,11 @@ crxml:
 
 diff-land:
 	for f in $(cr_lndout)/*.html; do \
-	  diff -u0 $$f $(tubweb)/tb42-1/`basename $$f`; \
+	  diff -u0 $(tubweb)/tb42-1/`basename $$f` $$f; \
 	done | egrep -v '\[generated|^\+\+\+ |^@@ '
+
+upload-test upload-real:
+	$(MAKE) -C crossref $@
 
 # qqq upload to test crossref
 # qqq install landing files on web site

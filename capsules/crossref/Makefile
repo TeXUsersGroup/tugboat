@@ -48,7 +48,7 @@ force:
 # Crossref's upload tool seems to work fine. It comes from here:
 # https://www.crossref.org/education/member-setup/direct-deposit-xml/https-post
 # 
-cut = java -jar crossref-upload-tool.jar
+upload = java -jar crossref-upload-tool.jar
 crossread-upload-tool-help cut-help:
 	$(cut) --help
 #
@@ -63,13 +63,13 @@ crossref_user = --user `cat crossref-user.txt`
 chicken = #--dry-run
 #
 upload-test:
-	$(cut) $(chicken) $(crossref_user) \
+	$(upload) $(chicken) $(crossref_user) \
 	  --host $(crossref_test_host) \
 	   --metadata $(xml_output)
 #
 # It costs money to deposit a doi. Don't do it until you're sure.
 upload-real:
-	echo "checkme!"; false $(cut) $(chicken) $(crossref_user) \
+	checkme! $(upload) $(chicken) $(crossref_user) \
 	  --host $(crossref_real_host) \
 	  --metadata $(xml_output)
 #
