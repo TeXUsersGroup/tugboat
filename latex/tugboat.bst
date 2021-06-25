@@ -2,19 +2,20 @@
 %%% TUGboat changes are public domain.
 %%% 
 %%% Modified for TUGboat from abbrvurl.bst:
+%%%   New entry types @ctan (see ctanbib) and @online (alias for @misc).
+%%%   New field bookauthor for @incollection and @inproceedings.
 %%%   Abbreviate "page(s)" to "p(p).",
 %%%     "volume" to "vol.",
 %%%     "editor(s)" to "ed(s)".
-%%%   Use \emph instead of \em so we get automatic italic corrections.
 %%%   Output "Ph.D." rather than "PhD".
 %%%   Output "No." and "no." for number field.
+%%%   Omit spaces between author initials, like "A.B. Smith".
 %%%   Set urlintro="".
 %%%   Always use https://doi.org/ for the doi url, and omit doi: prefix
 %%%     (todo: doi urls not linked correctly).
-%%%   Omit spaces between author initials, like "A.B. Smith".
 %%%   Truncate long author lists in format.names (max.names, trunc.num)
 %%%     and omit "and" from author lists, per Oren P.
-%%%   New field bookauthor for @incollection and @inproceedings.
+%%%   Use \emph instead of \em so we get automatic italic corrections.
 %%%   New fields for editors:
 %%%     "journaltie" - ~ instead of space after journal name.
 %%%     "newpage" - force page break after entry;
@@ -72,6 +73,9 @@ ENTRY
     pubmed % urlbst
     url % urlbst
     lastchecked % urlbst
+    date       % ctan
+    urldate    % ctan
+    version    % ctan
     journaltie % tub
     newpage    % tub
     prebibitem % tub
@@ -250,6 +254,7 @@ FUNCTION {add.inlinelink}
       }
   if$
 }
+
 FUNCTION {output.nonnull}
 { % Save the thing we've been asked to output
   's :=
@@ -340,6 +345,18 @@ FUNCTION {fin.entry.original} % urlbst (renamed from fin.entry, so it can be wra
   newline$
 }
 
+% ctan
+FUNCTION {add.blank}
+{  " " * before.all 'output.state :=
+}
+
+% ctan
+FUNCTION {add.colon}
+{ empty$
+    'skip$
+    { before.all 'output.state := ":" output add.blank }
+  if$
+}
 
 FUNCTION {new.block}
 { output.state before.all =
@@ -573,6 +590,15 @@ FUNCTION {format.date}
     }
   if$
 }
+
+% output the date field, instead of using month/year.
+FUNCTION {format.date.direct}
+{ date empty$
+    {""}
+    { date }
+  if$
+}
+
 
 FUNCTION {format.btitle}
 { title emphasize
@@ -886,6 +912,23 @@ FUNCTION {format.url}
    }
   if$
 }
+
+FUNCTION {format.urldate}
+{ urldate empty$
+    {""}
+%    {'skip$}
+    {"last visited: " urldate *}
+  if$
+}
+
+FUNCTION {format.version}
+{ version empty$
+    {""}
+    {"version " version * }
+  if$
+}
+
+
 
 FUNCTION {format.eprint}
 { eprint empty$
@@ -1341,6 +1384,32 @@ FUNCTION {unpublished}
   new.block
   note "note" output.check
   format.date output
+  fin.entry
+}
+
+% original for ctan entry:
+%{ output.bibitem
+%  format.authors output
+%  author add.colon
+%  format.title output
+%  format.version output
+%  note output
+%  format.longdate output
+%  format.url output
+%  format.urldate output
+%  fin.entry.original
+%}
+
+% don't like printing urldates; and url is better last. Break up entry.
+FUNCTION {ctan}
+{ output.bibitem
+  format.authors "author" output.check
+  new.block
+  format.title "title" output.check
+  format.version output
+  format.date.direct "date" output.check
+  new.block
+  note "note" output.check
   fin.entry
 }
 
