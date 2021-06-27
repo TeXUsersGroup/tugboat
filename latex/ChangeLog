@@ -1,3 +1,14 @@
+2021-06-27  Karl Berry  <karl@freefriends.org>
+
+	* version 2.25 (2021-06-27) uploaded to CTAN.
+	* NEWS: update.
+	* tugboat.ins: update copyright year.
+	* tugboat.dtx (\Provides...): update version.
+	
+	* tugboat.dtx (\ifoldlongtable, \extractdate): remove,
+	we can assume a new-enough longtable. And \extractdate assumes
+	/'s, which no longer works.
+
 2021-06-25  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.bst (date, urldate, version): new fields.

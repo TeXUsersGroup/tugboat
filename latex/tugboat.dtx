@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2021-01-30 v2.24
+                   [2021-06-27 v2.25
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -37,13 +37,6 @@
                                      TUG macros source file%
 %</dtx>
                    ]
-%    \end{macrocode}
-%
-% ^^A behold, a horrible hack...
-%    \begin{macrocode}
-%<*dtx>
-\newif\ifoldlongtable
-%</dtx>
 %    \end{macrocode}
 %
 % \iffalse
@@ -64,37 +57,6 @@
 \usepackage{ltugcomn} % generated using the .ins file
 %
 \usepackage{array,longtable}
-%
-% If longtable.sty is not ancient, then it doesn't need
-% \cs{setlongtables}, so we avoid the setlong.tab game.
-\GetFileInfo{longtable.sty}
-\def\extractdate#1/#2/#3\relax{\def\fileyear{#1}%
-  \def\filemonth{#2}%
-  \def\fileday{#3}}
-\expandafter\extractdate\filedate\relax
-\expandafter\ifnum\fileyear>1996\relax
-  \oldlongtablefalse
-\else
-  \oldlongtabletrue
-  \expandafter\ifnum\fileyear=1996\relax
-    \expandafter\ifnum\filemonth>5\relax
-      \oldlongtablefalse
-    \else
-      \expandafter\ifnum\filemonth=5\relax
-        \expandafter\ifnum\fileday>23\relax
-          \oldlongtablefalse
-        \fi
-      \fi
-    \fi
-  \fi
-\fi
-\ifoldlongtable
-  \InputIfFileExists{setlong.tab}{}% if this file exists, it should
-%                                  % contain (only) \setlongtables
-    {\typeout{*** create a file `setlong.tab' containing only}
-     \typeout{***\space\space\space\string\setlongtables}
-     \typeout{*** to get the tables of commands, etc., lined up}}
-\fi
 %
 \begin{document}
  \GetFileInfo{tugboat.dtx}
@@ -446,7 +408,6 @@
 %
 % The section-numbering style, so that we can allow the same heading
 % layout as in the plain macros.
-% options}
 %
 %    \begin{macrocode}
 \DeclareOption{numbersec}{\let\if@numbersec\iftrue}

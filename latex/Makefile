@@ -1,5 +1,5 @@
 # $Id$
-# Copyright 2007-2020 TeX Users Group.
+# Copyright 2007-2021 TeX Users Group.
 # You may freely use, modify and/or distribute this file.
 # 
 opt = --interaction=nonstopmode --file-line-error
@@ -48,7 +48,6 @@ check-oddeven: ltugboat.sty
 checkht: ltugboat.sty
 	env TEXINPUTS=$(t3):$(tb): tldev texfot htlatex tub4htest.tex \
 	  "xhtml,html5,mathml,charset=utf-8,fn-in" " -cunihtf -utf8"
-
 
 spell:
 	aspell list --mode=tex --add-extra-dicts=`pwd`/.dict.pws <ltubguid.ltx\

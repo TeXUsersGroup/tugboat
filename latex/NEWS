@@ -1,8 +1,20 @@
 $Id$
 This file records noteworthy changes.  This file is public domain.
 
-2.24 (2020-11-14):
+2.25 (2021-06-27):
+ltugboat.cls:
+- new abbrevations: \RIT, \tbUTF.
 
+\tbUTF expands to \acro{UTF}, and, if the next character is a -
+(e.g., \tbUTF-8), don't allow breaking at it. (We don't define \UTF
+since other packages already do.)
+
+tugboat.bst:
+- new entry type @ctan, following ctanbib (https://ctan.org/pkg/ctanbib).
+- use \emph{...} instead of {\em ...}, so we get italic corrections.
+
+----
+2.24 (2020-11-14):
 ltugboat.cls:
 - new hyphenation exceptions: Ja-pa-nese, Pak-i-stan.
 - new abbrevations: \macOS, \OpTeX.
