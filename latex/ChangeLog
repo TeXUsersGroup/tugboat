@@ -1,3 +1,13 @@
+2021-08-09  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst (software): another alias for @misc.
+	(misc): allow editor field as well as author.
+	(for tb131vaughan-tei)
+	(presort): look for editor for misc and online.
+	(onlinestring): set to empty, for urlbst's @webpage,
+	but this is not enough, still prints in brackets.
+	* ltubguid.ltx: document.
+
 2021-06-27  Karl Berry  <karl@freefriends.org>
 
 	* version 2.25 (2021-06-27) uploaded to CTAN.

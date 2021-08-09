@@ -2,7 +2,9 @@
 %%% TUGboat changes are public domain.
 %%% 
 %%% Modified for TUGboat from abbrvurl.bst:
-%%%   New entry types @ctan (see ctanbib) and @online (alias for @misc).
+%%%   New entry types: @ctan (see ctanbib); 
+%%%                    @online and @software (aliases for @misc).
+%%%   For @misc, the editor field is accepted along with author.
 %%%   New field bookauthor for @incollection and @inproceedings.
 %%%   Abbreviate "page(s)" to "p(p).",
 %%%     "volume" to "vol.",
@@ -10,7 +12,7 @@
 %%%   Output "Ph.D." rather than "PhD".
 %%%   Output "No." and "no." for number field.
 %%%   Omit spaces between author initials, like "A.B. Smith".
-%%%   Set urlintro="".
+%%%   Set urlintro="", onlinestring=""..
 %%%   Always use https://doi.org/ for the doi url, and omit doi: prefix
 %%%     (todo: doi urls not linked correctly).
 %%%   Truncate long author lists in format.names (max.names, trunc.num)
@@ -107,7 +109,7 @@ FUNCTION {init.urlbst.variables}
 
   % String constants, which you _might_ want to tweak.
   "" 'urlintro := % prefix before URL; typically "Available from:" or "URL":
-  "online" 'onlinestring := % indication that resource is online; typically "online"
+  "" 'onlinestring := % indication that resource is online; typically "online"
   "cited " 'citedstring := % indicator of citation date; typically "cited "
   "[link]" 'linktextstring := % dummy link text; typically "[link]"
   "http://arxiv.org/abs/" 'eprinturl := % prefix to make URL from eprint ref
@@ -1291,7 +1293,18 @@ FUNCTION {mastersthesis}
 
 FUNCTION {misc}
 { output.bibitem
-  format.authors output
+  % originally just:
+  % format.authors output
+  author empty$
+    { 
+      editor empty$
+        'skip$
+        { format.editors output.nonnull }
+      if$
+    }
+    { format.authors output.nonnull }
+  if$
+  %
   title howpublished new.block.checkb
   title empty$ 'skip$ 'possibly.setup.inlinelink if$ % urlbst
   format.title output
@@ -1305,6 +1318,9 @@ FUNCTION {misc}
 }
 
 FUNCTION {online}
+{ misc }
+
+FUNCTION {software}
 { misc }
 
 FUNCTION {phdthesis}
@@ -1615,8 +1631,14 @@ FUNCTION {presort}
     { type$ "proceedings" =
         'editor.organization.sort
         { type$ "manual" =
-            'author.organization.sort
-            'author.sort
+            { author.organization.sort }
+            { type$ "online" =
+              type$ "misc" =
+              or
+                { author.editor.sort }
+                { author.sort }
+              if$
+            }
           if$
         }
       if$
