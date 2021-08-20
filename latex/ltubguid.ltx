@@ -528,11 +528,14 @@ Two caveats about these optional arguments:
   defines the \verb|verbatim| environment, as discussed next.
 \end{itemize}
 
-Authors may wish to use a more featureful verbatim package, such as such
-as \pkgname{verbatim}~\cite{Schoepf:verbatim:1996},
-\pkgname{listings}~\cite{pkg:listings}, or
+Authors may wish to use a more featureful verbatim package, such as
+\pkgname{listings}~\cite{pkg:listings} or
 \pkgname{fancyvrb}~\cite{pkg:fancyvrb}. This is ok; it just means the
-\TUB\ optional-argument feature is not available.
+\TUB\ optional-argument feature is not available. On the other hand,
+please do not use the \pkgname{minted} package if possible; it is much
+harder to customize and correct at the \TeX\ level, and the shell escape
+requirement is troublesome. In any case, we will almost always wish to
+print code listings in simple black, not colored or even grayscaled.
 
 If you use the \pkgname{listings} package, please specify:
 \begin{verbatim}[\small]

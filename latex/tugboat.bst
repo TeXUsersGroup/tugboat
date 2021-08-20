@@ -115,7 +115,7 @@ FUNCTION {init.urlbst.variables}
   "http://arxiv.org/abs/" 'eprinturl := % prefix to make URL from eprint ref
   "arXiv:" 'eprintprefix := % text prefix printed before eprint ref; typically "arXiv:"
   "https://doi.org/" 'doiurl := % prefix to make URL from DOI
-  "doi:" 'doiprefix :=      % text prefix printed before DOI ref; typically "doi:"
+  "" 'doiprefix :=      % text prefix printed before DOI ref; typically "doi:"
   "http://www.ncbi.nlm.nih.gov/pubmed/" 'pubmedurl := % prefix to make URL from PUBMED
   "PMID:" 'pubmedprefix :=      % text prefix printed before PUBMED ref; typically "PMID:"
 
@@ -942,7 +942,7 @@ FUNCTION {format.eprint}
 FUNCTION {format.doi}
 { doi empty$
     { "" }
-    { doi doiurl make.href }
+    { doiprefix doi * doiurl doi * make.href }
   if$
 }
 

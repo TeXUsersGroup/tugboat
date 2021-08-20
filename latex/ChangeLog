@@ -1,3 +1,13 @@
+2021-08-20  Karl Berry  <karl@freefriends.org>
+
+	* ltubguid.ltx: request not using minted.
+	
+	* tugboat.bst (doiprefix): set to empty string.
+	(format.doi): go back to original defn from abbrvurl.bst,
+	so the target of the href is the full doi url.
+	
+	* tugboat.dtx (\lstlistingnamestyle): set to \bfseries
+
 2021-08-09  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.bst (software): another alias for @misc.

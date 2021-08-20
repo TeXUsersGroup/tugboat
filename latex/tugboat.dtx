@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2021-06-27 v2.25
+                   [2021-08-20 v2.25
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -2772,11 +2772,15 @@
 %    \end{macrocode}
 %
 % Also use \cs{tubcaptionfonts} for the caption
-% labels, and put the label itself (e.g., ``Figure 1'') in bold.
+% labels, and put the label (e.g., ``Figure 1'') in bold.
+% If the \texttt{listings} package is being used, bold for its
+% label too; this \cs{def} is too early, but maybe listings will
+% play nice later.
 %
 %    \begin{macrocode}
 \def\fnum@figure{{\tubcaptionfonts \bf \figurename\nobreakspace\thefigure}}
 \def\fnum@table{{\tubcaptionfonts \bf \tablename\nobreakspace\thetable}}
+\def\lstlistingnamestyle{\bfseries}
 %    \end{macrocode}
 %
 % Let's reduce the default space above captions a bit, and give it some
