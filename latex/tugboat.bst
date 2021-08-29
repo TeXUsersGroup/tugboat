@@ -8,20 +8,22 @@
 %%%   New field bookauthor for @incollection and @inproceedings.
 %%%   Abbreviate "page(s)" to "p(p).",
 %%%     "volume" to "vol.",
-%%%     "editor(s)" to "ed(s)".
+%%%     "editor(s)" to "ed(s).",
+%%%     "edition" to "ed.".
 %%%   Output "Ph.D." rather than "PhD".
 %%%   Output "No." and "no." for number field.
 %%%   Omit spaces between author initials, like "A.B. Smith".
-%%%   Set urlintro="", onlinestring=""..
-%%%   Always use https://doi.org/ for the doi url, and omit doi: prefix
-%%%     (todo: doi urls not linked correctly).
-%%%   Truncate long author lists in format.names (max.names, trunc.num)
-%%%     and omit "and" from author lists, per Oren P.
+%%%   Set urlintro="" and onlinestring="".
+%%%   Always use https://doi.org/ for the doi url; omit "doi:" from output.
+%%%   Truncate long author lists in format.names (max.names, trunc.num);
+%%%     omit "and" from author lists, per Oren P.
 %%%   Use \emph instead of \em so we get automatic italic corrections.
 %%%   New fields for editors:
 %%%     "journaltie" - ~ instead of space after journal name.
 %%%     "newpage" - force page break after entry;
-%%%     "prebibitem" - material output before \bibitem, with newline appended.
+%%%     "nowarning" - if set, omit empty field warnings from output.check.
+%%%     "prebibitem" - material output before \bibitem, with newline appended
+%%%       (for example, section headings).
 %%%     "urlnewline" - force line break before url value;
 %%%     
 %%% --karl, originally created 24jul18.
@@ -78,8 +80,10 @@ ENTRY
     date       % ctan
     urldate    % ctan
     version    % ctan
+    %
     journaltie % tub
     newpage    % tub
+    nowarning  % tub
     prebibitem % tub
     urlnewline % tub
   }
@@ -320,7 +324,12 @@ FUNCTION {output}
 FUNCTION {output.check}
 { 't :=
   duplicate$ empty$
-    { pop$ "empty " t * " in " * cite$ * warning$ }
+    { pop$ 
+      nowarning empty$
+        { "empty " t * " in " * cite$ * warning$ }
+        'skip$
+      if$
+    }
     { t 'last.output.check := 
       output.nonnull }
   if$
@@ -658,8 +667,8 @@ FUNCTION {format.edition}
 { edition empty$
     { "" }
     { output.state mid.sentence =
-        { edition "l" change.case$ " edition" * }
-        { edition "t" change.case$ " edition" * }
+        { edition "l" change.case$ " ed." * }
+        { edition "t" change.case$ " ed." * }
       if$
     }
   if$

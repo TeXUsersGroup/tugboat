@@ -1,3 +1,7 @@
+2021-08-29  Karl Berry  <karl@freefriends.org>
+
+	* check-balance-tub (main): remove markdown triple quotes ```.
+
 2021-05-29  Karl Berry  <karl@freefriends.org>
 
 	* cahiers.sty (\cgpgno): \ifnum#1=#2, treat like only one number

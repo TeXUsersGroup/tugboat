@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2021-08-20 v2.25
+                   [2021-08-29 v2.25
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -1837,7 +1837,7 @@
       \def\|{\unskip\hfil\break}%
       \def\\{\endgraf}%
       \def\phone{\rm Phone: }%
-      \def\tubmultipleaffilauthor{\\\hspace*{1em}}%
+      \def\tubmultipleaffilauthor{\unskip,\\\hspace*{1em}}%
       \rm\@signature}%
   }%
   \ifnum\authornumber<0 \endgroup\fi
@@ -1847,14 +1847,16 @@
 %
 % The idea here is that if multiple authors share affiliation
 % information, we need only typeset the affiliation once. We separate by
-% commas for the \cs{maketitle}, and put on separate lines in the
-% \cs{makesignature}. Similarly, within \cs{netaddress},
-% |!tubmultipleaffilnet| separates with a space before and after the
-% comma, while . (All this per bb.) See |tb122childs-trotter.ltx| for an
-% example.
+% commas for the \cs{maketitle}, and put on separate lines, also with commas,
+% in the \cs{makesignature}.
+% 
+% Similarly, within \cs{netaddress}, |!tubmultipleaffilnet| separates
+% with a space before and after the
+% comma. (All this per bb.) See |tb122childs-trotter.ltx|,
+% |tb131sojka-czech.ltx| for examples.
 % 
 %    \begin{macrocode}
-\def\tubmultipleaffilauthor{\unskip, \ignorespaces}%
+\def\tubmultipleaffilauthor{\unskip,\ \ignorespaces}%
 \def\tubmultipleaffilnet{\unskip\textrm{\,,\ \ignorespaces}}
 %    \end{macrocode}
 %

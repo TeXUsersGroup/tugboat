@@ -11,6 +11,7 @@ sub main {
   while (<>) {
     next if /^\\end(article|\{document\})/;
     s/\$''\$//;             # common inch marks
+    s/```//;                # markdown triple quotes
     # remove % comments, a common and ignorable culprit,
     # but don't remove \% or "% (printf format strings).
     s/(^|[^\\"])%.*$/\1/mg;

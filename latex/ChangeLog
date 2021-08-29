@@ -1,3 +1,11 @@
+2021-08-29  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst (format.edition): abbreviate "edition" to "ed.".
+	(output.check): omit warning if "nowarning" field is set.
+
+	* tugboat.dtx (\tubmultipleaffilauthor, \tubmultipleaffilnet):
+	make more consistent.
+
 2021-08-20  Karl Berry  <karl@freefriends.org>
 
 	* ltubguid.ltx: request not using minted.
