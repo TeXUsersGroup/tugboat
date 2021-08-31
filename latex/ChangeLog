@@ -1,3 +1,8 @@
+2021-08-31  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\Xe, \XekernafterE): increase negative kern to
+	-.16em (from -.11em) for slanted \XeLaTeX.
+
 2021-08-29  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.bst (format.edition): abbreviate "edition" to "ed.".
