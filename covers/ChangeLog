@@ -1,3 +1,7 @@
+2021-09-06  Karl Berry  <karl@freefriends.org>
+
+	* tubtocmac.tex (\exhyphenpenalty): set to 10000 please.
+
 2021-04-16  Karl Berry  <karl@freefriends.org>
 
 	* tubtocmac.tex (\slMF, \slMP): define here, using \manualsl.

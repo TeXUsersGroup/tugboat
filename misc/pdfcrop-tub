@@ -1,0 +1,12 @@
+#!/bin/sh
+# $Id: ps2pdf-tub 296 2020-09-14 20:53:13Z karl $
+# Public domain.
+# 
+# Excise the "PDFCROP" version line, preserve exit status.
+
+out=${TMPDIR-/tmp}/pdfcroptub.$$
+pdfcrop "$@" >$out
+status=$?
+grep -v '^PDFCROP 1\.' $out
+rm -f $out
+exit $status
