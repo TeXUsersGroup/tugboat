@@ -1,3 +1,10 @@
+2021-09-15  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\tubabovedoi): new hook, used in tb131rosendahl-tug21.
+	
+	* tugboat.dtx (\AtBeginDocument): use \pdfstringdefDisableCommands
+	(if it's defined, i.e., hyperref is load) to disable \acro.
+
 2021-08-31  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\Xe, \XekernafterE): increase negative kern to

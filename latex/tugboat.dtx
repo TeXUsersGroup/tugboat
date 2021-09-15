@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2021-08-31 v2.25
+                   [2021-09-15 v2.25
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -346,10 +346,19 @@
 % We want to use \texttt{hyperref}'s \cs{texorpdfstring}, e.g., in the
 % \texttt{draft} option above. If \texttt{hyperref} is not loaded,
 % define our own trivial fallback to expand to the \TeX\ (first) argument.
+% 
+% Similarly, disable \acro if we have hyperref, commonly used in sections.
 %    \begin{macrocode}
 \AtBeginDocument{%
   \ifx\undefined\texorpdfstring
     \DeclareRobustCommand{\texorpdfstring}[2]{#1}%
+  \fi
+  %
+  \ifx\undefined\pdfstringdefDisableCommands\else
+    \pdfstringdefDisableCommands{%
+      \let\acro\relax
+      % lots more could be added.
+    }%
   \fi
 }
 %    \end{macrocode}
@@ -3015,7 +3024,7 @@
 %
 % Finally, if |microtype| is loaded, we want it to be deactivated in
 % verbatim blocks.  It often manipulates a leading |\| rather too much,
-% and messes with the visible fixed-width alignment.
+% thus messing with the visible fixed-width alignment.
 %    \begin{macrocode}
 \AtBeginDocument{%
    \@ifpackageloaded{microtype}
@@ -3362,6 +3371,7 @@
 %    \begin{macrocode}
 %
 \def\tubdoiprefix{10.47397/tb} % the number crossref assigned us
+\def\tubabovedoi{}             % fudge spacing or whatever.
 %
 \def\tubtypesetdoi{\iftubomitdoioption\else % if not explicit omission ...
  \iftubfinaloption % do this if [final], even if pageno>900
@@ -3370,6 +3380,7 @@
                  doi.org/\tubdoiprefix/\volno-\issno/\jobname}%
     \scriptsize
     \vskip\baselineskip
+    \tubabovedoi
     \iftubsecondcolstart \moveright \tubcolwidthandgutter \fi
     \rlap{\expandafter\tbsurl\expandafter{\thedoi}}%
     \vss
@@ -3562,7 +3573,7 @@
 % \subsection{Initialization}
 %
 % If we're going to use Harvard-style bibliographies, we set up the
-% bibliography style: the user doesn't get any choice.
+% bibliography style: the user doesn't get any choice. (Not recommended.)
 %
 %    \begin{macrocode}
 \if@Harvardcite

@@ -38,6 +38,9 @@ check: ltugboat.sty
 	$(pdflatex) tubhytest.tex
 	$(pdflatex) tubutftest.tex
 
+try: ltugboat.cls
+	$(pdflatex) tubhytest.tex
+
 check-oddeven: ltugboat.sty
 	$(pdflatex) tubfinal-odd.tex
 	$(pdflatex) tubfinal-even.tex

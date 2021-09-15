@@ -1,7 +1,9 @@
 #!/bin/sh
 # $Id$
-# Create files for Cadmus, per their ~tubprod/tb00/FileSpecs_2020.pdf doc.
-# One file per page, with names in a specific format.
+# Public domain.
+# 
+# Create files for Cadmus, per their ~tubprod/00/FileSpecs_2020.pdf doc.
+# One file per page, with names in a specific format, grayscaled by default.
 # Run from the top-level issue Makefile.
 # Required option: --pubmonth NN (used in the filenames).
 # Optional option: --colorpages "NNN NNN ..." (don't grayscale those pages).
