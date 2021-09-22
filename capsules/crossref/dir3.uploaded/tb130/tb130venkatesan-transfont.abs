@@ -1,0 +1,7 @@
+  In this short note we discuss the abstract topological aspects of
+  fonts and how a simple homotopy deformation can be created to
+  transition a glyph in one font to that of another font. We demonstrate
+  interesting transitions for some fonts from sans-serif to serif using
+  a JavaScript implementation of a simple algorithm. We also discuss
+  other cases which involve deformations that map non-homeomorphic
+  configurations that involve catastrophic bifurcations.

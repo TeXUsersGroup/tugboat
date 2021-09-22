@@ -1,0 +1,13 @@
+Sometimes you can read (or hear) comments about \TEX\ not being a real
+programming language or the wish for it to be more like a typical
+procedural language. When we discuss the language aspect of \TEX, it
+concerns a macro language and that is for a good reason: one can mix
+content and operations on that content in one document source. That
+source is interpreted and processed as it goes. This is contrary to a
+procedural language, where one explicitly has to push content into some
+procedure.
+
+In this article I will introduce some of the additional
+features that \LUAMETATEX\ provides. They are the result of experiencing
+many years of macro writing and the wish to come up with readable code
+using native features of the language when possible.

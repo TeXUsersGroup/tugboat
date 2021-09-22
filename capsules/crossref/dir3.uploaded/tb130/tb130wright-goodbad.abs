@@ -1,0 +1,11 @@
+Creating document commands in \LaTeX{} has traditionally involved a mix
+of \cs{newcommand}, semi-internal kernel commands (like \cs{@ifnextchar}
+and \cs{@ifstar}) and low-level \TeX{} programming using \cs{def}. As
+part of wider efforts to improve \LaTeX{}, the team have over the past
+few years developed ideas for creating document commands in the package
+\pkg{xparse}.
+The \LaTeX{} kernel now integrates most, though not all, of \pkg{xparse} into
+the kernel. That means the core ideas are available out-of-the-box. This seems
+like a good time, therefore, to look at the best ways to use the abilities of
+\pkg{xparse} in making document commands. I won't look at the full detail,
+but rather pick out how to, and how not to, create good document commands.

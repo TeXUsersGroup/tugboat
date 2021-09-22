@@ -1,0 +1,4 @@
+The macros on page 299 of \MFB, which generalize \MF's
+mediation operation, have some bugs which went unnoticed for years.
+This article discusses how to fix the bugs, and some other improvements
+to the macros.

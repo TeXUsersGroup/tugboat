@@ -1,0 +1,42 @@
+\begin{thebibliography}{1}
+
+\bibitem{animate}
+A.~Grahn.
+\newblock The \texttt{animate} package, 2020.
+\newblock \url{https://ctan.org/pkg/animate}.
+
+\bibitem{lettre41}
+{\gobble{GUTenberg}Association GUTenberg}.
+\newblock \emph{La Lettre GUTenberg} numéro 41, Décembre 2020.
+\newblock \url{https://www.gutenberg.eu.org/IMG/pdf/lettre41.pdf}.
+
+\bibitem{Metafun}
+H.~Hagen.
+\newblock \emph{Metafun}.
+\newblock \url{http://www.pragma-ade.com/general/manuals/metafun-p.pdf}, 2020.
+\newblock v.~2.11.3.
+
+\bibitem{luamplib}
+H.~Hagen, T.~Hoekwater, et~al.
+\newblock The \texttt{luamplib package}.
+\newblock \url{https://ctan.org/pkg/luamplib}, 2020.
+\newblock v.~2.11.3.
+
+\bibitem{Metapost}
+J.D.~Hobby, {MetaPost Development Team}.
+\newblock \emph{MetaPost, a user's manual}.
+\newblock \url{https://ctan.org/pkg/metapost}, 2019.
+\newblock v.~2.0.
+
+\bibitem{ProgrammingLua}
+R.~Ierusalimschy.
+\newblock \emph{Programming in Lua}.
+\newblock \tbsurl{Lua.org}, 2016.
+
+\bibitem{LuaTeXmanual}
+{Lua{\TeX} development team}.
+\newblock \emph{Lua{\TeX} Reference Manual}.
+\newblock \url{http://www.luatex.org/svn/trunk/manual/luatex.pdf}, March 2020.
+\newblock v.\,1.12.
+
+\end{thebibliography}

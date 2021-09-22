@@ -1,0 +1,19 @@
+Creating new document commands in \LaTeX{} has traditionally been the
+job of \cs{newcommand}.
+Over the last decade, the \LaTeX{} team have developed \pkg{xparse}, a
+generic document command parser, as a way to unify many ideas and
+provide a single consistent way to create document commands. 
+
+In this article, I want to look at why to use this \enquote{\pkg{xparse}}
+approach, and how it compares to existing solutions, both in the \LaTeX{}
+kernel and the wider package sphere. Here, I'm going to avoid talking about
+\enquote{simple} shortcuts (things such as
+\cs{newcommand}\cs{myname}\tubbraced{Joseph}):
+these are best left to \cs{newcommand}. Instead, I want to deal with commands
+which take arguments and have some element of \enquote{programming} to them.
+
+What I'll seek to highlight here is that using \cs{NewDocumentCommand}, we get
+a single consistent and reliable way to create a variety of commands. There's
+no need to worry about clashes between approaches, and it all
+\enquote{just works}.
+

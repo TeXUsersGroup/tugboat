@@ -1,0 +1,90 @@
+\bibitem{ref[bs boss]} The Bank of San Serriffe, account balances.
+\tbsurl{www-cs-faculty.stanford.edu/~knuth/boss.html}
+
+\smallbreak
+\bibitem{ref[bs dtbook]} Donald E. Knuth, {\sl Digital Typography\/}
+(Stanford, California:
+ Center for the Study of Language and Information, 1999), xvi+685~pages.
+ (CSLI Lecture Notes, no.~78.) The second printing (2012) contains numerous
+ corrections.
+
+\smallbreak
+\bibitem{ref[bs oldoldtune]} Donald Knuth, The \TeX\ tuneup of\/ 2008,
+{\sl TUGboat\/ \bf29}:2 (2008), 233--238.
+\tbsurl{tug.org/TUGboat/tb29-2/tb92knut.pdf}
+
+\smallbreak
+\bibitem{ref[bs oldtune]} Donald E. Knuth, The \TeX\ tuneup of\/ 2014,
+{\sl TUGboat\/ \bf35}:1 (2014), 5--8.
+\tbsurl{tug.org/TUGboat/tb35-1/tb109knut.pdf}
+
+\smallbreak
+\bibitem{ref[bs stackxa]} 
+ \tbunichar{6f47}\tbunichar{6d12}\tbunichar{5f20},
+ \tbsurl{tex.stackexchange.com/questions/551313}
+(27 June 2020).
+
+\smallbreak
+\bibitem{ref[bs stackxb]} 
+ \tbunichar{6f47}\tbunichar{6d12}\tbunichar{5f20},
+ \tbsurl{tex.stackexchange.com/questions/552166}
+(03 July 2020).
+
+\smallbreak
+\bibitem{ref[bs ctan]} CTAN: Comprehensive \TeX\ Archive Network,
+\tbsurl{ctan.org}
+
+\smallbreak
+\bibitem{ref[bs lpbook]} Donald E. Knuth, {\sl Literate Programming\/}
+(Stanford, California:
+Center for the Study of Language and Information, 1992), xvi+368~pages.
+(CSLI Lecture Notes, no.~27.)
+
+\smallbreak
+\bibitem{ref[bs abcde]} {\sl Computers \& Typesetting},
+\tbsurl{www-cs-faculty.stanford.edu/~knuth/abcde.html}
+
+\smallbreak
+\bibitem{ref[bs party]} Barbara Beeton, Peter Gordon, and Donald Knuth,
+{\sl Computers \& Typesetting\/} coming out party,
+{\sl TUGboat\/ \bf7}:2 (June 1986), 93--98.
+\tbsurl{tug.org/TUGboat/tb07-2/tb15knut.pdf}
+(My remarks have also been reprinted, with amendments,
+as Chapter 28 of [2].)
+
+\smallbreak
+\bibitem{ref[bs volA]} Donald E. Knuth, {\sl The \TeX book\/}
+ (Reading, Mass.: Addison--Wesley, 1984), x+483~pages.
+ Also published as {\sl Computers \& Typesetting}, Volume~A.
+ Currently in its 35th printing (paperback, 2017)
+ and 23rd printing (hardcover, 2021).
+
+\smallbreak
+\bibitem{ref[bs volB]} Donald E. Knuth, {\sl Computers \& Typesetting}, 
+ Volume~B, {\sl \TeX:\ The Program\/}
+ (Reading, Mass.: Addison--Wesley, 1986), xvi+594~pages;
+ fifth printing (1994),  xvi+600~pages.
+ Currently in its 11th printing (hardcover,~\rlap{2021).}
+
+\smallbreak
+\bibitem{ref[bs volC]} Donald E. Knuth, {\sl \MFB\/}
+ (Reading, Mass.: Addison--Wesley, 1986), xii+361~pages.
+ Also published as {\sl Computers \& Typesetting}, Volume~C.
+ Currently in its 14th printing (paperback, 2017)
+ and 10th printing (hardcover, 2021).
+
+\smallbreak
+
+\bibitem{ref[bs volD]} Donald E. Knuth, {\sl Computers \& Typesetting},
+ Volume~D, {\sl \MF:\ The Program\/}
+ (Reading, Mass.: Addison--Wesley, 1986), xvi+560~pages;
+ third printing (1991),  xvi+566~pages.
+ Currently in its 9th printing (hardcover, 2021).
+
+\smallbreak
+\bibitem{ref[bs volE]} Donald E. Knuth, {\sl Computers \& Typesetting},
+ Volume~E, {\slshape Computer Modern Typefaces\/}
+ (Reading, Mass.: Addison--Wesley, 1986), xvi+588~pages.
+ Currently in its 8th printing (hardcover, 2017).
+
+\end{thebibliography}

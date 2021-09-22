@@ -1,0 +1,34 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi\input bibnames.sty \input path.sty \ifx \k \undefined \let \k = \c
+  \immediate\write16{Ogonek accent unavailable: replaced by cedilla}\fi
+  \hyphenation{An-wen-der-ver-ein-i-gung Co-lo-phon Deutsch-spra-chi-ge Hol-dys
+  Ko-lo-dziej-ska Lar-ra-bee mark-up Rijks-uni-ver-si-teit South-all}
+\begin{thebibliography}{1}
+
+\bibitem{xGregorio:TB36-2-149}
+E.~Gregorio.
+\newblock Recollections of a spurious space catcher.
+\newblock \emph{{\TUB{}}} 36(2):149--161, 2015.
+\newblock \url{https://tug.org/TUGboat/tb36-2/tb113gregorio.pdf}
+
+\bibitem{Knuth:ct-a}
+D.E.~Knuth.
+\newblock \emph{The {\TeX}book}, vol.~A of \emph{Computers and Typesetting}.
+\newblock Ad{\-d}i{\-s}on-Wes{\-l}ey, Reading, MA, USA, {\noopsort{1986a}}1986.
+
+\bibitem{Mittelbach:TB35-3-248}
+F.~Mittelbach.
+\newblock How to influence the position of float environments like figure and
+  table in {\LaTeX}?
+\newblock \emph{TUGboat} 35(3):248--254, 2014.
+\newblock \url{https://tug.org/TUGboat/tb35-3/tb111mitt-float.pdf}
+
+\bibitem{Mittelbach:2018:MFP}
+F.~Mittelbach.
+\newblock Managing forlorn paragraph lines (a.k.a. widows and orphans) in
+  {\LaTeX}.
+\newblock \emph{TUGboat} 39(3):246--251, 2018.
+\newblock \url{https://tug.org/TUGboat/tb39-3/tb123mitt-widows.pdf}
+
+\end{thebibliography}

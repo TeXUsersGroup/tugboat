@@ -1,0 +1,53 @@
+\begin{thebibliography}{1}
+
+\bibitem{cyril}
+B.~Beeton.
+\newblock Mathematical symbols and {C}yrillic fonts ready for distribution
+  (revised).
+\newblock \emph{\TUB} 6(3):124--126, 1985.
+\newblock \newline \url{tug.org/TUGboat/tb06-3/tb13beetcyr.pdf}
+
+\bibitem{cork}
+Extended {\TeX} font encoding scheme{\Dash}{L}atin.
+\newblock \emph{\TUB} 11(4):516, 1990.
+\newblock \newline \url{tug.org/TUGboat/tb11-4/tb30ferguson.pdf}
+
+\bibitem{omega}
+Y.~Haralambous, J.~Plaice.
+\newblock {First applications of \Omega: {G}reek, {A}rabic, {K}hmer,
+  {P}oetica, \protect\acro{ISO}~10646\slash {\protect\acro{UNICODE}}, etc.}
+\newblock \emph{\TUB} 15(3):344--353, 1994.
+\newblock \url{tug.org/TUGboat/tb15-3/tb44haralambous-omega.pdf}
+
+\bibitem{gibbs}
+D.E.~Knuth.
+\newblock Mathematical typography.
+\newblock \emph{Bull.~Amer. Math. Soc} 1(2):337--372, March 1979.
+\newblock
+  \url{https://www.ams.org/journals/bull/1979-01-02/S0273-0979-1979-14598-1/S0273-0979-1979-14598-1.pdf}
+
+\bibitem{TB}
+D.E.~Knuth.
+\newblock \emph{The \TeX book}.
+\newblock Addison-Wesley, Reading, Massachusetts, 1984.
+\newblock Volume A of \textsl{Computers \& Typesetting}.
+
+\bibitem{volb}
+D.E.~Knuth.
+\newblock \emph{\TeX:\ The Program}.
+\newblock Addison-Wesley, Reading, Massachusetts, 1986.
+\newblock Volume B of \textsl{Computers \& Typesetting}.
+
+\bibitem{itex}
+D.E.~Knuth.
+\newblock An earthshaking announcement.
+\newblock \emph{\TUB} 31(2):121--124, 2010.
+\newblock \newline \url{tug.org/TUGboat/tb31-2/tb98knut.pdf}
+
+\bibitem{noto}
+S.~Matteson.
+\newblock The road to {N}oto.
+\newblock \emph{\TUB} 41(2):145--154, 2020.
+\newblock \url{tug.org/TUGboat/tb41-2/tb128matteson-noto.pdf}
+
+\end{thebibliography}

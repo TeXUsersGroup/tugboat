@@ -1,0 +1,7 @@
+\OpTeX\ [1] was introduced in an article [2] in the previous issue of \TUB.
+It is a macro package that creates a format for Lua\TeX.
+Its features are comparable with other formats like \LaTeX\ or \ConTeXt.
+One may ask why use a new format, particularly when it requires a different
+markup syntax? I try to answer this question here. I present a comparison 
+among the \LaTeX, \ConTeXt, and \OpTeX\ formats,
+from various points of view.
