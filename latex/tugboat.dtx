@@ -715,6 +715,7 @@
 \def\Ghostscript{Ghost\-script}
 \def\GNU{\acro{GNU}}
 \def\GUI{\acro{GUI}}
+\DeclareRobustCommand{\HarfBuzz}{Harf\discretionary{-}{}{\kern.077em}Buzz}
 \def\Hawaii{Hawai`i}
 \def\HTML{\acro{HTML}}
 \def\HTTP{\acro{HTTP}}
@@ -1207,12 +1208,35 @@
 \else
   % This hyperref hook-in is due to Ulrike Fischer.
   % \url{https://github.com/latex3/hyperref/issues/125}.
+  % \tb[sh]url@ are defined next.
   \DeclareRobustCommand*{\tbsurl}{\hyper@normalise\tbsurl@}%
-    \def\tbsurl@#1{\hyper@linkurl{\Hurl{#1}}{https://#1}}%
   \DeclareRobustCommand*{\tbhurl}{\hyper@normalise\tbhurl@}
-    \def\tbhurl@#1{\hyper@linkurl{\Hurl{#1}}{http://#1}}%
 \fi
 }
+%
+% Outside \AtBeginDocument, back at the top level of the dtx,
+% turn on expl syntax for the main definitions of \tb[sh]url.  We want
+% to auto-remove an explicit protocol in case it
+% was given. Only the correct protocol is removed, the incorrect
+% protocol (\tbsurl{http://}) generates an invalid link.  That's ok
+% because the link wouldn't be correct anyway.
+\ExplSyntaxOn
+\def\tbsurl@#1  % https
+ {
+   \str_set:Nn\l_tmpa_str{#1}
+   \str_remove_once:Nn\l_tmpa_str{https://}   
+   \expandafter\hyper@linkurl\expandafter{\expandafter\Hurl\expandafter
+                                            {\l_tmpa_str}}{https://\l_tmpa_str}
+ }
+
+\def\tbhurl@#1  % http
+ {
+   \str_set:Nn\l_tmpa_str{#1}
+   \str_remove_once:Nn\l_tmpa_str{http://}   
+   \expandafter\hyper@linkurl\expandafter{\expandafter\Hurl\expandafter
+                                            {\l_tmpa_str}}{http://\l_tmpa_str}
+ }
+\ExplSyntaxOff
 %
 % Make \! work in text mode.
 \DeclareRobustCommand{\!}{\ifmmode\mskip-\thinmuskip \else\kern-0.16667em \fi}

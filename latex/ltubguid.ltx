@@ -724,21 +724,28 @@ As mentioned above, please load either \texttt{url} or (preferably)
 \texttt{hyperref} so that reasonable line breaking of urls can happen.
 
 Furthermore, for the printed (visible) \TUB\ page, nowadays we typically
-omit a leading \texttt{http://} or \texttt{https://}. But for the link
-to actually work in the output \PDF\ or \HTML, the protocol is required
-(or it appears to be a local filesystem path). Therefore the
+prefer to omit a leading \texttt{http://} or \texttt{https://}. But for
+the link to actually work in the output \PDF\ or \HTML, the protocol is
+required (or it appears to be a local filesystem path). Therefore the
 \texttt{ltugboat} class provides (as of version 2.23, released
 March~2020) commands \cs{tbsurl} for \texttt{https} and \cs{tbhurl} for
-\texttt{http}.\footnote{They are simple two-line wrapper around
-\cs{hyper@linkurl}, and are due to Ulrike Fischer.
+\texttt{http}.\footnote{They are wrappers around \cs{hyper@linkurl}, and
+are due to Ulrike Fischer.
 \url{https://github.com/latex3/hyperref/issues/125}\raggedright}
 
 For example, \verb|\tbsurl{tug.org}| typesets the text
 `\texttt{tug.org}' (with the usual url line breaks) as a link to
 \url{https://tug.org}.
 
-Similarly, \verb|\tbhurl{mirror.ctan.org}| typesets the text
-`\texttt{mirror.ctan.org}' as a link to \url{http://mirror.ctan.org}.
+Similarly, \verb|\tbhurl{example.org}| typesets the text
+`\texttt{example.org}' as a link to \url{http://example.org}.
+
+The correct protocol can be explicitly specified, and will also be
+stripped for display. That is, \verb|\tbsurl{https://tug.org}| also
+works. This can be particularly useful for bibliographies. However, an
+incorrect protocol (\texttt{http} with \cs{tbsurl} or the converse) will
+not be stripped, and will generate an invalid url. That's ok because
+such an inconsistent specification cannot be handled reliably.
 
 \cs{tbsurl} and \cs{tbhurl} only add the protocol and make live links if
 \texttt{hyperref} is loaded. Without \texttt{hyperref}, they are merely
@@ -748,8 +755,8 @@ output, the printed url without the protocol suffices. (When a user
 copies/pastes url text into a browser, it will normally work.)
 
 For \texttt{ftp}, \texttt{rsync}, and other protocols, it is best to
-include them explicitly and use \cs{url}:\\ \verb|\url{ftp://tug.org}|,\\
-\verb|\url{rsync://tug.org}|, etc.
+always include them explicitly and use \cs{url}:\\
+\verb|\url{ftp://tug.org}|,\\ \verb|\url{rsync://tug.org}|, etc.
 
 \subsection{Url shortcuts}
 \label{sec:urlshortcuts}
@@ -893,7 +900,7 @@ date.
   \label{fig:citation-macros}
 \end{figure}
 
-Note that, if Tom, Dick, and Harry are a prolific team, there can
+Furthermore, if Tom, Dick, and Harry are a prolific team, there can
 easily be more than one reference to their work in one year.  In such
 a case, the citations will be (Tom, Dick, and Harry, 1990a), (Tom,
 Dick, and Harry, 1990b), and so on.  These extra `a', `b', etc., tags

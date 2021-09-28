@@ -39,7 +39,7 @@ check: ltugboat.sty
 	$(pdflatex) tubutftest.tex
 
 try: ltugboat.cls
-	$(pdflatex) tubhytest.tex
+	$(pdflatex) tuburllivetest.tex
 
 check-oddeven: ltugboat.sty
 	$(pdflatex) tubfinal-odd.tex

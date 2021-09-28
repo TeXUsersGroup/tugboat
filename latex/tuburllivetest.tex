@@ -3,9 +3,14 @@
 \documentclass{ltugboat}
 \usepackage{hyperref}
 \begin{document}
-ssl: \tbsurl{tug.org}
+https: \tbsurl{tug.org}
 
-plain: \tbhurl{tug.org}
+https, protocol stripped: \tbsurl{https://tug.org}
+
+https, incorrect protocol given: \tbsurl{http://tug.org}
+
+http: \tbhurl{tug.org}
+http, protocol stripped: \tbhurl{http://tug.org}
 
 Hello.
 \loggingall

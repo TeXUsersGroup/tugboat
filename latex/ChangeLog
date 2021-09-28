@@ -1,3 +1,11 @@
+2021-09-28  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\tbhurl@, \tbsurl@): redefine to strip a leading
+	explicit http(s), respectively, if present.  From Ulrike Fischer,
+	https://github.com/latex3/hyperref/issues/125.
+	* ltubguid.ltx: update doc.
+	* tuburllivetest.tex: update tests.
+
 2021-09-15  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\tubabovedoi): new hook, used in tb131rosendahl-tug21.
