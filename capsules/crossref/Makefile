@@ -76,10 +76,11 @@ upload-real:
 # If syntax is ok, get back a SUCCESS html doc.
 # Then, log in to test.crossref.org resp. doi.crossref.org
 # -> Submission administration
-# -> Search (all fields can be left blank)
+# -> Search (all fields can be left blank), or -> See System Queue
 # -> can see status / get errors; should also get emailed back.
 # 
-# It says area=L(ive), but that's misleading; this is the test area.
-#
+# The interfaces don't have any visible difference, unfortunately.
+# Just have to check the url.
+# 
 # test result mail From: CrossRef Query System <awsbounce@crossref.org>
 # real result mail From: Crossref <admin@crossref.org>
