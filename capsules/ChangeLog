@@ -1,3 +1,20 @@
+2021-09-28  Karl Berry  <karl@freefriends.org>
+
+	Prepare for 42:2 (tb131) publication.
+	
+	* Makefile (more_options): show --webroot=/ as commented-out
+	value to disable url validation.
+	(testiss, lastiss, crossref_iss): 131.
+	* lists-translations.txt (XSLT): new abbrev.
+	* lists-unifications.txt,
+	* capaccum.pl (accumulation_check) <@category_expected>: add TUG 2021.
+	* lists-unifications.txt: tb131 authors.
+
+	* capcrossref.pl (crossref_create_landing_page): maybe "this page"
+	helps with doi self-ref.
+	* cr-do-issue,
+	* capconv.pl: doc.
+
 2021-09-15  Karl Berry  <karl@freefriends.org>
 
 	* tb37capsule.txt: %person|Roswitha Graham for Knuth interview.

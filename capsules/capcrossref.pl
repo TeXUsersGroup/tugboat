@@ -297,7 +297,7 @@ END_LANDING
   $prev_next_items .= $next_item;
   print $LANDING <<END_LANDING;
 
-<p><b>DOI</b>:
+<p><b>DOI</b> (this page):
 <a href="https://doi.org/$supp{doi}">$supp{doi}</a>
 <br><small>($prev_next_items)</small></p>
 END_LANDING

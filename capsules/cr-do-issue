@@ -41,7 +41,7 @@ $Id$
 Usage: $0 [--landing-only] [--verbose] 
           CAPSULEFILE CAP-OUTDIR LND-OUTDIR CROSSREFXMLFILE
 
-First, run ./cr-copy-bbl-abs on CAPSULEFILE to also copy the bbl/abs
+First, run ./cr-copy-bbl-abs on CAPSULEFILE to copy the bbl/abs
 files from the TUGboat source directory to LND-OUTDIR.
 
 Then, copy any new bbl/abs to the directory of CROSSREFXMLFILE, but do

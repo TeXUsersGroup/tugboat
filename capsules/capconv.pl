@@ -183,7 +183,7 @@ sub transform_author {
       # nobreak spaces are used for committees, etc.
       # LogoTeXnes was a pseudonum for tb25crossword,
       # Advogato was Raph Levien's alias for tb67advo.pdf Knuth interview.
-      # samcarter was an alias used by a tug'20 participant.
+      # samcarter was an alias used by a tug'20 participant, etc.
       warn "one-word author: $parts[0] (orig: $all_authors_tex)\n";
     }
     push (@ret, $lastfirst);

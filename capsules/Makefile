@@ -3,7 +3,7 @@
 
 debug = #-D #-D
 options = $(debug) #--stdout
-more_options =
+more_options = #--webroot=/ # disable url validation during doi setup
 
 # profiling.
 #profopt = -d:NYTProf
@@ -19,9 +19,9 @@ default check: one #all-diff
 
 # These issue values, and most of the targets below, come into play with
 # publishing a TUGboat issue; see the README.karl file on tug.org.
-testiss = 129
-lastiss = 130
-crossref_iss = 130
+testiss = 131
+lastiss = 131
+crossref_iss = 131
 
 # use different temp dir on different machines.
 mydir := $(shell ls ~karl/public_html 2>/dev/null)
@@ -64,6 +64,7 @@ cro-preserve: # full crossref run, keeping hand-edits
 	cr-do-issue $(cr_verbose) $(cr_args)
 cro-scratch: # full crossref run, assuming no hand-editing
 	rm -f $(cr_xmlprocess)/*.abs $(cr_xmlprocess)/*.bbl # assume no edits
+	rm -f $(cr_xmlprocess)/*.rpi
 	cr-do-issue $(cr_args)
 
 # kludge to replace doi urls with local urls, so we can easily click

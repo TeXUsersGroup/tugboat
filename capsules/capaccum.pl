@@ -314,6 +314,7 @@ sub accumulation_check {
        'TUG 2018',
        'TUG 2019',
        'TUG 2020',
+       'TUG 2021',
        'TUG Business',
        'TUG News',
        'Talks',
