@@ -15,9 +15,7 @@
 \begin{blurb}
 <p>Immediate online access to technical TUGboat articles will be
 available to TUG members only (so some of the links below require a TUG
-username and password).  General information items and articles already
-posted elsewhere are publicly available now.  All of the articles will
-become publicly available around September 2021.
+username and password).
 
 <p>If you're not already a member, we hope you'll consider <a
 href="/join.html">joining TUG</a> to support TUGboat and other TeX
@@ -35,7 +33,7 @@ access</a>.
         {Complete issue 42:1 as one pdf (26mb)}
         {}
         {\offset{.1}}
-        {https://tug.org/members/TUGboat/!TBIDENT!complete.pdf}
+        {/TUGboat/!TBIDENT!complete.pdf}
         {}
         {}
 
@@ -145,7 +143,7 @@ access</a>.
    {Typographers' Inn}
    {Page numbering revisited; Type 1 (PostScript) fonts; Afterthought}
    {18-19}
-   {https://tug.org/members/TUGboat/!TBIDENT!inn.pdf}
+   {/TUGboat/!TBIDENT!inn.pdf}
    {}
    {}
 
@@ -155,7 +153,7 @@ access</a>.
 %  {Historical review of \TeX{}3}
 %  {a 1991 review of \TeX, written for those experienced in other typesetting systems}
 %  {\getfirstpage{flynn-tex3}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!flynn-tex3.pdf}
+%  {/TUGboat/!TBIDENT!flynn-tex3.pdf}
 %  {}
 %  {}
 
@@ -186,7 +184,7 @@ access</a>.
    {discussion with the associate curator at \acro{RIT}'s Cary Graphic
     Arts Collection, \url{cary.rit.edu}}
    {20-33}
-   {https://tug.org/members/TUGboat/!TBIDENT!hugill-fontanel-walden.pdf}
+   {/TUGboat/!TBIDENT!hugill-fontanel-walden.pdf}
    {}
    {}
 
@@ -271,7 +269,7 @@ access</a>.
 %  {development status and comparison of Lua\TeX\ and its relatives:
 %   Lua\acro{HB}\TeX, Lua\acro{JIT}\TeX\ and Lua\acro{JITHB}\TeX}
 %  {\getfirstpage{scarso-luatex}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!scarso-luatex.pdf}
+%  {/TUGboat/!TBIDENT!scarso-luatex.pdf}
 %  {}
 %  {}
 
@@ -282,7 +280,7 @@ access</a>.
   {OpenType fonts greatly extending Latin Modern,
    with complete coverage of Unicode math (\tbsurl{ctan.org/pkg/newcm})}
   {52-55}
-  {https://tug.org/members/TUGboat/!TBIDENT!tsolomitis-newcm.pdf}
+  {/TUGboat/!TBIDENT!tsolomitis-newcm.pdf}
   {}
   {}
 
@@ -292,7 +290,7 @@ access</a>.
 %%   {Webnotes: Practical approaches}
 %%   {putting an article's supplemental material on the web, with references}
 %%   {\getfirstpage{walden-webnotes}}
-%%   {https://tug.org/members/TUGboat/!TBIDENT!walden-webnotes.pdf}
+%%   {/TUGboat/!TBIDENT!walden-webnotes.pdf}
 %%   {}
 %%   {}
 
@@ -315,7 +313,7 @@ access</a>.
   {Lapses in \TeX \Dash a look backward}
   {alternatives to past decisions that could have alleviated current problems}
   {13-17}
-  {https://tug.org/members/TUGboat/!TBIDENT!beeton-lapses.pdf}
+  {/TUGboat/!TBIDENT!beeton-lapses.pdf}
   {}
   {}
 
@@ -335,7 +333,7 @@ access</a>.
 %%  {Typesetting Bangla script with Lua\LaTeX{}}
 %%  {using HarfBuzz and \code{luaotfload} to achieve better shaping and colorization}
 %%  {\getfirstpage{fischer-bangla}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!fischer-bangla.pdf}
+%%  {/TUGboat/!TBIDENT!fischer-bangla.pdf}
 %%  {}
 %%  {}
 
@@ -345,7 +343,7 @@ access</a>.
   {Working remotely from an island: \textsf{arara} and other tools}
   {build tool \textsf{arara}, font finder \textsf{albatross}, \textsf{texdoc} online}
   {72-73}
-  {https://tug.org/members/TUGboat/!TBIDENT!island-tools.pdf}
+  {/TUGboat/!TBIDENT!island-tools.pdf}
   {}
   {}
 
@@ -355,7 +353,7 @@ access</a>.
 %%%%%   {\TeX\ Gyre text fonts revisited}
 %%%%%   {incorporating math and symbol glyphs into text fonts, and OpenType accent positioning}
 %%%%%   {\getfirstpage{jackowski-gyre}}
-%%%%%   {https://tug.org/members/TUGboat/!TBIDENT!jackowski-gyre.pdf}
+%%%%%   {/TUGboat/!TBIDENT!jackowski-gyre.pdf}
 %%%%%   {}
 %%%%%   {}
 %
@@ -376,7 +374,7 @@ access</a>.
 %  {Making Markdown into a microwave meal}
 %  {freezing Markdown, Minted, and \BibLaTeX\ output for single-run processing}
 %  {\getfirstpage{novotny-frozen}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!novotny-frozen.pdf}
+%  {/TUGboat/!TBIDENT!novotny-frozen.pdf}
 %  {}
 %  {}
 
@@ -386,7 +384,7 @@ access</a>.
   {Comparison of \OpTeX\ with other formats: \LaTeX\ and \ConTeXt}
   {differing concepts, implementations, usage of three formats}
   {44-49}
-  {https://tug.org/members/TUGboat/!TBIDENT!olsak-fmtcmp.pdf}
+  {/TUGboat/!TBIDENT!olsak-fmtcmp.pdf}
   {}
   {}
 
@@ -410,7 +408,7 @@ access</a>.
 %  {Functions and \texttt{expl3}}
 %  {an introduction to \LaTeX3 programming with functions and variables}
 %  {\getfirstpage{gregorio-l3functions}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!gregorio-l3functions.pdf}
+%  {/TUGboat/!TBIDENT!gregorio-l3functions.pdf}
 %  {}
 %  {}
 
@@ -420,7 +418,7 @@ access</a>.
   {LuaMeta\TeX\ programming features}
   {advances and extensions in \TeX\ programming in the \code{lmtx} engine}
   {74-80}
-  {https://tug.org/members/TUGboat/!TBIDENT!hagen-prog.pdf}
+  {/TUGboat/!TBIDENT!hagen-prog.pdf}
   {}
   {}
 
@@ -430,7 +428,7 @@ access</a>.
   {Scaled fonts and glyphs}
   {engine extensions in \code{lmtx} for dynamic glyph scaling}
   {60-65}
-  {https://tug.org/members/TUGboat/!TBIDENT!hagen-scaled.pdf}
+  {/TUGboat/!TBIDENT!hagen-scaled.pdf}
   {}
   {}
 
@@ -441,7 +439,7 @@ access</a>.
   {meeting the generalized mediation macro challenge in
    Appendix\CONNECT{}D of \MFB}
   {66-66}
-  {https://tug.org/members/TUGboat/!TBIDENT!hu-bernstein.pdf}
+  {/TUGboat/!TBIDENT!hu-bernstein.pdf}
   {}
   {}
 
@@ -462,7 +460,7 @@ access</a>.
   {changing \code{cweave} and \code{ctangle} to read/write the Unicode
    \acro{BMP}}
   {81-82}
-  {https://tug.org/members/TUGboat/!TBIDENT!liferenko-cweb.pdf}
+  {/TUGboat/!TBIDENT!liferenko-cweb.pdf}
   {}
   {}
 
@@ -482,7 +480,7 @@ access</a>.
   {An attempt at creating font transitions}
   {an example of mathematically interpolating between sans serif and serif fonts}
   {56-59}
-  {https://tug.org/members/TUGboat/!TBIDENT!venkatesan-transfont.pdf}
+  {/TUGboat/!TBIDENT!venkatesan-transfont.pdf}
   {}
   {}
 
@@ -492,7 +490,7 @@ access</a>.
 %%  {An attempt at ragged-right typesetting}
 %%  {esthetics and implementations of ragged right, especially for German text}
 %%  {\getfirstpage{wermuth-ragged}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!wermuth-ragged.pdf}
+%%  {/TUGboat/!TBIDENT!wermuth-ragged.pdf}
 %%  {}
 %%  {}
 
