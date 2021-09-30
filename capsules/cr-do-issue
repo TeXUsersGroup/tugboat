@@ -164,7 +164,9 @@ if ! $landing_only; then
   # urls resolve, since we're probably running this before the issue is
   # in place. Those checks need to be done as part of publishing the issue.
   rm -f "$cap_outdir"/tb* # clean destination directory
-  run_cmd ./captub --webroot=/ --crossref="$cap_outdir" $capsule >/dev/null
+  if test x"$verbose" = xecho; then cdebug=-D; else cdebug=; fi
+  run_cmd ./captub $cdebug --webroot=/ --crossref="$cap_outdir" $capsule \
+          >/dev/null # discarded since it's the contents web page.
 
   # the .rpi files should never need to be hand-edited,
   # so can just overwrite in our processdir:

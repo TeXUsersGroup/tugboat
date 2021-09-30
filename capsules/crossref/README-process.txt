@@ -110,23 +110,55 @@ And then copy the final landing files to the live web directory:
   scp -p dir1.lndout/*.html $host:$dir/
 
 Then check results at:
-  https://tug.org/TUGboat/tb42-2/tbNNNwhatever.html
+  https://tug.org/TUGboat/tbVV-N/tbnnnwhatever.html
 
-Then install pdfs, per README-tug-procedures.
-
-Then, when ready to make the pdfs public do the production crossref upload. It costs money to register
-dois, so don't do it until ready, so you have to edit crossref/Makefile
-to enable it:
+Then, when ready to make the pdfs public, do the production crossref
+upload. It costs money to register dois, so don't do it until ready, so
+you have to edit crossref/Makefile to enable it:
   # temporarily delete "checkme!" from crossref/Makefile
   make upload-real  # in crossref subdirectory
   # undo Makefile edit
+Can check the production site for progress:
+  https://doi.crossref.org -> Show System Queue
 
+It is good to register the dois before making the pdfs public, so that
+the "doi" links on the contents pages will work. Also, doi registration
+might take significant time, unless crossref has improved their system.
 
- Updating past issues: it is possible that in the process of doing a new
-issue, bugs will have been fixed and it would be good to update the
-landing files for a previous issue. To do that:
+Then install pdfs, per README-tug-procedures.
+
+Then archive uploaded files:
+  cd crossref
+  nnn=...
+  svn mkdir dir3.uploaded/tb$nnn
+  cp dir2.process/issue.xml dir2.process/tb${nnn}* !$
+  svn add !$/*
+  svn commit -m"tb$nnn uploaded files archived"
+
+ Updating past issues: when an issue is published, the previous issue
+becomes fully public. Therefore we need to update the landing pages to
+say "publicly available now". This is irritating, but it seems useful
+enough to state explicitly whether an article is public or not to put up
+with it. To do this:
+
+- ensure that tbPREVNcapsule.txt is up to date, without /members/ urls.
+
+- clean existing files, e.g., rm crossref/dir*/tbNNN*.* assuming the
+current issue NNN's files have been saved in dir3.uploaded as above.
+
 - in capsules/Makefile, change crossref_iss to the desired number PREVN.
 
+- assuming no hand edits were done, can run the usual:
+make cro-scratch
+
+- check diffs (no more "available to TUG members"):
+make diff-land  # need to fix directory name
+
+- assuming ok, scp landing files as above, ideally only the changed ones.
+
+
+ If there were hand edits in the crossref/dir2.process directory
+(hopefully not), have to take more care.
 - in capsules/crossref/dir*, move away existing files, to preserve any
   hand edits, and then
 cp archive.PREVN/* .
@@ -134,11 +166,4 @@ cp archive.PREVN/* .
 
 - in capsules, run make $cu cro-preserve (no crw, for diff's sake).
 
-- in capsules/crossref/dir1.lndout/, diff against installed files:
-for f in *.html; do diff -u0 ~www/TUGboat/tb42-1/$f $f; done >/tmp/dif
-  and make sure there are no unexpected changes.
-
-- if looks ok, copy in the new files, maybe better only the ones with
-  needed fixes, to the live directory.
-
-- in capsules/Makefile, change crossref_iss back to the current issue.
+- then make diff-land and copy in as above.

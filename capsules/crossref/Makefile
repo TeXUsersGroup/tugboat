@@ -62,12 +62,14 @@ crossref_user = --user `cat crossref-user.txt`
 # Don't do anything but run locally (which is not much):
 chicken = #--dry-run
 #
+# Check progress at https://test.crossref.org; result also comes in email.
 upload-test:
 	$(upload) $(chicken) $(crossref_user) \
 	  --host $(crossref_test_host) \
 	   --metadata $(xml_output)
 #
 # It costs money to deposit a doi. Don't do it until you're sure.
+# https://doi.crossref.org/
 upload-real:
 	checkme! $(upload) $(chicken) $(crossref_user) \
 	  --host $(crossref_real_host) \

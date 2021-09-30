@@ -1,3 +1,8 @@
+2021-09-30  Karl Berry  <karl@freefriends.org>
+
+	* cr-do-issue: when verbose, pass -D to captub.
+	* Makefile (cro-clean, cro-scratch-clean): new targets.
+
 2021-09-28  Karl Berry  <karl@freefriends.org>
 
 	Prepare for 42:2 (tb131) publication.

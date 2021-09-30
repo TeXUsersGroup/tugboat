@@ -62,10 +62,18 @@ crl: # just landing pages
 	cr-do-issue --landing-only $(cr_args)
 cro-preserve: # full crossref run, keeping hand-edits
 	cr-do-issue $(cr_verbose) $(cr_args)
-cro-scratch: # full crossref run, assuming no hand-editing
-	rm -f $(cr_xmlprocess)/*.abs $(cr_xmlprocess)/*.bbl # assume no edits
-	rm -f $(cr_xmlprocess)/*.rpi
+cro-scratch: cro-scratch-clean # full crossref run, assuming no hand-editing
 	cr-do-issue $(cr_args)
+
+# remove dir2.process files, assuming no hand-edits in dir2.process.
+cro-scratch-clean:
+	rm -f $(cr_xmlprocess)/*.abs $(cr_xmlprocess)/*.bbl # assume no edits
+	rm -f $(cr_xmlprocess)/*.rpi $(cr_xmlprocess)/issue.xml
+
+# also remove dir0 and dir1 files, to start fresh:
+cro-clean: cro-scratch-clean
+	rm -f $(cr_capout)/tb$(crossref_iss)*
+	rm -f $(cr_lndout)/tb$(crossref_iss)*
 
 # kludge to replace doi urls with local urls, so we can easily click
 # through the list of "next doi" links before uploading.
