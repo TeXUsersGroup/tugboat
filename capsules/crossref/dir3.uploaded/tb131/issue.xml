@@ -1,0 +1,1137 @@
+<doi_batch xmlns="http://www.crossref.org/schema/4.4.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.4.2" xsi:schemaLocation="http://www.crossref.org/schema/4.4.2 http://www.crossref.org/schema/deposit/crossref4.4.2.xsd">
+  <head>
+    <doi_batch_id>ltx2crossref-20210929210341-11378</doi_batch_id>
+    <timestamp>20210929210341</timestamp>
+    <depositor>
+      <depositor_name>TUGboat production</depositor_name>
+      <email_address>doi-tugboat@tug.org</email_address>
+    </depositor>
+    <registrant>TeX Users Group</registrant>
+  </head>
+  <body><journal>
+    <journal_metadata language="en">
+      <full_title>TUGboat</full_title>
+      <issn>0896-3207</issn>	
+    </journal_metadata>
+    <journal_issue>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <journal_volume><volume>42</volume></journal_volume>
+      <issue>2</issue>
+    </journal_issue>
+    <journal_article>
+      <titles>
+        <title>TUG 2021 abstracts</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Alex&#xe1;ander Borb&#xf3;on</given_name>
+          <surname>Alp&#xed;zar</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <surname>Apu&#xa0;V</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Robert A.</given_name>
+          <surname>Beezer</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>H.&#xa0;Andrew</given_name>
+          <surname>Black</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Michael</given_name>
+          <surname>Cantino</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Paulo</given_name>
+          <surname>Cereda</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>David</given_name>
+          <surname>Crossland</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Vic</given_name>
+          <surname>van&#xa0;Dijk</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Jonathan</given_name>
+          <surname>Fine</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Michal</given_name>
+          <surname>Hoftich</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Amelia</given_name>
+          <surname>Hugill-Fontanel</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Rahul</given_name>
+          <surname>Jaiswal</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Em&#xed;lio</given_name>
+          <surname>Kavamura</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Vafa</given_name>
+          <surname>Khalighi</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Alexei</given_name>
+          <surname>Kolesnikov</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Rahul</given_name>
+          <surname>Krishnan&#xa0;S</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Marcel</given_name>
+          <surname>Kr&#xfc;ger</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Al</given_name>
+          <surname>Maneki</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Frank</given_name>
+          <surname>Mittelbach</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Ross</given_name>
+          <surname>Moore</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Michael</given_name>
+          <surname>Nolan</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Todd</given_name>
+          <surname>Pagano</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Hugh</given_name>
+          <surname>Paterson</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Simon</given_name>
+          <surname>Porter</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Thomas</given_name>
+          <surname>Price</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Aravind</given_name>
+          <surname>Rajendran</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>T.</given_name>
+          <surname>Rishi</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Matheus</given_name>
+          <surname>Rocha</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Volker</given_name>
+          <surname>Sorge</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Paulo Ney</given_name>
+          <surname>de&#xa0;Souza</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Suhas Chikkanaravangala</given_name>
+          <surname>Vijayakumar</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Joseph</given_name>
+          <surname>Wright</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>208</first_page>
+        <last_page>212</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131abstracts</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131abstracts.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Plane and simple: Exploration of machine interaction with text type for visual-based navigation systems</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Oliver</given_name>
+          <surname>Austin</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>143</first_page>
+        <last_page>143</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131austin-plane</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131austin-plane.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>On typesetting an English&#x2013;Japanese book</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Antoine</given_name>
+          <surname>Bossard</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>147</first_page>
+        <last_page>151</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131bossard-engjpn</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131bossard-engjpn.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="bib:titleps-1"><unstructured_citation>
+          J. Bezos. Headers and footers with titleps, July 2021. Version 2.14. https://ctan.org/pkg/titleps.
+        </unstructured_citation></citation>
+        <citation key="bib:titlesec-2"><unstructured_citation>
+          J. Bezos. The titlesec, titleps and titletoc Packages, July 2021. Version 2.14. https://ctan.org/pkg/titlesec.
+        </unstructured_citation></citation>
+        <citation key="bib:kameindex-3"><unstructured_citation>
+          A. Bossard. Experimenting with makeindex and Unicode, and deriving   kameindex. ArsTeXnica 26:55&#x2013;61, 2018. https://www.guitex.org/home/it/numero-26-ottobre-2018/351-06-kameindex.
+        </unstructured_citation></citation>
+        <citation key="bib:tex-cjk-4"><unstructured_citation>
+          A. Bossard. A glance at CJK support with XeTeX and LuaTeX. TUGboat 40(2):196&#x2013;201, 2019. https://tug.org/TUGboat/tb40-2/tb125bossard-cjk.pdf.
+        </unstructured_citation></citation>
+        <citation key="bib:textbook-5"><unstructured_citation>
+          A. Bossard. A Gentle Introduction to Functional Programming in English. Ohmsha, Kanda Jinbocho, Tokyo, Japan, third ed., 2020.
+        </unstructured_citation></citation>
+        <citation key="bib:polyglossia-6"><unstructured_citation>
+          F. Charette, A. Reutenauer, et al. Polyglossia: Modern multilingual typesetting with XeLaTeX   and LuaLaTeX, Apr. 2021. Version 1.53. https://ctan.org/pkg/polyglossia.
+        </unstructured_citation></citation>
+        <citation key="bib:architecture-7"><unstructured_citation>
+          S.L. Harris, D.M. Harris. &#x30c7;&#x30a3;&#x30b8;&#x30bf;&#x30eb;&#x56de;&#x8def;&#x8a2d;&#x8a08;&#x3068;   &#x30b3;&#x30f3;&#x30d4;&#x30e5;&#x30fc;&#x30bf;&#x30a2;&#x30fc;&#x30ad;&#x30c6;&#x30af;&#x30c1;&#x30e3; (Digital Design and Computer   Architecture). Shoeisha, Funamachi, Shinjuku, Tokyo, Japan, second ed., Sept. 2017. Translated to Japanese by H. Amano, H. Nakajo, M. Suzuki, L.   Nagamatsu.
+        </unstructured_citation></citation>
+        <citation key="bib:hyperref-8"><unstructured_citation>
+          S. Rahtz, H. Oberdiek, The LaTeX3 Project. Hypertext marks in LaTeX: a manual for hyperref, June 2021. Version 7.00m.  https://ctan.org/pkg/hyperref.
+        </unstructured_citation></citation>
+        <citation key="bib:fontspec-9"><unstructured_citation>
+          W. Robertson. The fontspec package&#x2014;Font selection for XeLaTeX and   LuaLaTeX, Feb. 2021. Version 2.7i. https://ctan.org/pkg/fontspec.
+        </unstructured_citation></citation>
+        <citation key="bib:luamicro-10"><unstructured_citation>
+          R. Schlicht. The microtype package, Mar. 2021. Version 2.8c. https://ctan.org/pkg/microtype.
+        </unstructured_citation></citation>
+        <citation key="bib:geometry-11"><unstructured_citation>
+          H. Umeki. The geometry package, Jan. 2020. Version 5.9. https://ctan.org/pkg/geometry.
+        </unstructured_citation></citation>
+        <citation key="bib:fancyhdr-12"><unstructured_citation>
+          P. van Oostrum. The fancyhdr and extramarks packages, Jan. 2021. Version 4.0.1.  https://ctan.org/pkg/fancyhdr.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The treasure chest</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>214</first_page>
+        <last_page>215</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131chest</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131chest.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>My personal journey into creating word search puzzles in Cyrillic and Arabic using multilingual support in LaTeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jennifer</given_name>
+          <surname>Claudio</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>144</first_page>
+        <last_page>146</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131claudio-puzzles</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131claudio-puzzles.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TUG 2021 conference organization reflections and recommendations</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Paulo Ney</given_name>
+          <surname>de&#xa0;Souza</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Jennifer</given_name>
+          <surname>Claudio</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>105</first_page>
+        <last_page>107</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131desouza-tug21</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131desouza-tug21.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>On the road to Tagged PDF: About StructElem, Marked Content, PDF/A and Squeezed B&#xe4;rs</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Ulrike</given_name>
+          <surname>Fischer</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>170</first_page>
+        <last_page>173</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131fischer-tagpdf</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131fischer-tagpdf.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="xFischer:2020:CAP-1"><unstructured_citation>
+          U. Fischer. Creating accessible pdfs with LaTeX. TUGboat 41(1):26&#x2013;28, 2020. https://tug.org/TUGboat/tb41-1/tb127fischer-accessible.pdf
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Continuous integration and TeX with Org-Mode</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Rohit</given_name>
+          <surname>Goswami</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>135</first_page>
+        <last_page>138</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131goswami-ci-org</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131goswami-ci-org.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="davidson-pilonBayesianMethodsHackers2016-1"><unstructured_citation>
+          C. Davidson-Pilon. Bayesian Methods for Hackers: Probabilistic Programming and   Bayesian Inference. Addison-Wesley, 2016.
+        </unstructured_citation></citation>
+        <citation key="CreatingRepositoryTemplate-2"><unstructured_citation>
+          GitHub Docs. Creating a repository from a template. https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-repository-from-a-template
+        </unstructured_citation></citation>
+        <citation key="texIslandTEXDeveloping2020-3"><unstructured_citation>
+          Island of TeX. The Island of TeX: Developing abroad, your next   destination. TUGboat 41(2):182&#x2013;184, 2020. https://tug.org/TUGboat/tb41-2/tb128island.pdf
+        </unstructured_citation></citation>
+        <citation key="WizardsWin32Apps-4"><unstructured_citation>
+          Microsoft. Wizards - Win32 apps. https://docs.microsoft.com/en-us/windows/win32/uxguide/win-wizards
+        </unstructured_citation></citation>
+        <citation key="oliphantPythonScientificComputing2007-5"><unstructured_citation>
+          T.E. Oliphant. Python for Scientific Computing. Computing in Science Engineering 9(3):10&#x2013;20, May 2007. https://doi.org/10/fjzzc8
+        </unstructured_citation></citation>
+        <citation key="peveratiFittingElephantsDensity2020-6"><unstructured_citation>
+          R. Peverati. Fitting elephants in the density functionals zoo: Statistical   criteria for the evaluation of density functional theory methods as a   suitable replacement for counting parameters. International Journal of Quantum Chemistry 121(1):e26379,   2020. https://doi.org/10.1002/qua.26379
+        </unstructured_citation></citation>
+        <citation key="Tectonic2021-7"><unstructured_citation>
+          Tectonic typesetting system, Aug. 2021. https://tectonic-typesetting.github.io
+        </unstructured_citation></citation>
+        <citation key="veytsmanUsingOverleafCollaborative2020-8"><unstructured_citation>
+          B. Veytsman. Using Overleaf for collaborative projects: First impressions   and lessons learned. TUGboat 41(2):179&#x2013;181, July 2020. https://tug.org/TUGboat/tb41-2/tb128veytsman-overleaf.pdf
+        </unstructured_citation></citation>
+        <citation key="xieDynamicDocumentsKnitr2015-9"><unstructured_citation>
+          Y. Xie. Dynamic Documents with R and Knitr. CRC Press, Boca Raton, FL, second edition ed., 2015.
+        </unstructured_citation></citation>
+        <citation key="xieBookdownAuthoringBooks2017-10"><unstructured_citation>
+          Y. Xie. Bookdown: Authoring Books and Technical Publications with R   Markdown. CRC Press, Boca Raton, FL, 2017.
+        </unstructured_citation></citation>
+        <citation key="xieTinyTeXLightweightCrossplatform2019-11"><unstructured_citation>
+          Y. Xie. TinyTeX: A lightweight, cross-platform, and easy-to-maintain   LaTeX distribution based on TeX Live. TUGboat 40(1):30&#x2013;32, 2019. https://tug.org/TUGboat/tb40-1/tb124xie-tinytex.pdf
+        </unstructured_citation></citation>
+        <citation key="xieMarkdownDefinitiveGuide2019-12"><unstructured_citation>
+          Y. Xie, J.J. Allaire, G. Grolemund. R Markdown: The Definitive Guide. CRC Press, Boca Raton, FL, 2019.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Interview with John Hammersley, CEO of Overleaf</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Paulo Ney</given_name>
+          <surname>de&#xa0;Souza</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>121</first_page>
+        <last_page>130</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131hammersley-desouza</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131hammersley-desouza.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Programming bibliographies</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jean-Michel</given_name>
+          <surname>Hufflen</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>204</first_page>
+        <last_page>207</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131hufflen-bibprog</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131hufflen-bibprog.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="contextgarden2012a-1"><unstructured_citation>
+          ContextGarden: Bibliographies   in MkIV. Jul. 2012. https://wiki.contextgarden.net/Bibliography.
+        </unstructured_citation></citation>
+        <citation key="hagen2006-2"><unstructured_citation>
+          Hans Hagen:   LuaTeX: Howling to the Moon. Biuletyn Polskiej Grupy U&#x017C;ytkownik&#x00F3;w Systemu TeX,   v. 23, pp. 63&#x2013;68. Apr. 2006.
+        </unstructured_citation></citation>
+        <citation key="h2003k-3"><unstructured_citation>
+          Jean-Michel Hufflen:   mlBibTeX&#x2019;s Version 1.3. TUGboat, v. 24, n. 2, pp. 249&#x2013;262.   Jul. 2003. https://tug.org/TUGboat/tb24-2/tb77hufflen.pdf
+        </unstructured_citation></citation>
+        <citation key="h2010f-4"><unstructured_citation>
+          Jean-Michel Hufflen:   Using mlBibTeX to Populate Open   Archives. In: Tomasz Przechlewski, Karl   Berry, Gaby Gic-Grusza, Ewa Kolsar and   Jerzy B. Ludwichowski, eds., Typographers and   Programmers: Mutual Inspirations. Proc. BachoTeX 2010 Conference,   pp. 45&#x2013;48. Apr. 2010.
+        </unstructured_citation></citation>
+        <citation key="h2015b-5"><unstructured_citation>
+          Jean-Michel Hufflen:   From mlBibTeX 1.3 to 1.4. In: Tomasz Przechlewski, Karl Berry, Bogus&#x0142;aw Jackowski and Jerzy B.   Ludwichowski, eds., Various Faces of Typography. Proc.   BachoTeX 2015 conference, pp. 13&#x2013;17. Bachotek, Poland.   Apr. 2015. 
+        </unstructured_citation></citation>
+        <citation key="jeffrey1990-6"><unstructured_citation>
+          Alan Jeffrey:   Lists in TeX&#x2019;s Mouth. TUGboat, v. 11, n. 2, pp. 237&#x2013;245.   Jun. 1990. https://tug.org/TUGboat/tb11-2/tb28jeffrey.pdf
+        </unstructured_citation></citation>
+        <citation key="kime-charette2020-7"><unstructured_citation>
+          Philip Kime and Fran&#x00E7;ois   Charette: Biber. A Backend Bibliography Processor   for biblatex. Version Biber 2.16   (biblatex 3.16). 19 Dec. 2020.  https://ctan.org/pkg/biber.
+        </unstructured_citation></citation>
+        <citation key="kime-etc2020-8"><unstructured_citation>
+          Philip Kime, Moritz Wemheuer   and Philipp Lehman: The biblatex   Package. Programmable Bibliographies and Citations. Version 3.16. 31 Dec. 2020.  https://ctan.org/pkg/biblatex.
+        </unstructured_citation></citation>
+        <citation key="laan1993-9"><unstructured_citation>
+          Kees van der Laan:   Sorting within TeX. TUGboat, v. 14, n. 3, pp. 319&#x2013;328.   Oct. 1993. https://tug.org/TUGboat/tb14-3/tb40laan-sort.pdf
+        </unstructured_citation></citation>
+        <citation key="lamport1994-10"><unstructured_citation>
+          Leslie Lamport: LaTeX: A   Document Preparation System. User&#x2019;s Guide and Reference Manual. Addison-Wesley Publishing Company, Reading, Massachusetts. 1994.
+        </unstructured_citation></citation>
+        <citation key="mittelbach-etc2004-11"><unstructured_citation>
+          Frank Mittelbach and Michel   Goossens, with Johannes Braams, David   Carlisle, Chris A. Rowley, Christine Detig   and Joachim Schrod: The LaTeX Companion. 2nd edition. Addison-Wesley Publishing Company, Reading,   Massachusetts. Aug. 2004.
+        </unstructured_citation></citation>
+        <citation key="patashnik1988a-12"><unstructured_citation>
+          Oren Patashnik: Designing   BibTeX Styles. Feb. 1988. Part of the BibTeX distribution. https://ctan.org/pkg/bibtex
+        </unstructured_citation></citation>
+        <citation key="patashnik1988-13"><unstructured_citation>
+          Oren Patashnik: BibTeXing.   Feb. 1988. Part of the BibTeX distribution. https://ctan.org/pkg/bibtex
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>LaTeX news, issue 33, June 2021</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <surname>LaTeX&#xa0;Project&#xa0;Team</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>180</first_page>
+        <last_page>185</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131ltnews33</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131ltnews33.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Automatically generate personalized tasks and sample solutions for the fundamentals of electrical engineering with PGFPlots and CircuiTikZ</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Mathias</given_name>
+          <surname>Magdowski</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>159</first_page>
+        <last_page>163</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131magdowski-autoee</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131magdowski-autoee.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="cleynenetal2020peergraded-1"><unstructured_citation>
+          O. Cleynen, G. Santa-Maria, et al. Peer-graded individualized student homework in a single-instructor   undergraduate engineering course. Research in Learning Technology 28, May 2020. https://doi.org/10.25304/rlt.v28.2339
+        </unstructured_citation></citation>
+        <citation key="gleich:matlabmail_shorturl-2"><unstructured_citation>
+          D. Gleich. Get Matlab to email you when it&#x2019;s done running!, Feb. 2014. https://dgleich.wordpress.com/2014/02/27/
+        </unstructured_citation></citation>
+        <citation key="niknaumag:getbuch2-3"><unstructured_citation>
+          J.B. Nitsch, U. Knauff, M. Magdowski. Einf&#x00fc;hrung in die Elektrotechnik. Shaker-Verlag, Aachen, 2nd ed., July 2011.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Interview with Frank Mittelbach, leader of the LaTeX Project</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Paulo Ney</given_name>
+          <surname>de&#xa0;Souza</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>114</first_page>
+        <last_page>120</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131mittelbach-desouza</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131mittelbach-desouza.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Markdown 2.10.0: LaTeX themes &amp; snippets, two flavors of comments, and LuaMetaTeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>V&#xed;t</given_name>
+          <surname>Novotn&#xfd;</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>186</first_page>
+        <last_page>193</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131novotny-markdown</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131novotny-markdown.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Hagen:2019:CL-1"><unstructured_citation>
+          H. Hagen. ConTeXt LMTX. TUGboat 40(1):34&#x2013;37, 2019. https://tug.org/TUGboat/tb40-1/tb124hagen-lmtx.pdf
+        </unstructured_citation></citation>
+        <citation key="knuth86-2"><unstructured_citation>
+          D.E. Knuth. The TeXbook. Addison-Wesley, 1986.
+        </unstructured_citation></citation>
+        <citation key="Menke:2019:PCD-3"><unstructured_citation>
+          H. Menke. Parsing complex data formats in LuaTeX with LPEG. TUGboat 40(2):129&#x2013;135, 2019. https://tug.org/TUGboat/tb40-2/tb125menke-lpeg.pdf
+        </unstructured_citation></citation>
+        <citation key="mittelbach2018the-4"><unstructured_citation>
+          F. Mittelbach. Format LaTeX documentation, 2021. https://ctan.org/pkg/doc
+        </unstructured_citation></citation>
+        <citation key="Novotn:2019:MTL-5"><unstructured_citation>
+          V. Novotn&#x00FD;. Markdown 2.7.0: Towards lightweight markup in TeX. TUGboat 40(1):25&#x2013;27, 2019. https://tug.org/TUGboat/tb40-1/tb124novotny-markdown.pdf
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title><tt>latex2nemeth</tt>: A direct LaTeX-to-Braille transcribing tool</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Andreas</given_name>
+          <surname>Papasalouros</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Antonis</given_name>
+          <surname>Tsolomitis</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>166</first_page>
+        <last_page>169</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131papasalouros-latex2nemeth</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131papasalouros-latex2nemeth.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Gamma1995-1"><unstructured_citation>
+          E. Gamma, R. Helm, et al. Design Patterns: Elements of Reusable Object-oriented   Software. Addison-Wesley, Boston, MA, USA, 1995.
+        </unstructured_citation></citation>
+        <citation key="javacc-2"><unstructured_citation>
+          The JavaCC compiler compiler.  https://javacc.github.io/javacc.
+        </unstructured_citation></citation>
+        <citation key="liblouis-3"><unstructured_citation>
+          The liblouis project. http://liblouis.org.
+        </unstructured_citation></citation>
+        <citation key="nemeth1972-4"><unstructured_citation>
+          A. Nemeth. The Nemeth Code 1972. http://brailleauthority.org/mathscience/nemeth1972.pdf.
+        </unstructured_citation></citation>
+        <citation key="scied17-5"><unstructured_citation>
+          A. Papasalouros, A. Tsolomitis. A direct TeX-to-Braille transcribing method. Journal of Science Education for Students with Disabilities   20(1):36&#x2013;49, 2017. RIT Scholar works.
+        </unstructured_citation></citation>
+        <citation key="tex4ht-6"><unstructured_citation>
+          The tex4ht project. https://tug.org/tex4ht.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Interview with Norbert Preining, mainstay of TeX Live and much more</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Paulo Ney</given_name>
+          <surname>de&#xa0;Souza</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>108</first_page>
+        <last_page>113</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131preining-desouza</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131preining-desouza.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TUG 2021 conference report</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Arthur</given_name>
+          <surname>Rosendahl</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Jennifer</given_name>
+          <surname>Claudio</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>100</first_page>
+        <last_page>100</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131rosendahl-tug21</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131rosendahl-tug21.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The WEB to CWEB conversion of TeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Martin</given_name>
+          <surname>Ruckert</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>139</first_page>
+        <last_page>142</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131ruckert-cweb</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131ruckert-cweb.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Knuth:cweb-1"><unstructured_citation>
+          Donald E. Knuth and Silvio Levy. The CWEB System of Structured Documentation. Addison Wesley, 1994. https://ctan.org/pkg/cweb.
+        </unstructured_citation></citation>
+        <citation key="LaTeX:primitives-2"><unstructured_citation>
+          LaTeX Project Team. LaTeX news, issue 31, February 2020. TUGboat, 41(1):34&#x2013;38, 2020. https://tug.org/TUGboat/tb41-1/tb127ltnews31.pdf. Section   &#x201c;LaTeX requirements on engine primitives&#x201d;. See also: latex-l   thread of April 20, 2021, &#x201c;LaTeX required primitives: some questions&#x201d;, at   https://listserv.uni-heidelberg.de/cgi-bin/wa?A0=latex-l.
+        </unstructured_citation></citation>
+        <citation key="MR:tug38-3"><unstructured_citation>
+          Martin Ruckert. Converting TeX from WEB to cweb. TUGboat, 38(3):353&#x2013;358, 2017. https://tug.org/TUGboat/tb38-3/tb120ruckert.pdf.
+        </unstructured_citation></citation>
+        <citation key="MR:tug39-4"><unstructured_citation>
+          Martin Ruckert. HINT: Reflowing TeX output. TUGboat, 39(3):217&#x2013;223, 2018. https://tug.org/TUGboat/tb39-3/tb123ruckert-hint.pdf.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The <tt>tikzlings</tt> package</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <surname>samcarter</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>131</first_page>
+        <last_page>132</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131samcarter-tikzlings</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131samcarter-tikzlings.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="docu-1"><unstructured_citation>
+          samcarter. The tikzlings package&#x2014;Version 0.8, 2021. ctan.org/pkg/tikzlings.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>New Czechoslovak hyphenation patterns, word lists, and workflow</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Petr</given_name>
+          <surname>Sojka</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Ond&#x0159;ej</given_name>
+          <surname>Sojka</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>152</first_page>
+        <last_page>158</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131sojka-czech</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131sojka-czech.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="tex:allen90-1"><unstructured_citation>
+          R.E. Allen, ed. The Oxford Spelling Dictionary, vol. II of The Oxford   Library of English Usage. Oxford University Press, 1990.
+        </unstructured_citation></citation>
+        <citation key="nlp:bartlett-etal-2008-automatic-2"><unstructured_citation>
+          S. Bartlett, G. Kondrak, C. Cherry. Automatic Syllabification with Structured SVMs for   Letter-to-Phoneme Conversion. In Proceedings of ACL-08: HLT, pp. 568&#x2013;576, Columbus, Ohio,   June 2008. ACL. https://www.aclweb.org/anthology/P08-1065
+        </unstructured_citation></citation>
+        <citation key="nlp:Bauer1997-3"><unstructured_citation>
+          A. Bauer. D&#x011B;len&#x00ED; slov /slovotvorba v praxi/ [Word   hyphenation /practical morphology/]. Nakladatelstv&#x00ed; Olomouc, Olomouc, 1997.
+        </unstructured_citation></citation>
+        <citation key="tex:chicago17-4"><unstructured_citation>
+          The Chicago Manual of Style. University of Chicago Press, Chicago, 17th ed., Sept. 2017.
+        </unstructured_citation></citation>
+        <citation key="tex:zpravodajchlebikova91eng-5"><unstructured_citation>
+          J. Chleb&#x00ED;kov&#x00E1;. Ako rozd&#x011B;li&#x0165; (slovo) &#x010C;eskoslovensko [How to hyphenate   the word Czechoslovakia]. Zpravodaj CSTUG 1(4):10&#x2013;13, Apr. 1991. https://doi.org/10.5300/1991-4/10
+        </unstructured_citation></citation>
+        <citation key="nlp:webster-6"><unstructured_citation>
+          P.B. Gove, M. Webster. Webster&#x2019;s Third New International Dictionary of the English   language Unabridged. Merriam-Webster Inc., Springfield, Massachusetts, U.S.A, Jan. 2002.
+        </unstructured_citation></citation>
+        <citation key="tex:haller56-7"><unstructured_citation>
+          J. Haller. Jak se d&#x011B;l&#x00ED; slova [How Words Get Hyphenated]. St&#x00E1;tn&#x00ED; pedagogick&#x00E9; nakladatelstv&#x00ED; Praha, 1956.
+        </unstructured_citation></citation>
+        <citation key="tex:yannis-patgen2-8"><unstructured_citation>
+          Y. Haralambous. A Revisited Small Tutorial on Patgen, 28 Years After, Mar. 2021. https://ctan.org/pkg/patgen2-tutorial
+        </unstructured_citation></citation>
+        <citation key="nlp:UJCprirucka-9"><unstructured_citation>
+          Internetov&#x00e1; jazykov&#x00e1; p&#x0159;&#x00ed;ru&#x010d;ka [Internet Language Reference Book]. https://prirucka.ujc.cas.cz/?id=135
+        </unstructured_citation></citation>
+        <citation key="nlp:Jakubicek2013TTC-10"><unstructured_citation>
+          M. Jakub&#x00ED;&#x010D;ek, A. Kilgarriff, et al. The TenTen Corpus Family. In Proc. of the 7th International Corpus Linguistics Conference   (CL), pp. 125&#x2013;127, Lancaster, UK, July 2013.
+        </unstructured_citation></citation>
+        <citation key="keary2005-11"><unstructured_citation>
+          M. Keary. On hyphenation&#x2014;anarchy of pedantry. PC Update, The magazine of the Melbourne PC User Group,   2005. https://web.archive.org/web/20050310054738/http://www.melbpc.org.au/pcupdate/9100/9112article4.htm
+        </unstructured_citation></citation>
+        <citation key="nlp:SketchEngine2004-12"><unstructured_citation>
+          A. Kilgarriff, P. Rychl&#x00FD;, et al. The Sketch Engine. In Proceedings of the Eleventh EURALEX International Congress,   pp. 105&#x2013;116, Lorient, France, 2004.
+        </unstructured_citation></citation>
+        <citation key="tex:KrantzICMLA2019-13"><unstructured_citation>
+          J. Krantz, M. Dulin, P.D. Palma. Language-Agnostic Syllabification with Neural Sequence Labeling. In 18th IEEE International Conference On Machine Learning And   Applications, ICMLA 2019, Boca Raton, FL, USA, December 16&#x2013;19, 2019,   M.A. Wani, T.M. Khoshgoftaar, et al., eds., pp. 804&#x2013;810. IEEE, 2019. https://doi.org/10.1109/ICMLA.2019.00141
+        </unstructured_citation></citation>
+        <citation key="tex:Liang83:thesis-14"><unstructured_citation>
+          F.M. Liang. Word Hy-phen-a-tion by Com-put-er. Ph.D. thesis, Department of Computer Science, Stanford University,   Aug. 1983. https://tug.org/docs/liang/liang-thesis.pdf
+        </unstructured_citation></citation>
+        <citation key="nlp:maddieson2013-15"><unstructured_citation>
+          I. Maddieson. Syllable Structure. In The World Atlas of Language Structures Online, M.S. Dryer,   M. Haspelmath, eds. Max Planck Institute for Evolutionary Anthropology,   Leipzig, 2013. https://wals.info/chapter/12
+        </unstructured_citation></citation>
+        <citation key="tex:marchandetal2007-16"><unstructured_citation>
+          Y. Marchand, C.R. Adsett, R.I. Damper. Automatic Syllabification in English: A Comparison of Different   Algorithms. Language and Speech 52(1):1&#x2013;27, 2009. https://doi.org/10.1177/0023830908099881
+        </unstructured_citation></citation>
+        <citation key="tex:hyphenationweb-2021-08-15-17"><unstructured_citation>
+          A. Rosendahl, M. Miklavec. TeX hyphenation patterns. http://hyphenation.org/tex
+        </unstructured_citation></citation>
+        <citation key="nlp:Shao2018-18"><unstructured_citation>
+          Y. Shao, C. Hardmeier, J. Nivre. Universal Word Segmentation: Implementation and Interpretation. Transactions of the Association for Computational Linguistics   6:421&#x2013;435, 2018. https://doi.org/10.1162/tacl_a_00033
+        </unstructured_citation></citation>
+        <citation key="tensojka:cshyphenrepo-19"><unstructured_citation>
+          O. Sojka, P. Sojka. cshyphen repository. https://github.com/tensojka/cshyphen
+        </unstructured_citation></citation>
+        <citation key="tex:sojka95c-20"><unstructured_citation>
+          P. Sojka. Notes on Compound Word Hyphenation in TeX. TUGboat 16(3):290&#x2013;297, 1995. https://tug.org/TUGboat/tb16-3/tb48soj2.pdf
+        </unstructured_citation></citation>
+        <citation key="tex:sojka99a-21"><unstructured_citation>
+          P. Sojka. Hyphenation on Demand. TUGboat 20(3):241&#x2013;247, 1999. https://tug.org/TUGboat/tb20-3/tb64sojka.pdf
+        </unstructured_citation></citation>
+        <citation key="tex:SojkaSKhyp04beng-22"><unstructured_citation>
+          P. Sojka. Slovensk&#x00E9; vzory d&#x011B;len&#x00ED;: &#x010D;as pro zm&#x011B;nu? In Proc. of SLT 2004, 4th seminar on Linux and TeX,   pp. 67&#x2013;72, Znojmo, 2004. Konvoj. https://fi.muni.cz/usr/sojka/papers/skhyp.pdf
+        </unstructured_citation></citation>
+        <citation key="tex:sojka04eng-23"><unstructured_citation>
+          P. Sojka. Slovensk&#x00E9; vzory d&#x011B;len&#x00ED;: &#x010D;as pro zm&#x011B;nu?   [Slovak Hyphenation Patterns: A Time for Change?]. CSTUG Bulletin 14(3&#x2013;4):183&#x2013;189, 2004. https://doi.org/10.5300/2004-3-4/183
+        </unstructured_citation></citation>
+        <citation key="tex:zpravodajsojkaetsojka2019-24"><unstructured_citation>
+          P. Sojka, O. Sojka. The Unreasonable Effectiveness of Pattern Generation. Zpravodaj CSTUG 29(1&#x2013;4):73&#x2013;86, 2019. https://doi.org/10.5300/2019-1-4/73
+        </unstructured_citation></citation>
+        <citation key="nlp:SojkaetSojkaraslan2019-25"><unstructured_citation>
+          P. Sojka, O. Sojka. Towards Universal Hyphenation Patterns. In Proc. of Recent Advances in Slavonic Natural Language   Processing&#x2014;RASLAN 2019, A. Hor&#x00E1;k, P. Rychl&#x00FD;, A. Rambousek, eds.,   pp. 63&#x2013;68, Karlova Stud&#x00E1;nka, Czech Republic, 2019. Tribun EU. https://nlp.fi.muni.cz/raslan/2019/paper13-sojka.pdf
+        </unstructured_citation></citation>
+        <citation key="tex:sojkas2019unreasonable-26"><unstructured_citation>
+          P. Sojka, O. Sojka. The unreasonable effectiveness of pattern generation. TUGboat 40(2):187&#x2013;193, 2019. https://tug.org/TUGboat/tb40-2/tb125sojka-patgen.pdf
+        </unstructured_citation></citation>
+        <citation key="tex:zpravodajsojkaetsojka2020-27"><unstructured_citation>
+          P. Sojka, O. Sojka. Towards New Czechoslovak Hyphenation Patterns. Zpravodaj CSTUG 30(3&#x2013;4):118&#x2013;126, 2020. https://cstug.cz/bulletin/pdf/2020-3-4.pdf#page=16
+        </unstructured_citation></citation>
+        <citation key="tex:sojka95b-28"><unstructured_citation>
+          P. Sojka, P. &#x0160;eve&#x010d;ek. Hyphenation in TeX&#x2014;Quo Vadis? TUGboat 16(3):280&#x2013;289, 1995. https://tug.org/TUGboat/tb16-3/tb48soj1.pdf
+        </unstructured_citation></citation>
+        <citation key="nlp:trogkanis-elkan-2010-conditional-29"><unstructured_citation>
+          N. Trogkanis, C. Elkan. Conditional Random Fields for Word Hyphenation. In Proc. of the 48th Annual Meeting of the ACL, pp. 366&#x2013;374,   Uppsala, Sweden, July 2010. ACL. https://www.aclweb.org/anthology/P10-1038
+        </unstructured_citation></citation>
+        <citation key="nlp:wordpiece2016-30"><unstructured_citation>
+          Y. Wu, M. Schuster, et al. Google&#x2019;s Neural Machine Translation System: Bridging the Gap between   Human and Machine Translation, 2016. https://paperswithcode.com/method/wordpiece
+        </unstructured_citation></citation>
+        <citation key="nlp:UJSprirucka-31"><unstructured_citation>
+          &#x013d;. &#x0160;t&#x00fa;r Institute of Linguistics of the Slovak Academy of Sciences (SAS),   ed. Pravidl&#x00e1; slovensk&#x00e9;ho pravopisu [Rules of Slovak   Grammar]. Veda, publisher of SAS, Bratislava, 3rd (updated printing) ed., 2000. https://www.juls.savba.sk/ediela/psp2000/psp.pdf
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Texmlbus, a build system to convert documents to XML and other formats</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Heinrich</given_name>
+          <surname>Stamerjohanns</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>132</first_page>
+        <last_page>134</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131stamerjohanns-texmlbus</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131stamerjohanns-texmlbus.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Duivesteijn:cheat2020-1"><unstructured_citation>
+          W. Duivesteijn, S. Hess, X. Du. How to cheat the page limit. WIREs Data Mining and Knowledge Discovery 10, Feb. 2020. https://doi.org/10.1002/widm.1361
+        </unstructured_citation></citation>
+        <citation key="Ginev:cortex-2"><unstructured_citation>
+          D. Ginev. CorTeX: A general purpose processing framework for corpora of   scientific documents. https://github.com/dginev/CorTeX
+        </unstructured_citation></citation>
+        <citation key="Miller:latexml-3"><unstructured_citation>
+          B. Miller, D. Ginev. LaTeXML: A LaTeX to XML converter. https://dlmf.nist.gov/LaTeXML/
+        </unstructured_citation></citation>
+        <citation key="Stamerjohanns:texmlbus-4"><unstructured_citation>
+          H. Stamerjohanns. texmlbus: A build system to convert documents to XML and   other formats. https://github.com/stamer/texmlbus
+        </unstructured_citation></citation>
+        <citation key="StaKo:2008-5"><unstructured_citation>
+          H. Stamerjohanns, M. Kohlhase. Transforming the ar&#x03C7;iv to XML. In 9th International Conference, AISC 2008 15th Symposium,   Calculemus 2008 7th International Conference, MKM 2008 Birmingham, UK,   July 28&#x2013;August 1, 2008, S. Autexier, J. Campbell, et al., eds., Intelligent   Computer Mathematics, pp. 574&#x2013;582. Springer Verlag, 2008.
+        </unstructured_citation></citation>
+        <citation key="StaKoh:tlcspx10-6"><unstructured_citation>
+          H. Stamerjohanns, M. Kohlhase, et al. Transforming large collections of scientific publications to XML. Mathematics in Computer Science 3(3):299&#x2013;307, 2010. https://kwarc.info/kohlhase/papers/mcs10.pdf
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title><tt>bib2gls</tt>: sorting</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Nicola</given_name>
+          <surname>Talbot</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>194</first_page>
+        <last_page>203</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131talbot-sorting</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131talbot-sorting.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="relsize-1"><unstructured_citation>
+          D. Arseneau, M. Swift. The relsize package, 2013. https://ctan.org/pkg/relsize.
+        </unstructured_citation></citation>
+        <citation key="marvosym-2"><unstructured_citation>
+          M. Miklavec, T. Henlich, M. Vogel. The marvosym package, 2012.  https://ctan.org/pkg/marvosym.
+        </unstructured_citation></citation>
+        <citation key="upgreek-3"><unstructured_citation>
+          W. Schmidt. The upgreek package, 2003.  https://ctan.org/pkg/upgreek.
+        </unstructured_citation></citation>
+        <citation key="samplebibfiles-4"><unstructured_citation>
+          N. Talbot. Sample Bib files.  https://dickimaw-books.com/latex/tugboat-bib2gls.
+        </unstructured_citation></citation>
+        <citation key="tugboat2020-5"><unstructured_citation>
+          N. Talbot. bib2gls: selection, cross-references and locations. TUGboat 41(3), 2020. https://tug.org/TUGboat/tb41-3/tb129talbot-bib2gls-more.pdf.
+        </unstructured_citation></citation>
+        <citation key="logicaldivisions-6"><unstructured_citation>
+          N. Talbot. Logical glossary divisions (type vs group vs   parent), 2020. https://dickimaw-books.com/gallery/?label=logicaldivisions.
+        </unstructured_citation></citation>
+        <citation key="bib2gls-7"><unstructured_citation>
+          N. Talbot. bib2gls: Command line application to convert .bib   files to glossaries-extra.sty resource files, 2020. https://ctan.org/pkg/bib2gls.
+        </unstructured_citation></citation>
+        <citation key="glossaries-extra-8"><unstructured_citation>
+          N. Talbot. The glossaries-extra package, 2020. https://ctan.org/pkg/glossaries-extra.
+        </unstructured_citation></citation>
+        <citation key="glossaries-9"><unstructured_citation>
+          N. Talbot. The glossaries package, 2020. https://ctan.org/pkg/glossaries.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TUG 2021 Annual General Meeting notes</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jennifer</given_name>
+          <surname>Claudio</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>101</first_page>
+        <last_page>104</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131tug21-agm</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131tug21-agm.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TEI-XML to LaTeX workflow: Issues and lessons</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Nicol&#xe1;s</given_name>
+          <surname>Vaughan</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>174</first_page>
+        <last_page>179</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131vaughan-tei</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131vaughan-tei.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="apachesoftwarefoundation:2016-1"><unstructured_citation>
+          Apache FOP Compliance Page. https://xmlgraphics.apache.org/fop/compliance.html
+        </unstructured_citation></citation>
+        <citation key="Berglund:2006-2"><unstructured_citation>
+          A. Berglund, ed. Extensible Stylesheet Language (XSL) Version 1.1. W3C   Recommendation 05 December 2006. https://www.w3.org/TR/xsl11/
+        </unstructured_citation></citation>
+        <citation key="Etemad:2018-3"><unstructured_citation>
+          E.J. Etemad, S. Sapin, eds. CSS Paged Media Module Level 3. W3C Working Draft, 18   October 2018. https://www.w3.org/TR/css-page-3/
+        </unstructured_citation></citation>
+        <citation key="Niederberger:2020-4"><unstructured_citation>
+          C. Niederberger. Enotez&#x2014;Support for end-notes. https://ctan.org/pkg/enotez
+        </unstructured_citation></citation>
+        <citation key="PDFreactor:2021-5"><unstructured_citation>
+          PDFreactor. https://www.pdfreactor.com/
+        </unstructured_citation></citation>
+        <citation key="PrinceXML:2021-6"><unstructured_citation>
+          PrinceXML. https://www.princexml.com/
+        </unstructured_citation></citation>
+        <citation key="Saxon:2021-7"><unstructured_citation>
+          Saxon XSLT and XQuery Processor. https://sourceforge.net/projects/saxon/files/
+        </unstructured_citation></citation>
+        <citation key="iso:639-3-8"><unstructured_citation>
+          SIL. ISO 639-3. https://iso639-3.sil.org/
+        </unstructured_citation></citation>
+        <citation key="texse:2020-9"><unstructured_citation>
+          StackExchange - Problem using macros in directua. https://tex.stackexchange.com/questions/556911/
+        </unstructured_citation></citation>
+        <citation key="texse:2020b-10"><unstructured_citation>
+          StackExchange - problem with command expansion. https://tex.stackexchange.com/questions/557079/
+        </unstructured_citation></citation>
+        <citation key="TEIguidelines-11"><unstructured_citation>
+          TEI Consortium. TEI P5: Guidelines for Electronic Text Encoding and   Interchange. https://tei-c.org/release/doc/tei-p5-doc/en/html
+        </unstructured_citation></citation>
+        <citation key="Vaughan:2020-12"><unstructured_citation>
+          N. Vaughan. Cleantex - Python script to remove unwanted whitespace from   LaTeX files produced from TEI. https://github.com/nivaca/cleantex
+        </unstructured_citation></citation>
+        <citation key="sm:odd-13"><unstructured_citation>
+          N. Vaughan. SM-ODD. ODD schema for the Salomon &#x0026; Marcolfus   project. https://github.com/nivaca/sm-odd
+        </unstructured_citation></citation>
+        <citation key="sm:relaxng-14"><unstructured_citation>
+          N. Vaughan. SM-RELAXNG schema for the Salomon &#x0026; Marcolfus   project. https://github.com/nivaca/sm-relaxng
+        </unstructured_citation></citation>
+        <citation key="Vaughan:2021-15"><unstructured_citation>
+          N. Vaughan. XSLT-LaTeX - templates to transform TEI-XML documents into   LaTeX. https://github.com/nivaca/xslt-latex
+        </unstructured_citation></citation>
+        <citation key="WeasyPrint:2021-16"><unstructured_citation>
+          WeasyPrint. https://weasyprint.org/
+        </unstructured_citation></citation>
+        <citation key="Wilson:2021-17"><unstructured_citation>
+          P.R. Wilson, L. Madsen. Memoir &#x2013; Typeset fiction, non-fiction and mathematical books. https://ctan.org/pkg/memoir
+        </unstructured_citation></citation>
+        <citation key="Witt:2016-18"><unstructured_citation>
+          J.C. Witt, M. Stenskj&#x00e6;r, N. Vaughan. Lombard Press Schema 1.0.0 - Diplomatic Transcription   Guidelines. https://community.scta.info/pages/lombardpress-schema-diplomatic.html
+        </unstructured_citation></citation>
+        <citation key="Witt:2017-19"><unstructured_citation>
+          J.C. Witt, M. Stenskj&#x00e6;r, N. Vaughan. LombardPress Schema. https://github.com/lombardpress/lombardpress-schema
+        </unstructured_citation></citation>
+        <citation key="wkhtmltopdf:2021-20"><unstructured_citation>
+          Wkhtmltopdf. https://wkhtmltopdf.org
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Creating a VPAT statement for TeX Live</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Boris</given_name>
+          <surname>Veytsman</surname>
+          <ORCID>https://orcid.org/0000-0003-4674-8113</ORCID>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Keiran</given_name>
+          <surname>Harcombe</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>164</first_page>
+        <last_page>165</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-2/tb131veytsman-vpat</doi>
+        <timestamp>20210929210341</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-2/tb131veytsman-vpat.html</resource>
+      </doi_data>
+    </journal_article>
+  </journal></body>
+</doi_batch>

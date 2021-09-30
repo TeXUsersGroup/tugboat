@@ -1,0 +1,104 @@
+\begin{thebibliography}{10}
+
+\bibitem{apachesoftwarefoundation:2016}
+Apache {{FOP Compliance Page}}.
+\newblock \newline \url{https://xmlgraphics.apache.org/fop/compliance.html}
+
+\bibitem{Berglund:2006}
+A.~{Berglund, ed.}
+\newblock Extensible {{Stylesheet Language}} ({{XSL}}) {{Version}} 1.1. {{W3C
+  Recommendation}} 05 {{December}} 2006.
+\newblock \url{https://www.w3.org/TR/xsl11/}
+
+\bibitem{Etemad:2018}
+E.J.~Etemad, S.~Sapin, eds.
+\newblock {{CSS Paged Media Module Level}} 3. {{W3C Working Draft}}, 18
+  {{October}} 2018.
+\newblock \newline \url{https://www.w3.org/TR/css-page-3/}
+
+\bibitem{Niederberger:2020}
+C.~Niederberger.
+\newblock Enotez---{{Support}} for end-notes.
+\newblock \url{https://ctan.org/pkg/enotez}
+
+\bibitem{PDFreactor:2021}
+{{PDFreactor}}.
+\newblock \url{https://www.pdfreactor.com/}
+
+\bibitem{PrinceXML:2021}
+{{PrinceXML}}.
+\newblock \url{https://www.princexml.com/}
+
+\bibitem{Saxon:2021}
+Saxon {{XSLT}} and {{XQuery Processor}}.
+\newblock \url{https://sourceforge.net/projects/saxon/files/}
+
+\bibitem{iso:639-3}
+{SIL}.
+\newblock {{ISO}} 639-3.
+\newblock \url{https://iso639-3.sil.org/}
+
+\bibitem{texse:2020}
+{StackExchange - Problem} using macros in directua.
+\newblock \url{https://tex.stackexchange.com/questions/556911/}
+
+\bibitem{texse:2020b}
+{StackExchange} - problem with command expansion.
+\newblock \url{https://tex.stackexchange.com/questions/557079/}
+\newpage
+\bibitem{TEIguidelines}
+{TEI Consortium}.
+\newblock {{TEI P5}}: {{Guidelines}} for {{Electronic Text Encoding}} and
+  {{Interchange}}.
+\newblock \url{https://tei-c.org/release/doc/tei-p5-doc/en/html}
+
+\bibitem{Vaughan:2020}
+N.~Vaughan.
+\newblock Cleantex - {{Python}} script to remove unwanted whitespace from
+  {{LaTeX}} files produced from {{TEI}}.
+\newblock \url{https://github.com/nivaca/cleantex}
+
+\bibitem{sm:odd}
+N.~Vaughan.
+\newblock {{SM}}-{{ODD}}. {{ODD}} schema for the {{Salomon}} \& {{Marcolfus}}
+  project.
+\newblock \url{https://github.com/nivaca/sm-odd}
+
+\bibitem{sm:relaxng}
+N.~Vaughan.
+\newblock {{SM}}-{{RELAXNG}} schema for the {{Salomon}} \& {{Marcolfus}}
+  project.
+\newblock \url{https://github.com/nivaca/sm-relaxng}
+
+\bibitem{Vaughan:2021}
+N.~Vaughan.
+\newblock {XSLT-LaTeX} - templates to transform {TEI-XML} documents into
+  {\LaTeX}.
+\newblock \url{https://github.com/nivaca/xslt-latex}
+
+\bibitem{WeasyPrint:2021}
+{{WeasyPrint}}.
+\newblock \url{https://weasyprint.org/}
+
+\bibitem{Wilson:2021}
+P.R.~Wilson, L.~Madsen.
+\newblock Memoir – {{Typeset}} fiction, non-fiction and mathematical books.
+\newblock \url{https://ctan.org/pkg/memoir}
+
+\bibitem{Witt:2016}
+J.C.~Witt, M.~Stenskjær, N.~Vaughan.
+\newblock Lombard {{Press Schema}} 1.0.0 - {{Diplomatic Transcription
+  Guidelines}}.
+\newblock
+  \url{https://community.scta.info/pages/lombardpress-schema-diplomatic.html}
+
+\bibitem{Witt:2017}
+J.C.~Witt, M.~Stenskjær, N.~Vaughan.
+\newblock {{LombardPress Schema}}.
+\newblock \url{https://github.com/lombardpress/lombardpress-schema}
+
+\bibitem{wkhtmltopdf:2021}
+Wkhtmltopdf.
+\newblock \url{https://wkhtmltopdf.org}
+
+\end{thebibliography}

@@ -1,0 +1,5 @@
+We are interested in situations such that using the full expressive power of a
+programming language is needed when `References` sections are generated for a
+source text suitable for \LaTeX. The data model used by \BibTeX\ is inadequate
+from this point of view; the \packagename{biblatex} package is based on a more
+efficient data model, but workarounds may be needed in some circumstances.

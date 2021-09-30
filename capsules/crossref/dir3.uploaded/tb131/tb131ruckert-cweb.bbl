@@ -1,0 +1,30 @@
+\begin{thebibliography}{1}
+
+\bibitem{Knuth:cweb}
+Donald~E. Knuth and Silvio Levy.
+\newblock {\em {The CWEB System of Structured Documentation}}.
+\newblock Addison Wesley, 1994.
+\newblock {\tt https://ctan.org/pkg/cweb}.
+
+\bibitem{LaTeX:primitives}
+{{\LaTeX} {Project Team}}.
+\newblock {\LaTeX} news, issue~31, {February 2020}.
+\newblock {\em TUGboat}, 41(1):34--38, 2020.
+\newblock \url{https://tug.org/TUGboat/tb41-1/tb127ltnews31.pdf}. Section
+  ``\LaTeX\ requirements on engine primitives''. See also: \texttt{latex-l}
+  thread of April~20, 2021, ``LaTeX required primitives: some questions'', at
+  \url{https://listserv.uni-heidelberg.de/cgi-bin/wa?A0=latex-l}.
+
+\bibitem{MR:tug38}
+Martin Ruckert.
+\newblock Converting {\TeX} from {\WEB} to cweb.
+\newblock {\em {\TUB}}, 38(3):353--358, 2017.
+\newblock \url{https://tug.org/TUGboat/tb38-3/tb120ruckert.pdf}.
+
+\bibitem{MR:tug39}
+Martin Ruckert.
+\newblock {HINT}: Reflowing {\TeX} output.
+\newblock {\em TUGboat}, 39(3):217--223, 2018.
+\newblock \url{https://tug.org/TUGboat/tb39-3/tb123ruckert-hint.pdf}.
+
+\end{thebibliography}

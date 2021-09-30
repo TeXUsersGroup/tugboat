@@ -1,0 +1,110 @@
+\hyphenation{GUTen-berg}\hyphenation{GUTen-berg loria}\hyphenation{GUTen-berg}
+\input{babelbst.tex}
+\begin{thebibliography}{10}
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem{contextgarden2012a}
+\textsc{{Context\kern.05emGarden}}: \emph{Bibliographies
+  in {Mk\acro{IV}}}. \bbljul{} 2012.
+\newblock \url{https://wiki.contextgarden.net/Bibliography}.
+
+
+\bibitem{hagen2006}
+Hans \textsc{Hagen}:
+  \begin{bblquotedtitle}{Lua\TeX}: Howling to the Moon\end{bblquotedtitle}.
+\newblock \emph{Biuletyn Polskiej Grupy U\.{z}ytkownik\'{o}w Systemu {\TeX}},
+  \bblvol{}~23, \bblpp{}~63--68. \bblapr{} 2006.
+
+
+\bibitem{h2003k}
+Jean-Michel \textsc{Hufflen}:
+  \begin{bblquotedtitle}{\mlBibTeX's} Version~1.3\end{bblquotedtitle}.
+\newblock \emph{\logo{tug}boat}, \bblvol{}~24, \bblno{}~2, \bblpp{}~249--262.
+  \bbljul{} 2003.
+\newblock \url{https://tug.org/TUGboat/tb24-2/tb77hufflen.pdf}
+
+
+\bibitem{h2010f}
+Jean-Michel \textsc{Hufflen}:
+  \begin{bblquotedtitle}Using {\mlBibTeX} to Populate {Open}
+  {Archives}\end{bblquotedtitle}.
+\newblock \capitalize\bblin{}: Tomasz \textsc{Przechlewski}, Karl
+  \textsc{Berry}, Gaby~\textsc{Gic-Grusza}, Ewa \textsc{Kolsar} \bbland{}
+  Jerzy~B. \textsc{Ludwichowski}, \bbleds{}, \emph{Typographers and
+  Programmers: Mutual Inspirations. {Proc.}\ {Bacho\TeX~2010} Conference},
+  \bblpp{} 45--48. \bblapr{}~2010.
+
+
+\bibitem{h2015b}
+Jean-Michel \textsc{Hufflen}:
+  \begin{bblquotedtitle}From {\mlBibTeX}~1.3 to 1.4\end{bblquotedtitle}.
+\newblock \capitalize\bblin{}: Tomasz \textsc{Przechlewski},
+Karl~\textsc{Berry}, Bogus{\l}aw \textsc{Jackowski} \bbland{} Jerzy~B.
+  \textsc{Ludwichowski}, \bbleds{}, \emph{Various Faces of Typography. {Proc.}\
+  {Bacho\TeX}~2015 conference}, \bblpp{} 13--17. Bachotek, Poland.
+  \bblapr{}~2015.
+
+\newpage
+\bibitem{jeffrey1990}
+Alan \textsc{Jeffrey}:
+  \begin{bblquotedtitle}Lists in {\TeX's} Mouth\end{bblquotedtitle}.
+\newblock \emph{\logo{tug}boat}, \bblvol{}~11, \bblno{}~2, \bblpp{}~237--245.
+  \bbljun{}~1990.
+\newblock \url{https://tug.org/TUGboat/tb11-2/tb28jeffrey.pdf}
+
+
+\bibitem{kime-charette2020}
+Philip \textsc{Kime} \bbland{} Fran{\c{c}}ois
+  \textsc{Charette}: \emph{{\pgbiber}. {A} Backend Bibliography Processor
+  for {\packagename{biblatex}}. {Version~\pgbiber\ 2.16}
+  (\packagename{biblatex} 3.16)}. 19~\bbldec{} 2020.
+\newblock \\\url{https://ctan.org/pkg/biber}.
+
+
+\bibitem{kime-etc2020}
+Philip \textsc{Kime}, Moritz \textsc{Wemheuer}
+  \bbland{} Philipp \textsc{Lehman}: \emph{The {\packagename{biblatex}}
+  Package. {Programmable} Bibliographies and Citations}.
+\newblock Version~3.16. 31~\bbldec{} 2020.
+\newblock \\\url{https://ctan.org/pkg/biblatex}.
+
+
+\bibitem{laan1993}
+Kees \textsc{van~der Laan}:
+  \begin{bblquotedtitle}Sorting within {\TeX}\end{bblquotedtitle}.
+\newblock \emph{\logo{tug}boat}, \bblvol{}~14, \bblno{}~3, \bblpp{}~319--328.
+  \bbloct{} 1993.
+\newblock \url{https://tug.org/TUGboat/tb14-3/tb40laan-sort.pdf}
+
+
+\bibitem{lamport1994}
+Leslie \textsc{Lamport}: \emph{{\LaTeX}: {A}
+  Document Preparation System. User's Guide and Reference Manual}.
+\newblock Addison-Wesley Publishing Company, Reading, Massachusetts. 1994.
+
+
+\bibitem{mittelbach-etc2004}
+Frank \textsc{Mittelbach} \bbland{} Michel
+  \textsc{Goossens}, \bblwith{} Johannes \textsc{Braams}, David
+  \textsc{Carlisle}, Chris~A. \textsc{Rowley}, Christine \textsc{Detig}
+  \bbland{} Joachim \textsc{Schrod}: \emph{The {\LaTeX} Companion}.
+\newblock \bblsecondo{}~\bbledn{}. Addison-Wesley Publishing Company, Reading,
+  Massachusetts. \bblaug{}~2004.
+
+
+\bibitem{patashnik1988a}
+Oren \textsc{Patashnik}: \emph{Designing
+  {\BibTeX} Styles}. \bblfeb{} 1988.
+\newblock Part of the {\BibTeX} distribution.
+\newblock \url{https://ctan.org/pkg/bibtex}
+
+
+\bibitem{patashnik1988}
+Oren \textsc{Patashnik}: \emph{{\BibTeX}ing}.
+  \bblfeb{} 1988.
+\newblock Part of the {\BibTeX} distribution.
+\newblock \url{https://ctan.org/pkg/bibtex}
+
+
+\end{thebibliography}
