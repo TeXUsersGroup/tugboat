@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2021-10-12 v2.26
+                   [2021-10-24 v2.26
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -937,7 +937,24 @@
 \def\newline{\hskip\z@\@plus\pagewd\break}
 %    \end{macrocode}
 %
-% Hyphen control: first, we save the hyphenpenalties in
+% \begin{macro}{\tubsentencespace}
+% 
+% Occasionally, notably after citations that need to come after a
+% sentence-ending period, we want to tell \TeX\ that it's still at the
+% end of a sentence. As in: 
+% |... whatever. \cite{foo}\tubsentencespace|
+% This happens when, e.g., the reference applies to more than the final
+% sentence.  Also can be needed in \cs{@} cannot be used because the
+% sentence-ending punctuation itself occurs inside a control sequence
+% that prevents it.
+% 
+%    \begin{macrocode}
+\def\tubsentencespace{\spacefactor=3000{}\space\ignorespaces}
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\allowhyphens}
+% Hyphen control: first, we save (via \cs{edef}) the hyphenpenalties in
 % \cs{allowhyphens}.  This allows us to permit hyphens temporarily in
 % things like \cs{netaddress}es, which typically occur when
 % \cs{raggedright} is set,  but which need to be allowed to break at
@@ -948,6 +965,7 @@
   \noexpand\exhyphenpenalty\the\exhyphenpenalty\relax}
 \def\nohyphens{\hyphenpenalty\@M\exhyphenpenalty\@M}
 %    \end{macrocode}
+% \end{macro}
 %
 % \subsection{Utility registers and definitions}
 %
@@ -1116,6 +1134,14 @@
 % \end{macro}
 % \end{macro}
 % \end{macro}
+% \end{macro}
+%
+% \begin{macro}{\tubjustifiedpar}
+% Undo the \cs{raggedright} (or other such) settings, restoring normality.
+%    \begin{macrocode}
+\def\tubjustifiedpar{\rightskip=0pt \parfillskip=0pt plus1fil
+                     \allowhyphens \normalspaces}
+%    \end{macrocode}
 % \end{macro}
 %
 % \subsection{Assorted user-level markup}
@@ -3504,7 +3530,7 @@
 %</common>
 %    \end{macrocode}
 %
-% \subsection{Miscellaneous definitions}
+% \subsection{Editor's notes and other footnotes}
 %
 % \cs{EdNote} allows the editor to enter notes in the text of a paper.
 % If the command is given something that appears like an optional
