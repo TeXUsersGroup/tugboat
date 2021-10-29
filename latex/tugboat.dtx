@@ -357,6 +357,7 @@
   \ifx\undefined\pdfstringdefDisableCommands\else
     \pdfstringdefDisableCommands{%
       \let\acro\relax
+      \let\origDash=\Dash \def\Dash{\texorpdfstring{\origDash}{--}}%
       % lots more could be added.
     }%
   \fi

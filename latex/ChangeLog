@@ -1,3 +1,7 @@
+2021-10-29  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\pdfstringdefDisableCommands): also handle \Dash.
+
 2021-10-27  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\tubsentencespace, \tubjustifiedpar): new cs.
