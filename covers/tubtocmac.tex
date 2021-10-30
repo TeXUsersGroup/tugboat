@@ -159,6 +159,11 @@
 \def\textsl#1{{\sl #1}}
 \def\texttt#1{{\tt #1}}
 
+% | used for cmr in practice, so math bar is ok.
+% we are presumably not in math mode already?
+% \ensuremath from LaTeX is a bit too much for right now.
+\def\textbar{\ifmmode\vert\else$\vert$\fi}
+
 % slanted \BibTeX and \MF:
 \def\slBibTeX{{\sl B{\slc IB}\kern-.08em\TeX}}
 \def\BibTeX{\slBibTeX}
