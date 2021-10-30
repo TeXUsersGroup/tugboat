@@ -1,6 +1,11 @@
+2021-10-29  Karl Berry  <karl@freefriends.org>
+
+	* ltugboat.cfg (\last): do not define this. It was used for last
+	names in 34:3, doesn't need to stay around forever.
+
 2021-09-15  Karl Berry  <karl@freefriends.org>
 
-	* ltugboat.cfg: new file, can be in svn.
+	* ltugboat.cfg: new file that can be in svn.
 
 	* 0issues.fil: 42:2 uploaded.
 

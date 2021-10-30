@@ -1,3 +1,10 @@
+2021-10-29  Karl Berry  <karl@freefriends.org>
+
+	* ps2pdf-cmyk-tub: new script.
+	* ps2pdf-gray-tub: use -f before input file to stop cmdline processing.
+	* make-issue-pages-tub: call ps2pdf-cmyk-tub for color pages;
+        use -dAutoRotatePages=/None.
+
 2021-09-15  Karl Berry  <karl@freefriends.org>
 
 	* make-issue-pages-tub: doc.

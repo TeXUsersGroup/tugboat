@@ -1,0 +1,26 @@
+#!/bin/sh
+# $Id: ps2pdf-gray-tub 296 2020-09-14 20:53:13Z karl $
+# Public domain.
+# 
+# Convert input $1 to output $2, converting color to cmyk.
+# https://stackoverflow.com/questions/48936435/
+
+if test $# -ne 2; then
+  echo "Usage: $0 INFILE OUTFILE" >&2
+  exit 1
+fi
+
+: ${gs=gs}
+exec $gs -q -dNOPAUSE -dBATCH \
+  -sDEVICE=pdfwrite \
+  -sOutputFile="$2" \
+  -r1200 \
+  -dAutoRotatePages=/None \
+  -dCompressFonts=true \
+  -dDetectDuplicateImages \
+  -dEmbedAllFonts \
+  -dPrinted=false \
+  \
+  -sColorConversionStrategy=CMYK \
+  -dProcessColorModel=/DeviceCMYK \
+  -f "$1"

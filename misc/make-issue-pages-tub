@@ -79,7 +79,9 @@ assert_pdfpagecount () {
   fi
 }
 
-gs="gs -q"
+# We do some unusual Ghostscript calls, so don't use ps2pdf-tub.  But
+# tell gs not to rotate our pages (tb132voss-hvfloat).
+gs="gs -q -dAutoRotatePages=/None"
 cd $tb/CADMUS || exit 1
 test -d upload || mkdir upload
 rm -f upload/*
@@ -129,16 +131,19 @@ date
 color_count=0
 gray_count=0
 set - $colorpages # now use word-split $colorpages as argv
-for page in `seq --format="%03.0f" 1 $filecount`; do
+for page in `seq --format="%03.0f" 1 $filecount`; do # for every page in doc
   color=false
+  origfile=$page$filesuffix.pdf
   if test x$page = x$1; then
-    echo "$page: color, leaving alone."
+    echo "$page: color, converting to CMYK."
     test $# -gt 0 && shift
     color_count=`expr $color_count + 1`
+    cmykfile=cmyk-$origfile
+    ps2pdf-cmyk-tub $origfile $cmykfile || exit 1
+    mv $cmykfile $origfile || exit 1
   else
-    #echo "$page: not color, so grayscaling."
+    #echo "$page: not color, so grayscaling." # too much output
     gray_count=`expr $gray_count + 1`
-    origfile=$page$filesuffix.pdf
     grayfile=gray-$origfile
     ps2pdf-gray-tub $origfile $grayfile || exit 1
     mv $grayfile $origfile || exit 1
@@ -148,7 +153,7 @@ date
 
 # should have found all color pages given.
 if test $# -ne 0; then
-  echo "$0: color pages specified but not found, goodbye: $*" >&1
+  echo "$0: these color pages specified but not found, goodbye: $*" >&1
   exit 1
 fi
 

@@ -437,7 +437,7 @@ FUNCTION {emphasize}
 %%% from trunc-auth.bst:
 %%% There are two constants that allow for the truncation of a list of author
 %%% (or editor) names -- max.names and trunc.num.  And here's how they work:
-%%% If there are max.names of fewer in the list, there is no truncation; but
+%%% If there are max.names or fewer in the list, there is no truncation; but
 %%% if there are more than max.names, the list is truncated at the trunc.num
 %%% name, which is replaced by trunc.string (such as "et~al.", and names later
 %%% in the list are omitted).  There's also a sanity check, making sure that:

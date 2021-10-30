@@ -33,4 +33,4 @@ exec $gs -q -dNOPAUSE -dBATCH \
   \
   -sColorConversionStrategy=Gray \
   -dProcessColorModel=/DeviceGray \
-  "$1"
+  -f "$1"
