@@ -413,8 +413,8 @@ access</a>.
 %  {}
 
 \capsule{}
-  {Software \& Tools}
-  {Hans Hagen}%add|ConTeXt
+  {Software \& Tools}%add|ConTeXt
+  {Hans Hagen}
   {LuaMeta\TeX\ programming features}
   {advances and extensions in \TeX\ programming in the \code{lmtx} engine}
   {74-80}
@@ -423,8 +423,8 @@ access</a>.
   {}
 
 \capsule{}
-  {Fonts}
-  {Hans Hagen}%add|ConTeXt
+  {Fonts}%add|ConTeXt
+  {Hans Hagen}
   {Scaled fonts and glyphs}
   {engine extensions in \code{lmtx} for dynamic glyph scaling}
   {60-65}
