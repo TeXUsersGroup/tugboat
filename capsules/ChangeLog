@@ -1,11 +1,29 @@
 2021-10-31  Karl Berry  <karl@freefriends.org>
 
-	* tb131capsule.txt: add video links.
+	* capaccum-keyword.pl (print_all_by_category): call
+	lists_entry_trailer rather than lists_vol_iss_link,
+	so that subtitle information will be included in the keyword list
+	as it is in the others. (For obituaries, mainly.)
+	* capconv.pl (transform_subtitles): remove pre_subtitle string, so
+	editorial comments' subtitles don't start with 3 extra spaces.
+	That doesn't align nicely in the lists* output files.
+	* capout.pl (write_entries): instead, double the between-entry
+	spaces for the subtitles in the per-issue contents*.html files.
+
+	* caputil.pl (debug_list, backtrace): new debug routines.
+	* capaccum-util.pl: doc.
+
+	* tb131capsule.txt (interviews): add video links.
+	* tb105capsule.txt (beet): avoid extra spaces before volume numbers.
+	* tb130capsule.txt (hagen-*): add ConTeXt category.
 
 	* tb94capsule.txt (pres),
+	* tb105capsule.tex (pres),
+	* tb112capsule.txt (beet): add names in subtitle.
+	* tb192capsule.txt (beet),
+	* tb113capsule.txt (beet),
+	* tb121capsule.txt (beet),
 	* tb130capsule.txt (beet): add Obituary category, names.
-	(hagen-*): add ConTeXt category.
-	* tb113capsule.txt (beet): add names in subtitle.
 
 2021-09-30  Karl Berry  <karl@freefriends.org>
 

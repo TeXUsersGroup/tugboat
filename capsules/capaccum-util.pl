@@ -26,7 +26,7 @@ sub sort_by_title_issue_page {
 sub lists_vol_iss_link {
   my ($issue_hash) = @_;
 
-  # simplify what we need.
+  # simplify the values we need.
   my $volno = $issue_hash->{"volno"};
   my $issno = $issue_hash->{"issno"};
   my $iss_year = $issue_hash->{"year"};
@@ -71,8 +71,8 @@ sub lists_author_html {
 }
 
  
-# Another subroutine, to return the trailing part of an entry, which is
-# exactly the same for titles and authors:
+# Another subroutine, to return the trailing part of an entry,
+# which is exactly the same for all the list* accumulations.
 #   category_html <vol_iss_link> <subtitles>
 # 
 sub lists_entry_trailer {

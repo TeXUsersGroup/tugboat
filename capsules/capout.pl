@@ -234,7 +234,18 @@ sub write_entries {
     # subtitles.
     if ($cap{"subtitles_html"}) {
       print "\n" unless $post_title_print++;
-      print qq!        <br><small>$cap{"subtitles_html"}</small>\n!
+      # Double any double spaces in the subtitles html; they are the
+      # indentation set in capconv.pl, but we need extra indentation on
+      # this output page to look right. The extra space between
+      # editorial comments' subtitles that don't start a line doesn't
+      # look bad.
+      # 
+      # Intentionally switch from a0 to nbsp just to give a clue in the
+      # output that something unusual happened.
+      #
+      (my $subtitles_print = $cap{"subtitles_html"})
+        =~ s/&#xa0;&#xa0;/&nbsp;&nbsp;&nbsp;&nbsp;/g;
+      print qq!        <br><small>$subtitles_print</small>\n!
     }
 
     # htmlnotes.

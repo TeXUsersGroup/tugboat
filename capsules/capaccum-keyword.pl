@@ -171,7 +171,7 @@ START_CATEGORY
       print $fh "<li>";
       print $fh &lists_url_html ($cap, $cap->{"title_html"});
       print $fh &lists_author_html ($cap->{"author_html"});
-      print $fh &lists_vol_iss_link ($cap->{issue});
+      print $fh &lists_entry_trailer ($cap);
       print $fh "\n";
     }
     

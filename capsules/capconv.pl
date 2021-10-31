@@ -290,45 +290,46 @@ sub transform_pageno {
 # Barbara's column (tb*beet) and is handled completely differently per
 # her request. For these, we want to maximize the text on each line, vs.
 # having each subtitle on a separate line. (Since there are so many
-# installments, it gets tiresome to scroll through.) So we make each
-# space in the subtitles into &nbsp;, and insert a simple newline
-# instead of <br>, so that between subtitles will be the only valid
-# breakpoints. Although we could do all this by editing the input files,
-# it actually seems more maintainable to do it here in the code, since
-# there is so much text involved.
+# installments of that column, it gets tiresome to scroll through.)
+# 
+# So for those, we make each space in the subtitles into &nbsp;, and
+# insert a simple newline instead of <br>, so that between subtitles
+# will be the only valid breakpoints. Although we could do all this by
+# editing the input files, it seems more maintainable to do it (and
+# tinker with it) here in the code, since there is so much text
+# involved.
 # 
 sub transform_subtitles {
   my ($s,$title,$author) = @_;
   my @subtitles = split (/;?\\\\\n/, $s);
 
-  my ($between_subtitles, $subtitle_spaces, $pre_subtitle);
+  my ($between_subtitles, $subtitle_spaces);
   if ($title =~ /\{?Editorial comments\}?/i && $author =~ /Barbara.Beeton/) {
-    #warn "   starting subtitles: @subtitles\n";
+    #debug_list("   starting editorial comments", @subtitles);
     # don't allow line breaks within Barbara's subtitles; that means
     # replacing " " and "\ " and "~" with our \CONNECT{} string, which
     # turns into &nbsp;.  (Ties are converted to spaces by default, not nbsp.)
     @subtitles = map { s/\\? |~/\\CONNECT{}/g; $_; } @subtitles;
     #
     # Additionally, for items that contain a - or "dash;", wrap in <nobr>
-    # to avoid breaking at the hyphens. Don't wrap everything just to
+    # to avoid breaking at the hyphens. Don't wrap everything, so as to
     # reduce the amount of output. We are matching TeX here, not HTML,
     # so looking for things like \Dash. No harm in matching more.
     @subtitles = map { /-|[dD]ash/ ? "<nobr>$_</nobr>" : $_; } @subtitles;
     #
     $between_subtitles = ";\n";
     $subtitle_spaces = 2;
-    $pre_subtitle = "&nbsp;" x 3;
   } else {
     $between_subtitles = "<br>\n";
     $subtitle_spaces = 5;
-    $pre_subtitle = "";
   }
 
-  $s = join ($between_subtitles, map { "&nbsp;" x $subtitle_spaces . $_ }
+  $s = join ($between_subtitles,
+             map { '\CONNECT{}' x $subtitle_spaces . $_ }
              @subtitles);
   #warn "     before tex2html: $s\n";
-  my $ret = $pre_subtitle . &tex2html ($s);
-  #warn "     final subtitles: $ret\n";
+  my $ret = &tex2html ($s);
+  #warn "      after tex2html: $ret\n";
 
   return $ret;
 }

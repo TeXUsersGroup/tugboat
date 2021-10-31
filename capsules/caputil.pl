@@ -129,7 +129,7 @@ sub ddebug {
 }
 
 
-# Print hash value prettily, starting with "LABEL: ".
+# Warn hash value prettily, starting with "LABEL: ".
 # 
 sub info_hash {
   return if $::OPT{"quiet"};
@@ -173,6 +173,32 @@ sub hash_as_string {
   $str .= join (",", @items);
   $str .= "}";
   return $str;
+}
+
+# Warn list value, starting with LABEL.
+# 
+sub debug_list {
+  my ($label) = shift;
+  my (@list) = (ref $_[0] && $_[0] =~ /.*ARRAY.*/) ? @{$_[0]} : @_;
+
+  my $str = "$label [" . join (",", @list) . "]";
+  warn $str;
+}
+
+
+# Return string representation of call stack for debugging.
+# 
+sub backtrace {
+  my $ret = "";
+
+  my ($line, $subr);
+  my $stackframe = 1;  # skip ourselves
+  while ((undef,undef,$line,$subr) = caller ($stackframe)) {
+    $ret .= " -> $subr.$line";
+    $stackframe++;
+  }
+
+  return $ret;
 }
 
 1;
