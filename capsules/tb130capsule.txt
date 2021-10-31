@@ -101,8 +101,8 @@ access</a>.
   {}
 
 \capsule{}
-  {General Delivery}
-  {Barbara Beeton}
+  {General Delivery}%add|Obituaries
+  {Barbara Beeton}%person|Robert Morris and Basil Malyshev
   {Editorial comments}
   {typography and {\sl TUGboat} news}
   {4-5}
@@ -414,7 +414,7 @@ access</a>.
 
 \capsule{}
   {Software \& Tools}
-  {Hans Hagen}
+  {Hans Hagen}%add|ConTeXt
   {LuaMeta\TeX\ programming features}
   {advances and extensions in \TeX\ programming in the \code{lmtx} engine}
   {74-80}
@@ -424,7 +424,7 @@ access</a>.
 
 \capsule{}
   {Fonts}
-  {Hans Hagen}
+  {Hans Hagen}%add|ConTeXt
   {Scaled fonts and glyphs}
   {engine extensions in \code{lmtx} for dynamic glyph scaling}
   {60-65}
