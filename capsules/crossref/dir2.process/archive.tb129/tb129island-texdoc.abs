@@ -1,8 +1,0 @@
-\begin{abstract}
-When looking for \TeX-related documentation, users have many options,
-including running \texttt{texdoc} on their local machine, looking up the
-package at \CTAN, or using a service like \tbsurl{texdoc.net}. As the latter is
-known for lacking regular updates, the Island of \TeX\ decided to take
-the opportunity to provide a complete rewrite of the provided service
-using a \acro{REST}ful \API\ and a self-updating Docker container.
-\end{abstract}

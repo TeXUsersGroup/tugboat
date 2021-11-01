@@ -1,4 +1,0 @@
-This article describes the generic mechanism present in
-\LuaTeX\ 1.13 and later to deal with user-defined Type~3 fonts.
-In a \TeX\ environment Type 3 fonts are normally used for bitmap
-(PK) fonts. However, they can be useful for other purposes too.
