@@ -1,0 +1,11 @@
+\begin{abstract}
+In my previous article [6], I described using
+indexing applications with \LaTeX, a process required by the
+\sty{glossaries} package to sort and collate terms, and the
+development of the \app{bib2gls} command line application, which was
+designed specifically for the \sty{glossaries-extra} extension
+package.  This article describes how \app{bib2gls} differs from the
+other indexing methods with respect to selection, grouping,
+cross-references and invisible locations.
+\end{abstract}
+
