@@ -3,16 +3,24 @@
 
 use strict; use warnings;
 
-# How we sort the capsules for each keyword or title:
+# How we sort the capsules for each entry in the title list,
+# and a few categories (General Delivery, TUG Business, etc.):
 # - first by (a massaged) title, so like items are together;
 # - then by reversed issue, so newer items come first
 # - then by pageno (which is unique within an issue), so the sort is stable.
 # 
-# (For authors, we skip the title comparison and just do the latter two.)
-#
 sub sort_by_title_issue_page {
   $a->{title_sort} cmp $b->{title_sort}
   || $b->{issue}->{seqno} <=> $a->{issue}->{seqno}
+  || $a->{pageno} <=> $b->{pageno}
+}
+
+# How we sort the capsules for authors, and most categories
+# (Accessibility, etc.): by reversed issue and pageno, as above,
+# so newest items come first.
+# 
+sub sort_by_issue_page {
+  $b->{issue}->{seqno} <=> $a->{issue}->{seqno}
   || $a->{pageno} <=> $b->{pageno}
 }
 

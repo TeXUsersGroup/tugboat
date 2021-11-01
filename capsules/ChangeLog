@@ -1,3 +1,10 @@
+2021-11-01  Karl Berry  <karl@freefriends.org>
+
+	* capaccum-keyword.pl (print_all_by_category): sort some
+	categories by title, others just by issue.
+	* capaccum-util.pl (sort_by_issue_page): new fn, moved ...
+	* capaccum-author.pl: ... from here.
+
 2021-10-31  Karl Berry  <karl@freefriends.org>
 
 	* capaccum-keyword.pl (print_all_by_category): call

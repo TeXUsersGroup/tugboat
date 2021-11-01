@@ -155,6 +155,22 @@ sub print_all_by_category {
   my %categories = %$categories_ref;
   my %category_tags = %$category_tags_ref;
   
+  # The idea is that some mostly-administrative categories are best
+  # sorted by title, namely those which have lots of re-occurring items.
+  # For example, we want all "Editorial comments" in "General Delivery"
+  # to come out together.
+  # 
+  # On the other hand, the more TeXnical content categories, such as
+  # "LaTeX", are best sorted simply by date, not including the title.
+  # 
+  # There are far fewer of the former than the latter, so just list those.
+  my @categories_by_title
+    = ("Abstracts", "Advertisements", "General Delivery",
+       "News & Announcements", "Site Reports", "Supplements",
+       "TUG Business", "none");
+  my %categories_by_title;
+  @categories_by_title{@categories_by_title} = 1; # hash slice
+
   # print each category and all items in that category.
   for my $cat (sort { $a cmp $b } keys %categories) {
     print $fh <<START_CATEGORY;
@@ -165,7 +181,10 @@ sub print_all_by_category {
 <ul class="tubidxentry">
 START_CATEGORY
 
-    for my $cap (sort sort_by_title_issue_page @{$categories{$cat}}) {
+    my $sort_fn = exists ($categories_by_title{$cat})
+                  ? \&{"sort_by_title_issue_page"}
+                  : \&{"sort_by_issue_page"};
+    for my $cap (sort $sort_fn @{$categories{$cat}}) {
       #&info_hash ("cat $cat", $cap);
       #
       print $fh "<li>";

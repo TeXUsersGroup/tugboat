@@ -3,14 +3,6 @@
 
 use strict; use warnings;
 
-# The most useful sort for authors seems to be just by issue/page, so we
-# have newest first, without regard to titles.
-# 
-sub sort_by_issue_page {
-  $b->{issue}->{seqno} <=> $a->{issue}->{seqno}
-  || $a->{pageno} <=> $b->{pageno}
-}
-
 # Output the list of all "authors" (WHAT), starting with LIST_HDR_COMMON,
 # from all issues in ACCUM.
 # 
