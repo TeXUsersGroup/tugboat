@@ -1,3 +1,9 @@
+2021-11-01  Karl Berry  <karl@tug.org>
+
+	* tb132capsule.txt: new issue, 42:3.
+	* lists-translations.txt (\GUT): new defn.
+	* Makefile (testiss, lastiss, crossref_iss): now 132.
+
 2021-11-01  Karl Berry  <karl@freefriends.org>
 
 	* capaccum-keyword.pl (print_all_by_category): sort some
