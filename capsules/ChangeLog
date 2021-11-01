@@ -1,3 +1,9 @@
+2021-11-01  Karl Berry  <karl@freefriends.org>
+
+	* capcrossref.pl (crossref_write_files <Jr.>,
+	(crossref_create_landing_page, <subtitles>):
+	look for &#xa0; as well as &nbsp; for beet subtitles, etc.
+
 2021-11-01  Karl Berry  <karl@tug.org>
 
 	* tb132capsule.txt: new issue, 42:3.

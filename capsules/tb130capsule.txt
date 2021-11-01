@@ -253,7 +253,7 @@ access</a>.
   {}
 
 \capsule{}
-  {Tutorials}
+  {\LaTeX}%add|Tutorials
   {Carla Maggi}
   {The DuckBoat\Dash Beginners' Pond: Crazy Little Thing Called Glue}
   {specifying and fixing spacing, horizontal and vertical; and floats}
@@ -295,7 +295,7 @@ access</a>.
 %%   {}
 
 \capsule{}
-  {Software \& Tools}
+  {\LaTeX}
   {Joseph Wright}
   {Creating document commands: The good, the bad and the ugly}
   {best practices for using \cs{NewDocumentCommand} from \code{xparse}}
@@ -389,7 +389,7 @@ access</a>.
   {}
 
 \capsule{}
-  {Software \& Tools}
+  {\LaTeX}
   {Joseph Wright}
   {\cs{NewDocumentCommand} \emph{versus} \cs{newcommand} \emph{versus} \ldots}
   {extended comparison of the \code{xparse} \cs{NewDocumentCommand} to

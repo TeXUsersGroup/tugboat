@@ -55,8 +55,8 @@ sub crossref_write_files {
       # which I guess is what's desired for crossref, so fine.
       # 
       # Sometimes there will be no First part, e.g.,
-      # TUG&nbsp;Elections&nbsp;Committee (or actually, 0xa0 instead of
-      # nbsp). That's ok, we can just check.
+      # TUG&nbsp;Elections&nbsp;Committee (or 0xa0 instead of nbsp).
+      # That's ok, we can just check.
       # 
       # But, painful exception: when there is a jr part, we have to pass
       # in the original "von Last, Jr., First", because that is what
@@ -65,7 +65,7 @@ sub crossref_write_files {
       # "Jr.", and they do not have a von part: Harry L.
       # Baldwin,\CONNECT{}Jr. and Frank G. Bennett,\CONNECT{}Jr.
       # As seen, the Jr. is always preceded by \CONNECT{} (which becomes
-      # &nbsp;), not a plain space. So it is easy to check for.
+      # &#xa0;), not a plain space. So it is easy to check for.
       # 
       # Overall, there should be only one occurrence of ", " in the
       # author name, the one between Last and First. So we can split at
@@ -79,13 +79,13 @@ sub crossref_write_files {
       # 
       my ($last,$first) = split (/, /, $a, 2);
       my $name_for_rpi;
-      if ($last =~ /&nbsp;Jr\.$/) {
+      if ($last =~ /&(#xa0|nbsp);Jr\.$/) {
         $name_for_rpi = $a; # the original 
       } else {
         # if no First part, don't include spurious leading space.
         $name_for_rpi = $first ? "$first $last" : $last;
       }
-      $name_for_rpi =~ s/&nbsp;/ /g; # just spaces
+      $name_for_rpi =~ s/&(#xa0|nbsp);/ /g; # just spaces
       push (@rpi_authors, $name_for_rpi);
     }
     #
@@ -245,7 +245,7 @@ END_LANDING
   # for beet, we want to uniformly have two spaces at the beginning
   # of each subtitle, and each on a line by itself. seems to work out
   # for others too.
-  $subtitles =~ s/(\&nbsp;){2,}/<br>&nbsp;&nbsp;/g;
+  $subtitles =~ s/(&(#xa0|nbsp);){2,}/<br>&nbsp;&nbsp;/g;
   my $htmlnotes = $cap{htmlnotes} ? "\n<br>$cap{htmlnotes}" : "";
   if ($shortdesc || $subtitles || $htmlnotes) {
     print $LANDING <<END_LANDING;

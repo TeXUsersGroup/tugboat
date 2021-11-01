@@ -18,7 +18,7 @@ Then, systematically go through all items in the issue, creating (by
 hand) abs.tex files for the abstracts and bbl.tex files for the
 bibliographies, translating as necessary to standard TUGboat and LaTeX
 formatting, e.g., using \bibitem even in hand-written bibliographies.
-The {abs,bbl}.tex files stay in the TUGboat source directory.
+These {abs,bbl}.tex files stay in the TUGboat source directory.
 
 If an article uses BibTeX, the .bbl file can be copied to
 bbl.tex as the starting place. If an article has no bibliography, don't
@@ -30,7 +30,8 @@ Run:
   make cro-scratch  # in capsules directory
 There has to be at least one abs.tex and one bbl.tex or the program will
 bail out early, so might have to create them for more than one article
-to begin.
+to begin.  Be sure crossref_iss in capsules/Makefile is set to the
+current/desired issue.
 
 The make will probably fail due to unprocessed TeX commands remaining in
 the output files, dir2.process/issue.xml and dir1.lndout/*.html. We want
