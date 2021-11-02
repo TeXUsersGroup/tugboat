@@ -1,3 +1,9 @@
+2021-11-02  Karl Berry  <karl@freefriends.org>
+
+	* cr-landing-bbl-abs (update_landing_bbl): use new css class
+	tugbbl, so we can insert some space between entries.
+	Also, don't consider "vol.1" or "pp.1-2" to be urls.
+
 2021-11-01  Karl Berry  <karl@freefriends.org>
 
 	* capcrossref.pl (crossref_write_files <Jr.>,
