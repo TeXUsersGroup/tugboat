@@ -138,7 +138,7 @@ sub update_landing_bbl {
             #   but that doesn't seem ideal either.
             } elsif ($word =~ m!^([a-z0-9-]{2,})\.([a-z0-9-]{2,})[.,]?!i
                      && $2 =~ /a-z/i
-                     && $1 !~ /^(no?|v(ol)?|pp?)$/
+                     && $1 !~ /^(no?|v(ol)?|pp?|iss)$/i
                      && $2 !~ /^(sty|cls)$/i) {
               $prot = "https";
               $urlbase = $word;
@@ -156,7 +156,7 @@ sub update_landing_bbl {
               $newcite .= $word;
             }
           }
-          print $temp_fh "<li>$newcite</li>\n";
+          print $temp_fh "<li class=\"tugbbl\">$newcite</li>\n";
         }
         print $temp_fh "</ol>\n";
       } else {
