@@ -1,0 +1,35 @@
+\input bibnames.sty \input path.sty \ifx \k \undefined \let \k = \c
+  \immediate\write16{Ogonek accent unavailable: replaced by cedilla}\fi
+  \hyphenation{An-wen-der-ver-ein-i-gung Co-lo-phon Deutsch-spra-chi-ge Hol-dys
+  Ko-lo-dziej-ska Lar-ra-bee mark-up Rijks-uni-ver-si-teit South-all}
+\begin{thebibliography}{1}
+
+\bibitem{web:Noto}
+{Google Fonts}.
+\newblock Noto: A typeface for the world.
+\newblock \url{fonts.google.com/noto}
+
+\bibitem{web:Code2000}
+J.~Kass.
+\newblock Code2000.
+\newblock Font resource implementing much of Unicode.
+\newblock \url{en.wikipedia.org/wiki/Code2000}
+
+\bibitem{Knuth:ct-a}
+D.E.~Knuth.
+\newblock \emph{The {\TeX}book}, vol.~A of \emph{Computers and Typesetting}.
+\newblock Ad{\-d}i{\-s}on-Wes{\-l}ey, Reading, MA, USA, {\noopsort{1986a}}1986.
+
+\bibitem{Mittelbach:TB11-1-91}
+F.~Mittelbach, R.~Sch{\"o}pf.
+\newblock {The new font family selection{\Dash}User interface to standard
+  {\LaTeX}}.
+\newblock \emph{TUGboat} 11(1):91--97, Apr. 1990.
+\newblock \url{tug.org/TUGboat/tb11-1/tb27mitt.pdf}
+
+\bibitem{TLC3}
+F.~{Mittelbach with U. Fischer}.
+\newblock \emph{The {\LaTeX} Companion}.
+\newblock Pearson Education, Boston, MA, USA, third ed., to~appear in 2022.
+
+\end{thebibliography}

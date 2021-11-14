@@ -1,0 +1,87 @@
+\begin{thebibliography}{10}
+
+\bibitem{howfontcan}
+A.~Bayar, K.~Sami.
+\newblock How a font can respect basic rules of {A}rabic calligraphy.
+\newblock \emph{Intl. Arab. J. e-Technol.} 1(1):1--18, 2009.
+\newblock
+  \url{cs.uwaterloo.ca/~dberry/HTML.documentation/KeshidePapers/HowFontCanRespectArabicCalligraphy.pdf}
+
+\bibitem{arabictextjust}
+M.J.E.~Benatia, M.~Elyaakoubi, A.~Lazrek.
+\newblock {Arabic} text justification.
+\newblock \emph{TUGboat} 27(2):137--146, 2006.
+\newblock \url{tug.org/TUGboat/tb27-2/tb87benatia.pdf}
+
+\bibitem{Berry1999StretchingLA}
+D.M.~Berry.
+\newblock Stretching letter and slanted-baseline formatting for {A}rabic,
+  {H}ebrew, and {P}ersian with ditroff/ffortid and dynamic {PostScript} fonts.
+\newblock \emph{Softw. Pract. Exp.} 29:1417--1457, 1999.
+\newblock
+  \url{doi.org/10.1002/(SICI)1097-024X(19991225)29:15%3C1417::AID-SPE282%3E3.0.CO;2-F}
+
+\bibitem{justjust}
+M.~Elyaakoubi, A.~Lazrek.
+\newblock Justify just or just justify.
+\newblock \emph{J. Elect. Pub.} 13(1), Winter 2010.
+\newblock \url{doi.org/10.3998/3336451.0013.105}
+
+\bibitem{webassemblypre}
+B.~Esfahbod.
+\newblock Better-engineered font formats.
+\newblock \url{www.youtube.com/watch?v=fG1QEcl3yks&ab_channel=BehdadEsfahbod}
+
+\bibitem{OrientalTex}
+H.~Hagen, I.S.~Hamid.
+\newblock Oriental {\TeX}: optimizing paragraphs.
+\newblock \emph{MAPS} 45:128--154, 2012.
+\newblock \url{www.ntg.nl/maps/45/12.pdf}
+
+\bibitem{mflikesystem}
+J.D.~Hobby.
+\newblock {A {\MF}-like system with {\PS} output}.
+\newblock \emph{TUGboat} 10(4):505--512, Dec. 1989.
+\newblock \url{tug.org/TUGboat/tb10-4/tb26hobby.pdf}
+
+\bibitem{metapostusermanual}
+J.D.~Hobby.
+\newblock \emph{A User's Manual for MetaPost}, 1994.
+\newblock \url{www.tug.org/docs/metapost/mpman.pdf}
+
+\bibitem{mplibapi}
+T.~Hoekwater, L.~Scarso.
+\newblock \emph{MPlib API documentation, version 2.00}, 2018.
+\newblock \url{mirror.ctan.org/systems/doc/metapost/mplibapi.pdf}
+
+\bibitem{Hosny:2019:BWS}
+K.~Hosny.
+\newblock Bringing world scripts to {\LuaTeX}: The {\HarfBuzz} experiment.
+\newblock \emph{TUGboat} 40(1):38--43, 2019.
+\newblock \url{tug.org/TUGboat/tb40-1/tb124hosny-harfbuzz.pdf}
+
+\bibitem{themetafontbook}
+D.E.~Knuth.
+\newblock \emph{The \MF{}book}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., USA, 1986.
+
+\bibitem{expfontdev}
+S.~Mansour, H.~Fahmy.
+\newblock Experiences with {Arabic} font development.
+\newblock \emph{TUGboat} 33(3):295--298, 2012.
+\newblock \url{tug.org/TUGboat/tb33-3/tb105mansour.pdf}
+
+\bibitem{iekashida}
+P.~Nelson.
+\newblock Justifying text using cascading style sheets ({CSS}) in {Internet
+  Explorer} 5.5/6.0.
+\newblock
+  \url{web.archive.org/web/20030813215144/http://www.microsoft.com/middleeast/Arabicdev/IE6/KBase.asp}
+
+\bibitem{HossamFahmymeta}
+A.~Sherif, H.~Fahmy.
+\newblock Meta-designing parameterized {Arabic} fonts for {AlQalam}.
+\newblock \emph{TUGboat} 29(3):435--443, 2008.
+\newblock \url{tug.org/TUGboat/tb29-3/tb93sherif.pdf}
+
+\end{thebibliography}

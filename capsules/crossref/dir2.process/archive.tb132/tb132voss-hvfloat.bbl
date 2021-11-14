@@ -1,0 +1,44 @@
+\begin{thebibliography}{1}
+
+\bibitem{afterpage}
+D.~Carlisle, {The {\LaTeX} Team}.
+\newblock The afterpage package, version 1.08, 2014-10-28.
+\newblock Execute command after the next page break.
+\newblock \url{https://ctan.org/pkg/afterpage}
+
+\bibitem{tlc}
+F.~Mittelbach, M.~Goossens, et~al.
+\newblock \emph{The \LaTeX{} Companion}.
+\newblock Pearson Education, 2nd edition, 2004.
+
+\bibitem{adjustbox}
+M.~Scharrer.
+\newblock The adjustbox package, version 1.3, 2020-08-19.
+\newblock Graphics package-alike macros for ``general'' boxes.
+\newblock \url{https://ctan.org/pkg/adjustbox}
+\newpage
+\bibitem{ifoddpage}
+M.~Scharrer.
+\newblock The ifoddpage package, version 1.1, 2016-04-23.
+\newblock Determine if the current page is odd or even.
+\newblock \url{https://ctan.org/pkg/ifoddpage}
+
+\bibitem{caption}
+A.~Sommerfeldt.
+\newblock The caption package, 2020-10-26.
+\newblock Customising captions in floating environments.
+\newblock \url{https://ctan.org/pkg/caption}
+
+\bibitem{stfloats}
+S.~Tolu\v{s}is.
+\newblock The stfloats package, version 3.3, 2017-03-27.
+\newblock Commands to control the presentation of floats.
+\newblock \url{https://ctan.org/pkg/stfloats}
+
+\bibitem{hvfloat}
+H.~Vo\ss.
+\newblock The hvfloat package, version 2.26, 2021-05-28.
+\newblock Rotating and controlling float captions and objects.
+\newblock \url{https://ctan.org/pkg/hvfloat}
+
+\end{thebibliography}

@@ -1,0 +1,10 @@
+Arabic script is a cursive script where the shape and width of letters
+are not fixed, but vary depending on the context and justification
+needs. A typesetter must consider these dynamic properties of letters to
+achieve high-quality text comparable to Arabic calligraphy.
+
+This article presents a proof-of-concept implementation of Arabic text
+justification, by varying letter shapes and widths, as a first step
+towards such high-quality Arabic typesetting. It uses \LuaLaTeX{} and
+the DigitalKhatt OpenType variable font produced from a \MF{}-based
+dynamic font.

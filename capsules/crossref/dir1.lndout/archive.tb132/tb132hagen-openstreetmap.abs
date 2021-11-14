@@ -1,0 +1,8 @@
+At the 2021 \CONTEXT\ meeting I did a presentation about rendering
+so-called open street maps with \METAPOST. I will roughly describe
+what it takes and show some \TEX, \METAPOST, \LUA, and \XML.
+
+These are maps available on the web and in some mobile applications made
+from contributions by (public) organizations, governments, and
+volunteers. On the web these maps are rendered efficiently from cached
+tiles (bitmaps).

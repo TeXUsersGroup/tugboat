@@ -1,0 +1,588 @@
+<doi_batch xmlns="http://www.crossref.org/schema/4.4.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.4.2" xsi:schemaLocation="http://www.crossref.org/schema/4.4.2 http://www.crossref.org/schema/deposit/crossref4.4.2.xsd">
+  <head>
+    <doi_batch_id>ltx2crossref-20211114180322-9477</doi_batch_id>
+    <timestamp>20211114180322</timestamp>
+    <depositor>
+      <depositor_name>TUGboat production</depositor_name>
+      <email_address>doi-tugboat@tug.org</email_address>
+    </depositor>
+    <registrant>TeX Users Group</registrant>
+  </head>
+  <body><journal>
+    <journal_metadata language="en">
+      <full_title>TUGboat</full_title>
+      <issn>0896-3207</issn>	
+    </journal_metadata>
+    <journal_issue>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <journal_volume><volume>42</volume></journal_volume>
+      <issue>3</issue>
+    </journal_issue>
+    <journal_article>
+      <titles>
+        <title>From the president</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Boris</given_name>
+          <surname>Veytsman</surname>
+          <ORCID>https://orcid.org/0000-0003-4674-8113</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>223</first_page>
+        <last_page>223</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-3/tb132pres</doi>
+        <timestamp>20211114180322</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-3/tb132pres.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Editorial comments</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Barbara</given_name>
+          <surname>Beeton</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>224</first_page>
+        <last_page>225</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-3/tb132beet</doi>
+        <timestamp>20211114180322</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-3/tb132beet.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Michael D. Spivak, 1940&#x2013;2020</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Barbara</given_name>
+          <surname>Beeton</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>226</first_page>
+        <last_page>227</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-3/tb132beeton-spivak</doi>
+        <timestamp>20211114180322</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-3/tb132beeton-spivak.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>How to keep your sanity when preparing a transcript of an online interview for publication</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Barbara</given_name>
+          <surname>Beeton</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>228</first_page>
+        <last_page>230</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-3/tb132beeton-transcribe</doi>
+        <timestamp>20211114180322</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-3/tb132beeton-transcribe.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Form, pattern &amp; texture in the typographic image</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Charles</given_name>
+          <surname>Bigelow</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>231</first_page>
+        <last_page>246</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-3/tb132bigelow-form</doi>
+        <timestamp>20211114180322</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-3/tb132bigelow-form.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="01"><unstructured_citation>
+          Tim Ahrens and Shoko Mugikura, Size Specific Adjustments to Type Designs. Garching, Germany: Just Another Foundry, 2013.
+        </unstructured_citation></citation>
+        <citation key="02"><unstructured_citation>
+          Nicolas Barker, &#x201c;The Aldine Roman in Paris, 1530&#x2013;1534&#x201d;. The Library, v.s5-XXIX, n.1, Mar. 1974, pp.5&#x2013;20.  https://doi.org/10.1093/library/s5-XXIX.1.5
+        </unstructured_citation></citation>
+        <citation key="03"><unstructured_citation>
+          Charles Bigelow, &#x201c;On Type: Optical letter spacing for new printing systems&#x201d;. Fine Print, vol.4, no.3, Oct. 1977. Reprinted in Visible Language, vol.11, no.3, 1977, pp.325&#x2013;329, https://visiblelanguage.herokuapp.com/issue/43
+        </unstructured_citation></citation>
+        <citation key="04"><unstructured_citation>
+          Charles Bigelow and Donald Day, &#x201c;Digital typography&#x201d;. Scientific American, vol.249, no.2, Aug. 1983, pp.106&#x2013;119.
+        </unstructured_citation></citation>
+        <citation key="4-5"><unstructured_citation>
+          Charles Bigelow, Kris Holmes, &#x201c;The design of Lucida&#x201d;, in Text Processing and Document Manipulation, J.C. van Vliet, ed. Cambridge: Cambridge University Press, 1986, pp.1&#x2013;17.
+        </unstructured_citation></citation>
+        <citation key="06"><unstructured_citation>
+          Charles Bigelow, Kris Holmes, &#x201c;Science and history behind the design of Lucida&#x201d;. TUGboat, v.39, n.3, pp.204&#x2013;211, 2018. https://tug.org/TUGboat/tb39-3/tb123bigelow-lucida.pdf
+        </unstructured_citation></citation>
+        <citation key="07"><unstructured_citation>
+          Charles Bigelow, &#x201c;Typeface features and legibility research&#x201d;. Vision Research, v.165, Dec. 2019, pp.162&#x2013;172.
+        </unstructured_citation></citation>
+        <citation key="5-8"><unstructured_citation>
+          Harry Carter, &#x201c;The optical scale in typefounding&#x201d;, in Typography 4, pp.144&#x2013;148. London: The Shenval Press, 1937.  Reprinted as &#x201c;Optical scale in type founding&#x201d;, The Printing Historical Society Bulletin, v.13, 1984, pp.144&#x2013;148. London: St Bride Institute. https://issuu.com/letterror/docs/harry_carter_optical_scale_in_typefounding
+        </unstructured_citation></citation>
+        <citation key="28-9"><unstructured_citation>
+          Franz Boas and Charles Cultee (narrator), Chinook Texts. Washington: Smithsonian Institution, Bureau of Ethnology, 1894.
+        </unstructured_citation></citation>
+        <citation key="010"><unstructured_citation>
+          Harry Carter, ed., Sixteenth Century French Type-founders: The Le B&#x00E9; Memorandum. Paris: Andr&#x00E9; Jammes, 1967.
+        </unstructured_citation></citation>
+        <citation key="19A-11"><unstructured_citation>
+          Susana T.L. Chung, &#x201c;The Effect of Letter Spacing on Reading Speed in Central and Peripheral Vision&#x201d;. Investigative Ophthalmology &amp; Visual Science, v.43, n.4, 2002, pp.1270&#x2013;1276.
+        </unstructured_citation></citation>
+        <citation key="012"><unstructured_citation>
+          Persi Diaconis and David Freedman, &#x201c;On the Statistics of Vision: The Julesz Conjecture&#x201d;. Journal of Mathematical Psychology, vol.24, no.2, 1981.
+        </unstructured_citation></citation>
+        <citation key="3-13"><unstructured_citation>
+          John Dreyfus, ed., &#x201c;Specimen no. 2: Konrad Berner, Frankfurt 1592&#x201d;, in Type Specimen Facsimiles. John Dreyfus, general editor, with research by A.F. Johnson, Harry Carter, Matthew Carter, Netty Hoeflake, Mike Parker. London: Bowes &amp; Bowes, 1963.
+        </unstructured_citation></citation>
+        <citation key="15-14"><unstructured_citation>
+          John Dreyfus, French Eighteenth Century Typography. Cambridge, U.K.: The Roxburghe Club, 1982.
+        </unstructured_citation></citation>
+        <citation key="21-15"><unstructured_citation>
+          Pierre Simon Fournier, Manuel Typographique. Paris: Fournier (and Barbou), 1764&#x2013;66; Harry Carter, trans. Fournier on Typefounding. New York: Burt Franklin, 1973.  First edition: Pierre Simon Fournier, Harry Carter, Fournier on Typefounding. The Text of the Manuel Typographique, 1764&#x2013;1766. Translated and edited with notes by Harry Carter. [With a Portrait.] London: Soncino Press, 1930.
+        </unstructured_citation></citation>
+        <citation key="016"><unstructured_citation>
+          Arthur P. Ginsburg, &#x201c;Visual information processing based on spatial filters constrained by biological data&#x201d;. Report no.AMRL-TR-78-129-VOL-1/2, Air Force Aerospace Medical Research Lab, Wright-Patterson AFB, Ohio, USA, 1978.
+        </unstructured_citation></citation>
+        <citation key="13-17"><unstructured_citation>
+          Eric Gill, An Essay on Typography. London: Sheed &amp; Ward, 1936. Reprinted, Boston: David R. Godine, 1988.
+        </unstructured_citation></citation>
+        <citation key="22-18"><unstructured_citation>
+          Chauncey Griffith, quoted by Edmund C. Arnold in Functional Newspaper Design. New York: Harper &amp; Brothers, 1956.
+        </unstructured_citation></citation>
+        <citation key="019"><unstructured_citation>
+          Branko Gr&#x00FC;nbaum and G.C. Shephard, Tilings and Patterns. New York: W.H. Freeman, 1986.
+        </unstructured_citation></citation>
+        <citation key="020"><unstructured_citation>
+          David H. Hubel, Eye, Brain, and Vision. New York: Scientific American Library, 1988.
+        </unstructured_citation></citation>
+        <citation key="021"><unstructured_citation>
+          Dell Hymes, &#x201c;Victoria Howard&#x2019;s &#x2018;Gitskux and his Older Brother&#x2019;: A Clackamas Chinook Myth&#x201d;, in Smoothing the Ground: Essays on Native American Oral Literature. Berkeley, CA: University of California Press, 1983.
+        </unstructured_citation></citation>
+        <citation key="022"><unstructured_citation>
+          Melville Jacobs and Victoria Howard (narrator), Clackamas-Chinook Texts. Bloomington: Indiana University Research Center in Anthropology, Folklore, and Linguistics, 1958.
+        </unstructured_citation></citation>
+        <citation key="25-23"><unstructured_citation>
+          Bela Julesz, &#x201c;Texture and Visual Perception&#x201d;. Scientific American, vol.212, no.2, Feb. 1965, pp.38&#x2013;48.
+        </unstructured_citation></citation>
+        <citation key="024"><unstructured_citation>
+          &#x201c;Experiments in the Visual Perception of Texture&#x201d;. Scientific American, vol.232, no.4, Apr. 1975, pp.34&#x2013;43.
+        </unstructured_citation></citation>
+        <citation key="025"><unstructured_citation>
+          Kevin Larson, &#x201c;The Science of Word Recognition&#x201d;. Lecture at Association Typographique Internationale, Sept. 2003. https://docs.microsoft.com/en-us/typography/develop/word-recognition
+        </unstructured_citation></citation>
+        <citation key="026"><unstructured_citation>
+          Kevin Larson, Matthew Carter, &#x201c;Sitka: A collaboration between type design and science&#x201d;, in Digital Fonts and Reading, Mary C. Dyson, Ching Yee Suen, eds., pp.37&#x2013;53. Singapore: World Scientific, 2016. https://microsoft.com/en-us/research/publication/sitka-a-collaboration-between-type-design-and-science/
+        </unstructured_citation></citation>
+        <citation key="027"><unstructured_citation>
+          Gordon E. Legge, Psychophysics of Reading in Normal and Low Vision. Mahwah, NJ: Lawrence Erlbaum Associates, 2007, pp.60&#x2013;65.
+        </unstructured_citation></citation>
+        <citation key="8-28"><unstructured_citation>
+          Gordon E. Legge, Charles A. Bigelow, &#x201c;Does print size matter for reading? A review of findings from vision science and typography&#x201d;. Journal of Vision, v.11, n.5, Aug. 2011. https://doi.org/10.1167/11.5.8
+        </unstructured_citation></citation>
+        <citation key="10-29"><unstructured_citation>
+          El (Lazar Markovich) Lissitzky, &#x201c;Our Book&#x201d;, in Gutenberg Jahrbuch 1926 7. Mainz: Gutenberg-Gesellschaft. English translation by Helene Aldwinkel, in El Lissitzky, Sophie Lissitzky-K&#x00FC;ppers, ed. London: Thames and Hudson, 1980.
+        </unstructured_citation></citation>
+        <citation key="7-30"><unstructured_citation>
+          Najib J. Majaj, Denis G. Pelli, Peri Kurshan, Melanie Palomares, &#x201c;The role of spatial frequency channels in letter identification&#x201d;. Vision Research, vol.42, no.9, Apr. 2002, pp.1165&#x2013;1184.
+        </unstructured_citation></citation>
+        <citation key="14-31"><unstructured_citation>
+          Andre Malraux, &#x201c;Museum Without Walls&#x201d;, in The Voices of Silence. Stuart Gilbert, trans. Princeton: Princeton University Press, 1978.
+        </unstructured_citation></citation>
+        <citation key="11-32"><unstructured_citation>
+          Andre Martinet, &#x00C9;l&#x00E9;ments de Linguistique Generale. Paris: Librairie Armand Colin, 1967. Martinet follows an observation made by Ferdinand de Saussure in Cours de linguistique generale, Charles Bally and Albert Sechehaye eds., 1916. English edition: Course in General Linguistics, Wade Baskin, trans. New York: The Philosophical Library, 1959.
+        </unstructured_citation></citation>
+        <citation key="20-33"><unstructured_citation>
+          Andre Martinet, &#x201c;The Word&#x201d;. Diogenes 51, 1965.
+        </unstructured_citation></citation>
+        <citation key="23-34"><unstructured_citation>
+          Hans Ed. Meier, personal communication.
+        </unstructured_citation></citation>
+        <citation key="035"><unstructured_citation>
+          Robert Morris, &#x201c;Spectral font signatures&#x201d;. Technical Report of the Department of Mathematics and Computer Science. Boston: University of Massachusetts, 1989.
+        </unstructured_citation></citation>
+        <citation key="036"><unstructured_citation>
+          Robert Morris, &#x201c;Image processing aspects of type&#x201d;, in Document Manipulation and Typography, J.C. van Vliet, ed. Cambridge: Cambridge University Press, 1988.
+        </unstructured_citation></citation>
+        <citation key="24-37"><unstructured_citation>
+          Blaise Pascal, Serie XXII, 512, in Pens&#x00E9;es. Paris: Editions du Seuil, 1962.
+        </unstructured_citation></citation>
+        <citation key="038"><unstructured_citation>
+          Denis G. Pelli, Bart Farell, Deborah C. Moore, &#x201c;The remarkable inefficiency of word recognition&#x201d;. Letter to Nature, Nature, vol.423, no.6941, June 12, 2003, pp.752&#x2013;756.
+        </unstructured_citation></citation>
+        <citation key="039"><unstructured_citation>
+          Denis G. Pelli, Katherine A. Tillman, &#x201c;The uncrowded window of object recognition&#x201d;. Nature Neuroscience, v.11, n.10, Oct. 2008, pp.1129&#x2013;1135.
+        </unstructured_citation></citation>
+        <citation key="17-40"><unstructured_citation>
+          John R. Pierce, An Introduction to Information Theory: Symbols, Signals and Noise. New York: Dover Publications, 1980.
+        </unstructured_citation></citation>
+        <citation key="19-41"><unstructured_citation>
+          John R. Pierce, The Science of Musical Sound. New York: Scientific American Library, 1983.
+        </unstructured_citation></citation>
+        <citation key="12-42"><unstructured_citation>
+          Floyd Ratliff, &#x201c;Contour and Contrast&#x201d;. Scientific American, vol.226, no.6, June 1972, pp.9&#x2013;20.
+        </unstructured_citation></citation>
+        <citation key="23a-43"><unstructured_citation>
+          Erich Schulz-Anker, &#x201c;Syntax-Antiqua, a Sans Serif on a New Basis&#x201d;. Gebrauchsgraphik n.8, 1970, pp.49&#x2013;56.
+        </unstructured_citation></citation>
+        <citation key="16-44"><unstructured_citation>
+          A.V. Shubnikov and V.A. Koptsik, Symmetry in Science and Art. G.D. Archard, trans. New York: Plenum Press, 1974.
+        </unstructured_citation></citation>
+        <citation key="045"><unstructured_citation>
+          Walter Tracy, Letters of Credit. Boston: David R. Godine, 1986.
+        </unstructured_citation></citation>
+        <citation key="18-46"><unstructured_citation>
+          Jan Tschichold, A Treasury of Alphabets and Lettering. New York: Reinhold, 1966.
+        </unstructured_citation></citation>
+        <citation key="2-47"><unstructured_citation>
+          Jan Tschichold, &#x201c;Ton in des T&#x00F6;pfers Hand&#x201d;, in Ausgew&#x00E4;hlte Aufs&#x00E4;tze uber Fragen der Gestalt des Buches und der Typographie. Basel: Birkh&#x00E4;user, 1975.  English translation by Hajo Hadler, as &#x201c;Clay in a Potter&#x2019;s Hand&#x201d;, in The Form of the Book, Robert Bringhurst, ed. Vancouver, Canada: Hartley &amp; Marks Publishers, 1991. (Hadler&#x2019;s translation differs somewhat from the one in this essay.)
+        </unstructured_citation></citation>
+        <citation key="6-48"><unstructured_citation>
+          Daniel Berkeley Updike, Printing Types: Their History, Forms, and Use, A Study in Survivals. Cambridge, Massachusetts: Harvard University Press, 1937.
+        </unstructured_citation></citation>
+        <citation key="049"><unstructured_citation>
+          H.D.L. Vervliet, Harry Carter, eds., &#x201c;Specimen no. 17: Plantin&#x2019;s Folio Specimen c.1585&#x201d; and &#x201c;Specimen no. 18: The Le B&#x00E9;&#x2013;Moretus Collection of Fragments c.1599&#x201d; in Type Specimen Facsimiles II. Toronto: University of Toronto Press, 1972.
+        </unstructured_citation></citation>
+        <citation key="050"><unstructured_citation>
+          Hendrik D.L. Vervliet, French Renaissance Printing Types: A Conspectus. New Castle, DE, USA: Oak Knoll Press, 2010. Simultaneously published in London by the Bibliographical Society and the Printing Historical Society, p.36.
+        </unstructured_citation></citation>
+        <citation key="1-51"><unstructured_citation>
+          Beatrice Warde, &#x201c;The Crystal Goblet, or Printing Should be Invisible&#x201d;, originally an address entitled &#x201c;Printing Should be Invisible&#x201d;, given to the British Typographers&#x2019; Guild at the St Bride Institute, London, 1932.  Reprinted in The Crystal Goblet: Sixteen Essays on Typography. London: Sylvan Press, 1955; Cleveland and New York: The World Publishing Co., 1956. Also reprinted in The Monotype Recorder, vol.44, no.1, Autumn 1970. https://readings.design/PDF/The%20Crystal%20Goblet.pdf
+        </unstructured_citation></citation>
+        <citation key="052"><unstructured_citation>
+          Hermann Weyl, Symmetry. Princeton: Princeton University Press, 1952.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Arabic text justification using LuaLaTeX and the DigitalKhatt OpenType variable font</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Amine</given_name>
+          <surname>Anane</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>247</first_page>
+        <last_page>257</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-3/tb132anane-variable</doi>
+        <timestamp>20211114180322</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-3/tb132anane-variable.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="howfontcan-1"><unstructured_citation>
+          A. Bayar, K. Sami. How a font can respect basic rules of Arabic calligraphy. Intl. Arab. J. e-Technol. 1(1):1&#x2013;18, 2009. cs.uwaterloo.ca/~dberry/HTML.documentation/KeshidePapers/HowFontCanRespectArabicCalligraphy.pdf
+        </unstructured_citation></citation>
+        <citation key="arabictextjust-2"><unstructured_citation>
+          M.J.E. Benatia, M. Elyaakoubi, A. Lazrek. Arabic text justification. TUGboat 27(2):137&#x2013;146, 2006. tug.org/TUGboat/tb27-2/tb87benatia.pdf
+        </unstructured_citation></citation>
+        <citation key="Berry1999StretchingLA-3"><unstructured_citation>
+          D.M. Berry. Stretching letter and slanted-baseline formatting for Arabic,   Hebrew, and Persian with ditroff/ffortid and dynamic PostScript fonts. Softw. Pract. Exp. 29:1417&#x2013;1457, 1999. doi.org/10.1002/(SICI)1097-024X(19991225)29:15%3C1417::AID-SPE282%3E3.0.CO;2-F
+        </unstructured_citation></citation>
+        <citation key="justjust-4"><unstructured_citation>
+          M. Elyaakoubi, A. Lazrek. Justify just or just justify. J. Elect. Pub. 13(1), Winter 2010. doi.org/10.3998/3336451.0013.105
+        </unstructured_citation></citation>
+        <citation key="webassemblypre-5"><unstructured_citation>
+          B. Esfahbod. Better-engineered font formats. www.youtube.com/watch?v=fG1QEcl3yks&amp;ab_channel=BehdadEsfahbod
+        </unstructured_citation></citation>
+        <citation key="OrientalTex-6"><unstructured_citation>
+          H. Hagen, I.S. Hamid. Oriental TeX: optimizing paragraphs. MAPS 45:128&#x2013;154, 2012. www.ntg.nl/maps/45/12.pdf
+        </unstructured_citation></citation>
+        <citation key="mflikesystem-7"><unstructured_citation>
+          J.D. Hobby. A Metafont-like system with PostScript output. TUGboat 10(4):505&#x2013;512, Dec. 1989. tug.org/TUGboat/tb10-4/tb26hobby.pdf
+        </unstructured_citation></citation>
+        <citation key="metapostusermanual-8"><unstructured_citation>
+          J.D. Hobby. A User&#x2019;s Manual for MetaPost, 1994. www.tug.org/docs/metapost/mpman.pdf
+        </unstructured_citation></citation>
+        <citation key="mplibapi-9"><unstructured_citation>
+          T. Hoekwater, L. Scarso. MPlib API documentation, version 2.00, 2018. mirror.ctan.org/systems/doc/metapost/mplibapi.pdf
+        </unstructured_citation></citation>
+        <citation key="Hosny:2019:BWS-10"><unstructured_citation>
+          K. Hosny. Bringing world scripts to LuaTeX: The HarfBuzz experiment. TUGboat 40(1):38&#x2013;43, 2019. tug.org/TUGboat/tb40-1/tb124hosny-harfbuzz.pdf
+        </unstructured_citation></citation>
+        <citation key="themetafontbook-11"><unstructured_citation>
+          D.E. Knuth. The Metafontbook. Addison-Wesley Longman Publishing Co., Inc., USA, 1986.
+        </unstructured_citation></citation>
+        <citation key="expfontdev-12"><unstructured_citation>
+          S. Mansour, H. Fahmy. Experiences with Arabic font development. TUGboat 33(3):295&#x2013;298, 2012. tug.org/TUGboat/tb33-3/tb105mansour.pdf
+        </unstructured_citation></citation>
+        <citation key="iekashida-13"><unstructured_citation>
+          P. Nelson. Justifying text using cascading style sheets (CSS) in Internet   Explorer 5.5/6.0. web.archive.org/web/20030813215144/http://www.microsoft.com/middleeast/Arabicdev/IE6/KBase.asp
+        </unstructured_citation></citation>
+        <citation key="HossamFahmymeta-14"><unstructured_citation>
+          A. Sherif, H. Fahmy. Meta-designing parameterized Arabic fonts for AlQalam. TUGboat 29(3):435&#x2013;443, 2008. tug.org/TUGboat/tb29-3/tb93sherif.pdf
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Rendering open street maps</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>258</first_page>
+        <last_page>266</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-3/tb132hagen-openstreetmap</doi>
+        <timestamp>20211114180322</timestamp>
+        <resource>https://tug.org/TUGboat/TUGboat/tb42-3/tb132hagen-openstreetmap.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Controlling captions, fullpage and doublepage floats: <tt>hvfloat</tt></title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Herbert</given_name>
+          <surname>Vo&#xdf;</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>267</first_page>
+        <last_page>283</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-3/tb132voss-hvfloat</doi>
+        <timestamp>20211114180322</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-3/tb132voss-hvfloat.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="afterpage-1"><unstructured_citation>
+          D. Carlisle, The LaTeX Team. The afterpage package, version 1.08, 2014-10-28. Execute command after the next page break. https://ctan.org/pkg/afterpage
+        </unstructured_citation></citation>
+        <citation key="tlc-2"><unstructured_citation>
+          F. Mittelbach, M. Goossens, et al. The LaTeX Companion. Pearson Education, 2nd edition, 2004.
+        </unstructured_citation></citation>
+        <citation key="adjustbox-3"><unstructured_citation>
+          M. Scharrer. The adjustbox package, version 1.3, 2020-08-19. Graphics package-alike macros for &#x201c;general&#x201d; boxes. https://ctan.org/pkg/adjustbox
+        </unstructured_citation></citation>
+        <citation key="ifoddpage-4"><unstructured_citation>
+          M. Scharrer. The ifoddpage package, version 1.1, 2016-04-23. Determine if the current page is odd or even. https://ctan.org/pkg/ifoddpage
+        </unstructured_citation></citation>
+        <citation key="caption-5"><unstructured_citation>
+          A. Sommerfeldt. The caption package, 2020-10-26. Customising captions in floating environments. https://ctan.org/pkg/caption
+        </unstructured_citation></citation>
+        <citation key="stfloats-6"><unstructured_citation>
+          S. Tolu&#x0161;is. The stfloats package, version 3.3, 2017-03-27. Commands to control the presentation of floats. https://ctan.org/pkg/stfloats
+        </unstructured_citation></citation>
+        <citation key="hvfloat-7"><unstructured_citation>
+          H. Vo&#x00DF;. The hvfloat package, version 2.26, 2021-05-28. Rotating and controlling float captions and objects. https://ctan.org/pkg/hvfloat
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Preventing tofu with pdfTeX and Unicode engines</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Frank</given_name>
+          <surname>Mittelbach</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>284</first_page>
+        <last_page>286</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-3/tb132mitt-tofu</doi>
+        <timestamp>20211114180322</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-3/tb132mitt-tofu.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="web:Noto-1"><unstructured_citation>
+          Google Fonts. Noto: A typeface for the world. fonts.google.com/noto
+        </unstructured_citation></citation>
+        <citation key="web:Code2000-2"><unstructured_citation>
+          J. Kass. Code2000. Font resource implementing much of Unicode. en.wikipedia.org/wiki/Code2000
+        </unstructured_citation></citation>
+        <citation key="Knuth:ct-a-3"><unstructured_citation>
+          D.E. Knuth. The TeXbook, vol. A of Computers and Typesetting. Addison-Wesley, Reading, MA, USA, 1986.
+        </unstructured_citation></citation>
+        <citation key="Mittelbach:TB11-1-91-4"><unstructured_citation>
+          F. Mittelbach, R. Sch&#x00F6;pf. The new font family selection&#x2014;User interface to standard   LaTeX. TUGboat 11(1):91&#x2013;97, Apr. 1990. tug.org/TUGboat/tb11-1/tb27mitt.pdf
+        </unstructured_citation></citation>
+        <citation key="TLC3-5"><unstructured_citation>
+          F. Mittelbach with U. Fischer. The LaTeX Companion. Pearson Education, Boston, MA, USA, third ed., to appear in 2022.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The <tt>unicodefonttable</tt> package</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Frank</given_name>
+          <surname>Mittelbach</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>287</first_page>
+        <last_page>304</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-3/tb132mitt-unicodefonttable</doi>
+        <timestamp>20211114180322</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-3/tb132mitt-unicodefonttable.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>LaTeX news, issue 34, November 2021</title>
+      </titles>
+      <contributors>
+        <organization sequence="first" contributor_role="author">LaTeX Project Team</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>305</first_page>
+        <last_page>310</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-3/tb132ltnews34</doi>
+        <timestamp>20211114180322</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-3/tb132ltnews34.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Production notes</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>310</first_page>
+        <last_page>310</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-3/tb132prod</doi>
+        <timestamp>20211114180322</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-3/tb132prod.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>A new unit for LMTX: The <tt>dk</tt></title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>311</first_page>
+        <last_page>311</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-3/tb132hagen-dk</doi>
+        <timestamp>20211114180322</timestamp>
+        <resource>https://tug.org/TUGboat/TUGboat/tb42-3/tb132hagen-dk.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The treasure chest</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>312</first_page>
+        <last_page>312</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-3/tb132chest</doi>
+        <timestamp>20211114180322</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-3/tb132chest.html</resource>
+      </doi_data>
+    </journal_article>
+  </journal></body>
+</doi_batch>

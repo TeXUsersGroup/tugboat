@@ -125,15 +125,32 @@ Can check the production site for progress:
 It is good to register the dois before making the pdfs public, so that
 the "doi" links on the contents pages will work. Also, doi registration
 might take significant time, unless crossref has improved their system.
+Can check status at https://doi.crossref.org.
 
 Then install pdfs, per README-tug-procedures.
 
-Then archive uploaded files:
+Then archive all the files:
   cd crossref
   nnn=...
+  svn mkdir dir0.capout/archive.tb$nnn
+  mv dir0.capout/tb${nnn}* !$
+  ls dir0.capout # only archive.* should remain
+  #
+  svn mkdir dir1.lndout/archive.tb$nnn
+  mv dir1.lndout/tb${nnn}* !$
+  ls dir1.lndout # only archive.* should remain
+  #
+  # dir3 before dir2 since we save them in both places, in case of edits.
   svn mkdir dir3.uploaded/tb$nnn
   cp dir2.process/issue.xml dir2.process/tb${nnn}* !$
-  svn add !$/*
+  #
+  svn mkdir dir2.process/archive.tb$nnn
+  mv dir2.process/tb${nnn}* !$
+  mv dir2.process/issue.xml !$
+  ls dir2.process # only archive.* should remain
+  #
+  svn add */*tb${nnn}/*
+  svn status
   svn commit -m"tb$nnn uploaded files archived"
 
  Updating past issues: when an issue is published, the previous issue

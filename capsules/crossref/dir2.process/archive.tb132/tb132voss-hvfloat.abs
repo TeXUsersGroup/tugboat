@@ -1,0 +1,4 @@
+The package \Lpack{hvfloat} defines macros which place objects and
+captions of floats in different positions with different rotating angles
+for the object and caption. The object can fill a full column, a full
+page or full doublepage, with or without taking margins into account.
