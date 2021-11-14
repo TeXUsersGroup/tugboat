@@ -15,9 +15,7 @@
 \begin{blurb}
 <p>Immediate online access to technical TUGboat articles will be
 available to TUG members only (so some of the links below require a TUG
-username and password).  General information items and articles already
-posted elsewhere are publicly available now.  All of the articles will
-become publicly available around December 2021.
+username and password).
 
 <p>If you're not already a member, we hope you'll consider <a
 href="/join.html">joining TUG</a> to support TUGboat and other TeX
@@ -35,7 +33,7 @@ access</a>.
         {Complete issue 42:2 as one pdf (7mb)}
         {}
         {\offset{.1}}
-        {https://tug.org/members/TUGboat/!TBIDENT!complete.pdf}
+        {/TUGboat/!TBIDENT!complete.pdf}
         {}
         {<a href="/l/tug21-video">Videos for all talks</a>.}
 
@@ -109,7 +107,7 @@ access</a>.
    type for visual-based navigation~\rlap{systems}}
   {methodology for comparing runway designators in different fonts}
   {143-143}
-  {https://tug.org/members/TUGboat/!TBIDENT!austin-plane.pdf}
+  {/TUGboat/!TBIDENT!austin-plane.pdf}
   {}
   {}
 
@@ -146,7 +144,7 @@ access</a>.
 %   {Typographers' Inn}
 %   {Page numbering revisited; Type 1 (PostScript) fonts; Afterthought}
 %   {\getfirstpage{inn}}
-%   {https://tug.org/members/TUGboat/!TBIDENT!inn.pdf}
+%   {/TUGboat/!TBIDENT!inn.pdf}
 %   {}
 %   {}
 %
@@ -156,7 +154,7 @@ access</a>.
 %%  {Historical review of \TeX{}3}
 %%  {a 1991 review of \TeX, written for those experienced in other typesetting systems}
 %%  {\getfirstpage{flynn-tex3}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!flynn-tex3.pdf}
+%%  {/TUGboat/!TBIDENT!flynn-tex3.pdf}
 %%  {}
 %%  {}
 %
@@ -176,7 +174,7 @@ access</a>.
   {The \texttt{tikzlings} package}
   {from anteaters to squirrels, in colors and accessories galore}
   {131-132}
-  {https://tug.org/members/TUGboat/!TBIDENT!samcarter-tikzlings.pdf}
+  {/TUGboat/!TBIDENT!samcarter-tikzlings.pdf}
   {}
   {}
 
@@ -210,7 +208,7 @@ access</a>.
   {discusses bilingual issues with fonts (\texttt{fontspec}), page
    layout (\texttt{titleps}), \PDF\ bookmarks, and more}
   {147-151}
-  {https://tug.org/members/TUGboat/!TBIDENT!bossard-engjpn.pdf}
+  {/TUGboat/!TBIDENT!bossard-engjpn.pdf}
   {}
   {}
 
@@ -221,7 +219,7 @@ access</a>.
    Cyrillic and Arabic using multilingual support in \LaTeX}
   {online generation and typesetting of multilingual word search puzzles}
   {144-146}
-  {https://tug.org/members/TUGboat/!TBIDENT!claudio-puzzles.pdf}
+  {/TUGboat/!TBIDENT!claudio-puzzles.pdf}
   {}
   {}
 
@@ -285,7 +283,7 @@ access</a>.
   {Markdown 2.10.0: \LaTeX{} themes \& snippets, two flavors of comments, and LuaMeta\TeX}
   {styling Markdown in \LaTeX, literate comments, future projects}
   {186-193}
-  {https://tug.org/members/TUGboat/!TBIDENT!novotny-markdown.pdf}
+  {/TUGboat/!TBIDENT!novotny-markdown.pdf}
   {}
   {}
 
@@ -296,7 +294,7 @@ access</a>.
 %  {OpenType fonts greatly extending Latin Modern,
 %   with complete coverage of Unicode math (\tbsurl{ctan.org/pkg/newcm})}
 %  {\getfirstpage{tsolomitis-newcm}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!tsolomitis-newcm.pdf}
+%  {/TUGboat/!TBIDENT!tsolomitis-newcm.pdf}
 %  {}
 %  {}
 
@@ -306,7 +304,7 @@ access</a>.
   {Creating a \acro{VPAT} statement for \TeX\ Live}
   {first steps toward a formal statement of accessibility for \TeX\ Live}
   {164-165}
-  {https://tug.org/members/TUGboat/!TBIDENT!veytsman-vpat.pdf}
+  {/TUGboat/!TBIDENT!veytsman-vpat.pdf}
   {}
   {}
 
@@ -331,7 +329,7 @@ access</a>.
   {the \texttt{tagpdf} and \texttt{pdfmanagement-testphase} packages;
    present and future updates to much more}
   {170-173}
-  {https://tug.org/members/TUGboat/!TBIDENT!fischer-tagpdf.pdf}
+  {/TUGboat/!TBIDENT!fischer-tagpdf.pdf}
   {}
   {}
 
@@ -341,7 +339,7 @@ access</a>.
   {Continuous integration and \TeX\ with Org-Mode}
   {collaborative workflow using public build servers, and Org markup features}
   {135-138}
-  {https://tug.org/members/TUGboat/!TBIDENT!goswami-ci-org.pdf}
+  {/TUGboat/!TBIDENT!goswami-ci-org.pdf}
   {}
   {}
 
@@ -352,7 +350,7 @@ access</a>.
   {overview of sorting and other programming tasks in \BibTeX,
    \BibLaTeX/Biber, and the upcoming Ml\BibTeX}
   {204-207}
-  {https://tug.org/members/TUGboat/!TBIDENT!hufflen-bibprog.pdf}
+  {/TUGboat/!TBIDENT!hufflen-bibprog.pdf}
   {}
   {}
 
@@ -362,7 +360,7 @@ access</a>.
 %  {Working remotely from an island: \textsf{arara} and other tools}
 %  {build tool \textsf{arara}, font finder \textsf{albatross}, \textsf{texdoc} online}
 %  {\getfirstpage{island-tools}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!island-tools.pdf}
+%  {/TUGboat/!TBIDENT!island-tools.pdf}
 %  {}
 %  {}
 %
@@ -372,7 +370,7 @@ access</a>.
 %%%%%%   {\TeX\ Gyre text fonts revisited}
 %%%%%%   {incorporating math and symbol glyphs into text fonts, and OpenType accent positioning}
 %%%%%%   {\getfirstpage{jackowski-gyre}}
-%%%%%%   {https://tug.org/members/TUGboat/!TBIDENT!jackowski-gyre.pdf}
+%%%%%%   {/TUGboat/!TBIDENT!jackowski-gyre.pdf}
 %%%%%%   {}
 %%%%%%   {}
 
@@ -383,7 +381,7 @@ access</a>.
    fundamentals of~electrical engineering with \acro{PGFP}lots and Circui\TikZ}
   {using \acro{MATLAB} and \LaTeX\ together to generate problems and solutions}
   {159-163}
-  {https://tug.org/members/TUGboat/!TBIDENT!magdowski-autoee.pdf}
+  {/TUGboat/!TBIDENT!magdowski-autoee.pdf}
   {}
   {}
 
@@ -403,7 +401,7 @@ access</a>.
   {\texttt{latex2nemeth}: A direct \LaTeX-to-Braille transcribing tool}
   {reliably support mathematics, as well as Greek, English, and other languages}
   {166-169}
-  {https://tug.org/members/TUGboat/!TBIDENT!papasalouros-latex2nemeth.pdf}
+  {/TUGboat/!TBIDENT!papasalouros-latex2nemeth.pdf}
   {}
   {}
 
@@ -414,7 +412,7 @@ access</a>.
   {support conversion of large document collections, with error reports
    and statistics}
   {132-134}
-  {https://tug.org/members/TUGboat/!TBIDENT!stamerjohanns-texmlbus.pdf}
+  {/TUGboat/!TBIDENT!stamerjohanns-texmlbus.pdf}
   {}
   {}
 
@@ -427,7 +425,7 @@ access</a>.
 %%  {Functions and \texttt{expl3}}
 %%  {an introduction to \LaTeX3 programming with functions and variables}
 %%  {\getfirstpage{gregorio-l3functions}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!gregorio-l3functions.pdf}
+%%  {/TUGboat/!TBIDENT!gregorio-l3functions.pdf}
 %%  {}
 %%  {}
 %
@@ -437,7 +435,7 @@ access</a>.
 %  {LuaMeta\TeX\ programming features}
 %  {advances and extensions in \TeX\ programming in the \code{lmtx} engine}
 %  {\getfirstpage{hagen-prog}}
-%  {https://tug.org/members/TUGboat/TUGboat/!TBIDENT!hagen-prog.pdf}
+%  {/TUGboat/TUGboat/!TBIDENT!hagen-prog.pdf}
 %  {}
 %  {}
 %
@@ -447,7 +445,7 @@ access</a>.
 %  {Scaled fonts and glyphs}
 %  {engine extensions in \code{lmtx} for dynamic glyph scaling}
 %  {\getfirstpage{hagen-scaled}}
-%  {https://tug.org/members/TUGboat/TUGboat/!TBIDENT!hagen-scaled.pdf}
+%  {/TUGboat/TUGboat/!TBIDENT!hagen-scaled.pdf}
 %  {}
 %  {}
 %
@@ -458,7 +456,7 @@ access</a>.
 %  {meeting the generalized mediation macro challenge in
 %   Appendix\CONNECT{}D of \MFB}
 %  {\getfirstpage{hu-bernstein}}
-%  {https://tug.org/members/TUGboat/TUGboat/!TBIDENT!hu-bernstein.pdf}
+%  {/TUGboat/TUGboat/!TBIDENT!hu-bernstein.pdf}
 %  {}
 %  {}
 %
@@ -479,7 +477,7 @@ access</a>.
 %  {changing \code{cweave} and \code{ctangle} to read/write the Unicode
 %   \acro{BMP}}
 %  {\getfirstpage{liferenko-cweb}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!liferenko-cweb.pdf}
+%  {/TUGboat/!TBIDENT!liferenko-cweb.pdf}
 %  {}
 %  {}
 %
@@ -500,7 +498,7 @@ access</a>.
   {source code to source code conversion: memory words, macros, case
    statements, and more}
   {139-142}
-  {https://tug.org/members/TUGboat/!TBIDENT!ruckert-cweb.pdf}
+  {/TUGboat/!TBIDENT!ruckert-cweb.pdf}
   {}
   {}
 
@@ -510,7 +508,7 @@ access</a>.
   {New Czechoslovak hyphenation patterns, word lists, and workflow}
   {towards universal patterns based on phonology}
   {152-158}
-  {https://tug.org/members/TUGboat/!TBIDENT!sojka-czech.pdf}
+  {/TUGboat/!TBIDENT!sojka-czech.pdf}
   {}
   {}
 
@@ -520,7 +518,7 @@ access</a>.
   {{\tt bib2gls}: sorting}
   {fallback and explicit sort values for symbols and more with \texttt{bib2gls}}
   {194-203}
-  {https://tug.org/members/TUGboat/!TBIDENT!talbot-sorting.pdf}
+  {/TUGboat/!TBIDENT!talbot-sorting.pdf}
   {}
   {}
 
@@ -530,7 +528,7 @@ access</a>.
   {\acro{TEI}-\XML\ to \LaTeX\ workflow: Issues and lessons}
   {using \XSLT, \LaTeX, and Python to convert from \XML\ to \PDF}
   {174-179}
-  {https://tug.org/members/TUGboat/!TBIDENT!vaughan-tei.pdf}
+  {/TUGboat/!TBIDENT!vaughan-tei.pdf}
   {}
   {}
 
@@ -540,7 +538,7 @@ access</a>.
 %  {An attempt at creating font transitions}
 %  {an example of mathematically interpolating between sans serif and serif fonts}
 %  {\getfirstpage{venkatesan-transfont}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!venkatesan-transfont.pdf}
+%  {/TUGboat/!TBIDENT!venkatesan-transfont.pdf}
 %  {}
 %  {}
 %
@@ -550,7 +548,7 @@ access</a>.
 %%%  {An attempt at ragged-right typesetting}
 %%%  {esthetics and implementations of ragged right, especially for German text}
 %%%  {\getfirstpage{wermuth-ragged}}
-%%%  {https://tug.org/members/TUGboat/!TBIDENT!wermuth-ragged.pdf}
+%%%  {/TUGboat/!TBIDENT!wermuth-ragged.pdf}
 %%%  {}
 %%%  {}
 
