@@ -21,7 +21,7 @@ default check: one #all-diff
 # publishing a TUGboat issue; see the README.karl file on tug.org.
 testiss = 132
 lastiss = 132
-crossref_iss = 132
+crossref_iss = 130
 
 # use different temp dir on different machines.
 mydir := $(shell ls ~karl/public_html 2>/dev/null)
@@ -83,6 +83,8 @@ crw:
 crxml:
 	$(MAKE) -C crossref
 
+# qqq need to compute /tb directory name.
+# qqq figure out identical files.
 diff-land:
 	for f in $(cr_lndout)/*.html; do \
 	  diff -u0 $(tubweb)/tb42-1/`basename $$f` $$f; \
@@ -91,11 +93,6 @@ diff-land:
 upload-test upload-real:
 	$(MAKE) -C crossref $@
 
-# qqq upload to test crossref
-# qqq install landing files on web site
-# qqq upload to real crossref
-# qqq archive uploaded files in crossref/uploaded
-	
 #  Processing for main Contents html files.
 out = contents*.html
 all:

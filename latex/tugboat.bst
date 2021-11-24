@@ -610,7 +610,6 @@ FUNCTION {format.date.direct}
   if$
 }
 
-
 FUNCTION {format.btitle}
 { title emphasize
 }
@@ -939,8 +938,6 @@ FUNCTION {format.version}
   if$
 }
 
-
-
 FUNCTION {format.eprint}
 { eprint empty$
     { "" }
@@ -1079,7 +1076,6 @@ FUNCTION {webpage}
   fin.entry
 }
 % ...urlbst to here
-
 
 FUNCTION {article}
 { output.bibitem

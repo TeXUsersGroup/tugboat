@@ -54,7 +54,7 @@ fi
 
 # Re image compression, the default seems good enough for us, since we
 # usually do want some sort of compression. explanation of many options,
-# including the way to get all default settings for pdfwrite:
+# including the way to see all default settings for pdfwrite:
 # https://superuser.com/questions/360216/use-ghostscript-but-tell-it-to-not-reprocess-images
 # namely:
 # gs -sDEVICE=pdfwrite -o /dev/null \

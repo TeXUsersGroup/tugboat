@@ -3,9 +3,12 @@ Detailed steps for TUGboat -> crossref processing. Public domain.
 Originally written 2021 Karl Berry.
 
 First, in each dir?.*, preserve files from previous issue:
-  mkdir archive.tbNNN; mv tb* archive.tbNNN
+  nnn=...
+  for d in dir{0,1,2}.*; do (cd $d && echo $d && mkdir archive.tb${nnn} \
+                             && mv tb${nnn}* archive.tb${nnn}); done
 and then
-  svn add dir?.*/archive.tbNNN; svn commit
+  svn add dir?.*/archive.tb${nnn}
+  svn commit
 Use archive.* so completion on "tb" works for current files.
 
 We'll work in the capsules/ directory:
@@ -108,7 +111,7 @@ And then copy the final landing files to the live web directory:
   dir=/home/httpd/html/TUGboat/tbVV-N
   ssh $host mkdir $dir # ensure the directory exists
   ssh $host "echo 'not yet' >$dir/index.html"  # no premature leak
-  scp -p dir1.lndout/*.html $host:$dir/
+  scp -p dir1.lndout/*.html $host:$dir/        # from crossref dir
 
 Then check results at:
   https://tug.org/TUGboat/tbVV-N/tbnnnwhatever.html
@@ -170,7 +173,7 @@ current issue NNN's files have been saved in dir3.uploaded as above.
 make cro-scratch
 
 - check diffs (no more "available to TUG members"):
-make diff-land  # need to fix directory name
+make diff-land  # need to fix /tb directory name
 
 - assuming ok, scp landing files as above, ideally only the changed ones.
 
@@ -182,6 +185,6 @@ make diff-land  # need to fix directory name
 cp archive.PREVN/* .
   so that the files from PREVN are current.
 
-- in capsules, run make $cu cro-preserve (no crw, for diff's sake).
+- in capsules, run make cro-preserve (no crw, for diff's sake).
 
 - then make diff-land and copy in as above.
