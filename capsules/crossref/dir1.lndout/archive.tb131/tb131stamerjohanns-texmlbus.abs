@@ -1,0 +1,12 @@
+Here I present an automatic open source build system that supports the
+conversion process of a collection of documents written in {\LaTeX} or
+other {\TeX} formats. With Texmlbus [4], the
+{\TeX} to {\XML} \acro{BU}ild System, documents can not only be
+converted to {\PDF}, but also to other output formats\Dash such as
+markup languages like {\HTML}. In particular, conversion to {\XML},
+{\HTML} and {\MathML} is supported via \LaTeX{}ML. Texmlbus\ can schedule
+jobs among several workers (possibly on different hosts), extract and
+analyze the outcome of the conversion process of each document and
+store results in its own database. Result documents as well as
+statistics about the results of the build process can be easily
+retrieved using a web browser.

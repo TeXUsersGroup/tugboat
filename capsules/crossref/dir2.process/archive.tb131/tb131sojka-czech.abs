@@ -1,0 +1,17 @@
+Space- and time-effective segmentation and hyphenation of natural
+languages remain at the core of every document preparation system, web
+browser, or mobile rendering system. We use the unreasonable
+effectiveness of pattern generation with \texttt{patgen}. It is possible
+to use hyphenation patterns to solve the dictionary problem also for
+closely related languages, without compromise. In this article, we show
+how we applied the marvelous effectiveness of \texttt{patgen} for the
+generation of the new Czechoslovak hyphenation patterns that cover both
+Czech and Slovak languages.
+
+We show that developing universal, up-to-date, high-coverage and highly
+generalized hyphenation patterns is feasible, generated from
+semi\hyph{}automatically prepared word lists from actual language usage.
+We evaluate the new approach and argue that the new Czechoslovak
+hyphenation patterns bring significant coverage and generalization
+improvements, and space savings. We share all the data, word lists, and
+workflow for reproducibility and usage.

@@ -1,0 +1,10 @@
+  Governments around the world are enforcing accessibility standards.
+  Vendors of software used by government agencies are required to file
+  formal statements of accessibility for their products.  This
+  presents a special challenge for open source products, if they are
+  not sponsored by a corporation.
+
+  In this paper we discuss our experience in creation of such a formal
+  statement for \TeX\ Live.  While command-line tools are usually more
+  accessible than \acro{GUI} interfaces, the work turned out to be
+  more difficult than we thought in the beginning.

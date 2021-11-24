@@ -1,0 +1,50 @@
+\providecommand\seen{seen } \providecommand\webpageat{web page at }
+  \providecommand\svnrepoat{Subversion repository at }
+  \providecommand\January{January} \providecommand\February{February}
+  \providecommand\March{March} \providecommand\April{April}
+  \providecommand\May{May} \providecommand\June{June}
+  \providecommand\July{July} \providecommand\August{August}
+  \providecommand\September{September} \providecommand\October{October}
+  \providecommand\November{November} \providecommand\December{December}
+  \providecommand\AUSTRALIA{Australia} \providecommand\USA{USA}
+  \providecommand\url[1]{\texttt{#1}}
+\begin{thebibliography}{1}
+
+\bibitem{Duivesteijn:cheat2020}
+W.~Duivesteijn, S.~Hess, X.~Du.
+\newblock How to cheat the page limit.
+\newblock \emph{WIREs Data Mining and Knowledge Discovery} 10, Feb. 2020.
+\newblock \href{https://doi.org/10.1002/widm.1361}{\path{10.1002/widm.1361}}
+
+\bibitem{Ginev:cortex}
+D.~Ginev.
+\newblock {\tt{CorTeX}}: A general purpose processing framework for corpora of
+  scientific documents.
+\newblock \url{https://github.com/dginev/CorTeX}
+
+\bibitem{Miller:latexml}
+B.~Miller, D.~Ginev.
+\newblock {\tt{LaTeXML}}: A {\LaTeX} to {XML} converter.
+\newblock \url{https://dlmf.nist.gov/LaTeXML/}
+
+\bibitem{Stamerjohanns:texmlbus}
+H.~Stamerjohanns.
+\newblock {\tt{texmlbus}}: A build system to convert documents to {XML} and
+  other formats.
+\newblock \url{https://github.com/stamer/texmlbus}
+
+\bibitem{StaKo:2008}
+H.~Stamerjohanns, M.~Kohlhase.
+\newblock Transforming the ar${\chi}$iv to {XML}.
+\newblock In \emph{9th International Conference, AISC 2008 15th Symposium,
+  Calculemus 2008 7th International Conference, MKM 2008 Birmingham, UK,
+  July~28--August~1, 2008}, S.~Autexier, J.~Campbell, et~al., eds., Intelligent
+  Computer Mathematics, pp.~574--582. Springer Verlag, 2008.
+
+\bibitem{StaKoh:tlcspx10}
+H.~Stamerjohanns, M.~Kohlhase, et~al.
+\newblock Transforming large collections of scientific publications to {XML}.
+\newblock \emph{Mathematics in Computer Science} 3(3):299--307, 2010.
+\newblock \url{https://kwarc.info/kohlhase/papers/mcs10.pdf}
+
+\end{thebibliography}

@@ -1,0 +1,19 @@
+The Braille system allows the tactile representation of
+  characters in various alphabets, giving access to reading texts to
+  visually impaired persons. The Nemeth code  allows the
+  representation of mathematics symbols and expressions into the
+  Braille system.
+  
+  We have developed a tool, named
+  \texttt{latex2nemeth}, for the reliable transcription of \LaTeX\
+  documents to Nemeth Braille, thus facilitating the access of
+  visually impaired students to studying science. In order to support
+  the extensive set of mathematics symbols covered by \TeX, we have
+  proposed some new symbols based on the extension mechanisms of the
+  Nemeth code. With the aid of \texttt{latex2nemeth}, we have created
+  a repository of learning material in Braille\slash Nemeth code
+  aiming to support studies in mathematics for visually impaired
+  students. While most of the material available in the repository is
+  in the Greek language, the tool supports other languages as
+  well. \texttt{latex2nemeth} is currently available in both the \TeX\ Live
+  and MiK\TeX\ distributions. 

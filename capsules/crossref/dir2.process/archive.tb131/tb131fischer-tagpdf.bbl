@@ -1,0 +1,12 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{1}
+
+\bibitem{xFischer:2020:CAP}
+U.~Fischer.
+\newblock Creating accessible pdfs with {\LaTeX}.
+\newblock \emph{TUGboat} 41(1):26--28, 2020.
+\newblock \url{https://tug.org/TUGboat/tb41-1/tb127fischer-accessible.pdf}
+
+\end{thebibliography}

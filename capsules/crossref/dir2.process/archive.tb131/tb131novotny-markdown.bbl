@@ -1,0 +1,34 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{1}
+
+\bibitem{Hagen:2019:CL}
+H.~Hagen.
+\newblock {{\ConTeXt} LMTX}.
+\newblock \emph{TUGboat} 40(1):34--37, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-1/tb124hagen-lmtx.pdf}
+
+\bibitem{knuth86}
+D.E.~Knuth.
+\newblock \emph{The \TeX book}.
+\newblock Addison-Wesley, 1986.
+
+\bibitem{Menke:2019:PCD}
+H.~Menke.
+\newblock Parsing complex data formats in {\LuaTeX} with {LPEG}.
+\newblock \emph{TUGboat} 40(2):129--135, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-2/tb125menke-lpeg.pdf}
+
+\bibitem{mittelbach2018the}
+F.~Mittelbach.
+\newblock Format \LaTeX{} documentation, 2021.
+\newblock \url{https://ctan.org/pkg/doc}
+
+\bibitem{Novotn:2019:MTL}
+V.~Novotn{\'y}.
+\newblock {Markdown 2.7.0}: Towards lightweight markup in {\TeX}.
+\newblock \emph{TUGboat} 40(1):25--27, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-1/tb124novotny-markdown.pdf}
+
+\end{thebibliography}

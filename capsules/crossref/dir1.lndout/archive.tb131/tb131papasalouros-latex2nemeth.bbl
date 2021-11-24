@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{Gamma1995}
+E.~Gamma, R.~Helm, et~al.
+\newblock \emph{Design Patterns: Elements of Reusable Object-oriented
+  Software}.
+\newblock Addison-Wesley, Boston, MA, USA, 1995.
+
+\bibitem{javacc}
+The {Java\acro{CC}} compiler compiler.
+\newblock \\\tbsurl{javacc.github.io/javacc}.
+
+\bibitem{liblouis}
+The \texttt{liblouis} project.
+\newblock \tbhurl{liblouis.org}.
+
+\bibitem{nemeth1972}
+A.~Nemeth.
+\newblock The {N}emeth {C}ode \oldstylenums{1972}.
+\newblock \tbhurl{brailleauthority.org/mathscience/nemeth1972.pdf}.
+
+\bibitem{scied17}
+A.~Papasalouros, A.~Tsolomitis.
+\newblock A direct {\TeX}-to-{Braille} transcribing method.
+\newblock \emph{Journal of Science Education for Students with Disabilities}
+  20(1):36--49, 2017.
+\newblock RIT Scholar works.
+
+\bibitem{tex4ht}
+The \texttt{tex4ht} project.
+\newblock \tbsurl{tug.org/tex4ht}.
+
+\end{thebibliography}

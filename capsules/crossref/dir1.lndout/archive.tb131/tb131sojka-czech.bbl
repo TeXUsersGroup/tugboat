@@ -1,0 +1,205 @@
+\begin{thebibliography}{10}
+
+\bibitem{tex:allen90}
+R.E.~Allen, ed.
+\newblock \emph{{The Oxford Spelling Dictionary}}, vol.~II of \emph{{The Oxford
+  Library of English Usage}}.
+\newblock Oxford University Press, 1990.
+
+\bibitem{nlp:bartlett-etal-2008-automatic}
+S.~Bartlett, G.~Kondrak, C.~Cherry.
+\newblock {Automatic Syllabification with Structured {SVM}s for
+  Letter-to-Phoneme Conversion}.
+\newblock In~\emph{Proceedings of ACL-08: HLT}, pp.~568--576, Columbus, Ohio,
+  June 2008. ACL.
+\newblock \url{https://www.aclweb.org/anthology/P08-1065}
+
+\bibitem{nlp:Bauer1997}
+A.~Bauer.
+\newblock \emph{D{\v e}len\'i slov /\,slovotvorba v~praxi\,/ {\rm [Word
+  hyphenation /\,practical morphology\,/\,]}}.
+\newblock Nakladatelství Olomouc, Olomouc, 1997.
+
+\bibitem{tex:chicago17}
+\emph{The Chicago Manual of Style}.
+\newblock University of Chicago Press, Chicago, 17th ed., Sept. 2017.
+
+\bibitem{tex:zpravodajchlebikova91eng}
+J.~Chleb{\'i}kov{\'a}.
+\newblock {Ako rozd{\v e}li{\v t} (slovo) {\v C}eskoslovensko [How to hyphenate
+  the word Czechoslovakia]}.
+\newblock \emph{Zpravodaj \CSTUG{}} 1(4):\mbox{10--13}, Apr. 1991.
+\newblock \href{https://doi.org/10.5300/1991-4/10}{\path{10.5300/1991-4/10}}
+
+\bibitem{nlp:webster}
+P.B.~Gove, M.~Webster.
+\newblock \emph{{Webster's Third New International Dictionary of the English
+  language Unabridged}}.
+\newblock Merriam-Webster Inc., Springfield, Massachusetts, U.S.A, Jan. 2002.
+
+\bibitem{tex:haller56}
+J.~Haller.
+\newblock \emph{{Jak se d\v{e}l\'i\ slova} {\rm [How Words Get Hyphenated]}}.
+\newblock St\'atn\'{i} pedagogick\'e nakladatelstv\'i\ Praha, 1956.
+
+\bibitem{tex:yannis-patgen2}
+Y.~Haralambous.
+\newblock {A Revisited Small Tutorial on Patgen, 28 Years After}, Mar. 2021.
+\newblock \url{https://ctan.org/pkg/patgen2-tutorial}
+
+\bibitem{nlp:UJCprirucka}
+{Internetová jazyková příručka [Internet Language Reference Book]}.
+\newblock \newline \url{https://prirucka.ujc.cas.cz/?id=135}
+
+\bibitem{nlp:Jakubicek2013TTC}
+M.~Jakub{\'i}{\v c}ek, A.~Kilgarriff, et~al.
+\newblock {The TenTen Corpus Family}.
+\newblock In~\emph{Proc. of the 7th International Corpus Linguistics Conference
+  (CL)}, pp.~125--127, Lancaster, UK, July 2013.
+
+\bibitem{keary2005}
+M.~Keary.
+\newblock On hyphenation---anarchy of pedantry.
+\newblock \emph{{PC} {U}pdate, The magazine of the Melbourne PC User Group},
+  2005.
+\newblock
+  \url{https://web.archive.org/web/20050310054738/http://www.melbpc.org.au/pcupdate/9100/9112article4.htm}
+
+\bibitem{nlp:SketchEngine2004}
+A.~Kilgarriff, P.~Rychl\'y, et~al.
+\newblock {The Sketch Engine}.
+\newblock In~\emph{Proceedings of the Eleventh EURALEX International Congress},
+  pp.~105--116, Lorient, France, 2004.
+
+\bibitem{tex:KrantzICMLA2019}
+J.~Krantz, M.~Dulin, P.D.~Palma.
+\newblock {Language-Agnostic Syllabification with Neural Sequence Labeling}.
+\newblock In \emph{18th {IEEE} International Conference On Machine Learning And
+  Applications, {ICMLA} 2019, Boca Raton, FL, USA, December 16--19, 2019},
+  M.A.~Wani, T.M.~Khoshgoftaar, et~al., eds., pp.~804--810. {IEEE}, 2019.
+\newblock
+  \href{https://doi.org/10.1109/ICMLA.2019.00141}{\path{10.1109/ICMLA.2019.00141}}
+
+\bibitem{tex:Liang83:thesis}
+F.M.~Liang.
+\newblock \emph{Word Hy-phen-a-tion by Com-put-er}.
+\newblock Ph.D. thesis, Department of Computer Science, Stanford University,
+  Aug. 1983.
+\newblock \url{https://tug.org/docs/liang/liang-thesis.pdf}
+
+\bibitem{nlp:maddieson2013}
+I.~Maddieson.
+\newblock {Syllable Structure}.
+\newblock In \emph{The World Atlas of Language Structures Online}, M.S.~Dryer,
+  M.~Haspelmath, eds. Max Planck Institute for Evolutionary Anthropology,
+  Leipzig, 2013.
+\newblock \newline \url{https://wals.info/chapter/12}
+
+\bibitem{tex:marchandetal2007}
+Y.~Marchand, C.R.~Adsett, R.I.~Damper.
+\newblock {Automatic Syllabification in English: A Comparison of Different
+  Algorithms}.
+\newblock \emph{Language and Speech} 52(1):1--27, 2009.
+\newblock
+  \href{https://doi.org/10.1177/0023830908099881}{\path{10.1177/0023830908099881}}
+
+\bibitem{tex:hyphenationweb-2021-08-15}
+A.~Rosendahl, M.~Miklavec.
+\newblock {\TeX} hyphenation patterns.
+\newblock \url{http://hyphenation.org/tex}
+
+\bibitem{nlp:Shao2018}
+Y.~Shao, C.~Hardmeier, J.~Nivre.
+\newblock {Universal Word Segmentation: Implementation and Interpretation}.
+\newblock \emph{Transactions of the Association for Computational Linguistics}
+  6:421--435, 2018.
+\newblock
+  \href{https://doi.org/10.1162/tacl_a_00033}{\path{10.1162/tacl_a_00033}}
+
+\bibitem{tensojka:cshyphenrepo}
+O.~Sojka, P.~Sojka.
+\newblock {cshyphen repository}.
+\newblock \url{https://github.com/tensojka/cshyphen}
+
+\bibitem{tex:sojka95c}
+P.~Sojka.
+\newblock {Notes on Compound Word Hyphenation in \smash{\TeX}}.
+\newblock \emph{TUGboat} 16(3):\mbox{290--297}, 1995.
+\newblock \url{https://tug.org/TUGboat/tb16-3/tb48soj2.pdf}
+
+\bibitem{tex:sojka99a}
+P.~Sojka.
+\newblock {Hyphenation on Demand}.
+\newblock \emph{TUGboat} 20(3):\mbox{241--247}, 1999.
+\newblock \url{https://tug.org/TUGboat/tb20-3/tb64sojka.pdf}
+
+\bibitem{tex:SojkaSKhyp04beng}
+P.~Sojka.
+\newblock {Slovensk{\'e} vzory d{\v e}len{\'i}: {\v c}as pro zm{\v e}nu?}
+\newblock In~\emph{Proc. of SLT 2004, 4th seminar on Linux and \TeX},
+  pp.~\mbox{67--72}, Znojmo, 2004. Konvoj.
+\newblock \url{https://fi.muni.cz/usr/sojka/papers/skhyp.pdf}
+
+\bibitem{tex:sojka04eng}
+P.~Sojka.
+\newblock {Slovensk{\'e} vzory d{\v e}len{\'i}: {\v c}as pro zm{\v e}nu?
+  [Slovak Hyphenation Patterns: A Time for Change?]}.
+\newblock \emph{\CSTUG\ Bulletin} 14(3--4):\mbox{183--189}, 2004.
+\newblock
+  \href{https://doi.org/10.5300/2004-3-4/183}{\path{10.5300/2004-3-4/183}}
+\newpage
+\bibitem{tex:zpravodajsojkaetsojka2019}
+P.~Sojka, O.~Sojka.
+\newblock {The Unreasonable Effectiveness of Pattern Generation}.
+\newblock \emph{Zpravodaj \CSTUG{}} 29(1--4):\mbox{73--86}, 2019.
+\newblock
+  \href{https://doi.org/10.5300/2019-1-4/73}{\path{10.5300/2019-1-4/73}}
+
+\bibitem{nlp:SojkaetSojkaraslan2019}
+P.~Sojka, O.~Sojka.
+\newblock {Towards Universal Hyphenation Patterns}.
+\newblock In \emph{Proc. of Recent Advances in Slavonic Natural Language
+  Processing---RASLAN 2019}, A.~Hor{\'a}k, P.~Rychl\'y, A.~Rambousek, eds.,
+  pp.~63--68, Karlova Stud{\'a}nka, Czech Republic, 2019. Tribun EU.
+\newblock \url{https://nlp.fi.muni.cz/raslan/2019/paper13-sojka.pdf}
+
+\bibitem{tex:sojkas2019unreasonable}
+P.~Sojka, O.~Sojka.
+\newblock The unreasonable effectiveness of pattern generation.
+\newblock \emph{TUGboat} 40(2):187--193, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-2/tb125sojka-patgen.pdf}
+
+\bibitem{tex:zpravodajsojkaetsojka2020}
+P.~Sojka, O.~Sojka.
+\newblock {Towards New Czechoslovak Hyphenation Patterns}.
+\newblock \emph{Zpravodaj \CSTUG{}} 30(3--4):\mbox{118--126}, 2020.
+\newblock \url{https://cstug.cz/bulletin/pdf/2020-3-4.pdf#page=16}
+
+\bibitem{tex:sojka95b}
+P.~Sojka, P.~Ševeček.
+\newblock {Hyphenation in \smash{\TeX}\Dash Quo Vadis?}
+\newblock \emph{TUGboat} 16(3):\mbox{280--289}, 1995.
+\newblock \url{https://tug.org/TUGboat/tb16-3/tb48soj1.pdf}
+
+\bibitem{nlp:trogkanis-elkan-2010-conditional}
+N.~Trogkanis, C.~Elkan.
+\newblock {Conditional Random Fields for Word Hyphenation}.
+\newblock In~\emph{Proc. of the 48th Annual Meeting of the ACL}, pp.~366--374,
+  Uppsala, Sweden, July 2010. ACL.
+\newblock \url{https://www.aclweb.org/anthology/P10-1038}
+
+\bibitem{nlp:wordpiece2016}
+Y.~Wu, M.~Schuster, et~al.
+\newblock {Google's Neural Machine Translation System: Bridging the Gap between
+  Human and Machine Translation}, 2016.
+\newblock \url{https://paperswithcode.com/method/wordpiece}
+
+\bibitem{nlp:UJSprirucka}
+{Ľ. Štúr Institute of Linguistics of the Slovak Academy of Sciences (SAS)},
+  ed.
+\newblock \emph{{Pravidlá slovenského pravopisu {\rm [Rules of Slovak
+  Grammar]}}}.
+\newblock Veda, publisher of SAS, Bratislava, 3rd (updated printing) ed., 2000.
+\newblock \url{https://www.juls.savba.sk/ediela/psp2000/psp.pdf}
+
+\end{thebibliography}

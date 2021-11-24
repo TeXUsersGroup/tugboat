@@ -1,0 +1,51 @@
+\begin{thebibliography}{1}
+
+\bibitem{relsize}
+D.~Arseneau, M.~Swift.
+\newblock The \sty{relsize} package, 2013.
+\newblock \tbsurl{ctan.org/pkg/relsize}.
+
+\bibitem{marvosym}
+M.~Miklavec, T.~Henlich, M.~Vogel.
+\newblock The~\sty{marvosym} package, 2012.
+\newblock \\\tbsurl{ctan.org/pkg/marvosym}.
+
+\bibitem{upgreek}
+W.~Schmidt.
+\newblock The \sty{upgreek} package, 2003.
+\newblock \\\tbsurl{ctan.org/pkg/upgreek}.
+
+\bibitem{samplebibfiles}
+N.~Talbot.
+\newblock Sample {\Bib} files.
+\newblock \\\tbsurl{dickimaw-books.com/latex/tugboat-bib2gls}.
+
+\bibitem{tugboat2020}
+N.~Talbot.
+\newblock bib2gls: selection, cross-references and locations.
+\newblock \emph{{TUG}boat} 41(3), 2020.
+\newblock \tbsurl{tug.org/TUGboat/tb41-3/tb129talbot-bib2gls-more.pdf}.
+
+\bibitem{logicaldivisions}
+N.~Talbot.
+\newblock Logical glossary divisions (\field{type} vs \field{group} vs
+  \field{parent}), 2020.
+\newblock \tbsurl{dickimaw-books.com/gallery/?label=logicaldivisions}.
+
+\bibitem{bib2gls}
+N.~Talbot.
+\newblock \sty{bib2gls}: Command line application to convert \texttt{.bib}
+  files to \texttt{glossaries-extra.sty} resource files, 2020.
+\newblock \tbsurl{ctan.org/pkg/bib2gls}.
+
+\bibitem{glossaries-extra}
+N.~Talbot.
+\newblock The \sty{glossaries-extra} package, 2020.
+\newblock \tbsurl{ctan.org/pkg/glossaries-extra}.
+
+\bibitem{glossaries}
+N.~Talbot.
+\newblock The \sty{glossaries} package, 2020.
+\newblock \tbsurl{ctan.org/pkg/glossaries}.
+
+\end{thebibliography}

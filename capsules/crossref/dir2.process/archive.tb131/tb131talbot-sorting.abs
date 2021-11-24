@@ -1,0 +1,9 @@
+When using \app{makeindex} and \app{xindy}, it's advisable to
+provide a sort value when the actual value contains commands or
+other awkward content that can confuse sorting. With \app{bib2gls},
+which was written specifically for the \sty{glossaries-extra}
+package, the advice is the reverse. In general you shouldn't
+explicitly supply the sort value but instead make use of
+\app{bib2gls}'s system of fallbacks. This provides a more flexible
+approach that makes it easier to share \texttt{bib} files across multiple
+documents that may require different ordering.

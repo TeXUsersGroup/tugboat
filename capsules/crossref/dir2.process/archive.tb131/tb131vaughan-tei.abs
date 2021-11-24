@@ -1,0 +1,5 @@
+In this paper I discuss some of the issues surrounding the workflow used in
+the production of the annotated Spanish translation of the medieval work,
+\textit{Salomon et Marcolfus}. I explain the decisions taken regarding the
+\XSLT\ transformation of the \TEI-\XML\ document, in order to produce a final
+print-ready \PDF\ from the \LuaLaTeX\ text.

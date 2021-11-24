@@ -1,0 +1,12 @@
+All students in our class \enquote{Fundamentals of Electrical Engineering}
+get a personalized task via e-mail, solve it and submit a
+digitized version of their handwritten solution. Then, students peer
+review each other (lowering the review effort for the lecturer) with
+the help of a similarly personalized sample solution.
+
+The procedure is automated via \acro{MATLAB} and therefore scalable for
+large numbers of students. In contrast to multiple choice questions or
+pure numerical solutions, here the approach and the detailed
+calculations can also be assessed. This article describes generating the tasks and
+sample solutions in \LaTeX\ with the help of
+PGFPlots and CircuiTikZ.

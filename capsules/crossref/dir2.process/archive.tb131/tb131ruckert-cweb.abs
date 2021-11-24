@@ -1,0 +1,6 @@
+This paper describes several aspects of the conversion
+of \TeX's source code from \WEB, based on Pascal,
+to \CWEB, based on C, with \texttt{web2w}. It emphasizes those aspects
+that are relevant for obtaining a translation that
+can truly be regarded as source code and lends itself
+to modifications. 

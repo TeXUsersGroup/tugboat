@@ -1,0 +1,73 @@
+\begin{thebibliography}{10}
+
+\bibitem{bib:titleps}
+J.~Bezos.
+\newblock \emph{Headers and footers with titleps}, July 2021.
+\newblock Version 2.14. \tbsurl{ctan.org/pkg/titleps}.
+
+\bibitem{bib:titlesec}
+J.~Bezos.
+\newblock \emph{The titlesec, titleps and titletoc Packages}, July 2021.
+\newblock Version 2.14. \tbsurl{ctan.org/pkg/titlesec}.
+
+\bibitem{bib:kameindex}
+A.~Bossard.
+\newblock Experimenting with \textit{makeindex} and {Unicode}, and deriving
+  \textit{kameindex}.
+\newblock \emph{Ars\TeX{}nica} 26:55--61, 2018.
+\newblock
+  \tbsurl{www.guitex.org/home/it/numero-26-ottobre-2018/351-06-kameindex}.
+
+\bibitem{bib:tex-cjk}
+A.~Bossard.
+\newblock A glance at \acro{CJK} support with {\XeTeX} and {\LuaTeX}.
+\newblock \emph{TUGboat} 40(2):196--201, 2019.
+\newblock \tbsurl{tug.org/TUGboat/tb40-2/tb125bossard-cjk.pdf}.
+
+\bibitem{bib:textbook}
+A.~Bossard.
+\newblock \emph{A Gentle Introduction to Functional Programming in English}.
+\newblock Ohmsha, Kanda Jinbocho, Tokyo, Japan, third ed., 2020.
+
+\bibitem{bib:polyglossia}
+F.~Charette, A.~Reutenauer, et~al.
+\newblock \emph{Polyglossia: Modern multilingual typesetting with {\XeLaTeX}
+  and \LuaLaTeX}, Apr. 2021.
+\newblock Version 1.53. \tbsurl{ctan.org/pkg/polyglossia}.
+
+\bibitem{bib:architecture}
+S.L.~Harris, D.M.~Harris.
+\newblock \emph{{\rm\fntcjkserif ディジタル回路設計と
+  コンピュータアーキテクチャ} (Digital Design and Computer
+  Architecture)}.
+\newblock Shoeisha, Funamachi, Shinjuku, Tokyo, Japan, second ed., Sept. 2017.
+\newblock Translated to Japanese by H. Amano, H. Nakajo, M. Suzuki, L.
+  Nagamatsu.
+
+\bibitem{bib:hyperref}
+S.~Rahtz, H.~Oberdiek, {The \LaTeX3 Project}.
+\newblock \emph{Hypertext marks in \LaTeX: a manual for hyperref}, June 2021.
+\newblock Version 7.00m. \\\tbsurl{ctan.org/pkg/hyperref}.
+
+\bibitem{bib:fontspec}
+W.~Robertson.
+\newblock \emph{The fontspec package{\Dash}Font selection for {\XeLaTeX} and
+  \LuaLaTeX}, Feb. 2021.
+\newblock Version 2.7i. \tbsurl{ctan.org/pkg/fontspec}.
+
+\bibitem{bib:luamicro}
+R.~Schlicht.
+\newblock \emph{The microtype package}, Mar. 2021.
+\newblock Version 2.8c. \tbsurl{ctan.org/pkg/microtype}.
+
+\bibitem{bib:geometry}
+H.~Umeki.
+\newblock \emph{The geometry package}, Jan. 2020.
+\newblock Version 5.9. \tbsurl{ctan.org/pkg/geometry}.
+
+\bibitem{bib:fancyhdr}
+P.~van Oostrum.
+\newblock \emph{The fancyhdr and extramarks packages}, Jan. 2021.
+\newblock Version 4.0.1. \\\tbsurl{ctan.org/pkg/fancyhdr}.
+
+\end{thebibliography}

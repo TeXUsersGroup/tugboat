@@ -1,0 +1,12 @@
+Air travel provided the zoom for society before we had to ``Zoom''.
+However, at the most critical stage of flight, when the pilot and plane
+are coming to land, readability of runway designators is of utmost
+importance. While the methods of marking have traditionally been white
+paint on blacktop written in the standardized font used by the
+International Civil Aviation Organization (\acro{ICAO}), with the
+aviation industry beginning to focus on the integration of fully
+autonomous systems into a variety of vehicles, it raises the question of
+whether the current font is suitable for visual-based navigational
+systems. This paper consequently examines the ability of machine
+learning software to read, learn, and recognize digits 0--9 and letters
+L, C, and R across a variety of fonts.
