@@ -1,0 +1,70 @@
+<doi_batch xmlns="http://www.crossref.org/schema/4.4.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.4.2" xsi:schemaLocation="http://www.crossref.org/schema/4.4.2 http://www.crossref.org/schema/deposit/crossref4.4.2.xsd">
+  <head>
+    <doi_batch_id>ltx2crossref-20211114180322-9477-corr2</doi_batch_id>
+    <timestamp>20211125180322</timestamp>
+    <depositor>
+      <depositor_name>TUGboat production</depositor_name>
+      <email_address>doi-tugboat@tug.org</email_address>
+    </depositor>
+    <registrant>TeX Users Group</registrant>
+  </head>
+  <body><journal>
+    <journal_metadata language="en">
+      <full_title>TUGboat</full_title>
+      <issn>0896-3207</issn>	
+    </journal_metadata>
+    <journal_issue>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <journal_volume><volume>42</volume></journal_volume>
+      <issue>3</issue>
+    </journal_issue>
+    <journal_article>
+      <titles>
+        <title>Rendering open street maps</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>258</first_page>
+        <last_page>266</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-3/tb132hagen-openstreetmap</doi>
+        <timestamp>20211114180324</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-3/tb132hagen-openstreetmap.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>A new unit for LMTX: The <tt>dk</tt></title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2021</year>
+      </publication_date>
+      <pages>
+        <first_page>311</first_page>
+        <last_page>311</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/42-3/tb132hagen-dk</doi>
+        <timestamp>20211114180324</timestamp>
+        <resource>https://tug.org/TUGboat/tb42-3/tb132hagen-dk.html</resource>
+      </doi_data>
+    </journal_article>
+  </journal></body>
+</doi_batch>

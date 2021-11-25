@@ -177,7 +177,6 @@ make diff-land  # need to fix /tb directory name
 
 - assuming ok, scp landing files as above, ideally only the changed ones.
 
-
  If there were hand edits in the crossref/dir2.process directory
 (hopefully not), have to take more care.
 - in capsules/crossref/dir*, move away existing files, to preserve any
@@ -188,3 +187,17 @@ cp archive.PREVN/* .
 - in capsules, run make cro-preserve (no crw, for diff's sake).
 
 - then make diff-land and copy in as above.
+
+ Uploading corrections. When needing to make updates to a
+previously-uploaded issue, e.g., we got the url wrong:
+cp dir3.uploaded/tbNNN/issue{,-corr}.xml 
+edit the new issue-corr.xml as needed; update timestamp values
+  for affected records, and for the whole upload.
+  unchanged records must be removed from the file, else crossref will
+    fail to do any updates (though their process reports "success" on
+    the changed records, sigh).
+in Makefile, change the xml_output assignment to the issue-corr.xml file.
+make upload-test
+if ok, make upload-real
+
+There is no charge for updating metadata, so do what's needed.

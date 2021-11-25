@@ -19,6 +19,9 @@ bbl_input = dir2.process/*.bbl
 #
 # The output file we will eventually upload.
 xml_output = dir2.process/issue.xml
+#
+# When uploading corrections:
+#xml_output = dir3.uploaded/tb132/issue-corr2.xml 
 
 # the "issue" target is used by cr-do-issue.
 $(xml_output) issue: $(rpi_input) $(tub_cfg) force
