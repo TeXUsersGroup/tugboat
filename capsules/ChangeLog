@@ -1,3 +1,10 @@
+2022-02-19  Karl Berry  <karl@freefriends.org>
+
+	* tb131capsule.txt: komo colon.
+
+	* lists-unifications.txt (Alp&#xed;zar): left in base char
+	after accents.
+
 2021-11-24  Karl Berry  <karl@freefriends.org>
 
 	* Makefile (crossref_iss): update old; doc.
