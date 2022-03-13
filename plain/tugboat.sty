@@ -1,6 +1,6 @@
 %% @texfile{
 %%     filename   = "tugboat.sty",
-%%     copyright  = "Copyright 1993,1999,2003,2006,2011-2021 TeX Users Group.
+%%     copyright  = "Copyright 1993,1999,2003,2006,2011-2022 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -21,8 +21,8 @@
 %% $Id$
 
 \def\thistubstyle{plain}
-\def\fileversion{v1.25}
-\def\filedate{2021-04-16}
+\def\fileversion{v1.26}
+\def\filedate{2022-03-12}
 
 % general items
 
@@ -159,6 +159,14 @@
 
 \font\tentex=cmtex10            % for ASCII character set
 
+\font\tenlogo=logo10
+\font\ninelogo=logo9
+\font\eightlogo=logo8
+%
+\font\tenlogosl=logosl10
+\font\ninelogosl=logosl10 at 9pt
+\font\eightlogosl=logosl10 at 8pt
+
 \def\mit{\fam\@ne}              % from plain
 \def\cal{\fam\tw@}              % from plain
 \def\sy{\cal}
@@ -241,10 +249,9 @@
   \def\bf{\def\sl{\tenbfsl}\def\SMC{\ninebf}\fam\bffam\tenbf}%
   \textfont\bffam=\tenbf \scriptfont\bffam=\eightbf
   \def\smc{\tensmc}%
-  \font\manual=logo10
-  \font\manualsl=logosl10
-  \def\tt{\tentt}%
-  \setttglue
+  \let\manual=\tenlogo
+  \let\manualsl=\tenlogosl
+  \def\tt{\tentt}\setttglue
   \def\upright{\tenuit}%
   \setbox\strutbox=\hbox{\vrule height7.5pt depth2.5pt width\z@}%
   \setbox\struttbox=\hbox{\vrule height8.5pt depth3.5pt width\z@}%
@@ -275,10 +282,9 @@
   \def\bf{\def\SMC{\eightbf}\fam\bffam\ninebf}%
   \textfont\bffam=\ninebf \scriptfont\bffam=\sevenbf
   \def\smc{\ninesmc}%
-  \font\manual=logo9
-  \font\manualsl=logosl10 at 9pt
-  \def\tt{\ninett}%
-        \setttglue
+  \let\manual\ninelogo
+  \let\manualsl=\ninelogosl
+  \def\tt{\ninett}\setttglue
   \setbox\strutbox=\hbox{\vrule height 6.75pt depth 2.25pt width\z@}%
   \setbox\struttbox=\hbox{\vrule height 7.75pt depth 3.25pt width\z@}%
   \normalbaselines \rm
@@ -310,10 +316,9 @@
   \def\bf{\def\SMC{\sevenbf}\fam\bffam\eightbf}%
   \textfont\bffam=\eightbf \scriptfont\bffam=\sixbf
   \def\smc{\eightsmc}%
-  \font\manual=logo8
-  \font\manualsl=logosl10 at 8pt
-  \def\tt{\eighttt}%
-  \setttglue
+  \let\manual\eightlogo
+  \let\manualsl\eightlogosl
+  \def\tt{\eighttt}\setttglue
   \setbox\strutbox=\hbox{\vrule height 6pt depth 2pt width\z@}%
   \setbox\struttbox=\hbox{\vrule height 7pt depth 3pt width\z@}%
   \normalbaselines \rm
@@ -844,7 +849,7 @@
 %  Two cases: 0 = last page was nonstandard; reset \vsize
 %             1 = do not reset \vsize: okay or length already reset
 \def\D@EndPage{%
-  \global\advancepageno
+  \advancepageno
   \T@stCount=1
   \ifThisIsFirstPage \T@stCount=0 \global\ThisIsFirstPagefalse
                      \resetfirsthead \resetfirstfoot

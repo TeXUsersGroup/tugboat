@@ -1,6 +1,6 @@
 %% @texfile{
 %%     filename   = "tugboat.cmn",
-%%     copyright  = "Copyright 1993-1996,2006,2008,2011-2020 TeX Users Group.
+%%     copyright  = "Copyright 1993-1996,2006,2008,2011-2022 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -29,8 +29,8 @@
 \fi
 \next
 
-\def\fileversion{v1.24}
-\def\filedate{2018-10-11}
+\def\fileversion{v1.25}
+\def\filedate{2022-03-12}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -606,10 +606,10 @@
 
 \def\TUBfilename#1#2{\expandafter\def\csname file@@#1\endcsname{#2}}
 \newread\@altfilenames
-\def\@readFLN{\immediate\openin\@altfilenames=\jobname.fln
+\def\@readFLN{\openin\@altfilenames=\jobname.fln
   \ifeof\@altfilenames\let\@result\relax\else
   \def\@result{\@@input\jobname.fln }\fi
-  \immediate\closein\@altfilenames
+  \closein\@altfilenames
   \@result}
 \@readFLN
 \everyjob=\expandafter{\the\everyjob\@readFLN}

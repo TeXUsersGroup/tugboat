@@ -4,7 +4,7 @@
 all: tubguide.pdf
 
 tubguide.pdf: tubguide.tex tugboat.sty tugboat.cmn
-	pdftex '\nonstopmode\input $<'
+	pdftex --file-line-error '\nonstopmode\input $<'
 
 tub_rel = /usr/local/texlive-rel/texmf-dist/tex/plain/tugboat-plain
 diff:

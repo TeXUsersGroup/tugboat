@@ -1,3 +1,18 @@
+2022-03-12  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.sty,
+	* tugboat.cmn: copyright 2022, release to CTAN.
+	v1.25 2022-03-12 (for both).
+
+	* tugboat.sty (\D@EndPage): do not use \global with \advancepageno,
+	since it already starts with \global.
+	* tugboat.cmn (\@readFLN): do not use \immediate with \openin
+	and \closein, it has no effect.
+	* tugboat.sty (\{ten,nine,eight}logo{,sl}): do \font once, up front.
+	(\tenpoint,\ninepoint,\eightpoint): use \let for the \manual fonts.
+	
+	All from Udo Wermuth.
+
 2021-04-16  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.sty (\rfoot): do \tubtypesetdoi.
