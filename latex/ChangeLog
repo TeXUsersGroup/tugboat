@@ -1,3 +1,14 @@
+2022-04-10  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\tbsfootnoteurl, \tbhfootnoteurl): new definitions,
+	since bb says she can use them.
+	* ltubguid.ltx (Explanations): document them.
+	* tubrfootest.tex: test \tbsfootnoteurl and \tbhfootnoteurl.
+
+2022-04-09  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\KOMAScript): allow break at hyphen.
+
 2021-11-24  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.bst: blank lines.

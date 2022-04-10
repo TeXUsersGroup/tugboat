@@ -1,10 +1,20 @@
 % $Id: tubptest.tex 66 2010-11-23 16:33:37Z karl $
 % Public domain.  Ragged-right footnote test.
 \documentclass{ltugboat}
+\usepackage[hidelinks,pdfa]{hyperref}
 \begin{document}
 
 rr.\footnote{\tubraggedfoot ragged right footnote please, make it long
 enough to break. that long. oh heck, let's make it more than two lines
 long, even.}
+
+An rr footnote for tug.org in https.\tbsurlfootnote{tug.org}
+
+Another rr footnote with https tug.org, this time with protocol
+given.\tbsurlfootnote{https://tug.org}
+
+Same, but now for http.\tbhurlfootnote{h.example.org}
+
+Again, with protocol.\tbhurlfootnote{http://h.example.org}
 
 \end{document}

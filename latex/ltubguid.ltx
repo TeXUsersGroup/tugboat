@@ -1,7 +1,7 @@
 % $Id$
 % ltubguid.ltx - documentation for ltugboat classes.
 % 
-% Copyright 1994-2021 TeX Users Group.
+% Copyright 1994-2022 TeX Users Group.
 % 
 % This file is part of the tugboat package.
 % 
@@ -753,6 +753,12 @@ synonyms for \cs{url}. This is ok, and we still request that the
 protocol not be included; if live links are not being produced in the
 output, the printed url without the protocol suffices. (When a user
 copies/pastes url text into a browser, it will normally work.)
+
+Two shortcut macros: \cs{tbsfootnoteurl} and \cs{tbhfootnoteurl} make a
+ragged-right footnote with the respective \cs{tbXurl} command. We
+recognize that sometimes the best option is to put urls in footnotes.
+However, when it's sensible, writing them as either parentheticals in
+the main text or in bibliography entries is preferred, to ease page breaking.
 
 For \texttt{ftp}, \texttt{rsync}, and other protocols, it is best to
 always include them explicitly and use \cs{url}:\\

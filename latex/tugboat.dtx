@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2022-04-09 v2.26
+                   [2022-04-10 v2.26
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -1255,7 +1255,6 @@
    \expandafter\hyper@linkurl\expandafter{\expandafter\Hurl\expandafter
                                             {\l_tmpa_str}}{https://\l_tmpa_str}
  }
-
 \def\tbhurl@#1  % http
  {
    \str_set:Nn\l_tmpa_str{#1}
@@ -1264,6 +1263,11 @@
                                             {\l_tmpa_str}}{http://\l_tmpa_str}
  }
 \ExplSyntaxOff
+%
+% Now let's use those macros for putting a url into a simple
+% ragged-right footnote.
+\def\tbsurlfootnote#1{\footnote{\raggedright\tbsurl{#1}}}
+\def\tbhurlfootnote#1{\footnote{\raggedright\tbhurl{#1}}}
 %
 % Make \! work in text mode.
 \DeclareRobustCommand{\!}{\ifmmode\mskip-\thinmuskip \else\kern-0.16667em \fi}

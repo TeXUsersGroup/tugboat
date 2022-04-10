@@ -1,6 +1,28 @@
 $Id$
 This file records noteworthy changes.  This file is public domain.
 
+ltugboat.cls:
+- \tbsurlfootnote, \tbhurlfootnote: typeset urls in ragged-right
+footnotes of their own.
+
+- \tubsentencespace: force a sentence-ending space, e.g., after a
+post-sentence \cite.
+
+- \tubjustifiedpar: undo ragged-right or other, restoring normal
+paragraph settings.
+
+-----------------
+2.26 (2021-10-12):
+ltugboat.cls:
+- strip a leading http(s) from \tbsurl and \tbhurl.
+- \Xe:increase negative kern.
+
+tugboat.bst:
+- allow editor field as well as author for @misc entries.
+- make @software another alias for @misc.
+- improve doi urls.
+
+-----------------
 2.25 (2021-06-27):
 ltugboat.cls:
 - new abbrevations: \RIT, \tbUTF.
@@ -13,7 +35,7 @@ tugboat.bst:
 - new entry type @ctan, following ctanbib (https://ctan.org/pkg/ctanbib).
 - use \emph{...} instead of {\em ...}, so we get italic corrections.
 
-----
+-----------------
 2.24 (2020-11-14):
 ltugboat.cls:
 - new hyphenation exceptions: Ja-pa-nese, Pak-i-stan.
