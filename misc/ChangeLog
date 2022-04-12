@@ -1,3 +1,11 @@
+2022-04-12  Karl Berry  <karl@freefriends.org>
+
+	* make-issue-pages-tub: in gs 9.56.1, -o %03d works,
+	while %d fails, so switch.
+	https://bugs.ghostscript.com/show_bug.cgi?id=705217
+	
+	* html2tex-tub: be pickoer about converting \TeX.
+
 2021-11-24  Karl Berry  <karl@freefriends.org>
 
 	* ps2pdf-tub: doc.

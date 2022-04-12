@@ -98,23 +98,7 @@ filesuffix=_TUGboat$pubdate
 # split pdf into individual pages.
 echo "$0: splitting `pdfpagecount $infile` pages..."
 
-# We want to use %03d, but that causes unfortunate "pdfmark destination
-# page" diagnostics which we don't want to see. So use %d (no messages
-# for some reason) and rename by hand.
-$gs -o "%d$filesuffix.pdf" -sDEVICE=pdfwrite $infile
-#
-for f in *$filesuffix.pdf; do
-  pageno=`echo $f | sed 's/_.*//'`
-  # assume we'll never have a thousand pages.
-  zeros=
-  if test $pageno -lt 10; then
-    zeros=00
-  elif test $pageno -lt 100; then
-    zeros=0
-  fi
-  #echo "$f -> $pageno -> $zeros"
-  test -n "$zeros" && mv $f $zeros$f # -v
-done
+$gs -o "%03d$filesuffix.pdf" -sDEVICE=pdfwrite $infile
 #ls -l
 
 # make sure we created the expected number of files

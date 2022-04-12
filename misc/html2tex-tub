@@ -74,7 +74,7 @@ sed \
   -e 's/\<HTML\>/\\HTML{}/g' \
   -e 's/\<CSS\>/\\CSS{}/g' \
   -e 's/\<PDF\>/\\PDF{}/g' \
-  -e 's/TeX/\\TeX{}/g' \
+  -e 's/\(^\|[^\]\)TeX/\1\\TeX{}/g' \
   -e 's/(La)\\TeX/\\AllTeX/g' \
   -e 's/La\\TeX/\\LaTeX/g' \
   -e 's/Xe\\TeX/\\XeTeX/g' \
