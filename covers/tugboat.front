@@ -40,6 +40,7 @@
 \font\twelvei=cmmi12  %0 scaled \magstep1
 \font\twelvesy=cmsy10 scaled \magstep1
 \font\twelvett=cmtt12 %0 scaled \magstep1
+\font\twelvesc=cmcsc10 at 12pt
 
 \def\twelvepoint{\baselineskip 14pt
     \def\rm{\fam0\twelverm}%
@@ -54,7 +55,7 @@
     \def\bf{\fam\bffam\twelvebf}%
     \textfont\bffam=\twelvebf \scriptfont\bffam=\eightbf
        \scriptscriptfont\bffam=\sixbf
-    \def\smc{\tenrm}%
+    \def\smc{\twelvesc}%
     \def\SMC{\elevenrm}%  % added 22 May 97; bb
     \def\tt{\twelvett}%
     \rm }
@@ -67,6 +68,7 @@
 \font\fourteenit=cmti12 scaled\magstep 1 %0 scaled \magstep2
 \let\fourteeni=\fourteenit
 \let\fourteensy=\tensy
+\font\fourteensc=cmcsc10 at 14pt
 
 \def\fourteenpoint{\baselineskip 16pt
     \def\rm{\fam0\fourteenrm}%
@@ -74,7 +76,7 @@
     \textfont1=\fourteenit \scriptfont1=\eleveni  \scriptscriptfont1=\seveni
     \textfont2=\fourteensy \scriptfont2=\elevensy \scriptscriptfont2=\sevensy
     \textfont3=\tenex \scriptfont3=\tenex \scriptscriptfont3=\tenex
-    \def\smc{\elevenrm}%
+    \def\smc{\fourteensc}%
     \rm }
 
 \font\sixteenrm=cmr17 %0 scaled \magstep3

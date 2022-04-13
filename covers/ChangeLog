@@ -1,3 +1,8 @@
+2022-04-13  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.front (\smc): define as scaled cmcsc, so "Algol"
+	in tb133quote comes out correctly.
+
 2021-10-30  Karl Berry  <karl@freefriends.org>
 
 	* tubtocmac.tex (\textbar): hacky definition for tb132ad-aw.
