@@ -1,3 +1,10 @@
+2022-05-08  Karl Berry  <karl@freefriends.org>
+
+	* tb77capsule.txt,
+	* tb85capsule.txt: use /l/eurotex2005 (defined in
+	/l/httpd-local/shortlinks.txt) for euro'05 links,
+	in case the pages come alive again at GUT. 
+
 2022-02-19  Karl Berry  <karl@freefriends.org>
 
 	* tb131capsule.txt: komo colon.
