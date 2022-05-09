@@ -1,0 +1,126 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{10}
+
+\bibitem{backwards1}
+G.~Ambrose, P.~Harris.
+\newblock \emph{The Layout Book}.
+\newblock Advanced Level Series. Bloomsbury Academic, 2007.
+
+\bibitem{elements}
+R.~Bringhurst.
+\newblock \emph{The Elements of Typographic Style}.
+\newblock Hartley \& Marks, 3rd ed., 2004.
+
+\bibitem{widowhistory}
+K.~Brown.
+\newblock The typographical widow.
+\newblock \emph{Bulletin of the {New York} Public Library} 52(1):3--25, Jan.
+  1948.
+\newblock \url{https://hdl.handle.net/2027/uc1.b3310084}
+
+\bibitem{widowhistory2}
+K.~Brown.
+\newblock The typographical widow: Encore.
+\newblock \emph{Bulletin of the {New York} Public Library} 52(9):458--466,
+  Sept. 1948.
+\newblock \newline \url{https://hdl.handle.net/2027/uc1.b3310084}
+
+\bibitem{backwards3}
+R.~Hunt.
+\newblock \emph{Advanced Typography: From Knowledge to Mastery}.
+\newblock Bloomsbury Publishing, 2020.
+
+\bibitem{xIsambert:TB31-1-12}
+P.~Isambert.
+\newblock Strategies against widows.
+\newblock \emph{TUGboat} 31(1):12--17, 2010.
+\newblock \newline \url{https://tug.org/TUGboat/tb31-1/tb97isambert.pdf}
+
+\bibitem{widow-assist}
+jeremie.
+\newblock Paragraph callback to help with widows\slash orphans hand tuning,
+  August 2017.
+\newblock \url{https://tex.stackexchange.com/q/372062}
+
+\bibitem{Knuth:TB10-3-325}
+D.E.~Knuth.
+\newblock {The new versions of {\TeX} and {\MF}}.
+\newblock \emph{TUGboat} 10(3):325--328, Nov. 1989.
+\newblock \url{https://tug.org/TUGboat/tb10-3/tb25knut.pdf}
+
+\bibitem{texbook}
+D.E.~Knuth.
+\newblock \emph{The \TeX{}book}.
+\newblock Addison--Wesley, 2021.
+
+\bibitem{global}
+F.~Mittelbach.
+\newblock A general framework for globally optimized pagination.
+\newblock \emph{Computational Intelligence} 35(2):242--284, Mar. 2018.
+\newblock \url{https://doi.org/10.1111/coin.12165}
+
+\bibitem{Mittelbach:2018:MFP}
+F.~Mittelbach.
+\newblock Managing forlorn paragraph lines (a.k.a. widows and orphans) in
+  {\LaTeX}.
+\newblock \emph{TUGboat} 39(3):246--251, 2018.
+\newblock \url{https://tug.org/TUGboat/tb39-3/tb123mitt-widows.pdf}
+
+\bibitem{widows-and-orphans}
+F.~Mittelbach.
+\newblock The \textsf{widows-and-orphans} package, March 2021.
+\newblock \newline \url{https://ctan.org/pkg/widows-and-orphans}
+
+\bibitem{old}
+J.~Moxon.
+\newblock \emph{Mechanick exercises}, vol. \unskip~2,\gobble.
+\newblock \hspace*{-.66em}\gobble, 1683.
+\newblock \url{https://archive.org/details/mechanickexercis00moxo_0}
+
+\bibitem{oed-line}
+{Oxford English Dictionary}.
+\newblock line at end of paragraph.
+\newblock \newline \url{https://www.oed.com/view/th/class/195380}
+
+\bibitem{oed-club}
+{Oxford English Dictionary}.
+\newblock club, n., Sept. 2021.
+\newblock \url{https://www.oed.com/view/Entry/34788}
+
+\bibitem{oed-widow}
+{Oxford English Dictionary}.
+\newblock widow, n., Dec. 2021.
+\newblock \url{https://www.oed.com/view/Entry/228912}
+
+\bibitem{plass}
+M.F.~Plass.
+\newblock \emph{Optimal pagination techniques for automatic typesetting
+  systems}.
+\newblock Ph.D. thesis, Stanford University, 1981.
+\newblock \newline \url{https://tug.org/docs/plass/plass-thesis.pdf}
+
+\bibitem{backwards2}
+I.~Saltz.
+\newblock \emph{Typography Essentials Revised and Updated}.
+\newblock Rockport Publishers, 2019.
+
+\bibitem{xThanh:2000:MTE}
+\Thanh.
+\newblock Micro-typographic extensions to the {\TeX} typesetting system.
+\newblock \emph{TUGboat} 21(4):317--317, Dec. 2000.
+\newblock \newline \url{https://tug.org/TUGboat/tb21-4/tb69thanh.pdf}
+
+\bibitem{etex}
+{The \NTS{} Team}.
+\newblock The {\eTeX} manual, Feb. 1998.
+\newblock \url{https://ctan.org/pkg/etex}
+
+\bibitem{Wermuth:2018:ECP}
+U.~Wermuth.
+\newblock Experiments with \cs{parfillskip}.
+\newblock \emph{TUGboat} 39(3):276--303, 2018.
+\newblock \url{https://tug.org/TUGboat/tb39-3/tb123wermuth-parfillskip.pdf}
+
+\end{thebibliography}

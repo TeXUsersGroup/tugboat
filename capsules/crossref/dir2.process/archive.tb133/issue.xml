@@ -1,0 +1,642 @@
+<doi_batch xmlns="http://www.crossref.org/schema/4.4.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.4.2" xsi:schemaLocation="http://www.crossref.org/schema/4.4.2 http://www.crossref.org/schema/deposit/crossref4.4.2.xsd">
+  <head>
+    <doi_batch_id>ltx2crossref-20220509222548-30003</doi_batch_id>
+    <timestamp>20220509222548</timestamp>
+    <depositor>
+      <depositor_name>TUGboat production</depositor_name>
+      <email_address>doi-tugboat@tug.org</email_address>
+    </depositor>
+    <registrant>TeX Users Group</registrant>
+  </head>
+  <body><journal>
+    <journal_metadata language="en">
+      <full_title>TUGboat</full_title>
+      <issn>0896-3207</issn>	
+    </journal_metadata>
+    <journal_issue>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <journal_volume><volume>43</volume></journal_volume>
+      <issue>1</issue>
+    </journal_issue>
+    <journal_article>
+      <titles>
+        <title>Markdown 2.15.0: What's new?</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>V&#xed;t</given_name>
+          <surname>Novotn&#xfd;</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>10</first_page>
+        <last_page>15</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-1/tb133novotny-markdown</doi>
+        <timestamp>20220509222548</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-1/tb133novotny-markdown.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="IoT:2020:ITD-1"><unstructured_citation>
+          Island of TeX. The Island of TeX: Developing abroad, your next destination. TUGboat 41(2):182&#x2013;184, 2020. https://tug.org/TUGboat/tb41-2/tb128island.pdf
+        </unstructured_citation></citation>
+        <citation key="knuth1999digital-2"><unstructured_citation>
+          D. Knuth. Digital Typography. No. 78 in CSLI Lecture Notes. Center for the Study of Language   and Information (CSLI), 1999. The second printing (2012) contains numerous corrections.
+        </unstructured_citation></citation>
+        <citation key="novotny2021markdown-3"><unstructured_citation>
+          V. Novotn&#x00FD;. Markdown 2.10.0: LaTeX themes &#x0026; snippets, two flavors of   comments, and LuaMetaTeX. TUGboat 42(2):186&#x2013;193, 2021. https://tug.org/TUGboat/tb42-2/tb131novotny-markdown.pdf
+        </unstructured_citation></citation>
+        <citation key="thompson2010re-4"><unstructured_citation>
+          M. Thompson. Re: Error in "cabal install pandoc",   2010. https://groups.google.com/g/pandoc-discuss/c/tKB4E7y6H2E/m/OiieKAuWsl4J
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The DuckBoat&#x2014;Beginners' Pond: CDs, but not Compact Disks</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Carla</given_name>
+          <surname>Maggi</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>16</first_page>
+        <last_page>22</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-1/tb133duck-tikz-cd</doi>
+        <timestamp>20220509222548</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-1/tb133duck-tikz-cd.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="xMaggi:2020:DBP-1"><unstructured_citation>
+          C. Maggi. The DuckBoat&#x2014;Beginners&#x2019; Pond: You do not need to be Neo   to cope with a TikZ matrix. TUGboat 41(1):20&#x2013;25, 2020. https://tug.org/TUGboat/tb41-1/tb127duck-matrix.pdf
+        </unstructured_citation></citation>
+        <citation key="marmotghost-2"><unstructured_citation>
+          marmotghost. Bounding boxes for B&#x00E9;zier curves. https://mirrors.ctan.org/graphics/pgf/contrib/tikz-bbox/pgfmanual4bbox.pdf.    Package page: https://ctan.org/pkg/tikz-bbox.
+        </unstructured_citation></citation>
+        <citation key="stoffel-3"><unstructured_citation>
+          A. Stoffel. &#x007b;tikzcd&#x007d;&#x2014;Commutative diagrams with TikZ.   Version 1.0.  https://mirrors.ctan.org/graphics/pgf/contrib/tikz-cd/tikz-cd-doc.pdf.    Package page: https://ctan.org/pkg/tikz-cd.
+        </unstructured_citation></citation>
+        <citation key="tantau-4"><unstructured_citation>
+          T. Tantau. The TikZ and PGF packages. Manual for Version 3.1.9a. https://mirrors.ctan.org/graphics/pgf/base/doc/pgfmanual.pdf.    Package page: https://ctan.org/pkg/pgf.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Making open source textbooks, and diagrams with AlDraTex</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Seth</given_name>
+          <surname>Bergmann</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>23</first_page>
+        <last_page>27</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-1/tb133bergmann-diagrams</doi>
+        <timestamp>20220509222548</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-1/tb133bergmann-diagrams.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="bergmann-cdTraditional-1"><unstructured_citation>
+          S.D. Bergmann. Compiler Design: Theory, Tools, and Examples. Wm. C. Brown Publishers, Dubuque, 1994.
+        </unstructured_citation></citation>
+        <citation key="bergmann-prq-2"><unstructured_citation>
+          S.D. Bergmann. Open source textbooks: A paradigm derived from open source software. Publishing Research Quarterly 30(1):1&#x2013;10, March 2014.
+        </unstructured_citation></citation>
+        <citation key="bergmann-cd-3"><unstructured_citation>
+          S.D. Bergmann. Compiler Design: Theory, Tools, and Examples. Campbell Library at Rowan University, Glassboro, NJ, 2022. https://rdw.rowan.edu/oer/1
+        </unstructured_citation></citation>
+        <citation key="bergmann-org-4"><unstructured_citation>
+          S.D. Bergmann. Computer Organization with MIPS. Campbell Library at Rowan University, Glassboro, NJ, 2022.
+        </unstructured_citation></citation>
+        <citation key="bergmann-csp-5"><unstructured_citation>
+          S.D. Bergmann. Computer Science Principles. Campbell Library at Rowan University, Glassboro, NJ, 2022. Editions available for several programming languages.
+        </unstructured_citation></citation>
+        <citation key="bergmann-intro-6"><unstructured_citation>
+          S.D. Bergmann. Introduction to Computer Science with Java Programming. Campbell Library at Rowan University, Glassboro, NJ, 2022. https://rdw.rowan.edu/oer/2
+        </unstructured_citation></citation>
+        <citation key="downey-7"><unstructured_citation>
+          A.B. Downey. Python for Software Design: How to Think Like a Computer   Scientist. Cambridge University Press, New York, 2009.
+        </unstructured_citation></citation>
+        <citation key="gurari-8"><unstructured_citation>
+          E.M. Gurari. TeX and LaTeX: Drawing and Literate Programming. McGraw-Hill, New York, 1994.
+        </unstructured_citation></citation>
+        <citation key="hefferon-linearAlg-9"><unstructured_citation>
+          J. Hefferon. Linear Algebra. Orthogonal Publishing, Ann Arbor, MI, 2022. https://hefferon.net/linearalgebra
+        </unstructured_citation></citation>
+        <citation key="hefferon-comp-10"><unstructured_citation>
+          J. Hefferon. Theory of Computation. hefferon.net, 2022. https://hefferon.net/computation
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Automatically removing widows and orphans with <tt>lua-widow-control</tt></title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Max</given_name>
+          <surname>Chernoff</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>28</first_page>
+        <last_page>39</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-1/tb133chernoff-widows</doi>
+        <timestamp>20220509222548</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-1/tb133chernoff-widows.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="backwards1-1"><unstructured_citation>
+          G. Ambrose, P. Harris. The Layout Book. Advanced Level Series. Bloomsbury Academic, 2007.
+        </unstructured_citation></citation>
+        <citation key="elements-2"><unstructured_citation>
+          R. Bringhurst. The Elements of Typographic Style. Hartley &#x0026; Marks, 3rd ed., 2004.
+        </unstructured_citation></citation>
+        <citation key="widowhistory-3"><unstructured_citation>
+          K. Brown. The typographical widow. Bulletin of the New York Public Library 52(1):3&#x2013;25, Jan.   1948. https://hdl.handle.net/2027/uc1.b3310084
+        </unstructured_citation></citation>
+        <citation key="widowhistory2-4"><unstructured_citation>
+          K. Brown. The typographical widow: Encore. Bulletin of the New York Public Library 52(9):458&#x2013;466,   Sept. 1948. https://hdl.handle.net/2027/uc1.b3310084
+        </unstructured_citation></citation>
+        <citation key="backwards3-5"><unstructured_citation>
+          R. Hunt. Advanced Typography: From Knowledge to Mastery. Bloomsbury Publishing, 2020.
+        </unstructured_citation></citation>
+        <citation key="xIsambert:TB31-1-12-6"><unstructured_citation>
+          P. Isambert. Strategies against widows. TUGboat 31(1):12&#x2013;17, 2010. https://tug.org/TUGboat/tb31-1/tb97isambert.pdf
+        </unstructured_citation></citation>
+        <citation key="widow-assist-7"><unstructured_citation>
+          jeremie. Paragraph callback to help with widows/orphans hand tuning,   August 2017. https://tex.stackexchange.com/q/372062
+        </unstructured_citation></citation>
+        <citation key="Knuth:TB10-3-325-8"><unstructured_citation>
+          D.E. Knuth. The new versions of TeX and Metafont. TUGboat 10(3):325&#x2013;328, Nov. 1989. https://tug.org/TUGboat/tb10-3/tb25knut.pdf
+        </unstructured_citation></citation>
+        <citation key="texbook-9"><unstructured_citation>
+          D.E. Knuth. The TeXbook. Addison&#x2013;Wesley, 2021.
+        </unstructured_citation></citation>
+        <citation key="global-10"><unstructured_citation>
+          F. Mittelbach. A general framework for globally optimized pagination. Computational Intelligence 35(2):242&#x2013;284, Mar. 2018. https://doi.org/10.1111/coin.12165
+        </unstructured_citation></citation>
+        <citation key="Mittelbach:2018:MFP-11"><unstructured_citation>
+          F. Mittelbach. Managing forlorn paragraph lines (a.k.a. widows and orphans) in   LaTeX. TUGboat 39(3):246&#x2013;251, 2018. https://tug.org/TUGboat/tb39-3/tb123mitt-widows.pdf
+        </unstructured_citation></citation>
+        <citation key="widows-and-orphans-12"><unstructured_citation>
+          F. Mittelbach. The widows-and-orphans package, March 2021. https://ctan.org/pkg/widows-and-orphans
+        </unstructured_citation></citation>
+        <citation key="old-13"><unstructured_citation>
+          J. Moxon. Mechanick exercises, vol.  2, 1683. https://archive.org/details/mechanickexercis00moxo_0
+        </unstructured_citation></citation>
+        <citation key="oed-line-14"><unstructured_citation>
+          Oxford English Dictionary. line at end of paragraph. https://www.oed.com/view/th/class/195380
+        </unstructured_citation></citation>
+        <citation key="oed-club-15"><unstructured_citation>
+          Oxford English Dictionary. club, n., Sept. 2021. https://www.oed.com/view/Entry/34788
+        </unstructured_citation></citation>
+        <citation key="oed-widow-16"><unstructured_citation>
+          Oxford English Dictionary. widow, n., Dec. 2021. https://www.oed.com/view/Entry/228912
+        </unstructured_citation></citation>
+        <citation key="plass-17"><unstructured_citation>
+          M.F. Plass. Optimal pagination techniques for automatic typesetting   systems. Ph.D. thesis, Stanford University, 1981. https://tug.org/docs/plass/plass-thesis.pdf
+        </unstructured_citation></citation>
+        <citation key="backwards2-18"><unstructured_citation>
+          I. Saltz. Typography Essentials Revised and Updated. Rockport Publishers, 2019.
+        </unstructured_citation></citation>
+        <citation key="xThanh:2000:MTE-19"><unstructured_citation>
+          H&#x00E0;n Th&#x1EBF; Th&#x00E0;nh. Micro-typographic extensions to the TeX typesetting system. TUGboat 21(4):317&#x2013;317, Dec. 2000. https://tug.org/TUGboat/tb21-4/tb69thanh.pdf
+        </unstructured_citation></citation>
+        <citation key="etex-20"><unstructured_citation>
+          The NTS Team. The &#x03B5;-TeX manual, Feb. 1998. https://ctan.org/pkg/etex
+        </unstructured_citation></citation>
+        <citation key="Wermuth:2018:ECP-21"><unstructured_citation>
+          U. Wermuth. Experiments with &#x005C;parfillskip. TUGboat 39(3):276&#x2013;303, 2018. https://tug.org/TUGboat/tb39-3/tb123wermuth-parfillskip.pdf
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>From the president</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Boris</given_name>
+          <surname>Veytsman</surname>
+          <ORCID>https://orcid.org/0000-0003-4674-8113</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>3</first_page>
+        <last_page>3</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-1/tb133pres</doi>
+        <timestamp>20220509222548</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-1/tb133pres.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Editorial comments</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Barbara</given_name>
+          <surname>Beeton</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>4</first_page>
+        <last_page>6</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-1/tb133beet</doi>
+        <timestamp>20220509222548</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-1/tb133beet.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title><tt>l3build</tt>: The beginner's guide</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Joseph</given_name>
+          <surname>Wright</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>40</first_page>
+        <last_page>43</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-1/tb133wright-l3build</doi>
+        <timestamp>20220509222548</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-1/tb133wright-l3build.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title><tt>bib2gls</tt>: standalone entries and repeated lists (a little book of poisons)</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Nicola</given_name>
+          <surname>Talbot</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>44</first_page>
+        <last_page>58</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-1/tb133talbot-bib2gls-reorder</doi>
+        <timestamp>20220509222548</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-1/tb133talbot-bib2gls-reorder.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="multicol-1"><unstructured_citation>
+          F. Mittelbach. The multicol package, 2021. https://ctan.org/pkg/multicol.
+        </unstructured_citation></citation>
+        <citation key="hyperref-2"><unstructured_citation>
+          S. Rahtz, H. Oberdiek, The LaTeX3 Project. The hyperref package, 2021. https://ctan.org/pkg/hyperref.
+        </unstructured_citation></citation>
+        <citation key="stevens-3"><unstructured_citation>
+          S. Stevens, A. Bannon. Book of Poisons: A guide for writers. Howdunit. Writer&#x2019;s Digest Books, 1st ed., 2007.
+        </unstructured_citation></citation>
+        <citation key="samplebibfiles-4"><unstructured_citation>
+          N. Talbot. Sample bib files.  https://dickimaw-books.com/latex/tugboat-bib2gls.
+        </unstructured_citation></citation>
+        <citation key="tugboat2020-5"><unstructured_citation>
+          N. Talbot. bib2gls: selection, cross-references and locations. TUGboat 41(3), 2020. https://tug.org/TUGboat/tb41-3/tb129talbot-bib2gls-more.pdf.
+        </unstructured_citation></citation>
+        <citation key="bib2gls-6"><unstructured_citation>
+          N. Talbot. bib2gls: Command line application to convert .bib   files to glossaries-extra.sty resource files, 2021. https://ctan.org/pkg/bib2gls.
+        </unstructured_citation></citation>
+        <citation key="tugboat2021-7"><unstructured_citation>
+          N. Talbot. bib2gls: sorting. TUGboat 42(2), 2021. https://tug.org/TUGboat/tb42-2/tb129talbot-sorting.pdf.
+        </unstructured_citation></citation>
+        <citation key="glossaries-extra-8"><unstructured_citation>
+          N. Talbot. The glossaries-extra package, 2021. https://ctan.org/pkg/glossaries-extra.
+        </unstructured_citation></citation>
+        <citation key="glossaries-9"><unstructured_citation>
+          N. Talbot. The glossaries package, 2021. https://ctan.org/pkg/glossaries.
+        </unstructured_citation></citation>
+        <citation key="mfirstuc-10"><unstructured_citation>
+          N. Talbot. The mfirstuc package, 2021. https://ctan.org/pkg/mfirstuc.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Transparent file I/O using the original TeX program and the plain TeX format</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Udo</given_name>
+          <surname>Wermuth</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>59</first_page>
+        <last_page>72</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-1/tb133wermuth-trio</doi>
+        <timestamp>20220509222548</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-1/tb133wermuth-trio.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="citeLEET-1"><unstructured_citation>
+          Stephen Checkoway, Hovav Shacham, and Eric Rescorla,    &#x201c;Are Text-Only Data Formats Safe? Or, Use This LaTeX Class File To    Pwn Your Computer&#x201d;, Proceedings of LEET &#x2019;10, USENIX (2010), 8 pp. https://www.usenix.org/legacy/events/leet10/tech/full_papers/Checkoway.pdf   
+        </unstructured_citation></citation>
+        <citation key="citeCSR-2"><unstructured_citation>
+          Stephen Checkoway, Hovav Shacham, and Eric Rescorla,    &#x201c;Don&#x2019;t take LaTeX files from strangers&#x201d;,    ;LOGIN: 35:1 (2010), 17&#x2013;22. https://www.usenix.org/system/files/login/articles/73506-checkoway.pdf   
+        </unstructured_citation></citation>
+        <citation key="citeXdvi-3"><unstructured_citation>
+          Eric Cooper, Bob Scheifler, Mark Eichin, Paul Vojta, et al.,    Xdvi man page, Xdvik version 22.87.04, February 29, 2020, 34 pp. https://tug.org/texlive/Contents/live/texmf-dist/doc/man/man1/xdvi.man1.pdf   
+        </unstructured_citation></citation>
+        <citation key="citeDHD-4"><unstructured_citation>
+          Wouter Duivesteijn, Sibylle Hess, Xin Du,    &#x201c;How to cheat the page limit&#x201d;,    WIREs Data Mining and Knowledge Discovery 2020;10:e1361, 9 pp. https://doi.org/10.1002/widm.1361   
+        </unstructured_citation></citation>
+        <citation key="citeMD-5"><unstructured_citation>
+          Markus D&#x00FC;rmuth, Novel Classes of Side Channels    and Covert Channels, Ph.D. thesis, Saarland University,    Saarbr&#x00FC;cken (2009), 146 pp. https://publikationen.sulb.uni-saarland.de/bitstream/20.500.11880/26018/1/Dissertation_1920_Duer_Mark_2009.pdf   
+        </unstructured_citation></citation>
+        <citation key="citeCTvA-6"><unstructured_citation>
+          Donald E. Knuth, The TeXbook,    Volume A of Computers &amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1984.
+        </unstructured_citation></citation>
+        <citation key="citeCTvB-7"><unstructured_citation>
+          Donald E. Knuth, TeX: The&#x00A0;Program,    Volume B of Computers &amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1986.
+        </unstructured_citation></citation>
+        <citation key="citeLP-8"><unstructured_citation>
+          Donald E. Knuth, Literate Programming,    Stanford, California: Center for the Study of Language and    Information, CSLI Lecture Notes No. 27, 1992.
+        </unstructured_citation></citation>
+        <citation key="citeDT-9"><unstructured_citation>
+          Donald E. Knuth, Digital Typography,    Stanford, California: Center for the Study of Language and    Information, CSLI Lecture Notes No. 78, 1999.
+        </unstructured_citation></citation>
+        <citation key="citeCP-10"><unstructured_citation>
+          Donald E. Knuth, Companion to the Papers of Donald    Knuth, Stanford, California: Center for the Study of Language and    Information, CSLI Lecture Notes No. 202, 2011.
+        </unstructured_citation></citation>
+        <citation key="citeJL-11"><unstructured_citation>
+          Joachim Lammarsch, &#x201c;VM/CMS site report&#x201d;,    TUGboat 11:3 (1990), 454&#x2013;455. https://tug.org/TUGboat/tb11-3/tb29site.pdf   
+        </unstructured_citation></citation>
+        <citation key="citeGLetal-12"><unstructured_citation>
+          Guilhem Lacombe, Kseniia Masalygina, Anass Tahiri,    Carole Adam, C&#x00E9;dric Lauradoux,    &#x201c;Can You Accept LaTeX Files from Strangers? Ten Years Later&#x201d;,    arXiv:2102.00856v1 [cs.CR], 2021, 10 pp. https://arxiv.org/abs/2102.00856   
+        </unstructured_citation></citation>
+        <citation key="citeMcM-13"><unstructured_citation>
+          Keith Allen McMillan,    A platform independent computer virus, M.Sc. thesis,    University of Wisconsin, Milwaukee (1994), ix+28 pp. ftp://coast.cs.purdue.edu/pub/doc/viruses/KeithMcMillan-PlatformIndependantVirus.ps   
+        </unstructured_citation></citation>
+        <citation key="citeSP-14"><unstructured_citation>
+          Scott Pakin, reply to &#x201c;Malicious commands in LaTeX&#x201d;,    comp.text.tex, August 7, 2008. https://groups.google.com/g/comp.text.tex/c/epWW3eV9udw   
+        </unstructured_citation></citation>
+        <citation key="citeHD-15"><unstructured_citation>
+          Eric S. Raymond with Guy L. Steele Jr., eds.,    The New Hacker&#x2019;s Dictionary, 3rd ed., Cambridge,    Massachusetts: MIT Press, 1996. http://www.catb.org/esr/jargon/   
+        </unstructured_citation></citation>
+        <citation key="citeRH-16"><unstructured_citation>
+          Red Hat Customer Portal:    RHSA-2012:0137 &#x2013; Security Advisory, 15 February 2012. https://access.redhat.com/errata/RHSA-2012:0137   
+        </unstructured_citation></citation>
+        <citation key="citeTR-17"><unstructured_citation>
+          Tomas Rokicki, Dvips: A DVI-to-PostScript Translator,    version 2021.1, February 2021, 62 pp. https://ctan.org/pkg/dvips   
+        </unstructured_citation></citation>
+        <citation key="citeKT-18"><unstructured_citation>
+          Ken Thompson, &#x201c;Reflections on Trusting Trust&#x201d;,    CACM 27:8 (1984), 761&#x2013;763. https://dl.acm.org/doi/pdf/10.1145/358198.358210   
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Robin Fairbairns and UK TUG</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jonathan</given_name>
+          <surname>Fine</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>6</first_page>
+        <last_page>6</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-1/tb133fairbairns-fine</doi>
+        <timestamp>20220509222548</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-1/tb133fairbairns-fine.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The last decade at GUT</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jacques</given_name>
+          <surname>Andr&#xe9;</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Patrick</given_name>
+          <surname>Bideault</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Denis</given_name>
+          <surname>Bitouz&#xe9;</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Michel</given_name>
+          <surname>Bovani</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Thierry</given_name>
+          <surname>Bouche</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Maxime</given_name>
+          <surname>Chupin</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Daniel</given_name>
+          <surname>Flipo</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Yvon</given_name>
+          <surname>Henel</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>7</first_page>
+        <last_page>9</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-1/tb133andre-gut</doi>
+        <timestamp>20220509222548</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-1/tb133andre-gut.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Book reviews: <i>LaTeX Beginner's Guide</i>, second edition, by Stefan Kottwitz</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Sarah</given_name>
+          <surname>Lang</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>73</first_page>
+        <last_page>74</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-1/tb133reviews-kottwitz2</doi>
+        <timestamp>20220509222548</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-1/tb133reviews-kottwitz2.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="k-1"><unstructured_citation>
+          Stefan Kottwitz, LaTeX Beginner&#x2019;s Guide,   second edition. Packt, Birmingham, UK, 2021, 354 pp., softcover,   US$39.99, ISBN 9781801078658.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The treasure chest</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>75</first_page>
+        <last_page>77</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-1/tb133chest</doi>
+        <timestamp>20220509222548</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-1/tb133chest.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TeX Live 2022 news</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>77</first_page>
+        <last_page>77</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-1/tb133berry-tl22news</doi>
+        <timestamp>20220509222548</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-1/tb133berry-tl22news.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TUG Annual General Meeting Procedures</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>TUG Bylaws</given_name>
+          <surname>committee</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>80</first_page>
+        <last_page>80</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-1/tb133agmproc</doi>
+        <timestamp>20220509222548</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-1/tb133agmproc.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TUG financial statements for 2021</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>81</first_page>
+        <last_page>81</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-1/tb133treas</doi>
+        <timestamp>20220509222548</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-1/tb133treas.html</resource>
+      </doi_data>
+    </journal_article>
+  </journal></body>
+</doi_batch>

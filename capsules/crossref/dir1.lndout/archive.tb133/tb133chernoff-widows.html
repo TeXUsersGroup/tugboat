@@ -1,0 +1,76 @@
+<!--#include virtual="/header.html"-->
+<title>Automatically removing widows and orphans with lua-widow-control
+       - TUGboat 43:1 (2022) - TeX Users Group</title>
+</head><body>
+
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+<h1><a href="/TUGboat/tb43-1/">TUGboat 43:1</a> (2022)<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
+
+<p><b>Title</b>: Automatically removing widows and orphans with <tt>lua-widow-control</tt></p>
+
+<p><b>Summary</b>:
+automated removal of widow and orphan lines, without stretching, in all Lua formats.</p>
+
+<p><b>Full text of article</b>: <a href="https://tug.org/members/TUGboat/tb43-1/tb133chernoff-widows.pdf">available to TUG members</a> (<a href="/join.html">join TUG</a>);
+will be publicly available after the next issue is published.</p>
+
+<p><b>Author</b>:
+<a href="/TUGboat/Contents/listauthor.html#Chernoff,Max">Max Chernoff</a></p>
+
+<p><b>Publication</b>: <a href="/TUGboat/tb43-1/">TUGboat
+volume 43, number 1</a> (2022),
+pages&nbsp;28-39</p>
+
+<p><b>DOI</b> (this page):
+<a href="https://doi.org/10.47397/tb/43-1/tb133chernoff-widows">10.47397/tb/43-1/tb133chernoff-widows</a>
+<br><small>(<a href="https://doi.org/10.47397/tb/43-1/tb133bergmann-diagrams">previous doi</a>
+- <a href="https://doi.org/10.47397/tb/43-1/tb133wright-l3build">next doi</a>)</small></p>
+
+<p><b>Category</b>:
+<a href="/TUGboat/Contents/listkeyword.html#CatTAGMethods">Methods</a></p>
+      
+<p><b>Difficulty</b>: Advanced</p>
+
+<p><b>Abstract</b>:
+The lua-widow-control package, for
+plain LuaTeX/LuaLaTeX/ConTeXt/OpTeX,
+removes widows and orphans without any user intervention.
+Using the power of LuaTeX, it does so <em>without</em> stretching any glue
+or shortening any pages or columns. Instead, lua-widow-control
+automatically lengthens a paragraph on a page or column where a widow or
+orphan would otherwise occur.</p>
+<p>To use lua-widow-control, all that most users need do is
+place <tt>&#x005C;usepackage</tt><tt>&#x007B;lua-widow-control&#x007D;</tt> in their preamble. No further
+changes are required.</p>
+
+<p><b>References</b>:</p>
+<ol class="tugbbl">
+<li class="tugbbl">G. Ambrose, P. Harris. The Layout Book. Advanced Level Series. Bloomsbury Academic, 2007.</li>
+<li class="tugbbl">R. Bringhurst. The Elements of Typographic Style. Hartley &#x0026; Marks, 3rd ed., 2004.</li>
+<li class="tugbbl">K. Brown. The typographical widow. Bulletin of the New York Public Library 52(1):3&#x2013;25, Jan. 1948. <a href="https://hdl.handle.net/2027/uc1.b3310084">hdl.handle.net/2027/uc1.b3310084</a></li>
+<li class="tugbbl">K. Brown. The typographical widow: Encore. Bulletin of the New York Public Library 52(9):458&#x2013;466, Sept. 1948. <a href="https://hdl.handle.net/2027/uc1.b3310084">hdl.handle.net/2027/uc1.b3310084</a></li>
+<li class="tugbbl">R. Hunt. Advanced Typography: From Knowledge to Mastery. Bloomsbury Publishing, 2020.</li>
+<li class="tugbbl">P. Isambert. Strategies against widows. TUGboat 31(1):12&#x2013;17, 2010. <a href="https://tug.org/TUGboat/tb31-1/tb97isambert.pdf">tug.org/TUGboat/tb31-1/tb97isambert.pdf</a></li>
+<li class="tugbbl">jeremie. Paragraph callback to help with widows/orphans hand tuning, August 2017. <a href="https://tex.stackexchange.com/q/372062">tex.stackexchange.com/q/372062</a></li>
+<li class="tugbbl">D.E. Knuth. The new versions of TeX and Metafont. TUGboat 10(3):325&#x2013;328, Nov. 1989. <a href="https://tug.org/TUGboat/tb10-3/tb25knut.pdf">tug.org/TUGboat/tb10-3/tb25knut.pdf</a></li>
+<li class="tugbbl">D.E. Knuth. The TeXbook. Addison&#x2013;Wesley, 2021.</li>
+<li class="tugbbl">F. Mittelbach. A general framework for globally optimized pagination. Computational Intelligence 35(2):242&#x2013;284, Mar. 2018. <a href="https://doi.org/10.1111/coin.12165">doi.org/10.1111/coin.12165</a></li>
+<li class="tugbbl">F. Mittelbach. Managing forlorn paragraph lines (a.k.a. widows and orphans) in LaTeX. TUGboat 39(3):246&#x2013;251, 2018. <a href="https://tug.org/TUGboat/tb39-3/tb123mitt-widows.pdf">tug.org/TUGboat/tb39-3/tb123mitt-widows.pdf</a></li>
+<li class="tugbbl">F. Mittelbach. The widows-and-orphans package, March 2021. <a href="https://ctan.org/pkg/widows-and-orphans">ctan.org/pkg/widows-and-orphans</a></li>
+<li class="tugbbl">J. Moxon. Mechanick exercises, vol. 2, 1683. <a href="https://archive.org/details/mechanickexercis00moxo_0">archive.org/details/mechanickexercis00moxo_0</a></li>
+<li class="tugbbl">Oxford English Dictionary. line at end of paragraph. <a href="https://www.oed.com/view/th/class/195380">www.oed.com/view/th/class/195380</a></li>
+<li class="tugbbl">Oxford English Dictionary. club, n., Sept. 2021. <a href="https://www.oed.com/view/Entry/34788">www.oed.com/view/Entry/34788</a></li>
+<li class="tugbbl">Oxford English Dictionary. widow, n., Dec. 2021. <a href="https://www.oed.com/view/Entry/228912">www.oed.com/view/Entry/228912</a></li>
+<li class="tugbbl">M.F. Plass. Optimal pagination techniques for automatic typesetting systems. Ph.D. thesis, Stanford University, 1981. <a href="https://tug.org/docs/plass/plass-thesis.pdf">tug.org/docs/plass/plass-thesis.pdf</a></li>
+<li class="tugbbl">I. Saltz. Typography Essentials Revised and Updated. Rockport Publishers, 2019.</li>
+<li class="tugbbl">H&#x00E0;n Th&#x1EBF; Th&#x00E0;nh. Micro-typographic extensions to the TeX typesetting system. TUGboat 21(4):317&#x2013;317, Dec. 2000. <a href="https://tug.org/TUGboat/tb21-4/tb69thanh.pdf">tug.org/TUGboat/tb21-4/tb69thanh.pdf</a></li>
+<li class="tugbbl">The NTS Team. The &#x03B5;-TeX manual, Feb. 1998. <a href="https://ctan.org/pkg/etex">ctan.org/pkg/etex</a></li>
+<li class="tugbbl">U. Wermuth. Experiments with &#x005C;parfillskip. TUGboat 39(3):276&#x2013;303, 2018. <a href="https://tug.org/TUGboat/tb39-3/tb123wermuth-parfillskip.pdf">tug.org/TUGboat/tb39-3/tb123wermuth-parfillskip.pdf</a></li>
+</ol>
+
+<hr><small><a href="/TUGboat/">TUGboat</a> 43:1, 2022 (<a href="/TUGboat/tb43-1/">issue 133</a>)
+&nbsp; [generated 2022-05-09]
+</small><br><!--#include virtual="/footer.html"-->

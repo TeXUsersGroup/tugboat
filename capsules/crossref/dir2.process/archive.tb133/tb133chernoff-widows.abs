@@ -1,0 +1,11 @@
+    The \textsf{lua-widow-control} package, for
+    plain~Lua\TeX\slash{}\LuaLaTeX\slash{}\ConTeXt\slash{}\OpTeX{},
+    removes widows and orphans without any user intervention.
+    Using the power of Lua\TeX{}, it does so \emph{without} stretching any glue
+    or shortening any pages or columns. Instead, \textsf{lua-widow-control}
+    automatically lengthens a paragraph on a page or column where a widow or
+    orphan would otherwise occur.
+
+    To use \textsf{lua-widow-control}, all that most users need do is
+    place \cs{usepackage}\tubbraced{lua-widow-control} in their preamble. No further
+    changes are required.

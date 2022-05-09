@@ -1,0 +1,34 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{1}
+
+\bibitem{xMaggi:2020:DBP}
+C.~Maggi.
+\newblock The {DuckBoat}{\Dash}{Beginners' Pond}: You do not need to be {Neo}
+  to cope with a {\TikZ} matrix.
+\newblock \emph{TUGboat} 41(1):20--25, 2020.
+\newblock \url{https://tug.org/TUGboat/tb41-1/tb127duck-matrix.pdf}
+
+\bibitem{marmotghost}
+marmotghost.
+\newblock {\emph{Bounding boxes for B\'{e}zier curves}}.
+\newblock
+  \url{https://mirrors.ctan.org/graphics/pgf/contrib/tikz-bbox/pgfmanual4bbox.pdf}.
+  \newline Package page: \url{https://ctan.org/pkg/tikz-bbox}.
+
+\bibitem{stoffel}
+A.~Stoffel.
+\newblock \{{\texttt{tikzcd}\}\Dash \emph{Commutative diagrams with \TikZ.
+  Version 1.0.}}
+\newblock
+  \\\url{https://mirrors.ctan.org/graphics/pgf/contrib/tikz-cd/tikz-cd-doc.pdf}.
+  \newline Package page: \url{https://ctan.org/pkg/tikz-cd}.
+
+\bibitem{tantau}
+T.~Tantau.
+\newblock {\emph{The TikZ and PGF packages. Manual for Version 3.1.9a}}.
+\newblock \url{https://mirrors.ctan.org/graphics/pgf/base/doc/pgfmanual.pdf}.
+  \newline Package page: \url{https://ctan.org/pkg/pgf}.
+
+\end{thebibliography}
