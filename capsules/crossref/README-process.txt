@@ -2,14 +2,15 @@ $Id$
 Detailed steps for TUGboat -> crossref processing. Public domain.
 Originally written 2021 Karl Berry.
 
-First, in each dir?.*, preserve files from previous issue:
+First, in each dir?.*, preserve files from previous issue,
+if not already done:
   nnn=...
   for d in dir{0,1,2}.*; do (cd $d && echo $d && mkdir archive.tb${nnn} \
                              && mv tb${nnn}* archive.tb${nnn}); done
 and then
   svn add dir?.*/archive.tb${nnn}
   svn commit
-Use archive.* so completion on "tb" works for current files.
+We use archive.* so completion on "tb" works for current files.
 
 We'll work in the capsules/ directory:
   cd ..
@@ -20,21 +21,30 @@ test processing of it.
 Then, systematically go through all items in the issue, creating (by
 hand) abs.tex files for the abstracts and bbl.tex files for the
 bibliographies, translating as necessary to standard TUGboat and LaTeX
-formatting, e.g., using \bibitem even in hand-written bibliographies.
-These {abs,bbl}.tex files stay in the TUGboat source directory.
+formatting, e.g., using \bibitem (with a meaningful key; ends up in
+issue.xml) and \end{thebibliography} even in hand-written
+bibliographies. These {abs,bbl}.tex files stay in the TUGboat article
+source directories.
 
-If an article uses BibTeX, the .bbl file can be copied to
-bbl.tex as the starting place. If an article has no bibliography, don't
-create a bbl.tex. If an article has no abstract, write a summary if it
-needs it, or if the one-line description from the capsule suffices, fine.
+If an article uses BibTeX, the .bbl file can be copied to bbl.tex as the
+starting place. If an article has no bibliography, don't create a
+bbl.tex. If an article has no abstract, write a summary if it needs it,
+or if the one-line description from the capsule suffices, fine.
 
 Best to do it one article at a time, making sure each comes out ok.
 Run:
   make cro-scratch  # in capsules directory
+Be sure crossref_iss in capsules/Makefile is set to the current/desired issue,
+per README-tug-procedures.
+
+The landing files output will be in
+  file://.../tubprod/svn/capsules/crossref/dir1.lndout/tb*.html
+and the XML file for Crossref in:
+  .../dir2.process/issue.xml
+
 There has to be at least one abs.tex and one bbl.tex or the program will
 bail out early, so might have to create them for more than one article
-to begin.  Be sure crossref_iss in capsules/Makefile is set to the
-current/desired issue.
+to begin (or do first an article with both). 
 
 The make will probably fail due to unprocessed TeX commands remaining in
 the output files, dir2.process/issue.xml and dir1.lndout/*.html. We want
@@ -62,16 +72,21 @@ translating something that will probably never come up again.
 
 To retry after code changes (still no hand editing), again run:
   make cro-scratch
-The "scratch" means that the files where hand-editing does take place,
-in dir2.process, are assumed *not* to be so edited, and thus *removed*.
+The "scratch" means that the files where hand-editing might take place,
+in dir2.process, are assumed *not* to be so edited, and are thus *removed*.
 This is so we can fix things in the abs/bbl.tex in the TUGboat source
 directory, and have the changes copied in. The cr-do-issue scripts
 reports on files that are preserved vs. copied.
 
-If any hand editing in dir2.process is needed, the "cro-preserve" target
+If the url field in the capsule.txt file does not match the filename,
+cr-do-issue will mysteriously fail since the landing.html file for that
+article will not exist. It is best to check for this in advance with
+--webroot; see README-tug-procedures.
+
+If any hand editing in dir2.process is necessary, the "cro-preserve" target
 must be used instead of "cro-scratch", else the hand edits will be lost.
 If possible, it is simpler to do all editing in the TUGboat source dir
-(and thus cro-scratch), and never hand-edit the generated files.
+(and thus use cro-scratch), and never hand-edit the generated files.
 
 These runs include only those files for which there are {bbl,abs}.tex
 files present in the TUB source directory. To see which those were:
@@ -84,11 +99,18 @@ Then can check the relevant files at:
   file://.../tubprod/svn/capsules/crossref/dir1.lndout/...
 And/or you can go through the directory listing at any time.
 
+cr-landing-bbl-abs converts abstracts to HTML (ltx2unitxt --html), but
+copies bbls as plain text from previously-created issue.xml (created by
+ltx2crossrefxml via crossref/Makefile, target issue). In the bbls, the
+only formatting attempted for the landing .html files is to make urls
+(recognized from plain text) live.
+
 Then repeat until all articles are done.
 
 Reminder: besides checking the .html landing files, it is also necessary
-to check the generated issue.xml, especially the bibliography, title,
-and author text. It should be the same as in the landing files, but ...
+to check the generated dir2.process/issue.xml, especially the
+bibliography, title, and author text. It should be the same as in the
+landing files, but ...
 
  When all articles are done, and the issue.xml looks ok, can upload to
 crossref for them to validate it:
@@ -104,7 +126,7 @@ Can also check results online:
 After the test upload succeeds, when ready to make the issue VV:N live,
 first remake the landing files so the doi links go through doi.org
 (i.e., without the "make crw" step):
-  make cro-scratch  # once again
+  make cro-scratch  # once again, without crw
 
 And then copy the final landing files to the live web directory:
   host=tug.org
@@ -116,9 +138,9 @@ And then copy the final landing files to the live web directory:
 Then check results at:
   https://tug.org/TUGboat/tbVV-N/tbnnnwhatever.html
 
-Then, when ready to make the pdfs public, do the production crossref
-upload. It costs money to register dois, so don't do it until ready, so
-you have to edit crossref/Makefile to enable it:
+Then, when close enough to making the pdfs public, do the production
+crossref upload. It costs money to register dois, so you have to edit
+crossref/Makefile to enable it:
   # temporarily delete "checkme!" from crossref/Makefile
   make upload-real  # in crossref subdirectory
   # undo Makefile edit
@@ -132,7 +154,19 @@ Can check status at https://doi.crossref.org.
 
 Then install pdfs, per README-tug-procedures.
 
+Then commit any changes to our source files:
+ cd ~tubprod/svn/capsules
+ svn status
+ # make entries in ChangeLog 
+ svn commit ...
+
 Then archive all the files:
+  # if working on another machine, copy final abs/bbl to tug:
+  cd ~tubprod/VV-N
+  tar czf absbbl.tgz */abs.tex */bbl.tex
+  scp absbbl.tgz $host: # and unpack
+  #
+  # svn commit the various files.
   cd crossref
   nnn=...
   svn mkdir dir0.capout/archive.tb$nnn
@@ -154,12 +188,12 @@ Then archive all the files:
   #
   svn add */*tb${nnn}/*
   svn status
-  svn commit -m"tb$nnn uploaded files archived"
+  svn commit -m"tb$nnn uploaded files archived" dir*
 
  Updating past issues: when an issue is published, the previous issue
 becomes fully public. Therefore we need to update the landing pages to
 say "publicly available now". This is irritating, but it seems useful
-enough to state explicitly whether an article is public or not to put up
+enough to state explicitly whether or not an article is public to put up
 with it. To do this:
 
 - ensure that tbPREVNcapsule.txt is up to date, without /members/ urls.
@@ -177,7 +211,7 @@ make diff-land  # need to fix /tb directory name
 
 - assuming ok, scp landing files as above, ideally only the changed ones.
 
- If there were hand edits in the crossref/dir2.process directory
+= If there were hand edits in the crossref/dir2.process directory
 (hopefully not), have to take more care.
 - in capsules/crossref/dir*, move away existing files, to preserve any
   hand edits, and then
@@ -200,4 +234,4 @@ in Makefile, change the xml_output assignment to the issue-corr.xml file.
 make upload-test
 if ok, make upload-real
 
-There is no charge for updating metadata, so do what's needed.
+There is no charge for updating metadata, so do this as needed.

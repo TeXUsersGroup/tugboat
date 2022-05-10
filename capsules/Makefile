@@ -3,7 +3,9 @@
 
 debug = #-D #-D
 options = $(debug) #--stdout
-more_options = #--webroot=/ # disable url validation during doi setup
+more_options =
+#more_options = --webroot=~tubprod/43-1/webdir  # desired: do local validation
+#more_options = --webroot=/ # disable url validation during doi setup
 
 # profiling.
 #profopt = -d:NYTProf
@@ -19,9 +21,9 @@ default check: one #all-diff
 
 # These issue values, and most of the targets below, come into play with
 # publishing a TUGboat issue; see the README.karl file on tug.org.
-testiss = 132
-lastiss = 132
-crossref_iss = 130
+testiss = 133
+lastiss = 133
+crossref_iss = 133
 
 # use different temp dir on different machines.
 mydir := $(shell ls ~karl/public_html 2>/dev/null)
@@ -76,7 +78,7 @@ cro-clean: cro-scratch-clean
 	rm -f $(cr_lndout)/tb$(crossref_iss)*
 
 # kludge to replace doi urls with local urls, so we can easily click
-# through the list of "next doi" links before uploading.
+# through the sequence of "next doi" links before uploading.
 crw:
 	cd $(cr_lndout) && perl -pi.bak -e 's,"https://doi.org/10.47397/tb/..-./(.*?)","$$1.html",g' *.html
 

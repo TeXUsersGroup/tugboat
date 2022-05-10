@@ -1,3 +1,18 @@
+2022-05-09  Karl Berry  <karl@freefriends.org>
+
+	* README-process.txt: doc for \bibitem, source commits.
+	* ltx2crossrefxml-tugboat.cfg (\ninesl): remove.
+	(\AW, \NTS, \TP, \Thanh): handle.
+	(\biburl, \endbib): handle for wermuth bibs.
+	(\cs, \tubbraced): don't output HTML, since fails in plain text;
+	need to differentiate by output format.
+	(\tb[sh]url): eliminated duplicated protocols, since the macro
+	does too (now).
+	(\CandT, \eTeX): new, different HTML and plain text.
+	(\begin, \end, \item): simplistically handle itemize and enumerate;
+	should move to bibtexperllibs.
+	(\hspace, \vspace): remove; should also move to bibtexperllibs.
+
 2021-11-24  Karl Berry  <karl@freefriends.org>
 
 	* README-process.txt: doc.

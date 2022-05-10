@@ -164,8 +164,9 @@ sub url_validate {
   return if $::OPT{webroot} eq "/";
   
   $url =~ s,^https?://(www\.)?tug\.org,,; # remove leading protocol+host
-  $url =~ s,#[a-z]+$,,;    # remove trailing anchor
-  return if $url !~ m,^/,; # can't check ctan, etc., only files.
+  $url =~ s,#[a-z]+$,,;      # remove trailing anchor
+  return if $url !~ m,^/,;   # can't check ctan, etc., only files.
+  return if $url =~ m,^/l/,; # can't check our /l/ shortcuts
   #
   my $file = "$::OPT{webroot}/$url";
   if ($url =~ m,/$,) {

@@ -1,3 +1,16 @@
+2022-05-09  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (more_options): show example of local validation.
+	(testiss,lastiss,crossref_iss): 133.
+	
+	* capin.pl (url_validate): don't try to check our /l/ shortcuts.
+
+	* cr-landing-bbl-abs (update_landing_abs): if unable to open
+	<landing>.html, give clue that it's likely a url mismatch between
+	capsule.txt and actual filename.
+	
+	* tb133capsule.txt: tb43-1 published.
+
 2022-05-08  Karl Berry  <karl@freefriends.org>
 
 	* tb77capsule.txt,

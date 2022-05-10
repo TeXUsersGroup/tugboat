@@ -196,7 +196,8 @@ sub update_landing_abs {
   for my $abs (glob ("$landing_dir/*.abs")) {
     (my $landing_fname = $abs) =~ s/\.abs$/.html/;
     open (my $landing_fh, $landing_fname)
-    || die "open($landing_fname) failed: $!";
+    || die ("open($landing_fname) failed: $!\n"
+            . "  (perhaps url mismatch between capsule.txt and filename?)");
     
     (my $article = $abs) =~ s,.*/,,;
     my $temp_fname = "$landing_dir/$article.temp";
