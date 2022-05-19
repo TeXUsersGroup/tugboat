@@ -21,8 +21,8 @@
 %% $Id$
 
 \def\thistubstyle{plain}
-\def\fileversion{v1.26}
-\def\filedate{2022-03-12}
+\def\fileversion{v1.27}
+\def\filedate{2022-05-19}
 
 % general items
 
@@ -507,6 +507,7 @@
 \newif\iftubsecondcolstart % we'll add if ever needed for plain
 \newif\iftubfinaloption    % set in tugboat.dates
 \def\tbsurl#1{{\tt #1}}    % we don't try to have live urls in plain
+\def\tbhurl#1{{\tt #1}}    % we don't try to have live urls in plain
 \def\scriptsize{\let\rm=\sevenrm \font\tt=cmtt8 at 7pt % fake 7pt match LaTeX
                 \baselineskip=8pt \relax} % fake
 \def\@empty{}
@@ -1720,7 +1721,7 @@
 %  The \@Additions... register above should be used whenever another
 %  character is declared to be special for some purpose.  E.g.,
 %  we will use the | for the short-form |...| verbatim notation.
-%  Since the | is generally active for this purpose, it's category
+%  Since the | is generally active for this purpose, its category
 %  won't get changed to \other for use in \verbatim...\endverbatim
 %  unless we add it via this mechanism.
 
@@ -2241,6 +2242,13 @@
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+1.27      19 May 22   \tbhurl belatedly defined.
+
+1.26      12 Mar 22   DOI support; define \@, \OpTeX; reduce \ttrightskip;
+                      author separator always comma, no "and";
+                      support \acro in all point sizes and all font variants;
+                      macro cleanups.
+
 1.25      12 Jun 19   \tenpoint \rm: reset \sl to \tensl,
                       since the \tenpoint \bf changes it to \tenbfsl.
 
