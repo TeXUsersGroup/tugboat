@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2022-04-10 v2.26
+                   [2022-05-19 v2.27
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -347,7 +347,9 @@
 % \texttt{draft} option above. If \texttt{hyperref} is not loaded,
 % define our own trivial fallback to expand to the \TeX\ (first) argument.
 % 
-% Similarly, disable \acro if we have hyperref, commonly used in sections.
+% Similarly, disable \acro and more if we have \texttt{hyperref},
+% so section titles using them don't cause useless warnings.
+% 
 %    \begin{macrocode}
 \AtBeginDocument{%
   \ifx\undefined\texorpdfstring
@@ -707,8 +709,19 @@
 \def\DVItoVDU{DVIto\kern-.12em VDU}
 \def\ECMA{\acro{ECMA}}
 \def\EPS{\acro{EPS}}
-% no line break at this hyphen please
-\DeclareRobustCommand{\eTeX}{\ensuremath{\varepsilon}\mbox{-}\kern-.125em\TeX}
+% no line break at this hyphen please, and try to get a bold \varepsilon.
+\def\TUBdefaulteTeX{\ensuremath{\varepsilon}\mbox{-}\kern-.125em\TeX}%
+\DeclareRobustCommand{\eTeX}{%
+  \ifx\f@series\bfseries@rm
+    \ifx\boldsymbol\undefined % \boldsymbol is from amsmath; also support bm?
+      \TUBdefaulteTeX
+    \else
+      \ensuremath{\boldsymbol{\varepsilon}}\mbox{-}\kern-.125em\TeX
+    \fi
+  \else
+    \TUBdefaulteTeX
+  \fi
+}
 \DeclareRobustCommand{\ExTeX}{%
   \ensuremath{\textstyle\varepsilon_{\kern-0.15em\cal{X}}}\kern-.2em\TeX}
 \def\FAQ{\acro{FAQ}}
@@ -945,7 +958,7 @@
 % end of a sentence. As in: 
 % |... whatever. \cite{foo}\tubsentencespace|
 % This happens when, e.g., the reference applies to more than the final
-% sentence.  Also can be needed in \cs{@} cannot be used because the
+% sentence.  Also can be needed when \cs{@} cannot be used because the
 % sentence-ending punctuation itself occurs inside a control sequence
 % that prevents it.
 % 
@@ -1245,8 +1258,8 @@
 % turn on expl syntax for the main definitions of \tb[sh]url.  We want
 % to auto-remove an explicit protocol in case it
 % was given. Only the correct protocol is removed, the incorrect
-% protocol (\tbsurl{http://}) generates an invalid link.  That's ok
-% because the link wouldn't be correct anyway.
+% protocol (\verb|\tbsurl{http://}|) generates an invalid link.  That's ok
+% because the link wouldn't work anyway.
 \ExplSyntaxOn
 \def\tbsurl@#1  % https
  {
@@ -2779,9 +2792,24 @@
 % Getting named references is then just like getting page references in
 % the \LaTeX\ kernel (see |ltxref.dtx|).
 %
+% The above was written by RobinF decades ago; the macros in \TUB\ were
+% never changed. Meanwhile, the \cs{nameref} in \texttt{hyperref} has
+% changed many times, and we want to use its version if available. So we
+% provide our \cs{nameref} \cs{AtBeginDocument}, so as not to overwrite
+% any previous version. Until May 2022, \texttt{hyperref} silently
+% overwrote an existing definition, that is, \TUB's. But now it is no
+% longer silent.
+%
+% It seems that all the internal definitions above do not cause
+% problems, so just let them alone.
+% 
 %    \begin{macrocode}
-\DeclareRobustCommand{\nameref}[1]{\expandafter\@setref
-  \csname r@nr@#1\endcsname\@secondoftwo{#1}}
+\AtBeginDocument{%
+  \providecommand\nameref[1]{%
+    \expandafter\@setref
+    \csname r@nr@#1\endcsname\@secondoftwo{#1}%
+  }%
+}
 %    \end{macrocode}
 %
 % \subsection{Float captions}

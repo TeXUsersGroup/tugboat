@@ -614,7 +614,7 @@ and of course the class sources are the ultimate reference.
       \verb|\ConTeXt|   & \ConTeXt \\
       \verb|\Cplusplus| & \Cplusplus \\
       \verb|\CTAN|   & \CTAN \\
-      \verb|\eTeX|   & \eTeX \\
+      \verb|\eTeX|   & \eTeX\\
       \verb|\FAQ|    & \FAQ \\
       \verb|\HTML|   & \HTML \\
       \verb|\ISBN|   & \ISBN \\
@@ -648,9 +648,8 @@ paper.
 
 \subsection{Assorted other markup}
 
-A small list of special typesetting commands follows: a large set of
-such commands is defined in the classes, but the list covers most of
-the `everyday' ones.
+A small list of special typesetting commands follows; a larger set of
+such commands is defined in the classes.
 \begin{cmdlist}\raggedright
 \item[\Dash] Typeset an em-dash, ignoring preceding and following space,
   surrounded by thin spaces, only breakable \emph{after} the dash; this
@@ -668,7 +667,6 @@ the `everyday' ones.
 %\item[\sfrac{num}{denom}] Typeset a fraction to match running text;
 %  for example \verb|\sfrac{3}{4}| is set as \sfrac{3}{4}\,.
 \end{cmdlist}
-
 For commands to typeset urls, see section~\ref{sec:urls}.
 
 \section{Use of packages}
@@ -684,12 +682,9 @@ zip or other archive.
 In general, packages currently on \CTAN, and known to work with
 \emph{current} \LaTeX{} are likely to be fine. In particular,
 the team is happy to accept papers using packages that are supported by
-members of the \LaTeX\ team,\footnote{%
+members of the \LaTeX\ team.\footnote{%
   Those in the \LaTeX{} base distribution, or one of those in the
-  \CTANref{packages} sub-tree on \CTAN.} subject to the warning already
-mentioned (section~\ref{sec:verbatim}): that use of the standard
-\pkgname{verbatim} package eliminates the special \envname{verbatim}
-facilities provided by the \TUB\ classes.
+  \CTANref{packages} sub-tree on \CTAN.}
 
 \tug{} has a policy that macro packages described in \TUB{} should be
 available for readers to use. Since typing macros from printed sources
@@ -712,7 +707,6 @@ Although not necessarily recommended in all cases, many additional
 packages are commonly used. To mention a few:
 \begin{description}
 \item[microtype] can help reduce overfull boxes and improve appearance;
-\item[lmodern] use the Latin Modern fonts, sometimes preferable;
 \item[hyperref] supports live and internal hyperlinks, outlines, and
 many other features.
 \end{description}
@@ -966,7 +960,6 @@ different (as discussed in section~\ref{sec:syntax}); arguments are
 (almost always) enclosed in braces instead of the various
 forms provided by the `plain' macros.
 
-\newpage
 \SetBibJustification{\raggedright}
 \bibliographystyle{tugboat}
 \bibliography{tubguide}

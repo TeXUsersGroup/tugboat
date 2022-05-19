@@ -3,13 +3,12 @@ This file records noteworthy changes.  This file is public domain.
 
 ltugboat.cls:
 - \tbsurlfootnote, \tbhurlfootnote: typeset urls in ragged-right
-footnotes of their own.
-
+  footnotes of their own.
 - \tubsentencespace: force a sentence-ending space, e.g., after a
-post-sentence \cite.
-
+  post-sentence \cite.
 - \tubjustifiedpar: undo ragged-right or other, restoring normal
-paragraph settings.
+  paragraph settings.
+- \eTeX: use \boldsymbol if available.
 
 -----------------
 2.26 (2021-10-12):

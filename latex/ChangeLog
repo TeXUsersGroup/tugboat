@@ -1,3 +1,14 @@
+2022-05-19  Karl Berry  <karl@freefriends.org>
+
+	* version 2.27 (2022-05-19) uploaded to CTAN.
+
+	* tugboat.dtx (\eTeX): use \boldsymbol if available.
+	
+	* tugboat.dtx (\nameref): only define \AtBeginDocument,
+	to avoid overwriting warning from new hyperref.
+	
+	* ltubguid.ltx: wording.
+
 2022-04-10  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\tbsfootnoteurl, \tbhfootnoteurl): new definitions,
