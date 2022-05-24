@@ -1,5 +1,12 @@
 2022-05-24  Karl Berry  <karl@freefriends.org>
 
+	* lists-translations.txt (\GUT): remove too; whether it means
+	"GUT" vs. "GUTenberg" is too confusing.
+	* tb133capsule.txt,
+	* tb132capsule.txt: spell out GUTenberg.
+
+2022-05-24  Karl Berry  <karl@freefriends.org>
+
 	* tb133capsule.txt (novotny-markdown): missed co-authors.
 
 	* tb120capsule.txt: link to transcript of CHM DTP meeting.
