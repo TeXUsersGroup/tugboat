@@ -1428,9 +1428,9 @@ FUNCTION {ctan}
   new.block
   format.title "title" output.check
   format.version output
-  format.date.direct "date" output.check
+  format.date.direct output
   new.block
-  note "note" output.check
+  note output
   fin.entry
 }
 

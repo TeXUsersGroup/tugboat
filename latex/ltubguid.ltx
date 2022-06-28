@@ -832,8 +832,10 @@ worry about them.
 \end{itemize}
 
 If you use \BibTeX, feel free to take advantage of the accumulated
-bibliography of \TUB{} itself (\url{info/tugboat.bib} on \CTAN), and the
-other compilations by Nelson Beebe in that same directory.
+bibliography of \TUB{} itself
+(\url{mirror.ctan.org/info/biblio/tugboat.bib} on \CTAN, also in \TeX\
+Live, etc.), and the other compilations by Nelson Beebe in that same
+directory.
 
 By the way, we recommending using commas to terminate all fields in
 \texttt{.bib} files, including the last one in an entry. That makes it
@@ -852,6 +854,11 @@ as the present article does, to often achieve somewhat better results.
 
 A last note for references: for \TUB\ issues, please use the format
 \textsl{volno\,:\,issno}, e.g., ``\TUB\ 32:1'' for volume~32, number~1.
+
+Multiple citations: when citing more than one item, please include them
+in a single \cs{cite} command, as in \verb|\cite{foo,bar}|. Also, please
+ensure that the result is in numerical order, so if \texttt{foo} ends up
+as reference `[2]' and \texttt{bar} as `[1]', use \verb|\cite{bar,foo}|.
 
 \subsection{Non-recommended bibliography facilities}
 
