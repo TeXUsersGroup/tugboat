@@ -30,7 +30,7 @@
 \next
 
 \def\fileversion{v1.27}
-\def\filedate{2022-05-19}
+\def\filedate{2022-06-28}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -471,7 +471,7 @@
 \def\sfrac#1/#2{\leavevmode\kern.1em
         \raise.5ex\hbox{\the\scriptfont\z@ #1}\kern-.1em
         /\kern-.15em\lower.25ex\hbox{\the\scriptfont\z@ #2}}
-
+\def\meta#1{$\langle${\it #1\/}$\rangle$}
 \def\thinskip{\hskip 0.16667em\relax}
 \def\endash{--}
 \def\emdash{\endash-}
@@ -1013,6 +1013,8 @@ that may not be obvious.  For full definitions, see real code above.
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+                      (belatedly) add \meta.
+
 1.24       5 Sep 18   \tugboatcmn sentinent, \plusplus separated out.
 
 1.23      19 Mar 17   move \manual and \manualsl to tugboat.sty.

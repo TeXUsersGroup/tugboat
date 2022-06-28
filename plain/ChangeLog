@@ -1,3 +1,10 @@
+2022-06-28  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.cmn (\meta): define.
+	* tugboat.sty (\rfoot): set \tenpoint, not just \tenrm;
+	else \acro can come out wrong according to text at page break.
+	(Found via tb135finston-*.)
+
 2022-05-19  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.sty,
