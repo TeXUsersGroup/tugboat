@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2022-05-19 v2.27
+                   [2022-09-03 v2.27
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -825,6 +825,7 @@
 \def\pcTeX{\leavevmode\raise.5ex\hbox{p\kern-.3\p@ c}\TeX}
 \def\pdflatex{pdf\-\LaTeX}% dtk-logos
 \def\pdftex{pdf\-\TeX}% dtk-logos
+\def\pdfTeX{\pdftex}
 \def\PDF{\acro{PDF}}
 \def\PGF{\acro{PGF}}
 \def\PHP{\acro{PHP}}
@@ -966,6 +967,11 @@
 \def\tubsentencespace{\spacefactor=3000{}\space\ignorespaces}
 %    \end{macrocode}
 % \end{macro}
+%
+\DeclareRobustCommand{\tubdots}{%
+   .\kern\fontdimen3\font
+   .\kern\fontdimen3\font
+   .\kern\fontdimen3\font}
 %
 % \begin{macro}{\allowhyphens}
 % Hyphen control: first, we save (via \cs{edef}) the hyphenpenalties in
@@ -1218,6 +1224,7 @@
 %
 % Use \tt rather than \texttt because italic typewriter is just too ugly,
 % and upright works well enough in both italic and bold contexts.
+% Would be nice to change catcode of _ for LaTeX3.
 \DeclareRobustCommand{\cs}[1]{{\tt \char`\\#1}}
 %
 % This command was defined much later than the others around here, so
@@ -1376,7 +1383,7 @@
 \def\booktitle#1{{\slshape\frenchspacing#1\/}}
 %    \end{macrocode}
 %
-%  \subsection{Dates, volume and issue numbers, etc.}
+% \subsection{Dates, volume and issue numbers, etc.}
 %
 % Dates and other items which identify the volume and issue.
 % \cs{issueseqno} is a sequential issue number starting from the
@@ -2504,41 +2511,47 @@
 %
 % \subsection{Section headings}
 %
-%  Redefine style of section headings to match plain \TUB.
-%  Negative beforeskip suppresses following parindent.  (So
-%  negate the stretch and shrink too).
+% Redefine style of section headings to match plain \TUB.
+% Negative beforeskip suppresses following parindent.  (So
+% negate the stretch and shrink too).
 %
-%  These macros are called \cs{*head} in the plain styles.
+% These macros are called \cs{*head} in the plain styles.
 %
-%  Relaying via \cs{TB@startsection} detects inappropriate use of
-%  \cs{section*}.  Of course, if (when) \emph{we} use it, we need to
-%  avoid that relaying; this can be done by \cs{let}ting
-%  \cs{TB@startsection} to \cs{TB@safe@startsection}, within a group.
+% Relaying via \cs{TB@startsection} detects inappropriate use of
+% \cs{section*}.  Of course, if (when) \emph{we} use it, we need to
+% avoid that relaying; this can be done by \cs{let}ting
+% \cs{TB@startsection} to \cs{TB@safe@startsection}, within a group.
 %
 % First the version for use in the default case, when class option
 % \textsc{numbersec} is in effect.
+% 
+% The \cs{tubsecfmt} macro defines our standard formatting for section
+% titles: ragged right, french spacing, no hyphenation.
+% The \cs{tubsechook} macro allows overriding the defaults.
 %
 %    \begin{macrocode}
 \def\tubsechook{}
+\def\tubsecfmt{\normalsize\bf\raggedright\frenchspacing\nohyphens\tubsechook}
+%
 \if@numbersec
   \def\section{\TB@startsection{{section}%
                                 1%
                                 \z@
                                 {-8\p@ \@plus-2\p@ \@minus-2\p@}%
                                 {4\p@}%
-          {\normalsize\bf\raggedright\hyphenpenalty\@M\tubsechook}}}
+          {\tubsecfmt}}}
   \def\subsection{\TB@startsection{{subsection}%
                                    2%
                                    \z@
                                    {-8\p@ \@plus-2\p@ \@minus-2\p@}%
                                    {4\p@}%
-          {\normalsize\bf\raggedright\hyphenpenalty\@M\tubsechook}}}
+          {\tubsecfmt}}}
   \def\subsubsection{\TB@startsection{{subsubsection}%
                                       3%
                                       \z@
                                       {-8\p@ \@plus-2\p@ \@minus-2\p@}%
                                       {4\p@}%
-          {\normalsize\bf\raggedright\hyphenpenalty\@M\tubsechook}}}
+          {\tubsecfmt}}}
   \def\paragraph{\TB@startsection{{paragraph}%
                                   4%
                                   \z@
@@ -2559,21 +2572,21 @@
                                 \z@
                                 {-8\p@ \@plus-2\p@ \@minus-2\p@}%
                                 {4\p@}%
-          {\normalsize\bf\raggedright\hyphenpenalty\@M\tubsechook}}}
+          {\tubsecfmt}}}
   \def\subsection{\TB@nolimelabel
                   \TB@startsection{{subsection}%
                                    2%
                                    \z@
                                    {-8\p@ \@plus-2\p@ \@minus-2\p@}%
                                    {-0.5em\@plus-\fontdimen3\font}%
-          {\normalsize\bf\raggedright\hyphenpenalty\@M\tubsechook}}}
+          {\tubsecfmt}}}
   \def\subsubsection{\TB@nolimelabel
                      \TB@startsection{{subsubsection}%
                                       3%
                                       \parindent
                                       {-8\p@ \@plus-2\p@ \@minus-2\p@}%
                                       {-0.5em\@plus-\fontdimen3\font}%
-          {\normalsize\bf\raggedright\hyphenpenalty\@M\tubsechook}}}
+          {\tubsecfmt}}}
 \fi
 %    \end{macrocode}
 %
