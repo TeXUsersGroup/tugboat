@@ -1,3 +1,12 @@
+2022-09-03  Karl Berry  <karl@freefriends.org>
+
+	* html2tex-tub: handle eeacute and uuml.
+
+2022-07-02  Karl Berry  <karl@freefriends.org>
+
+	* cahiers.sty (\cgpgno): attempt to handle given en-dashes
+	(\cgart{1--2}), assuming all page numbers are integers.
+
 2022-04-12  Karl Berry  <karl@freefriends.org>
 
 	* make-issue-pages-tub: in gs 9.56.1, -o %03d works,

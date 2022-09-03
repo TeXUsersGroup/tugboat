@@ -94,8 +94,10 @@ sed \
   \
   -e 's/&Eacute;/\\'"'"'E/g' \
   -e 's/&eacute;/\\'"'"'e/g' \
+  -e 's/&aacute;/\\'"'"'a/g' \
   -e 's/&ocirc;/\\^o/g' \
   -e 's/&ouml;/\\"o/g' \
+  -e 's/&uuml;/\\"u/g' \
   -e 's/&#159;/\\v{r}/g' \
   -e 's/&Scaron;/\\v{S}/g' \
   -e 's/&szlig;/\\ss{}/g' \
