@@ -1261,19 +1261,34 @@
 \fi
 }
 %
-% Outside \AtBeginDocument, back at the top level of the dtx,
+% Outside \AtBeginDocument, back at the top level of the dtx, we
 % turn on expl syntax for the main definitions of \tb[sh]url.  We want
 % to auto-remove an explicit protocol in case it
-% was given. Only the correct protocol is removed, the incorrect
-% protocol (\verb|\tbsurl{http://}|) generates an invalid link.  That's ok
-% because the link wouldn't work anyway.
+% was given.
+% 
+% Only the correct protocol is removed; if \verb|http://| is
+% given to \cs{tbsurl}, it is used (and printed) as-is. This is useful
+% so we can do \verb|\let\url\tbsurl| when printing bibliographies.
+% 
+% Giving \verb|https://| to \cs{tbhurl}, on the other hand, generates an
+% invalid link; in practice there's no use for that so we don't bother
+% to check for it.
+% 
 \ExplSyntaxOn
 \def\tbsurl@#1  % https
  {
    \str_set:Nn\l_tmpa_str{#1}
-   \str_remove_once:Nn\l_tmpa_str{https://}   
-   \expandafter\hyper@linkurl\expandafter{\expandafter\Hurl\expandafter
-                                            {\l_tmpa_str}}{https://\l_tmpa_str}
+   \str_if_in:NnTF \l_tmpa_str {http://}
+    { 
+      \expandafter\hyper@linkurl
+       \expandafter{\expandafter\Hurl\expandafter{\l_tmpa_str}}{\l_tmpa_str}
+    }
+    {
+      \str_remove_once:Nn\l_tmpa_str{https://}
+      \expandafter\hyper@linkurl
+        \expandafter{\expandafter\Hurl\expandafter{\l_tmpa_str}}
+                                                          {https://\l_tmpa_str}
+    }
  }
 \def\tbhurl@#1  % http
  {

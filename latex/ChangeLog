@@ -2,6 +2,9 @@
 
 	* tugboat.dtx (\pdfTeX): define, another unnecessary macro people
 	like to use.
+	* tugboat.dtx (\tbsurl@): if url starts with http://, just use it,
+	do not prepend https://. This is so we can \let\url\tbsurl for
+	bibliographies, which sometimes have http urls.
 
 2022-06-28  Karl Berry  <karl@freefriends.org>
 
