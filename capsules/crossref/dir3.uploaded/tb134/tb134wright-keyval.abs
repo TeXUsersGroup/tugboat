@@ -1,0 +1,5 @@
+In the 2022-06 release of the \LaTeX{} kernel, a new built-in approach is
+available for processing options using key--value methods. This is based on the
+\pkg{expl3} module \pkg{l3keys}, which is nowadays built into the kernel. You
+don't, though, need to know anything about \pkg{expl3} to use the new approach:
+everything is made available under standard \LaTeXe{} names.

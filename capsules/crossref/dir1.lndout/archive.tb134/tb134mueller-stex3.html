@@ -1,0 +1,89 @@
+<!--#include virtual="/header.html"-->
+<title>A LaTeX-based ecosystem for semantic/active mathematical documents
+       - TUGboat 43:2 (2022) - TeX Users Group</title>
+</head><body>
+
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+<h1><a href="/TUGboat/tb43-2/">TUGboat 43:2</a> (2022)<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
+
+<p><b>Title</b>: A LaTeX-based ecosystem for semantic/active mathematical documents</p>
+
+<p><b>Summary</b>:
+structured math knowledge; RusTeX, a TeX reimplementation in Rust to support MMT.</p>
+
+<p><b>Full text of article</b>: <a href="https://tug.org/members/TUGboat/tb43-2/tb134mueller-stex3.pdf">available to TUG members</a> (<a href="/join.html">join TUG</a>);
+will be publicly available after the next issue is published.</p>
+
+<p><b>Authors</b>:
+<a href="/TUGboat/Contents/listauthor.html#Mueller,Dennis">Dennis M&#xfc;ller</a>, <a href="/TUGboat/Contents/listauthor.html#Kohlhase,Michael">Michael Kohlhase</a></p>
+
+<p><b>Publication</b>: <a href="/TUGboat/tb43-2/">TUGboat
+volume 43, number 2</a> (2022),
+pages&nbsp;197-201</p>
+
+<p><b>DOI</b> (this page):
+<a href="https://doi.org/10.47397/tb/43-2/tb134mueller-stex3">10.47397/tb/43-2/tb134mueller-stex3</a>
+<br><small>(<a href="https://doi.org/10.47397/tb/43-2/tb134black-xlingpaper">previous doi</a>
+- <a href="https://doi.org/10.47397/tb/43-2/tb134hagen-math">next doi</a>)</small></p>
+
+<p><b>Category</b>:
+<a href="/TUGboat/Contents/listkeyword.html#CatTAGElectronicDocuments">Electronic&#xa0;Documents</a></p>
+      
+<p><b>Difficulty</b>: Advanced</p>
+
+<p><b>Abstract</b>:
+We report on sTeX3&#x2014;a complete redesign and
+reimplementation (using LaTeX3) from the ground up of the
+sTeX ecosystem for semantic markup of
+mathematical
+documents. Specifically, we present:
+<ol>
+<li>The sTeX package that allows declaring
+semantic macros and
+provides a module system for organizing
+and importing semantic macros using logical
+identifiers. Semantic macros allow for annotating
+arbitrary LaTeX fragments, particularly symbolic
+notations and formulae,
+with their functional structure and formal semantics while keeping
+their presentation/layout intact. The module system induces a
+theory-graph-structure on mathematical concepts, reflecting their
+dependencies and other semantic relations.
+<li>The RusTeX system, an implementation of the core TeX engine in Rust. It supports
+converting arbitrary LaTeX documents to XHTML.
+For sTeX3 documents, these are
+enriched with semantic annotations based on the OMDoc ontology.
+<li>An MMT integration: The RusTeX-generated XHTMLcan be
+imported and served by the MMT system (meta-meta-theory or
+meta-meta-tool, depending on desired emphasis) for
+semantically informed
+knowledge management services, e.g. linking symbols
+in formulae to their definitions, or &#x201c;guided tour&#x201d;
+mini-courses
+for any (semantically annotated) mathematical concept/object.
+</ol></p>
+<p>Generally, sTeX3 documents can be made not only <em>interactive</em>
+(by adding semantic services), but also &#x201c;<em>active</em>&#x201d; in that
+they actively adapt to reader preferences and pre-knowledge (if known).</p>
+
+<p><b>References</b>:</p>
+<ol class="tugbbl">
+<li class="tugbbl">E. Gurari, M. Hoftich, et al. TeX4ht. <a href="https://tug.org/tex4ht/">tug.org/tex4ht/</a></li>
+<li class="tugbbl">F. Horozal et al. Combining Source, Content, Presentation, Narration, and Relational Representation. Intelligent Computer Mathematics. J. Davenport et al., eds. LNAI 6824. Springer Verlag, 2011, pp. 212&#x2013;227. <a href="https://kwarc.info/frabe/Research/HIJKR_dimensions_11.pdf">kwarc.info/frabe/Research/HIJKR_dimensions_11.pdf</a></li>
+<li class="tugbbl">M. Kohlhase. OMDoc&#x2013;An Open Markup Format for Mathematical Documents [Version 1.2]. LNAI 4180. Springer Verlag, Aug. 2006. <a href="http://omdoc.org/pubs/omdoc1.2.pdf">omdoc.org/pubs/omdoc1.2.pdf</a></li>
+<li class="tugbbl">M. Kohlhase. The Flexiformalist Manifesto. 14th International Workshop on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC 2012). A. Voronkov et al., eds. Timisoara, Romania: IEEE Press, 2013, pp. 30&#x2013;36. <a href="https://kwarc.info/kohlhase/papers/synasc13.pdf">kwarc.info/kohlhase/papers/synasc13.pdf</a></li>
+<li class="tugbbl">M. Kohlhase. Using LaTeX as a Semantic Markup Format. Mathematics in Computer Science 2:2, 2008, pp. 279&#x2013;304. <a href="https://kwarc.info/kohlhase/papers/mcs08-stex.pdf">kwarc.info/kohlhase/papers/mcs08-stex.pdf</a></li>
+<li class="tugbbl">M. Kohlhase and D. M&#x00FC;ller. The sTeX3 Package Collection. <a href="https://github.com/slatex/sTeX/blob/main/doc/stex-doc.pdf">github.com/slatex/sTeX/blob/main/doc/stex-doc.pdf</a></li>
+<li class="tugbbl">B. Miller. LaTeXML: A LaTeX to XML Converter. <a href="https://mast.nist.gov/LaTeXML/">mast.nist.gov/LaTeXML/</a></li>
+<li class="tugbbl">MMT&#x2014;Language and System for the Uniform Representation of Knowledge. <a href="https://uniformal.github.io/">uniformal.github.io/</a></li>
+<li class="tugbbl">F. Rabe and M. Kohlhase. A Scalable Module System. Information &amp; Computation 0:230, 2013, pp. 1&#x2013;54. <a href="https://kwarc.info/frabe/Research/mmt.pdf">kwarc.info/frabe/Research/mmt.pdf</a></li>
+<li class="tugbbl">SMGloM: A Semantic, Multilingual Glossary for Mathematics. <a href="https://gl.mathhub.info/smglom/">gl.mathhub.info/smglom/</a></li>
+<li class="tugbbl">sTeX: A Semantic Extension of TeX/LaTeX. <a href="https://github.com/sLaTeX/sTeX">github.com/sLaTeX/sTeX</a></li>
+</ol>
+
+<hr><small><a href="/TUGboat/">TUGboat</a> 43:2, 2022 (<a href="/TUGboat/tb43-2/">issue 134</a>)
+&nbsp; [generated 2022-09-11]
+</small><br><!--#include virtual="/footer.html"-->

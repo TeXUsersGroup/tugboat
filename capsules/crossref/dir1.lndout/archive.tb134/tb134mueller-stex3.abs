@@ -1,0 +1,34 @@
+  We report on {sTeX3}\Dash a complete redesign and 
+  reimplementation (using LaTeX3) from the ground up of the 
+  sTeX ecosystem for semantic markup of
+  {mathematical} 
+  {documents}. Specifically, we present:
+  \begin{enumerate}
+  \item The sTeX package that allows declaring 
+    {semantic macros} and
+    provides a {module system} for organizing 
+    and importing {semantic macros} using logical 
+    identifiers. {Semantic macros} allow for annotating
+    arbitrary LaTeX fragments, particularly symbolic 
+    notations and {formulae},
+    with their functional structure and formal semantics while keeping
+    their presentation/layout intact. The module system induces a
+    {theory-graph}-structure on mathematical concepts, reflecting their
+    dependencies and other semantic relations.
+  \item The RusTeX system, an implementation of the core \TeX\ engine in Rust. It supports
+    converting arbitrary LaTeX\ documents to \XHTML. 
+    For sTeX3\ documents, these are
+    enriched with semantic annotations based on the OMDoc ontology.
+  \item An MMT integration: The RusTeX-generated \XHTML can be 
+    imported and served by the MMT system (meta-meta-theory or
+    meta-meta-tool, depending on desired emphasis) for
+    semantically informed
+    knowledge management services, e.g.\ linking symbols
+    in {formulae} to their definitions, or ``guided tour''
+    mini-courses
+    for any (semantically annotated) mathematical concept\slash object.
+  \end{enumerate}
+
+  Generally, sTeX3 documents can be made not only \emph{interactive}
+  (by adding semantic services), but also ``\emph{active}'' in that
+  they actively adapt to reader preferences and pre-knowledge (if known).

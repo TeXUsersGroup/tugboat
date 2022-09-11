@@ -1,0 +1,9 @@
+We report on some recent work on mathematical typesetting.
+Our main purpose has been to make both the input and output of math cleaner 
+and more structured. 
+Among the many enhancements, we mention here the introduction of new atom 
+classes that has given better control over many details.
+We also cover the unboxing of fenced material which, together with 
+improved line-breaking and more flexible 
+multiline display math, has created a coherent way to produce displayed 
+formulas that split over lines.

@@ -1,0 +1,6 @@
+This paper describes the development and usage of the \texttt{luatruthtable}
+package in \LaTeX. It is developed to generate truth tables of boolean
+values in \LaTeX\ documents. The package provides an easy way of generating
+truth tables in \LaTeX. There is no need of a special \LaTeX\ environment
+for generation of truth tables with the package. It is written in Lua and
+the \TeX\ document is to be compiled with the \LuaLaTeX\ engine.

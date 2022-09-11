@@ -1,0 +1,24 @@
+Tectonic is a software project built around an alternative \TeX\ engine forked
+from \XeTeX. It has been created to explore the answers to two questions. The first
+question relates to documents: in an era of 21st-century technologies\Dash
+where interactive displays, computation, and internet connectivity are generally
+cheap and ubiquitous\Dash what new forms of technical document have become
+possible? The second question relates to tools: how can we use those same
+technologies to better empower people to create excellent technical documents?
+
+The premise of the Tectonic project is that while \TeX\ may be venerable, it is
+still an ideal system for creating ``21st-century'' technical documents\Dash but
+that a project with an independent identity and infrastructure can make progress
+in ways that can't happen in mainline \TeX. Tectonic is compiled using standard
+Rust tools, installs as a single executable file, and downloads support files
+from a prebuilt \TeX\ Live distribution on demand.
+
+In the past year,
+long-threatened work on native \HTML\ output has finally started landing,
+including a possibly novel Unicode math rendering scheme inspired by font
+subsetting. Current efforts are fleshing out this \HTML\ support using
+\textit{\XeTeX: The Program} as a test case, with an eye towards substantially
+improving the documentation of Tectonic itself. While Tectonic positions itself
+as ``outside of'' traditional \TeX\ in a certain sense, the project could not
+exist without the efforts of the entire \TeX\ community, to whom the author and
+the project are gratefully indebted.

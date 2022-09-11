@@ -1,0 +1,15 @@
+Due to the permissive nature of \LaTeX, authors who prepare their
+manuscripts in \LaTeX\ for publishing their research articles in academic
+journals often knowingly or unknowingly indulge in non-standard markup
+practices. Since article submission systems of most publishers are primarily 
+designed for Microsoft Word-based articles, problems in 
+\LaTeX\ manuscripts go undetected during submission and review processes,
+and later cause avoidable delays and hardships in processing their
+submissions.
+
+A tool for pre-submission check followed by requests to fix
+as much as possible at their end before submission will thus have
+benefits of
+earlier publication and reducing turnaround time considerably.
+\TeX Folio Alpha is such a web-based tool for pre-submission profiling, 
+completeness and usability checking of \LaTeX\ manuscript submissions.

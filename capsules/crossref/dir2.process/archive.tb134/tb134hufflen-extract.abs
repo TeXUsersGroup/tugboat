@@ -1,0 +1,7 @@
+We present some tools that allow us to parse all or part of \AllTeX\ source
+files and process suitable information. For example, we can use them to extract
+some metadata of a document. These tools have been developed in the \pgScheme{}
+functional programming language. Using them requires only basic knowledge of
+functional programming and \pgScheme. Besides, these tools could be easily
+implemented using a strongly typed functional programming language, such as
+\pgname{Standard \acro{ML}} or \pgname{Haskell}.

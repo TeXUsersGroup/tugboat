@@ -1,0 +1,1332 @@
+<doi_batch xmlns="http://www.crossref.org/schema/4.4.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.4.2" xsi:schemaLocation="http://www.crossref.org/schema/4.4.2 http://www.crossref.org/schema/deposit/crossref4.4.2.xsd">
+  <head>
+    <doi_batch_id>ltx2crossref-20220911164225-1331540</doi_batch_id>
+    <timestamp>20220911164225</timestamp>
+    <depositor>
+      <depositor_name>TUGboat production</depositor_name>
+      <email_address>doi-tugboat@tug.org</email_address>
+    </depositor>
+    <registrant>TeX Users Group</registrant>
+  </head>
+  <body><journal>
+    <journal_metadata language="en">
+      <full_title>TUGboat</full_title>
+      <issn>0896-3207</issn>	
+    </journal_metadata>
+    <journal_issue>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <journal_volume><volume>43</volume></journal_volume>
+      <issue>2</issue>
+    </journal_issue>
+    <journal_article>
+      <titles>
+        <title>interview with Boris Veytsman, scientist, TeX programmer and current TUG President</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Paulo Ney</given_name>
+          <surname>de Souza</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>100</first_page>
+        <last_page>104</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134veytsman-desouza</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134veytsman-desouza.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The future of technical documentation starts with its <i>recent</i> past</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Carlos</given_name>
+          <surname>Evia</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>104</first_page>
+        <last_page>107</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134evia-techdoc</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134evia-techdoc.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Adobe_2012-1"><unstructured_citation>
+          Adobe TCS. Future of Tech Comm, Jul 2012. https://www.youtube.com/watch?v=dSdhnyDF0YY
+        </unstructured_citation></citation>
+        <citation key="ditawriter_2018-2"><unstructured_citation>
+          DITA Writer. Don Day and Michael Priestly on the beginnings of DITA: Part 2, Oct   2018. https://www.ditawriter.com/don-day-and-michael-priestly-on-the-beginnings-of-dita-part-2/
+        </unstructured_citation></citation>
+        <citation key="evia_2019-3"><unstructured_citation>
+          C. Evia. Creating intelligent content with Lightweight DITA. Routledge, New York, NY, 2019.
+        </unstructured_citation></citation>
+        <citation key="hackos_2011-4"><unstructured_citation>
+          J.T. Hackos. Introduction to DITA: A user guide to the Darwin Information   Typing Architecture including DITA 1.2. Comtech Services, Denver, CO, 2011.
+        </unstructured_citation></citation>
+        <citation key="iantosca_2022b-5"><unstructured_citation>
+          M. Iantosca. A future powered by knowledge graphs. BrightTALK. https://www.brighttalk.com/webcast/9273/525482
+        </unstructured_citation></citation>
+        <citation key="iantosca_2022a-6"><unstructured_citation>
+          M. Iantosca. Mark-Duh? The impending doom of Markdown and reStructred Text, Mar   2022. https://thinkingdocumentation.com/blog/f/mark-duh-the-impending-doom-of-markdown-md-and-restrucured-tex
+        </unstructured_citation></citation>
+        <citation key="kimber_2012-7"><unstructured_citation>
+          E. Kimber. DITA for practitioners. XML Press, Laguna Hills, CA, 2012.
+        </unstructured_citation></citation>
+        <citation key="oasis_dita-8"><unstructured_citation>
+          OASIS Open. OASIS Darwin Information Typing Architecture (DITA) TC. https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita
+        </unstructured_citation></citation>
+        <citation key="pringle_o'keefe_2009-9"><unstructured_citation>
+          A.S. Pringle, S. O&#x2019;Keefe. Technical writing 101: A real-world guide to planning and   writing technical content. Scriptorium Press, Research Triangle Park, NC, 2009.
+        </unstructured_citation></citation>
+        <citation key="wachter-boettcher_2012-10"><unstructured_citation>
+          S. Wachter-Boettcher. Content everywhere: Strategy and structure for future-ready   content. Rosenfeld Media, Brooklyn, NY, 2012.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>A stroll through computer history at the CHM</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Dag</given_name>
+          <surname>Spicer</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>108</first_page>
+        <last_page>108</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134spicer-chm</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134spicer-chm.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Type design: Catching up to the past</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Steven</given_name>
+          <surname>Matteson</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>109</first_page>
+        <last_page>119</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134matteson-adapt</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134matteson-adapt.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The Tectonic Project: Envisioning a 21st-century TeX experience</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Peter K.G.</given_name>
+          <surname>Williams</surname>
+          <ORCID>https://orcid.org/0000-0003-3734-3587</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>120</first_page>
+        <last_page>126</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134williams-tectonic</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134williams-tectonic.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Knuth:1986:TP-1"><unstructured_citation>
+          D.E. Knuth. TeX: The Program, vol. B of Computers and   Typesetting. Addison-Wesley, Reading, MA, USA, 1986.
+        </unstructured_citation></citation>
+        <citation key="lm18-2"><unstructured_citation>
+          J. Lawall, G. Muller. Coccinelle: 10 years of automated evolution in the linux kernel. In 2018 USENIX Annual Technical Conference (USENIX ATC 18),   pp. 601&#x2013;614, Boston, MA, July 2018. USENIX Association. https://www.usenix.org/conference/atc18/presentation/lawall
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>IoT theatre presents: The Tempest</title>
+      </titles>
+      <contributors>
+        <organization sequence="first" contributor_role="author">Island of TeX</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>127</first_page>
+        <last_page>129</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134island-tempest</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134island-tempest.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Using <tt>knitr</tt> and LaTeX for literate laboratory notes</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Boris</given_name>
+          <surname>Veytsman</surname>
+          <ORCID>https://orcid.org/0000-0003-4674-8113</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>130</first_page>
+        <last_page>133</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134veytsman-labnotes</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134veytsman-labnotes.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Fairman2022-1"><unstructured_citation>
+          R. Fairman. FigPut. Interactive Figures for LaTeX, 2022. https://ctan.org/pkg/figput
+        </unstructured_citation></citation>
+        <citation key="Grahn2022animate-2"><unstructured_citation>
+          A. Grahn. The animate package, 2022. https://ctan.org/pkg/animate
+        </unstructured_citation></citation>
+        <citation key="Grahn2022media9-3"><unstructured_citation>
+          A. Grahn. The media9 package, v1.24, 2022. https://ctan.org/pkg/media9
+        </unstructured_citation></citation>
+        <citation key="Gruber2004-4"><unstructured_citation>
+          J. Gruber. Markdown, 2004. https://daringfireball.net/projects/markdown/
+        </unstructured_citation></citation>
+        <citation key="Listings-5"><unstructured_citation>
+          C. Heinz, B. Noses, J. Hoffmann. The Listings Package, 2020. https://ctan.org/pkg/listings
+        </unstructured_citation></citation>
+        <citation key="Kanare1985-6"><unstructured_citation>
+          H.M. Kanare. Writing the laboratory notebook. American Chemical Society, Washington, D.C, 1985.
+        </unstructured_citation></citation>
+        <citation key="Kluyver2016jupyter-7"><unstructured_citation>
+          T. Kluyver, B. Ragan-Kelley, et al.  Jupyter notebooks&#x2014;a publishing format for reproducible   computational workflows. In Positioning and Power in Academic Publishing: Players,   Agents and Agendas, F. Loizides, B. Schmidt, eds., pp. 87&#x2013;90. IOS Press,   2016.
+        </unstructured_citation></citation>
+        <citation key="Knuth1992-8"><unstructured_citation>
+          D.E. Knuth. Literate Programming. No. 27 in CSLI Lecture Notes. Stanford, California, 1992.
+        </unstructured_citation></citation>
+        <citation key="Sweave-9"><unstructured_citation>
+          F. Leisch, R Core Team. Sweave User Manual, 2022. https://stat.ethz.ch/R-manual/R-devel/library/utils/doc/Sweave.pdf
+        </unstructured_citation></citation>
+        <citation key="Maxima-10"><unstructured_citation>
+          Maxima. A computer algebra system, 2022. https://maxima.sourceforge.io/
+        </unstructured_citation></citation>
+        <citation key="Mesirov415-11"><unstructured_citation>
+          J.P. Mesirov. Accessible reproducible research. Science 327(5964):415&#x2013;416, 2010. https://doi.org/10.1126/science.1179653
+        </unstructured_citation></citation>
+        <citation key="Moss2020-12"><unstructured_citation>
+          R.C. Moss. The rise and fall of Adobe Flash, 2020. https://arstechnica.com/information-technology/2020/07/the-rise-and-fall-of-adobe-flash/
+        </unstructured_citation></citation>
+        <citation key="pauling-13"><unstructured_citation>
+          L. Pauling. Research notebooks, 1922&#x2013;1972. Special Collections &#x0026; Archives Research Center, Oregon State   University Libraries. https://scarc.library.oregonstate.edu/coll/pauling/rnb/
+        </unstructured_citation></citation>
+        <citation key="Ryan2012-14"><unstructured_citation>
+          P. Ryan. Keeping a Lab Notebook. National Institutes of Health, Office of Intramural Training and   Education, 2012. https://www.training.nih.gov/assets/Lab_Notebook_508_(new).pdf
+        </unstructured_citation></citation>
+        <citation key="Schwab2000-15"><unstructured_citation>
+          M. Schwab, N. Karrenbach, J. Claerbout. Making scientific computations reproducible. Computing in Science &#x0026; Engineering 2(6):61&#x2013;67, 2000. https://doi.org/10.1109/5992.881708
+        </unstructured_citation></citation>
+        <citation key="Tantau2021-16"><unstructured_citation>
+          T. Tantau. The TikZ and PGF Packages, 2021. https://ctan.org/pkg/pgf
+        </unstructured_citation></citation>
+        <citation key="PSTricks-17"><unstructured_citation>
+          T. Van Zandt, R. Niepraschk, H. Vo&#x00DF;. PSTricks. PostScript macros for Generic TeX, 2007. https://ctan.org/pkg/pstricks-base
+        </unstructured_citation></citation>
+        <citation key="Veytsman14-18"><unstructured_citation>
+          B. Veytsman. Book review: Dynamic Documents with R and knitr,   by Yihui Xie. TUGboat 35(1):115&#x2013;119, 2014. https://tug.org/TUGboat/tb35-1/tb109reviews-xie.pdf
+        </unstructured_citation></citation>
+        <citation key="enwiki:1093428638-19"><unstructured_citation>
+          Wikipedia contributors. Henry Spencer&#x2014;Wikipedia, the free encyclopedia, 2022. https://en.wikipedia.org/w/index.php?title=Henry_Spencer&amp;oldid=1093428638
+        </unstructured_citation></citation>
+        <citation key="wxMaxima-20"><unstructured_citation>
+          wxMaxima, 2022. https://wxmaxima-developers.github.io/wxmaxima/
+        </unstructured_citation></citation>
+        <citation key="Xie2015-21"><unstructured_citation>
+          Y. Xie. Dynamic Documents with R and knitr. Chapman and Hall/CRC, Boca Raton; London; New York, second ed., 2015.
+        </unstructured_citation></citation>
+        <citation key="Xie2016-22"><unstructured_citation>
+          Y. Xie. bookdown: Authoring Books and Technical Documents with R   Markdown. Chapman and Hall/CRC, Boca Raton, Florida, 2016. ISBN 978-1138700109. https://bookdown.org/yihui/bookdown
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title><tt>yex</tt>: a TeX-alike typesetter in Python</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Marnanel</given_name>
+          <surname>Thurman</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>134</first_page>
+        <last_page>135</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134thurman-yex</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134thurman-yex.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Extracting information from (La)TeX source files</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jean-Michel</given_name>
+          <surname>Hufflen</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>136</first_page>
+        <last_page>141</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134hufflen-extract</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134hufflen-extract.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="cahiers-gutenberg-58-2021-1"><unstructured_citation>
+          Association GUTenberg:   Ils sont de retour !, v. 58 of Cahiers GUTenberg.   Sept. 2021.    https://www.gutenberg-asso.fr/-Cahiers-GUTenberg-
+        </unstructured_citation></citation>
+        <citation key="belmans2010-2"><unstructured_citation>
+          Pieter Belmans: TeX is   Turing-Complete. Dec. 2010. Universiteit Antwerpen,   https://pbelmans.files.wordpress.com/2010/12/textalk.pdf
+        </unstructured_citation></citation>
+        <citation key="charette-etc2022-3"><unstructured_citation>
+          Fran&#x00E7;ois Charette, Arthur   Reutenauer, Bastien Boucari&#x00E8;s and J&#x00FC;rgen   Spitzm&#x00FC;ller: polyglossia: Modern   Multilingual Typesetting With XeLaTeX and LuaLaTeX. 18 Jul.   2022. https://ctan.org/pkg/polyglossia
+        </unstructured_citation></citation>
+        <citation key="clocksin-mellish2003-4"><unstructured_citation>
+          William F. Clocksin and   Christopher S. Mellish: Programming in Prolog. 5th ed. Springer-Verlag. 2003.
+        </unstructured_citation></citation>
+        <citation key="friedl2006-5"><unstructured_citation>
+          Jeffrey E. F. Frield: Mastering   Regular Expressions. 3rd ed. O&#x2019;Reilly. Aug. 2006.
+        </unstructured_citation></citation>
+        <citation key="graetzer1979-6"><unstructured_citation>
+          George Gr&#x00E4;tzer: Universal   Algebra. 2nd ed. Springer-Verlag. 1979.
+        </unstructured_citation></citation>
+        <citation key="hagen2006-7"><unstructured_citation>
+          Hans Hagen:   LuaTeX: Howling to the Moon. Biuletyn Polskiej Grupy U&#x017C;ytkownik&#x00F3;w Systemu TeX,   v. 23, pp. 63&#x2013;68. Apr. 2006.   Also published in TUGboat v. 26, n. 2, pp. 152&#x2013;157. https://tug.org/TUGboat/tb26-2/hagen.pdf
+        </unstructured_citation></citation>
+        <citation key="halmos1987-8"><unstructured_citation>
+          Paul Richard Halmos: Naive Set   Theory. Undergraduate Texts in Mathematics. Springer-Verlag. 1987.
+        </unstructured_citation></citation>
+        <citation key="h2003k-9"><unstructured_citation>
+          Jean-Michel Hufflen:   mlBibTeX&#x2019;s Version 1.3. TUGboat, v. 24, n. 2, pp. 249&#x2013;262.   Jul. 2003.    https://tug.org/TUGboat/tb24-2/tb77hufflen.pdf
+        </unstructured_citation></citation>
+        <citation key="h2017b-10"><unstructured_citation>
+          Jean-Michel Hufflen:   mlBibTeX Now Deals with   Unicode. In: Tomasz Przechlewski, Karl   Berry and Jerzy B. Ludwichowski, eds.,   Premises, Predilections, Predictions. Proc. TUG@BachoTeX 2017,   pp. 39&#x2013;41. Apr. 2017.    Also published in TUGboat v. 38,   n. 2, pp. 245&#x2013;248. https://tug.org/TUGboat/tb38-2/tb119hufflen-mlbibtex.pdf
+        </unstructured_citation></citation>
+        <citation key="h2020-11"><unstructured_citation>
+          Jean-Michel Hufflen:   Which Success for TeX as an Old   Program?. ArsTeXnica, v. 30, pp. 24&#x2013;30. In Proc. GuIT 2020 meeting. Oct. 2020.
+        </unstructured_citation></citation>
+        <citation key="ierusalimschy2006-12"><unstructured_citation>
+          Roberto Ierusalimschy:   Programming in Lua. 2nd ed. Lua.org. Mar. 2006.
+        </unstructured_citation></citation>
+        <citation key="kernighan-ritchie1988-13"><unstructured_citation>
+          Brian W. Kernighan and Dennis M.   Ritchie: The C Programming Language. 2nd ed. Prentice Hall. 1988.
+        </unstructured_citation></citation>
+        <citation key="knuth1986-14"><unstructured_citation>
+          Donald Ervin Knuth: Computers   &#x0026; Typesetting. Vol. A: The TeXbook. Addison-Wesley Publishing Company, Reading, Massachusetts. 1986.
+        </unstructured_citation></citation>
+        <citation key="lamport1994-15"><unstructured_citation>
+          Leslie Lamport: LaTeX: A   Document Preparation System. User&#x2019;s Guide and Reference Manual. Addison-Wesley Publishing Company, Reading, Massachusetts. 1994.
+        </unstructured_citation></citation>
+        <citation key="lutz1996-16"><unstructured_citation>
+          Mark Lutz: Programming   Python. O&#x2019;Reilly &#x0026; Associates. Oct. 1996.
+        </unstructured_citation></citation>
+        <citation key="menke2019-17"><unstructured_citation>
+          Henri Menke:   Parsing Complex Data Formats in LuaTeX with   LPEG. TUGboat, v. 40, n. 2, pp. 129&#x2013;135. In Proc. TUG. 2019. https://tug.org/TUGboat/tb40-2/tb125menke-lpeg.pdf
+        </unstructured_citation></citation>
+        <citation key="mittelbach-etc2004-18"><unstructured_citation>
+          Frank Mittelbach and Michel   Goossens, with Johannes Braams, David   Carlisle, Chris A. Rowley, Christine Detig   and Joachim Schrod: The LaTeX Companion. 2nd ed. Addison-Wesley Publishing Company, Reading,   Massachusetts. Aug. 2004.
+        </unstructured_citation></citation>
+        <citation key="moreira2000-19"><unstructured_citation>
+          Walter Moreira: A Turing   Machine in TeX. Apr. 2004. Montevideo, Uruguay.   http://www.cmat.edu.uy/%7Ewalterm/turing/turing.html#download
+        </unstructured_citation></citation>
+        <citation key="paulson1996-20"><unstructured_citation>
+          Lawrence C. Paulson: ML   for the Working Programmer. 2nd ed. Cambridge University Press. 1996.
+        </unstructured_citation></citation>
+        <citation key="peyton-jones2003-21"><unstructured_citation>
+          Simon Peyton Jones, ed:   Haskell 98 Language and Libraries. The Revised Report. Cambridge University Press. Apr. 2003.
+        </unstructured_citation></citation>
+        <citation key="shinn-etc2013-22"><unstructured_citation>
+          Alex Shinn, John Cowan,   and Arthur A. Gleckler, with Steven Ganz,   Aaron W. Hsu, Bradley Lucier, Emmanuel Medernach,   Alexey Radul, Jeffrey T. Read, David Rush,   Benjamin L. Russel, Olin Shivers, Alaric Snell-Pym   and Gerald Jay Sussman: Revised^7   Report on the Algorithmic Language Scheme. 6 Jul. 2013. https://small.r7rs.org/attachment/r7rs.pdf
+        </unstructured_citation></citation>
+        <citation key="springer-friedman1989-23"><unstructured_citation>
+          George Springer and Daniel P.   Friedman: Scheme and the Art of Programming. The MIT Press, McGraw-Hill Book Company. 1989.
+        </unstructured_citation></citation>
+        <citation key="ziegenhagen2019a-24"><unstructured_citation>
+          Uwe Ziegenhagen:   Combining LaTeX with   Python. TUGboat, v. 40, n. 2, pp. 126&#x2013;128. In Proc. TUG 2019. https://tug.org/TUGboat/tb40-2/tb125ziegenhagen-python.pdf
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>LaTeX profiling of author submissions&#x2014;completeness &amp; usability checking</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Apu</given_name>
+          <surname>V</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Rishi</given_name>
+          <surname>T</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Aravind</given_name>
+          <surname>Rajendran</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>142</first_page>
+        <last_page>147</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134apu-submissions</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134apu-submissions.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="bib1-1"><unstructured_citation>
+          LaTeX&#x2019;s hook management.  https://mirror.ctan.org/macros/latex/base/lthooks-doc.pdf
+        </unstructured_citation></citation>
+        <citation key="bib2-2"><unstructured_citation>
+          The LaTeX3 Sources. https://mirror.ctan.org/macros/latex/contrib/l3kernel/source3.pdf
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>LaTeX news, issue 35, June 2022</title>
+      </titles>
+      <contributors>
+        <organization sequence="first" contributor_role="author">LaTeX Project Team</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>148</first_page>
+        <last_page>154</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134ltnews35</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134ltnews35.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Introductory LaTeX workshop, en fran&#xe7;ais</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <surname>&#xc9;ric Guichard</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Jean-Michel</given_name>
+          <surname>Hufflen</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>155</first_page>
+        <last_page>155</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134guichard-ltxworkshop-fr</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134guichard-ltxworkshop-fr.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Self-publishing, LaTeX, and Markdown</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Lloyd</given_name>
+          <surname>Prentice</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>156</first_page>
+        <last_page>158</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134prentice-selfpub</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134prentice-selfpub.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Bowkers-1"><unstructured_citation>
+          Number of Self-Published Titles Jumped 40% in 2018. https://https://www.publishersweekly.com/pw/by-topic/industry-news/publisher-news/article/81473-number-of-self-published-titles-jumped-40-in-2018.html
+        </unstructured_citation></citation>
+        <citation key="Wwordsrated-2"><unstructured_citation>
+          Self-published Books &#x0026; Author Sales Statistics. https://https://wordsrated.com/self-published-book-sales-statistics/
+        </unstructured_citation></citation>
+        <citation key="schemes-3"><unstructured_citation>
+          The TeX Live Guide&#x2014;2022, &#x201c;Selecting what is to be installed&#x201d;. https://https://tug.org/texlive/doc/texlive-en/texlive-en.html#x1-240003.2.2
+        </unstructured_citation></citation>
+        <citation key="ctanlist-4"><unstructured_citation>
+          Book publication topic on CTAN.  https://https://ctan.org/topic/book-pub
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The story of a silly package</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Paulo</given_name>
+          <surname>Cereda</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Phelype</given_name>
+          <surname>Oleinik</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>159</first_page>
+        <last_page>161</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134cereda-silly</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134cereda-silly.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Key&#x2013;value setting handling in the LaTeX kernel</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Joseph</given_name>
+          <surname>Wright</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>162</first_page>
+        <last_page>163</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134wright-keyval</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134wright-keyval.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title><tt>siunitx</tt>: Launching version 3</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Joseph</given_name>
+          <surname>Wright</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>164</first_page>
+        <last_page>165</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134wright-siunitx3</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134wright-siunitx3.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Els2008-1"><unstructured_citation>
+          Els, D. &#x201c;The SIstyle package&#x201d;. 2008.  https://ctan.org/pkg/sistyle.
+        </unstructured_citation></citation>
+        <citation key="Heldoorn2007-2"><unstructured_citation>
+          Heldoorn, Marcel, and J. Wright. &#x201c;The SIunits package: Consistent application of SI   units&#x201d;. 2007. https://ctan.org/pkg/siunits.
+        </unstructured_citation></citation>
+        <citation key="Wright2011-3"><unstructured_citation>
+          Wright, Joseph. &#x201c;siunitx: A comprehensive (SI) units package&#x201d;. TUGboat 32(1), 95&#x2013;98, 2011. https://tug.org/TUGboat/tb32-1/tb100wright-siunitx.pdf.
+        </unstructured_citation></citation>
+        <citation key="Wright2018-4"><unstructured_citation>
+          Wright, Joseph. &#x201c;siunitx: Past, present and future&#x201d;. TUGboat 39(2), 119&#x2013;121, 2018. https://tug.org/TUGboat/tb39-2/tb122wright-siunitx.pdf.
+        </unstructured_citation></citation>
+        <citation key="Wright2022-5"><unstructured_citation>
+          Wright, Joseph. &#x201c;l3build: The beginner&#x2019;s guide&#x201d;. TUGboat 43(1), 40&#x2013;43, 2022. https://tug.org/TUGboat/tb43-1/tb133wright-l3build.pdf.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Case changing: LaTeX reaches Unicode-land</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Joseph</given_name>
+          <surname>Wright</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>165</first_page>
+        <last_page>166</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134wright-case</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134wright-case.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Using spot colors in LaTeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Ulrike</given_name>
+          <surname>Fischer</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>167</first_page>
+        <last_page>172</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134fischer-spotcolor</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134fischer-spotcolor.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="colorspace-1"><unstructured_citation>
+          J. Bezos. The Colorspace package. Provides PDF color spaces. https://ctan.org/pkg/colorspace/
+        </unstructured_citation></citation>
+        <citation key="pdfmanagement-testphase-2"><unstructured_citation>
+          LaTeX Project Team. The Pdfmanagement-testphase package. https://ctan.org/pkg/pdfmanagement-testphase
+        </unstructured_citation></citation>
+        <citation key="fontspec-3"><unstructured_citation>
+          W. Robertson, LaTeX Project Team. The Fontspec package. Advanced font selection in XeLaTeX and LuaLaTeX. https://ctan.org/pkg/fontspec
+        </unstructured_citation></citation>
+        <citation key="pgf-4"><unstructured_citation>
+          T. Tantau, C. Feuers&#x00e4;nger, et al. The PGF package. Create PostScript and PDF graphics in TeX. https://ctan.org/pkg/pgf
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The <tt>luatruthtable</tt> LaTeX package</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Chetan</given_name>
+          <surname>Shirore</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Ajit</given_name>
+          <surname>Kumar</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>172</first_page>
+        <last_page>175</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134shirore-luatruthtable</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134shirore-luatruthtable.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="online.luaorg-1"><unstructured_citation>
+          Lua 5.4 reference manual. https://www.lua.org/manual/5.4
+        </unstructured_citation></citation>
+        <citation key="online.luacode-2"><unstructured_citation>
+          Luacode package page, 2012. https://ctan.org/pkg/luacode
+        </unstructured_citation></citation>
+        <citation key="online.luacustomoperator-3"><unstructured_citation>
+          Lua custom operators. http://lua-users.org/wiki/CustomOperators
+        </unstructured_citation></citation>
+        <citation key="online.luatex-4"><unstructured_citation>
+          Luatex package page. https://ctan.org/pkg/luatex
+        </unstructured_citation></citation>
+        <citation key="online.pgf-5"><unstructured_citation>
+          PGF package page. https://ctan.org/pkg/pgf
+        </unstructured_citation></citation>
+        <citation key="Richter:TB25-1-71-6"><unstructured_citation>
+          W.M. Richter. TeX and scripting languages. TUGboat 25(1):71&#x2013;88, 2004. https://tug.org/TUGboat/tb25-1/richter.pdf
+        </unstructured_citation></citation>
+        <citation key="online.latextruthtable-7"><unstructured_citation>
+          StackExchange. Macro for automating truth tables. https://tex.stackexchange.com/questions/505994
+        </unstructured_citation></citation>
+        <citation key="online.TeX-8"><unstructured_citation>
+          Wikipedia. TeX. https://en.wikipedia.org/wiki/TeX
+        </unstructured_citation></citation>
+        <citation key="online.xparse-9"><unstructured_citation>
+          Xparse package page. https://ctan.org/pkg/xparse
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>LaTeX classes for doctoral theses in Ukraine: Interesting tips and painful problems</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Oleksandr</given_name>
+          <surname>Baranovskyi</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>176</first_page>
+        <last_page>181</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134baranovskyi-vakthesis</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134baranovskyi-vakthesis.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Adriaens:TB25-2-194-1"><unstructured_citation>
+          H. Adriaens, U. Kern. xkeyval&#x2014;new developments and mechanisms in key   processing. TUGboat 25(2):194&#x2013;199, 2004. https://tug.org/TUGboat/tb25-2/tb81adriaens.pdf
+        </unstructured_citation></citation>
+        <citation key="LOU-ukrainethesis-2"><unstructured_citation>
+          kostiantyn.hermash. Message at the Linux.org.ua forum. https://linux.org.ua/index.php?topic=689.msg204167#msg204167
+        </unstructured_citation></citation>
+        <citation key="LTNEWS-32-3"><unstructured_citation>
+          LaTeX Project Team. LaTeX2e news 32, Oct. 2020. https://www.latex-project.org/news/latex2e-news/ltnews32.pdf
+        </unstructured_citation></citation>
+        <citation key="LOU-dissert_new-4"><unstructured_citation>
+          sampleplasma. Message at the Linux.org.ua forum. https://linux.org.ua/index.php?topic=689.msg92080#msg92080
+        </unstructured_citation></citation>
+        <citation key="FAQ-multbib-5"><unstructured_citation>
+          TeX FAQ contributors. Multiple bibliographies? https://texfaq.org/FAQ-multbib
+        </unstructured_citation></citation>
+        <citation key="FAQ-chapbib-6"><unstructured_citation>
+          TeX FAQ contributors. Separate bibliographies per chapter? https://texfaq.org/FAQ-chapbib
+        </unstructured_citation></citation>
+        <citation key="vakthesis-hpage-7"><unstructured_citation>
+          Current homepage of the vakthesis project. https://www.imath.kiev.ua/~baranovskyi/tex/vakthesis/
+        </unstructured_citation></citation>
+        <citation key="Wright:TB30-1-110-8"><unstructured_citation>
+          J. Wright, C. Feuers&#x00E4;nger. Implementing key&#x2013;value input: An introduction. TUGboat 30(1):110&#x2013;122, 2009. https://tug.org/TUGboat/tb30-1/tb94wright-keyval.pdf
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>XLingPaper's use of TeX technologies</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>H. Andrew</given_name>
+          <surname>Black</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Hugh</given_name>
+          <surname>Paterson</surname>
+          <suffix>III</suffix>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>182</first_page>
+        <last_page>196</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134black-xlingpaper</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134black-xlingpaper.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="bartholomew:2019-1"><unstructured_citation>
+          Bartholomew, Doris A, and Louise C   Schoenhals. 2019. Bilingual Dictionaries for Indigenous     Languages. Edited by Thomas L Willett. 2nd edn. Tlalpan, Ciudad   de M&#x00e9;xico, M&#x00e9;xico: Instituto Ling&#x00fc;&#x00ed;stico de Verano, A.C.            [SIL International in Mexico]. https://sil.org/resources/archives/80401.
+        </unstructured_citation></citation>
+        <citation key="BeadleandLee:2020a-2"><unstructured_citation>
+          Beadle, Jennie, and Matthew   Lee. 2020a. Paratext 9 Manual&#x2014;in English.   SIL International. https://lingtran.net.
+        </unstructured_citation></citation>
+        <citation key="BeadleandLee:2020b-3"><unstructured_citation>
+          Beadle, Jennie, and Matthew   Lee. 2020b. Paratext 9 Manual&#x2014;in French.   SIL International. https://outilingua.net.
+        </unstructured_citation></citation>
+        <citation key="BeierandMichael:2022-4"><unstructured_citation>
+          Beier, Christine, and Lev   Michael. 2022. Managing Lexicography Data: A Practical,     Principled Approach Using FLEx (FieldWorks Language     Explorer). In The Open Handbook of Linguistic Data Management,   edited by Andrea L. Berez-Kroeker, Bradley McDonnell, Eve Koller,   and Lauren B. Collister, 301&#x2013;14. Open Handbooks In   Linguistics. Cambridge, Massachusetts: The MIT   Press.  https://doi.org/10.7551/mitpress/12200.003.0029.
+        </unstructured_citation></citation>
+        <citation key="BirdSimons:2002-5"><unstructured_citation>
+          Bird, Steven, and Gary Simons. 2002. Seven   Dimensions of Portability for Language Documentation and   Description. In ISCA SALTMIL SIG: &#x201c;Speech and Language   Technology for Minority Languages&#x201d;, 23&#x2013;30. Las Palmas, Canary   Islands, Spain:   ELRA. http://lrec-conf.org/proceedings/lrec2002/pdf/ws15.pdf#page=29.
+        </unstructured_citation></citation>
+        <citation key="BirdSimons:2003-6"><unstructured_citation>
+          Bird, Steven, and Gary Simons. 2003. Seven   Dimensions of Portability for Language Documentation and   Description. Language 79   (3):557&#x2013;82. https://jstor.org/stable/4489465.
+        </unstructured_citation></citation>
+        <citation key="blackandblack:2012-7"><unstructured_citation>
+          Black, Cheryl A., and H. Andrew   Black. 2012. Grammars for the People, by the People, Made     Easier Using PAWS and XLingPaper. In Electronic   Grammaticography, edited by Sebastian Nordhoff, 103&#x2013;28. LD&#x0026;C   Special Publication 4. Honolulu, Hawai&#x2018;i:   University of Hawai&#x2018;i   Press. http://hdl.handle.net/10125/4532.
+        </unstructured_citation></citation>
+        <citation key="black:2009-8"><unstructured_citation>
+          Black, H. Andrew. 2009. Writing Linguistic Papers   in the Third Wave.  SIL Forum for Language Fieldwork 2009   (004): 11   pages. https://sil.org/resources/publications/entry/7790.
+        </unstructured_citation></citation>
+        <citation key="black:2017-9"><unstructured_citation>
+          Black, H. Andrew. 2017. Why Learn to Use     XLingPaper. Dallas, Texas: SIL   International. https://software.sil.org/downloads/r/xlingpaper/resources/documentation/WhyUseXLingPaper.pdf.
+        </unstructured_citation></citation>
+        <citation key="black:2020-10"><unstructured_citation>
+          Black, H. Andrew. 2020. XLingPaper User     Documentation [Software Documentation]. Dallas, Texas: SIL   International. https://software.sil.org/downloads/r/xlingpaper/resources/documentation/xxe7/UserDocXMLmind.htm.
+        </unstructured_citation></citation>
+        <citation key="brownie:2013-11"><unstructured_citation>
+          Brownie, John. 2013. Adverbs in the   Mussau-Emira Verb Phrase. Language &#x0026; Linguistics in Melanesia   31 (1):1&#x2013;11. https://langlxmelanesia.com/issues.
+        </unstructured_citation></citation>
+        <citation key="buck:2018-12"><unstructured_citation>
+          Buck, Marjorie J. 2018. Gram&#x00e1;tica del amuzgo     Xochistlahuaca, Guerrero. (Serie de gram&#x00e1;ticas de lenguas   ind&#x00ed;genas de M&#x00e9;xico &#x2116;16.) Tlalpan, Ciudad de M&#x00e9;xico,   M&#x00e9;xico: Instituto Ling&#x00fc;&#x00ed;stico de Verano, A.C.            [SIL International in Mexico]. https://sil.org/resources/archives/75518.
+        </unstructured_citation></citation>
+        <citation key="Correll:2000-13"><unstructured_citation>
+          Correll, Sharon. 2000. Graphite: An     Extensible Rendering Engine for Complex Writing Systems. Paper   presented at the 17th International Unicode Conference, San Jose,   California. http://rabbits.continuation.org/w/images/7/73/Graphite_paper.pdf..
+        </unstructured_citation></citation>
+        <citation key="DanielandSchubert:2013-14"><unstructured_citation>
+          Daniel, Marco, and Elke   Schubert. 2013. The mdframed Package: Auto-split Frame     environment version 1.9b.
+        </unstructured_citation></citation>
+        <citation key="DiBiaseDysonEtAl:2009-15"><unstructured_citation>
+          Di Biase-Dyson, Camilla, Frank   Kammerzell, and Daniel A. Werning. 2009. Glossing Ancient   Egyptian. Suggestions for Adapting the Leipzig Glossing Rules. Lingua Aegyptia. Journal of Egyptian Language Studies 17:   343&#x2013;66. https://wwwuser.gwdg.de/~lingaeg/lingaeg17.htm.
+        </unstructured_citation></citation>
+        <citation key="dimitriadis:2016-16"><unstructured_citation>
+          Dimitriadis, Alexis. 2016. TeX/LaTeX     Information. Web   page. https://ling.upenn.edu/advice/latex.html.
+        </unstructured_citation></citation>
+        <citation key="donnelly:2013-17"><unstructured_citation>
+          Donnelly, Kevin. 2013. Representing Linguistic   Pitch in XeLaTeX. TUGboat 34 (2):   223&#x2013;27. http://tug.org/TUGboat/tb34-2/tb107donnelly.pdf.
+        </unstructured_citation></citation>
+        <citation key="ebarb:2014-18"><unstructured_citation>
+          Ebarb, Kristopher J. 2014. Tone and     variation in Idakho and other Luhya varieties. University of   Indiana   Ph.D. dissertation. https://pqdtopen.proquest.com/doc/1625743679.html?FMT=ABS.
+        </unstructured_citation></citation>
+        <citation key="frampton:2006-19"><unstructured_citation>
+          Frampton, John. 2006. Pst-Asr: Tex Macros     for Typesetting Autosegmental     Representations. Version: 1.1. CTAN.     https://ctan.org/tex-archive/graphics/pstricks/contrib/pst-asr/pst-asr-doc.pdf.
+        </unstructured_citation></citation>
+        <citation key="frampton:2012-20"><unstructured_citation>
+          Frampton, John. 2012. ExPex for     Linguists: Example Formatting, Glosses, and Reference. Version:   4.1. http://mathserver.neu.edu/~ling/tex/expex/base/doc/expex-doc.pdf.
+        </unstructured_citation></citation>
+        <citation key="freitagupriemer:2019-21"><unstructured_citation>
+          Freitag, Constantin and Antonio   Machicao y Priemer. 2019. LaTeX-Einf&#x00fc;hrung F&#x00fc;r     Linguisten. Berlin, Germany: Humboldt-Universit&#x00e4;t zu   Berlin. https://doi.org/10.13140/RG.2.2.29299.27682.
+        </unstructured_citation></citation>
+        <citation key="holton:2021-22"><unstructured_citation>
+          Holton, Gary. 2021. Writing You     Dissertation with     LaTeX. Typescript. Hawai&#x2018;i. Github.com. https://gmholton.github.io/files/DissertationWriting.pdf.
+        </unstructured_citation></citation>
+        <citation key="kew:2007-23"><unstructured_citation>
+          Kew, Jonathan. 2007. XeTeX Live. TUGboat 29   (1):   146&#x2013;50.  https://tug.org/TUGboat/tb29-1/tb91kew.pdf.
+        </unstructured_citation></citation>
+        <citation key="kew:mcconnel-24"><unstructured_citation>
+          Kew, Jonathan and Stephen McConnel. 1990.  Formatting Interlinear Text. Occasional Publications in Academic   Computing, Number 17. Dallas, Texas: Summer Institute of   Linguistics.
+        </unstructured_citation></citation>
+        <citation key="Kircher:1652-25"><unstructured_citation>
+          Kircher, Athanasius. 1652. &#x0152;dipus     &#x00c6;gyptiacus, hoc est Vniuersalis Hieroglyphic&#x00e6; Veterum     Doctrin&#x00e6; temporum iniuria abolit&#x00e6; Instauratio. Opus ex omni   Orientalium doctrina &#x0026; sapientia conditum, nec non viginti   diuersarum linguarum authoritate stabilitum, Rom&#x00e6;: Ex Typographia   Vitalis Mascardi.
+        </unstructured_citation></citation>
+        <citation key="knuth:1984-26"><unstructured_citation>
+          Knuth, Donald Ervin. 1984. The TeXbook.   Computers &#x0026; Typesetting, vol. A. Reading, Massachusetts: American   Mathematical Society; Addison-Wesley.
+        </unstructured_citation></citation>
+        <citation key="knuth:1986-27"><unstructured_citation>
+          Knuth, Donald Ervin. 1986. TeX: The     Program. Computers &#x0026; Typesetting, vol. B. Reading, Massachusetts:   Addison-Wesley.
+        </unstructured_citation></citation>
+        <citation key="lamicela:2020-28"><unstructured_citation>
+          Lamicela, Andrew Charles. 2020. Distinguishing Passive from MP2-marked Middle in Koine     Greek. University of North Dakota   M.A. thesis.  https://commons.und.edu/theses/3277.
+        </unstructured_citation></citation>
+        <citation key="lehmann:2004-29"><unstructured_citation>
+          Lehmann, Christian. 2004. Interlinear     morphemic glossing. In Morphologie: Ein internationales Handbuch   zur Flexion und Wortbildung / Morphology: an international handbook on   inflection and word-formation, edited by Geert E Booij, Christian   Lehmann, Joachim Mugdan, and Stavros Skopeteas,   2:1834&#x2013;57. Handb&#x00fc;cher zur Sprach- und Kommunikationswissenschaft /   Handbooks of Linguistics and communication science 17. Berlin,   New York: Walter de   Gruyter. https://doi.org/10.1515/9783110172782.2.20.1834.
+        </unstructured_citation></citation>
+        <citation key="liter:2017-30"><unstructured_citation>
+          Liter, Adam. 2017. LaTeX Workshop (for     Linguists). https://adamliter.org/content/LaTeX/latex-workshop-for-linguists.pdf.
+        </unstructured_citation></citation>
+        <citation key="lovell:1999-31"><unstructured_citation>
+          Lovell, Douglas.  1999. TeXML: Typesetting   XML with TeX. TUGboat 20 (3):   176&#x2013;183. https://tug.org/TUGboat/tb20-3/tb64love.pdf.
+        </unstructured_citation></citation>
+        <citation key="marlett:2012-32"><unstructured_citation>
+          Marlett, Stephen A. (compiler). 2012. La Frase   Nominal.  In Stephen A. Marlett (ed.) Los Archivos     Ling&#x00fc;&#x00ed;sticos Me&#x2019;phaa. Instituto Ling&#x00fc;&#x00ed;stico de Verano, A.C.            [SIL International in Mexico]. https://mexico.sil.org/publications/i-wpindex/work_papers_-_mephaa_grammar_files.
+        </unstructured_citation></citation>
+        <citation key="marlett:2019-33"><unstructured_citation>
+          Marlett, Stephen A. 2019. Phonology From     the Ground Up: The Basics. Dallas, Texas: SIL   International.  https://sil.org/resources/archives/79207.
+        </unstructured_citation></citation>
+        <citation key="marlett:2019threetexts-34"><unstructured_citation>
+          Marlett, Stephen   A. 2019. Presentation of three short texts in Isthmus   Zapotec. SIL-Mexico Electronic Working Papers #25.  Ciudad de   M&#x00e9;xico: Instituto Ling&#x00fc;&#x00ed;stico de Verano, A.C.            [SIL International in Mexico]. https://https://sil.org/resources/archives/80964.
+        </unstructured_citation></citation>
+        <citation key="nmeAndMarlett:2011-35"><unstructured_citation>
+          Neri M&#x00e9;ndez, Emilia and Stephen   A. Marlett. 2011 (Nov). Presentaci&#x00f3;n Anal&#x00ed;tica del Texto &#x201c;Flor de   Calabaza&#x201d;. In Stephen A. Marlett (ed.) Los Archivos   Ling&#x00fc;&#x00ed;sticos Me&#x2019;phaa (versi&#x00f3;n preliminar). Instituto Ling&#x00fc;&#x00ed;stico de Verano, A.C.            [SIL International in Mexico].     https://mexico.sil.org/publications/i-wpindex/work_papers_-_mephaa_grammar_files.
+        </unstructured_citation></citation>
+        <citation key="nordhoffandmueller:2020-36"><unstructured_citation>
+          Nordhoff, Sebastian, and Stefan   M&#x00fc;ller. 2020. Language Science Press Guidelines. Berlin,   Germany: Language Science   Press. https://langsci.github.io/guidelines/latexguidelines/LangSci-guidelines.pdf.
+        </unstructured_citation></citation>
+        <citation key="paterson:2021-37"><unstructured_citation>
+          Paterson III, Hugh J. 2021. Language     Archive Records: Interoperability of Referencing Practices and     Metadata Models. University of North Dakota   M.A. thesis. https://commons.und.edu/theses/3937.
+        </unstructured_citation></citation>
+        <citation key="paterson:2021b-38"><unstructured_citation>
+          Paterson III, Hugh J. 2021. On Rights     Management in Anthropological and Linguistic Sound     Collections. ARSC Journal 52 (3):   547&#x2013;563. https://arsc-audio.org/journal.html.
+        </unstructured_citation></citation>
+        <citation key="pellard:2019-39"><unstructured_citation>
+          Pellard, Thomas. 2019. Automatic formatting of   interlinear glosses with LaTeX. Cipanglossia   https://cipanglo.hypotheses.org/1221.
+        </unstructured_citation></citation>
+        <citation key="peter:2004-40"><unstructured_citation>
+          Peter, Steve. 2004. TeX and Linguistics. TUGboat 25 (1):   58&#x2013;62.  https://tug.org/TUGboat/tb25-1/peter.pdf.
+        </unstructured_citation></citation>
+        <citation key="priemerufreitag:2019-41"><unstructured_citation>
+          Machicao y Priemer, Antonio, and   Constantin Freitag. 2019. LaTeX-Einf&#x00fc;hrung f&#x00fc;r     Linguisten. Presentation at the MGK Workshop&#x2014;SFB 1412,   Berlin. https://linguistik.hu-berlin.de/de/staff/amyp/latex20sfb/07-l4l-math2-trees-handout.pdf. 
+        </unstructured_citation></citation>
+        <citation key="rasmussen:2018-42"><unstructured_citation>
+          Rasmussen, Kent. 2018. A Comparative     Tone Analysis of Several Bantu D30 Languages (DR     Congo). University of Texas Arlington   Ph.D. dissertation. http://hdl.handle.net/10106/27483.
+        </unstructured_citation></citation>
+        <citation key="rastorgueva:2012-43"><unstructured_citation>
+          Rastorgueva, V. S., A. A. Kerimova,   A. K. Mamedzade, L. A. Pireiko, and   D. I. Edel&#x2019;man. 2012. The Gilaki Language. Edited by   Ronald M. Lockwood. Acta Universitatis Upsaliensis; Studia Iranica   Upsaliensia 19. Uppsala, Sweden: Acta Universitatis   Upsaliensis. https://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-182789.
+        </unstructured_citation></citation>
+        <citation key="rei:1996-44"><unstructured_citation>
+          Rei, Fukui. 1996. TIPA: A System for   Processing Phonetic Symbols in LaTeX. TUGboat 17 (2):   102&#x2013;14. https://tug.org/TUGboat/tb17-2/tb51rei.pdf.
+        </unstructured_citation></citation>
+        <citation key="SalffnerGavid:2014-45"><unstructured_citation>
+          Salffner, Sophie, and Tim   Gaved. 2014. Working with ELAN and FLEx Together: An   ELAN-FLEx-ELAN Teaching Set. Electronic Manuscript. SOAS,   London,   England.   https://https://web.archive.org/web/20210613121544/https://www.soas.ac.uk/elar/helpsheets/file122785.pdf.
+        </unstructured_citation></citation>
+        <citation key="schenneretal:2016-46"><unstructured_citation>
+          Schenner, Mathias, and Sebastian   Nordhoff. 2016. Extracting Interlinear Glossed Text from LaTeX   Documents. In Proceedings of the Tenth International Conference     on Language Resources and Evaluation (LREC 2016), edited by   Nicoletta Calzolari, Khalid Choukri, Thierry Declerck, Sara Goggi,   Marko Grobelnik, Bente Maegaard, Joseph Mariani, et al.,   4044&#x2013;48. Portoro&#x017e;, Slovenia: European Language Resources   Association (ELRA). https://aclweb.org/anthology/L16-1638.pdf.
+        </unstructured_citation></citation>
+        <citation key="sil:2021-47"><unstructured_citation>
+          SIL International. 2012. Comparison of OpenType   and Graphite shaping speeds in a Nastaliq context. (accessed: 27   May 2022)   https://scripts.sil.org/cms/scripts/page.php?site_id=projects&amp;item_id=graphite_otcompare.
+        </unstructured_citation></citation>
+        <citation key="smithsniderwiegand:2016-48"><unstructured_citation>
+          Smith, Zac, Todd Snider, and Mia   Wiegand. 2016. LaTeX and Linguistics&#x2014;How to Make Your     Research Pretty. Presentation at the Cornell Linguistics Circle,   Cornell, New   York. https://conf.ling.cornell.edu/miawiegand/Latex_Slides.pdf. 
+        </unstructured_citation></citation>
+        <citation key="so:2021-49"><unstructured_citation>
+          So Miyagawa, and Vincent W.J. van Gerven   Oei. 2021. Building Web Corpus of Old Nubian with Interlinear   Glossing as Digital Cultural Heritage for Modern-Day Nubians. In   The Proceedings of the 11th Conference of Japanese Association     for Digital Humanities, vol. 2021. 144&#x2013;147. Tokyo:   Historiographical Institute, The University of   Tokyo. https://www.hi.u-tokyo.ac.jp/JADH/2021/Proceedings_JADH2021_rev0905.pdf.
+        </unstructured_citation></citation>
+        <citation key="thiele:1995-50"><unstructured_citation>
+          Thiele, Christina. 1995. TeX and   Linguistics. TUGboat 16 (1):   42&#x2013;44.  https://tug.org/TUGboat/tb16-1/tb46ling.pdf.
+        </unstructured_citation></citation>
+        <citation key="thiele:2007-51"><unstructured_citation>
+          Thiele, Christina. 2007. Christina Thiele     Interview by Dave Walden for the TeX Users     Group. Transcript.  https://tug.org/interviews/thiele.html.
+        </unstructured_citation></citation>
+        <citation key="unicode:1991-52"><unstructured_citation>
+          Unicode Consortium, ed. 1991. The Unicode     Standard: Worldwide Character Encoding. Version 1.0. Reading,   Massachusetts:   Addison-Wesley.  https://unicode.org/versions/Unicode1.0.0.
+        </unstructured_citation></citation>
+        <citation key="ward:2002-53"><unstructured_citation>
+          Ward, Monica. 2002. Reusable XML Technologies and   the Development of Language Learning Materials. ReCALL 14 (2):   285&#x2013;94.  https://doi.org/10.1017/S0958344002000629.
+        </unstructured_citation></citation>
+        <citation key="wilson:2007-54"><unstructured_citation>
+          Wilson, Peter. 2007. The Memoir Class. TUGboat 28 (2):   243&#x2013;46.  https://tug.org/TUGboat/tb28-2/tb89wilson.pdf.
+        </unstructured_citation></citation>
+        <citation key="wilson:2021-55"><unstructured_citation>
+          Wilson, Peter. 2021. The Memoir Class for     Configurable Typesetting: User Guide. version 3.70. Normandy   Park, WA: The Herries Press. CTAN. https://ctan.org/tex-archive/macros/latex/contrib/memoir/memman.pdf.
+        </unstructured_citation></citation>
+        <citation key="Wood:2012-56"><unstructured_citation>
+          Wood, Joyce Kathleen. 2012. Valence-Increasing Strategies in Urim Syntax. Graduate Institute   of Applied Linguistics   M.A. thesis. https://diu.edu/documents/theses/Wood_Joyce-thesis.pdf.
+        </unstructured_citation></citation>
+        <citation key="Woods:inprep-57"><unstructured_citation>
+          Woods, Frances. In preparation. Halbi     Interlinear Texts: Everyday Village Life. Electronic Manuscript.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>A LaTeX-based ecosystem for semantic/active mathematical documents</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Dennis</given_name>
+          <surname>M&#xfc;ller</surname>
+          <ORCID>https://orcid.org/0000-0002-4482-4912</ORCID>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Michael</given_name>
+          <surname>Kohlhase</surname>
+          <ORCID>https://orcid.org/0000-0002-9859-6337</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>197</first_page>
+        <last_page>201</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134mueller-stex3</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134mueller-stex3.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="gurari-1"><unstructured_citation>
+          E. Gurari, M. Hoftich, et al. TeX4ht. tug.org/tex4ht/
+        </unstructured_citation></citation>
+        <citation key="horozal-2"><unstructured_citation>
+          F. Horozal et al. Combining Source, Content, Presentation, Narration, and Relational Representation. Intelligent Computer Mathematics. J. Davenport et al., eds. LNAI 6824. Springer Verlag, 2011, pp. 212&#x2013;227. kwarc.info/frabe/Research/HIJKR_dimensions_11.pdf
+        </unstructured_citation></citation>
+        <citation key="kohlhase-omdoc-3"><unstructured_citation>
+          M. Kohlhase. OMDoc&#x2013;An Open Markup Format for Mathematical Documents [Version 1.2]. LNAI 4180. Springer Verlag, Aug. 2006. http://omdoc.org/pubs/omdoc1.2.pdf
+        </unstructured_citation></citation>
+        <citation key="kohlhase-flexiformalist-4"><unstructured_citation>
+          M. Kohlhase. The Flexiformalist Manifesto. 14th International Workshop on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC 2012). A. Voronkov et al., eds. Timisoara, Romania: IEEE Press, 2013, pp. 30&#x2013;36. kwarc.info/kohlhase/papers/synasc13.pdf
+        </unstructured_citation></citation>
+        <citation key="kohlhase-semantic-5"><unstructured_citation>
+          M. Kohlhase. Using LaTeX as a Semantic Markup Format. Mathematics in Computer Science 2:2, 2008, pp. 279&#x2013;304. kwarc.info/kohlhase/papers/mcs08-stex.pdf
+        </unstructured_citation></citation>
+        <citation key="kohlhase-stex3-6"><unstructured_citation>
+          M. Kohlhase and D. M&#x00FC;ller. The sTeX3 Package Collection. github.com/slatex/sTeX/blob/main/doc/stex-doc.pdf
+        </unstructured_citation></citation>
+        <citation key="miller-latexml-7"><unstructured_citation>
+          B. Miller. LaTeXML: A LaTeX to XML Converter. mast.nist.gov/LaTeXML/
+        </unstructured_citation></citation>
+        <citation key="mmt-8"><unstructured_citation>
+          MMT&#x2014;Language and System for the Uniform Representation of Knowledge. uniformal.github.io/
+        </unstructured_citation></citation>
+        <citation key="rabe-9"><unstructured_citation>
+          F. Rabe and M. Kohlhase. A Scalable Module System. Information &amp; Computation 0:230, 2013, pp. 1&#x2013;54. kwarc.info/frabe/Research/mmt.pdf
+        </unstructured_citation></citation>
+        <citation key="smglom-mathhub-10"><unstructured_citation>
+          SMGloM: A Semantic, Multilingual Glossary for Mathematics. gl.mathhub.info/smglom/
+        </unstructured_citation></citation>
+        <citation key="stex-github-11"><unstructured_citation>
+          sTeX: A Semantic Extension of TeX/LaTeX. github.com/sLaTeX/sTeX
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Pushing math forward with ConTeXt lmtx</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Mikael</given_name>
+          <surname>Sundqvist</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>202</first_page>
+        <last_page>206</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134hagen-math</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134hagen-math.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="lansburgh-1"><unstructured_citation>
+          W.N. Lansburgh. Almqvist &#x0026; Wiksells s&#x00e4;ttningsregler. Almqvist &#x0026; Wiksell, 1964.
+        </unstructured_citation></citation>
+        <citation key="mahajan-2"><unstructured_citation>
+          A. Mahajan. My way: Using &#x005C;startalign and friends, 2006. https://dl.contextgarden.net/myway/mathalign.pdf
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The treasure chest</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>207</first_page>
+        <last_page>208</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134chest</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134chest.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TUG 2022 abstracts</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Oliver</given_name>
+          <surname>Austin</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>David</given_name>
+          <surname>Blakesley</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Sarai</given_name>
+          <surname>Casta&#xf1;eda</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Max</given_name>
+          <surname>Chernoff</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Hong Dat</given_name>
+          <surname>Cheung</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Jennifer</given_name>
+          <surname>Claudio</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Jonathan</given_name>
+          <surname>Fine</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Patrick</given_name>
+          <surname>Gundlach</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Herbert</given_name>
+          <surname>Hickman</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Nicolas</given_name>
+          <surname>Jimenez</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Vafa</given_name>
+          <surname>Khalighi</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Tia</given_name>
+          <surname>Luc</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Matthew</given_name>
+          <surname>Mariano</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Ross</given_name>
+          <surname>Moore</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Aditya</given_name>
+          <surname>Ohri</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Christopher</given_name>
+          <surname>Park</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Emily</given_name>
+          <surname>Park</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Norbert</given_name>
+          <surname>Preining</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <surname>samcarter</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Tanya</given_name>
+          <surname>Schmah</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Tereza</given_name>
+          <surname>Vrabcov&#xe1;</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Haibin</given_name>
+          <surname>Wu</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>209</first_page>
+        <last_page>212</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134abstracts</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134abstracts.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>2023 TeX Users Group election</title>
+      </titles>
+      <contributors>
+        <organization sequence="first" contributor_role="author">TUG Elections committee</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>216</first_page>
+        <last_page>216</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134elec</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134elec.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TUG 2022 conference report</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jim</given_name>
+          <surname>Hefferon</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>89</first_page>
+        <last_page>89</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134hefferon-tug22</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134hefferon-tug22.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TUG 2022 Annual General Meeting notes</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Robin</given_name>
+          <surname>Laakso</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>90</first_page>
+        <last_page>92</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134tug22-agm</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134tug22-agm.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>David C. Walden, 1942&#x2013;2022</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>93</first_page>
+        <last_page>95</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134walden-berry</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134walden-berry.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>interview with John Lees-Miller, CTO of Overleaf</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Paulo Ney</given_name>
+          <surname>de Souza</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>96</first_page>
+        <last_page>99</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-2/tb134lees-miller-desouza</doi>
+        <timestamp>20220911164225</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-2/tb134lees-miller-desouza.html</resource>
+      </doi_data>
+    </journal_article>
+  </journal></body>
+</doi_batch>

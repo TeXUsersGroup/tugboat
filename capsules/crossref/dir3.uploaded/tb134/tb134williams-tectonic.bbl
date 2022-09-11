@@ -1,0 +1,27 @@
+\input bibnames.sty \input path.sty \ifx \k \undefined \let \k = \c
+  \immediate\write16{Ogonek accent unavailable: replaced by cedilla}\fi \ifx
+  \undefined \FEATPOST \def \FEATPOST {{\manfnt FEAT}\-{\manfnt
+  POST}\spacefactor1000 }\fi\ifx \undefined \MP \def \MP {{\manfnt
+  META}\-{\manfnt POST}\spacefactor1000 } \fi\ifx \undefined \Xy \def \Xy {{\sc
+  Xy}} \fi\ifx \undefined \manfnt \font\manfnt=logo10 \fi\ifx \undefined
+  \pdfTeX \def \pdfTeX {pdf\TeX}\fi\def \toenglish #1\endtoenglish{[{\em
+  English:} #1\unskip]} \hyphenation{ An-wen-der-ver-ei-ni-gung Bie-mes-der-fer
+  Co-lo-phon Deutsch-spra-chi-ge Ge-leit-wort Hol-dys Katz-en-beiss-er
+  Ko-lo-dziej-ska la-da-mi Lar-ra-bee Manu-scripts mark-up
+  Rijks-uni-ver-si-teit South-all Stutt-gart }
+\begin{thebibliography}{1}
+
+\bibitem{Knuth:1986:TP}
+D.E.~Knuth.
+\newblock \emph{{\TeX}: The Program}, vol.~B of \emph{Computers and
+  Typesetting}.
+\newblock Ad{\-d}i{\-s}on-Wes{\-l}ey, Reading, MA, USA, 1986.
+
+\bibitem{lm18}
+J.~Lawall, G.~Muller.
+\newblock Coccinelle: 10 years of automated evolution in the linux kernel.
+\newblock In~\emph{2018 USENIX Annual Technical Conference (USENIX ATC 18)},
+  pp.~601--614, Boston, MA, July 2018. USENIX Association.
+\newblock \url{https://www.usenix.org/conference/atc18/presentation/lawall}
+
+\end{thebibliography}

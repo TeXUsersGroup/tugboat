@@ -1,0 +1,189 @@
+\hyphenation{GUTen-berg loria}\hyphenation{GUTen-berg}\hyphenation{GUTen-berg}
+\input{babelbst.tex}
+\begin{thebibliography}{10}
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+
+\bibitem{cahiers-gutenberg-58-2021}
+\begin{otherlanguage*}{french}\textsc{{Association GUTenberg}}:
+  \emph{Ils sont de retour~!}, \bblvol{}~58 \bblof{} \emph{Cahiers GUTenberg}.
+  \bblsep{}~\rlap{2021.}\\
+  \url{https://www.gutenberg-asso.fr/-Cahiers-GUTenberg-}
+\end{otherlanguage*}
+
+\bibitem{belmans2010}
+\begin{otherlanguage*}{english}Pieter \textsc{Belmans}: \emph{{\TeX} is
+  Turing-Complete}. \bbldec{} 2010.
+\newblock Universiteit Antwerpen,
+  \url{https://pbelmans.files.wordpress.com/2010/12/textalk.pdf}
+\end{otherlanguage*}
+
+\bibitem{charette-etc2022}
+\begin{otherlanguage*}{english}Fran{\c{c}}ois \textsc{Charette}, Arthur
+  \textsc{Reutenauer}, Bastien \textsc{Boucari{\`{e}}s} \bbland{} J{\"{u}}rgen
+  \textsc{Spitzm{\"{u}}ller}: \emph{{\packagename{polyglossia}}: Modern
+  Multilingual Typesetting With {\XeLaTeX} and {Lua{\LaTeX}}}. 18 \bbljul{}
+  2022.
+\newblock
+  \url{https://ctan.org/pkg/polyglossia}
+\end{otherlanguage*}
+
+\bibitem{clocksin-mellish2003}
+\begin{otherlanguage*}{english}William~F. \textsc{Clocksin} \bbland{}
+  Christopher~S. \textsc{Mellish}: \emph{Programming in {\pgname{Prolog}}}.
+\newblock \bblfiftho{} \bbledn{}. Springer-Verlag. 2003.
+\end{otherlanguage*}
+
+\bibitem{friedl2006}
+\begin{otherlanguage*}{english}Jeffrey E.~F. \textsc{Frield}: \emph{Mastering
+  Regular Expressions}.
+\newblock \bblthirdo{} \bbledn{}. O'Reilly. \bblaug{} 2006.
+\end{otherlanguage*}
+
+\bibitem{graetzer1979}
+\begin{otherlanguage*}{english}George \textsc{Gr{\"{a}}tzer}: \emph{Universal
+  Algebra}.
+\newblock \bblsecondo{} \bbledn{}. Springer-Verlag. 1979.
+\end{otherlanguage*}
+
+\bibitem{hagen2006}
+\begin{otherlanguage*}{english}Hans \textsc{Hagen}:
+  \begin{bblquotedtitle}{Lua\TeX}: Howling to the Moon\end{bblquotedtitle}.
+\newblock \emph{Biuletyn Polskiej Grupy U\.{z}ytkownik\'{o}w Systemu {\TeX}},
+  \bblvol{}~23, \bblpp{}~63--68. \bblapr{} 2006.
+  \newblock Also published in \TUB\ \bblvol~26, \bblno~2, \bblpp{}~152--157.
+\newblock 
+  \url{https://tug.org/TUGboat/tb26-2/hagen.pdf}
+\end{otherlanguage*}
+
+\bibitem{halmos1987}
+\begin{otherlanguage*}{english}Paul~Richard \textsc{Halmos}: \emph{Naive Set
+  Theory}.
+\newblock Undergraduate Texts in Mathematics. Springer-Verlag. 1987.
+\end{otherlanguage*}
+
+\bibitem{h2003k}
+\begin{otherlanguage*}{english}Jean-Michel \textsc{Hufflen}:
+  \begin{bblquotedtitle}{\mlBibTeX's} Version 1.3\end{bblquotedtitle}.
+\newblock \emph{\logo{tug}boat}, \bblvol{}~24, \bblno{}~2, \bblpp{}~249--262.
+  \bbljul{} 2003. 
+  \newblock \url{https://tug.org/TUGboat/tb24-2/tb77hufflen.pdf}
+\end{otherlanguage*}
+
+\bibitem{h2017b}
+\begin{otherlanguage*}{english}Jean-Michel \textsc{Hufflen}:
+  \begin{bblquotedtitle}{\mlBibTeX} Now Deals with
+  {\pgUnicode}\end{bblquotedtitle}.
+\newblock \capitalize\bblin{}: Tomasz \textsc{Przechlewski}, Karl
+  \textsc{Berry} \bbland{} Jerzy~B. \textsc{Ludwichowski}, \bbleds{},
+  \emph{Premises, Predilections, Predictions. {Proc.}\ {TUG@Bacho\TeX}~2017},
+  \bblpp{} 39--41. \bblapr{} 2017. 
+  \newblock Also published in \TUB\ \bblvol~38,
+  \bblno~2, \bblpp~245--248. \newblock
+  \url{https://tug.org/TUGboat/tb38-2/tb119hufflen-mlbibtex.pdf}
+\end{otherlanguage*}
+
+\bibitem{h2020}
+\begin{otherlanguage*}{english}Jean-Michel \textsc{Hufflen}:
+  \begin{bblquotedtitle}Which Success for {\TeX} as an Old
+  Program?\end{bblquotedtitle}.
+\newblock \emph{Ars{\TeX}nica}, \bblvol{}~30, \bblpp{}~24--30.
+\newblock In Proc.\ \logo{guit} 2020 meeting. \bbloct{} 2020.
+\end{otherlanguage*}
+
+\bibitem{ierusalimschy2006}
+\begin{otherlanguage*}{english}Roberto \textsc{Ierusalimschy}:
+  \emph{Programming in {\pgname{Lua}}}.
+\newblock \bblsecondo{} \bbledn{}. Lua.org. \bblmar{} 2006.
+\end{otherlanguage*}
+
+\bibitem{kernighan-ritchie1988}
+\begin{otherlanguage*}{english}Brian~W. \textsc{Kernighan} \bbland{} Dennis~M.
+  \textsc{Ritchie}: \emph{The {\pgC} Programming Language}.
+\newblock \bblsecondo{} \bbledn{}. Prentice Hall. 1988.
+\end{otherlanguage*}
+
+\bibitem{knuth1986}
+\begin{otherlanguage*}{english}Donald~Ervin \textsc{Knuth}: \emph{Computers
+  \&~Typesetting. {V}ol.~A: The {\TeX}book}.
+\newblock Addison-Wesley Publishing Company, Reading, Massachusetts. 1986.
+\end{otherlanguage*}
+
+\bibitem{lamport1994}
+\begin{otherlanguage*}{english}Leslie \textsc{Lamport}: \emph{{\LaTeX}: {A}
+  Document Preparation System. User's Guide and Reference Manual}.
+\newblock Addison-Wesley Publishing Company, Reading, Massachusetts. 1994.
+\end{otherlanguage*}
+
+\bibitem{lutz1996}
+\begin{otherlanguage*}{english}Mark \textsc{Lutz}: \emph{Programming
+  {\pgname{Python}}}.
+\newblock O'Reilly \&~Associates. \bbloct{} 1996.
+\end{otherlanguage*}
+
+\bibitem{menke2019}
+\begin{otherlanguage*}{english}Henri \textsc{Menke}:
+  \begin{bblquotedtitle}Parsing Complex Data Formats in {Lua\TeX} with
+  {\logo{lpeg}}\end{bblquotedtitle}.
+\newblock \emph{TUGboat}, \bblvol{}~40, \bblno{}~2, \bblpp{}~129--135.
+\newblock In Proc. \logo{tug}. 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-2/tb125menke-lpeg.pdf}
+\end{otherlanguage*}
+
+\bibitem{mittelbach-etc2004}
+\begin{otherlanguage*}{english}Frank \textsc{Mittelbach} \bbland{} Michel
+  \textsc{Goossens}, \bblwith{} Johannes \textsc{Braams}, David
+  \textsc{Carlisle}, Chris~A. \textsc{Rowley}, Christine \textsc{Detig}
+  \bbland{} Joachim \textsc{Schrod}: \emph{The {\LaTeX} Companion}.
+\newblock \bblsecondo{} \bbledn{}. Addison-Wesley Publishing Company, Reading,
+  Massachusetts. \bblaug{} 2004.
+\end{otherlanguage*}
+
+\newpage
+\bibitem{moreira2000}
+\begin{otherlanguage*}{english}Walter \textsc{Moreira}: \emph{A {Turing}
+  Machine in {\TeX}}. \bblapr{} 2004.
+\newblock Montevideo, Uruguay.
+  \url{http://www.cmat.edu.uy/%7Ewalterm/turing/turing.html#download}
+\end{otherlanguage*}
+
+\bibitem{paulson1996}
+\begin{otherlanguage*}{english}Lawrence~C. \textsc{Paulson}: \emph{{\logo{ml}}
+  for the Working Programmer}.
+\newblock \bblsecondo{} \bbledn{}. Cambridge University Press. 1996.
+\end{otherlanguage*}
+
+\bibitem{peyton-jones2003}
+\begin{otherlanguage*}{english}Simon \textsc{{Peyton Jones}}, \bbled{}:
+  \emph{{Haskell~98} Language and Libraries. {The} Revised Report}.
+\newblock Cambridge University Press. \bblapr{} 2003.
+\end{otherlanguage*}
+
+\bibitem{shinn-etc2013}
+\begin{otherlanguage*}{english}Alex \textsc{Shinn}, John \textsc{Cowan},
+  \bbland{} Arthur~A. \textsc{Gleckler}, \bblwith{} Steven \textsc{Ganz},
+  Aaron~W. \textsc{Hsu}, Bradley \textsc{Lucier}, Emmanuel \textsc{Medernach},
+  Alexey \textsc{Radul}, Jeffrey~T. \textsc{Read}, David \textsc{Rush},
+  Benjamin~L. \textsc{Russel}, Olin \textsc{Shivers}, Alaric \textsc{Snell-Pym}
+  \bbland{} Gerald~Jay \textsc{Sussman}: \emph{{Revised\textsuperscript{7}}
+  Report on the Algorithmic Language {\pgScheme}}. 6~\bbljul{} 2013.
+\newblock
+  \url{https://small.r7rs.org/attachment/r7rs.pdf}
+\end{otherlanguage*}
+
+\bibitem{springer-friedman1989}
+\begin{otherlanguage*}{english}George \textsc{Springer} \bbland{} Daniel~P.
+  \textsc{Friedman}: \emph{{\pgScheme} and the Art of Programming}.
+\newblock The \logo{mit} Press, McGraw-Hill Book Company. 1989.
+\end{otherlanguage*}
+
+\bibitem{ziegenhagen2019a}
+\begin{otherlanguage*}{english}Uwe \textsc{Ziegenhagen}:
+  \begin{bblquotedtitle}Combining {\LaTeX} with
+  \pgname{Python}\end{bblquotedtitle}.
+\newblock \emph{TUGboat}, \bblvol{}~40, \bblno{}~2, \bblpp{}~126--128.
+\newblock In~Proc. \logo{tug}~2019.
+\newblock \url{https://tug.org/TUGboat/tb40-2/tb125ziegenhagen-python.pdf}
+\end{otherlanguage*}
+
+\end{thebibliography}

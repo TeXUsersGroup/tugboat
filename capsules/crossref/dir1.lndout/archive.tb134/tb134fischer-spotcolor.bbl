@@ -1,0 +1,26 @@
+\begin{thebibliography}{1}
+
+\bibitem{colorspace}
+J.~Bezos.
+\newblock \emph{The Colorspace package}.
+\newblock Provides PDF color spaces.
+\newblock \url{https://ctan.org/pkg/colorspace/}
+
+\bibitem{pdfmanagement-testphase}
+{\LaTeX\ Project Team}.
+\newblock \emph{The Pdfmanagement\hyph testphase package}.
+\newblock \url{https://ctan.org/pkg/pdfmanagement-testphase}
+
+\bibitem{fontspec}
+W.~Robertson, {\LaTeX\ Project Team}.
+\newblock \emph{The~Fontspec package}.
+\newblock Advanced font selection in \XeLaTeX\ and Lua\LaTeX.
+\newblock \newline \url{https://ctan.org/pkg/fontspec}
+
+\bibitem{pgf}
+T.~Tantau, C.~Feuersänger, et~al.
+\newblock \emph{The {PGF} package}.
+\newblock Create PostScript and PDF graphics in \TeX.
+\newblock \url{https://ctan.org/pkg/pgf}
+
+\end{thebibliography}

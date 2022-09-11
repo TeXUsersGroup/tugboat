@@ -1,0 +1,7 @@
+Typesetting units is an important task for scientists and engineers. When done
+in \AllTeX{}, it is natural to use a macro-based approach to carry out the
+formatting. I entered this area in 2008 with the \LaTeX{} package
+\pkg{siunitx}, which I've looked at in \emph{TUGboat}.
+Last year, I launched version~3 of
+\pkg{siunitx} after development over several years. Here, I will recap why this
+came about and how I went about launching the latest version.

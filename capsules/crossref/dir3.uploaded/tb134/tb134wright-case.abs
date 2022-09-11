@@ -1,0 +1,6 @@
+The concept of letters having case is familiar to speakers of several
+languages, most obviously those from Europe using Latin, Greek or Cyrillic
+scripts. The ability to convert between upper and lower case,
+\emph{case changing}, is something we might take for granted both for
+people and for computer systems. However, there are subtleties that a
+careful implementation needs to take into account.

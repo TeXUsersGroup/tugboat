@@ -1,0 +1,43 @@
+\begin{thebibliography}{1}
+
+\bibitem{online.luaorg}
+Lua 5.4 reference manual.
+\newblock \newline \url{https://www.lua.org/manual/5.4}
+
+\bibitem{online.luacode}
+Luacode package page, 2012.
+\newblock \newline \url{https://ctan.org/pkg/luacode}
+
+\bibitem{online.luacustomoperator}
+Lua custom operators.
+\newblock \url{http://lua-users.org/wiki/CustomOperators}
+
+\bibitem{online.luatex}
+Luatex package page.
+\newblock \newline \url{https://ctan.org/pkg/luatex}
+
+\bibitem{online.pgf}
+{PGF} package page.
+\newblock \newline \url{https://ctan.org/pkg/pgf}
+
+\bibitem{Richter:TB25-1-71}
+W.M.~Richter.
+\newblock {{\TeX} and scripting languages}.
+\newblock \emph{TUGboat} 25(1):71--88, 2004.
+\newblock \url{https://tug.org/TUGboat/tb25-1/richter.pdf}
+
+\bibitem{online.latextruthtable}
+StackExchange.
+\newblock Macro for automating truth tables.
+\newblock \url{https://tex.stackexchange.com/questions/505994}
+
+\bibitem{online.TeX}
+Wikipedia.
+\newblock {TeX}.
+\newblock \newline \url{https://en.wikipedia.org/wiki/TeX}
+
+\bibitem{online.xparse}
+Xparse package page.
+\newblock \newline \url{https://ctan.org/pkg/xparse}
+
+\end{thebibliography}

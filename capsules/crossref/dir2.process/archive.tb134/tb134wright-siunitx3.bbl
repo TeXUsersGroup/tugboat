@@ -1,0 +1,35 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Els}{Els}{2008}]{Els2008}
+Els, D.
+\newblock ``The \pkg{SIstyle} package''\kern -.05em{}.
+\newblock 2008\UseExtraLabel{}.
+\newblock \\\tbsurl{ctan.org/pkg/sistyle}.
+
+\bibitem{Heldoorn2007}
+Heldoorn, Marcel, and J.~Wright.
+\newblock ``The \pkg{SIunits} package: Consistent application of {SI}
+  units''\kern -.05em{}.
+\newblock 2007\UseExtraLabel{}.
+\newblock \tbsurl{ctan.org/pkg/siunits}.
+
+\bibitem[\protect\citeauthoryear{Wright}{Wright}{2011}]{Wright2011}
+Wright, Joseph.
+\newblock ``\pkg{siunitx}: A comprehensive ({SI}) units package''\kern
+  -.05em{}.
+\newblock {\em TUGboat} {\bf 32}(1), 95--98, 2011\UseExtraLabel{}.
+\newblock \tbsurl{tug.org/TUGboat/tb32-1/tb100wright-siunitx.pdf}.
+
+\bibitem[\protect\citeauthoryear{Wright}{Wright}{2018}]{Wright2018}
+Wright, Joseph.
+\newblock ``\pkg{siunitx}: Past, present and future''\kern -.05em{}.
+\newblock {\em TUGboat} {\bf 39}(2), 119--121, 2018\UseExtraLabel{}.
+\newblock \tbsurl{tug.org/TUGboat/tb39-2/tb122wright-siunitx.pdf}.
+
+\bibitem[\protect\citeauthoryear{Wright}{Wright}{2022}]{Wright2022}
+Wright, Joseph.
+\newblock ``\pkg{l3build}: The beginner's guide''\kern -.05em{}.
+\newblock {\em TUGboat} {\bf 43}(1), 40--43, 2022\UseExtraLabel{}.
+\newblock \tbsurl{tug.org/TUGboat/tb43-1/tb133wright-l3build.pdf}.
+
+\end{thebibliography}
