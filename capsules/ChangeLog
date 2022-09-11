@@ -1,3 +1,46 @@
+2022-09-11  Karl Berry  <karl@freefriends.org>
+
+	* tb134capsule.txt: new issue, 43:2.
+
+	* Makefile (testiss,lastiss,crossref_iss): 134.
+	(diff-id): new target to help checking the id values
+	after make install-test.
+
+	* lists-authinfo.txt (Kohlhase, Paterson III, M&#xfc;ller): orcids.
+	
+	* lists-translations.txt (\"u): use "ue" for ASCII.
+	(\'E): c9.
+	(\~n): f1.
+	* lists-unifications.txt (Conference Notes): add TUG 2022.
+	(Apu V): like Rishi T.
+	(Austin, Stephan v. Bechtolsheim, Blakesley, Casta&#xf1;eda,
+	Chernoff, Cheung, Gundlach, Hickman, Jimenez, Luc, Mariano,
+	Ohri, Park C., Park E., Paterson, Schmah, Takata, Vrabcov&#xe1;,
+	Wu): new entries.
+	(Rishikesan Nair T): unify with Rishi T.
+	
+	* capcrossref.pl (crossref_write_files): handle a Jr part of "III",
+	for Hugh Paterson III in tb134.
+	
+	* capout.pl (write_issue): print the urllabel as text if there is
+	no url to link to.
+
+	* capconv.pl (transform_author): allow whitespace between , and \\.
+
+	* capaccum.pl (accumulation_check): remove TUG 20yy entries from list.
+	(accumulation_check1): check for them with a regexp.
+
+	* cr-landing-bbl-abs: urls without protocol must have [a-z] not
+	a-z; how did this ever work? Also, check that subexpressions were
+	found before testing them.
+	
+	* tb51capsule.txt: use \"org not {\"o}rg for consistency.
+	
+	* tb118capsule.txt (\issue),
+	* tb125capsule.txt (\issue):
+	* tb128capsule.txt (\issue):
+	use /tug20yy/ as url for consistency.
+
 2022-09-03  Karl Berry  <karl@freefriends.org>
 
 	* tb31capsule.txt: remove incorrect /tug1996/ link

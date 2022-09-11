@@ -1,3 +1,14 @@
+2022-09-11  Karl Berry  <karl@freefriends.org>
+
+	* README-process.txt: reformat to help clarify abs/bbl editing.
+	
+	* ltx2crossrefxml-tugboat.cfg (\booktitle): output with \emph.
+	(\textsuperscript): handle.
+	(\AllTeX, \FAQ, \Hawaii, \LaTeXe, \XHTML): new abbrevs.
+	(\begin{otherlanguage*}, \pgname, \logo, \pg*): new abbrevs for
+	hufflen bibliographies.
+	(\UseExtraLabel): ignore, for our own [harvard] bibliographies.
+
 2022-05-09  Karl Berry  <karl@freefriends.org>
 
 	* README-process.txt: doc for \bibitem, source commits.

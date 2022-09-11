@@ -4,7 +4,7 @@
 debug = #-D #-D
 options = $(debug) #--stdout
 more_options =
-#more_options = --webroot=~tubprod/43-1/webdir  # desired: do local validation
+#more_options = --webroot=/home/tubprod/43-2/webdir  # desired: do local validation
 #more_options = --webroot=/ # disable url validation during doi setup
 
 # profiling.
@@ -21,9 +21,9 @@ default check: one #all-diff
 
 # These issue values, and most of the targets below, come into play with
 # publishing a TUGboat issue; see the README.karl file on tug.org.
-testiss = 132
-lastiss = 133
-crossref_iss = 133
+testiss = 134
+lastiss = 134
+crossref_iss = 134
 
 # use different temp dir on different machines.
 mydir := $(shell ls ~karl/public_html 2>/dev/null)
@@ -100,8 +100,8 @@ out = contents*.html
 all:
 	perl -cw captub && date
 	for iss in `seq -f %02.0f $(lastiss) -1 1`; do \
-	  cap="$$cap tb$${iss}capsule.txt"; done; \
-	$(time) $(captub) $$cap | tee /tmp/x.html
+	    cap="$$cap tb$${iss}capsule.txt"; done; \
+	  $(time) $(captub) $$cap | tee /tmp/x.html
 	! grep -o 'tubidxgroup.*\<and\>' listauthor.html
 # if gets messed up, check title_sort generation in capaccum.pl:
 	! grep -o 'id="[^">]*[^a-z0-9_,][^">]*"' listtitle.html
@@ -117,6 +117,12 @@ instest = $(tubweb)/toctest
 install-test: all
 	cp -f contents*.html list*.html $(instest)
 	chmod a+rw $(instest)/*
+
+# check id entries in new file (from install-test) with existing.
+diff-id:
+	#fgrep id= ~www/TUGboat/Contents/listauthor.html >/tmp/prev
+	fgrep id= ~www/TUGboat/toctest/listauthor.html   >/tmp/new
+	diff /tmp/prev /tmp/new
 
 diff:
 	for f in contents*.html list*.html; do diff -u0 $(Contents)/$$f .; \

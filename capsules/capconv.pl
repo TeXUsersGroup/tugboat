@@ -151,7 +151,7 @@ sub transform_author {
   my @authors = split (/[\\,]?\s*\\[ac]?and\s*
                         |,?\s+and\s+
                         |\s+\\&\s+
-                        |,\\\\\s*
+                        |,\s*\\\\\s*
                         |,\s+/x,
                        $all_authors_tex);
   @authors = &normalize_whitespace (@authors);

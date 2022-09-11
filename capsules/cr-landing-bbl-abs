@@ -132,18 +132,19 @@ sub update_landing_bbl {
             # But even that is not enough, since the reference might
             #   have letters, like "report no.1-A". So eliminate
             #   the common bib abbreviations.
-            # Also, another special case, foo.sty, etc., is not a url.
+            # Also, more special cases: foo.sty, etc., is not a url.
             #
             # Maybe we should force spaces after such bib abbrevs,
             #   but that doesn't seem ideal either.
             } elsif ($word =~ m!^([a-z0-9-]{2,})\.([a-z0-9-]{2,})[.,]?!i
-                     && $2 =~ /a-z/i
-                     && $1 !~ /^(no?|v(ol)?|pp?|iss)$/i
-                     && $2 !~ /^(sty|cls)$/i) {
+                     && $2 =~ /[a-z]/i
+                     && (! $1 || $1 !~ /^(no?|v(ol)?|pp?|iss)$/i)
+                     && (! $2 || $2 !~ /^(sty|cls)$/i)) {
               $prot = "https";
               $urlbase = $word;
               #warn " got implicit urlbase $urlbase\n";
             }
+            #warn "  1=$1, 2=$2, for $word\n";
             
             $newcite .= " " if $newcite; # single spaces between words
             if ($prot) {

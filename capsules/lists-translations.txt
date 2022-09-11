@@ -56,14 +56,17 @@ R\r{u}\v{z}i\v{c}ka||R&#x016f;&#x017e;i&#x010d;ka||Ruzicka
 \TeX ||TeX
 \TUB{}\CONNECT{}Team||<i>TUGboat</i>&#xa0;Editors||TUGboat Editors
 
-# Various accents, etc. todo: use hex or names, not decimal.
+# Accents, etc.
+# Although \"o is usually oe, with Gy\"ongyi and others, oe is not
+# right. So leave it as just o until we want to handle this.
 \"a||&#xe4;||a
 \"O||&#xd6;||O
 \"o||&#xf6;||o
-\"u||&#xfc;||u
+\"u||&#xfc;||ue
 #
 \'a||&#xe1;||a
 \'c||&#x0107;||c
+\'E||&#xc9;||E
 \'e||&#xe9;||e
 \'\i ||&#xed;||i
 \'{\i}||&#xed;||i
@@ -78,6 +81,7 @@ R\r{u}\v{z}i\v{c}ka||R&#x016f;&#x017e;i&#x010d;ka||Ruzicka
 \^o||&#xf4;||o
 #
 \~a||&#xe3;||a
+\~n||&#xf1;||n
 #
 \=a||&#x0101;||a
 \=\i||&#x012b;||i

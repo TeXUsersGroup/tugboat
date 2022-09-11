@@ -300,21 +300,7 @@ sub accumulation_check {
        'Survey',
        'TUG 1991 Conference Proceedings Part 1',
        'TUG 1991 Conference Proceedings Part 2',
-       'TUG 2006',
-       'TUG 2007',
-       'TUG 2008',
-       'TUG 2010',
-       'TUG 2011',
-       'TUG 2012',
-       'TUG 2013',
-       'TUG 2014',
-       'TUG 2015',
-       'TUG 2016',
-       'TUG 2017',
-       'TUG 2018',
-       'TUG 2019',
-       'TUG 2020',
-       'TUG 2021',
+       # all TUG 20\d\d accepted below, as a special case
        'TUG Business',
        'TUG News',
        'Talks',
@@ -362,6 +348,8 @@ sub accumulation_check {
 # above) contains all and only the keys in hash reference %$CHECK
 # (accumulated as we processed all the issues).
 # 
+# Single exception: if WHAT eq "category", allow any "TUG 20nn".
+# 
 sub accumulation_check1 {
   my ($what,$expected,$check) = @_;
 
@@ -371,6 +359,8 @@ sub accumulation_check1 {
   for my $k (sort keys %$check) {
     if (exists $expected{$k}) {
       $expected{$k}++;
+    } elsif ($what eq "category" && $k =~ /^TUG 20\d\d$/) {
+      next;
     } else {
       # Check for unwittingly introducing new difficulties or categories.
       warn "$what unexpected: $k\n";    

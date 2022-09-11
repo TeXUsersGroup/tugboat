@@ -84,6 +84,11 @@ END_LISTS
     print qq!\n<h2><a href="$issue{url}">$issue{urllabel}</a></h2>\n\n!;
     warn "issue urllabel empty, but url given: $issue{url}\n"
       if ! $issue{"urllabel"};
+
+  } elsif ($issue{"urllabel"}) {
+    # Print the urllabel as text if there is no url;
+    # this happens with old proceedings and occasional other issues.
+    print qq!\n<h2>$issue{urllabel}</h2>\n\n!;
   }
 
   print qq!<p id="blurb">\n!;

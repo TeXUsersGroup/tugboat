@@ -56,36 +56,49 @@ sub crossref_write_files {
       # 
       # Sometimes there will be no First part, e.g.,
       # TUG&nbsp;Elections&nbsp;Committee (or 0xa0 instead of nbsp).
-      # That's ok, we can just check.
+      # That's ok, we can just check for a comma (between Last and First).
       # 
-      # But, painful exception: when there is a jr part, we have to pass
+      # But, painful exception: when there is a Jr part, we have to pass
       # in the original "von Last, Jr., First", because that is what
-      # gets recognized. Fortunately, in our case, we have only two
-      # names with jr parts, and in both cases the jr part is in fact
-      # "Jr.", and they do not have a von part: Harry L.
-      # Baldwin,\CONNECT{}Jr. and Frank G. Bennett,\CONNECT{}Jr.
-      # As seen, the Jr. is always preceded by \CONNECT{} (which becomes
-      # &#xa0;), not a plain space. So it is easy to check for.
+      # gets recognized in bibtexperllibs (BibTeX/Parser/Author.pm).
+      # Fortunately, we have only a few names with Jr parts.
       # 
-      # Overall, there should be only one occurrence of ", " in the
-      # author name, the one between Last and First. So we can split at
-      # that to determine Last and First, and then if Last ends with
-      # &nbsp;Jr., go back to the original. Fun, but it's what we have to do.
+      # - sometimes "Jr.": Harry L. Baldwin,\CONNECT{}Jr. and
+      #   Frank G. Bennett,\CONNECT{}Jr. As seen, we precede the Jr. with
+      #   \CONNECT{} (which becomes &#xa0;), not a plain space (because
+      #   we don't want to allow line breaks there).
+      # - sometimes "III" or similar: Hugh Paterson\CONNECT{}III
+      #   (tb134). We still have the \CONNECT, but no comma. So we have
+      #   to rearrange the name for the rpi file, which requires a comma
+      #   before the jr part.
       # 
-      # By the way, it's still useful to be using this
-      # already-transformed author list, since for rpi purposes we do
-      # want unifications, and it's a lot easier to reparse its
-      # consistent format than to deal with the originals.
+      # Except when there is a Jr part, there should be only one
+      # occurrence of ", " in the author name, the one between Last and
+      # First. So we can split at that to determine Last and First.
+      # Then, if Last ends with a Jr part (we just check for the known
+      # strings), handle that separately. Painful, but it's what we have
+      # to do.
+      # 
+      # By the way, it's useful to be using this already-transformed
+      # author list, since for rpi purposes we do want unifications, and
+      # it's a lot easier to reparse its consistent format than to deal
+      # with the originals.
       # 
       my ($last,$first) = split (/, /, $a, 2);
       my $name_for_rpi;
-      if ($last =~ /&(#xa0|nbsp);Jr\.$/) {
+      if ($last =~ /&(#xa0|nbsp);Jr\.$/) {         # Jr part: "Jr."
         $name_for_rpi = $a; # the original 
+      } elsif ($last =~ /&(#xa0|nbsp);([IV]+)$/) { # Jr part: "III", etc.
+        my $jr = $2;
+        $last =~ s/$&$//;              # remove it from Last part
+        $name_for_rpi = "$last, $jr";  # re-insert it with comma
+        $name_for_rpi .= ", $first" if $first;
       } else {
         # if no First part, don't include spurious leading space.
         $name_for_rpi = $first ? "$first $last" : $last;
       }
       $name_for_rpi =~ s/&(#xa0|nbsp);/ /g; # just spaces
+      #warn "name4rpi = $name_for_rpi (last=$last, first=$first)\n";
       push (@rpi_authors, $name_for_rpi);
     }
     #
