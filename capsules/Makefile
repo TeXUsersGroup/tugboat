@@ -21,7 +21,7 @@ default check: one #all-diff
 
 # These issue values, and most of the targets below, come into play with
 # publishing a TUGboat issue; see the README.karl file on tug.org.
-testiss = 134
+testiss = 133
 lastiss = 134
 crossref_iss = 134
 
@@ -120,7 +120,7 @@ install-test: all
 
 # check id entries in new file (from install-test) with existing.
 diff-id:
-	#fgrep id= ~www/TUGboat/Contents/listauthor.html >/tmp/prev
+	fgrep id= ~www/TUGboat/Contents/listauthor.html >/tmp/prev
 	fgrep id= ~www/TUGboat/toctest/listauthor.html   >/tmp/new
 	diff /tmp/prev /tmp/new
 

@@ -13,12 +13,6 @@
 % 
 
 \begin{blurb}
-<p>Immediate online access to technical TUGboat articles will be
-available to TUG members only (so some of the links below require a TUG
-username and password).  General information items and articles already
-posted elsewhere are publicly available now.  All of the articles will
-become publicly available after the next issue is published.
-
 <p>If you're not already a member, we hope you'll consider <a
 href="/join.html">joining TUG</a> to support TUGboat and other TeX
 projects.  <a href="/memberaccess.html">More information on TUG member
@@ -35,7 +29,7 @@ access</a>.
         {Complete issue 43:1 as one pdf (3mb)}
         {}
         {\offset{.1}}
-        {https://tug.org/members/TUGboat/!TBIDENT!complete.pdf}
+        {/TUGboat/!TBIDENT!complete.pdf}
         {}
         {}
 
@@ -167,7 +161,7 @@ access</a>.
 %%%   {Typographers' Inn}
 %%%   {Page numbering revisited; Type 1 (PostScript) fonts; Afterthought}
 %%%   {\getfirstpage{inn}}
-%%%   {https://tug.org/members/TUGboat/!TBIDENT!inn.pdf}
+%%%   {/TUGboat/!TBIDENT!inn.pdf}
 %%%   {}
 %%%   {}
 %%%
@@ -177,7 +171,7 @@ access</a>.
 %%%%  {Historical review of \TeX{}3}
 %%%%  {a 1991 review of \TeX, written for those experienced in other typesetting systems}
 %%%%  {\getfirstpage{flynn-tex3}}
-%%%%  {https://tug.org/members/TUGboat/!TBIDENT!flynn-tex3.pdf}
+%%%%  {/TUGboat/!TBIDENT!flynn-tex3.pdf}
 %%%%  {}
 %%%%  {}
 %
@@ -208,7 +202,7 @@ access</a>.
 %%%   {discussion with the associate curator at \acro{RIT}'s Cary Graphic
 %%%    Arts Collection, \url{cary.rit.edu}}
 %%%   {\getfirstpage{hugill-fontanel-walden}}
-%%%   {https://tug.org/members/TUGboat/!TBIDENT!hugill-fontanel-walden.pdf}
+%%%   {/TUGboat/!TBIDENT!hugill-fontanel-walden.pdf}
 %%%   {}
 %%%   {}
 
@@ -221,7 +215,7 @@ access</a>.
   {Making open source textbooks, and diagrams with AlDraTex}
   {collaborative textbooks and graphics with [\texttt{Al}]\texttt{DraTex.sty}}
   {23-27}
-  {https://tug.org/members/TUGboat/!TBIDENT!bergmann-diagrams.pdf}
+  {/TUGboat/!TBIDENT!bergmann-diagrams.pdf}
   {}
   {}
 
@@ -282,7 +276,7 @@ access</a>.
 %  {Preventing tofu with pdf\TeX{} and Unicode engines}
 %  {input and font encodings, missing characters, Unicode, \cs{tracinglostchars}}
 %  {\getfirstpage{mitt-tofu}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!mitt-tofu.pdf}
+%  {/TUGboat/!TBIDENT!mitt-tofu.pdf}
 %  {}
 %  {}
 %
@@ -302,7 +296,7 @@ access</a>.
   {Markdown 2.15.0: What's new?}
   {new features both for Markdown writers and coders of templates and solutions}
   {10-15}
-  {https://tug.org/members/TUGboat/!TBIDENT!novotny-markdown.pdf}
+  {/TUGboat/!TBIDENT!novotny-markdown.pdf}
   {}
   {}
 
@@ -313,7 +307,7 @@ access</a>.
 %%%%  {development status and comparison of Lua\TeX\ and its relatives:
 %%%%   Lua\acro{HB}\TeX, Lua\acro{JIT}\TeX\ and Lua\acro{JITHB}\TeX}
 %%%%  {\getfirstpage{scarso-luatex}}
-%%%%  {https://tug.org/members/TUGboat/!TBIDENT!scarso-luatex.pdf}
+%%%%  {/TUGboat/!TBIDENT!scarso-luatex.pdf}
 %%%%  {}
 %%%%  {}
 %%%
@@ -324,7 +318,7 @@ access</a>.
 %%%  {OpenType fonts greatly extending Latin Modern,
 %%%   with complete coverage of Unicode math (\tbsurl{ctan.org/pkg/newcm})}
 %%%  {\getfirstpage{tsolomitis-newcm}}
-%%%  {https://tug.org/members/TUGboat/!TBIDENT!tsolomitis-newcm.pdf}
+%%%  {/TUGboat/!TBIDENT!tsolomitis-newcm.pdf}
 %%%  {}
 %%%  {}
 %%%
@@ -334,7 +328,7 @@ access</a>.
 %%%%%   {Webnotes: Practical approaches}
 %%%%%   {putting an article's supplemental material on the web, with references}
 %%%%%   {\getfirstpage{walden-webnotes}}
-%%%%%   {https://tug.org/members/TUGboat/!TBIDENT!walden-webnotes.pdf}
+%%%%%   {/TUGboat/!TBIDENT!walden-webnotes.pdf}
 %%%%%   {}
 %%%%%   {}
 %%%
@@ -378,7 +372,7 @@ access</a>.
 %  {generating graphics from \url{openstreetmap.com} data with MetaPost
 %   and \ConTeXt}
 %  {\getfirstpage{hagen-openstreetmap}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!hagen-openstreetmap.pdf}
+%  {/TUGboat/!TBIDENT!hagen-openstreetmap.pdf}
 %  {}
 %  {}
 %
@@ -388,7 +382,7 @@ access</a>.
 %%%  {Working remotely from an island: \textsf{arara} and other tools}
 %%%  {build tool \textsf{arara}, font finder \textsf{albatross}, \textsf{texdoc} online}
 %%%  {\getfirstpage{island-tools}}
-%%%  {https://tug.org/members/TUGboat/!TBIDENT!island-tools.pdf}
+%%%  {/TUGboat/!TBIDENT!island-tools.pdf}
 %%%  {}
 %%%  {}
 %%%
@@ -398,7 +392,7 @@ access</a>.
 %%%%%%%%   {\TeX\ Gyre text fonts revisited}
 %%%%%%%%   {incorporating math and symbol glyphs into text fonts, and OpenType accent positioning}
 %%%%%%%%   {\getfirstpage{jackowski-gyre}}
-%%%%%%%%   {https://tug.org/members/TUGboat/!TBIDENT!jackowski-gyre.pdf}
+%%%%%%%%   {/TUGboat/!TBIDENT!jackowski-gyre.pdf}
 %%%%%%%%   {}
 %%%%%%%%   {}
 
@@ -418,7 +412,7 @@ access</a>.
 %  {Controlling captions, fullpage and doublepage floats: \texttt{hvfloat}}
 %  {extensive examples of floating layouts, complex and simple}
 %  {\getfirstpage{voss-hvfloat}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!voss-hvfloat.pdf}
+%  {/TUGboat/!TBIDENT!voss-hvfloat.pdf}
 %  {}
 %  {}
 
@@ -428,7 +422,7 @@ access</a>.
   {\texttt{l3build}: The beginner's guide}
   {testing, preparing, installing, and uploading releases of packages}
   {40-43}
-  {https://tug.org/members/TUGboat/!TBIDENT!wright-l3build.pdf}
+  {/TUGboat/!TBIDENT!wright-l3build.pdf}
   {}
   {}
 
@@ -442,7 +436,7 @@ access</a>.
   {automated removal of widow and orphan lines, without stretching, in
    all Lua formats}
   {28-39}
-  {https://tug.org/members/TUGboat/!TBIDENT!chernoff-widows.pdf}
+  {/TUGboat/!TBIDENT!chernoff-widows.pdf}
   {}
   {}
 
@@ -452,7 +446,7 @@ access</a>.
 %%%%  {Functions and \texttt{expl3}}
 %%%%  {an introduction to \LaTeX3 programming with functions and variables}
 %%%%  {\getfirstpage{gregorio-l3functions}}
-%%%%  {https://tug.org/members/TUGboat/!TBIDENT!gregorio-l3functions.pdf}
+%%%%  {/TUGboat/!TBIDENT!gregorio-l3functions.pdf}
 %%%%  {}
 %%%%  {}
 %%%
@@ -462,7 +456,7 @@ access</a>.
 %%%  {Scaled fonts and glyphs}
 %%%  {engine extensions in \code{lmtx} for dynamic glyph scaling}
 %%%  {\getfirstpage{hagen-scaled}}
-%%%  {https://tug.org/members/TUGboat/!TBIDENT!hagen-scaled.pdf}
+%%%  {/TUGboat/!TBIDENT!hagen-scaled.pdf}
 %%%  {}
 %%%  {}
 %%%
@@ -473,7 +467,7 @@ access</a>.
 %%%  {meeting the generalized mediation macro challenge in
 %%%   Appendix\CONNECT{}D of \MFB}
 %%%  {\getfirstpage{hu-bernstein}}
-%%%  {https://tug.org/members/TUGboat/!TBIDENT!hu-bernstein.pdf}
+%%%  {/TUGboat/!TBIDENT!hu-bernstein.pdf}
 %%%  {}
 %%%  {}
 
@@ -484,7 +478,7 @@ access</a>.
    book of poisons)}
   {glossary definitions in documents; reordering glossary entries in multiple ways}
   {44-58}
-  {https://tug.org/members/TUGboat/!TBIDENT!talbot-bib2gls-reorder.pdf}
+  {/TUGboat/!TBIDENT!talbot-bib2gls-reorder.pdf}
   {}
   {}
 
@@ -495,7 +489,7 @@ access</a>.
    and the plain \TeX\ format}
   {require user confirmation on \cs{input} and other operations}
   {59-72}
-  {https://tug.org/members/TUGboat/!TBIDENT!wermuth-trio.pdf}
+  {/TUGboat/!TBIDENT!wermuth-trio.pdf}
   {}
   {}
 
