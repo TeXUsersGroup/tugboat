@@ -23,7 +23,7 @@ default check: one #all-diff
 # publishing a TUGboat issue; see the README.karl file on tug.org.
 testiss = 133
 lastiss = 134
-crossref_iss = 134
+crossref_iss = 133
 
 # use different temp dir on different machines.
 mydir := $(shell ls ~karl/public_html 2>/dev/null)
@@ -88,8 +88,9 @@ crxml:
 # qqq need to compute /tb directory name.
 # qqq figure out identical files.
 diff-land:
+	-grep 'available to TUG members' $(cr_lndout)/*.html
 	for f in $(cr_lndout)/*.html; do \
-	  diff -u0 $(tubweb)/tb42-1/`basename $$f` $$f; \
+	  diff -u0 $(tubweb)/tb43-1/`basename $$f` $$f; \
 	done | egrep -v '\[generated|^\+\+\+ |^@@ '
 
 upload-test upload-real:

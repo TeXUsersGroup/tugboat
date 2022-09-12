@@ -164,6 +164,21 @@ E.g.:
 Cannot use the "next doi" links because the dois are not registered yet;
 see next.
 
+When close enough to making the pdfs public, do the production
+crossref upload. It costs money to register dois, so you have to edit
+crossref/Makefile to enable it:
+  # temporarily delete "checkme!" from crossref/Makefile
+  make upload-real  # in crossref subdirectory
+  # undo Makefile edit
+Can check the production site for progress:
+  https://doi.crossref.org -> Show System Queue
+
+Should register the dois some days before making the pdfs public, so
+that the "doi" links on the landing pages will work for testing, and the
+doi links on the contents pages will work after publishing. Also, doi
+registration might take significant time, unless crossref has improved
+their system. Can check status at https://doi.crossref.org.
+
 Then commit any changes to our source files:
  cd ~tubprod/svn/capsules
  svn status
@@ -172,7 +187,8 @@ Then commit any changes to our source files:
  svn commit ...
 (if needed, also commit changes in bibtexperllibs and crossrefware.)
 
-Then archive all the files:
+Register the production dois before archiving.
+Then archive all the files (after registering):
   # if working on another machine, copy final abs/bbl to tug:
   cd ~tubprod/VV-N
   tar czf absbbl.tgz */abs.tex */bbl.tex
@@ -202,20 +218,6 @@ Then archive all the files:
   svn status
   svn commit -m"tb$nnn uploaded files archived" dir*
 
-When close enough to making the pdfs public, do the production
-crossref upload. It costs money to register dois, so you have to edit
-crossref/Makefile to enable it:
-  # temporarily delete "checkme!" from crossref/Makefile
-  make upload-real  # in crossref subdirectory
-  # undo Makefile edit
-Can check the production site for progress:
-  https://doi.crossref.org -> Show System Queue
-
-It is good to register the dois before making the pdfs public, so that
-the "doi" links on the contents pages will work. Also, doi registration
-might take significant time, unless crossref has improved their system.
-Can check status at https://doi.crossref.org.
-
 Then install pdfs, per README-tug-procedures.
 
  Updating past issues: when an issue is published, the previous issue
@@ -237,10 +239,21 @@ make cro-scratch
 - check diffs (no more "available to TUG members"):
 make diff-land  # need to fix /tb directory name
 
-- assuming ok, scp landing files as above, ideally only the changed ones.
+- assuming ok, scp landing files as above, ideally only the changed ones:
+scp tbPREVNitem1.html ... $host:/home/httpd/html/TUGboat/tbVV-PREVN/
 
-= If there were hand edits in the crossref/dir2.process directory
-(hopefully not), have to take more care.
+- update the archived changed landing files in
+  dir1.lndout/archive.tbPREVN:
+mv dir1.lndout/tbPREVitem1.html ... dir1.lndout/archive.tbPREVN/
+
+- let's not bother to update the archives in the other dir*,
+  since the landing files are all that's actually being changed live.
+  Instead, remove the generated files so we'll be clean for next time:
+ls -lt dir*/tbPREV* # bbl/abs should be old, all else new
+rm dir*/tbPREV*.*
+
+=== If there were hand edits in the crossref/dir2.process directory
+(hopefully not), have to take more care, as follows:
 - in capsules/crossref/dir*, move away existing files, to preserve any
   hand edits, and then
 cp archive.PREVN/* .
@@ -252,8 +265,8 @@ cp archive.PREVN/* .
 
  Uploading corrections. When needing to make updates to a
 previously-uploaded issue, e.g., we got the url wrong:
-cp dir3.uploaded/tbNNN/issue{,-corr}.xml 
-edit the new issue-corr.xml as needed; update timestamp values
+cp dir3.uploaded/tbNNN/issue{,-corr`date +%Y%m%d`}.xml 
+edit the new issue-corr*.xml as needed; update timestamp values
   for affected records, and for the whole upload.
   unchanged records must be removed from the file, else crossref will
     fail to do any updates (though their process reports "success" on

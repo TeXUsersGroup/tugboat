@@ -114,7 +114,8 @@ sub update_landing_bbl {
           my $newcite = "";
           for my $word (split (" ", $cite)) {
             #warn "checking $word\n";
-
+            my ($w1,$w2);
+            
             # try to detect http(s) urls, with or without a protocol,
             # possibly followed by a period or comma.
             my ($prot,$urlbase) = "";
@@ -136,15 +137,23 @@ sub update_landing_bbl {
             #
             # Maybe we should force spaces after such bib abbrevs,
             #   but that doesn't seem ideal either.
-            } elsif ($word =~ m!^([a-z0-9-]{2,})\.([a-z0-9-]{2,})[.,]?!i
-                     && $2 =~ /[a-z]/i
-                     && (! $1 || $1 !~ /^(no?|v(ol)?|pp?|iss)$/i)
-                     && (! $2 || $2 !~ /^(sty|cls)$/i)) {
+            # 
+            # The assignments in the middle of the condition aren't
+            # pretty, but it's an easy way to save the values of the
+            # capture groups before doing another match.
+            # 
+            } elsif ($word !~ /^comp\.text\.tex,*/
+                     && $word =~ m!^([a-z0-9-]{2,})\.([a-z0-9-]{2,})[.,]?!i
+                     && ($w1 = $1) && ($w2 = $2) # save capture groups
+                     && $w2 =~ /[a-z]/i
+                     && (! $w1 || $w1 !~ /^(no?|v(ol)?|pp?|iss)$/i)
+                     && (! $w2 || $w2 !~ /^(cls|sty)$/i)
+                    ) {
               $prot = "https";
               $urlbase = $word;
-              #warn " got implicit urlbase $urlbase\n";
+              #warn " got implicit urlbase |$urlbase| from: |$word| 1=$w1 2=$w2\n";
             }
-            #warn "  1=$1, 2=$2, for $word\n";
+            #warn "  1=$w1, 2=$w2, for $word\n";
             
             $newcite .= " " if $newcite; # single spaces between words
             if ($prot) {

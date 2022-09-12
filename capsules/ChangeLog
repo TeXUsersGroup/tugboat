@@ -1,3 +1,14 @@
+2022-09-12  Karl Berry  <karl@freefriends.org>
+
+	* cr-landing-bbl-abs (update_landing_bbl): when determining if we
+	have a $urlbase without protocol, save capture groups
+	in variables so they don't get lost. Don't link to comp.text.tex
+	(by itself), as an explicit special case (tb133wermuth-trio).
+	
+	* Makefile (crossref_iss): tb133 = 43:1 now public.
+	(diff-land): check for any "TUG members" words remaining (should
+	be none).
+
 2022-09-11  Karl Berry  <karl@freefriends.org>
 
 	* tb134capsule.txt: new issue, 43:2.
