@@ -1,5 +1,10 @@
 2022-09-12  Karl Berry  <karl@freefriends.org>
 
+	* tb134capsule.txt: failed to capitalize Interview.
+
+	* tb130capsule.txt (\issue): forgot to remove "members only" from
+	the blurb.
+
 	* cr-landing-bbl-abs (update_landing_bbl): when determining if we
 	have a $urlbase without protocol, save capture groups
 	in variables so they don't get lost. Don't link to comp.text.tex
