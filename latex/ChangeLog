@@ -1,3 +1,7 @@
+2022-09-18  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\cs, \tubbraced): use \texorpdfstring.
+
 2022-09-03  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\pdfTeX): define, another unnecessary macro people

@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2022-09-03 v2.27
+                   [2022-09-18 v2.27
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -1225,12 +1225,18 @@
 % Use \tt rather than \texttt because italic typewriter is just too ugly,
 % and upright works well enough in both italic and bold contexts.
 % Would be nice to change catcode of _ for LaTeX3.
-\DeclareRobustCommand{\cs}[1]{{\tt \char`\\#1}}
+\DeclareRobustCommand{\cs}[1]{\texorpdfstring
+  {{\tt \char`\\#1}}%
+  {\textbackslash #1}%
+}
 %
 % This command was defined much later than the others around here, so
 % let's not conflict with any existing definitions that might be out there.
 % Don't allow hyphenations or other line breaks.
-\DeclareRobustCommand{\tubbraced}[1]{\mbox{\texttt{\char`\{#1\char`\}}}}
+\DeclareRobustCommand{\tubbraced}[1]{\texorpdfstring
+  {\mbox{\texttt{\char`\{#1\char`\}}}}%
+  {\textbraceleft #1\textbraceright}%
+}
 %
 % Well, just the \begin part.  Never seen it used.
 \DeclareRobustCommand{\env}[1]{\cs{begin}\tubbraced{#1}}
