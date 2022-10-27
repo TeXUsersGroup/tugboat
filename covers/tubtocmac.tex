@@ -153,9 +153,10 @@
 
 % some fake LaTeX
 \def\emph#1{{\it #1}}
+\def\textbf#1{{\bf #1}}
 \def\textit#1{{\it \def\&{\sl\char`& }#1}}
 \def\textrm#1{{\rm #1}}
-\def\textsf#1{{\sf #1}}
+%\def\textsf#1{{\sf #1}} % intentionally leave out, we want to use tt
 \def\textsl#1{{\sl #1}}
 \def\texttt#1{{\tt #1}}
 

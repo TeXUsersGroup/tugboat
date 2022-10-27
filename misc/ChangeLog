@@ -1,3 +1,13 @@
+2022-10-26  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr-ctx (\LUAMETATEX): explicit hyphen.
+	(\MSWORD, \TEXGYRE, \XITS): new abbrevs.
+	(\typ): define as \type, not \url.
+	(\startlinecorrection): change to ignoring argument.
+	(\startluacode, \startMPcode, \startMPdefinitions, \startplacefigure):
+	make \long.
+	For tb135hagen-mathchange.
+
 2022-09-03  Karl Berry  <karl@freefriends.org>
 
 	* html2tex-tub: handle eeacute and uuml.

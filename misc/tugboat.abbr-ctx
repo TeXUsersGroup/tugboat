@@ -1,10 +1,10 @@
 % $Id$
-% Copyright 1999-2020 TeX Users Group.
+% Copyright 1999-2022 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
-% "fake" ConTeXt in LaTeX, for simple-enough documents.
-% Does not even pretend to be exhaustive, but still goes some way to
-% minimizing diffs from the original sources.
+% "Poor man's" ConTeXt in LaTeX, for simple-enough documents.
+% Not truly emulating anything; the intent is just to go some way
+% towards minimizing diffs from the original sources.
 % Frontmatter has to be done by hand,
 % and \stoptyping and \stopbuffer replaced with \end{verbatim}.
 
@@ -71,7 +71,7 @@
 \def\LUAJIT    {Lua\acro{JIT}}
 \def\LUAJITTEX {Lua\acro{JIT\TeX}}
 \def\LUALATEX  {Lua\LATEX}
-\def\LUAMETATEX{Lua\METATEX}
+\def\LUAMETATEX{Lua\-\METATEX}
 \def\LUATEX    {\LUA\-\TeX}
 \def\LUATOOLS  {{\tt luatools}}
 \def\Lua       {Lua}
@@ -87,7 +87,7 @@
 \def\METAFUN   {Metafun}
 \def\METAPOST  {MetaPost}
 \def\MetaPost  {MetaPost}
-\def\METATEX   {Meta\TeX}
+\def\METATEX   {Meta\-\TeX}
 \def\MICROSOFT {Micro\-soft}
 \def\MINGW     {Min\acro{GW}}
 \def\MIKTEX    {MiK\-\TeX}
@@ -104,6 +104,7 @@
 \def\MPTO      {{\tt mpto}}
 \def\MPTOPDF   {{\tt mptopdf}}
 \def\MSWINDOWS {Windows}
+\def\MSWORD    {Word}
 \def\MTXRUN    {{\tt mtxrun}}
 \def\NOWEB     {\acro{NOWEB}}
 \def\OCE       {\acro{OCE}}
@@ -132,6 +133,7 @@
 \def\TDS       {\acro{TDS}}
 \def\TEX       {\TeX}
 \def\TEXEXEC   {{\tt texexec}}
+\def\TEXGYRE   {\TeX\ Gyre}
 \def\TEXLIVE   {\TeX\ Live}
 \def\TEXLUA    {{\tt texlua}}
 \def\TEXMFSTART{{\tt texmfstart}}
@@ -157,6 +159,7 @@
 \def\WINDOWS   {Windows}
 \def\XETEX     {\XeTeX}
 \def\XFORM     {\acro{XF}orm}
+\def\XITS      {\acro{XITS}}
 \def\YANDY     {\acro{Y\&Y}}
 \def\ZIP       {{\tt zip}}
 \def\pdfTeX    {pdf\-\/\TeX}
@@ -238,13 +241,14 @@
 \def\setuplayout[#1]{}
 
 \def\type{\bgroup
-   \catcode`_=12 \catcode`\\=12 \catcode`##=12 \catcode`\&=12 \catcode`$=12
-   \catcode`\%=12 \def\\{\char`\\ }%
-   \finishtype}
+  \catcode`\\=12 \catcode`##=12 \catcode`\&=12 \catcode`$=12 \catcode`_=12
+  \catcode`\%=12 %\catcode`!=0
+  \def\\{\char`\\ }%
+  \finishtype}
 \def\finishtype#1{\texttt{%
   \spaceskip = .3333em \xspaceskip = \spaceskip
   #1}\egroup\spacefactor=1000 }
-\def\typ{\url}
+\def\typ{\type}
 
 %  start .. stop
 
@@ -290,22 +294,21 @@
 \def\startKeywords{\smallskip\noindent\begingroup\raggedright{\bf Keywords:\ }}
 \def\stopKeywords{\par\endgroup}
 
-\def\startlinecorrection{\par}
-\def\stoplinecorrection{\par}
+\long\def\startlinecorrection#1\stoplinecorrection{}
 
 \def\startlines{\begingroup\obeylines\parindent=0pt}
 \def\stoplines{\endgroup}
 
-\def\startluacode#1\stopluacode{}
+\long\def\startluacode#1\stopluacode{}
 
-\def\startMPcode#1\stopMPcode{\par}
+\long\def\startMPcode#1\stopMPcode{\par}
 
-\def\startMPdefinitions#1\stopMPdefinitions{}
+\long\def\startMPdefinitions#1\stopMPdefinitions{}
 
 \def\startnarrower{\startquotation}
 \def\stopnarrower{\stopquotation}
 
-\def\startplacefigure#1\stopplacefigure{} % too complicated
+\long\def\startplacefigure#1\stopplacefigure{} % too complicated
 
 \def\startquotation{\begingroup \origquotation}
 \def\stopquotation{\par\endgroup\smallskip}

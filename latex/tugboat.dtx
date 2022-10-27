@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2022-09-18 v2.27
+                   [2022-10-26 v2.27
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -240,7 +240,8 @@
 % |\revtitle|&   with one argument, title of \ldots \\
 % |\revpubinfo|& with one argument, other info pertaining to \ldots \\
 % |\endreviewitem|& end data for item being reviewed\\
-% |\booktitle|&  with one argument, format book title as straight text\\
+% |\titleref|&   with one argument, format title as straight text
+%                (slanted, frenchspacing) \\
 % |\Input|&      |\input| with some other bookkeeping for
 %                case where multiple articles are put together\\
 % |\TBremark|&   reminder to \TUB{} editorial staff\\
@@ -652,6 +653,11 @@
 % probably doesn't need to be\dots  What's more, it doesn't appear in
 % the mythical 2.09 version of the package.)
 %
+% We end up wanting this fairly often, and \LaTeX\ removed \cs{line}.
+%    \begin{macrocode}
+\def\tubline{\hbox to \hsize}
+%    \end{macrocode}
+% 
 % \subsection{Abbreviations and logos}
 % \label{abbr-logo}
 %
@@ -1401,7 +1407,8 @@
   \therevauth\therevtitle\therevpubinfo\endgraf}%
   \vskip\medskipamount
 }
-\def\booktitle#1{{\slshape\frenchspacing#1\/}}
+\def\titleref#1{{\slshape\frenchspacing#1\/}}
+\let\booktitle=\titleref % older name
 %    \end{macrocode}
 %
 % \subsection{Dates, volume and issue numbers, etc.}

@@ -1,3 +1,8 @@
+2022-10-26  Karl Berry  <karl@freefriends.org>
+
+	* tubtocmac.tex (\textbf): define.
+	(\textsf): do not define, to catch package names we want in tt.
+
 2022-04-13  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.front (\smc): define as scaled cmcsc, so "Algol"
