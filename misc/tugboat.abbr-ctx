@@ -173,6 +173,7 @@
 \def\citetitle{\textsl}
 \def\crlf{\newline}
 \def\ctxluabuffer[#1]{}
+\def\definecolor[#1][#2]{}
 \def\definefont[#1]#2[#3]{}
 \def\definefontfeature[#1][#2][#3]{}
 \def\definefontsynonym[#1]#2[#3]{}
@@ -182,6 +183,7 @@
 \def\enabledirectives[#1]{}
 % width=.95\hsize
 \def\externalfigure[#1]#2[#3]{\centerline{\includegraphics[#3]{#1}}}
+\def\from{\tbsurl}
 \def\getnamedglyphdirect{}
 \def\head{\item}
 \def\high{\textsuperscript}
@@ -208,13 +210,14 @@
 \def\showframe{}
 \let\starorig=\star\def\star{\ensuremath{\starorig}}
 \def\starthead#1{\item[#1]}
-\def\starttitle[#1]{}
 \let\stop=\relax
 \def\stophead{}
 \def\subject{\section}
 \def\subsubject{\subsection}
+\def\switchtobodyfont[#1]{}
 \def\sym{\item}
 \def\tex{\cs}
+\def\texdefinition#1#2{}
 \def\tttf{\tt}
 \def\tx{\tt}
 %\def\unexpanded{}% etex primitive, microtype et al. need it
@@ -238,7 +241,9 @@
 \def\myfigureenv{figure}
 }
 
-\def\setuplayout[#1]{}
+\long\def\setuphead[#1][#2]{}
+\long\def\setuplayout[#1]{}
+\long\def\setupwhitespace[#1]{}
 
 \def\type{\bgroup
   \catcode`\\=12 \catcode`##=12 \catcode`\&=12 \catcode`$=12 \catcode`_=12
@@ -264,8 +269,16 @@
 \def\stopArticle{\makesignature \end{document}}
 \let\StopArticle=\stopArticle
 
-% can't do better
-\long\def\startcombination#1\stopcombination{[ignored combination, fix!!]}
+% sometimes we want to ignore buffers, sometimes print them.
+\def\tubignorebuffers{\long\def\startbuffer##1\stopbuffer{}}
+\def\tubverbatimbuffers{\let\startbuffer=\starttyping}
+\tubverbatimbuffers % default
+\newcommand{\typebuffer}[1][]{}% ignore possible optional arg
+\def\getbuffer{}
+\def\inlinebuffer{}
+\def\stopbuffer{\errmessage{must literally end verbatim buffer}}
+
+\long\def\startcombination#1\stopcombination{}
 
 {\obeylines \gdef\startcomponent{\bgroup \obeylines \ignoretoeol}%
  \gdef\ignoretoeol#1^^M{\egroup}%
@@ -274,7 +287,6 @@
  \global\let\startchapter=\startcomponent %
 }
 \def\stopcomponent{\stopArticle}
-\def\stoptitle{\stopArticle}
 
 \def\placeformula[#1]{\label{#1}}
 \def\startformula{\begin{equation}}% displaymath for no eqno
@@ -308,25 +320,19 @@
 \def\startnarrower{\startquotation}
 \def\stopnarrower{\stopquotation}
 
-\long\def\startplacefigure#1\stopplacefigure{} % too complicated
+\long\def\startplacefigure#1\stopplacefigure{}
+
+\def\startplacetable[#1]{}
+\def\stopplacetable{}
 
 \def\startquotation{\begingroup \origquotation}
 \def\stopquotation{\par\endgroup\smallskip}
 
-\def\tubextratyping{}
-\def\starttyping{\par\begin{verbatim}[\small \catcode`\|=12
-                                  \hfuzz=2pt \tubextratyping]}
-% \end{verbatim} has to be literal.
-\def\stoptyping{\errmessage{must literally end verbatim typing}}
+\long\def\starttexdefinition#1\stoptexdefinition{}
+\long\def\startTEXpage#1\stopTEXpage{}
 
-% sometimes we want to ignore buffers, sometimes print them.
-\def\tubignorebuffers{\long\def\startbuffer##1\stopbuffer{}}
-\def\tubverbatimbuffers{\let\startbuffer=\starttyping}
-\tubverbatimbuffers % default
-\newcommand{\typebuffer}[1][]{}% ignore possible optional arg
-\def\getbuffer{}
-\def\inlinebuffer{}
-\def\stopbuffer{\errmessage{must literally end verbatim buffer}}
+\let\starttext = \relax
+\let\stoptext = \stopArticle
 
 \def\startsection[title=#1]{\section{#1}}
 \def\stopsection{}
@@ -345,11 +351,11 @@
 \def\stopsubsubsection{}
 
 \def\starttabulate{\par\smallskip
-  \noindent\begingroup \catcode`|=12 \begin{tabular}}
+  \noindent\begingroup \catcode`|=9 \begin{tabular}}
 \def\stoptabulate{\end{tabular}\par\endgroup\smallskip}
-\def\stopplacetable{\end{table}}
 \def\EQ{}
 \def\BC{&}
+\def\BL{\FL}
 \def\NC{&}
 \def\NR{\\}
 \def\FL{\noalign{\smallskip}\hline\noalign{\tubsmallerskip}}
@@ -358,13 +364,14 @@
 \def\ML{\noalign{\tubsmallerskip}\hline\noalign{\tubsmallerskip}}
 \def\cc#1{\multicolumn{1}{c}{#1}}% center cell
 
-\def\starttexdefinition#1\stoptexdefinition{}
-\def\texdefinition#1#2{}
+\def\starttitle[#1]{}
+\def\stoptitle{\stopArticle}
 
-\let\starttext = \relax
-\let\stoptext = \stopArticle
-
-\def\switchtobodyfont[#1]{}
+\def\starttyping{\par\begin{verbatim}[\small \catcode`\|=12
+                                  \hfuzz=2pt \tubextratyping]}
+% \end{verbatim} has to be literal.
+\def\stoptyping{\errmessage{must literally end verbatim typing}}
+\def\tubextratyping{}
 
 % ||   en-dash in ConTeXt
 % |-|  normal hyphen with line break allowed

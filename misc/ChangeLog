@@ -1,3 +1,8 @@
+2022-10-28  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr-ctx (\definecolor, \from, \BL): new abbrevs.
+	For tb135hagen-lucida.
+
 2022-10-26  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.abbr-ctx (\LUAMETATEX): explicit hyphen.
