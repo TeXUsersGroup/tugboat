@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2022-10-26 v2.27
+                   [2022-11-06 v2.27
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -1619,7 +1619,7 @@
 \ifx\tubomithyphenations\@thisisundefined
 \hyphenation{Del-a-ware Dijk-stra Duane Eijk-hout
   Flor-i-da Free-BSD Ghost-script Ghost-view
-  Hara-lam-bous Jac-kow-ski Ja-pa-nese Karls-ruhe
+  Hara-lam-bous Jac-kow-ski Ja-pa-nese Karls-ruhe Lua-Meta
   Mac-OS Ma-la-ya-lam Math-Sci-Net
   Net-BSD Open-BSD Open-Office
   Pak-i-stan Pfa-Edit Post-Script Rich-ard Skoup South-all
@@ -1659,19 +1659,19 @@
 %    \end{macrocode}
 % \subsection{Page dimensions, glue, penalties, etc.}
 %    \begin{macrocode}
-\textheight 54pc
-\textwidth 39pc
-\columnsep 1.5pc
-\columnwidth 18.75pc
+\textheight 54pc     % 648pt = 645.58bp = 8.97in
+\textwidth 39pc      % 468pt = 466.25bp = 6.48in
+\columnsep 1.5pc     %  18pt =  17.93bp =  .249in
+\columnwidth 18.75pc % 225pt = 224.16bp = 3.11in
 \hfuzz 1pt
-\parindent \normalparindent
+\parindent \normalparindent % 20pt
 \parskip \z@ % \@plus\p@
 \leftmargini 2em
 \leftmarginv .5em
 \leftmarginvi .5em
 \oddsidemargin \z@
 \evensidemargin \z@
-\topmargin -2.5pc
+\topmargin -2.5pc   % 30pt = 29.89bp = .415in
 \headheight 12\p@
 \headsep 20\p@
 \marginparwidth 48\p@
@@ -1681,7 +1681,7 @@
 \parsep=3\p@\@plus\p@\@minus\p@
 \itemsep=\parsep
 %
-% The width of one column plus gutter (=243pt) is useful sometimes.
+% The width of one column plus gutter (=243pt =242.09bp) is useful sometimes.
 \newdimen\tubcolwidthandgutter
   \tubcolwidthandgutter=\columnwidth
   \advance\tubcolwidthandgutter by \columnsep

@@ -1,3 +1,8 @@
+2022-11-06  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\hyphenation): add Lua-Meta.
+	Add pc/pt/bp/in conversions for our page geometry.
+
 2022-10-26  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\tubline): \hbox to \hsize.
