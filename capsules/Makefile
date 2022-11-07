@@ -3,9 +3,15 @@
 
 debug = #-D #-D
 options = $(debug) #--stdout
+
+  # validation against installed pdfs:
 more_options =
-#more_options = --webroot=/home/tubprod/43-2/webdir  # desired: do local validation
-#more_options = --webroot=/ # disable url validation during doi setup
+  #
+  # local validation before installation:
+#more_options = --webroot=/home/tubprod/43-3/webdir
+  #
+  # disable url validation during doi setup:
+#more_options = --webroot=/
 
 # profiling.
 #profopt = -d:NYTProf
@@ -21,9 +27,9 @@ default check: one #all-diff
 
 # These issue values, and most of the targets below, come into play with
 # publishing a TUGboat issue; see the README.karl file on tug.org.
-testiss = 133
-lastiss = 134
-crossref_iss = 133
+testiss = 135
+lastiss = 135
+crossref_iss = 135
 
 # use different temp dir on different machines.
 mydir := $(shell ls ~karl/public_html 2>/dev/null)
@@ -122,7 +128,7 @@ install-test: all
 # check id entries in new file (from install-test) with existing.
 diff-id:
 	fgrep id= ~www/TUGboat/Contents/listauthor.html >/tmp/prev
-	fgrep id= ~www/TUGboat/toctest/listauthor.html   >/tmp/new
+	fgrep id= ~www/TUGboat/toctest/listauthor.html  >/tmp/new
 	diff /tmp/prev /tmp/new
 
 diff:
