@@ -1,0 +1,14 @@
+For package authors, creating a release is a regular process, ideal for
+automation. There are several steps to creating a release to \CTAN{}, for
+example ensuring documentation is updated, structuring an archive correctly and
+actually uploading the material.
+
+Some time ago, the \LaTeX{} Team extended their existing basic scripts to
+create an independent tool, \pkg{l3build}, which can cover all of those tasks.
+Most significantly, it included features to run comprehensive tests: this
+aspect was previously covered for \emph{TUGboat} (2014, \textbf{35}:3,
+pp.\,287--293, \tbsurl{tug.org/TUGboat/tb35-3/tb111mitt-l3build.pdf}).
+Here, I will
+give a more general overview of the tool, looking at how it can help package
+authors create releases in a quick and reliable manner.
+

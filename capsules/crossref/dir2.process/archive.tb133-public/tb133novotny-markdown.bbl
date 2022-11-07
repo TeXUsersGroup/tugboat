@@ -1,0 +1,33 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{1}
+
+\bibitem{IoT:2020:ITD}
+{Island of \TeX}.
+\newblock The {Island of \TeX}: Developing abroad, your next destination.
+\newblock \emph{TUGboat} 41(2):182--184, 2020.
+\newblock \url{https://tug.org/TUGboat/tb41-2/tb128island.pdf}
+
+\bibitem{knuth1999digital}
+D.~Knuth.
+\newblock \emph{Digital Typography}.
+\newblock No.~78 in \acro{CSLI} Lecture Notes. Center for the Study of Language
+  and Information (\acro{CSLI}), 1999.
+\newblock The second printing (2012) contains numerous corrections.
+
+\bibitem{novotny2021markdown}
+V.~Novotn\'{y}.
+\newblock Markdown 2.10.0: \LaTeX{} themes \& snippets, two flavors of
+  comments, and {LuaMeta\TeX}.
+\newblock \emph{TUGboat} 42(2):186--193, 2021.
+\newblock \url{https://tug.org/TUGboat/tb42-2/tb131novotny-markdown.pdf}
+
+\bibitem{thompson2010re}
+M.~Thompson.
+\newblock Re: Error in \textquotedbl{}cabal install pandoc\textquotedbl{},
+  2010.
+\newblock
+  \url{https://groups.google.com/g/pandoc-discuss/c/tKB4E7y6H2E/m/OiieKAuWsl4J}
+
+\end{thebibliography}

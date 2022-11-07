@@ -1,0 +1,11 @@
+        Research papers demonstrate that it is possible to use a \TeX\
+file to distribute malware to a victim's system. Although it seems
+that no report has been published about a virus of this kind in a real
+attack, the potential danger to abuse a \TeX\ source file to transport
+unfriendly code exists. This article explains an idea to make \TeX's
+file I/O\ more transparent and develops requirements to turn the
+idea into \TeX\ macros. Their application in a \TeX\ file received
+from an untrusted source identifies all file names used for I/O\
+operations. But the macros demand concentrated work with numerous text
+inputs and a non-beginner's knowledge of~\TeX. Furthermore, users
+should be patient, curious, and courageous.

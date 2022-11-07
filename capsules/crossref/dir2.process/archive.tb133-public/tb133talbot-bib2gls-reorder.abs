@@ -1,0 +1,8 @@
+Most articles that describe how to use the \sty{glossaries} package
+consider a single sorted list or possibly multiple lists where each
+list has a different set of entries (terms, symbols, abbreviations,
+etc.).  However, some documents may instead have each term described
+in the main matter, with references to the term linking back to that
+point in the document rather than to a summary list. Alternatively
+(or additionally) a document may have multiple lists consisting of
+the same set of entries ordered in different ways.

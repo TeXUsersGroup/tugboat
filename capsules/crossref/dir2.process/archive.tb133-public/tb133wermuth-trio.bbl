@@ -1,0 +1,97 @@
+\bibitem{citeLEET} Stephen Checkoway, Hovav Shacham, and Eric Rescorla,
+   ``Are Text-Only Data Formats Safe? Or, Use This \LaTeX\ Class File To
+   Pwn Your Computer'', {\sl Proceedings of LEET '10, USENIX} (2010), 8~pp.\par
+   \Biburl https://www.usenix.org/legacy/events/leet10/tech/full_papers/Checkoway.pdf\endurl
+   \Endbib(2021-06-18)
+
+\bibitem{citeCSR} Stephen Checkoway, Hovav Shacham, and Eric Rescorla,
+   ``Don't take \LaTeX\ files from strangers'',
+   {\sl;LOGIN: \bf35}:1 (2010), 17--22.\par
+   \biburl https://www.usenix.org/system/files/login/articles/73506-checkoway.pdf\endurl
+   \endbib(2021-06-18)
+
+\bibitem{citeXdvi} Eric Cooper, Bob Scheifler, Mark Eichin, Paul Vojta, et al.,
+   {\sl Xdvi man page}, Xdvik version 22.87.04, February 29, 2020, 34~pp.\par
+   \biburl https://tug.org/texlive/Contents/live/texmf-dist/doc/man/man1/xdvi.man1.pdf\endurl
+   \endbib(2021-12-19)
+
+\bibitem{citeDHD} Wouter Duivesteijn, Sibylle Hess, Xin Du,
+   ``How to cheat the page limit'',
+   {\sl WIREs Data Mining and Knowledge Discovery\/} 2020;10:e1361, 9~pp.\par
+   \biburl https://doi.org/10.1002/widm.1361\endurl
+   \endbib(2021-08-15)
+
+\bibitem{citeMD} Markus D\"urmuth, {\sl Novel Classes of Side Channels
+   and Covert Channels}, Ph.\thinspace D. thesis, Saarland University,
+   Saarbr\"ucken (2009), 146 pp.\par
+   \Biburl https://publikationen.sulb.uni-saarland.de/bitstream/20.500.11880/26018/1/Dissertation_1920_Duer_Mark_2009.pdf\endurl
+   \Endbib(2022-01-27)
+
+\bibitem{citeCTvA} Donald E. Knuth, \TB,
+   Volume~A of \CandT, Boston, Massachusetts: \AW, 1984.
+
+\bibitem{citeCTvB} Donald E. Knuth, \TP,
+   Volume~B of \CandT, Boston, Massachusetts: \AW, 1986.
+
+\bibitem{citeLP} Donald E.\ Knuth, {\sl Literate Programming},
+   Stanford, California: Center for the Study of Language and
+   Information, CSLI~Lecture Notes No.~27, 1992.
+
+\bibitem{citeDT} Donald E. Knuth, {\sl Digital Typography},
+   Stanford, California: Center for the Study of Language and
+   Information, CSLI Lecture Notes No.\ 78, 1999.
+
+\bibitem{citeCP} Donald E. Knuth, {\sl Companion to the Papers of Donald
+   Knuth}, Stanford, California: Center for the Study of Language and
+   Information, CSLI Lecture Notes No.\ 202, 2011.
+
+\bibitem{citeJL} Joachim Lammarsch, ``\acro{VM}/\acro{CMS} site report'',
+   {\sl \TUB\ \bf11}:3 (1990), 454--455.\par
+   \biburl https://tug.org/TUGboat/tb11-3/tb29site.pdf\endurl
+   \endbib(2021-06-18)
+
+\bibitem{citeGLetal} Guilhem Lacombe, Kseniia Masalygina, Anass Tahiri,
+   Carole Adam, C\'edric Lauradoux,
+   ``Can You Accept \LaTeX\ Files from Strangers? Ten Years Later'',
+   arXiv:2102.00856v1 [cs.\acro{CR}], 2021, 10~pp.\par
+   \biburl https://arxiv.org/abs/2102.00856\endurl
+   \endbib(2021-07-06)
+
+\bibitem{citeMcM} Keith Allen McMillan,
+   {\sl A platform independent computer virus}, M.\thinspace Sc. thesis,
+   University of Wisconsin, Milwaukee (1994), ix+28~pp.\par
+   \biburl ftp://coast.cs.purdue.edu/pub/doc/viruses/KeithMcMillan-PlatformIndependantVirus.ps\endurl
+   \endbib(2021-06-18)
+
+\bibitem{citeSP} Scott Pakin, reply to ``Malicious commands in \LaTeX'',
+   {\tt comp.text.tex}, August 7, 2008.\par
+   \Biburl https://groups.google.com/g/comp.text.tex/c/epWW3eV9udw\endurl
+   \Endbib(2021-07-06)
+   
+\bibitem{citeHD} Eric S. Raymond with Guy L. Steele Jr., eds.,
+   {\sl The New Hacker's Dictionary}, 3rd ed., Cambridge,
+   Massachusetts: MIT Press, 1996.\par
+   \biburl http://www.catb.org/esr/jargon/\endurl
+   \endbib(2021-07-11)
+
+\bibitem{citeRH} Red Hat Customer Portal:
+   {\sl RHSA-2012:0137 -- Security Advisory}, 15 February 2012.\par
+   \biburl https://access.redhat.com/errata/RHSA-2012:0137\endurl
+   \endbib(2021-08-15)
+
+\bibitem{citeTR} Tomas Rokicki, {\sl Dvips: A {\ninesl DVI}-to-\PS\ Translator},
+   version 2021.1, February 2021, 62~pp.\par
+   \biburl https://ctan.org/pkg/dvips\endurl
+   \endbib(2021-12-19)
+
+\bibitem{citeKT} Ken Thompson, ``Reflections on Trusting Trust'',
+   {\sl CACM \bf27}:8 (1984), 761--763.\par
+   \biburl https://dl.acm.org/doi/pdf/10.1145/358198.358210\endurl
+   \endbib(2022-01-27)
+
+\end{thebibliography}
+
+% Local Variables:
+% coding: iso-latin-9-unix
+% ispell-local-dictionary: "en_US"
+% End:

@@ -1,0 +1,56 @@
+\begin{thebibliography}{10}
+
+\bibitem{multicol}
+F.~Mittelbach.
+\newblock The \sty{multicol} package, 2021.
+\newblock \tbsurl{ctan.org/pkg/multicol}.
+
+\bibitem{hyperref}
+S.~Rahtz, H.~Oberdiek, {The {\LaTeX3} Project}.
+\newblock The \sty{hyperref} package, 2021.
+\newblock \tbsurl{ctan.org/pkg/hyperref}.
+
+\bibitem{stevens}
+S.~Stevens, A.~Bannon.
+\newblock \emph{Book of Poisons: {A} guide for writers}.
+\newblock Howdunit. Writer's Digest Books, 1st~\ignorespaces ed., 2007.
+
+\bibitem{samplebibfiles}
+N.~Talbot.
+\newblock Sample \texttt{bib} files.
+\newblock \\\tbsurl{dickimaw-books.com/latex/tugboat-bib2gls}.
+
+\bibitem{tugboat2020}
+N.~Talbot.
+\newblock \app{bib2gls}: selection, cross-references and locations.
+\newblock \emph{{TUG}boat} 41(3), 2020.
+\newblock \tbsurl{tug.org/TUGboat/tb41-3/tb129talbot-bib2gls-more.pdf}.
+
+\bibitem{bib2gls}
+N.~Talbot.
+\newblock \app{bib2gls}: Command line application to convert \texttt{.bib}
+  files to \texttt{glossaries-extra.sty} resource files, 2021.
+\newblock \tbsurl{ctan.org/pkg/bib2gls}.
+
+\bibitem{tugboat2021}
+N.~Talbot.
+\newblock \app{bib2gls}: sorting.
+\newblock \emph{{TUG}boat} 42(2), 2021.
+\newblock \tbsurl{tug.org/TUGboat/tb42-2/tb129talbot-sorting.pdf}.
+
+\bibitem{glossaries-extra}
+N.~Talbot.
+\newblock The \sty{glossaries-extra} package, 2021.
+\newblock \tbsurl{ctan.org/pkg/glossaries-extra}.
+
+\bibitem{glossaries}
+N.~Talbot.
+\newblock The \sty{glossaries} package, 2021.
+\newblock \tbsurl{ctan.org/pkg/glossaries}.
+
+\bibitem{mfirstuc}
+N.~Talbot.
+\newblock The \sty{mfirstuc} package, 2021.
+\newblock \tbsurl{ctan.org/pkg/mfirstuc}.
+
+\end{thebibliography}

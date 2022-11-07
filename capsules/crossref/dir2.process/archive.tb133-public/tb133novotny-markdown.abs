@@ -1,0 +1,14 @@
+At \acro{TUG} 2021, we celebrated the fifth birthday of Markdown in
+\TeX. In this article, we introduce new features developed in the months
+since, and ideas for the future development of the Markdown package.
+
+The article is divided into three sections. In the first two sections,
+we introduce the new features of Markdown to the two main audiences of
+Markdown:
+\begin{compactenumerate}
+\item the writers, who type content in Markdown, and
+\item the coders, who prepare templates and solutions.
+\end{compactenumerate}
+In Section 3, we discuss ideas for the future to the third audience of
+Markdown: the developers, who alter and further improve the Markdown
+package.

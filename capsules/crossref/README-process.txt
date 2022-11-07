@@ -2,17 +2,16 @@ $Id$
 Detailed steps for TUGboat -> crossref processing. Public domain.
 Originally written 2021 Karl Berry.
 
-First, in each dir?.*, preserve files from the previous issue here in ./
-if not already done:
-  nnn=...
-  for d in dir{0,1,2}.*; do (cd $d && echo $d && mkdir archive.tb${nnn} \
-                             && mv tb${nnn}* archive.tb${nnn}); done
+First, in each dir?.*, preserve working files, presumably from making a
+previous issue public, if not already done (see below):
+ nnn=...
+ for d in dir{0,1,2}.*; do (cd $d && echo $d && mkdir archive.tb${nnn}-public \
+                            && mv tb${nnn}* archive.tb${nnn}-public); done
 and then
-  svn add dir?.*/archive.tb${nnn}
+  svn add dir?.*/archive.tb${nnn}-public
   svn commit
-We use archive.* so completion on "tb" works for current files.
 
-We'll work in the capsules/ directory:
+Then, we'll work in the capsules/ directory:
   cd ..
 
 Follow steps in README-tug-procedures to create capsule file and do
