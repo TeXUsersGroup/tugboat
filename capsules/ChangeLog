@@ -1,3 +1,10 @@
+2022-11-07  Karl Berry  <karl@freefriends.org>
+
+	* cr-do-issue: output #unchanged line only if verbose.
+	* tb135capsule.txt: annotations.
+	* tb91capsule.txt: https for gust.
+	* tb93capsule.txt: zeeba url, period after link.
+
 2022-11-07  Karl Berry  <karl@tug.org>
 
 	* tb135capsule.txt: new issue 43:3.

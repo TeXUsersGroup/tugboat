@@ -150,7 +150,7 @@ for pf in "$cr_processdir"/tb*.abs "$cr_processdir"/tb*.bbl; do
     cnt_landing_copied=`expr $cnt_landing_copied + 1`
   fi
 done
-echo "$0: bbl/abs->$lnd_outdir: $cnt_landing_unchanged unchanged, $cnt_landing_copied copied."
+$verbose "$0: bbl/abs->$lnd_outdir: $cnt_landing_unchanged not hand-edited, $cnt_landing_copied copied."
 
 # often we need to make and remake the landing pages while working on
 # the content; no need to do the capsule and xml processing every time.

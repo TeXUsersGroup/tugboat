@@ -372,7 +372,7 @@ access</a>.
   {254-260}
   {https://tug.org/members/TUGboat/!TBIDENT!koch-tex4ht.pdf}
   {(<a href="/TUGboat/tb43-3/tb135koch-src.ltx">Source for article</a>
-   with all the example invocation.)} 
+   with the sample invocations.)} 
   {}
 
 \capsule{}
@@ -452,17 +452,16 @@ access</a>.
 % 
 \difficulty{Advanced}
 
-%           with \texttt{lua-widow-control}
 \capsule{}
   {Methods}
   {Max Chernoff}
-  {Updates to ``Automatically removing widows and orphans \dots'',
-   \TUB\ \textbf{43}:1}
+  {Updates to ``Automatically removing widows and orphans with
+   \texttt{lua-widow-control}'', \TUB\ \textbf{43}:1}
   {draft mode, insertion handling, and other enhancements}
   {340-342}
   {https://tug.org/members/TUGboat/!TBIDENT!chernoff-lwc.pdf}
   {}
-  {}
+  {<a href="/TUGboat/tb43-1/tb133chernoff-widows.pdf">Original article</a>.}
 
 \capsule{}
   {Graphics}
@@ -661,9 +660,9 @@ access</a>.
   {General Delivery}
   {Arthur Rosendahl}
   {Rebuttal}
-  {}
+  {response to Fine, ``Regarding \acro{TUG} and \acro{UK-TUG}''}
   {228-228}
-  {/TUGboat/!TBIDENT!fine-uktug.pdf}
+  {/TUGboat/!TBIDENT!rosendahl-uktug.pdf}
   {}
   {}
 

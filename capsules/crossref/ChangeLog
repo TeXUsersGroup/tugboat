@@ -1,3 +1,10 @@
+2022-11-07  Karl Berry  <karl@freefriends.org>
+
+	* ltx2crossrefxml-tugboat.cfg (\manualsl, \hologo, \titleref,
+	\tref, \AMS, \GTDL, \OPENTYPE, \TYPEONE, \ams, \makefourht, \slMF):
+	handle these, for tb135.
+	* README-process.txt
+
 2022-09-11  Karl Berry  <karl@freefriends.org>
 
 	* README-process.txt: reformat to help clarify abs/bbl editing.
