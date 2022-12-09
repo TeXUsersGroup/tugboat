@@ -1,0 +1,1059 @@
+<doi_batch xmlns="http://www.crossref.org/schema/4.4.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.4.2" xsi:schemaLocation="http://www.crossref.org/schema/4.4.2 http://www.crossref.org/schema/deposit/crossref4.4.2.xsd">
+  <head>
+    <doi_batch_id>ltx2crossref-20221209170001-416362</doi_batch_id>
+    <timestamp>20221209170001</timestamp>
+    <depositor>
+      <depositor_name>TUGboat production</depositor_name>
+      <email_address>doi-tugboat@tug.org</email_address>
+    </depositor>
+    <registrant>TeX Users Group</registrant>
+  </head>
+  <body><journal>
+    <journal_metadata language="en">
+      <full_title>TUGboat</full_title>
+      <issn>0896-3207</issn>	
+    </journal_metadata>
+    <journal_issue>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <journal_volume><volume>43</volume></journal_volume>
+      <issue>3</issue>
+    </journal_issue>
+    <journal_article>
+      <titles>
+        <title>From the president</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Boris</given_name>
+          <surname>Veytsman</surname>
+          <ORCID>https://orcid.org/0000-0003-4674-8113</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>223</first_page>
+        <last_page>224</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135pres</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135pres.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Editorial comments</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Barbara</given_name>
+          <surname>Beeton</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>225</first_page>
+        <last_page>226</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135beet</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135beet.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Regarding TUG and UK-TUG</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jonathan</given_name>
+          <surname>Fine</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>226</first_page>
+        <last_page>228</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135fine-uktug</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135fine-uktug.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Rebuttal</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Arthur</given_name>
+          <surname>Rosendahl</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>228</first_page>
+        <last_page>228</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135rosendahl-uktug</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135rosendahl-uktug.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The TeX Hour</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jonathan</given_name>
+          <surname>Fine</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>229</first_page>
+        <last_page>229</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135fine-texhour</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135fine-texhour.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>DANTE project funding of TeX servers</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Stefan</given_name>
+          <surname>Kottwitz</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>230</first_page>
+        <last_page>231</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135kottwitz-servers</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135kottwitz-servers.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The residual concepts of production vs. the emergent cultures of distribution in publishing</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>David</given_name>
+          <surname>Blakesley</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>232</first_page>
+        <last_page>239</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135blakesley-production</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135blakesley-production.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="hartl-softcover-1"><unstructured_citation>
+          Hartl, Michael. The Softcover Book: Frictionless Self-Publishing. The Softcover Book, 2022. https://https://manual.softcover.io
+        </unstructured_citation></citation>
+        <citation key="miller-howl-2"><unstructured_citation>
+          Miller, Callie. Allen Ginsberg&#x2019;s Howl &amp; eBook Formatting Nonsense (or, HTML is Hard). The Lit Life, 7 Oct 2010. https://https://www.litlifela.com/counterbalance/2010/10/html-ebook-formatting-nonsense.html
+        </unstructured_citation></citation>
+        <citation key="savov-epub-3"><unstructured_citation>
+          Savov, Ivan. Generating ePub from LaTeX. Minireference blog: Starting a Revolution in the Textbook Industry, 5 March 2021. https://https://minireference.com/blog/generating-epub-from-latex/
+        </unstructured_citation></citation>
+        <citation key="williams-marxist-4"><unstructured_citation>
+          Williams, Raymond. Base and Superstructure in Marxist Cultural Theory. New Left Review, vol. 82 (Nov/Dec 1973), 319&#x2013;348.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Typographers' Inn</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Peter</given_name>
+          <surname>Flynn</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>240</first_page>
+        <last_page>242</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135inn</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135inn.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="graphe-1"><unstructured_citation>
+          P. Flynn. Imprimer ou ne pas imprimer. Graph&#x00ea; 85:13, Dec 2020. Tr. Patrick Bideault. https://typo-graphe.com/produit/numero-85/
+        </unstructured_citation></citation>
+        <citation key="tb129inn-2"><unstructured_citation>
+          P. Flynn. Typographers&#x2019; Inn: To print or not to print. TUGboat 41(3), Dec 2020. https://tug.org/TUGboat/tb41-3/tb129inn.pdf
+        </unstructured_citation></citation>
+        <citation key="dtk-3"><unstructured_citation>
+          P. Flynn. Druck oder Nichtdruck. Die TeXnische Kom&#x00f6;die 2022(2), May 2022. Tr. Patrick Bideault and Bernd Raichle.
+        </unstructured_citation></citation>
+        <citation key="cahier-4"><unstructured_citation>
+          P. Flynn. Imprimer ou ne pas imprimer. Cahier 58, Apr 2022. Tr. Patrick Bideault. https://www.gutenberg-asso.fr/Cahier-numero-58-Septembre-2021
+        </unstructured_citation></citation>
+        <citation key="fontcat-5"><unstructured_citation>
+          P. J&#x00f8;rgensen. The LaTeX Font Catalogue, May 2021. https://tug.org/FontCatalogue/
+        </unstructured_citation></citation>
+        <citation key="lloyd-6"><unstructured_citation>
+          L. Prentice, V. Novotn&#x00fd;. Publish Beautiful Books with Markdown. Writersglen Publications, Marshfield, MA, 2021.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Formatting mesostic poems &#xe0; la John Cage</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>David</given_name>
+          <surname>Bellows</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>243</first_page>
+        <last_page>246</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135bellows-mesostic</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135bellows-mesostic.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Representing Parkosz's alphabet in the Junicode font</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Janusz</given_name>
+          <surname>Bie&#x0144;</surname>
+          <ORCID>https://orcid.org/0000-0001-5006-8183</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>247</first_page>
+        <last_page>251</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135bien-parkosz</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135bien-parkosz.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TeXShop, Version 5: HTML previews</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Richard</given_name>
+          <surname>Koch</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>252</first_page>
+        <last_page>253</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135koch-texshop5</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135koch-texshop5.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Interactive content using TeX4ht</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Richard</given_name>
+          <surname>Koch</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>254</first_page>
+        <last_page>260</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135koch-tex4ht</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135koch-tex4ht.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>What's new in TeX4ht: 2022</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Michal</given_name>
+          <surname>Hoftich</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>261</first_page>
+        <last_page>262</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135hoftich-make4ht</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135hoftich-make4ht.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Hoftich:2019:TLW-1"><unstructured_citation>
+          M. Hoftich. TeX4ht: LaTeX to Web publishing. TUGboat 40(1):76&#x2013;81, 2019. https://tug.org/TUGboat/tb40-1/tb124hoftich-make4ht.pdf
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Adding XMP metadata in LaTeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Ulrike</given_name>
+          <surname>Fischer</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Frank</given_name>
+          <surname>Mittelbach</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>263</first_page>
+        <last_page>267</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135fischer-xmp</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135fischer-xmp.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="zugferd-1"><unstructured_citation>
+          Forum for Electronic Invoicing Germany. What is ZUGFeRD? https://www.ferd-net.de/standards/what-is-zugferd
+        </unstructured_citation></citation>
+        <citation key="pdfx-2"><unstructured_citation>
+          H&#x00E0;n Th&#x1EBF; Th&#x00E0;nh, P. Selinger, et al. The pdfx package. https://ctan.org/pkg/pdfx
+        </unstructured_citation></citation>
+        <citation key="spec-ISO-XMP-3"><unstructured_citation>
+          International Organization for Standardization. ISO 16684-1:2019: Graphic technology &#x2014; Extensible metadata platform (XMP) specification &#x2014; Part 1: Data model, serialization and core properties. 2nd ed., 2019. https://www.iso.org/obp/ui/#!iso:std:75163:en
+        </unstructured_citation></citation>
+        <citation key="l3kernel-4"><unstructured_citation>
+          LaTeX Project Team. The l3kernel package. https://ctan.org/pkg/l3kernel
+        </unstructured_citation></citation>
+        <citation key="pdfmanagement-testphase-5"><unstructured_citation>
+          LaTeX Project Team. The pdfmanagement-testphase package. https://ctan.org/pkg/pdfmanagement-testphase
+        </unstructured_citation></citation>
+        <citation key="LaTeX-Tagged-PDF-Feasibility-Study-6"><unstructured_citation>
+          F. Mittelbach, U. Fischer, C. Rowley. LaTeX tagged PDF feasibility evaluation. https://latex-project.org/publications/2020-tagged-pdf-feasibility.pdf
+        </unstructured_citation></citation>
+        <citation key="hyperxmp-7"><unstructured_citation>
+          S. Pakin. The hyperxmp package. https://ctan.org/pkg/hyperxmp
+        </unstructured_citation></citation>
+        <citation key="tn0008-8"><unstructured_citation>
+          PDF competence center. Technote 0008: Predefined XMP properties in PDF/A-1. Technical report, 2008. https://www.pdfa.org/resource/technical-note-tn0008-predefined-xmp-properties-in-pdfa-1/
+        </unstructured_citation></citation>
+        <citation key="xmpincl-9"><unstructured_citation>
+          M. Sneep. The xmpincl package. https://ctan.org/pkg/xmpincl
+        </unstructured_citation></citation>
+        <citation key="verapdf-10"><unstructured_citation>
+          veraPDF consortium. veraPDF&#x2014;industry supported PDF/A validation. https://verapdf.org
+        </unstructured_citation></citation>
+        <citation key="rdf-validator-11"><unstructured_citation>
+          W3C. W3C RDF validation service. https://www.w3.org/RDF/Validator/
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The LaTeX Tagged PDF project&#x2014;A status and progress report</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Frank</given_name>
+          <surname>Mittelbach</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Ulrike</given_name>
+          <surname>Fischer</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>268</first_page>
+        <last_page>272</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135mitt-tagged</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135mitt-tagged.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="ngpdf-1"><unstructured_citation>
+          DualLab. Next generation PDF. https://ngpdf.com
+        </unstructured_citation></citation>
+        <citation key="tagpdf-2"><unstructured_citation>
+          U. Fischer. The tagpdf package. https://ctan.org/pkg/tagpdf
+        </unstructured_citation></citation>
+        <citation key="Fischer:2021:RTP-3"><unstructured_citation>
+          U. Fischer. On the road to Tagged PDF: About StructElem, marked content, PDF/A and squeezed B&#x00E4;rs. TUGboat 42(2):170&#x2013;173, 2021. https://doi.org/10.47397/tb/42-2/tb131fischer-tagpdf
+        </unstructured_citation></citation>
+        <citation key="TUB:xmp-metadata-4"><unstructured_citation>
+          U. Fischer, F. Mittelbach. Adding XMP metadata in LaTeX. TUGboat 43(3):263&#x2013;278, 2022. https://doi.org/10.47397/tb/43-3/tb135fischer-xmp
+        </unstructured_citation></citation>
+        <citation key="l3kernel-5"><unstructured_citation>
+          LaTeX Project Team. The L3kernel package. https://ctan.org/pkg/l3kernel
+        </unstructured_citation></citation>
+        <citation key="ltnews32-6"><unstructured_citation>
+          LaTeX Project Team. LaTeX news, issue 32, 2020. https://www.latex-project.org/news/latex2e-news/ltnews32.pdf
+        </unstructured_citation></citation>
+        <citation key="ltnews33-7"><unstructured_citation>
+          LaTeX Project Team. LaTeX news, issue 33, 2021. https://www.latex-project.org/news/latex2e-news/ltnews33.pdf
+        </unstructured_citation></citation>
+        <citation key="ltnews34-8"><unstructured_citation>
+          LaTeX Project Team. LaTeX news, issue 34, 2021. https://www.latex-project.org/news/latex2e-news/ltnews34.pdf
+        </unstructured_citation></citation>
+        <citation key="ltnews35-9"><unstructured_citation>
+          LaTeX Project Team. LaTeX news, issue 35, 2022. https://www.latex-project.org/news/latex2e-news/ltnews35.pdf
+        </unstructured_citation></citation>
+        <citation key="ltnews36-10"><unstructured_citation>
+          LaTeX Project Team. LaTeX news, issue 36 &#x2014; draft, 2022. https://www.latex-project.org/news/latex2e-news/ltnews36.pdf
+        </unstructured_citation></citation>
+        <citation key="l3team:lthooks:2022-11"><unstructured_citation>
+          LaTeX Project Team. LaTeX&#x2019;s hook management, 2022. https://mirrors.ctan.org/macros/latex/base/lthooks-doc.pdf
+        </unstructured_citation></citation>
+        <citation key="l3team:ltcmd:2022-12"><unstructured_citation>
+          LaTeX Project Team. The ltcmdhooks module, 2022. https://mirrors.ctan.org/macros/latex/base/ltcmdhooks-doc.pdf
+        </unstructured_citation></citation>
+        <citation key="l3team:ltfilehook:2022-13"><unstructured_citation>
+          LaTeX Project Team. The ltfilehook documentation, 2022. https://mirrors.ctan.org/macros/latex/base/ltfilehook-doc.pdf
+        </unstructured_citation></citation>
+        <citation key="l3team:ltpara:2022-14"><unstructured_citation>
+          LaTeX Project Team. The ltpara.dtx code, 2022. https://mirrors.ctan.org/macros/latex/base/ltpara-doc.pdf
+        </unstructured_citation></citation>
+        <citation key="l3team:ltshipout:2022-15"><unstructured_citation>
+          LaTeX Project Team. The ltshipout package, 2022. https://mirrors.ctan.org/macros/latex/base/ltshipout-doc.pdf
+        </unstructured_citation></citation>
+        <citation key="pdfmanagement-testphase-16"><unstructured_citation>
+          LaTeX Project Team. The pdfmanagement-testphase package, 2022. https://ctan.org/pkg/pdfmanagement-testphase
+        </unstructured_citation></citation>
+        <citation key="fmi:beast-17"><unstructured_citation>
+          F. Mittelbach. Taming the beast &#x2014; Advances in paragraph tagging with pdfTeX and XeTeX (2021): Automatic paragraph tagging with the pdfTeX and XeTeX engine now possible. https://www.latex-project.org/news/2022/09/06/TUG-online-talks-21-22/
+        </unstructured_citation></citation>
+        <citation key="LaTeX-Tagged-PDF-Feasibility-Study-18"><unstructured_citation>
+          F. Mittelbach, U. Fischer, C. Rowley. LaTeX Tagged PDF feasibility evaluation. https://latex-project.org/publications/2020-tagged-pdf-feasibility.pdf
+        </unstructured_citation></citation>
+        <citation key="TUB:blueprint-19"><unstructured_citation>
+          F. Mittelbach, C. Rowley. LaTeX Tagged PDF&#x2014;a blueprint for a large project. TUGboat 41(3):292&#x2013;298, Nov. 2020. https://latex-project.org/publications/2020-FMi-TUB-tb129mitt-tagpdf.pdf
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>LaTeX news, issue 36, November 2022</title>
+      </titles>
+      <contributors>
+        <organization sequence="first" contributor_role="author">LaTeX Project Team</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>273</first_page>
+        <last_page>275</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135ltnews36</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135ltnews36.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="36:Lamport-1"><unstructured_citation>
+          Leslie Lamport. LaTeX: A Document Preparation System: User&#x2019;s Guide and Reference Manual. Addison-Wesley, Reading, MA, USA, 2nd edition, 1994. ISBN 0-201-52983-1. Reprinted with corrections in 1996.
+        </unstructured_citation></citation>
+        <citation key="36:ltnews32-2"><unstructured_citation>
+          LaTeX Project Team: LaTeX2e news 32. https://latex-project.org/news/latex2e-news/ltnews32.pdf
+        </unstructured_citation></citation>
+        <citation key="36:ltnews34-3"><unstructured_citation>
+          LaTeX Project Team: LaTeX2e news 34. https://latex-project.org/news/latex2e-news/ltnews34.pdf
+        </unstructured_citation></citation>
+        <citation key="36:ltnews35-4"><unstructured_citation>
+          LaTeX Project Team: LaTeX2e news 35. https://latex-project.org/news/latex2e-news/ltnews35.pdf
+        </unstructured_citation></citation>
+        <citation key="36:fntguide-5"><unstructured_citation>
+          LaTeX Project Team: LaTeX2e font selection. https://latex-project.org/help/documentation/
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Markdown 2.17.1: What's new, what's next?</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>V&#xed;t</given_name>
+          <surname>Novotn&#xfd;</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>276</first_page>
+        <last_page>278</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135novotny-markdown</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135novotny-markdown.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="xMenke:2019:PCD-1"><unstructured_citation>
+          H. Menke. Parsing complex data formats in LuaTeX with LPEG. TUGboat 40(2):129&#x2013;135, 2019. https://tug.org/TUGboat/tb40-2/tb125menke-lpeg.pdf
+        </unstructured_citation></citation>
+        <citation key="novotny2022markdown-2"><unstructured_citation>
+          V. Novotn&#x00FD;. A Markdown interpreter for TeX. Version 2.17.1-35-g2848cb5 (2022-10-15). https://mirrors.ctan.org/macros/generic/markdown/markdown.pdf
+        </unstructured_citation></citation>
+        <citation key="Novotny:2022:MWN-3"><unstructured_citation>
+          V. Novotn&#x00FD;, D. Reh&#x00E1;k, et al. Markdown 2.15.0: What&#x2019;s new? TUGboat 43(1):10&#x2013;15, 2022. https://tug.org/TUGboat/tb43-1/tb133novotny-markdown.pdf
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Mapping to individual characters in <tt>expl3</tt></title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Joseph</given_name>
+          <surname>Wright</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>279</first_page>
+        <last_page>279</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135wright-grapheme</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135wright-grapheme.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Interface-1"><unstructured_citation>
+          The LaTeX Project. The LaTeX3 Interfaces, &#x201c;Mapping to graphemes&#x201d;. https://ctan.org/pkg/l3kernel
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Typesetting external program code and its output: <tt>hvextern</tt></title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Herbert</given_name>
+          <surname>Vo&#xdf;</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>280</first_page>
+        <last_page>292</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135voss-extern</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135voss-extern.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="listings-1"><unstructured_citation>
+          C. Heinz, J. Hoffmann, B. Moses. The listings package, version 1.8d, 2020-03-24. https://ctan.org/pkg/listings
+        </unstructured_citation></citation>
+        <citation key="showexpl-2"><unstructured_citation>
+          R. Niepraschk. The showexpl package, version 0.3s. https://ctan.org/pkg/showexpl
+        </unstructured_citation></citation>
+        <citation key="tcolorbox-3"><unstructured_citation>
+          T.F. Sturm. The tcolorbox package, version 5.0.2, 2022-01-07. https://ctan.org/pkg/tcolorbox
+        </unstructured_citation></citation>
+        <citation key="fancyvrb-4"><unstructured_citation>
+          T. Van Zandt, H. Vo&#x00df;, et al. The fancyvrb package, version 4.2. https://ctan.org/pkg/fancyvrb
+        </unstructured_citation></citation>
+        <citation key="hvextern-5"><unstructured_citation>
+          H. Vo&#x00df;. The hvextern package, version 0.28. https://ctan.org/pkg/hvextern
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The <tt>luamodulartables</tt> and <tt>luaset</tt> LaTeX packages</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Chetan</given_name>
+          <surname>Shirore</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Ajit</given_name>
+          <surname>Kumar</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>293</first_page>
+        <last_page>294</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135shirore-luamath</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135shirore-luamath.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="online.luaorg-1"><unstructured_citation>
+          Lua 5.4 reference manual. https://lua.org/manual/5.4
+        </unstructured_citation></citation>
+        <citation key="online.luacode-2"><unstructured_citation>
+          Luacode package page. https://ctan.org/pkg/luacode
+        </unstructured_citation></citation>
+        <citation key="online.luatex-3"><unstructured_citation>
+          LuaTeX package page. https://ctan.org/pkg/luatex
+        </unstructured_citation></citation>
+        <citation key="online.modularithmetic-4"><unstructured_citation>
+          Modular arithmetic in LaTeX. https://mathoverflow.net/questions/18813
+        </unstructured_citation></citation>
+        <citation key="online.modularithmetic2-5"><unstructured_citation>
+          Modular arithmetic in LaTeX. https://tex.stackexchange.com/questions/34424
+        </unstructured_citation></citation>
+        <citation key="online.parseiter-6"><unstructured_citation>
+          parsers.iterator function in lualibs. https://github.com/latex3/lualibs/blob/main/lualibs-util-prs.lua
+        </unstructured_citation></citation>
+        <citation key="online.pgf-7"><unstructured_citation>
+          PGF package page. https://ctan.org/pkg/pgf
+        </unstructured_citation></citation>
+        <citation key="Richter:TB25-1-71-8"><unstructured_citation>
+          W.M. Richter. TeX and scripting languages. TUGboat 25(1):71&#x2013;88, 2004. https://tug.org/TUGboat/tb25-1/richter.pdf
+        </unstructured_citation></citation>
+        <citation key="online.tex-9"><unstructured_citation>
+          Wikipedia. TeX. https://en.wikipedia.org/wiki/TeX
+        </unstructured_citation></citation>
+        <citation key="online.xparse-10"><unstructured_citation>
+          Xparse package page. https://ctan.org/pkg/xparse
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Using OpenType and TrueType fonts with XeLaTeX and LuaLaTeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Herbert</given_name>
+          <surname>Vo&#xdf;</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>295</first_page>
+        <last_page>299</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135voss-unifont</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135voss-unifont.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>New directions in math fonts</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Mikael</given_name>
+          <surname>Sundqvist</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>300</first_page>
+        <last_page>310</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135hagen-mathchange</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135hagen-mathchange.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Patching Lucida Bright Math</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Mikael</given_name>
+          <surname>Sundqvist</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>311</first_page>
+        <last_page>316</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135hagen-lucida</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135hagen-lucida.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Bigelow-LucidaMath-1"><unstructured_citation>
+          Charles Bigelow. A short history of the Lucida math fonts. TUGboat 37:2, pp. 154&#x2013;160. https://tug.org/TUGboat/tb37-2/tb116bigelow-lucidamath.pdf
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Ventrella's terdragon in MetaPost</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Linus</given_name>
+          <surname>Romer</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>317</first_page>
+        <last_page>318</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135romer-terdragon</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135romer-terdragon.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="ventrella2012-1"><unstructured_citation>
+          Ventrella, Jeffrey. Brainfilling Curves&#x2014;A Fractal Bestiary. Eyebrain Books, 2012.
+        </unstructured_citation></citation>
+        <citation key="bridges2019:123-2"><unstructured_citation>
+          Ventrella, Jeffrey. &#x201c;Portraits from the Family Tree of Plane-filling Curves&#x201d;. In Proceedings of Bridges 2019: Mathematics, Art, Music, Architecture, Education, Culture, edited by S. Goldstine, D. McKenna, and K. Fenyvesi, pages 123&#x2013;130, Phoenix, Arizona. Tessellations Publishing, 2019. Available online at https://archive.bridgesmathart.org/2019/bridges2019-123.pdf.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>An introduction to GNU 3DLDF</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Laurence</given_name>
+          <surname>Finston</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>319</first_page>
+        <last_page>332</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135finston-3dldf</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135finston-3dldf.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Cundy-1"><unstructured_citation>
+          Cundy, H. Martyn and A.P. Rollet. Mathematical Models. Oxford: Oxford University Press, 1961.
+        </unstructured_citation></citation>
+        <citation key="Gardner-2"><unstructured_citation>
+          Gardner, Martin. Mathematical Carnival. New York: The Mathematical Association of America, 1989.
+        </unstructured_citation></citation>
+        <citation key="Goncalves-3"><unstructured_citation>
+          Gon&#x00E7;alves, L. N. FEATPOST and a Review of 3D METAPOST Packages. In TeX, XML, and Digital Typography. TUG 2004. Lecture Notes in Computer Science, vol. 3130, p. 112ff. Berlin, Heidelberg: Springer, 2004. https://doi.org/10.1007/978-3-540-27773-6_8
+        </unstructured_citation></citation>
+        <citation key="Hobby-4"><unstructured_citation>
+          Hobby, John D. and the MetaPost development team. METAPOST, A User&#x2019;s Manual. 2020. https://tug.org/metapost
+        </unstructured_citation></citation>
+        <citation key="Jones-5"><unstructured_citation>
+          Jones, Huw. Computer Graphics through Key Mathematics. London, UK: Springer-Verlag Limited, 2001.
+        </unstructured_citation></citation>
+        <citation key="KnuthArt-6"><unstructured_citation>
+          Knuth, Donald E. The Art of Computer Programming. Boston: Addison Wesley Publishing Company, 2019.
+        </unstructured_citation></citation>
+        <citation key="KnuthMF-7"><unstructured_citation>
+          Knuth, Donald E. The Metafontbook. Reading, Massachusetts: Addison Wesley Publishing Company, 1986.
+        </unstructured_citation></citation>
+        <citation key="KnuthT-8"><unstructured_citation>
+          Knuth, Donald E. The TeXbook. Reading, Massachusetts: Addison Wesley Publishing Company, 1986.
+        </unstructured_citation></citation>
+        <citation key="KnuthMFP-9"><unstructured_citation>
+          Knuth, Donald E. Metafont: The Program. Computers &#x0026; Typesetting, vol. D. Reading, Massachusetts: Addison Wesley Publishing Company, 1986.
+        </unstructured_citation></citation>
+        <citation key="Ramsey-10"><unstructured_citation>
+          Ramsey, Norman. A Simple Solver for Linear Equations Containing Nonlinear Operators. https://www.cs.tufts.edu/~nr/noweb/examples/solver.html
+        </unstructured_citation></citation>
+        <citation key="Wikipedia-11"><unstructured_citation>
+          Wikipedia. Non-uniform rational B-spline. https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>A graphical ellipse envelope construction with GNU 3DLDF</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Laurence</given_name>
+          <surname>Finston</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>333</first_page>
+        <last_page>339</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135finston-ellipse</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135finston-ellipse.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="KnuthMF-1"><unstructured_citation>
+          Knuth, Donald E. The Metafontbook. Reading, Massachusetts: Addison Wesley Publishing Company, 1986.
+        </unstructured_citation></citation>
+        <citation key="Lockwood-2"><unstructured_citation>
+          Lockwood, E.H. A Book of Curves. Cambridge, UK: Cambridge University Press, 1961.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Updates to &#x201c;Automatically removing widows and orphans with <tt>lua-widow-control</tt>&#x201d;, <i>TUGboat</i> <b>43</b>:1</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Max</given_name>
+          <surname>Chernoff</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>340</first_page>
+        <last_page>342</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135chernoff-lwc</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135chernoff-lwc.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Can &#x201c;<tt>&#x5c;parfillskip</tt>=0pt&#x201d; shorten a short paragraph in plain TeX by two lines?</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Udo</given_name>
+          <surname>Wermuth</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>343</first_page>
+        <last_page>350</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135wermuth-shorten</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135wermuth-shorten.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="citeRB-1"><unstructured_citation>
+          Robert Bringhurst, The Elements of Typographic Style, 4th edition, version 4.2, Seattle, Washington: Hartley &#x0026; Marks, 2016.
+        </unstructured_citation></citation>
+        <citation key="citeCTvA-2"><unstructured_citation>
+          Donald E. Knuth, The TeXbook, Volume A of Computers &amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1984.
+        </unstructured_citation></citation>
+        <citation key="citeCTvB-3"><unstructured_citation>
+          Donald E. Knuth, TeX: The&#x00A0;Program, Volume B of Computers &amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1986.
+        </unstructured_citation></citation>
+        <citation key="citeCTvE-4"><unstructured_citation>
+          Donald E. Knuth, Computer Modern Typefaces, Volume E of Computers &amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1986.
+        </unstructured_citation></citation>
+        <citation key="citeUWtp-5"><unstructured_citation>
+          Udo Wermuth, &#x201c;Tracing paragraphs&#x201d;, TUGboat 37:3 (2016), 358&#x2013;373; errata in TUGboat 38:3 (2017), 414. http://www.tug.org/TUGboat/tb37-3/tb117wermuth.pdf
+        </unstructured_citation></citation>
+        <citation key="citeUWad-6"><unstructured_citation>
+          Udo Wermuth, &#x201c;TeX&#x2019;s &#x2018;additional demerits&#x2019; parameters&#x201d;, TUGboat 39:1 (2018), 81&#x2013;87. http://tug.org/TUGboat/tb39-1/tb121wermuth-adem.pdf
+        </unstructured_citation></citation>
+        <citation key="citeUW-7"><unstructured_citation>
+          Udo Wermuth, &#x201c;Experiments with &#x005C;parfillskip&#x201d;, TUGboat 39:3 (2018), 276&#x2013;303. http://tug.org/TUGboat/tb39-3/tb123wermuth-parfillskip.pdf 
+
+
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>LaTeX2Nemeth and the <tt>amsmath</tt> package</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Andreas</given_name>
+          <surname>Papasalouros</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Antonis</given_name>
+          <surname>Tsolomitis</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>351</first_page>
+        <last_page>362</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135papasalouros-amsmath</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135papasalouros-amsmath.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Gamma1994-1"><unstructured_citation>
+          E. Gamma, R. Helm, et al. Design Patterns: Elements of Reusable Object-oriented Software. Addison-Wesley, Boston, MA, USA, 1994.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The treasure chest</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>363</first_page>
+        <last_page>363</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135chest</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135chest.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>2023 TeX Users Group election</title>
+      </titles>
+      <contributors>
+        <organization sequence="first" contributor_role="author">TUG Elections committee</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2022</year>
+      </publication_date>
+      <pages>
+        <first_page>365</first_page>
+        <last_page>365</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/43-3/tb135elec</doi>
+        <timestamp>20221209170001</timestamp>
+        <resource>https://tug.org/TUGboat/tb43-3/tb135elec.html</resource>
+      </doi_data>
+    </journal_article>
+  </journal></body>
+</doi_batch>

@@ -1,0 +1,8 @@
+When writing a book with a mathematical, scientific or technical background, 
+the output of programs is often  inserted as text or an illustration;
+in many cases, also with complete or partial indication of the respective source code. 
+As an author, you have the problem of keeping such external sample
+programs in sync with the current manuscript. If you keep the source
+code in the book manuscript itself, and create the external examples at
+the same time as typesetting the main document, you can be sure the code
+and output stay consistent.

@@ -1,0 +1,111 @@
+\newcommand{\noopsort}[1]{} \newcommand{\mydash}{-}
+  \ifx\thisissuepageref\undefined \let\thisissuepageref\noopsort\fi
+\begin{thebibliography}{10}
+
+\bibitem{ngpdf}
+{DualLab}.
+\newblock Next generation {PDF}.
+\newblock \url{https://ngpdf.com}
+
+\bibitem{tagpdf}
+U.~Fischer.
+\newblock \emph{The tagpdf package}.
+\newblock \newline \url{https://ctan.org/pkg/tagpdf}
+
+\bibitem{Fischer:2021:RTP}
+U.~Fischer.
+\newblock On the road to {Tagged PDF}: About {StructElem}, marked content,
+  {PDF/A} and squeezed {B\"a}rs.
+\newblock \emph{TUGboat} 42(2):170--173, 2021.
+\newblock
+  \url{https://doi.org/10.47397/tb/42-2/tb131fischer-tagpdf}
+
+\bibitem{TUB:xmp-metadata}
+U.~Fischer, F.~Mittelbach.
+\newblock {Adding XMP metadata in \LaTeX{}}.
+\newblock \emph{TUGboat} 43(3):263--278, 2022.
+\newblock
+  \url{https://doi.org/10.47397/tb/43-3/tb135fischer-xmp}
+
+\bibitem{l3kernel}
+{\noopsort{LaTeX Project Team}}{\LaTeX{} Project Team}.
+\newblock \emph{The L3kernel package}.
+\newblock \url{https://ctan.org/pkg/l3kernel}
+
+\bibitem{ltnews32}
+{\noopsort{LaTeX Project Team}}{\LaTeX{} Project Team}.
+\newblock {{\LaTeX}} news, issue~32, 2020.
+\newblock \url{https://www.latex-project.org/news/latex2e-news/ltnews32.pdf}
+
+\bibitem{ltnews33}
+{\noopsort{LaTeX Project Team}}{\LaTeX{} Project Team}.
+\newblock {{\LaTeX}} news, issue~33, 2021.
+\newblock \url{https://www.latex-project.org/news/latex2e-news/ltnews33.pdf}
+\newpage
+\bibitem{ltnews34}
+{\noopsort{LaTeX Project Team}}{\LaTeX{} Project Team}.
+\newblock {{\LaTeX}} news, issue~34, 2021.
+\newblock \url{https://www.latex-project.org/news/latex2e-news/ltnews34.pdf}
+
+\bibitem{ltnews35}
+{\noopsort{LaTeX Project Team}}{\LaTeX{} Project Team}.
+\newblock {{\LaTeX}} news, issue~35, 2022.
+\newblock \url{https://www.latex-project.org/news/latex2e-news/ltnews35.pdf}
+
+\bibitem{ltnews36}
+{\noopsort{LaTeX Project Team}}{\LaTeX{} Project Team}.
+\newblock {{\LaTeX}} news, issue~36 --- draft, 2022.
+\newblock \url{https://www.latex-project.org/news/latex2e-news/ltnews36.pdf}
+
+\bibitem{l3team:lthooks:2022}
+{\noopsort{LaTeX Project Team}}{\LaTeX{} Project Team}.
+\newblock \emph{\LaTeX{}'s hook management}, 2022.
+\newblock \url{https://mirrors.ctan.org/macros/latex/base/lthooks-doc.pdf}
+
+\bibitem{l3team:ltcmd:2022}
+{\noopsort{LaTeX Project Team}}{\LaTeX{} Project Team}.
+\newblock \emph{The ltcmdhooks module}, 2022.
+\newblock \url{https://mirrors.ctan.org/macros/latex/base/ltcmdhooks-doc.pdf}
+
+\bibitem{l3team:ltfilehook:2022}
+{\noopsort{LaTeX Project Team}}{\LaTeX{} Project Team}.
+\newblock \emph{The ltfilehook documentation}, 2022.
+\newblock \url{https://mirrors.ctan.org/macros/latex/base/ltfilehook-doc.pdf}
+
+\bibitem{l3team:ltpara:2022}
+{\noopsort{LaTeX Project Team}}{\LaTeX{} Project Team}.
+\newblock \emph{The ltpara.dtx code}, 2022.
+\newblock \url{https://mirrors.ctan.org/macros/latex/base/ltpara-doc.pdf}
+
+\bibitem{l3team:ltshipout:2022}
+{\noopsort{LaTeX Project Team}}{\LaTeX{} Project Team}.
+\newblock \emph{The ltshipout package}, 2022.
+\newblock \url{https://mirrors.ctan.org/macros/latex/base/ltshipout-doc.pdf}
+
+\bibitem{pdfmanagement-testphase}
+{\noopsort{LaTeX Project Team}}{\LaTeX{} Project Team}.
+\newblock \emph{The pdfmanagement\hyph testphase package}, 2022.
+\newblock \newline \url{https://ctan.org/pkg/pdfmanagement-testphase}
+
+\bibitem{fmi:beast}
+F.~Mittelbach.
+\newblock Taming the beast — {A}dvances in paragraph tagging with {pdf\TeX\
+  and \XeTeX} (2021): Automatic paragraph tagging with the {pdf\TeX\ and
+  \XeTeX} engine now possible.
+\newblock
+  \url{https://www.latex-project.org/news/2022/09/06/TUG-online-talks-21-22/}
+
+\bibitem{LaTeX-Tagged-PDF-Feasibility-Study}
+F.~Mittelbach, U.~Fischer, C.~Rowley.
+\newblock {\LaTeX} {Tagged \PDF} feasibility evaluation.
+\newblock
+  \url{https://latex-project.org/publications/2020-tagged-pdf-feasibility.pdf}
+
+\bibitem{TUB:blueprint}
+F.~Mittelbach, C.~Rowley.
+\newblock {\LaTeX{} Tagged PDF}{---}a blueprint for a large project.
+\newblock \emph{TUGboat} 41(3):292--298, Nov. 2020.
+\newblock
+  \url{https://latex-project.org/publications/2020-FMi-TUB-tb129mitt-tagpdf.pdf}
+
+\end{thebibliography}

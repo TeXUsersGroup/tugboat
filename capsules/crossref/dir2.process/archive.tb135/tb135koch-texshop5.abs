@@ -1,0 +1,3 @@
+The Mac previewer TeXShop provides a preview window for each open document, showing pdf output. Version 5 of the program
+provides an extra preview window for html output.
+Therefore, TeXShop authors can use  typesetting engines which convert source files to pdf, or html, or both. Examples include \TeX4ht, which accepts \LaTeX\ source and outputs html,  Pre\TeX{}t, which accepts \XML\ source and outputs either pdf or html, and pure html source, which can be displayed as a live web page.

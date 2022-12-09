@@ -1,0 +1,21 @@
+LaTeX2Nemeth is a software package written in Java that converts \LaTeX\ files written
+in the \tbUTF-8 encoding
+to Braille using the Nemeth standard for mathematics. It has supported
+more than 800 mathematics symbols up to now and a great amount of mathematics
+structures from simple exponents to multiline equation arrays.
+
+Recently the project attracted the attention of the \TeX\
+development fund, and additional support was given
+to cover the \AMS\ (\ams) packages and extended Unicode mathematics support,
+including all symbols found in \verb|unimath-symbols.pdf|,
+to the extent that this is possible by the structure of the Nemeth standard.
+
+The current version of latex2nemeth found on \CTAN\ incorporates these additions.
+If something fails to work and is neither described here nor is a
+capability of the \ams\ packages that has only a visual effect (and hence irrelevant
+to the blind), it should be considered a bug, and it should be reported to
+the authors as such.
+
+As for languages, it supports the Latin alphabet (so English is supported in grade1 Braille)
+and it also supports the Greek language, both monotonic and polytonic.
+

@@ -1,0 +1,5 @@
+It is natural to think that separating a word up into individual
+characters is an easy operation. It turns out that for the computer this isn’t really
+the case. If we look at a system that natively understands Unicode (like \hologo{XeTeX}
+or \hologo{LuaTeX}), most of the time one \enquote{character} is stored as one
+codepoint. A codepoint is a single character entity for a Unicode programme.

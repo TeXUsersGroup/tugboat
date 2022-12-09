@@ -1,0 +1,7 @@
+For both ``new'' \TeX\ engines \XeTeX\ and \LuaTeX, which are admittedly
+no longer all that new, there are a few things to consider 
+in connection with fonts that are important for users who have previously worked with 
+pdf\LaTeX. 
+Until now, only the fonts that came with the \TeX\ distribution in use
+were easily available 
+to ``inexperienced'' users.

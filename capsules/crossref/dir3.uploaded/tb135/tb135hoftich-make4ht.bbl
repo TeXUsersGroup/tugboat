@@ -1,0 +1,12 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{1}
+
+\bibitem{Hoftich:2019:TLW}
+M.~Hoftich.
+\newblock {\TeX4ht}: {\LaTeX} to {Web} publishing.
+\newblock \emph{TUGboat} 40(1):76--81, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-1/tb124hoftich-make4ht.pdf}
+
+\end{thebibliography}

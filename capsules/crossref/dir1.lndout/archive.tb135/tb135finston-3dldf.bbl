@@ -1,0 +1,75 @@
+\bibitem{Cundy} Cundy, H.~Martyn and A.P.~Rollet.
+{\it Mathematical Models}.
+Oxford: Oxford University Press, 1961.
+
+\bibitem{Gardner} Gardner, Martin.
+{\it Mathematical Carnival\/}.
+New~York:
+The Mathematical Association of America, 1989.
+
+\bibitem{Goncalves} Gon{\c c}alves, L.~N.
+{\it \hbox{\manualsl FEATPOST} and a Review of \acro{3D} \hbox{\manualsl
+METAPOST} Packages}. In~{\it \TeX, \XML, and Digital Typography.
+\acro{TUG} 2004}. Lecture Notes in Computer Science, vol.~3130, p.~112ff.
+Berlin, Heidelberg: Springer, 2004.
+\url{https://doi.org/10.1007/978-3-540-27773-6_8}
+% {\tt https://doi.org/10.1007/978-3-540-27773-6_8}
+% whole proceedings:
+%\href{https://doi.org/10.1007/b99374}
+% {\tt https://doi.org/10.1007/b99374}
+%% TUGboat 25:0, p.~99:  https://www.tug.org/TUGboat/tb25-0/
+
+\bibitem{Hobby} Hobby, John D.~and the MetaPost development team.
+METAPOST, {\it A User's Manual}. 2020.\hfil\break 
+\url{https://tug.org/metapost}
+
+%% documented version: 2.00
+%% December 31, 
+%% Web page:
+%% Mailing list: https://lists.tug.org/metapost
+
+\bibitem{Jones} Jones, Huw.
+{\it Computer Graphics through Key Mathematics}.
+London, UK:
+Springer-Verlag Limited, 2001.
+	
+\bibitem{KnuthArt} Knuth, Donald E. {\it The Art of Computer Programming}.
+Boston:
+Addison Wesley Publishing Company, 2019.
+
+\bibitem{KnuthMF} Knuth, Donald E.  {\MFB}.
+Reading, Massachusetts:
+Addison Wesley Publishing Company, 1986.
+
+\bibitem{KnuthT} Knuth, Donald E.  {\TB}.
+Reading, Massachusetts:
+Addison Wesley Publishing Company, 1986.
+
+\bibitem{KnuthMFP} Knuth, Donald E.  {\it {\slMF}:  The Program}.
+{\it Computers \& Typesetting}, vol. D.
+Reading, Massachusetts:
+Addison Wesley Publishing Company, 1986.
+
+\bibitem{Ramsey} Ramsey, Norman.
+{\it A Simple Solver for Linear Equations
+Containing Nonlinear Operators}.\hfil\break
+\url{https://www.cs.tufts.edu/~nr/noweb/examples/solver.html}
+%%
+%% !! URL had to be broken!  There are therefore two links here, but they
+%% look like a %% single one in the PDF output.  LDF 2022.05.31.
+%%
+%{{\tt https://www.cs.tufts.edu/\char`\~nr/noweb/}}\hfil\break
+%%
+%\href{https://www.cs.tufts.edu/~nr/noweb/examples/solver.html}%
+%{\tt examples/solver.html}
+
+\bibitem{Wikipedia} Wikipedia. {\it Non-uniform rational B-spline}.\hfil\break 
+\url{https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline}
+%{\tt{https://en.wikipedia.org/wiki/}}\hfil\break 
+%%
+%% !! URL had to be broken!  There are therefore two links here, but they
+%% look like a %% single one in the PDF output.  LDF 2022.05.31.
+%%
+%\href{https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline}%
+%{\tt{Non-uniform_rational_B-spline}}
+\end{thebibliography}

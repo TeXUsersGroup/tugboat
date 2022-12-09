@@ -1,0 +1,10 @@
+The 2022-11 release of \LaTeX{} is largely a consolidation release
+where we made a number of minor improvements to fix some bugs or
+improve one or the other interface.
+
+The only really important functionality that was added is described in
+the first section: the ability to easily define document-level commands
+and environments that accept a key/value list in one of its (usually
+optional) arguments, including the ability to determine if the argument
+does in fact contain such a key/value list or just a single
+\enquote{classical} value.

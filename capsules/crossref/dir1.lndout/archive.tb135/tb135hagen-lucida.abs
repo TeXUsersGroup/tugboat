@@ -1,0 +1,10 @@
+During the last year we have
+been working on the typesetting of mathematics in \CONTEXT\ \LMTX. This
+system is using \OPENTYPE\ fonts, and in particular Unicode math fonts. In
+the last decade several such math fonts have been created, many of them
+by converting old fonts from the \TYPEONE\ format. Lucida Bright
+Math
+is one of these fonts, though the designers, Charles Bigelow and Kris
+Holmes, made significant additions and changes when developing the
+\OPENTYPE\ version. It comes in two weights, regular and
+bold.

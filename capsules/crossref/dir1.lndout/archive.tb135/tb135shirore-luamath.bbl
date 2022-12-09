@@ -1,0 +1,47 @@
+\begin{thebibliography}{10}
+
+\bibitem{online.luaorg}
+Lua 5.4 reference manual.
+\newblock \url{https://lua.org/manual/5.4}
+
+\bibitem{online.luacode}
+Luacode package page.
+\newblock \url{https://ctan.org/pkg/luacode}
+
+\bibitem{online.luatex}
+{LuaTeX} package page.
+\newblock \url{https://ctan.org/pkg/luatex}
+
+\bibitem{online.modularithmetic}
+Modular arithmetic in {LaTeX}.
+\newblock \newline \url{https://mathoverflow.net/questions/18813}
+
+\bibitem{online.modularithmetic2}
+Modular arithmetic in {LaTeX}.
+\newblock \newline \url{https://tex.stackexchange.com/questions/34424}
+
+\bibitem{online.parseiter}
+parsers.iterator function in lualibs.
+\newblock \newline
+  \url{https://github.com/latex3/lualibs/blob/main/lualibs-util-prs.lua}
+
+\bibitem{online.pgf}
+{PGF} package page.
+\newblock \url{https://ctan.org/pkg/pgf}
+
+\bibitem{Richter:TB25-1-71}
+W.M.~Richter.
+\newblock {{\TeX} and scripting languages}.
+\newblock \emph{TUGboat} 25(1):71--88, 2004.
+\newblock \newline \url{https://tug.org/TUGboat/tb25-1/richter.pdf}
+
+\bibitem{online.tex}
+Wikipedia.
+\newblock {TeX}.
+\newblock \url{https://en.wikipedia.org/wiki/TeX}
+
+\bibitem{online.xparse}
+Xparse package page.
+\newblock \url{https://ctan.org/pkg/xparse}
+
+\end{thebibliography}

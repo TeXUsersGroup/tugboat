@@ -1,0 +1,53 @@
+% this file is read twice
+%   first:  the shortcuts for the references are defined
+%   second: the list for references is output
+% start the file with \startbibrefs and end it with \par
+% NOTE: a § can't be used in front of \endbib, move it to the previuos line
+\startbibrefs\begingroup
+\ninepoint
+\emergencystretch=0.03\hsize
+\def\newline{\hfil\break}%
+\raggedright
+\frenchspacing
+\hyphenpenalty=10000
+% suggestion by Karl Berry
+\def\URLaccessdate(#1){}% suppress ``accessed <date>'' info after URLs
+
+\bibitem{citeRB} Robert Bringhurst,
+   {\sl The Elements of Typographic Style}, 4th edition, version 4.2,
+   Seattle, Washington: Hartley \& Marks, 2016.
+
+\bibitem{citeCTvA} Donald E. Knuth, \TB,
+   Volume~A of \CandT, Boston, Massachusetts: \AW, 1984.
+
+\bibitem{citeCTvB} Donald E. Knuth, \TP,
+   Volume~B of \CandT,
+   Boston,\newline Massachusetts: \AW, 1986.
+
+\bibitem{citeCTvE} Donald E. Knuth, {\sl Computer Modern Typefaces},
+   Volume~E of \CandT,
+   Boston, Massachusetts: \AW, 1986.
+
+\bibitem{citeUWtp} Udo Wermuth,
+   ``Tracing paragraphs'', {\sl \TUB\/ \bf37}:3 (2016), 358--373;
+   errata in {\sl \TUB\/ \bf38}:3 (2017), 414.\par
+   \biburl http://www.tug.org/TUGboat/tb37-3/tb117wermuth.pdf\endurl
+   \endbib(2016-12-08)
+
+\bibitem{citeUWad} Udo Wermuth,
+   ``\TeX's `additional demerits' parameters'',
+   {\sl \TUB\/ \bf39}:1 (2018), 81--87.\par
+   \biburl http://tug.org/TUGboat/tb39-1/tb121wermuth-adem.pdf\endurl
+   \endbib(2018-05-22)
+
+{\hfuzz=13pt
+\bibitem{citeUW} Udo Wermuth, ``Experiments with \cs{parfillskip}'',
+   {\sl \TUB\/ \bf39}:3 (2018), 276--303.\par
+   \biburl http://tug.org/TUGboat/tb39-3/tb123wermuth-parfillskip.pdf\endurl
+   \endbib(2020-06-04)\par}
+
+\end{thebibliography}
+% Local Variables:
+% coding: iso-latin-9-unix
+% ispell-local-dictionary: "en_US"
+% End:

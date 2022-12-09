@@ -1,0 +1,64 @@
+\begin{thebibliography}{10}
+
+\bibitem{zugferd}
+\gobble{FERD}{Forum for Electronic Invoicing Germany}.
+\newblock What is {ZUGFeRD}?
+\newblock \url{https://www.ferd-net.de/standards/what-is-zugferd}
+
+\bibitem{pdfx}
+\gobble{Han}{\Thanh}, P.~Selinger, et~al.
+\newblock \emph{The pdfx package}.
+\newblock \url{https://ctan.org/pkg/pdfx}
+\newpage
+\bibitem{spec-ISO-XMP}
+\gobble{International}{International Organization for Standardization}.
+\newblock \emph{ISO 16684-1:2019: Graphic technology — Extensible metadata
+  platform (XMP) specification — Part~1: Data model, serialization and core
+  properties}.
+\newblock 2nd ed., 2019.
+\newblock \url{https://www.iso.org/obp/ui/#!iso:std:75163:en}
+
+\bibitem{l3kernel}
+\gobble{LaTeX}{\LaTeX{} Project Team}.
+\newblock \emph{The l3kernel package}.
+\newblock \url{https://ctan.org/pkg/l3kernel}
+
+\bibitem{pdfmanagement-testphase}
+\gobble{LaTeX}{\LaTeX{} Project Team}.
+\newblock \emph{The pdfmanagement\hyph testphase package}.
+\newblock \url{https://ctan.org/pkg/pdfmanagement-testphase}
+
+\bibitem{LaTeX-Tagged-PDF-Feasibility-Study}
+F.~Mittelbach, U.~Fischer, C.~Rowley.
+\newblock {\LaTeX} tagged {PDF} feasibility evaluation.
+\newblock
+  \url{https://latex-project.org/publications/2020-tagged-pdf-feasibility.pdf}
+
+\bibitem{hyperxmp}
+S.~Pakin.
+\newblock \emph{The hyperxmp package}.
+\newblock \newline \url{https://ctan.org/pkg/hyperxmp}
+
+\bibitem{tn0008}
+{PDF competence center}.
+\newblock Technote 0008: Predefined {XMP} properties in {PDF/A-1}.
+\newblock Technical report, 2008.
+\newblock
+  \url{https://www.pdfa.org/resource/technical-note-tn0008-predefined-xmp-properties-in-pdfa-1/}
+
+\bibitem{xmpincl}
+M.~Sneep.
+\newblock \emph{The xmpincl package}.
+\newblock \newline \url{https://ctan.org/pkg/xmpincl}
+
+\bibitem{verapdf}
+{veraPDF consortium}.
+\newblock vera{PDF}---industry supported {PDF/A} validation.
+\newblock \url{https://verapdf.org}
+
+\bibitem{rdf-validator}
+W3C.
+\newblock {W3C RDF} validation service.
+\newblock \url{https://www.w3.org/RDF/Validator/}
+
+\end{thebibliography}

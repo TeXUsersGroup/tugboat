@@ -1,0 +1,17 @@
+        The decisions of \TeX\ when it breaks a paragraph into lines
+are based on numerical calculations of badness values, line demerits,
+etc. With the help of the formulas that \TeX\ implements, experts can
+decide questions about possible or impossible tasks.
+
+        The question in the title compares the number of lines
+that \TeX\ produces for a given text, if it is typeset with
+plain \TeX's default values, to the number that one gets with a single
+change applied to these defaults: \cs{parfillskip} is set
+to~0\,pt. A problem of this type cannot be solved by the
+abovementioned formulas alone although they help to find an assumed
+example in the simplest case of a three-line paragraph. But this
+example doesn't respect {\tt plain}'s default values, as they aren't
+captured in the formulas. Additionally, some assumptions about
+the \TeX\ input are needed to show that the answer to the question in
+the title is ``no'' for Computer Modern Roman fonts of sizes
+8\,pt, 9\,pt, 10\,pt, and 12\,pt.

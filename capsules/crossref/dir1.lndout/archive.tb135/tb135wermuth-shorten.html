@@ -1,0 +1,68 @@
+<!--#include virtual="/header.html"-->
+<title>Can &#x201c;&#x5c;parfillskip=0pt&#x201d; shorten a short paragraph in plain TeX by two lines?
+       - TUGboat 43:3 (2022) - TeX Users Group</title>
+</head><body>
+
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+<h1><a href="/TUGboat/tb43-3/">TUGboat 43:3</a> (2022)<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
+
+<p><b>Title</b>: Can &#x201c;<tt>&#x5c;parfillskip</tt>=0pt&#x201d; shorten a short paragraph in plain TeX by two lines?</p>
+
+<p><b>Summary</b>:
+detailed analysis of the line-breaking algorithm, interword spacing, and relevant font parameters.</p>
+
+<p><b>Full text of article</b>: <a href="https://tug.org/members/TUGboat/tb43-3/tb135wermuth-shorten.pdf">available to TUG members</a> (<a href="/join.html">join TUG</a>);
+will be publicly available after the next issue is published.</p>
+
+<p><b>Author</b>:
+<a href="/TUGboat/Contents/listauthor.html#Wermuth,Udo">Udo Wermuth</a></p>
+
+<p><b>Publication</b>: <a href="/TUGboat/tb43-3/">TUGboat
+volume 43, number 3</a> (2022),
+pages&nbsp;343-350</p>
+
+<p><b>DOI</b> (this page):
+<a href="https://doi.org/10.47397/tb/43-3/tb135wermuth-shorten">10.47397/tb/43-3/tb135wermuth-shorten</a>
+<br><small>(<a href="https://doi.org/10.47397/tb/43-3/tb135chernoff-lwc">previous doi</a>
+- <a href="https://doi.org/10.47397/tb/43-3/tb135papasalouros-amsmath">next doi</a>)</small></p>
+
+<p><b>Category</b>:
+<a href="/TUGboat/Contents/listkeyword.html#CatTAGMethods">Methods</a></p>
+      
+<p><b>Difficulty</b>: Advanced</p>
+
+<p><b>Abstract</b>:
+The decisions of TeX when it breaks a paragraph into lines
+are based on numerical calculations of badness values, line demerits,
+etc. With the help of the formulas that TeX implements, experts can
+decide questions about possible or impossible tasks.</p>
+<p>The question in the title compares the number of lines
+that TeX produces for a given text, if it is typeset with
+plain TeX&#x2019;s default values, to the number that one gets with a single
+change applied to these defaults: <tt>&#x005C;parfillskip</tt> is set
+to 0pt. A problem of this type cannot be solved by the
+abovementioned formulas alone although they help to find an assumed
+example in the simplest case of a three-line paragraph. But this
+example doesn&#x2019;t respect <tt>plain</tt>&#x2019;s default values, as they aren&#x2019;t
+captured in the formulas. Additionally, some assumptions about
+the TeX input are needed to show that the answer to the question in
+the title is &#x201c;no&#x201d; for Computer Modern Roman fonts of sizes
+8pt, 9pt, 10pt, and 12pt.</p>
+
+<p><b>References</b>:</p>
+<ol class="tugbbl">
+<li class="tugbbl">Robert Bringhurst, The Elements of Typographic Style, 4th edition, version 4.2, Seattle, Washington: Hartley &#x0026; Marks, 2016.</li>
+<li class="tugbbl">Donald E. Knuth, The TeXbook, Volume A of Computers &amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1984.</li>
+<li class="tugbbl">Donald E. Knuth, TeX: The&#x00A0;Program, Volume B of Computers &amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1986.</li>
+<li class="tugbbl">Donald E. Knuth, Computer Modern Typefaces, Volume E of Computers &amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1986.</li>
+<li class="tugbbl">Udo Wermuth, &#x201c;Tracing paragraphs&#x201d;, TUGboat 37:3 (2016), 358&#x2013;373; errata in TUGboat 38:3 (2017), 414. <a href="http://www.tug.org/TUGboat/tb37-3/tb117wermuth.pdf">www.tug.org/TUGboat/tb37-3/tb117wermuth.pdf</a></li>
+<li class="tugbbl">Udo Wermuth, &#x201c;TeX&#x2019;s &#x2018;additional demerits&#x2019; parameters&#x201d;, TUGboat 39:1 (2018), 81&#x2013;87. <a href="http://tug.org/TUGboat/tb39-1/tb121wermuth-adem.pdf">tug.org/TUGboat/tb39-1/tb121wermuth-adem.pdf</a></li>
+<li class="tugbbl">Udo Wermuth, &#x201c;Experiments with &#x005C;parfillskip&#x201d;, TUGboat 39:3 (2018), 276&#x2013;303. <a href="http://tug.org/TUGboat/tb39-3/tb123wermuth-parfillskip.pdf">tug.org/TUGboat/tb39-3/tb123wermuth-parfillskip.pdf</a></li>
+</ol>
+
+<hr><small><a href="/TUGboat/">TUGboat</a> 43:3, 2022 (<a href="/TUGboat/tb43-3/">issue 135</a>)
+&nbsp; [generated 2022-12-09]
+</small><br><!--#include virtual="/footer.html"-->

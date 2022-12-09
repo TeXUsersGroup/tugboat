@@ -1,0 +1,12 @@
+After trying to improve math rendering of \OPENTYPE\ math fonts, the
+authors have ended up with a mix of improving the engine and fixing
+fonts runtime, and we are rather satisfied with the results so far.
+
+However, as we progress and also improve the more structural and
+input-related features of \CONTEXT, we wonder why we aren't more
+drastic when it comes to fonts. The \OPENTYPE\ specifications are vague,
+and most existing \OPENTYPE\ math fonts use a mixture of the \OPENTYPE\
+features and the old \TEX\ habits, so we are sort of on our own. The
+advantage of this situation is that we feel free to experiment and do as
+we like.
+

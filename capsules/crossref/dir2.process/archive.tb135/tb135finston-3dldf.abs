@@ -1,0 +1,6 @@
+This article is an introduction to {\GTDL}.
+{\GTDL} is a package for three-dimensional drawing with {\MP} and {\MF}
+output.
+It implements a language based on the {\MF} language with many additional
+data types and operations. It is designed for general technical drawings and a particular
+focus is intersections of geometrical figures.

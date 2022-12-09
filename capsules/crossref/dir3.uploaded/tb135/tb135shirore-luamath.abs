@@ -1,0 +1,19 @@
+The \verb|luamodulartables| package was developed by us to generate
+modular addition and multiplication tables for positive integers, for
+use in \LaTeX\ documents. The commands in the package have optional
+arguments for formatting of tables. These commands can be used in an
+environment similar to the \verb|tabular| and \verb|array| environments.
+The commands can also be used with the \verb|booktabs| package to
+provide better formatting of tables in \LaTeX.
+
+Similarly, the \verb|luaset| package is developed by us to define finite
+sets and perform different operations on them inside \LaTeX\ documents.
+There is no special environment in the package for performing set
+operations. The package commands can be used in any environment
+(including mathematics environment).
+
+These packages are written in Lua, and the \TeX\ source is to be
+compiled with the Lua\LaTeX\ engine. There is no need to install Lua on
+users' systems as \TeX\ distributions (\TeX\ Live and MiK\TeX) come
+bundled with Lua\LaTeX. The packages can be modified or extended by
+writing custom Lua programs.
