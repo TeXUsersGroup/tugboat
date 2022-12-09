@@ -119,37 +119,46 @@ cr-landing-bbl-abs converts abstracts to HTML (ltx2unitxt --html), but
 copies bbls as plain text from previously-created issue.xml (created by
 ltx2crossrefxml via crossref/Makefile, target issue). In the bbls, the
 only formatting attempted for the landing .html files is to make urls
-(recognized from plain text) live.
+(recognized from plain text) live; italics, etc., do not happen.
 
 Then repeat until all articles are done.
 
-Reminder: besides checking the .html landing files, it is also necessary
-to check the generated dir2.process/issue.xml, especially the <title>,
-<surname>, <given_name>, and bibliography elements. Check that the
-<ORCID> elements include all that are intended.
+Besides checking the .html landing files, it is also necessary
+to check the generated dir2.process/issue.xml:
+- check <title>, <surname>, <given_name> elements;
+  if any are new organizations, add to lists-authinfo.txt.
+- check that <ORCID> elements are present for all specified;
+  grep the sources. Add any new ones to lists-authinfo.txt.
+- also check <citation_list>s for reasonableness.
 
- When all articles are done, and the issue.xml looks ok, can upload to
+When all articles are done, and the issue.xml looks ok, can upload to
 crossref for them to validate it:
   make upload-test  # in crossref subdirectory
 
-The result should be "batch submission was successfully received". That
+The result should be "batch submission was successfully received"; that
 just means the data was uploaded. Crossref will send email to
 doi-tugboat@tug.org when complete, which should happen within a few
 minutes. Can also check results online:
-  https://test.crossref.org -> Show System Queue
+  https://test.crossref.org -> Show my submission queue
+                           (or Show System Queue)
 
 When the result mail comes in, see <batch_data> summary element at end,
 should be all success. Browse through the rest. Fix as needed.
 
-After the test upload succeeds, when ready to make the issue VV:N live,
-first remake the landing files so the doi links go through doi.org
-(i.e., without the "make crw" step):
+ After the test upload succeeds, nothing left to do until a few days
+before it's time to make the issue VV:N live.
+
+At that point, first remake the landing files so the doi links go
+through doi.org (i.e., without the "make crw" step):
+  cd crossref
   make cro-scratch  # without crw
+Double-check crossref/dir2.process/issue.xml as above.
 
 Remake everything else too, just to be sure all is well:
   make all
 
-And then copy the final landing files to the live web directory:
+And then copy the final landing files to the live web directory
+(assuming we've been doing all this on a development machine):
   host=tug.org
   dir=/home/httpd/html/TUGboat/tbVV-N
   ssh $host mkdir $dir # ensure the directory exists
@@ -159,9 +168,8 @@ And then copy the final landing files to the live web directory:
 Then check results at:
   https://tug.org/TUGboat/tbVV-N/tbnnnwhatever.html
 E.g.:
-  https://tug.org/TUGboat/tb43-2/tb134hefferon-tug22.html
-Cannot use the "next doi" links because the dois are not registered yet;
-see next.
+  https://tug.org/TUGboat/tb43-3/tb135beet.html
+Cannot use the "next doi" links until the dois are registered; see next.
 
 When close enough to making the pdfs public, do the production
 crossref upload. It costs money to register dois, so you have to edit
@@ -174,9 +182,7 @@ Can check the production site for progress:
 
 Should register the dois some days before making the pdfs public, so
 that the "doi" links on the landing pages will work for testing, and the
-doi links on the contents pages will work after publishing. Also, doi
-registration might take significant time, unless crossref has improved
-their system. Can check status at https://doi.crossref.org.
+doi links on the contents pages will work after publishing.
 
 Then commit any changes to our source files:
  cd ~tubprod/svn/capsules
