@@ -233,8 +233,9 @@ with it. To do this:
 
 - ensure that tbPREVNcapsule.txt is up to date, without /members/ urls.
 
-- clean existing files, e.g., rm crossref/dir*/tbNNN*.* assuming the
-current issue NNN's files have been saved in dir3.uploaded as above.
+- clean existing files, assuming the current issue NNN's files have been
+  saved in dir3.uploaded as above:
+rm crossref/dir*/tbNNN*.*  # should be nothing there
 
 - in capsules/Makefile, change crossref_iss to the desired number PREVN.
 
@@ -242,18 +243,20 @@ current issue NNN's files have been saved in dir3.uploaded as above.
 make cro-scratch
 
 - check diffs (no more "available to TUG members"):
-make diff-land  # need to fix /tb directory name
+make diff-land  # need to fix /tb directory name first
 
-- assuming ok, scp landing files as above, ideally only the changed ones:
-scp tbPREVNitem1.html ... $host:/home/httpd/html/TUGboat/tbVV-PREVN/
+- assuming ok, make list of changed files, say in/tmp/ch, then scp:
+cd crossref/dir1.lndout
+scp -p `cat /tmp/ch` $host:/home/httpd/html/TUGboat/tbVV-PREVN/
 
-- update the archived changed landing files in
-  dir1.lndout/archive.tbPREVN:
-mv dir1.lndout/tbPREVitem1.html ... dir1.lndout/archive.tbPREVN/
+- update the archived changed landing files in dir1.lndout/archive.tbPREVN:
+# still in dir1.lndout:
+\mv `cat /tmp/ch` archive.tbPREVN/
 
 - let's not bother to update the archives in the other dir*,
   since the landing files are all that's actually being changed live.
   Instead, remove the generated files so we'll be clean for next time:
+cd ..
 ls -lt dir*/tbPREV* # bbl/abs should be old, all else new
 rm dir*/tbPREV*.*
 
@@ -268,8 +271,8 @@ cp archive.PREVN/* .
 
 - then make diff-land and copy in as above.
 
- Uploading corrections. When needing to make updates to a
-previously-uploaded issue, e.g., we got the url wrong:
+ Uploading corrections. When needing to make updates to the crossref
+data for a previously-uploaded issue, e.g., we got the url wrong:
 cp dir3.uploaded/tbNNN/issue{,-corr`date +%Y%m%d`}.xml 
 edit the new issue-corr*.xml as needed; update timestamp values
   for affected records, and for the whole upload.
@@ -281,3 +284,5 @@ make upload-test
 if ok, make upload-real
 
 There is no charge for updating metadata, so do this as needed.
+No crossref update is needed when taking an issue public; it's only our
+landing files that change.
