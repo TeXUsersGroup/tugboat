@@ -1,5 +1,11 @@
 2022-12-09  Karl Berry  <karl@tug.org>
 
+	* lists-authinfo.txt (Bie&#x0144;): add S.
+	* tb135capsule.txt (bien): add S.
+	* lists-unifications.txt (Bie&#x0144;): remove since we now use
+	the "S." consistently. And this is needed because there is another
+	linguistics professor named "Janusz Bie\'n".
+
 	* tb135capsule.txt (wright-grapheme): category \LaTeX, not Software.
 
 2022-12-09  Karl Berry  <karl@freefriends.org>
