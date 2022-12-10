@@ -318,7 +318,7 @@ access</a>.
 \difficulty{Intermediate Plus}
 
 \capsule{}
-  {Electronic Documents}
+  {Electronic Documents}%add|Accessibility
   {Ulrike Fischer}
   {On the road to Tagged \PDF:
           About StructElem, Marked Content, \acro{PDF/A} and Squeezed B\"ars}
@@ -380,16 +380,6 @@ access</a>.
   {/TUGboat/!TBIDENT!magdowski-autoee.pdf}
   {}
   {}
-
-%%\capsule{}
-%%  {\LaTeX}
-%%  {Frank Mittelbach, Chris Rowley}
-%%  {\LaTeX{} Tagged \PDF\Dash A blueprint for a large project}
-%%  {background and task summary of an extended feasibility study on the \LaTeX\ web site}
-%%  {\getfirstpage{mitt-tagpdf}}
-%%  {/TUGboat/!TBIDENT!mitt-tagpdf.pdf}
-%%  {}
-%%  {<a href="https://www.latex-project.org//publications/indexbyyear/2020/">Feasibility study</a>.}
 
 \capsule{}
   {Accessibility}

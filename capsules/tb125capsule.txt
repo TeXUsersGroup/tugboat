@@ -326,7 +326,7 @@ access</a>.
   {}
 
 \capsule{}
-  {\LaTeX}
+  {\LaTeX}%add|Accessibility
   {Chris Rowley, Ulrike Fischer, Frank Mittelbach}
   {Accessibility in the \LaTeX{} kernel\Dash experiments in Tagged~\rlap{\PDF}}
   {the experimental \code{tagpdf} package and plans for generation of accessible \PDF\ by \LaTeX}
