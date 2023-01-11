@@ -134,9 +134,10 @@
 \newif\ifFirstR@nin	\FirstR@nintrue
 \newbox\SecBox
 
-\def\sec #1<{\def\\{\unskip\cr}%
+\def\sec #1<{%
     \setbox\SecBox=\vbox to \secht
-        {\bf\halign{\hfil ##\cr\strut#1\cr}\vss}%
+        {\def\\{\unskip\cr}\let\newline=\\
+         \bf\halign{\hfil ##\cr\strut#1\cr}\vss}%
     \newsectrue \FirstR@nintrue }
 \def\secsec #1\\#2<{\sec #1<%
     \subsecnn {}\\#2<}

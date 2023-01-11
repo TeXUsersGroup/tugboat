@@ -4,9 +4,17 @@
 # 
 # Excise the "PDFCROP" version line, preserve exit status.
 
-out=${TMPDIR-/tmp}/pdfcroptub.$$
-pdfcrop "$@" >$out
-status=$?
-grep -v '^PDFCROP 1\.' $out
+for f in "$@"; do
+  out=${TMPDIR-/tmp}/pdfcroptub.$$
+  pdfcrop "$f" >$out
+  status=$?
+  grep -v '^PDFCROP 1\.' $out
+  if test $status != 0; then
+    echo "$0: failed on: $f" >&2
+    cat $out
+    exit $status
+  fi
+done
+
 rm -f $out
-exit $status
+exit 0

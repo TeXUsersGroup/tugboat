@@ -25,7 +25,9 @@
 %%%     "prebibitem" - material output before \bibitem, with newline appended
 %%%       (for example, section headings).
 %%%     "urlnewline" - force line break before url value;
-%%%     
+%%%   If doi or howpublished is present, omit url, since in practice
+%%%     they are usually all the same thing. Should check if
+%%%     howpublished is in fact a url, though.
 %%% --karl, originally created 24jul18.
 %%% 
 %%% Modification of BibTeX style file /usr/local/texlive/2009/texmf-dist/bibtex/bst/base/abbrv.bst
@@ -906,7 +908,7 @@ FUNCTION {make.href}
 % If inlinelinks is true, then format.url should be a no-op, since it's
 % (a) redundant, and (b) could end up as a link-within-a-link.
 % Likewise if the url is empty.
-% Likewise if doi is present, on the assumption that
+% Likewise if doi or howpublished is present, on the assumption that
 % url most likely redundantly specifies the same info as those fields; this
 % seems to be what people do in practice.
 FUNCTION {format.url}

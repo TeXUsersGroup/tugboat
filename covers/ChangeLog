@@ -1,3 +1,9 @@
+2023-01-11  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.front (\sec): make \newline an alias for \\,
+	since we're in an alignment. Make both definitions local
+	to the \sec vbox.
+
 2022-10-26  Karl Berry  <karl@freefriends.org>
 
 	* tubtocmac.tex (\textbf): define.

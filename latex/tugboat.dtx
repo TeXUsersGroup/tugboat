@@ -2,7 +2,7 @@
 % $Id$
 % tugboat.dtx - main source for LaTeX TUGboat classes.
 %
-% Copyright 1994-2022 TeX Users Group.
+% Copyright 1994-2023 TeX Users Group.
 %
 % This file is part of the tugboat package.
 %
@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2022-11-06 v2.27
+                   [2023-01-11 v2.27
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -974,6 +974,11 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% Latin Modern and many other fonts irritatingly make the ellipsis a
+% single character's width, typically more squashed together than three
+% period characters. This just looks wrong. It is too painful to
+% try to redefine in general, but provide the normal definition for
+% \cs{let} in individual papers.
 \DeclareRobustCommand{\tubdots}{%
    .\kern\fontdimen3\font
    .\kern\fontdimen3\font
@@ -1261,6 +1266,7 @@
 % \cs{tbhurl}\tubbraced{foo}  produces \texttt{http://foo}.
 \AtBeginDocument{%
 \ifx\hyper@normalise\undefined
+  \def\tburl{\url}%
   \def\tbsurl{\url}% no hyperref, so just \url is fine.
   \def\tbhurl{\url}%
   \ifx\url\undefined \let\url\texttt \fi % er, make sure \url is defined
@@ -1268,6 +1274,7 @@
   % This hyperref hook-in is due to Ulrike Fischer.
   % \url{https://github.com/latex3/hyperref/issues/125}.
   % \tb[sh]url@ are defined next.
+  \DeclareRobustCommand*{\tburl}{\tbsurl}%
   \DeclareRobustCommand*{\tbsurl}{\hyper@normalise\tbsurl@}%
   \DeclareRobustCommand*{\tbhurl}{\hyper@normalise\tbhurl@}
 \fi
@@ -2966,10 +2973,10 @@
 \def\@listii{%
   \leftmargin\leftmarginii
   \labelwidth=\leftmarginii \advance\labelwidth-\labelsep
-  \topsep=2\p@\@plus\p@\@minus\p@
-  \parsep=\p@\@plus\p@\@minus\p@
-  \itemsep=\parsep
-  \listparindent=1em
+  \topsep=2\p@\@plus\p@\@minus\p@ % space between first item and preceding
+  \parsep=\p@\@plus\p@\@minus\p@ 
+  \itemsep=\parsep                % space between successive items
+  \listparindent=1em              % indentation of subsequent paragraphs
   }
 
 \def\@listiii{%
