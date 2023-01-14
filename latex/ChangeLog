@@ -1,3 +1,13 @@
+2023-01-14  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\raggedleft): \let \\ \@centercr for {tabulararray}
+	fix. https://github.com/lvjr/tabularray/issues/348
+	(\raggedright, \raggedcenter): reformat to make parallelism clearer.
+	* tubularray.tex: new test.
+	* Makefile (check): add rule.
+
+	* tubverbtest.tex: doc fix.
+
 2023-01-11  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.bst: doc fix.

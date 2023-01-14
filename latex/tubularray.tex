@@ -1,0 +1,12 @@
+% $Id$
+% Public domain.
+% https://github.com/lvjr/tabularray/issues/348
+\documentclass{ltugboat} 
+\usepackage{tabularray}
+\begin{document}
+\begin{tblr}{colspec={Q[r,t]Q[c,m]Q[l,b]}, hlines}
+{The baseline is\\ at the top\\ (right aligned)} & 
+{The baseline is\\ in the middle\\ (centered)} & 
+{The baseline is\\ at the bottom\\ (left aligned)}\\ 
+\end{tblr}
+\end{document}

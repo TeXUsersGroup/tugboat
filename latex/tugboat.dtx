@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2023-01-11 v2.27
+                   [2023-01-14 v2.27
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -299,6 +299,20 @@
 \def\TBWarningNL{\ClassWarningNoLine{\@tugclass}}
 %    \end{macrocode}
 %
+% Occasionally we need to do different things when running under
+% traditional (pdf)latex or a native Unicode engine. Since we don't need
+% any fancier distinctions, instead of reading the |iftex| or another
+% package, do the test directly.
+% 
+%    \begin{macrocode}
+\newif\ifTBunicodeengine
+\ifx\Umathchardef\@thisisundefined % not (xetex|luatex)
+  \TBunicodeenginefalse
+\else
+  \TBunicodeenginetrue
+\fi
+%    \end{macrocode}
+%
 % |draft| vs.\ |preprint| vs.\ |final|.
 %
 %    \begin{macrocode}
@@ -509,11 +523,15 @@
 % later\dots
 %
 %    \begin{macrocode}
-\def\EdNoteFont{\fontfamily{cmr}\fontseries{m}\fontshape{ui}%
-          \selectfont}
+\ifTBunicodeengine
+  % there is no "LM unslanted" in OpenType, so use the standard cmu
+  % scaled for the current text size. Not worth more effort.
+  \def\EdNoteFont{\font\ednotefont= cmu10 at 1em}
+\else % traditional engine:
+  \def\EdNoteFont{\fontfamily{cmr}\fontseries{m}\fontshape{ui}\selectfont}
+\fi
 %</ltugboatcls>
 %    \end{macrocode}
-%
 %
 % If Ulrik Vieth's |mflogo.sty| is around, we'll use it.  Otherwise
 % (pro tem, at least) we'll warn the user and define the absolute
@@ -866,10 +884,10 @@
 \def\TeXworks{\TeX\kern-.07em works}
 \def\TeXXeT{\TeX-{}-\XeT}
 \def\TFM{\acro{TFM}}
-\ifx\Umathchardef\@thisisundefined % not (xetex|luatex)
-\def\Thanh{H\`an~Th\^e\llap{\raise 0.5ex\hbox{\'{}}}~Th\`anh}% non-XeTeX
+\ifTBunicodeengine
+ \def\Thanh{H\`an~Th\textcircumacute{e}~Th\`anh}% else xunicode drops the acute
 \else
-\def\Thanh{H\`an~Th\textcircumacute{e}~Th\`anh}% else xunicode drops the acute
+ \def\Thanh{H\`an~Th\^e\llap{\raise 0.5ex\hbox{\'{}}}~Th\`anh}% non-XeTeX
 \fi
 \def\TikZ{Ti{\em k}Z}
 \def\ttn{\textsl{TTN}\@}
@@ -1145,21 +1163,26 @@
 % skips, etc.
 %    \begin{macrocode}
 \def\raggedright{%
-  \nohyphens
-  \rightskip=\raggedskip\@plus\raggedstretch \raggedspaces
+  \nohyphens \raggedspaces
+  \rightskip=\raggedskip\@plus\raggedstretch
   \parfillskip=\raggedparfill
 }
 \def\raggedleft{%
-  \nohyphens
-  \leftskip=\raggedskip\@plus\raggedstretch \raggedspaces
+  \nohyphens \raggedspaces
+  \leftskip=\raggedskip\@plus\raggedstretch
   \parfillskip=\z@skip
+  \let\\ \@centercr % else tabulararray fails,
+                    % https://github.com/lvjr/tabularray/issues/348
 }
 \def\raggedcenter{%
-  \nohyphens
+  \nohyphens \raggedspaces
   \leftskip=\raggedskip\@plus\raggedstretch
-  \rightskip=\leftskip \raggedspaces
-  \parindent=\z@ \parfillskip=\z@skip
+  \rightskip=\leftskip
+  \parindent=\z@
+  \parfillskip=\z@skip
 }
+%
+% Undo |\raggedspaces|.
 \def\normalspaces{\spaceskip\z@skip \xspaceskip\z@skip}
 %    \end{macrocode}
 % \end{macro}

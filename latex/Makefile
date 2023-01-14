@@ -26,14 +26,15 @@ tugboat.pdf: tugboat.dtx ltugboat.cls
 ltugcomn.sty ltugboat.sty ltugboat.cls: tugboat.ins tugboat.dtx
 	$(latex) $<
 
-bibcheck: ltugboat.sty
+bibcheck: ltugboat.sty tugboat.bst
 	$(pdflatex) tubbib && bibtex tubbib && $(pdflatex) tubbib.tex
 
-check:
+check: ltugboat.sty
+	$(pdflatex) tubularray.tex
 	$(pdflatex) tuburltexttest.tex
 	$(pdflatex) tuburllivetest.tex
 	$(pdflatex) tubverbtest.tex
-	$(pdflatex) tubxtx.tex
+	-$(pdflatex) tubxtx.tex # error expected
 	$(pdflatex) tubmetatest.tex
 	$(pdflatex) tubptest.tex
 	$(pdflatex) tubatest.tex
