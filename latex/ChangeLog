@@ -4,6 +4,9 @@
 	* tugboat.ins: copyright year.
 	* ltubguid.tex: document new features.
 
+	* tugboat.dtx (\TBunicodeengine) [common]: must include this
+	in ltugcomn.sty for the sake of typesetting the dtx.
+
 	* tugboat.bst (format.doi): add urlprefix only if not already there.
 	(string.length, contains): helper functions from
 	https://tex.stackexchange.com/questions/119237, by mafp.

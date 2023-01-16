@@ -269,6 +269,22 @@
 %
 % \subsection{Setup and options}
 %
+% Occasionally we need to do different things when running under
+% traditional (pdf)latex or a native Unicode engine. Since we don't need
+% any fancier distinctions, instead of reading the |iftex| or another
+% package, do the test directly.
+% 
+%    \begin{macrocode}
+%<*common>
+\newif\ifTBunicodeengine
+\ifx\Umathchardef\@thisisundefined % not (xetex|luatex)
+  \TBunicodeenginefalse
+\else
+  \TBunicodeenginetrue
+\fi
+%</common>
+%    \end{macrocode}
+%
 % Check for reloading.  Hmmm\dots  Does this happen with \LaTeXe\
 % classes?  Probably, in fact, as well that it doesn't, since the
 % \cs{tugstyinit} referenced here doesn't exist; however, it's
@@ -299,21 +315,7 @@
 \def\TBWarningNL{\ClassWarningNoLine{\@tugclass}}
 %    \end{macrocode}
 %
-% Occasionally we need to do different things when running under
-% traditional (pdf)latex or a native Unicode engine. Since we don't need
-% any fancier distinctions, instead of reading the |iftex| or another
-% package, do the test directly.
-% 
-%    \begin{macrocode}
-\newif\ifTBunicodeengine
-\ifx\Umathchardef\@thisisundefined % not (xetex|luatex)
-  \TBunicodeenginefalse
-\else
-  \TBunicodeenginetrue
-\fi
-%    \end{macrocode}
-%
-% |draft| vs.\ |preprint| vs.\ |final|.
+% Class options: |draft| vs.\ |preprint| vs.\ |final|.
 %
 %    \begin{macrocode}
 \DeclareOption{draft}{%
