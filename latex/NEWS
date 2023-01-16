@@ -1,6 +1,21 @@
 $Id$
 This file records noteworthy changes.  This file is public domain.
 
+-----------------
+2.28 (2023-01-16):
+
+ltugboat.cls:
+- \tburl: new name for \tbsurl, should work in all cases.
+          \def\tburl{\url} to keep using \url in the document body.
+- \titleref: command to typeset a book (etc.) title (slanted + \frenchspacing).
+- \tubdots: command for a normally-spaced ellipsis, not the squashed
+  Unicode character provided by most fonts.
+- \raggedleft: TUB's redefinition should not work with tabularray.
+
+tugboat.bst: use \url instead of \href, to avoid requiring hyperref.
+
+-----------------
+2.27 (2022-05-19):
 ltugboat.cls:
 - \tbsurlfootnote, \tbhurlfootnote: typeset urls in ragged-right
   footnotes of their own.
@@ -8,7 +23,7 @@ ltugboat.cls:
   post-sentence \cite.
 - \tubjustifiedpar: undo ragged-right or other, restoring normal
   paragraph settings.
-- \eTeX: use \boldsymbol if available.
+- \eTeX: use \boldsymbol if available for this logo.
 
 -----------------
 2.26 (2021-10-12):

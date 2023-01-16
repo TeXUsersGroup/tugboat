@@ -1,7 +1,7 @@
 % $Id$
 % ltubguid.ltx - documentation for ltugboat classes.
 % 
-% Copyright 1994-2022 TeX Users Group.
+% Copyright 1994-2023 TeX Users Group.
 % 
 % This file is part of the tugboat package.
 % 
@@ -721,38 +721,40 @@ Furthermore, for the printed (visible) \TUB\ page, nowadays we typically
 prefer to omit a leading \texttt{http://} or \texttt{https://}. But for
 the link to actually work in the output \PDF\ or \HTML, the protocol is
 required (or it appears to be a local filesystem path). Therefore the
-\texttt{ltugboat} class provides (as of version 2.23, released
-March~2020) commands \cs{tbsurl} for \texttt{https} and \cs{tbhurl} for
-\texttt{http}.\footnote{They are wrappers around \cs{hyper@linkurl}, and
-are due to Ulrike Fischer.
+\texttt{ltugboat} class provides (as of version 2.28, released
+January~2023) the command \cs{tburl} for this. Related commands
+\cs{tbsurl} for \texttt{https} and \cs{tbhurl} for \texttt{http} were
+defined in version~2.23 (March~2020).\footnote{All these commands are
+wrappers around \cs{hyper@linkurl}, and are due to Ulrike Fischer.
 \url{https://github.com/latex3/hyperref/issues/125}\raggedright}
 
-For example, \verb|\tbsurl{tug.org}| typesets the text
-`\texttt{tug.org}' (with the usual url line breaks) as a link to
+For example, the commands \verb|\tburl{tug.org}| and
+\verb|\tburl{https://tug.org}| both typeset the text `\texttt{tug.org}'
+(with the usual url line breaks possible) as a link to
 \url{https://tug.org}.
 
-Similarly, \verb|\tbhurl{example.org}| typesets the text
-`\texttt{example.org}' as a link to \url{http://example.org}.
+Similarly, \verb|\tburl{http://example.org}| typesets the text
+`\texttt{example.org}' as a link to \url{http://example.org}, for the
+(unusual nowadays) case when \url{http} is required.
 
-The correct protocol can be explicitly specified, and will also be
-stripped for display. That is, \verb|\tbsurl{https://tug.org}| also
-works. This can be particularly useful for bibliographies. However, an
-incorrect protocol (\texttt{http} with \cs{tbsurl} or the converse) will
-not be stripped, and will generate an invalid url. That's ok because
-such an inconsistent specification cannot be handled reliably.
+As shown, the correct protocol can be explicitly specified, and will be
+stripped for display.
 
-\cs{tbsurl} and \cs{tbhurl} only add the protocol and make live links if
+\cs{tburl} and related add the protocol and make live links if
 \texttt{hyperref} is loaded. Without \texttt{hyperref}, they are merely
 synonyms for \cs{url}. This is ok, and we still request that the
 protocol not be included; if live links are not being produced in the
 output, the printed url without the protocol suffices. (When a user
 copies/pastes url text into a browser, it will normally work.)
 
-Two shortcut macros: \cs{tbsfootnoteurl} and \cs{tbhfootnoteurl} make a
-ragged-right footnote with the respective \cs{tbXurl} command. We
-recognize that sometimes the best option is to put urls in footnotes.
-However, when it's sensible, writing them as either parentheticals in
-the main text or in bibliography entries is preferred, to ease page breaking.
+In order to keep using \cs{url} in a document body, we suggest
+\verb|\def\url{\tburl}|.
+
+The shortcut macro \cs{tburlfootnote} makes a ragged-right footnote
+using \cs{tburl} command. We recognize that when writing url references,
+sometimes the best option is to put urls in footnotes. However, when
+it's sensible, we prefer to have them as either parentheticals in the
+main text or in bibliography entries, to ease page breaking.
 
 For \texttt{ftp}, \texttt{rsync}, and other protocols, it is best to
 always include them explicitly and use \cs{url}:\\
@@ -786,9 +788,16 @@ following:
 \bibliography{yourbibfile}
 \end{verbatim}
 
-If you don't have \verb|tugboat.bst|, which was released in 2018, it's
-fine to use \pkgname{plain} or \pkgname{abbrv}. If you do have it,
-though, you may enjoy the following small but useful features:
+If you use \BibTeX, feel free to take advantage of the accumulated
+bibliography of \TUB{} itself
+(\url{mirror.ctan.org/info/biblio/tugboat.bib} on \CTAN, also in \TeX\
+Live, etc.), and the other compilations by Nelson Beebe in that same
+directory.
+
+If you don't have \verb|tugboat.bst| (our \BibTeX\ style file), which
+was released in 2018, it's fine to use \pkgname{plain} or
+\pkgname{abbrv}. If you do have it, though, you may enjoy the following
+small but useful features:
 
 \begin{itemize}
 \item It is based on \pkgname{abbrvurl.bst} (see \url{ctan.org/pkg/urlbst}),
@@ -822,23 +831,20 @@ aliases for \textsf{@misc}.
 the package of the same name, \url{ctan.org/pkg/ctanbib}).
 
 \item For completeness only: \verb|tugboat.bst| provides editor-intended
-fields \textsf{newpage} to force a page break after the current item,
-\textsf{urlnewline} to force a line break before the \textsf{url} value,
-and \textsf{journaltie} to output a tie instead of space after the
-\textsf{journal} value. As editors, we've found that these presentation
+fields \textsf{journaltie} to output a tie instead of space after the \textsf{journal} value,
+\textsf{newpage} to force a page break after the current item,
+\textsf{nowarning} to omit empty field warnings,
+\textsf{prebibitem} to output material before \cs{bibitem} (e.g., a
+section heading), and
+\textsf{urlnewline} to force a line break before the \textsf{url} value.
+As editors, we've found that these presentation
 tweaks can be desirable for the final typeset output. Authors need not
 worry about them.
 
 \end{itemize}
 
-If you use \BibTeX, feel free to take advantage of the accumulated
-bibliography of \TUB{} itself
-(\url{mirror.ctan.org/info/biblio/tugboat.bib} on \CTAN, also in \TeX\
-Live, etc.), and the other compilations by Nelson Beebe in that same
-directory.
-
 By the way, we recommending using commas to terminate all fields in
-\texttt{.bib} files, including the last one in an entry. That makes it
+\texttt{.bib} files, including the last one in an entry. That makes for
 one less thing to worry about when changing fields around in the source.
 
 Bibliographies can be difficult to typeset at the best of times.
@@ -852,13 +858,17 @@ the author may (for example) say:
 \end{verbatim}
 as the present article does, to often achieve somewhat better results.
 
-A last note for references: for \TUB\ issues, please use the format
-\textsl{volno\,:\,issno}, e.g., ``\TUB\ 32:1'' for volume~32, number~1.
-
 Multiple citations: when citing more than one item, please include them
 in a single \cs{cite} command, as in \verb|\cite{foo,bar}|. Also, please
 ensure that the result is in numerical order, so if \texttt{foo} ends up
 as reference `[2]' and \texttt{bar} as `[1]', use \verb|\cite{bar,foo}|.
+
+One more note on references: for \TUB\ issues, please use the format
+\textsl{volno\,:\,issno}, e.g., ``\TUB\ 32:1'' for volume~32, number~1.
+
+By the way, if anyone would like to volunteer to implement a \BibLaTeX\
+style with the same features and output as our \BibTeX\ style, we would
+be grateful.
 
 \subsection{Non-recommended bibliography facilities}
 

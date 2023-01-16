@@ -5,13 +5,10 @@
 opt = --interaction=nonstopmode --file-line-error
 latex = $(texfot) latex $(opt)
 pdflatex = $(texfot) pdflatex $(opt)
+lualatex = $(texfot) lualatex $(opt)
+xelatex = $(texfot) xelatex $(opt)
 #
-ifdef bboat
-# for karl
-tldev = tldev
-endif
-#
-texfot = $(tldev) texfot
+texfot = texfot
 
 ltubguid.pdf: ltubguid.ltx ltugboat.cls
 	rm -f tubguide.bib ctandir.sty
@@ -27,20 +24,30 @@ ltugcomn.sty ltugboat.sty ltugboat.cls: tugboat.ins tugboat.dtx
 	$(latex) $<
 
 bibcheck: ltugboat.sty tugboat.bst
-	$(pdflatex) tubbib && bibtex tubbib && $(pdflatex) tubbib.tex
+#	$(lualatex) tubbiball; bibtex tubbiball && $(pdflatex) tubbiball.tex
+#	$(pdflatex) tubbibdoi; bibtex tubbibdoi && $(pdflatex) tubbibdoi.tex
+#
+#	$(lualatex) tubbiball && bibtex tubbiball && $(pdflatex) tubbiball.tex
+#	$(pdflatex) tubbiball && bibtex tubbiball && $(pdflatex) tubbiball.tex
+#
+#	$(xelatex) tubbibthanh && bibtex tubbibthanh && $(xelatex) tubbibthanh.tex
+	$(lualatex) tubbibthanh && bibtex tubbibthanh && $(lualatex) tubbibthanh.tex
+#	$(pdflatex) tubbibthanh && bibtex tubbibthanh && $(pdflatex) tubbibthanh.tex
+#
+#	$(pdflatex) tubbib && bibtex tubbib && $(pdflatex) tubbib.tex
 
 check: ltugboat.sty
 	$(pdflatex) tubularray.tex
 	$(pdflatex) tuburltexttest.tex
 	$(pdflatex) tuburllivetest.tex
 	$(pdflatex) tubverbtest.tex
-	-$(pdflatex) tubxtx.tex # error expected
 	$(pdflatex) tubmetatest.tex
 	$(pdflatex) tubptest.tex
 	$(pdflatex) tubatest.tex
 	$(pdflatex) tubrfootest.tex
 	$(pdflatex) tubhytest.tex
 	$(pdflatex) tubutftest.tex
+	-$(pdflatex) tubxtx.tex # error expected
 
 try: ltugboat.cls
 	$(pdflatex) tuburllivetest.tex
@@ -53,7 +60,7 @@ check-oddeven: ltugboat.sty
 
 # try conversion with tex4ht.
 checkht: ltugboat.sty
-	env TEXINPUTS=$(t3):$(tb): tldev texfot htlatex tub4htest.tex \
+	env TEXINPUTS=$(t3):$(tb): $(texfot) htlatex tub4htest.tex \
 	  "xhtml,html5,mathml,charset=utf-8,fn-in" " -cunihtf -utf8"
 
 spell:
