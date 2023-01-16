@@ -13,8 +13,12 @@
 %%%   Output "Ph.D." rather than "PhD".
 %%%   Output "No." and "no." for number field.
 %%%   Omit spaces between author initials, like "A.B. Smith".
-%%%   Set urlintro="" and onlinestring="".
+%%%   Set urlintro="" and onlinestring="" to omit labels from output.
+%%%   Use \url instead of \href, so we don't require hyperref.
 %%%   Always use https://doi.org/ for the doi url; omit "doi:" from output.
+%%%   If doi or howpublished is present, omit url, since in practice
+%%%     they are usually all the same thing. Should check if
+%%%     howpublished is in fact a url, though.
 %%%   Truncate long author lists in format.names (max.names, trunc.num);
 %%%     omit "and" from author lists, per Oren P.
 %%%   Use \emph instead of \em so we get automatic italic corrections.
@@ -25,9 +29,6 @@
 %%%     "prebibitem" - material output before \bibitem, with newline appended
 %%%       (for example, section headings).
 %%%     "urlnewline" - force line break before url value;
-%%%   If doi or howpublished is present, omit url, since in practice
-%%%     they are usually all the same thing. Should check if
-%%%     howpublished is in fact a url, though.
 %%% --karl, originally created 24jul18.
 %%% 
 %%% Modification of BibTeX style file /usr/local/texlive/2009/texmf-dist/bibtex/bst/base/abbrv.bst
@@ -436,6 +437,7 @@ FUNCTION {emphasize}
   if$
 }
 
+% emacs-page
 %%% from trunc-auth.bst:
 %%% There are two constants that allow for the truncation of a list of author
 %%% (or editor) names -- max.names and trunc.num.  And here's how they work:
@@ -873,7 +875,7 @@ FUNCTION {format.incoll.inproc.crossref}
   " \cite{" * crossref * "}" *
 }
 
-% urlbst...
+% emacs-page urlbst...
 % Functions for making hypertext links.
 % In all cases, the stack has (link-text href-url)
 %
@@ -889,10 +891,12 @@ FUNCTION {make.href.hypertex}
   swap$ * quote$ * "> }" * swap$ *
   "\special {html:</a>}" *
 }
-% make hyperref specials
+% make hyperref specials. Use \url rather than \href so that we don't
+% require loading hyperref (ltugboat provides \url in all cases),
+% thus we ignore one of the arguments.
 FUNCTION {make.href.hyperref}
 { 
-  "\href{" swap$ * "}{\path{" * swap$ * "}}" *
+  "\url{" swap$ * "}" * swap$ pop$ 
 }
 FUNCTION {make.href}
 { hrefform #2 =
@@ -947,17 +951,78 @@ FUNCTION {format.eprint}
   if$
 }
 
-FUNCTION {format.doi}
-{ doi empty$
-    { "" }
-    { doiprefix doi * doiurl doi * make.href }
-  if$
-}
-
 FUNCTION {format.pubmed}
 { pubmed empty$
     { "" }
     { pubmedprefix pubmed * pubmedurl pubmed * make.href }
+  if$
+}
+
+% The original definition, left here for comparison.
+%FUNCTION {format.doi.orig}
+%{ doi empty$
+%    { "" }
+%    { doiprefix doi * doiurl doi * make.href }
+%  if$
+%}
+
+% For the doi, sometimes people write doi = "10.x/y"
+% and sometimes they write doi ="https://doi.org/10.x/y".
+% So we check if the doi string starts with https://doi.org
+% (aka the doiurl variable), and only add it if needed.
+% 
+% This code is from https://tex.stackexchange.com/questions/119237
+% (thank you, mafp).
+% 
+% The "X Y contains" function checks if string Y is contained in X.
+% Although we only need to check if Y is at the beginning of X,
+% it makes no practical difference, so just use it as-is.
+% 
+INTEGERS { strl }
+FUNCTION { string.length }
+{
+  #1 'strl :=
+  {duplicate$ duplicate$ #1 strl substring$ = not}
+    { strl #1 + 'strl :=}
+  while$
+  pop$ strl
+}
+
+INTEGERS {find.length search.start search.end done}
+STRINGS  {find.string find.pattern}
+FUNCTION {contains}
+{
+  'find.pattern :=
+  'find.string :=
+  find.pattern string.length 'find.length :=
+  #1 'search.start :=
+  find.string string.length find.length - #2 + 'search.end :=
+  #0 'done :=
+  { search.start search.end < }
+  {
+    find.string search.start find.length substring$ find.pattern =
+      { 
+        #1 'done :=
+        search.end 'search.start :=%% stop searching
+      }
+      { #1 search.start + 'search.start := }
+    if$
+  }
+  while$
+  done
+}
+
+FUNCTION {format.doi}
+{ doi empty$
+    { "" }
+    { doiprefix doi *
+      doi doiurl contains
+        { "" }
+        { doiurl }
+      if$
+      doi *
+      make.href
+    }
   if$
 }
 
@@ -1037,6 +1102,7 @@ FUNCTION {fin.entry}
   if$
 }
 
+% emacs-page
 % Webpage entry type.
 % Title and url fields required;
 % author, note, year, month, and lastchecked fields optional
@@ -1506,6 +1572,8 @@ MACRO {tcs} {"Theoretical Comput. Sci."}
 READ
 
 EXECUTE {init.and.check.trunc.consts}   % from trunc-auth.bst
+
+% emacs-page
 
 FUNCTION {sortify}
 { purify$

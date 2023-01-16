@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2023-01-14 v2.27
+                   [2023-01-16 v2.28
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -526,7 +526,7 @@
 \ifTBunicodeengine
   % there is no "LM unslanted" in OpenType, so use the standard cmu
   % scaled for the current text size. Not worth more effort.
-  \def\EdNoteFont{\font\ednotefont= cmu10 at 1em}
+  \def\EdNoteFont{\font\ednotefont = cmu10 at 1em }
 \else % traditional engine:
   \def\EdNoteFont{\fontfamily{cmr}\fontseries{m}\fontshape{ui}\selectfont}
 \fi
@@ -885,9 +885,23 @@
 \def\TeXXeT{\TeX-{}-\XeT}
 \def\TFM{\acro{TFM}}
 \ifTBunicodeengine
- \def\Thanh{H\`an~Th\textcircumacute{e}~Th\`anh}% else xunicode drops the acute
-\else
- \def\Thanh{H\`an~Th\^e\llap{\raise 0.5ex\hbox{\'{}}}~Th\`anh}% non-XeTeX
+  \AtBeginDocument{% in case a different font is loaded
+    % \iffontchar is from e-TeX; safe to use under Unicode engines.
+    \iffontchar\font"1EBF
+      \def\TBecircacute{\char"1EBF }%
+    \else
+      \def\TBecircacute{\^e\llap{\raise 0.5ex\hbox{\'{}}}}%
+    \fi
+    \def\Thanh{H\`an~Th\TBecircacute~Th\`anh}%
+  }%
+\else % non-Unicode engine, use our traditional definition.
+  \def\Thanh{H\`an~Th\^e\llap{\raise 0.5ex\hbox{\'{}}}~Th\`anh}
+  % We could also go the other direction, and always use the Unicode
+  % character, after:
+  % \ifdefined\DeclareUnicodeCharacter
+  %   \DeclareUnicodeCharacter{1EBF}{\^e\llap{\raise 0.5ex\hbox{\'{}}}}
+  % \fi
+  % but let's make the smaller change.
 \fi
 \def\TikZ{Ti{\em k}Z}
 \def\ttn{\textsl{TTN}\@}
@@ -992,11 +1006,11 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% Latin Modern and many other fonts irritatingly make the ellipsis a
-% single character's width, typically more squashed together than three
-% period characters. This just looks wrong. It is too painful to
-% try to redefine in general, but provide the normal definition for
-% \cs{let} in individual papers.
+% Latin Modern and many other fonts irritatingly make the Unicode
+% ellipsis character (U+2026) a single character's width, typically more
+% squashed together than three period characters. This just looks wrong.
+% It is too painful to try to redefine in general, but provide the
+% normal definition for \cs{let} in individual papers.
 \DeclareRobustCommand{\tubdots}{%
    .\kern\fontdimen3\font
    .\kern\fontdimen3\font
@@ -1343,6 +1357,7 @@
 %
 % Now let's use those macros for putting a url into a simple
 % ragged-right footnote.
+\def\tburlfootnote{\tbsurlfootnote}
 \def\tbsurlfootnote#1{\footnote{\raggedright\tbsurl{#1}}}
 \def\tbhurlfootnote#1{\footnote{\raggedright\tbhurl{#1}}}
 %

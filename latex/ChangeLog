@@ -1,7 +1,35 @@
+2023-01-16  Karl Berry  <karl@freefriends.org>
+
+	* version 2.28 (2023-01-16) uploaded to CTAN.
+	* tugboat.ins: copyright year.
+	* ltubguid.tex: document new features.
+
+	* tugboat.bst (format.doi): add urlprefix only if not already there.
+	(string.length, contains): helper functions from
+	https://tex.stackexchange.com/questions/119237, by mafp.
+	(make.href.hyperref): use \url instead of \href,
+	so that we don't require hyperref.
+	* tubbib.bib (doi-bare): add test entry for doi without
+	https://doi.org.
+	* tubbibdoi.tex: test doi with and without url prefix.
+	
+	* tugboat.dtx (\TBecircacute): for Unicode engines, use
+	\iffontchar to test if U+1EBF is available in the current font;
+	use it if so, else fall back to our llap+raise definition.
+	Don't use \textcircumacute.
+	* tubbibthanh.tex: test bib entry with \Thanh.
+	
+	* tubbiball.tex: test file to typeset all of tugboat.bib.
+
 2023-01-14  Karl Berry  <karl@freefriends.org>
 
-	* tugboat.dtx (\raggedleft): \let \\ \@centercr for {tabulararray}
-	fix. https://github.com/lvjr/tabularray/issues/348
+	* tugboat.dtx (\ifTBunicodeengine): new conditional,
+	set according to whether \Umathchardef is defined.
+	(\EdNoteFont): for Unicode engines, use cmu10 at 1em,
+	since OpenType Latin Modern does not provide unslanted italic.
+
+	* tugboat.dtx (\raggedleft): \let \\ \@centercr for {tabulararray} fix.
+	https://github.com/lvjr/tabularray/issues/348
 	(\raggedright, \raggedcenter): reformat to make parallelism clearer.
 	* tubularray.tex: new test.
 	* Makefile (check): add rule.
@@ -35,9 +63,14 @@
 
 	* tugboat.dtx (\pdfTeX): define, another unnecessary macro people
 	like to use.
-	* tugboat.dtx (\tbsurl@): if url starts with http://, just use it,
+	(\tbsurl@): if url starts with http://, just use it,
 	do not prepend https://. This is so we can \let\url\tbsurl for
 	bibliographies, which sometimes have http urls.
+	(\tubdots): define, since the U+2026 ellipsis in most
+	Unicode fonts is unusably ugly.
+	(\tubsecfmt): define common formatting for section titles.
+	(\section, \subsection, \subsubsection): use it, for both
+	numbered and unnumbered cases.	
 
 2022-06-28  Karl Berry  <karl@freefriends.org>
 
@@ -383,7 +416,7 @@
 
 2019-09-11  Karl Berry  <karl@freefriends.org>
 
-	* tugboat.dtx (\iOS): abbrev
+	* tugboat.dtx (\iOS): abbrev.
 
 2019-09-05  Karl Berry  <karl@freefriends.org>
 

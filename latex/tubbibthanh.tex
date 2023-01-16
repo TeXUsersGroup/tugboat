@@ -1,0 +1,20 @@
+% $Id$
+% Public domain.
+% 
+% Test bib entry with \Thanh. We should get the definition from
+% tugboat.dtx, not tugboat.def, and it should work under both pdflatex
+% and xe/lualatex.
+% 
+\documentclass{ltugboat}
+\begin{document}
+\nocite{Thanh:2000:MTE}
+\bibliographystyle{tugboat}
+\bibliography{tugboat.bib}
+\end{document}
+
+% xunicode.sty defines \textcircumacute. However, it has an explicit
+% test for running under XeTeX, so it fails with lualatex. And it also
+% fails with xelatex:
+%   ./tubbibthanh.bbl:7: LaTeX Error: Command \textcircumacute unavailable
+%   in encoding TU.
+% So, not helpful.

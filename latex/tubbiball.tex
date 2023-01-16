@@ -1,0 +1,16 @@
+% $Id$
+% Public domain.
+% Typeset all entries in tugboat.bib, using the tugboat class.
+
+\documentclass{article}
+\usepackage{hyperref}
+%\usepackage{url}
+% should work with either hyperref or url,
+% but the ltugboat.cls's final fallback of \texttt fails due to _'s
+% in some urls, etc. Let's not worry about it.
+\begin{document}
+\nocite{*}
+\hbadness=10000
+\bibliographystyle{tugboat}
+\bibliography{tugboat}
+\end{document}

@@ -1,0 +1,13 @@
+% $Id$
+% Public domain.
+% 
+% Test bib entries both with and without "https://doi.org/" at the
+% beginning of the DOI string.
+
+\documentclass{ltugboat}
+%\usepackage{hyperref}
+\begin{document}
+\bibliographystyle{tugboat}
+\nocite{Veytsman:2020:PD,doi-bare}
+\bibliography{tugboat.bib,tubbib.bib}
+\end{document}
