@@ -3,17 +3,19 @@
 # Public domain. Originally written by Karl Berry, 2017.
 # Simplistic tex-to-html conversion. The idea is not to make a usable HTML
 # document, but to replace basic TeX constructs with nice HTML, just to
-# reduce the amount of onerous editing. In particular, there's no good
-# way to automatically insert the needed <p>s.
+# reduce the amount of onerous editing.
 # 
-# Good to look for \ in the output for things remaining to be fixed.
+# TeX {arguments} that begin on one line and end on another will not be
+# processed. We only process line by line.
+# 
+# Good to look for \{} in the output for things remaining to be fixed.
 
 # about the first expressions here: it's too dangerous to delete all %,
 # but if starts a line, should be safe? as for math and |...|, let's try
 # italics and typewriter, respectively.
 # 
 # the next ones replace \< and \> with angle brackets (&#x2329; and
-# &#x232a;), then can replace < and > with &lt; and &gt;
+# &#x232a;), then can replace < and > with &lt; and &gt;.
 # 
 sed \
     -e '/^ *%/d' \
@@ -26,51 +28,103 @@ sed \
     -e 's/</\&lt;/g' \
     -e 's/>/\&gt;/g' \
     \
-    -e 's/\\BibTeX{*}*/BibTeX/g' \
-    -e 's/\\DVD{*}*/DVD/g' \
-    -e 's/\\LaTeX{*}*/LaTeX/g' \
-    -e 's/\\MFB{*}*/<i>The\&nbsp;Metafontbook/g' \
-    -e 's/\\MF{*}*/Metafont/g' \
-    -e 's/\\PASCAL{*}*/Pascal/g' \
-    -e 's/\\TeX{*}*/TeX/g' \
-    -e 's/\\TB{*}*/<i>The\&nbsp;TeXbook/g' \
-    -e 's/\\TUB{*}*/TUGboat/g' \
-    -e 's/\\TUG{*}*/TUG/g' \
-    -e 's/\\WEB{*}*/WEB/g' \
+    -e 's/\\AllTeX\b{*}*/(La)TeX/g' \
+    -e 's/\\AMS\b{*}*/AMS/g' \
+    -e 's/\\BibLaTeX\b{*}*/BibLaTeX/g' \
+    -e 's/\\BibTeX\b{*}*/BibTeX/g' \
+    -e 's/\\ConTeXt\b{*}*/ConTeXt/g' \
+    -e 's/\\CTAN\b{*}*/CTAN/g' \
+    -e 's/\\DVD\b{*}*/DVD/g' \
+    -e 's/\\FAQ\b{*}*/FAQ/g' \
+    -e 's/\\GUT\b{*}*/GUT/g' \
+    -e 's/\\GUTenberg\b{*}*/GUTenberg/g' \
+    -e 's/\\IEEE\b{*}*/IEEE/g' \
+    -e 's/\\LaTeX\b{*}*/LaTeX/g' \
+    -e 's/\\MFB\b{*}*/<i>The\&nbsp;Metafontbook/g' \
+    -e 's/\\MF\b{*}*/Metafont/g' \
+    -e 's/\\PASCAL\b{*}*/Pascal/g' \
+    -e 's/\\PDF\b{*}*/PDF/g' \
+    -e 's/\\TeX\b{*}*/TeX/g' \
+    -e 's/\\TB\b{*}*/<i>The\&nbsp;TeXbook/g' \
+    -e 's/\\TUB\b{*}*/TUGboat/g' \
+    -e 's/\\TUG\b{*}*/TUG/g' \
+    -e 's/\\TUGboat\b{*}*/TUGboat/g' \
+    -e 's/\\tug\b{*}*/TUG/g' \
+    -e 's/\\WEB\b{*}*/WEB/g' \
     \
     -e 's/\\\(newpage\|noindent\|par\|\(small\|med\|big\)skip\)//g' \
-    -e 's/\\\(looseness *= *-[0-9]*)//g' \
+    -e 's/\\looseness[ =-]*[0-9]*//g' \
     \
     -e 's!\\emph{\([^}]*\)}!<em>\1</em>!g' \
-    -e 's!\\cs{\([^}]*\)}!<tt>\\\1</tt>!g' \
+    -e 's!\\textbf{\([^}]*\)}!<b>\1</b>!g' \
+    -e 's!\\textit{\([^}]*\)}!<i>\1</i>!g' \
+    -e 's!\\textsf{\([^}]*\)}!\1!g' \
+    -e 's!\\textsl{\([^}]*\)}!<i>\1</i>!g' \
     -e 's!\\texttt{\([^}]*\)}!<tt>\1</tt>!g' \
     \
     -e 's!\\title{\([^}]*\)}!<h2>\1</h2>!g' \
     -e 's!\\section{\([^}]*\)}!<h3>\1</h3>!g' \
-    -e 's!\\url{\([^}]*\)}!<a href="\1"></a>!g' \
+    -e 's!\\url{\([^}]*\)}!<a href="\1">\1</a>!g' \
+    \
     -e 's!\\acro{\([^}]*\)}!\1!g' \
+    -e 's!\\cs{\([^}]*\)}!<tt>\\\1</tt>!g' \
+    -e 's!\\slash\b!/!g' \
+    -e 's!\\titleref{\([^}]*\)}!<i>\1</i>!g' \
+    -e 's!\\tubsentencespace!!g' \
     \
     -e 's/\\item */<li>/' \
-    -e 's!\\begin{enumerate}!<ol>!' \
-    -e 's!\\end{enumerate}!</ol>!' \
-    -e 's!\\begin{itemize}!<ul>!' \
-    -e 's!\\end{itemize}!</ul>!' \
+    -e 's!\\begin{\(compact\)\?enumerate}!<ol>!' \
+    -e 's!\\end{\(compact\)\?enumerate}!</ol>!' \
+    -e 's!\\begin{\(compact\)\?itemize}!<ul>!' \
+    -e 's!\\end{\(compact\)\?itemize}!</ul>!' \
     -e 's!\\begin{verbatim}\(\[.*\]\)\?!<pre>!' \
     -e 's!\\end{verbatim}!</pre>!' \
     \
     -e 's/\\ / /g' \
     -e 's/\\$//g' \
+    -e 's/\\#/#/g' \
     -e 's/\\&/\&amp;/g' \
     -e 's/~/\&nbsp;/g' \
     -e 's/\\Dash */\&mdash;/' \
     -e 's/---/\&mdash;/g' \
     -e 's/--/\&ndash;/g' \
     -e 's/\.\.\./\&hellip;/g' \
+    -e 's/\\ldots/\&hellip;/g' \
     -e 's/\\,//g' \
     -e 's/``/\&ldquo;/g' \
     -e "s/''/\&rdquo;/g" \
     -e 's/ `/ \&lsquo;/g' \
     -e "s/' /\&rsquo; /g" \
+    -e 's/^}$//g' \
+    \
+    -e 's/\\'"'"'e/\&eacute;/g' \
     \
     -e 's/Hef{}feron/Hefferon/g' \
-  "$@"
+    \
+    -e 's!^\\boardcandidate.*}{\(.*\) \(.*\)}{$!<h3 id="\2"><img width=150 src="img/\2.jpg">\&nbsp;\n\1 \2</h3>!' \
+    -e 's/^\\biography */<p>(Candidate for TUG board of directors.)\n\nBiography: /' \
+    -e 's/^\\statement */Statement: /' \
+  "$@" \
+| cat -s \
+| sed -e :a -e '/^\n*$/{$d;N;};/\n$/ba' \
+| sed -e 's/^$/\n<p>/'
+
+# The last three commands:
+# . Squeeze multiple blank lines into one.
+# . Remove all blank lines at end of file. From:
+#     https://sed.sourceforge.net/sed1line.txt
+#     https://unix.stackexchange.com/questions/81685
+# . Put <p> after every blank line. sometimes wrong, but often enough
+#   right to be worth it. (It seems browsers ignore whitespace after <p>,
+#   so it's ok that it's on a line by itself.)
+
+# for election:
+# - boardcandidate id and img file end up incorrectly capitalized,
+#   must downcase by hand.
+# - presidential candidate must be edited in.
+# 
+# \boardcandidate{hejda}{Tom Hejda}{
+# ->
+# <h3 id="Hejda"><img width=150 src="img/Hejda.jpg">&nbsp;
+# Tom Hejda</h3>
+# <p>(Candidate for TUG board of directors.)
