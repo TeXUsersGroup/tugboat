@@ -1,6 +1,7 @@
 2023-03-08  Karl Berry  <karl@freefriends.org>
 
 	* version 2.29 (2023-03-08) uploaded to CTAN.
+	* NEWS: update.
 
 	* tugboat.dtx (\tubtypesetdoi): make no-op if \volno=0,
 	for the sake of people (Frank) running their TUB articles
