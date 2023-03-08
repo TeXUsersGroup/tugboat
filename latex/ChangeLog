@@ -1,3 +1,22 @@
+2023-03-08  Karl Berry  <karl@freefriends.org>
+
+	* version 2.29 (2023-03-08) uploaded to CTAN.
+
+	* tugboat.dtx (\tubtypesetdoi): make no-op if \volno=0,
+	for the sake of people (Frank) running their TUB articles
+	themselves. Also, use example.org instead of xnotdoi.org
+	when typesetting an invalid doi.
+
+2023-03-08  Karl Berry  <karl@freefriends.org>
+	
+	* tugboat.bst (format.chapter.pages): "ch." instead of "chapter".
+
+2023-02-20  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\url) [! \url]: if \url is not defined,
+	e.g., no hyperref, improve fallback definition to typeset
+	special characters (_ and the like) as text.
+
 2023-01-16  Karl Berry  <karl@freefriends.org>
 
 	* version 2.28 (2023-01-16) uploaded to CTAN.

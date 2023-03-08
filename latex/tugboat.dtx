@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2023-01-16 v2.28
+                   [2023-03-08 v2.29
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -1308,7 +1308,13 @@
   \def\tburl{\url}%
   \def\tbsurl{\url}% no hyperref, so just \url is fine.
   \def\tbhurl{\url}%
-  \ifx\url\undefined \let\url\texttt \fi % er, make sure \url is defined
+  \ifx\url\undefined      % make sure \url is defined
+    \def\url{\begingroup  % might as well catch common special chars
+      \catcode`\#=12 \catcode`\$=12 \catcode`\%=12 \catcode`\^=12
+      \catcode`\&=12 \catcode`\_=12 \catcode`\~=12
+      \finish@tub@url}
+  \def\finish@tub@url#1{\tt #1\endgroup}
+  \fi
 \else
   % This hyperref hook-in is due to Ulrike Fischer.
   % \url{https://github.com/latex3/hyperref/issues/125}.
@@ -3544,21 +3550,27 @@
 \def\tubdoiprefix{10.47397/tb} % the number crossref assigned us
 \def\tubabovedoi{}             % fudge spacing or whatever.
 %
-\def\tubtypesetdoi{\iftubomitdoioption\else % if not explicit omission ...
- \iftubfinaloption % do this if [final], even if pageno>900
-  \vbox to 0pt{% don't impact normal layout
-    \edef\thedoi{\ifnum\count0>900 xnot\fi % but make url invalid if >900
-                 doi.org/\tubdoiprefix/\volno-\issno/\jobname}%
-    \scriptsize
-    \vskip\baselineskip
-    \tubabovedoi
-    \iftubsecondcolstart \moveright \tubcolwidthandgutter \fi
-    \rlap{\expandafter\tbsurl\expandafter{\thedoi}}%
-    \vss
-  }%
+\def\tubtypesetdoi{%
+  \iftubomitdoioption\else % do if not explicit omission ...
+    \ifnum\volno>0         % and if being run for production ...  
+      \iftubfinaloption    % and if [final], even if pageno>900
+       \vbox to 0pt{% don't impact normal layout
+         \edef\thedoi{% but make url invalid if >900
+                      \ifnum\count0>900 example.org%
+                                  \else doi.org\fi
+                       /\tubdoiprefix/\volno-\issno/\jobname}%
+         \scriptsize
+         \vskip\baselineskip
+         \tubabovedoi
+         \iftubsecondcolstart \moveright \tubcolwidthandgutter \fi
+         \rlap{\expandafter\tbsurl\expandafter{\thedoi}}%
+         \vss
+       }%
+     \fi  % tubfinaloption
+   \fi    % volno>0
+  \fi     % !tubomitdoioption
   \global\let\tubtypesetdoi\@empty % only do it once, no matter what.
- \fi
-\fi}
+}
 %
 %
 %    \end{macrocode}

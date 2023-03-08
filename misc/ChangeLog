@@ -1,3 +1,7 @@
+2023-03-08  Karl Berry  <karl@freefriends.org>
+
+	* tex2html-tub: \slash should ignore following spaces.
+
 2023-03-05  Karl Berry  <karl@tug.org>
 
 	* tex2html-tub: many additions to handle 2023 election.

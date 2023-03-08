@@ -735,7 +735,7 @@ FUNCTION {format.chapter.pages}
 { chapter empty$
     'format.pages
     { type empty$
-        { "chapter" }
+        { "ch." }
         { type "l" change.case$ }
       if$
       chapter tie.or.space.connect
@@ -972,7 +972,8 @@ FUNCTION {format.pubmed}
 % (aka the doiurl variable), and only add it if needed.
 % 
 % This code is from https://tex.stackexchange.com/questions/119237
-% (thank you, mafp).
+% (thank you, mafp). The original urlbst package solved the problem in a
+% different (simpler) way in its 0.9.1 (January 2023) release.
 % 
 % The "X Y contains" function checks if string Y is contained in X.
 % Although we only need to check if Y is at the beginning of X,

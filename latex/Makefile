@@ -23,19 +23,6 @@ tugboat.pdf: tugboat.dtx ltugboat.cls
 ltugcomn.sty ltugboat.sty ltugboat.cls: tugboat.ins tugboat.dtx
 	$(latex) $<
 
-bibcheck: ltugboat.sty tugboat.bst
-#	$(lualatex) tubbiball; bibtex tubbiball && $(pdflatex) tubbiball.tex
-#	$(pdflatex) tubbibdoi; bibtex tubbibdoi && $(pdflatex) tubbibdoi.tex
-#
-#	$(lualatex) tubbiball && bibtex tubbiball && $(pdflatex) tubbiball.tex
-#	$(pdflatex) tubbiball && bibtex tubbiball && $(pdflatex) tubbiball.tex
-#
-#	$(xelatex) tubbibthanh && bibtex tubbibthanh && $(xelatex) tubbibthanh.tex
-	$(lualatex) tubbibthanh && bibtex tubbibthanh && $(lualatex) tubbibthanh.tex
-#	$(pdflatex) tubbibthanh && bibtex tubbibthanh && $(pdflatex) tubbibthanh.tex
-#
-#	$(pdflatex) tubbib && bibtex tubbib && $(pdflatex) tubbib.tex
-
 check: ltugboat.sty
 	$(pdflatex) tubularray.tex
 	$(pdflatex) tuburltexttest.tex
@@ -47,10 +34,11 @@ check: ltugboat.sty
 	$(pdflatex) tubrfootest.tex
 	$(pdflatex) tubhytest.tex
 	$(pdflatex) tubutftest.tex
-	-$(pdflatex) tubxtx.tex # error expected
+	! $(pdflatex) tubxtx.tex # error expected
+	$(pdflatex) tuburllivetest.tex
 
 try: ltugboat.cls
-	$(pdflatex) tuburllivetest.tex
+	$(pdflatex) tubdoi-final.tex
 
 check-oddeven: ltugboat.sty
 	$(pdflatex) tubfinal-odd.tex
@@ -67,8 +55,21 @@ spell:
 	aspell list --mode=tex --add-extra-dicts=`pwd`/.dict.pws <ltubguid.ltx\
 	| sort -f -u
 
+checkbib: ltugboat.sty tugboat.bst
+#	$(lualatex) tubbiball; bibtex tubbiball && $(pdflatex) tubbiball.tex
+#	$(pdflatex) tubbibdoi; bibtex tubbibdoi && $(pdflatex) tubbibdoi.tex
+#
+#	$(lualatex) tubbiball && bibtex tubbiball && $(pdflatex) tubbiball.tex
+#	$(pdflatex) tubbiball && bibtex tubbiball && $(pdflatex) tubbiball.tex
+#
+#	$(xelatex) tubbibthanh && bibtex tubbibthanh && $(xelatex) tubbibthanh.tex
+	$(lualatex) tubbibthanh && bibtex tubbibthanh && $(lualatex) tubbibthanh.tex
+#	$(pdflatex) tubbibthanh && bibtex tubbibthanh && $(pdflatex) tubbibthanh.tex
+#
+#	$(pdflatex) tubbib && bibtex tubbib && $(pdflatex) tubbib.tex
+
 tub_rel = /usr/local/texlive/dev/texmf-dist/
-diff:
+diff dif:
 	-diff -u0 $(tub_rel)/bibtex/bst/tugboat/tugboat.bst .
 	-diff -u0 $(tub_rel)/tex/latex/tugboat/ltugboat.cls .
 	-diff -u0 $(tub_rel)/doc/latex/tugboat/ltubguid.ltx .
