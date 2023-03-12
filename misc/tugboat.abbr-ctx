@@ -1,5 +1,5 @@
 % $Id$
-% Copyright 1999-2022 TeX Users Group.
+% Copyright 1999-2023 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 % "Poor man's" ConTeXt in LaTeX, for simple-enough documents.
@@ -32,6 +32,7 @@
 \def\DVIPDFMX  {\DVIPDFMx}
 \def\DVIPSONE  {\acro{DVIPS\-ONE}}
 \def\DVITOMP   {{\tt dvitomp}}
+\def\DVIWINDO  {\acro{DVIWINDO}}
 \def\EMTEX     {em\TeX}
 \def\ENC       {\acro{ENC}}
 \def\EPS       {\acro{EPS}}
@@ -103,6 +104,7 @@
 \def\MPLIB     {\acro{MP}lib}
 \def\MPTO      {{\tt mpto}}
 \def\MPTOPDF   {{\tt mptopdf}}
+\def\MSVC      {\acro{MSVC}}
 \def\MSWINDOWS {Windows}
 \def\MSWORD    {Word}
 \def\MTXRUN    {{\tt mtxrun}}
@@ -243,6 +245,7 @@
 
 \long\def\setuphead[#1][#2]{}
 \long\def\setuplayout[#1]{}
+\long\def\setuptolerance[#1]{}
 \long\def\setupwhitespace[#1]{}
 
 \def\type{\bgroup
@@ -359,7 +362,7 @@
 \def\NC{&}
 \def\NR{\\}
 \def\FL{\noalign{\smallskip}\hline\noalign{\tubsmallerskip}}
-\def\HL{\hline}
+\def\HL{\hline\rule{0pt}{1em}}
 \def\LL{\noalign{\tubsmallerskip}\hline\noalign{\smallskip}}
 \def\ML{\noalign{\tubsmallerskip}\hline\noalign{\tubsmallerskip}}
 \def\cc#1{\multicolumn{1}{c}{#1}}% center cell
