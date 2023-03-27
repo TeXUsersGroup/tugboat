@@ -1,3 +1,11 @@
+2023-03-27  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\AllTeX): use \texorpdfstring for this.
+
+	* tugboat.bst (fin.entry.original): write \newline before url
+	here, if urlnewline field is set. Then it works for doi values too.
+	(output.url): instead of here.
+
 2023-03-08  Karl Berry  <karl@freefriends.org>
 
 	* version 2.29 (2023-03-08) uploaded to CTAN.

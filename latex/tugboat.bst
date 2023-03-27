@@ -28,7 +28,7 @@
 %%%     "nowarning" - if set, omit empty field warnings from output.check.
 %%%     "prebibitem" - material output before \bibitem, with newline appended
 %%%       (for example, section headings).
-%%%     "urlnewline" - force line break before url value;
+%%%     "urlnewline" - force line break before url or doi value;
 %%% --karl, originally created 24jul18.
 %%% 
 %%% Modification of BibTeX style file /usr/local/texlive/2009/texmf-dist/bibtex/bst/base/abbrv.bst
@@ -350,10 +350,18 @@ FUNCTION {output.bibitem.original} % urlbst (renamed from output.bibitem, so it 
   before.all 'output.state :=
 }
 
-FUNCTION {fin.entry.original} % urlbst (renamed from fin.entry, so it can be wrapped below)
+% we wrap this function below to handle urls.
+% The url string to print (of whatever sort) is on the stack to write$.
+% If the `urlnewline' field is set, write "\newline" first.
+FUNCTION {fin.entry.original} % urlbst (renamed from fin.entry)
 { doi empty$  url empty$  and
     { add.period$ }
-    { skip$ }
+    {
+      urlnewline empty$ not
+        { "\newline " write$ }
+        'skip$
+      if$
+    }
   if$
   write$
   newline$
@@ -1033,17 +1041,11 @@ FUNCTION {format.doi}
 % so that `format.url format.lastchecked * output' ends up with both
 % the URL and the lastchecked in brackets.
 % 
-% If the `urlnewline' field is present, output \newline before the
-% url value.
 FUNCTION {output.url}
 { url empty$
     'skip$ 
     { new.block 
       format.url output
-      urlnewline empty$ not
-        { "\newline " write$ }
-        'skip$
-      if$
       format.lastchecked output 
     }
   if$
