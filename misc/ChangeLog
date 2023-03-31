@@ -1,3 +1,9 @@
+2023-03-30  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr-ctx (\BACHOTEX, \alignhere, \blackrule, \breakhere,
+	\im, \mtp, \overbar, \unit, \useMPlibrary): new cmds.
+	For tb136egger-edith.
+
 2023-03-12  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.abbr-ctx (\DVIWINDO, \MSVC): new abbrevs.

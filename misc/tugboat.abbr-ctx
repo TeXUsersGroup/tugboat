@@ -15,6 +15,7 @@
 \def\AMS       {\acro{AMS}}
 \def\ARM       {\acro{ARM}}
 \def\ASCIIMATH {\acro{ASCIIMATH}}
+\def\BACHOTEX  {Bacho\TeX}
 \def\BIBTEX    {\BibTeX}
 \def\C         {C}
 \def\CCODE     {C code}
@@ -168,9 +169,12 @@
 \def\pdfTeX    {pdf\-\/\TeX}
 
 % 
+\def\alignhere{}
 \def\at{}
 \def\bfc{}
+\def\blackrule[#1]#2{\vrule depth0pt height1ex width#2 \relax}
 \def\blank{\par}
+\def\breakhere{}
 \let\citationORIG=\citation
 \def\citation[#1]{\cite{#1}}
 \def\citetitle{\textsl}
@@ -191,15 +195,18 @@
 \def\head{\item}
 \def\high{\textsuperscript}
 \def\hyphenatedurl{\url}
+\def\im#1{\(#1\)}
 \def\in#1[#2]{#1~\ref{#2}}
 \def\inrightmargin{\marginpar}
 \def\loadtypescriptfile[#1]{}
 \def\low#1{\ensuremath{_{\,\textrm{\footnotesize #1}}}}
 \def\mathitalicsmode{}
+\def\mtp#1{\mbox{ #1 }}
 \def\noheaderandfooterlines{}
 \let\noindentation = \relax
 \let\origquote = \quote
-\def\page{}
+\def\overbar{\overline}
+\newcommand\page[1][]{}
 \def\percent{\char`\%}
 \def\placelayer[#1]{}
 \def\quote#1{{`#1'}}
@@ -224,9 +231,10 @@
 \def\tttf{\tt}
 \def\tx{\tt}
 %\def\unexpanded{}% etex primitive, microtype et al. need it
-\def\unit{}
+\def\unit{\,\mbox}
 \def\unknown{\ldots}
 \def\usemodule[#1]{}
+\def\useMPlibrary[#1]{}
 \def\UseMode#1{}
 \def\zerocount{}
 
@@ -246,6 +254,7 @@
 
 \long\def\setuphead[#1][#2]{}
 \long\def\setuplayout[#1]{}
+\long\def\setuppagenumbering[#1]{}
 \long\def\setuptolerance[#1]{}
 \long\def\setupwhitespace[#1]{}
 
@@ -389,7 +398,7 @@
   \else\ifx\next/%
     \slash
   \else\ifx\next-%
-    -%
+    \hyph
   \else\ifx\next<%
     \Dash
   \else\ifx\next>%
