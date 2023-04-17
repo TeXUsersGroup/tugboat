@@ -480,10 +480,15 @@
 % Occasionally, we need to start an article in the second column of a
 % page, due to splicing with a previous article. Let's try declaring that.
 % Then, before |\maketitle|, we'll force the move to the second column.
+% 
+% And sometimes we need to add space at the top of that second column
+% (e.g., |tb136lettre|); there's no way to intervene in the article
+% source, so define a hook |\tubsecondcolstartextra|.
 %
 %    \begin{macrocode}
-\newif\iftubsecondcolstart  
+\newif\iftubsecondcolstart
 \DeclareOption{secondcolstart}{\tubsecondcolstarttrue}
+\let\tubsecondcolstartextra\relax
 %    \end{macrocode}
 % \end{macro}
 %
@@ -2305,7 +2310,7 @@
    \vbox to \PreTitleDrop{}
    \global\PreTitleDrop=\z@
  \fi
- \iftubsecondcolstart \null\newpage\fi
+ \iftubsecondcolstart \null\newpage\tubsecondcolstartextra \fi
  \begingroup
  \setcounter{footnote}{0}
  \global\@topnum\z@ % disallow floats above the title

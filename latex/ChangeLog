@@ -1,3 +1,9 @@
+2023-04-17  Karl Berry  <karl@tug.org>
+
+	* tugboat.dtx (\tubsecondcolstartextra): new hook for
+	tokens after \newpage when the secondcolstart option is given.
+	Used for tb136lettre, where the text needs to be pushed down.
+
 2023-03-27  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\AllTeX): use \texorpdfstring for this.
