@@ -16,7 +16,7 @@
 # \s* to end a control sequence is not correct; see $endcw in
 # ToUnicode.pm. But how to use a variable reference here?
 \\acro\s*\{(.*?)\}||$1
-\\booktitle\s*\{(.*?)\}||"<i>$1</i>"
+\\(booktitle|titleref)\s*\{(.*?)\}||"<i>$2</i>"
 \\code\s*\{(.*?)\}||"<tt>$1</tt>"
 \\cs\s*\{(.*?)\}||"<tt>&#x5c;$1</tt>"
 \\emph\s*\{(.*?)\}||"<i>$1</i>"

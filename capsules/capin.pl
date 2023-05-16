@@ -122,7 +122,7 @@ sub read_issue {
     for my $pageno (keys %dfi) {
       if (exists $capsules{$pageno}) {
         # easiest to quit as soon as we have a collision; it has to be fixed.
-        die "pageno $pageno: in difficulty $dfi, already seen "
+        die "pageno $pageno: already seen (in difficulty $dfi) "
             . &hash_as_string ($capsules{$pageno});
       }
       $capsules{$pageno} = $dfi{$pageno};

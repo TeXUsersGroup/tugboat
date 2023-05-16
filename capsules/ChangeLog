@@ -1,3 +1,10 @@
+2023-05-16  Karl Berry  <karl@tug.org>
+
+	* Makefile: 44:1 aka tb136.
+	* tb136capsule.txt: new file.
+	* lists-regexps.txt: handle \booktitle.
+	* capin.pl (read_issue): reword duplicate pageno error.
+
 2023-02-27  Karl Berry  <karl@freefriends.org>
 
 	* lists-authinfo.txt (Wilde): add orcid.
