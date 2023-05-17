@@ -1,3 +1,16 @@
+2023-05-17  Karl Berry  <karl@freefriends.org>
+
+	Crossref upload for 44:1 (tb136).
+	* README-process.txt: mention lack of fonts in bibliography again.
+	* cr-landing-bbl-abs (update_landing_bbl): don't consider foo.tex
+	to be a url (tb136wermuth); insert newline before bullet
+	&#x2022; (tb136andre).
+	* ltx2crossrefxml-tugboat.cfg: updates for ConTeXt,
+	tb136andre, tb136mitt, especially.
+	(\CandT): does not need to be special case.
+	* lists-authinfo.txt (Bos, McCurley, Stenbord): orcid.
+	* tb136capsule.txt: Romano youtube links.
+
 2023-05-16  Karl Berry  <karl@tug.org>
 
 	* Makefile: 44:1 aka tb136.

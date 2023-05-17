@@ -91,6 +91,13 @@ sub read_crossref_xml {
 # in the CITATIONS hash. Replace the bbl placeholder with the text that
 # is the value for that key.
 # 
+# qqq todo: We should change this to convert the landing bbl from the
+# original bbl.tex, instead of from the crossref issue.xml. That way we
+# would get font changes and other markup, just as we do for the abstracts.
+# 
+# qqq todo: consider structured citations in crossref; see
+# ltx2crossrefxml.pl.
+# 
 sub update_landing_bbl {
   my ($landing_dir,%citations) = @_;
   my $updated = 0;
@@ -133,7 +140,7 @@ sub update_landing_bbl {
             # But even that is not enough, since the reference might
             #   have letters, like "report no.1-A". So eliminate
             #   the common bib abbreviations.
-            # Also, more special cases: foo.sty, etc., is not a url.
+            # Also, more special cases: foo.sty, bar.tex, etc., is not a url.
             #
             # Maybe we should force spaces after such bib abbrevs,
             #   but that doesn't seem ideal either.
@@ -147,7 +154,7 @@ sub update_landing_bbl {
                      && ($w1 = $1) && ($w2 = $2) # save capture groups
                      && $w2 =~ /[a-z]/i
                      && (! $w1 || $w1 !~ /^(no?|v(ol)?|pp?|iss)$/i)
-                     && (! $w2 || $w2 !~ /^(cls|sty)$/i)
+                     && (! $w2 || $w2 !~ /^(cls|sty|tex)$/i)
                     ) {
               $prot = "https";
               $urlbase = $word;
@@ -163,6 +170,9 @@ sub update_landing_bbl {
               my $url = "$prot://$urlbase";
               $newcite .=  qq!<a href="$url">$urlbase</a>!;
             } else {
+              # As a second horrible special case, insert a line break
+              # before bullets (used in tb136andre bbl).
+              $newcite .= "\n<br>" if $word =~ /^&#x2022;/;
               $newcite .= $word;
             }
           }

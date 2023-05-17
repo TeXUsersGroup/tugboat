@@ -79,6 +79,11 @@ that should be supported, try to fix the translations:
   starts on one line and ends on another, it probably won't be
   recognized. Just edit the file to put it on one line.
 
+- For the bibliography, no font changes or other html-level markup is
+  used.  It is plain (Unicode) text.  The only special cases are making
+  urls be live links, and newlines before bullets.  (We should revise
+  the process to translate bbls like abstracts.)
+
 On the other hand, sometimes authors use one-off abbreviations or
 complicated TeX code in their abstracts or bibliographies.  In such cases,
 it is better to edit the abs/bbl.tex files than bother automatically
@@ -97,11 +102,11 @@ cr-do-issue will mysteriously fail since the landing.html file for that
 article will not exist. It is best to check for this in advance with
 --webroot; see README-tug-procedures.
 
-If any hand editing in dir2.process is necessary, the "cro-preserve"
-target must be used instead of "cro-scratch", else the hand edits will
-be lost. In practice, it is simpler, and has always been possible, to do
-all editing in the TUGboat source dir (and thus use cro-scratch), and
-never hand-edit the generated files.
+In practice, it is best, and has always been possible, to do all editing
+in the TUGboat source dir (and thus use cro-scratch), and never
+hand-edit the generated files. However, if any hand editing in
+dir2.process is necessary, the "cro-preserve" target must be used
+instead of "cro-scratch", else the hand edits will be lost.
 
 These runs include only those files for which there are {bbl,abs}.tex
 files present in the TUB source directory. To see which those were:
@@ -150,7 +155,7 @@ before it's time to make the issue VV:N live.
 
 At that point, first remake the landing files so the doi links go
 through doi.org (i.e., without the "make crw" step):
-  cd crossref
+  # still in svn/capsules/ directory
   make cro-scratch  # without crw
 Double-check crossref/dir2.process/issue.xml as above.
 
@@ -161,15 +166,15 @@ And then copy the final landing files to the live web directory
 (assuming we've been doing all this on a development machine):
   host=tug.org
   dir=/home/httpd/html/TUGboat/tbVV-N
-  ssh $host mkdir $dir # ensure the directory exists
-  ssh $host "echo 'not yet' >$dir/index.html"  # no premature leak
-  scp -p dir1.lndout/*.html $host:$dir/        # from crossref dir
+  ssh $host mkdir $dir                           # ensure directory exists
+  ssh $host "echo 'not yet' >$dir/index.html"    # no premature leak
+  scp -p crossref/dir1.lndout/*.html $host:$dir/
 
 Then check results at:
   https://tug.org/TUGboat/tbVV-N/tbnnnwhatever.html
 E.g.:
-  https://tug.org/TUGboat/tb43-3/tb135beet.html
-Cannot use the "next doi" links until the dois are registered; see next.
+  https://tug.org/TUGboat/tb44-1/tb136beet.html
+The "next doi" links will not work until the dois are registered; see next.
 
 When close enough to making the pdfs public, do the production
 crossref upload. It costs money to register dois, so you have to edit
