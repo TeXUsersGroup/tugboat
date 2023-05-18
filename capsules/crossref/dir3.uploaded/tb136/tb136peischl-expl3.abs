@@ -1,0 +1,19 @@
+\LaTeX3 is no longer a development for which \LaTeX{} users have been
+waiting for decades. \LaTeX3 has been around for a long time and
+nowadays is used by all \LaTeX\ users, often without being noticed. The
+goal of this tutorial is to demystify expl3.
+
+The \LaTeX3 programming layer is the foundation of almost all new
+\LaTeX\ development in the last years. It provides unified
+interfaces that can be used directly or indirectly by package authors
+and users to code complex mechanisms or process content much more
+flexibly than with classic \LaTeX{}.
+
+Overall, the most important goals of \LaTeX3 are:
+\begin{itemize}
+\item Uniform interfaces for functions and variables
+\item Modernization of syntax
+\item Simplification of controlling expansion
+\end{itemize}
+and thus provide both much simpler and more powerful ways to program in
+\LaTeX~[5].

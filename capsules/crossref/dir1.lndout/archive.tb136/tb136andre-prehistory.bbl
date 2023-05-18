@@ -1,0 +1,918 @@
+% changed \cite[...]{RIDT} -> [109...] by hand; too hard to parse.
+% similar for other \cite commands in original.
+
+\begin{thebibliography}{999}\itemsep=1pt plus.5pt minus.5pt
+
+%\bibitem{NOTE}
+%\prov{Cette biblio n'est ici que de façon provisoire. Sera ventilée dans biblio générale in fine, sans les url.}
+
+
+\bibitem{HET} \emph{Histoire de l'écriture typographique}~-- 
+\emph{De~Gutenberg au \siecle{xvii}}, by Yves~\nom{Perrousseaux}.
+\\Atelier~Perrousseaux éd./Adverbum, 2004.
+
+\bibitem{HET-18-I} \emph{Histoire de l'écriture typographique}~--
+\emph{Le~\siecle{xviii}}, tome I/II, by Yves~\nom{Perrousseaux}.
+\\Atelier~Perrousseaux éd./Adverbum, 2010.
+
+\bibitem{HET-18-II} \emph{Histoire de l'écriture typographique}~--
+\emph{Le~\siecle{xviii}}, tome II/II, by Yves~\nom{Perrousseaux}.
+\\Atelier~Perrousseaux éd./Adverbum, 2010.
+
+\bibitem{HET-19} \emph{Histoire de l'écriture typographique}~--
+\emph{Le~\siecle{xix} français}, by Jacques \nomfr{Andre}{André}
+and~Christian \nom{Laucou}.
+\\Atelier~Perrousseaux éd./Adverbum, 2013.
+
+\bibitem{HET-20-I} \emph{Histoire de l'écriture typographique}~--
+\emph{Le~\siecle{xx}, de 1900 à 1950}, collective work under the
+direction of Jacques \nomfr{Andre}{André}.
+Atelier~Perrousseaux éd./Adverbum, 2016.
+
+\bibitem{HET-20-II} \emph{Histoire de l'écriture typographique}~--
+\emph{Le~\siecle{xx}, de 1950 à 2000}, collective work under the
+direction of Jacques \nomfr{Andre}{André}.
+Atelier~Perrousseaux éd./Adverbum, 2016. 
+
+\bibitem{adoberouge}
+Adobe Systems Inc., {\em PostScript Language Reference Manual},
+first edition, Reading, MA: Addison-Wesley, 1985; second edition, 1991.
+%Paru en français : {\em Manuel de référence du langage PostScript},
+% traduction de Denys {\sc Bondeville}, Addison-Wesley France, Paris, 1992.
+
+\bibitem{adobebleu}
+Adobe Systems Inc., {\em PostScript Language Tutorial and Cookbook},
+Reading, MA: Addison-Wesley, 1985.
+% Traduit en fran\c cais~: {\em PostScript by l'exemple},
+% Inter\'Editions, 1987. 
+
+\bibitem{adobevert} {Adobe  Systems Inc.},
+{\em PostScript Language Program Design}, Reading, MA: Addison-Wesley, 1988.
+
+\bibitem{adobenoir}
+Adobe Systems Inc., {\em The Type 1 Format Specification},
+Reading, MA: Addison-Wesley, 1990.
+
+%\bibitem{Adobe-MM}
+%Adobe, \emph{Type 1 Font Format Supplement}, Adobe Developer Support, Technical Specification \#5015, 15 May 1994.  \url{http://partners.adobe.com/public/developer/en/font/5015.Type1_Supp.pdf}
+
+\bibitem{JA-habili}%[JA: added, 21/2/2023
+Jacques \textsc{André},
+\emph{Création de fontes en typographie numérique}, Mémoire d'HDR, 
+Université Rennes~I, 29~sept. 1993, 124~pp. 
+\url{https://theses.hal.science/tel-00011218/file/andre.pdf}
+%]
+
+\bibitem{JA-Courier}
+Jacques \nom{André}, \emph{Courier -- Histoire d'un caractère –
+De la machine à écrire aux fontes numériques}, éd. du Jobet, 1993.
+\\\url{https://jacques-andre.fr/fontex/courier.pdf}
+
+\bibitem{JA-geom-car}
+Jacques \textsc{André},
+De Pacioli à Truchet : trois siècles de géométrie pour les
+caractères, \emph{4~000 ans d'histoire des mathématiques~: 
+les~mathématiques dans la longue durée -- 13\ieme\ colloque
+Inter-IREM d'épistémologie et histoire des mathématiques},
+IREM-Rennes, mai 2000,
+\\pp.~1--38. \url{https://hal.inria.fr/inria-00000956}
+
+\bibitem{Andre-Bur}
+Jacques \textsc{André} and Justin \nom{Bur}, Métrique des
+fontes PostScript, \emph{Cahiers Gutenberg}, n° 8 (1991), pp.~29--50.
+\\\url{http://numdam.org/item/CG_1991___8_29_0/}
+% [kb: cahiers.gutenberg.eu.org is gone until some unknown future date.
+% Patrick advises the older issues are now at the above.]
+%\url{http://cahiers.gutenberg.eu.org/cg-bin/article/CG_1991___8_29_0.pdf}
+
+\bibitem{JA+Girou}%[JA: added ref cf models in antiquity]
+Jacques \textsc{André}  and Denis \textsc{Girou},
+Father~Truchet, the typographic point, the Romain du roi, and tilings,
+\emph{TUGboat}, Vol. 20 (1999), No. 1, pp.~8--14.
+\\\url{https://tug.org/TUGboat/tb20-1/tb62andr.pdf}
+
+\bibitem{JAAMRS}
+Jacques \nom{André} and Alan \nom{Marshall},\\
+Richard Southall: 1937--2015, \emph{\TUB},\\
+Vol. 36 (2015), No. 2, pp.~100--102.\\
+\url{https://tug.org/tugboat/tb36-2/tb113southall.pdf}
+
+\bibitem{JA-WFDS}
+Jacques \textsc{André} and Moncef \nom{Mlouka} (eds.), \emph{Workshop on Font
+Design Systems}, INRIA-Sophia, May 1987. See also [109] (1989).
+
+\bibitem{Augustin-Crouwel}
+\nom{Augustin}, \emph{Wim Crouwel}, Index Grafik, 7 avril 2014.
+\url{http://indexgrafik.fr/wim-crouwel/}
+
+\bibitem{Baudelaire-Fred} 
+Patrick \nom{Baudelaire}, \emph{The Fred User's Manual},
+Internal Report, Xerox Palo Alto Research Center, Palo Alto, California, 1976.
+
+\bibitem{Baudelaire-Alto} 
+Patrick \nom{Baudelaire}, The Xerox Alto Font Design System, in~[31].
+%[JA: cleaning: These proceedings have recently been published as ].
+
+\bibitem{Baudelaire-Stone} 
+Patrick \nom{Baudelaire} and M. \nom{Stone}, Techniques for Interactive
+Raster Graphics, {SIGGRAPH 80 Proceedings}, \emph{Computer Graphics},
+Vol. 14, No. 3, 1980.
+
+%[JA: added (suggested  by Karl - thanks!
+% first in old bib format...
+\bibitem{Beeton:2018:TBD}
+Barbara \nom{Beeton}, Karl \nom{Berry} and David \nom{Walden},
+\TeX: A Branch in Desktop Publishing Evolution, Part~1,
+\emph{IEEE Annals of the History of Computing},
+ Vol.~40,
+ No.~3,
+ Jul./Sept.~2018,
+ pp.~78--93. \url{https://ieeexplore.ieee.org/document/8509554/}
+ % then in goof form (commented):
+% @Article{Beeton:2018:TBD,
+% author =       "Barbara Beeton and Karl Berry and David Walden",
+ %title =        "{\TeX}: A Branch of Desktop Publishing, Part 1",
+ %journal =      "IEEE Annals of the History of Computing",
+ %volume =       "40",
+ %number =       "3",
+ %pages =        "78--93",
+% month =        jul # "\slash " # sep,
+ %year =         "2018",
+ %CODEN =        "IAHCEX",
+ %DOI =          "https://doi.org/10.1109/MAHC.2018.033841114",
+ %ISSN =         "1058-6180 (print), 1934-1547 (electronic)",
+ %ISSN-L =       "1058-6180",
+ %bibdate =      "Thu Nov 1 06:16:12 MDT 2018",
+ %bibsource =    "http://www.math.utah.edu/pub/tex/bib/ieeeannhistcomput.bib;
+ %               http://www.math.utah.edu/pub/tex/bib/texbook3.bib",
+ %URL =          "https://ieeexplore.ieee.org/document/8509554/",
+ %acknowledgement = ack-nhfb,
+ %fjournal =     "IEEE Annals of the History of Computing",
+ %journal-URL =  "http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=85",
+%}
+%]
+
+%[JA: 22/2/2023 new bib entry, for image these-JB
+\bibitem{BHR-these}
+Yves \textsc{Bekkers}, Daniel \textsc{Herman}, and Michel \textsc{Raynal}, 
+\emph{Conception et réalisation d'une machine-langage de haut niveau adaptée à l'écriture de systèmes},
+Ph.D. thesis, Rennes University, 24~sept. 1975.
+%]
+
+\bibitem{Bigelow-Rennes}
+Charles \nom{Bigelow}, Les caractères rationalisés, in
+\emph{La~manipulation de
+documents} (Jacques André,~ed.), INRIA-Centre
+de Rennes, mai 1983, pp.~15-27.
+\\\url{https://jacques-andre.fr/japublis/manip83.pdf}
+% [kb: Jacques, wasn't this an article in the proceedings you edited,
+% rather than Chuck working "under your direction"?]
+
+\bibitem{Bigelow-HET}
+Charles \textsc{Bigelow}, 
+Review and Summaries of
+\emph{The History of Typographic Writing\Dash The~20th century}.
+Originally published in three parts in \TUB\ Vol.~38 (2017); combined:
+\url{https://tug.org/books/reviews/tv38bigelow.pdf}
+%
+% [kb: Jacques: I thought it would suffice to point to the combined pdf, ok?
+% If people really need the exact cites of the three tub parts (why), they are
+% listed on the first page of that pdf. Or they can just look up the
+% individual issues.]
+%Volume 1, from 1900 to 1950, [\emph{TUGBoat}, issue 38:1, 2017, pp.
+%  18--22, \url{https://tug.org/TUGboat/tb38-1/tb118bigelow.pdf}]; 
+%Volume 2 from 1950 to 2000;  ch. 1–5  [\emph{TUGBoat}, issue
+%  38:2, 2017,  p. 274-279, 
+%  \url{https://tug.org/TUGboat/tb38-2/tb119bigelow.pdf}];
+% and ch. 6-8+ [\emph{TUGBoat}, issue 38:3, 2017, p. 306-311,
+%  \url{https://tug.org/TUGboat/tb38-2/tb119bigelow.pdf}
+%]. 
+
+\bibitem{Bigelow-legibility}%[JA: added for Minitel]
+Charles \nom{Bigelow}, Typeface Features and Legibility Research,
+\emph{Vision Research}, Vol.~165,  Dec. 2019, pp.~162--172.
+\\\url{https://doi.org/10.1016/j.visres.2019.05.003}
+
+\bibitem{Bigelow-war}
+Charles \textsc{Bigelow}, 
+The Font Wars, Parts 1 and~2, \emph{IEEE Annals of the History of
+Computing} (Special issue: History of Desktop Publishing),
+Vol.~42, No.~1, Jan./Mar. 2020, pp.~7--40.
+\\\url{doi.org/10.1109/MAHC.2020.2971202} and
+\\\url{doi.org/10.1109/MAHC.2020.2971745}
+
+% dup of Bigelow-war
+
+%\bibitem{Bigelow+fontwar}%[JA: added 9/2/2023
+%Charles \textsc{Bigelow}, 
+%“The Font Wars, Part 1”. In: \emph{IEEE Annals of
+%the History of Computing (special issue : History of Desktop
+%Publishing, Font Technology and Marketing)}. Vol. 42. 1. Jan. 2020, pp. 7–40.
+%]
+
+%\bibitem{CS-Encyclopedia}
+%Jack Belzer, Albert G. Holzman, Allen Kent, Encyclopedia of Computer Science and Technology: Volume 5 - Classical Optimization to Computer Output/Input Microform, CRC Press, 1976. \url{https://books.google.fr/books?id=G6a2tSuOoq8C} et \url{https://books.google.fr/books?id=iWeXBDhGPLAC} cf article "electronic composition" p. 15
+
+\bibitem{bigelow-day}
+Charles \nom{Bigelow} and Donald \nom{Day}, Digital Typography,
+\emph{Scientific American}, Vol.~249, No.~2, pp.~106--119, Aug. 1983.
+
+% Traduit en français : La typographie numérique, \emph{Pour la science}, octobre 1983, vol.~72, p.~48-62.%J.A.= ridt/
+
+\bibitem{bigelow-4AppleFonts}
+Charles \nom{Bigelow} and Kris \nom{Holmes}, Notes on Apple 4 Fonts,
+\emph{Electronic Publishing}, Vol.~4, No.~3, Sept.~1991, pp.~171--181.
+\url{http://cajun.cs.nott.ac.uk/compsci/epo/papers/volume4/issue3/ep050cb.pdf}
+
+\bibitem{bigelow-EP}
+Charles \nom{Bigelow} and Kris \nom{Holmes}, The Design of Lucida: An
+Integrated Family of Types for Electronic Literacy, in \emph{Text
+Processing and Document Manipulation} (J.C. van Vliet, ed.), Cambridge
+University Press, 1986.
+
+\bibitem{VL50}
+Charles \nom{Bigelow} and Kevin \nom{Larson} (eds.), \emph{Visible
+Language} (Special issue: Reflecting on 50 Years of Typography, Vol.~50,
+No.~2, Aug.~2016.
+\url{https://journals.uc.edu/index.php/vl/issue/view/461}
+
+\bibitem{Bigelow-Ruggles}
+Charles \nom{Bigelow} and Lynn \nom{Ruggles} (eds.), \emph{Visible
+Language} (Special issue: The Computer and the Hand in Type Design),
+Vol.~19, No.~1, Winter 1985.
+\url{https://journals.uc.edu/index.php/vl/issue/view/369}
+
+\bibitem{Alison-Black}
+Alison \nom{Black},
+\emph{Typefaces for Desktop Publishing: A User Guide}, London: Architecture
+Design and Technology Press, 1990.
+
+\bibitem{Blackwell}
+Lewis \nom{Blackwell}, %[JA: given English ref. \emph{Typo du 20\ieme{} siècle}, Flammarion, 2005,  32~pages, ISBN : 2-08-011052-7.
+\emph{20th-Century Types}, Lawrence King Publishing, 2004.
+%]
+
+\bibitem{Blanchard-telematique}
+Gérard \nom{Blanchard} (coordinated by), \emph{L'écriture
+télématique, années zéro}, Les Cahiers de Lure, 1985.
+
+\bibitem{Blanchard-eredita}
+Gérard \nom{Blanchard}, %\textit{Pour une sémiologie de la typographie}, Thèse, École pratique des hautes études en sciences sociales, Paris, 1980; publiée, sous le même titre, by les Rencontres de Lure
+%et l’École des Beaux-Arts de Besançon chez Rémy Magermans, éditeur à Andenne, Belgique, 1979.% La seule version disponible commercialement
+%en est la traduction italienne (avec des illustrations de qualité) : 
+\emph{L’eredita Gutenberg}, Gianfranco Altieri Editore,
+1989.
+
+\bibitem{Blanchard-Choix}
+Gérard \nom{Blanchard}, \emph{Aide au choix de la typo-graphie – Cours supérieur}, Atelier Perrousseaux éd., 1998.
+
+%\bibitem{Bayeux-Neveux}
+%Pierre \nom{Bouet} et François \nom{Neveux}, \emph{La tapisserie de Bayeux, révélations et mystères d'une broderie du Moyen Âge}, éditions Ouest-France, 2013.
+
+%\bibitem{Boag-Bell}
+%Andrew \nom{Boag}, Typecase – Bell Gothic \& Bell Centennial, \emph{Letterbox} \#7, Linotype, 1990. \url{http://www.boag.co.uk/more/articles.html}
+
+%\bibitem{Bouche-Minion}
+%Thierry \nom{Bouche}, 
+%Minion MM : installer une famille de fontes, \emph{Cahiers Gutenberg}, n° 26,  (1997), p. 45-70. 
+%\url{http://cahiers.gutenberg.eu.org/cg-bin/article/CG_1997___26_45_0.pdf}
+
+\bibitem{Bourke-Hershey}
+Paul \nom{Bourke}, \emph{Hershey Vector Font based on the Hershey
+character set}, Oct.~1977.
+\url{http://paulbourke.net/dataformats/hershey/}
+
+\bibitem{Bresenham-algo}
+Jack E. \nom{Bresenham}, Algorithm for computer control of a digital
+plotter, \emph{IBM Systems Journal}, Vol.~4, No.~1, Jan. 1965,
+pp.~25--30.
+\url{https://doi.org/10.1147/sj.41.0025}
+%\url{https://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5388473}
+
+\bibitem{Bringhurst}
+Robert \nom{Bringhurst}, \emph{The Elements of Typographic Style},
+Hartley \& Marks publishers, 4th edition, 2015.
+
+\bibitem{Calcomp-man76}
+\emph{CalComp Software Reference Manual}, California Computer Products
+Inc., Oct.~1976.
+\url{https://archive.org/details/bitsavers_calcompCalceManualOct76_6872751}
+% [kb: url is 404] \url{https://bitsavers.informatik.uni-stuttgart.de/pdf/calcomp/CalComp_Software_Reference_Manual_Oct76.pdf}
+
+\bibitem{catisch}
+Edward M. \textsc{Catich}, \emph{The Origin of the Serif: Brush Writing
+and Roman Letters}, Davenport, IA: The Catfish Press, 1968.
+
+\bibitem{Coueignoux-thesis}
+Philippe J.M. \nom{Coueignoux}, \emph{Generation of Roman Printed
+Fonts}, Ph.D. thesis, Massachusetts Institute of Technology, Dept. of
+Electrical
+Engineering and Computer Science, 1975.
+\url{https://dspace.mit.edu/bitstream/handle/1721.1/27408/02149218-MIT.pdf}
+
+\bibitem{Crossland}%[JA: added 25/02/23]
+Dave \textsc{Crossland}, ``Why didn’t \MF{} catch on?'',
+\emph{TUGboat}, Vol.~29 (2008), No.~3, pp.~418-420.
+\\\url{https://tug.org/TUGboat/tb29-3/tb93crossland.pdf}
+
+\bibitem{Crouwel-archi}
+\emph{Typographic Architectures typographiques}, texts by Wim Hendrik
+\nom{Crouwel}, Catherine \nom{de Smet} and Emmanuel
+\nomfr{Berard}{Bérard}, Editions fsept F7, Paris, 2007.
+%[kb: website has apparently been reduced to a splash page]
+%\url{https://www.appliedaesthetics.org/ART264-F12/19/crouwel.pdf}
+
+%\bibitem{Crow-gray}
+%F.C. \nom{Crow}, The use of grayscale for improved raster display of vectors and characters, \emph{ACM SIGGRAPH}, 1978.
+
+\bibitem{DeBuen}
+Jorge \nom{De Buen}, \emph{Manual de diseño editorial}, Santilano, Mexico, 2000,
+
+\bibitem{Delorme-Andre}
+Christian \nom{Delorme} and Jacques \nom{André},
+Le~Delorme, un caractère modulaire et dépendant du
+contexte, \emph{Communication et langages}, Vol.~86 (1990),
+pp.~64--76. \url{https://www.persee.fr/web/revues/home/prescript/article/colan_0336-1500_1990_num_86_1_2261}
+
+\bibitem{Devroye}
+Jean-Luc \nom{Devroye}, \emph{Type Design, Typography, Typefaces and
+Fonts: An encyclopedic treatment of type design, typefaces and fonts}.
+Web page closed on May 6, 2022.
+\url{http://luc.devroye.org/fonts.html}
+%[JA: upgraded, January 2023]
+
+\bibitem{Devroye-MF}%[JA: added, 25/2/2023]
+Jean-Luc \nom{Devroye}, \MF\ links, in~[48]}.
+\url{http://luc.devroye.org/metafont.html}
+
+\bibitem{Encyclopédie}
+\nom{Diderot} \& \nom{D'Alembert}, \emph{Encyclopédie, ou
+Dictionnaire Raisonné des Sciences, des Arts et des Métiers},
+1751--1772. \\\url{https://encyclopedie.uchicago.edu}
+
+%\bibitem{durer} %changer en Dürer-Underweysung pour PMG
+%Albrecht \textsc{Dürer}, \emph{Géométrie}, Présentation, traduction de l'allemand de \emph{Underweysung der messung mit dem zirckel und richtscheyt}, 1505, et notes par
+%Jeanne \textsc{Peiffer}, Paris, Le Seuil, 1995. \url{http://www.rarebookroom.org/Control/duruwm/}
+
+\bibitem{durer-juste}
+Albrecht \textsc{Dürer}, Of the just shaping of letters.
+\url{https://www.zigzaganimal.be/elements/just_shaping_scan.pdf}
+
+%\bibitem{duville}
+%D. \nom{Duvillé}, \emph{L'art du tracé rationnel de la lettre}, SEFLT, Paris, 1934. \url{https://www.flickr.com/photos/taffeta/sets/72157629901069461/}
+
+%\bibitem{Dyson-didot}
+%Mary \nom{Dyson},
+%Teaching Digital Typography - the Didot Project
+%\emph{TUGboat}, Volume 14 (1993),No. 3, p. 329-332; \\\url{http://tug2000.tug.org/TUGboat/Articles/tb14-3/tb40dyson.pdf}
+
+%\bibitem{BullCMC7}
+%Fédération des équipes Bull, \nom{CMB}, \emph{CMC7, histoire et technique}, 2003. \url{http://www.feb-patrimoine.com/projet/cmc7/cmc7.htm}
+
+\bibitem{Eltgen-TI}
+Jean-Jacques \nom{Eltgen}, Techniques d'impression d'images numérisées, \emph{Techniques de l'ingénieur}, art. E-5-670, 1992.
+
+\bibitem{Essinger}%[JA: added, 9/2/2023
+James Essinger, \emph{Jacquard's Web: How a hand loom led to the
+birth of the information age}. Oxford, U.K.: Oxford University Press,
+2004.
+%]
+
+\bibitem{Ficatier}%[JA: added 20/2/23]
+Bernard \textsc{Ficatier} and  Hugues \textsc{Roche},
+\emph{Concevoir, relever et dessiner des plans de voiliers classiques et traditionnels},
+Douarnenez: Chasse-marée, 2004.
+
+%\bibitem{Foley-vanDam-82}
+%James D. \nom{Foley}, Andries \nom{van Dam}, \emph{Fundamentals of interactive computer graphics}, Addison-Wesley et Longman,  Boston, 1982.
+
+%\bibitem{Foley-vanDam}
+%James D. \nom{Foley}, Andries \nom{van Dam}, \emph{Computer Graphics}, Addison-Wesley, 1989 (et rééditions).
+
+%\bibitem{Fournier-man}
+%Pierre-Simon \nom{Fournier} dit le jeune, \emph{Manuel typographique utile aux gens de lettres...}, chez l'auteur, Paris, 1764+1766. \\\url{http://books.google.fr/books?id=-f0BAAAAQAAJ}
+
+%\bibitem{frutiger-composer} 
+%Adrian \textsc{Frutiger}, « Typography with IBM Selectric Composer », {\em Journal of Typographic research}, vol. 1, \no{3}, p.~285-292. Voir aussi~[Bio-Frutiger, p.~194].
+
+\bibitem{Furuta}%[JA: added 23/2/23]
+Richard \nom{Furuta}, Jeffrey \nom{Scofield}, and Alan \nom{Shaw},
+Document Formatting Systems: Survey, Concepts, and Issues,
+\emph{Computing Surveys}, Vol.~14, No.~3, Sept.~1982, pp.~417--472.
+\url{https://doi.org/10.1145/356887.356891}
+
+\bibitem{Gallois-Jacopozzi}
+Pierre-Marie \nom{Gallois}, \emph{Quand Paris Était Ville-Lumière}, L'Âge D'homme, 2001.
+
+\bibitem{Yannis-fontes}%OK 
+Yannis \nom{Haralambous}, \emph{Fonts \& Encodings}, O'Reilly, 2007.
+
+\bibitem{HassanHuHersch}
+Tamir \nom{Hassan}, Changyuan \nom{Hu}, and Roger~D. \nom{Hersch}, Next
+Generation Typeface Representations: Revisiting Parametric Fonts,
+\emph{ACM DocEng 2010 conference}, Sept.~2010, pp.~181--184.
+\url{https://lspwww.epfl.ch/publications/typography/ngtrrpf_10.pdf}
+
+%\bibitem{Hell-satz}
+%Rudolf \nom{Hell}, Mit  Digiset befinnt des ekektronische Staz, 
+%\emph{Technik für uns alle}, Siebente Folge, Hell GmbH, sans date. \url{http://www.nonstopsystems.com/radio/pdf-hell/hell-article-technik-alle-1-7.pdf}.
+
+\bibitem{Hell-digiset}
+Rudolf \nom{Hell}, Le Digiset, composeuse binaire électronique, \emph{Caractère}, vol.~16, no.~11, 1965, pp.~5--16.
+
+\bibitem{Hersch-visual}%OK
+Roger \nom{Hersch} (ed.), \emph{The Visual and Technical Aspects of
+Type}, Cambridge University Press, 1993.
+\url{https://lspwww.epfl.ch/publications/typography/vataot.html}
+
+\bibitem{Hershey-calligraphy}
+Allen V. \nom{Hershey},  \emph{Calligraphy for Computers}, U.S. Naval
+Weapons Laboratory, 1967, 500pp.
+\url{https://archive.org/details/hershey-calligraphy_for_computers}
+
+\bibitem{Hershey-computergraphics}
+Allen V. \nom{Hershey}, A Computer System for Scientific Typography,
+\emph{Computer Graphics and Image Processing}, Vol.~1 (1972), pp.~273--385.
+
+\bibitem{Hobby-phd}
+John D. \textsc{Hobby}, 
+\emph{Digitized Brush Trajectories},
+Ph.D. thesis, Stanford University, Aug.~1985.
+\url{https://tug.org/docs/hobby/hobby-thesis.pdf}
+
+\bibitem{Hobby-MP}
+John D. \textsc{Hobby},
+\emph{A User’s Manual for \MP}. AT\&T Bell Laboratories
+Computing Science Technical Report 162, 1992. With updates:
+\url{https://tug.org/docs/metapost/mpman.pdf}
+
+\bibitem{Hofstadter}
+Douglas \nom{Hofstadter}, \emph{Metamagical Themas}, Basic Books, 1985.
+\\\url{https://archive.org/details/MetamagicalThemas}
+
+\bibitem{Holmes-dossier}
+Kris \nom{Holmes}, \emph{Dossier\Dash Calligraphy, Lettering, Signage
+and Graphic Design, Filmmaking and Articles}, Keepsake for the Frederic
+Goudy Award, Rochester Institute of Technology, 2012.
+
+\bibitem{HuHersch}
+Changyuan \nom{Hu} and Roger D. \nom{Hersch}, Parameterizable Fonts
+Based on Shape Components, \emph{IEEE Computer Graphics and
+Applications}, Vol. 21, No. 3, May/June 2001, pp.~70--85.
+\url{https://lspwww.epfl.ch/publications/typography/pfbosc.pdf}
+
+%\bibitem{Joloboff-Dardailler}
+%Vania \nom{Joloboff} et Daniel \nom{Dardailler}, DEDOR: A FontEDitOR, \emph{Workshop on font design systems} \XXcite{JA-WFDS}, 1987, p.~112-121.
+
+\bibitem{Karow-formats}
+Peter \nom{Karow}, \emph{Digital Formats for Typefaces}, URW Verlag,
+Hamburg, 1987. \\
+%\url{https://books.google.com/books?id=oomrCAAAQBAJ}
+%% bb -- this link goes to  Digital Typefaces: Description and Formats
+%%	 published by Springer 1994, posted to Google Books in 2012
+%%       link for 1987 book is:
+\url{https://archive.org/details/digitalformatsfo0000karo}
+
+\bibitem{Karow-punchcutting}
+Peter \nom{Karow}, Digital punch cutting, \emph{Electronic Publishing},
+Vol.~4, No.~3, Sept.~1991, pp.~151--170.
+\url{http://cajun.cs.nott.ac.uk/compsci/epo/papers/volume4/issue3/ep044pk.pdf}
+
+\bibitem{Karow-digital}
+Peter \nom{Karow}, \emph{Digital Typefaces: Description and Fprmats},
+Springer-Verlag, 1994.
+%\url{https://link.springer.com/book/10.1007/978-3-642-78105-6}
+\url{https://books.google.com/books?id=oomrCAAAQBAJ}
+%% bb -- see comment under [Karow-formats]
+
+\bibitem{Karow-2decades}
+Peter \nom{Karow}, Two decades of typographic research at URW:
+A~retrospective, in [109, pp.~265--304 (1998)].
+% https://doi.org/10.1007/BFb0053276 (no download)
+
+\bibitem{Karow-font}
+Peter \nom{Karow}, 
+\emph{Font Technology: Methods and Tools}, Springer Science, 2012.
+
+\bibitem{Karow-DTAI}
+Peter \nom{Karow}, Digital Typography \& Artificial
+Intelligence, On the occasion of the presentation of the third
+\emph{Dr.~Peter Karow Award for Font Technology \& Digital Typography}
+to Dr.~Donald E. Knuth at the ATypI Amsterdam 2013 conference, Adobe
+and Dutch Type Library, 2013.
+ 
+\bibitem{Kernighan+troff}%[JA: added 22/2/2023]
+Brian W. \textsc{Kernighan}, 
+ \emph{A Typesetter-independent TROFF},
+ Computing Science Technical Report No.~97,
+ Bell Labs, revised, Mar.~1982.
+\url{https://archive.org/details/typesetter-independent-troff}
+%[kb: cm.bell-labs.com is gone]
+%\url{https://cm.bell-labs.com/cm/cs/cstr/97.ps}
+
+\bibitem{Kernighan+PIC}%[JA: added 22/2/2023]
+Brian W. \textsc{Kernighan},
+PIC\Dash a language for typesetting graphics,
+\emph{Proceedings of the ACM SIGPLAN SIGOA Symposium on Text
+Manipulation}, June 1981, pp.~92--98.
+\url{https://doi.org/10.1145/800209.806459}
+Revised publication, May 1991:
+\url{https://archive.org/details/pic-graphics-language}
+
+\bibitem{Kernighan+eqn}%[JA: added 22/2/2023]
+Brian W. \textsc{Kernighan} and Lorinda L. \textsc{Cherry},
+A System for Typesetting Mathematics,
+\emph{Communications of the ACM}, Vol.~18, No.~3, Mar.~1975, pp.~151--157.
+\url{https://dl.acm.org/doi/10.1145/360680.360684}
+% [kb: final published version seems a better link.]
+%\url{https://research.swtch.com/eqn.pdf}
+
+\bibitem{Knoth}
+Christopher \textsc{Knoth},
+\emph{Computed Type Design}, Master Art Direction, ECAL Lausanne, 2011.
+\url{https://christoph-knoth.com/shared/computed_type_-_christoph_knoth.pdf}
+% [kb: redirects to useless aiga home page:]
+% \url{http://www.aiga.org/the-digital-past-when-typefaces-were-experimental/}
+
+\bibitem{KnuthTau}%[JA: added 24/2/2023 to show date!]
+Donald E. \nom{Knuth}, 
+``TAU EPSILON CHI: A System for Technical Text'', STAN-CS-78-675.1,
+Computer Science Department, Stanford University, Stanford, California,
+Nov.~1978.
+\url{https://purl.stanford.edu/jy605yq4819}
+
+\bibitem{Knuth-math-typo}
+Donald E. \textsc{Knuth}, 
+Mathematical Typography, \emph{Bulletin (N.S.) of the American Mathematical
+Society}, Vol.~1, No.~2, 1979, pp.~337--372.
+\url{https://doi.org/10.1090/S0273-0979-1979-14598-1}
+%% bb -- added doi
+
+\bibitem{Knuth-TeX+MF}
+Donald E. \nom{Knuth}, \emph{\TeX\ and Metafont\Dash New~directions in
+typesetting}, Digital Press and American Mathematical Society, 1979. 
+
+\bibitem{Knuth-S}
+Donald E. \textsc{Knuth}, The Letter S, \emph{The~Mathematical
+Intelligencer}, Vol.~2 (1980), pp.~114--122. 
+
+\bibitem{Knuth-MF}
+Donald E. \nom{Knuth}, The Concept of a Meta-Font, \emph{Visible
+Language}, Vol.~16, No.~1, Jan.~1982, pp.~3-27.
+\url{https://journals.uc.edu/index.php/vl/article/view/5329}
+% [kb: the VL url seems nicer?]
+%\url{https://web.archive.org/web/20200707233644/https://s3-us-west-2.amazonaws.com/visiblelanguage/pdf/16.1/the-concept-of-a-meta-font.pdf}%[JA: deleted French ref.]
+%; en français: Le concept de Metafonte, \emph{Communication et langage}, 55, p.~40-53.
+%\url{http://www.persee.fr/web/revues/home/prescript/article/colan_0336-1500_1983_num_55_1_1549}
+
+\bibitem{Knuth-MFB}%[JA: 20/02/2023  added, what an oversight!]
+Donald E. \nom{Knuth}, \MFB, Computers \& Typesetting, Reading, MA:
+Addison-Wesley, 1986.
+
+\bibitem{Knuth-cmr}
+Donald E. \nom{Knuth}, \emph{Computer Modern Typefaces}, Reading, MA:
+Addison-Wesley, 1986.
+
+\bibitem{Knuth-Punk}
+Donald E. \nom{Knuth}, A Punk Meta-Font, \TUB, Vol.~9 (1988),
+No.~2, pp.~152--168.
+\url{https://tug.org/TUGboat/tb09-2/tb21knut.pdf}
+
+\bibitem{Knuth-DT}
+Donald E. \nom{Knuth}, \emph{Digital Typography}, xvi+685pp.
+CSLI Lecture Notes, no.~78,  Stanford, California, 1999.
+% [kb: we don't give ISBNs for anything else.]
+%ISBN 1-57586-010-4
+
+\bibitem{Kohen-picor}
+Eliyezer \nom{Kohen}, A simple and efficient way to design middle
+resolution fonts, in [17, pp.~3--19] and
+[109, pp.~22--33 (1989)].
+
+\bibitem{Krakowiak-Parc}
+Sacha \nom{Krakowiak}, {Xerox PARC et la naissance de l'informatique
+contemporaine}, \emph{Interstices} (revue Inria en ligne), 2012.
+\url{https://interstices.info/jcms/int_64091/xerox-parc-et-la-naissance-de-l-informatique-contemporaine}
+% Better in English?
+
+\bibitem{Leonidas}
+Gerry \textsc{Leonidas},
+Farewell, Richard Southall,
+17~June 2015.
+\url{https://leonidas.net/2015/06/17/farewell-richard-southall/}
+
+\bibitem{Levien-Sequin}
+Raph \nom{Levien} and Carlo H. \nom{S\'equin}, Interpolating
+Splines: Which is the fairest of them all?, \emph{Computer-Aided Design
+\& Applications}, Vol.~6, No.~1, 2009, pp.~91--102.
+\url{http://graphics.berkeley.edu/papers/Levien-IIS-2009-06/}
+
+\bibitem{MacKay-arabic}
+Pierre \nom{MacKay}, The KATIB System, a revolutionary advancement in
+Arabic script typesetting by means of the computer, \emph{Scholarly
+Publishing} Vol.~8, No.~2, 1977, pp.~142--150.
+
+\bibitem{MacKay-pixels}
+Pierre A. \nom{MacKay}, Looking at the Pixels. Quality Control for
+300~dpi Laser Printer Fonts, Especially {\MF}s, in
+[109, pp.~205--217 (1991)].
+%
+%[JA: deleted french ref.: En français: «Un regard sur les pixels. Obtention de fontes de qualité pour imprimantes à laser à 300 dpi grâce à \MF», \emph{Cahier Gutenberg} \no{12}, déc.~1991, p.~21-35. \url{http://cahiers.gutenberg.eu.org/cg-bin/article/CG_1991___12_21_0.pdf}]
+
+\bibitem{minitelIEEE}%[JA: added English ref.]
+Julien \nom{Mailland} and Kevin \nom{Driscoll},
+\emph{Minitel: The Online World France Built Before the Web},
+20~June~2017.
+\url{https://spectrum.ieee.org/minitel-the-online-world-france-built-before-the-web}
+
+\bibitem{Mandel-telephone}
+Ladislas \nom{Mandel},  Un caractère pour annuaires téléphoniques,
+\emph{Communication et langages}, n°~39, 1979, pp.~51--61.
+
+\bibitem{Mandel-telematique}
+Ladislas \nom{Mandel}, Naissance d'une écriture -- Réflexions
+sur la typographie et la télématique,
+dans  \emph{L'écriture télématique, années zéro}
+[35, pp.~41--49].
+
+\bibitem{Mandel-pouvoir}
+Ladislas \nom{Mandel}, \emph{ Du pouvoir de l'écriture}, Atelier Perrousseaux éd., 1998.
+
+\bibitem{Marchand-Minitel}
+Marie \nom{Marchand}, \emph{La Grande Aventure du Minitel}, Librairie Larousse, 1987.
+
+%\bibitem{marshal-plomb}
+%marshal plomb lumière: il existe \url{https://books.google.fr/books?id=JxCN_uErYuQC}
+
+\bibitem{Mathews-Bell}
+M. V. \nom{Mathews}, Carol \nom{Lochbaum}, and Judith~A. \nom{Moss},
+Array: Three Fonts of Computer-drawn Letters,
+\emph{The Journal of Typographic Research}, Vol.~1, No.~4, Oct.~1967,
+pp.~345--356.
+\url{https://journals.uc.edu/index.php/vl/article/view/5008}
+%\url{https://s3-us-west-2.amazonaws.com/visiblelanguage/pdf/V1N4_1967_E.pdf}
+
+\bibitem{McJones-Alto}
+Paul \nom{McJones}, 
+Xerox Alto file system archive, Computer History Museum, last revised
+9~Nov.~2017.
+\url{https://xeroxalto.computerhistory.org}
+
+\bibitem{ITSYLF-Vargo}
+H.W. \nom{Mergler} and P.M. \nom{Vargo},
+One Approach to Computer Assisted Letter Design,
+\emph{The Journal of Typographic Research},  Vol.~2, No.~4, Oct.~1968,
+pp.~299--322. 
+\url{https://journals.uc.edu/index.php/vl/article/view/5032}
+%\url{https://s3-us-west-2.amazonaws.com/visiblelanguage/pdf/V2N4_1968_E.pdf}
+
+\bibitem{Morison-scripts}
+Stanley \textsc{Morison}, On Some Italian Scripts of the XV and XVI
+Centuries, in \emph{Letter forms, typographic and scriptorial: Two essays
+on their classification, history, and bibliography}, Typophiles,
+pp.~95--129, 1968.
+
+%\bibitem{Naffah-Office}
+%Najah \nom{Naffah} (sld.), \emph{Office Information Systems}, North-Holland pub., 1982.
+
+% [kb: dup of Hershey-tables]
+%\bibitem{NBS-Herschey}
+%National Bureau of Standards,
+%\emph{A contribution to computer typesetting techniques: Tables of
+%coordinates for Hershey's Repertory of Occidental Type Fonts and Graphic
+%Symbols}, NBS Special Publication 424, 1976.
+%\url{https://scruss.com/wordpress/wp-content/uploads/2014/04/tables_of_coordinates_for_hersheys_repertory_of_occidental_type_fonts-wolcott_and_hilsenrath.pdf}
+
+%\bibitem{Olyff-enjeux}
+%Michel \nom{Olyff}, «Questions graphiques -- enjeux et contraintes», \emph{Bulletin de la Classe des Beaux-Arts}, 6\ieme\ série, tome~XII, Académie royale de Belgique, 2001, 31~pages.
+
+%\bibitem{Pacioli} Pacioli cf HET-XX-biblio
+
+\bibitem{Bio-Frutiger}%[JA: given full ref: 
+%Frutiger; l'œuvre... cf HET20-biblio.tex ; %NB \url{https://books.google.fr/books?id=kNQVMLTL-p0C}
+Heidrun \nom{Osterer} and Philipp \nom{Stamm},
+\emph{Adrian~Frutiger -- Caractères: L'œuvre Complète}, Walter de Gruyter, Switzerland, 2012.
+%]
+
+\bibitem{victor-punk}
+Victor \nom{Ostromoukhov} and Jacques \nom{André}, Punk~: de
+\MF\ à PostScript,
+{\em Cahiers GUTenberg}, n°~4 (1989), pp.~23--28.
+\\\url{http://numdam.org/item/CG_1989___4_23_0/}
+%\url{http://cahiers.gutenberg.eu.org/cg-bin/article/CG_1989___4_23_0.pdf}
+
+%\bibitem{Pacioli-Divina}
+%Luca \nom{Pacioli}, \emph{De Divina proportione}, Venis, 1509.\\\url{https://archive.org/details/divinaproportion00paci}
+
+%\bibitem{Pavlidis-algo}
+%Theo \nom{Pavlidis}, \emph{Algorithms for Graphics and Image Processing}, Springer-Verlag, Berlin, 1982.
+
+%\bibitem{Peddie}
+%Jon \nom{Peddie},  \emph{The History of Visual Magic in Computers -- How Beautiful Images are Made in CAD, 3D, VR and AR}, Springer-Verlag, London 2013. \url{https://books.google.fr/books?id=6a8_AAAAQBAJ}
+
+\bibitem{comprehensive-Symbol}%[JA: added 23/2/23 - cf subsection{Computer Modern and others}
+Scott \textsc{Pakin},
+\emph{The Comprehensive \LaTeX\ Symbol List}, 2021.
+\url{https://ctan.org/pkg/comprehensive}
+%\url{https://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf}
+%]
+
+\bibitem{Phillips-periph}
+Arthur \nom{Phillips}, \emph{Computer Peripherals \& Typesetting}, London, Her
+Majesty’s Stationery Office, 1968.
+
+%\bibitem{Pouchelon-ptdecroix}
+%Catherine \nom{Pouchelon}, \emph{Abécédaires brodés -- du modèle à l'ouvrage}, Les éditions de l'Amateur, Paris, 2001.
+
+\bibitem{Pratt-conics}
+Vaughan \nom{Pratt}, Techniques for conic splines, \emph{ACM SIGGRAPH
+Computer Graphics}, Vol.~19, No.~3, July 1985, pp.~151--159.
+\url{https://doi.org/10.1145/325165.325225}
+
+\bibitem{Randall}%[JA: added 9/2/2023
+Lilian M.C. \textsc{Randall}, A Nineteenth Century `Medieval' Prayerbook
+Woven in
+Lyon, in \emph{Art the Ape of Nature: Studies~in Honor of H.W.~Janson},
+Moshe Barasch, Lucy~F.~Sandler (eds), New~York, NY: Harry N. Abrams,
+1981, pp.~651--668.
+%]
+\bibitem{Reid-bib}%[JA: added 24/2/2023]
+Brian K. \textsc{Reid} and David \textsc{Hanson},
+An annotated bibliography of background material on text manipulation,
+\emph{Proceedings of the ACM SIGPLAN SIGOA Symposium on Text
+Manipulation}, ACM SIGPLAN Notices, Vol.~16, No.~6, June 1981, pp.~157--160.
+\url{https://doi.org/10.1145/800209.806467}
+
+\bibitem{RIDT}
+\nom{RIDT}, conference series proceedings:
+%\begin{itemize}
+\item \emph{Raster Imaging and Digital Typography}, Lausanne,
+Oct.~1989 (Jacques \nomfr{Andre}{André} and Roger  \nom{Hersch},
+eds.),  Cambridge University Press, 1989.
+\url{https://books.google.com/books?id=mj09AAAAIAAJ}
+
+\item \emph{Raster Imaging and Digital Typography~II}, Boston,
+Oct.~1991 (Robert A. \nom{Morris} and Jacques \nomfr{Andre}{André}, eds.),
+Cambridge University Press, 1991.
+\url{https://books.google.com/books?id=Q9KtGcpfNgUC}
+
+\item \emph{Raster Imaging and Digital Typography}, special issue of
+\emph{Electronic Publishing Origination Dissemination and Design},
+(Jacques \nomfr{Andre}{André}, Jakob \nom{Gonczarowski}, and
+Richard \nom{Southall}, eds.), Wiley, 1994.
+\url{https://books.google.com/books?id=gJcVAQAAIAAJ}
+
+\item \emph{Electronic Publishing, Artistic Imaging,  and Digital
+Typography} (Roger \nom{Hersch}, Jacques \nomfr{Andre}{André}, and
+Heather \nom{Brown}, eds.), Lecture Notes in Computer Science \#1375,
+Springer-Verlag, 1998.
+\url{https://books.google.com/books?id=bo453EDNBp4C}
+%\end{itemize} 
+
+%\bibitem{Rincé-Minitel}%[JA: deleted for  too much French!]
+%Jean-Yves \nom{Rincé}, \emph{Le Minitel}, Que Sais-Je ?, Presses universitaires de France, 1990. \no{?}.
+
+\bibitem{Romano}
+Frank \textsc{Romano} (with Miranda \textsc{Mitrano}), \emph{History of
+Desktop Publishing}, Oak Knoll Press, 2019.
+
+\bibitem{Rubinstein-DT}%OK 
+Richard \nom{Rubinstein}, \emph{Digital Typography\Dash an introduction to
+type and composition for computer system design}, Reading, MA:
+Addison-Wesley, 1988.
+
+\bibitem{Ruggles-systems}
+Lynn \nom{Ruggles},\emph{ Letterform Design Systems}, Stanford
+University Technical Report STAN-CS-83-971, 1973.
+\url{http://i.stanford.edu/pub/cstr/reports/cs/tr/83/971/CS-TR-83-971.pdf}
+
+\bibitem{Hershey-exemples} 
+Stewart C. \nom{Russell}, \emph{Hershey Font Outlines}, May 2014.
+\url{https://scruss.com/wordpress/wp-content/uploads/2014/05/hershey_samples.pdf}
+
+\bibitem{Seybold-microed}
+John \nom{Seybold} and Fritz \nom{Dressler}, \emph{Publishing From the
+Desktop}, New York, NY: Bantam Books, 1987. % In English=?
+\url{https://archive.org/details/publishingfromde0000seyb}
+
+%\bibitem{Sherman-BellCentennial}
+%Nick \nom{Sherman}, \emph{Bell Centennial, form \& function -- A detailed look at the telephone book typeface}, 2005. \url{http://nicksherman.com/articles/bellCentennial.html}
+
+%\bibitem{RS-Aussois}
+%Richard \nom{Southall}, {Interfaces between the designer dans the document}, \emph{Structured documents}, ({J. Andr\'e, R. Furuta, and V. Quint eds.}), Cambridge University Press, {1989}, p.~{119-131}. \url{https://books.google.fr/books?id=BrgbosTycOgC}
+
+\bibitem{Southall-interfaces}%[JA: added 25/2/2023]
+Richard \nom{Southall}, 
+Interfaces between the designer and the document, in
+\emph{Structured documents} (Jacques \nom{André}, Richard
+\nom{Furuta}, and Vincent \nom{Quint}, eds.), Cambridge University Press,
+1989, pp.~119--131.
+\url{https://dl.acm.org/doi/10.5555/73173.73179}
+
+\bibitem{Rockies-EP98}
+Richard \nom{Southall}, 
+{\MF\ in the Rockies: The Colorado Typemaking Project},
+in \emph{EP'98}~[109, pp.~167--180 (1998)]; 
+\url{https://link.springer.com/chapter/10.1007%2FBFb0053270}. % preview does not work anymore???
+Republished in 
+\emph{Computers and Typography~2} (Rosemary Sassoon, ed.), Intellect
+Books, {2002}; \url{https://books.google.com?id=wdYmvQD5C8IC}
+
+\bibitem{Southall-printers}
+Richard \nom{Southall},  \emph{Printer’s Type in the
+Twentieth Century\Dash Manufacturing
+and Design Methods}, The British Library/Oak Knoll Press, 2005.
+
+\bibitem{Sproull-XeroxFonts}
+Bob \nom{Sproull}, \emph{Font Representations and Formats}, Internal
+note, Xerox PARC, Mar.~1977.
+% [kb: archive.org url works, but maybe nicer to reuse the chm archive?]
+\url{https://xeroxparcarchive.computerhistory.org/indigo/printingdocs/.FONTFORMATS.PRESS!1.pdf}
+%\url{https://ia801603.us.archive.org/4/items/bitsavers_xeroxaltoptationsandFormatsMar77_1762159/Font_Representations_and_Formats_Mar77.pdf}
+
+\bibitem{Siegel-euler}
+David R. \nom{Siegel}, \emph{The Euler Project at Stanford}, The
+Department of Computer Science, Stanford University, Stanford, 1985.
+
+\newpage
+\bibitem{Sudweeks-elliptical}
+David \nom{Sudweeks}, Type Trends: Superelliptical Type, \emph{FontShop
+Typographic Trends}, Nov.~2012.
+\url{https://fontshopblog.wordpress.com/2012/11/22/type-trends-superelliptical-type}
+% [kb: blog.fontshop.com has https misconfigured, cannot connect.]
+%\url{http://blog.fontshop.com/category/typographic-trends/}
+
+%\bibitem{tomash-chi90}
+%Erwin \nom{Tomash}, The U.S. Computer Printer Industry, \emph{Deuxième Colloque sur l'Histoire de l'Informatique en France}, (Phlippe Chatelin et Pierre-E. Mounier-Kuhn eds.), Conservatoire National des Arts et Métiers, Paris, mars 1990. \url{http://jacques-andre.fr/chi/chi90/tomash.html}
+
+\bibitem{Tufte}
+Edward \textsc{Tufte}, \emph{Visual Explanations\Dash Images and
+Quantities, Evidence and
+Narrative}, Cheshire, CT: Graphic Press, 1997. 
+
+\bibitem{Unger-Visible}
+Gerard \nom{Unger}, The Design of a Typeface,
+\emph{Visible Language}, Vol.~13, No.~2, Apr.~1979, pp.~134--149.
+\url{https://journals.uc.edu/index.php/vl/article/view/5266}
+%\url{https://s3-us-west-2.amazonaws.com/visiblelanguage/pdf/V13N2_1979_E.pdf}
+
+\bibitem{Unger-MF}
+Gerard \nom{Unger}, \emph{in} Other Replies to Donald E. Knuth's
+article ``The Concept of a Meta-Font'', \emph{Visible Language},
+Vol.~16, No.~4, Oct.~1982, pp.~353--356.
+\url{https://journals.uc.edu/index.php/vl/issue/view/360}
+
+%\bibitem{Vallance-modeles}
+%David Vallance, Décrire des modèles, \emph{.txt2}, Esad Grenoble-Valence, éd.B42, 2015, p.~48.
+
+%\bibitem{vatton}
+%Irène \nom{Vatton} and Jacques \nom{André}, « Dynamic optical scaling and variable sized characters », \emph{Electronic Publishing}, vol. 7,n° 2, juillet 1994, 21 pages. \url{http://jacques-andre.fr/japublis/opticalscaling.pdf}
+
+\bibitem{VanDam-bib}%[JA: added 24/2/2023]
+Andries \textsc{Van Dam} and Eric E. \textsc{Rice}, On-line
+Text Editing: A Survey, \emph{Computing Surveys}, Vol.~3,
+No.~3, Sept.~1971, pp.~93--114.  
+\url{https://doi.org/10.1145/356589.356591}
+
+\bibitem{Wang-Bigelow}
+Yue \nom{Wang}, Interview with Charles {Bigelow}, \emph{TUGboat},
+Vol.~34 (2013), No.~2, pp.~136--167.
+\\\url{https://tug.org/TUGboat/tb34-2/tb107bigelow-wang.pdf}
+
+\bibitem{Westerby}%[JA: added 9/2/2023
+Matthew \textsc{Westerby}, \emph{The Woven Prayer Book: Cocoon to Codex},
+Satellite Series. Paris, France \& Chicago, IL, USA: Les~Enluminures, 2019.
+%]
+
+\bibitem{Hershey-tables}
+Norman M. \nom{Wolcott} and Joseph \nom{Hilsenrath}, \emph{A
+Contribution to Computer Typesetting Techniques: Tables of coordinates
+for Hershey's Repertory of Occidental Type Fonts and Graphic Symbols},
+National Bureau of Standards, NBS Special Publication 424, Apr.~1976.
+\url{https://scruss.com/wordpress/wp-content/uploads/2014/04/tables_of_coordinates_for_hersheys_repertory_of_occidental_type_fonts-wolcott_and_hilsenrath.pdf}
+
+\bibitem{wolcott-ftn-hershey}
+Norman M. \nom{Wolcott}, FORTRAN IV Enhanced Character Graphics,
+National Bureau of Standards, Institute for Computer Sciences and
+Technology, NBS Special Publication 500-32, Apr.~1978, 64~pp.
+\url{https://archive.org/details/fortranivenhance5003wolc}
+%\url{https://books.google.fr/books?id=OKC024YQLhwC}
+
+%Tom Wright. History and Technology of Computer Fonts. IEEE Annals of the History of Computing, 20(2):30–34, 1998.
+% cf http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=667294  => IRISA ?
+
+\bibitem{Zapf-philo}
+Hermann \nom{Zapf}, \emph{Hermann Zapf and His Design Philosophy}, 
+Chicago, IL: Society of Typographic Arts, 1987.
+Introduction by Carl Zahn.
+
+\bibitem{Zapf-Antiq}
+Herman \textsc{Zapf}, Vom Formgesetz der Renaissance-Antiqua, \emph{Der
+Polygraph},
+Heft 21. %Traduit en français : %Herman Zapf (2000), 
+%« Typographie des caractères romainsde la Renaissance », 
+%See also \emph{Cahiers GUTenberg}, n° 37-38, p.~44-53.
+% http://www.numdam.org/item/CG_2000___37-38_44_0/
+%\url{http://cahiers.gutenberg.eu.org/cg-bin/article/CG_2000___37-38_44_0.pdf}
+
+\end{thebibliography}

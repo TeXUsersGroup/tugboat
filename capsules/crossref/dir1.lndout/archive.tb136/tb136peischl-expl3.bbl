@@ -1,0 +1,36 @@
+\begin{thebibliography}{1}
+
+\bibitem{babel-manual}
+J.L.~Braams, J.~Bezos.
+\newblock Babel: Localization and internationalization.
+\newblock \url{https://ctan.org/pkg/babel}
+
+\bibitem{keyval-ctan}
+CTAN.
+\newblock \texttt{keyval} topic.
+\newblock \url{https://ctan.org/topic/keyval}
+
+\bibitem{Hendrickson:TB33-2-219}
+A.~Hendrickson.
+\newblock The joy of\/ \cs{csname\ldots}\cs{endcsname}.
+\newblock \emph{\TUB} 33(2):219--224, 2012.
+\newblock \url{https://tug.org/TUGboat/tb33-2/tb104hendrickson.pdf}
+
+\bibitem{interface3}
+{\LaTeX{} Project}.
+\newblock The {\LaTeX3} interfaces.
+\newblock
+  \url{https://mirrors.ctan.org/macros/latex/contrib/l3kernel/interface3.pdf}
+
+\bibitem{expl3}
+{\LaTeX{} Project}.
+\newblock The expl3 package and {\LaTeX3} programming.
+\newblock
+  \url{https://mirrors.ctan.org/macros/latex/contrib/l3kernel/expl3.pdf}
+
+\bibitem{expl3-registration}
+J.~Wright.
+\newblock Registering expl3 module[s].
+\newblock \url{https://texdev.net/2012/11/04/registering-expl3-module/}
+
+\end{thebibliography}

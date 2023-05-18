@@ -1,0 +1,5 @@
+The \texttt{ggplot2} package is widely used for R graphics. Example
+\LaTeX-style rendering of such graphics is presented, achieved via annotations
+with embedded {\LaTeX} markup. This allows R graphics to be integrated
+into {\LaTeX}
+documents with a harmonious visual style.

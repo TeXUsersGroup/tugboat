@@ -1,0 +1,24 @@
+
+  \noindent Depending on how you count we have several \LaTeX{} anniversaries to
+  celebrate in 2023: roughly forty years ago Leslie Lamport started
+  his work on \LaTeX{} (which became \LaTeX\,2.09 in 1986). Ten years
+  later in 1993 we made the first beta version of \LaTeXe{}
+  available\Dash since then the standard \LaTeX{} version used across
+  the world.
+
+  Thirty years of \LaTeXe{} does not mean three decades of standstill\Dash
+  on the contrary. During that time thirty-six new kernel versions have been
+  released and the \LaTeX{} ecosystem grew from a few hundred add-on
+  packages to several thousands.
+
+  However, during the first two decades changes to the core of
+  \LaTeX{} were rather minor and most activity was concentrated in
+  the package universe, but the last decade showed an increased level
+  of activity modernizing the \LaTeX{} core functionalities. This
+  started around 2015 when the \LaTeX{} Project Team reimported bug
+  fixes accumulated in a separate package back into the kernel. Since
+  then the format was gradually modernized, e.g., by making \tbUTF-8 the
+  default in 2018 and by incorporating the L3 programming layer in
+  2020.  This intensified further in the last two years when the team
+  embarked on a multi-year journey to enable automatic tagging of the
+  \PDF\ output produced from \LaTeX{}.

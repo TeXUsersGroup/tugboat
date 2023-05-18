@@ -1,0 +1,6 @@
+LuaCAS is a portable computer algebra system, written entirely in Lua,
+designed for use within Lua\LaTeX{} via the \texttt{luacas} package.
+Features include: arbitrary precision integer and rational arithmetic,
+number-theoretic algorithms, constructors and algorithms for univariate
+polynomials defined over various rings, symbolic differentiation and
+integration, and more.

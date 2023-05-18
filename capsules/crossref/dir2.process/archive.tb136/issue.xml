@@ -1,0 +1,1464 @@
+<doi_batch xmlns="http://www.crossref.org/schema/4.4.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.4.2" xsi:schemaLocation="http://www.crossref.org/schema/4.4.2 http://www.crossref.org/schema/deposit/crossref4.4.2.xsd">
+  <head>
+    <doi_batch_id>ltx2crossref-20230517222851-1182529</doi_batch_id>
+    <timestamp>20230517222851</timestamp>
+    <depositor>
+      <depositor_name>TUGboat production</depositor_name>
+      <email_address>doi-tugboat@tug.org</email_address>
+    </depositor>
+    <registrant>TeX Users Group</registrant>
+  </head>
+  <body><journal>
+    <journal_metadata language="en">
+      <full_title>TUGboat</full_title>
+      <issn>0896-3207</issn>	
+    </journal_metadata>
+    <journal_issue>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <journal_volume><volume>44</volume></journal_volume>
+      <issue>1</issue>
+    </journal_issue>
+    <journal_article>
+      <titles>
+        <title>From the president</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Boris</given_name>
+          <surname>Veytsman</surname>
+          <ORCID>https://orcid.org/0000-0003-4674-8113</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>3</first_page>
+        <last_page>3</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136pres</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136pres.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Editorial comments</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Barbara</given_name>
+          <surname>Beeton</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>4</first_page>
+        <last_page>8</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136beet</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136beet.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>A conversation with type designer Matthew Carter</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Frank</given_name>
+          <surname>Romano</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>9</first_page>
+        <last_page>20</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136carter-romano</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136carter-romano.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Prehistory of digital fonts</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jacques</given_name>
+          <surname>Andr&#xe9;</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>21</first_page>
+        <last_page>57</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136andre-prehistory</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136andre-prehistory.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="HET-1"><unstructured_citation>
+          Histoire de l&#x2019;&#x00e9;criture typographique &#x2013; De Gutenberg au XVII&#x1D49; si&#x00E8;cle, by Yves Perrousseaux. Atelier Perrousseaux &#x00e9;d./Adverbum, 2004.
+        </unstructured_citation></citation>
+        <citation key="HET-18-I-2"><unstructured_citation>
+          Histoire de l&#x2019;&#x00e9;criture typographique &#x2013; Le XVIII&#x1D49; si&#x00E8;cle, tome I/II, by Yves Perrousseaux. Atelier Perrousseaux &#x00e9;d./Adverbum, 2010.
+        </unstructured_citation></citation>
+        <citation key="HET-18-II-3"><unstructured_citation>
+          Histoire de l&#x2019;&#x00e9;criture typographique &#x2013; Le XVIII&#x1D49; si&#x00E8;cle, tome II/II, by Yves Perrousseaux. Atelier Perrousseaux &#x00e9;d./Adverbum, 2010.
+        </unstructured_citation></citation>
+        <citation key="HET-19-4"><unstructured_citation>
+          Histoire de l&#x2019;&#x00e9;criture typographique &#x2013; Le XIX&#x1D49; si&#x00E8;cle fran&#x00e7;ais, by Jacques Andr&#x00e9; and Christian Laucou. Atelier Perrousseaux &#x00e9;d./Adverbum, 2013.
+        </unstructured_citation></citation>
+        <citation key="HET-20-I-5"><unstructured_citation>
+          Histoire de l&#x2019;&#x00e9;criture typographique &#x2013; Le XX&#x1D49; si&#x00E8;cle, de 1900 &#x00e0; 1950, collective work under the direction of Jacques Andr&#x00e9;. Atelier Perrousseaux &#x00e9;d./Adverbum, 2016.
+        </unstructured_citation></citation>
+        <citation key="HET-20-II-6"><unstructured_citation>
+          Histoire de l&#x2019;&#x00e9;criture typographique &#x2013; Le XX&#x1D49; si&#x00E8;cle, de 1950 &#x00e0; 2000, collective work under the direction of Jacques Andr&#x00e9;. Atelier Perrousseaux &#x00e9;d./Adverbum, 2016.
+        </unstructured_citation></citation>
+        <citation key="adoberouge-7"><unstructured_citation>
+          Adobe Systems Inc., PostScript Language Reference Manual, first edition, Reading, MA: Addison-Wesley, 1985; second edition, 1991.
+        </unstructured_citation></citation>
+        <citation key="adobebleu-8"><unstructured_citation>
+          Adobe Systems Inc., PostScript Language Tutorial and Cookbook, Reading, MA: Addison-Wesley, 1985.
+        </unstructured_citation></citation>
+        <citation key="adobevert-9"><unstructured_citation>
+          Adobe Systems Inc., PostScript Language Program Design, Reading, MA: Addison-Wesley, 1988.
+        </unstructured_citation></citation>
+        <citation key="adobenoir-10"><unstructured_citation>
+          Adobe Systems Inc., The Type 1 Format Specification, Reading, MA: Addison-Wesley, 1990.
+        </unstructured_citation></citation>
+        <citation key="JA-habili-11"><unstructured_citation>
+          Jacques Andr&#x00e9;, Cr&#x00e9;ation de fontes en typographie num&#x00e9;rique, M&#x00e9;moire d&#x2019;HDR, Universit&#x00e9; Rennes I, 29 sept. 1993, 124 pp. https://theses.hal.science/tel-00011218/file/andre.pdf
+        </unstructured_citation></citation>
+        <citation key="JA-Courier-12"><unstructured_citation>
+          Jacques Andr&#x00e9;, Courier &#x2013; Histoire d&#x2019;un caract&#x00e8;re &#x2013; De la machine &#x00e0; &#x00e9;crire aux fontes num&#x00e9;riques, &#x00e9;d. du Jobet, 1993. https://jacques-andre.fr/fontex/courier.pdf
+        </unstructured_citation></citation>
+        <citation key="JA-geom-car-13"><unstructured_citation>
+          Jacques Andr&#x00e9;, De Pacioli &#x00e0; Truchet : trois si&#x00e8;cles de g&#x00e9;om&#x00e9;trie pour les caract&#x00e8;res, 4 000 ans d&#x2019;histoire des math&#x00e9;matiques : les math&#x00e9;matiques dans la longue dur&#x00e9;e &#x2013; 13&#x1D49; colloque Inter-IREM d&#x2019;&#x00e9;pist&#x00e9;mologie et histoire des math&#x00e9;matiques, IREM-Rennes, mai 2000, pp. 1&#x2013;38. https://hal.inria.fr/inria-00000956
+        </unstructured_citation></citation>
+        <citation key="Andre-Bur-14"><unstructured_citation>
+          Jacques Andr&#x00e9; and Justin Bur, M&#x00e9;trique des fontes PostScript, Cahiers Gutenberg, n&#x00b0; 8 (1991), pp. 29&#x2013;50. http://numdam.org/item/CG_1991___8_29_0/
+        </unstructured_citation></citation>
+        <citation key="JA+Girou-15"><unstructured_citation>
+          Jacques Andr&#x00e9; and Denis Girou, Father Truchet, the typographic point, the Romain du roi, and tilings, TUGboat, Vol. 20 (1999), No. 1, pp. 8&#x2013;14. https://tug.org/TUGboat/tb20-1/tb62andr.pdf
+        </unstructured_citation></citation>
+        <citation key="JAAMRS-16"><unstructured_citation>
+          Jacques Andr&#x00e9; and Alan Marshall, Richard Southall: 1937&#x2013;2015, TUGboat, Vol. 36 (2015), No. 2, pp. 100&#x2013;102. https://tug.org/tugboat/tb36-2/tb113southall.pdf
+        </unstructured_citation></citation>
+        <citation key="JA-WFDS-17"><unstructured_citation>
+          Jacques Andr&#x00e9; and Moncef Mlouka (eds.), Workshop on Font Design Systems, INRIA-Sophia, May 1987. See also [109] (1989).
+        </unstructured_citation></citation>
+        <citation key="Augustin-Crouwel-18"><unstructured_citation>
+          Augustin, Wim Crouwel, Index Grafik, 7 avril 2014. http://indexgrafik.fr/wim-crouwel/
+        </unstructured_citation></citation>
+        <citation key="Baudelaire-Fred-19"><unstructured_citation>
+          Patrick Baudelaire, The Fred User&#x2019;s Manual, Internal Report, Xerox Palo Alto Research Center, Palo Alto, California, 1976.
+        </unstructured_citation></citation>
+        <citation key="Baudelaire-Alto-20"><unstructured_citation>
+          Patrick Baudelaire, The Xerox Alto Font Design System, in [31].
+        </unstructured_citation></citation>
+        <citation key="Baudelaire-Stone-21"><unstructured_citation>
+          Patrick Baudelaire and M. Stone, Techniques for Interactive Raster Graphics, SIGGRAPH 80 Proceedings, Computer Graphics, Vol. 14, No. 3, 1980.
+        </unstructured_citation></citation>
+        <citation key="Beeton:2018:TBD-22"><unstructured_citation>
+          Barbara Beeton, Karl Berry and David Walden, TeX: A Branch in Desktop Publishing Evolution, Part 1, IEEE Annals of the History of Computing, Vol. 40, No. 3, Jul./Sept. 2018, pp. 78&#x2013;93. https://ieeexplore.ieee.org/document/8509554/
+        </unstructured_citation></citation>
+        <citation key="BHR-these-23"><unstructured_citation>
+          Yves Bekkers, Daniel Herman, and Michel Raynal, Conception et r&#x00e9;alisation d&#x2019;une machine-langage de haut niveau adapt&#x00e9;e &#x00e0; l&#x2019;&#x00e9;criture de syst&#x00e8;mes, Ph.D. thesis, Rennes University, 24 sept. 1975.
+        </unstructured_citation></citation>
+        <citation key="Bigelow-Rennes-24"><unstructured_citation>
+          Charles Bigelow, Les caract&#x00e8;res rationalis&#x00e9;s, in La manipulation de documents (Jacques Andr&#x00e9;, ed.), INRIA-Centre de Rennes, mai 1983, pp. 15-27. https://jacques-andre.fr/japublis/manip83.pdf
+        </unstructured_citation></citation>
+        <citation key="Bigelow-HET-25"><unstructured_citation>
+          Charles Bigelow, Review and Summaries of The History of Typographic Writing&#x2014;The 20th century. Originally published in three parts in TUGboat Vol. 38 (2017); combined: https://tug.org/books/reviews/tv38bigelow.pdf
+        </unstructured_citation></citation>
+        <citation key="Bigelow-legibility-26"><unstructured_citation>
+          Charles Bigelow, Typeface Features and Legibility Research, Vision Research, Vol. 165, Dec. 2019, pp. 162&#x2013;172. https://doi.org/10.1016/j.visres.2019.05.003
+        </unstructured_citation></citation>
+        <citation key="Bigelow-war-27"><unstructured_citation>
+          Charles Bigelow, The Font Wars, Parts 1 and 2, IEEE Annals of the History of Computing (Special issue: History of Desktop Publishing), Vol. 42, No. 1, Jan./Mar. 2020, pp. 7&#x2013;40. doi.org/10.1109/MAHC.2020.2971202 and doi.org/10.1109/MAHC.2020.2971745
+        </unstructured_citation></citation>
+        <citation key="bigelow-day-28"><unstructured_citation>
+          Charles Bigelow and Donald Day, Digital Typography, Scientific American, Vol. 249, No. 2, pp. 106&#x2013;119, Aug. 1983.
+        </unstructured_citation></citation>
+        <citation key="bigelow-4AppleFonts-29"><unstructured_citation>
+          Charles Bigelow and Kris Holmes, Notes on Apple 4 Fonts, Electronic Publishing, Vol. 4, No. 3, Sept. 1991, pp. 171&#x2013;181. http://cajun.cs.nott.ac.uk/compsci/epo/papers/volume4/issue3/ep050cb.pdf
+        </unstructured_citation></citation>
+        <citation key="bigelow-EP-30"><unstructured_citation>
+          Charles Bigelow and Kris Holmes, The Design of Lucida: An Integrated Family of Types for Electronic Literacy, in Text Processing and Document Manipulation (J.C. van Vliet, ed.), Cambridge University Press, 1986.
+        </unstructured_citation></citation>
+        <citation key="VL50-31"><unstructured_citation>
+          Charles Bigelow and Kevin Larson (eds.), Visible Language (Special issue: Reflecting on 50 Years of Typography, Vol. 50, No. 2, Aug. 2016. https://journals.uc.edu/index.php/vl/issue/view/461
+        </unstructured_citation></citation>
+        <citation key="Bigelow-Ruggles-32"><unstructured_citation>
+          Charles Bigelow and Lynn Ruggles (eds.), Visible Language (Special issue: The Computer and the Hand in Type Design), Vol. 19, No. 1, Winter 1985. https://journals.uc.edu/index.php/vl/issue/view/369
+        </unstructured_citation></citation>
+        <citation key="Alison-Black-33"><unstructured_citation>
+          Alison Black, Typefaces for Desktop Publishing: A User Guide, London: Architecture Design and Technology Press, 1990.
+        </unstructured_citation></citation>
+        <citation key="Blackwell-34"><unstructured_citation>
+          Lewis Blackwell, 20th-Century Types, Lawrence King Publishing, 2004.
+        </unstructured_citation></citation>
+        <citation key="Blanchard-telematique-35"><unstructured_citation>
+          G&#x00e9;rard Blanchard (coordinated by), L&#x2019;&#x00e9;criture t&#x00e9;l&#x00e9;matique, ann&#x00e9;es z&#x00e9;ro, Les Cahiers de Lure, 1985.
+        </unstructured_citation></citation>
+        <citation key="Blanchard-eredita-36"><unstructured_citation>
+          G&#x00e9;rard Blanchard, L&#x2019;eredita Gutenberg, Gianfranco Altieri Editore, 1989.
+        </unstructured_citation></citation>
+        <citation key="Blanchard-Choix-37"><unstructured_citation>
+          G&#x00e9;rard Blanchard, Aide au choix de la typo-graphie &#x2013; Cours sup&#x00e9;rieur, Atelier Perrousseaux &#x00e9;d., 1998.
+        </unstructured_citation></citation>
+        <citation key="Bourke-Hershey-38"><unstructured_citation>
+          Paul Bourke, Hershey Vector Font based on the Hershey character set, Oct. 1977. http://paulbourke.net/dataformats/hershey/
+        </unstructured_citation></citation>
+        <citation key="Bresenham-algo-39"><unstructured_citation>
+          Jack E. Bresenham, Algorithm for computer control of a digital plotter, IBM Systems Journal, Vol. 4, No. 1, Jan. 1965, pp. 25&#x2013;30. https://doi.org/10.1147/sj.41.0025
+        </unstructured_citation></citation>
+        <citation key="Bringhurst-40"><unstructured_citation>
+          Robert Bringhurst, The Elements of Typographic Style, Hartley &#x0026; Marks publishers, 4th edition, 2015.
+        </unstructured_citation></citation>
+        <citation key="Calcomp-man76-41"><unstructured_citation>
+          CalComp Software Reference Manual, California Computer Products Inc., Oct. 1976. https://archive.org/details/bitsavers_calcompCalceManualOct76_6872751
+        </unstructured_citation></citation>
+        <citation key="catisch-42"><unstructured_citation>
+          Edward M. Catich, The Origin of the Serif: Brush Writing and Roman Letters, Davenport, IA: The Catfish Press, 1968.
+        </unstructured_citation></citation>
+        <citation key="Coueignoux-thesis-43"><unstructured_citation>
+          Philippe J.M. Coueignoux, Generation of Roman Printed Fonts, Ph.D. thesis, Massachusetts Institute of Technology, Dept. of Electrical Engineering and Computer Science, 1975. https://dspace.mit.edu/bitstream/handle/1721.1/27408/02149218-MIT.pdf
+        </unstructured_citation></citation>
+        <citation key="Crossland-44"><unstructured_citation>
+          Dave Crossland, &#x201c;Why didn&#x2019;t Metafont catch on?&#x201d;, TUGboat, Vol. 29 (2008), No. 3, pp. 418-420. https://tug.org/TUGboat/tb29-3/tb93crossland.pdf
+        </unstructured_citation></citation>
+        <citation key="Crouwel-archi-45"><unstructured_citation>
+          Typographic Architectures typographiques, texts by Wim Hendrik Crouwel, Catherine de Smet and Emmanuel B&#x00e9;rard, Editions fsept F7, Paris, 2007.
+        </unstructured_citation></citation>
+        <citation key="DeBuen-46"><unstructured_citation>
+          Jorge De Buen, Manual de dise&#x00f1;o editorial, Santilano, Mexico, 2000,
+        </unstructured_citation></citation>
+        <citation key="Delorme-Andre-47"><unstructured_citation>
+          Christian Delorme and Jacques Andr&#x00e9;, Le Delorme, un caract&#x00e8;re modulaire et d&#x00e9;pendant du contexte, Communication et langages, Vol. 86 (1990), pp. 64&#x2013;76. https://www.persee.fr/web/revues/home/prescript/article/colan_0336-1500_1990_num_86_1_2261
+        </unstructured_citation></citation>
+        <citation key="Devroye-48"><unstructured_citation>
+          Jean-Luc Devroye, Type Design, Typography, Typefaces and Fonts: An encyclopedic treatment of type design, typefaces and fonts. Web page closed on May 6, 2022. http://luc.devroye.org/fonts.html
+        </unstructured_citation></citation>
+        <citation key="Devroye-MF-49"><unstructured_citation>
+          Jean-Luc Devroye, Metafont links, in [48]. http://luc.devroye.org/metafont.html
+        </unstructured_citation></citation>
+        <citation key="EncyclopÃ©die-50"><unstructured_citation>
+          Diderot &#x0026; D&#x2019;Alembert, Encyclop&#x00e9;die, ou Dictionnaire Raisonn&#x00e9; des Sciences, des Arts et des M&#x00e9;tiers, 1751&#x2013;1772. https://encyclopedie.uchicago.edu
+        </unstructured_citation></citation>
+        <citation key="durer-juste-51"><unstructured_citation>
+          Albrecht D&#x00fc;rer, Of the just shaping of letters. https://www.zigzaganimal.be/elements/just_shaping_scan.pdf
+        </unstructured_citation></citation>
+        <citation key="Eltgen-TI-52"><unstructured_citation>
+          Jean-Jacques Eltgen, Techniques d&#x2019;impression d&#x2019;images num&#x00e9;ris&#x00e9;es, Techniques de l&#x2019;ing&#x00e9;nieur, art. E-5-670, 1992.
+        </unstructured_citation></citation>
+        <citation key="Essinger-53"><unstructured_citation>
+          James Essinger, Jacquard&#x2019;s Web: How a hand loom led to the birth of the information age. Oxford, U.K.: Oxford University Press, 2004.
+        </unstructured_citation></citation>
+        <citation key="Ficatier-54"><unstructured_citation>
+          Bernard Ficatier and Hugues Roche, Concevoir, relever et dessiner des plans de voiliers classiques et traditionnels, Douarnenez: Chasse-mar&#x00e9;e, 2004.
+        </unstructured_citation></citation>
+        <citation key="Furuta-55"><unstructured_citation>
+          Richard Furuta, Jeffrey Scofield, and Alan Shaw, Document Formatting Systems: Survey, Concepts, and Issues, Computing Surveys, Vol. 14, No. 3, Sept. 1982, pp. 417&#x2013;472. https://doi.org/10.1145/356887.356891
+        </unstructured_citation></citation>
+        <citation key="Gallois-Jacopozzi-56"><unstructured_citation>
+          Pierre-Marie Gallois, Quand Paris &#x00c9;tait Ville-Lumi&#x00e8;re, L&#x2019;&#x00c2;ge D&#x2019;homme, 2001.
+        </unstructured_citation></citation>
+        <citation key="Yannis-fontes-57"><unstructured_citation>
+          Yannis Haralambous, Fonts &#x0026; Encodings, O&#x2019;Reilly, 2007.
+        </unstructured_citation></citation>
+        <citation key="HassanHuHersch-58"><unstructured_citation>
+          Tamir Hassan, Changyuan Hu, and Roger D. Hersch, Next Generation Typeface Representations: Revisiting Parametric Fonts, ACM DocEng 2010 conference, Sept. 2010, pp. 181&#x2013;184. https://lspwww.epfl.ch/publications/typography/ngtrrpf_10.pdf
+        </unstructured_citation></citation>
+        <citation key="Hell-digiset-59"><unstructured_citation>
+          Rudolf Hell, Le Digiset, composeuse binaire &#x00e9;lectronique, Caract&#x00e8;re, vol. 16, no. 11, 1965, pp. 5&#x2013;16.
+        </unstructured_citation></citation>
+        <citation key="Hersch-visual-60"><unstructured_citation>
+          Roger Hersch (ed.), The Visual and Technical Aspects of Type, Cambridge University Press, 1993. https://lspwww.epfl.ch/publications/typography/vataot.html
+        </unstructured_citation></citation>
+        <citation key="Hershey-calligraphy-61"><unstructured_citation>
+          Allen V. Hershey, Calligraphy for Computers, U.S. Naval Weapons Laboratory, 1967, 500pp. https://archive.org/details/hershey-calligraphy_for_computers
+        </unstructured_citation></citation>
+        <citation key="Hershey-computergraphics-62"><unstructured_citation>
+          Allen V. Hershey, A Computer System for Scientific Typography, Computer Graphics and Image Processing, Vol. 1 (1972), pp. 273&#x2013;385.
+        </unstructured_citation></citation>
+        <citation key="Hobby-phd-63"><unstructured_citation>
+          John D. Hobby, Digitized Brush Trajectories, Ph.D. thesis, Stanford University, Aug. 1985. https://tug.org/docs/hobby/hobby-thesis.pdf
+        </unstructured_citation></citation>
+        <citation key="Hobby-MP-64"><unstructured_citation>
+          John D. Hobby, A User&#x2019;s Manual for MetaPost. AT&#x0026;T Bell Laboratories Computing Science Technical Report 162, 1992. With updates: https://tug.org/docs/metapost/mpman.pdf
+        </unstructured_citation></citation>
+        <citation key="Hofstadter-65"><unstructured_citation>
+          Douglas Hofstadter, Metamagical Themas, Basic Books, 1985. https://archive.org/details/MetamagicalThemas
+        </unstructured_citation></citation>
+        <citation key="Holmes-dossier-66"><unstructured_citation>
+          Kris Holmes, Dossier&#x2014;Calligraphy, Lettering, Signage and Graphic Design, Filmmaking and Articles, Keepsake for the Frederic Goudy Award, Rochester Institute of Technology, 2012.
+        </unstructured_citation></citation>
+        <citation key="HuHersch-67"><unstructured_citation>
+          Changyuan Hu and Roger D. Hersch, Parameterizable Fonts Based on Shape Components, IEEE Computer Graphics and Applications, Vol. 21, No. 3, May/June 2001, pp. 70&#x2013;85. https://lspwww.epfl.ch/publications/typography/pfbosc.pdf
+        </unstructured_citation></citation>
+        <citation key="Karow-formats-68"><unstructured_citation>
+          Peter Karow, Digital Formats for Typefaces, URW Verlag, Hamburg, 1987. https://archive.org/details/digitalformatsfo0000karo
+        </unstructured_citation></citation>
+        <citation key="Karow-punchcutting-69"><unstructured_citation>
+          Peter Karow, Digital punch cutting, Electronic Publishing, Vol. 4, No. 3, Sept. 1991, pp. 151&#x2013;170. http://cajun.cs.nott.ac.uk/compsci/epo/papers/volume4/issue3/ep044pk.pdf
+        </unstructured_citation></citation>
+        <citation key="Karow-digital-70"><unstructured_citation>
+          Peter Karow, Digital Typefaces: Description and Fprmats, Springer-Verlag, 1994. https://books.google.com/books?id=oomrCAAAQBAJ
+        </unstructured_citation></citation>
+        <citation key="Karow-2decades-71"><unstructured_citation>
+          Peter Karow, Two decades of typographic research at URW: A retrospective, in [109, pp. 265&#x2013;304 (1998)].
+        </unstructured_citation></citation>
+        <citation key="Karow-font-72"><unstructured_citation>
+          Peter Karow, Font Technology: Methods and Tools, Springer Science, 2012.
+        </unstructured_citation></citation>
+        <citation key="Karow-DTAI-73"><unstructured_citation>
+          Peter Karow, Digital Typography &#x0026; Artificial Intelligence, On the occasion of the presentation of the third Dr. Peter Karow Award for Font Technology &#x0026; Digital Typography to Dr. Donald E. Knuth at the ATypI Amsterdam 2013 conference, Adobe and Dutch Type Library, 2013.
+        </unstructured_citation></citation>
+        <citation key="Kernighan+troff-74"><unstructured_citation>
+          Brian W. Kernighan, A Typesetter-independent TROFF, Computing Science Technical Report No. 97, Bell Labs, revised, Mar. 1982. https://archive.org/details/typesetter-independent-troff
+        </unstructured_citation></citation>
+        <citation key="Kernighan+PIC-75"><unstructured_citation>
+          Brian W. Kernighan, PIC&#x2014;a language for typesetting graphics, Proceedings of the ACM SIGPLAN SIGOA Symposium on Text Manipulation, June 1981, pp. 92&#x2013;98. https://doi.org/10.1145/800209.806459 Revised publication, May 1991: https://archive.org/details/pic-graphics-language
+        </unstructured_citation></citation>
+        <citation key="Kernighan+eqn-76"><unstructured_citation>
+          Brian W. Kernighan and Lorinda L. Cherry, A System for Typesetting Mathematics, Communications of the ACM, Vol. 18, No. 3, Mar. 1975, pp. 151&#x2013;157. https://dl.acm.org/doi/10.1145/360680.360684
+        </unstructured_citation></citation>
+        <citation key="Knoth-77"><unstructured_citation>
+          Christopher Knoth, Computed Type Design, Master Art Direction, ECAL Lausanne, 2011. https://christoph-knoth.com/shared/computed_type_-_christoph_knoth.pdf
+        </unstructured_citation></citation>
+        <citation key="KnuthTau-78"><unstructured_citation>
+          Donald E. Knuth, &#x201c;TAU EPSILON CHI: A System for Technical Text&#x201d;, STAN-CS-78-675.1, Computer Science Department, Stanford University, Stanford, California, Nov. 1978. https://purl.stanford.edu/jy605yq4819
+        </unstructured_citation></citation>
+        <citation key="Knuth-math-typo-79"><unstructured_citation>
+          Donald E. Knuth, Mathematical Typography, Bulletin (N.S.) of the American Mathematical Society, Vol. 1, No. 2, 1979, pp. 337&#x2013;372. https://doi.org/10.1090/S0273-0979-1979-14598-1
+        </unstructured_citation></citation>
+        <citation key="Knuth-TeX+MF-80"><unstructured_citation>
+          Donald E. Knuth, TeX and Metafont&#x2014;New directions in typesetting, Digital Press and American Mathematical Society, 1979.
+        </unstructured_citation></citation>
+        <citation key="Knuth-S-81"><unstructured_citation>
+          Donald E. Knuth, The Letter S, The Mathematical Intelligencer, Vol. 2 (1980), pp. 114&#x2013;122.
+        </unstructured_citation></citation>
+        <citation key="Knuth-MF-82"><unstructured_citation>
+          Donald E. Knuth, The Concept of a Meta-Font, Visible Language, Vol. 16, No. 1, Jan. 1982, pp. 3-27. https://journals.uc.edu/index.php/vl/article/view/5329
+        </unstructured_citation></citation>
+        <citation key="Knuth-MFB-83"><unstructured_citation>
+          Donald E. Knuth, The Metafontbook, Computers &#x0026; Typesetting, Reading, MA: Addison-Wesley, 1986.
+        </unstructured_citation></citation>
+        <citation key="Knuth-cmr-84"><unstructured_citation>
+          Donald E. Knuth, Computer Modern Typefaces, Reading, MA: Addison-Wesley, 1986.
+        </unstructured_citation></citation>
+        <citation key="Knuth-Punk-85"><unstructured_citation>
+          Donald E. Knuth, A Punk Meta-Font, TUGboat, Vol. 9 (1988), No. 2, pp. 152&#x2013;168. https://tug.org/TUGboat/tb09-2/tb21knut.pdf
+        </unstructured_citation></citation>
+        <citation key="Knuth-DT-86"><unstructured_citation>
+          Donald E. Knuth, Digital Typography, xvi+685pp. CSLI Lecture Notes, no. 78, Stanford, California, 1999.
+        </unstructured_citation></citation>
+        <citation key="Kohen-picor-87"><unstructured_citation>
+          Eliyezer Kohen, A simple and efficient way to design middle resolution fonts, in [17, pp. 3&#x2013;19] and [109, pp. 22&#x2013;33 (1989)].
+        </unstructured_citation></citation>
+        <citation key="Krakowiak-Parc-88"><unstructured_citation>
+          Sacha Krakowiak, Xerox PARC et la naissance de l&#x2019;informatique contemporaine, Interstices (revue Inria en ligne), 2012. https://interstices.info/jcms/int_64091/xerox-parc-et-la-naissance-de-l-informatique-contemporaine
+        </unstructured_citation></citation>
+        <citation key="Leonidas-89"><unstructured_citation>
+          Gerry Leonidas, Farewell, Richard Southall, 17 June 2015. https://leonidas.net/2015/06/17/farewell-richard-southall/
+        </unstructured_citation></citation>
+        <citation key="Levien-Sequin-90"><unstructured_citation>
+          Raph Levien and Carlo H. S&#x00E9;quin, Interpolating Splines: Which is the fairest of them all?, Computer-Aided Design &#x0026; Applications, Vol. 6, No. 1, 2009, pp. 91&#x2013;102. http://graphics.berkeley.edu/papers/Levien-IIS-2009-06/
+        </unstructured_citation></citation>
+        <citation key="MacKay-arabic-91"><unstructured_citation>
+          Pierre MacKay, The KATIB System, a revolutionary advancement in Arabic script typesetting by means of the computer, Scholarly Publishing Vol. 8, No. 2, 1977, pp. 142&#x2013;150.
+        </unstructured_citation></citation>
+        <citation key="MacKay-pixels-92"><unstructured_citation>
+          Pierre A. MacKay, Looking at the Pixels. Quality Control for 300 dpi Laser Printer Fonts, Especially Metafonts, in [109, pp. 205&#x2013;217 (1991)].
+        </unstructured_citation></citation>
+        <citation key="minitelIEEE-93"><unstructured_citation>
+          Julien Mailland and Kevin Driscoll, Minitel: The Online World France Built Before the Web, 20 June 2017. https://spectrum.ieee.org/minitel-the-online-world-france-built-before-the-web
+        </unstructured_citation></citation>
+        <citation key="Mandel-telephone-94"><unstructured_citation>
+          Ladislas Mandel, Un caract&#x00e8;re pour annuaires t&#x00e9;l&#x00e9;phoniques, Communication et langages, n&#x00b0; 39, 1979, pp. 51&#x2013;61.
+        </unstructured_citation></citation>
+        <citation key="Mandel-telematique-95"><unstructured_citation>
+          Ladislas Mandel, Naissance d&#x2019;une &#x00e9;criture &#x2013; R&#x00e9;flexions sur la typographie et la t&#x00e9;l&#x00e9;matique, dans L&#x2019;&#x00e9;criture t&#x00e9;l&#x00e9;matique, ann&#x00e9;es z&#x00e9;ro [35, pp. 41&#x2013;49].
+        </unstructured_citation></citation>
+        <citation key="Mandel-pouvoir-96"><unstructured_citation>
+          Ladislas Mandel, Du pouvoir de l&#x2019;&#x00e9;criture, Atelier Perrousseaux &#x00e9;d., 1998.
+        </unstructured_citation></citation>
+        <citation key="Marchand-Minitel-97"><unstructured_citation>
+          Marie Marchand, La Grande Aventure du Minitel, Librairie Larousse, 1987.
+        </unstructured_citation></citation>
+        <citation key="Mathews-Bell-98"><unstructured_citation>
+          M. V. Mathews, Carol Lochbaum, and Judith A. Moss, Array: Three Fonts of Computer-drawn Letters, The Journal of Typographic Research, Vol. 1, No. 4, Oct. 1967, pp. 345&#x2013;356. https://journals.uc.edu/index.php/vl/article/view/5008
+        </unstructured_citation></citation>
+        <citation key="McJones-Alto-99"><unstructured_citation>
+          Paul McJones, Xerox Alto file system archive, Computer History Museum, last revised 9 Nov. 2017. https://xeroxalto.computerhistory.org
+        </unstructured_citation></citation>
+        <citation key="ITSYLF-Vargo-100"><unstructured_citation>
+          H.W. Mergler and P.M. Vargo, One Approach to Computer Assisted Letter Design, The Journal of Typographic Research, Vol. 2, No. 4, Oct. 1968, pp. 299&#x2013;322. https://journals.uc.edu/index.php/vl/article/view/5032
+        </unstructured_citation></citation>
+        <citation key="Morison-scripts-101"><unstructured_citation>
+          Stanley Morison, On Some Italian Scripts of the XV and XVI Centuries, in Letter forms, typographic and scriptorial: Two essays on their classification, history, and bibliography, Typophiles, pp. 95&#x2013;129, 1968.
+        </unstructured_citation></citation>
+        <citation key="Bio-Frutiger-102"><unstructured_citation>
+          Heidrun Osterer and Philipp Stamm, Adrian Frutiger &#x2013; Caract&#x00e8;res: L&#x2019;&#x0153;uvre Compl&#x00e8;te, Walter de Gruyter, Switzerland, 2012.
+        </unstructured_citation></citation>
+        <citation key="victor-punk-103"><unstructured_citation>
+          Victor Ostromoukhov and Jacques Andr&#x00e9;, Punk : de Metafont &#x00e0; PostScript, Cahiers GUTenberg, n&#x00b0; 4 (1989), pp. 23&#x2013;28. http://numdam.org/item/CG_1989___4_23_0/
+        </unstructured_citation></citation>
+        <citation key="comprehensive-Symbol-104"><unstructured_citation>
+          Scott Pakin, The Comprehensive LaTeX Symbol List, 2021. https://ctan.org/pkg/comprehensive
+        </unstructured_citation></citation>
+        <citation key="Phillips-periph-105"><unstructured_citation>
+          Arthur Phillips, Computer Peripherals &#x0026; Typesetting, London, Her Majesty&#x2019;s Stationery Office, 1968.
+        </unstructured_citation></citation>
+        <citation key="Pratt-conics-106"><unstructured_citation>
+          Vaughan Pratt, Techniques for conic splines, ACM SIGGRAPH Computer Graphics, Vol. 19, No. 3, July 1985, pp. 151&#x2013;159. https://doi.org/10.1145/325165.325225
+        </unstructured_citation></citation>
+        <citation key="Randall-107"><unstructured_citation>
+          Lilian M.C. Randall, A Nineteenth Century &#x2018;Medieval&#x2019; Prayerbook Woven in Lyon, in Art the Ape of Nature: Studies in Honor of H.W. Janson, Moshe Barasch, Lucy F. Sandler (eds), New York, NY: Harry N. Abrams, 1981, pp. 651&#x2013;668.
+        </unstructured_citation></citation>
+        <citation key="Reid-bib-108"><unstructured_citation>
+          Brian K. Reid and David Hanson, An annotated bibliography of background material on text manipulation, Proceedings of the ACM SIGPLAN SIGOA Symposium on Text Manipulation, ACM SIGPLAN Notices, Vol. 16, No. 6, June 1981, pp. 157&#x2013;160. https://doi.org/10.1145/800209.806467
+        </unstructured_citation></citation>
+        <citation key="RIDT-109"><unstructured_citation>
+          RIDT, conference series proceedings: &#x2022;Raster Imaging and Digital Typography, Lausanne, Oct. 1989 (Jacques Andr&#x00e9; and Roger Hersch, eds.), Cambridge University Press, 1989. https://books.google.com/books?id=mj09AAAAIAAJ &#x2022;Raster Imaging and Digital Typography II, Boston, Oct. 1991 (Robert A. Morris and Jacques Andr&#x00e9;, eds.), Cambridge University Press, 1991. https://books.google.com/books?id=Q9KtGcpfNgUC &#x2022;Raster Imaging and Digital Typography, special issue of Electronic Publishing Origination Dissemination and Design, (Jacques Andr&#x00e9;, Jakob Gonczarowski, and Richard Southall, eds.), Wiley, 1994. https://books.google.com/books?id=gJcVAQAAIAAJ &#x2022;Electronic Publishing, Artistic Imaging, and Digital Typography (Roger Hersch, Jacques Andr&#x00e9;, and Heather Brown, eds.), Lecture Notes in Computer Science #1375, Springer-Verlag, 1998. https://books.google.com/books?id=bo453EDNBp4C
+        </unstructured_citation></citation>
+        <citation key="Romano-110"><unstructured_citation>
+          Frank Romano (with Miranda Mitrano), History of Desktop Publishing, Oak Knoll Press, 2019.
+        </unstructured_citation></citation>
+        <citation key="Rubinstein-DT-111"><unstructured_citation>
+          Richard Rubinstein, Digital Typography&#x2014;an introduction to type and composition for computer system design, Reading, MA: Addison-Wesley, 1988.
+        </unstructured_citation></citation>
+        <citation key="Ruggles-systems-112"><unstructured_citation>
+          Lynn Ruggles, Letterform Design Systems, Stanford University Technical Report STAN-CS-83-971, 1973. http://i.stanford.edu/pub/cstr/reports/cs/tr/83/971/CS-TR-83-971.pdf
+        </unstructured_citation></citation>
+        <citation key="Hershey-exemples-113"><unstructured_citation>
+          Stewart C. Russell, Hershey Font Outlines, May 2014. https://scruss.com/wordpress/wp-content/uploads/2014/05/hershey_samples.pdf
+        </unstructured_citation></citation>
+        <citation key="Seybold-microed-114"><unstructured_citation>
+          John Seybold and Fritz Dressler, Publishing From the Desktop, New York, NY: Bantam Books, 1987. https://archive.org/details/publishingfromde0000seyb
+        </unstructured_citation></citation>
+        <citation key="Southall-interfaces-115"><unstructured_citation>
+          Richard Southall, Interfaces between the designer and the document, in Structured documents (Jacques Andr&#x00e9;, Richard Furuta, and Vincent Quint, eds.), Cambridge University Press, 1989, pp. 119&#x2013;131. https://dl.acm.org/doi/10.5555/73173.73179
+        </unstructured_citation></citation>
+        <citation key="Rockies-EP98-116"><unstructured_citation>
+          Richard Southall, Metafont in the Rockies: The Colorado Typemaking Project, in EP&#x2019;98 [109, pp. 167&#x2013;180 (1998)]; https://link.springer.com/chapter/10.1007%2FBFb0053270. Republished in Computers and Typography 2 (Rosemary Sassoon, ed.), Intellect Books, 2002; https://books.google.com?id=wdYmvQD5C8IC
+        </unstructured_citation></citation>
+        <citation key="Southall-printers-117"><unstructured_citation>
+          Richard Southall, Printer&#x2019;s Type in the Twentieth Century&#x2014;Manufacturing and Design Methods, The British Library/Oak Knoll Press, 2005.
+        </unstructured_citation></citation>
+        <citation key="Sproull-XeroxFonts-118"><unstructured_citation>
+          Bob Sproull, Font Representations and Formats, Internal note, Xerox PARC, Mar. 1977. https://xeroxparcarchive.computerhistory.org/indigo/printingdocs/.FONTFORMATS.PRESS!1.pdf
+        </unstructured_citation></citation>
+        <citation key="Siegel-euler-119"><unstructured_citation>
+          David R. Siegel, The Euler Project at Stanford, The Department of Computer Science, Stanford University, Stanford, 1985.
+        </unstructured_citation></citation>
+        <citation key="Sudweeks-elliptical-120"><unstructured_citation>
+          David Sudweeks, Type Trends: Superelliptical Type, FontShop Typographic Trends, Nov. 2012. https://fontshopblog.wordpress.com/2012/11/22/type-trends-superelliptical-type
+        </unstructured_citation></citation>
+        <citation key="Tufte-121"><unstructured_citation>
+          Edward Tufte, Visual Explanations&#x2014;Images and Quantities, Evidence and Narrative, Cheshire, CT: Graphic Press, 1997.
+        </unstructured_citation></citation>
+        <citation key="Unger-Visible-122"><unstructured_citation>
+          Gerard Unger, The Design of a Typeface, Visible Language, Vol. 13, No. 2, Apr. 1979, pp. 134&#x2013;149. https://journals.uc.edu/index.php/vl/article/view/5266
+        </unstructured_citation></citation>
+        <citation key="Unger-MF-123"><unstructured_citation>
+          Gerard Unger, in Other Replies to Donald E. Knuth&#x2019;s article &#x201c;The Concept of a Meta-Font&#x201d;, Visible Language, Vol. 16, No. 4, Oct. 1982, pp. 353&#x2013;356. https://journals.uc.edu/index.php/vl/issue/view/360
+        </unstructured_citation></citation>
+        <citation key="VanDam-bib-124"><unstructured_citation>
+          Andries Van Dam and Eric E. Rice, On-line Text Editing: A Survey, Computing Surveys, Vol. 3, No. 3, Sept. 1971, pp. 93&#x2013;114. https://doi.org/10.1145/356589.356591
+        </unstructured_citation></citation>
+        <citation key="Wang-Bigelow-125"><unstructured_citation>
+          Yue Wang, Interview with Charles Bigelow, TUGboat, Vol. 34 (2013), No. 2, pp. 136&#x2013;167. https://tug.org/TUGboat/tb34-2/tb107bigelow-wang.pdf
+        </unstructured_citation></citation>
+        <citation key="Westerby-126"><unstructured_citation>
+          Matthew Westerby, The Woven Prayer Book: Cocoon to Codex, Satellite Series. Paris, France &#x0026; Chicago, IL, USA: Les Enluminures, 2019.
+        </unstructured_citation></citation>
+        <citation key="Hershey-tables-127"><unstructured_citation>
+          Norman M. Wolcott and Joseph Hilsenrath, A Contribution to Computer Typesetting Techniques: Tables of coordinates for Hershey&#x2019;s Repertory of Occidental Type Fonts and Graphic Symbols, National Bureau of Standards, NBS Special Publication 424, Apr. 1976. https://scruss.com/wordpress/wp-content/uploads/2014/04/tables_of_coordinates_for_hersheys_repertory_of_occidental_type_fonts-wolcott_and_hilsenrath.pdf
+        </unstructured_citation></citation>
+        <citation key="wolcott-ftn-hershey-128"><unstructured_citation>
+          Norman M. Wolcott, FORTRAN IV Enhanced Character Graphics, National Bureau of Standards, Institute for Computer Sciences and Technology, NBS Special Publication 500-32, Apr. 1978, 64 pp. https://archive.org/details/fortranivenhance5003wolc
+        </unstructured_citation></citation>
+        <citation key="Zapf-philo-129"><unstructured_citation>
+          Hermann Zapf, Hermann Zapf and His Design Philosophy, Chicago, IL: Society of Typographic Arts, 1987. Introduction by Carl Zahn.
+        </unstructured_citation></citation>
+        <citation key="Zapf-Antiq-130"><unstructured_citation>
+          Herman Zapf, Vom Formgesetz der Renaissance-Antiqua, Der Polygraph, Heft 21.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Typographers' Inn</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Peter</given_name>
+          <surname>Flynn</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>58</first_page>
+        <last_page>59</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136inn</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136inn.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>An artist's journey on a TUGboat</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Tine</given_name>
+          <surname>Wilde</surname>
+          <ORCID>https://orcid.org/0009-0008-7390-447X</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>60</first_page>
+        <last_page>63</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136wilde-art</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136wilde-art.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Boh52-1"><unstructured_citation>
+          D. Bohm. A Suggested Interpretation of the Quantum Theory in Terms of &#x201c;Hidden&#x201d; variables. I. Physical Review 85(2):166&#x2013;179, Jan. 1952.
+        </unstructured_citation></citation>
+        <citation key="Boh52a-2"><unstructured_citation>
+          D. Bohm. A Suggested Interpretation of the Quantum Theory in Terms of &#x201c;Hidden&#x201d; variables. II. Physical Review 85(2):180&#x2013;193, Jan. 1952.
+        </unstructured_citation></citation>
+        <citation key="Boh80-3"><unstructured_citation>
+          D. Bohm. Wholeness and the Implicate Order. Routledge &#x0026; Kegan Paul Ltd., 1980.
+        </unstructured_citation></citation>
+        <citation key="Boh87-4"><unstructured_citation>
+          D. Bohm. Hidden variables and the implicate order. In Quantum Implications. Essays in honour of David Bohm, B. Hiley, F.D. Peat, eds., ch. 2, pp. 33&#x2013;45. Routledge &#x0026; Kegan Paul Ltd., 1987.
+        </unstructured_citation></citation>
+        <citation key="Sch49-5"><unstructured_citation>
+          A. Einstein. Reply to Criticisms. In Albert Einstein: Philosopher&#x2013;Scientist, P. Schlipp, ed., The Library of Living Philosophers, pp. 665&#x2013;688. La Salle, Ill.: Open Court, 1949.
+        </unstructured_citation></citation>
+        <citation key="Mit04-6"><unstructured_citation>
+          F. Mittelbach, M. Goossens. The LaTeX Companion. Addison-Wesley, 2nd ed., 2004.
+        </unstructured_citation></citation>
+        <citation key="Wil08-7"><unstructured_citation>
+          T. Wilde. Remodel[l]ing Reality. Wittgenstein&#x2019;s &#x00FC;bersichtliche Darstellung &#x0026; the phenomenon of Installation in visual art. Wilde Oceans, 2008.
+        </unstructured_citation></citation>
+        <citation key="Wil21-8"><unstructured_citation>
+          T. Wilde. An Enquiry into the Nature of our Relationship with Reality. Pari Perspectives Issue 10(Consciousness):122&#x2013;128, Dec. 2021.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The DuckBoat&#x2014;Beginners' Pond: No more table nightmares with <tt>tabularray</tt>!</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Carla</given_name>
+          <surname>Maggi</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>64</first_page>
+        <last_page>70</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136duck-tabularray</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136duck-tabularray.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="abraham-1"><unstructured_citation>
+          P. Abraham. The sudoku package. Version 1.0.1. https://ctan.org/pkg/sudoku
+        </unstructured_citation></citation>
+        <citation key="lyu-2"><unstructured_citation>
+          J. Lyu. Tabularray&#x2014;Typeset Tabulars and Arrays with LaTeX3. Version 2023A. https://ctan.org/pkg/tabularray
+        </unstructured_citation></citation>
+        <citation key="sihler-3"><unstructured_citation>
+          F. Sihler. The TikZpingus package. Version 1.0. https://ctan.org/pkg/tikzpingus
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Metadata in journal publishing</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Joppe</given_name>
+          <surname>Bos</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Kevin</given_name>
+          <surname>McCurley</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>71</first_page>
+        <last_page>76</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136bos-metadata</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136bos-metadata.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="bosman_jeroen_2021_4558704-1"><unstructured_citation>
+          J. Bosman, J.E. Frantsv&#x00e5;g, et al. OA diamond journals study. Part 1: Findings, Mar. 2021. This report was supported by Science Europe and cOAlition S. https://doi.org/10.5281/zenodo.4558704
+        </unstructured_citation></citation>
+        <citation key="funder-2"><unstructured_citation>
+          Crossref funder registry. https://crossref.org/services/funder-registry/
+        </unstructured_citation></citation>
+        <citation key="xmp2023-3"><unstructured_citation>
+          U. Fischer, F. Mittelbach. Adding XMP metadata in LaTeX. TUGboat 135(3):263&#x2013;267, 2022. https://doi.org/10.47397/tb/43-3/tb135fischer-xmp
+        </unstructured_citation></citation>
+        <citation key="f1000-4"><unstructured_citation>
+          A. Grossmann, B. Brembs. Current market rates for scholarly publishing services. F1000Research, 2021. https://doi.org/10.12688/f1000research.27468.2
+        </unstructured_citation></citation>
+        <citation key="haak2012orcid-5"><unstructured_citation>
+          L.L. Haak, M. Fenner, et al. ORCID: a system to uniquely identify researchers. Learned Publishing 25(4):259&#x2013;264, 2012.
+        </unstructured_citation></citation>
+        <citation key="hottenrott2021rise-6"><unstructured_citation>
+          H. Hottenrott, M.E. Rose, C. Lawson. The rise of multiple institutional affiliations in academia. Journal of the Association for Information Science and Technology 72(8):1039&#x2013;1058, 2021. https://doi.org/10.1002/asi.24472
+        </unstructured_citation></citation>
+        <citation key="ROR-7"><unstructured_citation>
+          R. Lammey. Solutions for identification problems: a look at the research organization registry. Science Editing 7(1):65&#x2013;69, 2020.
+        </unstructured_citation></citation>
+        <citation key="latex-8"><unstructured_citation>
+          L. Lamport. LaTeX: A Document Preparation System. Addison-Wesley Publishing Company, first ed., 1986.
+        </unstructured_citation></citation>
+        <citation key="JATSschema-9"><unstructured_citation>
+          National Center for Biotechnology Information (NCBI). Journal publishing tag library NISO JATS version 1.3. https://jats.nlm.nih.gov/publishing/tag-library/1.3/, June 2021.
+        </unstructured_citation></citation>
+        <citation key="nihfunding-10"><unstructured_citation>
+          National Institutes of Health. Communicating and acknowledging federal funding, 2021. https://grants.nih.gov/policy/federal-funding.htm
+        </unstructured_citation></citation>
+        <citation key="credit-11"><unstructured_citation>
+          NISO. CRediT: Contributor roles taxonomy. https://credit.niso.org
+        </unstructured_citation></citation>
+        <citation key="ojs-12"><unstructured_citation>
+          Open Journal Systems. https://pkp.sfu.ca/ojs/
+        </unstructured_citation></citation>
+        <citation key="paskin2010digital-13"><unstructured_citation>
+          N. Paskin. Digital object identifier (DOI&#x00AE;) system. Encyclopedia of library and information sciences 3:1586&#x2013;1592, 2010.
+        </unstructured_citation></citation>
+        <citation key="xmpextension-14"><unstructured_citation>
+          Technical Note 0009: XMP Extension Schemas in PDF/A-1. https://www.pdfa.org/resource/technical-note-tn-0009-xmp-extension-schemas-in-pdfa-1/
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>LaTeX anniversaries&#x2014;A look in two directions</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Frank</given_name>
+          <surname>Mittelbach</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>77</first_page>
+        <last_page>86</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136mitt-history</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136mitt-history.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Braams:TB12-2-291-1"><unstructured_citation>
+          Johannes Braams. Babel, a multilingual style-option system for use with LaTeX&#x2019;s standard document styles. TUGboat, 12(2):291&#x2013;301, 1991. The babel package was originally a collection of document-style options to support different languages. An update was published in TUGboat, 14(1):60&#x2013;62, April 1993. https://tug.org/TUGboat/tb12-2/tb32braa.pdf https://tug.org/TUGboat/tb14-1/tb38braa.pdf
+        </unstructured_citation></citation>
+        <citation key="Carlisle:TB17-1-67-2"><unstructured_citation>
+          David Carlisle. A LaTeX tour, Part 1: The basic distribution. TUGboat, 17(1):67&#x2013;73, 1996. A &#x201c;guided tour&#x201d; around the files in the basic LaTeX distribution. File names and paths relate to the file hierarchy of the CTAN archives. https://tug.org/TUGboat/tb17-1/tb50carl.pdf
+        </unstructured_citation></citation>
+        <citation key="Carlisle:TB17-3-321-3"><unstructured_citation>
+          &#x2014;. A LaTeX tour, Part 2: The tools and graphics distributions. TUGboat, 17(3):321&#x2013;326, 1996. A &#x201c;guided tour&#x201d; around the &#x201c;tools&#x201d; and &#x201c;graphics&#x201d; packages. Note that Lamport&#x2019;s manual [25] assumes that at least the graphics distribution is available with standard LaTeX. https://tug.org/TUGboat/tb17-3/tb52carl.pdf
+        </unstructured_citation></citation>
+        <citation key="Carlisle:TB18-1-48-4"><unstructured_citation>
+          &#x2014;. A LaTeX tour, Part 3: mfnfss, psnfss and babel. TUGboat, 18(1):48&#x2013;55, 1997. A &#x201c;guided tour&#x201d; through three more distributions that are part of the standard LaTeX system. The mfnfss distribution provides LaTeX support for some popular Metafont-produced fonts that do not otherwise have any LaTeX interface. The psnfss distribution consists of LaTeX packages giving access to PostScript fonts. The babel distribution provides LaTeX with multilingual capabilities. https://tug.org/TUGboat/tb18-1/tb54carl.pdf
+        </unstructured_citation></citation>
+        <citation key="Carlisle:TB21-3-193-5"><unstructured_citation>
+          &#x2014;. XMLTEX: A non validating (and not 100% conforming) namespace aware XML parser implemented in TeX. TUGboat, 21(3):193&#x2013;199, 2000. XMLTEX is a an XML parser and typesetter implemented in TeX, which by default uses the LaTeX kernel to provide typesetting functionality. https://tug.org/TUGboat/tb21-3/tb68carl.pdf
+        </unstructured_citation></citation>
+        <citation key="Carlisle:MathML4-6"><unstructured_citation>
+          David Carlisle, editor. Mathematical Markup Language (MathML) Version 4.0. W3C, 1st edition, 2023. This is the draft specification for a new version of the Mathematical Markup Language; the current version is 3.0 [7]. MathML4 extensions primarily relate to improving accessibility, with new attributes for improving audio rendering. https://www.w3.org/TR/mathml4/
+        </unstructured_citation></citation>
+        <citation key="Carlisle:MathML3e-7"><unstructured_citation>
+          David Carlisle, Patrick Ion, and Robert Miner, editors. Mathematical Markup Language (MathML) Version 3.0. W3C, 2nd edition, 2014. This is the current specification defining the Mathematical Markup Language; the upcoming version will be [6]. MathML is an XML vocabulary for mathematics, designed for use in browsers and as a communication language between computer algebra systems. The goal of MathML is to enable mathematics to be served, received, and processed on the World Wide Web, just as HTML has enabled this functionality for text. https://www.w3.org/TR/MathML3/
+        </unstructured_citation></citation>
+        <citation key="Carlisle:MathML2e-8"><unstructured_citation>
+          David Carlisle, Patrick Ion, Robert Miner, and Nico Poppelier, editors. Mathematical Markup Language (MathML) Version 2.0. W3C, 2nd edition, 2003. This is the previous version of the MathML standard [7]. https://www.w3.org/TR/MathML2/
+        </unstructured_citation></citation>
+        <citation key="Carlisle:TB18-4-303-9"><unstructured_citation>
+          David Carlisle, Chris Rowley, and Frank Mittelbach. The LaTeX3 Programming Language&#x2014;a proposed system for TeX macro programming. TUGboat, 18(4):303&#x2013;308, 1997. Initial proposals for a radically new syntax and software tools. Most of them are now part of the LaTeX format as the L3 programming layer. https://tug.org/TUGboat/tb18-4/tb57rowl.pdf
+        </unstructured_citation></citation>
+        <citation key="pdf-ua-nutshell-10"><unstructured_citation>
+          Olaf Dr&#x00fc;mmer and Bettina Chang. PDF/UA in a Nutshell&#x2014;Accessible documents with PDF. PDF Association, 2013. A nice introduction to the ISO standard 14289-1 for universal accessibility, also known as PDF/UA [55]. It provides key facts, e.g., the requirements of the standard, the current legal situation, etc. https://pdfa.org/resource/pdfua-in-a-nutshell/
+        </unstructured_citation></citation>
+        <citation key="A-W:VEi91-11"><unstructured_citation>
+          Victor Eijkhout. TeX by Topic, A TeXnician&#x2019;s Reference. Lehmanns Media, Berlin, 2014. ISBN 978-3-86541-590-5. Reprint with corrections. Initially published in 1991 by Addison-Wesley. Also available free of charge from the author in PDF format. A systematic reference manual for the experienced TeX user. The book offers a comprehensive treatment of every aspect of TeX (not LaTeX!), with detailed explanations of the mechanisms underlying TeX&#x2019;s working, as well as numerous examples of TeX programming techniques. https://eijkhout.net/tex/tex-by-topic.html
+        </unstructured_citation></citation>
+        <citation key="Goossens:1994:TLC-12"><unstructured_citation>
+          Michel Goossens, Frank Mittelbach, and Alexander Samarin. The LaTeX Companion. Tools and Techniques for Computer Typesetting. Addison-Wesley, Reading, MA, USA, 1994. ISBN 0-201-54199-8. The first edition of this book. The second edition [42] was published ten years later in 2004 and the third edition [43] in 2023.
+        </unstructured_citation></citation>
+        <citation key="Knuth:1979:TMN-13"><unstructured_citation>
+          Donald E. Knuth. TeX and Metafont&#x2014;New Directions in Typesetting. Digital Press, Bedford, MA, USA, 1979. ISBN 0-932376-02-9. Contains an article on &#x201c;Mathematical Typography&#x201d;, describing the author&#x2019;s motivation for starting to work on TeX and the early history of computer typesetting. Describes early (now obsolete) versions of TeX and Metafont.
+        </unstructured_citation></citation>
+        <citation key="Knuth:ct-a-14"><unstructured_citation>
+          &#x2014;. The TeXbook, volume A of Computers and Typesetting. Addison-Wesley, Reading, MA, USA, 1986. ISBN 0-201-13447-0. Jubilee 2021 edition, twenty-fifth printing with corrections. The definitive user&#x2019;s guide and complete reference manual for TeX. A good secondary reading, covering the same grounds, is [11.
+        </unstructured_citation></citation>
+        <citation key="Knuth:ct-b-15"><unstructured_citation>
+          &#x2014;. TeX: The Program, volume B of Computers and Typesetting. Addison-Wesley, Reading, MA, USA, 1986. ISBN 0-201-13437-3. Jubilee 2021 edition, thirteenth printing with corrections. The complete source code for the TeX program, typeset with several indices.
+        </unstructured_citation></citation>
+        <citation key="Knuth:ct-c-16"><unstructured_citation>
+          &#x2014;. The Metafontbook, volume C of Computers and Typesetting. Addison-Wesley, Reading, MA, USA, 1986. ISBN 0-201-13445-4 (hardcover), 0-201-13444-6 (paperback). Jubilee 2021 edition, twelfth printing with corrections. The user&#x2019;s guide and reference manual for Metafont, the companion program to TeX for designing fonts.
+        </unstructured_citation></citation>
+        <citation key="Knuth:ct-d-17"><unstructured_citation>
+          &#x2014;. Metafont: The Program, volume D of Computers and Typesetting. Addison-Wesley, Reading, MA, USA, 1986. ISBN 0-201-13438-1. Jubilee 2021 edition, eleventh printing with corrections. The complete source code listing of the Metafont program.
+        </unstructured_citation></citation>
+        <citation key="Knuth:ct-e-18"><unstructured_citation>
+          &#x2014;. Computer Modern Typefaces, volume E of Computers and Typesetting. Addison-Wesley, Reading, MA, USA, 1986. ISBN 0-201-13446-2. Jubilee 2021 edition, eleventh printing with corrections. More than 500 Greek and Roman letterforms, together with punctuation marks, numerals, and many mathematical symbols, are graphically depicted. The Metafont code to generate each glyph is given and it is explained how, by changing the parameters in the Metafont code, all characters in the Computer Modern family of typefaces can be obtained.
+        </unstructured_citation></citation>
+        <citation key="Knuth:TACP-19"><unstructured_citation>
+          &#x2014;. The Art of Computer Programming, volumes 1&#x2013;4A and Fascicles 5&#x2013;6. Addison-Wesley, Reading, MA, USA, 1998&#x2013;2019. ISBN 0-201-89683-4, 0-201-03822-6, 0-201-03803-X, 0-201-03804-8, 0-13-467179-1, and 0-13-439760-6. Donald Knuth&#x2019;s major work on algorithms and data structures for efficient programming.
+        </unstructured_citation></citation>
+        <citation key="Knuth:1999:DT-20"><unstructured_citation>
+          &#x2014;. Digital Typography. CSLI Publications, Stanford, CA, USA, 1999. ISBN 1-57586-011-2 (cloth), 1-57586-010-4 (paperback). A comprehensive collection of Knuth&#x2019;s writings on TeX and typography. While many articles in this collection are available separately on the Web, not all of them are, and having them all in one place for studying is an additional benefit.
+        </unstructured_citation></citation>
+        <citation key="Knuth:1999:DT:ComputersAndTypesetting-21"><unstructured_citation>
+          &#x2014;. Computers and typesetting. In Knuth [20, pp. 555&#x2013;562]. Remarks presented by Knuth at the Computer Museum, Boston, Massachusetts, on 21 May 1986, at the &#x201c;coming-out&#x201d; party to celebrate the completion of TeX. Originally published as: https://tug.org/TUGboat/tb07-2/tb14knut.pdf
+        </unstructured_citation></citation>
+        <citation key="Knuth:1999:DT:NewVersions-22"><unstructured_citation>
+          &#x2014;. The new versions of TeX and Metafont. In Knuth [20, pp. 563&#x2013;570]. Knuth explains how he was convinced at the TUG Meeting at Stanford in 1989 to make one further set of changes to TeX and Metafont to extend these programs to support 8-bit character sets. He goes on to describe the various changes he introduced to implement this feature, as well as a few other improvements. Originally published as: https://tug.org/TUGboat/tb10-3/tb25knut.pdf
+        </unstructured_citation></citation>
+        <citation key="Knuth:1999:DT:futureofTeX-23"><unstructured_citation>
+          &#x2014;. The future of TeX and Metafont. In Knuth [20, pp. 571&#x2013;572]. In this article Knuth announces that his work on TeX, Metafont, and Computer Modern has &#x201c;come to an end&#x201d; and that he will make further changes only to correct extremely serious bugs. Originally published as: https://tug.org/TUGboat/tb11-4/tb30knut.pdf
+        </unstructured_citation></citation>
+        <citation key="Knuth:1999:DT:breakingparagraphs-24"><unstructured_citation>
+          Donald E. Knuth and Michael F. Plass. Breaking paragraphs into lines. In Knuth [20, pp. 67&#x2013;155]. This article, originally published in 1981, addresses the problem of dividing the text of a paragraph into lines of approximately equal length. The basic algorithm considers the paragraph as a whole and introduces the (now well-known TeX) concepts of &#x201c;boxes&#x201d;, &#x201c;glue&#x201d;, and &#x201c;penalties&#x201d; to find optimal breakpoints for the lines. The paper describes the dynamic programming technique used to implement the algorithm.
+        </unstructured_citation></citation>
+        <citation key="Lamport:1994:LDP-25"><unstructured_citation>
+          Leslie Lamport. LaTeX: A Document Preparation System: User&#x2019;s Guide and Reference Manual. Addison-Wesley, Reading, MA, USA, 2nd edition, 1994. ISBN 0-201-52983-1. Reprinted with corrections in 1996. The ultimate reference for basic user-level LaTeX by the creator of LaTeX 2.09. It complements the material presented in this book.
+        </unstructured_citation></citation>
+        <citation key="l3team:latexnews-26"><unstructured_citation>
+          LaTeX Project Team. LaTeX news. An issue of LaTeX News is released with each LaTeX2e release, highlighting changes since the last release. There is also a document combining all issues since 1994, which offers a good overview about the history of LaTeX2e as well as providing an easy way to find information on all major updates and extensions that have been implemented over the years. Locally available via: texdoc ltnews
+        </unstructured_citation></citation>
+        <citation key="l3team:latexbug-27"><unstructured_citation>
+          &#x2014;. Bugs in LaTeX software. Website. The bug reporting and tracking service run by the LaTeX team as part of the LaTeX2e maintenance activity. https://www.latex-project.org/bugs/
+        </unstructured_citation></citation>
+        <citation key="l3team:interface3:2021-28"><unstructured_citation>
+          &#x2014;. The LaTeX3 Interfaces, 2023. The reference manual for the L3 programming layer, which has been part of the LaTeX format since 2020 and thus available for package development&#x2014;the way for LaTeX coding going forward. Locally available via: texdoc interface3
+        </unstructured_citation></citation>
+        <citation key="l3team:lppl-29"><unstructured_citation>
+          &#x2014;. The LaTeX project public license (version 1.3c), 2008. The Open Source License used by the core LaTeX2e distribution and many contributed packages. See [34] for background and history. https://www.latex-project.org/lppl/
+        </unstructured_citation></citation>
+        <citation key="Mittelbach:TB11-3-337-30"><unstructured_citation>
+          Frank Mittelbach. E-TeX: Guidelines for future TeX Extensions. TUGboat, 11(3):337&#x2013;345, 1990. The output of TeX is compared with that of hand-typeset documents. It is shown that many important concepts of high-quality typesetting are not supported and that further research to design a &#x201c;successor&#x201d; typesetting system to TeX should be undertaken. A review of the findings, 23 years later, is provided in [35]. https://tug.org/TUGboat/tb11-3/tb29mitt.pdf
+        </unstructured_citation></citation>
+        <citation key="Mittelbach:TB18-4-309-31"><unstructured_citation>
+          &#x2014;. A regression test suite for LaTeX2e. TUGboat, 18(4):309&#x2013;311, 1997. Description of the concepts and implementation of the test suite used to test for unexpected side effects after changes to the LaTeX kernel. One of the most valuable maintenance tools for keeping LaTeX2e stable. https://tug.org/TUGboat/tb18-4/tb57mitt.pdf
+        </unstructured_citation></citation>
+        <citation key="Mittelbach:TB18-3-199-32"><unstructured_citation>
+          &#x2014;. Language Information in Structured Documents: Markup and rendering&#x2014;Concepts and problems. In &#x2018;International Symposium on Multilingual Information Processing&#x2019;, pp. 93&#x2013;104. Tsukuba, Japan, 1997. Invited paper. Slightly extended in TUGboat 18(3):199&#x2013;205, 1997. This paper discusses the structure and processing of multilingual documents, both at a general level and in relation to a proposed extension to standard LaTeX. https://tug.org/TUGboat/tb18-3/tb56lang.pdf
+        </unstructured_citation></citation>
+        <citation key="Mittelbach:TB21-3-278-33"><unstructured_citation>
+          &#x2014;. Formatting documents with floats: A new algorithm for LaTeX2e. TUGboat, 21(3):278&#x2013;290, 2000. Descriptions of features and concepts of a new output routine for LaTeX that can handle spanning floats in multicolumn page design. https://tug.org/TUGboat/tb21-3/tb68mittel.pdf
+        </unstructured_citation></citation>
+        <citation key="Mittelbach:TB32-1-83-34"><unstructured_citation>
+          &#x2014;. Reflections on the history of the LaTeX Project Public License (LPPL)&#x2014;A software license for LaTeX and more. TUGboat, 32(1):83&#x2013;94, 2011. A review of the evolution of LaTeX world&#x2019;s predominant license [29]. https://tug.org/TUGboat/tb32-1/tb100mitt.pdf
+        </unstructured_citation></citation>
+        <citation key="Mittelbach:TB34-1-47-35"><unstructured_citation>
+          &#x2014;. E-TeX: Guidelines for future TeX Extensions &#x2014; revisited. TUGboat, 34(1):47&#x2013;63, 2013. This article compares the output of TeX with that of hand-typeset documents. This is a reassessment of the findings made 23 years earlier [30]. With the new engines the situation has improved, but even though there is now engine support for most problems, the majority of them still represent important and open research problems for high-quality automated typesetting. https://tug.org/TUGboat/tb34-1/tb106mitt.pdf
+        </unstructured_citation></citation>
+        <citation key="10.1145/2960811.2960820-36"><unstructured_citation>
+          &#x2014;. A general framework for globally optimized pagination. In &#x2018;Proceedings of the 2016 ACM Symposium on Document Engineering&#x2019;, DocEng&#x2019;16, pp. 11&#x2013;20. Association for Computing Machinery, New York, NY, USA, 2016. ISBN 978-1-4503-4438-8. This paper presents research results for globally optimized pagination using dynamic programming and discusses its theoretical background. It was awarded the &#x2018;ACM Best Paper Award&#x2019; at the DocEng 2016 conference. A greatly expanded version of this paper (37 pages) titled &#x2018;A General LuaTeX Framework for Globally Optimized Pagination&#x2019; was submitted to the Computational Intelligence (Wiley) in 2017 and accepted January 2018 [38]. https://www.latex-project.org/publications/indexbyyear/2016/
+        </unstructured_citation></citation>
+        <citation key="10.1145/3103010.3103015-37"><unstructured_citation>
+          &#x2014;. Effective floating strategies. In &#x2018;Proceedings of the 2017 ACM Symposium on Document Engineering&#x2019;, DocEng&#x2019;17, pp. 29&#x2013;38. Association for Computing Machinery, New York, NY, USA, 2017. ISBN 978-1-4503-4689-4. This paper presents an extension to the general framework for globally optimized pagination described [36]. The extended algorithm supports automatic placement of floats as part of the optimization using a flexible constraint model that allows for the implementation of typical typographic rules. https://www.latex-project.org/publications/indexbyyear/2017/
+        </unstructured_citation></citation>
+        <citation key="10.1111/coin.12165-38"><unstructured_citation>
+          &#x2014;. A general LuaTeX framework for globally optimized pagination. Computational Intelligence, 35(2):242&#x2013;284, 2019. This article is an extended version (37 pages) of the 2016 ACM article &#x2018;A General Framework for Globally Optimized Pagination&#x2019; [36], providing much more detail and additional research results. The peer-reviewed publication is now freely available. https://www.latex-project.org/publications/indexbyyear/2020/
+        </unstructured_citation></citation>
+        <citation key="l3team:expl-39"><unstructured_citation>
+          Frank Mittelbach, David Carlisle, and Chris Rowley. Experimental LaTeX code for class design. Vancouver, 1999. At the TeX Users Group conference in Vancouver the LaTeX project team gave a talk on models for user-level interfaces and designer-level interfaces in LaTeX3 [40]. Most of these ideas have been implemented in prototype implementations (e.g., template design, front matter handling, output routine, galley and paragraph formatting). The source code is documented and contains further explanations and examples; see also [33]. The underlying programming interfaces are since 2020 part of the LaTeX format as the L3 programming layer [28]. Articles: https://latex-project.org/publications/indexbytopic/l3-expl3; Code: https://github.com/latex3/latex3.
+        </unstructured_citation></citation>
+        <citation key="Carlisle:TB20-3-214-40"><unstructured_citation>
+          &#x2014;. New interfaces for LaTeX class design, Parts I and II. TUGboat, 20(3):214&#x2013;216, 1999. Some proposals for the first-ever interface to setting up and coding LaTeX classes. While all of them were implemented as experimental prototypes (see [39]), they have been developed at a time were computers were not powerful enough to enable them for general use. This has finally changed and several of these ideas are now making their reappearance as part of the &#x2018;LaTeX Tagged PDF&#x2019; project [47]. https://tug.org/TUGboat/tb20-3/tb64carl.pdf
+        </unstructured_citation></citation>
+        <citation key="feasibility-study-41"><unstructured_citation>
+          Frank Mittelbach, Ulrike Fischer, and Chris Rowley. LaTeX Tagged PDF Feasibility Evaluation. LaTeX Project, 2020. This is the feasibility study undertaken by the LaTeX team prior to initiating the multiyear project for automatically providing tagged PDF with LaTeX. It explains in detail both the project goals and the tasks that need to be undertaken and concludes with a detailed project plan. See also [47]. https://latex-project.org/publications/indexbytopic/pdf/
+        </unstructured_citation></citation>
+        <citation key="Mittelbach:2004:TLC-42"><unstructured_citation>
+          Frank Mittelbach, Michel Goossens, Johannes Braams, David Carlisle, and Chris Rowley. The LaTeX Companion. Tools and Techniques for Computer Typesetting. Addison-Wesley, Reading, MA, USA, 2nd edition, 2004. ISBN 0-201-36299-6. The second edition of this book. The contributing authors have changed over the years.
+        </unstructured_citation></citation>
+        <citation key="Mittelbach:2023:TLC-43"><unstructured_citation>
+          Frank Mittelbach with Ulrike Fischer. The LaTeX Companion, Parts I &#x0026; II. Tools and Techniques for Computer Typesetting. Addison-Wesley, Reading, MA, USA, 3nd edition, 2023. ISBN 978-0-13-816648-9. The third edition of this book, published as two-volume set. It is also available in digital formats. https://www.informit.com/store/latex-companion-parts-i-ii-3rd-edition-9780138166489
+        </unstructured_citation></citation>
+        <citation key="Mittelbach:TB35-3-287-44"><unstructured_citation>
+          Frank Mittelbach, Will Robertson, and LaTeX3 team. l3build&#x2014;A modern Lua test suite for TeX programming. TUGboat, 35(3):287&#x2013;293, 2014. The workflow environment used by the LaTeX Project Team and others. Supports concepts developed over the years including regression testing methods, distribution builds, uploads to CTAN, and installation support. https://tug.org/TUGboat/tb35-3/tb111mitt-l3build.pdf Locally available program documentation: texdoc l3build
+        </unstructured_citation></citation>
+        <citation key="Mittelbach:TB13-1-96-45"><unstructured_citation>
+          Frank Mittelbach and Chris Rowley. LaTeX 2.09 $&#x2194;$ LaTeX3. TUGboat, 13(1):96&#x2013;101, 1992. A brief sketch of the LaTeX3 Project, retracing its history and describing the structure of the system. An update appeared in TUGboat, 13(3):390&#x2013;391, October 1992. A call for volunteers to help in the development of LaTeX3 and a list of the various tasks appeared in TUGboat, 13(4):510&#x2013;515, December 1992. Now mainly of historical interest. https://tug.org/TUGboat/tb13-1/tb34mittl3.pdf
+        </unstructured_citation></citation>
+        <citation key="Mittelbach:1992:PQH-46"><unstructured_citation>
+          &#x2014;. The pursuit of quality: How can automated typesetting achieve the highest standards of craft typography? In C. Vanoirbeek and G. Coray, editors, &#x2018;EP92&#x2019;&#x2014;Proceedings of Electronic Publishing &#x2019;92, International Conference on Electronic Publishing, Document Manipulation, and Typography, Swiss Federal Institute of Technology, Lausanne, Switzerland, April 7&#x2013;10, 1992, pp. 261&#x2013;273. Cambridge University Press, New York, 1992. ISBN 0-521-43277-4. This paper compares high-quality craft typography with the state of the art in automated typesetting. It explains why the current paradigms of computerized typesetting will not serve for high-quality formatting and suggests directions for the further research necessary to improve the quality of computer-generated layout.
+        </unstructured_citation></citation>
+        <citation key="Mittelbach:2020:LTP-47"><unstructured_citation>
+          &#x2014;. LaTeX Tagged PDF &#x2014; a blueprint for a large project. TUGboat, 41(3):292&#x2013;298, 2020. An introduction and summary of the extended feasibility study [41] for the multiyear project &#x2018;LaTeX Tagged PDF&#x2019;. https://latex-project.org/publications/indexbytopic/pdf/
+        </unstructured_citation></citation>
+        <citation key="Mittelbach:TB10-4-681-48"><unstructured_citation>
+          Frank Mittelbach and Rainer Sch&#x00F6;pf. With LaTeX into the nineties. TUGboat, 10(4):681&#x2013;690, 1989. This article proposes a reimplementation of LaTeX that preserves the essential features of the current interface while taking into account the increasing needs of the various user communities. It also formulates some ideas for further developments. It was instrumental in the move from LaTeX 2.09 to LaTeX2e. https://tug.org/TUGboat/tb10-4/tb26mitt.pdf
+        </unstructured_citation></citation>
+        <citation key="Mittelbach:TB12-1-74-49"><unstructured_citation>
+          &#x2014;. Towards LaTeX 3.0. TUGboat, 12(1):74&#x2013;79, 1991. The objectives of the LaTeX3 project are described. The authors examine enhancements to LaTeX&#x2019;s user and style file interfaces that are necessary to keep pace with modern developments, such as SGML. They also review some internal concepts that need revision. https://tug.org/TUGboat/tb12-1/tb31mitt.pdf
+        </unstructured_citation></citation>
+        <citation key="Reid:CMU-CS-81-100-50"><unstructured_citation>
+          Brian Reid. Scribe: A Document Specification Language and its Compiler. Ph.D. thesis, Carnegie-Mellon University, Pittsburgh, PA 15213, 1980. The Ph.D. thesis that was one of the inspirations for LaTeX. http://reports-archive.adm.cs.cmu.edu/anon/scan/CMU-CS-81-100.pdf
+        </unstructured_citation></citation>
+        <citation key="Rowley:TB20-3-189-51"><unstructured_citation>
+          Chris Rowley. Models and languages for formatted documents. TUGboat, 20(3):189&#x2013;195, 1999. Explores many ideas around the nature of document formatting and how these can be modeled and implemented. https://tug.org/TUGboat/tb20-3/tb64rowl.pdf
+        </unstructured_citation></citation>
+        <citation key="Rowley:2001:LLA-52"><unstructured_citation>
+          &#x2014;. The LaTeX legacy: 2.09 and all that. In PODC&#x2019;01: &#x2018;Proceedings of the Twentieth Annual ACM Symposium on Principles of Distributed Computing 2001, Newport, Rhode Island, United States&#x2019;, pp. 17&#x2013;25. ACM Press, New York, NY, USA, 2001. ISBN 1-58113-383-9. Part of a celebration for Leslie Lamport&#x2019;s sixtieth birthday; a very particular account of the technical history and philosophy of TeX and LaTeX. https://www.latex-project.org/publications/indexbytopic/2e-concepts
+        </unstructured_citation></citation>
+        <citation key="Rowley:1997:AIR-53"><unstructured_citation>
+          Chris Rowley and Frank Mittelbach. Application-independent representation of multilingual text. In &#x2018;Europe, Software + the Internet: Going Global with Unicode: Tenth International Unicode Conference, March 10&#x2013;12, 1997, Mainz, Germany&#x2019;, The Unicode Consortium, San Jose, CA, 1997. Explores the nature of text representation in computer files and the needs of a wide range of text-processing software. https://latex-project.org/publications/1996-FMi-CAR-UnicodeConf-appl-independent-representation.pdf
+        </unstructured_citation></citation>
+        <citation key="Schrod:TB11-1-87-54"><unstructured_citation>
+          Joachim Schrod. International LaTeX is ready to use. TUGboat, 11(1):87&#x2013;90, 1990. Announces some of the early standards for globalization work on LaTeX. https://tug.org/TUGboat/tb11-1/tb27schrod.pdf
+        </unstructured_citation></citation>
+        <citation key="ISO14289-1:2014-55"><unstructured_citation>
+          Technical Committee ISO/TC 171/SC 2. ISO 14289-1:2014 Document management applications&#x2014;Electronic document file format enhancement for accessibility&#x2014;1: Use of ISO 32000-1 (PDF/UA-1), 2014. ISO 14289-1:2014 specifies the use of the ISO 32000&#x2011;1:2008 standard to produce accessible electronic documents. https://iso.org/standard/64599.html
+        </unstructured_citation></citation>
+        <citation key="Williams:TB21-1-17-56"><unstructured_citation>
+          Graham Williams. Graham Williams&#x2019; TeX Catalogue. TUGboat, 21(1):17&#x2013;90, 2000. In 2000 this catalogue listed more than 1500 TeX, LaTeX, and related packages and tools on 74 pages and was linked directly to the items on CTAN. CTAN now offers it in the form of several indexes with more than 5000 items covering everything stored there. https://tug.org/TUGboat/tb21-1/tb66catal.pdf; latest version on CTAN at: https://ctan.org/pkg/catalogue
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>An introduction to expl3</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Marei</given_name>
+          <surname>Peischl</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>87</first_page>
+        <last_page>93</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136peischl-expl3</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136peischl-expl3.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="babel-manual-1"><unstructured_citation>
+          J.L. Braams, J. Bezos. Babel: Localization and internationalization. https://ctan.org/pkg/babel
+        </unstructured_citation></citation>
+        <citation key="keyval-ctan-2"><unstructured_citation>
+          CTAN. keyval topic. https://ctan.org/topic/keyval
+        </unstructured_citation></citation>
+        <citation key="Hendrickson:TB33-2-219-3"><unstructured_citation>
+          A. Hendrickson. The joy of &#x005C;csname&#x2026;&#x005C;endcsname. TUGboat 33(2):219&#x2013;224, 2012. https://tug.org/TUGboat/tb33-2/tb104hendrickson.pdf
+        </unstructured_citation></citation>
+        <citation key="interface3-4"><unstructured_citation>
+          LaTeX Project. The LaTeX3 interfaces. https://mirrors.ctan.org/macros/latex/contrib/l3kernel/interface3.pdf
+        </unstructured_citation></citation>
+        <citation key="expl3-5"><unstructured_citation>
+          LaTeX Project. The expl3 package and LaTeX3 programming. https://mirrors.ctan.org/macros/latex/contrib/l3kernel/expl3.pdf
+        </unstructured_citation></citation>
+        <citation key="expl3-registration-6"><unstructured_citation>
+          J. Wright. Registering expl3 module[s]. https://texdev.net/2012/11/04/registering-expl3-module/
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>LuaCAS: Symbolic computation in LaTeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Timothy</given_name>
+          <surname>All</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Evan</given_name>
+          <surname>Cochrane</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>94</first_page>
+        <last_page>98</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136all-luacas</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136all-luacas.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="luacas-1"><unstructured_citation>
+          T. All, E. Cochrane. The Luacas package. https://ctan.org/pkg/luacas
+        </unstructured_citation></citation>
+        <citation key="bf-2"><unstructured_citation>
+          E.R. Berlekamp. Factoring polynomials over finite fields. Bell System Technical Journal 46(8):1853&#x2013;1859, 1967.
+        </unstructured_citation></citation>
+        <citation key="asymptote-3"><unstructured_citation>
+          J. Bowman, A. Hammerlindl. The Asymptote package. https://asymptote.sourceforge.net
+        </unstructured_citation></citation>
+        <citation key="pollardrho-4"><unstructured_citation>
+          J.M. Pollard. A Monte Carlo method for factorization. Nordisk Tidskr. Informationsbehandling (BIT) 15(3):331&#x2013;334, 1975.
+        </unstructured_citation></citation>
+        <citation key="millerrabin-5"><unstructured_citation>
+          M.O. Rabin. Probabilistic algorithm for testing primality. J. Number Theory 12(1):128&#x2013;138, 1980.
+        </unstructured_citation></citation>
+        <citation key="asypictureb-6"><unstructured_citation>
+          C. Staats III. The AsypictureB package. https://ctan.org/pkg/asypictureb
+        </unstructured_citation></citation>
+        <citation key="pgf-7"><unstructured_citation>
+          T. Tantau, C. Feuers&#x00E4;nger, et al. The PGF package. https://ctan.org/pkg/pgf
+        </unstructured_citation></citation>
+        <citation key="lrt-8"><unstructured_citation>
+          B.M. Trager. Algebraic factoring and rational function integration. In Proceedings of the third ACM symposium on symbolic and algebraic computation, pp. 219&#x2013;226, 1976.
+        </unstructured_citation></citation>
+        <citation key="forest-9"><unstructured_citation>
+          S. &#x017D;ivanoci&#x0107;. The Forest package. https://ctan.org/pkg/forest
+        </unstructured_citation></citation>
+        <citation key="zf-10"><unstructured_citation>
+          H. Zassenhaus. On Hensel factorization, I. J. Number Theory 1(3):291&#x2013;311, 1969.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Attributes in Markdown</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>V&#xed;t</given_name>
+          <surname>Novotn&#xfd;</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>99</first_page>
+        <last_page>101</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136novotny-markdown-attr</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136novotny-markdown-attr.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Novotny:2022:MWNb-1"><unstructured_citation>
+          V. Novotn&#x00FD;. Markdown 2.17.1: What&#x2019;s new, what&#x2019;s next? TUGboat 43(3):276&#x2013;278, 2022. https://doi.org/10.47397/tb/43-3/tb135novotny-markdown
+        </unstructured_citation></citation>
+        <citation key="Novotny:2022:MWN-2"><unstructured_citation>
+          V. Novotn&#x00FD;, D. Reh&#x00E1;k, et al. Markdown 2.15.0: What&#x2019;s new? TUGboat 43(1):10&#x2013;15, 2022. https://doi.org/10.47397/tb/43-1/tb133novotny-markdown
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>An introduction to automata design with TikZ's automata library</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Igor</given_name>
+          <surname>Borja</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>102</first_page>
+        <last_page>107</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136prado-automata</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136prado-automata.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="short-tutorial-automata-1"><unstructured_citation>
+          S. Sikdar. Drawing Finite State Machines in LaTeX using TikZ: A Tutorial, 2017.
+        </unstructured_citation></citation>
+        <citation key="sipser-union-regular-languages-2"><unstructured_citation>
+          M. Sipser. Introduction to the Theory of Computation. Thomsom/Course Technology, 2005. Pages 48&#x2013;50.
+        </unstructured_citation></citation>
+        <citation key="tikz-docs-automata-section-3"><unstructured_citation>
+          T. Tantau, et al. The TikZ and PGF Packages: Manual for version 3.1.10, ch. Automata Drawing Library, pp. 571&#x2013;575. 2023. https://ctan.org/pkg/pgf
+        </unstructured_citation></citation>
+        <citation key="positioning-deprecated-4"><unstructured_citation>
+          TeX Stack Exchange. Difference between &#x201c;right of=&#x201d; and &#x201c;right=of&#x201d; in PGF/TikZ. https://tex.stackexchange.com/questions/9386.
+        </unstructured_citation></citation>
+        <citation key="arcs-in-tikz-5"><unstructured_citation>
+          TeX Stack Exchange. How is arc defined in TikZ? https://tex.stackexchange.com/questions/175016.
+        </unstructured_citation></citation>
+        <citation key="latex-draw-online-tutorial-automata-6"><unstructured_citation>
+          TikZBlog. Automata diagrams in LaTeX. https://latexdraw.com/automata-diagrams-in-latex, 2021.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Styling R <tt>ggplot2</tt> graphics with LaTeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Travis</given_name>
+          <surname>Stenborg</surname>
+          <ORCID>https://orcid.org/0000-0002-2693-9628</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>108</first_page>
+        <last_page>109</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136stenborg-ggplot2</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136stenborg-ggplot2.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Scarso:TB36-3-237-1"><unstructured_citation>
+          L. Scarso. Two applications of SWIGLIB: GraphicsMagick and Ghostscript. TUGboat 36(3):237&#x2013;242, 2015. https://tug.org/TUGboat/tb36-3/tb114scarso.pdf
+        </unstructured_citation></citation>
+        <citation key="Schmidt:TB28-2-241-2"><unstructured_citation>
+          W. Schmidt. Font selection in LaTeX: The most frequently asked questions. TUGboat 28(2):241&#x2013;242, 2007. https://tug.org/TUGboat/tb28-2/tb89schmidt.pdf
+        </unstructured_citation></citation>
+        <citation key="2021Vehtari-3"><unstructured_citation>
+          A. Vehtari, A. Gelman, et al. Rank-normalization, folding, and localization: An improved R&#x0302; for assessing convergence of mcmc (with discussion). Bayesian Analysis 16(2):667&#x2013;718, June 2021. https://doi.org/10.1214/20-BA1221
+        </unstructured_citation></citation>
+        <citation key="Veytsman:TB43-2-130-4"><unstructured_citation>
+          B. Veytsman. Using knitr and LaTeX for literate laboratory notes. TUGboat 43(2):130&#x2013;133, 2022. https://tug.org/TUGboat/tb43-2/tb134veytsman-labnotes.pdf
+        </unstructured_citation></citation>
+        <citation key="Ziegenhagen:TB31-2-189-5"><unstructured_citation>
+          U. Ziegenhagen. Dynamic reporting with R/Sweave and LaTeX. TUGboat 31(2):189&#x2013;192, 2010. https://tug.org/TUGboat/tb31-2/tb98ziegenhagen.pdf
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Creating annotated Unicode-like font charts</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Janusz S.</given_name>
+          <surname>Bie&#x0144;</surname>
+          <ORCID>https://orcid.org/0000-0001-5006-8183</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>110</first_page>
+        <last_page>115</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136bien-unichart</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136bien-unichart.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="baker22:Junicode-1"><unstructured_citation>
+          P. Baker. Junicode&#x2014;the font for medievalists. specimens and user manual for version 2, 2022. https://github.com/psb1558/Junicode-font/
+        </unstructured_citation></citation>
+        <citation key="JSB22-2"><unstructured_citation>
+          J.S. Bie&#x0144;. Representating Parkosz&#x2019;s alphabet in the Junicode font. TUGboat 43(3):247&#x2013;251, 2022. https://tug.org/TUGboat/tb43-3/tb135bien-parkosz.pdf
+        </unstructured_citation></citation>
+        <citation key="L2/02-368-3"><unstructured_citation>
+          M. Davis, K. Whistler. Default ignorable issues. L2/02-368, 2002. https://unicode.org/L2/L2002/02368-default-ignorable.pdf
+        </unstructured_citation></citation>
+        <citation key="haralambous07:_fonts_encod-4"><unstructured_citation>
+          Y. Haralambous. Fonts &#x0026; Encodings. From Advanced Typography to Unicode and Everything in Between. O&#x2019;Reilly Media, 2007.
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Production notes</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>115</first_page>
+        <last_page>115</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136prod</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136prod.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>OpenType extensible brace debugging</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Mikael</given_name>
+          <surname>Sundqvist</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>116</first_page>
+        <last_page>116</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136hagen-extensible</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136hagen-extensible.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>ConTeXt in TeX Live 2023</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>117</first_page>
+        <last_page>120</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136hagen-texlive</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136hagen-texlive.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Creating macros in OpTeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Petr</given_name>
+          <surname>Ol&#x0161;&#xe1;k</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>121</first_page>
+        <last_page>126</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136olsak-optexmac</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136olsak-optexmac.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="optex-web-1"><unstructured_citation>
+          OpTeX. petr.olsak.net/optex/
+        </unstructured_citation></citation>
+        <citation key="nutshell-2"><unstructured_citation>
+          P. Ol&#x0161;&#x00E1;k: TeX in a Nutshell. 2020, 30 pp. https://petr.olsak.net/ftp/olsak/optex/tex-nutshell.pdf
+        </unstructured_citation></citation>
+        <citation key="optex-manual-3"><unstructured_citation>
+          OpTeX manual. https://petr.olsak.net/ftp/olsak/optex/optex-doc.pdf
+        </unstructured_citation></citation>
+        <citation key="optex-tricks-4"><unstructured_citation>
+          OpTeX tricks. https://petr.olsak.net/optex/optex-tricks.html
+        </unstructured_citation></citation>
+        <citation key="optex-math-5"><unstructured_citation>
+          OpTeX macros for doing math more comfortably. https://petr.olsak.net/ftp/olsak/optex/math-doc.pdf
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Reflections on <tt>&#x5c;globaldefs</tt></title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Udo</given_name>
+          <surname>Wermuth</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>127</first_page>
+        <last_page>133</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136wermuth-globaldefs</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136wermuth-globaldefs.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="citeAHB-1"><unstructured_citation>
+          Paul W. Abrahams, Kathryn A. Hargreaves, Karl Berry, TeX for the Impatient, 2003. https://ctan.org/tex-archive/info/impatient/book.pdf
+        </unstructured_citation></citation>
+        <citation key="citeDC-2"><unstructured_citation>
+          David Carlisle, comment on TeX StackExchange, 2022-06-30. https://tex.stackexchange.com/questions/649425/is-it-safe-to-use-globaldefs-for-setting-global-pgf-key-value-pairs/649437#comment1618526_649425
+        </unstructured_citation></citation>
+        <citation key="citeCTvA-3"><unstructured_citation>
+          Donald E. Knuth, The TeXbook, Volume A of Computers &amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1984.
+        </unstructured_citation></citation>
+        <citation key="citeCTvB-4"><unstructured_citation>
+          Donald E. Knuth, TeX: The&#x00A0;Program, Volume B of Computers &amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1986.
+        </unstructured_citation></citation>
+        <citation key="citeElog-5"><unstructured_citation>
+          Donald E. Knuth, &#x201c;The Errors of TeX&#x201d;, Software&#x2014;Practice and Experience 19 (1989), 607&#x2013;685; reprinted as Chapters 10 and 11 in [7], 243&#x2013;339. The log, i.e., Chapter 11, is still updated: https://ctan.org/tex-archive/systems/knuth/dist/errata/errorlog.tex
+        </unstructured_citation></citation>
+        <citation key="citeTWILL-6"><unstructured_citation>
+          Donald E. Knuth, twimac.tex. https://ctan.org/systems/knuth/local/lib/twimac.tex
+        </unstructured_citation></citation>
+        <citation key="citeLP-7"><unstructured_citation>
+          Donald E. Knuth, Literate Programming, Stanford, California: Center for the Study of Language and Information, CSLI Lecture Notes No. 27, 1992.
+        </unstructured_citation></citation>
+        <citation key="citeMI-8"><unstructured_citation>
+          Donald E. Knuth, &#x201c;Mini-Indexes for Literate Programs&#x201d;, Software&#x2014;Concepts and Tools 15 (1994), 2&#x2013;11; reprinted as Chapter 11 in [9], 225&#x2013;245.
+        </unstructured_citation></citation>
+        <citation key="citeDT-9"><unstructured_citation>
+          Donald E. Knuth, Digital Typography, Stanford, California: Center for the Study of Language and Information, CSLI Lecture Notes No. 78, 1999.
+        </unstructured_citation></citation>
+        <citation key="citeTUB-10"><unstructured_citation>
+          TUGboat, archive of all publicly available articles. https://tug.org/TUGboat/contents.html
+        </unstructured_citation></citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Preserving the math class of variables</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>133</first_page>
+        <last_page>133</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136hagen-classes</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136hagen-classes.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Storing Unicode data in TeX engines</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Joseph</given_name>
+          <surname>Wright</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>134</first_page>
+        <last_page>137</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136wright-unidata</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136wright-unidata.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Book reviews: <i>Do Not Erase</i>, by Jessica Wynne</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jim</given_name>
+          <surname>Hefferon</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>137</first_page>
+        <last_page>138</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136reviews-wynne</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136reviews-wynne.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Book reviews: <i>Stop Stealing Sheep &amp; Find out how type works</i>, by Erik Spiekermann</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>John</given_name>
+          <surname>Lamb</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>139</first_page>
+        <last_page>140</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136reviews-spiekermann</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136reviews-spiekermann.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The treasure chest</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>141</first_page>
+        <last_page>142</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136chest</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136chest.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TUG 2023 election report</title>
+      </titles>
+      <contributors>
+        <organization sequence="first" contributor_role="author">TUG Elections committee</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>147</first_page>
+        <last_page>150</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136elec</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136elec.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TUG financial statements for 2022</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2023</year>
+      </publication_date>
+      <pages>
+        <first_page>151</first_page>
+        <last_page>151</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/44-1/tb136treas</doi>
+        <timestamp>20230517222851</timestamp>
+        <resource>https://tug.org/TUGboat/tb44-1/tb136treas.html</resource>
+      </doi_data>
+    </journal_article>
+  </journal></body>
+</doi_batch>

@@ -1,0 +1,66 @@
+<!--#include virtual="/header.html"-->
+<title>Storing Unicode data in TeX engines
+       - TUGboat 44:1 (2023) - TeX Users Group</title>
+</head><body>
+
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+<h1><a href="/TUGboat/tb44-1/">TUGboat 44:1</a> (2023)<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
+
+<p><b>Title</b>: Storing Unicode data in TeX engines</p>
+
+<p><b>Summary</b>:
+reading the great mass of Unicode data: two-stage tables and macro storage.</p>
+
+<p><b>Full text of article</b>: <a href="https://tug.org/members/TUGboat/tb44-1/tb136wright-unidata.pdf">available to TUG members</a> (<a href="/join.html">join TUG</a>);
+will be publicly available after the next issue is published.</p>
+
+<p><b>Author</b>:
+<a href="/TUGboat/Contents/listauthor.html#Wright,Joseph">Joseph Wright</a></p>
+
+<p><b>Publication</b>: <a href="/TUGboat/tb44-1/">TUGboat
+volume 44, number 1</a> (2023),
+pages&nbsp;134-137</p>
+
+<p><b>DOI</b> (this page):
+<a href="https://doi.org/10.47397/tb/44-1/tb136wright-unidata">10.47397/tb/44-1/tb136wright-unidata</a>
+<br><small>(<a href="https://doi.org/10.47397/tb/44-1/tb136hagen-classes">previous doi</a>
+- <a href="https://doi.org/10.47397/tb/44-1/tb136reviews-wynne">next doi</a>)</small></p>
+
+<p><b>Category</b>:
+<a href="/TUGboat/Contents/listkeyword.html#CatTAGSoftwareTools">Software&#xa0;&&#xa0;Tools</a></p>
+      
+<p><b>Difficulty</b>: Advanced</p>
+
+<p><b>Abstract</b>:
+Each Unicode codepoint has many different properties. For example, depending
+on our application, we might need to know whether a codepoint is a (lower case)
+letter, how it should be treated at a line break, how its width is treated (for
+East Asian characters), <em>etc.</em> Unicode provides a range of
+data files which tabulate this information. These files are human-readable and
+are, in the main, purely ASCII text: they are therefore not tied to any
+particular programming language for usage. The full set of files is available
+from <a href="https://unicode.org/Public/UCD/latest/ucd/">https://unicode.org/Public/UCD/latest/ucd/</a>: the complete current
+set as a zip is around 6.7MiB.</p>
+<p>There are of course standard libraries for common programming languages such as
+C which both load this data and provide implementations of the algorithms which
+use this data: things like changing case, breaking text into lines and so on.
+However, these are not readily available to us as TeX programmers.
+Thus, if we want to be able to properly implement Unicode algorithms, we
+will need to look at how to load the relevant data and store it within TeX
+in an efficient manner.</p>
+<p>Here, I will focus on how the LaTeX team is approaching the data storage
+challenge. I will show how the particular requirements of implementing in
+TeX mean we need to use a mix of approaches, depending on exactly which data
+we are looking at. The current implementation for loading this data in
+expl3 is available at
+<a href="https://github.com/latex3/latex3/blob/main/l3kernel/l3unicode.dtx">https://github.com/latex3/latex3/blob/main/l3kernel/l3unicode.dtx</a>, and is
+read as part of the LaTeX2e format-building process.</p>
+
+<!-- REPLACE-WITH-BIBLIOGRAPHY -->
+
+<hr><small><a href="/TUGboat/">TUGboat</a> 44:1, 2023 (<a href="/TUGboat/tb44-1/">issue 136</a>)
+&nbsp; [generated 2023-05-17]
+</small><br><!--#include virtual="/footer.html"-->

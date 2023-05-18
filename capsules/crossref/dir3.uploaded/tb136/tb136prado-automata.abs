@@ -1,0 +1,9 @@
+    This article is a quick introduction to \TikZ's \texttt{automata}
+    library, used for the design and typesetting of finite automata in
+    \LaTeX. It also explores the use of \TeX\ loops and conditionals to
+    automate the generation of images that follow noticeable patterns.
+    \TikZ\ itself is a package used for generating a variety of
+    figures\Dash from geometry configurations to graphs and
+    automata\Dash allowing for more control over image editing and
+    quality. Although the package is very versatile, its uses for
+    designing automata will be the primary topic of this article.

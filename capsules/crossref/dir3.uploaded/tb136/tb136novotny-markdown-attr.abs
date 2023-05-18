@@ -1,0 +1,5 @@
+Markup languages provide only a finite set of elements, whereas the wants of users are infinite.
+To bridge this gap, markup languages allow users to extend them with attributes.
+
+In this article, we introduce attributes in the lightweight markup language of Markdown.
+We also show how writers can type them and how coders can style them using the Markdown package for \TeX.

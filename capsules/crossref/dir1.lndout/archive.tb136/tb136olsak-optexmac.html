@@ -1,0 +1,67 @@
+<!--#include virtual="/header.html"-->
+<title>Creating macros in OpTeX
+       - TUGboat 44:1 (2023) - TeX Users Group</title>
+</head><body>
+
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+<h1><a href="/TUGboat/tb44-1/">TUGboat 44:1</a> (2023)<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
+
+<p><b>Title</b>: Creating macros in OpTeX</p>
+
+<p><b>Summary</b>:
+many conveniences for macro programming, packaging, documenting.</p>
+
+<p><b>Full text of article</b>: <a href="https://tug.org/members/TUGboat/tb44-1/tb136olsak-optexmac.pdf">available to TUG members</a> (<a href="/join.html">join TUG</a>);
+will be publicly available after the next issue is published.</p>
+
+<p><b>Author</b>:
+<a href="/TUGboat/Contents/listauthor.html#Olsak,Petr">Petr Ol&#x0161;&#xe1;k</a></p>
+
+<p><b>Publication</b>: <a href="/TUGboat/tb44-1/">TUGboat
+volume 44, number 1</a> (2023),
+pages&nbsp;121-126</p>
+
+<p><b>DOI</b> (this page):
+<a href="https://doi.org/10.47397/tb/44-1/tb136olsak-optexmac">10.47397/tb/44-1/tb136olsak-optexmac</a>
+<br><small>(<a href="https://doi.org/10.47397/tb/44-1/tb136hagen-texlive">previous doi</a>
+- <a href="https://doi.org/10.47397/tb/44-1/tb136wermuth-globaldefs">next doi</a>)</small></p>
+
+<p><b>Category</b>:
+<a href="/TUGboat/Contents/listkeyword.html#CatTAGMacros">Macros</a></p>
+      
+<p><b>Difficulty</b>: Advanced</p>
+
+<p><b>Abstract</b>:
+OpTeX [1] is an extended plain TeX. We can create macros as in plain
+TeX. In particular, this means that we use TeX primitives like
+<tt>&#x005C;def</tt>, <tt>&#x005C;edef</tt>, <tt>&#x005C;ifx</tt>, <tt>&#x005C;expandafter</tt>, <tt>&#x005C;csname</tt>, <tt>&#x005C;hbox</tt>, <tt>&#x005C;vbox</tt>,
+<tt>&#x005C;hrule</tt>, and so on. Likewise, we use basic plain TeX macros like
+<tt>&#x005C;newcount</tt>, <tt>&#x005C;llap</tt> and many others. I wrote a summary of these TeX and
+plain TeX tools in [2].</p>
+<p>OpTeX keeps the plain TeX philosophy: it does not create any new
+syntactic, semantic, or thought layers over TeX, so the commands mentioned
+above are principal ones, basic for creating macros. For example,
+OpTeX doesn&#x2019;t try to provide
+anything similar to <tt>&#x005C;newcommand</tt>, nor anything similar to <tt>expl3</tt>.
+The main message is: if you know TeX, you can make your macros.</p>
+<p>On the other hand, OpTeX provides many elementary macros which can make
+macro programming easier. And there are a few conceptual recommendations
+especially to separate different namespaces when your macros will be
+used for public purposes. This article summarizes these tools and
+principles. More detailed information can be found in the OpTeX manual [3].</p>
+
+<p><b>References</b>:</p>
+<ol class="tugbbl">
+<li class="tugbbl">OpTeX. <a href="https://petr.olsak.net/optex/">petr.olsak.net/optex/</a></li>
+<li class="tugbbl">P. Ol&#x0161;&#x00E1;k: TeX in a Nutshell. 2020, 30 pp. <a href="https://petr.olsak.net/ftp/olsak/optex/tex-nutshell.pdf">petr.olsak.net/ftp/olsak/optex/tex-nutshell.pdf</a></li>
+<li class="tugbbl">OpTeX manual. <a href="https://petr.olsak.net/ftp/olsak/optex/optex-doc.pdf">petr.olsak.net/ftp/olsak/optex/optex-doc.pdf</a></li>
+<li class="tugbbl">OpTeX tricks. <a href="https://petr.olsak.net/optex/optex-tricks.html">petr.olsak.net/optex/optex-tricks.html</a></li>
+<li class="tugbbl">OpTeX macros for doing math more comfortably. <a href="https://petr.olsak.net/ftp/olsak/optex/math-doc.pdf">petr.olsak.net/ftp/olsak/optex/math-doc.pdf</a></li>
+</ol>
+
+<hr><small><a href="/TUGboat/">TUGboat</a> 44:1, 2023 (<a href="/TUGboat/tb44-1/">issue 136</a>)
+&nbsp; [generated 2023-05-17]
+</small><br><!--#include virtual="/footer.html"-->

@@ -1,0 +1,6 @@
+Starting with \TEXLIVE\ 2023 the default \CONTEXT\ distribution is \LMTX, a
+follow up on \MKIV, running on top of the \LUAMETATEX\ engine instead of \LUATEX. Already
+for a long time the \MKII\ version used with \PDFTEX, \XETEX\ and \ALEPH\ has
+been frozen and most users moved on from \MKIV\ to \LMTX\ (a more distinctive tag
+for what internally is version \MKXL).
+

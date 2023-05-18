@@ -1,0 +1,55 @@
+\begin{thebibliography}{10}
+
+\bibitem{luacas}
+T.~All, E.~Cochrane.
+\newblock \emph{The Luacas package}.
+\newblock \url{https://ctan.org/pkg/luacas}
+
+\bibitem{bf}
+E.R.~Berlekamp.
+\newblock Factoring polynomials over finite fields.
+\newblock \emph{Bell System Technical Journal} 46(8):1853--1859, 1967.
+
+\bibitem{asymptote}
+J.~Bowman, A.~Hammerlindl.
+\newblock \emph{The Asymptote package}.
+\newblock \url{https://asymptote.sourceforge.net}
+
+\bibitem{pollardrho}
+J.M.~Pollard.
+\newblock A {M}onte {C}arlo method for factorization.
+\newblock \emph{Nordisk Tidskr.\newline Informationsbehandling (BIT)}
+  15(3):331--334, 1975.
+
+\bibitem{millerrabin}
+M.O.~Rabin.
+\newblock Probabilistic algorithm for testing primality.
+\newblock \emph{J. Number Theory} 12(1):128--138, 1980.
+
+\bibitem{asypictureb}
+C.~Staats~III.
+\newblock \emph{The AsypictureB package}.
+\newblock \url{https://ctan.org/pkg/asypictureb}
+
+\bibitem{pgf}
+T.~Tantau, C.~Feuers\"anger, et~al.
+\newblock \emph{The {PGF} package}.
+\newblock \url{https://ctan.org/pkg/pgf}
+
+\bibitem{lrt}
+B.M.~Trager.
+\newblock Algebraic factoring and rational function integration.
+\newblock In~\emph{Proceedings of the third ACM symposium on symbolic and
+  algebraic computation}, pp.~219--226, 1976.
+
+\bibitem{forest}
+S.~\v{Z}ivanoci\'c.
+\newblock \emph{The Forest package}.
+\newblock \newline \url{https://ctan.org/pkg/forest}
+
+\bibitem{zf}
+H.~Zassenhaus.
+\newblock On {H}ensel factorization,~{I}.
+\newblock \emph{J.~Number Theory} 1(3):291--311, 1969.
+
+\end{thebibliography}

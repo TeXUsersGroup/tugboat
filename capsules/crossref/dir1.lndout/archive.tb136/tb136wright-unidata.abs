@@ -1,0 +1,26 @@
+Each Unicode codepoint has many different properties. For example, depending
+on our application, we might need to know whether a codepoint is a (lower case)
+letter, how it should be treated at a line break, how its width is treated (for
+East Asian characters), \emph{etc.} Unicode provides a range of
+data files which tabulate this information. These files are human-readable and
+are, in the main, purely \acro{ASCII} text: they are therefore not tied to any
+particular programming language for usage. The full set of files is available
+from \tbsurl{https://unicode.org/Public/UCD/latest/ucd/}: the complete current
+set as a zip is around 6.7MiB.
+
+There are of course standard libraries for common programming languages such as
+C which both load this data and provide implementations of the algorithms which
+use this data: things like changing case, breaking text into lines and so on.
+However, these are not readily available to us as \TeX{} programmers.
+Thus, if we want to be able to properly implement Unicode algorithms, we
+will need to look at how to load the relevant data and store it within \TeX{}
+in an efficient manner.
+
+Here, I will focus on how the \LaTeX{} team is approaching the data storage
+challenge. I will show how the particular requirements of implementing in
+\TeX{} mean we need to use a mix of approaches, depending on exactly which data
+we are looking at. The current implementation for loading this data in
+\pkg{expl3} is available at
+\tbsurl{https://github.com/latex3/latex3/blob/main/l3kernel/l3unicode.dtx}, and is
+read as part of the \LaTeXe{} format-building process.
+

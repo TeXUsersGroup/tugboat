@@ -1,0 +1,20 @@
+\OpTeX{}~[1] is an extended plain \TeX{}. We can create macros as in plain
+\TeX{}. In particular, this means that we use \TeX{} primitives like
+\cs{def}, \cs{edef}, \cs{ifx}, \cs{expandafter}, \cs{csname}, \cs{hbox}, \cs{vbox},
+\cs{hrule}, and so on. Likewise, we use basic plain \TeX{} macros like
+\cs{newcount}, \cs{llap} and many others. I wrote a summary of these \TeX{} and
+plain \TeX{} tools in~[2].
+
+\OpTeX{} keeps the plain \TeX{} philosophy: it does not create any new
+syntactic, semantic, or thought layers over \TeX{}, so the commands mentioned
+above are principal ones, basic for creating macros. For example,
+\OpTeX{} doesn't try to provide
+anything similar to \cs{newcommand}, nor anything similar to {\tt expl3}.
+The main message is: if you know \TeX{}, you can make your macros.
+
+On the other hand, \OpTeX{} provides many elementary macros which can make
+macro programming easier. And there are a few conceptual recommendations
+especially to separate different namespaces when your macros will be
+used for public purposes. This article summarizes these tools and
+principles. More detailed information can be found in the \OpTeX{} manual~[3].
+

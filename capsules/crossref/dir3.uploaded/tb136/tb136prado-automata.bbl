@@ -1,0 +1,36 @@
+\begin{thebibliography}{1}
+
+\bibitem{short-tutorial-automata}
+S.~Sikdar.
+\newblock \emph{{Drawing Finite State Machines in {\LaTeX} using {TikZ}: A
+  Tutorial}}, 2017.
+
+\bibitem{sipser-union-regular-languages}
+M.~Sipser.
+\newblock \emph{Introduction to the Theory of Computation}.
+\newblock Thomsom/Course Technology, 2005.
+\newblock Pages 48--50.
+
+\bibitem{tikz-docs-automata-section}
+T.~Tantau, et~al.
+\newblock \emph{{The TikZ and PGF Packages: Manual for version 3.1.10}}, ch.
+  Automata Drawing Library, pp.~571--575.
+\newblock 2023.
+\newblock \url{https://ctan.org/pkg/pgf}
+
+\bibitem{positioning-deprecated}
+{TeX Stack Exchange}.
+\newblock {Difference between ``right of='' and ``right=of'' in PGF/TikZ}.
+\newblock \url{https://tex.stackexchange.com/questions/9386}.
+
+\bibitem{arcs-in-tikz}
+{TeX Stack Exchange}.
+\newblock {How is arc defined in TikZ?}
+\newblock \url{https://tex.stackexchange.com/questions/175016}.
+
+\bibitem{latex-draw-online-tutorial-automata}
+TikZBlog.
+\newblock {Automata diagrams in \LaTeX}.
+\newblock \url{https://latexdraw.com/automata-diagrams-in-latex}, 2021.
+
+\end{thebibliography}

@@ -1,0 +1,7 @@
+       This article discusses a single integer parameter of the
+program \TeX: It looks at the history of the invention of \cs{globaldefs},
+describes the behavior of this internal parameter and tries to list
+useful applications. It also warns about constructions that might
+lead to faulty results. Moreover, it explains why one must do a
+careful verification of someone else's code if that code should be
+reused under a setting of \cs{globaldefs}.

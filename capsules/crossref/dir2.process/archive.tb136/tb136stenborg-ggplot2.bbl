@@ -1,0 +1,38 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{1}
+
+\bibitem{Scarso:TB36-3-237}
+L.~Scarso.
+\newblock Two applications of \acro{SWIGLIB}: {GraphicsMagick} and
+  {Ghostscript}.
+\newblock \emph{TUGboat}~36(3):237--242, 2015.
+\newblock \newline \url{https://tug.org/TUGboat/tb36-3/tb114scarso.pdf}
+
+\bibitem{Schmidt:TB28-2-241}
+W.~Schmidt.
+\newblock Font selection in {\LaTeX}: {The}~most frequently asked questions.
+\newblock \emph{TUGboat}~28(2):241--242, 2007.
+\newblock \newline \url{https://tug.org/TUGboat/tb28-2/tb89schmidt.pdf}
+
+\bibitem{2021Vehtari}
+A.~Vehtari, A.~Gelman, et~al.
+\newblock Rank\hyph normalization, folding, and localization: An~improved
+  \^{R} for assessing convergence of mcmc (with discussion).
+\newblock \emph{Bayesian Analysis} 16(2):667--718, June 2021.
+\newblock \newline \url{https://doi.org/10.1214/20-BA1221}
+
+\bibitem{Veytsman:TB43-2-130}
+B.~Veytsman.
+\newblock Using knitr and {\LaTeX} for literate laboratory notes.
+\newblock \emph{TUGboat} 43(2):130--133, 2022.
+\newblock \url{https://tug.org/TUGboat/tb43-2/tb134veytsman-labnotes.pdf}
+
+\bibitem{Ziegenhagen:TB31-2-189}
+U.~Ziegenhagen.
+\newblock Dynamic reporting with {R\slash Sweave} and {\LaTeX}.
+\newblock \emph{TUGboat} 31(2):189--192, 2010.
+\newblock \url{https://tug.org/TUGboat/tb31-2/tb98ziegenhagen.pdf}
+
+\end{thebibliography}

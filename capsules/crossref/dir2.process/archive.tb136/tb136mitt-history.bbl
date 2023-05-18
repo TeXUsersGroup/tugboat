@@ -1,0 +1,681 @@
+% converted \weburl[text]{url} manually, and plenty more.
+% changed \newblock \enquote to \noquote, ignored in
+%   ltx2crossrefxml-tugboat.cfg; otherwise have to change every title
+%   to avoid braces, since we don't parse nested braces.
+
+\newcommand{\noopsort}[1]{} \newcommand{\printfirst}[2]{#1}
+\newcommand{\singleletter}[1]{#1} \newcommand{\switchargs}[2]{#2#1}
+
+\newcommand\xAuthor[2][]{}
+\renewcommand{\acro}{} % doesn't work with fractional font size
+
+\begin{thebibliography}{99}
+
+  \raggedright
+  \addtolength\itemsep{3pt plus 1pt}
+
+\bibitem{Braams:TB12-2-291}
+Johannes Braams.
+\newblock \noquote{{Babel, a multilingual style-option system for use with
+  \LaTeX's standard document styles}}.
+\newblock \textit{TUGboat}, 12(2):291--301, 1991.
+\bibAnnote{Braams:TB12-2-291}{The\xAuthor{Johannes Braams} \pkg{babel}
+  package was originally a collection of document-style options to support
+  different languages. An update was published in \emph{TUGboat}, 14(1):60--62,
+  April 1993. \url{https://tug.org/TUGboat/tb12-2/tb32braa.pdf} \\
+  \url{https://tug.org/TUGboat/tb14-1/tb38braa.pdf}}
+
+
+\bibitem{Carlisle:TB17-1-67}
+David Carlisle.
+\newblock \noquote{{{A {\LaTeX} tour, Part 1: The basic distribution}}}.
+\newblock \textit{TUGboat}, 17(1):67--73, 1996.
+\bibAnnote{Carlisle:TB17-1-67}{A\xAuthor{David Carlisle} ``guided tour'' around
+  the files in the basic {\LaTeX} distribution. File names and paths relate to
+  the file hierarchy of the \CTAN{} archives.
+  \url{https://tug.org/TUGboat/tb17-1/tb50carl.pdf}}
+
+\bibitem{Carlisle:TB17-3-321}
+---.
+\newblock \noquote{{{A {\LaTeX} tour, Part 2: The \pkg{tools} and
+  \pkg{graphics} distributions}}}.
+\newblock \textit{TUGboat}, 17(3):321--326, 1996.
+\bibAnnote{Carlisle:TB17-3-321}{A\xAuthor{David Carlisle} ``guided tour''
+  around the ``tools'' and ``graphics'' packages. Note that Lamport's
+  manual~[25] assumes that at least the graphics
+  distribution is available with \slatex{}.
+  \url{https://tug.org/TUGboat/tb17-3/tb52carl.pdf}}
+%\cite{Lamport:1994:LDP
+
+\bibitem{Carlisle:TB18-1-48}
+---.
+\newblock \noquote{{{A {\LaTeX} tour, Part 3: \pkg{mfnfss},
+  \pkg{psnfss} and \pkg{babel}}}}.
+\newblock \textit{TUGboat}, 18(1):48--55, 1997.
+\bibAnnote{Carlisle:TB18-1-48}{A\xAuthor{David Carlisle} ``guided tour''
+  through three more distributions that are part of the standard {\LaTeX}
+  system. The \pkg{mfnfss} distribution provides {\LaTeX} support for some
+  popular {\MF}\kern-.02em-\kern.02em produced fonts that do not otherwise have any {\LaTeX}
+  interface. The \pkg{psnfss} distribution consists of {\LaTeX} packages
+  giving access to {\PS} fonts. The \pkg{babel} distribution provides
+  {\LaTeX} with multilingual capabilities.
+  \url{https://tug.org/TUGboat/tb18-1/tb54carl.pdf}}
+
+\bibitem{Carlisle:TB21-3-193}
+---.
+\newblock \noquote{{XMLTEX}: {A} non validating (and not 100\% conforming)
+  namespace aware {\XML} parser implemented in {\TeX}}.
+\newblock \textit{TUGboat}, 21(3):193--199, 2000.
+\bibAnnote{Carlisle:TB21-3-193}{XMLTEX\xAuthor{David Carlisle} is a an
+  {\XML} parser and typesetter implemented in {\TeX}, which by default uses the
+  \LaTeX\ kernel to provide typesetting functionality.
+  \url{https://tug.org/TUGboat/tb21-3/tb68carl.pdf}}
+
+\bibitem{Carlisle:MathML4}
+David Carlisle, editor.
+\newblock Mathematical Markup Language (MathML) Version 4.0.
+\newblock W3C, 1st edition, 2023.
+\bibAnnote{Carlisle:MathML4}{This\xAuthor{David Carlisle} is the draft
+  specification for a new version of the Mathematical Markup Language; the
+  current version is 3.0~[7]. MathML4 extensions primarily
+  relate to improving accessibility, with new attributes for improving audio
+  rendering. \url{https://www.w3.org/TR/mathml4/}}
+% \cite{Carlisle:MathML3e}
+
+\bibitem{Carlisle:MathML3e}
+David Carlisle, Patrick Ion, and Robert Miner, editors.
+\newblock Mathematical Markup Language (MathML) Version 3.0.
+\newblock W3C, 2nd edition, 2014.
+\bibAnnote{Carlisle:MathML3e}{This\xAuthor{David Carlisle}\xAuthor{Patrick
+  Ion}\xAuthor{Robert Miner} is the current specification defining the
+  Mathematical Markup Language; the upcoming version will be
+  [6]. MathML is an \XML\ vocabulary for mathematics,
+  designed for use in browsers and as a communication language between computer
+  algebra systems. The goal of MathML is to enable mathematics to be served,
+  received, and processed on the World Wide Web, just as HTML has enabled this
+  functionality for text. \url{https://www.w3.org/TR/MathML3/}}
+% \cite{Carlisle:MathML4}
+
+\bibitem{Carlisle:MathML2e}
+David Carlisle, Patrick Ion, Robert Miner, and Nico Poppelier, editors.
+\newblock Mathematical Markup Language (MathML) Version 2.0.
+\newblock W3C, 2nd edition, 2003.
+\bibAnnote{Carlisle:MathML2e}{This\xAuthor{David Carlisle}\xAuthor{Patrick
+  Ion}\xAuthor{Robert Miner}\xAuthor{Nico Poppelier} is the previous version of
+  the MathML standard~[7]. % \cite{Carlisle:MathML3e}
+  \url{https://www.w3.org/TR/MathML2/}}
+
+\bibitem{Carlisle:TB18-4-303}
+David Carlisle, Chris Rowley, and Frank Mittelbach.
+\newblock \noquote{{{The} \LaTeX3 Programming Language---a proposed system
+  for \TeX\ macro programming}.
+\newblock \textit{TUGboat}, 18(4):303--308, 1997.
+\bibAnnote{Carlisle:TB18-4-303}{Initial\xAuthor{David Carlisle}\xAuthor{Chris
+  Rowley}\xAuthor{Frank Mittelbach} proposals for a radically new syntax and
+  software tools. Most of them are now part of the \LaTeX{} format as the
+  \LaTeXIIIproglayer{}. \url{https://tug.org/TUGboat/tb18-4/tb57rowl.pdf}}
+
+
+\bibitem{pdf-ua-nutshell}
+Olaf Drümmer and Bettina Chang.
+\newblock {\acro{PDF/UA} in a Nutshell\Dash Accessible documents with \PDF{}}.
+\newblock {\PDF\ Association}, 2013.
+\bibAnnote{pdf-ua-nutshell}{A\xAuthor{Olaf Drümmer}\xAuthor{Bettina Chang}
+  nice introduction to the ISO standard 14289-1 for universal accessibility,
+  also known as \acro{PDF/UA}~[55]. It provides key facts,
+  e.g., the requirements of the standard, the current legal situation,
+  etc. \url{https://pdfa.org/resource/pdfua-in-a-nutshell/}}
+% \cite{ISO14289-1:2014}
+
+\bibitem{A-W:VEi91}
+Victor Eijkhout.
+\newblock {\TeX} by Topic, {A} {\TeX}nician's Reference.
+\newblock Lehmanns Media, Berlin, 2014.
+\newblock ISBN 978-3-86541-590-5.
+\newblock Reprint with corrections. Initially published in 1991 by
+  \mbox{Addison}-Wesley. Also available free of charge from the author in
+  PDF format.
+\bibAnnote{A-W:VEi91}{A systematic reference manual
+  for the experienced {\TeX} user. The book offers a comprehensive treatment of
+  every aspect of {\TeX} (not \LaTeX!), with detailed explanations of the
+  mechanisms underlying {\TeX}'s working, as well as numerous examples of
+  {\TeX} programming techniques.
+  \url{https://eijkhout.net/tex/tex-by-topic.html}}
+
+\bibitem{Goossens:1994:TLC}
+Michel Goossens, Frank Mittelbach, and Alexander Samarin.
+\newblock The {\LaTeX} Companion.
+\newblock Tools and Techniques for Computer Typesetting.
+  \mbox{Addison}-Wesley, Reading, MA, USA, 1994.
+\newblock ISBN 0-201-54199-8.
+\bibAnnote{Goossens:1994:TLC}{The first edition of this book. The second
+  edition~[42] was published ten years later in 2004 and the third edition~[43] in 2023.}
+%\cite{Mittelbach:2004:TLC}
+%\cite{Mittelbach:2023:TLC}
+
+\bibitem{Knuth:1979:TMN}
+Donald~E. Knuth.
+\newblock {\TeX} and {\MF}\Dash New Directions in Typesetting.
+\newblock Digital Press, Bedford, MA, USA, 1979.
+\newblock ISBN 0-932376-02-9.
+\bibAnnote{Knuth:1979:TMN}{Contains\xAuthor{Donald Knuth} an article on
+  ``Mathematical Typography'', describing the author's motivation for starting
+  to work on \TeX{} and the early history of computer typesetting. Describes
+  early (now obsolete) versions of \TeX{} and \MF.}
+
+\bibitem{Knuth:ct-a}
+---.
+\newblock The {\TeX}book, volume~A of \textit{Computers and Typesetting}.
+\newblock \mbox{Addison}-Wesley, Reading, MA, USA, {\noopsort{1986a}}1986.
+\newblock ISBN 0-201-13447-0.
+\newblock Jubilee 2021 edition, twenty-fifth printing with corrections.
+\bibAnnote{Knuth:ct-a}{The\xAuthor{Donald Knuth} definitive user's guide and
+  complete reference manual for \TeX. A good secondary reading, covering the
+  same grounds, is [11.}
+% \cite{A-W:VEi91}
+
+\bibitem{Knuth:ct-b}
+---.
+\newblock {\TeX}: The Program, volume~B of \textit{Computers and Typesetting}.
+\newblock \mbox{Addison}-Wesley, Reading, MA, USA, {\noopsort{1986b}}1986.
+\newblock ISBN 0-201-13437-3.
+\newblock Jubilee 2021 edition, thirteenth printing with corrections.
+\bibAnnote{Knuth:ct-b}{The\xAuthor{Donald Knuth} complete source code for the
+  \TeX{} program, typeset with several indices.}
+
+\bibitem{Knuth:ct-c}
+---.
+\newblock The {\MF}book, volume~C of \textit{Computers and Typesetting}.
+\newblock \mbox{Addison}-Wesley, Reading, MA, USA, {\noopsort{1986c}}1986.
+\newblock ISBN 0-201-13445-4 (hardcover), 0-201-13444-6 (paperback).
+\newblock Jubilee 2021 edition, twelfth printing with corrections.
+\bibAnnote{Knuth:ct-c}{The\xAuthor{Donald Knuth} user's guide and reference
+  manual for \MF, the companion program to \TeX{} for designing fonts.}
+
+\bibitem{Knuth:ct-d}
+---.
+\newblock {\METAFONT}: The Program, volume~D of \textit{Computers and
+  Typesetting}.
+\newblock \mbox{Addison}-Wesley, Reading, MA, USA, {\noopsort{1986d}}1986.
+\newblock ISBN 0-201-13438-1.
+\newblock Jubilee 2021 edition, eleventh printing with corrections.
+\bibAnnote{Knuth:ct-d}{The\xAuthor{Donald Knuth} complete source code listing
+  of the \MF{} program.}
+
+\bibitem{Knuth:ct-e}
+---.
+\newblock Computer Modern Typefaces, volume~E of \textit{Computers and
+  Typesetting}.
+\newblock \mbox{Addison}-Wesley, Reading, MA, USA, {\noopsort{1986e}}1986.
+\newblock ISBN 0-201-13446-2.
+\newblock Jubilee 2021 edition, eleventh printing with corrections.
+\bibAnnote{Knuth:ct-e}{More\xAuthor{Donald Knuth}
+  than 500 Greek and Roman letterforms, together with punctuation marks,
+  numerals, and many mathematical symbols, are graphically depicted. The \MF{}
+  code to generate each glyph is given and it is explained how, by changing the
+  parameters in the \MF{} code, all characters in the Computer Modern family of
+  typefaces can be obtained.}
+
+\bibitem{Knuth:TACP}
+---.
+\newblock The Art of Computer Programming, volumes 1--\,4A and Fascicles 5--6.
+\newblock \mbox{Addison}-Wesley, Reading, MA, USA, 1998--2019.
+\newblock ISBN 0-201-89683-4, 0-201-03822-6, 0-201-03803-X, 0-201-03804-8,
+  0-13-467179-1, and 0-13-439760-6.
+\bibAnnote{Knuth:TACP}{\Author{Donald Knuth}'s major work on algorithms and
+  data structures for efficient programming.}
+
+\bibitem{Knuth:1999:DT}
+---.
+\newblock Digital Typography.
+\newblock CSLI Publications, Stanford, CA, USA, 1999.
+\newblock ISBN 1-57586-011-2 (cloth), 1-57586-010-4 (paperback).
+\bibAnnote{Knuth:1999:DT}{A\xAuthor{Donald Knuth} comprehensive collection of
+  Knuth's writings on {\TeX} and typography. While many articles in this
+  collection are available separately on the Web, not all of them are, and
+  having them all in one place for studying is an additional benefit.}
+%%FMi fix in tlc3 too
+
+\bibitem{Knuth:1999:DT:ComputersAndTypesetting}
+---.
+\newblock \noquote{Computers and typesetting}.
+\newblock In Knuth  [20, pp. 555--562].
+% \cite{Knuth:1999:DT}
+\bibAnnote{Knuth:1999:DT:ComputersAndTypesetting}{Remarks\xAuthor{Donald Knuth}
+  presented by Knuth at the Computer Museum, Boston, Massachusetts, on 21 May
+  1986, at the ``coming-out'' party to celebrate the completion of {\TeX}.
+  Originally published as: \url{https://tug.org/TUGboat/tb07-2/tb14knut.pdf}
+
+\bibitem{Knuth:1999:DT:NewVersions}
+---.
+\newblock \noquote{The new versions of {\TeX} and {\MF}}.
+\newblock In Knuth [20, pp. 563--570].
+\bibAnnote{Knuth:1999:DT:NewVersions}{Knuth\xAuthor{Donald Knuth} explains how
+  he was convinced at the TUG Meeting at Stanford in 1989 to make one further
+  set of changes to {\TeX} and {\MF} to extend these programs to support 8-bit
+  character sets. He goes on to describe the various changes he introduced to
+  implement this feature, as well as a few other improvements.
+  Originally published as: \url{https://tug.org/TUGboat/tb10-3/tb25knut.pdf}
+
+\bibitem{Knuth:1999:DT:futureofTeX}
+---.
+\newblock \noquote{The future of \TeX\ and \MF}.
+\newblock In Knuth  [20, pp. 571--572].
+\bibAnnote{Knuth:1999:DT:futureofTeX}{In this article Knuth announces that his
+  work on {\TeX}, {\MF}, and Computer Modern has ``come to an end'' and that he
+  will make further changes only to correct extremely serious
+  bugs.\xAuthor{Donald Knuth} Originally published
+  as: \url{https://tug.org/TUGboat/tb11-4/tb30knut.pdf}
+
+
+\bibitem{Knuth:1999:DT:breakingparagraphs}
+Donald~E. Knuth and Michael~F. Plass.
+\newblock \noquote{Breaking paragraphs into lines}.
+\newblock In Knuth [20, pp. 67--155].
+\bibAnnote{Knuth:1999:DT:breakingparagraphs}{This\xAuthor{Donald
+  Knuth}\xAuthor{Michael Plass} article, originally published in 1981,
+  addresses the problem of dividing the text of a paragraph into lines of
+  approximately equal length. The basic algorithm considers the paragraph as a
+  whole and introduces the (now well-known {\TeX}) concepts of ``boxes'',
+  ``glue'', and ``penalties'' to find optimal breakpoints for the lines. The
+  paper describes the dynamic programming technique used to implement the
+  algorithm.}
+
+\bibitem{Lamport:1994:LDP}
+Leslie Lamport.
+\newblock {\LaTeX}: {A} Document Preparation System: User's Guide and Reference
+  Manual.
+\newblock \mbox{Addison}-Wesley, Reading, MA, USA, 2nd edition, 1994.
+\newblock ISBN 0-201-52983-1.
+\newblock Reprinted with corrections in 1996.
+\bibAnnote{Lamport:1994:LDP}{The\xAuthor{Leslie Lamport} ultimate reference for
+  basic user-level \LaTeX{} by the creator of \LaTeX~2.09. It complements the
+  material presented in this book.}
+
+\bibitem{l3team:latexnews}
+{\noopsort{LaTeX Project Team}}{\LaTeX{} Project Team}.
+\newblock \noquote{{\LaTeX} news}.
+\bibAnnote{l3team:latexnews}{An issue of \emph{\LaTeX{} News} is
+  released with each {\LaTeXe} release, highlighting changes since the last
+  release. There is also a document combining all issues since 1994, which
+  offers a good overview about the history of \LaTeXe{} as well as providing an
+  easy way to find information on all major updates and extensions that have
+  been implemented over the years. \texdoc{ltnews}}
+
+\bibitem{l3team:latexbug}
+---.
+\newblock \noquote{Bugs in {\LaTeX} software}.
+\newblock Website.
+\bibAnnote{l3team:latexbug}{The bug reporting and tracking service
+  run by the \LaTeX{} team as part of the \LaTeXe\ maintenance activity.
+  \url{https://www.latex-project.org/bugs/}}
+
+\bibitem{l3team:interface3:2021}
+---.
+\newblock The {\LaTeX}3 Interfaces, 2023.
+\bibAnnote{l3team:interface3:2021}{The reference manual for the
+  \LaTeXIIIproglayer{}, which has been part of the \LaTeX{} format since 2020
+  and thus available for package development\Dash the way for
+%%FMi tlc3 change
+  \LaTeX{} coding going forward. \texdoc{interface3}}
+
+\bibitem{l3team:lppl}
+---.
+\newblock \noquote{The {\LaTeX} project public license (version 1.3c)}, 2008.
+\bibAnnote{l3team:lppl}{The Open Source License used by the core {\LaTeXe}
+  distribution and many contributed packages. See [34]
+  for background and history. \url{https://www.latex-project.org/lppl/}}
+% \cite{Mittelbach:TB32-1-83}
+
+\bibitem{Mittelbach:TB11-3-337}
+Frank Mittelbach.
+\newblock \noquote{{E-{\TeX}: Guidelines for future {\TeX} Extensions}}.
+\newblock \textit{TUGboat}, 11(3):337--345, 1990.
+\bibAnnote{Mittelbach:TB11-3-337}{The\xAuthor{Frank Mittelbach} output of
+  \TeX{} is compared with that of hand-typeset documents. It is shown that many
+  important concepts of high-quality typesetting are not supported and that
+  further research to design a ``successor'' typesetting system to \TeX{}
+  should be undertaken. A review of the findings, 23 years later, is provided
+  in [35].
+  \url{https://tug.org/TUGboat/tb11-3/tb29mitt.pdf}}
+% \cite{Mittelbach:TB34-1-47}
+
+\bibitem{Mittelbach:TB18-4-309}
+---.
+\newblock \noquote{{{A} regression test suite for {\LaTeXe}}}.
+\newblock \textit{TUGboat}, 18(4):309--311, 1997.
+\bibAnnote{Mittelbach:TB18-4-309}{Description\xAuthor{Frank Mittelbach} of the
+  concepts and implementation of the test suite used to test for unexpected
+  side effects after changes to the \LaTeX{} kernel. One of the most valuable
+  maintenance tools for keeping \LaTeXe{} stable.
+  \url{https://tug.org/TUGboat/tb18-4/tb57mitt.pdf}}
+
+\bibitem{Mittelbach:TB18-3-199}
+---.
+\newblock \noquote{{Language Information in Structured Documents: Markup and
+  rendering---Concepts and problems}}.
+\newblock In \enquote{{International Symposium on Multilingual Information
+  Processing}}, pp. 93--104. Tsukuba, Japan, 1997.
+\newblock Invited paper. Slightly extended in \textsl{TUGboat} 18(3):199--205,
+  1997.
+\bibAnnote{Mittelbach:TB18-3-199}{This\xAuthor{Frank Mittelbach} paper
+  discusses the structure and processing of multilingual documents, both at a
+  general level and in relation to a proposed extension to standard {\LaTeX}.
+  \url{https://tug.org/TUGboat/tb18-3/tb56lang.pdf}}
+
+\bibitem{Mittelbach:TB21-3-278}
+---.
+\newblock \noquote{{Formatting documents with floats: {A} new algorithm for
+  {\LaTeXe}}}.
+\newblock \textit{TUGboat}, 21(3):278--290, 2000.
+\bibAnnote{Mittelbach:TB21-3-278}{Descriptions\xAuthor{Frank Mittelbach} of
+  features and concepts of a new output routine for \LaTeX{} that can handle
+  spanning floats in multicolumn page design.
+  \url{https://tug.org/TUGboat/tb21-3/tb68mittel.pdf}}
+
+\bibitem{Mittelbach:TB32-1-83}
+---.
+\newblock \noquote{Reflections on the history of the {{\LaTeX} Project Public
+  License (\acro{LPPL})}{\Dash}{A} software license for {\LaTeX} and more}.
+\newblock \textit{TUGboat}, 32(1):83--94, 2011.
+\bibAnnote{Mittelbach:TB32-1-83}{A review of the evolution\xAuthor{Frank
+  Mittelbach} of \LaTeX{} world's predominant license~[29].
+  \url{https://tug.org/TUGboat/tb32-1/tb100mitt.pdf}}
+% \cite{l3team:lppl}
+
+\bibitem{Mittelbach:TB34-1-47}
+---.
+\newblock \noquote{{{E-\TeX}: Guidelines for future {\TeX} Extensions ---
+  revisited}}.
+\newblock \textit{TUGboat}, 34(1):47--63, 2013.
+\bibAnnote{Mittelbach:TB34-1-47}{This article\xAuthor{Frank Mittelbach}
+  compares the output of \TeX{} with that of hand-typeset documents. This is a
+  reassessment of the findings made 23 years
+  earlier~[30]. With the new engines the situation has
+  improved, but even though there is now engine support for most problems, the
+  majority of them still represent important and open research problems for
+  high-quality automated typesetting.
+  \url{https://tug.org/TUGboat/tb34-1/tb106mitt.pdf}}
+% \cite{Mittelbach:TB11-3-337}
+
+\bibitem{10.1145/2960811.2960820}
+---.
+\newblock \noquote{A general framework for globally optimized pagination}.
+\newblock In \enquote{Proceedings of the 2016 ACM Symposium on Document
+  Engineering}, DocEng'16, pp. 11–20. Association for Computing Machinery,
+%%FMi fix in tlc3
+  New York, NY, USA, 2016.
+\newblock ISBN 978-1-4503-4438-8.
+\bibAnnote{10.1145/2960811.2960820}{This\xAuthor{Frank Mittelbach} paper
+  presents research results for globally optimized pagination using dynamic
+  programming and discusses its theoretical background. It was awarded the
+  \enquote{ACM Best Paper Award} at the DocEng 2016 conference. A greatly
+  expanded version of this paper (37 pages) titled \enquote{A General \LuaTeX\
+  Framework for Globally Optimized Pagination} was submitted to the
+  Computational Intelligence (Wiley) in 2017 and accepted January
+  2018~[38].
+  \url{https://www.latex-project.org/publications/indexbyyear/2016/}}
+%\cite{10.1111/coin.12165}
+
+\bibitem{10.1145/3103010.3103015}
+---.
+\newblock \noquote{Effective floating strategies}.
+\newblock In \enquote{Proceedings of the 2017 ACM Symposium on Document
+  Engineering}, DocEng'17, pp. 29–38. Association for Computing Machinery,
+%%FMi fix in tlc3
+  New York, NY, USA, 2017.
+\newblock ISBN 978-1-4503-4689-4.
+\bibAnnote{10.1145/3103010.3103015}{This\xAuthor{Frank Mittelbach} paper
+  presents an extension to the general framework for globally optimized
+  pagination described~[36]. The extended algorithm
+  supports automatic placement of floats as part of the optimization using a
+  flexible constraint model that allows for the implementation of typical
+  typographic rules.
+  \url{https://www.latex-project.org/publications/indexbyyear/2017/}}
+%\cite{10.1145/2960811.2960820}
+
+\bibitem{10.1111/coin.12165}
+---.
+\newblock \noquote{A general {\LuaTeX} framework for globally optimized
+  pagination}.
+\newblock \textit{Computational Intelligence}, 35(2):242--284, 2019.
+\bibAnnote{10.1111/coin.12165}{This\xAuthor{Frank Mittelbach} article is an
+  extended version (37 pages) of the 2016 ACM article \enquote{A General
+  Framework for Globally Optimized Pagination}~[36],
+  providing much more detail and additional research results. The
+  peer-reviewed publication is now freely available.
+  \url{https://www.latex-project.org/publications/indexbyyear/2020/}}
+%\cite{10.1145/2960811.2960820}
+
+%% bb -- no date?
+%%FMi fix in tlc3
+\bibitem{l3team:expl}
+Frank Mittelbach, David Carlisle, and Chris Rowley.
+\newblock \noquote{Experimental {\LaTeX} code for class design}.
+\newblock Vancouver, 1999.
+\bibAnnote{l3team:expl}{At\xAuthor{Frank Mittelbach}\xAuthor{David
+  Carlisle}\xAuthor{Chris Rowley} the TeX Users Group conference in Vancouver the
+  \LaTeX{} project team gave a talk on models for user-level interfaces and
+  designer-level interfaces in \LaTeX3 [40]. Most of
+  these ideas have been implemented in prototype implementations (e.g.,
+  template design, front matter handling, output routine, galley and paragraph
+  formatting). The source code is documented and contains further explanations
+  and examples; see also [33]. The underlying
+  programming interfaces are since 2020 part of the \LaTeX{} format as the
+  \LaTeXIIIproglayer~[28].
+  Articles: \url{https://latex-project.org/publications/indexbytopic/l3-expl3};
+  Code: \url{https://github.com/latex3/latex3}.
+%\cite{Carlisle:TB20-3-214}
+%[33]=\cite{Mittelbach:TB21-3-278}
+%[28]=\cite{l3team:interface3:2021}
+
+\bibitem{Carlisle:TB20-3-214}
+---.
+\newblock \noquote{{{New interfaces for {\LaTeX} class design, Parts I and
+  II}}}.
+\newblock \textit{TUGboat}, 20(3):214--216, 1999.
+\bibAnnote{Carlisle:TB20-3-214}{Some\xAuthor{David Carlisle}\xAuthor{Frank
+  Mittelbach}\xAuthor{Chris Rowley} proposals for the first-ever interface to
+  setting up and coding \LaTeX{} classes. While all of them were implemented as
+  experimental prototypes (see~[39]), they have been developed at
+  a time were computers were not powerful enough to enable them for
+  general use. This has finally changed and several of these ideas are now
+  making their reappearance as part of the \enquote{\LaTeX\ Tagged PDF}
+  project~[47].
+  \url{https://tug.org/TUGboat/tb20-3/tb64carl.pdf}}
+%[39]=\cite{l3team:expl}
+%[47]=\cite{Mittelbach:2020:LTP}
+
+\bibitem{feasibility-study}
+Frank Mittelbach, Ulrike Fischer, and Chris Rowley.
+\newblock {\LaTeX\ Tagged \PDF\ Feasibility Evaluation}.
+\newblock {\LaTeX\ Project}, 2020.
+\bibAnnote{feasibility-study}{This\xAuthor{Frank Mittelbach}\xAuthor{Ulrike
+  Fischer}\xAuthor{Chris Rowley} is the feasibility study undertaken by the
+  \LaTeX{} team prior to initiating the multiyear project for automatically
+  providing tagged PDF with \LaTeX{}. It explains in detail both the project
+  goals and the tasks that need to be undertaken and concludes with a detailed
+  project plan. See also~[47].
+  \url{https://latex-project.org/publications/indexbytopic/pdf/}}
+%\cite{Mittelbach:2020:LTP}
+
+\bibitem{Mittelbach:2004:TLC}
+Frank Mittelbach, Michel Goossens, Johannes Braams, David Carlisle, and Chris
+  Rowley.
+\newblock The {\LaTeX} Companion.
+\newblock Tools and Techniques for Computer Typesetting.
+  \mbox{Addison}-Wesley, Reading, MA, USA, 2nd edition, 2004.
+\newblock ISBN 0-201-36299-6.
+\bibAnnote{Mittelbach:2004:TLC}{The second edition of this book. The contributing authors have changed
+  over the years.}
+
+\bibitem{Mittelbach:2023:TLC}
+Frank Mittelbach with Ulrike Fischer.
+\newblock The {\LaTeX} Companion, Parts I \& II.
+\newblock Tools and Techniques for Computer Typesetting.
+  \mbox{Addison}-Wesley, Reading, MA, USA, 3nd edition, 2023.
+\newblock ISBN 978-0-13-816648-9.
+\bibAnnote{Mittelbach:2023:TLC}{The third edition of this book, published as two-volume set. It is also available in digital formats. \url{https://www.informit.com/store/latex-companion-parts-i-ii-3rd-edition-9780138166489}}
+
+\bibitem{Mittelbach:TB35-3-287}
+Frank Mittelbach, Will Robertson, and {{\LaTeX3} team}.
+\newblock \noquote{{\Prog{l3build}}{\Dash}{A} modern {Lua} test suite for
+  {\TeX} programming}.
+\newblock \textit{TUGboat}, 35(3):287--293, 2014.
+\bibAnnote{Mittelbach:TB35-3-287}{The\xAuthor{Frank Mittelbach}\xAuthor{Will
+  Robertson} workflow environment used by the \LaTeXTeam{} and others. Supports
+  concepts developed over the years including regression testing methods,
+  distribution builds, uploads to CTAN, and installation support.
+  \url{https://tug.org/TUGboat/tb35-3/tb111mitt-l3build.pdf}\\
+  Locally available program documentation: \texttt{texdoc l3build}
+
+\bibitem{Mittelbach:TB13-1-96}
+Frank Mittelbach and Chris Rowley.
+\newblock \noquote{{{\LaTeX} 2.09 $\hookrightarrow$ {\LaTeX}3}}.
+\newblock \textit{TUGboat}, 13(1):96--101, 1992.
+\bibAnnote{Mittelbach:TB13-1-96}{A\xAuthor{Frank Mittelbach}\xAuthor{Chris
+  Rowley} brief sketch of the \LaTeX3{} Project, retracing its history and
+  describing the structure of the system. An update appeared in \emph{TUGboat},
+  13(3):390--391, October 1992. A call for volunteers to help in the
+  development of \LaTeX3{} and a list of the various tasks appeared in
+  \emph{TUGboat}, 13(4):510--515, December 1992. Now mainly of historical
+  interest.
+  \url{https://tug.org/TUGboat/tb13-1/tb34mittl3.pdf}}
+
+\bibitem{Mittelbach:1992:PQH}
+---.
+\newblock \noquote{The pursuit of quality: How can automated typesetting
+  achieve the highest standards of craft typography?}
+\newblock In C.~Vanoirbeek and G.~Coray, editors, \enquote{{EP92}\Dash
+  Proceedings of Electronic Publishing '92, International Conference on
+%%FMi fix in tlc3
+  Electronic Publishing, Document Manipulation, and Typography, Swiss Federal
+  Institute of Technology, Lausanne, Switzerland, April 7--10, 1992}, pp.
+  261--273. Cambridge University Press, New York, 1992.
+\newblock ISBN 0-521-43277-4.
+\bibAnnote{Mittelbach:1992:PQH}{This\xAuthor{Frank Mittelbach}\xAuthor{Chris
+  Rowley} paper compares high-quality craft typography with the state of the
+  art in automated typesetting. It explains why the current paradigms of
+  computerized typesetting will not serve for high-quality formatting and
+  suggests directions for the further research necessary to improve the quality
+  of computer-generated layout.
+%  \url{https://www.researchgate.net/publication/237444403_The_Pursuit_of_Quality}%
+}
+
+\bibitem{Mittelbach:2020:LTP}
+---.
+\newblock \noquote{{{\LaTeX} Tagged PDF} --- a blueprint for a large project}.
+\newblock \textit{TUGboat}, 41(3):292--298, 2020.
+\bibAnnote{Mittelbach:2020:LTP}{An introduction and summary of the extended
+  feasibility study~[41] for the multiyear project
+  \enquote{\LaTeX\ Tagged PDF}.
+  \url{https://latex-project.org/publications/indexbytopic/pdf/}}
+%\cite{feasibility-study}
+
+\bibitem{Mittelbach:TB10-4-681}
+Frank Mittelbach and Rainer Sch{\"o}pf.
+\newblock \noquote{{With {\LaTeX} into the nineties}}.
+\newblock \textit{TUGboat}, 10(4):681--690, 1989.
+\bibAnnote{Mittelbach:TB10-4-681}{This
+%\xAuthor{Frank Mittelbach}\xAuthor[Schopf]{Rainer Schöpf} 
+  article proposes a
+  reimplementation of \LaTeX{} that preserves the essential features of the
+  current interface while taking into account the increasing needs of the
+  various user communities. It also formulates some ideas for further
+  developments. It was instrumental in the move from \LaTeX~2.09 to \LaTeXe{}.
+  \url{https://tug.org/TUGboat/tb10-4/tb26mitt.pdf}}
+
+\bibitem{Mittelbach:TB12-1-74}
+---.
+\newblock \noquote{{Towards {\LaTeX} 3.0}}.
+\newblock \textit{TUGboat}, 12(1):74--79, 1991.
+\bibAnnote{Mittelbach:TB12-1-74}{The
+%\xAuthor{Frank Mittelbach}\xAuthor[Schopf]{Rainer Schöpf}
+  objectives of the \LaTeX3 project
+  are described. The authors examine enhancements to \LaTeX's user and style
+  file interfaces that are necessary to keep pace with modern developments,
+  such as SGML. They also review some internal concepts that need revision.
+  \url{https://tug.org/TUGboat/tb12-1/tb31mitt.pdf}}
+
+
+\bibitem{Reid:CMU-CS-81-100}
+Brian Reid.
+\newblock {Scribe: A Document Specification Language and its Compiler}.
+\newblock Ph.D. thesis, Carnegie-Mellon University, Pittsburgh, PA 15213, 1980.
+\bibAnnote{Reid:CMU-CS-81-100}{The\xAuthor{Brian Reid} Ph.D.\ thesis that was
+  one of the inspirations for \LaTeX{}.
+  \url{http://reports-archive.adm.cs.cmu.edu/anon/scan/CMU-CS-81-100.pdf}}
+
+\bibitem{Rowley:TB20-3-189}
+Chris Rowley.
+\newblock \noquote{{Models and languages for formatted documents}}.
+\newblock \textit{TUGboat}, 20(3):189--195, 1999.
+\bibAnnote{Rowley:TB20-3-189}{Explores\xAuthor{Chris Rowley} many ideas around
+  the nature of document formatting and how these can be modeled and
+  implemented. \url{https://tug.org/TUGboat/tb20-3/tb64rowl.pdf}}
+
+%% bb -- "In ACM, editor, ..." but no editor name
+%% kb -- ACM itself is supposed to be the editor, I guess, but
+%% https://dl.acm.org/doi/10.1145/383962.383978 shows no editor in the
+%% suggested citation.
+\bibitem{Rowley:2001:LLA}
+---.
+\newblock \noquote{The {\LaTeX} legacy: 2.09 and all that}.
+\newblock In \textsc{PODC}'01: \enquote{Proceedings of the Twentieth Annual ACM
+%%FMi fix in tlc3
+  Symposium on Principles of Distributed Computing 2001, Newport, Rhode Island,
+  United States}}, pp. 17--25. ACM Press, New York, NY, USA, 2001.
+\newblock ISBN 1-58113-383-9.
+\bibAnnote{Rowley:2001:LLA}{Part\xAuthor{Chris Rowley} of a celebration for
+  \Author{Leslie Lamport}'s sixtieth birthday; a very particular account of the
+  technical history and philosophy of \TeX{} and \LaTeX{}.
+  \url{https://www.latex-project.org/publications/indexbytopic/2e-concepts}}
+
+%% bb -- again, no editor name
+%FMi I think we drop it
+%%FMI fix in tlc3
+\bibitem{Rowley:1997:AIR}
+Chris Rowley and Frank Mittelbach.
+\newblock \noquote{Application-independent representation of multilingual
+  text}.
+\newblock In
+%%          {Unicode Consortium}, editor,
+  \enquote{Europe, Software + the
+  Internet: Going Global with Unicode: Tenth International Unicode
+  Conference, March 10--12, 1997, Mainz, Germany}, The Unicode Consortium,
+  San Jose, CA, 1997.
+\bibAnnote{Rowley:1997:AIR}{Explores\xAuthor{Chris Rowley}\xAuthor{Frank
+  Mittelbach} the nature of text representation in computer files and the needs
+  of a wide range of text-processing software.
+  \url{https://latex-project.org/publications/1996-FMi-CAR-UnicodeConf-appl-independent-representation.pdf}}
+
+\bibitem{Schrod:TB11-1-87}
+Joachim Schrod.
+\newblock \noquote{{International {\LaTeX} is ready to use}}.
+\newblock \textit{TUGboat}, 11(1):87--90, 1990.
+\bibAnnote{Schrod:TB11-1-87}{Announces\xAuthor{Joachim Schrod} some of the
+  early standards for globalization work on \LaTeX{}.
+  \url{https://tug.org/TUGboat/tb11-1/tb27schrod.pdf}}
+
+\bibitem{ISO14289-1:2014}
+Technical Committee ISO/TC 171/SC 2.
+\newblock {ISO 14289-1:2014 Document management applications\Dash Electronic
+  document file format enhancement for accessibility\Dash 1: Use of ISO 32000-1
+  (PDF/UA-1)}, 2014.
+\bibAnnote{ISO14289-1:2014}{ISO 14289-1:2014 specifies the use of the ISO
+  32000‑1:2008 standard to produce accessible electronic documents.
+  \url{https://iso.org/standard/64599.html}}
+
+
+\bibitem{Williams:TB21-1-17}
+Graham Williams.
+\newblock \noquote{{{Graham Williams' \TeX{} Catalogue}}}.
+\newblock \textit{TUGboat}, 21(1):17--90, 2000.
+\bibAnnote{Williams:TB21-1-17}{In 2000 this\xAuthor{Graham Williams} catalogue
+  listed more than 1500 {\TeX}, {\LaTeX}, and related packages and tools on 74
+  pages and was linked directly to the items on {\CTAN}. {\CTAN} now offers it
+  in the form of several indexes with more than 5000 items covering everything
+  stored there. \url{https://tug.org/TUGboat/tb21-1/tb66catal.pdf};
+  latest version on \CTAN{} at: \url{https://ctan.org/pkg/catalogue}
+
+\end{thebibliography}

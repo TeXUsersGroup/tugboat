@@ -1,0 +1,103 @@
+% this file is read twice
+%   first:  the shortcuts for the references are defined
+%   second: the list for references is output
+% start the file with \startbibrefs and end it with \par
+% NOTE: a § can't be used in front of \endbib, move it to the previuos line
+\startbibrefs\begingroup
+\ninepoint
+\emergencystretch=0.03\hsize
+\def\newline{\hfil\break}%
+\raggedright
+\frenchspacing
+\hyphenpenalty=10000
+\def\URLaccessdate(#1){}% suppress ``accessed <date>'' info after URLs
+
+\bibitem{citeAHB} Paul W. Abrahams, Kathryn A. Hargreaves, Karl Berry,
+   {\sl \TeX\ for the Impatient}, 2003.\par
+   \biburl https://ctan.org/tex-archive/info/impatient/book.pdf\endurl
+   \endbib(2022-11-06)
+
+\hfuzz=2pt
+\bibitem{citeDC} David Carlisle, comment on \TeX\ StackExchange, 2022-06-30.\par
+   \biburl https://tex.stackexchange.com/questions/649425/is-it-safe-to-use-globaldefs-for-setting-global-pgf-key-value-pairs/649437#comment1618526_649425\endurl
+   \endbib(2023-02-28)
+\hfuzz=0.1pt\raggedright
+
+% cited in the version of [\citeDT]; not as [\citeKP, p.\thinspace1175]
+%\bibitem{citeKP} Donald E. Knuth and Michael F. Plass,
+%   ``Breaking paragraphs into lines,''
+%   {\sl Software \Dash Practice and Experience \bf11} (1981),
+%   1119--1184; reprinted with an addendum as Chapter~3
+%   in [\citeDT], 67--155.
+
+\bibitem{citeCTvA} Donald E. Knuth, \TB,
+   Volume~A of \CandT, Boston, Massachusetts: \AW, 1984.
+
+\bibitem{citeCTvB} Donald E. Knuth, \TP,
+   Volume~B of \CandT,
+   Boston,\newline Massachusetts: \AW, 1986.
+
+\bibitem{citeElog} Donald E. Knuth,
+   ``The Errors of \TeX'',\newline
+   {\sl Software\Dash Practice and Experience {\bf19}} (1989),
+   607--685; reprinted as Chapters 10 and~11 in [7], 243--339.
+   The log, i.e., Chapter~11, is still updated:\par
+   \biburl https://ctan.org/tex-archive/systems/knuth/dist/errata/errorlog.tex\endurl
+   \endbib(2022-11-02)
+% \citeLP
+%   \vskip3pt minus 2pt
+%   \bibcont Andreas Scherer provides a \PDF\ in this collection:\par
+%   \biburl https://ctan.org/tex-archive/info/knuth-pdf/errata/errorlog.pdf\endurl
+%   \endbib(2022-10-24)
+
+\bibitem{citeTWILL} Donald E. Knuth, {\tt twimac.tex}.\par
+   \biburl https://ctan.org/systems/knuth/local/lib/twimac.tex\endurl
+   \endbib(2022-11-11)
+
+\bibitem{citeLP} Donald E. Knuth, {\sl Literate Programming},
+   Stanford, California: Center for the Study of Language and
+   Information, CSLI Lecture Notes No.\ 27, 1992.
+
+\bibitem{citeMI} Donald E. Knuth, ``Mini-Indexes for Literate Programs'',
+   {\sl Software\Dash Concepts and Tools {\bf 15}} (1994), 2--11; reprinted
+   as Chapter~11 in [9],~\hbox{225--245}.
+%\citeDT
+
+% cited in the version of [\citeDT]; not as [\citeNTG, p.\thinspace353]
+%\bibitem{citeNTG} Donald E. Knuth, ``Amsterdam, 13 March 1996 / Knuth
+%   meets NTG members'', {\sl \TUB\ \bf17}:4 (1996), 342--355;
+%   reprinted as Chapter~33 in [\citeDT], 625--653.\par
+%   \biburl https://tug.org/TUGboat/tb17-4/tb53knun.pdf\endurl
+%   \bibend(2023-02-19)
+
+\bibitem{citeDT} Donald E. Knuth, {\sl Digital Typography},
+   Stanford, California: Center for the Study of Language and
+   Information, CSLI Lecture Notes No.\ 78, 1999.
+
+\bibitem{citeTUB} \TUB, archive of all publicly available articles.\par
+   \biburl https://tug.org/TUGboat/contents.html\endurl
+   \endbib(2022-10-25)
+
+%% I refer to this article but it isn't worth to be listed here.
+%\bibitem{citeNW} Neil A. Weiss, ``Creation and Incorporation of \PS\
+%   Graphics with \TeX-formatted Labels~into \TeX\ Documents'',
+%   {\sl \TUB\/ \bf13}:3 (1992), 330--334.\par
+%   \biburl https://tug.org/TUGboat/tb13-3/weiss.pdf\endurl
+%   \endbib(2022-10-24)
+
+%% Again, I refer to this article but it isn't necessary to cite it
+%\bibitem{citeUW} Udo Wermuth, ``Transparent file I/O using the original \TeX\
+%   program and the plain \TeX\ format'',
+%   {\sl \TUB\/ \bf43}:1 (2022), 59--72.\par
+%   \biburl https://tug.org/TUGboat/tb43-1/tb133wermuth-trio.pdf\endurl
+%   \endbib(2022-10-24)
+%   \vskip3pt minus 1.75pt
+%   \bibcont See also this macro package:\par
+%   \biburl https://ctan.org/pkg/transparent-io\endurl
+%   \endbib(2022-10-24)
+
+\end{thebibliography}
+% Local Variables:
+% coding: iso-latin-9-unix
+% ispell-local-dictionary: "en_US"
+% End:
