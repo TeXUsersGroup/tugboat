@@ -195,7 +195,7 @@ Then commit any changes to our source files:
  svn diff
  # write ChangeLog entries
  svn commit ...
-(if needed, also commit changes in bibtexperllibs and crossrefware.)
+If needed, also commit changes in bibtexperllibs and crossrefware.
 
 Register the production dois before archiving.
 Then archive all the files (after registering):
@@ -236,11 +236,14 @@ say "publicly available now". This is irritating, but it seems useful
 enough to state explicitly whether or not an article is public to put up
 with it. To do this:
 
-- ensure that tbPREVNcapsule.txt is up to date, without /members/ urls.
+previss=43-3
+prevnnn=135
+
+- ensure that tb${prevnnn}capsule.txt is up to date, without /members/ urls.
 
 - clean existing files, assuming the current issue NNN's files have been
   saved in dir3.uploaded as above:
-rm crossref/dir*/tbNNN*.*  # should be nothing there
+rm crossref/dir*/tb${prevnnn}*.*  # should be nothing there
 
 - in capsules/Makefile, change crossref_iss to the desired number PREVN.
 
@@ -250,20 +253,24 @@ make cro-scratch
 - check diffs (no more "available to TUG members"):
 make diff-land  # need to fix /tb directory name first
 
-- assuming ok, make list of changed files, say in/tmp/ch, then scp:
+- assuming ok, make list of changed files, say in /tmp/ch, then scp:
 cd crossref/dir1.lndout
-scp -p `cat /tmp/ch` $host:/home/httpd/html/TUGboat/tbVV-PREVN/
+scp -p `cat /tmp/ch` $host:/home/httpd/html/TUGboat/tb$previss/
 
 - update the archived changed landing files in dir1.lndout/archive.tbPREVN:
 # still in dir1.lndout:
-\mv `cat /tmp/ch` archive.tbPREVN/
+\mv `cat /tmp/ch` archive.tb${prevnnn}/
 
 - let's not bother to update the archives in the other dir*,
   since the landing files are all that's actually being changed live.
   Instead, remove the generated files so we'll be clean for next time:
 cd ..
-ls -lt dir*/tbPREV* # bbl/abs should be old, all else new
-rm dir*/tbPREV*.*
+ls -lt dir*/tb${prevnnn}* # bbl/abs should be old, rpi/xml new
+rm dir*/tb${prevnnn}*.* dir2.process/issue.xml
+
+- commit:
+svn status  # assuming just the expected landing files:
+svn commit -m"$previss (tb$prevnnn) public"
 
 === If there were hand edits in the crossref/dir2.process directory
 (hopefully not), have to take more care, as follows:
