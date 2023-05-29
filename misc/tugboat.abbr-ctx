@@ -161,6 +161,7 @@
 \def\WEBTOC    {Web2C}
 \def\WIKI      {Wiki}
 \def\WINDOWS   {Windows}
+\def\XELATEX   {\XeLaTeX}
 \def\XETEX     {\XeTeX}
 \def\XFORM     {\acro{XF}orm}
 \def\XITS      {\acro{XITS}}
@@ -199,6 +200,7 @@
 \def\in#1[#2]{#1~\ref{#2}}
 \def\inrightmargin{\marginpar}
 \def\loadtypescriptfile[#1]{}
+\def\logo[#1]#2{}
 \def\low#1{\ensuremath{_{\,\textrm{\footnotesize #1}}}}
 \def\mathitalicsmode{}
 \def\mtp#1{\mbox{ #1 }}
@@ -222,7 +224,7 @@
 \def\starthead#1{\item[#1]}
 \let\stop=\relax
 \def\stophead{}
-\def\subject{\section}
+\def\subject[#1]{}
 \def\subsubject{\subsection}
 \def\switchtobodyfont[#1]{}
 \def\sym{\item}
@@ -252,7 +254,8 @@
 \def\myfigureenv{figure}
 }
 
-\long\def\setuphead[#1][#2]{}
+\long\def\setupbodyfont[#1]{}
+\long\def\setuphead[#1] [#2]{}
 \long\def\setuplayout[#1]{}
 \long\def\setuppagenumbering[#1]{}
 \long\def\setuptolerance[#1]{}
@@ -284,12 +287,15 @@
 
 % sometimes we want to ignore buffers, sometimes print them.
 \def\tubignorebuffers{\long\def\startbuffer##1\stopbuffer{}}
-\def\tubverbatimbuffers{\let\startbuffer=\starttyping}
+\def\tubverbatimbuffers{\def\startbuffer{\starttyping}}
 \tubverbatimbuffers % default
 \newcommand{\typebuffer}[1][]{}% ignore possible optional arg
 \def\getbuffer{}
 \def\inlinebuffer{}
 \def\stopbuffer{\errmessage{must literally end verbatim buffer}}
+
+\def\startcolumns[#1]{}
+\def\stopcolumns{}
 
 \long\def\startcombination#1\stopcombination{}
 
@@ -334,6 +340,7 @@
 \def\stopnarrower{\stopquotation}
 
 \long\def\startplacefigure#1\stopplacefigure{}
+\long\def\startplacefloat#1\stopplacefloat{}
 
 \def\startplacetable[#1]{}
 \def\stopplacetable{}
@@ -344,7 +351,7 @@
 \long\def\starttexdefinition#1\stoptexdefinition{}
 \long\def\startTEXpage#1\stopTEXpage{}
 
-\let\starttext = \relax
+\def\starttext{\begin{document}\maketitle}
 \let\stoptext = \stopArticle
 
 \def\startsection[title=#1]{\section{#1}}

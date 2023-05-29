@@ -85,7 +85,7 @@ sed \
     -e 's/\\#/#/g' \
     -e 's/\\&/\&amp;/g' \
     -e 's/~/\&nbsp;/g' \
-    -e 's/\\Dash */\&mdash;/' \
+    -e 's/\\Dash */\&mdash;/g' \
     -e 's/---/\&mdash;/g' \
     -e 's/--/\&ndash;/g' \
     -e 's/\.\.\./\&hellip;/g' \

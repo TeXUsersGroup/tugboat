@@ -1,3 +1,14 @@
+2023-05-29  Karl Berry  <karl@freefriends.org>
+
+	* tex2html-tub (\Dash): /g.
+
+	* tugboat.abbr-ctx (\XELATEX, \logo, \setupbodyfont, \setuphead,
+	\startcolumns, \stopcolumns, \startplacefloat): ignore.
+	(\subject): now ignore, used for title.
+	(\starttext): try making this \begin{document}\maketitle.
+	(\tubverbatimbuffer): \def not \let.
+	For tb137hagen-bottomaccent.
+
 2023-03-30  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.abbr-ctx (\BACHOTEX, \alignhere, \blackrule, \breakhere,
