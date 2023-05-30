@@ -82,7 +82,7 @@ assert_pdfpagecount () {
 # We do some unusual Ghostscript calls, so don't use ps2pdf-tub.  But
 # tell gs not to rotate our pages (tb132voss-hvfloat).
 gs="gs -q -dAutoRotatePages=/None"
-cd $tb/CADMUS || exit 1
+cd CADMUS || cd $tb/CADMUS || exit 1
 test -d upload || mkdir upload
 rm -f upload/*
 cd upload || exit 1

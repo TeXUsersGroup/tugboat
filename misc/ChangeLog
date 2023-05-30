@@ -1,3 +1,8 @@
+2023-05-30  Karl Berry  <karl@tug.org>
+
+	* make-issue-pages-tub: cd ./CADMUS before $tb/CADMUS,
+	in lieu of really figuring out our directory.
+
 2023-05-29  Karl Berry  <karl@freefriends.org>
 
 	* tex2html-tub (\Dash): /g.
