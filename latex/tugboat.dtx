@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2023-03-27 v2.29
+                   [2023-06-01 v2.29
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -318,19 +318,9 @@
 % Class options: |draft| vs.\ |preprint| vs.\ |final|.
 %
 %    \begin{macrocode}
-\DeclareOption{draft}{%
+\DeclareOption{draft}{% [draft], the default
   \AtEndOfClass{%
     \setcounter{page}{901}%
-    %
-    % Put a question mark into the page number in draft mode.
-    \let\tuborigthepage = \thepage
-    \def\thepage{%
-      \ifnum\value{page}>900
-        \textsl{?\texorpdfstring{\,}{}\@arabic{\numexpr\the\c@page-900\relax}}%
-      \else
-        \arabic{page}%
-      \fi}%
-    %
     \BlackBoxes
     \def\MakeRegistrationMarks{}%
     \PrelimDrafttrue
@@ -338,22 +328,22 @@
 }
 
 \newif\ifpreprint
-\def\preprint{\preprinttrue}
+\def\preprint{\preprinttrue} % [preprint], hardly used
 \DeclareOption{preprint}{%
    \preprinttrue
 }
 
-\newif\iftubfinaloption % [final]
+\newif\iftubfinaloption % [final], manually inserted by us for processing
 \DeclareOption{final}{%
   \tubfinaloptiontrue
   \AtEndOfClass{%
-    \let\thepage=\tuborigthepage
     \NoBlackBoxes
     % Insert draft date into the header even with [final], if we are not
     % doing a production run. (tugboat.dates sets up page numbers
     % above 900 in such pseudo-draft mode.) We use [final] in the first
-    % place for this case because draft can change page layout, wrt
-    % registration marks, etc.
+    % place for this case because draft vs. final can change page
+    % layout, wrt registration marks, etc. (Not good, but too painful to
+    % change at this late date.)
     \ifnum\value{page}>900 \PrelimDrafttrue \else \PrelimDraftfalse \fi
     \@tubrunningfull
   }%
@@ -933,6 +923,7 @@
 \def\VorTeX{V\kern-2.7\p@\lower.5ex\hbox{O\kern-1.4\p@ R}\kern-2.6\p@\TeX}
 \def\XeT{X\kern-.125em\lower.424ex\hbox{E}\kern-.1667emT\@}
 \def\XML{\acro{XML}}
+\def\XMP{\acro{XMP}}
 \def\WEB{\texttt{WEB}\@}
 \def\WEAVE{\texttt{WEAVE}\@}
 \def\WYSIWYG{\acro{WYSIWYG}}
@@ -1019,10 +1010,10 @@
 % squashed together than three period characters. This just looks wrong.
 % It is too painful to try to redefine in general, but provide the
 % normal definition for \cs{let} in individual papers.
-\DeclareRobustCommand{\tubdots}{%
+\DeclareRobustCommand{\tubdots}{\ifmmode\mathellipsis\else
    .\kern\fontdimen3\font
    .\kern\fontdimen3\font
-   .\kern\fontdimen3\font}
+   .\kern\fontdimen3\font\fi}
 %
 % \begin{macro}{\allowhyphens}
 % Hyphen control: first, we save (via \cs{edef}) the hyphenpenalties in
@@ -1222,7 +1213,7 @@
 %
 % \subsection{Assorted user-level markup}
 %
-% \LaTeXe{} defines a robust \cs{,}, but that we provide a new definition
+% \LaTeXe{} defines a robust \cs{,} we provide a new definition
 % of |~| by redefining \cs{\nobreakspace} (\cs{DeclareRobustCommand}
 % doesn't mind redefinition, fortunately). This is based on the version
 % in AMS-\TeX---the \LaTeXe{} version (|ltspace.dtx|) has \cs{leavevmode}
@@ -2287,8 +2278,7 @@
 % more full columns, 
 % above the top of an article to leave space to paste up a previous
 % article that has finished on the same page.  This is a fall back to
-% accommodate the fact that multiple articles cannot yet be run together
-% easily with \LaTeXe.
+% accommodate the fact that multiple articles cannot be run together % easily.
 % 
 % In addition, if the |secondcolstart| option was specified, do
 % |\null\newpage| to move over. This is separate from |\PreTitleDrop|,
@@ -2301,16 +2291,16 @@
   {\@articletitletrue\@r@maketitle}%
 }
 \def\@r@maketitle{\par
+ \iftubsecondcolstart \null\newpage\tubsecondcolstartextra \fi
  \ifdim\PreTitleDrop > \z@
    \loop
    \ifdim \PreTitleDrop > \textheight
      \vbox{}\vfil\eject
      \advance\PreTitleDrop by -\textheight
    \repeat
-   \vbox to \PreTitleDrop{}
+   \vbox to \PreTitleDrop{\vfil}%
    \global\PreTitleDrop=\z@
  \fi
- \iftubsecondcolstart \null\newpage\tubsecondcolstartextra \fi
  \begingroup
  \setcounter{footnote}{0}
  \global\@topnum\z@ % disallow floats above the title
@@ -2744,6 +2734,7 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
+% #1 is both the section number and title; #2 is the page number.
 \def\l@section#1#2{\addpenalty{\@secpenalty}%
   \addvspace{\TBtocsectionspace}%
   \@tempdima 1.5em
@@ -2752,7 +2743,7 @@
     \parfillskip\z@
     \TBtocsectionfont
     \leavevmode\advance\leftskip\@tempdima\hskip-\leftskip#1\nobreak\hfil
-    \nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+    \nobreak\hb@xt@\@pnumwidth{\hss\tubtypesetpageno}\par
   \endgroup}
 %    \end{macrocode}
 %
@@ -3494,11 +3485,23 @@
 \def\@oddhead{\MakeRegistrationMarks
   \frenchspacing
   \normalsize\csname normalshape\endcsname\rm \tubheadhook
-  \rtitlex\qquad \midrtitle\hfil \rtitlenexttopage\quad \thepage}
+  \rtitlex\qquad \midrtitle\hfil \rtitlenexttopage\quad \tubtypesetpageno}
 \def\@evenhead{\MakeRegistrationMarks
   \frenchspacing
   \normalsize\csname normalshape\endcsname\rm \tubheadhook
-  \thepage \quad\rtitlenexttopage \hfil\midrtitle \qquad\rtitlex}
+  \tubtypesetpageno \quad\rtitlenexttopage \hfil\midrtitle \qquad\rtitlex}
+
+% Put a ? into the page number in all but a final run, so people
+% aren't tempted to cite it.
+\def\tubtypesetpageno{%
+  \ifnum\c@page>900
+    % in CM, numerals are exactly .5em, ? not quite that wide.
+    \makebox[.5em][l]{\small ?}%
+    \textsl{\@arabic{\numexpr\the\c@page-900\relax}}% e-tex
+  \else
+    \@arabic{\the\c@page}%
+  \fi
+}
 
 % can be used to reset the font, e.g., tb98kuester.
 \def\tubheadhook{}

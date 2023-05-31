@@ -1,3 +1,24 @@
+2023-05-22  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (draft,final): do not redefine \thepage.
+	(\tubtypesetpageno): separate page number typesetting,
+	with preceding ? if the page number > 900.
+	(\l@section, \@oddhead, \@evenhead): use \tubtypesetpageno.
+
+	(\XMP): new abbrev.
+	(\tubdots): do \mathellipsis in math mode.
+	(\@r@maketitle): do secondcolstart before the PreTitleDrop,
+	so the latter might be usable in that case.
+
+2023-04-17  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (draft, final): do not redefine \thepage indirectly.
+	(\thepage): just redefine it to directly handle draft (pageno>900)
+	and final cases.
+	(\XMP): new abbrev.
+	(\@r@maketitle): do secondcolstart before \PreTitleDrop,
+	so the latter might take effect. We'll have to try it.
+
 2023-04-17  Karl Berry  <karl@tug.org>
 
 	* tugboat.dtx (\tubsecondcolstartextra): new hook for
