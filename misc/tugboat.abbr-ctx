@@ -171,6 +171,7 @@
 
 % 
 \def\alignhere{}
+\def\arg{\tubbraced}
 \def\at{}
 \def\bfc{}
 \def\blackrule[#1]#2{\vrule depth0pt height1ex width#2 \relax}
