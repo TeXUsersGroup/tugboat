@@ -1,3 +1,13 @@
+2023-06-11  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.sty,
+	* tugboat.cmn: release to CTAN.
+	v1.28 2023-06-11 (for both).
+
+2022-11-06  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.cmn (\TP): print : in sl not rm.
+
 2022-11-06  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.cmn (\hyphenation): add Lua-Meta.

@@ -1,6 +1,6 @@
 %% @texfile{
 %%     filename   = "tugboat.cmn",
-%%     copyright  = "Copyright 1993-1996,2006,2008,2011-2022 TeX Users Group.
+%%     copyright  = "Copyright 1993-1996,2006,2008,2011-2023 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -29,8 +29,8 @@
 \fi
 \next
 
-\def\fileversion{v1.27}
-\def\filedate{2022-11-06}
+\def\fileversion{v1.28}
+\def\filedate{2023-06-11}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -200,7 +200,7 @@
 \def\SVG{\acro{SVG}}
 \def\TANGLE{{\tt TANGLE}\spacefactor1000 }
 \def\TB{{\sl The \TeX\-book\/}}
-\def\TP{{\sl \TeX\/}:\ {\sl The Program\/}}
+\def\TP{{\sl \TeX:\ The Program\/}}
 \def\TeX{T\kern-.1667em\lower.424ex\hbox{E}\kern-.125emX\spacefactor1000 }
 \def\TeXhax{\TeX hax}
 %       Don Hosek
@@ -1013,7 +1013,8 @@ that may not be obvious.  For full definitions, see real code above.
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
-                      (belatedly) add \meta.
+1.28      11 Jun 23   (belatedly) add \meta, change \TP to print : in \sl,
+                      Lua-Meta hyphenation exception.
 
 1.24       5 Sep 18   \tugboatcmn sentinent, \plusplus separated out.
 
