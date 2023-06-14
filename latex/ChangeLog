@@ -1,3 +1,21 @@
+2023-06-14  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (draft): \PassOptionsToPackage{final}{hyperref}
+	to avoid the global [draft] option being passed on.
+
+	(final): don't bother setting \NoBlackBoxes, since we've
+	always overridden this in tugboat.dates anyway.
+	
+	(\TP): print the colon in \sl too.
+	
+	(\tubdots): show example of redefining \tubdots.
+	
+	(\l@section, \@oddhead, \@evenhead): back to using \thepage.
+	(\thepage): redefine to insert our ? for draft pages.
+	
+	(\nomarkfootnote): locally disable \Hy@Warning since our support
+	footnotes will always generate an "empty anchor" warning.
+
 2023-05-22  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (draft,final): do not redefine \thepage.

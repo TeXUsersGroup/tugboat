@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2023-06-01 v2.29
+                   [2023-06-14 v2.29
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -319,6 +319,10 @@
 %
 %    \begin{macrocode}
 \DeclareOption{draft}{% [draft], the default
+  % If the user loads hyperref, avoid passing on the global draft option
+  % (which would remove all links in the pdf).
+  \PassOptionsToPackage{final}{hyperref}
+  %
   \AtEndOfClass{%
     \setcounter{page}{901}%
     \BlackBoxes
@@ -337,7 +341,6 @@
 \DeclareOption{final}{%
   \tubfinaloptiontrue
   \AtEndOfClass{%
-    \NoBlackBoxes
     % Insert draft date into the header even with [final], if we are not
     % doing a production run. (tugboat.dates sets up page numbers
     % above 900 in such pseudo-draft mode.) We use [final] in the first
@@ -367,7 +370,7 @@
     \pdfstringdefDisableCommands{%
       \let\acro\relax
       \let\origDash=\Dash \def\Dash{\texorpdfstring{\origDash}{--}}%
-      % lots more could be added.
+      % lots more could/should be added.
     }%
   \fi
 }
@@ -872,7 +875,7 @@
 \def\TANGLE{\texttt{TANGLE}\@}
 \def\TB{\textsl{The \TeX\-book}}
 \def\TIFF{\acro{TIFF}}
-\def\TP{\textsl{\TeX}:\ \textsl{The Program}}
+\def\TP{\textsl{\TeX:\ The Program\/}}
 \DeclareRobustCommand{\TeX}{T\kern-.1667em\lower.424ex\hbox{E}\kern-.125emX\@}
 \def\TeXhax{\TeX hax}
 \def\TeXMaG{\TeX M\kern-.1667em\lower.5ex\hbox{A}%
@@ -1009,7 +1012,8 @@
 % ellipsis character (U+2026) a single character's width, typically more
 % squashed together than three period characters. This just looks wrong.
 % It is too painful to try to redefine in general, but provide the
-% normal definition for \cs{let} in individual papers.
+% normal definition to reset in individual papers with, e.g.:
+% |\ifx\tubdots\undefined \else \let\dots\tubdots \let\ldots\tubdots \fi|
 \DeclareRobustCommand{\tubdots}{\ifmmode\mathellipsis\else
    .\kern\fontdimen3\font
    .\kern\fontdimen3\font
@@ -2743,7 +2747,7 @@
     \parfillskip\z@
     \TBtocsectionfont
     \leavevmode\advance\leftskip\@tempdima\hskip-\leftskip#1\nobreak\hfil
-    \nobreak\hb@xt@\@pnumwidth{\hss\tubtypesetpageno}\par
+    \nobreak\hb@xt@\@pnumwidth{\hss\thepage}\par
   \endgroup}
 %    \end{macrocode}
 %
@@ -3485,23 +3489,38 @@
 \def\@oddhead{\MakeRegistrationMarks
   \frenchspacing
   \normalsize\csname normalshape\endcsname\rm \tubheadhook
-  \rtitlex\qquad \midrtitle\hfil \rtitlenexttopage\quad \tubtypesetpageno}
+  \rtitlex\qquad \midrtitle\hfil \rtitlenexttopage\quad\thepage}
 \def\@evenhead{\MakeRegistrationMarks
   \frenchspacing
   \normalsize\csname normalshape\endcsname\rm \tubheadhook
-  \tubtypesetpageno \quad\rtitlenexttopage \hfil\midrtitle \qquad\rtitlex}
+  \thepage\quad\rtitlenexttopage \hfil\midrtitle \qquad\rtitlex}
 
 % Put a ? into the page number in all but a final run, so people
 % aren't tempted to cite it.
-\def\tubtypesetpageno{%
-  \ifnum\c@page>900
-    % in CM, numerals are exactly .5em, ? not quite that wide.
-    \makebox[.5em][l]{\small ?}%
-    \textsl{\@arabic{\numexpr\the\c@page-900\relax}}% e-tex
+% 
+% We redefine |\thepage| so that the ? will also be used in page
+% references (in the text) and the toc. This is what's recommended by
+% the LaTeX developers: https://tex.stackexchange.com/questions/687258.
+% (Ulrike's example does this after loading hyperref, but doesn't seem
+% to matter?)
+\renewcommand\thepage{%
+  \ifnum\value{page}>900
+    % in CM, numerals are exactly .5em.
+    %
+    % The \texorpdfstring avoids the usual hyperref warning:
+    %   Token not allowed in a PDF string ... removing `\@ifnextchar' 
+    \texorpdfstring{\makebox[.5em][l]{\small ?}}{?}%
+    %
+    \textsl{\@arabic{\numexpr\value{page}-900\relax}}% e-tex
   \else
-    \@arabic{\the\c@page}%
+    \@arabic{\value{page}}%
   \fi
 }
+% This custom page number format will break makeindex, etc., so we have
+% to tell about the format. Per Ulrike:
+% \usepackage{index}
+% \newcommand\specialthepage{\inteval{\value{page}-900}}
+% \newindex[specialthepage]*{default}{idx}{ind}{Index}
 
 % can be used to reset the font, e.g., tb98kuester.
 \def\tubheadhook{}
@@ -3754,6 +3773,7 @@
   \def\thefootnote{}%
   % no period, please, also no fnmark.
   \def\@makefntext##1{##1}%
+  \def\Hy@Warning##1{}%
   \footnotetext{\noindent #1#2}%
   \endgroup
 }

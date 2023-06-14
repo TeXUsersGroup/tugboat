@@ -1,6 +1,10 @@
 $Id$
 This file records noteworthy changes.  This file is public domain.
 
+ltugboat.cls:
+- print page numbers with preceding ? in draft mode, including in references.
+- new abbrev \XMP.
+
 -----------------
 2.29 (2023-03-08):
 
