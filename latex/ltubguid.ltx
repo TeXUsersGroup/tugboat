@@ -571,25 +571,18 @@ normal text size.
 
 \section{Floating inserts}
 
-The classes do not make any change to \LaTeX{}'s built-in provision
-for floating inserts, so that authors may generate figures and tables
-just as they would in any `normal' \LaTeX{} document.  Figure and
-table captions, and labels referring to them, are also substantially
-untouched.
+The classes do not make any change to \LaTeX{}'s built-in provision for
+floating inserts, so that authors may write figures and tables as usual,
 
-However, since both classes typeset in two columns, authors must
-distinguish between the \envname{figure} and \envname{table} environments
-(which produce floats that are the same width as the column) and the
-\envname{figure*} and \envname{table*} (which produce floats that are the same
-width as the page).
+The default is for floats to be the width of the column. To make a float
+which is the width of the whole page, use \envname{figure*} and
+\envname{table*}.
 
-%\begin{itemize}
-%\item figures and tables as normal
-%\item captions and labels work whatever (i.e., no restriction on
-%  numbering)
-%\item twocolumn setting implies distinction between \envname{figure} and
-%  \envname{figure*} 
-%\end{itemize}
+Regarding caption placement, \TUB's convention is to put captions for
+figures beneath the figure, but captions for tables and listings above
+the table\slash listing. Please follow this convention unless there is a
+specific reason not to. As a reminder, \cs{label} commands should always
+follow the \cs{caption}.
 
 \section{Special-purpose typesetting}
 
@@ -983,7 +976,5 @@ forms provided by the `plain' macros.
 
 \advance\signaturewidth by 8pt
 \makesignature
-
-captions below figures but above tables and listings
 
 \end{document}
