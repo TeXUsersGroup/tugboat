@@ -1110,10 +1110,10 @@ FUNCTION {fin.entry}
 % Title and url fields required;
 % author, note, year, month, and lastchecked fields optional
 % See references 
-%   ISO 690-2 http://www.nlc-bnc.ca/iso/tc46sc9/standard/690-2e.htm
-%   http://www.classroom.net/classroom/CitingNetResources.html
-%   http://neal.ctstateu.edu/history/cite.html
-%   http://www.cas.usf.edu/english/walker/mla.html
+%   [gone] ISO 690-2 http://www.nlc-bnc.ca/iso/tc46sc9/standard/690-2e.htm
+%   [gone] http://www.classroom.net/classroom/CitingNetResources.html
+%   [gone] http://neal.ctstateu.edu/history/cite.html
+%   [gone] http://www.cas.usf.edu/english/walker/mla.html
 % for citation formats for web pages.
 FUNCTION {webpage}
 { output.bibitem
@@ -1132,7 +1132,8 @@ FUNCTION {webpage}
   new.block
   title empty$ 'skip$ 'possibly.setup.inlinelink if$
   format.title "title" output.check
-  inbrackets onlinestring output
+  % This causes the year to be output in brackets, which we don't want:
+  %   inbrackets onlinestring output
   new.block
   year empty$
     'skip$

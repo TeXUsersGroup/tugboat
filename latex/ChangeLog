@@ -1,3 +1,9 @@
+2023-06-22  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst (webpage): omit "inbrackets onlinestring output"
+	since it causes the year (or other material) to be printed
+	in brackets. Not what we want.
+
 2023-06-14  Karl Berry  <karl@freefriends.org>
 
 	* ltubguid.ltx: mention float placement: captions below figures,
