@@ -85,6 +85,7 @@ ENTRY
     version    % ctan
     %
     journaltie % tub
+    monthtie   % tub
     newpage    % tub
     nowarning  % tub
     prebibitem % tub
@@ -189,9 +190,10 @@ FUNCTION {output.nonnull.original}
     { last.output.check "journal" = not
         { ", " * }
         { journaltie empty$ not
-          { "~" * }
-          { " " * }
+          { "~" }
+          { " " }
           if$
+          *
         }
       if$
       write$
@@ -608,7 +610,14 @@ FUNCTION {format.date}
     }
     { month empty$
         'year
-        { month " " * year * }
+        { month
+          monthtie empty$ not
+            { "~" }
+            { " " }
+          if$
+          *
+          year *
+        }
       if$
     }
   if$

@@ -1,5 +1,9 @@
 2023-06-22  Karl Berry  <karl@freefriends.org>
 
+	* tugboat.bst (monthtie): new field, used now for patching
+	tb133chernoff-widows, reference [8].
+	* ltubguid.ltx (Bibliography): mention.
+
 	* tugboat.bst (webpage): omit "inbrackets onlinestring output"
 	since it causes the year (or other material) to be printed
 	in brackets. Not what we want.
