@@ -1,3 +1,10 @@
+2023-06-22  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr-ctx (\tubextratype): new hook macro for
+	tb137ramm-covers.
+	(\tquote): use it to handle \quote{\type{...}}.
+	(\type): call LaTeX's \@noligs to disable ligatures.
+
 2023-05-30  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.abbr-ctx (\arg): new abbrev for tb137ramm-covers.

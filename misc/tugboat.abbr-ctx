@@ -262,15 +262,24 @@
 \long\def\setuptolerance[#1]{}
 \long\def\setupwhitespace[#1]{}
 
+\def\tubextratype{}
+% Too painful to handle \quote{\type{...}}, switch to \tquote.
+\def\tquote{`\def\tubextratype{\aftergroup'}} % avoid taking arg here
+
+\makeatletter
 \def\type{\bgroup
   \catcode`\\=12 \catcode`##=12 \catcode`\&=12 \catcode`$=12 \catcode`_=12
-  \catcode`\%=12 %\catcode`!=0
+  \catcode`\%=12 
+  \@noligs % disable tt ligatures, defined in ltmiscen.dtx
+  %\catcode`!=0 % in case we want escapes
   \def\\{\char`\\ }%
+  \tubextratype
   \finishtype}
 \def\finishtype#1{\texttt{%
   \spaceskip = .3333em \xspaceskip = \spaceskip
-  #1}\egroup\spacefactor=1000 }
+  #1}\egroup\def\tubextratype{}\spacefactor=1000 }
 \def\typ{\type}
+\makeatother
 
 %  start .. stop
 
