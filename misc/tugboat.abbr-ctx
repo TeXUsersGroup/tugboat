@@ -277,7 +277,7 @@
   \finishtype}
 \def\finishtype#1{\texttt{%
   \spaceskip = .3333em \xspaceskip = \spaceskip
-  #1}\egroup\def\tubextratype{}\spacefactor=1000 }
+  #1}\egroup\gdef\tubextratype{}\spacefactor=1000 }
 \def\typ{\type}
 \makeatother
 
