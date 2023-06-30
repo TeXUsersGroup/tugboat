@@ -1,3 +1,9 @@
+2023-06-29  Karl Berry  <karl@freefriends.org>
+
+	* cahiers.sty (\credit): do not force \normalsize;
+	seems better to follow the item font size
+	when we switch it to \small.
+
 2023-06-24  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.abbr-ctx (\finishtype): \gdef\tubextratype{}.

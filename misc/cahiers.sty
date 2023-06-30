@@ -1,11 +1,11 @@
 % $Id$
-% Copyright 1999-2022 TeX Users Group.
+% Copyright 1999-2023 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 % This is a LaTeX2e package for TUGboat abstract summaries,
 % originally just for cahiers.
 %
-\def\filedate{2021/03/15}
+\def\filedate{2023/06/29}
 \ProvidesPackage{cahiers}[\filedate TUGboat abstract summaries]
 %
 % uses production LaTeX2e commands
@@ -126,7 +126,8 @@
 }
 
 \newcommand{\credit}[1]%
-  {\begingroup\normalsize
+  {\begingroup
+   \parindent=0pt
    \ifvmode
      \nobreak\par
      \nobreak\vskip 1pc plus.5pc minus.5pc
