@@ -10,6 +10,7 @@
 	(All this from Ulrike.)
 	
 	* tubhytest.tex: add \tableofcontents and references.
+	* tubreftest.tex: simple page and name references.
 	* Makefile (check): exit after first test; sort.
 
 2023-06-22  Karl Berry  <karl@freefriends.org>
