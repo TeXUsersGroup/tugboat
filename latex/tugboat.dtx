@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2023-06-14 v2.29
+                   [2023-07-03 v2.30
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -2738,16 +2738,46 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-% #1 is both the section number and title; #2 is the page number.
-\def\l@section#1#2{\addpenalty{\@secpenalty}%
+% |#1| is both the section number and title; |#2| is the page number.
+% Per Ulrike, the hook calls are for tagging, introduced with the
+% June 2023 \LaTeX.
+\def\l@section#1#2{%
+  \addpenalty{\@secpenalty}%
   \addvspace{\TBtocsectionspace}%
   \@tempdima 1.5em
   \begingroup
-    \parindent\z@ \rightskip\z@  % article style makes \rightskip > 0
+    \parindent\z@
+    \rightskip\z@  % article style makes \rightskip > 0
     \parfillskip\z@
     \TBtocsectionfont
-    \leavevmode\advance\leftskip\@tempdima\hskip-\leftskip#1\nobreak\hfil
-    \nobreak\hb@xt@\@pnumwidth{\hss\thepage}\par
+    \leavevmode
+    \advance\leftskip\@tempdima
+    \hskip-\leftskip
+    \ifx\UseHookWithArguments\undefined\else
+      \UseHookWithArguments{contentsline/text/before}{4}
+        {\toclevel@part}{#1}{#2}{\@contentsline@destination}%
+    \fi
+    % don't worry if this cs is not defined, hence the \csname.
+    \csname contentsline@text@1@format\endcsname{#1}% number and title
+    \ifx\UseHookWithArguments\undefined\else
+      \UseHookWithArguments{contentsline/text/after}{4}
+        {\toclevel@part}{#1}{#2}{\@contentsline@destination}% 
+    \fi
+    \nobreak
+    \hfil
+    \nobreak
+    % page number
+    \hb@xt@\@pnumwidth{\hss
+      \ifx\UseHookWithArguments\undefined\else
+        \UseHookWithArguments{contentsline/page/before}{4}
+          {\toclevel@part}{#1}{#2}{\@contentsline@destination}%
+      \fi
+      #2%
+      \ifx\UseHookWithArguments\undefined\else
+        \UseHookWithArguments{contentsline/page/after}{4}
+          {\toclevel@part}{#1}{#2}{\@contentsline@destination}%
+      \fi
+    }\par
   \endgroup}
 %    \end{macrocode}
 %
@@ -2845,7 +2875,13 @@
 % The name label comes from the moveable bit of the section argument;
 % we subvert the \cs{@sect} and \cs{@ssect} commands (the latter
 % deals with starred section commands) to grab the relevant argument.
+% 
+% As of the June 2023 \LaTeX\ (or somewhat earlier, but this is good
+% enough), there are hooks that allow us to avoid redefinig
+% \cs{@sect} and \cs{@ssect}.
+%    
 %    \begin{macrocode}
+\@ifl@t@r\fmtversion{2023-06-01}{}{%
 \let\TB@@sect\@sect
 \let\TB@@ssect\@ssect
 \def\@sect#1#2#3#4#5#6[#7]#8{%
@@ -2856,6 +2892,7 @@
  \def\@currentlabelname{#5}%
  \TB@@ssect{#1}{#2}{#3}{#4}{#5}%
 }
+} % LaTeX earlier than June 2023 
 %    \end{macrocode}
 %
 % We output the name label as a second \cs{newlabel} command 
@@ -2864,24 +2901,26 @@
 % So we redefine \cs{label} to first call the standard \LaTeX\
 % \cs{label} and then write our named label as |nr<label>|.
 % 
+% Similarly, we only need this with pre-June 2023 \LaTeX.
+% With more recent LaTeX, define \@currentlabelname via hooks.
 %    \begin{macrocode}
-\let\@savelatexlabel=\label  % so save original LaTeX command
-%
-\def\label#1{% de
-  \@savelatexlabel{#1}%
-  \@bsphack
-  \if@filesw
-    \protected@write\@auxout{}%
-      {\string\newlabel{nr@#1}{{\@currentlabel}{\@currentlabelname}}}%
-  \fi
-  \@esphack
+\@ifl@t@r\fmtversion{2023-06-01}{%
+  \AddToHookWithArguments{cmd/@sect/before}{\def\@currentlabelname{#7}}%
+  \AddToHookWithArguments{cmd/@ssect/before}{\def\@currentlabelname{#5}}%    
+}{%
+  \let\@savelatexlabel=\label  % so save original LaTeX command
+  %
+  \def\label#1{%
+    \@savelatexlabel{#1}%
+    \@bsphack
+    \if@filesw
+      \protected@write\@auxout{}%
+        {\string\newlabel{nr@#1}{{\@currentlabel}{\@currentlabelname}}}%
+    \fi
+    \@esphack}
+  % in case there are no sectioning commands:
+  \let\@currentlabelname\@empty
 }
-%    \end{macrocode}
-%
-% Of course, in the case of a sufficiently mad author, there will be
-% no sectioning commands, so we need to
-%    \begin{macrocode}
-\let\@currentlabelname\@empty
 %    \end{macrocode}
 %
 % Getting named references is then just like getting page references in
@@ -2900,9 +2939,18 @@
 % 
 %    \begin{macrocode}
 \AtBeginDocument{%
-  \providecommand\nameref[1]{%
-    \expandafter\@setref
-    \csname r@nr@#1\endcsname\@secondoftwo{#1}%
+  \@ifl@t@r\fmtversion{2023-06-01}%
+  { % after June 2023, LaTeX stores the label name; use that.
+    \long\def\@thirdoffive#1#2#3#4#5{#3}
+    \providecommand\nameref[1]{%
+      \expandafter\@setref
+      \csname r@#1\endcsname\@thirdoffive{#1}}%
+  }
+  { % for earlier versions, still avoid overwriting \nameref per above.
+    % but if not otherwise defined, use the "nr" label defined by our \label.
+   \providecommand\nameref[1]{%
+     \expandafter\@setref
+     \csname r@nr@#1\endcsname\@secondoftwo{#1}}%
   }%
 }
 %    \end{macrocode}

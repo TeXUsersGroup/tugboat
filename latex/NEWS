@@ -2,8 +2,17 @@ $Id$
 This file records noteworthy changes.  This file is public domain.
 
 ltugboat.cls:
-- print page numbers with preceding ? in draft mode, including in references.
+- print page numbers with preceding ? in draft mode, including in references,
+  by redefining \thepage.
 - new abbrev \XMP.
+
+tugboat.bst:
+- for webpage entry type, do not output random material in brackets.
+- new field "monthtie" to editorially force a tie after the month.
+
+ltubguid documentation:
+- mention preferred placement of captions, namely below figures
+but above tables and listings.
 
 -----------------
 2.29 (2023-03-08):

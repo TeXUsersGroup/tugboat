@@ -1,3 +1,17 @@
+2023-07-03  Karl Berry  <karl@freefriends.org>
+
+	* version 2.30 (2023-07-03) uploaded to CTAN.
+	* NEWS: update.
+
+	* tugboat.dtx (\l@section): call hooks for tagging
+	(\@sect, \label): do not redefine if \fmtversion >= 2023-06-01.
+	(\@currentlabelname): Use hooks to define with current LaTeX.
+	(\nameref): with current LaTeX, use its saved label name.
+	(All this from Ulrike.)
+	
+	* tubhytest.tex: add \tableofcontents and references.
+	* Makefile (check): exit after first test; sort.
+
 2023-06-22  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.bst (monthtie): new field, used now for patching

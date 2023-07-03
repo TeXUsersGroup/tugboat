@@ -8,6 +8,7 @@ pdflatex = $(texfot) pdflatex $(opt)
 lualatex = $(texfot) lualatex $(opt)
 xelatex = $(texfot) xelatex $(opt)
 #
+texfot = PATH=$(shell tlrel):$(PATH) texfot
 texfot = texfot
 
 ltubguid.pdf: ltubguid.ltx ltugboat.cls
@@ -24,19 +25,22 @@ ltugcomn.sty ltugboat.sty ltugboat.cls: tugboat.ins tugboat.dtx
 	$(latex) $<
 
 check: ltugboat.sty
-	$(pdflatex) tubpageref.tex
-	$(pdflatex) tubularray.tex
-	$(pdflatex) tuburltexttest.tex
-	$(pdflatex) tuburllivetest.tex
-	$(pdflatex) tubverbtest.tex
-	$(pdflatex) tubmetatest.tex
-	$(pdflatex) tubptest.tex
+	$(pdflatex) tubhytest.tex; exit 77
 	$(pdflatex) tubatest.tex
-	$(pdflatex) tubrfootest.tex
 	$(pdflatex) tubhytest.tex
-	$(pdflatex) tubutftest.tex
-	! $(pdflatex) tubxtx.tex # error expected
+	$(pdflatex) tubmetatest.tex
+	$(pdflatex) tubpageref.tex
+	$(pdflatex) tubptest.tex
+	$(pdflatex) tubreftest.tex
+	$(pdflatex) tubrfootest.tex
+	$(pdflatex) tubularray.tex
 	$(pdflatex) tuburllivetest.tex
+	$(pdflatex) tuburllivetest.tex
+	$(pdflatex) tuburltexttest.tex
+	$(pdflatex) tubutftest.tex
+	$(pdflatex) tubvariotest.tex
+	$(pdflatex) tubverbtest.tex
+	! $(pdflatex) tubxtx.tex # error expected
 
 try: ltugboat.cls
 	$(pdflatex) tubdoi-final.tex
