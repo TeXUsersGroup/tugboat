@@ -17,9 +17,10 @@ ltubguid.pdf: ltubguid.ltx ltugboat.cls
 	bibtex ltubguid
 	$(pdflatex) $<
 
-tugboat.pdf: tugboat.dtx ltugboat.cls
+tugboat-code.pdf: tugboat.dtx ltugboat.cls
 	$(pdflatex) $<
 	$(pdflatex) $<
+	mv tugboat.pdf $@
 
 ltugcomn.sty ltugboat.sty ltugboat.cls: tugboat.ins tugboat.dtx
 	$(latex) $<
@@ -82,7 +83,8 @@ diff dif:
 dist = tugboat
 dist: $(dist).zip
 $(dist).zip: README NEWS ltubguid.pdf manifest.txt tugboat.ins \
-		ltubguid.ltx ltugbib.bst tugboat.bst tugboat.dtx tugboat.pdf
+		ltubguid.ltx ltugbib.bst tugboat.bst tugboat.dtx \
+		tugboat-code.pdf
 	chmod a+rw $^
 	rm -rf $(dist) $@; mkdir $(dist)
 	cp $^ $(dist)
