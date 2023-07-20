@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2023-07-03 v2.30
+                   [2023-07-20 v2.30
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -1217,14 +1217,13 @@
 %
 % \subsection{Assorted user-level markup}
 %
-% \LaTeXe{} defines a robust \cs{,} we provide a new definition
-% of |~| by redefining \cs{\nobreakspace} (\cs{DeclareRobustCommand}
-% doesn't mind redefinition, fortunately). This is based on the version
-% in AMS-\TeX---the \LaTeXe{} version (|ltspace.dtx|) has \cs{leavevmode}
-% and does not do anything with the surrounding space(s). Our version
-% messes up with the \cs{pfill} used in |doc|-generated indexes
-% (\url{github.com/latex3/latex2e/issues/75}), but later (2018++)
-% versions of |doc| should be protected against our redefinition.
+% We provide a new definition of |~| by redefining \cs{\nobreakspace}
+% (\cs{DeclareRobustCommand} doesn't mind redefinition, fortunately).
+% This is based on the version in AMS-\TeX---the \LaTeXe{} version
+% (|ltspace.dtx|) has \cs{leavevmode} and does not do anything with the
+% surrounding space(s). Our version messes up with the \cs{pfill} used in
+% |doc|-generated indexes (\url{github.com/latex3/latex2e/issues/75}),
+% but later (2018++) versions of |doc| should protect against our redefinition.
 %
 %    \begin{macrocode}
 \let\latexnobreakspace=\nobreakspace

@@ -5,6 +5,7 @@
 %%%   New entry types: @ctan (see ctanbib); 
 %%%                    @online and @software (aliases for @misc).
 %%%   For @misc, the editor field is accepted along with author.
+%%%   For @misc, the organization field is output.
 %%%   New field bookauthor for @incollection and @inproceedings.
 %%%   Abbreviate "page(s)" to "p(p).",
 %%%     "volume" to "vol.",
@@ -18,7 +19,7 @@
 %%%   Always use https://doi.org/ for the doi url; omit "doi:" from output.
 %%%   If doi or howpublished is present, omit url, since in practice
 %%%     they are usually all the same thing. Should check if
-%%%     howpublished is in fact a url, though.
+%%%     howpublished is in fact a url, but we currently don't.
 %%%   Truncate long author lists in format.names (max.names, trunc.num);
 %%%     omit "and" from author lists, per Oren P.
 %%%   Use \emph instead of \em so we get automatic italic corrections.
@@ -1398,6 +1399,7 @@ FUNCTION {misc}
   howpublished output
   format.date output
   new.block
+  organization output
   note output
   fin.entry
   empty.misc.check
