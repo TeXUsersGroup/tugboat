@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2023-07-20 v2.30
+                   [2023-07-23 v2.30
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -342,7 +342,7 @@
   \tubfinaloptiontrue
   \AtEndOfClass{%
     % Insert draft date into the header even with [final], if we are not
-    % doing a production run. (tugboat.dates sets up page numbers
+    % doing a production run. (|tugboat.dates| sets up page numbers
     % above 900 in such pseudo-draft mode.) We use [final] in the first
     % place for this case because draft vs. final can change page
     % layout, wrt registration marks, etc. (Not good, but too painful to
@@ -1148,6 +1148,14 @@
 \newif\ifPrelimDraft    % [draft] or [preprint] or pageno>900
 \def\midrtitle{} % center of running heads
 \def\rtitlenexttopage{\ifPrelimDraft \textsl{\small draft: \Now}\fi}
+%    \end{macrocode}
+%
+% Sometimes we want to refer to the pages of another article in the same
+% issue. |tugboat.dates| makes the real definition; here we define a
+% placeholder so it won't be undefined when we send the source back to
+% the author.
+%    \begin{macrocode}
+\let\thisissuepageref\empty
 %    \end{macrocode}
 %
 % \subsection{Ragged right and friends}
@@ -3847,7 +3855,7 @@
 %</classtail>
 %    \end{macrocode}
 %
-% \section{\protect\LaTeXe\ Proceedings class}
+% \section{\protect\LaTeXe\ proceedings class (no longer used)}
 %
 % \begin{macro}{\@tugclass}
 % Make the code of |ltugboat.cls| (when we load it) say it's really

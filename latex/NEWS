@@ -1,6 +1,11 @@
 $Id$
 This file records noteworthy changes.  This file is public domain.
 
+
+tugboat.bst: for @misc, output organization field if present.
+
+-----------------
+2.30 (2023-07-03):
 ltugboat.cls:
 - print page numbers with preceding ? in draft mode, including in references,
   by redefining \thepage.

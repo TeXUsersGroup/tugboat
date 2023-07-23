@@ -25,9 +25,9 @@ tugboat-code.pdf: tugboat.dtx ltugboat.cls
 ltugcomn.sty ltugboat.sty ltugboat.cls: tugboat.ins tugboat.dtx
 	$(latex) $<
 
-check: ltugboat.sty
-	$(pdflatex) tubhytest.tex; exit 77
+check: ltugboat.cls
 	$(pdflatex) tubatest.tex
+	$(pdflatex) tubdoi-final.tex
 	$(pdflatex) tubhytest.tex
 	$(pdflatex) tubmetatest.tex
 	$(pdflatex) tubpageref.tex
@@ -43,17 +43,14 @@ check: ltugboat.sty
 	$(pdflatex) tubverbtest.tex
 	! $(pdflatex) tubxtx.tex # error expected
 
-try: ltugboat.cls
-	$(pdflatex) tubdoi-final.tex
-
-check-oddeven: ltugboat.sty
+check-oddeven: ltugboat.cls
 	$(pdflatex) tubfinal-odd.tex
 	$(pdflatex) tubfinal-even.tex
 	$(pdflatex) tubfinal-odd2.tex
 	$(pdflatex) tubfinal-even2.tex
 
 # try conversion with tex4ht.
-checkht: ltugboat.sty
+checkht: ltugboat.cls
 	env TEXINPUTS=$(t3):$(tb): $(texfot) htlatex tub4htest.tex \
 	  "xhtml,html5,mathml,charset=utf-8,fn-in" " -cunihtf -utf8"
 
@@ -61,7 +58,7 @@ spell:
 	aspell list --mode=tex --add-extra-dicts=`pwd`/.dict.pws <ltubguid.ltx\
 	| sort -f -u
 
-checkbib: ltugboat.sty tugboat.bst
+checkbib: ltugboat.cls tugboat.bst
 #	$(lualatex) tubbiball; bibtex tubbiball && $(pdflatex) tubbiball.tex
 #	$(pdflatex) tubbibdoi; bibtex tubbibdoi && $(pdflatex) tubbibdoi.tex
 #

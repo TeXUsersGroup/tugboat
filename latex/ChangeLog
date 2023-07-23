@@ -1,6 +1,18 @@
+2023-07-23  Karl Berry  <karl@freefriends.org>
+
+	* ltubguid.ltx (verbatim): show conditional to handle inline code,
+	as in tb137hefferon-asymptote.
+	(acronyms): MacOSX -> macOs.
+
+2023-07-23  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\thisissuepageref): \let\empty to avoid it being
+	undefined when we send sources back to authors.
+
 2023-07-20  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.bst (misc): output organization, for tb137sannier-rustic.
+	* NEWS: mention this.
 
 	* tugboat.dtx: doc.
 
