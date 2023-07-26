@@ -110,22 +110,22 @@ FUNCTION {init.urlbst.variables}
   % The following constants may be adjusted by hand, if desired
 
   % The first set allow you to enable or disable certain functionality.
-  #0 'addeprints :=         % 0=no eprints; 1=include eprints
+  #1 'addeprints :=         % 0=no eprints; 1=include eprints
   #1 'adddoiresolver :=     % 0=no DOI resolver; 1=include it
   #1 'addpubmedresolver :=     % 0=no PUBMED resolver; 1=include it
   #2 'hrefform :=           % 0=no crossrefs; 1=hypertex xrefs; 2=hyperref refs
   #0 'inlinelinks :=        % 0=URLs explicit; 1=URLs attached to titles
 
   % String constants, which you _might_ want to tweak.
-  "" 'urlintro := % prefix before URL; typically "Available from:" or "URL":
+  "" 'urlintro :=     % prefix before URL; typically "Available from:" or "URL":
   "" 'onlinestring := % indication that resource is online; typically "online"
-  "cited " 'citedstring := % indicator of citation date; typically "cited "
-  "[link]" 'linktextstring := % dummy link text; typically "[link]"
-  "http://arxiv.org/abs/" 'eprinturl := % prefix to make URL from eprint ref
-  "arXiv:" 'eprintprefix := % text prefix printed before eprint ref; typically "arXiv:"
+  "cited " 'citedstring :=     % indicator of citation date; typically "cited "
+  "[links]" 'linktextstring := % dummy link text; typically "[link]"
+  "https://arxiv.org/abs/" 'eprinturl := % prefix to make URL from eprint ref
+  "arXiv:" 'eprintprefix :=     % text prefix printed before eprint ref; typically "arXiv:"
   "https://doi.org/" 'doiurl := % prefix to make URL from DOI
-  "" 'doiprefix :=      % text prefix printed before DOI ref; typically "doi:"
-  "http://www.ncbi.nlm.nih.gov/pubmed/" 'pubmedurl := % prefix to make URL from PUBMED
+  "" 'doiprefix :=              % text prefix printed before DOI ref; typically "doi:"
+  "https://www.ncbi.nlm.nih.gov/pubmed/" 'pubmedurl := % prefix to make URL from PUBMED
   "PMID:" 'pubmedprefix :=      % text prefix printed before PUBMED ref; typically "PMID:"
 
   % The following are internal state variables, not configuration constants,

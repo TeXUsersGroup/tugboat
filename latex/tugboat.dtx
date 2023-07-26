@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2023-07-23 v2.30
+                   [2023-07-26 v2.30
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -221,8 +221,6 @@
 % &              separated by a slash)\\
 % |\cs|&         control sequence name\\
 %      &         |\cs{name}|$\rightarrow$\cs{name}\\
-% |\env|&        environment name \\
-%       &        |\env{name}|$\rightarrow$\env{name}\\
 % |\meta|&       meta-argument name\\
 %        &       |\meta{name}|$\rightarrow$\meta{name}\\
 % |\dash|&       en-dash surrounded by thinspaces; only breakable AFTER\\
@@ -1295,9 +1293,6 @@
   {\mbox{\texttt{\char`\{#1\char`\}}}}%
   {\textbraceleft #1\textbraceright}%
 }
-%
-% Well, just the \begin part.  Never seen it used.
-\DeclareRobustCommand{\env}[1]{\cs{begin}\tubbraced{#1}}
 %
 % Not sure why we ever want this instead of LaTeX's \, (using \kern),
 % but fine, just keeping it.

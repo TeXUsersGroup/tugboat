@@ -1,3 +1,13 @@
+2023-07-26  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\env): it just seems wrong to define this,
+	and authors have never used it. (Just \tubbraced is better.)
+	* ltubguid.ltx: remove it.
+
+	* tugboat.bst (addeprints): set to #1.
+	(eprinturl, pubmedurl): use https.
+	This is for tb137mueller-primitives.
+
 2023-07-23  Karl Berry  <karl@freefriends.org>
 
 	* ltubguid.ltx (verbatim): show conditional to handle inline code,
