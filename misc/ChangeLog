@@ -1,3 +1,8 @@
+2023-07-31  Karl Berry  <karl@freefriends.org>
+
+	* check-embed-tub: check for all fonts being embedded.
+	* acrocheck-tub: too-simplistic check for missing \acro.
+
 2023-06-29  Karl Berry  <karl@freefriends.org>
 
 	* cahiers.sty (\credit): do not force \normalsize;

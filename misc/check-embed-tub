@@ -1,0 +1,97 @@
+#!/usr/bin/env perl
+# $Id$
+# Public domain. Originally written by Karl Berry, 2011.
+# Check that all fonts in argument PDF files are embedded,
+# by parsing pdffonts output.
+
+exit (&main ());
+
+sub main {
+  my $ret = 0;
+
+  # don't want to see the "syntax error"s from pdffonts, too much
+  # trouble to catch and ignore, sorry.
+  open (STDERR, ">/dev/null");
+
+  my $nfiles = @ARGV;
+  
+  for my $file (@ARGV) {
+    my @badlines = &check_file ($file);
+    if (@badlines > 0) {
+      if ($nfiles > 1) {
+        # if multiple files given, just show first bad font in each.
+        print "$file: $badlines[0]";
+      } else {
+        # if single file is given, show all lines.
+        print @badlines;
+      }
+      $ret = 1;
+    }
+  }
+  
+  return $ret;
+}
+
+
+
+# Run pdffonts on FILE, return lines for any non-embedded fonts
+# or other problems, else the empty list if all is ok.
+# 
+sub check_file {
+  my ($file) = @_;
+  my @not_parsable = ();
+  my @not_embedded = ();
+  
+  $file =~ s/\.(tex|ltx|xlx)$/.pdf/; # change extension
+
+  open (CHECK, "-|", "pdffonts", $file)
+  || die "open(pdffonts $file) failed: $!";
+  my $hdrline = <CHECK>;  # ignoren
+  my $dashline = <CHECK>; # ignore
+  while (<CHECK>) {
+    my $orig_line = $_;
+    
+    # remove everything up to known font type. Some examples (note spaces):
+    # name                                           type              emb sub uni prob object ID
+    # ---------------------------------------------- ----------------- --- --- --- ---- ---------
+    # WZALOJ+CMTT9                                   Type 1            yes yes yes          75  0
+    # *Times New Roman-605-Identity-H                CID Type 0C       yes no  yes          79  0
+    #
+    s/^.*(CID Type 0C?|CID TrueType|Type 1C?|Type 3|TrueType)//;
+    
+    # what follows should be the emb boolean.
+    my ($emb) = split (" ");
+    
+    if ($emb eq "no") {
+      push (@not_embedded, $orig_line);
+    } elsif ($emb ne "yes") {
+      push (@not_parsable, "could not parse: $orig_line");
+    }
+  }
+  close (CHECK); #|| warn "close(pdffonts $file) failed: $!";
+  
+  if ($? != 0) {
+    unshift (@not_parsable, "bad exit status $?\n");
+  }
+  
+  # critical to see if any lines weren't parsable, return those first.
+  return (@not_parsable,@not_embedded);
+}
+
+
+# Typical pdffonts output:
+# name                                 type              emb sub uni object ID
+# ------------------------------------ ----------------- --- --- --- ---------
+# RYUFFT+Times-Roman                   Type 1C           yes yes no      15  0
+# SUZHNC+Helvetica                     Type 1C           yes yes no       9  0
+#
+#
+# TUGboat/tb29-3/tb93hagen-framed.pdf:
+# name                                 type              emb sub uni object ID
+# ------------------------------------ ----------------- --- --- --- ---------
+# HOPOUU+LMRoman10-Regular             CID Type 0C       yes yes yes      4  0
+#
+#
+# Despite how it looks here, we can't rely on the columns, sometimes the
+# fontname gets too long.  Conceivably we could look for the first field
+# that says yes or no, but that also seems dangerous.

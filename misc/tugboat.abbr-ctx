@@ -245,15 +245,16 @@
 \def\footnote{\unskip\protect\origfootnote}
 
 % #1 is usually "here"; #2 is optional whitespace.
-\def\myfigureenv{figure}% allow for figure* override
-\def\placefigure[#1]#2[#3]#4#5{%
- \begin{\myfigureenv}[t]
-  \centering #5%
-  \caption{#4}% %debug (label=#3)}%
-  \label{#3}%
- \end{\myfigureenv}
-\def\myfigureenv{figure}
-}
+% (not used, can't handle variant syntax.)
+%\def\myfigureenv{figure}% allow for figure* override
+%\def\placefigure[#1]#2[#3]#4#5{%
+% \begin{\myfigureenv}[t]
+%  \centering #5%
+%  \caption{#4}% %debug (label=#3)}%
+%  \label{#3}%
+% \end{\myfigureenv}
+%\def\myfigureenv{figure}
+%}
 
 \long\def\setupbodyfont[#1]{}
 \long\def\setuphead[#1] [#2]{}

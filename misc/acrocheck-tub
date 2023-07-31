@@ -1,0 +1,21 @@
+#!/bin/sh
+# $Id$
+# (rdist from home)
+# 
+# \uname and \code is for tb136bien-unichart
+acro_ok='[A-Z][-+_A-Z0-9]+'
+egrep -Hn "$acro_ok" "$@" \
+| sed -e 's/%.*//' \
+      -e 's/\\\(acro\|cs\|texttt\|lstinline\|code\|pkg\|uname\|ucode\){[^}]*}//g' \
+      -e 's/\\\(includegraphics\|cite\|bibitem\)\(\[[^]]*\]\)\?{[^}]*}//g' \
+      -e 's/\(src\|id\)=".*"//g' \
+      -e 's/|[^|]*|//g' \
+      -e 's/\\type *{[^}]*}//g' \
+      -e 's/url\(footnote\)\?{[^}]*}//g' \
+      -e 's/{fig[^}]*}//g' \
+      -e 's/\\[A-Za-z0-9]\+//g' \
+      -e 's/\b\(IS[BS]N\|III\?\|IV\|URL\|MDT\|PGF\|T[B1]\|TUGboat\)//g' \
+      -e 's/\(TF\|USA\)\b//g' \
+      -e 's/\b\(ADE\|CAS\|GUST\|ISO\|L3\|Q[1234]\|RGB\|RW\|TeXShop\)\b//g' \
+      -e 's/\b\(MAPS\|XCharter\)\b//g' \
+| egrep "$acro_ok"

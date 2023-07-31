@@ -1,5 +1,5 @@
 #!/bin/sh
-# $Id: ps2pdf-gray-tub 296 2020-09-14 20:53:13Z karl $
+# $Id$
 # Public domain.
 # 
 # Convert input $1 to output $2, converting color to cmyk.
