@@ -1,3 +1,13 @@
+2023-08-05  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\acro): define using \DeclareRobustCommand,
+	so it works with \DocumentMetadata.
+	(tb137carlisle-taggedpdfworkshop23)
+	(\fmtversion >= {2023-06-01}): \RequirePackage{gettitlestring}
+	and use it, replacing previous hooks, for the sake of
+	\section{abc\label{blub}}.
+	Both of these from Ulrike.
+
 2023-07-26  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\env): it just seems wrong to define this,
