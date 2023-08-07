@@ -1,9 +1,15 @@
 #!/bin/sh
 # $Id$
-# Run ConTeXt from our installation for TUGboat. Public domain.
-# http://wiki.contextgarden.net/ConTeXt_Standalone#Single_user_installation
+# Run ConTeXt for TUGboat. Public domain.
 
+# Sometimes we try from a standalone minimals installation.
+# http://wiki.contextgarden.net/ConTeXt_Standalone#Single_user_installation
 #. /opt/context/tex/setuptex # can't take args
-PATH=/opt/context/tex/texmf-linux-64/bin:$PATH
+#PATH=/opt/context/tex/texmf-linux-64/bin:$PATH
+
+# But let's try the version in TL.
+
 # --noconsole omits logging to terminal, better to redirect?
-exec context --batchmode "$@"
+# lmtx (i.e., without --luatex) can't read tugboat.dates,
+# \tubstripmeaningprefix has "extra" { or something.
+exec context --luatex --batchmode "$@"

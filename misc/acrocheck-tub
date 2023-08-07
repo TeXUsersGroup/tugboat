@@ -1,12 +1,12 @@
 #!/bin/sh
 # $Id$
-# (rdist from home)
+# Public domain. Originally written by Karl Berry, 2010.
 # 
 # \uname and \code is for tb136bien-unichart
 acro_ok='[A-Z][-+_A-Z0-9]+'
 egrep -Hn "$acro_ok" "$@" \
 | sed -e 's/%.*//' \
-      -e 's/\\\(acro\|cs\|texttt\|lstinline\|code\|pkg\|uname\|ucode\){[^}]*}//g' \
+      -e 's/\\\(acro\|address\|cs\|texttt\|lstinline\|code\|pkg\|uname\|ucode\){[^}]*}//g' \
       -e 's/\\\(includegraphics\|cite\|bibitem\)\(\[[^]]*\]\)\?{[^}]*}//g' \
       -e 's/\(src\|id\)=".*"//g' \
       -e 's/|[^|]*|//g' \
