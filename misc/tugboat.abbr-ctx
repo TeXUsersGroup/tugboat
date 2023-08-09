@@ -270,7 +270,7 @@
 \makeatletter
 \def\type{\bgroup
   \catcode`\\=12 \catcode`##=12 \catcode`\&=12 \catcode`$=12 \catcode`_=12
-  \catcode`\%=12 
+  \catcode`\%=12 \catcode`\^=12
   \@noligs % disable tt ligatures, defined in ltmiscen.dtx
   %\catcode`!=0 % in case we want escapes
   \def\\{\char`\\ }%
@@ -394,6 +394,8 @@
 \def\LL{\noalign{\tubsmallerskip}\hline\noalign{\smallskip}}
 \def\ML{\noalign{\tubsmallerskip}\hline\noalign{\tubsmallerskip}}
 \def\cc#1{\multicolumn{1}{c}{#1}}% center cell
+
+\long\def\starttextdisplay#1\stoptextdisplay{}
 
 \def\starttitle[#1]{}
 \def\stoptitle{\stopArticle}
