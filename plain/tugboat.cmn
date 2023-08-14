@@ -30,7 +30,7 @@
 \next
 
 \def\fileversion{v1.28}
-\def\filedate{2023-06-11}
+\def\filedate{2023-08-14}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -103,7 +103,7 @@
 
 \def\acro#1{{\SMC #1}\spacefactor1000 }
 
-\def\AllTeX{(\La)\TeX}
+\def\AllTeX{(\La\kern-.075em)\kern-.05em\TeX}
 \def\AMS{American Mathematical Society}
 \def\AmS{{\the\textfont2 A}\kern-.1667em\lower.5ex\hbox
         {\the\textfont2 M}\kern-.125em{\the\textfont2 S}}
@@ -1013,6 +1013,8 @@ that may not be obvious.  For full definitions, see real code above.
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+                      in \AllTeX, kern around ).
+
 1.28      11 Jun 23   (belatedly) add \meta, change \TP to print : in \sl,
                       Lua-Meta hyphenation exception.
 
