@@ -1,3 +1,7 @@
+2023-08-14  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\AllTeX): kern a little less after the ).
+
 2023-08-05  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\acro): define using \DeclareRobustCommand,
