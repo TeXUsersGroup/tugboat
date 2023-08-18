@@ -1143,9 +1143,10 @@
 \def\now{\ifnum\hours<10 0\fi\number\hours:%
          \ifnum\minutes<10 0\fi\number\minutes}
 \def\Now{\today\ \now}
-\newif\ifPrelimDraft    % [draft] or [preprint] or pageno>900
+\newif\ifPrelimDraft    % true if ([draft] or [preprint] or pageno>900)
 \def\midrtitle{} % center of running heads
 \def\rtitlenexttopage{\ifPrelimDraft \textsl{\small draft: \Now}\fi}
+%\def\rtitlenexttopage{\ifnum\value{page}>900 \textsl{\small draft: \Now}\fi}
 %    \end{macrocode}
 %
 % Sometimes we want to refer to the pages of another article in the same
@@ -2727,12 +2728,12 @@
     \string#2\space used instead}#2}
 %    \end{macrocode}
 %
-% \cs{l@<sectioning-name>} is for table of contents (of an article).
+% \cs{l@<sectioninglevel>} is for table of contents (of an article).
 % We define new macros to allow easily changing the font used for toc
 % entries (for \TUB, we usually want roman, not bold), and the space
 % between entries.  Nelson Beebe and Frank Mittelbach's articles 
 % often have toc's (and few others).  Also turn off microtype
-% protrusion after \tableofcontents or leaders get messed up.
+% protrusion after \tableofcontents, or leaders get messed up.
 %
 %    \begin{macrocode}
 \def\TBtocsectionfont{\normalfont}
@@ -2743,14 +2744,16 @@
 % |#1| is both the section number and title; |#2| is the page number.
 % Per Ulrike, the hook calls are for tagging, introduced with the
 % June 2023 \LaTeX.
+% qqq need to do subsections like tb137carlisle to avoid hyphenation
 \def\l@section#1#2{%
   \addpenalty{\@secpenalty}%
   \addvspace{\TBtocsectionspace}%
   \@tempdima 1.5em
   \begingroup
     \parindent\z@
-    \rightskip\z@  % article style makes \rightskip > 0
+    \rightskip=0pt plus2em
     \parfillskip\z@
+    \hyphenpenalty=10000
     \TBtocsectionfont
     \leavevmode
     \advance\leftskip\@tempdima
