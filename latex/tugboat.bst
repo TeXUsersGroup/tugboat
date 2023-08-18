@@ -25,11 +25,12 @@
 %%%   Use \emph instead of \em so we get automatic italic corrections.
 %%%   New fields for editors:
 %%%     "journaltie" - ~ instead of space after journal name.
-%%%     "newpage" - force page break after entry;
+%%%     "newpage" - force page break after entry.
 %%%     "nowarning" - if set, omit empty field warnings from output.check.
+%%%     "pagesnodashify" - if set, don't convert - to -- in pages field.
 %%%     "prebibitem" - material output before \bibitem, with newline appended
 %%%       (for example, section headings).
-%%%     "urlnewline" - force line break before url or doi value;
+%%%     "urlnewline" - force line break before url or doi value.
 %%% --karl, originally created 24jul18.
 %%% 
 %%% Modification of BibTeX style file /usr/local/texlive/2009/texmf-dist/bibtex/bst/base/abbrv.bst
@@ -85,12 +86,13 @@ ENTRY
     urldate    % ctan
     version    % ctan
     %
-    journaltie % tub
-    monthtie   % tub
-    newpage    % tub
-    nowarning  % tub
-    prebibitem % tub
-    urlnewline % tub
+    journaltie     % tub
+    monthtie       % tub
+    newpage        % tub
+    nowarning      % tub
+    pagesnodashify % tub
+    prebibitem     % tub
+    urlnewline     % tub
   }
   {}
   { label }
@@ -575,29 +577,45 @@ FUNCTION {format.title}
   if$
 }
 
+% Return argument with - replaced by -- (unless already --),
+% unless pagesnodashify is set, in which case do nothing.
+% 
+% We use pagesnodashify when an article has a reference to another article
+% in the same issue, in which case we use (from tb137kopp-microtemplates):
+%   pages = "{\thisissuepageref{beeton-basic}}", 
+% and that - clearly should not become --. Although we can work around
+% it by using a macro instead of a literal -, that's ugly.
+%
 FUNCTION {n.dashify}
 { 't :=
-  ""
-    { t empty$ not }
-    { t #1 #1 substring$ "-" =
-        { t #1 #2 substring$ "--" = not
-            { "--" *
-              t #2 global.max$ substring$ 't :=
-            }
-            {   { t #1 #1 substring$ "-" = }
-                { "-" *
+  pagesnodashify empty$
+    {
+      ""
+        { t empty$ not }
+        { t #1 #1 substring$ "-" =
+            { t #1 #2 substring$ "--" = not
+                { "--" *
                   t #2 global.max$ substring$ 't :=
                 }
-              while$
+                {   { t #1 #1 substring$ "-" = }
+                    { "-" *
+                      t #2 global.max$ substring$ 't :=
+                    }
+                  while$
+                }
+              if$
+            }
+            { t #1 #1 substring$ *
+              t #2 global.max$ substring$ 't :=
             }
           if$
         }
-        { t #1 #1 substring$ *
-          t #2 global.max$ substring$ 't :=
-        }
-      if$
+      while$
     }
-  while$
+    {
+      t
+    }
+  if$
 }
 
 FUNCTION {format.date}

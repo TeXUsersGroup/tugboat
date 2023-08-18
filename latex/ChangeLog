@@ -1,4 +1,25 @@
+2023-08-18  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst (pagesnodashify): new option to avoid autoconversion
+	of - to -- in the pages field; useful when the pages field refers
+	to another article, as in pages="{\thisissuepageref{beeton-basic}}".
+	* tubibpages.tex: new test file.
+	* tubib.bib: add test entries.
+	* tubbib*: rename to tubib*, adjust references to tubbib.bib.
+	* Makefile (checkbib): add test; adjust names.
+	* ltubguid.ltx: document.	
+
+2023-08-16  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\l@section): a little \rightskip, and no hyphens.
+	Doc fixes.
+	
+	(\rtitlenexttopage): check for page>900 instead of \ifPrelimDraft.
+
 2023-08-14  Karl Berry  <karl@freefriends.org>
+
+	* tubreftest.tex: also test \label inside \section,
+	per Ulrike 2 Aug 2023 12:55:10.
 
 	* tugboat.dtx (\AllTeX): kern a little less after the ).
 

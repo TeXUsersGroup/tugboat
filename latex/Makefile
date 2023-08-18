@@ -26,13 +26,13 @@ ltugcomn.sty ltugboat.sty ltugboat.cls: tugboat.ins tugboat.dtx
 	$(latex) $<
 
 check: ltugboat.cls
+	$(pdflatex) tubreftest.tex
 	$(pdflatex) tubatest.tex
 	$(pdflatex) tubdoi-final.tex
 	$(pdflatex) tubhytest.tex
 	$(pdflatex) tubmetatest.tex
 	$(pdflatex) tubpageref.tex
 	$(pdflatex) tubptest.tex
-	$(pdflatex) tubreftest.tex
 	$(pdflatex) tubrfootest.tex
 	$(pdflatex) tubularray.tex
 	$(pdflatex) tuburllivetest.tex
@@ -58,18 +58,20 @@ spell:
 	aspell list --mode=tex --add-extra-dicts=`pwd`/.dict.pws <ltubguid.ltx\
 	| sort -f -u
 
-checkbib: ltugboat.cls tugboat.bst
-#	$(lualatex) tubbiball; bibtex tubbiball && $(pdflatex) tubbiball.tex
-#	$(pdflatex) tubbibdoi; bibtex tubbibdoi && $(pdflatex) tubbibdoi.tex
+checkbib: ltugboat.cls tugboat.bst tubib.bib
+	$(pdflatex) tubibpages && bibtex tubibpages && $(pdflatex) tubibpages.tex
 #
-#	$(lualatex) tubbiball && bibtex tubbiball && $(pdflatex) tubbiball.tex
-#	$(pdflatex) tubbiball && bibtex tubbiball && $(pdflatex) tubbiball.tex
+	$(lualatex) tubiball; bibtex tubiball && $(pdflatex) tubiball.tex
+	$(pdflatex) tubibdoi; bibtex tubibdoi && $(pdflatex) tubibdoi.tex
 #
-#	$(xelatex) tubbibthanh && bibtex tubbibthanh && $(xelatex) tubbibthanh.tex
-	$(lualatex) tubbibthanh && bibtex tubbibthanh && $(lualatex) tubbibthanh.tex
-#	$(pdflatex) tubbibthanh && bibtex tubbibthanh && $(pdflatex) tubbibthanh.tex
+	$(lualatex) tubiball && bibtex tubiball && $(pdflatex) tubiball.tex
+	$(pdflatex) tubiball && bibtex tubiball && $(pdflatex) tubiball.tex
 #
-#	$(pdflatex) tubbib && bibtex tubbib && $(pdflatex) tubbib.tex
+	$(xelatex) tubibthanh && bibtex tubibthanh && $(xelatex) tubibthanh.tex
+	$(lualatex) tubibthanh && bibtex tubibthanh && $(lualatex) tubibthanh.tex
+	$(pdflatex) tubibthanh && bibtex tubibthanh && $(pdflatex) tubibthanh.tex
+#
+	$(pdflatex) tubib && bibtex tubib && $(pdflatex) tubib.tex
 
 tub_rel = /usr/local/texlive/dev/texmf-dist/
 diff dif:
