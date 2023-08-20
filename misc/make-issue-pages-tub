@@ -38,7 +38,7 @@ Usage: $0 --pubmonth NN [--colorpages "NNN NNN ..."]
 
 Generate split fileset for Cadmus, from file CADMUS/issue.pdf.
 
-Publication month must be exactly two digits.
+Publication month is required, and must be exactly two digits.
 
 If color pages are specified, each must be exactly three digits, with
 leading zeros as necessary, and each must be present in issue.pdf.
@@ -107,7 +107,7 @@ filecount=`ls | wc -l`
 assert_pdfpagecount $infile $filecount
 
 # We have no easy way to know whether a given page contains color or
-# not, so just grayscale everything not requested to be color.
+# not, so grayscale everything not requested to be color.
 echo "$0: grayscaling pages, this will take a while ..."
 date
 

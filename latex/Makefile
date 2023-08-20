@@ -73,6 +73,10 @@ checkbib: ltugboat.cls tugboat.bst tubib.bib
 #
 	$(pdflatex) tubib && bibtex tubib && $(pdflatex) tubib.tex
 
+clean:
+	rm -f *.log *.aux *.out *.toc *.pdf *.dvi *.bbl *.blg *.html
+
+# 
 tub_rel = /usr/local/texlive/dev/texmf-dist/
 diff dif:
 	-diff -u0 $(tub_rel)/bibtex/bst/tugboat/tugboat.bst .

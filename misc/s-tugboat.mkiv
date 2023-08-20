@@ -46,14 +46,19 @@
 %D
 %D \TUGBOAT\ uses standard CM interline spacing.
 
-\definebodyfontenvironment    [8pt] [interlinespace=9.5pt, big=9pt,   small=7pt]
-\definebodyfontenvironment    [9pt] [interlinespace=11pt,  big=10pt,  small=8pt]
-\definebodyfontenvironment   [10pt] [interlinespace=12pt,  big=12pt,  small=9pt]
-\definebodyfontenvironment   [12pt] [interlinespace=14pt,  big=14.4pt,small=10pt]
-\definebodyfontenvironment [14.4pt] [interlinespace=18pt,  big=14.4pt,small=12pt]
+\definebodyfontenvironment    [8pt] [interlinespace=9.5pt,
+                                     big=9pt, small=7pt, x=7pt]
+\definebodyfontenvironment    [9pt] [interlinespace=11pt,
+                                     big=10pt, small=8pt, x=8pt]
+\definebodyfontenvironment   [10pt] [interlinespace=12pt,
+                                     big=12pt, small=9pt, x=9pt]
+\definebodyfontenvironment   [12pt] [interlinespace=14pt,
+                                     big=14.4pt, small=10pt, x=10pt]
+\definebodyfontenvironment [14.4pt] [interlinespace=18pt,
+                                     big=14.4pt, small=12pt, x=12pt]
 
-%D \TUGBOAT\ uses Computer Modern fonts, and \CONTEXT\ uses Latin Modern by default,
-%D which is fine. So, we just specify the font size.
+%D \TUGBOAT\ uses Computer Modern fonts, and \CONTEXT\ uses Latin Modern
+%by default, which is fine. So, we just specify the font size.
 
 \setupbodyfont [10pt]
 
@@ -226,6 +231,7 @@
 \setupcaptions
   [headstyle=\AcroFontBold,
    style={\AcroFont\advance\baselineskip by -1pt},
+   distance=.66em plus.2em minus.2em,
    align=right]
 
 %D We like a colon after the caption label.
@@ -292,9 +298,9 @@
    align={raggedright,verystrict}]
 
 %D Instead of color, we use weighted gray scales:
-
-\setupcolors
-  [conversion=always]
+%D No, we'll keep color and grayscale separately.
+%\setupcolors
+%  [conversion=always]
 
 %D We define some logical skips
 
@@ -347,10 +353,8 @@
 \startsetups tugboat:banner:setup:article
 
   \setupheadertexts
-    [\setups{tugboat:banner:text:article}]
     [\pagenumber]
-
-    % no footer in regular articles
+    [\setups{tugboat:banner:text:article}]
 
   \setupfootertexts
     [][\getvariable{tugboat}{author}]
@@ -455,7 +459,9 @@
 
     \blank[line]
     \begingroup
-        \leftskip=5.7pc
+        \raggedright
+        \hyphenpenalty=10000
+        \leftskip=5.1pc
         \noindent
         \llap{\sym{\diamond}\enspace}
         \getvariable{tugboat}{author}
@@ -497,7 +503,7 @@
 %D Let's see boxes overfull by >.5pt
 
 \overfullrule =  2pt % yes, I want to see
-\hfuzz        = .5pt
+\hfuzz        = .8pt
 
 %D One can use the following setups (in the article) to collect settings specific to
 %D normal and|/|or multi column typesetting.
@@ -531,29 +537,17 @@
 
 \font\mflogo=logo10 % hm, better use \definefont
 
-%D HH: I'm pretty sure that this doesn't really work as it probably assumes some
-%D specific math family setup and that's not how \MKIV\ works. The TB definition
-%D doesn't scale with font changes and also doesn't adapt itself to style changes.
+%D From Hans (thanks), except \tx is too big and \txx is too small,
+%D so kludge just to get tb137schmitz-xmlcontext out the door.
 
-\newcount\TestCount
-\newbox  \TestBox
-
+\font\laafont = cmr7 at 7pt
+\newbox\tubscratchbox
 \def\La
   {\dontleavehmode
    \begingroup
-   \TestCount=\the\fam % no meaningful fams in text mode in ConTeXt
-   \setbox\TestBox=\hbox{$\fam\TestCount\scriptstyle A$}%
-   L\kern-.5\wd\TestBox\raise.42ex\box\TestBox
+   \setbox\tubscratchbox\hbox{\laafont A}% % \tx or \txx
+   L\kern-.55\wd\tubscratchbox\raise.55ex\box\tubscratchbox
    \endgroup}
-
-%D Probably this will do a better job:
-
-% \def\La
-%   {\dontleavehmode
-%    \begingroup
-%    \setbox\scratchbox\hbox{\tx A}% % or \txx
-%    L\kern-.5\wd\scratchbox\raise.42ex\scratchbox
-%    \endgroup}
 
 \def\ALEPH     {Aleph}
 \def\API       {\acro{API}}
@@ -628,10 +622,12 @@
 
 \definefont[AcroFont]     [Serif*default     sa .91]
 \definefont[AcroFontBold] [SerifBold*default sa .91]
+\definefont[AcroFontItal] [SerifItalic*default sa .91]
 \definefont[AcroFontSmall][Serif*default     sa .80]
 
 \unexpanded\def\acro     #1{{\AcroFont      #1}} % could be a style definition
 \unexpanded\def\acrobf   #1{{\AcroFontBold  #1}} % could be a style definition
+\unexpanded\def\acroit   #1{{\AcroFontItal  #1}} % could be a style definition
 \unexpanded\def\acrosmall#1{{\AcroFontSmall #1}} % could be a style definition
 
 %D This is English; disallow x- or -xx breaks. (These are already the defaults

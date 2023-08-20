@@ -1,3 +1,16 @@
+2023-08-20  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (testiss,lastiss,crossref_iss): tb137.
+	* lists-unifications.txt (Conference Notes): add TUG 2023.
+	(Hussain, Lisse, Novotn&#xfd;, Rajeesh, Rishi, Sundqvist,
+	&#x0160;ustek): unifications for tb137.
+	* lists-translations.txt (\GUI): translation for tb137.
+	* lists-authinfo.txt: more orcid for tb137.
+       
+	* tb136capsule.txt (wermuth-globaldefs): correct title.
+	* tb123capsule.txt (ahmetovic-axess): remove leading \\,
+	turned into space sometimes.
+
 2023-05-20  Karl Berry  <karl@freefriends.org>
 
 	* tb136capsule.txt (andre): make public now by special request.
