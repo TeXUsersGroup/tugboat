@@ -820,16 +820,18 @@ aliases for \textsf{@misc}.
 the package of the same name, \url{ctan.org/pkg/ctanbib}).
 
 \item For completeness only: \verb|tugboat.bst| provides several 
-fields intended to be used by the editors: \textsf{journaltie} to output
+fields intended to be used by the editors:
+\begin{description}\raggedright
+\item[\sf journaltie] to output
   a tie instead of space after the \textsf{journal} value,
-\textsf{monthtie} for the same after \textsf{month},
-\textsf{newpage} to force a page break after the current item,
-\textsf{nowarning} to omit empty field warnings, \textsf{prebibitem} to
+\item[\sf monthtie] for the same after \textsf{month},
+\item[\sf newpage] to force a page break after the current item,
+\item[\sf nowarning] to omit empty field warnings, \textsf{prebibitem} to
   output material before \cs{bibitem} (e.g., a section heading),
-\textsf{pagesnodashify} to avoid autoconverting \texttt{-} to \texttt{--}
-  in the \texttt{pages} field,
-and
-\textsf{urlnewline} to force a line break before the \textsf{url} value.
+\item[\sf pagesnodashify] to avoid autoconverting \texttt{-} to
+  \texttt{--} in the \texttt{pages} field,
+\item[\sf urlnewline] to force a line break before the \textsf{url} value.
+\end{description}
 As editors, we've found that these presentation tweaks can be desirable
 for the final typeset output. Authors need not worry about them.
 

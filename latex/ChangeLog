@@ -1,3 +1,11 @@
+2023-08-21  Karl Berry  <karl@freefriends.org>
+
+	* ltubguid.ltx (Bibliography): make list of editorial bst
+	fields into a description list.
+
+	* tugboat.dtx (\dblfloatpagefraction, et al.): set so that
+	figures don't go to a float page so soon.
+
 2023-08-20  Karl Berry  <karl@freefriends.org>
 
 	* Makefile (clean): add (simple) target.
