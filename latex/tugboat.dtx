@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2023-08-21 v2.30
+                   [2023-08-27 v2.30
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -2752,7 +2752,7 @@
 % |#1| is both the section number and title; |#2| is the page number.
 % Per Ulrike, the hook calls are for tagging, introduced with the
 % June 2023 \LaTeX.
-% qqq need to do subsections like tb137carlisle to avoid hyphenation
+% qqq need to also do subsections like tb137carlisle to avoid hyphenation
 \def\l@section#1#2{%
   \addpenalty{\@secpenalty}%
   \addvspace{\TBtocsectionspace}%
@@ -2785,7 +2785,7 @@
         \UseHookWithArguments{contentsline/page/before}{4}
           {\toclevel@part}{#1}{#2}{\@contentsline@destination}%
       \fi
-      #2%
+      \tubtypesetpageno{#2}%
       \ifx\UseHookWithArguments\undefined\else
         \UseHookWithArguments{contentsline/page/after}{4}
           {\toclevel@part}{#1}{#2}{\@contentsline@destination}%
@@ -3555,38 +3555,50 @@
 \def\@oddhead{\MakeRegistrationMarks
   \frenchspacing
   \normalsize\csname normalshape\endcsname\rm \tubheadhook
-  \rtitlex\qquad \midrtitle\hfil \rtitlenexttopage\quad\thepage}
+  \rtitlex\qquad \midrtitle\hfil
+  \rtitlenexttopage\quad\tubtypesetpageno{\thepage}}
 \def\@evenhead{\MakeRegistrationMarks
   \frenchspacing
   \normalsize\csname normalshape\endcsname\rm \tubheadhook
-  \thepage\quad\rtitlenexttopage \hfil\midrtitle \qquad\rtitlex}
+  \tubtypesetpageno{\thepage}\quad\rtitlenexttopage
+  \hfil\midrtitle \qquad\rtitlex}
 
-% Put a ? into the page number in all but a final run, so people
-% aren't tempted to cite it.
+% Put a ? into the page number in the headers in all but a final run, so
+% people aren't tempted to cite it.
 % 
-% We redefine |\thepage| so that the ? will also be used in page
-% references (in the text) and the toc. This is what's recommended by
-% the LaTeX developers: https://tex.stackexchange.com/questions/687258.
-% (Ulrike's example does this after loading hyperref, but doesn't seem
-% to matter?)
-\renewcommand\thepage{%
-  \ifnum\value{page}>900
+\newcommand{\tubtypesetpageno}[1]{%
+  \ifnum #1>900
     % in CM, numerals are exactly .5em.
     %
     % The \texorpdfstring avoids the usual hyperref warning:
     %   Token not allowed in a PDF string ... removing `\@ifnextchar' 
     \texorpdfstring{\makebox[.5em][l]{\small ?}}{?}%
     %
-    \textsl{\@arabic{\numexpr\value{page}-900\relax}}% e-tex
+    \textsl{\@arabic{\numexpr#1-900\relax}}% assuming e-tex
   \else
-    \@arabic{\value{page}}%
+    \@arabic{#1}%
   \fi
 }
-% This custom page number format will break makeindex, etc., so we have
-% to tell about the format. Per Ulrike:
-% \usepackage{index}
-% \newcommand\specialthepage{\inteval{\value{page}-900}}
-% \newindex[specialthepage]*{default}{idx}{ind}{Index}
+%
+% The above changes the page number in the headers and tocs. It does not
+% change the page number in cross-references, which will still show up
+% as `901' instead of `?1'. In order to do that, we'd have to redefine
+% |\thepage| (https://tex.stackexchange.com/questions/687258).
+%
+% The problem is that |\thepage| is not expected to contain typesetting
+% commands like |\makebox| and |\textsl|, but to expand to the simple
+% page number (in whatever form). For example, when redefining
+% |\thepage| to the above, terminal warnings then look like:
+% |LaTeX Warning: Citation `foo' on page \makebox [.5em][l]{...|
+% losing the actual page number.
+%
+% So apparently there is no way to add the ? correctly in all contexts.
+% 
+% BTW, such a custom page number format would also break makeindex,
+% etc., but for that we could provide the information. Per Ulrike:
+%\usepackage{index}
+%\newcommand\specialthepage{\inteval{\value{page}-900}}
+%\newindex[specialthepage]*{default}{idx}{ind}{Index}
 
 % can be used to reset the font, e.g., tb98kuester.
 \def\tubheadhook{}
