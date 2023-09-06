@@ -1,3 +1,10 @@
+2023-09-06  Karl Berry  <karl@freefriends.org>
+
+	* lmtx,
+	* lmtxtub: new scripts to run from minimals installation in /opt/lmtx.
+	Needed for new complete.pdf generation, see tb137 (44:2).
+	* ctxtub: doc fixes.
+
 2023-08-20  Karl Berry  <karl@freefriends.org>
 
 	* s-tugboat.mkiv: update with version from tb137schmitz-xmlcontext.

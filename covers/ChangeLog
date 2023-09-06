@@ -1,3 +1,11 @@
+2023-09-06  Karl Berry  <karl@freefriends.org>
+
+	* tubtocmac.tex (\tubmaybelinkpageno): call it.
+	(\tubmaybelinktext): new macro to link any text.
+	* tugboat.front (\newsubs@c): move new definition from cover4.tex
+	to here, with pdf linking.
+	(\subsec): also link the title (author \ifprocissue) arg.
+
 2023-04-16  Karl Berry  <karl@freefriends.org>
 
 	* tubtocmac.tex (\titleref, \booktitle): define as with ltugboat.sty.

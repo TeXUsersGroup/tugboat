@@ -1,0 +1,9 @@
+#!/bin/sh
+# $Id$
+# Run any command (e.g., mtxrun, context) with /opt/lmtx first in path.
+
+# From a standalone minimals installation.
+# https://wiki.contextgarden.net/Installation
+PATH=/opt/lmtx/tex/texmf-linux-64/bin:$PATH
+
+exec "$@"

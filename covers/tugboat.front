@@ -12,7 +12,7 @@
 %							updated 16 Dec 99, bb
 %							updated 22 Dec 01, bb
 %							updated  6 Jul 02, bb
-%  ... more changes in following years.
+%  ... more changes in following years. See ./ChangeLog.
 %  
 %  This file contains the definitions necessary to produce the
 %  TUG steering committee list, the inside title page, and cover 3
@@ -164,28 +164,40 @@
     {\ignorespaces #2\unskip}}
 \fi
 
-% overridden in cover4.tex; probably the defn here can be replaced.
+% Subroutine, though could probably be inline in \subsec now.
 \def\newsubs@c#1#2{%
+    % #1 is the page number, preceded by \ignorespaces, as in:
+    % #1<-\ignorespaces \getfirstpage {pres}
+    % The page number part might also be empty, for the "TUGboat" head, etc.
+    % \getfirstpage is defined in tugboat.dates.
+    % #2 is the title (for regular issues)
+    %   or the author (for proceedings issues).
+    % 
     \ifnewsec \vskip\secskipa \newsecfalse \else \vskip\secskipb \fi
     \noindent \hangindent=\@hangindwd
     \leavevmode
     \hbox to \@secwd{\hss
       \box\SecBox
       \quad
-      \hbox to \digitwidth{\hss
-        \strippageno#1-<%
-      }%
+      \hbox to \digitwidth{\hss \tubmaybelinkpageno{\strippageno#1-<}}%
       \quad
     }%
-    {\ignorespaces #2\unskip}%
+    \tubmaybelinktext{\ignorespaces #2\unskip}%
 }
 
 %  For acronyms in titles, need slanted \SMC, just two sizes.
 %  [added 1999/12/10, for tb64, 1999 Proceedings issue]
 \addto\tenpoint{\def\slSMC{\ninesl}}
 \addto\ninepoint{\def\slSMC{\eightsl}}
-%  If either author or title absent, omit / separator.
-%  If this is a proceedings issue, reverse order of author / title.
+
+% \subsec - main macro for toc (cover4).
+% #1 - author
+% #2 - title
+% #3 - pageno
+% If this is a proceedings issue, reverse order of author / title,
+% which seems unnecessary now, but we've always done it.
+% 
+% If either author or title absent, omit / separator.
 \def\subsec #1\\#2\\#3<{\par
     \TestCount=0					% case to set /
     \setbox\TestBox=\hbox{#1\unskip}%
@@ -195,7 +207,11 @@
     \newsubs@c{\ignorespaces#3}{\ifprocissue#1\else\ignorespaces#2\fi}%
     \ifcase\TestCount
         \hskip.5em\raise.3ex\hbox{\sevenrm/}\penalty-10\hskip.4em\fi
-    {\sl \let\SMC=\slSMC \ifprocissue\ignorespaces#2\else#1\fi\unskip}\endgraf}
+    {\sl \let\SMC=\slSMC
+     \tubmaybelinktext{\ifprocissue\ignorespaces#2\else#1\fi\unskip}%
+    }%
+    \endgraf
+}
 
 \def\subseca #1\\#2<{\subsec #1\\#2\\ <}
 \def\subsecnn #1\\#2<{\subsec \ifprocissue#1\fi\\%

@@ -61,19 +61,30 @@
       \global\advance\tublinkdestpage by -\TBtitlepage % from tugboat.dates
       \global\advance\tublinkdestpage by 3 % cover4,cover2,titlepage
     }%
-    % do not make link if page number is nonexistent, in cover4 head.
+  \fi
+  \tubmaybelinktext{#1}% typeset the text, make the link
+}
+
+% Link text #1 to \tublinkdestpage as set above.
+% It turns out that we typeset the page number before anything else, 
+% so no need to redo the calculations.
+% 
+\def\tubmaybelinktext#1{%
+  % do not make link unless requested (set in toclinks.tex).
+  \ifx\tublinktoc\undefined \else
+    % do not make link if page number is nonexistent.
     \ifnum\tublinkdestpage > 0
-      %\message{linking to \the\tublinkdestpage}%
+      %\message{linking text to \the\tublinkdestpage}%
       \pdfstartlink
         attr{/Border [0 0 0]}    % boxes around links are too ugly
         goto page \tublinkdestpage{/XYZ}\relax  % destination page
     \fi
   \fi
-  #1% Typeset page number as usual.
-  \ifx\tublinktoc\undefined\else \ifnum\tublinkdestpage > 0 \pdfendlink \fi \fi
+  {#1}% Typeset text.
+  \ifx\tublinktoc\undefined\else \ifnum\tublinkdestpage>0 \pdfendlink \fi \fi
 }
 
-% all for xetex.
+%  all for xetex.
 \def\tubreflect#1{%
   \ifx\reflectbox\undefined
     \errmessage{graphics package must be loaded}%

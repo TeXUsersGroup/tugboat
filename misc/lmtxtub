@@ -1,0 +1,54 @@
+#!/bin/sh
+# $Id$
+# Run ConTeXt LMTX, from ConTeXt tree, via our lmtx script.
+# Redirect all terminal output, and report number of "shipped pages".
+
+out=lmtxtub.out
+lmtx context --batchmode "$@" >$out
+status=$?
+
+# mkiv lua stats  > runtime: 1.405 seconds, 180 processed pages, 180 shipped pages, 128.070 pages/second
+egrep -o '[0-9]+ shipped pages' $out | tail -1
+
+echo "Transcript written to $out."
+exit $?
+
+# Notes from Max for running interactively (2023).
+#You can kind of fake it though:
+#
+#   -- lmtx-init.lua
+#   callback.register("find_log_file", function() return "texput.log" end)
+#   callback.register("open_data_file", function()
+#       local f = io.open("/dev/stdin", 'r')
+#       return f and {
+#           reader = function()
+#               io.write("\n* ")
+#               return f:read()
+#           end,
+#           close = function() f:close() end,
+#       }
+#   end)
+#   -- end of lmtx-init.lua
+#   
+#   $ luametatex --lua=./lmtx-init.lua --ini literally-any-string
+#
+#Or with ConTeXt:
+#
+#   % context-interactive.tex
+#   \startluacode
+#   context.stepwise(function()
+#       local l
+#       local function next()
+#           io.write("\n* ")
+#           l = io.read()
+#           return l
+#       end
+#       while next() do
+#           context.step(l)
+#       end
+#   end)
+#   \stopluacode
+#   % end of context-interactive.tex
+#   
+#   $ context --once context-interactive.tex
+#-- Max
