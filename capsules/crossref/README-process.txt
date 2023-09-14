@@ -237,8 +237,8 @@ say "publicly available now". This is irritating, but it seems useful
 enough to state explicitly whether or not an article is public to put up
 with it. To do this:
 
-previss=43-3
-prevnnn=135
+previss=44-1
+prevnnn=136
 
 - ensure that tb${prevnnn}capsule.txt is up to date, without /members/ urls.
 
@@ -248,7 +248,8 @@ rm crossref/dir*/tb${prevnnn}*.*  # should be nothing there
 
 - in capsules/Makefile, change crossref_iss to the desired number PREVN.
 
-- assuming no hand edits were done, can run the usual:
+- assuming no hand edits were done and all files are still available,
+  can run the usual:
 make cro-scratch
 
 - check diffs (no more "available to TUG members"):
