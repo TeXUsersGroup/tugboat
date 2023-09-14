@@ -27,7 +27,7 @@ default check: one #all-diff
 
 # These issue values, and most of the targets below, come into play with
 # publishing a TUGboat issue; see the README.karl file on tug.org.
-testiss = 137
+testiss = 136
 lastiss = 137
 crossref_iss = 137
 
