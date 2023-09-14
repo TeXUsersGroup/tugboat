@@ -1,0 +1,19 @@
+The fifth edition of my \emph{Math into \LaTeX} book is still selling well,
+but it is seven years old.
+A lot has changed. 
+All \TeX\ files, \BibTeX\ and MakeIndex files changed
+from \ASCII\ to \tbUTF-8. 
+Lots of work has been done for references, further developing and
+enhancing \BibTeX.
+And a lot more \dots
+
+So I started contemplating a sixth edition, a huge undertaking. 
+For instance, the Bib\LaTeX\ manual alone is about 350 pages and 
+I would have to read at least ten like that.
+
+And then the gods smiled at me \dots.
+
+First smile: \titleref{The \LaTeX\ Companion}, third edition.
+
+Second smile: ChatGPT.
+

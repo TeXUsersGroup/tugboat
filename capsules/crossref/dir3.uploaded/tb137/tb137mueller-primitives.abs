@@ -1,0 +1,13 @@
+  I present a schema for translating \tex\ primitives
+  to \HTML/\CSS. This translation
+  can serve as a basis for (very) low-level \tex-to-\HTML converters,
+  and is in fact used by the RusTeX system\Dash
+  a (somewhat experimental) implementation
+  of a \tex\ engine in Rust, used to convert 
+  \latex\ documents to \HTML\Dash for that purpose.
+
+  Notably, the schema is accurate enough to yield surprisingly decent
+  (and surprisingly often the ``exactly right'') results on
+  surprisingly many ``high-level'' \latex\ macros, 
+  which makes it adequate to use in lieu of (and often even instead of)
+  dedicated support for macros and packages.

@@ -1,0 +1,11 @@
+Asymptote{} is a vector graphics language for technical
+drawing that fits very well with \TeX, \LaTeX{}, and friends. 
+It deserves to be more widely known.
+
+One appealing thing is
+that it is in part based on algorithms from \MF{} and \MP{} but
+it extends those to three dimensions. 
+I'll discuss a couple of workflow
+issues that a beginner to Asymptote{} who is coming from \MP{} might
+find useful, in particular using a single source file to output many
+related graphics.

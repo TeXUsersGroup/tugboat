@@ -1,0 +1,26 @@
+Space- and time-effective segmentation (word hyphenation) of natural languages remains at the core of every document rendering system, be it \TeX, web browser, or mobile operating system.
+In most languages, segmentation mimicking syllabic pronunciation is a pragmatic preference today.
+
+As language switching is often not marked in rendered texts, the typesetting engine needs \emph{universal syllabic segmentation}. 
+In this article, we show the feasibility of this idea by offering a prototype solution to two main problems: 
+
+    A) Using Patgen{} to generate patterns for several languages
+    at once; and
+
+    B) no \href{https://en.wikipedia.org/wiki/Wide_character}{wide character} support in tools like Patgen{} or \TeX\ hyphenation, e.g.\ internal Unicode support is missing.
+
+For A), we have applied it to generating universal syllabic patterns from wordlists of nine syllabic, as opposed to etymology-based, languages
+(namely, Czech, Slovak, Georgian, Greek, Polish, Russian, Turkish, Turkmen, and Ukrainian).
+For B), we have created a version of Patgen that uses the 
+\href{https://en.wikipedia.org/wiki/Judy_array}{Judy array} data structure and compared its effectiveness with the trie implementation.
+
+With the data from these nine languages,
+we show that:
+
+A) developing universal, up-to-date, high\hyph coverage, and
+    highly generalized universal syllabic segmentation patterns is
+    possible, with high impact on virtually all typesetting engines,
+    including web page renderers; and
+
+B) bringing wide character support into the hyphenation part of the \TeX\ suite of programs is possible by using Judy arrays.
+

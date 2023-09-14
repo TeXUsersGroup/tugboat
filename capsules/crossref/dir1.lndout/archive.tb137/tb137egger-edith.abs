@@ -1,0 +1,12 @@
+We need some female units that correctly stay within the
+metric domain! In order to convince users to drop the inch the first new unit
+somewhat relates to it: one Edith (\texttt{{es}) is the median of the widths of
+thumbs of Bacho\TEX\ 2023 attendees. One can argue that this is somewhat
+arbitrary and indeed it is. In order to get a decent value we use a discrete
+measurement device that groups thumbs into 15, 20, 25 and 30 mm intervals. A 10mm
+interval is unlikely to get many hits unless the \TEX\ ecosystem suddenly became
+very easy to use and toddlers get interested in it as a game.
+
+Just like a centimeter has a smaller companion in the millimeter, the
+Edith has a companion Tove (\texttt{ts}). In terms of points, one Tove
+is 7.11317pt, while an Edith is 71.13177pt.

@@ -1,0 +1,6 @@
+Over the course of the last year(s), the Island of \TeX\ has 
+received quite some interest in its Docker containers. This article gives a
+brief overview about our container infrastructure for \TeX\ Live and 
+\ConTeXt, including some examples on using our containers in production 
+environments. Last but not least, we will elaborate on some interesting 
+(mostly still open) problems connected to containerizing \TeX\ Live.

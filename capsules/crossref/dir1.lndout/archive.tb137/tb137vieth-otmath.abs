@@ -1,0 +1,11 @@
+  OpenType math fonts were introduced more than 15 years ago.  Over
+  the years, more and more math fonts have been developed and added to
+  the font collection.  In this paper, we review some of the more
+  recent additions, comparing them to previous choices of OpenType math
+  fonts such as Cambria, Lucida, Latin Modern, and \TeX\ Gyre.
+  
+  In our analysis, we focus on completeness of math symbols and
+  alphabets, and on design choices of math alphabets.
+  A detailed technical study of glyph and font metrics is beyond the
+  scope of this paper, but some aspects of this have been recently
+  addressed by other contributions.

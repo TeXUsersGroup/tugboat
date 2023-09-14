@@ -1,0 +1,8 @@
+  Malayalam is an Indic script with numerous shape-shifting characters.
+  We explore a reusable component-based design for Malayalam fonts, and
+  develop them using \MF/\MP\ [6,1] to assemble the
+  characters. We discuss the paradigm shift from \acro{GUI} design tools
+  to `code-based' design of shapes and glyphs, even by non-coders, and
+  the advantages and challenges of using \MF/\MP\ to develop an OpenType
+  font for a complex script. Finally, the progress made by our small
+  team is shared.

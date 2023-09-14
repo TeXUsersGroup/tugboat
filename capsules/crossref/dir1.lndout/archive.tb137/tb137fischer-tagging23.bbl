@@ -1,0 +1,65 @@
+\newcommand{\noopsort}[1]{} \newcommand{\mydash}{-}
+  \ifx\thisissuepageref\undefined \let\thisissuepageref\noopsort\fi\input
+  tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{1}
+
+\bibitem{CFM:2023:workshop}
+D.~Carlisle, U.~Fischer, F.~Mittelbach.
+\newblock {Report on the \LaTeX{} Tagged PDF Workshop, TUG 2023}.
+\newblock \emph{TUGboat} 44(2):267--269, 2023.
+\newblock \url{https://doi.org/10.47397/tb/44-2/carlisle-taggedpdfworkshop23}
+
+\bibitem{tagpdf}
+U.~Fischer.
+\newblock \emph{The \texttt{\textsl{tagpdf}} package}.
+\newblock \newline \url{https://ctan.org/pkg/tagpdf}
+
+\bibitem{Fischer:2020:CAP}
+U.~Fischer.
+\newblock Creating accessible pdfs with {\LaTeX}.
+\newblock \emph{TUGboat} 41(1):26--28, 2020.
+\newblock \url{https://tug.org/TUGboat/tb41-1/tb127fischer-accessible.pdf}
+
+\bibitem{Fischer:2021:RTP}
+U.~Fischer.
+\newblock On the road to {Tagged PDF}: About {StructElem}, marked content,
+  {PDF/A} and squeezed b{\"a}rs.
+\newblock \emph{TUGboat} 42(2):170--173, 2021.
+\newblock \url{https://doi.org/10.47397/tb/42-2/tb131fischer-tagpdf}
+
+\bibitem{pdfspec-iso32000-2_2020}
+{ISO}.
+\newblock \emph{ISO 32000-2:2020(en)}, 2nd ed., 2020.
+\newblock PDF~2.0.
+\newblock \url{https://iso.org/en/contents/data/standard/07/58/75839.html}
+
+\bibitem{pdfspec-iso32005_2023}
+{ISO}.
+\newblock \emph{ISO/TS 32005:2023}, 1st ed., 2023.
+\newblock PDF~1.7 and~2.0 structure namespace inclusion.
+\newblock \url{https://iso.org/en/contents/data/standard/04/58/45878.html}
+
+\bibitem{Lamport:1994}
+L.~Lamport.
+\newblock \emph{{\LaTeX}: A Document Preparation System: User's Guide and
+  Reference Manual}.
+\newblock Addison Wesley, 2nd ed., 1994.
+
+\bibitem{fmi:beast}
+F.~Mittelbach.
+\newblock Taming the beast — advances in paragraph tagging with {pdf\TeX} and
+  {\XeTeX} (2021): Automatic paragraph tagging with the {pdf\TeX} and {\XeTeX}
+  engine[s] now possible.
+\newblock
+  \url{https://latex-project.org/news/2022/09/06/TUG-online-talks-21-22/}
+
+\bibitem{Mittelbach:2020:QVL}
+F.~Mittelbach, {the \LaTeX{} Project Team}.
+\newblock Quo vadis {{\LaTeX(3) Team}}{\Dash}a look back and at the upcoming
+  years.
+\newblock \emph{TUGboat} 41(2):201--207, 2020.
+\newblock \url{https://tug.org/TUGboat/tb41-2/tb128mitt-quovadis.pdf}
+
+\end{thebibliography}

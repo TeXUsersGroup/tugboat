@@ -1,0 +1,32 @@
+\newcommand{\noopsort}[1]{} \newcommand{\mydash}{-}
+  \ifx\thisissuepageref\undefined \let\thisissuepageref\noopsort\fi
+\begin{thebibliography}{1}
+
+\bibitem{Beeton:2023:NSK}
+B.~Beeton.
+\newblock What every {\AllTeX} newbie should know.
+\newblock \emph{TUGboat} 44(2):{164--169}, 2023.
+
+\bibitem{Hejda:2023:overleaf}
+T.~Hejda.
+\newblock {\TeX\ Live} and {O}verleaf revisited.
+\newblock \emph{TUGboat} 44(2):{256}, 2023.
+
+\bibitem{IslandOfTex:2023:Docker}
+{Island of \TeX}.
+\newblock Living in containers{\Dash}on {\TeX\ {l}ive} in a docker~setting.
+\newblock \emph{TUGboat} 44(2):{249--252}, 2023.
+
+\bibitem{DBLP:conf/zeus/KoppAZ18}
+O.~Kopp, A.~Armbruster, O.~Zimmermann.
+\newblock Markdown architectural decision records: Format and tool support.
+\newblock In~\emph{ZEUS}, vol. 2072 of \emph{{CEUR} Workshop Proceedings},
+  pp.~55--62, 2018.
+\newblock \url{https://ceur-ws.org/Vol-2072/paper9.pdf}
+
+\bibitem{TLC3}
+F.~Mittelbach, U.~Fischer.
+\newblock \emph{The {\LaTeX} Companion: Parts I \& II}.
+\newblock Addison-Wesley, third~\ignorespaces ed., 2023.
+
+\end{thebibliography}

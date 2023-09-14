@@ -1,0 +1,14 @@
+The depth of a box is normally positive but rules can have a negative
+depth in order to get a rule above the baseline. When \TEX\ was written
+the assumption was that a negative depth of more than 1000 points made
+no sense at all. The last depth on a vertical list is registered in the
+\cs{prevdepth} variable. This is essentially a reference into the
+current list.
+
+% 2212 = minus sign
+In order to illustrate some interesting side effects of setting this
+\cs{prevdepth}, and especially when we set it to \tbunichar{2212}1000pt,
+this special sentinel value can be changed in \LUAMETATEX. However, as
+dealing with the property is somewhat special in the engine, you should
+not set it unless you know that the macro package is aware of it.
+

@@ -1,0 +1,19 @@
+  We present \acro{ETAP}, a platform designed to support both demonstration
+  of, and experimentation with digital typesetting, interactively, and in
+  real-time.
+
+  \acro{ETAP} provides a \acro{GUI} which currently focuses on all aspects
+  involved in paragraph formatting. A number of pre-processing features can be
+  switched on or off (hyphenation, kerning, ligaturing, \textit{etc.}). A
+  specific paragraph formatting scheme may be selected from a pool of
+  ready-made algorithms, and adding new algorithms to that pool is easy. Each
+  algorithm comes with its own set of configuration parameters, and the
+  \acro{GUI} allows you to tweak those parameters and observe the effects in
+  real-time.
+
+  \acro{ETAP} may also be used without, or in parallel with the \acro{GUI}.
+  While the application is running, the whole programmatic infrastructure is
+  manipulable from a command-line interface. This allows inspection of the
+  various typesetting objects normally displayed by the \acro{GUI}, and also
+  to perform computations with them, for example, data collection
+  and statistical measurements.

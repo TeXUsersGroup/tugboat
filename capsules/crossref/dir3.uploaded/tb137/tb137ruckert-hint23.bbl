@@ -1,0 +1,43 @@
+\begin{thebibliography}{1}
+
+\bibitem{JF:texhour}
+J.~Fine, M.~Ruckert, et~al.
+\newblock Rethinking {\TeX} in {STEM}.
+\newblock \url{https://texhour.github.io/2022/09/29/rethink-tex-in-stem/},
+  Sept. 2022.
+
+\bibitem{MR:HINT}
+M.~Ruckert.
+\newblock {HINT} source repository.
+\newblock \url{https://github.com/ruckertm/HINT}.
+
+\bibitem{MR:HTVC}
+M.~Ruckert.
+\newblock The {HINT} video collection.
+\newblock \url{https://hint.userweb.mwn.de/hint/video/}.
+
+\bibitem{MR:tug40}
+M.~Ruckert.
+\newblock The design of the {HINT} file format.
+\newblock \emph{TUGboat} 40(2):143--146, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-2/tb125ruckert-hint.pdf}
+
+\bibitem{MR:format}
+M.~Ruckert.
+\newblock \emph{{HINT}: The File Format}.
+\newblock \gobble, 2019.
+\newblock ISBN~\hbox{1-079-48159-1}.
+\newblock \newline \url{https://amazon.com/dp/1079481591}
+
+\bibitem{MR:tug41}
+M.~Ruckert, G.~Socher.
+\newblock The {HINT} project: Status and open questions.
+\newblock \emph{TUGboat} 41(2):208--211, 2020.
+\newblock \url{https://tug.org/TUGboat/tb41-2/tb128ruckert-hint.pdf}
+
+\bibitem{freetype}
+D.~Turner, W.~Lemberg, et~al.
+\newblock Free{T}ype.
+\newblock \url{https://www.freetype.org/}.
+
+\end{thebibliography}

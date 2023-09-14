@@ -1,0 +1,44 @@
+\bibitem{37:ltshipout-doc} Frank Mittelbach, \LaTeX{}~Project~Team:
+  \emph{The~\texttt{\upshape ltshipout} documentation}.\\
+  Run \texttt{texdoc} \texttt{ltshipout-doc} to view.
+
+\bibitem{37:lthooks-doc} Frank Mittelbach, Phelype Oleinik, \LaTeX{}~Project~Team:
+ \emph{\LaTeX's hook management}.\\
+ Run \texttt{texdoc} \texttt{lthooks-doc} to view.
+
+%\bibitem{37:blueprint} Frank Mittelbach and Chris Rowley:
+%  \emph{\LaTeX{} Tagged PDF \Dash A blueprint for a large project}.\\
+%  \url{https://latex-project.org/publications/indexbyyear/2020/}
+
+%\bibitem{37:source2e}
+%  \emph{\LaTeX{} documentation on the \LaTeX{} Project Website}.\\
+%  \url{https://latex-project.org/help/documentation/}
+
+%\bibitem{37:Lamport}
+%Leslie Lamport.
+%\newblock {\LaTeX}: {A} Document Preparation System: User's Guide and Reference
+%  Manual.
+%\newblock \mbox{Addison}-Wesley, Reading, MA, USA, 2nd edition, 1994.
+%\newblock ISBN 0-201-52983-1.
+%\newblock Reprinted with corrections in 1996.
+%
+%\bibitem{37:ltnews32} \LaTeX{} Project Team:
+%  \emph{\LaTeXe{} news 32}.\\
+%  \url{https://latex-project.org/news/latex2e-news/ltnews32.pdf}
+%
+%\bibitem{37:ltnews34} \LaTeX{} Project Team:
+%  \emph{\LaTeXe{} news 34}.\\
+%  \url{https://latex-project.org/news/latex2e-news/ltnews34.pdf}
+%
+%\bibitem{37:ltnews35} \LaTeX{} Project Team:
+%  \emph{\LaTeXe{} news 35}.\\
+%  \url{https://latex-project.org/news/latex2e-news/ltnews35.pdf}
+%
+%\bibitem{37:fntguide} \LaTeX{} Project Team:
+%  \emph{\LaTeXe{} font selection}.\\
+%  \url{https://latex-project.org/help/documentation/}
+%
+%\bibitem{37:ltfilehook-doc} Frank Mittelbach, Phelype Oleinik, \LaTeX{}~Project~Team:
+%  \emph{The \texttt{\upshape ltfilehook} documentation}.\\
+%  Run \texttt{texdoc} \texttt{ltfilehook-doc} to view.
+\end{thebibliography}

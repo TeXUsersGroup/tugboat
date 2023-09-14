@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{url}
+D.~Arseneau.
+\newblock \emph{The \tbcode{url} package}, 2013.
+\newblock \newline \url{https://ctan.org/pkg/url}
+
+\bibitem{amsmath}
+{{\LaTeX} Project Team}.
+\newblock \emph{The \tbcode{amsmath} package}, 2023.
+\newblock \url{https://ctan.org/pkg/amslatex}
+
+\bibitem{longtable}
+{\LaTeX\ Project Team}, D.~Carlisle, D.~Kastrup.
+\newblock \emph{The~\tbcode{longtable} package}, 2021.
+\newblock \newline \url{https://ctan.org/pkg/longtable}
+
+\bibitem{hyperref}
+{\LaTeX\ Project Team}, {Oberdiek Package Support Group}, et~al.
+\newblock \emph{The \tbcode{hyperref} package}, 2023.
+\newblock \url{https://ctan.org/pkg/hyperref}
+
+\bibitem{caption}
+A.~Sommerfeldt.
+\newblock \emph{The \tbcode{caption} package}, 2023.
+\newblock \url{https://ctan.org/pkg/caption}
+
+\end{thebibliography}

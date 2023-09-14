@@ -1,0 +1,18 @@
+\CONTEXT\ has always had a good support for the typesetting of mathematics.
+\CONTEXT\ \MKII\ uses the \PDFTEX\ engine and hence traditional (\TYPEONE) fonts.
+Several math fonts are available, specifically designed to work seamlessly with 
+\TEX. \CONTEXT\ \MKIV, the successor version, utilizes the \LUATEX\ engine, 
+providing support not only for traditional fonts but also for 
+\OPENTYPE\ \UNICODE\ math fonts. Unlike the \XETEX\ engine, which interpreted 
+these new fonts in a manner similar to traditional \TEX\ fonts, \LUATEX\ 
+adheres more closely to the (unfortunately somewhat vague) \OPENTYPE\ 
+specification.
+
+When new fonts appeared, some were more like the traditional fonts, others 
+more like \OPENTYPE\ \UNICODE\ math fonts. This leads to difficulties in 
+achieving consistent results across different fonts and might be one reason 
+that the \UNICODE\ engines are not yet used as much as they probably should.
+
+In autumn 2021 we started to discuss how to improve the typesetting of 
+\OPENTYPE\ \UNICODE\ mathematics, and it was natural to go on and do this for 
+the \LUAMETATEX\ engine, and hence for \CONTEXT\ \LMTX.

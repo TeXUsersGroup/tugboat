@@ -1,0 +1,55 @@
+<!--#include virtual="/header.html"-->
+<title>Cheats (or not): When &#x5c;prevdepth = -1000pt
+       - TUGboat 44:2 (2023) - TeX Users Group</title>
+</head><body>
+
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+<h1><a href="/TUGboat/tb44-2/">TUGboat 44:2</a> (2023)<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
+
+<p><b>Title</b>: Cheats (or not): When <tt>&#x5c;prevdepth = -1000pt</tt></p>
+
+<p><b>Summary</b>:
+explaining and generalizing the sentinel value for <tt>&#x5c;nointerlineskip</tt>.</p>
+
+<p><b>Full text of article</b>: <a href="https://tug.org/members/TUGboat/tb44-2/tb137hagen-prevdepth.pdf">available to TUG members</a> (<a href="/join.html">join TUG</a>);
+will be publicly available after the next issue is published.</p>
+
+<p><b>Author</b>:
+<a href="/TUGboat/Contents/listauthor.html#Hagen,Hans">Hans Hagen</a></p>
+
+<p><b>Publication</b>: <a href="/TUGboat/tb44-2/">TUGboat
+volume 44, number 2</a> (2023),
+pages&nbsp;287-288</p>
+
+<p><b>DOI</b> (this page):
+<a href="https://doi.org/10.47397/tb/44-2/tb137hagen-prevdepth">10.47397/tb/44-2/tb137hagen-prevdepth</a>
+<br><small>(<a href="https://doi.org/10.47397/tb/44-2/tb137mueller-primitives">previous doi</a>
+- <a href="https://doi.org/10.47397/tb/44-2/tb137sojka-syllabic">next doi</a>)</small></p>
+
+<p><b>Category</b>:
+<a href="/TUGboat/Contents/listkeyword.html#CatTAGHintsTricks">Hints&#xa0;&&#xa0;Tricks</a></p>
+      
+<p><b>Difficulty</b>: Advanced</p>
+
+<p><b>Abstract</b>:
+The depth of a box is normally positive but rules can have a negative
+depth in order to get a rule above the baseline. When TeX was written
+the assumption was that a negative depth of more than 1000 points made
+no sense at all. The last depth on a vertical list is registered in the
+<tt>&#x005C;prevdepth</tt> variable. This is essentially a reference into the
+current list.</p>
+<p>% 2212 = minus sign
+In order to illustrate some interesting side effects of setting this
+<tt>&#x005C;prevdepth</tt>, and especially when we set it to &#x2212;1000pt,
+this special sentinel value can be changed in LuaMetaTeX. However, as
+dealing with the property is somewhat special in the engine, you should
+not set it unless you know that the macro package is aware of it.</p>
+
+<!-- REPLACE-WITH-BIBLIOGRAPHY -->
+
+<hr><small><a href="/TUGboat/">TUGboat</a> 44:2, 2023 (<a href="/TUGboat/tb44-2/">issue 137</a>)
+&nbsp; [generated 2023-09-14]
+</small><br><!--#include virtual="/footer.html"-->

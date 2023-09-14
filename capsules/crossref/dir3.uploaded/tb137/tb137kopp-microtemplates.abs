@@ -1,0 +1,12 @@
+  Scientific findings are published by different publishers. These
+  provide different templates. These differ in the documentation and
+  packages provided. For example, \texttt{hyperref} or \texttt{microtype}
+  are mostly not included or not configured properly. Furthermore, there
+  is a demand for minimal examples in the body of the paper. For instance,
+  how to typeset a listing with line numbers and hyperlink to that line
+  number. These minimal examples should appear in any paper template. If
+  the minimal example is updated, how can various paper templates be
+  updated automatically? The ``\LaTeX\ Template Generator'' is one answer
+  to this question. It uses ``micro-templates'' to create full-fledged
+  paper templates containing the same configurations for popular packages.
+  Thus, it reduces the maintenance effort of \LaTeX\ templates.

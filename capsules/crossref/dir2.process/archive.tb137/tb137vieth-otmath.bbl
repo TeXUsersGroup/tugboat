@@ -1,0 +1,225 @@
+\bibitem{Sargent:High-Quality}
+Murray Sargent:
+\newblock {High-quality editing and display of mathematical text in Office 2007}.
+\newline {\url{https://learn.microsoft.com/en-us/archive/blogs/murrays}}
+
+\bibitem{MS:OT-Spec}
+Microsoft Typography:
+\newblock {OpenType specification, version~1.9, December 2021}.
+\newline {\url{https://learn.microsoft.com/en-us/typography/opentype/spec}}
+
+\bibitem{Vieth:TB29-3-426}
+Ulrik Vieth:
+\newblock {Do we need a Cork math font encoding?}
+\newblock \emph{TUGboat}, 29(3), 426--434, 2008.
+\newline {\url{https://tug.org/TUGboat/tb29-3/tb93vieth.pdf}}
+\newline Reprinted in \emph{MAPS}, 38, 3--11, 2009.
+\newline {\url{https://ntg.nl/maps/38/02.pdf}}
+
+\bibitem{Vieth:TB30-1-22}
+Ulrik Vieth:
+\newblock {OpenType Math Illuminated}.
+\newline \emph{TUGboat}, 30(1), 22--31, 2009.
+\newline {\url{https://tug.org/TUGboat/tb30-1/tb94vieth.pdf}}
+\newline Reprinted in \emph{MAPS}, 38, 12--21, 2009.
+\newline {\url{https://ntg.nl/maps/38/03.pdf}}
+
+\bibitem{Kew:TB-29-1-151}
+Jonathan Kew:
+\newblock {\XeTeX\ Live}.
+\newline \emph{TUGboat}, 29(1), 151--156, 2008.
+\newline {\url{https://tug.org/TUGboat/tb29-1/tb91kew.pdf}}
+
+\bibitem{Hoekwater:MAPS-38-22}
+Taco Hoekwater:
+\newblock {Math in \LuaTeX\ 0.40}.
+\newline \emph{MAPS}, 38, 22--31, 2009.
+\newline {\url{https://ntg.nl/maps/38/04.pdf}}
+
+\bibitem{Hagen:TB37-3-269}
+Hans Hagen:
+\newblock {\LuaTeX\ math enhancements}.
+\newline \emph{TUGboat}, 37(3), 269--274, 2016.
+\newline {\url{https://tug.org/TUGboat/tb37-3/tb117hagen-otmath.pdf}}
+
+\bibitem{Tiro:Cambria}
+Tiro Typeworks:
+\newblock {Cambria Math}.
+\newline {\url{https://tiro.com/projects.html}}
+
+\bibitem{Syropoulos:asana-math}
+Apostolos Syropoulos:
+\newblock {Asana Math}.
+\newline {\url{https://ctan.org/pkg/asana-math}}
+
+\bibitem{Hosny:xits}
+Khaled Hosny:
+\newblock {XITS font package}.
+\newline {\url{https://ctan.org/pkg/xits}}
+\newline {\url{https://github.com/alif-type/xits}}
+
+\bibitem{STIpub:stix}
+STIX Consortium:
+\newblock {STIX font package}.
+\newline {\url{https://ctan.org/pkg/stix}}
+
+\bibitem{STIpub:stix2-otf}
+STIX Consortium:
+\newblock {STIX2 font package}.
+\newline {\url{https://ctan.org/pkg/stix2-otf}}
+\newline {\url{https://github.com/stipub/stixfonts}}
+
+\bibitem{GUST:lm-math}
+GUST e-foundry:
+\newblock {Latin Modern Math}.
+\newline {\url{https://ctan.org/pkg/lm-math}}
+\newline {\url{https://gust.org.pl/projects/e-foundry}}
+
+\bibitem{GUST:tex-gyre-math}
+GUST e-foundry:
+\newblock {\TeX\ Gyre Math}.
+\newline {\url{https://ctan.org/pkg/tex-gyre-math}}
+\newline {\url{https://gust.org.pl/projects/e-foundry}}
+
+\bibitem{Jackowski:TB37-3-317}
+Bogusław Jackowski, Piotr Strzelczyk, Piotr Pianowski:
+\newblock {GUST e-foundry font projects}.
+\newline \emph{TUGboat}, 37(3), 269--274, 2016.
+\newline {\url{https://tug.org/TUGboat/tb37-3/tb117jackowski.pdf}}
+
+\bibitem{Jackowski:TB38-2-208}
+Bogusław Jackowski, Piotr Strzelczyk, Piotr Pianowski:
+\newblock {Parametric math symbol fonts}.
+\newline \emph{TUGboat}, 38(2), 208--211, 2017.
+\newline {\url{https://tug.org/TUGboat/tb38-2/tb119jackowski.pdf}}
+
+\bibitem{TUG:lucida-otf}
+\TeX\ Users Group:
+\newblock {Lucida fonts from TUG}.
+\newline {\url{https://tug.org/lucida/}}
+
+\bibitem{Hosny:libertinus}
+Khaled Hosny:
+\newblock {Libertinus Fonts}.
+\newline {\url{https://ctan.org/pkg/libertinus-fonts}}
+\newline {\url{https://github.com/alerque/libertinus}}
+
+\bibitem{Zhao:garamond-math}
+Yuansheng Zhao, Xiangdong Zeng:
+\newline {Garamond Math}.
+\newline {\url{https://ctan.org/pkg/garamond-math}}
+\newline {\url{https://github.com/YuanshengZhao/Garamond-Math}}
+
+\bibitem{Flipo:erewhon-math}
+Daniel Flipo:
+\newblock {Erewhon Math}.
+\newline {\url{https://ctan.org/pkg/erewhon-math}}
+
+\bibitem{Flipo:xcharter-math}
+Daniel Flipo:
+\newblock {XCharter Math}.
+\newline {\url{https://ctan.org/pkg/xcharter-math}}
+
+\bibitem{Flipo:kpfonts-otf}
+Daniel Flipo:
+\newblock {KpFonts OTF package}.
+\newline {\url{https://ctan.org/pkg/kpfonts-otf}}
+
+\bibitem{Tsolomitis:gfsneohellenicmath}
+Antonis Tsolomitis:
+\newblock {GFS Neohellenic Math}.
+\newline {\url{https://ctan.org/pkg/gfsneohellenicmath}}
+
+\bibitem{Zeng:firamath}
+Xiangdong Zeng:
+\newblock {Fira Math}.
+\newline {\url{https://ctan.org/pkg/firamath}}
+\newline {\url{https://github.com/firamath/firamath}}
+
+\bibitem{Github:latomath}
+Chenjing Bu:
+\newblock {Lato Math}.
+\newline {\url{https://github.com/abccsss/LatoMath}}
+
+\bibitem{Github:latofonts}
+Łukasz Dziedzic:
+\newblock {Lato Fonts}.
+\newline {\url{https://github.com/latofonts/lato-source}}
+
+\bibitem{Github:notomath}
+Noto Fonts Project:
+\newblock {Noto Math}.
+\newline {\url{https://github.com/notofonts/math}}
+
+\bibitem{Tsolomitis:TB-42-1-52}
+Antonis Tsolomitis:
+\newblock {New Computer Modern font family}.
+\newblock \emph{TUGboat}, 42(1), 52--55, 2021.
+\newline {\url{https://tug.org/TUGboat/tb42-1/tb130tsolomitis-newcm.pdf}}
+
+\bibitem{Tsolomitis:newcomputermodern}
+Antonis Tsolomitis:
+\newblock {New Computer Modern}.
+\newline {\url{https://ctan.org/pkg/newcomputermodern}}
+
+\bibitem{Flipo:concmath-otf}
+Daniel Flipo:
+\newblock {Concrete Math}.
+\newline {\url{https://ctan.org/pkg/concmath-otf}}
+
+\bibitem{Flipo:euler-math}
+Daniel Flipo:
+\newblock {Euler Math}.
+\newline {\url{https://ctan.org/pkg/euler-math}}
+
+\bibitem{Hosny:NeoEuler}
+Khaled Hosny:
+\newblock {Neo Euler\Dash An abandoned OpenType port of Euler math font}.
+\newline {\url{https://github.com/aliftype/euler-otf}}
+
+\bibitem{Hagen:TB-29-3-283}
+Hans Hagen, Taco Hoekwater, Volker Schaa:
+\newblock{Reshaping Euler: A collaboration with Hermann Zapf}.
+\newline \emph{TUGboat}, 29(3), 283--287, 2008.
+\newline {\url{https://tug.org/TUGboat/tb29-2/tb92hagen-euler.pdf}}
+
+\bibitem{Vieth:TB33-3-302}
+Ulrik Vieth:
+\newblock {OpenType math font development: Progress and challenges}.
+\newline \emph{TUGboat}, 33(3), 302--308, 2012.
+\newline {\url{https://tug.org/TUGboat/tb33-3/tb105vieth.pdf}}
+
+\bibitem{Hagen:TB43-2-202}
+Hans Hagen, Mikael P. Sundqvist:
+\newline {Pushing math forward with \ConTeXt\ \acro{LMTX}}.
+\newline \emph{TUGboat}, 43(2), 202--206, 2022.
+\newline {\url{https://tug.org/TUGboat/tb43-2/tb134hagen-math.pdf}}
+
+\bibitem{Hagen:TB43-3-300}
+Hans Hagen, Mikael P. Sundqvist:
+\newline {New directions in math fonts}.
+\newline \emph{TUGboat}, 43(3), 300--310, 2022.
+\newline {\url{https://tug.org/TUGboat/tb43-3/tb135hagen-mathchange.pdf}}
+
+\bibitem{Hagen:TB43-3-311}
+Hans Hagen, Mikael P. Sundqvist:
+\newline {Patching Lucida Bright Math}.
+\newline \emph{TUGboat}, 43(3), 311--316, 2022.
+\newline {\url{https://tug.org/TUGboat/tb43-3/tb135hagen-lucida.pdf}}
+
+\bibitem{Mittelbach:TB42-3-287}
+Frank Mittelbach:
+\newline {The \pkg{unicodefonttable} package}.
+\newline \emph{TUGboat}, 42(3),287--304, 2021.
+\newline {\url{https://tug.org/TUGboat/tb42-3/tb132mitt-unicodefonttable.pdf}}
+
+\bibitem{Mittelbach:unicodefonttable}
+Frank Mittelbach:
+\newblock {\pkg{unicodefonttable}}.
+\newline {\url{https://ctan.org/pkg/unicodefonttable}}
+
+\bibitem{Robertson:unicode-math}
+Will Robertson:
+\newblock {\pkg{unicode-math} package}.
+\newline {\url{https://ctan.org/pkg/unicode-math}}
+\end{thebibliography}

@@ -1,0 +1,68 @@
+\begin{thebibliography}{10}
+
+\bibitem{mpman}
+J.~Hobby, et~al.
+\newblock \emph{{MetaPost: A Users Manual}}.
+\newblock \url{https://tug.org/metapost}
+
+\bibitem{punkotf}
+K.~Hosny.
+\newblock {The Punk Nova font}.
+\newblock 2010.
+\newblock \url{https://github.com/aliftype/punk-otf}
+
+\bibitem{rachana}
+K.H.~Hussain, R.~Chitrajakumar, et~al.
+\newblock The~{R}achana font family.
+\newblock 2023.
+\newblock \newline \url{https://gitlab.com/rit-fonts/RIT-Rachana}
+\newpage
+\bibitem{metatype}
+B.~Jackowski, J.M.~Nowacki, P.~Strzelczyk.
+\newblock Programming {PostScript Type 1} fonts using \acro{METATYPE1}:
+  Auditing, enhancing, creating.
+\newblock \emph{TUGboat} 24(3), 2003.
+\newblock Proceedings of Euro\TeX\ 2003.
+\newblock \newline \url{https://tug.org/TUGboat/tb24-3/jackowski.pdf}
+
+\bibitem{texbook}
+D.E.~Knuth.
+\newblock \emph{{\TB}}, vol.~{A} of \emph{{Computers \& Typesetting}}.
+\newblock American Mathematical Society and Addison Wesley, Reading,
+  Massachusetts, \gobble{a}1986.
+
+\bibitem{mfbook}
+D.E.~Knuth.
+\newblock \emph{{\MFB}}, vol.~C of \emph{{Computers \& Typesetting}}.
+\newblock American Mathematical Society and Addison-Wesley, Reading,
+  Massachusetts, \gobble{c}1986.
+
+\bibitem{rit-comp-list}
+{Rachana Institute of Typography}.
+\newblock Malayalam glyphs, components and sectors.
+\newblock 2022.
+\newblock \url{https://rachana.org.in/docs/rit-comp-list.pdf}
+
+\bibitem{ml-ot-shaping}
+K.V.~Rajeesh.
+\newblock Malayalam {OpenType} shaping rules.
+\newblock 2020.
+\newblock \url{https://gitlab.com/rit-fonts/malayalam-shaping/}
+
+\bibitem{unicode}
+Unicode.
+\newblock Malayalam: \acro{0D00--0D7F}.
+\newblock \\\url{https://unicode.org/versions/latest/ch12.pdf}\gobble.
+\newblock \newline \url{https://unicode.org/charts/PDF/U0D00.pdf}
+
+\bibitem{brahmi}
+Wikipedia.
+\newblock Brahmic scripts.
+\newblock \url{https://wikipedia.org/wiki/Brahmic_scripts}
+
+\bibitem{in-lang}
+Wikipedia.
+\newblock Languages of {India}.
+\newblock \url{https://wikipedia.org/wiki/Languages_of_India}
+
+\end{thebibliography}

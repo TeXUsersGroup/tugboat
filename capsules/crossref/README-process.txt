@@ -206,7 +206,7 @@ Then archive all the files (after registering):
   scp absbbl.tgz $host: # and unpack
   #
   # svn commit the various files.
-  cd crossref
+  cd ~tubprod/svn/capsules/crossref
   nnn=...
   svn mkdir dir0.capout/archive.tb$nnn
   mv dir0.capout/tb${nnn}* !$

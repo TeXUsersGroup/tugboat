@@ -1,0 +1,68 @@
+\begin{thebibliography}{10}
+
+\bibitem{demaine2023author}
+E.D.~Demaine, M.L.~Demaine.
+\newblock Every author as first author, 2023.\newline\gobble.
+\newblock \url{https://arxiv.org/abs/2304.01393}.
+
+\bibitem{texfm}
+D.~Fuchs.
+\newblock {\TeX} font metric files.
+\newblock \emph{TUGboat} 2(1):53--61, 1981.
+\newblock \url{https://tug.org/TUGboat/tb02-1/tb02fuchstfm.pdf}
+
+\bibitem{Knuth:ttb84}
+D.E.~Knuth.
+\newblock \emph{The {\TeX}book}.
+\newblock Addison-Wesley, 1984.
+
+\bibitem{stexDoc:on}
+M.~Kohlhase, D.~M{\"u}ller.
+\newblock The {s\TeX3} package collection.
+\newblock \url{https://github.com/slatex/sTeX/blob/main/doc/stex-doc.pdf}
+
+\bibitem{pandoc}
+J.~MacFarlane.
+\newblock {Pandoc{\Dash}a universal document converter}.
+\newblock \url{https://pandoc.org}, 2023.
+
+\bibitem{mathjax:url}
+{MathJax}: Beautiful math in all browsers.
+\newblock \url{https://mathjax.org}
+
+\bibitem{Miller:latexml:online}
+B.~Miller.
+\newblock {\LaTeXML}: A {\LaTeX} to {XML} converter.
+\newblock \url{https://dlmf.nist.gov/LaTeXML}
+
+\bibitem{DMueller:phd:19}
+D.~M{\"u}ller.
+\newblock \emph{Mathematical Knowledge Management Across Formal Libraries}.
+\newblock Ph.D. thesis, Informatics, FAU Erlangen-N{\"u}rnberg, Dec. 2019.
+\newblock \url{https://opus4.kobv.de/opus4-fau/files/12359/thesis.pdf}
+
+\bibitem{RusTeX:on}
+D.~M{\"u}ller, et~al.
+\newblock {slatex/RusTeX}.
+\newblock \newline \url{https://github.com/sLaTeX/RusTeX}
+
+\bibitem{MueKo:stextug22}
+D.~M{\"u}ller, M.~Kohlhase.
+\newblock sTeX3{\Dash}a {\LaTeX}-based ecosystem for semantic/active
+  mathematical documents.
+\newblock \emph{TUGboat} 43(2):197--201, 2022.
+\newblock \url{https://tug.org/TUGboat/tb43-2/tb134mueller-stex3.pdf}.
+\newblock \newline \url{https://kwarc.info/people/dmueller/pubs/tug22.pdf}
+
+\bibitem{MathMLTUG}
+L.~Padovani.
+\newblock {\MathML} formatting with {\TeX} rules, {\TeX} fonts, and {\TeX}
+  quality.
+\newblock \emph{TUGboat} 24(1):53--61, 2003.
+\newblock \newline \url{https://tug.org/tugboat/tb24-1/padovani.pdf}
+
+\bibitem{URL:tex4ht}
+{\TeX4ht}.
+\newblock \url{https://tug.org/tex4ht/}
+
+\end{thebibliography}

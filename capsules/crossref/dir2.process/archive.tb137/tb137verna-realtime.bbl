@@ -1,0 +1,96 @@
+\begin{thebibliography}{10}
+
+\bibitem{bib:ansi.94.cl}
+ANSI.
+\newblock American {N}ational {S}tandard: {P}rogramming
+  {L}anguage{\Dash}{C}ommon {L}isp.
+\newblock ANSI X3.226:1994 (R1999), 1994.
+
+\bibitem{bib:barnett.00.book}
+M.P.~Barnett.
+\newblock \emph{Computer Typesetting: Experiments and Prospects}.
+\newblock MIT Press, Jan.~2000.
+
+\bibitem{bib:bazargan.05.tug}
+K.~Bazargan.
+\newblock Batch commander: a graphical user interface for {\TeX}.
+\newblock \emph{TUGboat} 26(1):74--80, 2005.
+\newblock \newline \url{https://tug.org/TUGboat/tb26-1/bazargan.pdf}
+\newpage
+\bibitem{bib:bird.86.scp}
+R.S.~Bird.
+\newblock Transformational programming and the paragraph problem.
+\newblock \emph{Science of Computer Programming} 6(2):159--189, 1986.
+\newblock \url{https://doi.org/10.1016/0167-6423(86)90023-7}
+
+\bibitem{bib:burstall.00.hosc}
+R.~Burstall.
+\newblock {C}hristopher {S}trachey{\Dash}{U}nderstanding programming languages.
+\newblock \emph{Higher~Order Symbolic Computation} 13(1--2):51--55, 2000.
+
+\bibitem{bib:duncan.63.pt}
+C.~Duncan, J.~Eve, et~al.
+\newblock Computer typesetting: an~evaluation of the problems.
+\newblock \emph{Printing Technology} 7:133--151, 1963.
+
+\bibitem{bib:kay.69.phd}
+A.C.~Kay.
+\newblock \emph{The Reactive Engine}.
+\newblock Ph.D. thesis, University of Utah, 1969.
+
+\bibitem{bib:knuth.84.book}
+D.E.~Knuth.
+\newblock \emph{The {\TeX}book}.
+\newblock Addison-Wesley, 1984.
+
+\bibitem{bib:knuth.86.book}
+D.E.~Knuth.
+\newblock \emph{{\TeX}: The Program}, vol.~B of \emph{Computers \&
+  Typesetting}.
+\newblock Addison-Wesley, Jan.~1986.
+
+\bibitem{bib:knuth.81.spe}
+D.E.~Knuth, M.F.~Plass.
+\newblock Breaking paragraphs into lines.
+\newblock \emph{Software: Practice and Experience} 11(11):1119--1184, 1981.
+\newblock \newline \url{https://doi.org/10.1002/spe.4380111102}
+
+\bibitem{bib:liang.83.phd}
+F.M.~Liang.
+\newblock \emph{Word Hy-phen-a-tion by Com-put-er (Hyphenation, Computer)}.
+\newblock Ph.D. thesis, Stanford~University, 1983.
+\newblock \url{https://tug.org/docs/liang}
+
+\bibitem{bib:mcilroy.60.cacm}
+M.D.~McIlroy.
+\newblock Macro instruction extensions of compiler languages.
+\newblock \emph{Communications of the {ACM}} 3:214--220, Apr. 1960.
+\newblock \newline \url{https://doi.org/10.1145/367177.367223}
+
+\bibitem{bib:demoor.99.scp}
+O.~{\gobble{Moor}{de Moor}}, J.~Gibbons.
+\newblock Bridging the algorithm gap: a linear-time functional program for
+  paragraph formatting.
+\newblock \emph{Science of Computer Programming} 35(1):3--27, 1999.
+\newblock \url{https://doi.org/10.1016/S0167-6423(99)00005-2}
+
+\bibitem{bib:stoy.72.os6part2}
+J.~Stoy, C.~Strachey.
+\newblock {OS6}{\Dash}{A}n experimental operating system for a small computer.
+  {P}art 2: Input/output and filing system.
+\newblock \emph{The Computer Journal} 15(3):195--203, 1972.
+
+\bibitem{bib:verna.12.tug}
+D.~Verna.
+\newblock Star {\TeX}: the next generation.
+\newblock \emph{TUGboat}~33(2):199--208, 2012.
+\newblock \newline \url{https://tug.org/TUGboat/tb33-2/tb104verna.pdf}
+
+\bibitem{bib:verna.22.els}
+D.~Verna.
+\newblock {ETAP}: Experimental typesetting algorithms platform.
+\newblock In~\emph{15th European Lisp Symposium}, pp.~48--52, Porto, Portugal,
+  Mar. 2022.
+\newblock \url{https://doi.org/10.5281/zenodo.6334248}
+
+\end{thebibliography}

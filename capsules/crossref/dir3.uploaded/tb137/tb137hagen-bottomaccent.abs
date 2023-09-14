@@ -1,0 +1,5 @@
+We recently worked on accents in math in \CONTEXT. While looking at the bottom 
+accents, we realized that there was work to be done, since Microsoft did not 
+specify how to deal with them (there is support for bottom accents built in to 
+\LUAMETATEX). While discussing and examining examples, we noticed that fonts 
+behave differently, once again.

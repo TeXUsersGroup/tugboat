@@ -1,0 +1,16 @@
+  The \HINT\ file format [5] was presented at \tug\ 2019 [4], and
+  at \tug\ 2020~[6], the first usable viewer for \HINT\ files
+  was presented. The Hi\TeX\ engine became part of \TeX\ Live
+  in 2022. This presentation will explore the changes that
+  have taken place since then and what to expect in the future.
+  This article will 
+  \begin{itemize}
+  \item explain the improvements in glyph rendering in more recent 
+        versions of the \HINT\ file viewer;
+  \item describe the use of links, labels, and outlines;
+  \item present hints on how to design \TeX\ macros for variable
+        page sizes;
+ \item  and discuss the capabilities of the \HINT\ file format
+        to convert pages to plain text for searching or text-to-speech
+        processing.
+  \end{itemize}

@@ -1,0 +1,4 @@
+  This paper shows that \CONTEXT\ is very well suited to produce different
+  output formats, such as slides, handouts, lecture notes, from a single
+  \XML\ file. Mechanisms such as \XML\ setups and the {\tt modes} mechanism
+  allow for conditional typesetting and filtering of content.

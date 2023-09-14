@@ -1,0 +1,86 @@
+<!--#include virtual="/header.html"-->
+<title>A roadmap for universal syllabic segmentation
+       - TUGboat 44:2 (2023) - TeX Users Group</title>
+</head><body>
+
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+<h1><a href="/TUGboat/tb44-2/">TUGboat 44:2</a> (2023)<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
+
+<p><b>Title</b>: A roadmap for universal syllabic segmentation</p>
+
+<p><b>Summary</b>:
+Judy array and Unicode support in <tt>patgen</tt>, to generate universal hyphenation patterns.</p>
+
+<p><b>Full text of article</b>: <a href="https://tug.org/members/TUGboat/tb44-2/tb137sojka-syllabic.pdf">available to TUG members</a> (<a href="/join.html">join TUG</a>);
+will be publicly available after the next issue is published.</p>
+
+<p><b>Authors</b>:
+<a href="/TUGboat/Contents/listauthor.html#Sojka,Ondrej">Ond&#x0159;ej Sojka</a>, <a href="/TUGboat/Contents/listauthor.html#Sojka,Petr">Petr Sojka</a>, <a href="/TUGboat/Contents/listauthor.html#Maca,Jakub">Jakub M&#xe1;ca</a></p>
+
+<p><b>Publication</b>: <a href="/TUGboat/tb44-2/">TUGboat
+volume 44, number 2</a> (2023),
+pages&nbsp;289-296</p>
+
+<p><b>DOI</b> (this page):
+<a href="https://doi.org/10.47397/tb/44-2/tb137sojka-syllabic">10.47397/tb/44-2/tb137sojka-syllabic</a>
+<br><small>(<a href="https://doi.org/10.47397/tb/44-2/tb137hagen-prevdepth">previous doi</a>
+- <a href="https://doi.org/10.47397/tb/44-2/tb137radhakrishnan-malayalam">next doi</a>)</small></p>
+
+<p><b>Category</b>:
+<a href="/TUGboat/Contents/listkeyword.html#CatTAGMultilingualDocumentProcessing">Multilingual&#xa0;Document&#xa0;Processing</a></p>
+      
+<p><b>Difficulty</b>: Advanced</p>
+
+<p><b>Abstract</b>:
+Space- and time-effective segmentation (word hyphenation) of natural languages remains at the core of every document rendering system, be it TeX, web browser, or mobile operating system.
+In most languages, segmentation mimicking syllabic pronunciation is a pragmatic preference today.</p>
+<p>As language switching is often not marked in rendered texts, the typesetting engine needs <em>universal syllabic segmentation</em>.
+In this article, we show the feasibility of this idea by offering a prototype solution to two main problems:</p>
+<p>A) Using Patgen to generate patterns for several languages
+at once; and</p>
+<p>B) no <a href="https://en.wikipedia.org/wiki/Wide_character">wide character</a> support in tools like Patgen or TeX hyphenation, e.g. internal Unicode support is missing.</p>
+<p>For A), we have applied it to generating universal syllabic patterns from wordlists of nine syllabic, as opposed to etymology-based, languages
+(namely, Czech, Slovak, Georgian, Greek, Polish, Russian, Turkish, Turkmen, and Ukrainian).
+For B), we have created a version of Patgen that uses the
+<a href="https://en.wikipedia.org/wiki/Judy_array">Judy array</a> data structure and compared its effectiveness with the trie implementation.</p>
+<p>With the data from these nine languages,
+we show that:</p>
+<p>A) developing universal, up-to-date, high-coverage, and
+highly generalized universal syllabic segmentation patterns is
+possible, with high impact on virtually all typesetting engines,
+including web page renderers; and</p>
+<p>B) bringing wide character support into the hyphenation part of the TeX suite of programs is possible by using Judy arrays.</p>
+
+<p><b>References</b>:</p>
+<ol class="tugbbl">
+<li class="tugbbl">S. Bartlett, G. Kondrak, C. Cherry. Automatic Syllabification with Structured SVMs for Letter-to-Phoneme Conversion. In Proceedings of ACL-08: HLT, pp. 568&#x2013;576, Columbus, Ohio, June 2008. Assoc. for Computational Linguistics. <a href="https://aclweb.org/anthology/P08-1065">aclweb.org/anthology/P08-1065</a></li>
+<li class="tugbbl">Y. Haralambous. New hyphenation techniques in &#x03A9;2. TUGboat 27(1):98&#x2013;103, 2006. <a href="https://tug.org/TUGboat/tb27-1/tb86haralambous-hyph.pdf">tug.org/TUGboat/tb27-1/tb86haralambous-hyph.pdf</a></li>
+<li class="tugbbl">Online etymology dictionary. "syllable". <a href="https://www.etymonline.com/word/syllable">www.etymonline.com/word/syllable</a></li>
+<li class="tugbbl">M. Jakub&#x00ED;&#x010D;ek, A. Kilgarriff, et al. The TenTen Corpus Family. In Proc. of the 7th International Corpus Linguistics Conference (CL), pp. 125&#x2013;127, Lancaster, July 2013.</li>
+<li class="tugbbl">D.E. Knuth. 3:16 Bible Texts Illuminated. A-R Editions, Inc., 1991.</li>
+<li class="tugbbl">J. Krantz, M. Dulin, P.D. Palma. Language-agnostic syllabification with neural sequence labeling. CoRR abs/1909.13362, 2019. <a href="https://arxiv.org/abs/1909.13362">arxiv.org/abs/1909.13362</a></li>
+<li class="tugbbl">W. Lemberg. A database of German words with hyphenation information, 2023. <a href="https://repo.or.cz/wortliste.git">repo.or.cz/wortliste.git</a></li>
+<li class="tugbbl">F.M. Liang. Word Hy-phen-a-tion by Com-put-er. Ph.D. thesis, Dept. of Computer Science, Stanford University, Aug. 1983. <a href="https://tug.org/docs/liang/liang-thesis.pdf">tug.org/docs/liang/liang-thesis.pdf</a></li>
+<li class="tugbbl">F.M. Liang, P. Breitenlohner. PATtern GENeration program for the TeX82 hyphenator. Electronic documentation of PATGEN program version 2.4 on CTAN. <a href="https://ctan.org/pkg/patgen">ctan.org/pkg/patgen</a> 1999.</li>
+<li class="tugbbl">I. Maddieson. Syllable Structure. In The World Atlas of Language Structures Online, M.S. Dryer, M. Haspelmath, eds. Max Planck Institute for Evolutionary Anthropology, Leipzig, 2013. <a href="https://wals.info/chapter/12">wals.info/chapter/12</a></li>
+<li class="tugbbl">Y. Marchand, C.R. Adsett, R.I. Damper. Automatic Syllabification in English: A Comparison of Different Algorithms. Language and Speech 52(1):1&#x2013;27, 2009. <a href="https://doi.org/10.1177/0023830908099881">doi.org/10.1177/0023830908099881</a></li>
+<li class="tugbbl">J. M&#x00e1;ca. Judy, May 2023. Bachelor Thesis supervised by Petr Sojka and defended at Masaryk University, Faculty of Informatics. <a href="https://is.muni.cz/th/kru3j">is.muni.cz/th/kru3j</a></li>
+<li class="tugbbl">A. Rosendahl, M. Miklavec. TeX hyphenation patterns, 2023. Accessed 2023-07-05. <a href="http://hyphenation.org/tex">hyphenation.org/tex</a></li>
+<li class="tugbbl">Y. Shao, C. Hardmeier, J. Nivre. Universal Word Segmentation: Implementation and Interpretation. Transactions of the Association for Computational Linguistics 6:421&#x2013;435, 2018. <a href="https://doi.org/10.1162/tacl_a_00033">doi.org/10.1162/tacl_a_00033</a></li>
+<li class="tugbbl">P. Sojka. Competing Patterns for Language Engineering. In Proceedings of the Third International Workshop on Text, Speech and Dialogue&#x2014;TSD 2000, P. Sojka, I. Kope&#x010D;ek, K. Pala, eds., LNAI 1902, pp. 157&#x2013;162, Brno, Czech Republic, Sept. 2000. Springer-Verlag. <a href="https://doi.org/10.1007/3-540-45323-7_27">doi.org/10.1007/3-540-45323-7_27</a></li>
+<li class="tugbbl">P. Sojka. Competing Patterns in Language Engineering and Computer Typesetting. Ph.D. thesis, Masaryk University, Brno, Jan. 2005. <a href="https://researchgate.net/publication/265246931_Competing_Patterns_in_Language_Engineering_and_Computer_Typesetting/">researchgate.net/publication/265246931_Competing_Patterns_in_Language_Engineering_and_Computer_Typesetting/</a></li>
+<li class="tugbbl">P. Sojka, O. Sojka. The Unreasonable Effectiveness of Pattern Generation. TUGboat 40(2):187&#x2013;193, 2019. <a href="https://tug.org/TUGboat/tb40-2/tb125sojka-patgen.pdf">tug.org/TUGboat/tb40-2/tb125sojka-patgen.pdf</a></li>
+<li class="tugbbl">P. Sojka, O. Sojka. Towards Universal Hyphenation Patterns. In Proceedings of Recent Advances in Slavonic Natural Language Processing&#x2014;RASLAN 2019, A. Hor&#x00E1;k, P. Rychl&#x00FD;, A. Rambousek, eds., pp. 63&#x2013;68, Karlova Stud&#x00E1;nka, Czech Republic, 2019. Tribun EU. <a href="https://is.muni.cz/publication/1585259/?lang=en">is.muni.cz/publication/1585259/?lang=en</a> <a href="https://nlp.fi.muni.cz/raslan/2019/paper13-sojka.pdf">nlp.fi.muni.cz/raslan/2019/paper13-sojka.pdf</a></li>
+<li class="tugbbl">P. Sojka, O. Sojka. New Czechoslovak Hyphenation Patterns, Word Lists, and Workflow. TUGboat 42(2), 2021. <a href="https://doi.org/10.47397/tb/42-2/tb131sojka-czech">doi.org/10.47397/tb/42-2/tb131sojka-czech</a></li>
+<li class="tugbbl">P. Sojka, P. &#x0160;eve&#x010d;ek. Hyphenation in TeX&#x2014;Quo Vadis? TUGboat 16(3):280&#x2013;289, 1995. <a href="https://tug.org/TUGboat/tb16-3/tb48soj1.pdf">tug.org/TUGboat/tb16-3/tb48soj1.pdf</a></li>
+<li class="tugbbl">The Unicode Consortium. The Unicode Standard: Worldwide Character Encoding. Version 15.0. Unicode, Inc., Mountain View, CA, USA, 2022. <a href="https://unicode.org/versions/Unicode15.0.0">unicode.org/versions/Unicode15.0.0</a></li>
+<li class="tugbbl">N. Trogkanis, C. Elkan. Conditional Random Fields for Word Hyphenation. In Proceedings of the 48th Annual Meeting of the ACL, pp. 366&#x2013;374, Uppsala, Sweden, July 2010. ACL. <a href="https://aclweb.org/anthology/P10-1038">aclweb.org/anthology/P10-1038</a></li>
+<li class="tugbbl">Internetov&#x00e1; jazykov&#x00e1; p&#x0159;&#x00ed;ru&#x010d;ka (Internet Language Reference Book), 2023. <a href="https://prirucka.ujc.cas.cz/?id=135">prirucka.ujc.cas.cz/?id=135</a></li>
+</ol>
+
+<hr><small><a href="/TUGboat/">TUGboat</a> 44:2, 2023 (<a href="/TUGboat/tb44-2/">issue 137</a>)
+&nbsp; [generated 2023-09-14]
+</small><br><!--#include virtual="/footer.html"-->

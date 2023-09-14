@@ -1,0 +1,7 @@
+Most font editors offer curvature-related tools. One of these tools is
+the visualization of curvature via \emph{curvature combs}. Another tool
+is so-called \emph{harmonization}, which makes the curvature
+continuous along paths. An implementation of both tools in \MP{} will be
+presented. Curvature-optimized paths already play a significant role in
+\MF{} and \MP{} and therefore example \MP{} paths will be examined for
+their curvature behavior.
