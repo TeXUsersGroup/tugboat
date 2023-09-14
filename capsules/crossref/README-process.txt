@@ -25,17 +25,21 @@ directory (~tubprod/VV-N), one or both of these files, as needed:
   . if an article has no abstract, write a summary if need be.
   . if the one-line description from the capsule suffices,
     no need to create an abs.tex.
-  . both \begin{abstract} and \end{abstract} lines are optional.
+  . both \begin{abstract} and \end{abstract} lines are optional (and ignored).
 
 - a bbl.tex file for the bibliography:
   . if an article uses BibTeX, the .bbl file can be copied to bbl.tex 
     as the starting place. 
   . if an article has no bibliography, don't create bbl.tex.
   . in hand-written bibliographies, insert \bibitem with a meaningful
-    key (it ends up in issue.xml) and \end{thebibliography},
+    key (the key ends up in issue.xml) and \end{thebibliography},
     because that's what our parsing looks for.
-  
+
 These {abs,bbl}.tex files stay in the TUGboat per-article source directories.
+
+There has to be at least one abs.tex and one bbl.tex or the program will
+bail out early, so easiest to choose an article with a bib to do first.
+(All real articles should have an abstract.)
 
 In general, translate as necessary to standard TUGboat and LaTeX formatting.
 See tips below.
@@ -51,10 +55,6 @@ Then, the landing files output will be in
 and the XML file for Crossref in:
   .../dir2.process/issue.xml
 
-There has to be at least one abs.tex and one bbl.tex or the program will
-bail out early, so to begin with, might have to create files for more
-than one article, or do first an article with both.
-
 The make will probably fail due to unprocessed TeX commands remaining in
 the output files, dir2.process/issue.xml and dir1.lndout/*.html. We want
 to do as much as possible automatically, so before hand-editing anything
@@ -69,15 +69,15 @@ that should be supported, try to fix the translations:
   Makefiles and code here are already set up to use that package from a
   development checkout in a sibling directory.
 
-- Titles and authors are only converted within captub, not using
-  ltx2crossxml. This is done because we we need to generate the author's
+- Titles and authors are converted entirely within captub, not using
+  ltx2crossxml. This is done because we need to generate the author's
   HTML strings for the TUGboat contents and lists pages anyway. We
   specify this using the --rpi-is-xml option (in the Makefiles).
 
 - For simplicity in the Perl code, most of the conversions are
   line-oriented. So if the argument to a command in abs.tex or bbl.tex
   starts on one line and ends on another, it probably won't be
-  recognized. Just edit the file to put it on one line.
+  recognized. Edit the .tex file to put it on one line.
 
 - For the bibliography, no font changes or other html-level markup is
   used.  It is plain (Unicode) text.  The only special cases are making
@@ -89,7 +89,7 @@ complicated TeX code in their abstracts or bibliographies.  In such cases,
 it is better to edit the abs/bbl.tex files than bother automatically
 translating something that will probably never come up again.
 
-To retry after code changes (still no hand editing), again run:
+To retry after code changes (still assuming no hand editing), again run:
   make cro-scratch
 The "scratch" means that the files where hand-editing might take place,
 in dir2.process, are assumed *not* to be so edited, and are thus *removed*.
@@ -120,10 +120,11 @@ Then can check the relevant files at:
   file://.../tubprod/svn/capsules/crossref/dir1.lndout/...
 And/or you can go through the directory listing at any time.
 
-cr-landing-bbl-abs converts abstracts to HTML (ltx2unitxt --html), but
-copies bbls as plain text from previously-created issue.xml (created by
-ltx2crossrefxml via crossref/Makefile, target issue). In the bbls, the
-only formatting attempted for the landing .html files is to make urls
+cr-landing-bbl-abs, called in the above process, converts abstracts to
+HTML (ltx2unitxt --html), but copies bbls as plain text from
+previously-created issue.xml (created by ltx2crossrefxml via
+crossref/Makefile, target issue). As mentioned, in the bbls, the only
+formatting attempted for the landing .html files is to make urls
 (recognized from plain text) live; italics, etc., do not happen.
 
 Then repeat until all articles are done.
@@ -154,7 +155,7 @@ should be all success. Browse through the rest. Fix as needed.
 before it's time to make the issue VV:N live.
 
 At that point, first remake the landing files so the doi links go
-through doi.org (i.e., without the "make crw" step):
+through doi.org (i.e., not running "make crw"):
   # still in svn/capsules/ directory
   make cro-scratch  # without crw
 Double-check crossref/dir2.process/issue.xml as above.
@@ -173,7 +174,7 @@ And then copy the final landing files to the live web directory
 Then check results at:
   https://tug.org/TUGboat/tbVV-N/tbnnnwhatever.html
 E.g.:
-  https://tug.org/TUGboat/tb44-1/tb136beet.html
+  https://tug.org/TUGboat/tb44-2/tb136beet.html
 The "next doi" links will not work until the dois are registered; see next.
 
 When close enough to making the pdfs public, do the production
