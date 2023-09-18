@@ -102,6 +102,26 @@ END_FOOTER
 }
 
 
+# The common header text that starts both the accumulation pages and the
+# individual issue pages. The H2 argument is inserted in the middle.
+# 
+sub tub_common_header {
+  my ($h2) = @_;
+
+  return <<END_HDR;
+  <table><tr>
+<td><a href="/TUGboat/"><img alt="TUGboat" align="bottom"
+         width=343 height=76 src="/TUGboat/noword.jpg"></a><br>
+  <b><h1>The Communications of&nbsp;<br>
+         the <a href="/">TeX Users Group</a></h1></b><br>
+  <h2>$h2</h2></td>
+<td><a href="/TUGboat/"><img alt="printing press" align="right" hspace=10
+         width=316 height=341 src="/TUGboat/press72.jpg"></a><br>&nbsp;</td>
+</tr></table>
+END_HDR
+}
+
+
 # Print each arg + newline on stderr, if not quiet.
 # (Use stderr since main output can usefully go to stdout.)
 # 

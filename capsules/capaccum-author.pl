@@ -11,14 +11,14 @@ sub output_author_list {
 
   my $listfile = ">list$what.html";
   open (my $fh, $listfile) || die "open($listfile.html) failed: $!";
-  my $title = "TUGboat Author/People list";
+  my $title = qq!<a href="/TUGboat/">TUGboat</a> Author/People list!;
   print $fh &cap_html_header ($title);
   (my $header = $list_hdr_common) =~ s/%h2text%/$title/;
   print $fh $header;
   
   print $fh <<END_HEADER;
-<a href="listkeyword.html">Category/Keyword</a> or
-<a href="listtitle.html">Title</a> lists.
+by&nbsp;<a href="listkeyword.html">category/keyword</a> and
+by&nbsp;<a href="listtitle.html">title</a>.
 
 <p>In the immediately following list of links into the rest of this
 list, click on the name alphabetically nearest to the one you seek.

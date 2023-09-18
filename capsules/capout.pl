@@ -53,17 +53,8 @@ END_NAV
 
   if (! $issue{"notissue"}) {
     # normal tub issue heading
-    print <<END_TOP_TUB;
-<table><tr>
- <td><img align="bottom" alt="TUGboat" src="/TUGboat/noword.jpg"><br>
-  <h1>The Communications of the<br>TeX Users Group</h1>
-  <h2>TUGboat $issue_ident<br>
-$tub_nav
-  </h2></td>
- <td><img alt="printing press" align="right" hspace=10 width=316 height=341
-         src="/TUGboat/press72.jpg"><br></td>
-</tr></table>
-END_TOP_TUB
+    print &tub_common_header
+            (qq!<a href="/TUGboat/">TUGboat</a> $issue_ident<br>\n$tub_nav!);
   } else {
     # nonissue heading (25:0, 27:0)
     print <<END_TOP_NONISSUE;
@@ -73,8 +64,8 @@ END_TOP_NONISSUE
   }
   
   print <<END_LISTS;
-<small>Accumulated lists across all of TUGboat:
-by&nbsp;<a href="/TUGboat/Contents/listauthor.html">author</a>,
+<p><small>Accumulated lists across all of TUGboat:
+by&nbsp;<a href="/TUGboat/Contents/listauthor.html">author/people</a>,
 by&nbsp;<a href="/TUGboat/Contents/listkeyword.html">category/keyword</a>,
 by&nbsp;<a href="/TUGboat/Contents/listtitle.html">title</a>.
 </small>

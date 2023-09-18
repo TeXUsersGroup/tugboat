@@ -109,23 +109,16 @@ sub accumulation {
   }
   
   # This boilerplate text needs to be at the top of each list,
-  # with one silly "template" for the <h2>.
+  # with one "template" string for the <h2> that is replaced
+  # in each capaccum-*.pl.
   # 
-  my $list_hdr_common = <<END_LIST_HDR_COMMON;
-<table><tr>
-<td><img alt="TUGboat" align="bottom"
-         width=343 height=76 src="/TUGboat/noword.jpg"><br>
-  <b><h1>The Communications of&nbsp;<br>the TeX Users Group</h1></b><br>
-  <h2>%h2text%&nbsp;</h2></td>
-<td><img alt="printing press" align="right" hspace=10
-         width=316 height=341 src="/TUGboat/press72.jpg"><br>&nbsp;</td>
-</tr></table>
-Most entries in these lists have links to the table of contents for the
-particular issue. If the entry you are seeking does not include a direct
-link to a PDF for the paper, try following the link to the issue's table
-of contents to see if the paper is part of a larger PDF.
-<p>
-Click here for separate
+  my $list_hdr_common = &tub_common_header ("%h2text%");
+  $list_hdr_common .= <<END_LIST_HDR_COMMON;
+<p>If the entry you seek does not include a direct link to a PDF for the
+paper, try following the link to the issue's table of contents to see if
+the paper is part of a larger PDF.
+
+<p>Accumulated lists are also available
 END_LIST_HDR_COMMON
 
   &output_keyword_list ("keyword", $list_hdr_common, %accum);

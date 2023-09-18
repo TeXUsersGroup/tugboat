@@ -273,6 +273,8 @@ rm dir*/tb${prevnnn}*.* dir2.process/issue.xml
 - commit:
 svn status  # assuming just the expected landing files:
 svn commit -m"$previss (tb$prevnnn) public"
+svn diff ../Makefile # should be just testiss and crossref_iss, undo:
+svn revert ../Makefile
 
 === If there were hand edits in the crossref/dir2.process directory
 (hopefully not), have to take more care, as follows:

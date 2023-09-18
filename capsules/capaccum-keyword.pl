@@ -11,14 +11,14 @@ sub output_keyword_list {
 
   my $listfile = ">list$what.html";
   open (my $fh, $listfile) || die "open($listfile.html) failed: $!";
-  my $title = "TUGboat Category/Keyword list";
+  my $title = qq!<a href="/TUGboat/">TUGboat</a> Category/Keyword list!;
   print $fh &cap_html_header ($title);
   (my $header = $list_hdr_common) =~ s/%h2text%/$title/;
   print $fh $header;
   
   print $fh <<END_HEADER;
-<a href="listauthor.html">Author/People</a> or
-<a href="listtitle.html">Title</a> lists.
+by&nbsp;<a href="listauthor.html">author/people</a> and
+by&nbsp;<a href="listtitle.html">title</a>.
 <p>
 END_HEADER
 

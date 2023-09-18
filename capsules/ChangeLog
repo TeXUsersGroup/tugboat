@@ -1,3 +1,19 @@
+2023-09-18  Karl Berry  <karl@freefriends.org>
+
+	* capaccum-author.pl (output_author_list),
+	* capaccum-keyword.pl,
+	* capaccum-title.pl: tweak title wording, /TUGboat link.
+	* capaccum.pl (accumulation):
+	* capout.pl (write_issue): call tub_common_header, wording.
+	* caputil.pl (tub_common_header): new fn for header text
+	common to the lists and individual issue contents, with
+	links to / and /TUGboat.
+
+	* Makefile (diff-land): update previous to 44-1 (must automate).
+	* crossref/README-process.txt: final svn diff/revert.
+	
+	* tb22capsule.txt (RIDT): Imaging, not Imagining.
+
 2023-09-14  Karl Berry  <karl@freefriends.org>
 
 	* tb137capsule.txt: new for 44:2.
