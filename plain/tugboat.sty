@@ -22,7 +22,7 @@
 
 \def\thistubstyle{plain}
 \def\fileversion{v1.28}
-\def\filedate{2023-06-11}
+\def\filedate{2023-09-17}
 
 % general items
 
@@ -2015,7 +2015,8 @@
 \newif\if@@mid  \@@midfalse
 \newif\if@@bot  \@@botfalse
 \def\@caption{}
-\def\abovecaptionskip{\bigskip}
+\def\abovecaptionskip{\vskip\abovecaptionskipamount}
+\newskip\abovecaptionskipamount \abovecaptionskipamount=3pt plus2pt minus1pt
 
 \newif\if@fixed \@fixedfalse
 
@@ -2043,7 +2044,7 @@
   \def\top{}%
   \def\bot{\@@bottrue}%
   \def\mid{\@@midtrue}%
-  \def\caption##1{\def\@caption{\ulap{\abovecaptionskip##1\smallskip}}}%
+  \def\caption##1{\def\@caption{{\abovecaptionskip##1\smallskip}}}%
   \def\fixed{\@fixedtrue}%
   \def\scol{\@figurescol}%
   \def\ecol{\@figureecol}%
@@ -2242,6 +2243,8 @@
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+                      introduce \abovecaptionskipamount, reduce to \smallskip.
+
 1.28      11 Jun 23   \tenpoint in footer, not just \tenrm.
 
 1.27      19 May 22   \tbhurl belatedly defined.
