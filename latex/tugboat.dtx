@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2023-08-27 v2.30
+                   [2023-09-20 v2.30
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -1607,7 +1607,8 @@
 \@readFLN
 \everyjob=\expandafter{\the\everyjob\@readFLN}
 \InputIfFileExists{\jobname.fln}%
-     {\TBInfo{Reading alternative file file \jobname.fln}}{}
+   {\TBInfo{Reading alternative file \jobname.fln}}
+   {}
 %    \end{macrocode}
 %
 % The following needs to work entirely in \TeX's mouth
@@ -1670,20 +1671,27 @@
 \let\TBdriver\gobble
 %    \end{macrocode}
 %
-% Some hyphenation exceptions:
+% Hyphenation exceptions. We read our own full |ushyphex.tex| (generated
+% from |tb0hyf.tex|) if it's available. The additional exceptions are
+% nearly all included in the file, but keep defining them anyway, since
+% we have for many years.
+% 
+% But do not define any exceptions if |\tubomithyphenations| is defined.
+% This is needed for the |hyf| articles themselves.
 %
 %    \begin{macrocode}
 \ifx\tubomithyphenations\@thisisundefined
+\InputIfFileExists{ushyphex.tex}{}{} % ok if it's missing
 \hyphenation{Del-a-ware Dijk-stra Duane Eijk-hout
-  Flor-i-da Free-BSD Ghost-script Ghost-view
+  Flor-i-da Free-BSD Ghost-script
   Hara-lam-bous Jac-kow-ski Ja-pa-nese Karls-ruhe Lua-Meta
-  Mac-OS Ma-la-ya-lam Math-Sci-Net
+  Mac-OS Math-Sci-Net
   Net-BSD Open-BSD Open-Office
-  Pak-i-stan Pfa-Edit Post-Script Rich-ard Skoup South-all
+  Pak-i-stan Post-Script Rich-ard Skoup South-all
   Vieth VM-ware Win-Edt
   acro-nym acro-nyms analy-sis ap-pen-di-ces ap-pen-dix asyn-chro-nous
   bib-lio-graph-i-cal bit-map bit-mapped bit-maps buf-fer buf-fers bool-ean
-  col-umns com-put-able com-put-abil-ity cus-tom-iz-able
+  col-umns com-put-able com-put-abil-ity
   data-base data-bases
    de-allo-cate de-allo-cates de-allo-cated de-allo-ca-tion
    de-riv-a-tive de-riv-a-tives de-riv-a-ble der-i-va-tion dis-trib-ut-able
@@ -1697,7 +1705,7 @@
    mne-mon-ic mne-mon-ics mono-space mono-spaced
   name-space name-spaces
   off-line over-view
-  pal-ettes par-a-digm par-a-dig-mat-ic par-a-digms
+  pal-ettes par-a-digm par-a-dig-matic par-a-digms
    pipe-line pipe-lines
    plug-in plug-ins pres-ent-ly pro-gram-mable
   re-allo-cate re-allo-cates re-allo-cated re-printed
@@ -3873,8 +3881,9 @@
 \fi
 \authornumber\z@
 \let\@signature\@defaultsignature
-\InputIfFileExists{ltugboat.cfg}{\TBInfo{Loading ltugboat
-                                           configuration information}}{}
+\InputIfFileExists{ltugboat.cfg}
+  {\TBInfo{Loading ltugboat.cfg configuration information}}
+  {}
 %</classtail>
 %    \end{macrocode}
 %
@@ -3973,7 +3982,7 @@
 %
 %    \begin{macrocode}
 \InputIfFileExists{\@tugclass.cfg}{\ClassInfo{ltugproc}%
-           {Loading ltugproc configuration information}}{}
+           {Loading ltugproc.cfg configuration information}}{}
 \@ifundefined{TUGprocExtraOptions}%
    {\let\TUGprocExtraOptions\@empty}%
    {\edef\TUGprocExtraOptions{,\TUGprocExtraOptions}}
