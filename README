@@ -1,0 +1,29 @@
+$Id$
+
+This tree contains files related to TUGboat, the main publication of the
+TeX Users Group (https://tug.org/TUGboat).
+
+capsules - machine-readable summaries by issue, and the scripts to
+generate the lists by title/author/keyword linked at
+https://tug.org/TUGboat/contents.html. Also includes the scripts to
+generate the information for DOI registration at Crossref.
+
+covers - support files for making the four cover pages -- front cover,
+inside front cover, inside back cover, back cover, also known as c1
+through c4.
+
+hyphenex - support files for hyphenation exception list maintained by
+Barbara Beeton. Releases posted at https://ctan.org/pkg/hyphenex.
+
+latex - the LaTeX class file, BibTeX style file, documentation, test files.
+Releases posted at https://ctan.org/pkg/tugboat.
+
+misc - mainly small scripts for various production jobs, like checking
+that all fonts are embedded, converting pdfs to grayscale, etc.
+
+plain - the plain package file tugboat.sty (confusingly named, but it
+predates LaTeX) and documentation. Releases posted at
+https://ctan.org/pkg/tugboat-plain.
+
+production - production configuration, list of all issues, and
+documentation from our printing company.

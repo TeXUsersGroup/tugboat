@@ -1,0 +1,233 @@
+% $Id$
+% cover2.tex - inside front cover of TUGboat. Public domain.
+
+\input tugboat.sty
+\input ../tugboat.dates
+\TUBfinal
+
+\def\rateyear{\the\year}
+%\def\rateyear{\count255=\year\advance\count255 by 1 \the\count255}
+\def\tug{\acro{TUG}}
+\def\rtitle{}
+
+\def\USA{U\kern-.12em.\kern.04em S\kern-.06em.\kern.06em A\null.}
+
+\head * \TeX\ Users Group *
+
+\TUB\/ (\acro{ISSN} 0896-3207) is published by the\newline
+\TUG{}. Web: |tug.org/TUGboat|.
+
+\bigskip \noindent {\bf Individual memberships}
+
+\noindent
+\rateyear\ dues for individual members are as follows:
+
+\begingroup
+\raggedstretch=.3\colwd
+\raggedright
+\hyphenpenalty=10000
+\item{\bull} Trial rate for new~members:~\$30.
+\item{\bull} Regular~members:~\$105.
+\item{\bull} Special~rate:~\$75.
+\unskip\endgraf
+\endgroup       % end \raggedright
+\noindent The special rate is available to students, seniors, and
+citizens of countries with modest economies, as detailed on our web
+site.
+%Also, anyone joining or renewing before March~31 receives a
+%\$20 discount:
+%\item{\bull} Regular~members (early bird):~\$85.
+%\item{\bull} Special~rate (early bird):~\$55.
+Members may also choose to receive \TUB\ and other benefits
+electronically, at a discount. All membership 
+options are described at {\tt tug.org/join}.
+
+Membership in the \TUG\ is for the calendar year, and includes all issues
+of \TUB\/ for the year in which membership begins or is renewed, as well
+as software distributions and other benefits.
+Individual membership carries with
+it such rights and responsibilities as voting in \acro{TUG} elections.
+All the details are on the \acro{TUG} web site.
+
+\bigskip \noindent {\bf Journal subscriptions}
+
+\noindent \TUB\/ subscriptions (non-voting) are available to libraries
+and other organizations or individuals for whom 
+memberships are either not appropriate or desired.
+Subscriptions are delivered on a calendar year basis.
+The subscription rate for
+\rateyear\ is~\$115.
+
+\setbox\TestBox=\hbox{Category B:\enspace 99}
+\def\Category #1: #2 - #3; #4; #5. {\noindent \hangindent\normalparindent
+        \hbox to\wd\TestBox{Category #1:\hfil#2} subscriptions\dash
+        educational \$#3;\penalty-20 \ %
+        non-educational \$#4; additional \$#5 each.}
+
+\bigskip \noindent {\bf Institutional memberships}
+
+\noindent Institutional membership is primarily a means of showing
+continuing interest in and support for \TeX\ and \tug.  It also
+provides a discounted membership rate, site-wide electronic
+access, and other benefits.  For further information, see
+|tug.org/instmem| or contact the \tug\ office.
+
+\bigskip \noindent {\bf Trademarks}
+
+\noindent
+Many trademarked names appear in the pages of \TUB.  If there is any
+question about whether a name is or is not a trademark, prudence dictates
+that it should be treated as if it is.
+
+% more space above this.
+\vskip 0pt plus1filll \bigskip\bigskip\noindent
+[printing date: qqqmonthname \the\year]
+
+\smallskip
+\noindent Printed in \USA{}
+\newcol
+
+\NoParIndent
+
+\def\1{\ifhmode\/\fi$^\ast$}
+% \dag is too large; try to force it to be smaller; use \fivesy if necessary
+%\def\2{$^{\hbox{$\scriptstyle\char"79$}}$}
+\def\2{\/$^{\hbox{\fivesy\char"79}}$}
+\def\3{\relax}%{\ifhmode\/\fi$^{+}$} % no business committee for ages
+\def\person#1{{\def\\{, \it}\raggedstretch=.3\colwd\raggedright
+        \hyphenpenalty=10000 \exhyphenpenalty=10000
+        \hangindent\normalparindent #1\endgraf }}
+
+
+
+\head * Board of Directors *
+
+\vskip-2pt
+\person{Donald Knuth\\Ur~Wizard of \TeX-arcana\2}
+% \1\3 on title of president, not name, since ex officio.
+\person{Boris Veytsman\\President\1\3}% 
+\person{Arthur Rosendahl\1\3\\Vice President}%
+\person{Karl Berry\1\3\\Treasurer}%
+\person{Klaus H\"oppner\1\3\\Secretary}%
+\person{Barbara Beeton}% \\\TUB~Editor}%
+\person{Johannes Braams}%
+\person{Paulo Cereda}%
+\person{Kaja Christiansen}%
+\person{Ulrike Fischer}%
+\person{Jim Hef{}feron}%
+\person{Frank Mittelbach}%
+\person{Ross Moore}%
+\person{Norbert Preining}%
+%\person{Raymond Goucher\\Founding Executive Director\2}
+\person{Raymond Goucher (1937--2019)\\ 
+  \null\kern5.15em Founding Executive Director}
+\person{Hermann Zapf (1918--2015)\\Wizard of Fonts}
+
+\smallskip
+{\eightpoint\it\raggedright %
+ \1member of executive committee\break
+ \2honorary\endgraf}
+
+\smallskip
+{\ninepoint
+See |tug.org/board| for a roster of all past and present
+board members, and other official positions.
+\par}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bigskip
+{\ninepoint
+\setbox\TestBox=\hbox{Portland, \acro{OR} 97208-2311}
+\line{%
+\vtop{\hsize=\wd\TestBox
+\obeylines
+{\bf Addresses}
+\smallskip
+
+%General correspondence,
+%All correspondence,
+%\leavevmode\qquad payments, parcels,
+%\leavevmode\qquad etc.
+%\leavevmode\qquad payments, etc.
+\TeX\ Users Group
+\POBox 2311
+Portland, \acro{OR} 97208-2311
+\USA{}
+
+\medskip
+{\bf Telephone}
++1 503 223-9994
+%\vskip\baselineskip
+
+\medskip
+{\bf Fax}
++1 815 301-3568
+%\vskip\baselineskip
+
+\medskip
+{\bf Web}
+|tug.org|
+|tug.org/TUGboat|
+
+}\quad
+\vtop{
+\rightskip=0pt plus\hsize
+\hyphenpenalty=10000
+\NoBlackBoxes
+\obeylines
+{\bf Electronic mail}
+\smallskip
+General \rlap{correspondence,}
+membership, \rlap{subscriptions:}
+|office@tug.org|
+
+\medskip
+Submissions \rlap{to \TUB,}
+letters to \rlap{the Editor:}
+|TUGboat@tug.org|
+
+\medskip
+\TeX{}nical support,
+public mailing list:
+|support@tug.org|
+
+\medskip
+Contact the
+Board of \rlap{Directors:}
+|board@tug.org|
+
+}\hss}}
+
+%\bigskip
+%{\bf Have a suggestion? Problems not resolved?}\newline
+%The \acro{TUG} Board wants to hear from you:\newline
+%Please email |board@tug.org|.
+
+\vskip 0pt plus1filll %\bigskip\bigskip
+
+{\eightpoint
+\parindent=0pt \parskip=4pt \raggedright
+Copyright \copyright{} \the\year\ \TUG{}.
+
+Copyright to individual articles within this publication remains with
+their authors, so the articles may not be reproduced, distributed or
+translated without the authors'~permission.
+
+For the editorial and other material not ascribed to a particular
+author, permission is granted to make and distribute verbatim copies
+without royalty, in any medium, provided the copyright notice and this
+permission notice are~preserved.
+  
+Permission is also granted to make, copy and distribute translations
+of such editorial material into another language, except that the \TUG{}
+must approve translations of this permission notice itself.  Lacking
+such approval, the original English permission notice must be~included.
+An information notice to the \TUB\ editors regarding such redistribution
+is appreciated.
+
+%% copyright notice replaced 26 June 2003; text provided by Karl Berry
+%% final sentence added 3 July 2022 by Barbara Beeton
+}
+\vfilneg
+\end

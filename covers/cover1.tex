@@ -1,0 +1,97 @@
+% $Id$
+% cover1.tex - front cover of TUGboat. Public domain.
+
+\input tugboat.sty
+\input ../tugboat.dates
+\TUBfinal
+
+\onecol
+\headmargin=.75in               % 1in
+\rheadlgt=0pt           \def\runhead{}
+\basezero
+
+\font\fourteenbf=cmbx10 scaled \magstep2
+\font\fourteenrm=cmr10 scaled \magstep2
+\let\commfont=\fourteenbf
+\let\volfont=\fourteenrm
+
+\font\sixteenrm=cmr10 scaled \magstep3
+\font\sixteenbf=cmbx10 scaled \magstep3
+\def\bigfont{\def\rm{\sixteenrm}\def\smc{\twelverm}%
+    \def\bf{\sixteenbf \def\smc{\twelvebf}}\rm }
+\bigfont
+
+\baselineskip=18pt
+\parindent=0pt
+
+\collgt=55pc
+\resetpagelgt
+\normalbottom
+
+\catcode`@ = 11
+
+\newif\ifprocissue
+
+%  \postissue determines whether this is Proceedings issue or not
+\ifx\postissno\empty \def\PostIssno{}\procissuefalse
+\else \def\PostIssno{\Dash \postissno}\procissuetrue
+\fi
+
+\newdimen\boxrulethickness  \boxrulethickness=1pt
+%
+% #1 = height of box, #2 = depth of box
+% #3 = inserted to make space for the text
+\def\boxit #1/#2, #3<{\vbox{%
+  \hrule height\boxrulethickness depth0pt\kern-\boxrulethickness
+  \hbox{\vrule height#1 depth#2 width\boxrulethickness
+    \kern-\boxrulethickness\kern.5pc
+    #3\kern.5pc \vrule width\boxrulethickness}
+  \hrule height\boxrulethickness depth0pt\kern-\boxrulethickness}}
+
+\dlap{\boxit 5pc/1pc, \kern 23pc<
+      \kern -66pt % move back into the box
+      \noindent \kern 9pt
+      \immediate\pdfximage {word-nobox.pdf}\pdfrefximage\pdflastximage
+      \par
+      \kern 14pt
+      \boxit 1.5pc/.75pc, \commfont The Communications of the \TUG<
+}
+
+% Date: Sun, 26 Dec 2004 15:28:53 -0500 (EST)
+% From: Barbara Beeton <bnb@ams.org>
+% To: TUGboat Production team members <tub-prod@tug.org>
+%
+% traditionally, graphic is offset to the right, with
+% space on the right equal to space at left of "tugboat"
+% at top.  also, graphic is usually [...]
+% a bit more toward the bottom than centered.
+%
+\kern 12.4pc
+\hfuzz=1pc \advance\hsize by \hfuzz
+%
+\rightline{%
+  \ifprocissue
+    \immediate\pdfximage height6in {procdrawing.pdf}
+  \else
+    \immediate\pdfximage height5in {press2.pdf}
+  \fi
+  \pdfrefximage\pdflastximage
+}
+
+\vskip 0pt plus1filll
+
+% text at bottom, two lines.
+\setbox\TestBox=\hbox{%
+  \boxit 1.5pc/.75pc, \volfont Volume \volno,
+    Number \issno, \issdt \PostIssno<}
+%
+\ifdim\wd\TestBox < .8\pagewd
+  \unhbox\TestBox
+\else
+  \boxit 3pc/.75pc,
+    \vbox{\volfont \baselineskip=18pt
+          \let\Dash=\cr
+          \halign{#\hfil\cr
+                  Volume \volno, Number \issno, \issdt \PostIssno \cr}}<
+\fi
+\end

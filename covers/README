@@ -2,6 +2,9 @@ $Id$
 (Public domain.)
 
 These files are used in the covers/ subdirectory for each TUGboat issue,
-and don't have to be routinely changed, so are checked in here.
-The cover*.tex and tbNNNc*.tex files mostly do need to be changed.
-See the copynext target in covers/Makefile to set up the next issue.
+and either don't have to be routinely changed or may be useful as
+starting points of the process, so are checked in here.
+
+cover2.tex and tbcomplete.lua definitely have to be changed for each
+issue.  It's not unusual to have to change the other cover*.tex files,
+or the macros.

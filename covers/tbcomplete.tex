@@ -1,0 +1,65 @@
+% $Id$
+% Public domain.
+% Plain TeX file to generate the complete issue as toclinks.pdf,
+% for use in making the final tbNNNcomplete.pdf.
+% See tb138prod.pdf for a published note about this.
+
+% Output complete issue for online.
+\let\bye=\relax % end of subfiles is not the end of the job.
+
+% We start with the usual cover4, but make the page numbers into links.
+\let\tublinktoc=t
+
+\input cover4.tex
+\vfil\eject % before we change the page layout
+
+% Now the issue contents and other covers.
+% We have premade pages, so don't let TeX interfere,
+% but do it all inside a group, since we need to restore the regular
+% parameters for the capsule.
+% 
+\begingroup
+
+\voffset=-1in \hoffset=-1in \topskip=0pt \nointerlineskip
+\vsize=11in \hsize=8.5in
+\output = {\shipout\box255 \advancepageno}
+
+% Have to handle multiple-page PDFs.
+\newcount\mylastpage
+\newcount\mytemppage
+
+% Output PDF from #1.pdf, either single-page or multiple pages.
+\def\doitem#1{%
+  \pdfximage{#1.pdf}%
+  \mylastpage=\pdflastximagepages
+  %
+  \ifnum\mylastpage=1
+    % single page -> just output it.
+    \doitempage
+  \else
+    % multiple pages -> output each page.
+    \mytemppage = 0
+    \loop\ifnum\mytemppage < \mylastpage
+      \advance\mytemppage by 1
+      \pdfximage page\mytemppage {#1.pdf}%
+      \doitempage
+    \repeat
+  \fi
+}
+
+% Output the last ximage on its own page.
+\def\doitempage{%
+  \null % without the box there is nothing to eject, whatsits accumulate
+  \pdfrefximage\pdflastximage
+  \eject
+}
+
+\doitem{cover2}% include premade pdf, one page
+\doitem{../CADMUS/issue}% premade pdf for interior, many pages
+
+\endgroup % restore normal page layout, so capsule comes out.
+
+% Finally, retypeset the capsule, to make the pdf links again.
+\input cover3.tex
+
+\end

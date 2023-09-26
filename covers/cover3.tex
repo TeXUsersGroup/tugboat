@@ -1,0 +1,169 @@
+% $Id$
+% cover3.tex - inside back cover of TUGboat. Public domain.
+% Output difficulty toc, optionally with page numbers as links.
+% Occasionally this overflows to a second page, as in tb137.
+% Then we have to handle things in an ad hoc manner.
+
+\input tubtocmac.tex
+\input tugboat.cmn  % tugboat.dates macros
+\input tugboat.dates
+
+% our own page layout.
+\nopagenumbers
+\hoffset = 0pt
+\voffset = -.6in
+\vsize = 10in
+\vfuzz = 2.5pt % don't worry too much
+
+\def\scriptfonts{% for the A in LaTeX
+  \scriptfont0=\sevenrm
+  \scriptfont\itfam=\sevensl
+  \scriptfont\slfam=\sevensl
+}
+
+\iffalse % fonts - 10pt
+  \font\manual=logo10
+  \font\difficultyfont=cmb10
+  \font\smallsl = cmsl9  \font\smallrm = cmr9 \font\smallsy = cmsy9
+  \font\manualsl = logosl10 
+  \font\slc = cmsl8 at 7pt
+  \font\smc = cmcsc10
+  \font\lslashfont = ec-lmro10
+  \font\thanhfont = t5-lmr10
+  \font\sevenrm=cmr7
+  \font\sevensl=cmti7
+  \scriptfonts
+  \baselineskip=12pt
+\fi
+
+\iftrue % fonts - 9pt (what we usually use)
+  \font\tenrm=cmr9  \font\tensl=cmsl9  \font\tentt=cmtt9  \font\manual=logo9
+  \font\tenit=cmti9 \font\tenbf=cmbx9 \font\sf = cmss9
+  \font\difficultyfont=cmb10
+  \font\smallsl = cmsl8  \font\smallrm = cmr8 \font\smallsy = cmsy9
+  \font\manualsl = logosl10 at 9pt
+  \font\slc = cmsl8 at 6pt
+  \font\smc = cmcsc10 at 9pt
+  \font\lslashfont = ec-lmro9
+  \font\thanhfont = t5-lmr9
+  \font\sevenrm=cmr7 at 6.5pt
+  \font\sevensl=cmti7 at 6.5pt
+  \scriptfonts
+  \baselineskip=10.9pt
+\fi
+
+\iffalse % fonts - 8pt
+  \font\tenrm=cmr8 \font\tensl=cmsl8  \font\tentt=cmtt8  \font\manual=logo8
+  \font\tenit=cmti8 \font\tenbf=cmbx8 \font\sf = cmss8
+  \font\difficultyfont=cmbx9
+  \font\smallsl = cmsl8 at 7pt  \font\smallrm = cmr7 \font\smallsy = cmsy8
+  \font\manualsl = logosl10 at 8pt
+  \font\slc = cmsl8 at 5pt
+  \font\smc = cmcsc10 at 8pt
+  \font\lslashfont = ec-lmro8
+  \font\thanhfont = t5-lmr8
+  \font\sevenrm=cmr6
+  \font\sevensl=cmti7 at 6pt
+  \scriptfonts
+  \baselineskip=9.7pt
+\fi
+\rm  %  start smaller font
+
+\newskip\abovedifficultyskip % default 8pt plus2pt minus1pt
+  \abovedifficultyskip = 2.6pt plus2pt minus1pt
+\newskip\abovecapsuleskip    % default 2pt plus1pt
+  \abovecapsuleskip    = 1pt plus1pt
+
+% we want ragged right, and interword stretch seems unnecessary, but we
+% still allow interword shrink since it helps keep things on one line.
+\advance\rightskip by 0pt plus 4em
+\spaceskip = \fontdimen2\tenrm minus \fontdimen4\tenrm
+
+\def\acrofont{% if slanted font, use slanted acro font
+   \ifdim \fontdimen1\font>0pt \smallsl \else \smallrm\fi
+}
+\def\acro#1{{\acrofont #1}}
+
+\textfont2 = \smallsy
+\def\CS{{\the\textfont2 C\kern-.1em\lower.4ex\hbox{S}\kern.1em}}
+
+\def\slMF{{\manualsl META}\-{\manualsl FONT}\spacefactor1000 }
+\def\slMP{{\manualsl META}\-{\manualsl POST}\spacefactor1000 }
+
+% for \LaTeX, etc.
+\scriptfont\slfam=\sevensl
+\scriptfont\itfam=\sevensl
+
+% abbreviations
+\def\\{\hfil\break}
+\def\newline{\\}
+\def\cand{\unskip,\space\ignorespaces}
+\def\smallbullet{\raise .4ex \hbox{$\scriptscriptstyle \bullet$}}
+
+% from tugboat.front
+\def\titleslash{\raise.3ex\hbox{\sevenrm/}}
+
+\def\CONNECT{~}
+\let\offset=\gobble          % ignore manual sorting offset
+\long\def\begin#1#2\end#3{}  % ignore blurb
+\def\issue#1#2#3#4#5#6{}     % ignore issue info
+
+% formatting
+\newdimen\pagenowidth % space for justification
+\setbox0=\hbox{000}
+\pagenowidth=\wd0  % aka 1.5em
+\newdimen\pagenospace  \pagenospace = 2.5em
+
+\def\difficulty#1{%
+  \vskip\abovedifficultyskip
+  \noindent{\difficultyfont #1}%
+  \par
+  \vskip-.5\abovecapsuleskip
+}
+
+% make page numbers in toc be links? no for cadmus, yes for online.
+\newif\iftublinktoc \tublinktoctrue
+\newcount\tublinkdestpage
+
+% #1 is difficulty rating -- follows \capsule on first line, usually empty
+% #2 is TB category -- arg 2 alone on its line, maybe with replace|add comment
+% #3 is author -- args 3-7 are alone on their lines
+% #4 is title
+% #5 is for statement
+% #6 is page number
+% #7 is URL of paper PDF
+% #8 is subtitles -- arg 8 can be alone on its line or multiple lines long
+% #9 is for notes added at html time -- arg 9 can be alone on its line
+%           or multiple lines long 
+
+% the main command.
+\def\capsule#1#2#3#4#5#6#7#8#9{%
+  \def\author{#3}%
+  \def\title{#4}%
+  \vskip \abovecapsuleskip
+  \noindent
+  \hangindent = \pagenospace
+    \advance\hangindent by 3em
+  \hbox to \pagenospace{\overfullrule=0pt
+    \hbox to \pagenowidth{\hfil \tubmaybelinkpageno{#6}}%
+    \hfil}%
+   %
+   \ifx\author\empty\else
+     \tubmaybelinktext{\sl \author}%
+     %
+     % / only if both parts are present.
+     \ifx\title\empty\else\ \titleslash\ \fi
+   \fi
+   %
+   \ifx\title\empty\else \tubmaybelinktext{\rm \title}\fi
+   %
+   \def\blurb{#5}%
+   \ifx\blurb\empty\else \hfil\break\hglue-2em\smallbullet\ \blurb\fi
+   \par
+}
+
+\def\capsulenoprint#1#2#3#4#5#6#7#8#9{}
+
+\Input cap.tex
+
+\bye

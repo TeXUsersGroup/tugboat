@@ -1,0 +1,68 @@
+% $Id$
+% cover4.tex - back cover of TUGboat. Public domain.
+% 
+% space reduction priorities (change values below).
+% - add length to page, within reason
+% - decrease skips between sections (\secskipa)
+% - decrease skips between items (\secskipb)
+% - decrease font size for items only (not headings)
+% - decrease baselines within items
+% - if multiple ads (not a current problem), reduce to a single
+%   line and put an advertisers' index inside
+
+\input tubtocmac.tex
+\input tugboat.sty
+\input tugboat.front
+
+\input tugboat.dates
+\TUBfinal
+
+\headmargin=\normalheadmargin
+\rheadlgt=\normalrheadlgt
+\collgt=\normalcollgt
+\resetpagelgt
+
+\let\runhead=\normalrunhead
+\let\runfoot=\normalrunfoot
+
+% fonts:
+\tenpoint\baselineskip=12.5pt       % default 10pt baselineskip is 12.5pt
+  \font\slnine = cmsl9
+  \font\manual = logo10
+  \font\manualsl = logosl10
+  \font\thanhfont = t5-lmr10
+  \font\lslashfont = ec-lmr10
+
+%\ninepoint\baselineskip=11.1pt     % default 9pt baselineskip is 11.1pt
+%  \font\slnine = cmsl8
+%  \font\manual = logosl10 at 9pt
+%  \font\thanhfont = t5-lmr9
+%  \font\lslashfont = ec-lmro9
+%  \font\lslashrmfont = ec-lmr9
+%  \AdjustNormalSpacing\ninepoint{20}
+
+% seems to work ok for both sizes.
+\font\slc = cmsl9 at 7pt  % cmcscsl10 not available as type1
+
+\LoadSansFonts
+\Trimmarkstrue
+\NoBlackBoxes
+\def\rtitle{}
+\setdigitwidth{999} % number of digits in highest page number
+
+% page length
+\vfuzz=0pc 			% normally zero
+  \advance\vsize by \vfuzz
+
+\secskipa=6.0pt plus3pt       % between sections, default 6.0pt plus3pt
+\secskipb=1.5pt plus1pt       % between entries,  default 1.5pt plus1pt
+
+% 
+{
+ \hfuzz=2pc                     % normally 2pc
+ \advance\hsize by \hfuzz
+  %
+ \advance\voffset by -2\baselineskip % somehow starts too low?
+ \Input cont
+}
+\bye % not \end, because we redefine \bye as needed in tbNNNcomplete.pdf.

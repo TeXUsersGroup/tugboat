@@ -1295,6 +1295,21 @@
   {\textbraceleft #1\textbraceright}%
 }
 %
+% Literal text, such as class names, package names, filenames, etc,
+% Trying to define separate commands for each seems impossible and pointless.
+% Usually we don't want hyphenation or any other kind of break.
+\DeclareRobustCommand{\tbcode}[1]{\mbox{\texttt{#1}}}
+%
+% On the other hand, sometimes we need to break such code fragments.
+% If |hyperref| is loaded, we want |\nolinkurl|, else just |\url|.
+\AtBeginDocument{%
+\ifx\nolinkurl\undefined
+  \DeclareRobustCommand{\tbcodebreak}{\url}
+\else
+  \DeclareRobustCommand{\tbcodebreak}{\nolinkurl}
+\fi
+}
+%
 % Not sure why we ever want this instead of LaTeX's \, (using \kern),
 % but fine, just keeping it.
 \DeclareRobustCommand{\thinskip}{\hskip 0.16667em\relax}
