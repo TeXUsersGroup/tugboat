@@ -1,3 +1,9 @@
+2023-09-29  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst (format.month): new fn to handle outputting 01..12
+        as "Jan.".."Dec.".
+        (format.date): use it.
+
 2023-09-20  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx [! \tubomithyphenations]:

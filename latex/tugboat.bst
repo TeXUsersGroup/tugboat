@@ -12,8 +12,9 @@
 %%%     "editor(s)" to "ed(s).",
 %%%     "edition" to "ed.".
 %%%   Output "Ph.D." rather than "PhD".
-%%%   Output "No." and "no." for number field.
-%%%   Omit spaces between author initials, like "A.B. Smith".
+%%%   In number field, output "No." and "no.".
+%%%   In month field, output numbers 01..12 as our preferred abbreviations.
+%%%   Omit spaces between author initials, as in "A.B. Smith".
 %%%   Set urlintro="" and onlinestring="" to omit labels from output.
 %%%   Use \url instead of \href, so we don't require hyperref.
 %%%   Always use https://doi.org/ for the doi url; omit "doi:" from output.
@@ -618,6 +619,60 @@ FUNCTION {n.dashify}
   if$
 }
 
+% tub: assume month is nonempty. If numeric (biblatex), output
+% our preferred month abbreviation; else output as-is.
+% There's probably a better way.
+FUNCTION {format.month}
+{ month "01" =
+    { "Jan." }
+    { month "02" =
+        { "Feb." }
+        { month "03" =
+            { "Mar." }
+            { month "03" =
+                { "Apr." }
+                { month "05" =
+                    { "May" }
+                    { month "06" =
+                        { "June" }
+                        { month "07" =
+                            { "July" }
+                            { month "08" =
+                                { "Aug." }
+                                { month "09" =
+                                    { "Sept." }
+                                    { month "10" =
+                                        { "Oct." }
+                                        { month "11" =
+                                            { "Nov." }
+                                            { month "12" =
+                                                { "Dec." }
+                                                { month }
+                                              if$
+                                            }
+                                          if$
+                                        }
+                                      if$
+                                    }
+                                  if$
+                                }
+                              if$
+                            }
+                          if$
+                        }
+                      if$
+                    }
+                  if$
+                }
+              if$
+            }
+          if$
+        }
+      if$
+    }
+  if$
+}
+
 FUNCTION {format.date}
 { year empty$
     { month empty$
@@ -629,7 +684,7 @@ FUNCTION {format.date}
     }
     { month empty$
         'year
-        { month
+        { format.month
           monthtie empty$ not
             { "~" }
             { " " }
