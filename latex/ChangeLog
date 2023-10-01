@@ -1,3 +1,9 @@
+2023-10-01  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\LMTX): new abbreviation.
+	(\tburl, \tbsurl, \tbhurl) [!hyperref]: try \let instead of \def,
+	so \def\url{\tbsurl} might still work.
+
 2023-09-29  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.bst (format.month): new fn to handle outputting 01..12

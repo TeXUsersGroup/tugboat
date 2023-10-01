@@ -4,8 +4,11 @@ This file records noteworthy changes.  This file is public domain.
 ltugboat.cls:
 - \dblfloatpagefraction and similar parameters set so figures don't go
 to a float page so soon.
+- new abbreviation \LMTX.
 
-tugboat.bst: for @misc, output organization field if present.
+tugboat.bst:
+- in month field, recognize numbers 01..12.
+- for @misc, output organization field if present.
 
 -----------------
 2.30 (2023-07-03):
