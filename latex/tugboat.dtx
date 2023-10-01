@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2023-09-20 v2.30
+                   [2023-10-01 v2.30
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -797,6 +797,7 @@
 %
 %    \begin{macrocode}
 %<!latex>\def\LaTeX{\La\kern-.15em\TeX}
+\def\LMTX{\acro{LMTX}}
 \def\LuaHBTeX{Lua\acro{HB}\-\TeX}%
 \def\LuaHBLaTeX{Lua\acro{HB}\-\LaTeX}%
 \def\LuaLaTeX{Lua\-\LaTeX}% dtk-logos defines it and people like to use it
@@ -1324,9 +1325,6 @@
 % \cs{tbhurl}\tubbraced{foo}  produces \texttt{http://foo}.
 \AtBeginDocument{%
 \ifx\hyper@normalise\undefined
-  \def\tburl{\url}%
-  \def\tbsurl{\url}% no hyperref, so just \url is fine.
-  \def\tbhurl{\url}%
   \ifx\url\undefined      % make sure \url is defined
     \def\url{\begingroup  % might as well catch common special chars
       \catcode`\#=12 \catcode`\$=12 \catcode`\%=12 \catcode`\^=12
@@ -1334,6 +1332,9 @@
       \finish@tub@url}
   \def\finish@tub@url#1{\tt #1\endgroup}
   \fi
+  \let\tburl\url  % no hyperref, so just \url is fine;
+  \let\tbsurl\url % \let instead of \def so we can still
+  \let\tbhurl\url % use \def\url{\tbsurl} without infloop.
 \else
   % This hyperref hook-in is due to Ulrike Fischer.
   % \url{https://github.com/latex3/hyperref/issues/125}.
