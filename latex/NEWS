@@ -7,7 +7,7 @@ to a float page so soon.
 - new abbreviation \LMTX.
 
 tugboat.bst:
-- in month field, recognize numbers 01..12.
+- in month field, recognize numbers 01..12, with or without leading zero.
 - for @misc, output organization field if present.
 
 -----------------

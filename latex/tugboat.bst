@@ -623,23 +623,23 @@ FUNCTION {n.dashify}
 % our preferred month abbreviation; else output as-is.
 % There's probably a better way.
 FUNCTION {format.month}
-{ month "01" =
+{ month "01" = month "1" = or
     { "Jan." }
-    { month "02" =
+    { month "02" = month "2" = or
         { "Feb." }
-        { month "03" =
+        { month "03" = month "3" = or
             { "Mar." }
-            { month "03" =
+            { month "03" = month "4" = or
                 { "Apr." }
-                { month "05" =
+                { month "05" = month "5" = or
                     { "May" }
-                    { month "06" =
+                    { month "06" = month "6" = or
                         { "June" }
-                        { month "07" =
+                        { month "07" = month "7" = or
                             { "July" }
-                            { month "08" =
+                            { month "08" = month "8" = or
                                 { "Aug." }
-                                { month "09" =
+                                { month "09" = month "9" = or
                                     { "Sept." }
                                     { month "10" =
                                         { "Oct." }

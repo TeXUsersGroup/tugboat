@@ -59,17 +59,19 @@ spell:
 	| sort -f -u
 
 checkbib: ltugboat.cls tugboat.bst tubib.bib
-	$(pdflatex) tubibpages && bibtex tubibpages && $(pdflatex) tubibpages.tex
+	$(pdflatex) tubibnummonth && bibtex tubibnummonth && $(pdflatex) tubibnummonth
+#	$(pdflatex) tubibjtitle && bibtex tubibjtitle && $(pdflatex) tubibjtitle
+	$(pdflatex) tubibpages && bibtex tubibpages && $(pdflatex) tubibpages
 #
-	$(lualatex) tubiball; bibtex tubiball && $(pdflatex) tubiball.tex
-	$(pdflatex) tubibdoi; bibtex tubibdoi && $(pdflatex) tubibdoi.tex
+	$(lualatex) tubiball; bibtex tubiball && $(pdflatex) tubiball
+	$(pdflatex) tubibdoi; bibtex tubibdoi && $(pdflatex) tubibdoi
 #
-	$(lualatex) tubiball && bibtex tubiball && $(pdflatex) tubiball.tex
-	$(pdflatex) tubiball && bibtex tubiball && $(pdflatex) tubiball.tex
+	$(lualatex) tubiball && bibtex tubiball && $(pdflatex) tubiball
+	$(pdflatex) tubiball && bibtex tubiball && $(pdflatex) tubiball
 #
-	$(xelatex) tubibthanh && bibtex tubibthanh && $(xelatex) tubibthanh.tex
-	$(lualatex) tubibthanh && bibtex tubibthanh && $(lualatex) tubibthanh.tex
-	$(pdflatex) tubibthanh && bibtex tubibthanh && $(pdflatex) tubibthanh.tex
+	$(xelatex) tubibthanh && bibtex tubibthanh && $(xelatex) tubibthanh
+	$(lualatex) tubibthanh && bibtex tubibthanh && $(lualatex) tubibthanh
+	$(pdflatex) tubibthanh && bibtex tubibthanh && $(pdflatex) tubibthanh
 #
 	$(pdflatex) tubib && bibtex tubib && $(pdflatex) tubib.tex
 

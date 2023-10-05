@@ -1,3 +1,11 @@
+2023-10-04  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst: also accept month numbers without leading zero.
+	Suggestion from Oren.
+	* tubib.bib (nummonth, nummonthzero): test bib entries.
+	* tubibnummonth.tex: test file.
+	* Makefile (checkbib): test it.
+
 2023-10-01  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\LMTX): new abbreviation.
