@@ -1,3 +1,8 @@
+2023-10-26  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst (output.nonnull.original): comma after
+	journal name for everything except TUGboat.
+
 2023-10-04  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.bst: also accept month numbers without leading zero.

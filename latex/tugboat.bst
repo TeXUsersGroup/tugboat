@@ -182,8 +182,9 @@ STRINGS { s t last.output.check }
 % urlbst
 % arg on stack is what needs to be written.
 % 
-% If a journal, we want to omit the following comma, as in
-% "TUGboat 39(1)" instead of the default "TUGboat, 39(1)".
+% If journal is "TUGboat" or "\TUB", we want to omit the following
+% comma, as in "TUGboat 39(1)" instead of the default "TUGboat, 39(1)".
+% But for all other journals, we want the comma.
 % 
 % Furthermore, if field journaltie is non-empty, output a tie after the
 % journal name instad of a space.
@@ -192,10 +193,14 @@ FUNCTION {output.nonnull.original}
 { 's :=
   output.state mid.sentence =
     { last.output.check "journal" = not
-        { ", " * }
-        { journaltie empty$ not
-          { "~" }
+        { ", " * }  % not a journal, normal comma+space separator
+        { journal "TUGboat" = journal "\TUB" = or
+          { skip$ } % TUGboat, no comma
+          { "," * } % not TUGboat, want comma
+          if$ 
+          journaltie empty$
           { " " }
+          { "~" }
           if$
           *
         }
@@ -621,7 +626,8 @@ FUNCTION {n.dashify}
 
 % tub: assume month is nonempty. If numeric (biblatex), output
 % our preferred month abbreviation; else output as-is.
-% There's probably a better way.
+% There is no way to reuse the macro definitions previously made here,
+% so just write them out again.
 FUNCTION {format.month}
 { month "01" = month "1" = or
     { "Jan." }
