@@ -1,3 +1,10 @@
+2023-10-27  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\pdfTeX, \pdfLaTeX): insert italic correction.
+	(\tbppkernfoot): new macro for bb when footnote precedes punct.
+	
+	* tubibjtitle.tex: test file.
+
 2023-10-26  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.bst (output.nonnull.original): comma after

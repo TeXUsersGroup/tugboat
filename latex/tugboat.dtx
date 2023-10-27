@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2023-10-01 v2.30
+                   [2023-10-27 v2.30
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -802,6 +802,7 @@
 \def\LuaHBLaTeX{Lua\acro{HB}\-\LaTeX}%
 \def\LuaLaTeX{Lua\-\LaTeX}% dtk-logos defines it and people like to use it
 \def\LuaTeX{Lua\-\TeX}% ditto
+\def\luatex{\LuaTeX}% ditto
 \def\LyX{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX}
 \def\macOS{mac\acro{OS}}
 \def\MacOSX{Mac\,\acro{OS\,X}}
@@ -847,9 +848,10 @@
 \def\pcMF{\leavevmode\raise.5ex\hbox{p\kern-.3\p@ c}MF\@}
 \def\PCTeX{PC\thinspace\TeX}
 \def\pcTeX{\leavevmode\raise.5ex\hbox{p\kern-.3\p@ c}\TeX}
-\def\pdflatex{pdf\-\LaTeX}% dtk-logos
-\def\pdftex{pdf\-\TeX}% dtk-logos
-\def\pdfTeX{\pdftex}
+\def\pdfLaTeX{pdf\/\-\LaTeX}% dtk-logos
+\def\pdflatex{\pdfLatex}
+\def\pdfTeX{pdf\/\-\TeX}% dtk-logos
+\def\pdftex{\pdfTeX}
 \def\PDF{\acro{PDF}}
 \def\PGF{\acro{PGF}}
 \def\PHP{\acro{PHP}}
@@ -992,7 +994,6 @@
 %    \end{macrocode}
 %
 % \begin{macro}{\tubsentencespace}
-% 
 % Occasionally, notably after citations that need to come after a
 % sentence-ending period, we want to tell \TeX\ that it's still at the
 % end of a sentence. As in: 
@@ -1007,16 +1008,21 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% \begin{macro}{\tubdots}
 % Latin Modern and many other fonts irritatingly make the Unicode
 % ellipsis character (U+2026) a single character's width, typically more
 % squashed together than three period characters. This just looks wrong.
 % It is too painful to try to redefine in general, but provide the
 % normal definition to reset in individual papers with, e.g.:
 % |\ifx\tubdots\undefined \else \let\dots\tubdots \let\ldots\tubdots \fi|
+% 
+%    \begin{macrocode}
 \DeclareRobustCommand{\tubdots}{\ifmmode\mathellipsis\else
    .\kern\fontdimen3\font
    .\kern\fontdimen3\font
    .\kern\fontdimen3\font\fi}
+%    \end{macrocode}
+% \end{macro}
 %
 % \begin{macro}{\allowhyphens}
 % Hyphen control: first, we save (via \cs{edef}) the hyphenpenalties in
@@ -1389,10 +1395,14 @@
 \def\tbsurlfootnote#1{\footnote{\raggedright\tbsurl{#1}}}
 \def\tbhurlfootnote#1{\footnote{\raggedright\tbhurl{#1}}}
 %
+% Close up space between footnote mark and punctuation ("pre-punctuation").
+\DeclareRobustCommand{\tbppkernfoot}{\tubthinnerspace}
+
 % Make \! work in text mode.
 \DeclareRobustCommand{\!}{\ifmmode\mskip-\thinmuskip \else\kern-0.16667em \fi}
 %
-% Half a thinspace, positive and negative.
+% Half a thinspace, positive and negative. Should have named these
+% \cs{tb} instead of \cs{tub}, but not worth changing now.
 \DeclareRobustCommand{\tubthinnerspace}
   {\ifmmode\mskip.5\thinmuskip \else\kern0.08333em \fi}
 \DeclareRobustCommand{\tubthinnerspaceneg}
