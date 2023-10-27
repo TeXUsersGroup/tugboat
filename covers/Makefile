@@ -103,5 +103,5 @@ copynext:
 	cp -ai Makefile *.tex tugboat.* word* press2.pdf ${tn}/covers/
 	cd ${tn}/covers && rename s/$(tbn)/$(tbnn)/ *
 # during dev:
-%:
-	cd .. && $(MAKE) $@
+#%:
+#	cd .. && $(MAKE) $@

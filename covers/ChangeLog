@@ -1,3 +1,10 @@
+2023-10-27  Karl Berry  <karl@freefriends.org>
+
+	* cover1.tex: drawing for tb138 regular issue; generalize next time.
+	* cover2.tex: add About the cover section.
+	(Board of Directors): update per 2023 election.
+	* cover3.tex: for tb138, can use 10pt fonts and normal spacing.
+
 2023-09-06  Karl Berry  <karl@freefriends.org>
 
 	* tubtocmac.tex (\tubmaybelinkpageno): call it.

@@ -21,7 +21,7 @@
   \scriptfont\slfam=\sevensl
 }
 
-\iffalse % fonts - 10pt
+\iftrue % fonts - 10pt
   \font\manual=logo10
   \font\difficultyfont=cmb10
   \font\smallsl = cmsl9  \font\smallrm = cmr9 \font\smallsy = cmsy9
@@ -36,7 +36,7 @@
   \baselineskip=12pt
 \fi
 
-\iftrue % fonts - 9pt (what we usually use)
+\iffalse % fonts - 9pt (what we usually use)
   \font\tenrm=cmr9  \font\tensl=cmsl9  \font\tentt=cmtt9  \font\manual=logo9
   \font\tenit=cmti9 \font\tenbf=cmbx9 \font\sf = cmss9
   \font\difficultyfont=cmb10
@@ -70,9 +70,9 @@
 \rm  %  start smaller font
 
 \newskip\abovedifficultyskip % default 8pt plus2pt minus1pt
-  \abovedifficultyskip = 2.6pt plus2pt minus1pt
+  \abovedifficultyskip = 8pt plus2pt minus1pt
 \newskip\abovecapsuleskip    % default 2pt plus1pt
-  \abovecapsuleskip    = 1pt plus1pt
+  \abovecapsuleskip    = 2pt plus1pt
 
 % we want ragged right, and interword stretch seems unnecessary, but we
 % still allow interword shrink since it helps keep things on one line.
