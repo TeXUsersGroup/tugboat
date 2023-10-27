@@ -26,6 +26,7 @@
 %%%   Use \emph instead of \em so we get automatic italic corrections.
 %%%   New fields for editors:
 %%%     "journaltie" - ~ instead of space after journal name.
+%%%     "monthtie" - ~ instead of space after month name.
 %%%     "newpage" - force page break after entry.
 %%%     "nowarning" - if set, omit empty field warnings from output.check.
 %%%     "pagesnodashify" - if set, don't convert - to -- in pages field.

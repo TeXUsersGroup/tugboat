@@ -1,5 +1,9 @@
 2023-10-27  Karl Berry  <karl@freefriends.org>
 
+	* ltubguid.ltx: simplify url suggestion to \tburl.
+	Mention \tbcode.
+	Rearrange sectioning. Etc.
+
 	* tugboat.dtx (\pdfTeX, \pdfLaTeX): insert italic correction.
 	(\tbppkernfoot): new macro for bb when footnote precedes punct.
 	

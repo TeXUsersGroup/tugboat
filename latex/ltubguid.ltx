@@ -37,26 +37,26 @@
 
 @Misc{pkg:fancyvrb,
   author = {Timothy Van Zandt and others},
-  title = {The {\textsf{fancyvrb}} package},
+  title = {The {\tbcode{fancyvrb}} package},
   url = {ctan.org/pkg/fancyvrb},
 }
 
 @Misc{pkg:listings,
   author = {Carsten Heinz and others},
-  title = {The {\textsf{listings}} package},
+  title = {The {\tbcode{listings}} package},
   url = {ctan.org/pkg/listings},
 }
 
 @Misc{Arseneau:url:1996,
   author = {Donald Arseneau},
-  title = {The {\textsf{url}} package},
+  title = {The {\tbcode{url}} package},
   url = {ctan.org/pkg/url},
   urlnewline = 1,
 }
 
 @Misc{Rahtz:hyperref:1997,
   author = {Sebastian Rahtz and Heiko Oberdiek and others},
-  title = {The {\textsf{hyperref}} package},
+  title = {The {\tbcode{hyperref}} package},
   url = {ctan.org/pkg/hyperref},
 }
 
@@ -70,14 +70,14 @@
 
 @Misc{Schoepf:verbatim:1996,
   author = {Rainer Sch{\"{o}}pf},
-  title = {The {\textsf{verbatim}} package},
+  title = {The {\tbcode{verbatim}} package},
   url = {ctan.org/pkg/verbatim},
   urlnewline = 1,
 }
 
 @Misc{Vieth:mflogo:1995,
   author = {Ulrik Vieth},
-  title = {The {\textsf{mflogo}} package},
+  title = {The {\tbcode{mflogo}} package},
   url = {ctan.org/pkg/mflogo},
   urlnewline = 1,
 }
@@ -132,16 +132,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-\documentclass[final,letterpaper]{ltugboat}
-\usepackage{graphics} % just so letterpaper takes effect
+\documentclass[letterpaper]{ltugboat}
+\usepackage{graphics} % so letterpaper takes effect
 \usepackage{microtype}
 \usepackage{ctandir}
+\usepackage[hidelinks,pdfa]{hyperref}
 \IfFileExists{booktabs.sty}%
   {\usepackage{booktabs}}%
   {\let\midrule\hline}
 %
 \vbadness=10000   % imperfectly broken pages are ok
 \overfullrule=4pt % want to see
+% omit word "draft:"
+\def\rtitlenexttopage{\ifPrelimDraft \textsl{\small \Now}\fi}
 %
 % define CTAN addresses using the commands of the |ctandir| package
 \CTANdirectory{packages}{macros/latex/required}
@@ -150,11 +153,11 @@
 % ***** Commands provided by this paper *****
 %
 % Typeset the name of an environment, class, package, option, program
-\providecommand\envname[1]{\textsf{#1}}
-\providecommand\clsname[1]{\textsf{#1}}
-\providecommand\pkgname[1]{\textsf{#1}}
-\providecommand\optname[1]{\textsf{#1}}
-\providecommand\progname[1]{\textsf{#1}}
+\providecommand\envname[1]{\tbcode{#1}}
+\providecommand\clsname[1]{\tbcode{#1}}
+\providecommand\pkgname[1]{\tbcode{#1}}
+\providecommand\optname[1]{\tbcode{#1}}
+\providecommand\progname[1]{\tbcode{#1}}
 %
 % A list of options for a package/class
 \newenvironment{optlist}{\begin{description}%
@@ -187,43 +190,48 @@
   \@tempa%
 }
 \makeatother
+\def\url{\tburl} % use our url macros
 %
 %%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%
 %
 \title{The \LaTeXe\ \TUB{} macros}
-\author{Robin Fairbairns \& TUGboat editors}
+\author{TUGboat editors}
 \EDITORnoaddress
 \netaddress{tugboat@tug.org}
 \personalURL{tug.org/TUGboat}
 \maketitle
+{\hyphenpenalty=10000\raggedright \tableofcontents}
+\count0=1
 
 \section{Introduction}
 
 This is the documentation for the \LaTeXe\ macros to be used by \TUB{}
-authors.  The macros represent a development of the earlier
+authors. The macros represent a development of the earlier
 \clsname{ltugboat} and \clsname{ltugproc} styles that were written for
-use with \LaTeX~2.09; major contributors have been Robin Fairbairns,
-Sebastian Rahtz, Michel Goossens, Nico Poppelier and Johannes Braams.
-Many others have been involved, including Barbara Beeton, Karl Berry,
-Mimi Burbank, and the \LaTeX\ team.
+use with \LaTeX~2.09; the main original author was Robin Fairbairns,
+with Sebastian Rahtz, Michel Goossens, Nico Poppelier and Johannes
+Braams. Many others have been involved in the years since, including
+Barbara Beeton, Karl Berry, Mimi Burbank, and the \LaTeX\ team.
 
-\section{Availability}
+\subsection{Availability}
 
-The \TUB\ web pages are at:\\\centerline{\url{https://tug.org/TUGboat}}
+The \TUB\ web pages are at:\par\smallskip
+\centerline{\url{https://tug.org/TUGboat}}
+\par\smallskip\noindent
 They provide \textbf{an article template}, information for authors and
 reviewers, and the complete run of all published \TUB\ issues, among
 other things.
 
-The macros are released for general use, and are distributed via \CTAN{}
-(directory \CTANref{tub-latex}) in the usual \LaTeX{} way as files
-\path|tugboat.dtx| and \path|tugboat.ins|.  When the\,\verb|.ins| file
-is processed by \LaTeX{}, the files \path|ltugboat.cls| and
-\path|ltugbib.bst| (for use with articles) and \path|ltugcomn.sty| (a
-cooking pot of perhaps-useful macros, for documentation, etc.)\ are
-produced.  (\path|ltugproc.cls| is also produced for compatibility, but
-is no longer used for proceedings or anything else.)
+The macros are distributed via \CTAN{}
+(\url{https://ctan.org/pkg/tugboat}) in the usual \LaTeX{} way as files
+\path|tugboat.dtx| and \path|tugboat.ins|. When the \verb|.ins| file is
+processed by \LaTeX{}, the files \path|ltugboat.cls| and
+\path|ltugcomn.sty| (a melange of perhaps-useful macros, for
+documentation, etc.)\ are produced. (For compatibility,
+\path|ltugproc.cls| is also produced, but is no longer used for
+proceedings or anything else.)
 
 The\,\verb|.dtx| file may itself be processed by \LaTeX{} to
 produce a formatted (somewhat `literate') source listing for those 
@@ -236,23 +244,33 @@ The basic idea is to start your \LaTeX\ document with
 articles.  This uses the file \path|ltugboat.cls| as usual.
 
 Each paper, therefore, is written as a document that may stand on its
-own.  It starts with a \cs{documentclass} command, and its body is
-enclosed in a \envname{document} environment.  There are some options to
+own. It starts with a \cs{documentclass} command, and its body is
+enclosed in a \envname{document} environment. There are some options to
 the document class, described in the next section, but ordinarily the
-author needn't bother with them.  The defaults are
-designed for creating proof copies of papers.
+author needn't bother with them. The defaults are designed for creating
+proof copies of papers.
 
 The proof output differs from the final production output with respect
 to page numbers and other material.  The changes required for final
-production are the responsibility of the \TUB{} editors, and the author
-need not be concerned with them.
+production are the responsibility of the \TUB{} editors; authors will
+see the final version in proof.
 
-\section{Class options: The \clsname{ltugboat} class}
+In general, we have sought simply to keep to the spirit of \LaTeX\ in
+the commands provided by the \TUB\ class (\verb|ltugboat|). On the
+whole, the new \clsname{ltugboat} macros define \LaTeX{} commands and
+environments, or modify the definitions of \LaTeX{} standard commands.
+For those interested, section~\ref{sec:equiv} lists equivalences between
+macros defined by the `plain' package \cite{Whitney:TB10-3-378} and
+those defined by the new package.
+
+\subsection{Class options for \clsname{ltugboat}}
 \label{sec:boat-opts}
 
 The \clsname{ltugboat} class accepts many of the options of the
-\clsname{article} class (it suppresses the font-size selection
-and one/two-side options).
+\clsname{article} class (it suppresses the font-size selection and
+one/two-side options). Normally there is no need to use any document
+option. They are listed here for completeness.
+
 \begin{optlist}
 \item[draft] Set up for a draft copy of a paper (this is the default
   setting\Dash the author need not explicitly set it): page numbering
@@ -261,10 +279,10 @@ and one/two-side options).
   of the reference; see section~\ref{sec:biblio}.
 \item[final] Set up for the final copy of a paper: page numbering to
   come from elsewhere, no cropmarks.
-\item[harvardcite] Specify Harvard-style citation (not 
+\item[harvardcite] Specify Harvard-style citation. Not 
   recommended in general; see section~\ref{sec:biblio}.
-\item[noextralabel] Don't use the extra label-distinguishing mark in
-  the body of the reference; see section~\ref{sec:biblio}.
+\item[noextralabel] Don't use the extra mark for distinguishing labels in
+  the body of the reference; see section~\ref{sec:biblio-harvard}.
 \item[nonumber] Sections are not numbered; section heading
   layout is to be as in the `plain' \pkgname{tugboat} styles.
 \item[numbersec] Sections, subsections and subsubsections are to be
@@ -277,110 +295,45 @@ and one/two-side options).
 \item[runningfull] Information in both header and footer (default).
 \item[runningminimal] Information in header only.
 \item[runningoff] Information in neither header nor footer.
+\item[secondcolstart] Start the article in the second column.
 \end{optlist}
 
-\noindent Again, normally there is no need to use any document options.
-They are listed here for completeness.
+\subsection{Use of packages}
 
-\section{Command syntax}
-\label{sec:syntax}
+Being a \TeX\ journal, authors may use both standard and non-standard
+external packages for their articles. The overriding criterion is that
+articles need to be processable on the \TUB{} production computers
+(running current \TeX\ Live). A sensible mechanism for submitting
+personal packages is by use of the \envname{filecontents} environment.
+It's also fine to submit manuscript source with additional packages in a
+zip or other archive.
 
-In general, we have sought simply to keep to the spirit of \LaTeX\ in
-the commands provided by the \TUB\ class (\verb|ltugboat|).
+In general, packages currently on \CTAN, and known to work with
+\emph{current} \LaTeX{} are likely to be fine. In particular, \TUB\ is
+happy to accept papers using packages that are supported by members of
+the \LaTeX\ team.
 
-In the few cases that it has proved possible to emulate (what seems to
-a staid old \LaTeX{} programmer, such as the original author here) the gay
-abandon of the syntax of the `plain' \pkgname{tugboat} styles
-\cite{Whitney:TB10-3-378}, we have done so.  Nevertheless, on the whole,
-the new \clsname{ltugboat} macros define \LaTeX{} commands and
-environments, or modify the definitions of \LaTeX{} `standard'
-commands.  Section~\ref{sec:equiv} lists equivalences between macros
-defined by the `plain' package and those defined by the new package.
+\tug{} has a policy that macro packages described in \TUB{} should be
+available for readers to use. Since typing macros from printed sources
+is tedious, authors of publicly available packages are urged to submit
+their macros to \CTAN{}. If a package is only available under restricted
+terms, authors are requested to make this fact clear when first
+submitting an article to the editor.
 
-\section{Divisions of the paper}
-\label{sec:divs-paper}
+The \texttt{ltugboat} class loads the package \path|mflogo.sty|
+\cite{Vieth:mflogo:1995} for typesetting the \MF\ logo. If this package
+is not present by some mischance, \texttt{ltugboat} will emulate it.
 
-Papers in \TUB{} may be subdivided in the normal way of a \LaTeX{}
-article (the classes are defined in terms of \LaTeX{}'s
-\clsname{article} class).  Thus the author may use \cs{section},
-\cs{subsection}, \dots, \cs{paragraph} commands (but \cs{part} and
-\cs{subparagraph} from \clsname{article} are suppressed, and
-\cs{chapter}, which doesn't even appear in the parent class, receives
-the same treatment).
+Although not necessarily recommended in all cases, many additional
+packages are commonly used. To mention a few:
+\begin{description}
+\item[microtype] can help reduce overfull boxes and improve appearance
+(\verb|\usepackage{microtype}|);
+\item[hyperref] supports live and internal hyperlinks, outlines, and
+much more\\(\verb|\usepackage[hidelinks,pdfa]{hyperref}|).
+\end{description}
 
-Authors may note that the style of ordinary issues of \TUB{} makes
-no distinction between the titles of the divisions; the visual style
-relies on the section numbers to indicate where the divisions lie in
-the hierarchy.  If you use \cs{paragraph}, consider ending the paragraph
-label with a period; sometimes it is helpful, sometimes not.
-
-For references to numbered sections, our style is to always use the word
-`Section' in the text, e.g.,\\
-\verb|Section~\ref{sec:whatever}|\\
-without worrying about whether it is technically a sub(sub)section.
-It's also ok to use the section sign~\S{}, if that suits the material
-better.
-
-Reference can also be made to the `title' of divisions of the paper,
-whether they are numbered or not. The \cs{nameref} command (which uses
-the technique developed for the \textsf{hyperref} package
-\cite{Rahtz:hyperref:1997}) permits such references; for example, the
-present section was introduced by:
-\begin{verbatim}[\small]
-\section{Divisions of the paper}
-\label{sec:divs-paper}
-\end{verbatim}
-and the command \verb|\nameref{sec:divs-paper}| produces
-`\nameref{sec:divs-paper}'. However, as you can see here, reusing the
-literal text of section titles often results in awkward results. We
-recommend numbered references in general.
-
-\subsection{Abstracts}
-
-The \clsname{ltugboat} class provides two environments for abstracts,
-\envname{abstract} and \envname{longabstract}. The \envname{abstract}
-environment simply typesets its body as an un-numbered section whose
-title is `Abstract'. The \envname{longabstract} environment typesets its
-body in small text, and separates the abstract from the rest of the
-paper with a decorative line; this is rarely used.
-
-Please write an abstract, however short.
-
-\subsection{Appendices}
-
-A paper may have appendices, which can be expressed in exactly the same
-way as they would be in the \LaTeX{} article class (confusing as that
-may be):
-
-\begin{verbatim}[\small]
-\appendix
-\section{This is appendix A}
-...
-\section{This is appendix B}
-\end{verbatim}
-Which will produce `section' headings similar to:
-\begin{quote}
-\textbf{A\quad This is appendix A}
-\end{quote}
-
-\TUB{} articles may have a small extension to this format using an
-\texttt{appendix} environment:
-
-\begin{verbatim}[\small]
-\begin{appendix}
-\section{This is the first one}
-...
-\end{appendix}
-\end{verbatim}
-which will produce `section' headings similar to:
-\begin{quote}
-\textbf{Appendix A\quad This is the first one}
-\end{quote}
-
-In both cases, the subsections are numbered as normal (i.e., as
-`A.\ensuremath{n}' in normal \TUB{} papers):
-
-\section{Titles, addresses and so on}
+\subsection{Titles, addresses and so on}
 
 The title and author(s) of a paper are quoted using commands that are
 familiar (in syntax, at least) to most \LaTeX{} users; the \cs{title}
@@ -443,7 +396,7 @@ given at \tug'95 (abbreviated):
 The class files will take care of arranging author names and addresses
 between the \cs{maketitle} and (possibly) \cs{makesignature} commands.
 
-\subsection{Compilation articles}
+\subsubsection{Compilation articles}
 
 Compilation articles are written as a set of contributed parts under the
 general editorship of the author(s) of the article. The author of the
@@ -470,7 +423,186 @@ closes the group. The general scheme looks like:
 \makesignature ...
 \end{verbatim}
 
-\section{Verbatim text}
+\subsection{Divisions of the paper}
+\label{sec:divs-paper}
+
+Papers in \TUB{} may be subdivided in the normal way of a \LaTeX{}
+article (the classes are defined in terms of \LaTeX{}'s
+\clsname{article} class). Thus the author may use \cs{section},
+\cs{subsection}, \dots, \cs{paragraph} commands (but \cs{part} and
+\cs{subparagraph} from \clsname{article} are suppressed, and
+\cs{chapter}, which does not even appear in the parent class, receives
+the same treatment).
+
+Authors may note that the style of ordinary issues of \TUB{} makes
+no distinction between the titles of the divisions; the visual style
+relies on the section numbers to indicate where the divisions lie in
+the hierarchy.  If you use \cs{paragraph}, consider ending the paragraph
+label with a period; sometimes it is helpful, sometimes not.
+
+For references to numbered sections, our style is to always use the word
+`Section' in the text, e.g.,\\
+\verb|Section~\ref{sec:whatever}|\\
+without worrying about whether it is technically a sub(sub)section.
+It's also ok to use the section sign~\S{}, if that suits the material
+better.
+
+Reference can also be made to the `title' of divisions of the paper,
+whether they are numbered or not. The \cs{nameref} command (which uses
+the technique developed for the \tbcode{hyperref} package
+\cite{Rahtz:hyperref:1997}) permits such references; for example, the
+present section was introduced by:
+\begin{verbatim}[\small]
+\section{Divisions of the paper}
+\label{sec:divs-paper}
+\end{verbatim}
+and the command \verb|\nameref{sec:divs-paper}| produces
+`\nameref{sec:divs-paper}'. However, as you can see here, reusing the
+literal text of section titles often results in awkward results. We
+recommend numbered references in general.
+
+\subsubsection{Abstracts}
+
+The \clsname{ltugboat} class provides two environments for abstracts.
+The \envname{abstract} environment simply typesets its body as an
+unnumbered section whose title is `Abstract'. The \envname{longabstract}
+environment typesets its body in small text, and separates the abstract
+from the rest of the paper with a decorative line; this is rarely used.
+
+Please write an abstract, however short.
+
+\subsubsection{Appendices}
+
+A paper may have appendices, which can be expressed in exactly the same
+way as they would be in the \LaTeX{} article class (confusing as that
+may be):
+
+\begin{verbatim}[\small]
+\appendix
+\section{This is appendix A}
+...
+\section{This is appendix B}
+\end{verbatim}
+Which will produce `section' headings similar to:
+\begin{quote}
+\textbf{A\quad This is appendix A}
+\end{quote}
+
+\TUB{} articles may have a small extension to this format using an
+\texttt{appendix} environment:
+
+\begin{verbatim}[\small]
+\begin{appendix}
+\section{This is the first one}
+...
+\end{appendix}
+\end{verbatim}
+which will produce `section' headings similar to:
+\begin{quote}
+\textbf{Appendix A\quad This is the first one}
+\end{quote}
+
+In both cases, the subsections are numbered as normal (i.e., as
+`A.\ensuremath{n}' in normal \TUB{} papers):
+
+\section{Floating inserts}
+
+The classes do not make any change to \LaTeX{}'s built-in provision for
+floating inserts, so that authors should write figures and tables as usual,
+
+The default is for floats to be the width of the column. To make a float
+which is the width of the whole page, use \envname{figure*} and
+\envname{table*}.
+
+Regarding caption placement, \TUB's convention is to put captions for
+figures below the figure, but captions for tables and listings above the
+table\slash listing. Please follow this convention unless there is a
+specific reason not to.
+
+As a reminder, \cs{label} commands should always follow the
+\cs{caption}.
+
+\section{Special-purpose typesetting}
+
+The classes define a rather large set of commands for special-purpose
+typesetting.
+
+\subsection{Assorted simple markup}
+
+A short list of commonly-needed special typesetting commands follows; a
+larger set of such commands is defined in the classes. Feel free to peruse.
+
+\begin{cmdlist}\raggedright
+\item[\cs{cmd}] Typeset a control sequence name:\\
+  \verb|\cs{fred}| produces \cs{fred}.
+
+\item[\Dash] Typeset an em-dash, ignoring preceding and following space,
+  surrounded by thin spaces, only breakable after the dash; this
+  is our preferred method of specifying an em-dash in running text, over
+  \texttt{---} or (especially) the Unicode character(s).
+
+\item[\meta{var}] Typeset meta-syntactic text:\\
+  \verb|\meta{fred}| produces \meta{fred}.
+
+\item[\tbcode{text}] Literal text, such as class names, package names,
+filenames, environment variables, etc. The text is typeset in typewriter
+and is not breakable.
+
+\item[\tbcodebreak{text}] Like \cs{tbcode}, but breakable as with urls,
+e.g., at periods. Still not hyphenated.
+
+\item[\tubbraced{text}] Typeset typewriter text in typewriter
+  braces: \verb|\tubbraced{fred}| produces \tubbraced{fred}.
+\end{cmdlist}
+For commands to typeset urls, see section~\ref{sec:urls}.
+
+\subsection{Acronyms and logos}
+
+The classes provide macros that produce `correct' representations of a
+large number of acronyms and logos; a small representative selection is
+shown in figure~\ref{fig:acro-logo}.  The sample documents at
+\url{tug.org/TUGboat/location.html} have a more complete list,
+and of course the class sources are the ultimate reference.
+\begin{figure}[htbp!]
+  \begin{center}
+    \begin{tabular}{@{}ll@{}}
+      \small\textsl{\tbcode{Macro}}&\small\textsl{\tbcode{Output}}\\
+      \midrule
+      \verb|\ConTeXt|   & \ConTeXt \\
+      \verb|\Cplusplus| & \Cplusplus \\
+      \verb|\CTAN|   & \CTAN \\
+      \verb|\eTeX|   & \eTeX\\
+      \verb|\FAQ|    & \FAQ \\
+      \verb|\HTML|   & \HTML \\
+      \verb|\ISBN|   & \ISBN \\
+      \verb|\KOMAScript| & \KOMAScript \\
+      \verb|\LaTeXe| & \LaTeXe \\
+      \verb|\macOS|  & \macOS \\
+      \verb|\MathML| & \MathML \\
+      \verb|\MF|     & \MF \\
+      \verb|\PDF|    & \PDF \\
+      \verb|\SGML|   & \SGML \\
+      \verb|\TUB|    & \TUB \\
+      \verb|\TUG|    & \TUG \\
+      \verb|\tug|    & \tug \\
+      \verb|\XML|    & \XML \\
+    \end{tabular}
+  \end{center}
+  \caption{A few of the provided acronyms and logos}
+  \label{fig:acro-logo}
+\end{figure}
+
+Authors are especially urged to note the \cs{acro} command, which is
+defined in the classes. The visual appearance of all-caps sequences
+among normal text is rather unpleasing in Computer Modern,
+unfortunately. Therefore, the \cs{acro} command typesets its argument
+one point size smaller than the surrounding text: compare `\acro{DANTE}'
+(\verb|\acro{DANTE}|) with `DANTE'\@. Many of the provided macros merely
+generate calls to \cs{acro}; two examples, \cs{CTAN} and \cs{tug} of the
+list in figure~\ref{fig:acro-logo} have already been used in the present
+paper.
+
+\subsection{Verbatim text}
 \label{sec:verbatim}
 
 For inline verbatim text, authors should ordinarily employ the
@@ -538,11 +670,12 @@ requirement is troublesome. In any case, we will almost always wish to
 print code listings in straight black, not colored or even grayscaled.
 
 If you use the \pkgname{listings} package, please set:
-\begin{verbatim}[\small\hfuzz=21pt]
+\begin{verbatim}[\small]
 \lstset{columns=fullflexible,
   keepspaces=true,
   commentstyle=\slshape,
-  basicstyle=\ttfamily\lst@ifdisplaystyle\small\fi,}
+  basicstyle=\ttfamily
+             \lst@ifdisplaystyle\small\fi,}
 \end{verbatim}
 Explanations:
 \begin{itemize}
@@ -566,193 +699,87 @@ verbatim, hence the conditional.
 
 \end{itemize}
 
-\section{Floating inserts}
-
-The classes do not make any change to \LaTeX{}'s built-in provision for
-floating inserts, so that authors may write figures and tables as usual,
-
-The default is for floats to be the width of the column. To make a float
-which is the width of the whole page, use \envname{figure*} and
-\envname{table*}.
-
-Regarding caption placement, \TUB's convention is to put captions for
-figures beneath the figure, but captions for tables and listings above
-the table\slash listing. Please follow this convention unless there is a
-specific reason not to. As a reminder, \cs{label} commands should always
-follow the \cs{caption}.
-
-\section{Special-purpose typesetting}
-
-The classes define a rather large set of commands for special-purpose
-typesetting.  Some of them are available for historical reasons only,
-and many are only useful in somewhat restricted circumstances.  For
-this reason, the present paper only outlines a representative, small
-set of the macros.
-
-\subsection{Acronyms and logos}
-
-The classes provide macros that produce `correct' representations of a
-large number of acronyms and logos; a small representative selection is
-shown in figure~\ref{fig:acro-logo}.  The sample documents at
-\url{tug.org/TUGboat/location.html} have a more complete list,
-and of course the class sources are the ultimate reference.
-\begin{figure}[htbp!]
-  \begin{center}
-    \begin{tabular}{@{}ll@{}}
-      \small\textsl{\textsf{Macro}}&\small\textsl{\textsf{Output}}\\
-      \midrule
-      \verb|\ConTeXt|   & \ConTeXt \\
-      \verb|\Cplusplus| & \Cplusplus \\
-      \verb|\CTAN|   & \CTAN \\
-      \verb|\eTeX|   & \eTeX\\
-      \verb|\FAQ|    & \FAQ \\
-      \verb|\HTML|   & \HTML \\
-      \verb|\ISBN|   & \ISBN \\
-      \verb|\KOMAScript| & \KOMAScript \\
-      \verb|\LaTeXe| & \LaTeXe \\
-      \verb|\macOS|  & \macOS \\
-      \verb|\MathML| & \MathML \\
-      \verb|\MF|     & \MF \\
-      \verb|\OMEGA|  & \OMEGA \\
-      \verb|\PDF|    & \PDF \\
-      \verb|\SGML|   & \SGML \\
-      \verb|\TUB|    & \TUB \\
-      \verb|\TUG|    & \TUG \\
-      \verb|\tug|    & \tug \\
-      \verb|\XML|    & \XML \\
-    \end{tabular}
-  \end{center}
-  \caption{A few of the provided acronyms and logos}
-  \label{fig:acro-logo}
-\end{figure}
-
-Authors are especially urged to note the \cs{acro} command, which is
-defined in the classes. The visual appearance of all-caps sequences
-among normal text is rather unpleasing in Computer Modern,
-unfortunately. Therefore, the \cs{acro} command typesets its argument
-one point size smaller than the surrounding text: compare `\acro{DANTE}'
-(\verb|\acro{DANTE}|) with `DANTE'\@. Many of the provided macros merely
-generate calls to \cs{acro}; two examples, \cs{CTAN} and \cs{tug} of the
-list in figure~\ref{fig:acro-logo} have already been used in the present
-paper.
-
-\subsection{Assorted other markup}
-
-A small list of special typesetting commands follows; a larger set of
-such commands is defined in the classes.
-\begin{cmdlist}\raggedright
-\item[\Dash] Typeset an em-dash, ignoring preceding and following space,
-  surrounded by thin spaces, only breakable \emph{after} the dash; this
-  is the preferred method of specifying a dash in running text, over
-  \texttt{---} or (especially) Unicode characters.
-\item[\cs{cmd}] Typeset a control sequence name:\\
-  \verb|\cs{fred}| produces \cs{fred}.
-\item[\meta{var}] Typeset meta-syntactic text:\\
-  \verb|\meta{fred}| produces \meta{fred}.
-\item[\tubbraced{text}] Typeset typewriter text in typewriter
-  braces: \verb|\tubbraced{fred}| produces \tubbraced{fred}.
-\item[\nth{n}] Typeset an ordinal number; \verb|\nth{1}| is
-  set as \nth{1}, \verb|\nth{27}| is set as \nth{27}, and so on.
-%\item[\sfrac{num}{denom}] Typeset a fraction to match running text;
-%  for example \verb|\sfrac{3}{4}| is set as \sfrac{3}{4}\,.
-\end{cmdlist}
-For commands to typeset urls, see section~\ref{sec:urls}.
-
-\section{Use of packages}
-
-Being a \TeX\ journal, authors may use both standard and non-standard
-external packages for their articles. The overriding criterion is that
-articles need to be processable on the \TUB{} production computers
-(running current \TeX\ Live). A sensible mechanism for submitting
-personal packages is by use of the \envname{filecontents} environment.
-It's also fine to submit manuscript source with additional packages in a
-zip or other archive.
-
-In general, packages currently on \CTAN, and known to work with
-\emph{current} \LaTeX{} are likely to be fine. In particular,
-the team is happy to accept papers using packages that are supported by
-members of the \LaTeX\ team.\footnote{%
-  Those in the \LaTeX{} base distribution, or one of those in the
-  \CTANref{packages} sub-tree on \CTAN.}
-
-\tug{} has a policy that macro packages described in \TUB{} should be
-available for readers to use. Since typing macros from printed sources
-is a tedious undertaking, authors of publicly available packages are
-urged to submit their macros to \CTAN{}. If a package is only available
-under restricted terms, authors are requested to make this fact clear
-when first submitting an article to the editor.
-
-The \texttt{ltugboat} class loads the package \path|mflogo.sty|
-\cite{Vieth:mflogo:1995} for typesetting the \MF\ logo. (If this package
-is not present by some mischance, \texttt{ltugboat} will emulate its
-important feature.)
-
-An additional canonically-recommended package is \path|url.sty|
-\cite{Arseneau:url:1996}, for typesetting filenames, email addresses,
-urls, etc.; it is being used throughout the present paper (not least in
-the bibliography), either on its own or via \texttt{hyperref}.
-
-Although not necessarily recommended in all cases, many additional
-packages are commonly used. To mention a few:
-\begin{description}
-\item[microtype] can help reduce overfull boxes and improve appearance;
-\item[hyperref] supports live and internal hyperlinks, outlines, and
-many other features.
-\end{description}
-
-\section{Typesetting urls}
+\subsection{Typesetting urls}
 \label{sec:urls}
 
-As mentioned above, please load either \texttt{url} or (preferably)
-\texttt{hyperref} so that reasonable line breaking of urls can happen.
+In short:
 
-Furthermore, for the printed (visible) \TUB\ page, nowadays we typically
-prefer to omit a leading \texttt{http://} or \texttt{https://}. But for
-the link to actually work in the output \PDF\ or \HTML, the protocol is
-required (or it appears to be a local filesystem path). Therefore the
-\texttt{ltugboat} class provides (as of version 2.28, released
-January~2023) the command \cs{tburl} for this. Related commands
-\cs{tbsurl} for \texttt{https} and \cs{tbhurl} for \texttt{http} were
-defined in version~2.23 (March~2020).\footnote{All these commands are
-wrappers around \cs{hyper@linkurl}, and are due to Ulrike Fischer.
-\url{https://github.com/latex3/hyperref/issues/125}\raggedright}
+\begin{enumerate}
+\item Please load either the \texttt{url} or (preferably) the
+\texttt{hyperref} package so that reasonable line breaking of urls can
+happen.
+
+\item Add \verb|\def\url{\tburl}| to your preamble and use \cs{url} in your
+document as usual. (It seems too intrusive for the \TUB\ classes to
+redefine something as fragile and widespread as \cs{url}.)
+\end{enumerate}
+The rest of this section is more details about the above.
+
+The main reason for preferring the above is that for the printed
+(visible) \TUB\ page, nowadays we typically prefer to omit a leading
+\texttt{https://}. But for the link to actually work in the output \PDF\
+or \HTML, the protocol is required (else the \PDF\ reader thinks it is
+a local filesystem path). Therefore the \texttt{ltugboat} class provides
+(as of 2023) the command \cs{tburl} for this.\footnote{This and related
+commands are wrappers around \cs{hyper@linkurl}.
+Thanks to Ulrike Fischer for doing the real work:
+\tburl{https://github.com/latex3/hyperref/issues/125}\raggedright}
 
 For example, the commands \verb|\tburl{tug.org}| and
 \verb|\tburl{https://tug.org}| both typeset the text `\texttt{tug.org}'
 (with the usual url line breaks possible) as a link to
 \url{https://tug.org}.
 
-Similarly, \verb|\tburl{http://example.org}| typesets the text
-`\texttt{example.org}' as a link to \url{http://example.org}, for the
-(unusual nowadays) case when \url{http} is required.
+Since so few web sites do not support https,
+\verb|\tburl{http://example.org}| typesets the full url as text
+`\texttt{http://example.org}' as a link to itself.  If it's desirable to
+elide the http://, the variant \cs{tbhurl} can be used.
 
-As shown, the correct protocol can be explicitly specified, and will be
-stripped for display.
+Thus, as shown, the correct protocol can be explicitly specified, and
+will be stripped for display. Just use \cs{tburl}.
 
-\cs{tburl} and related add the protocol and make live links if
-\texttt{hyperref} is loaded. Without \texttt{hyperref}, they are merely
-synonyms for \cs{url}. This is ok, and we still request that the
-protocol not be included; if live links are not being produced in the
-output, the printed url without the protocol suffices. (When a user
-copies/pastes url text into a browser, it will normally work.)
+In short, \cs{tburl} and related make live links and omit the protocol
+if \pkgname{hyperref} is loaded. We highly recommend this.
+
+Without \texttt{hyperref}, they are merely synonyms for \cs{url}. This
+is ok, and we still request that the protocol not be included; if live
+links are not being produced in the output, the printed url without the
+protocol suffices. (When a user copies/pastes url text into a browser,
+it will normally work.)
 
 In order to keep using \cs{url} in a document body, we suggest
 \verb|\def\url{\tburl}|.
-
-The shortcut macro \cs{tburlfootnote} makes a ragged-right footnote
-using \cs{tburl} command. We recognize that when writing url references,
-sometimes the best option is to put urls in footnotes. However, when
-it's sensible, we prefer to have them as either parentheticals in the
-main text or in bibliography entries, to ease page breaking.
 
 For \texttt{ftp}, \texttt{rsync}, and other protocols, it is best to
 always include them explicitly and use \cs{url}:\\
 \verb|\url{ftp://tug.org}|,\\ \verb|\url{rsync://tug.org}|, etc.
 
-\subsection{Url shortcuts}
+Finally, sometimes it is best to allow line breaks at hyphens in urls.
+We've found that this is not confusing in practice.  To enable this and
+\pkgname{hyperref} at the same time, it's necessary to load
+\pkgname{url} explicitly and enable the \tbcode{hyphens} option: 
+
+\begin{verbatim}
+\usepackage[hyphens]{url}
+\usepackage[hidelinks,pdfa]{hyperref}
+\end{verbatim}
+
+\subsubsection{Url footnotes}
+\label{sec:urlfootnotes}
+
+The shortcut macro \cs{tburlfootnote} makes a ragged-right footnote
+using the \cs{tburl} command. We recognize that when writing url
+references, sometimes the best option is to put urls in footnotes.
+
+However, when it's sensible, we prefer to have urls as either
+parentheticals in the main text or in bibliography entries, to ease page
+breaking and reading flow. It is ideal to minimize\slash avoid footnotes
+in general.
+
+\subsubsection{Url shortcuts}
 \label{sec:urlshortcuts}
 
-Another aspect of urls: the \tug\ web server supports a shortcut url
+A different aspect of urls: the \tug\ web server supports a shortcut url
 mechanism, \url{tug.org/l/}\meta{ident}, where \meta{ident} can be any
 tag, similar to \url{tinyurl.com} and similar sites. The idea is that
 \url{tug.org} shortcuts can be used in \TUB\ articles needing to link to
@@ -763,7 +790,7 @@ will disappear.
 The only way to create a \url{tug.org/l/} shortcut is by request, which
 we are happy to receive.
 
-\section{Bibliography}
+\section{Bibliographies}
 \label{sec:biblio}
 
 In short: our basic recommendation for handling bibliographies is to use
@@ -791,31 +818,31 @@ small but useful features:
 \begin{itemize}
 \item It is based on \pkgname{abbrvurl.bst} (see \url{ctan.org/pkg/urlbst}),
 
-\item and thus supports \textsf{url} and \textsf{doi} fields, among others.
-Please use \textsf{url} instead of putting urls in the
-\textsf{note} field, where possible. Also, please don't bother to
+\item and thus supports \tbcode{url} and \tbcode{doi} fields, among others.
+Please use \tbcode{url} instead of putting urls in the
+\tbcode{note} field, where possible. Also, please don't bother to
 include ``access date'' information for \TUB; we find that extraneous.
 
-\item The \textsf{url} field is ignored if either the \textsf{howpublished} or
-\textsf{doi} field is present. In practice we observe that people put
-the same information in all those fields, and we don't want to typeset
-redundant information.
+\item The \tbcode{url} field is ignored if either the \tbcode{doi} or
+\tbcode{howpublished} field is present. In practice we observe that
+people put the same information in all those fields, and we don't want
+to typeset redundant information.
 
-\item Does even more abbreviating than \textsf{abbrv}, such as
+\item Does even more abbreviating than \tbcode{abbrv}, such as
 printing only two author names (plus ``et~al.'')\ if there are more than
 four authors (thanks to Mico Loretan and Oren Patashnik).
 
-\item New field \textsf{bookauthor} for the \textsf{@incollection} and
-\textsf{@inproceedings} allows for citing a part, written by author~X,
+\item New field \tbcode{bookauthor} for the \tbcode{@incollection} and
+\tbcode{@inproceedings} allows for citing a part, written by author~X,
 of a publication written by author~Y, and not just edited by~Y.
 
-\item For the \textsf{@misc} entry type, \textsf{editor} is accepted as
-well as \textsf{author}.
+\item For the \tbcode{@misc} entry type, \tbcode{editor} is accepted as
+well as \tbcode{author}.
 
-\item Defines entry types \textsf{@online} and \textsf{@software} as
-aliases for \textsf{@misc}.
+\item Defines entry types \tbcode{@online} and \tbcode{@software} as
+aliases for \tbcode{@misc}.
 
-\item Defines an \textsf{@ctan} entry type to reference packages on
+\item Defines an \tbcode{@ctan} entry type to reference packages on
 \CTAN, following the fields output by the \pkgname{ctanbib} script (in
 the package of the same name, \url{ctan.org/pkg/ctanbib}).
 
@@ -823,14 +850,14 @@ the package of the same name, \url{ctan.org/pkg/ctanbib}).
 fields intended to be used by the editors:
 \begin{description}\raggedright
 \item[\sf journaltie] to output
-  a tie instead of space after the \textsf{journal} value,
-\item[\sf monthtie] for the same after \textsf{month},
+  a tie instead of space after the \tbcode{journal} value,
+\item[\sf monthtie] for the same after \tbcode{month},
 \item[\sf newpage] to force a page break after the current item,
-\item[\sf nowarning] to omit empty field warnings, \textsf{prebibitem} to
+\item[\sf nowarning] to omit empty field warnings, \tbcode{prebibitem} to
   output material before \cs{bibitem} (e.g., a section heading),
 \item[\sf pagesnodashify] to avoid autoconverting \texttt{-} to
   \texttt{--} in the \texttt{pages} field,
-\item[\sf urlnewline] to force a line break before the \textsf{url} value.
+\item[\sf urlnewline] to force a line break before the \tbcode{url} value.
 \end{description}
 As editors, we've found that these presentation tweaks can be desirable
 for the final typeset output. Authors need not worry about them.
@@ -839,14 +866,14 @@ for the final typeset output. Authors need not worry about them.
 
 By the way, we recommending using commas to terminate all fields in
 \texttt{.bib} files, including the last one in an entry. That makes for
-one less thing to worry about when changing fields around in the source.
+one less thing to worry about when changing fields in the source.
 
 Bibliographies can be difficult to typeset at the best of times.
 \LaTeX{} sets \cs{sloppy} when typesetting the bibliography, but this
 typically leads to unpleasant output with \TUB's narrow columns. The
 author can specify typesetting parameters using the command
 \cs{SetBibJustification}. The classes remain \cs{sloppy} by default, but
-the author may (for example) say:
+this can be changed with (for example),
 \begin{verbatim}
   \SetBibJustification{\raggedright}
 \end{verbatim}
@@ -860,11 +887,8 @@ as reference `[2]' and \texttt{bar} as `[1]', use \verb|\cite{bar,foo}|.
 One more note on references: for \TUB\ issues, please use the format
 \textsl{volno\,:\,issno}, e.g., ``\TUB\ 32:1'' for volume~32, number~1.
 
-By the way, if anyone would like to volunteer to implement a \BibLaTeX\
-style with the same features and output as our \BibTeX\ style, we would
-be grateful.
-
-\subsection{Non-recommended bibliography facilities}
+\subsection*{Non-recommended bibliography facilities}
+\label{sec:biblio-harvard}
 
 The preceding gives the bibliography recommendations for current \TUB\
 articles. If, for whatever reason, you do not wish to follow those
@@ -893,7 +917,7 @@ date.
   \begin{center}
     \leavevmode
     \begin{tabular}{@{}ll@{}}% @{ $\rightarrow$ } between columns removed
-      \small\textsf{\textsl{Macro}} &\small\textsf{\textsl{Output}}\\
+      \small Macro & Output\\
       \midrule
       \verb|\cite{key}|       & (Tom, Dick, and Harry, 1990)\\
       \verb|\citeA{key}|      & (Tom, Dick, and Harry)\\
@@ -926,8 +950,7 @@ use it, that is ok, but we may still change it to using the default
 \LaTeX\ and \BibTeX\ facilities in processing for publication if the
 output from \BibLaTeX\ is problematic, as we have often seen it to be.
 
-
-
+%\appendix
 \section{Equivalences between the `plain' and \LaTeX{} \TUB\ packages}
 \label{sec:equiv}
 
@@ -940,7 +963,7 @@ differ significantly.
   \begin{center}
     \leavevmode
     \begin{tabular}{@{}ll@{}}
-      \small\textsf{Plain macro} & \small\textsf{\LaTeX{} macro} \\
+      \small Plain macro & \small \LaTeX{} macro \\
       \midrule
       \cs{head} & \cs{section} \\
       \cs{subhead} & \cs{subsection} \\
@@ -966,9 +989,8 @@ elaborate facilities, the user is referred to the \pkgname{verbatim},
 \pkgname{listings}, and \pkgname{fancyvrb} packages (see
 section~\ref{sec:verbatim}).
 
-Of course, the syntax of commands given to the \LaTeX{} classes is
-different (as discussed in section~\ref{sec:syntax}); arguments are
-(almost always) enclosed in braces instead of the various
+The syntax of commands given to the \LaTeX{} classes is different;
+arguments are (almost always) enclosed in braces instead of the various
 forms provided by the `plain' macros.
 
 \SetBibJustification{\raggedright}
