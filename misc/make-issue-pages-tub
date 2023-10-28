@@ -98,7 +98,20 @@ filesuffix=_TUGboat$pubdate
 # split pdf into individual pages.
 echo "$0: splitting `pdfpagecount $infile` pages..."
 
-$gs -o "%03d$filesuffix.pdf" -sDEVICE=pdfwrite $infile
+# we redirect stderr from ghostscript, and only display it if exit status
+# is bad, because as of around gs 10.0, it started outputting
+# 100+ useless (to us) messages like:
+# GPL Ghostscript 10.02.0: ERROR: A pdfmark destination page 121 points beyond the last page 1.	
+#
+gserr=/tmp/gsspliterr
+$gs -o "%03d$filesuffix.pdf" -sDEVICE=pdfwrite $infile 2>$gserr
+status=$?
+if test $status -ne 0; then
+  echo "$0: $gs split failed (status $status)." >&2
+  cat $gserr >&2
+  exit $status
+fi
+
 #ls -l
 
 # make sure we created the expected number of files

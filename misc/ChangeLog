@@ -1,3 +1,9 @@
+2023-10-28  Karl Berry  <karl@freefriends.org>
+
+	* make-issue-pages-tub: redirect gs stderr, due to painful
+	plethora of messages:
+GPL Ghostscript 10.02.0: ERROR: A pdfmark destination page 121 points beyond the last page 1.	
+
 2023-09-06  Karl Berry  <karl@freefriends.org>
 
 	* lmtx,
