@@ -1,14 +1,23 @@
 $Id$
 This file records noteworthy changes.  This file is public domain.
 
+-----------------
+2.31 (2023-10-28):
 ltugboat.cls:
+- input our hyphenation exceptions (ushyphex.tex) if available.
 - \dblfloatpagefraction and similar parameters set so figures don't go
-to a float page so soon.
+  to a float page so soon, and reduce \abovecaptionskip.
 - new abbreviation \LMTX.
+- new abbreviations \pdfTeX and \pdfLaTeX, with italic correction after the f.
+- new generic commands \tbcode and \tbcodebreak for package names, class
+  names, file names, environment variables, etc. (Just outputs in typewriter.)
 
 tugboat.bst:
 - in month field, recognize numbers 01..12, with or without leading zero.
 - for @misc, output organization field if present.
+- support "eprints" (https://arxiv.org/abs/).
+
+Substantial rearrangement and updating of documentation.
 
 -----------------
 2.30 (2023-07-03):

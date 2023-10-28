@@ -1,3 +1,8 @@
+2023-10-28  Karl Berry  <karl@freefriends.org>
+
+	* version 2.31 (2023-07-03) uploaded to CTAN.
+	* NEWS: update.
+
 2023-10-27  Karl Berry  <karl@freefriends.org>
 
 	* ltubguid.ltx: simplify url suggestion to \tburl.
@@ -38,7 +43,7 @@
 
 	* tugboat.dtx [! \tubomithyphenations]:
 	\InputIfFileExists{ushyphex.tex}.
-	(\hyphenation): simply/correct list per ushyphex.tex.
+	(\hyphenation): simplify/correct list per ushyphex.tex.
 
 2023-08-27  Karl Berry  <karl@freefriends.org>
 
@@ -105,7 +110,7 @@
 2023-07-26  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\env): it just seems wrong to define this,
-	and authors have never used it. (Just \tubbraced is better.)
+	and authors have never used it. (\tubbraced is better.)
 	* ltubguid.ltx: remove it.
 
 	* tugboat.bst (addeprints): set to #1.
@@ -116,7 +121,7 @@
 
 	* ltubguid.ltx (verbatim): show conditional to handle inline code,
 	as in tb137hefferon-asymptote.
-	(acronyms): MacOSX -> macOs.
+	(acronyms): MacOSX -> macOS.
 
 2023-07-23  Karl Berry  <karl@freefriends.org>
 
