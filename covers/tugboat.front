@@ -266,6 +266,7 @@
     \vskip 10pt
     \subsub
 %	\llap{(ISSN 0896-3207)\quad\kern\digitwidth\quad}%
+        \pressimage
 	{\let\dateslash=\TUBheaddateslash
 	 \twelverm\baselineskip=14pt Volume #1, Number #2%
         \hskip.5em\raise.25ex\hbox{\ninebf/}\hskip.4em #3}<%
@@ -274,6 +275,13 @@
         \global\procissuetrue
     \fi
     \vskip 20pt }
+
+\def\pressimage{\ulap{\llap{%
+  \lower 8pt \hbox{%
+    \pdfximage width 6pc {press2-crop.pdf}\pdfrefximage\pdflastximage
+  }%
+  \quad
+}}}
 
 %% think about adding issn later, using postscript, vertical at the
 %% bottom right corner of cover 4, just off the spine
