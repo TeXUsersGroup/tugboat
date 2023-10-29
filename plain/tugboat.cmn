@@ -29,8 +29,8 @@
 \fi
 \next
 
-\def\fileversion{v1.28}
-\def\filedate{2023-09-20}
+\def\fileversion{v1.29}
+\def\filedate{2023-10-28}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -1024,7 +1024,7 @@ that may not be obvious.  For full definitions, see real code above.
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
-                      in \AllTeX, kern around ).
+1.29      28 Oct 23   in \AllTeX, kern around ).
                       define \pdfTeX and \pdfLaTeX with italic corrections.
                       define \LMTX.
                       define \tbcode and \tbcodebreak.

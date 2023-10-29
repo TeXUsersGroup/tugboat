@@ -6,7 +6,7 @@ all: tubguide.pdf
 tubguide.pdf: tubguide.tex tugboat.sty tugboat.cmn
 	pdftex --file-line-error '\nonstopmode\input $<'
 
-tub_rel = /usr/local/texlive-rel/texmf-dist/tex/plain/tugboat-plain
+tub_rel = /usr/local/texlive/dev/texmf-dist/tex/plain/tugboat-plain
 diff:
 	-diff -u0 $(tub_rel)/tugboat.cmn tugboat.cmn
 	-diff -u0 $(tub_rel)/tugboat.sty tugboat.sty
