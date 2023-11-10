@@ -26,7 +26,7 @@ time = time -f "time:%e"
 default check: one #all-diff
 
 # These issue values, and most of the targets below, come into play with
-# publishing a TUGboat issue; see the README.karl file on tug.org.
+# publishing a TUGboat issue; see the README-tug-procedures file on tug.org.
 testiss = 137
 lastiss = 137
 crossref_iss = 136

@@ -56,7 +56,7 @@ cover3a.pdf: cover3.pdf cover3-crop.pdf
 # that we create per issue.
 # 
 # See tb138prod.pdf for a published note about this.
-$(tb)complete.pdf complete compl c: $(tb)cmplete.lua \
+$(tb)complete.pdf complete compl co c: $(tb)cmplete.lua \
                                     toclinks.pdf ../CADMUS/issue.pdf
 	lmtxtub --extra=copy --template $<
 	mv context-extra.pdf $(tb)complete.pdf
