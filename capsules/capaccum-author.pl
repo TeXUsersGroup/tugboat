@@ -123,10 +123,13 @@ sub print_all_by_author {
   my ($fh,$authors,$anchors,$author_html) = @_;
   # the mapping should be unique; we have some checks below in case it's not.
   my %html_to_sortkey = reverse %$author_html;
+  #&debug_hash ("paa author_html");
+  #&debug_hash ("paa html_to_sortkey");
 
   for my $a_sort (sort { lc($a) cmp lc($b) } keys %$authors) {
     my $a_anchor = $anchors->{$a_sort};
     my $a_html = $author_html->{$a_sort};
+    #warn "a_anchor=$a_anchor, a_html=$a_html\n";
     
     print $fh <<START_TITLE_GROUP;
 
@@ -137,7 +140,7 @@ sub print_all_by_author {
 START_TITLE_GROUP
 
     for my $cap (sort sort_by_issue_page @{$authors->{$a_sort}}) {
-      #print &info_hash("a_sort=$a_sort, cap", $cap), "\n";
+      #&debug_hash("a_sort=$a_sort; cap", $cap);
       my $title = $cap->{"title_html"};
       print $fh "<li>";
       print $fh &lists_url_html ($cap, $title);
@@ -147,17 +150,19 @@ START_TITLE_GROUP
       my @add_auth = ();
       my @all_auth = @{$cap->{"author_html"}}; # local copy
       shift @all_auth; # discard single-printable-html-string
-      for my $add_html (sort @all_auth) { # additional author?
-        #print " considering $add_html for $title\n";
+      for my $add_html (sort @all_auth) { # additional author(s)?
+        #warn " considering additional author $add_html for $title\n";
         next if $add_html eq $a_html; # skip the author we are doing.
-        #print " adding $add_html\n";
+        #warn " adding $add_html\n";
         my $add_sortkey = $html_to_sortkey{$add_html};
         if (! $add_sortkey) {
-          # happens when there are differing versions of the name.
-          warn "no sortkey for additional author $add_html (title $title)";
+          # happens when there are differing versions of the name,
+          # e.g., wrong text in lists-unifications.
+          warn "no sortkey for additional author $add_html "
+               . "(title $title, author $a_html)";
           next;
         }
-        #print " got sortkey $add_sortkey for $add_html\n";
+        #warn " got sortkey $add_sortkey for $add_html\n";
         if ($author_html->{$add_sortkey} ne $add_html) {
           # if multiple authors resolved to the same sort key,
           # which should not happen.
