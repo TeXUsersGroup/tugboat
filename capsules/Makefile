@@ -8,7 +8,7 @@ options = $(debug) #--stdout
 more_options =
   #
   # local validation before installation:
-#more_options = --webroot=/home/tubprod/44-2/webdir
+#more_options = --webroot=/home/tubprod/44-3/webdir
   #
   # disable url validation during doi setup:
 #more_options = --webroot=/
@@ -27,9 +27,9 @@ default check: one #all-diff
 
 # These issue values, and most of the targets below, come into play with
 # publishing a TUGboat issue; see the README-tug-procedures file on tug.org.
-testiss = 137
-lastiss = 137
-crossref_iss = 136
+testiss = 138
+lastiss = 138
+crossref_iss = 138
 
 # use different temp dir on different machines.
 mydir := $(shell ls ~karl/public_html 2>/dev/null)
@@ -42,7 +42,7 @@ endif
 one:
 	@perl -cw captub && date
 	$(captub) tb$(testiss)capsule.txt >$(outone)
-	unparsed=`egrep '[{}~$$\]|href=""|Dash' $(outone) \
+	unparsed=`egrep '[{}~$$\]|href=""|Dash\>' $(outone) \
 	          | egrep -v '<tt>\\\\|/~(hammond|ross)'`; \
 	  test -z "$$unparsed" || { echo "$$unparsed" >&2; exit 1; }; \
 	test -z "$(profopt)" || $(profcmd)
