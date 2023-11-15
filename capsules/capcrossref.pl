@@ -58,10 +58,16 @@ sub crossref_write_files {
       # TUG&nbsp;Elections&nbsp;Committee (or 0xa0 instead of nbsp).
       # That's ok, we can just check for a comma (between Last and First).
       # 
-      # But, painful exception: when there is a Jr part, we have to pass
-      # in the original "von Last, Jr., First", because that is what
-      # gets recognized in bibtexperllibs (BibTeX/Parser/Author.pm).
-      # Fortunately, we have only a few names with Jr parts.
+      # If the Last part has two words (Vit Stary Novotny [actually
+      # V&#xed;t Star&#xfd;&#xa0;Novotn&#xfd;, tb138), we need to pass
+      # in the original "von Last, Jr., First", since otherwise the
+      # Stary would be taken as a middle name, i.e., part of First by
+      # bibtexperllibs (BibTeX/Parser/Author.pm). We can recognize this
+      # by the a0 in last.
+      # 
+      # A similarly painful exception: when there is a Jr part, we also
+      # have to pass in the original. Fortunately, we have only a few
+      # names with Jr parts.
       # 
       # - sometimes "Jr.": Harry L. Baldwin,\CONNECT{}Jr. and
       #   Frank G. Bennett,\CONNECT{}Jr. As seen, we precede the Jr. with
@@ -75,9 +81,9 @@ sub crossref_write_files {
       # Except when there is a Jr part, there should be only one
       # occurrence of ", " in the author name, the one between Last and
       # First. So we can split at that to determine Last and First.
-      # Then, if Last ends with a Jr part (we just check for the known
-      # strings), handle that separately. Painful, but it's what we have
-      # to do.
+      # Then, if Last ends with a Jr part (we explicitly check for the
+      # known strings, unfortunately), handle that separately. Painful,
+      # but it's what we have to do.
       # 
       # By the way, it's useful to be using this already-transformed
       # author list, since for rpi purposes we do want unifications, and
@@ -86,19 +92,19 @@ sub crossref_write_files {
       # 
       my ($last,$first) = split (/, /, $a, 2);
       my $name_for_rpi;
-      if ($last =~ /&(#xa0|nbsp);Jr\.$/) {         # Jr part: "Jr."
-        $name_for_rpi = $a; # the original 
-      } elsif ($last =~ /&(#xa0|nbsp);([IV]+)$/) { # Jr part: "III", etc.
+      if ($last =~ /&(#xa0|nbsp);([IV]+)$/) { # Jr part: "III", etc.
         my $jr = $2;
         $last =~ s/$&$//;              # remove it from Last part
         $name_for_rpi = "$last, $jr";  # re-insert it with comma
         $name_for_rpi .= ", $first" if $first;
+      } elsif ($last =~ /&(#xa0|nbsp);/) {  # two words in Last, including Jr.
+        $name_for_rpi = $a; # the original Last, First M.
       } else {
         # if no First part, don't include spurious leading space.
         $name_for_rpi = $first ? "$first $last" : $last;
       }
       $name_for_rpi =~ s/&(#xa0|nbsp);/ /g; # just spaces
-      #warn "name4rpi = $name_for_rpi (last=$last, first=$first)\n";
+      #warn "name4rpi=$name_for_rpi (last=$last, first=", $first || "", ")\n";
       push (@rpi_authors, $name_for_rpi);
     }
     #

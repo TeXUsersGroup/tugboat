@@ -1,3 +1,13 @@
+2023-11-15  Karl Berry  <karl@freefriends.org>
+
+	* capcrossref.pl (crossref_write_files): give original Last, First
+	to ltx2crossrefxml if Last contains any a0 (or nbsp), to handle
+	last names containing two words (Stary Novotny).
+
+	* crossref/README-process.txt: tweak initial setup.
+	* crossref/ltx2crossrefxml-tugboat.cfg (GuIT): handle,
+	for tb138somma-orgmode.
+
 2023-11-14  Karl Berry  <karl@tug.org>
 
 	* capaccum-author.pl (print_all_by_author): more debugging lines,

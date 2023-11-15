@@ -38,17 +38,14 @@ directory (~tubprod/VV-N), one or both of these files, as needed:
 These {abs,bbl}.tex files stay in the TUGboat per-article source directories.
 
 There has to be at least one abs.tex and one bbl.tex or the program will
-bail out early, so easiest to choose an article with a bib to do first.
-(All real articles should have an abstract.)
+bail out early, so easiest to choose an article with both to do first.
 
-In general, translate as necessary to standard TUGboat and LaTeX formatting.
-See tips below.
-
-Best to do this one article at a time, making sure each comes out ok.
-Run:
-  make cro-scratch  # in capsules directory
 Be sure crossref_iss in capsules/Makefile is set to the current/desired issue,
 per README-tug-procedures.
+
+Best to do this one article at a time, making sure each comes out ok.
+After creating the first abs/bbl.tex, run:
+  make cro-scratch  # in capsules directory
 
 Then, the landing files output will be in
   file://.../tubprod/svn/capsules/crossref/dir1.lndout/tb*.html
@@ -76,8 +73,8 @@ that should be supported, try to fix the translations:
 
 - For simplicity in the Perl code, most of the conversions are
   line-oriented. So if the argument to a command in abs.tex or bbl.tex
-  starts on one line and ends on another, it probably won't be
-  recognized. Edit the .tex file to put it on one line.
+  starts on one line and ends on another, it won't be recognized.
+  Edit the .tex file to put it on one line.
 
 - For the bibliography, no font changes or other html-level markup is
   used.  It is plain (Unicode) text.  The only special cases are making
@@ -118,12 +115,12 @@ the transformations are ok. This makes the "next doi" links be local
   make crw
 Then can check the relevant files at:
   file://.../tubprod/svn/capsules/crossref/dir1.lndout/...
-And/or you can go through the directory listing at any time.
+And/or you can go through that directory listing.
 
 cr-landing-bbl-abs, called in the above process, converts abstracts to
 HTML (ltx2unitxt --html), but copies bbls as plain text from
 previously-created issue.xml (created by ltx2crossrefxml via
-crossref/Makefile, target issue). As mentioned, in the bbls, the only
+crossref/Makefile, target issue). As mentioned above, in the bbls, the only
 formatting attempted for the landing .html files is to make urls
 (recognized from plain text) live; italics, etc., do not happen.
 
