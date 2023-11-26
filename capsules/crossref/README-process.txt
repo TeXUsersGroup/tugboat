@@ -234,14 +234,15 @@ say "publicly available now". This is irritating, but it seems useful
 enough to state explicitly whether or not an article is public to put up
 with it. To do this:
 
-previss=44-1
-prevnnn=136
+previss=44-2
+prevnnn=137
 
 - ensure that tb${prevnnn}capsule.txt is up to date, without /members/ urls.
+cd ../capsules
 
 - clean existing files, assuming the current issue NNN's files have been
   saved in dir3.uploaded as above:
-rm crossref/dir*/tb${prevnnn}*.*  # should be nothing there
+rm -i crossref/dir*/tb${prevnnn}*.*  # should be nothing there
 
 - in capsules/Makefile, change crossref_iss to the desired number PREVN.
 
@@ -250,15 +251,16 @@ rm crossref/dir*/tb${prevnnn}*.*  # should be nothing there
 make cro-scratch
 
 - check diffs (no more "available to TUG members"):
-make diff-land  # need to fix /tb directory name first
+make previss=$previss diff-land
 
-- assuming ok, make list of changed files, say in /tmp/ch, then scp:
+- assuming ok, the above also makes a list of changed files in
+  /tmp/ch-land. Check that, and:
 cd crossref/dir1.lndout
-scp -p `cat /tmp/ch` $host:/home/httpd/html/TUGboat/tb$previss/
+scp -p `cat /tmp/ch-land` $host:/home/httpd/html/TUGboat/tb$previss/
 
 - update the archived changed landing files in dir1.lndout/archive.tbPREVN:
 # still in dir1.lndout:
-\mv `cat /tmp/ch` archive.tb${prevnnn}/
+\mv `cat /tmp/ch-land` archive.tb${prevnnn}/
 
 - let's not bother to update the archives in the other dir*,
   since the landing files are all that's actually being changed live.
