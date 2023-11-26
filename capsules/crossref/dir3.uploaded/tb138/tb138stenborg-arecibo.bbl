@@ -1,0 +1,108 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{10}
+
+\bibitem{Atri:SP27-3-165}
+D.~Atri, J.~DeMarines, J.~Haqq-Misra.
+\newblock A protocol for messaging to extraterrestrial intelligence.
+\newblock \emph{Space~Policy}, 27(3):165--169, 2011.
+
+\bibitem{Borja:2023:IAD}
+I.~Borja.
+\newblock An introduction to automata design with {TikZ}'s automata library.
+\newblock \emph{TUGboat} 44(1):102--107, 2023.
+\newblock \url{https://doi.org/10.47397/tb/44-1/tb136prado-automata}
+
+\bibitem{Demidov:2020:InBookDNA}
+V.V.~Demidov.
+\newblock \emph{DNA Beyond Genes: From Data Storage and Computing to Nanobots,
+  Nanomedicine, and Nanoelectronics}, ch. Hiding and Storing Messages and Data
+  in DNA, pp.~7--23.
+\newblock Springer, Cham, 2020.
+
+\bibitem{Grätzer:2016:BookMMiL}
+G.~Grätzer.
+\newblock \emph{More Math Into {\LaTeX}}.
+\newblock Springer, Cham, 5th ed., 2016.
+
+\bibitem{Koehler:PhD2004}
+R.B.~Koehler.
+\newblock \emph{Raster-based Analysis and Visualization of Hydrologic
+  Time-Series}.
+\newblock Ph.D. thesis, U. of Arizona, 2004.
+
+\bibitem{Kottwitz:2023:BookLGT}
+S.~Kottwitz.
+\newblock \emph{{\LaTeX} graphics with TikZ}.
+\newblock Packt, Birmingham, 2023.
+
+\bibitem{Maggi:2018:DNTa}
+C.~Maggi.
+\newblock The {DuckBoat}: The {Morse} code of {\TikZ}.
+\newblock \emph{TUGboat} 39(1):21--26, 2018.
+\newblock \url{https://tug.org/TUGboat/tb39-1/tb121duck-tikz.pdf}
+
+\bibitem{Maggi:2020:DBP}
+C.~Maggi.
+\newblock The {DuckBoat}: You do not need to be {Neo} to cope with a {\TikZ}
+  matrix.
+\newblock \emph{TUGboat} 41(1):20--25, 2020.
+\newblock \url{https://tug.org/TUGboat/tb41-1/tb127duck-matrix.pdf}
+
+\bibitem{Makukov:2018:IJA}
+M.A.~Makukov, V.I.~shCherbak.
+\newblock {SETI} \textit{in~vivo}: testing the we-are-them hypothesis.
+\newblock \emph{Int.~J.~Astrobiol.}, 17(2):127--146, 2018.
+
+\bibitem{Mertz:TB28-1-91}
+A.~Mertz, W.~Slough.
+\newblock Graphics with \acro{PGF} and {Ti{\it k}Z}.
+\newblock \emph{TUGboat} 28(1):91--99, 2007.
+\newblock \newline \url{https://tug.org/TUGboat/tb28-1/tb88mertz.pdf}
+
+\bibitem{Mertz:TB30-2-214}
+A.~Mertz, W.~Slough.
+\newblock A {Ti{\it k}Z} tutorial: {Generating} graphics in the spirit of
+  {\TeX}.
+\newblock \emph{TUGboat}~30(2):214--226, 2009.
+\newblock \newline \url{https://tug.org/TUGboat/tb30-2/tb95mertz.pdf}
+
+\bibitem{pixelart}
+L.~Paternault.
+\newblock \emph{The pixelart package}.
+\newblock \newline \url{https://ctan.org/pkg/pixelart}
+
+\bibitem{pixelarttikz}
+C.~Pierquet.
+\newblock \emph{The PixelArtTikz package}.
+\newblock \newline \url{https://ctan.org/pkg/pixelarttikz}
+
+\bibitem{pxpic}
+J.P.~Spratte.
+\newblock \emph{The pxpic package}.
+\newblock \newline \url{https://ctan.org/pkg/pxpic}
+
+\bibitem{Icarus26-4-462}
+{Staff at the National Astronomy}, {Ionosphere Center}.
+\newblock {The Arecibo message of November, 1974}.
+\newblock \emph{Icarus}, 26(4):462--466, Dec. 1975.
+
+\bibitem{vanDongen:2012:BookLF}
+M.R.C.~van Dongen.
+\newblock \emph{{\LaTeX} and Friends}.
+\newblock Springer, Berlin, 2012.
+
+\bibitem{Walczak:TB29-1-176}
+Z.~Walczak.
+\newblock Graphics in {\LaTeX} using {\TikZ}.
+\newblock \emph{TUGboat} 29(1):176--179, 2008.
+\newblock \newline \url{https://tug.org/TUGboat/tb29-1/tb91walczak.pdf}
+
+\bibitem{Wolcott:TB33-1-102}
+K.~Wolcott.
+\newblock Three-dimensional graphics with \acro{PGF}/{\TikZ}.
+\newblock \emph{TUGboat} 33(1):102--113, 2012.
+\newblock \newline \url{https://tug.org/TUGboat/tb33-1/tb103wolcott.pdf}
+
+\end{thebibliography}

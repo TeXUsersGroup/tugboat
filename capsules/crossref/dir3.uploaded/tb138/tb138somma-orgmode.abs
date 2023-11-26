@@ -1,0 +1,9 @@
+In writing academic or technical articles, you can reduce complexity by
+using markup or configurations, dropping the \LaTeX{} \emph{markup language},
+and adopting ORG-mode\ in Emacs while retaining \LaTeX's high
+typographical quality. This article shows how ORG\ markup exported to
+\LaTeX{} works. Also, it explains the attributes of the most common
+elements of academic papers, such as links, tables, notes, figures, and
+bibliographic references. Finally, in the appendix, as a practical
+project, the author's choices for delivering the original article
+following the typographical rules of ArsTeXnica{} are documented.

@@ -1,0 +1,155 @@
+\providecommand{\envname}{\textsf} \providecommand{\clsname}{\textsf}
+  \providecommand{\cmdname}[1]{\texttt{\char`\\#1}}
+\begin{thebibliography}{10}
+
+\bibitem{babenhauserheide2014tutorial}
+A.~Babenhauserheide.
+\newblock Tutorial: Writing papers for {ACPD} using {E}macs {O}rg-mode.
+\newblock
+  \url{https://www.draketo.de/files/howto-write-for-acpd-with-emacs.pdf}, 2014.
+
+\bibitem{bar2021reproducible}
+H.~Bar, H.~Wang.
+\newblock Reproducible {S}cience with {\LaTeX}.
+\newblock \emph{Journal of Data Science}, 19(1):111--125, 2021.
+\newblock \url{https://arxiv.org/abs/2010.01482},
+  \url{https://doi.org/10.6339/21-JDS998}
+
+\bibitem{borkowski2018texing}
+M.~Borkowski.
+\newblock {\TeX}ing in {E}macs.
+\newblock \emph{TUGboat} 39(1), 2018.
+\newblock \url{https://tug.org/TUGboat/tb39-1/tb121borkowski-emacs.pdf}
+
+\bibitem{fruchart2022jupyter}
+M.~Fruchart, B.~Guinhouya, et~al.
+\newblock Jupyter {N}otebooks for introducing data science to novice users.
+\newblock \emph{Studies in Health Technology and Informatics}, 294:823--824,
+  2022.
+\newblock \url{https://doi.org/10.3233/shti220598}
+
+\bibitem{giordano2013guida}
+M.~Giordano, O.~Iovino, M.~Leccardi.
+\newblock \emph{Guida pratica all’uso di GNU Emacs e AUCTEX}.
+\newblock \GuIT, 2013.
+\newblock \url{https://github.com/GuITeX/guidaemacsauctex}
+
+\bibitem{glickstein1997writing}
+B.~Glickstein.
+\newblock \emph{Writing GNU Emacs Extensions: Editor Customizations and
+  Creations with Lisp}.
+\newblock O'Reilly Media, Inc., 1997.
+
+\bibitem{gruber2004markdown}
+J.~Gruber.
+\newblock Markdown: Syntax, 2004.
+\newblock \url{https://daringfireball.net/projects/markdown/syntax}
+
+\bibitem{guit2022instructions}
+\GuIT.
+\newblock Istruzioni per gli autori, 2022.
+\newblock \newline \url{https://guitex.org/home/en/for-authors}
+
+\bibitem{knuth1984literate}
+D.E.~Knuth.
+\newblock Literate programming.
+\newblock \emph{The~Computer~Journal}, 27(2):97--111, 1984.
+\newblock \newline \url{https://doi.org/10.1093/comjnl/27.2.97}
+
+\bibitem{knuth1993cweb}
+D.E.~Knuth, S.~Levy.
+\newblock \emph{The CWEB System of Structured Documentation}.
+\newblock Addison-Wesley Professional, 1993.
+\newblock \url{https://www-cs-faculty.stanford.edu/~knuth/cweb.html}
+
+\bibitem{leha2011emacs}
+A.~Leha, T.~Bei{\ss}barth.
+\newblock The {E}macs {O}rg-mode: Reproducible research and beyond.
+\newblock In~\emph{The R User Conference, useR! 2011 August 16-18 2011
+  University of Warwick, Coventry, UK}, p.~28, 2011.
+\newblock
+  \url{https://www.r-project.org/conferences/useR-2011/abstracts/010411-lehaandreas.pdf}
+
+\bibitem{RFC7764}
+S.~Leonard.
+\newblock Guidance on {M}arkdown: Design philosophies, stability strategies,
+  and select registrations.
+\newblock RFC 7764, IETF, Mar 2016.
+\newblock \url{https://www.rfc-editor.org/rfc/rfc7764.txt}
+
+\bibitem{lewis1997gnu}
+B.~Lewis, D.~LaLiberte, et~al.
+\newblock \emph{GNU Emacs Lisp Reference Manual}.
+\newblock Free Software Foundation, 1997.
+\newblock \url{https://gnu.org/s/emacs/manual/html_node/elisp}
+
+\bibitem{mailund2014introducing}
+T.~Mailund.
+\newblock \emph{Introducing Markdown and Pandoc: Using Markup Language and
+  Document Converter}.
+\newblock Apress, 2014.
+\newblock \newline \url{https://doi.org/10.1007/978-1-4842-5149-2}
+
+\bibitem{monnier2020evolution}
+S.~Monnier, M.~Sperber.
+\newblock Evolution of {Emacs Lisp}.
+\newblock \emph{Proceedings of the ACM on Programming Languages},
+  4(HOPL):1--55, 2020.
+\newblock \url{https://doi.org/10.1145/3386324}
+
+\bibitem{orgmodetool2022}
+{\gobble{Org}{Org-mode contributors}}.
+\newblock Org mode tools, 2022.
+\newblock \url{https://orgmode.org/worg/org-tools/}
+
+\bibitem{schoch2014right}
+C.~Sch{\"o}ch.
+\newblock The right tool for the job: Five collaborative writing tools for
+  academics, 4~April 2014.
+\newblock Impact of Social Sciences Blog.
+\newblock
+  \url{https://blogs.lse.ac.uk/impactofsocialsciences/2014/04/04/five-collaborative-writing-tools-for-academics/}
+
+\bibitem{schulte2011active}
+E.~Schulte, D.~Davison.
+\newblock Active documents with {O}rg-mode.
+\newblock \emph{Computing in Science \& Engineering}, 13(3):66--73, 2011.
+\newblock \newline \url{https://doi.org/10.1109/MCSE.2011.41}
+
+\bibitem{at:2009-8-092-somma}
+E.~Somma.
+\newblock Il respawn di {Infomedia} ({\LaTeX}-based).
+\newblock \emph{Ars\TeX nica}, (8):92--101, Ottobre 2009.
+\newblock \url{https://guitex.org/home/numero-8}
+
+\bibitem{Stallman1981EMACSTE}
+R.M.~Stallman.
+\newblock Emacs: The extensible, customizable self-documenting display editor.
+\newblock In~\emph{SIGPLAN SIGOA Symposium on Text Manipulation}, 1981.
+\newblock \newline \url{https://doi.org/10.1145/872730.806466}
+
+\bibitem{stanisic2015effective}
+L.~Stanisic, A.~Legrand, V.~Danjean.
+\newblock An effective {G}it and {O}rg-mode based workflow for reproducible
+  research.
+\newblock \emph{ACM SIGOPS Operating Systems Review}, 49(1):61--70, 2015.
+
+\bibitem{voegler2014markdown}
+J.~Voegler, J.~Bornschein, G.~Weber.
+\newblock Markdown{\dash}{A} simple syntax for transcription of accessible
+  study materials.
+\newblock In~\emph{Computers Helping People with Special Needs: 14th
+  International Conference, ICCHP 2014, Paris, France, July 9-11, 2014,
+  Proceedings, Part I}, pp.~545--548. Springer, 2014.
+\newblock \url{https://doi.org/10.1007/978-3-319-08596-8_85}
+
+\bibitem{white2022using}
+J.J.~White.
+\newblock Using markup languages for accessible scientific, technical, and
+  scholarly document creation.
+\newblock \emph{Journal of Science Education for Students with Disabilities},
+  25(1):22~pp., 2022.
+\newblock Article 5.
+\newblock \url{https://scholarworks.rit.edu/jsesd/vol25/iss1/5/}
+
+\end{thebibliography}

@@ -1,0 +1,10 @@
+Screen-reader software enables blind users to access large segments of
+electronic content, particularly if accessibility standards are
+followed. Unfortunately, this is not true for much of the content
+written in physics, mathematics, and other STEM{} disciplines, due to
+the strong reliance on mathematical symbols and expressions, which
+screen-reader software generally fails to process correctly.
+
+A large portion of such content is based on source documents written in \LaTeX{}, which are rendered to \PDF{} or \HTML{} for online distribution.  Unfortunately, the resulting \PDF{} documents are essentially inaccessible, and the \HTML{} documents vary greatly in accessibility, since their accessibility-standards compliant rendering is cumbersome at best.
+
+This paper explores the possibility of generating standards-compliant, accessible \HTML{} from \LaTeX{} sources using Large Language Models. It is found that the resulting documents are highly accessible, with possible complications occurring when the artificial intelligence tool starts to interpret the content.

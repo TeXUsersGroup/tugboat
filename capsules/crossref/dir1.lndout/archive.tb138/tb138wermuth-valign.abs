@@ -1,0 +1,8 @@
+        Alignment structures are created in plain \TeX\ using one of
+three methods: tabbing, horizontal or vertical alignment. Tabbing
+might be the easiest method; horizontal alignment with \cs{halign} has
+more complicated instructions. Both methods are described in great
+detail in Chapter~22 of \TB. Vertical alignment with \cs{valign} is
+only briefly mentioned in \TB; this might be the reason why it's
+rarely used. This article looks at \cs{valign} and presents a few
+tables that might benefit from it.

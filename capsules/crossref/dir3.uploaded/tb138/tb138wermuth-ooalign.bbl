@@ -1,0 +1,39 @@
+% this file is read twice
+%   first:  the shortcuts for the references are defined
+%   second: the list for references is output
+% start the file with \startbibrefs and end it with \par
+% NOTE: a § can't be used in front of \endbib, move it to the previuos line
+\startbibrefs\begingroup
+\ninepoint
+\emergencystretch=0.03\hsize
+\def\newline{\hfil\break}%
+\raggedright
+\frenchspacing
+\hyphenpenalty=10000
+\def\URLaccessdate(#1){}% suppress ``accessed <date>'' info after URLs
+
+\bibitem{citeCTvA} Donald E. Knuth, \TB,
+   Volume~A of \CandT, Boston, Massachusetts: \AW, 1984.
+
+\bibitem{citeCTvE} Donald E. Knuth,
+   {\sl Computer Modern Typefaces}, Volume E of \CandT,
+   Boston, Massachusetts: \AW, 1986.
+
+\bibitem{citeFbug} Donald E. Knuth, ``The Final Errors of \TeX'',
+   Chapter~34 of [4], 655--662, written August 1998.
+
+\bibitem{citeDT} Donald E. Knuth, {\sl Digital Typography},
+   Stanford, California: Center for the Study of Language and
+   Information, CSLI Lecture Notes No.\ 78, 1999.
+
+\bibitem{citeTbug} Donald E. Knuth, ``{\tt tex82.bug}'',
+   file in the\newline distributed errata for \CandT.\par
+   \biburl https://www.ctan.org/tex-archive/systems/knuth/dist/errata/tex82.bug\endurl
+   \endbib(2023-06-15)
+
+\bibitem{citePMK} Pierre A. MacKay, ``Recycled \MF'',\newline
+   {\sl \TUB\/ \bf15}:4 (1994), 444--446.\par
+   \biburl https://tug.org/TUGboat/tb15-4/tb45mack.pdf\endurl
+   \endbib(2023-01-31)
+
+\end{thebibliography}

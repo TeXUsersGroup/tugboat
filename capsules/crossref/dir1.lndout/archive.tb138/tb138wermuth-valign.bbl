@@ -1,0 +1,39 @@
+% this file is read twice
+%   first:  the shortcuts for the references are defined
+%   second: the list for references is output
+% start the file with \startbibrefs and end it with \par
+% NOTE: a § can't be used in front of \endbib, move it to the previuos line
+\startbibrefs\begingroup
+\ninepoint
+\emergencystretch=0.03\hsize
+\def\newline{\hfil\break}%
+\raggedright
+\frenchspacing
+\hyphenpenalty=10000
+\def\URLaccessdate(#1){}% suppress ``accessed <date>'' info after URLs
+
+\bibitem{citeCMoS}{\sl The Chicago Manual of Style},
+   15th~edition,\newline
+   Chicago, Illinois: University of Chicago Press, 2003.
+
+\bibitem{citeMC}Malcolm Clark, {\sl A plain \TeX\ primer},
+   Oxford University Press, 1992.
+
+\bibitem{citeTH}Taco Hoekwater, ``A use case for \cs{valign}'',\newline
+{\sl \ConTeXt\ Group Journal} 2018, 7--18.\par
+\biburl https://articles.contextgarden.net/journal/2018/7-18.pdf\endurl
+\endbib(2023-02-14)
+
+\bibitem{citeCTvA}Donald E. Knuth, \TB,
+   Volume~A of \CandT, Boston, Massachusetts: \AW, 1984.
+
+\bibitem{citeCTvB}Donald E. Knuth, \TP,
+   Volume~B of \CandT,
+   Boston,\newline Massachusetts: \AW, 1986.
+
+\bibitem{citePW} Peter Wilson, ``Glisterings: Glyphs, long labels'',
+   {\sl \TUB\/ \bf35}:1 (2014), 36--38.\par
+   \biburl https://tug.org/TUGboat/tb35-1/tb109glister.pdf\endurl
+   \endbib(2023-03-05)
+
+\end{thebibliography}

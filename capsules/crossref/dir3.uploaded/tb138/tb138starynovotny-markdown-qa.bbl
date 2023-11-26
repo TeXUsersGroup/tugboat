@@ -1,0 +1,58 @@
+\begin{thebibliography}{1}
+
+\bibitem{novotny2023markdown}
+V.~Star\'y~Novotn\'y.
+\newblock \pkg{Markdown~3}: What's new, what's next, July 2023.
+\newblock \href{https://youtu.be/U8XjTOhJkg0}{\texttt{youtu.be/U8XjTOhJkg0}}
+  and
+  \url{https://tug.org/tug2023/program.html}.
+
+\bibitem{gfm2019github}
+Github flavored markdown spec, Apr. 2019.
+\newblock Version 0.29-gfm.
+  \href{https://github.github.com/gfm}{\texttt{github.github.com/gfm}}\gobble.
+
+\bibitem{novotny2021markdown}
+V.~Novotn\'y.
+\newblock \pkg{Markdown~2.10.0}: {\LaTeX} themes \& snippets, two flavors of
+  comments, and \pkg{LuaMetaTeX}.
+\newblock \emph{TUGboat} 42(2):186--193, Sept. 2021.
+\newblock \url{https://tug.org/TUGboat/tb42-2/tb131novotny-markdown.pdf}
+
+\bibitem{novotny2021one}
+V.~Novotn\'y.
+\newblock One size does not fit all, Sept. 2021.
+\newblock
+  \href{https://overleaf.com/read/mfpwbywkmgnv}{\texttt{overleaf.com/read/mfpwbywkmgnv}}\gobble.
+
+\bibitem{novotny2021when}
+V.~Novotn\'y.
+\newblock When tesseract brings friends, Dec.~2021.
+\newblock
+  \href{https://overleaf.com/read/gsmdcmrmxrmr}{\texttt{overleaf.com/read/gsmdcmrmxrmr}}\gobble.
+
+\bibitem{novotny2022interpretable}
+V.~Novotn\'y.
+\newblock Interpretable representations for fast and accurate retrieval of
+  mathematical information, 2022.
+\newblock
+  \href{https://github.com/witiko/doctoral-thesis/blob/main/presentation.tex}{\texttt{github.com/witiko/doctoral-thesis/blob/main/presentation.tex}}\gobble.
+
+\bibitem{novotny2023markdownb}
+V.~Star\'y~Novotn\'y, P.~Ol\v{s}\'{a}k, A.~Gen\v{c}ur.
+\newblock Witiko/markdown: Release 3.0.0-alpha, 2023.
+\newblock
+  \href{https://github.com/witiko/markdown/releases/tag/3.0.0-alpha}{\texttt{github.com/witiko/markdown/releases/tag/3.0.0-alpha}}\gobble.
+
+\bibitem{novotny2023markdownc}
+V.~Star\'y~Novotn\'y.
+\newblock Witiko/markdown: Release 3.0.0-alpha.2, 2023.
+\newblock
+  \href{https://github.com/witiko/markdown/releases/tag/3.0.0-alpha.2}{\texttt{github.com/witiko/markdown/releases/tag/3.0.0-alpha.2}}\gobble.
+
+\bibitem{novotny2023markdownd}
+{V. Star\'y Novotn\'y, L. Prentice, M. Peischl, D.~Willis, T. Vrabcov\'{a}}.
+\newblock Witiko/markdown: Release 3.0.0, 2023.
+\newblock
+  \href{https://github.com/witiko/markdown/releases/tag/3.0.0}{\texttt{github.com/witiko/markdown/releases/tag/3.0.0}}\gobble.
+\end{thebibliography}
