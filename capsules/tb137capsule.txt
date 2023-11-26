@@ -13,12 +13,6 @@
 % 
 
 \begin{blurb}
-<p>Immediate online access to technical TUGboat articles will be
-available to TUG members only (so some of the links below require a TUG
-username and password).  General information items and articles already
-posted elsewhere are publicly available now.  All of the articles will
-become publicly available after the next issue is published.
-
 <p>If you're not already a member, we hope you'll consider <a
 href="/join.html">joining TUG</a> to support TUGboat and other TeX
 projects.  <a href="/memberaccess.html">More information on TUG member
@@ -35,7 +29,7 @@ access</a>.
         {Complete issue 44:2 as one pdf (22mb)}
         {}
         {\offset{.1}}
-        {https://tug.org/members/TUGboat/!TBIDENT!complete.pdf}
+        {/TUGboat/!TBIDENT!complete.pdf}
         {}
         {<a href="/l/tug23-video">Videos for all talks</a>.}
 
@@ -99,7 +93,7 @@ access</a>.
   {rundown of basic knowledge, common errors, extra spaces, debugging,
    and more}
   {164-169}
-  {https://tug.org/members/TUGboat/!TBIDENT!beeton-basic.pdf}
+  {/TUGboat/!TBIDENT!beeton-basic.pdf}
   {}
   {}
 
@@ -127,7 +121,7 @@ access</a>.
   {Bumpy road towards a good \LaTeX\ visual editor at Overleaf}
   {overview of redesigning the code and visual editor duo}
   {255-255}
-  {https://tug.org/members/TUGboat/!TBIDENT!davies-visual.pdf}
+  {/TUGboat/!TBIDENT!davies-visual.pdf}
   {}
   {}
 
@@ -137,7 +131,7 @@ access</a>.
 %   {Typographers' Inn}
 %   {Fast startup with \LaTeX; Footnotes as never before or since; Afterthought: List spacing}
 %   {\getfirstpage{inn}}
-%   {https://tug.org/members/TUGboat/!TBIDENT!inn.pdf}
+%   {/TUGboat/!TBIDENT!inn.pdf}
 %   {}
 %   {}
 %
@@ -157,7 +151,7 @@ access</a>.
   {Beamer news: 2023}
   {a selection of user-visible improvements to Beamer in recent years}
   {197-199}
-  {https://tug.org/members/TUGboat/!TBIDENT!samcarter-beamernews23.pdf}
+  {/TUGboat/!TBIDENT!samcarter-beamernews23.pdf}
   {}
   {}
 
@@ -190,7 +184,7 @@ access</a>.
   {New dimensions: Edith and Tove}
   {two new metric dimensions and a device with which to determine them}
   {180-185}
-  {https://tug.org/members/TUGboat/!TBIDENT!egger-edith.pdf}
+  {/TUGboat/!TBIDENT!egger-edith.pdf}
   {}
   {}
 
@@ -200,7 +194,7 @@ access</a>.
   {Using Asymptote like MetaPost}
   {workflow methods to help get started with Asymptote}
   {240-241}
-  {https://tug.org/members/TUGboat/!TBIDENT!hefferon-asymptote.pdf}
+  {/TUGboat/!TBIDENT!hefferon-asymptote.pdf}
   {}
   {}
 
@@ -210,7 +204,7 @@ access</a>.
   {Overleaf and \TeX\ Live deployment}
   {overview of the yearly deployment of the \TeX\ Live release at Overleaf}
   {256-256}
-  {https://tug.org/members/TUGboat/!TBIDENT!hejda-overleaf-tl.pdf}
+  {/TUGboat/!TBIDENT!hejda-overleaf-tl.pdf}
   {}
   {}
 
@@ -254,7 +248,7 @@ access</a>.
 %  {\LaTeX\ history and outlook; excerpted from \titleref{The \LaTeX\
 %   Companion}, third edition}
 %  {\getfirstpage{mitt-history}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!mitt-history.pdf}
+%  {/TUGboat/!TBIDENT!mitt-history.pdf}
 %  {}
 %  {}
 
@@ -264,7 +258,7 @@ access</a>.
   {Architectural guides for Bonn\Dash book production with \ConTeXt}
   {design, layout, maps, print modes, images, covers, and many illustrations}
   {170-175}
-  {https://tug.org/members/TUGboat/!TBIDENT!ramm-books.pdf}
+  {/TUGboat/!TBIDENT!ramm-books.pdf}
   {}
   {}
 
@@ -274,7 +268,7 @@ access</a>.
   {Calculating covers with \ConTeXt}
   {step-by-step practical examples of creating covers with \ConTeXt}
   {176-179}
-  {https://tug.org/members/TUGboat/!TBIDENT!ramm-covers.pdf}
+  {/TUGboat/!TBIDENT!ramm-covers.pdf}
   {}
   {}
 
@@ -284,7 +278,7 @@ access</a>.
   {Primo\Dash A new sustainable solution for~publishing}
   {a cloud-based system with authoring, submission, and proofing tools}
   {257-261}
-  {https://tug.org/members/TUGboat/!TBIDENT!rishi-primo.pdf}
+  {/TUGboat/!TBIDENT!rishi-primo.pdf}
   {}
   {}
 
@@ -294,7 +288,7 @@ access</a>.
   {News from the \acro{HINT} project: 2023}
   {better glyph display, links and outlines, searching, \acro{HINT} viewers}
   {252-254}
-  {https://tug.org/members/TUGboat/!TBIDENT!ruckert-hint23.pdf}
+  {/TUGboat/!TBIDENT!ruckert-hint23.pdf}
   {}
   {}
 
@@ -304,7 +298,7 @@ access</a>.
   {Behind the scenes of the Great \TikZ{}lings Christmas Extravaganza}
   {using \LaTeX\ with video tools to create the annual animation}
   {233-235}
-  {https://tug.org/members/TUGboat/!TBIDENT!samcarter-tikzlings.pdf}
+  {/TUGboat/!TBIDENT!samcarter-tikzlings.pdf}
   {}
   {}
 
@@ -315,7 +309,7 @@ access</a>.
   {fully parameterized \MF\ design using \titleref{Vergilius Vaticanus} as a
    reference}
   {209-212}
-  {https://tug.org/members/TUGboat/!TBIDENT!sannier-rustic.pdf}
+  {/TUGboat/!TBIDENT!sannier-rustic.pdf}
   {}
   {}
 
@@ -326,7 +320,7 @@ access</a>.
 %%%%%%  {OpenType fonts greatly extending Latin Modern,
 %%%%%%   with complete coverage of Unicode math (\tbsurl{ctan.org/pkg/newcm})}
 %%%%%%  {\getfirstpage{tsolomitis-newcm}}
-%%%%%%  {https://tug.org/members/TUGboat/!TBIDENT!tsolomitis-newcm.pdf}
+%%%%%%  {/TUGboat/!TBIDENT!tsolomitis-newcm.pdf}
 %%%%%%  {}
 %%%%%%  {}
 
@@ -336,7 +330,7 @@ access</a>.
   {An updated survey of OpenType math fonts}
   {comprehensive summary of character coverage and more, with examples}
   {213-225}
-  {https://tug.org/members/TUGboat/!TBIDENT!vieth-otmath.pdf}
+  {/TUGboat/!TBIDENT!vieth-otmath.pdf}
   {}
   {}
 
@@ -359,7 +353,7 @@ access</a>.
 %  {Lua\acro{CAS}: Symbolic computation in \LaTeX{}}
 %  {pure Lua computer algebra system, integrated into \LaTeX}
 %  {\getfirstpage{all-luacas}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!all-luacas.pdf}
+%  {/TUGboat/!TBIDENT!all-luacas.pdf}
 %  {}
 %  {}
 %
@@ -392,7 +386,7 @@ access</a>.
   {many, though not all, ``Leslie Lamport Documents'' can now be tagged
    automatically}
   {262-266}
-  {https://tug.org/members/TUGboat/!TBIDENT!fischer-tagging23.pdf}
+  {/TUGboat/!TBIDENT!fischer-tagging23.pdf}
   {}
   {}
 
@@ -402,7 +396,7 @@ access</a>.
   {On bottom accents in OpenType math}
   {existing behavior and proposals for handling bottom math accents}
   {207-208}
-  {https://tug.org/members/TUGboat/!TBIDENT!hagen-bottomaccent.pdf}
+  {/TUGboat/!TBIDENT!hagen-bottomaccent.pdf}
   {}
   {}
 
@@ -414,7 +408,7 @@ access</a>.
   {container usage examples and infrastructure for current and historic
    releases}
   {249-252}
-  {https://tug.org/members/TUGboat/!TBIDENT!island-docker.pdf}
+  {/TUGboat/!TBIDENT!island-docker.pdf}
   {}
   {}
 
@@ -425,7 +419,7 @@ access</a>.
    template maintenance~effort}
   {separating writing from knowledge of packages, classes, tools}
   {203-207}
-  {https://tug.org/members/TUGboat/!TBIDENT!kopp-microtemplates.pdf}
+  {/TUGboat/!TBIDENT!kopp-microtemplates.pdf}
   {}
   {}
 
@@ -435,7 +429,7 @@ access</a>.
 %%%%%%%%%%%   {\TeX\ Gyre text fonts revisited}
 %%%%%%%%%%%   {incorporating math and symbol glyphs into text fonts, and OpenType accent positioning}
 %%%%%%%%%%%   {\getfirstpage{jackowski-gyre}}
-%%%%%%%%%%%   {https://tug.org/members/TUGboat/!TBIDENT!jackowski-gyre.pdf}
+%%%%%%%%%%%   {/TUGboat/!TBIDENT!jackowski-gyre.pdf}
 %%%%%%%%%%%   {}
 %%%%%%%%%%%   {}
 
@@ -445,7 +439,7 @@ access</a>.
 %  {Attributes in Markdown}
 %  {using, coding, and styling attributes in Markdown in \LaTeX}
 %  {\getfirstpage{novotny-markdown-attr}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!novotny-markdown-attr.pdf}
+%  {/TUGboat/!TBIDENT!novotny-markdown-attr.pdf}
 %  {}
 %  {}
 %
@@ -455,7 +449,7 @@ access</a>.
 %  {An introduction to expl3}
 %  {step-by-step introduction to the modern \LaTeX\ programming layer}
 %  {\getfirstpage{peischl-expl3}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!peischl-expl3.pdf}
+%  {/TUGboat/!TBIDENT!peischl-expl3.pdf}
 %  {}
 %  {}
 
@@ -466,7 +460,7 @@ access</a>.
   {implementing an aesthetic Unicode-compliant Malayalam font, with many
    illustrations}
   {297-314}
-  {https://tug.org/members/TUGboat/!TBIDENT!radhakrishnan-malayalam.pdf}
+  {/TUGboat/!TBIDENT!radhakrishnan-malayalam.pdf}
   {}
   {}
 
@@ -476,7 +470,7 @@ access</a>.
   {Curvature combs and harmonized paths in MetaPost}
   {visualizing curvature and making curvature continuous}
   {236-239}
-  {https://tug.org/members/TUGboat/!TBIDENT!romer-curvetools.pdf}
+  {/TUGboat/!TBIDENT!romer-curvetools.pdf}
   {}
   {}
 
@@ -487,7 +481,7 @@ access</a>.
   {making slides, handouts, etc., from a single source, using \ConTeXt\
    modes and Lua}
   {186-191}
-  {https://tug.org/members/TUGboat/!TBIDENT!schmitz-xmlcontext.pdf}
+  {/TUGboat/!TBIDENT!schmitz-xmlcontext.pdf}
   {}
   {}
 
@@ -498,7 +492,7 @@ access</a>.
   {italic corrections, accents, rules, primes, parameters, and other
    OpenType and Unicode math difficulties}
   {226-232}
-  {https://tug.org/members/TUGboat/!TBIDENT!sundqvist-otmath.pdf}
+  {/TUGboat/!TBIDENT!sundqvist-otmath.pdf}
   {}
   {}
 
@@ -510,7 +504,7 @@ access</a>.
   {\GUI\ and programmatic access to algorithms and parameters for line
    breaking}
   {242-248}
-  {https://tug.org/members/TUGboat/!TBIDENT!verna-realtime.pdf}
+  {/TUGboat/!TBIDENT!verna-realtime.pdf}
   {}
   {}
 
@@ -520,7 +514,7 @@ access</a>.
   {Updating the \texttt{nostarch} class}
   {handling unusual url, chapter opening, and caption requirements}
   {200-202}
-  {https://tug.org/members/TUGboat/!TBIDENT!veytsman-nostarch.pdf}
+  {/TUGboat/!TBIDENT!veytsman-nostarch.pdf}
   {}
   {}
 
@@ -533,7 +527,7 @@ access</a>.
 %%  {An introduction to \acro{GNU} 3\acro{DLDF}}
 %%  {overview of this MetaPost-inspired \acro{3D} graphics program}
 %%  {\getfirstpage{finston-3dldf}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!finston-3dldf.pdf}
+%%  {/TUGboat/!TBIDENT!finston-3dldf.pdf}
 %%  {}
 %%  {}
 %%
@@ -543,7 +537,7 @@ access</a>.
 %%  {A graphical ellipse envelope construction with \acro{GNU}~3\acro{DLDF}}
 %%  {demonstrates use of 3\acro{DLDF}, with annotated code}
 %%  {\getfirstpage{finston-ellipse}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!finston-ellipse.pdf}
+%%  {/TUGboat/!TBIDENT!finston-ellipse.pdf}
 %%  {}
 %%  {}
 %%
@@ -553,7 +547,7 @@ access</a>.
 %%%%%%%  {Functions and \texttt{expl3}}
 %%%%%%%  {an introduction to \LaTeX3 programming with functions and variables}
 %%%%%%%  {\getfirstpage{gregorio-l3functions}}
-%%%%%%%  {https://tug.org/members/TUGboat/!TBIDENT!gregorio-l3functions.pdf}
+%%%%%%%  {/TUGboat/!TBIDENT!gregorio-l3functions.pdf}
 %%%%%%%  {}
 %%%%%%%  {}
 
@@ -563,7 +557,7 @@ access</a>.
   {Cheats (or not): When \cs{prevdepth = -1000pt}}
   {explaining and generalizing the sentinel value for \cs{nointerlineskip}}
   {287-288}
-  {https://tug.org/members/TUGboat/!TBIDENT!hagen-prevdepth.pdf}
+  {/TUGboat/!TBIDENT!hagen-prevdepth.pdf}
   {}
   {}
 
@@ -574,7 +568,7 @@ access</a>.
   {using \CSS\ with \HTML\ derived from \PDF\ to meet \acro{WCAG}
    recommendations }
   {270-274}
-  {https://tug.org/members/TUGboat/!TBIDENT!moore-pdf-html.pdf}
+  {/TUGboat/!TBIDENT!moore-pdf-html.pdf}
   {}
   {}
 
@@ -585,7 +579,7 @@ access</a>.
           generating high-quality responsive \HTML\ from~generic \TeX}
   {discussion of translating \TeX\ primitives in the Rus\TeX\ engine}
   {275-286}
-  {https://tug.org/members/TUGboat/!TBIDENT!mueller-primitives.pdf}
+  {/TUGboat/!TBIDENT!mueller-primitives.pdf}
   {}
   {}
 
@@ -596,7 +590,7 @@ access</a>.
   {Judy array and Unicode support in \texttt{patgen}, to generate
    universal hyphenation patterns}
   {289-296}
-  {https://tug.org/members/TUGboat/!TBIDENT!sojka-syllabic.pdf}
+  {/TUGboat/!TBIDENT!sojka-syllabic.pdf}
   {}
   {}
 
@@ -607,7 +601,7 @@ access</a>.
 %%%   book of poisons)}
 %%%  {glossary definitions in documents; reordering glossary entries in multiple ways}
 %%%  {\getfirstpage{talbot-bib2gls-reorder}}
-%%%  {https://tug.org/members/TUGboat/!TBIDENT!talbot-bib2gls-reorder.pdf}
+%%%  {/TUGboat/!TBIDENT!talbot-bib2gls-reorder.pdf}
 %%%  {}
 %%%  {}
 %
@@ -617,7 +611,7 @@ access</a>.
 %  {Reflections on {\tt\char92globaldefs}}
 %  {history, behavior, applications, and questions about \cs{globaldefs}}
 %  {\getfirstpage{wermuth-globaldefs}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!wermuth-globaldefs.pdf}
+%  {/TUGboat/!TBIDENT!wermuth-globaldefs.pdf}
 %  {}
 %  {}
 %
@@ -627,7 +621,7 @@ access</a>.
 %  {Storing Unicode data in \TeX{} engines}
 %  {reading the great mass of Unicode data: two-stage tables and macro storage}
 %  {\getfirstpage{wright-unidata}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!wright-unidata.pdf}
+%  {/TUGboat/!TBIDENT!wright-unidata.pdf}
 %  {}
 %  {}
 
