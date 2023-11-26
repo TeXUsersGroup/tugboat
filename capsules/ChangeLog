@@ -1,4 +1,7 @@
-2023-11-26  Karl Berry  <karl@tug.org>
+2023-11-26  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (diff-land): check that previss is set;
+	create /tmp/ch-land.
 
 	* tb137capsule.txt: 44:2 public.
 

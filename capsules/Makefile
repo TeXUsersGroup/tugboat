@@ -29,7 +29,7 @@ default check: one #all-diff
 # publishing a TUGboat issue; see the README-tug-procedures file on tug.org.
 testiss = 138
 lastiss = 138
-crossref_iss = 138
+crossref_iss = 137
 
 # use different temp dir on different machines.
 mydir := $(shell ls ~karl/public_html 2>/dev/null)
@@ -91,12 +91,15 @@ crw:
 crxml:
 	$(MAKE) -C crossref
 
-# qqq need to compute /tb directory name.
+# run with previss=...
 diff-land:
+	@test -n "$(previss)" || { echo "need make $@ previss=VV-N" >&2; exit 1; }
 	-grep 'available to TUG members' $(cr_lndout)/*.html
 	for f in $(cr_lndout)/*.html; do \
-	  diff -u0 $(tubweb)/tb44-1/`basename $$f` $$f; \
-	done | egrep -v '\[generated|^\+\+\+ |^@@ '
+	  diff -u0 $(tubweb)/tb$(previss)/`basename $$f` $$f; \
+	done | egrep -v '\[generated|^\+\+\+ |^@@ ' | tee /tmp/diff-land
+	sed -n -e 's/^--- //p' /tmp/diff-land \
+	| sed -e 's/	.*$$//' -e 's,.*/,,' | tee /tmp/ch-land
 
 upload-test upload-real:
 	$(MAKE) -C crossref $@
