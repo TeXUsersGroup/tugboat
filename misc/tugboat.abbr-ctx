@@ -73,6 +73,7 @@
 \def\LUAJIT    {Lua\acro{JIT}}
 \def\LUAJITTEX {Lua\acro{JIT\TeX}}
 \def\LUALATEX  {Lua\LATEX}
+\def\LUAMETAFUN{Lua\-Metafun}
 \def\LUAMETATEX{Lua\-\METATEX}
 \def\LUATEX    {\LUA\-\TeX}
 \def\LUATOOLS  {{\tt luatools}}
@@ -187,6 +188,7 @@
 \def\definefontfeature[#1][#2][#3]{}
 \def\definefontsynonym[#1]#2[#3]{}
 \def\disabledirectives[#1]{}
+\def\doifelsemode#1#2#3{}
 \def\dontcomplain{}
 \def\dontleavehmode{}
 \def\enabledirectives[#1]{}
@@ -231,6 +233,7 @@
 \def\sym{\item}
 \def\tex{\cs}
 \def\texdefinition#1#2{}
+\def\tf{\rm}
 \def\tttf{\tt}
 \def\tx{\tt}
 %\def\unexpanded{}% etex primitive, microtype et al. need it
@@ -319,8 +322,8 @@
 \def\stopcomponent{\stopArticle}
 
 \def\placeformula[#1]{\label{#1}}
-\def\startformula{\begin{equation}}% displaymath for no eqno
-\def\stopformula{\end{equation}}
+\def\startformula{\begin{displaymath}}% equation for eqno
+\def\stopformula{\end{displaymath}}
 
 \long\def\startframedtext#1\stopframedtext{[ignored framedtext, fix!!]}
 
@@ -340,6 +343,8 @@
 
 \def\startlines{\begingroup\obeylines\parindent=0pt}
 \def\stoplines{\endgroup}
+
+\long\def\startlocallinecorrection#1\stoplocallinecorrection{}
 
 \long\def\startluacode#1\stopluacode{}
 
