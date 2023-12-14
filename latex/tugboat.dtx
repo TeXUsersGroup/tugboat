@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2023-10-28 v2.31
+                   [2023-12-13 v2.31
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -2660,59 +2660,68 @@
 \def\tubsecfmt{\normalsize\bf\raggedright\frenchspacing\nohyphens\tubsechook}
 %
 \if@numbersec
-  \def\section{\TB@startsection{{section}%
-                                1%
-                                \z@
-                                {-8\p@ \@plus-2\p@ \@minus-2\p@}%
-                                {4\p@}%
-          {\tubsecfmt}}}
-  \def\subsection{\TB@startsection{{subsection}%
-                                   2%
-                                   \z@
-                                   {-8\p@ \@plus-2\p@ \@minus-2\p@}%
-                                   {4\p@}%
-          {\tubsecfmt}}}
-  \def\subsubsection{\TB@startsection{{subsubsection}%
-                                      3%
-                                      \z@
-                                      {-8\p@ \@plus-2\p@ \@minus-2\p@}%
-                                      {4\p@}%
-          {\tubsecfmt}}}
-  \def\paragraph{\TB@startsection{{paragraph}%
-                                  4%
-                                  \z@
-                                  {4\p@ \@plus1\p@ \@minus1\p@}%
-                                  {-1em}%
-                                  {\normalsize\bf\tubsechook}}}
+  \def\section{\TB@startsection{%
+    {section}                 % name of counter
+    {1}                       % level
+    {0pt}                     % indent
+    {-8pt plus-2pt minus-2pt} % beforeskip; negative -> \noindent after
+    {4pt}                     % afterskip;  negative -> hspace for run-in
+    {\tubsecfmt}}}            % style
+  %
+  \def\subsection{\TB@startsection{%
+    {subsection}%
+    2%
+    \z@
+    {-8\p@ \@plus-2\p@ \@minus-2\p@}%
+    {4\p@}%
+    {\tubsecfmt}}}
+  %
+  \def\subsubsection{\TB@startsection{%
+    {subsubsection}%
+    3%
+    \z@
+    {-8\p@ \@plus-2\p@ \@minus-2\p@}%
+    {4\p@}%
+    {\tubsecfmt}}}
+  %
+  \def\paragraph{\TB@startsection{%
+    {paragraph}%
+    4%
+    \z@
+    {4\p@ \@plus1\p@ \@minus1\p@}%
+    {-1em\@plus-2\fontdimen3\font}% run-in
+    {\normalsize\bf\tubsechook}}}
 %    \end{macrocode}
 %
-% Now the version if class option \textsc{nonumber} is in effect,
+% Now the version if class option \texttt{nonumber} is in effect,
 % i.e., if \cs{if@numbersec} is false.
 %
 %    \begin{macrocode}
 \else
   \setcounter{secnumdepth}{0}
-  \def\section{\TB@nolimelabel
-               \TB@startsection{{section}%
-                                1%
-                                \z@
-                                {-8\p@ \@plus-2\p@ \@minus-2\p@}%
-                                {4\p@}%
-          {\tubsecfmt}}}
-  \def\subsection{\TB@nolimelabel
-                  \TB@startsection{{subsection}%
-                                   2%
-                                   \z@
-                                   {-8\p@ \@plus-2\p@ \@minus-2\p@}%
-                                   {-0.5em\@plus-\fontdimen3\font}%
-          {\tubsecfmt}}}
-  \def\subsubsection{\TB@nolimelabel
-                     \TB@startsection{{subsubsection}%
-                                      3%
-                                      \parindent
-                                      {-8\p@ \@plus-2\p@ \@minus-2\p@}%
-                                      {-0.5em\@plus-\fontdimen3\font}%
-          {\tubsecfmt}}}
+  \def\section{\TB@nolimelabel\TB@startsection{%
+    {section}% same as numbeed
+    1%
+    \z@
+    {-8\p@ \@plus-2\p@ \@minus-2\p@}%
+    {4\p@}%
+    {\tubsecfmt}}}
+  %
+  \def\subsection{\TB@nolimelabel\TB@startsection{%
+    {subsection}%
+    2%
+    \z@
+    {-8\p@ \@plus-2\p@ \@minus-2\p@}%
+    {-1em\@plus-2\fontdimen3\font}% run-in
+    {\normalsize\bf\tubsechook}}}
+  %
+  \def\subsubsection{\TB@nolimelabel\TB@startsection{
+    {subsubsection}%
+    3%
+    \parindent
+    {-8\p@ \@plus-2\p@ \@minus-2\p@}%
+    {-1em\@plus-2\fontdimen3\font}% run-in
+    {\normalsize\bf\tubsechook}}}
 \fi
 %    \end{macrocode}
 %

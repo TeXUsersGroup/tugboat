@@ -1,3 +1,10 @@
+2023-12-13  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\paragraph) [\if@numbersec],
+	(\subsection, \subsubsection) [! \if@numbersec]:
+	increase space after head in run-ins to 1em + double stretch.
+	Reformat all definitions.
+
 2023-10-28  Karl Berry  <karl@freefriends.org>
 
 	* version 2.31 (2023-07-03) uploaded to CTAN.
