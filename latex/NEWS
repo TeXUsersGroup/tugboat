@@ -2,7 +2,8 @@ $Id$
 This file records noteworthy changes.  This file is public domain.
 
 ltugboat.cls:
-- increase both natural space and stretch after run-in heads.
+- increase natural space, stretch, shrink after run-in heads; before,
+  \frenchspacing was unintentionally in effect.
 
 -----------------
 2.31 (2023-10-28):

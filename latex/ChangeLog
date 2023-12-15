@@ -1,3 +1,8 @@
+2023-12-15  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\tubruninglue, \tubruninsecfmt): new macros
+	to make formatting consistent for the run-in heads. Add shrink.
+
 2023-12-13  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\paragraph) [\if@numbersec],

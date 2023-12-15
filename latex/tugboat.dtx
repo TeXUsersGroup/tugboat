@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2023-12-13 v2.31
+                   [2023-12-15 v2.31
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -2653,11 +2653,16 @@
 % 
 % The \cs{tubsecfmt} macro defines our standard formatting for section
 % titles: ragged right, french spacing, no hyphenation.
+% The \cs{tubruninsecfmt} macro is the simpler form for run-in section
+% headings (when the afterskip is negative), with the afterskip glue
+% given by \cs{tubruninglue}.
 % The \cs{tubsechook} macro allows overriding the defaults.
 %
 %    \begin{macrocode}
 \def\tubsechook{}
 \def\tubsecfmt{\normalsize\bf\raggedright\frenchspacing\nohyphens\tubsechook}
+\def\tubruninglue{-1em plus-2\fontdimen3\font minus-\fontdimen4}
+\def\tubruninsecfmt{\normalsize\bf\tubsechook}
 %
 \if@numbersec
   \def\section{\TB@startsection{%
@@ -2689,8 +2694,8 @@
     4%
     \z@
     {4\p@ \@plus1\p@ \@minus1\p@}%
-    {-1em\@plus-2\fontdimen3\font}% run-in
-    {\normalsize\bf\tubsechook}}}
+    {\tubruninglue}
+    {\tubruninsecfmt}}}
 %    \end{macrocode}
 %
 % Now the version if class option \texttt{nonumber} is in effect,
@@ -2712,16 +2717,16 @@
     2%
     \z@
     {-8\p@ \@plus-2\p@ \@minus-2\p@}%
-    {-1em\@plus-2\fontdimen3\font}% run-in
-    {\normalsize\bf\tubsechook}}}
+    {\tubruninglue}
+    {\tubruninsecfmt}}}
   %
   \def\subsubsection{\TB@nolimelabel\TB@startsection{
     {subsubsection}%
     3%
     \parindent
     {-8\p@ \@plus-2\p@ \@minus-2\p@}%
-    {-1em\@plus-2\fontdimen3\font}% run-in
-    {\normalsize\bf\tubsechook}}}
+    {\tubruninglue}
+    {\tubruninsecfmt}}}
 \fi
 %    \end{macrocode}
 %
