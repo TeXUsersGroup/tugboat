@@ -11,9 +11,10 @@ sub output_keyword_list {
 
   my $listfile = ">list$what.html";
   open (my $fh, $listfile) || die "open($listfile.html) failed: $!";
-  my $title = qq!<a href="/TUGboat/">TUGboat</a> Category/Keyword list!;
-  print $fh &cap_html_header ($title);
-  (my $header = $list_hdr_common) =~ s/%h2text%/$title/;
+  my $title = "Category/Keyword list";
+  print $fh &cap_html_header ("TUGboat $title"); # no links in <title>
+  (my $header = $list_hdr_common)
+    =~ s,%h2text%,<a href="/TUGboat/">TUGboat</a> $title,;
   print $fh $header;
   
   print $fh <<END_HEADER;

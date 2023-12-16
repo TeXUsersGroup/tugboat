@@ -109,7 +109,7 @@ sub tub_common_header {
   my ($h2) = @_;
 
   return <<END_HDR;
-  <table><tr>
+<table><tr>
 <td><a href="/TUGboat/"><img alt="TUGboat" align="bottom"
          width=343 height=76 src="/TUGboat/noword.jpg"></a><br>
   <b><h1>The Communications of&nbsp;<br>
@@ -118,6 +118,7 @@ sub tub_common_header {
 <td><a href="/TUGboat/"><img alt="printing press" align="right" hspace=10
          width=316 height=341 src="/TUGboat/press72.jpg"></a><br>&nbsp;</td>
 </tr></table>
+
 END_HDR
 }
 

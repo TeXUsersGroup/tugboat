@@ -1,3 +1,10 @@
+2023-12-16  Karl Berry  <karl@freefriends.org>
+
+	* capaccum-author.pl (output_author_list),
+	* capaccum-keyword.pl (output_keyword_list),
+	* capaccum-title.pl (output_title_list): no links in <title>.
+	* caputil.pl (tub_common_header): indentation of html.
+
 2023-11-26  Karl Berry  <karl@freefriends.org>
 
 	* tb138capsule.txt (bien): errata link.
@@ -24,7 +31,7 @@
 	need \CONNECT.
 	* tb138capsule.txt (starynovotny): need \CONNECT.
 	(bien): forgot S.
-	* lists-unificatoins.txt (V&#xed;t Star&#xfd;&#xa0;Novotn&#xfd;):
+	* lists-unifications.txt (V&#xed;t Star&#xfd;&#xa0;Novotn&#xfd;):
 	new unification for Vit.
 
 2023-11-14  Karl Berry  <karl@freefriends.org>
