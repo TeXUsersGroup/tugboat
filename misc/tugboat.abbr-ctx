@@ -49,6 +49,7 @@
 \def\GB        {\acro{GB}}
 \def\GCC       {\acro{GCC}}
 \def\GHOSTSCRIPT{Ghost\-script}
+\def\HP        {\acro{HP}}
 \def\HZ        {Hz}
 \def\IBM       {\acro{IBM}}
 \def\IEEE      {\acro{IEEE}}
@@ -122,6 +123,7 @@
 \def\PDFTEX    {pdf\-\/\TeX}
 \def\PERL      {Perl}
 \def\PERLTK    {Perl/\acro{TK}}
+\def\PFB       {\acro{PFB}}
 \def\PK        {\acro{PK}}
 \def\PLAIN     {{\tt plain}}
 \def\POSTSCRIPT{\PS}
@@ -182,6 +184,7 @@
 \def\citation[#1]{\cite{#1}}
 \def\citetitle{\textsl}
 \def\crlf{\newline}
+\def\ctxlua#1{}
 \def\ctxluabuffer[#1]{}
 \def\definecolor[#1][#2]{}
 \def\definefont[#1]#2[#3]{}
@@ -192,7 +195,6 @@
 \def\dontcomplain{}
 \def\dontleavehmode{}
 \def\enabledirectives[#1]{}
-% width=.95\hsize
 \def\externalfigure[#1]#2[#3]{\centerline{\includegraphics[#3]{#1}}}
 \def\from{\tbsurl}
 \def\getnamedglyphdirect{}
@@ -220,9 +222,11 @@
 \def\quotation#1{{``#1''}}
 \def\scale[#1]#2#3{}
 \def\setlayer[#1] [#2]#3{}
+\def\setmscale#1{}
 \def\setvariables[#1]#2[#3]{}
 \def\ss{}
 \def\showframe{}
+\def\showglyphs{}
 \let\starorig=\star\def\star{\ensuremath{\starorig}}
 \def\starthead#1{\item[#1]}
 \let\stop=\relax

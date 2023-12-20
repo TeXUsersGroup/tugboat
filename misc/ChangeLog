@@ -1,8 +1,13 @@
+2023-12-20  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr-ctx (\HP, \PFB, \ctxlua, \setmscale, \showglyphs):
+	define for tb139hagen-tracefonts (45:1).
+
 2023-12-03  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.abbr-ctx (\LUAMETAFUN, \doifelsemode, \tf,
 	\startlocallinecorrection): define for tb139hagen-bitmaps (45:1).
-	(\startformula, \stopformula): {displaymath} for no eqno.	
+	(\startformula, \stopformula): use {displaymath} for no eqno.
 
 2023-10-28  Karl Berry  <karl@freefriends.org>
 
