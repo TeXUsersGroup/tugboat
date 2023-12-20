@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2023-12-16 v2.31
+                   [2023-12-20 v2.31
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -1395,10 +1395,10 @@
 \def\tbsurlfootnote#1{\footnote{\raggedright\tbsurl{#1}}}
 \def\tbhurlfootnote#1{\footnote{\raggedright\tbhurl{#1}}}
 %
-% Close up space between footnote mark and punctuation ("pre-punctuation").
+% Close up space between footnote mark and punctuation (``pre-punctuation'').
 \DeclareRobustCommand{\tbppkernfoot}{\tubthinnerspace}
 
-% Make \! work in text mode.
+% Make \! work in text mode, for older LaTeX.
 \DeclareRobustCommand{\!}{\ifmmode\mskip-\thinmuskip \else\kern-0.16667em \fi}
 %
 % Half a thinspace, positive and negative. Should have named these
@@ -3089,7 +3089,23 @@
 % Let's reduce the default space above captions a bit, and give it some
 % flexibility.  The default is |10pt|, which seems too much.
 %    \begin{macrocode}
-\setlength\abovecaptionskip{3pt plus2pt minus1pt}
+\setlength\abovecaptionskip{3pt plus1pt minus1pt}
+%    \end{macrocode}
+%
+% Let's also reduce the space between floats, and between floats and text.
+% The |\dbl...| versions of these parameters are not used, even though
+% we're typesetting in double columns.
+%    \begin{macrocode}
+\setlength\floatsep    { 9pt plus3pt minus2pt} % default 12pt plus2pt minus2pt
+\setlength\textfloatsep{12pt plus4pt minus3pt} % default 20pt plus2pt minus4pt
+%    \end{macrocode}
+%
+% We want to allow more floats at the top/bottom/everywhere on
+% a page; all depends on their content.
+%    \begin{macrocode}
+\setcounter{bottomnumber}{3} % default 1
+\setcounter{topnumber}{3}    % default 2
+\setcounter{totalnumber}{6}  % default 3
 %    \end{macrocode}
 %
 % \subsection{Size changing commands}
@@ -3897,12 +3913,11 @@
 %    \begin{macrocode}
 \gdef\nomarkfootnote#1#2{\begingroup
   \def\thefootnote{}%
-  % no period, please, also no fnmark.
+  % no period, please, also no fnmark. Also no hyperref warning.
   \def\@makefntext##1{##1}%
   \def\Hy@Warning##1{}%
   \footnotetext{\noindent #1#2}%
-  \endgroup
-}
+\endgroup}
 %    \end{macrocode}
 % \end{macro}
 % \end{macro}
