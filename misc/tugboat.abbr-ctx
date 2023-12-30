@@ -20,6 +20,7 @@
 \def\C         {C}
 \def\CCODE     {C code}
 \def\CD        {\acro{CD}}
+\def\CDROM     {\acro{CD-ROM}}
 \def\CFF       {\acro{CFF}}
 \def\CLD       {\acro{CLD}}
 \def\CMAKE     {\acro{CM}ake}
@@ -49,6 +50,7 @@
 \def\GB        {\acro{GB}}
 \def\GCC       {\acro{GCC}}
 \def\GHOSTSCRIPT{Ghost\-script}
+\def\GHOSTVIEW {Ghost\-View}
 \def\HP        {\acro{HP}}
 \def\HZ        {Hz}
 \def\IBM       {\acro{IBM}}
@@ -108,6 +110,7 @@
 \def\MPLIB     {\acro{MP}lib}
 \def\MPTO      {{\tt mpto}}
 \def\MPTOPDF   {{\tt mptopdf}}
+\def\MSDOS     {\acro{MS-DOS}}
 \def\MSVC      {\acro{MSVC}}
 \def\MSWINDOWS {Windows}
 \def\MSWORD    {Word}
@@ -158,6 +161,7 @@
 \def\URL       {url}
 \def\USB       {\acro{USB}}
 \def\UTF       {\acro{UTF}}
+\def\VERAPDF   {Vera\acro{PDF}}
 \def\VF        {\acro{VF}}
 \def\VMWARE    {\acro{VM}ware}
 \def\WEB       {\acro{WEB}}
