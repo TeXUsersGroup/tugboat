@@ -133,6 +133,7 @@
 \def\PRAGMA    {Pragma}
 \def\QA        {\acro{QA}}
 \def\RAM       {\acro{RAM}}
+\def\RGB       {\acro{RGB}}
 \def\RTL       {\acro{RTL}}
 \def\RUBY      {Ruby}
 \def\SCITE     {Sci\acro{TE}}
@@ -156,6 +157,7 @@
 \def\TUGBOAT   {\TUB}
 \def\TYPEONE   {Type~1}
 \def\TYPETHREE {Type~3}
+\def\TYPEZERO  {Type~0}
 \def\UCS       {\acro{UCS}}
 \def\UNICODE   {Unicode}
 \def\URL       {url}

@@ -10,7 +10,7 @@ egrep -Hn "$acro_ok" "$@" \
       -e 's/\\\(includegraphics\|cite\|bibitem\)\(\[[^]]*\]\)\?{[^}]*}//g' \
       -e 's/\(src\|id\)=".*"//g' \
       -e 's/|[^|]*|//g' \
-      -e 's/\\type *{[^}]*}//g' \
+      -e 's/\\type\? *{[^}]*}//g' \
       -e 's/url\(footnote\)\?{[^}]*}//g' \
       -e 's/{fig[^}]*}//g' \
       -e 's/\\[A-Za-z0-9]\+//g' \
