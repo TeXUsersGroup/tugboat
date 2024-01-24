@@ -1,3 +1,13 @@
+2024-01-24  Karl Berry  <karl@freefriends.org>
+
+	* check-splice-tub: new script, called from top-level issue Makefile.
+
+2024-01-08  Karl Berry  <karl@freefriends.org>
+
+	* cahiers.sty (\cgart): mention that TUB's \raggedright disables
+	hyphenation, and \allowhyphens can be used to re-enable.
+	Always start a new paragraph.
+
 2023-12-31  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.abbr-ctx (\RGB, \TYPEZERO):

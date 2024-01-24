@@ -1,16 +1,17 @@
 % $Id$
-% Copyright 1999-2023 TeX Users Group.
+% Copyright 1999-2024 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 % This is a LaTeX2e package for TUGboat abstract summaries,
 % originally just for cahiers.
 %
-\def\filedate{2023/06/29}
-\ProvidesPackage{cahiers}[\filedate TUGboat abstract summaries]
+\def\filedate{2024-01-08}
+\ProvidesPackage{cahiers}[\filedate TUGboatabstract summaries]
 %
 % uses production LaTeX2e commands
 \NeedsTeXFormat{LaTeX2e}[1994/12/01]
 %
+% See ChangeLog in TUB repo for later changes.
 % KB  2018/07/29  \hfuzz\maxdimen for test setting.
 % KB  2010/04/10  minor new macros.
 % KB  2010/04/04  no "Editor's note:" in \pubdesc.
@@ -84,8 +85,13 @@
 % #4 - English title (#3 if no original title)
 % Then a \par, then the English abstract.
 % 
-\newcommand{\cgart}[4]{\ifvmode \addvspace{\medskipamount}\fi
-     {\raggedright \noindent
+\newcommand{\cgart}[4]{%
+     \par \addvspace{\medskipamount}%
+     {\raggedright % TUGboat's raggedright disables hyphenation;
+                   % usually that seems preferable, since hyphenation
+                   % of the foreign words will usually be wrong.
+                   % \allowhyphens can be used to re-allow.
+      \noindent
       \setbox0\hbox{#2}%        % check for presence of author
       \ifdim\wd0>.2em
         {\def\fn##1{\textrm{##1\unskip}}%
@@ -103,7 +109,7 @@
       \unskip
       \def\testpg{#1}%
       \ifx\testpg\empty \else
-        ;%
+        ;% before page number
         \cgpgno #1-<%
       \fi
       \endgraf

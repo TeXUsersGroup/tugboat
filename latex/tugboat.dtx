@@ -2,7 +2,7 @@
 % $Id$
 % tugboat.dtx - main source for LaTeX TUGboat classes.
 %
-% Copyright 1994-2023 TeX Users Group.
+% Copyright 1994-2024 TeX Users Group.
 %
 % This file is part of the tugboat package.
 %
@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2023-12-20 v2.31
+                   [2024-01-24 v2.31
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -40,8 +40,8 @@
 %    \end{macrocode}
 %
 % \iffalse
-%
-% Note that the version control Id above relates to the number of times
+% 
+% The version control Id above relates to the number of times
 % the file has been checked-in, which relates to a development process
 % taking place on several machines, rather than the incidence of
 % significant change; the definitive version number is that in the
@@ -1286,9 +1286,15 @@
   \ensuremath{\rangle}%
 }
 %
-% Use \tt rather than \texttt because italic typewriter is just too ugly,
+% Use \tt rather than \texttt because italic typewriter is just too strange
 % and upright works well enough in both italic and bold contexts.
-% Would be nice to change catcode of _ for LaTeX3.
+% Would be nice to change catcode of _ for \LaTeX3, but we don't.
+% 
+% By the way, it would be possible to substitute typewriter slanted for
+% typewriter italic in general:
+% \url{https://tex.stackexchange.com/questions/692277}.
+% But it feels like that is too intrusive a change, even though in
+% practice we always prefer tt slanted.
 \DeclareRobustCommand{\cs}[1]{\texorpdfstring
   {{\tt \char`\\#1}}%
   {\textbackslash #1}%
