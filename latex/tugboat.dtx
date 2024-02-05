@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2024-01-24 v2.31
+                   [2024-02-05 v2.31
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -2463,14 +2463,21 @@
 % the essentially useless functionality of being able to change them
 % using assignment, which I'm not about to struggle with just now...
 %
-% \cs{AboveTitleSkip} and \cs{BelowTitleSkip} are what you'd expect;
+% \cs{AboveTitleSkip} is glue above the article title; 
+% \cs{BelowTitleSkip} is glue below the authors in the title block.
 % \cs{strulethickness} is the value to use for \cs{fboxrule} when
 % setting the title, and for the rule above titles when there is no box.
 %
+% For \cs{BelowTitleSkip}, add some stretch and shrink since the first
+% column of an article often needs it; otherwise, a first column of all
+% text will come out underfull.  Use |plus2pt| since that is the same
+% as the glue above sections, but |minus1pt| since we'd usually prefer
+% to shrink somewhere else if possible.
+% 
 %    \begin{macrocode}
-\newskip\AboveTitleSkip  \AboveTitleSkip=12\p@
-\newskip\BelowTitleSkip  \BelowTitleSkip=8\p@
-\newdimen\strulethickness       \strulethickness=.6\p@
+\newskip\AboveTitleSkip   \AboveTitleSkip=12pt
+\newskip\BelowTitleSkip   \BelowTitleSkip=8pt plus2pt minus1pt
+\newdimen\strulethickness \strulethickness=.6pt
 %    \end{macrocode}
 %
 % \cs{@sectitle} actually generates the section title (in a rather
@@ -2577,7 +2584,9 @@
     \else
 %    \end{macrocode}
 % Since we have \(\mathtt{\cs{BelowTitleSkip}} + \mathtt{4pt} =
-% \mathtt{\cs{baselineskip}}\), we say:
+% \mathtt{\cs{baselineskip}}\), we skip by |4pt| here. However, an
+% all-text first column still comes out underfull, maybe because of the
+% top rule? Thus \cs{BelowTitleSkip} is given a little stretch and shrink.
 %    \begin{macrocode}
       \nobreak \vskip 4\p@
       {%

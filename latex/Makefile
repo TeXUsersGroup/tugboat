@@ -26,6 +26,7 @@ ltugcomn.sty ltugboat.sty ltugboat.cls: tugboat.ins tugboat.dtx
 	$(latex) $<
 
 check: ltugboat.cls
+	$(pdflatex) tubfirstcolfull.tex
 	$(pdflatex) tubreftest.tex
 	$(pdflatex) tubatest.tex
 	$(pdflatex) tubdoi-final.tex

@@ -1,0 +1,81 @@
+% $Id$
+% Public domain.
+% 
+% Test document for a first column of an article being all text,
+% with no section headings. The hope is that it will not be underfull or
+% overfull; see \BelowTitleSkip in tugboat.dtx.
+% 
+\documentclass[final,runningminimal]{ltugboat}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage[hidelinks,pdfa]{hyperref}
+
+\title{Example \TUB\ article}
+
+% repeat info for each author; comment out items that don't apply.
+\author{First Last}
+\address{Street Address \\ Town, Postal \\ Country}
+\netaddress{user (at) example dot org}
+\personalURL{https://example.org/~user/}
+
+\begin{document}
+\maketitle
+
+\def\lyearnn{00}\def\lyear{19\lyearnn}
+\def\fyearnn{01}\def\fyear{19\fyearnn}
+\def\nyearnn{02}\def\nyear{19\nyearnn}
+
+The financial statements for \fyear\ have been reviewed by the \TUG{}
+board but have not been audited. The totals may vary slightly due to
+rounding. As a \acro{US} tax-exempt organization, \TUG's annual
+information returns are publicly available on our web site, below.
+%\url{https://tug.org/tax-exempt}.
+
+Membership dues revenue was slightly down in \fyear\ compared to
+\lyear{}; we ended the year with 1,162 paid members, 12 fewer than in
+\lyear. The \fyear\ online conference had a small loss, due mostly to
+unfavorable exchange rate variations. General contributions and product
+sales returned to their normal levels after last year's one-time large
+contributions. Thus, \fyear\ income was down around 33\%.
+
+\TUB\ production and mailing fees increased substantially. With that and
+one-time costs incurred with a change in the office, our bottom line for
+\fyear{} was negative: $-$\$26,167.
+
+\TUG's end-of-year asset total decreased, following that loss.
+
+Committed Funds are reserved for designated projects: \LaTeX, \CTAN,
+Mac\TeX, the \TeX\ development fund, and others
+(\tbsurl{https://tug.org/donate}).
+Incoming donations are allocated accordingly and disbursed as the
+projects progress.
+\TUG\ charges no overhead to administer these funds.
+
+The Prepaid Member Income category is member dues that were paid in
+earlier years for the current year (and beyond). The \fyear{} portion of
+this liability was converted into regular Membership Dues in January of
+\fyear{}. The payroll liabilities are for \fyear\ state and federal
+taxes due in January, \nyear{}.
+
+We have increased membership fees slightly in \nyear, for the first time
+in many years, as inflation and shipping costs have not stood still.
+Worldwide support from members and donations are what allow us to
+continue, so thank you! As always, we welcome ideas to attract new
+members.
+
+We continue to provide members with a monthly newsletter, journals and
+software, online support lists, and efficient service.
+
+The Prepaid Member Income category is member dues that were paid in
+earlier years for the current year (and beyond). The \fyear{} portion of
+this liability was converted into regular Membership Dues in January of
+\fyear{}. The payroll liabilities are for \fyear\ state and federal
+taxes due in January, \nyear{}.
+
+The Prepaid Member Income category is member dues that were paid in
+earlier years for the current year (and beyond). The \fyear{} portion of
+this liability was converted into regular Membership Dues in
+
+\loggingall
+\end{document}

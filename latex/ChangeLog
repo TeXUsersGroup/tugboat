@@ -1,3 +1,11 @@
+2024-02-05  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\BelowTitleSkip): add a little stretch and shrink,
+	so that if an article's first column has only text (no section
+	headings), it will not come out underfull.
+	* tubfirstcolfull.tex: new test doc.
+	* Makefile (check): run it.
+
 2024-01-24  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx,
