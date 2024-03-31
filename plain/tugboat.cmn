@@ -1,6 +1,6 @@
 %% @texfile{
 %%     filename   = "tugboat.cmn",
-%%     copyright  = "Copyright 1993-1996,2006,2008,2011-2023 TeX Users Group.
+%%     copyright  = "Copyright 1993-1996,2006,2008,2011-2024 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -30,7 +30,7 @@
 \next
 
 \def\fileversion{v1.29}
-\def\filedate{2023-10-28}
+\def\filedate{2024-03-31}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -97,7 +97,7 @@
 \ifx\tugstyloaded@\undefined\let\tugstyloaded@\plaintubstyle\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
+% emacs-page
 %     *****  abbreviations and logos  *****
 %
 
@@ -219,7 +219,6 @@
 \def\Thanh{H\`an~Th\^e\llap{\raise.5ex\hbox{\'{}}}~Th\`anh}
 \def\TIFF{\acro{TIFF}}
 \def\TikZ{Ti{\it k}Z}
-\def\TP{{\sl \TeX:\ The Program\/}}
 \def\ttn{{\sl TTN}\spacefactor1000 }
 \def\TTN{{\sl \TeX{} and TUG NEWS}\spacefactor1000 }
 \def\tubfont{\sl}               % redefined in other situations
@@ -259,7 +258,7 @@
 \def\nohyphens{\hyphenpenalty\@M\exhyphenpenalty\@M}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
+% emacs-page
 %     *****  utility registers and definitions  *****
 %
 
@@ -743,7 +742,7 @@
 
 \def\signaturemark{\leavevmode\llap{$\diamond$\enspace}}
 
-
+% emacs-page
 % Some hyphenation exceptions, plus read our entire
 % ushyphex.tex file if present -- unless \tubomithyphenations
 % is defined, in which case do nothing (needed for tb*hyf.tex).
@@ -1024,6 +1023,7 @@ that may not be obvious.  For full definitions, see real code above.
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+                      remove duplicate \TP definition.
 1.29      28 Oct 23   in \AllTeX, kern around ).
                       define \pdfTeX and \pdfLaTeX with italic corrections.
                       define \LMTX.

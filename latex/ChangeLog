@@ -1,3 +1,12 @@
+2024-03-31  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst (output.nonnull.original): don't try to check the
+	journal value if it's missing$ (e.g., @misc).
+	* tugboat.dtx (\tbsurl): call http to omit protocol for that too.
+	(bottomnumber): change from 3 to 2.
+	(topnumber): change from 3 to 4.
+	* ltubguid.ltx: maybe pdfa no longer recommended for hyperref.
+
 2024-02-05  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\BelowTitleSkip): add a little stretch and shrink,

@@ -1,3 +1,7 @@
+2024-03-31  Karl Berry  <karl@freefriends.org>
+
+	* acrocheck-tub: ignore \tbcode, \bibliograpy, ``quoted text''.
+
 2024-01-24  Karl Berry  <karl@freefriends.org>
 
 	* check-splice-tub: new script, called from top-level issue Makefile.

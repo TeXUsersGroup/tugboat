@@ -2,13 +2,16 @@
 # $Id$
 # Public domain. Originally written by Karl Berry, 2010.
 # 
-# \uname and \code is for tb136bien-unichart
+# \uname and \[um]code are for bien.
+# ``...'' is for tb139miller.
 acro_ok='[A-Z][-+_A-Z0-9]+'
 egrep -Hn "$acro_ok" "$@" \
 | sed -e 's/%.*//' \
-      -e 's/\\\(acro\|address\|cs\|texttt\|lstinline\|code\|pkg\|uname\|ucode\){[^}]*}//g' \
+      -e 's/\\\(acro\|address\|cs\|texttt\|tbcode\|lstinline\) *{[^}]*}//g' \
+      -e 's/\\\(bibliography\|code\|pkg\|uname\|[um]code\) *{[^}]*}//g' \
       -e 's/\\\(includegraphics\|cite\|bibitem\)\(\[[^]]*\]\)\?{[^}]*}//g' \
       -e 's/\(src\|id\)=".*"//g' \
+      -e 's/``'"[^']*''//g" \
       -e 's/|[^|]*|//g' \
       -e 's/\\type\? *{[^}]*}//g' \
       -e 's/url\(footnote\)\?{[^}]*}//g' \

@@ -194,6 +194,8 @@ FUNCTION {output.nonnull.original}
 { 's :=
   output.state mid.sentence =
     { last.output.check "journal" = not
+      journal missing$
+      or
         { ", " * }  % not a journal, normal comma+space separator
         { journal "TUGboat" = journal "\TUB" = or
           { skip$ } % TUGboat, no comma

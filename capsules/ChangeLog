@@ -1,3 +1,9 @@
+2024-03-31  Karl Berry  <karl@freefriends.org>
+
+	* crossref/ltx2crossrefxml-tugboat.cfg (\code, \tbcode): ignore
+	like others.
+	* lists-authinfo.txt (Bayar, Miller, Smith): orcids.
+
 2024-01-24  Karl Berry  <karl@freefriends.org>
 
 	* tb136capsule.txt (andre): ended up in category Typography, not Fonts.

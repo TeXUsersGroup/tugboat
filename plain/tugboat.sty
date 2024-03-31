@@ -1,6 +1,6 @@
 %% @texfile{
 %%     filename   = "tugboat.sty",
-%%     copyright  = "Copyright 1993,1999,2003,2006,2011-2023 TeX Users Group.
+%%     copyright  = "Copyright 1993,1999,2003,2006,2011-2024 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -22,7 +22,7 @@
 
 \def\thistubstyle{plain}
 \def\fileversion{v1.29}
-\def\filedate{2023-10-28}
+\def\filedate{2024-03-31}
 
 % general items
 
@@ -504,7 +504,9 @@
 %
 % Macros so we can use the same code as tugboat.dtx.
 \newif\iftubomitdoioption  % explicit option when posting early
-\newif\iftubsecondcolstart % we'll add if ever needed for plain
+
+\newif\iftubsecondcolstart % when we splice, e.g., tb139wermuth-isdim
+\newdimen\tubcolwidthandgutter
 \newif\iftubfinaloption    % set in tugboat.dates
 \def\tbsurl#1{{\tt #1}}    % we don't try to have live urls in plain
 \def\tbhurl#1{{\tt #1}}    % we don't try to have live urls in plain
@@ -522,7 +524,7 @@
                  doi.org/\tubdoiprefix/\volno-\issno/\jobname}%
     \scriptsize
     \vskip\baselineskip
-    \iftubsecondcolstart \moveright \tubcolwidthandgutter \fi
+    \iftubsecondcolstart \moveright\tubcolwidthandgutter \fi
     \rlap{\expandafter\tbsurl\expandafter{\thedoi}}%
     \vss
   }%
@@ -1365,6 +1367,10 @@
 
 \def\article{%
   \@allowspanningfigsfalse
+  \iftubsecondcolstart  % if splicing, start in col.2
+    \null\newcol        % and set horizontal shift
+    \tubcolwidthandgutter=\colwd \advance\tubcolwidthandgutter by \intercolwd
+  \fi
   \ifSecTitle \global\SecTitlefalse
   \else \vskip\AboveTitleSkip
     \kern\topskip
@@ -2243,6 +2249,8 @@
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+                      implement \iftubsecondcolstart for tb139wermuth-isdim.
+
 1.29      28 Oct 23   introduce \abovecaptionskipamount, reduce to \smallskip
                       a la ltugboat.
 

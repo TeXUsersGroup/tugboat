@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2024-02-05 v2.31
+                   [2024-03-31 v2.31
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -718,6 +718,7 @@
 \def\CMkIV{\ConTeXt\ \MkIV}
 \def\Cplusplus{C\plusplus}
 \def\plusplus{\raisebox{.7ex}{$_{++}$}}
+% consider rm vs. bold + tb139may-automata.ltx 
 \def\CPU{\acro{CPU}}
 \def\CSczabbr{\ensuremath{\cal C}\kern-.1667em\lower.5ex\hbox{$\cal S$}}
 \def\CSS{\acro{CSS}}
@@ -1376,11 +1377,13 @@
    \str_set:Nn\l_tmpa_str{#1}
    \str_if_in:NnTF \l_tmpa_str {http://}
     { 
-      \expandafter\hyper@linkurl
-       \expandafter{\expandafter\Hurl\expandafter{\l_tmpa_str}}{\l_tmpa_str}
+      \tbhurl@{#1} % if http, redirect to remove protocol
+      % this version prints the http, as we originally thought was better.
+      % \expandafter\hyper@linkurl
+      % \expandafter{\expandafter\Hurl\expandafter{\l_tmpa_str}}{\l_tmpa_str}
     }
     {
-      \str_remove_once:Nn\l_tmpa_str{https://}
+      \str_remove_once:Nn \l_tmpa_str {https://}
       \expandafter\hyper@linkurl
         \expandafter{\expandafter\Hurl\expandafter{\l_tmpa_str}}
                                                           {https://\l_tmpa_str}
@@ -1389,7 +1392,7 @@
 \def\tbhurl@#1  % http
  {
    \str_set:Nn\l_tmpa_str{#1}
-   \str_remove_once:Nn\l_tmpa_str{http://}   
+   \str_remove_once:Nn \l_tmpa_str {http://}   
    \expandafter\hyper@linkurl\expandafter{\expandafter\Hurl\expandafter
                                             {\l_tmpa_str}}{http://\l_tmpa_str}
  }
@@ -3118,8 +3121,8 @@
 % We want to allow more floats at the top/bottom/everywhere on
 % a page; all depends on their content.
 %    \begin{macrocode}
-\setcounter{bottomnumber}{3} % default 1
-\setcounter{topnumber}{3}    % default 2
+\setcounter{bottomnumber}{2} % default 1
+\setcounter{topnumber}{4}    % default 2
 \setcounter{totalnumber}{6}  % default 3
 %    \end{macrocode}
 %
