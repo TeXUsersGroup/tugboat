@@ -278,7 +278,7 @@
 
 \def\pressimage{\ulap{\llap{%
   \lower 8pt \hbox{%
-    \pdfximage width 6pc {press2-crop.pdf}\pdfrefximage\pdflastximage
+    \pdfximage width 6pc {press2.pdf}\pdfrefximage\pdflastximage
   }%
   \quad
 }}}

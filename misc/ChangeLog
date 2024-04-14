@@ -1,3 +1,12 @@
+2024-04-13  Karl Berry  <karl@freefriends.org>
+
+	* check-splice-tub: can't quit on \end{document} for
+	tb139beet; must ignore {verbatim} blocks.
+	Also, recognize \tubspliceleft and \tubspliceright.
+	* make-issue-pages-tub: formatting.
+	* tugboat.abbr-ctx (\tubaftersignature): new hook.
+	(\stopArticle): use it.
+
 2024-03-31  Karl Berry  <karl@freefriends.org>
 
 	* acrocheck-tub: ignore \tbcode, \bibliograpy, ``quoted text''.

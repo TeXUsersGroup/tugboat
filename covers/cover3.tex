@@ -13,7 +13,7 @@
 \hoffset = 0pt
 \voffset = -.6in
 \vsize = 10in
-\vfuzz = 2.5pt % don't worry too much
+\vfuzz = 21.6pt % default 2.5pt don't worry too much
 
 \def\scriptfonts{% for the A in LaTeX
   \scriptfont0=\sevenrm
@@ -21,7 +21,7 @@
   \scriptfont\slfam=\sevensl
 }
 
-\iftrue % fonts - 10pt
+\iffalse % fonts - 10pt
   \font\manual=logo10
   \font\difficultyfont=cmb10
   \font\smallsl = cmsl9  \font\smallrm = cmr9 \font\smallsy = cmsy9
@@ -36,7 +36,7 @@
   \baselineskip=12pt
 \fi
 
-\iffalse % fonts - 9pt (what we usually use)
+\iftrue % fonts - 9pt (what we usually use)
   \font\tenrm=cmr9  \font\tensl=cmsl9  \font\tentt=cmtt9  \font\manual=logo9
   \font\tenit=cmti9 \font\tenbf=cmbx9 \font\sf = cmss9
   \font\difficultyfont=cmb10
@@ -55,7 +55,7 @@
 \iffalse % fonts - 8pt
   \font\tenrm=cmr8 \font\tensl=cmsl8  \font\tentt=cmtt8  \font\manual=logo8
   \font\tenit=cmti8 \font\tenbf=cmbx8 \font\sf = cmss8
-  \font\difficultyfont=cmbx9
+  \font\difficultyfont=cmbx8 at 8.5pt
   \font\smallsl = cmsl8 at 7pt  \font\smallrm = cmr7 \font\smallsy = cmsy8
   \font\manualsl = logosl10 at 8pt
   \font\slc = cmsl8 at 5pt
@@ -70,9 +70,9 @@
 \rm  %  start smaller font
 
 \newskip\abovedifficultyskip % default 8pt plus2pt minus1pt
-  \abovedifficultyskip = 8pt plus2pt minus1pt
+  \abovedifficultyskip = 2pt plus2pt minus1pt
 \newskip\abovecapsuleskip    % default 2pt plus1pt
-  \abovecapsuleskip    = 2pt plus1pt
+  \abovecapsuleskip    = 1.6pt plus1pt
 
 % we want ragged right, and interword stretch seems unnecessary, but we
 % still allow interword shrink since it helps keep things on one line.

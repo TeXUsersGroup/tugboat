@@ -306,7 +306,8 @@
 \def\startArticle{}%\begin{document}\maketitle}
 \let\StartArticle=\startArticle
 %
-\def\stopArticle{\makesignature \end{document}}
+\def\tubaftersignature{} % hook for splicing
+\def\stopArticle{\makesignature \tubaftersignature \end{document}}
 \let\StopArticle=\stopArticle
 
 % sometimes we want to ignore buffers, sometimes print them.

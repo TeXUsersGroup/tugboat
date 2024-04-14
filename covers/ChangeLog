@@ -1,3 +1,17 @@
+2024-04-13  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (deps): add tugboat.sty.
+	(c3_target, c3_twopages): two-page c3 for 45:1.
+	(cover1.pdf): depend on coverdrawing.pdf.
+	($(tb)cmplete.lua): copy.
+	($(tb)complete.tex): symlink.
+	* cover1.tex: drawing (from garcia-metagraph).
+	* cover2.tex: rates increased.
+	* cover3.tex: quite overfull; use 9pt, smaller skips.
+	* cover4.tex: use 9pt, smaller skips.
+	* tubtocmac.tex (\tubplus): for Grail+ a la C++.
+	* tugboat.front: press2.pdf, no need for crop.
+
 2023-10-28  Karl Berry  <karl@freefriends.org>
 
 	* cover2.tex: 2024 next year.

@@ -165,6 +165,14 @@
 \def\ldots{\relax\ifmmode\plainldots\else$\plainldots\,$\fi}
 \let\dots=\ldots
 
+% fancy plus for ``Grail+'', tb45:1 = tb139, like C++.
+\def\tubplus{\raise.66ex\hbox{$_{+}$}}
+%\def\tubplus{% LaTeX version:
+%  \texorpdfstring
+%     % switch to bold if that's the current NFSS "series".
+%    {\raisebox{.7ex}{\ifx\f@series\bfseries@rm\boldmath\fi $_{+}$}}
+%    {+}} 
+
 % some fake LaTeX
 \def\emph#1{{\it #1}}
 \def\textbf#1{{\bf #1}}

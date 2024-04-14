@@ -11,7 +11,7 @@ cp = cpread
 # We don't use ltugboat.cfg here, but it is what we touch in
 # ../Makefile when building the whole issue. Seems safer to rebuild the
 # covers too.
-deps = ../tugboat.dates ../ltugboat.cfg #../calendar/lastpage.tex
+deps = ../tugboat.dates ../tugboat.sty ../ltugboat.cfg
 
 %.pdf: %.tex $(deps)
 	$(PDFTEX) '\nonstopmode\input $<' </dev/null || { rm -f $@; exit 1; }
@@ -22,12 +22,13 @@ deps = ../tugboat.dates ../ltugboat.cfg #../calendar/lastpage.tex
 	-@$(cp) $@ ../CADMUS/
 
 # normally:
-c3_target = cover3.pdf
-c3_twopages = false
+#c3_target = cover3.pdf
+#c3_twopages = false
 #
-# for tb137, cover3 is two pages, second page is copied to calendar.
-#c3_target = cover3a.pdf
-#c3_twopages = test $@ = cover3.pdf
+# for tb137 and tb139, cover3 is two pages, second page is copied to
+# calendar, so comment out above, and use:
+c3_target = cover3a.pdf
+c3_twopages = test $@ = cover3.pdf
 
 %-crop.pdf: %.pdf
 	pdfcrop-tub $< >/dev/null
@@ -37,9 +38,9 @@ c3_twopages = false
 all: spine.pdf cover4.pdf titlepage.pdf cover1.pdf cover2.pdf $(c3_target)
 
 titlepage.pdf: $(tb)quote.tex tugboat.front
-cover4.pdf: $(tb)cont.tex tugboat.front tubtocmac.tex
+cover4.pdf: $(tb)cont.tex tubtocmac.tex tugboat.front
 cover3.pdf: $(tb)cap.tex  tubtocmac.tex
-cover1.pdf: word-nobox.pdf press2.pdf # procdrawing.pdf
+cover1.pdf: word-nobox.pdf press2.pdf coverdrawing.pdf
 
 # cover3a.pdf is copied to ../CADMUS/ to replace the two-page version.
 cover3a.pdf: cover3.pdf cover3-crop.pdf
@@ -53,7 +54,7 @@ cover3a.pdf: cover3.pdf cover3-crop.pdf
 # So, we extract the linked toc pages from toclinks.pdf and combine them
 # with the issue.pdf. Hans wrote a special feature into the context
 # --extra=copy routine to support this, based on a Lua data file
-# that we create per issue.
+# that we create per issue; see rules below.
 # 
 # See tb138prod.pdf for a published note about this.
 $(tb)complete.pdf complete compl co c: $(tb)cmplete.lua \
@@ -63,8 +64,23 @@ $(tb)complete.pdf complete compl co c: $(tb)cmplete.lua \
 	c=$(tb)complete.pdf; du $$c #makes larger: ; ../ps2pdf-tub $$c; du $$c
 	$(cp) $(tb)complete.pdf ../webdir/
 
-# the whole interior, with the toc pages prepended and appended,
-# with internal links to the articles.
+# after copying the generic file, update the number of pages in the
+# issue and adjust c3 depending on whether it's one or two pages.
+$(tb)cmplete.lua: svn-covers/tbcomplete.lua
+	cp $< $@ || exit 1
+
+# the tex file doesn't need per-issue changes; just make a link
+# so the \jobname will include the issno.
+$(tb)complete.tex: svn-covers/tbcomplete.tex
+	rm -f $@
+	ln -s $< $@ || exit 1
+
+# i.e., copy tbcomplete.lua from svn:covers/
+# to $(tb)cmplete.lua (no o for better filename completion), and
+# tbcomplete.tex to $(tb)complete.tex.
+
+# the interior, with the toc pages prepended and appended,
+# with internal links to the articles. Used to create the final *complete.pdf.
 toclinks.pdf: toclinks.tex cover2.tex cover3.tex cover4.tex tubtocmac.tex \
               ../CADMUS/issue.pdf
 	$(PDFTEX) '$<' </dev/null || { rm -f $@; exit 1; }

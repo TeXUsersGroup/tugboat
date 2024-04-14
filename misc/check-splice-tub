@@ -121,30 +121,44 @@ sub find_singlesplice {
   my %items;
   
   for my $srcname (@source_files) {
-    #warn "source file $srcname\n";
+    warn "source file $srcname\n";
     open (my $src, $srcname) || die "open($srcname) failed: $!";
     while (<$src>) {
       # We don't worry about the end-of-document commands inside verbatim,
       # or other games with catcodes, etc.
       next if /^\s*%/;	      # comment
-      last if /^\\end\{document\}/; # latex
+      #last if /^\\end\{document\}/; # latex qqq no, tb139beet has it in verb
       last if /\\end$/;	      # plain
       last if /\\endarticle/; # tugboat
       
-      # Now try to recognize including the pdf of another item.
-      # The surrounding TeX code is arbitrary, but there are no(?)
-      # other cases where the source says "../something/tbsomething.pdf"
-      # so that is we match.
+      # Now try to recognize including the pdf of another item. Starting
+      # in 45:1, we invented \tubspliceleft and ...right commands to do
+      # the splice explicitly. So that's an easy first case. As in:
+      # \tubspliceright{beebe-wirth}
       # 
-      # Examples:
-      # \def\inclfile{../zprav/tb137zprav-crop.pdf}
-      # \rlap{\includegraphics{../prod/tb132prod-crop.pdf}}%
-      # \immediate\pdfximage width2.08\hsize {../instmem/instmem-crop.pdf}
-      next unless m,\.\./([^/]+)/(tb\d\d\d)?\1(-crop)?\.pdf,;
-      my $dirname = $1;
+      my $dirname;
+      if (m,\\tubsplice(left|right)\{([^}]*)\},) { # explicit splice cmd
+        $dirname = $2;
+
+        # Otherwise, we often include a pdf directly, The surrounding
+        # TeX code is arbitrary, but there are no(?) other cases where
+        # the source says "../something/tbsomething.pdf" so that's what
+        # we match.
+        # 
+        # Examples:
+        # \def\inclfile{../zprav/tb137zprav-crop.pdf}
+        # \rlap{\includegraphics{../prod/tb132prod-crop.pdf}}%
+        # \immediate\pdfximage width2.08\hsize {../instmem/instmem-crop.pdf}
+        # \tubsplice{../beebe-wirth/tb139beebe-width.pdf}
+      } elsif (m,\.\./([^/]+)/(tb\d\d\d)?\1(-crop)?\.pdf,) { # inclusion
+        $dirname = $1;
+      } else {
+        next;
+      }
       
       (my $srcitem = $srcname) =~ s,.*/(tb\d\d\d)?(.*)\...x$,$2,;
       $items{$dirname} = $srcitem;
+      warn " found $dirname=$srcitem\n";
     }
     close ($src) || die "close($srcname) failed: $!";    
   }
