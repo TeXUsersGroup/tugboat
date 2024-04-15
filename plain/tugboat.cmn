@@ -29,8 +29,8 @@
 \fi
 \next
 
-\def\fileversion{v1.29}
-\def\filedate{2024-03-31}
+\def\fileversion{v1.30}
+\def\filedate{2024-04-15}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -1023,7 +1023,8 @@ that may not be obvious.  For full definitions, see real code above.
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
-                      remove duplicate \TP definition.
+1.30      15 Apr 24   remove duplicate \TP definition.
+
 1.29      28 Oct 23   in \AllTeX, kern around ).
                       define \pdfTeX and \pdfLaTeX with italic corrections.
                       define \LMTX.
