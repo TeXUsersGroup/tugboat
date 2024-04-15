@@ -1,12 +1,17 @@
 $Id$
 This file records noteworthy changes.  This file is public domain.
 
+-----------------
+2.32 (2023-04-15):
 ltugboat.cls:
+- don't print leading http://.
 - increase natural space, stretch, shrink after run-in heads; before,
   \frenchspacing was unintentionally in effect.
 - decrease \floatsep and \textfloatsep to go along with reduced
   \abovecaption skip; increase topnumber, bottomnumber, totalnumber,
   to further avoid going to a float page so soon.
+- allow some flexibility in glue below title.
+- new abbreviation \YAML.
 
 -----------------
 2.31 (2023-10-28):
