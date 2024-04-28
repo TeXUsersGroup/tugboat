@@ -1,3 +1,23 @@
+2024-04-28  Karl Berry  <karl@freefriends.org>
+
+        * tb139capsule.txt: new file.
+	* Makefile (testiss,lastiss,crossref_iss): tb139.
+	* capaccum.pl (accumulation): also ignore four-digit hex entities.
+	* lists-regexps.txt (\meta): new definition, expanding
+        "&#x27e8;<i>$1</i>&#x27e9;", the mathematical angle brackets.
+        (Hope font coverage is good enough.)
+        (\code): also accept \tbcode.
+        (\booktitle): use non-capture group (?:...) for consistency.
+        * lists-translations.txt (\tubplus): +.
+        * lists-unifications.txt (Garc&#xed;a&#xa0;De&#xa0;Castro):
+        give Federico all his accents.
+
+	* capout.pl (write_entries): <nobr> the page range, as breaking at
+	the hyphen is irritating.
+		
+	* capaccum-author.pl (print_all_by_author): msg wording,
+	not exactly "additional".
+
 2024-04-13  Karl Berry  <karl@freefriends.org>
 
 	* tb137capsule.tex (hefferon-asymptote): add Graphics as section.

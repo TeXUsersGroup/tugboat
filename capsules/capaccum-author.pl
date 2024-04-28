@@ -159,7 +159,7 @@ START_TITLE_GROUP
         if (! $add_sortkey) {
           # happens when there are differing versions of the name,
           # e.g., wrong text in lists-unifications.
-          warn "no sortkey for additional author $add_html "
+          warn "no sortkey for author $add_html "
                . "(title $title, author $a_html)";
           next;
         }

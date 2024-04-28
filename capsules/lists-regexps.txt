@@ -9,17 +9,27 @@
 # /g is always applied.
 # 
 # Furthermore, /ee is applied, so the rhs must be evalable. Meaning that
-# when we concatenate we have to make it a Perl string.
+# when we concatenate we have to make it a Perl string. Meaning we use
+# double quotes "..." when doing anything with $1.
+# 
+# Furthermore, when adding a new entity or HTML, have to also add it to
+# lists-translations or it will incorrectly show up in the id= strings.
+# 
+# Furthermore, occasionally it's convenient to match multiple control
+# sequences on the same line, such as \tbcode and \code. Then we use the
+# non-capturing group (?:) so the rhs can still use $1; we could also
+# switch those rhs's to use $2, but this seems cleaner.
 # 
 # Assume that the lists-translations have already been applied.
 
 # \s* to end a control sequence is not correct; see $endcw in
 # ToUnicode.pm. But how to use a variable reference here?
 \\acro\s*\{(.*?)\}||$1
-\\(booktitle|titleref)\s*\{(.*?)\}||"<i>$2</i>"
-\\code\s*\{(.*?)\}||"<tt>$1</tt>"
+\\(?:booktitle|titleref)\s*\{(.*?)\}||"<i>$1</i>"
+\\(?:tb)?code\s*\{(.*?)\}||"<tt>$1</tt>"
 \\cs\s*\{(.*?)\}||"<tt>&#x5c;$1</tt>"
 \\emph\s*\{(.*?)\}||"<i>$1</i>"
+\\meta\s*\{(.*?)\}||"&#x27e8;<i>$1</i>&#x27e9;"
 \\pkg\s*\{(.*?)\}||$1
 \\pkgname\s*\{(.*?)\}||$1
 \\tbsurl\s*\{(.*?)\}||"<tt>https://$1</tt>"
@@ -50,9 +60,9 @@
 \{\\tt\\bs (.*?)\}||"<tt>\\$1</tt>"
 \{\\tt\s*(.*?)\}||"<tt>$1</tt>"
 
-# Remove whitespace at beginning and end; instead, we do this in the
-# code (caputil.pl::normalize_whitespace fn) for more control over when
-# and where it happens.
+# Do not remove whitespace at beginning and end here; instead, we do
+# this in the code (caputil.pl::normalize_whitespace fn), to have more
+# control over when and where it happens.
 #^\s+(.*)||$1
 #(.*)\s+$||$1
 

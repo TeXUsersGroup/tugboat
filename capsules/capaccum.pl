@@ -55,8 +55,9 @@ sub accumulation {
 
       $title_sort =~ s!<.*?>!!g;            # remove html markup
       $title_sort =~ s!&nbsp;! !g;          # consider spaces when sorting
-      $title_sort =~ s!&(amp|[lr]dquo|[mn]dash);!!g; # remove entities
-      $title_sort =~ s!&#x..;!!g; # remove hex entities
+      $title_sort =~ s!&(amp|[lr]dquo|[mn]dash);!!g; # remove named entities
+      $title_sort =~ s!&#x..(..)?;!!g;      # remove hex entities
+                                            # (two or four digits)
       #
       # We want to keep & followed by ; only so that we will see
       # when a new entity has appeared that we need to handle, most
