@@ -116,8 +116,10 @@ tbnn := $(shell expr $(tbn) + 1)
 # to set up directory for following issue (= $tn envvar).
 copynext:
 	@echo $(tbnn)
-	cp -ai Makefile *.tex tugboat.* word* press2.pdf ${tn}/covers/
+	cp -ai Makefile *.tex tugboat.* word-* press2.pdf svn-covers \
+	       ${tn}/covers/
 	cd ${tn}/covers && rename s/$(tbn)/$(tbnn)/ *
+	cd ${tn}/covers && rm -f tbcomplete.tex # copy in later
 # during dev:
 #%:
 #	cd .. && $(MAKE) $@

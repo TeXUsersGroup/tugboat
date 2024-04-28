@@ -4,8 +4,8 @@ This file records noteworthy changes.  This file is public domain.
 -----------------
 2.32 (2023-04-15):
 ltugboat.cls:
-- don't print leading http://.
-- increase natural space, stretch, shrink after run-in heads; before,
+- don't print leading http://, like with https://.
+	- increase natural space, stretch, shrink after run-in heads; before,
   \frenchspacing was unintentionally in effect.
 - decrease \floatsep and \textfloatsep to go along with reduced
   \abovecaption skip; increase topnumber, bottomnumber, totalnumber,
