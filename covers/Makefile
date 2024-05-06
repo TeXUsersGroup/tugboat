@@ -113,13 +113,28 @@ check:
 	cd .. && $(MAKE) $@
 
 tbnn := $(shell expr $(tbn) + 1)
+pdir := ../../httpd/html/TUGboat/production/`basename $(tn)`
+
 # to set up directory for following issue (= $tn envvar).
 copynext:
-	@echo $(tbnn)
+	@echo $(tbnn) = `basename $(tn)`
+#
+	# top level.
+	mkdir -p -m 2770 ${tn}/covers
+	chgrp -R tub ${tn}
+	touch ${tn}/TB$(tbnn)
+	yes n | (cd .. && cp -ai *.* *tub* Makefile ${tn}/) # not Status.txt
+#
+	# production dir.
+	cd .. && mkdir -m 2775 ${pdir}
+	cd .. && ln -s ${pdir} ${tn}/webdir
+#
+	# covers/ subdir.
 	cp -ai Makefile *.tex tugboat.* word-* press2.pdf svn-covers \
 	       ${tn}/covers/
 	cd ${tn}/covers && rename s/$(tbn)/$(tbnn)/ *
-	cd ${tn}/covers && rm -f tbcomplete.tex # copy in later
+	cd ${tn}/covers && rm -f tb*complete.lua # copy in later
+
 # during dev:
 #%:
 #	cd .. && $(MAKE) $@
