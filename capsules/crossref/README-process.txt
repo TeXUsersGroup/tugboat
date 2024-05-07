@@ -67,7 +67,7 @@ that should be supported, try to fix the translations:
   development checkout in a sibling directory.
 
 - Titles and authors are converted entirely within captub, not using
-  ltx2crossxml. This is done because we need to generate the author's
+  ltx2crossxml. This is done because we need to generate the author
   HTML strings for the TUGboat contents and lists pages anyway. We
   specify this using the --rpi-is-xml option (in the Makefiles).
 
@@ -79,7 +79,7 @@ that should be supported, try to fix the translations:
 - For the bibliography, no font changes or other html-level markup is
   used.  It is plain (Unicode) text.  The only special cases are making
   urls be live links, and newlines before bullets.  (We should revise
-  the process to translate bbls like abstracts.)
+  the process to translate bbls like abstracts. And structured references.)
 
 On the other hand, sometimes authors use one-off abbreviations or
 complicated TeX code in their abstracts or bibliographies.  In such cases,
@@ -146,7 +146,7 @@ minutes. Can also check results online:
                            (or Show System Queue)
 
 When the result mail comes in, see <batch_data> summary element at end,
-should be all success. Browse through the rest. Fix as needed.
+should be all success. Browse through the rest. Fix as needed. Commit.
 
  After the test upload succeeds, nothing left to do until a few days
 before it's time to make the issue VV:N live.
@@ -163,7 +163,7 @@ Remake everything else too, just to be sure all is well:
 And then copy the final landing files to the live web directory
 (assuming we've been doing all this on a development machine):
   host=tug.org
-  dir=/home/httpd/html/TUGboat/tbVV-N
+  dir=/home/httpd/html/TUGboat/tb$VV-N
   ssh $host mkdir $dir                           # ensure directory exists
   ssh $host "echo 'not yet' >$dir/index.html"    # no premature leak
   scp -p crossref/dir1.lndout/*.html $host:$dir/
@@ -183,9 +183,10 @@ crossref/Makefile to enable it:
 Can check the production site for progress:
   https://doi.crossref.org -> Show System Queue
 
-Should register the dois some days before making the pdfs public, so
-that the "doi" links on the landing pages will work for testing, and the
-doi links on the contents pages will work after publishing.
+Register the dois some days before making the pdfs public, so that the
+"doi" links on the landing pages will work for testing, and the doi
+links on the contents pages will work after publishing. They may take
+some time to be processed.
 
 Then commit any changes to our source files:
  cd ~tubprod/svn/capsules

@@ -1,3 +1,13 @@
+2024-05-07  Karl Berry  <karl@freefriends.org>
+
+	* capcrossref.pl (crossref_create_landing_page): do not add period
+	if shortdesc ends with ? or !.
+	Use &ndash; for page range.
+	* crossref/README-process.txt: register earlier.
+	* crossref/ltx2crossrefxml-tugboat.cfg (\meta, \YAML): new.
+	(\Dash, \dash): ignore preceding whitespace.
+	* tb139capsule.txt (starynovotny): need \CONNECT{}.
+
 2024-04-28  Karl Berry  <karl@freefriends.org>
 
         * tb139capsule.txt: new file.

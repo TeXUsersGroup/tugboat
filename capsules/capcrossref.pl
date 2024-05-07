@@ -256,7 +256,7 @@ END_LANDING
   my $shortdesc = "";
   if ($cap{"shortdesc_html"}) {
     $shortdesc = $cap{"shortdesc_html"};
-    $shortdesc .= "." unless $cap{"shortdesc_html"} =~ /\.$/;
+    $shortdesc .= "." unless $cap{"shortdesc_html"} =~ /[.?!]$/;
   }
 
   my $subtitles = $cap{subtitles_html} ? "\n$cap{subtitles_html}" : "";
@@ -299,11 +299,14 @@ END_LANDING
 
   # Pluralize page(s) nicely in the publication info.
   my $pages_label = "page" . ($cap{pageno_print} =~ /-/ ? "s" : "");
+  # Use en-dash instead of hyphen for prettiness here, but keep using
+  # hyphens on the toc pages, for ease of scraping (e.g., by Nelson).
+  (my $pageno_print_pretty = $cap{pageno_print}) =~ s/-/&ndash;/;
   print $LANDING <<END_LANDING;
 
 <p><b>Publication</b>: ${issue_href}TUGboat
 volume $volno, number $issno</a> ($issue{year}),
-$pages_label&nbsp;$cap{pageno_print}</p>
+$pages_label&nbsp;$pageno_print_pretty</p>
 END_LANDING
 
   my $prev_item = &item_link ($cap{pageno}, -1, "previous",$issue{"capsules"});

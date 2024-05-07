@@ -293,7 +293,7 @@ access</a>.
 \capsule{}
   {Graphics}
   {Travis Stenborg}
-  {Semi-automated Ti\emph{k}Z directed acyclic graphs in~R}
+  {Semi-automated \TikZ\ directed acyclic graphs in~R}
   {brief tutorial on using the \texttt{causalDisco} R package to
    generate \acro{DAG}s}
   {115-116}
@@ -465,7 +465,7 @@ access</a>.
 
 \capsule{}
   {Software \& Tools}
-  {V\'{\i}t Star\'y Novotn\'y, Marei Peischl}
+  {V\'{\i}t Star\'y\CONNECT{}Novotn\'y, Marei Peischl}
   {Fast regression testing of \TeX{} packages: Multiprocessing and~batching}
   {batch limiting and splitting, developer vs.\ maintainer use}
   {89-96}
