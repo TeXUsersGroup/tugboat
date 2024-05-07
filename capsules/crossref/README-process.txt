@@ -272,7 +272,7 @@ rm dir*/tb${prevnnn}*.* dir2.process/issue.xml
 
 - commit:
 svn status  # should be just the expected landing files; then:
-svn commit -m"$previss (tb$prevnnn) public"
+svn commit -m"archive landing files: $previss (tb$prevnnn) public"
 svn diff ../Makefile # should be just testiss and crossref_iss, undo:
 svn revert ../Makefile
 
