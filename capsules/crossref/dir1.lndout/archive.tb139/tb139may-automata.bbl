@@ -1,0 +1,59 @@
+\begin{thebibliography}{10}
+
+\bibitem{Borja2023TikZAutomata}
+I.~Borja.
+\newblock An introduction to automata design with {\TikZ}'s automata library.
+\newblock \emph{TUGboat} 44(1):102--107, 2023.
+\newblock \url{https://tug.org/TUGboat/tb44-1/tb136prado-automata.pdf}
+
+\bibitem{GrailWebsite}
+{Department of Computer Science, University of Prince Edward Island}.
+\newblock {Theory of Computing Software Server}.
+\newblock \url{http://grail.smcs.upei.ca}.
+
+\bibitem{GrailVisualizerRepository}
+A.~May, T.J.~Smith.
+\newblock {{Grail+ Visualizer}.
+\newblock \url{https://github.com/flarelabstfx/Grail-Visualisation}.
+
+\bibitem{JFLAP2TikZPackage}
+A.~Mertz, W.~Slough.
+\newblock {The \texttt{jflap2tikz} package}.
+\newblock \url{https://ctan.org/pkg/jflap2tikz}.
+
+\bibitem{Mertz2014TypesettingFiguresCS}
+A.~Mertz, W.~Slough, N.~{Van Cleave}.
+\newblock Typesetting figures for computer science.
+\newblock \emph{TUGboat} 35(2):179--191, 2014.
+\newblock \newline \url{https://tug.org/TUGboat/tb35-2/tb110mertz.pdf}
+
+\bibitem{RaymondWood1994Grail}
+D.~Raymond, D.~Wood.
+\newblock {G}rail: A {C++ library for automata and
+  expressions.
+\newblock \emph{Journal of Symbolic Computation}, 17(4):341--350, 1994.
+
+\bibitem{RodgerFinley2006JFLAP}
+S.H.~Rodger, T.W.~Finley.
+\newblock \emph{\acro{JFLAP}: An Interactive Formal Languages and Automata
+  Package}.
+\newblock Jones \& Bartlett Publishers, Sudbury, {MA}, 2006.
+
+\bibitem{Tantau2023TikZPGFManual}
+T.~Tantau, et~al.
+\newblock \emph{The \TikZ\ and \acro{PGF} Packages: Manual for Version 3.1.10},
+  January 2023.
+\newblock \url{https://mirrors.ctan.org/graphics/pgf/base/doc/pgfmanual.pdf}
+
+\bibitem{PGFTikZPackage}
+{The \acro{PGF}/\TikZ\ Team}.
+\newblock {The \texttt{pgf} package}.
+\newblock \url{https://ctan.org/pkg/pgf}.
+
+\bibitem{Tutte1963DrawAGraph}
+W.T.~Tutte.
+\newblock How to draw a graph.
+\newblock \emph{Proceedings of the London Mathematical Society},
+  s3-13:743--767, 1963.
+
+\end{thebibliography}

@@ -1,0 +1,78 @@
+\def\acro#1{#1}
+\begin{thebibliography}{10}
+
+\bibitem{deims2024}
+{DEIMS~2024}.
+\newblock {Website of the \emph{5th International Workshop on Digitization and
+  E-Inclusion in Mathematics and Science 2024}, Nihon University, Tokyo,
+  Japan}, February 2024.
+\newblock \url{https://workshop.sciaccess.net/deims2024/}.
+
+\bibitem{pdf-ua-nutshell}
+Olaf Drümmer and Bettina Chang.
+\newblock {\em {\acro{PDF/UA} in a Nutshell\Dash Accessible documents with
+  \PDF{}}}.
+\newblock {\PDF\ Association}, August 2013.
+\newblock \url{https://pdfa.org/resource/pdfua-in-a-nutshell/}.
+
+\bibitem{ISO14289-1:2014}
+{\em ISO 14289-1:2014; Document management applications \Dash Electronic document
+  file format enhancement for accessibility\Dash 1: Use of ISO 32000-1
+  (PDF/UA-1)}, 2nd edition, 2014.
+\newblock \url{https://www.iso.org/standard/64599.html}.
+
+\bibitem{pdfspec-iso32000-2_2020}
+{ISO}.
+\newblock {\em ISO 32000-2:2020(en); Document management \Dash Portable document
+  format \Dash Part 2: PDF 2.0}, 2nd edition, 2020.
+\newblock \url{https://iso.org/en/contents/data/standard/07/58/75839.html}.
+
+\bibitem{pdfspec-iso32005_2023}
+{\em ISO/TS 32005:2023; Document management \Dash Portable Document Format \Dash
+  PDF 1.7 and 2.0 structure namespace inclusion in ISO 32000-2}, 1st edition,
+  2023.
+\newblock \url{https://iso.org/en/contents/data/standard/04/58/45878.html}.
+
+\bibitem{ISO14289-2:2024}
+{\em ISO/FDIS 14289-2; Document management applications \Dash Electronic document
+  file format enhancement for accessibility\Dash Part 2: Use of ISO 32000-2
+  (PDF/UA-2)}, 1st edition, 2024.
+\newblock \url{https://www.iso.org/standard/82278.html}.
+
+\bibitem{Lamport:1994}
+Leslie Lamport.
+\newblock {\em {\LaTeX}: A Document Preparation System: User's Guide and
+  Reference Manual}.
+\newblock Addison Wesley, 2nd edition, 1994.
+
+\bibitem{latex-project-website}
+{{\LaTeX{} Project Team}}.
+\newblock {Website of the \LaTeX{} Project}.
+\newblock \url{https://latex-project.org/}.
+
+\bibitem{TLC3}
+Frank Mittelbach and Ulrike Fischer.
+\newblock {\em {The \LaTeX{} Companion}}.
+\newblock Ad{\-d}i{\-s}on-Wes{\-l}ey, Boston, MA, USA, third edition, 2023.
+
+\bibitem{feasibility-study}
+Frank Mittelbach, Ulrike Fischer, and Chris Rowley.
+\newblock {\em {\LaTeX\ Tagged \PDF\ Feasibility Evaluation}}.
+\newblock {\LaTeX\ Project}, September 2020.
+\newblock \url{https://latex-project.org/publications/indexbyyear/2020/}.
+
+\bibitem{PDFA}
+{{PDF Association (PDFA)}}.
+\newblock {Website of the PDF association}.
+\newblock \url{https://pdfa.org/}.
+
+\bibitem{Soiffer:deims2021}
+Neil Soiffer.
+\newblock Accessible {PDF}: 2\x{226F}1. \gobble{not-greater-than}
+\newblock In {\em The 4th International Workshop on Digitization and
+  E-Inclusion in Mathematics and Science 2021}. The DEIMS2021 Organizing
+  Committee, 2021.
+\newblock
+  \url{https://workshop.sciaccess.net/deims2021/DEIMS2021_Proceedings.zip}.
+
+\end{thebibliography}

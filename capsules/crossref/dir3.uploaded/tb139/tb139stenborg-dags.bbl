@@ -1,0 +1,104 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{10}
+
+\bibitem{Suchinta:2022:ECS}
+S.~Arif, M.A.~MacNeil.
+\newblock Utilizing causal diagrams across quasi-experimental approaches.
+\newblock \emph{Ecosphere}, 13(4):e4009, 2022.
+
+\bibitem{Borja:2023:IAD}
+I.~Borja.
+\newblock An introduction to automata design with {TikZ}'s automata library.
+\newblock \emph{TUGboat} 44(1):102--107, 2023.
+\newblock \url{https://doi.org/10.47397/tb/44-1/tb136prado-automata}
+
+\bibitem{Cinner:2018:GOHI}
+J.E.~Cinner, E.~Maire, et~al.
+\newblock Gravity of human impacts mediates coral reef conservation gains.
+\newblock \emph{Proc. Natl. Acad. Sci. USA}, 115(27):E6116--E6125, 2018.
+
+\bibitem{Gelin:2018:CDSc}
+G.~Gao, B.~Mishra, D.~Ramazzotti.
+\newblock Causal data science for financial stress testing.
+\newblock \emph{J.~Comput.\ Sci.}, 26:294--304, 2018.
+
+\bibitem{Gross:2013:HoGT}
+J.L.~Gross, J.~Yellen, P.~Zhang.
+\newblock \emph{Handbook of Graph Theory, 2nd Edition}.
+\newblock Chapman and Hall/CRC, 2013.
+
+\bibitem{Grätzer:2016:BookMMiL}
+G.~Grätzer.
+\newblock \emph{More Math Into {\LaTeX}}.
+\newblock Springer, Cham, 5th ed., 2016.
+
+\bibitem{Haralambous:2018:TPT}
+Y.~Haralambous.
+\newblock {\TeX} as a path, a talk given at {Donald Knuth}'s 80th birthday
+  celebration symposium.
+\newblock \emph{TUGboat} 39(1):8--15, 2018.
+\newblock \url{https://tug.org/TUGboat/tb39-1/tb121haralambous-knuth80.pdf}
+
+\bibitem{Kottwitz:2023:BookLGT}
+S.~Kottwitz.
+\newblock \emph{{\LaTeX} graphics with TikZ}.
+\newblock Packt, Birmingham, 2023.
+\newpage
+\bibitem{Laffoley:2019:MPA}
+D.~Laffoley, J.M.~Baxter, et~al.
+\newblock Ch.~29: Marine protected areas.
+\newblock In~\emph{World Seas: An Environmental Evaluation}, pp.~549--569.
+  Elsevier, second ed., 2019.
+
+\bibitem{Maggi:2018:DNTa}
+C.~Maggi.
+\newblock The {DuckBoat}: The {Morse} code of {\TikZ}.
+\newblock \emph{TUGboat} 39(1):21--26, 2018.
+\newblock \url{https://tug.org/TUGboat/tb39-1/tb121duck-tikz.pdf}
+
+\bibitem{Maggi:2020:DBP}
+C.~Maggi.
+\newblock The {DuckBoat}: You do not need to be {Neo} to cope with a {\TikZ}
+  matrix.
+\newblock \emph{TUGboat} 41(1):20--25, 2020.
+\newblock \url{https://tug.org/TUGboat/tb41-1/tb127duck-matrix.pdf}
+
+\bibitem{Mertz:TB28-1-91}
+A.~Mertz, W.~Slough.
+\newblock Graphics with \acro{PGF} and {Ti{\it k}Z}.
+\newblock \emph{TUGboat} 28(1):91--99, 2007.
+\newblock \newline \url{https://tug.org/TUGboat/tb28-1/tb88mertz.pdf}
+
+\bibitem{Mertz:TB30-2-214}
+A.~Mertz, W.~Slough.
+\newblock A {Ti{\it k}Z} tutorial: {Generating} graphics in the spirit of
+  {\TeX}.
+\newblock \emph{TUGboat}~30(2):214--226, 2009.
+\newblock \newline \url{https://tug.org/TUGboat/tb30-2/tb95mertz.pdf}
+
+\bibitem{Stenborg:2023:TRA}
+T.~Stenborg.
+\newblock A {TikZ} rendering of the {Arecibo} message.
+\newblock \emph{TUGboat} 44(3):375--377, 2023.
+\newblock \url{https://doi.org/10.47397/tb/44-3/tb138stenborg-arecibo}
+
+\bibitem{vanDongen:2012:BookLF}
+M.R.C.~van Dongen.
+\newblock \emph{{\LaTeX} and Friends}.
+\newblock Springer, Berlin, 2012.
+
+\bibitem{Walczak:TB29-1-176}
+Z.~Walczak.
+\newblock Graphics in {\LaTeX} using {\TikZ}.
+\newblock \emph{TUGboat} 29(1):176--179, 2008.
+\newblock \newline \url{https://tug.org/TUGboat/tb29-1/tb91walczak.pdf}
+
+\bibitem{Wolcott:TB33-1-102}
+K.~Wolcott.
+\newblock Three-dimensional graphics with \acro{PGF}/{\TikZ}.
+\newblock \emph{TUGboat} 33(1):102--113, 2012.
+\newblock \newline \url{https://tug.org/TUGboat/tb33-1/tb103wolcott.pdf}
+
+\end{thebibliography}

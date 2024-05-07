@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{latexmk}
+J.~Collins, E.~McLean, D.J.~Musliner.
+\newblock \emph{The latexmk package}.
+\newblock \url{https://www.cantab.net/users/johncollins/latexmk/index.html}
+
+\bibitem{invoice2}
+S.~Dierl.
+\newblock \emph{The invoice2 package}.
+\newblock \newline \url{https://github.com/no-preserve-root/invoice2}
+
+\bibitem{ginvoice}
+E.~Nijenhuis.
+\newblock \emph{The GinVoice GTK application}.
+\newblock \url{https://gitlab.gnome.org/MacLotsen/ginvoice}
+
+\bibitem{ginvoice-template}
+E.~Nijenhuis.
+\newblock \emph{The GinVoice template}.
+\newblock \newline \url{https://github.com/Xerdi/ginvoice-template/tree/maps}
+
+\bibitem{lua-placeholders}
+E.~Nijenhuis.
+\newblock \emph{The lua-placeholders package}.
+\newblock \url{https://ctan.org/pkg/lua-placeholders}
+
+\end{thebibliography}

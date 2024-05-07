@@ -1,0 +1,60 @@
+\begin{thebibliography}{1}
+
+\bibitem{opszbook}
+T.~Ahrens, S.~Mugikura.
+\newblock \emph{Size-Specific Adjustments to Type Designs}.
+\newblock Just Another Foundry, Munich, 2014.
+
+\bibitem{ATF1923}
+{American Type Founders Company}.
+\newblock \emph{Specimen Book \& Catalogue}.
+\newblock [Jersey City], 1923.
+\newblock \newline \url{https://archive.org/details/specimenbookcata00amer}
+
+\bibitem{spec1798}
+W.~Caslon.
+\newblock \emph{A Specimen of Printing Types, by Wm Caslon, Letter-Founder to
+  the King}.
+\newblock C.~Whittingham, 1798.
+\newblock \newline \url{https://archive.org/details/specimenofprinti00casl}
+
+\bibitem{OTspec}
+P.~Constable, K.~Turetzky, et~al.
+\newblock {OpenType} specification version 1.9, 2022.
+\newblock \newline
+  \url{https://learn.microsoft.com/en-us/typography/opentype/spec/}
+
+\bibitem{hickes}
+G.~Hickes.
+\newblock \emph{Linguarum vett. septentrionalium thesaurus grammatico-criticus
+  et archæologicus}.
+\newblock [Oxford University Press], Oxford, 1703-1705.
+
+\bibitem{hudson2016}
+J.~Hudson.
+\newblock Introducing {OpenType} variable fonts, 2016.
+\newblock
+  \url{https://medium.com/variable-fonts/https-medium-com-tiro-introducing-opentype-variable-fonts-12ba6cd2369}
+
+\bibitem{Kew:TB26-2-115}
+J.~Kew.
+\newblock {{\XeTeX, the Multilingual Lion: {\TeX} meets Unicode and smart font
+  technologies}}.
+\newblock \emph{TUGboat} 26(2):115--124, 2005.
+\newblock \newline \url{https://tug.org/TUGboat/tb26-2/kew.pdf}
+
+\bibitem{Robertson:TB26-3-215}
+W.~Robertson.
+\newblock Advanced font features with {\XeTeX}{\Dash}the {\sf fontspec}
+  package.
+\newblock \emph{TUGboat} 26(3):215--223, 2005.
+\newblock \url{https://tug.org/TUGboat/tb26-3/tb84robertson.pdf}
+
+\bibitem{voss2022}
+H.~Voß.
+\newblock Using {OpenType} and {TrueType} fonts with {\XeLaTeX} and
+  {\LuaLaTeX}.
+\newblock \emph{TUGboat} 43(3):295--299, 2022.
+\newblock \newline \url{https://tug.org/TUGboat/tb43-3/tb135voss-unifont.pdf}
+
+\end{thebibliography}

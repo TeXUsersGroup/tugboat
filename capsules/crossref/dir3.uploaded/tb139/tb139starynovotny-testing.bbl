@@ -1,0 +1,57 @@
+\begin{thebibliography}{1}
+
+\bibitem{latex2023l3build}
+\gobble{LaTeX}{\LaTeX{} project team}.
+\newblock l3build: A testing~and building system for {\AllTeX}, Nov. 2023.
+\newblock \url{https://ctan.org/pkg/l3build}
+
+\bibitem{mittelbach2014l3build}
+F.~Mittelbach, W.~Robertson, {\LaTeX 3 team}.
+\newblock l3build:~{A} modern {L}ua test suite for {\TeX} programming.
+\newblock \emph{TUGboat} 35(3):287--293, 2014.
+\newblock \newline \url{https://tug.org/TUGboat/tb35-3/tb111mitt-l3build.pdf}
+
+\bibitem{novotny2020arqmath}
+V.~Novotný.
+\newblock {ARQMath} data preprocessing, June 2020.
+\newblock
+  \url{https://github.com/MIR-MU/ARQMath-data-preprocessing/blob/main/scripts/latex_tsv_to_cmml_and_pmml_tsv.py}
+\newpage
+\bibitem{novotny2023implement}
+V.~Novotný.
+\newblock Implement batching and summarization to unit tests, Jan. 2023.
+\newblock \newline \url{https://github.com/witiko/markdown/issues/245}
+
+\bibitem{novotny2020three}
+V.~Novotný, P.~Sojka, et~al.
+\newblock Three is better than one.
+\newblock In~\emph{CEUR Workshop Proceedings: ARQMath task at CLEF conference},
+  vol. 2696, pp.~1--30, Thessaloniki, Greece, 2020. CEUR-WS.
+\newblock \url{https://ceur-ws.org/Vol-2696/paper_235.pdf}
+
+\bibitem{starynovotny2023measure}
+V.~Starý~Novotný.
+\newblock Measure the speed of tests with different numbers of processes and
+  batch sizes, Oct.~2023.
+\newblock
+  \url{https://github.com/Witiko/markdown/blob/main/experiments/2023-10-12-test-batching}
+
+\bibitem{tange2011gnu}
+O.~Tange.
+\newblock {{GNU}} {P}arallel: The command-line power tool.
+\newblock \emph{USENIX Mag}, 36(1):42--47, 2011.
+\newblock Available from \url{https://doi.org/10.5281/zenodo.8278274}.
+
+\bibitem{wright2022l3build}
+J.~Wright.
+\newblock l3build: The beginner's guide.
+\newblock \emph{TUGboat}~43(1):40--43, 2022.
+\newblock \url{https://tug.org/TUGboat/tb43-1/tb133wright-l3build.pdf}
+
+\bibitem{wright2015automating}
+J.~Wright, {\LaTeX 3 team}.
+\newblock Automating {\LaTeX}(3) testing.
+\newblock \emph{TUGboat} 36(3):234--236, 2015.
+\newblock \newline \url{https://tug.org/TUGboat/tb36-3/tb114wright.pdf}
+
+\end{thebibliography}

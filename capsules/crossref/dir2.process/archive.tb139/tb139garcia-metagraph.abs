@@ -1,0 +1,12 @@
+The aim of this article is to present MetaGraph, a set of \MP\ macros and
+utilities developed over the last couple of months as an open-ended
+environment for drawing \textit{graphs} (in the sense of ``nodes and
+edges''), and intended to complement external graph analysis engines
+with the versatility of programmatic formatting.
+
+After a quick glance at MetaGraph's capabilities through three demo graphs,
+the sections below offer a general description of the system,
+highlighting the \textit{data~vs.~procedure} approach that makes it
+different from the plotting routines typically available in those
+external engines\Dash with a special mention of \TikZ\Dash and offering
+a general `feel' for what this approach entails and permits.

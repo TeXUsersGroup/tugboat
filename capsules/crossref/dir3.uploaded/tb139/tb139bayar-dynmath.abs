@@ -1,0 +1,11 @@
+This paper gives an overview of the characteristics and capabilities
+of a package called \texttt{dynMath}. The main aim of this package
+is to provide \LaTeX{} with the ability to support dynamic mathematical
+symbols, thereby improving the quality of the scientific document.
+Dynamic mathematical symbols are developed in such a way that, when
+stretched, they will respect \emph{optical scaling}, \emph{uniformity}
+of shape, \emph{right-sizing} and the closest possible \emph{likeness}
+to their \emph{analogues} in the \emph{old printing system} (metal
+typesetting). The tools supplying the stretching with the above characteristics
+are supported in part by \LaTeX{} (\texttt{dynMath}) and in part
+by a PostScript Type~3 font.

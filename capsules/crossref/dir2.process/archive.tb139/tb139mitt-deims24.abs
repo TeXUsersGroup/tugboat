@@ -1,0 +1,31 @@
+  At the \acro{TUG} 2020 online conference the \LaTeX{} Project Team
+  announced the start of a multi-year project to enhance \LaTeX{} so
+  that it will fully and naturally support the creation of structured
+  document formats, in particular the \enquote{tagged \PDF} format as
+  required by accessibility standards such as \acro{PDF/UA}.
+
+  In this talk we present the current achievements of this
+  project
+  and the issues we encountered along the way. We also outline open
+  areas of research and the future steps that we shall take to
+  automatically produce well-tagged \PDF\ that supports accessible
+  standards (in particular, the recently finalized \acro{PDF/UA-2}) as well
+  as general reuse and further conversions. This will be achieved by
+  embedding in the \PDF\ a comprehensive description of the document
+  structure.
+
+  This project is carried out by a small number of
+  developers. Besides the authors, the following individuals from
+  the \LaTeX{} Project Team are actively involved:
+   Chris Rowley,
+   David Carlisle,
+   Joseph Wright,
+   Marcel Krüger, and
+   Phelype Oleinik.
+
+  We also wish to acknowledge the contributions from various
+  members of the \TeX{} community and beyond; these have been made
+  through comments and suggestions, and more recently through the
+  testing of the new functionality made available in the form of
+  prototype implementations. Without such feedback it would be
+  difficult to finish this project with satisfactory results.

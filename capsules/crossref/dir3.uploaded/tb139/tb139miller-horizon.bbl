@@ -1,0 +1,70 @@
+\providecommand\ctanbibpkgname[1]{\tbcode{#1}}
+\begin{thebibliography}{10}
+
+\bibitem{Beebe:TB25-1-7}
+N.H.F.~Beebe.
+\newblock {25 Years of {\TeX} and \MF: Looking back and looking
+  forward{\Dash}\acro{TUG}\,2003 keynote address}.
+\newblock \emph{TUGboat} 25(1):7--30, 2004.
+\newblock \url{https://tug.org/TUGboat/tb25-1/beebe-2003keynote.pdf}
+
+\bibitem{nih}
+B.~Donald.
+\newblock The \ctanbibpkgname{nih} package, 2005-06-01.
+\newblock \url{https://ctan.org/pkg/nih}
+
+\bibitem{booktabs}
+D.~Els, S.~Fear.
+\newblock The \ctanbibpkgname{booktabs} package, version 1.61803398, 2020.
+\newblock \url{https://ctan.org/pkg/booktabs}
+
+\bibitem{freesoftware}
+{Free Software Foundation}.
+\newblock What is free software?, Feb. 2021.
+\newblock \url{https://www.gnu.org/philosophy/free-sw.en.html}
+
+\bibitem{Hagen:TB26-2-152}
+H.~Hagen.
+\newblock {{\LuaTeX: Howling to the moon}}.
+\newblock \emph{TUGboat} 26(2):152--157, 2005.
+\newblock \url{https://tug.org/TUGboat/tb26-2/hagen.pdf}
+
+\bibitem{h2020proposal}
+G.~Indiveri.
+\newblock The \ctanbibpkgname{h2020proposal} package, version 1.0, 2015-09-20.
+\newblock \url{https://ctan.org/pkg/h2020proposal}
+
+\bibitem{grant}
+J.~Karr.
+\newblock The \ctanbibpkgname{grant} package, version 0.0.5, 2019-02-26.
+\newblock \url{https://ctan.org/pkg/grant}
+
+\bibitem{proposal}
+M.~Kohlhase.
+\newblock The \ctanbibpkgname{proposal} package, version 1.5, 2016-04-15.
+\newblock \url{https://ctan.org/pkg/proposal}
+
+\bibitem{mcilroy1978unix}
+D.~McIlroy, E.N.~Pinson, B.A.~Tague.
+\newblock Unix time-sharing system: Foreword.
+\newblock \emph{The Bell System Technical Journal}, 57(6):1899--1904,
+  July--Aug. 1978.
+\newblock \url{https://archive.org/details/bstj57-6-1899}
+
+\bibitem{mynsfc}
+F.~Qi.
+\newblock The \ctanbibpkgname{mynsfc} package, version 1.30, 2020-08-18.
+\newblock \url{https://ctan.org/pkg/mynsfc}
+
+\bibitem{reich2012does}
+R.~Reich.
+\newblock Does {\TeX}{\slash}{\LaTeX}\ give a headstart with other programming
+  languages? [answer], Jan. 2012.
+\newblock \url{https://tex.stackexchange.com/a/42749/22603}
+
+\bibitem{pgfgantt}
+W.~Skala.
+\newblock The \ctanbibpkgname{pgfgantt} package, version 5.0, 2018.
+\newblock \url{https://ctan.org/pkg/pgfgantt}
+
+\end{thebibliography}

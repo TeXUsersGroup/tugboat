@@ -1,0 +1,56 @@
+<!--#include virtual="/header.html"-->
+<title>Fast regression testing of TeX packages: Multiprocessing and batching
+       - TUGboat 45:1 (2024) - TeX Users Group</title>
+</head><body>
+
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+<h1><a href="/TUGboat/tb45-1/">TUGboat 45:1</a> (2024)<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
+
+<p><b>Title</b>: Fast regression testing of TeX packages: Multiprocessing and batching</p>
+
+<p><b>Summary</b>:
+batch limiting and splitting, developer vs. maintainer use.</p>
+
+<p><b>Full text of article</b>: <a href="https://tug.org/members/TUGboat/tb45-1/tb139starynovotny-testing.pdf">available to TUG members</a> (<a href="/join.html">join TUG</a>);
+will be publicly available after the next issue is published.</p>
+
+<p><b>Authors</b>:
+<a href="/TUGboat/Contents/listauthor.html#StaryNovotny,Vit">V&#xed;t Star&#xfd;&#xa0;Novotn&#xfd;</a>, <a href="/TUGboat/Contents/listauthor.html#Peischl,Marei">Marei Peischl</a></p>
+
+<p><b>Publication</b>: <a href="/TUGboat/tb45-1/">TUGboat
+volume 45, number 1</a> (2024),
+pages&nbsp;89&ndash;96</p>
+
+<p><b>DOI</b> (this page):
+<a href="https://doi.org/10.47397/tb/45-1/tb139starynovotny-testing">10.47397/tb/45-1/tb139starynovotny-testing</a>
+<br><small>(<a href="https://doi.org/10.47397/tb/45-1/tb139huenniger-mediawiki2latex">previous doi</a>
+- <a href="https://doi.org/10.47397/tb/45-1/tb139may-automata">next doi</a>)</small></p>
+
+<p><b>Category</b>:
+<a href="/TUGboat/Contents/listkeyword.html#CatTAGSoftwareTools">Software&#xa0;&&#xa0;Tools</a></p>
+      
+<p><b>Difficulty</b>: Intermediate Plus</p>
+
+<p><b>Abstract</b>:
+In the version 3.0.0 of the Markdown package for TeX, the number of regression tests increased from 143 to 783. This caused the tests to run for up to 15 hours, which slowed down our development cycle.
+In this article, we describe a novel technique for batching test files that reduced our testing time from 15 hours to just 15 minutes. With batching, the amount of time that is spent on actual testing increased from 5% to 97%. When combined with multiprocessing on 32 CPUs, our batching technique achieved a speed increase of up to 161 times compared to running without any multiprocessing or batching.</p>
+
+<p><b>References</b>:</p>
+<ol class="tugbbl">
+<li class="tugbbl">LaTeX project team. l3build: A testing and building system for (La)TeX, Nov. 2023. <a href="https://ctan.org/pkg/l3build">ctan.org/pkg/l3build</a></li>
+<li class="tugbbl">F. Mittelbach, W. Robertson, LaTeX3 team. l3build: A modern Lua test suite for TeX programming. TUGboat 35(3):287&#x2013;293, 2014. <a href="https://tug.org/TUGboat/tb35-3/tb111mitt-l3build.pdf">tug.org/TUGboat/tb35-3/tb111mitt-l3build.pdf</a></li>
+<li class="tugbbl">V. Novotn&#x00fd;. ARQMath data preprocessing, June 2020. <a href="https://github.com/MIR-MU/ARQMath-data-preprocessing/blob/main/scripts/latex_tsv_to_cmml_and_pmml_tsv.py">github.com/MIR-MU/ARQMath-data-preprocessing/blob/main/scripts/latex_tsv_to_cmml_and_pmml_tsv.py</a></li>
+<li class="tugbbl">V. Novotn&#x00fd;. Implement batching and summarization to unit tests, Jan. 2023. <a href="https://github.com/witiko/markdown/issues/245">github.com/witiko/markdown/issues/245</a></li>
+<li class="tugbbl">V. Novotn&#x00fd;, P. Sojka, et al. Three is better than one. In CEUR Workshop Proceedings: ARQMath task at CLEF conference, vol. 2696, pp. 1&#x2013;30, Thessaloniki, Greece, 2020. CEUR-WS. <a href="https://ceur-ws.org/Vol-2696/paper_235.pdf">ceur-ws.org/Vol-2696/paper_235.pdf</a></li>
+<li class="tugbbl">V. Star&#x00fd; Novotn&#x00fd;. Measure the speed of tests with different numbers of processes and batch sizes, Oct. 2023. <a href="https://github.com/Witiko/markdown/blob/main/experiments/2023-10-12-test-batching">github.com/Witiko/markdown/blob/main/experiments/2023-10-12-test-batching</a></li>
+<li class="tugbbl">O. Tange. GNU Parallel: The command-line power tool. USENIX Mag, 36(1):42&#x2013;47, 2011. Available from <a href="https://doi.org/10.5281/zenodo.8278274">doi.org/10.5281/zenodo.8278274</a></li>
+<li class="tugbbl">J. Wright. l3build: The beginner&#x2019;s guide. TUGboat 43(1):40&#x2013;43, 2022. <a href="https://tug.org/TUGboat/tb43-1/tb133wright-l3build.pdf">tug.org/TUGboat/tb43-1/tb133wright-l3build.pdf</a></li>
+<li class="tugbbl">J. Wright, LaTeX3 team. Automating LaTeX(3) testing. TUGboat 36(3):234&#x2013;236, 2015. <a href="https://tug.org/TUGboat/tb36-3/tb114wright.pdf">tug.org/TUGboat/tb36-3/tb114wright.pdf</a></li>
+</ol>
+
+<hr><small><a href="/TUGboat/">TUGboat</a> 45:1, 2024 (<a href="/TUGboat/tb45-1/">issue 139</a>)
+&nbsp; [generated 2024-05-07]
+</small><br><!--#include virtual="/footer.html"-->

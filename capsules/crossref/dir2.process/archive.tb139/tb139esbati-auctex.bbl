@@ -1,0 +1,60 @@
+\begin{thebibliography}{10}
+
+\bibitem{reftex}
+C.~Dominik.
+\newblock \emph{RefTeX\Dash {S}upport for \LaTeX{} labels, references,
+  citations and index entries with \GNU{} {E}macs}.
+\newblock \url{https://gnu.org/software/auctex/manual/reftex.index.html}
+
+\bibitem{emacs:w64}
+Emacs.
+\newblock {Building and Installing Emacs on 64-bit MS-Windows using MSYS{} and
+  MinGW-w64}.
+\newblock \url{https://git.savannah.gnu.org/cgit/emacs.git/tree/nt/INSTALL.W64}
+
+\bibitem{previewlatex}
+D.~Kastrup, J.{\AA}.~Larsson, et~al.
+\newblock \emph{preview-latex \Dash A \LaTeX{} preview mode for AUC-TeX{} in
+  Emacs}.
+\newblock \url{https://gnu.org/software/auctex/manual/preview-latex.index.html}
+
+\bibitem{monspe:2020}
+S.~Monnier, M.~Sperber.
+\newblock {Evolution of Emacs Lisp}.
+\newblock \emph{Proc. ACM Program. Lang.}, 4(HOPL), June 2020.
+\newblock \url{https://doi.org/10.1145/3386324}
+
+\bibitem{msys2}
+MSYS.
+\newblock {MSYS{} Software Distribution and Building Platform for Windows}.
+\newblock \url{https://msys2.org}
+
+\bibitem{stallm:2007}
+R.~Stallman.
+\newblock {Why Open Source Misses the Point of Free Software}.
+\newblock
+  \url{https://gnu.org/philosophy/open-source-misses-the-point.en.html},
+  2007--2021.
+
+\bibitem{stallm:1985}
+R.~Stallman, et~al.
+\newblock \emph{\GNU{} {E}macs {M}anual (updated for {E}macs version 29.1)},
+  1985--2023.
+\newblock \url{https://gnu.org/software/emacs/manual/emacs}
+
+\bibitem{flymake}
+J.~T{\'a}vora, P.~Kobiakov.
+\newblock \emph{\GNU\ Flymake}.
+\newblock \newline \url{https://gnu.org/software/emacs/manual/flymake.html}
+
+\bibitem{eglot}
+J.~T{\'a}vora, E.~Zaretskii.
+\newblock \emph{{Eglot: The Emacs Client for the Language Server Protocol}}.
+\newblock \url{https://joaotavora.github.io/eglot/}
+
+\bibitem{thor:2022}
+K.K.~Thorup, P.~Abrahamsen, et~al.
+\newblock \emph{AUC-TeX: A sophisticated \TeX\ environment for Emacs}.
+\newblock \url{https://gnu.org/software/auctex/manual/auctex.index.html}
+
+\end{thebibliography}

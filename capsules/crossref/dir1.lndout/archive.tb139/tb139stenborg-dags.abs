@@ -1,0 +1,6 @@
+Directed acyclic graphs (\acro{DAG}s) are a key visualisation tool in graph
+theory. Semi-automated generation of Ti\emph{k}Z code for rendering \acro{DAG}s
+is introduced. Automatic Ti\emph{k}Z generation via the \texttt{causalDisco}
+package of the R statistical programming language is proposed. Such easy, rapid 
+\acro{DAG} generation for \LaTeX\ environments alleviates the need for tedious
+manual layout of \acro{DAG} vertices and edges.

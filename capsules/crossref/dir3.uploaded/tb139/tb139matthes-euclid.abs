@@ -1,0 +1,13 @@
+\pkg{tkz-elements} [2] is based on Lua and \LuaLaTeX\ to perform
+calculations and obtain point coordinates in the plane. These
+coordinates are then transmitted to a package that can plot them.
+Currently, plotting is accomplished with \TikZ\ or \pkg{tkz-euclide},
+but MetaPost is also a viable option.
+
+This paper demonstrates how \pkg{tkz-elements} can be utilized for tasks
+requiring mathematical computations. With it, not only can you create
+Euclidean geometry figures, but you can also conduct calculations within
+your document.
+
+The current version is 2.00 and is required to compile the examples in
+this paper.

@@ -1,0 +1,4 @@
+        This article discusses the question of how one can determine if a
+given string of characters represents a valid number for \TeX. A macro
+that looks and behaves like a Boolean conditional is implemented to
+answer the question.

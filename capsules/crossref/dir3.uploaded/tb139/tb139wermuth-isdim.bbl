@@ -1,0 +1,32 @@
+% this file is read twice
+%   first:  the shortcuts for the references are defined
+%   second: the list for references is output
+% start the file with \startbibrefs and end it with \par
+% NOTE: a § can't be used in front of \endbib, move it to the previuos line
+\startbibrefs\begingroup
+\ninepoint
+\emergencystretch=0.03\hsize
+\def\newline{\hfil\break}%
+\raggedright
+\frenchspacing
+\hyphenpenalty=10000
+\def\URLaccessdate(#1){}% suppress ``accessed <date>'' info after URLs
+
+\bibitem{citeCTvA} Donald E. Knuth, \TB,
+   Volume~A of \CandT, Boston, Massachusetts: \AW, 1984.
+
+\bibitem{citeCTvB} Donald E. Knuth, \TP,
+   Volume~B of \CandT,
+   Boston,\newline Massachusetts: \AW, 1986.
+
+\bibitem{citeUW} Udo Wermuth, Is a given input a
+   valid \TeX\ \meta{number}?,
+   {\sl \TUB\/ \bf45}:1 (2024), 106--109.\par
+   \biburl https://tug.org/TUGboat/tb45-1/tb138wermuth-isint.pdf\endurl
+   \endbib(2023-04-04)
+\end{thebibliography}
+\endgroup
+% Local Variables:
+% coding: iso-latin-9-unix
+% ispell-local-dictionary: "en_US"
+% End:

@@ -1,0 +1,42 @@
+\begin{thebibliography}{1}
+
+\bibitem{arseneau}
+D.~Arseneau.
+\newblock {The \texttt{varwidth} package}, version 0.92.
+\newblock \url{https://ctan.org/pkg/varwidth}
+
+\bibitem{latexproject}
+{\gobble{LaTeX}{\LaTeX\ Project Team}}.
+\newblock {\LaTeX\ for authors\Dash current version.}
+\newblock \url{https://ctan.org/pkg/usrguide}
+
+\bibitem{lehman}
+P.~Lehman, J.~Wright.
+\newblock {The \texttt{etoolbox} Package: An {\eTeX} Toolbox for Class and
+  Package Authors}, version {v2.5k (2020-10-05)}.
+\newblock \url{https://ctan.org/pkg/etoolbox}
+
+\bibitem{maggi}
+C.~Maggi.
+\newblock {{The DuckBoat—Beginners’ Pond: No more table nightmares with
+  \texttt{tabularray}!}}
+\newblock \emph{{\TUB}}, 44(1):64--70, 2023.
+\newblock \url{https://tug.org/TUGboat/tb44-1/tb136duck-tabularray.pdf}
+
+\bibitem{samcarter}
+{samcarter}.
+\newblock {The TikZlings package\Dash drawing animals and beings in
+  TikZ, version 1.0 (2022-06-17).
+\newblock \url{https://ctan.org/pkg/tikzlings}
+
+\bibitem{sturm}
+T.F.~Sturm.
+\newblock {The \texttt{tcolorbox} package}, version 6.2.0 (2024-01-10).
+\newblock \url{https://ctan.org/pkg/tcolorbox}
+
+\bibitem{tantau}
+T.~Tantau, et~al.
+\newblock {The TikZ and \acro{PGF} Packages}.
+\newblock \url{https://ctan.org/pkg/pgf}
+
+\end{thebibliography}

@@ -1,0 +1,89 @@
+\begin{thebibliography}{10}
+
+\bibitem{Anane-2021}
+A.~Anane.
+\newblock Arabic text justification using {\LuaLaTeX{}} and the {DigitalKhatt
+  OpenType} variable font.
+\newblock \emph{TUGboat} 42(3):247--257, 2021.
+\newblock \url{https://tug.org/TUGboat/tb42-3/tb132anane-variable.pdf}
+
+\bibitem{Andre-1994}
+J.~Andr{\'{e}}, I.~Vatton.
+\newblock Dynamic optical scaling and variable-sized characters.
+\newblock \emph{Electronic Publishing}, 7(4):231--250, 1994.
+\newblock \url{https://jacques-andre.fr/japublis/opticalscaling.pdf}
+
+\bibitem{Bayar-2016}
+A.~Bayar.
+\newblock Towards an operational {\AllTeX{}} package supporting optical scaling
+  of dynamic mathematical symbols.
+\newblock \emph{\TUB} 37(2):171--179, 2016.
+\newblock {\tug} 2016 (Toronto) conference proceedings.
+\newblock \url{https://tug.org/TUGboat/tb37-2/tb116bayar.pdf}
+
+\bibitem{Berry-1999}
+D.M.~Berry.
+\newblock Stretching letter and slanted-baseline formatting for {A}rabic,
+  {H}ebrew, and {P}ersian with ditroff/ffortid and dynamic {PostScript} fonts.
+\newblock \emph{Software: Practice and Experience}, 29(15):1417--1457, 1999.
+\newblock
+  \url{https://cs.uwaterloo.ca/~dberry/FTP_SITE/tech.reports/keshide.paper.pdf}
+
+\bibitem{Cults-Clubs-2013}
+{Circuitous Root}.
+\newblock Clubs and cults revisiting the concept of `typeface' and the optical
+  scale in typefounding, 2013.
+\newblock
+  \url{https://www.circuitousroot.com/artifice/letters/press/typemaking/making-matrices/terms/logical-grouping/clubs-and-cults/index.html}
+
+\bibitem{Optic-Scale-ing-2013}
+{Circuitous Root}.
+\newblock From the optical scale to optical scaling, 2013.
+\newblock
+  \url{https://www.circuitousroot.com/artifice/letters/press/typemaking/mats/optical/index.html}
+
+\bibitem{Lazrek-2010}
+M.~Elyaakoubi, A.~Lazrek.
+\newblock Justify just or just justify.
+\newblock \emph{Journal of Electronic Publishing}, 13(1), 2010.
+
+\bibitem{TeX-1984}
+D.E.~Knuth.
+\newblock \emph{The \TeX book}.
+\newblock Addison-Wesley, Reading, Massachusetts, 1st ed., 1984.
+
+\bibitem{Lame-1859}
+G.~Lam{\'{e}}.
+\newblock \emph{Le{\c{c}}ons sur les coordonn{\'{e}}es curvilignes et leurs
+  diverses applications}.
+\newblock Imprimerie de Mallet Bachelier, Rue du Jardinet 12, Paris, 1859.
+\newblock \url{https://archive.org/details/leonssurlescoor01lamgoog}
+
+\bibitem{LaTeX-1994}
+L.~Lamport.
+\newblock \emph{\LaTeX{}{\Dash}A Document Preparation System}.
+\newblock Addison Wesley, USA, 1994.
+
+\bibitem{CurExt-2003}
+A.~Lazrek.
+\newblock {CurExt}, typesetting variable-sized curved symbols.
+\newblock \emph{TUGboat} 24(3):323--327, 2003.
+\newblock Euro\TeX\ 2003 (Brest) conference proceedings.
+\newblock \url{https://tug.org/TUGboat/tb24-3/lazrek.pdf}
+
+\bibitem{LuaTeX-2024}
+{Lua\TeX{} development team}.
+\newblock \emph{Lua\TeX{} Reference Manual}.
+\newblock \url{https://ctan.org/pkg/luatex}
+
+\bibitem{Belin-1974}
+M.~Monge, M.C.~Audouin-Egoroff, F.~Lemaire-Body.
+\newblock \emph{Arithmetiques, Analyse et Probabilit{\'{e}}s, Terminal C et E}.
+\newblock Librairie Classique Eug{\`{e}}ne Belin, France, 1974.
+
+\bibitem{Dvips-2024}
+T.~Rokicki.
+\newblock \emph{Dvips: A DVI-to-PostScript Translator}.
+\newblock \url{https://tug.org/dvips}
+
+\end{thebibliography}

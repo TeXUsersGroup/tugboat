@@ -1,0 +1,9 @@
+    This paper introduces variable fonts, now supported by \LuaTeX,
+    and explains the benefits this new font technology offers to \LuaLaTeX\
+    users\Dash chief among these being the restoration of some of the typographical
+    capabilities of metal type, nearly lost with the advent of digital fonts.
+    It then describes the capabilities of two variable fonts developed by
+    the author\Dash Junicode VF (where
+    ``V'' stands for ``variable'', not ``virtual'') and Elstob\Dash and briefly
+    introduces the packages that provide access to them, especially the options
+    and commands for controlling their axes.

@@ -1,0 +1,8 @@
+In this article, we discuss a new software tool that interacts with 
+Grail+, a library of automata-theoretic command-line utilities. Our 
+software, the Grail+\ Visualizer, takes the textual representation of a 
+finite automaton produced by Grail+\ and generates \TikZ\ code to 
+illustrate the finite automaton, with automatic layout of states and 
+transitions. In addition to giving an overview of the basics of automata 
+theory and Grail+, we discuss how the Grail+\ Visualizer works in 
+detail and suggest avenues for future work.

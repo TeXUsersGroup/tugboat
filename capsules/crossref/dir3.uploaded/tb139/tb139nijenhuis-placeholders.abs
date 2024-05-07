@@ -1,0 +1,8 @@
+        This article examines the implementation of the invoice template
+        in GinVoice~[3] and explores how the invoice
+        template can better align with the \LaTeX\ ecosystem by
+        introducing an additional data layer in \YAML\ using
+        \texttt{lua-placeholders}. With the introduction of
+        \texttt{lua-placeholders}, \LaTeX\ users have complete freedom
+        in formatting invoice templates, and the invoice templates are
+        directly integratable with the enhanced version of GinVoice.
