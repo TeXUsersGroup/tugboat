@@ -271,7 +271,7 @@ ls -lt dir*/tb${prevnnn}* # bbl/abs should be old, rpi/xml new
 rm dir*/tb${prevnnn}*.* dir2.process/issue.xml
 
 - commit:
-svn status  # assuming just the expected landing files:
+svn status  # should be just the expected landing files; then:
 svn commit -m"$previss (tb$prevnnn) public"
 svn diff ../Makefile # should be just testiss and crossref_iss, undo:
 svn revert ../Makefile
