@@ -11,7 +11,7 @@ more_options =
 #more_options = --webroot=/home/tubprod/45-1/webdir
   #
   # disable url validation during doi setup:
-more_options = --webroot=/
+#more_options = --webroot=/
 
 # profiling.
 #profopt = -d:NYTProf
@@ -27,7 +27,7 @@ default check: one #all-diff
 
 # These issue values, and most of the targets below, come into play with
 # publishing a TUGboat issue; see the README-tug-procedures file on tug.org.
-testiss = 139
+testiss = 138
 lastiss = 139
 crossref_iss = 139
 

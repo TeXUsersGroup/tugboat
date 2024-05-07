@@ -255,9 +255,9 @@ sub write_entries {
     print qq!</td>\n!;
     
     # the (printable/original) page number; almost always present,
-    # except for the complete.pdf link.
+    # except for the complete.pdf link. Don't break at the dash.
     print qq!    <td align=right valign=top>&nbsp;!
-          . qq!<nobr>$cap{pageno_print}&nbsp;<nobr></td>!
+          . qq!<nobr>$cap{pageno_print}&nbsp;</nobr></td>!
       if $cap{"pageno_print"};
 
     # end of this entry.
