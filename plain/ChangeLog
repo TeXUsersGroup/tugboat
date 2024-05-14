@@ -1,3 +1,8 @@
+2024-05-14  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.sty (\endarticle): \nobreak before \vfil, to avoid a
+	possibly-empty last page, as in tb139wermuth-isdim.
+
 2024-03-31  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\tubcolwidthandgutter): \newdimen.

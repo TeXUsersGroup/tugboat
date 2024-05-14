@@ -22,7 +22,7 @@
 
 \def\thistubstyle{plain}
 \def\fileversion{v1.30}
-\def\filedate{2024-03-31}
+\def\filedate{2024-05-14}
 
 % general items
 
@@ -64,14 +64,11 @@
 %  **  utilities
 %  **  initialization
 
-
-
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     *****  fonts  *****
 %
-
 
 %  Struts give ascenders and descenders to assist in baseline alignment
 %  (e.g. of adjoining vertical boxes); useful only with text fonts.
@@ -360,7 +357,6 @@
 %     *****  page dimensions  *****
 %
 
-
 %  vertical dimensions
 
 \newdimen\trimlgt       \trimlgt=11in           % 10.5in (vols 7-9)
@@ -443,7 +439,6 @@
 %
 %     *****  headers/footers  *****
 %
-
 
 \def\pagenoprefix{}
 
@@ -577,13 +572,11 @@
   \gdef\pageprefix{#2}%   % as in A-10 for appendices; not used just now
   \nextrunner }
 
-
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     *****  insertions  *****
 %
-
 
 \newif\if@floatable     \@floatabletrue         % sometimes we don't want
 \def\nofloat{\@floatablefalse}                  % midinsertions to float
@@ -654,7 +647,6 @@
 %
 %     *****  output  *****
 %
-
 
 %       Reorganize \pagecontents from PLAIN to put footnotes at very
 %       bottom of page, even if \raggedbottom.  Also add bottom insertions.
@@ -810,13 +802,11 @@
   \ExecuteNextDC         % possible `Delayed Command'
   }
 
-
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     *****  page adjustment  *****
 %
-
 
 %  In the absence of automatic column-balancing, provide a mechanism
 %  for manually shortening a specified page.
@@ -922,7 +912,6 @@
       \noexpand\@ExecuteNextDC\the\@DelayedCommandList\noexpand\endList}%
     \@form
   \fi \fi}
-
 
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1403,7 +1392,17 @@
   }
 
 
-\def\endarticle{\vfil\end}              % redefined in drivers
+% without the \nobreak, we can end up with an empty last page
+% (tb139wermuth-isdim). As Udo explains (13may24):
+%  After TeX adjusts the page height the tugboat.sty output routine
+%  starts the \ExecuteNextDC macro that prepares for a new page. This
+%  page gets a \topskip and more input is read next. Only \endarticle is
+%  left so a \vfill finishes the started column and your routine adds
+%  another one to complete the page. That's all that ends up on the page.
+% With the \nobreak, the signature will be put on the last page, and the
+% previous page will be underfull, so it becomes obvious that a little
+% space should be taken away somewhere.
+\def\endarticle{\nobreak\vfil\end}
 
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1474,6 +1473,7 @@
 
 \newif\if@allowindent
 \def\allowindent{\global\@allowindenttrue}
+
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -2010,13 +2010,11 @@
   }
 }
 
-
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     *****  figures  *****
 %
-
 
 \newif\if@@mid  \@@midfalse
 \newif\if@@bot  \@@botfalse
@@ -2116,15 +2114,11 @@
 \def\twocolfigure{%
   \figure[\fixed]}
 
-
-
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     *****  utilities  *****
 %
-
-
 
 \def\linebreak{\unskip\break}           % conflicts with LaTeX definition
 
@@ -2208,7 +2202,6 @@
 %     *****  initialization  *****
 %
 
-
 \def\initializearticle{%
   \let\thetitle=\relax
   \authornumber=0
@@ -2249,6 +2242,9 @@
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+                      \endarticle: avoid empty last page, also for
+                      tb139wermuth-isdim.
+
 1.30      15 Apr 24   implement \iftubsecondcolstart for tb139wermuth-isdim.
 
 1.29      28 Oct 23   introduce \abovecaptionskipamount, reduce to \smallskip
