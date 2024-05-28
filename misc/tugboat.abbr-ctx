@@ -1,5 +1,5 @@
 % $Id$
-% Copyright 1999-2023 TeX Users Group.
+% Copyright 1999-2024 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 % "Poor man's" ConTeXt in LaTeX, for simple-enough documents.
@@ -7,6 +7,8 @@
 % towards minimizing diffs from the original sources.
 % Frontmatter has to be done by hand,
 % and \stoptyping and \stopbuffer replaced with \end{verbatim}.
+
+\usepackage{fix-cm}
 
 \def\ACROBAT   {Acrobat}
 \def\ADE       {\acro{ADE}}
@@ -283,7 +285,7 @@
 \makeatletter
 \def\type{\bgroup
   \catcode`\\=12 \catcode`##=12 \catcode`\&=12 \catcode`$=12 \catcode`_=12
-  \catcode`\%=12 \catcode`\^=12
+  \catcode`\%=12 \catcode`\^=12 \catcode`\|=12
   \@noligs % disable tt ligatures, defined in ltmiscen.dtx
   %\catcode`!=0 % in case we want escapes
   \def\\{\char`\\ }%
@@ -314,8 +316,9 @@
 \def\tubignorebuffers{\long\def\startbuffer##1\stopbuffer{}}
 \def\tubverbatimbuffers{\def\startbuffer{\starttyping}}
 \tubverbatimbuffers % default
+
 \newcommand{\typebuffer}[1][]{}% ignore possible optional arg
-\def\getbuffer{}
+\let\getbuffer\typebuffer
 \def\inlinebuffer{}
 \def\stopbuffer{\errmessage{must literally end verbatim buffer}}
 

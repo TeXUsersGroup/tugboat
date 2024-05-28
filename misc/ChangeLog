@@ -1,3 +1,10 @@
+2024-05-28  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr.ctx (fix-cm): \usepackage.
+	 (\type): also make | printable.
+	 (\getbuffer): \let\typebuffer to ignore optional arg.
+	 For tb141hagen-ligatures (45:3).
+
 2024-04-13  Karl Berry  <karl@freefriends.org>
 
 	* check-splice-tub: can't quit on \end{document} for
