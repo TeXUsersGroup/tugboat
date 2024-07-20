@@ -28,6 +28,7 @@
 %%%     "journaltie" - ~ instead of space after journal name.
 %%%     "monthtie" - ~ instead of space after month name.
 %%%     "newpage" - force page break after entry.
+%%%     "nojournalcomma" - if set, omit comma after journal name.
 %%%     "nowarning" - if set, omit empty field warnings from output.check.
 %%%     "pagesnodashify" - if set, don't convert - to -- in pages field.
 %%%     "prebibitem" - material output before \bibitem, with newline appended
@@ -91,6 +92,7 @@ ENTRY
     journaltie     % tub
     monthtie       % tub
     newpage        % tub
+    nojournalcomma % tub
     nowarning      % tub
     pagesnodashify % tub
     prebibitem     % tub
@@ -197,8 +199,9 @@ FUNCTION {output.nonnull.original}
       journal missing$
       or
         { ", " * }  % not a journal, normal comma+space separator
-        { journal "TUGboat" = journal "\TUB" = or
-          { skip$ } % TUGboat, no comma
+        { journal "TUGboat" = journal "\TUB" = or 
+          nojournalcomma empty$ not or
+          { skip$ } % TUGboat or no comma requested
           { "," * } % not TUGboat, want comma
           if$ 
           journaltie empty$
@@ -816,7 +819,11 @@ FUNCTION {format.vol.num.pages}
     'skip$
     { "(" number * ")" * *
       volume empty$
-        { "there's a number but no volume in " cite$ * warning$ }
+        { nowarning empty$
+            { "there's a number but no volume in " cite$ * warning$ }
+            'skip$
+          if$
+        }
         'skip$
       if$
     }
