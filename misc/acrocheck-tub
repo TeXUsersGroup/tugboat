@@ -10,6 +10,7 @@ egrep -Hn "$acro_ok" "$@" \
       -e 's/\\\(acro\|address\|cs\|texttt\|tbcode\|lstinline\) *{[^}]*}//g' \
       -e 's/\\\(bibliography\|code\|pkg\|uname\|[um]code\) *{[^}]*}//g' \
       -e 's/\\\(includegraphics\|cite\|bibitem\)\(\[[^]]*\]\)\?{[^}]*}//g' \
+      -e 's/\\\(DeclareUnicodeCharacter\|label\|ref\|pageref\) *{[^}]*}//g' \
       -e 's/\(src\|id\)=".*"//g' \
       -e 's/``'"[^']*''//g" \
       -e 's/|[^|]*|//g' \

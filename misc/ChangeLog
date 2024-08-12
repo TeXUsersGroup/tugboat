@@ -1,3 +1,9 @@
+2024-08-11  Karl Berry  <karl@freefriends.org>
+
+	* check-pdf-urls-tub: new script.
+	
+	* acrocheck-tub: ignore DeclareUnicodeCharacter|label|ref|pageref.
+
 2024-05-28  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.abbr.ctx (fix-cm): \usepackage.

@@ -1,0 +1,19 @@
+#!/bin/sh
+# $Id$
+# Extract urls from a pdf and try visiting them.
+
+for f in "$@"; do
+  # From Max Chernoff, 31jul2024.
+  #With wget v1.xx (which is what the tug.org server is using), try:
+  qpdf --qdf "$f" - \
+  | grep -avF example.org \
+  | grep -aoP '(?<=/URI \()[^)]*(?=\))' \
+  | sort -u \
+  | wget --spider -nv -i- 2>&1 \
+  | sed 's/^.* URL: //'
+done
+# output looks like:
+#2024-08-03 08:55:39 URL: https://github.com/borisveytsman/bookshelf 200 OK
+
+#With wget v2.xx (which is what I have installed locally), try:
+#   qpdf --qdf /path/to/file.pdf - | grep -aoP '(?<=/URI \()[^)]*(?=\))' | wget --spider -i- | grep ^HTTP
