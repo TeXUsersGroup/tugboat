@@ -193,7 +193,6 @@ echo "$0: $color_count color + $gray_count grayscale  =  $filecount pages."
 
 # 
 # Link the covers and the spine, we should not need any changes.
-set -x
 echo "$0: linking covers ... (in `pwd`)"
 for c in 1 2 3 4; do
   dest=c$c$filesuffix.pdf
