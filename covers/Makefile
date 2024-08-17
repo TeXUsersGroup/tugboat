@@ -22,13 +22,13 @@ deps = ../tugboat.dates ../tugboat.sty ../ltugboat.cfg
 	-@$(cp) $@ ../CADMUS/
 
 # normally:
-#c3_target = cover3.pdf
-#c3_twopages = false
+c3_target = cover3.pdf
+c3_twopages = false
 #
 # for tb137 and tb139, cover3 is two pages, second page is copied to
 # calendar, so comment out above, and use:
-c3_target = cover3a.pdf
-c3_twopages = test $@ = cover3.pdf
+#c3_target = cover3a.pdf
+#c3_twopages = test $@ = cover3.pdf
 
 %-crop.pdf: %.pdf
 	pdfcrop-tub $< >/dev/null
@@ -40,7 +40,7 @@ all: spine.pdf cover4.pdf titlepage.pdf cover1.pdf cover2.pdf $(c3_target)
 titlepage.pdf: $(tb)quote.tex tugboat.front
 cover4.pdf: $(tb)cont.tex tubtocmac.tex tugboat.front
 cover3.pdf: $(tb)cap.tex  tubtocmac.tex
-cover1.pdf: word-nobox.pdf press2.pdf coverdrawing.pdf
+cover1.pdf: word-nobox.pdf press2.pdf coverdrawing.png
 
 # cover3a.pdf is copied to ../CADMUS/ to replace the two-page version.
 cover3a.pdf: cover3.pdf cover3-crop.pdf

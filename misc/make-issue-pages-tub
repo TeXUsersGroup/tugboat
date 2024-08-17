@@ -60,28 +60,46 @@ fi
 # variables, since if there are unexpected filenames or other strings,
 # an error from test or bash or whatever is desired.
 pdfpagecount () {
-  if test ! -r $1; then
-    echo "$0: pdfpagecount argument not readable: $1" >&2
+  if test ! -s $1; then
+    echo "$0: pdfpagecount argument not readable or empty: $1" >&2
     exit 1
   fi
   
   # without the -I, get permission error because of SAFER.
-  $gs -dNODISPLAY -I`dirname $1` \
-      -c "($1) (r) file runpdfbegin pdfpagecount = quit" || exit 1
+  # would be cleaner to switch to -dPDFINFO.
+  # https://ghostscript.readthedocs.io/en/latest/Use.html#dpdfinfo
+  gscmd="$gs -dNODISPLAY -dNOSAFER -I`dirname $1` \
+             -c ($1) (r) file runpdfbegin pdfpagecount = quit"
+  if ! $gscmd >/tmp/pdfpagecountout; then
+    echo "$0: pdfpagecount failed: $1" >&2
+    echo "$0: gscmd: $gscmd" >&2
+    cat /tmp/pdfpagecountout >&2
+    kill $$ # called from `...`, so exit doesn't exit
+  else
+    cat /tmp/pdfpagecountout
+  fi
 }
 
 # if page count of $1 (a pdf) != $2, abort.
 assert_pdfpagecount () {
   pdfcount=`pdfpagecount $1`
+  if test -z "$pdfcount"; then
+    echo "$0: (assert_pdfpagecount) pdfpagecount failed to count: $1" >&2
+    exit 1
+  fi
   if test $pdfcount -ne $2; then
     echo "$0: $pdfcount pages in $1, expected $2, goodbye." >&2
     exit 1
   fi
 }
 
+#
 # We do some unusual Ghostscript calls, so don't use ps2pdf-tub.  But
-# tell gs not to rotate our pages (tb132voss-hvfloat).
-gs="gs -q -dAutoRotatePages=/None"
+# tell gs not to rotate our pages (e.g., tb132voss-hvfloat, but
+# auto-rotation is a bad idea in general).
+gs="gs -q -dBATCH -dAutoRotatePages=/None"
+# Can't use -dNODISPLAY because that eliminates split output.
+
 cd CADMUS || cd $tb/CADMUS || exit 1
 test -d upload || mkdir upload
 rm -f upload/*
@@ -107,7 +125,7 @@ gserr=/tmp/gsspliterr
 $gs -o "%03d$filesuffix.pdf" -sDEVICE=pdfwrite $infile 2>$gserr
 status=$?
 if test $status -ne 0; then
-  echo "$0: $gs split failed (status $status)." >&2
+  echo "$0: $gs split failed (status $status) in: `pwd`" >&2
   cat $gserr >&2
   exit $status
 fi
@@ -117,14 +135,14 @@ fi
 # make sure we created the expected number of files
 # (so must check this before doing covers).
 filecount=`ls | wc -l`
+echo "$0: $filecount files in: `pwd`"
 assert_pdfpagecount $infile $filecount
 
-# We have no easy way to know whether a given page contains color or
-# not, so grayscale everything not requested to be color.
 echo "$0: grayscaling pages, this will take a while ..."
 date
 
-# for each page not listed in $colorpages, convert to grayscale.
+# for each page not listed in $colorpages, if it has any color, convert
+# to grayscale.
 color_count=0
 gray_count=0
 set - $colorpages # now use word-split $colorpages as argv
@@ -132,18 +150,35 @@ for page in `seq --format="%03.0f" 1 $filecount`; do # for every page in doc
   color=false
   origfile=$page$filesuffix.pdf
   if test x$page = x$1; then
-    echo "$page: color, converting to CMYK."
+    echo "$page: printing in color, converting to CMYK."
     test $# -gt 0 && shift
     color_count=`expr $color_count + 1`
     cmykfile=cmyk-$origfile
     ps2pdf-cmyk-tub $origfile $cmykfile || exit 1
     mv $cmykfile $origfile || exit 1
   else
-    #echo "$page: not color, so grayscaling." # too much output
+    # use the inkcov gs device to detect if there's any color on the page.
+    colorvals=`$gs -o - -sDEVICE=inkcov $origfile`
+    #echo "colorvals for $page: $colorvals"
+    page_has_color=false
+    for field in 1 2 3; do
+      color=`echo $colorvals | awk '{print $1+0}'` # +0 to remove 0 decimals
+      #echo "  field 1: $color"
+      if test "$color" != 0; then
+        page_has_color=true
+        break
+      fi
+    done
+    if $page_has_color; then
+      echo "$page: color on page but not in colorpages, so grayscaling."
+      grayfile=gray-$origfile
+      ps2pdf-gray-tub $origfile $grayfile || exit 1
+      mv $grayfile $origfile || exit 1
+    else
+      #echo "$page: no color on page ($colorvals), continuing."
+      :
+    fi
     gray_count=`expr $gray_count + 1`
-    grayfile=gray-$origfile
-    ps2pdf-gray-tub $origfile $grayfile || exit 1
-    mv $grayfile $origfile || exit 1
   fi
 done
 date
@@ -158,9 +193,16 @@ echo "$0: $color_count color + $gray_count grayscale  =  $filecount pages."
 
 # 
 # Link the covers and the spine, we should not need any changes.
-echo "$0: linking covers ..."
+set -x
+echo "$0: linking covers ... (in `pwd`)"
 for c in 1 2 3 4; do
   dest=c$c$filesuffix.pdf
+  echo "$0:   $dest"
+  cdest=../cover$c.pdf
+  if test ! -s $cdest; then
+    echo "$0: cover page not there: $cdest (in `pwd`)"
+    exit 1
+  fi
   ln -s ../cover$c.pdf $dest || exit 1
   assert_pdfpagecount $dest 1
 done

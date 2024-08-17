@@ -1,3 +1,20 @@
+2024-08-17  Karl Berry  <karl@freefriends.org>
+
+	* check-pages-cover4-tub: ignore disordered consultants (comics)
+	for tb140 (45:2).
+	* check-pdf-urls-tub: ignore adobe.com urls, they reject wget;
+	don't retry or wait long.
+	* check-splice-tub: re-enable recognition of \end{document};
+	detect triple splice for better error (still not handled).
+	* make-issue-pages-tub (pdfpagecount): need -dNOSAFER for
+	runpdfbegin; should switch -dPDFINFO. kill on error, not exit.
+	(assert_pdfpagecount): detect error here too.
+	(gs): add -dBATCH.
+	Use -sDEVICE=inkcov to detect non-color pages, and do not
+	grayscale them.
+	* ps2pdf-tub: need -dPDFSETTINGS=/prepress after all,
+	for 45-2/watters-litigator/doc.pdf.
+
 2024-08-11  Karl Berry  <karl@freefriends.org>
 
 	* check-pdf-urls-tub: new script.

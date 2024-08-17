@@ -1,3 +1,11 @@
+2024-08-17  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (c3_target): back to normal one page for tb140 (45:2).
+	* cover1.tex: adjust space before conference drawing.
+	* cover2.tex: cover image description; Jim now secretary.
+	* cover3.tex: adjust \vfuzz for longer page.
+	* cover4.tex: can use 10pt fonts; adjust skips.
+
 2024-05-06  Karl Berry  <karl@tug.org>
 
 	* Makefile (copynext): handle top-level issue dir too.

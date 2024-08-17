@@ -23,8 +23,10 @@ fi
 # -dAutoRotatePages since no, we do not want pages randomly rotated.
 # -dCompressFonts seems not to hurt, and can save notable space.
 # -dDetectDuplicateImages similarly.
-# -dEmbedAllFonts doesn't (didn't) always work to embed fonts,
+# -dEmbedAllFonts usually but doesn't always work to embed fonts,
 #   except that if downscaling images with zres, have to override.
+# -dPDFSETTINGS=/prepress needed for embedding with
+#   45-2/watters-litigator/doc.pdf (tb140)
 # -dPrinted=false is to preserve internal links within the pdf,
 #   notably for the cover/cover3 in our tb*complete.pdf:
 #   https://tex.stackexchange.com/questions/456896
@@ -37,11 +39,11 @@ $gs -q -dNOPAUSE -dBATCH \
   -dCompressFonts=true \
   -dDetectDuplicateImages \
   -dEmbedAllFonts \
+  -dPDFSETTINGS=/prepress \
   -dPrinted=false \
   $zdistill $zres \
   -f "$1" 
 
-# old: -dPDFSETTINGS=/prepress works to ensure embedded fonts,
 #   but seems to be no longer necessary.
 # old: -dPDFX=true failure with annotations in gs 9.14 (tb109reviews-xie), 
 # old: -c .setpdfwrite used to be necessary, but no longer is?

@@ -6,7 +6,8 @@
 # 
 # Splicing is unfortunately a complicated and error-prone process, with
 # several things having to be in sync to avoid lost material. That's
-# what this script is intended to check.
+# what this script is intended to check. The checks themselves are not
+# the easiest to figure out, but we can only try.
 
 use strict; use warnings; $| = 1;
 
@@ -43,7 +44,7 @@ sub find_source_files {
 
 
 # Makefiles that say nocadmus:. Don't worry about leading whitespace.
-# Each and every of these items should be accounted for in some way.
+# Each and every one of these items should be accounted for in some way.
 # 
 sub find_nocadmus {
   my @matches = `grep -l ^nocadmus: */Makefile`;
@@ -57,7 +58,7 @@ sub find_nocadmus {
 
 
 # Items that specify a \firstpageincr. Don't worry about leading whitespace.
-# Each of these items should be in nocadmus.
+# Each of these items should be in nocadmus, and spliced in some way.
 # 
 sub find_firstpageincr {
   my @source_files = &find_source_files ();
@@ -91,7 +92,7 @@ sub find_multisplice {
   
   my @items; # use items[1], items[2] as array refs.
   while (<$splmk>) {
-    next unless /^p._paper([12]) = (.*)$/;
+    next unless /^p._paper(\d) = (.*)$/;
     die "*** must implement three-way splice" if /^p._paper[3-9]/;
     push (@{$items[$1]}, $2);
   }
@@ -127,7 +128,7 @@ sub find_singlesplice {
       # We don't worry about the end-of-document commands inside verbatim,
       # or other games with catcodes, etc.
       next if /^\s*%/;	      # comment
-      #last if /^\\end\{document\}/; # latex qqq no, tb139beet has it in verb
+      last if /^\\end\{document\}/; # latex except tb139beet has it in verb
       last if /\\end$/;	      # plain
       last if /\\endarticle/; # tugboat
       
@@ -158,7 +159,7 @@ sub find_singlesplice {
       
       (my $srcitem = $srcname) =~ s,.*/(tb\d\d\d)?(.*)\...x$,$2,;
       $items{$dirname} = $srcitem;
-      warn " found $dirname=$srcitem\n";
+      warn " found $dirname spliced into $srcitem\n";
     }
     close ($src) || die "close($srcname) failed: $!";    
   }
@@ -191,7 +192,7 @@ sub check_all_splices {
 
   # Each item in firstpageincr should definitely be spliced. Usually it
   # will be in nocadmus, but when a longer item includes the one-page at
-  # the front (e.g., tb137gratzer includes zprav), it won't. So then it
+  # the front (e.g., tb137gratzer so includes zprav), it won't. So then it
   # should be a singlesplice target value (not key).
   # 
   # Except for that same "front splice" case, it should also be in
