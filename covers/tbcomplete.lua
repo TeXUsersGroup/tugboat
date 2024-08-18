@@ -15,13 +15,13 @@ return {
         {
             filename    = "../CADMUS/issue",
             first       = 1,
-            last        = 176,
+            -- last     = (doesn't need to be specified)
             interaction = "all",
         },
         {
             filename    = "toclinks",
-            first       = 179, --cover3, page1
-            last        = 180, --cover3, page2
+            first       = 999, --cover3, page1 (last page of toclinks.pdf)
+            -- last     = first+1, --cover3, when it needs two pages
             interaction = "all",
             pageoffset  = 0,
         },

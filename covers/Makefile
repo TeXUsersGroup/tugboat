@@ -57,11 +57,12 @@ cover3a.pdf: cover3.pdf cover3-crop.pdf
 # that we create per issue; see rules below.
 # 
 # See tb138prod.pdf for a published note about this.
-$(tb)complete.pdf complete compl co c: $(tb)cmplete.lua \
+$(tb)complete.pdf complete compl co: $(tb)cmplete.lua \
                                     toclinks.pdf ../CADMUS/issue.pdf
 	lmtxtub --extra=copy --template $<
 	mv context-extra.pdf $(tb)complete.pdf
-	c=$(tb)complete.pdf; du $$c #makes larger: ; ../ps2pdf-tub $$c; du $$c
+	c=$(tb)complete.pdf; du $$c; echo `pdfpages $$c` pages
+# makes larger: ; ../ps2pdf-tub $$c; du $$c
 	$(cp) $(tb)complete.pdf ../webdir/
 
 # after copying the generic file, update the number of pages in the

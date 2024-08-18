@@ -1,3 +1,8 @@
+2024-08-18  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (complete): show number of pages.
+	* tbcomplete.lua: omit unneeded specification of last.
+
 2024-08-17  Karl Berry  <karl@freefriends.org>
 
 	* Makefile (c3_target): back to normal one page for tb140 (45:2).
