@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2024-04-15 v2.32
+                   [2024-08-18 v2.32
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -929,7 +929,7 @@
 \def\XeT{X\kern-.125em\lower.424ex\hbox{E}\kern-.1667emT\@}
 \def\XML{\acro{XML}}
 \def\XMP{\acro{XMP}}
-\def\WEB{\texttt{WEB}\@}
+\def\WEB{\texorpdfstring{\texttt{WEB}\@}{WEB}}
 \def\WEAVE{\texttt{WEAVE}\@}
 \def\WYSIWYG{\acro{WYSIWYG}}
 \def\YAML{\acro{YAML}}
@@ -1265,8 +1265,13 @@
   \leavevmode\kern0.5em
   \raise\p@\vbox{\baselineskip6\p@\vskip7\p@\hbox{.}\hbox{.}\hbox{.}}
   }
+% \bull doesn't work with tagging; requires ActualText using, e.g.,
+% accsup, but the ActualText is ignored since it's just a rule.
+% (Lots of our other commands also are not properly tagged.)
+% https://github.com/latex3/tagging-project/pull/535
 \def\bull{\vrule \@height 1ex \@width .8ex \@depth -.2ex }
-\def\cents{{\rm\raise.2ex\rlap{\kern.05em$\scriptstyle/$}c}}
+\DeclareRobustCommand{\cents}{\textcent}
+\def\tubcentsold{{\rm\raise.2ex\rlap{\kern.05em$\scriptstyle/$}c}}
 \def\careof{\leavevmode\hbox{\raise.75ex\hbox{c}\kern-.15em
                 /\kern-.125em\smash{\lower.3ex\hbox{o}}} \ignorespaces}
 \def\Dag{\raise .6ex\hbox{$\scriptstyle\dagger$}}
@@ -1339,7 +1344,7 @@
 % \cs{tbhurl}\tubbraced{foo}  produces \texttt{http://foo}.
 \AtBeginDocument{%
 \ifx\hyper@normalise\undefined
-  \ifx\url\undefined      % make sure \url is defined
+  \ifx\url\undefined      % define our own simplistic non-hyperref \url 
     \def\url{\begingroup  % might as well catch common special chars
       \catcode`\#=12 \catcode`\$=12 \catcode`\%=12 \catcode`\^=12
       \catcode`\&=12 \catcode`\_=12 \catcode`\~=12

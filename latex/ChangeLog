@@ -1,3 +1,18 @@
+2024-08-18  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\WEB): use \texorpdfstring.
+	(\cents): just use \textcent; leave old defn as \tubcentsold.
+	\bull should be handled also, but apparently ActualTeXt doesn't
+	work with rules; see Ulrike's comment at:
+https://github.com/latex3/tagging-project/pull/535#issuecomment-2274504580
+	Also I don't want to unconditionally load accsup.
+
+2024-07-20  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst (journalnocomma): another field to omit comma after
+	journal name.
+	(output.nonnull.original): implement it.
+
 2024-04-15  Karl Berry  <karl@freefriends.org>
 
 	* version 2.32 (2024-04-15) uploaded to CTAN.
