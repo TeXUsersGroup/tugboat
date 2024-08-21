@@ -432,7 +432,7 @@ sub doi_of_capsule {
     $doi = "";
   }
   
-  #warn "got $doi for page $cap->{pageno} ($cap->{url})\n";
+  #&info_hash ("got $doi for page $cap->{pageno} ($cap->{url})", $cap);
   return $doi;
 }
 
