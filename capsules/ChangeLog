@@ -1,3 +1,10 @@
+2024-08-22  Karl Berry  <karl@freefriends.org>
+
+        * tb140capsule.txt: new file.
+	* Makefile (testiss,lastiss,crossref_iss): tb140.
+	* lists-translations.txt (\TFM, \Xe,): new defns.
+	* lists-unifications.txt (TUG 2024, Fowler, etc.): new defns.
+
 2024-08-20  Karl Berry  <karl@freefriends.org>
 
 	* lists-authinfo.txt: orcid for 45:2.
