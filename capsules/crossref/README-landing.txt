@@ -2,10 +2,9 @@ $Id$
 Making the html landing files for crossref. Public domain.
 Originally written 2020 Karl Berry.
 
-One of crossref's (strong) recommendations is to have doi urls resolve
-to html files which describes an article, rather than the article
-itself. These are called landing files. There is one for each item that
-gets a doi. They are a pain.
+Crossref strongly recommends having doi urls resolve to html files which
+describes an article, rather than the article itself. These are called
+landing files. There is one for each item that gets a doi. They are a pain.
 
 To begin, captub outputs skeleton landing files from the information in
 the capsules, to the crossref/dir0.capout/* directory. (This happens at
@@ -14,35 +13,33 @@ go into the xml.) These skeletons include placeholders for the
 bibliography and abstract texts, which cannot be determined at that time.
 
 Then, via the ../cr-do-issue script and the other ../cr-* scripts that
-it calls, the bbl/abs files are unconditionally copied from the TUGboat
-issue source dir (../../../VV-N/ARTICLE/{bbl,abs}.tex) into the
-crossref/dir1.lndout ("landing output") directory.
+it calls, bbl/abstract files are unconditionally copied from the TUGboat
+issue source dir (that is, ../../../VV-N/ARTICLE/{bbl,abs}.tex) into the
+crossref/dir1.lndout (lndout = "landing output") directory.
 
 From there, they are copied again into the crossref/dir2.process
 directory. In this directory, if the bbl/abs text needs hand editing,
 which is not uncommmon, the edits are done there and those files saved.
 bbl/abs in dir2.process are never overwritten. This is the only place
-where hand editing is supported and won't be lost.
+where hand editing is supported and won't be lost. However, it is much
+better never to do any hand editing, and only tinker with the
+bbl/abs.tex files, and the scripts that do the conversion, as described
+in ./README-process.txt.
 
-Then, still done via cr-do-issue, the possibly-hand-edited bbl/abs in
+At any rate, still via cr-do-issue, the possibly-hand-edited bbl/abs in
 dir2.process get copied back to dir1.lndout (no changes here),
 overwriting what was there, and incorporated into the final landing
 files in dir1.lndout.
 
 All this takes several passes. The overall process: run cr-do-issue,
-inspect the output dir2.process/issue.xml, inspect the output
-dir1.lndout/*.html, find problems. Make corrections to the capsule.txt,
-or the bbl/abs, or the code to support what needs to be supported. Rerun
+inspect the dir1.lndout/*.html and dir2.process/issue.xml output files.
+Where there are problems, make corrections to the capsule.txt, or the
+bbl/abs, or the code to support what needs to be supported. Rerun
 cr-do-issue.
 
 This work can be done article by article as they are submitted, edited,
 and approved, or all at the end. In any case, there is lots of stuff
 that can only happen at the end. See ./README-process.txt for exact steps.
-
-Alternatively, if the edits can be made in the TUGboat source dir,
-instead of changing the files here, so much the better. See
-README-process.txt. Then the bbl/abs in dir2.process are removed first,
-so the source dir versions will get copied in.
 
 Ultimately, when an issue is final and gets published, we copy the
 landing files to the web-visible directory

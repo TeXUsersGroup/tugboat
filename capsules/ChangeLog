@@ -1,3 +1,13 @@
+2024-08-25  Karl Berry  <karl@freefriends.org>
+
+        * crossref/ltx2crossrefxml-tugboat.cfg: use "our", etc. to avoid
+        warnings.
+        (LaTeX_ToUnicode_convert_hook): more substitutions for 45:2.
+        (tugboat_url_prefix): systematically handle url cases.
+        * crossref/README-landing.txt,
+        * crossref/README-process.txt: doc updates.
+
+
 2024-08-22  Karl Berry  <karl@freefriends.org>
 
         * tb140capsule.txt: new file.

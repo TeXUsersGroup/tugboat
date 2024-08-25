@@ -8,7 +8,7 @@ options = $(debug) #--stdout
 more_options =
   #
   # local validation before installation:
-#more_options = --webroot=/home/tubprod/45-2/webdir
+#	more_options = --webroot=/home/tubprod/45-2/webdir
   #
   # disable url validation during doi setup:
 #more_options = --webroot=/

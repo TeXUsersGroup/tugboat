@@ -54,8 +54,8 @@ and the XML file for Crossref in:
 
 The make will probably fail due to unprocessed TeX commands remaining in
 the output files, dir2.process/issue.xml and dir1.lndout/*.html. We want
-to do as much as possible automatically, so before hand-editing anything
-that should be supported, try to fix the translations:
+to do as much as possible automatically, so before hand-editing anything,
+fix the translations if at all possible:
 
 - Usually they'll be TUGboat-specific, in which case
   crossref/ltx2crossrefxml-tugboat.cfg is the right place.
@@ -82,9 +82,16 @@ that should be supported, try to fix the translations:
   the process to translate bbls like abstracts. And structured references.)
 
 On the other hand, sometimes authors use one-off abbreviations or
-complicated TeX code in their abstracts or bibliographies.  In such cases,
-it is better to edit the abs/bbl.tex files than bother automatically
-translating something that will probably never come up again.
+complicated TeX code in their abstracts or bibliographies. In such
+cases, it is better to edit the abs/bbl.tex files to replace such custom
+macros than bother automatically translating something that will
+probably never come up again.
+
+If the abstract contains \cite or other citation commands, they will not
+be translated. Just replace them with the correct [N] reference. Ditto
+with citation cross-references in bibliographies. The references will be
+on the landing page along with the abstract, so readers will be able to
+follow them.
 
 To retry after code changes (still assuming no hand editing), again run:
   make cro-scratch
@@ -99,8 +106,8 @@ cr-do-issue will mysteriously fail since the landing.html file for that
 article will not exist. It is best to check for this in advance with
 --webroot; see README-tug-procedures.
 
-In practice, it is best, and has always been possible, to do all editing
-in the TUGboat source dir (and thus use cro-scratch), and never
+In practice, it is best, and should always be possible, to do all
+editing in the TUGboat source dir (and thus use cro-scratch), and never
 hand-edit the generated files. However, if any hand editing in
 dir2.process is necessary, the "cro-preserve" target must be used
 instead of "cro-scratch", else the hand edits will be lost.
@@ -110,15 +117,15 @@ files present in the TUB source directory. To see which those were:
   make cr_verbose=--verbose cro-scratch  # in capsules directory
 
 After the make succeeds, we want to review the html output to make sure
-the transformations are ok. This makes the "next doi" links be local
-(and the list* accumulations only be for the processed issue):
+the transformations are ok and urls are correct. This makes the "next
+doi" links be local (and the list* accumulations only be for the
+processed issue):
   make crw
 Then can check the relevant files at:
   file://.../tubprod/svn/capsules/crossref/dir1.lndout/...
-And/or you can go through that directory listing.
 
 cr-landing-bbl-abs, called in the above process, converts abstracts to
-HTML (ltx2unitxt --html), but copies bbls as plain text from
+HTML (ltx2unitxt --html), but copies bbls as plain text from the
 previously-created issue.xml (created by ltx2crossrefxml via
 crossref/Makefile, target issue). As mentioned above, in the bbls, the only
 formatting attempted for the landing .html files is to make urls
