@@ -1,8 +1,8 @@
 -- $Id$
 -- Public domain.
 -- Lua template file for use with ConTeXt to preserve all the links,
--- both internal and external, in the file tbNNNcomplete.pdf.
--- See tb138prod.pdf for a published note about this.
+-- both internal and external, in the file tbNNNcomplete.pdf. See
+-- the Makefile for the invocation and tb138prod.pdf for a published note.
 return {
     list = {
         {

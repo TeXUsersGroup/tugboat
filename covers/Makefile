@@ -100,7 +100,7 @@ p_titlepage := $(shell sed -n 's/^.*def.TBtitlepage{\([0-9]*\)}.*/\1/p' $(pfile)
 #p_ad1 := $(shell sed -n 's/.def.TBadpage{\([0-9]*\)}.*/\1/p' $(pages))
 p_ad2 := $(shell expr $(p_ad1) + 1)
 p_ad3 := $(shell expr $(p_ad1) + 2)
-cadmus cad: $(c3_target)
+cadmus cad ca: $(c3_target)
 	@echo "    making $@ in `pwd`"
 	$(cp) spine.pdf          ../CADMUS/spine.pdf
 	$(cp) cover1.pdf         ../CADMUS/cover1.pdf
@@ -113,6 +113,7 @@ cadmus cad: $(c3_target)
 check:
 	cd .. && $(MAKE) $@
 
+# 
 tbnn := $(shell expr $(tbn) + 1)
 pdir := ../../httpd/html/TUGboat/production/`basename $(tn)`
 
@@ -135,7 +136,3 @@ copynext:
 	       ${tn}/covers/
 	cd ${tn}/covers && rename s/$(tbn)/$(tbnn)/ *
 	cd ${tn}/covers && rm -f tb*complete.lua # copy in later
-
-# during dev:
-#%:
-#	cd .. && $(MAKE) $@

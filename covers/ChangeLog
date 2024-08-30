@@ -1,3 +1,12 @@
+2024-08-30  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (ca): another alias for cadmus.
+	(%): remove commented-out default.
+
+	* cover2.tex: TUG -> \tug for 45:2 text.
+
+	* tbcmplete.lua: doc.
+
 2024-08-18  Karl Berry  <karl@freefriends.org>
 
 	* Makefile (complete): show number of pages.
