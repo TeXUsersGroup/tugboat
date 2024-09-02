@@ -4,7 +4,7 @@
 # 
 # As a first step toward preparing the <citation_list> elements for the
 # Crossref upload (see ltx2crossrefxml, crossref/README, etc.), we copy
-# any bbl and abstract files for a given issue $1 to the temporary
+# all bbl and abstract files for a given issue $1 to the temporary
 # holding directory $2.
 # 
 # We're going to assume there are no spaces in filenames,
@@ -12,6 +12,7 @@
 
 if test $# -ne 2; then
   echo "Usage: $0 CAPSULE.txt OUTPUTDIR" >&2
+  echo "(see source for info)" >&2
   exit 1
 fi
 
@@ -61,9 +62,15 @@ if test $abs_count -eq 0; then
   echo "$0: no abs.tex files found under: $issdir" >&2
   exit 1
 fi
+#
+crb_count=`ls -1 $issdir/*/crossbib.xml 2>/dev/null | wc -l`
+if test $crb_count -eq 0; then
+  echo "$0: no crossbib.xml files found under: $issdir" >&2
+  exit 1
+fi
 
 # We intentionally do not erase existing files or move them aside;
-# let another level (the cr-do-issue script) do that. Which it does.
+# another level (namely the cr-do-issue script) does that.
 
 # Separate the bbl used for the doi stuff from the one used by TeX; that
 # is, we manually copy or create bbl.tex in each item directory, and
@@ -84,5 +91,13 @@ for a in $issdir/*/abs.tex; do
   cp -pf "$a" "$dest" || exit 1
 done  
 
-echo "$0: $bbl_count bbl(s) and $abs_count abs(s) copied: $outdir"
+# Similarly for the structured crossref bib files.
+# 
+for a in $issdir/*/crossbib.xml; do
+  ident=`basename \`dirname "$a"\``
+  dest=$outdir/tb${seqno}${ident}.crbib
+  cp -pf "$a" "$dest" || exit 1
+done  
+
+echo "$0: $bbl_count bbl(s), $abs_count abs(s), $crb_count crossbib(s) copied: $outdir"
 exit 0

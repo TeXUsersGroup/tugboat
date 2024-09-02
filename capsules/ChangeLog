@@ -1,3 +1,15 @@
+2024-09-02  Karl Berry  <karl@freefriends.org>
+
+	Incomplete work at including structured citations.
+	If beastie gets updated, will pick it up again for 45:3.
+	
+	* cr-copy-bbl-abs: copy crossbib.xml files from TUB srcdir
+	into dir1.lndout/*.crbib.
+	* cr-do-issue: copy *.crbib into dir2.process.
+	* Makefile: update for 5.3.1 crossref schema.
+	
+	* tb140capsule.txt (verna-tfm): corrected version online.
+
 2024-08-25  Karl Berry  <karl@freefriends.org>
 
         * crossref/ltx2crossrefxml-tugboat.cfg: use "our", etc. to avoid
@@ -6,7 +18,6 @@
         (tugboat_url_prefix): systematically handle url cases.
         * crossref/README-landing.txt,
         * crossref/README-process.txt: doc updates.
-
 
 2024-08-22  Karl Berry  <karl@freefriends.org>
 

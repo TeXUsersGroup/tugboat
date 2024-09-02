@@ -41,14 +41,14 @@ $Id$
 Usage: $0 [--landing-only] [--verbose] 
           CAPSULEFILE CAP-OUTDIR LND-OUTDIR CROSSREFXMLFILE
 
-First, run ./cr-copy-bbl-abs on CAPSULEFILE to copy the bbl/abs
-files from the TUGboat source directory to LND-OUTDIR.
+First, run ./cr-copy-bbl-abs on CAPSULEFILE to copy the bbl/abs/crossbib
+("helper") files from the TUGboat source directory to LND-OUTDIR.
 
-Then, copy any new bbl/abs to the directory of CROSSREFXMLFILE, but do
-not overwrite existing bbl/abs there. That is, bbl/abs in the
-CROSSREFXMLFILE might be hand-edited.
+Then, copy any new helper files to the directory of CROSSREFXMLFILE, but do
+not overwrite existing helper files there. That is, bbl/abs in the
+CROSSREFXMLFILE might be hand-edited. (But never are, nowadays.)
 
-Then, copy differing bbl/abs from CROSSREFXMLFILE directory back to
+Then, copy differing bbl/abs files from CROSSREFXMLFILE directory back to
 LND-OUTDIR (i.e., any hand-edited files).
 
 Then (unless --landing-only), run captub on CAPSULEFILE to generate
@@ -113,12 +113,14 @@ run_cmd ()
 rm -f "$lnd_outdir"/tb* # clean destination directory
 run_cmd ./cr-copy-bbl-abs "$capsule" "$lnd_outdir"/
 
-# copy new (but not existing) bbl/abs from landing dir to xmlprocess dir,
+# copy new (but not existing) bbl/abs/crbib from landing dir to xmlprocess dir,
 # 
 cnt_xmlprocess_preserved=0
 cnt_xmlprocess_copied=0
 #
-for lf in "$lnd_outdir"/tb*.abs "$lnd_outdir"/tb*.bbl; do
+for lf in "$lnd_outdir"/tb*.abs \
+          "$lnd_outdir"/tb*.bbl \
+          "$lnd_outdir"/tb*.crbib; do
   pf=`echo "$lf" | sed "s,$lnd_outdir,$cr_processdir,"`
   base=`basename "$pf"`
   if test -e "$pf"; then
@@ -133,7 +135,7 @@ done
 echo "$0: bbl/abs->$cr_processdir: $cnt_xmlprocess_preserved preserved, $cnt_xmlprocess_copied copied."
 
 # copy any previously-existing (that is, possibly hand-edited) bbl/abs
-# from xmlprocess back to landing.
+# from xmlprocess back to landing. crbib is never hand-edited.
 # 
 cnt_landing_unchanged=0
 cnt_landing_copied=0
