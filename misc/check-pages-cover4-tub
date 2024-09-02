@@ -34,7 +34,7 @@ sub main {
         next;
       }
       # tb140consultants because of comics
-      next if $item_name =~ /^(edit|instmem|consultants)$/;
+      next if $item_name =~ /^(edit|instmem)$/;
       my $this_pageno;
       if ($type eq "fir") {
         $this_pageno = &get_page ("$item_name/firstpage.tex");
