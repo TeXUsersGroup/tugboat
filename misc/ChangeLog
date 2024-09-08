@@ -1,3 +1,8 @@
+2024-09-08  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr-ctx (\setupfloats): new no-op.
+	(\BC): try &\bf. For tb141hagen-twins (45:3).
+
 2024-09-02  Karl Berry  <karl@freefriends.org>
 
 	* check-pages-cover4-tub: restore check for disordered consultants.

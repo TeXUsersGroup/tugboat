@@ -272,6 +272,7 @@
 %}
 
 \long\def\setupbodyfont[#1]{}
+\long\def\setupfloats[#1]{}
 \long\def\setuphead[#1] [#2]{}
 \long\def\setuplayout[#1]{}
 \long\def\setuppagenumbering[#1]{}
@@ -404,7 +405,7 @@
   \noindent\begingroup \catcode`|=9 \begin{tabular}}
 \def\stoptabulate{\end{tabular}\par\endgroup\smallskip}
 \def\EQ{}
-\def\BC{&}
+\def\BC{&\bf}
 \def\BL{\FL}
 \def\NC{&}
 \def\NR{\\}
