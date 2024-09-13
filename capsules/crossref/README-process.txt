@@ -137,7 +137,7 @@ Besides checking the .html landing files, it is also necessary
 to check the generated dir2.process/issue.xml:
 - check <title>, <surname>, <given_name> elements;
   if any are new organizations, add to lists-authinfo.txt.
-- check that <ORCID> elements are present for all specified;
+- check that <ORCID> elements are present for all that are specified;
   grep the sources. Add any new ones to lists-authinfo.txt.
 - also check <citation_list>s for reasonableness.
 
@@ -170,7 +170,7 @@ Remake everything else too, just to be sure all is well:
 And then copy the final landing files to the live web directory
 (assuming we've been doing all this on a development machine):
   host=tug.org
-  dir=/home/httpd/html/TUGboat/tb$VV-N
+  dir=/home/httpd/html/TUGboat/tb$VV-N; echo $dir
   ssh $host mkdir $dir                           # ensure directory exists
   ssh $host "echo 'not yet' >$dir/index.html"    # no premature leak
   scp -p crossref/dir1.lndout/*.html $host:$dir/
@@ -178,7 +178,7 @@ And then copy the final landing files to the live web directory
 Then check results at:
   https://tug.org/TUGboat/tbVV-N/tbnnnwhatever.html
 E.g.:
-  https://tug.org/TUGboat/tb44-2/tb136beet.html
+  https://tug.org/TUGboat/tb45-2/tb140bursary.html
 The "next doi" links will not work until the dois are registered; see next.
 
 When close enough to making the pdfs public, do the production
@@ -242,8 +242,8 @@ say "publicly available now". This is irritating, but it seems useful
 enough to state explicitly whether or not an article is public to put up
 with it. To do this:
 
-previss=44-2
-prevnnn=137
+previss=45-1
+prevnnn=139
 
 - ensure that tb${prevnnn}capsule.txt is up to date, without /members/ urls.
 cd ../capsules

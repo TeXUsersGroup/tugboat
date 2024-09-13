@@ -176,6 +176,8 @@ sub update_landing_bbl {
               $newcite .= $word;
             }
           }
+          # remove the crossref element.
+          $newcite =~ s,</?unstructured_citation>,,g;
           print $temp_fh "<li class=\"tugbbl\">$newcite</li>\n";
         }
         print $temp_fh "</ol>\n";
