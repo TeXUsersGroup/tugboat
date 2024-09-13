@@ -1,3 +1,21 @@
+2024-09-13  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\tub@Xe): define with \NewDocumentCommand, to avoid
+	unwanted hyperref expansion in \section{\XeTeX}.
+	(\Xe, \XeTeX, \XeLaTeX): use \texorpdfstring.
+	Report from Behdad, fixes from Max, on tugboat mailing list.
+	
+	* tugboat.dtx (\TB@author): don't bother warning if \address or
+	\netaddress is missing. Many authors want their privacy nowadays.
+	
+	* tugboat.dtx (\l@section): ensure there is at least a word space
+	between text of a toc entry and page number, and use \hfil instead
+	of \hss for page number. This to try to get overfull boxes instead
+	of silently typesetting the toc line badly, as happened with
+	tb140mittelbach-tagging24.
+	(\@outputdblcol): likewise use \hfil instead of \hss, on general
+	principles, though maybe not a good idea in this context. We'll see.
+
 2024-08-18  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\WEB): use \texorpdfstring.

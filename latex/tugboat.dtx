@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2024-08-18 v2.32
+                   [2024-09-13 v2.32
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -958,19 +958,32 @@
 \def\tubhideheight#1{\setbox0=\hbox{#1}\ht0=0pt \dp0=0pt \box0 }
 \def\XekernbeforeE{-.125em}
 \def\XekernafterE{-.1667em}
-\DeclareRobustCommand{\Xe}{\leavevmode
+% From Max, mail of 13sep24:
+% hyperref is trying to expand \Xe to get a string for
+% the embedded PDF table of contents, but \Xe is unsafe in an
+% expansion-only context [even when defined with \DeclareRobustCommand,
+% for reasons unknown]. 
+% An easy way to fix this is to replace \DeclareRobustCommand with
+% \NewDocumentCommand, which defines the macro as ``\protected'' instead
+% as ``\protect''ed.
+\NewDocumentCommand\tub@Xe{}{\leavevmode
   \tubhideheight{\hbox{X%
     \setbox0=\hbox{\TeX}\setbox1=\hbox{E}%
     \ifdim \fontdimen1\font>0pt
-      % XeTeX logo needs tinkering when slanted/italic font.
+      % XeTeX logo needs tinkering when slanted/italic font,
+      % so make kerns changeable
       \def\XekernbeforeE{-.11em}%
       \def\XekernafterE{-.16em}%
       \dp1=-.17ex
     \fi
     \lower\dp0\hbox{\raise\dp1\hbox{\kern\XekernbeforeE\tubreflect{E}}}%
     \kern\XekernafterE}}}
-\def\XeTeX{\Xe\TeX}
-\def\XeLaTeX{\Xe{\kern.11em \LaTeX}}
+% [But then,] For hyperref to be able to see the \texorpdfstring, it
+% needs to be inside of a non-protected macro, but we still want the
+% graphics commands to be protected, so we need to make a wrapper command:
+\newcommand\Xe{\texorpdfstring{\tub@Xe}{Xe}}
+\def\XeTeX{\texorpdfstring{\Xe\TeX}{XeTeX}}
+\def\XeLaTeX{\texorpdfstring{\Xe{\kern.11em \LaTeX}}{XeLaTeX}}
 %
 \def\XHTML{\acro{XHTML}}
 \def\XSL{\acro{XSL}}
@@ -2123,16 +2136,16 @@
 % Both `types' of author fall through here to set up the author name
 % and to initialise author-related things.  \cs{EDITORno*} commands
 % allow the editor to record that there's good reason for an
-% \emph{address} or \emph{netaddress} not to be there (the
-% \emph{personalURL} and \emph{ORCID} are optional anyway).
+% \emph{address} or \emph{netaddress} not to be there, but nowadays, we
+% consider all address information optional.
 %    \begin{macrocode}
 \def\TB@author#1{%
   \expandafter\def\csname theauthor\number\authornumber\endcsname
       {\ignorespaces#1\unskip}%
-  \expandafter\def\csname theaddress\number\authornumber\endcsname
-    {\TBWarningNL{Address for #1\space missing}\@gobble}%
-  \expandafter\def\csname thenetaddress\number\authornumber\endcsname
-    {\TBWarningNL{Net address for #1\space missing}\@gobble}%
+%  \expandafter\def\csname theaddress\number\authornumber\endcsname
+%    {\TBWarningNL{Address for #1\space missing}\@gobble}%
+%  \expandafter\def\csname thenetaddress\number\authornumber\endcsname
+%    {\TBWarningNL{Net address for #1\space missing}\@gobble}%
   \expandafter\let\csname thePersonalURL\number\authornumber\endcsname
     \@gobble
   \expandafter\let\csname theORCID\number\authornumber\endcsname
@@ -2821,7 +2834,10 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-% |#1| is both the section number and title; |#2| is the page number.
+% |#1| is both the section number and title, as in
+%   |{\numberline {1}Introduction}|.
+% |#2| is the page number.
+% 
 % Per Ulrike, the hook calls are for tagging, introduced with the
 % June 2023 \LaTeX.
 % qqq need to also do subsections like tb137carlisle to avoid hyphenation
@@ -2836,23 +2852,29 @@
     \hyphenpenalty=10000
     \TBtocsectionfont
     \leavevmode
-    \advance\leftskip\@tempdima
+    \advance\leftskip by \@tempdima % space between section number and text
     \hskip-\leftskip
-    \ifx\UseHookWithArguments\undefined\else
+    %
+    \ifx\UseHookWithArguments\undefined\else % hook before number and text
       \UseHookWithArguments{contentsline/text/before}{4}
         {\toclevel@part}{#1}{#2}{\@contentsline@destination}%
     \fi
+    %
     % don't worry if this cs is not defined, hence the \csname.
-    \csname contentsline@text@1@format\endcsname{#1}% number and title
-    \ifx\UseHookWithArguments\undefined\else
+    % If it doesn't exist, we just typeset #1 as text.
+    \csname contentsline@text@1@format\endcsname
+    {#1}% number and title
+    %
+    \ifx\UseHookWithArguments\undefined\else % hook after number and text
       \UseHookWithArguments{contentsline/text/after}{4}
         {\toclevel@part}{#1}{#2}{\@contentsline@destination}% 
     \fi
     \nobreak
+    \ % ensure there is at least a word space between text and page number
     \hfil
     \nobreak
     % page number
-    \hb@xt@\@pnumwidth{\hss
+    \hb@xt@\@pnumwidth{\hfil
       \ifx\UseHookWithArguments\undefined\else
         \UseHookWithArguments{contentsline/page/before}{4}
           {\toclevel@part}{#1}{#2}{\@contentsline@destination}%
@@ -3786,8 +3808,8 @@
   \else \global\@firstcolumntrue
     \global\brokenpenalty100
     \setbox\@outputbox\vbox{\hb@xt@\textwidth{\hb@xt@\columnwidth
-      {\box\@leftcolumn \hss}\hfil \vrule \@width\columnseprule\hfil
-       \hb@xt@\columnwidth{\box\@outputbox \hss}}}\@combinedblfloats
+      {\box\@leftcolumn \hfil}\hfil \vrule \@width\columnseprule\hfil
+       \hb@xt@\columnwidth{\box\@outputbox \hfil}}}\@combinedblfloats
        \@outputpage \begingroup \@dblfloatplacement \@startdblcolumn
        \@whilesw\if@fcolmade \fi{\@outputpage\@startdblcolumn}\endgroup
     \fi}
