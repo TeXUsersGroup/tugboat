@@ -19,3 +19,6 @@ done
 
 #With wget v2.xx (which is what I have installed locally), try:
 #   qpdf --qdf /path/to/file.pdf - | grep -aoP '(?<=/URI \()[^)]*(?=\))' | wget --spider -i- | grep ^HTTP
+
+# Basic idea for checking urls in html:
+# @links = $html =~ m/<a[^>]+href\s*=\s*["']?([^"'> ]+)/ig;

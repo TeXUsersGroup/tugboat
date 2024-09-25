@@ -10,8 +10,8 @@ status=$?
 # mkiv lua stats  > runtime: 1.405 seconds, 180 processed pages, 180 shipped pages, 128.070 pages/second
 egrep -o '[0-9]+ shipped pages' $out | tail -1
 
-echo "Transcript written to $out."
-exit $?
+echo "Transcript written to $out (status $status)."
+exit $status
 
 # Notes from Max for running interactively (2023).
 #You can kind of fake it though:

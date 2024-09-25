@@ -92,7 +92,9 @@
 \def\MATHML    {\MathML}
 \def\MB        {\acro{MB}}
 \def\METAFONT  {\MF}
-\def\METAFUN   {Metafun}
+\def\METAFUN   {MetaFun}
+\def\MetaFun   {MetaFun}
+\def\LuaMetaFun{Lua\-Meta\-Fun}
 \def\METAPOST  {MetaPost}
 \def\MetaPost  {MetaPost}
 \def\METATEX   {Meta\-\TeX}
@@ -186,7 +188,7 @@
 \def\at{}
 \def\bfc{}
 \def\blackrule[#1]#2{\vrule depth0pt height1ex width#2 \relax}
-\def\blank{\par}
+\def\blank[#1]{\par}
 \def\breakhere{}
 \let\citationORIG=\citation
 \def\citation[#1]{\cite{#1}}
@@ -206,6 +208,7 @@
 \def\externalfigure[#1]#2[#3]{\centerline{\includegraphics[#3]{#1}}}
 \def\from{\tbsurl}
 \def\getnamedglyphdirect{}
+\def\hairline{}
 \def\head{\item}
 \def\high{\textsuperscript}
 \def\hyphenatedurl{\url}
@@ -224,9 +227,10 @@
 \newcommand\page[1][]{}
 \def\percent{\char`\%}
 \def\placelayer[#1]{}
+\def\placenotes[#1]{}
+\def\plusone{}
 \def\quote#1{{`#1'}}
 \let\origquotation = \quotation
-\def\plusone{}
 \def\quotation#1{{``#1''}}
 \def\scale[#1]#2#3{}
 \def\setlayer[#1] [#2]#3{}
@@ -378,6 +382,8 @@
 
 \def\startquotation{\begingroup \origquotation}
 \def\stopquotation{\par\endgroup\smallskip}
+
+\def\startTEX{\starttyping}
 
 \long\def\starttexdefinition#1\stoptexdefinition{}
 \long\def\startTEXpage#1\stopTEXpage{}

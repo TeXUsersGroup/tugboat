@@ -1,3 +1,12 @@
+2024-09-25  Karl Berry  <karl@freefriends.org>
+
+	* check-pdf-urls-tub: document idea for checking urls in html.
+	
+	* lmtxtub: exit with status from lmtx.
+	
+	* tugboat.abbr-ctx (\METAFUN, \MetaFun, \LuaMetaFun, \hairline,
+	\placenodes, \startTEX): definitions for tb141mckay-asemic.
+
 2024-09-08  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.abbr-ctx (\setupfloats): new no-op.
