@@ -1,3 +1,8 @@
+2024-10-06  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\HTTPS): new abbrev.
+	(\cs): \@ afterward, so "\cs{XYZ}." is a sentence-ending period.
+
 2024-09-13  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\tub@Xe): define with \NewDocumentCommand, to avoid
