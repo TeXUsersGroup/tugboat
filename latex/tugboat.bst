@@ -2,8 +2,9 @@
 %%% TUGboat changes are public domain.
 %%% 
 %%% Modified for TUGboat from abbrvurl.bst:
-%%%   New entry types: @ctan (see ctanbib); 
-%%%                    @online and @software (aliases for @misc).
+%%%   New entry types: @ctan (see ctanbib package); 
+%%%                    @online and @software (aliases for @misc);
+%%%                    @webpage (see definition below).
 %%%   For @misc, the editor field is accepted along with author.
 %%%   For @misc, the organization field is output.
 %%%   New field bookauthor for @incollection and @inproceedings.
@@ -18,9 +19,9 @@
 %%%   Set urlintro="" and onlinestring="" to omit labels from output.
 %%%   Use \url instead of \href, so we don't require hyperref.
 %%%   Always use https://doi.org/ for the doi url; omit "doi:" from output.
-%%%   If doi or howpublished is present, omit url, since in practice
-%%%     they are usually all the same thing. Should check if
-%%%     howpublished is in fact a url, but we currently don't.
+%%%   If doi is present, omit url, since in practice they are usually
+%%%     the same thing. Should also omit if howpublished is the same
+%%%     value, but we currently don't.
 %%%   Truncate long author lists in format.names (max.names, trunc.num);
 %%%     omit "and" from author lists, per Oren P.
 %%%   Use \emph instead of \em so we get automatic italic corrections.
@@ -1016,19 +1017,24 @@ FUNCTION {make.href}
   if$
 }
 
-% If inlinelinks is true, then format.url should be a no-op, since it's
-% (a) redundant, and (b) could end up as a link-within-a-link.
-% Likewise if the url is empty.
-% Likewise if doi or howpublished is present, on the assumption that
-% url most likely redundantly specifies the same info as those fields; this
-% seems to be what people do in practice.
+% This function, format.url, should do nothing if
+% - inlinelinks is true, since then it's (a) redundant, and (b) could
+%   end up as a link-within-a-link.
+% - if the url is empty.
+% - if the doi field is present, on the assumption that it most
+%   likely redundantly specifies the same info; this seems to be what
+%   people do in practice, unfortunately.
+% 
+% If we find this case again in the future, we'll implement it.
+% For tb141lang-dh, howpublished is intentionally and reasonably
+% separate from url.
+% - if the howpublished field contains the same value as the url field;
 FUNCTION {format.url}
 { inlinelinks #1 =  url empty$  or
   doi empty$ not or
-  howpublished empty$ not or
    { "" }
    { hrefform #1 =
-       { % special case -- add HyperTeX specials
+       { % #1 means add HyperTeX, which we never do
          urlintro "\url{" url * "}" * url make.href.hypertex * }
        { urlintro "\url{" * url * "}" * }
      if$

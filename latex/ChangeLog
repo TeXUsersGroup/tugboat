@@ -1,3 +1,9 @@
+2024-10-07  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst (format.url): don't omit if howpublished is present
+	until we need this case again. tb141lang-dh uses howpublished
+	separately (and reasonably).
+
 2024-10-06  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\HTTPS): new abbrev.
