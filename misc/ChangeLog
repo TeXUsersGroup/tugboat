@@ -1,3 +1,10 @@
+2024-10-10  Karl Berry  <karl@freefriends.org>
+
+	* check-embed-tub: might have trailing " (OT)", as in
+
+	* check-pdf-urls-tub: remove trailing colon for easier copy-paste,
+	tee /tmp/ckurl.
+
 2024-09-25  Karl Berry  <karl@freefriends.org>
 
 	* check-pdf-urls-tub: document idea for checking urls in html.

@@ -46,18 +46,25 @@ sub check_file {
 
   open (CHECK, "-|", "pdffonts", $file)
   || die "open(pdffonts $file) failed: $!";
-  my $hdrline = <CHECK>;  # ignoren
+  my $hdrline = <CHECK>;  # ignore
   my $dashline = <CHECK>; # ignore
   while (<CHECK>) {
     my $orig_line = $_;
     
-    # remove everything up to known font type. Some examples (note spaces):
+    # Remove everything through (and including) the font type. We can't
+    # just cut to the column since sometimes the names or types overflow.
+    # 
+    # Some examples (note spaces):
     # name                                           type              emb sub uni prob object ID
     # ---------------------------------------------- ----------------- --- --- --- ---- ---------
     # WZALOJ+CMTT9                                   Type 1            yes yes yes          75  0
     # *Times New Roman-605-Identity-H                CID Type 0C       yes no  yes          79  0
+    # AAAAAA+DINNextW1G-Regular                      CID Type 0C (OT)  yes yes yes         156  0
+    # 
+    # The " (OT)" example is from tb141vanek-primo.pdf.
+    # 
     #
-    s/^.*(CID Type 0C?|CID TrueType|Type 1C?|Type 3|TrueType)//;
+    s/^.*(CID Type 0C?|CID TrueType|Type 1C?|Type 3|TrueType)( \(OT\))?//;
     
     # what follows should be the emb boolean.
     my ($emb) = split (" ");
