@@ -1,3 +1,13 @@
+2024-10-11  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.cmn (\macOS, \SQL): new abbrevs, following ltugboat.sty.
+	(\tbsurl, \tbhurl, \tbmailto, \tbhref): new definitions to support
+	live links with pdftex (only).
+	(\vol): also define \volnumber, \issnumber, and \issident
+	as just the plain numbers and issue ident "tbVV-N", for urls.
+	* tugboat.sty (\tbsurl, \tbhurl): remove placeholder definitions.
+	(\thedoi): use \issident.
+
 2024-05-14  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.sty (\endarticle): \nobreak before \vfil, to avoid a

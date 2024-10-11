@@ -30,7 +30,7 @@
 \next
 
 \def\fileversion{v1.30}
-\def\filedate{2024-04-15}
+\def\filedate{2024-10-11}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -160,6 +160,7 @@
 \def\LaTeXe{\LaTeX{}\kern.05em2$_{\textstyle\varepsilon}$}
 \def\LMTX{\acro{LMTX}}
 \def\LyX{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX}
+\def\macOS{mac\acro{OS}}
 \def\MacOSX{Mac\,\acro{OS\,X}}
 \def\MathML{Math\acro{ML}}
 %       for Robert McGaffey
@@ -199,6 +200,7 @@
 \def\SliTeX{{\rm S\kern-.06em{\smc l\kern-.035emi}\kern-.06em\TeX}}
 \def\slMF{{\manualsl META}\-{\manualsl FONT}\spacefactor1000 }
 %       Atari ST (Klaus Guntermann)
+\def\SQL{\acro{SQL}}
 \def\stTeX{{\smc st\rm\kern-0.13em\TeX}}
 \def\SVG{\acro{SVG}}
 \def\TANGLE{{\tt TANGLE}\spacefactor1000 }
@@ -495,6 +497,24 @@
 \def\tbcode#1{\hbox{\tt #1}} % literal text
 \def\tbcodebreak{\nolinkurl} % assume url.sty has been loaded
 
+% live urls with pdf.
+\def\tbsurl#1{\tbhref{https://#1}{\tt #1}}
+\def\tbhurl#1{\tbhref{http://#1}{\tt #1}}
+\def\tbmailto#1{\tbhref{mailto:#1}{\tt #1}}
+%
+\ifx\pdfstartlink\undefined
+% \tbhref args: #1=url, #2=link text.
+  \def\tbhref#1#2{{#2}}% not pdftex, just print the text (in a group).
+\else % pdftex:
+  \def\tbhref#1#2{%
+    \leavevmode % since \pdfstartlink cannot be used in vertical mode
+    \pdfstartlink
+      attr{/Border [0 0 0]}%
+      user{/Subtype /Link /A << /S /URI /URI (#1) >>}%
+    {#2}\pdfendlink
+  }
+\fi % pdftex
+
 %  Adapted from c.t.t posting by Donald Arseneau, 26 May 93.
 \def\nth#1{\TestCount=#1\relax
     \ifnum\TestCount <0 \multiply\TestCount by\m@ne \fi % subdue negatives
@@ -552,8 +572,13 @@
 \def\v@lx{\gdef\volx{Volume~\volno~(\volyr), No.~\issno}}
 \def\volyr{}
 \def\volno{}
-\def\vol #1,#2.{\gdef\volno{#1\unskip}%
+\def\vol #1, #2.{\gdef\volno{#1\unskip}%
         \gdef\issno{\ignorespaces#2\unskip}%
+        % just the numbers:
+        \gdef\volnumber{#1}%
+        \gdef\issnumber{#2}%
+        \gdef\tbissident{\volnumber-\issnumber}% VV-n, for dois and urls
+        %
         \setbox\TestBox=\hbox{\volyr}%
         \ifdim \wd\TestBox > .2em \v@lx \fi }
 

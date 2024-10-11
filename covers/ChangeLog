@@ -1,3 +1,8 @@
+2024-10-11  Karl Berry  <karl@freefriends.org>
+
+	* cover1.tex,
+	* cover2.tex: link various urls now that we can (see tugboat.cmn).
+
 2024-10-10  Karl Berry  <karl@freefriends.org>
 
 	* Makefile (cover1.pdf): depend on coverdrawing.pdf not png.

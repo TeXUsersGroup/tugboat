@@ -22,7 +22,7 @@
 
 \def\thistubstyle{plain}
 \def\fileversion{v1.30}
-\def\filedate{2024-05-14}
+\def\filedate{2024-10-11}
 
 % general items
 
@@ -503,8 +503,6 @@
 \newif\iftubsecondcolstart % when we splice, e.g., tb139wermuth-isdim
 \newdimen\tubcolwidthandgutter
 \newif\iftubfinaloption    % set in tugboat.dates
-\def\tbsurl#1{{\tt #1}}    % we don't try to have live urls in plain
-\def\tbhurl#1{{\tt #1}}    % we don't try to have live urls in plain
 \def\scriptsize{\let\rm=\sevenrm \font\tt=cmtt8 at 7pt % fake 7pt match LaTeX
                 \baselineskip=8pt \relax} % fake
 \def\@empty{}
@@ -516,7 +514,7 @@
  \iftubfinaloption % do this if [final], even if pageno>900
   \vbox to 0pt{% don't impact normal layout
     \edef\thedoi{\ifnum\count0>900 xnot\fi % but make url invalid if >900
-                 doi.org/\tubdoiprefix/\volno-\issno/\jobname}%
+                \tbsurl{doi.org/\tubdoiprefix/\issident/\jobname}}%
     \scriptsize
     \vskip\baselineskip
     \iftubsecondcolstart \moveright\tubcolwidthandgutter \fi

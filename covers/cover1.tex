@@ -51,7 +51,8 @@
 \dlap{\boxit 5pc/1pc, \kern 23pc<
       \kern -66pt % move back into the box
       \noindent \kern 9pt
-      \immediate\pdfximage {word-nobox.pdf}\pdfrefximage\pdflastximage
+      \tbhref{https://tug.org/TUGboat}
+             {\immediate\pdfximage {word-nobox.pdf}\pdfrefximage\pdflastximage}
       \par
       \kern 14pt
       \boxit 1.5pc/.75pc, \commfont The Communications of the \TUG<
@@ -81,8 +82,10 @@
 
 % text at bottom, two lines.
 \setbox\TestBox=\hbox{%
-  \boxit 1.5pc/.75pc, \volfont Volume \volno,
-    Number \issno, \issdt \PostIssno<}
+  \tbhref{https://tug.org/TUGboat/tb\tbissident}
+         {\boxit 1.5pc/.75pc, \volfont Volume \volno,
+          Number \issno, \issdt \PostIssno<}
+}
 %
 \ifdim\wd\TestBox < .8\pagewd
   \unhbox\TestBox
