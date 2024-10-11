@@ -1,3 +1,15 @@
+2024-10-10  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (cover1.pdf): depend on coverdrawing.pdf not png.
+	* cover1.tex: coverdrawing.pdf for tb141 (45:3).
+
+	* cover2.tex (\rateyear): enable, since third issue;
+	update sub rate to $140.
+	(About the cover): update for McKay.
+	
+	* cover4.tex (\secskipa, \secskipb): reduce defaults
+	from 6.0plus3 and 1.5plus1.
+
 2024-08-30  Karl Berry  <karl@freefriends.org>
 
 	* Makefile (ca): another alias for cadmus.
