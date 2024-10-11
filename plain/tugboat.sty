@@ -513,9 +513,9 @@
  \ifnum\authornumber>0 % our convention: no doi if no author
  \iftubfinaloption % do this if [final], even if pageno>900
   \vbox to 0pt{% don't impact normal layout
-    \edef\thedoi{\ifnum\count0>900 xnot\fi % but make url invalid if >900
-                \tbsurl{doi.org/\tubdoiprefix/\issident/\jobname}}%
     \scriptsize
+    \edef\thedoi{\ifnum\count0>900 xnot\fi % but make url invalid if >900
+                \tbsurl{doi.org/\tubdoiprefix/\tbissident/\jobname}}%
     \vskip\baselineskip
     \iftubsecondcolstart \moveright\tubcolwidthandgutter \fi
     \rlap{\expandafter\tbsurl\expandafter{\thedoi}}%
