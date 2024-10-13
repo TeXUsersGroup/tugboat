@@ -388,8 +388,9 @@
 \long\def\starttexdefinition#1\stoptexdefinition{}
 \long\def\startTEXpage#1\stopTEXpage{}
 
-\def\starttext{\begin{document}\maketitle}
+\def\starttext{\begin{document}\tubbegindochook\maketitle}
 \let\stoptext = \stopArticle
+\def\tubbegindochook{}
 
 \def\startsection[title=#1]{\section{#1}}
 \def\stopsection{}

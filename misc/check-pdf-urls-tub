@@ -11,7 +11,7 @@ for f in "$@"; do
   | grep -avF adobe.com \
   | grep -aoP '(?<=/URI \()[^)]*(?=\))' \
   | sort -u \
-  | wget --timeout=8 --tries=0 --spider -nv -i- 2>&1 \
+  | wget --timeout=10 --tries=0 --spider -nv -i- 2>&1 \
   | tee /tmp/ckurl \
   | sed -e 's/^.* URL: //' -e 's/:$//'
 done

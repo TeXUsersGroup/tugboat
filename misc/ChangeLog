@@ -1,3 +1,11 @@
+2024-10-13  Karl Berry  <karl@freefriends.org>
+
+	* check-pages-cover4-tub: tb141elec special disordered case.
+	* check-pdf-urls-tub: increase timeout to 10.
+	* check-splice-tub: attempt to check firstpageincr; not 100% yet.
+	* tugboat.abbr-ctx (\tubbegindochook): TeX to insert after
+	\begin{document} and before \maketitle, for tb141hagen-inaccessible.
+
 2024-10-10  Karl Berry  <karl@freefriends.org>
 
 	* check-embed-tub: might have trailing " (OT)", as in

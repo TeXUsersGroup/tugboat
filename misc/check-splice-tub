@@ -38,7 +38,7 @@ sub main {
 # 
 sub find_source_files {
   my @source_files = glob ("*/tb[0-9]*.[!a]?x");  # !a to skip .aux
-  #warn "source files: @source_files\n";
+  warn "source files: @source_files\n";
   return @source_files;
 }
 
@@ -57,13 +57,15 @@ sub find_nocadmus {
 }
 
 
-# Items that specify a \firstpageincr. Don't worry about leading whitespace.
-# Each of these items should be in nocadmus, and spliced in some way.
+# Items that specify a \firstpageincr. Don't worry about leading stuff
+# other than a % (we might have put it on a line after other code, e.g.,
+# in wermuth). Each of these items should be in nocadmus, and spliced
+# in some way.
 # 
 sub find_firstpageincr {
   my @source_files = &find_source_files ();
 
-  my $f = '^[\]def[\]firstpageincr{';
+  my $f = '^[^%]*[\]def[\]firstpageincr{';
   my @matches = `grep -l '$f' @source_files`;
   #warn "firstpageincr matches: @matches\n";
   
@@ -122,7 +124,7 @@ sub find_singlesplice {
   my %items;
   
   for my $srcname (@source_files) {
-    warn "source file $srcname\n";
+    #warn "source file $srcname\n";
     open (my $src, $srcname) || die "open($srcname) failed: $!";
     while (<$src>) {
       # We don't worry about the end-of-document commands inside verbatim,
@@ -190,6 +192,8 @@ sub check_all_splices {
   #info_hash ("singlesplice reverse", %singlesplice_reverse);
   info ("\n");
 
+  #  
+  &info ("checking splices vs. firstpageincr...\n");
   # Each item in firstpageincr should definitely be spliced. Usually it
   # will be in nocadmus, but when a longer item includes the one-page at
   # the front (e.g., tb137gratzer so includes zprav), it won't. So then it
@@ -200,40 +204,81 @@ sub check_all_splices {
   # 
   for my $fp (@firstpageincr) {
     if (exists $nocadmus{$fp}) {
-      &info ("found firstpageincr $fp in nocadmus, ok\n");
+      &info (" found firstpageincr $fp in nocadmus, ok\n");
     } elsif (exists $singlesplice_reverse{$fp}) {
-      &info ("found firstpageincr $fp in singlesplice_reverse, ok\n");
+      &info (" found firstpageincr $fp in singlesplice_reverse, ok\n");
     } else {
-      die "firstpageincr $fp not in nocadmus (@$nocadmus)";
+      die " firstpageincr $fp not in nocadmus (@$nocadmus)";
     }
     
     if (exists $multisplice2{$fp}) {
-      &info ("found firstpageincr $fp in multisplice2, ok\n");    
+      &info (" found firstpageincr $fp in multisplice2, ok\n");    
     } elsif (exists $singlesplice{$fp}) {
-      &info ("found firstpageincr $fp in singlesplice, ok\n");
+      &info (" found firstpageincr $fp in singlesplice, ok\n");
     } elsif (exists $singlesplice_reverse{$fp}) {
       ; # reported above
     } else {
-      die "firstpageincr $fp not in multisplice2 or singlesplice";
+      die " firstpageincr $fp not in multisplice2 or singlesplice";
     }
   }
   
-  # everything in multisplice1 and multisplice2 and singlesplice should
+  #  Check that firstpageincr list is complete, with nothing extra.
+  &info ("checking firstpageincr list...\n");
+  my (%firstpageincr);
+  @firstpageincr{@$firstpageincr} = ();
+  #
+  # Everything in multisplice2 should be in firstpageincr.
+  # 
+  for my $ms2 (sort keys %multisplice2) {
+    if (exists $firstpageincr{$ms2}) {
+      &info (" found multisplice2 $ms2 in firstpageincr, ok\n");
+      delete $firstpageincr{$ms2};
+    } else {
+      die " multisplice2 item not in firstpageincr: $ms2";
+    }
+  }
+  #
+  # For singlesplice, either the key or the value should be in
+  # firstpageincr, depending on whether it was a front splice.
+  # Not sure about both, assume not until we find an example.
+  # (Better reporting to use singlesplice key and value instead of
+  #  singlesplice_reverse.)
+  # 
+  for my $ss (sort keys %singlesplice) {
+    my $ssval = $singlesplice{$ss};
+    if (exists $firstpageincr{$ss}) {
+      &info (" found singlesplice key $ss in firstpageincr, ok\n");
+      delete $firstpageincr{$ss};
+    } elsif (exists $firstpageincr{$ssval}) {
+      &info (" found singlesplice value $ssval (for key $ss) "
+             . "in firstpageincr, ok\n");
+      delete $firstpageincr{$ssval};
+    } else {
+      die " singlesplice item not in firstpageincr: $ss->$ssval";
+    }
+  }
+  # There should be nothing left over in firstpageincr.
+  die " firstpageincr items remain: ", join (" ", keys %firstpageincr)
+    if (keys %firstpageincr);
+  
+  #  Everything in multisplice1 and multisplice2 and singlesplice should
   # be in nocadmus, and nothing should be left over.
+  &info ("checking nocadmus list...\n");  
   for my $ms (sort(keys %multisplice1, keys %multisplice2,
                    keys %singlesplice)) {
     if (exists $nocadmus{$ms}) {
       delete $nocadmus{$ms};
-      &info ("found splice $ms in nocadmus, ok\n");
+      &info (" found splice $ms in nocadmus, ok\n");
     } elsif ($ms eq "covers") {
-      &info ("covers is special, ok not to be in nocadmus\n");
+      &info (" covers is special, ok not to be in nocadmus\n");
     } else {
-      die "splice $ms not in nocadmus (@$nocadmus)";
+      die " splice $ms not in nocadmus (@$nocadmus)";
     }
   }
-  
-  die "nocadmus items remain: ", join (" ", keys %nocadmus)
+  #
+  die " nocadmus items remain: ", join (" ", keys %nocadmus)
     if (keys %nocadmus);
+
   return 0;
 }
 
