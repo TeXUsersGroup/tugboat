@@ -110,6 +110,10 @@ cadmus cad ca: $(c3_target)
 	$(cp) titlepage.pdf      ../CADMUS/p$(p_titlepage).pdf
 	chmod a+r ../CADMUS/* ../webdir/*
 
+spell:
+	check_files=cover*.tex; \
+	for f in $$check_files; do printf "\f $$f\n"; (cd `dirname $$f` && myspell `basename $$f`); done
+
 check:
 	cd .. && $(MAKE) $@
 

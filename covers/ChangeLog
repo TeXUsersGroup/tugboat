@@ -1,3 +1,12 @@
+2024-10-13  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (spell): new target.
+	* dict.pws: new file, linked as .dict.pws.
+	* cover2.tex (About the cover): tweak description.
+	* cover3.tex (\abovecapsuleskip): reduce for tb141.
+	* cover4.tex (\vfuzz): need 44pc for tb141.
+	(\secskipa, \secskipb): reduce.
+
 2024-10-11  Karl Berry  <karl@freefriends.org>
 
 	* cover1.tex,
