@@ -1,3 +1,10 @@
+2024-10-14  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.front (\TUBhead, \pressimage): link to the TUGboat issue.
+	* cover2.tex: MetaFun with a capital F.
+	* cover1.tex: also link the "Communications" box.
+	* tbcomplete.lua: last=119 for tb141.
+
 2024-10-13  Karl Berry  <karl@freefriends.org>
 
 	* Makefile (spell): new target.

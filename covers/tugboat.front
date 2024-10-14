@@ -262,6 +262,8 @@
 \def\TUBhead #1, #2, #3<{\setbox\TestBox=\hbox{()}\secht=\ht\TestBox
     \sec \null <\newsecfalse 	% initialize section box
     \procissuefalse
+   % hyperlink the whole header to the TUGboat issue.
+   \tbhref{https://tug.org/TUGboat/tb\tbissident}{%
     \subsub{\bigfont\bf TUG{\smc BOAT}}<%
     \vskip 10pt
     \subsub
@@ -274,11 +276,20 @@
     \else \vskip2pt \subsub {\twelverm\baselineskip15pt \postissno}<%
         \global\procissuetrue
     \fi
+   % end the hyperlink; but we're in vertical mode, where \pdfendlink is
+   % not allowed, so \leavevmode. But then we have to adjust for the
+   % blank "line" that gets added. Don't know why it isn't exactly
+   % \baselineskip, but just eyeballed it. Results are not quite
+   % identical as without the hyperlink, but maybe close enough.
+   \leavevmode}\vskip-10pt % end \tbhref
     \vskip 20pt }
 
 \def\pressimage{\ulap{\llap{%
   \lower 8pt \hbox{%
+   % hyperlink the image separately, since it's not in the same rectangle.
+   \tbhref{https://tug.org/TUGboat/tb\tbissident}{%
     \pdfximage width 6pc {press2.pdf}\pdfrefximage\pdflastximage
+   }%
   }%
   \quad
 }}}

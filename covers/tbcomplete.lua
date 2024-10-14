@@ -17,11 +17,18 @@ return {
             first       = 1,
             -- last     = (doesn't need to be specified)
             interaction = "all",
+            pageoffset  = 0,
         },
         {
             filename    = "toclinks",
-            first       = 999, --cover3, page1 (last page of toclinks.pdf)
-            -- last     = first+1, --cover3, when it needs two pages
+            first = 119,
+            -- not working yet: first       = -1, --cover3, last page of toclinks.pdf
+            --   last        = -1, --just that page
+            -- 
+            -- sometimes cover3 spills over backwards onto the last
+            -- regular page. Then we use:
+            --first       = -2, --cover3, second to last page of toclinks.pdf
+            --last        = -1, --last page of toclinks.pdf
             interaction = "all",
             pageoffset  = 0,
         },
