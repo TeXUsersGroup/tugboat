@@ -1,3 +1,9 @@
+2024-10-17  Karl Berry  <karl@freefriends.org>
+
+	* check-pdf-urls-tub: --no-check-cert; add license.
+	* luatex-xobject-tub.tex: new doc/script from Max to extract
+	included PDFs a la pdfimages.
+
 2024-10-13  Karl Berry  <karl@freefriends.org>
 
 	* check-pages-cover4-tub: tb141elec special disordered case.

@@ -1,5 +1,6 @@
 #!/bin/sh
 # $Id$
+# License: do what you want to.
 # Extract urls from a pdf and try visiting them.
 
 for f in "$@"; do
@@ -11,7 +12,7 @@ for f in "$@"; do
   | grep -avF adobe.com \
   | grep -aoP '(?<=/URI \()[^)]*(?=\))' \
   | sort -u \
-  | wget --timeout=10 --tries=0 --spider -nv -i- 2>&1 \
+  | wget --no-check-cert --timeout=10 --tries=0 --spider -nv -i- 2>&1 \
   | tee /tmp/ckurl \
   | sed -e 's/^.* URL: //' -e 's/:$//'
 done

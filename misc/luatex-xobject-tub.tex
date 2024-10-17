@@ -1,0 +1,76 @@
+#!/usr/bin/env -S luatex --ini --shell-escape
+--[[\catcode`\{=1\catcode`\}=2
+\output{\setbox0\box255\deadcycles=0}\directlua{dofile(status.filename)}\end]]
+
+-- license: do what you want to.
+
+tex.enableprimitives("", tex.extraprimitives())
+tex.outputmode = 1
+pdf.setmajorversion(2)
+pdf.setminorversion(0)
+pdf.setcompresslevel(9)
+pdf.setobjcompresslevel(9)
+
+local filename = arg[#arg]
+if not filename then
+    print("Usage: " .. arg[0] .. " <filename>")
+    os.exit(1)
+end
+
+local obj_count = -1
+
+local operatortable = {}
+function operatortable.Do(scanner, info)
+    local xobjects = info.resources and info.resources.XObject or {}
+
+    local xobject_name     = scanner:pop()[2]
+    local xobject_userdata = xobjects[xobject_name]
+    local xobject_table    = {}
+    local xobject_object   = pdfe.dictionarytotable(xobjects)[xobject_name][3]
+
+    for i = 1, #xobject_userdata do
+        local key, _, value, _ = pdfe.getfromstream(xobject_userdata, i)
+        xobject_table[key] = value
+    end
+
+    if xobject_table.Type ~= "XObject" or xobject_table.Subtype ~= "Form" then
+        return
+    end
+
+    local bbox = {}
+    for i = 1, 4 do
+        bbox[i] = xobject_table.BBox[i]
+    end
+
+    local width  = tex.sp((bbox[3] - bbox[1]) .. "bp")
+    local height = tex.sp((bbox[4] - bbox[2]) .. "bp")
+
+    local rule  = node.new("rule")
+    rule.width  = width
+    rule.height = height
+
+    local target_obj = tex.saveboxresource(node.hpack(rule))
+    obj_count = obj_count + 1
+
+    repeat
+        pdf.reserveobj()
+        obj_count = obj_count + 1
+    until obj_count == target_obj
+
+    local objnum = img.immediatewriteobject(
+        img.new { filename = filename }, xobject_object
+    )
+
+    tex.box[0]     = node.hpack((tex.useboxresource(objnum)))
+    tex.pagewidth  = width
+    tex.pageheight = height
+    tex.shipout(0)
+end
+
+local doc = pdfe.open(filename)
+if pdfe.getstatus(doc) ~= 0 then error() end
+
+for n, page in pairs(doc.pages) do
+    local info = { resources = page.Resources }
+    pdfscanner.scan(page.Contents(true), operatortable, info)
+end
