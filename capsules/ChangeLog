@@ -1,3 +1,9 @@
+2024-10-25  Karl Berry  <karl@tug.org>
+
+	* Makefile (testiss,lastiss,crossref_iss): 141.
+	(diff-id): better to look at the cwd listauthor.html.
+	* lists-translations.txt (\macOS, \SQL): new abbrevs.
+
 2024-10-10  Karl Berry  <karl@freefriends.org>
 
 	* lists-unifications.txt (Kris Rose, Norm Walsh): new
