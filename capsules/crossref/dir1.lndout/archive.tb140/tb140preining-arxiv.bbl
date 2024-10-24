@@ -1,0 +1,36 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{1}
+
+\bibitem{allenai}
+{Allen Institute for \acro{AI}}.
+\newblock Paper to \HTML.
+\newblock \newline \url{https://papertohtml.org/}
+
+\bibitem{arxiv.org}
+ar{X}iv project.
+\newblock \url{https://arxiv.org}
+
+\bibitem{Berry:2024:PN}
+K.~Berry.
+\newblock Production notes.
+\newblock \emph{TUGboat} 45(1):154--154, 2024.
+\newblock \url{https://doi.org/10.47397/tb/45-1/tb139prod}
+
+\bibitem{arxiv-deims}
+C.~Frankston, J.~Godfrey, et~al.
+\newblock {HTML} papers on {arXiv}{\Dash}why it is important, and how we made
+  it happen, 2024.
+\newblock \newline \url{https://arxiv.org/abs/2402.08954}
+
+\bibitem{repbuild}
+Reproducible builds website.
+\newblock \newline \url{https://reproducible-builds.org}
+
+\bibitem{autotex}
+T.~Schwander.
+\newblock {AutoTeX} on {CPAN}.
+\newblock \newline \url{https://metacpan.org/pod/TeX::AutoTeX}
+
+\end{thebibliography}

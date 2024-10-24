@@ -1,0 +1,15 @@
+For a description of the background, goals and previous progress reports
+of  the \LaTeX\ Tagged \PDF\ project we refer the reader to various previous
+articles [8,1,6,2].
+This report concentrates on a few important additions in the past
+year.
+
+As a quick summary, the most important goals of the Tagged \PDF\ project are:
+\begin{itemize}
+\item to improve accessibility of \PDF\ documents produced by \LaTeX{};
+\item to provide tagging of \PDF\ in an  automatic and easy way;
+\item to also improve conversion to \HTML;
+\item to push the use of \PDF\ 2.0\Dash better for accessibility, especially if math is involved;
+\item and to push improvements in viewers and tools. 
+\end{itemize}
+On all these topics there has been noticeable progress.

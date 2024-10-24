@@ -1,0 +1,47 @@
+\begin{thebibliography}{9}\frenchspacing
+
+%\fontsize{9.3}{11.3}\selectfont
+
+
+\bibitem{39:Lamport}
+Leslie Lamport.
+\newblock \emph{{\LaTeX}: {A} Document Preparation System: User's Guide and Reference
+  Manual}.
+\newblock \mbox{Addison}-Wesley, Reading, MA, USA, 2nd edition, 1994.
+\newblock ISBN 0-201-52983-1.
+\newblock Reprinted with corrections in 1996.
+
+\bibitem{39:ltnews} \LaTeX{} Project Team.
+  \emph{\LaTeXe{} news 1--39}. June, 2024.
+  \url{https://latex-project.org/news/latex2e-news/ltnews.pdf}
+
+\bibitem{39:ltnews31} \LaTeX{} Project Team.
+  \emph{\LaTeXe{} news 31}. February, 2020.
+  \url{https://latex-project.org/news/latex2e-news/ltnews31.pdf}
+
+\bibitem{39:ltnews33} \LaTeX{} Project Team.
+  \emph{\LaTeXe{} news 33}. June 2021.\\
+  \url{https://latex-project.org/news/latex2e-news/ltnews33.pdf}
+
+\bibitem{39:ltnews35} \LaTeX{} Project Team.
+  \emph{\LaTeXe{} news 35}. June 2022.\\
+  \url{https://latex-project.org/news/latex2e-news/ltnews35.pdf}
+
+\bibitem{39:ltnews37} \LaTeX{} Project Team.
+  \emph{\LaTeXe{} news 37}. June 2023.\\
+  \url{https://latex-project.org/news/latex2e-news/ltnews37.pdf}
+
+\bibitem{39:ltnews38} \LaTeX{} Project Team.
+  \emph{\LaTeXe{} news 38}. November 2023.
+  \url{https://latex-project.org/news/latex2e-news/ltnews38.pdf}
+
+\bibitem{39:deims} Frank Mittelbach and Ulrike Fischer.
+  \emph{Enhancing \LaTeX{} to automatically produce
+  tagged and accessible PDF}. \textsl{TUGboat} 45:1, 2024.
+  \url{https://latex-project.org/publications/indexbyyear/2024/}
+
+  %\bibitem{39:blueprint} Frank Mittelbach and Chris Rowley.
+%  \emph{\LaTeX{} Tagged PDF \Dash A blueprint for a large project}.\\
+%  \url{https://latex-project.org/publications/indexbyyear/2020/}
+
+\end{thebibliography}

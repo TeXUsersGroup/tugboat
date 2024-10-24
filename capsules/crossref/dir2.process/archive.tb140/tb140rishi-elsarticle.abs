@@ -1,0 +1,9 @@
+The \verb+elsarticle.cls+, \verb+cas-sc.cls+, and \verb+cas-dc.cls+ classes are
+the preferred \LaTeX\ class files recommended by Elsevier, a publishing
+company specializing in scientific, technical, and medical (\acro{STM})
+content for manuscript submissions to their journals. These class files
+are available on \CTAN\ along with templates, Bib\TeX\ style files, and
+user documentations. In this article, we will mainly explore the
+purpose, features and benefits of these class files and how to utilize
+these packages effectively for their intended purposes. We also list
+the challenges resulting from not using these recommended templates.

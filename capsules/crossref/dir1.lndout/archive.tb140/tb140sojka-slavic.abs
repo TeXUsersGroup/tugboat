@@ -1,0 +1,3 @@
+So far, \TeX\ hyphenation patterns, even for related languages, have been developed separately for each language, splitting scarce human resources. As languages develop and (especially) English terms creep into formerly monolingual texts, hyphenation patterns, especially for medium- and low-resource languages which often lack quality generated patterns, are due for an update. In this article, we explore the possibilities for transfer learning of hyphenation rules between related Slavic languages.
+
+We present new hyphenation patterns for multiple Slavic languages, developed using transfer learning from various sources.

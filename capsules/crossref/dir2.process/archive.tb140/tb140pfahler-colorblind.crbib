@@ -1,0 +1,108 @@
+<citation_list>
+  <citation key="pgfplots">
+    <author>Christian Feuersänger</author>
+    <volume_title>The pgfplots package</volume_title>
+    <unstructured_citation>Feuersänger, Christian (manual): The pgfplots package. URL&#160;https://pgfplots.sourceforge.net/. Create normal/logarithmic plots in two and three dimensions.</unstructured_citation>
+  </citation>
+  <citation key="pgf">
+    <author>Christian Feuersänger</author>
+    <volume_title>The pgf package</volume_title>
+    <unstructured_citation>Feuersänger, Christian and Menke, Henri and Tantau, Till and The PGF/TikZ Team (manual): The pgf package. URL&#160;https://ctan.org/pkg/pgf. Create PostScript and PDF graphics in .</unstructured_citation>
+  </citation>
+  <citation key="xcolor">
+    <author>Uwe Kern</author>
+    <volume_title>The&#160;xcolor package</volume_title>
+    <unstructured_citation>Kern, Uwe and Project Team (manual): The&#160;xcolor package. URL&#160;https://github.com/latex3/xcolor. Driver-independent color extensions for and pdf.</unstructured_citation>
+  </citation>
+  <citation key="colorblind">
+    <author>Simon Pfahler</author>
+    <volume_title>The colorblind package</volume_title>
+    <unstructured_citation>Pfahler, Simon (manual): The colorblind package. URL&#160;https://github.com/simon-pfahler/colorblind. Easy colorblind-safe typesetting.</unstructured_citation>
+  </citation>
+  <citation key="l3kernel">
+    <author>LaTeX Project Team</author>
+    <volume_title>The l3kernel package</volume_title>
+    <unstructured_citation>LaTeX Project Team (manual): The l3kernel package. URL&#160;https://ctan.org/pkg/l3kernel. 3 programming conventions.</unstructured_citation>
+  </citation>
+  <citation key="Birch1997">
+    <journal_title>Ophthalmic and Physiological Optics</journal_title>
+    <article_title>Efficiency of the Ishihara Test for Identifying Red-Green Colour Deficiency</article_title>
+    <author>Jennifer Birch</author>
+    <volume>17</volume>
+    <issue>5</issue>
+    <first_page>403</first_page>
+    <cYear>1997</cYear>
+    <unstructured_citation>Birch, Jennifer (1997), ‘Efficiency of the Ishihara test for identifying red-green colour deficiency’, Ophthalmic and Physiological Optics (5)17, pp.&#160;403–408.</unstructured_citation>
+  </citation>
+  <citation key="Sharpe1999">
+    <journal_title>Color vision: From genes to perception</journal_title>
+    <article_title>Opsin&#160;Genes, Cone Photopigments, Color Vision, and Color Blindness</article_title>
+    <author>Lindsay T Sharpe</author>
+    <volume>351</volume>
+    <first_page>3</first_page>
+    <cYear>1999</cYear>
+    <unstructured_citation>Sharpe, Lindsay T, Andrew Stockman, Herbert Jägle et al. (1999), ‘Opsin&#160;genes, cone photopigments, color vision, and color blindness’, Color vision: From genes to perception, 351, pp.&#160;3–52. URL&#160;https://www.allpsych.uni-giessen.de/karl/colbook/sharpe.pdf.</unstructured_citation>
+  </citation>
+  <citation key="Coblis">
+    <author>Matthew Wickline</author>
+    <volume_title>CoblisColor Blindness Simulator</volume_title>
+    <cYear>2001</cYear>
+    <unstructured_citation>Matthew Wickline (online): CoblisColor Blindness Simulator. URL&#160;https://www.color-blindness.com/coblis-color-blindness-simulator/.</unstructured_citation>
+  </citation>
+  <citation key="Brewer2003">
+    <journal_title>Cartography and Geographic Information Science</journal_title>
+    <article_title>ColorBrewer in Print: A Catalog of Color Schemes for Maps</article_title>
+    <author>Cynthia A. Brewer</author>
+    <volume>30</volume>
+    <issue>1</issue>
+    <first_page>5</first_page>
+    <cYear>2003</cYear>
+    <doi>10.1559/152304003100010929</doi>
+    <unstructured_citation>Brewer, Cynthia A., Geoffrey W. Hatchard and Mark A. Harrower (2003), ‘ColorBrewer in Print: A Catalog of Color Schemes for Maps’, Cartography and Geographic Information Science (1)30, pp.&#160;5–32. DOI&#160;10.1559/152304003100010929.</unstructured_citation>
+  </citation>
+  <citation key="Ichihara2008">
+    <article_title>\Color universal design: the selection of four easily distinguishable colors for all color vision types</article_title>
+    <volume_title>Color Imaging XIII: Processing, Hardcopy, and Applications</volume_title>
+    <author>Yasuyo G. Ichihara</author>
+    <volume>6807</volume>
+    <first_page>68070O</first_page>
+    <cYear>2008</cYear>
+    <doi>10.1117/12.765420</doi>
+    <unstructured_citation>Yasuyo G. Ichihara and Masataka Okabe and Koichi Iga and Yosuke Tanaka and Kohei Musha and Kei Ito (inproceedings): \Color universal design: the selection of four easily distinguishable colors for all color vision types. DOI&#160;10.1117/12.765420, URL&#160;https://doi.org/10.1117/12.765420.</unstructured_citation>
+  </citation>
+  <citation key="Simunovic2010">
+    <journal_title>Eye</journal_title>
+    <article_title>Colour Vision Deficiency</article_title>
+    <author>M. P. Simunovic</author>
+    <volume>24</volume>
+    <issue>5</issue>
+    <first_page>747</first_page>
+    <cYear>2010</cYear>
+    <doi>10.1038/eye.2009.251</doi>
+    <unstructured_citation>Simunovic, M. P. (2010), ‘Colour vision deficiency’, Eye (5)24, pp.&#160;747–755. DOI&#160;10.1038/eye.2009.251.</unstructured_citation>
+  </citation>
+  <citation key="ColorBrewer">
+    <author>Cynthia Brewer</author>
+    <volume_title>ColorBrewer</volume_title>
+    <cYear>2021</cYear>
+    <unstructured_citation>Cynthia Brewer (online): ColorBrewer. URL&#160;https://github.com/axismaps/colorbrewer.</unstructured_citation>
+  </citation>
+  <citation key="DaltonLens">
+    <author>Nicolas Burrus</author>
+    <volume_title>DaltonLens</volume_title>
+    <cYear>2021</cYear>
+    <unstructured_citation>Nicolas Burrus (online): DaltonLens. URL&#160;https://daltonlens.org/colorblindness-simulator.</unstructured_citation>
+  </citation>
+  <citation key="Tol">
+    <author>Paul Tol</author>
+    <volume_title>Paul Tol's Notes: Colour schemes and templates</volume_title>
+    <cYear>2021</cYear>
+    <unstructured_citation>Paul Tol (online): Paul Tol's Notes: Colour schemes and templates. URL&#160;https://personal.sron.nl/&#160;pault/.</unstructured_citation>
+  </citation>
+  <citation key="WCAG">
+    <author>Alastair Campbell</author>
+    <volume_title>Web Content Accessibility Guidelines (WCAG) 2.2</volume_title>
+    <cYear>2023</cYear>
+    <unstructured_citation>Alastair Campbell and Chuck Adams and Rachael Bradley Montgomery and Michael Cooper and Andrew Kirkpatrick (online): Web Content Accessibility Guidelines (WCAG) 2.2. URL&#160;https://www.w3.org/TR/WCAG22/.</unstructured_citation>
+  </citation>
+</citation_list>

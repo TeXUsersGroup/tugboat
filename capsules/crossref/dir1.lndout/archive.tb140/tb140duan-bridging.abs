@@ -1,0 +1,5 @@
+This paper introduces a method to enhance the accessibility of scientific publications across multiple formats. 
+Prior initiatives have predominantly centered on transforming \LaTeX\ source code or \PDF\ documents into markup languages like \XML\ and Markdown. 
+However, such methods typically overlook preserving the visual layout inherent in \PDF\ pages.
+The approach in this paper exploits the color properties in \LaTeX\ code to maintain consistency and alignment between the visual presentation of documents in \PDF\ format and the digital presentation of markup languages and \LaTeX\ code. 
+This strategy not only fills in the gaps of previous approaches but also promotes the integration and accessibility of scientific document formats.

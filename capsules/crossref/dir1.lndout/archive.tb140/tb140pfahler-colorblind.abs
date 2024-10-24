@@ -1,0 +1,16 @@
+    Roughly 5\% of people suffer from some sort of color-vision deficiency
+    (\acro{CVD})~[13].
+    To create documents that are accessible to anyone, it should therefore be
+    considered how affected people perceive the colors in the documents.
+    In colorblind-safe documents, the contents are presented in a way such that
+    the same information is conveyed to readers regardless of potential
+    \acro{CVD}s.
+    We first discuss how color is typically used in documents and categorize
+    this into three different use cases that need different color schemes to
+    convey the desired information.
+    We then present some easy to follow rules for typesetting colorblind-safe
+    documents.
+    Finally, we take a look at available colors in \LaTeX\ and how well they
+    are suited for colorblind-safe documents.
+    These considerations have lead to the development of the
+    \texttt{colorblind} package, which we will introduce and discuss briefly.

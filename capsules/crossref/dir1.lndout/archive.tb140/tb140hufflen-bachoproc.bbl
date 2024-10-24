@@ -1,0 +1,262 @@
+\hyphenation{GUTen-berg}\hyphenation{GUTen-berg loria}\hyphenation{GUTen-berg}
+\input{babelbst-new.tex}
+\begin{thebibliography}{10}
+\newcommand{\Capitalize}[1]{\uppercase{#1}}
+\newcommand{\capitalize}[1]{\expandafter\Capitalize#1}
+\renewcommand{\newblock}{\relax}
+\hbadness=10000
+
+\bibitem{andre-etc2022}
+\begin{otherlanguage*}{english}Jacques \textsc{Andr{\'{e}}}, Patrick
+  \textsc{Bideault}, Denis \textsc{Bitouz{\'{e}}}, Thierry \textsc{Bouche},
+  Michel \textsc{Bovani}, Maxime \textsc{Chupin}, Daniel \textsc{Flipo}
+  \bbland{} Yvon \textsc{Henel}:
+  \begin{bblquotedtitle}The Last Decade at {\gut}\end{bblquotedtitle}.
+\newblock \emph{TUGboat}, \bblvol{}~43, \bblno{}~1, \bblpp{}~7--9.
+  \doi{10.47397/tb/43-1/tb133andre-gut}. 2022.
+\end{otherlanguage*}
+
+\bibitem{xxxref-cahiers-gutenberg-58-2021}
+\begin{otherlanguage*}{french}\textsc{{Association GUTenberg}}: \emph{Ils sont
+  de retour !}, \bblvol{}~58 \bblof{} \emph{Cahiers GUTenberg}.
+  \doi{10.60028/cahiers.v2021i58}.
+  % JMH Will be f***'n fixed asap!
+  % \url{https://www.gutenberg-asso.fr/Cahier-numero-58-Septembre-2021}.
+  \capitalize\bblsep{} 2021.
+\end{otherlanguage*}
+
+\bibitem{belmans2010a}
+\begin{otherlanguage*}{english}Pieter \textsc{Belmans}: \emph{A Turing Machine
+  in {\LaTeX}: the Follow-Up}. 12 \capitalize\bbldec{} 2010.
+\newblock Universiteit Antwerpen.
+  % 404 \url{https://pbelmans.files.wordpress.com/2010/12/textalk.pdf}.
+  \newline
+  \url{https://pbelmans.ncag.info/blog/2010/12/12/a-turing-machine-in-latex-follow-u}.
+\end{otherlanguage*}
+
+\bibitem{bezos-braams2024}
+\begin{otherlanguage*}{english}Javier \textsc{Bezos} \bbland{} Johannes~L.
+  \textsc{Braams}: \emph{{\packagename{babel}}. {User} Guide. {Version~24.7}}.
+  26 \bbljun{} 2024.
+\newblock
+  \url{https://mirror.ctan.org/macros/latex/required/babel/base/babel.pdf}.
+\end{otherlanguage*}
+
+\bibitem{carlisle-etc2024}
+\begin{otherlanguage*}{english}David~L. \textsc{Carlisle} \bbland{}
+  \textsc{the \LaTeX\ Project}: \emph{Packages in the `Graphics' Bundle}. 22
+  \bblmay{} 2024.
+\newblock
+  \url{https://mirror.ctan.org/macros/latex/required/graphics/grfguide.pdf}.
+\end{otherlanguage*}
+
+\bibitem{charette-etc2024}
+\begin{otherlanguage*}{english}Fran{\c{c}}ois \textsc{Charette}, Arthur
+  \textsc{Reutenauer}, Bastien \textsc{Roucari{\`{e}}s} \bbland{} J{\"{u}}rgen
+  \textsc{Spitzm{\"{u}}ller}: \emph{{\packagename{polyglossia}}: Modern
+  Multilingual Typesetting with {\XeLaTeX} and {Lua\LaTeX}}. 15 \bbljul{} 2024.
+\newblock
+  \url{https://mirror.ctan.org/macros/unicodetex/latex/polyglossia/polyglossia.pdf}.
+\end{otherlanguage*}
+
+\bibitem{collins-etc2024}
+\begin{otherlanguage*}{english}John \textsc{Collins}, Evan \textsc{McLean}
+  \bbland{} David~J. \textsc{Mustliner}: \emph{{\pgname{latexmk}\Dash Fully}
+  Automated {\LaTeX} Document Generation}. 7 \bblapr{} 2024.
+\newblock \url{https://ctan.org/pkg/latexmk}.
+\end{otherlanguage*}
+
+\bibitem{feldman1979}
+\begin{otherlanguage*}{english}Stuart~I. \textsc{Feldman}:
+  \begin{bblquotedtitle}{\texttt{Make}\Dash}A Program for Maintaining Computer
+  Programs\end{bblquotedtitle}.
+\newblock \emph{Software: Practice and Experience}, \bblvol{}~9, \bblno{}~1,
+  \bblpp{}~255--265. \capitalize\bblapr{} 1979.
+\end{otherlanguage*}
+
+\bibitem{friedl2006}
+\begin{otherlanguage*}{english}Jeffrey E.~F. \textsc{Friedl}: \emph{Mastering
+  Regular Expressions}.
+\newblock \bblthirdo{} \bbledn{}. O'Reilly. \capitalize\bblaug{} 2006.
+\end{otherlanguage*}
+
+\bibitem{grahn2023}
+\begin{otherlanguage*}{english}Alexander \textsc{Grahn}: \emph{The
+  {\packagename{animate}} Package}. 18~\bbljun{} 2023.
+\newblock \url{https://gitlab.com/agrahn/animate}.
+\end{otherlanguage*}
+
+\bibitem{hagen2006}
+\begin{otherlanguage*}{english}Hans \textsc{Hagen}:
+  \begin{bblquotedtitle}{Lua\TeX}: Howling to the Moon\end{bblquotedtitle}.
+\newblock \emph{Biuletyn Polskiej Grupy U\.{z}ytkownik\'{o}w Systemu {\TeX}},
+  \bblvol{}~23, \bblpp{}~63--68. \capitalize\bblapr{} 2006.
+\end{otherlanguage*}
+
+\bibitem{hotten-hagen1999}
+\begin{otherlanguage*}{english}Tom \textsc{Hotten} \bbland{} Hans
+  \textsc{Hagen}: \emph{{\ConTeXt}, an Excursion}.
+\newblock Version~990527. 27 \bblmay{} 1999.
+\newblock PRAGMA. \url{https://www.pragma-ade.com/general/manuals/ms-cb-en.pdf}.
+\end{otherlanguage*}
+
+\bibitem{h2022}
+\begin{otherlanguage*}{english}Jean-Michel \textsc{Hufflen}:
+  \begin{bblquotedtitle}Extracting Information from {\LaTeX} Source
+  Files\end{bblquotedtitle}.
+\newblock \emph{\logo{tug}boat}, \bblvol{}~43, \bblno{}~2, \bblpp{}~136--141.
+  \doi{10.47397/tb/43-2/tb134hufflen-extract}. 2022.
+\end{otherlanguage*}
+
+\bibitem{h2023a}
+\begin{otherlanguage*}{english}Jean-Michel \textsc{Hufflen}:
+  \begin{bblquotedtitle}Making an Issue of {\emph{Cahiers
+  GUTenberg}}\end{bblquotedtitle}.
+\newblock \capitalize\bblin{}: \emph{A Model Kit. {Modelling} and Implementing
+  Text Typesetting in {\TeX} and Other Systems. {Proc.}~{Bacho\TeX}~2023}.
+  \capitalize\bblapr{} 2023.
+\end{otherlanguage*}
+
+\bibitem{h2024}
+\begin{otherlanguage*}{english}Jean-Michel \textsc{Hufflen}:
+  \begin{bblquotedtitle}Making {Bacho\TeX} Proceedings\end{bblquotedtitle}.
+\newblock \capitalize\bblin{}: \emph{Composed Thoughts. {Proc.}~%
+  {Bacho\TeX}~2023}. \capitalize\bblmay{} 2023.
+\end{otherlanguage*}
+
+\bibitem{just2021}
+\begin{otherlanguage*}{english}J{\'{e}}r{\'{e}}my \textsc{Just}:
+  \begin{bblquotedtitle}Year~2020 at {\gut}\end{bblquotedtitle}.
+\newblock \emph{TUGboat}, \bblvol{}~42, \bblno{}~1, \bblpp{}~12--13.
+  \doi{10.47397/tb/42-1/tb130just-gut}. 2021.
+\end{otherlanguage*}
+
+\bibitem{kime-charette2024}
+\begin{otherlanguage*}{english}Philip \textsc{Kime} \bbland{} Fran{\c{c}}ois
+  \textsc{Charette}: \emph{{\pgname{biber}}. {A} Backend Bibliography Processor
+  for {\packagename{biblatex}}. {Version~\pgname{biber} 2.20}
+  (\packagename{biblatex} 3.20)}. 21 \bblmar{} 2024.
+\newblock \url{https://ctan.org/pkg/biber}.
+\end{otherlanguage*}
+
+\bibitem{king2015}
+\begin{otherlanguage*}{english}Alexis \textsc{King}: \emph{An Implementation of
+  {\logo{r7rs}} in {\pgname{Racket}}}. 2015.
+\newblock \url{https://github.com/lexi-lambda/racket-r7rs}.
+\end{otherlanguage*}
+
+\bibitem{matsumoto2001}
+\begin{otherlanguage*}{english}Yukihiro \textsc{Matsumoto}:
+  \emph{{\pgname{Ruby}} in a Nutshell}.
+\newblock O'Reilly.
+\newblock English translation by David~L. Reynolds, Jr. \capitalize\bblnov{}
+  2001.
+\end{otherlanguage*}
+
+\bibitem{matthias2024}
+\begin{otherlanguage*}{english}Andreas \textsc{Matthias}: \emph{The
+  {\packagename{pdfpages}} Package}. 29~\bblmay{} 2024.
+\newblock \url{https://ctan.org/pkg/pdfpages}.
+\end{otherlanguage*}
+
+\bibitem{mittelbach-etc2004}
+\begin{otherlanguage*}{english}Frank \textsc{Mittelbach} \bbland{} Michel
+  \textsc{Goossens}, \bblwith{} Johannes \textsc{Braams}, David
+  \textsc{Carlisle}, Chris~A. \textsc{Rowley}, Christine \textsc{Detig}
+  \bbland{} Joachim \textsc{Schrod}: \emph{The {\LaTeX} Companion}.
+\newblock \bblsecondo{}~\bbledn{}. Addison-Wesley Publishing Company, Reading,
+  Massachusetts. \capitalize\bblaug{} 2004.
+\end{otherlanguage*}
+
+\bibitem{mittelbach-etc2005}
+\begin{otherlanguage*}{french}Frank \textsc{Mittelbach} \bbland{} Michel
+  \textsc{Goossens}, \bblwith{} Joannes \textsc{Braams}, David
+  \textsc{Carlisle}, Chris~A. \textsc{Rowley}, Christine \textsc{Detig}
+  \bbland{} Joachim \textsc{Schrod}: \emph{{\LaTeX} Companion,
+  2\textsuperscript{e}~\'{e}dition}.
+\newblock Pearson Education France.
+\newblock Traduction fran\c{c}aise de~[21] Jacques
+  \textsc{Andr\'{e}}, Beno\^{\i}t \textsc{Bellet}, Jean-C\^{o}me
+  \textsc{Charpentier}, Jean-Michel \textsc{Hufflen} et Yves \textsc{Soulet}.
+  \capitalize\bbloct{} 2005.
+\end{otherlanguage*}
+
+%\bibitem{moreira2000} % url is 404, no other search results
+%\begin{otherlanguage*}{english}Walter \textsc{Moreira}: \emph{A {Turing}
+%  Machine in {\TeX}}. \capitalize\bblapr{} 2004.
+%\newblock Montevideo, Uruguay.
+%  \url{http://www.cmat.edu.uy/%7Ewalterm/turing/turing.html#download}.
+%\end{otherlanguage*}
+
+\newpage
+\bibitem{muench2024}
+\begin{otherlanguage*}{english}H.-Martin \textsc{M{\"{u}}nch} \bbland{}
+  Jeffrey~P. \textsc{Goldberg}: \emph{The {\packagename{lastpage}} Package}. 3
+  \bbljul{} 2024.
+\newline \url{https://ctan.org/pkg/lastpage}.
+\end{otherlanguage*}
+
+\bibitem{olko-wolinski2021}
+\begin{otherlanguage*}{english}Mariusz \textsc{Olko} \bbland{} Marcin
+  \textsc{Woli{\'{n}}ski}: \emph{Pakiet {{\packagename{polski}}}, wersja
+  1.3.6}. 25 \bblaug{} 2021.
+\newblock \url{https://ctan.org/pkg/polski}.
+\end{otherlanguage*}
+
+\bibitem{patashnik1988}
+\begin{otherlanguage*}{english}Oren \textsc{Patashnik}: \emph{{\BibTeX}ing}.
+  \capitalize\bblfeb{} 1988.
+\newblock Part of the {\BibTeX} distribution.
+\newblock \url{https://ctan.org/pkg/bibtex}.
+\end{otherlanguage*}
+
+\bibitem{picheral2006}
+\begin{otherlanguage*}{french}{\'{E}}ric \textsc{Picheral}:
+  \begin{bblquotedtitle}Compte-rendu de lecture\end{bblquotedtitle}.
+\newblock \emph{La Lettre {GUTenberg}}, \bblvol{}~31, \bblpp{}~13--14.
+  \capitalize\bbljan{} 2006.
+\newblock \url{https://www.gutenberg-asso.fr/Lettre-GUTenberg-31}.
+\end{otherlanguage*}
+
+\bibitem{rahtz-etc2024}
+\begin{otherlanguage*}{english}Sebastian \textsc{Rahtz}, Heiko
+  \textsc{Oberdiek} \bbland{} \textsc{{the \LaTeX\ Project}}: \emph{Hypertext
+  Marks in {\LaTeX}: a Manual for {\packagename{hyperref}}}. 10 \bbljul{} 2024.
+\newblock
+  \url{https://mirror.ctan.org/macros/latex/contrib/hyperref/doc/hyperref-doc.pdf}.
+\end{otherlanguage*}
+
+\bibitem{robertson-etc2024}
+\begin{otherlanguage*}{english}Will \textsc{Robertson}, Khaled \textsc{Hosny}
+  \bbland{} Karl \textsc{Berry}: \emph{The {\XeTeX} Reference Guide}. 1
+  \bblmar{} 2024.
+\newblock \url{https://ctan.org/pkg/xetexref}.
+\end{otherlanguage*}
+
+\bibitem{shinn-etc2013}
+\begin{otherlanguage*}{english}Alex \textsc{Shinn}, John \textsc{Cowan},
+  \bbland{} Arthur~A. \textsc{Gleckler}, \bblwith{} Steven \textsc{Ganz},
+  Aaron~W. \textsc{Hsu}, Bradley \textsc{Lucier}, Emmanuel \textsc{Medernach},
+  Alexey \textsc{Radul}, Jeffrey~T. \textsc{Read}, David \textsc{Rush},
+  Benjamin~L. \textsc{Russel}, Olin \textsc{Shivers}, Alaric \textsc{Snell-Pym}
+  \bbland{} Gerald~Jay \textsc{Sussman}: \emph{{Revised\textsuperscript{7}}
+  Report on the Algorithmic Language {\pgScheme}}. 6 \bbljul{} 2013.
+\newblock
+  \url{http://trac.sacrideo.us/wg/raw-attachment/wiki/WikiStart/r7rs.pdf}.
+\end{otherlanguage*}
+
+\bibitem{springer-friedman1989}
+\begin{otherlanguage*}{english}George \textsc{Springer} \bbland{} Daniel~P.
+  \textsc{Friedman}: \emph{{\pgScheme} and the Art of Programming}.
+\newblock The \logo{mit} Press, McGraw-Hill Book Company. 1989.
+\end{otherlanguage*}
+
+\bibitem{stallman-etc2023}
+\begin{otherlanguage*}{english}Richard~M. \textsc{Stallman}, Roland
+  \textsc{McGrath} \bbland{} Paul~D. \textsc{Smith}: \emph{{\logo{gnu}} Make.
+  {A} Program for Directing Recompilations. {Version~4.4.1}}.
+  \capitalize\bblfeb{} 2023.
+\newblock \url{https://www.gnu.org/software/make/manual/make.pdf}.
+\end{otherlanguage*}
+
+\end{thebibliography}

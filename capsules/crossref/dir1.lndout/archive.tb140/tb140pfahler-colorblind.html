@@ -1,0 +1,76 @@
+<!--#include virtual="/header.html"-->
+<title>Easy colorblind-safe typesetting: General guidelines and a helpful LaTeX package
+       - TUGboat 45:2 (2024) - TeX Users Group</title>
+</head><body>
+
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+<h1><a href="/TUGboat/tb45-2/">TUGboat 45:2</a> (2024)<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
+
+<p><b>Title</b>: Easy colorblind-safe typesetting: General guidelines and a helpful LaTeX package</p>
+
+<p><b>Summary</b>:
+examples of bad and good color schemes, rules to follow, and the <tt>colorblind</tt> package.</p>
+
+<p><b>Full text of article</b>: <a href="https://tug.org/members/TUGboat/tb45-2/tb140pfahler-colorblind.pdf">available to TUG members</a> (<a href="/join.html">join TUG</a>);
+will be publicly available after the next issue is published.</p>
+
+<p><b>Author</b>:
+<a href="/TUGboat/Contents/listauthor.html#Pfahler,Simon">Simon Pfahler</a></p>
+
+<p><b>Publication</b>: <a href="/TUGboat/tb45-2/">TUGboat
+volume 45, number 2</a> (2024),
+pages&nbsp;174&ndash;178</p>
+
+<p><b>DOI</b> (this page):
+<a href="https://doi.org/10.47397/tb/45-2/tb140pfahler-colorblind">10.47397/tb/45-2/tb140pfahler-colorblind</a>
+<br><small>(<a href="https://doi.org/10.47397/tb/45-2/tb140tug24-agm">previous doi</a>
+- <a href="https://doi.org/10.47397/tb/45-2/tb140duan-bridging">next doi</a>)</small></p>
+
+<p><b>Category</b>:
+<a href="/TUGboat/Contents/listkeyword.html#CatTAGAccessibility">Accessibility</a></p>
+      
+<p><b>Difficulty</b>: Intermediate</p>
+
+<p><b>Abstract</b>:
+Roughly 5% of people suffer from some sort of color-vision deficiency
+(CVD) [13].
+To create documents that are accessible to anyone, it should therefore be
+considered how affected people perceive the colors in the documents.
+In colorblind-safe documents, the contents are presented in a way such that
+the same information is conveyed to readers regardless of potential
+CVDs.
+We first discuss how color is typically used in documents and categorize
+this into three different use cases that need different color schemes to
+convey the desired information.
+We then present some easy to follow rules for typesetting colorblind-safe
+documents.
+Finally, we take a look at available colors in LaTeX and how well they
+are suited for colorblind-safe documents.
+These considerations have lead to the development of the
+<tt>colorblind</tt> package, which we will introduce and discuss briefly.</p>
+
+<p><b>References</b>:</p>
+<ol class="tugbbl">
+<li class="tugbbl">J. Birch. Efficiency of the Ishihara test for identifying red-green colour deficiency. Ophthalmic and Physiological Optics, 17(5):403&#x2013;408, Sept. 1997.</li>
+<li class="tugbbl">C. Brewer. ColorBrewer, 2021. <a href="https://github.com/axismaps/colorbrewer">github.com/axismaps/colorbrewer</a></li>
+<li class="tugbbl">C.A. Brewer, G.W. Hatchard, M.A. Harrower. ColorBrewer in Print: A Catalog of Color Schemes for Maps. Cartography and Geographic Information Science, 30(1):5&#x2013;32, Jan. 2003. <a href="https://doi.org/10.1559/152304003100010929">doi.org/10.1559/152304003100010929</a></li>
+<li class="tugbbl">N. Burrus. DaltonLens, 2021. <a href="https://daltonlens.org/colorblindness-simulator">daltonlens.org/colorblindness-simulator</a></li>
+<li class="tugbbl">A. Campbell, C. Adams, et al. Web content accessibility guidelines (WCAG) 2.2, 2023. <a href="https://www.w3.org/TR/WCAG22/">www.w3.org/TR/WCAG22/</a></li>
+<li class="tugbbl">C. Feuers&#x00e4;nger. The pgfplots package. Create normal/logarithmic plots in two and three dimensions. <a href="https://pgfplots.sourceforge.net/">pgfplots.sourceforge.net/</a></li>
+<li class="tugbbl">C. Feuers&#x00e4;nger, H. Menke, et al. The pgf package. Create PostScript and PDF graphics in TeX. <a href="https://ctan.org/pkg/pgf">ctan.org/pkg/pgf</a></li>
+<li class="tugbbl">Y.G. Ichihara, M. Okabe, et al. Color universal design: the selection of four easily distinguishable colors for all color vision types. In Color Imaging XIII: Processing, Hardcopy, and Applications, R. Eschbach, G.G. Marcu, S. Tominaga, eds., vol. 6807, p. 68070O. International Society for Optics and Photonics, SPIE, 2008. <a href="https://doi.org/10.1117/12.765420">doi.org/10.1117/12.765420</a></li>
+<li class="tugbbl">U. Kern, LaTeX Project Team. The xcolor package. Driver-independent color extensions for LaTeX and pdfLaTeX. <a href="https://github.com/latex3/xcolor">github.com/latex3/xcolor</a></li>
+<li class="tugbbl">LaTeX Project Team. The l3kernel package. LaTeX3 programming conventions. <a href="https://ctan.org/pkg/l3kernel">ctan.org/pkg/l3kernel</a></li>
+<li class="tugbbl">S. Pfahler. The colorblind package. Easy colorblind-safe typesetting. <a href="https://github.com/simon-pfahler/colorblind">github.com/simon-pfahler/colorblind</a></li>
+<li class="tugbbl">L.T. Sharpe, A. Stockman, et al. Opsin genes, cone photopigments, color vision, and color blindness. Color vision: From genes to perception, 351:3&#x2013;52, 1999. <a href="https://www.allpsych.uni-giessen.de/karl/colbook/sharpe.pdf">www.allpsych.uni-giessen.de/karl/colbook/sharpe.pdf</a></li>
+<li class="tugbbl">M.P. Simunovic. Colour vision deficiency. Eye 24(5):747&#x2013;755, May 2010. <a href="https://doi.org/10.1038/eye.2009.251">doi.org/10.1038/eye.2009.251</a></li>
+<li class="tugbbl">P. Tol. Paul Tol&#x2019;s Notes: Colour schemes and templates, 2021. <a href="https://personal.sron.nl/~pault/">personal.sron.nl/~pault/</a></li>
+<li class="tugbbl">M. Wickline. Coblis&#x2014;color blindness simulator, 2001. <a href="https://www.color-blindness.com/coblis-color-blindness-simulator/">www.color-blindness.com/coblis-color-blindness-simulator/</a></li>
+</ol>
+
+<hr><small><a href="/TUGboat/">TUGboat</a> 45:2, 2024 (<a href="/TUGboat/tb45-2/">issue 140</a>)
+&nbsp; [generated 2024-09-13]
+</small><br><!--#include virtual="/footer.html"-->

@@ -1,0 +1,57 @@
+\begin{thebibliography}{1}
+
+\bibitem{cavazza}
+E.~Cavazza.
+\newblock Modern {CSS} techniques to improve legibility.
+\newblock \emph{Smashing Magazine}, 2020.
+\newblock
+  \url{https://www.smashingmagazine.com/2020/07/css-techniques-legibility/}
+
+\bibitem{lua-widow-control}
+M.~Chernoff.
+\newblock \emph{The Lua-widow-control package}.
+\newblock Automatically remove widows and orphans from any document.
+\newblock \newline \url{https://ctan.org/pkg/lua-widow-control}
+
+\bibitem{rdrview}
+E.~Fernández.
+\newblock \emph{Rdrview}.
+\newblock \newline \url{https://github.com/eafer/rdrview}
+
+\bibitem{linebreaker}
+M.~Hoftich.
+\newblock \emph{The Linebreaker package}.
+\newblock Prevent~overflow boxes with Lua{\LaTeX}.
+\newblock \newline \url{https://ctan.org/pkg/linebreaker}
+
+\bibitem{luavlna}
+M.~Hoftich.
+\newblock \emph{The Luavlna package}.
+\newblock Prevent line breaks after single letter words, units, or academic
+  titles.
+\newblock \url{https://ctan.org/pkg/luavlna}
+
+\bibitem{luaxml}
+M.~Hoftich.
+\newblock \emph{The Lua{XML} package}.
+\newblock Lua~library for reading and serialising XML files.
+\newblock \url{https://ctan.org/pkg/luaxml}
+
+\bibitem{responsive}
+M.~Hoftich.
+\newblock \emph{The Responsive package}.
+\newblock Responsive~design methods for {\LaTeX}.
+\newblock \newline \url{https://ctan.org/pkg/responsive}
+
+\bibitem{rmodepdf}
+M.~Hoftich.
+\newblock \emph{Rmodepdf}.
+\newblock Convert web pages in reader mode to PDF.
+\newblock \newline \url{https://github.com/michal-h21/rmodepdf}
+
+\bibitem{mortensen}
+S.~Mortensen.
+\newblock The typographic scale, 2011.
+\newblock \url{https://spencermortensen.com/articles/typographic-scale/}
+
+\end{thebibliography}

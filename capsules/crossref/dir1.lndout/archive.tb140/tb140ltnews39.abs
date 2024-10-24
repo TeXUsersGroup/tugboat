@@ -1,0 +1,21 @@
+The \LaTeX{} Project team remains strongly focused on producing
+automatically tagged PDF output for accessibility and reuse. At the
+beginning of 2024 the ISO PDF/UA-2 and the WTPDF (well-tagged PDF)
+standards were released and we are glad to be able to report that it
+is now possible to use \LaTeX{} to automatically produce documents
+that conform to these new standards. A sample collection of such
+documents ranging from classical texts, such as the Bible, to recent
+technical papers submitted to arXiv.org can be found at
+\url{https://github.com/latex3/tagging-project/discussions/72}.
+
+(At the present time we
+are still in a trial/prototype phase in which only a limited set of
+document classes and packages are supported.  Over the next releases
+we expect to gradually lift these restrictions and eventually provide
+the full functionality as part of the core distribution, rather than
+through \texttt{latex-lab} modules.)
+
+In February Ulrike and Frank presented the current project status
+during the 5th International Workshop on ``Digitization and
+  E-Inclusion in Mathematics and Science 2024'' (DEIMS 2024) at Nihon
+University, Tokyo, Japan; see~[8].

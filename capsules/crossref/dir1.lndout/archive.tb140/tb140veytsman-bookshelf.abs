@@ -1,0 +1,16 @@
+This article discusses an update to Peter Flynn's bookshelf package is
+discussed, allowing typesetting with multiple fonts and in multiple
+scripts.
+
+The code is now available at the Github repository
+\url{https://github.com/borisveytsman/bookshelf}.  Peter kindly
+allowed me to take over the maintenance of the package on \CTAN, so
+the new version with all these changes will be released after some
+code cleaning.  There are some features I'd like to add, including
+colorblind palettes, streamlining the typesetting, making the package
+aware of the size of the actual book (so large books have larger
+spines).
+
+It is difficult to find a ``practical'' application for this package.
+Still, it brought much fun to me.  I am grateful to Peter for
+inventing it, and hope my extensions are welcomed by other users. 

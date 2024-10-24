@@ -1,0 +1,112 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{10}
+
+\bibitem{blecher2023nougatneuralopticalunderstanding}
+L.~Blecher, G.~Cucurull, et~al.
+\newblock Nougat: Neural optical understanding for academic documents, 2023.
+\newblock \url{https://arxiv.org/abs/2308.13418}.
+
+\bibitem{brinn2024frameworkimprovingaccessibilityresearch}
+S.~Brinn, C.~Cameron, et~al.
+\newblock A framework for improving the accessibility of research papers on
+  arxiv.org, 2024.
+\newblock \url{https://arxiv.org/abs/2212.07286}.
+
+\bibitem{cervone2012mathjax}
+D.~Cervone.
+\newblock Math{J}ax: a platform for mathematics on the web.
+\newblock \emph{Notices of the AMS}, 59(2):312--316, 2012.
+
+\bibitem{duan-etal-2023-latex}
+C.~Duan, Z.~Tan, S.~Bartsch.
+\newblock {L}a{T}e{X} rainbow: Universal {L}a{T}e{X} to {PDF} document semantic
+  {\&} layout annotation framework.
+\newblock In \emph{Proceedings of the Second Workshop on Information Extraction
+  from Scientific Publications}, T.~Ghosal, F.~Grezes, et~al., eds.,
+  pp.~56--67, Bali, Indonesia, Nov. 2023. Association for Computational
+  Linguistics.
+\newblock \url{https://doi.org/10.18653/v1/2023.wiesp-1.8}
+
+\bibitem{Fischer:2021:RTP}
+U.~Fischer.
+\newblock On the road to {Tagged PDF}: About {StructElem}, marked content,
+  {PDF/A} and squeezed {B}{\"a}rs.
+\newblock \emph{TUGboat} 42(2):170--173, 2021.
+\newblock \url{https://doi.org/10.47397/tb/42-2/tb131fischer-tagpdf}
+
+\bibitem{Greene:TB11-3-381}
+A.M.~Greene.
+\newblock {{\BaSiX: An interpreter written in {\TeX}}}.
+\newblock \emph{TUGboat} 11(3):381--392, Sept. 1990.
+\newblock \url{https://tug.org/TUGboat/tb11-3/tb29greene.pdf}
+
+\bibitem{demacro}
+P.~Gács.
+\newblock {de-macro{\Dash}Expand private macros in a document}, Dec. 2020.
+\newblock \newline \url{https://ctan.org/pkg/de-macro}
+
+\bibitem{iso_2024}
+{ISO Central Secretary}.
+\newblock Document management applications — electronic document file format
+  enhancement for accessibility.
+\newblock Standard ISO 14289-2:2024, International Organization for
+  Standardization, Geneva, CH, 2024.
+\newblock \url{https://www.iso.org/standard/82278.html}
+
+\bibitem{Laurens:TB29-3-365}
+J.~Laurens.
+\newblock Direct and reverse synchronization with {Sync\TeX}.
+\newblock \emph{TUGboat} 29(3):365--371, 2008.
+\newblock \url{https://tug.org/TUGboat/tb29-3/tb93laurens.pdf}
+
+\bibitem{unravl}
+B.~Le~Floch.
+\newblock {unravel: Watching {\TeX} digest tokens}, Jan. 2024.
+\newblock \url{https://ctan.org/pkg/unravel}
+
+\bibitem{li-etal-2020-docbank}
+M.~Li, Y.~Xu, et~al.
+\newblock {D}oc{B}ank: A benchmark dataset for document layout analysis.
+\newblock In \emph{Proceedings of the 28th International Conference on
+  Computational Linguistics}, D.~Scott, N.~Bel, C.~Zong, eds., pp.~949--960,
+  Barcelona, Spain (Online), Dec. 2020. International Committee on
+  Computational Linguistics.
+\newblock \url{https://doi.org/10.18653/v1/2020.coling-main.82}
+
+\bibitem{MacFarlane_Pandoc}
+J.~MacFarlane, A.~Krewinkel, J.~Rosenthal.
+\newblock {Pandoc}.
+\newblock \url{https://github.com/jgm/pandoc}
+
+\bibitem{latexml}
+B.~Miller.
+\newblock {\LaTeX ML: A \LaTeX\ to XML/HTML/MathML Converter}, Feb. 2024.
+\newblock \url{https://math.nist.gov/~BMiller/LaTeXML/}
+
+\bibitem{Mittelbach:TB22-1-93}
+F.~Mittelbach.
+\newblock {The {\sf trace} package}.
+\newblock \emph{TUGboat} 22(1/2):93--99, Mar. 2001.
+\newblock \url{https://tug.org/TUGboat/tb22-1-2/tb70mitt.pdf}
+
+\bibitem{Mittelbach:2020:LTP}
+F.~Mittelbach, C.~Rowley.
+\newblock {{\LaTeX} Tagged PDF}{\Dash}a blueprint for a large project.
+\newblock \emph{TUGboat} 41(3):292--298, 2020.
+\newblock \url{https://doi.org/10.47397/tb/41-3/tb129mitt-tagpdf}
+
+\bibitem{Rowley:2019:ALK}
+C.~Rowley, U.~Fischer, F.~Mittelbach.
+\newblock Accessibility in the {\LaTeX} kernel{\Dash}experiments in {Tagged
+  PDF}.
+\newblock \emph{TUGboat} 40(2):157--158, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-2/tb125rowley-tagpdf.pdf}
+
+\bibitem{Singer-Vine_pdfplumber_2024}
+J.~Singer-Vine, {The pdfplumber contributors}.
+\newblock {pdfplumber}, July 2024.
+\newblock \newline \url{https://github.com/jsvine/pdfplumber}
+
+\end{thebibliography}

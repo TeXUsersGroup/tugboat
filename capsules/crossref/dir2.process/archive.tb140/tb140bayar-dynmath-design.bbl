@@ -1,0 +1,52 @@
+\begin{thebibliography}{1}
+
+\bibitem{Postscript-1999}
+{Adobe Systems Incorporated}.
+\newblock \emph{PostScript Language Reference Manual}.
+\newblock Adobe Systems Incorporated, Addison-Wesley Publishing Company,
+  Reading, Massachusetts, 1999.
+\newblock \url{https://adobe.com/jp/print/postscript/pdfs/PLRM.pdf}.
+
+\bibitem{Bayar-2016}
+A.~Bayar.
+\newblock Towards an operational {(\La\kern-.1em)\TeX} package supporting
+  optical scaling of dynamic mathematical symbols.
+\newblock \emph{TUGboat} 37(2):171--179, 2016.
+\newblock \url{https://tug.org/TUGboat/tb37-2/tb116bayar.pdf}
+\newpage
+\bibitem{ISIVC-2024}
+A.~Bayar.
+\newblock {C$^{1}$} interpolation of sequences of points preserving convexity
+  and obliquity based on oblique convex two-dimensional cubic b{\'e}zier
+  splines.
+\newblock In~\emph{2024 IEEE International Conference on Signal, Image, Video
+  and Communications (ISIVC 2024)}, pp.~1--6, Marrakech, Morocco, May 2024.
+
+\bibitem{Bayar-2024}
+A.~Bayar.
+\newblock \texttt{dynMath}: A {PostScript Type~3}-based {\LaTeX} package to
+  support extensible mathematical symbols.
+\newblock \emph{TUGboat} 45(1):18--24, 2024.
+\newblock \url{https://tug.org/TUGboat/tb45-1/tb139bayar-dynmath.pdf}
+
+\bibitem{TeX-1984}
+D.E.~Knuth.
+\newblock \emph{The \TeX book}, vol.~A of \emph{Computers and Typesetting}.
+\newblock Addison-Wesley, Reading, Massachusetts, 1st ed., 1984.
+
+\bibitem{LaTeX-1994}
+L.~Lamport.
+\newblock \emph{\LaTeX{}: A Document Preparation System}.
+\newblock Addison-Wesley, USA, 1994.
+
+\bibitem{LuaTeX-2024}
+{Lua\TeX{} development team}.
+\newblock \emph{Lua\TeX{} Reference Manual}, Feb. 2024.
+\newblock \\\url{https://ctan.org/pkg/luatex}.
+
+\bibitem{Dvips-2024}
+T.~Rokicki.
+\newblock \emph{Dvips: A DVI-to-PostScript Translator}, Feb. 2024.
+\newblock \\\url{https://ctan.org/pkg/dvips}.
+
+\end{thebibliography}

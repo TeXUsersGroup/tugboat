@@ -1,0 +1,58 @@
+<citation_list>
+  <citation key="TeX-1984">
+    <author>Donald Ervin Knuth</author>
+    <volume_title>The \TeX book</volume_title>
+    <cYear>1984</cYear>
+    <unstructured_citation>Knuth, Donald Ervin (1984), ‘The \tex book’, Addison-Wesley.</unstructured_citation>
+  </citation>
+  <citation key="LaTeX-1994">
+    <author>Leslie Lamport</author>
+    <volume_title>\LaTeX: A Document Preparation System</volume_title>
+    <cYear>1994</cYear>
+    <unstructured_citation>Lamport, Leslie (1994), ‘\latex: A document preparation system’, Addison Wesley.</unstructured_citation>
+  </citation>
+  <citation key="Postscript-1999">
+    <author>{Adobe Systems Incorporated}</author>
+    <volume_title>PostScript Language Reference Manual</volume_title>
+    <cYear>1999</cYear>
+    <unstructured_citation>{Adobe Systems Incorporated} (manual): PostScript Language Reference Manual. \url{https://adobe.com/jp/print/postscript/pdfs/PLRM.pdf}.</unstructured_citation>
+  </citation>
+  <citation key="Bayar-2016">
+    <journal_title>TUGboat</journal_title>
+    <article_title>Towards an operational (\La\kern-.1em)\TeX package supporting optical scaling of dynamic mathematical symbols</article_title>
+    <author>Abdelouahad Bayar</author>
+    <volume>37</volume>
+    <issue>2</issue>
+    <first_page>171</first_page>
+    <cYear>2016</cYear>
+    <unstructured_citation>Bayar, Abdelouahad (2016), ‘Towards an operational (\La\kern-.1em)\TeX package supporting optical scaling of dynamic mathematical symbols’, TUGboat (2)37, pp.&#160;171–179. , URL&#160;https://tug.org/TUGboat/tb37-2/tb116bayar.pdf.</unstructured_citation>
+  </citation>
+  <citation key="Bayar-2024">
+    <journal_title>TUGboat</journal_title>
+    <article_title>\textttdynMath: A PostScript Type&#160;3-Based \LaTeX Package to Support Extensible Mathematical Symbols</article_title>
+    <author>Abdelouahad Bayar</author>
+    <volume>45</volume>
+    <issue>1</issue>
+    <first_page>18</first_page>
+    <cYear>2024</cYear>
+    <unstructured_citation>Bayar, Abdelouahad (2024), ‘\textttdynMath: A PostScript Type&#160;3-based \LaTeX package to support extensible mathematical symbols’, TUGboat (1)45, pp.&#160;18–24. , URL&#160;https://tug.org/TUGboat/tb45-1/tb139bayar-dynmath.pdf.</unstructured_citation>
+  </citation>
+  <citation key="ISIVC-2024">
+    <author>Abdelouahad Bayar</author>
+    <volume_title>C$^1$ Interpolation of Sequences of Points Preserving Convexity and Obliquity Based on Oblique Convex Two-Dimensional Cubic Bézier Splines</volume_title>
+    <cYear>2024</cYear>
+    <unstructured_citation>Abdelouahad Bayar (conference): {C$^{1}$} Interpolation of Sequences of Points Preserving Convexity and Obliquity Based on Oblique Convex Two-Dimensional Cubic Bézier Splines.</unstructured_citation>
+  </citation>
+  <citation key="Dvips-2024">
+    <author>Tomas Rokicki</author>
+    <volume_title>Dvips: A DVI-to-PostScript Translator</volume_title>
+    <cYear>2024</cYear>
+    <unstructured_citation>Tomas Rokicki (manual): Dvips: A DVI-to-PostScript Translator. \\\url{https://ctan.org/pkg/dvips}.</unstructured_citation>
+  </citation>
+  <citation key="LuaTeX-2024">
+    <author>{Lua\TeX{} development team}</author>
+    <volume_title>Lua\TeX Reference Manual</volume_title>
+    <cYear>2024</cYear>
+    <unstructured_citation>{Lua\TeX{} development team} (manual): Lua\TeX{} Reference Manual. \\\url{https://ctan.org/pkg/luatex}.</unstructured_citation>
+  </citation>
+</citation_list>
