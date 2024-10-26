@@ -29,8 +29,8 @@
 \fi
 \next
 
-\def\fileversion{v1.30}
-\def\filedate{2024-10-11}
+\def\fileversion{v1.31}
+\def\filedate{2024-10-26}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -1048,6 +1048,12 @@ that may not be obvious.  For full definitions, see real code above.
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+1.31      26 Oct 24   \tbsurl, \tbhurl, \tbmailto, \tbhref: simple
+                        hyperlinks with pdftex.
+                      new abbrevs \macOS, \SQL.
+                      \volnumber, \issnumber: just the numbers.
+                      \tbissident: VV-n to help with urls, etc.
+
 1.30      15 Apr 24   remove duplicate \TP definition.
 
 1.29      28 Oct 23   in \AllTeX, kern around ).

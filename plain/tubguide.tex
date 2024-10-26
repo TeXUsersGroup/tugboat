@@ -1,9 +1,10 @@
+%% $Id$
 %% @texfile{
 %%     filename   = "tubguide.tex",
-%%     version    = "1.22",
-%%     date       = "2016/09/26",
+%%     version    = "1.31",
+%%     date       = "2024-10-26",
 %%     filetype   = "TUGboat Authors' Guide",
-%%     copyright  = "Copyright 1989, 1992, 2006, 2012-2016 TeX Users Group.
+%%     copyright  = "Copyright 1989, 1992, 2006, 2012-2024 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -17,13 +18,6 @@
 %%                   that produced the original Authors' Guide in
 %%                   TUGboat 10, no. 3, November 1989.",
 %%     }
-%% $Id$
-%% *********************************************************
-%%
-%%  TeXing this file requires the following files:
-%%      TUGBOAT.STY (version 1.09+)
-%%      TUGBOAT.CMN (version 1.08+) (loaded by TUGBOAT.STY)
-%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \input tugboat.sty
@@ -185,9 +179,9 @@ At the outermost level, a source file will have the form (using the
 \netaddress * <network address> *
 |halfline
 \article
-|vellipsis
+...
 <body of article>
-|vellipsis
+...
 \makesignature
 \endarticle
 \endverbatim
@@ -363,7 +357,7 @@ snippets of text we use the \verbinline|...|\endverbatim form, and
 for longer items the
 ||[\makeescape\!]
 \verbatim
-!vellipsis
+...
 \endverbatim
 ||
 form (although \verbinline||...||\endverbatim is a good way to
@@ -381,7 +375,7 @@ files.  We find this variant useful in ({\it almost\/}) guaranteeing
 consonance between macros in use and their published listings.
 ||[\makeescape\!]
 \verbatim[\inputfromfile{foo.inp}]
-!vellipsis
+...
 \endverbatim
 ||
 will incorporate the contents of file |foo.inp| in the listing before
@@ -408,7 +402,7 @@ underlying macros used for examples.
 To write out information, use
 ||[\makeescape\!]
 \verbatim[\outputtofile{foo.out}]
-!vellipsis
+...
 \endverbatim
 ||
 An added bonus here is that characters which get internalized as
@@ -421,7 +415,7 @@ and Karen was coded as
 example, for an article with
 \verbatim[\outputtofile{ray.vbm}]
 \author * Ray Goucher *
-/vellipsis
+...
 \endverbatim
 we could say
 \verbatim[\outputtofile{sig.vbm}]
@@ -473,9 +467,9 @@ access to the italic font.  By giving the option
 escape character in that block.  Thus,
 ||[\makeescape\/]
 \verbatim[\makeescape\!]
-/vellipsis
+...
 ...!it...
-/vellipsis
+...
 \endverbatim
 ||
 really calls the italic font in the middle of the listing (one might
@@ -498,9 +492,9 @@ spaces and carriages returns are {\it active\/} and hence not gobbled
 as usual.  Using the |!| as the active character, one might key
 ||[\makeescape\/]
 \verbatim[\makeescape\!]
-/vellipsis
+...
 !vskip .5!baselineskip
-/vellipsis
+...
 \endverbatim
 ||
 to get an extra half line of space in the middle of the listing.  The
@@ -541,13 +535,35 @@ text may or may not start a new paragraph depending on whether an
 intervening blank line (or |\par|) is or is not present.
 
 
+\subhead * Hyperlinks and urls *
+
+As of version~1.31 of the \plain-based \TUB\ macros, released in October
+2024, simple commands to create hyperlinks are available.
+
+\list\raggedright
+\item |\tbsurl{tug.org}| produces an https url, with the argument
+      typeset in \cs{tt}: \tbsurl{tug.org}.
+\item |\tbhurl{tug.org}| is analogous, for http urls: \tbhurl{tug.org}.
+\item |\tbmailto{tugboat@tug.org}| produces a mailto url, again with the
+      argument in \cs{tt}: \tbmailto{tugboat@tug.org}.
+\item |\tbhref{https://tug.org}{the \acro{TUG} home page| is the general
+      command, which typesets the second argument (no implicit font
+      changes) as a link to the first argument (no implicit protocol
+      added): \tbhref{https://tug.org/}{the \acro{TUG} home page}.
+\endlist
+
+At present, these commands only work in pdf\TeX. Other engines will be
+supported as needed.
+
+The links are displayed without a border, since we find link borders
+distracting rather than helpful. There are no display options, to keep
+things simple.
+
 \subhead * Figures and page layout *
 Figures are keyed as
 \verbatim[\makeescape\|]
 \figure
-|halfline
 <vertical mode material>
-|halfline
 \endfigure
 \endverbatim
 These are generally implemented as single-column floating
