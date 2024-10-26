@@ -2,7 +2,19 @@ $Id$
 This file records noteworthy changes.  This file is public domain.
 
 -----------------
-2.32 (2023-04-15):
+2.33 (2024-10-26):
+ltugboat.cls:
+- use \hfil instead of \hss in toc, to avoid silently overfull entries.
+- make \WEB, \Xe, \cents, others more tag-friendly.
+- new abbreviation \HTTPS.
+
+tugboat.bst:
+- new entry type @webpage.
+- new editor field nojournalcomma.
+- howpublished not omitted when doi or url is present.
+
+-----------------
+2.32 (2024-04-15):
 ltugboat.cls:
 - don't print leading http://, like with https://.
 	- increase natural space, stretch, shrink after run-in heads; before,
