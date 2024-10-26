@@ -14,7 +14,7 @@ and then
 Then, we'll work in the capsules/ directory:
   cd ..
 
-Follow steps in README-tug-procedures to create capsule file and do
+Follow steps in ~tubprod/README to create capsule file and do
 test processing.
 
 When it runs cleanly and as expected, systematically go through all
@@ -34,6 +34,10 @@ directory (~tubprod/VV-N), one or both of these files, as needed:
   . in hand-written bibliographies, insert \bibitem with a meaningful
     key (the key ends up in issue.xml) and \end{thebibliography},
     because that's what our parsing looks for.
+    (For wermuth articles, see replacements in ltx2crossrefxml-tugboat.cfg.)
+     \sl\TUB ->\sl \TUb  [since \TUB -> TUGboat replacement happens first]
+     etc.
+    ()
 
 These {abs,bbl}.tex files stay in the TUGboat per-article source directories.
 
@@ -41,14 +45,14 @@ There has to be at least one abs.tex and one bbl.tex or the program will
 bail out early, so easiest to choose an article with both to do first.
 
 Be sure crossref_iss in capsules/Makefile is set to the current/desired issue,
-per README-tug-procedures.
+per ~tubprod/README.
 
 Best to do this one article at a time, making sure each comes out ok.
 After creating the first abs/bbl.tex, run:
   make cro-scratch  # in capsules directory
 
-Then, the landing files output will be in
-  file://.../tubprod/svn/capsules/crossref/dir1.lndout/tb*.html
+Then, the landing files output will be in (e.g.)
+  file:///home/tubprod/svn/capsules/crossref/dir1.lndout/tb*.html
 and the XML file for Crossref in:
   .../dir2.process/issue.xml
 
@@ -104,7 +108,7 @@ reports on files that are preserved vs. copied.
 If the url field in the capsule.txt file does not match the filename,
 cr-do-issue will mysteriously fail since the landing.html file for that
 article will not exist. It is best to check for this in advance with
---webroot; see README-tug-procedures.
+--webroot; see ~tubprod/README.
 
 In practice, it is best, and should always be possible, to do all
 editing in the TUGboat source dir (and thus use cro-scratch), and never
@@ -122,7 +126,7 @@ doi" links be local (and the list* accumulations only be for the
 processed issue):
   make crw
 Then can check the relevant files at:
-  file://.../tubprod/svn/capsules/crossref/dir1.lndout/...
+  file:///home/tubprod/svn/capsules/crossref/dir1.lndout/...
 
 cr-landing-bbl-abs, called in the above process, converts abstracts to
 HTML (ltx2unitxt --html), but copies bbls as plain text from the
@@ -190,10 +194,10 @@ crossref/Makefile to enable it:
 Can check the production site for progress:
   https://doi.crossref.org -> Show System Queue
 
-Register the dois some days before making the pdfs public, so that the
-"doi" links on the landing pages will work for testing, and the doi
-links on the contents pages will work after publishing. They may take
-some time to be processed.
+It is good to register the dois some days before making the pdfs public,
+so that the "doi" links on the landing pages will work for testing, and
+the doi links on the contents pages will work after publishing. The
+registrations may take some time to be processed, hours or even days.
 
 Then commit any changes to our source files:
  cd ~tubprod/svn/capsules
@@ -234,7 +238,7 @@ Then archive all the files (after registering):
   svn status
   svn commit -m"tb$nnn uploaded files archived" dir*
 
-Then install pdfs, per README-tug-procedures.
+Then install pdfs, per ~tubprod/README.
 
  Updating past issues: when an issue is published, the previous issue
 becomes fully public. Therefore we need to update the landing pages to

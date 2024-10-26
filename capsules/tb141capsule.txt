@@ -95,7 +95,7 @@ access</a>.
 
 \capsule{}
   {General Delivery}
-  {Barbara Beeton}%person|Alan Jeffrey and Charles Bigelow
+  {Barbara Beeton}%person|Alan Jeffrey and Charles Bigelow and Donald Knuth
   {Editorial comments}
   {typography and \TeX{} news}
   {296-297}
@@ -125,7 +125,8 @@ access</a>.
    {Typography}
    {Peter Flynn}
    {Typographers' Inn}
-   {\acro{TUG} logo; `Sitting by Nellie'; Afterthought}
+   {\acro{TUG} logo; `Sitting by Nellie'; Afterthought (research on text
+    editor usage)}
    {302-304}
    {https://tug.org/members/TUGboat/!TBIDENT!inn.pdf}
    {}
@@ -199,7 +200,7 @@ access</a>.
   {\ConTeXt}
   {Hans Hagen}
   {Making \PDF\ text unreadable}
-  {making the underlying text in \PDF\ opaque to extraction}
+  {making the underlying text in \PDF{}s opaque to extraction}
   {381-381}
   {https://tug.org/members/TUGboat/!TBIDENT!hagen-inaccessible.pdf}
   {}
@@ -324,7 +325,8 @@ access</a>.
 
 \capsule{}
   {Software \& Tools}
-  {Oscar van Eijk}
+  {{Oscar\CONNECT{}van} Eijk}
+  % alphabetized under E per author
   {\SQL\TeX}
   {a preprocessor in Perl to support \SQL\ database access from \LaTeX}
   {370-373}
@@ -711,7 +713,8 @@ access</a>.
   {}
   {295-295}
   {/TUGboat/!TBIDENT!elec.pdf}
-  {}
+  {Notice and candidate form for the <a href="/election/2025/">2025 TUG
+   election</a>.}
   {}
 
 \abovecapsuleskip = 0pt

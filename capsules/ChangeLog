@@ -1,5 +1,17 @@
+2024-10-26  Karl Berry  <karl@freefriends.org>
+
+	* capcrossref.pl (crossref_write_files): special case so
+	Oscar van Eijk is sorted under E.
+	* crossref/README-process.txt: now ~tubprod/README, wermuth bibs, etc.
+	* crossref/ltx2crossrefxml-tugboat.cfg (LaTeX_ToUnicode_convert_hook):
+	. do Wermuth first to work around \slTUGboat bug.
+	. handle \HiTeX, \MetaPost, \SQL, \macOS, \pdfLaTeX.
+	* tb141capsule.text (beet): %person additions.
+	Other description tweaks.
+
 2024-10-25  Karl Berry  <karl@tug.org>
 
+        * tb141capsule.txt: new file for 45:3.
 	* Makefile (testiss,lastiss,crossref_iss): 141.
 	(diff-id): better to look at the cwd listauthor.html.
 	* lists-translations.txt (\macOS, \SQL): new abbrevs.
