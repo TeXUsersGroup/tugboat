@@ -2,6 +2,14 @@ $Id$
 This file records noteworthy changes.  This file is public domain.
 
 -----------------
+2.34 (2024-10-29):
+ltugboat.cls:
+- keep the new forced space on toc lines within tagging-aware code, 
+  so it doesn't disappear.
+- elide spurious space for nonumber subsubsections.
+(Thanks to Ulrike Fischer for reports and fixes.)
+
+-----------------
 2.33 (2024-10-26):
 ltugboat.cls:
 - use \hfil instead of \hss in toc, to avoid silently overfull entries.

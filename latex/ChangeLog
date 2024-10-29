@@ -1,3 +1,14 @@
+2024-10-29  Karl Berry  <karl@freefriends.org>
+
+	* version 2.34 (2024-10-29) uploaded to CTAN.
+	* NEWS: update.
+
+	* tugboat.dtx (\subsubsection) <nonumber>: missing % for eol.
+	(\l@section): put space in tagged part to avoid it become an
+	"artifact" and disappearing when tagged.
+	Also, add a \pdffakespace for pdftex.
+	Report from Ulrike, 28 Oct 2024 22:39:33.
+
 2024-10-26  Karl Berry  <karl@freefriends.org>
 
 	* version 2.33 (2024-10-26) uploaded to CTAN.

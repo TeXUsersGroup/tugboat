@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2024-10-26 v2.33
+                   [2024-10-29 v2.34
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -2758,7 +2758,7 @@
     {\tubruninglue}
     {\tubruninsecfmt}}}
   %
-  \def\subsubsection{\TB@nolimelabel\TB@startsection{
+  \def\subsubsection{\TB@nolimelabel\TB@startsection{%
     {subsubsection}%
     3%
     \parindent
@@ -2864,15 +2864,17 @@
     % don't worry if this cs is not defined, hence the \csname.
     % If it doesn't exist, we just typeset #1 as text.
     \csname contentsline@text@1@format\endcsname
-    {#1}% number and title
+    {#1% number and title
+     \unskip % avoid extra space just in case
+     \csname pdffakespace\endcsname % fake space if pdftex
+     ~% ensure at least a word space between text and page number
+    }
     %
     \ifx\UseHookWithArguments\undefined\else % hook after number and text
       \UseHookWithArguments{contentsline/text/after}{4}
         {\toclevel@part}{#1}{#2}{\@contentsline@destination}% 
     \fi
-    \nobreak
-    \ % ensure there is at least a word space between text and page number
-    \hfil
+    \nobreak\hfil
     \nobreak
     % page number
     \hb@xt@\@pnumwidth{\hfil
