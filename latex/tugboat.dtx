@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2024-10-29 v2.34
+                   [2024-11-11 v2.34
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -3142,11 +3142,9 @@
 %    \end{macrocode}
 %
 % Let's also reduce the space between floats, and between floats and text.
-% The |\dbl...| versions of these parameters are not used, even though
-% we're typesetting in double columns.
 %    \begin{macrocode}
-\setlength\floatsep    { 9pt plus3pt minus2pt} % default 12pt plus2pt minus2pt
-\setlength\textfloatsep{12pt plus4pt minus3pt} % default 20pt plus2pt minus4pt
+\setlength\dblfloatsep    { 9pt plus3pt minus2pt} % default 12pt plus2pt minus2pt
+\setlength\dbltextfloatsep{12pt plus4pt minus3pt} % default 20pt plus2pt minus4pt
 %    \end{macrocode}
 %
 % We want to allow more floats at the top/bottom/everywhere on
