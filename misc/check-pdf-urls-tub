@@ -5,13 +5,17 @@
 
 for f in "$@"; do
   # We exclude adobe.com since it does not respond to wget requests.
-  # From Max Chernoff, 31jul2024.
+  # Exclude "." which happens with spelatex (tb142).
+  # 
+  # Initial code from Max Chernoff, 31jul2024.
   #With wget v1.xx (which is what the tug.org server is using):
   qpdf --qdf "$f" - \
+  | grep -aoP '(?<=/URI \()[^)]*(?=\))' \
   | grep -avF example.org \
   | grep -avF adobe.com \
-  | grep -aoP '(?<=/URI \()[^)]*(?=\))' \
+  | grep -av  '^\.' \
   | sort -u \
+  | tee /tmp/ckurl.in \
   | wget --no-check-cert --timeout=10 --tries=0 --spider -nv -i- 2>&1 \
   | tee /tmp/ckurl \
   | sed -e 's/^.* URL: //' -e 's/:$//'

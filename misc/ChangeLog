@@ -1,3 +1,18 @@
+2024-11-11  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr-ctx (\OK, \abs, \floor, \m, \mtext, \ttx,
+	\startcases, \endcases, \TC, \italic): new abbrevs for
+	tb142hagen-paragraphs.
+	(\type): also make ~ other.
+	(\typebuffer): allow two optional arguments.
+	
+	* check-pdf-urls-tub: remove "urls" starting with ".",
+	for tb142daems-spelatex.
+
+	* check-pages-cover4-tub: remove special case for elec.
+
+	* acrocheck-tub: ignore "[A-F]+.
+
 2024-10-17  Karl Berry  <karl@freefriends.org>
 
 	* check-pdf-urls-tub: --no-check-cert; add license.

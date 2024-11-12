@@ -122,6 +122,7 @@
 \def\NOWEB     {\acro{NOWEB}}
 \def\OCE       {\acro{OCE}}
 \def\OFM       {\acro{OFM}}
+\def\OK        {\acro{OK}}
 \def\OMEGA     {Omega}
 \def\OPENMATH  {Open\-Math}
 \def\OPENTYPE  {Open\-Type}
@@ -183,6 +184,7 @@
 \def\pdfTeX    {pdf\-\/\TeX}
 
 % 
+\def\abs#1{|#1|}
 \def\alignhere{}
 \def\arg{\tubbraced}
 \def\at{}
@@ -206,6 +208,7 @@
 \def\dontleavehmode{}
 \def\enabledirectives[#1]{}
 \def\externalfigure[#1]#2[#3]{\centerline{\includegraphics[#3]{#1}}}
+\NewDocumentCommand\floor{om}{\lfloor#2\rfloor}
 \def\from{\tbsurl}
 \def\getnamedglyphdirect{}
 \def\hairline{}
@@ -218,7 +221,9 @@
 \def\loadtypescriptfile[#1]{}
 \def\logo[#1]#2{}
 \def\low#1{\ensuremath{_{\,\textrm{\footnotesize #1}}}}
+\def\m#1{\(#1\)}
 \def\mathitalicsmode{}
+\def\mtext#1{\text{#1}}
 \def\mtp#1{\mbox{ #1 }}
 \def\noheaderandfooterlines{}
 \let\noindentation = \relax
@@ -251,6 +256,7 @@
 \def\texdefinition#1#2{}
 \def\tf{\rm}
 \def\tttf{\tt}
+\def\ttx{\tt}
 \def\tx{\tt}
 %\def\unexpanded{}% etex primitive, microtype et al. need it
 \def\unit{\,\mbox}
@@ -290,7 +296,7 @@
 \makeatletter
 \def\type{\bgroup
   \catcode`\\=12 \catcode`##=12 \catcode`\&=12 \catcode`$=12 \catcode`_=12
-  \catcode`\%=12 \catcode`\^=12 \catcode`\|=12
+  \catcode`\%=12 \catcode`\^=12 \catcode`\|=12 \catcode`\~=12
   \@noligs % disable tt ligatures, defined in ltmiscen.dtx
   %\catcode`!=0 % in case we want escapes
   \def\\{\char`\\ }%
@@ -319,13 +325,17 @@
 
 % sometimes we want to ignore buffers, sometimes print them.
 \def\tubignorebuffers{\long\def\startbuffer##1\stopbuffer{}}
-\def\tubverbatimbuffers{\def\startbuffer{\starttyping}}
+\def\tubverbatimbuffers{\def\startbuffer[##1]{\starttyping}}
 \tubverbatimbuffers % default
 
-\newcommand{\typebuffer}[1][]{}% ignore possible optional arg
+%\newcommand{\typebuffer}[1][]{}% ignore possible optional arg
+\NewDocumentCommand\typebuffer{oo}{} % two optional arguments
 \let\getbuffer\typebuffer
 \def\inlinebuffer{}
 \def\stopbuffer{\errmessage{must literally end verbatim buffer}}
+
+\def\startcases{\begin{cases}}
+\def\stopcases{\end{cases}}
 
 \def\startcolumns[#1]{}
 \def\stopcolumns{}
@@ -415,6 +425,7 @@
 \def\BC{&\bf}
 \def\BL{\FL}
 \def\NC{&}
+\def\TC{&\rm}
 \def\NR{\\}
 \def\FL{\noalign{\smallskip}\hline\noalign{\tubsmallerskip}}
 \def\HL{\hline\rule{0pt}{1em}}
@@ -432,6 +443,16 @@
 % \end{verbatim} has to be literal.
 \def\stoptyping{\errmessage{must literally end verbatim typing}}
 \def\tubextratyping{}
+
+\def\italic{\futurelet\next\finishitalic}
+\def\finishitalic{%
+  \ifx\next\bgroup
+    \let\next\textit
+  \else
+    \let\next\it
+  \fi
+  \next
+}
 
 % ||   en-dash in ConTeXt
 % |-|  normal hyphen with line break allowed

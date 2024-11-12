@@ -33,8 +33,7 @@ sub main {
         warn "$ARGV:$.: no directory for: $item_name\n";
         next;
       }
-      # tb141elec because of signatures
-      next if $item_name =~ /^(edit|instmem|elec)$/;
+      next if $item_name =~ /^(edit|instmem)$/;
       my $this_pageno;
       if ($type eq "fir") {
         $this_pageno = &get_page ("$item_name/firstpage.tex");

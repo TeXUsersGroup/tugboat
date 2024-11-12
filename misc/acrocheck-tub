@@ -1,9 +1,11 @@
 #!/bin/sh
 # $Id$
 # Public domain. Originally written by Karl Berry, 2010.
+# Check that all-caps sequences are enclosed in \acro. Lots of exceptions.
 # 
 # \uname and \[um]code are for bien.
 # ``...'' is for tb139miller.
+#
 acro_ok='[A-Z][-+_A-Z0-9]+'
 egrep -Hn "$acro_ok" "$@" \
 | sed -e 's/%.*//' \
@@ -12,6 +14,7 @@ egrep -Hn "$acro_ok" "$@" \
       -e 's/\\\(includegraphics\|cite\|bibitem\)\(\[[^]]*\]\)\?{[^}]*}//g' \
       -e 's/\\\(DeclareUnicodeCharacter\|label\|ref\|pageref\) *{[^}]*}//g' \
       -e 's/\(src\|id\)=".*"//g' \
+      -e 's/"[A-F]\+\>//g' \
       -e 's/``'"[^']*''//g" \
       -e 's/|[^|]*|//g' \
       -e 's/\\type\? *{[^}]*}//g' \
