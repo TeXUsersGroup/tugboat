@@ -1,0 +1,10 @@
+  Selected characters from 16th century fonts are discussed in
+  the paper, notably Kaspar Hochfeder's font no.~2. In particular
+  their representation in the Unicode
+  standard is investigated. For some of them the encoding is obvious,
+  but there are also characters for which their encoding remains an
+  open question. Some old characters don't have Unicode codepoints,
+  but can be printed with an appropriate OpenType/TrueType fonts using
+  typographic features. Two such fonts are used: Junicode and
+  Incunable. Some characters from Gutenberg's bible are also
+  mentioned.

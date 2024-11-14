@@ -1,0 +1,13 @@
+  Portuguese hyphenation rules have been available for more than 35 years and
+  have performed well. Nonetheless, they still make mistakes and leave some
+  hyphenation points unmarked. Although most undetected hyphenation points are
+  located near word boundaries, which are irrelevant for \TeX{} typesetting
+  purposes, they are still useful for hyphenating proper nouns, new words, or
+  pseudowords, and for use in other applications, such as text-to-speech
+  conversion. A list of 49,528 hyphenated words acquired from online
+  dictionaries was used to analyze the default rules' hyphenation performance,
+  and a set of 120 new rules is proposed to be added to the hyphenation rules
+  for Portuguese. In addition, Patgen was used to create new rules from scratch
+  or to improve the previous set of rules. Patgen's set of rules doesn't show
+  good generalization capability. In the end, the set of handcrafted patched
+  rules shows the best results.

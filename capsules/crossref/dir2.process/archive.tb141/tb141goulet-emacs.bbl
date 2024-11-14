@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{Esbati:TB:2024}
+A.~Esbati.
+\newblock Building a modern editing environment on {W}indows around \acro{GNU}
+  {E}macs and \acro{AUC}{\TeX}.
+\newblock \emph{TUGboat} 45(1):77--87, 2024.
+\newblock \newline \url{https://doi.org/10.47397/tb/45-1/tb139esbati-auctex}
+
+\bibitem{ESS}
+A.J.~Rossini, R.M.~Heiberger, et~al.
+\newblock \emph{{ESS}{\Dash}{Emacs Speaks Statistics}}.
+\newblock {ESS} Developers, 2024.
+\newblock \url{https://ess.r-project.org}
+
+\bibitem{AUCTeX}
+K.K.~Thorup, P.~Abrahamsen, et~al.
+\newblock \emph{\acro{AUC}\TeX: A sophisticated \TeX\ environment for {E}macs},
+  2024.
+\newblock \url{https://www.gnu.org/software/auctex/manual/auctex.index.html}
+
+\end{thebibliography}

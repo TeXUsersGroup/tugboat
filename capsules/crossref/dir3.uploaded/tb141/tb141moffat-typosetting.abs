@@ -1,0 +1,5 @@
+At \url{https://typosetting.co.uk} I have a website where I explore libre OpenType
+and TrueType fonts to try to see which languages they support (and to note
+mismapping of codepoints when I spot them). I am using {\XeLaTeX} to
+produce \PDF{}s showing the glyphs in the fonts, the languages I think they
+support, and some other comparisons between fonts.

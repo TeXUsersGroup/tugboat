@@ -1,0 +1,14 @@
+Primo is a cloud-based authoring, submission, and proofing
+tool with collaborative editing. Its target audience is authors who need to
+publish papers with a publisher. It simplifies the publishing process for
+authors and minimizes the difference between the submitted and published
+versions. Primo provides high-quality \PDF\ output with math, using \TeX\ as
+a back-end. Authors are shielded from the underlying \XML\ required by the
+publisher as much as possible. Simply put, it’s like Google Docs, but for
+academic publishing, with an integrated publishing workflow where the \PDF\
+preview is always accessible.
+
+We will first provide an overview of the technologies used, the runtime
+components, and the structure of the source code. After that, we’ll focus on
+one specific aspect: collaborative editing. We’ll describe the parts of the
+document model that are crucial for collaboration.

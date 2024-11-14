@@ -1,0 +1,10 @@
+\begin{thebibliography}{0}
+\bibitem{behdad}
+Behdad Esfahbod. State of Text Rendering 2024.
+\url{https://behdad.org/text2024/}
+
+% ? This is treated as paragraphs, and inset. Looks horrid.
+\bibitem{lcdf}
+Eddie Kohler. \acro{LCDF} Typetools.
+\newline\url{https://www.lcdf.org/type/}
+\end{thebibliography}

@@ -1,0 +1,74 @@
+% this file is read twice
+%   first:  the shortcuts for the references are defined
+%   second: the list for references is output
+% start the file with \startbibrefs and end it with \par
+% NOTE: a § can't be used in front of \endbib, move it to the previuos line
+\startbibrefs\begingroup
+\ninepoint
+\emergencystretch=0.03\hsize
+\def\newline{\hfil\break}%
+\raggedright
+\frenchspacing
+\hyphenpenalty=10000
+\def\URLaccessdate(#1){}% suppress ``accessed <date>'' info after URLs
+
+\bibitem{citeFB} Frederick H. Bartlett, ``Automatic Page Balancing
+   Macros Wanted'',
+   {\sl \TUB\ 9}:1, 1988, 83.\par
+   \biburl https://tug.org/TUGboat/tb09-1/tb20bartlett.pdf\endurl
+   \endbib(2024-06-12)
+
+\bibitem{citeMC} Max Chernoff, ``Automatically removing widows and
+   orphans with {lua-widow-control}'',\newline
+   {\sl \TUB\ \bf43}:1, 2022, 28--39.\par
+   \biburl https://tug.org/TUGboat/tb43-1/tb133chernoff-widows.pdf\endurl
+   \endbib(2024-06-15)
+   \bibcont Update in {\sl \TUB\ \bf43}:3, 2022, 340--342.\par
+   \biburl https://tug.org/TUGboat/tb43-3/tb135chernoff-lwc.pdf\endurl
+   \endbib(2024-07-02)
+%   \bibcont See also:\par
+%   \biburl https://www.ctan.org/pkg/lua-widow-control\endurl
+%   \endbib(2024-06-15)
+
+\bibitem{citeCTvA} Donald E. Knuth, \TB,
+   Volume~A of \CandT, Boston, Massachusetts: \AW, 1984.
+
+\bibitem{citeCTvB} Donald E. Knuth, \TP,
+   Volume~B of \CandT,
+   Boston,\newline Massachusetts: \AW, 1986.
+
+\bibitem{citeElog} Donald E. Knuth,
+   ``The Errors of \TeX'',\newline
+   {\sl Software \Dash Practice and Experience} {\bf19} (1989),
+   607--685; reprinted as Chapters 10 and~11 in [999qqq], 243--339.
+   The log, i.e., Chapter~11, is still updated:\par
+   \biburl https://www.ctan.org/tex-archive/systems/knuth/dist/errata/errorlog.tex\endurl
+   \endbib(2024-06-12)
+
+\bibitem{citeLP} Donald E. Knuth,
+   {\sl Literate Programming},\newline
+   CSLI~Lecture Note No.~27, 1992.\par
+   \biburl https://www-cs-faculty.stanford.edu/~knuth/lp.html\endurl
+   \endbib(2024-06-12)
+
+\bibitem{citeQA} Donald E. Knuth, ``\acro{TUG}'95}: Questions and\newline
+   Answers'', {\sl \TUB\ 17}:1 (1996), 7--22.\par
+   \biburl https://tug.org/TUGboat/tb17-1/tb50knut.pdf\endurl
+   \endbib(2024-06-28)
+
+\bibitem{citeLL} Leslie Lamport, ``LaTeX Notes'',
+   {\sl TeXhax Digest V88}:11, 1988-02-01; in:\par
+   \biburl https://www.ctan.org/tex-archive/info/digests/texhax/88/texhax.11.gz\endurl
+   \endbib(2024-06-15)
+
+\bibitem{citeMP} Michael F. Plass, 
+   {\sl Optimal Pagination Techniques for Automatic Typesetting Systems}, Ph.D.\ thesis, Stanford University,
+   1981, 6+72 pages.\par
+   \biburl https://tug.org/docs/plass/plass-thesis.pdf\endurl
+   \endbib(2024-06-12)
+   
+\end{thebibliography}
+% Local Variables:
+% coding: iso-latin-9-unix
+% ispell-local-dictionary: "en_US"
+% End:

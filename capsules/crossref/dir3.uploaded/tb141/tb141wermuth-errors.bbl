@@ -1,0 +1,58 @@
+% this file is read twice
+%   first:  the shortcuts for the references are defined
+%   second: the list for references is output
+% start the file with \startbibrefs and end it with \par
+% NOTE: a § can't be used in front of \endbib, move it to the previuos line
+\startbibrefs\begingroup
+\ninepoint
+\emergencystretch=0.03\hsize
+\def\newline{\hfil\break}%
+\raggedright
+\frenchspacing
+\hyphenpenalty=10000
+\def\URLaccessdate(#1){}% suppress ``accessed <date>'' info after URLs
+
+{\hyphenpenalty=9999
+\bibitem{citeBDP} Brett A. Becker, Paul Denny, Raymond Pettit,
+   et~al., ``Compiler error messages considered unhelpful: The
+   landscape of text-based programming error message research'',
+   Proceedings of the working group reports on innovation and
+   technology in computer science education (2019), 177--210.
+\par}
+
+\bibitem{citeDIN} \acro{DIN} 9241-10:1996, ``Ergonomische Anforderungen
+   f\"ur B\"urot\"atigkeiten mit Bildschirmger\"aten\Dash Teil~10:
+   Grunds\"atze der Dialoggestaltung'', 1996.
+
+\bibitem{citeCTvA} Donald E. Knuth, \TB,
+   Volume~A of \CandT, Boston, Massachusetts: \AW, 1984.
+
+\bibitem{citeTRIP} Donald E. Knuth, ``A torture test for \TeX'',
+   Stan-\newline ford Computer Science Report {\it STAN-CS-84-1027},
+   Stanford, California: Stanford University, 1984.
+
+\bibitem{citeCTvB} Donald E. Knuth, \TP,
+   Volume~B of~\CandT,
+   Boston,\newline Massachusetts: \AW, 1986.
+
+\bibitem{citeLP} Donald E. Knuth,
+   {\sl Literate Programming},\newline
+   \acro{CSLI}~Lecture Note No.~27, 1992.
+
+{\hfuzz=0.27pt
+\bibitem{citeMFK} Guillaume Marceau, Kathi Fisler, and Shriram
+   Krishnamurthi, ``Mind Your Language: On Novices' Interactions with
+   Error Messages'', Proceedings of the 10th \acro{SIGPLAN} Symposium
+   on new ideas, new paradigms, and reflections on programming and
+   software (2011), 3--18.\par}
+
+\bibitem{citeJN} Jakob Nielsen, ``Ten usability heuristics'' (2005).\par
+   \biburl https://en.wikipedia.org/wiki/Heuristic_evaluation\endurl
+   \endbib(2024-04-12)
+
+\end{thebibliography}
+\endinput
+% Local Variables:
+% coding: iso-latin-9-unix
+% ispell-local-dictionary: "en_US"
+% End:

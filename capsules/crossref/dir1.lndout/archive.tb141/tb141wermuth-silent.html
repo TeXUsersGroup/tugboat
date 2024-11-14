@@ -1,0 +1,60 @@
+<!--#include virtual="/header.html"-->
+<title>&#x5c;topmark in output routines without &#x5c;shipout
+       - TUGboat 45:3 (2024) - TeX Users Group</title>
+</head><body>
+
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+<h1><a href="/TUGboat/tb45-3/">TUGboat 45:3</a> (2024)<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
+
+<p><b>Title</b>: <tt>&#x5c;topmark</tt> in output routines without <tt>&#x5c;shipout</tt></p>
+
+<p><b>Summary</b>:
+creating a do-nothing output routine that does not lose <tt>&#x5c;topmark</tt>.</p>
+
+<p><b>Full text of article</b>: <a href="https://tug.org/members/TUGboat/tb45-3/tb141wermuth-silent.pdf">available to TUG members</a> (<a href="/join.html">join TUG</a>);
+will be publicly available after the next issue is published.</p>
+
+<p><b>Author</b>:
+<a href="/TUGboat/Contents/listauthor.html#Wermuth,Udo">Udo Wermuth</a></p>
+
+<p><b>Publication</b>: <a href="/TUGboat/tb45-3/">TUGboat
+volume 45, number 3</a> (2024),
+pages&nbsp;382&ndash;387</p>
+
+<p><b>DOI</b> (this page):
+<a href="https://doi.org/10.47397/tb/45-3/tb141wermuth-silent">10.47397/tb/45-3/tb141wermuth-silent</a>
+<br><small>(<a href="https://doi.org/10.47397/tb/45-3/tb141hagen-inaccessible">previous doi</a>
+- <a href="https://doi.org/10.47397/tb/45-3/tb141wermuth-errors">next doi</a>)</small></p>
+
+<p><b>Category</b>:
+<a href="/TUGboat/Contents/listkeyword.html#CatTAGMethods">Methods</a></p>
+      
+<p><b>Difficulty</b>: Advanced</p>
+
+<p><b>Abstract</b>:
+Developers of formats for TeX sometimes need to write their own
+output routine that replaces the macro <tt>&#x005C;plainoutput</tt> of
+plain TeX. One reason for a new output routine might be to do checks
+for a page without directly sending it to the dvi file. This article
+describes how one can avoid the <tt>&#x005C;topmark</tt> of the next page
+becoming invalid in such a scenario.</p>
+
+<p><b>References</b>:</p>
+<ol class="tugbbl">
+<li class="tugbbl">Frederick H. Bartlett, &#x201c;Automatic Page Balancing Macros Wanted&#x201d;, TUB 9:1, 1988, 83. <a href="https://tug.org/TUGboat/tb09-1/tb20bartlett.pdf">tug.org/TUGboat/tb09-1/tb20bartlett.pdf</a></li>
+<li class="tugbbl">Max Chernoff, &#x201c;Automatically removing widows and orphans with lua-widow-control&#x201d;, TUB 43:1, 2022, 28&#x2013;39. <a href="https://tug.org/TUGboat/tb43-1/tb133chernoff-widows.pdf">tug.org/TUGboat/tb43-1/tb133chernoff-widows.pdf</a> Update in TUB 43:3, 2022, 340&#x2013;342. <a href="https://tug.org/TUGboat/tb43-3/tb135chernoff-lwc.pdf">tug.org/TUGboat/tb43-3/tb135chernoff-lwc.pdf</a></li>
+<li class="tugbbl">Donald E. Knuth, The TeXbook, Volume A of Computers &amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1984.</li>
+<li class="tugbbl">Donald E. Knuth, TeX: The&#x00A0;Program, Volume B of Computers &amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1986.</li>
+<li class="tugbbl">Donald E. Knuth, &#x201c;The Errors of TeX&#x201d;, Software&#x2014;Practice and Experience 19 (1989), 607&#x2013;685; reprinted as Chapters 10 and 11 in [999qqq], 243&#x2013;339. The log, i.e., Chapter 11, is still updated: <a href="https://www.ctan.org/tex-archive/systems/knuth/dist/errata/errorlog.tex">www.ctan.org/tex-archive/systems/knuth/dist/errata/errorlog.tex</a></li>
+<li class="tugbbl">Donald E. Knuth, Literate Programming, CSLI Lecture Note No. 27, 1992. <a href="https://www-cs-faculty.stanford.edu/~knuth/lp.html">www-cs-faculty.stanford.edu/~knuth/lp.html</a></li>
+<li class="tugbbl">Donald E. Knuth, &#x201c;TUG&#x2019;95: Questions and Answers&#x201d;, TUB 17:1 (1996), 7&#x2013;22. <a href="https://tug.org/TUGboat/tb17-1/tb50knut.pdf">tug.org/TUGboat/tb17-1/tb50knut.pdf</a></li>
+<li class="tugbbl">Leslie Lamport, &#x201c;LaTeX Notes&#x201d;, TeXhax Digest V88:11, 1988-02-01; in: <a href="https://www.ctan.org/tex-archive/info/digests/texhax/88/texhax.11.gz">www.ctan.org/tex-archive/info/digests/texhax/88/texhax.11.gz</a></li>
+<li class="tugbbl">Michael F. Plass, Optimal Pagination Techniques for Automatic Typesetting Systems, Ph.D. thesis, Stanford University, 1981, 6+72 pages. <a href="https://tug.org/docs/plass/plass-thesis.pdf">tug.org/docs/plass/plass-thesis.pdf</a></li>
+</ol>
+
+<hr><small><a href="/TUGboat/">TUGboat</a> 45:3, 2024 (<a href="/TUGboat/tb45-3/">issue 141</a>)
+&nbsp; [generated 2024-11-13]
+</small><br><!--#include virtual="/footer.html"-->

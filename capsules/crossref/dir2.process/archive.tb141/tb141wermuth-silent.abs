@@ -1,0 +1,6 @@
+        Developers of formats for \TeX\ sometimes need to write their own
+output routine that replaces the macro \cs{plainoutput} of
+plain \TeX. One reason for a new output routine might be to do checks
+for a page without directly sending it to the dvi file. This article
+describes how one can avoid the \cs{topmark} of the next page
+becoming invalid in such a scenario.

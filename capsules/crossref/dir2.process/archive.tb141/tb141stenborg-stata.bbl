@@ -1,0 +1,124 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{10}
+
+\bibitem{Camara:SJ14-1-103}
+R.J.A.~Camara.
+\newblock {Reports and other PDF documents}.
+\newblock \emph{The Stata Journal}, 14(1):103--118, 2014.
+\newblock \url{https://doi.org/10.1177/1536867X1401400108}
+
+\bibitem{Chen:SJ24-1-161}
+Y.~Chen, Y.~Lian.
+\newblock {Browse and cite Stata manuals easily: The wwwhelp command}.
+\newblock \emph{The~Stata Journal}, 24(1):161--168, 2024.
+\newblock \url{https://doi.org/10.1177/1536867X241233676}
+
+\bibitem{Bari:TB25-2-223}
+O.~de~Bari, M.~Himmelmann.
+\newblock {A brief report on the first GuIT meeting}.
+\newblock \emph{TUGboat}~25(2):223--223, 2004.
+\newblock \newline \url{https://tug.org/TUGboat/tb25-2/tb81guit.pdf}
+
+\bibitem{Gallup:SJ12-1-3}
+J.L.~Gallup.
+\newblock A new system for formatting estimation tables.
+\newblock \emph{The Stata Journal}, 12(1):3--28, 2012.
+\newblock \url{https://doi.org/10.1177/1536867X1201200102}
+
+\bibitem{HaghishSJ16-4-938}
+E.F.~Haghish.
+\newblock \gobble{A}{R}ethinking literate programming in statistics.
+\newblock \emph{The~Stata Journal}, 16(4):938--963, 2016.
+\newblock \newline \url{https://doi.org/10.1177/1536867X1601600408}
+
+\bibitem{Haghish:SJ16-4-964}
+E.F.~Haghish.
+\newblock {markdoc: Literate programming in Stata}.
+\newblock \emph{The Stata Journal}, 16(4):964--988, 2016.
+\newblock \url{https://doi.org/10.1177/1536867X1601600409}
+
+\bibitem{Haghish:SJ19-1-83}
+E.F.~Haghish.
+\newblock On the importance of syntax coloring for teaching statistics.
+\newblock \emph{The Stata Journal}, 19(1):83--86, 2019.
+\newblock \url{https://doi.org/10.1177/1536867X19830892}
+
+\bibitem{Jann:SJ16-2-245}
+B.~Jann.
+\newblock {Creating LaTeX documents from within Stata using texdoc}.
+\newblock \emph{The~Stata Journal}, 16(2):245--263, 2016.
+\newblock \url{https://doi.org/10.1177/1536867X1601600201}
+
+\bibitem{Kustudic:SJ24-2-362}
+M.~Kustudic, B.~Niu.
+\newblock {Stata tip 155: How to perform high-frequency event studies}.
+\newblock \emph{The Stata Journal}, 24(2):362--368, 2024.
+\newblock \url{https://doi.org/10.1177/1536867X241258013}
+
+\bibitem{Mebane:TAFS132-2-239}
+C.A.~Mebane, T.R.~Maret, R.M.~Hughes.
+\newblock {An Index of Biological Integrity (IBI) for Pacific Northwest
+  Rivers}.
+\newblock \emph{Transactions of the American Fisheries Society},
+  132(2):239--261, 2003.
+
+\bibitem{Mori:PJ:2007-1}
+L.F.~Mori.
+\newblock Tables in {\LaTeXe}: Packages and methods.
+\newblock \emph{The Prac\TeX\ Journal}, (1), 2007.
+\newblock \url{http://tug.org/pracjourn/2007-1/mori}
+
+\bibitem{Newson:SJ12-2-191}
+R.B.~Newson.
+\newblock {From resultssets to resultstables in Stata}.
+\newblock \emph{The Stata Journal}, 12(2):191--213, 2012.
+\newblock \url{https://doi.org/10.1177/1536867X1201200203}
+
+\bibitem{Rodriguez:SJ17-3-600}
+G.~Rodr\'{i}guez.
+\newblock {Literate data analysis with Stata and Markdown}.
+\newblock \emph{The Stata Journal}, 17(3):600--618, 2017.
+\newblock \url{https://doi.org/10.1177/1536867X1701700304}
+
+\bibitem{Rogers:2023:BookDMEw}
+C.~Rogers.
+\newblock \emph{Design Made Easy with Inkscape}.
+\newblock Packt, 2023.
+
+\bibitem{Schmidt:TB28-2-241}
+W.~Schmidt.
+\newblock Font selection in {\LaTeX}: {The}~most frequently asked questions.
+\newblock \emph{TUGboat}~28(2):241--242, 2007.
+\newblock \url{https://tug.org/TUGboat/tb28-2/tb89schmidt.pdf}
+
+\bibitem{Soon:STB3-15-7}
+T.W.~Soon, S.L.~Saw.
+\newblock {Incorporating Stata-created PostScript files into {\TeX}/{\LaTeX}
+  documents}.
+\newblock \emph{Stata Technical Bulletin}, 15:7--12, Sept. 1993.
+
+\bibitem{StataCorp:2023:ManualGRM}
+StataCorp, College Station, TX.
+\newblock \emph{Stata 18 Graphics Reference Manual}, 2023.
+\newblock \url{https://www.stata.com/bookstore/graphics-reference-manual/}
+
+\bibitem{metsymb}
+F.P.~Vogt.
+\newblock The \texttt{metsymb} package.
+\newblock {\\Generate (vectorial) meteorological symbols}.
+\newblock \newline \url{https://ctan.org/pkg/metsymb}
+
+\bibitem{Warton:2022:BookMiSE}
+D.I.~Warton.
+\newblock \emph{Eco-Stats: Data Analysis in Ecology}.
+\newblock Methods in Statistical Ecology. Springer, 2022.
+
+\bibitem{Wolfe:SJ14-4-965}
+J.D.~Wolfe, S.~Bauldry.
+\newblock {Collecting and organizing Stata graphs}.
+\newblock \emph{The Stata Journal}, 14(4):965--974, 2014.
+\newblock \url{https://doi.org/10.1177/1536867X1401400415}
+
+\end{thebibliography}

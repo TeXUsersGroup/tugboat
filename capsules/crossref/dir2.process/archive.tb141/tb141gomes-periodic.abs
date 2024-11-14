@@ -1,0 +1,7 @@
+With the \tbcode{pgf-PeriodicTable} package you can obtain a Periodic
+Table of Elements simply by typing \cs{pgfPT}. Then, the package does
+the \textit{magic} of building the periodic table with the indispensable
+help of \TikZ. For a customized periodic table, you can use
+\cs{pgfPT[}\meta{options}\tbcode{]}. Some of the features of the
+\tbcode{pgf-PeriodicTable} package will be described here, as well as
+the motivation for its construction.
