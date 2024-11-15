@@ -1,0 +1,10 @@
+  A profiler is a tool used by programmers to analyze the runtime
+  behavior of the code they write. The profiler can map the \acro{CPU}\ time of
+  a program to specific files and lines, or it can map the time to
+  individual procedures. This information is necessary if a programmer
+  wants to optimize the code for speed.
+
+  No such tool has been available to date to programmers who write
+  macro packages for \TeX. This paper presents {\tt texprof} and
+  {\tt texprofile},
+  two programs working together to profile \TeX\ input files.

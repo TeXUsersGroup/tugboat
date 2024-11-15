@@ -1,0 +1,69 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{10}
+
+\bibitem{Fischer:2021:RTP}
+U.~Fischer.
+\newblock On the road to {Tagged PDF}: About {StructElem}, marked content,
+  {PDF/A} and squeezed {B}{\"a}rs.
+\newblock \emph{TUGboat} 42(2):170--173, 2021.
+\newblock \url{https://doi.org/10.47397/tb/42-2/tb131fischer-tagpdf}
+
+\bibitem{Fischer:2023:ATL}
+U.~Fischer, F.~Mittelbach.
+\newblock Automated tagging of {\LaTeX} documents --- what is possible today,
+  in 2023?
+\newblock \emph{TUGboat} 44(2):262--266, 2023.
+\newblock \url{https://doi.org/10.47397/tb/44-2/tb137fischer-tagging23}
+
+\bibitem{foxit}
+Foxit.
+\newblock {PDF} reader.
+\newblock \newline \url{https://www.foxit.com/pdf-reader/}
+
+\bibitem{Hagen:2024:SPF}
+H.~Hagen.
+\newblock Signing {PDF} files.
+\newblock \emph{TUGboat} 45(1):145--149, 2024.
+\newblock \url{https://doi.org/10.47397/tb/45-1/tb139hagen-pdfsign}
+
+\bibitem{ISO14289-2:2024}
+\emph{ISO/FDIS 14289-2; Document management applications{\Dash} Electronic
+  document file format enhancement for accessibility{\Dash}Part~2: Use of ISO
+  32000-2 (PDF/UA-2)}, 1st ed., 2024.
+\newblock \url{https://www.iso.org/standard/82278.html}
+
+\bibitem{Mittelbach:2022:LTP}
+F.~Mittelbach, U.~Fischer.
+\newblock The {{\LaTeX\ Tagged PDF}} project{\Dash}a status and progress
+  report.
+\newblock \emph{TUGboat} 43(3):268--272, 2022.
+\newblock \url{https://doi.org/10.47397/tb/43-3/tb135mitt-tagged}
+
+\bibitem{Mittelbach:2024:ELA}
+F.~Mittelbach, U.~Fischer.
+\newblock Enhancing {\LaTeX} to automatically produce tagged and accessible
+  {PDF}.
+\newblock \emph{TUGboat} 45(1):52--59, 2024.
+\newblock \url{https://doi.org/10.47397/tb/45-1/tb139mitt-deims24}
+
+\bibitem{Mittelbach:2020:LTP}
+F.~Mittelbach, C.~Rowley.
+\newblock {{\LaTeX} Tagged PDF}{\Dash}a blueprint for a large project.
+\newblock \emph{TUGboat} 41(3):292--298, 2020.
+\newblock \url{https://doi.org/10.47397/tb/41-3/tb129mitt-tagpdf}
+
+\bibitem{nvda}
+{NV Access}.
+\newblock {NVDA} screenreader.
+\newblock \newline \url{https://www.nvaccess.org/download}
+
+\bibitem{WTPDF:2024}
+{PDF Association}.
+\newblock \emph{{Well-Tagged PDF (WTPDF)}}, Feb. 2024.
+\newblock Version~1.0.0.
+\newblock
+  \url{https://pdfa.org/wp-content/uploads/2024/02/Well-Tagged-PDF-WTPDF-1.0.pdf}
+
+\end{thebibliography}

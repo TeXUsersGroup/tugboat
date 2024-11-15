@@ -198,6 +198,10 @@ It is good to register the dois some days before making the pdfs public,
 so that the "doi" links on the landing pages will work for testing, and
 the doi links on the contents pages will work after publishing. The
 registrations may take some time to be processed, hours or even days.
+From real registrations, email will be from admin@crossref.org;
+from test registrations, awsbounce@crossref.org.
+
+Registering DOIs will also cause crossref to send mail to authors.
 
 Then commit any changes to our source files:
  cd ~tubprod/svn/capsules
@@ -228,15 +232,16 @@ Then archive all the files (after registering):
   # dir3 before dir2 since we save them in both places, in case of edits.
   svn mkdir dir3.uploaded/tb$nnn
   cp dir2.process/issue.xml dir2.process/tb${nnn}* !$
+  ls dir3.uploaded # only archive.* should remain
   #
   svn mkdir dir2.process/archive.tb$nnn
   mv dir2.process/tb${nnn}* !$
   mv dir2.process/issue.xml !$
   ls dir2.process # only archive.* should remain
   #
-  svn add */*tb${nnn}/*
+  svn -q add */*tb${nnn}/*
   svn status
-  svn commit -m"tb$nnn uploaded files archived" dir*
+  svn commit -m"archive tb$nnn uploaded files as archived" dir*
 
 Then install pdfs, per ~tubprod/README.
 
@@ -246,8 +251,8 @@ say "publicly available now". This is irritating, but it seems useful
 enough to state explicitly whether or not an article is public to put up
 with it. To do this:
 
-previss=45-1
-prevnnn=139
+previss=45-2
+prevnnn=140
 
 - ensure that tb${prevnnn}capsule.txt is up to date, without /members/ urls.
 cd ../capsules
@@ -260,7 +265,7 @@ rm -i crossref/dir*/tb${prevnnn}*.*  # should be nothing there
 
 - assuming no hand edits were done and all files are still available,
   can run the usual:
-make cro-scratch
+make  cro-scratch
 
 - check diffs (no more "available to TUG members"):
 make previss=$previss diff-land
@@ -278,7 +283,7 @@ scp -p `cat /tmp/ch-land` $host:/home/httpd/html/TUGboat/tb$previss/
   since the landing files are all that's actually being changed live.
   Instead, remove the generated files so we'll be clean for next time:
 cd ..
-ls -lt dir*/tb${prevnnn}* # bbl/abs should be old, rpi/xml new
+ls -lt dir*/tb${prevnnn}* # bbl/abs should be old, rpi/html new
 rm dir*/tb${prevnnn}*.* dir2.process/issue.xml
 
 - commit:

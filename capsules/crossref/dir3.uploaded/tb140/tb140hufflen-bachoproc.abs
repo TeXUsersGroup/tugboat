@@ -1,0 +1,7 @@
+We report an experiment of making the proceedings of a conference by
+automatically generating as much information as possible. For example, we look
+for titles and other metadata in successive source files to build the table of
+contents. Separate source files must be processed by a \TeX-like format, which
+may be pdf\LaTeX, \XeLaTeX, \LuaLaTeX\ or \ConTeXt. Installing our functions
+requires a \textsc{Unix}-like \texttt{make} command and some programs written
+mostly using \pgScheme, partly using \pgRuby.

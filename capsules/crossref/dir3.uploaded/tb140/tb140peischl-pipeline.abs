@@ -1,0 +1,5 @@
+Using web-based platforms for collaborative editing of \LaTeX{} documents is common these days.
+These tools focus on writing documents and not on creation of templates or packages.
+Using build servers with automated pipelines is common within software development but can easily be adapted for \TeX{} \& friends.
+
+This article will show how to get started using automated workflows on platforms like GitHub, Forgejo, or GitLab for document authors as well as \TeX{} developers.

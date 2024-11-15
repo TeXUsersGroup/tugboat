@@ -1,0 +1,38 @@
+\begin{thebibliography}{1}
+
+\bibitem{istqb2024productbase}
+{ISTQB.ORG}.
+\newblock {\LaTeX}+{M}arkdown template, 2024.
+\newblock \url{https://github.com/istqborg/istqb_product_base}
+
+\bibitem{lee2023lua}
+Z.~Lee.
+\newblock lua-tinyyaml: A tiny {YAML} (subset) parser for pure {L}ua, 2023.
+\newblock \newline \url{https://ctan.org/pkg/lua-tinyyaml}
+
+\bibitem{nijenhuis2024lua}
+E.~Nijenhuis.
+\newblock lua-placeholders: Specifying placeholders for demonstration purposes,
+  2024.
+\newblock \url{https://ctan.org/pkg/lua-placeholders}
+
+\bibitem{nijenhuis2024specifying}
+E.~Nijenhuis.
+\newblock Specifying and populating documents in {YAML} with lua-placeholders
+  in {\LaTeX}.
+\newblock \emph{TUGboat} 45(1):65--76, 2024.
+\newblock \url{https://doi.org/10.47397/tb/45-1/tb139nijenhuis-placeholders}
+
+\bibitem{novotny2021markdown}
+V.~Novotn\'{y}.
+\newblock {M}arkdown 2.10.0: {\LaTeX} themes \& snippets, two flavors of
+  comments, and luameta{\TeX}.
+\newblock \emph{TUGboat} 42(2):186--193, 2021.
+\newblock \url{https://doi.org/10.47397/tb/42-2/tb131novotny-markdown}
+
+\bibitem{starynovotny2024parametric}
+V.~Star\'{y}~Novotn\'{y}.
+\newblock Parametric snippets, 2024.
+\newblock \url{https://github.com/Witiko/markdown/issues/445}
+
+\end{thebibliography}

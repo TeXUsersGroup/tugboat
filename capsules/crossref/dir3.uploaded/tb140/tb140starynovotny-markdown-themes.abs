@@ -1,0 +1,8 @@
+The Markdown package for \TeX{} supports themes that allow
+\TeX nicians to tailor the presentation of Markdown and \acro{YAML} content
+on the page. In this article, I will show the current state of Markdown
+themes using the example of \LaTeX{} templates that I developed for the
+International Software Testing Qualifications Board (\acro{ISTQB}).
+Readers will leave with actionable steps to create or modify Markdown
+themes for \LaTeX, and insights into extending these principles to other
+\TeX{} engines.
