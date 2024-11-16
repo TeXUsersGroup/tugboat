@@ -1,3 +1,9 @@
+2024-11-16  Karl Berry  <karl@freefriends.org>
+
+	* cr-landing-bbl-abs (read_crossref_xml): remove
+	</?unstructured_citation> early, so our check for [., ] at the end
+	of a url is effective.
+
 2024-11-15  Karl Berry  <karl@tug.org>
 
 	* tb140capsule.txt (mittelbach-tagging24.pdf): primary category
