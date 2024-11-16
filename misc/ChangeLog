@@ -1,3 +1,7 @@
+2024-11-16  Karl Berry  <karl@freefriends.org>
+
+	* toctxt-tub: new script for creating the txt file emailed to tex-eds.
+
 2024-11-11  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.abbr-ctx (\OK, \abs, \floor, \m, \mtext, \ttx,
