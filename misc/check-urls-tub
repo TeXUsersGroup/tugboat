@@ -1,0 +1,66 @@
+#!/bin/bash
+# $Id$
+# License: do what you want to.
+# Originally written by Max Chernoff, 31jul2024.
+# Extract urls from a pdf, or as given, and check them. Assume GNU grep
+# and bash (for PIPESTATUS).
+
+exit_status=1
+mydomain=freefriends.org #`hostname | perl -pe 's/.*\..*\..*$/'`
+ckurls () {
+  wget -i- -nv --no-check-cert --wait=1 --timeout=8 --tries=0 --spider \
+       --user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0" \
+       --referer=https://$mydomain \
+       2>&1
+  test $exit_status -eq 0 && exit_status=$?
+}
+
+for f in "$@"; do
+  if test "x$f" = x--file; then
+    shift
+    # take urls from file
+    if test -s "$1"; then
+      shift
+      cat "$1"
+    else
+      echo "$0: argument to --file has no urls: $1" >&1
+      exit 1
+    fi
+
+  # url given on command line
+  elif echo "$f" | grep '^http' >/dev/null; then
+    echo "$f"
+
+  else # assume it's a pdf
+    # We exclude adobe.com since it does not respond to wget requests
+    # (but maybe it will with user-agent, etc., so try agan)
+    # 
+    # Exclude "." which happens with spelatex (tb142).
+    # 
+    #With wget v1.xx (which is what the tug.org server is using):
+    qpdf --qdf "$f" - \
+    | grep -aoP '(?<=/URI \()[^)]*(?=\))' \
+    | grep -avF example.org \
+    | grep -avF xadobe.com \
+    | grep -av  '^\.' \
+    | sort -u
+  fi
+done | tee /tmp/ckurl.in \
+| ckurls \
+| sed -e 's/^.* URL: //' -e 's/:$//' \
+| tee /tmp/ckurl
+
+exit $exit_status
+
+# output looks like:
+#  2024-08-03 08:55:39 URL: https://github.com/borisveytsman/bookshelf 200 OK
+# or on error:
+#  https://www.perplexity.ai/:
+#  Remote file does not exist -- broken link!!!
+# which is why we remove trailing colons in the last sed.
+
+#With wget v2.xx (which is what I have installed locally), try:
+#   qpdf --qdf /path/to/file.pdf - | grep -aoP '(?<=/URI \()[^)]*(?=\))' | wget --spider -i- | grep ^HTTP
+
+# Basic idea for checking urls in html:
+# @links = $html =~ m/<a[^>]+href\s*=\s*["']?([^"'> ]+)/ig;

@@ -4,9 +4,19 @@
 # Check for balanced parens/braces/brackets/quotes within each paragraph.
 # Lots of false positives are likely, but still worth doing.
 
+use strict; use warnings;
+
 exit (&main ());
 
 sub main {
+  my $paren_check;
+  if ($ARGV[0] eq "--no-paren-check") {
+    shift;
+    $paren_check = 0;
+  } else {
+    $paren_check = 1;
+  }
+  
   $/ = "";  # check a paragraph at a time
   while (<>) {
     next if /^\\end(article|\{document\})/;
@@ -14,8 +24,8 @@ sub main {
     s/```//;                # markdown triple quotes
     # remove % comments, a common and ignorable culprit,
     # but don't remove \% or "% (printf format strings).
-    s/(^|[^\\"])%.*$/\1/mg;
-    &check_balance ('\(', '\)', $_);
+    s/(^|[^\\"])%.*$/$1/mg;
+    &check_balance ('\(', '\)', $_) if $paren_check;
     &check_balance ('\{', '\}', $_);
     &check_balance ('\[', '\]', $_);
     &check_balance ("``", "''", $_);
