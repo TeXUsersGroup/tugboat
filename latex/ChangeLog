@@ -1,3 +1,12 @@
+2025-03-21  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\tubmakecaptionbox): print label in bold here,
+	rather than separate \fnum@figure and \fnum@table, so that it will
+	apply to other floating types, such as those created by the
+	newfloat package (for tb142duck-pylatex).
+	* tugboat.ins: 2025.
+	* Makefile (zip): preserve timestamps with cp -p.
+
 2024-11-11  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\dblfloatsep, \dbltextfloatsep): reduce.

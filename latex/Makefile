@@ -93,7 +93,7 @@ $(dist).zip: README NEWS ltubguid.pdf manifest.txt tugboat.ins \
 		tugboat-code.pdf
 	chmod a+rw $^
 	rm -rf $(dist) $@; mkdir $(dist)
-	cp $^ $(dist)
+	cp -p $^ $(dist)
 	zip -qr $@ $(dist)
 	rm -rf $(dist)
 	zipinfo -1 $@ | sort

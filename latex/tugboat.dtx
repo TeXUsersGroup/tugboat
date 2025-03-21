@@ -2,7 +2,7 @@
 % $Id$
 % tugboat.dtx - main source for LaTeX TUGboat classes.
 %
-% Copyright 1994-2024 TeX Users Group.
+% Copyright 1994-2025 TeX Users Group.
 %
 % This file is part of the tugboat package.
 %
@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2024-11-11 v2.34
+                   [2025-03-21 v2.34
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -3093,7 +3093,8 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% For \TUB, we like 9pt captions to help differentiate from the main text.
+% For \TUB, we like 9pt captions to help differentiate from the main
+% text. Make a macro so we can easily override.
 %    \begin{macrocode}
 \def\tubcaptionfonts{\small}%
 %    \end{macrocode}
@@ -3119,19 +3120,27 @@
     \hb@xt@\hsize{\tubcaptionleftglue\box\@tempboxa\hfil}%
   \fi
   \vskip\belowcaptionskip}
-% 
-\def\tubmakecaptionbox#1#2{#1:\ #2}% allow overriding for a paper
 %    \end{macrocode}
 %
 % Also use \cs{tubcaptionfonts} for the caption
 % labels, and put the label (e.g., ``Figure~1'') in bold.
+% Use a macro so we can override.
+%    \begin{macrocode}
+\def\tubmakecaptionbox#1#2{{\tubcaptionfonts\bf #1}:\ #2}%
+%    \end{macrocode}
+%
+% We used to switch the labels into bold this way, but it's better to do
+% it as part of |\@makecaption| since then it will apply to other
+% floating types, such as those created by the |newfloat| package.
+% (E.g., |tb142duck-pylatex|.)
+%|\def\fnum@figure{{\tubcaptionfonts \bf \figurename\nobreakspace\thefigure}}|
+%|\def\fnum@table{{\tubcaptionfonts \bf \tablename\nobreakspace\thetable}}|
+%
 % If the \texttt{listings} package is being used, bold for its
 % label too; this \cs{def} is too early, but maybe listings will
 % play nice later.
 %
 %    \begin{macrocode}
-\def\fnum@figure{{\tubcaptionfonts \bf \figurename\nobreakspace\thefigure}}
-\def\fnum@table{{\tubcaptionfonts \bf \tablename\nobreakspace\thetable}}
 \def\lstlistingnamestyle{\bfseries}
 %    \end{macrocode}
 %
