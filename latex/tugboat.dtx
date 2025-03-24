@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2025-03-21 v2.34
+                   [2025-03-24 v2.34
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -3126,7 +3126,7 @@
 % labels, and put the label (e.g., ``Figure~1'') in bold.
 % Use a macro so we can override.
 %    \begin{macrocode}
-\def\tubmakecaptionbox#1#2{{\tubcaptionfonts\bf #1}:\ #2}%
+\def\tubmakecaptionbox#1#2{{\tubcaptionfonts\textbf{#1}}:\ #2}%
 %    \end{macrocode}
 %
 % We used to switch the labels into bold this way, but it's better to do
@@ -3151,9 +3151,11 @@
 %    \end{macrocode}
 %
 % Let's also reduce the space between floats, and between floats and text.
+% Strangely, it seems to be these that count, rather than |\dbl...|,
+% at least sometimes.
 %    \begin{macrocode}
-\setlength\dblfloatsep    { 9pt plus3pt minus2pt} % default 12pt plus2pt minus2pt
-\setlength\dbltextfloatsep{12pt plus4pt minus3pt} % default 20pt plus2pt minus4pt
+\setlength\floatsep    { 9pt plus3pt minus2pt} % default 12pt plus2pt minus2pt
+\setlength\textfloatsep{12pt plus4pt minus3pt} % default 20pt plus2pt minus4pt
 %    \end{macrocode}
 %
 % We want to allow more floats at the top/bottom/everywhere on
