@@ -28,7 +28,7 @@
 \StretchyNinePointSpacing
 \StretchyEightPointSpacing
 
-% \enablemetacode % seems redundant: `<` is used only inside `\everyverbatim` in this article...
+% \enablemetacode % not indispensable for <metacode> outside |\everyverbatim|
 \everyverbatim{\enablemetacode}
 \def\halfline{\vskip 0.5\baselineskip \ignoreendline}
 
@@ -101,8 +101,8 @@ document structure.  Below these are formatting macros that we recognize
 may be essential for certain applications.  Both sorts of tags are
 described in the following article.
 
-Generally, to ``mark up'' the data <foo>, a tag |\xxx| will precede
-<foo> and |\endxxx| will follow (thus: |\xxx <foo>\endxxx|).  We use
+Generally, to ``mark up'' the data |<foo>|, a tag |\xxx| will precede
+|<foo>| and |\endxxx| will follow (thus: |\xxx <foo>\endxxx|).  We use
 the |{...}| form to delimit arguments of lower-level formatting
 macros.  Optional commands follow tags and are enclosed in
 |[\lastoption][...]|, \`a la \LaTeX.  Several options may be enclosed
@@ -477,6 +477,7 @@ also want to use |\makebgroup| and |\makeegroup| in the options to define
 characters to localize this call; see p.~7).  Situations
 will dictate preferences for what character may be used as an escape
 (we use the \verbinline|\endverbatim, |!|, and |/| in this article).
+
 There is also a means of changing the setup of every occurrence of
 verbatim mode.  The contents of token register |\everyverbatim|
 is scanned after the defaults of verbatim mode
@@ -680,7 +681,7 @@ listed under tags.
    \caption{...}
 \twocolfigure
 ||
-and \verbinline|\endverbatim and \verbinline||\endverbatim input syntax.
+|\enablemetacode|, and \verbinline|\endverbatim and \verbinline||\endverbatim input syntax.
 
 
 \head * Common abbreviations and utilities *
