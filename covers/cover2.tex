@@ -6,7 +6,11 @@
 \TUBfinal
 
 \def\rateyear{\the\year}
-\def\rateyear{\count255=\year\advance\count255 by 1 \the\count255}
+\def\rateyear{%
+  \count255=\year
+  \ifnum\issnumber=3 \advance\count255 by 1 \fi
+  \the\count255
+}
 \def\tug{\acro{TUG}}
 \def\rtitle{}
 
@@ -67,17 +71,18 @@ The subscription rate for
 \bigskip \noindent {\bf Institutional memberships}
 
 \noindent Institutional membership is primarily a means of showing
-continuing interest in and support for \TeX\ and \tug.  It also
-provides a discounted membership rate, site-wide electronic
-access, and other benefits.  For further information, see
-\tbsurl{tug.org/instmem} or contact the \tug\ office.
+continuing interest in and support for \TeX\ and \tug. Patron
+memberships to provide extraordinary support are also available. These
+also provide a discounted rate for individual members,
+site-wide electronic access, and other benefits. For details,
+see \tbsurl{tug.org/instmem} or contact the \tug\ office.
 
 \bigskip \noindent {\bf About the cover}
 
-\noindent The cover graphic was created by Keith McKay; it's an example
-of the art of asemic writing\Dash writing without meaning. Keith's
-article on pages \thisissuepageref{mckay-asemic} gives some history and
-describes how it was made, using MetaFun and \ConTeXt.
+\noindent The cover graphic was created by Alan Cain using Asymptote,
+for his extraordinary book on mathematical beauty, {\it Form \& Number}.
+Alan's article on pages \thisissuepageref{cain-setting-form} has more
+information.
 
 \bigskip \noindent {\bf Trademarks}
 
@@ -87,11 +92,11 @@ question about whether a name is or is not a trademark, prudence dictates
 that it should be treated as if it is.
 
 % more space above this.
-\vskip 0pt plus1filll \smallskip\medskip\bigskip\noindent
-[printing date: October \the\year]
+\vskip 0pt plus1filll \smallskip\bigskip\noindent
+\TUB\ vol.\,\volnumber, no.\,\issnumber
 
 \smallskip
-\noindent Printed in \USA{}
+\noindent Printed in \USA{} [printing date:\ April \the\year]
 \newcol
 
 \NoParIndent
@@ -125,10 +130,10 @@ that it should be treated as if it is.
 \person{Frank Mittelbach}%
 \person{Ross Moore}%
 \person{Norbert Preining}%
-%\person{Raymond Goucher\\Founding Executive Director\2}
+%\person{Raymond Goucher (1937--2019)\\\rlap{Founding Exec.\ Director\2}}
 \person{Raymond Goucher (1937--2019)\\ 
-  \null\kern5.15em Founding Executive Director}
-\person{Hermann Zapf (1918--2015)\\Wizard of Fonts}
+  \null\kern5.15em Founding Executive Director\2}
+\person{Hermann Zapf (1918--2015)\\Wizard of Fonts\2}
 
 \smallskip
 {\eightpoint\it\raggedright %

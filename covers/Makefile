@@ -22,13 +22,13 @@ deps = ../tugboat.dates ../tugboat.sty ../ltugboat.cfg
 	-@$(cp) $@ ../CADMUS/
 
 # normally:
-c3_target = cover3.pdf
-c3_twopages = false
+#c3_target = cover3.pdf
+#c3_twopages = false
 #
-# for tb137 and tb139, cover3 is two pages, second page is copied to
+# for tb137, 139, 142, cover3 is two pages, second page is copied to
 # calendar, so comment out above, and use:
-#c3_target = cover3a.pdf
-#c3_twopages = test $@ = cover3.pdf
+c3_target = cover3a.pdf
+c3_twopages = test $@ = cover3.pdf
 
 %-crop.pdf: %.pdf
 	pdfcrop-tub $< >/dev/null

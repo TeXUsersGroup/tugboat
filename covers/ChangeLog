@@ -1,3 +1,9 @@
+2025-04-07  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (c3_target, c3_twopages): two pages for c3 for 46:1.
+	* cover2.tex: update for 46:1 (2025).
+	* cover4.tex: \ninepoint.
+
 2024-10-14  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.front (\TUBhead, \pressimage): link to the TUGboat issue.
