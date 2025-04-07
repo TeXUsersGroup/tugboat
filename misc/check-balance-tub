@@ -10,6 +10,7 @@ exit (&main ());
 
 sub main {
   my $paren_check;
+  exit 0 unless @ARGV;
   if ($ARGV[0] eq "--no-paren-check") {
     shift;
     $paren_check = 0;

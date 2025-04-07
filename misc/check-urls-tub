@@ -20,10 +20,11 @@ for f in "$@"; do
     shift
     # take urls from file
     if test -s "$1"; then
+      file=$1
       shift
-      cat "$1"
+      cat "$file" || exit 1
     else
-      echo "$0: argument to --file has no urls: $1" >&1
+      echo "$0: argument to --file has no urls: $1" >&2
       exit 1
     fi
 

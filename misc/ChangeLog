@@ -1,3 +1,9 @@
+2025-04-07  Karl Berry  <karl@freefriends.org>
+
+	* acrocheck-tub: ignore \hologo.
+	* check-balance-tub: exit 0 if no arguments.
+	* check-urls-tub: another attempt to take url list from file.
+
 2025-02-09  Karl Berry  <karl@freefriends.org>
 
 	* check-urls-tub: rename from check-pdf-urls-tub
