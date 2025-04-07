@@ -166,7 +166,16 @@ sub update_landing_bbl {
             }
             #warn "  1=$w1, 2=$w2, for $word\n";
             
-            $newcite .= " " if $newcite; # single spaces between words
+            if ($word =~ /^([:;!?%])/) {
+              # A space before punctuation might happen in French references;
+              # make the space non-breaking. Skip other possible punct
+              # marks until they come up. Presumably the punct won't be the
+              # first "word", but just in case ...
+              $newcite .= "&nbsp;" if $newcite;
+            } else {
+              $newcite .= " " if $newcite; # normal space between words
+            }
+
             if ($prot) {
               #warn " got prot $prot, urlbase $urlbase\n";
               # just drop trailing period or comma, more confusion than help
@@ -174,9 +183,11 @@ sub update_landing_bbl {
               my $url = "$prot://$urlbase";
               $newcite .=  qq!<a href="$url">$urlbase</a>!;
             } else {
-              # Special case: insert a line break (in both html source
-              # and output) before bullets (used in tb136andre bbl).
+              # Special case: before bullets, insert a line break, in
+              # both html source and output; for tb136andre bbl.
               $newcite .= "\n<br>" if $word =~ /^&#x2022;/;
+              #
+              # Add the current word to the citation we're building.
               $newcite .= $word;
             }
           }

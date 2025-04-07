@@ -82,8 +82,14 @@ fix the translations if at all possible:
 
 - For the bibliography, no font changes or other html-level markup is
   used.  It is plain (Unicode) text.  The only special cases are making
-  urls be live links, and newlines before bullets.  (We should revise
-  the process to translate bbls like abstracts. And structured references.)
+  urls be live links, and newlines before bullets.
+  
+  We'd like to do Crossref's structured references:
+  https://www.crossref.org/documentation/schema-library/markup-guide-metadata-segments/references/
+  Some effort was put into this using beastie, but it stalled on the
+  beastie side with handling TeX markup, and didn't seem worth
+  interposing another filter on our side.  Boris is contemplating
+  another approach (December 2024).
 
 On the other hand, sometimes authors use one-off abbreviations or
 complicated TeX code in their abstracts or bibliographies. In such
