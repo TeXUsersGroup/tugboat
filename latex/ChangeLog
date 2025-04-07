@@ -1,6 +1,10 @@
+2025-04-07  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\BibLaTeX, \BibTeX): allow hyphenation after \Bib.
+
 2025-03-24  Karl Berry  <karl@freefriends.org>
 
-	* tugboat.dtx (\floatsep, \textfloatsep): modify these
+	* tugboat.dtx (\floatsep, \textfloatsep): reduce these
 	rather than \dbl...
 
 2025-03-21  Karl Berry  <karl@freefriends.org>
