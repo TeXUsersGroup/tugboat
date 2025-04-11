@@ -1,0 +1,32 @@
+\begin{thebibliography}{1}
+
+\bibitem{nlp:ipa1999}
+{International Phonetic Association}.
+\newblock \emph{{Handbook of the International Phonetic Association: A Guide to
+  the Use of the International Phonetic Alphabet}}.
+\newblock Cambridge University Press, Cambridge, 1999.
+
+\bibitem{tex:Liang83:thesis}
+F.M.~Liang.
+\newblock \emph{Word Hy-phen-a-tion by Com-put-er}.
+\newblock Ph.D. thesis, Dept. of Computer Science, Stanford University, Aug.
+  1983.
+\newblock \url{https://tug.org/docs/liang/liang-thesis.pdf}
+
+\bibitem{tex:hyphenationweb-2024-06-25}
+A.~Reutenauer, M.~Miklavec.
+\newblock {\TeX} hyphenation patterns.
+\newblock \url{https://hyphenation.org/}
+
+\bibitem{nlp:reynolds2016espeakng}
+J.~Reynolds.
+\newblock {eSpeak NG}, 2016.
+\newblock \newline \url{https://github.com/espeak-ng/espeak-ng}
+
+\bibitem{tex:sojkas2021czechoslovak}
+P.~Sojka, O.~Sojka.
+\newblock New {C}zechoslovak hyphenation patterns, word lists, and workflow.
+\newblock \emph{TUGboat} 42(2):152--158, 2021.
+\newblock \url{https://doi.org/10.47397/tb/42-2/tb131sojka-czech}
+
+\end{thebibliography}

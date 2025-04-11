@@ -1,0 +1,10 @@
+  We present tfm-validate, a \TeX{} Font Metrics format checker. The library's
+  core functionality is to inspect TFM files and report any discovered
+  compliance issue. It can be run on individual files or complete directory
+  trees. tfm-validate also provides a convenience function to (in)validate a
+  local TeX Live installation. When run this way, the library processes
+  every TFM
+  file in the distribution and generates a website aggregating all the
+  discovered non-compliance issues. One public instance of tfm-validate is now
+  automatically triggered on a daily basis. The corresponding website is
+  available at \url{https://texlive.info/tfm-validate/}.

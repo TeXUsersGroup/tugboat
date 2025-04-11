@@ -1,0 +1,5 @@
+This article presents the basic principles underlying the design
+and development of \texttt{dynMath}, a package that supports dynamic
+mathematical symbols. The focus is on the interaction between \LaTeX\ 
+and \PS\  via the \TeX\ \cs{special} primitive, and in particular
+the direct use of a dynamic \PS\  Type~3 font in the \LaTeX\  source.

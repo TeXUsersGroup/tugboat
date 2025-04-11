@@ -1,0 +1,14 @@
+This article presents the use of responsive design methods and advanced
+features of Lua\LaTeX\ for automatic document typesetting intended for
+various target outputs, both printed and electronic, such as mobile
+phones, tablets, or e-readers.
+
+Specifically, it focuses on the use of Lua\LaTeX\ for automated
+typesetting with the help of the \tbcode{Responsive}
+package~[7] for setting font size and line spacing
+according to page size, the \tbcode{Luavlna} package~[5] to
+prevent single-character prepositions at the ends of lines, the
+\tbcode{Lua-widow-control} package~[2] to minimize
+widows and orphans at the ends and beginnings of pages, and the
+\tbcode{Linebreaker} package~[4] to prevent line
+overflow.

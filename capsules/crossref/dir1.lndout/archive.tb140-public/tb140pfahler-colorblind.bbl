@@ -1,0 +1,95 @@
+\begin{thebibliography}{10}
+
+\bibitem{Birch1997}
+J.~Birch.
+\newblock Efficiency of the {{Ishihara}} test for identifying red-green colour
+  deficiency.
+\newblock \emph{Ophthalmic and Physiological Optics}, 17(5):403--408, Sept.
+  1997.
+
+\bibitem{ColorBrewer}
+C.~Brewer.
+\newblock Color{B}rewer, 2021.
+\newblock \newline \url{https://github.com/axismaps/colorbrewer}
+
+\bibitem{Brewer2003}
+C.A.~Brewer, G.W.~Hatchard, M.A.~Harrower.
+\newblock {{ColorBrewer}} in {{Print}}: {{A Catalog}} of {{Color Schemes}} for
+  {{Maps}}.
+\newblock \emph{Cartography and Geographic Information Science}, 30(1):5--32,
+  Jan. 2003.
+\newblock \newline \url{https://doi.org/10.1559/152304003100010929}
+
+\bibitem{DaltonLens}
+N.~Burrus.
+\newblock Dalton{L}ens, 2021.
+\newblock \newline \url{https://daltonlens.org/colorblindness-simulator}
+
+\bibitem{WCAG}
+A.~Campbell, C.~Adams, et~al.
+\newblock Web content accessibility guidelines ({WCAG}) 2.2, 2023.
+\newblock \url{https://www.w3.org/TR/WCAG22/}
+
+\bibitem{pgfplots}
+C.~Feuersänger.
+\newblock \emph{The pgfplots package}.
+\newblock Create normal/logarithmic plots in two and three dimensions.
+\newblock \url{https://pgfplots.sourceforge.net/}
+
+\bibitem{pgf}
+C.~Feuersänger, H.~Menke, et~al.
+\newblock \emph{The pgf package}.
+\newblock Create PostScript and PDF graphics in \TeX.
+\newblock \url{https://ctan.org/pkg/pgf}
+
+\bibitem{Ichihara2008}
+Y.G.~Ichihara, M.~Okabe, et~al.
+\newblock {\\Color universal design: the selection of four easily
+  distinguishable colors for all color vision types}.
+\newblock In \emph{Color Imaging XIII: Processing, Hardcopy, and Applications},
+  R.~Eschbach, G.G.~Marcu, S.~Tominaga, eds., vol. 6807, p.~68070O.
+  International Society for Optics and Photonics, SPIE, 2008.
+\newblock \url{https://doi.org/10.1117/12.765420}
+
+\bibitem{xcolor}
+U.~Kern, {\LaTeX{} Project Team}.
+\newblock \emph{The~xcolor package}.
+\newblock Driver-independent color extensions for {\LaTeX} and {pdf\LaTeX}.
+\newblock \url{https://github.com/latex3/xcolor}
+
+\bibitem{l3kernel}
+{\gobble{LaTeX}{\LaTeX\ Project Team}}.
+\newblock \emph{The l3kernel package}.
+\newblock {\LaTeX3} programming conventions.
+\newblock \url{https://ctan.org/pkg/l3kernel}
+
+\bibitem{colorblind}
+S.~Pfahler.
+\newblock \emph{The colorblind package}.
+\newblock Easy colorblind-safe typesetting.
+\newblock \newline \url{https://github.com/simon-pfahler/colorblind}
+
+\bibitem{Sharpe1999}
+L.T.~Sharpe, A.~Stockman, et~al.
+\newblock Opsin~genes, cone photopigments, color vision, and color blindness.
+\newblock \emph{Color vision: From genes to perception}, 351:3--52, 1999.
+\newblock \url{https://www.allpsych.uni-giessen.de/karl/colbook/sharpe.pdf}
+
+\bibitem{Simunovic2010}
+M.P.~Simunovic.
+\newblock Colour vision deficiency.
+\newblock \emph{Eye}~24(5):747--755, May 2010.
+\newblock \newline \url{https://doi.org/10.1038/eye.2009.251}
+
+\bibitem{Tol}
+P.~Tol.
+\newblock Paul {T}ol's {N}otes: Colour schemes and templates, 2021.
+\newblock \url{https://personal.sron.nl/~pault/}
+
+\bibitem{Coblis}
+M.~Wickline.
+\newblock Coblis{\Dash}color blindness simulator, 2001.
+\newblock
+  \url{https://www.color-blindness.com/coblis-color-blindness-simulator/}
+
+\end{thebibliography}

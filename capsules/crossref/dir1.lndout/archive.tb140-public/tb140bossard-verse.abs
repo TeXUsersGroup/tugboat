@@ -1,0 +1,3 @@
+	Large parts of the Latin literature are written in verse: Virgil's \AE neid and Ovid's Metamorphoses are two well-known examples. As can be noticed from a glance at most specialised textbooks, typesetting the scansion of Latin verses is not trivial. To this end, analysing the syllable quantity, or duration, is required\Dash this is prosody.
+	Conventionally, prosody is denoted with diacritical marks, typically above the vowel of a syllable.
+	Although {\LaTeX} provides such a feature, it is not always simple to adjust it to authors' needs. In this short note, several issues arising from the scansion of Latin verses in both {\LaTeX} and {Lua\LaTeX} are discussed and technical solutions are described.

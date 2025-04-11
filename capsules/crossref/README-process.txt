@@ -8,8 +8,9 @@ previous issue public, if not already done (see below):
  for d in dir{0,1,2}.*; do (cd $d && echo $d && mkdir archive.tb${nnn}-public \
                             && mv tb${nnn}* archive.tb${nnn}-public); done
 and then
-  svn add dir?.*/archive.tb${nnn}-public
-  svn commit
+  svn -q add dir?.*/archive.tb${nnn}-public
+  svn status # make sure as expected
+  svn commit -m"archiving tb$nnn-public"
 
 Then, we'll work in the capsules/ directory:
   cd ..
