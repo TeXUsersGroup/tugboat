@@ -1,3 +1,8 @@
+2025-04-12  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr-ctx (\italic): use \emph rather than \textit
+	to get italic corrections, and in case of nested italics.
+
 2025-04-07  Karl Berry  <karl@freefriends.org>
 
 	* acrocheck-tub: ignore \hologo.

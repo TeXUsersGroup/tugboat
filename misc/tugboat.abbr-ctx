@@ -447,7 +447,7 @@
 \def\italic{\futurelet\next\finishitalic}
 \def\finishitalic{%
   \ifx\next\bgroup
-    \let\next\textit
+    \let\next\emph
   \else
     \let\next\it
   \fi
