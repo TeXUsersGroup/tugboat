@@ -162,7 +162,8 @@ for page in `seq --format="%03.0f" 1 $filecount`; do # for every page in doc
     #echo "colorvals for $page: $colorvals"
     page_has_color=false
     for field in 1 2 3; do
-      color=`echo $colorvals | awk '{print $1+0}'` # +0 to remove 0 decimals
+      # The +0 removes .00000, so we have just "0" for zero values.
+      color=`echo $colorvals | awk -v f=$field '{print $f+0}'`
       #echo "  field 1: $color"
       if test "$color" != 0; then
         page_has_color=true
