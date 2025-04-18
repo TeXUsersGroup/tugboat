@@ -1,3 +1,9 @@
+2025-04-18  Karl Berry  <karl@freefriends.org>
+
+        * tb141capsule.txt: new file for 46:1.
+	* Makefile (testiss,lastiss,crossref_iss): 142.
+	* lists-translations (\'{c}): accept with braces too.
+
 2025-04-09  Karl Berry  <karl@freefriends.org>
 
 	* tb140capsule.txt (starynovotny): need \CONNECT{}.
