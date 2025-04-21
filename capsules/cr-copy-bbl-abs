@@ -63,11 +63,12 @@ if test $abs_count -eq 0; then
   exit 1
 fi
 #
-crb_count=`ls -1 $issdir/*/crossbib.xml 2>/dev/null | wc -l`
-if test $crb_count -eq 0; then
-  echo "$0: no crossbib.xml files found under: $issdir" >&2
-  exit 1
-fi
+# structured crossref not ready.
+#crb_count=`ls -1 $issdir/*/crossbib.xml 2>/dev/null | wc -l`
+#if test $crb_count -eq 0; then
+#  echo "$0: no crossbib.xml files found under: $issdir" >&2
+#  exit 1
+#fi
 
 # We intentionally do not erase existing files or move them aside;
 # another level (namely the cr-do-issue script) does that.
@@ -91,13 +92,14 @@ for a in $issdir/*/abs.tex; do
   cp -pf "$a" "$dest" || exit 1
 done  
 
-# Similarly for the structured crossref bib files.
+# Similarly for the structured crossref bib files. (not ready)
 # 
-for a in $issdir/*/crossbib.xml; do
-  ident=`basename \`dirname "$a"\``
-  dest=$outdir/tb${seqno}${ident}.crbib
-  cp -pf "$a" "$dest" || exit 1
-done  
+#for a in $issdir/*/crossbib.xml; do
+#  ident=`basename \`dirname "$a"\``
+#  dest=$outdir/tb${seqno}${ident}.crbib
+#  cp -pf "$a" "$dest" || exit 1
+#done  
 
-echo "$0: $bbl_count bbl(s), $abs_count abs(s), $crb_count crossbib(s) copied: $outdir"
+#echo "$0: $bbl_count bbl(s), $abs_count abs(s), $crb_count crossbib(s) copied: $outdir"
+echo "$0: $bbl_count bbl(s), $abs_count abs(s) copied: $outdir"
 exit 0

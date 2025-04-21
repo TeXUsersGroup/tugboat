@@ -1,3 +1,12 @@
+2025-04-21  Karl Berry  <karl@freefriends.org>
+
+	* tb142capsule.txt (beet): %person.
+	(daems): external link to audio.
+	* crossref/ltx2crossrefxml-tugboat.cfg (\CSV, \DVI, \JSON): tb142.
+	* crossref/README-process.txt: test landing files earlier.
+	* cr-do-issue,
+	* cr-copy-bbl-abs: disable structured crossref attempt with beastie.
+
 2025-04-18  Karl Berry  <karl@freefriends.org>
 
         * tb141capsule.txt: new file for 46:1.

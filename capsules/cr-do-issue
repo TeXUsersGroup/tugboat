@@ -119,8 +119,8 @@ cnt_xmlprocess_preserved=0
 cnt_xmlprocess_copied=0
 #
 for lf in "$lnd_outdir"/tb*.abs \
-          "$lnd_outdir"/tb*.bbl \
-          "$lnd_outdir"/tb*.crbib; do
+          "$lnd_outdir"/tb*.bbl; do
+#          "$lnd_outdir"/tb*.crbib; do # structured crossref not ready
   pf=`echo "$lf" | sed "s,$lnd_outdir,$cr_processdir,"`
   base=`basename "$pf"`
   if test -e "$pf"; then

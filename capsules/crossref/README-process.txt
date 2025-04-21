@@ -36,7 +36,7 @@ directory (~tubprod/VV-N), one or both of these files, as needed:
     key (the key ends up in issue.xml) and \end{thebibliography},
     because that's what our parsing looks for.
     (For wermuth articles, see replacements in ltx2crossrefxml-tugboat.cfg.)
-     \sl\TUB ->\sl \TUb  [since \TUB -> TUGboat replacement happens first]
+     \sl\TUB ->\sl \TUB  [since \TUB -> TUGboat replacement happens first]
      etc.
     ()
 
@@ -166,19 +166,8 @@ minutes. Can also check results online:
 When the result mail comes in, see <batch_data> summary element at end,
 should be all success. Browse through the rest. Fix as needed. Commit.
 
- After the test upload succeeds, nothing left to do until a few days
-before it's time to make the issue VV:N live.
-
-At that point, first remake the landing files so the doi links go
-through doi.org (i.e., not running "make crw"):
-  # still in svn/capsules/ directory
-  make cro-scratch  # without crw
-Double-check crossref/dir2.process/issue.xml as above.
-
-Remake everything else too, just to be sure all is well:
-  make all
-
-And then copy the final landing files to the live web directory
+ After the test upload succeeds, good to copy the test landing files
+to the live web directory for tub-prod to check:
 (assuming we've been doing all this on a development machine):
   host=tug.org
   dir=/home/httpd/html/TUGboat/tb$VV-N; echo $dir
@@ -189,24 +178,35 @@ And then copy the final landing files to the live web directory
 Then check results at:
   https://tug.org/TUGboat/tbVV-N/tbnnnwhatever.html
 E.g.:
-  https://tug.org/TUGboat/tb45-2/tb140bursary.html
-The "next doi" links will not work until the dois are registered; see next.
+  https://tug.org/TUGboat/tb46-1/tb142treas.html
+And email tub-prod.
 
-When close enough to making the pdfs public, do the production
-crossref upload. It costs money to register dois, so you have to edit
-crossref/Makefile to enable it:
+A few days before making the issue live, first remake the landing files
+so the doi links go through doi.org (i.e., not running "make crw"):
+  # still in svn/capsules/ directory
+  make cro-scratch  # without crw
+Double-check crossref/dir2.process/issue.xml as above.
+At this point the "next doi" links will not work until the dois are
+registered.
+
+Remake everything else too, just to be sure all is well:
+  make all
+
+Do the production crossref upload, ideally a couple of days before
+wanting to make the issue public. It costs money to register dois, so
+you have to edit crossref/Makefile to enable it:
   # temporarily delete "checkme!" from crossref/Makefile
   make upload-real  # in crossref subdirectory
   # undo Makefile edit
 Can check the production site for progress:
   https://doi.crossref.org -> Show System Queue
 
-It is good to register the dois some days before making the pdfs public,
-so that the "doi" links on the landing pages will work for testing, and
-the doi links on the contents pages will work after publishing. The
-registrations may take some time to be processed, hours or even days.
-From real registrations, email will be from admin@crossref.org;
-from test registrations, awsbounce@crossref.org.
+It is good to register the dois early, both so that the "doi" links on
+the landing pages will work for testing, and the doi links on the
+contents pages will work after publishing. The registrations may take
+some time to be processed, hours or even days. From real registrations,
+email will be from admin@crossref.org; from test registrations,
+awsbounce@crossref.org.
 
 Registering DOIs will also cause crossref to send mail to authors.
 
