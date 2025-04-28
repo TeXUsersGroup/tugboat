@@ -272,7 +272,7 @@ rm -i crossref/dir*/tb${prevnnn}*.*  # should be nothing there
 
 - assuming no hand edits were done and all files are still available,
   can run the usual:
-make  cro-scratch
+make cro-scratch
 
 - check diffs (no more "available to TUG members"):
 make previss=$previss diff-land
@@ -325,3 +325,39 @@ if ok, make upload-real
 There is no charge for updating metadata, so do this as needed.
 No crossref update is needed when taking an issue public; it's only our
 landing files that change.
+
+ Processing older issues that have not yet been uploaded to Crossref:
+
+First, look near the end of the captub script for the line
+  $OPT{"crossref-first-issue"} = <integer>;
+and decrement <integer>. We always want to work from the last-done issue
+backwards. Without this change, no .rpi files will be created.
+
+Then, in general this is a mix of submitting a new issue (described in
+~tubprod/README) and making an issue public (described above). In short:
+- create per-article abs/bbl.tex files.
+- make cro-scratch
+- repeat until all articles are done.
+
+Check contents files:
+make all
+make diff-id  # check ids, sorting, etc.
+make all-diff # all as expected.
+make install-test # after committing, if working on dev machine
+  then check https://tug.org/TUGboat/toctest/listauthor.html et al.
+
+Crossref and landing files:
+- review dir2.process/issue.xml as above, then make upload-test.
+- copy new landing files to server:
+host=tug.org
+oldnnn=128
+oldiss=41-2
+scp -p crossref/dir1.lndout/*.html $host:/home/httpd/html/TUGboat/tb$oldiss/
+
+--- qqq stopped here until new issue is done qqq ---
+
+To register new DOIs (costs money):
+Edit crossref/Makefile and make upload-real and undo edit.
+
+svn commit the changed source files,
+and then the crossref/dir*/* files, as above.

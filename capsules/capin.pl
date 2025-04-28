@@ -332,6 +332,8 @@ sub post_directive {
   }
   my ($directive,$value) = $str =~ m/^%($dregex)\|(.*)$/;
   if (! $directive || ! $value) {
+    $directive = "" if undef $directive;
+    $value = "" if undef $value;
     die ("could not parse DIRECTIVE|VALUE from '$str' (type $type), "
          . " got: ($directive,$value)");
   }

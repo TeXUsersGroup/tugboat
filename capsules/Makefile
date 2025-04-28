@@ -29,7 +29,7 @@ default check: one #all-diff
 # publishing a TUGboat issue; see the README-tug-procedures file on tug.org.
 testiss = 142
 lastiss = 142
-crossref_iss = 142
+crossref_iss = 128
 
 # use different temp dir on different machines.
 mydir := $(shell ls ~karl/public_html 2>/dev/null)
@@ -110,7 +110,7 @@ all:
 	perl -cw captub && date
 	for iss in `seq -f %02.0f $(lastiss) -1 1`; do \
 	    cap="$$cap tb$${iss}capsule.txt"; done; \
-	  $(time) $(captub) $$cap | tee /tmp/x.html
+	  $(time) $(captub) $$cap | tee /tmp/allcap.html || { exit $?; }
 	! grep -o 'tubidxgroup.*\<and\>' listauthor.html
 # if gets messed up, check title_sort generation in capaccum.pl:
 	! grep -o 'id="[^">]*[^a-z0-9_,][^">]*"' listtitle.html

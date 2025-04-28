@@ -21,9 +21,11 @@ sub xlate_tex2html {
   my ($str) = @_;
   for (my $i = 0; $i < @$tex_exprs; $i++) {
     my $tex = $tex_exprs->[$i];
+    next if ! defined $tex; # TeX element is empty when playing with sorting
     my $html = $html_strs->[$i];
     if ($str =~ s/$tex/$html/g) {     # need /g for, e.g., "\ " -> " ".
       $xlate_count{"$tex|h|$html"}++;  # track translation usage
+      #warn "replaced $tex with $html\n" if $str =~ /souza/i;
     }
   }
   return $str;
@@ -34,9 +36,11 @@ sub xlate_html2txt {
   for (my $i = 0; $i < @$html_strs; $i++) {
     my $txt = $txt_strs->[$i];        # $txt might be empty, that's ok
     next if ! defined $txt;
+    #warn "considering txt $txt for str $str\n" if $txt =~ /souza/i;
     my $html = $html_strs->[$i];
+    #warn " got html $html\n" if $txt =~ /souza/i;
     if ($str =~ s/$html/$txt/g) {     # need /g for, e.g., "\ " -> " "
-      #warn "did s/$html/$txt/ in $str\n";
+      #warn "did s/$html/$txt/ in $str\n" if $txt =~ /souza/i;
       $xlate_count{"$html|t|$txt"}++;  # track translation usage
     }
   }
@@ -47,15 +51,15 @@ sub xlate_html2txt {
 # Output translation entry usage.
 # 
 sub xlate_dump_count {
-  # start with unused entries. The tex regexps are mangled by compilation,
-  # but still recognizable enough.
+  # start with unused TeX entries. The tex regexps are mangled by
+  # compilation, but still recognizable enough.
   for (my $i = 0; $i < @$tex_exprs; $i++) {
-    my $tex = $tex_exprs->[$i];
+    my $tex = $tex_exprs->[$i] || ""; # avoid undef warning
     my $html = $html_strs->[$i];
     my $hkey = "$tex|h|$html";
     warn "0 $hkey [unused]"
       if ! exists $xlate_count{$hkey}
-         && $html !~ /&#x1ebf/; # we need the txt for \Thanh, tex never used.
+         && $tex; # don't complain when entry is just for sorting
     
     # We have lots of unused html->text translations, so skip showing them.
     #my $txt = $txt_strs->[$i];
@@ -65,7 +69,7 @@ sub xlate_dump_count {
     #}
   }
   # 
-  # and then the rest, if requested. maybe make an option.
+  # list the rest, if requested. could make an option.
   # We could speed things up by merging more translations entries,
   # especially those only used once, but not always simple.
   # We never process these with TeX, but still, somehow seems wrong
@@ -129,7 +133,8 @@ sub read_translations {
         if defined $rest;
       #warn "$tex_arg--$html_arg--$txt_arg\n";
       # we're going to end up doing a s// on these values, so precompile them.
-      push (@tex_exprs, qr/\Q$tex_arg/);
+      # but don't precompile if empty.
+      push (@tex_exprs, $tex_arg ? qr/\Q$tex_arg/ : undef);
       push (@html_strs, $html_arg);
       push (@txt_strs,  $txt_arg); # keep arrays in sync even if undef
      

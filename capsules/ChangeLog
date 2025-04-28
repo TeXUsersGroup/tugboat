@@ -1,3 +1,26 @@
+2025-04-27  Karl Berry  <karl@freefriends.org>
+
+	* capcrossref.pl (crossref_write_files): the special special case
+	is now Rishi, not van Eijk.
+	* capdata-xlate.pl (xlate_tex2html, xlate_dump_count,
+	read_translations): allow TeX element to be empty.
+	Add more (commented-out) debugging lines.
+	* lists-translations.txt (Eijk, Dijk, Souza, Rishi, 1ebf):
+	sorting changes only, without TeX-to-HTML translations.
+	
+	* capin.pl (post_directive): avoid useless undef warnings.
+	
+	* Makefile (one): exit nonzero if captub does, despite tee.
+	(crossref_iss): 128.
+	* captub (crossref-first-issue): now 128.
+	* crossref/ltx2crossrefxml-tugboat.cfg (\HTTP, \ISO, etc.): tb128.
+	
+	* lists-authinfo.txt (CV Radhakrishnan): unified to name without
+	periods, so that's how we have to list it here to get orcid.
+	* lists-unifications.txt (CV Radhakrishnan, CV Rajagopal,
+	KV Rajeesh, Rishi T): unify more name variations.
+	* tb141capsule.txt (van Eijk): does not need \CONNECT.
+
 2025-04-21  Karl Berry  <karl@freefriends.org>
 
 	* tb142capsule.txt (beet): %person.

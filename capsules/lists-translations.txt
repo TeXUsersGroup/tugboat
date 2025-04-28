@@ -46,10 +46,17 @@ $\{$Hamilton\CONNECT{}Kelly$\}$||&#x7b;Hamilton&#xa0;Kelly&#x7d;||HamiltonKelly
 \NMOlsak||Ol\v{s}\'ak
 
 \Thanh||H&#xe0;n Th&#x1ebf; Th&#xe0;nh||Han The Thanh
-
 \LaTeX\ Project Team||LaTeX&#xa0;Project&#xa0;Team||LaTeX Project Team
-
 R\r{u}\v{z}i\v{c}ka||R&#x016f;&#x017e;i&#x010d;ka||Ruzicka
+
+# sorting overrides. The HTML here is post-unification, and as changed
+# for sorting, i.e., with the comma inserted for Last, First.
+# For the final sort string, we insert a period so that (e.g.) Eijk
+# comes before Eijkhout, since spaces are ignored.
+||van&#xa0;Eijk, Oscar||Eijk.Oscar.van
+||van&#xa0;Dijk, Vic||Dijk.Vic.van
+||de&#xa0;Souza, Paulo Ney||Souza.Paulo.Ney.de
+||T, Rishi||Rishi.T
 
 # this first is for \TeX{}\kern...works
 \TeX{}\kern-.07em ||TeX
@@ -57,7 +64,7 @@ R\r{u}\v{z}i\v{c}ka||R&#x016f;&#x017e;i&#x010d;ka||Ruzicka
 \TUB{}\CONNECT{}Team||<i>TUGboat</i>&#xa0;Editors||TUGboat Editors
 
 # Accents, etc.
-# Although \"o is usually oe, with Gy\"ongyi and others, oe is not
+# \"o is usually oe, but not always: for Gy\"ongyi and others, oe is not
 # right. So leave it as just o until we want to handle this.
 \"a||&#xe4;||a
 \"O||&#xd6;||O
@@ -117,7 +124,8 @@ R\r{u}\v{z}i\v{c}ka||R&#x016f;&#x017e;i&#x010d;ka||Ruzicka
 \l{}||&#x142;||l
 {\l}||&#x142;||l
 #
-\textcircumacute{e}||&#x1ebf;||e
+# TeX part of \textcircumacute{e} never used, so omit.
+||&#x1ebf;||e
 
 # titles
 

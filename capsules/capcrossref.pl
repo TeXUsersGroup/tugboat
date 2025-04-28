@@ -53,8 +53,6 @@ sub crossref_write_files {
       # 
       # ltx2crossrefxml will put the von part in with the surname,
       # which I guess is what's desired for crossref, so fine.
-      # But a special case: Oscar van Eijk in tb141 (45:3) requested
-      # sorting by "Eijk"; so we insert 0xa0 after Oscar.
       # 
       # Sometimes there will be no First part, e.g.,
       # TUG&nbsp;Elections&nbsp;Committee (or 0xa0 instead of nbsp).
@@ -106,10 +104,14 @@ sub crossref_write_files {
         $name_for_rpi = $first ? "$first $last" : $last;
       }
       $name_for_rpi =~ s/&(#xa0|nbsp);/ /g; # just spaces
-      # But Oscar van Eijk requested sorting as Eijk; so re-insert 0xa0
-      # after "Oscar".
-      $name_for_rpi =~ s/Oscar /Oscar\&#xa0;/
-        if $name_for_rpi eq "Oscar van Eijk";
+      # Rishi T requested sorting as Rishi, so we want
+      # last=Rishi and first=T, even though Rishi is printed first.
+      # We will probably need to generalize this into a new value in
+      # lists-authinfo.txt, but so far, other Indian etc. names are
+      # handled by unifying them to have the sorted name last (like
+      # Western names): CV Radhakrishnan, etc.
+      $name_for_rpi =~ s/Rishi T/T Rishi/
+        if $name_for_rpi eq "Rishi T";
       #warn "name4rpi=$name_for_rpi (last=$last, first=", $first || "", ")\n";
       push (@rpi_authors, $name_for_rpi);
     }
