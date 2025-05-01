@@ -1,10 +1,10 @@
 %% $Id$
 %% @texfile{
 %%     filename   = "tubguide.tex",
-%%     version    = "1.31",
-%%     date       = "2024-10-26",
+%%     version    = "1.32",
+%%     date       = "2025-05-01",
 %%     filetype   = "TUGboat Authors' Guide",
-%%     copyright  = "Copyright 1989, 1992, 2006, 2012-2024 TeX Users Group.
+%%     copyright  = "Copyright 1989, 1992, 2006, 2012-2025 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -25,10 +25,9 @@
 % tugboat.sty used to default to this, and no point in changing lots of
 % text to fix overfull boxes.
 \StretchyTenPointSpacing
-\StretchyNinePointSpacing
-\StretchyEightPointSpacing
+%not needed \StretchyNinePointSpacing
+%not needed \StretchyEightPointSpacing
 
-\enablemetacode
 \everyverbatim{\enablemetacode}
 \def\halfline{\vskip 0.5\baselineskip \ignoreendline}
 
@@ -40,7 +39,7 @@
 
 \title *\TUB\/ authors' guide*
 
-\author  * Barbara Beeton *
+\author  * Barbara Beeton, Karl Berry *
 \address * \TeX\ Users Group *
 \netaddress * TUGboat@tug.org *
 
@@ -49,8 +48,8 @@
 %\netaddress * TUGboat@Math.AMS.com *
 
 
-\vfootnote{}{Revised March 1992, May 2006, May 2012, September 2016; the
-original appeared in
+\vfootnote{}{Revised March 1992, May 2006, May 2012, September 2016, and
+subsequently; the original appeared in
 \tubissue 10(3), November 1989.}
 
 \article
@@ -86,7 +85,7 @@ The macros are contained in two files, |tugboat.sty| and
 distributed, but no longer used. 2) |tugboat.cmn| used to be named {\tt
 tugboat.com}, but that notation was in conflict with conventions of
 \acro{MS-DOS} and other operating systems; no conflicts are known to
-exist for the new name.}
+exist for |.cmn|.}
 
 \subhead * General description of tags * We attempt wherever possible to
 tag the various elements of \TUB\/ articles in a ``generic'' way,
@@ -101,10 +100,10 @@ document structure.  Below these are formatting macros that we recognize
 may be essential for certain applications.  Both sorts of tags are
 described in the following article.
 
-Generally, to ``mark up'' the data <foo>, a tag |\xxx| will precede
-<foo> and |\endxxx| will follow (thus: |\xxx <foo>\endxxx|).  We use
-the |{...}| form to delimit arguments of lower-level formatting
-macros.  Optional commands follow tags and are enclosed in
+Generally, to ``mark up'' some input |<foo>|, a tag |\xxx| will precede
+|<foo>| and |\endxxx| will follow, as in: |\xxx <foo>\endxxx|.
+
+Optional commands follow tags and are enclosed in
 |[\lastoption][...]|, \`a la \LaTeX.  Several options may be enclosed
 within one set of square brackets, or each
 option may be enclosed in its own set of brackets.  These ``options''
@@ -141,11 +140,11 @@ those authors who venture beyond the documented regions of the
 macros should do so with their eyes open.
 \endtext
 
-For convenience, we also allow the |*| as a delimiter for the
+For convenience, we also allow |*| as a delimiter for the
 higher-level tags; thus we could use either
-||\title \TUB\/ Authors' Guide \endtitle||
+||\title \TUB\/ authors' guide \endtitle||
 or
-||\title * \TUB\/ Authors' Guide *||
+||\title * \TUB\/ authors' guide *||
 to indicate the title of this paper.  To typeset a \ast{} within text
 delimited by |*|, the \plain\ control sequence |\ast| has been extended
 to give
@@ -212,7 +211,7 @@ of
 to get the desired result.  For example, for an article with%
 \footnote{$^2$}{\xEdNote The \TUB{} email address shown in examples
 was current when this article first appeared, but is now obsolete;
-it has been left intact to avoid other problems.  The correct address
+it has been left intact for posterity.  The correct address
 is now {\tt TUGboat@tug.org}.}
 \verbatim[\outputtofile{ray.vbm}]
 \author * Ray Goucher *
@@ -288,17 +287,14 @@ which {\it appear\/} innocuous, may not be so.
 
 
 \subhead * Lists *
-Lists are everywhere, and a simple list hierarchy can
-transform a one-dimensional typesetting problem into something
-nasty.  All of which is to say, we are certainly not done with
-this area of tagging, but here are the available macros.
-
-Not surprisingly, |\list| marks the beginning of a list.  A list
+Perhaps not surprisingly, |\list| marks the beginning of a list.  A list
 can be itemized, wherein each item is tagged with |\item|, or
 unitemized wherein items are delimited by |^^M| (the end of your
 input line).  The itemized
 style is the default and |[\lastoption][\unitemized]| will get
-the other.  Tags for the items default to the |\bullet|
+the other.
+
+Tags for the items default to the |\bullet|
 ($=\bullet$), but can be changed by feeding an argument to
 |\tag{...}|.  The |[\lastoption][\tag{...}]| option
 used with |\list| assigns the tag for each item of the entire
@@ -343,8 +339,8 @@ Implementation of sublists is under construction.
 
 There are several variations on this theme.  In each case, text is
 printed in a typewriter font and (almost) all input characters
-produce the glyph in the font position of their character-code (i.e.\
-you get what you type, no escaping it).  In addition to the long form
+produce the glyph in the font position of their character-code (i.e.,
+you get what you type, no escaping by default).  In addition to the long form
 ||\verbatim...\endverbatim|| the \verbinline|\endverbatim\ character
 can be used to enter and leave verbatim mode, acting as a toggle much
 as the |$| does with math.  \verbinline|...|\endverbatim\space
@@ -360,44 +356,45 @@ for longer items the
 ...
 \endverbatim
 ||
-form (although \verbinline||...||\endverbatim is a good way to
-display a single line of code).
+form. The construct \verbinline||...||\endverbatim can be a good way to
+display a single line of code.
 
 The display verbatim output is in nine-point typewriter by default, as
 shown in this document.  We've found the extra characters of width
-gained as a result are very useful.  If |\smallverbdisplay| is defined
+gained as a result are useful.  If |\smallverbdisplay| is defined
 to be a no-op, it will be in the usual ten-point.  (This change was
 introduced in 2012.)
+
+\subsubhead * Reading files verbatim. *
 
 As well as formatting verbatim text between |\verbatim| and
 |\endverbatim|, |\verbatim| can read and write data from and to
 files.  We find this variant useful in ({\it almost\/}) guaranteeing
 consonance between macros in use and their published listings.
 ||[\makeescape\!]
-\verbatim[\inputfromfile{foo.inp}]
+\verbatim[\inputfromfile{foo.tex}]
 ...
 \endverbatim
 ||
-will incorporate the contents of file |foo.inp| in the listing before
+will incorporate the contents of file |foo.tex| in the listing before
 the text between |\verbatim| and |\endverbatim|.  The shortened form
-||\verbfile{foo.inp}\endverbatim|| accomplishes the above in the case
-that the text is empty.  While the code around the data, |foo.inp|,
+||\verbfile{foo.tex}\endverbatim|| accomplishes the above in the case
+that the text is empty.  While the code around the data, |foo.tex|,
 above looks excessively long, do remember the implementation
 uses the basic |\verbatim| macro, so options can also be read after
 the filename.  For example,
 ||
-\verbfile{foo.inp}[\numbered]
+\verbfile{foo.tex}[\numbered]
 \endverbatim
 ||
 would number the lines of the listing.
 
-We often rearrange code supplied to us so
-that it fits in the narrow measure of \TUB's two-column format, and
-we sometimes make corrections to macro sets (you thought you were
-perfect!).  Since errors can (and do\Dash we aren't perfect either)
-creep in with these modifications, we use the above technique to
-maintain consistency between the listing published in \TUB\/ and the
-underlying macros used for examples.
+We often rearrange code supplied to us so that it fits in the narrow
+measure of \TUB's two-column format, and we sometimes make corrections
+to macro sets. Since errors can (and do\Dash we aren't perfect) creep in
+with these modifications, we try to use the above technique to maintain
+consistency between the listing published in \TUB\/ and the underlying
+macros used for examples.
 
 To write out information, use
 ||[\makeescape\!]
@@ -440,7 +437,9 @@ We would encourage our authors to use these mechanisms for connecting
 verbatim text to external files for the sake of maintaining
 consistency between active code and its documentation.
 
-\leavevmode|\verbatim| scans to |\endverbatim| (a 12-token sequence
+\subsubhead * Verbatim options. *
+
+\leavevmode|\verbatim| scans forward to |\endverbatim| (a 12-token sequence
 since the |\| is of type `other' after |\verbatim| gets going).  Only
 this sequence of characters will interrupt the scan.  On the other
 hand, \verbinline|\endverbatim and \verbinline||\endverbatim scan to
@@ -477,15 +476,20 @@ also want to use |\makebgroup| and |\makeegroup| in the options to define
 characters to localize this call; see p.~7).  Situations
 will dictate preferences for what character may be used as an escape
 (we use the \verbinline|\endverbatim, |!|, and |/| in this article).
+
 There is also a means of changing the setup of every occurrence of
-verbatim mode.  The contents of token register |\everyverbatim|
-is scanned after the defaults of verbatim mode
-have been set.  In this article, for example, we have made
-|[\makeother\<]<| active and defined it in such a way that
-|[\makeother\<]<...>| typesets as metacode.  Since |\verbatim|
-ordinarily changes |[\makeother\<]<| to type `other' on startup, we key
-||\everyverbatim{\enablemetacode}|| at the beginning of the file
-to have the proper adjustment made whenever verbatim is started.
+verbatim mode. The contents of token register |\everyverbatim| is
+scanned after the defaults of verbatim mode have been set. For example,
+the present article uses
+||\everyverbatim{\enablemetacode}||
+so that the
+input |[\disablemetacode]<foo>| inside verbatim will output like
+|\meta{foo}| (\meta{foo}), i.e., with math angle brackets and text in
+italics, by
+making |[\disablemetacode]<| active. To then typeset an actual
+verbatim |[\disablemetacode]<|, as in the sentence here, it's necessary to
+disable the catcode change:
+\verbinline|\endverbatim|[\disablemetacode\lastoption][\disablemetacode]<|\verbinline|\endverbatim.
 
 When ``escaping'' within a verbatim block, one should be aware that
 spaces and carriages returns are {\it active\/} and hence not gobbled
@@ -529,7 +533,7 @@ below the verbatim section.  Page and column breaks {\it are\/}
 permitted within these listings.  To prohibit breaks at specific
 points or globally, one must insert penalties or redefine |^^M| to
 insert |\nobreak| in the vertical list at the end of each
-``paragraph'' (i.e.\ line).  We should also note that the bottom of
+``paragraph'' (i.e., line).  We should also note that the bottom of
 such a verbatim listing is implemented so that ensuing
 text may or may not start a new paragraph depending on whether an
 intervening blank line (or |\par|) is or is not present.
@@ -608,13 +612,14 @@ things.
 
 
 A primitive |\caption{...}| option is available to |\ulap|
-(i.e.\ lap upward) its argument into the figure space, but
+(i.e., lap upward) its argument into the figure space, but
 formatting of the caption is left to the user.  For example,
 the code:
 \verbatim[\outputtofile{code.vbm}]
 \figure[\top]
-  [\caption{\centerline{Odd Fig.~1}}]
-\vbox to 5pc{}
+  [\caption{\centerline{%
+              Oddly empty Fig.~1.}}]
+\vbox to 4pc{}
 \endfigure
 \endverbatim
 produces the figure at the top of this column or the next.
@@ -626,7 +631,7 @@ supported only on the first page of an article, but we expect they
 will soon be allowed on any page (a general rewrite of the output
 routine is in progress).  |\twocolfigure| (terminated by |\endfigure|)
 starts up such a figure and currently {\it must\/} occur before any
-material has been typeset on the first page (i.e.\ {\it before\/}
+material has been typeset on the first page (i.e., {\it before\/}
 |\article|).
 
 
@@ -664,44 +669,66 @@ listed under tags.
    \tag{...}
 \everylist
 \verbatim
+   ||...||
    \numbered
    \ruled
    \inputfromfile{...}
    \outputtofile{...}
 \verbinline
+  |...|
 \verbfile
+\enablemetacode
+  \disablemetacode
+\tbsurl
+  \tbhurl
+  \tbmailto
+  \tbhref
 \figure
    \mid
    \bot
    \caption{...}
 \twocolfigure
 ||
-and \verbinline|\endverbatim and \verbinline||\endverbatim input syntax.
 
 
 \head * Common abbreviations and utilities *
 
-Definitions of a number of commonly used abbreviations such as |\MF|
+Definitions of many commonly used abbreviations such as |\MF|
 and |\BibTeX| are contained in |tugboat.cmn|.  Please use these whenever
 possible rather than creating your own.  We will add to the list as
 necessary.
 
-A nicety for the sake of appearance is the command |\acro|, which
-sets an acronym in caps one size smaller than the surrounding text.
-Compare CTAN (full size), \CTAN{} (|\acro{CTAN}|) and {\smc ctan}
-(small caps).  Acronyms in |tugboat.cmn| use |\acro| consistently,
-except in (some) bibliographies.
-
 Several other constructions that we have found useful for both
 \plain- and \LaTeX-style input have been incorporated in
-|tugboat.cmn|.  Various |\*lap|\,s (|\ulap|, |\dlap|, |\xlap|,
+|tugboat.cmn|.
+
+\list
+\item |\acro| sets an all-caps argument in caps one size smaller than
+the surrounding text. Compare CTAN (full size), \CTAN{} (|\acro{CTAN}|)
+and {\smc ctan} (small caps). The argument must always be all caps,
+perhaps with hyphens and slashes, but never a lowercase letter. We use
+|\acro| consistently in \TUB, both in our macros and when editing
+articles, with the exception of bibliographies.
+
+\item |\cs{foo}| typesets |\foo|, just like \verbinline|\foo|\endverbatim.
+Since |\cs| is the usual \TUB\ \LaTeX\ convention, we support it here too.
+
+\item |\Dash| is an em-dash with surrounding thin\-spaces, our preferred style.
+
+\item |\meta{foo}| typesets \meta{foo} in italics and inside angle
+brackets. If your article uses meta-variables pervasively, you can use
+the command \cs{enablemetacode} to allow the input
+|[\disablemetacode]<foo>| to do the
+same thing; this makes the |[\disablemetacode]<| character globally active.
+\cs{disablemetacode} undoes this.
+
+\item |\slash| is a / allowing a line break after.
+
+\item Various |\*lap|\,s (|\ulap|, |\dlap|, |\xlap|,
 |\ylap|, |\zlap|) and |\*smash|\,es provide means of setting type
 which ``laps'' into neighboring regions.
-|\Dash| is an em-dash with surrounding thinspaces, our preferred style.
-|\slash| is a breakable slash.
-|\cs{foo}| typesets |\foo|, just like \verbinline|\foo|\endverbatim (but
-since |\cs| is the usual \TUB\ \LaTeX\ convention, we support it here too).
-The macro
+
+\item The macro
 \verbatim
 \makestrut [<ascender dimen>;
             <descender dimen>]
@@ -709,7 +736,7 @@ The macro
 allows {\it ad hoc\/} construction of
 struts.
 
-|\makeatletter| |\catcode|s the |@| for internal control-sequences.
+\item |\makeatletter| |\catcode|s the |@| for internal control-sequences.
 There are also more general functions
 \verbatim
 \makeescape
@@ -722,7 +749,11 @@ There are also more general functions
 that change the category of a given character into the type mentioned
 at the end of the macro name.  For example, |\makeactive\!| changes the
 category of the |!| to 13.  We have given many other examples of these in
-this article.  Readers may look at the end of |tugboat.cmn| after the
+this article.
+
+\endlist
+
+Readers may look at the end of |tugboat.cmn| after the
 |\endinput| statement to see further documentation on the contents of the file.
 
 

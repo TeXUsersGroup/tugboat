@@ -1,3 +1,12 @@
+2025-05-01  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.sty (\disablemetacode): define.
+	* tubguide.tex (Verbatim modes): add subheads, explain
+	\enablemetacode, etc.
+	(Summary): add url commands, \enablemetacode, etc.
+	Other small changes throughout. Inspired by patch from Luis Rivera:
+	https://github.com/TeXUsersGroup/tugboat/pull/1
+
 2024-10-26  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.sty,
