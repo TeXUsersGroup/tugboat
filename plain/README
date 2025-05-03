@@ -1,7 +1,7 @@
 $Id$
 (This README file is public domain.)
 
-The plain style files for TUGboat, the journal of the TeX Users Group.
+The plain TeX style files for TUGboat, the journal of the TeX Users Group.
 See https://tug.org/TUGboat for all issues, contact information,
   notes for authors, and all else.
 
@@ -9,3 +9,7 @@ tugboat.sty is for both regular and proceedings issue.  Just \input it.
 tugproc.sty was for proceedings issue, but is no longer used.
 tugboat.cmn had definitions common for both (could/should also be common
   to the LaTeX TUGboat style, but isn't).
+
+microtype-plain-tub.tex is a minimal implementation for microtype (font
+expansion and protrusion) on the plain TeX \tenrm font, etc. It should
+not be installed by default, since it's so limited. See comments in the file.

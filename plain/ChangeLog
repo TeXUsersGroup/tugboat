@@ -1,3 +1,9 @@
+2025-05-03  Karl Berry  <karl@freefriends.org>
+
+	* microtype-plain-tub.tex: new file for the repo.
+	* Makefile (dist): distribute it.
+	* README: mention it.
+
 2025-05-01  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.sty (\disablemetacode): define.

@@ -13,7 +13,10 @@ diff dif:
 	-diff -u0 $(tub_rel)/tugproc.sty tugproc.sty
 
 dist = tugboat-plain
-dist: README tubguide.pdf tubguide.tex tugboat.cmn tugboat.sty tugproc.sty
+distfiles = README tubguide.pdf tubguide.tex
+distfiles += tugboat.cmn tugboat.sty tugproc.sty
+distfiles += microtype-plain-tub.tex
+dist: $(distfiles)
 	chmod a+rw $^
 	rm -rf $(dist); mkdir $(dist)
 	cp -p $^ $(dist)
