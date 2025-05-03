@@ -1,6 +1,8 @@
 2025-05-03  Karl Berry  <karl@freefriends.org>
 
-	* microtype-plain-tub.tex: new file for the repo.
+	* microtype-plain-test.tex: new file.
+	* microtype-plain-tub.tex: new file for the repo, including
+	\efcode adjustments from efcode.tex.
 	* Makefile (dist): distribute it.
 	* README: mention it.
 

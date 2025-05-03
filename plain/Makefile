@@ -26,5 +26,6 @@ dist: $(distfiles)
 	rm -rf $(dist)
 	zipinfo -1 $(dist).zip
 
-try:
-	pdftex overvrb.tex
+testmt:
+	luatex microtype-plain-test.tex && mv microtype-plain-test.pdf l.pdf
+	pdftex microtype-plain-test.tex

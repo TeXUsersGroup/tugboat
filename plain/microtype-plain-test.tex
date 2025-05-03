@@ -1,0 +1,29 @@
+% $Id$
+% Public domain. Originally written by Karl Berry, 2025.
+% Test file to exercise microtype-plain-tub.tex.
+
+\let\vfill=\relax % disable \vfill\eject in story.tex, to stay on one page.
+\let\eject=\relax
+
+\input microtype-plain-tub.tex
+\edef\engine{\ifluatex Lua\TeX\else pdf\TeX\fi}
+
+\noindent A story typeset in \engine,
+with microtype (and one overfull line):\smallskip
+\hsize=2in
+\input story
+
+\newlinechar=`^^J \message{^^J***^^J}
+
+\bigskip
+\rlap{The same story, without microtype, and more overfull lines:}\smallskip
+
+% We can't use the same fonts (cmr10 etc.) as with the microtype
+% version, since the engines don't support using the same font with and
+% without expansion. So use the metric-compatible and
+% encoding-compatible fonts from cmcyr. (Latin Modern does not support OT1.)
+\font\tenrm=kcmr10 \rm
+\font\tensl=kcmsl10
+\font\tenbf=kcmbx10
+\input story
+\end

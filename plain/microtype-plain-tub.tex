@@ -15,24 +15,75 @@
 % microtype (LaTeX) package, that would be great.  Feel free to email
 % tugboat@tug.org with code, questions, or suggestions, or just release it.
 
+% expansion command differs between the engines.
 \input iftex.sty
 \ifluatex
   \adjustspacing=2
-  \def\mtplnfontexpand#1{%
+  \def\mtplntubfontexpand#1{%
+    \mtplntubsetefcode#1\relax
     \expandglyphsinfont#1 20 20 1\relax}
 \else
   \pdfadjustspacing=2
-  \def\mtplnfontexpand#1{%
+  \def\mtplntubfontexpand#1{%
+    \mtplntubsetefcode#1\relax
     \pdffontexpand#1 20 20 1 autoexpand\relax}
 \fi 
-\mtplnfontexpand\tenrm
-\mtplnfontexpand\tensl
-\mtplnfontexpand\tenbf
+
+% From Thanh's efcode.tex distributed as part of pdfTeX.
+% Argument is a \font control sequence, e.g., \tenrm.
+\def\mtplntubsetefcode#1{%
+    \efcode#1`\2=700
+    \efcode#1`\3=700
+    \efcode#1`\6=700
+    \efcode#1`\8=700
+    \efcode#1`\9=700
+    \efcode#1`\A=500
+    \efcode#1`\B=700
+    \efcode#1`\C=700
+    \efcode#1`\D=500
+    \efcode#1`\E=700
+    \efcode#1`\F=700
+    \efcode#1`\G=500
+    \efcode#1`\H=700
+    \efcode#1`\K=700
+    \efcode#1`\M=700
+    \efcode#1`\N=700
+    \efcode#1`\O=500
+    \efcode#1`\P=700
+    \efcode#1`\Q=500
+    \efcode#1`\R=700
+    \efcode#1`\S=700
+    \efcode#1`\U=700
+    \efcode#1`\W=700
+    \efcode#1`\Z=700
+    \efcode#1`\a=700
+    \efcode#1`\b=700
+    \efcode#1`\c=700
+    \efcode#1`\d=700
+    \efcode#1`\e=700
+    \efcode#1`\g=700
+    \efcode#1`\h=700
+    \efcode#1`\k=700
+    \efcode#1`\m=700
+    \efcode#1`\n=700
+    \efcode#1`\o=700
+    \efcode#1`\p=700
+    \efcode#1`\q=700
+    \efcode#1`\s=700
+    \efcode#1`\u=700
+    \efcode#1`\w=700
+    \efcode#1`\z=700
+}
+
+% enable for the basic ten-point fonts. Italics is too different.
+\mtplntubfontexpand\tenrm
+\mtplntubfontexpand\tensl
+\mtplntubfontexpand\tenbf
 
 %  protrusion, from Thanh's protcode.tex distributed as part of pdfTeX.
-% this macro works with OT1 encoding only -- mostly ASCII,
+% This macro works with OT1 encoding only -- mostly ASCII,
 % but assumes OT1 for quotes and dashes. See protcode.tex for more macros.
-\def\mtplnsetprotcode#1{%
+\def\mtplntubsetprotcode#1{%
     \rpcode#1`\!=200
     \rpcode#1`\,=700
     \rpcode#1`\-=700
@@ -76,10 +127,7 @@
     \lpcode#1`\x=50
     \lpcode#1`\y=0
 }
-\mtplnsetprotcode\tenrm
+\mtplntubsetprotcode\tenrm
 % protrusion on slanted and bold seems potentially troublesome.
 
-% simple test.
-%\hsize=2.2in
-%\input story
-%\bye
+% See microtype-plain-test.tex for a test file.
