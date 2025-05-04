@@ -1,3 +1,10 @@
+2025-05-04  Karl Berry  <karl@freefriends.org>
+
+	* ps2pdf-tub: -dColorImageResolution=1200 -dGrayImageResolution=1200 
+	since the default is 300
+	per https://ghostscript.readthedocs.io/en/latest/VectorDevices.html#distiller-parameters
+	and https://tug.org/pipermail/tex-live/2025-March/051333.html.
+
 2025-04-14  Karl Berry  <karl@tug.org>
 
 	* make-issue-pages-tub (gray_count): check all rgb components to

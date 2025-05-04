@@ -20,7 +20,7 @@ fi
 # -r1200 is to avoid rendering on a tiny canvas, which can trip
 #   heuristics of complicated fonts, as (relating to a Hans font) in:
 #   https://bugs.ghostscript.com/show_bug.cgi?id=701753 
-# -dAutoRotatePages since no, we do not want pages randomly rotated.
+# -dAutoRotatePages since we do not want pages randomly rotated.
 # -dCompressFonts seems not to hurt, and can save notable space.
 # -dDetectDuplicateImages similarly.
 # -dEmbedAllFonts usually but doesn't always work to embed fonts,
@@ -30,6 +30,13 @@ fi
 # -dPrinted=false is to preserve internal links within the pdf,
 #   notably for the cover/cover3 in our tb*complete.pdf:
 #   https://tex.stackexchange.com/questions/456896
+# -dColorImageResolution and -dGrayImageResolution because the default
+#   is 300 and we might as well do more for TUGboat. The default
+#   MonoImageResolution is already 1200. Per
+#     https://ghostscript.readthedocs.io/en/latest/VectorDevices.html#distiller-parameters
+#   and this message from Bruno Voisin:
+#     https://tug.org/pipermail/tex-live/2025-March/051333.html
+
 #set -x
 $gs -q -dNOPAUSE -dBATCH \
   -sDEVICE=pdfwrite \
@@ -41,6 +48,8 @@ $gs -q -dNOPAUSE -dBATCH \
   -dEmbedAllFonts \
   -dPDFSETTINGS=/prepress \
   -dPrinted=false \
+  -dColorImageResolution=1200 \
+  -dGrayImageResolution=1200 \
   $zdistill $zres \
   -f "$1" 
 
