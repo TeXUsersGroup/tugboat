@@ -1,0 +1,13 @@
+The speedata Publisher is a database publishing system based on \LuaTeX.
+Although it is a fully commercial-driven development, it is available under an open source license (\acro{AGPL}).
+The main goal of the speedata Publisher is to provide the high quality of \TeX's typesetting output while fulfilling the needs of database publishing.
+The speedata Publisher implements its own language for defining layout rules.
+This language is inspired by \acro{HTML}, \acro{XSL} and \acro{CSS}, and specializes in layout generation
+and excels in optimizing layout such as rearranging objects on the page, whitespace optimization,
+copyfitting and other means.
+
+\LuaTeX{} has the ability to manipulate and build the internal data
+structure that \TeX{} uses to assemble the pages and to break paragraph
+into lines. It provides an extremely powerful environment for
+non-standard typesetting tasks by allowing all necessary steps to be done
+programmatically while still falling back to \TeX{}'s algorithms.

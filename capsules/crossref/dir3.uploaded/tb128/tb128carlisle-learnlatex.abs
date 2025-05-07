@@ -1,0 +1,21 @@
+There are a plethora of resources available to new \LaTeX{} users. However, it
+is much more difficult to discover which of these provides the best
+introduction to \LaTeX{}. These online resources vary in quality and correctness:
+over time, and with limited editing, even good advice can become out-of-date.
+Many good resources are over-detailed for a new user who needs only
+straightforward help to get over the initial barrier to using the system.
+
+For many programming languages there are now web sites providing the
+opportunity to try coding online using a cloud compiler. These cloud compilers
+can be harnessed by a range of teaching websites to offer a simple introduction
+to the language using a suitable \acro{IDE} (integrated development
+environment); a good example is \href{https://LearnPython.org}{\nolinkurl{LearnPython.org}}. Such sites tend to be
+limited in scope as they are not aiming to teach every possible idea in the
+language but only a \enquote{Beginners} menu.
+
+Over the past six months, work has been ongoing in filling that gap for
+\LaTeX{}: \href{https://learnlatex.org}{\nolinkurl{learnlatex.org}}. The aim of this new site is to provide a
+carefully-curated set of resources for beginner \LaTeX{} authors, with integrated
+use of an online \LaTeX{} environment and demonstrations accessed directly from
+these lessons. The scope of these learning resources is focussed, and with the
+aim of offering the material in bite-sized chunks.

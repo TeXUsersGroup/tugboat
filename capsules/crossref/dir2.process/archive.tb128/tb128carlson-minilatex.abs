@@ -1,0 +1,15 @@
+MiniLaTeX is a no-setup subset of \LaTeX\ that can be rendered on
+the fly to \HTML. One can use it to build web apps with true \HTML\ display
+viewable on any device from smart phone to tablet to desktop.
+Typesetting occurs in real time, and error messages are displayed
+in-line in the rendered text. MiniLaTeX documents can be exported to
+standard \LaTeX.
+
+We describe (a) MiniLaTeX the language, (b)~the main features of the
+document management application \tbsurl{minilatex.lamdera.app}, and (c)
+some of the technical work required to implement an on-the-fly
+\LaTeX-to-\HTML\ compiler.
+
+A video  version  of  this  paper is at \url{https://youtu.be/TAIYpCc3VV0}.
+The document was originally written in MiniLaTeX and is
+available at \tbsurl{minilatex.lamdera.app/g/22}.

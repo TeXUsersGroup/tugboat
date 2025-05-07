@@ -1,0 +1,10 @@
+This paper describes the development of a \LaTeX{} package
+	to create a bookshelf image from a \BibTeX{} file, suitable for
+	use as a background for a video call in Zoom, Skype, or
+	similar. Each entry is typeset as the spine of a book with
+	title and author, using a randomly-selected font, color, and
+	size. The paper describes the problems of random choice with
+	both fixed-length and [potentially] endless lists, and the
+	algorithm used to fit the author and title onto the spine. The
+	package is available as \textsf{bookshelf} on
+	\acro{CTAN} for inspection and testing.\par 

@@ -1,0 +1,30 @@
+\begin{thebibliography}{1}
+
+\bibitem{ietf:language}
+E.~A.~Phillips, E.~M.~Davis.
+\newblock {\em Tags for Identifying Languages}.
+\newblock IETF Internet Engineering Task Force, Sept. 2009.
+\newblock {RFC} 5646, {BCP} 47.
+\newblock \url{tools.ietf.org/html/rfc5646}
+
+\bibitem{ietf:charset-mib}
+I.~McDonald.
+\newblock {\em IANA Charset MIB}.
+\newblock IETF Internet Engineering Task Force, June 2004.
+\newblock RFC 3808.
+\newblock \url{tools.ietf.org/html/rfc3808}
+
+\bibitem{MR:tug40}
+M.~Ruckert.
+\newblock The design of the {HINT} file format.
+\newblock {\em TUGboat} 40(2):143--146, 2019.
+\newblock \url{tug.org/TUGboat/tb40-2/tb125ruckert-hint.pdf}
+
+\bibitem{MR:format}
+M.~Ruckert.
+\newblock {\em HINT: The File Format}.
+\newblock Independently published, August 2019.
+\newblock ISBN 978-1079481594.
+\newblock \url{hint.userweb.mwn.de/hint/format.html}
+
+\end{thebibliography}
