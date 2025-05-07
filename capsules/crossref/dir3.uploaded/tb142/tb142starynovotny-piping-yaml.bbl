@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{novotny2022markdowna}
+\gobble{A}V. Novotn\'{y}, D.~Reh\'{a}k, et~al.
+\newblock {M}arkdown 2.15.0: {W}hat's new?
+\newblock \emph{TUGboat} 43(1):10--15, 2022.
+\newblock \url{https://doi.org/10.47397/tb/43-1/tb133novotny-markdown}
+
+\bibitem{novotny2022markdownb}
+V.~Novotn\'{y}.
+\newblock {M}arkdown 2.17.1: {W}hat's new, what's next?
+\newblock \emph{TUGboat} 43(3):276--278, 2022.
+\newblock \url{https://doi.org/10.47397/tb/43-3/tb135novotny-markdown}
+
+\bibitem{novotny2024piping}
+V.~{Star\'{y} Novotn\'{y}}.
+\newblock {Piping \acro{YAML} metadata into \LaTeX3 key–values}.
+\newblock \url{https://github.com/witiko/markdown/discussions/517}
+
+\bibitem{novotny2024markdown}
+V.~{Star\'{y} Novotn\'{y}}.
+\newblock {M}arkdown themes in practice.
+\newblock \emph{TUGboat} 45(2):211--220, 2024.
+\newblock \newline
+  \url{https://doi.org/10.47397/tb/45-2/tb140starynovotny-markdown-themes}
+
+\bibitem{wright2010l3keys}
+J.~Wright.
+\newblock Programming key–value in \textsf{expl3}.
+\newblock \emph{TUGboat} 31(1):83--87, 2010.
+\newblock \url{https://tug.org/TUGboat/tb31-1/tb97wright-l3keys.pdf}
+
+\end{thebibliography}

@@ -1,0 +1,72 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{10}
+
+\bibitem{hyperref}
+S.~Rahtz, H.~Oberdiek, {The \LaTeX3 Project}.
+\newblock The \pkg{hyperref} package, 2024.
+\newblock \url{ctan.org/pkg/hyperref}.
+
+\bibitem{Talbot:2019:GB}
+N.~Talbot.
+\newblock Glossaries with \pkg{bib2gls}.
+\newblock \emph{TUGboat} 40(1):47--60, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-1/tb124talbot-bib2gls.pdf}
+
+\bibitem{Talbot:2020:BSC}
+N.~Talbot.
+\newblock \pkg{bib2gls}: selection, cross-references and locations.
+\newblock \emph{TUGboat} 41(3):308--317, 2020.
+\newblock \url{https://doi.org/10.47397/tb/41-3/tb129talbot-bib2gls-more}
+
+\bibitem{Talbot:2021:PBS}
+N.~Talbot.
+\newblock \pkg{bib2gls}: sorting.
+\newblock \emph{TUGboat} 42(2):194--203, 2021.
+\newblock \url{https://doi.org/10.47397/tb/42-2/tb131talbot-sorting}
+
+\bibitem{xTalbot:2022:PBS}
+N.~Talbot.
+\newblock \pkg{bib2gls}: {S}tandalone entries and repeated lists (a little book
+  of poisons).
+\newblock \emph{TUGboat} 43(1):44--58, 2022.
+\newblock \url{https://doi.org/10.47397/tb/43-1/tb133talbot-bib2gls-reorder}
+
+\bibitem{mfirstuc}
+N.~Talbot.
+\newblock The \pkg{mfirstuc} package, 2022.
+\newblock \url{ctan.org/pkg/mfirstuc}.
+
+\bibitem{glossary-styles}
+N.~Talbot.
+\newblock {Dickimaw Books} gallery: All predefined glossary styles, 2023.
+\newblock \url{https://dickimaw-books.com/gallery/glossaries-styles}
+
+\bibitem{buildglossaries}
+N.~Talbot.
+\newblock Incorporating makeglossaries or makeglossaries-lite or bib2gls into
+  the document build, 2023.
+\newblock \url{dickimaw-books.com/latex/buildglossaries}.
+
+\bibitem{datatool-english}
+N.~Talbot.
+\newblock The \pkg{datatool-english} bundle, 2025.
+\newblock \url{ctan.org/pkg/datatool-english}.
+
+\bibitem{datatool}
+N.~Talbot.
+\newblock The \pkg{datatool} package, 2025.
+\newblock \url{ctan.org/pkg/datatool}.
+
+\bibitem{glossaries-extra}
+N.~Talbot.
+\newblock The \pkg{glossaries-extra} package, 2025.
+\newblock \url{ctan.org/pkg/glossaries-extra}.
+
+\bibitem{glossaries}
+N.~Talbot.
+\newblock The \pkg{glossaries} package, 2025.
+\newblock \url{ctan.org/pkg/glossaries}.
+
+\end{thebibliography}

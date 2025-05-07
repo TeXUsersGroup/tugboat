@@ -1,0 +1,9 @@
+  Memoize is a fast and flexible package for externalization of typesetting
+  results, and for memoization of compilation results in general.  By allowing
+  the author to reuse the results of compilation of computationally intensive
+  pieces of the document, it can radically cut down the compilation time of
+  successive compilations.
+
+  In this article I introduce externalization and memoization, outline
+  how they are implemented in Memoize, show how to use the package, and
+  shamelessly try to entice package writers to support it in their packages.

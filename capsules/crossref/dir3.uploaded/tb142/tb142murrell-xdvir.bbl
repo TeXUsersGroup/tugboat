@@ -1,0 +1,58 @@
+\begin{thebibliography}{1}
+
+\bibitem{matplotlib}
+J.D.~Hunter.
+\newblock Matplotlib: A {2D} graphics environment.
+\newblock \emph{Computing in Science \& Engineering}, 9(3):90--95, 2007.
+\newblock \newline \url{https://doi.org/10.1109/MCSE.2007.55}
+
+\bibitem{phd}
+P.~Murrell.
+\newblock \emph{Investigations in Graphical Statistics}.
+\newblock Ph.D. thesis, The University of Auckland, 1998.
+
+\bibitem{gggrid}
+P.~Murrell.
+\newblock \emph{gggrid: Draw with \textquotesingle{}grid\textquotesingle{} in
+  \textquotesingle{}ggplot2\textquotesingle, 2022.
+\newblock R package version 0.2-0.
+\newblock \url{https://CRAN.R-project.org/package=gggrid}
+
+\bibitem{ragg-pkg}
+T.L.~Pedersen, M.~Shemanarev.
+\newblock \emph{ragg: Graphic Devices Based on AGG}, 2024.
+\newblock R package version 1.3.3.
+\newblock \url{https://CRAN.R-project.org/package=ragg}
+
+\bibitem{Rlang}
+{R Core Team}.
+\newblock \emph{R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria, 2025.
+\newblock \url{https://www.R-project.org/}
+
+\bibitem{Python}
+G.~Van~Rossum, F.L.~Drake.
+\newblock \emph{Python 3 Reference Manual}.
+\newblock CreateSpace, Scotts Valley, CA, 2009.
+
+\bibitem{ggplot2}
+H.~Wickham.
+\newblock \emph{ggplot2: Elegant Graphics for Data Analysis}.
+\newblock Springer-Verlag New York, 2016.
+\newblock \url{https://ggplot2.tidyverse.org}
+
+\bibitem{tinytex-tugboat}
+Y.~Xie.
+\newblock {Tiny\TeX}: A lightweight, cross-platform, and easy-to-maintain
+  {\LaTeX} distribution based on {\TeX} {Live}.
+\newblock \emph{TUGboat} 40(1):30--32, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-1/tb124xie-tinytex.pdf}
+
+\bibitem{tinytex-pkg}
+Y.~Xie.
+\newblock \emph{tinytex: Helper Functions to Install and Maintain \TeX\ Live,
+  and Compile \LaTeX\ Documents}, 2024.
+\newblock R package version 0.54.
+\newblock \url{https://github.com/rstudio/tinytex}
+
+\end{thebibliography}

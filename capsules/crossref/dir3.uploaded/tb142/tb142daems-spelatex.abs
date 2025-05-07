@@ -1,0 +1,16 @@
+    Text-to-speech software has existed for quite some time. However, it
+    still struggles to properly read mathematical expressions and
+    equations. The Spe\LaTeX\ package, in conjunction with a Perl script,
+    allows you to transform your text into a document with a hyperlink
+    for every chunk of text, equation, table or figure. These
+    hyperlinks, when clicked, cause your media player to read the
+    content out loud, coping properly with mathematics and
+    graphics.
+
+    The package targets an audience with reading disorders,
+    as well as people looking for help in focusing on the text by
+    having it read out loud while also reading it silently.
+
+    At present, the package does
+    not rely on \PDF\ tags for practical reasons, but that is probably
+    where it is heading in the long term.

@@ -1,0 +1,62 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{10}
+
+\bibitem{longtable}
+D.~Carlisle.
+\newblock The \pkg{longtable} package, 2024.
+\newblock \url{ctan.org/pkg/longtable}.
+
+\bibitem{biblatex}
+P.~Kime, M.~Wemheuer, P.~Lehman.
+\newblock The \pkg{biblatex} package, 2024.
+\newblock \\\url{ctan.org/pkg/biblatex}.
+
+\bibitem{fp}
+M.~Mehlich.
+\newblock The \pkg{fp} package, 1999.
+\newblock \url{ctan.org/pkg/fp}.
+
+\bibitem{pgf}
+{PGF/TikZ Team}.
+\newblock The \pkg{pgf} package, 2023.
+\newblock \url{ctan.org/pkg/pgf}.
+
+\bibitem{Talbot:TB37-3-337}
+N.~Talbot.
+\newblock Localisation of {\TeX} documents: \texttt{tracklang}.
+\newblock \emph{TUGboat} 37(3):337--351, 2016.
+\newblock \url{https://tug.org/TUGboat/tb37-3/tb117talbot.pdf}
+
+\bibitem{datatool-english}
+N.~Talbot.
+\newblock The \pkg{datatool-english} bundle, 2025.
+\newblock \url{ctan.org/pkg/datatool-english}.
+
+\bibitem{datatool}
+N.~Talbot.
+\newblock The \pkg{datatool} package, 2025.
+\newblock \url{ctan.org/pkg/datatool}.
+
+\bibitem{datatool-regions}
+N.~Talbot.
+\newblock The \pkg{datatool-regions} bundle, 2025.
+\newblock \url{ctan.org/pkg/datatool-regions}.
+
+\bibitem{glossaries}
+N.~Talbot.
+\newblock The \pkg{glossaries} package, 2025.
+\newblock \url{ctan.org/pkg/glossaries}.
+
+\bibitem{tracklang}
+N.~Talbot.
+\newblock The \pkg{tracklang} package, 2025.
+\newblock \url{ctan.org/pkg/tracklang}.
+
+\bibitem{siunitx}
+J.~Wright.
+\newblock The \pkg{siunitx} package, 2025.
+\newblock \url{ctan.org/pkg/siunitx}.
+
+\end{thebibliography}

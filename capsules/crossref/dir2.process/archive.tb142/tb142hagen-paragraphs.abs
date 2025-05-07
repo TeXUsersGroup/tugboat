@@ -1,0 +1,13 @@
+The excellence of the Knuth--Plass algorithm for breaking paragraphs into lines
+is one of the reasons for the success of \TEX. It is very fast (built upon dynamic
+programming) and powerful (it can combine both justification and hyphenation in
+one go). The algorithm is built to use so-called demerits in a cost function to
+determine the optimal breakpoints.
+
+The paragraph builder is however limited to at most three runs over each
+paragraph to get the job done. In this article we will describe some new ideas
+and tools regarding the process of paragraph building. What we describe is
+already available in \LUAMETATEX\ and \CONTEXT. The main new feature is that it
+is now possible to have an arbitrary number of runs over each paragraph and to
+configure them independently.
+

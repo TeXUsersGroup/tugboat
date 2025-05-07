@@ -1,0 +1,18 @@
+When we want to do something with \CSV\ or \JSON\ files in \LaTeX, we can
+load an appropriate package. In \ConTeXt, we can use relevant commands
+directly. What can we do in \OpTeX?
+
+\OpTeX~[1] implements this feature by a set of \OpTeX\ tricks~[2]. They are
+grouped in the section ``Databases''. Short macro definitions are here. Users
+can copy them to their macro files and modify them to meet their specific
+requirements. Moreover, many \OpTeX\ tricks are set as {\it autoloads}.
+This means that
+if you don't need to modify the presented macro code, then you can simply use
+the user-level macro (\cs{csvread}, \cs{dbloop}, \cs{jsonread} for example) and the
+corresponding bundle of macro code is loaded automatically at its first
+use. You need to do nothing more than use this command. No packages need
+to be declared in the preamble of the document.
+
+This article shows the options for using \CSV\ and \JSON\ files with
+\OpTeX, i.\,e.\ by the relevant \OpTeX\ tricks.
+ 

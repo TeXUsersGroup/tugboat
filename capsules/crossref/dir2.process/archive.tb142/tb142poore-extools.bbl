@@ -1,0 +1,98 @@
+\begin{thebibliography}{10}
+
+\bibitem{pygments}
+G.~Brandl, {Pygments contributors}.
+\newblock Pygments: Python syntax highlighter, version 2.19.1, 2025.
+\newblock \url{https://pygments.org}
+
+\bibitem{json}
+{Ecma International}.
+\newblock {ECMA-404: The JSON Data Interchange Syntax}, 2017.
+\newblock
+  \url{https://ecma-international.org/publications-and-standards/standards/ecma-404}
+
+\bibitem{scontents}
+P.~González.
+\newblock {The \textsf{scontents} package, version 2.1}, 2024.
+\newblock \url{https://ctan.org/pkg/scontents}
+
+\bibitem{pdftexcmds}
+{H. Oberdiek and Oberdiek Package Support Group}.
+\newblock {The \textsf{pdftexcmds} package, version 0.33}, 2020.
+\newblock \url{https://ctan.org/pkg/pdftexcmds}
+
+\bibitem{latexrestricted}
+G.M.~Poore.
+\newblock {\textsf{latexrestricted}{\Dash}Python library for creating
+  executables compatible with \LaTeX\ restricted shell escape, version 0.6.2},
+  2024.
+\newblock \url{https://pypi.org/project/latexrestricted}
+
+\bibitem{latex2pydata-py}
+G.M.~Poore.
+\newblock {\textsf{latex2pydata}{\Dash}load data from \LaTeX\ in Python literal
+  format, version 0.5.0}, 2025.
+\newblock \url{https://pypi.org/project/latex2pydata}
+
+\bibitem{minted}
+G.M.~Poore.
+\newblock The \textsf{minted} package, version 3.6.0, 2025.
+\newblock \url{https://ctan.org/pkg/minted}
+
+\bibitem{fvextra}
+G.M.~Poore.
+\newblock {The \textsf{fvextra} package, version 1.12.0}, 2025.
+\newblock \url{https://ctan.org/pkg/fvextra}
+
+\bibitem{latex2pydata-tex}
+G.M.~Poore.
+\newblock {The \textsf{latex2pydata} package, version 0.5.0}, 2025.
+\newblock \url{https://ctan.org/pkg/latex2pydata}
+
+\bibitem{pyast}
+{Python Software Foundation}.
+\newblock {\textsf{ast}{\Dash}Abstract Syntax Trees}, 2024.
+\newblock \url{https://docs.python.org/3/library/ast.html#ast.literal_eval}
+
+\bibitem{pyliteral}
+{Python Software Foundation}.
+\newblock Lexical analysis, 2024.
+\newblock
+  \url{https://docs.python.org/3/reference/lexical_analysis.html#literals}
+
+\bibitem{pypathlib}
+{Python Software Foundation}.
+\newblock {\textsf{pathlib}{\Dash}Object-oriented filesystem paths}, 2025.
+\newblock \url{https://docs.python.org/3/library/pathlib.html}
+
+\bibitem{pysubprocess}
+{Python Software Foundation}.
+\newblock {\textsf{subprocess}{\Dash}Subprocess management}, 2025.
+\newblock \url{https://docs.python.org/3/library/subprocess.html}
+
+\bibitem{tcolorbox}
+T.~Sturm.
+\newblock {The \textsf{tcolorbox} package, version 6.4.1}, 2024.
+\newblock \url{https://ctan.org/pkg/tcolorbox}
+
+\bibitem{l3seq}
+{The \LaTeX{} Project}.
+\newblock {The \textsf{l3seq} module, version 2025-01-18}, 2025.
+\newblock \url{https://ctan.org/pkg/l3kernel}
+
+\bibitem{shellesc}
+{The \LaTeX\ Project Team}.
+\newblock {The \textsf{shellesc} package, version 1.0d}, 2023.
+\newblock \url{https://ctan.org/pkg/shellesc}
+
+\bibitem{l3regex}
+{The \LaTeX3 Project}.
+\newblock {The \textsf{l3regex} package, version 2024-12-09}, 2024.
+\newblock \newline \url{https://ctan.org/pkg/l3regex}
+
+\bibitem{fancyvrb}
+T.~{Van Zandt}, H.~Voss.
+\newblock The \textsf{fancyvrb} package, version 4.5c, 2024.
+\newblock \url{https://ctan.org/pkg/fancyvrb}
+
+\end{thebibliography}

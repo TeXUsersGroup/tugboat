@@ -1,0 +1,13 @@
+  The \textsf{minted} [5] package for \LaTeX\ typesets code
+  with syntax highlighting from the Pygments [1] library
+  for Python.  With version 3, \textsf{minted} enhances security and
+  usability while adding new features and simplifying future
+  development.  The package includes a new Python executable called
+  \texttt{latexminted} that is compatible with restricted shell
+  escape.  Usability is improved by new debugging and error reporting
+  capabilities.
+  
+  The redesign makes possible several additional
+  features, including support for custom lexers and the ability to
+  select snippets of code with regular expressions.  The new
+  architecture also allows future features to be developed using Python.

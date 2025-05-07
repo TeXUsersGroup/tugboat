@@ -1,0 +1,64 @@
+<!--#include virtual="/header.html"-->
+<title>Processing data from CSV and JSON files with OpTeX
+       - TUGboat 46:1 (2025) - TeX Users Group</title>
+</head><body>
+
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+<h1><a href="/TUGboat/tb46-1/">TUGboat 46:1</a> (2025)<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
+
+<p><b>Title</b>: Processing data from CSV and JSON files with OpTeX</p>
+
+<p><b>Summary</b>:
+database operations and tree structures.</p>
+
+<p><b>Full text of article</b>: <a href="https://tug.org/members/TUGboat/tb46-1/tb142olsak-optex-db.pdf">available to TUG members</a> (<a href="/join.html">join TUG</a>);
+will be publicly available after the next issue is published.</p>
+
+<p><b>Author</b>:
+<a href="/TUGboat/Contents/listauthor.html#Olsak,Petr">Petr Ol&#x0161;&#xe1;k</a></p>
+
+<p><b>Publication</b>: <a href="/TUGboat/tb46-1/">TUGboat
+volume 46, number 1</a> (2025),
+pages&nbsp;132&ndash;135</p>
+
+<p><b>DOI</b> (this page):
+<a href="https://doi.org/10.47397/tb/46-1/tb142olsak-optex-db">10.47397/tb/46-1/tb142olsak-optex-db</a>
+<br><small>(<a href="https://doi.org/10.47397/tb/46-1/tb142zivanovic-memoize">previous doi</a>
+- <a href="https://doi.org/10.47397/tb/46-1/tb142wermuth-widow">next doi</a>)</small></p>
+
+<p><b>Category</b>:
+<a href="/TUGboat/Contents/listkeyword.html#CatTAGMacros">Macros</a></p>
+      
+<p><b>Difficulty</b>: Intermediate Plus</p>
+
+<p><b>Abstract</b>:
+When we want to do something with CSV or JSON files in LaTeX, we can
+load an appropriate package. In ConTeXt, we can use relevant commands
+directly. What can we do in OpTeX?</p>
+<p>OpTeX [1] implements this feature by a set of OpTeX tricks [2]. They are
+grouped in the section &#x201c;Databases&#x201d;. Short macro definitions are here. Users
+can copy them to their macro files and modify them to meet their specific
+requirements. Moreover, many OpTeX tricks are set as <i>autoloads</i>.
+This means that
+if you don&#x2019;t need to modify the presented macro code, then you can simply use
+the user-level macro (<tt>&#x005C;csvread</tt>, <tt>&#x005C;dbloop</tt>, <tt>&#x005C;jsonread</tt> for example) and the
+corresponding bundle of macro code is loaded automatically at its first
+use. You need to do nothing more than use this command. No packages need
+to be declared in the preamble of the document.</p>
+<p>This article shows the options for using CSV and JSON files with
+OpTeX, i.e. by the relevant OpTeX tricks.</p>
+
+<p><b>References</b>:</p>
+<ol class="tugbbl">
+<li class="tugbbl">OpTeX. <a href="https://petr.olsak.net/optex/">petr.olsak.net/optex/</a></li>
+<li class="tugbbl">OpTeX&#x2014;tips, tricks, howto. <a href="https://petr.olsak.net/optex/optex-tricks.html">petr.olsak.net/optex/optex-tricks.html</a></li>
+<li class="tugbbl">OpTeX trick 0153: Working with tree data structures. <a href="https://petr.olsak.net/optex/optex-tricks.html#showtree">petr.olsak.net/optex/optex-tricks.html#showtree</a></li>
+<li class="tugbbl">OpTeX trick 0155: Example of using the tree data structure. <a href="https://petr.olsak.net/optex/optex-tricks.html#usetree">petr.olsak.net/optex/optex-tricks.html#usetree</a></li>
+</ol>
+
+<hr><small><a href="/TUGboat/">TUGboat</a> 46:1, 2025 (<a href="/TUGboat/tb46-1/">issue 142</a>)
+&nbsp; [generated 2025-05-07]
+</small><br><!--#include virtual="/footer.html"-->

@@ -1,0 +1,74 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{10}
+
+\bibitem{Arnold:2022:BookLMSPBI}
+J.~Arnold.
+\newblock \emph{Learning Microsoft Power BI}.
+\newblock O'Reilly, 2022.
+
+\bibitem{Blackburn:IJE43-3-665}
+H.~Blackburn, D.~Jacobs, Jr.
+\newblock Commentary: Origins and evolution of body mass index ({BMI}):
+  continuing saga.
+\newblock \emph{Int. J. Epidemiol.}, 43(3):665--669, 2014.
+\newblock \newline \url{https://doi.org/10.1093/ije/dyu061}
+
+\bibitem{Hyman:2022:BookMSPBIfD}
+J.A.~Hyman.
+\newblock \emph{Microsoft Power BI for dummies}.
+\newblock Wiley, 2022.
+
+\bibitem{Jader:Kaggle-DSV-8301853}
+R.~Jader.
+\newblock Gestational diabetes.
+\newblock Kaggle, 2024.
+\newblock \url{https://doi.org/10.34740/KAGGLE/DSV/8301853}
+
+\bibitem{Jader:ACISC2022-1}
+R.~Jader, S.~Aminifar, R.~Ejbali.
+\newblock Predictive model for diagnosis of gestational diabetes in the
+  {Kurdistan} region by a combination of clustering and classification
+  algorithms: An ensemble approach.
+\newblock \emph{Appl. Comput. Intell. Soft Comput.}, 2022:1--11, 2022.
+\newblock \url{https://doi.org/10.1155/2022/9749579}
+
+\bibitem{Katsnelson:NT598-7879-224}
+A.~Katsnelson.
+\newblock Colour me better: fixing~figures for colour blindness.
+\newblock \emph{Nature}, 598(7879):224--225, 2021.
+\newblock \url{https://doi.org/10.1038/d41586-021-02696-z}
+
+\bibitem{Kolokolov:2024:BookDVMSPBI}
+A.~Kolokolov, M.~Zelensky.
+\newblock \emph{Data Visualization with Microsoft Power BI}.
+\newblock O'Reilly, 2024.
+
+\bibitem{Loth:2023:BookTYVPBI}
+A.~Loth.
+\newblock \emph{Teach Yourself Visually Power BI}.
+\newblock Wiley, 2023.
+
+\bibitem{Mertz:TB34-3-302}
+A.~Mertz, W.~Slough.
+\newblock A gentle introduction to {Python\TeX}.
+\newblock \emph{TUGboat} 34(3):302--312, 2013.
+\newblock \url{tug.org/TUGboat/tb34-3/tb108mertz.pdf}
+
+\bibitem{Pine:2019:BookIPSE}
+D.J.~Pine.
+\newblock \emph{Introduction to Python for Science and Engineering}.
+\newblock CRC Press, 2019.
+
+\bibitem{Rad:2023:BookPPBIA}
+R.~Rad.
+\newblock \emph{Pro Power BI Architecture}.
+\newblock Apress, 2nd ed., 2023.
+
+\bibitem{Sandro:2009:BookMfPD}
+S.~Tosi.
+\newblock \emph{Matplotlib for Python Developers}.
+\newblock Packt, 2009.
+
+\end{thebibliography}

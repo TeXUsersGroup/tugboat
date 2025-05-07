@@ -1,0 +1,17 @@
+The \LaTeX\ package BibBreeze, written using \LaTeX3, is a referencing
+package that automates bibliography reconstruction, eliminating manual
+effort in reference handling. It reorders disorganized fields for
+bibliography entries, fills in missing fields, and produces polished,
+reference style-compliant bibliographies optimized for researchers,
+academics, and writers. Currently, the package's referencing style is
+designed for APA, both \verb|numeric| and \verb|authoryear| in-text
+citations, with more styles to come.\par
+
+Using powerful packages such as \verb|expl3| and fundamental features
+such as \verb|regex|, BibBreeze\ automatically extracts essential
+information from bibliography (\BibTeX) entries and formats it according
+to the referencing guidelines. Furthermore, it distinguishes between
+entry subtypes such as proceedings papers (presented, published in
+journals or books) all identified by \verb|@inproceedings|, using
+targeted checks. These features are especially valuable for users
+managing large reference lists who need precise formatting.

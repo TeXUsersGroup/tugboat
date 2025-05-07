@@ -1,0 +1,5 @@
+  This paper is an introduction to the Lua\LaTeX\ package \tbcode{marginalia}, whose development was driven by the aim
+  of typesetting a book with running heads, citations, and float
+  captions in the margins. It allows the placement
+  of non-floating marginal content anywhere, automatically adjusts positions to prevent content either overlapping or
+  being pushed off the page, and has flexible key--value configuration.

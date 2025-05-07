@@ -1,0 +1,7 @@
+Microsoft Power~BI{} dashboards can be styled with \TeX. Such business 
+intelligence dashboards can be displayed online via the Power~BI{} Service, or 
+offline in the Power~BI{} Desktop application. This versatility can be 
+implemented via Mathtext, a lightweight \TeX\ parser embedded in Python's 
+Matplotlib library. Power~BI{}'s \TeX\ presentation capabilities are explored 
+here with an example dashboard. Links to supporting file resources are 
+supplied.
