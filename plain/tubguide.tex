@@ -34,7 +34,7 @@
 % ****************************************************************
 
 \pageno=1
-\def\rtitlex{\def\tubfont{\tenpoint\rm}\TUB{} Authors' Guide, May 2025}
+\def\rtitlex{\def\tubfont{\tenpoint\rm}\TUB{} Authors' Guide, March 2022}
 \def\midrtitle{}
 
 \title *\TUB\/ authors' guide*
@@ -550,7 +550,7 @@ As of version~1.31 of the \plain-based \TUB\ macros, released in October
 \item |\tbhurl{tug.org}| is analogous, for http urls: \tbhurl{tug.org}.
 \item |\tbmailto{tugboat@tug.org}| produces a mailto url, again with the
       argument in \cs{tt}: \tbmailto{tugboat@tug.org}.
-\item |\tbhref{https://tug.org}{the \acro{TUG} home page}| is the general
+\item |\tbhref{https://tug.org}{the \acro{TUG} home page| is the general
       command, which typesets the second argument (no implicit font
       changes) as a link to the first argument (no implicit protocol
       added): \tbhref{https://tug.org/}{the \acro{TUG} home page}.
@@ -645,7 +645,6 @@ to get to the next page.  |\newcol| is just |\par\vfill\eject|.
 \subhead * Command list summary *
 Tags are listed in the order discussed.  Options are
 listed under tags.
-%% but the macro \subtext ... \endtext is not documented !
 ||
 \title
 \author
@@ -670,13 +669,13 @@ listed under tags.
    \tag{...}
 \everylist
 \verbatim
-   ||...|| % bars invisible !
+   ||...||
    \numbered
    \ruled
    \inputfromfile{...}
    \outputtofile{...}
 \verbinline
-  |...| % bars invisible !
+  |...|
 \verbfile
 \enablemetacode
   \disablemetacode
