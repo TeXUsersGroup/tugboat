@@ -1,0 +1,15 @@
+It is a matter of joy that we have many options for processing a {\LaTeX}
+document. We can choose the most suitable {\TeX} engine and external programs,
+such as for bibliography and for indexing, depending on one's needs. However,
+now it is hard or even impossible in some cases to know what is the `right'
+workflow to process a document only by seeing document sources.
+
+Light {\LaTeX}
+Make (\texttt{{llmk}) is yet another build tool specific for {\LaTeX} documents,
+intended to remove such ambiguity in the workflows. Its aim is to provide a
+simple way to write down a workflow for document authors and encourage people
+to always explicitly show the right workflow for each document. For this goal,
+the design of \texttt{llmk} gives primary consideration to convenience and
+portability. For example, it supports multiple magic comment formats to enable
+users to easily write the workflows and it requires only \code{texlua}, so that it
+will work under any environment which has {\LuaTeX}.

@@ -1,0 +1,44 @@
+% this file is read twice
+%   first:  the shortcuts for the references are defined
+%   second: the list for references is output
+% start the file with \startbibrefs and end it with \par
+% NOTE: a § can't be used in front of \endbib, move it to the previuos line
+\startbibrefs\begingroup
+\ninepoint
+\emergencystretch=0.03\hsize
+\def\newline{\hfil\break}%
+\raggedright
+\frenchspacing
+\hyphenpenalty=10000
+\def\URLaccessdate(#1){}% suppress ``accessed <date>'' info after URLs
+
+%\bibitem{citePH} P\'eter Husz\'ar, ``Over the multi-column'',
+%   {\sl \TUB\ \bf 13}:2 (1992), 192--200.\par
+%   \biburl https://www.tug.org/TUGboat/tb13-2/tb35huszar.pdf\endurl
+%   \endbib(2023-11-10)
+
+\bibitem{citeCTvA} Donald E. Knuth, \TB,
+   Volume~A of \CandT, Boston, Massachusetts: \AW, 1984.
+
+\bibitem{citeCTvB} Donald E. Knuth, \TP,\newline
+   Volume~B of \CandT,
+   Boston, Massachusetts: \AW, 1986.
+
+%\bibitem{citeDS} David Salomon, ``Output Routines: Examples and
+%   Techniques. Part II: \acro{OTR} Techniques'',
+%   {\sl \TUB\ \bf 11}:2 (1990), 212--236.\par
+%   \biburl https://www.tug.org/TUGboat/tb11-2/tb28salomon.pdf\endurl
+%   \endbib(2023-11-10)
+
+\hfuzz=2.61pt
+\bibitem{citeUW} Udo Wermuth, ``Is a given input a valid
+   \TeX\kern2pt\meta{glue}\slash\meta{muglue}?'',
+   {\sl \TUB\ \bf46}:1 (2024), 145--147.\par
+   \biburl https://tug.org/TUGboat/tb46-1/tb142wermuth-isglue.pdf\endurl
+   \endbib(2024-07-25)
+
+\end{thebibliography}
+% Local Variables:
+% coding: iso-latin-9-unix
+% ispell-local-dictionary: "en_US"
+% End:

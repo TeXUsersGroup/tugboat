@@ -1,0 +1,51 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{1}
+
+\bibitem{xAye:TB37-3-275}
+G.~Aye.
+\newblock Introducing {LaTeX Base}.
+\newblock {\em TUGboat} 37(3):275--276, 2016.
+\newblock \url{https://tug.org/TUGboat/tb37-3/tb117aye.pdf}
+
+\bibitem{Lang:2019:NNC}
+S.~Lang, A.~Schm{\"o}lzer.
+\newblock {Noob} to {Ninja}: The challenge of taking beginners' needs into
+  account when teaching {\LaTeX}.
+\newblock {\em TUGboat} 40(1):5--9, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-1/tb124lang-newbie.pdf}
+
+\bibitem{Lupkowski:TB36-1-25}
+P.~{\L}upkowski.
+\newblock Online \latex{} editors and other resources.
+\newblock {\em TUGboat} 36(1):25--27, 2015.
+\newblock \url{https://tug.org/TUGboat/tb36-1/tb112lupkowski.pdf}
+
+\bibitem{Snyder:2017:SCD}
+H.~Snyder.
+\newblock {SageMathCloud} for collaborative document editing and scientific
+  computing.
+\newblock {\em TUGboat} 38(1):44--47, 2017.
+\newblock \url{https://tug.org/TUGboat/tb38-1/tb118snyder.pdf}
+
+\bibitem{Veytsman:TB31-2-236}
+B.~Veytsman, L.~Akhmadeeva.
+\newblock {\TeX} in the \acro{GLAMP} world: {On-demand} creation of documents
+  online.
+\newblock {\em TUGboat} 31(2):236--239, 2010.
+\newblock \url{https://tug.org/TUGboat/tb31-2/tb98veytsman-glamp.pdf}
+
+\bibitem{Veytsman:TB28-1-77}
+B.~Veytsman, M.~Shmilevich.
+\newblock Automatic report generation with {Web}, {\TeX} and \acro{SQL}.
+\newblock {\em TUGboat} 28(1):77--79, 2007.
+\newblock \url{https://tug.org/TUGboat/tb28-1/tb88veytsman-report.pdf}
+
+\bibitem{Ziegenhagen:2019:CLP}
+U.~Ziegenhagen.
+\newblock Combining {\LaTeX} with {Python}.
+\newblock {\em TUGboat} 40(2):126--128, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-2/tb125ziegenhagen-python.pdf}
+
+\end{thebibliography}

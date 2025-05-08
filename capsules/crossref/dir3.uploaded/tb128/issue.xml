@@ -1,0 +1,1125 @@
+<doi_batch xmlns="http://www.crossref.org/schema/5.3.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="5.3.1" xsi:schemaLocation="http://www.crossref.org/schema/5.3.1 http://www.crossref.org/schema/deposit/crossref5.3.1.xsd">
+  <head>
+    <doi_batch_id>ltx2crossref-20250428170309-3303091</doi_batch_id>
+    <timestamp>20250428170309</timestamp>
+    <depositor>
+      <depositor_name>TUGboat production</depositor_name>
+      <email_address>doi-tugboat@tug.org</email_address>
+    </depositor>
+    <registrant>TeX Users Group</registrant>
+  </head>
+  <body><journal>
+    <journal_metadata language="en">
+      <full_title>TUGboat</full_title>
+      <issn>0896-3207</issn>      
+    </journal_metadata>
+    <journal_issue>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <journal_volume><volume>41</volume></journal_volume>
+      <issue>2</issue>
+    </journal_issue>
+    <journal_article>
+      <titles>
+        <title>Random musings on TUG2020 online</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Barbara</given_name>
+          <surname>Beeton</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>120</first_page>
+        <last_page>120</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128beet-tug20</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128beet-tug20.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Observations on the TeX Users Group's 41st Annual Conference&#x2014;TUG 2020 in the COVID-19 era</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>David</given_name>
+          <surname>Walden</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>121</first_page>
+        <last_page>122</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128walden-tug20</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128walden-tug20.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TUG 2020: A report and future recommendations</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Paulo Ney</given_name>
+          <surname>de Souza</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>123</first_page>
+        <last_page>126</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128desouza-tug20</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128desouza-tug20.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TeX conferences and General Meetings, this year and next</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jonathan</given_name>
+          <surname>Fine</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>126</first_page>
+        <last_page>127</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128fine-meetings</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128fine-meetings.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Interview with Javier Bezos</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Paulo Ney</given_name>
+          <surname>de Souza</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>127</first_page>
+        <last_page>131</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128bezos-desouza</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128bezos-desouza.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Interview with Philip Kime</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Paulo Ney</given_name>
+          <surname>de Souza</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>132</first_page>
+        <last_page>138</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128kime-desouza</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128kime-desouza.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Beyond Roman fonts: Extra dimensions in Malayalam fonts</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>KH</given_name>
+          <surname>Hussain</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>KV</given_name>
+          <surname>Rajeesh</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Aravind</given_name>
+          <surname>Rajendran</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>139</first_page>
+        <last_page>144</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128hussain-beyond</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128hussain-beyond.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="ml_unicode-1">
+          <unstructured_citation>Unicode Consortium. Malayalam Unicode chart, Unicode standard 13.0 [online]. https://www.unicode.org/charts/PDF/U0D00.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The road to Noto</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Steven</given_name>
+          <surname>Matteson</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>145</first_page>
+        <last_page>154</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128matteson-noto</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128matteson-noto.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Typographical explorations in two unicase alphabets</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jennifer</given_name>
+          <surname>Claudio</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>155</first_page>
+        <last_page>156</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128claudio-unicase</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128claudio-unicase.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Your personal LaTeX bookshelf: Improving your background in a time of lockdown</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Peter</given_name>
+          <surname>Flynn</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>157</first_page>
+        <last_page>159</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128flynn-bookshelf</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128flynn-bookshelf.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="nir-1">
+          <unstructured_citation>N. Dobovizki. Calculating the Perceived Brightness of a Color. Making Time-Tracking Software, Apr 2008. https://www.nbdtech.com/Blog/archive/2008/04/27/Calculating-the-Perceived-Brightness-of-a-Color.aspx</unstructured_citation>
+        </citation>
+        <citation key="fisch-2">
+          <unstructured_citation>U. Fischer. How to set a certain color (other than white) to margin areas? tex.stackexchange.com, Dec 2010. https://tex.stackexchange.com/questions/7725/how-to-set-a-certain-color-other-than-white-to-margin-areas</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Noticing history&#x2014;a personal view</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>David</given_name>
+          <surname>Walden</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>160</first_page>
+        <last_page>167</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128walden-noticing</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128walden-noticing.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TeX in church: A typographical adventure</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Paulo</given_name>
+          <surname>Cereda</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>168</first_page>
+        <last_page>170</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128cereda-church</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128cereda-church.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Empowerment and teaching LaTeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Astrid</given_name>
+          <surname>Schm&#xf6;lzer</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Sarah</given_name>
+          <surname>Lang</surname>
+          <ORCID>https://orcid.org/0000-0002-4618-9481</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>171</first_page>
+        <last_page>172</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128schmoelzer-empowerment</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128schmoelzer-empowerment.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Didactical reduction versus references: How to better teach LaTeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Sarah</given_name>
+          <surname>Lang</surname>
+          <ORCID>https://orcid.org/0000-0002-4618-9481</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>173</first_page>
+        <last_page>175</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128lang-didactic</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128lang-didactic.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>LaTeX-on-HTTP: LaTeX as a commodity web service for application developers</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Yoan</given_name>
+          <surname>Tournade</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>175</first_page>
+        <last_page>178</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128tournade-http</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128tournade-http.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="xAye:TB37-3-275-1">
+          <unstructured_citation>G. Aye. Introducing LaTeX Base. TUGboat 37(3):275&#x2013;276, 2016. https://tug.org/TUGboat/tb37-3/tb117aye.pdf</unstructured_citation>
+        </citation>
+        <citation key="Lang:2019:NNC-2">
+          <unstructured_citation>S. Lang, A. Schm&#x00F6;lzer. Noob to Ninja: The challenge of taking beginners&#x2019; needs into account when teaching LaTeX. TUGboat 40(1):5&#x2013;9, 2019. https://tug.org/TUGboat/tb40-1/tb124lang-newbie.pdf</unstructured_citation>
+        </citation>
+        <citation key="Lupkowski:TB36-1-25-3">
+          <unstructured_citation>P. &#x0141;upkowski. Online LaTeX editors and other resources. TUGboat 36(1):25&#x2013;27, 2015. https://tug.org/TUGboat/tb36-1/tb112lupkowski.pdf</unstructured_citation>
+        </citation>
+        <citation key="Snyder:2017:SCD-4">
+          <unstructured_citation>H. Snyder. SageMathCloud for collaborative document editing and scientific computing. TUGboat 38(1):44&#x2013;47, 2017. https://tug.org/TUGboat/tb38-1/tb118snyder.pdf</unstructured_citation>
+        </citation>
+        <citation key="Veytsman:TB31-2-236-5">
+          <unstructured_citation>B. Veytsman, L. Akhmadeeva. TeX in the GLAMP world: On-demand creation of documents online. TUGboat 31(2):236&#x2013;239, 2010. https://tug.org/TUGboat/tb31-2/tb98veytsman-glamp.pdf</unstructured_citation>
+        </citation>
+        <citation key="Veytsman:TB28-1-77-6">
+          <unstructured_citation>B. Veytsman, M. Shmilevich. Automatic report generation with Web, TeX and SQL. TUGboat 28(1):77&#x2013;79, 2007. https://tug.org/TUGboat/tb28-1/tb88veytsman-report.pdf</unstructured_citation>
+        </citation>
+        <citation key="Ziegenhagen:2019:CLP-7">
+          <unstructured_citation>U. Ziegenhagen. Combining LaTeX with Python. TUGboat 40(2):126&#x2013;128, 2019. https://tug.org/TUGboat/tb40-2/tb125ziegenhagen-python.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Using Overleaf for collaborative projects: First impressions and lessons learned</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Boris</given_name>
+          <surname>Veytsman</surname>
+          <ORCID>https://orcid.org/0000-0003-4674-8113</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>179</first_page>
+        <last_page>181</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128veytsman-overleaf</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128veytsman-overleaf.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="MinimalHouseholdModel2020MedRxiv-1">
+          <unstructured_citation>G. Huber, M. Kamb, K. Kawagoe, L. Li, B. Veytsman, D. Yllanes, and D. Zigmond. A minimal model for household effects in epidemics. medRxiv, 2020. doi:10.1101/2020.07.09.20150227 (http://dx.doi.org/10.1101/2020.07.09.20150227)</unstructured_citation>
+        </citation>
+        <citation key="Reviewed-2">
+          <unstructured_citation>S. Satish, Z. Yao, A. Drozdov, and B. Veytsman. [A paper under blind review]. In [Not disclosed], 2020. We were asked to suppress all information about the paper until it is reviewed.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The Island of TeX: Developing abroad, your next destination</title>
+      </titles>
+      <contributors>
+        <organization sequence="first" contributor_role="author">Island of TeX</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>182</first_page>
+        <last_page>184</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128island</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128island.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The design concept for <tt>llmk</tt>&#x2014;Light LaTeX Make</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Takuto</given_name>
+          <surname>Asakura</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>185</first_page>
+        <last_page>187</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128asakura-llmk</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128asakura-llmk.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="arara-1">
+          <unstructured_citation>Paulo Cereda, et al. arara&#x2014;The cool TeX automation tool. https://ctan.org/pkg/arara</unstructured_citation>
+        </citation>
+        <citation key="latexmk-2">
+          <unstructured_citation>John Collins. latexmk&#x2014;generate LaTeX document. https://ctan.org/pkg/latexmk</unstructured_citation>
+        </citation>
+        <citation key="rubber-3">
+          <unstructured_citation>Sebastian Kapfer. rubber&#x2014;a building system for LaTeX documents. https://launchpad.net/rubber/</unstructured_citation>
+        </citation>
+        <citation key="spix-4">
+          <unstructured_citation>Louis Paternault. SpiX&#x2014;Yet another TeX compilation tool: simple, human readable, no option, no magic. https://ctan.org/pkg/spix</unstructured_citation>
+        </citation>
+        <citation key="toml-5">
+          <unstructured_citation>Tom Preston-Werner. TOML: Tom&#x2019;s Obvious Minimal Language. https://toml.io/</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Typesetting product catalogs and other database-driven documents with the speedata Publisher</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Patrick</given_name>
+          <surname>Gundlach</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>188</first_page>
+        <last_page>193</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128gundlach-speedata</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128gundlach-speedata.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="speedatahomepage-1">
+          <unstructured_citation>speedata homepage. https://www.speedata.de.</unstructured_citation>
+        </citation>
+        <citation key="speedatamanual-2">
+          <unstructured_citation>speedata manual. https://doc.speedata.de.</unstructured_citation>
+        </citation>
+        <citation key="speedatamanualhelloworld-3">
+          <unstructured_citation>&#x201c;Hello, world&#x201d; example in speedata manual. https://doc.speedata.de/publisher/en/helloworld/.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>A first set of LaTeX packages</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jim</given_name>
+          <surname>Hefferon</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>194</first_page>
+        <last_page>195</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128heff-packages</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128heff-packages.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="JHnewcomers-1">
+          <unstructured_citation>J. Hefferon. What do today&#x2019;s newcomers want? TUGboat 40(2):106&#x2013;108, 2019. https://tug.org/TUGboat/tb40-2/tb125heff-newusers.pdf</unstructured_citation>
+        </citation>
+        <citation key="reddit-2">
+          <unstructured_citation>Various Reddit users. A First List of LaTeX Packages. https://old.reddit.com/r/LaTeX/comments/hpal2i/a_first_list_of_latex_packages/.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Presenting our LaTeX workshop online</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Susan</given_name>
+          <surname>DeMeritt</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Cheryl</given_name>
+          <surname>Ponchin</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>196</first_page>
+        <last_page>196</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128demeritt-workshop</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128demeritt-workshop.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title><tt>learnlatex.org</tt>: Taking LaTeX training fully interactive</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>David</given_name>
+          <surname>Carlisle</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Paulo</given_name>
+          <surname>Cereda</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Joseph</given_name>
+          <surname>Wright</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>197</first_page>
+        <last_page>199</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128carlisle-learnlatex</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128carlisle-learnlatex.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>A review of <tt>learnlatex.org</tt></title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jennifer</given_name>
+          <surname>Claudio</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>199</first_page>
+        <last_page>200</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128reviews-learnlatex</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128reviews-learnlatex.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Quo vadis LaTeX(3) Team&#x2014;A look back and at the upcoming years</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Frank</given_name>
+          <surname>Mittelbach</surname>
+          <ORCID>https://orcid.org/0000-0001-6318-1230</ORCID>
+        </person_name>
+        <organization sequence="additional" contributor_role="author">LaTeX Project Team</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>201</first_page>
+        <last_page>207</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128mitt-quovadis</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128mitt-quovadis.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Fischer:2020-1">
+          <unstructured_citation>U. Fischer. Creating accessible pdfs with LaTeX. TUGboat 41(1):26&#x2013;28, 2020. https://tug.org/TUGboat/tb41-1/tb127fischer-accessible.pdf</unstructured_citation>
+        </citation>
+        <citation key="Goosens:LC94-2">
+          <unstructured_citation>M. Goossens, F. Mittelbach, A. Samarin. The LaTeX Companion. Addison-Wesley, Reading, MA, USA, 1994.</unstructured_citation>
+        </citation>
+        <citation key="Lamport:1994:LDP-3">
+          <unstructured_citation>L. Lamport. LaTeX: A Document Preparation System: User&#x2019;s Guide and Reference Manual. Addison-Wesley, Reading, MA, USA, second edition, 1994.</unstructured_citation>
+        </citation>
+        <citation key="l3news-4">
+          <unstructured_citation>LaTeX Project Team. LaTeX3 news, 2009&#x2013;. https://latex-project.org/news/latex3-news/.</unstructured_citation>
+        </citation>
+        <citation key="latexrelease-package-5">
+          <unstructured_citation>LaTeX Project Team. The latexrelease package, 2018. https://ctan.org/pkg/latexrelease.</unstructured_citation>
+        </citation>
+        <citation key="xTeam:2019:LNIb-6">
+          <unstructured_citation>LaTeX Project Team. LaTeX news, issue 30, October 2019. TUGboat 40(3):251&#x2013;254, 2019. https://tug.org/TUGboat/tb40-3/tb126ltnews30.pdf</unstructured_citation>
+        </citation>
+        <citation key="Mittelbach:2018:RCP-7">
+          <unstructured_citation>F. Mittelbach. A rollback concept for packages and classes. TUGboat 39(2):107&#x2013;112, 2018. https://tug.org/TUGboat/tb39-2/tb122mitt-rollback.pdf</unstructured_citation>
+        </citation>
+        <citation key="Mittelbach:TB35-3-287-8">
+          <unstructured_citation>F. Mittelbach, W. Robertson, LaTeX3 team. l3build&#x2014;A modern Lua test suite for TeX programming. TUGboat 35(3):287&#x2013;293, 2014. https://tug.org/TUGboat/tb35-3/tb111mitt-l3build.pdf</unstructured_citation>
+        </citation>
+        <citation key="Mittelbach:TB10-4-681-9">
+          <unstructured_citation>F. Mittelbach, R. Sch&#x00F6;pf. With LaTeX into the nineties. TUGboat 10(4):681&#x2013;690, Dec. 1989. https://tug.org/TUGboat/tb10-4/tb26mitt.pdf</unstructured_citation>
+        </citation>
+        <citation key="Moore:TB30-2-170-10">
+          <unstructured_citation>R. Moore. Ongoing efforts to generate &#x201c;tagged PDF&#x201d; using pdfTeX. TUGboat 30(2):170&#x2013;175, 2009. https://tug.org/TUGboat/tb30-2/tb95moore.pdf</unstructured_citation>
+        </citation>
+        <citation key="Moore:2018:IPS-11">
+          <unstructured_citation>R. Moore. Implementing PDF standards for mathematical publishing. TUGboat 39(2):131&#x2013;135, 2018. https://tug.org/TUGboat/tb39-2/tb122moore-pdf.pdf</unstructured_citation>
+        </citation>
+        <citation key="Team:TB28-1-24-12">
+          <unstructured_citation>LaTeX. Project Team. LaTeX news, issue 17. TUGboat 28(1):24&#x2013;25, 2007. https://tug.org/TUGboat/tb28-1/tb88ltnews.pdf</unstructured_citation>
+        </citation>
+        <citation key="LPT:TB35-1-22-13">
+          <unstructured_citation>LaTeX. Project Team. LaTeX3 news, issue 9. TUGboat 35(1):22&#x2013;26, 2014. https://tug.org/TUGboat/tb35-1/tb109l3news.pdf</unstructured_citation>
+        </citation>
+        <citation key="xRadhakrishnan:TB36-2-136-14">
+          <unstructured_citation>C. V. Radhakrishnan, H&#x00E0;n Th&#x1EBF; Th&#x00E0;nh, et al. Generating PDF/X- and PDF/A-compliant PDFs with pdfTeX&#x2014;pdfx.sty. TUGboat 36(2):136&#x2013;142, 2015. https://tug.org/TUGboat/tb36-2/tb113radhakrishnan.pdf</unstructured_citation>
+        </citation>
+        <citation key="Rowley:2019:ALK-15">
+          <unstructured_citation>C. Rowley, U. Fischer, F. Mittelbach. Accessibility in the LaTeX kernel&#x2014;experiments in Tagged PDF. TUGboat 40(2):157&#x2013;158, 2019. https://tug.org/TUGboat/tb40-2/tb125rowley-tagpdf.pdf</unstructured_citation>
+        </citation>
+        <citation key="Ruckert:2019:DHF-16">
+          <unstructured_citation>M. Ruckert. The design of the HINT file format. TUGboat 40(2):143&#x2013;146, 2019. https://tug.org/TUGboat/tb40-2/tb125ruckert-hint.pdf</unstructured_citation>
+        </citation>
+        <citation key="ruckert-tug20-17">
+          <unstructured_citation>M. Ruckert. The HINT project: Status and open questions. TUGboat 41(2):208&#x2013;211, 2020. https://tug.org/TUGboat/tb41-2/tb128ruckert-hint.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The HINT Project: Status and open questions</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Martin</given_name>
+          <surname>Ruckert</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Gudrun</given_name>
+          <surname>Socher</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>208</first_page>
+        <last_page>211</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128ruckert-hint</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128ruckert-hint.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="ietf:language-1">
+          <unstructured_citation>E. A. Phillips, E. M. Davis. Tags for Identifying Languages. IETF Internet Engineering Task Force, Sept. 2009. RFC 5646, BCP 47. https://tools.ietf.org/html/rfc5646</unstructured_citation>
+        </citation>
+        <citation key="ietf:charset-mib-2">
+          <unstructured_citation>I. McDonald. IANA Charset MIB. IETF Internet Engineering Task Force, June 2004. RFC 3808. https://tools.ietf.org/html/rfc3808</unstructured_citation>
+        </citation>
+        <citation key="MR:tug40-3">
+          <unstructured_citation>M. Ruckert. The design of the HINT file format. TUGboat 40(2):143&#x2013;146, 2019. https://tug.org/TUGboat/tb40-2/tb125ruckert-hint.pdf</unstructured_citation>
+        </citation>
+        <citation key="MR:format-4">
+          <unstructured_citation>M. Ruckert. HINT: The File Format. Independently published, August 2019. ISBN 978-1079481594. https://hint.userweb.mwn.de/hint/format.html</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>MiniLaTeX: A subset of LaTeX for the Web</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>James</given_name>
+          <surname>Carlson</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>212</first_page>
+        <last_page>214</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128carlson-minilatex</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128carlson-minilatex.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Why the LaTeX community should care about SGML</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>William</given_name>
+          <surname>Hammond</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>215</first_page>
+        <last_page>218</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128hammond-sgml</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128hammond-sgml.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="w3css-1">
+          <unstructured_citation>Bert Bos, Tantek &#x00C7;elik, Ian Hickson, &#x0026; H&#x00E5;kon Wium Lie, Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification, World Wide Web Consortium Recommendation, 7 June 2011. https://w3.org/TR/2011/REC-CSS2-20110607</unstructured_citation>
+        </citation>
+        <citation key="w3xml-2">
+          <unstructured_citation>Tim Bray, Jean Paoli, C.M. Sperberg-McQueen, Eve Maler, &#x0026; Fran&#x00E7;ois Yergeau, Extensible Markup Language (XML) 1.0 (Fifth Edition), World Wide Web Consortium Recommendation, 26 November 2008. https://w3.org/TR/2008/REC-xml-20081126</unstructured_citation>
+        </citation>
+        <citation key="html5-3">
+          <unstructured_citation>S. Faulkner, A. Eicholz, et al., HTML 5.2, World Wide Web Consortium Recommendation, 14 December 2017. https://w3.org/TR/2017/REC-html52-20171214</unstructured_citation>
+        </citation>
+        <citation key="goldfarb-4">
+          <unstructured_citation>Charles F. Goldfarb, The SGML Handbook, Clarendon Press, Oxford, 1990.</unstructured_citation>
+        </citation>
+        <citation key="bridge-5">
+          <unstructured_citation>William F. Hammond, &#x201c;GELLMU: A Bridge for Authors from LaTeX to XML&#x201d;, TUGboat 22:3 (2001), pp. 204&#x2013;207. https://tug.org/TUGboat/tb22-3/tb72hammond.pdf</unstructured_citation>
+        </citation>
+        <citation key="dual-6">
+          <unstructured_citation>William F. Hammond, &#x201c;Dual presentation with math from one source using GELLMU&#x201d;, TUGboat 28:3 (2007), pp. 306&#x2013;311. https://tug.org/TUGboat/tb28-3/tb90hammond.pdf A video of the presentation at TUG 2007, July 2007, in San Diego is available at http://zeeba.tv/conferences/tug-2007.</unstructured_citation>
+        </citation>
+        <citation key="profiles-7">
+          <unstructured_citation>William F. Hammond, &#x201c;LaTeX profiles as objects in the category of markup languages&#x201d;, TUGboat 31:2 (2010), pp. 240&#x2013;247. https://tug.org/TUGboat/tb31-2/tb98hammond.pdf. A video of the presentation at TUG 2010, June 2010, in San Francisco is available at http://zeeba.tv/conferences/tug-2010.</unstructured_citation>
+        </citation>
+        <citation key="glmcss-8">
+          <unstructured_citation>William F. Hammond, &#x201c;Can LaTeX profiles be rendered adequately with static CSS?&#x201d;, TUGboat 35:2 (2014), pp. 212&#x2013;218. https://tug.org/TUGboat/tb35-2/tb110hammond.pdf A video recording of the presentation at TUG 2014, June 2014, in Portland, Oregon is available at http://zeeba.tv/conferences/text/tex/tug-2014.</unstructured_citation>
+        </citation>
+        <citation key="lamport-9">
+          <unstructured_citation>Leslie Lamport, LaTeX: A Document Preparation System, 2nd edition, Addison-Wesley, 1994.</unstructured_citation>
+        </citation>
+        <citation key="pandoc-10">
+          <unstructured_citation>MacFarlane, John, Pandoc: A Universal Document Converter. https://pandoc.org</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>LaTeX technologies at work&#x2014;aesthetically beautiful PDFs on the fly from XML input: XML Page Composition (XPC) micro-service in the cloud</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>T</given_name>
+          <surname>Rishi</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Aravind</given_name>
+          <surname>Rajendran</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>CV</given_name>
+          <surname>Rajagopal</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>CV</given_name>
+          <surname>Radhakrishnan</surname>
+          <ORCID>https://orcid.org/0000-0001-7511-2910</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>219</first_page>
+        <last_page>222</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128rishi-xmlfly</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128rishi-xmlfly.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="b1-1">
+          <unstructured_citation>Ithal. https://ithal.io/main.html</unstructured_citation>
+        </citation>
+        <citation key="b2-2">
+          <unstructured_citation>R. Aravind Rajendran, Rishikesan Nair T. NEPTUNE&#x2014;a proofing framework for LaTeX authors. TUGboat 40(2):150&#x2013;152, 2019. https://tug.org/TUGboat/tb40-2/tb125rajendran-neptune.pdf</unstructured_citation>
+        </citation>
+        <citation key="b3-3">
+          <unstructured_citation>R. Rishikesan Nair T., Rajagopal C.V. TeXFolio&#x2014;a framework to typeset XML documents using TeX. TUGboat 40(2):147&#x2013;149, 2019. https://tug.org/TUGboat/tb40-2/tb125rishi-texfolio.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Tagging with LaTeX&#x2014; Part 1: Author considerations</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Ross</given_name>
+          <surname>Moore</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>223</first_page>
+        <last_page>242</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128moore-tagging1</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128moore-tagging1.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="GSA-508-1">
+          <unstructured_citation>United States Access Board; Section 508 ICT Refresh (January 2017). &#x00A7;E205.4 Electronic Content. https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#504-authoring-tools.</unstructured_citation>
+        </citation>
+        <citation key="NSF-FAQ-2">
+          <unstructured_citation>National Science Foundation&#x2014;FAQ; What is NSF&#x2019;s public access policy? https://www.nsf.gov/pubs/2016/nsf16009/nsf16009.jsp#q1</unstructured_citation>
+        </citation>
+        <citation key="pdfA3-3">
+          <unstructured_citation>ISO 19005-3:2012; Document Management&#x2014;Electronic document file format for long term preservation&#x2014;Part 3: Use of ISO32000-1 with support for embedded files (PDF/A-3). https://www.iso.org/standard/57229.html</unstructured_citation>
+        </citation>
+        <citation key="ISO14289-1-4">
+          <unstructured_citation>ISO14289-1:2012; Document management applications&#x2014;Electronic document file format enhancement for accessibility&#x2014;Part1: Use of ISO 32000-1 (PDF/UA-1). Technical Committee ISO/TC171/SC2. http://www.iso.org/iso/catalogue_detail.htm?csnumber=64599</unstructured_citation>
+        </citation>
+        <citation key="WCAG-5">
+          <unstructured_citation>WCAG 2.1; &#x2018;Web Content Accessibility Guidelines&#x2019;. W3C Recommendation 05 June 2018. W3C Consortium. https://www.w3.org/TR/WCAG21/</unstructured_citation>
+        </citation>
+        <citation key="bestPDF-6">
+          <unstructured_citation>&#x2018;Tagged PDF Best Practice Guide: Syntax&#x2019;. PDF Association. For developers implementing ISO 14289-1 (PDF/UA). Version 1.0 (June 2019). https://www.pdfa.org/resource/tagged-pdf-best-practice-guide-syntax/</unstructured_citation>
+        </citation>
+        <citation key="TUG2019talk-7">
+          <unstructured_citation>Moore,R.; &#x2018;LaTeX 508&#x2014;creating accessible PDFs&#x2019;. Conference talk presented at TUG 2019 in Palo Alto, July 2019, delivered remotely via Zoom. Movies and other related material can be found at http://web.science.mq.edu.au/~ross/TaggedPDF/TUG2019-movies/.</unstructured_citation>
+        </citation>
+        <citation key="NPSorig-8">
+          <unstructured_citation>Hung,L.-W., D.M.Duriscoe, J.M.White, B. Meadows, and S.J.Anderson. 2019. Night skies data report: Photometric assessment of night sky quality&#x2014;Chaco Culture National Historical Park. Natural Resource Report NPS/NRSS/NSNSD/NRR&#x2014;2019/1914. National Park Service, Fort Collins, Colorado. https://irma.nps.gov/DataStore/Reference/Profile/2260171</unstructured_citation>
+        </citation>
+        <citation key="NRSS-9">
+          <unstructured_citation>Natural Resource Stewardship and Science Directorate. National Park Service. https://www.nps.gov/orgs/1778/index.htm</unstructured_citation>
+        </citation>
+        <citation key="NPSlogo-10">
+          <unstructured_citation>&#x2018;History of the NPS Arrowhead&#x2019;. National Park Service. https://www.nps.gov/glac/learn/news/history-of-the-nps-arrowhead.htm</unstructured_citation>
+        </citation>
+        <citation key="WebAIM-11">
+          <unstructured_citation>WebAIM; Web accessibility in mind: &#x2018;Alternative Text&#x2019; page. https://webaim.org/techniques/alttext/</unstructured_citation>
+        </citation>
+        <citation key="AccessU-12">
+          <unstructured_citation>Accessible U: &#x2018;Alt Text&#x2019;. University of Minnesota web site. https://accessibility.umn.edu/core-skills/alt-text</unstructured_citation>
+        </citation>
+        <citation key="XMP-13">
+          <unstructured_citation>Adobe Systems Inc.; Extensible Metadata Platform (XMP). ISO standard (16684-1). https://www.adobe.com/products/xmp.html</unstructured_citation>
+        </citation>
+        <citation key="PDF17spec-14">
+          <unstructured_citation>Adobe Systems Inc.; PDF Reference 1.7, November 2006. Also available as [15]. https://www.adobe.com/devnet/pdf/pdf_reference.html</unstructured_citation>
+        </citation>
+        <citation key="ISO32000-15">
+          <unstructured_citation>ISO32000-1:2008; Document management&#x2014;&lt;wbr&gt;Portable document format(PDF1.7); Technical Committee ISO/TC171/SC2 (July 2008). http://www.iso.org/iso/catalogue_detail?csnumber=51502</unstructured_citation>
+        </citation>
+        <citation key="PDF20spec-16">
+          <unstructured_citation>ISO32000-2:2017; Document management&#x2014;&lt;wbr&gt;Portable document format&#x2014;Part 2: PDF2.0 Technical Committee ISO/TC171/SC2 (July 2017). https://www.iso.org/standard/63534.html</unstructured_citation>
+        </citation>
+        <citation key="APDC-17">
+          <unstructured_citation>Adobe Systems Inc.; Acrobat Pro DC. The complete PDF solution for any device. (Windows and Mac. only) https://acrobat.adobe.com/au/en/acrobat.html</unstructured_citation>
+        </citation>
+        <citation key="Preflight-18">
+          <unstructured_citation>Adobe Systems Inc.; &#x2018;Analyzing documents with the Preflight tool (Acrobat Pro)&#x2019;. https://helpx.adobe.com/au/acrobat/using/analyzing-documents-preflight-tool-acrobat.html</unstructured_citation>
+        </citation>
+        <citation key="RDF-19">
+          <unstructured_citation>W3C; Resource Description Framework (RDF). W3C Recommendation 25 February 2014. RDF 1.1 Concepts and Abstract Syntax. https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/ RDF 1.1 XML Syntax. https://www.w3.org/TR/rdf-syntax-grammar/</unstructured_citation>
+        </citation>
+        <citation key="TeXSX1-20">
+          <unstructured_citation>TeX StackExchange; &#x2018;Package footmisc causes pdfTeX error&#x2019;. question asked October 2015. https://tex.stackexchange.com/questions/268504/package-footmisc-causes-pdftex-error/516607.</unstructured_citation>
+        </citation>
+        <citation key="TeXSX2-21">
+          <unstructured_citation>TeX StackExchange; &#x2018;Footnotes misbehaving in report go to front page but behave correctly in other report&#x2019;. question asked September 2014. https://tex.stackexchange.com/questions/203439.</unstructured_citation>
+        </citation>
+        <citation key="winfonts-22">
+          <unstructured_citation>CTAN archive: winfonts&#x2014;a package to use the basic Windows TrueType fonts. Package and documentation by Paul Pichaureau, Paris, January 2006. Comprehensive TeX Archive Network. https://ctan.org/pkg/winfonts</unstructured_citation>
+        </citation>
+        <citation key="fixwin-23">
+          <unstructured_citation>CTAN archive: fix-winf&#x2014;fixes for Windows font usage with pdfLaTeX. Package and documentation by Ross Moore, December 2019. (to appear) Comprehensive TeX Archive Network. https://ctan.org/pkg/fix-winf</unstructured_citation>
+        </citation>
+        <citation key="uarial-24">
+          <unstructured_citation>CTAN archive: urw-arial&#x2014;URW Arial font pack for use with LaTeX. Package and documentation by Walter Schmidt, March 2006. https://ctan.org/pkg/urw-arial</unstructured_citation>
+        </citation>
+        <citation key="texlive-25">
+          <unstructured_citation>TeX Live&#x2014;document production system. Distributed by TeX user groups worldwide, since 1996. Major releases annually. https://tug.org/texlive</unstructured_citation>
+        </citation>
+        <citation key="shareLaTeX-26">
+          <unstructured_citation>ShareLaTeX, Online LaTeX Editor. https://www.sharelatex.com</unstructured_citation>
+        </citation>
+        <citation key="overleaf-27">
+          <unstructured_citation>Overleaf, Online LaTeX Editor. https://www.overleaf.com/about</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TUG 2020 abstracts</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jonathan</given_name>
+          <surname>Fine</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Amelia</given_name>
+          <surname>Hugill-Fontanel</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Paul</given_name>
+          <surname>Gessler</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Patrick</given_name>
+          <surname>Ion</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Marcel</given_name>
+          <surname>Kr&#xfc;ger</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>John</given_name>
+          <surname>MacFarlane</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Ross</given_name>
+          <surname>Moore</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Eric</given_name>
+          <surname>Mc Sween</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Norbert</given_name>
+          <surname>Preining</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Thomas</given_name>
+          <surname>Price</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Brandon</given_name>
+          <surname>Rhodes</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <surname>samcarter</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Michael</given_name>
+          <surname>Sharpe</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Paulo Ney</given_name>
+          <surname>de Souza</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>243</first_page>
+        <last_page>245</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128abstracts</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128abstracts.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The treasure chest</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>249</first_page>
+        <last_page>250</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128chest</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128chest.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TUG 2021 election</title>
+      </titles>
+      <contributors>
+        <organization sequence="first" contributor_role="author">TUG Elections committee</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>252</first_page>
+        <last_page>252</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-2/tb128elec</doi>
+        <timestamp>20250428170309</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-2/tb128elec.html</resource>
+      </doi_data>
+    </journal_article>
+  </journal></body>
+</doi_batch>

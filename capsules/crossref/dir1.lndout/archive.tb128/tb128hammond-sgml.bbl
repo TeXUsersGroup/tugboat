@@ -1,0 +1,57 @@
+\bibitem{w3css} Bert Bos, Tantek \c{C}elik, Ian Hickson, \&
+  H\r{a}kon Wium Lie, \emph{Cascading Style Sheets Level 2
+    Revision 1 (CSS 2.1) Specification}, World Wide Web
+  Consortium Recommendation, 7 June 2011.
+  \\\tbsurl{w3.org/TR/2011/REC-CSS2-20110607}
+
+\bibitem{w3xml} Tim Bray, Jean Paoli, C.M. Sperberg-McQueen,
+  Eve Maler, \& Fran\c{c}ois Yergeau, \emph{Extensible
+    Markup Language (XML) 1.0 (Fifth Edition)}, World Wide
+  Web Consortium Recommendation, 26 November 2008.
+  \tbsurl{w3.org/TR/2008/REC-xml-20081126}
+
+\newpage
+
+\bibitem{html5} S. Faulkner, A. Eicholz, et al., \emph{HTML~5.2},
+  World Wide Web Consortium Recommendation, 14 December 2017.
+  \\\tbsurl{w3.org/TR/2017/REC-html52-20171214}
+
+\bibitem{goldfarb} Charles F. Goldfarb, \emph{The SGML Handbook},
+  Clarendon Press, Oxford, 1990.
+
+\bibitem{bridge} William F. Hammond, ``GELLMU: A Bridge for
+  Authors from \LaTeX{} to XML'', \TUB\ 22:3
+  (2001), pp. 204--207.
+  \\\tbsurl{tug.org/TUGboat/tb22-3/tb72hammond.pdf}
+
+\bibitem{dual} William F. Hammond, ``Dual presentation with
+  math from one source using GELLMU'', \TUB\ 28:3
+  (2007), pp. 306--311.
+  \tbsurl{tug.org/TUGboat/tb28-3/tb90hammond.pdf}
+  A video of the presentation at TUG~2007,
+  July~2007, in San~Diego is available at
+  \url{http://zeeba.tv/conferences/tug-2007}.
+
+\bibitem{profiles} William~F.~Hammond, ``\LaTeX{} profiles
+  as objects in the category of markup languages'',
+  \TUB\ 31:2 (2010), pp. 240--247.
+  \tbsurl{tug.org/TUGboat/tb31-2/tb98hammond.pdf}.
+  A video of the presentation at TUG~2010,
+  June~2010, in San~Francisco is available at
+  \url{http://zeeba.tv/conferences/tug-2010}.
+
+\bibitem{glmcss} William~F.~Hammond, ``Can \LaTeX{}~profiles be rendered
+  adequately with static~CSS?'',
+  \TUB\ 35:2 (2014), pp. 212--218.
+  {\tbsurl{tug.org/TUGboat/tb35-2/tb110hammond.pdf}}
+  A video recording of the presentation at TUG~2014,
+  June~2014, in Portland, Oregon is available at
+  \url{http://zeeba.tv/conferences/text/tex/tug-2014}.
+
+\bibitem{lamport} Leslie Lamport, \emph{\LaTeX{}: A Document
+    Preparation System}, 2nd edition, Addison-Wesley, 1994.
+
+\bibitem{pandoc} MacFarlane, John,
+  \emph{Pandoc: A Universal Document Converter}.
+  \\\tbsurl{pandoc.org}
+\end{thebibliography}

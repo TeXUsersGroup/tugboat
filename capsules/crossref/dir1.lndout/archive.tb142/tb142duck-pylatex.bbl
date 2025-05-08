@@ -1,0 +1,29 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{1}
+
+\bibitem{fennema}
+J.~Fennema.
+\newblock {Py\LaTeX\ 1.4.2 documentation}.
+\newblock Accessed: 2025-02-15.
+\newblock \url{https://jeltef.github.io/PyLaTeX/current/}
+
+\bibitem{Mertz:TB34-3-302}
+A.~Mertz, W.~Slough.
+\newblock A gentle introduction to {Python\TeX}.
+\newblock \emph{TUGboat} 34(3):302--312, 2013.
+\newblock \url{https://tug.org/TUGboat/tb34-3/tb108mertz.pdf}
+
+\bibitem{poore}
+G.M.~Poore.
+\newblock {The \tbcode{pythontex} package}, version 0.18.
+\newblock \url{https://ctan.org/pkg/pythontex}
+
+\bibitem{Ziegenhagen:2019:CLP}
+U.~Ziegenhagen.
+\newblock Combining {\LaTeX} with {Python}.
+\newblock \emph{TUGboat} 40(2):126--128, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-2/tb125ziegenhagen-python.pdf}
+
+\end{thebibliography}

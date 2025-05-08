@@ -1,0 +1,20 @@
+Given that the universal format-to-format translator
+{Pandoc} is coming of age, \LaTeX{} authors are tempted
+to think that whatever \LaTeX{} they write can quickly be
+translated without worry to whatever other format may be
+required.
+
+Of course, that is not exactly true, but the use of an
+XML{} profile of \LaTeX{} can make it exactly true.
+However, an SGML{} profile of \LaTeX{} can provide
+closer emulation of classical \LaTeX{} than an XML{}
+profile.
+
+Most actors in the world of markup have restricted their use
+of SGML{} to XML{}.  For that reason software that
+handles SGML{} beyond the realm of XML{} seems to
+be falling out of maintenance.  If the \LaTeX{} community
+wishes to continue to be able to avail itself of the
+advantages of SGML{} for \LaTeX{} source emulation, it
+may fall on the \LaTeX{} community to maintain the extant
+SGML{} libraries.

@@ -1,0 +1,47 @@
+\begin{thebibliography}{10}
+
+\bibitem{amsmath}
+{amsmath}{\Dash}{AMS} mathematical facilities for {\LaTeX}.
+\newblock \url{https://ctan.org/pkg/amsmath}.
+
+\bibitem{AWSPolly}
+Amazon {P}olly.
+\newblock \url{https://aws.amazon.com/polly}.
+
+\bibitem{Balabolka}
+Balabolka text-to-speech program for {MS~Windows}.
+\newblock \url{https://cross-plus-a.com/balabolka.htm}.
+
+\bibitem{RDIS}
+C.~{Di Folco}, A.~Guez, et~al.
+\newblock Epidemiology of reading disability: A comparison of {DSM}-5 and
+  {ICD}-11 criteria.
+\newblock \emph{Scientific Studies of Reading}, 26(4):337--355, 2022.
+\newblock \url{https://doi.org/10.1080/10888438.2021.1998067}
+
+\bibitem{Festival}
+The {Festival} speech synthesis system.
+\newblock \\\url{https://www.cstr.ed.ac.uk/projects/festival}.
+
+\bibitem{latex3}
+The {\LaTeX} project.
+\newblock \url{https://latex-project.org/latex3/}.
+
+\bibitem{MSATTS}
+Microsoft {A}zure {TTS}.
+\newblock
+  \url{https://learn.microsoft.com/en-us/azure/ai-services/speech-service/text-to-speech}.
+
+\bibitem{siunitx}
+{siunitx}{\Dash}{A} comprehensive ({SI}) units package.
+\newblock \url{https://ctan.org/pkg/siunitx}.
+
+\bibitem{SpeLaTeX}
+Spe\LaTeX{\Dash}{Create PDF} documents with hyperlinks to audio fragments.
+\newblock \\\url{https://ctan.org/pkg/spelatex}.
+
+\bibitem{StrawberryPerl}
+{Strawberry Perl} for {MS Windows}.
+\newblock \\\url{https://strawberryperl.com/}.
+
+\end{thebibliography}

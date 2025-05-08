@@ -1,0 +1,4 @@
+The R package \tbcode{xdvir} provides a \DVI\ driver 
+that converts \DVI\ files into R objects.  This
+makes it possible to integrate \LaTeX\ fragments as labels 
+and annotations within R plots.

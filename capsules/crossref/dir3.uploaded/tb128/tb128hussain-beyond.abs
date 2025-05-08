@@ -1,0 +1,23 @@
+The Malayalam alphabet consists of 51 basic characters which combine to
+form more than 900 conjuncts (ligatures) in traditional script. Unlike
+Roman scripts, Malayalam has two kinds of ligatures, namely Horizontal
+and Vertical conjuncts. Vertical conjuncts in Malayalam are unusual
+among other Indic scripts, and almost never seen in Roman scripts.
+Anatomically there are two parts in vertical conjuncts \Dash Above
+Character and Below Character.
+
+Vertical conjuncts demand careful attention in space
+management in Malayalam types. Accommodating the below character in the
+below-base(line) space when adhering to Roman metrics poses serious
+inconveniences. Compressing all levels into a single level harms the
+shapes of around 700 vertical conjuncts, as Malayalam poses
+extreme cases of divergence while dealing with vertical conjuncts.
+Designing vertical conjuncts results in many deviations from the
+accepted norms of Roman typography. Deviating from Roman metrics poses
+problems of point sizes when typesetting documents using Malayalam and
+Latin text together.
+
+Thus, creating original Malayalam script fonts while satisfying
+dimensions of Roman fonts exerts formidable pressure on the designers.
+Malayalam typography looks at geometrical consistency in a different way
+than Roman typography.

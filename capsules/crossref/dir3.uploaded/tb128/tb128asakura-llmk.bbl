@@ -1,0 +1,21 @@
+\bibitem{arara}
+  Paulo Cereda, et al. \textit{arara\Dash The cool {\TeX} automation
+  tool}. \\\url{https://ctan.org/pkg/arara}
+
+\bibitem{latexmk}
+  John Collins. \textit{latexmk\Dash generate {\LaTeX} document}.
+  \url{https://ctan.org/pkg/latexmk}
+
+\bibitem{rubber}
+  Sebastian Kapfer. \textit{rubber\Dash a building system for {\LaTeX}
+  documents}. \\\url{https://launchpad.net/rubber/}
+
+\bibitem{spix}
+  Louis Paternault. \textit{SpiX\Dash Yet another {\TeX} compilation tool:
+  simple, human readable, no option, no magic}.
+  \\\url{https://ctan.org/pkg/spix}
+
+\bibitem{toml}
+  Tom Preston-Werner. \textit{TOML: Tom's Obvious Minimal Language}.
+  \url{https://toml.io/}
+\end{thebibliography}

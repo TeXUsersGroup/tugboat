@@ -1,0 +1,122 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi\input bibnames.sty \input path.sty \ifx \k \undefined \let \k = \c
+  \immediate\write16{Ogonek accent unavailable: replaced by cedilla}\fi
+  \hyphenation{An-wen-der-ver-ein-i-gung Co-lo-phon Deutsch-spra-chi-ge Hol-dys
+  Ko-lo-dziej-ska Lar-ra-bee mark-up Rijks-uni-ver-si-teit South-all}\input
+  bibnames.sty \input path.sty \ifx \k \undefined \let \k = \c
+  \immediate\write16{Ogonek accent unavailable: replaced by cedilla}\fi \ifx
+  \undefined \FEATPOST \def \FEATPOST {{\manfnt FEAT}\-{\manfnt
+  POST}\spacefactor1000 }\fi\ifx \undefined \MP \def \MP {{\manfnt
+  META}\-{\manfnt POST}\spacefactor1000 } \fi\ifx \undefined \Xy \def \Xy {{\sc
+  Xy}} \fi\ifx \undefined \manfnt \font\manfnt=logo10 \fi\ifx \undefined
+  \pdfTeX \def \pdfTeX {pdf\TeX}\fi\def \toenglish #1\endtoenglish{[{\em
+  English:} #1\unskip]} \hyphenation{ An-wen-der-ver-ei-ni-gung Bie-mes-der-fer
+  Co-lo-phon Deutsch-spra-chi-ge Ge-leit-wort Hol-dys Katz-en-beiss-er
+  Ko-lo-dziej-ska la-da-mi Lar-ra-bee Manu-scripts mark-up
+  Rijks-uni-ver-si-teit South-all Stutt-gart }
+\begin{thebibliography}{10}
+
+\bibitem{Fischer:2020}
+U.~Fischer.
+\newblock Creating accessible pdfs with {\LaTeX}.
+\newblock {\em {\TUB{}}} 41(1):26--28, 2020.
+\newblock \url{https://tug.org/TUGboat/tb41-1/tb127fischer-accessible.pdf}
+
+\bibitem{Goosens:LC94}
+M.~Goossens, F.~Mittelbach, A.~Samarin.
+\newblock {\em The {\LaTeX} Companion}.
+\newblock Ad{\-d}i{\-s}on-Wes{\-l}ey, Reading, MA, USA, 1994.
+
+\bibitem{Lamport:1994:LDP}
+L.~Lamport.
+\newblock {\em {\LaTeX}: A Document Preparation System: User's Guide and
+  Reference Manual}.
+\newblock Ad{\-d}i{\-s}on-Wes{\-l}ey, Reading, MA, USA, second edition, 1994.
+
+\bibitem{l3news}
+{{\LaTeX{} Project Team}}.
+\newblock \latex3 news, 2009--.
+\newblock \url{https://latex-project.org/news/latex3-news/}.
+
+\bibitem{latexrelease-package}
+{{\LaTeX{} Project Team}}.
+\newblock The \pkg{latexrelease} package, 2018.
+\newblock \url{https://ctan.org/pkg/latexrelease}.
+
+\bibitem{xTeam:2019:LNIb}
+{{\LaTeX} Project Team}.
+\newblock {\LaTeX} news, issue~30, {October 2019}.
+\newblock {\em {\TUB{}}} 40(3):251--254, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-3/tb126ltnews30.pdf}
+\newpage
+\bibitem{Mittelbach:2018:RCP}
+F.~Mittelbach.
+\newblock A rollback concept for packages and classes.
+\newblock {\em TUGboat} 39(2):107--112, 2018.
+\newblock \url{https://tug.org/TUGboat/tb39-2/tb122mitt-rollback.pdf}
+
+\bibitem{Mittelbach:TB35-3-287}
+F.~Mittelbach, W.~Robertson, {{\LaTeX3} team}.
+\newblock \pkg{l3build}{\Dash}{A} modern {Lua} test suite for {\TeX}
+  programming.
+\newblock {\em TUGboat} 35(3):287--293, 2014.
+\newblock \url{https://tug.org/TUGboat/tb35-3/tb111mitt-l3build.pdf}
+
+\bibitem{Mittelbach:TB10-4-681}
+F.~Mittelbach, R.~Sch{\"o}pf.
+\newblock {With {\LaTeX} into the nineties}.
+\newblock {\em TUGboat} 10(4):681--690, Dec. 1989.
+\newblock \url{https://tug.org/TUGboat/tb10-4/tb26mitt.pdf}
+
+\bibitem{Moore:TB30-2-170}
+R.~Moore.
+\newblock Ongoing efforts to generate ``tagged {PDF}'' using {{pdf\TeX}}.
+\newblock {\em TUGboat} 30(2):170--175, 2009.
+\newblock \url{https://tug.org/TUGboat/tb30-2/tb95moore.pdf}
+
+\bibitem{Moore:2018:IPS}
+R.~Moore.
+\newblock Implementing {PDF} standards for mathematical publishing.
+\newblock {\em TUGboat} 39(2):131--135, 2018.
+\newblock \url{https://tug.org/TUGboat/tb39-2/tb122moore-pdf.pdf}
+
+\bibitem{Team:TB28-1-24}
+{\LaTeX}.~{Project Team}.
+\newblock {\LaTeX} news, issue 17.
+\newblock {\em TUGboat} 28(1):24--25, 2007.
+\newblock \url{https://tug.org/TUGboat/tb28-1/tb88ltnews.pdf}
+
+\bibitem{LPT:TB35-1-22}
+{\LaTeX}.~{Project Team}.
+\newblock {\LaTeX3} news, issue 9.
+\newblock {\em TUGboat} 35(1):22--26, 2014.
+\newblock \url{https://tug.org/TUGboat/tb35-1/tb109l3news.pdf}
+
+\bibitem{xRadhakrishnan:TB36-2-136}
+C.~V. Radhakrishnan, \Thanh, et~al.
+\newblock Generating \acro{PDF/X}- and \acro{PDF/A}-compliant \acro{PDF}s with
+  {pdf\TeX}{\Dash}\texttt{pdfx.sty}.
+\newblock {\em {\TUB{}}} 36(2):136--142, 2015.
+\newblock \url{https://tug.org/TUGboat/tb36-2/tb113radhakrishnan.pdf}
+
+\bibitem{Rowley:2019:ALK}
+C.~Rowley, U.~Fischer, F.~Mittelbach.
+\newblock Accessibility in the {\LaTeX} kernel{\Dash}experiments in {Tagged
+  PDF}.
+\newblock {\em TUGboat} 40(2):157--158, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-2/tb125rowley-tagpdf.pdf}
+
+\bibitem{Ruckert:2019:DHF}
+M.~Ruckert.
+\newblock The design of the {HINT} file format.
+\newblock {\em TUGboat} 40(2):143--146, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-2/tb125ruckert-hint.pdf}
+
+\bibitem{ruckert-tug20}
+M.~Ruckert.
+\newblock The {HINT} project: Status and open questions.
+\newblock {\em {\TUB{}}} 41(2):208--211, 2020.
+\newblock \url{https://tug.org/TUGboat/tb41-2/tb128ruckert-hint.pdf}
+
+\end{thebibliography}

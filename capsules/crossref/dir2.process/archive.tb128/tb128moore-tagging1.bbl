@@ -1,0 +1,118 @@
+
+\bibitem{GSA-508}United~States~Access~Board; Section~508 ICT Refresh (January 2017). \S E205.4 Electronic Content. 
+\url{https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#504-authoring-tools}.
+
+\bibitem{NSF-FAQ} National Science Foundation\Dash \acro{FAQ}; What is \acro{NSF}'s public access policy?
+\url{https://www.nsf.gov/pubs/2016/nsf16009/nsf16009.jsp#q1}
+
+\bibitem{pdfA3}\ISO\ 19005-3:2012;
+Document Management\Dash Electronic document file format for long term
+preservation\Dash Part~3: 
+ Use of \ISO 32000-1 with support for embedded files (\PDFA-3).
+\url{https://www.iso.org/standard/57229.html}
+
+\bibitem{ISO14289-1}{\ISO}\,14289-1:2012;
+Document management applications\,---\,Electronic document %\allowbreak
+file format enhancement for accessibility\,---\,Part\,1: Use of \ISO\ 32000-1 (\PDFUA-1).
+Technical Committee \acro{ISO/TC\,171/SC\,2}. %(August 2012). 
+\url{http://www.iso.org/iso/catalogue_detail.htm?csnumber=64599}
+
+\bibitem{WCAG} \acro{WCAG} 2.1; `Web Content Accessibility Guidelines'. 
+\acro{W3C} Recommendation 05 June 2018.
+\acro{W3C} Consortium.
+\url{https://www.w3.org/TR/WCAG21/}
+
+\bibitem{bestPDF} `Tagged PDF\ Best Practice Guide: Syntax'. \PDF\ Association.
+For developers implementing \ISO\ 14289-1 (\PDFUA).
+Version 1.0 (June 2019).
+\url{https://www.pdfa.org/resource/tagged-pdf-best-practice-guide-syntax/}
+
+\bibitem{TUG2019talk} Moore,\,R.; `\LaTeX~508\,---\,creating accessible \PDF{}s'.
+Conference talk presented at TUG 2019 in Palo Alto, July 2019, delivered remotely via Zoom.
+Movies and other related material can be found at \url{http://web.science.mq.edu.au/~ross/TaggedPDF/TUG2019-movies/}.
+
+\bibitem{NPSorig} Hung,\,\,L.-W., D.\,M.\,Duriscoe, J.\,M.\,White, B.~Mea\-dows, and S.\,J.\,Anderson. 2019. 
+Night skies data report: Photometric assessment of night sky quality\,---\,Chaco Culture National Historical Park. 
+Natural Resource Report \acro{NPS/NRSS/NSNSD/NRR}\,---\,2019/1914. 
+National Park Service, Fort Collins, Colorado.
+\url{https://irma.nps.gov/DataStore/Reference/Profile/2260171}
+
+\bibitem{NRSS} Natural Resource Stewardship and Science Directorate.
+National Park Service.
+\url{https://www.nps.gov/orgs/1778/index.htm}
+
+\bibitem{NPSlogo} `History of the \acro{NPS} Arrowhead'. 
+National Park Service.
+\url{https://www.nps.gov/glac/learn/news/history-of-the-nps-arrowhead.htm}
+
+\bibitem{WebAIM} Web\,\acro{AIM}; Web accessibility in mind: `Alternative Text' page.
+\url{https://webaim.org/techniques/alttext/}
+
+\bibitem{AccessU} Accessible U: `Alt Text'. University of Minnesota web site.
+\url{https://accessibility.umn.edu/core-skills/alt-text}
+
+\bibitem{XMP} Adobe Systems Inc.; Extensible Metadata Platform (XMP). \ISO\ standard (16684-1).
+\url{https://www.adobe.com/products/xmp.html}
+
+\bibitem{PDF17spec}
+Adobe Systems Inc.; %ISO 32000-1:2008;
+\acro{PDF} Reference 1.7, November 2006.
+Also available as [15].
+\url{https://www.adobe.com/devnet/pdf/pdf_reference.html}
+
+\bibitem{ISO32000}{\ISO}\,32000-1:2008;
+Document management\,---\,\allowbreak Portable document format\,(\PDF\,1.7);
+Technical Committee \acro{ISO/TC\,171/SC\,2} (July~2008).
+\url{http://www.iso.org/iso/catalogue_detail?csnumber=51502}
+
+\bibitem{PDF20spec}{\ISO}\,32000-2:2017;
+Document management\,---\,\allowbreak Portable document format\,---\,Part 2: \PDF\,2.0
+Technical Committee \acro{ISO/TC\,171/SC\,2} (July 2017).
+\url{https://www.iso.org/standard/63534.html}
+
+\bibitem{APDC} Adobe Systems Inc.; {Acrobat Pro \acro{DC}}. 
+The complete \PDF\ solution for any device. (Windows and Mac. only)
+\url{https://acrobat.adobe.com/au/en/acrobat.html}
+
+\bibitem{Preflight} Adobe Systems Inc.; `Analyzing documents with the Preflight tool (Acrobat Pro)'.
+\url{https://helpx.adobe.com/au/acrobat/using/analyzing-documents-preflight-tool-acrobat.html}
+
+\bibitem{RDF} \acro{W3C};  
+Resource Description Framework~(\acro{RDF}).
+\acro{W3C} Recommendation 25~February~2014.\\
+\acro{RDF} 1.1 Concepts and Abstract~Syntax.\\
+\url{https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/}
+\acro{RDF} 1.1 \XML\ Syntax.
+\url{https://www.w3.org/TR/rdf-syntax-grammar/}
+
+\bibitem{TeXSX1} \TeX\ StackExchange;  `Package footmisc causes \pdftex\ error'.
+question asked October 2015. \url{https://tex.stackexchange.com/questions/268504/package-footmisc-causes-pdftex-error/516607}.
+
+\bibitem{TeXSX2} \TeX\ StackExchange;  `Footnotes misbehaving in report go to front page but behave correctly in other report'.
+question asked September 2014. \url{https://tex.stackexchange.com/questions/203439}.
+
+\bibitem{winfonts} \CTAN\ archive: \textsf{winfonts}\,---\,a package to use the basic Windows TrueType fonts.
+Package and documentation by Paul Pichaureau, Paris, January 2006. 
+Comprehensive \TeX\ Archive Network. 
+\url{https://ctan.org/pkg/winfonts}
+
+\bibitem{fixwin}  \CTAN\ archive: \textsf{fix-winf}\,---\,fixes for Windows font usage with \pdfLaTeX.
+Package and documentation by Ross Moore, December 2019. (to appear)
+Comprehensive \TeX\ Archive Network. 
+\url{https://ctan.org/pkg/fix-winf}
+
+\bibitem{uarial}  \CTAN\ archive: \textsf{urw-arial}\,---\,URW Arial font pack for use with \LaTeX.
+Package and documentation by Walter Schmidt, March 2006.
+\url{https://ctan.org/pkg/urw-arial}
+
+\bibitem{texlive} \TeX\ Live\Dash document production system.
+Distributed by \TeX\ user groups worldwide, since 1996. Major releases annually. 
+\url{https://tug.org/texlive}
+%
+\bibitem{shareLaTeX} Share\textsf{LaTeX}, Online \LaTeX\ Editor.\\
+%ShareLaTeX is now part of Overleaf.
+\url{https://www.sharelatex.com}
+
+\bibitem{overleaf} \textsf{Overleaf}, Online \LaTeX\ Editor.
+\url{https://www.overleaf.com/about}
+\end{thebibliography}

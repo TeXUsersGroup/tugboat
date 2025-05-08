@@ -1,0 +1,7 @@
+  This paper illustrates the use of the \TeX\ profiler for
+  program analysis. Using as an example the index generation
+  of the CWEB\ system for \PDF\ documents, it shows how
+  finite state machines can be implemented using \TeX\ macros,
+  and that input file processing using this technique is not
+  only highly efficient but also leads to clean and compact
+  code.

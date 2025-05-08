@@ -1,0 +1,67 @@
+% this file is read twice
+%   first:  the shortcuts for the references are defined
+%   second: the list for references is output
+% start the file with \startbibrefs and end it with \par
+% NOTE: a § can't be used in front of \endbib, move it to the previuos line
+\startbibrefs\begingroup
+\ninepoint
+\emergencystretch=0.03\hsize
+\def\newline{\hfil\break}%
+\raggedright
+\frenchspacing
+\hyphenpenalty=9000
+\def\URLaccessdate(#1){}% suppress ``accessed <date>'' info after URLs
+
+\bibitem{citeRB} Robert Bringhurst,
+   {\sl The Elements of Typographic Style}, 4th edition, version 4.2,
+   Seattle, Washington: Hartley \& Marks, 2016.
+
+\bibitem{citeMC} Max Chernoff, ``Automatically removing widows and
+   orphans with {lua-widow-control}'',
+   {\sl\TUB\ \bf43}:1, 2022, 28--39.
+   (See also {\bf43}:3, 2022, 340--342.)\par
+   \biburl https://www.tug.org/TUGboat/tb43-1/tb133chernoff-widows.pdf\endurl
+   \endbib(2024-06-15)
+%   \bibcont Update in {\sl\TUB\ \bf43}:3, 2022, 340--342.\par
+%   \biburl https://tug.org/TUGboat/tb43-3/tb135chernoff-lwc.pdf\endurl
+%   \endbib(2024-07-02)
+%   \bibcont See also:\par
+%   \biburl https://www.ctan.org/pkg/lua-widow-control\endurl
+%   \endbib(2024-06-15)
+
+\bibitem{citeCMoS} {\sl The Chicago Manual of Style},
+   15th~edition,\newline
+   Chicago, Illinois: University of Chicago Press, 2003.
+
+\bibitem{citePI} Paul Isambert, ``Strategies against widows'',\newline
+   {\sl \TUB\ \bf 31}:1 (2010), 12--17.\par
+   \biburl https://www.tug.org/TUGboat/tb31-1/tb97isambert.pdf\endurl
+   \endbib(2024-10-01)
+
+\bibitem{citeCTvA} Donald E. Knuth, \TB,
+   Volume~A of \CandT, Boston, Massachusetts: \AW, 1984.
+
+\bibitem{citeCTvB} Donald E. Knuth, \TP,\newline
+   Volume~B of \CandT,
+   Boston, Massachusetts: \AW, 1986.
+
+\bibitem{citeFM} Frank Mittelbach, ``The {widows-and-orphans}\newline package'',
+   {\sl \TUB\ \bf 39}:3 (2018), 252--262.\par
+   \biburl https://www.tug.org/TUGboat/tb39-3/tb123mitt-widows-code.pdf\endurl
+   \endbib(2024-10-01)
+
+\bibitem{citeUW} Udo Wermuth, ``\cs{topmark} in output routines
+   without \cs{shipout}'',
+   {\sl \TUB\ \bf 45}:3 (2024), 382--387.\par
+   \biburl https://www.tug.org/TUGboat/tb45-3/tb141wermuth-silent.pdf\endurl
+   \endbib(2024-12-27)
+
+\bibitem{citeWF} Hans Peter Willberg, Friedrich Forssman,\newline
+   {\sl Lesetypographie}, 2nd printing,
+   Mainz, Germany: Verlag Hermann Schmidt, 2005.
+
+\end{thebibliography}
+% Local Variables:
+% coding: iso-latin-9-unix
+% ispell-local-dictionary: "en_US"
+% End:

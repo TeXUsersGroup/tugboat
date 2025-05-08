@@ -1,0 +1,7 @@
+   \texttt{macrocode} environments in \texttt{doc} implementation text
+are typeset
+in the \cs{small} font size. The \texttt{dtxmacrofont} package allows
+the package author to
+select the font size through four declarations and reimplements
+\cs{MacroFont} and \cs{AltMacroFont} to typeset \texttt{macrocode}
+in the selected font size.

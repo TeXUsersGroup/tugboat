@@ -1,0 +1,27 @@
+  This paper provides an overview of new tools for \LaTeX\ package
+  authors that I created during the development of \textsf{minted}
+  [7] version 3.
+  
+  The fvextra [8]
+  package can now save the contents of an environment verbatim in
+  memory, in a form that allows line-by-line iteration.  Then the
+  saved contents or a modified version can later be typeset or
+  written to an external file.
+
+  The new \textsf{latex2pydata}
+  \LaTeX\ package [9] allows key-value data to be
+  written to a file in Python literal format [11].
+  Alternatively, data can be accumulated in an in-memory buffer which
+  allows hashing or modification before optionally being written to
+  a file.  The new \textsf{latex2pydata} Python
+  package~[6] provides data loading and processing
+  capabilities for data saved by the \textsf{latex2pydata}
+  \LaTeX\ package.  Together, these packages make it possible to pass
+  structured data from \LaTeX\ into Python.
+  
+  The new
+  \textsf{latexrestricted}~[5] Python package
+  provides access to the file system and subprocesses in a manner
+  consistent with \LaTeX\ security settings.  This simplifies the
+  process of creating Python executables that meet the security
+  requirements for \LaTeX\ restricted shell escape.

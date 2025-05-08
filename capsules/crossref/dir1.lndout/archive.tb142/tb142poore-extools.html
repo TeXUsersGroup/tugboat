@@ -1,0 +1,87 @@
+<!--#include virtual="/header.html"-->
+<title>New tools for LaTeX package authors: Buffering, hashing, caching, serializing, and executing
+       - TUGboat 46:1 (2025) - TeX Users Group</title>
+</head><body>
+
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+<h1><a href="/TUGboat/tb46-1/">TUGboat 46:1</a> (2025)<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
+
+<p><b>Title</b>: New tools for LaTeX package authors: Buffering, hashing, caching, serializing, and executing</p>
+
+<p><b>Summary</b>:
+new packages and features to help with verbatim processing, calling external programs, and more.</p>
+
+<p><b>Full text of article</b>: <a href="https://tug.org/members/TUGboat/tb46-1/tb142poore-extools.pdf">available to TUG members</a> (<a href="/join.html">join TUG</a>);
+will be publicly available after the next issue is published.</p>
+
+<p><b>Author</b>:
+<a href="/TUGboat/Contents/listauthor.html#Poore,GeoffreyM.">Geoffrey M. Poore</a></p>
+
+<p><b>Publication</b>: <a href="/TUGboat/tb46-1/">TUGboat
+volume 46, number 1</a> (2025),
+pages&nbsp;60&ndash;68</p>
+
+<p><b>DOI</b> (this page):
+<a href="https://doi.org/10.47397/tb/46-1/tb142poore-extools">10.47397/tb/46-1/tb142poore-extools</a>
+<br><small>(<a href="https://doi.org/10.47397/tb/46-1/tb142poore-minted3">previous doi</a>
+- <a href="https://doi.org/10.47397/tb/46-1/tb142starynovotny-piping-yaml">next doi</a>)</small></p>
+
+<p><b>Category</b>:
+<a href="/TUGboat/Contents/listkeyword.html#CatTAGLaTeX">LaTeX</a></p>
+      
+<p><b>Difficulty</b>: Advanced</p>
+
+<p><b>Abstract</b>:
+This paper provides an overview of new tools for LaTeX package
+authors that I created during the development of minted
+[7] version 3.</p>
+<p>The fvextra [8]
+package can now save the contents of an environment verbatim in
+memory, in a form that allows line-by-line iteration. Then the
+saved contents or a modified version can later be typeset or
+written to an external file.</p>
+<p>The new latex2pydata
+LaTeX package [9] allows key-value data to be
+written to a file in Python literal format [11].
+Alternatively, data can be accumulated in an in-memory buffer which
+allows hashing or modification before optionally being written to
+a file. The new latex2pydata Python
+package [6] provides data loading and processing
+capabilities for data saved by the latex2pydata
+LaTeX package. Together, these packages make it possible to pass
+structured data from LaTeX into Python.</p>
+<p>The new
+latexrestricted [5] Python package
+provides access to the file system and subprocesses in a manner
+consistent with LaTeX security settings. This simplifies the
+process of creating Python executables that meet the security
+requirements for LaTeX restricted shell escape.</p>
+
+<p><b>References</b>:</p>
+<ol class="tugbbl">
+<li class="tugbbl">G. Brandl, Pygments contributors. Pygments: Python syntax highlighter, version 2.19.1, 2025. <a href="https://pygments.org">pygments.org</a></li>
+<li class="tugbbl">Ecma International. ECMA-404: The JSON Data Interchange Syntax, 2017. <a href="https://ecma-international.org/publications-and-standards/standards/ecma-404">ecma-international.org/publications-and-standards/standards/ecma-404</a></li>
+<li class="tugbbl">P. Gonz&#x00e1;lez. The scontents package, version 2.1, 2024. <a href="https://ctan.org/pkg/scontents">ctan.org/pkg/scontents</a></li>
+<li class="tugbbl">H. Oberdiek and Oberdiek Package Support Group. The pdftexcmds package, version 0.33, 2020. <a href="https://ctan.org/pkg/pdftexcmds">ctan.org/pkg/pdftexcmds</a></li>
+<li class="tugbbl">G.M. Poore. latexrestricted&#x2014;Python library for creating executables compatible with LaTeX restricted shell escape, version 0.6.2, 2024. <a href="https://pypi.org/project/latexrestricted">pypi.org/project/latexrestricted</a></li>
+<li class="tugbbl">G.M. Poore. latex2pydata&#x2014;load data from LaTeX in Python literal format, version 0.5.0, 2025. <a href="https://pypi.org/project/latex2pydata">pypi.org/project/latex2pydata</a></li>
+<li class="tugbbl">G.M. Poore. The minted package, version 3.6.0, 2025. <a href="https://ctan.org/pkg/minted">ctan.org/pkg/minted</a></li>
+<li class="tugbbl">G.M. Poore. The fvextra package, version 1.12.0, 2025. <a href="https://ctan.org/pkg/fvextra">ctan.org/pkg/fvextra</a></li>
+<li class="tugbbl">G.M. Poore. The latex2pydata package, version 0.5.0, 2025. <a href="https://ctan.org/pkg/latex2pydata">ctan.org/pkg/latex2pydata</a></li>
+<li class="tugbbl">Python Software Foundation. ast&#x2014;Abstract Syntax Trees, 2024. <a href="https://docs.python.org/3/library/ast.html#ast.literal_eval">docs.python.org/3/library/ast.html#ast.literal_eval</a></li>
+<li class="tugbbl">Python Software Foundation. Lexical analysis, 2024. <a href="https://docs.python.org/3/reference/lexical_analysis.html#literals">docs.python.org/3/reference/lexical_analysis.html#literals</a></li>
+<li class="tugbbl">Python Software Foundation. pathlib&#x2014;Object-oriented filesystem paths, 2025. <a href="https://docs.python.org/3/library/pathlib.html">docs.python.org/3/library/pathlib.html</a></li>
+<li class="tugbbl">Python Software Foundation. subprocess&#x2014;Subprocess management, 2025. <a href="https://docs.python.org/3/library/subprocess.html">docs.python.org/3/library/subprocess.html</a></li>
+<li class="tugbbl">T. Sturm. The tcolorbox package, version 6.4.1, 2024. <a href="https://ctan.org/pkg/tcolorbox">ctan.org/pkg/tcolorbox</a></li>
+<li class="tugbbl">The LaTeX Project. The l3seq module, version 2025-01-18, 2025. <a href="https://ctan.org/pkg/l3kernel">ctan.org/pkg/l3kernel</a></li>
+<li class="tugbbl">The LaTeX Project Team. The shellesc package, version 1.0d, 2023. <a href="https://ctan.org/pkg/shellesc">ctan.org/pkg/shellesc</a></li>
+<li class="tugbbl">The LaTeX3 Project. The l3regex package, version 2024-12-09, 2024. <a href="https://ctan.org/pkg/l3regex">ctan.org/pkg/l3regex</a></li>
+<li class="tugbbl">T. Van Zandt, H. Voss. The fancyvrb package, version 4.5c, 2024. <a href="https://ctan.org/pkg/fancyvrb">ctan.org/pkg/fancyvrb</a></li>
+</ol>
+
+<hr><small><a href="/TUGboat/">TUGboat</a> 46:1, 2025 (<a href="/TUGboat/tb46-1/">issue 142</a>)
+&nbsp; [generated 2025-05-07]
+</small><br><!--#include virtual="/footer.html"-->

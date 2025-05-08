@@ -1,0 +1,18 @@
+Although \LaTeX\ is widely used in academia and education, only a few
+developers use it to create \PDF{}s in web applications or \acro{IT} systems.
+This seems strange considering that many developers are well exposed to
+these academic and scientific milieux \Dash and that many recognize \LaTeX\
+for its superior typesetting qualities.
+
+In this paper, we try to answer two questions:
+
+\begin{itemize}
+    \item Why use of \LaTeX\ in \acro{IT} systems is not widespread \Dash and
+    not even common?
+    \item How can we change this state of affairs?
+\end{itemize}
+
+In this article we give an overview of LaTeX-on-\HTTP\
+(\tbsurl{github.com/YtoTech/latex-on-http}), an attempt to commodify and
+simplify \LaTeX\ use in web applications or \acro{IT} systems, and to
+ease its adoption by modern developers.
