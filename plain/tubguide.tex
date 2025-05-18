@@ -626,14 +626,13 @@ produces the figure at the top of this column or the next.
 
 \input code.vbm
 
-Figures spanning columns at the top and bottom of a page are currently
-supported only on the first page of an article, but we expect they
-will soon be allowed on any page (a general rewrite of the output
-routine is in progress).  |\twocolfigure| (terminated by |\endfigure|)
-starts up such a figure and currently {\it must\/} occur before any
-material has been typeset on the first page (i.e., {\it before\/}
-|\article|).
-
+Figures spanning columns at the top and bottom of a page are
+unfortunately supported only on the first page of an article.
+|\twocolfigure| (terminated by |\endfigure|) starts up such a figure and
+currently {\it must\/} occur before any material has been typeset on the
+first page (i.e., {\it before\/} |\article|).
+(The workaround is to avoid macros and position the desired figure as a
+box, positioning manually.)
 
 Macros |\onecol|, |\twocol|, and |\threecol| provide one-, two-, and
 three-column layouts, but these cannot currently be intermixed on a
@@ -645,35 +644,36 @@ to get to the next page.  |\newcol| is just |\par\vfill\eject|.
 \subhead * Command list summary *
 Tags are listed in the order discussed.  Options are
 listed under tags.
-||
+\verbatim
 \title
 \author
 \address
 \netaddress
-   \network
+  \network
 \signature
 \article
 \makesignature
 \endarticle
 \head
 \subhead
-\subsubhead
+  \subsubhead
+\subtext ... \endtext
 \list
-   \numbered
-   \romannumeraled
-   \lettered
-   \Lettered
-   \ruled
-   \tag{...}
+  \numbered
+  \romannumeraled
+  \lettered
+  \Lettered
+  \ruled
+  \tag{...}
 \item
-   \tag{...}
+  \tag{...}
 \everylist
 \verbatim
-   ||...||
-   \numbered
-   \ruled
-   \inputfromfile{...}
-   \outputtofile{...}
+  ||...||
+  \numbered
+  \ruled
+  \inputfromfile{...}
+  \outputtofile{...}
 \verbinline
   |...|
 \verbfile
@@ -684,11 +684,11 @@ listed under tags.
   \tbmailto
   \tbhref
 \figure
-   \mid
-   \bot
-   \caption{...}
+  \mid
+  \bot
+  \caption{...}
 \twocolfigure
-||
+\endverbatim
 
 
 \head * Common abbreviations and utilities *

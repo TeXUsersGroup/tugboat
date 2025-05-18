@@ -1,3 +1,15 @@
+2025-05-18  Karl Berry  <karl@freefriends.org>
+
+	* tubguide.tex: use \verbatim...\endverbatim for list of commands,
+	so we can include || and | in the list.
+	https://github.com/TeXUsersGroup/tugboat/issues/5
+	
+	Mention \subtext...\endtext in list, but don't try to document
+	since it seems to have been essentially never used.
+	https://github.com/TeXUsersGroup/tugboat/issues/4
+	
+	Thanks to Luis Rivera for these reports.
+
 2025-05-03  Karl Berry  <karl@freefriends.org>
 
 	* microtype-plain-test.tex: new file.
