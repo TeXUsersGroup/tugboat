@@ -2,7 +2,7 @@
 %% @texfile{
 %%     filename   = "tubguide.tex",
 %%     version    = "1.32",
-%%     date       = "2025-05-01",
+%%     date       = "2025-06-07",
 %%     filetype   = "TUGboat Authors' Guide",
 %%     copyright  = "Copyright 1989, 1992, 2006, 2012-2025 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
@@ -16,7 +16,7 @@
 %%     supported  = "yes",
 %%     abstract   = "This file is an updated version of the file
 %%                   that produced the original Authors' Guide in
-%%                   TUGboat 10, no. 3, November 1989.",
+%%                   TUGboat vol.10, no.3, November 1989.",
 %%     }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -34,7 +34,7 @@
 % ****************************************************************
 
 \pageno=1
-\def\rtitlex{\def\tubfont{\tenpoint\rm}\TUB{} Authors' Guide, March 2022}
+\def\rtitlex{\def\tubfont{\tenpoint\rm}\TUB{} Authors' Guide, June 2025}
 \def\midrtitle{}
 
 \title *\TUB\/ authors' guide*
@@ -87,18 +87,19 @@ tugboat.com}, but that notation was in conflict with conventions of
 \acro{MS-DOS} and other operating systems; no conflicts are known to
 exist for |.cmn|.}
 
-\subhead * General description of tags * We attempt wherever possible to
-tag the various elements of \TUB\/ articles in a ``generic'' way,
-modified in some respects by convenience.  Authors and editors need
-tools to shape their articles to the form they desire, but we also wish
-to encourage a tagging style which is appropriate for electronic
-interchange.  It seems unfair to expect much thought from authors
-concerning the markup of their information if we only provide a bag of
-widgets and do-hickies to hack and pound an article together.  The tags
-whose use we encourage are the higher-level tags that mark the logical
-document structure.  Below these are formatting macros that we recognize
-may be essential for certain applications.  Both sorts of tags are
-described in the following article.
+\subhead * General description of tags *
+
+We attempt wherever possible to tag the various elements of \TUB\/
+articles in a ``generic'' way, modified in some respects by convenience.
+Authors and editors need tools to shape their articles to the form they
+desire, but we also wish to encourage a tagging style which is
+appropriate for electronic interchange. It seems unfair to expect much
+thought from authors concerning the markup of their information if we
+only provide a bag of widgets and do-hickies to hack and pound an
+article together. The tags whose use we encourage are the higher-level
+tags that mark the logical document structure. Below these are
+formatting macros that we recognize may be essential for certain
+applications. Both sorts of tags are described in the following article.
 
 Generally, to ``mark up'' some input |<foo>|, a tag |\xxx| will precede
 |<foo>| and |\endxxx| will follow, as in: |\xxx <foo>\endxxx|.
@@ -258,6 +259,36 @@ produces
 |\vfil\end| for most uses.  We redefine it as |\endinput| to
 assemble streams of articles in \TUB.
 
+\subhead * Footnotes *
+
+The \TUB\ plain macros do not provide any substantive support for
+footnotes beyond plain \TeX. For example, there is no command for
+automatically-numbered footnotes. The present guide uses this construct
+for its numbered footnotes, hard-coding the number:
+
+||
+an article with\footnote
+  {$^2$}
+  {\xEdNoteThe \TUB{} email ...
+||
+
+For a footnote without a number, \plain's \cs{vfootnote} is used. On
+the first page of this document:
+
+||
+\vfootnote{}{Revised March 1992 ...
+||
+
+\subhead * Subtext *
+
+The present manual includes some text in a smaller font (9pt) and set
+off by vertical space above and below. These blocks are created by the
+|\subtext| command. We don't recommend using it for articles to be
+published in \TUB, but include this description for completeness.
+
+\subtext This is an example of such ``subtext''. There is no
+|\subsubtext| or any other level.
+\endtext
 
 \subhead * Section heads *
 Heads of sections, subsections, etc.\ are introduced with |\head|,
@@ -283,7 +314,7 @@ enter a blank line in the source file between head and text, such
 practice being a visual aid to your friendly \TUB\/ editors (if not to
 you).  Be careful of that |\noindent| after a first-level head:
 you will be in horizontal mode after the |\head *...*|, so spaces
-which {\it appear\/} innocuous, may not be so.
+which {\it appear\/} innocuous may not be so.
 
 
 \subhead * Lists *
@@ -550,7 +581,7 @@ As of version~1.31 of the \plain-based \TUB\ macros, released in October
 \item |\tbhurl{tug.org}| is analogous, for http urls: \tbhurl{tug.org}.
 \item |\tbmailto{tugboat@tug.org}| produces a mailto url, again with the
       argument in \cs{tt}: \tbmailto{tugboat@tug.org}.
-\item |\tbhref{https://tug.org}{the \acro{TUG} home page| is the general
+\item |\tbhref{https://tug.org}{the \acro{TUG} home page}| is the general
       command, which typesets the second argument (no implicit font
       changes) as a link to the first argument (no implicit protocol
       added): \tbhref{https://tug.org/}{the \acro{TUG} home page}.
@@ -560,8 +591,8 @@ At present, these commands only work in pdf\TeX. Other engines will be
 supported as needed.
 
 The links are displayed without a border, since we find link borders
-distracting rather than helpful. There are no display options, to keep
-things simple.
+distracting rather than helpful. To keep things simple, there are no
+display options.
 
 \subhead * Figures and page layout *
 Figures are keyed as
@@ -618,7 +649,7 @@ the code:
 \verbatim[\outputtofile{code.vbm}]
 \figure[\top]
   [\caption{\centerline{%
-              Oddly empty Fig.~1.}}]
+              An oddly empty Fig.~1.}}]
 \vbox to 4pc{}
 \endfigure
 \endverbatim

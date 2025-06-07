@@ -1,3 +1,15 @@
+2025-06-07  Karl Berry  <karl@freefriends.org>
+
+	* tubguide.tex (\subtext): describe it (and disrecommend it).
+	(footnotes): mention lack of specific support.
+	Suggestions from Luis.
+
+2025-06-07  Luis Rivera
+
+	* tubguide.tex (\rtitlex): June 2025.
+	(\tbhref): missed }.
+	https://github.com/TeXUsersGroup/tugboat/pull/3
+
 2025-05-18  Karl Berry  <karl@freefriends.org>
 
 	* tubguide.tex: use \verbatim...\endverbatim for list of commands,
