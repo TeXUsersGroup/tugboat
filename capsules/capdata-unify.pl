@@ -3,6 +3,8 @@
 
 use strict; use warnings;
 
+require "caputil.pl";
+
 {
 my %unify = &read_unify (); # static hash
 #warn "uni ", join ("|", sort keys %unify), "\n";

@@ -191,8 +191,9 @@ sub write_entries {
     my $doi = &doi_of_capsule (\%cap);
     if ($doi) {
       print "\n" unless $post_title_print++;
+      my $doi_href = &doi_href ($doi, "doi");
       print qq!        &nbsp;!
-          . qq!<small>(<a href="https://doi.org/$doi">doi</a>)</small>!
+          . qq!<small>($doi_href)</small>!
           . qq!&nbsp;\n!;
     }
         
@@ -263,6 +264,18 @@ sub write_entries {
     # end of this entry.
     print qq!</tr>\n\n!;
   }
+}
+
+
+# Return the html for a link to DOI with visible LABEL. We make this a
+# separate routine since we also want to insert a <span> for Nelson.
+# We only do this for our main contents html output pages, not the
+# landing pages (generated in capcrossref.pl).
+# 
+sub doi_href {
+  my ($doi,$label) = @_;
+  return qq!<span class="doi"><a href="https://doi.org/$doi">$label!
+       . qq!</a></span>!;
 }
 
 1;
