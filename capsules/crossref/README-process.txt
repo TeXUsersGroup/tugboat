@@ -228,6 +228,8 @@ Then archive all the files (after registering):
   # svn commit the various files.
   cd ~tubprod/svn/capsules/crossref
   nnn=...
+  ls dir*/archive.tb$nnn # should not exist
+  #
   svn mkdir dir0.capout/archive.tb$nnn
   mv dir0.capout/tb${nnn}* !$
   ls dir0.capout # only archive.* should remain
@@ -250,7 +252,7 @@ Then archive all the files (after registering):
   svn status
   svn commit -m"archive tb$nnn uploaded files as archived" dir*
 
-Then install pdfs, per ~tubprod/README.
+Then install pdfs on tug.org, per ~tubprod/README.
 
  Updating past issues: when an issue is published, the previous issue
 becomes fully public. Therefore we need to update the landing pages to
@@ -258,8 +260,8 @@ say "publicly available now". This is irritating, but it seems useful
 enough to state explicitly whether or not an article is public to put up
 with it. To do this:
 
-previss=45-2
-prevnnn=140
+previss=45-3
+prevnnn=141
 
 - ensure that tb${prevnnn}capsule.txt is up to date, without /members/ urls.
 cd ../capsules
@@ -295,7 +297,7 @@ rm dir*/tb${prevnnn}*.* dir2.process/issue.xml
 
 - commit:
 svn status  # should be just the expected landing files; then:
-svn commit -m"archive landing files: $previss (tb$prevnnn) public"
+svn commit -m"archive landing files: $previss (tb$prevnnn) public" dir1*
 svn diff ../Makefile # should be just testiss and crossref_iss, undo:
 svn revert ../Makefile
 
@@ -310,8 +312,11 @@ cp archive.PREVN/* .
 
 - then make diff-land and copy in as above.
 
- Uploading corrections. When needing to make updates to the crossref
-data for a previously-uploaded issue, e.g., we got the url wrong:
+- return to /home/tubprod/README for final publication and announcements.
+
+ Uploading corrections:
+When needing to make updates to the crossref data for a
+  previously-uploaded issue, e.g., we got the url wrong:
 cp dir3.uploaded/tbNNN/issue{,-corr`date +%Y%m%d`}.xml 
 edit the new issue-corr*.xml as needed; update timestamp values
   for affected records, and for the whole upload.
@@ -327,7 +332,6 @@ No crossref update is needed when taking an issue public; it's only our
 landing files that change.
 
  Processing older issues that have not yet been uploaded to Crossref:
-
 First, look near the end of the captub script for the line
   $OPT{"crossref-first-issue"} = <integer>;
 and decrement <integer>. We always want to work from the last-done issue

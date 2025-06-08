@@ -1,5 +1,5 @@
 # $Id$
-# TUGboat capsules - accumulated lists utilities.
+# TUGboat capsules - utilities for the accumulated lists.
 
 use strict; use warnings;
 
@@ -16,8 +16,8 @@ sub sort_by_title_issue_page {
 }
 
 # How we sort the capsules for authors, and most categories
-# (Accessibility, etc.): by reversed issue and pageno, as above,
-# so newest items come first.
+# (Accessibility, etc.): by reversed issue and pageno,
+# as above, so newest items come first.
 # 
 sub sort_by_issue_page {
   $b->{issue}->{seqno} <=> $a->{issue}->{seqno}
