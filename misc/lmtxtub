@@ -4,7 +4,9 @@
 # Redirect all terminal output, and report number of "shipped pages".
 
 out=lmtxtub.out
-lmtx context --batchmode "$@" >$out
+cmd="lmtx context --batchmode $*"
+echo "$cmd" >$out
+lmtx context --batchmode "$@" >>$out
 status=$?
 
 # mkiv lua stats  > runtime: 1.405 seconds, 180 processed pages, 180 shipped pages, 128.070 pages/second

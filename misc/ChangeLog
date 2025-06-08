@@ -1,3 +1,12 @@
+2025-06-08  Karl Berry  <karl@freefriends.org>
+
+	* acrocheck-tub: ignore CADMUS.
+
+	* cahiers.sty (\tubomitdoioptiontrue): always set this,
+	since our abstracts don't have DOIs.
+
+	* lmtxtub: show command.
+
 2025-05-04  Karl Berry  <karl@freefriends.org>
 
 	* ps2pdf-tub: -dColorImageResolution=1200 -dGrayImageResolution=1200 

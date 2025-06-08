@@ -1,12 +1,12 @@
 % $Id$
-% Copyright 1999-2024 TeX Users Group.
+% Copyright 1999-2025 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 % This is a LaTeX2e package for TUGboat abstract summaries,
 % originally just for cahiers.
 %
-\def\filedate{2024-01-08}
-\ProvidesPackage{cahiers}[\filedate TUGboatabstract summaries]
+\def\filedate{2025-05-17}
+\ProvidesPackage{cahiers}[\filedate TUGboat summaries of abstracts]
 %
 % uses production LaTeX2e commands
 \NeedsTeXFormat{LaTeX2e}[1994/12/01]
@@ -24,6 +24,9 @@
 % load them explicitly.
 \usepackage{graphicx}
 \usepackage{url}
+
+% Abstracts never have DOIs.
+\ifx\tubomitdoioptiontrue\undefined\else \tubomitdoioptiontrue \fi
 
 % used to rlap pageno in tb92mitt
 \ifx\undefined\cgprepagenohook \let\cgprepagenohook=\relax \fi
