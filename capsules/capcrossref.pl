@@ -116,7 +116,7 @@ sub crossref_write_files {
       push (@rpi_authors, $name_for_rpi);
     }
     #
-    # Add decorations from lists-authorinfo.txt.
+    # Add decorations from lists-authinfo.txt.
     @rpi_authors = &crossref_add_author_info (@rpi_authors);
     #
     print $RPI "%authors=";
@@ -184,7 +184,7 @@ sub crossref_write_files {
 }
 
 
-# For each author in AUTHORS, check the table in lists-authorinfo.txt
+# For each author in AUTHORS, check the table in lists-authinfo.txt
 # and add any extra specifications from there; for example, an ORCID.
 # Return new list with any decorations added.
 # 

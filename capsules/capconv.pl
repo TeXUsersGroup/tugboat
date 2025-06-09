@@ -99,8 +99,9 @@ sub transform_category {
 
 # Take author string ALL_AUTHORS_TEX (in TeX) and return a reference to
 # a list:
-# - first element is the entire author string in HTML, with names
-#   linked to entries in listauthors.html and joined by ", ".
+# - the first element is the entire author string in HTML, with names
+#   linked to entries in listauthors.html and followed by their orcid if
+#   available, and joined by ", ".
 # - remaining elements are the individual names in HTML, regularized:
 #   . split into individual authors (see below)
 #   . unifications performed
@@ -123,8 +124,8 @@ sub transform_author {
   my @ret = ();
 
   # splitting the author string into individual authors is an exercise
-  # in heuristics, since so many variations are in the original sources
-  # and it is too painful to edit them all.
+  # in heuristics, since there are so many variations in the original
+  # sources and it is too painful to edit them all.
   # 
   # - one common case is to split at an explicit "\aand" and "\cand" and
   # "\and", all allowing whitespace on either side and possibly a
@@ -137,7 +138,7 @@ sub transform_author {
   # control sequence for the and part, as in 
   # "Mark LaPlante and William F. Adams" or "A, B, and C".
   # 
-  # - ditto for \s+\\&\s+, that is, a (TeX) ampersand instead of
+  # - also split at \s+\\&\s+, that is, a (TeX) ampersand instead of
   # the word "and".
   # 
   # - also split at ",\\ *", where the original output forced a newline
@@ -183,7 +184,7 @@ sub transform_author {
       # nobreak spaces are used for committees, etc.
       # LogoTeXnes was a pseudonum for tb25crossword,
       # Advogato was Raph Levien's alias for tb67advo.pdf Knuth interview.
-      # samcarter was an alias used by a tug'20 participant, etc.
+      # samcarter is an alias used by a tug'20 participant (ff).
       warn "one-word author: $parts[0] (orig: $all_authors_tex)\n";
     }
     push (@ret, $lastfirst);
@@ -195,6 +196,11 @@ sub transform_author {
     my $author_id = &author_to_id ($lastfirst);
     $orig_author_html .= qq!<a href="/TUGboat/Contents/listauthor.html#$author_id">!;
     $orig_author_html .= "$a</a>";
+    #
+    # and append a link to their orcid, if we know it.
+    my $author_orcid = &author_orcid ($a);
+    $orig_author_html .= qq!&nbsp;(<a href="https://orcid.org/$author_orcid"!
+      . qq!>orcid</a>)! if $author_orcid;
   }
   
   # put the original string at the beginning of what we return.
@@ -202,6 +208,26 @@ sub transform_author {
   
   &ddebug ("    author: transform($all_authors_tex) -> [@ret]");
   return \@ret;
+}
+
+# Take argument AUTHOR as HTML, formatted as First Last, and look it up
+# in lists-authinfo.txt file. Return the orcid value if given for this
+# author, else undef. AUTHOR might be empty or undef, in which case we
+# also return undef.
+# 
+sub author_orcid {
+  my ($author) = @_;
+  return undef unless $author;
+
+  # get extra info for this author.
+  my @ai = &lists_authinfo ($author);
+  #warn "Authinfo for $author: @ai\n";
+  for my $ai (@ai) {
+    my ($key,$val) = split (/=/, $ai, 2);
+    return $val if $key eq "orcid";
+  }
+  
+  return undef;
 }
 
 

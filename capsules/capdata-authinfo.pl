@@ -1,12 +1,10 @@
 # $Id$
 # TUGboat capsules - handle lists-authinfo.txt file. Public domain.
 # 
-# The lists-authinfo.txt file is not actually used by the list*.html
-# output, but it's treated so similarly to the other lists-*.txt files
-# that it seemed good to follow the same naming scheme.
-# 
-# What it's used by is the doi output (capcrossref.pl), and ultimately
-# ends up being information in the XML that we upload to Crossref.
+# The lists-authinfo.txt file is used by the DOI-related output
+# (capcrossref.pl), and ultimately ends up as information in the XML
+# that we upload to Crossref. It's also used for the per-issue contents
+# pages so that it can include ORCID values.
 
 use strict; use warnings;
 
@@ -40,7 +38,7 @@ sub lists_authinfo {
 # then we'd need to return multiple values.
 # 
 # We do not do any validation here, since it has to be done by the final
-# consumer of the data anyway, currently ltx2crossrefxml from the
+# consumer of the data anyway, e.g., ltx2crossrefxml from the
 # crossrefware package.
 # 
 sub read_authinfo {

@@ -1,3 +1,21 @@
+2025-06-09  Karl Berry  <karl@freefriends.org>
+
+	* capconv.pl (author_orcid): return orcid for an author,
+	from lists-authinfo.txt.
+	(transform_author): call that and add to author's printed string.
+	* capdata-authinfo.pl,
+	* capcrossref.pl: doc fixes.
+
+2025-06-08  Karl Berry  <karl@freefriends.org>
+
+	* capout.pl (doi_href): new fn.
+	(write_entries): call it.
+
+	* capdata-unify.pl: require "caputil.pl" for pedantry.
+
+	* capaccum-util.pl,
+	* crossref/README-process.txt: doc.
+
 2025-05-07  Karl Berry  <karl@freefriends.org>
 
 	* lists-translations.txt (Krishnan): sort under R.
