@@ -1,5 +1,7 @@
 2025-06-09  Karl Berry  <karl@freefriends.org>
 
+	* tb128capsule.txt (matteson-noto): in Fonts topic, too.
+
 	* capconv.pl (author_orcid): return orcid for an author,
 	from lists-authinfo.txt.
 	(transform_author): call that and add to author's printed string.
