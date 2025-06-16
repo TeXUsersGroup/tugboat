@@ -29,19 +29,14 @@
 \fi
 \next
 
-\def\fileversion{v1.31}
-\def\filedate{2024-10-26}
+\def\fileversion{v1.32}
+\def\filedate{2025-06-16}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
-%
 %               *****     TUGBOAT.CMN   *****
-%
 %       See the bottom of the file (after \endinput) for a list of
 %       items defined.
-%
-
-% *************************************************************************
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -1048,6 +1043,8 @@ that may not be obvious.  For full definitions, see real code above.
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+1.32      16 Jun 25   No real changes, just keeping version number in sync.
+
 1.31      26 Oct 24   \tbsurl, \tbhurl, \tbmailto, \tbhref: simple
                         hyperlinks with pdftex.
                       new abbrevs \macOS, \SQL.
