@@ -54,6 +54,7 @@
 \def\GHOSTSCRIPT{Ghost\-script}
 \def\GHOSTVIEW {Ghost\-View}
 \def\HP        {\acro{HP}}
+\def\HUE       {\acro{HUE}}
 \def\HZ        {Hz}
 \def\IBM       {\acro{IBM}}
 \def\IEEE      {\acro{IEEE}}
@@ -70,6 +71,7 @@
 \def\LAMSTEX   {\LAMSTeX}
 \def\LATEX     {\LaTeX}
 \def\LCD       {\acro{LCD}}
+\def\LED       {\acro{LED}}
 \def\LINUX     {Linux}
 \def\LISP      {Lisp}
 \def\LMTX      {\acro{LMTX}}
@@ -129,6 +131,7 @@
 \def\OSX       {\acro{OSX}}
 \def\PASCAL    {Pascal}
 \def\PDFTEX    {pdf\-\/\TeX}
+\def\PDP       {\acro{PDP}}
 \def\PERL      {Perl}
 \def\PERLTK    {Perl/\acro{TK}}
 \def\PFB       {\acro{PFB}}
@@ -137,7 +140,10 @@
 \def\POSTSCRIPT{\PS}
 \def\PRAGMA    {Pragma}
 \def\QA        {\acro{QA}}
+\def\QR        {\acro{QR}}
+\def\QRCODE    {\acro{QR} code}
 \def\RAM       {\acro{RAM}}
+\def\RASPBERRYPICO{\acro{RPI} Pico}
 \def\RGB       {\acro{RGB}}
 \def\RTL       {\acro{RTL}}
 \def\RUBY      {Ruby}
@@ -173,6 +179,7 @@
 \def\VMWARE    {\acro{VM}ware}
 \def\WEB       {\acro{WEB}}
 \def\WEBTOC    {Web2C}
+\def\WIFI      {WiFi}
 \def\WIKI      {Wiki}
 \def\WINDOWS   {Windows}
 \def\XELATEX   {\XeLaTeX}
@@ -180,6 +187,7 @@
 \def\XFORM     {\acro{XF}orm}
 \def\XITS      {\acro{XITS}}
 \def\YANDY     {\acro{Y\&Y}}
+\def\ZIGBEE    {ZigBee}
 \def\ZIP       {{\tt zip}}
 \def\pdfTeX    {pdf\-\/\TeX}
 
