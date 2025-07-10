@@ -130,7 +130,7 @@ all:
 tubweb = ~www/TUGboat
 instest = $(tubweb)/toctest
 install-test: all
-	cp -f contents*.html list*.html $(instest)
+	cp -pf contents*.html list*.html $(instest)
 	chmod a+rw $(instest)/*
 
 # check id entries in new file (from install-test) with existing.
@@ -148,7 +148,7 @@ diff:
 
 Contents = $(tubweb)/Contents
 install: # after make all and (for major changes) install-test
-	cp -f contents*.html list*.html $(Contents)
+	cp -pf contents*.html list*.html $(Contents)
 
 all-diff: all diff
 all-install: all install
