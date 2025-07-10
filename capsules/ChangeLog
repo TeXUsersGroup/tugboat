@@ -1,3 +1,32 @@
+2025-07-08  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (cro-scratch-clean): silence some of the rm commands.
+	(crossref_iss, testiss): did 127, first issue with structured
+	citatations, in addition to unstructured.
+	* captub (crossref-first-issue): now 127.
+	* capconv.pl (transform_subtitles): remove spaces after
+	\controlwords, such as \Dash. These ended up as spurious &#xa0;
+	(nbsp) characters in the output.
+	* capcrossref.pl: formatting.
+	* cr-copy-bbl-abs: copy aux and bib files; remove crossbib stuff.
+	bib files are copied into a bib/ subdir since their names are random.
+	So the name of the script could be more general, say cr-copy-helpers,
+	but let's just leave it. 
+	* cr-do-issue: similarly, handle aux/bib files, remove crossbib.
+	
+	* crossref/README-process.txt: update for new aux/bib stuff.
+	* crossref/Makefile (ltx2crossrefxml): use ltx2env.
+	(ltx2env): env TEXMFDOTDIR=dir2.process/bib to find the copied
+	bib files.
+	(issue): also check for untranslated " TUB " and \$.*\$.
+	* crossref/ltx2crossrefxml-tugboat.cfg (LaTeX_ToUnicode_convert_hook):
+	correct \\sl\\ replacement to keep the \;
+	handle no-op \pkgname.
+	(BibTeX_Parser_options): define this hash.
+	
+	* lists-translations.txt: handle \textdagger for beet in tb123.
+	* tb23capsule.txt (beet): missed "\ " following "\TeX".
+
 2025-06-09  Karl Berry  <karl@freefriends.org>
 
 	* tb128capsule.txt (matteson-noto): in Fonts topic, too.

@@ -28,7 +28,7 @@ directory (~tubprod/VV-N), one or both of these files, as needed:
     no need to create an abs.tex.
   . both \begin{abstract} and \end{abstract} lines are optional (and ignored).
 
-- a bbl.tex file for the bibliography:
+- a bbl.tex file for Crossref's unstructured citations:
   . if an article uses BibTeX, the .bbl file can be copied to bbl.tex 
     as the starting place. 
   . if an article has no bibliography, don't create bbl.tex.
@@ -38,12 +38,15 @@ directory (~tubprod/VV-N), one or both of these files, as needed:
     (For wermuth articles, see replacements in ltx2crossrefxml-tugboat.cfg.)
      \sl\TUB ->\sl \TUB  [since \TUB -> TUGboat replacement happens first]
      etc.
-    ()
 
 These {abs,bbl}.tex files stay in the TUGboat per-article source directories.
 
 There has to be at least one abs.tex and one bbl.tex or the program will
 bail out early, so easiest to choose an article with both to do first.
+
+In addition to these, all .aux files and .bib files will be copied to
+the working dir (the .bib files in a subdir bib/). They are used to
+construct Crossref's structured citations.
 
 Be sure crossref_iss in capsules/Makefile is set to the current/desired issue,
 per ~tubprod/README.
@@ -164,7 +167,8 @@ minutes. Can also check results online:
                            (or Show System Queue)
 
 When the result mail comes in, see <batch_data> summary element at end,
-should be all success. Browse through the rest. Fix as needed. Commit.
+should be all success. Browse through the rest, especially that all the
+<citation> elements were accepted.. Fix and rerun as needed.
 
  After the test upload succeeds, good to copy the test landing files
 to the live web directory for tub-prod to check:
@@ -210,6 +214,9 @@ awsbounce@crossref.org.
 
 Registering DOIs will also cause crossref to send mail to authors.
 
+If landing files are not in place yet, copy them to the live directory
+now, per above.
+
 Then commit any changes to our source files:
  cd ~tubprod/svn/capsules
  svn status
@@ -218,12 +225,12 @@ Then commit any changes to our source files:
  svn commit ...
 If needed, also commit changes in bibtexperllibs and crossrefware.
 
-Register the production dois before archiving.
+Register the production dois (per above) before archiving.
 Then archive all the files (after registering):
-  # if working on another machine, copy final abs/bbl to tug:
+  # if working on another machine, copy final abs/bbl/aux/bib to tug:
   cd ~tubprod/VV-N
-  tar czf absbbl.tgz */abs.tex */bbl.tex
-  scp absbbl.tgz $host: # and unpack
+  tar czf absbbl.tgz */abs.tex */bbl.tex */*.aux */*.bib
+  scp absbbl.tgz $host: # and unpack, for ease of finding/accessing
   #
   # svn commit the various files.
   cd ~tubprod/svn/capsules/crossref
@@ -235,17 +242,16 @@ Then archive all the files (after registering):
   ls dir0.capout # only archive.* should remain
   #
   svn mkdir dir1.lndout/archive.tb$nnn
-  mv dir1.lndout/tb${nnn}* !$
+  mv dir1.lndout/{bib,tb${nnn}*} !$
   ls dir1.lndout # only archive.* should remain
   #
   # dir3 before dir2 since we save them in both places, in case of edits.
   svn mkdir dir3.uploaded/tb$nnn
-  cp dir2.process/issue.xml dir2.process/tb${nnn}* !$
+  cp -pr dir2.process/{issue.xml,bib,tb${nnn}*} !$
   ls dir3.uploaded # only archive.* should remain
   #
   svn mkdir dir2.process/archive.tb$nnn
-  mv dir2.process/tb${nnn}* !$
-  mv dir2.process/issue.xml !$
+  mv dir2.process/{issue.xml,bib,tb${nnn}*} !$
   ls dir2.process # only archive.* should remain
   #
   svn -q add */*tb${nnn}/*
@@ -254,11 +260,11 @@ Then archive all the files (after registering):
 
 Then install pdfs on tug.org, per ~tubprod/README.
 
- Updating past issues: when an issue is published, the previous issue
-becomes fully public. Therefore we need to update the landing pages to
-say "publicly available now". This is irritating, but it seems useful
-enough to state explicitly whether or not an article is public to put up
-with it. To do this:
+ Updating the previous issue: when an issue is published, the previous
+issue becomes fully public. Therefore we need to update the landing
+pages to say "publicly available now". This is irritating, but it seems
+useful enough to state explicitly whether or not an article is public to
+put up with it. To do this:
 
 previss=45-3
 prevnnn=141
@@ -292,7 +298,7 @@ scp -p `cat /tmp/ch-land` $host:/home/httpd/html/TUGboat/tb$previss/
   since the landing files are all that's actually being changed live.
   Instead, remove the generated files so we'll be clean for next time:
 cd ..
-ls -lt dir*/tb${prevnnn}* # bbl/abs should be old, rpi/html new
+ls -lt dir*/tb${prevnnn}* # bbl/abs/etc. should be old, rpi/html new
 rm dir*/tb${prevnnn}*.* dir2.process/issue.xml
 
 - commit:
@@ -337,6 +343,8 @@ First, look near the end of the captub script for the line
 and decrement <integer>. We always want to work from the last-done issue
 backwards. Without this change, no .rpi files will be created.
 
+In ../Makefile, set crossref_iss and testiss to the new <integer>.
+
 Then, in general this is a mix of submitting a new issue (described in
 ~tubprod/README) and making an issue public (described above). In short:
 - create per-article abs/bbl.tex files.
@@ -352,16 +360,11 @@ make install-test # after committing, if working on dev machine
 
 Crossref and landing files:
 - review dir2.process/issue.xml as above, then make upload-test.
-- copy new landing files to server:
+
+- if that's ok, copy new landing files to server:
 host=tug.org
-oldnnn=128
-oldiss=41-2
+oldnnn=127
+oldiss=41-1
 scp -p crossref/dir1.lndout/*.html $host:/home/httpd/html/TUGboat/tb$oldiss/
 
---- qqq stopped here until new issue is done qqq ---
-
-To register new DOIs (costs money):
-Edit crossref/Makefile and make upload-real and undo edit.
-
-svn commit the changed source files,
-and then the crossref/dir*/* files, as above.
+Then, as above: check results; do production crossref upload; commit changes.

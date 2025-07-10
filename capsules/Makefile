@@ -27,9 +27,9 @@ default check: one #all-diff
 
 # These issue values, and most of the targets below, come into play with
 # publishing a TUGboat issue; see the README-tug-procedures file on tug.org.
-testiss = 141
+testiss = 127
 lastiss = 142
-crossref_iss = 142
+crossref_iss = 127
 
 # use different temp dir on different machines.
 mydir := $(shell ls ~karl/public_html 2>/dev/null)
@@ -74,9 +74,15 @@ cro-scratch: cro-scratch-clean # full crossref run, assuming no hand-editing
 	cr-do-issue $(cr_args)
 
 # remove dir2.process files, assuming no hand-edits in dir2.process.
+# Too irritating to see all these removals on every run, so make all
+# after the first silent.
 cro-scratch-clean:
 	rm -f $(cr_xmlprocess)/*.abs $(cr_xmlprocess)/*.bbl # assume no edits
-	rm -f $(cr_xmlprocess)/*.rpi $(cr_xmlprocess)/issue.xml
+	@rm -f $(cr_xmlprocess)/*.aux $(cr_xmlprocess)/*.rpi 
+	@rm -f $(cr_xmlprocess)/issue.xml
+# we check for duplicate source names among the bib files, unlike all
+# others, so must start clean. We keep bib files in a subdir.
+	@rm -rf $(cr_lndout)/bib  $(cr_xmlprocess)/bib
 
 # also remove dir0 and dir1 files, to start fresh:
 cro-clean: cro-scratch-clean

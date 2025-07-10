@@ -312,11 +312,12 @@ sub transform_pageno {
 # For subtitle string S, <optional semicolon>\\<newline> becomes <br>
 # and manual indentation in the output; then convert tex to html as usual.
 # 
-# As a fun special case, if TITLE = "Editorial comments", this is
-# Barbara's column (tb*beet) and is handled completely differently per
-# her request. For these, we want to maximize the text on each line, vs.
-# having each subtitle on a separate line. (Since there are so many
-# installments of that column, it gets tiresome to scroll through.)
+# As a fun special case, if TITLE = "Editorial comments" and
+# AUTHOR =~ "Barbara.Beeton, this is Barbara's column (tb*beet) and is
+# handled completely differently per her request. For these, we want to
+# maximize the text on each line, vs. having each subtitle on a separate
+# line. Since there are so many installments of that column, it gets
+# tiresome to scroll through.
 # 
 # So for those, we make each space in the subtitles into &nbsp;, and
 # insert a simple newline instead of <br>, so that between subtitles
@@ -332,6 +333,11 @@ sub transform_subtitles {
   my ($between_subtitles, $subtitle_spaces);
   if ($title =~ /\{?Editorial comments\}?/i && $author =~ /Barbara.Beeton/) {
     #debug_list("   starting editorial comments", @subtitles);
+    #
+    # Replaces spaces after \controlwords with {}; otherwise those
+    # spaces will be an nbsp in the output, due to the next substitution.
+    @subtitles = map { s/(\\[a-zA-Z]+)\s*/$1\{\}/g; $_; } @subtitles;    
+    # 
     # don't allow line breaks within Barbara's subtitles; that means
     # replacing " " and "\ " and "~" with our \CONNECT{} string, which
     # turns into &nbsp;.  (Ties are converted to spaces by default, not nbsp.)
@@ -346,6 +352,7 @@ sub transform_subtitles {
     $between_subtitles = ";\n";
     $subtitle_spaces = 2;
   } else {
+    # non-Barbara:
     $between_subtitles = "<br>\n";
     $subtitle_spaces = 5;
   }

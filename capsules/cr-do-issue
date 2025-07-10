@@ -41,7 +41,7 @@ $Id$
 Usage: $0 [--landing-only] [--verbose] 
           CAPSULEFILE CAP-OUTDIR LND-OUTDIR CROSSREFXMLFILE
 
-First, run ./cr-copy-bbl-abs on CAPSULEFILE to copy the bbl/abs/crossbib
+First, run ./cr-copy-bbl-abs on CAPSULEFILE to copy the bbl/abs/bib/aux
 ("helper") files from the TUGboat source directory to LND-OUTDIR.
 
 Then, copy any new helper files to the directory of CROSSREFXMLFILE, but do
@@ -113,14 +113,14 @@ run_cmd ()
 rm -f "$lnd_outdir"/tb* # clean destination directory
 run_cmd ./cr-copy-bbl-abs "$capsule" "$lnd_outdir"/
 
-# copy new (but not existing) bbl/abs/crbib from landing dir to xmlprocess dir,
+# copy new (but not existing) bbl/abs/etc. from landing dir to xmlprocess dir,
 # 
 cnt_xmlprocess_preserved=0
 cnt_xmlprocess_copied=0
 #
 for lf in "$lnd_outdir"/tb*.abs \
-          "$lnd_outdir"/tb*.bbl; do
-#          "$lnd_outdir"/tb*.crbib; do # structured crossref not ready
+          "$lnd_outdir"/tb*.bbl \
+          "$lnd_outdir"/tb*.aux; do
   pf=`echo "$lf" | sed "s,$lnd_outdir,$cr_processdir,"`
   base=`basename "$pf"`
   if test -e "$pf"; then
@@ -132,10 +132,16 @@ for lf in "$lnd_outdir"/tb*.abs \
     cnt_xmlprocess_copied=`expr $cnt_xmlprocess_copied + 1`
   fi
 done
-echo "$0: bbl/abs->$cr_processdir: $cnt_xmlprocess_preserved preserved, $cnt_xmlprocess_copied copied."
+echo "$0: bbl/abs/aux->$cr_processdir: $cnt_xmlprocess_preserved preserved, $cnt_xmlprocess_copied copied."
+
+# erase and copy the bib/ subdir from landing to xmlprocess.
+srcbib=$lnd_outdir/bib
+destbib=$cr_processdir/bib
+rm -rf $destbib
+cp -pr $srcbib $destbib
 
 # copy any previously-existing (that is, possibly hand-edited) bbl/abs
-# from xmlprocess back to landing. crbib is never hand-edited.
+# from xmlprocess back to landing. The aux/bib files are never hand-edited.
 # 
 cnt_landing_unchanged=0
 cnt_landing_copied=0
@@ -174,7 +180,7 @@ if ! $landing_only; then
   # so can just overwrite in our processdir:
   cp -pf "$cap_outdir"/*.rpi "$cr_processdir"/ || exit 1
 
-  # make the crossref issue.xml file; uses the rpi and bbl files.
+  # make the crossref issue.xml file; uses the rpi/bbl/aux/bib files.
   run_cmd make -C crossref issue
 
 fi # ! landing_only

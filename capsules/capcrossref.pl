@@ -267,7 +267,7 @@ END_LANDING
     $shortdesc .= "." unless $cap{"shortdesc_html"} =~ /[.?!]$/;
   }
 
-  my $subtitles = $cap{subtitles_html} ? "\n$cap{subtitles_html}" : "";
+  my $subtitles = $cap{"subtitles_html"} ? "\n$cap{subtitles_html}" : "";
   #  
   # for beet, we want to uniformly have two spaces at the beginning
   # of each subtitle, and each on a line by itself. seems to work out

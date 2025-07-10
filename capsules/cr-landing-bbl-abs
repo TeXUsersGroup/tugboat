@@ -62,12 +62,19 @@ sub read_crossref_xml {
         
       } elsif (/<citation /) {
         die "citation before doi, should not happen: $_" if ! $doi_base;
+        my $citation = $_; # for possible error message
         #
-        # input: <citation key="gentle-1"><unstructured_citation>
+        # input line 1:    <citation key="gentle-1">
+        # input line 2..n: possibly none, possibly structured citation.
+        # input line n+1:  <unstructured_citation>
         # input:   M. Doob. A Gentle Introduction ...
-        # We don't need anything from the <citation> line, just the
-        # second line of plain text bbl info.
-        $_ = <$xml_fh>;
+        # We don't need anything from the <citation> line,
+        # or the structured citations fields, just the unstructured_citation.
+        do { $_ = <$xml_fh> } until /<unstructured_citation>/ || eof;
+        if (eof) {
+          die "reached end of file $xml_fname looking for "
+              . "<unstructured_citation> after $citation";
+        }
         chomp;
         debug (" got citation: $_\n");
         push (@{$citations{$doi_base}}, $_);
