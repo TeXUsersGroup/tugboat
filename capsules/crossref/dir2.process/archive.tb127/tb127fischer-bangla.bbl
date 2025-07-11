@@ -1,0 +1,21 @@
+\begin{thebibliography}{1}
+
+\bibitem{Hosny:2019:BWS}
+K.~Hosny.
+\newblock Bringing world scripts to {\LuaTeX}: The {HarfBuzz} experiment.
+\newblock {\em TUGboat} 40(1):38--43, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-1/tb124hosny-harfbuzz.pdf}
+
+\bibitem{Sajib:2019:TBS}
+M.~Q.~U. Sajib.
+\newblock Typesetting the {Bangla} script in {Unicode} {\TeX}
+  engines{\Dash}experiences and insights.
+\newblock {\em TUGboat} 40(3):263--269, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-3/tb126sajib-bangla.pdf}
+
+\bibitem{harfbuzz}
+{The FreeType Project}.
+\newblock {HarfBuzz}, a text shaping library.
+\newblock \url{https://harfbuzz.org}
+
+\end{thebibliography}

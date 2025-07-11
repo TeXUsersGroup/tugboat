@@ -1,0 +1,122 @@
+% this file is read twice
+%   first:  the shortcuts for the references are defined
+%   second: the list for references is output
+% start the file with \startbibrefs and end it with \par
+% NOTE: a § can't be used in front of \endbib, move it to the previuos line
+\startbibrefs\begingroup\ninepoint
+\emergencystretch=0.03\hsize
+\def\newline{\hfil\break}%
+\raggedright
+\frenchspacing
+%\hfuzz=3pt
+\hyphenpenalty=10000
+% suggestion by Karl Berry
+\def\URLaccessdate(#1){}% suppress ``accessed <date>'' info after URLs
+
+% just mentioned that the package is on CTAN
+%\bibitem{citeDA} Donald Arseneau, {\tt shapepar.sty}, v.\thinspace2.2, 2013.\par
+%   \biburl https://ctan.org/pkg/shapepar\endurl
+%   \endbib(2019-11-30)
+
+\bibitem{citeBB} Barbara Beeton (ed.), {\sl \TUB\/ \bf7}:1 (1986);\newline
+   guest editors David Kellermann and Barry Smith; layout design
+   Martha Gannett.\par \nobreak
+   \biburl http://www.tug.org/TUGboat/tb07-1/tb14complete.pdf\endurl
+   \endbib(2020-03-02)
+
+\bibitem{citeMB} Max Bollwage, {\sl Typografie kompakt},\newline
+   Berlin, Germany: Springer-Verlag, 2001.
+
+\bibitem{citeRB} Robert Bringhurst, {\sl The Elements of Typographic Style},
+   Seattle, Washington: Hartley \& Marks Publishers,
+   4th edition, version 4.2, 2016.
+   
+\bibitem{citeFJ} Friedrich Forssman \& Ralf de Jong,\newline
+   {\sl Detailtypographie}, 3rd edition,
+   Mainz, Germany: Verlag Hermann Schmidt, 2004.
+
+\bibitem{citeBG} Br\"uder Grimm, {\sl Kinder- und Hausm\"archen},
+   14th edition, Darmstadt: Wissenschaftliche Buchgesellschaft, 1991;
+   under license by Winkler Verlag, M\"unchen, 1949. 
+
+\bibitem{citeYH} Yannis Haralambous: ``New hyphenation \newline
+   techniques in \Omega_2'',
+   {\sl \TUB\/ \bf27}:1 (2006), 98--103.\par
+   \biburl http://www.tug.org/TUGboat/tb27-1/tb86haralambous-hyph.pdf\endurl
+   \endbib(2017-10-26)
+
+% because the Dash converts to a Unicode \x{...} entity, messes
+% up removal of the \bf, hence need the extra braces.
+\bibitem{citeKP} Donald E. Knuth and Michael F. Plass,
+   ``Breaking paragraphs into lines'',
+   {\sl Software \Dash Practice and Experience {\bf11}} (1981),
+   1119--1184; reprinted with an addendum as Chapter~3
+   in [10], 67--155.
+
+\bibitem{citeCTvA} Donald E. Knuth, \TB,
+   Volume~A of \CandT, Boston, Massachusetts: \AW, 1984.
+
+\bibitem{citeCTvC} Donald E. Knuth, \MFB,
+   \newline Volume~C of \CandT,
+   Boston, Massachusetts: \AW, 1986.
+
+\bibitem{citeDT} Donald E. Knuth, {\sl Digital Typography},
+   Stanford, California: Center for the Study of Language and
+   Information, CSLI Lecture Notes No.\ 78, 1999.
+
+\bibitem{citeLL} Leslie Lamport, {\sl \LaTeX: A Document Preparation
+   System}, 2nd edition,
+   Reading, Massachusetts: \AW, 1994.
+
+\bibitem{citeMG} Frank Mittelbach and Michael Goossens,\newline
+   {\sl The \LaTeX\ Companion}, 2nd edition,\newline
+   Boston, Massachusetts: \AW, 2004.
+
+% not cited; this is out of scope
+%\bibitem{citeMdSL} Maria dos Santos Lonsdale, ``Typographic features
+%   of text and their contribution to the legibility of academic
+%   reading materials: An empirical study'',
+%   {\sl Visible Language \bf50}:1 (2016), 78--111.
+
+% not cited directly; package cited via \citeMG
+%\bibitem{citeMS} Martin Schr\"oder,
+%   ``The {\tt ragged2e}-package'', v.\thinspace2.1, 2009.\par
+%   \biburl https://ctan.org/pkg/ragged2e\endurl
+%   \endbib(2017-10-18)
+
+\bibitem{citeRS} Richard Southall, ``First principles of typographic
+   design for document production'', {\sl \TUB\/ \bf5}:2 (1984),
+   79--90. Errata in {\sl \TUB\/ \bf6}:1 (1985), 6.\par
+   \biburl http://www.tug.org/TUGboat/tb05-2/tb10south.pdf\endurl
+   \endbib(2020-02-02)
+   \biburl http://www.tug.org/TUGboat/tb06-1/tb11gendel.pdf\endurl
+   \endbib(2020-02-02)
+
+% seems to be an important text; but do not have access to it
+%   I have to buy that article, it seems to contain
+%   a lot of information that are out of scope in the article
+%   and it might add a British English view to the problem
+%\bibitem{citePS} Paul Stiff, ``The end of the line:
+%   A survey of unjustified typography'',
+%   {\sl Information Design Journal\/ \bf 8}:2 (1995), 125--152.
+
+\bibitem{citeUWTP} Udo Wermuth,
+   ``Tracing paragraphs'', {\sl \TUB\/ \bf37}:3 (2016), 358--373;
+   Errata in {\sl \TUB\/ \bf38}:3 (2017), 414 (see [15]).\par
+   \biburl http://www.tug.org/TUGboat/tb37-3/tb117wermuth.pdf\endurl
+   \endbib(2016-12-08)
+
+\bibitem{citeUWLP} Udo Wermuth,
+   ``A note on \cs{linepenalty}'',\newline
+   {\sl \TUB\/ \bf38}:3 (2017), 400--414;\newline
+   Errata in {\sl \TUB\/ \bf39}:1 (2018), 87.\par
+   \biburl http://www.tug.org/TUGboat/tb38-3/tb120wermuth.pdf\endurl
+   \endbib(2018-04-05)
+   \biburl http://www.tug.org/TUGboat/tb39-1/tb121wermuth-adem.pdf\endurl
+   \endbib(2020-02-21)
+
+\bibitem{citeWF} Hans Peter Willberg, Friedrich Forssman,\newline
+   {\sl Lesetypographie}, 2nd printing,
+   Mainz, Germany: Verlag Hermann Schmidt, 2005.
+
+\end{thebibliography}.

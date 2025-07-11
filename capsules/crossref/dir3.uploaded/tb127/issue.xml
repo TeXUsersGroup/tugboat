@@ -1,0 +1,942 @@
+<doi_batch xmlns="http://www.crossref.org/schema/5.3.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="5.3.1" xsi:schemaLocation="http://www.crossref.org/schema/5.3.1 http://www.crossref.org/schema/deposit/crossref5.3.1.xsd">
+  <head>
+    <doi_batch_id>ltx2crossref-20250709170005-2872505</doi_batch_id>
+    <timestamp>20250709170005</timestamp>
+    <depositor>
+      <depositor_name>TUGboat production</depositor_name>
+      <email_address>doi-tugboat@tug.org</email_address>
+    </depositor>
+    <registrant>TeX Users Group</registrant>
+  </head>
+  <body><journal>
+    <journal_metadata language="en">
+      <full_title>TUGboat</full_title>
+      <issn>0896-3207</issn>      
+    </journal_metadata>
+    <journal_issue>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <journal_volume><volume>41</volume></journal_volume>
+      <issue>1</issue>
+    </journal_issue>
+    <journal_article>
+      <titles>
+        <title>From the president</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Boris</given_name>
+          <surname>Veytsman</surname>
+          <ORCID>https://orcid.org/0000-0003-4674-8113</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>3</first_page>
+        <last_page>3</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127pres</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127pres.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Editorial comments</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Barbara</given_name>
+          <surname>Beeton</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>4</first_page>
+        <last_page>6</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127beet</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127beet.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Reporting bugs for Don Knuth (as soon as possible)</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>7</first_page>
+        <last_page>7</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127berry-knuthbug</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127berry-knuthbug.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="knuth.abcde-1">
+          <unstructured_citation>D. Knuth. Computers &#x0026; Typesetting. https://www-cs-faculty.stanford.edu/~knuth/abcde.html</unstructured_citation>
+        </citation>
+        <citation key="Knuth:TB29-2-233-2">
+          <journal_title>TUGboat</journal_title>
+          <issn>0896-3207</issn>
+          <author>Knuth, Donald</author>
+          <volume>29</volume>
+          <issue>92</issue>
+          <first_page>233</first_page>
+          <cYear>2008</cYear>
+          <article_title>The TeX tuneup of 2008</article_title>
+          <unstructured_citation>D. Knuth. The TeX tuneup of 2008. TUGboat 29(2):233&#x2013;238, 2008. https://tug.org/TUGboat/tb29-2/tb92knut.pdf</unstructured_citation>
+        </citation>
+        <citation key="Knuth:TB35-1-5-3">
+          <journal_title>TUGboat</journal_title>
+          <issn>0896-3207</issn>
+          <author>Knuth, Donald</author>
+          <volume>35</volume>
+          <issue>109</issue>
+          <first_page>5</first_page>
+          <cYear>2014</cYear>
+          <article_title>The TeX tuneup of 2014</article_title>
+          <unstructured_citation>D. Knuth. The TeX tuneup of 2014. TUGboat 35(1):5&#x2013;8, 2014. https://tug.org/TUGboat/tb35-1/tb109knut.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Beyond Trip and Trap: Testing the urtext <tt>WEB</tt> sources</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>David</given_name>
+          <surname>Fuchs</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>8</first_page>
+        <last_page>11</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127fuchs-knuthbug</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127fuchs-knuthbug.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Grapholinguistics, TeX, and a June 2020 conference</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Yannis</given_name>
+          <surname>Haralambous</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>12</first_page>
+        <last_page>19</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127haralambous-grapholinguistics</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127haralambous-grapholinguistics.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="azawi-1">
+          <journal_title>Journal of Applied Sciences</journal_title>
+          <author>Al-Azawi, A.F.</author>
+          <volume>10</volume>
+          <first_page>436</first_page>
+          <cYear>2010</cYear>
+          <article_title>Arabic Text Steganography using Kashida Extensions with Huffman Code</article_title>
+          <unstructured_citation>A. Al-Azawi and M. Fadhil. Arabic text steganography using kashida extensions with Huffman code. Journal of Applied Sciences 10:436&#x2013;439, 2010.</unstructured_citation>
+        </citation>
+        <citation key="anis-2">
+          <unstructured_citation>J. Anis. L&#x2019;&#x00E9;criture, th&#x00E9;ories et descriptions. De Boeck, 1988.</unstructured_citation>
+        </citation>
+        <citation key="xubing-3">
+          <unstructured_citation>X. Bing. Book from the Ground: from point to point. MIT Press, Cambridge, 2014.</unstructured_citation>
+        </citation>
+        <citation key="blanchard-4">
+          <unstructured_citation>G. Blanchard. S&#x00e9;miologie de la typographie. Fluxus Editions, Brest, to appear.</unstructured_citation>
+        </citation>
+        <citation key="catach-5">
+          <unstructured_citation>N. Catach. L&#x2019;&#x00E9;criture en tant que plurisyst&#x00E8;me, ou th&#x00E9;orie de L prime. In Pour une th&#x00E9;orie de la langue &#x00E9;crite, pp. 243&#x2013;256, Paris, 1988. &#x00C9;ditions du CNRS.</unstructured_citation>
+        </citation>
+        <citation key="chomsky57-6">
+          <unstructured_citation>N. Chomsky. Syntactic structures. Mouton, 1957.</unstructured_citation>
+        </citation>
+        <citation key="chomsky-7">
+          <unstructured_citation>N. Chomsky and M. Halle. The Sound Pattern of English. Harper &#x0026; Row, 1968.</unstructured_citation>
+        </citation>
+        <citation key="coulmas-8">
+          <unstructured_citation>F. Coulmas. Writing Systems. Cambridge University Press, 2003.</unstructured_citation>
+        </citation>
+        <citation key="coulmas19-9">
+          <unstructured_citation>F. Coulmas. &#x201e;Die Buchstabenschrift ist an und f&#x00fc;r sich die intelligentere.&#x201c; &#x00dc;berlegungen zur Bewertung von Schriftsystemen. In Y. Haralambous, ed., Proceedings of Graphemics in the 21st Century, Brest 2018, pp. 1&#x2013;16, Brest, 2019. Fluxus Editions. https://doi.org/10.36824/2018-graf-coul</unstructured_citation>
+        </citation>
+        <citation key="christa-10">
+          <unstructured_citation>C. D&#x00FC;hrscheid. Einf&#x00FC;hrung in die Schriftlinguistik. Vandenhoeck &#x0026; Ruprecht, 2016.</unstructured_citation>
+        </citation>
+        <citation key="christa19-11">
+          <unstructured_citation>C. D&#x00fc;rscheid and D. Meletis. Emojis: A Grapholinguistic Approach. In Y. Haralambous, ed., Proceedings of Graphemics in the 21st Century, Brest 2018, pp. 167&#x2013;183, Brest, 2019. Fluxus Editions. https://doi.org/10.36824/2018-graf-duer</unstructured_citation>
+        </citation>
+        <citation key="glueck-12">
+          <unstructured_citation>H. Gl&#x00FC;ck. Schrift und Schriftlichkeit. J.B. Metzler, Stuttgart, 1987.</unstructured_citation>
+        </citation>
+        <citation key="grushkin-13">
+          <journal_title>American Annals of the Deaf</journal_title>
+          <author>Grushkin, Donald A.</author>
+          <volume>161</volume>
+          <first_page>509</first_page>
+          <cYear>2017</cYear>
+          <article_title>Writing Signed Languages: What For? What Form?</article_title>
+          <unstructured_citation>D. A. Grushkin. Writing signed languages: What for? What form? American Annals of the Deaf 161(5):509&#x2013;527, 2017. https://doi.org/10.1353/aad.2017.0001</unstructured_citation>
+        </citation>
+        <citation key="yh07book-14">
+          <unstructured_citation>Y. Haralambous. Fonts &#x0026; Encodings. From Advanced Typography to Unicode and Everything in Between. O&#x2019;Reilly, Sebastopol, CA, 2007.</unstructured_citation>
+        </citation>
+        <citation key="yh18tb-15">
+          <journal_title>TUGboat</journal_title>
+          <author>Haralambous, Yannis</author>
+          <volume>39</volume>
+          <first_page>8</first_page>
+          <cYear>2018</cYear>
+          <article_title>TeX as a Path, a Talk Given at Donald Knuth&#x2019;s 80th Birthday Celebration Symposium</article_title>
+          <unstructured_citation>Y. Haralambous. TeX as a path, a talk given at Donald Knuth&#x2019;s 80th birthday celebration symposium. TUGboat 39(1):8&#x2013;15, 2018. https://tug.org/TUGboat/tb39-1/tb121haralambous-knuth80.pdf</unstructured_citation>
+        </citation>
+        <citation key="yh19awll-16">
+          <unstructured_citation>Y. Haralambous. Phonocentrism in Greece: Side effects of two centuries of diglossia. poster presented at AWLL12, Cambridge, UK, https://hal.archives-ouvertes.fr/hal-02480230, 2019.</unstructured_citation>
+        </citation>
+        <citation key="yannis-unicode-17">
+          <unstructured_citation>Y. Haralambous and M. D&#x00FC;rst. Unicode from a linguistic point of view. In Y. Haralambous, ed., Proceedings of Graphemics in the 21st Century, Brest 2018, pp. 167&#x2013;183, Brest, 2019. Fluxus Editions. https://doi.org/10.36824/2018-graf-hara1</unstructured_citation>
+        </citation>
+        <citation key="holcombe-18">
+          <unstructured_citation>C. Holcombe. A History of East-Asia. Cambridge University Press, 2011.</unstructured_citation>
+        </citation>
+        <citation key="letterS-19">
+          <journal_title>The Mathematical Intelligencer</journal_title>
+          <author>Knuth, Donald E.</author>
+          <volume>2</volume>
+          <first_page>114</first_page>
+          <cYear>1980</cYear>
+          <article_title>The Letter S</article_title>
+          <unstructured_citation>D. E. Knuth. The letter S. The Mathematical Intelligencer 2:114&#x2013;122, 1980.</unstructured_citation>
+        </citation>
+        <citation key="knuth-20">
+          <journal_title>Software&#x2014;Practice and Experience</journal_title>
+          <author>Knuth, Donald E.</author>
+          <volume>11</volume>
+          <first_page>1119</first_page>
+          <cYear>1981</cYear>
+          <article_title>Breaking Paragraphs into Lines</article_title>
+          <unstructured_citation>D. E. Knuth and M. F. Plass. Breaking paragraphs into lines. Software&#x2014;Practice and Experience 11:1119&#x2013;1184, 1981.</unstructured_citation>
+        </citation>
+        <citation key="kohrt-21">
+          <unstructured_citation>M. Kohrt. Problemgeschichte des Graphembegriffs und des fr&#x00FC;hen Phonembegriffs. Niemeyer, T&#x00FC;bingen, 1985.</unstructured_citation>
+        </citation>
+        <citation key="manohar-22">
+          <unstructured_citation>K. Manohar and S. Thottingal. Malayalam Orthographic Reforms. Impact on Language and Popular Culture. In Y. Haralambous, ed., Proceedings of Graphemics in the 21st Century, Brest 2018, pp. 329&#x2013;351, Brest, 2019. Fluxus Editions. https://doi.org/10.36824/2018-graf-mano</unstructured_citation>
+        </citation>
+        <citation key="dyslexia2-23">
+          <unstructured_citation>D. Martin, ed. Researching Dyslexia in Multilingual Settings. Multilingual Matters, Bristol, Buffalo, Toronto, 2013.</unstructured_citation>
+        </citation>
+        <citation key="meletis-24">
+          <unstructured_citation>D. Meletis. Graphetik. Form und Materialit&#x00e4;t von Schrift. Verlag Werner H&#x00fc;lsbusch, Gl&#x00fc;ckstadt, 2015.</unstructured_citation>
+        </citation>
+        <citation key="meletis2020-25">
+          <unstructured_citation>D. Meletis. The Nature of Writing: A Theory of Grapholinguistics. Fluxus Editions, Brest, to appear.</unstructured_citation>
+        </citation>
+        <citation key="mon70-26">
+          <unstructured_citation>R. Montague. English as a formal language. In B. Visentini et al., eds., Linguaggi nella Societ&#x00E0; et nella Tecnica, pp. 188&#x2013;211. Edizioni di Comunit&#x00E0;, 1970.</unstructured_citation>
+        </citation>
+        <citation key="moschonas-27">
+          <unstructured_citation>S. Moschonas. Ideology and Language. Patakis, Athens, 2005. (In Greek).</unstructured_citation>
+        </citation>
+        <citation key="nehrlich-28">
+          <unstructured_citation>T. Nehrlich. Ph&#x00e4;nomenologie der Ligatur. Theorie und Praxis eines Schriftelements zwischen Letter und L&#x00fc;cke. In M. Giertier and R. K&#x00f6;ppel, eds., Von Lettern und L&#x00fc;cken: zur Ordnung der Schrift im Bleisatz, pp. 13&#x2013;38, Paderborn, 2012. Wilhelm Fink.</unstructured_citation>
+        </citation>
+        <citation key="astro-29">
+          <unstructured_citation>A. Ollongren. Astrolinguistics. Design of a Linguistic System for Interstellar Communication Based on Logic. Springer, 2013.</unstructured_citation>
+        </citation>
+        <citation key="partl-30">
+          <journal_title>TUGboat</journal_title>
+          <issn>0896-3207</issn>
+          <author>Partl, Hubert</author>
+          <volume>9</volume>
+          <first_page>70</first_page>
+          <cYear>1988</cYear>
+          <article_title>German TeX</article_title>
+          <unstructured_citation>H. Partl. German TeX. TUGboat 9(1):70&#x2013;72, Apr. 1988. https://tug.org/TUGboat/tb09-1/tb20partl.pdf</unstructured_citation>
+        </citation>
+        <citation key="joyo-31">
+          <unstructured_citation>S. R. Paxton. Tackling the Kanji hurdle. An investigation of Kanji order and its role in facilitating the Kanji learning process. Ph.D. thesis, Macquarie University, Sydney, Australia, 2015.</unstructured_citation>
+        </citation>
+        <citation key="dyslexia-32">
+          <unstructured_citation>L. Rello and R. Baeza-Yates. Good fonts for dyslexia. In Proceedings of the 15th International ACM SIGACCESS Conference on Computers and Accessibility, pp. 14:1&#x2013;14:8, 2013. https://doi.org/10.1145/2513383.2513447</unstructured_citation>
+        </citation>
+        <citation key="saussu-33">
+          <unstructured_citation>F. d. Saussure. Course in General Linguistics. McGraw-Hill, New York, 1966. C. Bally, A. Secehahye, A. Riedlinger, eds. B. Wade, tr.</unstructured_citation>
+        </citation>
+        <citation key="arabicstegano-34">
+          <unstructured_citation>M. Shirali-Shahreza and M. Shirali-Shahreza. A new approach to Persian/Arabic text steganography. In 5th IEEE/ACIS International Conference on Computer and Information Science and 1st IEEE/ACIS International Workshop on Component-Based Software Engineering, Software Architecture and Reuse (ICIS-COMSAR&#x2019;06), pp. 310&#x2013;315, July 2006. https://doi.org/10.1109/ICIS-COMSAR.2006.10</unstructured_citation>
+        </citation>
+        <citation key="sproat-35">
+          <unstructured_citation>R. Sproat. A Computational Theory of Writing Systems. Cambridge University Press, Cambridge, 2000.</unstructured_citation>
+        </citation>
+        <citation key="tebaldi-36">
+          <unstructured_citation>C. Tebaldi. From #Je Suis Circonflex to #Je Suis Cornflakes: Racialization and Resemiotization in French Nationalist Twitter. In AAA, 2017. https://umass.academia.edu/CatherineTebaldi.</unstructured_citation>
+        </citation>
+        <citation key="thomas-37">
+          <journal_title>Japanese Language and Literature</journal_title>
+          <author>Thomas, Margaret</author>
+          <volume>47</volume>
+          <first_page>23</first_page>
+          <cYear>2013</cYear>
+          <article_title>&#x201c;Air Writing&#x201d; and Second Language Learners&#x2019; Knowledge of Japanese Kanji</article_title>
+          <unstructured_citation>M. Thomas. &#x201c;Air Writing&#x201d; and Second Language Learners&#x2019; Knowledge of Japanese Kanji. Japanese Language and Literature 47(1):23&#x2013;58, 2013.</unstructured_citation>
+        </citation>
+        <citation key="tullett-38">
+          <unstructured_citation>B. Tullett. Typewriter Art: A Modern Anthology. Laurence King Publishing, London, 2014.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The DuckBoat&#x2014;Beginners' Pond: You do not need to be Neo to cope with a TikZ matrix</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Carla</given_name>
+          <surname>Maggi</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>20</first_page>
+        <last_page>25</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127duck-matrix</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127duck-matrix.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Maggi:2018:DNTa-1">
+          <journal_title>TUGboat</journal_title>
+          <issn>0896-3207</issn>
+          <author>Maggi, Carla</author>
+          <volume>39</volume>
+          <issue>121</issue>
+          <first_page>21</first_page>
+          <cYear>2018</cYear>
+          <article_title>The DuckBoat&#x2014;News from TeX.SE: The Morse code of TikZ</article_title>
+          <unstructured_citation>C. Maggi. The DuckBoat&#x2014;news from TeX.SE: The Morse code of TikZ. TUGboat 39(1):21&#x2013;26, 2018. https://tug.org/TUGboat/tb39-1/tb121duck-tikz.pdf</unstructured_citation>
+        </citation>
+        <citation key="tantau-2">
+          <unstructured_citation>T. Tantau. The TikZ and PGF packages. http://mirrors.ctan.org/graphics/pgf/base/doc/pgfmanual.pdf. Package page: https://ctan.org/pkg/pgf.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Creating accessible pdfs with LaTeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Ulrike</given_name>
+          <surname>Fischer</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>26</first_page>
+        <last_page>28</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127fischer-accessible</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127fischer-accessible.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="latex.news.dev-1">
+          <unstructured_citation>LaTeX Project. LaTeX development formats are now available, 2019. https://latex-project.org/news/2019/09/01/LaTeX-dev-format/</unstructured_citation>
+        </citation>
+        <citation key="oberdiek.2015-2">
+          <unstructured_citation>H. Oberdiek. TikZ and transparent incompatibility, 2015. https://tex.stackexchange.com/a/253417/2388</unstructured_citation>
+        </citation>
+        <citation key="tug.accessibility-3">
+          <unstructured_citation>TUG. PDF accessibility and PDF standards, 2019. https://tug.org/twg/accessibility/</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>LaTeX3 news, issue 11, February 2018</title>
+      </titles>
+      <contributors>
+        <organization sequence="first" contributor_role="author">LaTeX Project Team</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>29</first_page>
+        <last_page>30</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127l3news11</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127l3news11.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>LaTeX3 news, issue 12, January 2020</title>
+      </titles>
+      <contributors>
+        <organization sequence="first" contributor_role="author">LaTeX Project Team</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>31</first_page>
+        <last_page>33</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127l3news12</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127l3news12.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>LaTeX news, issue 31, February 2020</title>
+      </titles>
+      <contributors>
+        <organization sequence="first" contributor_role="author">LaTeX Project Team</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>34</first_page>
+        <last_page>38</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127ltnews31</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127ltnews31.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Case changing: From TeX primitives to the Unicode algorithm</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Joseph</given_name>
+          <surname>Wright</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>39</first_page>
+        <last_page>42</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127wright-case</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127wright-case.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TeX, LaTeX and math</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Enrico</given_name>
+          <surname>Gregorio</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>43</first_page>
+        <last_page>53</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127gregorio-math</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127gregorio-math.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="beccari1997-1">
+          <journal_title>TUGboat</journal_title>
+          <author>Beccari, Claudio</author>
+          <volume>18</volume>
+          <cYear>1997</cYear>
+          <article_title>Typesetting mathematics for science and technology according to ISO 31/XI</article_title>
+          <unstructured_citation>C. Beccari. Typesetting mathematics for science and technology according to ISO 31/XI. TUGboat 18(1), 1997. https://tug.org/TUGboat/tb18-1/tb54becc.pdf</unstructured_citation>
+        </citation>
+        <citation key="dieudonne-2">
+          <unstructured_citation>J. Dieudonn&#x00E9;. Treatise on Analysis. Vol. III. Academic Press, New York-London, 1972. Translated from the French by I. G. MacDonald, Pure and Applied Mathematics, Vol. 10-III.</unstructured_citation>
+        </citation>
+        <citation key="gkp-3">
+          <unstructured_citation>R. L. Graham, D. E. Knuth, and O. Patashnik. Concrete Mathematics. Addison-Wesley Publishing Company, Advanced Book Program, Reading, MA, 1989. A foundation for computer science.</unstructured_citation>
+        </citation>
+        <citation key="gregorio-math-4">
+          <journal_title>ArsTeXnica</journal_title>
+          <issn>1828-2350</issn>
+          <author>Gregorio, Enrico</author>
+          <volume>8</volume>
+          <first_page>7</first_page>
+          <cYear>2009</cYear>
+          <article_title>Simboli matematici in TeX e LaTeX</article_title>
+          <unstructured_citation>E. Gregorio. Simboli matematici in TeX e LaTeX. ArsTeXnica 8:7&#x2013;24, Ottobre 2009. https://www.guitex.org/home/numero-8</unstructured_citation>
+        </citation>
+        <citation key="guiggiani2008-5">
+          <journal_title>ArsTeXnica</journal_title>
+          <issn>1828-2350</issn>
+          <author>Guiggiani, Massimo</author>
+          <volume>5</volume>
+          <first_page>5</first_page>
+          <cYear>2008</cYear>
+          <article_title>Consigli su come non maltrattare le formule matematiche</article_title>
+          <unstructured_citation>M. Guiggiani and L. F. Mori. Consigli su come non maltrattare le formule matematiche. ArsTeXnica 5:5&#x2013;14, Aprile 2008. https://www.guitex.org/home/numero-5</unstructured_citation>
+        </citation>
+        <citation key="guiggiani2008-en-6">
+          <journal_title>TUGboat</journal_title>
+          <author>Guiggiani, Massimo</author>
+          <volume>29</volume>
+          <cYear>2008</cYear>
+          <article_title>Suggestions on how not to mishandle mathematical formulae</article_title>
+          <unstructured_citation>M. Guiggiani and L. F. Mori. Suggestions on how not to mishandle mathematical formulae. TUGboat 29(2), 2008. https://tug.org/TUGboat/tb29-2/tb92guiggiani.pdf</unstructured_citation>
+        </citation>
+        <citation key="isomath-7">
+          <unstructured_citation>G. Milde. isomath &#x2014; mathematical style for science and technology, 2012. Version 0.6.1. https://ctan.org/pkg/isomath</unstructured_citation>
+        </citation>
+        <citation key="unicode-math-8">
+          <unstructured_citation>W. Robertson. Experimental Unicode mathematical typesetting: The unicode-math package, 2019. Version 0.8o. https://ctan.org/pkg/unicode-math</unstructured_citation>
+        </citation>
+        <citation key="rudin-en-9">
+          <unstructured_citation>W. Rudin. Real and Complex Analysis. McGraw-Hill Book Co., New York&#x2013;Toronto, Ont.&#x2013;London, 1966.</unstructured_citation>
+        </citation>
+        <citation key="rudin-it-10">
+          <unstructured_citation>W. Rudin. Analisi Reale e Complessa. Bollati Boringhieri, 1974.</unstructured_citation>
+        </citation>
+        <citation key="systeme-11">
+          <unstructured_citation>C. Tellechea. L&#x2019;extension pour TeX et LaTeX systeme, 2019. Version 0.32. https://ctan.org/pkg/systeme</unstructured_citation>
+        </citation>
+        <citation key="siunitx-12">
+          <unstructured_citation>J. Wright. siunitx &#x2014; A comprehensive (SI) units package, 2018. Version 2.7. https://ctan.org/pkg/siunitx</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The <tt>fewerfloatpages</tt> package</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Frank</given_name>
+          <surname>Mittelbach</surname>
+          <ORCID>https://orcid.org/0000-0001-6318-1230</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>54</first_page>
+        <last_page>68</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127mitt-fewerfloat</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127mitt-fewerfloat.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Typesetting Bangla script with LuaLaTeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Ulrike</given_name>
+          <surname>Fischer</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Marcel</given_name>
+          <surname>Kr&#xfc;ger</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>69</first_page>
+        <last_page>70</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127fischer-bangla</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127fischer-bangla.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Hosny:2019:BWS-1">
+          <journal_title>TUGboat</journal_title>
+          <issn>0896-3207</issn>
+          <author>Hosny, Khaled</author>
+          <volume>40</volume>
+          <issue>124</issue>
+          <first_page>38</first_page>
+          <cYear>2019</cYear>
+          <article_title>Bringing world scripts to LuaTeX: The HarfBuzz experiment</article_title>
+          <unstructured_citation>K. Hosny. Bringing world scripts to LuaTeX: The HarfBuzz experiment. TUGboat 40(1):38&#x2013;43, 2019. https://tug.org/TUGboat/tb40-1/tb124hosny-harfbuzz.pdf</unstructured_citation>
+        </citation>
+        <citation key="Sajib:2019:TBS-2">
+          <journal_title>TUGboat</journal_title>
+          <issn>0896-3207</issn>
+          <author>Sajib, Md Qutub Uddin</author>
+          <volume>40</volume>
+          <issue>126</issue>
+          <first_page>263</first_page>
+          <cYear>2019</cYear>
+          <article_title>Typesetting the Bangla script in Unicode TeX engines&#x2014;experiences and insights</article_title>
+          <unstructured_citation>M. Q. U. Sajib. Typesetting the Bangla script in Unicode TeX engines&#x2014;experiences and insights. TUGboat 40(3):263&#x2013;269, 2019. https://tug.org/TUGboat/tb40-3/tb126sajib-bangla.pdf</unstructured_citation>
+        </citation>
+        <citation key="harfbuzz-3">
+          <unstructured_citation>The FreeType Project. HarfBuzz, a text shaping library. https://harfbuzz.org</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Typographers' Inn</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Peter</given_name>
+          <surname>Flynn</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>71</first_page>
+        <last_page>72</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127inn</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127inn.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="flynn18-1">
+          <unstructured_citation>P. Flynn. Formatting Information: A beginner&#x2019;s guide to formatting documents with LaTeX. Silmaril, Cork, Ireland, Nov 2018. https://ctan.org/pkg/beginlatex</unstructured_citation>
+        </citation>
+        <citation key="fyffe-2">
+          <unstructured_citation>C. Fyffe. Basic Copyfitting. Studio Vista, London, 1969.</unstructured_citation>
+        </citation>
+        <citation key="oetiker18-3">
+          <unstructured_citation>T. Oetiker, H. Partl, et al. The Not So Short Guide to LaTeX2e: Or LaTeX2e in 139 minutes, Feb 2018. https://ctan.org/pkg/lshort</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>An attempt at ragged-right typesetting</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Udo</given_name>
+          <surname>Wermuth</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>73</first_page>
+        <last_page>94</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127wermuth-ragged</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127wermuth-ragged.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="citeBB-1">
+          <unstructured_citation>Barbara Beeton (ed.), TUGboat 7:1 (1986); guest editors David Kellermann and Barry Smith; layout design Martha Gannett.
+
+http://www.tug.org/TUGboat/tb07-1/tb14complete.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeMB-2">
+          <unstructured_citation>Max Bollwage, Typografie kompakt, Berlin, Germany: Springer-Verlag, 2001.</unstructured_citation>
+        </citation>
+        <citation key="citeRB-3">
+          <unstructured_citation>Robert Bringhurst, The Elements of Typographic Style, Seattle, Washington: Hartley &#x0026; Marks Publishers, 4th edition, version 4.2, 2016.</unstructured_citation>
+        </citation>
+        <citation key="citeFJ-4">
+          <unstructured_citation>Friedrich Forssman &#x0026; Ralf de Jong, Detailtypographie, 3rd edition, Mainz, Germany: Verlag Hermann Schmidt, 2004.</unstructured_citation>
+        </citation>
+        <citation key="citeBG-5">
+          <unstructured_citation>Br&#x00FC;der Grimm, Kinder- und Hausm&#x00E4;rchen, 14th edition, Darmstadt: Wissenschaftliche Buchgesellschaft, 1991; under license by Winkler Verlag, M&#x00FC;nchen, 1949.</unstructured_citation>
+        </citation>
+        <citation key="citeYH-6">
+          <unstructured_citation>Yannis Haralambous: &#x201c;New hyphenation techniques in &#x03A9;_2&#x201d;, TUGboat 27:1 (2006), 98&#x2013;103. http://www.tug.org/TUGboat/tb27-1/tb86haralambous-hyph.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeKP-7">
+          <unstructured_citation>Donald E. Knuth and Michael F. Plass, &#x201c;Breaking paragraphs into lines&#x201d;, Software&#x2014;Practice and Experience 11 (1981), 1119&#x2013;1184; reprinted with an addendum as Chapter 3 in [10], 67&#x2013;155.</unstructured_citation>
+        </citation>
+        <citation key="citeCTvA-8">
+          <unstructured_citation>Donald E. Knuth, The TeXbook, Volume A of Computers &amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1984.</unstructured_citation>
+        </citation>
+        <citation key="citeCTvC-9">
+          <unstructured_citation>Donald E. Knuth, The Metafontbook, Volume C of Computers &amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1986.</unstructured_citation>
+        </citation>
+        <citation key="citeDT-10">
+          <unstructured_citation>Donald E. Knuth, Digital Typography, Stanford, California: Center for the Study of Language and Information, CSLI Lecture Notes No. 78, 1999.</unstructured_citation>
+        </citation>
+        <citation key="citeLL-11">
+          <unstructured_citation>Leslie Lamport, LaTeX: A Document Preparation System, 2nd edition, Reading, Massachusetts: Addison-Wesley, 1994.</unstructured_citation>
+        </citation>
+        <citation key="citeMG-12">
+          <unstructured_citation>Frank Mittelbach and Michael Goossens, The LaTeX Companion, 2nd edition, Boston, Massachusetts: Addison-Wesley, 2004.</unstructured_citation>
+        </citation>
+        <citation key="citeRS-13">
+          <unstructured_citation>Richard Southall, &#x201c;First principles of typographic design for document production&#x201d;, TUGboat 5:2 (1984), 79&#x2013;90. Errata in TUGboat 6:1 (1985), 6. http://www.tug.org/TUGboat/tb05-2/tb10south.pdf http://www.tug.org/TUGboat/tb06-1/tb11gendel.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeUWTP-14">
+          <unstructured_citation>Udo Wermuth, &#x201c;Tracing paragraphs&#x201d;, TUGboat 37:3 (2016), 358&#x2013;373; Errata in TUGboat 38:3 (2017), 414 (see [15]). http://www.tug.org/TUGboat/tb37-3/tb117wermuth.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeUWLP-15">
+          <unstructured_citation>Udo Wermuth, &#x201c;A note on &#x005C;linepenalty&#x201d;, TUGboat 38:3 (2017), 400&#x2013;414; Errata in TUGboat 39:1 (2018), 87. http://www.tug.org/TUGboat/tb38-3/tb120wermuth.pdf http://www.tug.org/TUGboat/tb39-1/tb121wermuth-adem.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeWF-16">
+          <unstructured_citation>Hans Peter Willberg, Friedrich Forssman, Lesetypographie, 2nd printing, Mainz, Germany: Verlag Hermann Schmidt, 2005.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Webnotes: Practical approaches</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>David</given_name>
+          <surname>Walden</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>95</first_page>
+        <last_page>96</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127walden-webnotes</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127walden-webnotes.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Reading 29,000 COVID-19 papers</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jonathan</given_name>
+          <surname>Fine</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>97</first_page>
+        <last_page>97</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127fine-covid19</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127fine-covid19.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="sscr-1">
+          <unstructured_citation>https://pages.semanticscholar.org/coronavirus-research</unstructured_citation>
+        </citation>
+        <citation key="sssch-2">
+          <unstructured_citation>https://ai2-semanticscholar-cord-19.s3-us-west-2.amazonaws.com/2020-03-13/json_schema.txt</unstructured_citation>
+        </citation>
+        <citation key="gowers-3">
+          <unstructured_citation>https://gowers.wordpress.com/2019/10/30/advances-in-combinatorics-fully-launched/</unstructured_citation>
+        </citation>
+        <citation key="jats-4">
+          <unstructured_citation>https://jats.nlm.nih.gov/</unstructured_citation>
+        </citation>
+        <citation key="elreg-5">
+          <unstructured_citation>https://www.theregister.co.uk/2020/03/17/ai_covid_19/</unstructured_citation>
+        </citation>
+        <citation key="schol-6">
+          <unstructured_citation>https://scholasticahq.com/</unstructured_citation>
+        </citation>
+        <citation key="wikip-7">
+          <unstructured_citation>https://en.wikipedia.org/wiki/Scholastica_(company)</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>About <i>The Art of Computer Programming, Volume 4, Fascicle 5</i></title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>David</given_name>
+          <surname>Walden</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>98</first_page>
+        <last_page>102</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127reviews-knuth-fascicle5</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127reviews-knuth-fascicle5.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Book review: <i>History of Desktop Publishing</i>, by Frank Romano</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>David</given_name>
+          <surname>Walden</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>102</first_page>
+        <last_page>105</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127reviews-romano</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127reviews-romano.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The treasure chest</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>110</first_page>
+        <last_page>112</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127chest</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127chest.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TUG financial statements for 2019</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>113</first_page>
+        <last_page>113</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127treas</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127treas.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TeX Live 2020 news</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2020</year>
+      </publication_date>
+      <pages>
+        <first_page>115</first_page>
+        <last_page>115</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/41-1/tb127berry-tlnews</doi>
+        <timestamp>20250709170005</timestamp>
+        <resource>https://tug.org/TUGboat/tb41-1/tb127berry-tlnews.html</resource>
+      </doi_data>
+    </journal_article>
+  </journal></body>
+</doi_batch>

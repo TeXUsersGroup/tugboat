@@ -1,0 +1,21 @@
+The concept of letter case is well established for several alphabet-based
+scripts, most notably Latin, Greek and Cyrillic. Upper- and
+lowercase(*) are so widely used that it may not be
+obvious that there are several subtleties in converting case. However, those
+subtleties are important in supporting a wide range of users, and getting all
+of them right is non-trivial.
+
+Whilst the English alphabet has simple case-changing rules, when we look
+beyond English and (possibly) beyond the Latin alphabet, tracking the
+requirements becomes more complicated. Many of these have been codified by the
+Unicode Consortium, and following these guidelines means that different pieces
+of software can give consistent outcomes.
+
+Here, I want to look at how case changing can be set up in \TeX{}, primarily
+focussing on tools that the \LaTeX{} Project have provided, but in the wider
+context of the \TeX{} ecosystem.
+
+(*) The spelling of these concepts is somewhat variable:
+\enquote{upper case}, \enquote{upper-case} and \enquote{uppercase} are all
+valid. The \LaTeX{} Project have chosen the latter form as it makes creating
+clearly-named code functions easier!

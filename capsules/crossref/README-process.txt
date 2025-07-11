@@ -84,17 +84,16 @@ fix the translations if at all possible:
   starts on one line and ends on another, it won't be recognized.
   Edit the .tex file to put it on one line.
 
-- For the bibliography, no font changes or other html-level markup is
+- For the references, no font changes or other html-level markup is
   used.  It is plain (Unicode) text.  The only special cases are making
   urls be live links, and newlines before bullets.
-  
-  We'd like to do Crossref's structured references:
-  https://www.crossref.org/documentation/schema-library/markup-guide-metadata-segments/references/
-  Some effort was put into this using beastie, but it stalled on the
-  beastie side with handling TeX markup, and didn't seem worth
-  interposing another filter on our side.  Boris is contemplating
-  another approach (December 2024).
 
+- Crossref's unstructured citations are output from the bbl.tex files,
+  as above.  Crossref's structured citations are also output, using the
+  aux+bib files. If any bib files need changes (try hard to avoid this),
+  do not fail to save the original version on the working machine and on
+  tug.org before editing.
+  
 On the other hand, sometimes authors use one-off abbreviations or
 complicated TeX code in their abstracts or bibliographies. In such
 cases, it is better to edit the abs/bbl.tex files to replace such custom
@@ -153,7 +152,7 @@ to check the generated dir2.process/issue.xml:
   if any are new organizations, add to lists-authinfo.txt.
 - check that <ORCID> elements are present for all that are specified;
   grep the sources. Add any new ones to lists-authinfo.txt.
-- also check <citation_list>s for reasonableness.
+- also check <citation_list>s and individual <citation>s for reasonableness.
 
 When all articles are done, and the issue.xml looks ok, can upload to
 crossref for them to validate it:
@@ -228,9 +227,13 @@ If needed, also commit changes in bibtexperllibs and crossrefware.
 Register the production dois (per above) before archiving.
 Then archive all the files (after registering):
   # if working on another machine, copy final abs/bbl/aux/bib to tug:
-  cd ~tubprod/VV-N
-  tar czf absbbl.tgz */abs.tex */bbl.tex */*.aux */*.bib
-  scp absbbl.tgz $host: # and unpack, for ease of finding/accessing
+  dir=~tubprod/VV-N
+  cd $dir
+  tar czf absbbl.tgz */abs.tex */bbl.tex
+  scp absbbl.tgz $host:$dir # and unpack, for ease of finding/accessing
+  tar czf auxbib.tgz */*.aux */*.bib
+  scp auxbib.tgz $host:$dir # do not unpack, avoid overwrites, and
+                            # none of the files should be different anyway.
   #
   # svn commit the various files.
   cd ~tubprod/svn/capsules/crossref
@@ -241,17 +244,22 @@ Then archive all the files (after registering):
   mv dir0.capout/tb${nnn}* !$
   ls dir0.capout # only archive.* should remain
   #
+  # We save the .bib files in a tarball just so they aren't so easily
+  # browsable, since these are mostly authors' source files.
   svn mkdir dir1.lndout/archive.tb$nnn
-  mv dir1.lndout/{bib,tb${nnn}*} !$
+  (cd dir1.lndout && tar czf archive.tb$nnn/bib.tgz *.bib && rm *.bib)
+  mv dir1.lndout/tb${nnn}* !$
   ls dir1.lndout # only archive.* should remain
   #
   # dir3 before dir2 since we save them in both places, in case of edits.
   svn mkdir dir3.uploaded/tb$nnn
-  cp -pr dir2.process/{issue.xml,bib,tb${nnn}*} !$
+  (cd dir3.uploaded && tar czf tb$nnn/bib.tgz *.bib && rm *.bib)
+  cp -pr dir2.process/{issue.xml,tb${nnn}*} !$
   ls dir3.uploaded # only archive.* should remain
   #
   svn mkdir dir2.process/archive.tb$nnn
-  mv dir2.process/{issue.xml,bib,tb${nnn}*} !$
+  (cd dir2.process && tar czf tb$nnn/bib.tgz *.bib && rm *.bib)
+  mv dir2.process/{issue.xml,tb${nnn}*} !$
   ls dir2.process # only archive.* should remain
   #
   svn -q add */*tb${nnn}/*

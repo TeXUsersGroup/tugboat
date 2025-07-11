@@ -1,0 +1,10 @@
+    We start by giving a quick overview of \LaTeX{}'s float algorithm
+    and the problems that result from the approach used.
+
+    We then look in some detail into possible alterations and
+    improvements to that algorithm and discuss possible issues that
+    need to be resolved. In this section we also describe all
+    configuration possibilities of the extended algorithm.
+
+    The final section then documents the code changes that are
+    necessary to \LaTeX{} kernel macros to implement the extension.

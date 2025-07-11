@@ -1,0 +1,11 @@
+Plain \TeX\ (as well as \LaTeX) provides the command \cs{raggedright}
+to typeset text {\sl unjustified}, that is, only the left margin is
+straight, the right margin varies in its length and looks ragged. The
+command gives good results for narrow columns, for example, when it is
+applied in marginal notes and short quotations. However, its output
+addresses only the English tradition. For wider measures it produces
+the ragged-right output that is called ``Rauhsatz'' in German and not
+the more demanding ``Flattersatz''. In this article we examine what
+recommendations are formulated by a German typographer to typeset text
+in ``Flattersatz'' and then make an attempt to capture these
+recommendations in \TeX\ macros.

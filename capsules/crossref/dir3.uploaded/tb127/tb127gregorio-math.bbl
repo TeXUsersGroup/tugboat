@@ -1,0 +1,78 @@
+\begin{thebibliography}{10}
+
+\bibitem{beccari1997}
+C.~Beccari.
+\newblock Typesetting mathematics for science and technology according to {ISO
+  31/XI}.
+\newblock {\em TUGboat} 18(1), 1997.
+\newblock \url{https://tug.org/TUGboat/tb18-1/tb54becc.pdf}
+
+\bibitem{dieudonne}
+J.~Dieudonn\'{e}.
+\newblock {\em Treatise on Analysis. {V}ol.~{III}}.
+\newblock Academic Press, New York-London, 1972.
+\newblock Translated from the French by I. G. MacDonald, Pure and Applied
+  Mathematics, Vol. 10-III.
+
+\bibitem{gkp}
+R.~L. Graham, D.~E. Knuth, and O.~Patashnik.
+\newblock {\em Concrete Mathematics}.
+\newblock Addison-Wesley Publishing Company, Advanced Book Program, Reading,
+  MA, 1989.
+\newblock A foundation for computer science.
+
+\bibitem{gregorio-math}
+E.~Gregorio.
+\newblock Simboli matematici in {\TeX} e {\LaTeX}.
+\newblock {\em Ars\TeX nica} 8:7--24, Ottobre 2009.
+\newblock \url{https://www.guitex.org/home/numero-8}
+
+\bibitem{guiggiani2008}
+M.~Guiggiani and L.~F. Mori.
+\newblock Consigli su come \emph{non} maltrattare le formule matematiche.
+\newblock {\em Ars\TeX nica} 5:5--14, Aprile 2008.
+\newblock \url{https://www.guitex.org/home/numero-5}
+
+\bibitem{guiggiani2008-en}
+M.~Guiggiani and L.~F. Mori.
+\newblock Suggestions on how \emph{not} to mishandle mathematical formulae.
+\newblock {\em TUGboat} 29(2), 2008.
+\newblock \url{https://tug.org/TUGboat/tb29-2/tb92guiggiani.pdf}
+
+\bibitem{isomath}
+G.~Milde.
+\newblock \pkgname{isomath} --- mathematical style for science and technology,
+  2012.
+\newblock Version 0.6.1.
+\newblock \url{https://ctan.org/pkg/isomath}
+
+\bibitem{unicode-math}
+W.~Robertson.
+\newblock Experimental {Unicode} mathematical typesetting: {The}
+  \pkgname{unicode-math} package, 2019.
+\newblock Version 0.8o.
+\newblock \newline \url{https://ctan.org/pkg/unicode-math}
+
+\bibitem{rudin-en}
+W.~Rudin.
+\newblock {\em Real and Complex Analysis}.
+\newblock McGraw-Hill Book Co., New York--Toronto, Ont.--London, 1966.
+
+\bibitem{rudin-it}
+W.~Rudin.
+\newblock {\em Analisi Reale e Complessa}.
+\newblock Bollati~Boringhieri, 1974.
+
+\bibitem{systeme}
+C.~Tellechea.
+\newblock L'extension pour {\TeX} et {\LaTeX} \pkgname{systeme}, 2019.
+\newblock Version 0.32.
+\newblock \url{https://ctan.org/pkg/systeme}
+
+\bibitem{siunitx}
+J.~Wright.
+\newblock \pkgname{siunitx} --- {A} comprehensive {(SI)} units package, 2018.
+\newblock Version 2.7.
+\newblock \url{https://ctan.org/pkg/siunitx}
+
+\end{thebibliography}
