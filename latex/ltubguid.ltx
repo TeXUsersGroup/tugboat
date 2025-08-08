@@ -1,7 +1,7 @@
 % $Id$
 % ltubguid.ltx - documentation for ltugboat classes.
 % 
-% Copyright 1994-2023 TeX Users Group.
+% Copyright 1994-2025 TeX Users Group.
 % 
 % This file is part of the tugboat package.
 % 
@@ -660,14 +660,13 @@ Two caveats about these optional arguments:
   defines the \verb|verbatim| environment, as discussed next.
 \end{itemize}
 
-Authors may wish to use a more featureful verbatim package, such as
+If the \TUB\ verbatim environment suffices, please use it. But if you
+need to use a more featureful verbatim package, such as
 \pkgname{listings}~\cite{pkg:listings} or
-\pkgname{fancyvrb}~\cite{pkg:fancyvrb}. This is ok; it just means the
-\TUB\ optional-argument feature is not available. On the other hand,
-please do not use the \pkgname{minted} package if possible; it is harder
-to customize and correct at the \TeX\ level, and the shell escape
-requirement is troublesome. In any case, we will almost always wish to
-print code listings in straight black, not colored or even grayscaled.
+\pkgname{fancyvrb}~\cite{pkg:fancyvrb}, this is ok (the \TUB\
+optional-argument feature will not be available). We will almost always
+wish to print code listings in straight black, not colored or even
+grayscaled, so please avoid colorized listings if at all reasonable.
 
 If you use the \pkgname{listings} package, please set:
 \begin{verbatim}[\small]
@@ -691,12 +690,18 @@ for alignment of the sources, hence \texttt{keepspaces}.
 
 \item \texttt{commentstyle=\cs{slshape}}:
 We prefer slanted to Computer Modern typewriter italic.
-Using regular upright typewriter for comments is fine too.
+Using regular upright typewriter for comments is fine (preferred) too.
 
 \item \texttt{basicstyle=...}:
 We usually prefer \cs{small} for displayed verbatim, but not inline
 verbatim, hence the conditional.
 
+\item \pkgname{listings} does not easily support \tbUTF-8 for code
+points above 255. If you need such characters, a different package is
+probably easier. See:
+pdf\LaTeX: \url{https://tex.stackexchange.com/q/24528};\\
+Lua\LaTeX,
+\XeLaTeX: \url{https://tex.stackexchange.com/q/25391}.
 \end{itemize}
 
 \subsection{Typesetting urls}

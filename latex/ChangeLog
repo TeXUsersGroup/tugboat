@@ -1,3 +1,11 @@
+2025-08-08  Karl Berry  <karl@freefriends.org>
+
+	* ltubguid.ltx: minted is ok now that it's restricted shell escape.
+	Mention that listings doesn't easily handle utf8.
+
+	* tugboat.dtx (\ConTeXt): \texorpdfstring.
+	(\PDFUA): new abbrev.
+
 2025-04-07  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\BibLaTeX, \BibTeX): allow hyphenation after \Bib.

@@ -80,6 +80,25 @@ clean:
 	rm -f *.log *.aux *.out *.toc *.pdf *.dvi *.bbl *.blg *.html
 
 # 
+tubabbrs.pdf abbr: tubabbrs.tex tubabbrs.lst ltugboat.cls
+	texfot pdflatex $<
+
+tubabbrs.lst: tugboat.dtx Makefile
+# - extract the abbrev section from the dtx
+# - remove the definition command
+# - remove the definition, possibly with a } from \DeclareRobustCommand
+#                          or with a # for an argument
+# - leaving just the control sequence,
+#   make \cs into \do{cs}.
+	(sed -n '/^\\DeclareRobustCommand{\\AllTeX}/,/\\def\\YAML/p' $< \
+	| sed -n 's/^\\\(def\|DeclareRobustCommand{*\)//p' \
+	| sed 's/[{}#].*//' \
+	| sed -e 's/^\\/\\do{/' -e 's/$$/}/' \
+	| sort \
+	>$@) \
+	|| { rm -f $@; exit 1; }
+
+# 
 tub_rel = /usr/local/texlive/dev/texmf-dist/
 diff dif:
 	-diff -u0 $(tub_rel)/bibtex/bst/tugboat/tugboat.bst .

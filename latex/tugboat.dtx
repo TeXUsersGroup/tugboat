@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2025-04-07 v2.34
+                   [2025-08-08 v2.34
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -714,7 +714,8 @@
 % We place our \cs{kern} after \cs{-} so that it disappears if the
 % hyphenation is taken:
 %    \begin{macrocode}
-\def\ConTeXt{C\kern-.0333emon\-\kern-.0667em\TeX\kern-.0333emt}
+\def\ConTeXt{\texorpdfstring{C\kern-.0333emon\-\kern-.0667em\TeX\kern-.0333emt}
+  {ConTeXt}}
 \def\CMkIV{\ConTeXt\ \MkIV}
 \def\Cplusplus{C\plusplus}
 \def\plusplus{\raisebox{.7ex}{$_{++}$}}
@@ -851,10 +852,11 @@
 \def\PCTeX{PC\thinspace\TeX}
 \def\pcTeX{\leavevmode\raise.5ex\hbox{p\kern-.3\p@ c}\TeX}
 \def\pdfLaTeX{pdf\/\-\LaTeX}% dtk-logos
-\def\pdflatex{\pdfLatex}
+\def\pdflatex{\pdfLaTeX}
 \def\pdfTeX{pdf\/\-\TeX}% dtk-logos
 \def\pdftex{\pdfTeX}
 \def\PDF{\acro{PDF}}
+\def\PDFUA{\acro{PDF/UA}}
 \def\PGF{\acro{PGF}}
 \def\PHP{\acro{PHP}}
 \def\PiC{P\kern-.12em\lower.5ex\hbox{I}\kern-.075emC\@}
@@ -916,7 +918,8 @@
 \def\UG{Users Group}
 \def\UNIX{\acro{UNIX}}
 % Don't define \UTF, since other packages use it for Unicode character access.
-% On the other hand, we want a macro for UTF-8 that doesn't break at the -.
+% On the other hand, we want a macro for UTF-8 that doesn't break at a
+% following -, as in \tbUTF-8.
 \def\tbUTF{\acro{UTF}\futurelet\@nextchar\@tbUTFcheck}
   \def\@tbUTFcheck{\ifx\@nextchar-%
                       \mbox{-}\let\next=\tbgobbledash
@@ -933,7 +936,6 @@
 \def\WEB{\texorpdfstring{\texttt{WEB}\@}{WEB}}
 \def\WEAVE{\texttt{WEAVE}\@}
 \def\WYSIWYG{\acro{WYSIWYG}}
-\def\YAML{\acro{YAML}}
 %    \end{macrocode}
 %
 % Xe\TeX{} requires reflecting the first E, hence we complain if the
@@ -990,6 +992,7 @@
 \def\XSL{\acro{XSL}}
 \def\XSLFO{\acro{XSL}\raise.08ex\hbox{-}\acro{FO}}
 \def\XSLT{\acro{XSLT}}
+\def\YAML{\acro{YAML}}
 %    \end{macrocode}
 %
 % \subsection{General typesetting rules}
