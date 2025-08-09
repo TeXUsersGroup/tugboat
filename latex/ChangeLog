@@ -1,3 +1,8 @@
+2025-08-09  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst (presort): always use the key field for sorting
+	if it is non-empty. Not sure if this will be too big of a change.
+
 2025-08-08  Karl Berry  <karl@freefriends.org>
 
 	* ltubguid.ltx: minted is ok now that it's restricted shell escape.

@@ -1,6 +1,12 @@
 $Id$
 This file records noteworthy changes.  This file is public domain.
 
+ltugboat.cls:
+- new abbreviation \PDFUA, for \acro{PDF/UA}.
+- for \BibTeX and \BibLaTeX, allow hyphenation after the "Bib".
+tugboat.bst:
+- always use the key field for sorting, if it's non-empty. For all entry types.
+
 -----------------
 2.34 (2024-10-29):
 ltugboat.cls:

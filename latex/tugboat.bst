@@ -7,6 +7,8 @@
 %%%                    @webpage (see definition below).
 %%%   For @misc, the editor field is accepted along with author.
 %%%   For @misc, the organization field is output.
+%%%   If the key field is present, it is always used for sorting,
+%%%     for all entry types.
 %%%   New field bookauthor for @incollection and @inproceedings.
 %%%   Abbreviate "page(s)" to "p(p).",
 %%%     "volume" to "vol.",
@@ -1809,26 +1811,39 @@ FUNCTION {editor.organization.sort}
 }
 
 FUNCTION {presort}
-{ type$ "book" =
-  type$ "inbook" =
-  or
-    'author.editor.sort
-    { type$ "proceedings" =
-        'editor.organization.sort
-        { type$ "manual" =
-            { author.organization.sort }
-            { type$ "online" =
-              type$ "misc" =
-              or
-                { author.editor.sort }
-                { author.sort }
-              if$
-            }
-          if$
-        }
-      if$
+{ key empty$
+    {
+    type$ "book" =
+    type$ "inbook" =
+    or
+      'author.editor.sort
+      { type$ "proceedings" =
+          'editor.organization.sort
+          { type$ "manual" =
+              { author.organization.sort }
+              {   type$ "online" =
+                  type$ "misc" =
+                or
+                  type$ "webpage" =
+                or
+                  type$ "software" =
+                or
+                  { author.editor.sort }
+                  { author.sort }
+                if$ % online|misc|webpage|software
+              }
+            if$     % manual
+          }
+        if$         % proceedings
+      }
+    if$             % book|inbook
     }
-  if$
+    {
+      % key is non-empty, use it.
+      % "sorting by key " key * " in " * cite$ * warning$
+      key sortify
+    }
+  if$ % key
   "    "
   *
   year field.or.null sortify
