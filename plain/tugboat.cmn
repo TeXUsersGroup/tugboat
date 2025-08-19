@@ -154,6 +154,7 @@
 \def\LaTeX{\La\kern-.15em\TeX}
 \def\LaTeXe{\LaTeX{}\kern.05em2$_{\textstyle\varepsilon}$}
 \def\LMTX{\acro{LMTX}}
+\def\LuaHBTeX{Lua\acro{HB}\-\TeX}%
 \def\LyX{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX}
 \def\macOS{mac\acro{OS}}
 \def\MacOSX{Mac\,\acro{OS\,X}}
@@ -1043,6 +1044,8 @@ that may not be obvious.  For full definitions, see real code above.
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+                      Define \LuaHBTeX abbrev.
+
 1.32      16 Jun 25   No real changes, just keeping version number in sync.
 
 1.31      26 Oct 24   \tbsurl, \tbhurl, \tbmailto, \tbhref: simple
