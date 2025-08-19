@@ -207,6 +207,8 @@ sub check_all_splices {
       &info (" found firstpageincr $fp in nocadmus, ok\n");
     } elsif (exists $singlesplice_reverse{$fp}) {
       &info (" found firstpageincr $fp in singlesplice_reverse, ok\n");
+    } elsif ($fp eq "lettre") {
+      &info (" lettre is special for 46:2, ok not to be in nocadmus\n");
     } else {
       die " firstpageincr $fp not in nocadmus (@$nocadmus)";
     }
@@ -217,6 +219,8 @@ sub check_all_splices {
       &info (" found firstpageincr $fp in singlesplice, ok\n");
     } elsif (exists $singlesplice_reverse{$fp}) {
       ; # reported above
+    } elsif ($fp eq "lettre") {
+      &info (" lettre is special for 46:2, ok not to be in nocadmus\n");
     } else {
       die " firstpageincr $fp not in multisplice2 or singlesplice";
     }
@@ -258,6 +262,7 @@ sub check_all_splices {
     }
   }
   # There should be nothing left over in firstpageincr.
+  delete $firstpageincr{"lettre"}; # 46-2
   die " firstpageincr items remain: ", join (" ", keys %firstpageincr)
     if (keys %firstpageincr);
   

@@ -5,7 +5,7 @@
 # Extract urls from a pdf, or as given, and check them. Assume GNU grep
 # and bash (for PIPESTATUS).
 
-exit_status=1
+exit_status=0
 mydomain=freefriends.org #`hostname | perl -pe 's/.*\..*\..*$/'`
 ckurls () {
   wget -i- -nv --no-check-cert --wait=1 --timeout=8 --tries=0 --spider \

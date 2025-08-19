@@ -1,3 +1,13 @@
+2025-08-19  Karl Berry  <karl@freefriends.org>
+
+	* acrocheck-tub: handle \author, \address, \MAPS.
+	* check-balance-tub: doc tweak that verbatim \end{document} confuses.
+	* check-splice-tub: special-case lettre for 46:2,
+	due to double-spliced komo.
+	* check-urls-tub: exit 0 by default.
+	* html2tex-tub: allow whitespace before </li>.
+	(These changes for 46:2.)
+
 2025-06-27  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.abbr-ctx (\HUE, \LED, ..., \ZIGBEE): for tb144hagen-flagging.

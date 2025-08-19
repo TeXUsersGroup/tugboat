@@ -20,7 +20,9 @@ sub main {
   
   $/ = "";  # check a paragraph at a time
   while (<>) {
-    next if /^\\end(article|\{document\})/;
+    next if /^\\end(article|\{document\})/; # don't worry after end.
+       # can lose material if in verbatim, but oh well.
+    s/\r$//;                # 
     s/\$''\$//;             # common inch marks
     s/```//;                # markdown triple quotes
     # remove % comments, a common and ignorable culprit,

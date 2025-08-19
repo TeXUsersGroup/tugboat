@@ -9,6 +9,7 @@
 # for the TUG election ballots.
 #  -e 's/<h3 id="\(.*\)".*$/\\boardcandidate{\1}/' \
 #  -e '/^<img width=150/d' \
+#  -e '/^(Candidate for TUG.*)$/d' \
 
 # for conf listings:
 #    -e 's/, */}{/' \
@@ -28,6 +29,7 @@ sed \
   -e 's/<ol>/\\begin{enumerate}/g' \
   -e 's,</ol>,\\end{enumerate},g' \
   -e 's/<li>/\\item /g' \
+  -e 's, *</li>,,g' \
   \
   -e 's/<dl>/\\begin{description}/g' \
   -e 's,</dl>,\\end{description},g' \
@@ -36,7 +38,7 @@ sed \
   -e 's,<dd>,,g' \
   -e 's,</dd>,,g' \
   \
-  -e 's/<a [^>]*href="\(.*\)">/\\url{\1}/g' \
+  -e 's/<a href="\(.*\)">/\\url{\1}/g' \
   -e 's,</a>,,g' \
   \
   -e 's/<img [^>]*src="\(.*\)"[^>]*>/\\includegraphics{\1}/g' \
