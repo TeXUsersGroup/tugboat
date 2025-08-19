@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2025-08-08 v2.34
+                   [2025-08-19 v2.34
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -701,11 +701,11 @@
      B\textsc{ib}%
   \fi
 }
-\def\BibLaTeX{\Bib\-\kern.02em \LaTeX}
-\def\BibTeX{\Bib\-\kern-.08em \TeX}
+\def\BibLaTeX{\texorpdfstring{\Bib\-\kern.02em \LaTeX}{BibLaTeX}}
+\def\BibTeX{\texorpdfstring{\Bib\-\kern-.08em \TeX}{BibTeX}}
 % no good way to determine bold font, and we want to lose the kern, too:
 % (we \let BibTeX to this in maketitle)
-\def\bfBibTeX{B{\SMC\SMC IB}\TeX}
+\def\bfBibTeX{\texorpdfstring{B{\SMC\SMC IB}\TeX}{BibTeX}}
 %
 \def\BSD{\acro{BSD}}
 \def\CandT{\textsl{Computers \& Typesetting}}
@@ -1424,8 +1424,8 @@
 % Now let's use those macros for putting a url into a simple
 % ragged-right footnote.
 \def\tburlfootnote{\tbsurlfootnote}
-\def\tbsurlfootnote#1{\footnote{\raggedright\tbsurl{#1}}}
-\def\tbhurlfootnote#1{\footnote{\raggedright\tbhurl{#1}}}
+\def\tbsurlfootnote#1{\unskip\footnote{\raggedright\tbsurl{#1}}}
+\def\tbhurlfootnote#1{\unskip\footnote{\raggedright\tbhurl{#1}}}
 %
 % Close up space between footnote mark and punctuation (``pre-punctuation'').
 \DeclareRobustCommand{\tbppkernfoot}{\tubthinnerspace}
