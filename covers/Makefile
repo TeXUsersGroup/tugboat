@@ -22,13 +22,13 @@ deps = ../tugboat.dates ../tugboat.sty ../ltugboat.cfg
 	-@$(cp) $@ ../CADMUS/
 
 # normally:
-#c3_target = cover3.pdf
-#c3_twopages = false
+c3_target = cover3.pdf
+c3_twopages = false
 #
 # for tb137, 139, 142, cover3 is two pages, second page is copied to
 # calendar, so comment out above, and use:
-c3_target = cover3a.pdf
-c3_twopages = test $@ = cover3.pdf
+#c3_target = cover3a.pdf
+#c3_twopages = test $@ = cover3.pdf
 
 %-crop.pdf: %.pdf
 	pdfcrop-tub $< >/dev/null
@@ -40,12 +40,12 @@ all: spine.pdf cover4.pdf titlepage.pdf cover1.pdf cover2.pdf $(c3_target)
 titlepage.pdf: $(tb)quote.tex tugboat.front
 cover4.pdf: $(tb)cont.tex tubtocmac.tex tugboat.front
 cover3.pdf: $(tb)cap.tex  tubtocmac.tex
-cover1.pdf: word-nobox.pdf press2.pdf coverdrawing.pdf
+cover1.pdf: word-nobox.pdf press2.pdf coverdrawing.png
 
 # cover3a.pdf is copied to ../CADMUS/ to replace the two-page version.
-cover3a.pdf: cover3.pdf cover3-crop.pdf
-	pdfselect 1 1 $< $@
-	$(cp) $@ ../CADMUS/cover3.pdf
+#cover3a.pdf: cover3.pdf cover3-crop.pdf
+#	pdfselect 1 1 $< $@
+#	$(cp) $@ ../CADMUS/cover3.pdf
 
 # We want the complete.pdf that we post to have both the internal links
 # on the toc pages, that we created in toclinks.pdf, and the external
@@ -67,7 +67,7 @@ $(tb)complete.pdf complete compl co: $(tb)cmplete.lua \
 
 # after copying the generic file, update the number of pages in the
 # issue and adjust c3 depending on whether it's one or two pages.
-$(tb)cmplete.lua: svn-covers/tbcomplete.lua
+$(tb)cmplete.lua: svn-covers/tbcmplete.lua
 	cp $< $@ || exit 1
 
 # the tex file doesn't need per-issue changes; just make a link
@@ -76,7 +76,7 @@ $(tb)complete.tex: svn-covers/tbcomplete.tex
 	rm -f $@
 	ln -s $< $@ || exit 1
 
-# i.e., copy tbcomplete.lua from svn:covers/
+# i.e., copy tbcmplete.lua from svn:covers/
 # to $(tb)cmplete.lua (no o for better filename completion), and
 # tbcomplete.tex to $(tb)complete.tex.
 
@@ -114,7 +114,7 @@ spell:
 	check_files=cover*.tex; \
 	for f in $$check_files; do printf "\f $$f\n"; (cd `dirname $$f` && myspell `basename $$f`); done
 
-check:
+check ck:
 	cd .. && $(MAKE) $@
 
 # 
@@ -139,4 +139,5 @@ copynext:
 	cp -ai Makefile *.tex tugboat.* word-* press2.pdf svn-covers \
 	       ${tn}/covers/
 	cd ${tn}/covers && rename s/$(tbn)/$(tbnn)/ *
-	cd ${tn}/covers && rm -f tb*complete.lua # copy in later
+	cd ${tn}/covers && rm -f tb*complete.lua
+	cd ${tn}/covers && cp -ai svn-covers/tbcmplete.lua tb$(tbnn)cmplete.lua

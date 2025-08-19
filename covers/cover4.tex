@@ -26,7 +26,7 @@
 \let\runfoot=\normalrunfoot
 
 % fonts:
-\iffalse
+\iftrue
 \tenpoint\baselineskip=12.5pt       % default 10pt baselineskip is 12.5pt
   \font\slnine = cmsl9
   \font\manual = logo10
@@ -35,7 +35,7 @@
   \font\lslashfont = ec-lmr10
 \fi
 
-\iftrue
+\iffalse
 \ninepoint\baselineskip=11.1pt     % default 9pt baselineskip is 11.1pt
   \font\slnine = cmsl8
   \font\manual = logosl10 at 9pt
@@ -55,11 +55,11 @@
 \setdigitwidth{999} % number of digits in highest page number
 
 % page length
-\vfuzz=44pc 			% normally zero
+\vfuzz=34pt 			% normally zero
   \advance\vsize by \vfuzz
 
-\secskipa=4.0pt plus2pt       % between sections, default 4.0pt plus2pt
-\secskipb=1.0pt plus1pt       % between entries,  default 1.0pt plus1pt
+\secskipa=2.0pt plus2pt       % between sections, default 4.0pt plus2pt
+\secskipb=0.3pt plus1pt       % between entries,  default 1.0pt plus1pt
 
 % 
 {

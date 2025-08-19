@@ -1,3 +1,14 @@
+2025-08-19  Karl Berry  <karl@freefriends.org>
+
+	* tbcomplete.lua: rename to tbcmplete.lua.
+	* Makefile: adjust for that.
+	(c3_target, c3_twopages): one-page c3 for 46:2.	
+	* cover1.tex: spacing for (png) drawing.
+	* cover2.tex: update for drawing, new board members.
+	* cover3.tex: need more \vfuzz.
+	* cover4.tex: can use \tenpoint.
+	* tubtocmac.tex (\slBibLaTeX): new macro.
+
 2025-04-12  Karl Berry  <karl@freefriends.org>
 
 	* cover3.tex (\vfuzz): now 3.6pt.

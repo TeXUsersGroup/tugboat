@@ -188,7 +188,9 @@
 \def\textbar{\ifmmode\vert\else$\vert$\fi}
 
 % slanted \BibTeX and \MF:
-\def\slBibTeX{{\sl B{\slc IB}\kern-.08em\TeX}}
+\def\slBib{{\sl B{\slc IB}}}
+\def\slBibTeX{\slBib\kern-.08em\TeX}
+\def\slBibLaTeX{\slBib\kern.04em\LaTeX}
 \def\BibTeX{\slBibTeX}
 \def\Bib{B\kern-.05em{\smc i\kern-.025em b}}
 % \manualsl is defined in cover?.tex, since might change in a given issue.
