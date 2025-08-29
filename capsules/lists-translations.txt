@@ -50,16 +50,19 @@ $\{$Hamilton\CONNECT{}Kelly$\}$||&#x7b;Hamilton&#xa0;Kelly&#x7d;||HamiltonKelly
 R\r{u}\v{z}i\v{c}ka||R&#x016f;&#x017e;i&#x010d;ka||Ruzicka
 
 # sorting overrides. The HTML here is post-unification, and as changed
-# for sorting, i.e., with the comma inserted for Last, First.
-# For the final sort string, we insert a period so that (e.g.) Eijk
-# comes before Eijkhout, since spaces are ignored.
-||van&#xa0;Eijk, Oscar||Eijk.Oscar.van
-||van&#xa0;Dijk, Vic||Dijk.Vic.van
-||Govinda&#xa0;&#x028;S.&#xa0;Vinay&#x029;, Vrajar&#x0101;ja||Govinda.Vrajara
-||Yerkadithaya, Vaishnavi Murthy Kodipady||Murthy.Vaishnavi
+#   for sorting, i.e., with the comma inserted for Last, First.
+# For the final sort string, we insert commas and periods so that (e.g.)
+#   Eijk comes before Eijkhout, since spaces are ignored.
+# We use commas after the last name, when reasonable, to match what the
+#  code generates for names by default.
+# 
+||van&#xa0;Eijk, Oscar||Eijk,Oscar.van
+||van&#xa0;Dijk, Vic||Dijk,Vic.van
+||Govinda&#xa0;&#x028;S.&#xa0;Vinay&#x029;, Vrajar&#x0101;ja||Govinda,Vrajara
+||Yerkadithaya, Vaishnavi Murthy Kodipady||Murthy,Vaishnavi
 ||Rahul&#xa0;Krishnan&#xa0;S||Rahul.Krishnan.S
 ||Rishikesan&#xa0;Nair&#xa0;T||Rishikesan.T
-||de&#xa0;Souza, Paulo Ney||Souza.Paulo.Ney.de
+||de&#xa0;Souza, Paulo Ney||Souza,Paulo.Ney.de
 
 # 
 # this first is for \TeX{}\kern...works
