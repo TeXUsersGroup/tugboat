@@ -113,18 +113,19 @@ for a in $issdir/*/*.aux; do
 done  
 
 # But for the bib files, preserve the original names,
-# since that is what the aux file refers to.
-# Since those names are random, copy them all into a subdir bib/
+#  since the aux file refers to them.
+# And since those names are random, copy them all into a subdir bib/
 #  instead of cluttering up the main $outdir. The Makefile sets
 #  TEXMFDOTDIR to find them there.
-# Also, exclude save*.bib, since those are temp files we create during editing.
+# Also, exclude save*.bib and orig*.bib, since those are temp files we
+#  create during editing.
 # Also, if there are any duplicate names, quit. Processing
 #  can't succeed if there are two bib files by the same name,
 #  since we're copying everything into a single working directory.
 # 
 for bib in $issdir/*/*.bib; do
   bib_basename=`basename "$bib"`
-  echo "$bib_basename" | grep '^save' >/dev/null && continue
+  echo "$bib_basename" | egrep '^(auth|orig|preauth|save)' >/dev/null && continue
   dest=$outdir/bib/$bib_basename
   if test -e "$dest"; then
     echo "$0: bib file already exists: $dest" >&2

@@ -1,3 +1,19 @@
+2025-08-29  Karl Berry  <karl@freefriends.org>
+
+        * tb143capsule.txt: new file for 46:2.
+	* Makefile (testiss,lastiss,crossref_iss): 143.
+	* capconv.pl (transform_author): new one-word author Niranjan.
+	* lists-authinfo.txt (Fischer, Gray, Jakobsen, Moore, Shaji):
+	new orcid.
+	* lists-translations.txt (Govinda, Murthy, Rishi, Rahul):
+	sort overrides.
+	(\aa, \LuaHBTeX): new translations.
+	* lists-unifications.txt (Conference Notes): TUG 2025.
+	(Rahul, Murthy, Stary Novotny, Osborne, Rajendran, Rishi,
+	Mukesh, Schrauwen): new or updated overrides.
+
+	* cr-copy-bbl-abs: don't copy orig|preauth|auth files.
+
 2025-07-08  Karl Berry  <karl@freefriends.org>
 
 	* Makefile (cro-scratch-clean): silence some of the rm commands.
@@ -85,7 +101,7 @@
 
 2025-04-18  Karl Berry  <karl@freefriends.org>
 
-        * tb141capsule.txt: new file for 46:1.
+        * tb142capsule.txt: new file for 46:1.
 	* Makefile (testiss,lastiss,crossref_iss): 142.
 	* lists-translations (\'{c}): accept with braces too.
 

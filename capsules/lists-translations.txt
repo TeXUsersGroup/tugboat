@@ -1,6 +1,13 @@
 # $Id$
 # TUGboat capsule string (not regexp) translations. Public domain.
 #
+# Up to three arguments per line. The argument delimiter is || (two chars):
+# TeXstring||HTMLstring||sortstring
+
+# The first-argument to second-argument translation is for TeX to HTML
+#     for the TOC; the second-argument to third-argument translation is
+#     for sorting the lists.
+
 # If the last character on a line is \ the next line is a continuation
 #     line and the leading spaces on the continuation line are ignored;
 #     if the last two characters on a line are \\, the next line is NOT
@@ -8,12 +15,6 @@
 #     make sure trailing spaces remain (which my editor tends to delete);
 #     can't end with a trailing backslash (\) -- these have to go
 #     in the $str =~ s/ section
-
-# The argument delimiter is || (two chars).
-
-# The first-argument to second-argument translation is for TeX to HTML
-#     for the TOC; the second-argument to third-argument translation is
-#     for sorting the lists
 
 # The first-argument to second-argument table is completely independent
 #     of the second-argument to third-argument table; if there is no
@@ -32,8 +33,7 @@
 #   entities almost exclusively. The only entities supported by the
 #   Crossref schema (and bare XML in general) are: quot amp apos lt gt.
 
-# names
-
+# 
 # Names after %person must not use braces, or they get misparsed as
 # arguments, hence we make up \NM* name identifiers.
 #
@@ -55,10 +55,13 @@ R\r{u}\v{z}i\v{c}ka||R&#x016f;&#x017e;i&#x010d;ka||Ruzicka
 # comes before Eijkhout, since spaces are ignored.
 ||van&#xa0;Eijk, Oscar||Eijk.Oscar.van
 ||van&#xa0;Dijk, Vic||Dijk.Vic.van
+||Govinda&#xa0;&#x028;S.&#xa0;Vinay&#x029;, Vrajar&#x0101;ja||Govinda.Vrajara
+||Yerkadithaya, Vaishnavi Murthy Kodipady||Murthy.Vaishnavi
+||Rahul&#xa0;Krishnan&#xa0;S||Rahul.Krishnan.S
+||Rishikesan&#xa0;Nair&#xa0;T||Rishikesan.T
 ||de&#xa0;Souza, Paulo Ney||Souza.Paulo.Ney.de
-||S, Rahul Krishnan||Rahul.Krishnan.S
-||T, Rishi||Rishi.T
 
+# 
 # this first is for \TeX{}\kern...works
 \TeX{}\kern-.07em ||TeX
 \TeX ||TeX
@@ -67,6 +70,7 @@ R\r{u}\v{z}i\v{c}ka||R&#x016f;&#x017e;i&#x010d;ka||Ruzicka
 # Accents, etc.
 # \"o is usually oe, but not always: for Gy\"ongyi and others, oe is not
 # right. So leave it as just o until we want to handle this.
+\aa{}||&#xe5;||a
 \"a||&#xe4;||a
 \"O||&#xd6;||O
 \"o||&#xf6;||o
@@ -132,7 +136,6 @@ R\r{u}\v{z}i\v{c}ka||R&#x016f;&#x017e;i&#x010d;ka||Ruzicka
 
 Looking ahead for a \<box>||Looking ahead for a &#60;box&#62;||Looking ahead for a box
 
-$\dag$||&#x2020;||
 $\hookrightarrow$||&#x2194;||
 $\Omega$||&#x03a9;||O
 $\Omega_2$||&#x03a9;2||O2
@@ -172,6 +175,7 @@ $\Omega_2$||&#x03a9;2||O2
 \LaTeX3||LaTeX3
 \LaTeX ||LaTeX
 \LaTeX||LaTeX
+\LuaHBTeX||LuaHBTeX
 \LyX||LyX
 \macOS||macOS
 \MacOSX||MacOSX

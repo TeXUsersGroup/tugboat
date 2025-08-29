@@ -180,11 +180,13 @@ sub transform_author {
       # if more than one word, append rest, after ", ".
       $lastfirst .= ", " . join (" ", @parts[0..($#parts-1)]);
     } elsif ($parts[0]
-             !~ /&(nbsp|#x0?0?[aA]0);|LogoTeXnes|Advogato|samcarter/) {
+             !~ /&(nbsp|#x0?0?[aA]0);|LogoTeXnes|Advogato|samcarter|Niranjan/
+            ) {
       # nobreak spaces are used for committees, etc.
       # LogoTeXnes was a pseudonum for tb25crossword,
       # Advogato was Raph Levien's alias for tb67advo.pdf Knuth interview.
-      # samcarter is an alias used by a tug'20 participant (ff).
+      # samcarter is an alias used by a tug'20 (et al.) participant
+      # Niranjan is the Latin for a Devanagari name, a tug'25 particpant.
       warn "one-word author: $parts[0] (orig: $all_authors_tex)\n";
     }
     push (@ret, $lastfirst);
