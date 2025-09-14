@@ -1,3 +1,9 @@
+2025-09-14  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr-ctx (\KB, \usebodyfont),
+	(\starttabulate): ignore [arg].
+	For tb144hagen-noisy (46:3).
+
 2025-08-19  Karl Berry  <karl@freefriends.org>
 
 	* acrocheck-tub: handle \author, \address, \MAPS.

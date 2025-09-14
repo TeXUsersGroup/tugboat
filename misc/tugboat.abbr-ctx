@@ -1,5 +1,5 @@
 % $Id$
-% Copyright 1999-2024 TeX Users Group.
+% Copyright 1999-2025 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 % "Poor man's" ConTeXt in LaTeX, for simple-enough documents.
@@ -65,6 +65,7 @@
 \def\JAVASCRIPT{Java\-Script}
 \def\JIT       {jit}
 \def\JPG       {\acro{JPEG}}
+\def\KB        {\acro{KB}}
 \def\KPSE      {{\tt kpse}}
 \def\KPSEWHICH {{\tt kpsewhich}}
 \def\KVM       {\acro{KVM}}
@@ -269,6 +270,7 @@
 %\def\unexpanded{}% etex primitive, microtype et al. need it
 \def\unit{\,\mbox}
 \def\unknown{\ldots}
+\def\usebodyfont[#1]{}
 \def\usemodule[#1]{}
 \def\useMPlibrary[#1]{}
 \def\UseMode#1{}
@@ -426,7 +428,7 @@
 \def\startsubsubsection[title=#1]{\subsubsection{#1}}
 \def\stopsubsubsection{}
 
-\def\starttabulate{\par\smallskip
+\def\starttabulate[#1]{\par\smallskip
   \noindent\begingroup \catcode`|=9 \begin{tabular}}
 \def\stoptabulate{\end{tabular}\par\endgroup\smallskip}
 \def\EQ{}
