@@ -1,3 +1,12 @@
+2025-09-17  Karl Berry  <karl@freefriends.org>
+
+	* lmtx: doc fix since context now up to date in TL.
+
+	* tugboat.abbr-ctx (\LUAMETAFUN): Fun not fun.
+	(\definedescription, \startdescription, \stopdescription):
+	for tb144hagen-beyond-metapost (46:3).
+	More failed commented-out attempts at \starttyping.
+
 2025-09-14  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.abbr-ctx (\KB, \usebodyfont),

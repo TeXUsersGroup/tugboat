@@ -3,7 +3,9 @@
 # Run any command (e.g., mtxrun, context) with /opt/lmtx first in path.
 
 # From a standalone minimals installation.
-# https://wiki.contextgarden.net/Installation
+#   https://wiki.contextgarden.net/Installation
+# Except now that ConTeXt is being kept up to date in TL,
+# usually no need, and the one in PATH suffices.
 PATH=/opt/lmtx/tex/texmf-linux-64/bin:$PATH
 
 exec "$@"

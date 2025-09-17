@@ -81,7 +81,7 @@
 \def\LUAJIT    {Lua\acro{JIT}}
 \def\LUAJITTEX {Lua\acro{JIT\TeX}}
 \def\LUALATEX  {Lua\LATEX}
-\def\LUAMETAFUN{Lua\-Metafun}
+\def\LUAMETAFUN{Lua\-MetaFun}
 \def\LUAMETATEX{Lua\-\METATEX}
 \def\LUATEX    {\LUA\-\TeX}
 \def\LUATOOLS  {{\tt luatools}}
@@ -208,6 +208,7 @@
 \def\ctxlua#1{}
 \def\ctxluabuffer[#1]{}
 \def\definecolor[#1][#2]{}
+\def\definedescription[#1][#2]{}
 \def\definefont[#1]#2[#3]{}
 \def\definefontfeature[#1][#2][#3]{}
 \def\definefontsynonym[#1]#2[#3]{}
@@ -254,8 +255,10 @@
 \def\showframe{}
 \def\showglyphs{}
 \let\starorig=\star\def\star{\ensuremath{\starorig}}
+\def\startdescription#1{\subsection{#1}}
 \def\starthead#1{\item[#1]}
 \let\stop=\relax
+\def\stopdescription{}
 \def\stophead{}
 \def\subject[#1]{}
 \def\subsubject{\subsection}
@@ -304,6 +307,7 @@
 \def\tquote{`\def\tubextratype{\aftergroup'}} % avoid taking arg here
 
 \makeatletter
+%
 \def\type{\bgroup
   \catcode`\\=12 \catcode`##=12 \catcode`\&=12 \catcode`$=12 \catcode`_=12
   \catcode`\%=12 \catcode`\^=12 \catcode`\|=12 \catcode`\~=12
@@ -316,6 +320,20 @@
   \spaceskip = .3333em \xspaceskip = \spaceskip
   #1}\egroup\gdef\tubextratype{}\spacefactor=1000 }
 \def\typ{\type}
+
+% From David Carlisle, https://tex.stackexchange.com/questions/751189
+\NewDocumentCommand\dcstarttyping{O{}}{%
+  \par
+  \begingroup
+  \@verbatim \frenchspacing\@vobeyspaces
+  \xstarttyping{#1}}
+%
+\expanded{\def\noexpand\xstarttyping#1#2\@backslashchar stoptyping}{%
+  % ignore the optional arg #1
+  #2%
+  \endgroup
+  \par}
+%
 \makeatother
 
 %  start .. stop
@@ -338,7 +356,6 @@
 \def\tubverbatimbuffers{\def\startbuffer[##1]{\starttyping}}
 \tubverbatimbuffers % default
 
-%\newcommand{\typebuffer}[1][]{}% ignore possible optional arg
 \NewDocumentCommand\typebuffer{oo}{} % two optional arguments
 \let\getbuffer\typebuffer
 \def\inlinebuffer{}
@@ -448,11 +465,21 @@
 \def\starttitle[#1]{}
 \def\stoptitle{\stopArticle}
 
-\def\starttyping{\par\begin{verbatim}[\small \catcode`\|=12
-                                  \hfuzz=2pt \tubextratyping]}
-% \end{verbatim} has to be literal.
+% don't work since they start reading the verbatim text.
+%\newcommand\starttyping[1][]{% ignore optional argument
+%\NewDocumentCommand\starttyping{o}{% two optional arguments
+%\NewDocumentEnvironment
+%    {tubtyping}{!O{\ttfamily} c}
+%    {\begin{verbatim}#2\end{verbatim}}
+%    {}
+%\def\starttyping{\begin{tubtyping}}
+%\def\stoptyping{\end{tubtyping}}
+\def\starttyping{%
+ \par
+ \begin{verbatim}[\small \catcode`\|=12 \hfuzz=2pt \tubextratyping]}
+% \end{verbatim} has to be literal, unfortunately.
 \def\stoptyping{\errmessage{must literally end verbatim typing}}
-\def\tubextratyping{}
+\def\tubextratyping{} % hook
 
 \def\italic{\futurelet\next\finishitalic}
 \def\finishitalic{%
