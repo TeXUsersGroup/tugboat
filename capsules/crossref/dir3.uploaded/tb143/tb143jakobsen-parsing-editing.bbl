@@ -1,0 +1,17 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{1}
+
+\bibitem{Davies:2023:BRT}
+B.~Davies.
+\newblock Bumpy road towards a good {\LaTeX} visual editor at {Overleaf}.
+\newblock \emph{TUGboat} 44(2):255--255, 2023.
+\newblock \url{https://doi.org/10.47397/tb/44-2/tb137davies-visual}
+
+\bibitem{Knuth1984-texbook}
+D.E.~Knuth.
+\newblock \emph{The {\TeX{}book}}.
+\newblock Computers \& Typesetting. Addison Wesley, Boston, MA, Jan.~ 1984.
+
+\end{thebibliography}

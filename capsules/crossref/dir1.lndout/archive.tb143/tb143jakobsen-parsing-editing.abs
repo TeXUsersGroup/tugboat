@@ -1,0 +1,6 @@
+Overleaf is a \LaTeX{} editor with contextual assistance and interactive
+editing tools powered by a ``best-effort'' parsing engine. Rather than trying
+to fully understand all possible \TeX{} documents, we focus on understanding
+conventional \LaTeX{} structures where we can provide assistance to the user.
+This paper details the strategies behind this forgiving parser, and describes
+how we use the output of the parser to enable \WYSIWYG{} editing features.

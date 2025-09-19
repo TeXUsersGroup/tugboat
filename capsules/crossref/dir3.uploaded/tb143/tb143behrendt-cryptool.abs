@@ -1,0 +1,12 @@
+The CrypTool project with its long history uses \LaTeX\ 
+in two different scenarios: First,
+we use KaTeX\ for maths on our
+CrypTool online web page.
+Second, we used \LuaLaTeX\ for
+building the
+recently re-edited CrypTool
+book (in German [3] and English [4]). 
+
+In this talk we limit
+ourselves to the topic of mathematical typesetting for
+interactive web applications in the browser with KaTeX.

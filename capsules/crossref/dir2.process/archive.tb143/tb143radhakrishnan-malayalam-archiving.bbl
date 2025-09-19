@@ -1,0 +1,150 @@
+\begin{thebibliography}{10}
+
+\bibitem{hermes}
+R.~Anghelache.
+\newblock Hermes{\Dash}a semantic {XML+MathML+Unicode}
+  e-publishing/self-archiving tool for {\LaTeX} authored scientific articles.
+\newblock 2006.
+\newblock Visited: 2025/08/07.
+\newblock \url{http://hermes.roua.org/}
+
+\bibitem{tbook}
+T.~Bronger.
+\newblock The tbook {S}ystem for {XML} {A}uthoring.
+\newblock 2004.
+\newblock Visited: 2025/05/01.
+\newblock \url{https://tbookdtd.sourceforge.net/tbookman/index.html}
+
+\bibitem{writer2ltx}
+{The Document Foundation}.
+\newblock {Writer2LaTeX}, a {{\LaTeX/\BibTeX}}
+  export filter and front end for {W}riter.
+\newblock 2025.
+\newblock Visited: 2025/06/03.
+\newblock
+  \url{https://extensions.libreoffice.org/en/extensions/show/writer2latex-1}
+
+\bibitem{pdftotext}
+{Glyph \& Cog, LLC.}
+\newblock {pdftotext}.
+\newblock 2025.
+\newblock Visited: 2025/06/03.
+\newblock \url{https://www.xpdfreader.com/pdftotext-man.html}
+
+\bibitem{goldfarb2004xml}
+C.~Goldfarb, P.~Prescod.
+\newblock \emph{Charles F. Goldfarb's XML Handbook}, ch. Why \acro{XML}.
+\newblock Charles F. Goldfarb definitive XML series. Prentice Hall PTR, 2004.
+
+\bibitem{goldfarb1990sgml}
+C.~Goldfarb, Y.~Rubinsky.
+\newblock \emph{The SGML Handbook}, ch. A Structured Overview of \acro{SGML},
+  pp.~121--214.
+\newblock Clarendon Press, 1990.
+
+\bibitem{yuktibhasha}
+{Jy\=e\d{s}\d{t}ad\=evan}.
+\newblock Yuktibh\=a\d s\=a.
+\newblock 2020.
+\newblock \url{https://books.sayahna.org/ml/pdf/yukthibhasha.pdf}
+
+\bibitem{tralics}
+{Marelle Team}.
+\newblock tralics: A {\LaTeX} to {XML} translator.
+\newblock 2017.
+\newblock Visited: 2025/05/23.
+\newblock \url{https://www-sop.inria.fr/marelle/tralics/}
+
+\bibitem{latexml}
+B.~Miller, D.~Ginev.
+\newblock {LaTeXML}: A {\LaTeX} to {XML/\allowbreak HTML/\allowbreak MathML}
+  {C}onverter.
+\newblock 2024.
+\newblock Visited: 2025/05/10.
+\newblock \newline \url{https://math.nist.gov/~BMiller/LaTeXML/}
+
+\bibitem{srahtz}
+F.~Mittelbach, J.~{Richmond (trans.)}.
+\newblock {Sebastian Patrick Quintus Rahtz (13.2.1955--13.3.2016)}.
+\newblock \emph{TUGboat} 37(2), 2016.
+\newblock \url{https://tug.org/TUGboat/tb37-2/tb116rahtz-mitt.pdf}
+
+\bibitem{texml}
+O.~Paraschenko.
+\newblock {TeXML}: An {XML} syntax for {\TeX} ({\LaTeX}, {\ConTeXt}).
+\newblock 2004.
+\newblock Visited: 2025/05/10.
+\newblock \url{https://getfo.org/texml/index.html}
+
+\bibitem{saxon}
+Saxonica.
+\newblock What is {S}axon?
+\newblock 2025.
+\newblock \newline
+  \url{https://www.saxonica.com/html/documentation10/about/whatis.html}
+
+\bibitem{sfn}
+Sayahna {F}oundation.
+\newblock 2013.
+\newblock Visited: 2025/06/01.
+\newblock \url{https://books.sayahna.org}
+
+\bibitem{tei}
+{TEI Consortium}.
+\newblock {TEI P5: Guidelines for Electronic Text Encoding and Interchange}.
+\newblock 2025.
+\newblock Visited: 2025/05/31.
+\newblock \newline
+  \url{https://tei-c.org/release/doc/tei-p5-doc/en/Guidelines.pdf}
+
+\bibitem{tex4ht}
+{\gobble{TeX Users Group}{\TeX{} Users Group}}.
+\newblock {TeX4ht}.
+\newblock 2022.
+\newblock Visited: 2025/01/02.
+\newblock \url{https://tug.org/tex4ht/}
+
+\bibitem{boris2011}
+B.~Veytsman, M.~Ware.
+\newblock Ebooks and paper sizes: Output routines made easier.
+\newblock \emph{TUGboat} 32(3), 2011.
+\newblock Proceedings of TUG 2011.
+\newblock \url{https://tug.org/TUGboat/tb32-3/tb102veytsman-ebooks.pdf}
+
+\bibitem{hortus}
+Wikipedia.
+\newblock Hortus {M}alabaricus.
+\newblock 2006.
+\newblock Visited: 2025/05/01.
+\newblock \url{https://en.wikipedia.org/wiki/Hortus_Malabaricus}
+
+\bibitem{cont-format}
+Wikipedia.
+\newblock Separation of content and presentation.
+\newblock 2017.
+\newblock Visited: 2025/05/31.
+\newblock
+  \url{https://en.wikipedia.org/wiki/Separation_of_content_and_presentation}
+
+\bibitem{wiki-yukti}
+Wikipedia.
+\newblock Yuktibh\=a\d s\=a.
+\newblock 2022.
+\newblock
+  \url{https://en.wikipedia.org/wiki/Yuktibh\%C4\%81\%E1\%B9\%A3\%C4\%81}
+
+\bibitem{sgml}
+{World Wide Web Consortium (W3C)}.
+\newblock On~\acro{SGML} and \acro{HTML}.
+\newblock 2018.
+\newblock Visited: 2025/04/02.
+\newblock \url{https://www.w3.org/TR/html4/intro/sgmltut.html}
+
+\bibitem{xslt}
+{World Wide Web Consortium (W3C)}.
+\newblock {XSL T}ransformations ({XSLT}), version 2.0 (second edition).
+\newblock 2021.
+\newblock Visited: 2025/06/02.
+\newblock \url{https://www.w3.org/TR/xslt20/}
+
+\end{thebibliography}

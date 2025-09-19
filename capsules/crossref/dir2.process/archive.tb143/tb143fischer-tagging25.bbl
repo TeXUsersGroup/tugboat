@@ -1,0 +1,79 @@
+\newcommand{\noopsort}[1]{} \newcommand{\mydash}{-}
+  \ifx\thisissuepageref\undefined \let\thisissuepageref\noopsort\fi
+\begin{thebibliography}{10}
+
+\bibitem{pdf-structure-as-xml}
+D.~Carlisle.
+\newblock Interpreting a {PDF Structure Tree} as {XML}, 2025.
+\newblock \url{https://github.com/latex3/tagging-project/discussions/789}
+
+\bibitem{Fischer:2021:RTP}
+U.~Fischer.
+\newblock On the road to {Tagged PDF}: About {StructElem}, marked content,
+  {PDF/A} and squeezed {B\"a}rs.
+\newblock \emph{TUGboat} 42(2):170--173, 2021.
+\newblock \url{https://doi.org/10.47397/tb/42-2/tb131fischer-tagpdf}
+
+\bibitem{Fischer:2023:ATL}
+U.~Fischer, F.~Mittelbach.
+\newblock Automated tagging of {\LaTeX} documents{\Dash}what is possible today,
+  in 2023?
+\newblock \emph{TUGboat} 44(2):262--266, 2023.
+\newblock \url{https://doi.org/10.47397/tb/44-2/tb137fischer-tagging23}
+\newpage
+\bibitem{l3team:show-pdf-tags:2025}
+{\noopsort{LaTeX Project Team}}{\LaTeX{} Project Team}.
+\newblock {\tt show-pdf-tags}{\Dash}{Extract PDF tags from tagged PDF files},
+  2025.
+\newblock \url{https://ctan.org/pkg/show-pdf-tags}
+
+\bibitem{talk:accessibility-of-STEM-doc}
+F.~Mittelbach.
+\newblock How accessible are {\PDF}s?{\Dash}and how accessible can they be?,
+  July 2025.
+\newblock Video of the talk given at the TUG 2025 conference, Trivandrum,
+  India.
+\newblock \url{{https://youtube.com/watch?v=Eu_qM53tInw&t=5900s}}
+
+\bibitem{Mittelbach:2022:LTP}
+F.~Mittelbach, U.~Fischer.
+\newblock The {{\LaTeX} Tagged PDF} project{\Dash}a status and progress report.
+\newblock \emph{TUGboat} 43(3):268--272, 2022.
+\newblock \url{https://doi.org/10.47397/tb/43-3/tb135mitt-tagged}
+
+\bibitem{Mittelbach:2024:ELA}
+F.~Mittelbach, U.~Fischer.
+\newblock Enhancing {\LaTeX} to automatically produce tagged and accessible
+  {PDF}.
+\newblock \emph{TUGboat} 45(1):52--59, 2024.
+\newblock \url{https://doi.org/10.47397/tb/45-1/tb139mitt-deims24}
+
+\bibitem{nvda}
+{NV Access}.
+\newblock \url{https://nvaccess.org}
+
+\bibitem{Rowley:2019:ALK}
+C.~Rowley, U.~Fischer, F.~Mittelbach.
+\newblock Accessibility in the {\LaTeX} kernel{\Dash}experiments in {Tagged
+  PDF}.
+\newblock \emph{TUGboat} 40(2):157--158, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-2/tb125rowley-tagpdf.pdf}
+
+\bibitem{mathcat}
+N.~Soiffer.
+\newblock {MathCAT}: {Math Capable Assistive Technology}.
+\newblock \url{https://nsoiffer.github.io/MathCAT}
+
+\bibitem{mathml-intent}
+W3C.
+\newblock {Mathematical Markup Language} ({MathML}) version 4.0{\Dash
+  a}nnotating {MathML}: intent, 2025.
+\newblock \url{https://w3c.github.io/mathml/#mixing_intent}
+
+\bibitem{ltx-talk}
+J.~Wright.
+\newblock \emph{The ltx-talk package}.
+\newblock A class for typesetting presentations.
+\newblock \newline \url{https://github.com/josephwright/ltx-talk}
+
+\end{thebibliography}

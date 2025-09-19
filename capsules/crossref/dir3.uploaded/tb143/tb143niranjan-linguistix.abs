@@ -1,0 +1,21 @@
+We use \LaTeX\
+extensively in many sub-disciplines of
+linguistics. There are dedicated packages and libraries that
+we need in most linguistic articles. I started using some of
+them at the time of my masters and was happy to see that
+things were getting done easily, but with more experience in
+\LaTeX, I started craving for perfection and better
+features. Unfortunately, I realised that most of the
+packages that I used were either old or had a rigid design
+which made it difficult to customise or alter them according
+to my needs.
+
+This is why I started thinking about a
+\enquote{standard} package which will take care of most of
+the things needed in linguistics. Thus LinguisTiX was
+conceived as an idea. I started working on it in 2022, but
+then, I was stuck on one feature and hence couldn’t release
+it. In 2025, I have finally managed to make a public release
+and get it going. This paper talks about the currently
+released packages from the LinguisTiX bundle.
+

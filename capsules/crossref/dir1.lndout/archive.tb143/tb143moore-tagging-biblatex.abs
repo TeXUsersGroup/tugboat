@@ -1,0 +1,10 @@
+Here we discuss how Tagged \PDF{} can represent the semantics inherent in the citation entries
+in a bibliography, using a specific example document. 
+After first illustrating what the tagging could look like, we discuss aspects of the coding used to achieve it.
+Most important in this is identifying places in \textsf{biblatex} macro code where the structures required for tagging
+can be inserted, without compromising the visual presentation these macros were designed to construct,
+nor affecting other places where the macros might also be used.
+
+This involves a process of `patching' the result from executing a macro, by `rebinding' the name to an alternative
+block of code that references the original expansion after having done additional work.
+A kind of `hierarchical patching' is needed to ensure that modified expansions are used only in exactly the right places.

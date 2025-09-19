@@ -1,0 +1,9 @@
+We at \acro{ISKCON} Belagavi use \XeLaTeX\ primarily to publish books,  print prayer sheets, weekly planners, monthly lecture schedules and create slideshows \Dash all bilingual/trilingual, in
+Devan\=agar\=i, Kannada and Roman.  In this article, I wish to share:
+
+\begin{enumerate}
+ \item code snippets to show how we obtained desired results in our publications. 
+ \item how ``separation of form and content'' benefitted us.
+\end{enumerate}
+
+The overall goal is to inspire beginners to get started in using \LaTeX\ for their publishing needs although they may not know all the subtleties and details involved therein.

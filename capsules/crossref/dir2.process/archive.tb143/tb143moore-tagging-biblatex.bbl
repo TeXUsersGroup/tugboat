@@ -1,0 +1,46 @@
+\begin{thebibliography}{9}
+\bibitem{CMoS} Chicago Manual of Style, Online. % 18th edition.
+ \\\url{https://chicagomanualofstyle.org/home.html}\,.
+
+\bibitem{bibchic} Fussner, David;
+  \textsf{biblatex-chicago}\Dash Chicago style files for \BibLaTeX;
+  version 2.3b, 2024-04-15. \LaTeX\ package, available at:
+  \url{https://ctan.org/pkg/biblatex-chicago}\x{002E}
+ Documentation available using \href{https://ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-chicago/doc/biblatex-chicago.pdf}{`{\tt texdoc biblatex-chicago}'}.
+
+%  \bibitem{PDF17}Adobe Systems Inc.;
+% {\PDF{}} Reference 1.7, November 2006.
+% Also available as \cite{ISO32000}. \\
+% \url{http://www.adobe.com/devnet/pdf/pdf_reference.html}.
+
+\bibitem{ISO32000}\ISO\,32000-1:2008;
+ Document management\Dash Portable document format (\PDF\ 1.7);
+ Technical Committee \acro{ISO/TC\,171/SC\,2} (July 2008).
+ %Also available as \cite{PDF17}.
+ \url{https://www.iso.org/standard/51502.html}
+ % not any more:
+ %Also available at: \url{http://www.adobe.com/devnet/pdf/pdf_reference.html}.
+
+\bibitem{ISO32005}\ISO\,32005:2024; Document management\Dash Portable Document Format
+\PDF{} 1.7 and 2.0 structure namespace inclusion in \ISO\ 32000-2;
+Technical Committee \acro{ISO/TC\,171/SC\,2/WG\,9} (Nov. 2024).
+
+\bibitem{bibltx} Philip Kime,  Moritz Wemheuer, Philipp Lehman; 
+ \BibLaTeX\Dash Sophisticated bibliographies in \LaTeX;
+ version 3.21, 2025-07-10.
+ \LaTeX\ package, available at: \url{https://ctan.org/pkg/biblatex}\x{002E}
+Documentation is available using 
+\href{https://ctan.org/tex-archive/macros/latex/contrib/biblatex/doc/biblatex.pdf}{`{\tt texdoc biblatex}'}.
+
+\bibitem{FallMT2023} Moore, Ross; ``Fall\acro{MT}~2023 \acro{PDF/UA} and \HTML\ \Dash Accessible''.
+Website with links to \PDF{} and \HTML\ versions, and related documents.
+\url{http://science.mq.edu.au/~ross/TaggedPDF/FallMT2023/index.html}\,.
+
+\bibitem{PDF20}\PDF{} 2.0; no-cost access to the \PDF{} standard: \ISO\
+32000-2 (\PDF{} 2.0).
+ \PDF{} Association~[8].
+ \url{https://pdfa.org/sponsored-standards}\,.
+
+\bibitem{PDFassoc}\PDF{} Association: home of the worldwide \PDF{} technical community.
+ \url{https://pdfa.org}\,.
+\end{thebibliography}

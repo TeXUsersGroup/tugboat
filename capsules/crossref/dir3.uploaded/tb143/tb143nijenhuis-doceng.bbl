@@ -1,0 +1,64 @@
+\begin{thebibliography}{10}
+
+\bibitem{ctan-make4ht}
+M.~Hoftich.
+\newblock \emph{The \texttt{make4ht} package}, 2025-04-14.
+\newblock A build system for \texttt{tex4ht}.
+\newblock \newline \url{https://ctan.org/pkg/make4ht}
+
+\bibitem{ctan-lua-placeholders}
+E.~Nijenhuis.
+\newblock \emph{The \texttt{lua-placeholders} package}, 2024-04-03.
+\newblock Specifying placeholders for demonstration purposes.
+\newblock \newline \url{https://ctan.org/pkg/lua-placeholders}
+
+\bibitem{ctan-regulatory}
+E.~Nijenhuis.
+\newblock \emph{The \texttt{regulatory} package}, 2024-09-05.
+\newblock Flexible drafting of legal documents, especially in Dutch.
+\newblock \newline \url{https://ctan.org/pkg/regulatory}
+
+\bibitem{ctan-gitinfo-lua}
+E.~Nijenhuis.
+\newblock \emph{The \texttt{gitinfo-lua} package}, 2024-09-14.
+\newblock Display git project information in your \LaTeX{} projects.
+\newblock \newline \url{https://ctan.org/pkg/gitinfo-lua}
+
+\bibitem{ctan-attachfile2}
+H.~Oberdiek.
+\newblock \emph{The \texttt{attachfile2} package}, 2024-01-20.
+\newblock Attach files into PDF output.
+\newblock \url{https://ctan.org/pkg/attachfile2}
+
+\bibitem{ctan-zref}
+H.~Oberdiek.
+\newblock \emph{The \texttt{zref} package}, 2025-06-08.
+\newblock A new reference scheme for \LaTeX{}.
+\newblock \newline \url{https://ctan.org/pkg/zref}
+
+\bibitem{ctan-lyluatex}
+J.~Peron, {The Gregorio Project}.
+\newblock \emph{The~\texttt{lyluatex} package}, 2023-04-18.
+\newblock Commands to include Lilypond scores within a (Lua)\LaTeX\ document.
+\newblock \url{https://ctan.org/pkg/lyluatex}
+
+\bibitem{ctan-markdown}
+V.~{Starý Novotný}.
+\newblock \emph{The \texttt{markdown} package}, 2025-06-24.
+\newblock Converting and rendering Markdown documents inside \TeX{}.
+\newblock \newline \url{https://ctan.org/pkg/markdown}
+
+\bibitem{ctan-bib2gls}
+N.~Talbot.
+\newblock \emph{The \texttt{bib2gls} package}, 2025-05-15.
+\newblock Command line application to convert \texttt{.bib} files to
+  \texttt{glossaries-extra.sty} resource files.
+\newblock \newline \url{https://ctan.org/pkg/bib2gls}
+
+\bibitem{ctan-fmtcount}
+N.~Talbot, V.~Belaïche, E.~Nij\-enhuis.
+\newblock \emph{The~\texttt{fmtcount} package}, 2025-02-09.
+\newblock Display the value of a \LaTeX{} counter in a variety of formats.
+\newblock \url{https://ctan.org/pkg/fmtcount}
+
+\end{thebibliography}

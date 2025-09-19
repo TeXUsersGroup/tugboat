@@ -1,0 +1,4 @@
+In code editors, typesetting applications, and on the Web, syntax-highlighting
+is achieved via specialized `grammar' files or JavaScript\acro{+}\CSS\ libraries. Using
+the colour table in \opentype\ fonts, we present development of a monospace
+font with basic built-in syntax highlighting for \TeX\ and \LaTeX\ documents.

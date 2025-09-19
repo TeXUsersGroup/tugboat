@@ -1,0 +1,12 @@
+I'd like to share an update on Neptune's progress in academic publishing. 
+It has become the leading \LaTeX{} proofing solution with the highest user 
+satisfaction. We're excited to announce that the framework will now
+offer standards-compliant tagged and accessible \pdf{} generation. During the 
+implementation, we encountered some technical challenges to directly 
+inject the necessary tags around certain content. This required us 
+to redefine some core macros and functions.
+
+This paper outlines how we successfully implemented Tagged \pdf{} in Neptune, addressing common \pdf{}/UA validation errors, and
+discusses production challenges, presenting a highly automated workflow
+that produces accessible \pdf{}s meeting stringent publisher standards
+without altering the author's original source file.

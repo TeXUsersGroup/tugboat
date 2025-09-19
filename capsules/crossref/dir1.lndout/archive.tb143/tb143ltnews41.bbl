@@ -1,0 +1,25 @@
+\begin{thebibliography}{9}\frenchspacing
+
+%\fontsize{9.3}{11.3}\selectfont
+
+\bibitem{41:Lamport}
+Leslie Lamport.
+\newblock \emph{{\LaTeX}: {A} Document Preparation System: User's Guide and Reference
+  Manual}.
+\newblock \mbox{Addison}-Wesley, Reading, MA, USA, 2nd edition, 1994.
+\newblock ISBN 0-201-52983-1.
+\newblock Reprinted with corrections in 1996.
+
+\bibitem{41:ltnews} \LaTeX{} Project Team.
+  \emph{\LaTeXe{} news 1--41}. June~2025.
+  \url{https://latex-project.org/news/latex2e-news/ltnews.pdf}
+
+\bibitem{41:ltmarks} Frank Mittelbach, \LaTeX{} Project Team.
+  \emph{The \texttt{ltmarks.dtx} code}. June~2025.
+  \url{https://latex-project.org/help/documentation/ltmarks-doc.pdf}
+
+\bibitem{41:source2e} \LaTeX{} Project Team.
+  \emph{The \LaTeXe{} Sources}. June~2025.
+  \url{https://latex-project.org/help/documentation/source2e.pdf}
+
+\end{thebibliography}

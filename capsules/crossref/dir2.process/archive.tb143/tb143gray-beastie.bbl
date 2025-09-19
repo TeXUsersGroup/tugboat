@@ -1,0 +1,118 @@
+\begin{thebibliography}{10}
+
+%\newblock Revised\textsuperscript{5} report on the algorithmic language {Scheme}.
+\bibitem{r5rs}
+N.I.~Adams, D.H.~Bartley, et~al.
+\newblock Revised\x{2075} report on the algorithmic language {Scheme}.
+\newblock \emph{SIGPLAN Notices}, 33(9):26--76, Sept. 1998.
+\newblock \url{https://doi.org/10.1145/290229.290234}
+
+\bibitem{beebe93}
+N.~Beebe.
+\newblock Bibliography prettyprinting and syntax checking.
+\newblock \emph{TUGboat} 14(4):395--419, Dec.~1993.
+\newblock \url{https://tug.org/TUGboat/tb14-4/tb41beebe.pdf}
+
+\bibitem{r7rs}
+S.~Ganz, A.W.~Hsu, et~al.
+%\newblock Revised\textsuperscript{7} report on the algorithmic language {Scheme}, 2013.
+\newblock Revised\x{2077} report on the algorithmic language {Scheme}, 2013.
+\newblock \url{https://small.r7rs.org/attachment/r7rs.pdf}
+
+\bibitem{webpage}
+N.~Gray.
+\newblock Beastie.
+\newblock \newline \url{https://purl.org/nxg/dist/beastie}
+
+\bibitem{bibulous}
+N.~Hagen.
+\newblock Bibulous.
+\newblock \newline \url{https://nzhagen.github.io/bibulous/}
+
+\bibitem{bibtexu}
+Y.~Haralambous, et~al.
+\newblock {\BibTeX{}u}.
+\newblock \newline \url{https://ctan.org/pkg/bibtexu}
+
+\bibitem{hufflen08}
+J.M.~Hufflen.
+\newblock Languages for bibliography styles.
+\newblock \emph{TUGboat} 29(3):401--412, 2008.
+\newblock \newline \url{https://tug.org/tugboat/tb29-3/tb93hufflen.pdf}
+
+\bibitem{hufflen17}
+J.M.~Hufflen.
+\newblock {Ml\BibTeX} now handles {U}nicode.
+\newblock \emph{TUGboat} 38(2):245--248, 2017.
+\newblock \url{https://tug.org/TUGboat/tb38-2/tb119hufflen-mlbibtex.pdf}
+
+\bibitem{biblatex}
+P.~Kime, P.~Lehman.
+\newblock {\BibLaTeX}.
+\newblock \newline \url{https://ctan.org/pkg/biblatex}
+
+\bibitem{cl-bibtex}
+M.~K{\"o}ppe.
+\newblock cl-bibtex.
+\newblock \newline \url{https://github.com/mkoeppe/cl-bibtex}
+
+\bibitem{marc}
+{Library of Congress}.
+\newblock {MARC} 21 format for bibliographic data, 2025.
+\newblock Update 40.
+\newblock \url{https://www.loc.gov/marc/bibliographic/}
+
+\bibitem{markey09}
+N.~Markey.
+\newblock Tame the {BeaST}: The {A} to {X} of {\BibTeX}.
+\newblock CTAN, 2009.
+\newblock \newline \url{https://ctan.org/pkg/tamethebeast}
+
+\bibitem{patashnik88}
+O.~Patashnik.
+\newblock \emph{Using \BibTeX}.
+\newblock CTAN, 1988.
+\newblock \url{https://ctan.org/pkg/bibtex}
+
+\bibitem{patashnik88a}
+O.~Patashnik.
+\newblock \emph{Writing \BibTeX\ Styles}.
+\newblock CTAN, 1988.
+\newblock \url{https://ctan.org/pkg/bibtex}
+
+\bibitem{s7}
+B.~Schottstaedt.
+\newblock {s7 scheme}.
+\newblock \newline \url{https://cm-gitlab.stanford.edu/bil/s7}
+
+\bibitem{shell07}
+M.~Shell, D.~Hoadley.
+\newblock \emph{\BibTeX\ Tips and {FAQ}}.
+\newblock CTAN, 2007.
+\newblock \url{https://ctan.org/pkg/bibtex}
+
+\bibitem{ucd}
+{Unicode Consortium}.
+\newblock About the {Unicode Character Database}.
+\newblock \url{https://www.unicode.org/ucd/}
+
+\bibitem{icu}
+{Unicode Consortium}.
+\newblock {ICU-TC} home page.
+\newblock \url{https://icu.unicode.org}
+
+\bibitem{unicode}
+{Unicode Consortium}.
+\newblock The {Unicode} standard.
+\newblock Online, 2024.
+\newblock Version 16.0 is current as of mid-2025.
+\newblock \newline \url{https://www.unicode.org/versions/latest/}
+
+\bibitem{cldr-personnames}
+{Unicode Consortium}.
+\newblock Unicode locale data markup language {(LDML)}: Part 8: Person names,
+  2025.
+\newblock Version 47.
+\newblock \url{https://www.unicode.org/reports/tr35/tr35-personNames.html}
+
+\end{thebibliography}

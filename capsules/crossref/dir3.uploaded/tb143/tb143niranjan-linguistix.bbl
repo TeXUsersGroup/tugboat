@@ -1,0 +1,44 @@
+\bibitem{bringhurst}
+    R. Bringhurst. The Elements of Typographic
+    Style (4th edition). Point Roberts, WA: Hartley
+    & Marks, Publishers, 2013.
+
+\bibitem{gregorio}
+    E. Gregorio. How to set sans and mono
+    fonts with \cs{newfontfamily}? Oct. 30, 2024.
+    tex.stackexchange.com/a/729805
+
+\bibitem{munn}
+    A. Munn, E. Gregorio. ExPex fails with
+    unicode-math. How to avoid the clash? Dec. 5,
+    2023. tex.stackexchange.com/q/703094
+
+\bibitem{tipa}
+    F. Rei. The tipa package. Version 1.3. 2002.
+    ctan.org/pkg/tipa
+
+\bibitem{unicode-math}
+    W. Robertson et al. The unicode-math
+    package. Version 0.8r. Aug. 13, 2023.
+    ctan.org/pkg/unicode-math
+
+\bibitem{typeit}
+    T. P. Szynalski. The TypeIt website.
+    ipa.typeit.org/full
+
+\bibitem{wells-ipa}
+    J. Wells. Computer-coding the IPA: a proposed
+    extension of sampa. Department of Phonetics
+    and Linguistics, University College London.
+    www.phon.ucl.ac.uk/home/sampa/x-sampa.htm
+
+\bibitem{indic-ipa}
+    Niranjan. The Indic IPA layout. Version 2.3. June
+    2020.
+    gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/master/symbols/in
+
+\bibitem{tipauni}
+    Niranjan. The tipauni package. Version 0.7a.
+    Feb. 13, 2023. ctan.org/pkg/tipauni
+
+\end{thebibliography}

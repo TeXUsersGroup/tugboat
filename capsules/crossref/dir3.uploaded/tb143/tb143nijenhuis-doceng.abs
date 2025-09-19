@@ -1,0 +1,9 @@
+This article presents Xerdi's Documentation Project (\XDP), a modular framework for scaling and simplifying \LaTeX-based document production.  
+\XDP\ separates template logic, content, and configuration into structured components, such as Executable Document Templates (\acro{EDT}s), Document Portfolios, Data Definition Repositories, and Workspaces.  
+Leveraging \LaTeX\ features like \texttt{TEXMFHOME} and \texttt{TEXMFDOTDIR}, it enables reusable and extensible document workflows across teams or clients.  
+
+Through practical examples, this article demonstrates how intertwined documents can simplify use cases like legal documents, invoices, and academic materials.
+It highlights how \XDP\ tackles challenges such as responsive branding, agile development, and user-friendly input for minimal coding authors.  
+
+The framework incorporates tools such as \texttt{bib2\-gls}~[9], \texttt{attachfile2}~[5], and \texttt{zref}~[6] to automate complex workflows and improve document scalability.
+Readers will gain actionable insights and practical tools to better structure and manage their \LaTeX\ projects efficiently and collaboratively.

@@ -1,0 +1,23 @@
+  This article will detail a workflow that leverages \TeX{} and
+  associated tools to produce multiple outputs\Dash including
+  (i)~\acro{TEI XML}, (ii)~\acro{HTML}, (iii)~print-ready \acro{PDF},
+  and (iv)~smartphone-optimized \acro{PDF}\Dash all from the same
+  \LaTeX-encoded source material in Malayalam, a language spoken in
+  Kerala, India.
+
+  For the past fourteen years, Sayahna Foundation, a non-profit, has
+  used this workflow to archive heritage books encoded in \acro{TEI
+    XML} and to generate \acro{HTML} and \acro{PDF} versions for
+  immediate user access. Initially, \TeX4ht did not support Indic
+  scripts, so we developed an alternative method to convert \LaTeX{}
+  content into other markup formats. Our approach involves typesetting
+  the content to create a \acro{PDF} output closely resembling a
+  \acro{TEI XML} document, then extracting the text to produce fully
+  parsable \acro{XML} output. The \acro{HTML} version is then derived
+  from these \acro{XML} sources using custom \acro{XSLT}.
+
+  This article aims to provide a detailed overview of this workflow,
+  which may be beneficial for those interested in archiving Indic
+  content in a future-proof, neutral format. Additionally, we will
+  discuss a few limitations of the process and outline \acro{TODO}
+  items for potential improvements and collaborations.

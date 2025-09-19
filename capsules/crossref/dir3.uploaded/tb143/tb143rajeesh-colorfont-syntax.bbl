@@ -1,0 +1,58 @@
+\begin{thebibliography}{1}
+
+\bibitem{emoji_in_qt}
+E.A.~Blomfeldt.
+\newblock Emoji in {Qt} 6.9.
+\newblock 2025.
+\newblock \url{https://www.qt.io/blog/emoji-in-qt-6.9}
+
+\bibitem{fontmake}
+{Google Fonts}.
+\newblock \texttt{fontmake}: {C}ompile fonts from various sources to binary.
+\newblock 2015.
+\newblock \url{https://github.com/googlefonts/fontmake}
+
+\bibitem{listings_package}
+J.~Hoffmann, C.~Heinz, B.~Moses.
+\newblock \texttt{listings}{\Dash}typeset source code listings using {\LaTeX}.
+\newblock 2024.
+\newblock \url{https://ctan.org/pkg/listings}
+
+\bibitem{hlotvonen_font}
+H.~Lotvonen.
+\newblock Font with built-in syntax highlighting.
+\newblock 2025.
+\newblock
+  \url{https://blog.glyphdrawing.club/font-with-built-in-syntax-highlighting}
+
+\bibitem{opentype_spec}
+Microsoft.
+\newblock {\opentype} specification version 1.9.1.
+\newblock 2024.
+\newblock \url{https://learn.microsoft.com/en-us/typography/opentype/spec}
+
+\bibitem{minted_package}
+G.~Poore, K.~Rudolph.
+\newblock \texttt{minted}{\Dash}highlighted source code for {\LaTeX}.
+\newblock 2025.
+\newblock \newline \url{https://ctan.org/pkg/minted}
+
+\bibitem{texsynhl_source}
+K.V.~Rajeesh, C.V.~Radhakrishnan.
+\newblock Source of font with built-in {\TeX} syntax highlighting.
+\newblock 2025.
+\newblock \url{https://gitlab.com/rit-fonts/texsynhl}
+
+\bibitem{fonttools}
+J.~van Rossum.
+\newblock \texttt{fonttools}: A {P}ython library to manipulate font files.
+\newblock 1999.
+\newblock \url{https://github.com/fonttools/fonttools}
+
+\bibitem{fontforge}
+G.~Williams, et~al.
+\newblock Font{F}orge, free and open source font editor.
+\newblock 2000.
+\newblock \url{https://fontforge.org}
+
+\end{thebibliography}

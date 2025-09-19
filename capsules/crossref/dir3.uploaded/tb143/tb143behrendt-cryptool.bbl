@@ -1,0 +1,66 @@
+\begin{thebibliography}{10}
+
+\bibitem{bb84}
+C.H.~Bennett, G.~Brassard.
+\newblock Quantum cryptography: Public key distribution and coin tossing.
+\newblock In~\emph{Proceedings of the International Conference on Computers,
+  Systems and Signal Processing}, pp.~175--179, Bangalore, India, 1984.
+\newblock \newline \url{https://doi.org/10.48550/arXiv.2003.06557}
+\newpage
+\bibitem{chakra}
+{Chakra-UI}.
+\newblock Chakra Systems Inc.
+\newblock \newline \url{https://chakra-ui.com}
+
+\bibitem{ctb-de}
+B.~Esslinger.
+\newblock \emph{Das CrypTool-Buch: Kryptografie lernen und anwenden mit
+  CrypTool und SageMath}.
+\newblock Lehmanns Media, Berlin, 2024.
+\newblock \url{https://www.cryptool.org/de/ctbook}
+
+\bibitem{ctb-en}
+B.~Esslinger.
+\newblock \emph{Learning and Experiencing Cryptography with CrypTool and
+  SageMath}.
+\newblock Artech House, Norwood, MA, 2024.
+\newblock
+  \url{https://us.artechhouse.com/Learning-and-Experiencing-Cryptography-with-CrypTool-and-SageMath-P2378.aspx}
+
+\bibitem{katex}
+{\KaTeX}.
+\newblock \KaTeX\ contributors
+  (\url{https://github.com/KaTeX/KaTeX/graphs/contributors}).
+\newblock \url{https://katex.org}
+
+\bibitem{mathjax}
+{MathJax (\url{https://www.mathjax.org/#about})}.
+\newblock \url{https://www.mathjax.org}
+
+\bibitem{mathml}
+{MathML}.
+\newblock W3C (\url{https://w3c.github.io/mathml-core}).
+\newblock \url{https://developer.mozilla.org/en-US/docs/Web/MathML}
+
+\bibitem{mlkem}
+{National Institute of Standards and Technology (NIST)}.
+\newblock \emph{Module-Lattice-Based Key-Encapsulation Mechanism Standard}.
+\newblock U.S.~Department of Commerce.
+\newblock \url{https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.203.pdf}
+
+\bibitem{nextjs}
+{\tt Next.js}.
+\newblock Vercel Inc. (\url{https://vercel.com}).
+\newblock \url{https://nextjs.org}
+
+\bibitem{react}
+React.
+\newblock Meta Platforms Inc. (\url{https://opensource.fb.com/legal/terms}).
+\newblock \url{https://react.dev}
+
+\bibitem{webpack}
+webpack.
+\newblock OpenJS Foundation.
+\newblock \newline \url{https://webpack.js.org}
+
+\end{thebibliography}

@@ -1,0 +1,87 @@
+<!--#include virtual="/header.html"-->
+<title>Digital archiving of Malayalam content
+       - TUGboat 46:2 (2025) - TeX Users Group</title>
+</head><body>
+
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+<h1><a href="/TUGboat/tb46-2/">TUGboat 46:2</a> (2025)<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
+
+<p><b>Title</b>: Digital archiving of Malayalam content</p>
+
+<p><b>Summary</b>:
+structuring visible PDF output for creation of TEI XML and then HTML, for Indic texts.</p>
+
+<p><b>Full text of article</b>: <a href="https://tug.org/members/TUGboat/tb46-2/tb143radhakrishnan-malayalam-archiving.pdf">available to TUG members</a> (<a href="/join.html">join TUG</a>);
+will be publicly available after the next issue is published.</p>
+
+<p><b>Author</b>:
+<a href="/TUGboat/Contents/listauthor.html#Radhakrishnan,CV">CV Radhakrishnan</a>&nbsp;(<a href="https://orcid.org/0000-0001-7511-2910">orcid</a>)</p>
+
+<p><b>Publication</b>: <a href="/TUGboat/tb46-2/">TUGboat
+volume 46, number 2</a> (2025),
+pages&nbsp;195&ndash;205</p>
+
+<p><b>DOI</b> (this page):
+<a href="https://doi.org/10.47397/tb/46-2/tb143radhakrishnan-malayalam-archiving">10.47397/tb/46-2/tb143radhakrishnan-malayalam-archiving</a>
+<br><small>(<a href="https://doi.org/10.47397/tb/46-2/tb143veytsman-comments">previous doi</a>
+- <a href="https://doi.org/10.47397/tb/46-2/tb143behrendt-cryptool">next doi</a>)</small></p>
+
+<p><b>Category</b>:
+<a href="/TUGboat/Contents/listkeyword.html#CatTAGElectronicDocuments">Electronic&#xa0;Documents</a></p>
+      
+<p><b>Difficulty</b>: Intermediate Plus</p>
+
+<p><b>Abstract</b>:
+This article will detail a workflow that leverages TeX and
+associated tools to produce multiple outputs&#x2014;including
+(i) TEI XML, (ii) HTML, (iii) print-ready PDF,
+and (iv) smartphone-optimized PDF&#x2014;all from the same
+LaTeX-encoded source material in Malayalam, a language spoken in
+Kerala, India.</p>
+<p>For the past fourteen years, Sayahna Foundation, a non-profit, has
+used this workflow to archive heritage books encoded in TEI
+XML and to generate HTML and PDF versions for
+immediate user access. Initially, TeX4ht did not support Indic
+scripts, so we developed an alternative method to convert LaTeX
+content into other markup formats. Our approach involves typesetting
+the content to create a PDF output closely resembling a
+TEI XML document, then extracting the text to produce fully
+parsable XML output. The HTML version is then derived
+from these XML sources using custom XSLT.</p>
+<p>This article aims to provide a detailed overview of this workflow,
+which may be beneficial for those interested in archiving Indic
+content in a future-proof, neutral format. Additionally, we will
+discuss a few limitations of the process and outline TODO
+items for potential improvements and collaborations.</p>
+
+<p><b>References</b>:</p>
+<ol class="tugbbl">
+<li class="tugbbl">R. Anghelache. Hermes&#x2014;a semantic XML+MathML+Unicode e-publishing/self-archiving tool for LaTeX authored scientific articles. 2006. Visited: 2025/08/07. <a href="http://hermes.roua.org/">hermes.roua.org/</a></li>
+<li class="tugbbl">T. Bronger. The tbook System for XML Authoring. 2004. Visited: 2025/05/01. <a href="https://tbookdtd.sourceforge.net/tbookman/index.html">tbookdtd.sourceforge.net/tbookman/index.html</a></li>
+<li class="tugbbl">The Document Foundation. Writer2LaTeX, a LaTeX/BibTeX export filter and front end for Writer. 2025. Visited: 2025/06/03. <a href="https://extensions.libreoffice.org/en/extensions/show/writer2latex-1">extensions.libreoffice.org/en/extensions/show/writer2latex-1</a></li>
+<li class="tugbbl">Glyph &#x0026; Cog, LLC. pdftotext. 2025. Visited: 2025/06/03. <a href="https://www.xpdfreader.com/pdftotext-man.html">www.xpdfreader.com/pdftotext-man.html</a></li>
+<li class="tugbbl">C. Goldfarb, P. Prescod. Charles F. Goldfarb&#x2019;s XML Handbook, ch. Why XML. Charles F. Goldfarb definitive XML series. Prentice Hall PTR, 2004.</li>
+<li class="tugbbl">C. Goldfarb, Y. Rubinsky. The SGML Handbook, ch. A Structured Overview of SGML, pp. 121&#x2013;214. Clarendon Press, 1990.</li>
+<li class="tugbbl">Jy&#x0113;&#x1E63;&#x1E6D;ad&#x0113;van. Yuktibh&#x0101;&#x1E63;&#x0101;. 2020. <a href="https://books.sayahna.org/ml/pdf/yukthibhasha.pdf">books.sayahna.org/ml/pdf/yukthibhasha.pdf</a></li>
+<li class="tugbbl">Marelle Team. tralics: A LaTeX to XML translator. 2017. Visited: 2025/05/23. <a href="https://www-sop.inria.fr/marelle/tralics/">www-sop.inria.fr/marelle/tralics/</a></li>
+<li class="tugbbl">B. Miller, D. Ginev. LaTeXML: A LaTeX to XML/&#x200B;HTML/&#x200B;MathML Converter. 2024. Visited: 2025/05/10. <a href="https://math.nist.gov/~BMiller/LaTeXML/">math.nist.gov/~BMiller/LaTeXML/</a></li>
+<li class="tugbbl">F. Mittelbach, J. Richmond (trans.). Sebastian Patrick Quintus Rahtz (13.2.1955&#x2013;13.3.2016). TUGboat 37(2), 2016. <a href="https://tug.org/TUGboat/tb37-2/tb116rahtz-mitt.pdf">tug.org/TUGboat/tb37-2/tb116rahtz-mitt.pdf</a></li>
+<li class="tugbbl">O. Paraschenko. TeXML: An XML syntax for TeX (LaTeX, ConTeXt). 2004. Visited: 2025/05/10. <a href="https://getfo.org/texml/index.html">getfo.org/texml/index.html</a></li>
+<li class="tugbbl">Saxonica. What is Saxon? 2025. <a href="https://www.saxonica.com/html/documentation10/about/whatis.html">www.saxonica.com/html/documentation10/about/whatis.html</a></li>
+<li class="tugbbl">Sayahna Foundation. 2013. Visited: 2025/06/01. <a href="https://books.sayahna.org">books.sayahna.org</a></li>
+<li class="tugbbl">TEI Consortium. TEI P5: Guidelines for Electronic Text Encoding and Interchange. 2025. Visited: 2025/05/31. <a href="https://tei-c.org/release/doc/tei-p5-doc/en/Guidelines.pdf">tei-c.org/release/doc/tei-p5-doc/en/Guidelines.pdf</a></li>
+<li class="tugbbl">TeX Users Group. TeX4ht. 2022. Visited: 2025/01/02. <a href="https://tug.org/tex4ht/">tug.org/tex4ht/</a></li>
+<li class="tugbbl">B. Veytsman, M. Ware. Ebooks and paper sizes: Output routines made easier. TUGboat 32(3), 2011. Proceedings of TUG 2011. <a href="https://tug.org/TUGboat/tb32-3/tb102veytsman-ebooks.pdf">tug.org/TUGboat/tb32-3/tb102veytsman-ebooks.pdf</a></li>
+<li class="tugbbl">Wikipedia. Hortus Malabaricus. 2006. Visited: 2025/05/01. <a href="https://en.wikipedia.org/wiki/Hortus_Malabaricus">en.wikipedia.org/wiki/Hortus_Malabaricus</a></li>
+<li class="tugbbl">Wikipedia. Separation of content and presentation. 2017. Visited: 2025/05/31. <a href="https://en.wikipedia.org/wiki/Separation_of_content_and_presentation">en.wikipedia.org/wiki/Separation_of_content_and_presentation</a></li>
+<li class="tugbbl">Wikipedia. Yuktibh&#x0101;&#x1E63;&#x0101;. 2022. <a href="https://en.wikipedia.org/wiki/Yuktibh%C4%81%E1%B9%A3%C4%81">en.wikipedia.org/wiki/Yuktibh%C4%81%E1%B9%A3%C4%81</a></li>
+<li class="tugbbl">World Wide Web Consortium (W3C). On SGML and HTML. 2018. Visited: 2025/04/02. <a href="https://www.w3.org/TR/html4/intro/sgmltut.html">www.w3.org/TR/html4/intro/sgmltut.html</a></li>
+<li class="tugbbl">World Wide Web Consortium (W3C). XSL Transformations (XSLT), version 2.0 (second edition). 2021. Visited: 2025/06/02. <a href="https://www.w3.org/TR/xslt20/">www.w3.org/TR/xslt20/</a></li>
+</ol>
+
+<hr><small><a href="/TUGboat/">TUGboat</a> 46:2, 2025 (<a href="/TUGboat/tb46-2/">issue 143</a>)
+&nbsp; [generated 2025-09-19]
+</small><br><!--#include virtual="/footer.html"-->
