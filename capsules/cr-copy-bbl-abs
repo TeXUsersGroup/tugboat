@@ -117,7 +117,7 @@ done
 # And since those names are random, copy them all into a subdir bib/
 #  instead of cluttering up the main $outdir. The Makefile sets
 #  TEXMFDOTDIR to find them there.
-# Also, exclude save*.bib and orig*.bib, since those are temp files we
+# Also, exclude save*.bib, orig*.bib, etc., since those are backup files we
 #  create during editing.
 # Also, if there are any duplicate names, quit. Processing
 #  can't succeed if there are two bib files by the same name,
@@ -125,7 +125,8 @@ done
 # 
 for bib in $issdir/*/*.bib; do
   bib_basename=`basename "$bib"`
-  echo "$bib_basename" | egrep '^(auth|orig|preauth|save)' >/dev/null && continue
+  echo "$bib_basename" | egrep '^(auth|orig|preauth|printed|save)' >/dev/null \
+    && continue
   dest=$outdir/bib/$bib_basename
   if test -e "$dest"; then
     echo "$0: bib file already exists: $dest" >&2

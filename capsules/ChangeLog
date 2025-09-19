@@ -1,3 +1,14 @@
+2025-09-19  Karl Berry  <karl@freefriends.org>
+
+	* cr-copy-bbl-abs: also ignore "printed" files.
+	* cr-landing-bbl-abs (update_landing_bbl): remove trailing ")."
+	if had leading "(", for tb143behrendt, and restore parens on output.
+	Also, don't consider extension .js as a url.
+	* crossref/README-process.txt: text updates for tb143.
+	* crossref/ltx2crossrefxml-tugboat.cfg: handle \KaTeX, \opentype,
+	\XDP, etc., for tb143.
+	* lists-authinfo.txt (Zorman): add (for upcoming tb144).
+
 2025-08-29  Karl Berry  <karl@freefriends.org>
 
         * tb143capsule.txt: new file for 46:2.

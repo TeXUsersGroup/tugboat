@@ -102,9 +102,6 @@ sub read_crossref_xml {
 # original bbl.tex, instead of from the crossref issue.xml. That way we
 # would get font changes and other markup, just as we do for the abstracts.
 # 
-# qqq todo: consider structured citations in crossref; see
-# ltx2crossrefxml.pl.
-# 
 sub update_landing_bbl {
   my ($landing_dir,%citations) = @_;
   my $updated = 0;
@@ -139,9 +136,11 @@ sub update_landing_bbl {
             my ($w1,$w2);
 
             # protocol is specified.
-            if ($word =~ m!^https?://!) {
-              ($prot,$urlbase) = ($word =~ m!^(https?)://(\S+)!);
-              #warn " got explicit $prot, urlbase $urlbase\n";
+            if ($word =~ m!^\(?https?://!) {
+              ($prot,$urlbase) = ($word =~ m!^\(?(https?)://(\S+)!);
+              # remove trailing ). if had leading (, for tb143behrendt:
+              $urlbase =~ s/\)\.?$// if $word =~ /^\(/;
+              #warn " got explicit $prot, urlbase $urlbase (from $word)\n";
 
             # no protocol; domain name just alphanumeric and -,
             #   must be at least two chars. (Don't worry about x.org.)
@@ -150,8 +149,9 @@ sub update_landing_bbl {
             #   that is a bib reference like "vol.1" or "pp.1-2".
             # But even that is not enough, since the reference might
             #   have letters, like "report no.1-A". So eliminate
-            #   the common bib abbreviations.
-            # Also, more special cases: foo.sty, bar.tex, etc., is not a url.
+            #   common bib abbreviations.
+            # Also, more special cases: foo.sty, bar.tex, etc., are not urls.
+            # Or next.js.
             #
             # Maybe we should force spaces after such bib abbrevs,
             #   but that doesn't seem ideal either.
@@ -165,13 +165,12 @@ sub update_landing_bbl {
                      && ($w1 = $1) && ($w2 = $2) # save capture groups
                      && $w2 =~ /[a-z]/i
                      && (! $w1 || $w1 !~ /^(no?|v(ol)?|pp?|iss)$/i)
-                     && (! $w2 || $w2 !~ /^(cls|sty|tex)$/i)
+                     && (! $w2 || $w2 !~ /^(cls|dtx|js|sty|tex)$/i)
                     ) {
               $prot = "https";
               $urlbase = $word;
               #warn " got implicit urlbase |$urlbase| from: |$word| 1=$w1 2=$w2\n";
             }
-            #warn "  1=$w1, 2=$w2, for $word\n";
             
             if ($word =~ /^([:;!?%])/) {
               # A space before punctuation might happen in French references;
@@ -185,10 +184,16 @@ sub update_landing_bbl {
 
             if ($prot) {
               #warn " got prot $prot, urlbase $urlbase\n";
-              # just drop trailing period or comma, more confusion than help
+              # just drop trailing period or comma, more confusion than help:
               $urlbase =~ s/[.,]$//;
+              #
+              # restore (unlinked) parens if in original (tb143behrendt):
+              $newcite .= "(" if $word =~ /^\(/;
+              #
               my $url = "$prot://$urlbase";
-              $newcite .=  qq!<a href="$url">$urlbase</a>!;
+              $newcite .= qq!<a href="$url">$urlbase</a>!;
+              #
+              $newcite .= ")." if $word =~ /^\(/;
             } else {
               # Special case: before bullets, insert a line break, in
               # both html source and output; for tb136andre bbl.

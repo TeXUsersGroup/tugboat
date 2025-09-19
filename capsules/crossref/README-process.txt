@@ -46,7 +46,8 @@ bail out early, so easiest to choose an article with both to do first.
 
 In addition to these, all .aux files and .bib files will be copied to
 the working dir (the .bib files in a subdir bib/). They are used to
-construct Crossref's structured citations.
+construct Crossref's structured citations. Might have to delete unused
+.aux files from authors, etc.
 
 Be sure crossref_iss in capsules/Makefile is set to the current/desired issue,
 per ~tubprod/README.
@@ -55,23 +56,23 @@ Best to do this one article at a time, making sure each comes out ok.
 After creating the first abs/bbl.tex, run:
   make cro-scratch  # in capsules directory
 
-Then, the landing files output will be in (e.g.)
+Then, the generated landing files will be in (e.g.)
   file:///home/tubprod/svn/capsules/crossref/dir1.lndout/tb*.html
-and the XML file for Crossref in:
+and the generated XML file for Crossref:
   .../dir2.process/issue.xml
 
-The make will probably fail due to unprocessed TeX commands remaining in
+The make will often fail due to unprocessed TeX commands remaining in
 the output files, dir2.process/issue.xml and dir1.lndout/*.html. We want
-to do as much as possible automatically, so before hand-editing anything,
-fix the translations if at all possible:
+to make the process automatic and reproducible, so instead of hand-editing,
+so fix the translations, one way or another:
 
-- Usually they'll be TUGboat-specific, in which case
+- Often they'll be TUGboat-specific, in which case
   crossref/ltx2crossrefxml-tugboat.cfg is the right place.
 
 - Sometimes the fixes might be generic, in which case
   LaTeX-ToUnicode/lib/LaTeX/ToUnicode.pm or ToUnicode/Tables.pm in the
   bibtexperllibs package (on github) is probably the right place. Our
-  Makefiles and code here are already set up to use that package from a
+  Makefiles and code here are set up to use that package from a
   development checkout in a sibling directory.
 
 - Titles and authors are converted entirely within captub, not using
@@ -79,32 +80,38 @@ fix the translations if at all possible:
   HTML strings for the TUGboat contents and lists pages anyway. We
   specify this using the --rpi-is-xml option (in the Makefiles).
 
-- For simplicity in the Perl code, most of the conversions are
-  line-oriented. So if the argument to a command in abs.tex or bbl.tex
-  starts on one line and ends on another, it won't be recognized.
-  Edit the .tex file to put it on one line.
+- For simplicity in the Perl code, the conversions are line-oriented.
+  So if the argument to a command in abs.tex or bbl.tex
+  starts on one line and ends on another, it won't be recognized. Edit
+  the .tex file to put it on one line.
 
-- For the references, no font changes or other html-level markup is
-  used.  It is plain (Unicode) text.  The only special cases are making
-  urls be live links, and newlines before bullets.
+- For the references, no font changes or other html-level markup (<sup>,
+  etc.) is used.  It is plain (Unicode) text.  The only special cases
+  are making urls be live links, and newlines before bullets
+  (implemented in cr-landing-bbl-abs).
 
 - Crossref's unstructured citations are output from the bbl.tex files,
   as above.  Crossref's structured citations are also output, using the
   aux+bib files. If any bib files need changes (try hard to avoid this),
   do not fail to save the original version on the working machine and on
-  tug.org before editing.
+  tug.org before editing and updating on tug.org.
   
+  Because the unstructured and structured citations are output from
+  different sources, modifying bbl.tex will not affect the structured
+  citation, and similarly in the other direction. Sometimes that's what
+  you want, but usually you'll have to modify both when changes are needed.
+
 On the other hand, sometimes authors use one-off abbreviations or
 complicated TeX code in their abstracts or bibliographies. In such
 cases, it is better to edit the abs/bbl.tex files to replace such custom
-macros than bother automatically translating something that will
+macros than bother with automatically translating something that will
 probably never come up again.
 
 If the abstract contains \cite or other citation commands, they will not
-be translated. Just replace them with the correct [N] reference. Ditto
-with citation cross-references in bibliographies. The references will be
-on the landing page along with the abstract, so readers will be able to
-follow them.
+be translated. Manually replace them with the correct [N] reference (can
+see it in the pdf). Ditto with citation cross-references in
+bibliographies. The references will be on the landing page along with
+the abstract, so readers will be able to follow them.
 
 To retry after code changes (still assuming no hand editing), again run:
   make cro-scratch
@@ -142,7 +149,7 @@ HTML (ltx2unitxt --html), but copies bbls as plain text from the
 previously-created issue.xml (created by ltx2crossrefxml via
 crossref/Makefile, target issue). As mentioned above, in the bbls, the only
 formatting attempted for the landing .html files is to make urls
-(recognized from plain text) live; italics, etc., do not happen.
+(recognized from plain text) live; italics, typewriter, etc., do not happen.
 
 Then repeat until all articles are done.
 
@@ -167,7 +174,7 @@ minutes. Can also check results online:
 
 When the result mail comes in, see <batch_data> summary element at end,
 should be all success. Browse through the rest, especially that all the
-<citation> elements were accepted.. Fix and rerun as needed.
+<citation> elements were accepted. Fix and rerun as needed.
 
  After the test upload succeeds, good to copy the test landing files
 to the live web directory for tub-prod to check:
@@ -181,7 +188,7 @@ to the live web directory for tub-prod to check:
 Then check results at:
   https://tug.org/TUGboat/tbVV-N/tbnnnwhatever.html
 E.g.:
-  https://tug.org/TUGboat/tb46-1/tb142treas.html
+  https://tug.org/TUGboat/tb46-2/tb143chest.html
 And email tub-prod.
 
 A few days before making the issue live, first remake the landing files
