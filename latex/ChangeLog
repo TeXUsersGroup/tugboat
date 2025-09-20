@@ -1,5 +1,16 @@
 2025-09-20  Karl Berry  <karl@freefriends.org>
 
+	* tugboat.bbx: new file, mostly from Marei Peischl.
+	* Makefile (checkblx): new target to test biblatex usage.
+	* tubib.bib (multiauthor3, ...): new entries
+	* tubibauths.tex,
+	* tubibauths-blx.tex,
+	* tubibed.tex,
+	* tubibed-blx.tex: new files for biblatex testing.
+	* tugboat.bst: doc tweak for max.names and trunc.num.
+
+2025-09-20  Karl Berry  <karl@freefriends.org>
+
 	* tugboat.dtx (\bfBib, \bfBibLaTeX): new abbrevs.
 
 2025-08-19  Karl Berry  <karl@freefriends.org>

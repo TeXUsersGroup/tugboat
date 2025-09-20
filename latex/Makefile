@@ -59,7 +59,14 @@ spell:
 	aspell list --mode=tex --add-extra-dicts=`pwd`/.dict.pws <ltubguid.ltx\
 	| sort -f -u
 
+checkblx: ltugboat.cls tubib.bib
+	$(pdflatex) tubibauths-blx && biber -q tubibauths-blx && $(pdflatex) tubibauths-blx
+	$(pdflatex) tubibed-blx && biber -q tubibed-blx && $(pdflatex) tubibed-blx
+
 checkbib: ltugboat.cls tugboat.bst tubib.bib
+	$(pdflatex) tubibauths && bibtex tubibauths && $(pdflatex) tubibauths
+	$(pdflatex) tubibed && bibtex tubibed && $(pdflatex) tubibed
+#
 	$(pdflatex) tubibnummonth && bibtex tubibnummonth && $(pdflatex) tubibnummonth
 #	$(pdflatex) tubibjtitle && bibtex tubibjtitle && $(pdflatex) tubibjtitle
 	$(pdflatex) tubibpages && bibtex tubibpages && $(pdflatex) tubibpages

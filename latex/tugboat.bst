@@ -466,13 +466,15 @@ FUNCTION {emphasize}
 }
 
 % emacs-page
-%%% from trunc-auth.bst:
+%%% from trunc-auth.bst (slightly edited):
 %%% There are two constants that allow for the truncation of a list of author
 %%% (or editor) names -- max.names and trunc.num.  And here's how they work:
 %%% If there are max.names or fewer in the list, there is no truncation; but
-%%% if there are more than max.names, the list is truncated at the trunc.num
-%%% name, which is replaced by trunc.string (such as "et~al.", and names later
-%%% in the list are omitted).  There's also a sanity check, making sure that:
+%%% if there are more than max.names, the list is truncated before the
+%%% trunc.num name (i.e., trunc.num-1 names will be printed), which is
+%%% replaced by trunc.string (such as "et~al."), and names later in the
+%%% list are omitted.
+%%% There's also a sanity check, making sure that:
 %%%   2  <=  trunc.num  <=  max.names + 1
 
 INTEGERS { max.names trunc.num }

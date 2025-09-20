@@ -1,0 +1,12 @@
+% $Id$
+% Public domain. 
+% Test that we get et al. of multiple authors after two names,
+% if there are less than three authors.
+
+\documentclass{ltugboat}
+\usepackage[backend=biber,bibstyle=tugboat]{biblatex}
+\addbibresource{tubib.bib}
+\begin{document}
+\nocite{multiauthor3,multiauthor4,multiauthor5}
+\printbibliography
+\end{document}

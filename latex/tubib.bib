@@ -1,6 +1,5 @@
 % $Id$
-% Public domain.
-
+% Public domain. Test bib entries for tubib*.tex files.
 
 % This one from tb136inn.
 @misc{typeed,
@@ -62,4 +61,43 @@
   year = {2023},
   volume = 44,
   number = 3,
+}
+
+% Test that long author lists are truncated at two names,
+% if there are 3 or more names. (tubibauths.tex)
+@article{multiauthor3,
+  title = "No author list truncation if three or fewer names",
+  author = {Fulya Horozal and Alin Iacob and Constantin Jucovschi},
+  journal = {Multi-author Test},
+  year = 2025,
+}
+@article{multiauthor4,
+  title = "Truncate author list to two names if more than three (four)",
+  author = {Fulya Horozal and Alin Iacob and Constantin Jucovschi and
+            Michael Kohlhase},
+  journal = {Multi-author Test},
+  year = 2025,
+}
+@article{multiauthor5,
+  title = "Truncate author list to two names if more than three (five)",
+  author = {Fulya Horozal and Alin Iacob and Constantin Jucovschi and
+            Michael Kohlhase and Florian Rabe},
+  journal = {Multi-author Test},
+  year = 2025,
+}
+
+% Test formatting of editor field. (tubibed.tex)
+% Also multiple names there.
+@inproceedings{edproc,
+  author = 	 {Michael Kohlhase},
+  title = 	 {Flexiformalist},
+  pages = {30--36},
+  booktitle = {14th International Workshop on Symbolic},
+  year = {2013},
+  editor = {Andrei Voronkov and Viorel Negru and Tetsuo Ida and
+            Tudor Jebelean and Dana Petcu and Stephen M. Watt and
+            Daniela Zaharie},
+  publisher = {IEEE Press},
+  isbn      = {978-1-4673-5026-6},
+  address = {Timisoara, Romania},
 }
