@@ -1,3 +1,10 @@
+2025-09-20  Karl Berry  <karl@freefriends.org>
+
+	* cr-copy-bbl-abs: also ignore bb.bib and x.bib.
+	* capsules/README-process.txt: update bib/ handling.
+	* crossref/ltx2crossrefxml-tugboat.cfg: updates for 46:1 structured
+	citations.
+
 2025-09-19  Karl Berry  <karl@freefriends.org>
 
 	* cr-copy-bbl-abs: also ignore "printed" files.

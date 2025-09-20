@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2025-08-19 v2.34
+                   [2025-09-20 v2.34
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -705,7 +705,9 @@
 \def\BibTeX{\texorpdfstring{\Bib\-\kern-.08em \TeX}{BibTeX}}
 % no good way to determine bold font, and we want to lose the kern, too:
 % (we \let BibTeX to this in maketitle)
-\def\bfBibTeX{\texorpdfstring{B{\SMC\SMC IB}\TeX}{BibTeX}}
+\def\bfBib{B{\SMC\SMC IB}}
+\def\bfBibTeX{\texorpdfstring{\bfBib\TeX}{BibTeX}}
+\def\bfBibLaTeX{\texorpdfstring{\bfBib\LaTeX}{BibLaTeX}}
 %
 \def\BSD{\acro{BSD}}
 \def\CandT{\textsl{Computers \& Typesetting}}
@@ -2235,9 +2237,6 @@
 % from (1) the lack of the eccentric optional argument, and (2) the
 % activation of `|/|'.
 %
-% For general URLs, \texttt{url.sty} (with or without hyperref) suffices
-% and is recommended.
-%
 %    \begin{macrocode}
 \def\personalURL{\begingroup
   \@sanitize\makespace\ \makeactive\@
@@ -3588,7 +3587,7 @@
 %
 % \begin{macro}{\thebibliography}
 % \begin{macro}{\TB@@thebibliography}
-% If the user's asked to use \LaTeX's default citation mechanism
+% If the user has asked to use \LaTeX's default citation mechanism
 % (using the |rawcite| option), we still need to 
 % patch \cs{sloppy} to support justification of the body of the
 % bibliography.  We kludge in a call to \cs{frenchspacing} too,

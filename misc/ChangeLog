@@ -1,5 +1,10 @@
 2025-09-20  Karl Berry  <karl@freefriends.org>
 
+	* make-issue-pages-tub: check return status from pdfconcat.
+	* tubcont2cnt: doc tweak.
+
+2025-09-20  Karl Berry  <karl@freefriends.org>
+
 	* tugboat.abbr-ctx (\starttyping): new version from David C.
 	(\startitemize): accept and ignore optional arg.
 	For tb144hagen-pages (46:3).

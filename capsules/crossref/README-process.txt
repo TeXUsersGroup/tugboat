@@ -242,7 +242,7 @@ Then archive all the files (after registering):
   scp auxbib.tgz $host:$dir # do not unpack, avoid overwrites, and
                             # none of the files should be different anyway.
   #
-  # svn commit the various files.
+  # svn commit the generated files:
   cd ~tubprod/svn/capsules/crossref
   nnn=...
   ls dir*/archive.tb$nnn # should not exist
@@ -254,18 +254,20 @@ Then archive all the files (after registering):
   # We save the .bib files in a tarball just so they aren't so easily
   # browsable, since these are mostly authors' source files.
   svn mkdir dir1.lndout/archive.tb$nnn
-  (cd dir1.lndout && tar czf archive.tb$nnn/bib.tgz *.bib && rm *.bib)
-  mv dir1.lndout/tb${nnn}* !$
+  (cd dir1.lndout && tar czf archive.tb$nnn/tb${nnn}bib.tgz bib && rm -rf bib)
+  mv dir1.lndout/tb${nnn}* dir1.lndout/archive.tb$nnn
   ls dir1.lndout # only archive.* should remain
+  #
+  # bib for dir3 and dir2:
+  (cd dir2.process && tar czf archive.tb$nnn/tb${nnn}bib.tgz bib && rm -rf bib)
   #
   # dir3 before dir2 since we save them in both places, in case of edits.
   svn mkdir dir3.uploaded/tb$nnn
-  (cd dir3.uploaded && tar czf tb$nnn/bib.tgz *.bib && rm *.bib)
   cp -pr dir2.process/{issue.xml,tb${nnn}*} !$
   ls dir3.uploaded # only archive.* should remain
   #
   svn mkdir dir2.process/archive.tb$nnn
-  (cd dir2.process && tar czf tb$nnn/bib.tgz *.bib && rm *.bib)
+  (cd dir2.process && tar czf tb$nnn/tb${nnn}bib.tgz bib && rm -rf bib)
   mv dir2.process/{issue.xml,tb${nnn}*} !$
   ls dir2.process # only archive.* should remain
   #
@@ -281,8 +283,8 @@ pages to say "publicly available now". This is irritating, but it seems
 useful enough to state explicitly whether or not an article is public to
 put up with it. To do this:
 
-previss=45-3
-prevnnn=141
+previss=46-1
+prevnnn=142
 
 - ensure that tb${prevnnn}capsule.txt is up to date, without /members/ urls.
 cd ../capsules
@@ -310,7 +312,7 @@ scp -p `cat /tmp/ch-land` $host:/home/httpd/html/TUGboat/tb$previss/
 \mv `cat /tmp/ch-land` archive.tb${prevnnn}/
 
 - let's not bother to update the archives in the other dir*,
-  since the landing files are all that's actually being changed live.
+  since only the landing files are what's being changed live.
   Instead, remove the generated files so we'll be clean for next time:
 cd ..
 ls -lt dir*/tb${prevnnn}* # bbl/abs/etc. should be old, rpi/html new
@@ -321,6 +323,8 @@ svn status  # should be just the expected landing files; then:
 svn commit -m"archive landing files: $previss (tb$prevnnn) public" dir1*
 svn diff ../Makefile # should be just testiss and crossref_iss, undo:
 svn revert ../Makefile
+
+Then return to /home/tubprod/README for final announcements.
 
 === If there were hand edits in the crossref/dir2.process directory
 (hopefully not), have to take more care, as follows:

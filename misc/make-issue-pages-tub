@@ -93,7 +93,7 @@ assert_pdfpagecount () {
   fi
 }
 
-#
+# 
 # We do some unusual Ghostscript calls, so don't use ps2pdf-tub.  But
 # tell gs not to rotate our pages (e.g., tb132voss-hvfloat, but
 # auto-rotation is a bad idea in general).
@@ -213,6 +213,12 @@ assert_pdfpagecount sp$filesuffix.pdf 1
 # Finally, re-concatenate all the pages, so that we have a single file
 # we can look through and check that grayscale vs. color came out correctly.
 echo "$0: making issue-upload.pdf for manual check ..."
-pdfconcat issue-upload.pdf [^cs]*$filesuffix.pdf
-assert_pdfpagecount issue-upload.pdf $filecount
+if pdfconcat issue-upload.pdf [^cs]*$filesuffix.pdf; then
+  assert_pdfpagecount issue-upload.pdf $filecount
+  status=0
+else
+  echo "$0: pdfconcat failed, exiting with error." >&2
+  status=1
+fi
 ls -l issue-upload.pdf
+exit $status

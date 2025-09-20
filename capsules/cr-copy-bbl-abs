@@ -125,7 +125,8 @@ done
 # 
 for bib in $issdir/*/*.bib; do
   bib_basename=`basename "$bib"`
-  echo "$bib_basename" | egrep '^(auth|orig|preauth|printed|save)' >/dev/null \
+  echo "$bib_basename" \
+    | egrep '^(auth|bb\.|orig|preauth|printed|save|x\.)' >/dev/null \
     && continue
   dest=$outdir/bib/$bib_basename
   if test -e "$dest"; then
