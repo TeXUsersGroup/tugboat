@@ -1,3 +1,9 @@
+2025-09-20  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr-ctx (\starttyping): new version from David C.
+	(\startitemize): accept and ignore optional arg.
+	For tb144hagen-pages (46:3).
+
 2025-09-17  Karl Berry  <karl@freefriends.org>
 
 	* lmtx: doc fix since context now up to date in TL.
