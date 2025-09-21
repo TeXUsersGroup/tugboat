@@ -327,8 +327,10 @@
   \par
   \smallskip
   \begingroup
-  \@verbatim \frenchspacing\@vobeyspaces
-  \xstarttyping
+    \small
+    \hfuzz=2pt
+    \@verbatim\frenchspacing\@vobeyspaces
+    \xstarttyping
 }
 \NewDocumentCommand\gobbleopt{O{}}{}
 \expanded{\def\noexpand\xstarttyping#1\@backslashchar stoptyping}{%
