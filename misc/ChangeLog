@@ -1,3 +1,8 @@
+2025-09-24  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr-ctx (\starttyping): no \smallskip here
+	since \@verbatim (defined in tugboat.dtx) does it.
+
 2025-09-21  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.abbr-ctx (\starttyping): \small.

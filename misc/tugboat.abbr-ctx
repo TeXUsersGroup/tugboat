@@ -325,11 +325,13 @@
 % + email 18sep25
 \NewDocumentCommand\starttyping{}{%
   \par
-  \smallskip
+  % no \smallskip here because \@verbatim does it.
   \begingroup
     \small
     \hfuzz=2pt
-    \@verbatim\frenchspacing\@vobeyspaces
+    \@verbatim
+    \frenchspacing
+    \@vobeyspaces
     \xstarttyping
 }
 \NewDocumentCommand\gobbleopt{O{}}{}
@@ -338,6 +340,8 @@
   \gobbleopt#1%
   \endgroup
   \par
+  % but need \smallskip here, since the unusual way we end verbatim
+  % doesn't execute it.
   \smallskip
 }
 
