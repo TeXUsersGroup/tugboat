@@ -1,3 +1,9 @@
+2025-10-15  Karl Berry  <karl@freefriends.org>
+
+	* check-urls-tub: save nonzero exit_status, and get incremental output.
+	* check-splice-tub (find_singlesplice): also check for \externalfigure
+	inclusion, used in edit+instmem.
+
 2025-09-24  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.abbr-ctx (\starttyping): no \smallskip here

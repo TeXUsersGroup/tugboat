@@ -40,7 +40,7 @@ all: spine.pdf cover4.pdf titlepage.pdf cover1.pdf cover2.pdf $(c3_target)
 titlepage.pdf: $(tb)quote.tex tugboat.front
 cover4.pdf: $(tb)cont.tex tubtocmac.tex tugboat.front
 cover3.pdf: $(tb)cap.tex  tubtocmac.tex
-cover1.pdf: word-nobox.pdf press2.pdf coverdrawing.png
+cover1.pdf: word-nobox.pdf press2.pdf coverdrawing.pdf
 
 # cover3a.pdf is copied to ../CADMUS/ to replace the two-page version.
 #cover3a.pdf: cover3.pdf cover3-crop.pdf
@@ -127,12 +127,11 @@ copynext:
 #
 	# top level.
 	mkdir -p -m 2770 ${tn}/covers
-	chgrp -R tub ${tn}
 	touch ${tn}/TB$(tbnn)
 	yes n | (cd .. && cp -ai *.* *tub* Makefile ${tn}/) # not Status.txt
 #
 	# production dir.
-	cd .. && mkdir -m 2775 ${pdir}
+	cd .. && mkdir -m 2775 ${pdir}/bypage/upload
 	cd .. && ln -s ${pdir} ${tn}/webdir
 #
 	# covers/ subdir.
@@ -141,3 +140,8 @@ copynext:
 	cd ${tn}/covers && rename s/$(tbn)/$(tbnn)/ *
 	cd ${tn}/covers && rm -f tb*complete.lua
 	cd ${tn}/covers && cp -ai svn-covers/tbcmplete.lua tb$(tbnn)cmplete.lua
+#
+	# CADMUS/ link.
+	ln -s webdir/bypage ${tn}/CADMUS
+#
+	chgrp -R tub ${tn}

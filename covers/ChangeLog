@@ -1,3 +1,9 @@
+2025-10-15  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (cover1.pdf): coverdrawing.pdf for 46:3.
+	(copynext): might as well create webdir/bypage/upload,
+	and link CADMUS.
+
 2025-08-19  Karl Berry  <karl@freefriends.org>
 
 	* tbcomplete.lua: rename to tbcmplete.lua.

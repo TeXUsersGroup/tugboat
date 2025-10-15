@@ -1,3 +1,8 @@
+2025-10-15  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\eTeX): give warning about needing amsmath if bold.
+	(\OpTeX): \texorpdfstring.
+
 2025-09-20  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.bbx: new file, mostly from Marei Peischl.

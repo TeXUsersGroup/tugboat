@@ -11,9 +11,13 @@ ckurls () {
   wget -i- -nv --no-check-cert --wait=1 --timeout=8 --tries=0 --spider \
        --user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0" \
        --referer=https://$mydomain \
-       2>&1
-  test $exit_status -eq 0 && exit_status=$?
+       2>&1 \
+  | tee /dev/stderr # so we get output as it goes along
+  test $exit_status -eq 0 || exit_status=$?
 }
+
+# can't do this since then sed waits for the whole input.
+#  | sed -e 's/^.* URL: //' -e 's/:$//' \
 
 for f in "$@"; do
   if test "x$f" = x--file; then
@@ -48,8 +52,7 @@ for f in "$@"; do
   fi
 done | tee /tmp/ckurl.in \
 | ckurls \
-| sed -e 's/^.* URL: //' -e 's/:$//' \
-| tee /tmp/ckurl
+>/tmp/ckurl
 
 exit $exit_status
 

@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2025-09-20 v2.34
+                   [2025-10-15 v2.34
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -741,6 +741,7 @@
 \DeclareRobustCommand{\eTeX}{%
   \ifx\f@series\bfseries@rm
     \ifx\boldsymbol\undefined % \boldsymbol is from amsmath; also support bm?
+      \TBWarning{bold varepsilon for \string\eTeX\space not available; load amsmath}%
       \TUBdefaulteTeX
     \else
       \ensuremath{\boldsymbol{\varepsilon}}\mbox{-}\kern-.125em\TeX
@@ -846,7 +847,7 @@
 \DeclareRobustCommand{\OOXML}{\acro{OOXML}}
 \DeclareRobustCommand{\OTF}{\acro{OTF}}
 \DeclareRobustCommand{\OTP}{\OMEGA\acro{TP}}
-\DeclareRobustCommand{\OpTeX}{Op\kern-.05em\TeX}
+\DeclareRobustCommand{\OpTeX}{\texorpdfstring{Op\kern-.05em\TeX}{OpTeX}}
 %    \end{macrocode}
 %    \begin{macrocode}
 \def\Pas{Pascal}
