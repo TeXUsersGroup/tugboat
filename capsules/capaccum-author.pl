@@ -184,16 +184,25 @@ START_TITLE_GROUP
   }
 }
 
+
+# Convert author name to a simplified HTML id string.
+# 
 sub author_to_id {
   my ($canonical_author) = @_;
 
   # html to plain text.
   my $a_id = &xlate_html2txt ($canonical_author);
   
-  # remove all but alphanumeric, comma, period, and & (special case to
+  # remove all but alphanumeric, comma, and & (special case to
   # detect untranslated entities -- should be none).
-  # which are useful for authors.
-  $a_id =~ s![^a-zA-Z0-9&,.]!!g;
+  $a_id =~ s![^a-zA-Z0-9&,]!!g;
+  
+  # we remove periods since url-detectors will typically (and desirably)
+  # remove a period at the end of a url in plain text, figuring it
+  # belongs to the containing sentence. And then it looks weird/wrong to
+  # keep a preceding period, as in "Williams,PeterK.G" resulting from
+  # "Peter K.G. Williams"; "Williams,PeterKG" is better.
+  $a_id =~ s/\.+$//;
   
   return $a_id;
 }

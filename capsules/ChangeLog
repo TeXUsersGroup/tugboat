@@ -1,5 +1,10 @@
 2025-10-15  Karl Berry  <karl@freefriends.org>
 
+	* capaccum-author.pl (author_to_id): also remove periods,
+	so we don't end up with periods at the end of urls; they'll
+	typically be excluded from url detection in plain text (and that's
+	a good thing).
+
 	* lists-unifications.txt (Poore): with initial.
 	* tb130capsule.txt (hyf): %replace|Hyphenation.
 	* tb47capsule.txt (complete): wrong issue ident.
