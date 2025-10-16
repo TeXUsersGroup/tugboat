@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2025-10-15 v2.34
+                   [2025-10-16 v2.34
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -303,16 +303,29 @@
 \providecommand{\@tugclass}{ltugboat}
 %    \end{macrocode}
 %
-% Warnings/error messages/information messages\Dash if we're using
-% \LaTeXe{} we can use the \cs{Class*} commands:
+% Errors/warnings/information messages\Dash if we're using
+% \LaTeXe{} we can use the \cs{Class*} commands. \cs{tbdebug} is
+% different from all the others, intended for temporary debugging
+% messages (hence the all-lowercase name); they're started with
+% \texttt{***} at the beginning of a line to make them stand out, and be
+% parsable, e.g.\ by \texttt{texfot}(1).
 %
 %    \begin{macrocode}
-\def\TBInfo{\ClassInfo{\@tugclass}}
 \def\TBError{\ClassError{\@tugclass}}
 \def\TBWarning{\ClassWarning{\@tugclass}}
 \def\TBWarningNL{\ClassWarningNoLine{\@tugclass}}
+\def\TBInfo{\ClassInfo{\@tugclass}}
+\def\tbdebug#1{\message{^^J*** #1}}
 %    \end{macrocode}
 %
+% Unfortunately, \LaTeX's \cs{loggingall} does not turn off
+% tracingonline. And \texttt{microtype} outputs useless verbose
+% expansions to the terminal after \cs{loggingall}. So make our own:
+%    \begin{macrocode}
+\def\tbloggingall{\loggingall \tracingonline=0 }
+%    \end{macrocode}
+%
+% 
 % Class options: |draft| vs.\ |preprint| vs.\ |final|.
 %
 %    \begin{macrocode}
@@ -1930,11 +1943,12 @@
 % and \cs{PersonalURL<n>} and \cs{ORCID<n>} commands set up for each article.
 %
 % \begin{description}
-% \item[\emph{Comment:}] I would like to make provision for several
+% \item[\emph{Comment:}] [RF] I would like to make provision for several
 %   authors at the same address, but (short of preempting the |*|
 %   marker, which it would be nice to retain so as to preserve
 %   compatibility with the |plain| style) I'm not sure how one would
-%   signal it.
+%   signal it. [KB] Current kludges for multiple author affiliations
+%   in tb143rishi-xml-first, tb140rishi-elsarticle, tb128ruckert-hint, etc.
 % \end{description}
 %    \begin{macrocode}
 \def\theauthor#1{\csname theauthor#1\endcsname}
@@ -2033,11 +2047,12 @@
       \thenetaddress{\number\authornumber}\\
       \thePersonalURL{\number\authornumber}\\
       \theORCID{\number\authornumber}\\
-    \else
 %    \end{macrocode}
-% \cs{authornumber}$\ge0$, so we are in the body of an ordinary
-% article
+%
+% \cs{authornumber}$\ge0$, so we are in the body of an ordinary article:
+%
 %    \begin{macrocode}
+    \else
       \count@=0
       \loop
         \ifnum\count@<\authornumber
@@ -2231,29 +2246,52 @@
      {\protect\NetAddrChars\net
       \ignorespaces#1\unskip}}%
   \endgroup
-  }
+}
 %    \end{macrocode}
 %
-% \cs{personalURL} is in essence the same as \cs{netaddress}, apart
-% from (1) the lack of the eccentric optional argument, and (2) the
-% activation of `|/|'.
+% We \cs{personalURL} quite differently from \cs{netaddress}: it
+% is set up to simply call \cs{tburl}, which makes a live link if
+% possible, and also removes a leading protocol. Thus the argument has
+% to be a true url, not just a random string, but that restriction seems
+% ok to get the benefits. Since \cs{tburl} handles all the catcoding, no
+% need to do any of that here.
 %
 %    \begin{macrocode}
-\def\personalURL{\begingroup
-  \@sanitize\makespace\ \makeactive\@
-  \makeactive\.\makeactive\%\makeactive\/\@personalURL}%
-\def\@personalURL#1{%
-  \ProtectNetChars
+\def\personalURL#1{%
+  % define \cs{thePersonalURL}\meta{n} for author \meta{n}'s \personalURL.
   \expandafter\protected@xdef
     \csname thePersonalURL\number\authornumber\endcsname{%
       \protect\leavevmode
-      {%
-        \protect\URLchars\net
-        \ignorespaces#1\unskip
-      }%
-    }%
-  \endgroup
-  }
+      \ignorespaces
+      \protect\tburl{#1}%
+      \unskip
+  }%
+}
+%    \end{macrocode}
+%
+% Previously: \cs{personalURL} was similar to \cs{netaddress}, apart
+% from (1) the lack of the eccentric optional argument, (2) the
+% activation of `|/|'. This is the old definition, no longer used (left
+% here just for posterity); new definition is just above.
+%
+%\def\personalURL{\begingroup
+%  \@sanitize\makespace\ \makeactive\@%
+%  \makeactive\.\makeactive\%\makeactive\/%
+%  \@personalURL}%
+%\def\@personalURL#1{%
+%  \ProtectNetChars
+%  % define \cs{thePersonalURL}\meta{n} for author \meta{n}.
+%  \expandafter\protected@xdef
+%    \csname thePersonalURL\number\authornumber\endcsname{%
+%      \protect\leavevmode
+%      {%
+%        \protect\URLchars
+%        \net
+%        \ignorespaces\protect\tburl{#1}\unskip
+%      }%
+%    }%
+%  \endgroup
+%}
 %    \end{macrocode}
 %
 % Define the activation mechanism for `|@|', `|%|', `|.|'  and `|/|', for use

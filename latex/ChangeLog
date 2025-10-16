@@ -1,3 +1,11 @@
+2025-10-16  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\personalURL): rewrite to simply call \tburl
+	for live links and leading https:// removal.
+	(\tbdebug): new macro to output a *** message on a new line.
+	(\tbloggingall): new macro for \loggingall + \tracingonline=0
+	to silence microtype messages to terminal.
+
 2025-10-15  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\eTeX): give warning about needing amsmath if bold.
