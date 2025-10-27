@@ -1,11 +1,21 @@
 $Id$
 This file records noteworthy changes.  This file is public domain.
 
+2.35 (2025-10-27):
 ltugboat.cls:
 - new abbreviation \PDFUA, for \acro{PDF/UA}.
 - for \BibTeX and \BibLaTeX, allow hyphenation after the "Bib".
+- if hyperref is loaded, \personalURL will make a live link.
+- more \texorpdfstring in logos to placate hyperref.
+- new debugging command \tbloggingall, since \loggingall does not set
+  \tracingonline=0, and microtype outputs a plethora of messages.
+- new debugging command \tbdebug to write a \message on a new line.
+
 tugboat.bst:
-- always use the key field for sorting, if it's non-empty. For all entry types.
+- always use the key field for sorting, if it's non-empty; for all entry types.
+
+ltubguid.ltx:
+- mention that listings does not easily support code points above 255.
 
 -----------------
 2.34 (2024-10-29):
