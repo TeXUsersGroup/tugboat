@@ -2,6 +2,9 @@
 # $Id$
 # Extract names and addresses of authors from source files.
 # Run when an issue is done, send to office for inclusion on mailing list.
+# 26oct25 no longer functional, since we don't include the %%% lines any
+# more; works better to manually copy all addresses (both physical and
+# email) to Status.txt and to the database, as we first process each article.
 
 origpwd=`pwd`
 for d in "$@"; do
@@ -31,17 +34,8 @@ for d in "$@"; do
   elif echo $d | grep '^hagen-' >/dev/null; then
     echo; echo $d:; echo "  Hans Hagen"
     continue
-  elif echo $d | grep '^heff-' >/dev/null; then
-    echo; echo $d:; echo "  Jim Hefferon"
-    continue
-  elif echo $d | grep '^mitt-' >/dev/null; then
-    echo; echo $d:; echo "  Frank Mittelbach"
-    continue
   elif echo $d | grep '^wright-' >/dev/null; then
     echo; echo $d:; echo "  Joseph Wright"
-    continue
-  elif echo $d | grep '^walden-' >/dev/null; then
-    echo; echo $d:; echo "  David Walden"
     continue
   fi
   

@@ -1,3 +1,11 @@
+2025-10-27  Karl Berry  <karl@freefriends.org>
+
+	* check-splice-tub: recognize \tbnn <ident>, used for
+	bigelow-mosley splice in tb144beet. No need for $|.
+	* tubauthoraddrs: no more heff- or mitt- author idents;
+	script not especially useful anymore without changing the parsing,
+	since no more metadata flags.
+
 2025-10-15  Karl Berry  <karl@freefriends.org>
 
 	* check-urls-tub: save nonzero exit_status, and get incremental output.
