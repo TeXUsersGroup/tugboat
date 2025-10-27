@@ -1,3 +1,12 @@
+2025-10-27  Karl Berry  <karl@freefriends.org>
+
+        * tb144capsule.txt: new file for 46:3.
+	* Makefile (testiss,lastiss,crossref_iss): 144.
+	* capaccum.pl (@category_expected): add "Surveys".
+	* lists-translations.pl (\TB\ ): The TeXbook; seems there's
+	no good way to handle a macro at the end of a title (followed by }).
+	I guess a useless space would suffice. Don't bother.
+
 2025-10-15  Karl Berry  <karl@freefriends.org>
 
 	* capaccum-author.pl (author_to_id): also remove periods,

@@ -292,6 +292,7 @@ sub accumulation_check {
        'Supplement',
        'Supplements',
        'Survey',
+       'Surveys',
        'TUG 1991 Conference Proceedings Part 1',
        'TUG 1991 Conference Proceedings Part 2',
        # all TUG 20\d\d accepted below, as a special case
@@ -357,7 +358,7 @@ sub accumulation_check1 {
       next;
     } else {
       # Check for unwittingly introducing new difficulties or categories.
-      warn "$what unexpected: $k\n";    
+      warn "$what unexpected: $k";
     }
   }
   
