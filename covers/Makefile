@@ -119,7 +119,7 @@ check ck:
 
 # 
 tbnn := $(shell expr $(tbn) + 1)
-pdir := ../../httpd/html/TUGboat/production/`basename $(tn)`
+pdir := ../../httpd/html/TUGboat/production/$(shell basename $(tn))
 
 # to set up directory for following issue (= $tn envvar).
 copynext:
@@ -131,15 +131,13 @@ copynext:
 	yes n | (cd .. && cp -ai *.* *tub* Makefile ${tn}/) # not Status.txt
 #
 	# production dir.
-	cd .. && mkdir -m 2775 ${pdir}/bypage/upload
-	cd .. && ln -s ${pdir} ${tn}/webdir
+	cd .. && mkdir -p -m 2775 ${pdir}/bypage/upload
+	cd .. && ln -sf ${pdir} ${tn}/webdir
 #
-	# covers/ subdir.
+	# covers/ subdir, most are symlinks into svn-covers.
 	cp -ai Makefile *.tex tugboat.* word-* press2.pdf svn-covers \
 	       ${tn}/covers/
 	cd ${tn}/covers && rename s/$(tbn)/$(tbnn)/ *
-	cd ${tn}/covers && rm -f tb*complete.lua
-	cd ${tn}/covers && cp -ai svn-covers/tbcmplete.lua tb$(tbnn)cmplete.lua
 #
 	# CADMUS/ link.
 	ln -s webdir/bypage ${tn}/CADMUS
