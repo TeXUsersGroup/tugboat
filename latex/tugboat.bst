@@ -702,9 +702,16 @@ FUNCTION {format.date}
     { month empty$
         'year
         { format.month
-          monthtie empty$ not
+          % tie months by default, since we use abbrevs.
+          % If monthtie is set to 0, do not tie.
+          monthtie empty$
             { "~" }
-            { " " }
+            { 
+              monthtie "0" = 
+                { " " } 
+                { "~" } 
+              if$
+            }
           if$
           *
           year *
@@ -778,8 +785,8 @@ FUNCTION {format.edition}
 { edition empty$
     { "" }
     { output.state mid.sentence =
-        { edition "l" change.case$ " ed." * }
-        { edition "t" change.case$ " ed." * }
+        { edition "l" change.case$ "~ed." * }
+        { edition "t" change.case$ "~ed." * }
       if$
     }
   if$
@@ -1198,7 +1205,7 @@ FUNCTION {output.bibitem}
 % Wrapper for fin.entry.original
 FUNCTION {fin.entry}
 { output.web.refs  % urlbst
-  makeinlinelink       % ooops, it appears we didn't have a title for inlinelink
+  makeinlinelink       % oops, it appears we didn't have a title for inlinelink
     { possibly.setup.inlinelink % add some artificial link text here, as a fallback
       linktextstring output.nonnull }
     'skip$

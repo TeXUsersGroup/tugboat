@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2025-10-27 v2.35
+                   [2025-11-10 v2.35
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -79,7 +79,7 @@
 % both plain \TeX\ and \LaTeXe.
 % \subsection{Summary of control sequences}
 %
-% Abbreviations.  Just a listing with indications of expansion where
+% A few of the abbreviations we define, with indications of expansion where
 % that may not be obvious.  For full definitions, see real code below
 % (Section~\ref{abbr-logo}).
 %
@@ -722,7 +722,7 @@
 \def\bfBibLaTeX{\texorpdfstring{\bfBib\LaTeX}{BibLaTeX}}
 %
 \def\BSD{\acro{BSD}}
-\def\CandT{\textsl{Computers \& Typesetting}}
+\def\CandT{\textsl{Computers~\& Typesetting}}
 % must not define \CJK, because the CJK package does.
 %    \end{macrocode}
 % We place our \cs{kern} after \cs{-} so that it disappears if the
@@ -895,7 +895,7 @@
 \def\TANGLE{\texttt{TANGLE}\@}
 \def\TB{\textsl{The \TeX\-book}}
 \def\TIFF{\acro{TIFF}}
-\def\TP{\textsl{\TeX:\ The Program\/}}
+\def\TP{\textsl{\TeX:\ The Program}}
 \DeclareRobustCommand{\TeX}{T\kern-.1667em\lower.424ex\hbox{E}\kern-.125emX\@}
 \def\TeXhax{\TeX hax}
 \def\TeXMaG{\TeX M\kern-.1667em\lower.5ex\hbox{A}%
@@ -1050,8 +1050,13 @@
 % normal definition to reset in individual papers with, e.g.:
 % |\ifx\tubdots\undefined \else \let\dots\tubdots \let\ldots\tubdots \fi|
 % 
+% The |plain.tex| definition does not have the small space before the
+% first dot, but that space makes the result look better in cases like
+% |[\tubdots]| where something other than a space comes before the ellipsis.
+%
 %    \begin{macrocode}
 \DeclareRobustCommand{\tubdots}{\ifmmode\mathellipsis\else
+    \kern\fontdimen3\font % space before first dot
    .\kern\fontdimen3\font
    .\kern\fontdimen3\font
    .\kern\fontdimen3\font\fi}
@@ -3658,13 +3663,14 @@
 % \begin{macro}{\SetBibJustification}
 % \begin{macro}{\TB@@sloppy}
 % \cs{BibJustification} defines how the bibliography is to be
-% justified.  The Lamport default is simply ``\cs{sloppy}'', but we
-% regularly find some sort of ragged right setting is appropriate.
+% justified.  The Lamport default is ``\cs{sloppy}'', but we
+% find some sort of ragged right setting is almost always preferred,
+% so (as of 2025) make that the default.
 % (\cs{BibJustification} is nevertheless reset to its default value at
 % the start of a paper.)
 %    \begin{macrocode}
 \let\TB@@sloppy\sloppy
-\let\BibJustification\TB@@sloppy
+\let\BibJustification\raggedright
 \newcommand{\SetBibJustification}[1]{%
   \renewcommand{\BibJustification}{#1}%
 }

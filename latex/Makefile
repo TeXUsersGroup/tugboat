@@ -84,7 +84,8 @@ checkbib: ltugboat.cls tugboat.bst tubib.bib
 	$(pdflatex) tubib && bibtex tubib && $(pdflatex) tubib.tex
 
 clean:
-	rm -f *.log *.aux *.out *.toc *.pdf *.dvi *.bbl *.blg *.html
+	rm -f *.log *.aux *.out *.toc *.pdf *.dvi *.bbl *.blg *.html *.hd
+	rm -f *.bcf *.run.xml
 
 # 
 tubabbrs.pdf abbr: tubabbrs.tex tubabbrs.lst ltugboat.cls

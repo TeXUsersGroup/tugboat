@@ -1,3 +1,9 @@
+2025-11-10  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst: tie months and "ed." by default.
+
+	* Makefile (clean): more.
+
 2025-10-27  Karl Berry  <karl@freefriends.org>
 
 	* version 2.35 (2025-10-27) uploaded to CTAN.

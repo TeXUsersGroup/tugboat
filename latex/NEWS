@@ -1,6 +1,14 @@
 $Id$
 This file records noteworthy changes.  This file is public domain.
 
+ltugboat.cls:
+- typeset bibliographies with \raggedright by default.
+- \tubdots: intra-dot space also before first dot.
+
+tugboat.bst:
+- use a tie after month abbreviations by default (monthtie=0 to override).
+- use a tie after edition numbers, like "1st~ed.".
+
 2.35 (2025-10-27):
 ltugboat.cls:
 - new abbreviation \PDFUA, for \acro{PDF/UA}.
