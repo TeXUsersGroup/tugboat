@@ -15,9 +15,10 @@ capin		read tb*capsule.tex files, plus some whole-issue conversions.
 capout		output contents*.html files.
 caputil		debugging fns, etc.
 
-capdata-rx	handle data file lists-regexps.txt.
-capdata-unify	handle lists-unifications.txt.
-capdata-xlate	handle lists-translations.txt.
+capdata-authinfo handle data file lists-authinfo.txt.
+capdata-rx	 handle lists-regexps.txt.
+capdata-unify	 handle lists-unifications.txt.
+capdata-xlate	 handle lists-translations.txt.
 
 lists-authinfo      decorations for authors in Crossref.
 lists-regexps       Perl substitutions.
@@ -31,7 +32,7 @@ sequence of operations.
 Look at "todo:" and "qqq" items if you'd like to work on something.
 
 
-(later changes, and some early, in ChangeLog)
+(later changes, and some earlier, in ChangeLog)
 
 26jan19 check for pagenos lacking a range, update many capsule files.
 

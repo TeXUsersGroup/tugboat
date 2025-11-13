@@ -9,7 +9,7 @@ use strict; use warnings;
 # return list of results.
 # 
 sub normalize_whitespace {
-  my @args = @_; # we wants values, not references
+  my @args = @_; # we want values, not references
   my @ret = ();
   for my $str (@args) {
     $str =~ s/^\s*//s;

@@ -14,7 +14,7 @@ require "caputil.pl";
 my %authinfo = &read_authinfo (); # static hash
 
 # Public access function to take author STR and return a list of any
-# extra info for it -- usually nothing.
+# extra info for it -- usually nothing.  The author name is in 
 # 
 sub lists_authinfo {
   my ($str) = @_;
