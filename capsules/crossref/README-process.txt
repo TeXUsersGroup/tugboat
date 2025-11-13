@@ -18,6 +18,9 @@ Then, we'll work in the capsules/ directory:
 Follow steps in ~tubprod/README to create capsule file and do
 test processing.
 
+Be sure crossref_iss in capsules/Makefile is set to the current/desired
+issue, per ~tubprod/README.
+
 When it runs cleanly and as expected, systematically go through all
 items in the present issue, creating (by hand), under the main issue
 directory (~tubprod/VV-N), one or both of these files, as needed:
@@ -36,8 +39,15 @@ directory (~tubprod/VV-N), one or both of these files, as needed:
     key (the key ends up in issue.xml) and \end{thebibliography},
     because that's what our parsing looks for.
     (For wermuth articles, see replacements in ltx2crossrefxml-tugboat.cfg.)
-     \sl\TUB ->\sl \TUB  [since \TUB -> TUGboat replacement happens first]
-     etc.
+  . for BibLaTeX, the only method is to copy-and-paste from the output
+    pdf into bbl.tex. Latest attempt: tb144bien-typoglyphs.
+    . Some Unicode can get be lost, and have to be recovered manually.
+    . \bibitem commands have to be added manually.
+    . Structured citations cannot be created, since \citation and
+      \bibdata commands are not output. (ltx2crossref would have to be
+      changed to recognize what biblatex does, which is completely different.)
+    . The biblatex2bibitem package, which could help a little, apparently
+      does not currently work with Unicode.
 
 These {abs,bbl}.tex files stay in the TUGboat per-article source directories.
 
@@ -48,9 +58,6 @@ In addition to these, all .aux files and .bib files will be copied to
 the working dir (the .bib files in a subdir bib/). They are used to
 construct Crossref's structured citations. Might have to delete unused
 .aux files from authors, etc.
-
-Be sure crossref_iss in capsules/Makefile is set to the current/desired issue,
-per ~tubprod/README.
 
 Best to do this one article at a time, making sure each comes out ok.
 After creating the first abs/bbl.tex, run:
@@ -161,24 +168,38 @@ to check the generated dir2.process/issue.xml:
   grep the sources. Add any new ones to lists-authinfo.txt.
 - also check <citation_list>s and individual <citation>s for reasonableness.
 
-When all articles are done, and the issue.xml looks ok, can upload to
-crossref for them to validate it:
-  make upload-test  # in crossref subdirectory
+To test, upload dir2*/issue.xml to this obscure url, given to us by
+Crossref support (not sure if it is linked anywhere in their docs):
+  https://www.crossref.org/02publishers/parser.html
+It will report success or any errors online immediately.
 
-The result should be "batch submission was successfully received"; that
-just means the data was uploaded. Crossref will send email to
-doi-tugboat@tug.org when complete, which should happen within a few
-minutes. Can also check results online:
-  https://test.crossref.org -> Show my submission queue
-                           (or Show System Queue)
-
-When the result mail comes in, see <batch_data> summary element at end,
-should be all success. Browse through the rest, especially that all the
-<citation> elements were accepted. Fix and rerun as needed.
+---- this was the old method for testing, but as of 46:2 (2025) crossref
+     could not be bothered to update their test environment for the new
+     schema. Therefore testing has to be done in a different way; see above.
+     Hopefully test.crossref.org will be usable again eventually.
+-- When all articles are done, and the issue.xml looks ok, can upload to
+-- crossref for them to validate it:
+--   make upload-test  # in crossref subdirectory
+-- 
+-- The result should be "batch submission was successfully received"; that
+-- just means the data was uploaded. Crossref will send email to
+-- doi-tugboat@tug.org when complete, which should happen within a few
+-- minutes. Can also check results online:
+--   https://test.crossref.org -> Show my submission queue
+--                            (or Show System Queue)
+-- 
+-- When the result mail comes in, see <batch_data> summary element at end,
+-- should be all success. Browse through the rest, especially that all the
+-- <citation> elements were accepted. Fix and rerun as needed.
+---- end old testing info.
 
  After the test upload succeeds, good to copy the test landing files
-to the live web directory for tub-prod to check:
-(assuming we've been doing all this on a development machine):
+to the live web directory for tub-prod to check
+(assuming we've been doing all this on a development machine).
+
+First, run
+  make crw 
+to make landing pages that don't go through doi.org. Then:
   host=tug.org
   dir=/home/httpd/html/TUGboat/tb$VV-N; echo $dir
   ssh $host mkdir $dir                           # ensure directory exists
@@ -188,8 +209,11 @@ to the live web directory for tub-prod to check:
 Then check results at:
   https://tug.org/TUGboat/tbVV-N/tbnnnwhatever.html
 E.g.:
-  https://tug.org/TUGboat/tb46-2/tb143chest.html
-And email tub-prod.
+  https://tug.org/TUGboat/tb46-3/tb144chest.html
+And email tub-prod for them to check if they want.
+
+Good to make another interim commit of whatever needed to be changed in
+capsules/ (and crossrefware and bibtexperllibs) at this point.
 
 A few days before making the issue live, first remake the landing files
 so the doi links go through doi.org (i.e., not running "make crw"):
