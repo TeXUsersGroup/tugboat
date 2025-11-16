@@ -1,3 +1,8 @@
+2025-11-16  Karl Berry  <karl@freefriends.org>
+
+	* tb64capsule.txt (doumB): use .pdf rather than .ps;
+	report from Udo Wermuth.
+
 2025-11-13  Karl Berry  <karl@freefriends.org>
 
 	* crossref/ltx2crossrefxml-tugboat.cfg
