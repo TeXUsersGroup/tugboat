@@ -1,0 +1,10 @@
+The \texttt{luatikz3dtools} package (currently version 2.0.1) extends Ti\textit{k}Z with support
+for occlusion handling of tessellated \acro{3D} parametric objects.
+It introduces two main algorithms: a transitive partial order comparator
+for points, line segments, and triangles, and a minimal partitioning
+procedure that resolves tiles which are capable of partitioning one 
+another by subdividing them into fragments which are incapable of this. 
+Together these provide a framework for
+drawing \acro{3D} mathematics illustrations in \LaTeX{} with clear and
+unambiguous occlusion. The remaining obstacle is the problem of 
+resolving cyclic overlap, which is deferred to a later version.

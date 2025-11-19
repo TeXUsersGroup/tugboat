@@ -1,0 +1,15 @@
+It all started as an experiment. Keith, whilst aimlessly searching the
+Internet looking for inspiration for a generative art project, came across some
+nice random graphics using Perlin noise. Delving further he found that the
+creator of Perlin noise, Ken Perlin, was the recipient of an Oscar in 1996 for
+the development of Perlin noise, a technique used to produce natural appearing
+textures on computer generated surfaces for motion picture visual
+effects. Perlin
+originally developed the idea of pseudo-random noise whilst working on the
+computer graphics for the film {\em Tron} in 1982.
+
+This became the seed for thinking about creating interesting pseudo-random
+graphics using Perlin noise in \METAFUN, the graphical subsystem that \CONTEXT\
+provides. Here we will follow the steps that brought us native noise generation
+in \CONTEXT. It is a story about experimenting, getting hooked, exploring
+performance gain and eventually interfacing.

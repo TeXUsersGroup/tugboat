@@ -1,0 +1,17 @@
+In \CONTEXT\ we have several column mechanisms and each has its advantages and
+drawbacks. One is used for mixed single- and multicolumns. Another is exclusively
+for multi-columns and supports features that are otherwise not possible (or
+at least hard to do). There are other box-oriented column handlers. There is
+also so-called \quote {column sets}, a mechanism that targets magazine-like
+layouts. It supports explicit placements of elements, and dates from
+\MKII; it has
+been converted to \MKIV, but we can do better in \MKXL. It is this mechanism that
+we (Mikael and Hans) decided to improve.
+
+In the \MKII\ and \MKIV\ variant we mix placement of graphics with content but in
+\MKXL\ we also provide a way to do the placement beforehand. This is more
+reliable because we know that there is no content yet, so we can go back and
+forward. Because in that approach we know that we have only text, we thought that
+it would be nice if we could optimize the distribution of content over
+the available space. For that we added two features to \LUAMETATEX: main vertical
+list intercepting and balancing.

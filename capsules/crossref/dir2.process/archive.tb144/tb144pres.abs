@@ -1,0 +1,12 @@
+What makes the strength of \TeX\ is the versatility of its
+algorithms and its remarkable adaptability: precisely the opposite of a frozen
+program—which still exists and is useful for users who need such a feature.  I
+no longer believe tales of “my wife’s PhD thesis still compiles today
+\emph{exactly} like it did in the 80s”, but I know for a fact that if a
+30-year-old \TeX\ document were found anywhere, it would probably be
+straightforward to adapt it to a current distribution and have it compile to
+something that is very similar to the original output.  With other systems,
+this would hardly be possible, or require an expensive upgrade, or some other
+hurdle that would be hard to overcome.  That, not some (nonexistent)
+magical and all-encompassing backward compatibility, is the strength of \TeX.
+

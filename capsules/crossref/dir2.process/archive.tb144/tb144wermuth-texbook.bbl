@@ -1,0 +1,244 @@
+% this file is read twice
+%   first:  the shortcuts for the references are defined
+%   second: the list for references is output
+% start the file with \startbibrefs and end it with \par
+\startbibrefs\begingroup
+\ninepoint
+\def\newline{\hfil\break}%
+\raggedright \rightskip=0pt plus 20pt \emergencystretch=5pt
+\frenchspacing \tolerance=200 \hyphenpenalty=10000
+\def\URLaccessdate(#1){}% suppress ``accessed <date>'' info after URLs
+
+\bibitem{citePA} Paul Abrahams, ``Response to Victor Eijkhout'',
+  {\sl \TUB\ \bf12}:2 (1991), 302--303.\par
+  \biburl https://tug.org/TUGboat/tb12-2/tb32letters.pdf\endurl
+  \endbib(2025-05-19)
+
+\bibitem{citeAHB} Paul W. Abrahams, Kathryn A. Hargreaves, Karl Berry,
+   {\sl \TeX\ for the Impatient}, free edition, 2003.\vskip 2pt plus1pt minus .1pt
+   \Bibcont The latest edition (2020) and translations can be found under: \par
+   \biburl https://www.ctan.org/pkg/impatient\endurl
+   \endbib(2022-11-06)
+
+\bibitem{citeAB} Angela Barden, ``Some \TeX\ manuals'',
+   {\sl \TUB\ \bf12}:1 (1991), 166--170.\par
+   \biburl https://tug.org/TUGboat/tb12-1/tb31barden.pdf\endurl
+   \endbib(2024-11-03)
+
+\bibitem{citeDB} David Bausum, {\sl \TeX\ Reference Manual},
+    Norwell, Massachusetts: Kluwer Academic Publishers, 2002.\par
+    \biburl https://tug.org/utilities/plain/cseq.html\endurl
+    \endbib(2017-07-06)
+
+\bibitem{citeADB} Andrew Donald Booth, ``Review of {\sl Latex: a document
+   preparation system}'', (1990).\par
+%   \biburl https://dl.acm.org/doi/book/10.5555/63364\endurl
+   \biburl https://www.computingreviews.com/review/review_review.cfm?review_id=123336\endurl
+   \endbib(2024-12-14)
+
+\bibitem{citeWC} William R. Cheswick, ``A Permuted Index for \TeX\ and \LaTeX'',
+   {\sl\TUB\ \bf10}:4 (1989), 707--713.\par
+   \biburl https://tug.org/TUGboat/tb10-4/tb26cheswick.pdf\endurl
+   \endbib(205-06-06)
+% %%%%%
+\goodbreak
+% %%%%%
+
+\bibitem{citeMC} Malcolm Clark, {\sl A \plain\ \TeX\ Primer},
+   Oxford University Press, 1992.
+
+\bibitem{citeMD} Michael Doob, ``Of the Computer Scientist,
+   by the Computer Scientist, for the Computer Scientist'',
+   {\sl\TUB\ \bf10}:4 (1989), 533--539.\par
+   \biburl https://tug.org/TUGboat/tb10-4/tb26doob.pdf\endurl
+   \endbib(2025-06-06)
+
+\bibitem{citeVE} Victor Eijkhout, {\sl \TeX\ by Topic}\Dash A
+   \TeX nician's Reference,
+   \acro{DANTE} and Lehmanns, Berlin, 2014.\par
+   \Bibcont Errata: \par
+   \biburl https://www.dante.de/wp-content/uploads/2019/07/TexByTopic_Errata.pdf\endurl
+   \endbib(2024-11-25)\vskip 2pt minus 0.1pt
+   \Bibcont See also: \par
+   \biburl https://www.eijkhout.net/tex/tex-by-topic.html\endurl
+   \endbib(2024-11-25)\vskip 2pt minus .1pt
+   \Bibcont Latest version: \par
+   \biburl https://github.com/VictorEijkhout/tex-by-topic/blob/main/TeXbyTopic.pdf\endurl
+   \endbib(2025-10-10)
+
+\bibitem{citeEP} G\'erard G. Emch, Arnold K. Pizer, ``Letter to the editors'',
+   {\sl \TUB\ \bf1}:1 (1980), 22--23.\par
+   \biburl https://tug.org/TUGboat/tb01-1/tb01emch.pdf\endurl
+   \endbib(2024-12-11)
+
+\bibitem{citeRF} Richard Furuta, ``Review of {\sl \TeX\ and \MF,
+   New Directions in Typesetting\/} by D. E. Knuth'',
+%  {\sl \acro{IEEE} Computer Magazine \bf 16}:2 (1983), 125--126, and
+   {\sl Proceedings of the \acro{IEEE} \bf 71}:9 (1983), 1117--1118.\par
+\optionaltext2
+§  \biburl https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1457003\endurl
+§  \endbib(2025-09-17)
+\endoptionaltext
+
+\bibitem{citeHH} Hope Hamilton, ``Mastering \TeX\ with Templates'',
+   {\sl \TUB\ \bf10}:4 (1989), 541--548.\par
+   \biburl https://tug.org/TUGboat/tb10-4/tb26hamilton.pdf\endurl
+   \endbib(2025-06-06)
+% %%%
+%%  Boettner, E., & Hamilton, H. (1986). Definitive NCAR Index for TeX for
+%%  NCAR Scientists. University Corporation for Atmospheric Research.
+%   \par\Bibcont The Index: \par
+%   \biburl https://doi.org/10.5065/D6XS5SCK\endurl
+%   \endbib(2025-06-06)
+
+\bibitem{citeYH} Yannis Haralambous, ``\TeX\ as a path'',
+   {\sl \TUB\ \bf 39}:1 (2018), 8--15.\Bibcont\ \par
+   \biburl https://tug.org/TUGboat/tb39-1/tb121haralambous-knuth80.pdf\endurl
+   \endbib(2024-11-26)
+
+\bibitem{citeHrE} Amy Hendrickson, ``Review of {\sl \TeX\ by Topic}
+   by Victor Eijkhout'',
+   {\sl \acro{MAPS} \bf 8} (1992), 137--138.\par
+   \biburl https://www.ntg.nl/maps/08/27.pdf\endurl
+   \endbib(2025-05-17)
+
+\bibitem{citeAH} Alan Hoenig, {\sl \TeX\ Unbound\/}\Dash \LaTeX\
+   \& \TeX\ Strategies for Fonts, Graphics, \& More,
+   Oxford University Press,~1998.
+
+\bibitem{citetex} Donald E. Knuth, {\sl Tau Epsilon Chi,
+   a system for technical text}, Stanford Computer Science Report
+   {\it STAN-CS-78-675}, November 1978.
+
+\bibitem{citeTeXMF} Donald E. Knuth, {\sl \TeX\ and \MF:
+   New Directions in Typesetting}, Providence, Rhode Island: \AMS,
+   and Bedford, Massachusetts: Digital Press, 1979.\par
+\optionaltext2
+§  \biburl https://bitsavers.org/pdf/dec/_Books/_Digital_Press/Knuth_TeX_and_Metafont_New_Directions_in_Typesetting_1979.pdf\endurl
+§  \endbib(2025-04-24)
+\endoptionaltext
+
+\bibitem{citeCTvA} Donald E. Knuth, \TB,
+   Volume~A of \CandT, Boston,\newline Massachusetts: \AW, 1984.\par
+   \biburl https://www-cs-faculty.stanford.edu/~knuth/abcde.html\endurl
+   \endbib(2025-10-17)
+
+\bibitem{citeCTvB} Donald E. Knuth, \TP,
+   Volume~B of~\CandT, Boston,\newline Massachusetts: \AW, 1986.
+
+\bibitem{citeNET} Donald E. Knuth ``Notes on the Errors of \TeX'',
+   {\sl\TUB\ \bf10}:4 (1989), 529--531.\par
+   \biburl https://tug.org/TUGboat/tb10-4/tb26knut.pdf\endurl
+   \endbib(2024-12-16)
+
+\bibitem{citeDEKALS} Donald E. Knuth, ``Arthur Lee Samuel,\newline 1901--1990'',
+   {\sl \TUB\/ \bf11}:4 (1990), 497--498.\par
+   \biburl https://tug.org/TUGboat/tb11-4/tb30knut-samuel.pdf\endurl
+   \endbib(2024-11-03)
+% %%%
+%% This much longer biography does not contain more information about his \TeX\ work:
+%\bibitem{citeEAW} Eric A. Weiss, ``Eloge: Arthur Lee Samuel (1901--1990)'',
+%   {\sl\acro{IEEE} Annals of the History of Computing \bf14}:3 (1992), 55--69.\par
+%   \biburl https://ieeexplore.ieee.org/document/150082\endurl
+%   \endbib(2025-09-25)
+% %%%%%
+\par\penalty-600 % \goodbreak is too weak; used with activated optional text 2
+% %%%%%
+
+\bibitem{citeFTM} Donald E. Knuth, ``The Future of \TeX\ and\newline \MF'',
+   {\sl \TUB\ \bf 11}:4 (1990), 489.\par
+   \biburl https://tug.org/TUGboat/tb11-4/tb30knut.pdf\endurl
+   \endbib(2025-08-03)
+% %%%%%
+\goodbreak
+% %%%%%
+
+\bibitem{citeLP} Donald E. Knuth, {\sl Literate Programming},
+   CSLI Lecture Notes No. 27, 1992.
+
+\bibitem{citeCS} Donald E. Knuth, {\sl Selected Papers on Computer Science},
+   CSLI Lecture Notes No. 59, 1996.
+
+%\font\greek=kdgr9
+\bibitem{citeKE} Donald E. Knuth,
+% https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols
+% Qairetism'oc =
+%   Chi     alpha   iota    rho     epsilon tau     iota    sigma   mu
+%   \'omicron(with tonos) sigma(f)
+ ``{\x{03A7}\x{03B1}\x{03B9}\x{03C1}\x{03B5}\x{03C4}\x{03B9}\x{03C3}\x{03BC}\x{03CC}\x{03C2}
+% tou =
+%tau     omicron upsilon
+ \x{03C4}\x{03BF}\x{03C5}
+% kajhght'h = 
+%kappa   alpha   theta   eta     gamma   eta     tau     \'eta(with tonos)
+ \x{03BA}\x{03B1}\x{03B8}\x{03B7}\x{03B3}\x{03B7}\x{03C4}\x{03AE}
+  \rm Knuth}'',
+  {\sl Eutypon \bf 1} (1998), 2.\par
+  \biburl https://www.eutypon.gr/eutypon/pdf/e1998-01/e01-a00.pdf\endurl
+  \endbib(2025-05-15)
+
+\bibitem{citeDT} Donald E. Knuth, {\sl Digital Typography},
+   CSLI Lecture Notes No. 78, 1999.
+
+\bibitem{citeDA} Donald E. Knuth, {\sl Selected Papers on Design of Algorithms},
+   CSLI Lecture Notes No. 191, 2010.
+
+\bibitem{citeFG} Donald E. Knuth, {\sl Selected Papers on Fun \& Games},
+   CSLI Lecture Notes No. 192, 2011.
+
+\bibitem{citeCP} Donald E. Knuth, {\sl Companion to the Papers of Donald Knuth},
+   CSLI Lecture Notes No. 202, 2011.
+
+\bibitem{citeUXIV} Donald E. Knuth, ``The \TeX\ tuneup of 2014'',
+   {\sl \TUB\ \bf35}:1 (2014), 5--8.\par
+   \biburl https://tug.org/TUGboat/tb35-1/tb109knut.pdf\endurl
+   \endbib(2024-12-12)\vskip 3pt
+   \Bibcont See also the latest tune-up of 2021: \par
+   \biburl https://tug.org/TUGboat/tb42-1/tb130knuth-tuneup21.pdf\endurl
+   \endbib(2024-12-12)
+
+\bibitem{citeRK} Robin L. Kubek, ``\TeX\ for the Word Processing Operator'',
+   {\sl\TUB\ \bf10}:4 (1989), 561--566.\par
+   \biburl https://tug.org/TUGboat/tb10-4/tb26kubek.pdf\endurl
+   \endbib(2025-06-05)
+
+\bibitem{citeALS} Arthur L. Samuel, {\sl First Grade \TeX\/}\Dash A
+   Begin-\newline ner's \TeX\ Manual, Stanford Computer Science Report {\it
+   STAN-CS-83-985}, November 1983.\par
+   \biburl https://tug.org/texniques/tn11/firstgrade-all.pdf\endurl
+   \endbib(2025-02-16)
+
+\bibitem{citeSreport} Norbert Schwarz, {\sl Einf\"uhrung in \TeX},
+   Rechen-\newline zentrums-Schriften, Bd.\ 5, Rechenzentrum der
+   Ruhr-Universit\"at Bochum, 3rd ed., January 1987.
+
+\bibitem{citeSbook} Norbert Schwarz, {\sl Einf\"uhrung in \TeX}, 2nd ed.,
+   Bonn, Addison-Wesley (Deutschland), 1988.\vskip 2pt minus 0.pt
+   \Bibcont Third edition as \PDF: \par
+   \biburl https://www.ruhr-uni-bochum.de/TeX/einfuehrung-in-tex.pdf\endurl
+   \endbib(2025-02-16)
+
+\bibitem{citePS} Peter Seibel, {\sl Coders at work\/}\Dash Reflections on the
+   craft of programming, Apress, 2009.
+
+\bibitem{citeTrVE} Philip Taylor, ``Book review: {\sl \TeX\ by Topic\/}'',
+   {\sl \TUB\/ \bf13}:2 (1992), 185--188.\par
+   \biburl https://tug.org/TUGboat/tb13-2/tb35resources.pdf\endurl
+   \endbib(2024-11-08)
+   
+\bibitem{citeBV} Boris Veytsman, answer to the question
+   ``Learning \TeX\ via \TB'',
+   {\sl \TeX\,--\,\LaTeX.SE}, 2012.\par
+   \biburl https://tex.stackexchange.com/questions/51695/learning-tex-via-the-texbook/51702#51702\endurl
+   \endbib(2024-11-03)
+
+\bibitem{citeWoS} {\sl Web of Stories: Donald E. Knuth}\newline
+   Part 60: Writing a users' manual for \TeX.\par
+   % Volume E is dedicated to Martin Frost
+   \biburl https://www.webofstories.com/play/donald.knuth/60\endurl
+   \endbib(2024-11-05)\vskip 3pt
+   \bibcont Part 7: My sense of humor. \par
+   \biburl https://webofstories.com/play/donald.knuth/7\endurl
+   \endbib(2025-09-24)
+
+\end{thebibliography}

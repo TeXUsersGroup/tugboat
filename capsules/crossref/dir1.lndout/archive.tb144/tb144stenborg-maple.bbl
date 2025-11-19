@@ -1,0 +1,106 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{10}
+
+\bibitem{Al-Safi:TB37-1-25}
+S.~Al-Safi.
+\newblock Randomising assignments with {Sage\TeX}.
+\newblock \emph{TUGboat} 37(1):25--27, 2016.
+\newblock \url{https://tug.org/TUGboat/tb37-1/tb115alsafi.pdf}
+
+\bibitem{All:2023:LSC}
+T.~All, E.~Cochrane.
+\newblock {LuaCAS}: Symbolic computation in {\LaTeX}.
+\newblock \emph{TUGboat} 44(1):94--98, 2023.
+\newblock \url{https://doi.org/10.47397/tb/44-1/tb136all-luacas}
+
+\bibitem{Castier:TB25-2-166}
+M.~Castier, V.F.~Cabral.
+\newblock Automatic typesetting of formulas using computer algebra.
+\newblock \emph{TUGboat} 25(2):166--172, 2004.
+\newblock \url{https://tug.org/TUGboat/tb25-2/tb81castier.pdf}
+
+\bibitem{Chonacky:2005:CSE7-1-8}
+N.~Chonacky, D.~Winch.
+\newblock {Maple, Mathematica, and Matlab: The 3M's without the Tape}.
+\newblock \emph{Computing in Science \& Engineering}, 7(1):8--16, 2005.
+\newblock \url{https://doi.org/10.1109/MCSE.2005.18}
+
+\bibitem{Cuyt:2008:BookHdbkCFSF}
+A.~Cuyt, V.B.~Petersen, et~al.
+\newblock \emph{Handbook of Continued Fractions for Special Functions}.
+\newblock Springer, Dordrecht, 2008.
+\newblock \newline \url{https://doi.org/10.1007/978-1-4020-6949-9}
+
+\bibitem{Earl:2021:BookCODM}
+R.~Earl, J.~Nicholson.
+\newblock \emph{The Concise Oxford Dictionary of Mathematics}.
+\newblock Oxford University Press, Oxford, sixth ed., 2021.
+\newblock \url{https://doi.org/10.1093/acref/9780198845355.001.0001}
+\newpage
+\bibitem{Erocal:2010:ICMS2010-12}
+B.~Er{\"o}cal, W.~Stein.
+\newblock {The Sage Project: Unifying Free Mathematical Software to Create a
+  Viable Alternative to Magma, Maple, Mathematica and MATLAB}.
+\newblock In \emph{\unskip~Mathematical Software -- ICMS 2010}, K.~Fukuda,
+  J.~van~der Hoeven, et~al., eds., pp.~12--27, Berlin, 2010. Springer.
+\newblock \url{https://doi.org/10.1007/978-3-642-15582-6_4}
+
+\bibitem{Fox:2020:BookAPSUM}
+W.P.~Fox, W.C.~Bauldry.
+\newblock \emph{Advanced Problem Solving Using Maple}.
+\newblock CRC Press, Boca Raton, FL, 2020.
+\newblock \url{https://doi.org/10.1201/9780429469626}
+
+\bibitem{Henderson:TB28-1-84}
+T.~Henderson.
+\newblock A beginner's guide to MetaPost for creating high-quality graphics.
+\newblock \emph{TUGboat} 28(1):84--90, 2007.
+\newblock \url{https://tug.org/TUGboat/tb28-1/tb88henderson.pdf}
+
+\bibitem{Joshi:TB32-3-269}
+M.~Joshi.
+\newblock A dream of computing and {\LaTeX}ing together: A reality with
+  {Sage\TeX}.
+\newblock \emph{TUGboat} 32(3):269--271, 2011.
+\newblock \newline \url{https://tug.org/TUGboat/tb32-3/tb102joshi.pdf}
+
+\bibitem{Klimek:1997:BookDCSM}
+G.~Klimek, M.~Klimek.
+\newblock \emph{Discovering Curves and Surfaces with Maple}.
+\newblock Springer, New York, NY, 1997.
+\newblock \url{https://doi.org/10.1007/978-1-4612-1826-5}
+
+\bibitem{Liengme:2019:BookMaple}
+B.V.~Liengme.
+\newblock \emph{Maple}.
+\newblock Morgan \& Claypool, 2019.
+\newblock \url{https://doi.org/10.1088/2053-2571/ab0bb3}
+
+\bibitem{Luczak:TB29-1-164}
+T.~{\L}uczak.
+\newblock {\LyX}: An editor not just for secretaries.
+\newblock \emph{TUGboat} 29(1):164--165, 2008.
+\newblock \url{https://tug.org/TUGboat/tb29-1/tb91luczak-lyx.pdf}
+
+\bibitem{Mertz:TB34-3-302}
+A.~Mertz, W.~Slough.
+\newblock A gentle introduction to {Python\TeX}.
+\newblock \emph{TUGboat} 34(3):302--312, 2013.
+\newblock \url{https://tug.org/TUGboat/tb34-3/tb108mertz.pdf}
+
+\bibitem{Zelen:1965:InCollectionHdbkMathFunc}
+M.~Zelen, N.C.~Severo.
+\newblock {Probability Functions}.
+\newblock In \emph{Handbook of Mathematical Functions: with Formulas, Graphs,
+  and Mathematical Tables}, M.~Abramowitz, I.A.~Stegun, eds., pp.~925--995.
+  Dover, New York, ninth, revised ed., 1965.
+
+\bibitem{Zwillinger:2018:BookCRC}
+D.~Zwillinger, ed.
+\newblock \emph{CRC Standard Mathematical Tables and Formulas}.
+\newblock CRC Press, Boca Raton, FL, thirty-third ed., 2018.
+\newblock \url{https://doi.org/10.1201/9781315154978}
+
+\end{thebibliography}

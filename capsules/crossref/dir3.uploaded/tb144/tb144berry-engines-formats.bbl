@@ -1,0 +1,210 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{10}
+
+\bibitem{etex-start}
+P.~Breitenlohner.
+\newblock \emph{\textsl{\texttt{etex.ch}}}, Mar. 1998.
+\newblock \url{mirrors.ctan.org/obsolete/systems/e-tex/v2/web/etex.ch}
+
+\bibitem{chernoff-engines}
+M.~Chernoff.
+\newblock Comparing \tex{} engines and formats.
+\newblock Presentation at TUG'22. Slides:
+  \url{https://tug.org/tug2022/assets/served/Max_Chernoff-TUG2022-chernoff-engines-slides.pdf}.
+  Video:\gobble.
+\newblock \url{https://youtube.com/watch?v=MNdAoza8VHU}
+
+\bibitem{latex-firstmention}
+D.~Fuchs.
+\newblock News from all over.
+\newblock \emph{TUGboat} 4(1):14--15, Apr. 1983.
+\newblock \url{tug.org/TUGboat/tb04-1/tb07site.pdf}
+
+\bibitem{tex82-start}
+D.~Fuchs.
+\newblock News from the {\TeX} project.
+\newblock \emph{TUGboat} 5(1):22--23, May 1984.
+\newblock \url{tug.org/TUGboat/tb05-1/tb09site.pdf}
+
+\bibitem{Hagen:TB25-1-48}
+H.~Hagen.
+\newblock {The state of \ConTeXt}.
+\newblock \emph{TUGboat} 25(1):48--51, 2004.
+\newblock \url{https://tug.org/TUGboat/tb25-1/hagen-context.pdf}
+
+\bibitem{Hagen:TB26-2-152}
+H.~Hagen.
+\newblock {{\LuaTeX: Howling to the moon}}.
+\newblock \emph{TUGboat} 26(2):152--157, 2005.
+\newblock \url{https://tug.org/TUGboat/tb26-2/hagen.pdf}
+
+\bibitem{Hagen:TB27-2-219}
+H.~Hagen.
+\newblock \acro{MKII}--\acro{MKIV}.
+\newblock \emph{TUGboat} 27(2):219--227, 2006.
+\newblock \url{https://tug.org/TUGboat/tb27-2/tb87hagen-context.pdf}
+
+\bibitem{luametatex-start}
+H.~Hagen.
+\newblock {\ConTeXt} \acro{LMTX}.
+\newblock \emph{TUGboat} 40(1):34--37, May 2019.
+\newblock \url{tug.org/TUGboat/tb40-1/tb124hagen-lmtx.pdf}
+
+\bibitem{hagen-jcl}
+H.~Hagen.
+\newblock Lua in \tex.
+\newblock \emph{Journal of Computer Languages}, 85:101354, 2025.
+\newblock \newline \url{https://doi.org/10.1016/j.cola.2025.101354}
+
+\bibitem{omega-start}
+Y.~Haralambous, J.~Plaice.
+\newblock {First applications of \Omega: Adobe Poetica, Arabic, Greek,
+  Khmer}.
+\newblock \emph{TUGboat} 15(3):344--352, Sept. 1994.
+\newblock \url{tug.org/TUGboat/tb15-3/tb44haralambous-omega.pdf}
+
+\bibitem{notices}
+J.~Hefferon, K.~Berry.
+\newblock The {\TeX} family in 2009.
+\newblock \emph{Notices of the AMS}, 56(3):348--354, Mar. 2009.
+\newblock \url{https://tug.org/notices/}
+
+\bibitem{luatex-start}
+T.~Hoekwater.
+\newblock {\LuaTeX}.
+\newblock \emph{TUGboat} 28(3):312--313, Sept. 2007.
+\newblock \url{tug.org/TUGboat/tb28-3/tb90hoekwater-luatex.pdf}
+
+\bibitem{context-first}
+T.~Hoekwater.
+\newblock {\ConTeXt}: A short history in 2^4 parts, Mar. 2007.
+\newblock \url{meeting.contextgarden.net/2007/share/taco/history.pdf}
+
+\bibitem{xetex-start}
+J.~Kew.
+\newblock {{\XeTeX, the Multilingual Lion: {\TeX} meets {Unicode} and smart
+  font technologies}}.
+\newblock \emph{TUGboat} 26(2):115--124, Nov. 2005.
+\newblock \url{tug.org/TUGboat/tb26-2/kew.pdf}
+
+\bibitem{texxet}
+D.~Knuth, P.~MacKay.
+\newblock Mixing right-to-left texts with left-to-right texts.
+\newblock \emph{TUGboat} 8(1):14--25, Apr. 1987.
+\newblock \url{tug.org/TUGboat/tb08-1/tb17knutmix.pdf}
+
+\bibitem{tex78}
+D.E.~Knuth.
+\newblock \emph{{\TeX} and {\MF}}.
+\newblock Digital Press, Bedford, Ma, Aug. 1979.
+
+\bibitem{ptex-name}
+D.E.~Knuth.
+\newblock {\TeX} and {\MF}: Errata and changes.
+\newblock \emph{TUGboat} 4(2):Supplement, Sept. 1983.
+\newblock \url{tug.org/TUGboat/tb04-2/texmferr-09sep1983.pdf}
+
+\bibitem{tex-3}
+D.E.~Knuth.
+\newblock The new versions of {\TeX} and {\MF}.
+\newblock \emph{TUGboat} 10(3):325--328, Nov. 1989.
+\newblock \url{tug.org/TUGboat/tb10-3/tb25knut.pdf}
+
+\bibitem{luametalatex}
+M.~Krüger.
+\newblock {LuaMeta\LaTeX}, July 2022.
+\newblock \url{github.com/zauguin/luametalatex}
+
+\bibitem{latex-earliest}
+L.~Lamport.
+\newblock \texttt{latex.tex}, Mar. 1983.
+\newblock
+  \url{ftp.math.utah.edu/pub/tex/historic/macros/latex-saildart/latex-0.90/latex.tex}
+
+\bibitem{latex-209end}
+L.~Lamport.
+\newblock Announcement of {\LaTeX} version 2.09.
+\newblock \emph{TUGboat} 6(3):150--151, Nov. 1985.
+\newblock \url{tug.org/TUGboat/tb06-3/tb13lamport.pdf}
+
+\bibitem{xLPT:TB30-1-10}
+{\gobble{LaTeX}{\LaTeX{} Project Team}}.
+\newblock {{\LaTeX3}} news, issues 1--2.
+\newblock \emph{TUGboat} 30(1):105--106, 2009.
+\newblock \url{https://tug.org/TUGboat/tb30-1/tb94l3news.pdf}
+
+\bibitem{xLPT:2017:LNIa}
+{\gobble{LaTeX}{\LaTeX{} Project Team}}.
+\newblock {\LaTeX} news, issue 26, {January 2017}.
+\newblock \emph{TUGboat} 38(1):54--55, 2017.
+\newblock \url{https://tug.org/TUGboat/tb38-1/tb118ltnews26.pdf}
+
+\bibitem{xLPT:2020:LNIc}
+{\gobble{LaTeX}{\LaTeX{} Project Team}}.
+\newblock {\LaTeX} news, issue 31, {February 2020}.
+\newblock \emph{TUGboat} 41(1):34--38, 2020.
+\newblock \url{https://tug.org/TUGboat/tb41-1/tb127ltnews31.pdf}
+
+\bibitem{2e-start}
+{\gobble{LaTeX}{\LaTeX{} Project Team}}.
+\newblock \emph{{\LaTeXe} for authors}, May~2025.
+\newblock \url{ctan.org/pkg/usrguide}
+
+\bibitem{Mittelbach:2023:LAL}
+F.~Mittelbach.
+\newblock {\LaTeX} anniversaries{\Dash}a look in two directions.
+\newblock \emph{TUGboat} 44(1):77--86, 2023.
+\newblock \url{https://doi.org/10.47397/tb/44-1/tb136mitt-history}
+
+\bibitem{Mittelbach:TB13-1-96}
+F.~Mittelbach, C.~Rowley.
+\newblock {{\LaTeX} 2.09 \hookrightarrow {\LaTeX}3}.
+\newblock \emph{TUGboat} 13(1):96--101, Apr. 1992.
+\newblock \url{https://tug.org/TUGboat/tb13-1/tb34mittl3.pdf}
+
+\bibitem{extex-manual}
+G.~Neugebauer.
+\newblock \emph{{ExTeX} User's Guide}, July 2005.
+\newblock \url{http://extex.org/documentation/man/extex-users.pdf}
+
+\bibitem{ptex-history}
+H.~Okumura.
+\newblock {p\TeX{}} and {Japanese} typesetting.
+\newblock \emph{The {Asian} Journal of {\TeX}}, 2(1):43--51, Apr. 2008.
+\newblock
+  \url{https://web.archive.org/web/20240819102104/https://ajt.ktug.org/2008/0201okumura.pdf}
+
+\bibitem{optex-start}
+P.~Olšák.
+\newblock {\OpTeX \Dash A new generation of Plain \TeX}.
+\newblock \emph{TUGboat} 41(3):348--354, Nov. 2020.
+\newblock \url{tug.org/TUGboat/tb41-3/tb129olsak-optex.pdf}
+
+\bibitem{xetex-manual}
+W.~Robertson, K.~Hosny, K.~Berry.
+\newblock \emph{The {\XeTeX} reference guide}, Feb. 2025.
+\newblock \url{ctan.org/pkg/xetex}
+
+\bibitem{pdftex-start}
+P.~Sojka, {\Thanh}, J.~Zlatuška.
+\newblock {The joy of {\TeX}2\acro{PDF}{\Dash}Acrobatics with an alternative to
+  \acro{DVI} format}.
+\newblock \emph{TUGboat} 17(3):244--251, Sept. 1996.
+\newblock \url{tug.org/TUGboat/tb17-3/tb52sojk.pdf}
+
+\bibitem{uptex}
+T.~Tanaka.
+\newblock {up\TeX}{\Dash}{Unicode} version of {p\TeX} with \acro{CJK}
+  extensions.
+\newblock \emph{TUGboat} 34(3):285--288, Dec. 2013.
+\newblock \url{tug.org/TUGboat/tb34-3/tb108tanaka.pdf}
+
+\bibitem{ptex-name2}
+I.~Zabala.
+\newblock Some feedback from \texttt{PTEX} installations.
+\newblock \emph{TUGboat} 2(2):16--19, July 1981.
+\newblock \url{tug.org/TUGboat/tb02-2/tb03zab.pdf}
+
+\end{thebibliography}

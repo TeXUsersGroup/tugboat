@@ -1,0 +1,35 @@
+\begin{thebibliography}{1}
+
+\bibitem{beeton:ot-math}
+B.~Beeton.
+\newblock Unicode and math, a combination whose time has come{\Dash f}inally!
+\newblock \emph{\TUB} 21(3), 2000.
+\newblock \url{https://tug.org/TUGboat/tb21-3/tb68beet.pdf}
+
+\bibitem{hosney:ot-math}
+K.~Hosny.
+\newblock Building \opentype\ math fonts.
+\newblock 28~Aug. 2024.
+\newblock
+  \url{https://github.com/notofonts/math/blob/main/documentation/building-math-fonts/index.md}
+
+\bibitem{ms:ot-math-spec}
+Microsoft.
+\newblock \opentype\ {\acro{math}\Dash}the mathematical typesetting table.
+\newblock 29~May 2024.
+\newblock \newline
+  \url{https://learn.microsoft.com/en-us/typography/opentype/spec/math}
+
+\bibitem{veytsman:arsenal}
+B.~Veytsman.
+\newblock Packaging {A}rsenal fonts for {(\Xe\,/Lua)\tubthinnerspace\LaTeX}.
+\newblock \emph{\TUB} 45(2), 2024.
+\newblock \url{https://doi.org/10.47397/tb/45-2/tb140veytsman-arsenal}
+
+\bibitem{vieth:ot-math}
+U.~Vieth.
+\newblock Open{T}ype math illuminated.
+\newblock \emph{\TUB} 30(1), 2009.
+\newblock \newline \url{https://tug.org/TUGboat/tb30-1/tb94vieth.pdf}
+
+\end{thebibliography}

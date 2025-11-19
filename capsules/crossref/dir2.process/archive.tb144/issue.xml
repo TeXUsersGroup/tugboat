@@ -1,0 +1,1371 @@
+<doi_batch
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    version="5.4.0"
+    xmlns="http://www.crossref.org/schema/5.4.0"
+    xsi:schemaLocation="http://www.crossref.org/schema/5.4.0
+                       https://www.crossref.org/schemas/crossref5.4.0.xsd">
+  <head>
+    <doi_batch_id>ltx2crossref-20251119170643-14228</doi_batch_id>
+    <timestamp>20251119170643</timestamp>
+    <depositor>
+      <depositor_name>TUGboat production</depositor_name>
+      <email_address>doi-tugboat@tug.org</email_address>
+    </depositor>
+    <registrant>TeX Users Group</registrant>
+  </head>
+  <body><journal>
+    <journal_metadata language="en">
+      <full_title>TUGboat</full_title>
+      <issn>0896-3207</issn>      
+    </journal_metadata>
+    <journal_issue>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <journal_volume><volume>46</volume></journal_volume>
+      <issue>3</issue>
+    </journal_issue>
+    <journal_article>
+      <titles>
+        <title>From the president</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Arthur</given_name>
+          <surname>Rosendahl</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>319</first_page>
+        <last_page>320</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144pres</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144pres.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Editorial comments</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Barbara</given_name>
+          <surname>Beeton</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>321</first_page>
+        <last_page>323</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144beet</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144beet.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>James Mosley, type historian (1935&#x2013;2025)</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Charles</given_name>
+          <surname>Bigelow</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>323</first_page>
+        <last_page>323</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144bigelow-mosley</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144bigelow-mosley.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="grot-1">
+          <unstructured_citation>James Mosley. The Nymph and the Grot, London: Friends of St Bride Printing Library, 1999. https://stbridelibrary.bigcartel.com/product/the-nymph-and-the-grot</unstructured_citation>
+        </citation>
+        <citation key="commat-2">
+          <unstructured_citation>James Mosley, Commercial at @, Visible Language, 50:2 (2016), 52&#x2013;63. https://journals.uc.edu/index.php/vl/article/view/5924/4788</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The first meeting of the Portuguese TeX Users Group</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jo&#xe3;o M.</given_name>
+          <surname>Louren&#xe7;o</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Joaquim</given_name>
+          <surname>Baptista</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>324</first_page>
+        <last_page>325</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144lourenco-tugpt25</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144lourenco-tugpt25.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Typographers' Inn</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Peter</given_name>
+          <surname>Flynn</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>326</first_page>
+        <last_page>327</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144inn</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144inn.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="ukgov-1" type="web_resource">
+          <author>Government Digital Service</author>
+          <cYear>2024</cYear>
+          <article_title>Publishing accessible documents</article_title>
+          <unstructured_citation>Government Digital Service, Central Digital and Data Office. Publishing accessible documents. GOV&#x2022;UK: Digital Accessibility, 2024. https://www.gov.uk/guidance/publishing-accessible-documents</unstructured_citation>
+        </citation>
+        <citation key="fontcat-2" type="web_resource">
+          <author>J&#x00f8;rgensen, Palle</author>
+          <cYear>2021</cYear>
+          <article_title>The LaTeX Font Catalogue</article_title>
+          <unstructured_citation>P. J&#x00f8;rgensen. The LaTeX Font Catalogue, 2021. https://tug.org/FontCatalogue/</unstructured_citation>
+        </citation>
+        <citation key="palmen25-3" type="web_resource">
+          <author>Palmen, Hilary</author>
+          <cYear>2025</cYear>
+          <article_title>How type influences readability</article_title>
+          <unstructured_citation>H. Palmen. How type influences readability. Google Fonts Glossary, 2025. https://fonts.google.com/knowledge/readability_and_accessibility/how_type_influences_readability</unstructured_citation>
+        </citation>
+        <citation key="wcag-4" type="web_resource">
+          <author>Visser, Casandra</author>
+          <cYear>2024</cYear>
+          <article_title>Document Accessibility&#x2014;How to Comply with the Latest Standards</article_title>
+          <unstructured_citation>C. Visser. Document accessibility&#x2014;how to comply with the latest standards, 2024. https://www.accessibilitychecker.org/guides/document-accessibility/</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Words of Type, for a multilingual and multicultural typography: <tt>wordsoftype.com</tt></title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Lisa</given_name>
+          <surname>Huang</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>328</first_page>
+        <last_page>334</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144huang-wordsoftype</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144huang-wordsoftype.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Overview of TeX engines and formats</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Max</given_name>
+          <surname>Chernoff</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Jim</given_name>
+          <surname>Hefferon</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>335</first_page>
+        <last_page>338</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144berry-engines-formats</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144berry-engines-formats.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="etex-start-1" type="software">
+          <author>Breitenlohner, Peter</author>
+          <cYear>1998</cYear>
+          <article_title>etex.ch</article_title>
+          <unstructured_citation>P. Breitenlohner. etex.ch, Mar. 1998. https://mirrors.ctan.org/obsolete/systems/e-tex/v2/web/etex.ch</unstructured_citation>
+        </citation>
+        <citation key="chernoff-engines-2" type="web_resource">
+          <author>Chernoff, Max</author>
+          <article_title>Comparing TeX engines and formats</article_title>
+          <unstructured_citation>M. Chernoff. Comparing TeX engines and formats. Presentation at TUG&#x2019;22. Slides: https://tug.org/tug2022/assets/served/Max_Chernoff-TUG2022-chernoff-engines-slides.pdf. Video: https://youtube.com/watch?v=MNdAoza8VHU</unstructured_citation>
+        </citation>
+        <citation key="latex-firstmention-3" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Fuchs, David</author>
+          <volume>4</volume>
+          <first_page>14</first_page>
+          <cYear>1983</cYear>
+          <article_title>News from all over</article_title>
+          <unstructured_citation>D. Fuchs. News from all over. TUGboat 4(1):14&#x2013;15, Apr. 1983. https://tug.org/TUGboat/tb04-1/tb07site.pdf</unstructured_citation>
+        </citation>
+        <citation key="tex82-start-4" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Fuchs, David</author>
+          <volume>5</volume>
+          <issue>9</issue>
+          <first_page>22</first_page>
+          <cYear>1984</cYear>
+          <article_title>News from the TeX Project</article_title>
+          <unstructured_citation>D. Fuchs. News from the TeX project. TUGboat 5(1):22&#x2013;23, May 1984. https://tug.org/TUGboat/tb05-1/tb09site.pdf</unstructured_citation>
+        </citation>
+        <citation key="Hagen:TB25-1-48-5" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Hagen, Hans</author>
+          <volume>25</volume>
+          <issue>80</issue>
+          <first_page>48</first_page>
+          <cYear>2004</cYear>
+          <article_title>The state of ConTeXt</article_title>
+          <unstructured_citation>H. Hagen. The state of ConTeXt. TUGboat 25(1):48&#x2013;51, 2004. https://tug.org/TUGboat/tb25-1/hagen-context.pdf</unstructured_citation>
+        </citation>
+        <citation key="Hagen:TB26-2-152-6" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Hagen, Hans</author>
+          <volume>26</volume>
+          <issue>83</issue>
+          <first_page>152</first_page>
+          <cYear>2005</cYear>
+          <article_title>LuaTeX: Howling to the moon</article_title>
+          <unstructured_citation>H. Hagen. LuaTeX: Howling to the moon. TUGboat 26(2):152&#x2013;157, 2005. https://tug.org/TUGboat/tb26-2/hagen.pdf</unstructured_citation>
+        </citation>
+        <citation key="Hagen:TB27-2-219-7" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Hagen, Hans</author>
+          <volume>27</volume>
+          <issue>87</issue>
+          <first_page>219</first_page>
+          <cYear>2006</cYear>
+          <article_title>MKII&#x2013;MKIV</article_title>
+          <unstructured_citation>H. Hagen. MKII&#x2013;MKIV. TUGboat 27(2):219&#x2013;227, 2006. https://tug.org/TUGboat/tb27-2/tb87hagen-context.pdf</unstructured_citation>
+        </citation>
+        <citation key="luametatex-start-8" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Hagen, Hans</author>
+          <volume>40</volume>
+          <issue>124</issue>
+          <first_page>34</first_page>
+          <cYear>2019</cYear>
+          <article_title>ConTeXt LMTX</article_title>
+          <unstructured_citation>H. Hagen. ConTeXt LMTX. TUGboat 40(1):34&#x2013;37, May 2019. https://tug.org/TUGboat/tb40-1/tb124hagen-lmtx.pdf</unstructured_citation>
+        </citation>
+        <citation key="hagen-jcl-9" type="journal_article">
+          <journal_title>Journal of Computer Languages</journal_title>
+          <issn>2590-1184</issn>
+          <author>Hagen, Hans</author>
+          <volume>85</volume>
+          <first_page>101354</first_page>
+          <cYear>2025</cYear>
+          <doi>10.1016/j.cola.2025.101354</doi>
+          <article_title>Lua in TeX</article_title>
+          <unstructured_citation>H. Hagen. Lua in TeX. Journal of Computer Languages, 85:101354, 2025. https://doi.org/10.1016/j.cola.2025.101354</unstructured_citation>
+        </citation>
+        <citation key="omega-start-10" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Haralambous, Yannis</author>
+          <volume>15</volume>
+          <issue>44</issue>
+          <first_page>344</first_page>
+          <cYear>1994</cYear>
+          <article_title>First applications of  &#x03A9;: Adobe Poetica, Arabic, Greek, Khmer</article_title>
+          <unstructured_citation>Y. Haralambous, J. Plaice. First applications of &#x03A9;: Adobe Poetica, Arabic, Greek, Khmer. TUGboat 15(3):344&#x2013;352, Sept. 1994. https://tug.org/TUGboat/tb15-3/tb44haralambous-omega.pdf</unstructured_citation>
+        </citation>
+        <citation key="notices-11" type="journal_article">
+          <journal_title>Notices of the AMS</journal_title>
+          <author>Hefferon, Jim</author>
+          <volume>56</volume>
+          <first_page>348</first_page>
+          <cYear>2009</cYear>
+          <article_title>The TeX Family in 2009</article_title>
+          <unstructured_citation>J. Hefferon, K. Berry. The TeX family in 2009. Notices of the AMS, 56(3):348&#x2013;354, Mar. 2009. https://tug.org/notices/</unstructured_citation>
+        </citation>
+        <citation key="luatex-start-12" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Hoekwater, Taco</author>
+          <volume>28</volume>
+          <issue>90</issue>
+          <first_page>312</first_page>
+          <cYear>2007</cYear>
+          <article_title>LuaTeX</article_title>
+          <unstructured_citation>T. Hoekwater. LuaTeX. TUGboat 28(3):312&#x2013;313, Sept. 2007. https://tug.org/TUGboat/tb28-3/tb90hoekwater-luatex.pdf</unstructured_citation>
+        </citation>
+        <citation key="context-first-13" type="web_resource">
+          <author>Hoekwater, Taco</author>
+          <cYear>2007</cYear>
+          <article_title>ConTeXt: A short history in 2^4 parts</article_title>
+          <unstructured_citation>T. Hoekwater. ConTeXt: A short history in 2^4 parts, Mar. 2007. https://meeting.contextgarden.net/2007/share/taco/history.pdf</unstructured_citation>
+        </citation>
+        <citation key="xetex-start-14" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Kew, Jonathan</author>
+          <volume>26</volume>
+          <issue>83</issue>
+          <first_page>115</first_page>
+          <cYear>2005</cYear>
+          <article_title>XeTeX, the Multilingual Lion: TeX meets Unicode and smart font technologies</article_title>
+          <unstructured_citation>J. Kew. XeTeX, the Multilingual Lion: TeX meets Unicode and smart font technologies. TUGboat 26(2):115&#x2013;124, Nov. 2005. https://tug.org/TUGboat/tb26-2/kew.pdf</unstructured_citation>
+        </citation>
+        <citation key="texxet-15" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Knuth, Donald</author>
+          <volume>8</volume>
+          <first_page>14</first_page>
+          <cYear>1987</cYear>
+          <article_title>Mixing right-to-left texts with left-to-right texts</article_title>
+          <unstructured_citation>D. Knuth, P. MacKay. Mixing right-to-left texts with left-to-right texts. TUGboat 8(1):14&#x2013;25, Apr. 1987. https://tug.org/TUGboat/tb08-1/tb17knutmix.pdf</unstructured_citation>
+        </citation>
+        <citation key="tex78-16" type="book">
+          <author>Knuth, Donald Ervin</author>
+          <cYear>1979</cYear>
+          <isbn>9780932376022</isbn>
+          <article_title>TeX and Metafont</article_title>
+          <unstructured_citation>D.E. Knuth. TeX and Metafont. Digital Press, Bedford, Ma, Aug. 1979.</unstructured_citation>
+        </citation>
+        <citation key="ptex-name-17" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Knuth, Donald E</author>
+          <volume>4</volume>
+          <first_page>Supplement</first_page>
+          <cYear>1983</cYear>
+          <article_title>TeX and Metafont: Errata and Changes</article_title>
+          <unstructured_citation>D.E. Knuth. TeX and Metafont: Errata and changes. TUGboat 4(2):Supplement, Sept. 1983. https://tug.org/TUGboat/tb04-2/texmferr-09sep1983.pdf</unstructured_citation>
+        </citation>
+        <citation key="tex-3-18" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Knuth, Donald E.</author>
+          <volume>10</volume>
+          <issue>25</issue>
+          <first_page>325</first_page>
+          <cYear>1989</cYear>
+          <article_title>The new versions of TeX and Metafont</article_title>
+          <unstructured_citation>D.E. Knuth. The new versions of TeX and Metafont. TUGboat 10(3):325&#x2013;328, Nov. 1989. https://tug.org/TUGboat/tb10-3/tb25knut.pdf</unstructured_citation>
+        </citation>
+        <citation key="luametalatex-19" type="web_resource">
+          <author>Kr&#x00fc;ger, Marcel</author>
+          <cYear>2022</cYear>
+          <article_title>LuaMetaLaTeX</article_title>
+          <unstructured_citation>M. Kr&#x00fc;ger. LuaMetaLaTeX, July 2022. https://github.com/zauguin/luametalatex</unstructured_citation>
+        </citation>
+        <citation key="latex-earliest-20" type="web_resource">
+          <author>Lamport, Lesilie</author>
+          <cYear>1983</cYear>
+          <article_title>latex.tex</article_title>
+          <unstructured_citation>L. Lamport. latex.tex, Mar. 1983. https://ftp.math.utah.edu/pub/tex/historic/macros/latex-saildart/latex-0.90/latex.tex</unstructured_citation>
+        </citation>
+        <citation key="latex-209end-21" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Lamport, Leslie</author>
+          <volume>6</volume>
+          <first_page>150</first_page>
+          <cYear>1985</cYear>
+          <article_title>Announcement of LaTeX Version 2.09</article_title>
+          <unstructured_citation>L. Lamport. Announcement of LaTeX version 2.09. TUGboat 6(3):150&#x2013;151, Nov. 1985. https://tug.org/TUGboat/tb06-3/tb13lamport.pdf</unstructured_citation>
+        </citation>
+        <citation key="xLPT:TB30-1-10-22" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>LaTeX Project Team</author>
+          <volume>30</volume>
+          <issue>94</issue>
+          <first_page>105</first_page>
+          <cYear>2009</cYear>
+          <article_title>LaTeX3 news, issues 1&#x2013;2</article_title>
+          <unstructured_citation>LaTeX Project Team. LaTeX3 news, issues 1&#x2013;2. TUGboat 30(1):105&#x2013;106, 2009. https://tug.org/TUGboat/tb30-1/tb94l3news.pdf</unstructured_citation>
+        </citation>
+        <citation key="xLPT:2017:LNIa-23" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>LaTeX Project Team</author>
+          <volume>38</volume>
+          <issue>118</issue>
+          <first_page>54</first_page>
+          <cYear>2017</cYear>
+          <article_title>LaTeX news, issue 26, January 2017</article_title>
+          <unstructured_citation>LaTeX Project Team. LaTeX news, issue 26, January 2017. TUGboat 38(1):54&#x2013;55, 2017. https://tug.org/TUGboat/tb38-1/tb118ltnews26.pdf</unstructured_citation>
+        </citation>
+        <citation key="xLPT:2020:LNIc-24" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>LaTeX Project Team</author>
+          <volume>41</volume>
+          <issue>127</issue>
+          <first_page>34</first_page>
+          <cYear>2020</cYear>
+          <article_title>LaTeX news, issue 31, February 2020</article_title>
+          <unstructured_citation>LaTeX Project Team. LaTeX news, issue 31, February 2020. TUGboat 41(1):34&#x2013;38, 2020. https://tug.org/TUGboat/tb41-1/tb127ltnews31.pdf</unstructured_citation>
+        </citation>
+        <citation key="2e-start-25" type="software">
+          <author>LaTeX Project Team</author>
+          <cYear>2025</cYear>
+          <article_title>LaTeX2e for authors</article_title>
+          <unstructured_citation>LaTeX Project Team. LaTeX2e for authors, May 2025. https://ctan.org/pkg/usrguide</unstructured_citation>
+        </citation>
+        <citation key="Mittelbach:2023:LAL-26" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Mittelbach, Frank</author>
+          <volume>44</volume>
+          <issue>136</issue>
+          <first_page>77</first_page>
+          <cYear>2023</cYear>
+          <doi>10.47397/tb/44-1/tb136mitt-history</doi>
+          <article_title>LaTeX anniversaries&#x2014;a look in two directions</article_title>
+          <unstructured_citation>F. Mittelbach. LaTeX anniversaries&#x2014;a look in two directions. TUGboat 44(1):77&#x2013;86, 2023. https://doi.org/10.47397/tb/44-1/tb136mitt-history</unstructured_citation>
+        </citation>
+        <citation key="Mittelbach:TB13-1-96-27" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Mittelbach, Frank</author>
+          <volume>13</volume>
+          <issue>34</issue>
+          <first_page>96</first_page>
+          <cYear>1992</cYear>
+          <article_title>LaTeX 2.09  &#x21AA; LaTeX3</article_title>
+          <unstructured_citation>F. Mittelbach, C. Rowley. LaTeX 2.09 &#x21AA;LaTeX3. TUGboat 13(1):96&#x2013;101, Apr. 1992. https://tug.org/TUGboat/tb13-1/tb34mittl3.pdf</unstructured_citation>
+        </citation>
+        <citation key="extex-manual-28" type="software">
+          <author>Neugebauer, Gerd</author>
+          <cYear>2005</cYear>
+          <article_title>ExTeX User&#x2019;s Guide</article_title>
+          <unstructured_citation>G. Neugebauer. ExTeX User&#x2019;s Guide, July 2005. http://extex.org/documentation/man/extex-users.pdf</unstructured_citation>
+        </citation>
+        <citation key="ptex-history-29" type="journal_article">
+          <journal_title>The Asian Journal of TeX</journal_title>
+          <author>Okumura, Haruhiko</author>
+          <volume>2</volume>
+          <first_page>43</first_page>
+          <cYear>2008</cYear>
+          <article_title>pTeX and Japanese Typesetting</article_title>
+          <unstructured_citation>H. Okumura. pTeX and Japanese typesetting. The Asian Journal of TeX, 2(1):43&#x2013;51, Apr. 2008. https://web.archive.org/web/20240819102104/https://ajt.ktug.org/2008/0201okumura.pdf</unstructured_citation>
+        </citation>
+        <citation key="optex-start-30" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Ol&#x0161;&#x00e1;k, Petr</author>
+          <volume>41</volume>
+          <issue>129</issue>
+          <first_page>348</first_page>
+          <cYear>2020</cYear>
+          <article_title>OpTeX&#x2014;A new generation of Plain TeX</article_title>
+          <unstructured_citation>P. Ol&#x0161;&#x00e1;k. OpTeX&#x2014;A new generation of Plain TeX. TUGboat 41(3):348&#x2013;354, Nov. 2020. https://tug.org/TUGboat/tb41-3/tb129olsak-optex.pdf</unstructured_citation>
+        </citation>
+        <citation key="xetex-manual-31" type="software">
+          <author>Robertson, Will</author>
+          <cYear>2025</cYear>
+          <article_title>The XeTeX reference guide</article_title>
+          <unstructured_citation>W. Robertson, K. Hosny, K. Berry. The XeTeX reference guide, Feb. 2025. https://ctan.org/pkg/xetex</unstructured_citation>
+        </citation>
+        <citation key="pdftex-start-32" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Sojka, Petr</author>
+          <volume>17</volume>
+          <issue>52</issue>
+          <first_page>244</first_page>
+          <cYear>1996</cYear>
+          <article_title>The joy of TeX2PDF&#x2014;Acrobatics with an alternative to DVI format</article_title>
+          <unstructured_citation>P. Sojka, H&#x00E0;n Th&#x1EBF; Th&#x00E0;nh, J. Zlatu&#x0161;ka. The joy of TeX2PDF&#x2014;Acrobatics with an alternative to DVI format. TUGboat 17(3):244&#x2013;251, Sept. 1996. https://tug.org/TUGboat/tb17-3/tb52sojk.pdf</unstructured_citation>
+        </citation>
+        <citation key="uptex-33" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Tanaka, Takuji</author>
+          <volume>34</volume>
+          <issue>108</issue>
+          <first_page>285</first_page>
+          <cYear>2013</cYear>
+          <article_title>upTeX&#x2014;Unicode version of pTeX with CJK extensions</article_title>
+          <unstructured_citation>T. Tanaka. upTeX&#x2014;Unicode version of pTeX with CJK extensions. TUGboat 34(3):285&#x2013;288, Dec. 2013. https://tug.org/TUGboat/tb34-3/tb108tanaka.pdf</unstructured_citation>
+        </citation>
+        <citation key="ptex-name2-34" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Zabala, Ignacio</author>
+          <volume>2</volume>
+          <issue>3</issue>
+          <first_page>16</first_page>
+          <cYear>1981</cYear>
+          <article_title>Some feedback from PTEX installations</article_title>
+          <unstructured_citation>I. Zabala. Some feedback from PTEX installations. TUGboat 2(2):16&#x2013;19, July 1981. https://tug.org/TUGboat/tb02-2/tb03zab.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>A LaTeX publishing workflow</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Joppe W.</given_name>
+          <surname>Bos</surname>
+          <ORCID>https://orcid.org/0000-0003-1010-8157</ORCID>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Kevin S.</given_name>
+          <surname>McCurley</surname>
+          <ORCID>https://orcid.org/0000-0001-7890-5430</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>339</first_page>
+        <last_page>343</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144bos-workflow</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144bos-workflow.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="doi:10.1073/pnas.2401232121-1" type="journal_article">
+          <journal_title>Proceedings of the National Academy of Sciences</journal_title>
+          <author>Aczel, Balazs</author>
+          <volume>122</volume>
+          <first_page>e2401232121</first_page>
+          <cYear>2025</cYear>
+          <doi>10.1073/pnas.2401232121</doi>
+          <article_title>The present and future of peer review: Ideas, interventions, and evidence</article_title>
+          <unstructured_citation>B. Aczel, A.S. Barwich, et al. The present and future of peer review: Ideas, interventions, and evidence. Proceedings of the National Academy of Sciences, 122(5):e2401232121, 2025. https://doi.org/10.1073/pnas.2401232121</unstructured_citation>
+        </citation>
+        <citation key="babbage-2" type="book">
+          <author>Babbage, Charles</author>
+          <cYear>1830</cYear>
+          <article_title>Reflections on the Decline of Science in England, and on some of its Causes</article_title>
+          <unstructured_citation>C. Babbage. Reflections on the decline of science in England, and on some of its causes. London, 1830. https://www.gutenberg.org/files/1216/1216-h/1216-h.htm</unstructured_citation>
+        </citation>
+        <citation key="bos2025loweringcostdiamondopen-3" type="other">
+          <author>Bos, Joppe</author>
+          <cYear>2025</cYear>
+          <article_title>Lowering the Cost of Diamond Open Access Journals</article_title>
+          <unstructured_citation>J. Bos, K.S. McCurley. Lowering the cost of diamond open access journals, 2025. https://arxiv.org/abs/2504.10424</unstructured_citation>
+        </citation>
+        <citation key="tugboat-4" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Bos, Joppe W.</author>
+          <volume>44</volume>
+          <first_page>71</first_page>
+          <cYear>2023</cYear>
+          <doi>10.47397/tb/44-1/tb136bos-metadata</doi>
+          <article_title>Metadata in journal publishing</article_title>
+          <unstructured_citation>J.W. Bos, K.S. McCurley. Metadata in journal publishing. TUGboat 44(1):71&#x2013;76, 2023. https://doi.org/10.47397/tb/44-1/tb136bos-metadata</unstructured_citation>
+        </citation>
+        <citation key="10.1002/widm.1361-5" type="journal_article">
+          <journal_title>WIREs Data Mining and Knowledge Discovery</journal_title>
+          <author>Duivesteijn, Wouter</author>
+          <volume>10</volume>
+          <first_page>e1361</first_page>
+          <cYear>2020</cYear>
+          <doi>10.1002/widm.1361</doi>
+          <article_title>How to cheat the page limit</article_title>
+          <unstructured_citation>W. Duivesteijn, S. Hess, X. Du. How to cheat the page limit. WIREs Data Mining and Knowledge Discovery, 10(3):e1361, 2020. https://doi.org/10.1002/widm.1361</unstructured_citation>
+        </citation>
+        <citation key="arxivhtml-6" type="other">
+          <author>Frankston, Charles</author>
+          <cYear>2024</cYear>
+          <doi>10.48550/arXiv.2402.08954</doi>
+          <article_title>HTML papers on arXiv &#x2013; why it is important, and how we made it happen</article_title>
+          <unstructured_citation>C. Frankston, J. Godfrey, et al. HTML papers on arXiv &#x2013; why it is important, and how we made it happen, 2024. https://doi.org/10.48550/arXiv.2402.08954</unstructured_citation>
+        </citation>
+        <citation key="unsafe-7" type="other">
+          <author>Lacombe, Guilhem</author>
+          <cYear>2021</cYear>
+          <doi>10.48550/arXiv.2102.00856</doi>
+          <article_title>Can You Accept LaTeX Files from Strangers? Ten Years Later</article_title>
+          <unstructured_citation>G. Lacombe, K. Masalygina, et al. Can you accept LaTeX files from strangers? Ten years later, 2021. https://doi.org/10.48550/arXiv.2102.00856</unstructured_citation>
+        </citation>
+        <citation key="amsstyle-8" type="other">
+          <author>Letourneau, Mary</author>
+          <cYear>2017</cYear>
+          <article_title>AMS Style Guide: Journals</article_title>
+          <unstructured_citation>M. Letourneau, J.W. Sharp. AMS style guide: Journals, 2017. https://www.ams.org/publications/authors/AMS-StyleGuide-online.pdf</unstructured_citation>
+        </citation>
+        <citation key="jcls_3627-9" type="journal_article">
+          <journal_title>Journal of Computational Literary Studies</journal_title>
+          <issn>2940-1348</issn>
+          <author>Sch&#x00f6;ch, Christof</author>
+          <volume>1</volume>
+          <cYear>2023</cYear>
+          <doi>10.48694/jcls.3627</doi>
+          <article_title>Editorial</article_title>
+          <unstructured_citation>C. Sch&#x00f6;ch, P. Trilcke, E. Gius. Editorial. Journal of Computational Literary Studies, 1(1), Apr. 2023. https://doi.org/10.48694/jcls.3627</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The Arsenal Math OpenType fonts</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>KV</given_name>
+          <surname>Rajeesh</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>344</first_page>
+        <last_page>346</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144rajeesh-arsenalmath</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144rajeesh-arsenalmath.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="beeton:ot-math-1" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Beeton, Barbara</author>
+          <volume>21</volume>
+          <cYear>2000</cYear>
+          <article_title>Unicode and math, a combination whose time has come&#x2014;Finally!</article_title>
+          <unstructured_citation>B. Beeton. Unicode and math, a combination whose time has come&#x2014;finally! TUGboat 21(3), 2000. https://tug.org/TUGboat/tb21-3/tb68beet.pdf</unstructured_citation>
+        </citation>
+        <citation key="hosney:ot-math-2" type="web_resource">
+          <author>Hosny, Khaled</author>
+          <cYear>2024</cYear>
+          <article_title>Building OpenType math fonts</article_title>
+          <unstructured_citation>K. Hosny. Building OpenType math fonts. 28 Aug. 2024. https://github.com/notofonts/math/blob/main/documentation/building-math-fonts/index.md</unstructured_citation>
+        </citation>
+        <citation key="ms:ot-math-spec-3" type="web_resource">
+          <author>Microsoft</author>
+          <cYear>2024</cYear>
+          <article_title>OpenType MATH&#x2014;The mathematical typesetting table</article_title>
+          <unstructured_citation>Microsoft. OpenType math&#x2014;the mathematical typesetting table. 29 May 2024. https://learn.microsoft.com/en-us/typography/opentype/spec/math</unstructured_citation>
+        </citation>
+        <citation key="veytsman:arsenal-4" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Veytsman, Boris</author>
+          <volume>45</volume>
+          <cYear>2024</cYear>
+          <doi>10.47397/tb/45-2/tb140veytsman-arsenal</doi>
+          <article_title>Packaging Arsenal fonts for (Xe/Lua)LaTeX</article_title>
+          <unstructured_citation>B. Veytsman. Packaging Arsenal fonts for (Xe/Lua)LaTeX. TUGboat 45(2), 2024. https://doi.org/10.47397/tb/45-2/tb140veytsman-arsenal</unstructured_citation>
+        </citation>
+        <citation key="vieth:ot-math-5" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Vieth, Ulrik</author>
+          <volume>30</volume>
+          <cYear>2009</cYear>
+          <article_title>OpenType math illuminated</article_title>
+          <unstructured_citation>U. Vieth. OpenType math illuminated. TUGboat 30(1), 2009. https://tug.org/TUGboat/tb30-1/tb94vieth.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>LaTeX news, issue 42, November 2025</title>
+      </titles>
+      <contributors>
+        <organization sequence="first" contributor_role="author">LaTeX Project Team</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>347</first_page>
+        <last_page>352</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144ltnews42</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144ltnews42.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="42:Lamport-1">
+          <unstructured_citation>Leslie Lamport. LaTeX: A Document Preparation System: User&#x2019;s Guide and Reference Manual. Addison-Wesley, Reading, MA, USA, 2nd edition, 1994. ISBN 0-201-52983-1. Reprinted with corrections in 1996.</unstructured_citation>
+        </citation>
+        <citation key="42:ltnews-2">
+          <unstructured_citation>LaTeX Project Team. LaTeX2e News 1&#x2013;42. November 2025. https://latex-project.org/news/latex2e-news/ltnews.pdf</unstructured_citation>
+        </citation>
+        <citation key="42:ltnews35-3">
+          <unstructured_citation>LaTeX Project Team. LaTeX2e News 35. June 2022. https://latex-project.org/news/latex2e-news/ltnews35.pdf</unstructured_citation>
+        </citation>
+        <citation key="42:ltnews38-4">
+          <unstructured_citation>LaTeX Project Team. LaTeX2e News 38. November 2023. https://latex-project.org/news/latex2e-news/ltnews38.pdf</unstructured_citation>
+        </citation>
+        <citation key="42:ltnews39-5">
+          <unstructured_citation>LaTeX Project Team. LaTeX2e News 39. June 2024. https://latex-project.org/news/latex2e-news/ltnews39.pdf</unstructured_citation>
+        </citation>
+        <citation key="42:ltnews41-6">
+          <unstructured_citation>LaTeX Project Team. LaTeX2e News 41. June 2025. https://latex-project.org/news/latex2e-news/ltnews41.pdf</unstructured_citation>
+        </citation>
+        <citation key="tagging-status-7">
+          <unstructured_citation>LaTeX Project Team. Tagging Status of LaTeX Packages and Classes. November 2025. https://latex3.github.io/tagging-project/tagging-status</unstructured_citation>
+        </citation>
+        <citation key="tagging-project-8">
+          <unstructured_citation>LaTeX Project Team. The LaTeX Tagged PDF repository. November 2025. https://github.com/latex3/tagging-project/issues</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Dissertation typesetting considerations</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Tony</given_name>
+          <surname>Zorman</surname>
+          <ORCID>https://orcid.org/0009-0009-4940-2864</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>353</first_page>
+        <last_page>357</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144zorman-thesis</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144zorman-thesis.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The <tt>lua-tikz3dtools</tt> package for 3D illustrations in LaTeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jasper</given_name>
+          <surname>Nice</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>358</first_page>
+        <last_page>363</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144nice-lua3dtools</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144nice-lua3dtools.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="0000001-1" type="other">
+          <author>Nice, Jasper</author>
+          <article_title>3d point sorting in tikz</article_title>
+          <unstructured_citation>J. Nice. 3d point sorting in tikz. TeX.SX. https://tex.stackexchange.com/q/734097/319072</unstructured_citation>
+        </citation>
+        <citation key="0000003-2" type="other">
+          <author>Nice, Jasper</author>
+          <article_title>Exact Triangle Sorting for Orthographic Rendering of a Triangulated Surface</article_title>
+          <unstructured_citation>J. Nice. Exact triangle sorting for orthographic rendering of a triangulated surface. Math.SX. https://math.stackexchange.com/q/5063772/1499599</unstructured_citation>
+        </citation>
+        <citation key="5062592-3" type="other">
+          <author>Nice, Jasper</author>
+          <article_title>How does the dot product give correct depth ordering in orthographic 3D projections?</article_title>
+          <unstructured_citation>J. Nice. How does the dot product give correct depth ordering in orthographic 3d projections? Math.SX. https://math.stackexchange.com/q/5062592</unstructured_citation>
+        </citation>
+        <citation key="0000002-4" type="other">
+          <author>Nice, Jasper</author>
+          <article_title>TikZ Parametric Surface Debugging Request</article_title>
+          <unstructured_citation>J. Nice. Tikz parametric surface debugging request. TeX.SX. https://tex.stackexchange.com/q/734691/319072</unstructured_citation>
+        </citation>
+        <citation key="rogers1976mathematical-5" type="book">
+          <author>Rogers, David F.</author>
+          <cYear>1976</cYear>
+          <isbn>0070535272</isbn>
+          <article_title>Mathematical Elements for Computer Graphics</article_title>
+          <unstructured_citation>D.F. Rogers, J.A. Adams. Mathematical Elements for Computer Graphics. McGraw-Hill, 1st ed., 1976.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Getting noisy</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Keith</given_name>
+          <surname>McKay</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>364</first_page>
+        <last_page>368</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144hagen-noisy</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144hagen-noisy.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Beyond MetaPost: TeX, MetaPost, and Lua</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Mikael P.</given_name>
+          <surname>Sundqvist</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>369</first_page>
+        <last_page>378</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144hagen-beyond-metapost</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144hagen-beyond-metapost.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Styling Maple graphics with TikZ and LaTeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Travis</given_name>
+          <surname>Stenborg</surname>
+          <ORCID>https://orcid.org/0000-0002-2693-9628</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>379</first_page>
+        <last_page>380</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144stenborg-maple</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144stenborg-maple.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Al-Safi:TB37-1-25-1" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Al-Safi, Sabri</author>
+          <volume>37</volume>
+          <issue>115</issue>
+          <first_page>25</first_page>
+          <cYear>2016</cYear>
+          <article_title>Randomising assignments with SageTeX</article_title>
+          <unstructured_citation>S. Al-Safi. Randomising assignments with SageTeX. TUGboat 37(1):25&#x2013;27, 2016. https://tug.org/TUGboat/tb37-1/tb115alsafi.pdf</unstructured_citation>
+        </citation>
+        <citation key="All:2023:LSC-2" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>All, Timothy</author>
+          <volume>44</volume>
+          <issue>136</issue>
+          <first_page>94</first_page>
+          <cYear>2023</cYear>
+          <doi>10.47397/tb/44-1/tb136all-luacas</doi>
+          <article_title>LuaCAS: Symbolic computation in LaTeX</article_title>
+          <unstructured_citation>T. All, E. Cochrane. LuaCAS: Symbolic computation in LaTeX. TUGboat 44(1):94&#x2013;98, 2023. https://doi.org/10.47397/tb/44-1/tb136all-luacas</unstructured_citation>
+        </citation>
+        <citation key="Castier:TB25-2-166-3" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Castier, Marcelo</author>
+          <volume>25</volume>
+          <issue>81</issue>
+          <first_page>166</first_page>
+          <cYear>2004</cYear>
+          <article_title>Automatic typesetting of formulas using computer algebra</article_title>
+          <unstructured_citation>M. Castier, V.F. Cabral. Automatic typesetting of formulas using computer algebra. TUGboat 25(2):166&#x2013;172, 2004. https://tug.org/TUGboat/tb25-2/tb81castier.pdf</unstructured_citation>
+        </citation>
+        <citation key="Chonacky:2005:CSE7-1-8-4" type="journal_article">
+          <journal_title>Computing in Science &#x0026; Engineering</journal_title>
+          <issn>1521-9615</issn>
+          <author>Chonacky, Norman</author>
+          <volume>7</volume>
+          <first_page>8</first_page>
+          <cYear>2005</cYear>
+          <doi>10.1109/MCSE.2005.18</doi>
+          <article_title>Maple, Mathematica, and Matlab: The 3M&#x2019;s without the Tape</article_title>
+          <unstructured_citation>N. Chonacky, D. Winch. Maple, Mathematica, and Matlab: The 3M&#x2019;s without the Tape. Computing in Science &#x0026; Engineering, 7(1):8&#x2013;16, 2005. https://doi.org/10.1109/MCSE.2005.18</unstructured_citation>
+        </citation>
+        <citation key="Cuyt:2008:BookHdbkCFSF-5" type="book">
+          <author>Cuyt, Annie</author>
+          <cYear>2008</cYear>
+          <doi>10.1007/978-1-4020-6949-9</doi>
+          <article_title>Handbook of Continued Fractions for Special Functions</article_title>
+          <unstructured_citation>A. Cuyt, V.B. Petersen, et al. Handbook of Continued Fractions for Special Functions. Springer, Dordrecht, 2008. https://doi.org/10.1007/978-1-4020-6949-9</unstructured_citation>
+        </citation>
+        <citation key="Earl:2021:BookCODM-6" type="book">
+          <author>Earl, Richard</author>
+          <cYear>2021</cYear>
+          <doi>10.1093/acref/9780198845355.001.0001</doi>
+          <article_title>The Concise Oxford Dictionary of Mathematics</article_title>
+          <unstructured_citation>R. Earl, J. Nicholson. The Concise Oxford Dictionary of Mathematics. Oxford University Press, Oxford, sixth ed., 2021. https://doi.org/10.1093/acref/9780198845355.001.0001</unstructured_citation>
+        </citation>
+        <citation key="Erocal:2010:ICMS2010-12-7" type="conference_paper">
+          <author>Er&#x00F6;cal, Bur&#x00E7;in</author>
+          <first_page>12</first_page>
+          <cYear>2010</cYear>
+          <doi>10.1007/978-3-642-15582-6_4</doi>
+          <isbn>978-3-642-15582-6</isbn>
+          <volume_title>~Mathematical Software &#x2013; ICMS 2010</volume_title>
+          <article_title>The Sage Project: Unifying Free Mathematical Software to Create a Viable Alternative to Magma, Maple, Mathematica and MATLAB</article_title>
+          <unstructured_citation>B. Er&#x00F6;cal, W. Stein. The Sage Project: Unifying Free Mathematical Software to Create a Viable Alternative to Magma, Maple, Mathematica and MATLAB. In Mathematical Software &#x2013; ICMS 2010, K. Fukuda, J. van der Hoeven, et al., eds., pp. 12&#x2013;27, Berlin, 2010. Springer. https://doi.org/10.1007/978-3-642-15582-6_4</unstructured_citation>
+        </citation>
+        <citation key="Fox:2020:BookAPSUM-8" type="book">
+          <author>Fox, William P.</author>
+          <cYear>2020</cYear>
+          <doi>10.1201/9780429469626</doi>
+          <article_title>Advanced Problem Solving Using Maple</article_title>
+          <unstructured_citation>W.P. Fox, W.C. Bauldry. Advanced Problem Solving Using Maple. CRC Press, Boca Raton, FL, 2020. https://doi.org/10.1201/9780429469626</unstructured_citation>
+        </citation>
+        <citation key="Henderson:TB28-1-84-9" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Henderson, Troy</author>
+          <volume>28</volume>
+          <issue>88</issue>
+          <first_page>84</first_page>
+          <cYear>2007</cYear>
+          <article_title>A beginner&#x2019;s guide to MetaPost for creating high-quality graphics</article_title>
+          <unstructured_citation>T. Henderson. A beginner&#x2019;s guide to MetaPost for creating high-quality graphics. TUGboat 28(1):84&#x2013;90, 2007. https://tug.org/TUGboat/tb28-1/tb88henderson.pdf</unstructured_citation>
+        </citation>
+        <citation key="Joshi:TB32-3-269-10" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Joshi, Manjusha</author>
+          <volume>32</volume>
+          <issue>102</issue>
+          <first_page>269</first_page>
+          <cYear>2011</cYear>
+          <article_title>A dream of computing and LaTeXing together: A reality with SageTeX</article_title>
+          <unstructured_citation>M. Joshi. A dream of computing and LaTeXing together: A reality with SageTeX. TUGboat 32(3):269&#x2013;271, 2011. https://tug.org/TUGboat/tb32-3/tb102joshi.pdf</unstructured_citation>
+        </citation>
+        <citation key="Klimek:1997:BookDCSM-11" type="book">
+          <author>Klimek, Graz&#x0307;yna</author>
+          <cYear>1997</cYear>
+          <doi>10.1007/978-1-4612-1826-5</doi>
+          <isbn>1-4612-7301-3</isbn>
+          <article_title>Discovering Curves and Surfaces with Maple</article_title>
+          <unstructured_citation>G. Klimek, M. Klimek. Discovering Curves and Surfaces with Maple. Springer, New York, NY, 1997. https://doi.org/10.1007/978-1-4612-1826-5</unstructured_citation>
+        </citation>
+        <citation key="Liengme:2019:BookMaple-12" type="book">
+          <author>Liengme, Bernard V</author>
+          <cYear>2019</cYear>
+          <doi>10.1088/2053-2571/ab0bb3</doi>
+          <article_title>Maple</article_title>
+          <unstructured_citation>B.V. Liengme. Maple. Morgan &#x0026; Claypool, 2019. https://doi.org/10.1088/2053-2571/ab0bb3</unstructured_citation>
+        </citation>
+        <citation key="Luczak:TB29-1-164-13" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>&#x0141;uczak, Tomasz</author>
+          <volume>29</volume>
+          <issue>91</issue>
+          <first_page>164</first_page>
+          <cYear>2008</cYear>
+          <article_title>LyX: An editor not just for secretaries</article_title>
+          <unstructured_citation>T. &#x0141;uczak. LyX: An editor not just for secretaries. TUGboat 29(1):164&#x2013;165, 2008. https://tug.org/TUGboat/tb29-1/tb91luczak-lyx.pdf</unstructured_citation>
+        </citation>
+        <citation key="Mertz:TB34-3-302-14" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Mertz, Andrew</author>
+          <volume>34</volume>
+          <issue>108</issue>
+          <first_page>302</first_page>
+          <cYear>2013</cYear>
+          <article_title>A gentle introduction to PythonTeX</article_title>
+          <unstructured_citation>A. Mertz, W. Slough. A gentle introduction to PythonTeX. TUGboat 34(3):302&#x2013;312, 2013. https://tug.org/TUGboat/tb34-3/tb108mertz.pdf</unstructured_citation>
+        </citation>
+        <citation key="Zelen:1965:InCollectionHdbkMathFunc-15" type="book_chapter">
+          <author>Zelen, Marvin</author>
+          <first_page>925</first_page>
+          <cYear>1965</cYear>
+          <volume_title>Handbook of Mathematical Functions: with Formulas, Graphs, and Mathematical Tables</volume_title>
+          <article_title>Probability Functions</article_title>
+          <unstructured_citation>M. Zelen, N.C. Severo. Probability Functions. In Handbook of Mathematical Functions: with Formulas, Graphs, and Mathematical Tables, M. Abramowitz, I.A. Stegun, eds., pp. 925&#x2013;995. Dover, New York, ninth, revised ed., 1965.</unstructured_citation>
+        </citation>
+        <citation key="Zwillinger:2018:BookCRC-16" type="book">
+          <author>Zwillinger, Dan</author>
+          <cYear>2018</cYear>
+          <doi>10.1201/9781315154978</doi>
+          <article_title>CRC Standard Mathematical Tables and Formulas</article_title>
+          <unstructured_citation>D. Zwillinger, ed. CRC Standard Mathematical Tables and Formulas. CRC Press, Boca Raton, FL, thirty-third ed., 2018. https://doi.org/10.1201/9781315154978</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>A look at complaints about <i>The TeXbook</i></title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Udo</given_name>
+          <surname>Wermuth</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>381</first_page>
+        <last_page>396</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144wermuth-texbook</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144wermuth-texbook.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="citePA-1">
+          <unstructured_citation>Paul Abrahams, &#x201c;Response to Victor Eijkhout&#x201d;, TUGboat 12:2 (1991), 302&#x2013;303. https://tug.org/TUGboat/tb12-2/tb32letters.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeAHB-2">
+          <unstructured_citation>Paul W. Abrahams, Kathryn A. Hargreaves, Karl Berry, TeX for the Impatient, free edition, 2003. The latest edition (2020) and translations can be found under: https://www.ctan.org/pkg/impatient</unstructured_citation>
+        </citation>
+        <citation key="citeAB-3">
+          <unstructured_citation>Angela Barden, &#x201c;Some TeX manuals&#x201d;, TUGboat 12:1 (1991), 166&#x2013;170. https://tug.org/TUGboat/tb12-1/tb31barden.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeDB-4">
+          <unstructured_citation>David Bausum, TeX Reference Manual, Norwell, Massachusetts: Kluwer Academic Publishers, 2002. https://tug.org/utilities/plain/cseq.html</unstructured_citation>
+        </citation>
+        <citation key="citeADB-5">
+          <unstructured_citation>Andrew Donald Booth, &#x201c;Review of Latex: a document preparation system&#x201d;, (1990). https://www.computingreviews.com/review/review_review.cfm?review_id=123336</unstructured_citation>
+        </citation>
+        <citation key="citeWC-6">
+          <unstructured_citation>William R. Cheswick, &#x201c;A Permuted Index for TeX and LaTeX&#x201d;, TUGboat 10:4 (1989), 707&#x2013;713. https://tug.org/TUGboat/tb10-4/tb26cheswick.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeMC-7">
+          <unstructured_citation>Malcolm Clark, A plain TeX Primer, Oxford University Press, 1992.</unstructured_citation>
+        </citation>
+        <citation key="citeMD-8">
+          <unstructured_citation>Michael Doob, &#x201c;Of the Computer Scientist, by the Computer Scientist, for the Computer Scientist&#x201d;, TUGboat 10:4 (1989), 533&#x2013;539. https://tug.org/TUGboat/tb10-4/tb26doob.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeVE-9">
+          <unstructured_citation>Victor Eijkhout, TeX by Topic&#x2014;A TeXnician&#x2019;s Reference, DANTE and Lehmanns, Berlin, 2014.
+
+Errata: https://www.dante.de/wp-content/uploads/2019/07/TexByTopic_Errata.pdf See also: https://www.eijkhout.net/tex/tex-by-topic.html Latest version: https://github.com/VictorEijkhout/tex-by-topic/blob/main/TeXbyTopic.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeEP-10">
+          <unstructured_citation>G&#x00E9;rard G. Emch, Arnold K. Pizer, &#x201c;Letter to the editors&#x201d;, TUGboat 1:1 (1980), 22&#x2013;23. https://tug.org/TUGboat/tb01-1/tb01emch.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeRF-11">
+          <unstructured_citation>Richard Furuta, &#x201c;Review of TeX and Metafont, New Directions in Typesetting by D. E. Knuth&#x201d;, Proceedings of the IEEE 71:9 (1983), 1117&#x2013;1118.
+
+&#xfffd; https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=1457003 &#xfffd;</unstructured_citation>
+        </citation>
+        <citation key="citeHH-12">
+          <unstructured_citation>Hope Hamilton, &#x201c;Mastering TeX with Templates&#x201d;, TUGboat 10:4 (1989), 541&#x2013;548. https://tug.org/TUGboat/tb10-4/tb26hamilton.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeYH-13">
+          <unstructured_citation>Yannis Haralambous, &#x201c;TeX as a path&#x201d;, TUGboat 39:1 (2018), 8&#x2013;15. https://tug.org/TUGboat/tb39-1/tb121haralambous-knuth80.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeHrE-14">
+          <unstructured_citation>Amy Hendrickson, &#x201c;Review of TeX by Topic by Victor Eijkhout&#x201d;, MAPS 8 (1992), 137&#x2013;138. https://www.ntg.nl/maps/08/27.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeAH-15">
+          <unstructured_citation>Alan Hoenig, TeX Unbound&#x2014;LaTeX &#x0026; TeX Strategies for Fonts, Graphics, &#x0026; More, Oxford University Press, 1998.</unstructured_citation>
+        </citation>
+        <citation key="citetex-16">
+          <unstructured_citation>Donald E. Knuth, Tau Epsilon Chi, a system for technical text, Stanford Computer Science Report STAN-CS-78-675, November 1978.</unstructured_citation>
+        </citation>
+        <citation key="citeTeXMF-17">
+          <unstructured_citation>Donald E. Knuth, TeX and Metafont: New Directions in Typesetting, Providence, Rhode Island: American Mathematical Society, and Bedford, Massachusetts: Digital Press, 1979.
+
+&#xfffd; https://bitsavers.org/pdf/dec/_Books/_Digital_Press/Knuth_TeX_and_Metafont_New_Directions_in_Typesetting_1979.pdf &#xfffd;</unstructured_citation>
+        </citation>
+        <citation key="citeCTvA-18">
+          <unstructured_citation>Donald E. Knuth, The TeXbook, Volume A of Computers&#x00A0;&amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1984. https://www-cs-faculty.stanford.edu/~knuth/abcde.html</unstructured_citation>
+        </citation>
+        <citation key="citeCTvB-19">
+          <unstructured_citation>Donald E. Knuth, TeX: The Program, Volume B of Computers&#x00A0;&amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1986.</unstructured_citation>
+        </citation>
+        <citation key="citeNET-20">
+          <unstructured_citation>Donald E. Knuth &#x201c;Notes on the Errors of TeX&#x201d;, TUGboat 10:4 (1989), 529&#x2013;531. https://tug.org/TUGboat/tb10-4/tb26knut.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeDEKALS-21">
+          <unstructured_citation>Donald E. Knuth, &#x201c;Arthur Lee Samuel, 1901&#x2013;1990&#x201d;, TUGboat 11:4 (1990), 497&#x2013;498. https://tug.org/TUGboat/tb11-4/tb30knut-samuel.pdf 
+
+</unstructured_citation>
+        </citation>
+        <citation key="citeFTM-22">
+          <unstructured_citation>Donald E. Knuth, &#x201c;The Future of TeX and Metafont&#x201d;, TUGboat 11:4 (1990), 489. https://tug.org/TUGboat/tb11-4/tb30knut.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeLP-23">
+          <unstructured_citation>Donald E. Knuth, Literate Programming, CSLI Lecture Notes No. 27, 1992.</unstructured_citation>
+        </citation>
+        <citation key="citeCS-24">
+          <unstructured_citation>Donald E. Knuth, Selected Papers on Computer Science, CSLI Lecture Notes No. 59, 1996.</unstructured_citation>
+        </citation>
+        <citation key="citeKE-25">
+          <unstructured_citation>Donald E. Knuth, &#x201c;&#x03A7;&#x03B1;&#x03B9;&#x03C1;&#x03B5;&#x03C4;&#x03B9;&#x03C3;&#x03BC;&#x03CC;&#x03C2; &#x03C4;&#x03BF;&#x03C5; &#x03BA;&#x03B1;&#x03B8;&#x03B7;&#x03B3;&#x03B7;&#x03C4;&#x03AE; Knuth&#x201d;, Eutypon 1 (1998), 2. https://www.eutypon.gr/eutypon/pdf/e1998-01/e01-a00.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeDT-26">
+          <unstructured_citation>Donald E. Knuth, Digital Typography, CSLI Lecture Notes No. 78, 1999.</unstructured_citation>
+        </citation>
+        <citation key="citeDA-27">
+          <unstructured_citation>Donald E. Knuth, Selected Papers on Design of Algorithms, CSLI Lecture Notes No. 191, 2010.</unstructured_citation>
+        </citation>
+        <citation key="citeFG-28">
+          <unstructured_citation>Donald E. Knuth, Selected Papers on Fun &#x0026; Games, CSLI Lecture Notes No. 192, 2011.</unstructured_citation>
+        </citation>
+        <citation key="citeCP-29">
+          <unstructured_citation>Donald E. Knuth, Companion to the Papers of Donald Knuth, CSLI Lecture Notes No. 202, 2011.</unstructured_citation>
+        </citation>
+        <citation key="citeUXIV-30">
+          <unstructured_citation>Donald E. Knuth, &#x201c;The TeX tuneup of 2014&#x201d;, TUGboat 35:1 (2014), 5&#x2013;8. https://tug.org/TUGboat/tb35-1/tb109knut.pdf See also the latest tune-up of 2021: https://tug.org/TUGboat/tb42-1/tb130knuth-tuneup21.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeRK-31">
+          <unstructured_citation>Robin L. Kubek, &#x201c;TeX for the Word Processing Operator&#x201d;, TUGboat 10:4 (1989), 561&#x2013;566. https://tug.org/TUGboat/tb10-4/tb26kubek.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeALS-32">
+          <unstructured_citation>Arthur L. Samuel, First Grade TeX&#x2014;A Beginner&#x2019;s TeX Manual, Stanford Computer Science Report STAN-CS-83-985, November 1983. https://tug.org/texniques/tn11/firstgrade-all.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeSreport-33">
+          <unstructured_citation>Norbert Schwarz, Einf&#x00FC;hrung in TeX, Rechenzentrums-Schriften, Bd. 5, Rechenzentrum der Ruhr-Universit&#x00E4;t Bochum, 3rd ed., January 1987.</unstructured_citation>
+        </citation>
+        <citation key="citeSbook-34">
+          <unstructured_citation>Norbert Schwarz, Einf&#x00FC;hrung in TeX, 2nd ed., Bonn, Addison-Wesley (Deutschland), 1988. Third edition as PDF: https://www.ruhr-uni-bochum.de/TeX/einfuehrung-in-tex.pdf</unstructured_citation>
+        </citation>
+        <citation key="citePS-35">
+          <unstructured_citation>Peter Seibel, Coders at work&#x2014;Reflections on the craft of programming, Apress, 2009.</unstructured_citation>
+        </citation>
+        <citation key="citeTrVE-36">
+          <unstructured_citation>Philip Taylor, &#x201c;Book review: TeX by Topic&#x201d;, TUGboat 13:2 (1992), 185&#x2013;188. https://tug.org/TUGboat/tb13-2/tb35resources.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeBV-37">
+          <unstructured_citation>Boris Veytsman, answer to the question &#x201c;Learning TeX via The TeXbook&#x201d;, TeX&#x2013;LaTeX.SE, 2012. https://tex.stackexchange.com/questions/51695/learning-tex-via-the-texbook/51702#51702</unstructured_citation>
+        </citation>
+        <citation key="citeWoS-38">
+          <unstructured_citation>Web of Stories: Donald E. Knuth Part 60: Writing a users&#x2019; manual for TeX. https://www.webofstories.com/play/donald.knuth/60 Part 7: My sense of humor. https://webofstories.com/play/donald.knuth/7</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Pages</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Mikael P.</given_name>
+          <surname>Sundqvist</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>397</first_page>
+        <last_page>403</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144hagen-pages</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144hagen-pages.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Flagging</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>404</first_page>
+        <last_page>409</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144hagen-flagging</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144hagen-flagging.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>On differences in paragraph length between TeX's first and second pass</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Udo</given_name>
+          <surname>Wermuth</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>410</first_page>
+        <last_page>419</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144wermuth-parpass</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144wermuth-parpass.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="citeCTvA-1">
+          <unstructured_citation>Donald E. Knuth, The TeXbook, Volume A of Computers&#x00A0;&amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1984.</unstructured_citation>
+        </citation>
+        <citation key="citeUWtp-2">
+          <unstructured_citation>Udo Wermuth, &#x201c;Tracing paragraphs,&#x201d; TUGboat 37:3 (2016), 358&#x2013;373. Errata in TUGboat 38:3 (2017), 414. http://tug.org/TUGboat/tb37-3/tb117wermuth.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeUWpfs-3">
+          <unstructured_citation>Udo Wermuth, &#x201c;Can &#x2018;&#x005C;parfillskip=0pt&#x2019; shorten a short paragraph in plain TeX by two lines?&#x201d;, TUGboat 43:3 (2022), 343&#x2013;350. http://www.tug.org/TUGboat/tb43-3/tb135wermuth-shorten.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>A technical contribution to the description of the 16th century fonts of Polish printers</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Janusz S.</given_name>
+          <surname>Bie&#x0144;</surname>
+          <ORCID>https://orcid.org/0000-0001-5006-8183</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>420</first_page>
+        <last_page>426</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144bien-typoglyphs</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144bien-typoglyphs.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="bien16-1">
+          <unstructured_citation>J.S. Bie&#x0144;. 16th century Latin printed brevigraphs in Unicode&#x2014;a computer resource. Proceedings, 2022, part I. In Grapholinguistics in the 21st Century /grafematik/ June 8&#x00ad;10, 2022. Y. Haralambous, ed. Fluxus Editions, 2024, pp. 299&#x00ad;314. doi.org/10.36824/2022-graf-bien</unstructured_citation>
+        </citation>
+        <citation key="bien20-2">
+          <unstructured_citation>J.S. Bie&#x0144;. Repertuar znak&#x00f3;w pimiennych - problemy i perspektywy (postprint), 2020. rgdoi.net/10.13140/RG.2.2.16822.83529</unstructured_citation>
+        </citation>
+        <citation key="bien25-3">
+          <unstructured_citation>J.S. Bie&#x0144;, ed. Polonia Typographica Saeculi Sedecimi - Tlocznie polskie XVI stulecia - Monografie i podobizny zasob&#x00f3;w drukarskich. Reconstructed font tables (draft). Apr. 2025. doi.org/10.5281/zenodo.14992305</unstructured_citation>
+        </citation>
+        <citation key="johnson-4">
+          <unstructured_citation>A.F. Johnson. Polonia Typographica Saeculi Sedecimi. Warsaw, Polska Akademia Nauk, Instytut Bada Literackich, 1936&#x00ad;64. Fasc. 1&#x00ad;5, Pls. 1&#x00ad;245. The Library s5-XX(4):330&#x00ad;331, 1965. doi.org/10.1093/library/s5-XX.4.330</unstructured_citation>
+        </citation>
+        <citation key="Robinson2016-5">
+          <unstructured_citation>P. Robinson. Why interfaces do not and should not matter for scholarly digital editions. In Digital Scholarly Editions as Interfaces. Abstracts and Programme. University of Graz. Sept. 2016. www.youtube.com/watch?v=LEoFkdWAsGY</unstructured_citation>
+        </citation>
+        <citation key="tomaszewski-6">
+          <unstructured_citation>A. Tomaszewski. Praca nad historycznym wydawnictwem dla Biblioteki Narodowej (LETTRA&#x2014;Krak&#x00f3;w 2018). BachoTEX. 2019. www.gust.org.pl/bachotex/2019-pl/presentations/atomaszewski-2-2019.pdf</unstructured_citation>
+        </citation>
+        <citation key="wikipedia-7">
+          <unstructured_citation>Wikipedia contributors. DjVu&#x2014;Wikipedia, the free encyclopedia. [Online; accessed 26-April-2025]. 2025. en.wikipedia.org/wiki/DjVu</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The treasure chest</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>427</first_page>
+        <last_page>427</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144chest</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144chest.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TeX Development Fund 2021&#x2013;2025 report</title>
+      </titles>
+      <contributors>
+        <organization sequence="first" contributor_role="author">TeX Development Fund committee</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2025</year>
+      </publication_date>
+      <pages>
+        <first_page>429</first_page>
+        <last_page>429</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/46-3/tb144devfund</doi>
+        <timestamp>20251119170643</timestamp>
+        <resource>https://tug.org/TUGboat/tb46-3/tb144devfund.html</resource>
+      </doi_data>
+    </journal_article>
+  </journal></body>
+</doi_batch>

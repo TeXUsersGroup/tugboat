@@ -1,0 +1,17 @@
+\bibitem{citeCTvA} Donald E. Knuth, \TB,
+   Volume~A of \CandT, Boston, Massachusetts: \AW, 1984.
+
+\bibitem{citeUWtp} Udo Wermuth,
+   ``Tracing paragraphs,'' \newline {\sl \TUB\/ \bf37}:3 (2016), 358--373.\newline
+   Errata in {\sl \TUB\/ \bf38}:3 (2017), 414.\par
+   \biburl http://tug.org/TUGboat/tb37-3/tb117wermuth.pdf\endurl
+   \endbib(2016-12-08)
+
+\bibitem{citeUWpfs} Udo Wermuth,
+   ``Can `{\cs{parfillskip}}$=0\,pt$' shorten a short paragraph in
+   plain \TeX\ by two lines?'',
+   {\sl \TUB\ \bf43}:3 (2022), 343--350.\par
+   \biburl http://www.tug.org/TUGboat/tb43-3/tb135wermuth-shorten.pdf\endurl
+   \endbib(2023-05-19)
+
+\end{thebibliography}

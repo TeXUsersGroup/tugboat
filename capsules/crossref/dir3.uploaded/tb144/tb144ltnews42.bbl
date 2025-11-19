@@ -1,0 +1,41 @@
+\begin{thebibliography}{9}\frenchspacing
+
+\fontsize{9.3}{11.3}\selectfont
+
+\bibitem{42:Lamport}
+Leslie Lamport.
+\newblock \emph{{\LaTeX}: {A} Document Preparation System: User's Guide and Reference
+  Manual}.
+\newblock \mbox{Addison}-Wesley, Reading, MA, USA, 2nd edition, 1994.
+\newblock ISBN 0-201-52983-1.
+\newblock Reprinted with corrections in 1996.
+
+\bibitem{42:ltnews} \LaTeX{} Project Team.
+  \emph{\LaTeXe{} News 1--42}. November 2025.
+  \url{https://latex-project.org/news/latex2e-news/ltnews.pdf}
+
+\bibitem{42:ltnews35} \LaTeX{} Project Team.
+  \emph{\LaTeXe{} News 35}. June 2022.
+  \url{https://latex-project.org/news/latex2e-news/ltnews35.pdf}
+
+\bibitem{42:ltnews38} \LaTeX{} Project Team.
+  \emph{\LaTeXe{} News 38}. November 2023.
+  \url{https://latex-project.org/news/latex2e-news/ltnews38.pdf}
+
+\bibitem{42:ltnews39} \LaTeX{} Project Team.
+  \emph{\LaTeXe{} News 39}. June 2024.
+  \url{https://latex-project.org/news/latex2e-news/ltnews39.pdf}
+
+\bibitem{42:ltnews41} \LaTeX{} Project Team.
+  \emph{\LaTeXe{} News 41}. June 2025.
+  \url{https://latex-project.org/news/latex2e-news/ltnews41.pdf}
+
+\bibitem{tagging-status} \LaTeX{} Project Team.
+  \emph{Tagging Status of \LaTeX{} Packages and Classes}. November 2025.
+  \url{https://latex3.github.io/tagging-project/tagging-status}
+  
+\bibitem{tagging-project} \LaTeX{} Project Team.
+  \emph{The \LaTeX{} Tagged PDF repository}. November 2025.
+  \url{https://github.com/latex3/tagging-project/issues}
+
+\end{thebibliography}
