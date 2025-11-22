@@ -1,3 +1,7 @@
+2025-11-22  Karl Berry  <karl@freefriends.org>
+
+	* check-urls-tub: pipefail; doc updates.
+
 2025-10-27  Karl Berry  <karl@freefriends.org>
 
 	* check-splice-tub: recognize \tbnn <ident>, used for

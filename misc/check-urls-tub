@@ -3,21 +3,28 @@
 # License: do what you want to.
 # Originally written by Max Chernoff, 31jul2024.
 # Extract urls from a pdf, or as given, and check them. Assume GNU grep
-# and bash (for PIPESTATUS).
+# and bash (for pipefail).
+
+referer_domain=freefriends.org # sometimes helps to not be blocked
+                               # don't use tug for fear of blacklisting
+# update from time to time:
+agent="Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
 
 exit_status=0
-mydomain=freefriends.org #`hostname | perl -pe 's/.*\..*\..*$/'`
+set -o pipefail
+
+# take list of urls on stdin and wget each.
 ckurls () {
-  wget -i- -nv --no-check-cert --wait=1 --timeout=8 --tries=0 --spider \
-       --user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0" \
-       --referer=https://$mydomain \
+  wget -i- -nv --no-check-cert --wait=1 --timeout=4 --tries=1 --spider \
+       --user-agent="$agent"
+       --referer=https://$referer_domain \
        2>&1 \
   | tee /dev/stderr # so we get output as it goes along
   test $exit_status -eq 0 || exit_status=$?
 }
 
-# can't do this since then sed waits for the whole input.
-#  | sed -e 's/^.* URL: //' -e 's/:$//' \
+# doesn't actually do the substitutions.
+#  | sed --unbuffered -e 's/^.* URL: //' -e 's/:$//' \
 
 for f in "$@"; do
   if test "x$f" = x--file; then

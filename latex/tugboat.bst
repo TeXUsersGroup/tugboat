@@ -28,15 +28,18 @@
 %%%     omit "and" from author lists, per Oren P.
 %%%   Use \emph instead of \em so we get automatic italic corrections.
 %%%   New fields for editors:
-%%%     "journaltie" - ~ instead of space after journal name.
-%%%     "monthtie" - ~ instead of space after month name.
-%%%     "newpage" - force page break after entry.
-%%%     "nojournalcomma" - if set, omit comma after journal name.
-%%%     "nowarning" - if set, omit empty field warnings from output.check.
-%%%     "pagesnodashify" - if set, don't convert - to -- in pages field.
-%%%     "prebibitem" - material output before \bibitem, with newline appended
+%%%     isbnoutput - output value of isbn field, if present,
+%%%       prefixed by "ISBN~" unless the field already contains "ISBN".
+%%%     isbnspace - output a space instead of a tie after "ISBN".
+%%%     journaltie - ~ instead of space after journal name.
+%%%     monthtie - ~ instead of space after month name.
+%%%     newpage - force page break after entry.
+%%%     nojournalcomma - if set, omit comma after journal name.
+%%%     nowarning - if set, omit empty field warnings from output.check.
+%%%     pagesnodashify - if set, don't convert - to -- in pages field.
+%%%     prebibitem - material output before \bibitem, with newline appended
 %%%       (for example, section headings).
-%%%     "urlnewline" - force line break before url or doi value.
+%%%     urlnewline - force line break before url or doi value.
 %%% --karl, originally created 24jul18.
 %%% 
 %%% Modification of BibTeX style file /usr/local/texlive/2009/texmf-dist/bibtex/bst/base/abbrv.bst
@@ -92,6 +95,9 @@ ENTRY
     urldate    % ctan
     version    % ctan
     %
+    isbn           % tub
+    isbnoutput     % tub
+    isbnspace      % tub
     journaltie     % tub
     monthtie       % tub
     newpage        % tub
@@ -152,7 +158,7 @@ INTEGERS {
 }
 % ...urlbst to here
 
-% tub: move up to use earlier.
+% emacs-page: generic functions.
 FUNCTION {not}
 {   { #0 }
     { #1 }
@@ -171,6 +177,57 @@ FUNCTION {or}
   if$
 }
 
+% For the doi, sometimes people write doi = "10.x/y"
+% and sometimes they write doi ="https://doi.org/10.x/y".
+% So we check if the doi string starts with https://doi.org
+% (aka the doiurl variable), and only add it if needed.
+% 
+% This code is from https://tex.stackexchange.com/questions/119237
+% (thank you, mafp). The original urlbst package solved the problem in a
+% different (simpler) way in its 0.9.1 (January 2023) release.
+% 
+% The "X Y contains" function checks if string Y is contained in X.
+% Although we only need to check if Y is at the beginning of X,
+% it makes no practical difference, so just use it as-is.
+% 
+% We use this in output.isbn also. Could use it in other places.
+% 
+INTEGERS { strl }
+FUNCTION { string.length }
+{
+  #1 'strl :=
+  {duplicate$ duplicate$ #1 strl substring$ = not}
+    { strl #1 + 'strl :=}
+  while$
+  pop$ strl
+}
+
+INTEGERS {find.length search.start search.end done}
+STRINGS  {find.string find.pattern}
+FUNCTION {contains}
+{
+  'find.pattern :=
+  'find.string :=
+  find.pattern string.length 'find.length :=
+  #1 'search.start :=
+  find.string string.length find.length - #2 + 'search.end :=
+  #0 'done :=
+  { search.start search.end < }
+  {
+    find.string search.start find.length substring$ find.pattern =
+      { 
+        #1 'done :=
+        search.end 'search.start :=%% stop searching
+      }
+      { #1 search.start + 'search.start := }
+    if$
+  }
+  while$
+  done
+}
+
+% emacs-page: subroutines, etc.
+% 
 FUNCTION {init.state.consts}
 { #0 'outside.brackets := % urlbst...
   #1 'open.brackets :=
@@ -465,7 +522,7 @@ FUNCTION {emphasize}
   if$
 }
 
-% emacs-page
+% emacs-page format functions
 %%% from trunc-auth.bst (slightly edited):
 %%% There are two constants that allow for the truncation of a list of author
 %%% (or editor) names -- max.names and trunc.num.  And here's how they work:
@@ -876,7 +933,7 @@ FUNCTION {format.in.ed.booktitle}
       bookauthor empty$
       and
         { "In~" booktitle emphasize * }
-        { "In " booktitle emphasize *  ", " format.editors.bookauthors * * }
+        { "In~" booktitle emphasize *  ", " format.editors.bookauthors * * }
       if$
     }
   if$
@@ -922,7 +979,7 @@ FUNCTION {format.article.crossref}
         { "In \emph{" journal * "}" * }
       if$
     }
-    { "In " key * }
+    { "In~" key * }
   if$
   " \cite{" * crossref * "}" *
 }
@@ -947,7 +1004,7 @@ FUNCTION {format.crossref.editor}
 FUNCTION {format.book.crossref}
 { volume empty$
     { "empty volume in " cite$ * "'s crossref of " * crossref * warning$
-      "In "
+      "In~"
     }
     { "Volume" volume tie.or.space.connect
       " of " *
@@ -986,12 +1043,39 @@ FUNCTION {format.incoll.inproc.crossref}
             { "In \emph{" booktitle * "}" * }
           if$
         }
-        { "In " key * }
+        { "In~" key * }
       if$
     }
-    { "In " format.crossref.editor * }
+    { "In~" format.crossref.editor * }
   if$
   " \cite{" * crossref * "}" *
+}
+
+% Output ISBN only if explicitly requested; usually there is a url, or
+% the other information seems sufficient. But sometimes for books in
+% multiple editions, etc., it's useful.
+% 
+% If the value contains the string "ISBN", just output it; otherwise,
+% first output the string "ISBN". And, if we do output it, separate that
+% "ISBN" string from the value with a tie by default, or with a space if
+% the field isbnspace is set.  Ordinarily we wouldn't want a line break
+% there, but occasionally it might be less bad than alternatives.
+%
+FUNCTION {output.isbn}
+{
+  isbn empty$ not  isbnoutput empty$ not  and
+    { isbn "ISBN" contains
+        { "" } % their value already has "ISBN", no extra output.
+        { "ISBN"
+          isbnspace empty$ { "~" } { " " } if$
+          *
+        }
+      if$
+      isbn *
+      "isbn" output.check }
+    'skip$  % isbn was empty, or isbnoutput not specified
+  if$
+  new.block
 }
 
 % emacs-page urlbst...
@@ -1089,53 +1173,6 @@ FUNCTION {format.pubmed}
 %    { doiprefix doi * doiurl doi * make.href }
 %  if$
 %}
-
-% For the doi, sometimes people write doi = "10.x/y"
-% and sometimes they write doi ="https://doi.org/10.x/y".
-% So we check if the doi string starts with https://doi.org
-% (aka the doiurl variable), and only add it if needed.
-% 
-% This code is from https://tex.stackexchange.com/questions/119237
-% (thank you, mafp). The original urlbst package solved the problem in a
-% different (simpler) way in its 0.9.1 (January 2023) release.
-% 
-% The "X Y contains" function checks if string Y is contained in X.
-% Although we only need to check if Y is at the beginning of X,
-% it makes no practical difference, so just use it as-is.
-% 
-INTEGERS { strl }
-FUNCTION { string.length }
-{
-  #1 'strl :=
-  {duplicate$ duplicate$ #1 strl substring$ = not}
-    { strl #1 + 'strl :=}
-  while$
-  pop$ strl
-}
-
-INTEGERS {find.length search.start search.end done}
-STRINGS  {find.string find.pattern}
-FUNCTION {contains}
-{
-  'find.pattern :=
-  'find.string :=
-  find.pattern string.length 'find.length :=
-  #1 'search.start :=
-  find.string string.length find.length - #2 + 'search.end :=
-  #0 'done :=
-  { search.start search.end < }
-  {
-    find.string search.start find.length substring$ find.pattern =
-      { 
-        #1 'done :=
-        search.end 'search.start :=%% stop searching
-      }
-      { #1 search.start + 'search.start := }
-    if$
-  }
-  while$
-  done
-}
 
 FUNCTION {format.doi}
 { doi empty$
@@ -1298,6 +1335,7 @@ FUNCTION {book}
     }
   if$
   new.block
+  %
   title empty$ 'skip$ 'possibly.setup.inlinelink if$ % urlbst
   format.btitle "title" output.check
   crossref missing$
@@ -1315,6 +1353,7 @@ FUNCTION {book}
   format.edition output
   format.date "year" output.check
   new.block
+  output.isbn
   note output
   fin.entry
 }
@@ -1365,6 +1404,7 @@ FUNCTION {inbook}
   format.edition output
   format.date "year" output.check
   new.block
+  output.isbn
   note output
   fin.entry
 }
@@ -1392,6 +1432,7 @@ FUNCTION {incollection}
     }
   if$
   new.block
+  output.isbn
   note output
   fin.entry
 }
@@ -1427,6 +1468,7 @@ FUNCTION {inproceedings}
     }
   if$
   new.block
+  output.isbn
   note output
   fin.entry
 }
@@ -1464,6 +1506,7 @@ FUNCTION {manual}
   format.edition output
   format.date output
   new.block
+  output.isbn
   note output
   fin.entry
 }
@@ -1565,6 +1608,7 @@ FUNCTION {proceedings}
     }
   if$
   new.block
+  output.isbn
   note output
   fin.entry
 }

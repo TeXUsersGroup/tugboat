@@ -244,8 +244,8 @@ awsbounce@crossref.org.
 
 Registering DOIs will also cause crossref to send mail to authors.
 
-If landing files are not in place yet, copy them to the live directory
-now, per above.
+If landing files are not in place yet, copy them to the live directory:
+  scp ... # per above
 
 Then commit any changes to our source files:
  cd ~tubprod/svn/capsules
@@ -268,7 +268,7 @@ Then archive all the files (after registering):
   #
   # svn commit the generated files:
   cd ~tubprod/svn/capsules/crossref
-  nnn=...
+  nnn=`\ls $dir/TB* | sed s,.*TB,,`; export nnn; echo $nnn # integer sequence
   ls dir*/archive.tb$nnn # should not exist
   #
   svn mkdir dir0.capout/archive.tb$nnn
@@ -278,26 +278,26 @@ Then archive all the files (after registering):
   # We save the .bib files in a tarball just so they aren't so easily
   # browsable, since these are mostly authors' source files.
   svn mkdir dir1.lndout/archive.tb$nnn
-  (cd dir1.lndout && tar czf archive.tb$nnn/tb${nnn}bib.tgz bib && rm -rf bib)
+  (cd dir1.lndout && tar czvf archive.tb$nnn/tb${nnn}bib.tgz bib && rm -rf bib)
   mv dir1.lndout/tb${nnn}* dir1.lndout/archive.tb$nnn
   ls dir1.lndout # only archive.* should remain
   #
-  # bib for dir3 and dir2:
-  (cd dir2.process && tar czf archive.tb$nnn/tb${nnn}bib.tgz bib && rm -rf bib)
-  #
-  # dir3 before dir2 since we save them in both places, in case of edits.
+  # copy into dir3 from dir2 before we move dir2, since we save them in
+  # both places, in case of edits.
   svn mkdir dir3.uploaded/tb$nnn
   cp -pr dir2.process/{issue.xml,tb${nnn}*} !$
   ls dir3.uploaded # only archive.* should remain
   #
   svn mkdir dir2.process/archive.tb$nnn
-  (cd dir2.process && tar czf tb$nnn/tb${nnn}bib.tgz bib && rm -rf bib)
-  mv dir2.process/{issue.xml,tb${nnn}*} !$
+  (cd dir2.process && tar czf archive.tb$nnn/tb${nnn}bib.tgz bib && rm -rf bib)
+  mv dir2.process/{issue.xml,tb${nnn}*} dir2.process/archive.tb$nnn
   ls dir2.process # only archive.* should remain
+  # copy bib tarball into dir3 also.
+  cp -p dir2.process/archive.tb$nnn/tb${nnn}bib.tgz dir3.uploaded/tb$nnn
   #
   svn -q add */*tb${nnn}/*
   svn status
-  svn commit -m"archive tb$nnn uploaded files as archived" dir*
+  svn commit -m"archive tb$nnn files as uploaded" dir*
 
 Then install pdfs on tug.org, per ~tubprod/README.
 
@@ -307,8 +307,8 @@ pages to say "publicly available now". This is irritating, but it seems
 useful enough to state explicitly whether or not an article is public to
 put up with it. To do this:
 
-previss=46-1
-prevnnn=142
+previss=46-2
+prevnnn=143
 
 - ensure that tb${prevnnn}capsule.txt is up to date, without /members/ urls.
 cd ../capsules
@@ -336,7 +336,7 @@ scp -p `cat /tmp/ch-land` $host:/home/httpd/html/TUGboat/tb$previss/
 \mv `cat /tmp/ch-land` archive.tb${prevnnn}/
 
 - let's not bother to update the archives in the other dir*,
-  since only the landing files are what's being changed live.
+  since only the landing files are being changed live.
   Instead, remove the generated files so we'll be clean for next time:
 cd ..
 ls -lt dir*/tb${prevnnn}* # bbl/abs/etc. should be old, rpi/html new

@@ -1,3 +1,17 @@
+2025-11-22  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst (contains): move earlier.
+
+	(format.in.ed.booktitle,
+	 format.book.crossref,
+	 format.article.crossref,
+	 format.incoll.inproc.crossref): "In~" instead of "In ".
+
+        (isbn,isbnoutput,isbnspace): new fields.
+	(output.isbn): new fn.
+	(book,inbook,incollection,inproceedings,manual,proceedings): call it.
+	Added for tb145kurz-manycol.
+
 2025-11-10  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.bst: tie months and "ed." by default.

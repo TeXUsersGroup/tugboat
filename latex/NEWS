@@ -8,6 +8,10 @@ ltugboat.cls:
 tugboat.bst:
 - use a tie after month abbreviations by default (monthtie=0 to override).
 - use a tie after edition numbers, like "1st~ed.".
+- use a tie after the "In" output by @incollection, etc.
+- if the new field isbnoutput is set, output the isbn field if it's present,
+  preceded by "ISBN~" unless the field value already contains "ISBN".
+  Use a space instead of ~ if the field isbnspace is set.
 
 2.35 (2025-10-27):
 ltugboat.cls:
