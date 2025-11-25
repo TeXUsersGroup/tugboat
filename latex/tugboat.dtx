@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2025-11-10 v2.35
+                   [2025-11-25 v2.35
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -1415,10 +1415,32 @@
 % to check for it.
 % 
 \ExplSyntaxOn
+% Test whether #1 matches the leading characters of #2.
+\cs_new:Npn \str_if_starts_with:nnTF #1#2
+  {
+    % #1 = prefix to test
+    % #2 = full string
+    % 
+    % compare the first N characters (tokens) of the full string #2,
+    %   where N is the length of the prefix #1,
+    % to the prefix.
+    \str_if_eq:eeTF
+      { \str_range:nnn {#2} {1} { \str_count:n {#1} } }
+      {#1}
+  }
+
+% the main function to handle url #1.
 \def\tbsurl@#1  % https
  {
-   \str_set:Nn\l_tmpa_str{#1}
-   \str_if_in:NnTF \l_tmpa_str {http://}
+   \str_set:Nn \l_tmpa_str {#1}
+% this checks if http:// is contained anywhere within the argument url,
+% but that is not good enough, since http:// might occur inside the url,
+% e.g., https://web.archive.org/web/20090809184749/http://www.eco-log.de/
+%   \str_if_in:NnTF \l_tmpa_str {http://}
+% Another fix would have been to insert a constant string "foo" before
+% the argument and the prefix, but since the clean solution is at hand,
+% might as well use it.
+  \str_if_starts_with:nnTF {http://} {#1}
     { 
       \tbhurl@{#1} % if http, redirect to remove protocol
       % this version prints the http, as we originally thought was better.
@@ -1432,7 +1454,8 @@
                                                           {https://\l_tmpa_str}
     }
  }
-\def\tbhurl@#1  % http
+% explicit http, handle similarly but don't bother checking for https
+\def\tbhurl@#1
  {
    \str_set:Nn\l_tmpa_str{#1}
    \str_remove_once:Nn \l_tmpa_str {http://}   

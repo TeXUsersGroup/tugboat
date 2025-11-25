@@ -1,3 +1,13 @@
+2025-11-25  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\str_if_starts_with:nnTF): new macro, advised by Marei.
+	(\tbsurl@): check if argument starts with http://, not just
+	contains http:// anywhere, for the sake of archive.org, e.g.,
+	https://web.archive.org/web/20090809184749/http://www.eco-log.de.
+	(Found with tb145bien-rvw.)
+	https://tug.org/pipermail/texhax/2025-November/026858.html
+	* tuburllivetest.tex: test internal http:// in url.
+
 2025-11-22  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.bst (contains): move earlier.
