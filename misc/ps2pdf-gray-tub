@@ -2,7 +2,11 @@
 # $Id$
 # Public domain.
 # 
-# Convert input $1 to output $2, converting color to grayscale.
+# Convert input $1 to output $2, converting color to grayscale, except
+# that text is converted to black; see -dBlackText on
+# https://ghostscript.readthedocs.io/en/gs10.05.1/Use.html
+# (or current version). For TUGboat, black seems preferable to printing
+# gray text just because the original is color, though color text is rare.
 # 
 # See also:
 # http://handyfloss.net/2008.09/making-a-pdf-grayscale-with-ghostscript/
@@ -30,6 +34,7 @@ exec $gs -q -dNOPAUSE -dBATCH \
   -dDetectDuplicateImages \
   -dEmbedAllFonts \
   -dPrinted=false \
+  -dBlackText \
   \
   -sColorConversionStrategy=Gray \
   -dProcessColorModel=/DeviceGray \
