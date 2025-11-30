@@ -1,3 +1,7 @@
+2025-11-29  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bbx: mention desiderata wrt tugboat.bst.
+
 2025-11-25  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\str_if_starts_with:nnTF): new macro, advised by Marei.
