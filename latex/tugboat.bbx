@@ -1,10 +1,40 @@
 % $Id$
 % tugboat.bbx, created and updated by Marei Peischl and others.
 % 
-% Although this biblatex style is available and supported,
-% we still find it easier to use bibtex (with tugboat.bst),
-% as shown in the TUGboat article template
-% (https://tug.org/TUGboat/location.html).
+% For TUGboat authors: although this biblatex style is available and
+% supported, we still ask that you use original BibTeX (ideally with
+% tugboat.bst), as shown in the TUGboat article template
+% (https://tug.org/TUGboat/location.html). This is because the
+% post-processing of an article to generate the information for Crossref
+% and DOI landing page is difficult with BibLaTeX. The best approach we
+% know is ctan.org/pkg/biblatex2item, as modified (2025) in
+% https://gitlab.com/TeXhackse/biblatex2bibitem, but it's still quite a
+% bit of extra work.
+% 
+% For BibLaTeX developers: besides that, a couple small things are
+% lacking from this tugboat.bbx, compared to tugboat.bst.  We
+% (tugboat@tug.org) can provide runnable examples, but here is the brief
+% list. The first two refer to
+% https://tug.org/TUGboat/tb43-2/tb134mueller-stex3.pdf:
+% - in [2], should have two authors before "et al.", not one.
+%   author field = "Fulya Horozal and Alin Iacob and Constantin Jucovschi and
+%                   and Michael Kohlhase and Florian Rabe",
+%   (see tugboat.bst for exact rules wrt "et al.".)
+%
+% - in [4], the "ed." abbreviation for editor is in the wrong place.
+%   It should be "A. Voronkov, V. Negru, et~al., ed.",
+%   not "Ed. by A. Voronkov et~al."
+%   editor field = "Andrei Voronkov and Viorel Negru and Tetsuo Ida and
+%                   Tudor Jebelean and Dana Petcu and Stephen M. Watt
+%                   and Daniela Zaharie",
+%
+% - when a name has two initials in the abbreviation, there should be no
+%   space between the initials. For example, [6] in
+%   https://tug.org/TUGboat/tb46-2/tb143niranjan-linguistix.pdf.
+%   author = {Szynalski, Tomasz P},
+%
+% - it would be nice to have a monthtie field to insert a tie instead of a
+%   space after the month abbreviation.
 
 % Basically like abbrv.
 \RequireBibliographyStyle{numeric-comp}
