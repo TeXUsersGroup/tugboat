@@ -41,7 +41,7 @@ sub read_crossref_xml {
   my ($xml_fname) = @_;
   my %citations;
   
-  open (my $xml_fh, $xml_fname) || die "$0: open($xml_fname) failed: $!\n";
+  open (my $xml_fh, $xml_fname) || die "open($xml_fname) failed: $!";
   
   my $in_article = 0;
   my $doi_base;
@@ -100,7 +100,9 @@ sub read_crossref_xml {
 # 
 # qqq todo: We should change this to convert the landing bbl from the
 # original bbl.tex, instead of from the crossref issue.xml. That way we
-# would get font changes and other markup, just as we do for the abstracts.
+# would get font changes and other markup, just as we do for the
+# abstracts, and we could also generate just the landing pages without
+# the crossref issue.xml, i.e., --landing-only could work again.
 # 
 sub update_landing_bbl {
   my ($landing_dir,%citations) = @_;

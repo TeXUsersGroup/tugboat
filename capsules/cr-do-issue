@@ -20,6 +20,9 @@
 # be a problem in practice.
 
 verbose=:
+# --landing-only is not currently working because cr-landing-bbl-abs
+# reads it to get the references list; see that script. But leave the
+# option in place in case we get around to dealing with it.
 landing_only=false
 
 while test $# -gt 0; do
@@ -192,9 +195,17 @@ cp -pf "$cap_outdir/"*.html "$lnd_outdir"/ || exit 1
 # crossref xml file, and with the abstracts copied above.
 run_cmd ./cr-landing-bbl-abs "$crossrefxml_file" "$lnd_outdir"/
 
-# if the landing pages contain any literal backslashes, something went wrong.
-if fgrep '\' $lnd_outdir/*.html; then
+# if the landing pages contain any literal backslashes, something went
+# wrong -- except in the bib entries, which have many backslashes.
+bs_files=
+for l in $lnd_outdir/*.html; do
+  if sed '/id="cite"/,/<pre>/d' $l | fgrep '\'; then # show matches
+    bs_files="$bs_files $l"
+  fi
+done
+if test -n "$bs_files"; then
   echo "$0: *** backslashes in generated landing pages, goodbye." >&2
+  echo "$0: $bs_files"
   exit 1
 fi
 

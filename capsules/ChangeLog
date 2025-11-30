@@ -1,3 +1,12 @@
+2025-11-30  Karl Berry  <karl@freefriends.org>
+
+	* capcrossref.pl (crossref_create_landing_page): output BibTeX
+	entry from tugboat.bib, slightly modified.
+	(bibtex_entry, read_nbib): new fns.
+	* cr-do-issue: don't complain about backslashes in the bib entries.
+	* cr-landing-bbl-abs: mentioning that --landing-only is not working.
+	* Makefile (crl): not currently working.
+
 2025-11-22  Karl Berry  <karl@freefriends.org>
 
 	* lists-authinfo.txt (Kurz): orcid.

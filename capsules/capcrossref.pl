@@ -364,6 +364,16 @@ END_LANDING
 
 END_LANDING
   
+  my $bibtex_entry = &bibtex_entry ($cap_ref, $supp_ref);
+  if ($bibtex_entry) {
+    print $LANDING <<END_LANDING;
+
+<p id="cite"><b>Cite this article (BibTeX)</b>: <pre>
+$bibtex_entry
+</pre>
+END_LANDING
+  }
+
   my $issue_ident = "$issue{volno}:$issue{issno}, $issue{year}";
   my $issue_link = "(${issue_href}issue $seqno</a>)";
   print $LANDING &cap_html_footer ("$issue_ident $issue_link");
@@ -371,8 +381,76 @@ END_LANDING
   close ($LANDING) || warn "$0: close($landing_fname) failed: $!\n";
 }
 
+# Return the BibTeX entry, as a single string, for capsule CAP with
+# supplemental information SUPP, as described above.
+# 
+# If no bib entry is found, return the empty string. This can happen for
+# some obscure items without urls (see no_urls list below). They're not
+# worth the extra trouble to find in tugboat.bib.
+# 
+{
+  my %nbib = &read_nbib ();
+
+sub bibtex_entry {
+  my ($cap_ref,$supp_ref) = @_;
+  
+  my $url = $cap_ref->{"url"};
+  $url = "https://tug.org$url" if $url =~ m,^/,;
+  return $nbib{$url} || "";
+}  
+} # end static variable block.
+
+# Read Nelson Beebe's tugboat.bib file and return a hash with the url
+# field values as the keys, and the whole entry as we want to show it on
+# the landing file as the value. We simplify Nelson's entries a bit,
+# and change the citation key to avoid unnecessary collisions.
+# 
+sub read_nbib {
+  my $nbib_fname = `kpsewhich tugboat.bib`;
+  my %nbib;
+  
+  die "$0: kpsewhich tugboat.bib returned nothing, goodbye"
+    if ! $nbib_fname;
+  &debug ("reading Nelson's $nbib_fname\n");
+  open (my $NBIB, $nbib_fname) || die "open($nbib_fname) failed: $!";
+  my $nbib_as_string = join ("", <$NBIB>);
+  # although theoretically the @ might not be at the beginning of a
+  # line, in practice it is.
+  my @entries = split (/^\s*@/m, $nbib_as_string);
+  close ($NBIB) || die "close($nbib_fname) failed: $!";
+
+  shift @entries; # dump leading comments
+  my @no_urls;
+  for my $e (@entries) {
+    next if $e =~ /^(Preamble|String)/;
+    my ($url) = ($e =~ m/\burl\s*=\s*"(.*?)"/i);
+    if ($url) {
+      $e =~ s/\{/\{TB:/;                 # make cite key unique
+      #
+      $e =~ s/j-TUGboat/"TUGboat"/;      # don't make users have the @string
+      $e =~ s/ack-nhfb/"Nelson Beebe"/;  # real @string is long
+      $e =~ s/ack-bnb/"Barbara Beeton"/; # real @string is also long
+      #      
+      $e =~ s/.*"\?\?\?\?",\n//;    # no point in unspecified CODEN
+      $e =~ s/.*\bISSN-L\b.*\n//;   # no point in dup ISSN-L
+      $e =~ s/.*\bfjournal\b.*\n//; # why?
+      $nbib{$url} = '@' . $e;
+
+    } else {
+      # url not found, we'll skip this one.
+      my $line1 = substr ($e, 0, index ($e, "\n"));
+      $line1 =~ s/^Article\{//;
+      push (@no_urls, $line1);
+      # die "$0: did not find url in entry: $e\n";
+    }
+  }
+  # just to see how many. We could fix some, but let's not worry now.
+  #warn "no urls:", join ("", @no_urls), "\n";
+
+  return %nbib;
+}
 
-# return html string linking to the item at OFFSET (plus or minus,
+# Return html string linking to the item at OFFSET (plus or minus,
 # described with LABEL in the link text) from PAGENO, in CAPSULES. If no
 # such item (i.e., PAGENO is first or last), return empty string. If
 # PAGENO is not found in CAPSULES, abort.

@@ -59,7 +59,8 @@ cr_lndout = crossref/dir1.lndout
 # crossref to upload. The possibly hand-edited bbl and abs are here.
 cr_xmlprocess = crossref/dir2.process
 #
-# Article-by-article report of what's copied.
+# Article-by-article report of what's copied, and enable -D for
+# debugging output from captub.
 cr_verbose = #--verbose
 #
 # The arguments we pass to cr-do-issue.
@@ -67,8 +68,10 @@ cr_args =  $(cr_verbose) tb$(crossref_iss)capsule.txt \
            $(cr_capout) $(cr_lndout) $(cr_xmlprocess)/issue.xml
 
 crl: # just landing pages
+	@echo "sorry, not currently working; see cr-landing-bbl-abs"
+	exit 1
 	cr-do-issue --landing-only $(cr_args)
-cro-preserve: # full crossref run, keeping hand-edits
+cro-preserve: # full crossref run, keeping hand-edits (avoid!)
 	cr-do-issue $(cr_verbose) $(cr_args)
 cro-scratch: cro-scratch-clean # full crossref run, assuming no hand-editing
 	cr-do-issue $(cr_args)
