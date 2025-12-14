@@ -366,11 +366,15 @@ END_LANDING
   
   my $bibtex_entry = &bibtex_entry ($cap_ref, $supp_ref);
   if ($bibtex_entry) {
+    # We need tugboat.def for too many entries. In TL, and from
+    # https://ctan.org/tex-archive/info/biblio/tugboat.def
     print $LANDING <<END_LANDING;
 
-<p id="cite"><b>Cite this article (BibTeX)</b>: <pre>
+<p id="cite"><b>Cite this article (BibTeX)</b>: <small><pre>
+\@Preamble{"\\input tugboat.def"}
 $bibtex_entry
 </pre>
+</small>
 END_LANDING
   }
 
@@ -421,6 +425,10 @@ sub read_nbib {
 
   shift @entries; # dump leading comments
   my @no_urls;
+
+  # End of a control word (not symbol); see LaTeX::ToUnicode[.pm] for info.
+  my $endcw = qr/(?<=[a-zA-Z])(?=[^a-zA-Z]|$)\s*/;
+
   for my $e (@entries) {
     next if $e =~ /^(Preamble|String)/;
     my ($url) = ($e =~ m/\burl\s*=\s*"(.*?)"/i);
@@ -432,8 +440,20 @@ sub read_nbib {
       $e =~ s/ack-bnb/"Barbara Beeton"/; # real @string is also long
       #      
       $e =~ s/.*"\?\?\?\?",\n//;    # no point in unspecified CODEN
-      $e =~ s/.*\bISSN-L\b.*\n//;   # no point in dup ISSN-L
+      $e =~ s/.*\bISSN-L\b.*\n//;   # no need for dup ISSN-L
+      $e =~ s/.*\bbibdate\b.*\n//;  # no need for version id here?
       $e =~ s/.*\bfjournal\b.*\n//; # why?
+      #
+      # Convert TUGboat commands to make the entry more generic, except
+      # there are so many commands, it doesn't seem feasible to handle
+      # them all. Just do a few common ones and require tugboat.def 
+      # for the rest (@preamble above).
+      $e =~ s/\s*\\Dash$endcw\s*/\\,---\\,/g;
+      $e =~ s/\\TUB$endcw\s*/\\textsl{TUGboat}/g;
+      $e =~ s/\\booktitle$endcw/\\emph/g;
+      $e =~ s/\\pkg$endcw//g; # sometimes sf, sometimes tt, sometimes nothing
+      
+      # We split at @, so put it back.
       $nbib{$url} = '@' . $e;
 
     } else {

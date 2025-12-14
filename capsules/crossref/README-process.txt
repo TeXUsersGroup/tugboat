@@ -166,7 +166,8 @@ to check the generated dir2.process/issue.xml:
   if any are new organizations, add to lists-authinfo.txt.
 - check that <ORCID> elements are present for all that are specified;
   grep the sources. Add any new ones to lists-authinfo.txt.
-- also check <citation_list>s and individual <citation>s for reasonableness.
+- also check <citation_list>s and individual <citation>s for reasonableness,
+  especially the structured citations with <article_title> etc.
 
 To test, upload dir2*/issue.xml to this obscure url, given to us by
 Crossref support (not sure if it is linked anywhere in their docs):
@@ -177,20 +178,20 @@ It will report success or any errors online immediately.
      could not be bothered to update their test environment for the new
      schema. Therefore testing has to be done in a different way; see above.
      Hopefully test.crossref.org will be usable again eventually.
--- When all articles are done, and the issue.xml looks ok, can upload to
--- crossref for them to validate it:
---   make upload-test  # in crossref subdirectory
--- 
--- The result should be "batch submission was successfully received"; that
--- just means the data was uploaded. Crossref will send email to
--- doi-tugboat@tug.org when complete, which should happen within a few
--- minutes. Can also check results online:
---   https://test.crossref.org -> Show my submission queue
---                            (or Show System Queue)
--- 
--- When the result mail comes in, see <batch_data> summary element at end,
--- should be all success. Browse through the rest, especially that all the
--- <citation> elements were accepted. Fix and rerun as needed.
+#old When all articles are done, and the issue.xml looks ok, can upload to
+#old crossref for them to validate it:
+#old   make upload-test  # in crossref subdirectory
+#old 
+#old The result should be "batch submission was successfully received"; that
+#old just means the data was uploaded. Crossref will send email to
+#old doi-tugboat@tug.org when complete, which should happen within a few
+#old minutes. Can also check results online:
+#old   https://test.crossref.org -> Show my submission queue
+#old                            (or Show System Queue)
+#old 
+#old When the result mail comes in, see <batch_data> summary element at end,
+#old should be all success. Browse through the rest, especially that all the
+#old <citation> elements were accepted. Fix and rerun as needed.
 ---- end old testing info.
 
  After the test upload succeeds, good to copy the test landing files
@@ -392,22 +393,25 @@ Then, in general this is a mix of submitting a new issue (described in
 ~tubprod/README) and making an issue public (described above). In short:
 - create per-article abs/bbl.tex files.
 - make cro-scratch
+- carefully check generated landing file.
 - repeat until all articles are done.
 
 Check contents files:
 make all
-make diff-id  # check ids, sorting, etc.
-make all-diff # all as expected.
-make install-test # after committing, if working on dev machine
-  then check https://tug.org/TUGboat/toctest/listauthor.html et al.
+make diff-id  # check ids (maybe no change), sorting, etc.
+make all-diff # new dois and all else as expected.
 
 Crossref and landing files:
-- review dir2.process/issue.xml as above, then make upload-test.
-
+- review dir2.process/issue.xml as above, then check at
+  https://www.crossref.org/02publishers/parser.html as above.
 - if that's ok, copy new landing files to server:
 host=tug.org
-oldnnn=127
-oldiss=41-1
+oldnnn=126
+oldiss=40-3
 scp -p crossref/dir1.lndout/*.html $host:/home/httpd/html/TUGboat/tb$oldiss/
 
+make install-test # on tug; after committing from dev machine
+  then check https://tug.org/TUGboat/toctest/listauthor.html et al.
+
 Then, as above: check results; do production crossref upload; commit changes.
+Send tugboat.bib updates to Nelson.

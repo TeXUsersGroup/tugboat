@@ -1,5 +1,14 @@
 2025-12-14  Karl Berry  <karl@freefriends.org>
 
+	* Makefile (testiss, crossref_iss): dois for 126 (40-3).
+	* captub (crossref-first-issue): likewise 126.
+	* capcrossref.pl (crossref_create_landing_page): @preamble tugboat.def.
+	(read_nbib): replace a few simple and common tugboat commands.
+	* crossref/ltx2crossrefxml-tugboat.cfg (GUST, PNG, etc.): new abbrs.
+	* crossref/README-process.txt: tweaks for old issue dois.
+
+2025-12-14  Karl Berry  <karl@freefriends.org>
+
 	* lists-authinfo.txt (Goulet): orcid for 47-1.
 
 2025-11-30  Karl Berry  <karl@freefriends.org>
