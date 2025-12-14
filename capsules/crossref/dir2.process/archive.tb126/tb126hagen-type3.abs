@@ -1,0 +1,8 @@
+Support for \TYPETHREE\ fonts has been on my agenda for a couple of years now.
+The reason is that they might be useful for embedding (for instance) runtime
+graphics (such as symbols) in an efficient way. In \TEX\ systems \TYPETHREE\ fonts
+are normally used for bitmap fonts, the \PK\ output that comes via \METAFONT.
+Where for instance \TYPEONE\ fonts are defined using a set of font specific
+rendering operators, a \TYPETHREE\ font can contain arbitrary code, in \PDF\
+files these are \PDF\ (graphic and text) operators.
+

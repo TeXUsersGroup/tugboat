@@ -1,0 +1,12 @@
+The application {\MUPDF} (\url{https://mupdf.com}) is a very fast,
+portable, open-source {\PDF} previewer and development toolkit actively
+supported by Artifex, the creators of Ghostscript
+(\url{http://artifex.com}).
+
+{\MUPDF} also comes with a handy collection of command-line tools that
+are easily overlooked. The command-line tools allow you to annotate,
+edit, and convert documents to other formats such as \HTML, \SVG,
+{\PDF}, and \PNG. You can also write scripts to manipulate documents
+using JavaScript.
+
+This small paper gives a quick overview of the possibilities.

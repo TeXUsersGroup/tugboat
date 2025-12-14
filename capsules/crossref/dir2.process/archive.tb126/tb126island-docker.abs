@@ -1,0 +1,6 @@
+With the spread of version control and continuous integration services
+among \TeX{} users there is a need to provide \TeX{} distributions for
+containerized services. As most available images are not updated
+regularly and many of them lack relevant tools, we aim to provide
+images for the regular user who wants continuous integration to
+work like any other \TeX{} distro.

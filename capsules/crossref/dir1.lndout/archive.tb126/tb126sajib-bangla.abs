@@ -1,0 +1,20 @@
+  The typesetting of Bangla (also known as Bengali) script in \TeX\
+  was first introduced more than 15~years ago through
+  transliteration-based systems.
+  These systems have shortcomings: among others,
+  the source files are harder to read and they require one or two particular
+  Bangla typeface families for typesetting. With the introduction of
+  Unicode-aware \TeX\ engines, such as \XeTeX, and the emergence of
+  Unicode-compliant free Bangla fonts, new possibilities have evolved.
+  Today both \XeTeX\ and \LuaTeX, as available in \TeX\ Live 2019,
+  support Bangla typesetting allowing the
+  user to input the text directly with Unicode Bangla fonts in the editor.
+  Although several years have passed since the
+  \XeTeX\ system was first seen to work, it is
+  still in a state where the \emph{finest} typographic quality is nearly
+  unachievable for this particular script.
+  Several rendering issues were observed while working with
+  Unicode Bangla fonts in four Unicode-aware \TeX\ engines. 
+  Precision typesetting of the Bangla script in Unicode \TeX\ requires
+  attention in terms of fonts, rendering, hyphenation,
+  use of colors, and more.

@@ -1,0 +1,14 @@
+\TL\ has grown over the years from a \DVD\ distributed once a year to a
+full-fledged network-enabled system with daily updates. Development of
+\TL\ is done in the Subversion repository on \url{tug.org}, and
+coordinated on several mailing
+lists (\url{https://lists.tug.org}). The network
+distribution of \TL\ is served by \acro{CTAN} and their mirror system,
+relieving us from serving huge amounts of data to the world, or
+reimplementing another mirror system. (Thanks much to \acro{CTAN}.)
+
+Around the main distribution of \TL, several additional services have
+accumulated over the years\Dash and in particular in recent months\Dash
+so that we thought it a good idea to summarize and present all the
+available services in this article. Details about each follow the
+overview.

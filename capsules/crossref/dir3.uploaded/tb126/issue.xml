@@ -1,0 +1,623 @@
+<doi_batch
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    version="5.4.0"
+    xmlns="http://www.crossref.org/schema/5.4.0"
+    xsi:schemaLocation="http://www.crossref.org/schema/5.4.0
+                       https://www.crossref.org/schemas/crossref5.4.0.xsd">
+  <head>
+    <doi_batch_id>ltx2crossref-20251214173301-18285</doi_batch_id>
+    <timestamp>20251214173301</timestamp>
+    <depositor>
+      <depositor_name>TUGboat production</depositor_name>
+      <email_address>doi-tugboat@tug.org</email_address>
+    </depositor>
+    <registrant>TeX Users Group</registrant>
+  </head>
+  <body><journal>
+    <journal_metadata language="en">
+      <full_title>TUGboat</full_title>
+      <issn>0896-3207</issn>      
+    </journal_metadata>
+    <journal_issue>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <journal_volume><volume>40</volume></journal_volume>
+      <issue>3</issue>
+    </journal_issue>
+    <journal_article>
+      <titles>
+        <title>From the president</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Boris</given_name>
+          <surname>Veytsman</surname>
+          <ORCID>https://orcid.org/0000-0003-4674-8113</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>211</first_page>
+        <last_page>211</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126pres</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126pres.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Editorial comments</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Barbara</given_name>
+          <surname>Beeton</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>212</first_page>
+        <last_page>212</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126beet</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126beet.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Ukraine at BachoTeX 2019: Thoughts and impressions</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Yevhen</given_name>
+          <surname>Strakhov</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>213</first_page>
+        <last_page>214</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126strakhov-bacho19</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126strakhov-bacho19.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>An experience of trying to submit a paper in LaTeX in an XML-first world</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>David</given_name>
+          <surname>Walden</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>215</first_page>
+        <last_page>216</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126walden-submit</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126walden-submit.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="1-1">
+          <unstructured_citation>Jonathan McGlone, Preserving and Publishing Digital Content Using XML Workflows, https://tinyurl.com/xml-mcglone</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Studying the histories of computerizing publishing and desktop publishing, 2017&#x2013;19</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>David</given_name>
+          <surname>Walden</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>217</first_page>
+        <last_page>228</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126walden-history</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126walden-history.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TeX services at <tt>texlive.info</tt></title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Norbert</given_name>
+          <surname>Preining</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>229</first_page>
+        <last_page>230</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126preining-services</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126preining-services.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="vieth-1">
+          <unstructured_citation>U. Vieth. Overview of the TeX historic archive. TUGboat 29:1 (2008), pp.73&#x2013;76. https://tug.org/TUGboat/tb29-1/tb91vieth.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Providing Docker images for TeX Live and ConTeXt</title>
+      </titles>
+      <contributors>
+        <organization sequence="first" contributor_role="author">Island of TeX</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>231</first_page>
+        <last_page>231</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126island-docker</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126island-docker.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TeX on the Raspberry Pi</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>232</first_page>
+        <last_page>233</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126hagen-rpi</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126hagen-rpi.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>MuPDF tools</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Taco</given_name>
+          <surname>Hoekwater</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>234</first_page>
+        <last_page>235</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126hoekwater-mupdf</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126hoekwater-mupdf.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>LaTeX on the road</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Piet</given_name>
+          <surname>van Oostrum</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>236</first_page>
+        <last_page>246</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126oostrum-road</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126oostrum-road.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>A Brazilian Portuguese work on MetaPost, and how mathematics is embedded in it</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Estev&#xe3;o Vin&#xed;cius</given_name>
+          <surname>Candia</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>247</first_page>
+        <last_page>250</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126candia-mpost</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126candia-mpost.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="CANDIA-1">
+          <unstructured_citation>Candia, Estev&#x00e3;o V. Matem&#x00e1;tica e o MetaPost. Master&#x2019;s degree thesis. UFMS, 2018. Available at https://tug.org/metapost/articles/estevao_candia_2018_pt_BR.pdf.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>LaTeX news, issue 30, October 2019</title>
+      </titles>
+      <contributors>
+        <organization sequence="first" contributor_role="author">LaTeX Project Team</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>251</first_page>
+        <last_page>254</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126ltnews30</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126ltnews30.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Understanding scientific documents with synthetic analysis on mathematical expressions and natural language</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Takuto</given_name>
+          <surname>Asakura</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>255</first_page>
+        <last_page>256</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126asakura-meaning</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126asakura-meaning.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="mathml3-1" type="book">
+          <author>Ausbrooks, Ron</author>
+          <cYear>2014</cYear>
+          <article_title>Mathematical Markup Language (MathML) 3.0 Specification</article_title>
+          <unstructured_citation>R. Ausbrooks, S. Buswell, et al. Mathematical Markup Language (MathML) 3.0 Specification. World Wide Web Consortium (W3C), 2014.</unstructured_citation>
+        </citation>
+        <citation key="bishop2006-2" type="book">
+          <author>Bishop, Christopher M</author>
+          <cYear>2006</cYear>
+          <article_title>Pattern Recognition and Machine Learning</article_title>
+          <unstructured_citation>C. M. Bishop. Pattern Recognition and Machine Learning. Springer, 2006.</unstructured_citation>
+        </citation>
+        <citation key="kohlhase2014-3" type="journal_article">
+          <journal_title>Sprache und Datenverarbeitung, Intl. J. for Language Data Processing</journal_title>
+          <author>Kohlhase, Michael</author>
+          <volume>38</volume>
+          <first_page>49</first_page>
+          <cYear>2014</cYear>
+          <article_title>Co-Representing Structure and Meaning of Mathematical Documents</article_title>
+          <unstructured_citation>M. Kohlhase and M. Iancu. Co-representing structure and meaning of mathematical documents. Sprache und Datenverarbeitung, Intl. J. for Language Data Processing 38(2):49&#x2013;80, 2014.</unstructured_citation>
+        </citation>
+        <citation key="reddy2016-4" type="journal_article">
+          <journal_title>Transactions of the Association for Computational Linguistics</journal_title>
+          <author>Reddy, Siva</author>
+          <volume>4</volume>
+          <first_page>127</first_page>
+          <cYear>2016</cYear>
+          <article_title>Transforming Dependency Structures to Logical Forms for Semantic Parsing</article_title>
+          <unstructured_citation>S. Reddy, O. T&#x00E4;ckstr&#x00F6;m, et al. Transforming dependency structures to logical forms for semantic parsing. Transactions of the Association for Computational Linguistics 4:127&#x2013;140, Dec. 2016.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Modern Type 3 fonts</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>257</first_page>
+        <last_page>262</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126hagen-type3</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126hagen-type3.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Typesetting the Bangla script in Unicode TeX engines &#x2014;experiences and insights</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Md Qutub Uddin</given_name>
+          <surname>Sajib</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>263</first_page>
+        <last_page>269</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126sajib-bangla</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126sajib-bangla.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Ali1996-1" type="software">
+          <author>Ali, Muhammad Masroor</author>
+          <cYear>1996</cYear>
+          <article_title>AroSgaon (More SGAON) 2.1</article_title>
+          <unstructured_citation>M. M. Ali. AroSgaon (More SGAON) 2.1, 1996.</unstructured_citation>
+        </citation>
+        <citation key="Charette2019-2" type="software">
+          <author>Charette, Fran&#x00E7;ois</author>
+          <cYear>2019</cYear>
+          <article_title>Polyglossia: An Alternative to Babel for XeLaTeX and LuaLaTeX</article_title>
+          <unstructured_citation>F. Charette. Polyglossia: An Alternative to Babel for XeLaTeX and LuaLaTeX, 1.44 edition, 2019.</unstructured_citation>
+        </citation>
+        <citation key="Hasan2016-3" type="software">
+          <author>Hasan, Adib</author>
+          <cYear>2016</cYear>
+          <article_title>The LaTeXbangla Package: Enhanced LaTeX integration for Bangla</article_title>
+          <unstructured_citation>A. Hasan. The LaTeXbangla Package: Enhanced LaTeX integration for Bangla, 0.2 edition, 2016.</unstructured_citation>
+        </citation>
+        <citation key="Mike2017-4" type="software">
+          <author>Kamermans, Mike &#x201c;Pomax&#x201d;</author>
+          <cYear>2017</cYear>
+          <article_title>ucharclasses</article_title>
+          <unstructured_citation>M. P. Kamermans. ucharclasses, 2017.</unstructured_citation>
+        </citation>
+        <citation key="knuth2012-5" type="book">
+          <author>Knuth, Donald Ervin</author>
+          <volume>A</volume>
+          <cYear>2012</cYear>
+          <series_title>Computers &#x0026; Typesetting</series_title>
+          <article_title>The TeXbook</article_title>
+          <unstructured_citation>D. E. Knuth. The TeXbook, vol. A of Computers &#x0026; Typesetting. Addison&#x2013;Wesley Publishing Company, Massachusetts, 2012.</unstructured_citation>
+        </citation>
+        <citation key="Pal.bangtex-6" type="other">
+          <author>Pal, Palash Baran</author>
+          <cYear>2002</cYear>
+          <article_title>Bangtex: A package for typesetting documents in Bangla using the TeX/LaTeX systems</article_title>
+          <unstructured_citation>P. B. Pal. Bangtex: A package for typesetting documents in Bangla using the TeX/LaTeX systems, 2002. http://www.saha.ac.in/theory/palashbaran.pal/bangtex/bangtex.html</unstructured_citation>
+        </citation>
+        <citation key="pandey1999-7" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Pandey, Anshuman</author>
+          <volume>20</volume>
+          <first_page>119</first_page>
+          <cYear>1999</cYear>
+          <article_title>Typesetting Bengali in TeX</article_title>
+          <unstructured_citation>A. Pandey. Typesetting Bengali in TeX. TUGboat 20(2):119&#x2013;126, 1999. https://tug.org/TUGboat/tb20-2/tb63pand.pdf</unstructured_citation>
+        </citation>
+        <citation key="pandey2002-8">
+          <unstructured_citation>A. Pandey. Bengali for TeX, 2.0 edition, 2002.</unstructured_citation>
+        </citation>
+        <citation key="Rashid2015-9" type="book">
+          <author>Harun ar Rashid, A. M.</author>
+          <cYear>2015</cYear>
+          <article_title>Baanglaay Renesnaar Pothikrit: Rabindranath O Chaar Bangali Bigynani (Trailblazer of Renaissance in Bengal: Rabindranath and Four Bengali Scientists)</article_title>
+          <unstructured_citation>A. M. H. Rashid. Baanglaay Renesnaar Pothikrit: Rabindranath O Chaar Bangali Bigynani (Trailblazer of Renaissance in Bengal: Rabindranath and Four Bengali Scientists). Nabajuga Prokashani, Dhaka, 2015. in Bangla.</unstructured_citation>
+        </citation>
+        <citation key="raut2006-10" type="software">
+          <author>Raut, Lakshmi K.</author>
+          <cYear>2006</cYear>
+          <article_title>Typesetting Bengali in &#x03A9; using Velthuis Transliteration or Unicode Text</article_title>
+          <unstructured_citation>L. K. Raut. Typesetting Bengali in &#x03A9; using Velthuis Transliteration or Unicode Text, 2006.</unstructured_citation>
+        </citation>
+        <citation key="Robertson2019-11" type="software">
+          <author>Robertson, Will</author>
+          <cYear>2019</cYear>
+          <article_title>The fontspec package: Font selection for XeLaTeX and LuaLaTeX</article_title>
+          <unstructured_citation>W. Robertson. The fontspec package: Font selection for XeLaTeX and LuaLaTeX, 2.7c edition, 2019.</unstructured_citation>
+        </citation>
+        <citation key="Ross1988-12" type="dissertation">
+          <author>Ross, Fiona Georgina Elisabeth</author>
+          <cYear>1988</cYear>
+          <article_title>The Evolution of the Printed Bengali Character from 1778 to 1978</article_title>
+          <unstructured_citation>F. G. E. Ross. The Evolution of the Printed Bengali Character from 1778 to 1978. PhD thesis, School of Oriental and African Studies, University of London, 1988. https://eprints.soas.ac.uk/29311/1/10731406.pdf</unstructured_citation>
+        </citation>
+        <citation key="tagore.postmaster-13" type="other">
+          <author>Tagore, Rabindranath</author>
+          <article_title>The Complete Works of Rabindranath Tagore: Stories</article_title>
+          <unstructured_citation>R. Tagore. The complete works of Rabindranath Tagore: Stories. Retrieved: 2 August 2019. http://tiny.cc/tagore-postmaster</unstructured_citation>
+        </citation>
+        <citation key="tagore.online1-14" type="other">
+          <author>Tagore, Rabindranath</author>
+          <article_title>The Complete Works of Rabindranath Tagore: Verses</article_title>
+          <unstructured_citation>R. Tagore. The complete works of Rabindranath Tagore: Verses. Retrieved: 15 July 2019. http://tiny.cc/tagore</unstructured_citation>
+        </citation>
+        <citation key="UcodeS2019-15" type="book">
+          <author>The Unicode Consortium</author>
+          <cYear>2019</cYear>
+          <isbn>978-1-936213-25-2</isbn>
+          <article_title>The Unicode Standard, Version 12.1.0</article_title>
+          <unstructured_citation>The Unicode Consortium. The Unicode Standard, Version 12.1.0. The Unicode Consortium, Mountain View, CA, 2019. https://unicode.org/versions/Unicode12.1.0/</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Typographers' Inn</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Peter</given_name>
+          <surname>Flynn</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>270</first_page>
+        <last_page>271</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126inn</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126inn.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Book review: <i>Hermann Zapf and the World He Designed: A Biography</i> by Jerry Kelly</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Barbara</given_name>
+          <surname>Beeton</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>272</first_page>
+        <last_page>273</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126reviews-kelly-zapfbio</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126reviews-kelly-zapfbio.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Book review: <i>Carol Twombly: Her brief but brilliant career in type design</i> by Nancy Stock-Allen</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>274</first_page>
+        <last_page>274</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126reviews-stock-allen</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126reviews-stock-allen.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The treasure chest</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>277</first_page>
+        <last_page>278</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126chest</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126chest.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TeX Development Fund 2014&#x2013;2019 report</title>
+      </titles>
+      <contributors>
+        <organization sequence="first" contributor_role="author">TeX Development Fund committee</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>279</first_page>
+        <last_page>279</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-3/tb126devfund</doi>
+        <timestamp>20251214173301</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-3/tb126devfund.html</resource>
+      </doi_data>
+    </journal_article>
+  </journal></body>
+</doi_batch>
