@@ -4,6 +4,9 @@ This file records noteworthy changes.  This file is public domain.
 ltugboat.cls:
 - typeset bibliographies with \raggedright by default.
 - \tubdots: intra-dot space also before first dot.
+- don't use math for \Cplusplus, etc., since OpenType math (lm, newcm)
+  results differ from traditional TeX math.
+- smaller kern for \BibTeX.
 
 tugboat.bst:
 - use a tie after month abbreviations by default (monthtie=0 to override).

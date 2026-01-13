@@ -1,3 +1,15 @@
+2026-01-13  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\plusplus): don't use math; results differ
+	with lm and newcm opentype math.
+	(\BibTeX): smaller kern.
+	(\tubdots, \SMC, \acro): has conditional, so not robust.
+	Copyright years 2026.
+
+	* tugboat.ins: 2026.
+	
+	* tubfigtest.tex: try with \DocumentMetadata.
+
 2025-11-29  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.bbx: mention desiderata wrt tugboat.bst.
