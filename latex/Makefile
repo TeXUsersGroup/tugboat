@@ -1,5 +1,5 @@
 # $Id$
-# Copyright 2007-2023 TeX Users Group.
+# Copyright 2007-2026 TeX Users Group.
 # You may freely use, modify and/or distribute this file.
 # 
 opt = --interaction=nonstopmode --file-line-error
@@ -25,11 +25,12 @@ tugboat-code.pdf: tugboat.dtx ltugboat.cls
 ltugcomn.sty ltugboat.sty ltugboat.cls: tugboat.ins tugboat.dtx
 	$(latex) $<
 
-check: ltugboat.cls
+check ck: ltugboat.cls
 	$(pdflatex) tubfirstcolfull.tex
 	$(pdflatex) tubreftest.tex
 	$(pdflatex) tubatest.tex
 	$(pdflatex) tubdoi-final.tex
+	$(pdflatex) tubfigtest.tex
 	$(pdflatex) tubhytest.tex
 	$(pdflatex) tubmetatest.tex
 	$(pdflatex) tubpageref.tex
@@ -97,12 +98,15 @@ tubabbrs.lst: tugboat.dtx Makefile
 # - remove the definition, possibly with a } from \DeclareRobustCommand
 #                          or with a # for an argument
 # - leaving just the control sequence,
-#   make \cs into \do{cs}.
+# - no need for \Xekern{after,before}E, etc.
+# - make \cs into \do{cs}.
 	(sed -n '/^\\DeclareRobustCommand{\\AllTeX}/,/\\def\\YAML/p' $< \
-	| sed -n 's/^\\\(def\|DeclareRobustCommand{*\)//p' \
+	| sed -n 's/\\\(def\|DeclareRobustCommand{*\)//p' \
 	| sed 's/[{}#].*//' \
+	| grep -Ev '\\(Xekern|tubhideheight|tubreflect|.*@)' \
+	| (cat; printf '\dash\n\\Dash\n\\MF\n\\MP\n\\Thanh\n') \
 	| sed -e 's/^\\/\\do{/' -e 's/$$/}/' \
-	| sort \
+	| sort -f \
 	>$@) \
 	|| { rm -f $@; exit 1; }
 
