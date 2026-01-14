@@ -1,5 +1,5 @@
 $Id$
-Copyright 2006, 2009-2020 TeX Users Group.
+Copyright 2006-2026 TeX Users Group.
 You may freely use, modify and/or distribute this file.
 
 LaTeX macros for use in TUGboat
@@ -13,9 +13,8 @@ The files in this directory generate the TUGboat article class
 ltugboat.cls, which should be used for all articles nowadays -- both
 proceedings and regular issues.
 
-These macros are supported.  Feel free to write to us.
-
-The TUGboat staff <tugboat@tug.org>
+These macros are supported.  Feel free to write to us
+at tugboat@tug.org.
 
 
 Installation and use:
@@ -27,7 +26,7 @@ But if you want to install it by hand from CTAN, its directory there
 (see https://ctan.org/pkg/tugboat) has three files containing TeX code:
 
   tugboat.dtx  -- the source for the macros
-  tugboat.ins  -- the docstrip instructions
+  tugboat.ins  -- the docstrip ins driver
   ltubguid.ltx -- documentation for the macros (published in
                   http://tug.org/TUGboat/tb17-3/tb52guid.pdf,
                   but much updated since)
@@ -35,8 +34,9 @@ But if you want to install it by hand from CTAN, its directory there
 other files are
   ltubguid.pdf -- user documentation
   tugboat.bst  -- recommended BibTeX style for TUGboat
-                  (approximately abbrvurl plus yet more abbreviations)
+                    (originally abbrvurl, with several features added)
   ltugbib.bst  -- BibTeX style for ltugboat.cls's Harvard-cite capabilities
+                    (no longer recommended)
 
 Processing the .ins file produces:
 
@@ -60,13 +60,14 @@ On a TDS installation, common search locations are:
   $TEXMF/bibtex/bst/tugboat  (for .bst)
   $TEXMF/doc/latex/tugboat   (for .pdf)
 
-($TEXMF being a pointer to the root of a TDS tree, preferably a local
-one, to avoid tangling with future releases of your TeX distribution.)
-
-`User-level' documentation is provided in file ltubguid.pdf, which is
-a revised version of a TUGboat paper.  The documented source of the
-macros is also provided in readily readable form, as tugboat.pdf.
+($TEXMF being a pointer to the root of a TDS tree, preferably a local or
+personal one, to avoid clashing with future releases of your TeX
+distribution.)
 
 By the way, tugboat.sty, tugproc.sty, and tugboat.cmn are the plain TeX
-files for TUGboat and not included here (see the separate tugboat-plain
-package).
+files for TUGboat and not included here; see the separate package
+tugboat-plain (https://ctan.org/pkg/tugboat-plain).
+
+User documentation is provided in file ltubguid.pdf, which is a revised
+version of a TUGboat paper. The documented source of the macros is also
+provided in readily readable form, as tugboat.pdf.

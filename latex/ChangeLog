@@ -1,3 +1,12 @@
+2026-01-14  Karl Berry  <karl@freefriends.org>
+
+	* version 2.36 (2026-01-14) uploaded to CTAN.
+	* NEWS: update.
+	* README: update.
+
+	* Makefile (check): add tubfigtest to list.
+	(tubabbrs.lst): more refinements, still not ready.
+
 2026-01-13  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\plusplus): don't use math; results differ

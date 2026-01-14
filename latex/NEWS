@@ -1,12 +1,14 @@
 $Id$
 This file records noteworthy changes.  This file is public domain.
 
+2.36 (2026-01-14)
 ltugboat.cls:
 - typeset bibliographies with \raggedright by default.
 - \tubdots: intra-dot space also before first dot.
 - don't use math for \Cplusplus, etc., since OpenType math (lm, newcm)
   results differ from traditional TeX math.
 - smaller kern for \BibTeX.
+- \CandT: tie before \&.
 
 tugboat.bst:
 - use a tie after month abbreviations by default (monthtie=0 to override).
