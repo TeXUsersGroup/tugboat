@@ -262,10 +262,10 @@ Then archive all the files (after registering):
   dir=~tubprod/VV-N
   cd $dir
   tar czf absbbl.tgz */abs.tex */bbl.tex
-  scp absbbl.tgz $host:$dir # and unpack, for ease of finding/accessing
+  scp absbbl.tgz $host:$dir/ # and unpack, for ease of finding/accessing
   tar czf auxbib.tgz */*.aux */*.bib
-  scp auxbib.tgz $host:$dir # do not unpack, avoid overwrites, and
-                            # none of the files should be different anyway.
+  scp auxbib.tgz $host:$dir/ # do not unpack to avoid overwrites, and
+                             # none of the files should be different anyway.
   #
   # svn commit the generated files:
   cd ~tubprod/svn/capsules/crossref
@@ -410,7 +410,7 @@ oldnnn=126
 oldiss=40-3
 scp -p crossref/dir1.lndout/*.html $host:/home/httpd/html/TUGboat/tb$oldiss/
 
-make install-test # on tug; after committing from dev machine
+make all install-test # on tug; after committing from dev machine
   then check https://tug.org/TUGboat/toctest/listauthor.html et al.
 
 Then, as above: check results; do production crossref upload; commit changes.

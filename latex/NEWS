@@ -18,6 +18,7 @@ tugboat.bst:
   preceded by "ISBN~" unless the field value already contains "ISBN".
   Use a space instead of ~ if the field isbnspace is set.
 
+-----------------
 2.35 (2025-10-27):
 ltugboat.cls:
 - new abbreviation \PDFUA, for \acro{PDF/UA}.

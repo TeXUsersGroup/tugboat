@@ -3,10 +3,11 @@
 # You may freely use, modify and/or distribute this file.
 # 
 opt = --interaction=nonstopmode --file-line-error
-latex = $(texfot) latex $(opt)
-pdflatex = $(texfot) pdflatex $(opt)
-lualatex = $(texfot) lualatex $(opt)
-xelatex = $(texfot) xelatex $(opt)
+dev = -dev
+latex = $(texfot) latex$(dev) $(opt)
+pdflatex = $(texfot) pdflatex$(dev) $(opt)
+lualatex = $(texfot) lualatex$(dev) $(opt)
+xelatex = $(texfot) xelatex$(dev) $(opt)
 #
 texfot = PATH=$(shell tlrel):$(PATH) texfot
 texfot = texfot

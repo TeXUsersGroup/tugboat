@@ -4,7 +4,8 @@
 	* NEWS: update.
 	* README: update.
 
-	* Makefile (check): add tubfigtest to list.
+	* Makefile (dev, latex, pdflatex, ...): use -dev versions by default.
+	(check): add tubfigtest to list.
 	(tubabbrs.lst): more refinements, still not ready.
 
 2026-01-13  Karl Berry  <karl@freefriends.org>
