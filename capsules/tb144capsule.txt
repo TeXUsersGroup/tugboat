@@ -180,10 +180,10 @@ projects.  <a href="/memberaccess.html">More information on TUG member
   {335-338}
   {https://tug.org/members/TUGboat/!TBIDENT!berry-engines-formats.pdf}
   {}
-  {The authors omitted the relatively new HiTeX engine created by Martin
-   Ruckert, which generates HINT output for mobile devices; see <a
-   href="https://ctan.org/pkg/hitex">HiTeX on CTAN</a> for the code and
-   documentation. It has been included in TeX Live for several years.}
+  {Addendum: The authors omitted the relatively new HiTeX engine created
+   by Martin Ruckert, which generates HINT output for mobile devices;
+   see <a href="https://ctan.org/pkg/hitex">HiTeX on CTAN</a> for the
+   code and documentation. It has been included in TeX Live for several years.}
 
 \capsule{}
   {Hints \& Tricks}
