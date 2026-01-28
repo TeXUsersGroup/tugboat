@@ -1,3 +1,7 @@
+2026-01-28  Karl Berry  <karl@freefriends.org>
+
+	* tb144capsule.tex (berry-engines-formats): we left out hitex.
+
 2025-12-14  Karl Berry  <karl@freefriends.org>
 
 	* Makefile (testiss, crossref_iss): dois for 126 (40-3).
