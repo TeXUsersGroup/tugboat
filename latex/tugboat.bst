@@ -40,6 +40,7 @@
 %%%     prebibitem - material output before \bibitem, with newline appended
 %%%       (for example, section headings).
 %%%     urlnewline - force line break before url or doi value.
+%%%     versiontie - ~ instead of space between "version" and number.
 %%% --karl, originally created 24jul18.
 %%% 
 %%% Modification of BibTeX style file /usr/local/texlive/2009/texmf-dist/bibtex/bst/base/abbrv.bst
@@ -106,6 +107,7 @@ ENTRY
     pagesnodashify % tub
     prebibitem     % tub
     urlnewline     % tub
+    versiontie     % tub
   }
   {}
   { label }
@@ -1147,8 +1149,14 @@ FUNCTION {format.urldate}
 
 FUNCTION {format.version}
 { version empty$
-    {""}
-    {"version " version * }
+    { "" }
+    { "version"
+      versiontie empty$
+        { " " }
+        { "~" }
+      if$
+      *
+      version * }
   if$
 }
 

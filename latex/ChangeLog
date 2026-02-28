@@ -1,3 +1,8 @@
+2026-02-28  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst (versiontie): new option to generate version~.
+	(format.version): use it.
+
 2026-01-14  Karl Berry  <karl@freefriends.org>
 
 	* version 2.36 (2026-01-14) uploaded to CTAN.
