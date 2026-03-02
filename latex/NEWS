@@ -1,6 +1,10 @@
 $Id$
 This file records noteworthy changes.  This file is public domain.
 
+ltugboat.cls
+- new abbreviations \MiKTeX, \TeXLive.
+
+-----------------
 2.36 (2026-01-14)
 ltugboat.cls:
 - typeset bibliographies with \raggedright by default.

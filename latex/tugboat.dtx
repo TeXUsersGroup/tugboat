@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2026-01-15 v2.36
+                   [2026-03-02 v2.36
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -846,6 +846,7 @@
 %    \begin{macrocode}
 \def\mf{\textsc{Metafont}}
 \def\MFB{\textsl{The \MF\kern.1em\-book}}
+\DeclareRobustCommand{\MiKTeX}{MiK\TeX}
 \def\MkIV{Mk\acro{IV}}
 \let\TB@@mp\mp
 \DeclareRobustCommand{\mp}{\ifmmode\TB@@mp\else MetaPost\fi}
@@ -908,8 +909,8 @@
 \def\TP{\textsl{\TeX:\ The Program}}
 \DeclareRobustCommand{\TeX}{T\kern-.1667em\lower.424ex\hbox{E}\kern-.125emX\@}
 \def\TeXhax{\TeX hax}
-\def\TeXMaG{\TeX M\kern-.1667em\lower.5ex\hbox{A}%
-   \kern-.2267emG\@}
+\DeclareRobustCommand{\TeXLive}{\TeX\ Live}
+\def\TeXMaG{\TeX M\kern-.1667em\lower.5ex\hbox{A}\kern-.2267emG\@}
 \def\TeXtures{\textit{Textures}}
 \let\Textures=\TeXtures
 \def\TeXworks{\TeX\kern-.07em works}
