@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2026-03-02 v2.36
+                   [2026-03-12 v2.36
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -559,8 +559,8 @@
      \not@math@alphabet\logofamily\relax
      \fontencoding{U}\fontfamily{logo}\selectfont}
    \DeclareTextFontCommand{\textlogo}{\logofamily}
-   \def\MF{\textlogo{META}\-\textlogo{FONT}\@}
-   \def\MP{\textlogo{META}\-\textlogo{POST}\@}
+   \def\MF{\textlogo{META}\tubdisc\textlogo{FONT}\@}
+   \def\MP{\textlogo{META}\tubdisc\textlogo{POST}\@}
    \DeclareFontFamily{U}{logo}{}
    \DeclareFontShape{U}{logo}{m}{n}{%
      <8><9>gen*logo%
@@ -689,8 +689,8 @@
 % \subsection{Abbreviations and logos}
 % \label{abbr-logo}
 %
-% Font used for the METAFONT logo, etc.
 %    \begin{macrocode}
+\def\tubdisc{\texorpdfstring{\-}{}} % avoid warning about \- in section titles
 \DeclareRobustCommand{\AllTeX}{%
   \texorpdfstring{(\La\kern-.075em)\kern-.05em\TeX}{(La)TeX}}
 \def\AMS{American Mathematical Society}
@@ -713,8 +713,8 @@
      B\textsc{ib}% LaTeX has more kerns, but they are too much to our eyes
   \fi
 }
-\def\BibLaTeX{\texorpdfstring{\Bib\-\kern.02em \LaTeX}{BibLaTeX}}
-\def\BibTeX{\texorpdfstring{\Bib\-\kern-.04em \TeX}{BibTeX}}
+\def\BibLaTeX{\texorpdfstring{\Bib\tubdisc\kern.02em \LaTeX}{BibLaTeX}}
+\def\BibTeX{\texorpdfstring{\Bib\tubdisc\kern-.04em \TeX}{BibTeX}}
 % no good way to determine bold font, and we want to lose the kern, too:
 % (we \let BibTeX to this in maketitle)
 \def\bfBib{B{\SMC\SMC IB}}
@@ -728,7 +728,7 @@
 % We place our \cs{kern} after \cs{-} so that it disappears if the
 % hyphenation is taken:
 %    \begin{macrocode}
-\def\ConTeXt{\texorpdfstring{C\kern-.0333emon\-\kern-.0667em\TeX\kern-.0333emt}
+\def\ConTeXt{\texorpdfstring{C\kern-.0333emon\tubdisc\kern-.0667em\TeX\kern-.0333emt}
   {ConTeXt}}
 \def\CMkIV{\ConTeXt\ \MkIV}
 \def\Cplusplus{C\plusplus}
@@ -742,7 +742,7 @@
 % We can't avoid OTF math in general. So we change the definition not to
 % use math. The results are the same within a couple of decimal places
 % (didn't seem to matter to make it exact), and it's simpler besides.
-\def\plusplus{\raise .351ex \hbox{\scriptsize ++}}
+\def\plusplus{\texorpdfstring{\raise .351ex \hbox{\scriptsize ++}}{++}}
 %
 % consider rm vs. bold + tb139may-automata.ltx 
 \def\CPU{\acro{CPU}}
@@ -777,10 +777,10 @@
   \ensuremath{\textstyle\varepsilon_{\kern-0.15em\cal{X}}}\kern-.2em\TeX}
 \def\FAQ{\acro{FAQ}}
 \def\FTP{\acro{FTP}}
-\def\Ghostscript{Ghost\-script}
+\def\Ghostscript{Ghost\tubdisc script}
 \def\GNU{\acro{GNU}}
 \def\GUI{\acro{GUI}}
-\DeclareRobustCommand{\HarfBuzz}{Harf\discretionary{-}{}{\kern.077em}Buzz}
+\DeclareRobustCommand{\HarfBuzz}{Harf\discretionary{-}{}{\kern.02em}Buzz}
 \def\Hawaii{Hawai`i}
 \def\HTML{\acro{HTML}}
 \def\HTTP{\acro{HTTP}}
@@ -826,10 +826,10 @@
 %    \begin{macrocode}
 %<!latex>\def\LaTeX{\La\kern-.15em\TeX}
 \def\LMTX{\acro{LMTX}}
-\def\LuaHBTeX{Lua\acro{HB}\-\TeX}%
-\def\LuaHBLaTeX{Lua\acro{HB}\-\LaTeX}%
-\def\LuaLaTeX{Lua\-\LaTeX}% dtk-logos defines it and people like to use it
-\def\LuaTeX{Lua\-\TeX}% ditto
+\def\LuaHBTeX{Lua\acro{HB}\tubdisc\TeX}%
+\def\LuaHBLaTeX{Lua\acro{HB}\tubdisc\LaTeX}%
+\def\LuaLaTeX{Lua\tubdisc\LaTeX}% dtk-logos defines it
+\def\LuaTeX{Lua\tubdisc\TeX}% ditto
 \def\luatex{\LuaTeX}% ditto
 \def\LyX{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX}
 \def\macOS{mac\acro{OS}}
@@ -845,7 +845,7 @@
 %
 %    \begin{macrocode}
 \def\mf{\textsc{Metafont}}
-\def\MFB{\textsl{The \MF\kern.1em\-book}}
+\def\MFB{\textsl{The \MF\kern.1em\tubdisc book}}
 \DeclareRobustCommand{\MiKTeX}{MiK\TeX}
 \def\MkIV{Mk\acro{IV}}
 \let\TB@@mp\mp
@@ -877,9 +877,9 @@
 \def\pcMF{\leavevmode\raise.5ex\hbox{p\kern-.3\p@ c}MF\@}
 \def\PCTeX{PC\thinspace\TeX}
 \def\pcTeX{\leavevmode\raise.5ex\hbox{p\kern-.3\p@ c}\TeX}
-\def\pdfLaTeX{pdf\/\-\LaTeX}% dtk-logos
+\def\pdfLaTeX{pdf\/\tubdisc\LaTeX}% dtk-logos
 \def\pdflatex{\pdfLaTeX}
-\def\pdfTeX{pdf\/\-\TeX}% dtk-logos
+\def\pdfTeX{pdf\/\tubdisc\TeX}% dtk-logos
 \def\pdftex{\pdfTeX}
 \def\PDF{\acro{PDF}}
 \def\PDFUA{\acro{PDF/UA}}
@@ -890,7 +890,7 @@
 \def\plain{\texttt{plain}}
 \def\PNG{\acro{PNG}}
 \def\POBox{P.\thinspace O.~Box }
-\def\PS{{Post\-Script}}
+\def\PS{{Post\tubdisc Script}}
 \def\PSTricks{\acro{PST}ricks}
 \def\RIT{\acro{RIT}}
 \def\RTF{\acro{RTF}}
@@ -904,7 +904,7 @@
 \def\STIX{\acro{STIX}}
 \def\SVG{\acro{SVG}}
 \def\TANGLE{\texttt{TANGLE}\@}
-\def\TB{\textsl{The \TeX\-book}}
+\def\TB{\textsl{The \TeX\tubdisc book}}
 \def\TIFF{\acro{TIFF}}
 \def\TP{\textsl{\TeX:\ The Program}}
 \DeclareRobustCommand{\TeX}{T\kern-.1667em\lower.424ex\hbox{E}\kern-.125emX\@}
@@ -956,7 +956,7 @@
 \def\VAX{V\kern-.12em A\kern-.1em X\@}
 \def\VnTeX{V\kern-.03em n\kern-.02em \TeX}
 \def\VorTeX{V\kern-2.7\p@\lower.5ex\hbox{O\kern-1.4\p@ R}\kern-2.6\p@\TeX}
-\def\XeT{X\kern-.125em\lower.424ex\hbox{E}\kern-.1667emT\@}
+\def\XeT{\texorpdfstring{X\kern-.125em\lower.424ex\hbox{E}\kern-.1667emT\@}{XeT}}
 \def\XML{\acro{XML}}
 \def\XMP{\acro{XMP}}
 \def\WEB{\texorpdfstring{\texttt{WEB}\@}{WEB}}
