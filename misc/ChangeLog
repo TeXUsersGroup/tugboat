@@ -1,3 +1,11 @@
+2026-03-21  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr-ctx (\CJK, \SYNCTEX, \black): for tb145hagen-nodes.
+
+2026-03-21  Karl Berry  <karl@freefriends.org>
+
+	* check-urls-tub: missed \.
+
 2025-11-27  Karl Berry  <karl@freefriends.org>
 
 	* ps2pdf-gray-tub: use -dBlackText to get black text,

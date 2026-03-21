@@ -24,6 +24,7 @@
 \def\CD        {\acro{CD}}
 \def\CDROM     {\acro{CD-ROM}}
 \def\CFF       {\acro{CFF}}
+\def\CJK       {\acro{CJK}}
 \def\CLD       {\acro{CLD}}
 \def\CMAKE     {\acro{CM}ake}
 \def\CMYK      {\acro{CMYK}}
@@ -152,6 +153,7 @@
 \def\SSD       {\acro{SSD}}
 \def\SUMATRA   {Sumatra\-\acro{PDF}}
 \def\SWIGLIB   {SwigLib}
+\def\SYNCTEX   {Sync\TeX}
 \def\TABLE     {T\kern-.27em\lower.5ex\hbox{A}\kern-.18em B\kern-.1em \lower.5ex\hbox{L}\kern-.075em E}
 \def\TDS       {\acro{TDS}}
 \def\TEX       {\TeX}
@@ -198,6 +200,7 @@
 \def\arg{\tubbraced}
 \def\at{}
 \def\bfc{}
+\def\black{} % switch to black color I think
 \def\blackrule[#1]#2{\vrule depth0pt height1ex width#2 \relax}
 \def\blank[#1]{\par}
 \def\breakhere{}
@@ -322,7 +325,7 @@
 \def\typ{\type}
 
 % From David Carlisle, https://tex.stackexchange.com/questions/751189
-% + email 18sep25
+% + email 18sep25. \starttyping ... \stoptyping, ignoring optional argument.
 \NewDocumentCommand\starttyping{}{%
   \par
   % no \smallskip here because \@verbatim does it.
@@ -332,6 +335,7 @@
     \@verbatim
     \frenchspacing
     \@vobeyspaces
+    \tubextratyping
     \xstarttyping
 }
 \NewDocumentCommand\gobbleopt{O{}}{}
@@ -485,9 +489,11 @@
 %    {}
 %\def\starttyping{\begin{tubtyping}}
 %\def\stoptyping{\end{tubtyping}}
-\def\mystarttyping{%
- \par
- \begin{verbatim}[\small \catcode`\|=12 \hfuzz=2pt \tubextratyping]}
+%
+% The simple \starttyping that required changing to \end{verbatim}.
+%\def\starttyping{%
+% \par
+% \begin{verbatim}[\small \catcode`\|=12 \hfuzz=2pt \tubextratyping]}
 % \end{verbatim} has to be literal, unfortunately.
 \def\stoptyping{\errmessage{must literally end verbatim typing}}
 \def\tubextratyping{} % hook

@@ -16,7 +16,7 @@ set -o pipefail
 # take list of urls on stdin and wget each.
 ckurls () {
   wget -i- -nv --no-check-cert --wait=1 --timeout=4 --tries=1 --spider \
-       --user-agent="$agent"
+       --user-agent="$agent" \
        --referer=https://$referer_domain \
        2>&1 \
   | tee /dev/stderr # so we get output as it goes along
