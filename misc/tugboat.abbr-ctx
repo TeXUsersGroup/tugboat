@@ -1,5 +1,5 @@
 % $Id$
-% Copyright 1999-2025 TeX Users Group.
+% Copyright 1999-2026 TeX Users Group.
 % You may freely use, modify and/or distribute this file.
 %
 % "Poor man's" ConTeXt in LaTeX, for simple-enough documents.
@@ -43,6 +43,7 @@
 \def\EPS       {\acro{EPS}}
 \def\EPUB      {ePub}
 \def\ETEX      {\eTeX}
+\def\ETX       {\acro{ETX}}
 \def\EUROTEX   {Euro\-\TeX}
 \def\EXAMPLE   {\textsf{Example}}
 \def\FLAC      {\acro{FLAC}}
@@ -151,6 +152,7 @@
 \def\RUBY      {Ruby}
 \def\SCITE     {Sci\acro{TE}}
 \def\SSD       {\acro{SSD}}
+\def\STX       {\acro{STX}}
 \def\SUMATRA   {Sumatra\-\acro{PDF}}
 \def\SWIGLIB   {SwigLib}
 \def\SYNCTEX   {Sync\TeX}
@@ -250,6 +252,7 @@
 \def\quote#1{{`#1'}}
 \let\origquotation = \quotation
 \def\quotation#1{{``#1''}}
+\def\samplefile#1{\input #1\relax \unskip} % filenames are problematic
 \def\scale[#1]#2#3{}
 \def\setlayer[#1] [#2]#3{}
 \def\setmscale#1{}
@@ -326,7 +329,23 @@
 
 % From David Carlisle, https://tex.stackexchange.com/questions/751189
 % + email 18sep25. \starttyping ... \stoptyping, ignoring optional argument.
-\NewDocumentCommand\starttyping{}{%
+\NewDocumentCommand\starttyping{}{\startverbatim\xstarttyping}
+%
+% Same, for \startbuffer.
+\NewDocumentCommand\startverbatimbuffer{}{\startverbatim\xstartbuffer}
+%
+\NewDocumentCommand\gobbleopt{O{}}{} % ignore an optional argument
+%
+% finish \starttyping
+\expanded{\def\noexpand\xstarttyping#1\@backslashchar stoptyping}{%
+  \stopverbatim{#1}}
+%
+% finish \startbuffer
+\expanded{\def\noexpand\xstartbuffer#1\@backslashchar stopbuffer}{%
+  \stopverbatim{#1}}
+%
+% Common start of verbatim; arg is the command to finish with.
+\def\startverbatim#1{%
   \par
   % no \smallskip here because \@verbatim does it.
   \begingroup
@@ -335,19 +354,25 @@
     \@verbatim
     \frenchspacing
     \@vobeyspaces
+    \hfuzz=\verbatimhfuzz
     \tubextratyping
-    \xstarttyping
+    #1%
 }
-\NewDocumentCommand\gobbleopt{O{}}{}
-\expanded{\def\noexpand\xstarttyping#1\@backslashchar stoptyping}{%
-  % ignore the optional arg #1
-  \gobbleopt#1%
+%
+% Common end of verbatim.
+\def\stopverbatim#1{%
+    % ignore the optional arg #1, but don't expand it (e.g, \startMPcode)
+    \expandafter\gobbleopt\noexpand#1%
   \endgroup
   \par
   % but need \smallskip here, since the unusual way we end verbatim
   % doesn't execute it.
   \smallskip
+  \verbatimhfuzz=\defaulthfuzz
 }
+
+\newdimen\defaulthfuzz  \defaulthfuzz=\hfuzz
+\newdimen\verbatimhfuzz \verbatimhfuzz=\hfuzz
 
 \makeatother
 
@@ -367,8 +392,9 @@
 \let\StopArticle=\stopArticle
 
 % sometimes we want to ignore buffers, sometimes print them.
+\newcommand\startbuffer{} % have to define so we can redefine
 \def\tubignorebuffers{\long\def\startbuffer##1\stopbuffer{}}
-\def\tubverbatimbuffers{\def\startbuffer[##1]{\starttyping}}
+\def\tubverbatimbuffers{\let\startbuffer\startverbatimbuffer}
 \tubverbatimbuffers % default
 
 \NewDocumentCommand\typebuffer{oo}{} % two optional arguments

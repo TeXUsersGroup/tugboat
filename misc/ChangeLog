@@ -1,3 +1,10 @@
+2026-03-25  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr-ctx (\starttyping, \startbuffer): generalize;
+	take optional argument.
+	(\verbatimhfuzz): new dimen to last for one verbatim block.
+	(\ETX,\STX): for tb145hagen-lsystems.
+
 2026-03-21  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.abbr-ctx (\CJK, \SYNCTEX, \black): for tb145hagen-nodes.
