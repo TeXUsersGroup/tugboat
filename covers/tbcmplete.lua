@@ -7,7 +7,7 @@ return {
     list = {
         {
             filename    = "toclinks",
-            first       = 1, --cover1
+            first       = 1, --cover4,
             last        = 2, --cover2
             interaction = "all",
             pageoffset  = 0,
@@ -21,9 +21,8 @@ return {
         },
         {
             filename    = "toclinks",
-            first = 119,
-            -- not working yet: first       = -1, --cover3, last page of toclinks.pdf
-            --   last        = -1, --just that page
+            -- (now can give relative -1; before, set first = 119, etc.)
+            first       = -1, --cover3, last page of toclinks.pdf
             -- 
             -- sometimes cover3 spills over backwards onto the last
             -- regular page. Then we use:

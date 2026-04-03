@@ -71,10 +71,16 @@
 \kern 11.5pc
 \hfuzz=1pc \advance\hsize by \hfuzz
 %
+\def\doimg#1{%
+  \immediate\pdfximage width.25\hsize #1 {coverdrawing.pdf}
+  \pdfrefximage\pdflastximage
+}
+%
 \kern 10pt
 \rightline{%
-  \immediate\pdfximage height5.85in {coverdrawing.png}
-  \pdfrefximage\pdflastximage
+ \doimg{page 1}\quad
+ \doimg{page 2}\quad
+ \doimg{page 3}
   %\kern 30pt
 }
 

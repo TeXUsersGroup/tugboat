@@ -135,8 +135,8 @@ copynext:
 	cd .. && ln -sf ${pdir} ${tn}/webdir
 #
 	# covers/ subdir, most are symlinks into svn-covers.
-	cp -ai Makefile *.tex tugboat.* word-* press2.pdf svn-covers \
-	       ${tn}/covers/
+	cp -ai Makefile *.tex tugboat.* word-* press2.pdf .dict.pws \
+	       svn-covers ${tn}/covers/
 	cd ${tn}/covers && rename s/$(tbn)/$(tbnn)/ *
 #
 	# CADMUS/ link.

@@ -1,3 +1,11 @@
+2026-04-03  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (copynext): also make .dict.pws link.
+	* cover1.tex,
+	* cover2.tex,
+	* tbcmplete.lua: update for 47:1.
+	* tubtocmac.tex (\HarfBuzz): define.
+
 2025-10-30  Karl Berry  <karl@tug.org>
 
 	* Makefile (copynext): set up more.

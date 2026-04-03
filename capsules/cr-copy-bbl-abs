@@ -123,10 +123,11 @@ done
 #  can't succeed if there are two bib files by the same name,
 #  since we're copying everything into a single working directory.
 # 
+bib_excludes='auth|(bb|bib|karl|x)\.|bibliography|\.orig|preauth|printed|save'
 for bib in $issdir/*/*.bib; do
   bib_basename=`basename "$bib"`
   echo "$bib_basename" \
-    | egrep '^(auth|bb\.|orig|preauth|printed|save|x\.)' >/dev/null \
+    | egrep "^($bib_excludes)" >/dev/null\
     && continue
   dest=$outdir/bib/$bib_basename
   if test -e "$dest"; then

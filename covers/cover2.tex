@@ -47,8 +47,8 @@ electronically, at a discount. All membership options are described at
 \tbsurl{tug.org/join}.
 
 Membership in the \TUG\ is for the calendar year, and includes all issues
-of \TUB\/ for the year in which membership begins or is renewed,
-as well as discounts and other benefits.
+of \TUB\/ for the year in which membership begins or is renewed, as well
+as software distributions and other benefits.
 Individual membership carries with
 it such rights and responsibilities as voting in \acro{TUG} elections.
 All the details are on the \acro{TUG} web site.
@@ -79,9 +79,10 @@ see \tbsurl{tug.org/instmem} or contact the \tug\ office.
 
 \bigskip \noindent {\bf About the cover}
 
-\noindent The cover drawing was created by E.P. Unny for the \tug'25
-conference. Mr.~Unny executed many other sketches, available at
-\tbsurl{tug.org.in/sketches.html}.
+\noindent The cover graphic was created by Hans Hagen and Mikael
+Sundqvist using MetaPost, Lua, and \ConTeXt. The three trees
+were created using recursive systems. Their article on pages
+\thisissuepageref{hagen-lsystems} has the details.
 
 \bigskip \noindent {\bf Trademarks}
 
@@ -95,7 +96,7 @@ that it should be treated as if it is.
 \TUB\ vol.\,\volnumber, no.\,\issnumber
 
 \smallskip
-\noindent Printed in \USA{} [printing date:\ August \the\year]
+\noindent Printed in \USA{} [printing date:\ April \the\year]
 \newcol
 
 \NoParIndent
@@ -113,26 +114,25 @@ that it should be treated as if it is.
 
 \vskip-2pt
 \person{Donald Knuth\\Ur~Wizard of \TeX-arcana\2}
-% \1 on title of president, not name, since ex officio:
-\person{Arthur Rosendahl\\President\1}%
-\person{Erik Nijenhuis\1\\Vice President}
-\person{Karl Berry\1\\Treasurer}
-\person{Jim Hef{}feron\1\\Secretary}
-\person{Barbara Beeton\1}% \\\TUB~Editor}
-\person{Doris Behrendt}
-\person{Johannes Braams}
-\person{Max Chernoff}
-\person{Kaja Christiansen}
-\person{Ulrike Fischer}
-\person{Klaus H\"oppner}
-\person{Tom Hejda}
-\person{J\'er\'emy Just}
-\person{Frank Mittelbach}
-\person{Norbert Preining}
-\person{Boris Veytsman\1}
-\person{Raymond Goucher (1937--2019)\\\rlap{Founding Executive Dir.\2}}
-%\person{Raymond Goucher (1937--2019)\\ 
-%  \null\kern5.15em Founding Executive Director\2}
+% \1 on title of president, not name, since ex officio.
+\person{Arthur Rosendahl\\President\1}% 
+\person{Boris Veytsman\1\\Vice President}%
+\person{Karl Berry\1\\Treasurer}%
+\person{Jim Hef{}feron\1\\Secretary}%
+\person{Barbara Beeton\1}% \\\TUB~Editor}%
+\person{Johannes Braams}%
+\person{Max Chernoff}%
+\person{Kaja Christiansen}%
+\person{Ulrike Fischer}%
+\person{Klaus H\"oppner}%
+\person{Tom Hejda}%
+\person{J\'er\'emy Just}%
+\person{Frank Mittelbach}%
+\person{Ross Moore}%
+\person{Norbert Preining}%
+%\person{Raymond Goucher (1937--2019)\\\rlap{Founding Exec.\ Director\2}}
+\person{Raymond Goucher (1937--2019)\\ 
+  \null\kern5.15em Founding Executive Director\2}
 \person{Hermann Zapf (1918--2015)\\Wizard of Fonts\2}
 
 \smallskip
@@ -194,17 +194,17 @@ General \rlap{correspondence,}
 membership, \rlap{subscriptions:}
 \tbmailto{office@tug.org}
 
-\smallskip
+\medskip
 Submissions \rlap{to \TUB,}
 letters to \rlap{the Editor:}
 \tbmailto{TUGboat@tug.org}
 
-\smallskip
+\medskip
 Volunteer \TeX{}nical support,
 public mailing list (a.k.a.\ texhax):
 \tbmailto{support@tug.org}
 
-\smallskip
+\medskip
 Contact the
 Board of \rlap{Directors:}
 \tbmailto{board@tug.org}
@@ -220,8 +220,8 @@ Board of \rlap{Directors:}
 
 % emacs-page
 
-{\eightpoint %\parindent=\normalparindent  
-\parskip=4pt \raggedright
+{\eightpoint
+\parindent=0pt \parskip=4pt \raggedright
 Copyright \copyright{} \the\year\ \TUG{}.
 
 Copyright to individual articles within this publication remains with
