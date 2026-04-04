@@ -1,3 +1,8 @@
+2026-04-04  Karl Berry  <karl@freefriends.org>
+
+	* cover2.tex: no tie be~included since (as of 2022) there is
+	another sentence following.
+
 2026-04-03  Karl Berry  <karl@freefriends.org>
 
 	* Makefile (copynext): also make .dict.pws link.
