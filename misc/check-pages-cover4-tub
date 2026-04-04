@@ -2,7 +2,7 @@
 # $Id$
 # Input is assumed to be a tbNNNcont.tex input file (cover4 contents).
 # Our goal is to check that the page numbers are in ascending order,
-# with possible exceptions given on the command line.
+# with some known exceptions below.
 # 
 # The idea is to look for \getfirstpage{...} and \getlastpage{...}
 # invocations, get their numeric values, and do the check.
@@ -33,7 +33,11 @@ sub main {
         warn "$ARGV:$.: no directory for: $item_name\n";
         next;
       }
-      next if $item_name =~ /^(edit|instmem)$/;
+      
+      # for 47:1 we have a comic, makes checking consultants impossible.
+      # can undo next time.
+      next if $item_name =~ /^(edit|instmem|consultants)$/;
+      
       my $this_pageno;
       if ($type eq "fir") {
         $this_pageno = &get_page ("$item_name/firstpage.tex");
@@ -62,7 +66,7 @@ sub main {
   return $bad > 0; # 1 if any failures
 }
 
-# QL
+# 
 # read per-paper file to get either starting or ending page number.
 # increment global $ERROR_COUNT if problems.
 # 
