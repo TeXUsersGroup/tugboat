@@ -1,3 +1,8 @@
+2026-04-23  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (cm): another alias to make complete.
+	* cover4.tex (\secskipb): .5pt for tb145.
+
 2026-04-04  Karl Berry  <karl@freefriends.org>
 
 	* cover2.tex: no tie be~included since (as of 2022) there is

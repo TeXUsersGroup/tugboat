@@ -57,7 +57,7 @@ cover1.pdf: word-nobox.pdf press2.pdf coverdrawing.pdf
 # that we create per issue; see rules below.
 # 
 # See tb138prod.pdf for a published note about this.
-$(tb)complete.pdf complete compl co: $(tb)cmplete.lua \
+$(tb)complete.pdf complete compl co cm: $(tb)cmplete.lua \
                                     toclinks.pdf ../CADMUS/issue.pdf
 	lmtxtub --extra=copy --template $<
 	mv context-extra.pdf $(tb)complete.pdf
@@ -67,18 +67,9 @@ $(tb)complete.pdf complete compl co: $(tb)cmplete.lua \
 
 # after copying the generic file, update the number of pages in the
 # issue and adjust c3 depending on whether it's one or two pages.
+# (no o in the name for faster filename completion)
 $(tb)cmplete.lua: svn-covers/tbcmplete.lua
 	cp $< $@ || exit 1
-
-# the tex file doesn't need per-issue changes; just make a link
-# so the \jobname will include the issno.
-$(tb)complete.tex: svn-covers/tbcomplete.tex
-	rm -f $@
-	ln -s $< $@ || exit 1
-
-# i.e., copy tbcmplete.lua from svn:covers/
-# to $(tb)cmplete.lua (no o for better filename completion), and
-# tbcomplete.tex to $(tb)complete.tex.
 
 # the interior, with the toc pages prepended and appended,
 # with internal links to the articles. Used to create the final *complete.pdf.
