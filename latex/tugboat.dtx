@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2026-03-12 v2.36
+                   [2026-04-23 v2.36
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -907,7 +907,7 @@
 \def\TB{\textsl{The \TeX\tubdisc book}}
 \def\TIFF{\acro{TIFF}}
 \def\TP{\textsl{\TeX:\ The Program}}
-\DeclareRobustCommand{\TeX}{T\kern-.1667em\lower.424ex\hbox{E}\kern-.125emX\@}
+\DeclareRobustCommand{\TeX}{T\kern-.1667em\lower.5ex\hbox{E}\kern-.125emX\@}
 \def\TeXhax{\TeX hax}
 \DeclareRobustCommand{\TeXLive}{\TeX\ Live}
 \def\TeXMaG{\TeX M\kern-.1667em\lower.5ex\hbox{A}\kern-.2267emG\@}
@@ -1417,16 +1417,11 @@
 % to auto-remove an explicit protocol in case it
 % was given.
 % 
-% Only the correct protocol is removed; if \verb|http://| is
-% given to \cs{tbsurl}, it is used (and printed) as-is. This is useful
-% so we can do \verb|\let\url\tbsurl| when printing bibliographies.
-% 
-% Giving \verb|https://| to \cs{tbhurl}, on the other hand, generates an
-% invalid link; in practice there's no use for that so we don't bother
-% to check for it.
+% Giving \verb|https://| to \cs{tbhurl} generates an invalid link; in
+% practice there's no use for that so we don't bother to check for it.
 % 
 \ExplSyntaxOn
-% Test whether #1 matches the leading characters of #2.
+% Helper function to test whether #1 matches the leading characters of #2.
 \cs_new:Npn \str_if_starts_with:nnTF #1#2
   {
     % #1 = prefix to test
@@ -1443,15 +1438,31 @@
 % the main function to handle url #1.
 \def\tbsurl@#1  % https
  {
+  \group_begin:
+   % URL encoding for when pdf management (\DocumentMetadata) is active,
+   % else a % in the input url ends up as a %25 in the active link.
+   % From Ulrike, 4apr26.
+   \IfPDFManagementActiveT{
+      \bool_if:NTF \l__hyp_href_url_encode_bool
+     {
+       \tl_set:Nn \l__hyp_text_enc_uri_print_tl {utf8/URI}
+     }
+     {
+       \tl_set:Nn \l__hyp_text_enc_uri_print_tl {utf8/string}
+     }
+   }% end pdf management
+   %
    \str_set:Nn \l_tmpa_str {#1}
-% this checks if http:// is contained anywhere within the argument url,
-% but that is not good enough, since http:// might occur inside the url,
-% e.g., https://web.archive.org/web/20090809184749/http://www.eco-log.de/
-%   \str_if_in:NnTF \l_tmpa_str {http://}
-% Another fix would have been to insert a constant string "foo" before
-% the argument and the prefix, but since the clean solution is at hand,
-% might as well use it.
-  \str_if_starts_with:nnTF {http://} {#1}
+   % this checks if http:// is contained anywhere within the argument url,
+   % but that was not good enough, since http:// might occur inside the url,
+   % e.g., https://web.archive.org/web/20090809184749/http://www.eco-log.de/
+   %   \str_if_in:NnTF \l_tmpa_str {http://}
+   % 
+   % Instead we check for "starts with http://".
+   % Another fix would have been to insert a constant string "foo" before
+   % the argument and the prefix, but since the clean solution is at hand,
+   % might as well use it.
+   \str_if_starts_with:nnTF {http://} {#1}
     { 
       \tbhurl@{#1} % if http, redirect to remove protocol
       % this version prints the http, as we originally thought was better.
@@ -1464,7 +1475,9 @@
         \expandafter{\expandafter\Hurl\expandafter{\l_tmpa_str}}
                                                           {https://\l_tmpa_str}
     }
- }
+  \group_end:
+ } % end \tbsurl@
+%
 % explicit http, handle similarly but don't bother checking for https
 \def\tbhurl@#1
  {

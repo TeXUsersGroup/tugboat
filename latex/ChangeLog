@@ -1,3 +1,11 @@
+2026-04-23  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\TeX): restore \lower.5ex per plain.tex; had
+	somehow changed to .424ex.
+	(\tbsurl@): check \IfPDFManagementActiveT.
+
+	* tuburllivetest.tex: doc.
+
 2026-03-17  Max Chernoff  <tex@maxchernoff.ca>
 
 	* tugboat.dtx (\acro): use \DeclareNewCommand m to make
