@@ -17,9 +17,10 @@ more_options =
 #profopt = -d:NYTProf
 profcmd = nytprofhtml
 # https://stackoverflow.com/questions/4371714/how-do-i-profile-my-perl-programs
-# only does by subroutine: -d:DProf [dprofpp]
+# skip, only does by subroutine: -d:DProf [dprofpp]
+# after nyprofhtml runs, vsit nytprof/index.html
 
-perl = /usr/local/bin/perl $(profopt)
+perl = perl $(profopt)
 captub = $(perl) captub $(options) $(more_options)
 time = time -f "time:%e"
 

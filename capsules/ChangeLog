@@ -1,3 +1,17 @@
+2026-04-30  Karl Berry  <karl@freefriends.org>
+
+	* tb145capsule.txt (kurz-manycol): fix incorrect author value
+	copied from last issue. Argh.
+	* crossref/README-process.txt: update for 47:1.
+	* crossref/ltx2crossrefxml-tugboat.cfg (\FarsiTeX, \lib):
+	new abbrevs for 47:1.
+	* lists-authinfo.txt (Andersen, Beisert): forgot "orcid=".
+	* cr-copy-bbl-abs: do not copy orig.bib.
+	
+	* Makefile: doc tweak for nytprof/ subdir after profiling.
+	* crossref/Makefile (profile): add variable
+	(issue): change targets to enable optional profiling.
+	
 2026-04-27  Karl Berry  <karl@freefriends.org>
 
 	* Makefile (testiss,lastiss,crossref_iss): 145.	

@@ -2,11 +2,21 @@
 # Public domain.
 # See the README here for the general story on our doi support.
 
+# See ../Makefile for a few comments on profiling. Disabled by default.
+#profopt = -d:NYTProf
+profcmd = nytprofhtml
+ifdef profopt
+profile = perl $(profopt)
+endif
+
+# Simple report on how long it takes to run. Typically ~10s, unfortunately.
+time = time -f "time:%e"
+
 # We want to use the development version of ltx2crossrefxml, e.g.,
 # a symlink to /home/.../crossrefware/ltx2crossrefxml.pl
-# in a crossrefware checkout. It's not unlikely that any given issue of
+# in a crossrefware checkout. It's fairly likely that any given issue of
 # TUB will require updates to crossrefware or bibtexperllibs.
-ltx2crossrefxml = $(ltx2env) ./ltx2crossrefxml
+ltx2crossrefxml = $(ltx2env) $(time) $(profile) ./ltx2crossrefxml
 #
 tub_cfg = ltx2crossrefxml-tugboat.cfg
 
@@ -37,6 +47,7 @@ ltx2crossrefxml_args = -c $(tub_cfg) $(rpi_input) --rpi-is-xml -o $(xml_output)
 $(xml_output) issue: $(rpi_input) $(tub_cfg) force
 	$(ltx2crossrefxml) $(ltx2crossrefxml_args) \
 	  || { rm -f $(xml_output); exit 1; }
+	test -z "$(profopt)" || $(profcmd)
 	xmllint --noout $(xml_output) # basic syntax check
 #sed '1,/<titles>/d' $(xml_output) # omit top boilerplate
 # check basics:

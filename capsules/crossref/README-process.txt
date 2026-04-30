@@ -29,7 +29,7 @@ directory (~tubprod/VV-N), one or both of these files, as needed:
   . if an article has no abstract, write a summary if need be.
   . if the one-line description from the capsule suffices,
     no need to create an abs.tex.
-  . both \begin{abstract} and \end{abstract} lines are optional (and ignored).
+  . the \begin{abstract} and \end{abstract} lines are optional (and ignored).
 
 - a bbl.tex file for Crossref's unstructured citations:
   . if an article uses BibTeX, the .bbl file can be copied to bbl.tex 
@@ -47,7 +47,8 @@ directory (~tubprod/VV-N), one or both of these files, as needed:
       \bibdata commands are not output. (ltx2crossref would have to be
       changed to recognize what biblatex does, which is completely different.)
     . The biblatex2bibitem package, which could help a little, apparently
-      does not currently work with Unicode.
+      does not currently work with Unicode in its current release, but
+      has been updated by Marei.
 
 These {abs,bbl}.tex files stay in the TUGboat per-article source directories.
 
@@ -144,11 +145,8 @@ files present in the TUB source directory. To see which those were:
   make cr_verbose=--verbose cro-scratch  # in capsules directory
 
 After the make succeeds, we want to review the html output to make sure
-the transformations are ok and urls are correct. This makes the "next
-doi" links be local (and the list* accumulations only be for the
-processed issue):
-  make crw
-Then can check the relevant files at:
+the transformations are ok and urls are correct. You can check the
+relevant files at:
   file:///home/tubprod/svn/capsules/crossref/dir1.lndout/...
 
 cr-landing-bbl-abs, called in the above process, converts abstracts to
@@ -177,7 +175,8 @@ It will report success or any errors online immediately.
 ---- this was the old method for testing, but as of 46:2 (2025) crossref
      could not be bothered to update their test environment for the new
      schema. Therefore testing has to be done in a different way; see above.
-     Hopefully test.crossref.org will be usable again eventually.
+     Hopefully test.crossref.org will be usable again eventually -- and
+     indeed, as of 47:1, it seems that it is.
 #old When all articles are done, and the issue.xml looks ok, can upload to
 #old crossref for them to validate it:
 #old   make upload-test  # in crossref subdirectory
@@ -212,6 +211,9 @@ Then check results at:
 E.g.:
   https://tug.org/TUGboat/tb46-3/tb144chest.html
 And email tub-prod for them to check if they want.
+
+The crw target makes the "next doi" links be local (and the list*
+accumulations only be for the processed issue, so don't look at those).
 
 Good to make another interim commit of whatever needed to be changed in
 capsules/ (and crossrefware and bibtexperllibs) at this point.
