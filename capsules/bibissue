@@ -1,0 +1,8 @@
+#!/bin/sh
+# $Id$
+# Public domain. Originally written by Karl Berry, 2025.
+# Extract BibTeX entries from landing files; see ./Makefile for comments.
+
+for lnd in "$@"; do
+  sed -n -e '/^@article/,/^}/p' $lnd
+done

@@ -371,7 +371,7 @@ END_LANDING
     print $LANDING <<END_LANDING;
 
 <p id="cite"><b>Cite this article (BibTeX)</b>: <small><pre>
-\@Preamble{"\\input tugboat.def"}
+\@preamble{"\\input tugboat.def"}
 $bibtex_entry
 </pre>
 </small>
@@ -385,6 +385,7 @@ END_LANDING
   close ($LANDING) || warn "$0: close($landing_fname) failed: $!\n";
 }
 
+
 # Return the BibTeX entry, as a single string, for capsule CAP with
 # supplemental information SUPP, as described above.
 # 
@@ -392,22 +393,174 @@ END_LANDING
 # some obscure items without urls (see no_urls list below). They're not
 # worth the extra trouble to find in tugboat.bib.
 # 
+# Start block with %nbib static variable so that we read tugboat.bib only once.
 {
   my %nbib = &read_nbib ();
 
 sub bibtex_entry {
-  my ($cap_ref,$supp_ref) = @_;
+  my ($cap,$supp) = @_;
   
-  my $url = $cap_ref->{"url"};
+  my $url = $cap->{"url"};
   $url = "https://tug.org$url" if $url =~ m,^/,;
-  return $nbib{$url} || "";
+  #
+  my $ret;
+  if (exists $nbib{$url}) { # if in tugboat.bib, return that.
+    $ret = $nbib{$url};
+  } elsif (&is_latest_issue ($cap)) { # if new issue, construct it.
+    $ret = &make_bibtex_entry ($cap, $supp);
+  } else {
+    # else something unknown, typically stray items that don't match in
+    # tugboat.bib that aren't worth worrying about. return empty string.
+    $ret = "";
+  }
+  return $ret;
 }  
 } # end static variable block.
 
+# There is no global way to tell if we are processing the latest issue
+# for new publication; it's the "lastiss" variable in the Makefile, but
+# passing that explicitly seems ugly. Instead, if we are processing NNN,
+# we check if the file tb(NNN+1)capsule.txt exists. We make the same
+# check when creating the next/prev issue links in capout.pl.
+# 
+# In practice this works well enough, since we don't create the
+# tb*capsule.txt file (in contrast to the tb*capsule.tex file in the
+# tb/covers issue dir) until we're publishing a new issue.
+#
+sub is_latest_issue {
+  my ($cap) = @_;
+  my $issue = $cap->{"issueref"};
+  my $seqno = $issue->{"seqno"};
+  my $next = $seqno + 1;
+  return ! -r "tb${next}capsule.txt";
+}
+
+
+# When publishing a new issue, we need to construct the bib entries,
+# since they cannot be in tugboat.bib yet. It wouldn't be feasible to
+# put Nelson in the critical path of issue publication, and besides,
+# there is a chicken-and-egg problem since he uses the published html
+# files to create his entries. So, we do the best we can to generate
+# something close to what he can use, and then send the collected
+# bibissue.bib (see ./Makefile) to him afterward.
+#
+sub make_bibtex_entry {
+  my ($cap_ref,$supp_ref) = @_;
+  my %cap = %$cap_ref;
+  my %supp = %$supp_ref;
+  my %issue = %{$cap{"issueref"}};
+  #&info_hash ("btx", %cap);
+  #&info_hash ("supp", %supp);
+  #&info_hash ("iss", %issue);
+  
+  # We follow approximately the same order of fields as tugboat.bib.
+  # 
+  my $cite_key = &bibtex_cite_key ($cap_ref);
+  my $entry = "";
+  $entry .= qq!\@article{$cite_key,\n!;
+
+  # The output is essentially the TeX author strings, which capconv
+  # saves for us in the list element author_tex.
+  my @author_tex = @{$cap{"author_tex"}};
+  my @a_out = ();      # author info we'll output
+  #
+  # We also need the HTML versions, to look up the authinfo.
+  my @author_html = @{$cap{"author_html"}}; # local copy
+  shift @author_html;                       # remove html author string
+  #
+  # And we need the orcids.
+  my @orcids_out = (); # orcid list we'll output
+  my @author_orcid = @{$cap{"author_orcid"}};
+
+  for (my $a_index = 0; $a_index < @author_tex; $a_index++) {
+    my $a_tex = $author_tex[$a_index];
+    my $a_html = $author_html[$a_index];
+    my @ai = &lists_authinfo ($a_html); # additional info
+    #
+    my $a_out = $a_tex;
+    #
+    # Use ties instead of the capsules' \CONNECT{} convention.
+    $a_out =~ s/\\CONNECT\{\}/~/g;
+    push (@a_out, $a_out);
+    #
+    # collect orcid values as we go.
+    my $a_orcid = $author_orcid[$a_index];
+    my $bib_orcid = $a_orcid ? "$a_tex/$a_orcid; " : "";
+    push (@orcids_out, $bib_orcid);
+  }
+  #
+  my $author = join (" and ", @a_out); # bibtex author separator
+  $entry .= qq!  author =        "$author",\n!;
+  $entry .= qq!  title =         "$cap{title}",\n!; # source must have braces
+  $entry .= qq!  journal =       "TUGboat",\n!; # qqq not when $issue{notissue}
+  $entry .= qq!  volume =        "$issue{volno}",\n!;
+  $entry .= qq!  number =        "$issue{issno}",\n!;
+  $entry .= qq!  pages =         "$cap{pageno_print}",\n!;
+  $entry .= qq!  year =          "$issue{year}",\n!;
+  $entry .= qq!  issue =         "$issue{seqno}",\n!;
+  $entry .= qq!  DOI =           "$supp{doi}",\n!;
+
+  # For the url, remove /members/ since we don't want people citing that
+  # private url; in the rare event of someone citing an article from the
+  # current issue and reporting that the url doesn't work, we'll copy it
+  # to the public area. On the other hand, items that are public since
+  # the beginning, such as beet and chest, need to have the tug url prepended.
+  #
+  (my $url = $cap{"url"}) =~ s,/members,,;
+  $url = "https://tug.org$url" if $url =~ m,^/,;
+  $entry .= qq!  url =           "$url",\n!;
+
+  # If we had any orcids, output them.
+  my $all_orcids = join ("", @orcids_out);
+  if (length ($all_orcids) > 0) {
+    $all_orcids =~ s/; $//; # remove final terminator
+    $entry .= qq!  ORCID-numbers = "$all_orcids",\n!;
+  }
+
+  # Other static journal values:
+  $entry .= qq!  journal-URL =   "https://tug.org/TUGboat/",\n!;
+  $entry .= qq!  ISSN =          "0896-3207",\n!;
+  # end of entry.
+  $entry .= qq!}\n!;
+  
+  return $entry;
+}
+
+# Return a citation key for CAP_REF. We use volume-issue-pagenumber
+# to ensure uniqueness, plus the author name for clarity. This is
+# essentially the same as what tugboat.bib used for many years, so play
+# with the punctuation to ensure we don't conflict.
+# 
+sub bibtex_cite_key {
+  my ($cap_ref) = @_;
+  my %issue = %{$cap_ref->{"issueref"}};
+  my $key = "";
+  
+  # We want an ASCII form of the first author's last name.
+  # Happily, we already computed that to be used as the #anchor
+  # in listauthor.html. So extract it out of the html string.
+  # A bit of a kludge, but better than recomputing it.
+  my $author_html = @{$cap_ref->{"author_html"}}[0];
+  (my $author1 = $author_html) =~ s/^.*?#(.*?)[,"].*$/$1/;
+  warn "$0: failed to extract ASCII author1 from: $author_html"
+    if ! $author1;
+  $key .= "$author1:TB";
+  $key .= "$issue{volno}-$issue{issno}";
+
+  # we use a colon instead of a dash before the page number
+  # to avoid possible conflict with old tugboat.bib entries.
+  (my $startpage = $cap_ref->{"pageno_print"}) =~ s/-.*//;
+  $key .= ":$startpage";
+  
+  return $key;
+}
+
+
 # Read Nelson Beebe's tugboat.bib file and return a hash with the url
-# field values as the keys, and the whole entry as we want to show it on
+# field values as the keys, and the whole entry as we want to show it in
 # the landing file as the value. We simplify Nelson's entries a bit,
-# and change the citation key to avoid unnecessary collisions.
+# and change the citation key to avoid collisions if a user both copies
+# the entry from the landing page and uses tugboat.bib.
 # 
 sub read_nbib {
   my $nbib_fname = `kpsewhich tugboat.bib`;

@@ -32,7 +32,7 @@ sub tex2html {
 #    anyway, due to unifications.)
 # category -> category_html (simple transformation only)
 #             and category_unified (including unifications)
-# author -> author_html
+# author -> (author_html,author_tex,author_orcid)
 # title || category -> title_html
 # shortdesc -> shortdesc_html
 # pageno -> made into sortable integer, also pageno_print for display
@@ -47,7 +47,10 @@ sub capsule_convert {
   ($out{"category_html"},
    $out{"category_unified"}) = &transform_category ($in{"category"});
 
-  $out{"author_html"} = &transform_author ($in{"author"});
+  # author names translated to html, and in original tex split into a list.
+  ($out{"author_html"},
+   $out{"author_tex"},
+   $out{"author_orcid"}) = &transform_author ($in{"author"});
 
   # for title, fall back to category, e.g., for Advertisements.
   $out{"title_html"} = &tex2html ($in{"title"} || $out{"category_html"});
@@ -95,10 +98,18 @@ sub transform_category {
   return ($cat,$uni);
 }
 
-
 
-# Take author string ALL_AUTHORS_TEX (in TeX) and return a reference to
-# a list:
+# Take author string ALL_AUTHORS_TEX (in TeX) and return three list references.
+# 
+# The second is simple: a list of the individual authors from
+# ALL_AUTHORS_TEX, without changing the TeX data, except for calling
+# normalize_whitespace.
+# 
+# The third is also simple: the orcid for each of the authors, or undef
+# if none is known. (We look for orcids only in the file
+# lists-authinfo.txt; we don't try to search for them.)
+# 
+# The first list (reference) is for the HTML conversions, and is not simple:
 # - the first element is the entire author string in HTML, with names
 #   linked to entries in listauthors.html and followed by their orcid if
 #   available, and joined by ", ".
@@ -110,18 +121,25 @@ sub transform_category {
 # We assume Last is a single whitespace-delimited word; unifications or
 # \CONNECT{} must be used in the input source as needed.
 # 
-# The first element is for printing as-is in the tocs and doi landing
+# That first element is for printing as-is in the tocs and doi landing
 # pages; the remainder are for sorting and outputting in lists*.html.
 # 
 # Thus, if the input is the TeX "Donald~E. Knuth and H. Zapf", the
-# return is the three-element list:
+# HTML part of the return is the three-element list:
 # ('<a href="/TUGboat/Contents/listauthors.html#Knuth,Donald">Donald&nbsp;E. Knuth, <a href="/TUGboat/Contents/listsauthors.html#Zapf,Hermann">H. Zapf",
 #  "Knuth, Donald&0xa0;E.",
-#  "Zapf, H.").
-# 
+#  "Zapf, H.")
+# And the TeX part of the return is a two-element list:
+# ("Donald~E. Knuth",
+#  "H. Zapf")
+# And the ORCID part of the return is a two-element list:
+# (0009-0000-8366-9524,undef)
+# since lists-authinfo.txt does not give an orcid for Zapf.
+#
 sub transform_author {
   my ($all_authors_tex) = @_;
-  my @ret = ();
+  my @ret = ();    # the html list described above
+  my @orcids = (); # the list of orcids
 
   # splitting the author string into individual authors is an exercise
   # in heuristics, since there are so many variations in the original
@@ -201,25 +219,26 @@ sub transform_author {
     #
     # and append a link to their orcid, if we know it.
     my $author_orcid = &author_orcid ($a);
+    push (@orcids, $author_orcid); # undef or not
     $orig_author_html .= qq!&nbsp;(<a href="https://orcid.org/$author_orcid"!
       . qq!>orcid</a>)! if $author_orcid;
-  }
+  } # end of loop for each author
   
   # put the original string at the beginning of what we return.
   unshift (@ret, $orig_author_html);
   
   &ddebug ("    author: transform($all_authors_tex) -> [@ret]");
-  return \@ret;
-}
+  return \@ret, \@authors, \@orcids;
+} # end of transform_author
 
 # Take argument AUTHOR as HTML, formatted as First Last, and look it up
 # in lists-authinfo.txt file. Return the orcid value if given for this
-# author, else undef. AUTHOR might be empty or undef, in which case we
-# also return undef.
+# author, else the empty string. AUTHOR might be empty or undef, in
+# which case we also return the empty string.
 # 
 sub author_orcid {
   my ($author) = @_;
-  return undef unless $author;
+  return "" unless $author;
 
   # get extra info for this author.
   my @ai = &lists_authinfo ($author);
@@ -229,7 +248,7 @@ sub author_orcid {
     return $val if $key eq "orcid";
   }
   
-  return undef;
+  return "";
 }
 
 

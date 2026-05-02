@@ -120,7 +120,7 @@ all:
 	perl -cw captub && date
 	for iss in `seq -f %02.0f $(lastiss) -1 1`; do \
 	    cap="$$cap tb$${iss}capsule.txt"; done; \
-	  $(time) $(captub) $$cap | tee /tmp/allcap.html || { exit $?; }
+	  $(time) $(captub) $$cap
 	! grep -o 'tubidxgroup.*\<and\>' listauthor.html
 # if gets messed up, check title_sort generation in capaccum.pl:
 	! grep -o 'id="[^">]*[^a-z0-9_,][^">]*"' listtitle.html
@@ -157,12 +157,28 @@ install: # after make all and (for major changes) install-test
 all-diff: all diff
 all-install: all install
 
-try:
-	perl try.pl
+# How we ran an old article.
+#art19:
+#	$(pdflatex) article-2019.ltx
+#	bibtex article-2019
 
-art19:
-	texfot pdflatex '\nonstopmode\input article-2019.ltx'
-	bibtex article-2019
+#  Test the BibTeX entries we include in the landing files.
+# 
+# We do this by extracting the entries from the html, since they are
+# included literally. If we ever make bib entries for the anonymous
+# items without DOIs (i.e., without authors), we'll have to change that,
+# since there are no landing files for those.
+# 
+bibiss = bibissue
+pdflatex = texfot pdflatex
+$(bibiss).pdf bi: $(bibiss).bbl
+	$(pdflatex) $(bibiss).tex
+$(bibiss).bbl: $(bibiss).bib $(bibiss).aux
+	bibtex $(bibiss).aux
+$(bibiss).aux: $(bibiss).tex
+	$(pdflatex) $(bibiss).tex
+$(bibiss).bib: crossref/dir1.lndout/tb*.html
+	($(bibiss) $^ >$@ && test -s $@) || { rm -f $@; exit 1; }
 
 clean:
 	rm -f contents*.html listauthor.html listkeyword.html listtitle.html

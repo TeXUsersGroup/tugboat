@@ -167,39 +167,36 @@ to check the generated dir2.process/issue.xml:
 - also check <citation_list>s and individual <citation>s for reasonableness,
   especially the structured citations with <article_title> etc.
 
-To test, upload dir2*/issue.xml to this obscure url, given to us by
-Crossref support (not sure if it is linked anywhere in their docs):
+When all articles are done, to test if our xml validates, upload
+dir2*/issue.xml to this obscure url, given to us by Crossref support
+(not sure if it is linked anywhere in their docs):
   https://www.crossref.org/02publishers/parser.html
 It will report success or any errors online immediately.
 
----- this was the old method for testing, but as of 46:2 (2025) crossref
-     could not be bothered to update their test environment for the new
-     schema. Therefore testing has to be done in a different way; see above.
-     Hopefully test.crossref.org will be usable again eventually -- and
-     indeed, as of 47:1, it seems that it is.
-#old When all articles are done, and the issue.xml looks ok, can upload to
-#old crossref for them to validate it:
-#old   make upload-test  # in crossref subdirectory
-#old 
-#old The result should be "batch submission was successfully received"; that
-#old just means the data was uploaded. Crossref will send email to
-#old doi-tugboat@tug.org when complete, which should happen within a few
-#old minutes. Can also check results online:
-#old   https://test.crossref.org -> Show my submission queue
-#old                            (or Show System Queue)
-#old 
-#old When the result mail comes in, see <batch_data> summary element at end,
-#old should be all success. Browse through the rest, especially that all the
-#old <citation> elements were accepted. Fix and rerun as needed.
----- end old testing info.
+For a time, test.crossref.org was not updated to the current schema.
+But usually, another way to test issue.xml is to upload via:
+  make upload-test  # in crossref subdirectory
+
+The result should be "batch submission was successfully received"; that
+just means the data was uploaded. Crossref will send email to
+doi-tugboat@tug.org when complete, which should happen within a few
+minutes. Can also check results online:
+  https://test.crossref.org -> Show my submission queue
+                           (or Show System Queue)
+
+When the result mail comes in, see <batch_data> summary element at end,
+should be all success. Browse through the rest, especially that all the
+<citation> elements were accepted. Fix and rerun as needed.
+
+It is good to test issue.xml in both ways, since it's easy.
 
  After the test upload succeeds, good to copy the test landing files
-to the live web directory for tub-prod to check
-(assuming we've been doing all this on a development machine).
+to the live web directory for tub-prod to check.
+Here we assume we're working on a development machine, not tug.org:
 
 First, run
   make crw 
-to make landing pages that don't go through doi.org. Then:
+to make landing pages that don't go through doi.org, for testing. Then:
   host=tug.org
   dir=/home/httpd/html/TUGboat/tb$VV-N; echo $dir
   ssh $host mkdir $dir                           # ensure directory exists
@@ -209,8 +206,8 @@ to make landing pages that don't go through doi.org. Then:
 Then check results at:
   https://tug.org/TUGboat/tbVV-N/tbnnnwhatever.html
 E.g.:
-  https://tug.org/TUGboat/tb46-3/tb144chest.html
-And email tub-prod for them to check if they want.
+  https://tug.org/TUGboat/tb47-1/tb145chest.html
+And email tub-prod for them to check if desired.
 
 The crw target makes the "next doi" links be local (and the list*
 accumulations only be for the processed issue, so don't look at those).
@@ -221,7 +218,7 @@ capsules/ (and crossrefware and bibtexperllibs) at this point.
 A few days before making the issue live, first remake the landing files
 so the doi links go through doi.org (i.e., not running "make crw"):
   # still in svn/capsules/ directory
-  make cro-scratch  # without crw
+  make cro-scratch  # not crw
 Double-check crossref/dir2.process/issue.xml as above.
 At this point the "next doi" links will not work until the dois are
 registered.

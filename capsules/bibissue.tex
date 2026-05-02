@@ -1,0 +1,13 @@
+% $Id$
+% Public domain. Originally written by Karl Berry, 2025.
+% TUGboat article to test bib entries; see ./Makefile for comments.
+
+\documentclass{ltugboat}
+\usepackage[hidelinks]{hyperref} % break links, remove https://
+\def\url{\tburl}
+
+\begin{document}
+\nocite{*}
+\bibliographystyle{tugboat}
+\bibliography{bibissue}
+\end{document}

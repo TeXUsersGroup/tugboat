@@ -1,3 +1,31 @@
+2026-05-02  Karl Berry  <karl@freefriends.org>
+
+	Include BibTeX entries on the landing pages of
+	non-anonymous articles (those with DOIs), either (for the latest
+	issue) constructed by us, or (for older issues) from tugboat.bib.
+
+	* capcrossref.pl (bibtex_entry): construct bibtex entries for the
+	latest issue, since they cannot be in tugboat.bib yet.
+	(is_latest_issue, make_bibtex_issue, bibtex_cite_key): new fns.
+	
+	* capconv.pl (capsule_convert): also return the authors in their
+	original TeX, and their ORCIDs.
+	(transform_author): construct and return those values.
+	
+	* Makefile (all): omit tee, generally no output, and keep exit status.
+	(bi, $(bibiss).{pdf,bbl,aux,bib}): new targets to mak bibissue.pdf.
+	* bibissue: new script.
+	* bibissue.tex: new trivial driver to show the bib.
+	
+	* lists-authinfo.txt (Knuth): define orcid (0009-0000-8366-9524).
+	
+	* tb145capsule.txt: now we must use braces in this file as BibTeX
+	needs them, i.e., around capitalized words in titles and
+	multi-word last names {Stary Novotny}.
+	
+	* crossref/README-process.txt: test.crossref.org upload
+	works again with their current schema.
+	
 2026-04-30  Karl Berry  <karl@freefriends.org>
 
 	* tb145capsule.txt (kurz-manycol): fix incorrect author value

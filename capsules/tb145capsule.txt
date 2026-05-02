@@ -96,7 +96,7 @@ access</a>.
 \capsule{}
    {General Delivery}%add|Obituaries
    {Jacques Andr\'e}
-   {James Mosley (1935--2025) and French typography}
+   {{James Mosley} (1935--2025) and {French} typography}
    {}
    {16-17}
    {https://tug.org/members/TUGboat/!TBIDENT!andre-mosley.pdf}
@@ -133,7 +133,7 @@ access</a>.
 \capsule{}
   {General Delivery}%add|Conference Notes
   {Doris Behrendt, Erik Nijenhuis}
-  {GuIT meeting, Pisa~2025: A visit by Doris and Erik}
+  {{GuIT} meeting, {Pisa}~2025: A visit by {Doris} and {Erik}}
   {\TeX{}nical summary of talks}
   {17-21}
   {/TUGboat/!TBIDENT!behrendt-guit25.pdf}
@@ -164,8 +164,8 @@ access</a>.
 \capsule{}
    {General Delivery}
    {Petr Sojka}%person|Frank Mittelbach
-   {Frank Mittelbach has received an honorary doctorate from Masaryk
-          University}
+   {{Frank Mittelbach} has received an honorary doctorate from
+    {Masaryk University}}
    {recognizing Mittelbach's contributions to document and software
     engineering}
    {7-15}
@@ -231,7 +231,7 @@ access</a>.
 \capsule{}
   {Philology}
   {Janusz S. Bie\'n}
-  {The use of \textit{rv} and \textit{w} in old Polish printed works}
+  {The use of \textit{rv} and \textit{w} in old {Polish} printed works}
   {use of `w' vs.\ `rv' in early printed Polish works}
   {34-37}
   {https://tug.org/members/TUGboat/!TBIDENT!bien-rvw.pdf}
@@ -241,7 +241,7 @@ access</a>.
 \capsule{}
   {Resources}
   {Erik Braun}
-  {\CTAN\ 2025: Architecture, operation, team and future}
+  {{\CTAN} 2025: Architecture, operation, team and future}
   {current state of the central infrastructure of the \TeX\ world}
   {28-33}
   {https://tug.org/members/TUGboat/!TBIDENT!braun-ctan.pdf}
@@ -251,7 +251,7 @@ access</a>.
 \capsule{}
   {Multilingual Document Processing}
   {Behdad Esfahbod}
-  {\HarfBuzz: The quest for universal text shaping}
+  {HarfBuzz: The quest for universal text shaping}
   {the evolution of digital text shaping for complex scripts: \HarfBuzz,
    \TeX, and Unicode}
   {22-27}
@@ -262,7 +262,8 @@ access</a>.
 \capsule{}
   {Accessibility}
   {Matthew D. Hanson}
-  {Towards making more accessible course materials with \LaTeX\ using Pandoc}
+  {Towards making more accessible course materials with {\LaTeX} using
+   {Pandoc}}
   {use of Pandoc for practical, if imperfect, remediation of \LaTeX\ documents}
   {52-56}
   {https://tug.org/TUGboat/!TBIDENT!hanson-pandoc.pdf}
@@ -283,7 +284,7 @@ access</a>.
 \capsule{}
    {\LaTeX}
    {Johan Larsson, samcarter}
-   {Moloch: A minimalist, feature-rich beamer theme}
+   {Moloch: A minimalist, feature-rich {Beamer} theme}
    {updating the Metropolis theme; generating \PDF\ and \HTML\ from a
     single source via Quarto}
    {67-74}
@@ -314,7 +315,7 @@ access</a>.
 \capsule{}
   {Tutorials}
   {Carla Maggi}
-  {The DuckBoat\Dash Beginners' Pond: Making life easier on
+  {The {DuckBoat}{\Dash}{Beginners' Pond}: Making life easier on
           \acro{Q\&A} sites}
   {code copying, chat features, notifications, other tips for
    \url{tex.stackexchange.com} and \url{topanswers.xyz}}
@@ -359,7 +360,7 @@ access</a>.
 \capsule{}
   {\LaTeX}
   {Anders Andersen}
-  {A security protocol notation and \LaTeX\ package: Aspen}
+  {A security protocol notation and {\LaTeX} package: {Aspen}}
   {an expressive and consistent notation for presenting security protocols}
   {75-80}
   {https://tug.org/members/TUGboat/!TBIDENT!andersen-aspen.pdf}
@@ -391,7 +392,7 @@ access</a>.
 \capsule{}
   {Literate Programming}%add|Software \& Tools
   {Vincent Goulet}
-  {You (S)wove? Well, (S)tangle now!}
+  {You {(S)wove}? {W}ell, {(S)tangle} now!}
   {combining \texttt{weave} and \texttt{tangle} for maintaining literate
    R scientific documents}
   {43-47}
@@ -402,7 +403,8 @@ access</a>.
 \capsule{}
   {Electronic Documents}
   {Michal Hoftich}
-  {Publishing \LaTeX\ documents on the web using \TeX4ht and GitHub Actions}
+  {Publishing {\LaTeX} documents on the web using {\TeX4ht} and
+   {GitHub Actions}}
   {\TeX4ht templates for books, static web sites, and presentations}
   {81-88}
   {https://tug.org/members/TUGboat/!TBIDENT!hoftich-ghactions.pdf}
@@ -455,8 +457,8 @@ access</a>.
 
 \capsule{}
   {Software \& Tools}
-  {V\'{\i}t Star\'y\CONNECT{}Novotn\'y, Petr Sojka}
-  {From footage to film: Recording and editing\\ the Czech premiere
+  {V\'{\i}t {Star\'y\CONNECT{}Novotn\'y}, Petr Sojka}
+  {From footage to film: Recording and editing the Czech premiere
           of \emph{Fantasia~Apocalyptica}}
   {processing steps from raw audio and video to the final master, mostly
    using free and open source tools}
@@ -493,7 +495,7 @@ access</a>.
 \capsule{}
   {Graphics}
   {Hans Hagen, Mikael P. Sundqvist}
-  {L-systems: Turtle graphics with MetaPost and Lua}
+  {L-systems: Turtle graphics with {MetaPost} and {Lua}}
   {implementing space-filling curves: dragon curves, Sierpi\'nski
    fractals, many more}
   {100-111}
@@ -590,7 +592,7 @@ access</a>.
 \capsule{}
   {Methods}
   {Udo Wermuth}
-  {Baseline grid typesetting with plain \TeX}
+  {Baseline grid typesetting with plain {\TeX}}
   {practical macros to help grid typesetting of plain \TeX\ documents,
    including math, insertions, etc.}
   {119-134}
@@ -777,7 +779,7 @@ access</a>.
 \capsule{}
   {TUG Business}
   {Karl Berry}
-  {\tug\ financial statements for 2025}
+  {{TUG} financial statements for 2025}
   {}
   {141-141}
   {/TUGboat/!TBIDENT!treas.pdf}
