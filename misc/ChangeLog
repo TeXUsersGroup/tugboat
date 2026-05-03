@@ -1,3 +1,7 @@
+2026-05-02  Karl Berry  <karl@freefriends.org>
+
+	* tubcont2cnt: use realpath so argument doesn't need to be absolute.
+
 2026-04-04  Karl Berry  <karl@freefriends.org>
 
 	* check-pages-cover4-tub: ignore consultants; doc fixes.
