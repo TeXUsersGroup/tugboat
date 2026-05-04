@@ -1,3 +1,9 @@
+2026-05-04  Karl Berry  <karl@freefriends.org>
+
+	* cr-landing-bbl-abs (update_landing_bbl): .wav files are not urls.
+
+	* crossref/README-process.txt: more tweaks.
+
 2026-05-02  Karl Berry  <karl@freefriends.org>
 
 	Include BibTeX entries on the landing pages of

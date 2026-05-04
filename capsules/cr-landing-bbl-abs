@@ -153,7 +153,7 @@ sub update_landing_bbl {
             #   have letters, like "report no.1-A". So eliminate
             #   common bib abbreviations.
             # Also, more special cases: foo.sty, bar.tex, etc., are not urls.
-            # Or next.js.
+            # Or next.js, or ChurchBellKonstanz.wav.
             #
             # Maybe we should force spaces after such bib abbrevs,
             #   but that doesn't seem ideal either.
@@ -167,7 +167,7 @@ sub update_landing_bbl {
                      && ($w1 = $1) && ($w2 = $2) # save capture groups
                      && $w2 =~ /[a-z]/i
                      && (! $w1 || $w1 !~ /^(no?|v(ol)?|pp?|iss)$/i)
-                     && (! $w2 || $w2 !~ /^(cls|dtx|js|sty|tex)$/i)
+                     && (! $w2 || $w2 !~ /^(cls|dtx|js|sty|tex|wav)$/i)
                     ) {
               $prot = "https";
               $urlbase = $word;

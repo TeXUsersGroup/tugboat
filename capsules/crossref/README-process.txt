@@ -155,6 +155,9 @@ previously-created issue.xml (created by ltx2crossrefxml via
 crossref/Makefile, target issue). As mentioned above, in the bbls, the only
 formatting attempted for the landing .html files is to make urls
 (recognized from plain text) live; italics, typewriter, etc., do not happen.
+(We should possibly fix this by using ltx2unitxt for the bbls too, or
+maybe not, since it's a lot of error-prone detail and all the
+information is there.)
 
 Then repeat until all articles are done.
 
