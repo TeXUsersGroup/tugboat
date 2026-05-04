@@ -1,0 +1,103 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{10}
+
+\bibitem{lemma}
+\acro{LEMMA}.
+\newblock Faculty of {I}nformatics film festival.
+\newblock
+  \url{https://www.muni.cz/en/students/join-the-community/student-clubs-associations/lemma-filmovy-festival-fi-mu}
+
+\bibitem{aegisub}
+Aegisub: {A}dvanced subtitle editor.
+\newblock \newline \url{https://aegisub.org}
+
+\bibitem{edsward2016church}
+edschaefer.
+\newblock {\texttt{ChurchBellKonstanz.\relax wav}}: {C}hurch bells of the {M}inster in
+  {C}onstance, {G}ermany.
+\newblock \url{https://freesound.org/people/edsward/sounds/341866}
+
+\bibitem{fimu2020english}
+{Faculty of Informatics, Masaryk University}.
+\newblock Fantasia {A}pocalyptica: {C}zech premiere, 2020.
+\newblock \url{https://youtu.be/wk7dEKMPP68}
+
+\bibitem{ffmpeg}
+\acro{FF}mpeg: {A} complete, cross-platform solution to record, convert and
+  stream audio and video.
+\newblock \url{https://ffmpeg.org/}
+
+\bibitem{ffmpeg-concat}
+\acro{FF}mpeg: Concatenating media files.
+\newblock \url{https://trac.ffmpeg.org/wiki/Concatenate}
+
+\bibitem{imagemagick}
+Image{M}agick: {M}astering digital image alchemy.
+\newblock \url{https://imagemagick.org/}
+
+\bibitem{knuth2023fantasia}
+D.~Knuth.
+\newblock Fantasia {A}pocalyptica.
+\newblock \url{https://www-cs-faculty.stanford.edu/~knuth/fant.html}
+\newpage
+\bibitem{knuth2018fantasia}
+D.~Knuth, D.~Bibby.
+\newblock \emph{Fantasia Apocalyptica Illustrated}.
+\newblock Center for the Study of Language and Information, Stanford, 2018.
+\newblock
+  \url{https://web.stanford.edu/group/cslipublications/cslipublications/site/9781684000449.shtml}
+
+\bibitem{luptak2019fantasia}
+D.~Lupt\'{a}k.
+\newblock {Fantasia Apocalyptica}: {\v{C}}esk\'{a} premi\'{e}ra [{Fantasia
+  Apocalyptica}: {T}he {C}zech premiere].
+\newblock \emph{Zpravodaj}, 29(1--4):11--18, 2019.
+\newblock \url{https://doi.org/10.5300/2019-1-4/11}
+
+\bibitem{morland2018fantasia}
+I.~Morland.
+\newblock Fantasia {A}pocalyptica, 2018.
+\newblock
+  \url{https://www-cs-faculty.stanford.edu/~knuth/fant-screen2-texts.pdf}
+
+\bibitem{xSojka:2017:TSJ}
+P.~Sojka, V.~Novotn{\'y}.
+\newblock {\TeX} in schools? {Just} say yes: The use of {\TeX} at the {Faculty
+  of Informatics, Masaryk Univ.}
+\newblock \emph{TUGboat}~38(2):175--184, 2017.
+\newblock \newline \url{https://tug.org/TUGboat/tb38-2/tb119sojka.pdf}
+
+\bibitem{starynovotny2024priprava}
+V.~Star\'{y}~Novotn\'{y}.
+\newblock P\v{r}\'{i}prava videoz\'{a}znamu \v{c}esk\'{e} premi\'{e}ry
+  multimedi\'{a}ln\'{i}ho díla ,,{Fantasia Apocalyptica}`` [{R}ecording the
+  {C}zech premiere of the ``{Fantasia Apocalyptica}'' multimedia work].
+\newblock \emph{Zpravodaj}, 34(1--4):7--27, 2024.
+\newblock \url{https://doi.org/10.5300/2024-1-4/7}
+
+\bibitem{enable-kerning-by-default}
+V.~Starý~Novotný.
+\newblock Enable font kerning by default.
+\newblock \url{https://github.com/Aegisub/Aegisub/issues/164}
+\newpage
+\bibitem{szaniszlo2020dva}
+T.~Szaniszlo.
+\newblock Dva bloky ot\'{a}zok a odpoved\'{i} od {Donalda Knutha} na
+  \acro{FI~MU} [{T}wo questions and answer sessions by {Donald Knuth} at
+  \acro{FI~MU}].
+\newblock \emph{Zpravodaj}, 30(1--2):64--97, 2020.
+\newblock \url{https://doi.org/10.5300/2020-1-2/64}
+
+\bibitem{szaniszlo2021two}
+T.~Szaniszlo.
+\newblock Two questions and answer sessions by {Donald Knuth} at \acro{FI~MU}.
+\newblock \emph{\acro{MAPS}}, 51(1):40--64, 2021.
+\newblock \url{https://ntg.nl/maps/51/08.pdf}
+
+\bibitem{waifu2x}
+{W}aifu2x: {I}mage super-resolution for anime-style art.
+\newblock \url{https://github.com/nagadomi/waifu2x}
+
+\end{thebibliography}

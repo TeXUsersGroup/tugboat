@@ -1,0 +1,150 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{10}
+
+\bibitem{babel}
+J.~Bezos, J.L.~Braams, et~al.
+\newblock The \texttt{babel} package.
+\newblock \url{https://ctan.org/pkg/babel}
+
+\bibitem{cb:fw1}
+C.~Bigelow.
+\newblock The {Font Wars}, part 1.
+\newblock \emph{IEEE~Annals of the History of Computing}, 42(1):7--24, 2020.
+\newblock \newline \url{https://doi.org/10.1109/MAHC.2020.2971202}
+
+\bibitem{cb:fw2}
+C.~Bigelow.
+\newblock The {Font Wars}, part 2.
+\newblock \emph{IEEE~Annals of the History of Computing}, 42(1):25--40, 2020.
+\newblock \newline \url{https://doi.org/10.1109/MAHC.2020.2971745}
+
+\bibitem{eTeX:manual}
+P.~Breitenlohner, et~al.
+\newblock \emph{The \eTeX\ manual, 2nd~ed.,
+  1998.
+\newblock Revised 2024.
+\newblock \url{https://ctan.org/pkg/etex}
+
+\bibitem{CTAN:lang}
+CTAN.
+\newblock {Language directory}.
+\newblock \newline \url{https://ctan.org/tex-archive/language/}
+
+\bibitem{be:ftexthes}
+B.~Esfahbod.
+\newblock {\FarsiTeX} typesetting system revisited.
+\newblock Bachelor's project, Sharif University of Technology, Computer
+  Engineering Department, Sept.~2004.
+\newblock \url{https://behdad.org/doc/farsitex-thesis.pdf}
+
+\bibitem{be:hb-memory}
+B.~Esfahbod.
+\newblock {HarfBuzz} memory consumption, Sept.~2012.
+\newblock \url{https://tug.org/l/behdad-hb-memory}
+
+\bibitem{be:hb-indic}
+B.~Esfahbod.
+\newblock Reflections on building the {HarfBuzz} {Indic} shaper, Oct.~2014.
+\newblock \url{https://tug.org/l/behdad-hb-indic}
+
+\bibitem{be:hb-wasm-examples}
+B.~Esfahbod.
+\newblock {HarfBuzz} \acro{WASM} shaping examples, 2023.
+\newblock \url{https://github.com/harfbuzz/harfbuzz-wasm-examples}
+
+\bibitem{be:text2024}
+B.~Esfahbod.
+\newblock {State of Text Rendering} 2024, July~2024.
+\newblock \url{https://behdad.org/doc/text2024}
+
+\bibitem{xEsfahbod:TB23-1-41}
+B.~Esfahbod, R.~Pournader.
+\newblock {Farsi\TeX} and the {Iranian} {\TeX} community.
+\newblock \emph{TUGboat} 23(1):41--45, 2002.
+\newblock \newline \url{https://tug.org/TUGboat/tb23-1/farsitex.pdf}
+
+\bibitem{xFischer:2020:TBS}
+U.~Fischer, M.~Kr{\"u}ger.
+\newblock Typesetting {Bangla} script with {\LuaLaTeX}.
+\newblock \emph{TUGboat} 41(1):69--70, 2020.
+\newblock \newline \url{https://tug.org/TUGboat/tb41-1/tb127fischer-bangla.pdf}
+
+\bibitem{xHaralambous:TB11-4-520}
+Y.~Haralambous.
+\newblock {Arabic, Persian and Ottoman {\TeX} for Mac and PC}.
+\newblock \emph{TUGboat} 11(4):520--524, Nov.~1990\vadjust{\vskip-.8pt}.
+\newblock \newline \url{https://tug.org/TUGboat/tb11-4/tb30hara.pdf}
+
+\bibitem{Haralambous:TB15-3-344}
+Y.~Haralambous, J.~Plaice.
+\newblock {First applications of $ \Omega $: Adobe Poetica, Arabic, Greek,
+  Khmer}.
+\newblock \emph{TUGboat} 15(3):344--352, Sept.~1994.
+\newblock \url{https://tug.org/TUGboat/tb15-3/tb44haralambous-omega.pdf}
+
+\bibitem{xHosny:TB34-2-121}
+K.~Hosny.
+\newblock What is new in {\XeTeX} 0.9999?
+\newblock \emph{TUGboat} 34(2):121--122, 2013.
+\newblock \newline \url{https://tug.org/TUGboat/tb34-2/tb107hosny.pdf}
+
+\bibitem{Hosny:2019:BWS}
+K.~Hosny.
+\newblock Bringing world scripts to {\LuaTeX}: The HarfBuzz experiment.
+\newblock \emph{TUGboat} 40(1):38--43, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-1/tb124hosny-harfbuzz.pdf}
+
+\bibitem{arabi}
+Y.~Jabri.
+\newblock The \texttt{arabi} package.
+\newblock \newline \url{https://ctan.org/pkg/arabi}
+
+\bibitem{Kew:TB26-2-115}
+J.~Kew.
+\newblock {{\XeTeX, the Multilingual Lion: {\TeX} meets Unicode and smart font
+  technologies}}.
+\newblock \emph{TUGboat} 26(2):115--124, 2005.
+\newblock \url{https://tug.org/TUGboat/tb26-2/kew.pdf}
+
+\bibitem{XePersian}
+V.~Khalighi.
+\newblock The \texttt{xepersian} package.
+\newblock \url{https://ctan.org/pkg/xepersian}
+
+\bibitem{Knuth:TB8-1-14}
+D.~Knuth, P.~MacKay.
+\newblock Mixing right-to-left texts with left-to-right texts.
+\newblock \emph{TUGboat} 8(1):14--25, Apr.~1987.
+\newblock \url{https://tug.org/TUGboat/tb08-1/tb17knutmix.pdf}
+
+\bibitem{TeXXeT}
+D.E.~Knuth, P.A.~MacKay, P.~Breitenlohner.
+\newblock {\texttt{tex--xet}{\Dash}Bidirectional extension of \TeX}.
+\newblock \url{https://ctan.org/pkg/tex--xet}
+
+\bibitem{ArabTeX}
+K.~Lagally.
+\newblock The \texttt{arabtex} package.
+\newblock \newline \url{https://ctan.org/pkg/arabtex}
+
+\bibitem{xPlaice:TB14-3-271}
+J.~Plaice.
+\newblock Language-dependent ligatures.
+\newblock \emph{TUGboat} 14(3):271--274, Oct.~1993.
+\newblock \newline \url{https://tug.org/TUGboat/tb14-3/tb40plaice.pdf}
+
+\bibitem{Plaice:TB15-3-320}
+J.~Plaice.
+\newblock {Progress in the Omega project}.
+\newblock \emph{TUGboat} 15(3):320--324, Sept.~1994.
+\newblock \url{https://tug.org/TUGboat/tb15-3/tb44plaice.pdf}
+
+\bibitem{xPlaice:TB17-2-181}
+J.~Plaice, Y.~Haralambous.
+\newblock {The latest developments in {$ \Omega $}}.
+\newblock \emph{TUGboat} 17(2):181--183, June~1996.
+\newblock \newline \url{https://tug.org/TUGboat/tb17-2/tb51plaice.pdf}
+
+\end{thebibliography}

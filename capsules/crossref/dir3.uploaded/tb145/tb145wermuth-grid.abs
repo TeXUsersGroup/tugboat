@@ -1,0 +1,7 @@
+        The article discusses the problem of baseline grid
+typesetting with plain \TeX. It argues that not all structures
+of \TeX\ should be forced to obey a grid. Macros are presented that
+allow an author to type straight text on a grid if various
+grid-leaving primitives and macros are avoided. Macros for
+mathematics, boxes, and insertions are also developed; their
+application sometimes requires manual assistance from the author.

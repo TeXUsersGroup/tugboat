@@ -1,0 +1,15 @@
+In \TEX, nodes are an important data structure because all content is kept in (a
+linked list of) nodes.
+If we compare traditional \TEX\ with \LUATEX\ there are some fundamental
+differences. For instance, character (glyph) nodes are
+larger because we have both a prev pointer and an attribute list pointer. This
+means that they are always larger than one memory word. We discuss this and
+other differences in \TEX\ implementations.
+
+What conclusions can we draw? First of all that in original \TEX\ there are
+some clever memory management features. Second that in \LUATEX\ we no longer use
+them. A third conclusion is that in spite of what one might think, it doesn't
+impact the performance of the successor; time is likely spent elsewhere.
+We leave it to the reader to wonder if the original \TEX\
+approach of a single pool-with-combining-features wins over the faster but maybe
+more spoiling pool-per-size approach of the other engines.

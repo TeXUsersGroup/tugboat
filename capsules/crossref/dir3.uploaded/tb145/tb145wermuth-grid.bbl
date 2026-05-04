@@ -1,0 +1,44 @@
+% this file is read twice
+%   first:  the shortcuts for the references are defined
+%   second: the list for references is output
+% start the file with \startbibrefs and end it with \par
+% NOTE: a § can't be used in front of \endbib, move it to the previuos line
+\startbibrefs\begingroup
+
+% do not use \ninepoint; switch only fonts
+\baselineskip=11pt
+\def\rm{\fam0\ninerm}
+\def\it{\fam\itfam\nineit}
+\def\sl{\fam\slfam\ninesl}
+\def\bf{\fam\bffam\ninebf}\rm
+
+\emergencystretch=0.03\hsize
+\def\newline{\hfil\break}
+\raggedright
+\frenchspacing
+\hyphenpenalty=10000
+\def\URLaccessdate(#1){}% suppress ``accessed <date>'' info after URLs
+%
+\parskip=0pt % changed by \startbibrefs
+\let\bibskip=\relax % do not use this skip
+
+\kern 1pt % align with other column; here we are 1pt too short
+\bibitem{citeRB} Robert Bringhurst,
+   {\sl The Elements of Typographic Style}, 4th edition (v.\thinspace4.2),
+   Seattle, Washington: Hartley \& Marks, 2016.
+
+\kern 3pt % this value is needed after three more lines
+\bibitem{citeFJ} Friedrich Forssman \& Ralf de Jong,\newline
+   {\sl Detailtypographie}, 3rd edition,
+   Mainz, Germany: Verlag Hermann Schmidt, 2004.
+
+\kern 3pt
+\bibitem{citeCTvA} Donald E. Knuth, \TB,
+   Volume~A of \CandT, Boston, Massachusetts: \AW, 1984.
+
+\kern 3pt
+\bibitem{citeWF} Hans Peter Willberg, Friedrich Forssman,\newline
+   {\sl Lesetypographie}, 2nd printing,
+   Mainz, Germany: Verlag Hermann Schmidt, 2005.
+
+\end{thebibliography}

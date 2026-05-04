@@ -1,0 +1,23 @@
+Instructors in higher education across the United States are faced with
+a looming April deadline to update their course materials to comply with
+new digital accessibility standards. Creating accessible materials
+presents a significant challenge for faculty, many of whom are
+unfamiliar with standards for digital accessibility.
+
+Users of the document preparation software \LaTeX, which includes many
+faculty in the \acro{STEM} disciplines of physical chemistry,
+engineering, physics, and mathematics, are particularly strained by the
+new standards because of the \TeX{} engine's intrinsic lack of
+accessibility features. While heroic efforts have been made to make
+\LaTeX \ more accessible, there is no general method that allows
+straightforward remediation of existing projects, especially if the
+contents of these projects may change in the future.\looseness-1
+
+This article highlights some background of the problems surrounding
+digital accessibility and suggests an indirect method for the creation
+of accessible materials from \LaTeX \ source code. Some proactive advice
+is also given to ensure that documents retain the author's intended
+content to the greatest extent possible. This workflow is amenable to
+continual updating of document contents without additional arduous
+interventions. Nonetheless, sustained future efforts will be necessary
+for accessibility to become practical, especially for users of \LaTeX.

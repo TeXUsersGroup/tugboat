@@ -1,0 +1,18 @@
+This article presents a set of templates for the \TeX 4ht tool, which is used to convert 
+\LaTeX\ documents into \acro{HTML}. These templates facilitate the publication of various 
+types of documents on the web and provide processing and automation capabilities. 
+
+The first template is intended for converting book-style documents into a web format. 
+It allows splitting the text into individual chapters with automatically generated 
+navigation and support for responsive design, so the result is readable even on 
+mobile devices. The second template serves for creating statically generated blogs. Each post is 
+written as a separate \LaTeX\ document, which is converted to \acro{HTML} using \TeX 4ht. 
+Subsequently, these articles are processed by a static site generator, such as Jekyll, 
+which handles the assembly of the entire blog, creation of indexes, archives, and other navigation. 
+The third template is focused on converting presentations created in the Beamer environment 
+into so-called handouts\Dash overview materials for the audience. The result is a 
+readable and well-structured web document suitable for sharing after a lecture. 
+
+All templates are designed to work with GitHub Actions. This 
+means that the documents can be automatically compiled and published online 
+whenever a change is made in the repository.

@@ -1,0 +1,76 @@
+<!--#include virtual="/header.html"-->
+<title>Nodes and other neat old features
+       - TUGboat 47:1 (2026) - TeX Users Group</title>
+</head><body>
+
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+<h1><a href="/TUGboat/tb47-1/">TUGboat 47:1</a> (2026)<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
+
+<p><b>Title</b>: Nodes and other neat old features</p>
+
+<p><b>Summary</b>:
+traditional and Lua(Meta)TeX memory layouts and processing.</p>
+
+<p><b>Full text of article</b>: <a href="https://tug.org/members/TUGboat/tb47-1/tb145hagen-nodes.pdf">available to TUG members</a> (<a href="/join.html">join TUG</a>);
+will be publicly available after the next issue is published.</p>
+
+<p><b>Author</b>:
+<a href="/TUGboat/Contents/listauthor.html#Hagen,Hans">Hans Hagen</a></p>
+
+<p><b>Publication</b>: <a href="/TUGboat/tb47-1/">TUGboat
+volume 47, number 1</a> (2026),
+pages&nbsp;114&ndash;118</p>
+
+<p><b>DOI</b> (this page):
+<a href="https://doi.org/10.47397/tb/47-1/tb145hagen-nodes">10.47397/tb/47-1/tb145hagen-nodes</a>
+<br><small>(<a href="https://doi.org/10.47397/tb/47-1/tb145hagen-looseness">previous doi</a>
+- <a href="https://doi.org/10.47397/tb/47-1/tb145wermuth-grid">next doi</a>)</small></p>
+
+<p><b>Category</b>:
+<a href="/TUGboat/Contents/listkeyword.html#CatTAGGraphics">Graphics</a></p>
+      
+<p><b>Difficulty</b>: Advanced</p>
+
+<p><b>Abstract</b>:
+In TeX, nodes are an important data structure because all content is kept in (a
+linked list of) nodes.
+If we compare traditional TeX with LuaTeX there are some fundamental
+differences. For instance, character (glyph) nodes are
+larger because we have both a prev pointer and an attribute list pointer. This
+means that they are always larger than one memory word. We discuss this and
+other differences in TeX implementations.</p>
+<p>What conclusions can we draw? First of all that in original TeX there are
+some clever memory management features. Second that in LuaTeX we no longer use
+them. A third conclusion is that in spite of what one might think, it doesn&#x2019;t
+impact the performance of the successor; time is likely spent elsewhere.
+We leave it to the reader to wonder if the original TeX&#x0020;approach of a single pool-with-combining-features wins over the faster but maybe
+more spoiling pool-per-size approach of the other engines.</p>
+
+<!-- REPLACE-WITH-BIBLIOGRAPHY -->
+
+
+<p id="cite"><b>Cite this article (BibTeX)</b>: <small><pre>
+@preamble{"\input tugboat.def"}
+@article{Hagen:TB47-1:114,
+  author =        "Hans Hagen",
+  title =         "Nodes and other neat old features",
+  journal =       "TUGboat",
+  volume =        "47",
+  number =        "1",
+  pages =         "114-118",
+  year =          "2026",
+  issue =         "145",
+  DOI =           "10.47397/tb/47-1/tb145hagen-nodes",
+  url =           "https://tug.org/TUGboat/tb47-1/tb145hagen-nodes.pdf",
+  journal-URL =   "https://tug.org/TUGboat/",
+  ISSN =          "0896-3207",
+}
+
+</pre>
+</small>
+<hr><small><a href="/TUGboat/">TUGboat</a> 47:1, 2026 (<a href="/TUGboat/tb47-1/">issue 145</a>)
+&nbsp; [generated 2026-05-04]
+</small><br><!--#include virtual="/footer.html"-->

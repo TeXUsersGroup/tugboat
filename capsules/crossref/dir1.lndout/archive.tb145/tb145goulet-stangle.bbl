@@ -1,0 +1,86 @@
+\input bibnames.sty \input path.sty \ifx \k \undefined \let \k = \c
+  \immediate\write16{Ogonek accent unavailable: replaced by cedilla}\fi
+  \hyphenation{An-wen-der-ver-ein-i-gung Co-lo-phon Deutsch-spra-chi-ge Hol-dys
+  Ko-lo-dziej-ska Lar-ra-bee mark-up Rijks-uni-ver-si-teit South-all}\input
+  tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{10}
+
+\bibitem{Gerrard:2024:HPR}
+M.~Gerrard.
+\newblock Holon programming regained.
+\newblock \emph{TUGboat} 45(2):196--200, 2024.
+\newblock \url{https://doi.org/10.47397/tb/45-2/tb140gerrard-holon}
+
+\bibitem{Goulet:programmer-avec-r:2025}
+V.~Goulet.
+\newblock \emph{Programmer avec {R}}.
+\newblock Open~educational resource under a {C}reative {C}ommons {BY-SA 4.0}
+  license, 2025.
+\newblock In French.
+\newblock \newline \url{https://vigou3.gitlab.io/programmer-avec-r}
+
+\bibitem{RweaveExtra}
+V.~Goulet, {R Core Team}.
+\newblock \emph{{RweaveExtra}: {Sweave} Drivers with Extra Tricks Up their
+  Sleeve}, 2025.
+\newblock R package version 1.3-0.
+\newblock \url{https://doi.org/10.32614/CRAN.package.RweaveExtra}
+
+\bibitem{Knuth:litprog:1984}
+D.E.~Knuth.
+\newblock Literate programming.
+\newblock \emph{The~Computer~Journal}, 27(2):97--111, 1984.
+\newblock \newline \url{https://doi.org/10.1093/comjnl/27.2.97}
+
+\bibitem{Knuth:CSS93}
+D.E.~Knuth, S.~Levy.
+\newblock \emph{The {CWEB} System of Structured Documentation, Version 3.0}.
+\newblock Ad{\-d}i{\-s}on-Wes{\-l}ey, Reading, MA, 1993.
+
+\bibitem{LeischSweave:2002}
+F.~Leisch.
+\newblock Sweave: Dynamic generation of statistical reports using literate data
+  analysis.
+\newblock In~\emph{Compstat}, W.~H{\"a}rdle, B.~R{\"o}nz, eds., pp.~575--580,
+  Heidelberg, 2002. Physica-Verlag HD.
+\newblock \url{https://doi.org/10.1007/978-3-642-57489-4_89}
+
+\bibitem{Mittelbach:TB10-2-245}
+F.~Mittelbach.
+\newblock {The \pkg{doc}--option}.
+\newblock \emph{TUGboat} 10(2):245--273, July~1989.
+\newblock \url{https://tug.org/TUGboat/tb10-2/tb24mitt-doc.pdf}
+
+\bibitem{doc}
+F.~Mittelbach.
+\newblock \emph{The \tbcode{doc} and \tbcode{shortvrb} Packages}, 2024.
+\newblock \url{https://ctan.org/pkg/doc}
+
+\bibitem{Ramsey:noweb:1994}
+N.~Ramsey.
+\newblock Literate programming simplified.
+\newblock \emph{IEEE Software}, 11(5):97--105, 1994.
+\newblock \newline \url{https://doi.org/10.1109/52.311070}
+
+\bibitem{Vandewalle:reprodresearch:2009}
+P.~Vandewalle, J.~Kovacevic, M.~Vetterli.
+\newblock Reproducible research in signal processing.
+\newblock \emph{{IEEE}~Signal Processing Magazine}, 26(3):37--47, 2009.
+\newblock \url{https://doi.org/10.1109/MSP.2009.932122}
+
+\bibitem{knitr}
+Y.~Xie.
+\newblock \emph{knitr: A General-Purpose Package for Dynamic Report Generation
+  in {R}}, 2023.
+\newblock R package version 1.45.
+\newblock \url{https://yihui.org/knitr}
+
+\bibitem{Xie:rmarkdown:2018}
+Y.~Xie, J.J.~Allaire, G.~Grolemund.
+\newblock \emph{R~Markdown: The Definitive Guide}.
+\newblock Chapman and Hall/CRC, Boca Raton, Florida, 2018.
+\newblock \newline \url{https://bookdown.org/yihui/rmarkdown}
+
+\end{thebibliography}

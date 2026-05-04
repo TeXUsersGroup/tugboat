@@ -1,0 +1,2046 @@
+<doi_batch
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    version="5.4.0"
+    xmlns="http://www.crossref.org/schema/5.4.0"
+    xsi:schemaLocation="http://www.crossref.org/schema/5.4.0
+                       https://www.crossref.org/schemas/crossref5.4.0.xsd">
+  <head>
+    <doi_batch_id>ltx2crossref-20260504150100-24880</doi_batch_id>
+    <timestamp>20260504150100</timestamp>
+    <depositor>
+      <depositor_name>TUGboat production</depositor_name>
+      <email_address>doi-tugboat@tug.org</email_address>
+    </depositor>
+    <registrant>TeX Users Group</registrant>
+  </head>
+  <body><journal>
+    <journal_metadata language="en">
+      <full_title>TUGboat</full_title>
+      <issn>0896-3207</issn>      
+    </journal_metadata>
+    <journal_issue>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <journal_volume><volume>47</volume></journal_volume>
+      <issue>1</issue>
+    </journal_issue>
+    <journal_article>
+      <titles>
+        <title>From the president</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Arthur</given_name>
+          <surname>Rosendahl</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>3</first_page>
+        <last_page>3</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145pres</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145pres.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Editorial comments</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Barbara</given_name>
+          <surname>Beeton</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>4</first_page>
+        <last_page>6</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145beet</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145beet.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Frank Mittelbach has received an honorary doctorate from Masaryk University</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Petr</given_name>
+          <surname>Sojka</surname>
+          <ORCID>https://orcid.org/0000-0002-5768-4007</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>7</first_page>
+        <last_page>15</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145sojka-doctor-mittelbach</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145sojka-doctor-mittelbach.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="tex:LaTeXTaggingProject-1" type="web_resource">
+          <article_title>LaTeX Tagged PDF project</article_title>
+          <unstructured_citation>LaTeX Tagged PDF project. https://latex3.github.io/tagging-project/</unstructured_citation>
+        </citation>
+        <citation key="tex:Scott-Knuth-talks-2019-2" type="web_resource">
+          <author>Knuth, Donald</author>
+          <article_title>Turing Prize Laureates in Brno</article_title>
+          <unstructured_citation>D. Knuth, D. Scott. Turing Prize Laureates in Brno. https://www.fi.muni.cz/events/2019-10-donald-knuth-dana-scott-turing-prize-laureates-brno.html</unstructured_citation>
+        </citation>
+        <citation key="tex:Mittelbach-Seminar-Series-talk-2026-3" type="web_resource">
+          <author>Mittelbach, Frank</author>
+          <article_title>&#x03a4;&#x03ad;&#x03c7;&#x03bd;&#x03b7;: Gutenberg &#x2013; Knuth &#x2013; Zapf &#x2013; Lamport &#x2013; LaTeX: The evolution of document production and information access</article_title>
+          <unstructured_citation>F. Mittelbach. &#x03a4;&#x03ad;&#x03c7;&#x03bd;&#x03b7;: Gutenberg &#x2013; Knuth &#x2013; Zapf &#x2013; Lamport &#x2013; LaTeX: The evolution of document production and information access. MUNI Seminar Series. https://seminarseries.muni.cz/mathematics-physics-computer-science/lectures/&#x03c4;&#x03ad;&#x03c7;&#x03bd;&#x03b7;-gutenberg-knuth-zapf-lamport-latex-the-evolution-of-document-production-and-information-access</unstructured_citation>
+        </citation>
+        <citation key="tex:mittelbach2016globalpagination-4" type="conference_paper">
+          <author>Mittelbach, Frank</author>
+          <first_page>11</first_page>
+          <cYear>2016</cYear>
+          <doi>10.1145/2960811.2960820</doi>
+          <isbn>9781450344388</isbn>
+          <series_title>DocEng &#x2019;16</series_title>
+          <volume_title>Proceedings of the 2016 ACM Symposium on Document Engineering</volume_title>
+          <article_title>A General Framework for Globally Optimized Pagination</article_title>
+          <unstructured_citation>F. Mittelbach. A general framework for globally optimized pagination. In Proceedings of the 2016 ACM Symposium on Document Engineering, DocEng &#x2019;16, pp. 11&#x2013;20, Vienna, Austria, 2016. Association for Computing Machinery. https://doi.org/10.1145/2960811.2960820</unstructured_citation>
+        </citation>
+        <citation key="tex:mittelbach2017effectivefloating-5" type="conference_paper">
+          <author>Mittelbach, Frank</author>
+          <first_page>29</first_page>
+          <cYear>2017</cYear>
+          <doi>10.1145/3103010.3103015</doi>
+          <isbn>9781450346894</isbn>
+          <series_title>DocEng &#x2019;17</series_title>
+          <volume_title>Proceedings of the 2017 ACM Symposium on Document Engineering</volume_title>
+          <article_title>Effective Floating Strategies</article_title>
+          <unstructured_citation>F. Mittelbach. Effective floating strategies. In Proceedings of the 2017 ACM Symposium on Document Engineering, DocEng &#x2019;17, pp. 29&#x2013;38, Valletta, Malta, 2017. Association for Computing Machinery. https://doi.org/10.1145/3103010.3103015</unstructured_citation>
+        </citation>
+        <citation key="tex:mittelbach92b-6" type="conference_paper">
+          <author>Mittelbach, Frank</author>
+          <first_page>261</first_page>
+          <cYear>1992</cYear>
+          <article_title>The pursuit of quality&#x2014;How can automated typesetting achieve the highest standards of craft typography?</article_title>
+          <unstructured_citation>F. Mittelbach, C. Rowley. The pursuit of quality&#x2014;How can automated typesetting achieve the highest standards of craft typography? In Proceedings of the International Conference on Electronic Publishing, Document Manipulation &#x0026; Typography, C. Vanoirbeek, G. Coray, eds., pp. 261&#x2013;273, Lausanne, Switzerland, 1992. Cambridge University Press. https://www.researchgate.net/publication/237444403_The_Pursuit_of_Quality</unstructured_citation>
+        </citation>
+        <citation key="tex:mittelbach-QA-2026-7" type="web_resource">
+          <author>Mittelbach, Frank</author>
+          <article_title>Frank Mittelbach &#x2013; neform&#x00e1;ln&#x00ed; setk&#x00e1;n&#x00ed; na FI MU (18. 3. 2026)</article_title>
+          <unstructured_citation>F. Mittelbach, P. Sojka. Frank Mittelbach &#x2013; neform&#x00e1;ln&#x00ed; setk&#x00e1;n&#x00ed; na FI MU (18. 3. 2026). https://www.youtube.com/watch?v=YxgUk3eD9FAh</unstructured_citation>
+        </citation>
+        <citation key="tex:muni-tolar-mittelbach-8" type="web_resource">
+          <author>MUNI</author>
+          <article_title>Slavnostn&#x00ED; ud&#x00ED;len&#x00ED; &#x010D;estn&#x00E9;ho doktor&#x00E1;tu MU &#x2013; Jakub Tolar a Frank Mittelbach (19. 3. 2026)</article_title>
+          <unstructured_citation>MUNI. Slavnostn&#x00ED; ud&#x00ED;len&#x00ED; &#x010D;estn&#x00E9;ho doktor&#x00E1;tu MU &#x2013; Jakub Tolar a Frank Mittelbach (19. 3. 2026). https://www.youtube.com/watch?v=IxpEvv2G9Qs</unstructured_citation>
+        </citation>
+        <citation key="tex:Scott-Knuth-Seminar-Series-talk-2019-9" type="web_resource">
+          <author>Scott, Dana Stewart</author>
+          <article_title>Enumeration Operators, Probability, Type Theory</article_title>
+          <unstructured_citation>D.S. Scott. Enumeration operators, probability, type theory. MUNI Seminar Series. https://seminarseries.muni.cz/mathematics-physics-computer-science/lectures/enumeration-operators-probability-type-theory</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>James Mosley (1935&#x2013;2025) and French typography</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jacques</given_name>
+          <surname>Andr&#xe9;</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>16</first_page>
+        <last_page>17</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145andre-mosley</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145andre-mosley.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="JM-typeinhand-1">
+          <unstructured_citation>James Mosley, Type held in the hand, Cambridge: Typefoundry, 2012. https://typefoundry.blogspot.com/2012/01/</unstructured_citation>
+        </citation>
+        <citation key="Fournier-2">
+          <unstructured_citation>Pierre-Simon Fournier dit le jeune, The Manuel typographique of Pierre-Simon Fournier le jeune; together with Fournier on typefounding, an English translation of the text by Harry Carter, in facsimile, Darmstadt: Lehrdruckerei Technische Hochschule, 1995. ISBN 3-88607-094-8.</unstructured_citation>
+        </citation>
+        <citation key="Academie-3">
+          <unstructured_citation>James Mosley, French Academicians and Modern Typography: Designing new Types in the 1690s, Cambridge: Typefoundry, 1992, 14 pp. https://typography.network/wp-content/uploads/2024/04/Mosley_TypPp_2_French_academicians_and_modern_typography_designing_new_types_in_the_1690s.pdf</unstructured_citation>
+        </citation>
+        <citation key="RomainDuRoi-4">
+          <unstructured_citation>James Mosley, Sylvie de Turckheim-Pey et Andr&#x00e9; Jammes, Le Romain du Roi : la typographie au service de l&#x2019;&#x00c9;tat,1702&#x2013;2002, Lyon : Mus&#x00e9;e de l&#x2019;imprimerie et de la communication graphique, 2002, 125 pp. ISBN 2-85682-017-4.</unstructured_citation>
+        </citation>
+        <citation key="Wlassikoff-5">
+          <unstructured_citation>Michel Wlassikoff, Le Romain du Roi, le caract&#x00e8;re exclusif de Louis XIV, Paris : Typofonderie Gazette, 2025. https://typofonderie.com/fr/gazette/le-romain-du-roi-the-exclusive-typeface-of-louis-xiv</unstructured_citation>
+        </citation>
+        <citation key="Kindel-6">
+          <unstructured_citation>Eric Kindel, Recollecting stencil letters, Typography papers 5, 2003, pp. 65&#x2013;101. https://typography.network/wp-content/uploads/2022/12/Kindel_TypPp_5_Recollecting-stencil-letters.pdf</unstructured_citation>
+        </citation>
+        <citation key="pochoirs-7">
+          <unstructured_citation>James Mosley, Lettres &#x00e0; jour: public stencil lettering in France, Cambridge: Typefoundry, https://typefoundry.blogspot.com/2010/03/lettres-jour-public-stencil-lettering.html</unstructured_citation>
+        </citation>
+        <citation key="GaramPat-8">
+          <unstructured_citation>James Mosley, Preserving the typographical patrimony, Bulletin du Bibliophile, no. 1, Paris, 2005, pp. 3&#x2013;10. In both English and French. http://www.garamonpatrimoine.org/coupures_presse/bibliomosley.html</unstructured_citation>
+        </citation>
+        <citation key="JM-body-9">
+          <unstructured_citation>James Mosley, Type bodies compared, Cambridge: Typefoundry, 2008. http://typefoundry.blogspot.com/2008/04/type-bodies-compared.html</unstructured_citation>
+        </citation>
+        <citation key="JM-Garamondt-10">
+          <unstructured_citation>James Mosley, Garamond or Garamont?, Cambridge: Typefoundry, 2011. https://typefoundry.blogspot.com/2011/04/garamond-or-garamont.html</unstructured_citation>
+        </citation>
+        <citation key="JM-Jannon-11">
+          <unstructured_citation>James Mosley, The types of Jean Jannon at the Imprimerie royale, Cambridge: Typefoundry, 2012. https://typefoundry.blogspot.com/2012/02/types-of-jean-jannon-at-imprimerie.html</unstructured_citation>
+        </citation>
+        <citation key="JM-univ-12">
+          <unstructured_citation>James Mosley, Caract&#x00e8;res de l&#x2019;Universit&#x00e9;, Cambridge: Typefoundry, 2012. https://typefoundry.blogspot.com/2012/07/caracteres-de-luniversite.html</unstructured_citation>
+        </citation>
+        <citation key="JM-at-13">
+          <unstructured_citation>James Mosley, Commercial at, Cambridge: Typefoundry, 2013. https://typefoundry.blogspot.com/2013/10/commercial-at_6.html</unstructured_citation>
+        </citation>
+        <citation key="Smith-14">
+          <unstructured_citation>Marc H. Smith, La v&#x00e9;ridique histoire de l&#x2019;arobase, Paris : &#x00c9;cole nationale des chartes, 2023. https://www.chartes.psl.eu/editions/catalogue-des-publications/la-veridique-histoire-de-larobase</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>GuIT meeting, Pisa 2025: A visit by Doris and Erik</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Doris</given_name>
+          <surname>Behrendt</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Erik</given_name>
+          <surname>Nijenhuis</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>17</first_page>
+        <last_page>21</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145behrendt-guit25</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145behrendt-guit25.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="dtk20-1-1" type="journal_article">
+          <journal_title>Die TeXnische Kom&#x00f6;die</journal_title>
+          <author>Behrendt, Doris</author>
+          <first_page>8</first_page>
+          <cYear>2020</cYear>
+          <article_title>Tagungsbericht GuIT Meeting</article_title>
+          <unstructured_citation>D. Behrendt. Tagungsbericht GuIT meeting. Die TeXnische Kom&#x00f6;die, (1):8&#x2013;13, 2020. https://archiv.dante.de/DTK/PDF/komoedie_2020_1.pdf</unstructured_citation>
+        </citation>
+        <citation key="linregslides-2" type="web_resource">
+          <author>Benciolini, Battista</author>
+          <cYear>2025</cYear>
+          <article_title>La regressione lineare in LaTeX</article_title>
+          <unstructured_citation>B. Benciolini. La regressione lineare in LaTeX, 2025. https://www.guitex.org/home/images/meeting2025/BencioPisa2025c.pdf</unstructured_citation>
+        </citation>
+        <citation key="nijenhuis2025-xerdi-doceng-3" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Nijenhuis, Erik</author>
+          <volume>46</volume>
+          <cYear>2025</cYear>
+          <article_title>Xerdi&#x2019;s Documentation Project: Intertwined documents</article_title>
+          <unstructured_citation>E. Nijenhuis. Xerdi&#x2019;s documentation project: Intertwined documents. TUGboat 46(2), 2025. https://tug.org/TUGboat/tb46-2/tb143nijenhuis-doceng.html</unstructured_citation>
+        </citation>
+        <citation key="pearson1901-4" type="journal_article">
+          <journal_title>The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science</journal_title>
+          <author>Pearson, Karl</author>
+          <volume>2</volume>
+          <first_page>559</first_page>
+          <cYear>1901</cYear>
+          <article_title>On Lines and Planes of Closest Fit to Systems of Points in Space</article_title>
+          <unstructured_citation>K. Pearson. On lines and planes of closest fit to systems of points in space. The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science, 2(11):559&#x2013;572, 1901.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>HarfBuzz: The quest for universal text shaping</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Behdad</given_name>
+          <surname>Esfahbod</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>22</first_page>
+        <last_page>27</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145esfahbod-harfbuzz</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145esfahbod-harfbuzz.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="babel-1" type="other">
+          <author>Bezos, Javier</author>
+          <article_title>The babel Package</article_title>
+          <unstructured_citation>J. Bezos, J.L. Braams, et al. The babel package. https://ctan.org/pkg/babel</unstructured_citation>
+        </citation>
+        <citation key="cb:fw1-2" type="journal_article">
+          <journal_title>IEEE Annals of the History of Computing</journal_title>
+          <author>Bigelow, Charles</author>
+          <volume>42</volume>
+          <first_page>7</first_page>
+          <cYear>2020</cYear>
+          <doi>10.1109/MAHC.2020.2971202</doi>
+          <article_title>The Font Wars, Part 1</article_title>
+          <unstructured_citation>C. Bigelow. The Font Wars, part 1. IEEE Annals of the History of Computing, 42(1):7&#x2013;24, 2020. https://doi.org/10.1109/MAHC.2020.2971202</unstructured_citation>
+        </citation>
+        <citation key="cb:fw2-3" type="journal_article">
+          <journal_title>IEEE Annals of the History of Computing</journal_title>
+          <author>Bigelow, Charles</author>
+          <volume>42</volume>
+          <first_page>25</first_page>
+          <cYear>2020</cYear>
+          <doi>10.1109/MAHC.2020.2971745</doi>
+          <article_title>The Font Wars, Part 2</article_title>
+          <unstructured_citation>C. Bigelow. The Font Wars, part 2. IEEE Annals of the History of Computing, 42(1):25&#x2013;40, 2020. https://doi.org/10.1109/MAHC.2020.2971745</unstructured_citation>
+        </citation>
+        <citation key="eTeX:manual-4" type="software">
+          <author>Breitenlohner, Peter</author>
+          <cYear>1998</cYear>
+          <article_title>The &#x03B5;-TeX manual</article_title>
+          <unstructured_citation>P. Breitenlohner, et al. The &#x03B5;-TeX manual, 2nd ed., 1998. Revised 2024. https://ctan.org/pkg/etex</unstructured_citation>
+        </citation>
+        <citation key="CTAN:lang-5" type="other">
+          <author>CTAN</author>
+          <article_title>Language directory</article_title>
+          <unstructured_citation>CTAN. Language directory. https://ctan.org/tex-archive/language/</unstructured_citation>
+        </citation>
+        <citation key="be:ftexthes-6" type="dissertation">
+          <author>Esfahbod, Behdad</author>
+          <cYear>2004</cYear>
+          <article_title>FarsiTeX Typesetting System Revisited</article_title>
+          <unstructured_citation>B. Esfahbod. FarsiTeX typesetting system revisited. Bachelor&#x2019;s project, Sharif University of Technology, Computer Engineering Department, Sept. 2004. https://behdad.org/doc/farsitex-thesis.pdf</unstructured_citation>
+        </citation>
+        <citation key="be:hb-memory-7" type="web_resource">
+          <author>Esfahbod, Behdad</author>
+          <cYear>2012</cYear>
+          <article_title>HarfBuzz Memory Consumption</article_title>
+          <unstructured_citation>B. Esfahbod. HarfBuzz memory consumption, Sept. 2012. https://tug.org/l/behdad-hb-memory</unstructured_citation>
+        </citation>
+        <citation key="be:hb-indic-8" type="web_resource">
+          <author>Esfahbod, Behdad</author>
+          <cYear>2014</cYear>
+          <article_title>Reflections on Building the HarfBuzz Indic Shaper</article_title>
+          <unstructured_citation>B. Esfahbod. Reflections on building the HarfBuzz Indic shaper, Oct. 2014. https://tug.org/l/behdad-hb-indic</unstructured_citation>
+        </citation>
+        <citation key="be:hb-wasm-examples-9" type="other">
+          <author>Esfahbod, Behdad</author>
+          <cYear>2023</cYear>
+          <article_title>HarfBuzz WASM shaping examples</article_title>
+          <unstructured_citation>B. Esfahbod. HarfBuzz WASM shaping examples, 2023. https://github.com/harfbuzz/harfbuzz-wasm-examples</unstructured_citation>
+        </citation>
+        <citation key="be:text2024-10" type="web_resource">
+          <author>Esfahbod, Behdad</author>
+          <cYear>2024</cYear>
+          <article_title>State of Text Rendering 2024</article_title>
+          <unstructured_citation>B. Esfahbod. State of Text Rendering 2024, July 2024. https://behdad.org/doc/text2024</unstructured_citation>
+        </citation>
+        <citation key="xEsfahbod:TB23-1-41-11" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Esfahbod, Behdad</author>
+          <volume>23</volume>
+          <issue>73</issue>
+          <first_page>41</first_page>
+          <cYear>2002</cYear>
+          <article_title>FarsiTeX and the Iranian TeX community</article_title>
+          <unstructured_citation>B. Esfahbod, R. Pournader. FarsiTeX and the Iranian TeX community. TUGboat 23(1):41&#x2013;45, 2002. https://tug.org/TUGboat/tb23-1/farsitex.pdf</unstructured_citation>
+        </citation>
+        <citation key="xFischer:2020:TBS-12" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Fischer, Ulrike</author>
+          <volume>41</volume>
+          <issue>127</issue>
+          <first_page>69</first_page>
+          <cYear>2020</cYear>
+          <article_title>Typesetting Bangla script with LuaLaTeX</article_title>
+          <unstructured_citation>U. Fischer, M. Kr&#x00FC;ger. Typesetting Bangla script with LuaLaTeX. TUGboat 41(1):69&#x2013;70, 2020. https://tug.org/TUGboat/tb41-1/tb127fischer-bangla.pdf</unstructured_citation>
+        </citation>
+        <citation key="xHaralambous:TB11-4-520-13" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Haralambous, Yannis</author>
+          <volume>11</volume>
+          <issue>30</issue>
+          <first_page>520</first_page>
+          <cYear>1990</cYear>
+          <article_title>Arabic, Persian and Ottoman TeX for Mac and PC</article_title>
+          <unstructured_citation>Y. Haralambous. Arabic, Persian and Ottoman TeX for Mac and PC. TUGboat 11(4):520&#x2013;524, Nov. 1990 . https://tug.org/TUGboat/tb11-4/tb30hara.pdf</unstructured_citation>
+        </citation>
+        <citation key="Haralambous:TB15-3-344-14" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Haralambous, Yannis</author>
+          <volume>15</volume>
+          <issue>44</issue>
+          <first_page>344</first_page>
+          <cYear>1994</cYear>
+          <article_title>First applications of  &#x03A9;: Adobe Poetica, Arabic, Greek, Khmer</article_title>
+          <unstructured_citation>Y. Haralambous, J. Plaice. First applications of  &#x03A9;: Adobe Poetica, Arabic, Greek, Khmer. TUGboat 15(3):344&#x2013;352, Sept. 1994. https://tug.org/TUGboat/tb15-3/tb44haralambous-omega.pdf</unstructured_citation>
+        </citation>
+        <citation key="xHosny:TB34-2-121-15" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Hosny, Khaled</author>
+          <volume>34</volume>
+          <issue>107</issue>
+          <first_page>121</first_page>
+          <cYear>2013</cYear>
+          <article_title>What is new in XeTeX 0.9999?</article_title>
+          <unstructured_citation>K. Hosny. What is new in XeTeX 0.9999? TUGboat 34(2):121&#x2013;122, 2013. https://tug.org/TUGboat/tb34-2/tb107hosny.pdf</unstructured_citation>
+        </citation>
+        <citation key="Hosny:2019:BWS-16" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Hosny, Khaled</author>
+          <volume>40</volume>
+          <issue>124</issue>
+          <first_page>38</first_page>
+          <cYear>2019</cYear>
+          <article_title>Bringing world scripts to LuaTeX: The HarfBuzz experiment</article_title>
+          <unstructured_citation>K. Hosny. Bringing world scripts to LuaTeX: The HarfBuzz experiment. TUGboat 40(1):38&#x2013;43, 2019. https://tug.org/TUGboat/tb40-1/tb124hosny-harfbuzz.pdf</unstructured_citation>
+        </citation>
+        <citation key="arabi-17" type="other">
+          <author>Jabri, Youssef</author>
+          <article_title>The arabi Package</article_title>
+          <unstructured_citation>Y. Jabri. The arabi package. https://ctan.org/pkg/arabi</unstructured_citation>
+        </citation>
+        <citation key="Kew:TB26-2-115-18" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Kew, Jonathan</author>
+          <volume>26</volume>
+          <issue>83</issue>
+          <first_page>115</first_page>
+          <cYear>2005</cYear>
+          <article_title>XeTeX, the Multilingual Lion: TeX meets Unicode and smart font technologies</article_title>
+          <unstructured_citation>J. Kew. XeTeX, the Multilingual Lion: TeX meets Unicode and smart font technologies. TUGboat 26(2):115&#x2013;124, 2005. https://tug.org/TUGboat/tb26-2/kew.pdf</unstructured_citation>
+        </citation>
+        <citation key="XePersian-19" type="other">
+          <author>Khalighi, Vafa</author>
+          <article_title>The xepersian Package</article_title>
+          <unstructured_citation>V. Khalighi. The xepersian package. https://ctan.org/pkg/xepersian</unstructured_citation>
+        </citation>
+        <citation key="Knuth:TB8-1-14-20" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Knuth, Donald</author>
+          <volume>8</volume>
+          <issue>17</issue>
+          <first_page>14</first_page>
+          <cYear>1987</cYear>
+          <article_title>Mixing right-to-left texts with left-to-right texts</article_title>
+          <unstructured_citation>D. Knuth, P. MacKay. Mixing right-to-left texts with left-to-right texts. TUGboat 8(1):14&#x2013;25, Apr. 1987. https://tug.org/TUGboat/tb08-1/tb17knutmix.pdf</unstructured_citation>
+        </citation>
+        <citation key="TeXXeT-21" type="other">
+          <author>Knuth, Donald E.</author>
+          <article_title>tex&#x2013;xet&#x2014;Bidirectional extension of TeX</article_title>
+          <unstructured_citation>D.E. Knuth, P.A. MacKay, P. Breitenlohner. tex&#x2013;xet&#x2014;Bidirectional extension of TeX. https://ctan.org/pkg/tex&#x2013;xet</unstructured_citation>
+        </citation>
+        <citation key="ArabTeX-22" type="other">
+          <author>Lagally, Klaus</author>
+          <article_title>The arabtex Package</article_title>
+          <unstructured_citation>K. Lagally. The arabtex package. https://ctan.org/pkg/arabtex</unstructured_citation>
+        </citation>
+        <citation key="xPlaice:TB14-3-271-23" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Plaice, John</author>
+          <volume>14</volume>
+          <issue>40</issue>
+          <first_page>271</first_page>
+          <cYear>1993</cYear>
+          <article_title>Language-dependent ligatures</article_title>
+          <unstructured_citation>J. Plaice. Language-dependent ligatures. TUGboat 14(3):271&#x2013;274, Oct. 1993. https://tug.org/TUGboat/tb14-3/tb40plaice.pdf</unstructured_citation>
+        </citation>
+        <citation key="Plaice:TB15-3-320-24" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Plaice, John</author>
+          <volume>15</volume>
+          <issue>44</issue>
+          <first_page>320</first_page>
+          <cYear>1994</cYear>
+          <article_title>Progress in the Omega project</article_title>
+          <unstructured_citation>J. Plaice. Progress in the Omega project. TUGboat 15(3):320&#x2013;324, Sept. 1994. https://tug.org/TUGboat/tb15-3/tb44plaice.pdf</unstructured_citation>
+        </citation>
+        <citation key="xPlaice:TB17-2-181-25" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Plaice, John</author>
+          <volume>17</volume>
+          <issue>51</issue>
+          <first_page>181</first_page>
+          <cYear>1996</cYear>
+          <article_title>The latest developments in  &#x03A9;</article_title>
+          <unstructured_citation>J. Plaice, Y. Haralambous. The latest developments in  &#x03A9;. TUGboat 17(2):181&#x2013;183, June 1996. https://tug.org/TUGboat/tb17-2/tb51plaice.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>CTAN 2025: Architecture, operation, team and future</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Erik</given_name>
+          <surname>Braun</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>28</first_page>
+        <last_page>33</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145braun-ctan</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145braun-ctan.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="braun2025ctan-1" type="other">
+          <author>Braun, Erik</author>
+          <cYear>2025</cYear>
+          <article_title>The state of CTAN: 2025</article_title>
+          <unstructured_citation>E. Braun. The state of CTAN: 2025. Slides, TUG 2025, July 2025. https://tug.org/tug2025/av/d1-t02-braun-ctan/d1-t02-braun-ctan-slides.pdf</unstructured_citation>
+        </citation>
+        <citation key="green1993ctan-2" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Greenwade, George D.</author>
+          <volume>14</volume>
+          <first_page>342â351</first_page>
+          <cYear>1993</cYear>
+          <article_title>The Comprehensive TeX Archive Network (CTAN)</article_title>
+          <unstructured_citation>G.D. Greenwade. The comprehensive TeX archive network (CTAN). TUGboat 14(3):342&#x2013;351, Mar. 1993. https://tug.org/TUGboat/tb14-3/tb40green.pdf</unstructured_citation>
+        </citation>
+        <citation key="DanteLotz2025-3" type="conference_paper">
+          <author>Lotz, Manfred</author>
+          <cYear>2025</cYear>
+          <volume_title>Tagungsarchiv DANTE e.V.</volume_title>
+          <article_title>Derzeitiger Stand von CTAN</article_title>
+          <unstructured_citation>M. Lotz. Derzeitiger Stand von CTAN. In Tagungsarchiv DANTE e.V., 2025. https://dante.de/veranstaltungen/tagungsarchiv/tagungsarchiv-dante-2025/</unstructured_citation>
+        </citation>
+        <citation key="LucasMillerMoock2024-4" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Lucas, Rayner</author>
+          <volume>45</volume>
+          <first_page>299</first_page>
+          <cYear>2024</cYear>
+          <doi>10.47397/tb/45-3/tb141lucas-usenet</doi>
+          <article_title>Usenet and the future of comp.text.tex</article_title>
+          <unstructured_citation>R. Lucas, T. Miller, M. Moock. Usenet and the future of comp.text.tex. TUGboat 45(3):299&#x2013;301, 2024. https://doi.org/10.47397/tb/45-3/tb141lucas-usenet</unstructured_citation>
+        </citation>
+        <citation key="RuebePugliese2014CTAN-5" type="journal_article">
+          <journal_title>Die TeXnische Kom&#x00f6;die</journal_title>
+          <author>R&#x00fc;be-Pugliese, Petra</author>
+          <volume>26</volume>
+          <first_page>64</first_page>
+          <cYear>2014</cYear>
+          <article_title>CTAN sucht Mitstreiter</article_title>
+          <unstructured_citation>P. R&#x00fc;be-Pugliese. CTAN sucht Mitstreiter. Die TeXnische Kom&#x00f6;die, 26(4):64&#x2013;67, 2014. https://archiv.dante.de/DTK/PDF/komoedie_2014_4.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The use of <i>rv</i> and <i>w</i> in old Polish printed works</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Janusz S.</given_name>
+          <surname>Bie&#x0144;</surname>
+          <ORCID>https://orcid.org/0000-0001-5006-8183</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>34</first_page>
+        <last_page>37</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145bien-rvw</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145bien-rvw.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="andre:halshs-00983575-1" type="journal_article">
+          <journal_title>Revue des Sciences et Technologies de l&#x2019;Information &#x2013; S&#x00E9;rie Document Num&#x00E9;rique</journal_title>
+          <author>Andr&#x00E9;, Jacques</author>
+          <volume>16</volume>
+          <first_page>113</first_page>
+          <cYear>2013</cYear>
+          <article_title>Transcription et codage des imprim&#x00E9;s de la Renaissance.</article_title>
+          <unstructured_citation>J. Andr&#x00E9;, R. Jimenes. Transcription et codage des imprim&#x00E9;s de la Renaissance. Revue des Sciences et Technologies de l&#x2019;Information &#x2013; S&#x00E9;rie Document Num&#x00E9;rique, 16(3):113&#x2013;139, 2013. https://shs.hal.science/halshs-00983575v1/file/10_Andr%C3%A9_Jimenes.pdf</unstructured_citation>
+        </citation>
+        <citation key="bien_repertuar_2020-2" type="other">
+          <author>Bie&#x0144;, Janusz S.</author>
+          <cYear>2020</cYear>
+          <doi>10.13140/RG.2.2.16822.83529</doi>
+          <article_title>Repertuar znak&#x00f3;w pi&#x015b;miennych &#x2013; problemy i perspektywy (postprint)</article_title>
+          <unstructured_citation>J.S. Bie&#x0144;. Repertuar znak&#x00f3;w pi&#x015b;miennych &#x2013; problemy i perspektywy (postprint), 2020. https://doi.org/10.13140/RG.2.2.16822.83529</unstructured_citation>
+        </citation>
+        <citation key="bien_typoglyphs-3" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Bie&#x0144;, Janusz S.</author>
+          <volume>46</volume>
+          <first_page>420</first_page>
+          <cYear>2025</cYear>
+          <article_title>A technical contribution to the description of the 16th century fonts of Polish printers</article_title>
+          <unstructured_citation>J.S. Bie&#x0144;. A technical contribution to the description of the 16th century fonts of Polish printers. TUGboat 46(3):420&#x2013;426, 2025. https://tug.org/TUGboat/tb46-3/tb144bien-typoglyphs.pdf</unstructured_citation>
+        </citation>
+        <citation key="bien_PTtables-4" type="other">
+          <author>Bie&#x0144; (ed.), Janusz S.</author>
+          <cYear>2025</cYear>
+          <doi>10.5281/zenodo.14992305</doi>
+          <article_title>Polonia Typographica Saeculi Sedecimi &#x2013; T&#x0142;ocznie polskie XVI stulecia &#x2013; Monografie i podobizny zasob&#x00f3;w drukarskich. Reconstructed font tables (draft)</article_title>
+          <unstructured_citation>J.S. Bie&#x0144; (ed.). Polonia Typographica Saeculi Sedecimi &#x2013; T&#x0142;ocznie polskie XVI stulecia &#x2013; Monografie i podobizny zasob&#x00f3;w drukarskich. Reconstructed font tables (draft), Apr. 2025. https://doi.org/10.5281/zenodo.14992305</unstructured_citation>
+        </citation>
+        <citation key="NKP-5" type="book">
+          <author>Januszowski, Jan</author>
+          <cYear>1594</cYear>
+          <article_title>Nowy Karakter Polski: z drukarnie Lazarzowey y ortographia polska Iana Kochanowskiego, Ie M. P. Lukasza Gornickiego etc. etc.</article_title>
+          <unstructured_citation>J. Januszowski. Nowy Karakter Polski: z drukarnie Lazarzowey y ortographia polska Iana Kochanowskiego, Ie M. P. Lukasza Gornickiego etc. etc. Drukarnia &#x0141;azarzowa, Krak&#x00f3;w, 1594.</unstructured_citation>
+        </citation>
+        <citation key="kochanowski:ortografia_polska_2021-6" type="book">
+          <author>Kochanowski, Jan</author>
+          <first_page>191</first_page>
+          <cYear>2021</cYear>
+          <isbn>978-83-66448-93-3</isbn>
+          <series_title>Dzie&#x0142;a wszystkie. Wydanie sejmowe. Tom 11</series_title>
+          <article_title>Ortografia polska</article_title>
+          <unstructured_citation>J. Kochanowski. Ortografia polska. Dzie&#x0142;a wszystkie. Wydanie sejmowe, tom 11. Wydawnictwo Instytutu Bada&#x0144; Literackich PAN, Warszawa, 2021.</unstructured_citation>
+        </citation>
+        <citation key="LC_RareBooks_W-7" type="other">
+          <author>Library of Congress Rare Book Team</author>
+          <cYear>2002</cYear>
+          <article_title>Appendix G5, Letter w</article_title>
+          <unstructured_citation>Library of Congress Rare Book Team. Appendix G5, letter w. Descriptive Cataloging of Rare Books, 2nd ed., 2002. Cataloger&#x2019;s Reference Shelf, Cataloger&#x2019;s Judgement. https://www.itsmarc.com/crs/mergedprojects/rarebks/rarebks/appendix_g5._letter_w.htm</unstructured_citation>
+        </citation>
+        <citation key="Wielunska-9788395314315-8" type="book">
+          <author>Wielu&#x0144;ska, Anna</author>
+          <cYear>2025</cYear>
+          <isbn>978-83-953143-1-5</isbn>
+          <article_title>Day ut ia pobrusa a ti poziwai, albo kr&#x00f3;tka rozprawa o j&#x0119;zyku polskim, typografii i drukarstwie, z dziej&#x00f3;w dawnych i nowych ku po&#x017c;ytkowi badaczy i ciekawych rzeczy pisma zebrana, przez Ani&#x0119; Wielu&#x0144;sk&#x0105; spisana, sporz&#x0105;dzona, wydana i karakterem Hieronimus na cze&#x015b;&#x0107; Wietora nazwanym z&#x0142;o&#x017c;ona, na Akademii Sztuk Pi&#x0119;knych w Warszawie pod kierunkiem prof. Lecha Majewskiego ugruntowana</article_title>
+          <unstructured_citation>A. Wielu&#x0144;ska. Day ut ia pobrusa a ti poziwai, albo kr&#x00f3;tka rozprawa o j&#x0119;zyku polskim, typografii i drukarstwie, z dziej&#x00f3;w dawnych i nowych ku po&#x017c;ytkowi badaczy i ciekawych rzeczy pisma zebrana, przez Ani&#x0119; Wielu&#x0144;sk&#x0105; spisana, sporz&#x0105;dzona, wydana i karakterem Hieronimus na cze&#x015b;&#x0107; Wietora nazwanym z&#x0142;o&#x017c;ona, na Akademii Sztuk Pi&#x0119;knych w Warszawie pod kierunkiem prof. Lecha Majewskiego ugruntowana. Published by Anna Wielu&#x0144;ska, 1st ed., 2025. https://e-isbn.pl/IsbnWeb/record/export_onix.xml?record_id=7609340</unstructured_citation>
+        </citation>
+        <citation key="wielunska:day_ut_ia_pobrusa_summary_2025-9" type="other">
+          <author>Wielu&#x0144;ska, Ania</author>
+          <cYear>2025</cYear>
+          <article_title>Day ut ia pobrusa a ti poziwai: opis dzie&#x0142;a</article_title>
+          <unstructured_citation>A. Wielu&#x0144;ska. Day ut ia pobrusa a ti poziwai: opis dzie&#x0142;a, 2025. https://bip.asp.waw.pl/attachments/download/10451</unstructured_citation>
+        </citation>
+        <citation key="chres84-10" type="book">
+          <author>Wydra, Wies&#x0142;aw</author>
+          <cYear>1984</cYear>
+          <isbn>9788304015685</isbn>
+          <article_title>Chrestomatia staropolska: teksty do roku 1543</article_title>
+          <unstructured_citation>W. Wydra, W.R. Rzepka. Chrestomatia staropolska: teksty do roku 1543. Zak&#x0142;ad Narodowy im. Ossoli&#x0144;skich &#x2013; Wydawnictwo, 1984.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The DuckBoat&#x2014;Beginners' Pond: Making life easier on Q&amp;A sites</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Carla</given_name>
+          <surname>Maggi</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>38</first_page>
+        <last_page>42</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145duck-qatips</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145duck-qatips.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="xVinay:2025:HWU-1" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Govinda (S. Vinay), Vrajar&#x0101;ja</author>
+          <volume>46</volume>
+          <issue>143</issue>
+          <first_page>220</first_page>
+          <cYear>2025</cYear>
+          <doi>10.47397/tb/46-2/tb143govinda-ashram</doi>
+          <article_title>How we use XeLaTeX at our ashram to publish and print multilingual books and documents</article_title>
+          <unstructured_citation>V. Govinda (S. Vinay). How we use XeLaTeX at our ashram to publish and print multilingual books and documents. TUGboat 46(2):220&#x2013;227, 2025. https://doi.org/10.47397/tb/46-2/tb143govinda-ashram</unstructured_citation>
+        </citation>
+        <citation key="Maggi:2017:DNT-2" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Maggi, Carla</author>
+          <volume>38</volume>
+          <issue>120</issue>
+          <first_page>301</first_page>
+          <cYear>2017</cYear>
+          <article_title>The DuckBoat&#x2014;News from TeX.SE: Asking effective questions</article_title>
+          <unstructured_citation>C. Maggi. The DuckBoat&#x2014;news from TeX.SE: Asking effective questions. TUGboat 38(3):301&#x2013;305, 2017. https://tug.org/TUGboat/tb38-3/tb120duck.pdf</unstructured_citation>
+        </citation>
+        <citation key="Maggi:2018:DNTb-3" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Maggi, Carla</author>
+          <volume>39</volume>
+          <issue>123</issue>
+          <first_page>177</first_page>
+          <cYear>2018</cYear>
+          <article_title>The DuckBoat&#x2014;News from TeX.SE: Formatting posts</article_title>
+          <unstructured_citation>C. Maggi. The DuckBoat&#x2014;News from TeX.SE: Formatting posts. TUGboat 39(3):177&#x2013;181, 2018. https://tug.org/TUGboat/tb39-3/tb123duck-format.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>You (S)wove? Well, (S)tangle now!</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Vincent</given_name>
+          <surname>Goulet</surname>
+          <ORCID>https://orcid.org/0000-0002-9315-5719</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>43</first_page>
+        <last_page>47</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145goulet-stangle</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145goulet-stangle.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Gerrard:2024:HPR-1" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Gerrard, Mitchell</author>
+          <volume>45</volume>
+          <issue>140</issue>
+          <first_page>196</first_page>
+          <cYear>2024</cYear>
+          <doi>10.47397/tb/45-2/tb140gerrard-holon</doi>
+          <article_title>Holon programming regained</article_title>
+          <unstructured_citation>M. Gerrard. Holon programming regained. TUGboat 45(2):196&#x2013;200, 2024. https://doi.org/10.47397/tb/45-2/tb140gerrard-holon</unstructured_citation>
+        </citation>
+        <citation key="Goulet:programmer-avec-r:2025-2" type="book">
+          <author>Goulet, V.</author>
+          <cYear>2025</cYear>
+          <article_title>Programmer avec R</article_title>
+          <unstructured_citation>V. Goulet. Programmer avec R. Open educational resource under a Creative Commons BY-SA 4.0 license, 2025. In French. https://vigou3.gitlab.io/programmer-avec-r</unstructured_citation>
+        </citation>
+        <citation key="RweaveExtra-3" type="software">
+          <author>Goulet, Vincent</author>
+          <cYear>2025</cYear>
+          <doi>10.32614/CRAN.package.RweaveExtra</doi>
+          <article_title>RweaveExtra: Sweave Drivers with Extra Tricks Up their Sleeve</article_title>
+          <unstructured_citation>V. Goulet, R Core Team. RweaveExtra: Sweave Drivers with Extra Tricks Up their Sleeve, 2025. R package version 1.3-0. https://doi.org/10.32614/CRAN.package.RweaveExtra</unstructured_citation>
+        </citation>
+        <citation key="Knuth:litprog:1984-4" type="journal_article">
+          <journal_title>The Computer Journal</journal_title>
+          <author>Knuth, Donald E.</author>
+          <volume>27</volume>
+          <first_page>97</first_page>
+          <cYear>1984</cYear>
+          <doi>10.1093/comjnl/27.2.97</doi>
+          <article_title>Literate Programming</article_title>
+          <unstructured_citation>D.E. Knuth. Literate programming. The Computer Journal, 27(2):97&#x2013;111, 1984. https://doi.org/10.1093/comjnl/27.2.97</unstructured_citation>
+        </citation>
+        <citation key="Knuth:CSS93-5" type="book">
+          <author>Knuth, Donald E.</author>
+          <first_page>226</first_page>
+          <cYear>1993</cYear>
+          <isbn>0-201-57569-8</isbn>
+          <article_title>The CWEB System of Structured Documentation, Version 3.0</article_title>
+          <unstructured_citation>D.E. Knuth, S. Levy. The CWEB System of Structured Documentation, Version 3.0. Addison-Wesley, Reading, MA, 1993.</unstructured_citation>
+        </citation>
+        <citation key="LeischSweave:2002-6" type="conference_paper">
+          <author>Leisch, Friedrich</author>
+          <first_page>575</first_page>
+          <cYear>2002</cYear>
+          <doi>10.1007/978-3-642-57489-4_89</doi>
+          <isbn>978-364257489-4</isbn>
+          <volume_title>Compstat</volume_title>
+          <article_title>Sweave: Dynamic Generation of Statistical Reports Using Literate Data Analysis</article_title>
+          <unstructured_citation>F. Leisch. Sweave: Dynamic generation of statistical reports using literate data analysis. In Compstat, W. H&#x00E4;rdle, B. R&#x00F6;nz, eds., pp. 575&#x2013;580, Heidelberg, 2002. Physica-Verlag HD. https://doi.org/10.1007/978-3-642-57489-4_89</unstructured_citation>
+        </citation>
+        <citation key="Mittelbach:TB10-2-245-7" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Mittelbach, Frank</author>
+          <volume>10</volume>
+          <issue>24</issue>
+          <first_page>245</first_page>
+          <cYear>1989</cYear>
+          <article_title>The doc&#x2013;option</article_title>
+          <unstructured_citation>F. Mittelbach. The doc&#x2013;option. TUGboat 10(2):245&#x2013;273, July 1989. https://tug.org/TUGboat/tb10-2/tb24mitt-doc.pdf</unstructured_citation>
+        </citation>
+        <citation key="doc-8" type="software">
+          <author>Mittelbach, Frank</author>
+          <cYear>2024</cYear>
+          <article_title>The doc and shortvrb Packages</article_title>
+          <unstructured_citation>F. Mittelbach. The doc and shortvrb Packages, 2024. https://ctan.org/pkg/doc</unstructured_citation>
+        </citation>
+        <citation key="Ramsey:noweb:1994-9" type="journal_article">
+          <journal_title>IEEE Software</journal_title>
+          <author>Ramsey, Norman</author>
+          <volume>11</volume>
+          <first_page>97</first_page>
+          <cYear>1994</cYear>
+          <doi>10.1109/52.311070</doi>
+          <article_title>Literate programming simplified</article_title>
+          <unstructured_citation>N. Ramsey. Literate programming simplified. IEEE Software, 11(5):97&#x2013;105, 1994. https://doi.org/10.1109/52.311070</unstructured_citation>
+        </citation>
+        <citation key="Vandewalle:reprodresearch:2009-10" type="journal_article">
+          <journal_title>IEEE Signal Processing Magazine</journal_title>
+          <author>Vandewalle, Patrick</author>
+          <volume>26</volume>
+          <first_page>37</first_page>
+          <cYear>2009</cYear>
+          <doi>10.1109/MSP.2009.932122</doi>
+          <article_title>Reproducible research in signal processing</article_title>
+          <unstructured_citation>P. Vandewalle, J. Kovacevic, M. Vetterli. Reproducible research in signal processing. IEEE Signal Processing Magazine, 26(3):37&#x2013;47, 2009. https://doi.org/10.1109/MSP.2009.932122</unstructured_citation>
+        </citation>
+        <citation key="knitr-11" type="software">
+          <author>Xie, Yihui</author>
+          <cYear>2023</cYear>
+          <article_title>knitr: A General-Purpose Package for Dynamic Report Generation in R</article_title>
+          <unstructured_citation>Y. Xie. knitr: A General-Purpose Package for Dynamic Report Generation in R, 2023. R package version 1.45. https://yihui.org/knitr</unstructured_citation>
+        </citation>
+        <citation key="Xie:rmarkdown:2018-12" type="book">
+          <author>Xie, Yihui</author>
+          <cYear>2018</cYear>
+          <isbn>978-113835933-8</isbn>
+          <article_title>R Markdown: The Definitive Guide</article_title>
+          <unstructured_citation>Y. Xie, J.J. Allaire, G. Grolemund. R Markdown: The Definitive Guide. Chapman and Hall/CRC, Boca Raton, Florida, 2018. https://bookdown.org/yihui/rmarkdown</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title><tt>manycolposter</tt>: Minuscule minutes' text on DIN A0</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Stephan</given_name>
+          <surname>Kurz</surname>
+          <ORCID>https://orcid.org/0000-0003-2546-2570</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>48</first_page>
+        <last_page>51</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145kurz-manycol</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145kurz-manycol.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="duffnergeorgEBGaramond-1" type="other">
+          <author>Duffner, Georg</author>
+          <cYear>2023</cYear>
+          <article_title>EB Garamond</article_title>
+          <unstructured_citation>Duffner, Georg. EB Garamond, 2023. http://www.georgduffner.at/ebgaramond/</unstructured_citation>
+        </citation>
+        <citation key="engel-janosiEinleitungsbandMinisterratUnd1970-2" type="book">
+          <author>Engel-Janosi, Friedrich</author>
+          <cYear>1970</cYear>
+          <series_title>Die Protokolle des &#x00d6;sterreichischen Ministerrates 1848&#x2013;1867</series_title>
+          <article_title>Einleitungsband. Ministerrat und Ministerratprotokolle 1848&#x2013;1867</article_title>
+          <unstructured_citation>F. Engel-Janosi, ed. Einleitungsband. Ministerrat und Ministerratprotokolle 1848&#x2013;1867. Die Protokolle des &#x00d6;sterreichischen Ministerrates 1848&#x2013;1867. &#x00d6;sterr. Bundesverl. f&#x00fc;r Unterricht, Wiss. u. Kunst, 1970.</unstructured_citation>
+        </citation>
+        <citation key="fischer-nebmaier19141918Teilband22025-3" type="book">
+          <author>Fischer-Nebmaier, Wladimir</author>
+          <volume>VIII/2</volume>
+          <cYear>2025</cYear>
+          <isbn>978-3-7001-9298-5</isbn>
+          <series_title>Die Protokolle des cisleithanischen Ministerrates 1867&#x2013;1918</series_title>
+          <article_title>1914&#x2013;1918, Teilband 2: 22. November 1916&#x2013;11. November 1918</article_title>
+          <unstructured_citation>W. Fischer-Nebmaier. 1914&#x2013;1918, Teilband 2: 22. November 1916&#x2013;11. November 1918, vol. VIII/2 of Die Protokolle des cisleithanischen Ministerrates 1867&#x2013;1918. Verlag der &#x00D6;sterreichischen Akademie der Wissenschaften, Wien, 2025. ISBN 978-3-7001-9298-5.</unstructured_citation>
+        </citation>
+        <citation key="fischer-nebmaierProtokolleCisleithanischenMinisterrates2025-4" type="book_chapter">
+          <author>Fischer-Nebmaier, Wladimir</author>
+          <volume>2025/1</volume>
+          <first_page>223</first_page>
+          <cYear>2025</cYear>
+          <isbn>979-12-5469-978-2</isbn>
+          <series_title>Geschichte und Region / Storia e Regione</series_title>
+          <volume_title>Polizei(en) und Raum nach dem Zweiten Weltkrieg / Polizie e Territori dopo la Seconda Guerra Mondiale</volume_title>
+          <article_title>Die Protokolle des cisleithanischen Ministerrates 1867&#x2013;1918</article_title>
+          <unstructured_citation>W. Fischer-Nebmaier, S. Kurz, A. Schmied-Kowarzik. Die Protokolle des cisleithanischen Ministerrates 1867&#x2013;1918. In Polizei(en) und Raum nach dem Zweiten Weltkrieg / Polizie e Territori dopo la Seconda Guerra Mondiale, M. Di Giorgio, M. G&#x00F6;llnitz, eds., vol. 2025/1 of Geschichte und Region / Storia e Regione, pp. 223&#x2013;232. Viella Editrice, Trento, 2025. ISBN 979-12-5469-978-2.</unstructured_citation>
+        </citation>
+        <citation key="javalPhysiologieLectureLecriture2009-5" type="book">
+          <author>Javal, &#x00C9;mile</author>
+          <cYear>2009</cYear>
+          <isbn>978-1-108-00914-0</isbn>
+          <series_title>Cambridge Library Collection</series_title>
+          <article_title>Physiologie de la lecture et de l&#x2019;&#x00E9;criture</article_title>
+          <unstructured_citation>&#x00C9;. Javal. Physiologie de la lecture et de l&#x2019;&#x00E9;criture. Cambridge Library Collection. Cambridge Univ. Press, Cambridge, UK, reprint of Alcan, Paris, 1905 ed., 2009. ISBN 978-1-108-00914-0.</unstructured_citation>
+        </citation>
+        <citation key="bigfoot-6" type="software">
+          <author>Kastrup, David</author>
+          <article_title>The Bigfoot package</article_title>
+          <unstructured_citation>D. Kastrup. The bigfoot package, version 2.1, 2015-08-30. https://ctan.org/pkg/bigfoot</unstructured_citation>
+        </citation>
+        <citation key="koma-script-7" type="software">
+          <author>Kohm, Markus</author>
+          <article_title>The Koma-script package</article_title>
+          <unstructured_citation>M. Kohm. The koma-script package, version 3.48, 2025-09-09. https://komascript.de</unstructured_citation>
+        </citation>
+        <citation key="KurzDasProtokollals2022-8" type="book_chapter">
+          <author>Kurz, Stephan</author>
+          <first_page>365</first_page>
+          <cYear>2022</cYear>
+          <doi>10.13173/9783447118095.365</doi>
+          <series_title>Episteme in Bewegung. Beitr&#x00e4;ge zu einer transdisziplin&#x00e4;ren Wissensgeschichte</series_title>
+          <volume_title>Wissen und Buchgestalt</volume_title>
+          <article_title>Das Protokoll als Quelle und Vorstellung: Datenmodellierung und Applikationsentwicklung zu den Ministerratsprotokollen 1848&#x2013;1918</article_title>
+          <unstructured_citation>S. Kurz. Das Protokoll als Quelle und Vorstellung: Datenmodellierung und Applikationsentwicklung zu den Ministerratsprotokollen 1848&#x2013;1918. In Wissen und Buchgestalt, P. Hegel, M. Krewet, eds., no. 26 in Episteme in Bewegung. Beitr&#x00e4;ge zu einer transdisziplin&#x00e4;ren Wissensgeschichte, pp. 365&#x2013;383. Harrassowitz, Wiesbaden, 2022. https://doi.org/10.13173/9783447118095.365</unstructured_citation>
+        </citation>
+        <citation key="KurzProtokolle2023-9" type="book_chapter">
+          <author>Kurz, Stephan</author>
+          <volume>2</volume>
+          <first_page>93â110</first_page>
+          <cYear>2023</cYear>
+          <doi>10.1007/978-3-662-66896-2_6</doi>
+          <isbn>978-3-662-66896-2</isbn>
+          <series_title>AdminiStudies</series_title>
+          <volume_title>Das Protokoll</volume_title>
+          <article_title>Administrativ-politische und editorisch-technische Protokolle. Der cisleithanische Ministerrat 1848&#x2013;1918</article_title>
+          <unstructured_citation>S. Kurz. Administrativ-politische und editorisch-technische Protokolle. Der cisleithanische Ministerrat 1848&#x2013;1918. In Das Protokoll, P. Plener, N. Werber, B. Wolf, eds., vol. 2 of AdminiStudies, p. 93&#x2013;110. J.B. Metzler, Berlin and Heidelberg, 2023. https://doi.org/10.1007/978-3-662-66896-2_6</unstructured_citation>
+        </citation>
+        <citation key="KurzDieEditionder2019-10" type="conference_paper">
+          <author>Kurz, Stephan</author>
+          <first_page>86</first_page>
+          <cYear>2019</cYear>
+          <doi>10.1553/dha-proceedings2018s83</doi>
+          <volume_title>5. Digital Humanities Austria Konferenz DHA 2018 Conference Proceedings</volume_title>
+          <article_title>Die Edition der Ministerratsprotokolle 1848&#x2013;1918 digital: Workflows, M&#x00F6;glichkeiten, Grenzen</article_title>
+          <unstructured_citation>S. Kurz, W. Fischer-Nebmaier, et al. Die Edition der Ministerratsprotokolle 1848&#x2013;1918 digital: Workflows, M&#x00F6;glichkeiten, Grenzen. In 5. Digital Humanities Austria Konferenz DHA 2018 Conference Proceedings, K. Zeppezauer-Wachauer, P. Hinkelmanns, M. Ernst, eds., pp. 86&#x2013;93, Salzburg, 2019. https://doi.org/10.1553/dha-proceedings2018s83</unstructured_citation>
+        </citation>
+        <citation key="fontspec-11" type="software">
+          <author>LaTeX Project Team</author>
+          <article_title>The Fontspec package</article_title>
+          <unstructured_citation>LaTeX Project Team, W. Robertson. The fontspec package, version 2.9g, 2025-09-29. https://ctan.org/pkg/fontspec</unstructured_citation>
+        </citation>
+        <citation key="multicol-12" type="software">
+          <author>Mittelbach, Frank</author>
+          <article_title>The Multicol package</article_title>
+          <unstructured_citation>F. Mittelbach, LaTeX Project Team. The multicol package, version 2.0b, 2025-10-21. https://ctan.org/pkg/multicol</unstructured_citation>
+        </citation>
+        <citation key="SpiekermannMinuscule-13" type="other">
+          <journal_title>Typographica</journal_title>
+          <author>Spiekermann, Erik</author>
+          <cYear>2008</cYear>
+          <article_title>Minuscule</article_title>
+          <unstructured_citation>E. Spiekermann. Minuscule, 2008. https://typographica.org/typeface-reviews/minuscule/</unstructured_citation>
+        </citation>
+        <citation key="flowfram-14" type="software">
+          <author>Talbot, Nicola</author>
+          <article_title>The Flowfram package</article_title>
+          <unstructured_citation>N. Talbot. The flowfram package, version 1.17, 2014-09-30. https://ctan.org/pkg/flowfram</unstructured_citation>
+        </citation>
+        <citation key="ebgaramond-ctan-15" type="software">
+          <author>Tennent, Bob</author>
+          <article_title>The Ebgaramond package</article_title>
+          <unstructured_citation>B. Tennent. The ebgaramond package, 2024-04-23. https://ctan.org/pkg/ebgaramond</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Towards making more accessible course materials with LaTeX using Pandoc</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Matthew D.</given_name>
+          <surname>Hanson</surname>
+          <ORCID>https://orcid.org/0000-0001-8463-0672</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>52</first_page>
+        <last_page>56</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145hanson-pandoc</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145hanson-pandoc.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="adobe2025acrobat-1" type="other">
+          <author>Adobe Inc.</author>
+          <cYear>2025</cYear>
+          <article_title>Adobe Acrobat Pro</article_title>
+          <unstructured_citation>Adobe Inc. Adobe Acrobat Pro. https://www.adobe.com/acrobat/acrobat-pro.html, 2025.</unstructured_citation>
+        </citation>
+        <citation key="AnthologySurvey-2" type="other">
+          <author>Anthology Inc.</author>
+          <cYear>2025</cYear>
+          <article_title>Accessibility Knowledge Gaps Persist Among Higher Ed Faculty, Anthology Survey Reveals</article_title>
+          <unstructured_citation>Anthology Inc. Accessibility knowledge gaps persist among higher ed faculty, Anthology survey reveals. https://www.anthology.com/news/accessibility-knowledge-gaps-persist-among-higher-ed-faculty-anthology-survey-reveals, 2025.</unstructured_citation>
+        </citation>
+        <citation key="anthologyAlly-3" type="other">
+          <author>Anthology Inc.</author>
+          <cYear>2025</cYear>
+          <article_title>Anthology Ally: Digital Accessibility Checker</article_title>
+          <unstructured_citation>Anthology Inc. Anthology Ally: Digital accessibility checker. https://www.anthology.com/ally, 2025.</unstructured_citation>
+        </citation>
+        <citation key="anthologyBlackboard-4" type="other">
+          <author>Anthology Inc.</author>
+          <cYear>2025</cYear>
+          <article_title>Blackboard Learning Management System</article_title>
+          <unstructured_citation>Anthology Inc. Blackboard Learning Management System. https://www.anthology.com/blackboard, 2025.</unstructured_citation>
+        </citation>
+        <citation key="PDFexplainer-5" type="other">
+          <author>Cluelabs</author>
+          <cYear>2024</cYear>
+          <article_title>The Importance of PDF Documents in E-Learning</article_title>
+          <unstructured_citation>Cluelabs. The importance of PDF documents in E-Learning. https://cluelabs.com/blog/the-importance-of-pdf-documents-in-e-learning/, 2024.</unstructured_citation>
+        </citation>
+        <citation key="eu_access_act-6" type="other">
+          <author>European Parliament</author>
+          <cYear>2019</cYear>
+          <article_title>Directive (EU) 2019/882 [&#x2026;] accessibility requirements for products and services</article_title>
+          <unstructured_citation>European Parliament. Directive (EU) 2019/882 [&#x2026;] accessibility requirements for products and services. Official Journal of the European Union L 151, 2019/882/EU, Apr. 2019. Adopted 17 April 2019; to be transposed by Member States by 28 June 2022 and applicable from 28 June 2025. https://eur-lex.europa.eu/eli/dir/2019/882/oj</unstructured_citation>
+        </citation>
+        <citation key="fischer2021taggedpdf-7" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Fischer, Ulrike</author>
+          <volume>42</volume>
+          <first_page>170</first_page>
+          <cYear>2021</cYear>
+          <doi>10.47397/tb/42-2/tb131fischer-tagpdf</doi>
+          <article_title>On the Road to Tagged PDF: About StructElem, MarkedContent, PDF/A and Squeezed B&#x00E4;rs</article_title>
+          <unstructured_citation>U. Fischer. On the road to tagged PDF: About StructElem, markedcontent, PDF/A and squeezed B&#x00E4;rs. TUGboat 42(2):170&#x2013;173, 2021. https://doi.org/10.47397/tb/42-2/tb131fischer-tagpdf</unstructured_citation>
+        </citation>
+        <citation key="fischer2025tagpdf-8" type="other">
+          <author>Fischer, Ulrike</author>
+          <cYear>2025</cYear>
+          <article_title>tagpdf: A package for experimenting with tagged PDF support in LaTeX</article_title>
+          <unstructured_citation>U. Fischer. tagpdf: A package for experimenting with tagged PDF support in LaTeX. https://ctan.org/pkg/tagpdf, 2025.</unstructured_citation>
+        </citation>
+        <citation key="GVSWeb-9" type="other">
+          <author>Grand Valley State University</author>
+          <cYear>2025</cYear>
+          <article_title>LaTeX: Getting started: Creating Accessible LaTeX Documents</article_title>
+          <unstructured_citation>Grand Valley State University. LaTeX: Getting started: Creating accessible LaTeX documents, 2025. https://libguides.gvsu.edu/LaTeX/accessibility</unstructured_citation>
+        </citation>
+        <citation key="instructureCanvas-10" type="other">
+          <author>Instructure Inc.</author>
+          <cYear>2025</cYear>
+          <article_title>Canvas Learning Management System</article_title>
+          <unstructured_citation>Instructure Inc. Canvas learning management system. https://www.instructure.com/canvas, 2025.</unstructured_citation>
+        </citation>
+        <citation key="knuth1984texbook-11" type="book">
+          <author>Knuth, Donald E.</author>
+          <cYear>1984</cYear>
+          <article_title>The TeXbook</article_title>
+          <unstructured_citation>D.E. Knuth. The TeXbook. Addison-Wesley, 1984.</unstructured_citation>
+        </citation>
+        <citation key="lamport1994latex-12" type="book">
+          <author>Lamport, Leslie</author>
+          <cYear>1994</cYear>
+          <article_title>LaTeX: A Document Preparation System</article_title>
+          <unstructured_citation>L. Lamport. LaTeX: A Document Preparation System. Addison-Wesley, 2nd ed., 1994.</unstructured_citation>
+        </citation>
+        <citation key="larson2023accessiblelatex-13" type="journal_article">
+          <journal_title>Notices of the American Mathematical Society</journal_title>
+          <author>Larson, Eric</author>
+          <volume>70</volume>
+          <first_page>68</first_page>
+          <cYear>2023</cYear>
+          <doi>10.1090/noti2606</doi>
+          <article_title>Making Accessible Documents Using LaTeX</article_title>
+          <unstructured_citation>E. Larson, I. Vogt. Making accessible documents using LaTeX. Notices of the American Mathematical Society, 70(1):68&#x2013;71, 2023. https://doi.org/10.1090/noti2606</unstructured_citation>
+        </citation>
+        <citation key="pandoc-14" type="other">
+          <author>MacFarlane, John</author>
+          <cYear>2006</cYear>
+          <article_title>Pandoc: A universal document converter</article_title>
+          <unstructured_citation>J. MacFarlane. Pandoc: A universal document converter. https://pandoc.org, 2006.</unstructured_citation>
+        </citation>
+        <citation key="mittelbach2024accessible-15" type="conference_paper">
+          <author>Mittelbach, Frank</author>
+          <first_page>1</first_page>
+          <cYear>2024</cYear>
+          <doi>10.1145/3685650.3685670</doi>
+          <volume_title>Proceedings of the ACM Symposium on Document Engineering</volume_title>
+          <article_title>Automatically producing accessible and reusable PDFs with LaTeX</article_title>
+          <unstructured_citation>F. Mittelbach, U. Fischer, et al. Automatically producing accessible and reusable PDFs with LaTeX. In Proceedings of the ACM Symposium on Document Engineering, pp. 1&#x2013;4, San Jose, CA, USA, Aug. 2024. Association for Computing Machinery. https://doi.org/10.1145/3685650.3685670</unstructured_citation>
+        </citation>
+        <citation key="overleaf2025-16" type="other">
+          <author>Overleaf Inc.</author>
+          <cYear>2025</cYear>
+          <article_title>Overleaf Online LaTeX Editor</article_title>
+          <unstructured_citation>Overleaf Inc. Overleaf online LaTeX editor. https://www.overleaf.com, 2025.</unstructured_citation>
+        </citation>
+        <citation key="TagPDFexample-17" type="other">
+          <author>LaTeX Project</author>
+          <cYear>2025</cYear>
+          <article_title>The LaTeX Tagged PDF repository</article_title>
+          <unstructured_citation>LaTeX Project. The LaTeX Tagged PDF repository, 2025. https://latex3.github.io/tagging-project/</unstructured_citation>
+        </citation>
+        <citation key="TagPDFCompat-18" type="other">
+          <author>LaTeX Project</author>
+          <cYear>2025</cYear>
+          <article_title>Tagging Status of LaTeX Packages and Classes</article_title>
+          <unstructured_citation>LaTeX Project. Tagging status of LaTeX packages and classes, 2025. https://latex3.github.io/tagging-project/tagging-status/</unstructured_citation>
+        </citation>
+        <citation key="NewsArticle-19" type="other">
+          <author>Swaak, Taylor</author>
+          <cYear>2024</cYear>
+          <article_title>Colleges Must Revise Millions of Web Pages. It Will Be &#x2018;Painful.&#x2019;</article_title>
+          <unstructured_citation>T. Swaak. Colleges must revise millions of web pages. It will be &#x2018;painful.&#x2019;. https://www.chronicle.com/article/colleges-must-revise-millions-of-web-pages-it-will-be-painful, 2024.</unstructured_citation>
+        </citation>
+        <citation key="USCarWeb-20" type="other">
+          <author>University of South Carolina</author>
+          <cYear>2025</cYear>
+          <article_title>Creating Accessible LaTeX Documents</article_title>
+          <unstructured_citation>University of South Carolina. Creating accessible LaTeX documents, 2025. https://sc.edu/about/offices_and_divisions/digital-accessibility/toolbox/math/latex/index.php</unstructured_citation>
+        </citation>
+        <citation key="WCAG-21" type="other">
+          <author>W3C</author>
+          <cYear>2025</cYear>
+          <article_title>Web Content Accessibility Guidelines (WCAG) 2.1</article_title>
+          <unstructured_citation>W3C. Web content accessibility guidelines (WCAG) 2.1. https://www.w3.org/TR/WCAG21/, 2025.</unstructured_citation>
+        </citation>
+        <citation key="WaltersLaTeXISLAND-22" type="conference_paper">
+          <author>Walters, Peter</author>
+          <cYear>2025</cYear>
+          <volume_title>ISLAND: A Conference on Disability and STEM</volume_title>
+          <article_title>LaTeX: An Accessible Tool for STEM</article_title>
+          <unstructured_citation>P. Walters. LaTeX: An accessible tool for stem. In ISLAND: A Conference on Disability and STEM, West Lafayette, Indiana, 2025. Independence Science. Virtual presentation.</unstructured_citation>
+        </citation>
+        <citation key="wyatt2025advancing-23" type="journal_article">
+          <journal_title>Science Editor</journal_title>
+          <author>Wyatt, Peter</author>
+          <volume>48</volume>
+          <first_page>12</first_page>
+          <cYear>2025</cYear>
+          <article_title>Advancing PDF in Scholarly Publications</article_title>
+          <unstructured_citation>P. Wyatt. Advancing PDF in scholarly publications. Science Editor, 48:12&#x2013;21, Mar. 2025.</unstructured_citation>
+        </citation>
+        <citation key="Panorama-24" type="other">
+          <author>YuJa Inc.</author>
+          <cYear>2025</cYear>
+          <article_title>YuJa Panorama: Digital Accessibility Platform</article_title>
+          <unstructured_citation>YuJa Inc. YuJa panorama: Digital accessibility platform. https://www.yuja.com/panorama, 2025.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Composing equations with <tt>eqnlines</tt></title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Niklas</given_name>
+          <surname>Beisert</surname>
+          <ORCID>https://orcid.org/0000-0002-7280-4214</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>57</first_page>
+        <last_page>63</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145beisert-eqnlines</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145beisert-eqnlines.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="pkg:delimset-1" type="other">
+          <author>Beisert, Niklas</author>
+          <article_title>The delimset package</article_title>
+          <unstructured_citation>N. Beisert. The delimset package. https://ctan.org/pkg/delimset</unstructured_citation>
+        </citation>
+        <citation key="pkg:eqnlines-2" type="other">
+          <author>Beisert, Niklas</author>
+          <article_title>The eqnlines package</article_title>
+          <unstructured_citation>N. Beisert. The eqnlines package. https://ctan.org/pkg/eqnlines</unstructured_citation>
+        </citation>
+        <citation key="xDownes:TB18-3-182-3" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <issn>0896-3207</issn>
+          <author>Downes, Michael</author>
+          <volume>18</volume>
+          <issue>56</issue>
+          <first_page>182</first_page>
+          <cYear>1997</cYear>
+          <article_title>Breaking equations</article_title>
+          <unstructured_citation>M. Downes. Breaking equations. TUGboat 18(3):182&#x2013;194, Sept. 1997. https://tug.org/TUGboat/tb18-3/tb56down.pdf</unstructured_citation>
+        </citation>
+        <citation key="pkg:mathtools-4" type="other">
+          <author>H&#x00f8;gholm, Morten</author>
+          <cYear>2024</cYear>
+          <article_title>The mathtools package</article_title>
+          <unstructured_citation>M. H&#x00f8;gholm, L. Madsen, LaTeX3 Project. The mathtools package, 2024. https://ctan.org/pkg/mathtools</unstructured_citation>
+        </citation>
+        <citation key="pkg:amsmath-5" type="other">
+          <author>LaTeX3 Project</author>
+          <cYear>2025</cYear>
+          <article_title>The amsmath package</article_title>
+          <unstructured_citation>LaTeX3 Project. The amsmath package, 2025. https://ctan.org/pkg/latex-amsmath</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title><tt>ltx-talk</tt>: A class for accessible presentations</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Joseph</given_name>
+          <surname>Wright</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>64</first_page>
+        <last_page>66</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145wright-ltx-talk</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145wright-ltx-talk.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="LaTeXProject2025-1" type="other">
+          <author>LaTeX Project</author>
+          <cYear>2025</cYear>
+          <article_title>The LaTeX Tagged PDF Project</article_title>
+          <unstructured_citation>LaTeX Project. The LaTeX tagged PDF project, 2025. https://latex3.github.io/tagging-project</unstructured_citation>
+        </citation>
+        <citation key="Sturm2025-2" type="other">
+          <author>Sturm, Thomas F.</author>
+          <cYear>2025</cYear>
+          <article_title>tcolorbox</article_title>
+          <unstructured_citation>T.F. Sturm. tcolorbox, 2025. https://ctan.org/pkg/tcolorbox</unstructured_citation>
+        </citation>
+        <citation key="Wright2025-3" type="other">
+          <author>Tantau, Till</author>
+          <cYear>2025</cYear>
+          <article_title>The beamer class</article_title>
+          <unstructured_citation>T. Tantau, V. Mileti&#x0107;, et al. The beamer class, 2025. https://ctan.org/pkg/beamer</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Moloch: A minimalist, feature-rich Beamer theme</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Johan</given_name>
+          <surname>Larsson</surname>
+          <ORCID>https://orcid.org/0000-0002-4029-5945</ORCID>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <surname>samcarter</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>67</first_page>
+        <last_page>74</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145larsson-moloch</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145larsson-moloch.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="allaire:2025-1" type="software">
+          <author>Allaire, J.J.</author>
+          <cYear>2025</cYear>
+          <doi>10.5281/zenodo.5960048</doi>
+          <article_title>Quarto</article_title>
+          <unstructured_citation>J. Allaire, C. Teague, et al. Quarto, Sept. 2025. https://doi.org/10.5281/zenodo.5960048</unstructured_citation>
+        </citation>
+        <citation key="carl2013-2" type="other">
+          <journal_title>Tradeblotter</journal_title>
+          <author>Carl, Peter</author>
+          <cYear>2013</cYear>
+          <article_title>The Paul Tol 21-Color Salute</article_title>
+          <unstructured_citation>P. Carl. The Paul Tol 21-color salute. Tradeblotter, Feb. 2013. https://tradeblotter.wordpress.com/2013/02/28/the-paul-tol-21-color-salute</unstructured_citation>
+        </citation>
+        <citation key="catppuccin2026-3" type="other">
+          <journal_title>Catppuccin</journal_title>
+          <author>Catppuccin organization</author>
+          <cYear>2026</cYear>
+          <article_title>Catppuccin color palettes</article_title>
+          <unstructured_citation>Catppuccin organization. Catppuccin color palettes, 2026. https://catppuccin.com</unstructured_citation>
+        </citation>
+        <citation key="dunn:2025-4" type="software">
+          <author>Dunn, Brian</author>
+          <article_title>The lwarp package</article_title>
+          <unstructured_citation>B. Dunn. The lwarp package, version 0.920, 2025-12-10. https://ctan.org/pkg/lwarp</unstructured_citation>
+        </citation>
+        <citation key="feuersanger:2025-5" type="software">
+          <author>Feuers&#x00E4;nger, Christian</author>
+          <article_title>The pgf package</article_title>
+          <unstructured_citation>C. Feuers&#x00E4;nger, H. Menke, et al. The pgf package, version 3.1.11a, 2025-08-29. https://ctan.org/pkg/pgf</unstructured_citation>
+        </citation>
+        <citation key="pgfplots-6" type="software">
+          <author>Feuers&#x00E4;nger, Christian</author>
+          <article_title>The pgfplots package</article_title>
+          <unstructured_citation>C. Feuers&#x00E4;nger, H. Menke, PGF/TikZ team. The pgfplots package, version 1.18.2, 2025-08-14. http://pgfplots.sourceforge.net</unstructured_citation>
+        </citation>
+        <citation key="latinmodern-7" type="software">
+          <author>Jackowski, Bogus&#x0142;aw</author>
+          <article_title>The lm package</article_title>
+          <unstructured_citation>B. Jackowski, J.M. Nowacki. The lm package, version 2.005, 2021. https://www.gust.org.pl/projects/e-foundry/latin-modern</unstructured_citation>
+        </citation>
+        <citation key="lelong:2018-8" type="software">
+          <author>Lelong, J&#x00E9;r&#x00F4;me</author>
+          <article_title>The appendixnumberbeamer package</article_title>
+          <unstructured_citation>J. Lelong. The appendixnumberbeamer package, version 1.2, 2018. https://github.com/jlelong/appendixnumberbeamer</unstructured_citation>
+        </citation>
+        <citation key="macfarlane:2025-9" type="software">
+          <author>MacFarlane, John</author>
+          <article_title>Pandoc</article_title>
+          <unstructured_citation>J. MacFarlane, A. Krewinkel, J. Rosenthal. Pandoc. https://github.com/jgm/pandoc</unstructured_citation>
+        </citation>
+        <citation key="mittelbach:2025-10" type="software">
+          <author>Mittelbach, Frank</author>
+          <article_title>The docstrip package</article_title>
+          <unstructured_citation>F. Mittelbach, LaTeX Project Team. The docstrip package, version 2.6c, 2025-09-23. https://ctan.org/pkg/docstrip</unstructured_citation>
+        </citation>
+        <citation key="mittelbach:2014-11" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <issn>0896-3207</issn>
+          <author>Mittelbach, Frank</author>
+          <volume>35</volume>
+          <issue>111</issue>
+          <first_page>287</first_page>
+          <cYear>2014</cYear>
+          <article_title>l3build&#x2014;A modern Lua test suite for TeX programming</article_title>
+          <unstructured_citation>F. Mittelbach, W. Robertson, LaTeX3 team. l3build&#x2014;A modern Lua test suite for TeX programming. TUGboat 35(3):287&#x2013;293, 2014. https://tug.org/TUGboat/tb35-3/tb111mitt-l3build.pdf</unstructured_citation>
+        </citation>
+        <citation key="latexproject:2025-12" type="software">
+          <author>LaTeX Project Team</author>
+          <article_title>The fontspec package</article_title>
+          <unstructured_citation>LaTeX Project Team, W. Robertson. The fontspec package, version 2.9g, 2025-09-29. https://ctan.org/pkg/fontspec</unstructured_citation>
+        </citation>
+        <citation key="samcarter:2025-13" type="software">
+          <author>samcarter</author>
+          <article_title>The Beamer package</article_title>
+          <unstructured_citation>samcarter, J. Wright, et al. The Beamer package, version 3.76, 2025-08-13. https://ctan.org/pkg/beamer</unstructured_citation>
+        </citation>
+        <citation key="tantau:2007-14" type="software">
+          <author>Tantau, Till</author>
+          <article_title>The pgfkeys package</article_title>
+          <unstructured_citation>T. Tantau. The pgfkeys package, version 2007-10-08, 2007-10-08. https://ctan.org/pkg/pgfkeys</unstructured_citation>
+        </citation>
+        <citation key="vogelgesang:2017-15" type="software">
+          <author>Vogelgesang, Matthias</author>
+          <article_title>The beamertheme-metropolis package</article_title>
+          <unstructured_citation>M. Vogelgesang. The beamertheme-metropolis package, version 1.2, 2017-01-23. https://ctan.org/pkg/beamertheme-metropolis</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>A security protocol notation and LaTeX package: Aspen</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Anders</given_name>
+          <surname>Andersen</surname>
+          <ORCID>https://orcid.org/0000-0003-3014-8025</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>75</first_page>
+        <last_page>80</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145andersen-aspen</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145andersen-aspen.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="abadi1999a-1" type="journal_article">
+          <journal_title>Information and Computation</journal_title>
+          <author>Abadi, Mart&#x00ED;n</author>
+          <volume>148</volume>
+          <first_page>1</first_page>
+          <cYear>1999</cYear>
+          <doi>10.1006/inco.1998.2740</doi>
+          <article_title>A Calculus for Cryptographic Protocols: The Spi Calculus</article_title>
+          <unstructured_citation>M. Abadi, A.D. Gordon. A calculus for cryptographic protocols: The Spi calculus. Information and Computation, 148:1&#x2013;70, 1999. https://doi.org/10.1006/inco.1998.2740</unstructured_citation>
+        </citation>
+        <citation key="andersen2026a-2" type="report">
+          <author>Andersen, Anders</author>
+          <cYear>2026</cYear>
+          <article_title>Aspen: A security protocol notation</article_title>
+          <unstructured_citation>A. Andersen. Aspen: A security protocol notation. Technical report, UiT The Arctic University of Norway, Mar. 2026. https://www.pg12.org/dist/texmf/tex/latex/aspen/aspen-doc-202603.pdf</unstructured_citation>
+        </citation>
+        <citation key="anderson2020a-3" type="book">
+          <author>Anderson, Ross</author>
+          <cYear>2020</cYear>
+          <isbn>978-1-119-64281-7</isbn>
+          <article_title>Security Engineering: A Guide to Building Dependable Distributed Systems</article_title>
+          <unstructured_citation>R. Anderson. Security Engineering: A Guide to Building Dependable Distributed Systems. John Wiley &#x0026; Sons, 3rd ed., 2020. https://www.cl.cam.ac.uk/archive/rja14/book.html</unstructured_citation>
+        </citation>
+        <citation key="briais2005a-4" type="conference_paper">
+          <author>Briais, S&#x00E9;bastien</author>
+          <volume>3705</volume>
+          <first_page>163</first_page>
+          <cYear>2005</cYear>
+          <doi>10.1007/11580850_10</doi>
+          <isbn>978-3-540-30007-6</isbn>
+          <series_title>Lecture Notes in Computer Science</series_title>
+          <volume_title>Trustworthy Global Computing, International Symposium, TGC 2005</volume_title>
+          <article_title>A Formal Semantics for Protocol Narrations</article_title>
+          <unstructured_citation>S. Briais, U. Nestmann. A formal semantics for protocol narrations. In Trustworthy Global Computing, International Symposium, TGC 2005, R. De Nicola, D. Sangiorgi, eds., vol. 3705 of Lecture Notes in Computer Science, pp. 163&#x2013;181, Edinburgh, UK, Apr. 2005. Springer-Verlag. https://doi.org/10.1007/11580850_10</unstructured_citation>
+        </citation>
+        <citation key="burrows1990a-5" type="journal_article">
+          <journal_title>ACM Transactions on Computer Systems</journal_title>
+          <author>Burrows, Michael</author>
+          <volume>8</volume>
+          <first_page>18</first_page>
+          <cYear>1990</cYear>
+          <doi>10.1145/77648.77649</doi>
+          <article_title>A Logic of Authentication</article_title>
+          <unstructured_citation>M. Burrows, M. Abadi, R. Needham. A logic of authentication. ACM Transactions on Computer Systems, 8(1):18&#x2013;36, Feb. 1990. https://doi.org/10.1145/77648.77649</unstructured_citation>
+        </citation>
+        <citation key="chappell1999a-6" type="journal_article">
+          <journal_title>Microsoft System Journal</journal_title>
+          <author>Chappell, David</author>
+          <cYear>1999</cYear>
+          <article_title>Exploring Kerberos, the Protocol for Distributed Security in Windows 2000</article_title>
+          <unstructured_citation>D. Chappell. Exploring Kerberos, the protocol for distributed security in Windows 2000. Microsoft System Journal, Aug. 1999. https://web.archive.org/web/20040707171543/http://www.microsoft.com/msj/0899/kerberos/kerberos.aspx</unstructured_citation>
+        </citation>
+        <citation key="needham1978a-7" type="journal_article">
+          <journal_title>Communications of the ACM</journal_title>
+          <author>Needham, Roger</author>
+          <volume>21</volume>
+          <first_page>993</first_page>
+          <cYear>1978</cYear>
+          <doi>10.1145/359657.359659</doi>
+          <article_title>Using encryption for authentication in large networks of computers</article_title>
+          <unstructured_citation>R. Needham, M. Schroeder. Using encryption for authentication in large networks of computers. Communications of the ACM, 21(12):993&#x2013;999, Dec. 1978. https://doi.org/10.1145/359657.359659</unstructured_citation>
+        </citation>
+        <citation key="steiner1988a-8" type="conference_paper">
+          <author>Steiner, Jennifer G.</author>
+          <first_page>191</first_page>
+          <cYear>1988</cYear>
+          <volume_title>Proceedings of Usenix Winter Conference 1988</volume_title>
+          <article_title>Kerberos: An Authentication Service for Open Networks Systems</article_title>
+          <unstructured_citation>J.G. Steiner, C. Neuman, J. Schiller. Kerberos: An authentication service for open networks systems. In Proceedings of Usenix Winter Conference 1988, pp. 191&#x2013;202, Feb. 1988. https://www.cs.unc.edu/~fabian/course_papers/steiner_neuman.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Publishing LaTeX documents on the web using TeX4ht and GitHub Actions</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Michal</given_name>
+          <surname>Hoftich</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>81</first_page>
+        <last_page>88</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145hoftich-ghactions</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145hoftich-ghactions.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="cookiecutter-1" type="web_resource">
+          <cYear>2025</cYear>
+          <article_title>Cookiecutter: A command-line utility that creates projects from project templates</article_title>
+          <unstructured_citation>Cookiecutter: A command-line utility that creates projects from project templates, 2025. https://github.com/cookiecutter/cookiecutter</unstructured_citation>
+        </citation>
+        <citation key="github-actions-quickstart-2" type="web_resource">
+          <author>GitHub Docs</author>
+          <cYear>2025</cYear>
+          <article_title>Quickstart for GitHub Actions</article_title>
+          <unstructured_citation>GitHub Docs. Quickstart for GitHub Actions, 2025. https://docs.github.com/en/actions/get-started/quickstart</unstructured_citation>
+        </citation>
+        <citation key="hoftich2019tex4ht-3" type="journal_article">
+          <journal_title>TUGboat</journal_title>
+          <author>Hoftich, Michal</author>
+          <volume>40</volume>
+          <first_page>76</first_page>
+          <cYear>2019</cYear>
+          <article_title>TeX4ht: LaTeX to Web publishing</article_title>
+          <unstructured_citation>M. Hoftich. TeX4ht: LaTeX to Web publishing. TUGboat 40(1):76&#x2013;91, 2019. https://tug.org/TUGboat/tb40-1/tb124hoftich-make4ht.pdf</unstructured_citation>
+        </citation>
+        <citation key="hoftich:tex4ht-blog-4" type="web_resource">
+          <author>Hoftich, Michal</author>
+          <cYear>2025</cYear>
+          <article_title>Testblog: Blogging template for TeX4ht</article_title>
+          <unstructured_citation>M. Hoftich. Testblog: Blogging template for TeX4ht, 2025. GitHub repository. https://github.com/michal-h21/testblog</unstructured_citation>
+        </citation>
+        <citation key="hoftich:tex4ht-booksite-5" type="web_resource">
+          <author>Hoftich, Michal</author>
+          <cYear>2025</cYear>
+          <article_title>tex4ht-booksite: Template for web versions of LaTeX books</article_title>
+          <unstructured_citation>M. Hoftich. tex4ht-booksite: Template for web versions of LaTeX books, 2025. GitHub repository. https://github.com/michal-h21/tex4ht-booksite</unstructured_citation>
+        </citation>
+        <citation key="hoftich:tex4ht-presentation-6" type="web_resource">
+          <author>Hoftich, Michal</author>
+          <cYear>2025</cYear>
+          <article_title>tex4ht-presentation: Template for web versions of LaTeX Beamer presentations</article_title>
+          <unstructured_citation>M. Hoftich. tex4ht-presentation: Template for web versions of LaTeX Beamer presentations, 2025. GitHub repository. https://github.com/michal-h21/tex4ht-presentation</unstructured_citation>
+        </citation>
+        <citation key="jekyllrb-7" type="web_resource">
+          <cYear>2025</cYear>
+          <article_title>Jekyll: Simple, blog-aware, static sites</article_title>
+          <unstructured_citation>Jekyll: Simple, blog-aware, static sites, 2025. https://jekyllrb.com</unstructured_citation>
+        </citation>
+        <citation key="peaceiris:actions-gh-pages-8" type="web_resource">
+          <author>Ueda, Shohei</author>
+          <cYear>2025</cYear>
+          <article_title>actions-gh-pages: GitHub Actions for GitHub Pages (deploy static files)</article_title>
+          <unstructured_citation>S. Ueda, Peaceiris. actions-gh-pages: GitHub Actions for GitHub Pages (deploy static files), 2025. GitHub repository, MIT license. https://github.com/peaceiris/actions-gh-pages</unstructured_citation>
+        </citation>
+        <citation key="xu-cheng:texlive-action-9" type="web_resource">
+          <author>Xu-Cheng</author>
+          <cYear>2025</cYear>
+          <article_title>texlive-action: GitHub Action to run arbitrary commands in a TeXLive environment</article_title>
+          <unstructured_citation>Xu-Cheng. texlive-action: GitHub Action to run arbitrary commands in a texlive environment, 2025. GitHub repository, MIT license. https://github.com/xu-cheng/texlive-action</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Mathematical notation in REDCap online data collection instruments</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Travis</given_name>
+          <surname>Stenborg</surname>
+          <ORCID>https://orcid.org/0000-0002-2693-9628</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>89</first_page>
+        <last_page>90</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145stenborg-redcap</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145stenborg-redcap.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Behrendt:2025:HWU-1" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Behrendt, Doris</author>
+          <volume>46</volume>
+          <issue>143</issue>
+          <first_page>206</first_page>
+          <cYear>2025</cYear>
+          <doi>10.47397/tb/46-2/tb143behrendt-cryptool</doi>
+          <article_title>How we use LaTeX in the CrypTool project</article_title>
+          <unstructured_citation>D. Behrendt, B. Busse. How we use LaTeX in the CrypTool project. TUGboat 46(2):206&#x2013;212, 2025. https://doi.org/10.47397/tb/46-2/tb143behrendt-cryptool</unstructured_citation>
+        </citation>
+        <citation key="Bellis:CB38-2-e14190-2" type="journal_article">
+          <journal_title>Conserv. Biol.</journal_title>
+          <author>Bellis, Joe</author>
+          <volume>38</volume>
+          <first_page>e14190</first_page>
+          <cYear>2024</cYear>
+          <doi>10.1111/cobi.14190</doi>
+          <article_title>Identifying predictors of translocation success in rare plant species</article_title>
+          <unstructured_citation>J. Bellis, O. Osazuwa-Peters, et al. Identifying predictors of translocation success in rare plant species. Conserv. Biol., 38(2):e14190, 2024. https://doi.org/10.1111/cobi.14190</unstructured_citation>
+        </citation>
+        <citation key="Carlisle:W3C2014-MathML-3-3" type="other">
+          <author>Carlisle, David</author>
+          <cYear>2014</cYear>
+          <article_title>Mathematical Markup Language (MathML) Version 3.0 2nd Edition</article_title>
+          <unstructured_citation>D. Carlisle, P. Ion, R. Miner, eds. Mathematical Markup Language (MathML) Version 3.0 2nd Edition. W3C Recommendation, 2014. https://www.w3.org/TR/MathML3/</unstructured_citation>
+        </citation>
+        <citation key="Cervone:NAMS59-2-3712-4" type="journal_article">
+          <journal_title>Notices Amer. Math. Soc.</journal_title>
+          <author>Cervone, Davide</author>
+          <volume>59</volume>
+          <first_page>312</first_page>
+          <cYear>2012</cYear>
+          <article_title>MathJax: A Platform for Mathematics on the Web</article_title>
+          <unstructured_citation>D. Cervone. MathJax: A platform for mathematics on the web. Notices Amer. Math. Soc., 59(2):312&#x2013;316, 2012. https://www.ams.org/notices/201202/rtx120200312p.pdf</unstructured_citation>
+        </citation>
+        <citation key="Cheng:JAMIA32-5-1149-5" type="journal_article">
+          <journal_title>J. Am. Med. Inform. Assoc.</journal_title>
+          <issn>1527-974X</issn>
+          <author>Cheng, Alex C</author>
+          <volume>32</volume>
+          <first_page>1149</first_page>
+          <cYear>2025</cYear>
+          <doi>10.1093/jamia/ocaf073</doi>
+          <article_title>Supporting rapid innovation in research data capture and management: the REDCap external module framework</article_title>
+          <unstructured_citation>A.C. Cheng, S.N. Duda, et al. Supporting rapid innovation in research data capture and management: the REDCap external module framework. J. Am. Med. Inform. Assoc., 32(7):1149&#x2013;1156, May 2025. https://doi.org/10.1093/jamia/ocaf073</unstructured_citation>
+        </citation>
+        <citation key="Dhillon:CBJ-2016-6" type="book">
+          <author>Dhillon, Vikram</author>
+          <cYear>2016</cYear>
+          <doi>10.1007/978-1-4842-1464-0</doi>
+          <isbn>9781484214657</isbn>
+          <article_title>Creating Blogs with Jekyll</article_title>
+          <unstructured_citation>V. Dhillon. Creating Blogs with Jekyll. Apress, 2016. https://doi.org/10.1007/978-1-4842-1464-0</unstructured_citation>
+        </citation>
+        <citation key="Flynn:TB26-1-66-7" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Flynn, Peter</author>
+          <volume>26</volume>
+          <issue>82</issue>
+          <first_page>66</first_page>
+          <cYear>2005</cYear>
+          <article_title>LaTeX on the Web</article_title>
+          <unstructured_citation>P. Flynn. LaTeX on the Web. TUGboat 26(1):66&#x2013;67, 2005. https://tug.org/TUGboat/tb26-1/flynn.pdf</unstructured_citation>
+        </citation>
+        <citation key="Garcia:HIR27-4-341-8" type="journal_article">
+          <journal_title>Healthc. Inform. Res.</journal_title>
+          <author>Garcia, Klauss Kleydmann Sabino</author>
+          <volume>27</volume>
+          <first_page>341</first_page>
+          <cYear>2021</cYear>
+          <doi>10.4258/hir.2021.27.4.341</doi>
+          <article_title>Research Development Using REDCap Software</article_title>
+          <unstructured_citation>K.K.S. Garcia, A.A. Amaral. Research development using REDCap software. Healthc. Inform. Res., 27(4):341&#x2013;349, 2021. https://doi.org/10.4258/hir.2021.27.4.341</unstructured_citation>
+        </citation>
+        <citation key="Harris:JBI42-2-377-9" type="journal_article">
+          <issn>1532-0464</issn>
+          <author>Harris, Paul A.</author>
+          <volume>42</volume>
+          <first_page>377</first_page>
+          <cYear>2009</cYear>
+          <doi>10.1016/j.jbi.2008.08.010</doi>
+          <article_title>Research electronic data capture (REDCap)&#x2014;A metadata-driven methodology and workflow process for providing translational research informatics support</article_title>
+          <unstructured_citation>P.A. Harris, R. Taylor, et al. Research electronic data capture (REDCap)&#x2014;A metadata-driven methodology and workflow process for providing translational research informatics support. J. Biomed. Inform., 42(2):377&#x2013;381, 2009. https://doi.org/10.1016/j.jbi.2008.08.010</unstructured_citation>
+        </citation>
+        <citation key="Harris:JBI95-103208-10" type="journal_article">
+          <issn>1532-0464</issn>
+          <author>Harris, Paul A.</author>
+          <volume>95</volume>
+          <first_page>103208</first_page>
+          <cYear>2019</cYear>
+          <doi>10.1016/j.jbi.2019.103208</doi>
+          <article_title>The REDCap consortium: Building an international community of software platform partners</article_title>
+          <unstructured_citation>P.A. Harris, R. Taylor, et al. The REDCap consortium: Building an international community of software platform partners. J. Biomed. Inform., 95:103208, 2019. https://doi.org/10.1016/j.jbi.2019.103208</unstructured_citation>
+        </citation>
+        <citation key="Hempstead:Anm11-7-2007-11" type="journal_article">
+          <journal_title>Animals</journal_title>
+          <issn>2076-2615</issn>
+          <author>Hempstead, Melissa N.</author>
+          <volume>11</volume>
+          <cYear>2021</cYear>
+          <doi>10.3390/ani11072007</doi>
+          <article_title>Health and Welfare Survey of 30 Dairy Goat Farms in the Midwestern United States</article_title>
+          <unstructured_citation>M.N. Hempstead, T.M. Lindquist, et al. Health and welfare survey of 30 dairy goat farms in the midwestern United States. Animals, 11(7), 2021. https://doi.org/10.3390/ani11072007</unstructured_citation>
+        </citation>
+        <citation key="Ion:TB20-3-167-12" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Ion, Patrick D. F.</author>
+          <volume>20</volume>
+          <issue>64</issue>
+          <first_page>167</first_page>
+          <cYear>1999</cYear>
+          <article_title>MathML: A Key to Math on the Web</article_title>
+          <unstructured_citation>P.D.F. Ion. MathML: A key to math on the web. TUGboat 20(3):167&#x2013;175, Sept. 1999. https://tug.org/TUGboat/tb20-3/tb64ion.pdf</unstructured_citation>
+        </citation>
+        <citation key="Mwangala:AJER4-17-1238-13" type="journal_article">
+          <journal_title>Am. J. Educ. Res.</journal_title>
+          <issn>2327-6150</issn>
+          <author>Mwangala, Kasimba Phebby</author>
+          <volume>4</volume>
+          <first_page>1238</first_page>
+          <cYear>2016</cYear>
+          <article_title>Physico-mathematical Conceptual Difficulties among First Year Students Learning Introductory University Physics</article_title>
+          <unstructured_citation>K.P. Mwangala, O. Shumba. Physico-mathematical conceptual difficulties among first year students learning introductory university physics. Am. J. Educ. Res., 4(17):1238&#x2013;1244, 2016. https://pubs.sciepub.com/education/4/17/8</unstructured_citation>
+        </citation>
+        <citation key="Pan:ETRI38-2-376-14" type="journal_article">
+          <journal_title>ETRI J.</journal_title>
+          <author>Pan, Jinkun</author>
+          <volume>38</volume>
+          <first_page>376</first_page>
+          <cYear>2016</cYear>
+          <doi>10.4218/etrij.16.0115.0570</doi>
+          <article_title>Taint Inference for Cross-Site Scripting in Context of URL Rewriting and HTML Sanitization</article_title>
+          <unstructured_citation>J. Pan, X. Mao, W. Li. Taint inference for cross-site scripting in context of URL rewriting and HTML sanitization. ETRI J., 38(2):376&#x2013;386, 2016. https://doi.org/10.4218/etrij.16.0115.0570</unstructured_citation>
+        </citation>
+        <citation key="Rezniczek:JSInj-2.3.1-15" type="software">
+          <author>Rezniczek, G&#x00fc;nther A.</author>
+          <cYear>2025</cYear>
+          <doi>10.5281/zenodo.15411380</doi>
+          <article_title>REDCap JavaScript Injector</article_title>
+          <unstructured_citation>G.A. Rezniczek. REDCap JavaScript injector, May 2025. https://doi.org/10.5281/zenodo.15411380</unstructured_citation>
+        </citation>
+        <citation key="Harris:Env12-10-348-16" type="journal_article">
+          <journal_title>Environments</journal_title>
+          <issn>2076-3298</issn>
+          <author>Young, Bonnie N.</author>
+          <volume>12</volume>
+          <cYear>2025</cYear>
+          <doi>10.3390/environments12100348</doi>
+          <article_title>Particulate Matter Pollution in an Agricultural Setting: A Community-Engaged Research Study</article_title>
+          <unstructured_citation>B.N. Young, J. Tryner, et al. Particulate matter pollution in an agricultural setting: A community-engaged research study. Environments, 12(10), 2025. https://doi.org/10.3390/environments12100348</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>From footage to film: Recording and editing the Czech premiere of <i>Fantasia Apocalyptica</i></title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>V&#xed;t</given_name>
+          <surname>Star&#xfd; Novotn&#xfd;</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Petr</given_name>
+          <surname>Sojka</surname>
+          <ORCID>https://orcid.org/0000-0002-5768-4007</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>91</first_page>
+        <last_page>99</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145starynovotny-fantasia</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145starynovotny-fantasia.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="lemma-1" type="web_resource">
+          <author>LEMMA</author>
+          <article_title>Faculty of Informatics Film Festival</article_title>
+          <unstructured_citation>LEMMA. Faculty of Informatics film festival. https://www.muni.cz/en/students/join-the-community/student-clubs-associations/lemma-filmovy-festival-fi-mu</unstructured_citation>
+        </citation>
+        <citation key="aegisub-2" type="web_resource">
+          <article_title>Aegisub: Advanced Subtitle Editor</article_title>
+          <unstructured_citation>Aegisub: Advanced subtitle editor. https://aegisub.org</unstructured_citation>
+        </citation>
+        <citation key="edsward2016church-3" type="web_resource">
+          <author>edschaefer</author>
+          <article_title>ChurchBellKonstanz.wav: Church bells of the Minster in Constance, Germany</article_title>
+          <unstructured_citation>edschaefer. ChurchBellKonstanz.wav: Church bells of the Minster in Constance, Germany. https://freesound.org/people/edsward/sounds/341866</unstructured_citation>
+        </citation>
+        <citation key="fimu2020english-4" type="web_resource">
+          <author>Faculty of Informatics, Masaryk University</author>
+          <cYear>2020</cYear>
+          <article_title>Fantasia Apocalyptica: Czech premiere</article_title>
+          <unstructured_citation>Faculty of Informatics, Masaryk University. Fantasia Apocalyptica: Czech premiere, 2020. https://youtu.be/wk7dEKMPP68</unstructured_citation>
+        </citation>
+        <citation key="ffmpeg-5" type="web_resource">
+          <article_title>FFmpeg: A complete, cross-platform solution to record, convert and stream audio and video</article_title>
+          <unstructured_citation>FFmpeg: A complete, cross-platform solution to record, convert and stream audio and video. https://ffmpeg.org/</unstructured_citation>
+        </citation>
+        <citation key="ffmpeg-concat-6" type="web_resource">
+          <article_title>FFmpeg: Concatenating media files</article_title>
+          <unstructured_citation>FFmpeg: Concatenating media files. https://trac.ffmpeg.org/wiki/Concatenate</unstructured_citation>
+        </citation>
+        <citation key="imagemagick-7" type="web_resource">
+          <article_title>ImageMagick: Mastering Digital Image Alchemy</article_title>
+          <unstructured_citation>ImageMagick: Mastering digital image alchemy. https://imagemagick.org/</unstructured_citation>
+        </citation>
+        <citation key="knuth2023fantasia-8" type="web_resource">
+          <author>Knuth, Donald</author>
+          <article_title>Fantasia Apocalyptica</article_title>
+          <unstructured_citation>D. Knuth. Fantasia Apocalyptica. https://www-cs-faculty.stanford.edu/~knuth/fant.html</unstructured_citation>
+        </citation>
+        <citation key="knuth2018fantasia-9" type="book">
+          <author>Knuth, Donald</author>
+          <cYear>2018</cYear>
+          <isbn>978-1684000449</isbn>
+          <article_title>Fantasia Apocalyptica Illustrated</article_title>
+          <unstructured_citation>D. Knuth, D. Bibby. Fantasia Apocalyptica Illustrated. Center for the Study of Language and Information, Stanford, 2018. https://web.stanford.edu/group/cslipublications/cslipublications/site/9781684000449.shtml</unstructured_citation>
+        </citation>
+        <citation key="luptak2019fantasia-10" type="journal_article">
+          <journal_title>Zpravodaj</journal_title>
+          <issn>1211-6661</issn>
+          <author>Lupt&#x00E1;k, D&#x00E1;vid</author>
+          <volume>29</volume>
+          <first_page>11</first_page>
+          <cYear>2019</cYear>
+          <doi>10.5300/2019-1-4/11</doi>
+          <article_title>Fantasia Apocalyptica: &#x010C;esk&#x00E1; premi&#x00E9;ra [Fantasia Apocalyptica: The Czech premiere]</article_title>
+          <unstructured_citation>D. Lupt&#x00E1;k. Fantasia Apocalyptica: &#x010C;esk&#x00E1; premi&#x00E9;ra [Fantasia Apocalyptica: The Czech premiere]. Zpravodaj, 29(1&#x2013;4):11&#x2013;18, 2019. https://doi.org/10.5300/2019-1-4/11</unstructured_citation>
+        </citation>
+        <citation key="morland2018fantasia-11" type="web_resource">
+          <author>Morland, Isaac</author>
+          <cYear>2018</cYear>
+          <article_title>Fantasia Apocalyptica</article_title>
+          <unstructured_citation>I. Morland. Fantasia Apocalyptica, 2018. https://www-cs-faculty.stanford.edu/~knuth/fant-screen2-texts.pdf</unstructured_citation>
+        </citation>
+        <citation key="xSojka:2017:TSJ-12" type="journal_article">
+          <issn>0896-3207</issn>
+          <author>Sojka, Petr</author>
+          <volume>38</volume>
+          <issue>119</issue>
+          <first_page>175</first_page>
+          <cYear>2017</cYear>
+          <article_title>TeX in Schools? Just Say Yes: The use of TeX at the Faculty of Informatics, Masaryk Univ.</article_title>
+          <unstructured_citation>P. Sojka, V. Novotn&#x00FD;. TeX in schools? Just say yes: The use of TeX at the Faculty of Informatics, Masaryk Univ. TUGboat 38(2):175&#x2013;184, 2017. https://tug.org/TUGboat/tb38-2/tb119sojka.pdf</unstructured_citation>
+        </citation>
+        <citation key="starynovotny2024priprava-13" type="journal_article">
+          <journal_title>Zpravodaj</journal_title>
+          <issn>1211-6661</issn>
+          <author>Star&#x00FD; Novotn&#x00FD;, V&#x00ED;t</author>
+          <volume>34</volume>
+          <first_page>7</first_page>
+          <cYear>2024</cYear>
+          <doi>10.5300/2024-1-4/7</doi>
+          <article_title>P&#x0159;&#x00ED;prava videoz&#x00E1;znamu &#x010D;esk&#x00E9; premi&#x00E9;ry multimedi&#x00E1;ln&#x00ED;ho d&#x00ed;la ,,Fantasia Apocalyptica&#x201c; [Recording the Czech premiere of the &#x201c;Fantasia Apocalyptica&#x201d; multimedia work]</article_title>
+          <unstructured_citation>V. Star&#x00FD; Novotn&#x00FD;. P&#x0159;&#x00ED;prava videoz&#x00E1;znamu &#x010D;esk&#x00E9; premi&#x00E9;ry multimedi&#x00E1;ln&#x00ED;ho d&#x00ed;la ,,Fantasia Apocalyptica&#x201c; [Recording the Czech premiere of the &#x201c;Fantasia Apocalyptica&#x201d; multimedia work]. Zpravodaj, 34(1&#x2013;4):7&#x2013;27, 2024. https://doi.org/10.5300/2024-1-4/7</unstructured_citation>
+        </citation>
+        <citation key="enable-kerning-by-default-14" type="web_resource">
+          <author>Star&#x00fd; Novotn&#x00fd;, V&#x00ed;t</author>
+          <article_title>Enable font kerning by default</article_title>
+          <unstructured_citation>V. Star&#x00fd; Novotn&#x00fd;. Enable font kerning by default. https://github.com/Aegisub/Aegisub/issues/164</unstructured_citation>
+        </citation>
+        <citation key="szaniszlo2020dva-15" type="journal_article">
+          <journal_title>Zpravodaj</journal_title>
+          <issn>1211-6661</issn>
+          <author>Szaniszlo, Tom&#x00E1;&#x0161;</author>
+          <volume>30</volume>
+          <first_page>64</first_page>
+          <cYear>2020</cYear>
+          <doi>10.5300/2020-1-2/64</doi>
+          <article_title>Dva bloky ot&#x00E1;zok a odpoved&#x00ED; od Donalda Knutha na FI MU [Two Questions and Answer Sessions by Donald Knuth at FI MU]</article_title>
+          <unstructured_citation>T. Szaniszlo. Dva bloky ot&#x00E1;zok a odpoved&#x00ED; od Donalda Knutha na FI MU [Two questions and answer sessions by Donald Knuth at FI MU]. Zpravodaj, 30(1&#x2013;2):64&#x2013;97, 2020. https://doi.org/10.5300/2020-1-2/64</unstructured_citation>
+        </citation>
+        <citation key="szaniszlo2021two-16" type="journal_article">
+          <journal_title>MAPS</journal_title>
+          <author>Szaniszlo, Tom&#x00E1;&#x0161;</author>
+          <volume>51</volume>
+          <first_page>40</first_page>
+          <cYear>2021</cYear>
+          <article_title>Two Questions and Answer Sessions by Donald Knuth at FI MU</article_title>
+          <unstructured_citation>T. Szaniszlo. Two questions and answer sessions by Donald Knuth at FI MU. MAPS, 51(1):40&#x2013;64, 2021. https://ntg.nl/maps/51/08.pdf</unstructured_citation>
+        </citation>
+        <citation key="waifu2x-17" type="web_resource">
+          <article_title>Waifu2x: Image Super-Resolution for Anime-Style Art</article_title>
+          <unstructured_citation>Waifu2x: Image super-resolution for anime-style art. https://github.com/nagadomi/waifu2x</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>L-systems: Turtle graphics with MetaPost and Lua</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Mikael P.</given_name>
+          <surname>Sundqvist</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>100</first_page>
+        <last_page>111</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145hagen-lsystems</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145hagen-lsystems.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Looseness processing costs</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>112</first_page>
+        <last_page>113</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145hagen-looseness</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145hagen-looseness.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Nodes and other neat old features</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>114</first_page>
+        <last_page>118</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145hagen-nodes</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145hagen-nodes.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Baseline grid typesetting with plain TeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Udo</given_name>
+          <surname>Wermuth</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>119</first_page>
+        <last_page>134</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145wermuth-grid</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145wermuth-grid.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="citeRB-1">
+          <unstructured_citation>Robert Bringhurst, The Elements of Typographic Style, 4th edition (v.4.2), Seattle, Washington: Hartley &#x0026; Marks, 2016.</unstructured_citation>
+        </citation>
+        <citation key="citeFJ-2">
+          <unstructured_citation>Friedrich Forssman &#x0026; Ralf de Jong, Detailtypographie, 3rd edition, Mainz, Germany: Verlag Hermann Schmidt, 2004.</unstructured_citation>
+        </citation>
+        <citation key="citeCTvA-3">
+          <unstructured_citation>Donald E. Knuth, The TeXbook, Volume A of Computers&#x00A0;&amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1984.</unstructured_citation>
+        </citation>
+        <citation key="citeWF-4">
+          <unstructured_citation>Hans Peter Willberg, Friedrich Forssman, Lesetypographie, 2nd printing, Mainz, Germany: Verlag Hermann Schmidt, 2005.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The treasure chest</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>135</first_page>
+        <last_page>136</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145chest</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145chest.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TUG financial statements for 2025</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>141</first_page>
+        <last_page>141</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145treas</doi>
+        <timestamp>20260504150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145treas.html</resource>
+      </doi_data>
+    </journal_article>
+  </journal></body>
+</doi_batch>

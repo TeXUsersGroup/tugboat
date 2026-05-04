@@ -1,0 +1,56 @@
+\begin{thebibliography}{1}
+
+\bibitem{cookiecutter}
+Cookiecutter: A command-line utility that creates projects from project
+  templates, 2025.
+\newblock \url{https://github.com/cookiecutter/cookiecutter}
+
+\bibitem{github-actions-quickstart}
+{GitHub Docs}.
+\newblock Quickstart for {GitHub Actions}, 2025.
+\newblock \url{https://docs.github.com/en/actions/get-started/quickstart}
+
+\bibitem{hoftich2019tex4ht}
+M.~Hoftich.
+\newblock {\TeX4ht}: {\LaTeX} to {Web} publishing.
+\newblock \emph{TUGboat} 40(1):76--91, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-1/tb124hoftich-make4ht.pdf}
+
+\bibitem{hoftich:tex4ht-blog}
+M.~Hoftich.
+\newblock Testblog: Blogging template for {\TeX4ht}, 2025.
+\newblock GitHub repository.
+\newblock \url{https://github.com/michal-h21/testblog}
+
+\bibitem{hoftich:tex4ht-booksite}
+M.~Hoftich.
+\newblock tex4ht-booksite: Template for web versions of {\LaTeX} books, 2025.
+\newblock GitHub repository.
+\newblock \newline \url{https://github.com/michal-h21/tex4ht-booksite}
+
+\bibitem{hoftich:tex4ht-presentation}
+M.~Hoftich.
+\newblock tex4ht-presentation: Template for web versions of {\LaTeX} {Beamer}
+  presentations, 2025.
+\newblock GitHub repository.
+\newblock \url{https://github.com/michal-h21/tex4ht-presentation}
+
+\bibitem{jekyllrb}
+Jekyll: Simple, blog-aware, static sites, 2025.
+\newblock \url{https://jekyllrb.com}
+
+\bibitem{peaceiris:actions-gh-pages}
+S.~Ueda, Peaceiris.
+\newblock actions-gh-pages: {GitHub Actions for GitHub Pages} (deploy static
+  files), 2025.
+\newblock GitHub repository, MIT license.
+\newblock \url{https://github.com/peaceiris/actions-gh-pages}
+
+\bibitem{xu-cheng:texlive-action}
+Xu-Cheng.
+\newblock texlive-action: {GitHub Action} to run arbitrary commands in a
+  texlive environment, 2025.
+\newblock GitHub repository, MIT license.
+\newblock \url{https://github.com/xu-cheng/texlive-action}
+
+\end{thebibliography}

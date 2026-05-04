@@ -1,0 +1,6 @@
+In order to satisfy
+\cs{looseness}, it's necessary to 
+remember many more solutions, even bad ones. After the whole
+paragraph is processed, a special looseness
+loop will try to get fewer or more lines depending on the looseness value.
+Therefore, passive nodes that normally get cleaned up now stay around.

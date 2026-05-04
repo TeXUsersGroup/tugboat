@@ -1,0 +1,6 @@
+The challenge was to quickly typeset a whole book's worth of content 
+in a very small font on one large (\acro{DIN A0}) sheet. For obvious legibility
+reasons, it had to be set a)~in a typeface suitable for the task, and 
+b)~in many columns, preferably more than the 
+20~columns the \texttt{multicol} package currently provides. A usable 
+result was obtained using the \texttt{flowfram} package. 

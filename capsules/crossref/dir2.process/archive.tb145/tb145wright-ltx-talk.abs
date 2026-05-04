@@ -1,0 +1,9 @@
+Over the past 20 years, the \cls{beamer} class~[3] has become the
+standard for production of presentations with \LaTeX{}. This class can produce
+a wide range of visual effects, and it has proved itself to be extremely useful
+for the creation of presentations. However, the internal code of \cls{beamer}
+is very complex and somewhat idiosyncratic. The class focuses primarily on the
+visual output, with structures reused in a way that makes it difficult to see
+how tagging data can be added. Finally, some aspects of the user interface in
+\cls{beamer} deviate significantly from standard \LaTeX{} constructs and
+conventions.

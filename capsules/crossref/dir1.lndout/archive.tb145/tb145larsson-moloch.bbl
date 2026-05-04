@@ -1,0 +1,83 @@
+\begin{thebibliography}{10}
+
+\bibitem{allaire:2025}
+J.~Allaire, C.~Teague, et~al.
+\newblock {{Quarto}}, Sept.~2025.
+\newblock \url{https://doi.org/10.5281/zenodo.5960048}
+
+\bibitem{carl2013}
+P.~Carl.
+\newblock The {{Paul Tol}} 21-color salute.
+\newblock Tradeblotter, Feb.~2013.
+\newblock
+  \url{https://tradeblotter.wordpress.com/2013/02/28/the-paul-tol-21-color-salute}
+
+\bibitem{catppuccin2026}
+{Catppuccin organization}.
+\newblock Catppuccin color palettes, 2026.
+\newblock \url{https://catppuccin.com}
+
+\bibitem{dunn:2025}
+B.~Dunn.
+\newblock The \texttt{lwarp} package, version 0.920, 2025-12-10.
+\newblock \url{https://ctan.org/pkg/lwarp}
+\newpage
+\bibitem{feuersanger:2025}
+C.~Feuers\"{a}nger, H.~Menke, et~al.
+\newblock The~\texttt{pgf} package, version 3.1.11a, 2025-08-29.
+\newblock \url{https://ctan.org/pkg/pgf}
+
+\bibitem{pgfplots}
+C.~Feuers\"{a}nger, H.~Menke, {\acro{PGF}/\TikZ\ team}.
+\newblock The \texttt{pgfplots} package, version 1.18.2, 2025-08-14.
+\newblock \url{http://pgfplots.sourceforge.net}
+
+\bibitem{latinmodern}
+B.~Jackowski, J.M.~Nowacki.
+\newblock The \texttt{lm} package, version 2.005, 2021.
+\newblock \url{https://www.gust.org.pl/projects/e-foundry/latin-modern}
+
+\bibitem{lelong:2018}
+J.~Lelong.
+\newblock The \texttt{appendixnumberbeamer} package, version 1.2, 2018.
+\newblock \newline \url{https://github.com/jlelong/appendixnumberbeamer}
+
+\bibitem{macfarlane:2025}
+J.~MacFarlane, A.~Krewinkel, J.~Rosenthal.
+\newblock {Pandoc}.
+\newblock \url{https://github.com/jgm/pandoc}
+
+\bibitem{mittelbach:2025}
+F.~Mittelbach, {\LaTeX\ Project Team}.
+\newblock The~\texttt{docstrip} package, version 2.6c, 2025-09-23.
+\newblock \url{https://ctan.org/pkg/docstrip}
+
+\bibitem{mittelbach:2014}
+F.~Mittelbach, W.~Robertson, {{\LaTeX3} team}.
+\newblock \texttt{l3build}{\Dash}{A} modern {Lua} test suite for {\TeX}
+  programming.
+\newblock \emph{TUGboat} 35(3):287--293, 2014.
+\newblock \url{https://tug.org/TUGboat/tb35-3/tb111mitt-l3build.pdf}
+
+\bibitem{latexproject:2025}
+{\LaTeX\ Project Team}, W.~Robertson.
+\newblock The~\texttt{fontspec} package, version 2.9g, 2025-09-29.
+\newblock \url{https://ctan.org/pkg/fontspec}
+
+\bibitem{samcarter:2025}
+{samcarter}, J.~Wright, et~al.
+\newblock The {Beamer} package, version 3.76, 2025-08-13.
+\newblock \newline \url{https://ctan.org/pkg/beamer}
+
+\bibitem{tantau:2007}
+T.~Tantau.
+\newblock The \texttt{pgfkeys} package, version~2007-10-08, 2007-10-08.
+\newblock \newline \url{https://ctan.org/pkg/pgfkeys}
+
+\bibitem{vogelgesang:2017}
+M.~Vogelgesang.
+\newblock \\{The} \texttt{beamertheme-metropolis} package, version 1.2,
+  2017-01-23.
+\newblock \newline \url{https://ctan.org/pkg/beamertheme-metropolis}
+
+\end{thebibliography}

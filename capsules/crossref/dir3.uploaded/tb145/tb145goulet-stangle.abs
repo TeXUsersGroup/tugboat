@@ -1,0 +1,8 @@
+  Literate programming plays a central role in reproducible science to
+  build reports from the computer code of analyses. In the R
+  ecosystem, Sweave is widely used to build documentation this way.
+  This note sheds some light on the perhaps lesser known, or
+  exploited, component of literate programming, at least in scientific
+  computing: the \emph{tangle} step. I will describe a use case where
+  a clever combination of weaving and tangling allows efficiently
+  maintaining elaborate documents built from components of various types.

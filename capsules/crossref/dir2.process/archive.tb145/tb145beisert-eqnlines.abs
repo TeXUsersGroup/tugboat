@@ -1,0 +1,6 @@
+The \tbcode{eqnlines} package provides a framework for typesetting
+single- and multi-line equations.
+It extends the established \tbcode{amsmath} framework
+with many features and settings concerning
+the numbering, spacing, alignment and punctuation of equations.
+This article introduces the package and highlights use cases.

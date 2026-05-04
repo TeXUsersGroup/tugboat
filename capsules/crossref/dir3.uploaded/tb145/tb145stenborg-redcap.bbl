@@ -1,0 +1,110 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{10}
+
+\bibitem{Behrendt:2025:HWU}
+D.~Behrendt, B.~Busse.
+\newblock How we use {\LaTeX} in the {CrypTool} project.
+\newblock \emph{TUGboat} 46(2):206--212, 2025.
+\newblock \url{https://doi.org/10.47397/tb/46-2/tb143behrendt-cryptool}
+
+\bibitem{Bellis:CB38-2-e14190}
+J.~Bellis, O.~Osazuwa-Peters, et~al.
+\newblock Identifying predictors of translocation success in rare plant
+  species.
+\newblock \emph{Conserv. Biol.}, 38(2):e14190, 2024.
+\newblock \url{https://doi.org/10.1111/cobi.14190}
+
+\bibitem{Carlisle:W3C2014-MathML-3}
+D.~Carlisle, P.~Ion, R.~Miner, eds.
+\newblock {Mathematical Markup Language (MathML) Version 3.0 2nd Edition}.
+\newblock W3C Recommendation, 2014.
+\newblock \newline \url{https://www.w3.org/TR/MathML3/}
+
+\bibitem{Cervone:NAMS59-2-3712}
+D.~Cervone.
+\newblock {MathJax: A} platform for mathematics on the web.
+\newblock \emph{Notices Amer. Math. Soc.}, 59(2):312--316, 2012.
+\newblock \url{https://www.ams.org/notices/201202/rtx120200312p.pdf}
+
+\bibitem{Cheng:JAMIA32-5-1149}
+A.C.~Cheng, S.N.~Duda, et~al.
+\newblock {Supporting rapid innovation in research data capture and management:
+  the REDCap external module framework}.
+\newblock \emph{J. Am. Med. Inform. Assoc.}, 32(7):1149--1156, May~2025.
+\newblock \url{https://doi.org/10.1093/jamia/ocaf073}
+
+\bibitem{Dhillon:CBJ-2016}
+V.~Dhillon.
+\newblock \emph{{Creating Blogs with Jekyll}}.
+\newblock Apress, 2016.
+\newblock \url{https://doi.org/10.1007/978-1-4842-1464-0}
+
+\bibitem{Flynn:TB26-1-66}
+P.~Flynn.
+\newblock {{\LaTeX} on the Web}.
+\newblock \emph{TUGboat} 26(1):66--67, 2005.
+\newblock \newline \url{https://tug.org/TUGboat/tb26-1/flynn.pdf}
+
+\bibitem{Garcia:HIR27-4-341}
+K.K.S.~Garcia, A.A.~Amaral.
+\newblock Research development using {REDCap} software.
+\newblock \emph{Healthc. Inform. Res.}, 27(4):341--349, 2021.
+\newblock \url{https://doi.org/10.4258/hir.2021.27.4.341}
+
+\bibitem{Harris:JBI42-2-377}
+P.A.~Harris, R.~Taylor, et~al.
+\newblock Research electronic data capture ({REDCap})—{A} metadata-driven
+  methodology and workflow process for providing translational research
+  informatics support.
+\newblock \emph{J. Biomed. Inform.}, 42(2):377--381, 2009.
+\newblock \newline \url{https://doi.org/10.1016/j.jbi.2008.08.010}
+
+\bibitem{Harris:JBI95-103208}
+P.A.~Harris, R.~Taylor, et~al.
+\newblock The {REDCap} consortium: Building an international community of
+  software platform partners.
+\newblock \emph{J. Biomed. Inform.}, 95:103208, 2019.
+\newblock \url{https://doi.org/10.1016/j.jbi.2019.103208}
+
+\bibitem{Hempstead:Anm11-7-2007}
+M.N.~Hempstead, T.M.~Lindquist, et~al.
+\newblock Health and welfare survey of 30 dairy goat farms in the midwestern
+  {United States}.
+\newblock \emph{Animals}, 11(7), 2021.
+\newblock \newline \url{https://doi.org/10.3390/ani11072007}
+
+\bibitem{Ion:TB20-3-167}
+P.D.F.~Ion.
+\newblock Math\acro{ML}: {A} key to math on the web.
+\newblock \emph{TUGboat} 20(3):167--175, Sept.~1999.
+\newblock \url{https://tug.org/TUGboat/tb20-3/tb64ion.pdf}
+
+\bibitem{Mwangala:AJER4-17-1238}
+K.P.~Mwangala, O.~Shumba.
+\newblock Physico{\hyph}mathematical conceptual difficulties among first year
+  students learning introductory university physics.
+\newblock \emph{Am. J. Educ. Res.}, 4(17):1238--1244, 2016.
+\newblock \newline \url{https://pubs.sciepub.com/education/4/17/8}
+
+\bibitem{Pan:ETRI38-2-376}
+J.~Pan, X.~Mao, W.~Li.
+\newblock Taint inference for cross-site scripting in context of {URL}
+  rewriting and {HTML} sanitization.
+\newblock \emph{ETRI J.}, 38(2):376--386, 2016.
+\newblock \url{https://doi.org/10.4218/etrij.16.0115.0570}
+
+\bibitem{Rezniczek:JSInj-2.3.1}
+G.A.~Rezniczek.
+\newblock {REDCap} {JavaScript} injector, May~2025.
+\newblock \newline \url{https://doi.org/10.5281/zenodo.15411380}
+
+\bibitem{Harris:Env12-10-348}
+B.N.~Young, J.~Tryner, et~al.
+\newblock Particulate matter pollution in an agricultural setting: {A}
+  community-engaged research study.
+\newblock \emph{Environments}, 12(10), 2025.
+\newblock \url{https://doi.org/10.3390/environments12100348}
+
+\end{thebibliography}

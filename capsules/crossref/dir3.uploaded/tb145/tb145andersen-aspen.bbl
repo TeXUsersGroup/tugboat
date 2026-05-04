@@ -1,0 +1,61 @@
+\input{texnames.sty}
+\begin{thebibliography}{1}
+
+\bibitem{abadi1999a}
+M.~Abadi, A.D.~Gordon.
+\newblock A calculus for cryptographic protocols: The {Spi} calculus.
+\newblock \emph{Information and Computation}, 148:1--70, 1999.
+\newblock \url{https://doi.org/10.1006/inco.1998.2740}
+
+\bibitem{andersen2026a}
+A.~Andersen.
+\newblock Aspen: A security protocol notation.
+\newblock Technical report, {UiT} The Arctic University of {Norway}, Mar.~2026.
+\newblock
+  \url{https://www.pg12.org/dist/texmf/tex/latex/aspen/aspen-doc-202603.pdf}
+
+\bibitem{anderson2020a}
+R.~Anderson.
+\newblock \emph{Security Engineering: A Guide to Building Dependable
+  Distributed Systems}.
+\newblock John~Wiley {\&} Sons, 3rd~ed., 2020.
+\newblock \url{https://www.cl.cam.ac.uk/archive/rja14/book.html}
+
+\bibitem{briais2005a}
+S.~Briais, U.~Nestmann.
+\newblock A formal semantics for protocol narrations.
+\newblock In~\emph{Trustworthy Global Computing, International Symposium, TGC
+  2005}, R.~{De Nicola}, D.~Sangiorgi, eds., vol. 3705 of \emph{Lecture Notes
+  in Computer Science}, pp.~163--181, Edinburgh, UK, Apr.~2005.
+  Springer-Verlag.
+\newblock \newline \url{https://doi.org/10.1007/11580850\_10}
+\newpage
+\bibitem{burrows1990a}
+M.~Burrows, M.~Abadi, R.~Needham.
+\newblock A logic of authentication.
+\newblock \emph{ACM Transactions on Computer Systems}, 8(1):18--36, Feb.~1990.
+\newblock \url{https://doi.org/10.1145/77648.77649}
+
+\bibitem{chappell1999a}
+D.~Chappell.
+\newblock Exploring {Kerberos}, the protocol for distributed security in
+  {Windows 2000}.
+\newblock \emph{Microsoft System Journal}, Aug.~1999.
+\newblock
+  \url{https://web.archive.org/web/20040707171543/http://www.microsoft.com/msj/0899/kerberos/kerberos.aspx}
+
+\bibitem{needham1978a}
+R.~Needham, M.~Schroeder.
+\newblock Using encryption for authentication in large networks of computers.
+\newblock \emph{Communications of the ACM}, 21(12):993--999, Dec.~1978.
+\newblock \newline \url{https://doi.org/10.1145/359657.359659}
+
+\bibitem{steiner1988a}
+J.G.~Steiner, C.~Neuman, J.~Schiller.
+\newblock Kerberos: An authentication service for open networks systems.
+\newblock In~\emph{Proceedings of Usenix Winter Conference 1988}, pp.~191--202,
+  Feb.~1988.
+\newblock
+  \url{https://www.cs.unc.edu/\string~fabian/course\_papers/steiner\_neuman.pdf}
+
+\end{thebibliography}

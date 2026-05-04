@@ -1,0 +1,11 @@
+\HarfBuzz\ (\url{https://github.com/harfbuzz/harfbuzz}) is a text \emph{shaping}
+engine: it takes Unicode characters and a font and outputs positioned glyphs.
+It is the industry-standard open-source solution for text shaping, relied upon
+by billions of users in browsers, operating systems, and word processors\Dash and
+essential for complex scripts such as Arabic and Indic that require reordering,
+ligatures, and other transformations.
+
+This article traces the evolution of digital text shaping and the formation of
+\HarfBuzz, the parallel evolution of \TeX\ engines toward Unicode and complex
+scripts, their integration with \HarfBuzz, and a vision for the future of fonts
+and shaping.

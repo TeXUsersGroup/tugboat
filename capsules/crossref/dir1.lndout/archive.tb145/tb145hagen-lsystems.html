@@ -1,0 +1,80 @@
+<!--#include virtual="/header.html"-->
+<title>L-systems: Turtle graphics with MetaPost and Lua
+       - TUGboat 47:1 (2026) - TeX Users Group</title>
+</head><body>
+
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+<h1><a href="/TUGboat/tb47-1/">TUGboat 47:1</a> (2026)<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
+
+<p><b>Title</b>: L-systems: Turtle graphics with MetaPost and Lua</p>
+
+<p><b>Summary</b>:
+implementing space-filling curves: dragon curves, Sierpi&#x0144;ski fractals, many more.</p>
+
+<p><b>Full text of article</b>: <a href="https://tug.org/members/TUGboat/tb47-1/tb145hagen-lsystems.pdf">available to TUG members</a> (<a href="/join.html">join TUG</a>);
+will be publicly available after the next issue is published.</p>
+
+<p><b>Authors</b>:
+<a href="/TUGboat/Contents/listauthor.html#Hagen,Hans">Hans Hagen</a>, <a href="/TUGboat/Contents/listauthor.html#Sundqvist,MikaelP">Mikael P. Sundqvist</a></p>
+
+<p><b>Publication</b>: <a href="/TUGboat/tb47-1/">TUGboat
+volume 47, number 1</a> (2026),
+pages&nbsp;100&ndash;111</p>
+
+<p><b>DOI</b> (this page):
+<a href="https://doi.org/10.47397/tb/47-1/tb145hagen-lsystems">10.47397/tb/47-1/tb145hagen-lsystems</a>
+<br><small>(<a href="https://doi.org/10.47397/tb/47-1/tb145starynovotny-fantasia">previous doi</a>
+- <a href="https://doi.org/10.47397/tb/47-1/tb145hagen-looseness">next doi</a>)</small></p>
+
+<p><b>Category</b>:
+<a href="/TUGboat/Contents/listkeyword.html#CatTAGGraphics">Graphics</a></p>
+      
+<p><b>Difficulty</b>: Advanced</p>
+
+<p><b>Abstract</b>:
+The feature that we describe here was inspired by
+<em>The Algorithmic Beauty of Plants</em>
+by Przemyslaw Prusinkiewicz and Aristid
+Lindenmayer
+(<a href="https://archive.org/details/the-algorithmic-beauty-of-plants">archive.org/details/the-algorithmic-beauty-of-plants</a>).
+It started when Mikael wanted to draw a few Hilbert curves in order to
+discuss and show the idea behind space-filling curves in his lectures.</p>
+<p>It is well known that one can produce these kinds of graphics and other
+fractal-like and tree-like nice images using so-called Lindenmayer systems, and
+of course there are many tools available to do so. We did not know of any such
+tool working in MetaPost, though, and thought it would be fun to explore the techniques.</p>
+<p>We started by very simple turtle methods to code macros that generated a path
+recursively (that first approach will be shown below), then we got some wrappers,
+but we quickly went to a (still quite simple) mix of Lua and MetaPost. We
+could actually leave the path generation to Lua completely, but then we don&#x2019;t
+get the fun of playing and applying a feature that we added a few years ago:
+turtle graphics.</p>
+
+<!-- REPLACE-WITH-BIBLIOGRAPHY -->
+
+
+<p id="cite"><b>Cite this article (BibTeX)</b>: <small><pre>
+@preamble{"\input tugboat.def"}
+@article{Hagen:TB47-1:100,
+  author =        "Hans Hagen and Mikael P. Sundqvist",
+  title =         "L-systems: Turtle graphics with {MetaPost} and {Lua}",
+  journal =       "TUGboat",
+  volume =        "47",
+  number =        "1",
+  pages =         "100-111",
+  year =          "2026",
+  issue =         "145",
+  DOI =           "10.47397/tb/47-1/tb145hagen-lsystems",
+  url =           "https://tug.org/TUGboat/tb47-1/tb145hagen-lsystems.pdf",
+  journal-URL =   "https://tug.org/TUGboat/",
+  ISSN =          "0896-3207",
+}
+
+</pre>
+</small>
+<hr><small><a href="/TUGboat/">TUGboat</a> 47:1, 2026 (<a href="/TUGboat/tb47-1/">issue 145</a>)
+&nbsp; [generated 2026-05-04]
+</small><br><!--#include virtual="/footer.html"-->

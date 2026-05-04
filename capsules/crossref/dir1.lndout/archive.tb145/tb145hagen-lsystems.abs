@@ -1,0 +1,19 @@
+The feature that we describe here was inspired by
+\titleref {The Algorithmic Beauty of Plants}
+by Przemyslaw Prusinkiewicz and Aristid
+Lindenmayer
+(\url{https://archive.org/details/the-algorithmic-beauty-of-plants}}).
+It started when Mikael wanted to draw a few Hilbert curves in order to
+discuss and show the idea behind space-filling curves in his lectures.
+
+It is well known that one can produce these kinds of graphics and other
+fractal-like and tree-like nice images using so-called Lindenmayer systems, and
+of course there are many tools available to do so. We did not know of any such
+tool working in \METAPOST, though, and thought it would be fun to explore the techniques.
+
+We started by very simple turtle methods to code macros that generated a path
+recursively (that first approach will be shown below), then we got some wrappers,
+but we quickly went to a (still quite simple) mix of \LUA\ and \METAPOST. We
+could actually leave the path generation to \LUA\ completely, but then we don't
+get the fun of playing and applying a feature that we added a few years ago:
+turtle graphics.

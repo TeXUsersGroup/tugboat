@@ -1,0 +1,4 @@
+Online data collection forms (surveys, questionnaires, etc.)\ may feature 
+mathematical notation. Several math rendering methods were tested on the 
+{REDCap} data collection platform. {\HTML}/{\CSS} and text-to-image rendered 
+{\LaTeX} are both viable, and suited to simple and complex math, respectively.

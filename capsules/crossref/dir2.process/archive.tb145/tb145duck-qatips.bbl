@@ -1,0 +1,25 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{1}
+
+\bibitem{xVinay:2025:HWU}
+V.~{Govinda (S. Vinay)}.
+\newblock How we use {\XeLaTeX} at our ashram to publish and print multilingual
+  books and documents.
+\newblock \emph{TUGboat} 46(2):220--227, 2025.
+\newblock \url{https://doi.org/10.47397/tb/46-2/tb143govinda-ashram}
+
+\bibitem{Maggi:2017:DNT}
+C.~Maggi.
+\newblock The {DuckBoat}{\Dash}news from {TeX.SE}: Asking effective questions.
+\newblock \emph{TUGboat} 38(3):301--305, 2017.
+\newblock \url{https://tug.org/TUGboat/tb38-3/tb120duck.pdf}
+
+\bibitem{Maggi:2018:DNTb}
+C.~Maggi.
+\newblock The {DuckBoat{\Dash}News} from {TeX.SE}: Formatting posts.
+\newblock \emph{TUGboat} 39(3):177--181, 2018.
+\newblock \url{https://tug.org/TUGboat/tb39-3/tb123duck-format.pdf}
+
+\end{thebibliography}

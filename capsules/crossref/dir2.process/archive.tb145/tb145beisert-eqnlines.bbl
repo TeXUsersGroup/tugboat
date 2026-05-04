@@ -1,0 +1,32 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{1}
+
+\bibitem{pkg:delimset}
+N.~Beisert.
+\newblock The {\tbcode{delimset}} package.
+\newblock \newline \url{https://ctan.org/pkg/delimset}
+
+\bibitem{pkg:eqnlines}
+N.~Beisert.
+\newblock The {\tbcode{eqnlines}} package.
+\newblock \newline \url{https://ctan.org/pkg/eqnlines}
+
+\bibitem{xDownes:TB18-3-182}
+M.~Downes.
+\newblock Breaking equations.
+\newblock \emph{TUGboat}~18(3):182--194, Sept.~1997.
+\newblock \url{https://tug.org/TUGboat/tb18-3/tb56down.pdf}
+
+\bibitem{pkg:mathtools}
+M.~Høgholm, L.~Madsen, {\LaTeX3 Project}.
+\newblock The~{\tbcode{mathtools}} package, 2024.
+\newblock \newline \url{https://ctan.org/pkg/mathtools}
+
+\bibitem{pkg:amsmath}
+{\gobble{LaTeX}{\LaTeX3 Project}}.
+\newblock The {\tbcode{amsmath}} package, 2025.
+\newblock \url{https://ctan.org/pkg/latex-amsmath}
+
+\end{thebibliography}

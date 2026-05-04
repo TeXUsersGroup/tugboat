@@ -1,0 +1,8 @@
+  Aspen is a notation for security protocols.  Despite the many
+  publications and textbooks found using notations for security
+  protocols, the notations used are not consistent. The motivation for
+  Aspen is to have an expressive and consistent notation that can
+  be used in different settings where security protocols are
+  presented.  The \texttt{aspen} package implements this notation for
+  {\LaTeX}.  Optionally, the \texttt{aspen} package also provides the
+  \acro{BAN} logic notation.
