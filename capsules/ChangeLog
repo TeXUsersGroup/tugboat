@@ -1,3 +1,11 @@
+2026-05-05  Karl Berry  <karl@tug.org>
+
+	* tb144capsule.txt: public.
+	* Makefile (testiss, crossref_iss): 144 (46-3) public
+        (and 145 (47-1) published).
+
+	* tb145capsule.txt (hanson-pandoc): forgot /members/.
+
 2026-05-04  Karl Berry  <karl@freefriends.org>
 
 	* cr-landing-bbl-abs (update_landing_bbl): .wav files are not urls.

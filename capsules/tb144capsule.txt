@@ -11,12 +11,6 @@ medskip
 % begin-items
  
 \begin{blurb}
-<p>Immediate online access to technical TUGboat articles will be
-available to TUG members only (so some of the links below require a TUG
-username and password).  General information items and articles already
-posted elsewhere are publicly available now.  All of the articles will
-become publicly available after the next issue is published.
-
 <p>If you're not already a member, we hope you'll consider <a
 href="/join.html">joining TUG</a> to support TUGboat and other TeX
 projects.  <a href="/memberaccess.html">More information on TUG member
@@ -32,7 +26,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
         {Complete issue 46:3 as one pdf (19mb)}
         {}
         {\offset{.1}}
-        {https://tug.org/members/TUGboat/!TBIDENT!complete.pdf}
+        {/TUGboat/!TBIDENT!complete.pdf}
         {}
         {}
 
@@ -122,7 +116,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
    {James Mosley, type historian (1935--2025)}
    {}
    {323-323}
-   {https://tug.org/members/TUGboat/!TBIDENT!bigelow-mosley.pdf}
+   {/TUGboat/!TBIDENT!bigelow-mosley.pdf}
    {}
    {}
 
@@ -133,7 +127,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
    {When is a float not a float?; Accessibility; Afterthought:\ Finding
     that font}
    {326-327}
-   {https://tug.org/members/TUGboat/!TBIDENT!inn.pdf}
+   {/TUGboat/!TBIDENT!inn.pdf}
    {}
    {}
 
@@ -154,7 +148,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %          Global type design and human-computer interaction}
 %   {summary of talks at this multi-disciplinary conference}
 %   {\getfirstpage{veytsman-face25}}
-%   {https://tug.org/members/TUGboat/!TBIDENT!veytsman-face25.pdf}
+%   {/TUGboat/!TBIDENT!veytsman-face25.pdf}
 %   {}
 %   {}
 
@@ -178,7 +172,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
   {comparison of current engines (binary programs) and formats (\TeX\
    macro collections)}
   {335-338}
-  {https://tug.org/members/TUGboat/!TBIDENT!berry-engines-formats.pdf}
+  {/TUGboat/!TBIDENT!berry-engines-formats.pdf}
   {}
   {Addendum: The authors omitted the relatively new HiTeX engine created
    by Martin Ruckert, which generates HINT output for mobile devices;
@@ -202,7 +196,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %%  {the \textit{Emacs Modified for Windows/\macOS} projects, all-in-one
 %%   distributions with easy installation}
 %%  {\getfirstpage{goulet-emacs}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!goulet-emacs.pdf}
+%%  {/TUGboat/!TBIDENT!goulet-emacs.pdf}
 %%  {}
 %%  {}
 
@@ -213,7 +207,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
    \texttt{wordsoftype.com}}
   {project to translate and explain the vocabulary of typography}
   {328-334}
-  {https://tug.org/members/TUGboat/!TBIDENT!huang-wordsoftype.pdf}
+  {/TUGboat/!TBIDENT!huang-wordsoftype.pdf}
   {}
   {}
 
@@ -223,7 +217,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %  {OpBible\Dash a tool for creating study Bibles}
 %  {adding notes, maps, other material to multiple biblical texts}
 %  {\getfirstpage{konecny-opbible}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!konecny-opbible.pdf}
+%  {/TUGboat/!TBIDENT!konecny-opbible.pdf}
 %  {}
 %  {}
 %
@@ -266,7 +260,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %  {converting \DVI\ files into R objects, supporting \LaTeX\ fragments
 %   as labels and annotations}
 %  {\getfirstpage{murrell-xdvir}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!murrell-xdvir.pdf}
+%  {/TUGboat/!TBIDENT!murrell-xdvir.pdf}
 %  {}
 %  {}
 
@@ -276,7 +270,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
   {Styling Maple graphics with \TikZ\ and \LaTeX}
   {removing Maple's default styling and re-adding custom styling}
   {379-380}
-  {https://tug.org/members/TUGboat/!TBIDENT!stenborg-maple.pdf}
+  {/TUGboat/!TBIDENT!stenborg-maple.pdf}
   {}
   {}
 
@@ -286,7 +280,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %  {The \tbcode{glossaries} package: Getting started}
 %  {introduction to creating glossaries and lists of abbreviations}
 %  {\getfirstpage{talbot-glossaries-intro}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!talbot-glossaries-intro.pdf}
+%  {/TUGboat/!TBIDENT!talbot-glossaries-intro.pdf}
 %  {}
 %  {}
 %
@@ -296,7 +290,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %%%%%%  {Using OpenType and TrueType fonts with \XeLaTeX\ and Lua\LaTeX}
 %%%%%%  {succinct examples of searching for and loading OpenType or TrueType fonts}
 %%%%%%  {\getfirstpage{voss-unifont}}
-%%%%%%  {https://tug.org/members/TUGboat/!TBIDENT!voss-hvfloat.pdf}
+%%%%%%  {/TUGboat/!TBIDENT!voss-hvfloat.pdf}
 %%%%%%  {}
 %%%%%%  {}
 
@@ -306,7 +300,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
   {A look at complaints about \titleref{The TeXbook}}
   {analyzing \TB\ with respect to criticisms over the years}
   {381-396}
-  {https://tug.org/members/TUGboat/!TBIDENT!wermuth-texbook.pdf}
+  {/TUGboat/!TBIDENT!wermuth-texbook.pdf}
   {}
   {}
 
@@ -321,7 +315,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
   {splitting page images from \textit{Polonia Typographica Saeculi
    Sedecimi} into glyphs}
   {420-426}
-  {https://tug.org/members/TUGboat/!TBIDENT!bien-typoglyphs.pdf}
+  {/TUGboat/!TBIDENT!bien-typoglyphs.pdf}
   {}
   {}
 
@@ -332,7 +326,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
   {a new open-source system for copyediting and document production of
    \LaTeX-based journals}
   {339-343}
-  {https://tug.org/members/TUGboat/!TBIDENT!bos-workflow.pdf}
+  {/TUGboat/!TBIDENT!bos-workflow.pdf}
   {}
   {}
 
@@ -343,7 +337,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %%%%  {using 3\acro{DLDF} to recreate a complex pattern, including
 %%%%   perspective drawings and color replacement}
 %%%%  {\getfirstpage{finston-alhambra}}
-%%%%  {https://tug.org/members/TUGboat/!TBIDENT!finston-alhambra.pdf}
+%%%%  {/TUGboat/!TBIDENT!finston-alhambra.pdf}
 %%%%  {}
 %%%%  {}
 %%%%
@@ -353,7 +347,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %%%%%%  {Adding \acro{XMP} metadata in \LaTeX}
 %%%%%%  {\LaTeX\ kernel support for standard metadata}
 %%%%%%  {\getfirstpage{fischer-xmp}}
-%%%%%%  {https://tug.org/members/TUGboat/!TBIDENT!fischer-xmp.pdf}
+%%%%%%  {/TUGboat/!TBIDENT!fischer-xmp.pdf}
 %%%%%%  {}
 %%%%%%  {}
 
@@ -363,7 +357,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %%%  {Illustrating finite automata with Grail\tubplus\ and \TikZ}
 %%%  {automatic layout of finite automata with the Grail\tubplus\ Visualizer}
 %%%  {\getfirstpage{may-automata}}
-%%%  {https://tug.org/members/TUGboat/!TBIDENT!may-automata.pdf}
+%%%  {/TUGboat/!TBIDENT!may-automata.pdf}
 %%%  {}
 %%%  {}
 %
@@ -373,7 +367,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %  {Spe\LaTeX\Dash Speech-enabled \LaTeX}
 %  {generating \PDF{}s with linked high-quality audio readings, including math}
 %  {\getfirstpage{daems-spelatex}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!daems-spelatex.pdf}
+%  {/TUGboat/!TBIDENT!daems-spelatex.pdf}
 %  {}
 %  {}
 %
@@ -385,7 +379,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %%  {the \texttt{gitinfo-lua} package for inserting versions, authors,
 %%   changelogs, etc.}
 %%  {\getfirstpage{nijenhuis-git}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!nijenhuis-git.pdf}
+%%  {/TUGboat/!TBIDENT!nijenhuis-git.pdf}
 %%  {}
 %%  {}
 %
@@ -395,7 +389,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %  {Processing data from \acro{CSV} and \acro{JSON} files with \OpTeX}
 %  {database operations and tree structures}
 %  {\getfirstpage{olsak-optex-db}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!olsak-optex-db.pdf}
+%  {/TUGboat/!TBIDENT!olsak-optex-db.pdf}
 %  {}
 %  {}
 %
@@ -407,7 +401,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %  {improving security, usability, debugging, and enhancements via a
 %   dedicated \texttt{latexminted} executable}
 %  {\getfirstpage{poore-minted3}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!poore-minted3.pdf}
+%  {/TUGboat/!TBIDENT!poore-minted3.pdf}
 %  {}
 %  {}
 
@@ -417,7 +411,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
   {The Arsenal~Math OpenType fonts}
   {customizable font tables for OpenType/TrueType Unicode fonts}
   {344-346}
-  {https://tug.org/members/TUGboat/!TBIDENT!rajeesh-arsenalmath.pdf}
+  {/TUGboat/!TBIDENT!rajeesh-arsenalmath.pdf}
   {}
   {}
 
@@ -429,7 +423,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %  {step-by-step workflow to convert vector graphics into \acro{3D}
 %   models, using Open\acro{SCAD}}
 %  {\getfirstpage{samcarter-cookies}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!samcarter-cookies.pdf}
+%  {/TUGboat/!TBIDENT!samcarter-cookies.pdf}
 %  {}
 %  {}
 %
@@ -439,7 +433,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %  {Piping \acro{YAML} files into \LaTeX3 key--values}
 %  {using \acro{YAML} to set document metadata and configure \LaTeX\ packages}
 %  {\getfirstpage{starynovotny-piping-yaml}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!starynovotny-piping-yaml.pdf}
+%  {/TUGboat/!TBIDENT!starynovotny-piping-yaml.pdf}
 %  {}
 %  {}
 %
@@ -450,7 +444,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %%%%%%  {powerful methods of running general subprograms and typesetting their
 %%%%%%   output}
 %%%%%%  {\getfirstpage{voss-extern}}
-%%%%%%  {https://tug.org/members/TUGboat/!TBIDENT!voss-extern.pdf}
+%%%%%%  {/TUGboat/!TBIDENT!voss-extern.pdf}
 %%%%%%  {}
 %%%%%%  {}
 
@@ -461,7 +455,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
   {writing an easily readable, and pretty, thesis or other technical
    work: a personal journey}
   {353-357}
-  {https://tug.org/members/TUGboat/!TBIDENT!zorman-thesis.pdf}
+  {/TUGboat/!TBIDENT!zorman-thesis.pdf}
   {}
   {}
 
@@ -474,7 +468,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
   {Flagging}
   {flag presentations, \acro{QR} tags for errors, run status via colored lights}
   {404-409}
-  {https://tug.org/members/TUGboat/!TBIDENT!hagen-flagging.pdf}
+  {/TUGboat/!TBIDENT!hagen-flagging.pdf}
   {}
   {}
 
@@ -484,7 +478,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
   {Getting noisy}
   {implementing and refining Perlin noise in \ConTeXt, MetaPost, Lua, and C}
   {364-368}
-  {https://tug.org/members/TUGboat/!TBIDENT!hagen-noisy.pdf}
+  {/TUGboat/!TBIDENT!hagen-noisy.pdf}
   {}
   {}
 
@@ -495,7 +489,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
   {interaction between the three programs, and efficiently creating
    complex graphics}
   {369-378}
-  {https://tug.org/members/TUGboat/!TBIDENT!hagen-beyond-metapost.pdf}
+  {/TUGboat/!TBIDENT!hagen-beyond-metapost.pdf}
   {}
   {}
 
@@ -505,7 +499,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
   {Pages}
   {fundamental extensions to page breaking in LuaMeta\TeX}
   {397-403}
-  {https://tug.org/members/TUGboat/!TBIDENT!hagen-pages.pdf}
+  {/TUGboat/!TBIDENT!hagen-pages.pdf}
   {}
   {}
 
@@ -516,7 +510,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
   {new algorithm for occlusion handling of tessellated \acro{3D}
    parametric objects}
   {358-363}
-  {https://tug.org/members/TUGboat/!TBIDENT!nice-lua3dtools.pdf}
+  {/TUGboat/!TBIDENT!nice-lua3dtools.pdf}
   {}
   {}
 
@@ -526,7 +520,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %%%%%  {Creating macros in \OpTeX{}}
 %%%%%  {many conveniences for macro programming, packaging, documenting}
 %%%%%  {\getfirstpage{olsak-optexmac}}
-%%%%%  {https://tug.org/members/TUGboat/!TBIDENT!olsak-fmtcmp.pdf}
+%%%%%  {/TUGboat/!TBIDENT!olsak-fmtcmp.pdf}
 %%%%%  {}
 %%%%%  {}
 %
@@ -538,7 +532,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %  {new packages and features to help with verbatim processing, calling
 %   external programs, and more}
 %  {\getfirstpage{poore-extools}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!poore-extools.pdf}
+%  {/TUGboat/!TBIDENT!poore-extools.pdf}
 %  {}
 %  {}
 %
@@ -549,7 +543,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %  {reconstructing references from inaccurate source files using
 %   \texttt{expl3} and regular expressions}
 %  {\getfirstpage{tahsiri-bibbreeze}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!tahsiri-bibbreeze.pdf}
+%  {/TUGboat/!TBIDENT!tahsiri-bibbreeze.pdf}
 %  {}
 %  {}
 %
@@ -560,7 +554,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %  {overview of new features in this package for handling \acro{CSV} data
 %   and much more}
 %  {\getfirstpage{talbot-datatool3}}
-%  {https://tug.org/members/TUGboat/!TBIDENT!talbot-datatool3.pdf}
+%  {/TUGboat/!TBIDENT!talbot-datatool3.pdf}
 %  {}
 %  {}
 %
@@ -571,7 +565,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
 %%  {a cloud-based authoring, submission, and proofing tool with
 %%   collaborative editing}
 %%  {\getfirstpage{vanek-primo}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!vanek-primo.pdf}
+%%  {/TUGboat/!TBIDENT!vanek-primo.pdf}
 %%  {}
 %%  {}
 
@@ -582,7 +576,7 @@ projects.  <a href="/memberaccess.html">More information on TUG member
        first and second pass}
   {unexpected results between \TeX's paragraph-breaking passes}
   {410-419}
-  {https://tug.org/members/TUGboat/!TBIDENT!wermuth-parpass.pdf}
+  {/TUGboat/!TBIDENT!wermuth-parpass.pdf}
   {}
   {}
 
