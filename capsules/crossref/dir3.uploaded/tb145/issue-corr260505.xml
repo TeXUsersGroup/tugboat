@@ -1,0 +1,125 @@
+<doi_batch
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    version="5.4.0"
+    xmlns="http://www.crossref.org/schema/5.4.0"
+    xsi:schemaLocation="http://www.crossref.org/schema/5.4.0
+                       https://www.crossref.org/schemas/crossref5.4.0.xsd">
+  <head>
+    <doi_batch_id>ltx2crossref-20260504150100-24880</doi_batch_id>
+    <timestamp>20260505150100</timestamp>
+    <depositor>
+      <depositor_name>TUGboat production</depositor_name>
+      <email_address>doi-tugboat@tug.org</email_address>
+    </depositor>
+    <registrant>TeX Users Group</registrant>
+  </head>
+  <body><journal>
+    <journal_metadata language="en">
+      <full_title>TUGboat</full_title>
+      <issn>0896-3207</issn>      
+    </journal_metadata>
+    <journal_issue>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <journal_volume><volume>47</volume></journal_volume>
+      <issue>1</issue>
+    </journal_issue>
+    <journal_article>
+      <titles>
+        <title>A LaTeX package for the Aspen security protocol notation and BAN logic</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Anders</given_name>
+          <surname>Andersen</surname>
+          <ORCID>https://orcid.org/0000-0003-3014-8025</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>75</first_page>
+        <last_page>80</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-1/tb145andersen-aspen</doi>
+        <timestamp>20260505150100</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-1/tb145andersen-aspen.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="abadi1999a-1" type="journal_article">
+          <journal_title>Information and Computation</journal_title>
+          <author>Abadi, Mart&#x00ED;n</author>
+          <volume>148</volume>
+          <first_page>1</first_page>
+          <cYear>1999</cYear>
+          <doi>10.1006/inco.1998.2740</doi>
+          <article_title>A Calculus for Cryptographic Protocols: The Spi Calculus</article_title>
+          <unstructured_citation>M. Abadi, A.D. Gordon. A calculus for cryptographic protocols: The Spi calculus. Information and Computation, 148:1&#x2013;70, 1999. https://doi.org/10.1006/inco.1998.2740</unstructured_citation>
+        </citation>
+        <citation key="andersen2026a-2" type="report">
+          <author>Andersen, Anders</author>
+          <cYear>2026</cYear>
+          <article_title>Aspen: A security protocol notation</article_title>
+          <unstructured_citation>A. Andersen. Aspen: A security protocol notation. Technical report, UiT The Arctic University of Norway, Mar. 2026. https://www.pg12.org/dist/texmf/tex/latex/aspen/aspen-doc-202603.pdf</unstructured_citation>
+        </citation>
+        <citation key="anderson2020a-3" type="book">
+          <author>Anderson, Ross</author>
+          <cYear>2020</cYear>
+          <isbn>978-1-119-64281-7</isbn>
+          <article_title>Security Engineering: A Guide to Building Dependable Distributed Systems</article_title>
+          <unstructured_citation>R. Anderson. Security Engineering: A Guide to Building Dependable Distributed Systems. John Wiley &#x0026; Sons, 3rd ed., 2020. https://www.cl.cam.ac.uk/archive/rja14/book.html</unstructured_citation>
+        </citation>
+        <citation key="briais2005a-4" type="conference_paper">
+          <author>Briais, S&#x00E9;bastien</author>
+          <volume>3705</volume>
+          <first_page>163</first_page>
+          <cYear>2005</cYear>
+          <doi>10.1007/11580850_10</doi>
+          <isbn>978-3-540-30007-6</isbn>
+          <series_title>Lecture Notes in Computer Science</series_title>
+          <volume_title>Trustworthy Global Computing, International Symposium, TGC 2005</volume_title>
+          <article_title>A Formal Semantics for Protocol Narrations</article_title>
+          <unstructured_citation>S. Briais, U. Nestmann. A formal semantics for protocol narrations. In Trustworthy Global Computing, International Symposium, TGC 2005, R. De Nicola, D. Sangiorgi, eds., vol. 3705 of Lecture Notes in Computer Science, pp. 163&#x2013;181, Edinburgh, UK, Apr. 2005. Springer-Verlag. https://doi.org/10.1007/11580850_10</unstructured_citation>
+        </citation>
+        <citation key="burrows1990a-5" type="journal_article">
+          <journal_title>ACM Transactions on Computer Systems</journal_title>
+          <author>Burrows, Michael</author>
+          <volume>8</volume>
+          <first_page>18</first_page>
+          <cYear>1990</cYear>
+          <doi>10.1145/77648.77649</doi>
+          <article_title>A Logic of Authentication</article_title>
+          <unstructured_citation>M. Burrows, M. Abadi, R. Needham. A logic of authentication. ACM Transactions on Computer Systems, 8(1):18&#x2013;36, Feb. 1990. https://doi.org/10.1145/77648.77649</unstructured_citation>
+        </citation>
+        <citation key="chappell1999a-6" type="journal_article">
+          <journal_title>Microsoft System Journal</journal_title>
+          <author>Chappell, David</author>
+          <cYear>1999</cYear>
+          <article_title>Exploring Kerberos, the Protocol for Distributed Security in Windows 2000</article_title>
+          <unstructured_citation>D. Chappell. Exploring Kerberos, the protocol for distributed security in Windows 2000. Microsoft System Journal, Aug. 1999. https://web.archive.org/web/20040707171543/http://www.microsoft.com/msj/0899/kerberos/kerberos.aspx</unstructured_citation>
+        </citation>
+        <citation key="needham1978a-7" type="journal_article">
+          <journal_title>Communications of the ACM</journal_title>
+          <author>Needham, Roger</author>
+          <volume>21</volume>
+          <first_page>993</first_page>
+          <cYear>1978</cYear>
+          <doi>10.1145/359657.359659</doi>
+          <article_title>Using encryption for authentication in large networks of computers</article_title>
+          <unstructured_citation>R. Needham, M. Schroeder. Using encryption for authentication in large networks of computers. Communications of the ACM, 21(12):993&#x2013;999, Dec. 1978. https://doi.org/10.1145/359657.359659</unstructured_citation>
+        </citation>
+        <citation key="steiner1988a-8" type="conference_paper">
+          <author>Steiner, Jennifer G.</author>
+          <first_page>191</first_page>
+          <cYear>1988</cYear>
+          <volume_title>Proceedings of Usenix Winter Conference 1988</volume_title>
+          <article_title>Kerberos: An Authentication Service for Open Networks Systems</article_title>
+          <unstructured_citation>J.G. Steiner, C. Neuman, J. Schiller. Kerberos: An authentication service for open networks systems. In Proceedings of Usenix Winter Conference 1988, pp. 191&#x2013;202, Feb. 1988. https://www.cs.unc.edu/~fabian/course_papers/steiner_neuman.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+  </journal></body>
+</doi_batch>
