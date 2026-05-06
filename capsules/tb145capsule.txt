@@ -360,7 +360,8 @@ access</a>.
 \capsule{}
   {\LaTeX}
   {Anders Andersen}
-  {A security protocol notation and {\LaTeX} package: {Aspen}}
+  {A {\LaTeX} package for the Aspen security protocol notation
+   and \acro{BAN} logic}
   {an expressive and consistent notation for presenting security protocols}
   {75-80}
   {https://tug.org/members/TUGboat/!TBIDENT!andersen-aspen.pdf}

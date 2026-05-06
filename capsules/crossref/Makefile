@@ -37,7 +37,7 @@ rpi_input = dir2.process/*.rpi
 xml_output = dir2.process/issue.xml
 #
 # When uploading corrections:
-#xml_output = dir3.uploaded/tb132/issue-corr2.xml
+#xml_output = dir3.uploaded/tb145/issue-corr260505.xml
 
 # All the arguments we pass.
 ltx2crossrefxml_args = -c $(tub_cfg) $(rpi_input) --rpi-is-xml -o $(xml_output)

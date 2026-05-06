@@ -247,7 +247,7 @@ awsbounce@crossref.org.
 
 Registering DOIs will also cause crossref to send mail to authors.
 
-If landing files are not in place yet, copy them to the live directory:
+Copy the landing pages using doi.org to the live directory:
   scp ... # per above
 
 Then commit any changes to our source files:
@@ -310,8 +310,8 @@ pages to say "publicly available now". This is irritating, but it seems
 useful enough to state explicitly whether or not an article is public to
 put up with it. To do this:
 
-previss=46-2
-prevnnn=143
+previss=46-3
+prevnnn=144
 
 - ensure that tb${prevnnn}capsule.txt is up to date, without /members/ urls.
 cd ../capsules
@@ -347,7 +347,7 @@ rm dir*/tb${prevnnn}*.* dir2.process/issue.xml
 
 - commit:
 svn status  # should be just the expected landing files; then:
-svn commit -m"archive landing files: $previss (tb$prevnnn) public" dir1*
+svn commit -m"archive updated landing files: $previss (tb$prevnnn) public" dir1*
 svn diff ../Makefile # should be just testiss and crossref_iss, undo:
 svn revert ../Makefile
 
@@ -370,11 +370,14 @@ cp archive.PREVN/* .
 When needing to make updates to the crossref data for a
   previously-uploaded issue, e.g., we got the url wrong:
 cp dir3.uploaded/tbNNN/issue{,-corr`date +%Y%m%d`}.xml 
-edit the new issue-corr*.xml as needed; update timestamp values
-  for affected records, and for the whole upload.
-  unchanged records must be removed from the file, else crossref will
-    fail to do any updates (though their process reports "success" on
-    the changed records, sigh).
+  The metadata and issue-as-a-whole stuff at the top stays,
+    except that the <timestamp> values must be updated.
+  Unchanged <journal_article>s must be removed from the file, else
+    crossref will fail to do any updates (though their process reports
+    "success" on the changed records, sigh).
+  For the changed <journal_article>s, update the timestamp as well as
+    whatever the actual corrections are.
+    
 in Makefile, change the xml_output assignment to the issue-corr.xml file.
 make upload-test
 if ok, make upload-real
