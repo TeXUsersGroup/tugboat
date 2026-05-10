@@ -47,6 +47,17 @@ cover1.pdf: word-nobox.pdf press2.pdf coverdrawing.pdf
 #	pdfselect 1 1 $< $@
 #	$(cp) $@ ../CADMUS/cover3.pdf
 
+# convenience targets to make single covers.
+c1:
+	$(MAKE) cover1.pdf
+c2:
+	$(MAKE) cover2.pdf
+c3:
+	$(MAKE) cover3.pdf
+c4:
+	$(MAKE) cover4.pdf
+
+# emacs-page
 # We want the complete.pdf that we post to have both the internal links
 # on the toc pages, that we created in toclinks.pdf, and the external
 # links within the issue.pdf, that were created per-article.
@@ -77,15 +88,7 @@ toclinks.pdf: toclinks.tex cover2.tex cover3.tex cover4.tex tubtocmac.tex \
               ../CADMUS/issue.pdf
 	$(PDFTEX) '$<' </dev/null || { rm -f $@; exit 1; }
 
-force:
-
-clean:
-	rm -f *.log *.dvi *.ps cover*.pdf titlepage.pdf *stpage.tex 
-
-# to send to bb.
-cnt:
-	tb=.. tubcont2cnt $(tb)cont.tex | tee $(tb)prelimcnt
-
+# emacs-page
 pfile = ../tugboat.dates
 p_titlepage := $(shell sed -n 's/^.*def.TBtitlepage{\([0-9]*\)}.*/\1/p' $(pfile))
 #p_ad1 := $(shell sed -n 's/.def.TBadpage{\([0-9]*\)}.*/\1/p' $(pages))
@@ -100,6 +103,7 @@ cadmus cad ca: $(c3_target)
 	$(cp) cover4.pdf         ../CADMUS/cover4.pdf
 	$(cp) titlepage.pdf      ../CADMUS/p$(p_titlepage).pdf
 	chmod a+r ../CADMUS/* ../webdir/*
+# we don't include complete there since we don't build it until the end.
 
 spell:
 	check_files=cover*.tex; \
@@ -108,7 +112,16 @@ spell:
 check ck:
 	cd .. && $(MAKE) $@
 
-# 
+force:
+
+clean:
+	rm -f *.log *.dvi *.ps cover*.pdf titlepage.pdf *stpage.tex 
+
+# to send to bb.
+cnt:
+	tb=.. tubcont2cnt $(tb)cont.tex | tee $(tb)prelimcnt
+
+# emacs-page
 tbnn := $(shell expr $(tbn) + 1)
 pdir := ../../httpd/html/TUGboat/production/$(shell basename $(tn))
 
