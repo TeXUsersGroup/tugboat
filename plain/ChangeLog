@@ -1,3 +1,8 @@
+2026-05-16  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.cmn (\Thanh): put the acute to the right of the
+	circumflex instead of vertically above. See tugboat.dtx for more.
+
 2025-06-07  Karl Berry  <karl@freefriends.org>
 
 	* tubguide.tex (\subtext): describe it (and disrecommend it).

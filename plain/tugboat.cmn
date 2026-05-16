@@ -1,6 +1,6 @@
 %% @texfile{
 %%     filename   = "tugboat.cmn",
-%%     copyright  = "Copyright 1993-1996,2006,2008,2011-2024 TeX Users Group.
+%%     copyright  = "Copyright 1993-1996,2006,2008,2011-2026 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -30,7 +30,7 @@
 \next
 
 \def\fileversion{v1.32}
-\def\filedate{2025-06-16}
+\def\filedate{2026-05-16}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -214,7 +214,7 @@
 \def\TeXworks{\TeX\kern-.07em works}
 \def\TeXXeT{\TeX-{}-\XeT}
 \def\TFM{\acro{TFM}}
-\def\Thanh{H\`an~Th\^e\llap{\raise.5ex\hbox{\'{}}}~Th\`anh}
+\def\Thanh{H\`an~Th\^e\llap{\raise.3ex\hbox{\'{}\kern-0.4ex}}~Th\`anh}
 \def\TIFF{\acro{TIFF}}
 \def\TikZ{Ti{\it k}Z}
 \def\ttn{{\sl TTN}\spacefactor1000 }
@@ -1044,6 +1044,9 @@ that may not be obvious.  For full definitions, see real code above.
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+                      \Thanh now typesets the acute to the right of the
+                        circumflex, instead of vertically over;
+                        see tugboat.dtx for more.
                       Define \LuaHBTeX abbrev.
 
 1.32      16 Jun 25   No real changes, just keeping version number in sync.
