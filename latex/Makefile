@@ -9,13 +9,15 @@ pdflatex = $(texfot) pdflatex$(dev) $(opt)
 lualatex = $(texfot) lualatex$(dev) $(opt)
 xelatex = $(texfot) xelatex$(dev) $(opt)
 #
+bibtex = bibtex -terse
+#
 texfot = PATH=$(shell tlrel):$(PATH) texfot
 texfot = texfot
 
 ltubguid.pdf: ltubguid.ltx ltugboat.cls
 	rm -f tubguide.bib ctandir.sty
 	$(pdflatex) $<
-	bibtex ltubguid
+	$(bibtex) ltubguid
 	$(pdflatex) $<
 
 tugboat-code.pdf: tugboat.dtx ltugboat.cls
@@ -65,25 +67,27 @@ checkblx: ltugboat.cls tubib.bib
 	$(pdflatex) tubibauths-blx && biber -q tubibauths-blx && $(pdflatex) tubibauths-blx
 	$(pdflatex) tubibed-blx && biber -q tubibed-blx && $(pdflatex) tubibed-blx
 
+try: ltugboat.cls
+
 checkbib: ltugboat.cls tugboat.bst tubib.bib
-	$(pdflatex) tubibauths && bibtex tubibauths && $(pdflatex) tubibauths
-	$(pdflatex) tubibed && bibtex tubibed && $(pdflatex) tubibed
+	$(pdflatex) tubibauths && $(bibtex) tubibauths && $(pdflatex) tubibauths
+	$(pdflatex) tubibed && $(bibtex) tubibed && $(pdflatex) tubibed
 #
-	$(pdflatex) tubibnummonth && bibtex tubibnummonth && $(pdflatex) tubibnummonth
-#	$(pdflatex) tubibjtitle && bibtex tubibjtitle && $(pdflatex) tubibjtitle
-	$(pdflatex) tubibpages && bibtex tubibpages && $(pdflatex) tubibpages
+	$(pdflatex) tubibnummonth && $(bibtex) tubibnummonth && $(pdflatex) tubibnummonth
+#	$(pdflatex) tubibjtitle && $(bibtex) tubibjtitle && $(pdflatex) tubibjtitle
+	$(pdflatex) tubibpages && $(bibtex) tubibpages && $(pdflatex) tubibpages
 #
-	$(lualatex) tubiball; bibtex tubiball && $(pdflatex) tubiball
-	$(pdflatex) tubibdoi; bibtex tubibdoi && $(pdflatex) tubibdoi
+	$(lualatex) tubiball; $(bibtex) tubiball && $(pdflatex) tubiball
+	$(pdflatex) tubibdoi; $(bibtex) tubibdoi && $(pdflatex) tubibdoi
 #
-	$(lualatex) tubiball && bibtex tubiball && $(pdflatex) tubiball
-	$(pdflatex) tubiball && bibtex tubiball && $(pdflatex) tubiball
+	$(lualatex) tubiball && $(bibtex) tubiball && $(pdflatex) tubiball
+	$(pdflatex) tubiball && $(bibtex) tubiball && $(pdflatex) tubiball
 #
-	$(xelatex) tubibthanh && bibtex tubibthanh && $(xelatex) tubibthanh
-	$(lualatex) tubibthanh && bibtex tubibthanh && $(lualatex) tubibthanh
-	$(pdflatex) tubibthanh && bibtex tubibthanh && $(pdflatex) tubibthanh
+	$(xelatex)  tubibthanh && $(bibtex) tubibthanh && $(xelatex) tubibthanh && mv tubibthanh.pdf xebibthanh.pdf
+	$(lualatex) tubibthanh && $(bibtex) tubibthanh && $(lualatex) tubibthanh && mv tubibthanh.pdf luabibthanh.pdf
+	$(pdflatex) tubibthanh && $(bibtex) tubibthanh && $(pdflatex) tubibthanh && mv tubibthanh.pdf pdfbibthanh.pdf
 #
-	$(pdflatex) tubib && bibtex tubib && $(pdflatex) tubib.tex
+	$(pdflatex) tubib && $(bibtex) tubib && $(pdflatex) tubib.tex
 
 clean:
 	rm -f *.log *.aux *.out *.toc *.pdf *.dvi *.bbl *.blg *.html *.hd

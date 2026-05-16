@@ -2,12 +2,42 @@
 % Public domain.
 % 
 % Test bib entry with \Thanh. We should get the definition from
-% tugboat.dtx, not tugboat.def, and it should work under both pdflatex
-% and xe/lualatex.
+% tugboat.dtx, not tugboat.def, and it should work under pdflatex,
+% lualatex, and xelatex.
+% 
+% See comments in tugboat.dtx at definition of \Thanh.
 % 
 \documentclass{ltugboat}
+\hfuzz\maxdimen
+
+\ifx\luatexversion\undefined
+  \ifx\XeTeXrevision\undefined
+    \ifx\pdftexversion\undefined
+      \def\engineident{unknown}%
+      \let\engineabbr=\undefined
+    \else
+      \def\engineident{pdftex \the\pdftexversion}%
+      \def\engineabbr{p}%
+    \fi
+  \else
+    \def\engineident{xetex \XeTeXrevision}%
+    \def\engineabbr{x}%
+  \fi
+\else
+  \def\engineident{luatex \the\luatexversion}%
+  \def\engineabbr{l}%
+\fi
+
+\ifx\engineabbr p\else
+% to see that we get the desired horizontally-offset acute accent with
+% the newcm fonts, can uncomment this:
+%  \usepackage[olddefault]{fontsetup}
+% The default lm fonts have the accents vertically stacked.
+\fi
+
 \begin{document}
-\nocite{Thanh:2000:MTE}
+\noindent \engineident~\cite{Thanh:2000:MTE}.
+
 \bibliographystyle{tugboat}
 \bibliography{tugboat.bib}
 \end{document}

@@ -2,6 +2,9 @@ $Id$
 This file records noteworthy changes.  This file is public domain.
 
 ltugboat.cls
+- \Thanh now uses the e-circumflex-acute (U+1EBF) character from the
+  current font, if it's defined. If it's not defined, the acute is now
+  typeset to the right of the circumflex, instead of vertically above it.
 - new abbreviations \MiKTeX, \TeXLive.
 
 -----------------

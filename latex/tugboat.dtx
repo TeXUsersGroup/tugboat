@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2026-04-23 v2.36
+                   [2026-05-16 v2.36
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -916,25 +916,7 @@
 \def\TeXworks{\TeX\kern-.07em works}
 \def\TeXXeT{\TeX-{}-\XeT}
 \def\TFM{\acro{TFM}}
-\ifTBunicodeengine
-  \AtBeginDocument{% in case a different font is loaded
-    % \iffontchar is from e-TeX; safe to use under Unicode engines.
-    \iffontchar\font"1EBF
-      \def\TBecircacute{\char"1EBF }%
-    \else
-      \def\TBecircacute{\^e\llap{\raise 0.5ex\hbox{\'{}}}}%
-    \fi
-    \def\Thanh{H\`an~Th\TBecircacute~Th\`anh}%
-  }%
-\else % non-Unicode engine, use our traditional definition.
-  \def\Thanh{H\`an~Th\^e\llap{\raise 0.5ex\hbox{\'{}}}~Th\`anh}
-  % We could also go the other direction, and always use the Unicode
-  % character, after:
-  % \ifdefined\DeclareUnicodeCharacter
-  %   \DeclareUnicodeCharacter{1EBF}{\^e\llap{\raise 0.5ex\hbox{\'{}}}}
-  % \fi
-  % but let's make the smaller change.
-\fi
+% \Thanh is defined below.
 \def\TikZ{Ti\/{\em k}Z}
 \def\ttn{\textsl{TTN}\@}
 \def\TTN{\textsl{\TeX{} and TUG News}}
@@ -1037,7 +1019,81 @@
 \def\NoBlackBoxes{\overfullrule=\z@}
 \def\newline{\hskip\z@\@plus\pagewd\break}
 %    \end{macrocode}
+
+% \begin{macro}{\Thanh}
+% Han The Thanh's name is complicated because it has a double-accented
+% character over the e, U+1EBF (it also grave accents over the a's, but
+% they aren't a problem): \Thanh. Many fonts do not have this character;
+% hardly any, in the old days, and definitely not Computer Modern.
+% 
+% So, when the e-circumflex-acute character in Thanh's name is not in the
+% font, we'll use the following definition. Until fall 2025, we used a
+% definition that put the acute vertically over the e. But then Barbara
+% said, and Thanh agreed, that it is preferable nowadays to put the
+% acute to the right of the circumflex. So that's what this definition does:
 %
+%    \begin{macrocode}
+\def\TBecircacute{\^e\llap{\raise 0.3ex\hbox{\'{}\kern-0.4ex}}}%
+\DeclareUnicodeCharacter{1EBF}{\TBecircacute} % for the literal character
+%    \end{macrocode}
+%
+% Our previous definition, used for many years, which put the acute
+% directly over the circumflex:
+%\def\Thanh{H\`an~Th\^e\llap{\raise 0.5ex\hbox{\'{}}}~Th\`anh}
+%
+% Now let's use the character from the font, if it's defined:
+%    \begin{macrocode}
+\ifTBunicodeengine
+  \AtBeginDocument{% in case a different font gets loaded
+    % \iffontchar is from e-TeX; safe to use under Unicode engines.
+    \iffontchar\font"1EBF
+      % The character is in the font. Normally we'd want to just use it.
+      % However, the lm fonts, which are the LaTeX default with Unicode
+      % engines, put the acute vertically over the circumflex (perhaps
+      % since TUGboat did). So here's a way to get the TUGboat definition:
+      \let\TBecircacutebuilt=\TBecircacute
+      %
+      % But use the font's version by default. newcm does have the acute
+      % offset to the right.
+      \def\TBecircacute{\char"1EBF }%
+    \fi
+  }%
+\fi % (end TBunicodeengine)
+
+% Now we can define \Thanh itself, using \TBecircacute.
+\def\Thanh{H\`an~Th\TBecircacute~Th\`anh}%
+%    \end{macrocode}
+
+% One more complication. Add tagging for Thanh using the UTF-8 characters.
+% This comes from Frank Mittelbach, written for
+%   https://tug.org/TUGboat/tb47-1/tb145sojka-doctor-mittelbach.pdf
+%    \begin{macrocode}
+\ExplSyntaxOn
+\IfPDFManagementActiveT{
+\AddToHook{cmd/Thanh/before}
+ {
+   \mode_leave_vertical:
+   \tag_mc_end_push:
+   % I don't want to have non-ASCII characters in this source file.
+   % Hence, use TeX to insert U+00C0 and U+1EBF. Or maybe we need
+   % \char_generate:nn { "ABCD } { 12 } but not sure; please advise.
+   \tag_struct_begin:n{tag=Span,actualtext=H^^c0n~ Th^^^^1ebf Th^^c0nh}
+   \tag_mc_begin:n{}
+ }
+\AddToHook{cmd/Thanh/after}
+ {
+   \tag_mc_end:
+   \tag_struct_end:
+   \tag_mc_begin_pop:n{}
+ }
+} % (end PDFManagementactiveT)
+\ExplSyntaxOff
+%    \end{macrocode}
+%
+% See the TUGboat test file tubibthanh.tex (and the Makefile) to
+% exercise all this.
+% \end{macro}
+
 % \begin{macro}{\tubsentencespace}
 % Occasionally, notably after citations that need to come after a
 % sentence-ending period, we want to tell \TeX\ that it's still at the
