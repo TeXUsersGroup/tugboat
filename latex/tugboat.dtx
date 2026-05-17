@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2026-05-16 v2.36
+                   [2026-05-17 v2.36
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -1034,14 +1034,24 @@
 %
 %    \begin{macrocode}
 \def\TBecircacute{\^e\llap{\raise 0.3ex\hbox{\'{}\kern-0.4ex}}}%
-\DeclareUnicodeCharacter{1EBF}{\TBecircacute} % for the literal character
 %    \end{macrocode}
 %
 % Our previous definition, used for many years, which put the acute
 % directly over the circumflex:
 %\def\Thanh{H\`an~Th\^e\llap{\raise 0.5ex\hbox{\'{}}}~Th\`anh}
 %
-% Now let's use the character from the font, if it's defined:
+% If running under \texttt{pdflatex}, allow the actual UTF-8 character
+% to be used in text. \cs{DeclareUnicodeCharacter} is not defined under
+% the Unicode engines. A possible definition is given here:
+% \url{https://tex.stackexchange.com/questions/195458},
+% but let's wait to see if we need it.
+%    \begin{macrocode}
+\ifx\DeclareUnicodeCharacter\undefined\else
+\DeclareUnicodeCharacter{1EBF}{\TBecircacute} % for the literal character
+\fi
+%    \end{macrocode}
+
+% Let's use the character from the font, if it's defined:
 %    \begin{macrocode}
 \ifTBunicodeengine
   \AtBeginDocument{% in case a different font gets loaded

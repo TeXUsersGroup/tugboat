@@ -82,7 +82,7 @@ checkbib: ltugboat.cls tugboat.bst tubib.bib
 #
 	$(lualatex) tubiball && $(bibtex) tubiball && $(pdflatex) tubiball
 	$(pdflatex) tubiball && $(bibtex) tubiball && $(pdflatex) tubiball
-#
+x:
 	$(xelatex)  tubibthanh && $(bibtex) tubibthanh && $(xelatex) tubibthanh && mv tubibthanh.pdf xebibthanh.pdf
 	$(lualatex) tubibthanh && $(bibtex) tubibthanh && $(lualatex) tubibthanh && mv tubibthanh.pdf luabibthanh.pdf
 	$(pdflatex) tubibthanh && $(bibtex) tubibthanh && $(pdflatex) tubibthanh && mv tubibthanh.pdf pdfbibthanh.pdf
