@@ -71,7 +71,6 @@ use Getopt::Long qw(:config no_ignore_case);
 use Text::Balanced;
 
 BEGIN {
-  $^W = 1;
   ($::SCRIPTDIR = $0) =~ s,/[^/]*$,,;
   $::SCRIPTDIR = "." if $::SCRIPTDIR eq $0;
   unshift (@INC, $::SCRIPTDIR);
@@ -152,6 +151,8 @@ In addition, if --crossref is specified, and the issue number is new
 enough (specified in capout.pl), *.rpi and *.html files are generated in
 the specified subdirectory for doi registration with Crossref;
 see crossref/README for details.
+
+With --authors, output the list of authors from the capsule file and exit.
 
 --authors, -A    output author list and exit.
 --crossref=DIR   generate DIR/*.{rpi,html} files for doi registration.

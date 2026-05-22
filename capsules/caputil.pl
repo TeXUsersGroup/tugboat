@@ -12,9 +12,9 @@ sub normalize_whitespace {
   my @args = @_; # we want values, not references
   my @ret = ();
   for my $str (@args) {
-    $str =~ s/^\s*//s;
-    $str =~ s/\s*$//s;
-    $str =~ s/\s\s+/ /sg;
+    $str =~ s/^\s+//m;
+    $str =~ s/\s+$//m;
+    $str =~ s/\s+/ /msg;
     push (@ret, $str);
   }
   return wantarray ? @ret : $ret[0];
@@ -25,7 +25,9 @@ sub normalize_whitespace {
 # 
 sub assert_nonempty {
   my ($str,$label) = @_;
-  if (length ($str) == 0) {
+  if (! defined ($str)) {
+    die "$label: undefined\n";
+  } elsif (length ($str) == 0) {
     die "$label: empty string\n";
   }
   return $str;
@@ -150,7 +152,7 @@ sub ddebug {
 }
 
 
-# Warn hash value prettily, starting with "LABEL: ".
+# warn hash value prettily, starting with "LABEL: ".
 # 
 sub info_hash {
   return if $::OPT{"quiet"};
@@ -160,6 +162,14 @@ sub info_hash {
   warn "$str\n";  
 }
 
+# with each element on its own line.
+sub info_hash1 {
+  $::HASH_AS_STRING_NL = 1;  # sorry for global,
+  &info_hash (@_);           # didn't want to change calls
+}
+
+# Only if debugging.
+# 
 sub debug_hash {
   return unless $::OPT{"debug"};
   &info_hash (@_);
@@ -177,6 +187,10 @@ sub ddebug_hash {
 # references, and also to catch both blessed and unblessed hash
 # references. This logic isn't perfect but I hope it will suffice.
 # 
+# Replace newlines with "\n" (so the output is ambiguous, sorry.).
+# 
+# If $::HASH_AS_STRING_NL is set, output a newline before each key:val.
+# 
 sub hash_as_string {
   my (%hash) = (ref $_[0] && $_[0] =~ /.*HASH.*/) ? %{$_[0]} : @_;
   my $str = "{";
@@ -189,7 +203,9 @@ sub hash_as_string {
     # recursively expanding hashes feels like too much.
     $key =~ s/\n/\\n/g;
     $val =~ s/\n/\\n/g;
-    push (@items, "$key:$val");
+    my $nl = (defined $::HASH_AS_STRING_NL && $::HASH_AS_STRING_NL)
+             ? "\n" : "";
+    push (@items, "$nl$key:$val");
   }
   $str .= join (",", @items);
   $str .= "}";
