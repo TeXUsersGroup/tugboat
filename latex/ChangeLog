@@ -1,3 +1,13 @@
+2026-05-22  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\abovedisplayskip) <\normalsize>: make exactly
+	equal to \topsep, so that spacing will be equal to that
+	above/below lists and verbatims, when stretched. Just a reduction
+	in stretchability.
+	<\small>: 2/3 \topsep.
+	<\footnotesize>: 1/3 \topsep.
+	* NEWS: mention this.
+
 2026-05-17  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (1EBF): \DeclareUnicodeCharacter is only

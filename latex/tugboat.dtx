@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2026-05-17 v2.36
+                   [2026-05-22 v2.36
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -2715,9 +2715,7 @@
 %
 % We need to trigger the making of a section title in some cases where
 % we don't have a section title proper (for example, in material taken
-% over from
-%^^A \acro
-% {TTN}).
+% over from TTN).
 %    \begin{macrocode}
 \def\@makesectitle{\ifSecTitle
     \global\SecTitlefalse
@@ -3327,12 +3325,22 @@
 %
 % \subsection{Size changing commands}
 %
-% Apart from their `normal' effects, these commands change the glue
-% around displays.
+% In addition to their `normal' effects, these commands change the glue
+% around displays to match that of being around lists.  Otherwise, in a
+% column that contains both displays and ``lists'', including verbatim
+% blocks, etc., the different spacing can become noticeable.  For
+% example, tb145beisert-eqnlines, page~4, column~1. \LaTeX's default for
+% \cs{abovedisplayskip} and \cs{belowdisplayskip} are much larger (and
+% not equal).
+% \begin{macro}{\normalsize}
+% \begin{macro}{\small}
+% \begin{macro}{\footnotesize}
+% \begin{macro}{\abovedisplayskip}
+% \begin{macro}{\belowdisplayskip}
 %    \begin{macrocode}
 \renewcommand{\normalsize}{%
    \@setfontsize\normalsize\@xpt\@xiipt
-   \abovedisplayskip=3\p@\@plus 3\p@\@minus\p@
+   \abovedisplayskip=\topsep % same as space above lists/verbatims/etc.
    \belowdisplayskip=\abovedisplayskip
    \abovedisplayshortskip=\z@\@plus 3\p@
    \belowdisplayshortskip=\p@\@plus 3\p@\@minus\p@
@@ -3340,7 +3348,7 @@
 
 \renewcommand{\small}{%
    \@setfontsize\small\@ixpt{11}%
-   \abovedisplayskip=2.5\p@\@plus 2.5\p@\@minus\p@
+   \abovedisplayskip=2pt plus.66pt minus.66pt % 2/3 \topsep
    \belowdisplayskip=\abovedisplayskip
    \abovedisplayshortskip=\z@\@plus 2\p@
    \belowdisplayshortskip=\p@\@plus 2\p@\@minus\p@
@@ -3348,12 +3356,17 @@
 
 \renewcommand{\footnotesize}{%
     \@setfontsize\footnotesize\@viiipt{9.5}%
-    \abovedisplayskip=3\p@\@plus 3\p@\@minus\p@
+   \abovedisplayskip=1pt plus.33pt minus.33pt % 1/3 \topsep
     \belowdisplayskip=\abovedisplayskip
     \abovedisplayshortskip=\z@\@plus 3\p@
     \belowdisplayshortskip=\p@\@plus 3\p@\@minus\p@
 }
 %    \end{macrocode}
+% \end{macro} ^^A belowdisplayskip
+% \end{macro} ^^A abovedisplayskip
+% \end{macro} ^^A footnotesize
+% \end{macro} ^^A small
+% \end{macro} ^^A normalsize
 %
 % \subsection{Lists and other text inclusions}
 %
@@ -4187,11 +4200,9 @@
 %
 % \begin{macro}{\if@proc@sober}
 % \begin{macro}{\if@proc@numerable}
-% ^^A\acro
 % {TUG}'96 proceedings switched to more sober headings still; so
 % the \textsf{tug95} option establishes the original state.  In the
 % absence of any other guidance, we use the '96 for
-% ^^A\acro
 % {TUG}'97 proceedings, but also allow numbering of sections.
 %
 %    \begin{macrocode}

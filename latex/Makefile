@@ -67,7 +67,7 @@ checkblx: ltugboat.cls tubib.bib
 	$(pdflatex) tubibauths-blx && biber -q tubibauths-blx && $(pdflatex) tubibauths-blx
 	$(pdflatex) tubibed-blx && biber -q tubibed-blx && $(pdflatex) tubibed-blx
 
-try: ltugboat.cls
+try: ltugboat.cls tugboat-code.pdf
 
 checkbib: ltugboat.cls tugboat.bst tubib.bib
 	$(pdflatex) tubibauths && $(bibtex) tubibauths && $(pdflatex) tubibauths

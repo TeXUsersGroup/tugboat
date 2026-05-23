@@ -6,6 +6,8 @@ ltugboat.cls
   current font, if it's defined. If it's not defined, the acute is now
   typeset to the right of the circumflex, instead of vertically above it.
 - new abbreviations \MiKTeX, \TeXLive.
+- \abovedisplayskip and \belowdisplayskip reduced to be the same as
+  \topsep (above/below lists, verbatims, etc.), to avoid unequal spacing.
 
 -----------------
 2.36 (2026-01-14)
