@@ -2,4 +2,8 @@ $Id$
 (This file in public domain.)
 
 These are miscellaneous files used in TUGboat production.
-They are not general enough or polished enough for public release.
+They are not general enough or polished enough for public release,
+and/or too TUGboat-specific.
+
+The scripts all have "tub" in their names so that it's reasonable to add
+this directory to PATH without fear of conflict.

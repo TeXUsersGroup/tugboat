@@ -4,6 +4,9 @@
 # 
 # Convert input $1 to output $2, converting color to cmyk.
 # https://stackoverflow.com/questions/48936435/
+# and adding ColorConversionStrategyForImages.
+# 
+# See ps2pdf-tub for details about options.
 
 if test $# -ne 2; then
   echo "Usage: $0 INFILE OUTFILE" >&2
@@ -19,8 +22,24 @@ exec $gs -q -dNOPAUSE -dBATCH \
   -dCompressFonts=true \
   -dDetectDuplicateImages \
   -dEmbedAllFonts \
+  -dPDFSETTINGS=/prepress \
   -dPrinted=false \
   \
   -sColorConversionStrategy=CMYK \
+  -sColorConversionStrategyForImages=CMYK \
   -dProcessColorModel=/DeviceCMYK \
   -f "$1"
+
+# for downsampling images to 300dpi since that's all LSI accepts.
+#gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 \
+#   -dNOPAUSE -dQUIET -dBATCH \
+#   -dDownsampleColorImages=true -dColorImageResolution=300 -dColorImageDownsampleThreshold=1.0 \
+#   -dDownsampleGrayImages=true -dGrayImageResolution=300 -dGrayImageDownsampleThreshold=1.0 \
+#   -dDownsampleMonoImages=true -dMonoImageResolution=300 -dMonoImageDownsampleThreshold=1.0 \
+#   -sOutputFile=output.pdf input.pdf
+
+# -dDownsample[Color/Gray/Mono]Images=true
+# -d[Color/Gray/Mono]ImageResolution=300
+# -d[Color/Gray/Mono]ImageDownsampleThreshold=1.0: Forces Ghostscript
+# to compress any image exceeding 300 DPI. Setting this to 1.0 ensures
+# no high-resolution images bypass the downsampling filter. 

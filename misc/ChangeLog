@@ -1,3 +1,9 @@
+2026-05-30  Karl Berry  <karl@freefriends.org>
+
+	* ps2pdf-cmyk-tub: add -dPDFSETTINGS=/prepress 
+	and -sColorConversionStrategyForImages=CMYK for prelitbook.
+	Insert commented-out sample invocation for downsampling.
+
 2026-05-02  Karl Berry  <karl@freefriends.org>
 
 	* tubcont2cnt: use realpath so argument doesn't need to be absolute.
