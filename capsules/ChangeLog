@@ -1,6 +1,29 @@
+2026-06-12  Karl Berry  <karl@freefriends.org>
+
+	* capaccum-author.pl (output_author_list): die if we're about to
+	output an empty author string, which we never want to do.
+	(find_authors): &transform_author now returns a list. Oops.
+	* caputil.pl (normalize_whitespace): add previous normalization
+	as comment, to help with debugging.
+
+	* Makefile (one): check for pattern  &amp;#  in output,
+	meaning a double escape in the "editorial comments", etc.
+	Not yet fixed.
+	
 2026-05-30  Karl Berry  <karl@tug.org>
 
 	* tb145capsule.tex (sojka-mittelbach): f-ligature erratum (sigh).
+
+2026-05-22  Karl Berry  <karl@freefriends.org>
+
+	* caputil.pl (normalize_whitespace): inadvertently only replaced
+	two or more \s with a single space, not just one \s, e.g.,
+	a newline.
+	(info_hash1): new fn to output each hash element on its own line.
+	(hash_as_string): output newline before each element if
+	$::HASH_AS_STRING_NL is true.
+
+	* captub: mention --authors in --help, though not much used any more.
 
 2026-05-06  Karl Berry  <karl@freefriends.org>
 

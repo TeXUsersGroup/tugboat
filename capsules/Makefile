@@ -43,7 +43,7 @@ endif
 one:
 	@perl -cw captub && date
 	$(captub) tb$(testiss)capsule.txt >$(outone)
-	unparsed=`egrep '[{}~$$\]|href=""|Dash\>' $(outone) \
+	unparsed=`egrep '[{}~$$\]|href=""|&amp;#|Dash\>' $(outone) \
 	          | egrep -v '<tt>\\\\|/~(hammond|ross)'`; \
 	  test -z "$$unparsed" || { echo "$$unparsed" >&2; exit 1; }; \
 	test -z "$(profopt)" || $(profcmd)

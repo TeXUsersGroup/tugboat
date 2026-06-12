@@ -14,6 +14,7 @@ sub normalize_whitespace {
   for my $str (@args) {
     $str =~ s/^\s+//m;
     $str =~ s/\s+$//m;
+    #old $str =~ s/\s\s+/ /sg;
     $str =~ s/\s+/ /msg;
     push (@ret, $str);
   }

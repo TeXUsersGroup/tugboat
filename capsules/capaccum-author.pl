@@ -34,6 +34,12 @@ END_HEADER
   my $index_count = 0;
   print $fh "<p><table>\n";
   for my $a_sort (sort { lc($a) cmp lc($b) } keys %$authors) {
+    if (! $a_sort) {
+      # This should never happen; probably a programming error
+      # related to the return of transform_author.
+      &debug_hash ("empty author in accumulated list", $authors->{$a_sort});
+      die ("quitting");
+    }
     if ($item_count % 40 == 0) {
       if ($index_count % 4 == 0) {
         print $fh qq!<tr>!; # start a new row of names.
@@ -75,11 +81,12 @@ sub find_authors {
       
       my @author_html = @{$cap{"author_html"}};
       shift @author_html;  # discard single-printable-html string
+      
       #
       # if have %person directive (a string, can be multiple names
       # separated by "and", etc., per transform_author), augment list.
       if ($cap{"author_person"}) {
-        my $person_html = &transform_author ($cap{"author_person"});
+        my ($person_html) = &transform_author ($cap{"author_person"});
         my @person_html = @{$person_html};
         shift @person_html;  # discard its single-printable-html string too
         push (@author_html, @person_html); # order doesn't matter.
