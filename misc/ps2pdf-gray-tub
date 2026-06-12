@@ -8,16 +8,18 @@
 # (or current version). For TUGboat, black seems preferable to printing
 # gray text just because the original is color, though color text is rare.
 # 
-# See also:
-# http://handyfloss.net/2008.09/making-a-pdf-grayscale-with-ghostscript/
-# --isilanes 
+# Also, we convert to PDF 1.3 because almost always the purpose of
+# grayscaling is for printing, and Cadmus' process uses 1.3.
+# See ps2pdf-cmyk-tub for more details on that, and
+# see ps2pdf-tub for comments on other settings.
+# 
+# For grayscaling, see also (some may no longer work):
+# http://handyfloss.net/2008.09/making-a-pdf-grayscale-with-ghostscript/--isilanes 
 # https://stackoverflow.com/questions/20128656/how-to-convert-a-pdf-to-grayscale-from-command-line-avoiding-to-be-rasterized
 # https://superuser.com/questions/200378/converting-a-pdf-to-black-white-with-ghostscript
 # https://stackoverflow.com/a/23553427
 # https://unix.stackexchange.com/questions/93959/how-to-convert-a-color-pdf-to-black-white
-# https://ghostscript.com/doc/9.16/Use.htm
-# 
-# See ps2pdf-tub for comments on other settings.
+# https://ghostscript.readthedocs.io/en/latest/Use.html
 
 if test $# -ne 2; then
   echo "Usage: $0 INFILE OUTFILE" >&2
@@ -34,8 +36,14 @@ exec $gs -q -dNOPAUSE -dBATCH \
   -dDetectDuplicateImages \
   -dEmbedAllFonts \
   -dPrinted=false \
+  \
   -dBlackText \
   \
   -sColorConversionStrategy=Gray \
   -dProcessColorModel=/DeviceGray \
+  \
+  -dCompatibilityLevel=1.3 \
+  -dWriteXRefStm=false \
+  -dWriteObjStms=false \
+  \
   -f "$1"

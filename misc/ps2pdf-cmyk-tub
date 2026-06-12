@@ -38,6 +38,7 @@ exec $gs -q -dNOPAUSE -dBATCH \
   -dCompatibilityLevel=1.3 \
   -dWriteXRefStm=false \
   -dWriteObjStms=false \
+  \
   -f "$1"
 
 # For downsampling images to 300dpi since that's all LSI accepts,

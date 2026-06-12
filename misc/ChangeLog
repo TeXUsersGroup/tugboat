@@ -1,3 +1,13 @@
+2026-06-12  Max Chernoff  <tex@maxchernoff.ca>
+
+	* check-proof-pdf-tub: new ConTeXt script to check Cadmus proof pdfs
+	for tofu a la tb135sojka-mittelbach.
+	Original name: tugboat-font-check.cld.
+
+2026-06-12  Karl Berry  <karl@freefriends.org>
+
+	* ps2pdf-gray-tub: also output PDF 1.3 and avoid compressed streams.
+
 2026-06-11  Karl Berry  <karl@freefriends.org>
 
 	* pdfselect-tub,
