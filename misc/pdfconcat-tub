@@ -1,0 +1,80 @@
+#!/bin/sh
+# $Id$
+# (rdist from home) Public domain.
+# See comments in ps2pdf-tub about settings.
+
+if test $# -le 1; then
+  echo "Usage: $0 OUTFILE INFILE1 [INFILE2 ...]" >&2
+  exit 1
+fi
+
+out=$1; shift
+
+gs_out=${TMPDIR-/tmp}/pdfconcerr
+: ${gs=gs}
+$gs -q -dBATCH -dNOPAUSE \
+  -sDEVICE=pdfwrite \
+  -sOutputFile="$out" \
+  -r1200 \
+  -dAutoRotatePages=/None \
+  -dPrinted=false \
+  "$@" >$gs_out 2>&1
+
+status=$?
+if test $status -ne 0; then
+  echo "$0: $gs failed (status $status)." >&2
+  cat $gs_out >&2
+elif grep 'Missing glyph' $gs_out >/dev/null; then
+  echo "$0: got missing glyphs, forcing error exit." >&2
+  cat $gs_out
+  status=1
+elif grep 'used undefined glyph' $gs_out >/dev/null; then # tb145*fantasia
+  echo "$0: undefined glyphs, succeeding anyway: $gs_out" >&2
+  status=0
+elif test -s $gs_out; then
+  echo "$0: unexpected output from gs, also forcing error:" >&2
+  cat $gs_out
+  status=2
+fi
+exit $status
+
+# gs does not truly concatenate pdfs, but just reads one long stream.
+# This can lead to missing glyphs if fonts have the same ids, in the
+# presence of other bugs (through 10.05.0). My bug report:
+# https://bugs.ghostscript.com/show_bug.cgi?id=708767
+# 
+# But with the fix done there, it seems in practice it should be ok.
+# If problems persist, pdftk is probably the next simplest method.
+
+# pdfjoin
+pdfjoin --quiet --paper letterpaper --noautoscale true --turn false \
+  --preamble '\usepackage{pdf14}' \
+  --preamble '\pdfinclusioncopyfonts=1' \
+  --outfile "$out" "$@"
+exit $?
+
+# context
+texexec --pdfcombine --paperformat=letter --comb=1\*1 \
+        --nobanner --result=$out "$@"
+status=$?
+test $status = 0 || rm -f $out
+for f in texexec-mpgraph.mp mpgraph.mp mprun.mp texexec.tex texexec.tmp \
+      texexec.tui `basename $out .pdf`.log; do
+  test -r $f && mv -f $f ${TMPDIR-/tmp}
+done
+exit $status
+
+# this is for double sided printing, says hans (21mar04)
+texexec --pdfarrange --result=$out "$@"
+
+# basic gs
+gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf
+
+# pdftk
+pdftk in1.pdf in2.pdf cat output out.pdf
+# pdftk - extract pages 1-3 and 6-10
+pdftk in.pdf cat 1-3 6-10 output out.pdf
+# pdftk - multiple files, selected pages:
+pdftk A=tb137complete.pdf B=issue.pdf cat A1-2 B output out.pdf
+
+# cpdf similar.

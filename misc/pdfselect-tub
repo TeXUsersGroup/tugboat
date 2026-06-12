@@ -1,0 +1,154 @@
+#!/bin/sh
+# $Id$
+# Public domain.
+# See comments in ps2pdf-tub about settings.
+
+if test $# -ne 4 && test $# -ne 3; then
+  echo "Usage: $0 FIRST LAST INFILE OUTFILE" >&2
+  echo "   or: $0 even|odd INFILE OUTFILE" >&2
+  exit 1
+fi
+
+first=$1
+if test "x$first" = xeven || test "x$first" = xodd; then
+  in=$2
+  out=$3
+else
+  last=$2
+  in=$3
+  out=$4
+fi
+
+# silently use .pdf instead of .tex or .ltx.
+orig_in=$in
+in=`echo "$orig_in" | sed 's/\.\(tex\|ltx\)/.pdf/'`
+if pdfinfo "$in" >/dev/null 2>&1; then :; else
+  printf "$0: input not pdf: $in" >&2
+  test "$in" != "$orig_in" && (printf " (from $orig_in)" >&2)
+  echo >&2
+  exit 1
+fi
+
+: ${gs=gs}
+
+if test x"$first" = xeven; then
+  select=-sPageList=even
+  # pdftk A=all.pdf cat Aodd output odd.pdf
+  # pdftk A=all.pdf cat Aeven output even.pdf
+elif test x"$first" = xodd; then
+  select=-sPageList=odd  
+elif echo "$first" | grep '^[0-9]\+$' >/dev/null; then
+  select="-dFirstPage=$first -dLastPage=$last"
+else
+  echo "$0: unrecognized first page: $first" >&2
+  exit 1
+fi
+
+errfile=/tmp/pdfselerr
+
+$gs -q -dBATCH -dNOPAUSE \
+  -sDEVICE=pdfwrite \
+  -sOutputFile="$out" \
+  -r1200 \
+  -dAutoRotatePages=/None \
+  -dPrinted=false \
+  $select \
+  "$in" -c quit >$errfile 2>&1
+
+status=$?
+if test $status -ne 0; then
+  echo "$0: $gs failed (status $status)." >&2
+  cat "$errfile" >&2
+  exit $status
+fi
+
+if test -s "$errfile"; then
+  # do not report these useless warnings:
+  # GPL Ghostscript 10.00.0: Destination page 1 lies outside the valid page range.
+  # GPL Ghostscript 10.00.0:    **** Warning: Outline has invalid link that was discarded.
+  egrep -v ': Destination page.*lies outside|:.*link that was discarded' \
+    "$errfile" >$errfile.2
+  if test -s "$errfile.2"; then
+    echo "$0: errors from $gs:" >&2
+    cat $errfile.2 >&2
+    exit 1
+  else
+    exit 0
+  fi
+
+elif test ! -s "$out"; then
+  echo "$0: empty output: $out" >&2
+  exit 1
+else
+  exit 0
+fi
+#-----------------------------------------------------------------------------
+#if test $# -ne 4; then
+#  echo "Usage: $0 FIRST LAST INFILE OUTFILE." >&2
+#  exit 1
+#fi
+#
+#first=$1
+#last=$2
+#in=$3
+#out=$4
+#
+#: ${pagefilter=$first-$last}
+#: ${pdfextra=--quiet}
+#
+#pdfjam --paper letterpaper --noautoscale true --turn false \
+#  --preamble '\usepackage{pdf14}' \
+#  --preamble '\pdfinclusioncopyfonts=1' \
+#  $pdfextra \
+#  --outfile "$out" "$in"  $pagefilter
+#exit $?
+#
+## context
+#if test $first = $last; then
+#  filter=$first
+#else
+#  filter=`seq $first $last | tr '[:space:]' , | sed 's/,$//'`
+#fi
+#
+#(set -x
+# texexec --silent --paperform=letter\*letter --mode=letter --pdfselect \
+#         --selection=$filter --result=$out $in)
+#status=$?
+#test $status = 0 || rm -f $out
+#for f in texexec-mpgraph.mp mpgraph.mp mprun.mp texexec.tex texexec.tmp \
+#      texexec.tui `basename $out .pdf`.log; do
+#  test -r $f && mv -f $f ${TMPDIR-/tmp}
+#done
+#exit $status
+#
+# with context:
+# - select:
+#texexec --pdfselect --selection=1,2,3,4,5 --result=ex1.pdf exemption-letter.pdf
+# - concat:
+#texexec --pdfarrange --result=ex2.pdf ex1.pdf page6.pdf 
+#
+# http://community.coherentpdf.com/ - nonfree.
+#
+## does not preserve searchable text - 8aug16 seems no longer true, yay.
+#gs -q -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile=$4 \
+#      -dFirstPage=$first -dLastPage=$last $in -c quit
+#exit $?
+#
+#pdftk infile.pdf cat 22-36 output outfile.pdf
+#pdftk infile.pdf cat 1 4-7 9 output outfile.pdf
+#
+#from poppler: pdfseparate, pdfunite
+#pdfseparate in.pdf out-%d.pdf # each on separate page
+#
+#consider pdfx python.
+#
+#https://github.com/pdfcpu/pdfcpu
+#
+# to diff pdfs (witiko 30mar26)
+#https://vslavik.github.io/diff-pdf/
+# 
+# to strip tags:
+#qpdf --linearize --drop-unused-objects=all input.pdf output.pdf
+# or:
+#gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH
+#-sOutputFile=output.pdf input.pdf 
