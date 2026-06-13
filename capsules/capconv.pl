@@ -330,36 +330,36 @@ sub transform_pageno {
 }
 
 
-# For subtitle string S, <optional semicolon>\\<newline> becomes <br>
-# and manual indentation in the output; then convert tex to html as usual.
+# For subtitle string S, <optional semicolon>\\<whitespace> is changed
+# to <br><newline> and manual indentation in the output; then convert
+# tex to html as usual.
 # 
-# As a fun special case, if TITLE = "Editorial comments" and
-# AUTHOR =~ "Barbara.Beeton, this is Barbara's column (tb*beet) and is
+# Except, as a fun special case, if TITLE = "Editorial comments" and
+# AUTHOR =~ "Barbara.Beeton", this is Barbara's column (tb*beet) and is
 # handled completely differently per her request. For these, we want to
 # maximize the text on each line, vs. having each subtitle on a separate
 # line. Since there are so many installments of that column, it gets
 # tiresome to scroll through.
 # 
-# So for those, we make each space in the subtitles into &nbsp;, and
+# So for beet, we make each space in the subtitles into &nbsp;, and
 # insert a simple newline instead of <br>, so that between subtitles
 # will be the only valid breakpoints. Although we could do all this by
 # editing the input files, it seems more maintainable to do it (and
-# tinker with it) here in the code, since there is so much text
-# involved.
+# tinker with it) here in the code, since there are so many entries.
 # 
 sub transform_subtitles {
   my ($s,$title,$author) = @_;
-  my @subtitles = split (/;?\\\\\n/, $s);
+  my @subtitles = split (/;?\\\\\s+/, $s);
 
   my ($between_subtitles, $subtitle_spaces);
   if ($title =~ /\{?Editorial comments\}?/i && $author =~ /Barbara.Beeton/) {
-    #debug_list("   starting editorial comments", @subtitles);
+    #debug_list("   starting beet editorial comments", @subtitles);
     #
-    # Replaces spaces after \controlwords with {}; otherwise those
+    # Replace spaces after \controlwords with {}; otherwise those
     # spaces will be an nbsp in the output, due to the next substitution.
     @subtitles = map { s/(\\[a-zA-Z]+)\s*/$1\{\}/g; $_; } @subtitles;    
     # 
-    # don't allow line breaks within Barbara's subtitles; that means
+    # Don't allow line breaks within Barbara's subtitles; that means
     # replacing " " and "\ " and "~" with our \CONNECT{} string, which
     # turns into &nbsp;.  (Ties are converted to spaces by default, not nbsp.)
     @subtitles = map { s/\\? |~/\\CONNECT{}/g; $_; } @subtitles;

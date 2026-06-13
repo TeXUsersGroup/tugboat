@@ -1,5 +1,13 @@
 2026-06-12  Karl Berry  <karl@freefriends.org>
 
+	* capconv.pl (transform_subtitles): look for "\\" followed by any
+	whitespace, not specifically a newline, since our new
+	normalize_whitespace has converted newlines to spaces.
+	* tb65capsule.txt (tb65reviews): "and" between the titles,
+	not just a \\.
+
+2026-06-12  Karl Berry  <karl@freefriends.org>
+
 	* capaccum-author.pl (output_author_list): die if we're about to
 	output an empty author string, which we never want to do.
 	(find_authors): &transform_author now returns a list. Oops.
