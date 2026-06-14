@@ -1,3 +1,15 @@
+2026-06-14  Karl Berry  <karl@freefriends.org>
+
+	* version 2.37 (2026-06-14) uploaded to CTAN.
+	* NEWS: update.
+	* README: update.
+
+2026-06-14  Karl Berry  <karl@freefriends.org>
+
+	* tubcplustest: test of \Cplusplus and \LaTeX with various engines
+	and fonts.
+	* Makefile (check): run it.
+
 2026-05-22  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\abovedisplayskip) <\normalsize>: make exactly

@@ -34,7 +34,7 @@ But if you want to install it by hand from CTAN, its directory there
 other files are
   ltubguid.pdf -- user documentation
   tugboat.bst  -- recommended BibTeX style for TUGboat
-                    (originally abbrvurl, with several features added)
+                    (based on abbrvurl, with several features added)
   ltugbib.bst  -- BibTeX style for ltugboat.cls's Harvard-cite capabilities
                     (no longer recommended)
 
@@ -51,7 +51,7 @@ The procedure for using the macros should therefore be:
 
   process the .ins file
   move the .sty and .cls to "somewhere LaTeX will search"
-  move the .bib to "somewhere BibTeX will search"
+  move the .bst to "somewhere BibTeX will search"
   move the browsable documentation to "somewhere texdoc will search"
 
 On a TDS installation, common search locations are:
@@ -68,6 +68,6 @@ By the way, tugboat.sty, tugproc.sty, and tugboat.cmn are the plain TeX
 files for TUGboat and not included here; see the separate package
 tugboat-plain (https://ctan.org/pkg/tugboat-plain).
 
-User documentation is provided in file ltubguid.pdf, which is a revised
-version of a TUGboat paper. The documented source of the macros is also
+User documentation is provided in file ltubguid.pdf, which is formatted
+as a TUGboat paper. The documented source of the macros is also
 provided in readily readable form, as tugboat.pdf.

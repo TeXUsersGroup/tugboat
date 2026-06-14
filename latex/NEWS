@@ -1,13 +1,17 @@
 $Id$
 This file records noteworthy changes.  This file is public domain.
 
+-----------------
+2.37 (2026-06-14)
 ltugboat.cls
 - \Thanh now uses the e-circumflex-acute (U+1EBF) character from the
   current font, if it's defined. If it's not defined, the acute is now
   typeset to the right of the circumflex, instead of vertically above it.
 - new abbreviations \MiKTeX, \TeXLive.
 - \abovedisplayskip and \belowdisplayskip reduced to be the same as
-  \topsep (above/below lists, verbatims, etc.), to avoid unequal spacing.
+  \topsep (used above/below lists, verbatims, etc.), to avoid unequal spacing.
+- \acro now defined using \NewDocumentCommand, so that it is robust and
+  can be used in titles even when tagging is active.
 
 -----------------
 2.36 (2026-01-14)
