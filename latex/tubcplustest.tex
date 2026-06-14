@@ -1,0 +1,23 @@
+% $Id$
+% Public domain.
+%\documentclass{ltugboat}
+\documentclass{article}
+\thispagestyle{empty}
+\ifx\fsp\undefined
+  \ifx\Umathchardef\undefined\else
+    \usepackage{fontspec} % use lm otf, not pfb (except under pdftex)
+  \fi
+\else % can define command line
+  \usepackage[olddefault]{fontsetup}
+\fi
+\loggingall
+\begin{document}
+\def\text{\Cplusplus\ \LaTeX}
+\def\text{$A^{b^c}$}
+\def\text{A \scriptsize s \tiny t}
+normalsize: \text
+
+{\small small: \text \par}
+
+\end{document}
+%\setbox0=\hbox{C}\message{^^J*** ht=\the\ht0, dp=\the\dp0 }\box0

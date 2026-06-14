@@ -20,7 +20,7 @@ ltubguid.pdf: ltubguid.ltx ltugboat.cls
 	$(bibtex) ltubguid
 	$(pdflatex) $<
 
-tugboat-code.pdf: tugboat.dtx ltugboat.cls
+tugboat-code.pdf cd: tugboat.dtx ltugboat.cls
 	$(pdflatex) $<
 	$(pdflatex) $<
 	mv tugboat.pdf $@
@@ -28,10 +28,17 @@ tugboat-code.pdf: tugboat.dtx ltugboat.cls
 ltugcomn.sty ltugboat.sty ltugboat.cls: tugboat.ins tugboat.dtx
 	$(latex) $<
 
+spell:
+	aspell list --mode=tex --add-extra-dicts=`pwd`/.dict.pws <ltubguid.ltx\
+	| sort -f -u
+
 check ck: ltugboat.cls
 	$(pdflatex) tubfirstcolfull.tex
 	$(pdflatex) tubreftest.tex
 	$(pdflatex) tubatest.tex
+	$(lualatex) -jobname cp-luancm '\let\fsp1 \input tubcplustest.tex'
+	$(pdflatex) -jobname cp-pdftex tubcplustest.tex
+	$(lualatex) -jobname cp-lualm tubcplustest.tex
 	$(pdflatex) tubdoi-final.tex
 	$(pdflatex) tubfigtest.tex
 	$(pdflatex) tubhytest.tex
@@ -59,15 +66,9 @@ checkht: ltugboat.cls
 	env TEXINPUTS=$(t3):$(tb): $(texfot) htlatex tub4htest.tex \
 	  "xhtml,html5,mathml,charset=utf-8,fn-in" " -cunihtf -utf8"
 
-spell:
-	aspell list --mode=tex --add-extra-dicts=`pwd`/.dict.pws <ltubguid.ltx\
-	| sort -f -u
-
 checkblx: ltugboat.cls tubib.bib
 	$(pdflatex) tubibauths-blx && biber -q tubibauths-blx && $(pdflatex) tubibauths-blx
 	$(pdflatex) tubibed-blx && biber -q tubibed-blx && $(pdflatex) tubibed-blx
-
-try: ltugboat.cls tugboat-code.pdf
 
 checkbib: ltugboat.cls tugboat.bst tubib.bib
 	$(pdflatex) tubibauths && $(bibtex) tubibauths && $(pdflatex) tubibauths
@@ -82,12 +83,13 @@ checkbib: ltugboat.cls tugboat.bst tubib.bib
 #
 	$(lualatex) tubiball && $(bibtex) tubiball && $(pdflatex) tubiball
 	$(pdflatex) tubiball && $(bibtex) tubiball && $(pdflatex) tubiball
-x:
+#
+	$(pdflatex) tubib && $(bibtex) tubib && $(pdflatex) tubib.tex
+
+checkbibthanh:
 	$(xelatex)  tubibthanh && $(bibtex) tubibthanh && $(xelatex) tubibthanh && mv tubibthanh.pdf xebibthanh.pdf
 	$(lualatex) tubibthanh && $(bibtex) tubibthanh && $(lualatex) tubibthanh && mv tubibthanh.pdf luabibthanh.pdf
 	$(pdflatex) tubibthanh && $(bibtex) tubibthanh && $(pdflatex) tubibthanh && mv tubibthanh.pdf pdfbibthanh.pdf
-#
-	$(pdflatex) tubib && $(bibtex) tubib && $(pdflatex) tubib.tex
 
 clean:
 	rm -f *.log *.aux *.out *.toc *.pdf *.dvi *.bbl *.blg *.html *.hd
