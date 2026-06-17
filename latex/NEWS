@@ -2,6 +2,11 @@ $Id$
 This file records noteworthy changes.  This file is public domain.
 
 -----------------
+2.38 (2026-06-18)
+ltugboat.cls
+- \Thanh actualtext apparently has to use literal UTF-8.
+
+-----------------
 2.37 (2026-06-14)
 ltugboat.cls
 - \Thanh now uses the e-circumflex-acute (U+1EBF) character from the

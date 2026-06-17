@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2026-06-14 v2.37
+                   [2026-06-17 v2.38
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -1022,7 +1022,7 @@
 
 % \begin{macro}{\Thanh}
 % Han The Thanh's name is complicated because it has a double-accented
-% character over the e, U+1EBF (it also grave accents over the a's, but
+% character over the e, U+1EBF (it also has grave accents over the a's, but
 % they aren't a problem): \Thanh. Many fonts do not have this character;
 % hardly any, in the old days, and definitely not Computer Modern.
 % 
@@ -1036,9 +1036,17 @@
 \def\TBecircacute{\^e\llap{\raise 0.3ex\hbox{\'{}\kern-0.4ex}}}%
 %    \end{macrocode}
 %
-% Our previous definition, used for many years, which put the acute
-% directly over the circumflex:
-%\def\Thanh{H\`an~Th\^e\llap{\raise 0.5ex\hbox{\'{}}}~Th\`anh}
+% For posterity, this was our previous definition, used for many years,
+% which put the acute directly over the circumflex:\\
+%|%\def\Thanh{H\`an~Th\^e\llap{\raise 0.5ex\hbox{\'{}}}~Th\`anh}|
+
+% Here's a way to get at our new definition in case we overwrite it below.
+% This is because the lm fonts, which are the \LaTeX\ default with Unicode
+% engines, put the acute vertically over the circumflex (perhaps
+% since \TUB\ did), and we'll want to change that. 
+%    \begin{macrocode}
+\let\TBecircacutebuilt=\TBecircacute
+%    \end{macrocode}
 %
 % If running under \texttt{pdflatex}, allow the actual UTF-8 character
 % to be used in text. \cs{DeclareUnicodeCharacter} is not defined under
@@ -1047,36 +1055,31 @@
 % but let's wait to see if we need it.
 %    \begin{macrocode}
 \ifx\DeclareUnicodeCharacter\undefined\else
-\DeclareUnicodeCharacter{1EBF}{\TBecircacute} % for the literal character
+  \DeclareUnicodeCharacter{1EBF}{\TBecircacute} % for the literal character
 \fi
 %    \end{macrocode}
 
-% Let's use the character from the font, if it's defined:
+% Under Unicode engines, by default, we'll use the character from the
+% font, if it's there.
 %    \begin{macrocode}
 \ifTBunicodeengine
   \AtBeginDocument{% in case a different font gets loaded
     % \iffontchar is from e-TeX; safe to use under Unicode engines.
     \iffontchar\font"1EBF
-      % The character is in the font. Normally we'd want to just use it.
-      % However, the lm fonts, which are the LaTeX default with Unicode
-      % engines, put the acute vertically over the circumflex (perhaps
-      % since TUGboat did). So here's a way to get the TUGboat definition:
-      \let\TBecircacutebuilt=\TBecircacute
-      %
-      % But use the font's version by default. newcm does have the acute
-      % offset to the right.
+      % Use the font's version by default; perhaps we're using newcm or
+      % another font that has the acute offset to the right.
       \def\TBecircacute{\char"1EBF }%
     \fi
   }%
 \fi % (end TBunicodeengine)
 
-% Now we can define \Thanh itself, using \TBecircacute.
+% Finally, we can define \Thanh itself, using \TBecircacute.
 \def\Thanh{H\`an~Th\TBecircacute~Th\`anh}%
 %    \end{macrocode}
 
-% One more complication. Add tagging for Thanh using the UTF-8 characters.
+% One more complication: add tagging for Thanh using the UTF-8 characters.
 % This comes from Frank Mittelbach, written for
-%   https://tug.org/TUGboat/tb47-1/tb145sojka-doctor-mittelbach.pdf
+% \url{https://tug.org/TUGboat/tb47-1/tb145sojka-doctor-mittelbach.pdf}.
 %    \begin{macrocode}
 \ExplSyntaxOn
 \IfPDFManagementActiveT{
@@ -1084,10 +1087,14 @@
  {
    \mode_leave_vertical:
    \tag_mc_end_push:
-   % I don't want to have non-ASCII characters in this source file.
-   % Hence, use TeX to insert U+00C0 and U+1EBF. Or maybe we need
-   % \char_generate:nn { "ABCD } { 12 } but not sure; please advise.
-   \tag_struct_begin:n{tag=Span,actualtext=H^^c0n~ Th^^^^1ebf Th^^c0nh}
+   % \char_generate would work for the agrave (E0) characters,
+   % but it does not work for 1EBF under pdflatex ("out of engine range").
+   % We can't use ^^^^ since it's not supported by pdftex. So it seems
+   % best, and perhaps necessary, to use the literal UTF-8 characters.
+   % What we'd prefer is to just use ASCII to specify the characters, like:
+   %   actualtext=H^^e0n~ Th^^^^1ebf~ Th^^e0nh
+   % but oh well.
+   \tag_struct_begin:n {tag=Span,actualtext=Hàn~ Thế~ Thành}
    \tag_mc_begin:n{}
  }
 \AddToHook{cmd/Thanh/after}

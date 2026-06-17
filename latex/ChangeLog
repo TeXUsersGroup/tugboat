@@ -1,3 +1,14 @@
+2026-06-17  Karl Berry  <karl@freefriends.org>
+
+	* version 2.38 (2026-06-17) uploaded to CTAN.
+	* NEWS: update.
+
+	* tugboat.dtx (cmd/Thanh/before): use literal UTF-8 since it seems
+	there is no way to write the characters in ASCII under pdf(la)tex.
+	Else \Thanh with tagging=on gets a LaTeX error.
+	https://github.com/TeXUsersGroup/tugboat/issues/7
+	* tubibthanh.tex: add \DocumentMetadata{tagging=on}.
+
 2026-06-14  Karl Berry  <karl@freefriends.org>
 
 	* version 2.37 (2026-06-14) uploaded to CTAN.

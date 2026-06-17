@@ -3,12 +3,13 @@
 % 
 % Test bib entry with \Thanh. We should get the definition from
 % tugboat.dtx, not tugboat.def, and it should work under pdflatex,
-% lualatex, and xelatex.
+% lualatex, and xelatex. And it should work with tagging.
 % 
 % See comments in tugboat.dtx at definition of \Thanh.
-% 
+
+\DocumentMetadata{tagging=on}
 \documentclass{ltugboat}
-\hfuzz\maxdimen
+\hfuzz\maxdimen % but we don't care about overfull boxes
 
 \ifx\luatexversion\undefined
   \ifx\XeTeXrevision\undefined
@@ -30,12 +31,14 @@
 
 \ifx\engineabbr p\else
 % to see that we get the desired horizontally-offset acute accent with
-% the newcm fonts, can uncomment this:
+% the newcm fonts, can uncomment this (or the \let below):
 %  \usepackage[olddefault]{fontsetup}
 % The default lm fonts have the accents vertically stacked.
 \fi
 
 \begin{document}
+\let\TBecircacute\TBecircacutebuilt % must be after \begin{document}
+
 \noindent \engineident~\cite{Thanh:2000:MTE}.
 
 \bibliographystyle{tugboat}

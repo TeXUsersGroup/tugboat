@@ -20,10 +20,10 @@ ltubguid.pdf: ltubguid.ltx ltugboat.cls
 	$(bibtex) ltubguid
 	$(pdflatex) $<
 
-tugboat-code.pdf cd: tugboat.dtx ltugboat.cls
+tugboat-code.pdf code cd: tugboat.dtx ltugboat.cls
 	$(pdflatex) $<
 	$(pdflatex) $<
-	mv tugboat.pdf $@
+	mv tugboat.pdf tugboat-code.pdf
 
 ltugcomn.sty ltugboat.sty ltugboat.cls: tugboat.ins tugboat.dtx
 	$(latex) $<
@@ -86,10 +86,14 @@ checkbib: ltugboat.cls tugboat.bst tubib.bib
 #
 	$(pdflatex) tubib && $(bibtex) tubib && $(pdflatex) tubib.tex
 
-checkbibthanh:
-	$(xelatex)  tubibthanh && $(bibtex) tubibthanh && $(xelatex) tubibthanh && mv tubibthanh.pdf xebibthanh.pdf
-	$(lualatex) tubibthanh && $(bibtex) tubibthanh && $(lualatex) tubibthanh && mv tubibthanh.pdf luabibthanh.pdf
-	$(pdflatex) tubibthanh && $(bibtex) tubibthanh && $(pdflatex) tubibthanh && mv tubibthanh.pdf pdfbibthanh.pdf
+htt = tubibthanh
+mv = mv -v
+checkbibthanh h: tubibthanh.tex ltugboat.cls 
+	$(pdflatex) $< && $(bibtex) $(htt) && $(pdflatex) $(htt) && $(mv) $(htt).pdf pdfbibthanh.pdf
+	@echo xetex
+	$(xelatex)  $< && $(bibtex) $(htt) && $(xelatex) $< && $(mv) $(htt).pdf xebibthanh.pdf
+	@echo luatex
+	$(lualatex) $< && $(bibtex) $(htt) && $(lualatex) $< && $(mv) $(htt).pdf luabibthanh.pdf
 
 clean:
 	rm -f *.log *.aux *.out *.toc *.pdf *.dvi *.bbl *.blg *.html *.hd
