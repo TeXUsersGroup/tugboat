@@ -1,3 +1,10 @@
+2026-06-17  Karl Berry  <karl@freefriends.org>
+
+	* tb45capsule.txt (tb15-4): add newly-scanned c2, titlepage, edit
+         (and c4 to the complete.pdf).
+
+	* tb145capsule.txt: wording of erratum.
+
 2026-06-12  Karl Berry  <karl@freefriends.org>
 
 	* capconv.pl (transform_subtitles): look for "\\" followed by any
