@@ -1087,13 +1087,8 @@
  {
    \mode_leave_vertical:
    \tag_mc_end_push:
-   % \char_generate would work for the agrave (E0) characters,
-   % but it does not work for 1EBF under pdflatex ("out of engine range").
-   % We can't use ^^^^ since it's not supported by pdftex. So it seems
-   % best, and perhaps necessary, to use the literal UTF-8 characters.
-   % What we'd prefer is to just use ASCII to specify the characters, like:
-   %   actualtext=H^^e0n~ Th^^^^1ebf~ Th^^e0nh
-   % but oh well.
+   % We could use ^^ notation with the UTF-8 bytes (no ^^^^ since that
+   % doesn't work under pdftex). Maybe later.
    \tag_struct_begin:n {tag=Span,actualtext=Hàn~ Thế~ Thành}
    \tag_mc_begin:n{}
  }
