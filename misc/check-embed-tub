@@ -63,42 +63,49 @@ sub check_file {
     # 
     # The " (OT)" example is from tb141vanek-primo.pdf.
     # 
+    # Or with the poppler pdffonts:
+    # name                                 type              encoding         emb sub uni object ID
+    # ------------------------------------ ----------------- ---------------- --- --- --- ---------
+    # POQLIZ+NewCM10-Regular               CID Type 0C       Identity-H       yes yes yes     74  0
+    # VNQIVG+ArialMT                       CID TrueType      Identity-H       yes yes yes    848  0
+    # XGNCKY+CMR10                         Type 1C           WinAnsi          yes yes no    1291  0
+    # 
+    # Thus, we cannot rely on the starting column position. Also, the
+    # name might "overflow" its normal length.
+
+    # Instead of wiping out the initial fields of freeform text,
+    # as "type" contains spaces, like this:
+    #s/^.*(CID Type 0C?|CID TrueType|Type 1C?|Type 3|TrueType)( \(OT\))?//;
     #
-    s/^.*(CID Type 0C?|CID TrueType|Type 1C?|Type 3|TrueType)( \(OT\))?//;
+    # Wipe out the next word if it is not "yes" or "no". Presumably this
+    # is the encoding column which poppler added.
+    #s/^\s*\S*\s*//;
     
-    # what follows should be the emb boolean.
-    my ($emb) = split (" ");
-    
+    # Let's do this: go to the first yes/no column, which hopefully is emb.
+    # Probably we should check if the third or fourth field of the
+    # $hdrline is emb, but maybe pdffonts won't change again.
+    my $emb = "";
+    for my $f (split (" ")) {
+      if ($f eq "yes" || $f eq "no") {
+        $emb = $f;
+        last;
+      }
+    }
+
     if ($emb eq "no") {
       push (@not_embedded, $orig_line);
-    } elsif ($emb ne "yes") {
-      push (@not_parsable, "could not parse: $orig_line");
+    } elsif ($emb eq "yes") {
+      ; # print "ok: $orig_line";
+    } else {
+      push (@not_parsable, "impossible non-yes/no: $orig_line");
     }
   }
   close (CHECK); #|| warn "close(pdffonts $file) failed: $!";
   
   if ($? != 0) {
-    unshift (@not_parsable, "bad exit status $?\n");
+    unshift (@not_parsable, "bad pdffonts exit status $?\n");
   }
   
   # critical to see if any lines weren't parsable, return those first.
   return (@not_parsable,@not_embedded);
 }
-
-
-# Typical pdffonts output:
-# name                                 type              emb sub uni object ID
-# ------------------------------------ ----------------- --- --- --- ---------
-# RYUFFT+Times-Roman                   Type 1C           yes yes no      15  0
-# SUZHNC+Helvetica                     Type 1C           yes yes no       9  0
-#
-#
-# TUGboat/tb29-3/tb93hagen-framed.pdf:
-# name                                 type              emb sub uni object ID
-# ------------------------------------ ----------------- --- --- --- ---------
-# HOPOUU+LMRoman10-Regular             CID Type 0C       yes yes yes      4  0
-#
-#
-# Despite how it looks here, we can't rely on the columns, sometimes the
-# fontname gets too long.  Conceivably we could look for the first field
-# that says yes or no, but that also seems dangerous.
