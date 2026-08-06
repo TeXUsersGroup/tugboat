@@ -1,14 +1,18 @@
 $Id$
 This file records noteworthy changes.  This file is public domain.
 
+ltugboat.cls:
+- define \AI as \acro{AI}.
+- change \abovecaptionskip and \floatsep by +- (respectively) 1pt.
+
 -----------------
 2.38 (2026-06-18)
-ltugboat.cls
+ltugboat.cls:
 - \Thanh actualtext apparently has to use literal UTF-8.
 
 -----------------
 2.37 (2026-06-14)
-ltugboat.cls
+ltugboat.cls:
 - \Thanh now uses the e-circumflex-acute (U+1EBF) character from the
   current font, if it's defined. If it's not defined, the acute is now
   typeset to the right of the circumflex, instead of vertically above it.
