@@ -1,5 +1,8 @@
 2026-08-06  Karl Berry  <karl@freefriends.org>
 
+	* ltubguid.ltx (\makevmeta): move above \ruled, since it's
+	(much) more commonly used nowadays.
+
 	* tugboat.dtx (\AI): new abbrev.
 	(\abovecaptionskip): increase by 1pt.
 	(\floatsep): decrease by 1pt.

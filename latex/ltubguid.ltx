@@ -622,14 +622,8 @@ following are common:
   verbatim in the present paper starts with
   \verb|\begin{verbatim}[\small]|.
 
-\item The command \cs{ruled}, which is available \emph{only} in
-  \envname{verbatim}'s optional argument, and specifies that a
-  column-wide rule should be drawn before and after the verbatim
-  text. (This is not the recommended style in general, but it's
-  available for when it helps.)
-
-\item The command \cs{makevmeta}, also available only in
-  \envname{verbatim}'s optional argument, and makes the construct
+\item The command \cs{makevmeta}, which is available only in
+  \envname{verbatim}'s optional argument. It makes the construct
   \verb|!<...>| inside verbatim execute \verb|\meta{...}|. For example,
 \begin{verbatim}[\small] 
 \begin{verbatim}[\small\makevmeta]
@@ -645,8 +639,14 @@ The !<duration> is long ...
 \item More generally, one of the \cs{make*} commands,\footnote{\cs{makeescape},
   \cs{makebgroup}, \dots, \cs{makecomment}; used, for example, as
   \cs{makeescape}\cs{|}.} which change the category code of
-  characters within the verbatim text.  This is (of course) a facility
-  that should only be used with the utmost caution.
+  characters within the verbatim text.  This is a facility
+  that should be used only with the utmost caution.
+
+\item The command \cs{ruled}, also available only in
+  \envname{verbatim}'s optional argument, and specifies that a
+  column-wide rule should be drawn before and after the verbatim
+  text. (This is not the recommended style in general, but it's
+  available for when it helps.)
 
 \end{itemize}
 Two caveats about these optional arguments:
