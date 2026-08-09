@@ -247,7 +247,8 @@ STRINGS { s t last.output.check }
 % urlbst
 % arg on stack is what needs to be written.
 % 
-% If journal is "TUGboat" or "\TUB", we want to omit the following
+% If journal is "TUGboat" or "\TUB", or with a preceding "\\" (sometimes
+% we force the journal info to a new line), we want to omit the following
 % comma, as in "TUGboat 39(1)" instead of the default "TUGboat, 39(1)".
 % But for all other journals, we want the comma.
 % 
@@ -261,7 +262,9 @@ FUNCTION {output.nonnull.original}
       journal missing$
       or
         { ", " * }  % not a journal, normal comma+space separator
-        { journal "TUGboat" = journal "\TUB" = or 
+        { journal "TUGboat" = journal "\TUB" = or
+          journal "\\TUGboat" = journal "\\\TUB" = or
+          or
           nojournalcomma empty$ not or
           { skip$ } % TUGboat or no comma requested
           { "," * } % not TUGboat, want comma
