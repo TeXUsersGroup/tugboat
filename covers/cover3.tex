@@ -36,7 +36,7 @@
   \baselineskip=12pt
 \fi
 
-\iftrue % fonts - 9pt (what we usually use)
+\iffalse % fonts - 9pt (what we usually use)
   \font\tenrm=cmr9  \font\tensl=cmsl9  \font\tentt=cmtt9  \font\manual=logo9
   \font\tenit=cmti9 \font\tenbf=cmbx9 \font\sf = cmss9
   \font\difficultyfont=cmb10
@@ -52,7 +52,7 @@
   \baselineskip=10.9pt
 \fi
 
-\iffalse % fonts - 8pt
+\iftrue % fonts - 8pt
   \font\tenrm=cmr8 \font\tensl=cmsl8  \font\tentt=cmtt8  \font\manual=logo8
   \font\tenit=cmti8 \font\tenbf=cmbx8 \font\sf = cmss8
   \font\difficultyfont=cmbx8 at 8.5pt
@@ -72,7 +72,7 @@
 \newskip\abovedifficultyskip % default 8pt plus2pt minus1pt
   \abovedifficultyskip = 4pt plus2pt minus1pt
 \newskip\abovecapsuleskip    % default 2pt plus1pt
-  \abovecapsuleskip    = 1.5pt plus1pt
+\abovecapsuleskip    = 1.5pt plus1pt
 
 % we want ragged right, and interword stretch seems unnecessary, but we
 % still allow interword shrink since it helps keep things on one line.
@@ -126,15 +126,14 @@
 \newcount\tublinkdestpage
 
 % #1 is difficulty rating -- follows \capsule on first line, usually empty
-% #2 is TB category -- arg 2 alone on its line, maybe with replace|add comment
-% #3 is author -- args 3-7 are alone on their lines
+% #2 is TB category -- can have replace| or add| directive
+% #3 is author -- can have person| directive
 % #4 is title
 % #5 is for statement
 % #6 is page number
-% #7 is URL of paper PDF
-% #8 is subtitles -- arg 8 can be alone on its line or multiple lines long
-% #9 is for notes added at html time -- arg 9 can be alone on its line
-%           or multiple lines long 
+% #7 is url of article, usually (nowadays) using !TBIDENT!
+% #8 is subtitles in TeX, but not printed on c3
+% #9 is for text added to html only
 
 % the main command.
 \def\capsule#1#2#3#4#5#6#7#8#9{%

@@ -26,8 +26,8 @@
 \let\runfoot=\normalrunfoot
 
 % fonts:
-\iftrue
-\tenpoint\baselineskip=12.5pt       % default 10pt baselineskip is 12.5pt
+\iffalse % default 10pt with baselineskip of 12.5pt
+\tenpoint\baselineskip=12.5pt
   \font\slnine = cmsl9
   \font\manual = logo10
   \font\manualsl = logosl10
@@ -35,8 +35,8 @@
   \font\lslashfont = ec-lmr10
 \fi
 
-\iffalse
-\ninepoint\baselineskip=11.1pt     % default 9pt baselineskip is 11.1pt
+\iftrue % 9pt with baselineskip 11.1pt
+\ninepoint\baselineskip=11.1pt
   \font\slnine = cmsl8
   \font\manual = logosl10 at 9pt
   \font\thanhfont = t5-lmr9
@@ -58,8 +58,8 @@
 \vfuzz=34pt 			% normally zero
   \advance\vsize by \vfuzz
 
-\secskipa=2.0pt plus2pt       % between sections, default 4.0pt plus2pt
-\secskipb=0.5pt plus1pt       % between entries,  default 1.0pt plus1pt
+\secskipa=4.0pt plus2pt       % between sections, default 4.0pt plus2pt
+\secskipb=1.0pt plus1pt       % between entries,  default 1.0pt plus1pt
 
 % 
 {

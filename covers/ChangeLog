@@ -1,3 +1,12 @@
+2026-08-23  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (cover1.pdf): coverdrawing is .jpg for 47:2.
+	* cover1.tex: jpg.
+	* cover2.tex: update for 47:2.
+	* cover3.tex: 8pt fonts needed.
+	* cover4.tex: 9pt fonts needed, set spacing.
+	* tubtocmac.tex (\LuaTeX): new macro.
+
 2026-05-11  Karl Berry  <karl@tug.org>
 
 	* cover2.tex: update board list from 46:2 (belated).
