@@ -1,3 +1,9 @@
+2026-08-22  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.cmn (\normallineskiplimit): remove setting to 1pt, keep at 0.
+	* tugboat.sty (\abovecaptionskipamount): increase to 4pt to match
+	change in ltugboat.
+
 2026-05-16  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.cmn (\Thanh): put the acute to the right of the

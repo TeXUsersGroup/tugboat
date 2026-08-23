@@ -30,7 +30,7 @@
 \next
 
 \def\fileversion{v1.32}
-\def\filedate{2026-05-16}
+\def\filedate{2026-08-22}
 
 \message{File `TUGBOAT.CMN' \fileversion \space\space <\filedate>}
 
@@ -240,7 +240,6 @@
 %********************************************************************
 
 \newlinechar=`\^^J
-\normallineskiplimit=1pt
 
 \clubpenalty=10000
 \widowpenalty=10000
@@ -1044,6 +1043,7 @@ that may not be obvious.  For full definitions, see real code above.
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+                      \normallineskiplimit: do not define as 1pt, keep at 0.
                       \Thanh now typesets the acute to the right of the
                         circumflex, instead of vertically over;
                         see tugboat.dtx for more.
