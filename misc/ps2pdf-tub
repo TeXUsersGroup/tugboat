@@ -2,9 +2,10 @@
 # $Id$
 # Public domain.
 # 
-# ps2pdf (or pdf2pdf), but always embedding fonts, and optionally with
-# Jacko's distillation parameters to prevent gs from reducing resolution
-# of embedded bitmaps, and allow just one filename arg, meaning overwrite.
+# ps2pdf (or pdf2pdf), but always embedding fonts and many other
+# parameters. Also allow generating PDF 1.3 for Cadmus.
+# Finally allow just one filename arg, meaning overwrite.
+
 
 : ${gs=gs}
 : ${zdistill=""} #-f ../zdistill.rip"}
@@ -12,9 +13,19 @@
 
 if test $# -eq 1; then
   set - "$1" "$1.tmppdf"
-elif test $# -ne 2; then
-  echo "Usage: $0 IN[OUT]FILE [OUTFILE]" >&2
+elif test $# -lt 2 || test $# -gt 3; then
+  echo "Usage: $0 [-13] IN[OUT]FILE [OUTFILE]" >&2
+  echo "With -13, generate PDF 1.3; else the gs default." >&2
   exit 1
+fi
+
+# -13 arg used by make-issue-pages-tub.
+if test "x$1" = x-13; then
+  shift
+  # see comments in ps2pdf-cmyk-tub.
+  z13args="-dCompatibilityLevel=1.3 -dWriteXRefStm=false -dWriteObjStms=false"
+else
+  z13args=
 fi
 
 # -r1200 is to avoid rendering on a tiny canvas, which can trip
@@ -50,7 +61,7 @@ $gs -q -dNOPAUSE -dBATCH \
   -dPrinted=false \
   -dColorImageResolution=1200 \
   -dGrayImageResolution=1200 \
-  $zdistill $zres \
+  $zdistill $zres $z13args \
   -f "$1" 
 
 #   but seems to be no longer necessary.

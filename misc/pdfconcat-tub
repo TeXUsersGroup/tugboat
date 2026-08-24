@@ -1,11 +1,20 @@
 #!/bin/sh
 # $Id$
 # (rdist from home) Public domain.
-# See comments in ps2pdf-tub about settings.
+# See comments in ps2pdf-tub et al. about settings.
 
 if test $# -le 1; then
-  echo "Usage: $0 OUTFILE INFILE1 [INFILE2 ...]" >&2
+  echo "Usage: $0 [-13] OUTFILE INFILE1 [INFILE2 ...]" >&2
   exit 1
+fi
+
+# -13 arg used by make-issue-pages-tub.
+if test "x$1" = x-13; then
+  shift
+  # see comments in ps2pdf-cmyk-tub.
+  z13args="-dCompatibilityLevel=1.3 -dWriteXRefStm=false -dWriteObjStms=false"
+else
+  z13args=
 fi
 
 out=$1; shift
@@ -18,6 +27,7 @@ $gs -q -dBATCH -dNOPAUSE \
   -r1200 \
   -dAutoRotatePages=/None \
   -dPrinted=false \
+  $z13args \
   "$@" >$gs_out 2>&1
 
 status=$?
