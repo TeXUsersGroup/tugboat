@@ -34,9 +34,8 @@ sub main {
         next;
       }
       
-      # for 47:1 we have a comic, makes checking consultants impossible.
-      # can undo next time.
-      next if $item_name =~ /^(edit|instmem|consultants)$/;
+      # These are always included as partial pages, so don't bother checking.
+      next if $item_name =~ /^(edit|instmem)$/;
       
       my $this_pageno;
       if ($type eq "fir") {
