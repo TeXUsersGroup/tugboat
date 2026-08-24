@@ -3,6 +3,7 @@ This file records noteworthy changes.  This file is public domain.
 
 ltugboat.cls:
 - define \AI as \acro{AI}.
+- define \tubnewline as \texorpdfstring{\newline}{ }.
 - change \abovecaptionskip and \floatsep by +- (respectively) 1pt.
 
 -----------------

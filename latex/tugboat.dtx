@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2026-08-06 v2.38
+                   [2026-08-24 v2.38
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -1017,6 +1017,7 @@
 \def\BlackBoxes{\overfullrule=5\p@}
 \def\NoBlackBoxes{\overfullrule=\z@}
 \def\newline{\hskip\z@\@plus\pagewd\break}
+\def\tubnewline{\texorpdfstring{\newline}{ }}
 %    \end{macrocode}
 
 % \begin{macro}{\Thanh}
@@ -3949,7 +3950,7 @@
 % 
 %    \begin{macrocode}
 %
-\def\tubdoiprefix{10.47397/tb} % the number crossref assigned us
+\def\tubdoiprefix{10.47397/tb} % assigned to us by crossref.
 \def\tubabovedoi{}             % fudge spacing or whatever.
 %
 \def\tubtypesetdoi{%
@@ -4030,6 +4031,14 @@
 %   regular text in which caps are used at the heads of all nouns, not
 %   just at the beginnings of sentences.
 % \end{quote}
+%
+% 2026 note from Karl: it's not so much ``German'' fonts in particular
+% (few fonts nowadays are language-specific anyway), as a design choice
+% in general. Some typefaces (e.g., Lucida, but there are many more)
+% make capitals smaller than the ascender height; others (e.g., Computer
+% Modern) don't. For the former, reducing further is neither necessary
+% nor desirable, but we don't try to handle that case here, since \TUB\
+% rarely uses any font other than CM and derivatives.
 %
 % We define this in terms of the memory of the size currently selected
 % that's maintained in \cs{@currsize}: if the user does something
