@@ -1,5 +1,7 @@
 2026-08-24  Karl Berry  <karl@freefriends.org>
 
+	* ps2pdf-gray-tub: No -dBlackText.
+
 	* make-issue-pages-tub: convert all pages to PDF 1.3 for Cadmus.
 	* pdfconcat-tub,
 	* ps2pdf-tub: support -13 option to output PDF 1.3.

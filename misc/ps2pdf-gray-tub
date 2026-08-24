@@ -2,11 +2,13 @@
 # $Id$
 # Public domain.
 # 
-# Convert input $1 to output $2, converting color to grayscale, except
-# that text is converted to black; see -dBlackText on
+# Convert input $1 to output $2, converting color to grayscale,
+# including text.
+# 
+# We could convert text to black with -dBlackText; see
 # https://ghostscript.readthedocs.io/en/gs10.05.1/Use.html
-# (or current version). For TUGboat, black seems preferable to printing
-# gray text just because the original is color, though color text is rare.
+# (or current version). But it seems when text is colored in TUGboat,
+# it's often an intentional example, so better to be grayscaled than black.
 # 
 # Also, we convert to PDF 1.3 because almost always the purpose of
 # grayscaling is for printing, and Cadmus' process uses 1.3.
@@ -36,8 +38,6 @@ exec $gs -q -dNOPAUSE -dBATCH \
   -dDetectDuplicateImages \
   -dEmbedAllFonts \
   -dPrinted=false \
-  \
-  -dBlackText \
   \
   -sColorConversionStrategy=Gray \
   -dProcessColorModel=/DeviceGray \
