@@ -5,6 +5,9 @@ Originally written 2017 Karl Berry.
 David Walden did a completely different implementation years before;
 the present code was written from scratch.
 
+For procedures on updating online TUGboat files using this stuff,
+see /home/tubprod/README.
+
 captub          main program; see comments at top for the general
                 implementation strategy.
 

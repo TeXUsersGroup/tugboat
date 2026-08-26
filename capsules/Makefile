@@ -8,7 +8,7 @@ options = $(debug) #--stdout
 more_options =
   #
   # local validation before installation:
-#more_options = --webroot=/home/tubprod/47-1/webdir
+#more_options = --webroot=/home/tubprod/47-2/webdir
   #
   # disable url validation during doi setup:
 #more_options = --webroot=/
@@ -28,9 +28,9 @@ default check: one #all-diff
 
 # These issue values, and most of the targets below, come into play with
 # publishing a TUGboat issue; see the README-tug-procedures file on tug.org.
-testiss = 145
-lastiss = 145
-crossref_iss = 145
+testiss = 146
+lastiss = 146
+crossref_iss = 146
 
 # use different temp dir on different machines.
 mydir := $(shell ls ~karl/public_html 2>/dev/null)

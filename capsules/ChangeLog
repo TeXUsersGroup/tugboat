@@ -1,3 +1,15 @@
+2026-08-26  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (testiss,lastiss,crossref_iss): 146.
+        * tb146capsule.txt: new file for 47:2.
+	* lists-authinfo.txt (Lienhard, Lode, Metelka, Prescott): add.
+	* lists-translations.txt (\LuaTeX): new abbrev.
+	* lists-unifications.txt (Conference Notes): TUG 2026.
+	(Apu, Arora, Bowman, Nice, Krishnan, Rishi, Temple): new or
+	updated overrides.
+	
+	* README: point to /home/tubprod/README.
+
 2026-06-17  Karl Berry  <karl@freefriends.org>
 
 	* tb45capsule.txt (tb15-4): add newly-scanned c2, titlepage, edit

@@ -1,0 +1,1015 @@
+% $Id$
+\vbox to \vsize{% for whole page, so we can see how overfull.
+
+\leftline{%
+  % tugboat.front uses cmr17/cmr12 for TUG/BOAT. Slightly smaller ratio here:
+  \font\titlebf = cmb10 scaled \magstephalf
+  \font\titleboat = cmbx9
+  \tbhref{https://tug.org/TUGboat/tb\tbissident}
+         {{\titlebf TUG}{\titleboat BOAT}\, \volx}
+}
+\medskip
+
+% begin-items
+% 
+
+\begin{blurb}
+<p>Immediate online access to technical TUGboat articles will be
+available to TUG members only (so some of the links below require a TUG
+username and password).  General information items and articles already
+posted elsewhere are publicly available now.  All of the articles will
+become publicly available after the next issue is published.
+
+<p>If you're not already a member, we hope you'll consider <a
+href="/join.html">joining TUG</a> to support TUGboat and other TeX
+projects.  <a href="/memberaccess.html">More information on TUG member
+access</a>.
+
+<p>
+\end{blurb}
+
+\issue{47}{2}{146}{2026}{https://tug.org/tug2026/}{TUG 2026 Proceedings}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Complete issue 47:2 as one pdf (34mb)}
+        {}
+        {\offset{.1}}
+        {https://tug.org/members/TUGboat/!TBIDENT!complete.pdf}
+        {}
+        {<a href="/l/tug26-video">Videos for all talks</a>.}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Front cover}
+        {}
+        {c1\offset{.2}}
+        {/TUGboat/tb47-2/cover1.pdf}
+        {}
+        {}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Inside front cover}
+        {}
+        {c2\offset{.3}}
+        {/TUGboat/tb47-2/cover2.pdf}
+        {}
+        {}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Contents ordered by difficulty}
+        {}
+        {c3\offset{.4}}
+        {/TUGboat/tb47-2/cover3.pdf}
+        {}
+        {}
+
+\capsulenoprint{}
+        {}
+        {}
+        {Title page}
+        {}
+        {145-145}
+        {/TUGboat/tb47-2/titlepage.pdf}
+        {}
+        {}
+
+%\capsulenoprint{}
+%        {}
+%        {}
+%        {Editorial information}
+%        {}
+%        {\getfirstpage{edit}}
+%        {/TUGboat/!TBIDENT!edit.pdf}
+%        {}
+%        {}
+
+% 
+\difficulty{Introductory}
+
+%\capsule{}
+%   {General Delivery}%add|Obituaries
+%   {Jacques Andr\'e}
+%   {James Mosley (1935--2025) and French typography}
+%   {}
+%   {\getfirstpage{andre-mosley}}
+%   {https://tug.org/members/TUGboat/!TBIDENT!andre-mosley.pdf}
+%   {}
+%   {}
+%
+%\capsule{}
+%  {General Delivery}%add|Obituaries
+%  {Barbara Beeton}%person|Bart Childs
+%  {Editorial comments}
+%  {}
+%  {\getfirstpage{beet}}
+%  {/TUGboat/!TBIDENT!beet.pdf}
+%  {
+%{Bart Childs, 1938--2025};\\
+%{Lecture: ``The Shape of Letters: From Leonardo da Vinci to Donald Knuth''};\\
+%{\emph{Orbis Typographicus}, by Hermann Zapf};\\
+%{Fonts and a mysterious symbol};\\
+%{Accessibility};\\
+%{\tug\ meeting returns to North America}
+%  }
+%  {}
+%%web  {typography and \TeX{} news}
+
+\capsule{}
+  {General Delivery}
+  {Barbara Beeton}
+  {A (somewhat biased) history of \TeX\ and \tug}
+  {the origin of \TeX\ and significant events in \tug's history, 1980--2000}
+  {159-162}
+  {https://tug.org/members/TUGboat/!TBIDENT!beeton-tughistory.pdf}
+  {}
+  {}
+
+\capsule{}
+  {General Delivery}%add|Conference Notes
+  {Erik Nijenhuis}
+  {Meeting \TeX\ friends: Adventures across \acro{LUG}s}
+  {personal reflections on two years of cross-continental \TeX\ meetings}
+  {155-158}
+  {/TUGboat/!TBIDENT!nijenhuis-travels.pdf}
+  {}
+  {}
+
+%\capsule{}
+%  {General Delivery}
+%  {Arthur Rosendahl}
+%  {From the president}
+%  {Claude's Cycles, Rubik's Cubes, and sharing}
+%  {\getfirstpage{pres}}
+%  {/TUGboat/!TBIDENT!pres.pdf}
+%  {}
+%  {}
+%
+\capsule{}
+   {General Delivery}
+   {Petr Sojka}%person|Frank Mittelbach
+   {Frank Mittelbach has received an honorary doctorate from Masaryk
+          University}
+   {reprint from \TUB\ 47:1 due to printing error}
+   {234-242}
+   {/TUGboat/!TBIDENT!sojka-doctor-mittelbach.pdf}
+   {}
+   {}
+
+%%%\capsule{}
+%%%   {Typography}
+%%%   {Boris Veytsman}
+%%%   {Face/Interface 2025 conference:
+%%%          Global type design and human-computer interaction}
+%%%   {summary of talks at this multi-disciplinary conference}
+%%%   {\getfirstpage{veytsman-face25}}
+%%%   {https://tug.org/members/TUGboat/!TBIDENT!veytsman-face25.pdf}
+%%%   {}
+%%%   {}
+
+% 
+\difficulty{Intermediate}
+
+%%%%\capsule{}
+%%%%  {Hints \& Tricks}%add|Software \& Tools
+%%%%  {Karl Berry}
+%%%%  {Production notes: \PDF{}s and urls}
+%%%%  {extracting and checking urls in \PDF\ files}
+%%%%  {\getfirstpage{prod}}
+%%%%  {/TUGboat/!TBIDENT!prod.pdf}
+%%%%  {}
+%%%%  {}
+
+\capsule{}
+  {Hints \& Tricks}
+  {Karl Berry}
+  {The treasure chest}
+  {new \CTAN\ packages, April 2026--August 2026}
+  {290-293}
+  {/TUGboat/!TBIDENT!chest.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Accessibility}
+  {Aarush Bhat, Timothy Erickson}
+  {Visual impairment meets mathematics: Bypassing institutional inertia}
+   %through code-based workflows}
+  {\acro{STEM} learning for the visually impaired via code-based
+   workflows, from a student and his coach}
+  {195-202}
+  {https://tug.org/members/TUGboat/!TBIDENT!bhat-visualmath.pdf}
+  {}
+  {}
+
+%\capsule{}
+%  {Philology}
+%  {Janusz S. Bie\'n}
+%  {The use of \textit{rv} and \textit{w} in old Polish printed works}
+%  {use of `w' vs.\ `rv' in early printed Polish works}
+%  {\getfirstpage{bien-rvw}}
+%  {https://tug.org/members/TUGboat/!TBIDENT!bien-rvw.pdf}
+%  {}
+%  {}
+%
+%\capsule{}
+%  {Resources}
+%  {Erik Braun}
+%  {\CTAN\ 2025: Architecture, operation, team and future}
+%  {current state of the central infrastructure of the \TeX\ world}
+%  {\getfirstpage{braun-ctan}}
+%  {https://tug.org/members/TUGboat/!TBIDENT!braun-ctan.pdf}
+%  {}
+%  {}
+
+\capsule{}
+  {\LaTeX}%add|Accessibility
+  {Ulrike Fischer}
+  {News from the \LaTeX{} Tagged \PDF{} project: 2026}
+  {accessible math, ending the \texttt{testphase}, new interfaces, keeping up}
+  {169-172}
+  {https://tug.org/members/TUGboat/!TBIDENT!fischer-tagging26.pdf}
+  {}
+  {}
+
+%\capsule{}
+%   {\LaTeX}
+%   {Johan Larsson, samcarter}
+%   {Moloch: A minimalist, feature-rich beamer theme}
+%   {updating the Metropolis theme; generating \PDF\ and \HTML\ from a
+%    single source via Quarto}
+%   {\getfirstpage{larsson-moloch}}
+%   {https://tug.org/members/TUGboat/!TBIDENT!larsson-moloch.pdf}
+%   {}
+%   {}
+%
+%%%%%%%%%%%%%%\capsule{}
+%%%%%%%%%%%%%%  {\LaTeX}
+%%%%%%%%%%%%%%  {\LaTeX\ Project Team}
+%%%%%%%%%%%%%%  {\LaTeX3 news, issue 12, January 2020}
+%%%%%%%%%%%%%%  {new features and fixes in \code{expl3}; better support for (u)p\TeX; engine requirements; more}
+%%%%%%%%%%%%%%  {\getfirstpage{l3news12}}
+%%%%%%%%%%%%%%  {/TUGboat/!TBIDENT!l3news12.pdf}
+%%%%%%%%%%%%%%  {}
+%%%%%%%%%%%%%%  {}
+
+\capsule{}
+  {\LaTeX}
+  {\LaTeX\ Project Team}
+  {{\LaTeX} news, issue 43, June 2026}
+  {tagged \PDF\ news; new or improved commands;
+   formalization of \texttt{expl3} release requirement;\\
+   glyphs, characters \& encodings;
+   changes in \texttt{amsmath}, \texttt{tools}}
+  {163-168}
+  {/TUGboat/!TBIDENT!ltnews43.pdf}
+  {}
+  {}
+
+%\capsule{}
+%  {Tutorials}
+%  {Carla Maggi}
+%  {The DuckBoat\Dash Beginners' Pond: Making life easier on
+%          \acro{Q\&A} sites}
+%  {code copying, chat features, notifications, other tips for
+%   \url{tex.stackexchange.com} and \url{topanswers.xyz}}
+%  {\getfirstpage{duck-qatips}}
+%  {/TUGboat/!TBIDENT!duck-qatips.pdf}
+%  {}
+%  {}
+
+\capsule{}
+  {Accessibility}
+  {Timothy Prescott}
+  {Creating accessible presentations with \texttt{ltx-talk}}
+  {using and customizing \texttt{ltx-talk}, as well as adapting
+   \texttt{beamer} styles}
+  {208-211}
+  {https://tug.org/TUGboat/!TBIDENT!prescott-ltx-talk.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Accessibility}
+  {Timothy Prescott}
+  {Converting a \PDF\ textbook to be accessible}
+  {making a large calculus textbook accessible, and handling verification}
+  {203-207}
+  {https://tug.org/TUGboat/!TBIDENT!prescott-book-accessibility.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Publishing}
+  {Rishikesan T., Rajagopal C.V., Apu V., Rahul Krishnan S.}
+  {\TeX\ and \XML-based authoring tools: \\Speed and precision in
+          journal publishing}
+  {}%challenges in modern publishing}
+  {281-283}
+  {https://tug.org/members/TUGboat/!TBIDENT!rishi-speed.pdf}
+  {}
+  {}
+
+%\capsule{}
+%  {Electronic Documents}
+%  {Travis Stenborg}
+%  {Mathematical notation in \acro{REDC}ap online data collection instruments}
+%  {inserting math from \LaTeX\ in online surveys via \PDF\ to \SVG}
+%  {\getfirstpage{stenborg-redcap}}
+%  {https://tug.org/members/TUGboat/!TBIDENT!stenborg-redcap.pdf}
+%  {}
+%  {}
+
+\capsule{}
+  {Humanities}
+  {Corey J. Stephan}
+  {\LaTeX\ for elegant humanities handouts in conferences and classrooms}
+  {getting started, parallel texts, non-Latin languages, and recommendations}
+  {243-247}
+  {https://tug.org/members/TUGboat/!TBIDENT!stephan-humanities.pdf}
+  {}
+  {}
+
+%\capsule{}
+%   {Typography}
+%   {Nehir Temple}
+%   {From neurons to \acro{NASA}: Font psychology in~space travel}
+%   {considering fonts for impaired readers in space travel settings}
+%   {\getfirstpage{temple-nasa}}
+%   {https://tug.org/members/TUGboat/!TBIDENT!temple-nasa.pdf}
+%   {}
+%   {}
+
+%%%\capsule{}
+%%%  {Tutorials}%|add LaTeX
+%%%  {Nicola Talbot}
+%%%  {The \tbcode{glossaries} package: Getting started}
+%%%  {introduction to creating glossaries and lists of abbreviations}
+%%%  {\getfirstpage{talbot-glossaries-intro}}
+%%%  {https://tug.org/members/TUGboat/!TBIDENT!talbot-glossaries-intro.pdf}
+%%%  {}
+%%%  {}
+%%%
+%%%%%%%%\capsule{}
+%%%%%%%%  {Fonts}
+%%%%%%%%  {Herbert Vo\ss}
+%%%%%%%%  {Using OpenType and TrueType fonts with \XeLaTeX\ and Lua\LaTeX}
+%%%%%%%%  {succinct examples of searching for and loading OpenType or TrueType fonts}
+%%%%%%%%  {\getfirstpage{voss-unifont}}
+%%%%%%%%  {https://tug.org/members/TUGboat/!TBIDENT!voss-hvfloat.pdf}
+%%%%%%%%  {}
+%%%%%%%%  {}
+
+% 
+\difficulty{Intermediate Plus}
+
+\capsule{}
+  {Methods}
+  {Prasad Adhiyaman, Shreyans Babel, Chhandak Bagchi, Boris Veytsman}
+  {Inferring logical structure of a scientific paper from visual
+          representation: An easy task for humans, but surprisingly hard
+          for~\acro{AI}}
+  {results of training \acro{LLM}s to recover \LaTeX\ structuring}
+  {277-280}
+  {https://tug.org/members/TUGboat/!TBIDENT!adhiyaman-inferring.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Literate Programming}
+  {Mitchell Gerrard}
+  {Endless forms most literate}
+  {from Pierre-Arnoul de Marneffe's holons to Graham Nelson's Inweb}
+  {254-257}
+  {https://tug.org/members/TUGboat/!TBIDENT!gerrard-literate.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Accessibility}
+  {John H. Lienhard}
+  {Modernizing \acro{MIT}'s thesis template: \tbcode{mitthesis.cls}}
+  {thesis template construction, including extensive tagging, rendering
+   in \HTML\slash \CSS, and \texttt{expl3} coding}
+  {212-221}
+  {https://tug.org/members/TUGboat/!TBIDENT!lienhard-mitthesis.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Software \& Tools}
+  {Clemens Lode}
+  {Real-time \LuaTeX: Recompiling large documents in 1ms}
+  {immediate editing and paragraph reflow, with {\it O\/}(1) latency}
+  {263-266}
+  {https://tug.org/members/TUGboat/!TBIDENT!lode-realtime.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Hyphenation}%add|Software \& Tools
+  {Ond\v{r}ej Metelka, Petr Sojka}
+  {\acro{UTF}patgen: Pattern generation without borders}
+  {generating patterns from \acro{UTF}-8 input, without arbitrary limits}
+  {258-263}
+  {https://tug.org/members/TUGboat/!TBIDENT!metelka-utfpatgen.pdf}
+  {}
+  {}
+
+\capsule{}
+   {\LaTeX}
+   {Tristan Miller}
+   {Preparing \acro{SSHRC} Insight Grant applications in \LaTeX\
+    with \tbcode{sshrc-insight}}
+   {developing complex grant proposals, with multilingual support and more}
+   {186-194}
+   {https://tug.org/members/TUGboat/!TBIDENT!miller-sshrc.pdf}
+   {}
+   {}
+
+\capsule{}
+  {\LaTeX}%add|Accessibility
+  {Frank Mittelbach}
+  {Towards accessible document classes}
+  {a template-based approach to designing document elements, with
+   emulation of common packages}
+  {173-177}
+  {https://tug.org/members/TUGboat/!TBIDENT!mittelbach-accessibleclasses.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Accessibility}
+  {Erik Nijenhuis}
+  {Experimental lists and titling for \acro{PDF/UA}-2 conformance}
+  {replacing \texttt{enumitem} and \texttt{titlesec} using new \LaTeX\
+   interfaces to gain accessibility}
+  {222-226}
+  {https://tug.org/TUGboat/!TBIDENT!nijenhuis-accessiblelists.pdf}
+  {}
+  {}
+
+%%%\capsule{}
+%%%  {Macros}
+%%%  {Petr Ol\v{s}\'ak}
+%%%  {Processing data from \acro{CSV} and \acro{JSON} files with \OpTeX}
+%%%  {database operations and tree structures}
+%%%  {\getfirstpage{olsak-optex-db}}
+%%%  {https://tug.org/members/TUGboat/!TBIDENT!olsak-optex-db.pdf}
+%%%  {}
+%%%  {}
+%%%
+%%%\capsule{}
+%%%  {\LaTeX}
+%%%  {Geoffrey M. Poore}
+%%%  {Typesetting code with syntax highlighting:
+%%%   Introducing \tbcode{minted} version~3}
+%%%  {improving security, usability, debugging, and enhancements via a
+%%%   dedicated \texttt{latexminted} executable}
+%%%  {\getfirstpage{poore-minted3}}
+%%%  {https://tug.org/members/TUGboat/!TBIDENT!poore-minted3.pdf}
+%%%  {}
+%%%  {}
+
+\capsule{}
+  {Electronic Documents}
+  {C.\,V.~Radhakrishnan, K.\,V. Rajeesh}
+  {Digital archiving of Malayalam content \acro{II}}
+  {using \TeX4ht, \HTML5, \XSLT, to make archivable \acro{TEI XML} with
+   \acro{UTF-8} content}
+  {248-253}
+  {https://tug.org/members/TUGboat/!TBIDENT!radhakrishnan-malayalam.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Accessibility}
+  {Rahul~Krishnan S., Radhakrishnan C.V., Rishikesan T.}
+  {The pursuit of professional and accessible tables in~\rlap{\LaTeX}}
+  {creating accessible tables, utilizing many packages and hand-coding}
+  {227-229}
+  {https://tug.org/members/TUGboat/!TBIDENT!krishnan-tables.pdf}
+  {}
+  {}
+
+%%%\capsule{}
+%%%  {Graphics}
+%%%  {samcarter, Ulrike Fischer}
+%%%  {Cookie cutters: An example workflow of how to generate simple 
+%%%          \acro{3D}-printable objects from \LaTeX\ graphics}
+%%%  {step-by-step workflow to convert vector graphics into \acro{3D}
+%%%   models, using Open\acro{SCAD}}
+%%%  {\getfirstpage{samcarter-cookies}}
+%%%  {https://tug.org/members/TUGboat/!TBIDENT!samcarter-cookies.pdf}
+%%%  {}
+%%%  {}
+
+\capsule{}
+  {\LaTeX}
+  {V\'{\i}t Star\'y\CONNECT{}Novotn\'y}
+  {No more backtracking: Abbreviations in the Markdown package for \TeX}
+  {marking up abbreviations for consistency}
+  {178-180}
+  {https://tug.org/members/TUGboat/!TBIDENT!starynovotny-markdown-abbrev.pdf}
+  {}
+  {}
+
+%%%%%%%%\capsule{}
+%%%%%%%%  {\LaTeX}%add|Software \& Tools
+%%%%%%%%  {Herbert Vo\ss}
+%%%%%%%%  {Typesetting external program code and its output: \texttt{hvextern}}
+%%%%%%%%  {powerful methods of running general subprograms and typesetting their
+%%%%%%%%   output}
+%%%%%%%%  {\getfirstpage{voss-extern}}
+%%%%%%%%  {https://tug.org/members/TUGboat/!TBIDENT!voss-extern.pdf}
+%%%%%%%%  {}
+%%%%%%%%  {}
+%%
+%%\capsule{}
+%%  {\LaTeX}
+%%  {Tony Zorman}
+%%  {Dissertation typesetting considerations}
+%%  {writing an easily readable, and pretty, thesis or other technical
+%%   work: a personal journey}
+%%  {\getfirstpage{zorman-thesis}}
+%%  {https://tug.org/members/TUGboat/!TBIDENT!zorman-thesis.pdf}
+%%  {}
+%%  {}
+
+% 
+\difficulty{Advanced}
+
+\capsule{}
+  {Graphics}
+  {John C. Bowman}
+  {\acro{V3D}: Portable interactive \acro{3D} graphics for \PDF\ and beyond}
+  {improved rendering and portability for \acro{3D} vector graphics,
+    with examples using Asymptote}
+  {230-233}
+  {https://tug.org/members/TUGboat/!TBIDENT!bowman-v3d.pdf}
+  {}
+  {}
+
+\capsule{}
+  {\LaTeX}
+  {Erik Nijenhuis}
+  {Executable document templates for safe and reproducible document redaction}
+  {data-driven compilation inspired by government disclosure requirements}
+  {181-185}
+  {https://tug.org/TUGboat/!TBIDENT!nijenhuis-redaction.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Software \& Tools}
+  {Didier Verna}
+  {Quantum boundaries for last line adjustments}
+  {new algorithms for optimally typesetting the last line of a paragraph}
+  {267-276}
+  {https://tug.org/members/TUGboat/!TBIDENT!verna-lastline.pdf}
+  {}
+  {}
+
+%\capsule{}
+%  {Graphics}
+%  {Hans Hagen, Mikael P. Sundqvist}
+%  {L-systems: Turtle graphics with MetaPost and Lua}
+%  {implementing space-filling curves: dragon curves, Sierpi\'nski
+%   fractals, many more}
+%  {\getfirstpage{hagen-lsystems}}
+%  {https://tug.org/members/TUGboat/!TBIDENT!hagen-lsystems.pdf}
+%  {}
+%  {}
+%
+%\capsule{}
+%  {Software \& Tools}
+%  {Hans Hagen}
+%  {Looseness processing costs}
+%  {examining \cs{looseness} time and memory costs}
+%  {\getfirstpage{hagen-looseness}}
+%  {https://tug.org/members/TUGboat/!TBIDENT!hagen-looseness.pdf}
+%  {}
+%  {}
+%
+%\capsule{}
+%  {Graphics}
+%  {Hans Hagen}
+%  {Nodes and other neat old features}
+%  {traditional and Lua(Meta)\TeX\ memory layouts and processing}
+%  {\getfirstpage{hagen-nodes}}
+%  {https://tug.org/members/TUGboat/!TBIDENT!hagen-nodes.pdf}
+%  {}
+%  {}
+%
+%%\capsule{}
+%%  {Graphics}
+%%  {Jasper Nice}
+%%  {The \texttt{lua-tikz3dtools} package for \acro{3D} illustrations in \LaTeX}
+%%  {new algorithm for occlusion handling of tessellated \acro{3D}
+%%   parametric objects}
+%%  {\getfirstpage{nice-lua3dtools}}
+%%  {https://tug.org/members/TUGboat/!TBIDENT!nice-lua3dtools.pdf}
+%%  {}
+%%  {}
+%%
+%%%%%%%\capsule{}
+%%%%%%%  {Macros}
+%%%%%%%  {Petr Ol\v{s}\'ak}
+%%%%%%%  {Creating macros in \OpTeX{}}
+%%%%%%%  {many conveniences for macro programming, packaging, documenting}
+%%%%%%%  {\getfirstpage{olsak-optexmac}}
+%%%%%%%  {https://tug.org/members/TUGboat/!TBIDENT!olsak-fmtcmp.pdf}
+%%%%%%%  {}
+%%%%%%%  {}
+%%%
+%%%\capsule{}
+%%%  {\LaTeX}
+%%%  {Geoffrey M. Poore}
+%%%  {New tools for \LaTeX\ package authors:
+%%%          Buffering, hashing, caching, serializing, and~executing}
+%%%  {new packages and features to help with verbatim processing, calling
+%%%   external programs, and more}
+%%%  {\getfirstpage{poore-extools}}
+%%%  {https://tug.org/members/TUGboat/!TBIDENT!poore-extools.pdf}
+%%%  {}
+%%%  {}
+%%%
+%%%\capsule{}
+%%%  {Bibliographies}
+%%%  {Amir Mohammad Tahsiri}
+%%%  {BibBreeze: A \LaTeX\ package to automate bibliography data}
+%%%  {reconstructing references from inaccurate source files using
+%%%   \texttt{expl3} and regular expressions}
+%%%  {\getfirstpage{tahsiri-bibbreeze}}
+%%%  {https://tug.org/members/TUGboat/!TBIDENT!tahsiri-bibbreeze.pdf}
+%%%  {}
+%%%  {}
+%%%
+%%%\capsule{}
+%%%  {Software \& Tools}
+%%%  {Nicola Talbot}
+%%%  {\tbcode{datatool} v3: Performance, localisation, databases and more}
+%%%  {overview of new features in this package for handling \acro{CSV} data
+%%%   and much more}
+%%%  {\getfirstpage{talbot-datatool3}}
+%%%  {https://tug.org/members/TUGboat/!TBIDENT!talbot-datatool3.pdf}
+%%%  {}
+%%%  {}
+%%%
+%%%%\capsule{}
+%%%%  {Software \& Tools}
+%%%%  {Jan Van\v{e}k, \Thanh}
+%%%%  {Primo from a developer's perspective}
+%%%%  {a cloud-based authoring, submission, and proofing tool with
+%%%%   collaborative editing}
+%%%%  {\getfirstpage{vanek-primo}}
+%%%%  {https://tug.org/members/TUGboat/!TBIDENT!vanek-primo.pdf}
+%%%%  {}
+%%%%  {}
+
+% 
+%%web\difficulty{Contents of other \TeX\ journals}
+%
+%%%%%web\capsule{}
+%%%%%web  {Abstracts}
+%%%%%web  {}
+%%%%%web  {{\sl Les Cahiers \acro{GUT}enberg\/}: issue 59 (2024)}
+%%%%%web  {}
+%%%%%web  {\getfirstpage{cahi}}
+%%%%%web  {/TUGboat/!TBIDENT!cahi.pdf}
+%%%%%web  {}
+%%%%%web  {}
+%
+%%web\capsule{}
+%%web  {Abstracts}
+%%web  {}
+%%web  {{\sl La Lettre \acro{GUT}enberg}: issues 56--57 (2025--2026)}
+%%web  {}
+%%web  {\getfirstpage{lettre}}
+%%web  {/TUGboat/!TBIDENT!lettre.pdf}
+%%web  {}
+%%web  {}
+%
+%%%%%%%%%%%web\capsule{}
+%%%%%%%%%%%web  {Abstracts}
+%%%%%%%%%%%web  {}
+%%%%%%%%%%%web  {{\sl \ConTeXt\ Group Journal}: 14th meeting (2020)}
+%%%%%%%%%%%web  {}
+%%%%%%%%%%%web  {\getfirstpage{ctxg}}
+%%%%%%%%%%%web  {/TUGboat/!TBIDENT!ctxg.pdf}
+%%%%%%%%%%%web  {}
+%%%%%%%%%%%web  {}
+%%%%%%%%%%%web
+
+\capsule{}
+  {Abstracts}
+  {}
+  {{\sl Die \TeX nische Kom\"odie\/}: 2/2026}
+  {}
+  {286-286}
+  {/TUGboat/!TBIDENT!komo.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Abstracts}
+  {}
+  {{\sl \acro{MAPS}\/}: issue 55 (2025)}
+  {}
+  {287-287}
+  {/TUGboat/!TBIDENT!maps.pdf}
+  {}
+  {}
+
+%%%%%%%%%%%%%%%web\capsule{}
+%%%%%%%%%%%%%%%web  {Abstracts}
+%%%%%%%%%%%%%%%web  {}
+%%%%%%%%%%%%%%%web  {{\sl Ars\TeX{}nica\/}: issues 27--28 (April and October 2019)}
+%%%%%%%%%%%%%%%web  {}
+%%%%%%%%%%%%%%%web  {\getfirstpage{arstexnica}}
+%%%%%%%%%%%%%%%web  {/TUGboat/!TBIDENT!arstexnica.pdf}
+%%%%%%%%%%%%%%%web  {}
+%%%%%%%%%%%%%%%web  {}
+%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%web\capsule{}
+%%%%%%%%%%%%%%%%%%%%%%%web  {Abstracts}
+%%%%%%%%%%%%%%%%%%%%%%%web  {}
+%%%%%%%%%%%%%%%%%%%%%%%web  {{\sl Eutypon\/}: issue 34--35 (October 2015)}
+%%%%%%%%%%%%%%%%%%%%%%%web  {}
+%%%%%%%%%%%%%%%%%%%%%%%web  {\getfirstpage{eutypon}}
+%%%%%%%%%%%%%%%%%%%%%%%web  {/TUGboat/!TBIDENT!eutypon.pdf}
+%%%%%%%%%%%%%%%%%%%%%%%web  {}
+%%%%%%%%%%%%%%%%%%%%%%%web  {}
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%web\capsule{}
+%%%%%%%%%%%%%%%%%%%%%%%%%web  {Abstracts}
+%%%%%%%%%%%%%%%%%%%%%%%%%web  {}
+%%%%%%%%%%%%%%%%%%%%%%%%%web  {{GUST}: EuroBacho\TeX\ 2014}
+%%%%%%%%%%%%%%%%%%%%%%%%%web  {}
+%%%%%%%%%%%%%%%%%%%%%%%%%web  {\getfirstpage{gust}}
+%%%%%%%%%%%%%%%%%%%%%%%%%web  {/TUGboat/!TBIDENT!gust.pdf}
+%%%%%%%%%%%%%%%%%%%%%%%%%web  {}
+%%%%%%%%%%%%%%%%%%%%%%%%%web  {}
+%
+%%web\capsule{}
+%%web  {Abstracts}
+%%web  {}
+%%web  {{\sl Zpravodaj\/}: issue 2025/1--4}
+%%web  {}
+%%web  {\getfirstpage{zprav}}
+%%web  {/TUGboat/!TBIDENT!zprav.pdf}
+%%web  {}
+%%web  {}
+%
+%%%\bigskip}\vfil\eject\vbox{\rm \advance\abovecapsuleskip by 0pt
+%%%%\leftline{\difficultyfont Advanced (continued)}
+%%%
+%%%\abovecapsuleskip = 0pt
+
+% 
+\difficulty{Reports and notices}
+
+%%%%\capsule{}
+%%%%  {Reviews}
+%%%%  {Jim Hef{}feron}%person|George Gr\"atzer
+%%%%  {Book review: \titleref{Text and Math Into \LaTeX{}}, sixth
+%%%%          edition, by George Gr\"atzer}
+%%%%  {}
+%%%%  {\getfirstpage{reviews-gratzer6}}
+%%%%  {/TUGboat/!TBIDENT!reviews-gratzer6.pdf}
+%%%%  {}
+%%%%  {}
+
+\capsule{}
+  {TUG 2026}
+  {}
+  {\acro{TUG} 2026 conference information}
+  {}
+  {146-146}
+  {/TUGboat/!TBIDENT!confinfo.pdf}
+  {}
+  {}
+
+\capsule{}
+  {TUG 2026}
+  {}
+  {\acro{TUG} 2026 conference program}
+  {}
+  {147-147}
+  {/TUGboat/!TBIDENT!program.pdf}
+  {}
+  {}
+
+\capsule{}
+  {TUG 2026}
+  {}
+  {\acro{TUG} 2026 conference photos}
+  {}
+  {148-150}
+  {/TUGboat/!TBIDENT!photos.pdf}
+  {}
+  {}
+
+\capsule{}
+  {TUG 2026}
+  {Erik Nijenhuis}
+  {Vice-President's report on \acro{TUG}~2026}
+  {}
+  {151-153}
+  {/TUGboat/!TBIDENT!nijenhuis-tug26.pdf}
+  {}
+  {}
+
+\capsule{}
+  {TUG 2026}
+  {Karl Berry}
+  {\tug\ 2026 Annual General Meeting notes}
+  {}
+  {154-155}
+  {/TUGboat/!TBIDENT!tug26-agm.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Abstracts}
+  {{A}rora, {A}sakura, de {S}ouza,
+   {G}oulet, {N}ice, {P}reining, {S}tar\'y\CONNECT{}{N}ovotn\'y, {T}emple}
+  {\acro{TUG} 2026 abstracts}
+  {}
+  {284-285}
+  {/TUGboat/!TBIDENT!abstracts.pdf}
+  {}
+  {}
+
+\capsule{}
+  {Reviews}
+  {Uwe Ziegenhagen}%person|Stefan Kottwitz
+  {Book review: \textsl{\LaTeX\ Beginner's Guide}, third edition,
+          by Stefan Kottwitz}
+  {}
+  {288-289}
+  {/TUGboat/!TBIDENT!reviews-kottwitz-beginners3.pdf}
+  {See the <a href="/books/">TUG books page</a> for all book reviews
+   and discounts.}
+  {}
+
+\capsule{}
+  {General Delivery}%add|Errata
+  {\TUB\CONNECT{}Editors}
+  {Errata in \TUB\ 47:1: missing f-ligatures; incorrect author and
+   title; \tug\ board members}
+  {}
+  {289-289}
+  {/TUGboat/!TBIDENT!errata471.pdf}
+  {}
+  {}
+
+%%%%%%%%%\capsule{}
+%%%%%%%%%  {Hints \& Tricks}%add|Software \& Tools
+%%%%%%%%%  {Karl Berry}
+%%%%%%%%%  {\TeX\ Live 2022 news}
+%%%%%%%%%  {brief summary of known issues in the \acro{TL}'22 release}
+%%%%%%%%%  {\getfirstpage{berry-tl22news}}
+%%%%%%%%%  {/TUGboat/!TBIDENT!berry-tl22news.pdf}
+%%%%%%%%%  {}
+%%%%%%%%%  {}
+
+%\capsule{}
+%   {Abstracts}
+%   {}
+%   {From other \TeX\ journals:
+%   {\sl Die \TeX nische Kom\"odie} 2/2026;
+%   {\sl \acro{MAPS}} 55 (2025)
+%%   {\sl Zpravodaj} 2025/1--4;\\
+%%   {\sl La Lettre \acro{GUT}enberg} 56--57 (2025--2026)
+%%   {\sl Les Cahiers \acro{GUT}enberg} 59 (2024);
+%%   {\sl \ConTeXt\ Group Journal\/}: 14th meeting (2020);\\
+%%   {\sl Ars\TeX{}nica} 27--28 (2019);
+%%   {\sl EuroBacho\TeX} 2014;
+%%   {\sl The Prac\kern-.02em\TeX\ Journal} 2012-1};
+%%   {\sl Baskerville} 10.2 (2009)};
+%   }
+%   {}
+%   {\getfirstpage{komo}}
+%   {nourl}
+%   {}
+%   {}
+
+%%%\capsule{}
+%%%  {TUG Business}
+%%%  {\acro{TUG}\CONNECT{}Elections\CONNECT{}committee}
+%%%  {2025 \TeX\ Users Group election}
+%%%  {}
+%%%  {\getfirstpage{elec}}
+%%%  {/TUGboat/!TBIDENT!elec.pdf}
+%%%  {}
+%%%  {}
+%
+%\capsule{}
+%  {TUG Business}
+%  {Karl Berry}
+%  {\tug\ financial statements for 2025}
+%  {}
+%  {\getfirstpage{treas}}
+%  {/TUGboat/!TBIDENT!treas.pdf}
+%  {}
+%  {}
+%
+%\capsule{}
+%  {Cartoon}
+%  {John Atkinson}
+%  {Comics: Parenthetically speaking; periodic table of elephants}
+%  {}
+%  {\getlastpage{consultants}}
+%  {/TUGboat/!TBIDENT!consultants.pdf}
+%  {}
+%  {}
+%
+%%\capsule{}
+%%  {TUG Business}
+%%  {\TeX\CONNECT{}Development\CONNECT{}Fund\CONNECT{}committee}
+%%  {\TeX\ Development Fund 2021--2025 report}
+%%  {}
+%%  {\getfirstpage{devfund}}
+%%  {/TUGboat/!TBIDENT!devfund.pdf}
+%%  {}
+%%  {}
+%%
+%%%%%%%%%\capsule{}
+%%%%%%%%%  {TUG Business}
+%%%%%%%%%  {\acro{TUG}\CONNECT{}Bylaws\CONNECT{}committee}
+%%%%%%%%%  {\acro{TUG} Annual General Meeting Procedures}
+%%%%%%%%%  {}
+%%%%%%%%%  {\getfirstpage{agmproc}}
+%%%%%%%%%  {/TUGboat/!TBIDENT!agmproc.pdf}
+%%%%%%%%%  {}
+%%%%%%%%%  {}
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%\capsule{}
+%%%%%%%%%%%%%%%%%%%%%%%%%  {TUG Business}
+%%%%%%%%%%%%%%%%%%%%%%%%%  {}
+%%%%%%%%%%%%%%%%%%%%%%%%%  {\acro{TUG} membership form}
+%%%%%%%%%%%%%%%%%%%%%%%%%  {}
+%%%%%%%%%%%%%%%%%%%%%%%%%  {\getfirstpage{memberapp}}
+%%%%%%%%%%%%%%%%%%%%%%%%%  {/join.html}
+%%%%%%%%%%%%%%%%%%%%%%%%%  {}
+%%%%%%%%%%%%%%%%%%%%%%%%%  {}
+%%%%%
+%%%%%\capsule{}
+%%%%%  {News \& Announcements}
+%%%%%  {}
+%%%%%  {\TeX\ conferences and lectures}
+%%%%%  {}
+%%%%%  {\getfirstpage{ads-conf}}
+%%%%%  {/TUGboat/!TBIDENT!ads-conf.pdf}
+%%%%%  {}
+%%%%%  {}
+
+\capsule{}
+  {Advertisements}
+  {}
+  {\TeX\ consulting and production services}
+  {}
+  {294-295}
+  {/consultants.html}
+  {}
+  {}
+ 
+\capsule{}
+  {TUG Business}
+  {}
+  {Institutional members}
+  {}
+  {295-295\offset{.5}}
+  {/instmem.html}
+  {}
+  {}
+
+\capsule{Reports and notices}
+  {Advertisements}
+  {}
+  {\tug\ patron: \TeX{}Folio}
+  {}
+  {295-295}
+  {/TUGboat/!TBIDENT!ad-rvt.pdf}
+  {}
+  {}
+
+\capsule{}
+  {News}%replace|News \& Announcements
+  {}
+  {Calendar}
+  {}
+  {296-296}
+  {/TUGboat/!TBIDENT!calendar.pdf}
+  {}
+  {}
+
+\vfil}
