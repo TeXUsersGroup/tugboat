@@ -104,12 +104,20 @@ sub crossref_write_files {
         $name_for_rpi = $first ? "$first $last" : $last;
       }
       $name_for_rpi =~ s/&(#xa0|nbsp);/ /g; # just spaces
+      #
+      # no italics as in <i>TUGboat</i> Editors.
+      $name_for_rpi =~ s,</?.>,,g;
+      die ("$0: name_for_rpi contains markup: $name_for_rpi "
+          . "(from first=$first last=$last)") if $name_for_rpi =~ /</;
+      #
       # Rishi T requested sorting as Rishi, so we want
       # last=Rishi and first=T, even though Rishi is printed first.
       # We will probably need to generalize this into a new value in
       # lists-authinfo.txt, but so far, other Indian etc. names are
       # handled by unifying them to have the sorted name last (like
-      # Western names): CV Radhakrishnan, etc.
+      # Western names): CV Radhakrishnan, etc. 28aug26 update: No, we
+      # haven't solved this; Rishi and Rahul and Apu and others are
+      # coming out wrong. Sigh.
       $name_for_rpi =~ s/Rishi T/T Rishi/
         if $name_for_rpi eq "Rishi T";
       #warn "name4rpi=$name_for_rpi (last=$last, first=", $first || "", ")\n";
@@ -481,6 +489,12 @@ sub make_bibtex_entry {
     #
     # Use ties instead of the capsules' \CONNECT{} convention.
     $a_out =~ s/\\CONNECT\{\}/~/g;
+    #
+    # There are many variations of LaTeX as an author. Unify them
+    # as tugboat.bib does. This form makes it sort under L.
+    $a_out = '{{\LaTeX}{ }Project{ }Team}'
+      if $a_out =~ /LaTeX.*(Project|Team)/i;
+    #
     push (@a_out, $a_out);
     #
     # collect orcid values as we go.
@@ -523,6 +537,8 @@ sub make_bibtex_entry {
   # end of entry.
   $entry .= qq!}\n!;
   
+  $entry = &clean_tugboat_bib_entry ($entry);
+
   return $entry;
 }
 
@@ -579,9 +595,6 @@ sub read_nbib {
   shift @entries; # dump leading comments
   my @no_urls;
 
-  # End of a control word (not symbol); see LaTeX::ToUnicode[.pm] for info.
-  my $endcw = qr/(?<=[a-zA-Z])(?=[^a-zA-Z]|$)\s*/;
-
   for my $e (@entries) {
     next if $e =~ /^(Preamble|String)/;
     my ($url) = ($e =~ m/\burl\s*=\s*"(.*?)"/i);
@@ -597,15 +610,8 @@ sub read_nbib {
       $e =~ s/.*\bbibdate\b.*\n//;  # no need for version id here?
       $e =~ s/.*\bfjournal\b.*\n//; # why?
       #
-      # Convert TUGboat commands to make the entry more generic, except
-      # there are so many commands, it doesn't seem feasible to handle
-      # them all. Just do a few common ones and require tugboat.def 
-      # for the rest (@preamble above).
-      $e =~ s/\s*\\Dash$endcw\s*/\\,---\\,/g;
-      $e =~ s/\\TUB$endcw\s*/\\textsl{TUGboat}/g;
-      $e =~ s/\\booktitle$endcw/\\emph/g;
-      $e =~ s/\\pkg$endcw//g; # sometimes sf, sometimes tt, sometimes nothing
-      
+      $e = &clean_tugboat_bib_entry ($e);
+
       # We split at @, so put it back.
       $nbib{$url} = '@' . $e;
 
@@ -622,6 +628,48 @@ sub read_nbib {
 
   return %nbib;
 }
+
+
+# Take and return a BibTeX entry or value. Used to clean both the BibTeX
+# entries we synthesize from the capsule file and the entries we take
+# from tugboat.bib. The idea is to make the entries we print on the
+# landing file more generic/widely usable.
+# 
+sub clean_tugboat_bib_entry {
+  my ($s) = @_;
+
+  # End of a control word (not symbol); see LaTeX::ToUnicode[.pm] for info.
+  # Used in the BibTeX entries.
+  my $endcw = qr/(?<=[a-zA-Z])(?=[^a-zA-Z]|$)\s*/;
+
+  # Convert TUGboat commands to make the entry more generic, except
+  # there are so many commands, it doesn't seem feasible to handle
+  # them all. Just do a few common ones and require tugboat.def 
+  # (in the @preamble above).
+  $s =~ s/\s*\\Dash$endcw*/\\,---\\,/g;
+  $s =~ s/\\LuaTeX$endcw/Lua\\TeX/g;
+  $s =~ s/\\PDF$endcw/PDF/g;
+  $s =~ s/\\TUB$endcw/\\textsl{TUGboat}/g;
+  $s =~ s/\\acro$endcw//g;
+  $s =~ s/\\booktitle$endcw/\\emph/g;
+  $s =~ s/\\pkg$endcw//g; # sf or tt or nothing, so ignore
+  $s =~ s/\\rlap$endcw//g;
+  $s =~ s/\\tbcode$endcw/\\texttt/g;
+  $s =~ s/\\tug$endcw/TUG/g;
+  
+  # Remove \\ since forced line breaks shouldn't be in the generic entries.
+  $s =~ s/(?<!\\)\\\\(?!\\)//;
+  # The (?<!\\) is negative lookbehind that our matched backslash pair
+  # is not preceded by another backslash; the ($?\\) is negative lookahead
+  # that the matched pair is not followed by another backslash. Fun.
+  
+  # If we ended up with "}\ " from the above, we can safely remove the \,
+  # just to make it look a little nicer.
+  $s =~ s/\}\\ /} /g;
+  
+  return $s;
+}      
+
 
 # Return html string linking to the item at OFFSET (plus or minus,
 # described with LABEL in the link text) from PAGENO, in CAPSULES. If no

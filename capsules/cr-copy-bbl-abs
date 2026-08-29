@@ -1,16 +1,24 @@
 #!/bin/sh
 # $Id$
-# Copy helper (bbl.tex, abs.tex, .aux, .bib) files for Crossref. Public domain.
+# Copy helper (bbl.tex, abs.tex) files for Crossref. Public domain.
 # 
 # As a first step toward preparing a Crossref upload (see
 # ltx2crossrefxml, crossref/README, etc.), we copy all helper files for
 # a given issue $1 to the temporary holding directory $2.
 # 
-# These so-called helper files include bbl.tex and abs.tex (created by
-# hand), and *.aux and *.bib (as written). Any or all may not exist for
-# a given article, but there will (presumably) be at least one of each
-# type for an entire issue. (If that assumption fails, have to change
-# the checks below not to exist.)
+# These so-called helper files include bbl.tex and abs.tex, created by
+# hand; see README-process.txt. Any or all may not exist for a given
+# article, but there will (presumably) be at least one of each type for
+# an entire issue. (If that assumption fails someday, have to change the
+# checks below not to exist.)
+# 
+# For 46:3 and 47:1 (see r718 for latest version), we also copied the
+# aux and bib files to create structured citations (see also the
+# README-process.txt from that time for a bit of info). But then we were
+# informed by Crossref (14may26) that it is better to only generate
+# unstructured cites. Their structured citations do not support all the
+# necessary elements for all the supposedly-but-not-really-supported
+# item types.
 
 # We're going to assume there are no spaces in filenames,
 # cp supports -p, and other such non-portabilities.
@@ -68,18 +76,6 @@ if test $abs_count -eq 0; then
   echo "$0: no abs.tex files found under: $issdir" >&2
   exit 1
 fi
-#
-aux_count=`ls -1 $issdir/*/*.aux 2>/dev/null | wc -l`
-if test $aux_count -eq 0; then
-  echo "$0: no aux files found under: $issdir" >&2
-  exit 1
-fi
-#
-bib_count=`ls -1 $issdir/*/*.bib 2>/dev/null | wc -l`
-if test $bib_count -eq 0; then
-  echo "$0: no bib files found under: $issdir" >&2
-  exit 1
-fi
 
 # We intentionally do not erase existing files or move them aside;
 # another level (namely the cr-do-issue script) does that.
@@ -104,41 +100,5 @@ for a in $issdir/*/abs.tex; do
   $cp "$a" "$dest" || exit 1
 done  
 
-# Similarly for the aux files.
-# 
-for a in $issdir/*/*.aux; do
-  ident=`basename \`dirname "$a"\``
-  dest=$outdir/tb${seqno}${ident}.aux
-  $cp "$a" "$dest" || exit 1
-done  
-
-# But for the bib files, preserve the original names,
-#  since the aux file refers to them.
-# And since those names are random, copy them all into a subdir bib/
-#  instead of cluttering up the main $outdir. The Makefile sets
-#  TEXMFDOTDIR to find them there.
-# Also, exclude save*.bib, orig*.bib, etc., since those are backup files we
-#  create during editing.
-# Also, if there are any duplicate names, quit. Processing
-#  can't succeed if there are two bib files by the same name,
-#  since we're copying everything into a single working directory.
-# 
-bib_excludes='(pre)?auth|(bb|bib|karl|orig|x)\.|bibliography|\.orig|printed|save'
-for bib in $issdir/*/*.bib; do
-  bib_basename=`basename "$bib"`
-  echo "$bib_basename" \
-    | egrep "^($bib_excludes)" >/dev/null\
-    && continue
-  dest=$outdir/bib/$bib_basename
-  if test -e "$dest"; then
-    echo "$0: bib file already exists: $dest" >&2
-    echo "$0:      trying to copy new: $bib" >&2
-    echo "$0: this must be rectified to continue, goodbye." >&2
-    exit 1
-  fi
-  test -d "$outdir"/bib || mkdir "$outdir"/bib
-  $cp "$bib" "$dest" || exit 1
-done  
-
-echo "$0: $bbl_count bbl, $abs_count abs, $aux_count aux, $bib_count bib copied: $outdir"
+echo "$0: $bbl_count bbl, $abs_count abs copied: $outdir"
 exit 0

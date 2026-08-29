@@ -41,7 +41,7 @@ directory (~tubprod/VV-N), one or both of these files, as needed:
     (For wermuth articles, see replacements in ltx2crossrefxml-tugboat.cfg.)
   . for BibLaTeX, the only method is to copy-and-paste from the output
     pdf into bbl.tex. Latest attempt: tb144bien-typoglyphs.
-    . Some Unicode can get be lost, and have to be recovered manually.
+    . Some Unicode can get lost, and have to be recovered manually.
     . \bibitem commands have to be added manually.
     . Structured citations cannot be created, since \citation and
       \bibdata commands are not output. (ltx2crossref would have to be
@@ -53,12 +53,7 @@ directory (~tubprod/VV-N), one or both of these files, as needed:
 These {abs,bbl}.tex files stay in the TUGboat per-article source directories.
 
 There has to be at least one abs.tex and one bbl.tex or the program will
-bail out early, so easiest to choose an article with both to do first.
-
-In addition to these, all .aux files and .bib files will be copied to
-the working dir (the .bib files in a subdir bib/). They are used to
-construct Crossref's structured citations. Might have to delete unused
-.aux files from authors, etc.
+bail out early, so easiest to start with an article that has both.
 
 Best to do this one article at a time, making sure each comes out ok.
 After creating the first abs/bbl.tex, run:
@@ -90,8 +85,8 @@ so fix the translations, one way or another:
 
 - For simplicity in the Perl code, the conversions are line-oriented.
   So if the argument to a command in abs.tex or bbl.tex
-  starts on one line and ends on another, it won't be recognized. Edit
-  the .tex file to put it on one line.
+  starts on one line and ends on another, it won't be recognized.
+  Edit the .tex file to put it on one line.
 
 - For the references, no font changes or other html-level markup (<sup>,
   etc.) is used.  It is plain (Unicode) text.  The only special cases
@@ -99,15 +94,8 @@ so fix the translations, one way or another:
   (implemented in cr-landing-bbl-abs).
 
 - Crossref's unstructured citations are output from the bbl.tex files,
-  as above.  Crossref's structured citations are also output, using the
-  aux+bib files. If any bib files need changes (try hard to avoid this),
-  do not fail to save the original version on the working machine and on
-  tug.org before editing and updating on tug.org.
-  
-  Because the unstructured and structured citations are output from
-  different sources, modifying bbl.tex will not affect the structured
-  citation, and similarly in the other direction. Sometimes that's what
-  you want, but usually you'll have to modify both when changes are needed.
+  as above. We no longer output Crossref's structured citations;
+  see comments at the top of cr-copy-bbl-abs.
 
 On the other hand, sometimes authors use one-off abbreviations or
 complicated TeX code in their abstracts or bibliographies. In such
@@ -157,18 +145,26 @@ formatting attempted for the landing .html files is to make urls
 (recognized from plain text) live; italics, typewriter, etc., do not happen.
 (We should possibly fix this by using ltx2unitxt for the bbls too, or
 maybe not, since it's a lot of error-prone detail and all the
-information is there.)
+information is present now.)
 
 Then repeat until all articles are done.
 
-Besides checking the .html landing files, it is also necessary
+Then test our synthesized bib entries with a consolidated bib file:
+  make bibiss # in capsules dir
+This will probably find some control sequences that need to be {\braced}
+in the tb*capsule.txt file. Fix until it runs cleanly.
+
+Then, besides checking the .html landing files, it is also necessary
 to check the generated dir2.process/issue.xml:
 - check <title>, <surname>, <given_name> elements;
   if any are new organizations, add to lists-authinfo.txt.
+  For Indian names like "Rishikesan Nair T", we currently usually have the
+    <surname> as "T" and the <given_name> as "Rishikesan Nair".
+    But this is wrong, see special case in capcrossref.pl that needs to
+    be extended for Rishi, Rahul, Apu, others. Argh.
 - check that <ORCID> elements are present for all that are specified;
   grep the sources. Add any new ones to lists-authinfo.txt.
-- also check <citation_list>s and individual <citation>s for reasonableness,
-  especially the structured citations with <article_title> etc.
+- also check <citation_list>s and individual <citation>s for reasonableness.
 
 When all articles are done, to test if our xml validates, upload
 dir2*/issue.xml to this obscure url, given to us by Crossref support
@@ -209,11 +205,11 @@ to make landing pages that don't go through doi.org, for testing. Then:
 Then check results at:
   https://tug.org/TUGboat/tbVV-N/tbnnnwhatever.html
 E.g.:
-  https://tug.org/TUGboat/tb47-1/tb145chest.html
-And email tub-prod for them to check if desired.
+  https://tug.org/TUGboat/tb47-2/tb146chest.html
+Also, email tub-prod for them to check if desired.
 
 The crw target makes the "next doi" links be local (and the list*
-accumulations only be for the processed issue, so don't look at those).
+accumulations be for only the single processed issue, so don't look at those).
 
 Good to make another interim commit of whatever needed to be changed in
 capsules/ (and crossrefware and bibtexperllibs) at this point.

@@ -124,8 +124,9 @@ access</a>.
 \capsule{}
   {General Delivery}
   {Barbara Beeton}
-  {A (somewhat biased) history of \TeX\ and \tug}
-  {the origin of \TeX\ and significant events in \tug's history, 1980--2000}
+  {A (somewhat biased) history of {\TeX} and {\tug}}
+  {the origin of \TeX\ and significant events in \tug's history,
+   ca.~1980--2000}
   {159-162}
   {https://tug.org/members/TUGboat/!TBIDENT!beeton-tughistory.pdf}
   {}
@@ -134,7 +135,7 @@ access</a>.
 \capsule{}
   {General Delivery}%add|Conference Notes
   {Erik Nijenhuis}
-  {Meeting \TeX\ friends: Adventures across \acro{LUG}s}
+  {Meeting {\TeX} friends: Adventures across \acro{LUG}s}
   {personal reflections on two years of cross-continental \TeX\ meetings}
   {155-158}
   {/TUGboat/!TBIDENT!nijenhuis-travels.pdf}
@@ -231,7 +232,7 @@ access</a>.
 \capsule{}
   {\LaTeX}%add|Accessibility
   {Ulrike Fischer}
-  {News from the \LaTeX{} Tagged \PDF{} project: 2026}
+  {News from the {\LaTeX} Tagged {\PDF} project: 2026}
   {accessible math, ending the \texttt{testphase}, new interfaces, keeping up}
   {169-172}
   {https://tug.org/members/TUGboat/!TBIDENT!fischer-tagging26.pdf}
@@ -298,7 +299,7 @@ access</a>.
 \capsule{}
   {Accessibility}
   {Timothy Prescott}
-  {Converting a \PDF\ textbook to be accessible}
+  {Converting a {\PDF} textbook to be accessible}
   {making a large calculus textbook accessible, and handling verification}
   {203-207}
   {https://tug.org/TUGboat/!TBIDENT!prescott-book-accessibility.pdf}
@@ -308,9 +309,9 @@ access</a>.
 \capsule{}
   {Publishing}
   {Rishikesan T., Rajagopal C.V., Apu V., Rahul Krishnan S.}
-  {\TeX\ and \XML-based authoring tools: \\Speed and precision in
+  {{\TeX} and {\XML}-based authoring tools: \\Speed and precision in
           journal publishing}
-  {}%challenges in modern publishing}
+  {challenges in the modern journal publishing environment}
   {281-283}
   {https://tug.org/members/TUGboat/!TBIDENT!rishi-speed.pdf}
   {}
@@ -329,7 +330,7 @@ access</a>.
 \capsule{}
   {Humanities}
   {Corey J. Stephan}
-  {\LaTeX\ for elegant humanities handouts in conferences and classrooms}
+  {{\LaTeX} for elegant humanities handouts in conferences and classrooms}
   {getting started, parallel texts, non-Latin languages, and recommendations}
   {243-247}
   {https://tug.org/members/TUGboat/!TBIDENT!stephan-humanities.pdf}
@@ -405,7 +406,7 @@ access</a>.
 \capsule{}
   {Software \& Tools}
   {Clemens Lode}
-  {Real-time \LuaTeX: Recompiling large documents in 1ms}
+  {Real-time {Lua\TeX}: Recompiling large documents in 1ms}
   {immediate editing and paragraph reflow, with {\it O\/}(1) latency}
   {263-266}
   {https://tug.org/members/TUGboat/!TBIDENT!lode-realtime.pdf}
@@ -425,7 +426,7 @@ access</a>.
 \capsule{}
    {\LaTeX}
    {Tristan Miller}
-   {Preparing \acro{SSHRC} Insight Grant applications in \LaTeX\
+   {Preparing \acro{SSHRC} Insight Grant applications in {\LaTeX}
     with \tbcode{sshrc-insight}}
    {developing complex grant proposals, with multilingual support and more}
    {186-194}
@@ -479,12 +480,12 @@ access</a>.
 
 \capsule{}
   {Electronic Documents}
-  {C.\,V.~Radhakrishnan, K.\,V. Rajeesh}
+  {C.V. Radhakrishnan, K.V. Rajeesh}
   {Digital archiving of Malayalam content \acro{II}}
   {using \TeX4ht, \HTML5, \XSLT, to make archivable \acro{TEI XML} with
    \acro{UTF-8} content}
   {248-253}
-  {https://tug.org/members/TUGboat/!TBIDENT!radhakrishnan-malayalam.pdf}
+  {https://tug.org/members/TUGboat/!TBIDENT!radhakrishnan-malayalam-archiving.pdf}
   {}
   {}
 
@@ -513,7 +514,7 @@ access</a>.
 \capsule{}
   {\LaTeX}
   {V\'{\i}t Star\'y\CONNECT{}Novotn\'y}
-  {No more backtracking: Abbreviations in the Markdown package for \TeX}
+  {No more backtracking: Abbreviations in the Markdown package for {\TeX}}
   {marking up abbreviations for consistency}
   {178-180}
   {https://tug.org/members/TUGboat/!TBIDENT!starynovotny-markdown-abbrev.pdf}
@@ -548,7 +549,7 @@ access</a>.
 \capsule{}
   {Graphics}
   {John C. Bowman}
-  {\acro{V3D}: Portable interactive \acro{3D} graphics for \PDF\ and beyond}
+  {\acro{V3D}: Portable interactive \acro{3D} graphics for {\PDF} and beyond}
   {improved rendering and portability for \acro{3D} vector graphics,
     with examples using Asymptote}
   {230-233}
@@ -830,7 +831,7 @@ access</a>.
 \capsule{}
   {TUG 2026}
   {Karl Berry}
-  {\tug\ 2026 Annual General Meeting notes}
+  {{\tug} 2026 Annual General Meeting notes}
   {}
   {154-155}
   {/TUGboat/!TBIDENT!tug26-agm.pdf}
@@ -839,8 +840,8 @@ access</a>.
 
 \capsule{}
   {Abstracts}
-  {{A}rora, {A}sakura, de {S}ouza,
-   {G}oulet, {N}ice, {P}reining, {S}tar\'y\CONNECT{}{N}ovotn\'y, {T}emple}
+  {Arora, Asakura, de\CONNECT{}Souza,
+   Goulet, Nice, Preining, Star\'y\CONNECT{}{N}ovotn\'y, Temple}
   {\acro{TUG} 2026 abstracts}
   {}
   {284-285}
@@ -864,7 +865,7 @@ access</a>.
   {General Delivery}%add|Errata
   {\TUB\CONNECT{}Editors}
   {Errata in \TUB\ 47:1: missing f-ligatures; incorrect author and
-   title; \tug\ board members}
+   title; {\tug} board members}
   {}
   {289-289}
   {/TUGboat/!TBIDENT!errata471.pdf}
@@ -995,7 +996,7 @@ access</a>.
 \capsule{Reports and notices}
   {Advertisements}
   {}
-  {\tug\ patron: \TeX{}Folio}
+  {{\tug} patron: \TeX{}Folio}
   {}
   {295-295}
   {/TUGboat/!TBIDENT!ad-rvt.pdf}

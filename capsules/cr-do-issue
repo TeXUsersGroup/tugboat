@@ -9,20 +9,12 @@
 # The main complication is the additional files for the bibliographies
 # and abstracts. We copy them from the TUGboat issue source directory.
 # Because these can be quite free-form on the TeX side, we have to allow
-# for possible hand-editing for Crossref purposes, and thus avoid
-# overwriting.
-# 
-# That means that if the content on the TeX side substantively changes,
-# the new bbl/abs would have to be updated by hand, or the existing
-# files (in the cr_processdir below) removed. This script won't update
-# them once they exist. Since the idea is that we only do this for real
-# after the issue is completely done and at the printer, this shouldn't
-# be a problem in practice.
+# for possible hand-editing for Crossref purposes.
 
 verbose=:
 # --landing-only is not currently working because cr-landing-bbl-abs
 # reads it to get the references list; see that script. But leave the
-# option in place in case we get around to dealing with it.
+# option in place in case we get around to dealing with it someday.
 landing_only=false
 
 while test $# -gt 0; do
@@ -44,7 +36,7 @@ $Id$
 Usage: $0 [--landing-only] [--verbose] 
           CAPSULEFILE CAP-OUTDIR LND-OUTDIR CROSSREFXMLFILE
 
-First, run ./cr-copy-bbl-abs on CAPSULEFILE to copy the bbl/abs/bib/aux
+First, run ./cr-copy-bbl-abs on CAPSULEFILE to copy the bbl/abs
 ("helper") files from the TUGboat source directory to LND-OUTDIR.
 
 Then, copy any new helper files to the directory of CROSSREFXMLFILE, but do
@@ -122,8 +114,7 @@ cnt_xmlprocess_preserved=0
 cnt_xmlprocess_copied=0
 #
 for lf in "$lnd_outdir"/tb*.abs \
-          "$lnd_outdir"/tb*.bbl \
-          "$lnd_outdir"/tb*.aux; do
+          "$lnd_outdir"/tb*.bbl; do
   pf=`echo "$lf" | sed "s,$lnd_outdir,$cr_processdir,"`
   base=`basename "$pf"`
   if test -e "$pf"; then
@@ -135,16 +126,10 @@ for lf in "$lnd_outdir"/tb*.abs \
     cnt_xmlprocess_copied=`expr $cnt_xmlprocess_copied + 1`
   fi
 done
-echo "$0: bbl/abs/aux->$cr_processdir: $cnt_xmlprocess_preserved preserved, $cnt_xmlprocess_copied copied."
-
-# erase and copy the bib/ subdir from landing to xmlprocess.
-srcbib=$lnd_outdir/bib
-destbib=$cr_processdir/bib
-rm -rf $destbib
-cp -pr $srcbib $destbib
+echo "$0: bbl/abs->$cr_processdir: $cnt_xmlprocess_preserved preserved, $cnt_xmlprocess_copied copied."
 
 # copy any previously-existing (that is, possibly hand-edited) bbl/abs
-# from xmlprocess back to landing. The aux/bib files are never hand-edited.
+# from xmlprocess back to landing.
 # 
 cnt_landing_unchanged=0
 cnt_landing_copied=0
@@ -183,7 +168,7 @@ if ! $landing_only; then
   # so can just overwrite in our processdir:
   cp -pf "$cap_outdir"/*.rpi "$cr_processdir"/ || exit 1
 
-  # make the crossref issue.xml file; uses the rpi/bbl/aux/bib files.
+  # make the crossref issue.xml file; uses the rpi/bbl files.
   run_cmd make -C crossref issue
 
 fi # ! landing_only
@@ -195,16 +180,18 @@ cp -pf "$cap_outdir/"*.html "$lnd_outdir"/ || exit 1
 # crossref xml file, and with the abstracts copied above.
 run_cmd ./cr-landing-bbl-abs "$crossrefxml_file" "$lnd_outdir"/
 
-# if the landing pages contain any literal backslashes, something went
-# wrong -- except in the bib entries, which have many backslashes.
+# if the landing pages contain any literal backslashes or $...$ math
+# expression, something went wrong -- except in the displayed bib
+# entries (the info we generate to "cite this article"), which have many
+# backslashes, so don't look at those.
 bs_files=
 for l in $lnd_outdir/*.html; do
-  if sed '/id="cite"/,/<pre>/d' $l | fgrep '\'; then # show matches
+  if sed '/id="cite"/,/<pre>/d' $l | grep -E '\\|\$.*\$'; then # show matches
     bs_files="$bs_files $l"
   fi
 done
 if test -n "$bs_files"; then
-  echo "$0: *** backslashes in generated landing pages, goodbye." >&2
+  echo "$0: *** backslashes or $math$ in generated landing pages, goodbye." >&2
   echo "$0: $bs_files"
   exit 1
 fi

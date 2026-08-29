@@ -1,3 +1,31 @@
+2026-08-29  Karl Berry  <karl@freefriends.org>
+
+	Prepare for publication of 47:2 (tb146).
+	
+	* tb146capsule.txt: use {\foo} instead of "\foo\ ", for BibTeX's sake,
+	and similar tweaks.
+	* crossref/ltx2crossrefxml-tugboat.cfg: remove math-shift chars $...$;
+	handle a few more macros.
+	* lists-authinfo.txt (TUGboat Editors): new organization.
+
+	* cr-copy-bbl-abs: do not copy aux/bib files, as we no longer want
+	to generate structured citations, following Crossref's advice.
+	r718 was the latest version with structured citation support, if
+	we ever want to restore it.
+	* cr-do-issue: likewise. Also, check for $...$ in the landing files.
+	* crossref/Makefile: likewise (doc).
+	* crossref/README-process.txt: likewise; also mention bibiss target,
+	and that we have not solved Indian names correctly yet.
+		
+	* capcrossref.pl (crossref_write_files): unify to
+	"{\LaTeX}{ }Project{ }Team}" as used by tugboat.bib.
+	Call clean_tugboat_bib_entry.
+	(read_nbib): call clean_tugboat_bib_entry instead of doing it inline.
+	(clean_tugboat_bib_entry): new fn to make bib entries more generic.
+
+	* bibissue.tex (\hfuzz): doc.
+	* Makefile (bibiss): new target for convenience.
+
 2026-08-26  Karl Berry  <karl@freefriends.org>
 
 	* Makefile (testiss,lastiss,crossref_iss): 146.

@@ -171,7 +171,7 @@ all-install: all install
 # 
 bibiss = bibissue
 pdflatex = texfot pdflatex
-$(bibiss).pdf bi: $(bibiss).bbl
+$(bibiss).pdf bibiss bi: $(bibiss).bbl
 	$(pdflatex) $(bibiss).tex
 $(bibiss).bbl: $(bibiss).bib $(bibiss).aux
 	bibtex $(bibiss).aux
