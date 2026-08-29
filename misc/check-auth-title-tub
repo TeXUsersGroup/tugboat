@@ -1,0 +1,509 @@
+#!/usr/bin/env perl
+# $Id$
+# Public domain. Originally written 2026, Karl Berry.
+# Check for author/title consistency. 
+# 
+# That is, take a capsule file as argument, assumed to be the capsule
+# file for an issue in progress (.../covers/tb*cap.tex), 
+# and check its authors and titles against the sibling contents file
+# (.../covers/tb*cont.tex)
+# and also against the article sources (.../*/*.*t*x).
+# 
+# We run this routinely during development of an issue, i.e., it's part
+# of the top-level Makefile's "make check". The output is silent if
+# there are no problems, to avoid annoying false reports.
+# 
+# Alternative approach: we could have a single source that generates
+# all these files. But this would mean the sources we send back to the
+# authors aren't the final sources used for typesetting, which seems
+# bad. Also, we'd still want to check for consistency, in case of errors
+# in the generation process, whatever it is. So let's just do the check.
+# 
+# As of 47:2, not done:
+# - \volyr->YYYY substitutions for conf category.
+# - article titles using [...] not recognized (adhiyaman-inferring)
+# - consultants/instmem/etc. differ.
+# - exit status doesn't include compare().
+# - \rlap should be ignored
+
+use strict; use warnings;
+$| = 1;
+
+use File::Basename;
+use Getopt::Long qw(:config no_ignore_case);
+use Text::Balanced;
+
+BEGIN {
+  ($::SCRIPTDIR = $0) =~ s,/[^/]*$,,;
+  $::SCRIPTDIR = "." if $::SCRIPTDIR eq $0; # <tugboatsvn>/misc
+  # we use caputil.pl from <tugboatsvn>/capsules/.
+  chomp (my $capdir = `cd $::SCRIPTDIR/../capsules && pwd`);
+  unshift (@INC, $capdir);
+}
+
+$| = 1; # flush both stdout and stderr immediately
+select ((select (STDERR), $| = 1)[0]);
+
+our %OPT;              # global for command-line options
+require "caputil.pl";
+$::HASH_AS_STRING_NL = $::HASH_AS_STRING_NL; # silence "used once" warning
+
+exit (&main ());
+
+
+sub main {
+  my $status = 0;
+  my $capfilename = &init ();
+  
+  my %capfile = &read_capfile ($capfilename);
+  my %confile = &read_confile ($capfilename);
+  
+  for my $capkey (sort { $a cmp $b } keys %capfile) {
+    my $capsule = $capfile{$capkey};
+    #$::HASH_AS_STRING_NL = 1;
+    #&info_hash ("cap.$capkey", $capsule);
+    if (exists $confile{$capkey}) {
+      &debug_hash ("comparing capsule to con.$capkey", $confile{$capkey});
+      &compare ($capsule, $confile{$capkey});
+      delete ($confile{$capkey});
+    } else {
+      print "$0: missing from cont file: $capkey\n";
+      $status = 1;
+    }
+
+    my %artfile = &read_artfile ($capfilename, $capsule);
+    next unless keys %artfile;
+    &debug_hash ("comparing capsule to artfile", %artfile);
+    &compare ($capsule, \%artfile);
+  }
+  
+  if (keys %confile) {
+    print 0 + keys %confile, " item(s) in cont but not cap:\n";
+    $::HASH_AS_STRING_NL = 1;
+    for my $key (keys %confile) {
+      print &hash_as_string ($key, $confile{$key});
+    }
+    $status = 1;
+  }
+  return $status;
+}
+
+
+# Option parsing, etc. Return the argument capsule file name.
+# 
+sub init {
+  %OPT = ();
+  $OPT{"debug"} = 0;
+
+  exit 2 unless Getopt::Long::GetOptions (\%OPT,
+    "debug|D+",
+    #
+    "help",
+    "version",
+  );
+
+  if ($OPT{"help"}) {
+    print "Usage: $0 [OPTION]... CAPSULE...
+
+qqq sorry
+
+Email questions or problems to tugboat\@tug.org.
+";
+    print '$Id$' . "\n";
+    exit 0;
+  }
+
+  if ($OPT{"version"}) {
+    print '$Id$' . "\n";
+    print "Public domain.\n";
+    exit 0;
+  }
+
+  if (@ARGV == 0) {
+    my $try = glob ("$ENV{tb}/covers/tb*cap.tex");
+    $ARGV[0] = $try if -r $try;
+  }
+  die "Usage: $0 [CAPSULEFILE] (not ", 0+@ARGV, "args: @ARGV)\n"
+    if @ARGV > 1;
+  my $capfile = $ARGV[0];
+  die "$0: capsule file not readable: $capfile\n" unless -r $capfile;
+  die "$0: capsule file empty: $capfile\n" unless -s $capfile;
+  return $capfile;
+}
+
+
+# Given hashes CAP and OTHER for a capsule and cont|article entry,
+# respectively, compare them and report differences to stdout.
+# No particular return value (until it's needed).
+# 
+sub compare {
+  my ($cap,$other) = @_;
+
+  # always compare authors and titles.
+  my @fields = qw(author title);
+  #
+  my $other_label;
+  if (exists $other->{"article"}) {
+    # for articles, we do not have the category or pageno.
+    $other_label = "art";
+    # for ltnews, we have no article info to compare.p
+    return if ! exists $other->{"author"};
+  } else {
+    $other_label = "con";
+    push (@fields, qw(category pageno));  
+  }
+  
+  for my $field (@fields) {
+    if (! equal_fields ($cap->{$field}, $other->{$field})) {
+      print "$cap->{pageno}: $field differs:\n";
+      print "  cap=`$cap->{$field}'\n";
+      print "  $other_label=`$other->{$field}'\n";
+    }
+  }
+}
+
+# Test fields for practical equality:
+# ties, \newline, \\, \CONNECT, etc., become a single space,
+# and then whitespace is unified.
+# 
+sub equal_fields {
+  my ($a,$b) = @_;
+  #
+  $a =~ s/~|\\(newline|CONNECT|,)|\\\\/ /g;
+  $a = &normalize_whitespace ($a);
+  #
+  $b =~ s/~|\\(newline|CONNECT|,)|\\\\/ /g;
+  $b = &normalize_whitespace ($b);
+  
+  return $a eq $b;
+}
+
+
+# Read (development) capsule file FILENAME and return a hash of its
+# contents, with the keys being the titles and the values a hash
+# reference with the other information.
+# 
+# The code here comes from capsules/capin.pl, vastly simplified.
+#
+sub read_capfile {
+  my ($filename) = @_;
+
+  &debug ("read_capfile($filename)");
+  my $str = &slurp_decomment_file ($filename);
+  $str =~ s/^\s*\\difficulty.*\n//gm;
+  my %capsules = &parse_capsules ($str);
+  return %capsules;
+}
+
+
+# Parse a sequence of capsules (each starting with "\capsule") from STR.
+# Return a hash whose keys are the pageno strings (like
+# "\getfirstpage{author-keyword}") and values are hash references to
+# the information about that capsule that's in the input, unconverted.
+# 
+sub parse_capsules {
+  my ($str) = @_;
+  my %ret;
+  
+  # the (?:...) construct defines a non-capturing group,
+  # so as not to return a bunch of undef.
+  my @capsule_pieces = split (/\s*^\s*\\capsule(?:noprint)?/m, $str);
+  shift (@capsule_pieces) if @capsule_pieces; # ignore before first \capsule
+  &debug ("  " . (@capsule_pieces + 0) . " capsules");
+  
+  for my $p (@capsule_pieces) {
+    &ddebug ("  doing capsule piece `$p'");
+    if ($p =~ /^\s*$/s) {
+      &ddebug ("   empty string, skipping");
+      next;
+    }
+    my %c_tex = &parse_one_capsule ($p);
+    
+    my $key = $c_tex{"pageno"};
+    if (! $key) {
+      # should have already died if empty, but let's just be sure.
+      die "key (pageno) is empty, capsule " . &hash_as_string (%c_tex);
+    } elsif (exists $ret{$key}) {
+      die "key (pageno) already seen: $ret{$key} " . &hash_as_string (%c_tex);
+    } elsif ($c_tex{"category"} eq "Abstracts") {
+      ; # it is too hard to match the combined abstracts entry
+    } else {
+      $ret{$key} = \%c_tex;
+    }
+  }
+  return %ret;
+}
+
+
+# Parse one capsule definition from STR, starting with the { of the
+# first field, optionally preceded by whitespace.
+# 
+# The returned hash has field names (given in the code below) for keys,
+# with the corresponding values, without any outer level of braces. Any
+# %...| directives are ignored.
+# 
+sub parse_one_capsule {
+  my ($str) = @_;
+  my %ret;
+  
+  # Here is the core call to parse as many balanced-brace fields as can
+  # be found, which should always be nine (we check). The returned list
+  # alternates braced fields with the stuff following the }, usually
+  # (but not always) just a newline. Do each pair together.
+  my @fields = Text::Balanced::extract_multiple ($str,
+    [ sub { Text::Balanced::extract_bracketed ($_[0], '{}') } ],
+  );
+  for (my $i = 0; $i < @fields; $i++) {
+    my $f = $fields[$i];
+    &ddebug ("   field #$i='$f'");
+    die "expected { for field#$i, got '$f'\n" if $f !~ /^\{/;
+    
+    my $post_directive = "";
+    my $fieldname;
+    if ($i == 0)     { $fieldname = "difficulty"; }
+    elsif ($i == 2)  { $fieldname = "category"; }
+    elsif ($i == 4)  { $fieldname = "author"; }
+    elsif ($i == 6)  { $fieldname = "title"; }
+    elsif ($i == 8)  { $fieldname = "shortdesc"; }
+    elsif ($i == 10) { $fieldname = "pageno"; }
+    elsif ($i == 12) { $fieldname = "url"; }
+    elsif ($i == 14) { $fieldname = "subtitles"; }
+    elsif ($i == 16) { $fieldname = "htmlnotes"; }
+    else { die "unexpected field #$i: $f (in: $str)"; }
+
+    # remove surrounding { } from value and normalize whitespace.
+    die "expected { at start of field $fieldname (#$i): $f\n"
+      if substr ($f, 0, 1) ne "{";
+    die "expected } at end of field $fieldname (#$i): $f\n"
+      if substr ($f, -1) ne "}";
+    $f = substr ($f, 1, length ($f) - 2);
+    $ret{$fieldname} = &normalize_whitespace ($f); 
+    
+    # remove all braces from author strings, since they are usually
+    # no-ops and the remainder (\v{r} -> \vr) is good enough to compare.
+    if ($fieldname eq "author") {
+      $ret{$fieldname} =~ s/[{}]//g;
+    }
+    
+    # remove useless-for-us \offset from pageno; later code is also
+    # resistant to this, but no reason to keep it around.
+    if ($fieldname eq "pageno") {
+      $ret{$fieldname} =~ s/\\offset\{.*\}//;
+    }
+    
+    &ddebug ("   field $fieldname='$f'");
+    
+    # next value in returned list is the stuff between the } of
+    # the braced arg we just did and the { of the arg to come. handle it.
+    $i++; 
+    my $g = $fields[$i];
+    next if !defined ($g); # if $g is undef, we are done.
+    &ddebug ("   and next field #$i='$g'");
+    if ($fieldname eq "htmlnotes") {
+      # Anything might happen after a capsule is finished,
+      # e.g., \vfilneg\end at the end of the file. Just ignore.
+      ;
+    } else {
+      # But between fields within a capsule should only be whitespace and %.
+      &assert_whitespace_and_comment ($g, "field #$i (post $fieldname)");
+    }
+  }
+  
+  &ddebug_hash ("   parse_one_capsule returns", %ret);
+  return %ret;
+}
+
+
+# Given the capsule file CAPFILE, find the sibling "contents" file and
+# return a hash of its information, where the keys are the page number
+# strings and the values are hash references to the information given.
+# 
+# We abbreviate "cont" to "con" in various places just so things nicely
+# align with all being three-letter identifiers: cap, con, art.
+# 
+sub read_confile {
+  my ($capfile) = @_;
+  my %ret;
+
+  # If CAPFILE is tb123cap.tex, the contents file is tb123cont.tex,
+  # in the same directory.
+  (my $file = $capfile) =~ s/cap/cont/;
+  &debug ("read_confile($file)");
+  my $str = &slurp_decomment_file ($file);
+
+  # Split the input at \sec ...<, where the ... is the section title.
+  # Happily, it's always on one line.
+  my @sec_pieces = split (/\s*^\s*\\sec\b/m, $str);
+  shift (@sec_pieces) if @sec_pieces; # ignore stuff before first \sec
+  &debug ("  " . (0 + @sec_pieces) . " sec(tion)s");
+  
+  # Look within each \sec for toc entries. There might not be any.
+  for my $sec (@sec_pieces) {
+    if ($sec =~ /^\s*$/s) { # should never happen
+      &debug (" section is empty string, skipping");
+      next;
+    }
+    my ($secname) = ($sec =~ m/\s*(.*)</);
+    #&debug ("  doing section `$sec' -> $secname");
+    &debug ("  doing section: $secname");
+
+    # Each individual entry in the cont file is
+    #   \subsec Author Name\\Title\\pageno<
+    # or
+    #   \subsecnn Title\\pageno<
+    # with arbitrary line breaks and whitespace.
+    # Start by splitting at \subsec.
+    my @cont_items = split (/\s*^\s*\\subsec/m, $sec);
+    &debug ("    " . (0 + @cont_items) . " entries");    
+    shift (@cont_items) if @cont_items; # ignore stuff before first \subsec
+
+    for my $cont (@cont_items) {
+      &ddebug ("   doing cont `$cont'");
+      # remove and remember if we had a leading nn (from \subsecnn).
+      my $has_author = ($cont =~ s/^nn//) ? 0 : 1;
+      &ddebug ("    has_author = $has_author");
+      
+      $cont =~ s/\s+/ /g; # replace all whitespace with a single space,
+                          # mainly so newlines become spaces for debugging
+      my ($author,$title,$pageno);
+      if ($has_author) {
+        ($author,$title,$pageno) = $cont =~ m/\s*(.*?)\\\\(.*?)\\\\(.*)</s;
+        &assert_nonempty ($author, "author (in: $cont)");
+        $author = &normalize_whitespace ($author); # for internal whitespace
+        &ddebug ("    author = `$author'");
+      } else {
+        ($title,$pageno) = $cont =~ m/\s*(.*?)\\\\(.*)</s;
+      }
+      &assert_nonempty ($title, "title (in: $cont)");
+      $title = &normalize_whitespace ($title);
+      &ddebug ("    title = `$title'");
+
+      if ($title =~ /\\vrule.*depth/) {
+        &debug ("    skipping \\vrule placeholder: $title");
+        next;
+      }
+
+      &assert_nonempty ($pageno, "pageno (in: $cont)");
+      $pageno =~ s/\\offset\{.*?\}//;
+      $pageno = &normalize_whitespace ($pageno);
+      &ddebug ("    pageno = `$pageno'");
+      
+      my $key = $pageno;
+      if (! $key) {
+        # should have already died if empty, but let's just be sure.
+        die "key (pageno) is empty, cont: $cont";
+      } elsif (exists $ret{$key}) {
+        die "key (pageno) $key already seen: $ret{$key} vs. $cont";
+      } elsif ($secname eq "Abstracts") {
+        ; # skip, too hard to match the combined abstracts entry
+      } else {
+        my %cont;
+        $cont{"author"} = $author if $has_author;
+        $cont{"title"} = $title;
+        $cont{"pageno"} = $pageno;
+        $cont{"category"} = $secname;
+        $ret{$key} = \%cont;
+      }
+    }
+  }
+  return %ret;
+}
+
+
+# Given the capsule filename CAPFILENAME and capsule entry CAPSULE, find
+# the corresponding article source file and return a hash containing its
+# title, author. The constant key "article", with value 1, is also in
+# the return, so that we can easily distinguish these article hashes
+# from others.
+# 
+sub read_artfile {
+  my ($capfile,$capsule) = @_;
+  my %ret;
+
+  # If CAPFILENAME is tb123cap.tex, and CAPSULE->{"pageno"} is
+  # say "\getfirstpage{bien-t}", the article will be in (relative to the
+  # tb*cap.tex file) ../bien-t/tb123bien-t.ltx.
+  # 
+  # The extension might not be .ltx; e.g., plain TeX articles use .tex,
+  # and a different syntax for the author/title. We'll worry about that
+  # when it comes up.
+  # 
+  # Easy to make this into a subroutine if we ever need to.
+  # 
+  chomp (my $cap_abs = `realpath $capfile`);
+  die "$capfile: could not discern realpath" if ! $cap_abs;
+  my $capdir = dirname ($cap_abs); # can't fail
+  
+  my $pageno = $capsule->{"pageno"};
+  (my $artid = $pageno) =~ s/^.*page\{(.*?)\}.*$/$1/;
+  die "$pageno: could not extract article id" if ! $artid;
+  
+  my $artdir = "$capdir/../$artid";
+  die "$artdir: article directory not present (artid=$artid)" if ! -d $artdir;
+  
+  my $artpatt = "$artdir/tb*$artid.*t*x";
+  my @artfiles = glob ($artpatt);
+  die "$artpatt: could not find article sources" if ! @artfiles;
+  die "$artpatt: found multiple article sources: @artfiles" if @artfiles > 1;
+  my $file = $artfiles[0]; # yay, found one and only one
+
+  if ($artid =~ /^ltnews/) {
+    # can't compare ltnews, source file is different.
+    &ddebug ("skipping artfile: $file");
+    return ();
+  }
+  &debug ("read_artfile($file)");
+  my $str = &slurp_decomment_file ($file);
+  
+  # Hopefully the first \title command will be the one we want.
+  (my $title_in = $str) =~ s/.*?\\title\b\s*//s;
+  my ($title) = Text::Balanced::extract_bracketed ($title_in, "{}");
+  if (! $title) {
+    warn "$file: failed to extract \\title\n";
+    $title = " unknown ";
+  }
+  $title = substr ($title, 1, -1); # remove outer braces
+  $ret{"title"} = &normalize_whitespace ($title);
+  &ddebug (" got title: $ret{title}");
+  
+  # We might have multiple \author commands. First get rid of everything
+  # after \begin{document} so we don't match except in the preamble.
+  my @authors = ();
+  (my $author_in = $str) =~ s/\\begin\b\s*\{document\}.*$//s;
+  while ($author_in =~ s/.*?\\author\b\s*//s) {
+    my ($author,$rest) = Text::Balanced::extract_bracketed ($author_in, "{}");
+    $author =~ s/\\thanks{.*}//s;
+    $author =~ s/[{}]+//g;
+    #$author = substr ($author, 1, -1); # remove outer braces
+    push (@authors, &normalize_whitespace ($author));
+    $author_in = $rest; # keep going forward
+  }
+  
+  # we separate multiple authors with plain commas nowadays, no matter
+  # how many there are.
+  $ret{"author"} = join (", ", @authors);
+  &ddebug (" got authors: $ret{author}");
+  $ret{"article"} = 1;
+  return %ret;
+}
+
+
+# Read all of FILE, remove lines beginning with (whitespace+) 5~%,
+# return resulting string. We don't remove % comments within a line.
+# 
+sub slurp_decomment_file {
+  my ($file) = @_;  
+  open (my $FH, $file) || die "open($file) failed: $!";
+  # slurp the file.
+  local $/ = undef;
+  my $str = <$FH>;
+  close ($FH) || warn "close($file) failed: $!";
+  
+  # Whole-line comments don't play well with our regular expression
+  # matching, so get rid of them. Otherwise, a comment line like
+  # % {}
+  # would be seen as another balanced-brace item. Nothing good results.
+  $str =~ s/^\s*%.*\n//gm;
+  
+  return $str;
+}

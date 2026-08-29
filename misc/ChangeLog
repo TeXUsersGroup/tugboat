@@ -1,3 +1,10 @@
+2026-08-29  Karl Berry  <karl@freefriends.org>
+
+	* check-auth-title-tub: new script to check for consistency
+	among tb*cap.tex, tb*cont.tex, and article sources. Needs more
+	work, as always. Can be invoked with "make check-atc" from the
+	issue Makefile.
+
 2026-08-24  Karl Berry  <karl@freefriends.org>
 
 	* check-splice-tub: $| = 1 for less intermixing of output.
