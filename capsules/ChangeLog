@@ -1,3 +1,10 @@
+2026-08-30  Karl Berry  <karl@tug.org>
+
+	* Makefile (testiss, crossref_iss): 145.
+	* lists-translations (\LuaTeX): we used {Lua\TeX} after all.
+	* tb145capsule.txt: 47:1 public.
+	* tb146capsule.txt: missed /members/ for some articles.
+
 2026-08-30  Karl Berry  <karl@freefriends.org>
 
 	* lists-authinfo.txt (Metelka): typo in orcid, sigh.
