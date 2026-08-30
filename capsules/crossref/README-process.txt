@@ -293,8 +293,8 @@ pages to say "publicly available now". This is irritating, but it seems
 useful enough to state explicitly whether or not an article is public to
 put up with it. To do this:
 
-previss=46-3
-prevnnn=144
+previss=47-1
+prevnnn=145
 
 - ensure that tb${prevnnn}capsule.txt is up to date, without /members/ urls.
 cd ../capsules
@@ -311,6 +311,9 @@ make cro-scratch
 
 - check diffs (no more "available to TUG members"):
 make previss=$previss diff-land
+
+There may be many changes in the cited bib entries since they will
+likely now be taken from tugboat.bib (if Nelson updated it).
 
 - assuming ok, the above also makes a list of changed files in
   /tmp/ch-land. Check that, and:

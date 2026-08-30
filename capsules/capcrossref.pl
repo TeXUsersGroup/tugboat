@@ -504,15 +504,15 @@ sub make_bibtex_entry {
   }
   #
   my $author = join (" and ", @a_out); # bibtex author separator
-  $entry .= qq!  author =        "$author",\n!;
-  $entry .= qq!  title =         "$cap{title}",\n!; # source must have braces
-  $entry .= qq!  journal =       "TUGboat",\n!; # qqq not when $issue{notissue}
-  $entry .= qq!  volume =        "$issue{volno}",\n!;
-  $entry .= qq!  number =        "$issue{issno}",\n!;
-  $entry .= qq!  pages =         "$cap{pageno_print}",\n!;
-  $entry .= qq!  year =          "$issue{year}",\n!;
-  $entry .= qq!  issue =         "$issue{seqno}",\n!;
-  $entry .= qq!  DOI =           "$supp{doi}",\n!;
+  $entry .= qq!  author =         "$author",\n!;
+  $entry .= qq!  title =          "$cap{title}",\n!; # source must have braces
+  $entry .= qq!  journal =        "TUGboat",\n!; # qqq not when $issue{notissue}
+  $entry .= qq!  volume =         "$issue{volno}",\n!;
+  $entry .= qq!  number =         "$issue{issno}",\n!;
+  $entry .= qq!  pages =          "$cap{pageno_print}",\n!;
+  $entry .= qq!  year =           "$issue{year}",\n!;
+  $entry .= qq!  issue =          "$issue{seqno}",\n!;
+  $entry .= qq!  DOI =            "$supp{doi}",\n!;
 
   # For the url, remove /members/ since we don't want people citing that
   # private url; in the rare event of someone citing an article from the
@@ -522,7 +522,7 @@ sub make_bibtex_entry {
   #
   (my $url = $cap{"url"}) =~ s,/members,,;
   $url = "https://tug.org$url" if $url =~ m,^/,;
-  $entry .= qq!  url =           "$url",\n!;
+  $entry .= qq!  URL =            "$url",\n!;
 
   # If we had any orcids, output them.
   my $all_orcids = join ("", @orcids_out);
@@ -532,8 +532,8 @@ sub make_bibtex_entry {
   }
 
   # Other static journal values:
-  $entry .= qq!  journal-URL =   "https://tug.org/TUGboat/",\n!;
-  $entry .= qq!  ISSN =          "0896-3207",\n!;
+  $entry .= qq!  journal-URL =    "https://tug.org/TUGboat/",\n!;
+  $entry .= qq!  ISSN =           "0896-3207",\n!;
   # end of entry.
   $entry .= qq!}\n!;
   
@@ -646,13 +646,14 @@ sub clean_tugboat_bib_entry {
   # there are so many commands, it doesn't seem feasible to handle
   # them all. Just do a few common ones and require tugboat.def 
   # (in the @preamble above).
+  $s =~ s/\\CTAN$endcw/CTAN/g;
   $s =~ s/\s*\\Dash$endcw*/\\,---\\,/g;
   $s =~ s/\\LuaTeX$endcw/Lua\\TeX/g;
   $s =~ s/\\PDF$endcw/PDF/g;
   $s =~ s/\\TUB$endcw/\\textsl{TUGboat}/g;
   $s =~ s/\\acro$endcw//g;
   $s =~ s/\\booktitle$endcw/\\emph/g;
-  $s =~ s/\\pkg$endcw//g; # sf or tt or nothing, so ignore
+  $s =~ s/\\pkg$endcw/\\texttt/g; # what Nelson does, so follow suit
   $s =~ s/\\rlap$endcw//g;
   $s =~ s/\\tbcode$endcw/\\texttt/g;
   $s =~ s/\\tug$endcw/TUG/g;

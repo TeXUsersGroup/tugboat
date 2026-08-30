@@ -102,11 +102,12 @@ crxml:
 	$(MAKE) -C crossref
 
 # run with previss=...
+ignore_space = --ignore-all-space
 diff-land:
 	@test -n "$(previss)" || { echo "need make $@ previss=VV-N" >&2; exit 1; }
 	-grep 'available to TUG members' $(cr_lndout)/*.html
 	for f in $(cr_lndout)/*.html; do \
-	  diff -u0 $(tubweb)/tb$(previss)/`basename $$f` $$f; \
+	  diff -u0 $(ignore_space) $(tubweb)/tb$(previss)/`basename $$f` $$f; \
 	done | egrep -v '\[generated|^\+\+\+ |^@@ ' | tee /tmp/diff-land
 	sed -n -e 's/^--- //p' /tmp/diff-land \
 	| sed -e 's/	.*$$//' -e 's,.*/,,' | tee /tmp/ch-land

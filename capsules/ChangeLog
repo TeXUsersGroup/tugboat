@@ -1,3 +1,12 @@
+2026-08-30  Karl Berry  <karl@freefriends.org>
+
+	* capcrossref.pl (make_bibtex_entry): more closely match tugboat.bib.
+
+	* Makefile (diff-land): --ignore-all-space by default.
+
+	* crossref/ltx2crossrefxml-tugboat.cfg (\tbcode(break)): oops,
+	must use non-capture group ($?:...).
+
 2026-08-30  Karl Berry  <karl@tug.org>
 
 	* Makefile (testiss, crossref_iss): 145.
