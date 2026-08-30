@@ -1,0 +1,162 @@
+\begin{thebibliography}{10}
+
+\bibitem{cs:Antos-2002-PATLIB:tub}
+D.~Anto{\v s}.
+\newblock {PATLIB}, pattern manipulation library.
+\newblock Master's thesis, Masaryk University, Brno, Faculty of Informatics,
+  2002.
+\newblock Advisor: Petr Sojka. Source code is available at
+  \url{https://fi.muni.cz/~sojka/opatgen-2026-01-19-unmaintained.zip}.
+\newblock \newline \url{https://is.muni.cz/th/c4rby/?lang=en}
+
+\bibitem{nlp:bouma2003fsm}
+G.~Bouma.
+\newblock Finite state methods for hyphenation.
+\newblock \emph{Natural Language Engineering}, 9(1):5--20, 2003.
+\newblock \newline \url{https://doi.org/10.1017/S1351324903003073}
+
+\bibitem{nlp:Franek-2025-transformer-based-hyphenation-thesis}
+J.~Franěk.
+\newblock Transformer-based word hyphenation.
+\newblock Master's thesis, Masaryk University, Brno, Faculty of Informatics
+  (advisor: Petr Sojka), 2025.
+\newblock \newline \url{https://is.muni.cz/th/wbgkw/}
+
+\bibitem{tex:Hennig-Wehr-2026-autotype}
+S.~Hennig, K.~Wehr.
+\newblock {\texttt{\textsl{autotype}}: A~Lua\LaTeX\ package for automatic
+  language-specific typography}, Apr.~2026.
+\newblock \url{https://ctan.org/pkg/autotype}
+
+\bibitem{knuth1983web}
+D.E.~Knuth.
+\newblock \emph{{The WEB System of Structured Documentation}}.
+\newblock Department of Computer Science, Stanford University, 1983.
+\newblock
+  \url{http://infolab.stanford.edu/pub/cstr/reports/cs/tr/83/980/CS-TR-83-980.pdf}
+
+\bibitem{knuth1994cweb}
+D.E.~Knuth, S.~Levy.
+\newblock \emph{The CWEB system of structured documentation: version 3.0}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., 1994.
+\newblock \url{https://mirror.ctan.org/info/knuth-pdf/cweb/cwebman.pdf}
+
+\bibitem{tex:Knuth-Plass-1981}
+D.E.~Knuth, M.F.~Plass.
+\newblock Breaking paragraphs into lines.
+\newblock \emph{Software: Practice and Experience}, 11(11):1119--1184, 1981.
+\newblock \newline \url{https://doi.org/10.1002/spe.4380111102}
+
+\bibitem{nlp:kristensen-2001-hyphenation-by-NN}
+T.~Kristensen, D.~Langmyhr.
+\newblock \\{Two} regimes of computer hyphenation{\Dash}a~comparison.
+\newblock In~\emph{Proceedings of International Joint Conference on Neural
+  Networks (IJCNN)}, vol.~2, pp.~1532--1535, 2001.
+\newblock \newline \url{https://doi.org/10.1109/IJCNN.2001.939592}
+
+\bibitem{tex:liang83}
+F.M.~Liang.
+\newblock \emph{Word Hy-phen-a-tion by Com-put-er}.
+\newblock Ph.D. thesis, Department of Computer Science, Stanford University,
+  Aug.~1983.
+\newblock \url{https://tug.org/docs/liang}
+
+\bibitem{tex:patgen2.4program-2020}
+F.M.~Liang, P.~Breitenlohner.
+\newblock \\\texttt{PAT}tern \texttt{GEN}eration program for the \smash{\TeX}82
+  hyphenator, 2020.
+\newblock \url{https://mirror.ctan.org/info/knuth-pdf/other/patgen.pdf}
+
+\bibitem{tex:Maca-bachelor2023fortugboat}
+J.~M{\'a}ca.
+\newblock Judy.
+\newblock Bachelor's thesis, Masaryk University, Brno, Faculty of Informatics
+  (advisor: Petr Sojka), May~2023.
+\newblock \url{https://is.muni.cz/th/kru3j}
+
+\bibitem{tex:Metelka-2026-thesis}
+O.~Metelka.
+\newblock Support of arbitrarily sized alphabets in the {Patgen} hyphenation
+  program.
+\newblock Master's thesis, Masaryk University, Brno, Faculty of Informatics
+  (advisor: Petr Sojka), May~2026.
+\newblock \url{https://is.muni.cz/th/y922i/}
+
+\bibitem{nlp:metelka25hyphbench}
+O.~Metelka, P.~Sojka.
+\newblock Hyph-bench: Benchmark dataset of hyphenated words for generating
+  hyphenation patterns.
+\newblock In~\emph{Proceedings of Recent Advances in Slavonic Natural Language
+  Processing, RASLAN 2025}, A.~Hor{\'a}k, P.~Rychl{\'y}, A.~Rambousek, eds.,
+  pp.~173--185, Brno, Czech Republic, Dec.~2025. Tribun EU.
+\newblock \url{http://raslan2025.nlp-consulting.net/}
+
+\bibitem{tex:Metelka-Sojka-2026-utfpatgen}
+O.~Metelka, P.~Sojka.
+\newblock {UTFpatgen}{\Dash}generate hyphenation patterns from \mbox{UTF-8}
+  input, 2026.
+\newblock \newline \url{https://ctan.org/pkg/utfpatgen}
+
+\bibitem{tex:mittelbach92b}
+F.~Mittelbach, C.~Rowley.
+\newblock {The pursuit of quality: How can automated typesetting achieve the
+  highest standards of craft typography?}
+\newblock In~\emph{Proceedings of the International Conference on Electronic
+  Publishing, Document Manipulation \& Typography, Lausanne, Switzerland,
+  1992}, C.~Vanoirbeek, G.~Coray, eds., pp.~261--273, {New York}, 1992.
+  Cambridge University Press.
+\newblock
+  \url{https://www.researchgate.net/publication/237444403_The_Pursuit_of_Quality}
+
+\bibitem{nn:smrzsojka97}
+P.~Smr{\v z}, P.~Sojka.
+\newblock {Word Hy-phen-a-tion by Neural Networks}.
+\newblock \emph{Neural Network World}, 7:\mbox{687--695}, 1997.
+\newblock
+  \url{https://www.academia.edu/10013877/Word_Hyphenation_by_Neural_Networks}
+
+\bibitem{tex:Sojka-2025-thesis}
+O.~Sojka.
+\newblock Transfer learning of {Slavic} syllabification for hyphenation
+  patterns.
+\newblock Bachelor's thesis, Masaryk University, Faculty of Informatics, Brno,
+  Czech Republic, Feb.~2025.
+\newblock \url{https://is.muni.cz/th/s17d6/}
+
+\bibitem{ml:Sojka-Sojka-the-Art-of-Competing-Patterns-2026-tub}
+O.~Sojka, P.~Sojka.
+\newblock {The Art of Hierarchical Competing Patterns: Gaussian Process
+  Optimization of Hyphenation}.
+\newblock In~\emph{Findings of the Association for Computational Linguistics:
+  EMNLP 2026}, S.~Dev, D.~Elliott, et~al., eds., Budapest, Hungary, Oct.~2026.
+  Association for Computational Linguistics.
+\newblock To appear on \url{aclanthology.org}.
+\newblock \newline \url{https://openreview.net/pdf?id=oZy4w1VQR3}
+
+\bibitem{tex:sojkasmaca2023universal}
+O.~Sojka, P.~Sojka, J.~M{\'a}ca.
+\newblock A roadmap for universal syllabic segmentation.
+\newblock \emph{TUGboat}~44(2), 2023.
+\newblock \url{https://doi.org/10.47397/tb/44-2/tb137sojka-syllabic}
+
+\bibitem{tex:sojkas2019unreasonable}
+P.~Sojka, O.~Sojka.
+\newblock The unreasonable effectiveness of pattern generation.
+\newblock \emph{TUGboat}~40(2):187--193, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-2/\\tb125sojka-patgen.pdf}
+
+\bibitem{nlp:trogkanis-elkan-2010-conditional}
+N.~Trogkanis, C.~Elkan.
+\newblock Conditional random fields for word hyphenation.
+\newblock In~\emph{Proceedings of the 48th Annual Meeting of the ACL},
+  pp.~366--374, Uppsala, Sweden, July~2010. Association for Computational
+  Linguistics.
+\newblock \url{https://aclweb.org/anthology/P10-1038}
+
+\bibitem{rfc3629}
+F.~Yergeau.
+\newblock {UTF-8, a transformation format of ISO 10646}.
+\newblock RFC 3629, Nov.~2003.
+\newblock \url{https://doi.org/10.17487/RFC3629}
+
+\end{thebibliography}

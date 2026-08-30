@@ -1,0 +1,18 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{1}
+
+\bibitem{Fischer:2025:NLT}
+U.~Fischer, F.~Mittelbach.
+\newblock News from the {{\LaTeX{} Tagged PDF}} project: 2025.
+\newblock \emph{TUGboat} 46(2):244--247, 2025.
+\newblock \url{https://doi.org/10.47397/tb/46-2/tb143fischer-tagging25}
+
+\bibitem{Wright:TB47-1:64}
+J.~Wright.
+\newblock \texttt{ltx-talk}: A class for accessible presentations.
+\newblock \emph{TUGboat} 47(1):64--66, 2026.
+\newblock \url{https://doi.org/10.47397/tb/47-1/tb145wright-ltx-talk}
+
+\end{thebibliography}

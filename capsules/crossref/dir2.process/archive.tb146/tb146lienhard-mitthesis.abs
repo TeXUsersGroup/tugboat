@@ -1,0 +1,11 @@
+A few years ago, I began an update to MIT{}'s \LaTeX{} template for
+theses and dissertations. The previous template had been written in
+\LaTeX{} 2.09 in the 1980s and patched for \LaTeXe{} by various students
+during the 1990s. My work quickly turned into a complete rewrite. My
+goals were to use current \LaTeX{} methods and to produce tagged
+\acro{PDF} while still supporting users who have minimal knowledge of
+\LaTeX{} and typesetting. In this note, I discuss some of
+the considerations that have shaped the current template, the
+implementation of tagging for non-standard document elements, rendering
+in \acro{HTML}/\acro{CSS}, and some aspects of \tbcode{expl3} coding.
+

@@ -1,0 +1,106 @@
+\newcommand{\noopsort}[1]{} \newcommand{\mydash}{-}
+  \ifx\thisissuepageref\undefined \let\thisissuepageref\noopsort\fi
+\begin{thebibliography}{10}
+
+\bibitem{adobe}
+{Adobe}.
+\newblock {Adobe Reader}.
+\newblock \url{https://www.adobe.com/acrobat/pdf-reader.html}
+
+\bibitem{Fischer:2021:RTP}
+U.~Fischer.
+\newblock On the road to {Tagged PDF}: About {StructElem}, marked content,
+  {PDF/A} and squeezed {B\"a}rs.
+\newblock \emph{TUGboat} 42(2):170--173, 2021.
+\newblock \url{https://doi.org/10.47397/tb/42-2/tb131fischer-tagpdf}
+
+\bibitem{Fischer:2023:ATL}
+U.~Fischer, F.~Mittelbach.
+\newblock Automated tagging of {\LaTeX} documents{\Dash}what is possible today,
+  in 2023?
+\newblock \emph{TUGboat} 44(2):262--266, 2023.
+\newblock \url{https://doi.org/10.47397/tb/44-2/tb137fischer-tagging23}
+
+\bibitem{Fischer:2025:NLT}
+U.~Fischer, F.~Mittelbach.
+\newblock News from the {{\LaTeX{} Tagged PDF}} project: 2025.
+\newblock \emph{TUGboat} 46(2):244--247, 2025.
+\newblock \url{https://doi.org/10.47397/tb/46-2/tb143fischer-tagging25}
+
+\bibitem{foxit}
+{Foxit Software Incorporated}.
+\newblock {Foxit Reader}.
+\newblock \url{https://www.foxit.com}
+
+\bibitem{bpg-math}
+{{\LaTeX} LWG/PDF Association}.
+\newblock Best practice guide: Math in {PDF}, 2026.
+\newblock \url{https://pdfa.org/resource/best-practice-guide-math-in-pdf/}
+
+\bibitem{latex-github}
+{{\LaTeX} Project}.
+\newblock {The {\LaTeX} Tagged PDF repository}.
+\newblock \url{https://github.com/latex3/tagging-project}
+
+\bibitem{tagging-status}
+{\LaTeX{} Project}.
+\newblock Tagging status of {\LaTeX} packages and classes, 2026.
+\newblock \url{https://latex3.github.io/tagging-project/tagging-status/}
+
+\bibitem{Mittelbach:2022:LTP}
+F.~Mittelbach, U.~Fischer.
+\newblock The {{\LaTeX} Tagged PDF} project{\Dash}a status and progress report.
+\newblock \emph{TUGboat} 43(3):268--272, 2022.
+\newblock \url{https://doi.org/10.47397/tb/43-3/tb135mitt-tagged}
+\newpage
+\bibitem{Mittelbach:2024:ELA}
+F.~Mittelbach, U.~Fischer.
+\newblock Enhancing {\LaTeX} to automatically produce tagged and accessible
+  {PDF}.
+\newblock \emph{TUGboat} 45(1):52--59, 2024.
+\newblock \url{https://doi.org/10.47397/tb/45-1/tb139mitt-deims24}
+
+\bibitem{firefox}
+{Mozilla Corporation}.
+\newblock {Firefox}.
+\newblock \url{https://firefox.com}
+
+\bibitem{nvda}
+{NV Access}.
+\newblock {NVDA}.
+\newblock \url{https://nvaccess.org}
+
+\bibitem{orca}
+{Orca Developers}.
+\newblock Orca screen reader, 2026.
+\newblock \url{https://orca.gnome.org}
+
+\bibitem{webinar}
+{PDF Association}.
+\newblock {Webinar{\Dash}Accessible Mathematical Content in {PDF}}.
+\newblock
+  \url{https://pdfa.org/event/webinar-accessible-mathematical-content-in-pdf/}
+
+\bibitem{pdfa-math-finally}
+{PDF Association}.
+\newblock Accessible math in {PDF}{\Dash}finally!, 2026.
+\newblock \url{https://pdfa.org/accessible-math-in-pdf-finally/}
+
+\bibitem{Rowley:2019:ALK}
+C.~Rowley, U.~Fischer, F.~Mittelbach.
+\newblock Accessibility in the {\LaTeX} kernel{\Dash}experiments in {Tagged
+  PDF}.
+\newblock \emph{TUGboat} 40(2):157--158, 2019.
+\newblock \url{https://tug.org/TUGboat/tb40-2/tb125rowley-tagpdf.pdf}
+
+\bibitem{mathcat}
+N.~Soiffer.
+\newblock {MathCAT}: Math capable assistive technology.
+\newblock \url{https://nsoiffer.github.io/MathCAT}
+
+\bibitem{jaws}
+Vispero.
+\newblock {{JAWS}}.
+\newblock \url{https://vispero.com/jaws-screen-reader-software/}
+
+\end{thebibliography}

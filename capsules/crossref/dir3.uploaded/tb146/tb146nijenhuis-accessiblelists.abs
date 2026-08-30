@@ -1,0 +1,17 @@
+{As the author of the \texttt{regulatory} package, I initially overlooked
+accessibility concerns. I later found that common dependencies bypassed
+\LaTeX's tagging interfaces: for an earlier development snapshot, both
+\texttt{enumitem} and \texttt{titlesec} did so, which put \mbox{\PDFUA-2}
+conformance\Dash and the document structure that accessibility depends
+on\Dash out of reach for a package like \texttt{regulatory}.
+
+\LaTeX~2026-06-01 has since narrowed the gap: it now emulates much of the
+\texttt{enumitem} interface for tagged documents, whereas \texttt{titlesec}
+remains incompatible and needs an alternative implementation. This talk
+explores those developments\Dash \LaTeX-lab components and kernel-level
+mechanisms\Dash and the structure-aware lists and sectioning they enable.
+
+Some interfaces are still experimental, but they already offer a viable
+path toward making packages like \texttt{regulatory} conform\Dash and
+toward the accessibility that conformance is meant to support.
+}

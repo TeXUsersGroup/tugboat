@@ -1,0 +1,14 @@
+  Document classes remain one of the main barriers to accessible
+  \LaTeX{} output. This article describes a template-based approach to
+  class design in which the major structural elements of a
+  document\Dash such as headings, lists, floats, captions, front matter,
+  and page styles\Dash are all exposed through a consistent, tagging-aware
+  interface.
+
+  The same framework can emulate established customization packages
+  such as \pkg{geometry}, \pkg{fancyhdr}, \pkg{titlesec},
+  \pkg{titletoc}, and \pkg{enumitem}, making it possible to adapt both
+  legacy and newly written classes without extensive manual
+  intervention. The result is a more maintainable class architecture
+  with accessibility built in from the beginning, building on the
+  broader \LaTeX{} tagged-\PDF\ project.

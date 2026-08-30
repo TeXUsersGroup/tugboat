@@ -1,0 +1,49 @@
+\begin{thebibliography}{1}
+
+\bibitem{texpresso}
+F.~Bour.
+\newblock {TeXpresso}: Live rendering and error reporting for {\LaTeX}.
+\newblock \newline \url{https://github.com/let-def/texpresso}
+
+\bibitem{card-newell-moran}
+S.K.~Card, T.P.~Moran, A.~Newell.
+\newblock \emph{The~Psychology of Human-Computer Interaction}.
+\newblock Lawrence Erlbaum Associates, 1983.
+
+\bibitem{typst}
+M.~Haug.
+\newblock Fast typesetting with incremental compilation.
+\newblock Master's thesis, Technische Universit\"at Berlin, 2022.
+\newblock
+  \url{https://web.archive.org/web/20240104120223/https://www.user.tu-berlin.de/mhaug/fast-typesetting-incremental-compilation.pdf}
+
+\bibitem{knuth-plass}
+D.E.~Knuth, M.F.~Plass.
+\newblock Breaking paragraphs into lines.
+\newblock \emph{Software\Dash Practice and Experience}, 11(11):1119--1184,
+  1981.
+
+\bibitem{lode-htpyb}
+C.~Lode.
+\newblock \emph{How to Publish Your Book with {\LaTeX}}.
+\newblock LODE Publishing, 2026.
+\newblock
+  \url{https://www.lodepublishing.com/book/latex-book-publishing-in-2026/}
+
+\bibitem{microtype}
+R.~Schlicht.
+\newblock \emph{The \texttt{\textsl{microtype}} package: Subliminal refinements
+  towards typographical perfection}, 2024.
+\newblock \url{https://ctan.org/pkg/microtype}
+
+\bibitem{swiftlatex}
+{SwiftLaTeX}.
+\newblock {SwiftLaTeX}, the visual {\LaTeX} editor.
+\newblock \url{https://github.com/SwiftLaTeX/SwiftLaTeX}
+
+\bibitem{busytex}
+{TeXlyre}.
+\newblock {BusyTeX}: {\TeX} {Live} compiled to {WebAssembly}, 2026.
+\newblock \newline \url{https://github.com/TeXlyre/texlyre-busytex}
+
+\end{thebibliography}

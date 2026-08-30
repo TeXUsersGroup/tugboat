@@ -1,0 +1,10 @@
+  We created a set of obfuscated scientific papers in which a logical
+  structure is changed to a visual one, and trained several models to
+  reconstruct the original papers.  The results were not very good for
+  out-of-the-box open source \acro{LLM}s, but improved after fine
+  tuning.  The results for the \acro{BERT} model were also acceptable.
+  The trained models were able to convert the initially
+  visually formatted articles from arXiv to logical formatting, but
+  the quality of the translation needs improvement.  We argue that
+  reconstruction of the logical structure requires several reading
+  passes with changing focus.

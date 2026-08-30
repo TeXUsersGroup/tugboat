@@ -1,0 +1,88 @@
+% had to insert page numbers as new second "argument" to \tugpaper,
+% processed in /home/tubprod/svn/capsules/crossref/ltx2crossrefxml-tugboat.cfg.
+% Trying to read the firstpage.tex/lastpage.tex files seemed too much.
+% 
+% The initial \relax was "\titleart", not needed.
+\begin{thebibliography}{99}
+
+\bibitem{veytsman2026}
+%Veytsman, B.
+Adhiyaman, P., Babel S., Bagchi C., \& Veytsman, B. (2026).
+\relax{\acro{AI} inferring logical structure from visual representation}. 
+\tugpaper{adhiyaman-inferring}{277--280}
+
+\bibitem{bowman2026asymptote}
+Bowman, J.C. (2026). \relax{Asymptote: Past, present, and future}. Presented at \tug\ 2026. \url{https://tug.org/tug2026/abstracts/bowman-asymptote26.txt}
+%\url{https://tug.org/tug2026/av/d3-t31-bowman-asymptote26/d3-t31-bowman-asymptote26.pdf}
+
+\bibitem{chang1983spoken}
+Chang, L. A., White, C. M., \& Abrahamson,~L. (1983). \titleref{Handbook for spoken mathematics (Larry's Speakeasy)}. Lawrence Livermore National Laboratory.
+\url{https://dokumen.pub/qdownload/handbook-for-spoken-mathematics.html}
+
+\bibitem{erickson2026accessibility}
+Erickson, T., \& Bhat, A. (2026). \relax{Visual impairment meets mathematics: Bypassing institutional inertia through code-based workflows}. Presented at \tug\ 2026. \url{https://tug.org/tug2026/abstracts/erickson-accessibility.txt}
+
+\bibitem{fischer2026tagging}
+Fischer, U. (2026). \relax{News from the \LaTeX\ Tagged \PDF\
+project: 2026}. \tugpaper{fischer-tagging26}{169--172}
+
+\bibitem{kosslyn-spatial}
+Kosslyn, S. M. (1994). \titleref{Image and brain: The~resolution of the imagery debate}. \acro{MIT}~Press.
+
+\bibitem{krishnan2026tables}
+Krishnan S., R., Radhakrishnan, C. V., \& Rishikesan, T. (2026). \relax{The pursuit of professional and accessible tables in \LaTeX}.
+\tugpaper{krishnan-tables}{227--229}
+%Presented at \tug\ 2026.
+%\url{https://tug.org/tug2026/abstracts/krishnan-tables.txt}
+
+\bibitem{lienhard2026mitthesis}
+Lienhard, J. (2026). \relax{Modernizing \acro{MIT}'s thesis template: \texttt{mitthesis.cls}}.
+\tugpaper{lienhard-mitthesis}{212--221}
+
+\bibitem{lode2026realtime}
+Lode, C. (2026). \relax{Real-time \LuaTeX: Recompiling large documents in 1ms}. \tugpaper{lode-realtime}{263--266}
+
+\bibitem{merriam-ocr}
+Merriam-Webster (n.d.). \relax{Optical character recognition}. In Merriam-Webster.com dictionary. 
+
+\bibitem{miller1956}
+Miller, G. A. (1956). \relax{The magical number seven, plus or minus two: Some limits on our capacity for processing information}. \titleref{Psychological Review}, 63(2), 81--97.
+
+\bibitem{miller2026sshrc}
+Miller, T. (2026). \relax{Preparing \acro{SSHRC} Insight Grant applications in \LaTeX\ with sshrc-insight}.
+\tugpaper{miller-sshrc}{186--194}
+%Presented at \tug\ 2026. 
+%\url{https://tug.org/tug2026/abstracts/miller-sshrc.txt}
+%\url{https://tug.org/tug2026/av/d3-t29-miller-sshrc/d3-t29-miller-sshrc-slides.pdf}
+\newpage
+
+\bibitem{mittelbach2026accessibleclasses}
+Mittelbach, F. (2026). \relax{Towards accessible document classes}.
+\tugpaper*{mittelbach-accessibleclasses}{173--177}
+
+\bibitem{nsf-stats}
+National Science Foundation (2023). \relax{Diversity and \acro{STEM}: Women, Minorities, and Persons with Disabilities 2023}.
+\url{https://www.nsf.gov/reports/statistics/diversity-stem-women-minorities-persons-disabilities-2023}
+
+\bibitem{nice2026simple3d}
+Nice, J. (2026). \relax{Simple 3D illustrations in the \TeX\ ecosystem}. Presented at \tug\ 2026. \url{https://tug.org/tug2026/abstracts/nice-3dsimple.txt}
+
+\bibitem{preining2026arxiv}
+Preining, N. (2026). \relax{arXiv processing: Preflight parsing and dockerized compiling}. Presented at \tug\ 2026. \url{https://tug.org/tug2026/abstracts/preining-arxiv-process.txt}
+
+\bibitem{preining2026math}
+Preining, N. (2026). \relax{Web Accessibility in \acro{STEM}\Dash\MathML\ Core and math fonts on the Web}. Presented at \tug\ 2026. \url{https://tug.org/tug2026/abstracts/preining-math-accessibility.txt}
+
+\bibitem{prescott2026book}
+Prescott, T. (2026). \relax{Converting a \PDF\ textbook to be accessible}.
+\tugpaper{prescott-book-accessibility}{203--207}
+
+\bibitem{prescott2026ltxtalk}
+Prescott, T. (2026). \relax{Creating accessible presentations with \texttt{ltx-talk}}.
+\tugpaper{prescott-ltx-talk}{208--211}
+
+\bibitem{stephan-humanities}
+Stephan, C. (2026). \relax{\LaTeX\ for elegant humanities handouts in conferences and classrooms}.
+\tugpaper{stephan-humanities}{243--247}
+
+\end{thebibliography}

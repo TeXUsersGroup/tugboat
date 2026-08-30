@@ -257,13 +257,10 @@ If needed, also commit changes in bibtexperllibs and crossrefware.
 Register the production dois (per above) before archiving.
 Then archive all the files (after registering):
   # if working on another machine, copy final abs/bbl/aux/bib to tug:
-  dir=~tubprod/VV-N
+  dir=~tubprod/$VV-N
   cd $dir
   tar czf absbbl.tgz */abs.tex */bbl.tex
   scp absbbl.tgz $host:$dir/ # and unpack, for ease of finding/accessing
-  tar czf auxbib.tgz */*.aux */*.bib
-  scp auxbib.tgz $host:$dir/ # do not unpack to avoid overwrites, and
-                             # none of the files should be different anyway.
   #
   # svn commit the generated files:
   cd ~tubprod/svn/capsules/crossref
@@ -274,13 +271,6 @@ Then archive all the files (after registering):
   mv dir0.capout/tb${nnn}* !$
   ls dir0.capout # only archive.* should remain
   #
-  # We save the .bib files in a tarball just so they aren't so easily
-  # browsable, since these are mostly authors' source files.
-  svn mkdir dir1.lndout/archive.tb$nnn
-  (cd dir1.lndout && tar czvf archive.tb$nnn/tb${nnn}bib.tgz bib && rm -rf bib)
-  mv dir1.lndout/tb${nnn}* dir1.lndout/archive.tb$nnn
-  ls dir1.lndout # only archive.* should remain
-  #
   # copy into dir3 from dir2 before we move dir2, since we save them in
   # both places, in case of edits.
   svn mkdir dir3.uploaded/tb$nnn
@@ -288,11 +278,8 @@ Then archive all the files (after registering):
   ls dir3.uploaded # only archive.* should remain
   #
   svn mkdir dir2.process/archive.tb$nnn
-  (cd dir2.process && tar czf archive.tb$nnn/tb${nnn}bib.tgz bib && rm -rf bib)
   mv dir2.process/{issue.xml,tb${nnn}*} dir2.process/archive.tb$nnn
   ls dir2.process # only archive.* should remain
-  # copy bib tarball into dir3 also.
-  cp -p dir2.process/archive.tb$nnn/tb${nnn}bib.tgz dir3.uploaded/tb$nnn
   #
   svn -q add */*tb${nnn}/*
   svn status

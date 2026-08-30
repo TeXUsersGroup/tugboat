@@ -1,0 +1,14 @@
+  The glue model of \TeX{} is a powerful and elegant abstraction allowing for
+  many typographic applications. One such application is the
+  typesetting of a paragraph's last line, which requires special treatment. By
+  adding infinitely stretchable glue at the end of a paragraph, the need
+  for special-casing the final line is avoided, albeit at the cost of
+  sub-optimal typesetting.\looseness-1
+
+  In conscientious typography, optimally typesetting the last line of a
+  paragraph turns out to be a non-trivial problem, especially if one wants to
+  take into account such aesthetic concerns as runt or full-out lines. In this
+  paper, we present an algorithm for optimal last line adjustment, introducing
+  the concept of \textit{quantum boundaries}: potential line breaks whose exact
+  state remains unknown until an actual paragraph solution is
+  observed.

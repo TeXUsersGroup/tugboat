@@ -1,0 +1,17 @@
+{Many documents, such as government correspondence or contracts,
+contain sensitive information, making them difficult to share without
+error-prone manual redaction.
+
+Building on earlier work on Executable Document Templates (\acro{EDT}s),
+this talk presents a workflow in which documents evolve through distinct
+stages: from plain \LaTeX, to parameterized templates, to fully
+data-driven compilation using external payloads. By separating
+structure, data, and context, the same source can produce both internal
+and redacted public versions in a reproducible way.
+
+Through a practical use case inspired by government disclosure
+requirements, the talk demonstrates how this staged approach enables the
+reliable removal of sensitive values from the \acro{PDF} text layer,
+alongside auditing and reuse\Dash without compromising typographic
+quality.
+}

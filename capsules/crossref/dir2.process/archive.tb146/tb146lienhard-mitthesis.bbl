@@ -1,0 +1,142 @@
+\begin{thebibliography}{10}
+
+\bibitem{Fischer:2020:CAP}
+U.~Fischer.
+\newblock Creating accessible pdfs with {\LaTeX}.
+\newblock \emph{TUGboat} 41(1):26--28, 2020.
+\newblock \url{https://tug.org/TUGboat/tb41-1/tb127fischer-accessible.pdf}
+
+\bibitem{Fischer2026tagpdf}
+U.~Fischer.
+\newblock \emph{The \tbcode{tagpdf} package}, Apr.~2026.
+\newblock \url{https://ctan.org/pkg/tagpdf}
+
+\bibitem{Holle2012}
+Holle.
+\newblock Answer to ``incompatibility between \tbcode{footmisc} option multiple
+  and \tbcode{hyperref}''.
+\newblock \TeX{}~Stack Exchange, July~2012.
+\newblock \newline \url{https://tex.stackexchange.com/a/62091}
+
+\bibitem{iso32000-2}
+{International Organization for Standardization}.
+\newblock Document management --- {Portable} document format --- {Part~2:}
+  {PDF}~2.0.
+\newblock Standard ISO 32000-2:2020, International Organization for
+  Standardization, Geneva, Switzerland, 2020.
+\newblock \url{https://pdfa.org/resource/iso-32000-2/}
+
+\bibitem{latexproject_tagging_status}
+{\LaTeX{} Project}.
+\newblock {Tagging Status of \LaTeX{} Packages and Classes}.
+\newblock
+  \url{https://latex3.github.io/tagging-project/tagging-status/}\gobble.
+
+\bibitem{latexproject2024ltnews40}
+{\LaTeX{} Project}.
+\newblock \emph{{\LaTeX{} News}: Issue 40}, Nov.~2024.
+\newblock \url{https://latex-project.org/news/latex2e-news/ltnews40.pdf}
+
+\bibitem{Expl3interfaces}
+{\LaTeX{} Project}.
+\newblock \emph{The \LaTeX3 Interfaces}, May~2026.
+\newblock
+  \url{https://ctan.org/tex-archive/macros/latex/required/l3kernel/interface3.pdf}
+
+\bibitem{l3pdfmeta}
+{\LaTeX{} Project}.
+\newblock \emph{The \tbcode{l3pdfmeta} module: \acro{PDF} standards}.
+\newblock \LaTeX{} \acro{PDF} management bundle, May~2026.
+\newblock
+  \url{https://ctan.org/tex-archive/macros/latex/contrib/pdfmanagement/l3pdfmeta.pdf}
+
+\bibitem{LOC2024}
+{Library of Congress, Prints and Photographs Online Catalog}.
+\newblock {PDF/A}-4, {PDF} for {L}ong-term {P}reservation, {U}se of {ISO}
+  32000-2, 2024.
+\newblock Format Description Document (FDD000532).
+\newblock
+  \url{https://www.loc.gov/preservation/digital/formats/fdd/fdd000532.shtml}
+
+\bibitem{lienhard2026mitthesis}
+J.H.~Lienhard.
+\newblock \emph{The MIT Thesis Template}.
+\newblock Massachusetts Institute of Technology, Cambridge, MA.
+\newblock \url{https://ctan.org/pkg/mitthesis}
+
+\bibitem{mdn-presentation-role}
+{MDN Web Docs}.
+\newblock {ARIA}: \texttt{presentation} role.
+\newblock Mozilla Developer Network, 2026.
+\newblock Mozilla.
+\newblock
+  \url{https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/presentation_role}
+
+\bibitem{mitlibraries-thesis-specs}
+{MIT Libraries}.
+\newblock {MIT Specifications for Thesis Preparation}.
+\newblock
+  \url{https://libraries.mit.edu/distinctive-collections/thesis-specs/}\gobble.
+
+\bibitem{Mittelbach2026hooks}
+F.~Mittelbach.
+\newblock \emph{\LaTeX's Hook Management}, May~2026.
+\newblock \url{https://ctan.org/tex-archive/macros/latex/base/lthooks-code.pdf}
+
+\bibitem{Mittelbach:2024:ELA}
+F.~Mittelbach, U.~Fischer.
+\newblock Enhancing {\LaTeX} to automatically produce tagged and accessible
+  {PDF}.
+\newblock \emph{TUGboat} 45(1):52--59, 2024.
+\newblock \url{https://doi.org/10.47397/tb/45-1/tb139mitt-deims24}
+
+\bibitem{Mittelbach:2020:LTP}
+F.~Mittelbach, C.~Rowley.
+\newblock {{\LaTeX} Tagged PDF}{\Dash}a blueprint for a large project.
+\newblock \emph{TUGboat} 41(3):292--298, 2020.
+\newblock \url{https://doi.org/10.47397/tb/41-3/tb129mitt-tagpdf}
+
+\bibitem{PDFAssociation2024}
+{PDF Association}.
+\newblock {ISO} 14289-2, {PDF} for universal accessibility ({PDF/UA}-2),
+  March~2024.
+\newblock Discusses support for {MathML} in {PDF/UA}-2.
+\newblock \url{https://pdfa.org/iso-14289-2-pdfua-2/}
+
+\bibitem{PDFAssoc2024}
+{PDF Association}.
+\newblock {PDF Association Cheat Sheet\Dash Standard Structure Elements},
+2024.
+\newblock
+  \url{https://pdfa.org/download-area/cheat-sheets/StandardStructureElements.pdf}
+
+\bibitem{Robertson2023}
+W.~Robertson, P.~Stephani, et~al.
+\newblock \emph{Experimental Unicode Mathematical Typesetting:
+  The~\tbcode{unicode-math} Package}, Aug.~2023.
+\newblock See section 4.4.2.
+\newblock \url{https://ctan.org/pkg/unicode-math}
+
+\bibitem{FedReg2026-09266}
+{U.S. Department of Health and Human Services}.
+\newblock Nondiscrimination on the basis of disability; {A}ccessibility of
+  {W}eb {C}ontent and {M}obile {A}pplications of {R}ecipients of {D}epartmental
+  {F}inancial {A}ssistance; {E}xtension of {C}ompliance {D}ates.
+\newblock \emph{Federal Register}, 91(2026-09266):25496--25507, May~2026.
+\newblock HHS~Section 504.
+
+\bibitem{FedReg2026-07663}
+{U.S. Department of Justice}.
+\newblock Extension of compliance dates for nondiscrimination on the basis of
+  disability; {A}ccessibility of {W}eb {I}nformation and {S}ervices of {S}tate
+  and {L}ocal {G}overnment {E}ntities.
+\newblock \emph{Federal Register}, 91(2026-07663):20902--20912, April~2026.
+\newblock ADA~Title II.
+
+\bibitem{Wright:2022:KVS}
+J.~Wright.
+\newblock Key--value setting handling in the {\LaTeX} kernel.
+\newblock \emph{TUGboat} 43(2):162--163, 2022.
+\newblock \url{https://doi.org/10.47397/tb/43-2/tb134wright-keyval}
+
+\end{thebibliography}

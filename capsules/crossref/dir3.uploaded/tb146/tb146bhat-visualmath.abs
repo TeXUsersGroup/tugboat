@@ -1,0 +1,14 @@
+Access to higher education in \acro{STEM} fields for visually impaired
+students is often obstructed by institutional inertia and inaccessible
+visual workflows. This paper, reflecting on our presentation and
+subsequent learnings at the \TeX\ User Group's 2026 conference, outlines a
+code-based approach to circumventing these barriers. By treating visual
+layouts and spatial mathematics as structured data via \AllTeX,
+Markdown, and structural \acro{OCR}, we propose an ecosystem where
+accessibility is baked into the source code.
+
+While a comprehensive study on these methodologies is currently being
+authored for the University of Alberta's Undergraduate Research
+Initiative (\acro{URI}), this article serves as an intermediate
+reflection of our findings, enriched by the invaluable sounding board of
+the \AllTeX\ community.
