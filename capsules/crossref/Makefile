@@ -102,6 +102,7 @@ upload-test:
 	   --metadata $(xml_output)
 #
 # It costs money to deposit a doi. Don't do it until you're sure.
+# See README-process.txt for all the stuff surrounding this.
 # https://doi.crossref.org/
 upload-real:
 	checkme! $(upload) $(chicken) $(crossref_user) \

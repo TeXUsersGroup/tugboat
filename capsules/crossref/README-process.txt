@@ -193,9 +193,9 @@ It is good to test issue.xml in both ways, since it's easy.
 to the live web directory for tub-prod to check.
 Here we assume we're working on a development machine, not tug.org:
 
-First, run
+First, make landing pages that don't go through doi.org, for testing:
   make crw 
-to make landing pages that don't go through doi.org, for testing. Then:
+Then copy them to tug.org:
   host=tug.org
   dir=/home/httpd/html/TUGboat/tb$VV-N; echo $dir
   ssh $host mkdir $dir                           # ensure directory exists

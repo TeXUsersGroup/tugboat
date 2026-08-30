@@ -1,3 +1,8 @@
+2026-08-30  Karl Berry  <karl@freefriends.org>
+
+	* crossref/README-process.txt: endless tweaks.
+	* crossref/Makefile (upload-real): mention README-process.txt.
+
 2026-08-29  Karl Berry  <karl@freefriends.org>
 
 	Prepare for publication of 47:2 (tb146).
