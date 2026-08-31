@@ -37,7 +37,7 @@ rpi_input = dir2.process/*.rpi
 xml_output = dir2.process/issue.xml
 #
 # When uploading corrections:
-#xml_output = dir3.uploaded/tb145/issue-corr260505.xml
+#xml_output = dir3.uploaded/tb146/issue-corr260831-metelka.xml
 
 # All the arguments we pass.
 ltx2crossrefxml_args = -c $(tub_cfg) $(rpi_input) --rpi-is-xml -o $(xml_output)
@@ -101,9 +101,12 @@ upload-test:
 	  --host $(crossref_test_host) \
 	   --metadata $(xml_output)
 #
-# It costs money to deposit a doi. Don't do it until you're sure.
+# It costs money to register a new doi. Don't do it until you're sure.
 # See README-process.txt for all the stuff surrounding this.
 # https://doi.crossref.org/
+# 
+# On the other hand, updates, corrections, and back issues don't cost
+# anything, so there's no need to refrain from those.
 upload-real:
 	checkme! $(upload) $(chicken) $(crossref_user) \
 	  --host $(crossref_real_host) \

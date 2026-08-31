@@ -1,0 +1,126 @@
+<doi_batch
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    version="5.4.0"
+    xmlns="http://www.crossref.org/schema/5.4.0"
+    xsi:schemaLocation="http://www.crossref.org/schema/5.4.0
+                       https://www.crossref.org/schemas/crossref5.4.0.xsd">
+  <head>
+    <doi_batch_id>ltx2crossref-20260831212454-42634</doi_batch_id>
+    <timestamp>20260831212454</timestamp>
+    <depositor>
+      <depositor_name>TUGboat production</depositor_name>
+      <email_address>doi-tugboat@tug.org</email_address>
+    </depositor>
+    <registrant>TeX Users Group</registrant>
+  </head>
+  <body><journal>
+    <journal_metadata language="en">
+      <full_title>TUGboat</full_title>
+      <issn>0896-3207</issn>      
+    </journal_metadata>
+    <journal_issue>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <journal_volume><volume>47</volume></journal_volume>
+      <issue>2</issue>
+    </journal_issue>
+    <journal_article>
+      <titles>
+        <title>UTFpatgen: Pattern generation without borders</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Ond&#x0159;ej</given_name>
+          <surname>Metelka</surname>
+          <ORCID>https://orcid.org/0009-0007-6581-0097</ORCID>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Petr</given_name>
+          <surname>Sojka</surname>
+          <ORCID>https://orcid.org/0000-0002-5768-4007</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>258</first_page>
+        <last_page>263</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-2/tb146metelka-utfpatgen</doi>
+        <timestamp>20260831212454</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-2/tb146metelka-utfpatgen.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="cs:Antos-2002-PATLIB:tub-1">
+          <unstructured_citation>D. Anto&#x0161;. PATLIB, pattern manipulation library. Master&#x2019;s thesis, Masaryk University, Brno, Faculty of Informatics, 2002. Advisor: Petr Sojka. Source code is available at https://fi.muni.cz/~sojka/opatgen-2026-01-19-unmaintained.zip. https://is.muni.cz/th/c4rby/?lang=en</unstructured_citation>
+        </citation>
+        <citation key="nlp:bouma2003fsm-2">
+          <unstructured_citation>G. Bouma. Finite state methods for hyphenation. Natural Language Engineering, 9(1):5&#x2013;20, 2003. https://doi.org/10.1017/S1351324903003073</unstructured_citation>
+        </citation>
+        <citation key="nlp:Franek-2025-transformer-based-hyphenation-thesis-3">
+          <unstructured_citation>J. Fran&#x011b;k. Transformer-based word hyphenation. Master&#x2019;s thesis, Masaryk University, Brno, Faculty of Informatics (advisor: Petr Sojka), 2025. https://is.muni.cz/th/wbgkw/</unstructured_citation>
+        </citation>
+        <citation key="tex:Hennig-Wehr-2026-autotype-4">
+          <unstructured_citation>S. Hennig, K. Wehr. autotype: A LuaLaTeX package for automatic language-specific typography, Apr. 2026. https://ctan.org/pkg/autotype</unstructured_citation>
+        </citation>
+        <citation key="knuth1983web-5">
+          <unstructured_citation>D.E. Knuth. The WEB System of Structured Documentation. Department of Computer Science, Stanford University, 1983. http://infolab.stanford.edu/pub/cstr/reports/cs/tr/83/980/CS-TR-83-980.pdf</unstructured_citation>
+        </citation>
+        <citation key="knuth1994cweb-6">
+          <unstructured_citation>D.E. Knuth, S. Levy. The CWEB system of structured documentation: version 3.0. Addison-Wesley Longman Publishing Co., Inc., 1994. https://mirror.ctan.org/info/knuth-pdf/cweb/cwebman.pdf</unstructured_citation>
+        </citation>
+        <citation key="tex:Knuth-Plass-1981-7">
+          <unstructured_citation>D.E. Knuth, M.F. Plass. Breaking paragraphs into lines. Software: Practice and Experience, 11(11):1119&#x2013;1184, 1981. https://doi.org/10.1002/spe.4380111102</unstructured_citation>
+        </citation>
+        <citation key="nlp:kristensen-2001-hyphenation-by-NN-8">
+          <unstructured_citation>T. Kristensen, D. Langmyhr. Two regimes of computer hyphenation&#x2014;a comparison. In Proceedings of International Joint Conference on Neural Networks (IJCNN), vol. 2, pp. 1532&#x2013;1535, 2001. https://doi.org/10.1109/IJCNN.2001.939592</unstructured_citation>
+        </citation>
+        <citation key="tex:liang83-9">
+          <unstructured_citation>F.M. Liang. Word Hy-phen-a-tion by Com-put-er. Ph.D. thesis, Department of Computer Science, Stanford University, Aug. 1983. https://tug.org/docs/liang</unstructured_citation>
+        </citation>
+        <citation key="tex:patgen2.4program-2020-10">
+          <unstructured_citation>F.M. Liang, P. Breitenlohner. PATtern GENeration program for the TeX82 hyphenator, 2020. https://mirror.ctan.org/info/knuth-pdf/other/patgen.pdf</unstructured_citation>
+        </citation>
+        <citation key="tex:Maca-bachelor2023fortugboat-11">
+          <unstructured_citation>J. M&#x00E1;ca. Judy. Bachelor&#x2019;s thesis, Masaryk University, Brno, Faculty of Informatics (advisor: Petr Sojka), May 2023. https://is.muni.cz/th/kru3j</unstructured_citation>
+        </citation>
+        <citation key="tex:Metelka-2026-thesis-12">
+          <unstructured_citation>O. Metelka. Support of arbitrarily sized alphabets in the Patgen hyphenation program. Master&#x2019;s thesis, Masaryk University, Brno, Faculty of Informatics (advisor: Petr Sojka), May 2026. https://is.muni.cz/th/y922i/</unstructured_citation>
+        </citation>
+        <citation key="nlp:metelka25hyphbench-13">
+          <unstructured_citation>O. Metelka, P. Sojka. Hyph-bench: Benchmark dataset of hyphenated words for generating hyphenation patterns. In Proceedings of Recent Advances in Slavonic Natural Language Processing, RASLAN 2025, A. Hor&#x00E1;k, P. Rychl&#x00FD;, A. Rambousek, eds., pp. 173&#x2013;185, Brno, Czech Republic, Dec. 2025. Tribun EU. http://raslan2025.nlp-consulting.net/</unstructured_citation>
+        </citation>
+        <citation key="tex:Metelka-Sojka-2026-utfpatgen-14">
+          <unstructured_citation>O. Metelka, P. Sojka. UTFpatgen&#x2014;generate hyphenation patterns from UTF-8 input, 2026. https://ctan.org/pkg/utfpatgen</unstructured_citation>
+        </citation>
+        <citation key="tex:mittelbach92b-15">
+          <unstructured_citation>F. Mittelbach, C. Rowley. The pursuit of quality: How can automated typesetting achieve the highest standards of craft typography? In Proceedings of the International Conference on Electronic Publishing, Document Manipulation &#x0026; Typography, Lausanne, Switzerland, 1992, C. Vanoirbeek, G. Coray, eds., pp. 261&#x2013;273, New York, 1992. Cambridge University Press. https://www.researchgate.net/publication/237444403_The_Pursuit_of_Quality</unstructured_citation>
+        </citation>
+        <citation key="nn:smrzsojka97-16">
+          <unstructured_citation>P. Smr&#x017E;, P. Sojka. Word Hy-phen-a-tion by Neural Networks. Neural Network World, 7:687&#x2013;695, 1997. https://www.academia.edu/10013877/Word_Hyphenation_by_Neural_Networks</unstructured_citation>
+        </citation>
+        <citation key="tex:Sojka-2025-thesis-17">
+          <unstructured_citation>O. Sojka. Transfer learning of Slavic syllabification for hyphenation patterns. Bachelor&#x2019;s thesis, Masaryk University, Faculty of Informatics, Brno, Czech Republic, Feb. 2025. https://is.muni.cz/th/s17d6/</unstructured_citation>
+        </citation>
+        <citation key="ml:Sojka-Sojka-the-Art-of-Competing-Patterns-2026-tub-18">
+          <unstructured_citation>O. Sojka, P. Sojka. The Art of Hierarchical Competing Patterns: Gaussian Process Optimization of Hyphenation. In Findings of the Association for Computational Linguistics: EMNLP 2026, S. Dev, D. Elliott, et al., eds., Budapest, Hungary, Oct. 2026. Association for Computational Linguistics. To appear on https://aclanthology.org. https://openreview.net/pdf?id=oZy4w1VQR3</unstructured_citation>
+        </citation>
+        <citation key="tex:sojkasmaca2023universal-19">
+          <unstructured_citation>O. Sojka, P. Sojka, J. M&#x00E1;ca. A roadmap for universal syllabic segmentation. TUGboat 44(2), 2023. https://doi.org/10.47397/tb/44-2/tb137sojka-syllabic</unstructured_citation>
+        </citation>
+        <citation key="tex:sojkas2019unreasonable-20">
+          <unstructured_citation>P. Sojka, O. Sojka. The unreasonable effectiveness of pattern generation. TUGboat 40(2):187&#x2013;193, 2019. https://tug.org/TUGboat/tb40-2/ tb125sojka-patgen.pdf</unstructured_citation>
+        </citation>
+        <citation key="nlp:trogkanis-elkan-2010-conditional-21">
+          <unstructured_citation>N. Trogkanis, C. Elkan. Conditional random fields for word hyphenation. In Proceedings of the 48th Annual Meeting of the ACL, pp. 366&#x2013;374, Uppsala, Sweden, July 2010. Association for Computational Linguistics. https://aclweb.org/anthology/P10-1038</unstructured_citation>
+        </citation>
+        <citation key="rfc3629-22">
+          <unstructured_citation>F. Yergeau. UTF-8, a transformation format of ISO 10646. RFC 3629, Nov. 2003. https://doi.org/10.17487/RFC3629</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+  </journal></body>
+</doi_batch>

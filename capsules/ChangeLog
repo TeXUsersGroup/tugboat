@@ -1,3 +1,14 @@
+2026-08-31  Karl Berry  <karl@freefriends.org>
+
+	* crossref/dir3.uploaded/tb146/issue-corr260831-metelka.xml:
+	typo in metelka orcid.
+	* crossref/Makefile (xml_output): update correction example.
+	* crossref/README-process.txt: doc update.
+
+2026-08-31  Karl Berry  <karl@freefriends.org>
+
+	* tb146capsule.txt (ad-rvt): {{\TeX}Folio} for bibtex.
+
 2026-08-31  Karl Berry  <karl@tug.org>
 
 	* tb145capsule.txt (hagen-nodes): in Software \& Tools, not Graphics.

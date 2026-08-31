@@ -355,7 +355,8 @@ cp archive.PREVN/* .
  Uploading corrections:
 When needing to make updates to the crossref data for a
   previously-uploaded issue, e.g., we got the url wrong:
-cp dir3.uploaded/tbNNN/issue{,-corr`date +%Y%m%d`}.xml 
+cp dir3.uploaded/tbNNN/issue{,-corr`date +%y%m%d`-$IDENT}.xml 
+    where $IDENT is some short identifier to give a clue about the correction.
   The metadata and issue-as-a-whole stuff at the top stays,
     except that the <timestamp> values must be updated.
   Unchanged <journal_article>s must be removed from the file, else
@@ -367,10 +368,12 @@ cp dir3.uploaded/tbNNN/issue{,-corr`date +%Y%m%d`}.xml
 in Makefile, change the xml_output assignment to the issue-corr.xml file.
 make upload-test
 if ok, make upload-real
+Commit changes.
 
 There is no charge for updating metadata, so do this as needed.
-No crossref update is needed when taking an issue public; it's only our
-landing files that change.
+
+By the way, no crossref update is needed when taking an issue public;
+it's only our landing files that change.
 
  Processing older issues that have not yet been uploaded to Crossref:
 First, look near the end of the captub script for the line
