@@ -6,8 +6,6 @@
 #   save contentsVV-N.html as text, then run this, check for nonascii
 #   characters (done below), edit result, mail tex-eds.
 
-PATH=/home/karl/bin:$PATH # for nonascii, sorry
-
 sed '1,/Complete issue/d' "$@" \
 | deutf \
 | tee /tmp/lat \
@@ -28,15 +26,19 @@ sed '1,/Complete issue/d' "$@" \
   -e 's/⟩/>/g' \
   -e 's/    */  /g' \
   -e 's/^\([\a-z`]\)/    \1/' \
-  -e 's/(doi//' \
   -e 's/^    //' \
+  -e 's/  *,/,/g' \
+| grep -v '^[ )]*$' \
 | sed -z -e 's/ *\n,/,/g' \
 | sed -z -e 's/\n *\([0-9c]\)/ \1/g' \
 | sed -e 's/  *,/,/g' -e 's/^ *$//' -e 's/  *$//' -e '/^$/d' \
 | tee /tmp/tubtoc \
 | perl -pg -e 's,<.*?>,,sg' \
-| egrep -v '^( *\(doi$|\)$| *\(doi \))$' \
 | sed -z -e 's/\n--/\n\n--/g' \
+| sed -e 's/^\([a-z]\)/    \1/' \
+| sed -e 's/(doi *)*//g' \
+      -e 's/(orcid *)*//g' \
+| grep -v '^ \+$' \
 | sed '/^TUG home page/,$d'
 
 # -g to perl says to read the whole file as one string;
@@ -45,5 +47,5 @@ sed '1,/Complete issue/d' "$@" \
 # none of this is quite right yet ...
 
 set -x
-nonascii /tmp/lat
-nonascii /tmp/tubtoc
+nonascii-tub /tmp/lat
+nonascii-tub /tmp/tubtoc

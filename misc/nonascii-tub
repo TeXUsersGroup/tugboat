@@ -1,0 +1,14 @@
+#!/bin/sh
+# $Id$
+# Report any non-ASCII characters.
+
+tab='	'
+cr=''
+ff=''
+
+tmpfile=${TMPDIR-/tmp}/nonasc
+sed "s/[$tab$cr$ff]//g" "$@" | tr --delete ' -~' | grep --text -v '^$' \
+| tee $tmpfile
+
+# return code is zero if tmpfile is empty, one if nonempty.
+! test -s $tmpfile
