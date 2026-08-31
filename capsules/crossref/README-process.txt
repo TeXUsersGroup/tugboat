@@ -271,6 +271,10 @@ Then archive all the files (after registering):
   mv dir0.capout/tb${nnn}* !$
   ls dir0.capout # only archive.* should remain
   #
+  svn mkdir dir1.lndout/archive.tb$nnn
+  mv dir1.lndout/tb${nnn}* !$
+  ls dir1.lndout # only archive.* should remain
+  #
   # copy into dir3 from dir2 before we move dir2, since we save them in
   # both places, in case of edits.
   svn mkdir dir3.uploaded/tb$nnn

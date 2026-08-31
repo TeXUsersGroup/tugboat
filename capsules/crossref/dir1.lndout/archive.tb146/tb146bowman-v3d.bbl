@@ -1,0 +1,42 @@
+\begin{thebibliography}{1}
+
+\bibitem{Bowman10}
+J.C.~Bowman.
+\newblock Asymptote: Interactive {\TeX}-aware {3D} vector graphics.
+\newblock \emph{TUGboat}
+  31(2):203--205, 2010.
+\url{https://tug.org/TUGboat/tb31-2/tb98bowman.pdf}
+
+\bibitem{Bowman09}
+J.C.~Bowman, O.~Shardt.
+\newblock Asymptote: Lifting {\TeX} to three dimensions.
+\newblock \emph{TUGboat}
+  30(1):58--63, 2009.
+\url{https://tug.org/TUGboat/tb30-1/tb94bowman.pdf}
+
+\bibitem{PRCFormat09}
+ISO/TC171/SC2.
+\newblock {3D} use of product representation compact ({PRC}) format.
+%, 2009.
+%\newblock
+\\\url{https://en.wikipedia.org/wiki/PRC_(file_format)}
+
+%  {\url{http://pdf.editme.com/files/PDFE/SC2N570-PRC-WD.pdf}}.
+%% bb -- that url is not found; there's a site for a newer edition at
+%%       www.iso.org/standard/91458.html
+%%       it's for just part 1, a draft that "will replace ISO 14739-1:2014"
+%%       and it too is likely to disappear soon.
+
+\bibitem{Shardt12}
+O.~Shardt, J.C.~Bowman.
+\newblock Surface parametrization of nonsimply connected planar {B\'ezier}
+  regions.
+\newblock \emph{Computer-Aided Design}, 44(5):484.e1--10, May~2012.
+\url{https://www.math.ualberta.ca/~bowman/publications/cad10.pdf}
+
+%% bb -- there's a version of this at
+%%       www.math.ualberta.ca/~bowman/publications/cad10.pdf
+%%       also (but behind a paywall)
+%%       www.sciencedirect.com/science/article/abs/pii/S0010448511001291
+
+\end{thebibliography}

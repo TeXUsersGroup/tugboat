@@ -1,0 +1,96 @@
+<!--#include virtual="/header.html"-->
+<title>Modernizing MIT's thesis template: mitthesis.cls
+       - TUGboat 47:2 (2026) - TeX Users Group</title>
+</head><body>
+
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+<h1><a href="/TUGboat/tb47-2/">TUGboat 47:2</a> (2026)<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
+
+<p><b>Title</b>: Modernizing MIT's thesis template: <tt>mitthesis.cls</tt></p>
+
+<p><b>Summary</b>:
+thesis template construction, including extensive tagging, rendering in HTML/CSS, and <tt>expl3</tt> coding.</p>
+
+<p><b>Full text of article</b>: <a href="https://tug.org/members/TUGboat/tb47-2/tb146lienhard-mitthesis.pdf">available to TUG members</a> (<a href="/join.html">join TUG</a>);
+will be publicly available after the next issue is published.</p>
+
+<p><b>Author</b>:
+<a href="/TUGboat/Contents/listauthor.html#Lienhard,JohnH">John H. Lienhard</a></p>
+
+<p><b>Publication</b>: <a href="/TUGboat/tb47-2/">TUGboat
+volume 47, number 2</a> (2026),
+pages&nbsp;212&ndash;221</p>
+
+<p><b>DOI</b> (this page):
+<a href="https://doi.org/10.47397/tb/47-2/tb146lienhard-mitthesis">10.47397/tb/47-2/tb146lienhard-mitthesis</a>
+<br><small>(<a href="https://doi.org/10.47397/tb/47-2/tb146prescott-ltx-talk">previous doi</a>
+- <a href="https://doi.org/10.47397/tb/47-2/tb146nijenhuis-accessiblelists">next doi</a>)</small></p>
+
+<p><b>Category</b>:
+<a href="/TUGboat/Contents/listkeyword.html#CatTAGAccessibility">Accessibility</a></p>
+      
+<p><b>Difficulty</b>: Intermediate Plus</p>
+
+<p><b>Abstract</b>:
+A few years ago, I began an update to MIT&#x2019;s LaTeX template for
+theses and dissertations. The previous template had been written in
+LaTeX 2.09 in the 1980s and patched for LaTeX2e by various students
+during the 1990s. My work quickly turned into a complete rewrite. My
+goals were to use current LaTeX methods and to produce tagged
+PDF while still supporting users who have minimal knowledge of
+LaTeX and typesetting. In this note, I discuss some of
+the considerations that have shaped the current template, the
+implementation of tagging for non-standard document elements, rendering
+in HTML/CSS, and some aspects of <tt>expl3</tt> coding.</p>
+
+<p><b>References</b>:</p>
+<ol class="tugbbl">
+<li class="tugbbl">U. Fischer. Creating accessible pdfs with LaTeX. TUGboat 41(1):26&#x2013;28, 2020. <a href="https://tug.org/TUGboat/tb41-1/tb127fischer-accessible.pdf">tug.org/TUGboat/tb41-1/tb127fischer-accessible.pdf</a></li>
+<li class="tugbbl">U. Fischer. The tagpdf package, Apr. 2026. <a href="https://ctan.org/pkg/tagpdf">ctan.org/pkg/tagpdf</a></li>
+<li class="tugbbl">Holle. Answer to &#x201c;incompatibility between footmisc option multiple and hyperref&#x201d;. TeX Stack Exchange, July 2012. <a href="https://tex.stackexchange.com/a/62091">tex.stackexchange.com/a/62091</a></li>
+<li class="tugbbl">International Organization for Standardization. Document management &#x2014; Portable document format &#x2014; Part 2: PDF 2.0. Standard ISO 32000-2:2020, International Organization for Standardization, Geneva, Switzerland, 2020. <a href="https://pdfa.org/resource/iso-32000-2/">pdfa.org/resource/iso-32000-2/</a></li>
+<li class="tugbbl">LaTeX Project. Tagging Status of LaTeX Packages and Classes. <a href="https://latex3.github.io/tagging-project/tagging-status/">latex3.github.io/tagging-project/tagging-status/</a></li>
+<li class="tugbbl">LaTeX Project. LaTeX News: Issue 40, Nov. 2024. <a href="https://latex-project.org/news/latex2e-news/ltnews40.pdf">latex-project.org/news/latex2e-news/ltnews40.pdf</a></li>
+<li class="tugbbl">LaTeX Project. The LaTeX3 Interfaces, May 2026. <a href="https://ctan.org/tex-archive/macros/latex/required/l3kernel/interface3.pdf">ctan.org/tex-archive/macros/latex/required/l3kernel/interface3.pdf</a></li>
+<li class="tugbbl">LaTeX Project. The l3pdfmeta module: PDF standards. LaTeX PDF management bundle, May 2026. <a href="https://ctan.org/tex-archive/macros/latex/contrib/pdfmanagement/l3pdfmeta.pdf">ctan.org/tex-archive/macros/latex/contrib/pdfmanagement/l3pdfmeta.pdf</a></li>
+<li class="tugbbl">Library of Congress, Prints and Photographs Online Catalog. PDF/A-4, PDF for Long-term Preservation, Use of ISO 32000-2, 2024. Format Description Document (FDD000532). <a href="https://www.loc.gov/preservation/digital/formats/fdd/fdd000532.shtml">www.loc.gov/preservation/digital/formats/fdd/fdd000532.shtml</a></li>
+<li class="tugbbl">J.H. Lienhard. The MIT Thesis Template. Massachusetts Institute of Technology, Cambridge, MA. <a href="https://ctan.org/pkg/mitthesis">ctan.org/pkg/mitthesis</a></li>
+<li class="tugbbl">MDN Web Docs. ARIA: presentation role. Mozilla Developer Network, 2026. Mozilla. <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/presentation_role">developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/presentation_role</a></li>
+<li class="tugbbl">MIT Libraries. MIT Specifications for Thesis Preparation. <a href="https://libraries.mit.edu/distinctive-collections/thesis-specs/">libraries.mit.edu/distinctive-collections/thesis-specs/</a></li>
+<li class="tugbbl">F. Mittelbach. LaTeX&#x2019;s Hook Management, May 2026. <a href="https://ctan.org/tex-archive/macros/latex/base/lthooks-code.pdf">ctan.org/tex-archive/macros/latex/base/lthooks-code.pdf</a></li>
+<li class="tugbbl">F. Mittelbach, U. Fischer. Enhancing LaTeX to automatically produce tagged and accessible PDF. TUGboat 45(1):52&#x2013;59, 2024. <a href="https://doi.org/10.47397/tb/45-1/tb139mitt-deims24">doi.org/10.47397/tb/45-1/tb139mitt-deims24</a></li>
+<li class="tugbbl">F. Mittelbach, C. Rowley. LaTeX Tagged PDF&#x2014;a blueprint for a large project. TUGboat 41(3):292&#x2013;298, 2020. <a href="https://doi.org/10.47397/tb/41-3/tb129mitt-tagpdf">doi.org/10.47397/tb/41-3/tb129mitt-tagpdf</a></li>
+<li class="tugbbl">PDF Association. ISO 14289-2, PDF for universal accessibility (PDF/UA-2), March 2024. Discusses support for MathML in PDF/UA-2. <a href="https://pdfa.org/iso-14289-2-pdfua-2/">pdfa.org/iso-14289-2-pdfua-2/</a></li>
+<li class="tugbbl">PDF Association. PDF Association Cheat Sheet&#x2014;Standard Structure Elements, 2024. <a href="https://pdfa.org/download-area/cheat-sheets/StandardStructureElements.pdf">pdfa.org/download-area/cheat-sheets/StandardStructureElements.pdf</a></li>
+<li class="tugbbl">W. Robertson, P. Stephani, et al. Experimental Unicode Mathematical Typesetting: The unicode-math Package, Aug. 2023. See section 4.4.2. <a href="https://ctan.org/pkg/unicode-math">ctan.org/pkg/unicode-math</a></li>
+<li class="tugbbl">U.S. Department of Health and Human Services. Nondiscrimination on the basis of disability; Accessibility of Web Content and Mobile Applications of Recipients of Departmental Financial Assistance; Extension of Compliance Dates. Federal Register, 91(2026-09266):25496&#x2013;25507, May 2026. HHS Section 504.</li>
+<li class="tugbbl">U.S. Department of Justice. Extension of compliance dates for nondiscrimination on the basis of disability; Accessibility of Web Information and Services of State and Local Government Entities. Federal Register, 91(2026-07663):20902&#x2013;20912, April 2026. ADA Title II.</li>
+<li class="tugbbl">J. Wright. Key&#x2013;value setting handling in the LaTeX kernel. TUGboat 43(2):162&#x2013;163, 2022. <a href="https://doi.org/10.47397/tb/43-2/tb134wright-keyval">doi.org/10.47397/tb/43-2/tb134wright-keyval</a></li>
+</ol>
+
+
+<p id="cite"><b>Cite this article (BibTeX)</b>: <small><pre>
+@preamble{"\input tugboat.def"}
+@article{Lienhard:TB47-2:212,
+  author =         "John H. Lienhard",
+  title =          "Modernizing {MIT}'s thesis template: \texttt{mitthesis.cls}",
+  journal =        "TUGboat",
+  volume =         "47",
+  number =         "2",
+  pages =          "212-221",
+  year =           "2026",
+  issue =          "146",
+  DOI =            "10.47397/tb/47-2/tb146lienhard-mitthesis",
+  URL =            "https://tug.org/TUGboat/tb47-2/tb146lienhard-mitthesis.pdf",
+  journal-URL =    "https://tug.org/TUGboat/",
+  ISSN =           "0896-3207",
+}
+
+</pre>
+</small>
+<hr><small><a href="/TUGboat/">TUGboat</a> 47:2, 2026 (<a href="/TUGboat/tb47-2/">issue 146</a>)
+&nbsp; [generated 2026-08-31]
+</small><br><!--#include virtual="/footer.html"-->

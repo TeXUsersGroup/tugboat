@@ -1,0 +1,92 @@
+\begin{thebibliography}{10}
+
+\bibitem{bib:bellman.54.dp}
+R.~Bellman.
+\newblock The theory of dynamic programming.
+\newblock \emph{Bulletin of the American Mathematical Society}, 60(6):503--515,
+  1954.
+\newblock \url{https://doi.org/10.1090/S0002-9904-1954-09848-8}
+
+\bibitem{bib:boutmy.83.book}
+E.~Boutmy.
+\newblock \emph{Dictionnaire de l'Argot des Typographes}.
+\newblock Bibebook, 1883.
+
+\bibitem{bib:bringhurst.96.book}
+R.~Bringhurst.
+\newblock \emph{The Elements of Typographic Style}.
+\newblock Hartley \& Marks Inc., {2}nd~ed., 1996.
+
+\bibitem{bib:dijkstra.59.sp}
+E.W.~Dijkstra.
+\newblock A note on two problems in connexion with graphs.
+\newblock \emph{Numerische Mathematik}, 1(1):269–271, Dec.~1959.
+\newblock \newline \url{https://doi.org/10.1007/BF01386390}
+
+\bibitem{bib:thanh.00.tug}
+{\Thanh}.
+\newblock Micro-typographic extensions to the {\TeX} typesetting system.
+\newblock \emph{TUGboat} 21(4), 2000.
+\newblock \url{https://tug.org/TUGboat/tb21-4/tb69thanh.pdf}
+
+\bibitem{bib:hart.68.a*}
+P.~Hart, N.~Nilsson, B.~Raphael.
+\newblock A formal basis for the heuristic determination of minimum cost paths.
+\newblock \emph{IEEE Transactions on Systems Science and Cybernetics},
+  4(2):100--107, 1968.
+
+\bibitem{bib:knuth.81.spe}
+D.E.~Knuth, M.F.~Plass.
+\newblock Breaking paragraphs into lines.
+\newblock \emph{Software: Practice and Experience}, 11(11):1119--1184, 1981.
+\newblock \newline \url{https://doi.org/10.1002/spe.4380111102}
+
+\bibitem{bib:knuth.86.texbook}
+D.E.~Knuth.
+\newblock \emph{The {\TeX}book}, vol.~A of \emph{Computers and Typesetting}.
+\newblock Addison-Wesley, 1986.
+
+\bibitem{bib:knuth.86.book}
+D.E.~Knuth.
+\newblock \emph{{\TeX}: The Program}, vol.~B of \emph{Computers \&
+  Typesetting}.
+\newblock Addison-Wesley, 1986.
+
+\bibitem{bib:mittelbach.13.tug}
+F.~Mittelbach.
+\newblock {E-\TeX}: Guidelines for future {\TeX} extensions{\Dash}revisited.
+\newblock \emph{TUGboat} 34(1), 2013.
+\newblock \url{https://tug.org/TUGboat/tb34-1/tb106mitt.pdf}
+
+\bibitem{bib:verna.22.els}
+D.~Verna.
+\newblock {ETAP}: Experimental typesetting algorithms platform.
+\newblock In~\emph{15th European Lisp Symposium}, pp.~48--52, Porto, Portugal,
+  Mar.~2022.
+\newblock \url{https://doi.org/10.5281/zenodo.6334248}
+
+\bibitem{bib:verna.23.tug}
+D.~Verna.
+\newblock Interactive and real-time typesetting for demonstration and
+  experimentation: {ETAP}.
+\newblock \emph{TUGboat} 44(2):242--248, 2023.
+\newblock \url{https://doi.org/10.47397/tb/44-2/tb137verna-realtime}
+
+\bibitem{bib:verna.24.doceng}
+D.~Verna.
+\newblock Similarity problems in paragraph justification: an extension to the
+  {Knuth}-{Plass} algorithm.
+\newblock In~\emph{Proceedings of the ACM Symposium on Document Engineering
+  2024}, DocEng'24, pp.~127--130, New York, NY, USA, Aug.~2024. Association for
+  Computing Machinery.
+\newblock \url{https://doi.org/10.1145/3685650.3685666}
+
+\bibitem{bib:verna.25.doceng}
+D.~Verna.
+\newblock Towards more homogeneous paragraphs.
+\newblock In~\emph{Proceedings of the ACM Symposium on Document Engineering
+  2025}, DocEng'25, pp.~112--121, New York, NY, USA, Sept.~2025. Association
+  for Computing Machinery.
+\newblock \url{https://doi.org/10.1145/3704268.3742696}
+
+\end{thebibliography}

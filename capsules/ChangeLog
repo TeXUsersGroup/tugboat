@@ -1,5 +1,12 @@
 2026-08-31  Karl Berry  <karl@freefriends.org>
 
+	* crossref/README-process.txt: also archive dir1.lndout. Baffled.
+	* crossref/dir1.lndout/archive.tb146: remake landing files
+	for fixed /members/ urls for nijenhuis and prescott, etc.
+	* Makefile (testiss, crossref_iss): 146.
+
+2026-08-31  Karl Berry  <karl@freefriends.org>
+
 	* crossref/dir3.uploaded/tb146/issue-corr260831-metelka.xml:
 	typo in metelka orcid.
 	* crossref/Makefile (xml_output): update correction example.

@@ -1,0 +1,35 @@
+\bibitem{lua-placeholders}
+  Erik Nijenhuis, \texttt{lua-placeholders}\Dash specifying and inserting
+  document placeholders with \acro{JSON} or \acro{YAML}. \acro{CTAN}.
+  \url{https://ctan.org/pkg/lua-placeholders}
+
+\bibitem{woo}
+  \textsl{Wet open overheid} (Woo), in force 1~May~2022. Consolidated
+  text: \rlap{\url{https://wetten.overheid.nl/BWBR0045754}}
+
+\bibitem{wooqa}
+  \textsl{Vragen en antwoorden over openbaarmaking van de
+  informatiecategorie\"en uit de Woo}. Ministerie van Binnenlandse Zaken
+  en Koninkrijksrelaties, Open~Overheid.
+  \url{https://www.open-overheid.nl/onderwerpen/openbaar-maken/vragen-en-antwoorden}
+
+\bibitem{glyphpositions}
+  Maxwell Bland, Anushya Iyer, Kirill Levchenko, \textsl{Story Beyond the Eye:
+  Glyph Positions Break \acro{PDF} Text Redaction}. Proceedings on Privacy
+  Enhancing Technologies, 2023. \url{https://arxiv.org/abs/2206.02285}
+
+\bibitem{sourcedateepoch}
+  \texttt{SOURCE\_DATE\_EPOCH} specification. Reproducible Builds.
+  \url{https://reproducible-builds.org/specs/source-date-epoch/}
+
+\bibitem{accessiblelists}
+  Erik Nijenhuis, \textrm{Experimental lists and titling for \acro{PDF/UA}-2
+  compliance}. \TUB\ 47(2), pp.222--226.
+  \url{https://tug.org/TUGboat/tb47-2/tb146nijenhuis-accessiblelists.pdf}
+
+\bibitem{la-lua-opts}
+  Erik Nijenhuis, \textsl{La Lua Opts\Dash an experimental extension of
+  command-line options for Lua\LaTeX}.
+  \url{https://github.com/Xerdi/la-lua-opts}
+
+\end{thebibliography}

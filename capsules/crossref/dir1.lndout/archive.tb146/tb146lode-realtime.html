@@ -1,0 +1,92 @@
+<!--#include virtual="/header.html"-->
+<title>Real-time LuaTeX: Recompiling large documents in 1ms
+       - TUGboat 47:2 (2026) - TeX Users Group</title>
+</head><body>
+
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+<h1><a href="/TUGboat/tb47-2/">TUGboat 47:2</a> (2026)<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
+
+<p><b>Title</b>: Real-time LuaTeX: Recompiling large documents in 1ms</p>
+
+<p><b>Summary</b>:
+immediate editing and paragraph reflow, with <i>O</i>(1) latency.</p>
+
+<p><b>Full text of article</b>: <a href="https://tug.org/members/TUGboat/tb47-2/tb146lode-realtime.pdf">available to TUG members</a> (<a href="/join.html">join TUG</a>);
+will be publicly available after the next issue is published.</p>
+
+<p><b>Author</b>:
+<a href="/TUGboat/Contents/listauthor.html#Lode,Clemens">Clemens Lode</a>&nbsp;(<a href="https://orcid.org/0009-0001-2324-4791">orcid</a>)</p>
+
+<p><b>Publication</b>: <a href="/TUGboat/tb47-2/">TUGboat
+volume 47, number 2</a> (2026),
+pages&nbsp;263&ndash;266</p>
+
+<p><b>DOI</b> (this page):
+<a href="https://doi.org/10.47397/tb/47-2/tb146lode-realtime">10.47397/tb/47-2/tb146lode-realtime</a>
+<br><small>(<a href="https://doi.org/10.47397/tb/47-2/tb146metelka-utfpatgen">previous doi</a>
+- <a href="https://doi.org/10.47397/tb/47-2/tb146verna-lastline">next doi</a>)</small></p>
+
+<p><b>Category</b>:
+<a href="/TUGboat/Contents/listkeyword.html#CatTAGSoftwareTools">Software&#xa0;&&#xa0;Tools</a></p>
+      
+<p><b>Difficulty</b>: Intermediate Plus</p>
+
+<p><b>Abstract</b>:
+This paper shows that pixel-perfect LaTeX output and real-time editing
+are not mutually exclusive. Line breaking is paragraph-local; page
+breaking is global but not perceptually immediate and therefore need not
+block the editing loop.</p>
+<p>By extracting display lists directly from LuaTeX&#x2019;s node structures
+(bypassing PDF generation), a single paragraph can be recompiled and
+its display list delivered in approx. 1ms, using vanilla TeX Live
+with no engine modifications and full
+<tt>microtype</tt> [6] support.</p>
+<p>We demonstrate that this approach is sufficient to build software that
+can recompile large documents in real time: <tt>texlode</tt>, a
+browser-based book authoring tool with output identical to standard
+LuaLaTeX. Benchmarks show that per-paragraph recompilation achieves
+O(1) latency, constant regardless of document size, whereas
+Typst&#x2019;s [3] incremental compilation scales linearly (O(n)).</p>
+<p>The tradeoff is temporary inconsistency: pages the user is not viewing
+may lag until a background compile converges, the same pattern word
+processors have used for decades.</p>
+
+<p><b>References</b>:</p>
+<ol class="tugbbl">
+<li class="tugbbl">F. Bour. TeXpresso: Live rendering and error reporting for LaTeX. <a href="https://github.com/let-def/texpresso">github.com/let-def/texpresso</a></li>
+<li class="tugbbl">S.K. Card, T.P. Moran, A. Newell. The Psychology of Human-Computer Interaction. Lawrence Erlbaum Associates, 1983.</li>
+<li class="tugbbl">M. Haug. Fast typesetting with incremental compilation. Master&#x2019;s thesis, Technische Universit&#x00E4;t Berlin, 2022. <a href="https://web.archive.org/web/20240104120223/https://www.user.tu-berlin.de/mhaug/fast-typesetting-incremental-compilation.pdf">web.archive.org/web/20240104120223/https://www.user.tu-berlin.de/mhaug/fast-typesetting-incremental-compilation.pdf</a></li>
+<li class="tugbbl">D.E. Knuth, M.F. Plass. Breaking paragraphs into lines. Software&#x2014;Practice and Experience, 11(11):1119&#x2013;1184, 1981.</li>
+<li class="tugbbl">C. Lode. How to Publish Your Book with LaTeX. LODE Publishing, 2026. <a href="https://www.lodepublishing.com/book/latex-book-publishing-in-2026/">www.lodepublishing.com/book/latex-book-publishing-in-2026/</a></li>
+<li class="tugbbl">R. Schlicht. The microtype package: Subliminal refinements towards typographical perfection, 2024. <a href="https://ctan.org/pkg/microtype">ctan.org/pkg/microtype</a></li>
+<li class="tugbbl">SwiftLaTeX. SwiftLaTeX, the visual LaTeX editor. <a href="https://github.com/SwiftLaTeX/SwiftLaTeX">github.com/SwiftLaTeX/SwiftLaTeX</a></li>
+<li class="tugbbl">TeXlyre. BusyTeX: TeX Live compiled to WebAssembly, 2026. <a href="https://github.com/TeXlyre/texlyre-busytex">github.com/TeXlyre/texlyre-busytex</a></li>
+</ol>
+
+
+<p id="cite"><b>Cite this article (BibTeX)</b>: <small><pre>
+@preamble{"\input tugboat.def"}
+@article{Lode:TB47-2:263,
+  author =         "Clemens Lode",
+  title =          "Real-time {Lua\TeX}: Recompiling large documents in 1ms",
+  journal =        "TUGboat",
+  volume =         "47",
+  number =         "2",
+  pages =          "263-266",
+  year =           "2026",
+  issue =          "146",
+  DOI =            "10.47397/tb/47-2/tb146lode-realtime",
+  URL =            "https://tug.org/TUGboat/tb47-2/tb146lode-realtime.pdf",
+  ORCID-numbers = "Clemens Lode/0009-0001-2324-4791",
+  journal-URL =    "https://tug.org/TUGboat/",
+  ISSN =           "0896-3207",
+}
+
+</pre>
+</small>
+<hr><small><a href="/TUGboat/">TUGboat</a> 47:2, 2026 (<a href="/TUGboat/tb47-2/">issue 146</a>)
+&nbsp; [generated 2026-08-31]
+</small><br><!--#include virtual="/footer.html"-->

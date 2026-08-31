@@ -1,0 +1,53 @@
+\begin{thebibliography}{1}
+
+\bibitem{braams1994-classes-packages}
+J.~Braams.
+\newblock {Document Classes and Packages for \LaTeXe}.
+\newblock \emph{TUGboat} 15(3):255--262, 1994.
+\newblock \url{https://tug.org/TUGboat/tb15-3/tb44braams.pdf}
+
+\bibitem{l3team1999-classdesign}
+D.~Carlisle, F.~Mittelbach, C.~Rowley.
+\newblock {New~Interfaces for \LaTeX{} Class Design}, 1999.
+\newblock The \LaTeX{} Project, TUG99 slides.
+\newblock
+  \url{https://latex-project.org/publications/1999-l3team-TUG-l3-interfaces.pdf}
+
+\bibitem{fischer-2021-tagpdf}
+U.~Fischer.
+\newblock {On the road to Tagged PDF: About StructElem, Marked Content, PDF/A
+  and Squeezed B{\"a}rs}.
+\newblock \emph{TUGboat} 42(2):170--173, 2021.
+\newblock
+  \url{https://latex-project.org/publications/2021-UFi-TUB-tb131fischer-tagpdf.pdf}
+
+\bibitem{latex-standard-classes}
+The \LaTeX{} Project.
+\newblock \emph{{Standard Document Classes for \LaTeX{} version 2e}}, 2025.
+\newblock \url{https://latex-project.org/help/documentation/classes.pdf}
+
+\bibitem{ltnews}
+The \LaTeX{} Project.
+\newblock \emph{{\LaTeX{} News, Issues 1--43}}, 2026.
+\newblock \url{https://latex-project.org/news/latex2e-news/ltnews.pdf}
+
+\bibitem{latex-lab-sec-template}
+The \LaTeX{} Project.
+\newblock \emph{{Reimplementation of \LaTeXe{}’s heading commands using
+  templates}}, 2026.
+\newblock \url{https://texdoc.org/serve/latex-lab-sec-template/0}
+
+\bibitem{fmi-fischer-carlisle-wright-2024-doceng24}
+F.~Mittelbach, U.~Fischer, et~al.
+\newblock {Automatically producing accessible and reusable PDFs with \LaTeX{}}.
+\newblock In~\emph{Proceedings of DocEng 2024}, pp.~1--4, 2024.
+\newblock \url{https://doi.org/10.1145/3685650.3685670}
+
+\bibitem{fmi-rowley2020-blueprint}
+F.~Mittelbach, C.~Rowley.
+\newblock {\LaTeX{} Tagged PDF---A blueprint for a large project}, 2020.
+\newblock \TUB\ 41(3):292--298.
+\newblock
+  \url{https://latex-project.org/publications/2020-FMi-TUB-tb129mitt-tagpdf.pdf}
+
+\end{thebibliography}

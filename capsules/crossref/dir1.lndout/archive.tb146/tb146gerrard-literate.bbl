@@ -1,0 +1,122 @@
+\begin{thebibliography}{10}
+
+\bibitem{demarneffe-report}
+P.A.~de~Marneffe.
+\newblock {Holon Programming: A~Survey}.
+\newblock Technical report, Universit\'e de~Li{\`e}ge, Dec.~1973.
+\newblock \url{https://github.com/holon-scribe/holon-programming}
+
+\bibitem{ch23:fuchs-interview}
+D.R.~Fuchs.
+\newblock Interview.
+\newblock In~Gerrard [3], ch.~23, pp.~235--245.
+
+\bibitem{gerrard2026preliterate}
+M.~Gerrard, ed.
+\newblock \emph{Preliterate Programming: Writings \& Interviews}.
+\newblock {\TeX{}} Users Group, 2026.
+\newblock \url{https://tug.org/prelit}
+
+\bibitem{hoekwater:holon:quote}
+T.~Hoekwater.
+\newblock Literally programming.
+\newblock \emph{\acro{MAPS}}, 55:66--79, 2025.
+\newblock \url{https://ntg.nl/maps/55/09.pdf}
+
+\bibitem{knuth:1981:glue}
+D.E.~Knuth.
+\newblock Fixed-point glue setting: An example of {\WEB}.
+\newblock \emph{TUGboat} 3(1):10--11, 1982.
+\newblock \url{https://tug.org/TUGboat/tb03-1/tb05knuth.pdf}
+
+\bibitem{knuth:1983:web}
+D.E.~Knuth.
+\newblock The {\WEB} system of structured documentation.
+\newblock Technical Report \acro{STAN-CS}-83-980, Stanford University Computer
+  Science Dept., Sept.~1983.
+\newblock \url{http://i.stanford.edu/TR/CS-TR-83-980.html}
+
+\bibitem{knuth:texprogram}
+D.E.~Knuth.
+\newblock \emph{Computers \& Typesetting, Vol.~B: {\TeX}: The Program}.
+\newblock Addison-Wesley, 1986.
+
+\bibitem{knuth1987mathwriting}
+D.E.~Knuth.
+\newblock Mathematical writing (\acro{CS}209): Literate programming.
+\newblock Stanford University class recording, 1987.
+\newblock \\Referenced discussions at 8:05 and 57:27.
+\newblock \newline \url{https://youtube.com/watch?v=JxVQFQlfS7w}
+
+\bibitem{knuth2019brno}
+D.E.~Knuth.
+\newblock Question and answer session: {Boundless Interests}.
+\newblock Transcript, 2019.
+\newblock
+  \url{https://fi.muni.cz/events/2019-10-09-donald-knuth-question-answer-session-boundless-interests-transcript-brno.html.en}
+
+\bibitem{ch14:knuth-letter}
+D.E.~Knuth.
+\newblock Letter to {Pierre-Arnoul de~Marneffe}.
+\newblock In~Gerrard [3], ch.~14, pp.~141--142.
+
+\bibitem{knuth1987book}
+D.E.~Knuth, T.~Larrabee, P.M.~Roberts.
+\newblock \emph{Mathematical Writing}.
+\newblock Mathematical Association of America, 1989.
+
+\bibitem{naur:gier:algol}
+P.~Naur.
+\newblock Compiler documentation for the \acro{GIER} \acro{ALGOL} translator,
+  1962.
+\newblock 39~pp. Computer History Museum.
+\newblock \newline
+  \url{https://www.computerhistory.org/collections/catalog/102724599/}
+
+\bibitem{nelson:inform:repo}
+G.~Nelson.
+\newblock Inform~7.
+\newblock GitHub repository.
+\newblock \url{https://github.com/ganelson/inform}
+
+\bibitem{nelson:inweb:repo}
+G.~Nelson.
+\newblock Inweb.
+\newblock GitHub repository.
+\newblock \url{https://github.com/ganelson/inweb}
+
+\bibitem{nelson2026reply}
+G.~Nelson, Mar.~2026.
+\newblock Personal communication.
+
+\bibitem{ramsey:1994:literate}
+N.~Ramsey.
+\newblock Literate programming simplified.
+\newblock \emph{\acro{IEEE}~Software}, 11(5):97--105, 1994.
+\newblock \url{https://www.cs.tufts.edu/~nr/pubs/lpsimp.pdf}
+
+\bibitem{cameo:1964}
+S.A.~Richmond, J.L.~Maury, P.H.~McClain.
+\newblock \acro{CAMEO}: {Computer-Independent Abstract Machine-Language Encoder
+  and Operating-System}.
+\newblock Technical report, \acro{NASA} Goddard Space Flight Center, Aug.~1964.
+\newblock (The ``Mystic'' language is the singled-out stinker.).
+\newblock
+  \url{https://ntrs.nasa.gov/api/citations/19640023708/downloads/19640023708.pdf}
+
+\bibitem{snowdon1973pearl}
+R.A.~Snowdon.
+\newblock \acro{PEARL}: An interactive system for the preparation and
+  validation of structured programs.
+\newblock In~\emph{Program Test Methods}, W.~Hetzel, ed. Prentice-Hall, 1973.
+\newblock \url{https://dl.acm.org/doi/10.1145/953357.953358}
+
+\bibitem{torresquevedo1914}
+L.~Torres~Quevedo.
+\newblock Ensayos sobre autom\'atica.
+\newblock \emph{Revista de la Real Academia de Ciencias Exactas, F\'isicas y
+  Naturales}, 12:408--412, 1914.
+\newblock
+  \url{https://archive.org/details/revistadelareala12191314real/page/408}
+
+\end{thebibliography}

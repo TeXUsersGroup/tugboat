@@ -1,0 +1,24 @@
+  The Social Sciences and Humanities Research Council of Canada
+  (\acro{SSHRC}) requires applications to its Insight Grants program
+  to be split into a multitude of plain-text and \acro{PDF} documents.
+  This makes it challenging for teams of grant seekers to maintain
+  consistency in formatting and cross-referencing, particularly when
+  using word processors.  This article describes the development and
+  use of a \LaTeX\ class for Insight Grants proposals,
+  \tbcodebreak{sshrc-insight}.
+  
+  In addition to formatting the proposal according
+  to \acro{SSHRC}'s specifications, the class allows authors to easily
+  switch between producing a single, unified \acro{PDF} for the
+  writing and internal review phase, and multiple \acro{PDF}s for
+  final submission.  Additional features include stable citation
+  numbering across compilation modes, automatic character counts for
+  the plain-text parts, and French localization.
+  
+  Beyond providing an
+  overview of the class and its intended workflow, this article
+  describes the solutions to various technical challenges that were
+  required to implement its features.  The aim is thus not only to
+  introduce a practical tool for grant writers, but also to provide
+  guidance to developers of classes for similar fragmented,
+  portal-driven document workflows.

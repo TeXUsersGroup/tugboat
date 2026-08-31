@@ -1,0 +1,118 @@
+\providecommand\ctanbibpkgname[1]{\tbcode{#1}}
+\begin{thebibliography}{10}
+
+\bibitem{acker2021fast}
+S.~Acker, M.K.~McGinn.
+\newblock Fast professors, research funding, and the figured worlds of
+  mid-career {Ontario} academics.
+\newblock \emph{Brock Education Journal}, 30(2):79--98, July~2021.
+\newblock \url{https://doi.org/10.26522/brocked.v30i2.864}
+
+\bibitem{barrington-leigh2015composing}
+C.P.~Barrington-Leigh.
+\newblock Composing and typesetting a funding proposal using {\LyX}
+  (\acro{SSHRC}{\slash}\acro{NSERC}{\slash}\acro{CIHR}).
+\newblock \emph{The Red Pen}, 2015.
+\newblock
+  \url{https://cpbl.wordpress.com/2015/09/24/composing-and-typesetting-a-funding-proposal-using-lyx-sshrc-nserc-cihr/}
+
+\bibitem{cozzi2018public}
+M.~Cozzi.
+\newblock Public funding of research in the social sciences: Are {Canadian}
+  academics discouraged?
+\newblock Department Discussion Paper DDP1809, Department of Economics,
+  University of Victoria, Oct.~2018.
+\newblock
+  \url{https://www.uvic.ca/socialsciences/economics/_assets/docs/discussion/ddp1809.pdf}
+
+\bibitem{subfiles}
+F.~Garcia, G.~Salzer.
+\newblock \ctanbibpkgname{subfiles}{\Dash}individual typesetting of subfiles of
+  a ``main'' document, version 2.2, 2020-11-14.
+\newblock \url{https://ctan.org/pkg/subfiles}
+
+\bibitem{guenther1987conference}
+D.~Guenther, ed.
+\newblock \emph{Conference Proceedings: \TeX\ {Users} {Group} Eighth Annual
+  Meeting, {Seattle}, {August} 24--26, 1987}, 1987.
+\newblock In \emph{{\TeX{}}{\-}niques, Publications for the {\TeX{}} Community}
+  5.
+\newblock \url{https://tug.org/texniques/tn05/tn05complete.pdf}
+
+\bibitem{kime2025biblatex}
+P.~Kime, M.~Wemheuer, P.~Lehman.
+\newblock \emph{The~\tbcode{\textsl{biblatex}} Package: Programmable
+  Bibliographies and Citations}, July~2025.
+\newblock Version 3.21.
+\newblock \url{https://ctan.org/pkg/biblatex}
+
+\bibitem{mcginn2019dear}
+M.K.~McGinn, S.~Acker, et~al.
+\newblock Dear \acro{SSHRC}, what do you want? {An} epistolary narrative of
+  expertise, identity, and time in grant writing.
+\newblock \emph{\foreignlanguage{ngerman}{Forum Qualitative Sozialforschung}~/
+  Forum: Qualitative Social Research}, 20(1), Jan.~2019.
+\newblock \url{https://doi.org/10.17169/fqs-20.1.3128}
+
+\bibitem{heria}
+T.~Miller.
+\newblock \ctanbibpkgname{heria}{\Dash}a {\LaTeX} class for {Horizon} {Europe}
+  \acro{RIA} and \acro{IA} grant proposals, version 4.0.1.0, 2025-08-16.
+\newblock \url{https://ctan.org/pkg/heria}
+
+\bibitem{sshrc-insight}
+T.~Miller.
+\newblock \ctanbibpkgname{sshrc-insight}{\Dash}a {\LaTeX} class for
+  \acro{SSHRC} {Insight} {Grant} proposals, version 2025.0.1, 2026-07-17.
+\newblock \url{https://ctan.org/pkg/sshrc-insight}
+
+\bibitem{Miller:2024:PHE}
+T.~Miller.
+\newblock Preparing {Horizon Europe} proposals in {\LaTeX} with
+  \ctanbibpkgname{heria}.
+\newblock \emph{TUGboat} 45(1):59--64, 2024.
+\newblock \url{https://doi.org/10.47397/tb/45-1/tb139miller-horizon}
+
+\bibitem{milligan2024policy}
+I.~Milligan.
+\newblock From policy to practice: The evolution of \acro{SSHRC} application
+  processes, 1979–present.
+\newblock \emph{Historical Studies in Education~/
+  \foreignlanguage{french}{Revue d'histoire de l'éducation}}, 36(1):66--86,
+  Spring~2024.
+\newblock \url{https://doi.org/10.32316/hse-rhe.2024.5227}
+
+\bibitem{Mittelbach:2018:RCP}
+F.~Mittelbach.
+\newblock A rollback concept for packages and classes.
+\newblock \emph{TUGboat} 39(2):107--112, 2018.
+\newblock \url{https://tug.org/TUGboat/tb39-2/tb122mitt-rollback.pdf}
+
+\bibitem{translations}
+C.~Niederberger.
+\newblock \ctanbibpkgname{translations}{\Dash}internationalisation of
+  {\LaTeX2e}\ packages, version 1.12, 2022-02-05.
+\newblock \url{https://ctan.org/pkg/translations}
+
+\bibitem{Thiele:TB17-4-388}
+C.~Thiele.
+\newblock {{\TeX} and the Humanities}.
+\newblock \emph{TUGboat}~17(4):388--393, Dec.~1996.
+\newblock \newline \url{https://tug.org/TUGboat/tb17-4/tb53thie.pdf}
+
+\bibitem{biblatex-readbbl}
+H.~Voß.
+\newblock \ctanbibpkgname{biblatex-readbbl}{\Dash}read a \tbcode{.bbl} file
+  created by {Biber}, version 0.01, 2022-01-09.
+\newblock \url{https://ctan.org/pkg/biblatex-readbbl}
+
+\bibitem{walden2009christina}
+D.~Walden, C.~Thiele.
+\newblock Christina {Thiele}.
+\newblock In~\emph{{\TeX}\ People: Interviews from the World of {\TeX}},
+  K.~Berry, D.~Walden, eds., pp.~18--24. {\TeX} Users Group, Portland, OR, USA,
+  2009.
+\newblock \url{https://tug.org/interviews/thiele.html},\gobble.
+\newblock \url{https://tug.org/store/texpeople}
+
+\end{thebibliography}

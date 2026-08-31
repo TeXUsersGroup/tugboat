@@ -1,0 +1,10 @@
+  Donald Knuth's \WEB\ system of literate programming spawned many other
+  \WEB-like frameworks that worked, well, mostly like \WEB. But one of
+  \WEB's ancestors did its tangling, then called synthesizing, differently.
+  Pierre-Arnoul de~Marneffe's language of ``holons'' envisioned a system
+  for writing structured programs that included sophisticated compilation
+  techniques and a notion of scope
+  for the code chunks.
+  We glance at a few of these long-dormant ideas from \WEB's
+  predecessor and note their reappearance in the literate programming
+  tool Inweb.

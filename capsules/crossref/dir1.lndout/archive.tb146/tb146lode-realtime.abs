@@ -1,0 +1,21 @@
+This paper shows that pixel-perfect \LaTeX\ output and real-time editing
+are not mutually exclusive. Line breaking is paragraph-local; page
+breaking is global but not perceptually immediate and therefore need not
+block the editing loop.
+
+By extracting display lists directly from \LuaTeX's node structures
+(bypassing \PDF\ generation), a single paragraph can be recompiled and
+its display list delivered in approx.\ 1\,ms, using vanilla \TeX\ Live
+with no engine modifications and full
+\texttt{microtype} [6] support.
+
+We demonstrate that this approach is sufficient to build software that
+can recompile large documents in real time: \texttt{texlode}, a
+browser-based book authoring tool with output identical to standard
+\LuaLaTeX. Benchmarks show that per-paragraph recompilation achieves
+O(1) latency, constant regardless of document size, whereas
+Typst's~[3] incremental compilation scales linearly (O(n)).
+
+The tradeoff is temporary inconsistency: pages the user is not viewing
+may lag until a background compile converges, the same pattern word
+processors have used for decades.
