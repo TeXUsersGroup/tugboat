@@ -168,7 +168,10 @@ sub compare {
 # 
 sub equal_fields {
   my ($a,$b) = @_;
-  #
+  
+  # Jim Hefferon titles (tb147reviews-lode) can't be feasibly compared.
+  return 1 if $b =~ /\\bookt.*\\booka/;
+
   $a =~ s/~|\\(newline|CONNECT|,)|\\\\/ /g;
   $a = &normalize_whitespace ($a);
   #
@@ -369,6 +372,7 @@ sub read_confile {
       if ($has_author) {
         ($author,$title,$pageno) = $cont =~ m/\s*(.*?)\\\\(.*?)\\\\(.*)</s;
         &assert_nonempty ($author, "author (in: $cont)");
+        $author =~ s/[{}]+//g;
         $author = &normalize_whitespace ($author); # for internal whitespace
         &ddebug ("    author = `$author'");
       } else {
@@ -395,6 +399,8 @@ sub read_confile {
       } elsif (exists $ret{$key}) {
         die "key (pageno) $key already seen: $ret{$key} vs. $cont";
       } elsif ($secname eq "Abstracts") {
+        (my $ident = $key) =~ s/.*\{(.*)\}/$1/; # \getfirstpage{komo}->komo
+        &debug ("skipping abstract: $ident ($title)");
         ; # skip, too hard to match the combined abstracts entry
       } else {
         my %cont;
@@ -458,11 +464,16 @@ sub read_artfile {
   # Hopefully the first \title command will be the one we want.
   (my $title_in = $str) =~ s/.*?\\title\b\s*//s;
   my ($title) = Text::Balanced::extract_bracketed ($title_in, "{}");
-  if (! $title) {
-    warn "$file: failed to extract \\title\n";
-    $title = " unknown ";
+  if ($title) {
+    $title = substr ($title, 1, -1); # remove outer braces (not all braces)
+  } else {
+    if ($title_in =~ /^(.*?)\\endtitle/s) { # plain tugboat
+      $title = $1;
+    } else {
+      warn "$file: failed to extract \\title\n";
+      $title = "title-not-found";
+    }
   }
-  $title = substr ($title, 1, -1); # remove outer braces
   $ret{"title"} = &normalize_whitespace ($title);
   &ddebug (" got title: $ret{title}");
   
@@ -472,14 +483,21 @@ sub read_artfile {
   (my $author_in = $str) =~ s/\\begin\b\s*\{document\}.*$//s;
   while ($author_in =~ s/.*?\\author\b\s*//s) {
     my ($author,$rest) = Text::Balanced::extract_bracketed ($author_in, "{}");
-    $author =~ s/\\thanks{.*}//s;
+    if (! defined $author) {
+      if ($author_in =~ /\\endauthor/) { # plain tugboat
+        ($author,$rest) = split (/\s*\\endauthor\s*/, $author_in, 2);
+      } else {
+        $author = "author-not-found";
+        last;
+      }
+    }
+    $author =~ s/\\thanks\{.*\}//s;
     $author =~ s/[{}]+//g;
-    #$author = substr ($author, 1, -1); # remove outer braces
     push (@authors, &normalize_whitespace ($author));
     $author_in = $rest; # keep going forward
   }
   
-  # we separate multiple authors with plain commas nowadays, no matter
+  # we always separate multiple authors with commas nowadays, no matter
   # how many there are.
   $ret{"author"} = join (", ", @authors);
   &ddebug (" got authors: $ret{author}");

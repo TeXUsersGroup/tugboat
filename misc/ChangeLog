@@ -1,3 +1,10 @@
+2026-09-07  Karl Berry  <karl@freefriends.org>
+
+	* check-auth-title-tub (read_artfile): crudely handle
+	tugboat-plain articles.
+	(equal_fields): ignore comparisons involving \bookt.*\booka,
+	for Jim Hefferon titles.
+
 2026-08-31  Karl Berry  <karl@tug.org>
 
 	* nonascii-tub: new script.
