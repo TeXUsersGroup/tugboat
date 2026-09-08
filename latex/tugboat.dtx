@@ -1458,6 +1458,7 @@
 % \texttt{hyperref}, make the definition \cs{AtBeginDocument}. In the
 % end, \cs{tbsurl}\tubbraced{foo} produces \texttt{https://foo} and
 % \cs{tbhurl}\tubbraced{foo}  produces \texttt{http://foo}.
+%
 \AtBeginDocument{%
 \ifx\hyper@normalise\undefined
   \ifx\url\undefined      % define our own simplistic non-hyperref \url 
@@ -2861,6 +2862,10 @@
 \def\tubruninglue{-1em plus-2\fontdimen3\font minus-\fontdimen4\font}
 \def\tubruninsecfmt{\normalsize\bf\tubsechook}
 %
+% We make beforeskip+afterskip = 1 normal linespace if there's no
+% stretching or shrinking of the glue, to help retain a small chance of
+% keeping baselines aligned.
+% 
 \if@numbersec
   \def\section{\TB@startsection{%
     {section}                 % name of counter
@@ -3958,7 +3963,6 @@
     \ifnum\volno>0         % and if being run for production ...  
       \iftubfinaloption    % and if [final], even if pageno>900
        \vbox to 0pt{% don't impact normal layout
-         %\tubnormalizehyphen
          \edef\thedoi{% but make url invalid if >900
                       \ifnum\count0>900 example.org%
                                   \else doi.org\fi
@@ -4445,14 +4449,14 @@
 %    \begin{macrocode}
 \newskip\aboveauthorskip   \aboveauthorskip=18\p@ \@plus4\p@
 \newskip\belowauthorskip   \belowauthorskip=\aboveauthorskip
-\newskip\belowabstractskip \belowabstractskip=14\p@ \@plus3\p@ \@minus2\p@
+\newskip\belowabstractskip \belowabstractskip=12\p@ \@plus2\p@ \@minus2\p@
 %    \end{macrocode}
 % \end{macro}
 % \end{macro}
 % \end{macro}
 %
 % \begin{macro}{\@maketitle}
-% The body of \cs{maketitle}
+% The body of \cs{maketitle} (for proceedings).
 %    \begin{macrocode}
 \def\@maketitle{%
    {\parskip\z@

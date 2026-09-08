@@ -5,6 +5,8 @@ ltugboat.cls:
 - define \AI as \acro{AI}.
 - define \tubnewline as \texorpdfstring{\newline}{ }.
 - change \abovecaptionskip and \floatsep by +- (respectively) 1pt.
+- reduce \belowabstractskip to 12pt so there's a better chance of a first
+  column coming out even. 
 
 -----------------
 2.38 (2026-06-18)
