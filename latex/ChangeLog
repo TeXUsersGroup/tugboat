@@ -1,5 +1,10 @@
 2026-09-08  Karl Berry  <karl@freefriends.org>
 
+	* tugboat.dtx: (\tbsurl@): clear \everymath to avoid infloop on -.
+	https://github.com/gpoore/fvextra/issues/39
+	See also:
+	https://github.com/gpoore/fvextra/issues/39
+
 	* tugboat.dtx (\belowabstractskip): reduce to 12pt (one linespace,
 	plus/minus) so there's a better chance of a first column coming
 	out even.

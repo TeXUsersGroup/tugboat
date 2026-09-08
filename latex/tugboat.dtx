@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2026-08-24 v2.38
+                   [2026-09-08 v2.38
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -1508,6 +1508,17 @@
 \def\tbsurl@#1  % https
  {
   \group_begin:
+   %
+   % \url uses math mode for typesetting; fvextra sets \everymath to
+   % play with the catcode of -, among others, which ends up causing an
+   % infinite loop when we try to typeset the DOI url.
+   % https://github.com/gpoore/fvextra/issues/39
+   %
+   % There's no sensible way to use \everymath with \url, so clear it
+   % (suggested to the url.sty author). url.sty also doesn't handle an
+   % active hyphen in general: https://tex.stackexchange.com/questions/114704
+   \everymath = {}
+   %
    % URL encoding for when pdf management (\DocumentMetadata) is active,
    % else a % in the input url ends up as a %25 in the active link.
    % From Ulrike, 4apr26.
@@ -1522,7 +1533,8 @@
    }% end pdf management
    %
    \str_set:Nn \l_tmpa_str {#1}
-   % this checks if http:// is contained anywhere within the argument url,
+   %
+   % This checks if http:// is contained anywhere within the argument url,
    % but that was not good enough, since http:// might occur inside the url,
    % e.g., https://web.archive.org/web/20090809184749/http://www.eco-log.de/
    %   \str_if_in:NnTF \l_tmpa_str {http://}
