@@ -1,0 +1,19 @@
+% $Id$
+% Public domain. Test tagging and \makevmeta and \tubmakevmeta.
+
+% Before the sept2026 ltugboat release, \makevmeta was not defined when
+% tagging was enabled; needed for tb146prescott-book-accessibility.
+\DocumentMetadata{tagging=on}
+
+\documentclass{ltugboat}
+
+\begin{document}
+
+% \tubmakevmeta works outside verbatim env.
+{\tubmakevmeta \verb|!<foo>|}
+
+% \makevmeta as environment arg.
+\begin{verbatim}[\makevmeta]
+!<bar>
+\end{verbatim}
+\end{document}

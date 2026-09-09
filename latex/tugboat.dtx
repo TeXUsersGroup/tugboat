@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2026-09-08 v2.38
+                   [2026-09-09 v2.38
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -3481,9 +3481,10 @@
 % before the verbatim block, we don't want that preceding paragraph to
 % be set with \cs{small}'s line spacing.
 %
-% (\cs{obeylines} added to prevent the \cs{futurelet} from propagating
+% \cs{obeylines} added to prevent the \cs{futurelet} from propagating
 % into the body of the verbatim, thus causing lines that start with
-% odd characters (like |#| or even |\|) to behave peculiarly.)
+% odd characters (like |#| or even |\|) to behave peculiarly.
+%
 %    \begin{macrocode}
 \def\verbatim{\par\obeylines
   \futurelet\reserved@a\@switch@sqbverbatim}
@@ -3500,26 +3501,11 @@
 % define the functions we can execute in the optional argument here.
 %
 % The command \cs{ruled} tells us that there should be rules above and
-% below the verbatim block.
+% below the verbatim block. This won't work with tagging, but we don't
+% expect that's ever desired nowadays.
 %
 %    \begin{macrocode}
   \def\ruled{\let\if@ruled\iftrue}%
-%    \end{macrocode}
-%
-% The command \cs{makevmeta} says to make !<...> do \meta{...}.
-%
-%    \begin{macrocode}
-  \def\makevmeta{\makeescape\! \let\<\tubverb@meta \tubverb@clearliglist}
-  \def\tubverb@meta##1>{\meta{##1}}
-%    \end{macrocode}
-%
-% The default verbatim defines `'<>,- as active characters to
-% stop ligatures; remove <> from the list so we get normal characters.
-% Just hope that the CM <> ligatures aren't used.
-%    \begin{macrocode}
-  \def\tubverb@clearliglist{%
-    \def\verbatim@nolig@list{\do\`\do\,\do\'\do\-}%
-  }
 %    \end{macrocode}
 %
 % Then we execute the arguments we've got, and relay to a (hacked)
@@ -3536,7 +3522,7 @@
 \def\@verbatim{%
 %    \end{macrocode}
 %
-% First, we deal with \cs{ruled}:
+% Deal with \cs{ruled}:
 %
 %    \begin{macrocode}
     \if@ruled\trivlist\item\hrule\kern5\p@\nobreak\fi
@@ -3579,6 +3565,33 @@
 \let\if@ruled\iffalse
 %    \end{macrocode}
 %
+% As another option for verbatim, the command \cs{makevmeta} says to
+% make !<...> do \meta{...}. We define it outside verbatim so that it
+% will work with tagging, as \cs{tubmakevmeta} to avoid namespace
+% pollution. See the test file |tubvmetatest.tex|. Ideas from Frank
+% Mittelbach and Tim Prescott.
+%
+%    \begin{macrocode}
+\def\tubmakevmeta{\makeescape\! \let\<\tubverb@meta \tubverb@clearliglist}
+\def\tubverb@meta#1>{\meta{#1}}
+%    \end{macrocode}
+%
+% The default verbatim defines `'<>,- as active characters to
+% stop ligatures; remove <> from the list so we get normal characters.
+% Just hope that the CM <> ligatures aren't actually desired.
+%
+%    \begin{macrocode}
+\def\tubverb@clearliglist{%
+  \def\verbatim@nolig@list{\do\`\do\,\do\'\do\-}%
+}
+%    \end{macrocode}
+%
+% Then, use a hook to define \cs{makevmeta} as \cs{tubmakevmeta}.
+%
+%    \begin{macrocode}
+\AddToHook{env/verbatim/begin}{\let\makevmeta\tubmakevmeta}
+%    \end{macrocode}
+% 
 % Finally, if |microtype| is loaded, we want it to be deactivated in
 % verbatim blocks.  It often manipulates a leading |\| rather too much,
 % thus messing with the visible fixed-width alignment.

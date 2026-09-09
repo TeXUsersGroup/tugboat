@@ -2,6 +2,8 @@ $Id$
 This file records noteworthy changes.  This file is public domain.
 
 ltugboat.cls:
+- the \makevmeta option to ltugboat's {verbatim} environment now works
+  with tagging.
 - define \AI as \acro{AI}.
 - define \tubnewline as \texorpdfstring{\newline}{ }.
 - change \abovecaptionskip and \floatsep by +- (respectively) 1pt.
@@ -11,7 +13,7 @@ ltugboat.cls:
 -----------------
 2.38 (2026-06-18)
 ltugboat.cls:
-- \Thanh actualtext apparently has to use literal UTF-8.
+- \Thanh actualtext uses literal UTF-8.
 
 -----------------
 2.37 (2026-06-14)

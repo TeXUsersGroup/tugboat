@@ -52,7 +52,7 @@ check ck: ltugboat.cls
 	$(pdflatex) tuburltexttest.tex
 	$(pdflatex) tubutftest.tex
 	$(pdflatex) tubvariotest.tex
-	$(pdflatex) tubverbtest.tex
+	$(pdflatex) tubvmetatest.tex
 	! $(pdflatex) tubxtx.tex # error expected
 
 check-oddeven: ltugboat.cls

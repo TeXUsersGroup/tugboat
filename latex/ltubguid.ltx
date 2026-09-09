@@ -1,7 +1,7 @@
 % $Id$
 % ltubguid.ltx - documentation for ltugboat classes.
 % 
-% Copyright 1994-2025 TeX Users Group.
+% Copyright 1994-2026 TeX Users Group.
 % 
 % This file is part of the tugboat package.
 % 
@@ -635,6 +635,10 @@ The !<duration> is long ...
 \end{verbatim}
   The \verb|!| character is made a general escape character by
   \cs{makevmeta}, but \verb|<>| are not made grouping characters.
+  
+  Outside of a verbatim environment, the equivalent \cs{tubmakevmeta}
+  can be used, although this is rarely useful, as simply \cs{meta}
+  usually suffices.
 
 \item More generally, one of the \cs{make*} commands,\footnote{\cs{makeescape},
   \cs{makebgroup}, \dots, \cs{makecomment}; used, for example, as
@@ -645,8 +649,9 @@ The !<duration> is long ...
 \item The command \cs{ruled}, also available only in
   \envname{verbatim}'s optional argument, and specifies that a
   column-wide rule should be drawn before and after the verbatim
-  text. (This is not the recommended style in general, but it's
-  available for when it helps.)
+  text. This is not the recommended style in general, but it's
+  available in case it it helps. It's not available when tagging is
+  enabled.
 
 \end{itemize}
 Two caveats about these optional arguments:

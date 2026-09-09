@@ -1,3 +1,14 @@
+2026-09-09  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\tubverb@meta, \tubverb@clearliglist, \tubmakevmeta):
+	define globally so that they work with tagging; needed for
+	tb146prescott-book-accessibility.
+	(\makevmeta): \let to \tubmakevmeta in an env/verbatim/begin hook.
+	* tubvmetatest.tex: test it, renaming tubverbtest.tex
+	* Makefile (check): execute the test.
+	* NEWS: mention this.
+	* ltubguid.ltx (\tubmakevmeta): mention this.
+
 2026-09-08  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx: (\tbsurl@): clear \everymath to avoid infloop on -.
