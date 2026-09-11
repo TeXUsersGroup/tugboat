@@ -1,3 +1,7 @@
+2026-09-10  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\TBDebug, \TBLoggingall): capitals for consistency.
+
 2026-09-09  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.dtx (\tubverb@meta, \tubverb@clearliglist, \tubmakevmeta):
@@ -7,7 +11,8 @@
 	* tubvmetatest.tex: test it, renaming tubverbtest.tex
 	* Makefile (check): execute the test.
 	* NEWS: mention this.
-	* ltubguid.ltx (\tubmakevmeta): mention this.
+	* ltubguid.ltx (\tubmakevmeta): mention this, and that \ruled
+	does not work with tagging.
 
 2026-09-08  Karl Berry  <karl@freefriends.org>
 

@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2026-09-09 v2.38
+                   [2026-09-10 v2.38
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -303,25 +303,24 @@
 %    \end{macrocode}
 %
 % Errors/warnings/information messages\Dash if we're using
-% \LaTeXe{} we can use the \cs{Class*} commands. \cs{tbdebug} is
+% \LaTeXe{} we can use the \cs{Class*} commands. \cs{TBDebug} is
 % different from all the others, intended for temporary debugging
-% messages (hence the all-lowercase name); they're started with
-% \texttt{***} at the beginning of a line to make them stand out, and be
-% parsable, e.g.\ by \texttt{texfot}(1).
+% messages; its messages start with \texttt{***} at the beginning of a
+% line to make them stand out, and be parsable, e.g., by \texttt{texfot}(1).
 %
 %    \begin{macrocode}
 \def\TBError{\ClassError{\@tugclass}}
 \def\TBWarning{\ClassWarning{\@tugclass}}
 \def\TBWarningNL{\ClassWarningNoLine{\@tugclass}}
 \def\TBInfo{\ClassInfo{\@tugclass}}
-\def\tbdebug#1{\message{^^J*** #1}}
+\def\TBDebug#1{\message{^^J*** #1}}
 %    \end{macrocode}
 %
 % Unfortunately, \LaTeX's \cs{loggingall} does not turn off
-% tracingonline. And \texttt{microtype} outputs useless verbose
+% tracingonline. And \texttt{microtype} outputs many verbose
 % expansions to the terminal after \cs{loggingall}. So make our own:
 %    \begin{macrocode}
-\def\tbloggingall{\loggingall \tracingonline=0 }
+\def\TBLoggingall{\loggingall \tracingonline=0 }
 %    \end{macrocode}
 %
 % 

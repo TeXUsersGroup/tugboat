@@ -33,18 +33,20 @@ spell:
 	| sort -f -u
 
 check ck: ltugboat.cls
-	$(pdflatex) tubfirstcolfull.tex
-	$(pdflatex) tubreftest.tex
+	$(pdflatex) tubverbpar.tex
+x:
 	$(pdflatex) tubatest.tex
 	$(lualatex) -jobname cp-luancm '\let\fsp1 \input tubcplustest.tex'
 	$(pdflatex) -jobname cp-pdftex tubcplustest.tex
 	$(lualatex) -jobname cp-lualm tubcplustest.tex
 	$(pdflatex) tubdoi-final.tex
 	$(pdflatex) tubfigtest.tex
+	$(pdflatex) tubfirstcolfull.tex
 	$(pdflatex) tubhytest.tex
 	$(pdflatex) tubmetatest.tex
 	$(pdflatex) tubpageref.tex
 	$(pdflatex) tubptest.tex
+	$(pdflatex) tubreftest.tex
 	$(pdflatex) tubrfootest.tex
 	$(pdflatex) tubularray.tex
 	$(pdflatex) tuburllivetest.tex
