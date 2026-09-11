@@ -1,0 +1,29 @@
+% $Id$
+% Public domain. Test tagging and \makevmeta and \tubmakevmeta.
+
+% We want our normal {verbatim}[\small] to work with tagging.
+\DocumentMetadata{tagging=on}
+
+\documentclass{ltugboat}
+\begin{document}
+
+% Use \footnotesize instead of the more usual \small to make the
+% difference in interline spacing especially glaring.
+
+Before a \texttt{verbatim} with \cs{footnotesize} argument.
+Should be normal line spacing, not squeezed.
+\begin{verbatim}[\footnotesize]
+footnotesize verbatim.
+normal line spacing for this small size.
+\end{verbatim}
+Normal text again after verbatim. Again should have normal line spacing.
+
+Before another \texttt{verbatim} with empty argument.
+Should be normal line spacing, not squeezed.
+\begin{verbatim}[]
+footnotesize verbatim2.
+second verbatim line, full text size.
+\end{verbatim}
+Normal text again after verbatim2. Again should have normal line spacing.
+
+\end{document}

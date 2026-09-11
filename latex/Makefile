@@ -33,8 +33,6 @@ spell:
 	| sort -f -u
 
 check ck: ltugboat.cls
-	$(pdflatex) tubverbpar.tex
-x:
 	$(pdflatex) tubatest.tex
 	$(lualatex) -jobname cp-luancm '\let\fsp1 \input tubcplustest.tex'
 	$(pdflatex) -jobname cp-pdftex tubcplustest.tex
@@ -54,6 +52,7 @@ x:
 	$(pdflatex) tuburltexttest.tex
 	$(pdflatex) tubutftest.tex
 	$(pdflatex) tubvariotest.tex
+	$(pdflatex) tubverbpar.tex
 	$(pdflatex) tubvmetatest.tex
 	! $(pdflatex) tubxtx.tex # error expected
 

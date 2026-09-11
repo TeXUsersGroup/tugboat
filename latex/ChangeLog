@@ -1,5 +1,14 @@
 2026-09-10  Karl Berry  <karl@freefriends.org>
 
+	* tugboat.dtx (\verbatim): make initial \par conditional on the
+	LaTeX version, since 2026-11-01 LaTeX fixes the baselineskip
+	problem internally. Also use a hook so it works with tagging.
+	https://github.com/latex3/tagging-project/issues/1503
+	* tubverbpar.tex: new test file.
+	* Makefile (check): run it.
+
+2026-09-10  Karl Berry  <karl@freefriends.org>
+
 	* tugboat.dtx (\TBDebug, \TBLoggingall): capitals for consistency.
 
 2026-09-09  Karl Berry  <karl@freefriends.org>

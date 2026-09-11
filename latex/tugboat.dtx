@@ -3465,28 +3465,24 @@
 % original.)
 %
 % We start by saving various bits and bobs whose operation we're going
-% to subvert.
+% to subvert, then starting our \cs{def}\cs{verbatim}.
 %
 %    \begin{macrocode}
 %\let\@TB@verbatim\@verbatim
 \let\@TBverbatim\verbatim
 \let\@TBendverbatim\endverbatim
+%
+\def\verbatim{%
 %    \end{macrocode}
 %
-% Impose an optional argument on the environment.
-%
-% We start the macro with \cs{par} to avoid a common error: if the
-% optional argument is \cs{small}, and the document has no blank line
-% before the verbatim block, we don't want that preceding paragraph to
-% be set with \cs{small}'s line spacing.
-%
-% \cs{obeylines} added to prevent the \cs{futurelet} from propagating
+% This \cs{obeylines} prevents the \cs{futurelet} from propagating
 % into the body of the verbatim, thus causing lines that start with
 % odd characters (like |#| or even |\|) to behave peculiarly.
 %
 %    \begin{macrocode}
-\def\verbatim{\par\obeylines
-  \futurelet\reserved@a\@switch@sqbverbatim}
+  \obeylines
+  \futurelet\reserved@a\@switch@sqbverbatim
+}% end \def\verbatim
 %
 \def\@switch@sqbverbatim{\ifx\reserved@a[%]
   \expandafter\@sqbverbatim\else
@@ -3495,20 +3491,17 @@
 \def\@sqbverbatim[#1]{%
 %    \end{macrocode}
 %
-% The optional argument consists entirely of functions that modify the
-% appearance of the environment.  Following the |plain| style, we
-% define the functions we can execute in the optional argument here.
-%
-% The command \cs{ruled} tells us that there should be rules above and
-% below the verbatim block. This won't work with tagging, but we don't
-% expect that's ever desired nowadays.
+% The command \cs{ruled} is only defined inside the \texttt{verbatim}
+% optional argument. It specifies that there should be rules above and
+% below the verbatim block. This doesn't work with tagging, but we don't
+% expect that's ever desired nowadays; \cs{ruled} is rarely used.
 %
 %    \begin{macrocode}
   \def\ruled{\let\if@ruled\iftrue}%
 %    \end{macrocode}
 %
-% Then we execute the arguments we've got, and relay to a (hacked)
-% copy of the \LaTeX\ verbatim environment.
+% Execute the arguments we've got, and relay to a (hacked)
+% copy of the \LaTeX\ verbatim environment defined next.
 %
 %    \begin{macrocode}
   #1\@TBverbatim}
@@ -3591,6 +3584,25 @@
 \AddToHook{env/verbatim/begin}{\let\makevmeta\tubmakevmeta}
 %    \end{macrocode}
 % 
+% For older \LaTeX\ versions we start the macro with \cs{par} to avoid a
+% common error: if the optional argument is \cs{small}, and the document
+% has no blank line before the verbatim block, we don't want that
+% preceding paragraph to be set with \cs{small}'s line spacing.
+% 
+% As of the 2026-11-01 \LaTeX\ release, \LaTeX\ itself fixes this
+% problem. Then we don't want the \cs{par}, because it interferes
+% with correct tagging. We have to add this in a hook also because the
+% tagging redefines \cs{verbatim}.
+% \url{https://github.com/latex3/tagging-project/issues/1503}
+%
+%    \begin{macrocode}
+\AddToHook{env/verbatim/begin}{
+  \IfFormatAtLeastTF{2026-11-01}
+    {\relax} % new enough, no need for \par
+    {\par}   % older, needs \par to avoid baselineskip leakage
+}
+%    \end{macrocode}
+%
 % Finally, if |microtype| is loaded, we want it to be deactivated in
 % verbatim blocks.  It often manipulates a leading |\| rather too much,
 % thus messing with the visible fixed-width alignment.
