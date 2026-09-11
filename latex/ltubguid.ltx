@@ -152,7 +152,8 @@
 %
 % ***** Commands provided by this paper *****
 %
-% Typeset the name of an environment, class, package, option, program
+% Typeset the name of an environment, class, package, option, program.
+% Historically used, but now we have the generic \cs{tbcode}.
 \providecommand\envname[1]{\tbcode{#1}}
 \providecommand\clsname[1]{\tbcode{#1}}
 \providecommand\pkgname[1]{\tbcode{#1}}
@@ -190,7 +191,10 @@
   \@tempa%
 }
 \makeatother
-\def\url{\tburl} % use our url macros
+\def\url{\tburl} % use our url macros for \url
+%
+% Make all verbatim blocks \small by default.
+\AddToHook{env/verbatim/begin}{\small}
 %
 %%%%%%%%%%%%%%%%
 \begin{document}
@@ -615,12 +619,17 @@ For displayed verbatim text, the classes add a small increment to
 the functionality of \LaTeX{}'s \envname{verbatim} environment, by
 introducing an optional argument.  The optional argument may contain
 commands to be executed before starting the verbatim text; the set of
-commands which have useful effect is strictly limited, but the
+commands which have useful effect is limited. The
 following are common:
 \begin{itemize}
 \item Font size selection commands: for example, all the display
   verbatim in the present paper starts with
-  \verb|\begin{verbatim}[\small]|.
+  \verb|\begin{verbatim}[\small]|. Well, that's a lie. If you want
+  to change the default font for all the verbatim blocks in a document,
+  you can use a \LaTeX\ hook in the preamble:
+\begin{verbatim}
+\AddToHook{env/verbatim/begin}{\small}
+\end{verbatim}
 
 \item The command \cs{makevmeta}, which is available only in
   \envname{verbatim}'s optional argument. It makes the construct

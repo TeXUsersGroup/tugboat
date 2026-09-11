@@ -3466,6 +3466,10 @@
 %
 % We start by saving various bits and bobs whose operation we're going
 % to subvert, then starting our \cs{def}\cs{verbatim}.
+% 
+% With tagging enabled, this entire definition is irrelevant; \LaTeX\
+% makes its own definition. So we have to alter things with hooks (run
+% below) instead of inline in the code.
 %
 %    \begin{macrocode}
 %\let\@TB@verbatim\@verbatim
@@ -3578,7 +3582,8 @@
 }
 %    \end{macrocode}
 %
-% Then, use a hook to define \cs{makevmeta} as \cs{tubmakevmeta}.
+% Then, use a hook to define \cs{makevmeta} as \cs{tubmakevmeta},
+% so it will work with tagging.
 %
 %    \begin{macrocode}
 \AddToHook{env/verbatim/begin}{\let\makevmeta\tubmakevmeta}
@@ -3596,10 +3601,10 @@
 % \url{https://github.com/latex3/tagging-project/issues/1503}
 %
 %    \begin{macrocode}
-\AddToHook{env/verbatim/begin}{
+\AddToHook{env/verbatim/begin}{%
   \IfFormatAtLeastTF{2026-11-01}
-    {\relax} % new enough, no need for \par
-    {\par}   % older, needs \par to avoid baselineskip leakage
+    {\relax}% new enough, no need for \par
+    {\par}%   older, needs \par to avoid baselineskip leakage
 }
 %    \end{macrocode}
 %

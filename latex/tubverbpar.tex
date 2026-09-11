@@ -3,26 +3,30 @@
 
 % We want our normal {verbatim}[\small] to work with tagging.
 \DocumentMetadata{tagging=on}
-
 \documentclass{ltugboat}
+
+% Example of changing the font size for verbatim.
+\AddToHook{env/verbatim/begin}{\small}
+
 \begin{document}
 
-% Use \footnotesize instead of the more usual \small to make the
+% Use \scriptsize instead of the more usual \small to make the
 % difference in interline spacing especially glaring.
 
-Before a \texttt{verbatim} with \cs{footnotesize} argument.
+Before \texttt{verbatim} with \cs{scriptsize} argument.
 Should be normal line spacing, not squeezed.
-\begin{verbatim}[\footnotesize]
-footnotesize verbatim.
+\begin{verbatim}[\scriptsize]
+scriptsize verbatim.
 normal line spacing for this small size.
 \end{verbatim}
 Normal text again after verbatim. Again should have normal line spacing.
 
-Before another \texttt{verbatim} with empty argument.
+Before another \texttt{verbatim} with empty argument,
+but default size changed to \cs{small} via hook.
 Should be normal line spacing, not squeezed.
 \begin{verbatim}[]
-footnotesize verbatim2.
-second verbatim line, full text size.
+default size (large) verbatim2.
+second verbatim line, default size.
 \end{verbatim}
 Normal text again after verbatim2. Again should have normal line spacing.
 
