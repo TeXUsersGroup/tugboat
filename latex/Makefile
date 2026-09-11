@@ -32,7 +32,13 @@ spell:
 	aspell list --mode=tex --add-extra-dicts=`pwd`/.dict.pws <ltubguid.ltx\
 	| sort -f -u
 
-check ck: ltugboat.cls
+# 
+# Hardly any checking is actually done, but at least we can make sure
+# the test files run to completion.
+
+check ck: check1 checkht check-oddeven checkbib checkbibthanh
+
+check1: ltugboat.cls
 	$(pdflatex) tubatest.tex
 	$(lualatex) -jobname cp-luancm '\let\fsp1 \input tubcplustest.tex'
 	$(pdflatex) -jobname cp-pdftex tubcplustest.tex
@@ -96,10 +102,17 @@ checkbibthanh h: tubibthanh.tex ltugboat.cls
 	@echo luatex
 	$(lualatex) $< && $(bibtex) $(htt) && $(lualatex) $< && $(mv) $(htt).pdf luabibthanh.pdf
 
-clean:
-	rm -f *.log *.aux *.out *.toc *.pdf *.dvi *.bbl *.blg *.html *.hd
-	rm -f *.bcf *.run.xml
-
+# tex4ht generates so many files.
+htclean:
+	rm -f *.idv *.lg *.4ct *.4tc *.xref *.css *.tmp
+#
+# keep aux/bbl here for sake of reruns.
+mostlyclean: htclean
+	rm -f *.log *.aux *.out *.toc *.pdf *.dvi *.blg *.html *.hd
+	rm -f firstpage.tex lastpage.tex
+#
+clean: mostlyclean
+	rm -f *.aux *.bbl *.bcf *.run.xml
 # 
 tubabbrs.pdf abbr: tubabbrs.tex tubabbrs.lst ltugboat.cls
 	texfot pdflatex $<

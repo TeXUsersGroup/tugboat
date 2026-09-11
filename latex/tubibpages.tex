@@ -1,11 +1,12 @@
 % $Id$
 % Public domain.
 % 
-% Test pagesnodashify option (see comments in tugboat.bst).
+% Test pagesnodashify option (see comments in tugboat.bst),
+% and generation of "pp." with a Unicode en-dash (instead of "p.").
 
 \documentclass{ltugboat}
 \begin{document}
 \bibliographystyle{tugboat}
-\nocite{dashify,nodashify}
+\nocite{dashify,nodashify-explicit,nodashify-utf8}
 \bibliography{tubib.bib}
 \end{document}

@@ -10,6 +10,9 @@ ltugboat.cls:
 - reduce \belowabstractskip to 12pt so there's a better chance of a first
   column coming out even. 
 
+tugboat.bst:
+- recognize Unicode en dash (U+2013) so that "pp." is output instead of "p.".
+
 -----------------
 2.38 (2026-06-18)
 ltugboat.cls:

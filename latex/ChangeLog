@@ -1,3 +1,12 @@
+2026-09-11  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.bst (multi.page.check): if the argument contains a
+	Unicode en dash (U+2013), return true, so that we'll output "pp."
+	instead of "p.".
+	* tubib.bib (nodashify-utf8): new test entry.
+	* tubibpages.tex: \cite it.
+	* Makefile (check-all): new target to run all our tests.
+
 2026-09-10  Karl Berry  <karl@freefriends.org>
 
 	* ltubguid.ltx: mention \AddToHook{env/verbatim/begin}{\small}

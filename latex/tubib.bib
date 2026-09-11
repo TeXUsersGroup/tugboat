@@ -17,6 +17,7 @@
  doi    = {10.47397/tb/43-2/tb134elec},
 }
 
+% tubibpages.tex
 @article{dashify,
  title   = {Dashify},
  author  = {Chris Doe},
@@ -24,15 +25,25 @@
  year    = {1999},
  pages   = {A-B},
 }
-
-@article{nodashify,
- title   = {No Dashify},
+%
+@article{nodashify-explicit,
+ title   = {Explicit No Dashify},
  author  = {Chris Doe},
  journal = {TUGboat},
  year    = {1999},
- pages   = {A-B},
+ pages   = {C-D},
  pagesnodashify = 1,
 }
+%
+@article{nodashify-utf8,
+ title   = {No dashify UTF8 PP},
+ author  = {Chris Doe},
+ journal = {TUGboat},
+ year    = {1999},
+ pages   = {E–F},
+}
+% that's a unicode en dash, U+2013. Should generate "pp." not "p.",
+% like the other two.
 
 @article{nummonth,
   title = "Numeric months are logical but annoying",

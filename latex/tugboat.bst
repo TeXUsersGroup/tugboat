@@ -856,23 +856,41 @@ FUNCTION {format.edition}
 
 INTEGERS { multiresult }
 
+% Return true if argument string represents multiple pages.
+% 
 FUNCTION {multi.page.check}
-{ 't :=
-  #0 'multiresult :=
-    { multiresult not
-      t empty$ not
-      and
-    }
-    { t #1 #1 substring$
-      duplicate$ "-" =
-      swap$ duplicate$ "," =
-      swap$ "+" =
-      or or
-        { #1 'multiresult := }
-        { t #2 global.max$ substring$ 't := }
-      if$
-    }
-  while$
+{
+  't :=
+  %
+  % First, if the argument contains a UTF-8 en dash (U+2013), return true.
+  % Unfortunately we have to use the actual UTF-8 bytes, as the .bst
+  % language's int.to.str doesn't like values outside 0--127.
+  t "–" contains
+    { #1 'multiresult := }
+    { % there's no "return" in bst, so long else block.
+      % Explanation of other check from btxbst.doc (q.v.):
+      % The multi.page.check function examines the page field for a "-"
+      %   or "," or "+" % so that format.pages can use "page" instead of
+      %   "pages" if none exists.
+      % Note: global.max$ here means "take the rest of the string".
+      %
+      #0 'multiresult :=
+        { multiresult not
+          t empty$ not
+          and
+        }
+        { t #1 #1 substring$
+          duplicate$ "-" =
+          swap$ duplicate$ "," =
+          swap$ "+" =
+          or or
+            { #1 'multiresult := }
+            { t #2 global.max$ substring$ 't := }
+          if$
+        }
+      while$
+    } % end else of unicode en dash check
+  if$
   multiresult
 }
 
