@@ -7,8 +7,6 @@ See https://tug.org/TUGboat for all issues, contact information,
 
 tugboat.sty is for both regular and proceedings issue.  Just \input it.
 tugproc.sty was for proceedings issue, but is no longer used.
-tugboat.cmn had definitions common for both (could/should also be common
-  to the LaTeX TUGboat style, but isn't).
 
 microtype-plain-tub.tex is a minimal implementation for microtype (font
 expansion and protrusion) on the plain TeX \tenrm font, etc. It should

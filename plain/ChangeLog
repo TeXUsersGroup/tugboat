@@ -1,5 +1,13 @@
 2026-09-12  Karl Berry  <karl@freefriends.org>
 
+	* tugboat.sty (\tubsentencespace, \titleref): new macros.
+	(\footnotenumber): \newcount.
+	(\footnote, \vfootnote, \@foot): support automatic numbering
+	if first arg to \footnote is empty; use \eightpoint and change
+	other formatting to match ltugboat.
+
+2026-09-12  Karl Berry  <karl@freefriends.org>
+
 	* tugboat.sty: incorporate tugboat.cmn; it has not been used in
 	the LaTeX ltugboat.sty for decades, if ever.
 	* tugboat.cmn: remove.
