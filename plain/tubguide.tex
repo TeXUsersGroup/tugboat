@@ -1,8 +1,8 @@
 %% $Id$
 %% @texfile{
 %%     filename   = "tubguide.tex",
-%%     version    = "1.32",
-%%     date       = "2026-09-11",
+%%     version    = "1.33",
+%%     date       = "2026-09-12",
 %%     filetype   = "TUGboat Authors' Guide",
 %%     copyright  = "Copyright 1989, 1992, 2006, 2012-2026 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
@@ -11,6 +11,7 @@
 %%                   modified versions) are also permitted, but only if
 %%                   the resulting file is renamed."
 %%     email      = "TUGboat@tug.org",
+%%     url        = "https://tug.org/TUGboat",
 %%     codetable  = "ISO/ASCII",
 %%     keywords   = "tex users group, tugboat, plain authors' guide",
 %%     supported  = "yes",
@@ -56,46 +57,37 @@ subsequently; the original appeared in
 
 We hope this article can serve as a reasonable guide to preparation of
 plain \TeX\ manuscripts for \TUB. Suggestions and comments are quite
-welcome at the addresses listed below.
+welcome at the address listed below.
 
-\TUB\/ was originally typeset with only a \plain-based package. Later,
-as demand for style files follows wherever \LaTeX\ devotees wander, a
-\TUB\/ variant of the \LaTeX\ {\tt article} class was created\Dash see
-the separate package |tugboat| (|https://ctan.org/pkg/tugboat|). The
-two macro sets yield much the same output, and many input conventions
-are identical, with differences where they seemed natural.
-
-Below we describe various aspects of the \TUB\/ package for the
-\plain-based macros. We conclude with some general suggestions to help
-make the lives of those on the receiving end of (any kind of) electronic
-copy a little easier.
+\TUB\ accepts submissions in plain \TeX, \LaTeX, and other \TeX\
+formats, all with much the same output, and similar input conventions
+where reasonable. This document describes the \plain-based macros for
+\TUB. On \CTAN, it is
+\tbsurl{ctan.org/pkg/url/tugboat-plain}.\footnote{}{The \LaTeX\ style
+for \TUB\ is the file |ltugboat.sty|; on \CTAN:
+\tbsurl{ctan.org/pkg/tugboat}.} We conclude with some general
+suggestions to help make the lives of those on the receiving end of (any
+kind of) electronic copy a little easier.
 
 
 \head * The \plain-based macros: {\tt tugboat.sty} *
 
-The macros are contained in the file |tugboat.sty|.\footnote{$^1$}{%
-1) The extension |.sty| is unfortunate, as that is also the convention
-for \LaTeX\ styles. The \TUB\ file predates \LaTeX.
-2) A file |tugproc.sty| is also distributed, but no longer used.
-3) A file |tugboat.cmn| was distributed until 2026; its contents are now
-incorporated into |tugboat.sty|.
-4) |tugboat.cmn| was originally named {\tt tugboat.com}, but that notation
-was in conflict with conventions of \acro{MS-DOS} and other operating
-systems.}
+The macros are contained in the file |tugboat.sty|.\footnote{}{%
+1) A file |tugproc.sty| is also distributed, but no longer used.
+2) A file |tugboat.cmn| was distributed until 2026 (version 1.33); its
+contents are now incorporated in |tugboat.sty|.}
+%3) |tugboat.cmn| was originally named {\tt tugboat.com}, but that notation
+%was in conflict with conventions of \acro{MS-DOS} and other operating
+%systems.}
 
 \subhead * General description of tags *
 
 We attempt wherever possible to tag the various elements of \TUB\/
 articles in a ``generic'' way, modified in some respects by convenience.
-Authors and editors need tools to shape their articles to the form they
-desire, but we also wish to encourage a tagging style which is
-appropriate for electronic interchange. It seems unfair to expect much
-thought from authors concerning the markup of their information if we
-only provide a bag of widgets and do-hickies to hack and pound an
-article together. The tags whose use we encourage are the higher-level
-tags that mark the logical document structure. Below these are
-formatting macros that we recognize may be essential for certain
-applications. Both sorts of tags are described in the following article.
+Thus, the tags whose use we strongly encourage are the higher-level tags
+that mark the logical document structure. Below these are formatting
+macros that we recognize may be essential for certain applications. Both
+sorts of tags are described in the following article.
 
 Generally, to ``mark up'' some input |<foo>|, a tag |\xxx| will precede
 |<foo>| and |\endxxx| will follow, as in: |\xxx <foo>\endxxx|.
@@ -128,7 +120,7 @@ using `|rm|lquote|lquote'argument|/`|rm|rquote|rquote' as necessary>
 The scheme shows that code inserted as an option is localized and that
 it may be used to override certain defaults and to guide branching.
 Things are not always simple, however.  Sometimes parameters are set
-after a branch is taken (e.g.\ the macros might only call |\raggedright|
+after a branch is taken (e.g., the macros might only call |\raggedright|
 after determining whether the mode is ``|\inline|'' or
 ``|\display|''), and, despite localization, parameter setting might
 affect the current paragraph if a branch has yet to be taken.
@@ -182,6 +174,11 @@ At the outermost level, a source file will have the form (using the
 \endarticle
 \endverbatim
 
+\leavevmode|\endarticle| marks the end of input and is defined as
+|\vfil\end| by default.
+
+\subhead * Author information *
+
 Data preceding |\article| is saved and typeset when |\article|
 is encountered.  Each author should have his/her own
 ||
@@ -196,10 +193,11 @@ of course, set at the beginning of an article; the address
 information is listed separately in a ``signature'' near the end of
 an article, and is present for the convenience of those who might
 photocopy excerpts from an issue of \TUB.  |\makesignature| does the
-typesetting work.  Generally authors are listed separately in the
-signature.  In cases where authors and addresses are to be combined,
-one may use |\signature{...}| and |\signaturemark| with some or all
-of
+typesetting work.
+
+Generally authors are listed separately in the signature. In cases where
+authors and addresses are to be combined, one may use |\signature{...}|
+and |\signaturemark| with some or all of
 ||
 \theauthor {<author number>}
 \theaddress {<author number>}
@@ -251,21 +249,31 @@ produces
  \figure[\mid\nofloat] \leftline{\kern\parindent\thenetaddress1} \endfigure
 }
 
-\leavevmode|\endarticle| marks the end of input and is defined as
-|\vfil\end| for most uses.  We redefine it as |\endinput| to
-assemble streams of articles in \TUB.
-
 \subhead * Footnotes *
 
-The \TUB\ plain macros do not provide any substantive support for
-footnotes beyond plain \TeX. For example, there is no command for
-automatically-numbered footnotes. The present guide uses this construct
-for its numbered footnotes, hard-coding the number:
+The \TUB\ footnote macros are firmly based on those of plain \TeX, with
+adjustments to the formatting. For example, \TUB\ footnotes are typeset
+in the 8pt font size (using \cs{eightpoint}).
+
+The \TUB\ footnote macros do have one feature beyond plain \TeX: support
+for automatically-numbered footnotes.  This is done by leaving the first
+argument to \cs{footnote} empty:
 
 ||
-an article with\footnote
+\footnote{}{This footnote will be
+automatically numbered.}
+||
+Each \cs{footnote} command increments the (\TUB-specific) counter
+\cs{footnotenumber}, should references or other variations of footnote
+numbering be desired.
+
+Before this feature was implemented (September 2026, version~1.33), this
+construct was commonly used for numbered footnotes, hard-coding the number:
+
+||
+\footnote
   {$^2$}
-  {\xEdNoteThe \TUB{} email ...
+  {A footnote numbered 2.}
 ||
 
 For a footnote without a number, \plain's \cs{vfootnote} is used. On
@@ -274,17 +282,6 @@ the first page of this document:
 ||
 \vfootnote{}{Revised March 1992 ...
 ||
-
-\subhead * Subtext *
-
-The present manual includes some text in a smaller font (9pt) and set
-off by vertical space above and below. These blocks are created by the
-|\subtext| command. We don't recommend using it for articles to be
-published in \TUB, but include this description for completeness.
-
-\subtext This is an example of such ``subtext''. There is no
-|\subsubtext| or any other level.
-\endtext
 
 \subhead * Section heads *
 Heads of sections, subsections, etc.\ are introduced with |\head|,
@@ -600,14 +597,15 @@ Figures are keyed as
 These are generally implemented as single-column floating
 top-insertions, but the options |[\lastoption][\mid]| and
 |[\lastoption][\bot]| can change specific items to be mid- or
-bottom-insertions, respectively.  Here we recommend that the
-long-form terminator be used ({\it not\/} the |*...*| form).  One can
-think of the information ``passed'' as being ``long'' in the sense of
-possibly containing paragraphs, this being a mnemonic device only.
-The primary reason for the recommendation is that one is (in some
-sense, maybe) more likely to encounter a rogue |*| in longer text
-than in shorter text and hence more likely to encounter a surprising
-result due to a macro stopping short at the wrong |*|.
+bottom-insertions, respectively.
+
+Here we recommend that the long-form terminator be used ({\it not\/} the
+|*...*| form). One can think of the information ``passed'' as being
+``long'' in the sense of possibly containing paragraphs, this being a
+mnemonic device only. The primary reason for the recommendation is that
+one is (in some sense, maybe) more likely to encounter a rogue |*| in
+longer text than in shorter text and hence more likely to encounter a
+surprising result due to a macro stopping short at the wrong |*|.
 
 \subtext
 Perhaps here is a natural place to mention also that these macros
@@ -621,7 +619,7 @@ character string.  Thus, storing
 the ``argument'' of |\figure| all at once might misinterpret some
 characters which should appear as verbatim text.  For this reason we
 set figures as we go and just close off the box with |\endfigure|. On
-the other hand, using information in multiple situations (e.g.\
+the other hand, using information in multiple situations (e.g.,
 titles and running heads) requires storing the information as a token
 string, not as a typeset list.
 
@@ -637,11 +635,10 @@ to debug those situations in which an unexpected |*| has disrupted
 things.
 \endtext
 
-
-A primitive |\caption{...}| option is available to |\ulap|
-(i.e., lap upward) its argument into the figure space, but
-formatting of the caption is left to the user.  For example,
-the code:
+A primitive |\caption{...}| option is available to |\ulap| (i.e., lap
+upward) its argument into the figure space, and the argument is typeset
+in \cs{ninepoint}. The formatting of the caption is otherwise left to
+the user, including the label. For example, the code:
 \verbatim[\outputtofile{code.vbm}]
 \figure[\top]
   [\caption{\centerline{%
@@ -649,7 +646,7 @@ the code:
 \vbox to 4pc{}
 \endfigure
 \endverbatim
-produces the figure at the top of this column or the next.
+produces the figure appearing at the top of this column or the next.
 
 \input code.vbm
 
@@ -668,7 +665,18 @@ switching between one- and two-column format within a year.
 |\newpage| in each format is defined to fill and eject enough columns
 to get to the next page.  |\newcol| is just |\par\vfill\eject|.
 
-\subhead * Command list summary *
+\subhead * Subtext *
+
+The present manual includes some text in a smaller font (9pt) and set
+off by vertical space above and below. These blocks are created by the
+|\subtext| command. We don't recommend using it for articles to be
+published in \TUB, but include this description for completeness.
+
+\subtext This is an example of such ``subtext''. There is no
+|\subsubtext| or any other level.
+\endtext
+
+\subhead * Command summary *
 Tags are listed in the order discussed.  Options are
 listed under tags.
 \verbatim
@@ -722,20 +730,23 @@ listed under tags.
 
 Definitions of many commonly used abbreviations are provided. Please use
 these whenever possible rather than creating your own. We will add to
-the list as necessary. Some 
+the list as necessary.
 
 \list
 \item |\acro| sets an all-caps argument in caps one size smaller than
 the surrounding text. Compare CTAN (full size), \CTAN{} (|\acro{CTAN}|)
 and {\smc ctan} (small caps). The argument must always be all caps,
-perhaps with hyphens and slashes, but never a lowercase letter. We use
-|\acro| consistently in \TUB, both in our macros and when editing
-articles, with the exception of bibliographies.
+perhaps with hyphens, slashes, and/or numbers, but never a lowercase
+letter. We use |\acro| consistently in \TUB, both in our macros and when
+editing articles, with the exception of bibliographies.
 
 \item |\cs{foo}| typesets |\foo|, just like \verbinline|\foo|\endverbatim.
 Since |\cs| is the usual \TUB\ \LaTeX\ convention, we support it here too.
 
 \item |\Dash| is an em-dash with surrounding thin\-spaces, our preferred style.
+
+\item |\hyph| typesets an explicit hyphen and allows hyphenation in the
+following word (unlike a |-| character).
 
 \item |\meta{foo}| typesets \meta{foo} in italics and inside angle
 brackets. If your article uses meta-variables pervasively, you can use
@@ -745,6 +756,12 @@ same thing; this makes the |[\disablemetacode]<| character globally active.
 \cs{disablemetacode} undoes this.
 
 \item |\slash| is a / allowing a line break after.
+
+\item |\titleref{Foo: A Book}| typesets the argument in the
+slanted font (\cs{sl}) and with \cs{frenchspacing}. For example, there's
+no extra space after the |:| here: \titleref{Foo: A Book}. It's intended
+as markup for the title of any ``book like'' object, rather than
+explicitly using \cs{it}, \cs{sl}, etc.
 
 \item Various |\*lap|\,s (|\ulap|, |\dlap|, |\xlap|,
 |\ylap|, |\zlap|) and |\*smash|\,es provide means of setting type
@@ -756,9 +773,11 @@ which ``laps'' into neighboring regions.
             <descender dimen>]
 \endverbatim
 allows {\it ad hoc\/} construction of
-struts. Plain \TUB\ redefines \cs{strut} to be different than plain
-\TeX, namely with the height and depth of the parenthesis in the current
-font; \cs{strutt} is defined to be nearly the same as the plain \TeX\
+struts.
+
+Plain \TUB\ redefines \cs{strut} to be different than plain \TeX, namely
+with the height and depth of the parenthesis in the current font;
+\cs{strutt} is defined to be nearly the same as the plain \TeX\
 \cs{strut}, with the height of the parenthesis and the depth as
 necessary to make the height+depth be \cs{normalbaselineskip}.
 
@@ -784,8 +803,8 @@ this article.
 Constructing an entire issue of \TUB\/ requires use of a few features
 that authors may notice when articles are returned for proofing.
 |\xrefto| allows for symbolic cross-referencing, but is enabled only
-late in the production process. By default, \xrefto| is defined to
-|simply typeset ``???'; not to worry.
+late in the production process. By default, |\xrefto| is defined to
+simply typeset ``???'; not to worry.
 
 We also put notes into the file since there are many things to
 remember, and these appear as |\TBremark{...}|.  Authors can look for
@@ -824,7 +843,6 @@ overfull boxes or other unsightliness, than it is to handle a document
 containing {\it ad hoc\/} code dedicated to a beauteous (but
 narrowly specific) result.
 
-
 When authors proof their articles in formats other than that of \TUB\/
 (for example), they should expect that \TUB's changes in pagewidth and
 pagedepth may drastically alter text layout.  Paragraphs are rebroken
@@ -842,27 +860,18 @@ thanks to stuffings made by authors ahead of time.  In this context, we
 recommend the use of |\verbfile{...}| (see the section `{Verbatim
 modes}') to maintain consistency between documentation and reality.
 
-Specifically in the domain of \TeX\ macros, we find that many authors
-throw in unnecessary |%| characters to end code lines.  Except in
-cases where the |^^M| means something other than end-of-line,
-linebreaks can reliably be placed after control-words and numerical
-assignments.  We have seen \TeX's buffer size exceeded when |%|
-was placed after {\it every\/} line.
+A wider perspective in the matter of naming macros can prevent problems
+that occur when definitions are overwritten. The names of control
+sequences used in \plain, \LaTeX, and \AmSTeX\ are documented and
+authors should avoid using them for other purposes. It is also wise to
+avoid commonly used names such as |\temp|, |\result|, |\1|, and |\mac|
+in presenting code that might be cribbed by other users.
 
-A wider perspective in the matter of naming macros can prevent
-problems that occur when definitions are overwritten as articles are
-run together.  The names of control sequences used in \plain, \LaTeX,
-and \AmSTeX\ are documented and authors should avoid using them for
-other purposes.  It is also wise to avoid commonly used names such as
-|\temp|, |\result|, |\1|, and |\mac| in presenting code that might be
-cribbed by other users.  The frequently used technique of temporarily
-|\catcode|ing a character to be a letter (e.g.\ the |@|) provides a
-good method of hiding control sequences so that they will not be
-clobbered later.  Readers are in need of small macros to do little
-tricks, and they often try suggestions brought forth in \TUB.  A
-little extra effort in making these macros consistent with the macros
-in wide distribution and in making them robust will be much
-appreciated.
+Both authors and readers are in need of small macros to do little
+tricks, and they often try suggestions brought forth in \TUB. A little
+extra effort in making new macro names consistent, rather than in
+conflict, with the macros in wide distribution and in making them robust
+will be much appreciated.
 
 
 \head * Electronic documentation and submissions *
@@ -870,16 +879,21 @@ appreciated.
 The TUGboat styles for both \LaTeX\ and plain \TeX\ are available on
 \CTAN\ and already included in most \TeX\ distributions:
 
-||https://ctan.org/pkg/tugboat
-https://ctan.org/pkg/tugboat-plain||
+\list
+\item plain: \tbsurl{ctan.org/pkg/tugboat-plain}
+\item \LaTeX: \tbsurl{ctan.org/pkg/tugboat}
+\endlist
 
 Please address all electronic correspondence to the \TUB{} maildrop:
-||TUGboat@tug.org||
-Mail to personal addresses is liable to go unseen if
-vacation or illness intervenes.  We also request that you supply
-an abstract of any expository article.  This will be used as the
-basis for translation of abstracts to languages other than that
-in which the article is published.
+
+\list
+\item \tbmailto{TUGboat@tug.org}
+\endlist
+
+Mail to personal addresses is can go unseen when life intervenes, so
+please use the generic address whenever appropriate.
+
+A last request: please write an abstract for any expository article.
 
 \smallskip
 The \TUB\ home page on the web is |https://tug.org/TUGboat|.

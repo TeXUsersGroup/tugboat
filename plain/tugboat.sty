@@ -1,6 +1,6 @@
 %% @texfile{
 %%     filename   = "tugboat.sty",
-%%     copyright  = "Copyright 1993,1999,2003,2006,2011-2025 TeX Users Group.
+%%     copyright  = "Copyright 1993,1999,2003,2006,2011-2026 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -11,6 +11,7 @@
 %%     filetype   = "Plain TeX macros for TUGboat",
 %%     supported  = "yes",
 %%     email      = "TUGboat@tug.org",
+%%     url        = "https://tug.org/TUGboat",
 %%     codetable  = "ISO/ASCII",
 %%     keywords   = "tex users group, tugboat, plain tex",
 %%     abstract   = "This file contains the plain-based macros
@@ -20,8 +21,8 @@
 %% $Id$
 
 \def\thistubstyle{plain}
-\def\fileversion{v1.32}
-\def\filedate{2026-08-22}
+\def\fileversion{v1.33}
+\def\filedate{2026-09-12}
 
 % general items
 
@@ -35,11 +36,10 @@
 \message{File `TUGBOAT.STY' \fileversion \space\space <\filedate>}
 
 %  some things with the same names as in, or reiterated from, AMS-TeX
-
 \def\document{}                % override an AMS-TeX convention
 \output{\output@}
 
-%%
+
 % following was tugboat.cmn, down to the "Directory".
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -95,9 +95,7 @@
 \ifx\tugstyloaded@\undefined\let\tugstyloaded@\plaintubstyle\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% emacs-page
 %     *****  abbreviations and logos  *****
-%
 
 \def\acro#1{{\SMC #1}\spacefactor1000 }
 
@@ -256,11 +254,10 @@
 \def\NoBlackBoxes{\overfullrule=\z@ }
 \def\newline{\hskip\z@ plus \pagewd \break}
 \def\nohyphens{\hyphenpenalty\@M\exhyphenpenalty\@M}
+\def\tubsentencespace{\spacefactor=3000{}\space\ignorespaces}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% emacs-page
 %     *****  utility registers and definitions  *****
-%
 
 %       test registers for transient use; paired - internal/external
 \newbox\T@stBox                 \newbox\TestBox
@@ -391,7 +388,6 @@
 \SecTitlefalse
 
 
-
 %  Registration marks; permit them to be invisible
 
 \newdimen\RegRuleThickness  \RegRuleThickness=0.2pt
@@ -495,6 +491,9 @@
 \def\tbcode#1{\hbox{\tt #1}} % literal text
 \def\tbcodebreak{\nolinkurl} % assume url.sty has been loaded
 
+% A title of a book, etc.
+\def\titleref#1{{\sl \frenchspacing#1}}
+
 % live urls with pdf.
 \def\tbsurl#1{\tbhref{https://#1}{\tt #1}}
 \def\tbhurl#1{\tbhref{http://#1}{\tt #1}}
@@ -594,14 +593,17 @@
 \vol 0, 0.                      % volume, issue.
 \issdate Thermidor, 2001.       % month, year of publication
 
-
 \ifx\tugstyloaded@\plaintubstyle
   \def\tubissue#1(#2){\TUB~#1, no.~#2}
 \else
   \def\tubissue#1#2{\TUB~#1, no.~#2}
 \fi
 
-\def\xEdNote{{\tenuit Editor's note:\enspace }}
+\def\xEdNote{{%
+  \font\ednotefont = cmu10 at 1em % \eightpoint by default
+  \ednotefont
+  Editor's note:\enspace
+}}
 
 
 %       TUGboat conventions include the issue number in the file name.
@@ -765,10 +767,13 @@
 
 \def\signaturemark{\leavevmode\llap{$\diamond$\enspace}}
 
-% emacs-page
-% Some hyphenation exceptions, plus read our entire
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     *****  hyphenation  *****
+
+% Some explicitly hyphenation exceptions, plus read our entire
 % ushyphex.tex file if present -- unless \tubomithyphenations
 % is defined, in which case do nothing (needed for tb*hyf.tex).
+%
 \ifx\tubomithyphenations\@thisisundefined
   \openin\@altfilenames=ushyphex.tex
   \ifeof\@altfilenames\else\input ushyphex.tex \fi
@@ -807,12 +812,11 @@
   vis-ual vis-ual-ly
   which-ever white-space white-spaces wide-spread wrap-around
 }
-\fi
+\fi % \tubomithyphenations undefined
 
 % *************************************************************************
 
 % Notes on (what were) tugboat.cmn macros above
-%------------------
 %
 %\makeescape, ..., \makecomment allow users to change category
 %codes a little more easily.
@@ -1031,10 +1035,7 @@
 %\signaturemark
 %\signaturewidth
 
-
-%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %  Directory.
 %
 %  **  fonts
@@ -1045,18 +1046,17 @@
 %  **  general mechanism for tags
 %  **  titles, authors, addresses
 %  **  heads
-%  **  text and subtext
 %  **  lists
 %  **  verbatim
+%  **  hyperlinks
 %  **  figures
+%  **  text and subtext
+%  **  summary
 %  **  utilities
 %  **  initialization
 
-%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %     *****  fonts  *****
-%
 
 %  Struts give ascenders and descenders to assist in baseline alignment
 %  (e.g. of adjoining vertical boxes); useful only with text fonts.
@@ -1339,11 +1339,8 @@
 %    by generic \rm, \bf, etc. definitions
 %  Mechanism for switching neatly between serif and sans-serif
 
-%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %     *****  page dimensions  *****
-%
 
 %  vertical dimensions
 
@@ -1422,11 +1419,8 @@
       Either allow overlays in TeX or increase \string\maxcols.}\fi
   \fi}
 
-%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %     *****  headers/footers  *****
-%
 
 \def\pagenoprefix{}
 
@@ -1558,11 +1552,8 @@
   \gdef\pageprefix{#2}%   % as in A-10 for appendices; not used just now
   \nextrunner }
 
-%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %     *****  insertions  *****
-%
 
 \newif\if@floatable     \@floatabletrue         % sometimes we don't want
 \def\nofloat{\@floatablefalse}                  % midinsertions to float
@@ -1603,36 +1594,72 @@
    }%
   \fi\endgroup\@next}
 
-%  Footnotes are mainly supported by PLAIN format, with these
-%  exceptions.
+%  Footnotes are mainly the plain.tex implementation,
+%  with a few hooks and formatting tweaks. We also support automatic
+%  footnote numbering, if the first argument (footnote marker) is empty.
+
+\newcount\footnotenumber
+
+\def\footnote#1{\let\@sf\empty % parameter #2 (the text) is read later
+  \ifhmode\edef\@sf{\spacefactor\the\spacefactor}\/\fi
+  \global\advance\footnotenumber by 1
+  \def\@tubfnmark{#1}%
+  \ifx\@tubfnmark\empty \edef\@tubfnmark{$^{\the\footnotenumber}$}\fi
+  \@tubfnmark % the footnote marker in the text
+  \@sf
+  \vfootnote{\@tubfnmark}%
+}
+  
 
 \skip\footins=10pt
 \def\footnoterule{\kern-5pt
         \hrule width 5pc \kern 4.6pt } % the \hrule is .4pt high
 
 \newif\ifDelayFirstPar          \DelayFirstParfalse
+% #1 is footnote marker. Originally from plain.tex.
 \def\vfootnote#1{\ifFirstPar \DelayFirstPartrue \fi
   \insert\footins\bgroup
   \interlinepenalty\interfootnotelinepenalty
   \splittopskip\ht\strutbox % top baseline for broken footnotes
   \splitmaxdepth\dp\strutbox \floatingpenalty\@MM
   \leftskip\z@skip \rightskip\z@skip \spaceskip\z@skip \xspaceskip\z@skip
-  \rm \parindent=\normalparindent % always indent footnotes; added for TUGboat
+  \eightpoint % == LaTeX \footnotesize
+  \rm
+  \parindent=\normalparindent % always indent footnotes
   \TUBstartfootnotehook
-  \textindent{#1}\makestrut[10pt;\z@]\futurelet\next\fo@t}
-\def\@foot{\strut\egroup\TUBendfootnotehook
-        \ifDelayFirstPar \SetupFirstPar \global\DelayFirstParfalse \fi }
+  \TUBfootnotemark{#1}%
+  \makestrut[8pt;\z@]% some space between footnotes
+  \futurelet\next\fo@t
+}
+%
+% Another redefinition of the plain.tex version.
+% Do \par before \egroup in case the document set \raggedright
+% or other paragraph parameters.
+% 
+\def\@foot{\strut\par\egroup\TUBendfootnotehook
+        \ifDelayFirstPar \SetupFirstPar \global\DelayFirstParfalse \fi
+}
 \newif\ifFirstPar       \FirstParfalse
 \def\SetupFirstPar{\global\parindent=\z@ \global\FirstPartrue }
 
+% The footnote marker in the footnote.
+% make our footnote markers match ltugboat (\@makefntext):
+% #1 is the marker (unlike ltugboat).
+%
+\long\def\TUBfootnotemark#1{%
+  \parindent 1em
+  \noindent
+  \hbox to 2em{}%
+  \llap{#1}\null
+  $\mskip5mu$% space after marker
+}
+
+% hooks so documents can override.
 \def\TUBstartfootnotehook{}
 \def\TUBendfootnotehook{}
 
-%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     *****  output  *****
-%
+%     *****  \output  *****
 
 %       Reorganize \pagecontents from PLAIN to put footnotes at very
 %       bottom of page, even if \raggedbottom.  Also add bottom insertions.
@@ -1788,11 +1815,8 @@
   \ExecuteNextDC         % possible `Delayed Command'
   }
 
-%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %     *****  page adjustment  *****
-%
 
 %  In the absence of automatic column-balancing, provide a mechanism
 %  for manually shortening a specified page.
@@ -1899,11 +1923,8 @@
     \@form
   \fi \fi}
 
-%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %     *****  general mechanism for tags  *****
-%
 
 %  Upon sensing an opening tag (call it `\foo' here), the following process
 %  is set in motion:
@@ -2151,7 +2172,7 @@
   \@@longparse
   }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Macros generally available to tags.
 
 \def\longargument{\def\@long{\long}}
@@ -2175,14 +2196,10 @@
 \newif\if@continuingnumbers \@continuingnumbersfalse
 \def\continuenumbers{\numbered\@continuingnumberstrue}
 
-%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %     *****  title, section title, authors, addresses  *****
-%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %  title
 
 \def\title{%
@@ -2199,7 +2216,6 @@
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %  section titles
 
 %  Material mostly in tugboat.com now
@@ -2221,7 +2237,6 @@
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %  authors
 
 \newcount\authornumber
@@ -2244,7 +2259,6 @@
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %  addresses
 
 \newif\if@address \@addressfalse
@@ -2286,7 +2300,6 @@
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %  network addresses
 
 \def\netaddress{%
@@ -2390,11 +2403,8 @@
 % space should be taken away somewhere.
 \def\endarticle{\nobreak\vfil\end}
 
-%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %     *****  heads  *****
-%
 
 %  Heads are set by first saving the text of the head in \@argument
 %  and then operating appropriately depending upon the \headlevel.
@@ -2460,11 +2470,8 @@
 \newif\if@allowindent
 \def\allowindent{\global\@allowindenttrue}
 
-%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %     *****  text and subtext  *****
-%
 
 %  The code here exists primarily to implement \subtext.  The treatment
 %  is similar to that for \head in that an \ifcase statement is called
@@ -2507,11 +2514,8 @@
 
 \def\subtext{\text[\textlevel=2]}
 
-%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %     *****  lists  *****
-%
 
 \newcount\listlevel     \listlevel=1
 \newif\if@itemized
@@ -2656,11 +2660,8 @@
   \hangindent\dimen@
   }
 
-%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %     *****  verbatim  *****
-%
 
 %  Operation here is very similar to that for the other tags.
 %  The opening tag sets up the situation and looks for optional
@@ -2997,11 +2998,8 @@
 }
 \def\disablemetacode{\makeother\<}
 
-%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %     *****  figures  *****
-%
 
 \newif\if@@mid  \@@midfalse
 \newif\if@@bot  \@@botfalse
@@ -3035,7 +3033,7 @@
   \def\top{}%
   \def\bot{\@@bottrue}%
   \def\mid{\@@midtrue}%
-  \def\caption##1{\def\@caption{{\abovecaptionskip##1\smallskip}}}%
+  \def\caption##1{\def\@caption{{\abovecaptionskip\ninepoint##1\smallskip}}}%
   \def\fixed{\@fixedtrue}%
   \def\scol{\@figurescol}%
   \def\ecol{\@figureecol}%
@@ -3101,11 +3099,8 @@
 \def\twocolfigure{%
   \figure[\fixed]}
 
-%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %     *****  utilities  *****
-%
 
 \def\linebreak{\unskip\break}           % conflicts with LaTeX definition
 
@@ -3183,11 +3178,8 @@
         \vbox\bgroup \vskip 1pc }
 \def\endbox{\endgraf \vskip 1pc \egroup \kern 1pc\vrule \egroup \hrule }
 
-%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 %     *****  initialization  *****
-%
 
 \def\initializearticle{%
   \let\thetitle=\relax
@@ -3222,13 +3214,14 @@
 
 \endinput
 
-%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  History of changes to tugboat.cmn
 %  (now static, since merged into tugboat.sty).
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+(merged into tugboat.sty)
+
 1.32      16 Jun 25   No real changes, just keeping version number in sync.
 
 1.31      26 Oct 24   \tbsurl, \tbhurl, \tbmailto, \tbhref: simple
@@ -3366,26 +3359,30 @@ Version   Date        Changes
 1.01      19 Feb 90   added \signaturewidth to allow for modification
                       added \nth to obtain 1^{st}, etc.
 
-
-%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  History of changes to tugboat.sty
+%  History of changes to tugboat.sty.
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
-                      \abovecaptionskipamount: increase to 4pt to match
+1.33      12 Sep 26   \abovecaptionskipamount: increase to 4pt to match
                         change in ltugboat.
-
+                      
                       \normallineskiplimit: do not define as 1pt, keep at 0.
 
                       \Thanh now typesets the acute to the right of the
                         circumflex, instead of vertically over;
                         see tugboat.dtx for more.
+                      
+                      Footnotes: support automatic numbering; use \eightpoint
+                        and change other formatting to match ltugboat.
 
-                      Define \LuaHBTeX abbrev.
+                      New macro \titleref to typeset a book (etc.) title.
+                      New macro \tubsentencespace to force
+                        end-of-sentence space.
+                      New abbrev \LuaHBTeX.
                       
                       Incorporate tugboat.cmn into tugboat.sty (this file),
-                        so there's only one place to look.
+                        so there's only one file to maintain.
 
 1.32      16 Jun 25   \disablemetacode: define.
 
