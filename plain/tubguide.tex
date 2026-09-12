@@ -2,9 +2,9 @@
 %% @texfile{
 %%     filename   = "tubguide.tex",
 %%     version    = "1.32",
-%%     date       = "2025-06-16",
+%%     date       = "2026-09-11",
 %%     filetype   = "TUGboat Authors' Guide",
-%%     copyright  = "Copyright 1989, 1992, 2006, 2012-2025 TeX Users Group.
+%%     copyright  = "Copyright 1989, 1992, 2006, 2012-2026 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -34,7 +34,7 @@
 % ****************************************************************
 
 \pageno=1
-\def\rtitlex{\def\tubfont{\tenpoint\rm}\TUB{} Authors' Guide, June 2025}
+\def\rtitlex{\def\tubfont{\tenpoint\rm}\TUB{} Authors' Guide, \today}
 \def\midrtitle{}
 
 \title *\TUB\/ authors' guide*
@@ -54,16 +54,9 @@ subsequently; the original appeared in
 
 \article
 
-With this report we hope to fill a lacuna (some might say ``void'')
-whose existence we have been attributing to the usual factors: tight
-schedules, alternative priorities and warty \TeX\ code.  We now feel
-the macros in use for \TUB\/ have stabilized to the extent that
-documentation and suggestions for authors will remain fairly constant,
-and we hope this article can serve as a reasonable guide to
-preparation of manuscripts for \TUB.  Authors who have used the \TUB\/
-macros before will note several changes (including more modern names
-for the style files).  Suggestions and comments are quite welcome at
-the addresses listed below.
+We hope this article can serve as a reasonable guide to preparation of
+plain \TeX\ manuscripts for \TUB. Suggestions and comments are quite
+welcome at the addresses listed below.
 
 \TUB\/ was originally typeset with only a \plain-based package. Later,
 as demand for style files follows wherever \LaTeX\ devotees wander, a
@@ -80,12 +73,15 @@ copy a little easier.
 
 \head * The \plain-based macros: {\tt tugboat.sty} *
 
-The macros are contained in two files, |tugboat.sty| and
-|tugboat.cmn|.\footnote{$^1$}{1) A file |tugproc.sty| is also
-distributed, but no longer used. 2) |tugboat.cmn| used to be named {\tt
-tugboat.com}, but that notation was in conflict with conventions of
-\acro{MS-DOS} and other operating systems; no conflicts are known to
-exist for |.cmn|.}
+The macros are contained in the file |tugboat.sty|.\footnote{$^1$}{%
+1) The extension |.sty| is unfortunate, as that is also the convention
+for \LaTeX\ styles. The \TUB\ file predates \LaTeX.
+2) A file |tugproc.sty| is also distributed, but no longer used.
+3) A file |tugboat.cmn| was distributed until 2026; its contents are now
+incorporated into |tugboat.sty|.
+4) |tugboat.cmn| was originally named {\tt tugboat.com}, but that notation
+was in conflict with conventions of \acro{MS-DOS} and other operating
+systems.}
 
 \subhead * General description of tags *
 
@@ -724,14 +720,9 @@ listed under tags.
 
 \head * Common abbreviations and utilities *
 
-Definitions of many commonly used abbreviations such as |\MF|
-and |\BibTeX| are contained in |tugboat.cmn|.  Please use these whenever
-possible rather than creating your own.  We will add to the list as
-necessary.
-
-Several other constructions that we have found useful for both
-\plain- and \LaTeX-style input have been incorporated in
-|tugboat.cmn|.
+Definitions of many commonly used abbreviations are provided. Please use
+these whenever possible rather than creating your own. We will add to
+the list as necessary. Some 
 
 \list
 \item |\acro| sets an all-caps argument in caps one size smaller than
@@ -765,7 +756,11 @@ which ``laps'' into neighboring regions.
             <descender dimen>]
 \endverbatim
 allows {\it ad hoc\/} construction of
-struts.
+struts. Plain \TUB\ redefines \cs{strut} to be different than plain
+\TeX, namely with the height and depth of the parenthesis in the current
+font; \cs{strutt} is defined to be nearly the same as the plain \TeX\
+\cs{strut}, with the height of the parenthesis and the depth as
+necessary to make the height+depth be \cs{normalbaselineskip}.
 
 \item |\makeatletter| |\catcode|s the |@| for internal control-sequences.
 There are also more general functions
@@ -784,17 +779,13 @@ this article.
 
 \endlist
 
-Readers may look at the end of |tugboat.cmn| after the
-|\endinput| statement to see further documentation on the contents of the file.
-
 
 \subhead * Issue makeup *
 Constructing an entire issue of \TUB\/ requires use of a few features
 that authors may notice when articles are returned for proofing.
 |\xrefto| allows for symbolic cross-referencing, but is enabled only
-late in the production process.  The distribution version of
-|tugboat.cmn| defines |\xrefto| so that ``???''\ is typeset whenever it
-is called.  Not to worry.
+late in the production process. By default, \xrefto| is defined to
+|simply typeset ``???'; not to worry.
 
 We also put notes into the file since there are many things to
 remember, and these appear as |\TBremark{...}|.  Authors can look for

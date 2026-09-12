@@ -3,7 +3,7 @@
 %%     version    = "see below \fileversion"
 %%     date       = "see below \filedate",
 %%     filetype   = "was plain TeX macros for TUG Proceedings; now unused",
-%%     copyright  = "Copyright 1990-2016 TeX Users Group.
+%%     copyright  = "Copyright 1990-2026 TeX Users Group.
 %%                   Unlimited copying and redistribution of this file
 %%                   are permitted as long as this file is not
 %%                   modified.  Modifications (and redistribution of
@@ -13,19 +13,18 @@
 %%     codetable  = "ISO/ASCII",
 %%     keywords   = "tex users group, tugboat, proceedings, plain tex",
 %%     abstract   = "This file contains the plain-based macros
-%%            that were used in proceedings issues of TUGboat, the
+%%            that were used in early proceedings issues of TUGboat, the
 %%            Communications of the TeX Users Group.  Now unused."
 %%     }
 %% *********************************************************
 %%
 %%  Use of this file also requires the following files:
 %%      TUGBOAT.STY (version 1.09+)
-%%      TUGBOAT.CMN (version 1.08+) (loaded by TUGBOAT.STY)
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\def\fileversion{v1.22}
-\def\filedate{26 Sep 16}
+\def\fileversion{v1.33}
+\def\filedate{2026-09-12}
 
 \message{File `TUGPROC.STY' \fileversion \space\space <\filedate>}
 
@@ -318,17 +317,23 @@
 
 \endinput
 
-%% *********************************************************
 
-Change History
---------------
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  History of changes to tugproc..sty
+
+1.33   update header omit tugboat.cmn, now integrated into tugboat.sty;
+         no changes to code.
+
+<interim versions skipped>
+
 1.22   update header; remark that this is no longer used; no changes to code.
 
 <interim versions skipped>
 
 1.11   changed TUG address in header to Santa Barbara
-       parameterized dates, etc., in running footers
-       initialized them at top of file instead of in footer text
+         parameterized dates, etc., in running footers
+         initialized them at top of file instead of in footer text
 
 1.10   changed \tenrm to \tenpoint in definitions of \rtitle and \rfoot
          so that \sl will be properly defined if used in that context

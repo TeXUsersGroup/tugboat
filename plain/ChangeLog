@@ -1,3 +1,12 @@
+2026-09-12  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.sty: incorporate tugboat.cmn; it has not been used in
+	the LaTeX ltugboat.sty for decades, if ever.
+	* tugboat.cmn: remove.
+	* tubguide.tex: remove mentions of tugboat.cmn; other tweaks.
+	* tugproc.sty: remove mentions to tugboat.cmn, now version 1.33.
+	* Makefile (tugboat.cmn): remove.
+
 2026-08-22  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.cmn (\normallineskiplimit): remove setting to 1pt, keep at 0.
