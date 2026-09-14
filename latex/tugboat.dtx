@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2026-09-10 v2.38
+                   [2026-09-14 v2.39
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -3374,7 +3374,7 @@
 
 \renewcommand{\footnotesize}{%
     \@setfontsize\footnotesize\@viiipt{9.5}%
-   \abovedisplayskip=1pt plus.33pt minus.33pt % 1/3 \topsep
+    \abovedisplayskip=1pt plus.33pt minus.33pt % 1/3 \topsep
     \belowdisplayskip=\abovedisplayskip
     \abovedisplayshortskip=\z@\@plus 3\p@
     \belowdisplayshortskip=\p@\@plus 3\p@\@minus\p@
@@ -4175,8 +4175,9 @@
 }
 \def\ps@titlepage{}
 
-% let's have a little space after the footnote marker.
+% Let's have a little space after the footnote marker,
 % also a little more space for the marker itself.
+% The argument is the footnote text.
 \long\def\@makefntext#1{%
   \parindent 1em
   \noindent
@@ -4191,11 +4192,11 @@
 %   \parindent 1em
 %   \noindent
 %   \hb@xt@2em{\hss\@makefnmark}#1}
-
 %    \end{macrocode}
 %
 % \begin{macro}{\tubraggedfoot}
-% To get a ragged-right footnote.
+% Produce a ragged-right footnote.
+% 
 %    \begin{macrocode}
 \newcommand{\tubraggedfoot}{\rightskip=\raggedskip plus\raggedstretch\relax}
 %    \end{macrocode}

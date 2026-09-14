@@ -1,14 +1,16 @@
 $Id$
 This file records noteworthy changes.  This file is public domain.
 
+-----------------
+2.39 (2026-09-14)
 ltugboat.cls:
 - the \makevmeta option to ltugboat's {verbatim} environment now works
   with tagging.
 - define \AI as \acro{AI}.
 - define \tubnewline as \texorpdfstring{\newline}{ }.
-- change \abovecaptionskip and \floatsep by +- (respectively) 1pt.
-- reduce \belowabstractskip to 12pt so there's a better chance of a first
-  column coming out even. 
+- change \abovecaptionskip and \floatsep by +- (respectively) 1pt,
+  and reduce \belowabstractskip to 12pt, so there's a better chance of
+  text columns coming out even.
 
 tugboat.bst:
 - recognize Unicode en dash (U+2013) so that "pp." is output instead of "p.".
