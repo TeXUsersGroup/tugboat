@@ -1,6 +1,13 @@
-2026-09-14  Karl Berry  <karl@freefriends.org>
+2026-09-15  Karl Berry  <karl@freefriends.org>
 
-	* version 2.39 (2026-09-14) uploaded to CTAN.
+	* version 2.39 (2026-09-15) uploaded to CTAN.
+	* NEWS: update.
+
+2026-09-15  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\@makecaption): reverse usage of
+	\above/belowcaptionskip for tables, where normally we place the
+	caption above, so we want a nonzero skip below that caption.
 	* NEWS: update.
 
 2026-09-11  Karl Berry  <karl@freefriends.org>

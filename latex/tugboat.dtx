@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2026-09-14 v2.39
+                   [2026-09-15 v2.39
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -3274,10 +3274,22 @@
 \def\tubcaptionfonts{\small}%
 %    \end{macrocode}
 %
-% Ok, here is \cs{@makecaption}.
+% One more \TUB\ thing for \cs{@makecaption}: we prefer to have captions
+% below figures (normal), but above tables (not what \LaTeX\ expects).
+% We've defined \cs{abovecaptionskip} to be nonzero and
+% \cs{belowcaptionskip} to be zero, which is thus correct for tables,
+% but incorrect for tables; thus we use the values reversed, so that
+% \cs{abovecaptionskip} is 
+%
 %    \begin{macrocode}
+\def\tbtablestring{table}
 \long\def\@makecaption#1#2{%
-  \vskip\abovecaptionskip
+  %\TBDebug{dtx.captype=\@captype,str=\@tablestring}%
+  \ifx\@captype\tbtablestring
+    \vskip\belowcaptionskip % table reversed (zero)
+  \else
+    \vskip\abovecaptionskip % non-table normal above (nonzero)
+  \fi
   % try in an hbox:
   \sbox\@tempboxa{\tubcaptionfonts \frenchspacing \tubmakecaptionbox{#1}{#2}}%
   \ifdim \wd\@tempboxa > \hsize
@@ -3294,7 +3306,14 @@
     \global\@minipagefalse
     \hb@xt@\hsize{\tubcaptionleftglue\box\@tempboxa\hfil}%
   \fi
-  \vskip\belowcaptionskip}
+  %
+  % Caption below the caption (space wanted for tables).
+  \ifx\@captype\tbtablestring
+    \vskip\abovecaptionskip % table reversed (nonzero)
+  \else
+    \vskip\belowcaptionskip % non-table normal below (zero)
+  \fi
+}
 %    \end{macrocode}
 %
 % Also use \cs{tubcaptionfonts} for the caption

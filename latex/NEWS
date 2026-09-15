@@ -2,12 +2,12 @@ $Id$
 This file records noteworthy changes.  This file is public domain.
 
 -----------------
-2.39 (2026-09-14)
+2.39 (2026-09-15)
 ltugboat.cls:
-- the \makevmeta option to ltugboat's {verbatim} environment now works
-  with tagging.
 - define \AI as \acro{AI}.
 - define \tubnewline as \texorpdfstring{\newline}{ }.
+- the \makevmeta option to ltugboat's {verbatim} now works with tagging.
+- skips above/below captions corrected for tables, where the caption is above.
 - change \abovecaptionskip and \floatsep by +- (respectively) 1pt,
   and reduce \belowabstractskip to 12pt, so there's a better chance of
   text columns coming out even.
