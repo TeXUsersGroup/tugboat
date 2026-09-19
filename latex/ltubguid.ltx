@@ -610,8 +610,8 @@ paper.
 \label{sec:verbatim}
 
 For inline verbatim text, authors should ordinarily employ the
-facilities of \LaTeX{} itself, that is, the \cs{verb} macro.  This macro, of
-course, is highly restricted as to its usage\Dash primarily, it may
+facilities of \LaTeX{} itself, that is, the \cs{verb} macro. This macro,
+of course, is highly restricted as to its usage\Dash primarily, it may
 not appear in the argument of \emph{any} other macro, even
 \cs{footnote}.
 
@@ -707,8 +707,8 @@ We prefer slanted to Computer Modern typewriter italic.
 Using regular upright typewriter for comments is fine (preferred) too.
 
 \item \texttt{basicstyle=...}:
-We usually prefer \cs{small} for displayed verbatim, but not inline
-verbatim, hence the conditional.
+We usually prefer \cs{small} for displayed verbatim, but inline
+verbatim must remain at text size, hence the conditional.
 
 \item \pkgname{listings} does not easily support \tbUTF-8 for code
 points above 255. If you need such characters, a different package is
@@ -726,57 +726,57 @@ In short:
 \begin{enumerate}
 \item Please load either the \texttt{url} or (preferably) the
 \texttt{hyperref} package so that reasonable line breaking of urls can
-happen.
+happen:\\
+\verb|\usepackage[hidelinks]{hyperref}|
 
 \item Add \verb|\def\url{\tburl}| to your preamble and use \cs{url} in your
-document as usual. (It seems too intrusive for the \TUB\ classes to
-redefine something as fragile and widespread as \cs{url}.)
+document as usual. (At present, it seems too intrusive for the \TUB\
+class file itself to redefine something as fragile and widespread as
+\cs{url}; maybe someday.)
+
 \end{enumerate}
 The rest of this section is more details about the above.
 
+\subsubsection{Urls and (omitting) protocols}
+
 The main reason for preferring the above is that for the printed
 (visible) \TUB\ page, nowadays we typically prefer to omit a leading
-\texttt{https://}. But for the link to actually work in the output \PDF\
-or \HTML, the protocol is required (else the \PDF\ reader thinks it is
-a local filesystem path). Therefore the \texttt{ltugboat} class provides
-(as of 2023) the command \cs{tburl} for this.\footnote{This and related
-commands are wrappers around \cs{hyper@linkurl}.
-Thanks to Ulrike Fischer for doing the real work:
+\texttt{https://} or \texttt{http://}. But for the link to actually work
+in the output \PDF\ or \HTML, the protocol is required (else the \PDF\
+reader thinks it is a local filesystem path). Therefore the
+\texttt{ltugboat} class provides (as of 2023) the command \cs{tburl} for
+this.\footnote{This and related commands are wrappers around
+\cs{hyper@linkurl}. Thanks to Ulrike Fischer for doing the real work:
 \tburl{https://github.com/latex3/hyperref/issues/125}\raggedright}
 
 For example, the commands \verb|\tburl{tug.org}| and
 \verb|\tburl{https://tug.org}| both typeset the text `\texttt{tug.org}'
 (with the usual url line breaks possible) as a link to
-\url{https://tug.org}.
+\url{https://tug.org}. For web sites not supporting
+https, \verb|\tburl{http://example.org}| also works, and also strips the
+protocol.
 
-Since so few web sites do not support https,
-\verb|\tburl{http://example.org}| typesets the full url as text
-`\texttt{http://example.org}' as a link to itself.  If it's desirable to
-elide the http://, the variant \cs{tbhurl} can be used.
+Thus, \cs{tburl} and its siblings make live links and omit the
+protocol if \pkgname{hyperref} is loaded. We strongly recommend this.
 
-Thus, as shown, the correct protocol can be explicitly specified, and
-will be stripped for display. Just use \cs{tburl}.
-
-In short, \cs{tburl} and related make live links and omit the protocol
-if \pkgname{hyperref} is loaded. We highly recommend this.
-
-Without \texttt{hyperref}, they are merely synonyms for \cs{url}. This
-is ok, and we still request that the protocol not be included; if live
-links are not being produced in the output, the printed url without the
-protocol suffices. (When a user copies/pastes url text into a browser,
-it will normally work.)
-
-In order to keep using \cs{url} in a document body, we suggest
-\verb|\def\url{\tburl}|.
+Without \texttt{hyperref}, the commands are merely synonyms for
+\cs{url}. This is ok, and we still request that the protocol not be
+included; if live links are not being produced in the output, the
+printed url without the protocol suffices. When a user copies/pastes url
+text into a browser, it will normally work.
 
 For \texttt{ftp}, \texttt{rsync}, and other protocols, it is best to
-always include them explicitly and use \cs{url}:\\
+include them explicitly and use \cs{url}:\\
 \verb|\url{ftp://tug.org}|,\\ \verb|\url{rsync://tug.org}|, etc.
 
-Finally, sometimes it is best to allow line breaks at hyphens in urls.
-We've found that this is not confusing in practice.  To enable this and
+\subsubsection{Urls and hyphens}
+
+Sometimes it is necessary to allow line breaks at hyphens in urls to get
+reasonable line breaks. We've found that this is not confusing in
+practice, so not hesitate if it helps. To enable this and
 \pkgname{hyperref} at the same time, it's necessary to load
-\pkgname{url} explicitly and enable the \tbcode{hyphens} option: 
+\pkgname{url} explicitly and enable the \tbcode{hyphens} option, before
+loading \pkgname{hyperref}:
 
 \begin{verbatim}
 \usepackage[hyphens]{url}
@@ -788,14 +788,22 @@ We've found that this is not confusing in practice.  To enable this and
 
 The shortcut macro \cs{tburlfootnote} makes a ragged-right footnote
 using the \cs{tburl} command. We recognize that when writing url
-references, sometimes the best option is to put urls in footnotes.
+references, sometimes the best option is to put urls in footnotes:\\
+\verb|\tburlfootnote{https://tug.org}|
 
 However, when it's sensible, we prefer to have urls as either
 parentheticals in the main text or in bibliography entries, to ease page
-breaking and reading flow. It is ideal to minimize\slash avoid footnotes
-in general.
+breaking and reading flow.
 
-\subsubsection{Url shortcuts}
+\subsubsection{Extremely long urls}
+
+Sometimes breaking at hyphens isn't enough, moving urls to the
+bibliography or footnotes isn't enough, rewriting the text isn't enough:
+you just have extremely long urls that cannot be decently broken. In
+this case, loading the \pkgname{xurl} package to allow breaking at any
+character in urls is ok. Please keep it as a last-ditch resort.
+
+\subsubsection{Url shortcut links}
 \label{sec:urlshortcuts}
 
 A different aspect of urls: the \tug\ web server supports a shortcut url
@@ -808,6 +816,12 @@ will disappear.
 
 The only way to create a \url{tug.org/l/} shortcut is by request, which
 we are happy to receive.
+
+\subsubsection{The word ``url''}
+
+Finally, when the word/abbreviation ``url'' is needed in the text, we
+prefer all-lowercase, as here. Although this is not logical, it has
+become so ubiquitous that capitals feel unnecessarily distracting.
 
 \section{Bibliographies}
 \label{sec:biblio}
