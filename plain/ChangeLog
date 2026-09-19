@@ -1,3 +1,13 @@
+2026-09-19  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.sty (\maxdepth): do not redefine as 2pt,
+	let plain.tex's 4pt stand.
+
+2026-09-12  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.sty: release to CTAN.
+	v1.33 2026-09-12.
+	
 2026-09-12  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.sty (\tubsentencespace, \titleref): new macros.

@@ -22,7 +22,7 @@
 
 \def\thistubstyle{plain}
 \def\fileversion{v1.33}
-\def\filedate{2026-09-12}
+\def\filedate{2026-09-19}
 
 % general items
 
@@ -1352,7 +1352,6 @@
 \newdimen\normalcollgt  \normalcollgt=54pc      % 52pc for 5#2
 \newdimen\collgt        \collgt=\normalcollgt
 \newdimen\Collgt
-\maxdepth=2pt
 \newdimen\botlgt        \botlgt=\z@
 \newdimen\rfootlgt      \rfootlgt=2pc
 
@@ -3364,6 +3363,8 @@ Version   Date        Changes
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+                      delete assignment of \maxdepth, to keep plain.tex's 4pt.
+
 1.33      12 Sep 26   \abovecaptionskipamount: increase to 4pt to match
                         change in ltugboat.
                       
