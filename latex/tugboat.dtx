@@ -28,7 +28,7 @@
 %<ltugboatsty>\ProvidesPackage{ltugboat}
 %<ltugprocsty>\ProvidesPackage{ltugproc}
 %<ltugcomn>   \ProvidesPackage{ltugcomn}
-                   [2026-09-15 v2.39
+                   [2026-10-02 v2.39
 %<ltugboatcls>                       TUGboat journal class%
 %<ltugproccls>                       TUG conference proceedings class%
 %<ltugboatsty|ltugprocsty>           TUG compatibility package%
@@ -1418,7 +1418,7 @@
 % But it feels like that is too intrusive a change, even though in
 % practice we always prefer tt slanted.
 \DeclareRobustCommand{\cs}[1]{\texorpdfstring
-  {{\tt \char`\\#1}\@}%
+  {{\tt \def\_{\char95 }\char`\\#1}\@}%
   {\textbackslash #1}%
 }
 %

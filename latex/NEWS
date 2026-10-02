@@ -1,6 +1,9 @@
 $Id$
 This file records noteworthy changes.  This file is public domain.
 
+ltugboat.cls:
+- \cs redefines \_ to typeset \char95 from \tt, to avoid \rm underscores.
+
 -----------------
 2.39 (2026-09-15)
 ltugboat.cls:

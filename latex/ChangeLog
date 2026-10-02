@@ -1,3 +1,9 @@
+2026-10-02  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.dtx (\cs): define \_ to typeset \char95 to avoid \rm
+	underscores. Turns out [T1]{fontenc} also changes the position and
+	weight of the hyphen character, among others, not for the better.
+
 2026-09-19  Karl Berry  <karl@freefriends.org>
 
 	* ltubguid.ltx (urls): split into more subsections;
