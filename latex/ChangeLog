@@ -1,5 +1,9 @@
 2026-10-02  Karl Berry  <karl@freefriends.org>
 
+	* tubverbpar.tex: also count character widths, just to have it.
+
+2026-10-02  Karl Berry  <karl@freefriends.org>
+
 	* tugboat.dtx (\cs): define \_ to typeset \char95 to avoid \rm
 	underscores. Turns out [T1]{fontenc} also changes the position and
 	weight of the hyphen character, among others, not for the better.

@@ -25,9 +25,26 @@ Before another \texttt{verbatim} with empty argument,
 but default size changed to \cs{small} via hook.
 Should be normal line spacing, not squeezed.
 \begin{verbatim}[]
-default size (large) verbatim2.
+default size (small) verbatim2.
 second verbatim line, default size.
 \end{verbatim}
 Normal text again after verbatim2. Again should have normal line spacing.
+
+Trying now to see how many characters fit:
+\begin{verbatim}[\normalsize]
+1234567890123456789012345678901234567890123
+That's 33 characters, with \normalsize.
+\end{verbatim}
+
+\begin{verbatim}
+12345678901234567890123456789012345678901234567
+That's 37 characters, with \small.
+\end{verbatim}
+
+Now with footnotesize:
+\begin{verbatim}[\footnotesize]
+12345678901234567890123456789012345678901234567890123
+That's 43 characters, with \footnotesize.
+\end{verbatim}
 
 \end{document}
