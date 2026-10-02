@@ -1,3 +1,9 @@
+2026-10-02  Karl Berry  <karl@freefriends.org>
+
+	* acrocheck-tub: ignore usepackage.*{fontenc} and ActualText=.
+
+	* tugboat.abbr-ctx (\AI, \LLM): new abbrevs.
+
 2026-09-07  Karl Berry  <karl@freefriends.org>
 
 	* check-auth-title-tub (read_artfile): crudely handle

@@ -13,6 +13,7 @@
 \def\ACROBAT   {Acrobat}
 \def\ADE       {\acro{ADE}}
 \def\AFM       {\acro{AFM}}
+\def\AI        {\acro{AI}}
 \def\ALEPH     {Aleph}
 \def\AMS       {\acro{AMS}}
 \def\ARM       {\acro{ARM}}
@@ -77,6 +78,7 @@
 \def\LED       {\acro{LED}}
 \def\LINUX     {Linux}
 \def\LISP      {Lisp}
+\def\LLM       {\acro{LLM}}
 \def\LMTX      {\acro{LMTX}}
 \def\LPEG      {\acro{LPEG}}
 \def\LUA       {Lua}

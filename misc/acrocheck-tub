@@ -14,6 +14,8 @@ egrep -Hn "$acro_ok" "$@" \
       -e 's/\\\(bibliography\|code\|pkg\|uname\|[um]code\) *{[^}]*}//g' \
       -e 's/\\\(includegraphics\|cite\|bibitem\)\(\[[^]]*\]\)\?{[^}]*}//g' \
       -e 's/\\\(DeclareUnicodeCharacter\|label\|ref\|pageref\) *{[^}]*}//g' \
+      -e 's/usepackage.*{fontenc}//g' \
+      -e 's/ActualText=.*//g' \
       -e 's/\(src\|id\)=".*"//g' \
       -e 's/"[A-F]\+\>//g' \
       -e 's/``'"[^']*''//g" \
