@@ -1,5 +1,11 @@
 2026-10-04  Karl Berry  <karl@freefriends.org>
 
+	* check-auth-title-tub (compare): compare only fields that exist.
+	(equal_fields): also unify "\ ".
+	(parse_capsules, read_confile): ignore elec.
+
+2026-10-04  Karl Berry  <karl@freefriends.org>
+
 	* tugboat.abbr-ctx (\origquote, \origquotation): save our true
 	originals.
 	(\LuaMetaTeX, \dd, \ii, \setupalign, \setupsynonyms): new defs

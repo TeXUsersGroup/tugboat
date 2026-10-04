@@ -63,7 +63,7 @@ sub main {
     #$::HASH_AS_STRING_NL = 1;
     #&info_hash ("cap.$capkey", $capsule);
     if (exists $confile{$capkey}) {
-      &debug_hash ("comparing capsule to con.$capkey", $confile{$capkey});
+      &debug_hash ("\ncomparing capsule to con.$capkey", $confile{$capkey});
       &compare ($capsule, $confile{$capkey});
       delete ($confile{$capkey});
     } else {
@@ -85,6 +85,8 @@ sub main {
     }
     $status = 1;
   }
+  
+  print "\n", 0 + keys %capfile, " compared.\n";
   return $status;
 }
 
@@ -139,21 +141,22 @@ Email questions or problems to tugboat\@tug.org.
 sub compare {
   my ($cap,$other) = @_;
 
-  # always compare authors and titles.
-  my @fields = qw(author title);
+  # always compare titles.
+  my @fields = ("title");
   #
-  my $other_label;
-  if (exists $other->{"article"}) {
-    # for articles, we do not have the category or pageno.
-    $other_label = "art";
-    # for ltnews, we have no article info to compare.p
-    return if ! exists $other->{"author"};
-  } else {
-    $other_label = "con";
-    push (@fields, qw(category pageno));  
+  # compare what we can of other fields, since the
+  # author/category/pageno might be missing.
+  for my $f (qw(author category pageno)) {
+    push (@fields, $f) if $cap->{$f} && $other->{$f};
   }
   
+  # whether the "other" the cont entry or the article source entry.
+  my $other_label = exists $other->{"article"} ? "art" : "con";
+  
   for my $field (@fields) {
+    #warn "comparing field=$field\n";
+    #&debug_hash("  cap", $cap);
+    #&debug_hash("  other", $other);
     if (! equal_fields ($cap->{$field}, $other->{$field})) {
       print "$cap->{pageno}: $field differs:\n";
       print "  cap=`$cap->{$field}'\n";
@@ -162,8 +165,8 @@ sub compare {
   }
 }
 
-# Test fields for practical equality:
-# ties, \newline, \\, \CONNECT, etc., become a single space,
+# Test fields for practical equality: turn ties and
+# \newline \CONNECT \\ \, \<space> etc., into a single space for comparison,
 # and then whitespace is unified.
 # 
 sub equal_fields {
@@ -172,10 +175,10 @@ sub equal_fields {
   # Jim Hefferon titles (tb147reviews-lode) can't be feasibly compared.
   return 1 if $b =~ /\\bookt.*\\booka/;
 
-  $a =~ s/~|\\(newline|CONNECT|,)|\\\\/ /g;
+  $a =~ s/~|\\(newline|CONNECT|\\|,| )/ /g;
   $a = &normalize_whitespace ($a);
   #
-  $b =~ s/~|\\(newline|CONNECT|,)|\\\\/ /g;
+  $b =~ s/~|\\(newline|CONNECT|\\|,| )/ /g;
   $b = &normalize_whitespace ($b);
   
   return $a eq $b;
@@ -229,7 +232,9 @@ sub parse_capsules {
     } elsif (exists $ret{$key}) {
       die "key (pageno) already seen: $ret{$key} " . &hash_as_string (%c_tex);
     } elsif ($c_tex{"category"} eq "Abstracts") {
-      ; # it is too hard to match the combined abstracts entry
+      ; # too hard to match the combined abstracts entry
+    } elsif ($key =~ /\{elec\}/) {
+      ; # too hard to match varying election strings
     } else {
       $ret{$key} = \%c_tex;
     }
@@ -347,8 +352,7 @@ sub read_confile {
       next;
     }
     my ($secname) = ($sec =~ m/\s*(.*)</);
-    #&debug ("  doing section `$sec' -> $secname");
-    &debug ("  doing section: $secname");
+    &ddebug ("  doing section: $secname"); # from `$sec'
 
     # Each individual entry in the cont file is
     #   \subsec Author Name\\Title\\pageno<
@@ -357,7 +361,7 @@ sub read_confile {
     # with arbitrary line breaks and whitespace.
     # Start by splitting at \subsec.
     my @cont_items = split (/\s*^\s*\\subsec/m, $sec);
-    &debug ("    " . (0 + @cont_items) . " entries");    
+    &ddebug ("    " . (0 + @cont_items) . " entries");    
     shift (@cont_items) if @cont_items; # ignore stuff before first \subsec
 
     for my $cont (@cont_items) {
@@ -393,15 +397,18 @@ sub read_confile {
       &ddebug ("    pageno = `$pageno'");
       
       my $key = $pageno;
+      (my $ident = $key) =~ s/.*\{(.*)\}/$1/; # \getfirstpage{komo}->komo
       if (! $key) {
         # should have already died if empty, but let's just be sure.
         die "key (pageno) is empty, cont: $cont";
       } elsif (exists $ret{$key}) {
         die "key (pageno) $key already seen: $ret{$key} vs. $cont";
       } elsif ($secname eq "Abstracts") {
-        (my $ident = $key) =~ s/.*\{(.*)\}/$1/; # \getfirstpage{komo}->komo
+        ; # skip, too hard to match with the combined abstracts entry
         &debug ("skipping abstract: $ident ($title)");
-        ; # skip, too hard to match the combined abstracts entry
+      } elsif ($ident eq "elec") {
+        ; # skip, too hard to match with the combined abstracts entry
+        &debug ("skipping elec");
       } else {
         my %cont;
         $cont{"author"} = $author if $has_author;
@@ -420,7 +427,7 @@ sub read_confile {
 # the corresponding article source file and return a hash containing its
 # title, author. The constant key "article", with value 1, is also in
 # the return, so that we can easily distinguish these article hashes
-# from others.
+# from the capsule and content hashes.
 # 
 sub read_artfile {
   my ($capfile,$capsule) = @_;
