@@ -10,6 +10,10 @@
 
 \usepackage{fix-cm}
 
+% make copies of the latex environments, since context has its own commands.
+\let\origquote\quote \let\endorigquote\endquote
+\let\origquotation\quotation \let\endorigquotation\endquotation
+
 \def\ACROBAT   {Acrobat}
 \def\ADE       {\acro{ADE}}
 \def\AFM       {\acro{AFM}}
@@ -87,6 +91,7 @@
 \def\LUALATEX  {Lua\LATEX}
 \def\LUAMETAFUN{Lua\-MetaFun}
 \def\LUAMETATEX{Lua\-\METATEX}
+\def\LuaMetaTeX{Lua\-\METATEX}
 \def\LUATEX    {\LUA\-\TeX}
 \def\LUATOOLS  {{\tt luatools}}
 \def\Lua       {Lua}
@@ -199,7 +204,7 @@
 \def\pdfTeX    {pdf\-\/\TeX}
 
 % 
-\def\abs#1{|#1|}
+\def\abs#1{\left|#1\right|}
 \def\alignhere{}
 \def\arg{\tubbraced}
 \def\at{}
@@ -214,6 +219,7 @@
 \def\crlf{\newline}
 \def\ctxlua#1{}
 \def\ctxluabuffer[#1]{}
+\def\dd{d}
 \def\definecolor[#1][#2]{}
 \def\definedescription[#1][#2]{}
 \def\definefont[#1]#2[#3]{}
@@ -228,10 +234,12 @@
 \NewDocumentCommand\floor{om}{\lfloor#2\rfloor}
 \def\from{\tbsurl}
 \def\getnamedglyphdirect{}
+\def\gradient{\nabla}
 \def\hairline{}
 \def\head{\item}
 \def\high{\textsuperscript}
 \def\hyphenatedurl{\url}
+\def\ii{i\,}
 \def\im#1{\(#1\)}
 \def\in#1[#2]{#1~\ref{#2}}
 \def\inrightmargin{\marginpar}
@@ -244,7 +252,6 @@
 \def\mtp#1{\mbox{ #1 }}
 \def\noheaderandfooterlines{}
 \let\noindentation = \relax
-\let\origquote = \quote
 \def\overbar{\overline}
 \newcommand\page[1][]{}
 \def\percent{\char`\%}
@@ -252,12 +259,12 @@
 \def\placenotes[#1]{}
 \def\plusone{}
 \def\quote#1{{`#1'}}
-\let\origquotation = \quotation
 \def\quotation#1{{``#1''}}
 \def\samplefile#1{\input #1\relax \unskip} % filenames are problematic
 \def\scale[#1]#2#3{}
 \def\setlayer[#1] [#2]#3{}
 \def\setmscale#1{}
+\newcommand\setupalign[1][]{}
 \def\setvariables[#1]#2[#3]{}
 \def\ss{}
 \def\showframe{}
@@ -306,7 +313,7 @@
 \long\def\setupfloats[#1]{}
 \long\def\setuphead[#1] [#2]{}
 \long\def\setuplayout[#1]{}
-\long\def\setuppagenumbering[#1]{}
+\NewDocumentCommand\setupsynonyms{oo}{} % two optional arguments
 \long\def\setuptolerance[#1]{}
 \long\def\setupwhitespace[#1]{}
 
@@ -460,8 +467,10 @@
 \def\startplacetable[#1]{}
 \def\stopplacetable{}
 
-\def\startquotation{\begingroup \origquotation}
-\def\stopquotation{\par\endgroup\smallskip}
+\def\tubquotationrightmargin{0pt plus4em}
+\def\startquotation{\begin{origquotation}
+  \rightskip=\tubquotationrightmargin \relax}
+\def\stopquotation{\end{origquotation}\par\smallskip}
 
 \def\startTEX{\starttyping}
 

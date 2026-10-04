@@ -1,3 +1,12 @@
+2026-10-04  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.abbr-ctx (\origquote, \origquotation): save our true
+	originals.
+	(\LuaMetaTeX, \dd, \ii, \setupalign, \setupsynonyms): new defs
+	for tb147hagen-notagging.
+	(\startquotation, \stopquotation): do \begin/end{origquotation}.
+	(\tubquotationrightmargin): allow some raggedness aka stretch.
+
 2026-10-02  Karl Berry  <karl@freefriends.org>
 
 	* acrocheck-tub: ignore usepackage.*{fontenc} and ActualText=.
