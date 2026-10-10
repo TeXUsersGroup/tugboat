@@ -24,8 +24,8 @@ that goes into them and the landing files, so that if we need to make
 corrections, we don't have to go through all the regeneration steps.
 
 Along with the issue.xml for crossref, the scripts simultaneously
-prepare a set of html "landing" files, which are what the doi urls
-resolve to. There's an overview of the process in the sibling file
+prepare html "landing" files, which are what the doi urls resolve to.
+There's an overview of the process in the sibling file
 ./README-landing.txt here, and exact steps are given in
 ./README-process.txt.
 

@@ -1,5 +1,17 @@
 2026-10-10  Karl Berry  <karl@freefriends.org>
 
+	* Makefile,
+	* bibissue,
+	* capcrossref.pl,
+	* cr-do-issue,
+	* crossref/Makefile,
+	* crossref/README,
+	* crossref/README-landing.txt,
+	* crossref/ltx2crossrefxml-tugboat.cfg,
+	* lists-authinfo.txt: doc tweaks for tb147berry-crossref article.
+
+2026-10-10  Karl Berry  <karl@freefriends.org>
+
 	* tb146capsule.txt: braced more capitalizations.
 
 2026-10-04  Karl Berry  <karl@freefriends.org>

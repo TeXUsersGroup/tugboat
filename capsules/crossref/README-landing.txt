@@ -33,13 +33,12 @@ files in dir1.lndout.
 
 All this takes several passes. The overall process: run cr-do-issue,
 inspect the dir1.lndout/*.html and dir2.process/issue.xml output files.
-Where there are problems, make corrections to the capsule.txt, or the
-bbl/abs, or the code to support what needs to be supported. Rerun
-cr-do-issue.
+Where there are problems, make corrections as needed to the capsule.txt,
+or the bbl/abs, or the code. Rerun cr-do-issue.
 
 This work can be done article by article as they are submitted, edited,
-and approved, or all at the end. In any case, there is lots of stuff
-that can only happen at the end. See ./README-process.txt for exact steps.
+and approved, or all at the end. In any case, there is also lots of stuff
+that can happen only at the end. See ./README-process.txt for exact steps.
 
 Ultimately, when an issue is final and gets published, we copy the
 landing files to the web-visible directory
@@ -47,4 +46,4 @@ landing files to the web-visible directory
 files, etc. We upload the final issue.xml to crossref. And we copy the
 final files, and all the constituents that went into them, into
 crossref/dir3.uploaded for archival, in case we need to make
-corrections.
+corrections. Again, see README-process.txt.

@@ -99,7 +99,7 @@ chicken = #--dry-run
 upload-test:
 	$(upload) $(chicken) $(crossref_user) \
 	  --host $(crossref_test_host) \
-	   --metadata $(xml_output)
+          --metadata $(xml_output)
 #
 # It costs money to register a new doi. Don't do it until you're sure.
 # See README-process.txt for all the stuff surrounding this.

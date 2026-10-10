@@ -165,8 +165,8 @@ sub crossref_write_files {
     #
     # The url for the landing page is just the article url with html.
     (my $landing_url = $cap{"url"}) =~ s/pdf$/html/;
-    # We can only handle pdf articles until we need to do otherwise:
-    die "Not prepared for landing page = article url = $landing_url"
+    # We handle only pdf articles until we need to do otherwise:
+    die "Not prepared for landing page = non-pdf article url = $landing_url"
       if $landing_url eq $cap{"url"};
     #
     # The url should always be either /something or https://tug.org/something.
@@ -177,7 +177,7 @@ sub crossref_write_files {
     # Add host part if not present:
     $landing_url = "https://tug.org$landing_url"
       if $landing_url =~ m,^/,;
-    $landing_url =~ s,/members/,/,; # elide private area
+    $landing_url =~ s,/members/,/,; # elide private area for Crossref
     #
     print $RPI "%paperUrl=$landing_url\n";
     
@@ -573,8 +573,8 @@ sub bibtex_cite_key {
 
 
 # Read Nelson Beebe's tugboat.bib file and return a hash with the url
-# field values as the keys, and the whole entry as we want to show it in
-# the landing file as the value. We simplify Nelson's entries a bit,
+# field values as the keys, and the whole entry as we want to show it on
+# the landing page as the value. We simplify Nelson's entries a bit,
 # and change the citation key to avoid collisions if a user both copies
 # the entry from the landing page and uses tugboat.bib.
 # 
@@ -633,7 +633,7 @@ sub read_nbib {
 # Take and return a BibTeX entry or value. Used to clean both the BibTeX
 # entries we synthesize from the capsule file and the entries we take
 # from tugboat.bib. The idea is to make the entries we print on the
-# landing file more generic/widely usable.
+# landing pages more generic/widely usable.
 # 
 sub clean_tugboat_bib_entry {
   my ($s) = @_;

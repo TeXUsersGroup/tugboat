@@ -65,8 +65,8 @@ cr_xmlprocess = crossref/dir2.process
 cr_verbose = #--verbose
 #
 # The arguments we pass to cr-do-issue.
-cr_args =  $(cr_verbose) tb$(crossref_iss)capsule.txt \
-           $(cr_capout) $(cr_lndout) $(cr_xmlprocess)/issue.xml
+cr_args = $(cr_verbose) tb$(crossref_iss)capsule.txt \
+          $(cr_capout) $(cr_lndout) $(cr_xmlprocess)/issue.xml
 
 crl: # just landing pages
 	@echo "sorry, not currently working; see cr-landing-bbl-abs"

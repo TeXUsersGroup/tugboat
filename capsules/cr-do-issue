@@ -3,7 +3,7 @@
 # Public domain.
 # 
 # Overall preparation of an issue for Crossref, including the XML to be
-# uploaded (but don't actually do the upload) and generation of lnding
+# uploaded (but don't actually do the upload) and generation of landing
 # pages (but don't install them).
 # 
 # The main complication is the additional files for the bibliographies
@@ -14,7 +14,7 @@
 verbose=:
 # --landing-only is not currently working because cr-landing-bbl-abs
 # reads it to get the references list; see that script. But leave the
-# option in place in case we get around to dealing with it someday.
+# option in place in case we need to deal with it someday.
 landing_only=false
 
 while test $# -gt 0; do
@@ -76,7 +76,7 @@ if test ! -d "$cap_outdir"; then
   exit 1
 fi
 
-lnd_outdir=$3  # destination for landing files
+lnd_outdir=$3  # destination for landing pages
 if test ! -d "$lnd_outdir"; then
   echo "$0: landing output not a directory: $lnd_outdir" >&2
   exit 1
@@ -164,7 +164,7 @@ if ! $landing_only; then
   run_cmd ./captub $cdebug --webroot=/ --crossref="$cap_outdir" $capsule \
           >/dev/null # discarded since it's the contents web page.
 
-  # the .rpi files should never need to be hand-edited,
+  # the .rpi files should never need hand-editing,
   # so can just overwrite in our processdir:
   cp -pf "$cap_outdir"/*.rpi "$cr_processdir"/ || exit 1
 
@@ -180,8 +180,8 @@ cp -pf "$cap_outdir/"*.html "$lnd_outdir"/ || exit 1
 # crossref xml file, and with the abstracts copied above.
 run_cmd ./cr-landing-bbl-abs "$crossrefxml_file" "$lnd_outdir"/
 
-# if the landing pages contain any literal backslashes or $...$ math
-# expression, something went wrong -- except in the displayed bib
+# If the landing pages contain any literal backslashes or $...$ math
+# expressions, something went wrong -- except in the displayed bib
 # entries (the info we generate to "cite this article"), which have many
 # backslashes, so don't look at those.
 bs_files=
