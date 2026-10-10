@@ -5,8 +5,8 @@
     xsi:schemaLocation="http://www.crossref.org/schema/5.4.0
                        https://www.crossref.org/schemas/crossref5.4.0.xsd">
   <head>
-    <doi_batch_id>ltx2crossref-20260830212454-42634</doi_batch_id>
-    <timestamp>20260830212454</timestamp>
+    <doi_batch_id>ltx2crossref-20260831214350-13798</doi_batch_id>
+    <timestamp>20260831214350</timestamp>
     <depositor>
       <depositor_name>TUGboat production</depositor_name>
       <email_address>doi-tugboat@tug.org</email_address>
@@ -44,7 +44,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146nijenhuis-tug26</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146nijenhuis-tug26.html</resource>
       </doi_data>
     </journal_article>
@@ -68,7 +68,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146tug26-agm</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146tug26-agm.html</resource>
       </doi_data>
     </journal_article>
@@ -91,7 +91,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146nijenhuis-travels</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146nijenhuis-travels.html</resource>
       </doi_data>
     </journal_article>
@@ -114,7 +114,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146beeton-tughistory</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146beeton-tughistory.html</resource>
       </doi_data>
       <citation_list>
@@ -175,7 +175,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146ltnews43</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146ltnews43.html</resource>
       </doi_data>
     </journal_article>
@@ -199,7 +199,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146fischer-tagging26</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146fischer-tagging26.html</resource>
       </doi_data>
       <citation_list>
@@ -279,7 +279,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146mittelbach-accessibleclasses</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146mittelbach-accessibleclasses.html</resource>
       </doi_data>
       <citation_list>
@@ -328,7 +328,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146starynovotny-markdown-abbrev</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146starynovotny-markdown-abbrev.html</resource>
       </doi_data>
       <citation_list>
@@ -374,7 +374,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146nijenhuis-redaction</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146nijenhuis-redaction.html</resource>
       </doi_data>
       <citation_list>
@@ -421,7 +421,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146miller-sshrc</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146miller-sshrc.html</resource>
       </doi_data>
       <citation_list>
@@ -441,7 +441,7 @@
           <unstructured_citation>D. Guenther, ed. Conference Proceedings: TeX Users Group Eighth Annual Meeting, Seattle, August 24&#x2013;26, 1987, 1987. In TeXniques, Publications for the TeX Community 5. https://tug.org/texniques/tn05/tn05complete.pdf</unstructured_citation>
         </citation>
         <citation key="kime2025biblatex-6">
-          <unstructured_citation>P. Kime, M. Wemheuer, P. Lehman. The Package: Programmable Bibliographies and Citations, July 2025. Version 3.21. https://ctan.org/pkg/biblatex</unstructured_citation>
+          <unstructured_citation>P. Kime, M. Wemheuer, P. Lehman. The biblatex Package: Programmable Bibliographies and Citations, July 2025. Version 3.21. https://ctan.org/pkg/biblatex</unstructured_citation>
         </citation>
         <citation key="mcginn2019dear-7">
           <unstructured_citation>M.K. McGinn, S. Acker, et al. Dear SSHRC, what do you want? An epistolary narrative of expertise, identity, and time in grant writing. Forum Qualitative Sozialforschung / Forum: Qualitative Social Research, 20(1), Jan. 2019. https://doi.org/10.17169/fqs-20.1.3128</unstructured_citation>
@@ -468,7 +468,7 @@
           <unstructured_citation>C. Thiele. TeX and the Humanities. TUGboat 17(4):388&#x2013;393, Dec. 1996. https://tug.org/TUGboat/tb17-4/tb53thie.pdf</unstructured_citation>
         </citation>
         <citation key="biblatex-readbbl-15">
-          <unstructured_citation>H. Vo&#x00df;. biblatex-readbbl&#x2014;read a file created by Biber, version 0.01, 2022-01-09. https://ctan.org/pkg/biblatex-readbbl</unstructured_citation>
+          <unstructured_citation>H. Vo&#x00df;. biblatex-readbbl&#x2014;read a .bbl file created by Biber, version 0.01, 2022-01-09. https://ctan.org/pkg/biblatex-readbbl</unstructured_citation>
         </citation>
         <citation key="walden2009christina-16">
           <unstructured_citation>D. Walden, C. Thiele. Christina Thiele. In TeX People: Interviews from the World of TeX, K. Berry, D. Walden, eds., pp. 18&#x2013;24. TeX Users Group, Portland, OR, USA, 2009. https://tug.org/interviews/thiele.html, https://tug.org/store/texpeople</unstructured_citation>
@@ -498,7 +498,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146bhat-visualmath</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146bhat-visualmath.html</resource>
       </doi_data>
       <citation_list>
@@ -584,7 +584,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146prescott-book-accessibility</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146prescott-book-accessibility.html</resource>
       </doi_data>
       <citation_list>
@@ -619,7 +619,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146prescott-ltx-talk</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146prescott-ltx-talk.html</resource>
       </doi_data>
       <citation_list>
@@ -650,7 +650,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146lienhard-mitthesis</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146lienhard-mitthesis.html</resource>
       </doi_data>
       <citation_list>
@@ -658,10 +658,10 @@
           <unstructured_citation>U. Fischer. Creating accessible pdfs with LaTeX. TUGboat 41(1):26&#x2013;28, 2020. https://tug.org/TUGboat/tb41-1/tb127fischer-accessible.pdf</unstructured_citation>
         </citation>
         <citation key="Fischer2026tagpdf-2">
-          <unstructured_citation>U. Fischer. The package, Apr. 2026. https://ctan.org/pkg/tagpdf</unstructured_citation>
+          <unstructured_citation>U. Fischer. The tagpdf package, Apr. 2026. https://ctan.org/pkg/tagpdf</unstructured_citation>
         </citation>
         <citation key="Holle2012-3">
-          <unstructured_citation>Holle. Answer to &#x201c;incompatibility between option multiple and &#x201d;. TeX Stack Exchange, July 2012. https://tex.stackexchange.com/a/62091</unstructured_citation>
+          <unstructured_citation>Holle. Answer to &#x201c;incompatibility between footmisc option multiple and hyperref&#x201d;. TeX Stack Exchange, July 2012. https://tex.stackexchange.com/a/62091</unstructured_citation>
         </citation>
         <citation key="iso32000-2-4">
           <unstructured_citation>International Organization for Standardization. Document management &#x2014; Portable document format &#x2014; Part 2: PDF 2.0. Standard ISO 32000-2:2020, International Organization for Standardization, Geneva, Switzerland, 2020. https://pdfa.org/resource/iso-32000-2/</unstructured_citation>
@@ -676,7 +676,7 @@
           <unstructured_citation>LaTeX Project. The LaTeX3 Interfaces, May 2026. https://ctan.org/tex-archive/macros/latex/required/l3kernel/interface3.pdf</unstructured_citation>
         </citation>
         <citation key="l3pdfmeta-8">
-          <unstructured_citation>LaTeX Project. The module: PDF standards. LaTeX PDF management bundle, May 2026. https://ctan.org/tex-archive/macros/latex/contrib/pdfmanagement/l3pdfmeta.pdf</unstructured_citation>
+          <unstructured_citation>LaTeX Project. The l3pdfmeta module: PDF standards. LaTeX PDF management bundle, May 2026. https://ctan.org/tex-archive/macros/latex/contrib/pdfmanagement/l3pdfmeta.pdf</unstructured_citation>
         </citation>
         <citation key="LOC2024-9">
           <unstructured_citation>Library of Congress, Prints and Photographs Online Catalog. PDF/A-4, PDF for Long-term Preservation, Use of ISO 32000-2, 2024. Format Description Document (FDD000532). https://www.loc.gov/preservation/digital/formats/fdd/fdd000532.shtml</unstructured_citation>
@@ -706,7 +706,7 @@
           <unstructured_citation>PDF Association. PDF Association Cheat Sheet&#x2014;Standard Structure Elements, 2024. https://pdfa.org/download-area/cheat-sheets/StandardStructureElements.pdf</unstructured_citation>
         </citation>
         <citation key="Robertson2023-18">
-          <unstructured_citation>W. Robertson, P. Stephani, et al. Experimental Unicode Mathematical Typesetting: The Package, Aug. 2023. See section 4.4.2. https://ctan.org/pkg/unicode-math</unstructured_citation>
+          <unstructured_citation>W. Robertson, P. Stephani, et al. Experimental Unicode Mathematical Typesetting: The unicode-math Package, Aug. 2023. See section 4.4.2. https://ctan.org/pkg/unicode-math</unstructured_citation>
         </citation>
         <citation key="FedReg2026-09266-19">
           <unstructured_citation>U.S. Department of Health and Human Services. Nondiscrimination on the basis of disability; Accessibility of Web Content and Mobile Applications of Recipients of Departmental Financial Assistance; Extension of Compliance Dates. Federal Register, 91(2026-09266):25496&#x2013;25507, May 2026. HHS Section 504.</unstructured_citation>
@@ -738,7 +738,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146nijenhuis-accessiblelists</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146nijenhuis-accessiblelists.html</resource>
       </doi_data>
       <citation_list>
@@ -803,7 +803,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146krishnan-tables</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146krishnan-tables.html</resource>
       </doi_data>
       <citation_list>
@@ -834,7 +834,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146bowman-v3d</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146bowman-v3d.html</resource>
       </doi_data>
       <citation_list>
@@ -872,7 +872,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146sojka-doctor-mittelbach</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146sojka-doctor-mittelbach.html</resource>
       </doi_data>
       <citation_list>
@@ -924,7 +924,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146stephan-humanities</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146stephan-humanities.html</resource>
       </doi_data>
     </journal_article>
@@ -952,7 +952,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146radhakrishnan-malayalam-archiving</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146radhakrishnan-malayalam-archiving.html</resource>
       </doi_data>
       <citation_list>
@@ -995,7 +995,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146gerrard-literate</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146gerrard-literate.html</resource>
       </doi_data>
       <citation_list>
@@ -1066,7 +1066,7 @@
         <person_name sequence="first" contributor_role="author">
           <given_name>Ond&#x0159;ej</given_name>
           <surname>Metelka</surname>
-          <ORCID>https://orcid.org/0000-0007-6581-0097</ORCID>
+          <ORCID>https://orcid.org/0009-0007-6581-0097</ORCID>
         </person_name>
         <person_name sequence="additional" contributor_role="author">
           <given_name>Petr</given_name>
@@ -1083,7 +1083,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146metelka-utfpatgen</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146metelka-utfpatgen.html</resource>
       </doi_data>
       <citation_list>
@@ -1175,7 +1175,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146lode-realtime</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146lode-realtime.html</resource>
       </doi_data>
       <citation_list>
@@ -1225,7 +1225,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146verna-lastline</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146verna-lastline.html</resource>
       </doi_data>
       <citation_list>
@@ -1305,7 +1305,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146adhiyaman-inferring</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146adhiyaman-inferring.html</resource>
       </doi_data>
       <citation_list>
@@ -1403,7 +1403,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146rishi-speed</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146rishi-speed.html</resource>
       </doi_data>
     </journal_article>
@@ -1455,7 +1455,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146abstracts</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146abstracts.html</resource>
       </doi_data>
     </journal_article>
@@ -1478,7 +1478,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146reviews-kottwitz-beginners3</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146reviews-kottwitz-beginners3.html</resource>
       </doi_data>
     </journal_article>
@@ -1498,7 +1498,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146errata471</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146errata471.html</resource>
       </doi_data>
     </journal_article>
@@ -1522,7 +1522,7 @@
       </pages>
       <doi_data>
         <doi>10.47397/tb/47-2/tb146chest</doi>
-        <timestamp>20260830212454</timestamp>
+        <timestamp>20260831214350</timestamp>
         <resource>https://tug.org/TUGboat/tb47-2/tb146chest.html</resource>
       </doi_data>
     </journal_article>
