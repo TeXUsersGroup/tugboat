@@ -107,7 +107,7 @@ sub init {
   if ($OPT{"help"}) {
     print "Usage: $0 [OPTION]... CAPSULE...
 
-qqq sorry
+qqq sorry ustl
 
 Email questions or problems to tugboat\@tug.org.
 ";
@@ -141,22 +141,24 @@ Email questions or problems to tugboat\@tug.org.
 sub compare {
   my ($cap,$other) = @_;
 
-  # always compare titles.
-  my @fields = ("title");
-  #
-  # compare what we can of other fields, since the
-  # author/category/pageno might be missing.
-  for my $f (qw(author category pageno)) {
+  # compare whichever fields we can, since anything might be missing.
+  my @fields = ();
+  for my $f (qw(title author category pageno)) {
     push (@fields, $f) if $cap->{$f} && $other->{$f};
   }
   
-  # whether the "other" the cont entry or the article source entry.
+  # whether the "other" is the cont entry or the article source entry.
   my $other_label = exists $other->{"article"} ? "art" : "con";
   
+  if (! @fields) {
+    warn "nothing to compare:\n";
+    &info_hash("  cap", $cap); # should be warn_hash, but don't bother
+    &info_hash("  other($other_label)", $other);
+    return;
+  }
+
   for my $field (@fields) {
     #warn "comparing field=$field\n";
-    #&debug_hash("  cap", $cap);
-    #&debug_hash("  other", $other);
     if (! equal_fields ($cap->{$field}, $other->{$field})) {
       print "$cap->{pageno}: $field differs:\n";
       print "  cap=`$cap->{$field}'\n";
@@ -461,7 +463,7 @@ sub read_artfile {
   my $file = $artfiles[0]; # yay, found one and only one
 
   if ($artid =~ /^ltnews/) {
-    # can't compare ltnews, source file is different.
+    # can't compare ltnews (etc.), source file is different.
     &ddebug ("skipping artfile: $file");
     return ();
   }
@@ -478,7 +480,7 @@ sub read_artfile {
       $title = $1;
     } else {
       warn "$file: failed to extract \\title\n";
-      $title = "title-not-found";
+      $title = "";
     }
   }
   $ret{"title"} = &normalize_whitespace ($title);

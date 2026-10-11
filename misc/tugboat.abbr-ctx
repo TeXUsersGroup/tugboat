@@ -29,6 +29,7 @@
 \def\CD        {\acro{CD}}
 \def\CDROM     {\acro{CD-ROM}}
 \def\CFF       {\acro{CFF}}
+\def\CHATGPT   {Chat\acro{GPT}}
 \def\CJK       {\acro{CJK}}
 \def\CLD       {\acro{CLD}}
 \def\CMAKE     {\acro{CM}ake}
@@ -149,6 +150,7 @@
 \def\PLAIN     {{\tt plain}}
 \def\POSTSCRIPT{\PS}
 \def\PRAGMA    {Pragma}
+\def\PYTHON    {Python}
 \def\QA        {\acro{QA}}
 \def\QR        {\acro{QR}}
 \def\QRCODE    {\acro{QR} code}
@@ -204,6 +206,7 @@
 \def\pdfTeX    {pdf\-\/\TeX}
 
 % 
+\NewDocumentCommand\abbreviation{omm}{}
 \def\abs#1{\left|#1\right|}
 \def\alignhere{}
 \def\arg{\tubbraced}

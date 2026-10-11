@@ -1,3 +1,11 @@
+2026-10-10  Karl Berry  <karl@freefriends.org>
+
+	* check-auth-title-tub (compare): don't assume even title is present;
+	complain if nothing to compare.
+
+	* tugboat.abbr-ctx (\CHATGPT, \PYTHON, \abbreviation):
+	for tb147hagen-3d-ai.
+
 2026-10-04  Karl Berry  <karl@freefriends.org>
 
 	* check-auth-title-tub (compare): compare only fields that exist.
