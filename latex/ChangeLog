@@ -1,8 +1,8 @@
 2026-10-17  Karl Berry  <karl@freefriends.org>
 
-	* tugboat.dtx (\@verbatim, env/verbatim/begin): add \hfuzz1.8pt.
-	(env/verbatim/begin): must also check for \DocumentMetadata being
-	set, else LaTeX does not handle the optional argument.
+	* tugboat.dtx (\@sqbverbatim, env/verbatim/begin): add \hfuzz1.8pt.
+	(env/verbatim/begin): before omitting \par, check for
+	\DocumentMetadata being set as well as a new-enough LaTeX.
 	* tubverbpar.tex: yet more tests of verbatim line spacing.
 
 2026-10-02  Karl Berry  <karl@freefriends.org>

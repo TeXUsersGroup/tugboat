@@ -3527,7 +3527,10 @@
 % copy of the \LaTeX\ verbatim environment defined next.
 %
 %    \begin{macrocode}
-  #1\@TBverbatim}
+  \hfuzz1.8pt % set here so the env arg will override
+  #1%
+  \@TBverbatim
+}
 %    \end{macrocode}
 %
 % The built-in environment itself relays to \cs{@verbatim}, which
@@ -3554,7 +3557,6 @@
   \parindent\z@
   \parfillskip\@flushglue
   \parskip\z@skip
-  \hfuzz1.8pt
   \@@par
   \@tempswafalse
   \def\par{%
