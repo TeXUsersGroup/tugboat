@@ -10,9 +10,21 @@
 
 \begin{document}
 
+Beforea random \texttt{verbatim} with empty argument,
+but default size changed to small.
+Should be normal line spacing, not squeezed. Hello some more text, more
+more more more text.
+\begin{verbatim}
+want small size verbatim.
+second verbatim line.
+\end{verbatim}
+\end{document}
+Normal text again after verbatim empty arg. Again should have normal
+line spacing.
+
 % Use \scriptsize instead of the more usual \small to make the
 % difference in interline spacing especially glaring.
-
+%
 Before \texttt{verbatim} with \cs{scriptsize} argument.
 Should be normal line spacing, not squeezed.
 \begin{verbatim}[\scriptsize]
@@ -21,7 +33,7 @@ normal line spacing for this small size.
 \end{verbatim}
 Normal text again after verbatim. Again should have normal line spacing.
 
-Before another \texttt{verbatim} with empty argument,
+Before another \texttt{verbatim} with present-but-empty argument,
 but default size changed to \cs{small} via hook.
 Should be normal line spacing, not squeezed.
 \begin{verbatim}[]
