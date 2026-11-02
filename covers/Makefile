@@ -40,7 +40,7 @@ all: spine.pdf cover4.pdf titlepage.pdf cover1.pdf cover2.pdf $(c3_target)
 titlepage.pdf: $(tb)quote.tex tugboat.front
 cover4.pdf: $(tb)cont.tex tubtocmac.tex tugboat.front
 cover3.pdf: $(tb)cap.tex  tubtocmac.tex
-cover1.pdf: word-nobox.pdf press2.pdf coverdrawing.jpg
+cover1.pdf: word-nobox.pdf press2.pdf coverdrawing.pdf
 
 # cover3a.pdf is copied to ../CADMUS/ to replace the two-page version.
 #cover3a.pdf: cover3.pdf cover3-crop.pdf
@@ -102,14 +102,14 @@ cadmus cad ca: $(c3_target)
 	$(cp) $(c3_target)       ../CADMUS/cover3.pdf
 	$(cp) cover4.pdf         ../CADMUS/cover4.pdf
 	$(cp) titlepage.pdf      ../CADMUS/p$(p_titlepage).pdf
-	chmod a+r ../CADMUS/* ../webdir/*
+	(chmod a+r ../CADMUS/* ../webdir/* 2>&1) | grep -v dangling.symlink; true
 # we don't include complete there since we don't build it until the end.
 
 spell:
 	check_files=cover*.tex; \
 	for f in $$check_files; do printf "\f $$f\n"; (cd `dirname $$f` && myspell `basename $$f`); done
 
-check ck:
+check ck  ckatc ck-atc atc check-atc:
 	cd .. && $(MAKE) $@
 
 force:

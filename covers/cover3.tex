@@ -4,16 +4,17 @@
 % Occasionally this overflows to a second page, as in tb137.
 % Then we have to handle things in an ad hoc manner.
 
+\input tugboat.sty \onecol \let\rtitle\relax % no running head
 \input tubtocmac.tex
-\input tugboat.cmn  % tugboat.dates macros
 \input tugboat.dates
+\TUBfinal
 
 % our own page layout.
 \nopagenumbers
 \hoffset = 0pt
 \voffset = -.6in
 \vsize = 10in
-\vfuzz = 13.8pt % default 2.5pt
+\vfuzz = 71.8pt % always overfull by one line
 
 \def\scriptfonts{% for the A in LaTeX
   \scriptfont0=\sevenrm
@@ -36,7 +37,7 @@
   \baselineskip=12pt
 \fi
 
-\iffalse % fonts - 9pt (what we usually use)
+\iftrue % fonts - 9pt (what we usually use)
   \font\tenrm=cmr9  \font\tensl=cmsl9  \font\tentt=cmtt9  \font\manual=logo9
   \font\tenit=cmti9 \font\tenbf=cmbx9 \font\sf = cmss9
   \font\difficultyfont=cmb10
@@ -52,7 +53,7 @@
   \baselineskip=10.9pt
 \fi
 
-\iftrue % fonts - 8pt
+\iffalse % fonts - 8pt
   \font\tenrm=cmr8 \font\tensl=cmsl8  \font\tentt=cmtt8  \font\manual=logo8
   \font\tenit=cmti8 \font\tenbf=cmbx8 \font\sf = cmss8
   \font\difficultyfont=cmbx8 at 8.5pt
@@ -70,9 +71,9 @@
 \rm  %  start smaller font
 
 \newskip\abovedifficultyskip % default 8pt plus2pt minus1pt
-  \abovedifficultyskip = 4pt plus2pt minus1pt
+  \abovedifficultyskip = 2pt plus2pt minus1pt
 \newskip\abovecapsuleskip    % default 2pt plus1pt
-\abovecapsuleskip    = 1.5pt plus1pt
+\abovecapsuleskip    = 1pt plus1pt
 
 % we want ragged right, and interword stretch seems unnecessary, but we
 % still allow interword shrink since it helps keep things on one line.

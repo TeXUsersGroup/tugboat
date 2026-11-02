@@ -26,8 +26,8 @@
 \let\runfoot=\normalrunfoot
 
 % fonts:
-\iffalse % default 10pt with baselineskip of 12.5pt
-\tenpoint\baselineskip=12.5pt
+\iftrue % default 10pt with baselineskip of 12.5pt
+\tenpoint\baselineskip=12pt
   \font\slnine = cmsl9
   \font\manual = logo10
   \font\manualsl = logosl10
@@ -35,7 +35,7 @@
   \font\lslashfont = ec-lmr10
 \fi
 
-\iftrue % 9pt with baselineskip 11.1pt
+\iffalse % 9pt with baselineskip 11.1pt
 \ninepoint\baselineskip=11.1pt
   \font\slnine = cmsl8
   \font\manual = logosl10 at 9pt
