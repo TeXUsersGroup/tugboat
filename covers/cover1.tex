@@ -68,19 +68,21 @@
 % at top.  also, graphic is usually [...]
 % a bit more toward the bottom than centered.
 %
-\kern 11.5pc
+\kern 12.5pc
 \hfuzz=1pc \advance\hsize by \hfuzz
 %
 \def\doimg#1{%
-  \immediate\pdfximage width.6\hsize #1 {coverdrawing.pdf}
-  \pdfrefximage\pdflastximage
+  \def\myheight{height 35pc}%
+  \immediate\pdfximage \myheight {prelitspine.pdf}\pdfrefximage\pdflastximage
+  \immediate\pdfximage \myheight #1 {coverdrawing.pdf}%
+    \pdfrefximage\pdflastximage
 }
 %
 \kern 10pt
 \rightline{%
   \doimg{}%
   % pdf: \doimg{page 1}\quad \doimg{page 2}\quad \doimg{page 3}
-  %\kern 30pt
+  \kern 10pt
 }
 
 \kern1pc
