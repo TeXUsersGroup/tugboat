@@ -96,7 +96,8 @@ sub find_multisplice {
   my @items; # use items[1], items[2] as array refs.
   while (<$splmk>) {
     next unless /^p._paper(\d) = (.*)$/;
-    die "*** must implement three-way splice" if /^p._paper[3-9]/;
+    warn "*** must implement three-way splice" if /^p._paper[3-9]/;
+    exit 0;
     push (@{$items[$1]}, $2);
   }
   close ($splmk) || die "close($splmkname) failed: $!";

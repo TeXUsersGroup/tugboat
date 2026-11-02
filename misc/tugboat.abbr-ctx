@@ -278,7 +278,7 @@
 \let\stop=\relax
 \def\stopdescription{}
 \def\stophead{}
-\def\subject[#1]{}
+\NewDocumentCommand\subject{om}{}
 \def\subsubject{\subsection}
 \def\switchtobodyfont[#1]{}
 \def\sym{\item}
@@ -314,9 +314,9 @@
 
 \long\def\setupbodyfont[#1]{}
 \long\def\setupfloats[#1]{}
-\long\def\setuphead[#1] [#2]{}
+\NewDocumentCommand\setuphead{oo}{} % two optional arguments
 \long\def\setuplayout[#1]{}
-\NewDocumentCommand\setupsynonyms{oo}{} % two optional arguments
+\NewDocumentCommand\setupsynonyms{oo}{}
 \long\def\setuptolerance[#1]{}
 \long\def\setupwhitespace[#1]{}
 
@@ -436,6 +436,9 @@
 
 \long\def\startframedtext#1\stopframedtext{[ignored framedtext, fix!!]}
 
+\let\startimage=\relax
+\let\stopimage=\relax
+
 \newcommand\startitemize[1][]{\begin{itemize}} % ignore optional [packed]
 \def\stopitemize{\end{itemize}}
 %
@@ -519,6 +522,8 @@
 
 \def\starttitle[#1]{}
 \def\stoptitle{\stopArticle}
+
+\long\def\startuseMPgraphic#1\stopuseMPgraphic{}
 
 % don't work since they start reading the verbatim text.
 %\newcommand\starttyping[1][]{% ignore optional argument
