@@ -1,3 +1,10 @@
+2026-11-02  Karl Berry  <karl@freefriends.org>
+
+	* tugboat.sty (\domainhead): \hyphenpenalty=10000.
+	(\parskip): set to 0pt.
+	(\endarticle): do \writelastpage{+1}, if defined.
+	(\AI): new abbrev.
+
 2026-09-19  Karl Berry  <karl@freefriends.org>
 
 	* tugboat.sty (\maxdepth): do not redefine as 2pt,

@@ -22,7 +22,7 @@
 
 \def\thistubstyle{plain}
 \def\fileversion{v1.33}
-\def\filedate{2026-09-19}
+\def\filedate{2026-11-02}
 
 % general items
 
@@ -99,6 +99,7 @@
 
 \def\acro#1{{\SMC #1}\spacefactor1000 }
 
+\def\AI{\acro{AI}}
 \def\AllTeX{(\La\kern-.075em)\kern-.05em\TeX}
 \def\AMS{American Mathematical Society}
 \def\AmS{{\the\textfont2 A}\kern-.1667em\lower.5ex\hbox
@@ -1371,7 +1372,8 @@
   \resetpagelgt }                 % exclude special first page material
 
 \resetpagelgt
-\raggedbottom
+\raggedbottom % let extra space be at the bottom,
+\parskip=0pt  % not between paragraphs.
 
 %  horizontal dimensions
 
@@ -2400,7 +2402,10 @@
 % With the \nobreak, the signature will be put on the last page, and the
 % previous page will be underfull, so it becomes obvious that a little
 % space should be taken away somewhere.
-\def\endarticle{\nobreak\vfil\end}
+\def\endarticle{%
+  \nobreak\vfil
+  \ifx\undefined\writelastpage\else\writelastpage{+1}\fi
+  \end}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     *****  heads  *****
@@ -2435,7 +2440,10 @@
 
 \def\@domainhead{%
   \if@removeprewhite\else\vskip\baselineskip\fi
-  \noindent{\raggedright\bf\ignorespaces\the\@argument\unskip\endgraf}%
+  \noindent
+  {\raggedright\frenchspacing\hyphenpenalty=10000 \bf\ignorespaces
+   \the\@argument\unskip\endgraf
+  }%
   \if@removepostwhite          %  usually we want the white space
   \else\kern0.5\baselineskip\fi
   \nobreak
@@ -3363,6 +3371,10 @@ Version   Date        Changes
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+                      \parskip=0pt.
+                      disable hyphenation in headings.
+                      \endarticle: do \writelastpage{+1}.
+                      \def\AI{\acro{AI}}.
                       delete assignment of \maxdepth, to keep plain.tex's 4pt.
 
 1.33      12 Sep 26   \abovecaptionskipamount: increase to 4pt to match
