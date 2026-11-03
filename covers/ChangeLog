@@ -1,5 +1,8 @@
 2026-11-02  Karl Berry  <karl@freefriends.org>
 
+	* tubtocmac.tex (\BibTeX): conditionalize on slanted font.
+	(\Bib): play with kerns.
+	
 	* Makefile (cadmus): ignore painful chmod error on dangling symlink.
 	(cover1.pdf): drawing is pdf this time.
 	* cover1.tex: update for 47:3 (coverdrawing.pdf).

@@ -192,10 +192,10 @@
 
 % slanted \BibTeX and \MF:
 \def\slBib{{\sl B{\slc IB}}}
-\def\slBibTeX{\slBib\kern-.08em\TeX}
+\def\slBibTeX{\slBib\kern-.08em{\sl\TeX}}
 \def\slBibLaTeX{\slBib\kern.04em\LaTeX}
-\def\BibTeX{\slBibTeX}
-\def\Bib{B\kern-.05em{\smc i\kern-.025em b}}
+\def\BibTeX{\ifdim \fontdimen1\font>0pt\slBibTeX \else\Bib\kern-.06em\TeX \fi}
+\def\Bib{B\kern-.03em{\smc i\kern-.02em b}}% 
 % \manualsl is defined in cover?.tex, since might change in a given issue.
 \def\slMF{{\manualsl META}\-{\manualsl FONT}\spacefactor1000 }
 \def\slMP{{\manualsl META}\-{\manualsl POST}\spacefactor1000 }
