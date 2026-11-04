@@ -72,8 +72,15 @@ $(tb)complete.pdf complete compl co cm: $(tb)cmplete.lua \
                                     toclinks.pdf ../CADMUS/issue.pdf
 	lmtxtub --extra=copy --template $<
 	mv context-extra.pdf $(tb)complete.pdf
+# the generated tb*complete.pdf and toclinks.pdf should have the
+# same number of pages.
+	set -x; \
+	  toclinkspages=`pdflastpage toclinks.pdf`; \
+	  completepages=`pdflastpage $(tb)complete.pdf`; \
+	  test $$toclinkspages = $$completepages
+#
 	c=$(tb)complete.pdf; du $$c; echo `pdfpages $$c` pages
-# makes larger: ; ../ps2pdf-tub $$c; du $$c
+# makes larger, so never mind: ; ../ps2pdf-tub $$c; du $$c
 	$(cp) $(tb)complete.pdf ../webdir/
 
 # after copying the generic file, update the number of pages in the
@@ -87,7 +94,12 @@ $(tb)cmplete.lua: svn-covers/tbcmplete.lua
 toclinks.pdf: toclinks.tex cover2.tex cover3.tex cover4.tex tubtocmac.tex \
               ../CADMUS/issue.pdf
 	$(PDFTEX) '$<' </dev/null || { rm -f $@; exit 1; }
-
+	set -x; \
+	  issuepdfpages=`pdflastpage ../CADMUS/issue.pdf`; \
+	  toclinkspages=`pdflastpage $@`; \
+	  test `expr $$issuepdfpages + 3` = $$toclinkspages
+# should be exactly three more pages in toclinks.pdf: c4 c2 c3
+# 
 # emacs-page
 pfile = ../tugboat.dates
 p_titlepage := $(shell sed -n 's/^.*def.TBtitlepage{\([0-9]*\)}.*/\1/p' $(pfile))

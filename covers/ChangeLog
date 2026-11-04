@@ -1,3 +1,13 @@
+2026-11-04  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (complete, toclinks): check number of pages.
+	
+	* cover1.tex: end with \bye instead of \end in case we
+	include this in complete.pdf someday.
+
+	* tbcomplete.tex: delete, no longer used; it's toclinks.tex
+	that produces the main issue.pdf.
+
 2026-11-03  Karl Berry  <karl@freefriends.org>
 
 	* cover3.tex,
