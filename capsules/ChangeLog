@@ -1,5 +1,13 @@
 2026-11-05  Karl Berry  <karl@freefriends.org>
 
+	* Makefile (testiss,lastiss,crossref_iss): 147.
+        * tb147capsule.txt: new file for 47:3.
+        * capaccum.pl (categories): add Artificial Intelligence,
+        Multilingual Documents.
+	* lists-translations.txt (\"e, \AI, \Cplusplus, \Csharp): new abbrevs.
+	
+2026-11-05  Karl Berry  <karl@freefriends.org>
+
 	* Makefile: doc tweaks.
 	
 	* capcrossref.pl (crossref_create_landing_page): more info

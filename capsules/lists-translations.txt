@@ -75,6 +75,7 @@ R\r{u}\v{z}i\v{c}ka||R&#x016f;&#x017e;i&#x010d;ka||Ruzicka
 # right. So leave it as just o until we want to handle this.
 \aa{}||&#xe5;||a
 \"a||&#xe4;||a
+\"e||&#xeb;||e
 \"O||&#xd6;||O
 \"o||&#xf6;||o
 \"u||&#xfc;||ue
@@ -147,6 +148,7 @@ $\Omega_2$||&#x03a9;2||O2
 \%||%
 \AE||&#xc6;||AE
 \ae||&#xe6;||ae
+\AI||AI
 \AllTeX||(La)TeX
 \AMS||AMS
 \AmSTeX||AmSTeX
@@ -157,7 +159,9 @@ $\Omega_2$||&#x03a9;2||O2
 \/||
 \CONNECT{}||&#xa0;|| \\
 \ConTeXt||ConTeXt
+\Cplusplus||C++
 \CS{}plain||CSplain
+\Csharp||C&#x23;
 \CSS||CSS
 \CTAN||CTAN
 \curve||CurVe
