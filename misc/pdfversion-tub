@@ -1,0 +1,9 @@
+#!/bin/sh
+# $Id$
+# (public domain) (maintained in tug:/l/bin)
+
+for f in "$@"; do
+  f=`echo "$f" | sed 's/\.\(tex\|ltx\)$/.pdf/'`
+  test $# -eq 1 || printf "$f "
+  pdfinfo "$f" | sed -n 's/version: *//p' | awk '{print $NF}'
+done
