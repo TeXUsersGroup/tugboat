@@ -1,3 +1,14 @@
+2026-11-05  Karl Berry  <karl@freefriends.org>
+
+	* Makefile: doc tweaks.
+	
+	* capcrossref.pl (crossref_create_landing_page): more info
+	in <title>. Create citation_* <meta> tags.
+	Suggested by Johan Larsson (jola at math dot ku dot dk),
+	webmaster mail of 2 Oct 2026 09:13:20 +0000.
+	(metatags): new fn to return the <meta> tags.
+	(public_article_p): new fn.
+
 2026-11-03  Karl Berry  <karl@freefriends.org>
 
 	* tb146capsule.txt (adhiyaman): %add|Artificial Intelligence,

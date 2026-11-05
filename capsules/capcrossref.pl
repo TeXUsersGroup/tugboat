@@ -247,13 +247,19 @@ sub crossref_create_landing_page {
   my $seqno = $issue{"seqno"};
 
   # we need to keep entities (dashes, quotes) for the <title>,
-  # but remove markup (<i>).
-  (my $title_string = $cap{"title_html"}) =~ s!<.*?>!!g;
+  # but remove markup (<i>). Real angle brackets have never come up in a
+  # title; we'd have to convert them to entities, somewhere/somehow.
+  ($cap_ref->{"title_no_markup"} = $cap{"title_html"}) =~ s!<.*?>!!g;
 
+  # <meta> tags for Google Scholar (and maybe others?).
+  # https://scholar.google.com/intl/en/scholar/inclusion.html#indexing
+  my $metatags = &metatags ($cap_ref, $supp_ref);
+  
   print $LANDING <<END_LANDING;
 <!--#include virtual="/header.html"-->
-<title>$title_string
+<title>$cap_ref->{title_no_markup}
        - TUGboat $volno:$issno ($issue{year}) - TeX Users Group</title>
+$metatags
 </head><body>
 
 <a href="/TUGboat/"><img
@@ -291,7 +297,7 @@ END_LANDING
   }
 
   # whether the article is public.
-  my $availability = $cap{url} =~ m,/members/, 
+  my $availability = &public_article_p ($cap{url})
     ? qq!<a href="$cap{url}">available to TUG members</a>!
       . qq! (<a href="/join.html">join TUG</a>);!
       . "\nwill be publicly available after the next issue is published"
@@ -706,6 +712,56 @@ sub item_link {
 }
 
 
+# Return a string containing the <meta> tags for Google Scholar (and
+# perhaps others?) for the given article in CAP_REF and SUPP_REF.
+# https://scholar.google.com/intl/en/scholar/inclusion.html#indexing
+#
+sub metatags {
+  my ($cap_ref,$supp_ref) = @_;
+  my %cap = %$cap_ref;
+  my %supp = %$supp_ref;
+  my %issue = %{$cap{"issueref"}};
+
+  &info_hash ("metatags/cap", %cap);
+  &info_hash ("metatags/supp", %supp);
+  &info_hash ("metatags/iss", %issue);
+
+  my %tags;
+  $tags{"journal_title"} = "TUGboat";
+  $tags{"issn"} = "0896-3207";
+  $tags{"volume"} = $issue{"volno"};
+  $tags{"issue"} = $issue{"issno"};
+  $tags{"publication_date"} = $issue{"year"};
+  #
+  $tags{"title"} = $cap{"title_no_markup"};
+  #
+  my ($firstpage,$lastpage) = split (/-/, $cap{"pageno_print"});
+  $lastpage = $firstpage if ! defined $lastpage;
+  $tags{"firstpage"} = $firstpage;
+  $tags{"lastpage"} = $lastpage;
+  #
+  if (&public_article_p ($cap{"url"})) {
+    $tags{"pdf_url"} = $cap{"url"};
+  }
+  my $ret = "";
+  #
+  # Authors are different, since we use a citation_author tag for
+  # each author. So don't add to the hash, instead just add them to the
+  # return string. Might as well start with them.
+  my @author_html = @{$cap{"author_html"}}; # local copy
+  shift @author_html;                       # remove html author string
+  for my $a (@author_html) {
+    $ret .= qq!<meta name="citation_author" content="$a">\n!;
+  }
+  #
+  # Now the other tags.
+  for my $t (sort keys %tags) {
+    $ret .= qq!<meta name="citation_$t" content="$tags{$t}">\n!;
+  }
+  return $ret;
+}
+
+
 # Return doi string for CAPSULE. No https://doi.org/ prefix.
 # If the item in CAP will not have a doi assigned, return the empty string.
 # 
@@ -744,4 +800,12 @@ sub doi_of_capsule {
   return $doi;
 }
 
+
+# Return true if URL is for a publicly available item, i.e.,
+# does not contain /members/.
+# 
+sub public_article_p {
+  my ($url) = @_;
+  return $url !~ m,/members/,;
+}
 1;

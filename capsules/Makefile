@@ -24,7 +24,11 @@ perl = perl $(profopt)
 captub = $(perl) captub $(options) $(more_options)
 time = time -f "time:%e"
 
-default check: one #all-diff
+default check: one
+
+# other common targets:
+# . all-diff     to compare tocs against installed. (see ~tubprod/README)
+# . cro-scratch  to generate crossref files. (see crossref/README-process.txt)
 
 # These issue values, and most of the targets below, come into play with
 # publishing a TUGboat issue; see the README-tug-procedures file on tug.org.
@@ -68,14 +72,19 @@ cr_verbose = #--verbose
 cr_args = $(cr_verbose) tb$(crossref_iss)capsule.txt \
           $(cr_capout) $(cr_lndout) $(cr_xmlprocess)/issue.xml
 
+cro-scratch: cro-scratch-clean # full crossref run, assuming no hand-editing
+	cr-do-issue $(cr_args)
+# look at a generated landing page:
+#	sed 20q crossref/dir1.lndout/tb146bowman-v3d.html
+#
 crl: # just landing pages
 	@echo "sorry, not currently working; see cr-landing-bbl-abs"
 	exit 1
 	cr-do-issue --landing-only $(cr_args)
-cro-preserve: # full crossref run, keeping hand-edits (avoid!)
+
+# full crossref run, keeping hand-edits -- avoid this, use cro-scratch.
+cro-preserve:
 	cr-do-issue $(cr_verbose) $(cr_args)
-cro-scratch: cro-scratch-clean # full crossref run, assuming no hand-editing
-	cr-do-issue $(cr_args)
 
 # remove dir2.process files, assuming no hand-edits in dir2.process.
 # Too irritating to see all these removals on every run, so make all
