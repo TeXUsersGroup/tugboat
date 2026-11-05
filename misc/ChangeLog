@@ -1,6 +1,7 @@
 2026-11-05  Karl Berry  <karl@tug.org>
 
 	* pdfversion-tub: new script.
+	* make-issue-pages-tub (pdfversion): change call.
 
 2026-11-04  Karl Berry  <karl@tug.org>
 

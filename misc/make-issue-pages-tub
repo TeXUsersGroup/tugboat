@@ -227,5 +227,5 @@ else
   status=1
 fi
 ls -l issue-upload.pdf
-pdfversion issue-upload.pdf
+pdfversion-tub issue-upload.pdf
 exit $status
