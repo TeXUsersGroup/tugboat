@@ -59,7 +59,7 @@ $(xml_output) issue: $(rpi_input) $(tub_cfg) force
 # - The translations work hard to specifically never output a \.
 # - Two $'s is assumed to be math mode (not handled, so the $ chars should
 #   be deleted). A single $ is sometimes used as a price in USD.
-#   (Reminder: make needs the doubled $$ to pass a single $).
+#   (Reminder: make needs a doubled $$ to pass a single $).
 # - " TUB " is \TUB that failed to get converted, typically in wermuth.
 # - "--" as two ASCII hyphens is never right.
 	! egrep '\\|\$$.*\$$| TUB |--' $(xml_output) # TeX left untranslated?
@@ -71,7 +71,7 @@ xsd = http://www.crossref.org/schema/deposit/crossref5.3.1.xsd
 # https://stackoverflow.com/questions/17002324/xmllint-validate-an-xml-file-against-two-xsd-schemas-envelope-payload
 # https://www.biglist.com/lists/lists.mulberrytech.com/jats-list/archives/201310/msg00018.html
 # Crossref says it is necessary to download everything locally for xmllint.
-# Not easy to make work.
+# Not easy to make work, so never mind.
 validate v: $(xml_output)
 	xmllint --noout --schema $(xsd) $<
 

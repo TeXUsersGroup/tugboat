@@ -38,7 +38,7 @@ directory (~tubprod/VV-N), one or both of these files, as needed:
   . in hand-written bibliographies, insert \bibitem with a meaningful
     key (the key ends up in issue.xml) and \end{thebibliography},
     because that's what our parsing looks for.
-    (For wermuth articles, see replacements in ltx2crossrefxml-tugboat.cfg.)
+    For wermuth articles, see replacements in ltx2crossrefxml-tugboat.cfg.
   . for BibLaTeX, the only method is to copy-and-paste from the output
     pdf into bbl.tex. Latest attempt: tb144bien-typoglyphs.
     . Some Unicode can get lost, and have to be recovered manually.
@@ -97,15 +97,14 @@ so fix the translations, one way or another:
   as above. We no longer output Crossref's structured citations;
   see comments at the top of cr-copy-bbl-abs.
 
-On the other hand, sometimes authors use one-off abbreviations or
-complicated TeX code in their abstracts or bibliographies. In such
-cases, it is better to edit the abs/bbl.tex files to replace such custom
-macros than bother with automatically translating something that will
-probably never come up again.
+Sometimes authors use one-off abbreviations or complicated TeX code in
+their abstracts or bibliographies. In such cases, it is better to edit
+the abs/bbl.tex files to replace such custom macros than bother with
+automatically translating something that will probably never come up again.
 
 If the abstract contains \cite or other citation commands, they will not
-be translated. Manually replace them with the correct [N] reference (can
-see it in the pdf). Ditto with citation cross-references in
+be translated. Manually replace them with the correct [N] reference (as
+output in the pdf). Ditto with citation cross-references in
 bibliographies. The references will be on the landing page along with
 the abstract, so readers will be able to follow them.
 
@@ -143,16 +142,16 @@ previously-created issue.xml (created by ltx2crossrefxml via
 crossref/Makefile, target issue). As mentioned above, in the bbls, the only
 formatting attempted for the landing .html files is to make urls
 (recognized from plain text) live; italics, typewriter, etc., do not happen.
-(We should possibly fix this by using ltx2unitxt for the bbls too, or
+We should possibly fix this by using ltx2unitxt for the bbls too, but
 maybe not, since it's a lot of error-prone detail and all the
-information is present now.)
+information is present now.
 
 Then repeat until all articles are done.
 
 Then test our synthesized bib entries with a consolidated bib file:
   make bibiss # in capsules dir
 This will probably find some control sequences that need to be {\braced}
-in the tb*capsule.txt file. Fix until it runs cleanly.
+in the tb*capsule.txt file. Fix until it runs cleanly. Check output.
 
 Then, besides checking the .html landing files, it is also necessary
 to check the generated dir2.process/issue.xml:
@@ -185,7 +184,9 @@ minutes. Can also check results online:
 
 When the result mail comes in, see <batch_data> summary element at end,
 should be all success. Browse through the rest, especially that all the
-<citation> elements were accepted. Fix and rerun as needed.
+<citation> elements were accepted. Fix and rerun as needed. Invalid
+ORCID checksums are reported, unlike with the above parser.html; update
+lists-authinfo.txt as needed.
 
 It is good to test issue.xml in both ways, since it's easy.
 
@@ -205,7 +206,7 @@ Then copy them to tug.org:
 Then check results at:
   https://tug.org/TUGboat/tbVV-N/tbnnnwhatever.html
 E.g.:
-  https://tug.org/TUGboat/tb47-2/tb146chest.html
+  https://tug.org/TUGboat/tb47-3/tb147chest.html
 Also, email tub-prod for them to check if desired.
 
 The crw target makes the "next doi" links be local (and the list*

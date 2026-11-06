@@ -298,10 +298,11 @@ END_LANDING
 
   # whether the article is public.
   my $availability = &public_article_p ($cap{url})
-    ? qq!<a href="$cap{url}">available to TUG members</a>!
+    ? qq!<a href="$cap{url}">publicly available now</a>!
+    : qq!<a href="$cap{url}">available to TUG members</a>!
       . qq! (<a href="/join.html">join TUG</a>);!
       . "\nwill be publicly available after the next issue is published"
-    : qq!<a href="$cap{url}">publicly available now</a>!;
+    ;
   print $LANDING <<END_LANDING;
 
 <p><b>Full text of article</b>: $availability.</p>
@@ -534,7 +535,7 @@ sub make_bibtex_entry {
   my $all_orcids = join ("", @orcids_out);
   if (length ($all_orcids) > 0) {
     $all_orcids =~ s/; $//; # remove final terminator
-    $entry .= qq!  ORCID-numbers = "$all_orcids",\n!;
+    $entry .= qq!  ORCID-numbers =  "$all_orcids",\n!;
   }
 
   # Other static journal values:
@@ -722,9 +723,9 @@ sub metatags {
   my %supp = %$supp_ref;
   my %issue = %{$cap{"issueref"}};
 
-  &info_hash ("metatags/cap", %cap);
-  &info_hash ("metatags/supp", %supp);
-  &info_hash ("metatags/iss", %issue);
+  #&debug_hash ("metatags/cap", %cap);
+  #&debug_hash ("metatags/supp", %supp);
+  #&debug_hash ("metatags/iss", %issue);
 
   my %tags;
   $tags{"journal_title"} = "TUGboat";

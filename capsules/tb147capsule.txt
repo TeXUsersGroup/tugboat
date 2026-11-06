@@ -193,17 +193,6 @@ access</a>.
 %%%%  {/TUGboat/!TBIDENT!prod.pdf}
 %%%%  {}
 %%%%  {}
-%%
-%%\capsule{}
-%%  {Surveys}
-%%  {Karl Berry, Max Chernoff, Jim Hef{}feron}
-%%  {Overview of \TeX{} engines and formats}
-%%  {comparison of current engines (binary programs) and formats (\TeX\
-%%   macro collections)}
-%%  {\getfirstpage{berry-engines-formats}}
-%%  {https://tug.org/members/TUGboat/!TBIDENT!berry-engines-formats.pdf}
-%%  {}
-%%  {}
 
 \capsule{}
   {Hints \& Tricks}
@@ -290,7 +279,7 @@ access</a>.
 \capsule{}
   {Artificial Intelligence}
   {Keith McKay}
-  {Becoming friends with Claude}
+  {Becoming friends with {Claude}}
   {creating 3D graphics with assistance; reflections}
   {362-367}
   {https://tug.org/members/TUGboat/!TBIDENT!mckay-claude.pdf}
@@ -300,7 +289,7 @@ access</a>.
 \capsule{}
   {Fonts}
   {Alain Stalder}
-  {A \tbcode{cmgraded} Odyssey}
+  {A \tbcode{cmgraded} {Odyssey}}
   {original \acro{CM} fonts with many degrees of blackness}
   {307-309}
   {https://tug.org/members/TUGboat/!TBIDENT!stalder-cmgraded.pdf}
@@ -310,7 +299,7 @@ access</a>.
 \capsule{}
   {Electronic Documents}
   {Travis Stenborg}
-  {Retrieving and typesetting Figshare metadata for \LaTeX}
+  {Retrieving and typesetting {Figshare} metadata for {\LaTeX}}
   {\LaTeX\ package for working with Figshare (\url{figshare.com}) metadata}
   {335-336}
   {https://tug.org/members/TUGboat/!TBIDENT!stenborg-figshare.pdf}
@@ -330,7 +319,7 @@ access</a>.
 \capsule{}
   {Multilingual Documents}
   {Berik I. Tuleuov}
-  {Kazakh language support for \TeX{}}
+  {Kazakh language support for {\TeX}}
   {extensive new hyphenation patterns for Kazakh}
   {321-323}
   {https://tug.org/members/TUGboat/!TBIDENT!tuleuov-kazakh.pdf}
@@ -339,8 +328,8 @@ access</a>.
 
 \capsule{}
   {Fonts}
-  {Micha\"el P. van de Weerd}
-  {Writing special keys with Libertinus Keyboard Regular}
+  {{Micha\"el} P. van de Weerd}
+  {Writing special keys with {Libertinus Keyboard Regular}}
   {a font supporting keyboard keys via simple plain-text ligatures}
   {310-311}
   {https://tug.org/members/TUGboat/!TBIDENT!weerd-lbkeyboard.pdf}
@@ -374,8 +363,8 @@ access</a>.
 \capsule{}
    {Electronic Documents}
    {Karl Berry, Boris Veytsman}
-   {Handling bibliographies and metadata for journal publishers}
-    %: \textsl{crossrefware}, \textsl{bibtexperllibs}, and {\TUB}}
+   {Handling bibliographies and metadata for journal publishers:
+    \textsl{crossrefware}, \textsl{bibtexperllibs}, and \textsl{TUGboat}}
    {Perl bundles supporting \BibTeX\ and \url{crossref.org} uploads, and
     examples of their usage with \TUB}
    {328-334}
@@ -386,7 +375,7 @@ access</a>.
 \capsule{}
   {Philology}
   {Janusz S. Bie\'n}
-  {The letter \textit{t} in old {Polish} printed works: A~preliminary study}
+  {The letter \textit{t} in old {Polish} printed works: {A} preliminary study}
   {interpreting and encoding variations of `t', with and without diacritics}
   {352-360}
   {https://tug.org/members/TUGboat/!TBIDENT!bien-t.pdf}
@@ -461,7 +450,7 @@ access</a>.
 \capsule{}
   {Methods}
   {Udo Wermuth}
-  {The \acro{TRIP} test: Its history, its current role}
+  {The \acro{TRIP} test: {Its} history, its current role}
   {the history, impact, and successes and failures of the \acro{TRIP} test}
   {390-399}
   {https://tug.org/members/TUGboat/!TBIDENT!wermuth-trip.pdf}
@@ -484,8 +473,8 @@ access</a>.
 \capsule{}
   {Graphics}
   {Roman Maksimovich}
-  {Abstract diagrams for the working mathematician: The Asymptote
-          \texttt{smoothmanifold}~\rlap{module}}
+  {Abstract diagrams for the working mathematician: {The} {Asymptote}
+          \texttt{smoothmanifold} module}
   {producing diagrams in differential geometry, topology, set theory, etc.}
   {380-385}
   {https://tug.org/members/TUGboat/!TBIDENT!maksimovich-diagrams.pdf}
@@ -495,7 +484,7 @@ access</a>.
 \capsule{}
   {\LaTeX}
   {Srikanth Mohankumar, Nareshkumar Krishnaswamy}
-  {Single-pass cross-referencing in Lua\LaTeX: Hold and~\rlap{patch}}
+  {Single-pass cross-referencing in {Lua\LaTeX}: {Hold} and patch}
   {resolve forward and backward references within a single run}
   {347-351}
   {https://tug.org/members/TUGboat/!TBIDENT!mohankumar-monoref.pdf}
@@ -527,7 +516,7 @@ access</a>.
 \capsule{}
   {Graphics}
   {Rodrigo Smarzaro}
-  {\texttt{fddiagram}: Typesetting functional dependency diagrams in \LaTeX}
+  {\texttt{fddiagram}: Typesetting functional dependency diagrams in {\LaTeX}}
   {declarative interface for creating the functional dependency diagrams
    in relational database research}
   {377-379}
@@ -705,7 +694,7 @@ access</a>.
 \capsule{}
   {Reviews}
   {Andreas Scherer}%person|Mitchell Gerrard
-  {Book review: \titleref{Preliterate Programming}, Mitchell Gerrard, ed.}
+  {Book review: \titleref{Preliterate Programming}, {Mitchell Gerrard}, ed.}
   {}
   {414-416}
   {/TUGboat/!TBIDENT!reviews-gerrard.pdf}
@@ -716,7 +705,7 @@ access</a>.
 \capsule{}
   {Reviews}
   {Mitchell Gerrard}%person|Mark Argetsinger
-  {Book review: \titleref{A Grammar of Typography}, by~Mark Argetsinger}
+  {Book review: \titleref{A Grammar of Typography}, by {Mark Argetsinger}}
   {}
   {417-421}
   {/TUGboat/!TBIDENT!reviews-argetsinger.pdf}
@@ -727,7 +716,7 @@ access</a>.
   {Reviews}
   {Jim Hef{}feron}%person|Clemens Lode
   {Book review: \titleref{How to Publish Your Book with {\LaTeX}},
-                by Clemens Lode}
+                by {Clemens Lode}}
   {}
   {422-424}
   {/TUGboat/!TBIDENT!reviews-lode.pdf}
@@ -776,10 +765,14 @@ access</a>.
 %   {}
 %   {}
 
+% original for print: {\acro{TUG}\CONNECT{}Elections\CONNECT{}committee}
+% not sure if this version to get {~} in .bib output so that it sorts
+%   under T works for print.
+% double braces in the title section it starts with a \.
 \capsule{}
   {TUG Business}
-  {\acro{TUG}\CONNECT{}Elections\CONNECT{}committee}
-  {2027 \TeX\ Users Group election}
+  {{\acro{TUG}{\CONNECT{}}Elections{\CONNECT{}}committee}}
+  {2027 {{\TeX\ Users Group}} election}
   {}
   {429-429}
   {/TUGboat/!TBIDENT!elec.pdf}

@@ -1,3 +1,14 @@
+2026-11-06  Karl Berry  <karl@freefriends.org>
+
+	* capcrossref.pl (crossref_create_landing_page): use public_article_p
+	correctly.
+	<ORCID_NUMBERS>: alignment.
+	(metatags): comment out debugging hash dumps.
+	* Makefile: doc.
+	* crossref/README-process.txt: wermuth et al. docs for 47:3.
+	* crossref/ltx2crossrefxml-tugboat.cfg (\AI, \LLM, \pLaTeX): 47:3.
+	* tb147capsule.txt: more braces to preserve capitalization from BibTeX.
+
 2026-11-05  Karl Berry  <karl@freefriends.org>
 
 	* Makefile (testiss,lastiss,crossref_iss): 147.
