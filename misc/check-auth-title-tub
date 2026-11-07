@@ -22,9 +22,7 @@
 # As of 47:2, not done:
 # - \volyr->YYYY substitutions for conf category.
 # - article titles using [...] not recognized (adhiyaman-inferring)
-# - consultants/instmem/etc. differ.
-# - exit status doesn't include compare().
-# - \rlap should be ignored
+# - consultants/instmem/etc. differ but aren't ignored.
 
 use strict; use warnings;
 $| = 1;
@@ -62,19 +60,22 @@ sub main {
     my $capsule = $capfile{$capkey};
     #$::HASH_AS_STRING_NL = 1;
     #&info_hash ("cap.$capkey", $capsule);
+    
+    # if we have cont entry for this capsule, compare.
     if (exists $confile{$capkey}) {
       &debug_hash ("\ncomparing capsule to con.$capkey", $confile{$capkey});
-      &compare ($capsule, $confile{$capkey});
+      $status ||= &compare ($capsule, $confile{$capkey});
       delete ($confile{$capkey});
     } else {
       print "$0: missing from cont file: $capkey\n";
       $status = 1;
     }
 
+    # if we have article info for this capsule, compare.
     my %artfile = &read_artfile ($capfilename, $capsule);
     next unless keys %artfile;
     &debug_hash ("comparing capsule to artfile", %artfile);
-    &compare ($capsule, \%artfile);
+    $status ||= &compare ($capsule, \%artfile);
   }
   
   if (keys %confile) {
@@ -177,11 +178,30 @@ sub equal_fields {
   # Jim Hefferon titles (tb147reviews-lode) can't be feasibly compared.
   return 1 if $b =~ /\\bookt.*\\booka/;
 
-  $a =~ s/~|\\(newline|CONNECT|\\|,| )/ /g;
+  my $orig_a = $a;
+  my $orig_b = $b;
+
+  $a =~ s/~|\\(newline|CONNECT|\\|,|!|\ )/ /g; # replace with space
+  $a =~ s/[{}]|\\rlap//g; # just remove braces and \rlap
   $a = &normalize_whitespace ($a);
   #
-  $b =~ s/~|\\(newline|CONNECT|\\|,| )/ /g;
+  $b =~ s/~|\\(newline|CONNECT|\\|,|!|\ )/ /g;
+  $b =~ s/[{}]|\\rlap//g; # just remove braces and \rlap
   $b = &normalize_whitespace ($b);
+
+  # to debug those regexps ...
+  if (0 && ($orig_a =~ /Project/ || $orig_b =~ /Project/)) {
+    warn <<ENDDEBUG;
+--------------
+dbg:
+orig_a=$orig_a
+     ->$a
+vs.
+orig_b=$orig_b
+     ->$b
+--------------
+ENDDEBUG
+  }
   
   return $a eq $b;
 }
@@ -237,6 +257,8 @@ sub parse_capsules {
       ; # too hard to match the combined abstracts entry
     } elsif ($key =~ /\{elec\}/) {
       ; # too hard to match varying election strings
+    } elsif ($key =~ /\{chest\}/) {
+      ; # \title in article source is intentionally \empty
     } else {
       $ret{$key} = \%c_tex;
     }
@@ -367,6 +389,7 @@ sub read_confile {
     shift (@cont_items) if @cont_items; # ignore stuff before first \subsec
 
     for my $cont (@cont_items) {
+      next if $cont =~ /^c/;
       &ddebug ("   doing cont `$cont'");
       # remove and remember if we had a leading nn (from \subsecnn).
       my $has_author = ($cont =~ s/^nn//) ? 0 : 1;
@@ -410,7 +433,7 @@ sub read_confile {
         &debug ("skipping abstract: $ident ($title)");
       } elsif ($ident eq "elec") {
         ; # skip, too hard to match with the combined abstracts entry
-        &debug ("skipping elec");
+        &debug ("skipping $ident");
       } else {
         my %cont;
         $cont{"author"} = $author if $has_author;
@@ -467,7 +490,7 @@ sub read_artfile {
     &ddebug ("skipping artfile: $file");
     return ();
   }
-  &debug ("read_artfile($file)");
+  &ddebug ("read_artfile($file)");
   my $str = &slurp_decomment_file ($file);
   
   # Hopefully the first \title command will be the one we want.
@@ -515,7 +538,7 @@ sub read_artfile {
 }
 
 
-# Read all of FILE, remove lines beginning with (whitespace+) 5~%,
+# Read all of FILE, remove lines beginning with (whitespace+)%,
 # return resulting string. We don't remove % comments within a line.
 # 
 sub slurp_decomment_file {

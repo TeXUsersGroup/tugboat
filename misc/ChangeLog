@@ -1,3 +1,8 @@
+2026-11-07  Karl Berry  <karl@freefriends.org>
+
+	* check-auth-title-tub (main): use compare() result in exit status.
+	(equal_fields): ignore all braces and \rlap and \!; add debugging.
+
 2026-11-05  Karl Berry  <karl@tug.org>
 
 	* pdfversion-tub: new script.
@@ -6,6 +11,16 @@
 2026-11-04  Karl Berry  <karl@tug.org>
 
 	* make-issue-pages-tub <covers>: copy rather than link.
+
+2026-11-02  Karl Berry  <karl@freefriends.org>
+
+	* check-splice-tub (find_multisplice): don't die on three-way
+	splice, I don't feel like implementing now.
+
+	* tugboat.abbr-ctx (\setuphead, \setupsynonyms):
+	use \NewDocumentCommand.
+	(\startimage,\stopimage,
+	 (\startuseMPgraphic..\stopuseMPgraphic): no-ops.
 
 2026-10-10  Karl Berry  <karl@freefriends.org>
 
