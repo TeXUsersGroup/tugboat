@@ -32,9 +32,9 @@ default check: one
 
 # These issue values, and most of the targets below, come into play with
 # publishing a TUGboat issue; see the README-tug-procedures file on tug.org.
-testiss = 147
+testiss = 146
 lastiss = 147
-crossref_iss = 147
+crossref_iss = 146
 
 # use different temp dir on different machines.
 mydir := $(shell ls ~karl/public_html 2>/dev/null)
