@@ -1,0 +1,96 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{10}
+
+\bibitem{Berry:2019:TOR}
+K.~Berry.
+\newblock {\TUB} online, reimplemented.
+\newblock \emph{TUGboat} 40(1):82--84, 2019.
+\newblock \newline
+  \url{https://tug.org/TUGboat/tb40-1/tb124berry-tubonline.pdf}
+
+\bibitem{Berry:TB32-1-23}
+K.~Berry, D.~Walden.
+\newblock {{\TUB}} online.
+\newblock \emph{TUGboat}~32(1):23--26, 2011.
+\newblock \newline \url{https://tug.org/TUGboat/tb32-1/tb100berry.pdf}
+
+\bibitem{crossref-schema}
+Crossref.
+\newblock Schema versions, 2026.
+\newblock \newline
+  \url{https://crossref.org/documentation/schema-library/schema-versions}
+
+\bibitem{bibnet}
+S.~Foresti, E.~Grosse, N.H.F.~Beebe.
+\newblock Bibnet:~{F}reely-distributable bibliographic data in {\BibTeX}
+  format, 2026.
+\newblock \newline \url{https://ftp.math.utah.edu/pub/bibnet}
+
+\bibitem{bibtexperllibs}
+G.~Gossen, B.~Veytsman, K.~Berry.
+\newblock The~\textsl{bibtexperllibs} package:\newline {\BibTeX} {Perl}
+  libraries, 2026.
+\newblock \newline \url{https://github.com/borisveytsman/BibTeXPerlLibs}
+
+\bibitem{Jihna2010}
+A.E.~Jinha.
+\newblock Article 50 million: An estimate of the number of scholarly articles
+  in existence.
+\newblock \emph{Learned Publishing}, 23(3):258--263, 2010.
+\newblock \url{https://doi.org/10.1087/20100308}
+
+\bibitem{biblatex}
+P.~Lehman, P.~Kime, et~al.
+\newblock The \textsl{biblatex} package: Sophisticated bibliographies in
+  {\LaTeX}, 2026.
+\newblock \url{https://ctan.org/pkg/biblatex}
+
+\bibitem{NSB20257}
+{National{ }Science{ }Board}.
+\newblock Discovery: {R\&D} activity and research publications.
+\newblock Science~\& Engineering Indicators NSB-2025-7,
+  National~Science~Foundation, July~2025.
+\newblock \newline \url{https://ncses.nsf.gov/pubs/nsb20257/}
+
+\bibitem{btxdoc}
+O.~Patashnik.
+\newblock {\BibTeX}ing.
+\newblock (The final item describes \BibTeX's name parsing in detail.)\gobble.
+\newblock \url{https://mirror.ctan.org/biblio/bibtex/base/btxdoc.pdf}
+
+\bibitem{vit}
+V.~Star\'y{ }Novotn\'y.
+\newblock No more backtracking: Abbreviations in the {Markdown} package
+  for~{\TeX}.
+\newblock \emph{TUGboat} 47(2):178--180, 2026.
+\newblock \newline
+  \url{https://doi.org/10.47397/tb/47-2/tb146starynovotny-markdown-abbrev}
+
+\bibitem{aomart}
+B.~Veytsman.
+\newblock The \textsl{aomart} package: Typeset~articles for the \emph{Annals of
+  Mathematics}.
+\newblock \url{https://ctan.org/pkg/aomart}
+
+\bibitem{Leaders12}
+B.~Veytsman.
+\newblock Stubborn leaders and juggling boxes: {A} slightly unusual table
+  of~contents.
+\newblock \emph{TUGboat}~33(3):316--318, 2012.
+\newblock \url{https://tug.org/TUGboat/tb33-3/tb105veytsman-leaders.pdf}
+
+\bibitem{resphilosophica}
+B.~Veytsman.
+\newblock The \textsl{resphilosophica} package: Typeset articles for the
+  journal \emph{Res~Philosophica}, 2026.
+\newblock \url{https://ctan.org/pkg/resphilosophica}
+
+\bibitem{crossrefware}
+B.~Veytsman, K.~Berry.
+\newblock The~\textsl{crossrefware} package: Scripts for working with
+  \texttt{crossref.org}, 2026.
+\newblock \newline \url{https://ctan.org/pkg/crossrefware}
+
+\end{thebibliography}

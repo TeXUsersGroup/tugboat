@@ -1,0 +1,6 @@
+Figshare publishes academic research data online. \tbcode{figshare-meta} is a
+new \LaTeX\ package for parsing and typesetting Figshare metadata. The Figshare
+\acro{API}, \acro{JSON} metadata and the \tbcode{jsonparse} package were
+combined into a Figshare metadata workflow. This work was designed to support
+researchers, librarians, repository managers, or anyone else integrating
+Figshare metadata and \LaTeX.

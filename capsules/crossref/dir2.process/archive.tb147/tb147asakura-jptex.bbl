@@ -1,0 +1,132 @@
+\bibitem{asciidwango}
+  ASCII Corporation.
+  \textit{ASCII Nihongo {\TeX} (Publishing {\TeX})}
+  (アスキー日本語{\TeX}; {\pTeX}).
+  Archived website, hosted by Dwango. In~Japanese.
+  \url{https://asciidwango.github.io/ptex/index.html}
+    %{\nolinkurl{asciidwango.github.io/ptex/}}
+
+\bibitem{asciitexbook1}
+  ASCII Publishing Technical Department.
+  \textit{Japanese {\TeX} Technical Book~I}
+  (日本語{\TeX}テクニカルブック~I).
+  ASCII Corporation, Tokyo, 1990. In Japanese.
+
+\bibitem{tb144berry}
+  K.\ Berry, M.\ Chernoff, J.\ Hef{}feron.
+  Overview of {\TeX} engines and formats.
+  \textit{TUGboat}~46(3):335--338, 2025.
+  \\
+  \url{https://tug.org/TUGboat/tb46-3/tb144berry-engines-formats.pdf}
+    %{\nolinkurl{tug.org/TUGboat/tb46-3/tb144berry}}
+
+\bibitem{xecjk}
+  CTEX Project.
+  \textit{The xeCJK package}.
+  version 3.10.6, 2026.
+  \url{https://ctan.org/pkg/xecjk}
+    %{\nolinkurl{ctan.org/pkg/xecjk}}
+
+\bibitem{kitagawa2012}
+  H.\ Kitagawa.
+  Japanese typesetting with {\LuaTeX}.
+  Talk at Euro{\TeX} 2012, Breskens, Netherlands, 2012.
+  \\
+  \url{https://github.com/h-kitagawa/presentations/blob/HEAD/eurotex12.pdf}
+    %{\nolinkurl{github.com/h-kitagawa/presentations}}
+
+\bibitem{kitagawa2023}
+  H.\ Kitagawa.
+  About ``{\XeTeX}-based np{\TeX}''
+  (「{\XeTeX}ベースのnp{\TeX}」について).
+  Qiita,~2023. In Japanese.
+  \url{https://qiita.com/h-kitagawa/items/ebbf3684b3b1be8f0747}
+    %{\nolinkurl{qiita.com/h-kitagawa/items/ebbf3684b3b1be8f0747}}
+
+\bibitem{texbook}
+  D.\ E.\ Knuth.
+  \textit{The {\TeX}book}.
+  Addison-Wesley, Reading, Massachusetts, 1984.
+
+\bibitem{ptexguide}
+  Japanese {\TeX} Development Community.
+  \textit{Guide to {\pTeX} for developers unfamiliar with Japanese}.
+  version p4.1.2, 2025.
+  \\\url{https://mirrors.ctan.org/info/ptex-manual/ptex-guide-en.pdf}
+
+\bibitem{ptexmanual}
+  Japanese {\TeX} Development Community.
+  \textit{{\pTeX} Manual} ({\pTeX}マニュアル).
+  version p4.1.2, 2025. In Japanese.
+  \\\url{https://ctan.org/pkg/ptex-manual}
+
+\bibitem{texjporg_activities}
+  Japanese {\TeX} Development Community.
+  Major activities of the Japanese {\TeX} Development Community
+  (日本語{\TeX}開発コミュニティに関わる主な動向).
+  In Japanese.
+  \url{https://www.texjp.org/activities/establishment.html}
+    %{\nolinkurl{texjp.org/activities/establishment.html}}
+
+\bibitem{ltnews31}
+  {\LaTeX} Team.
+  \textit{{\LaTeX} News}, Issue 31, February 2020.
+  \url{https://www.latex-project.org/news/latex2e-news/ltnews31.pdf}
+    %{\nolinkurl{latex-project.org/news/latex2e-news/ltnews31.pdf}}
+
+\bibitem{ltnews32}
+  {\LaTeX} Team.
+  \textit{{\LaTeX} News}, Issue 32, October 2020.
+  \url{https://www.latex-project.org/news/latex2e-news/ltnews32.pdf}
+    %{\nolinkurl{latex-project.org/news/latex2e-news/ltnews32.pdf}}
+
+\bibitem{ltnews38}
+  {\LaTeX} Team.
+  \textit{{\LaTeX} News}, Issue 38, November 2023.
+  \url{https://www.latex-project.org/news/latex2e-news/ltnews38.pdf}
+    %{\nolinkurl{latex-project.org/news/latex2e-news/ltnews38.pdf}}
+
+\bibitem{ltnews40}
+  {\LaTeX} Team.
+  \textit{{\LaTeX} News}, Issue 40, November 2024.
+  \url{https://www.latex-project.org/news/latex2e-news/ltnews40.pdf}
+    %{\nolinkurl{latex-project.org/news/latex2e-news/ltnews40.pdf}}
+
+\bibitem{cjk}
+  W.\ Lemberg.
+  The CJK package for {\LaTeXe}\Dash Multilingual support beyond babel.
+  \textit{TUGboat} 18(3):214--224, 1997.
+  \url{https://tug.org/TUGboat/tb18-3/cjkintro600.pdf}
+    %{\nolinkurl{tug.org/TUGboat/tb18-3/cjkintro600.pdf}}
+
+\bibitem{luatexja}
+  {\LuaTeX}-ja Project Team.
+  \textit{The~{\LuaTeX}-ja package}.
+  version 20261004.0, 2026.
+  \\
+  \url{https://ctan.org/pkg/luatexja}
+    %{\nolinkurl{ctan.org/pkg/luatexja}}
+
+\bibitem{jlreq}
+  W3C.
+  \textit{Requirements for Japanese Text Layout} (JLReq).
+  W3C Working Group Note, 11 August 2020.
+  \url{https://www.w3.org/TR/jlreq/}
+    %{\nolinkurl{w3.org/TR/jlreq/}}
+
+\bibitem{yamashita2021}
+  H.\ Yamashita.
+  {\pLaTeX} may be seriously in danger
+  ({\pLaTeX}は危機的な状況にあるかもしれない).
+  Blog post, 18 June 2021. In Japanese.
+  \url{https://acetaminophen.hatenablog.com/entry/2021/06/18/022108}
+    %{\nolinkurl{acetaminophen.hatenablog.com/entry/2021/06/18/022108}}
+
+\bibitem{plautopatch}
+  H.\ Yamashita.
+  \textit{The plautopatch package}.
+  version 0.9q, 2021.
+  \\
+  \url{https://ctan.org/pkg/plautopatch}
+    %{\nolinkurl{ctan.org/pkg/plautopatch}}
+\end{thebibliography}

@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}
+
+\bibitem{Jarry:1911}
+A.~Jarry.
+\newblock \emph{Gestes et opinions du docteur Faustroll, pataphysicien}.
+\newblock Fasquelle, 1911.
+
+\bibitem{Knuth:TB11-4-489}
+D.E.~Knuth.
+\newblock {{The Future of \TeX\ and \MF}}.
+\newblock \emph{{\TUB}}, 11(4):489, December~1990.
+\newblock \newline \url{tug.org/TUGboat/tb11-4/tb30knut.pdf}
+
+\bibitem{Stalder:cmgraded:2026}
+A.~Stalder.
+\newblock The {\tbcode{cmgraded}} package.
+\newblock \newline \url{ctan.org/pkg/cmgraded}
+
+\bibitem{tex.stackexchange:latex-evolution}
+A.~Stalder, et~al.
+\newblock Plans for evolution/support of
+  \{Xe\textbar{}Lua[node\textbar{}harf]\}{LaTeX?}
+\newblock \newline \url{tex.stackexchange.com/questions/755237}
+
+\end{thebibliography}

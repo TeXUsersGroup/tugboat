@@ -1,0 +1,8 @@
+The \tbcode{monoref} package resolves a bounded set of \LaTeX{}
+cross-references in one \LuaLaTeX{} run: \cs{ref}, \cs{pageref},
+plain numbered citations, a
+body-page total, and a generated table of contents.  It does this by
+holding finished pages as Lua node lists, recording the true page of
+labels with invisible markers, and replacing reserved reference slots
+just before final shipout.  This article describes the implementation
+and its trade-offs.

@@ -1,0 +1,9 @@
+The \texttt{fddiagram} package provides a declarative interface for
+typesetting functional dependency diagrams, a central concept in
+relational database theory and normalization, directly in \LaTeX.
+The author writes dependencies in near-mathematical notation
+inside an environment; the package derives the attribute universe,
+computes all positions, and produces a \TikZ-based diagram automatically.
+No \TikZ\ knowledge is required.
+The package is implemented in \LaTeX3 and is available at
+\url{https://ctan.org/pkg/fddiagram} and in \TeX\ Live.

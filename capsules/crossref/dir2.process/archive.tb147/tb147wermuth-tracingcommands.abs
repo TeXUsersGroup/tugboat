@@ -1,0 +1,7 @@
+        This article describes two debugging aids of the
+program \TeX. It primarily focuses on the integer
+parameter \cs{tracingcommands} that distinguishes two levels when it
+writes information about processed built-in commands into \TeX's log
+file. The article also looks at the integer
+parameter \cs{tracingmacros}, which is a useful partner
+of \cs{tracingcommands}.{\hfuzz=.7pt\par}

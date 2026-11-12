@@ -1,0 +1,34 @@
+\begin{thebibliography}{1}
+
+\bibitem{snd}
+J.C.~Bowman.
+\newblock Asymptote: Interactive {\TeX}-aware {3D} vector graphics.
+\newblock \emph{\TUB} 31(2):203--205, 2010.
+\newblock \url{https://tug.org/TUGboat/tb31-2/tb98bowman.pdf}, \gobble.
+\newblock
+  \url{https://www.math.ualberta.ca/~bowman/publications/tb98bowman.pdf}
+
+\bibitem{v3d}
+J.C.~Bowman.
+\newblock \acro{V3D}: {Portable} interactive {3D} graphics for \acro{PDF} and
+  beyond.
+\newblock \emph{\TUB} 47(2):230--233, 2026.
+\newblock \url{https://tug.org/TUGboat/tb47-2/tb146bowman-v3d.pdf}, \gobble.
+\newblock
+  \url{https://www.math.ualberta.ca/~bowman/publications/tb146bowman-v3d.html}
+
+\bibitem{fst}
+J.C.~Bowman, A.~Hammerlindl.
+\newblock Asymptote: {A}~vector graphics language.
+\newblock \emph{\TUB} 29(2):288--294, 2008.
+\newblock \url{https://tug.org/TUGboat/tb29-2/tb92bowman.pdf}, \gobble.
+\newblock \url{https://www.math.ualberta.ca/~bowman/publications/asyTUG.pdf}
+
+\bibitem{manual}
+R.~Maksimovich.
+\newblock \texttt{smoothmanifold.asy}: Diagrams in higher mathematics with
+  {A}symptote.
+\newblock
+  \url{https://github.com/thornoar/smoothmanifold/blob/master/documentation/main.pdf}
+
+\end{thebibliography}

@@ -1,0 +1,1241 @@
+<doi_batch
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    version="5.5.0"
+    xmlns="http://www.crossref.org/schema/5.5.0"
+    xsi:schemaLocation="http://www.crossref.org/schema/5.5.0
+                        http://data.crossref.org/schemas/crossref5.5.0.xsd">
+  <head>
+    <doi_batch_id>ltx2crossref-20261112222620-5165</doi_batch_id>
+    <timestamp>20261112222620</timestamp>
+    <depositor>
+      <depositor_name>TUGboat production</depositor_name>
+      <email_address>doi-tugboat@tug.org</email_address>
+    </depositor>
+    <registrant>TeX Users Group</registrant>
+  </head>
+  <body><journal>
+    <journal_metadata language="en">
+      <full_title>TUGboat</full_title>
+      <issn>0896-3207</issn>      
+    </journal_metadata>
+    <journal_issue>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <journal_volume><volume>47</volume></journal_volume>
+      <issue>3</issue>
+    </journal_issue>
+    <journal_article>
+      <titles>
+        <title>From the president</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Arthur</given_name>
+          <surname>Rosendahl</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>299</first_page>
+        <last_page>299</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147pres</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147pres.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Editorial comments</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Barbara</given_name>
+          <surname>Beeton</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>300</first_page>
+        <last_page>301</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147beet</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147beet.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>How to make a good first impression: A CTAN guide</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Vincent</given_name>
+          <surname>Goulet</surname>
+          <ORCID>https://orcid.org/0000-0002-9315-5719</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>301</first_page>
+        <last_page>304</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147goulet-ctan</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147goulet-ctan.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Lamport:1978-1">
+          <unstructured_citation>L. Lamport. State the problem before describing the solution. ACM SIGSOFT Software Engineering Notes, 3(1):26&#x2013;26, 1978. https://doi.org/10.1145/1010734.1010737</unstructured_citation>
+        </citation>
+        <citation key="Salus:1994:QCU-2">
+          <unstructured_citation>P.H. Salus. A Quarter Century of UNIX. Addison-Wesley, Reading, MA, USA, 1994.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Typographers' Inn</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Peter</given_name>
+          <surname>Flynn</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>305</first_page>
+        <last_page>306</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147inn</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147inn.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="antoni-1">
+          <unstructured_citation>F. Antoni. Le m&#x00e9;tier de correcteur. https://franckantoni.com/depuis-quand-met-on-des-traits-dunion-aux-noms-de-voies/</unstructured_citation>
+        </citation>
+        <citation key="duden-2">
+          <unstructured_citation>Dudenredaktion, ed. Online-W&#x00f6;rterbuch&#x2014;Rechtschreibregeln. https://www.duden.de/sprachwissen/rechtschreibregeln/strassennamen</unstructured_citation>
+        </citation>
+        <citation key="fyffe-3">
+          <unstructured_citation>C. Fyffe. Basic Copyfitting. Studio Vista, 1969.</unstructured_citation>
+        </citation>
+        <citation key="hart-4">
+          <unstructured_citation>H. Hart. Rules for Compositors and Readers. https://latex.silmaril.ie/harts-rules/harts-rules.html#capitals</unstructured_citation>
+        </citation>
+        <citation key="oxford-5">
+          <unstructured_citation>S. Jenkins. Old street signs in the city of Oxford. https://www.oxfordhistory.org.uk/streets/xtra/street_signs/index.html</unstructured_citation>
+        </citation>
+        <citation key="platner-6">
+          <unstructured_citation>S.B. Platner, T. Ashby, eds. A Topographical Dictionary of Ancient Rome. Oxford University Press, 1929.</unstructured_citation>
+        </citation>
+        <citation key="oupstyle-7">
+          <unstructured_citation>R. Ritter. The Oxford Guide to Style. Oxford University Press, 2nd ed., 2002.</unstructured_citation>
+        </citation>
+        <citation key="cms-8">
+          <unstructured_citation>C.M. Smith. The Working-Man&#x2019;s Way in the World&#x2014;Being the Autobiography of a Journeyman Printer. Printing Historical Society, 1967. Reprinted from 1st ed., 3rd printing, London: Cash, 1857.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>A <tt>cmgraded</tt> Odyssey</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Alain</given_name>
+          <surname>Stalder</surname>
+          <ORCID>https://orcid.org/0009-0005-6688-523X</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>307</first_page>
+        <last_page>309</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147stalder-cmgraded</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147stalder-cmgraded.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Jarry:1911-1">
+          <unstructured_citation>A. Jarry. Gestes et opinions du docteur Faustroll, pataphysicien. Fasquelle, 1911.</unstructured_citation>
+        </citation>
+        <citation key="Knuth:TB11-4-489-2">
+          <unstructured_citation>D.E. Knuth. The Future of TeX and Metafont. TUGboat, 11(4):489, December 1990. https://tug.org/TUGboat/tb11-4/tb30knut.pdf</unstructured_citation>
+        </citation>
+        <citation key="Stalder:cmgraded:2026-3">
+          <unstructured_citation>A. Stalder. The cmgraded package. https://ctan.org/pkg/cmgraded</unstructured_citation>
+        </citation>
+        <citation key="tex.stackexchange:latex-evolution-4">
+          <unstructured_citation>A. Stalder, et al. Plans for evolution/support of &#x007b;Xe&#x007C;Lua[node&#x007C;harf]&#x007d;LaTeX? https://tex.stackexchange.com/questions/755237</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Writing special keys with Libertinus Keyboard Regular</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Micha&#xeb;l P.</given_name>
+          <surname>van de Weerd</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>310</first_page>
+        <last_page>311</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147weerd-lbkeyboard</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147weerd-lbkeyboard.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Japanese TeX in 2026: An outside-in perspective</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Takuto</given_name>
+          <surname>Asakura</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>312</first_page>
+        <last_page>320</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147asakura-jptex</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147asakura-jptex.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="asciidwango-1">
+          <unstructured_citation>ASCII Corporation. ASCII Nihongo TeX (Publishing TeX) (&#x30a2;&#x30b9;&#x30ad;&#x30fc;&#x65e5;&#x672c;&#x8a9e;TeX; pTeX). Archived website, hosted by Dwango. In Japanese. https://asciidwango.github.io/ptex/index.html</unstructured_citation>
+        </citation>
+        <citation key="asciitexbook1-2">
+          <unstructured_citation>ASCII Publishing Technical Department. Japanese TeX Technical Book I (&#x65e5;&#x672c;&#x8a9e;TeX&#x30c6;&#x30af;&#x30cb;&#x30ab;&#x30eb;&#x30d6;&#x30c3;&#x30af; I). ASCII Corporation, Tokyo, 1990. In Japanese.</unstructured_citation>
+        </citation>
+        <citation key="tb144berry-3">
+          <unstructured_citation>K. Berry, M. Chernoff, J. Hefferon. Overview of TeX engines and formats. TUGboat 46(3):335&#x2013;338, 2025. https://tug.org/TUGboat/tb46-3/tb144berry-engines-formats.pdf</unstructured_citation>
+        </citation>
+        <citation key="xecjk-4">
+          <unstructured_citation>CTEX Project. The xeCJK package. version 3.10.6, 2026. https://ctan.org/pkg/xecjk</unstructured_citation>
+        </citation>
+        <citation key="kitagawa2012-5">
+          <unstructured_citation>H. Kitagawa. Japanese typesetting with LuaTeX. Talk at EuroTeX 2012, Breskens, Netherlands, 2012. https://github.com/h-kitagawa/presentations/blob/HEAD/eurotex12.pdf</unstructured_citation>
+        </citation>
+        <citation key="kitagawa2023-6">
+          <unstructured_citation>H. Kitagawa. About &#x201c;XeTeX-based npTeX&#x201d; (&#x300c;XeTeX&#x30d9;&#x30fc;&#x30b9;&#x306e;npTeX&#x300d;&#x306b;&#x3064;&#x3044;&#x3066;). Qiita, 2023. In Japanese. https://qiita.com/h-kitagawa/items/ebbf3684b3b1be8f0747</unstructured_citation>
+        </citation>
+        <citation key="texbook-7">
+          <unstructured_citation>D. E. Knuth. The TeXbook. Addison-Wesley, Reading, Massachusetts, 1984.</unstructured_citation>
+        </citation>
+        <citation key="ptexguide-8">
+          <unstructured_citation>Japanese TeX Development Community. Guide to pTeX for developers unfamiliar with Japanese. version p4.1.2, 2025. https://mirrors.ctan.org/info/ptex-manual/ptex-guide-en.pdf</unstructured_citation>
+        </citation>
+        <citation key="ptexmanual-9">
+          <unstructured_citation>Japanese TeX Development Community. pTeX Manual (pTeX&#x30de;&#x30cb;&#x30e5;&#x30a2;&#x30eb;). version p4.1.2, 2025. In Japanese. https://ctan.org/pkg/ptex-manual</unstructured_citation>
+        </citation>
+        <citation key="texjporg_activities-10">
+          <unstructured_citation>Japanese TeX Development Community. Major activities of the Japanese TeX Development Community (&#x65e5;&#x672c;&#x8a9e;TeX&#x958b;&#x767a;&#x30b3;&#x30df;&#x30e5;&#x30cb;&#x30c6;&#x30a3;&#x306b;&#x95a2;&#x308f;&#x308b;&#x4e3b;&#x306a;&#x52d5;&#x5411;). In Japanese. https://www.texjp.org/activities/establishment.html</unstructured_citation>
+        </citation>
+        <citation key="ltnews31-11">
+          <unstructured_citation>LaTeX Team. LaTeX News, Issue 31, February 2020. https://www.latex-project.org/news/latex2e-news/ltnews31.pdf</unstructured_citation>
+        </citation>
+        <citation key="ltnews32-12">
+          <unstructured_citation>LaTeX Team. LaTeX News, Issue 32, October 2020. https://www.latex-project.org/news/latex2e-news/ltnews32.pdf</unstructured_citation>
+        </citation>
+        <citation key="ltnews38-13">
+          <unstructured_citation>LaTeX Team. LaTeX News, Issue 38, November 2023. https://www.latex-project.org/news/latex2e-news/ltnews38.pdf</unstructured_citation>
+        </citation>
+        <citation key="ltnews40-14">
+          <unstructured_citation>LaTeX Team. LaTeX News, Issue 40, November 2024. https://www.latex-project.org/news/latex2e-news/ltnews40.pdf</unstructured_citation>
+        </citation>
+        <citation key="cjk-15">
+          <unstructured_citation>W. Lemberg. The CJK package for LaTeX2e&#x2014;Multilingual support beyond babel. TUGboat 18(3):214&#x2013;224, 1997. https://tug.org/TUGboat/tb18-3/cjkintro600.pdf</unstructured_citation>
+        </citation>
+        <citation key="luatexja-16">
+          <unstructured_citation>LuaTeX-ja Project Team. The LuaTeX-ja package. version 20261004.0, 2026. https://ctan.org/pkg/luatexja</unstructured_citation>
+        </citation>
+        <citation key="jlreq-17">
+          <unstructured_citation>W3C. Requirements for Japanese Text Layout (JLReq). W3C Working Group Note, 11 August 2020. https://www.w3.org/TR/jlreq/</unstructured_citation>
+        </citation>
+        <citation key="yamashita2021-18">
+          <unstructured_citation>H. Yamashita. pLaTeX may be seriously in danger (pLaTeX&#x306f;&#x5371;&#x6a5f;&#x7684;&#x306a;&#x72b6;&#x6cc1;&#x306b;&#x3042;&#x308b;&#x304b;&#x3082;&#x3057;&#x308c;&#x306a;&#x3044;). Blog post, 18 June 2021. In Japanese. https://acetaminophen.hatenablog.com/entry/2021/06/18/022108</unstructured_citation>
+        </citation>
+        <citation key="plautopatch-19">
+          <unstructured_citation>H. Yamashita. The plautopatch package. version 0.9q, 2021. https://ctan.org/pkg/plautopatch</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Kazakh language support for TeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Berik I.</given_name>
+          <surname>Tuleuov</surname>
+          <ORCID>https://orcid.org/0000-0002-8064-6367</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>321</first_page>
+        <last_page>323</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147tuleuov-kazakh</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147tuleuov-kazakh.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="kz_orph-1">
+          <unstructured_citation>&#x0420;. &#x0421;&#x044b;&#x0437;&#x0434;&#x044b;&#x049b;, &#x041d;. &#x0423;&#x04d9;&#x043b;&#x0438;&#x04b1;&#x043b;&#x044b;, &#x049a;. &#x041a;&#x04af;&#x0434;&#x0435;&#x0440;&#x0438;&#x043d;&#x043e;&#x0432;&#x0430;, &#x0410;. &#x0424;&#x0430;&#x0437;&#x044b;&#x043b;&#x0436;&#x0430;&#x043d;&#x043e;&#x0432;&#x0430; &#x0436;&#x04d9;&#x043d;&#x0435; &#x0442;. &#x0431;. &#x049a;&#x0430;&#x0437;&#x0430;&#x049b; &#x0442;&#x0456;&#x043b;&#x0456;&#x043d;&#x0456;&#x04a3; &#x043e;&#x0440;&#x0444;&#x043e;&#x0433;&#x0440;&#x0430;&#x0444;&#x0438;&#x044f;&#x043b;&#x044b;&#x049b; &#x0441;&#x04e9;&#x0437;&#x0434;&#x0456;&#x0433;&#x0456;. 53 000 &#x0441;&#x04e9;&#x0437;. &#x0410;&#x043b;&#x043c;&#x0430;&#x0442;&#x044b;, &#x00ab;&#x0410;&#x0440;&#x044b;&#x0441;&#x00bb; &#x0431;&#x0430;&#x0441;&#x043f;&#x0430;&#x0441;&#x044b;, 2005. 616 &#x0431;&#x0435;&#x0442;.</unstructured_citation>
+        </citation>
+        <citation key="kz_iTest-2">
+          <unstructured_citation>iTest. &#x0414;&#x0430;&#x0443;&#x044b;&#x0441;&#x0442;&#x044b; &#x0434;&#x044b;&#x0431;&#x044b;&#x0441;&#x0442;&#x0430;&#x0440;: &#x0436;&#x0443;&#x0430;&#x043d;, &#x0436;&#x0456;&#x04a3;&#x0456;&#x0448;&#x043a;&#x0435;; &#x0430;&#x0448;&#x044b;&#x049b;, &#x049b;&#x044b;&#x0441;&#x0430;&#x04a3;; &#x0435;&#x0440;&#x0456;&#x043d;&#x0434;&#x0456;&#x043a;, &#x0435;&#x0437;&#x0443;&#x043b;&#x0456;&#x043a; &#x0434;&#x0430;&#x0443;&#x044b;&#x0441;&#x0442;&#x044b;&#x043b;&#x0430;&#x0440;, &#x0435;&#x043c;&#x043b;&#x0435;&#x0441;&#x0456;. https://itest.kz/kz/ent/qazaq-tili/fonetika/lecture/dauysty-dybystar-zhuan-zhingishke-ashyq-qysang-erindik-ezulik-dauystylar-emlesi</unstructured_citation>
+        </citation>
+        <citation key="kz_gram-3">
+          <unstructured_citation>&#x049a;&#x0430;&#x0437;&#x0430;&#x049b; &#x0433;&#x0440;&#x0430;&#x043c;&#x043c;&#x0430;&#x0442;&#x0438;&#x043a;&#x0430;&#x0441;&#x044b;. &#x0424;&#x043e;&#x043d;&#x0435;&#x0442;&#x0438;&#x043a;&#x0430;, &#x0441;&#x04e9;&#x0437;&#x0436;&#x0430;&#x0441;&#x0430;&#x043c;, &#x043c;&#x043e;&#x0440;&#x0444;&#x043e;&#x043b;&#x043e;&#x0433;&#x0438;&#x044f;, &#x0441;&#x0438;&#x043d;&#x0442;&#x0430;&#x043a;&#x0441;&#x0438;&#x0441;. &#x0410;&#x0441;&#x0442;&#x0430;&#x043d;&#x0430;, 2002. 784 &#x0431;&#x0435;&#x0442;.</unstructured_citation>
+        </citation>
+        <citation key="liang1983-4">
+          <unstructured_citation>Liang, F.M. Word Hy-phen-a-tion by Com-put-er. Doctoral dissertation, Stanford University, 1983. https://tug.org/docs/liang</unstructured_citation>
+        </citation>
+        <citation key="knuth1984-5">
+          <unstructured_citation>Knuth, D.E. The TeXbook. Addison-Wesley, 1984.</unstructured_citation>
+        </citation>
+        <citation key="kz_dic-6">
+          <unstructured_citation>&#x049a;&#x0430;&#x0437;&#x0430;&#x049b; &#x0441;&#x04e9;&#x0437;&#x0434;&#x0456;&#x0433;&#x0456;. &#x049a;&#x0430;&#x0437;&#x0430;&#x049b; &#x0442;&#x0456;&#x043b;&#x0456;&#x043d;&#x0456;&#x04a3; &#x0431;&#x0456;&#x0440;&#x0442;&#x043e;&#x043c;&#x0434;&#x044b;&#x049b; &#x04af;&#x043b;&#x043a;&#x0435;&#x043d; &#x0442;&#x04af;&#x0441;&#x0456;&#x043d;&#x0434;&#x0456;&#x0440;&#x043c;&#x0435; &#x0441;&#x04e9;&#x0437;&#x0434;&#x0456;&#x0433;&#x0456;. &#x049a;&#x04b1;&#x0440;&#x0430;&#x0441;&#x0442;.: &#x041d;. &#x0423;&#x04d9;&#x043b;&#x0438;,&#x00a0;&#x0428;. &#x049a;&#x04b1;&#x0440;&#x043c;&#x0430;&#x043d;&#x0431;&#x0430;&#x0439;&#x04b1;&#x043b;&#x044b;, &#x041c;. &#x041c;&#x0430;&#x043b;&#x0431;&#x0430;&#x049b;&#x043e;&#x0432;, &#x0420;. &#x0428;&#x043e;&#x0439;&#x0431;&#x0435;&#x043a;&#x043e;&#x0432; &#x0436;&#x04d9;&#x043d;&#x0435; &#x0442;. &#x0431;. &#x0410;&#x043b;&#x043c;&#x0430;&#x0442;&#x044b;, &#x00ab;&#x0414;&#x04d9;&#x0443;&#x0456;&#x0440;&#x00bb; &#x0431;&#x0430;&#x0441;&#x043f;&#x0430;&#x0441;&#x044b;,&#x00a0;2013. 1488 &#x0431;&#x0435;&#x0442;.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Do we need tagging?</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Mikael P.</given_name>
+          <surname>Sundqvist</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>324</first_page>
+        <last_page>327</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147hagen-notagging</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147hagen-notagging.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Handling bibliographies and metadata for journal publishers: <i>crossrefware</i>, <i>bibtexperllibs</i>, and <i>TUGboat</i></title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Boris</given_name>
+          <surname>Veytsman</surname>
+          <ORCID>https://orcid.org/0000-0003-4674-8113</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>328</first_page>
+        <last_page>334</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147berry-crossref</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147berry-crossref.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Berry:2019:TOR-1">
+          <unstructured_citation>K. Berry. TUGboat online, reimplemented. TUGboat 40(1):82&#x2013;84, 2019. https://tug.org/TUGboat/tb40-1/tb124berry-tubonline.pdf</unstructured_citation>
+        </citation>
+        <citation key="Berry:TB32-1-23-2">
+          <unstructured_citation>K. Berry, D. Walden. TUGboat online. TUGboat 32(1):23&#x2013;26, 2011. https://tug.org/TUGboat/tb32-1/tb100berry.pdf</unstructured_citation>
+        </citation>
+        <citation key="crossref-schema-3">
+          <unstructured_citation>Crossref. Schema versions, 2026. https://crossref.org/documentation/schema-library/schema-versions</unstructured_citation>
+        </citation>
+        <citation key="bibnet-4">
+          <unstructured_citation>S. Foresti, E. Grosse, N.H.F. Beebe. Bibnet: Freely-distributable bibliographic data in BibTeX format, 2026. https://ftp.math.utah.edu/pub/bibnet</unstructured_citation>
+        </citation>
+        <citation key="bibtexperllibs-5">
+          <unstructured_citation>G. Gossen, B. Veytsman, K. Berry. The bibtexperllibs package: BibTeX Perl libraries, 2026. https://github.com/borisveytsman/BibTeXPerlLibs</unstructured_citation>
+        </citation>
+        <citation key="Jihna2010-6">
+          <unstructured_citation>A.E. Jinha. Article 50 million: An estimate of the number of scholarly articles in existence. Learned Publishing, 23(3):258&#x2013;263, 2010. https://doi.org/10.1087/20100308</unstructured_citation>
+        </citation>
+        <citation key="biblatex-7">
+          <unstructured_citation>P. Lehman, P. Kime, et al. The biblatex package: Sophisticated bibliographies in LaTeX, 2026. https://ctan.org/pkg/biblatex</unstructured_citation>
+        </citation>
+        <citation key="NSB20257-8">
+          <unstructured_citation>National Science Board. Discovery: R&#x0026;D activity and research publications. Science &#x0026; Engineering Indicators NSB-2025-7, National Science Foundation, July 2025. https://ncses.nsf.gov/pubs/nsb20257/</unstructured_citation>
+        </citation>
+        <citation key="btxdoc-9">
+          <unstructured_citation>O. Patashnik. BibTeXing. (The final item describes BibTeX&#x2019;s name parsing in detail.) https://mirror.ctan.org/biblio/bibtex/base/btxdoc.pdf</unstructured_citation>
+        </citation>
+        <citation key="vit-10">
+          <unstructured_citation>V. Star&#x00FD; Novotn&#x00FD;. No more backtracking: Abbreviations in the Markdown package for TeX. TUGboat 47(2):178&#x2013;180, 2026. https://doi.org/10.47397/tb/47-2/tb146starynovotny-markdown-abbrev</unstructured_citation>
+        </citation>
+        <citation key="aomart-11">
+          <unstructured_citation>B. Veytsman. The aomart package: Typeset articles for the Annals of Mathematics. https://ctan.org/pkg/aomart</unstructured_citation>
+        </citation>
+        <citation key="Leaders12-12">
+          <unstructured_citation>B. Veytsman. Stubborn leaders and juggling boxes: A slightly unusual table of contents. TUGboat 33(3):316&#x2013;318, 2012. https://tug.org/TUGboat/tb33-3/tb105veytsman-leaders.pdf</unstructured_citation>
+        </citation>
+        <citation key="resphilosophica-13">
+          <unstructured_citation>B. Veytsman. The resphilosophica package: Typeset articles for the journal Res Philosophica, 2026. https://ctan.org/pkg/resphilosophica</unstructured_citation>
+        </citation>
+        <citation key="crossrefware-14">
+          <unstructured_citation>B. Veytsman, K. Berry. The crossrefware package: Scripts for working with crossref.org, 2026. https://ctan.org/pkg/crossrefware</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Retrieving and typesetting Figshare metadata for LaTeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Travis</given_name>
+          <surname>Stenborg</surname>
+          <ORCID>https://orcid.org/0000-0002-2693-9628</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>335</first_page>
+        <last_page>336</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147stenborg-figshare</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147stenborg-figshare.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Bos:2023:MJP-1">
+          <unstructured_citation>J. Bos, K. McCurley. Metadata in journal publishing. TUGboat 44(1):71&#x2013;76, 2023. https://doi.org/10.47397/tb/44-1/tb136bos-metadata</unstructured_citation>
+        </citation>
+        <citation key="DataCite:DataCiteSchema-2">
+          <unstructured_citation>DataCite. DataCite metadata schema, 2026. https://schema.datacite.org/</unstructured_citation>
+        </citation>
+        <citation key="Dewitz:SADTO-1996-3">
+          <unstructured_citation>S.D. Dewitz. Systems Analysis and Design and the Transition to Objects. McGraw-Hill, 1996.</unstructured_citation>
+        </citation>
+        <citation key="Figshare:FigshareAPI-2018-4">
+          <unstructured_citation>Figshare. Figshare API User Documentation, Sept. 2018. https://doi.org/10.6084/m9.figshare.4880372.v2</unstructured_citation>
+        </citation>
+        <citation key="Figshare:FigshareSchema-5">
+          <unstructured_citation>Figshare. Figshare metadata schema overview, 2026. https://info.figshare.com/user-guide/figshare-metadata-schema-overview/</unstructured_citation>
+        </citation>
+        <citation key="Gasimova:SD-2026-6">
+          <unstructured_citation>A. Gasimova, P. Mensah-Kane, et al. The state of scientific poster sharing and reuse. Scientific Data, 2026. https://doi.org/10.1038/s41597-026-08389-4</unstructured_citation>
+        </citation>
+        <citation key="Habicht:JP-2026-7">
+          <unstructured_citation>J. Habicht. The jsonparse package. https://ctan.org/pkg/jsonparse</unstructured_citation>
+        </citation>
+        <citation key="Hahnel:RDSV-2022-8">
+          <unstructured_citation>M. Hahnel. Figshare&#x2014;a place where open academic research outputs live. In Research Data Sharing and Valorization, J. Sch&#x00f6;pfel, V. Rebouillat, eds. Wiley, London, 2022.</unstructured_citation>
+        </citation>
+        <citation key="Leach-Murray:TSQ-33-1-98-9">
+          <unstructured_citation>S. Leach-Murray. Figshare&#x2014;get credit for your research: Figshare.com. Technical Services Quarterly, 33(1):98&#x2013;99, 2016.</unstructured_citation>
+        </citation>
+        <citation key="Thelwall:OIR-40-3-333-10">
+          <unstructured_citation>M. Thelwall, K. Kousha. Figshare: a universal repository for academic resource sharing? Online Information Review, 40(3):333&#x2013;346, 2016.</unstructured_citation>
+        </citation>
+        <citation key="Voynich:1404-11">
+          <unstructured_citation>Cipher manuscript [Voynich manuscript]. Beinecke Rare Book &#x0026; Manuscript Library, Yale University, c. 1401&#x2013;1599?. https://collections.library.yale.edu/catalog/2002046</unstructured_citation>
+        </citation>
+        <citation key="Wilkinson:SD-3-160018-12">
+          <unstructured_citation>M.D. Wilkinson, M. Dumontier, et al. The FAIR Guiding Principles for scientific data management and stewardship. Scientific Data, 3(1):160018, 2016. https://doi.org/10.1038/sdata.2016.18</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>LaTeX news, issue 44, November 2026</title>
+      </titles>
+      <contributors>
+        <organization sequence="first" contributor_role="author">LaTeX Project Team</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>337</first_page>
+        <last_page>346</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147ltnews44</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147ltnews44.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="44:ltnews-1">
+          <unstructured_citation>LaTeX Project Team. LaTeX2e news 1&#x2013;44. November, 2026. https://latex-project.org/news/latex2e-news/ltnews.pdf</unstructured_citation>
+        </citation>
+        <citation key="44:rollback-2">
+          <unstructured_citation>Frank Mittelbach. A rollback concept for packages and classes. TUGboat 39:2, 2018. https://latex-project.org/publications/2018-FMi-TUB-tb122mitt-version-rollback.pdf</unstructured_citation>
+        </citation>
+        <citation key="44:videos-3">
+          <unstructured_citation>TeX Users Group. TUG 2026 talks, Calgary. YouTube 2026. https://youtube.com/playlist?list=PLF0YCVuRyY-o</unstructured_citation>
+        </citation>
+        <citation key="44:isssue47-4">
+          <unstructured_citation>TeX Users Group. TUG 2026 Proceedings. TUGboat 47:2, 2026. Available to members and freely available to everyone in spring 2027. https://tug.org/TUGboat/tb47-2/</unstructured_citation>
+        </citation>
+        <citation key="44:ufi-5">
+          <unstructured_citation>Ulrike Fischer. News from the LaTeX Tagged PDF project: 2026. TUGboat 47:2, 2026. https://latex-project.org/publications/2026-UFi-TUG-tb146fischer-tagging26.pdf</unstructured_citation>
+        </citation>
+        <citation key="44:fmi-6">
+          <unstructured_citation>Frank Mittelbach. Towards accessible document classes. TUGboat 47:2, 2026. https://latex-project.org/publications/2026-FMi-TUG-tb146mittelbach-accessibleclasses.pdf</unstructured_citation>
+        </citation>
+        <citation key="44:tpr-7">
+          <unstructured_citation>Timothy Prescott. Converting a PDF textbook to be accessible. TUGboat 47:2, 2026. https://tug.org/TUGboat/tb47-2/tb146prescott-book-accessibility.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Single-pass cross-referencing in LuaLaTeX: Hold and patch</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Srikanth</given_name>
+          <surname>Mohankumar</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Nareshkumar</given_name>
+          <surname>Krishnaswamy</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>347</first_page>
+        <last_page>351</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147mohankumar-monoref</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147mohankumar-monoref.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="latexmk-1">
+          <unstructured_citation>J. Collins. latexmk: Fully automated LaTeX document generation. https://ctan.org/pkg/latexmk</unstructured_citation>
+        </citation>
+        <citation key="latex-2">
+          <unstructured_citation>L. Lamport. LaTeX: A Document Preparation System. Addison-Wesley, second ed., 1994.</unstructured_citation>
+        </citation>
+        <citation key="luatex-3">
+          <unstructured_citation>LuaTeX development team. LuaTeX Reference Manual. https://ctan.org/pkg/luatex</unstructured_citation>
+        </citation>
+        <citation key="ltshipout-4">
+          <unstructured_citation>F. Mittelbach, LaTeX Project Team. The shipout routine: hooks and interfaces. https://mirrors.ctan.org/macros/latex/base/ltshipout-doc.pdf</unstructured_citation>
+        </citation>
+        <citation key="ctanmonoref-5">
+          <unstructured_citation>S. Mohankumar. monoref package page. https://ctan.org/pkg/monoref</unstructured_citation>
+        </citation>
+        <citation key="githubmonoref-6">
+          <unstructured_citation>S. Mohankumar. monoref source repository. https://github.com/Srikanth-Mohankumar/latex-monoref</unstructured_citation>
+        </citation>
+        <citation key="optex-7">
+          <unstructured_citation>P. Ol&#x0161;&#x00E1;k. OpTeX: LuaTeX format based on plain TeX and OPmac. https://ctan.org/pkg/optex</unstructured_citation>
+        </citation>
+        <citation key="hyperref-8">
+          <unstructured_citation>S. Rahtz, H. Oberdiek, et al. The hyperref package. https://ctan.org/pkg/hyperref</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The letter <i>t</i> in old Polish printed works: A preliminary study</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Janusz S.</given_name>
+          <surname>Bie&#x0144;</surname>
+          <ORCID>https://orcid.org/0000-0001-5006-8183</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>352</first_page>
+        <last_page>360</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147bien-t</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147bien-t.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="PT_VII:113-1">
+          <unstructured_citation>Adam Tussinus a Tarn&#x00f3;w. Iudicium et significatio cometae qui apparuit in fine dierum Iunii sub Anno Domini 1533 [&#x2026;]. 1533. https://polona.pl/item-view/8efed241-284c-438b-ba1d-986f8a6f214f</unstructured_citation>
+        </citation>
+        <citation key="JunicodeManual-2">
+          <unstructured_citation>P.S. Baker. Junicode&#x2014;the font for medievalists: Specimens and user manual. Junicode Project, 2026. https://github.com/psb1558/Junicode-font/blob/master/docs/JunicodeManual.pdf</unstructured_citation>
+        </citation>
+        <citation key="bieÅ21:_trakt_stanis_zabor-3">
+          <unstructured_citation>J.S. Bie&#x0144;. Traktat Stanis&#x0142;awa Zaborowskiego i skr&#x00f3;ty brachygraficzne. Pozna&#x0144;ski P&#x00f3;&#x0142;rocznik J&#x0119;zykoznawczy, 30(1 (30)):1&#x2013;42, 2021. Link is for a draft; final article not available online. https://www.researchgate.net/publication/341930612</unstructured_citation>
+        </citation>
+        <citation key="G21C-22-4">
+          <unstructured_citation>J.S. Bie&#x0144;. 16th century Latin printed brevigraphs in Unicode &#x2014;a computer resource. In Proceedings of Grapholinguistics in the 21st Century, 2022, Y. Haralambous, ed., vol. 9 of Grapholinguistics and Its Applications, pp. 299&#x2013;314. Fluxus Editions, Brest, 2024. https://doi.org/10.36824/2022-graf-bien</unstructured_citation>
+        </citation>
+        <citation key="Bien2024-5">
+          <unstructured_citation>J.S. Bie&#x0144;. Paleotypografia cyfrowa na przyk&#x0142;adzie czcionek dawnych drukarni polskich. Presentation at Towarzystwo Mi&#x0142;o&#x015b;nik&#x00f3;w J&#x0119;zyka Polskiego, Warszawa, 18 Dec. 2024, Dec. 2024. https://researchgate.net/publication/387137440</unstructured_citation>
+        </citation>
+        <citation key="1615omnia-6">
+          <unstructured_citation>I. de Bottis, P. Mangrella. Omnia, quae extant, opera, Eaque profecto non modo eiusdem Delphicis Responsis quamplurimis [&#x2026;], vol. 3. Iunta, 1615. https://viewer.onb.ac.at/1086F328/</unstructured_citation>
+        </citation>
+        <citation key="Bartolus1471TreviInfortiatum-7">
+          <unstructured_citation>B. de Saxoferrato. Lectura super prima parte Infortiati. Johannes Reinhardi, 1471-01-23.</unstructured_citation>
+        </citation>
+        <citation key="N3027-8">
+          <unstructured_citation>M. Everson, P. Baker, et al. Proposal to add medievalist characters to the UCS. Working Group Document N3027, ISO/IEC JTC1/SC2/WG2, 2006. http://unicode.org/L2/L2006/06027-n3027-medieval.pdf</unstructured_citation>
+        </citation>
+        <citation key="N2957-9">
+          <unstructured_citation>M. Everson, O.E. Haugen, et al. Preliminary proposal to add medievalist characters to the UCS. Working Group Document N2957, ISO/IEC JTC1/SC2/WG2, 2005. http://www.unicode.org/L2/L2005/05183-n2957-mufi.pdf</unstructured_citation>
+        </citation>
+        <citation key="PT_VII:75-10">
+          <unstructured_citation>Grzegorz z Szamotu&#x0142; (Gregorius de Szamotu&#x0142;y). Processus iuris breuior Ioannis Andreae pro tyrunculis resolutus [&#x2026;]. Florian Ungler, 1531. https://kpbc.umk.pl/dlibra/publication/258579/edition/ 269298</unstructured_citation>
+        </citation>
+        <citation key="iso-ir-53-11">
+          <unstructured_citation>Extension of the Latin alphabet coded character set for bibliographic interchange. Technical Report ISO-IR 53, International Organization for Standardization, 1980. https://evertype.com/standards/iso10646/pdf/iso-5426.pdf</unstructured_citation>
+        </citation>
+        <citation key="PT_V:37-12">
+          <unstructured_citation>Lectura sup[er] titulo de regulis iuris libro sexto. Florian Ungler, Krak&#x00F3;w, 1524. https://dbc.wroc.pl/publication/7148</unstructured_citation>
+        </citation>
+        <citation key="PT_VII:78-13">
+          <unstructured_citation>Lectura super titulo De Regulis Iuris Libro Sexto. Florian Ungler, Krak&#x00F3;w, (not after) 1532. https://dbc.wroc.pl/dlibra/publication/7721</unstructured_citation>
+        </citation>
+        <citation key="wills_mufi_clarification_2024-14">
+          <unstructured_citation>T. Wills. Clarification of use and forms of certain combining characters covered by the Medieval Unicode Font Initiative (MUFI). Working Paper L2/24-103, Unicode Consortium, Script Ad Hoc Group / L2, 2024-04-09. https://www.unicode.org/L2/L2024/24103-mufi-clarification.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Service model</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>360</first_page>
+        <last_page>362</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147hagen-servicemodel</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147hagen-servicemodel.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Becoming friends with Claude</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Keith</given_name>
+          <surname>McKay</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>362</first_page>
+        <last_page>367</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147mckay-claude</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147mckay-claude.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Using AI to make a 3D ConTeXt module</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Mikael P.</given_name>
+          <surname>Sundqvist</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>368</first_page>
+        <last_page>371</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147hagen-3d-ai</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147hagen-3d-ai.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Human or artificial intelligence</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Hans</given_name>
+          <surname>Hagen</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Keith</given_name>
+          <surname>McKay</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Mikael P.</given_name>
+          <surname>Sundqvist</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>372</first_page>
+        <last_page>376</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147hagen-human-ai</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147hagen-human-ai.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title><tt>fddiagram</tt>: Typesetting functional dependency diagrams in LaTeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Rodrigo</given_name>
+          <surname>Smarzaro</surname>
+          <ORCID>https://orcid.org/0000-0002-4783-8383</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>377</first_page>
+        <last_page>379</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147smarzaro-fddiagram</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147smarzaro-fddiagram.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="elmasri2015-1">
+          <unstructured_citation>R. Elmasri, S.B. Navathe. Fundamentals of Database Systems (7th Edition). Pearson, 2015.</unstructured_citation>
+        </citation>
+        <citation key="l3keys2e-2">
+          <unstructured_citation>LaTeX Project Team. The l3keys2e package, 2025. https://ctan.org/pkg/l3packages</unstructured_citation>
+        </citation>
+        <citation key="expl3-3">
+          <unstructured_citation>LaTeX Project Team. The expl3 package and LaTeX3 programming, 2026. https://ctan.org/pkg/l3kernel</unstructured_citation>
+        </citation>
+        <citation key="tikzpgf-4">
+          <unstructured_citation>T. Tantau, et al. The TikZ and PGF packages: Manual for Version 3.1.12, 2026. https://ctan.org/pkg/pgf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Abstract diagrams for the working mathematician: The Asymptote <tt>smoothmanifold</tt> module</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Roman</given_name>
+          <surname>Maksimovich</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>380</first_page>
+        <last_page>385</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147maksimovich-diagrams</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147maksimovich-diagrams.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="snd-1">
+          <unstructured_citation>J.C. Bowman. Asymptote: Interactive TeX-aware 3D vector graphics. TUGboat 31(2):203&#x2013;205, 2010. https://tug.org/TUGboat/tb31-2/tb98bowman.pdf, https://www.math.ualberta.ca/~bowman/publications/tb98bowman.pdf</unstructured_citation>
+        </citation>
+        <citation key="v3d-2">
+          <unstructured_citation>J.C. Bowman. V3D: Portable interactive 3D graphics for PDF and beyond. TUGboat 47(2):230&#x2013;233, 2026. https://tug.org/TUGboat/tb47-2/tb146bowman-v3d.pdf, https://www.math.ualberta.ca/~bowman/publications/tb146bowman-v3d.html</unstructured_citation>
+        </citation>
+        <citation key="fst-3">
+          <unstructured_citation>J.C. Bowman, A. Hammerlindl. Asymptote: A vector graphics language. TUGboat 29(2):288&#x2013;294, 2008. https://tug.org/TUGboat/tb29-2/tb92bowman.pdf, https://www.math.ualberta.ca/~bowman/publications/asyTUG.pdf</unstructured_citation>
+        </citation>
+        <citation key="manual-4">
+          <unstructured_citation>R. Maksimovich. smoothmanifold.asy: Diagrams in higher mathematics with Asymptote. https://github.com/thornoar/smoothmanifold/blob/master/documentation/main.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title><tt>tex.web</tt> transformed to <tt>tex.cs</tt> and <tt>tex.cpp</tt></title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>J. Daniel</given_name>
+          <surname>Smith</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>386</first_page>
+        <last_page>389</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147smith-web2cs</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147smith-web2cs.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Knuth:2021:TT-1">
+          <unstructured_citation>D. Knuth. The TeX tuneup of 2021. TUGboat 42(1):7&#x2013;10, 2021. https://doi.org/10.47397/tb/42-1/tb130knuth-tuneup21</unstructured_citation>
+        </citation>
+        <citation key="Knuth:TB8-1-14-2">
+          <unstructured_citation>D. Knuth, P. MacKay. Mixing right-to-left texts with left-to-right texts. TUGboat 8(1):14&#x2013;25, Apr. 1987. https://tug.org/TUGboat/tb08-1/tb17knutmix.pdf</unstructured_citation>
+        </citation>
+        <citation key="Knuth:TB11-4-489-3">
+          <unstructured_citation>D.E. Knuth. The future of TeX and Metafont. TUGboat 11(4):489&#x2013;489, Nov. 1990. https://tug.org/TUGboat/tb11-4/tb30knut.pdf</unstructured_citation>
+        </citation>
+        <citation key="knuth:literate-programming-4">
+          <unstructured_citation>D.E. Knuth. Literate Programming. CSLI Publications, 1992.</unstructured_citation>
+        </citation>
+        <citation key="knuth:questions-and-answers-i-5">
+          <unstructured_citation>D.E. Knuth. Questions and answers, I. In Digital Typography, ch. 31, pp. 597&#x2013;598. CSLI Publications, 1999.</unstructured_citation>
+        </citation>
+        <citation key="mslearn:local-functions-6">
+          <unstructured_citation>Microsoft. Local functions (C# programming guide). https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/local-functions, 2025.</unstructured_citation>
+        </citation>
+        <citation key="mslearn:partial-classes-7">
+          <unstructured_citation>Microsoft. Partial classes and members (C# programming guide). https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods, 2025.</unstructured_citation>
+        </citation>
+        <citation key="mslearn:custom-attributes-8">
+          <unstructured_citation>Microsoft. Writing custom attributes. https://learn.microsoft.com/en-us/dotnet/standard/attributes/writing-custom-attributes, 2025.</unstructured_citation>
+        </citation>
+        <citation key="Ruckert:2017:CTW-9">
+          <unstructured_citation>M. Ruckert. Converting TeX from WEB to cweb. TUGboat 38(3):353&#x2013;358, 2017. https://tug.org/TUGboat/tb38-3/tb120ruckert.pdf</unstructured_citation>
+        </citation>
+        <citation key="Ruckert:2021:WCC-10">
+          <unstructured_citation>M. Ruckert. The WEB to CWEB conversion of TeX. TUGboat 42(2):139&#x2013;142, 2021. https://doi.org/10.47397/tb/42-2/tb131ruckert-cweb</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The TRIP test: Its history, its current role</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Udo</given_name>
+          <surname>Wermuth</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>390</first_page>
+        <last_page>399</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147wermuth-trip</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147wermuth-trip.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="citeGoTo-1">
+          <unstructured_citation>Edsger W. Dijkstra, &#x201c;Letters to the editor: go to statement considered harmful&#x201d;, Communications of the ACM 11:3 (1968), 147&#x2013;148. https://dl.acm.org/doi/pdf/10.1145/362929.362947</unstructured_citation>
+        </citation>
+        <citation key="citeDDH-2">
+          <unstructured_citation>Ole-Johan Dahl, Edsger Wybe Dijkstra, and Charles Antony Richard Hoare, eds., Structured Programming, Academic Press Ltd., 1972.</unstructured_citation>
+        </citation>
+        <citation key="citeDACM-3">
+          <unstructured_citation>Edsger W. Dijkstra, &#x201c;The Humble Programmer&#x201d;, Communications of the ACM 15:10 (1972), 859&#x2013;866. https://dl.acm.org/doi/pdf/10.1145/355604.361591</unstructured_citation>
+        </citation>
+        <citation key="citeSPR-4">
+          <unstructured_citation>Donald E. Knuth, &#x201c;A review of &#x2018;Structured Programming&#x201d;&#x2019;, Stanford Computer Science Report STAN-CS-73-371, Stanford, California: Stanford University, 1973, 26 pages.</unstructured_citation>
+        </citation>
+        <citation key="citeKJNW-5">
+          <unstructured_citation>Kathleen Jensen and Niklaus Wirth, Pascal User Manual and Report, Springer-Verlag, Berlin, 1974.</unstructured_citation>
+        </citation>
+        <citation key="citeAE-6">
+          <unstructured_citation>Albert Endres, &#x201c;An analysis of errors and their causes in system programs&#x201d;, ACM SIGPLAN Notices 10:6&#x2014;Proceedings of the international conference on reliable software (1975), 327&#x2013;336. https://dl.acm.org/doi/pdf/10.1145/800027.808455</unstructured_citation>
+        </citation>
+        <citation key="citeGG-7">
+          <unstructured_citation>John B. Goodenough and Susan L. Gerhart, &#x201c;Toward a theory of test data selection&#x201d;, ACM SIGPLAN Notices 10:6&#x2014;Proceedings of the international conference on reliable software (1975), 493&#x2013;510. https://dl.acm.org/doi/pdf/10.1145/800027.808473</unstructured_citation>
+        </citation>
+        <citation key="citeTR-8">
+          <unstructured_citation>Edsger W. Dijkstra, &#x201c;EWD 494: Trip report E.W. Dijkstra 16th April/7th May, U.S.A. and Canada&#x201d;, written 1975-05-09; in Selected Writings on Computing: A Personal Perspective, Springer-Verlag, 1982.</unstructured_citation>
+        </citation>
+        <citation key="citeWEH-9">
+          <unstructured_citation>W.E. Howden, &#x201c;Reliability of the Path Analysis Testing Strategy&#x201d;, IEEE Transactions on Software Engineering SE-2:3 (1976), 208&#x2013;215.
+
+</unstructured_citation>
+        </citation>
+        <citation key="citeMEF-10">
+          <unstructured_citation>M.E. Fagan, &#x201c;Design and code inspections to reduce errors in program development&#x201d;, IBM Systems Journal 15:3 (1976), 182&#x2013;211.</unstructured_citation>
+        </citation>
+        <citation key="citeBL-11">
+          <unstructured_citation>L.A. Belady and M.M. Lehman, &#x201c;A model of large program development&#x201d;, IBM Systems Journal 15:3 (1976), 225&#x2013;252.</unstructured_citation>
+        </citation>
+        <citation key="citeMcC-12">
+          <unstructured_citation>Thomas J. McCabe, &#x201c;A Complexity Measure&#x201d;, IEEE Transactions on Software Engineering SE-2:4 (1976), 308&#x2013;320.</unstructured_citation>
+        </citation>
+        <citation key="citeGM-13">
+          <unstructured_citation>Glenford J. Myers, The Art of Software Testing, New York, NY: John Wiley &#x0026; Sons, Inc., 1979.</unstructured_citation>
+        </citation>
+        <citation key="citeErr-14">
+          <unstructured_citation>Donald Knuth, The Errors of TeX78, video of a talk at Xerox PARC, published 1980-02-21. https://archive.org/details/xerox-parc-tapes-v49</unstructured_citation>
+        </citation>
+        <citation key="citeABC-15">
+          <unstructured_citation>W. Richards Adrion, Martha A. Branstad, and John C. Cherniavsky, &#x201c;Validation, Verification, and Testing of Computer Software&#x201d;, ACM Computing Surveys 14:2 (1982), 159&#x2013;192. https://dl.acm.org/doi/pdf/10.1145/356876.356879</unstructured_citation>
+        </citation>
+        <citation key="citeCC-16">
+          <unstructured_citation>David Fuchs, &#x201c;News from Stanford&#x201d;, TUGboat 3:2 (1982), 20&#x2013;21. https://tug.org/TUGboat/tb03-2/tb06site.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeDF-17">
+          <unstructured_citation>David Fuchs, &#x201c;News from all over&#x201d;, TUGboat 4:1 (1983), 14&#x2013;15. https://tug.org/TUGboat/tb04-1/tb07site.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeP-18">
+          <unstructured_citation>Don Knuth, profile.web, October 1983. https://ctan.org/tex-archive/obsolete/systems/knuth/pxl</unstructured_citation>
+        </citation>
+        <citation key="citeBP-19">
+          <unstructured_citation>Victor R. Basili and Barry T. Perricone, &#x201c;Software errors and complexity: an empirical investigation&#x201d;, Communications of the ACM 27:1 (1984), 42&#x2013;52. https://dl.acm.org/doi/pdf/10.1145/69605.2085</unstructured_citation>
+        </citation>
+        <citation key="citeCTvA-20">
+          <unstructured_citation>Donald E. Knuth, The&#x00A0;TeXbook, Volume A of Computers&#x00A0;&amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1984.</unstructured_citation>
+        </citation>
+        <citation key="citeCTvB-21">
+          <unstructured_citation>Donald E. Knuth, TeX: The&#x00A0;Program, Volume B of Computers&#x00A0;&amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1986.</unstructured_citation>
+        </citation>
+        <citation key="citeNET-22">
+          <unstructured_citation>Donald E. Knuth &#x201c;Notes on the Errors of TeX&#x201d;, TUGboat 10:4 (1989), 529&#x2013;531. https://tug.org/TUGboat/tb10-4/tb26knut.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeWUM-23">
+          <unstructured_citation>D.E. Knuth, &#x201c;WEB User Manual&#x201d;, 1989-12-04, 22 pages extracted from: Donald E. Knuth, &#x201c;The WEB system of structured documentation&#x201d;, Stanford Computer Science Report STAN-CS-83-980, Stanford, California: Stanford University, 1983, 210 pages. https://ctan.org/tex-archive/systems/knuth/dist/web/webman.tex</unstructured_citation>
+        </citation>
+        <citation key="citeTRIP-24">
+          <unstructured_citation>Donald E. Knuth, &#x201c;A torture test for TeX&#x201d;, originally published as Stanford Computer Science Report STAN-CS-84-1027, Stanford, California: Stanford University, 1984. Latest version: version 3, January 1990, 163 pages. https://ctan.org/tex-archive/systems/knuth/dist/tex/#tripman.tex</unstructured_citation>
+        </citation>
+        <citation key="citeTRAP-25">
+          <unstructured_citation>Donald E. Knuth, &#x201c;A torture test for Metafont&#x201d;, originally published as Stanford Computer Science Report STAN-CS-86-1095, Stanford, California: Stanford University, 1986. Latest version: version 2, January 1990, 86 pages. https://ctan.org/tex-archive/systems/knuth/dist/mf/#trapman.tex</unstructured_citation>
+        </citation>
+        <citation key="citeFTM-26">
+          <unstructured_citation>Donald E. Knuth, &#x201c;The Future of TeX and Metafont&#x201d;, TUGboat 11:4 (1990), 489. https://tug.org/TUGboat/tb11-4/tb30knut.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeLP-27">
+          <unstructured_citation>Donald E. Knuth, Literate Programming, Stanford, California: Center for the Study of Language and Information, CSLI Lecture Note No. 27, 1992.
+
+</unstructured_citation>
+        </citation>
+        <citation key="citeDM-28">
+          <unstructured_citation>Richard A. DeMillo and Aditya P. Mathur, &#x201c;A grammar based fault classification scheme and its application to the classification of the errors of TeX&#x201d;, Software Engineering Research Center, Purdue University, February 15, 1991, 86 pages. https://www.academia.edu/attachments/47914519/download_file?s=portfolio</unstructured_citation>
+        </citation>
+        <citation key="citeTAOCPi-29">
+          <unstructured_citation>Donald E. Knuth, The Art of Computer Programming, Addison-Wesley, Vol. 1 (3rd ed.), 1997.
+
+</unstructured_citation>
+        </citation>
+        <citation key="citeDT-30">
+          <unstructured_citation>Donald E. Knuth, Digital Typography, Stanford, California: Center for the Study of Language and Information, CSLI Lecture Notes No. 78, 1999.
+
+</unstructured_citation>
+        </citation>
+        <citation key="citeWoS-31">
+          <unstructured_citation>Web of Stories: Donald E. Knuth&#x2014;Part 70: A summary of the TeX project; recorded April 2006. https://www.webofstories.com/play/donald.knuth/70</unstructured_citation>
+        </citation>
+        <citation key="citeEFiDK-32">
+          <unstructured_citation>Computer History Museum, &#x201c;Oral History of Donald Knuth&#x201d;, interviewer Edward Feigenbaum, March 14 and 21, 2007; CHM Reference number: X3926.2007 (73 pages). https://www.computerhistory.org/collections/catalog/102658053/</unstructured_citation>
+        </citation>
+        <citation key="citeTUviii-33">
+          <unstructured_citation>Donald E. Knuth, &#x201c;The TeX tuneup of 2008&#x201d;, TUGboat 29:2 (2008), 233&#x2013;238. https://tug.org/TUGboat/tb29-2/tb92knut.pdf</unstructured_citation>
+        </citation>
+        <citation key="citePKW-34">
+          <unstructured_citation>Kai Pan, Sunghun Kim, and E. James Whitehead Jr., &#x201c;Toward an understanding of bug fix patterns&#x201d;, Empirical Software Engineering 14:3 (2009), 286&#x2013;315. https://hunkim.cse.ust.hk/images/f/f5/Papers_pan2008esme.pdf 
+
+</unstructured_citation>
+        </citation>
+        <citation key="citeDA-35">
+          <unstructured_citation>Donald E. Knuth, Selected Papers on Design of Algorithms, Stanford, California: Center for the Study of Language and Information, CSLI Lecture Notes No. 191, 2010.</unstructured_citation>
+        </citation>
+        <citation key="citeKo-36">
+          <unstructured_citation>Amy J. Ko, &#x201c;Understanding Software Engineering Through Qualitative Methods&#x201d;, in: Andy Oram and Greg Wilson, eds., Making Software: What Really Works, and Why We Believe It, O&#x2019;Reilly Media, Inc. (2010). https://faculty.washington.edu/ajko/papers/Ko2010QualitativeMethods.pdf 
+
+</unstructured_citation>
+        </citation>
+        <citation key="citeCP-37">
+          <unstructured_citation>Donald E. Knuth, Companion to the Papers of Donald Knuth, Stanford, California: Center for the Study of Language and Information, CSLI Lecture Notes No. 202, 2011.</unstructured_citation>
+        </citation>
+        <citation key="citeTUxxi-38">
+          <unstructured_citation>Donald E. Knuth, &#x201c;The TeX tuneup of 2021&#x201d;, TUGboat 42:1 (2021), 7&#x2013;10. https://tug.org/TUGboat/tb42-1/tb130knuth-tuneup21.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeBW-39">
+          <unstructured_citation>Maik Betka, Stefan Wagner, &#x201c;Towards practical application of mutation testing in industry&#x2014; Traditional versus extreme mutation testing&#x201d;, Journal of Software: Evolution and Process 34:11 (2022), 29 pages. https://onlinelibrary.wiley.com/doi/epdf/10.1002/smr.2450</unstructured_citation>
+        </citation>
+        <citation key="citeMG-40">
+          <unstructured_citation>Mitchell Gerrard, &#x201c;Holon programming regained&#x201d;, TUGboat 45:2 (2024), 196&#x2013;200. https://tug.org/TUGboat/tb45-2/tb140gerrard-holon.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Tracing primitives in the original TeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Udo</given_name>
+          <surname>Wermuth</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>400</first_page>
+        <last_page>413</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147wermuth-tracingcommands</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147wermuth-tracingcommands.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="citetex-1">
+          <unstructured_citation>Donald E. Knuth, Tau Epsilon Chi, a system for technical text, Stanford Computer Science Report STAN-CS-78-675, November 1978.</unstructured_citation>
+        </citation>
+        <citation key="citeCTvA-2">
+          <unstructured_citation>Donald E. Knuth, The&#x00A0;TeXbook, Volume A of Computers&#x00A0;&amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1984.</unstructured_citation>
+        </citation>
+        <citation key="citeCTvB-3">
+          <unstructured_citation>Donald E. Knuth, TeX: The&#x00A0;Program, Volume B of Computers&#x00A0;&amp; Typesetting, Boston, Massachusetts: Addison-Wesley, 1986.</unstructured_citation>
+        </citation>
+        <citation key="citeNV-4">
+          <unstructured_citation>Donald E. Knuth, &#x201c;The New Versions of TeX and Metafont,&#x201d; TUGboat 10:3 (1989), 325&#x2013;328. https://tug.org/TUGboat/tb10-3/tb25knut.pdf Also: https://tug.org/TUGboat/tb11-1/tb27erratum.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeTbEx-5">
+          <unstructured_citation>Donald E. Knuth, &#x201c;Exercises for TeX: The&#x00A0;Program&#x201d;, TUGboat 11:2 (1990), 165&#x2013;170, and TUGboat 11:4 (1990), 499&#x2013;511.
+
+Exercises: https://tug.org/TUGboat/tb11-2/tb28knut.pdf Answers: https://tug.org/TUGboat/tb11-4/tb30knut-exercises.pdf</unstructured_citation>
+        </citation>
+        <citation key="citeTU-6">
+          <unstructured_citation>Donald Knuth, &#x201c;The TeX tuneup of 2008&#x201d;, TUGboat 29:2 (2008), 233&#x2013;238. https://tug.org/TUGboat/tb29-2/tb92knut.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Book review: <i>Preliterate Programming</i>, Mitchell Gerrard, ed.</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Andreas</given_name>
+          <surname>Scherer</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>414</first_page>
+        <last_page>416</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147reviews-gerrard</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147reviews-gerrard.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Book review: <i>A Grammar of Typography</i>, by Mark Argetsinger</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Mitchell</given_name>
+          <surname>Gerrard</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>417</first_page>
+        <last_page>421</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147reviews-argetsinger</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147reviews-argetsinger.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Book review: <i>How to Publish Your Book with LaTeX</i>, by Clemens Lode</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jim</given_name>
+          <surname>Hefferon</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>422</first_page>
+        <last_page>424</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147reviews-lode</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147reviews-lode.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The treasure chest</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Karl</given_name>
+          <surname>Berry</surname>
+          <ORCID>https://orcid.org/0000-0002-5325-6494</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>425</first_page>
+        <last_page>427</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147chest</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147chest.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>2027 TeX Users Group election</title>
+      </titles>
+      <contributors>
+        <organization sequence="first" contributor_role="author">TUG Elections committee</organization>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>429</first_page>
+        <last_page>429</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147elec</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147elec.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title><i>Preliterate Programming</i></title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Mitchell</given_name>
+          <surname>Gerrard</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2026</year>
+      </publication_date>
+      <pages>
+        <first_page>430</first_page>
+        <last_page>430</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/47-3/tb147ad-prelit</doi>
+        <timestamp>20261112222620</timestamp>
+        <resource>https://tug.org/TUGboat/tb47-3/tb147ad-prelit.html</resource>
+      </doi_data>
+    </journal_article>
+  </journal></body>
+</doi_batch>

@@ -1,0 +1,33 @@
+\bibitem{44:ltnews} \LaTeX{} Project Team.
+  \emph{\LaTeXe{}~news~1--44}. November, 2026.
+  \url{https://latex-project.org/news/latex2e-news/ltnews.pdf}
+
+\bibitem{44:rollback} Frank Mittelbach.
+  \emph{A rollback concept for~packages and classes}. \textsl{TUGboat} 39:2, 2018.
+  \url{https://latex-project.org/publications/2018-FMi-TUB-tb122mitt-version-rollback.pdf}
+  
+\bibitem{44:videos}  \TeX{} Users Group.
+  \emph{TUG 2026 talks, Calgary}. \rlap{\textsl{YouTube} 2026.}\\
+  \url{https://youtube.com/playlist?list=PLF0YCVuRyY-o}
+
+  
+\bibitem{44:isssue47} \TeX{} Users Group.
+  \emph{TUG 2026 Proceedings}. \textsl{TUGboat}~47:2, 2026.
+  Available to members and freely available to everyone in spring 2027.
+  \url{https://tug.org/TUGboat/tb47-2/}
+
+\bibitem{44:ufi} Ulrike Fischer.
+  \emph{News from the \LaTeX{} Tagged~PDF project: 2026}. \textsl{TUGboat} 47:2, 2026.
+  \url{https://latex-project.org/publications/2026-UFi-TUG-tb146fischer-tagging26.pdf}
+  
+\hfuzz=19pt % way overfull but can live with it
+\bibitem{44:fmi} Frank Mittelbach.
+  \emph{Towards~accessible~document~classes}. \textsl{TUGboat} 47:2, 2026.
+  \url{https://latex-project.org/publications/2026-FMi-TUG-tb146mittelbach-accessibleclasses.pdf}
+  
+
+\bibitem{44:tpr} Timothy Prescott.
+  \emph{Converting a PDF textbook to~be~accessible}. \textsl{TUGboat} 47:2, 2026.
+  \url{https://tug.org/TUGboat/tb47-2/tb146prescott-book-accessibility.pdf}
+
+\end{thebibliography}

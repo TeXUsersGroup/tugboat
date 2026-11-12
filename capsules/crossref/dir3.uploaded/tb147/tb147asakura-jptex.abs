@@ -1,0 +1,14 @@
+The Japanese {\TeX} ecosystem has developed largely on its own terms, and much
+of it remains opaque outside Japan: the engines are widely used
+domestically but rarely elsewhere, and English documentation is scarce.
+
+This
+article offers a snapshot of that ecosystem in 2026 for an international
+audience. It reviews what makes Japanese typesetting structurally different
+from Western typesetting, describes the two workflows in everyday use\Dash
+{\pTeX} family and {\LuaTeX}-ja\Dash and the different philosophies behind them,
+and examines the challenges the community now faces: accumulated technical debt,
+the pace of {\LaTeX} kernel evolution, severely limited maintainer capacity,
+and the still-tentative np{\TeX} concept. It is offered from the perspective of
+an observer of both the local Japanese and the global {\TeX} communities, and
+is based on a talk given at TUG~2026.

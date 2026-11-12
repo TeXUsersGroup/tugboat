@@ -1,0 +1,65 @@
+\begin{thebibliography}{10}
+
+\bibitem{Knuth:2021:TT}
+D.~Knuth.
+\newblock The {\TeX} tuneup of 2021.
+\newblock \emph{TUGboat}~42(1):7--10, 2021.
+\newblock \url{https://doi.org/10.47397/tb/42-1/tb130knuth-tuneup21}
+
+\bibitem{Knuth:TB8-1-14}
+D.~Knuth, P.~MacKay.
+\newblock Mixing right-to-left texts with left-to-right texts.
+\newblock \emph{\\TUGboat}~8(1):14--25, Apr.~1987.
+\newblock \newline \url{https://tug.org/TUGboat/tb08-1/tb17knutmix.pdf}
+
+\bibitem{Knuth:TB11-4-489}
+D.E.~Knuth.
+\newblock {The future of {\TeX} and {\MF}}.
+\newblock \emph{TUGboat} 11(4):489--489, Nov.~1990.
+\newblock \newline \url{https://tug.org/TUGboat/tb11-4/tb30knut.pdf}
+
+\bibitem{knuth:literate-programming}
+D.E.~Knuth.
+\newblock \emph{Literate Programming}.
+\newblock CSLI~Publications, 1992.
+
+\bibitem{knuth:questions-and-answers-i}
+D.E.~Knuth.
+\newblock Questions and answers, {I}.
+\newblock In~\emph{Digital Typography}, ch.~31, pp.~597--598.
+  CSLI~Publications, 1999.
+
+\bibitem{mslearn:local-functions}
+Microsoft.
+\newblock Local functions ({C\#} programming guide).
+\newblock
+  \url{https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/local-functions},
+  2025.
+
+\bibitem{mslearn:partial-classes}
+Microsoft.
+\newblock Partial classes and members ({C\#}~programming~guide).
+\newblock
+  \url{https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods},
+  2025.
+
+\bibitem{mslearn:custom-attributes}
+Microsoft.
+\newblock Writing custom attributes.
+\newblock
+  \\\url{https://learn.microsoft.com/en-us/dotnet/standard/attributes/writing-custom-attributes},
+  2025.
+
+\bibitem{Ruckert:2017:CTW}
+M.~Ruckert.
+\newblock Converting {\TeX} from {WEB} to {cweb}.
+\newblock \emph{TUGboat} 38(3):353--358, 2017.
+\newblock \url{https://tug.org/TUGboat/tb38-3/tb120ruckert.pdf}
+
+\bibitem{Ruckert:2021:WCC}
+M.~Ruckert.
+\newblock The {WEB} to {CWEB} conversion of {\TeX}.
+\newblock \emph{TUGboat} 42(2):139--142, 2021.
+\newblock \url{https://doi.org/10.47397/tb/42-2/tb131ruckert-cweb}
+
+\end{thebibliography}

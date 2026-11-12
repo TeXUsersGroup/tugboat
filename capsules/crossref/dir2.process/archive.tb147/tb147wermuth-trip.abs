@@ -1,0 +1,8 @@
+        Donald E. Knuth defined the TRIP\ test\ to validate his second
+implementation of \TeX\ in 1982. It is still an important part of
+his \TeX\ distribution as it must nowadays be used to validate a
+concrete implementation. This article does not describe the contents
+of this test in detail. It concentrates on the history and the impact
+of the TRIP\ test. The text explains why this test was generated, discusses
+the test's successes and failures, and relates the test to the
+state of software testing at the time of its creation.

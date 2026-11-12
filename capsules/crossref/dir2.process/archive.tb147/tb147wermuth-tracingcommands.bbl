@@ -1,0 +1,55 @@
+% this file is read twice
+%   first:  the shortcuts for the references are defined
+%   second: the list for references is output
+% start the file with \startbibrefs and end it with \par
+% NOTE: a § can't be used in front of \endbib, move it to the previuos line
+\startbibrefs\begingroup
+\ninepoint \normalbaselineskip=10.6pt\normalbaselines
+\def\newline{\hfil\break}%
+\rightskip=0pt plus 20pt \emergencystretch=5pt
+\frenchspacing \tolerance=200 \hyphenpenalty=10000
+\def\bibskip{\def\bibskip{\vskip 1.5pt minus 1pt }}
+\def\URLaccessdate(#1){}% suppress ``accessed <date>'' info after URLs
+
+\bibitem{citetex} Donald E. Knuth, {\sl Tau Epsilon Chi,
+   a system for technical text}, Stanford Computer Science Report
+   {\it STAN-CS-78-675}, November 1978.
+
+\bibitem{citeCTvA} Donald E. Knuth, \TB,
+   Volume~A of \CandT, Boston, Massachusetts: \AW, 1984.
+
+\bibitem{citeCTvB} Donald E. Knuth, \TP,
+   Volume~B of \CandT,
+   Boston, Massachusetts: \AW, 1986.
+
+\bibitem{citeNV} Donald E. Knuth, ``The New Versions of \TeX\ and \MF,''
+   {\sl \TUB\/ \bf10}:3 (1989), 325--328.\par
+%   reprinted as Chapter~29 in [\citeDT], 563--570.\par
+   \biburl https://tug.org/TUGboat/tb10-3/tb25knut.pdf\endurl
+   \endbib(2016-11-01)
+   \Bibcont Also: \par
+   \biburl https://tug.org/TUGboat/tb11-1/tb27erratum.pdf\endurl
+   \endbib(2016-11-01)
+
+\bibitem{citeTbEx} Donald E.\ Knuth, ``Exercises for \TP'',
+   {\sl \TUB\/ \bf11}:2 (1990), 165--170, and
+   {\sl \TUB\/ \bf11}:4 (1990), 499--511.\par
+%   reprinted in [\citeDT], 197--223
+%   (exercise~23 is in the reprint exercise~22).\par
+   \Bibcont Exercises: \par
+   \biburl https://tug.org/TUGboat/tb11-2/tb28knut.pdf\endurl
+   \endbib(2016-09-10)
+   \Bibcont Answers: \par
+   \biburl https://tug.org/TUGboat/tb11-4/tb30knut-exercises.pdf\endurl
+   \endbib(2016-11-03)
+
+%\bibitem{citeDT} Donald E. Knuth, {\sl Digital Typography},
+%   Stanford, California: Center for the Study of Language and
+%   Information, CSLI Lecture Notes No.\ 78, 1999.
+
+\bibitem{citeTU} Donald Knuth, ``The \TeX\ tuneup of 2008'',
+   {\sl \TUB\ \bf29}:2 (2008), 233--238.\par
+   \biburl https://tug.org/TUGboat/tb29-2/tb92knut.pdf\endurl
+   \endbib(2026-04-29)
+
+\end{thebibliography}

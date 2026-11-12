@@ -1,0 +1,30 @@
+It is no secret that we (Hans and Mikael) like to play with graphics and for a
+while we had it on our agenda to implement some three-dimensional graphic support
+as a follow-up on surface plots. We knew that eventually we had to look at
+z-buffering, but never found time to dive into resources. Much of that is not new
+but dates from the previous century.
+
+    Is it possible to slap a working \CONTEXT\ module together that does what one
+    needs urgently? Imagine we are in a hurry and don't aim for a high-quality
+    module.
+
+    Similarly, there is no need for it to be perfect. One can just look at the
+    outcome and see if it looks right. No other user has to be exposed so the
+    interface can be suboptimal.
+
+    When we look at the code, will it actually be any good? To what extent does
+    it conform to the way we like to see code in \CONTEXT\ and its interfacing?
+
+    What is needed to go from an \LLM-generated prototype to a real
+    module that we can install?
+    The first thing the bot told us is that this is a typical six-month project!
+
+    Does using an \LLM\ (with associated tools and resources) save time or does
+    it actually waste time? Can we, with our experience, do it better and faster?
+
+    Will we again follow this route (a quick and dirty solution, stepwise improved,
+    eventually okay) or will we work as before?
+
+    The most important question is: do we like it and does it fit in our playing
+    with \TEX\ and friends. Is it rewarding at all?
+

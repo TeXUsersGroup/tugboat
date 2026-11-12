@@ -1,0 +1,73 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{10}
+
+\bibitem{Bos:2023:MJP}
+J.~Bos, K.~McCurley.
+\newblock Metadata in journal publishing.
+\newblock \emph{TUGboat} 44(1):71--76, 2023.
+\newblock \url{https://doi.org/10.47397/tb/44-1/tb136bos-metadata}
+
+\bibitem{DataCite:DataCiteSchema}
+{DataCite}.
+\newblock {DataCite} metadata schema, 2026.
+\newblock \url{https://schema.datacite.org/}
+
+\bibitem{Dewitz:SADTO-1996}
+S.D.~Dewitz.
+\newblock \emph{Systems Analysis and Design and the Transition to Objects}.
+\newblock McGraw-Hill, 1996.
+
+\bibitem{Figshare:FigshareAPI-2018}
+{Figshare}.
+\newblock {Figshare API User Documentation}, Sept.~2018.
+\newblock \url{https://doi.org/10.6084/m9.figshare.4880372.v2}
+
+\bibitem{Figshare:FigshareSchema}
+{Figshare}.
+\newblock Figshare metadata schema overview, 2026.
+\newblock
+  \url{https://info.figshare.com/user-guide/figshare-metadata-schema-overview/}
+
+\bibitem{Gasimova:SD-2026}
+A.~Gasimova, P.~Mensah-Kane, et~al.
+\newblock The~state of scientific poster sharing and reuse.
+\newblock \emph{{Scientific Data}}, 2026.
+\newblock \url{https://doi.org/10.1038/s41597-026-08389-4}
+
+\bibitem{Habicht:JP-2026}
+J.~Habicht.
+\newblock The jsonparse package.
+\newblock \newline \url{https://ctan.org/pkg/jsonparse}
+
+\bibitem{Hahnel:RDSV-2022}
+M.~Hahnel.
+\newblock Figshare{\Dash}a place where open academic research outputs live.
+\newblock In~\emph{Research Data Sharing and Valorization}, J.~Schöpfel,
+  V.~Rebouillat, eds. Wiley, London, 2022.
+
+\bibitem{Leach-Murray:TSQ-33-1-98}
+S.~Leach-Murray.
+\newblock Figshare{\Dash}get credit for your research: Figshare.com.
+\newblock \emph{Technical Services Quarterly}, 33(1):98--99, 2016.
+
+\bibitem{Thelwall:OIR-40-3-333}
+M.~Thelwall, K.~Kousha.
+\newblock Figshare: a universal repository for academic resource sharing?
+\newblock \emph{Online Information Review}, 40(3):333--346, 2016.
+
+\bibitem{Voynich:1404}
+Cipher manuscript [{Voynich} manuscript].
+\newblock Beinecke Rare Book \& Manuscript Library, Yale University, c.\
+  1401--1599?.
+\newblock \url{https://collections.library.yale.edu/catalog/2002046}
+
+\bibitem{Wilkinson:SD-3-160018}
+M.D.~Wilkinson, M.~Dumontier, et~al.
+\newblock The~{FAIR Guiding Principles} for scientific data management and
+  stewardship.
+\newblock \emph{{Scientific Data}}, 3(1):160018, 2016.
+\newblock \url{https://doi.org/10.1038/sdata.2016.18}
+
+\end{thebibliography}

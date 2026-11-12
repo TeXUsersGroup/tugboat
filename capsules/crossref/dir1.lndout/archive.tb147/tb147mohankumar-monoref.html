@@ -1,0 +1,92 @@
+<!--#include virtual="/header.html"-->
+<title>Single-pass cross-referencing in LuaLaTeX: Hold and patch
+       - TUGboat 47:3 (2026) - TeX Users Group</title>
+<meta name="citation_author" content="Mohankumar, Srikanth">
+<meta name="citation_author" content="Krishnaswamy, Nareshkumar">
+<meta name="citation_firstpage" content="347">
+<meta name="citation_issn" content="0896-3207">
+<meta name="citation_issue" content="3">
+<meta name="citation_journal_title" content="TUGboat">
+<meta name="citation_lastpage" content="351">
+<meta name="citation_publication_date" content="2026">
+<meta name="citation_title" content="Single-pass cross-referencing in LuaLaTeX: Hold and patch">
+<meta name="citation_volume" content="47">
+
+</head><body>
+
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+<h1><a href="/TUGboat/tb47-3/">TUGboat 47:3</a> (2026)<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
+
+<p><b>Title</b>: Single-pass cross-referencing in LuaLaTeX: Hold and patch</p>
+
+<p><b>Summary</b>:
+resolve forward and backward references within a single run.</p>
+
+<p><b>Full text of article</b>: <a href="https://tug.org/members/TUGboat/tb47-3/tb147mohankumar-monoref.pdf">available to TUG members</a> (<a href="/join.html">join TUG</a>);
+will be publicly available after the next issue is published.</p>
+
+<p><b>Authors</b>:
+<a href="/TUGboat/Contents/listauthor.html#Mohankumar,Srikanth">Srikanth Mohankumar</a>, <a href="/TUGboat/Contents/listauthor.html#Krishnaswamy,Nareshkumar">Nareshkumar Krishnaswamy</a></p>
+
+<p><b>Publication</b>: <a href="/TUGboat/tb47-3/">TUGboat
+volume 47, number 3</a> (2026),
+pages&nbsp;347&ndash;351</p>
+
+<p><b>DOI</b> (this page):
+<a href="https://doi.org/10.47397/tb/47-3/tb147mohankumar-monoref">10.47397/tb/47-3/tb147mohankumar-monoref</a>
+<br><small>(<a href="https://doi.org/10.47397/tb/47-3/tb147ltnews44">previous doi</a>
+- <a href="https://doi.org/10.47397/tb/47-3/tb147bien-t">next doi</a>)</small></p>
+
+<p><b>Category</b>:
+<a href="/TUGboat/Contents/listkeyword.html#CatTAGLaTeX">LaTeX</a></p>
+      
+<p><b>Difficulty</b>: Advanced</p>
+
+<p><b>Abstract</b>:
+The <tt>monoref</tt> package resolves a bounded set of LaTeX
+cross-references in one LuaLaTeX run: <tt>&#x005C;ref</tt>, <tt>&#x005C;pageref</tt>,
+plain numbered citations, a
+body-page total, and a generated table of contents. It does this by
+holding finished pages as Lua node lists, recording the true page of
+labels with invisible markers, and replacing reserved reference slots
+just before final shipout. This article describes the implementation
+and its trade-offs.</p>
+
+<p><b>References</b>:</p>
+<ol class="tugbbl">
+<li class="tugbbl">J. Collins. latexmk: Fully automated LaTeX document generation. <a href="https://ctan.org/pkg/latexmk">ctan.org/pkg/latexmk</a></li>
+<li class="tugbbl">L. Lamport. LaTeX: A Document Preparation System. Addison-Wesley, second ed., 1994.</li>
+<li class="tugbbl">LuaTeX development team. LuaTeX Reference Manual. <a href="https://ctan.org/pkg/luatex">ctan.org/pkg/luatex</a></li>
+<li class="tugbbl">F. Mittelbach, LaTeX Project Team. The shipout routine: hooks and interfaces. <a href="https://mirrors.ctan.org/macros/latex/base/ltshipout-doc.pdf">mirrors.ctan.org/macros/latex/base/ltshipout-doc.pdf</a></li>
+<li class="tugbbl">S. Mohankumar. monoref package page. <a href="https://ctan.org/pkg/monoref">ctan.org/pkg/monoref</a></li>
+<li class="tugbbl">S. Mohankumar. monoref source repository. <a href="https://github.com/Srikanth-Mohankumar/latex-monoref">github.com/Srikanth-Mohankumar/latex-monoref</a></li>
+<li class="tugbbl">P. Ol&#x0161;&#x00E1;k. OpTeX: LuaTeX format based on plain TeX and OPmac. <a href="https://ctan.org/pkg/optex">ctan.org/pkg/optex</a></li>
+<li class="tugbbl">S. Rahtz, H. Oberdiek, et al. The hyperref package. <a href="https://ctan.org/pkg/hyperref">ctan.org/pkg/hyperref</a></li>
+</ol>
+
+
+<p id="cite"><b>Cite this article (BibTeX)</b>: <small><pre>
+@preamble{"\input tugboat.def"}
+@article{Mohankumar:TB47-3:347,
+  author =         "Srikanth Mohankumar and Nareshkumar Krishnaswamy",
+  title =          "Single-pass cross-referencing in {Lua\LaTeX}: {Hold} and patch",
+  journal =        "TUGboat",
+  volume =         "47",
+  number =         "3",
+  pages =          "347-351",
+  year =           "2026",
+  issue =          "147",
+  DOI =            "10.47397/tb/47-3/tb147mohankumar-monoref",
+  URL =            "https://tug.org/TUGboat/tb47-3/tb147mohankumar-monoref.pdf",
+  journal-URL =    "https://tug.org/TUGboat/",
+  ISSN =           "0896-3207",
+}
+
+</pre>
+</small>
+<hr><small><a href="/TUGboat/">TUGboat</a> 47:3, 2026 (<a href="/TUGboat/tb47-3/">issue 147</a>)
+&nbsp; [generated 2026-11-12]
+</small><br><!--#include virtual="/footer.html"-->

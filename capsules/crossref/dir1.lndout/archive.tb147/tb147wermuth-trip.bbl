@@ -1,0 +1,243 @@
+% this file is read twice
+%   first:  the shortcuts for the references are defined
+%   second: the list for references is output
+% start the file with \startbibrefs and end it with \par
+% NOTE: a § can't be used in front of \endbib, move it to the previuos line
+\startbibrefs\begingroup
+\ninepoint
+\emergencystretch=0.03\hsize
+\def\newline{\hfil\break}%
+\raggedright
+\frenchspacing
+\hyphenpenalty=9999
+
+\def\URLaccessdate(#1){}% suppress ``accessed <date>'' info after URLs
+
+\let\D=\hyphenfordigits
+
+%
+% The entries are sorted by publication dates.
+%
+\bibitem{citeGoTo} Edsger W. Dijkstra, ``Letters to the editor: {\bf go to}
+  statement considered harmful'',
+  {\sl Communications of the \acro{ACM} \bf11}:3 (1968), 147--148.\par
+  \biburl https://dl.acm.org/doi/pdf/10.1145/362929.362947\endurl
+  \endbib(2026-06-01)
+
+\bibitem{citeDDH} Ole-Johan Dahl, Edsger Wybe Dijkstra, and\newline
+  Charles Antony Richard Hoare, eds., {\sl Structured Programming\/},
+  Academic Press Ltd., 1972.
+  
+\bibitem{citeDACM} Edsger W. Dijkstra, ``The Humble Programmer'',
+   {\sl Communications of the \acro{ACM} \bf15}:10 (1972), 859--866.\Bibcont\ \par
+   \biburl https://dl.acm.org/doi/pdf/10.1145/355604.361591\endurl
+   \endbib(2026-05-29)
+
+\bibitem{citeSPR} Donald E. Knuth, ``A review of `Structured
+   Programming'\thinspace'',
+   Stanford Computer Science Report { STAN-CS-73-371},
+   Stanford, California: Stanford University, 1973, 26 pages.
+
+\bibitem{citeKJNW} Kathleen Jensen and Niklaus Wirth,
+   {\sl Pascal User Manual and Report},
+   Springer-Verlag, Berlin, 1974.
+
+\bibitem{citeAE} Albert Endres,
+  ``An analysis of errors and their causes in system programs'',
+  {\sl \acro{ACM} \acro{SIGPLAN} \newline Notices 10}:6\Dash Proceedings of
+  the international conference on reliable software
+  (1975), 327--336.\par
+  \biburl https://dl.acm.org/doi/pdf/10.1145/800027.808455\endurl
+  \endbib(2026-06-05)
+
+\bibitem{citeGG} John B. Goodenough and Susan L. Gerhart,\newline
+   ``Toward a theory of test data selection'',
+   {\sl \newline \acro{ACM} \acro{SIGPLAN} Notices 10}:6\Dash Proceedings of
+   the\newline international conference on reliable software\newline
+   (1975), 493--510.\par
+   \biburl https://dl.acm.org/doi/pdf/10.1145/800027.808473\endurl
+   \endbib(2026-05-29)
+
+\bibitem{citeTR} Edsger W. Dijkstra, ``EWD 494: Trip report\newline
+   E.\thinspace W. Dijkstra 16th April/7th May, U.S.A. and Canada'',
+   written 1975-05-09; in
+   {\sl Selected Writings on Computing: A Personal Perspective},
+   Springer-Verlag, 1982.
+
+\bibitem{citeWEH} W.\,E. Howden, ``Reliability of the Path Analysis
+    Testing Strategy'', {\sl \acro{IEEE} Transactions on Software
+    Engineering \bf SE-2}:3 (1976), 208--215.\par
+%    \biburl https://cseweb.ucsd.edu/~howden/MyPapers/Reliability%20of%20the%20Path%20Analysis.pdf\endurl
+%    \endbib(2026-05-30)
+
+\bibitem{citeMEF} M.\,E. Fagan, ``Design and code inspections to reduce
+   errors in program development'',
+   {\sl \acro{IBM} Systems Journal \bf15}:3 (1976), 182--211.
+
+\bibitem{citeBL} L.\,A. Belady and M.\,M. Lehman, ``A model of large
+   program development'',
+   {\sl \acro{IBM} Systems Journal \bf15}:3 (1976), 225--252.
+
+\bibitem{citeMcC} Thomas J. McCabe, ``A Complexity Measure'',
+   {\sl \acro{IEEE} Transactions on Software Engineering \bf SE-2}:4
+   (1976), 308--320.
+
+\bibitem{citeGM} Glenford J. Myers, {\sl The Art of Software Testing},
+   New York, NY: John Wiley \& Sons, Inc., 1979.
+
+\bibitem{citeErr} Donald Knuth, {\sl The Errors of \TeX78},
+   video of a talk at Xerox \acro{PARC}, published 1980-02-21.\par
+   \biburl https://archive.org/details/xerox-parc-tapes-v49\endurl
+   \endbib(2026-05-26)
+
+\bibitem{citeABC} W. Richards Adrion, Martha A. Branstad, and John
+   C. Cherniavsky,
+   ``Validation, Verification, and Testing of Computer Software'',
+   {\acro{ACM} \sl Computing Surveys 14}:2 (1982), 159--192.\par
+   \biburl https://dl.acm.org/doi/pdf/10.1145/356876.356879\endurl
+   \endbib(2026-05-29)
+
+\bibitem{citeCC} David Fuchs, ``News from Stanford'',
+  {\sl \TUB\ \bf 3}:2 (1982), 20--21.\par
+  \biburl https://tug.org/TUGboat/tb03-2/tb06site.pdf\endurl
+  \endbib(2026-06-21)
+
+\bibitem{citeDF} David Fuchs, ``News from all over'',
+   {\sl \TUB\ \bf4}:1 (1983), 14--15.\par
+   \biburl https://tug.org/TUGboat/tb04-1/tb07site.pdf\endurl
+   \endbib(2026-06-19)
+
+\bibitem{citeP} Don Knuth, {\tt profile.web}, October 1983.\Bibcont\ \par
+   % the CTAN directory seems to be wrong for this kind of WEB program
+   % SAILDART has profil.web in version 1.2, September 1984
+   \biburl https://ctan.org/tex-archive/obsolete/systems/knuth/pxl\endurl
+   \endbib(2026-06-19)
+
+\bibitem{citeBP} Victor R. Basili and Barry T. Perricone,
+   ``Software errors and complexity: an empirical investigation'',
+   {\sl Communications of the \acro{ACM} \bf 27}:1 (1984), 42--52.\par
+   \biburl https://dl.acm.org/doi/pdf/10.1145/69605.2085\endurl
+   \endbib(2026-06-18)
+
+\bibitem{citeCTvA} Donald E. Knuth, \TB,
+   Volume~A of \CandT, Boston, Massachusetts: \AW, 1984.
+
+\bibitem{citeCTvB} Donald E. Knuth, \TP,\newline
+   Volume~B of \CandT,
+   Boston, Massachusetts: \AW, 1986.
+
+\bibitem{citeNET} Donald E. Knuth ``Notes on the Errors of \TeX'',
+   {\sl\TUB\ \bf10}:4 (1989), 529--531.\par
+   \biburl https://tug.org/TUGboat/tb10-4/tb26knut.pdf\endurl
+   \endbib(2024-12-16)
+
+\bibitem{citeWUM} D.\,E. Knuth, ``\WEB\ User Manual'', 1989-12-04,\newline
+   22 pages extracted from: Donald E. Knuth,
+   ``The \WEB\ system of structured documentation'',
+   Stanford Computer Science Report { STAN-CS-83-980},\newline
+   Stanford, California: Stanford University, 1983,\newline 210 pages.\Bibcont\ \par
+   \biburl https://ctan.org/tex-archive/systems/knuth/dist/web/webman.tex\endurl
+   \endbib(2026-03-08)
+
+\bibitem{citeTRIP} Donald E. Knuth, ``A torture test for \TeX'',\newline
+   originally published as Stanford Computer Science Report
+   { STAN-CS-84-1027}, Stanford, California: Stanford University,
+   1984.\newline
+   Latest version: version 3, January 1990, 163 pages.\par
+   \biburl https://ctan.org/tex-archive/systems/knuth/dist/tex/#tripman.tex\endurl
+   \endbib(2026-05-25)
+
+\bibitem{citeTRAP} Donald E. Knuth,  ``A torture test for \MF'',\newline
+   originally published as Stanford Computer Science Report
+   {STAN-CS-86-1095}, Stanford, California: Stanford University,
+   1986.\newline
+   Latest version: version 2, January 1990, 86 pages.\par
+   \biburl https://ctan.org/tex-archive/systems/knuth/dist/mf/#trapman.tex\endurl
+   \endbib(2026-05-26)
+
+\bibitem{citeFTM} Donald E. Knuth, ``The Future of \TeX\ and\newline \MF'',
+   {\sl \TUB\ \bf 11}:4 (1990), 489.\par
+   \biburl https://tug.org/TUGboat/tb11-4/tb30knut.pdf\endurl
+   \endbib(2025-08-03)
+
+\bibitem{citeLP} Donald E.\ Knuth, {\sl Literate Programming},
+   Stanford, California: Center for the Study of Language and
+   Information, CSLI~Lecture Note No.~27, 1992.\par
+
+\bibitem{citeDM} Richard A. DeMillo and Aditya P. Mathur,
+   ``A grammar based fault classification scheme and its
+   application to the classification of the errors of \TeX'',
+   Software Engineering Research Center,
+   Purdue University, February 15, 1991, 86 pages.\par
+   \biburl https://www.academia.edu/attachments/47914519/download_file?s=portfolio\endurl
+   \endbib(2026-06-19)
+   
+\bibitem{citeTAOCPi} Donald E.\ Knuth,
+   {\sl The Art of Computer Programming},
+   Addison-Wesley, 
+   Vol.~1 (3rd ed.), 1997.\par
+
+\bibitem{citeDT} Donald E. Knuth, {\sl Digital Typography},
+   Stanford, California: Center for the Study of Language and
+   Information, CSLI Lecture Notes No.\ 78, 1999.\par
+
+\bibitem{citeWoS} {\sl Web of Stories: Donald E. Knuth}\Dash
+   Part 70: A summary of the \TeX\ project; recorded April 2006.\par
+   \biburl https://www.webofstories.com/play/donald.knuth/70\endurl
+   \endbib(2026-05-26)
+
+\bibitem{citeEFiDK} Computer History Museum,
+   ``Oral History of\newline Donald Knuth'',
+   interviewer Edward Feigenbaum, March 14 and~21, 2007;
+   CHM Reference number: X3926.2007 (73 pages).\Bibcont\ \par
+   \biburl https://www.computerhistory.org/collections/catalog/102658053/\endurl
+   \endbib(2026-05-26)
+
+\bibitem{citeTUviii} Donald E. Knuth, ``The \TeX\ tuneup of 2008'',
+   {\sl \TUB\ \bf29}:2 (2008), 233--238.\par
+   \biburl https://tug.org/TUGboat/tb29-2/tb92knut.pdf\endurl
+   \endbib(2026-05-27)
+
+\bibitem{citePKW} Kai Pan, Sunghun Kim, and E. James Whitehead Jr.,
+   ``Toward an understanding of bug fix patterns'',
+   {\sl Empirical Software Engineering \bf14}:3 (2009), 286--315.\Bibcont\ \par
+    \biburl https://hunkim.cse.ust.hk/images/f/f5/Papers_pan2008esme.pdf\endurl
+    \endbib(2026-06-19)
+   \par \raggedright
+    
+\bibitem{citeDA} Donald E. Knuth, {\sl Selected Papers on Design of Algorithms},
+   Stanford, California: Center for the Study of Language and
+   Information, CSLI Lecture Notes No. 191, 2010.
+
+\bibitem{citeKo} Amy J. Ko, ``Understanding Software Engineering
+  Through Qualitative Methods'', in:
+  Andy Oram and Greg Wilson, eds.,
+  {\sl Making Software: What Really Works, and Why We Believe It},
+  O'Reilly Media, Inc. (2010).\Bibcont\ \par
+   \biburl https://faculty.washington.edu/ajko/papers/Ko2010QualitativeMethods.pdf\endurl
+   \endbib(2026-06-09)
+  \par \raggedright
+
+\bibitem{citeCP} Donald E. Knuth, {\sl Companion to the Papers of Donald
+   Knuth}, Stanford, California: Center for the Study of Language and
+   Information, CSLI Lecture Notes No.\ 202, 2011.
+
+\bibitem{citeTUxxi} Donald E. Knuth, ``The \TeX\ tuneup of 2021'',
+   {\sl \TUB\ \bf42}:1 (2021), 7--10.\Bibcont\ \par
+   \biburl https://tug.org/TUGboat/tb42-1/tb130knuth-tuneup21.pdf\endurl
+   \endbib(2026-06-09)
+
+\bibitem{citeBW} Maik Betka, Stefan Wagner, ``Towards practical
+  application of mutation testing in industry\Dash\newline
+  Traditional versus extreme mutation testing'',
+  {\sl Journal of Software: Evolution and Process \bf34}:11 (2022),
+  29 pages.\Bibcont\ \par
+  \biburl https://onlinelibrary.wiley.com/doi/epdf/10.1002/smr.2450\endurl
+  \endbib(2026-05-31)
+
+\bibitem{citeMG} Mitchell Gerrard, ``Holon programming regained'',
+  {\sl \TUB\ \bf45}:2 (2024), 196--200.\Bibcont\ \par
+  \biburl https://tug.org/TUGboat/tb45-2/tb140gerrard-holon.pdf\endurl
+  \endbib(2026-06-03)
+
+\end{thebibliography}

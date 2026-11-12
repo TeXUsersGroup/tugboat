@@ -1,0 +1,43 @@
+\begin{thebibliography}{1}
+
+\bibitem{latexmk}
+J.~Collins.
+\newblock {latexmk}: Fully automated {\LaTeX} document generation.
+\newblock \url{https://ctan.org/pkg/latexmk}
+
+\bibitem{latex}
+L.~Lamport.
+\newblock \emph{{\LaTeX}: A Document Preparation System}.
+\newblock Addison-Wesley, second~ed., 1994.
+
+\bibitem{luatex}
+{Lua\TeX{} development team}.
+\newblock \emph{{Lua\TeX{} Reference Manual}}.
+\newblock \url{https://ctan.org/pkg/luatex}
+
+\bibitem{ltshipout}
+F.~Mittelbach, {{\LaTeX}{ }{Project{ }Team}}.
+\newblock The~shipout routine: hooks and interfaces.
+\newblock \url{https://mirrors.ctan.org/macros/latex/base/ltshipout-doc.pdf}
+
+\bibitem{ctanmonoref}
+S.~Mohankumar.
+\newblock \texttt{monoref} package page.
+\newblock \newline \url{https://ctan.org/pkg/monoref}
+
+\bibitem{githubmonoref}
+S.~Mohankumar.
+\newblock \texttt{monoref} source repository.
+\newblock \url{https://github.com/Srikanth-Mohankumar/latex-monoref}
+
+\bibitem{optex}
+P.~Ol{\v{s}}{\'a}k.
+\newblock {Op\TeX}: {\LuaTeX} format based on plain {\TeX} and {OPmac}.
+\newblock \url{https://ctan.org/pkg/optex}
+
+\bibitem{hyperref}
+S.~Rahtz, H.~Oberdiek, et~al.
+\newblock The {hyperref} package.
+\newblock \url{https://ctan.org/pkg/hyperref}
+
+\end{thebibliography}
