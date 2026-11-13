@@ -38,6 +38,8 @@ sed '1,/Complete issue/d' "$@" \
 | sed -e 's/^\([a-z]\)/    \1/' \
 | sed -e 's/(doi *)*//g' \
       -e 's/(orcid *)*//g' \
+      -e 's/  \+/ /g' \
+      -e 's/ ,/,/g' \
 | grep -v '^ \+$' \
 | sed '/^TUG home page/,$d'
 
