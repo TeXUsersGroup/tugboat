@@ -77,6 +77,9 @@ validate v: $(xml_output)
 
 force:
 
+clean:
+	rm -f dir2.process/issue.xml dir*/tb*.*
+
 #  Uploading.
 # Crossref's upload tool seems to work fine. It comes from here:
 # https://www.crossref.org/education/member-setup/direct-deposit-xml/https-post

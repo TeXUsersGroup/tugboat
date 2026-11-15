@@ -745,7 +745,9 @@ sub metatags {
   $tags{"lastpage"} = $lastpage;
   #
   if (&public_article_p ($cap{"url"})) {
-    $tags{"pdf_url"} = $cap{"url"};
+    my $url = $cap{"url"};
+    $url = "https://tug.org$url" if $url =~ m,^/,;
+    $tags{"pdf_url"} = $url;
   }
   my $ret = "";
   #

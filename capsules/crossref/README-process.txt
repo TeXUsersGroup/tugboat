@@ -2,15 +2,9 @@ $Id$
 Detailed steps for TUGboat -> crossref processing. Public domain.
 Originally written 2021 Karl Berry.
 
-First, in each dir?.*, preserve working files, presumably from making a
-previous issue public, if not already done (see below):
- nnn=...
- for d in dir{0,1,2}.*; do (cd $d && echo $d && mkdir archive.tb${nnn}-public \
-                            && mv tb${nnn}* archive.tb${nnn}-public); done
-and then
-  svn -q add dir?.*/archive.tb${nnn}-public
-  svn status # make sure as expected
-  svn commit -m"archiving tb$nnn-public"
+First, in each dir?.*, check for working files, presumably from making a
+previous issue public. They should have already been archived; if not,
+see below.
 
 Then, we'll work in the capsules/ directory:
   cd ..
@@ -431,16 +425,19 @@ Copy new landing files to server;
 host=tug.org
 oldnnn=125
 oldiss=40-2
+#
 scp -p crossref/dir1.lndout/*.html $host:/home/httpd/html/TUGboat/tb$oldiss/
-
-# Copy final.pdf to source directory as a sort of backup,
+#
+# Also Copy final.pdf to source directory as a sort of backup,
 #   and as complete.pdf in the web directory.
 # also update Makefile and anything else changed.
-scp -p .../$oldiss/covers/final.pdf \
-       $host:/home/tubprod/$oldiss/covers/final.pdf
+scp -p /home/tubprod/$oldiss/covers/final.pdf \
+ $host:/home/tubprod/$oldiss/covers/final.pdf
+#
 # save existing tb*complete.pdf, although it should be in the source dir too.
 # mkdir PDF/ subdir by hand if need be.
 ssh $host cp /home/httpd/html/TUGboat/tb$oldiss/{,PDF/}tb${oldnnn}complete.pdf
+#
 # copy in final.pdf as the live complete.pdf.
 ssh $host cp -pf /home/tubprod/$oldiss/covers/final.pdf \
                 /home/httpd/html/TUGboat/tb$oldiss/tb${oldnnn}complete.pdf

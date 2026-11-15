@@ -1,3 +1,12 @@
+2026-11-15  Karl Berry  <karl@freefriends.org>
+
+	* Makefile (crossref_iss): remake landing pages for 142
+        (for bookmarks).
+	* crossref/Makefile (clean): new target.
+	* crossref/README-process.txt: never mind original archive.* moves.
+	* lists-translations.txt (\LaTeX\Dash): remove; the separate
+	entries suffice, and this left a space in the title for tb142daems.
+
 2026-11-14  Karl Berry  <karl@freefriends.org>
 
 	Do DOIs for old issue 40:2.
