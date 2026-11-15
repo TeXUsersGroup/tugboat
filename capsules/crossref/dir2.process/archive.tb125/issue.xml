@@ -1,0 +1,1205 @@
+<doi_batch
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    version="5.5.0"
+    xmlns="http://www.crossref.org/schema/5.5.0"
+    xsi:schemaLocation="http://www.crossref.org/schema/5.5.0
+                        http://data.crossref.org/schemas/crossref5.5.0.xsd">
+  <head>
+    <doi_batch_id>ltx2crossref-20261114225703-21193</doi_batch_id>
+    <timestamp>20261114225703</timestamp>
+    <depositor>
+      <depositor_name>TUGboat production</depositor_name>
+      <email_address>doi-tugboat@tug.org</email_address>
+    </depositor>
+    <registrant>TeX Users Group</registrant>
+  </head>
+  <body><journal>
+    <journal_metadata language="en">
+      <full_title>TUGboat</full_title>
+      <issn>0896-3207</issn>      
+    </journal_metadata>
+    <journal_issue>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <journal_volume><volume>40</volume></journal_volume>
+      <issue>2</issue>
+    </journal_issue>
+    <journal_article>
+      <titles>
+        <title>Back to the roots: TUG2019 in Palo Alto</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Henri</given_name>
+          <surname>Menke</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>101</first_page>
+        <last_page>104</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125menke-tug19</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125menke-tug19.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TUG 2019 Annual General Meeting notes</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jennifer</given_name>
+          <surname>Claudio</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>104</first_page>
+        <last_page>105</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125tug19-agm</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125tug19-agm.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>What do today's newcomers want?</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jim</given_name>
+          <surname>Hefferon</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>106</first_page>
+        <last_page>108</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125heff-newusers</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125heff-newusers.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="wiki:jimh-1">
+          <unstructured_citation>JimH10. Are you a newcomer to LaTeX? https://www.reddit.com/r/LaTeX/comments/ccc93c/are_you_a_newcomer_to_latex/, 2019. [Online; accessed 2019-August-13].</unstructured_citation>
+        </citation>
+        <citation key="fontcat-2">
+          <unstructured_citation>Palle J&#x00F8;rgensen. The LaTeX Font Catalogue. https://tug.org/FontCatalogue/, 2019.</unstructured_citation>
+        </citation>
+        <citation key="lshort-3">
+          <unstructured_citation>Tobias Oetiker. The Not So Short Introduction to LaTeX2e. https://ctan.org/pkg/lshort, 2019.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Type 3 fonts and PDF search in <tt>dvips</tt></title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Tomas</given_name>
+          <surname>Rokicki</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>108</first_page>
+        <last_page>111</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125rokicki-type3search</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125rokicki-type3search.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="AGL-1">
+          <unstructured_citation>Adobe. Adobe glyph list specification. https://github.com/adobe-type-tools/agl-specification, August 2018.</unstructured_citation>
+        </citation>
+        <citation key="ENC-2">
+          <unstructured_citation>A. Jeffrey and F. Mittelbach. inputenc.sty. https://ctan.org/pkg/inputenc, 2018.</unstructured_citation>
+        </citation>
+        <citation key="MMAP-3">
+          <unstructured_citation>R. Moore. Include CMap resources in PDF files from pdfTeX. https://ctan.org/pkg/mmap, 2008.</unstructured_citation>
+        </citation>
+        <citation key="T3S-4">
+          <unstructured_citation>T. G. Rokicki. Type 3 search code. https://github.com/rokicki/type3search, July 2019.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The state of XeTeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Arthur</given_name>
+          <surname>Rosendahl</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>112</first_page>
+        <last_page>112</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125reutenauer-xetex</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125reutenauer-xetex.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Hyphenation patterns: Licensing and stability</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Arthur</given_name>
+          <surname>Rosendahl</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>113</first_page>
+        <last_page>114</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125reutenauer-hyph</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125reutenauer-hyph.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="LPPL-1">
+          <unstructured_citation>LaTeX3 Project. The LaTeX Project Public License, version 1.3c, 2008. http://mirror.ctan.org/macros/latex/base/lppl.tex</unstructured_citation>
+        </citation>
+        <citation key="Miklavec:TB29-3-454-2">
+          <unstructured_citation>M. Miklavec and A. Reutenauer. Putting the Cork back in the bottle&#x2014;Improving Unicode support in TeX. TUGboat 29(3):454&#x2013;457, 2008. https://tug.org/TUGboat/tb29-3/tb93miklavec.pdf</unstructured_citation>
+        </citation>
+        <citation key="Miklavec:TB37-2-209-3">
+          <unstructured_citation>M. Miklavec and A. Reutenauer. Hyphenation in TeX and elsewhere, past and future. TUGboat 37(2):209&#x2013;213, 2016. https://tug.org/TUGboat/tb37-2/tb116miklavec.pdf</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>MacTeX-2019, notification, and hardened runtimes</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Richard</given_name>
+          <surname>Koch</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>115</first_page>
+        <last_page>118</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125koch-harden</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125koch-harden.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Quickref: Common Lisp reference documentation as a stress test for Texinfo</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Didier</given_name>
+          <surname>Verna</surname>
+          <ORCID>https://orcid.org/0000-0002-6315-052X</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>119</first_page>
+        <last_page>125</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125verna-quickref</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125verna-quickref.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="bib:kay.69.phd-1">
+          <unstructured_citation>A. C. Kay. The Reactive Engine. PhD thesis, University of Utah, 1969.</unstructured_citation>
+        </citation>
+        <citation key="bib:mccarthy.60.cacm-2">
+          <unstructured_citation>J. McCarthy. Recursive functions of symbolic expressions and their computation by machine, part I. Communications of the ACM 3(4):184&#x2013;195, Apr. 1960. doi:10.1145/367177.367199 (http://dx.doi.org/10.1145/367177.367199)</unstructured_citation>
+        </citation>
+        <citation key="bib:mcilroy.60.cacm-3">
+          <unstructured_citation>M. D. McIlroy. Macro instruction extensions of compiler languages. Communications of the ACM 3:214&#x2013;220, Apr. 1960. doi:10.1145/367177.367223 (http://dx.doi.org/10.1145/367177.367223)</unstructured_citation>
+        </citation>
+        <citation key="bib:tarver.07.blog-4">
+          <unstructured_citation>M. Tarver. The bipolar Lisp programmer. https://marktarver.com/bipolar.html, 2007.</unstructured_citation>
+        </citation>
+        <citation key="bib:ansi.94.cl-5">
+          <unstructured_citation>ANSI. American National Standard: Programming Language &#x2014; Common Lisp. ANSI X3.226:1994 (R1999), 1994.</unstructured_citation>
+        </citation>
+        <citation key="bib:verna.19.els-6">
+          <unstructured_citation>D. Verna. Parallelizing Quickref. In 12th European Lisp Symposium, pp. 89&#x2013;96, Genova, Italy, Apr. 2019. doi:10.5281/zenodo.2632534 (http://dx.doi.org/10.5281/zenodo.2632534)</unstructured_citation>
+        </citation>
+        <citation key="bib:winestock.11.blog-7">
+          <unstructured_citation>R. Winestock. The Lisp curse, Apr. 2011. https://winestockwebdesign.com/Essays/Lisp_Curse.html</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Combining LaTeX with Python</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Uwe</given_name>
+          <surname>Ziegenhagen</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>126</first_page>
+        <last_page>128</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125ziegenhagen-python</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125ziegenhagen-python.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Lutz:2013-1">
+          <unstructured_citation>M. Lutz. Learning Python. O&#x2019;Reilly, 2013.</unstructured_citation>
+        </citation>
+        <citation key="poore:2015-2">
+          <unstructured_citation>G. M. Poore. PythonTeX: Reproducible documents with LaTeX, Python, and more. Comput. Sci. Disc. 8(1), 2015. https://ctan.org/pkg/pythontex</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Parsing complex data formats in LuaTeX with LPEG</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Henri</given_name>
+          <surname>Menke</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>129</first_page>
+        <last_page>135</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125menke-lpeg</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125menke-lpeg.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="1-1">
+          <unstructured_citation>R. Ierusalimschy, A text pattern-matching tool based on Parsing Expression Grammars. Software: Practice and Experience 39(3), 221&#x2013;258 (2009).</unstructured_citation>
+        </citation>
+        <citation key="2-2">
+          <unstructured_citation>T. Hoekwater, LuaTeX. TUGboat 28(3), 312&#x2013;313 (2007). tug.org/TUGboat/tb28-3/tb90hoekwater-luatex.pdf</unstructured_citation>
+        </citation>
+        <citation key="3-3">
+          <unstructured_citation>M. Caisse, Using Spirit X3 to Write Parsers. CppCon 2015. youtube.com/watch?v=xSBWklPLRv</unstructured_citation>
+        </citation>
+        <citation key="4-4">
+          <unstructured_citation>Wikipedia, Parsing expression grammar. wikipedia.org/wiki/Parsing_expression_grammar</unstructured_citation>
+        </citation>
+        <citation key="5-5">
+          <unstructured_citation>D. Crockford, JSON Example. json.org/example.html</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Design into 3D: A system for customizable project designs</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>William</given_name>
+          <surname>Adams</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>136</first_page>
+        <last_page>142</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125adams-3d</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125adams-3d.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The design of the HINT file format</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Martin</given_name>
+          <surname>Ruckert</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>143</first_page>
+        <last_page>146</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125ruckert-hint</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125ruckert-hint.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="DG:zlib-1">
+          <unstructured_citation>P. Deutsch and J.-L. Gailly. Zlib compressed data format specification version 3.3. Technical report, RFC Editor, 1996. https://tools.ietf.org/html/rfc1950</unstructured_citation>
+        </citation>
+        <citation key="ECG:epub-2">
+          <unstructured_citation>EPUB 3 Community Group. epub 3. https://w3.org/publishing/groups/epub3-cg</unstructured_citation>
+        </citation>
+        <citation key="DF:tb3-3">
+          <unstructured_citation>D. Fuchs. The format of TeX&#x2019;s DVI files. TUGboat 3(2):14&#x2013;19, Oct. 1982. https://tug.org/TUGboat/tb03-2/tb06software.pdf</unstructured_citation>
+        </citation>
+        <citation key="HH:beyond-4">
+          <unstructured_citation>H. Hagen. Beyond the bounds of paper and within the bounds of screens; the perfect match of TeX and Acrobat. In Proceedings of the Ninth European TeX Conference, vol. 15a of MAPS, pp. 181&#x2013;196. Elsevier Science, Sept. 1995. https://ntg.nl/maps/15a/09.pdf</unstructured_citation>
+        </citation>
+        <citation key="Knuth:lp-5">
+          <unstructured_citation>D. E. Knuth. Literate Programming. CSLI Lecture Notes Number 27. Center for the Study of Language and Information, Stanford, CA, 1992.</unstructured_citation>
+        </citation>
+        <citation key="Knuth:cweb-6">
+          <unstructured_citation>D. E. Knuth and S. Levy. The CWEB System of Structured Documentation. Addison Wesley, 1994. https://ctan.org/pkg/cweb</unstructured_citation>
+        </citation>
+        <citation key="TR:dvips-7">
+          <unstructured_citation>T. Rokicki. Dvips: A DVI-to-PostScript translator. https://tug.org/dvips</unstructured_citation>
+        </citation>
+        <citation key="MR:tug37-8">
+          <unstructured_citation>M. Ruckert. Computer Modern Roman fonts for ebooks. TUGboat 37(3):277&#x2013;280, 2017. https://tug.org/TUGboat/tb37-3/tb117ruckert.pdf</unstructured_citation>
+        </citation>
+        <citation key="MR:tug39-9">
+          <unstructured_citation>M. Ruckert. HINT: Reflowing TeX output. TUGboat 39(3):217&#x2013;223, 2019. https://tug.org/TUGboat/tb39-3/tb123ruckert-hint.pdf</unstructured_citation>
+        </citation>
+        <citation key="MR:format-10">
+          <unstructured_citation>M. Ruckert. HINT: The File Format. Aug. 2019. ISBN 978-1079481594.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TeXFolio&#x2014;a framework to typeset XML documents using TeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Rishikesan Nair</given_name>
+          <surname>T</surname>
+          <ORCID>https://orcid.org/0000-0002-6791-0354</ORCID>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>CV</given_name>
+          <surname>Rajagopal</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>CV</given_name>
+          <surname>Radhakrishnan</surname>
+          <ORCID>https://orcid.org/0000-0001-7511-2910</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>147</first_page>
+        <last_page>149</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125rishi-texfolio</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125rishi-texfolio.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Neptune&#x2014;a proofing framework for LaTeX authors</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Aravind</given_name>
+          <surname>Rajendran</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Rishikesan Nair</given_name>
+          <surname>T</surname>
+          <ORCID>https://orcid.org/0000-0002-6791-0354</ORCID>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>CV</given_name>
+          <surname>Rajagopal</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>150</first_page>
+        <last_page>152</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125rajendran-neptune</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125rajendran-neptune.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The LaTeX release workflow and the LaTeX <tt>dev</tt> formats</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Frank</given_name>
+          <surname>Mittelbach</surname>
+          <ORCID>https://orcid.org/0000-0001-6318-1230</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>153</first_page>
+        <last_page>156</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125mitt-dev</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125mitt-dev.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Mittelbach:TB18-4-309-1">
+          <unstructured_citation>Frank Mittelbach. A regression test suite for LaTeX2e. TUGboat, 18(4):309&#x2013;311, 1997. https://tug.org/TUGboat/tb18-4/tb57mitt.pdf</unstructured_citation>
+        </citation>
+        <citation key="Mittelbach:TB13-4-510-2">
+          <unstructured_citation>Frank Mittelbach, Chris Rowley, and Michael Downes. Volunteer work for the LaTeX3 project. TUGboat, 13(4):510&#x2013;515, 1992. https://tug.org/TUGboat/tb13-4/tb37mitt-l3.pdf</unstructured_citation>
+        </citation>
+        <citation key="Mittelbach:TB35-3-287-3">
+          <unstructured_citation>Frank Mittelbach, Will Robertson, and LaTeX3 team. l3build&#x2013;A modern Lua test suite for TeX programming. TUGboat, 35(3):287&#x2013;293, 2014. https://tug.org/TUGboat/tb35-3/tb111mitt-l3build.pdf</unstructured_citation>
+        </citation>
+        <citation key="Wright:TB36-3-234-4">
+          <unstructured_citation>Joseph Wright. Automating LaTeX(3) testing. TUGboat, 36(3):234&#x2013;236, 2015. https://tug.org/TUGboat/tb36-3/tb114wright.pdf</unstructured_citation>
+        </citation>
+        <citation key="l3bugs-5">
+          <unstructured_citation>LaTeX Project Team. Bugs in LaTeX software. https://www.latex-project.org/bugs</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Accessibility in the LaTeX kernel&#x2014;experiments in Tagged PDF</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Chris</given_name>
+          <surname>Rowley</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Ulrike</given_name>
+          <surname>Fischer</surname>
+          <ORCID>https://orcid.org/0009-0009-1456-9592</ORCID>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Frank</given_name>
+          <surname>Mittelbach</surname>
+          <ORCID>https://orcid.org/0000-0001-6318-1230</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>157</first_page>
+        <last_page>158</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125rowley-tagpdf</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125rowley-tagpdf.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Creating commented editions with LaTeX&#x2014;the <tt>commedit</tt> package</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Boris</given_name>
+          <surname>Veytsman</surname>
+          <ORCID>https://orcid.org/0000-0003-4674-8113</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>159</first_page>
+        <last_page>162</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125veytsman-editions</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125veytsman-editions.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="Hoenig2003_Makor2-1">
+          <unstructured_citation>A. Hoenig. Makor. A System for Typesetting Biblical and Modern Hebrew with Omega and TeX, 2003. https://ctan.org/pkg/makor2</unstructured_citation>
+        </citation>
+        <citation key="EDMAC-2">
+          <unstructured_citation>J. Lavagnino and D. Wujastyk. Critical Edition Typesetting: The EDMAC format for plain TeX. TeX Users Group and UK TeX Users Group, San Francisco; Birmingham, 1996. https://ctan.org/pkg/edmac and https://tug.org/edmac</unstructured_citation>
+        </citation>
+        <citation key="reledmac-3">
+          <unstructured_citation>M. Rouquette. reledmac. Typeset scholarly editions with LaTeX, 2019. https://ctan.org/pkg/reledmac</unstructured_citation>
+        </citation>
+        <citation key="Veytsman2019_Commedit-4">
+          <unstructured_citation>B. Veytsman. Creating commented editions, 2019. https://ctan.org/pkg/commedit</unstructured_citation>
+        </citation>
+        <citation key="ledmac-5">
+          <unstructured_citation>P. Wilson, H. Press, and M. Rouquette. ledmac. A presumptuous attempt to port EDMAC, TABMAC and EDSTANZA to LaTeX, 2016. https://ctan.org/pkg/ledmac</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Creating and automating exams with LaTeX &amp; friends</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Uwe</given_name>
+          <surname>Ziegenhagen</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>163</first_page>
+        <last_page>166</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125ziegenhagen-exam</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125ziegenhagen-exam.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="hirschhorn:2017-1">
+          <unstructured_citation>P. Hirschhorn. Using the exam document class, 2017. https://ctan.org/pkg/exam</unstructured_citation>
+        </citation>
+        <citation key="poore:2015-2">
+          <unstructured_citation>G. M. Poore. PythonTeX: Reproducible documents with LaTeX, Python, and more. Comput. Sci. Disc. 8(1), 2015. https://ctan.org/pkg/pythontex</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>BibTeX-based dataset generation for training citation parsers</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Sree Harsha</given_name>
+          <surname>Ramesh</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Dung</given_name>
+          <surname>Thai</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Boris</given_name>
+          <surname>Veytsman</surname>
+          <ORCID>https://orcid.org/0000-0003-4674-8113</ORCID>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Andrew</given_name>
+          <surname>McCallum</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>167</first_page>
+        <last_page>169</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125ramesh-cite</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125ramesh-cite.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="anzaroot2013new-1">
+          <unstructured_citation>S. Anzaroot and A. McCallum. A new dataset for fine-grained citation field extraction. In Proceedings of the 30th International Conference on Machine Learning, Atlanta, Georgia, USA, 2013.</unstructured_citation>
+        </citation>
+        <citation key="Bornmann2019_citation_concept_analysis-2">
+          <unstructured_citation>L. Bornmann, K. B. Wray, and R. Haunschild. Citation concept analysis (CCA)&#x2014;a new form of citation analysis revealing the usefulness of concepts for other researchers illustrated by two exemplary case studies including classic books by Thomas S. Kuhn and Karl R. Popper. arXiv e-prints 1905.12410, May 2019.</unstructured_citation>
+        </citation>
+        <citation key="Castillo2007-3">
+          <unstructured_citation>C. Castillo, D. Donato, and A. Gionis. Estimating number of citations using author reputation. In N. Ziviani and R. Baeza-Yates, eds., String Processing and Information Retrieval: 14th International Symposium, SPIRE 2007 Santiago, Chile, October 29-31, 2007 Proceedings, pp. 107&#x2013;117. Springer Berlin Heidelberg, Berlin, Heidelberg, 2007. doi:10.1007/978-3-540-75530-2_10 (http://dx.doi.org/10.1007/978-3-540-75530-2_10)</unstructured_citation>
+        </citation>
+        <citation key="Chakraborty2014StratifiedApproach-4">
+          <unstructured_citation>T. Chakraborty, S. Kumar, et al. Towards a stratified learning approach to predict future citation counts. In Proceedings of the 14th ACM/IEEE-CS Joint Conference on Digital Libraries, JCDL &#x2019;14, pp. 351&#x2013;360, Piscataway, NJ, USA, 2014. IEEE Press. http://dl.acm.org/citation.cfm?id=2740769.2740830</unstructured_citation>
+        </citation>
+        <citation key="Chen2012-5">
+          <unstructured_citation>C. Chen. Predictive effects of structural variation on citation counts. Journal of the American Society for Information Science and Technology 63(3):431&#x2013;449, 2012. doi:10.1002/asi.21694 (http://dx.doi.org/10.1002/asi.21694)</unstructured_citation>
+        </citation>
+        <citation key="Dietz2007-6">
+          <unstructured_citation>L. Dietz, S. Bickel, and T. Scheffer. Unsupervised prediction of citation influences. In Proceedings of the 24th International Conference on Machine Learning, Corvallis, OR, 2007. https://icml.cc/imls/conferences/2007/proceedings/papers/257.pdf</unstructured_citation>
+        </citation>
+        <citation key="Feldman2018_citation_count_preprints-7">
+          <unstructured_citation>S. Feldman, K. Lo, and W. Ammar. Citation count analysis for papers with preprints. ArXiv e-prints 1805.05238, May 2018.</unstructured_citation>
+        </citation>
+        <citation key="FuAliferis2010-8">
+          <unstructured_citation>L. D. Fu and C. F. Aliferis. Using content-based and bibliometric features for machine learning models to predict citation counts in the biomedical literature. Scientometrics 85(1):257&#x2013;270, 2010. doi:10.1007/s11192-010-0160-5 (http://dx.doi.org/10.1007/s11192-010-0160-5)</unstructured_citation>
+        </citation>
+        <citation key="Herrmannova2018_citation_distance_publication_impact-9">
+          <unstructured_citation>D. Herrmannova, P. Knoth, and R. Patton. Analyzing citation-distance networks for evaluating publication impact. In 11th edition of the Language Resources and Evaluation Conference, May 2018. http://oro.open.ac.uk/53638/</unstructured_citation>
+        </citation>
+        <citation key="Herrmannova2018_seminal_pubs-10">
+          <unstructured_citation>D. Herrmannova, R. M. Patton, et al. Do citations and readership identify seminal publications? CoRR abs/1802.04853, 2018. http://arxiv.org/abs/1802.04853</unstructured_citation>
+        </citation>
+        <citation key="Hutchins2016_relative_citation_ratio-11">
+          <unstructured_citation>B. I. Hutchins, X. Yuan, et al. Relative citation ratio (RCR): A new metric that uses citation rates to measure influence at the article level. PLOS Biology 14(9):1&#x2013;25, 09 2016. doi:10.1371/journal.pbio.1002541 (http://dx.doi.org/10.1371/journal.pbio.1002541)</unstructured_citation>
+        </citation>
+        <citation key="Iacopini2018_dynamics_innovation-12">
+          <unstructured_citation>I. Iacopini, S. Milojevi&#x0107;, and V. Latora. Network dynamics of innovation processes. Phys. Rev. Lett. 120:048301, Jan 2018. doi:10.1103/PhysRevLett.120.048301 (http://dx.doi.org/10.1103/PhysRevLett.120.048301)</unstructured_citation>
+        </citation>
+        <citation key="Jia2016-13">
+          <unstructured_citation>Y. Jia and L. Qu. Improve the performance of link prediction methods in citation network by using h-index. In 2016 International Conference on Cyber-Enabled Distributed Computing and Knowledge Discovery (CyberC), pp. 220&#x2013;223, Oct 2016. doi:10.1109/CyberC.2016.51 (http://dx.doi.org/10.1109/CyberC.2016.51)</unstructured_citation>
+        </citation>
+        <citation key="Kaya2017-14">
+          <unstructured_citation>M. Kaya, M. Jawed, et al. Unsupervised link prediction based on time frames in weighted&#x2013;directed citation networks. In R. Missaoui, T. Abdessalem, and M. Latapy, eds., Trends in Social Network Analysis: Information Propagation, User Behavior Modeling, Forecasting, and Vulnerability Assessment, pp. 189&#x2013;205. Springer International Publishing, Cham, 2017. doi:10.1007/978-3-319-53420-6_8 (http://dx.doi.org/10.1007/978-3-319-53420-6_8)</unstructured_citation>
+        </citation>
+        <citation key="Klimek2016-15">
+          <unstructured_citation>P. Klimek, A. S. Jovanovic, et al. Successful fish go with the flow: citation impact prediction based on centrality measures for term&#x2013;document networks. Scientometrics 107(3):1265&#x2013;1282, Jun 2016. doi:10.1007/s11192-016-1926-1 (http://dx.doi.org/10.1007/s11192-016-1926-1)</unstructured_citation>
+        </citation>
+        <citation key="Lokker2008-16">
+          <unstructured_citation>C. Lokker, K. A. McKibbon, et al. Prediction of citation counts for clinical articles at two years using data available within three weeks of publication: retrospective cohort study. BMJ 336(7645):655&#x2013;657, 2008. doi:10.1136/bmj.39482.526713.BE (http://dx.doi.org/10.1136/bmj.39482.526713.BE)</unstructured_citation>
+        </citation>
+        <citation key="McKeown2016_predicting_impact_concepts-17">
+          <unstructured_citation>K. McKeown, I. Daume, Hal, et al. Predicting the impact of scientific concepts using full&#x2010;text features. Journal of the Association for Information Science and Technology 67(11):2684&#x2013;2696, 2016. doi:10.1002/asi.23612 (http://dx.doi.org/10.1002/asi.23612)</unstructured_citation>
+        </citation>
+        <citation key="Park2018-18">
+          <unstructured_citation>H.-M. Park, Y. B. Sinshaw, and K.-A. Sohn. Temporal citation network-based feature extraction for cited count prediction. In K. J. Kim and N. Joukov, eds., Mobile and Wireless Technologies 2017: ICMWT 2017, pp. 380&#x2013;388. Springer Singapore, Singapore, 2018. doi:10.1007/978-981-10-5281-1_41 (http://dx.doi.org/10.1007/978-981-10-5281-1_41)</unstructured_citation>
+        </citation>
+        <citation key="Peoples17TwitterPredictsCitations-19">
+          <unstructured_citation>B. K. Peoples, S. R. Midway, et al. Twitter predicts citation rates of ecological research. PLoS ONE 11:e0166570, 2017. doi:0.1371/journal.pone.0166570 (http://dx.doi.org/0.1371/journal.pone.0166570)</unstructured_citation>
+        </citation>
+        <citation key="Peters2018elmo-20">
+          <unstructured_citation>M. E. Peters, M. Neumann, et al. Deep contextualized word representations. In NAACL, 2018.</unstructured_citation>
+        </citation>
+        <citation key="Pobiedina2016-21">
+          <unstructured_citation>N. Pobiedina and R. Ichise. Citation count prediction as a link prediction problem. Applied Intelligence 44(2):252&#x2013;268, Mar 2016. doi:10.1007/s10489-015-0657-y (http://dx.doi.org/10.1007/s10489-015-0657-y)</unstructured_citation>
+        </citation>
+        <citation key="seymore1999learning-22">
+          <unstructured_citation>K. Seymore, A. McCallum, and R. Rosenfeld. Learning hidden Markov model structure for information extraction. In AAAI-99 workshop on machine learning for information extraction, pp. 37&#x2013;42, 1999.</unstructured_citation>
+        </citation>
+        <citation key="ShiLescovecMcfarland2010_citing_high_impact-23">
+          <unstructured_citation>X. Shi, J. Leskovec, and D. A. McFarland. Citing for high impact. CoRR abs/1004.3351, 2010. http://arxiv.org/abs/1004.3351</unstructured_citation>
+        </citation>
+        <citation key="Small2019_Article_CitationsAndCertaintyANewInter-24">
+          <unstructured_citation>H. Small, K. W. Boyack, and R. Klavans. Citations and certainty: a new interpretation of citation counts. Scientometrics 118(3):1079&#x2013;1092, Mar 2019. doi:10.1007/s11192-019-03016-z (http://dx.doi.org/10.1007/s11192-019-03016-z)</unstructured_citation>
+        </citation>
+        <citation key="Tahamtan2016CitationsReview-25">
+          <unstructured_citation>I. Tahamtan, A. Safipour Afshar, and K. Ahamdzadeh. Factors affecting number of citations: A comprehensive review of the literature. Scientometrics 107(3):1195&#x2013;1225, June 2016. doi:10.1007/s11192-016-1889-2 (http://dx.doi.org/10.1007/s11192-016-1889-2)</unstructured_citation>
+        </citation>
+        <citation key="Tahamtan2016-26">
+          <unstructured_citation>I. Tahamtan, A. Safipour Afshar, and K. Ahamdzadeh. Factors affecting number of citations: a comprehensive review of the literature. Scientometrics 107(3):1195&#x2013;1225, Jun 2016. doi:10.1007/s11192-016-1889-2 (http://dx.doi.org/10.1007/s11192-016-1889-2)</unstructured_citation>
+        </citation>
+        <citation key="Consistency2019-27">
+          <unstructured_citation>B. Veytsman. How to measure the consistency of the tagging of scientific papers? In 2019 ACM/IEEE Joint Conference on Digital Libraries (JCDL), pp. 372&#x2013;373, 2019. doi:10.1109/JCDL.2019.00076 (http://dx.doi.org/10.1109/JCDL.2019.00076)</unstructured_citation>
+        </citation>
+        <citation key="Weihs2017predictCitations-28">
+          <unstructured_citation>L. Weihs and O. Etzioni. Learning to predict citation-based impact measures. In 2017 ACM/IEEE Joint Conference on Digital Libraries (JCDL), pp. 1&#x2013;10, June 2017. doi:10.1109/JCDL.2017.7991559 (http://dx.doi.org/10.1109/JCDL.2017.7991559)</unstructured_citation>
+        </citation>
+        <citation key="Yan2012Giants-29">
+          <unstructured_citation>R. Yan, C. Huang, et al. To better stand on the shoulder of giants. In Proceedings of the 12th ACM/IEEE-CS Joint Conference on Digital Libraries, JCDL &#x2019;12, pp. 51&#x2013;60, New York, NY, USA, 2012. ACM. doi:10.1145/2232817.2232831 (http://dx.doi.org/10.1145/2232817.2232831)</unstructured_citation>
+        </citation>
+        <citation key="Yan2011citation-30">
+          <unstructured_citation>R. Yan, J. Tang, et al. Citation count prediction: learning to estimate future citations for literature. In Proceedings of the 20th ACM international conference on Information and knowledge management, CIKM &#x2019;11, pp. 1247&#x2013;1252, New York, NY, USA, 2011. ACM. doi:10.1145/2063576.2063757 (http://dx.doi.org/10.1145/2063576.2063757)</unstructured_citation>
+        </citation>
+        <citation key="Yu2014CitationPredictionRegression-31">
+          <unstructured_citation>T. Yu, G. Yu, et al. Citation impact prediction for scientific papers using stepwise regression analysis. Scientometrics 101(2):1233&#x2013;1252, Nov. 2014. doi:10.1007/s11192-014-1279-6 (http://dx.doi.org/10.1007/s11192-014-1279-6)</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>FreeType_MF_Module2: Integration of Metafont, GF, and PK inside FreeType</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Jaeyoung</given_name>
+          <surname>Choi</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Saima</given_name>
+          <surname>Majeed</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Ammar Ul</given_name>
+          <surname>Hassan</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Geunho</given_name>
+          <surname>Jeong</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>170</first_page>
+        <last_page>178</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125choi-freetype2</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125choi-freetype2.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="1-1">
+          <unstructured_citation>S. Song. Development of Korea Typography Industry Appreciating Korean Language, 2013. https://www.korean.go.kr/nkview/nklife/2013_3/23_0304.pdf</unstructured_citation>
+        </citation>
+        <citation key="2-2">
+          <unstructured_citation>J. Choi, S. Kim, H. Lee, G. Jeong. MFCONFIG: A Metafont plug-in module for FreeType rasterizer. TUGboat 37(2):163&#x2013;170 (TUG 2016 conference proceedings). https://tug.org/TUGboat/tb37-2/tb116choi.pdf</unstructured_citation>
+        </citation>
+        <citation key="3-3">
+          <unstructured_citation>Y. Park. Current status of Hangul in the 21st century [in Korean]. The &lt;T&gt;Type and Typography magazine, vol. 7, August 2012. https://www.typographyseoul.com/news/detail/222</unstructured_citation>
+        </citation>
+        <citation key="4-4">
+          <unstructured_citation>D. E. Knuth. Computers and Typesetting, Volume C: The Metafontbook. Addison-Wesley, 1996.</unstructured_citation>
+        </citation>
+        <citation key="5-5">
+          <unstructured_citation>Web2c: A TeX implementation. https://tug.org/web2c</unstructured_citation>
+        </citation>
+        <citation key="6-6">
+          <unstructured_citation>H. Kakugawa, M. Nishikimi, N. Takahashi, S. Tomura, K. Handa. A general purpose font module for multilingual application programs. Software: Practice and Experience, 31(15):1487&#x2013;1508, 2001. https://dx.doi.org/10.1002/spe.424</unstructured_citation>
+        </citation>
+        <citation key="7-7">
+          <unstructured_citation>D. Turner, R. Wilhelm, W. Lemberg. FreeType. https://freetype.org</unstructured_citation>
+        </citation>
+        <citation key="8-8">
+          <unstructured_citation>R. Menzner. A Library for Generating Character Bitmaps from Adobe Type 1 Fonts. https://inferiorproducts.com/docs/userdocs/t1lib/t1lib_doc.pdf</unstructured_citation>
+        </citation>
+        <citation key="9-9">
+          <unstructured_citation>K. Packard. The Xft font library: Architecture and users guide. Proceedings of the 5th annual conference on Linux Showcase &#x0026; Conference, 2001. https://keithp.com/~keithp/talks/xtc2001/paper</unstructured_citation>
+        </citation>
+        <citation key="10-10">
+          <unstructured_citation>J. Choi, A. Hassan, G. Jeong. FreeType_MF_Module: A module for using Metafont directly inside the FreeType rasterizer. TUGboat 39(2):163&#x2013;170 (TUG 2018 conference proceedings). https://tug.org/TUGboat/tb39-2/tb122choi-freetype.pdf</unstructured_citation>
+        </citation>
+        <citation key="11-11">
+          <unstructured_citation>H.-W. Nienhuys. mftrace&#x2014;Scalable fonts for Metafont. 2017. https://lilypond.org/mftrace</unstructured_citation>
+        </citation>
+        <citation key="12-12">
+          <unstructured_citation>M. Weber. Autotrace&#x2014; converts bitmap to vector graphics. 2002. https://autotrace.sourceforge.net</unstructured_citation>
+        </citation>
+        <citation key="13-13">
+          <unstructured_citation>K. P&#x00ED;&#x0161;ka. Creating Type 1 fonts from Metafont sources: Comparison of tools, techniques and results. Preprints for the 2004 Annual TUG Meeting. https://tug.org/TUGboat/tb25-0/piska.pdf</unstructured_citation>
+        </citation>
+        <citation key="14-14">
+          <unstructured_citation>J. R. Laguna. H&#x00F3;ng-z&#x00EC;: A Chinese Metafont. TUGboat 26(2):125&#x2013;128, 2005. https://tug.org/TUGboat/tb26-2/laguna.pdf</unstructured_citation>
+        </citation>
+        <citation key="15-15">
+          <unstructured_citation>J. Choi, G. Gwon, M. Son, G. Jeong. Next Generation CJK Font Technology Using the Metafont. LetterSeed 15:87&#x2013;101, Korea Society of Typography, 2017.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Evolutionary changes in Persian and Arabic scripts to accommodate the printing press, typewriting, and computerized word processing</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Behrooz</given_name>
+          <surname>Parhami</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>179</first_page>
+        <last_page>186</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125parhami-scripts</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125parhami-scripts.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="1-1">
+          <unstructured_citation>B. Parhami, "Computers and the Challenges of Writing in Persian: A Personal History Spanning Five Decades," being prepared for publication. (English version of [2])</unstructured_citation>
+        </citation>
+        <citation key="2-2">
+          <unstructured_citation>B. Parhami, "Computers and Challenges of Writing in Persian" (in Persian), Iran Namag, Vol. 4, No. 2, Summer 2019, to appear. (Persian version of [1])</unstructured_citation>
+        </citation>
+        <citation key="3-3">
+          <unstructured_citation>B. Parhami and F. Mavaddat, "Computers and the Farsi Language: A Survey of Problem Areas," Information Processing 77 (Proc. IFIP World Congress), North Holland, 1977, pp. 673-676.</unstructured_citation>
+        </citation>
+        <citation key="4-4">
+          <unstructured_citation>B. Parhami, "On the Use of Farsi and Arabic Languages in Computer-Based Information Systems," Proc. Symp. Linguistic Implications of Computer-Based Information Systems, New Delhi, India, November 1978, pp. 1-15.</unstructured_citation>
+        </citation>
+        <citation key="5-5">
+          <unstructured_citation>B. Parhami, "Impact of Farsi Language on Computing in Iran," Mideast Computer, Vol. 1, No. 1, pp. 6-7, 1978.</unstructured_citation>
+        </citation>
+        <citation key="6-6">
+          <unstructured_citation>B. Parhami, "Language-Dependent Considerations for Computer Applications in Farsi and Arabic Speaking Countries," System Approach for Development (Proc. IFAC Conf.), North-Holland, 1981, pp. 507-513.</unstructured_citation>
+        </citation>
+        <citation key="7-7">
+          <unstructured_citation>G. Lazard, "The Rise of the New Persian Language," The Cambridge History of Iran, Vol. 4 (Period from the Arab Invasion to the Saljuqs), 2008, pp. 566-594.</unstructured_citation>
+        </citation>
+        <citation key="8-8">
+          <unstructured_citation>M. Borjian and H. Borjian, "Plights of Persian in the Modernization Era," Handbook of Language and Ethnic Identity: The Success-Failure Continuum in Language and Ethnic Identity Efforts, Vol. 2, pp. 254-267, 2011.</unstructured_citation>
+        </citation>
+        <citation key="9-9">
+          <unstructured_citation>W.M.Floor, "Cp," Encyclopedia Iranica, I/7, pp. 760-764.</unstructured_citation>
+        </citation>
+        <citation key="10-10">
+          <unstructured_citation>N. Green, "Persian Print and the Stanhope: Industrialization, Evangelicalism, and the Birth of Printing in Early Qajar Iran," Comparative Studies of South Asia, Africa, and the Middle East, Vol. 30, No. 3, 2010, pp. 473-490.</unstructured_citation>
+        </citation>
+        <citation key="11-11">
+          <unstructured_citation>B. Parhami and M. Taraghi, "Automatic Recognition of Printed Farsi Texts," Pattern Recognition, Vol. 14, Nos. 1-6, pp. 395-403, 1981.</unstructured_citation>
+        </citation>
+        <citation key="12-12">
+          <unstructured_citation>T. Nemeth, Arabic Type-Making in the Machine Age: The Influence of Technology on the Form of Arabic Type, 1908-1993, Brill, Leiden, 2017, p. 288.</unstructured_citation>
+        </citation>
+        <citation key="13-13">
+          <unstructured_citation>B. Parhami, Computer Appreciation (in Persian), Tehran, Tolou&#x2019;e Azadi, 1984.</unstructured_citation>
+        </citation>
+        <citation key="14-14">
+          <unstructured_citation>Institute of Standards and Industrial Research of Iran, Character Arrangement on Keyboards of Persian Typewriters (in Persian), ISIRI 820, 1976.</unstructured_citation>
+        </citation>
+        <citation key="15-15">
+          <unstructured_citation>B. Parhami, "Standard Farsi Information Interchange Code and Keyboard Layout: A Unified Proposal," J. Institution of Electrical and Telecommunications Engineers, Vol. 30, No. 6, pp. 179-183, 1984.</unstructured_citation>
+        </citation>
+        <citation key="16-16">
+          <unstructured_citation>Iran Plan and Budget Organization, Final Proposal for the Iranian National Standard Information Code (INSIC), Persian and English versions, 1980.</unstructured_citation>
+        </citation>
+        <citation key="17-17">
+          <unstructured_citation>M. Sanati, "My Recollections of Desktop Publishing" (in Persian), Computer Report, Vol. 40, No. 239, pp. 53-60, Fall 2018.</unstructured_citation>
+        </citation>
+        <citation key="18-18">
+          <unstructured_citation>B. Parhami, "On Lower Bounds for the Dimensions of Dot-Matrix Characters to Represent Farsi and Arabic Scripts," Proc. 1st Annual CSI Computer Conf., Tehran, Iran, December 1995, pp. 125-130.</unstructured_citation>
+        </citation>
+        <citation key="19-19">
+          <unstructured_citation>K. Lagally, "ArabTeX, a System for Typesetting Arabic," Proc. 3rd Int&#x2019;l Conf. Multi-lingual Computing: Arabic and Roman Script, Vol. 9, No. 1, 1992.</unstructured_citation>
+        </citation>
+        <citation key="20-20">
+          <unstructured_citation>B. Esfahbod and R. Pournader, "FarsiTeX and the Iranian TeX Community," TUGboat, Vol. 23, No. 1, pp. 41-45, 2002: https://tug.org/TUGboat/tb23-1/farsitex.pdf</unstructured_citation>
+        </citation>
+        <citation key="21-21">
+          <unstructured_citation>Unicode.org, "About the Unicode Standard," on-line resource page with pertinent links, accessed on July 16, 2019: https://unicode.org/standard/standard.html</unstructured_citation>
+        </citation>
+        <citation key="22-22">
+          <unstructured_citation>Python.org, "Links to Python Information in Persian/Iranian/Farsi," On-line resource page, accessed on July 16, 2019: https://wiki.python.org/moin/PersianLanguage</unstructured_citation>
+        </citation>
+        <citation key="23-23">
+          <unstructured_citation>N. Chahine, "Reading Arabic: Legibility Studies for the Arabic Script," Doctoral Thesis, Leiden University, 2012.</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>The unreasonable effectiveness of pattern generation</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Petr</given_name>
+          <surname>Sojka</surname>
+          <ORCID>https://orcid.org/0000-0002-5768-4007</ORCID>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Ond&#x0159;ej</given_name>
+          <surname>Sojka</surname>
+          <ORCID>https://orcid.org/0000-0003-2048-9977</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>187</first_page>
+        <last_page>193</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125sojka-patgen</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125sojka-patgen.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="math:hamming1980-1">
+          <unstructured_citation>R. W. Hamming. The unreasonable effectiveness of mathematics. The American Mathematical Monthly 87(2):81&#x2013;90, 1980. http://www.jstor.org/stable/2321982</unstructured_citation>
+        </citation>
+        <citation key="nlp:UJCprirucka-2">
+          <unstructured_citation>Internetov&#x00e1; jazykov&#x00e1; p&#x0159;&#x00ed;ru&#x010d;ka (Internet Language Reference Book). Institute of Czech language, Czech Academy of Sciences. http://prirucka.ujc.cas.cz/?id=135</unstructured_citation>
+        </citation>
+        <citation key="nlp:Jakubicek2013TTC-3">
+          <unstructured_citation>M. Jakub&#x00ED;&#x010D;ek, A. Kilgarriff, et al. The TenTen Corpus Family. In Proc. of 7th International Corpus Linguistics Conference (CL), pp. 125&#x2013;127, Lancaster, July 2013.</unstructured_citation>
+        </citation>
+        <citation key="ml:Lample2019-4">
+          <unstructured_citation>G. Lample, A. Sablayrolles, et al. Large memory layers with product keys, 2019. https://arxiv.org/pdf/1907.05242</unstructured_citation>
+        </citation>
+        <citation key="nlp:Germantrennmuster-5">
+          <unstructured_citation>W. Lemberg. A database of German words with hyphenation information. https://repo.or.cz/wortliste.git</unstructured_citation>
+        </citation>
+        <citation key="tex:Liang83:thesis-6">
+          <unstructured_citation>F. M. Liang. Word Hy-phen-a-tion by Com-put-er. PhD thesis, Department of Computer Science, Stanford University, Aug. 1983. https://tug.org/docs/liang</unstructured_citation>
+        </citation>
+        <citation key="ml:PereiraNorvig2009-7">
+          <unstructured_citation>F. Pereira, P. Norvig, and A. Halevy. The unreasonable effectiveness of data. IEEE Intelligent Systems 24(02):8&#x2013;12, Mar. 2009. doi:10.1109/MIS.2009.36 (http://dx.doi.org/10.1109/MIS.2009.36)</unstructured_citation>
+        </citation>
+        <citation key="tex:hyphenationweb-8">
+          <unstructured_citation>A. Reutenauer and M. Miklavec. TeX hyphenation patterns. https://tug.org/tex-hyphen</unstructured_citation>
+        </citation>
+        <citation key="tex:scannel03-9">
+          <unstructured_citation>K. P. Scannell. Hyphenation patterns for minority languages. TUGboat 24(2):236&#x2013;239, 2003. https://tug.org/TUGboat/tb24-2/tb77scannell.pdf</unstructured_citation>
+        </citation>
+        <citation key="nlp:Sennrich2016-10">
+          <unstructured_citation>R. Sennrich, B. Haddow, and A. Birch. Neural machine translation of rare words with subword units. In Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pp. 1715&#x2013;1725, Berlin, Germany, Aug. 2016. Association for Computational Linguistics. doi:10.18653/v1/P16-1162 (http://dx.doi.org/10.18653/v1/P16-1162)</unstructured_citation>
+        </citation>
+        <citation key="nlp:Shao2018-11">
+          <unstructured_citation>Y. Shao, C. Hardmeier, and J. Nivre. Universal word segmentation: Implementation and interpretation. Transactions of the Association for Computational Linguistics 6:421&#x2013;435, 2018. doi:10.1162/tacl_a_00033 (http://dx.doi.org/10.1162/tacl_a_00033)</unstructured_citation>
+        </citation>
+        <citation key="nlp:raslan09conf/pp13-16-12">
+          <unstructured_citation>P. &#x0160;merk. Fast morphological analysis of Czech. In P. Sojka and A. Hor&#x00E1;k, eds., Proceedings of Recent Advances in Slavonic Natural Language Processing, RASLAN 2009, pp. 13&#x2013;16, Karlova Stud&#x00E1;nka, Czech Republic, Dec. 2009. Masaryk University. http://nlp.fi.muni.cz/raslan/2009/</unstructured_citation>
+        </citation>
+        <citation key="tensojka:cshyphenrepo-13">
+          <unstructured_citation>O. Sojka and P. Sojka. cshyphen repository. https://github.com/tensojka/cshyphen</unstructured_citation>
+        </citation>
+        <citation key="tex:sojka95c-14">
+          <unstructured_citation>P. Sojka. Notes on compound word hyphenation in TeX. TUGboat 16(3):290&#x2013;297, 1995. https://tug.org/TUGboat/tb16-3/tb48soj2.pdf</unstructured_citation>
+        </citation>
+        <citation key="tex:sojka99a-15">
+          <unstructured_citation>P. Sojka. Hyphenation on demand. TUGboat 20(3):241&#x2013;247, 1999. https://tug.org/TUGboat/tb20-3/tb64sojka.pdf</unstructured_citation>
+        </citation>
+        <citation key="nlp:Sojka2005:thesis-16">
+          <unstructured_citation>P. Sojka. Competing Patterns in Language Engineering and Computer Typesetting. PhD thesis, Masaryk University, Brno, Jan. 2005.</unstructured_citation>
+        </citation>
+        <citation key="tex:sojka95b-17">
+          <unstructured_citation>P. Sojka and P. &#x0160;eve&#x010D;ek. Hyphenation in TeX&#x2014;Quo Vadis? TUGboat 16(3):280&#x2013;289, 1995. https://tug.org/TUGboat/tb16-3/tb48soj1.pdf</unstructured_citation>
+        </citation>
+        <citation key="nlp:suchomel2012-18">
+          <unstructured_citation>V. Suchomel and J. Pomik&#x00e1;lek. Efficient web crawling for large text corpora. In A. Kilgarriff and S. Sharoff, eds., Proc. of the Seventh Web as Corpus Workshop (WAC), pp. 39&#x2013;43, Lyon, 2012. http://sigwac.org.uk/raw-attachment/wiki/WAC7/wac7-proc.pdf</unstructured_citation>
+        </citation>
+        <citation key="math:Wigner1960-19">
+          <unstructured_citation>E. P. Wigner. The Unreasonable Effectiveness of Mathematics in the Natural Sciences. Richard Courant Lecture in Mathematical Sciences delivered at New York University, May 11, 1959. Communications on Pure and Applied Mathematics 13(1):1&#x2013;14, 1960. doi:10.1002/cpa.3160130102 (http://dx.doi.org/10.1002/cpa.3160130102)</unstructured_citation>
+        </citation>
+        <citation key="nlp:Zeldes2018-20">
+          <unstructured_citation>A. Zeldes. A characterwise windowed approach to Hebrew morphological segmentation. In Proc. of the Fifteenth Workshop on Computational Research in Phonetics, Phonology, and Morphology, pp. 101&#x2013;110, Brussels, Belgium, Oct. 2018. Association for Computational Linguistics. doi:10.18653/v1/W18-5811 (http://dx.doi.org/10.18653/v1/W18-5811)</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>Improving Hangul to English translation for optical character recognition (OCR)</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Emily</given_name>
+          <surname>Park</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Jennifer</given_name>
+          <surname>Claudio</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>194</first_page>
+        <last_page>195</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125park-hangul</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125park-hangul.html</resource>
+      </doi_data>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>A glance at CJK support with XeTeX and LuaTeX</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Antoine</given_name>
+          <surname>Bossard</surname>
+          <ORCID>https://orcid.org/0000-0001-9381-9346</ORCID>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>196</first_page>
+        <last_page>201</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125bossard-cjk</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125bossard-cjk.html</resource>
+      </doi_data>
+      <citation_list>
+        <citation key="bib:ccd-1">
+          <unstructured_citation>A. Bossard. Chinese Characters, Deciphered. Kanagawa University Press, Yokohama, Japan, 2018.</unstructured_citation>
+        </citation>
+        <citation key="bib:kameindex-2">
+          <unstructured_citation>A. Bossard and K. Kaneko. Experimenting with makeindex and Unicode, and deriving kameindex. In Proceedings of the GuIT meeting 2018, ArsTeXnica 26, pp. 55&#x2013;61, Rome, Italy, October 2018. https://www.guitex.org/home/images/ArsTeXnica/AT026/kameindex.pdf</unstructured_citation>
+        </citation>
+        <citation key="bib:everyhook-3">
+          <unstructured_citation>S. Checkoway. The everyhook package, November 2014. Package documentation. https://ctan.org/pkg/everyhook (last accessed August 2019).</unstructured_citation>
+        </citation>
+        <citation key="bib:noto-4">
+          <unstructured_citation>Google. Google Noto fonts, 2017. https://google.com/get/noto (last accessed August 2019).</unstructured_citation>
+        </citation>
+        <citation key="bib:tex-5">
+          <unstructured_citation>D. E. Knuth. The TeXbook. Addison-Wesley, Boston, MA, USA, 1986.</unstructured_citation>
+        </citation>
+        <citation key="bib:cjk-6">
+          <unstructured_citation>W. Lemberg. CJK, April 2015. Package documentation. https://ctan.org/pkg/cjk (last accessed August 2019).</unstructured_citation>
+        </citation>
+        <citation key="bib:xecjk-7">
+          <unstructured_citation>L. Liu and Q. Lee. xeCJK &#x5b8f;&#x5305; (in Chinese), April 2018. Package documentation. https://ctan.org/pkg/xecjk (last accessed August 2019).</unstructured_citation>
+        </citation>
+        <citation key="bib:ptex-8">
+          <unstructured_citation>K. Nakano, Japanese TeX Development Community, and TTK. About pLaTeX2e, September 2018. Package documentation. https://ctan.org/pkg/platex (last accessed August 2019).</unstructured_citation>
+        </citation>
+        <citation key="bib:uplatex-9">
+          <unstructured_citation>K. Nakano, Japanese TeX Development Community, and TTK. About upLaTeX2e, April 2018. Package documentation. https://ctan.org/pkg/uplatex (last accessed August 2019).</unstructured_citation>
+        </citation>
+        <citation key="bib:ptex2-10">
+          <unstructured_citation>H. Okumura. pTeX and Japanese typesetting. The Asian Journal of TeX2(1):43&#x2013;51, April 2008. http://ajt.ktug.org/2008/0201okumura.pdf</unstructured_citation>
+        </citation>
+        <citation key="bib:omega-11">
+          <unstructured_citation>J. Plaice and Y. Haralambous. The latest developments in &#x03A9;. TUGboat 17(2):181&#x2013;183, June 1996. https://tug.org/TUGboat/tb17-2/tb51plaice.pdf</unstructured_citation>
+        </citation>
+        <citation key="bib:fontspec-12">
+          <unstructured_citation>W. Robertson. The fontspec package&#x2014;Font selection for XeLaTeX and LuaLaTeX, July 2018. Package documentation. https://ctan.org/pkg/fontspec (last accessed August 2019).</unstructured_citation>
+        </citation>
+        <citation key="bib:luatex-ja-13">
+          <unstructured_citation>The LuaTeX-ja project team. The LuaTeX-ja package, November 2018. Package documentation. https://ctan.org/pkg/luatexja (last accessed August 2019).</unstructured_citation>
+        </citation>
+        <citation key="bib:hlatex-14">
+          <unstructured_citation>K. Un. &#xd55c;&#xae00;&#xb77c;&#xd14d; &#xae38;&#xcc38;&#xc774; (in Korean), April 2005. Package documentation. https://ctan.org/pkg/hlatex (last accessed August 2019).</unstructured_citation>
+        </citation>
+        <citation key="bib:seqsplit-15">
+          <unstructured_citation>B. Veytsman. Splitting Long Sequences of Letters (DNA, RNA, Proteins, etc.), August 2006. Package documentation. https://ctan.org/pkg/seqsplit (last accessed August 2019).</unstructured_citation>
+        </citation>
+        <citation key="bib:bxÂ­cjkÂ­jatype-16">
+          <unstructured_citation>T. Yato. BXcjkjatype package, August 2013. Package documentation. https://ctan.org/pkg/bxcjkjatype (last accessed August 2019).</unstructured_citation>
+        </citation>
+      </citation_list>
+    </journal_article>
+    <journal_article>
+      <titles>
+        <title>TUG 2019 abstracts</title>
+      </titles>
+      <contributors>
+        <person_name sequence="first" contributor_role="author">
+          <given_name>Amine</given_name>
+          <surname>Anane</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Takuto</given_name>
+          <surname>Asakura</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Erik</given_name>
+          <surname>Braun</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Jennifer</given_name>
+          <surname>Claudio</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Emily</given_name>
+          <surname>Ha</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>David</given_name>
+          <surname>Fuchs</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Federico</given_name>
+          <surname>Garc&#xed;a De Castro</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Shakthi</given_name>
+          <surname>Kannan</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Doug</given_name>
+          <surname>McKenna</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Frank</given_name>
+          <surname>Mittelbach</surname>
+          <ORCID>https://orcid.org/0000-0001-6318-1230</ORCID>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Ross</given_name>
+          <surname>Moore</surname>
+          <ORCID>https://orcid.org/0000-0001-7096-0785</ORCID>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Shreevatsa</given_name>
+          <surname>R</surname>
+        </person_name>
+        <person_name sequence="additional" contributor_role="author">
+          <given_name>Yusuke</given_name>
+          <surname>Terada</surname>
+        </person_name>
+      </contributors>
+      <publication_date media_type="print">
+        <year>2019</year>
+      </publication_date>
+      <pages>
+        <first_page>201</first_page>
+        <last_page>203</last_page>
+      </pages>
+      <doi_data>
+        <doi>10.47397/tb/40-2/tb125abstracts</doi>
+        <timestamp>20261114225703</timestamp>
+        <resource>https://tug.org/TUGboat/tb40-2/tb125abstracts.html</resource>
+      </doi_data>
+    </journal_article>
+  </journal></body>
+</doi_batch>

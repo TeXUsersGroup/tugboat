@@ -1,0 +1,63 @@
+\begin{thebibliography}{10}
+
+\bibitem{DG:zlib}
+P.~Deutsch and J.-L. Gailly.
+\newblock Zlib compressed data format specification version 3.3.
+\newblock Technical report, RFC Editor, 1996.
+\newblock \newline \url{tools.ietf.org/html/rfc1950}
+
+\bibitem{ECG:epub}
+{EPUB 3 Community Group}.
+\newblock epub~3.
+\newblock \newline \url{w3.org/publishing/groups/epub3-cg}
+
+\bibitem{DF:tb3}
+D.~Fuchs.
+\newblock The format of {\TeX}'s {DVI} files.
+\newblock {\em {\TUB}} 3(2):14--19, Oct. 1982.
+\newblock \newline \url{tug.org/TUGboat/tb03-2/tb06software.pdf}
+
+\bibitem{HH:beyond}
+H.~Hagen.
+\newblock Beyond the bounds of paper and within the bounds of screens; the
+  perfect match of {\TeX} and {Acrobat}.
+\newblock In~{\em Proceedings of the Ninth European {\TeX} Conference}, vol.
+  15a of {\em MAPS}, pp.~181--196. Elsevier Science, Sept. 1995.
+\newblock \url{ntg.nl/maps/15a/09.pdf}
+
+\bibitem{Knuth:lp}
+D.~E. Knuth.
+\newblock {\em Literate Programming}.
+\newblock CSLI Lecture Notes Number 27. Center for the Study of Language and
+  Information, Stanford, CA, 1992.
+
+\bibitem{Knuth:cweb}
+D.~E. Knuth and S.~Levy.
+\newblock {\em {The CWEB System of Structured Documentation}}.
+\newblock Addison Wesley, 1994.
+\newblock \url{ctan.org/pkg/cweb}
+
+\bibitem{TR:dvips}
+T.~Rokicki.
+\newblock {\em Dvips: A DVI-to-PostScript translator}.
+\newblock \url{tug.org/dvips}
+
+\bibitem{MR:tug37}
+M.~Ruckert.
+\newblock Computer {M}odern {R}oman fonts for ebooks.
+\newblock {\em {\TUB}} 37(3):277--280, 2017.
+\newblock \url{tug.org/TUGboat/tb37-3/tb117ruckert.pdf}
+
+\bibitem{MR:tug39}
+M.~Ruckert.
+\newblock {HINT}: {R}eflowing {\TeX} output.
+\newblock {\em {\TUB}} 39(3):217--223, 2019.
+\newblock \url{tug.org/TUGboat/tb39-3/tb123ruckert-hint.pdf}
+
+\bibitem{MR:format}
+M.~Ruckert.
+\newblock {\em HINT: The File Format}.
+\newblock Aug. 2019.
+\newblock ISBN 978-1079481594.
+
+\end{thebibliography}

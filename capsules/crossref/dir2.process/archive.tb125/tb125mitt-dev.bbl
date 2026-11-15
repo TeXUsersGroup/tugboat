@@ -1,0 +1,32 @@
+\bibitem{Mittelbach:TB18-4-309}
+Frank Mittelbach.
+\newblock {A regression test suite for {\LaTeXe}}.
+\newblock {\em TUGboat}, 18(4):309--311, 1997.
+\newblock {\url{tug.org/TUGboat/tb18-4/tb57mitt.pdf}}
+
+\bibitem{Mittelbach:TB13-4-510}
+Frank Mittelbach, Chris Rowley, and Michael Downes.
+\newblock {Volunteer work for the {\LaTeX}3 project}.
+\newblock {\em TUGboat}, 13(4):510--515, 1992.
+\newblock {\url{tug.org/TUGboat/tb13-4/tb37mitt-l3.pdf}}
+
+\bibitem{Mittelbach:TB35-3-287}
+Frank Mittelbach, Will Robertson, and {\LaTeX3}~team.
+\newblock {\texttt{l3build}}\dash {A modern Lua test suite for {\TeX}
+  programming}.
+\newblock {\em TUGboat}, 35(3):287--293, 2014.
+\newblock {\url{tug.org/TUGboat/tb35-3/tb111mitt-l3build.pdf}}
+
+\bibitem{Wright:TB36-3-234}
+Joseph Wright.
+\newblock Automating {\LaTeX}(3) testing.
+\newblock {\em TUGboat}, 36(3):234--236, 2015.
+\newblock {\url{tug.org/TUGboat/tb36-3/tb114wright.pdf}}
+
+\bibitem{l3bugs}
+  \LaTeX{} Project Team.
+  \newblock Bugs in \LaTeX{} software.
+  \newblock
+  \url{www.latex-project.org/bugs}
+
+\end{thebibliography}

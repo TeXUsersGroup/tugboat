@@ -1,0 +1,10 @@
+Languages are constantly evolving, and so are their hyphenation rules and needs.
+The effectiveness and utility of \TeX's hyphenation have been proven by its usage in almost all typesetting systems in use today.
+The current Czech hyphenation patterns were generated in 1995, and no hyphenated word database was freely available.
+
+We have developed a new Czech word database and have used the patgen program to generate new effective Czech hyphenation patterns efficiently and evaluated their generalization qualities.
+We have achieved full coverage on the training dataset of 3,000,000 words and developed a validation procedure of new patterns for Czech based on the testing database of 105,000 words approved by the Czech Academy of Science linguists.
+
+Our pattern generation case study exemplifies a practical solution to the widespread dictionary problem.
+The study has proved the versatility, effectiveness, and extensibility of Liang's approach to hyphenation developed for \TeX. 
+The unreasonable effectiveness of pattern technology has led to applications that are and will be used, even more widely now, nearly 40~years after its inception.

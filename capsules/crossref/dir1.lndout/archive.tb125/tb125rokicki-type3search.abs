@@ -1,0 +1,6 @@
+\PDF\ files generated from the output of dvips\ using
+bitmapped fonts have not been properly searchable,
+indexable, or accessible.  While a full solution is challenging,
+only minimal dvips\ changes are required to support
+English language text, changes that are at least two decades overdue.
+I will describe these changes and discuss their limitations.

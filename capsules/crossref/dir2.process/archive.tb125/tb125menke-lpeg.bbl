@@ -1,0 +1,19 @@
+\bibitem{1} R. Ierusalimschy,
+A text pattern-matching tool based on Parsing Expression Grammars.
+{\it Software: Practice and Experience} {\bf 39}(3),
+221--258 (2009).
+
+\bibitem{2} T. Hoekwater, Lua\TeX. {\it TUGboat} {\bf 28}(3),
+312--313 (2007).
+\\{\tt tug.org/TUGboat/tb28-3/tb90hoekwater-luatex.pdf}
+
+\bibitem{3} M. Caisse, Using Spirit X3 to Write Parsers.
+CppCon~2015.
+\\{\tt youtube.com/watch?v=xSBWklPLRv}
+
+\bibitem{4} Wikipedia, Parsing expression grammar.
+\\{\tt wikipedia.org/wiki/Parsing_expression_grammar}
+
+\bibitem{5} D. Crockford, JSON Example.
+\\{\tt json.org/example.html}
+\end{thebibliography}

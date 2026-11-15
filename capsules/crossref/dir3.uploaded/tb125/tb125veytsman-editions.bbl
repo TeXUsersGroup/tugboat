@@ -1,0 +1,34 @@
+\begin{thebibliography}{1}
+
+\bibitem{Hoenig2003_Makor2}
+A.~Hoenig.
+\newblock {\em Makor. A System for Typesetting Biblical and Modern {H}ebrew
+  with {O}mega and \TeX}, 2003.
+\newblock \url{https://ctan.org/pkg/makor2}
+
+\bibitem{EDMAC}
+J.~Lavagnino and D.~Wujastyk.
+\newblock {\em Critical Edition Typesetting: The \acro{EDMAC} format for plain
+  \TeX}.
+\newblock \TeX\ Users Group and UK \TeX\ Users Group, San Francisco;
+  Birmingham, 1996.
+\newblock \url{https://ctan.org/pkg/edmac} and \gobble.
+\newblock \url{https://tug.org/edmac}
+\newpage
+\bibitem{reledmac}
+M.~Rouquette.
+\newblock {\em {reledmac}. Typeset scholarly editions with \LaTeX}, 2019.
+\newblock \newline \url{https://ctan.org/pkg/reledmac}
+
+\bibitem{Veytsman2019_Commedit}
+B.~Veytsman.
+\newblock {\em Creating commented editions}, 2019.
+\newblock \url{https://ctan.org/pkg/commedit}
+
+\bibitem{ledmac}
+P.~Wilson, H.~Press, and M.~Rouquette.
+\newblock {\em {ledmac}. A presumptuous attempt to port \acro{EDMAC},
+  \acro{TABMAC} and \acro{EDSTANZA} to \LaTeX}, 2016.
+\newblock \url{https://ctan.org/pkg/ledmac}
+
+\end{thebibliography}

@@ -1,0 +1,47 @@
+\begin{thebibliography}{1}
+
+\bibitem{bib:kay.69.phd}
+A.~C. Kay.
+\newblock {\em The Reactive Engine}.
+\newblock PhD thesis, University of Utah, 1969.
+
+\bibitem{bib:mccarthy.60.cacm}
+J.~McCarthy.
+\newblock Recursive functions of symbolic expressions and their computation by
+  machine, part {I}.
+\newblock {\em Communications of the {ACM}} 3(4):184--195, Apr. 1960.
+\newblock \newline\href {http://dx.doi.org/10.1145/367177.367199}
+  {\path{doi:10.1145/367177.367199}}
+
+\bibitem{bib:mcilroy.60.cacm}
+M.~D. McIlroy.
+\newblock Macro instruction extensions of compiler languages.
+\newblock {\em Communications of the~{ACM}} 3:214--220, Apr. 1960.
+\newblock \newline\href {http://dx.doi.org/10.1145/367177.367223}
+  {\path{doi:10.1145/367177.367223}}
+
+\bibitem{bib:tarver.07.blog}
+M.~Tarver.
+\newblock The bipolar {Lisp} programmer.
+\newblock \url{marktarver.com/bipolar.html}, 2007.
+
+\bibitem{bib:ansi.94.cl}
+ANSI.
+\newblock American {N}ational {S}tandard: {P}rogramming {L}anguage {\Dash}
+  {Common Lisp}.
+\newblock ANSI X3.226:1994 (R1999), 1994.
+
+\bibitem{bib:verna.19.els}
+D.~Verna.
+\newblock Parallelizing {Q}uickref.
+\newblock In~{\em 12th~European~Lisp Symposium}, pp.~89--96, Genova, Italy,
+  Apr. 2019.
+\newblock \newline\href {http://dx.doi.org/10.5281/zenodo.2632534}
+  {\path{doi:10.5281/zenodo.2632534}}
+
+\bibitem{bib:winestock.11.blog}
+R.~Winestock.
+\newblock The {Lisp} curse, Apr. 2011.
+\newblock \url{winestockwebdesign.com/Essays/Lisp_Curse.html}
+
+\end{thebibliography}

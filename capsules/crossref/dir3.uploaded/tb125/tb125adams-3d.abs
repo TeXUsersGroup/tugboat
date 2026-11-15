@@ -1,0 +1,9 @@
+Design into 3D is a system for modeling parametric projects for manufacture
+using \acro{CNC} machines. It documents using Open\acro{SCAD} to
+allow a user to instantly see a 3D rendering of the result of adjusting
+a parameter in the Customizer interface, saving parameters as \JSON\ files
+which are then read into a Lua\LaTeX\ file which creates a \PDF\ as
+a cut list\slash setup sheet\slash assembly instructions and uses
+MetaPost to create \SVG\ files which may be loaded into a \acro{CAM}
+tool. A further possibility is using a tool such as \acro{TPL} (Tool
+Path Language) to make files which are ready to cut.

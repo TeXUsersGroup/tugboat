@@ -1,0 +1,13 @@
+The \HINT\ file format is intended as a replacement
+of the \DVI\ or \PDF\ file format for on-screen reading of \TeX\ output.
+Its design should therefore meet the following requirements:
+reflow of text to fill a window of variable size,
+convenient navigating of text with links
+in addition to paging forward and backward,
+efficient rendering on mobile devices,
+simple generation from existing \TeX\ input files,
+and an exact match of traditional \TeX\ output
+if the window size matches \TeX's paper size.
+
+This paper describes the key elements of
+the design and motivates the design decisions.

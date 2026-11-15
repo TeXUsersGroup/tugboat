@@ -1,0 +1,14 @@
+ This is a brief summary of a talk given by the first author at the
+ \tug'19 conference,
+ together with some references for further reading and viewing.
+
+Accessibility requirements for \PDF{} documents are described in two 
+standards: \PDF{}/UA and the more recent \PDF{}2.0.  One of the major 
+features they mandate is that the \PDF{} must be properly tagged, so 
+we are investigating how \LaTeX{} can be adapted to easily produce 
+tagged \PDF{}.
+
+The main purpose of this talk was to introduce the 
+experimental package \textsl{tagpdf} by the second author.
+But we start with a quick “bullet points introduction” to the structure of a
+\PDF{} file and what is meant by “Tagged \PDF{}”.

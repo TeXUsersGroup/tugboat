@@ -1,0 +1,13 @@
+  Although it is possible to read external files in \TeX, extracting
+  information from them is rather difficult. Ad hoc solutions tend to
+  use nested if statements or regular expressions provided by several
+  macro packages. However, these quick hacks don't scale well and
+  quickly become unmaintainable.
+
+  \LUATEX\ comes to the rescue with its embedded \acro{LPEG} library
+  for Lua. \acro{LPEG} provides a domain-specific embedded language
+  that allows for writing grammars in a natural way. In
+  this article I give a quick introduction to Parsing Expression
+  Grammars (\acro{PEG}) and then show how to write simple parsers in
+  Lua with \acro{LPEG}. Finally we will build a \acro{JSON} parser to
+  demonstrate how easy it is to even parse complex data formats.

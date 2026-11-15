@@ -1,0 +1,19 @@
+  Quickref\ is a global documentation project for the Common Lisp\ ecosystem. It creates
+  reference manuals automatically by introspecting libraries and generating
+  corresponding documentation in Texinfo\ format. The Texinfo\ files may
+  subsequently be converted into \PDF\ or \HTML. Quickref\ is non-intrusive:
+  software developers do not have anything to do to get their libraries
+  documented by the system.
+
+  Quickref\ may be used to create a local website documenting your current,
+  partial, working environment, but it is also able to document the whole Common Lisp\
+  ecosystem at once. The result is a website containing almost two thousand
+  reference manuals. Quickref\ provides a Docker image for an easy recreation of
+  this website, but a public version is also available and actively
+  maintained.
+
+  Quickref\ constitutes an enormous and successful stress test for Texinfo. In this
+  paper, we give an overview of the design and architecture of the system,
+  describe the challenges and difficulties in generating valid Texinfo\ code
+  automatically, and put some emphasis on the currently remaining problems and
+  deficiencies.

@@ -1,0 +1,100 @@
+\begin{thebibliography}{10}
+
+\bibitem{bib:ccd}
+A.~Bossard.
+\newblock {\em Chinese Characters, Deciphered}.
+\newblock Kanagawa University Press, Yokohama, Japan, 2018.
+
+\bibitem{bib:kameindex}
+A.~Bossard and K.~Kaneko.
+\newblock Experimenting with makeindex and {Unicode}, and deriving kameindex.
+\newblock In~{\em Proceedings of the GuIT meeting 2018, Ars\TeX{}nica 26},
+  pp.~55--61, Rome, Italy, October 2018.
+\newblock
+  \url{https://www.guitex.org/home/images/ArsTeXnica/AT026/kameindex.pdf}
+
+\bibitem{bib:everyhook}
+S.~Checkoway.
+\newblock {\em The everyhook package}, November 2014.
+\newblock Package documentation. \url{https://ctan.org/pkg/everyhook} (last
+  accessed August 2019).
+
+\bibitem{bib:noto}
+Google.
+\newblock Google {Noto} fonts, 2017.
+\newblock \url{https://google.com/get/noto} (last accessed August 2019).
+
+\bibitem{bib:tex}
+D.~E. Knuth.
+\newblock {\em The {\TeX}book}.
+\newblock Addison-Wesley, Boston, MA, USA, 1986.
+
+\bibitem{bib:cjk}
+W.~Lemberg.
+\newblock {\em CJK}, April 2015.
+\newblock Package documentation. \url{https://ctan.org/pkg/cjk} (last accessed
+  August 2019).
+
+\bibitem{bib:xecjk}
+L.~Liu and Q.~Lee.
+\newblock {\em xeCJK {\fntcjkserif 宏包} (in Chinese)}, April 2018.
+\newblock Package documentation. \url{https://ctan.org/pkg/xecjk} (last
+  accessed August 2019).
+
+\bibitem{bib:ptex}
+K.~Nakano, {Japanese {\TeX} Development Community}, and {TTK}.
+\newblock {\em About {p\LaTeXe}}, September 2018.
+\newblock Package documentation. \url{https://ctan.org/pkg/platex} (last
+  accessed August 2019).
+
+\bibitem{bib:uplatex}
+K.~Nakano, {Japanese {\TeX} Development Community}, and {TTK}.
+\newblock {\em About {up\LaTeXe}}, April 2018.
+\newblock Package documentation. \url{https://ctan.org/pkg/uplatex} (last
+  accessed August 2019).
+
+\bibitem{bib:ptex2}
+H.~Okumura.
+\newblock p{\TeX} and {J}apanese typesetting.
+\newblock {\em The Asian Journal of \TeX} 2(1):43--51, April 2008.
+\newblock \url{http://ajt.ktug.org/2008/0201okumura.pdf}
+\newpage
+\bibitem{bib:omega}
+J.~Plaice and Y.~Haralambous.
+\newblock The latest developments in {$\Omega$}.
+\newblock {\em TUGboat} 17(2):181--183, June 1996.
+\newblock \url{https://tug.org/TUGboat/tb17-2/tb51plaice.pdf}
+
+\bibitem{bib:fontspec}
+W.~Robertson.
+\newblock {\em The fontspec package{\Dash}Font selection for {\XeLaTeX} and
+  {\LuaLaTeX}}, July 2018.
+\newblock Package documentation. \\\url{https://ctan.org/pkg/fontspec} (last
+  accessed August 2019).
+
+\bibitem{bib:luatex-ja}
+{The {\LuaTeX}-ja project team}.
+\newblock {\em The {\LuaTeX}-ja package}, November 2018.
+\newblock Package documentation. \url{https://ctan.org/pkg/luatexja} (last
+  accessed August 2019).
+
+\bibitem{bib:hlatex}
+K.~Un.
+\newblock {\em {\fntcjkserif 한글라텍 길참이} (in Korean)}, April 2005.
+\newblock Package documentation. \url{https://ctan.org/pkg/hlatex} (last
+  accessed August 2019).
+
+\bibitem{bib:seqsplit}
+B.~Veytsman.
+\newblock {\em Splitting Long Sequences of Letters (DNA, RNA, Proteins, etc.)},
+  August 2006.
+\newblock Package documentation. \url{https://ctan.org/pkg/seqsplit} (last
+  accessed August 2019).
+
+\bibitem{bib:bx­cjk­jatype}
+T.~Yato.
+\newblock {\em {BXcjkjatype} package}, August 2013.
+\newblock Package documentation. \url{https://ctan.org/pkg/bxcjkjatype} (last
+  accessed August 2019).
+
+\end{thebibliography}

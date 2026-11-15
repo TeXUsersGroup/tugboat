@@ -1,0 +1,12 @@
+From a typesetting point of view, the Chinese and Japanese writing
+systems are peculiar in that the characters are concatenated without
+using spaces to separate them or the meaning units (i.e., ``words'' in
+our occidental linguistic terminology) they form. And this is also true
+for sentences: although they are usually separated with punctuation
+marks such as periods, spaces remain unused. Conventional typesetting
+approaches, {\TeX} in our case, thus need to be revised in order to
+support the languages of the CJK{} group: Chinese, Japanese and, to a
+lesser extent, Korean. While more or less complete solutions to this
+issue can be found, in this article we give and pedagogically discuss a
+minimalistic implementation of CJK{} support with the Unicode-capable
+{\XeTeX} and {\LuaTeX} typesetting systems.

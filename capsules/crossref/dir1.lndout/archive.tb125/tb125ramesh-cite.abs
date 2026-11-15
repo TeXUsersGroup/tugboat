@@ -1,0 +1,10 @@
+A citation graph is an important part of modern scientometrics (the
+field of analyzing and measuring of scientific literature).
+To
+construct it, we need to disambiguate citations: determine which paper
+cites which paper.  While many publishers now deposit citation data in
+a machine readable format, some do not\Dash and there are millions of
+older papers where only textual citation strings are available.  Since
+manual conversion of these strings to parsed entries is not possible,
+we need to teach machines how to do this.
+

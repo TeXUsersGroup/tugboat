@@ -1,0 +1,246 @@
+\begin{thebibliography}{10}
+
+\bibitem{anzaroot2013new}
+S.~Anzaroot and A.~McCallum.
+\newblock A new dataset for fine-grained citation field extraction.
+\newblock In~{\em Proceedings of the 30th International Conference on Machine
+  Learning, Atlanta, Georgia, USA}, 2013.
+
+\bibitem{Bornmann2019_citation_concept_analysis}
+L.~Bornmann, K.~B. Wray, and R.~Haunschild.
+\newblock Citation concept analysis {(CCA)}---a new form of citation analysis
+  revealing the usefulness of concepts for other researchers illustrated by two
+  exemplary case studies including classic books by {T}homas {S}.~{K}uhn and
+  {K}arl {R}.~{P}opper.
+\newblock {\em arXiv e-prints} 1905.12410, May~\ignorespaces 2019.
+
+\bibitem{Castillo2007}
+C.~Castillo, D.~Donato, and A.~Gionis.
+\newblock Estimating number of citations using author reputation.
+\newblock In N.~Ziviani and R.~Baeza-Yates, eds., {\em String Processing and
+  Information Retrieval: 14th International Symposium, SPIRE 2007 Santiago,
+  Chile, October 29-31, 2007 Proceedings}, pp.~107--117. Springer Berlin
+  Heidelberg, Berlin, Heidelberg, 2007.
+\newblock \newline\href {http://dx.doi.org/10.1007/978-3-540-75530-2_10}
+  {\path{doi:10.1007/978-3-540-75530-2_10}}
+
+\bibitem{Chakraborty2014StratifiedApproach}
+T.~Chakraborty, S.~Kumar, et~al.
+\newblock Towards a stratified learning approach to predict future citation
+  counts.
+\newblock In~{\em Proceedings of the 14th ACM/IEEE-CS Joint Conference on
+  Digital Libraries}, JCDL '14, pp.~351--360, Piscataway, NJ, USA, 2014. IEEE
+  Press.
+\newblock \url{http://dl.acm.org/citation.cfm?id=2740769.2740830}
+
+\bibitem{Chen2012}
+C.~Chen.
+\newblock Predictive effects of structural variation on citation counts.
+\newblock {\em Journal of the American Society for Information Science and
+  Technology} 63(3):431--449, 2012.
+\newblock \newline\href {http://dx.doi.org/10.1002/asi.21694}
+  {\path{doi:10.1002/asi.21694}}
+
+\bibitem{Dietz2007}
+L.~Dietz, S.~Bickel, and T.~Scheffer.
+\newblock Unsupervised prediction of citation influences.
+\newblock In~{\em Proceedings of the 24th International Conference on Machine
+  Learning, Corvallis, OR}, 2007.
+\newblock
+  \url{https://icml.cc/imls/conferences/2007/proceedings/papers/257.pdf}
+
+\bibitem{Feldman2018_citation_count_preprints}
+S.~Feldman, K.~Lo, and W.~Ammar.
+\newblock Citation count analysis for papers with preprints.
+\newblock {\em ArXiv e-prints} 1805.05238, May 2018.
+
+\bibitem{FuAliferis2010}
+L.~D. Fu and C.~F. Aliferis.
+\newblock Using content-based and bibliometric features for machine learning
+  models to predict citation counts in the biomedical literature.
+\newblock {\em Scientometrics} 85(1):257--270, 2010.
+\newblock \newline\href {http://dx.doi.org/10.1007/s11192-010-0160-5}
+  {\path{doi:10.1007/s11192-010-0160-5}}
+
+\bibitem{Herrmannova2018_citation_distance_publication_impact}
+D.~Herrmannova, P.~Knoth, and R.~Patton.
+\newblock Analyzing citation-distance networks for evaluating publication
+  impact.
+\newblock In~{\em 11th edition of the Language Resources and Evaluation
+  Conference}, May 2018.
+\newblock \newline \url{http://oro.open.ac.uk/53638/}
+
+\bibitem{Herrmannova2018_seminal_pubs}
+D.~Herrmannova, R.~M. Patton, et~al.
+\newblock Do citations and readership identify seminal publications?
+\newblock {\em CoRR} abs/1802.04853, 2018.
+\newblock \url{http://arxiv.org/abs/1802.04853}
+
+\bibitem{Hutchins2016_relative_citation_ratio}
+B.~I. Hutchins, X.~Yuan, et~al.
+\newblock Relative citation ratio {(RCR)}: A new metric that uses citation
+  rates to measure influence at the article level.
+\newblock {\em PLOS Biology} 14(9):1--25, 09 2016.
+\newblock \newline\href {http://dx.doi.org/10.1371/journal.pbio.1002541}
+  {\path{doi:10.1371/journal.pbio.1002541}}
+
+\bibitem{Iacopini2018_dynamics_innovation}
+I.~Iacopini, S.~Milojevi\'{c}, and V.~Latora.
+\newblock Network dynamics of innovation processes.
+\newblock {\em Phys. Rev. Lett.} 120:048301, Jan 2018.
+\newblock \newline\href {http://dx.doi.org/10.1103/PhysRevLett.120.048301}
+  {\path{doi:10.1103/PhysRevLett.120.048301}}
+
+\bibitem{Jia2016}
+Y.~Jia and L.~Qu.
+\newblock Improve the performance of link prediction methods in citation
+  network by using h-index.
+\newblock In~{\em 2016 International Conference on Cyber-Enabled Distributed
+  Computing and Knowledge Discovery (CyberC)}, pp.~220--223, Oct 2016.
+\newblock \newline\href {http://dx.doi.org/10.1109/CyberC.2016.51}
+  {\path{doi:10.1109/CyberC.2016.51}}
+
+\bibitem{Kaya2017}
+M.~Kaya, M.~Jawed, et~al.
+\newblock Unsupervised link prediction based on time frames in
+  weighted--directed citation networks.
+\newblock In R.~Missaoui, T.~Abdessalem, and M.~Latapy, eds., {\em Trends in
+  Social Network Analysis: Information Propagation, User Behavior Modeling,
+  Forecasting, and Vulnerability Assessment}, pp.~189--205. Springer
+  International Publishing, Cham, 2017.
+\newblock \newline\href {http://dx.doi.org/10.1007/978-3-319-53420-6_8}
+  {\path{doi:10.1007/978-3-319-53420-6_8}}
+
+\bibitem{Klimek2016}
+P.~Klimek, A.~S. Jovanovic, et~al.
+\newblock Successful~fish go with the flow: citation impact prediction based on
+  centrality measures for term--document networks.
+\newblock {\em Scientometrics} 107(3):1265--1282, Jun 2016.
+\newblock \newline\href {http://dx.doi.org/10.1007/s11192-016-1926-1}
+  {\path{doi:10.1007/s11192-016-1926-1}}
+
+\bibitem{Lokker2008}
+C.~Lokker, K.~A. McKibbon, et~al.
+\newblock Prediction~of citation counts for clinical articles at two years
+  using data available within three weeks of publication: retrospective cohort
+  study.
+\newblock {\em BMJ~\ignorespaces} 336(7645):655--657, 2008.
+\newblock \newline\href {http://dx.doi.org/10.1136/bmj.39482.526713.BE}
+  {\path{doi:10.1136/bmj.39482.526713.BE}}
+
+\bibitem{McKeown2016_predicting_impact_concepts}
+K.~McKeown, I.~Daume, Hal, et~al.
+\newblock Predicting~the impact of scientific concepts using full‐text
+  features.
+\newblock {\em Journal of the Association for Information Science and
+  Technology} 67(11):2684--2696, 2016.
+\newblock \newline\href {http://dx.doi.org/10.1002/asi.23612}
+  {\path{doi:10.1002/asi.23612}}
+
+\bibitem{Park2018}
+H.-M. Park, Y.~B. Sinshaw, and K.-A. Sohn.
+\newblock Temporal citation network-based feature extraction for cited count
+  prediction.
+\newblock In K.~J. Kim and N.~Joukov, eds., {\em Mobile and Wireless
+  Technologies 2017: ICMWT 2017}, pp.~380--388. Springer Singapore, Singapore,
+  2018.
+\newblock \newline\href {http://dx.doi.org/10.1007/978-981-10-5281-1_41}
+  {\path{doi:10.1007/978-981-10-5281-1_41}}
+
+\bibitem{Peoples17TwitterPredictsCitations}
+B.~K. Peoples, S.~R. Midway, et~al.
+\newblock Twitter~predicts citation rates of ecological research.
+\newblock {\em PLoS ONE} 11:e0166570, 2017.
+\newblock \newline\href {http://dx.doi.org/0.1371/journal.pone.0166570}
+  {\path{doi:0.1371/journal.pone.0166570}}
+
+\bibitem{Peters2018elmo}
+M.~E. Peters, M.~Neumann, et~al.
+\newblock Deep~contextualized word representations.
+\newblock In~{\em NAACL}, 2018.
+
+\bibitem{Pobiedina2016}
+N.~Pobiedina and R.~Ichise.
+\newblock Citation count prediction as a link prediction problem.
+\newblock {\em Applied Intelligence} 44(2):252--268, Mar 2016.
+\newblock \newline\href {http://dx.doi.org/10.1007/s10489-015-0657-y}
+  {\path{doi:10.1007/s10489-015-0657-y}}
+
+\bibitem{seymore1999learning}
+K.~Seymore, A.~McCallum, and R.~Rosenfeld.
+\newblock Learning hidden {M}arkov model structure for information extraction.
+\newblock In~{\em AAAI-99 workshop on machine learning for information
+  extraction}, pp.~37--42, 1999.
+
+\bibitem{ShiLescovecMcfarland2010_citing_high_impact}
+X.~Shi, J.~Leskovec, and D.~A. McFarland.
+\newblock Citing for high impact.
+\newblock {\em CoRR} abs/1004.3351, 2010.
+\newblock \url{http://arxiv.org/abs/1004.3351}
+
+\bibitem{Small2019_Article_CitationsAndCertaintyANewInter}
+H.~Small, K.~W. Boyack, and R.~Klavans.
+\newblock Citations and certainty: a new interpretation of citation counts.
+\newblock {\em Scientometrics} 118(3):1079--1092, Mar 2019.
+\newblock \newline\href {http://dx.doi.org/10.1007/s11192-019-03016-z}
+  {\path{doi:10.1007/s11192-019-03016-z}}
+
+\bibitem{Tahamtan2016CitationsReview}
+I.~Tahamtan, A.~Safipour~Afshar, and K.~Ahamdzadeh.
+\newblock Factors affecting number of citations: A comprehensive review of the
+  literature.
+\newblock {\em Scientometrics} 107(3):1195--1225, June 2016.
+\newblock \newline\href {http://dx.doi.org/10.1007/s11192-016-1889-2}
+  {\path{doi:10.1007/s11192-016-1889-2}}
+
+\bibitem{Tahamtan2016}
+I.~Tahamtan, A.~Safipour~Afshar, and K.~Ahamdzadeh.
+\newblock Factors affecting number of citations: a comprehensive review of the
+  literature.
+\newblock {\em Scientometrics} 107(3):1195--1225, Jun 2016.
+\newblock \newline\href {http://dx.doi.org/10.1007/s11192-016-1889-2}
+  {\path{doi:10.1007/s11192-016-1889-2}}
+
+\bibitem{Consistency2019}
+B.~Veytsman.
+\newblock How to measure the consistency of the tagging of scientific papers?
+\newblock In~{\em 2019 ACM/IEEE Joint Conference on Digital Libraries (JCDL)},
+  pp.~372--373, 2019.
+\newblock \newline\href {http://dx.doi.org/10.1109/JCDL.2019.00076}
+  {\path{doi:10.1109/JCDL.2019.00076}}
+
+\bibitem{Weihs2017predictCitations}
+L.~Weihs and O.~Etzioni.
+\newblock Learning to predict citation-based impact measures.
+\newblock In~{\em 2017 ACM/IEEE Joint Conference on Digital Libraries (JCDL)},
+  pp.~1--10, June 2017.
+\newblock \newline\href {http://dx.doi.org/10.1109/JCDL.2017.7991559}
+  {\path{doi:10.1109/JCDL.2017.7991559}}
+
+\bibitem{Yan2012Giants}
+R.~Yan, C.~Huang, et~al.
+\newblock To better stand on the shoulder of giants.
+\newblock In~{\em Proceedings of the 12th ACM/IEEE-CS Joint Conference on
+  Digital Libraries}, JCDL '12, pp.~51--60, New York, NY, USA, 2012. ACM.
+\newblock \newline\href {http://dx.doi.org/10.1145/2232817.2232831}
+  {\path{doi:10.1145/2232817.2232831}}
+
+\bibitem{Yan2011citation}
+R.~Yan, J.~Tang, et~al.
+\newblock Citation count prediction: learning to estimate future citations for
+  literature.
+\newblock In~{\em Proceedings of the 20th ACM international conference on
+  Information and knowledge management}, CIKM '11, pp.~1247--1252, New York,
+  NY, USA, 2011. ACM.
+\newblock \newline\href {http://dx.doi.org/10.1145/2063576.2063757}
+  {\path{doi:10.1145/2063576.2063757}}
+
+\bibitem{Yu2014CitationPredictionRegression}
+T.~Yu, G.~Yu, et~al.
+\newblock Citation impact prediction for scientific papers using stepwise
+  regression analysis.
+\newblock {\em Scientometrics} 101(2):1233--1252, Nov. 2014.
+\newblock \newline\href {http://dx.doi.org/10.1007/s11192-014-1279-6}
+  {\path{doi:10.1007/s11192-014-1279-6}}
+
+\end{thebibliography}

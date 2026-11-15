@@ -1,0 +1,85 @@
+\bibitem{1}
+S. Song.
+Development of Korea Typography Industry Appreciating Korean Language, 2013.
+\\\url{www.korean.go.kr/nkview/nklife/2013_3/23_0304.pdf}
+
+\bibitem{2}
+J.~Choi, S.~Kim, H.~Lee, G.~Jeong.
+MFCONFIG: A \MF{} plug-in module for FreeType rasterizer.
+\\\TUB\ 37(2):163--170 (TUG 2016 conference proceedings).
+\\\url{tug.org/TUGboat/tb37-2/tb116choi.pdf}
+
+\bibitem{3}
+Y. Park. 
+Current status of {H}angul in the 21st century [in {K}orean].
+{\em The <T>Type and Typography magazine},
+vol.~7, August 2012.
+\url{www.typographyseoul.com/news/detail/222}
+
+\bibitem{4}
+D. E. Knuth.
+\emph{Computers and Typesetting,}
+Volume C: \textit{The \MF{}book}. Addison-Wesley, 1996.
+
+\bibitem{5}
+Web2c: A \TeX\ implementation.
+\\\url{tug.org/web2c}
+
+\bibitem{6}
+H.~Kakugawa, M.~Nishikimi, N.~Takahashi, S.~Tomura, K.~Handa.
+A general purpose font module for multilingual application programs.
+{\em Software: Practice and Experience}, 31(15):1487--1508, 2001.
+\\\url{dx.doi.org/10.1002/spe.424}
+
+\bibitem{7}
+D. Turner, R. Wilhelm, W. Lemberg.
+\emph{FreeType}.
+\url{freetype.org}
+
+\bibitem{8}
+R. Menzner.
+\emph{A Library for Generating Character Bitmaps from Adobe Type 1 Fonts}.
+\url{inferiorproducts.com/docs/userdocs/t1lib/t1lib_doc.pdf}
+
+\bibitem{9}
+K. Packard.
+The {X}ft font library: {A}rchitecture and users guide.
+{\em Proceedings of the 5th annual conference on Linux Showcase
+{\sl\&}} Conference, 2001.
+\url{keithp.com/~keithp/talks/xtc2001/paper}
+
+\bibitem{10}
+J.~Choi, A.~Hassan, G.~Jeong.
+\\FreeType_MF_Module: A module for using \MF\ directly inside the FreeType rasterizer.
+\TUB\ 39(2):163--170 (TUG 2018 conference proceedings).
+\url{tug.org/TUGboat/tb39-2/tb122choi-freetype.pdf}
+
+\bibitem{11}
+H.-W. Nienhuys.
+\texttt{mftrace}\Dash Scalable fonts for \MF{}. 2017.
+\url{lilypond.org/mftrace}
+
+\bibitem{12}
+M. Weber.
+Autotrace{\Dash} converts bitmap to vector graphics. 2002.
+\\\url{autotrace.sourceforge.net}
+
+\bibitem{13}
+K. P\'{\i}\v{s}ka.
+Creating Type~1 fonts from \MF{} sources:
+Comparison of tools, techniques and results.
+Preprints for the 2004 Annual TUG Meeting.
+\url{tug.org/TUGboat/tb25-0/piska.pdf}
+
+\bibitem{14}
+J.~R. Laguna.
+H\'ong-z\`\i: A {C}hinese {\MF}.
+{\em \TUB} 26(2):125--128, 2005.
+\\\url{tug.org/TUGboat/tb26-2/laguna.pdf}
+
+\bibitem{15}
+J. Choi, G. Gwon, M.~Son, G.~Jeong.
+Next Generation CJK Font Technology Using the Metafont.
+LetterSeed 15:87--101, Korea Society of Typography, 2017.
+
+\end{thebibliography}

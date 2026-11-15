@@ -1,0 +1,7 @@
+MacTeX\ installs everything needed to run \TeX\ on a Macintosh,
+including \TeX\ Live, Ghostscript, and four \GUI\ applications: TeXShop,
+\TeX\ Live Utility, \LaTeX{}iT, and BibDesk. In \macOS\ 10.15, Catalina,
+Apple requires that install packages be notarized, and all command line
+and \GUI\ applications in such a package must be signed and adopt a
+hardened runtime. I'll explain what this means and how it was
+accomplished.

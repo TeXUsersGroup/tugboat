@@ -1,0 +1,8 @@
+Real-time translation of languages using camera inputs occasionally
+results in awkward failures. As a proposed method of assisting such
+tools for Korean (Hangul) to English translation, an optical assessment
+method was proposed to help translation algorithms first assess whether
+the Korean text has been written as English syllables in Korean or in
+true Korean vocabulary before producing translated phrases. Although the
+current approach was not viable, future work will implement feedback
+regarding methods to meaningfully handle the optical data received.

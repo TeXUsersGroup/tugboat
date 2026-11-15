@@ -1,0 +1,97 @@
+<!--#include virtual="/header.html"-->
+<title>Parsing complex data formats in LuaTeX with LPEG
+       - TUGboat 40:2 (2019) - TeX Users Group</title>
+<meta name="citation_author" content="Menke, Henri">
+<meta name="citation_firstpage" content="129">
+<meta name="citation_issn" content="0896-3207">
+<meta name="citation_issue" content="2">
+<meta name="citation_journal_title" content="TUGboat">
+<meta name="citation_lastpage" content="135">
+<meta name="citation_pdf_url" content="/TUGboat/tb40-2/tb125menke-lpeg.pdf">
+<meta name="citation_publication_date" content="2019">
+<meta name="citation_title" content="Parsing complex data formats in LuaTeX with LPEG">
+<meta name="citation_volume" content="40">
+
+</head><body>
+
+<a href="/TUGboat/"><img
+         align=right width=139 height=150 src="/TUGboat/press72-small.jpg"></a>
+
+<h1><a href="/TUGboat/tb40-2/">TUGboat 40:2</a> (2019)<br>
+<small>The Communications of the <a href="/">TeX Users Group</a></small></h1>
+
+<p><b>Title</b>: Parsing complex data formats in LuaTeX with LPEG</p>
+
+<p><b>Summary</b>:
+introduction to parsing expression grammars in LuaTeX, with example of parsing JSON.</p>
+
+<p><b>Full text of article</b>: <a href="/TUGboat/tb40-2/tb125menke-lpeg.pdf">publicly available now</a>.</p>
+
+<p><b>Author</b>:
+<a href="/TUGboat/Contents/listauthor.html#Menke,Henri">Henri Menke</a></p>
+
+<p><b>Publication</b>: <a href="/TUGboat/tb40-2/">TUGboat
+volume 40, number 2</a> (2019),
+pages&nbsp;129&ndash;135</p>
+
+<p><b>DOI</b> (this page):
+<a href="https://doi.org/10.47397/tb/40-2/tb125menke-lpeg">10.47397/tb/40-2/tb125menke-lpeg</a>
+<br><small>(<a href="https://doi.org/10.47397/tb/40-2/tb125ziegenhagen-python">previous doi</a>
+- <a href="https://doi.org/10.47397/tb/40-2/tb125adams-3d">next doi</a>)</small></p>
+
+<p><b>Category</b>:
+<a href="/TUGboat/Contents/listkeyword.html#CatTAGSoftwareTools">Software&#xa0;&&#xa0;Tools</a></p>
+      
+<p><b>Difficulty</b>: Advanced</p>
+
+<p><b>Abstract</b>:
+Although it is possible to read external files in TeX, extracting
+information from them is rather difficult. Ad hoc solutions tend to
+use nested if statements or regular expressions provided by several
+macro packages. However, these quick hacks don&#x2019;t scale well and
+quickly become unmaintainable.</p>
+<p>LuaTeX comes to the rescue with its embedded LPEG library
+for Lua. LPEG provides a domain-specific embedded language
+that allows for writing grammars in a natural way. In
+this article I give a quick introduction to Parsing Expression
+Grammars (PEG) and then show how to write simple parsers in
+Lua with LPEG. Finally we will build a JSON parser to
+demonstrate how easy it is to even parse complex data formats.</p>
+
+<p><b>References</b>:</p>
+<ol class="tugbbl">
+<li class="tugbbl">R. Ierusalimschy, A text pattern-matching tool based on Parsing Expression Grammars. Software: Practice and Experience 39(3), 221&#x2013;258 (2009).</li>
+<li class="tugbbl">T. Hoekwater, LuaTeX. TUGboat 28(3), 312&#x2013;313 (2007). <a href="https://tug.org/TUGboat/tb28-3/tb90hoekwater-luatex.pdf">tug.org/TUGboat/tb28-3/tb90hoekwater-luatex.pdf</a></li>
+<li class="tugbbl">M. Caisse, Using Spirit X3 to Write Parsers. CppCon 2015. <a href="https://youtube.com/watch?v=xSBWklPLRv">youtube.com/watch?v=xSBWklPLRv</a></li>
+<li class="tugbbl">Wikipedia, Parsing expression grammar. <a href="https://wikipedia.org/wiki/Parsing_expression_grammar">wikipedia.org/wiki/Parsing_expression_grammar</a></li>
+<li class="tugbbl">D. Crockford, JSON Example. <a href="https://json.org/example.html">json.org/example.html</a></li>
+</ol>
+
+
+<p id="cite"><b>Cite this article (BibTeX)</b>: <small><pre>
+@preamble{"\input tugboat.def"}
+@Article{TB:Menke:2019:PCD,
+  author =       "Henri Menke",
+  title =        "Parsing complex data formats in {Lua\TeX} with
+                 {LPEG}",
+  journal =      "TUGboat",
+  volume =       "40",
+  number =       "2",
+  pages =        "129--135",
+  year =         "2019",
+  ISSN =         "0896-3207",
+  bibsource =    "https://www.math.utah.edu/pub/tex/bib/tugboat.bib",
+  URL =          "https://tug.org/TUGboat/tb40-2/tb125menke-lpeg.pdf",
+  acknowledgement = "Nelson Beebe",
+  confnote =     "TUG 2019 Proceedings (Palo Alto, CA, USA).",
+  issue =        "125",
+  journal-URL =  "https://tug.org/TUGboat/",
+  remark =       "Advanced{\,---\,}introduction to parsing expression
+                 grammars in Lua\TeX{}, with example of parsing JSON.",
+}
+
+</pre>
+</small>
+<hr><small><a href="/TUGboat/">TUGboat</a> 40:2, 2019 (<a href="/TUGboat/tb40-2/">issue 125</a>)
+&nbsp; [generated 2026-11-14]
+</small><br><!--#include virtual="/footer.html"-->

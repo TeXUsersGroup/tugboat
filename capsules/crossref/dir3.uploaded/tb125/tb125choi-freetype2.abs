@@ -1,0 +1,21 @@
+\MF\ is a structured font definition system with the ability to
+generate variants of different font styles by changing its parameter
+values. It does not require creating a new font file for every
+distinct font design. It generates the output fonts such as Generic Font
+(\GF) bitmaps and its relevant \TeX\ Font Metric (\TFM) file on demand.
+These fonts can be utilized on any size of resolution devices without
+creating a new font file according to the preferred size. However,
+\MF\ (mf), \GF, and Packed Fonts (\PK, a compressed form
+of \GF) cannot be utilized beyond the \TeX\ environment as they require
+additional conversion overhead. Furthermore, existing font engines
+such as FreeType do not support such fonts.
+
+In this paper, we propose a module for FreeType which not only adds
+support for \MF{}, but also adds support for \GF{} and \PK{} fonts in
+the \GNU/Linux environment. The proposed module automatically performs the
+necessary conversions without relying on other libraries. By using the
+proposed module, users can generate variants of font styles (by mf) and
+use them on devices of any desired resolution (via \GF{}). The proposed font
+module reduces the creation time and cost for creating distinct
+font styles. Furthermore, it reduces the conversion and configuration
+overhead for \TeX-oriented fonts.

@@ -1,0 +1,136 @@
+\begin{thebibliography}{10}
+
+\bibitem{math:hamming1980}
+R.~W. Hamming.
+\newblock The unreasonable effectiveness of mathematics.
+\newblock {\em The American Mathematical Monthly} 87(2):81--90, 1980.
+\newblock \newline \url{http://www.jstor.org/stable/2321982}
+
+\bibitem{nlp:UJCprirucka}
+{Internetová jazyková příručka (Internet Language Reference Book)}.
+\newblock Institute of Czech language, Czech Academy of Sciences.
+\newblock \newline \url{http://prirucka.ujc.cas.cz/?id=135}
+
+\bibitem{nlp:Jakubicek2013TTC}
+M.~Jakub{\'i}{\v c}ek, A.~Kilgarriff, et~al.
+\newblock {The TenTen Corpus Family}.
+\newblock In~{\em Proc. of 7th International Corpus Linguistics Conference
+  (CL)}, pp.~125--127, Lancaster, July 2013.
+
+\bibitem{ml:Lample2019}
+G.~Lample, A.~Sablayrolles, et~al.
+\newblock Large~memory layers with product keys, 2019.
+\newblock \newline \url{https://arxiv.org/pdf/1907.05242}
+
+\bibitem{nlp:Germantrennmuster}
+W.~Lemberg.
+\newblock {A database of German words with~hyphenation information}.
+\newblock \newline \url{https://repo.or.cz/wortliste.git}
+
+\bibitem{tex:Liang83:thesis}
+F.~M. Liang.
+\newblock {\em Word Hy-phen-a-tion by Com-put-er}.
+\newblock PhD thesis, Department of Computer Science, Stanford University, Aug.
+  1983.
+\newblock \url{tug.org/docs/liang}
+
+\bibitem{ml:PereiraNorvig2009}
+F.~Pereira, P.~Norvig, and A.~Halevy.
+\newblock The~unreasonable effectiveness of data.
+\newblock {\em IEEE Intelligent Systems} 24(02):8--12, Mar. 2009.
+\newblock \newline\href {http://dx.doi.org/10.1109/MIS.2009.36}
+  {\path{doi:10.1109/MIS.2009.36}}
+
+\bibitem{tex:hyphenationweb}
+A.~Reutenauer and M.~Miklavec.
+\newblock {\TeX} hyphenation patterns.
+\newblock \url{tug.org/tex-hyphen}
+
+\bibitem{tex:scannel03}
+K.~P. Scannell.
+\newblock {Hyphenation patterns for minority languages}.
+\newblock {\em TUGboat} 24(2):\mbox{236--239}, 2003.
+\newblock \url{tug.org/TUGboat/tb24-2/tb77scannell.pdf}
+
+\bibitem{nlp:Sennrich2016}
+R.~Sennrich, B.~Haddow, and A.~Birch.
+\newblock Neural~machine translation of rare words with subword units.
+\newblock In~{\em Proceedings of the 54th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, pp.~1715--1725, Berlin,
+  Germany, Aug. 2016. Association for Computational Linguistics.
+\newblock \newline\href {http://dx.doi.org/10.18653/v1/P16-1162}
+  {\path{doi:10.18653/v1/P16-1162}}
+
+\bibitem{nlp:Shao2018}
+Y.~Shao, C.~Hardmeier, and J.~Nivre.
+\newblock Universal word segmentation: Implementation and interpretation.
+\newblock {\em Transactions of the Association for Computational Linguistics}
+  6:421--435, 2018.
+\newblock \newline\href {http://dx.doi.org/10.1162/tacl_a_00033}
+  {\path{doi:10.1162/tacl_a_00033}}
+
+\bibitem{nlp:raslan09conf/pp13-16}
+P.~{\v S}merk.
+\newblock Fast morphological analysis of {C}zech.
+\newblock In P.~Sojka and A.~Hor{\'a}k, eds., {\em Proceedings of Recent
+  Advances in Slavonic Natural Language Processing, RASLAN 2009}, pp.~13--16,
+  Karlova Stud{\'a}nka, Czech Republic, Dec. 2009. Masaryk University.
+\newblock \url{http://nlp.fi.muni.cz/raslan/2009/}
+
+\bibitem{tensojka:cshyphenrepo}
+O.~Sojka and P.~Sojka.
+\newblock {cshyphen repository}.
+\newblock \url{https://github.com/tensojka/cshyphen}
+
+\bibitem{tex:sojka95c}
+P.~Sojka.
+\newblock Notes on compound word hyphenation in \smash{\TeX}.
+\newblock {\em TUGboat} 16(3):\mbox{290--297}, 1995.
+\newblock \url{tug.org/TUGboat/tb16-3/tb48soj2.pdf}
+
+\bibitem{tex:sojka99a}
+P.~Sojka.
+\newblock Hyphenation on demand.
+\newblock {\em {\\TUGboat}} 20(3):\mbox{241--247}, 1999.
+\newblock \newline \url{tug.org/TUGboat/tb20-3/tb64sojka.pdf}
+
+\bibitem{nlp:Sojka2005:thesis}
+P.~Sojka.
+\newblock {\em Competing Patterns in Language Engineering and Computer
+  Typesetting}.
+\newblock PhD thesis, Masaryk University, Brno, Jan. 2005.
+
+\bibitem{tex:sojka95b}
+P.~Sojka and P.~{\v S}eve{\v c}ek.
+\newblock {Hyphenation in \smash{\TeX}\Dash Quo Vadis?}
+\newblock {\em TUGboat} 16(3):\mbox{280--289}, 1995.
+\newblock \url{tug.org/TUGboat/tb16-3/tb48soj1.pdf}
+
+\bibitem{nlp:suchomel2012}
+V.~Suchomel and J.~Pomikálek.
+\newblock Efficient web crawling for large text corpora.
+\newblock In A.~Kilgarriff and S.~Sharoff, eds., {\em Proc. of the Seventh Web
+  as Corpus Workshop (WAC)}, pp.~39--43, Lyon, 2012.
+\newblock \url{http://sigwac.org.uk/raw-attachment/wiki/WAC7/wac7-proc.pdf}
+
+\bibitem{math:Wigner1960}
+E.~P. Wigner.
+\newblock {The Unreasonable Effectiveness of Mathematics in the Natural
+  Sciences. Richard~Courant Lecture in Mathematical Sciences delivered at New
+  York University, May~11, 1959}.
+\newblock {\em Communications on Pure and Applied Mathematics} 13(1):1--14,
+  1960.
+\newblock \newline\href {http://dx.doi.org/10.1002/cpa.3160130102}
+  {\path{doi:10.1002/cpa.3160130102}}
+
+\bibitem{nlp:Zeldes2018}
+A.~Zeldes.
+\newblock A characterwise windowed approach to {H}ebrew morphological
+  segmentation.
+\newblock In~{\em Proc. of the Fifteenth Workshop on Computational Research in
+  Phonetics, Phonology, and Morphology}, pp.~101--110, Brussels, Belgium, Oct.
+  2018. Association for Computational Linguistics.
+\newblock \newline\href {http://dx.doi.org/10.18653/v1/W18-5811}
+  {\path{doi:10.18653/v1/W18-5811}}
+
+\end{thebibliography}

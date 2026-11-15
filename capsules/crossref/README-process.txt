@@ -433,10 +433,14 @@ oldnnn=125
 oldiss=40-2
 scp -p crossref/dir1.lndout/*.html $host:/home/httpd/html/TUGboat/tb$oldiss/
 
-# copy new complete.pdf both to source directory and web directory.
+# Copy final.pdf to source directory as a sort of backup,
+#   and as complete.pdf in the web directory.
 # also update Makefile and anything else changed.
 scp -p .../$oldiss/covers/final.pdf \
-       $host:/home/tubprod/tb$oldiss/covers/tb${oldnnn}complete.pdf
-scp -p .../$oldiss/covers/final.pdf \
-       $host:/home/httpd/html/TUGboat/tb$oldiss/tb${oldnnn}complete.pdf
-
+       $host:/home/tubprod/$oldiss/covers/final.pdf
+# save existing tb*complete.pdf, although it should be in the source dir too.
+# mkdir PDF/ subdir by hand if need be.
+ssh $host cp /home/httpd/html/TUGboat/tb$oldiss/{,PDF/}tb${oldnnn}complete.pdf
+# copy in final.pdf as the live complete.pdf.
+ssh $host cp -pf /home/tubprod/$oldiss/covers/final.pdf \
+                /home/httpd/html/TUGboat/tb$oldiss/tb${oldnnn}complete.pdf

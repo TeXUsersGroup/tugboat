@@ -1,0 +1,24 @@
+\begin{thebibliography}{1}
+
+\bibitem{AGL}
+Adobe.
+\newblock Adobe glyph list specification.
+\newblock \url{https://github.com/adobe-type-tools/agl-specification}, August
+  2018.
+
+\bibitem{ENC}
+A.~Jeffrey and F.~Mittelbach.
+\newblock {\tt inputenc.sty}.
+\newblock \url{https://ctan.org/pkg/inputenc}, 2018.
+
+\bibitem{MMAP}
+R.~Moore.
+\newblock Include \acro{CM}ap resources in \acro{PDF} files from {pdf\TeX}.
+\newblock \url{https://ctan.org/pkg/mmap}, 2008.
+
+\bibitem{T3S}
+T.~G. Rokicki.
+\newblock Type 3 search code.
+\newblock \url{https://github.com/rokicki/type3search}, July 2019.
+
+\end{thebibliography}

@@ -1,0 +1,24 @@
+\input tugboat.def\input path.sty\hyphenation{ Jac-kow-ski Lud-wi-chow-ski
+  Mik-la-vec Reut-en-auer }\ifx \undefined \booktitle \def \booktitle #1{{{\em
+  #1}}} \fi
+\begin{thebibliography}{1}
+
+\bibitem{LPPL}
+{\LaTeX3 Project}.
+\newblock The \latex\ {P}roject {P}ublic {L}icense, version 1.3c, 2008.
+\newblock \url{http://mirror.ctan.org/macros/latex/base/lppl.tex}
+
+\bibitem{Miklavec:TB29-3-454}
+M.~Miklavec and A.~Reutenauer.
+\newblock Putting the {Cork} back in the bottle{\Dash}{Improving Unicode}
+  support in {\TeX}.
+\newblock {\em TUGboat} 29(3):454--457, 2008.
+\newblock \url{https://tug.org/TUGboat/tb29-3/tb93miklavec.pdf}
+
+\bibitem{Miklavec:TB37-2-209}
+M.~Miklavec and A.~Reutenauer.
+\newblock Hyphenation in {\TeX} and elsewhere, past and future.
+\newblock {\em TUGboat} 37(2):209--213, 2016.
+\newblock \url{https://tug.org/TUGboat/tb37-2/tb116miklavec.pdf}
+
+\end{thebibliography}
