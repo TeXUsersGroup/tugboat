@@ -70,7 +70,7 @@ c4:
 # See tb138prod.pdf for a published note about this.
 $(tb)complete.pdf complete compl co cm: $(tb)cmplete.lua \
                                     toclinks.pdf ../CADMUS/issue.pdf
-	lmtxtub --extra=copy --template $<
+	lmtxtub --extra=copync --template $<
 	mv context-extra.pdf $(tb)complete.pdf
 # the generated tb*complete.pdf and toclinks.pdf should have the
 # same number of pages.
@@ -99,6 +99,7 @@ toclinks.pdf: toclinks.tex cover2.tex cover3.tex cover4.tex tubtocmac.tex \
 	  toclinkspages=`pdflastpage $@`; \
 	  test `expr $$issuepdfpages + 3` = $$toclinkspages
 # should be exactly three more pages in toclinks.pdf: c4 c2 c3
+# (well, four if c3 is two pages.)
 # 
 # emacs-page
 pfile = ../tugboat.dates
@@ -140,10 +141,11 @@ cnt:
 
 # emacs-page
 # Add bookmarks to tb*complete.pdf, making final.pdf.
-mkbk = ../../svn/covers/mkbookmarks
-metapdf = awk -f ../../svn/covers/metapdf.awk
-tex2html = ../../svn/misc/tex2html-tub
-inpdf = tb125complete.pdf
+svn = ../../svn
+mkbk = $(svn)/covers/mkbookmarks
+metapdf = $(svn)/covers/metapdf.awk
+tex2html = $(svn)/misc/tex2html-tub
+inpdf = $(tb)complete.pdf
 outpdf = final.pdf
 origdata = origdata.txt
 mergedata = mergedata.txt
@@ -154,11 +156,12 @@ mkbk: $(outpdf)
 $(origdata): $(inpdf)
 	pdftk $(inpdf) dump_data output $(origdata)
 
-$(mergedata): $(origdata) metapdf.awk
-	$(metapdf) $< >$@ || { rm -f $@; exit 1; }
+$(mergedata): $(origdata) $(metapdf)
+	awk -f $(metapdf) $< >$@ || { rm -f $@; exit 1; }
 #	head $@
 
-$(outdata): $(mergedata) ../tugboat.dates $(mkbk) $(tex2html)
+landing = $(svn)/capsules/crossref/dir1.lndout/*.html
+$(outdata): $(mergedata) ../tugboat.dates $(mkbk) $(tex2html) $(landing)
 	($(mkbk) && cat $<) >$(outdata) || { rm -f $(outdata); exit 1; }
 	grep Bookmark $(outdata) >/dev/null || { rm -f $(outdata); exit 1; }
 #	head $(outdata)

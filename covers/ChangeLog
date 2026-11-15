@@ -1,7 +1,10 @@
 2026-11-14  Karl Berry  <karl@freefriends.org>
 
+	* mtx-context-copync.tex: new file to disable image compaction,
+	which messes up some one-bit png images. From Erik N.
+	
 	Bookmarks for tb*complete.pdf.
-	* Makefile (check-proof): run Max's proof checker.
+	* Makefile (check-proof): run Max's proof checker (unrelated).
 	(mkbk, etc.): new target.
 	* metapdf.awk,
 	* mkbookmarks: new scripts.
