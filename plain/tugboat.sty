@@ -21,7 +21,7 @@
 %% $Id$
 
 \def\thistubstyle{plain}
-\def\fileversion{v1.33}
+\def\fileversion{v1.34}
 \def\filedate{2026-11-15}
 
 % general items
@@ -2441,8 +2441,8 @@
 \def\@domainhead{%
   \if@removeprewhite\else\vskip\baselineskip\fi
   \noindent
-  {\raggedright\frenchspacing\hyphenpenalty=10000 \bf\ignorespaces
-   \the\@argument\unskip\endgraf
+  {\bf \raggedright \frenchspacing \hyphenpenalty=10000
+   \ignorespaces\the\@argument \unskip \endgraf
   }%
   \if@removepostwhite          %  usually we want the white space
   \else\kern0.5\baselineskip\fi
@@ -3371,7 +3371,7 @@ Version   Date        Changes
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
-                      \parskip=0pt.
+1.34      15 Nov 26   \parskip=0pt.
                       disable hyphenation in headings.
                       \endarticle: do \writelastpage{+1}.
                       \def\AI{\acro{AI}}.

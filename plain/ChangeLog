@@ -1,5 +1,8 @@
 2026-11-15  Karl Berry  <karl@freefriends.org>
 
+	* tugboat.sty: release to CTAN.
+	v1.34 2026-11-15.
+
 	* tugboat.sty (\thedoi): no \tbsurl, done separately. Found by Erik N.
 	Results in pdf code garbage in the complete.pdf after running
 	through ConTeXt, e.g., tb147reviews-gerrard.
