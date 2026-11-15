@@ -1,3 +1,19 @@
+2026-11-14  Karl Berry  <karl@freefriends.org>
+
+	Do DOIs for old issue 40:2.
+	* captub (crossref-first-issue): 125.
+	* Makefile (testiss,crossref_iss): 125.
+	* capcrossref.pl (bibtex_entry): always fall back to making our
+	own if not in tugboat.bib, not just for latest issue.
+	* crossref/README-process.txt: mention remaking complete.pdf.
+	* crossref/ltx2crossrefxml-tugboat.cfg: new abbrevs.
+
+	Cleanups after latest 47:3:
+	* capsules/tb147capsule.txt (komo): let's avoid "\TeX ",
+	tex2html-tub doesn't know what to do.
+	* covers/cover1.tex (prelitspine): remove include.
+	* covers/cover2.tex: comment out \thisissuepageref until next time.
+
 2026-11-12  Karl Berry  <karl@tug.org>
 
 	* tb146capsule.txt: now public.

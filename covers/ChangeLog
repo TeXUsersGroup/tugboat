@@ -1,3 +1,11 @@
+2026-11-14  Karl Berry  <karl@freefriends.org>
+
+	Bookmarks for tb*complete.pdf.
+	* Makefile (check-proof): run Max's proof checker.
+	(mkbk, etc.): new target.
+	* metapdf.awk,
+	* mkbookmarks: new scripts.
+
 2026-11-04  Karl Berry  <karl@freefriends.org>
 
 	* Makefile (complete, toclinks): check number of pages.

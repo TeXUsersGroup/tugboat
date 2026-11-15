@@ -91,13 +91,17 @@ sed \
     -e 's/\.\.\./\&hellip;/g' \
     -e 's/\\ldots/\&hellip;/g' \
     -e 's/\\,//g' \
+    -e 's!\\/!!g' \
     -e 's/``/\&ldquo;/g' \
     -e "s/''/\&rdquo;/g" \
     -e 's/ `/ \&lsquo;/g' \
     -e "s/' /\&rsquo; /g" \
     -e 's/^}$//g' \
     \
-    -e 's/\\'"'"'e/\&eacute;/g' \
+    -e 's/\\'"'"'e/\&#x00E9;/g' \
+    -e 's/\\"o/\&#x00F6;/g' \
+    \
+    -e 's/\\sl //g' \
     \
     -e 's/Hef{}feron/Hefferon/g' \
     \

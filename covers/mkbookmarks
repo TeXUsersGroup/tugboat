@@ -1,0 +1,211 @@
+#!/usr/bin/env perl
+# $Id$
+# Generate bookmarks to insert into a tb*complete.pdf, using pdftk.
+# See ./Makefile for whole process.
+
+use strict; use warnings;
+
+my $tubdates = "../tugboat.dates";
+my $tublanding = "../../svn/capsules/crossref/dir1.lndout";  
+
+exit (&main ());
+
+sub main {
+  my %issue_info = &read_tugboat_dates ($tubdates);
+  my @bookmarks
+    = &make_bookmarks ($issue_info{"issue_seqno"}, @{$issue_info{"articles"}});
+  &write_bookmarks (\%issue_info, \@bookmarks);
+  
+#  ($tubident,$titlepageno,@articles)
+  return 0;
+}
+
+
+# It is the tugboat.dates file (FNAME) which ultimately determines the
+# order of items in the issue (with possible one-page splicing
+# additions, but we won't worry about that yet).
+# 
+# So read that file and return a hash with various information about the
+# issue, most notably a list of the items, so we can easily generate the
+# bookmarks in order, even when there is more than one item on a page.
+#
+sub read_tugboat_dates {
+  my ($fname) = @_;
+  my %ret;
+  
+  open (my $TUBDATES, $fname)
+  || die "open($fname) failed (must be run in covers/ subdir): $!";
+  # slurp whole file.
+  local $/ = undef;
+  my $filestring = <$TUBDATES>;
+  close ($TUBDATES) || die "close($fname) failed: $!";
+
+  # \vol VV, N.
+  (my $vol_iss) = ($filestring =~ /^\\vol ([0-9]+, [0-9])\./m);
+  #
+  # \issueseqno=NNN.
+  ($ret{"issue_seqno"}) = ($filestring =~ /^\\issueseqno\s*=\s*([0-9]+)/m);
+  #
+  # \issyear YYYY.
+  (my $year) = ($filestring =~ /^\\issyear ([0-9]+)\./m);
+  #
+  # \def\TBtitlepage{297}
+  ($ret{"titlepageno"}) = ($filestring =~ /^\\def\\TBtitlepage\{([0-9]+)\}/m);
+   
+  $vol_iss =~ s/, /:/; # prettier with a colon
+  $ret{"tubident"} = "$vol_iss ($year)";
+  
+  # each active item is \dojob{IDENT} on a line by itself; get them all.
+  my (@jobs) = ($filestring =~ /^\s*\\dojob\{(.*?)\}/mg);
+  $ret{"articles"} = \@jobs;
+  
+  return %ret;
+}
+
+
+# Return a list of array references, representing bookmarks,
+# one for each item in @ARTICLES.
+# 
+# Each array has two items: 1) a string composed of the first author's
+# last name and the article title, to be displayed as the bookmark label;
+# 2) the printed page number, to be linked to, as adjusted in
+# write_bookmarks below.
+# 
+sub make_bookmarks {
+  my ($issue_seqno,@articles) = @_;
+  my @ret = ();
+
+  for my $art (@articles) {
+    next if $art =~ /^(edit|instmem)$/; # not interesting enough to point to
+    my $label = &make_label ($issue_seqno, $art);
+
+    # extract the page number from the ../ART/firstpage.tex file,
+    # where TeX wrote it. The file is a single line that looks like this:
+    # \tubfirstpage = 299
+    chomp (my $pageno = `sed 's/.*= //' ../$art/firstpage.tex`);
+    die "$art: pageno not numeric: $pageno\n" if ($pageno !~ /^[0-9]+$/);
+    
+    #warn "$art: $label|$pageno\n";
+    my $b = [$label, $pageno];
+    push (@ret, $b)
+  }
+
+  return @ret;
+}
+
+
+# Return the bookmark label for article $ART, consisting of the first
+# author's last name (for brevity) and the full title of the article. We
+# get these from the presumed-existing "landing page" for the article,
+# which we generate as part of the process for Crossref. (See
+# $tubsvn/capsules/crossref/README*, etc.)
+# 
+# The implication is that we cannot generate the file tb*complete.pdf
+# with these bookmarks until after the Crossref process is done, except
+# for the actual upload to Crossref.
+# 
+sub make_label {
+  my ($issue_seqno,$art) = @_;
+
+  # the label and what we put into it.
+  my ($author, $title, $label);
+  
+  # for articles with authors, we generate a landing file and can read
+  # the info from there.  Filename is like tb147beet.html.
+  my $landingfile = "$tublanding/tb$issue_seqno$art.html";
+  chomp (my $landing = `ls $landingfile 2>/dev/null`);
+  #
+  # Special case: for conference abstracts, don't list the first author,
+  # too misleading.
+  if ($art ne "abstracts" && $landing) {
+    open (my $LANDING, $landing) || die "open($landing) failed: $!";
+    # slurp whole file.
+    local $/ = undef;
+    my $filestring = <$LANDING>;
+    close ($LANDING) || die "close($landing) failed: $!";
+
+    my ($author1) = ($filestring =~  # not /g since we only want the first
+       /^<meta name="citation_author" content="(.*?)"/m);
+    ($author = $author1) =~ s/,.*//;
+    #
+    ($title) = ($filestring =~
+       /^<meta name="citation_title" content="(.*?)"/m);
+    #
+    $label = "$author / $title";
+    $label =~ s/&#xa0;/ /g;
+
+  } else {
+    # for articles without authors, there is no landing file.
+    # look for it in  capsule file.
+    my $capfile = "$tublanding/../../tb${issue_seqno}capsule.txt";
+    if (! -r $capfile) {
+      die "$art: could not find either landing file or capsule file, bye\n"
+          . "  landing=$landingfile\n"
+          . "  capsule=$capfile"
+    }
+    # These articles are abstract compilations, the calendar, etc.
+    # They have simple titles, but there is some TeX markup; this dumb
+    # script (in $TUGBOATSVN/misc/) suffices for the task.
+    my $tex2html = "tex2html-tub";
+    #
+    # we assume GNU grep, and a particular representation in the capsule file.
+    # almost everything in a pdf, but also find consultants.html.
+    my $pattern = "!$art.pdf}\\|/$art.html}";
+    my $cmd = "grep -B3 '$pattern' $capfile | sed 1q | $tex2html";
+    chomp (my $htmltitle = `$cmd`);
+    #
+    # remove any remaining braces and leading spaces.
+    ($title = $htmltitle) =~ s/[{}]//g;
+    ($label = $title) =~ s/^\s+//;
+    $label =~ s/\s+$//;
+    
+    if (! $label) {
+      warn "*** $art: no label found in: $capfile\n";
+      $label = "NOTFOUND, FIXME"; # make it visible; maybe we should die
+    }
+  }
+  
+  # get rid of any <html> markup that might have crept in.
+  $label =~ s!</?\w+?>!!g;
+  return $label;
+}
+
+
+# Write bookmarks for pdftk to stdout; make an initial bookmark using
+# %ISSUE_INFO_REF and then one for each item (an array reference, see
+# make_bookmarks return value above) in @BOOKMARKS_REF, subtracting
+# the titlepageno (in the issue info) to get the proper location.
+# 
+sub write_bookmarks {
+  my ($issue_info_ref,$bookmarks_ref) = @_;
+  
+  my $tubident = $issue_info_ref->{"tubident"};
+  my $titlepageno = $issue_info_ref->{"titlepageno"};
+  
+  # as generated in tubtocmac.tex:
+  # page 1 of pdf - cover4
+  # page 2 of pdf - cover2
+  # page 3 of pdf - title page; point issue bookmark here
+  my $frontpages = 3;
+  print &make_bookmark ("TUGboat $tubident", $frontpages);
+  
+  for my $b (@{$bookmarks_ref}) {
+    my $label = $b->[0];
+    my $pdfpage = $b->[1] - $titlepageno + $frontpages;
+    print &make_bookmark ($label, $pdfpage);
+  }
+}
+
+
+# Return the string that pdftk will process for a single bookmark with
+# label $LABEL pointing to page $PDFPAGE.
+# 
+sub make_bookmark {
+  my ($label,$pdfpage) = @_;
+  return <<END_BOOKMARK;
+BookmarkBegin
+BookmarkTitle: $label
+BookmarkLevel: 1
+BookmarkPageNumber: $pdfpage
+END_BOOKMARK
+}

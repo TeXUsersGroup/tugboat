@@ -215,8 +215,14 @@ accumulations be for only the single processed issue, so don't look at those).
 Good to make another interim commit of whatever needed to be changed in
 capsules/ (and crossrefware and bibtexperllibs) at this point.
 
-A few days before making the issue live, first remake the landing files
-so the doi links go through doi.org (i.e., not running "make crw"):
+Then work on the bookmarks for the final tb*complete.pdf we will publish
+online. See tbVV-N/covers/Makefile, etc. Don't proceed until that is ready.
+
+ Before making the issue live, ensure you have a good tb*complete.pdf,
+including bookmarks; see preceding paragraph.
+
+Then remake the landing files so the doi links go through doi.org (i.e.,
+not running "make crw"):
   # still in svn/capsules/ directory
   make cro-scratch  # not crw
 Double-check crossref/dir2.process/issue.xml as above.
@@ -226,7 +232,7 @@ registered.
 Remake everything else too, just to be sure all is well:
   make all
 
-Do the production crossref upload, ideally a couple of days before
+Do the production crossref upload
 wanting to make the issue public. It costs money to register dois, so
 you have to edit crossref/Makefile to enable it:
   # temporarily delete "checkme!" from crossref/Makefile
@@ -298,11 +304,12 @@ pages to say "publicly available now". This is irritating, but it seems
 useful enough to state explicitly whether or not an article is public to
 put up with it. To do this:
 
-previss=47-1
-prevnnn=145
+previss=47-2
+prevnnn=146
 
 - ensure that tb${prevnnn}capsule.txt is up to date, without /members/ urls.
 cd ../capsules
+svn update
 
 - clean existing files, assuming the current issue NNN's files have been
   saved in dir3.uploaded as above:
@@ -396,21 +403,40 @@ Then, in general this is a mix of submitting a new issue (described in
 - repeat until all articles are done.
 
 Check contents files:
-make all
-make diff-id  # check ids (maybe no change), sorting, etc.
-make all-diff # new dois and all else as expected.
+  make all-diff # new dois and anything else (maybe nothing) expected.
+  make diff-id  # check ids (maybe no change), sorting, etc.
+
+Remake complete.pdf:
+- in VV-N/covers/, insert relevant rules from svn/covers/Makefile,
+  make the new final.pdf.
+- try in evince, okular, firefox that bookmarks are correct;
+  likely some new translations will be needed in svn/misc/tex2html, etc.
 
 Crossref and landing files:
-- review dir2.process/issue.xml as above, then check at
-  https://www.crossref.org/02publishers/parser.html as above.
-- if that's ok, copy new landing files to server:
-host=tug.org
-oldnnn=126
-oldiss=40-3
-scp -p crossref/dir1.lndout/*.html $host:/home/httpd/html/TUGboat/tb$oldiss/
+- review dir2.process/issue.xml as above, then check as above
+  with upload-test, parser.html.
 
-make all install-test # on tug; after committing from dev machine
+If all is well, commit on dev machine. Then, on tug.org:
+  make all install-test
   then check https://tug.org/TUGboat/toctest/listauthor.html et al.
 
-Then, as above: check results; do production crossref upload; commit changes.
-Send tugboat.bib updates to Nelson.
+Then the final installs:
+- make install;
+- production crossref upload;
+- make/scp/unpack absbbl.tgz per above;
+- send tugboat.bib updates to Nelson.
+
+Copy new landing files to server;
+  current will be saved in /backup, let's call that good enough.
+host=tug.org
+oldnnn=125
+oldiss=40-2
+scp -p crossref/dir1.lndout/*.html $host:/home/httpd/html/TUGboat/tb$oldiss/
+
+# copy new complete.pdf both to source directory and web directory.
+# also update Makefile and anything else changed.
+scp -p .../$oldiss/covers/final.pdf \
+       $host:/home/tubprod/tb$oldiss/covers/tb${oldnnn}complete.pdf
+scp -p .../$oldiss/covers/final.pdf \
+       $host:/home/httpd/html/TUGboat/tb$oldiss/tb${oldnnn}complete.pdf
+

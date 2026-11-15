@@ -117,6 +117,11 @@ cadmus cad ca: $(c3_target)
 	(chmod a+r ../CADMUS/* ../webdir/* 2>&1) | grep -v dangling.symlink; true
 # we don't include complete there since we don't build it until the end.
 
+# Run checker for pdf file, trying to avoid missing ligatures again, etc.
+uv = uv run
+check-proof:
+	$(uv) $bm/check-proof-pdf-tub $(tb)/webdir/Proof.pdf
+
 spell:
 	check_files=cover*.tex; \
 	for f in $$check_files; do printf "\f $$f\n"; (cd `dirname $$f` && myspell `basename $$f`); done
@@ -132,6 +137,42 @@ clean:
 # to send to bb.
 cnt:
 	tb=.. tubcont2cnt $(tb)cont.tex | tee $(tb)prelimcnt
+
+# emacs-page
+# Add bookmarks to tb*complete.pdf, making final.pdf.
+mkbk = ../../svn/covers/mkbookmarks
+metapdf = awk -f ../../svn/covers/metapdf.awk
+tex2html = ../../svn/misc/tex2html-tub
+inpdf = tb125complete.pdf
+outpdf = final.pdf
+origdata = origdata.txt
+mergedata = mergedata.txt
+outdata = outdata.txt
+
+mkbk: $(outpdf)
+
+$(origdata): $(inpdf)
+	pdftk $(inpdf) dump_data output $(origdata)
+
+$(mergedata): $(origdata) metapdf.awk
+	$(metapdf) $< >$@ || { rm -f $@; exit 1; }
+#	head $@
+
+$(outdata): $(mergedata) ../tugboat.dates $(mkbk) $(tex2html)
+	($(mkbk) && cat $<) >$(outdata) || { rm -f $(outdata); exit 1; }
+	grep Bookmark $(outdata) >/dev/null || { rm -f $(outdata); exit 1; }
+#	head $(outdata)
+
+$(outpdf): $(outdata)
+	pdftk $(inpdf) update_info $(outdata) output tmp$(outpdf)
+# pdfinfo reports garbage for the ModDate and CreationDate after
+#   update_info, even when they are not modified.
+# okular -> File -> Properties and evince -> [menu] -> Properties
+#   show the intended dates, so guess it's a bug in pdfinfo.
+#
+	ps2pdf-tub tmp$(outpdf) final.pdf
+	du tmp$(outpdf) $(outpdf)
+# Irritatingly, pdftk expands things a little.
 
 # emacs-page
 tbnn := $(shell expr $(tbn) + 1)

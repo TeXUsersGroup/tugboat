@@ -421,7 +421,10 @@ sub bibtex_entry {
   my $ret;
   if (exists $nbib{$url}) { # if in tugboat.bib, return that.
     $ret = $nbib{$url};
-  } elsif (&is_latest_issue ($cap)) { # if new issue, construct it.
+  } elsif (1 || &is_latest_issue ($cap)) { # if new issue, construct it.
+    # as a test, let's try making our own entry if not found,
+    # even if not the latest issue. In any case it can be necessary if
+    # tugboat.bib is not updated quickly enough.
     $ret = &make_bibtex_entry ($cap, $supp);
   } else {
     # else something unknown, typically stray items that don't match in

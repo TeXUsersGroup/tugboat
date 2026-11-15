@@ -1,3 +1,11 @@
+2026-11-14  Karl Berry  <karl@freefriends.org>
+
+	* misc/tex2html-tub: a couple more conversions for tb125.
+
+2026-11-13  Karl Berry  <karl@freefriends.org>
+
+	* toctxt-tub: reduce spaces, eliminate before commas
+
 2026-11-07  Karl Berry  <karl@freefriends.org>
 
 	* check-auth-title-tub (main): use compare() result in exit status.
