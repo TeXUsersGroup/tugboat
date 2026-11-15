@@ -22,7 +22,7 @@
 
 \def\thistubstyle{plain}
 \def\fileversion{v1.33}
-\def\filedate{2026-11-02}
+\def\filedate{2026-11-15}
 
 % general items
 
@@ -1498,7 +1498,7 @@
   \vbox to 0pt{% don't impact normal layout
     \scriptsize
     \edef\thedoi{\ifnum\count0>900 xnot\fi % but make url invalid if >900
-                \tbsurl{doi.org/\tubdoiprefix/\tbissident/\jobname}}%
+                 doi.org/\tubdoiprefix/\tbissident/\jobname}%
     \vskip\baselineskip
     \iftubsecondcolstart \moveright\tubcolwidthandgutter \fi
     \rlap{\expandafter\tbsurl\expandafter{\thedoi}}%
@@ -3376,6 +3376,7 @@ Version   Date        Changes
                       \endarticle: do \writelastpage{+1}.
                       \def\AI{\acro{AI}}.
                       delete assignment of \maxdepth, to keep plain.tex's 4pt.
+                      avoid doubled \tbsurl in \tubtypesetdoi (from ErikN).
 
 1.33      12 Sep 26   \abovecaptionskipamount: increase to 4pt to match
                         change in ltugboat.
