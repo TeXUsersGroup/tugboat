@@ -22,7 +22,7 @@
 
 \def\thistubstyle{plain}
 \def\fileversion{v1.34}
-\def\filedate{2026-11-15}
+\def\filedate{2026-11-16}
 
 % general items
 
@@ -254,6 +254,8 @@
 \def\BlackBoxes{\overfullrule=5pt }
 \def\NoBlackBoxes{\overfullrule=\z@ }
 \def\newline{\hskip\z@ plus \pagewd \break}
+\edef\allowhyphens{\noexpand\hyphenpenalty\the\hyphenpenalty\relax
+  \noexpand\exhyphenpenalty\the\exhyphenpenalty\relax}
 \def\nohyphens{\hyphenpenalty\@M\exhyphenpenalty\@M}
 \def\tubsentencespace{\spacefactor=3000{}\space\ignorespaces}
 
@@ -494,6 +496,13 @@
 
 % A title of a book, etc.
 \def\titleref#1{{\sl \frenchspacing#1}}
+
+% luatex doesn't provide the command names from pdftex.
+\ifx\pdfextension\undefined \else
+  \def\pdfstartlink{\pdfextension startlink}
+  \def\pdfendlink{\pdfextension endlink}
+  % other "prefixes" are \pdfvariable and \pdffeedback.
+\fi
 
 % live urls with pdf.
 \def\tbsurl#1{\tbhref{https://#1}{\tt #1}}
@@ -2445,7 +2454,7 @@
    \ignorespaces\the\@argument \unskip \endgraf
   }%
   \if@removepostwhite          %  usually we want the white space
-  \else\kern0.5\baselineskip\fi
+  \else\kern0.25\baselineskip\fi
   \nobreak
   \gdef\@next{%
     \if@allowindent\def\@next{}%  usually we don't want to indent here
@@ -3371,6 +3380,10 @@ Version   Date        Changes
 
 Version   Date        Changes
 -------   ---------   ---------------------------------------------------
+                      \allowhyphens: reverse \nohyphens.
+                      \subhead: reduce space below headings to .25\baselineskip
+                      \pdfstartlink, \pdfendlink: define under LuaTeX.
+
 1.34      15 Nov 26   \parskip=0pt.
                       disable hyphenation in headings.
                       \endarticle: do \writelastpage{+1}.
