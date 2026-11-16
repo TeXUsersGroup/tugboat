@@ -27,5 +27,6 @@ egrep -Hn "$acro_ok" "$@" \
       -e 's/\b\(IS[BS]N\|III\?\|IV\|URL\|MDT\|PGF\|T[B1]\|TUGboat\)//g' \
       -e 's/\(TF\|USA\)\b//g' \
       -e 's/\b\(ADE\|CAS\|GUST\|ISO\|L3\|Q[1234]\|RGB\|RW\|TeXShop\)\b//g' \
-      -e 's/\b\(CADMUS\|CVR\|MAPS\|XCharter\)\b//g' \
+      -e 's/\b\([GC]*WEB\|CADMUS\|CVR\|MAPS\|XCharter\)\b//g' \
+      -e 's/\b[A-Z][0-9]\b//' \
 | egrep "$acro_ok"

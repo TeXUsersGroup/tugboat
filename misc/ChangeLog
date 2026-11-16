@@ -1,3 +1,8 @@
+2026-11-16  Karl Berry  <karl@freefriends.org>
+
+	* acrocheck-tub: allow GWEB/CWEB/WEB since often tt;
+	allow single letter followed by single number, like M1.
+
 2026-11-15  Karl Berry  <karl@freefriends.org>
 
 	* tex2html-tub: apparently &mdash; is recognized but not &ndash;
